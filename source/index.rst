@@ -3,18 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Galette's documentation!
-===================================
+Documentation de Galette
+========================
 
-Contents:
+`Galette <http://galette.tuxfamily.org>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <http://galette.tuxfamily.org>`_ propose une `présentation des fonctionnalités <http://galette.tuxfamily.org/fr/doku.php?id=apropos>`_, ainsi que quelques informations complémentaires sur le logiciel.
+
+.. todo::
+
+   ajouter les liens vers les différentes versions de la documentation
+
+Les présentes pages constituent la documentation officielle du projet, qui inclut la documentation utilisateur, mais aussi la documentation de développement de Galette. L'ensemble de la documentation est disponible pour consultation en ligne, ou pour téléchargement pour un usage hors-ligne. Dans le second cas, vous pourrez choisir la version HTML ou la version PDF
+
+Table des matières :
 
 .. toctree::
    :maxdepth: 2
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   changelog.rst
+   installation/installation.rst
