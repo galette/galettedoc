@@ -1,0 +1,60 @@
+{#
+    galette/layout.html
+    ~~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx layout template for the Galette theme.
+
+    :copyright: Copyright 2011 Johan Cwiklinski.
+    :license: see LICENSE for details.
+#}
+{% extends "basic/layout.html" %}
+
+{%- block header %}
+  <div id="galette">
+      <div id="header">
+          <div id="logo">
+              <a href="http://galette.tuxfamily.org">Galette</a>
+          </div>
+      </div>
+  <div id="wrapper">
+    <div id="page">
+{%- endblock %}
+
+{%- block footer %}
+    </div><!-- /page -->
+  </div><!-- /wrapper -->
+  <div id="footer">
+    <span>
+    {%- if show_copyright %}
+      {%- if hasdoc('copyright') %}
+        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+      {%- else %}
+        <strong>{% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}</strong>
+      {%- endif %}
+    {%- endif %}
+    {%- if last_updated %}
+      {%- if show_copyright %}
+        <br/>
+      {%- endif %}
+      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+    {%- endif %}
+    {%- if show_sphinx %}
+      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+    {%- endif %}
+    </span>
+  </div>
+  <p id="sponsors">
+    <a href="http://ajlsm.com">
+      <img src="{{ pathto('_static/images/ajlsm.png', 1) }}" alt="AJLSM"/>
+    </a>
+  </p>
+  </div><!-- /galette -->
+{%- endblock %}
+
+{%- block content %}
+  {{ super() }}
+{%- endblock %}
+
+{# put the sidebar before the body #}
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}
