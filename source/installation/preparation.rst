@@ -9,15 +9,23 @@ Quelques étapes de préparation sont requises pour l'installation de Galette. L
 Préparation des fichiers
 ========================
 
-Dans un premier temps, vous allez récupérer et décompresser les sources de Galette. Si vous êtes sous Linux, ça donnera quelque chose comme :
+.. note::
 
-.. code-block:: bash
+   La récupération des sources via le SVN ne sera plus souhaitable dès lors que des archives de la version 0.7 de Galette existeront.
 
-   $ cd /var/www/html/
-   $ wget http://download.gna.org/galette/galette-0.7.tar.bz2
-   $ tar xjvf galette-0.7.tar.bz2
+.. Dans un premier temps, vous allez récupérer et décompresser les sources de Galette. Si vous êtes sous Linux, ça donnera quelque chose comme :
 
-Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.7-zip.org/fr/>`.
+   .. code-block:: bash
+
+      $ cd /var/www/html/
+      $ wget http://download.gna.org/galette/galette-0.7.tar.bz2
+      $ tar xjvf galette-0.7.tar.bz2
+
+   Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.7-zip.org/fr/>`.
+
+La version 0.7 de Galette est l'actuelle version en développement. Il n'existe pas d'archive de cette version, qui est régulièrement modifiée de toutes façons. La meilleure solution dans ce cas est de récupérer une copie du dépôt SVN.
+
+La :ref:`récupération de la version de développement de Galette <svn>` est détaillée dans la documentation de développement.
 
 Droits des fichiers
 -------------------

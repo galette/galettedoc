@@ -16,3 +16,4 @@ Table des matières :
    :maxdepth: 3
 
    installation/index.rst
+   development/index.rst
