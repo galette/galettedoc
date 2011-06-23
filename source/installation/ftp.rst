@@ -3,32 +3,13 @@
 FTP
 ===
 
-.. warning::
-
-   Dans le dossier ``includes``, il faut supprimer le dossier nommé ``adodb`` (qui est en fait un lien symbolique) puis rennomer le dossier ``adodb492`` en ``adodb``.
-
-Une fois les sources récupérées en local puis utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <http://www.7-zip.org/fr/>`_ sous Windows.
+Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <http://www.7-zip.org/fr/>`_ sous Windows.
 
 Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <http://filezilla-project.org/>`_.
 
 .. image:: ../_styles/static/images/installation/filezilla.jpg
    :scale: 50 %
    :align: center
-
-Il faut porter une attention particulière aux droits de certains dossiers de Galette. En effet, l'application aura besoin d'écrire dans certains d'entre eux, il faut nous assurer qu'elle le pourra.
-
-Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lui est pas possible d'écrire dans les dossiers adéquats :
-
-* ``/cache``,
-* ``/config`` [#configdirpermsftp]_,
-* ``/exports``,
-* ``'/logs``,
-* ``/photos``,
-* ``/templates_c``,
-* ``/tempimages``,
-
-.. [#configdirpermsftp] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
-
 
 ****************
 Cas particuliers
@@ -52,7 +33,7 @@ En début du fichier ``includes/galette.inc.php``, il faut ajouter la ligne :
 
 .. todo::
 
-   Je ne sais pas si les cas particuliers ci-dessous sont encore d'actualité, ni si ces hébergeurs supportent php 5.3
+   Je ne sais pas si les cas particuliers ci-dessous sont encore d'actualité, ni si ces hébergeurs supportent php 5.3 :/
 
 Free
 ====
