@@ -1,0 +1,53 @@
+.. footer::
+
+   #{title} | © 2011 The Galette Team | Page ###Page### sur ###Total###
+
+
+.. role:: normal
+
+.. raw:: pdf
+
+   Spacer 0 5cm
+
+.. image:: _styles/static/images/galette.png
+   :width: 3in
+
+
+<?py if title: ?>
+
+.. cssclass:: title
+
+#{title}
+
+<?py #end ?>
+
+<?py if subtitle: ?>
+
+.. cssclass:: subtitle
+
+#{subtitle}
+
+<?py #end ?>
+
+.. raw:: pdf
+
+   Spacer 0 3cm
+
+<?py for author in authors: ?>
+.. cssclass:: author
+
+#{author}
+
+<?py #end ?>
+
+.. raw:: pdf
+
+   Spacer 0 3cm
+
+.. cssclass:: author
+
+:normal:`#{date}`
+
+.. raw:: pdf
+
+   PageBreak
