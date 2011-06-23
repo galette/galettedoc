@@ -6,7 +6,7 @@
 Documentation de Galette
 ========================
 
-`Galette <http://galette.tuxfamily.org>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <http://galette.tuxfamily.org>`_ propose une `présentation des fonctionnalités <http://galette.tuxfamily.org/fr/doku.php?id=apropos>`_, ainsi que quelques informations complémentaires sur le logiciel.
+`Galette <http://galette.tuxfamily.org>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <http://galette.tuxfamily.org>`_ propose une `présentation des fonctionnalités <http://galette.tuxfamily.org/fr/doku.php?id=apropos>`_, ainsi que quelques informations complémentaires sur le logiciel ; vous pouvez également consulter :doc:`le changelog de Galette </changelog>`.
 
 .. todo::
 
@@ -17,7 +17,6 @@ Les présentes pages constituent la documentation officielle du projet, qui incl
 Table des matières :
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   changelog.rst
    installation/installation.rst
