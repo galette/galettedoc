@@ -29,8 +29,7 @@ Préparation
 
 Quelques étapes de préparation sont requises pour l'installation de Galette. La façon de faire va dépendre de ce que vous souhaitez faire.
 
-Installation sous Linux/Unix
-============================
+.. include:: unix.rst
 
 Installation sur un hébergement via FTP
 =======================================
