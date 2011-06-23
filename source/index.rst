@@ -15,4 +15,4 @@ Table des matières :
 .. toctree::
    :maxdepth: 3
 
-   installation/installation.rst
+   installation/index.rst
