@@ -26,6 +26,7 @@ img, a img {
 .related {
 	background-color: #f8c363;
 	margin: 0 auto;
+    clear:both;
 }
 
 .related ul {
@@ -64,12 +65,12 @@ img, a img {
 }
 /** /Menu related */
 
-.sphinxsidebar {
+div.sphinxsidebar {
     margin:0;
-    float:none!important;
-    margin-left:0!important;
-    position: absolute;
-    right: 1.5em;
+    float:right;
+    margin-left:0;
+    /*position: absolute;
+    right: 1.5em;*/
 }
 
 .document{
@@ -465,6 +466,12 @@ div#footer img {
 	background-color: #636b70;
 }
 
+#footer, #footer a{
+    color:rgba(255, 255, 255, 0.8);
+}
+#footer a {
+    text-decoration: underline;
+}
 
 /** Header related */
 #login__bar a,
