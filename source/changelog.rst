@@ -10,7 +10,7 @@ Changelog
 
 .. warning::
 
-   En cours de rédaction
+   Galette 0.7 est encore en cours de développement, les informations de ce changelog peuvent être amenées à évoluer.
 
 .. _ajouts:
 
@@ -26,7 +26,7 @@ Ajouts et modifications
 * Export au format CSV des tables de la base courante et/ou export de requêtes paramétrées,
 * Paramétrage des champs obligatoires pour l'enregistrement et la modification d'adhérents,
 * Gestion multilingue des sujets et messages des mails envoyés automatiquement par Galette (inscription, perte de mot de passe, ...),
-* Gestion des status utilisateur,
+* Gestion des statuts utilisateur,
 * Gestion des types de contributions,
 * Intégration de JQuery UI pour améliorer l'interface (menus, onglets dans les préférences, date picker, ...),
 
