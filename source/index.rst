@@ -12,7 +12,7 @@ Documentation de Galette
 
    ajouter les liens vers les différentes versions de la documentation
 
-Les présentes pages constituent la documentation officielle du projet, qui inclut la documentation utilisateur, mais aussi la documentation de développement de Galette. L'ensemble de la documentation est disponible pour consultation en ligne, ou pour téléchargement pour un usage hors-ligne. Dans le second cas, vous pourrez choisir la version HTML ou la version PDF
+Les présentes pages constituent la documentation officielle du projet, qui inclut la documentation utilisateur, mais aussi la documentation de développement de Galette. L'ensemble de la documentation est disponible pour `consultation en ligne <http://galette.tuxfamily.org/documentation/fr/>`_, ou pour téléchargement pour un usage hors-ligne. Dans le second cas, vous pourrez choisir `la version HTML <http://galette.tuxfamily.org/documentation/fr/documentation_galette.tar.bz2>`_ ou `la version PDF <http://galette.tuxfamily.org/documentation/fr/galette.pdf>`_.
 
 Table des matières :
 
