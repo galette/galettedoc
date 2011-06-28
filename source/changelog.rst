@@ -23,12 +23,13 @@ Ajouts et modifications
 * Gestion de mailings (avec historique),
 * Pages publiques (liste des membres et trombinoscope),
 * Système de plugins (voir :ref:`la liste des plugins disponibles <plugins>`),
-* Export au format CSV des tables de la base courante et/ou export de requêtes paramétrées,
+* Export au format CSV des tables de la base courante et/ou export de requêtes paramétrées (https://mail.gna.org/public/galette-devel/2009-02/msg00006.html),
 * Paramétrage des champs obligatoires pour l'enregistrement et la modification d'adhérents,
 * Gestion multilingue des sujets et messages des mails envoyés automatiquement par Galette (inscription, perte de mot de passe, ...),
 * Gestion des statuts utilisateur,
 * Gestion des types de contributions,
 * Intégration de JQuery UI pour améliorer l'interface (menus, onglets dans les préférences, date picker, ...),
+* Impression de cartes de membres
 
 .. _suppressions:
 
@@ -37,7 +38,7 @@ Suppressions
 
 * Suppression du support IE6,
 * Suppression de l'espagnol (qui n'est plus maintenu :'( )
-* Suppression de AdoDB (remplacé par PEAR MDB2) (en cours)
+* Suppression de AdoDB (remplacé par PEAR MDB2) (*en cours*)
 
 .. _souscapot:
 
