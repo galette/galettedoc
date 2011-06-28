@@ -52,19 +52,19 @@ La variable d'environnement SERVER_NAME renvoie l'adresse IP du serveur Apache a
 .. code-block:: bash
 
    % grep -rn "SERVER_NAME" ./*
-   ./ajouter_adherent.php:339:                    $mtxt->tbody = str_replace("{LOGIN_URI}", "http://".$_SERVER["SERVER_NAME"].dirname($_SERVER["REQUEST_URI"]), $mtxt->tbody);
-   ./docs/manual/manual.html:240:     La variable d'environnement <span class="emphasis"><em>SERVER_NAME</em></span> renvoie l'adresse IP du serveur
-   ./docs/manual/manual.html:244:      <span class="emphasis"><em>SERVER_NAME</em></span> par HTTP_HOST,
-   ./docs/manual/webinstall.xml:309:     La variable d'environnement <emphasis>SERVER_NAME</emphasis> renvoie l'adresse IP du serveur
-   ./docs/manual/webinstall.xml:315:      <emphasis>SERVER_NAME</emphasis> par HTTP_HOST,
-   ./docs/manual/manual.fo:239:     La variable d'environnement <fo:inline font-style="italic">SERVER_NAME</fo:inline> renvoie l'adresse IP du serveur
-   ./docs/manual/manual.fo:243:      <fo:inline font-style="italic">SERVER_NAME</fo:inline> par HTTP_HOST,
-   ./includes/functions.inc.php:251:        "Message-ID: <" . makeRandomPassword(16) . "-galette@" . $_SERVER['SERVER_NAME'] . ">",
-   ./includes/functions.inc.php:287:                fputs($connect, "HELO {$_SERVER['SERVER_NAME']}\r\n");
-   ./includes/phpMailer-5.1/class.phpmailer.php:156:   * by SERVER_NAME is used or 'localhost.localdomain'.
-   ./includes/phpMailer-5.1/class.phpmailer.php:1942:    } elseif (isset($_SERVER['SERVER_NAME'])) {
-   ./includes/phpMailer-5.1/class.phpmailer.php:1943:      $result = $_SERVER['SERVER_NAME'];
-   ./lostpasswd.php:70:                    'http://' . $_SERVER['SERVER_NAME'] .
-   ./self_adherent.php:238:                'http://' . $_SERVER['SERVER_NAME'] .
+   ./ajouter_adherent.php:339
+   ./docs/manual/manual.html:240
+   ./docs/manual/manual.html:244
+   ./docs/manual/webinstall.xml:309
+   ./docs/manual/webinstall.xml:315
+   ./docs/manual/manual.fo:239
+   ./docs/manual/manual.fo:243
+   ./includes/functions.inc.php:251
+   ./includes/functions.inc.php:287
+   ./includes/phpMailer-5.1/class.phpmailer.php:156
+   ./includes/phpMailer-5.1/class.phpmailer.php:1942
+   ./includes/phpMailer-5.1/class.phpmailer.php:1943
+   ./lostpasswd.php:70
+   ./self_adherent.php:238
 
 

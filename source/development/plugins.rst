@@ -147,7 +147,10 @@ La présence d'un fichier nommé ``headers.tpl`` dans les templates de votre plu
 
 .. code-block:: smarty
 
-   <link rel="stylesheet" type="text/css" href="{$nomplugin_tpl_dir}galette_nomplugin.css"/>
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="{$nomplugin_tpl_dir}galette_nomplugin.css"/>
 
 Ajout d'actions sur les membres
 -------------------------------
@@ -159,7 +162,10 @@ Un fichier nommé ``adh_actions.tpl`` dans les templates du plugin permettra l'a
 .. code-block:: smarty
 
    <a href="{$galette_base_path}{$nomplugin_dir}fichier.php?id={$member->id}">
-      <img src="{$nomplugin_tpl_dir}images/icon-plugin.png" alt="{_T string="Plugin menu entry"}" width="16" height="16"/>
+      <img
+         src="{$nomplugin_tpl_dir}images/icon-plugin.png"
+         alt="{_T string="Plugin menu entry"}"
+         width="16" height="16"/>
    </a>
 
 Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin permettra quant à lui l'ajout d'actions lors de la consultation d'une fiche. Il s'agit d'une suite d'éléments de liste HTML (``<li></li>``) :
@@ -167,7 +173,11 @@ Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin p
 .. code-block:: smarty
 
    <li>
-      <a href="{$galette_base_path}{$nomplugin_dir}plugin.php?id_adh={$member->id}" id="btn_plugins_nomplugin">{_T string="Plugin menu entry"}</a>
+      <a
+         href="{$galette_base_path}{$nomplugin_dir}plugin.php?id_adh={$member->id}"
+         id="btn_plugins_nomplugin">
+         {_T string="Plugin menu entry"}
+      </a>
    </li>
 
 Toute action sur les membres requiert évidemment un code qui va traiter les données envoyées au sein même du plugin.
@@ -214,7 +224,8 @@ L'appel à une table dans le code se ferait donc de la façon suivante :
    [...]
    const TABLE = 'mytable';
    [...]
-   $query = 'SELECT * FROM ' . PREFIX_DB . PLUGIN_PREXFIX . self::TABLE; // ==> 'SELECT * FROM galette_myplugin_mytable'
+   // ==> 'SELECT * FROM galette_myplugin_mytable'
+   $query = 'SELECT * FROM ' . PREFIX_DB . PLUGIN_PREXFIX . self::TABLE;
    [...]
    ?>
 
