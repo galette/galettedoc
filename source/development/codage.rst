@@ -38,7 +38,7 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
 * |folder| ``install`` : scripts d'installation
 * |folder| ``lang`` : fichiers de traduction gettext (``.mo``), scripts d'extraction des chaînes depuis le code source, fichiers de langue compilés
-* |folder| ``logs`` : fichiers logs produits par :ref:`PEAR::Log <_pearlog>`
+* |folder| ``logs`` : fichiers logs produits par :ref:`PEAR::Log <pearlog>`
 * |folder| ``photos`` : dossier de stockage des photos des membres
 * |folder| ``plugins`` : :ref:`dossier de stockage des plugins <plugins>`
 * |folder| ``public`` : pages publiques
@@ -55,3 +55,11 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 .. |phpfile| image:: ../_styles/static/images/php_file.png
 .. |file| image:: ../_styles/static/images/file.png
 
+.. _conventions:
+
+Conventions d'écriture
+======================
+
+Le code source de Galette se doit de suivre les `conventions d'écriture adoptées par PHP PEAR <http://pear.php.net/manual/en/standards.php>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
+
+Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains warnings peuvent être ignorés, mais les potentielles erreurs devraiet toutes être corrigées.

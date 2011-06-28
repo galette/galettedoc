@@ -91,5 +91,5 @@ Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expér
 Envoi de courriels
 ------------------
 
-L'envoi de courriels depuis Galette est géré par `phpMailer <http://phpmailer.worxware.com/>`_.
+L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <http://phpmailer.worxware.com/>`_.
 

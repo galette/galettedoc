@@ -275,7 +275,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
 
 Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour [[:participer#listes_de_discussion|contacter les listes de diffusion]], et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre [[:participer#irc|le canal IRC de Galette]] ;-)
 
-Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les conventions de codage PEAR dans leur ensemble : http://pear.php.net/manual/en/standards.php
+Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
 
 .. |folder| image:: ../_styles/static/images/folder.png
 .. |phpfile| image:: ../_styles/static/images/php_file.png
