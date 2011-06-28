@@ -107,13 +107,16 @@ Entrées de menu
 
 Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il sera affiché en dessous des autres entrées de menu de Galette. Il doit avoir un aspect similaire aux menus de Galette, à savoir :
 
-.. code-block:: html
+.. code-block:: smarty
 
+   {* Titre du bloc *}
    <h1 class="nojs">[_T string="My plugin"}</h1>
+   {* Entrées du menu *}
    <ul>
       <li>{_T string="My first plugin menu entry"}
       <li>{_T string="My second plugin menu entry"}
-   {if $smarty.session.admin_status eq 1}
+   {if $login->isAdmin()}
+      {* Une entrée de menu visible uniquement par les administrateurs *}
       <li>{_T string="My admin plugin menu entry"}</li>
    {/if}
    </ul>
@@ -129,7 +132,7 @@ Ajout de headers HTML
 
 La présence d'un fichier nommé ``headers.tpl`` dans les templates de votre plugin ajoutera automatiquement sont contenu dans l'en-tête de la page (dans la balise ``<head>`` donc) ; après le chargement de l'en-tête standard de Galette.
 
-.. code-block:: html
+.. code-block:: smarty
 
    <link rel="stylesheet" type="text/css" href="{$nomplugin_tpl_dir}galette_nomplugin.css"/>
 
@@ -140,15 +143,15 @@ Il est possible pour un plugin d'ajouter des actions sur les membres. En plus d'
 
 Un fichier nommé ``adh_actions.tpl`` dans les templates du plugin permettra l'ajout des actions dans la liste des adhérent (les actions par défaut étant « Modifier » ou « Supprimer »). Il s'agit d'une simple liste de liens :
 
-.. code-block:: html
+.. code-block:: smarty
 
    <a href="{$galette_base_path}{$nomplugin_dir}fichier.php?id={$member->id}">
       <img src="{$nomplugin_tpl_dir}images/icon-plugin.png" alt="{_T string="Plugin menu entry"}" width="16" height="16"/>
    </a>
 
-Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin permettra quant à lui l'ajout d'actions lors de la consultation d'une fiche :
+Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin permettra quant à lui l'ajout d'actions lors de la consultation d'une fiche. Il s'agit d'une suite d'éléments de liste HTML (``<li></li>``) :
 
-.. code-block:: html
+.. code-block:: smarty
 
    <li>
       <a href="{$galette_base_path}{$nomplugin_dir}plugin.php?id_adh={$member->id}" id="btn_plugins_nomplugin">{_T string="Plugin menu entry"}</a>
