@@ -12,7 +12,7 @@ Changelog
 
    Galette 0.7 est encore en cours de développement, les informations de ce changelog peuvent être amenées à évoluer.
 
-.. _ajouts:
+.. _ajouts_07:
 
 Ajouts et modifications
 =======================
@@ -31,7 +31,7 @@ Ajouts et modifications
 * Intégration de JQuery UI pour améliorer l'interface (menus, onglets dans les préférences, date picker, ...),
 * Impression de cartes de membres
 
-.. _suppressions:
+.. _suppressions_07:
 
 Suppressions
 ============
@@ -40,7 +40,7 @@ Suppressions
 * Suppression de l'espagnol (qui n'est plus maintenu :'( )
 * Suppression de AdoDB (remplacé par PEAR MDB2) (*en cours*)
 
-.. _souscapot:
+.. _souscapot_07:
 
 Sous le capot...
 ================
@@ -55,7 +55,7 @@ Quelques modifications, d'ordre un peu plus technique ont également été appor
 
 * Mise en place de relations dans la base de données pour assurer l'intégrité référentielle.
 
-.. _plugins:
+.. _plugins_07:
 
 Plugins
 =======

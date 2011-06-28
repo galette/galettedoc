@@ -85,6 +85,7 @@ Assignation de variables
 Il est possible d'assigner à Smarty des variables supplémentaires (comme via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` : 
 
 .. code-block:: php
+
    $_tpl_assignments = array(
        'ma_var'             => 'mavaleur',
        'dossier_includes'   => '__plugin_include_dir__dossier',
@@ -107,6 +108,7 @@ Entrées de menu
 Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il sera affiché en dessous des autres entrées de menu de Galette. Il doit avoir un aspect similaire aux menus de Galette, à savoir :
 
 .. code-block:: html
+
    <h1 class="nojs">[_T string="My plugin"}</h1>
    <ul>
       <li>{_T string="My first plugin menu entry"}
@@ -227,6 +229,7 @@ Il est conseillé de placer les déclarations de constantes dans un fichier ``_c
 L'appel à une table dans le code se ferait donc de la façon suivante :
 
 .. code-block:: php
+
    [...]
    const TABLE = 'mytable';
    [...]
