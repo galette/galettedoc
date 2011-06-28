@@ -7,3 +7,4 @@ Manuel du développeur de Galette
 
    technical_infos.rst
    svn.rst
+   plugins.rst
