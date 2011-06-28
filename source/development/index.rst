@@ -9,3 +9,4 @@ Manuel du développeur de Galette
    svn.rst
    codage.rst
    plugins.rst
+   i18n.rst

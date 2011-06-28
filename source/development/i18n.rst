@@ -1,0 +1,21 @@
+.. _i18n:
+
+*********************
+Internationnalisation
+*********************
+
+Le code de Galette est entièrement traduit à l'aide des possibilités offertes par `GNU Gettext <http://www.gnu.org/software/gettext/>`_, quelque peu adapté aux besoins de la cause.
+
+En effet, les fichiers pour la traduction sont des fichiers ``.po`` bien connus, qui fournissent des fichiers compilés (``.mo``) lus par gettext poru traduire. Ce système implique que getext et le module php adéquat soient installés sur le serveur ; mais aussi que les langues utilisées par Galette soient disponibles sur le serveur. Par exemple, il ne serait pas possible d'obtenir la traduction française de Galette via gettext si seul l'anglais est installé sur le serveur.
+
+Pour éviter ces problèmes, Galette propose une alternative (en passant par des fichiers PHP préalablement générés) et gettext est désactivé par défaut.
+
+Si vous souhaitez activer gettext, il suffira de modifier la valeur de la variables ``$disable_gettext`` à `false` dans le fichier ``includes/i18n.inc.php`` :
+
+.. code-block:: php
+
+   <?php
+   $disable_gettext=false;
+   ?>
+
+
