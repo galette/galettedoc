@@ -29,6 +29,8 @@ Pour créer une nouvelle traduction, il suffit de copier le fichier messages.po 
 Bibliothèques utilisées
 =======================
 
+.. _pear:
+
 PEAR
 ----
 
@@ -48,15 +50,21 @@ Bien que cette extension supporte un certain nombre de bases de données différ
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
+.. _pearlog:
+
 PEAR::Log
 ^^^^^^^^^
 
 Un système de logs sera assuré par `l'extension PEAR Log <http://pear.php.net/package/Log>`_.
 
+.. _smarty:
+
 Smarty
 ------
 
 Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format XHTML.
+
+.. _pdf:
 
 TCPDF
 -----
@@ -64,7 +72,9 @@ TCPDF
 .. image:: ../_styles/static/images/libraries/tcpdf.png
    :align: right
 
-L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <[[http://www.tcpdf.org/>`_.
+L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <http://www.tcpdf.org/>`_.
+
+.. _ui:
 
 Interface utilisateur
 ---------------------
@@ -75,4 +85,11 @@ Interface utilisateur
 Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expérience de ce dernier, nous avons choisi de faire appel à un framework Javascript. `JQuery <http://jquery.com>`_ a été retenu, ainsi que certains de ses plugins, notamment :
   * `JQuery UI <http://ui.jquery.com/>`_ pour l'ajout d'onglets, de formulaires de sélection de dates, de fenêtres modales, etc
   * `markItUp <http://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings (`TinyMCE <http://tinymce.moxiecode.com/>`_ est disponible en tant que plugin pour Galette, en remplacement de markItUp).
+
+.. _phpmailer:
+
+Envoi de courriels
+------------------
+
+L'envoi de courriels depuis Galette est géré par `phpMailer <http://phpmailer.worxware.com/>`_.
 
