@@ -27,6 +27,8 @@ La version 0.7 de Galette est l'actuelle version en développement. Il n'existe 
 
 La :ref:`récupération de la version de développement de Galette <svn>` est détaillée dans la documentation de développement.
 
+.. _droitsfichiers:
+
 Droits des fichiers
 -------------------
 
