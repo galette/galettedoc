@@ -28,8 +28,9 @@ PEAR::MDB2
 L'accès aux bases de données sera désormais assuré par `l'extension PEAR MDB2 <http://pear.php.net/package/MDB2/>`_.
 
 Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'a été testé avec succès qu'avec :
-  * `MySQL <http://mysql.com/>`_ version 5.x (4.1 minimum, le support InnoDB est requis),
-  * `PostgreSQL <http://www.postgresql.org/>`_ 8.x ou 9.x.
+
+* `MySQL <http://mysql.com/>`_ version 5.x (4.1 minimum, le support InnoDB est requis),
+* `PostgreSQL <http://www.postgresql.org/>`_ 8.x ou 9.x.
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
@@ -66,8 +67,9 @@ Interface utilisateur
    :align: right
 
 Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expérience de ce dernier, nous avons choisi de faire appel à un framework Javascript. `JQuery <http://jquery.com>`_ a été retenu, ainsi que certains de ses plugins, notamment :
-  * `JQuery UI <http://ui.jquery.com/>`_ pour l'ajout d'onglets, de formulaires de sélection de dates, de fenêtres modales, etc
-  * `markItUp <http://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings (`TinyMCE <http://tinymce.moxiecode.com/>`_ est disponible en tant que plugin pour Galette, en remplacement de markItUp).
+
+* `JQuery UI <http://ui.jquery.com/>`_ pour l'ajout d'onglets, de formulaires de sélection de dates, de fenêtres modales, etc,
+* `markItUp <http://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings (`TinyMCE <http://tinymce.moxiecode.com/>`_ est disponible en tant que plugin pour Galette, en remplacement de markItUp).
 
 .. _phpmailer:
 
