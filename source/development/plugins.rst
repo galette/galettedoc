@@ -58,7 +58,7 @@ Les plugins de galette sont fournis sous licence GPL version 3, tout comme le co
     *
     * @author    Votre Nom <vous@isp.com>
     * @copyright 2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or (at your option) any later version
+    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @version   SVN: $Id$
     * @link      http://galette.tuxfamily.org
     * @since     Available since 0.7dev - 2011-06-28

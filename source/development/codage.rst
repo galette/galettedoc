@@ -68,6 +68,8 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
 
 .. code-block:: php
 
+   <?php
+
    /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
    /**
@@ -97,7 +99,7 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     *
     * @author    Johan Cwiklinski <johan@x-tnd.be>
     * @copyright 2009-2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or (at your option) any later version
+    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @version   SVN: $Id$
     * @link      http://galette.tuxfamily.org
     * @since     Available since 0.7dev - 2009-02-28
@@ -111,7 +113,7 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     * @package   Galette
     * @author    Johan Cwiklinski <johan@x-tnd.be>
     * @copyright 2009-2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or (at your option) any later version
+    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @link      http://galette.tuxfamily.org
     * @since     Available since 0.7dev - 2009-02-28
    */
