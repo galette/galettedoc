@@ -20,10 +20,10 @@ Les fichiers de traduction du plugins seront placés dans un répertoire ``lang`
 
 Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)
 
-Configuration des plugins
-=========================
+Licence
+=======
 
-Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il définit le nom du plugin, son auteur, etc, selon la nomenclature suivante :
+Les plugins de galette sont fournis sous licence GPL version 3, tout comme le code principal. La license doit être spécifiée sur chaque fichier ; selon le modèle suivant :
 
 .. code-block:: php
 
@@ -32,11 +32,11 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
    /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
    /**
-    * Main MyPlugin plugin configuration
+    * Configuration file for MyPlugin plugin
     *
     * PHP version 5
     *
-    * Copyright © 2010 The Galette Team
+    * Copyright © 2011 The Galette Team
     *
     * This file is part of Galette (http://galette.tuxfamily.org).
     *
@@ -57,13 +57,25 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
     * @package   MyPlugin
     *
     * @author    Votre Nom <vous@isp.com>
-    * @copyright 2010 The Galette Team
+    * @copyright 2011 The Galette Team
     * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or (at your option) any later version
     * @version   SVN: $Id$
     * @link      http://galette.tuxfamily.org
-    * @since     Available since 0.7dev - 2010-03-05
+    * @since     Available since 0.7dev - 2011-06-28
     */
 
+    [...]
+
+    ?>
+
+Configuration des plugins
+=========================
+
+Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il définit le nom du plugin, son auteur, etc, selon la nomenclature suivante :
+
+.. code-block:: php
+
+   <?php
    $this->register(
        'Mon Plugin', //Name
        'Plugin qui ne sert à rien', //Short description
@@ -71,7 +83,6 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
        '0.0.1', //Version
        null //Permissions needed - not yet implemented
    );
-
    ?>
 
 L'activation du module dans Galette dépend de ce fichier, s'il n'est pas présent, ou s'il est incorrect, le module ne sera pas activé.
@@ -86,12 +97,14 @@ Il est possible d'assigner à Smarty des variables supplémentaires (comme via `
 
 .. code-block:: php
 
+   <?php
    $_tpl_assignments = array(
        'ma_var'             => 'mavaleur',
        'dossier_includes'   => '__plugin_include_dir__dossier',
        'nomplugin_tpl_dir'  => '__plugin_templates_dir__',
        'nomplugin_dir'      => '__plugin_dir__'
    );
+   ?>
 
 Les variables déclarées comme ceci seront alors accessibles depuis les templates Smarty de la manière habituelle : ``{$ma_var}``.
 
@@ -190,42 +203,6 @@ Il est conseillé de placer les déclarations de constantes dans un fichier ``_c
 .. code-block:: php
 
    <?php
-
-   /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
-
-   /**
-    * Configuration file for MyPlugin plugin
-    *
-    * PHP version 5
-    *
-    * Copyright © 2010 The Galette Team
-    *
-    * This file is part of Galette (http://galette.tuxfamily.org).
-    *
-    * Galette is free software: you can redistribute it and/or modify
-    * it under the terms of the GNU General Public License as published by
-    * the Free Software Foundation, either version 3 of the License, or
-    * (at your option) any later version.
-    *
-    * Galette is distributed in the hope that it will be useful,
-    * but WITHOUT ANY WARRANTY; without even the implied warranty of
-    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    *  GNU General Public License for more details.
-    *
-    * You should have received a copy of the GNU General Public License
-    * along with Galette. If not, see <http://www.gnu.org/licenses/>.
-    *
-    * @category  Plugins
-    * @package   MyPlugin
-    *
-    * @author    Votre Nom <vous@isp.com>
-    * @copyright 2010 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or (at your option) any later version
-    * @version   SVN: $Id$
-    * @link      http://galette.tuxfamily.org
-    * @since     Available since 0.7dev - 2010-03-05
-    */
-
    define('PLUGIN_PREFIX', 'myplugin_');
    ?>
 
@@ -233,11 +210,13 @@ L'appel à une table dans le code se ferait donc de la façon suivante :
 
 .. code-block:: php
 
+   <?php
    [...]
    const TABLE = 'mytable';
    [...]
    $query = 'SELECT * FROM ' . PREFIX_DB . PLUGIN_PREXFIX . self::TABLE; // ==> 'SELECT * FROM galette_myplugin_mytable'
    [...]
+   ?>
 
 Hiérarchie
 ==========
