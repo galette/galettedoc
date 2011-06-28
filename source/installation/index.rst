@@ -1,3 +1,5 @@
+.. _installation:
+
 ================================
 Manuel d'installation de Galette
 ================================
