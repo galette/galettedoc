@@ -53,7 +53,8 @@ Pour l'exemple, nous allons nous baser sur une base de données nommée magalett
 
      $ mysql -u root -p
      mysql> CREATE DATABASE magalette;
-     mysql> GRANT ALL ON magalette.* to 'monutilisateurgalette'@'localhost' IDENTIFIED BY 'monmotdepasse';
+     mysql> GRANT ALL ON magalette.* to
+         ->'monutilisateurgalette'@'localhost' IDENTIFIED BY 'monmotdepasse';
 
 * PostgreSQL
 
