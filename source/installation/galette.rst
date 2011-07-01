@@ -92,13 +92,13 @@ En cas de doutes, rendez-vous sur `votre espace client <https://espace-client.nf
 Paramètres de la base
 ---------------------
 
-Sur cet écran, sélectionner votre type de base de données puis entrez simplement les nom d'hôte, nome de base de données, nom d'utilisateur et mot de passe. Le préfixe de la table est fort utile si vous n'avez pas une base dédiée intégralement à Galette ; la proposition par défaut devrait être parfaitement acceptable, mais vous pouvez bien entendu y mettre ce que vous souhaitez :-)
+Sur cet écran, sélectionnez votre type de base de données puis entrez simplement les nom d'hôte, nom de base de données, nom d'utilisateur et mot de passe. Le préfixe de la table est fort utile si vous n'avez pas une base dédiée intégralement à Galette ; la proposition par défaut devrait être parfaitement acceptable, mais vous pouvez bien entendu y mettre ce que vous souhaitez :-)
 
 .. image:: ../_styles/static/images/installation/4_bdd.png
    :scale: 70%
    :align: center
 
-Si une erreur survient, le rpogramme d'installation vous en informe :
+Si une erreur survient, le programme d'installation vous en informe :
 
 .. image:: ../_styles/static/images/installation/4bis_bdd_error.png
    :scale: 70%
