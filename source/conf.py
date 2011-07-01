@@ -294,7 +294,7 @@ pdf_cover_template = '_styles/templates/galette_cover.tmpl'
 # Enable rst2pdf extension modules (default is empty list)
 # you need vectorpdf for better sphinx's graphviz support
 #pdf_extensions = ['vectorpdf']
-#pdf_extensions = ['dotted_toc']
+pdf_extensions = ['dotted_toc']
 
 # Page template name for "regular" pages
 #pdf_page_template = 'cutePage'
