@@ -1,3 +1,5 @@
+.. _developerguide:
+
 ================================
 Manuel du développeur de Galette
 ================================
