@@ -150,11 +150,11 @@ En ligne de commande, vous pouvez utiliser :
 Paramètres de l'administrateur
 ==============================
 
-L'écran suivant vous demande de saisir les informations de l'administrateur de Galette. Par la suite, certains comptes crées via l'interface pourront être élevés au rang d'administrateur également, mais celui qui est créé à l'installation n'est pas un adhérent, et ne peux pas être supprimé.
+L'écran suivant vous demande de saisir les informations de l'administrateur de Galette. Par la suite, certains comptes créés via l'interface pourront être élevés au rang d'administrateur également, mais celui qui est créé à l'installation n'est pas un adhérent, et ne peux pas être supprimé.
 
 .. warning::
 
-   Le mot de passe saisi et sauvegardé dans la table ``galette_preferences``. Avant la version 0.63 de Galette, il était stocké en clair. Depuis la version 0.63, il est désormais stocké en utilisant l'algorithme md5, ce qui rend (quasi)impossible son déchiffrement. 
+   Le mot de passe saisi est sauvegardé dans la table ``galette_preferences``. Avant la version 0.63 de Galette, il était stocké en clair. Depuis la version 0.63, il est désormais stocké en utilisant l'algorithme md5, ce qui rend (quasi)impossible son déchiffrement. 
 
 .. image:: ../_styles/static/images/installation/7_admin.png
    :scale: 70%
