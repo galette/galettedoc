@@ -119,7 +119,7 @@ Les deux écrans suivants vont vérifier qu'une connexion peut être établie à
    :scale: 70%
    :align: center
 
-En cas d'erreur (rectangle rouge), revenez à l'étape précédente, effectuez les éventuels ajustement requis, puis valider de nouveau en cliquant le bouton « étape suivante ». Si l'erreur concerne un ou plusieurs tests lors de la vérification des droits, il faudra vous assurer que l'utilisateur de votre base de données possèdent bien les droits requis sur la base.
+En cas d'erreur (rectangle rouge), revenez à l'étape précédente, effectuez les éventuels ajustement requis, puis validez de nouveau en cliquant le bouton « étape suivante ». Si l'erreur concerne un ou plusieurs tests lors de la vérification des droits, il faudra vous assurer que l'utilisateur de votre base de données possède bien les droits requis sur la base.
 
 Création des tables
 -------------------
