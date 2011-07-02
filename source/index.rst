@@ -29,4 +29,5 @@ Table des matières :
 
    installation/index.rst
    usermanual/index.rst
+   plugins/index.rst
    development/index.rst
