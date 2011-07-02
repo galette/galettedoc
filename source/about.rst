@@ -34,7 +34,7 @@ Sphinx permet de construire la documentation sous plusieurs formats depuis les m
 Construire la documentation
 ===========================
 
-Une fois les sources récupérées, vous pourrez construire la documentation. Toutefois, vous aurez préalablement besoin d'installer au minimum Sphinx sur votre machine, et éventuellement rst2pdf (si vous souhaitez construire la version PDF).
+Une fois les sources récupérées, vous pourrez construire la documentation. Toutefois, vous aurez préalablement besoin d'installer au minimum Sphinx sur votre machine, et éventuellement `rst2pdf <http://rst2pdf.googlecode.com/>`_ (si vous souhaitez construire la version PDF).
 
 Depuis le dossier de la documentation, la liste des possibilités peut être affichés en tapant simplement ``make`` :
 
