@@ -50,9 +50,15 @@ Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lu
 
 .. [#configdirperms] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
 
+.. _installationunix:
+
 .. include:: unix.rst
 
+.. _installationftp:
+
 .. include:: ftp.rst
+
+.. _installationwindows:
 
 .. include:: windows.rst
 

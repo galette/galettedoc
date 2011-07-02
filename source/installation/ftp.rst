@@ -1,5 +1,3 @@
-.. _installationftp:
-
 FTP
 ===
 

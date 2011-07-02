@@ -1,5 +1,3 @@
-.. _installationwindows:
-
 Windows
 =======
 
