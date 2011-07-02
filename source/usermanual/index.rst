@@ -31,16 +31,24 @@ Exports CSV
 Préférences
 ***********
 
+Cet écran vous permet de configurer divers aspects relatifs à l'application ou à votre association.
+
 Général
 =======
 
 Cet onglet vous donne accès aux paramètres relatifs à votre association :
 
+.. image:: ../_styles/static/images/usermanual/prefs_general.png
+   :scale: 50%
+   :align: center
+   :alt: Préférences de Galette, onglet Général
+
+
 * **Nom** : nom (raison sociale) de l'association,
 * **Description** : brève description,
 * **Logo** : envoi de votre logo,
 * **Adresse** : adresse de l'association
-* **Code postal** : copde postal,
+* **Code postal** : code postal,
 * **Ville** : ville,
 * **Pays** : pays,
 * **Adresse postale** : choix de l'adresse postale qui sera affichée :
@@ -54,6 +62,11 @@ Paramètres
 ==========
 
 Paramètres de Galette :
+
+.. image:: ../_styles/static/images/usermanual/prefs_parameters.png
+   :scale: 50%
+   :align: center
+   :alt: Préférences de Galette, onglet Général
 
 * **Langue par défaut** : choix de la langue par défaut de l'application,
 * **Thème par défaut** : choix du thème à utiliser,
@@ -70,14 +83,34 @@ Paramètres de Galette :
 Courriel
 ========
 
+.. image:: ../_styles/static/images/usermanual/prefs_mail.png
+   :scale: 50%
+   :align: center
+   :alt: Préférences de Galette, onglet Général
+
 Étiquettes
 ==========
+
+.. image:: ../_styles/static/images/usermanual/prefs_labels.png
+   :scale: 50%
+   :align: center
+   :alt: Préférences de Galette, onglet Général
 
 Cartes
 ======
 
+.. image:: ../_styles/static/images/usermanual/prefs_cards.png
+   :scale: 50%
+   :align: center
+   :alt: Préférences de Galette, onglet Général
+
 Administrateur
 ==============
+
+.. image:: ../_styles/static/images/usermanual/prefs_admin.png
+   :scale: 50%
+   :align: center
+   :alt: Préférences de Galette, onglet Général
 
 *******************
 Champs obligatoires
