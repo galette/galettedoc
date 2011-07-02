@@ -10,7 +10,7 @@ Documentation de Galette
 
 .. note::
 
-   L'ensemble de la documentation est disponible pour `consultation en ligne <http://galette.tuxfamily.org/documentation/fr/>`_, ou pour téléchargement pour un usage hors-ligne.
+   L'ensemble de la documentation est disponible pour `consultation en ligne <http://galette.tuxfamily.org/documentation/fr/>`_, ou pour téléchargement pour un usage hors-ligne (:ref:`plus de détails sur la documentation de Galette <about>`).
 
    Dans le second cas, vous pourrez choisir `la version texte <http://galette.tuxfamily.org/documentation/fr/documentation_galette_txt.tar.bz2>`_, `la version HTML <http://galette.tuxfamily.org/documentation/fr/documentation_galette.tar.bz2>`_ ou `la version PDF <http://galette.tuxfamily.org/documentation/fr/galette.pdf>`_.
 
