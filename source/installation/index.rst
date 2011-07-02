@@ -22,9 +22,9 @@ L'installation de Galette consiste simplement, après avoir effectué quelques t
 
 La version 0.7 de Galette est l'actuelle version en développement. Il n'existe pas d'archive de cette version, qui est régulièrement modifiée de toutes façons. La meilleure solution dans ce cas est de récupérer une copie du dépôt SVN.
 
-La :ref:`récupération de la version de développement de Galette <svn>` est détaillée dans la documentation de développement.
+La :doc:`récupération de la version de développement de Galette <../development/svn>` est détaillée dans la documentation de développement.
 
-Pour installer Galette, vous aurez besoin que les composants suivants soient installés :
+Pour installer Galette, vous aurez besoin que les composants suivants soient installés  :
 
 * un serveur web Apache,
 * PHP en version 5.3 ou supérieure,

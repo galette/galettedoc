@@ -1,5 +1,3 @@
-.. _svn:
-
 *********************************
 Récupération des sources avec SVN
 *********************************
@@ -28,7 +26,7 @@ Ainsi donc, pour simplement récupérer Galette dans un répetoire et pouvoir le
 .. code-block:: bash
 
    $ cd /var/www/html
-   $ svo co http://svn.gna.org/svn/galette/trunk/galette ./galette
+   $ svn co http://svn.gna.org/svn/galette/trunk/galette ./galette
    [...]
    Révision 995 extraite.
 
@@ -46,6 +44,8 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion, il
    $ git fetch svn
 
 C'est la commande ``fetch`` qui va prendre le plus de temps. Une fois le dépôt récupéré ; vous pouvez commencer à travailler dessus, en utilisant GIT comme à l'accoutumée. En revanche, vous n'utiliserez pas ``git push``, mais ``git svn dcommit`` pour envoyer les commits sur le dépôt SVN.
+
+.. _svnwindows:
 
 Windows
 =======
