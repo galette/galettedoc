@@ -8,6 +8,8 @@ Depuis la version 0.7 ; Galette fournit un système de plugins - rudimentaire, c
 
 Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les templates Smarty) ; de créer des entrées de menus pour accéder aux pages précédement créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
 
+Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <http://fr.dotclear.org/>`_.
+
 Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit : 
 
 * |folder| plugins
@@ -67,6 +69,8 @@ Les plugins de galette sont fournis sous licence GPL version 3, tout comme le co
     [...]
 
     ?>
+
+.. _pluginsconfig:
 
 Configuration des plugins
 =========================
