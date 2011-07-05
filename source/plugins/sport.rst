@@ -18,6 +18,7 @@ Le présent plugin a pour vocation de réimplémenter les possibilités offertes
 * gestion de groupe et leur(s) administrateur(s),
 * modification de la fiche adhérent :
 
+  * Création de groupes auxquels est associé un responsable (appelé référent) qui à des droits d'administration de son groupe. Pour les sportifs il s'agit de sections comme des classes d'age avec des entraîneurs mais on se rend vite compte que le besoin existe pour toutes les associations qu'elles soient sportives ou non.
   * assignation à un (plusieurs ?) groupe,
   * ajout d'un champ `référent`,
   * informations de licence (nom, identifiant, date),
@@ -25,3 +26,7 @@ Le présent plugin a pour vocation de réimplémenter les possibilités offertes
   * certificat médical (nom du médecin et date),
   * enveloppe (??),
   * participation vêtements.
+
+.. note::
+
+   Dans un message sur la liste de diffusion, `John nous explique les différences entre Galette et Galette-sport <https://mail.gna.org/public/galette-discussion/2007-10/msg00020.html>`_. La notion de groupes sera peut-être intégrée dans Galette directement ; il faut étudier le développement de cette possibilité.
