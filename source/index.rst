@@ -16,9 +16,10 @@ Documentation de Galette
 
 Les présentes pages constituent la documentation officielle du projet Galette, qui inclut :
 
-* le :ref:`manuel d'installation de Galette <installation>`,
-* le :ref:`manuel de l'utilisateur Galette <usermanual>`,
-* le :ref:`guide du développeur Galette <developerguide>`.
+* le :doc:`manuel d'installation de Galette <installation/index>`,
+* le :doc:`manuel de l'utilisateur Galette <usermanual/index>`,
+* la :doc:`documentation des différents plugins de Galette <plugins/index>`,
+* le :doc:`guide du développeur Galette <development/index>`.
 
 Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de galette (technologies utilisées, comment récupérer les sources et les construire) <about>`.
 
