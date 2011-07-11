@@ -74,33 +74,33 @@ Quelques plugins sont dores et déjà disponibles pour Galette !
 0.63.3 -> 0.64
 **************
 
-* Handle 'stripos' missing function to keep 0.63.x php4 compliant
-* Upgrade Adodb to 4992
-* Upgrade to Smarty 2.6.22, and replace old hack for translations with more elegant plugin
-* Replace phppdflib with tcpdf
-* Symlink to adodb has been removed, we now use a php file defining the versions for the libraries
-* Improved pagination: only 20 pages will appear now, instead of all pages
-* Remove spanish language which has not been maintaned for ages
-* Use UTF-8 for translation files
-* Fix a bug calculating end membership date when using begining date for membership in the preferences
-* Remove not functionnal and not used "public" pages
-* Remove unused files
-* Handle 'mb_strtoupper' to avoid error on labels generation when mb extension is not present
-* Move config file from includes to config directory. Wrtie access on includes directory will no longer be required at install
-* Only super-admin can change its login/password now. Standard admins can no longer do that
+* Prise en charge de la fonction 'stripos' lorsqu'elle est manquante afin d'assurer le support php4 pour Galette 0.63.x
+* Mise à jour de Adodb en 4992
+* Mise à jour de Smarty en 2.6.22, remplacement des anciens hacks pour les traductions par un plus élégant plugin
+* Remplacement de la bibliothèque phppdflib par tcpdf
+* Suppression du lien symbolique adodb, on utilise maintenant un fichier php qui définit les versions des bibliothèques utilisées
+* Amélioration de la pagination : seules 20 pages apparaissent désormais, au lieu de l'intégralité
+* Suppression de l'espagnol qui n'est plus maintenu depuis longtemps
+* Utilisation de l'encodage UTF-8 pour les fichiers de traduction
+* Correction d'un bogue dans le calcul de la date de fin d'adhésion lors de l'utilisation d'une date de début d'exercice dans les préférences
+* Suppression des pages « publiques » qui ne sont ni fonctionnelles, ni utilisées
+* Suppression de fichiers inutilisés
+* Prise en charge de la fonction 'mb_strtoupper' lorsqu'elle est manquante pour éviter des erreurs lors de la génération des étiquettes si l'extension php mb n'est pas présente
+* Déplacement du fichier de configuration du dossier includes vers le dossier config. Les droits en écriture sur le dossier includes ne sont désormais plus requis à l'installation
+* Seul le super-administrateur peut désormais changer ses propres identifiant et mot de passe. Les administrateurs standards ne peuvent désormais plus faire cela
 
 ****************
 0.63.2 -> 0.63.3
 ****************
 
-* fix a security flaw that allowed attacker to send arbitrary PHP files on some servers
-* when sendind invalid member form, line dynamic fields were repeated (bug #10187)
-* some encoding issues has been noticed on UFT-8 MySQL servers. Connection is now forced to LATIN1 (thanks to Cédric)
-* unbreakable spaces appears on non html email (thanks to Cédric)
-* using XML characters in mailing subjects causes XML analysis errors on preview (bug #14571)
-* needless data were stored into logs (and not at the right place) sending mailings (bug #14569)
-* XML analysis errors where thrown on logs page when a member card contains reserved characters (bug #14561)
-* html tags in mailing were not showed while previewing a mailing under Firefox (bug #14465)
+* Correction d'un problème de sécurité qui permettait à un tiers d'envoyer des fichiers PHP divers sur certains serveurs
+* Lorsque le formulaire d'adhésion était invalide, les lignes des champs dynamiques étaient répétées (bogue #10187)
+* Quelques problèmes d'encodage ont été remarqués sur certains serveurs MySQL en UTF-8. La connexion est désormais forcée en LATIN1 (merci à Cédric)
+* Des espaces insécables apparaissaient sur certains courriels non html (merci à Cédric)
+* L'utilisation de caractères XML dans le sujet d'un mailing causait des erreurs d'analyse XML sur la page de prévisualisation (bogue #14571)
+* Des informations inutiles étaient stockées dans les logs (et n'étaient pas au bon endroit) lors de l'envoi de courriels (bogue #14569)
+* Des erreurs d'analyse XML étaient rencontrées sur les pages de l'historique quand la carte de membre contenait des caractères réservés (bogue #14561)
+* Les balises html lors de la prévisualisation de mailings ne s'affichaient pas sous Firefox (bogue #14465)
 
 ****************
 0.63.1 -> 0.63.2
@@ -120,27 +120,27 @@ Quelques plugins sont dores et déjà disponibles pour Galette !
 0.63 -> 0.63.1
 **************
 
-* some preferences were not updated at install time
-* on some web hosting services, exif functions are not available. In this case, we use GD (bug #12836)
-* XHTML was sometimes not well formed, due to PHP sessions (bug #13071)
-* fix PHP notices in the logs (patch #1133)
-* remove of posix functions which are deprecated in PHP 5.3
-* add of a .htaccess file to prevent read of uploaded photos from the web
+* Certaines préférences n'étaient pas mises à jour lors de l'installation
+* Sur certains services d'hébergement, les fonctions exif ne sont pas disponibles. Dans ce cas, on utilise désormais GD (bogue #12836)
+* Le XHTML était parfois mal formé à cause des sessions PHP (bogue #13071)
+* Correction de notices PHP dans l'historique (patch #1133)
+* Suppression des fonctions posix qui sont supprimées dans PHP 5.3
+* Ajout d'un fichier .htaccess pour empêcher l'affichage direct des photos envoyées
 
 ************
 0.62 -> 0.63
 ************
 
-* Project leader change :-)
-* Added transactions managment
-* Added dynamic field managment, to add some extra fields; also added the ability to translate such fields labels
-* Members can now self-subscribe
-* Use of Smarty template engine for pages generation. This causes complete xhtml compliant rewrite of html pages
-* Upgrade from ADODB 4.7.1 to 4.9.2
-* Use of gettext possibilities for translations
-* Added spanish translations (all translations are not done yet)
-* Added the possibility to upload a custom logo
-* Fixes numerous bugs
+* Changement de leader du projet :-)
+* Ajout de la gestion des transactions
+* Ajout de la gestion de champs dynamiques, pour ajouter des champs supplémentaires aux fiches adhérents ; ainsi que la traduction des libellés de ces champs
+* Les membres peuvent désormais s'inscrire eux-mêmes
+* Utilisation du moteur de templates Smarty pour la génération des pages. Ceci a causé la ré-écriture de l'ensemble des pages en XHTML
+* Mise à jour de ADODB de 4.7.1 vers 4.9.2
+* Utilisation des possibilités de gettext pour les traductions
+* Ajout de la traduction espagnole (toutes les chaînes ne sont pas encore traduites)
+* Possibilité d'envoyer un logo personnalisé
+* Correction de nombreux bogues
 
 ***************
 0.62a -> 0.62.2
