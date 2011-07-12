@@ -106,15 +106,15 @@ Quelques plugins sont dores et déjà disponibles pour Galette !
 0.63.1 -> 0.63.2
 ****************
 
-* membership's deadline was incorrect for a fiscal year (bug #13010)
-* donations didn't appear in the right color in the table (bug #13009)
-* history entries when adding or editing a contribution did not contains member's login - as when adding/editing a member (bug #13011)
-* on windows, some characters were incorrectly interpreted - ¿\n¿ for example (bug #14162)
-* when saving a picture (PNG format), alpha channel was not saved, causing image to get a default background color (bug #14327)
-* restrictions showing pictures (since 0.63.1) prevents custom logo to display correctly (bug #14442)
-* when editing member's language, current session was also translated (bug #14443)
-* some characters - like simple quotes - were badly encoded mailings subjects (bug #14449)
-* mail sending were always active, even if disabled in preferences (bug #14450)
+* La fin de l'adhésion était incorrecte pour une année fiscale (bogue #13010)
+* Les donation n'apparaissaient pas avec la bonne couleur dans le tableau (bogue #13009)
+* Les entrées de l'historique ne comprenaient pas le login de l'adhérent lors de l'ajout ou de l'édition des contributions ou de la fiche adhérent (bogue #13011)
+* Sous windows, certains caractères n'étaient pas correctement interprétés (bogue #14162)
+* Lors de la sauvegarde d'une photo (au format PNG), le canal alpha n'était pas conservé, l'image prenait ainsi une couleur de fond par défaut (bogue #14327)
+* Les restrictions d'affichage des images (depuis la 0.63.1) empêchaient l'affichage du logo personnalisé (bogue #14442)
+* Lorsque l'on modifiait la langue d'un utilisateur, la langue de la session était changée également (bogue #14443)
+* Certains caractères - comme les guillemets simples - étaient mal encodés dans les sujets des mailings (bogue #14449)
+* L'envoi de mails était toujours actif, même s'il était désactivé dans les préférences (bogue #14450)
 
 **************
 0.63 -> 0.63.1
