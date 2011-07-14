@@ -35,6 +35,16 @@ Pour installer Galette, vous aurez besoin que les composants suivants soient ins
 
 * un serveur `MySQL <http://mysql.com>`_ ou `PostgreSQL <http://postgresql.org>`_.
 
+.. _php53:
+
+.. note::
+
+   **Pourquoi Galette 0.7 n'est compatible qu'avec PHP 5.3 ou supérieur ?**
+
+   `PHP 5.2 n'est plus maintenu depuis décembre 2010 <http://www.php.net/releases/5_2_16.php>`_. De plus, `PHP 5.3 apporte des fonctions de date et heure (et de calcul sur des date et heure) <http://fr.php.net/manual/fr/book.datetime.php>`_ très intéressantes et aisées à mettre en place qui sont utilisées dans le code actuel de Galette.
+
+   Il serait éventuellement possible de remplacer ces quelques appels par un équivalent qui serait compatible PHP 5.2 ; mais je ne trouve personnellement pas d'intérêt à développer un produit sur des technologies dores et déjà dépassées. Je n'ai par ailleurs pas la possibilité d'installer facilement une version de PHP qui n'est plus maintenue.
+
 Galette est régulièrement testé avec des versions récentes de ces composants, si vous rencontrez des difficultés avec une version particulière, n'hésitez pas à nous le faire savoir ;-)
 
 .. toctree::
