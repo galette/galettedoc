@@ -20,7 +20,7 @@ Une fois votre Galette correctement installée, il reste une ou deux petites cho
 
    Si vous avez récupéré Galette depuis le SVN, l'application est en « mode développement » ; et certaines entrées peuvent apparaître dans le menu pour des fonctionnalités qui n'exsitent pas ou si peu.
 
-   Dans ce cas, éditez le fichier ``includes/galette.inc.php``, et remplacez (aux alentours de la ligne 65) la valeur ``DEV`` par ``PROD`` poru ``GALETTE_MODE`` :
+   Dans ce cas, éditez le fichier ``includes/galette.inc.php``, et remplacez (aux alentours de la ligne 65) la valeur ``DEV`` par ``PROD`` pour ``GALETTE_MODE`` :
 
    .. code-block:: php
 
