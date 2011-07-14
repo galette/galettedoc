@@ -25,12 +25,6 @@ Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant les deu
    SetEnv PHP_VER 5_TEST
    SetEnv MAGIC_QUOTES 0
 
-En début du fichier ``includes/galette.inc.php``, il faut ajouter la ligne :
-
-.. code-block:: php
-
-   @ini_set('display_errors', 0);
-
 .. todo::
 
    Je ne sais pas si les cas particuliers ci-dessous sont encore d'actualité, ni si ces hébergeurs supportent php 5.3 :/
