@@ -2,7 +2,7 @@
 Installation
 ************
 
-L'installation de Galette se fait entièrement depuis votre navigateur web (une fois `les étapes préliminaires <preparation>`_ achevées). Rendez-vous à l'adresse http://localhost/galette/install/.
+L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/install/.
 
 Choix de la langue d'installation
 =================================
