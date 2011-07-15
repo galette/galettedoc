@@ -22,7 +22,7 @@ Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lu
 * ``/cache``,
 * ``/config`` [#configdirperms]_,
 * ``/exports``,
-* ``'/logs``,
+* ``/logs``,
 * ``/photos``,
 * ``/templates_c``,
 * ``/tempimages``,
@@ -32,12 +32,15 @@ Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lu
 .. _installationunix:
 
 .. include:: unix.rst
+   :start-after: :orphan:
 
 .. _installationftp:
 
 .. include:: ftp.rst
+   :start-after: :orphan:
 
 .. _installationwindows:
 
 .. include:: windows.rst
+   :start-after: :orphan:
 
