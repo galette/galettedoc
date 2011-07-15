@@ -45,6 +45,12 @@ Avant toute chose, vous devez vous assurer que votre base de données existe dé
 Création de la base de données
 ------------------------------
 
+.. note::
+
+   **N'utilisez pas l'utilisateur root de votre base de données !**
+
+   Pour des raisons de sécurité, il est fortement conseillé de créer un utilisateur spécifique pour la base de données Galette, et de ne lui attribuer des droits que sur la base Galette.
+
 Pour l'exemple, nous allons nous baser sur une base de données nommée magalette appartenant à un utilisateur `monutilisateurgalette` dont le mot de passe est `monmotdepasse`.
 
 * MySQL
