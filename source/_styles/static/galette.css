@@ -152,18 +152,24 @@ div.warning {
     background-color: rgba(255,0,0,0.5);
 }
 
-.warning  .admonition-title {
-    background-image:url(images/warning.png), url(images/warning.png);
+.warning .admonition-title,
+.note .admonition-title,
+.admonition-a-faire .admonition-title {
     background-position: left top, right top;
     background-repeat: no-repeat;
     padding:.1em 0;
 }
 
-.note  .admonition-title {
+.warning .admonition-title {
+    background-image:url(images/warning.png), url(images/warning.png);
+}
+
+.note .admonition-title {
     background-image:url(images/info.png), url(images/info.png);
-    background-position: left top, right top;
-    background-repeat: no-repeat;
-    padding:.1em 0;
+}
+
+.admonition-a-faire .admonition-title {
+    background-image:url(images/todo.png), url(images/todo.png);
 }
 
 .literal {
