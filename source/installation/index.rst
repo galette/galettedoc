@@ -10,7 +10,7 @@ L'installation de Galette consiste simplement, après avoir effectué quelques t
 
    La récupération des sources via le SVN ne sera plus souhaitable dès lors que des archives de la version 0.7 de Galette existeront.
 
-.. Dans un premier temps, vous allez `télécharger Galette <<http://galette.tuxfamily.org/fr/doku.php?id=download>>`_ et décompresser larchive. Si vous êtes sous Linux, ça donnera quelque chose comme :
+.. Dans un premier temps, vous allez `télécharger Galette <http://galette.tuxfamily.org/fr/doku.php?id=download>`_ et décompresser l'archive. Si vous êtes sous Linux, ça donnera quelque chose comme :
 
    .. code-block:: bash
 
