@@ -1,3 +1,5 @@
+.. include:: /globals.rst
+
 .. _plugins:
 
 *******************
@@ -12,11 +14,11 @@ Le système de plugins est initialement basé sur celui utilisé par le `logicie
 
 Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit : 
 
-* |folder| plugins
+* |folder| `plugins`
 
-  * |folder| Auto
-  * |folder| Sport
-  * |folder| ...
+  * |folder| `Auto`
+  * |folder| `Sport`
+  * |folder| `...`
 
 Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire, il est possible de choisir le thème désiré via les préférences de Galette. Le thème par défaut se nomme ``default``), et les classes dans un répertoire ``classes`` (tout comme dans Galette).
 
@@ -239,40 +241,36 @@ Hiérarchie
 
 Au final, la hiérarchie d'un plugin devrait ressembler à ça :
 
-* plugins
+* |folder| `plugins`
 
-  * MonPlugin
+  * |folder| `MonPlugin`
 
-    * |folder| classes
+    * |folder| `classes`
 
-      * |file| ...
+      * |phpfile| `...`
 
-    * |folder| includes
+    * |folder| `includes`
 
-      * |file| ...
+      * |file| `...`
 
-    * |folder| lang
+    * |folder| `lang`
 
-      * |file| ...
+      * |file| `...`
 
-    * |folder| templates
+    * |folder| `templates`
 
-      * |folder| default
+      * |folder| `default`
 
-        * |file| headers.tpl
-        * |file| menu.tpl
-        * |file| ...
+        * |file| `headers.tpl`
+        * |file| `menu.tpl`
+        * |file| `...`
 
-    * |phpfile| _config.inc.php
-    * |phpfile| _define.php
-    * |phpfile| _smarties.php
-    * |file| ...
+    * |phpfile| `_config.inc.php`
+    * |phpfile| `_define.php`
+    * |phpfile| `_smarties.php`
+    * |file| `...`
 
-Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour [[:participer#listes_de_discussion|contacter les listes de diffusion]], et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre [[:participer#irc|le canal IRC de Galette]] ;-)
+Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.tuxfamily.org/fr/doku.php?id=participer#listes_de_discussion>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.tuxfamily.org/fr/doku.php?id=participer#irc>`_ ;-)
 
 Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
-
-.. |folder| image:: ../_styles/static/images/folder.png
-.. |phpfile| image:: ../_styles/static/images/php_file.png
-.. |file| image:: ../_styles/static/images/file.png
 

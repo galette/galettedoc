@@ -1,3 +1,5 @@
+.. include:: /globals.rst
+
 .. _preparation:
 
 ***********
@@ -19,13 +21,13 @@ Il faut porter une attention particulière aux droits de certains dossiers de Ga
 
 Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lui est pas possible d'écrire dans les dossiers adéquats :
 
-* ``/cache``,
-* ``/config`` [#configdirperms]_,
-* ``/exports``,
-* ``/logs``,
-* ``/photos``,
-* ``/templates_c``,
-* ``/tempimages``,
+* |folder| `cache`,
+* |folder| `config` [#configdirperms]_,
+* |folder| `exports`,
+* |folder| `logs`,
+* |folder| `photos`,
+* |folder| `templates_c`,
+* |folder| `tempimages`,
 
 .. [#configdirperms] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
 
