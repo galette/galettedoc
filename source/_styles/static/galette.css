@@ -40,7 +40,6 @@ img, a img {
 	display:inline;
 	margin: 0;
 	margin-right: 0.5em;
-/* 	background-color: #000; */
 }
 
 .related .li{
@@ -69,8 +68,6 @@ div.sphinxsidebar {
     margin:0;
     float:right;
     margin-left:0;
-    /*position: absolute;
-    right: 1.5em;*/
 }
 
 .document{
@@ -78,23 +75,24 @@ div.sphinxsidebar {
 }
 
 .sphinxsidebarwrapper {
-    /*border:1px solid #c4c4c4;*/
     padding:.5em!important;
     margin:.5em;
 }
 
-.sphinxsidebarwrapper h3,
-.sphinxsidebarwrapper h4,
-.sphinxsidebarwrapper p,
-.sphinxsidebarwrapper ul{
-    padding:0;
-    margin:0;
+.sphinxsidebarwrapper * {
+    margin:0 .2em;
+    padding: 0;
+}
+
+.sphinxsidebarwrapper ul {
+    margin-bottom: .5em;
 }
 
 .sphinxsidebarwrapper h3 {
+    font-size:1.2em;
+    font-weight: bold;
     text-align: center;
-    /*border-top:1px solid;*/
-    margin-top:.5em;
+    margin:.5em 0 0;
     background-color: #F8C363;
     color:#636B70;
     padding:.2em;
@@ -104,6 +102,16 @@ div.sphinxsidebar {
 }
 .sphinxsidebarwrapper h3 a{
     color:#636B70!important;
+}
+
+.sphinxsidebarwrapper h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.sphinxsidebarwrapper p.topless {
+    padding-left: 20px;
+    background: url(images/next.png) 0 50% no-repeat;
 }
 
 div.admonition {
@@ -180,7 +188,6 @@ h5 {
 	font-size: 100%;
 	margin: 0 0 1em 0;
 	padding: 0.5em 0 0 0;
-	/*border-bottom: 1px solid #c4c4c4;*/
 	clear: left;
 }
 
@@ -311,7 +318,6 @@ select.edit {
 
 /* Search form */
 #dw__search {
-	/*float: right;*/
 	position:absolute;
 	right:0;
 	top:0;
@@ -514,7 +520,6 @@ div#footer img {
 div.toc {
 	margin-left: 1em;
 	margin-top: 1.1em;
-	/*margin: 1.2em 0 0 2em;*/
 	float: right;
 	width: 200px;
 	font-size: 80%;
