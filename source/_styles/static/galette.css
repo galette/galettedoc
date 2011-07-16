@@ -70,6 +70,10 @@ div.sphinxsidebar {
     margin-left:0;
 }
 
+div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points {
+    margin-left: 10px;
+}
+
 .document{
     margin:1em 230px 0 1em;
 }
@@ -86,6 +90,10 @@ div.sphinxsidebar {
 
 .sphinxsidebarwrapper ul {
     margin-bottom: .5em;
+}
+
+.sphinxsidebarwrapper form * {
+    margin:0;
 }
 
 .sphinxsidebarwrapper h3 {
