@@ -17,4 +17,4 @@ Lancez ensuite le programme ``xampp-control`` (qui se trouve dans ``C:\xampp``),
    :scale: 50 %
    :align: center
 
-Une fois ces étapes effectuées, il vous faudra récupérer Galette et la placer dans le dossier ``C:\wampp\htdocs\galette``, l'application sera alors accessible à l'adresse http://127.0.0.1/galette/. Il suffit de visiter cette adresse poru que le processus d'installation se lance.
+Une fois ces étapes effectuées, il vous faudra récupérer Galette et la placer dans le dossier ``C:\wampp\htdocs\galette``, l'application sera alors accessible à l'adresse http://127.0.0.1/galette/. Il suffit de visiter cette adresse pour que le processus d'installation se lance.

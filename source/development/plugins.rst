@@ -8,7 +8,7 @@
 
 Depuis la version 0.7 ; Galette fournit un système de plugins - rudimentaire, certes, mais qui a le mérite d'exister :-)
 
-Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les templates Smarty) ; de créer des entrées de menus pour accéder aux pages précédement créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
+Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les templates Smarty) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
 
 Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <http://fr.dotclear.org/>`_.
 
@@ -27,7 +27,7 @@ Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou 
 Licence
 =======
 
-Les plugins de galette sont fournis sous licence GPL version 3, tout comme le code principal. La license doit être spécifiée sur chaque fichier ; selon le modèle suivant :
+Les plugins de galette sont fournis sous licence GPL version 3, tout comme le code principal. La licence doit être spécifiée sur chaque fichier ; selon le modèle suivant :
 
 .. code-block:: php
 
