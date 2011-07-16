@@ -152,6 +152,20 @@ div.warning {
     background-color: rgba(255,0,0,0.5);
 }
 
+.warning  .admonition-title {
+    background-image:url(images/warning.png), url(images/warning.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    padding:.1em 0;
+}
+
+.note  .admonition-title {
+    background-image:url(images/info.png), url(images/info.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    padding:.1em 0;
+}
+
 .literal {
     font-size:1.2em;
     background-color:rgba(99, 107, 112, 0.2);
