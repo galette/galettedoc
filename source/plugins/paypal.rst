@@ -62,3 +62,17 @@ Vous devrez ensuite importer ces instructions SQL dans votre base, soit en utili
    mysql> source /var/www/html/galette/plugins/Paypal/sql/galette_paypal.sql
 
 Et voilà ; le plugin Paypal est installé :-)
+
+Configuration du plugin
+=======================
+
+Lorsque le plugin est installé, un groupe `Paypal` est ajouté au menu, comprenant deux nouvelles entrées :
+
+* `Formulaire de paiement` : le formulaire lui même, dont l'URL est publiquement accessible,
+* ̀Préférences Paypal` : les préférences du plugin, réseérvées aux membres du bureau
+
+Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vosu le trouverez en vous connectant à votre compte paypal.
+
+L'interface des préférences vous permet aussi de gérer les montants associés aux différents types de cotisations, et vous permet également de désactiver l'affichages de certains types de contributions.
+
+Après cela, votre formulaire permettra à un internaute de sélectionner le type de contribution qu'il souhaite, ajuster au besoin le montant, et de régler le tout depuis son compte Paypal.
