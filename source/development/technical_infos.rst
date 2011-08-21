@@ -12,32 +12,32 @@ Pas encore disponible.
 Bibliothèques utilisées
 =======================
 
-.. _pear:
 
-PEAR
-----
+.. _zend_db:
 
-.. image:: ../_styles/static/images/libraries/pear.png
+Zend DB
+-------
+
+.. image:: ../_styles/static/images/libraries/zend.gif
    :align: right
 
-Galette 0.7 utilisera plusieurs `extensions PHP PEAR <http://pear.php.net/>`_.
-
-PEAR::MDB2
-^^^^^^^^^^
-
-L'accès aux bases de données sera désormais assuré par `l'extension PEAR MDB2 <http://pear.php.net/package/MDB2/>`_.
+L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/fr/zend.db.html>`_.
 
 Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'a été testé avec succès qu'avec :
 
-* `MySQL <http://mysql.com/>`_ version 5.x (4.1 minimum, le support InnoDB est requis),
+* `MySQL <http://mysql.com/>`_ version 5.x (le support InnoDB est requis),
 * `PostgreSQL <http://www.postgresql.org/>`_ 8.x ou 9.x.
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
+.. _pear:
 .. _pearlog:
 
 PEAR::Log
-^^^^^^^^^
+---------
+
+.. image:: ../_styles/static/images/libraries/pear.png
+   :align: right
 
 Un système de logs sera assuré par `l'extension PEAR Log <http://pear.php.net/package/Log>`_.
 
