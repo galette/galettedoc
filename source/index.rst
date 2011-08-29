@@ -8,18 +8,28 @@ Documentation de Galette
 
 `Galette <http://galette.tuxfamily.org>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <http://galette.tuxfamily.org>`_ propose une `présentation des fonctionnalités <http://galette.tuxfamily.org/fr/doku.php?id=apropos>`_, ainsi que quelques informations complémentaires sur le logiciel ; vous pouvez également consulter :doc:`le changelog de Galette </changelog>`.
 
-.. note::
+.. rst-class:: docs install_doc
 
-   L'ensemble de la documentation est disponible pour `consultation en ligne <http://galette.tuxfamily.org/documentation/fr/>`_, ou pour téléchargement pour un usage hors-ligne.
+:doc:`manuel d'installation <installation/index>`
 
-   Dans le second cas, vous pourrez choisir `la version texte <http://galette.tuxfamily.org/documentation/fr/documentation_galette_txt.tar.bz2>`_, `la version HTML <http://galette.tuxfamily.org/documentation/fr/documentation_galette.tar.bz2>`_ ou `la version PDF <http://galette.tuxfamily.org/documentation/fr/galette.pdf>`_.
+.. rst-class:: docs user_doc
 
-Les présentes pages constituent la documentation officielle du projet Galette, qui inclut :
+:doc:`manuel de l'utilisateur <usermanual/index>`
 
-* le :doc:`manuel d'installation de Galette <installation/index>`,
-* le :doc:`manuel de l'utilisateur Galette <usermanual/index>`,
-* la :doc:`documentation des différents plugins de Galette <plugins/index>`,
-* le :doc:`guide du développeur Galette <development/index>`.
+.. rst-class:: docs plugins_doc
+
+:doc:`documentation des plugins <plugins/index>`
+
+.. rst-class:: docs devel_doc
+
+:doc:`guide du développeur <development/index>`
+
+.. rst-class:: dl-formats
+
+* Versions hors-ligne de la documentation :
+* `version texte <http://galette.tuxfamily.org/documentation/fr/documentation_galette_txt.tar.bz2>`_
+* `version HTML <http://galette.tuxfamily.org/documentation/fr/documentation_galette.tar.bz2>`_
+* `version PDF <http://galette.tuxfamily.org/documentation/fr/galette.pdf>`_
 
 Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de galette (technologies utilisées, comment récupérer les sources et les construire) <about>`.
 

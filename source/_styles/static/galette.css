@@ -819,3 +819,115 @@ div.error{
 	float:none;
 	width:auto;
 }
+
+.docs {
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+    margin-left:1%;
+    position:relative;
+}
+
+.docs a {
+    display:inline-block;
+    height: 6em;
+    min-width:15em;
+    max-width:25em;
+    width:100%;
+    max-width: 45em;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 1px 1px 12px #555555;
+    -webkit-box-shadow: 1px 1px 12px #555555;
+    box-shadow: 1px 1px 12px #555555;
+}
+
+.docs a em {
+    position:absolute;
+    color: black;
+    background-color:rgba(255, 255, 255, .9);
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    font-size:1.2em;
+    bottom:1em;
+    right: 1em;
+    padding: .5em;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 1px 1px 12px #ccc;
+    -webkit-box-shadow: 1px 1px 12px #ccc;
+    box-shadow: 1px 1px 12px #ccc;
+}
+
+.docs a em:hover {
+    -moz-box-shadow: 1px 1px 12px #555555;
+    -webkit-box-shadow: 1px 1px 12px #555555;
+    box-shadow: 1px 1px 12px #555555;
+}
+
+.devel-doc a{
+    background: url(images/developpers.jpg) 50% 50% no-repeat;
+}
+
+.install-doc a{
+    background: url(images/installation.jpg) 50% 100% no-repeat;
+}
+
+.user-doc a{
+    background: url(images/usermanual.jpg) 50% 100% no-repeat;
+}
+
+.plugins-doc a{
+    background: url(images/plugins.jpg) 50% 50% no-repeat;
+}
+
+.dl-formats {
+    padding:0;
+    text-align:center;
+}
+
+.dl-formats li {
+    display:inline-block;
+}
+
+.dl-formats li a {
+    color: black;
+    text-decoration:none;
+}
+.dl-formats li a:hover {
+    text-decoration: underline;
+}
+
+.dl-formats li:first-child {
+    display:block;
+}
+
+/* version TEXTE */
+.dl-formats li:nth-child(2) a{
+    text-indent: -5000px;
+    display: inline-block;
+    background: url(images/txt.png) 50% 50% no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+/* version HTML */
+.dl-formats li:nth-child(3) a{
+    text-indent: -5000px;
+    display: inline-block;
+    background: url(images/html.png) 50% 50% no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+/* version PDF */
+.dl-formats li:nth-child(4) a{
+    text-indent: -5000px;
+    display: inline-block;
+    background: url(images/pdf.png) 50% 50% no-repeat;
+    height: 64px;
+    width: 64px;
+}
