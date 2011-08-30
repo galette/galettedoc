@@ -12,7 +12,7 @@ Dans un premier temps, vous allez `télécharger Galette <http://galette.tuxfami
 .. code-block:: bash
 
    $ cd /var/www/html/
-   $ wget http://download.gna.org/galette/galette-0.7.tar.bz2
+   $ wget http://download.tuxfamily.org/galette/galette-0.7-dev.tar.bz2
    $ tar xjvf galette-0.7.tar.bz2
 
 Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.spiroo.be/7zip/>`_.
