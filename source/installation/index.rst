@@ -50,8 +50,6 @@ Galette est régulièrement testé avec des versions récentes de ces composants
 
    `PHP 5.2 n'est plus maintenu depuis décembre 2010 <http://www.php.net/releases/5_2_16.php>`_. De plus, `PHP 5.3 apporte des fonctions de date et heure (et de calcul sur des date et heure) <http://fr.php.net/manual/fr/book.datetime.php>`_ très intéressantes et aisées à mettre en place qui sont utilisées dans le code actuel de Galette.
 
-   Il serait éventuellement possible de remplacer ces quelques appels par un équivalent qui serait compatible PHP 5.2 ; mais je ne trouve personnellement pas d'intérêt à développer un produit sur des technologies dores et déjà dépassées. Je n'ai par ailleurs pas la possibilité d'installer facilement une version de PHP qui n'est plus maintenue.
-
 Table des matières
 ------------------
 
