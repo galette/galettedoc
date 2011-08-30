@@ -36,7 +36,7 @@ Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de g
 Table des matières :
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    installation/index.rst
    usermanual/index.rst
