@@ -14,7 +14,7 @@ Dans un premier temps, vous allez `télécharger Galette <http://galette.tuxfami
    $ wget http://download.gna.org/galette/galette-0.7.tar.bz2
    $ tar xjvf galette-0.7.tar.bz2
 
-Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.7-zip.org/fr/>`.
+Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.spiroo.be/7zip/>`_.
 
 La version 0.7 de Galette est l'actuelle version en développement. Il existe une archive mise à jour quotidiennement (nightly) de cette version, et vous pouvez également choisir de  :doc:`récupérer la version de développement de Galette <../development/svn>`, expliquée dans la documentation de développement.
 
