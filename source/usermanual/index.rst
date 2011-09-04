@@ -4,32 +4,41 @@
 Manuel de l'utilisateur
 =======================
 
-*********
-Adhérents
-*********
+Bienvenue dans le guide de l'utilisateur de Galette :-) Ces pages vous guideront à travers les différents écrans et possibilités offerts par Galette pour la gestion de votre association.
 
-Mailing
-=======
+*********************
+Gestion des Adhérents
+*********************
 
-***********
-Cotisations
-***********
+Les gestion des adhérents est bien évidemment le cœur de Galette. Vous pourrez enregistrer l'ensemble de vos membres, 
 
-************
-Transactions
-************
+Paramétrage des champs obligatoires
+===================================
+
+E-Mailing
+=========
+
+***********************
+Gestion des Cotisations
+***********************
+
+Les Transactions
+================
+
+Types de contributions
+======================
 
 **********
 Historique
 **********
 
-***********
-Exports CSV
-***********
+*************************
+Exports de données en CSV
+*************************
 
-***********
-Préférences
-***********
+**************************
+Les Préférences de Galette
+**************************
 
 Cet écran vous permet de configurer divers aspects relatifs à l'application ou à votre association.
 
@@ -112,24 +121,71 @@ Administrateur
    :align: center
    :alt: Préférences de Galette, onglet Général
 
-*******************
-Champs obligatoires
-*******************
+.. _add_fields:
 
-************************
-Configuration des fiches
-************************
+********************************
+Ajouts de champs supplémentaires
+********************************
+
+Galette propose par défaut un certain nombre de champs, pour la gestion des adhérents, des contributions et des transactions. Certains champs ne vous seront probablement pas utiles, mais d'autres vont peut-être cruellement vous manquer...
+
+Dans ce cas, c'est simple : créez un nouveau champ, sélectionnez son type, donnez lui un libelle, définissez s'il est requis ou optionnel ; et c'est tout : Galette se chargera du reste, il suffira d'admirer le résultat... ;-)
+
+Il vous est proposé quatre types de champs dynamiques :
+
+* `séparateur` : juste un libellé, comme un titre de partie,
+* `texte libre` : ajoutera une zone de texte multiligne,
+* `ligne simple` : ajoutera une zone de texte monoligne,
+* `choix` : ajoutera une liste de choix.
+
+Lors de la création d'un nouveau champ (ou de la modification d'un champ existant) ; vous aurez également la possibilité de :
+
+* choisir si le champ est visible par tous ou uniquement aux administrateurs,
+* rendre le champ obligatoire,
+* définir une position.
+
+.. image:: ../_styles/static/images/usermanual/champs_dynamiques_rendu.png
+   :scale: 50%
+   :align: center
+   :alt: Un champ dynamique de chaque type possible sur la fiche adhérent
+
+Certains champs - comme les séparateurs - ne requièrent aucune autre information complémentaire ; pour les autres :
+
+* `texte libre` :
+
+  * `largeur` : définit la largeur de la zone de texte,
+  * `hauteur` : définit la hauteur de la zone de texte.
+
+* `ligne simple` :
+
+  * `largeur` : la largeur de la zone,
+  * `taille` : le nombre de caractères maximum que peut contenir la zone,
+  * `répétition` : nombre d'occurrences possibles de ce champ.
+
+* `choix` :
+
+  * `valeurs` : la liste des valeurs possibles pour la liste de choix.
 
 **********************
 Traduction de libellés
 **********************
 
-**********************
-Types de contributions
-**********************
+Galette est multilingue, l'ajout de nouvelles valeurs telles que les libellés des champs dynamiques ne permet l'adjonction que d'une seule et unique valeur (monolingue donc). Galette propose donc une interface qui vous permet de traduire de tels libellés dans les différentes langues disponibles.
+
+Notez que par défaut, tout libellé entré correspondra à sa traduction dans la langue courante de Galette.
 
 *********************
 Contenu des courriels
 *********************
 
+En fonction de la configuration (voir les préférences), des courriels peuvent être envoyés aux adhérents et/ou aux administrateurs ; lors de la création d'une nouvelle fiche, ou lors de l'ajout d'une contribution par exemple.
+
+Les textes en question sont fournis par défaut, et une interface vous est proposée pour les modifier.
+
+.. note:: Il est important de noter que les textes en question comportent des variables - notées sous la forme ``{VARIABLE}`` - qui seront remplacées automatiquement lors de l'envoi du message. L'oubli de l'une de ces valeurs peut potentiellement causer des problèmes d'envoi des messages.'
+
+.. image:: ../_styles/static/images/usermanual/edit_mails.png
+   :scale: 50%
+   :align: center
+   :alt: Modification du texte en français envoyé à un adhérent lors de son adhésion
 
