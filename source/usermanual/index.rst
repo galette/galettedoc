@@ -15,8 +15,40 @@ Les gestion des adhérents est bien évidemment le cœur de Galette. Vous pourre
 Paramétrage des champs obligatoires
 ===================================
 
+Lors de la saisie ou de la modification de fiches adhérents, certains champs sont marqués comme étant requis. Bien entendu, cette sélection par défaut peut ne pas vous convenir, mais vous avez la possibilité de paramétrer ça facilement :-)
+
+Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis.
+
+.. image:: ../_styles/static/images/usermanual/required_fields.png
+   :scale: 50%
+   :align: center
+   :alt: Paramétrage des champs requis
+
 E-Mailing
 =========
+
+Depuis Galette, vous pouvez envoyer des E-Mailings à une sélection de vos adhérents. Chaque E-Mailing envoyé est stocké afin de pouvoir servir de modèle par la suite. Ainsi, depuis la `Gestion des E-Mailings` ; vous pourrez sélectionner un message que vous avez déjà envoyé, et l'utiliser comme modèle, récupérant ainsi la liste des personnes qui avaient été sélectionnées pour cet envoi, le sujet, et le contenu du message lui même.
+
+Pour envoyer un nouvel E-Mailing, il suffit de sélectionner dans la liste des adhérents les membres auxquels vous souhaitez le faire parvenir, puis de cliquer sur le bouton `Envoyer un courriel`. Si certains des membres sélectionnés ne possèdent pas d'adresse de courriel, Galette vous proposera de générer les étiquettes correspondantes.
+
+.. image:: ../_styles/static/images/usermanual/mailing_selected_members.png
+   :scale: 50%
+   :align: center
+   :alt: Adhérents sélectionnés pour l'E-Mailing
+
+.. note:: La sélection des adhérents dans le tableau doit se faire sur une seule et unique page (une limite inhérente aux pages web). Les fonctionnalités de filtrage, et la possibilité d'afficher l'intégralité des membres (filtrés ou non) sur une seule page vous seront alors fort utiles ;-)
+
+Une fois le sujet entré ; on passera à la rédaction du message en lui même. Vous avez la possibilité d'envoyer les messages au format texte seul, ou au format HTML (gardez à l'esprit que l'envoi de messages HTML n'est pas toujours à préférer). Pour le second cas, une interface d'aide à la saisie vous est proposée.
+L'interface par défaut de Galette est volontairement simple et légère ; pour ne pas alourdir inutilement l'ensemble du logiciel. Si cette interface ne convient pas à vos besoins ; vous pourrez toujours installer le :doc:`plugin TinyMCE <../plugins/tinymce>` qui est là pour ça :-)
+
+Dès lors que l'éditeur HTML est activé, la case `Interpréter les balises HTML` est automatiquement cochée. Si vous souhaitez envoyer un E-Mailing en HMTL sans utiliser l'éditeur, pensez à cocher cette case !
+
+Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre message avant de l'envoyer.
+
+.. image:: ../_styles/static/images/usermanual/mailing_preview.png
+   :scale: 50%
+   :align: center
+   :alt: Prévisualisation du message
 
 ***********************
 Gestion des Cotisations
