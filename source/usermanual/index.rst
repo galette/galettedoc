@@ -214,7 +214,7 @@ En fonction de la configuration (voir les préférences), des courriels peuvent 
 
 Les textes en question sont fournis par défaut, et une interface vous est proposée pour les modifier.
 
-.. note:: Il est important de noter que les textes en question comportent des variables - notées sous la forme ``{VARIABLE}`` - qui seront remplacées automatiquement lors de l'envoi du message. L'oubli de l'une de ces valeurs peut potentiellement causer des problèmes d'envoi des messages.'
+.. note:: Il est important de noter que les textes en question comportent des variables - notées sous la forme ``{VARIABLE}`` - qui seront remplacées automatiquement lors de l'envoi du message. L'oubli de l'une de ces valeurs peut potentiellement causer des problèmes d'envoi des messages.
 
 .. image:: ../_styles/static/images/usermanual/edit_mails.png
    :scale: 50%
