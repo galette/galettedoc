@@ -1,5 +1,11 @@
 .. _plugins:
 
+.. rst-class:: docs plugins_doc
+
+:doc:`documentation des plugins <index>`
+
+.. rst-class:: doc_main_page
+
 ********************
 Plugins pour Galette
 ********************

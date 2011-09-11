@@ -1,5 +1,11 @@
 .. _developerguide:
 
+.. rst-class:: docs devel_doc
+
+:doc:`guide du développeur <index>`
+
+.. rst-class:: doc_main_page
+
 ================================
 Manuel du développeur de Galette
 ================================
