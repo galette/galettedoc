@@ -8,6 +8,16 @@
     :license: see LICENSE for details.
 #}
 {% extends "basic/layout.html" %}
+{% set script_files = script_files + ['_static/jquery.fancybox-1.3.4.pack.js'] %}
+{% set css_files = css_files + ['_static/jquery.fancybox-1.3.4.css'] %}
+
+{%- block extrahead %}
+  <script type="text/javascript">
+    $(function(){
+      $('.image-reference').fancybox();
+    })
+  </script>
+{%- endblock %}
 
 {%- block header %}
   <div id="galette">
