@@ -17,9 +17,9 @@ Ces pages vous guideront à travers les différents écrans et possibilités off
 Gestion des Adhérents
 *********************
 
-Les gestion des adhérents est bien évidemment le cœur de Galette. Vous pourrez enregistrer l'ensemble de vos membres, 
+La gestion des adhérents est bien évidemment le cœur de Galette. Vous pourrez enregistrer l'ensemble de vos membres, 
 
-Votre tout premier contact avec l'interface de Galette - hormis les pages d'installation et la page de connexion, bien entendu - sera la liste des adhérents. Bien entendu, juste après l'installation ; cela ne sera pas fort parlant, puisque cette liste sera vide... Mais ça ne devrait pas durer :-D
+Votre tout premier contact avec l'interface de Galette - hormis les pages d'installation et la page de connexion - sera la liste des adhérents. Bien entendu, juste après l'installation ; cela ne sera pas fort parlant, puisque cette liste sera vide... Mais ça ne devrait pas durer :-D
 
 Commencez donc par la création d'une nouvelle fiche adhérent. Comme partout dans Galette, les champs obligatoires sont marqués en rouge ; tous les autres champs sont facultatifs. Les différentes parties de cet écran (`Identité`, `Informations de contact`, `Informations relatives à Galette` et éventuellement `Champs supplémentaires`) sont rétractables, en cliquant sur la flèche qui précède le titre.
 
@@ -74,9 +74,9 @@ Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre
    :align: center
    :alt: Prévisualisation du message
 
-Tout E-Mailing commencé sera automatiquement enregistré dans la session pour être repris par la suite. Une icône dans le titre des différentes page"s vous informera qu'un E-Mailing a été débuté, et vous permettra d'y accéder.
+Tout E-Mailing commencé sera automatiquement enregistré dans la session pour être repris par la suite. Une icône dans le titre des différentes pages vous informera qu'un E-Mailing a été débuté, et vous permettra d'y accéder.
 
-Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`.
+Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`, il sera alors effacé de la session.
 
 ***********************
 Gestion des Cotisations
@@ -189,7 +189,7 @@ Ajouts de champs supplémentaires
 
 Galette propose par défaut un certain nombre de champs, pour la gestion des adhérents, des contributions et des transactions. Certains champs ne vous seront probablement pas utiles, mais d'autres vont peut-être cruellement vous manquer...
 
-Dans ce cas, c'est simple : créez un nouveau champ, sélectionnez son type, donnez lui un libelle, définissez s'il est requis ou optionnel ; et c'est tout : Galette se chargera du reste, il suffira d'admirer le résultat... ;-)
+Dans ce cas, c'est simple : créez un nouveau champ, sélectionnez son type, donnez lui un libellé, définissez s'il est requis ou optionnel ; et c'est tout : Galette se chargera du reste, il suffira d'admirer le résultat... ;-)
 
 Il vous est proposé quatre types de champs dynamiques :
 
