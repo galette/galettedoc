@@ -1,16 +1,40 @@
 .. _usermanual:
 
+.. rst-class:: docs user_doc
+
+:doc:`manuel de l'utilisateur <index>`
+
+.. rst-class:: doc_main_page
+
 =======================
 Manuel de l'utilisateur
 =======================
 
-Bienvenue dans le guide de l'utilisateur de Galette :-) Ces pages vous guideront à travers les différents écrans et possibilités offerts par Galette pour la gestion de votre association.
+Bienvenue dans le guide de l'utilisateur de Galette :-)
+Ces pages vous guideront à travers les différents écrans et possibilités offerts par Galette pour la gestion de votre association.
 
 *********************
 Gestion des Adhérents
 *********************
 
 Les gestion des adhérents est bien évidemment le cœur de Galette. Vous pourrez enregistrer l'ensemble de vos membres, 
+
+Votre tout premier contact avec l'interface de Galette - hormis les pages d'installation et la page de connexion, bien entendu - sera la liste des adhérents. Bien entendu, juste après l'installation ; cela ne sera pas fort parlant, puisque cette liste sera vide... Mais ça ne devrait pas durer :-D
+
+Commencez donc par la création d'une nouvelle fiche adhérent. Comme partout dans Galette, les champs obligatoires sont marqués en rouge ; tous les autres champs sont facultatifs. Les différentes parties de cet écran (`Identité`, `Informations de contact`, `Informations relatives à Galette` et éventuellement `Champs supplémentaires`) sont rétractables, en cliquant sur la flèche qui précède le titre.
+
+.. image:: ../_styles/static/images/usermanual/add_member.png
+   :scale: 50%
+   :align: center
+   :alt: La partie `Identité` de l'écran d'ajout d'adhérent
+
+Sur les champs de type date, la petite icône en fin de ligne vous donne accès à un calendrier.
+
+.. image:: ../_styles/static/images/usermanual/calendar.png
+   :align: center
+   :alt: Sélection d'une date
+
+Si votre navigateur supporte HTML5 (c'est le cas depuis un certain temps pour Firefox et Chromium par exemple) ; il vous avertira directement des champs requis et non renseignés. Si, pour une raison ou une autre, l'une des informations était erronée, la page serait rechargée avec les informations saisies (en dehors du mot de passe !), et un message en haut de page vous informera des erreurs rencontrées. Le même type de message s'affichera pour les champs requis si votre navigateur ne supporte pas HTML5 (dans ce cas, je vous invite fortement à `utiliser un navigateur web récent et respectueux des standards <http://www.mozilla-europe.org/>`_ ; votre expérience avec Galette et bien d'autres sites s'en retrouverait améliorée).
 
 Paramétrage des champs obligatoires
 ===================================
@@ -49,6 +73,10 @@ Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre
    :scale: 50%
    :align: center
    :alt: Prévisualisation du message
+
+Tout E-Mailing commencé sera automatiquement enregistré dans la session pour être repris par la suite. Une icône dans le titre des différentes page"s vous informera qu'un E-Mailing a été débuté, et vous permettra d'y accéder.
+
+Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`.
 
 ***********************
 Gestion des Cotisations
