@@ -41,7 +41,7 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion, il
 
    $ mkdir galette.git && cd galette.git
    $ git svn init -t tags -b branches -T trunk http://svn.gna.org/svn/galette/
-   $ git fetch svn
+   $ git svn fetch
 
 C'est la commande ``fetch`` qui va prendre le plus de temps. Une fois le dépôt récupéré ; vous pouvez commencer à travailler dessus, en utilisant GIT comme à l'accoutumée. En revanche, vous n'utiliserez pas ``git push``, mais ``git svn dcommit`` pour envoyer les commits sur le dépôt SVN.
 
