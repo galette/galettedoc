@@ -60,7 +60,7 @@ Configuration du plugin
 Lorsque le plugin est installé, un groupe `Paypal` est ajouté au menu, comprenant deux nouvelles entrées :
 
 * `Formulaire de paiement` : le formulaire lui même, dont l'URL est publiquement accessible,
-* ̀Préférences Paypal` : les préférences du plugin, réseérvées aux membres du bureau
+* ̀`Préférences Paypal` : les préférences du plugin, réseérvées aux membres du bureau
 
 Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vosu le trouverez en vous connectant à votre compte paypal.
 
