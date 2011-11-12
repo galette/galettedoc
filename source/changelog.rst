@@ -20,9 +20,11 @@ Ajouts et modifications
 =======================
 
 * Refonte complète de l'interface,
-* Validation XHTML 1 et CSS 2,
+* Validation HTML 5 et CSS 3,
 * Nouvelle gestion de l'historique,
 * Gestion de mailings (avec historique),
+* Gestion de groupes,
+* Intégration d'un tableau de bord (avec affichage des dernières news du projet),
 * Pages publiques (liste des membres et trombinoscope),
 * Système de plugins (voir :ref:`la liste des plugins disponibles <plugins>`),
 * Export au format CSV des tables de la base courante et/ou export de requêtes paramétrées (https://mail.gna.org/public/galette-devel/2009-02/msg00006.html),
@@ -30,8 +32,11 @@ Ajouts et modifications
 * Gestion multilingue des sujets et messages des mails envoyés automatiquement par Galette (inscription, perte de mot de passe, ...),
 * Gestion des statuts utilisateur,
 * Gestion des types de contributions,
+* Refonte de la gestion des transactions,
+* Refonte de l'interface d'envoi d'e-mailings,
 * Intégration de JQuery UI pour améliorer l'interface (menus, onglets dans les préférences, date picker, ...),
-* Impression de cartes de membres
+* Impression de cartes de membres,
+* ...
 
 .. _suppressions_07:
 
@@ -40,7 +45,6 @@ Suppressions
 
 * Suppression du support IE6,
 * Suppression de l'espagnol (qui n'est plus maintenu :'( )
-* Suppression de AdoDB (remplacé par PEAR MDB2) (*en cours*)
 
 .. _souscapot_07:
 
@@ -50,11 +54,10 @@ Sous le capot...
 Quelques modifications, d'ordre un peu plus technique ont également été apportées :
 
 * Compatible PHP 5.3 et supérieurs,
-* Utilisation de bibliothèques PEAR :
-
-  * MDB2 : gestion des bases de données (en lieu et place de AdoDB),
-  * Log : système de log
-
+* Ré-écriture de la presque totalité du code en POO,
+* Utilisation de la bibliothèque PEAR::LOG,
+* Utilisation de Zend DB pour la gestion des bases de données en lieu et place de AdoDB,
+* Utilisation de la bibliothèque phpMailer pour l'envoi des emails,
 * Mise en place de relations dans la base de données pour assurer l'intégrité référentielle.
 
 .. _plugins_07:
