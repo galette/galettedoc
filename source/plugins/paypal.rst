@@ -62,7 +62,7 @@ Lorsque le plugin est installé, un groupe `Paypal` est ajouté au menu, compren
 * `Formulaire de paiement` : le formulaire lui même, dont l'URL est publiquement accessible,
 * ̀`Préférences Paypal` : les préférences du plugin, réseérvées aux membres du bureau
 
-Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vosu le trouverez en vous connectant à votre compte paypal.
+Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vous pouvez soit utiliser l'adresse email associée à votre compte (qu'il faudra mettre à jour côté Galette si vous la modifiez) ou votre identifiant de compte marchand. Pour trouver ce dernier, connectez-vous à votre compte Paypal, rendez-vous dans le menu "Préférences" -> "Plus d'options" ; et cherchez la valeur "Identifiant de compte marchand" (mille mercis à Thomas pour cette procédure détaillée !).
 
 L'interface des préférences vous permet aussi de gérer les montants associés aux différents types de cotisations, et vous permet également de désactiver l'affichages de certains types de contributions.
 
