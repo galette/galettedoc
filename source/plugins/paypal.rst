@@ -19,9 +19,9 @@ Sous Linux, vous pourrez récupérer la version de développement du plugin de c
 .. code-block:: bash
 
    $ cd /var/www/html/galette/plugins
-   $ wget http://download.gna.org/galette/plugins/galette-plugin-Paypal-1.0.tar.bz2
-   $ tar xjvf galette-plugin-Paypal-1.0.tar.bz2
-   $ mv galette-plugin-Paypal-1.0 Paypal
+   $ wget http://download.gna.org/galette/plugins/galette-plugin-Paypal-1.0.2.tar.bz2
+   $ tar xjvf galette-plugin-Paypal-1.0.2.tar.bz2
+   $ mv galette-plugin-Paypal-1.0.2 Paypal
 
 Si vous souhaitez récupérer la version de développement du plugin, vous pouvez utiliser le dépôt SVN :
    $ svn co http://http://svn.gna.org/svn/galette/plugins/Paypal/trunk ./Paypal
@@ -32,8 +32,8 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
 
    $ mkdir /var/www/html/galette/plugins/Paypal
    $ cd /var/www/html/galette/plugins/Paypal
-   $ git svn init -t tags -b branches -T trunk http://svn.gna.org/svn/galette/plugins/Paypal
-   $ git fetch svn
+   $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/Paypal
+   $ git svn fetch
 
 Pour la version de développement, si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <svnwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Paypal`` et ``c:\xampp\htdocs\galette\plugins\Paypal`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 

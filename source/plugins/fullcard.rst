@@ -28,8 +28,8 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
 
    $ mkdir /var/www/html/galette/plugins/FullCard
    $ cd /var/www/html/galette/plugins/FullCard
-   $ git svn init -t tags -b branches -T trunk http://svn.gna.org/svn/galette/plugins/FullCard
-   $ git fetch svn
+   $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/FullCard
+   $ git svn fetch
 
 Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <svnwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/FullCard`` et ``c:\xampp\htdocs\galette\plugins\FullCard`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 

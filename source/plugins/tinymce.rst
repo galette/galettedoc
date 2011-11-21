@@ -42,8 +42,8 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
 
    $ mkdir /var/www/html/galette/plugins/TinyMCE
    $ cd /var/www/html/galette/plugins/TinyMCE
-   $ git svn init -t tags -b branches -T trunk http://svn.gna.org/svn/galette/plugins/TinyMCE
-   $ git fetch svn
+   $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/TinyMCE
+   $ git svn fetch
 
 Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <svnwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/TinyMCE/`` et ``c:\xampp\htdocs\galette\plugins\TinyMCE`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 

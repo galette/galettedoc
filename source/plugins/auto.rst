@@ -40,8 +40,8 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
 
    $ mkdir /var/www/html/galette/plugins/Auto
    $ cd /var/www/html/galette/plugins/Auto
-   $ git svn init -t tags -b branches -T trunk http://svn.gna.org/svn/galette/plugins/Auto
-   $ git fetch svn
+   $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/Auto
+   $ git svn fetch
 
 Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <svnwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Auto`` et ``c:\xampp\htdocs\galette\plugins\Auto`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
