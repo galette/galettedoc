@@ -2,9 +2,9 @@
 Outils d'administration
 =======================
 
-Ce plugin peremt certaines actions d'administration sur Galette.
+Ce plugin permet certaines actions d'administration sur Galette.
 
-Actuellement, la seule action possible est de convertir l'encodage des données. En effet, les versions de Galette précédant la 0.7 utilisaient l'ISO-8859-1 pour l'encodage des données de la base, la 0.7 utilise l'UTF-8. Le système de mise à jour prend cela pleinement en charge, mais il peut arriver, lors d'improts par exemple, de se retrouver avec des caractères mal encodés ; c'est à ce moment là que cette fonctionnalité devient utile.
+Actuellement, la seule action possible est de convertir l'encodage des données. En effet, les versions de Galette précédant la 0.7 utilisaient l'ISO-8859-1 pour l'encodage des données de la base, la 0.7 utilise l'UTF-8. Le système de mise à jour prend cela pleinement en charge, mais il peut arriver, lors d'imports par exemple, de se retrouver avec des caractères mal encodés ; c'est à ce moment là que cette fonctionnalité devient utile.
 
 
 Installation
