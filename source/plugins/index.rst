@@ -27,3 +27,4 @@ Les plugins actuellement disponibles pour Galette sont :
    paypal.rst
    fullcard.rst
    sport.rst
+   admintools.rst
