@@ -13,6 +13,7 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion, il
 Pour utiliser le miroir, vous pouvez le cloner directement, ou créer un fork sur `BitBucket <https://bitbucket.org>`_ (il vous faudra un compte pour cette seconde possibilité). L'avantage du fork, c'est qu'une fois vos modifications apportées, vous pourrez facilement les soumettre en retour au miroir, afin qu'elles puissent être intégrées au projet. Pour cloner le projet :
 
 .. code-block:: bash
+
    $ git clone https://bitbucket.org/trashy/galette.git
 
 git-svn
