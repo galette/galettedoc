@@ -13,6 +13,15 @@ Manuel de l'utilisateur
 Bienvenue dans le guide de l'utilisateur de Galette :-)
 Ces pages vous guideront à travers les différents écrans et possibilités offerts par Galette pour la gestion de votre association.
 
+Juste après l'écran de connexion, vous serez emmenés vers le tableau de bord de Galette.
+
+.. image:: ../_styles/static/images/usermanual/desktop.png
+   :scale: 75%
+   :align: center
+   :alt: Tableau de bord
+
+La partie principale du tableau de bord vous propose un accès rapide aux principales fonctionnalités du logiciel, tandis que la partie gauche vous permet de suivre les dernières nouvelles du projet :)
+
 ***********
 Généralités
 ***********
