@@ -62,6 +62,75 @@ Sur les champs de type date, la petite icône en fin de ligne vous donne accès 
 
 Si votre navigateur supporte HTML5 (c'est le cas depuis un certain temps pour Firefox et Chromium par exemple) ; il vous avertira directement des champs requis et non renseignés. Si, pour une raison ou une autre, l'une des informations était erronée, la page serait rechargée avec les informations saisies (en dehors du mot de passe !), et un message en haut de page vous informera des erreurs rencontrées. Le même type de message s'affichera pour les champs requis si votre navigateur ne supporte pas HTML5 (dans ce cas, je vous invite fortement à `utiliser un navigateur web récent et respectueux des standards <http://www.mozilla-europe.org/>`_ ; votre expérience avec Galette et bien d'autres sites s'en retrouverait améliorée).
 
+Liste des adhérents
+===================
+
+La liste des adhérents vous donne accès à de nombreuses fonctions :
+
+* filtrage et tri des adhérents,
+* affichage des fiches des adhérents,
+* suppression(s),
+* envoi de mailings,
+* génération d'étiquettes (PDF),
+* génération de listes d'émargement (PDF),
+* génération de cartes de membres (PDF).
+
+Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements.
+
+Filtrage
+^^^^^^^^
+
+Le formulaire situé en haut de page vous permet d'effectuer des opérations de filtrage.
+
+.. image:: ../_styles/static/images/usermanual/list_members-filter.png
+   :scale: 50%
+   :align: center
+   :alt: Filtrage de la liste des membres
+
+Vous pourrez ainsi filtrer sur :
+
+* une recherche textuelle sur l'une des informations suivante :
+
+  * le nom (nom et prénom),
+  * l'adresse,
+  * le courriel et les messageries instantanées,
+  * l'emploi,
+  * les informations.
+
+* l'un des statuts de l'adhérent :
+
+  * tous les adhérents,
+  * les adhérents à jour,
+  * les échéances proches (les adhérents dont la cotisation va arriver à échéance sous xx jours),
+  * les retardataires,
+  * les adhérents n'ayant jamais cotisé,
+  * les membres du bureau,
+  * les administrateurs.
+
+* un état du compte :
+
+  * tous les comptes,
+  * comptes actifs,
+  * comptes inactifs
+
+* la présence ou l'absence d'une adresse de courriel.
+
+Tout filtrage sera conservé le temps de votre session, vous pourrez ainsi aller modifier un paramétrage ou autre, et revenir sur la liste ; vous récupérerez automatiquement le filtre que vous aviez exécuté.
+
+Les différents filtres sont bien entendu complémentaires, vous donnant la possibilité par exemple de chercher parmi vos adhérents ceux dont le compte est actif, qui possèdent une adresse courriel et dont le nom contient un « a » ;-)
+
+Tri
+^^^
+
+Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes les colonnes contenant une information provenant de votre base d'adhérents. Ainsi, vous pouvez trier la liste par :
+
+* nom,
+* pseudo,
+* statut,
+* état de cotisation
+
+Pour les premiers cas, le résultat obtenu est assez transparent, il n'est pas vraiment besoin de le détailler ici. Pour le dernier cas, l'ordonnancement sera appliqué par date de création, exemption de cotisation et date d'échéance.
+
 Paramétrage des champs obligatoires
 ===================================
 
