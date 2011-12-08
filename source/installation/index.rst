@@ -33,8 +33,10 @@ Pour installer Galette, vous aurez besoin que les composants suivants soient ins
 * PHP en version 5.3 ou supérieure,
 
   * le module PHP `gd`,
-  * le module PHP `tidy`,
-  * le module PHP `mysql` ou `postgresql`,
+  * le module PHP `mysqli` ou `postgresql`,
+  * le module PHP `curl`,
+  * le support SSL,
+  * le module PHP `tidy` (optionnel, mais recommandé),
   * le module PHP `gettext` (optionnel).
 
 * un serveur `MySQL <http://mysql.com>`_ ou `PostgreSQL <http://postgresql.org>`_.
