@@ -27,7 +27,7 @@ Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou 
 Licence
 =======
 
-Les plugins de galette sont fournis sous licence GPL version 3, tout comme le code principal. La licence doit être spécifiée sur chaque fichier ; selon le modèle suivant :
+Les plugins officiels de galette sont fournis sous licence GPL version 3, tout comme le code principal. La licence doit être spécifiée sur chaque fichier ; selon le modèle suivant :
 
 .. code-block:: php
 
@@ -235,6 +235,48 @@ L'appel à une table dans le code se ferait donc de la façon suivante :
    $query = 'SELECT * FROM ' . PREFIX_DB . PLUGIN_PREXFIX . self::TABLE;
    [...]
    ?>
+
+Internationalisation
+====================
+
+Chaque plugin doit fournir les traduction des nouvelles chaînes qu'il propose. C'est le système global d'internationalisation de Galette qui s'applique ici ; la principale tâche (hormis la mise à jour des fichiers au cours de la vie du plugin, bien entendu) consiste à mettre en place les fichiers de traduction pour la première fois.
+
+Pour ce faire, copiez dans le dossier ``lang`` du plugin depuis le dossier ``lang`` de Galette les fichiers ``Makefile`` et ``xgettext.py`` :
+
+.. code-block:: makefile
+
+   $ cd plugins/MyPlugin/lang
+   $ cp ../../../lang/Makefile ../../../lang/xgettext.py .
+
+Quelques adaptations sont à apporter au fichier ``Makefile`` pour qu'il soit fonctionnel et adapté au plugin :
+
+* modifier la valeur de ``PACKAGE`` de ``galette`` en ``galette_monplugin`` ;
+* modifier la valeur de ``MKLANG`` de ``./make_lang_l12n.py`` en ``../../../lang/make_lang_l12n.py`` ;
+* adapter la valeur de ``PHP_SOURCES``.
+
+  La variable ``PHP_SOURCES`` va chercher et lister les fichiers susceptibles de contenir des chaînes à traduire. En fonction de la hiérarchie des dossiers (et des besoins de votre plugin, bien entendu), ces chemins peuvent varier. Par exemple, pour un plugin relativement simple qui apporterait juste un fichier PHP procédural et un ou plusieurs templates Smarty ; il faudra utiliser :
+
+  .. code-block:: bash
+
+     PHP_SOURCES = $(shell find ../ -maxdepth 1 -name \*.php) \
+                   $(shell find ../templates -name \*.tpl)
+
+Si vous suivez les règles de développement de Galette et de ses plugins, il est fort peu probable que vous ayez des ajouts à faire aux ``PHP_SOURCES``. La modification plus avancée du fichier ``Makefile`` sort du cadre de ce manuel.
+
+Créez ensuite les fichiers vides ``en_US.po``, ``fr_FR.utf8.po``, ``en_US/LC_MESSAGES/galette_monplugin.mo`` et ``fr_FR.utf8/LC_MESSAGES/galette_monplugin.mo`` :
+
+.. code-block:: bash
+
+   $ touch en_US.po fr_FR.utf8.po
+
+Le premier lancement de `make` va vous renvoyer pas mal d'erreurs, que vous pouvez ignorer en toute quiétude ; les fichiers ``.po`` sont vides, et il n'apprécie pas :) En revanche, les dossiers et fichiers requis ont été générés et remplis, et vous pouvez maintenant utiliser votre logiciel de traduction de fichiers gettext pour renseigner leur contenu.
+
+.. note::
+
+   L'utilisation dans votre plugin de chaînes déjà existantes dans Galette n'est - à l'heure actuelle - pas prise en compte.
+
+   Cela signifie que vous verrez bien apparaître la traduction, et ce dès l'ajout de votre chaîne ; mais en revanche, la chaîne sera ajoutée également à votre plugin ; le risque d'une double traduction différente étant que celle du plugin vienne supplanter celle de Galette...
+
 
 Hiérarchie
 ==========
