@@ -100,17 +100,17 @@ Vous pourrez ainsi filtrer sur :
 
 * une recherche textuelle sur l'une des informations suivante :
 
-  * le nom (nom et prénom),
-  * l'adresse,
-  * le courriel et les messageries instantanées,
+  * le nom (nom, prénom et pseudo),
+  * l'adresse (adresse, complément d'adresse, code postal, ville et pays),
+  * le courriel et les messageries instantanées (adresse de courriel, URL du site web, adresses MSN, ICQ et Jabber),
   * l'emploi,
-  * les informations.
+  * les informations (les informations publiques, et [pour les administrateurs uniquement] les informations destinées aux administrateurs).
 
 * l'un des statuts de l'adhérent :
 
   * tous les adhérents,
   * les adhérents à jour,
-  * les échéances proches (les adhérents dont la cotisation va arriver à échéance sous xx jours),
+  * les échéances proches (les adhérents dont la cotisation va arriver à échéance sous 30 jours),
   * les retardataires,
   * les adhérents n'ayant jamais cotisé,
   * les membres du bureau,
