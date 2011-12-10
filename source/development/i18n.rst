@@ -106,10 +106,6 @@ Génération des fichiers de langue
 
 La génération des fichiers de langue est gérée par le fichier ``Makefile`` du dossier ``lang``. Lancez simplement ``make`` depuis le dossier ``lang``, le script fera son office :-)
 
-.. note::
-
-   Actuellement, les fichiers constituant les sources sont listés un par un dans le fichier ``Makefile``. Ainsi donc, si vous ajoutez un fichier, il faut penser à le lister également dans ce fichier, les chaînes ne seraient autrement pas extraites.
-
 Dans un premier temps, il va extraire les chaînes à traduire depuis les fichiers source listés. Ces chaînes seront utilisées pour créer les fichiers ``.po``. Le script va aussi compiler les fichiers ``.mo`` et générer les fichier de langue PHP.
 
 Une fois les fichiers ``.po`` modifiés ; vous aurez à lancer de nouveau la commande ``make`` pour que tous les fichiers soient générés. Le processus est identique pour les fichiers de langue des plugins.
