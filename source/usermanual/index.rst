@@ -63,6 +63,11 @@ Commencez donc par la création d'une nouvelle fiche adhérent. Comme partout da
    :align: center
    :alt: La partie `Identité` de l'écran d'ajout d'adhérent
 
+.. image:: ../_styles/static/images/usermanual/edit_member.png
+   :scale: 50%
+   :align: center
+   :alt: La partie `Identité` de l'écran de modification d'adhérent
+
 Sur les champs de type date, la petite icône en fin de ligne vous donne accès à un calendrier.
 
 .. image:: ../_styles/static/images/usermanual/calendar.png
