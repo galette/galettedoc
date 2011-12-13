@@ -42,15 +42,15 @@ Initialisation de la base de données
 
 Pour fonctionner, le plugin utilise la base de données de Galette. Il n'existe actuellement pas de système d'initialisation des bases de données pour les plugins, cette étape est à faire « à la main » pour l'heure.
 
-Vous trouverez le script d'initialisation ``galette_paypal.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
+Vous trouverez les scripts d'initialisation ``galette_paypal-mysql.sql`` et ``galette_paypal-pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
 
-Vous devrez ensuite importer ces instructions SQL dans votre base, soit en utilisant PHPMyAmdin, soit directement en ligne de commande :
+Vous devrez ensuite importer ces instructions SQL dans votre base. Pour MySQL vous pourrez soit en utiliser PHPMyAmdin, soit opter directement pour la ligne de commande :
 
 .. code-block:: bash
 
    $ mysql -u galette -p
    mysql> use galette;
-   mysql> source /var/www/html/galette/plugins/Paypal/sql/galette_paypal.sql
+   mysql> source /var/www/html/galette/plugins/Paypal/sql/galette_paypal-mysql.sql
 
 Et voilà ; le plugin Paypal est installé :-)
 
