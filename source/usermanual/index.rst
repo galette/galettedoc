@@ -408,6 +408,36 @@ Les textes en question sont fournis par défaut, et une interface vous est propo
    :align: center
    :alt: Modification du texte en français envoyé à un adhérent lors de son adhésion
 
+Si ce paramètre est actif, un courriel sera envoyé à l'adhérent lorsque :
+
+* il s'auto inscrit. Ce courriel comporte typiquement ses identifiants de connexion,
+* sa fiche est ajoutée ou modifiée par qui de droit (à condition que la case correspondante soit cochée lors de la saisie),
+* il demande à réinitialiser son mot de passe,
+* une nouvelle contribution est attachée à son compte (à condition que la case correspondante soit cochée lors de la saisie).
+
+De même, un courriel sera envoyé à l'administrateur lorsque :
+
+* un nouvel adhérent est inscrit ou s''auto inscrit,
+* une cotisation est attachée à un compte.
+
+Les courriels ne seront bien entendus envoyés que si le paramétrage de Galette permet l'envoi de messages (et si cela est configuré correctement). L'envoi de messages aux administrateurs est configuré de manière globale dans les préférences ; tandis que l'envoi de message à l'adhérent passe par une case à cocher au coup par coup dans l'interface, sauf pour le mail d'auto-inscription qui sera envoyé systématiquement.
+
+Un certain nombre de variables - remplacées automatiquement lors de l'envoi - sont disponibles, à la fos pour le sujet et pour le corps du message. Certaines sont utilisables pour la totalité des messages, d'autres (comme les informations de l'adhérent ou son mot de passe) ne le sont que dans certains contextes spécifiques.
+
+Voici la liste des variables disponibles :
+
+* `{ASSO_NAME}` : le nom de l'association, disponible globalement,
+* `{ASSO_SLOGAN}` : le slogan de l'association, disponible globalement,
+* `{NAME_ADH}` : le nom de l'adhérent, disponible sous réserves,
+* `{LOGIN}` :  : l'identifiant de connexion de l'adhérent, disponible sous réserves,
+* `{MAIL_ADH}` : l'adresse courriel de l'adhérent, disponible sous réserves,
+* `{LOGIN_URI}` : l'URL de Galette, disponible globalement,
+* `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement s'il a été saisi,
+* `{CHG_PWD_URI}` : lien de modification du mot de passe, disponible uniquement depuis la réinitialisation du mot de passe,
+* `{LINK_VALIDITY}` : durée de validité du lien, disponible uniquement depuis la réinitialisation du mot de passe,
+* `{DEADLINE}` : date de fin, disponible uniquement lors de la création d'une contribution,
+* `{CONTRIB_INFO}` : informations sur la contribution, disponible uniquement lors de la création d'une contribution.
+
 ***********************************
 Adaptation à votre charte graphique
 ***********************************
