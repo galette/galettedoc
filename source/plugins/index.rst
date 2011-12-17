@@ -47,27 +47,27 @@ Si le plugin requiert une base de données pour son fonctionnement, vous pourrez
 Dans un premier temps, vous aurez à sélectionner le type d'installation (installation ou mise à jour - ça ne vous rapelle rien ? ;-)) :
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step1.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Initialisation de la base de données d'un plugin, étape 1 : sélection d'un type d'installation
 
 Les droits sur la base de données seront ensuite vérifiés. Contrairement à l'installation du Galette ; aucune information concernant la base de données ne vous sera demandée, puisque les informations en question sont déjà disponibles (le simple fait d'accéder à l'interface des plugins confirme cela) :
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step2.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Initialisation de la base de données d'un plugin, étape 2 : vérification des droits de la base
 
 Les scripts en eux-mêmes seront alors exécutés, si les droits sont corrects :
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step3.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Initialisation de la base de données d'un plugin, étape 3 : exécution des scripts
 
 Et voilà, c'est fini !
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step4.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Initialisation de la base de données d'un plugin, étape 4 : fin :-)
