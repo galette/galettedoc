@@ -48,6 +48,10 @@ Si vous êtes sous windows, suivez simplement la :ref:`récupération de la vers
 Initialisation de la base de données
 ====================================
 
+.. todo::
+
+   Galette propose maintenant un mécanisme d'installation et de mise à jour de base de données ; mais ce plugin n'est actuellement pas compatible.
+
 Pour fonctionner, le plugin utilise la base de données de Galette. Il n'existe actuellement pas de système d'initialisation des bases de données pour les plugins, cette étape est à faire « à la main » pour l'heure.
 
 .. warning::
