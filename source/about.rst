@@ -6,7 +6,7 @@
 À propos de la Documentation de Galette
 ***************************************
 
-La documentation de `Galette <http://galette.tuxfamily.org>`_, distribuée sous `licence creative commons <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_, est rédigée avec la syntaxe `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ et est construite avec `Sphinx <http://sphinx.pocoo.org>`_.
+La documentation de `Galette <http://galette.tuxfamily.org>`_, distribuée sous `Licence Creative Commons Paternité - Partage à l'Identique 3.0 non transposé <http://creativecommons.org/licenses/by-sa/3.0/>`_, est rédigée avec la syntaxe `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ et est construite avec `Sphinx <http://sphinx.pocoo.org>`_.
 
 Récupération des sources
 ========================
