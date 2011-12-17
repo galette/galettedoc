@@ -6,9 +6,9 @@
 
 .. rst-class:: doc_main_page
 
-********************
+====================
 Plugins pour Galette
-********************
+====================
 
 Au cours du développement de Galette 0.7, un système de plugins a été ajouté, dans le but d'étendre les fonctionnalités de Galette dans certains cas particuliers, tout en évitant « d'encombrer » l'application principale.
 
@@ -28,3 +28,46 @@ Les plugins actuellement disponibles pour Galette sont :
    fullcard.rst
    sport.rst
    admintools.rst
+
+********************************
+Interface de gestion des plugins
+********************************
+
+Une interface de gestion des plugins est disponible, accessible par les administrateurs depuis le tableau de bord. Après avoir copié le(s) plugin(s) téléchargé(s) dans le dossier ``plugins`` de Galette ; une liste vous sera proposée :
+
+.. image:: ../_styles/static/images/usermanual/plugins_managment.png
+   :scale: 75%
+   :align: center
+   :alt: Gestion des plugins
+
+Si le serveur web possède les droits en écriture dans les dossiers des plugins, il vous sera possible d'activer ou de désactiver un plugin simplement en cliquant sur l'icône de statut en fin de ligne.
+
+Si le plugin requiert une base de données pour son fonctionnement, vous pourrez jouer les scripts d'installation et de mise à jour depuis l'interface. Et puisqu''un petit schéma vaut mieux qu'un long discours, voici - en images - l'illustration de l'installation de la base de données du plugin Paypal :-)
+
+Dans un premier temps, vous aurez à sélectionner le type d'installation (installation ou mise à jour - ça ne vous rapelle rien ? ;-)) :
+
+.. image:: ../_styles/static/images/usermanual/plugins_install_step1.png
+   :scale: 75%
+   :align: center
+   :alt: Initialisation de la base de données d'un plugin, étape 1 : sélection d'un type d'installation
+
+Les droits sur la base de données seront ensuite vérifiés. Contrairement à l'installation du Galette ; aucune information concernant la base de données ne vous sera demandée, puisque les informations en question sont déjà disponibles (le simple fait d'accéder à l'interface des plugins confirme cela) :
+
+.. image:: ../_styles/static/images/usermanual/plugins_install_step2.png
+   :scale: 75%
+   :align: center
+   :alt: Initialisation de la base de données d'un plugin, étape 2 : vérification des droits de la base
+
+Les scripts en eux-mêmes seront alors exécutés, si les droits sont corrects :
+
+.. image:: ../_styles/static/images/usermanual/plugins_install_step3.png
+   :scale: 75%
+   :align: center
+   :alt: Initialisation de la base de données d'un plugin, étape 3 : exécution des scripts
+
+Et voilà, c'est fini !
+
+.. image:: ../_styles/static/images/usermanual/plugins_install_step4.png
+   :scale: 75%
+   :align: center
+   :alt: Initialisation de la base de données d'un plugin, étape 4 : fin :-)
