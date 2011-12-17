@@ -29,6 +29,8 @@ Les plugins actuellement disponibles pour Galette sont :
    sport.rst
    admintools.rst
 
+.. _plugins_managment:
+
 ********************************
 Interface de gestion des plugins
 ********************************
