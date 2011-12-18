@@ -23,9 +23,26 @@ Dans un premier temps, vous devez récupérer le plugin.
 
 .. note::
 
-   Aucune version stable du plugin n'existe actuellement.
+   Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <autodev_download>`.
    
    L'utilisation de la version de développement ne sera plus obligatoire dans le futur.
+
+Initialisation de la base de données
+====================================
+
+Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
+
+Pour fonctionner, le plugin utilise la base de données de Galette. Il n'existe actuellement pas de système d'initialisation des bases de données pour les plugins, cette étape est à faire « à la main » pour l'heure.
+
+Et voilà ; le plugin Auto est installé :-)
+
+Utilisateurs avancés
+====================
+
+.. _autodev_download:
+
+Récupération des sources
+------------------------
 
 Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :
 
@@ -46,26 +63,15 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
 Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <svnwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Auto`` et ``c:\xampp\htdocs\galette\plugins\Auto`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
 Initialisation de la base de données
-====================================
+------------------------------------
 
-.. todo::
+Si vous préférez initialiser la base sans l'interface de Galette, vous trouverez les scripts d'initialisation ``mysql.sql`` et ``pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
 
-   Galette propose maintenant un mécanisme d'installation et de mise à jour de base de données ; mais ce plugin n'est actuellement pas compatible.
-
-Pour fonctionner, le plugin utilise la base de données de Galette. Il n'existe actuellement pas de système d'initialisation des bases de données pour les plugins, cette étape est à faire « à la main » pour l'heure.
-
-.. warning::
-
-   Le script d'intialisation pour le plugin `Auto` n'existe actuellement que pour MySQL.
-
-Vous trouverez le script d'initialisation ``galette_auto.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
-
-Vous devrez ensuite importer ces instructions SQL dans votre base, soit en utilisant PHPMyAmdin, soit directement en ligne de commande :
+Vous devrez ensuite importer ces instructions SQL dans votre base. Pour MySQL vous pourrez soit en utiliser PHPMyAmdin, soit opter directement pour la ligne de commande :
 
 .. code-block:: bash
 
    $ mysql -u galette -p
    mysql> use galette;
-   mysql> source /var/www/html/galette/plugins/Auto/sql/galette_auto.sql
+   mysql> source /var/www/html/galette/plugins/Auto/sql/mysql.sql
 
-Et voilà ; le plugin Auto est installé :-)
