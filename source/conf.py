@@ -232,6 +232,10 @@ man_pages = [
 #regardless of the global pdf_compressed setting.
 pdf_documents = [
 ('index', u'galette', u'Documentation de Galette', u'Johan Cwiklinski'),
+('usermanual/index', u'usermanual', u'Manuel Utilisateur de Galette', u'Johan Cwiklinski'),
+('installation/index', u'installation', u'Installation de Galette', u'Johan Cwiklinski'),
+('plugins/index', u'plugins', u'Plugins de Galette', u'Johan Cwiklinski'),
+('development/index', u'development', u'Guide du Développeur Galette', u'Johan Cwiklinski'),
 ]
 
 # A comma-separated list of custom stylesheets. Example:
