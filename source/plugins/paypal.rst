@@ -12,16 +12,19 @@ Ce plugin vous apporte :
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin.
+Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+http://download.gna.org/galette/plugins/galette-plugin-Paypal-1.0.2.tar.bz2
 
-Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :
+Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette, et de le nommer ``Paypal``.
+
+Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
 
 .. code-block:: bash
 
    $ cd /var/www/html/galette/plugins
-   $ wget http://download.gna.org/galette/plugins/galette-plugin-Paypal-1.0.2.tar.bz2
-   $ tar xjvf galette-plugin-Paypal-1.0.2.tar.bz2
-   $ mv galette-plugin-Paypal-1.0.2 Paypal
+   $ wget {url}
+   $ tar xjvf galette-plugin-Paypal-{version}.tar.bz2
+   $ mv galette-plugin-Paypal-{version} Paypal
 
 Initialisation de la base de données
 ====================================

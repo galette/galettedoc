@@ -10,16 +10,27 @@ Actuellement, la seule action possible est de convertir l'encodage des données.
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin.
+Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+http://download.gna.org/galette/plugins/galette-plugin-AdminTools-1.0.tar.bz2
 
-.. note::
+Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette, et de le nommer ``AdminTools``.
 
-   Aucune version stable du plugin n'existe actuellement.
-   
-   L'utilisation de la version de développement ne sera plus obligatoire dans le futur.
+Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
 
-Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :
+.. code-block:: bash
 
+   $ cd /var/www/html/galette/plugins
+   $ wget {url}
+   $ tar xjvf galette-plugin-AdminTools-{version}.tar.bz2
+   $ mv galette-plugin-AdminTools-{version} AdminTools
+
+Utilisateurs avancés
+====================
+
+Récupération des sources
+------------------------
+
+Si vous souhaitez récupérer la version de développement du plugin, vous pouvez utiliser le dépôt SVN :
 .. code-block:: bash
 
    $ cd /var/www/html/galette/plugins
