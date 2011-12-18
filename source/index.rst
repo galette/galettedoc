@@ -31,6 +31,13 @@ Documentation de Galette
 * `version HTML <http://galette.tuxfamily.org/documentation/fr/documentation_galette.tar.bz2>`_
 * `version PDF <http://galette.tuxfamily.org/documentation/fr/galette.pdf>`_
 
+Les différentes parties sont également disponibles de façon distincte :
+
+* `le manuel de l'utilisateur de Galette au format PDF <http://galette.tuxfamily.org/documentation/fr/usermanual.pdf>`_,
+* `le guide d'installation de galette au format PDF <http://galette.tuxfamily.org/documentation/fr/installation.pdf>`_,
+* `la documentation des plugins officiels de Galette au format PDF <http://galette.tuxfamily.org/documentation/fr/plugins.pdf>`_,
+* et `le guide du développeur Galette au formatt PDF <http://galette.tuxfamily.org/documentation/fr/development.pdf>`_.
+
 Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de galette (technologies utilisées, comment récupérer les sources et les construire) <about>`.
 
 Table des matières :
