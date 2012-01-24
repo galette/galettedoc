@@ -9,8 +9,8 @@ Par exemple, sous `Fedora <http://fedora-fr.org>`_, vous lancerez (en root) :
 
 .. code-block:: bash
 
-   % cd /var/www/galette/
-   % chown -R apache:apache cache config exports logs photos templates_c tempimages
+   # cd /var/www/galette/
+   # chown -R apache:apache cache config exports logs photos templates_c tempimages
 
 Sous `Debian <http://debian.org/>`_, on remplacera ``apache:apache`` par ``www-data:www-data``.
 
@@ -18,12 +18,17 @@ Pour les systèmes protégés par SELinux, on entrera de surcroît :
 
 .. code-block:: bash
 
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/cache(/.*)?'
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/config(/.*)?'
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/exports(/.*)?'
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/logs(/.*)?'
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/photos(/.*)?'
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/templates_c(/.*)?'
-   % semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/tempimages(/.*)?'
-   % restorecon -R -v /var/www/html/galette/
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/cache(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/config(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/exports(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/logs(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/photos(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/templates_c(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/tempimages(/.*)?'
+   # restorecon -R -v /var/www/html/galette/
 
+De plus, vous devrez autoriser le serveur web à se connecter au réseau via un booléen SELinux :
+
+.. code-block:: bash
+
+   # setsebool httpd_can_network_connect on
