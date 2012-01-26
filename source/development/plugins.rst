@@ -159,6 +159,8 @@ La présence d'un fichier nommé ``headers.tpl`` dans les templates de votre plu
       type="text/css"
       href="{$nomplugin_tpl_dir}galette_nomplugin.css"/>
 
+Notez que les en-têtes ajoutés par ce biais seront disponibles dans l'ensemble de l'application. Pour le cas des feuilles CSS, prenez garde à ne pas modifier des règles CSS existantes dans Galette ; cela pourrait causer des bogues d'affichage.
+
 Ajout d'actions sur les membres
 -------------------------------
 
