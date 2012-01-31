@@ -453,3 +453,21 @@ Prenez soin de ne pas vous compliquer les choses. Par exemple, si vous souhaitez
    }
 
 Cela suffira pour afficher correctement le nom de votre association en rouge. Notez que votre feuille CSS locale et les problèmes qu'elle pourrait engendrer ne peuvent pas être pris en compte par l'équipe de Galette ; aucun support ne pourra vous être fourni sur le sujet.
+
+********************************
+Ajout et modification de chaînes
+********************************
+
+Il est également possible, au besoin, de personnaliser les chaînes de traduction existantes dans Galette - tout en évitant de modifier directement les fichiers fournis par le logiciel - en passant par un fichier spécifique. Pour ce faire, il suffira de créer un fichier nommé ``lang_{ma_langue}_local.php`` (où `{ma_langue}` est à remplacer par `french` ou `english`) dans le dossier ``lang`` auquel vous confierez les chaînes modifiées uniquement ; ce fichier sera inclus automatiquement s'il existe.
+
+Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale. Pour cela, allez simplement consulter le fichier ``lang/lang_french.php``, et cherchez-y la valeur souhaitée. Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret` » en français, on aura dans notre nouveau fichier ``lang_french_local.php`` :
+
+.. code-block:: php
+
+   <?php
+   $lang['Password:'] = 'Secret&nbsp;:';
+   ?>
+
+La modification sera visible immédiatement dans Galette. Prenez particulièrement garde à recopier la chaîne originale telle quelle ; et à échapper les apostrophes (à l'aide d'un anti-slash). Comme dans le fichier original, on attend ici une ligne par chaîne modifiée.
+
+.. note:: Ce système n'est pas fonctionnel si vous utilisez les fonctionnalités Gettext par défaut de PHP, mais fonctionnera avec la configuration de base de Galette.
