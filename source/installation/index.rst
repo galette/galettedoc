@@ -17,12 +17,12 @@ Dans un premier temps, vous allez `télécharger Galette <http://galette.tuxfami
 .. code-block:: bash
 
    $ cd /var/www/html/
-   $ wget http://download.tuxfamily.org/galette/galette-0.7-dev.tar.bz2
-   $ tar xjvf galette-0.7.tar.bz2
+   $ wget http://download.tuxfamily.org/galette/galette-0.7.0.tar.bz2
+   $ tar xjvf galette-0.7.0.tar.bz2
 
 Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.spiroo.be/7zip/>`_.
 
-La version 0.7 de Galette est l'actuelle version en développement. Il existe une archive mise à jour quotidiennement (nightly) de cette version, et vous pouvez également choisir de  :doc:`récupérer la version de développement de Galette <../development/svn>` comme expliqué dans la documentation de développement.
+La version 0.7.0 de Galette est l'actuelle version stable. Il existe une archive mise à jour quotidiennement (`nightly http://download.tuxfamily.org/galette/galette-dev.tar.bz2`_) de la version de développement, et vous pouvez également choisir de  :doc:`récupérer la version de développement de Galette <../development/svn>` comme expliqué dans la documentation de développement.
 
 Pré-requis et hébergement
 -------------------------
@@ -57,6 +57,8 @@ Galette est régulièrement testé avec des versions récentes de ces composants
    **Pourquoi Galette 0.7 n'est compatible qu'avec PHP 5.3 ou supérieur ?**
 
    `PHP 5.2 n'est plus maintenu depuis décembre 2010 <http://www.php.net/releases/5_2_16.php>`_. De plus, `PHP 5.3 apporte des fonctions de date et heure (et de calcul sur des date et heure) <http://fr.php.net/manual/fr/book.datetime.php>`_ très intéressantes et aisées à mettre en place qui sont utilisées dans le code actuel de Galette.
+   
+   D'autres fonctionnalités apportées par PHP 5.3 sont utilisées dans Galette, il n'est plus possible d'assurer une compatiblité avec une version antérieure.
 
 Table des matières
 ------------------
