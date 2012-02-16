@@ -10,9 +10,9 @@
 @import url("basic.css");
 
 body {
-	background: #fff;
+	background: #6B6B6B url(images/bg/png) top left no-repeat;
 	padding: 0;
-	margin: .7em;
+	margin: 0;
 	font-family: /*Tahoma, */sans-serif;
 	font-size: 0.8125em;
 	line-height: 160%;
@@ -24,7 +24,6 @@ img, a img {
 
 /** Menu related */
 .related {
-	background-color: #f8c363;
 	margin: 0 auto;
     clear:both;
 }
@@ -52,9 +51,9 @@ img, a img {
 	color:#636b70!important;
 }
 
-.related a:hover {
-	background-color: #f5aa1b;
-	color:#000000!important;
+#page div.related:first-child a:hover {
+    box-shadow: 0 0 5px 5px #888;
+    text-decoration:none;
 }
 
 .related li {
@@ -232,10 +231,11 @@ a.nolink {
 /* special headlines */
 h1 {
 	font-size: 180%;
-	margin-left: 0px;
-	padding:0 0 0 20px;
+	/*padding:0 0 0 20px;*/
 	margin:.5em 0 .3em;
-	background:url(images/gbullet2.png) 0 50% no-repeat;
+	/*background:url(images/gbullet2.png) 0 50% no-repeat;*/
+    text-shadow: 1px 1px 1px rgba(242, 161, 4, 0.5);
+    color: #636B70;
 }
 h2 {
 	font-size: 160%;
@@ -468,8 +468,15 @@ div#footer img {
 
 /** Page bones */
 
+#logo {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
 #header{
 	position:relative;
+    height: 100px;
 }
 
 #login__bar{
@@ -493,13 +500,15 @@ div#footer img {
 
 #galette {
 	background: #636b70;
-	padding: .6em .6em 0 .6em;
 }
 
 #page {
 	padding: 0;
 	margin: 0 auto;
 	background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 0 0;
+    margin: 0 3em;
 }
 
 #doku__footer{
@@ -934,4 +943,16 @@ div.error{
     background: url(images/pdf.png) 50% 50% no-repeat;
     height: 64px;
     width: 64px;
+}
+
+#page div.related:first-child {
+    position: absolute;
+    top: .5em;
+    left:0;
+    background:none;
+    color: white;
+}
+
+#page div.related:first-child a{
+    color: white!important;
 }
