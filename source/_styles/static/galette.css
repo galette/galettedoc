@@ -10,7 +10,7 @@
 @import url("basic.css");
 
 body {
-	background: #6B6B6B url(images/bg/png) top left no-repeat;
+	background: #636B70 url(images/bg.png) top left no-repeat;
 	padding: 0;
 	margin: 0;
 	font-family: /*Tahoma, */sans-serif;
@@ -228,6 +228,12 @@ a.nolink {
 	text-decoration: none !important;
 }
 
+h2, h3, h4 {
+    color: #0486B5;
+    margin: .5em 0 .3em;
+    text-shadow: 1px 1px 1px rgba(242, 161, 4, 0.5);
+}
+
 /* special headlines */
 h1 {
 	font-size: 180%;
@@ -235,7 +241,8 @@ h1 {
 	margin:.5em 0 .3em;
 	/*background:url(images/gbullet2.png) 0 50% no-repeat;*/
     text-shadow: 1px 1px 1px rgba(242, 161, 4, 0.5);
-    color: #636B70;
+    color: #6B6B6B;
+    border-bottom: 1px solid #F2A104;
 }
 h2 {
 	font-size: 160%;
@@ -498,10 +505,6 @@ div#footer img {
 	margin:0 auto;
 }
 
-#galette {
-	background: #636b70;
-}
-
 #page {
 	padding: 0;
 	margin: 0 auto;
@@ -529,7 +532,8 @@ div#footer img {
 #footer{
 	padding: .5em .5em 0 .5em;
 	text-align: center;
-	background-color: #636b70;
+    margin-top: 3em;
+    font-size: .9em;
 }
 
 #footer, #footer a{
