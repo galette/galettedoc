@@ -48,6 +48,26 @@ Les adhérents peuvent consulter et modifier leur propre fiche d'informations, e
 
 Les simples visiteurs peuvent consulter le trombinoscope et la liste des adhérents (en fonction du paramétrage choisi dans les préférences du logiciel) ; mais peuvent aussi... s'inscrire :-)
 
+Règles de gestion
+=================
+
+Les échéances sont calculées au jour près. Si un adhérent cotise avant la fin de son adhésion, la durée de cette adhésion sera additionnée aux jours qu'il lui restait. Exemple :
+
+ | Roger s'est inscrit le 01/01/2004 pour un an.
+ | S'il envoie une nouvelle cotisation pour un an le 13/12/2004,
+ | l'échéance de son adhésion sera le 01/01/2006.
+ | Aucun jour n'aura été oublié.
+
+A l'inverse, si un adhérent renouvelle son adhésion en retard, on ne procède à aucune réévaluation de sa durée d'adhésion :
+
+ | Roger s'est inscrit le 01/01/2004 pour un an.
+ | S'il envoie une nouvelle cotisation pour un an le 13/01/2005,
+ | l'échéance de son adhésion sera le 13/01/2006.
+
+On considèrera qu'il n'était plus adhérent durant la période du 01/01/2005 au 13/01/2005... Enfin, sur le papier :).
+
+Ces règles de gestion sont cependant assouplies par le fait que l'administrateur est totalement libre de choisir la date d'une cotisation. On peut tout à fait imaginer le cas d'un association qui enregistre toutes les cotisations au premier du mois suivant (offrant ainsi un temps d'adhésion légèrement plus important).
+
 *********************
 Gestion des Adhérents
 *********************
