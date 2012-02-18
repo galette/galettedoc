@@ -10,10 +10,6 @@ Changelog
 0.64 -> 0.7
 ***********
 
-.. warning::
-
-   Galette 0.7 est encore en cours de développement, les informations de ce changelog peuvent être amenées à évoluer.
-
 .. _ajouts_07:
 
 Ajouts et modifications
@@ -34,7 +30,7 @@ Ajouts et modifications
 * Gestion des types de contributions,
 * Refonte de la gestion des transactions,
 * Refonte de l'interface d'envoi d'e-mailings,
-* Intégration de JQuery UI pour améliorer l'interface (menus, onglets dans les préférences, date picker, ...),
+* Intégration de JQuery UI pour améliorer l'interface (menus, onglets dans les préférences, date/color picker, ...),
 * Impression de cartes de membres,
 * ...
 
@@ -43,7 +39,7 @@ Ajouts et modifications
 Suppressions
 ============
 
-* Suppression du support IE6,
+* Suppression du support IE6 et IE7,
 * Suppression de l'espagnol (qui n'est plus maintenu :'( )
 
 .. _souscapot_07:
@@ -57,7 +53,7 @@ Quelques modifications, d'ordre un peu plus technique ont également été appor
 * Ré-écriture de la presque totalité du code en POO,
 * Utilisation de la bibliothèque PEAR::LOG,
 * Utilisation de Zend DB pour la gestion des bases de données en lieu et place de AdoDB,
-* Utilisation de la bibliothèque phpMailer pour l'envoi des emails,
+* Utilisation de la bibliothèque phpMailer pour l'envoi des emails (support https, gmail, etc),
 * Mise en place de relations dans la base de données pour assurer l'intégrité référentielle.
 
 .. _plugins_07:
