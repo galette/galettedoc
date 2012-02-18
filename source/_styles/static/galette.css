@@ -67,6 +67,7 @@ div.sphinxsidebar {
     margin:0;
     float:right;
     margin-left:0;
+    padding: 0 25px;
 }
 
 div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points {
@@ -74,7 +75,7 @@ div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points {
 }
 
 .document{
-    margin:1em 230px 0 1em;
+    margin:1em 280px 0 1em;
 }
 
 .sphinxsidebarwrapper {
@@ -96,16 +97,12 @@ div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points {
 }
 
 .sphinxsidebarwrapper h3 {
-    font-size:1.2em;
+    font-size:1.4em;
     font-weight: bold;
-    text-align: center;
-    margin:.5em 0 0;
-    background-color: #F8C363;
+    margin:.5em 0 1em;
     color:#636B70;
-    padding:.2em;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
+    text-shadow: 1px 1px 1px rgba(242,161,4,0.5);
+    border-bottom: 1px dotted #636B70;
 }
 .sphinxsidebarwrapper h3 a{
     color:#636B70!important;
@@ -119,6 +116,15 @@ div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points {
 .sphinxsidebarwrapper p.topless {
     padding-left: 20px;
     background: url(images/next.png) 0 50% no-repeat;
+}
+
+.sphinxsidebarwrapper a {
+    color: #6B6B6B!important;
+    text-decoration:none!important;
+}
+
+.sphinxsidebarwrapper a:hover {
+    color: #9AC528!important;
 }
 
 div.admonition {
@@ -509,6 +515,7 @@ div#footer img {
     border-radius: 6px;
     padding: 20px 0 0;
     margin: 0 3em;
+    min-width: 980px;
 }
 
 #doku__footer{
