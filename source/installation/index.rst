@@ -12,7 +12,7 @@ Manuel d'installation de Galette
 
 L'installation de Galette consiste simplement, après avoir effectué quelques tâches préalables, à vous laisser guider par l'interface et renseigner les quelques informations qui vous seront demandées.
 
-Dans un premier temps, vous allez `télécharger Galette <http://galette.tuxfamily.org/fr/doku.php?id=download>`_ et décompresser l'archive. Si vous êtes sous Linux, ça donnera quelque chose comme :
+Dans un premier temps, vous allez `télécharger Galette <http://download.tuxfamily.org/galette/galette-0.7.0.tar.bz2>`_ et décompresser l'archive. Si vous êtes sous Linux, ça donnera quelque chose comme :
 
 .. code-block:: bash
 
