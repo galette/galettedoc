@@ -45,5 +45,5 @@ Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
    $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/AdminTools
    $ git svn fetch
 
-Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <svnwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/AdminTools`` et ``c:\xampp\htdocs\galette\plugins\AdminTools`` respectivement pour les chemins vers le dépôt et vers le dossier local.
+Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/AdminTools`` et ``c:\xampp\htdocs\galette\plugins\AdminTools`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
