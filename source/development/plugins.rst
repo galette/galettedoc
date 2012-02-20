@@ -325,7 +325,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
     * |phpfile| `_smarties.php`
     * |file| `...`
 
-Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.tuxfamily.org/fr/doku.php?id=participer#listes_de_discussion>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.tuxfamily.org/fr/doku.php?id=participer#irc>`_ ;-)
+Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.tuxfamily.org/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.tuxfamily.org/dc/index.php/pages/Contact#irc>`_ ;-)
 
 Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
 
