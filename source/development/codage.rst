@@ -6,10 +6,6 @@
 Le code source de Galette
 *************************
 
-.. warning::
-
-   La migration du code source de Galette en PHP objet, et le remplacement de AdoDB par MDB2 pour la gestion de la base de données sont encore en cours dans la version de développement. La présente page reflète ce que *devrait être* le code source, et non la réalité des choses ;-)
-
 Galette est un logiciel libre sous licence GPL version 3, écrit en PHP. À compter de la version 0.7, Galette utilise certaines fonctions qui sont apparues dans PHP 5.3 (sorti le 30 juin 2009), et n'est donc plus compatible avec les versions de PHP plus anciennes.
 
 Nomenclature des fichiers
