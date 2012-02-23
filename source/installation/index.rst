@@ -69,5 +69,6 @@ Table des matières
    preparation.rst
    galette.rst
    postinstall.rst
+   update.rst
 
 
