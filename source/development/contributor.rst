@@ -15,6 +15,18 @@ Galette est constitué de versions stables, sur lesquelles il faut pouvoir appor
 
 `Vincent Driessen <http://nvie.com>`_ a publié en 2010 un `modèle de gestion des branches Git que je trouve très pertinent <http://nvie.com/posts/a-successful-git-branching-model/>`_, et que j'ai décidié d'utiliser pour le développement de Galette. Couplé à l'outil git-flow du même auteur, le workflow est plus simple à suivre. Vous en doutez ? Alors, je vous laisse consulter cet `article qui vous explique pourquoi vous devriez utiliser git-flow <http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
 
+Configuration de Git
+====================
+
+La toute première chose à faire si vous venez d'installer Git, c'est de configurer vos nom et adresse email. Pour ce faire, entrez simplement :
+
+.. code-block:: bash
+
+   $ git config --global user.name "Victor Hugo"
+   $ git config --global user.email "victor@hugo.fr"
+
+Il s'agit là du minimum syndical de configuration Git que vous avez à faire :) Bien entendu, Git dispose de bon nombre d'options, je vous recommande la lecture du `chapitre sur la configuration de Git de ProGit.org <http://progit.org/book/fr/ch7-1.html>`_ (la traduction de ce chapitre peut ne pas être à jour, consultez la `version originale <http://progit.org/book/ch7-1.html>`_ en cas de doute).
+
 Exemples pratiques : développement
 ==================================
 
@@ -105,7 +117,26 @@ Pour un correctif de bogue, on utilisera git-flow avec le mot clé `hotfix` au l
 Exemples pratiques : soumission de correctifs et fonctionnalités
 ================================================================
 
-.. note::
+Après avoir effectué vos modifications dans le code source, l'étape suivante est généralement d'envoyer un patch au projet, pour que vos modifications soient appliquées. L'utilisation de Git simplifie ce processus. Vos modifications ont été apportées à une branche (disons `develop` pour l'exemple), qui dérive d'une autre branche (`origin/develop` pour notre exemple). Sachant cela, demandons juste à Git de nous fournir la liste des modifications apportées, sous forme de patchs :
 
-   Cette partie n'est pas encore rédigée. Désolés pour le désagrément.
+.. code-block:: bash
 
+   $ git branch
+   * develop
+     master
+   $ git format-patch origin/develop 
+   0001-Placebo-commit.patch
+   0002-Destructive-commit.patch
+
+Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <http://redmine.ulysses.fr/projects/galette/>`_ adéquat :)
+
+Quelques petits points de contrôle :
+
+* précisez sur quelle branche votre travail est basé,
+* respectez tant que faire se peut les conventions de codage,
+* testez le patch,
+* précisez brièvement ce que fait le patch.
+
+L'envoi de patchs par email est envisageable si leur taille cumulée reste raisonnable ; mais il est plus simple pour l'équipe de développement de se référer aux tickets.
+
+Pensez, lors de la soumission de votre patch, à préciser sur quelle branche vous avez travaillé à l'origine.
