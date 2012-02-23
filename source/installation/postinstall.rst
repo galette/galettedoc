@@ -63,12 +63,6 @@ Chemins des bibliothèques
 Chemins de Galette
 ------------------
 
-.. warning::
-
-   Le remplacement des chemins présentés ici est une fonctionnalité qui n'a pas été testée encore, il se peut que vos modifications à ce niveau ne soient pas prises en compte ou - pire encore - que cela fasse planter l'application.
-
-   Si tel était le cas, veuillez nous le faire savoir, et revenez à l'ancienne valeur ; il vous reste toujours la possibilité d'utiliser des liens symboliques en environnement Linux.
-
 Les chemins de Galette doivent pour la plupart impérativement être accessibles en écriture par le serveur web, sous peine de mauvais fonctionnement de l'application, et d'erreurs pas toujours très faciles à comprendre ou à tracer. Les deux seules exceptions à cette règle concernent les templates (le serveur web n'a aucun besoin d'écrire là dedans !) et les plugins (globalement, les droits en écriture ne sont pas requis sur les dossiers des plugins, mais il vous faudra vous référer à la documentation du plugin pour de plus amples informations).
 
 * `GALETTE_TEMPLATES_PATH` : chemin vers les fichiers de template Smarty de Galette. Ces templates, et le code qu'ils contiennent sont très fortement liés à l'application, je vous déconseille vivement de modifier leur emplacement, de façon à ce qu'ils soient mis à jour systématiquement avec l'application,
