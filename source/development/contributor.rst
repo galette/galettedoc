@@ -4,7 +4,7 @@ Comment contribuer ?
 
 Un dépôt Git, un workflow... Wow, mais c'est compliqué, je n'y arriverai jamais !
 
-Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que le worflow, c'est ce que le projet utilise et respecte, vous faites comme vous voulez. Gardez en tête que la branche `master` représente la version stable de Galette et la branche `develop` la version de développement.
+Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que le worflow doit être suivi et respecté pour le développement de Galette. Sur votre dépôt Git local, vous faites comme vous voulez. Gardez en tête que la branche `master` représente la version stable de Galette et la branche `develop` la version de développement.
 
 Bien entendu, pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez :-)
 
@@ -93,15 +93,17 @@ Une fois le développement terminé, il suffit de suivre le conseil donné par g
    - Feature branch 'feature/nimp' has been removed
    - You are now on branch 'develop'
 
-Et hop. Vos modifications ont été répecutées dans la branche `develop`, la fonctionnalité `nimp` est disponible aux tests :-)
+Et hop. Vos modifications ont été répercutées dans la branche `develop`, la fonctionnalité `nimp` est disponible aux tests :-) Bon, pas tout à fait dans la pratique, voyez :ref:`comment soummettre un patch <sendpatch>` pour la suite.
 
 Correction d'un bogue
 ---------------------
 
-Pour un correctif de bogue, on utiliser git-flow avec le mot clé `hotfix` au lieu de `feature`. La grosse différence est que le `hotfix` sera basé sur la branche stable, alors que la `feature` sera elle basée sur la branche de développement. git-flow vous permet de vous abstraire entièrement cet apsect des choses.
+Pour un correctif de bogue, on utilisera git-flow avec le mot clé `hotfix` au lieu de `feature`. La grosse différence est que le `hotfix` sera basé sur la branche stable, alors que la `feature` sera elle basée sur la branche de développement. git-flow vous permet de vous abstraire entièrement cet apsect des choses.
 
-Exemples pratiques : soumission d'un correctif
-==============================================
+.. _sendpatch:
+
+Exemples pratiques : soumission de correctifs et fonctionnalités
+================================================================
 
 .. note::
 
