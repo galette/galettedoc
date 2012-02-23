@@ -21,23 +21,32 @@ Quelques liens qui peuvent être utiles :
 * http://ndpsoftware.com/git-cheatsheet.html
 * http://progit.org/book/
 
-=======================
-Modèle de développement
-=======================
+Une fois le dépôt cloné, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « guide du contributeur » ;-)
 
-Galette est constitué de versions stables, sur lesquelles il faut pouvoir apporter des correctifs, d'une version de développement, et de moult versions de tests pour l'intégration de nouvelles fonctionnalités qui seront (ou pas) implémentées par la suite.
+Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
 
-`Vincent Driessen <http://nvie.com>`_ a publié en 2010 un `modèle de gestion des branches Git que je trouve très pertinent <http://nvie.com/posts/a-successful-git-branching-model/>`_, et que j'ai décidié d'utiliser pour le développement de Galette. Couplé à l'outil git-flow du même auteur, le workflow est plus simple à suivre. Vous en doutez ? Alors, je vous laisse consulter cet `article qui vous explique pourquoi vous devriez utiliser git-flow <http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
+.. _gitlinux:
 
-.. note:: De plus amples informations vous seront fournies ultérieurement au besoin
+Sous GNU/Linux
+--------------
+
+L'ensemble des distributions linux actuelles fournit certainement les commandes git standard.
+
+Queqlues infterfaces graphiques :
+
+* Git est fourni avec une interface graphique que vous pouvez lancer avec la commande `git gui`.
+* `gitg` est une interface graphique qui vous permet de consulter l'historique du dépôt, d'effectuer des commits (et même des commits partiels, vous pourrez choisir les lignes que vous souhaitez commiter ou non) ; il reste cependant moins complet que git-gui.
 
 .. _gitwindows:
 
-============
 Sous windows
-============
+------------
 
-.. note:: Cette partie de la documentation reste à rédiger. Désolés pour le désagrément.
+Git est parfaitement supporté sous Windows également ; en utilisant l'un des outils suivants :
 
+* `TortoiseGIT <http://code.google.com/p/tortoisegit/>`_, très similaire à TortoiseSVN pour ceux qui connaissent,
+* `Git Extensions <http://code.google.com/p/gitextensions/>`_
 
-Vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
+Il semblerait que Git Extensions fasse très bien ce qu'on attend de lui... Lors de son installation, il vous sera proposé l'installation de msysgit, et de kdiff3. Je vous conseille vivement l'installation de ces deux composants. Le premier est Git pour windows, le second un outil qui permet de faire des diff et de résourde des conflits.
+
+Bien que nous soyons parfaitement conscients que les personnes sous windows sont très peu habituées à voir une console, les commandes Git requises sont valables sur toutes les plate-formes ; ce sont donc elles qui seront documentées (par ailleurs, git-flow n'est intégré à aucune des interfaces graphiques que j'ai vues à ce jour).

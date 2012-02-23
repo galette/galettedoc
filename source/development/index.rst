@@ -23,6 +23,7 @@ La présente documentation vous expliquera les règles de développement adopté
 
    technical_infos.rst
    git.rst
+   contributor.rst
    codage.rst
    plugins.rst
    i18n.rst
