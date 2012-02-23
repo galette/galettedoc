@@ -71,7 +71,7 @@ Dans le courant de votre développement, si la branche de développement évolue
 
 .. code-block:: bash
 
-   $ git flow fetaure rebase
+   $ git flow feature rebase
 
 Une fois le développement terminé, il suffit de suivre le conseil donné par git-flow lui même lors de la création : 
 
