@@ -21,7 +21,7 @@ Quelques liens qui peuvent être utiles :
 * http://ndpsoftware.com/git-cheatsheet.html
 * http://progit.org/book/
 
-Une fois le dépôt cloné, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « guide du contributeur » ;-)
+Une fois le dépôt cloné, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
 
 Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
 
@@ -32,9 +32,9 @@ Sous GNU/Linux
 
 L'ensemble des distributions linux actuelles fournit certainement les commandes git standard.
 
-Queqlues infterfaces graphiques :
+Quelques interfaces graphiques :
 
-* Git est fourni avec une interface graphique que vous pouvez lancer avec la commande `git gui`.
+* Git est fourni avec une interface graphique que vous pouvez lancer avec la commande `git gui`,
 * `gitg` est une interface graphique qui vous permet de consulter l'historique du dépôt, d'effectuer des commits (et même des commits partiels, vous pourrez choisir les lignes que vous souhaitez commiter ou non) ; il reste cependant moins complet que git-gui.
 
 .. _gitwindows:
