@@ -4,6 +4,6 @@
                :alt:
 .. |file| image:: /_styles/static/images/file.png
                :alt:
-.. |phpfile| image:: /_styles/static/images/php_file.png                                                                                                                                                                                   
+.. |phpfile| image:: /_styles/static/images/php_file.png
                :alt:
 
