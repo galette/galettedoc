@@ -141,11 +141,7 @@ Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il
    {/if}
    </ul>
 
-Dans les entrées de menu (et de façon générale dans les templates du plugin), utilisez la variable ``{$galette_base_path}`` pour faire référence à la racine web de Galette, et ``{$galette_base_path}{$galette_monplugin_path}`` pour faire référence à la racine web du plugin (« monplugin » est ici à replacer par le nom du répertoire de votre plugin, en minuscules).
-
-.. note::
-
-   L'utilisation de ``{$galette_monplugin_path}`` semble parfois hasardeuse, on ne peut pas présumer que l'utilisateur n'a pas changé le nom du dossier...
+Dans les entrées de menu (et de façon générale dans les templates du plugin), utilisez la variable ``{$galette_base_path}`` pour faire référence à la racine web de Galette, et ``{$galette_base_path}{$galette_mon_plugin_path}`` pour faire référence à la racine web du plugin (« mon_plugin » est ici à replacer par le nom du plugin défini dans le  fichier `_define.php``, en minuscules, les espaces remplacés par un underscore (`_`).
 
 Ajout de headers HTML
 ---------------------
