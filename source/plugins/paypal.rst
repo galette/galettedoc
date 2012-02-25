@@ -24,7 +24,11 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
    $ tar xjvf galette-plugin-Paypal-{version}.tar.bz2
-   $ mv galette-plugin-Paypal-{version} Paypal
+
+.. note::
+
+   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `auto` (sans respect de la casse).
+
 
 Initialisation de la base de données
 ====================================
@@ -53,17 +57,38 @@ Utilisateurs avancés
 Récupération des sources
 ------------------------
 
-Si vous souhaitez récupérer la version de développement du plugin, vous pouvez utiliser le dépôt SVN :
-   $ svn co http://http://svn.gna.org/svn/galette/plugins/Paypal/trunk ./Paypal
-
-Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
+Si vous souhaitez récupérer la version de développement du plugin, vous pouvez utiliser le dépôt :
 
 .. code-block:: bash
 
-   $ mkdir /var/www/html/galette/plugins/Paypal
-   $ cd /var/www/html/galette/plugins/Paypal
-   $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/Paypal
-   $ git svn fetch
+   $ cd /var/www/html/galette/plugins
+   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-auto.git
+
+Pour obtenir la version de développement :
+
+* Sans utiliser git-flow :
+
+.. code-block:: bash
+
+   $ cd plugin-fullcard
+   $ git checkout -b develop origin/develop
+
+* en utilisant git-flow :
+
+.. code-block:: bash
+
+   $ git flow int
+   Which branch should be used for bringing forth production releases?
+      - master
+   Branch name for production releases: [master] 
+   Branch name for "next release" development: [develop] 
+   
+   How to name your supporting branch prefixes?
+   Feature branches? [feature/] 
+   Release branches? [release/] 
+   Hotfix branches? [hotfix/] 
+   Support branches? [support/] 
+   Version tag prefix? []
 
 Pour la version de développement, si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Paypal`` et ``c:\xampp\htdocs\galette\plugins\Paypal`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
