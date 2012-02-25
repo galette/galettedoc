@@ -6,7 +6,7 @@ Un dépôt Git, un workflow... Wow, mais c'est compliqué, je n'y arriverai jama
 
 Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que le worflow doit être suivi et respecté pour le développement de Galette. Sur votre dépôt Git local, vous faites comme vous voulez. Gardez en tête que la branche `master` représente la version stable de Galette et la branche `develop` la version de développement.
 
-Bien entendu, pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez :-)
+Pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez (nous y reviendrons dans le premier exemple patique) :-)
 
 Modèle de développement
 =======================
@@ -29,6 +29,22 @@ Il s'agit là du minimum syndical de configuration Git que vous avez à faire :)
 
 Exemples pratiques : développement
 ==================================
+
+Si vous ne souhaitez pas utiliser git-flow, la procédure est simple :
+
+.. code-block:: bash
+
+   $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
+   $ cd galette
+   $ git checkout -b develop origin/develop
+
+La dernière commande vous place sur la version de développement. Utiliser une branche locale dans laquelle vous pourrez travailler en toute sérénité est une bonne pratique répandue, je vous encourage à l'utiliser. Créez une branche locale dérivée de la branche `develop` (après avoir récupéré cette dernière) :
+
+.. code-block:: bash
+
+   $ git checkout -b ma_fonctionnalite develop
+
+Vous pouvez travailler tout votre soûl dans cette branche. Les opérations de merge de branches automatisées par git-flow doivent ici être effectuées "à la main", et ne seront pas traitées ici. Une fois le développement terminé, vous pouvez :ref:`nous soumettre votre nouvelle fonctionnalité <sendpatch>`, en vous assurant de générer le patch depuis la branche adéquate (`ma_fonctionnalite` dans notre exemple).
 
 .. note::
 
