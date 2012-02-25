@@ -21,7 +21,6 @@ Sous Linux, vous pourrez récupérer la version de développement du plugin de c
 
    $ cd /var/www/html/galette/plugins
    $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-fullcard.git
-   $ cd plugin-fullcard
 
 Pour obtenir la version de développement :
 
@@ -29,6 +28,7 @@ Pour obtenir la version de développement :
 
 .. code-block:: bash
 
+   $ cd plugin-fullcard
    $ git checkout -b develop origin/develop
 
 * en utilisant git-flow :
