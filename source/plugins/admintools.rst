@@ -22,7 +22,10 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
    $ tar xjvf galette-plugin-AdminTools-{version}.tar.bz2
-   $ mv galette-plugin-AdminTools-{version} AdminTools
+
+.. note::
+
+   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `AdminTools` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
 
 Utilisateurs avancés
 ====================
@@ -43,14 +46,14 @@ Pour obtenir la version de développement :
 
 .. code-block:: bash
 
-   $ cd plugin-fullcard
+   $ cd plugin-admintools
    $ git checkout -b develop origin/develop
 
 * en utilisant git-flow :
 
 .. code-block:: bash
 
-   $ git flow int
+   $ git flow init
    Which branch should be used for bringing forth production releases?
       - master
    Branch name for production releases: [master] 

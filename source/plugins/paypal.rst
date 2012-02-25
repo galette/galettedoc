@@ -27,7 +27,7 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
 
 .. note::
 
-   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `auto` (sans respect de la casse).
+   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `Paypal` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
 
 
 Initialisation de la base de données
@@ -62,7 +62,7 @@ Si vous souhaitez récupérer la version de développement du plugin, vous pouve
 .. code-block:: bash
 
    $ cd /var/www/html/galette/plugins
-   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-auto.git
+   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git
 
 Pour obtenir la version de développement :
 
@@ -77,7 +77,7 @@ Pour obtenir la version de développement :
 
 .. code-block:: bash
 
-   $ git flow int
+   $ git flow init
    Which branch should be used for bringing forth production releases?
       - master
    Branch name for production releases: [master] 
@@ -90,12 +90,12 @@ Pour obtenir la version de développement :
    Support branches? [support/] 
    Version tag prefix? []
 
-Pour la version de développement, si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Paypal`` et ``c:\xampp\htdocs\galette\plugins\Paypal`` respectivement pour les chemins vers le dépôt et vers le dossier local.
+Pour la version de développement, si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git`` et ``c:\xampp\htdocs\galette\plugins\plugin-paypal`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
 Initialisation de la base de données
 ------------------------------------
 
-Si vous préférez initialiser la base sans l'interface de Galette, vous trouverez les scripts d'initialisation ``mysql.sql`` et ``pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
+Si vous préférez initialiser la base sans :ref:`l'interface de Galette <plugins_managment>`, vous trouverez les scripts d'initialisation ``mysql.sql`` et ``pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
 
 Vous devrez ensuite importer ces instructions SQL dans votre base. Pour MySQL vous pourrez soit en utiliser PHPMyAmdin, soit opter directement pour la ligne de commande :
 

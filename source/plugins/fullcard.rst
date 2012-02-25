@@ -15,6 +15,10 @@ Dans un premier temps, vous devez récupérer le plugin.
    
    L'utilisation de la version de développement ne sera plus obligatoire dans le futur.
 
+.. note::
+
+   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `FullCard` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
+
 Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :
 
 .. code-block:: bash
@@ -35,7 +39,7 @@ Pour obtenir la version de développement :
 
 .. code-block:: bash
 
-   $ git flow int
+   $ git flow init
    Which branch should be used for bringing forth production releases?
       - master
    Branch name for production releases: [master] 
@@ -48,5 +52,5 @@ Pour obtenir la version de développement :
    Support branches? [support/] 
    Version tag prefix? []
 
-Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-fullcard.git`` et ``c:\xampp\htdocs\galette\plugins\fullcard`` respectivement pour les chemins vers le dépôt et vers le dossier local.
+Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-fullcard.git`` et ``c:\xampp\htdocs\galette\plugins\plugin-fullcard`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 

@@ -27,12 +27,14 @@ Dans un premier temps, vous devez récupérer le plugin.
    
    L'utilisation de la version de développement ne sera plus obligatoire dans le futur.
 
+.. note::
+
+   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `Auto` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
+
 Initialisation de la base de données
 ====================================
 
 Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
-
-Pour fonctionner, le plugin utilise la base de données de Galette. Il n'existe actuellement pas de système d'initialisation des bases de données pour les plugins, cette étape est à faire « à la main » pour l'heure.
 
 Et voilà ; le plugin Auto est installé :-)
 
@@ -49,7 +51,7 @@ Sous Linux, vous pourrez récupérer la version de développement du plugin de c
 .. code-block:: bash
 
    $ cd /var/www/html/galette/plugins
-   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-aauto.git
+   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-auto.git
 
 Pour obtenir la version de développement :
 
@@ -64,7 +66,7 @@ Pour obtenir la version de développement :
 
 .. code-block:: bash
 
-   $ git flow int
+   $ git flow init
    Which branch should be used for bringing forth production releases?
       - master
    Branch name for production releases: [master] 
@@ -77,7 +79,7 @@ Pour obtenir la version de développement :
    Support branches? [support/] 
    Version tag prefix? []
 
-Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Auto`` et ``c:\xampp\htdocs\galette\plugins\Auto`` respectivement pour les chemins vers le dépôt et vers le dossier local.
+Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-auto.git`` et ``c:\xampp\htdocs\galette\plugins\plugin-auto`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
 Initialisation de la base de données
 ------------------------------------

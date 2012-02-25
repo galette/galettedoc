@@ -29,4 +29,4 @@ Le présent plugin a pour vocation de réimplémenter les possibilités offertes
 
 .. note::
 
-   Dans un message sur la liste de diffusion, `John nous explique les différences entre Galette et Galette-sport <https://mail.gna.org/public/galette-discussion/2007-10/msg00020.html>`_. La notion de groupes sera peut-être intégrée dans Galette directement ; il faut étudier le développement de cette possibilité.
+   Dans un message sur la liste de diffusion, `John nous explique les différences entre Galette et Galette-sport <https://mail.gna.org/public/galette-discussion/2007-10/msg00020.html>`_. La notion de groupes est intégrée à Galette depuis la version 0.7.
