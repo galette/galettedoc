@@ -70,7 +70,7 @@ Pour obtenir la version de développement :
 
 .. code-block:: bash
 
-   $ cd plugin-fullcard
+   $ cd plugin-paypal
    $ git checkout -b develop origin/develop
 
 * en utilisant git-flow :
