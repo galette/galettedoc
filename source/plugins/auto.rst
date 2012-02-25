@@ -49,16 +49,33 @@ Sous Linux, vous pourrez récupérer la version de développement du plugin de c
 .. code-block:: bash
 
    $ cd /var/www/html/galette/plugins
-   $ svn co http://http://svn.gna.org/svn/galette/plugins/Auto/trunk ./Auto
+   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-aauto.git
 
-Si, comme moi, vous préférez désormais utiliser GIT au lieu de Subversion :
+Pour obtenir la version de développement :
+
+* Sans utiliser git-flow :
 
 .. code-block:: bash
 
-   $ mkdir /var/www/html/galette/plugins/Auto
-   $ cd /var/www/html/galette/plugins/Auto
-   $ git svn init --stdlayout http://svn.gna.org/svn/galette/plugins/Auto
-   $ git svn fetch
+   $ cd plugin-fullcard
+   $ git checkout -b develop origin/develop
+
+* en utilisant git-flow :
+
+.. code-block:: bash
+
+   $ git flow int
+   Which branch should be used for bringing forth production releases?
+      - master
+   Branch name for production releases: [master] 
+   Branch name for "next release" development: [develop] 
+   
+   How to name your supporting branch prefixes?
+   Feature branches? [feature/] 
+   Release branches? [release/] 
+   Hotfix branches? [hotfix/] 
+   Support branches? [support/] 
+   Version tag prefix? []
 
 Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``http://svn.gna.org/svn/galette/plugins/Auto`` et ``c:\xampp\htdocs\galette\plugins\Auto`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 
