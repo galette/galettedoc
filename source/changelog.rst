@@ -6,30 +6,6 @@
 Changelog
 =========
 
-************
-0.7 -> 0.7.1
-************
-
-.. _ajouts_071:
-
-Nouveautés
-==========
-
-* Enregistrement des erreurs PHP dans les logs de Galette, pour pallier le manque d'informations sur les hébergements dédiés,
-* Implémentation d'un mode démo qui bloque certaines fonctionnalités (l'envoi de mails, certaines directives de coniguration, ...),
-* Filtrage de la liste des adhérents par groupe,
-* Test de la présence des modules PHP requis et conseillés à l'installation,
-* Chargement dynamique des classes PHP à la demande,
-* Réorganisation des classes métier et utilisation des espaces de nom PHP,
-* Mise à jour de phpMailer en version 5.2.1.
-
-Bogues corrigés
-===============
-
-* Problèmes lors de l'envoi de logo trnasparent ou de types non supportés,
-* Chemin parfois incorect dans les entrées de menu des plugins,
-* Envoi de mailings via la fonction mail() de PHP,
-
 ***********
 0.64 -> 0.7
 ***********
