@@ -21,7 +21,9 @@ Quelques liens qui peuvent être utiles :
 * http://ndpsoftware.com/git-cheatsheet.html
 * http://progit.org/book/
 
-Une fois le dépôt cloné, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
+Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, mais sous forme d'une `archive à télécharger <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ et à décompresser dans le dossier ``includes`` de Galette. Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
+
+Une fois le dépôt cloné et les bibliothèques externes installées, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
 
 Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
 

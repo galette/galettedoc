@@ -29,6 +29,8 @@ Une fois votre Galette correctement installée, il reste une ou deux petites cho
 
       define('GALETTE_MODE', 'DEV');
 
+.. _configpaths:
+
 Paramétrage des chemins
 =======================
 
