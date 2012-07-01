@@ -22,7 +22,7 @@ Dans un premier temps, vous allez `télécharger Galette <http://download.tuxfam
 
 Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <http://www.spiroo.be/7zip/>`_.
 
-La version 0.7.0 de Galette est l'actuelle version stable. Il existe une archive mise à jour quotidiennement (`nightly <http://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_) de la version de développement, et vous pouvez également choisir de  :doc:`récupérer la version de développement de Galette <../development/git>` comme expliqué dans la documentation de développement.
+La version 0.7.0 de Galette est l'actuelle version stable. Il existe une archive mise à jour quotidiennement (`nightly <http://download.tuxfamily.org/galette/galette-0.7-dev.tar.bz2>`_) de la version de développement, et vous pouvez également choisir de  :doc:`récupérer la version de développement de Galette <../development/git>` comme expliqué dans la documentation de développement.
 
 Pré-requis et hébergement
 -------------------------
