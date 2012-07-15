@@ -99,7 +99,7 @@ Smarty
 Assignation de variables
 ------------------------
 
-Il est possible d'assigner à Smarty des variables supplémentaires (comme via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` : 
+Il est possible d'assigner à Smarty des variables supplémentaires (via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` : 
 
 .. code-block:: php
 
