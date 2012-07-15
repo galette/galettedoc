@@ -10,25 +10,50 @@ Changelog
 0.7 -> 0.7.1
 ************
 
+.. _bogues_071:
+
+Bogues corrigés
+===============
+
+* Problèmes lors de l'envoi de logo transparent ou de types non supportés,
+* Chemin parfois incorect dans les entrées de menu des plugins,
+* Envoi de mailings via la fonction mail() de PHP,
+* Le chemin de téléchargement des exports CSV était incorrect,
+* Les informations dans l'interface d'administration des plugins n'étaient pas remises à jour après l'activation ou la désactivation d'un plugin,
+* Amélioration de la conversion texte automatique des mailings HTML,
+* Correction de différents problèmes liés à l'internationnalisation des dates, notamment avec l'interface en anglais,
+* Correction de problèmes aléatoires avec les images (photos et logos).
+
 .. _ajouts_071:
 
 Nouveautés
 ==========
 
-* Enregistrement des erreurs PHP dans les logs de Galette, pour pallier le manque d'informations sur les hébergements dédiés,
-* Implémentation d'un mode démo qui bloque certaines fonctionnalités (l'envoi de mails, certaines directives de coniguration, ...),
 * Filtrage de la liste des adhérents par groupe,
 * Test de la présence des modules PHP requis et conseillés à l'installation,
+* Refonte de l'affichage des pages d'installation,
+* Vérification de la compatibilité des plugins actifs,
+* Vérification de l'unicité du statut pour les membres du staff,
+* Ajout de la description des transactions lors du rappel dans les contributions ; ainsi qu'un lien vers la transaction depuis la liste des contributions,
+* Le logiciel avertit désormais l'utilisateur lorsqu'un mailing est déjà en cours ; et propose de le reprendre ou de l'annuler,
+* Affichage de la raison sociale dans la liste des membres ; et recherche dans les raison sociales également lors d'une recherche sur le nom, 
+* Suppression d'une certaine ambiguité lors de la demande d'un nouveau mot de passe,
+* Enregistrement des erreurs PHP dans les logs de Galette, pour pallier le manque d'informations sur les hébergements dédiés,
+
+.. _souscapot_071:
+
+Sous le capot...
+================
+
+Quelques modifications, d'ordre un peu plus technique ont également été apportées :
+
+* Implémentation d'un mode démo qui bloque certaines fonctionnalités (l'envoi de mails, certaines directives de configuration, ...),
 * Chargement dynamique des classes PHP à la demande,
 * Réorganisation des classes métier et utilisation des espaces de nom PHP,
-* Mise à jour de phpMailer en version 5.2.1.
-
-Bogues corrigés
-===============
-
-* Problèmes lors de l'envoi de logo trnasparent ou de types non supportés,
-* Chemin parfois incorect dans les entrées de menu des plugins,
-* Envoi de mailings via la fonction mail() de PHP,
+* Mise à jour de phpMailer en version 5.2.1,
+* Remplacement de PEAR::Log par KLoger (modifié pour l'occasion) et suppression des bibliothèques PEAR qui ne sont plus utiles,
+* Passage à Smarty 3,
+* Compatibilité des différents fichiers ``.htaccess`` pour Apache 2.4.
 
 ***********
 0.64 -> 0.7
