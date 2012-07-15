@@ -15,30 +15,32 @@ Changelog
 Bogues corrigés
 ===============
 
-* Problèmes lors de l'envoi de logo transparent ou de types non supportés,
-* Chemin parfois incorect dans les entrées de menu des plugins,
-* Envoi de mailings via la fonction mail() de PHP,
+* Problèmes lors de l'envoi de logo transparent ou de types non supportés (`#164 <http://redmine.ulysses.fr/issues/164>`_, `#165 <http://redmine.ulysses.fr/issues/165>`_),
+* Chemin parfois incorect dans les entrées de menu des plugins (`#203 <http://redmine.ulysses.fr/issues/203>`_),
+* Envoi de mailings via la fonction mail() de PHP (`#215 <http://redmine.ulysses.fr/issues/215>`_),
 * Le chemin de téléchargement des exports CSV était incorrect,
-* Les informations dans l'interface d'administration des plugins n'étaient pas remises à jour après l'activation ou la désactivation d'un plugin,
-* Amélioration de la conversion texte automatique des mailings HTML,
-* Correction de différents problèmes liés à l'internationnalisation des dates, notamment avec l'interface en anglais,
-* Correction de problèmes aléatoires avec les images (photos et logos).
+* Les informations dans l'interface d'administration des plugins n'étaient pas remises à jour après l'activation ou la désactivation d'un plugin (`#210 <http://redmine.ulysses.fr/issues/210>`_),
+* Amélioration de la conversion texte automatique des mailings HTML (`#218 <http://redmine.ulysses.fr/issues/218>`_),
+* Correction de différents problèmes liés à l'internationnalisation des dates, notamment avec l'interface en anglais (`#161 <http://redmine.ulysses.fr/issues/161>`_),
+* Correction de problèmes aléatoires avec les images (photos et logos),
+* Suppression d'une certaine ambiguité lors de la demande d'un nouveau mot de passe (`#252 <http://redmine.ulysses.fr/issues/252>`_),
+* Modification de la taille de certains champs : les nom et prénom de l'adhérent peuvent désormais contenir 50 caractères, 200 pour la raison sociale, et 150 pour les descriptions de transactions (`#263 <http://redmine.ulysses.fr/issues/263>`_).
 
 .. _ajouts_071:
 
 Nouveautés
 ==========
 
-* Filtrage de la liste des adhérents par groupe,
-* Test de la présence des modules PHP requis et conseillés à l'installation,
-* Refonte de l'affichage des pages d'installation,
-* Vérification de la compatibilité des plugins actifs,
-* Vérification de l'unicité du statut pour les membres du staff,
-* Ajout de la description des transactions lors du rappel dans les contributions ; ainsi qu'un lien vers la transaction depuis la liste des contributions,
-* Le logiciel avertit désormais l'utilisateur lorsqu'un mailing est déjà en cours ; et propose de le reprendre ou de l'annuler,
-* Affichage de la raison sociale dans la liste des membres ; et recherche dans les raison sociales également lors d'une recherche sur le nom, 
-* Suppression d'une certaine ambiguité lors de la demande d'un nouveau mot de passe,
-* Enregistrement des erreurs PHP dans les logs de Galette, pour pallier le manque d'informations sur les hébergements dédiés,
+* Filtrage de la liste des adhérents par groupe (`#169 <http://redmine.ulysses.fr/issues/169>`_),
+* Test de la présence des modules PHP requis et conseillés à l'installation (`#172 <http://redmine.ulysses.fr/issues/172>`_),
+* Refonte de l'affichage des pages d'installation (`#235 <http://redmine.ulysses.fr/issues/235>`_),
+* Vérification de la compatibilité des plugins (`#241 <http://redmine.ulysses.fr/issues/241>`_),
+* Limitation des différents rôles du bureau à une seule instance. Il n'est plus possible d'avoir deux présidents :) (`#177 <http://redmine.ulysses.fr/issues/177>`_),
+* Ajout de la description des transactions lors du rappel dans les contributions ; ainsi qu'un lien vers la transaction depuis la liste des contributions (`#255 <http://redmine.ulysses.fr/issues/255>`_, `#256 <http://redmine.ulysses.fr/issues/256>`_),
+* Affichage d'un message lorsqu'un mailing est déjà en cours pour le reprendre ou de l'annuler (`#276 <http://redmine.ulysses.fr/issues/276>`_),
+* Affichage de la raison sociale dans la liste des membres ; et recherche dans les raison sociales également lors d'une recherche sur le nom (`#286 <http://redmine.ulysses.fr/issues/286>`_), 
+* Enregistrement des erreurs PHP dans les logs de Galette, pour pallier le manque d'informations sur les hébergements dédiés (`#207 <http://redmine.ulysses.fr/issues/207>`_),
+* Ajout d'une page d'informations système utiles lors de la déclaration de bogues (`#257 <http://redmine.ulysses.fr/issues/257>`_).
 
 .. _souscapot_071:
 
@@ -47,12 +49,12 @@ Sous le capot...
 
 Quelques modifications, d'ordre un peu plus technique ont également été apportées :
 
-* Implémentation d'un mode démo qui bloque certaines fonctionnalités (l'envoi de mails, certaines directives de configuration, ...),
-* Chargement dynamique des classes PHP à la demande,
+* Implémentation d'un mode démo qui bloque certaines fonctionnalités (l'envoi de mails, certaines directives de configuration, ...) (`#205 <http://redmine.ulysses.fr/issues/205>`_),
+* Chargement dynamique des classes PHP à la demande (`#206 <http://redmine.ulysses.fr/issues/206>`_),
 * Réorganisation des classes métier et utilisation des espaces de nom PHP,
-* Mise à jour de phpMailer en version 5.2.1,
+* Mise à jour de phpMailer en version 5.2.1 (`#216 <http://redmine.ulysses.fr/issues/216>`_),
 * Remplacement de PEAR::Log par KLoger (modifié pour l'occasion) et suppression des bibliothèques PEAR qui ne sont plus utiles,
-* Passage à Smarty 3,
+* Passage à Smarty 3 (`#238 <http://redmine.ulysses.fr/issues/238>`_),
 * Compatibilité des différents fichiers ``.htaccess`` pour Apache 2.4.
 
 ***********
