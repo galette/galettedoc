@@ -24,7 +24,9 @@ Bogues corrigés
 * Correction de différents problèmes liés à l'internationnalisation des dates, notamment avec l'interface en anglais (`#161 <http://redmine.ulysses.fr/issues/161>`_),
 * Correction de problèmes aléatoires avec les images (photos et logos),
 * Suppression d'une certaine ambiguité lors de la demande d'un nouveau mot de passe (`#252 <http://redmine.ulysses.fr/issues/252>`_),
-* Modification de la taille de certains champs : les nom et prénom de l'adhérent peuvent désormais contenir 50 caractères, 200 pour la raison sociale, et 150 pour les descriptions de transactions (`#263 <http://redmine.ulysses.fr/issues/263>`_).
+* Modification de la taille de certains champs : les nom et prénom de l'adhérent peuvent désormais contenir 50 caractères, 200 pour la raison sociale, et 150 pour les descriptions de transactions (`#263 <http://redmine.ulysses.fr/issues/263>`_),
+* Les prénoms composés prenaient une majuscule sur la toute première lettre uniquement (`#319 <http://redmine.ulysses.fr/issues/319>`_).
+
 
 .. _ajouts_071:
 
