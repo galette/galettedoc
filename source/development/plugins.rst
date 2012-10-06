@@ -87,11 +87,22 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
        'Plugin qui ne sert à rien', //Short description
        'Votre Nom', //Author
        '0.0.1', //Version
+       '0.7.1', //Galette version compatibility
        null //Permissions needed - not yet implemented
    );
    ?>
 
 L'activation du module dans Galette dépend de ce fichier, s'il n'est pas présent, ou s'il est incorrect, le module ne sera pas activé.
+
+.. since: 0.7.1
+
+Compatibilité des plugins
+-------------------------
+
+La compatibilité des plugins repose sur un système assez simple : Galette définit une version de compatibilité des plugins qui peut être la version courante, ou une version antérieure (si rien n'a changé du côté des plugins) ; et chaque plugin définit de son côté la version de Galette avec laquelle il est compatible.
+
+Côté Galette, la version de compatibilité est déclarée à l'aide de la constante `GALETTE_COMPAT_VERSION` dans le fichier ``galette/includes/galette.inc.php``.
+Côté plugin, la version de compatibilité est déclarée en quatrième position dans le fichier ``_define.php`` du plugin.
 
 Smarty
 ======
@@ -99,7 +110,7 @@ Smarty
 Assignation de variables
 ------------------------
 
-Il est possible d'assigner à Smarty des variables supplémentaires (comme via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` : 
+Il est possible d'assigner à Smarty des variables supplémentaires (via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` : 
 
 .. code-block:: php
 

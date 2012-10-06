@@ -12,6 +12,11 @@ Plugins pour Galette
 
 Au cours du développement de Galette 0.7, un système de plugins a été ajouté, dans le but d'étendre les fonctionnalités de Galette dans certains cas particuliers, tout en évitant « d'encombrer » l'application principale.
 
+.. since: 0.7.1
+.. note::
+
+   Depuis Galette 0.7.1, un système de compatibilité des plugins a été mis en place. Les plugins non compatibles seront automatiquement désactivés. Il faut dans ce cas envisager de passer à la version supérieure du plugin.
+
 Chaque plugin est en fait un simple dossier qui doit être placé dans le dossier ``{galette}/plugins/``. La présence de certains fichiers dans le plugin permet à Galette de savoir que faire :
 
 * ``_define.php`` : ce fichier :ref:`déclare le plugin auprès de Galette <pluginsconfig>`, il est bien entendu requis,

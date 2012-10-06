@@ -29,6 +29,8 @@ Une fois votre Galette correctement installée, il reste une ou deux petites cho
 
       define('GALETTE_MODE', 'DEV');
 
+.. _configpaths:
+
 Paramétrage des chemins
 =======================
 
@@ -72,3 +74,12 @@ Les chemins de Galette doivent pour la plupart impérativement être accessibles
 * `GALETTE_PLUGINS_PATH` : le chemin des plugins de galette (attention, cela ne fonctionnera peut-être pas en fonction des plugins !! Cette possibilité reste en cours de développement),
 * `GALETTE_EXPORTS_PATH` : le chemin de stockage des exports CSV
 * `GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos.
+
+Sécurité des données saisies
+============================
+
+Vous-même, ainsi que l'ensemble de vos adhérents, allez probablement vous connecter à Galette, en utilisant un indentifiant et un mot de passe. Il faut savoir que les mots de passe sont dans ce cas transmis au serveur en clair ; et qu'une personne mal intentionnée pourrait récupérer vos identifiants en observant simplement le flux de données que vous transmettez.
+
+La problématique est la même à chaque fois que vous envoyez des informations sur Internet ; c'est pourquoi lorsque l'on vous demande votre numéro de carte bancaire, il faut d'abord vous assurer que lma page soit bien sécurisée - qu'elle utilise le protocole HTTPS - votre butineur vous l'indiquera clairement.
+
+Pour Galette, la logique est la même, et vous pouvez parfaitement l'utiliser via SSL, ça ne pose aucun problème ; toutes les données que vous allez saisir via cette connexion seront alors un peu plus confidentielles et sécurisée :)
