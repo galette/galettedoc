@@ -126,3 +126,27 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
 Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de ducumentation qui la précède.
 
 Pour une meilleure compréhension du code pour l'ensemble des intervenants, on essaiera de documenter au maximum le code produit.
+
+Créer une release
+=================
+
+Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.7.1, il faut effectuer :
+
+.. code-block:: bash
+
+   $ git archive --prefix=galette-0.7.1/ 0.7.1 | bzip2 > galette-0.7.1.tar.bz2
+
+Notez que cette archive ne contiendra pas `les bibliothèques externes <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ (Smarty, Zend et tcpdf) :
+
+.. code-block:: bash
+
+   $ wget http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2
+   $ tar xjf galette_dev_includes.tar.bz2
+
+Vous devrez ajouter dans le dossier ``galette/includes`` du fichier ``galette-0.7.1.tar.bz2`` les dossiers contenus dans ``galette_dev_includes.tar.bz2``.
+
+Finalement, l'archive peut être signée, avant sa mise en ligne (pour vérification ultérieure de l'intégrité de l'archive) :
+
+.. code-block:: bash
+
+   $ gpg --detach-sign --armor ./galette-0.7.1.tar.bz2
