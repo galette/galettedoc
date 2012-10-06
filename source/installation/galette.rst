@@ -22,10 +22,14 @@ L'écran suivant vous permet de choisir le type d'installation. Vous aurez le ch
    :scale: 70%
    :align: center
 
-Vérification des permissions
-============================
+Vérifications
+=============
 
-Si toutes :ref:`les étapes de préparation <preparation>` ont été correctement suivies, les droits des dossiers devraient être corrects. Cette étape s'assure que les droits nécessaires au bon fonctionnement de Galette aient été placés. En cas de problème (rectangle rouge), référez-vous à la section « :ref:`Droits des fichiers <droitsfichiers>` », rafraîchissez ensuite la page pour relancer la procédure de vérification des droits.
+Si toutes :ref:`les étapes de préparation <preparation>` ont été correctement suivies, les droits des dossiers devraient être corrects.
+
+Cette étape s'assure que les droits nécessaires au bon fonctionnement de Galette ont été placés. En cas de problème (rectangle rouge), référez-vous à la section « :ref:`Droits des fichiers <droitsfichiers>` », rafraîchissez ensuite la page pour relancer la procédure de vérification des droits.
+
+Elle vérifie aussi la version de PHP utilisée, la présence des modules requis ou conseillés, et le paramétrage de la date (requis depuis PHP 5.3). L'installation d'un module se fait fait sur le serveur (rapprochez-vous de votre hébergeur ou de votre administrateur système, Galette ne requiert à priori rien d'exceptionnel), de même que le paramétrage de la date.
 
 .. image:: ../_styles/static/images/installation/3_permissions.png
    :scale: 70%
