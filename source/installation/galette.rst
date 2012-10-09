@@ -75,7 +75,10 @@ Pour l'exemple, nous allons nous baser sur une base de données nommée magalett
      $ createuser -P monutilisateurgalette
      $ createdb -O monutilisateurgalette magalette
 
-Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MySQL <http://dev.mysql.com/doc/#refman>`_ ou de `PostgreSQL <http://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique tel `phpMyAdmin <http://www.phpmyadmin.net>`_ ou `phpPgAdmin <http://phppgadmin.sourceforge.net>`_.
+Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MySQL <http://dev.mysql.com/doc/#refman>`_ ou de `PostgreSQL <http://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique :
+
+* `phpMyAdmin <http://www.phpmyadmin.net>`_ ou `MySQL Workbench <http://www.mysql.fr/downloads/workbench/>`_ pour MySQL ;
+* `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <http://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL.
 
 Cas particulier de Free
 ^^^^^^^^^^^^^^^^^^^^^^^
