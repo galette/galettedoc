@@ -33,6 +33,7 @@ Les plugins actuellement disponibles pour Galette sont :
    fullcard.rst
    sport.rst
    admintools.rst
+   maps.rst
 
 .. _plugins_managment:
 
