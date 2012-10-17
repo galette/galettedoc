@@ -24,12 +24,6 @@ Dans un premier temps, vous devez récupérer le plugin.
 .. note::
 
    Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <autodev_download>`.
-   
-   L'utilisation de la version de développement ne sera plus obligatoire dans le futur.
-
-.. note::
-
-   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `Auto` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
 
 Initialisation de la base de données
 ====================================

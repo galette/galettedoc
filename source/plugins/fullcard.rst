@@ -7,19 +7,26 @@ Ce plugin a été développé pour `l'association Borsalinux-fr (anciennement Fe
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin.
+Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+http://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.1.tar.bz2
 
-.. note::
+Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
-   Aucune version stable du plugin n'existe actuellement.
-   
-   L'utilisation de la version de développement ne sera plus obligatoire dans le futur.
+Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
 
-.. note::
+.. code-block:: bash
 
-   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `FullCard` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
+   $ cd /var/www/html/galette/plugins
+   $ wget {url}
+   $ tar xjvf galette-plugin-fullcard-{version}.tar.bz2
 
-Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :
+Utilisateurs avancés
+====================
+
+Récupération des sources
+------------------------
+
+Si vous souhaitez récupérer la version de développement du plugin, vous pouvez utiliser le dépôt :
 
 .. code-block:: bash
 
