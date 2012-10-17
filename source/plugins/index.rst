@@ -27,13 +27,13 @@ Les plugins actuellement disponibles pour Galette sont :
 .. toctree::
    :maxdepth: 2
 
-   tinymce.rst
-   auto.rst
    paypal.rst
    fullcard.rst
-   sport.rst
    admintools.rst
    maps.rst
+   auto.rst
+   tinymce.rst
+   sport.rst
 
 .. _plugins_managment:
 

@@ -11,9 +11,9 @@ Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-AdminTools-1.0.tar.bz2
+http://download.tuxfamily.org/galette/plugins/galette-plugin-admintools-1.1.tar.bz2
 
-Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette, et de le nommer ``AdminTools``.
+Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
 Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
 
@@ -21,11 +21,7 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
-   $ tar xjvf galette-plugin-AdminTools-{version}.tar.bz2
-
-.. note::
-
-   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `AdminTools` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
+   $ tar xjvf galette-plugin-admintools-{version}.tar.bz2
 
 Utilisateurs avancés
 ====================
@@ -65,7 +61,6 @@ Pour obtenir la version de développement :
    Hotfix branches? [hotfix/] 
    Support branches? [support/] 
    Version tag prefix? []
-
 
 Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-admintools.git`` et ``c:\xampp\htdocs\galette\plugins\plugin-admintools`` respectivement pour les chemins vers le dépôt et vers le dossier local.
 

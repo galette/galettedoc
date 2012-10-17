@@ -13,9 +13,9 @@ Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-Paypal-1.0.2.tar.bz2
+http://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-1.1.0.1.tar.bz2
 
-Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette, et de le nommer ``Paypal``.
+Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
 Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
 
@@ -24,11 +24,6 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
    $ tar xjvf galette-plugin-Paypal-{version}.tar.bz2
-
-.. note::
-
-   Sous Galette 0.7, le nom du dossier du plugin est important, ce doit être `Paypal` (sans respect de la casse) ; cette limitation a été levée dans les version postérieures.
-
 
 Initialisation de la base de données
 ====================================
