@@ -10,7 +10,11 @@ Ce plugin vous apporte :
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin. Aucune version stable n'existe pour le moment, il faudra donc soit cloner le dépôt du plugin pour utiliser la dernière version de la branche `develop`, soit en récupérer un snapshot depuis le webgit :
+.. note::
+
+   Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <autodev_download>`.
+
+Dans un premier temps, vous devez récupérer le plugin. Aucune version stable n'existe pour le moment, il faudra donc soit :ref:`cloner le dépôt du plugin <mapsdev_download>` pour utiliser la dernière version de la branche `develop`, soit en récupérer un snapshot depuis le webgit :
 http://git.tuxfamily.org/galette/plugin-maps?p=galette/plugin-maps.git;a=shortlog;h=refs/heads/develop
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
@@ -58,8 +62,17 @@ Une fois ses coordonnées enregistrées, l'adhérent verra sa localisation affic
    :scale: 70%
    :align: center
 
+Notes de fonctionnement
+=======================
+
+La page `galette/plugins/plugin-maps/maps.php` est accessible aux utilisateurs non authentifiés. Ceux-ci ne pourront voir que les membres ayant rendu leur profil public, et qui ssont à jour de leur cotisation. Les « simples adhérents » connectés auront accès aux mêmes informations, en plus de la possibilité de définir leur position géographique.
+
+Les administrateurs et membres du staff peuvent voir la localisation de tous les adhérents, mais ne peuvent la canger ni la supprimer.
+
 Utilisateurs avancés
 ====================
+
+.. _mapsdev_download:
 
 Récupération des sources
 ------------------------
