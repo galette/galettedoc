@@ -12,7 +12,7 @@ Installation
 
 .. note::
 
-   Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <autodev_download>`.
+   Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <mapsdev_download>`.
 
 Dans un premier temps, vous devez récupérer le plugin. Aucune version stable n'existe pour le moment, il faudra donc soit :ref:`cloner le dépôt du plugin <mapsdev_download>` pour utiliser la dernière version de la branche `develop`, soit en récupérer un snapshot depuis le webgit :
 http://git.tuxfamily.org/galette/plugin-maps?p=galette/plugin-maps.git;a=shortlog;h=refs/heads/develop
