@@ -27,3 +27,4 @@ La présente documentation vous expliquera les règles de développement adopté
    codage.rst
    plugins.rst
    i18n.rst
+   debug.rst
