@@ -6,6 +6,39 @@
 Changelog
 =========
 
+**************
+0.7.1 -> 0.7.2
+**************
+
+.. note::
+
+   Un très grand merci à l'`AFUL <http://aful.org>`_, qui a `subventionné cette version <http://galette.tuxfamily.org/dc/index.php/post/2012/10/29/Galette-0.7.2-l-AFUL-subventionne-!>`_ :-)
+
+.. _bogues_072:
+
+Bogues corrigés
+===============
+
+* Erreur d'objet incomplet lors d'une mise à jour (`#393 <http://redmine.ulysses.fr/issues/393>`_)
+* Détection correcte du module PHP Curl à l'installation (`#395 <http://redmine.ulysses.fr/issues/395>`_)
+
+.. _ajouts_072:
+
+Nouveautés
+==========
+
+* Amélioration de l'interface des champs complémentaires multiples (`#289 <http://redmine.ulysses.fr/issues/289>`_)
+* Présentation des champs dynamiques contenant une URL ou une adresse courriel sous forme d'hyperlien (`#355 <http://redmine.ulysses.fr/issues/355>`_)
+* Modification des tailles minimales des identifiants (désormais, respectivement 2 et 6 caractères pour le login et le mot de passe - `#374 <http://redmine.ulysses.fr/issues/374>`_)
+* Ajout d'un bouton au tableau de bord pour effectuer des relances facilement vers les adhértents en retard (`#375 <http://redmine.ulysses.fr/issues/375>`_)
+
+.. _souscapot_071:
+
+Sous le capot...
+================
+
+* Passage en objet de la gestion des champs dynamiques (`#194 <http://redmine.ulysses.fr/issues/194>`_)
+
 ************
 0.7 -> 0.7.1
 ************

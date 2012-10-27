@@ -14,28 +14,38 @@ Nomenclature des fichiers
 Les fichiers de galette sont répartis dans différents dossiers, dont voici un bref aperçu :
 
 * |folder| `cache` : dossier de cache utilisé par Smarty et TCPDF
-* |folder| `classes` : les classes de Galette
-
-  * |phpfile| `my.class.php`
-  * |phpfile| `...`
-
 * |folder| `config` : les fichiers de configuration
 * |folder| `docs`
 * |folder| `exports` : dossier dans lequel seront stockés les exports CSV
 * |folder| `includes` : bibliothèques, fonctions et initialisation de Galette
 
   * |folder| `jquery` : :ref:`bibliothèque javascript JQuery <ui>`
-  * |folder| `pear` : :ref:`bibliothèques PHP PEAR <pear>`
   * |folder| `phpMailer` : :ref:`bibliothèque d'envoi de mails phpMailer <phpmailer>`
   * |folder| `Smarty` : :ref:`système de templates Smarty <smarty>`
   * |folder| `smarty_plugins` : plugins Smarty complémentaires
   * |folder| `tcpdf` : :ref:`bibliothèque de création de PDF TCPDF <pdf>`
+  * |folder| `Zend` : :ref:`bibliothèques du Framework Zend <zend>`
   * |phpfile| `galette.inc.php` : fichier d'initialisation principal de Galette. Ici est gérée la création de tous les objets nécessaires au bon fonctionnement du code.
   * |phpfile| `...`
   * |file| `...`
 
 * |folder| `install` : scripts d'installation
 * |folder| `lang` : fichiers de traduction gettext (``.mo``), scripts d'extraction des chaînes depuis le code source, fichiers de langue compilés
+* |folder| `lib` : les bibliothèques internes
+
+  * |folder| `Galette` : la bibliothèque Galette
+
+    * |folder| `Common` : classes `Galette\\Commons`
+    * |folder| `Core` : classes `Galette\\Core`
+
+      * |phpfile| `Authentication.php`
+      * |phpfile| `CheckModules.php`
+      * |phpfile| `...`
+
+    * |folder| `...`
+
+  * |folder| `...`
+
 * |folder| `logs` : fichiers logs produits par :ref:`PEAR::Log <pearlog>`
 * |folder| `photos` : dossier de stockage des photos des membres
 * |folder| `plugins` : :ref:`dossier de stockage des plugins <plugins>`
@@ -130,11 +140,11 @@ Pour une meilleure compréhension du code pour l'ensemble des intervenants, on e
 Créer une release
 =================
 
-Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.7.1, il faut effectuer :
+Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.7.2, il faut effectuer :
 
 .. code-block:: bash
 
-   $ git archive --prefix=galette-0.7.1/ 0.7.1 | bzip2 > galette-0.7.1.tar.bz2
+   $ git archive --prefix=galette-0.7.2/ 0.7.2 | bzip2 > galette-0.7.2.tar.bz2
 
 Notez que cette archive ne contiendra pas `les bibliothèques externes <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ (Smarty, Zend et tcpdf) :
 
@@ -143,10 +153,10 @@ Notez que cette archive ne contiendra pas `les bibliothèques externes <http://d
    $ wget http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2
    $ tar xjf galette_dev_includes.tar.bz2
 
-Vous devrez ajouter dans le dossier ``galette/includes`` du fichier ``galette-0.7.1.tar.bz2`` les dossiers contenus dans ``galette_dev_includes.tar.bz2``.
+Vous devrez ajouter dans le dossier ``galette/includes`` du fichier ``galette-0.7.2.tar.bz2`` les dossiers contenus dans ``galette_dev_includes.tar.bz2``.
 
 Finalement, l'archive peut être signée, avant sa mise en ligne (pour vérification ultérieure de l'intégrité de l'archive) :
 
 .. code-block:: bash
 
-   $ gpg --detach-sign --armor ./galette-0.7.1.tar.bz2
+   $ gpg --detach-sign --armor ./galette-0.7.2.tar.bz2
