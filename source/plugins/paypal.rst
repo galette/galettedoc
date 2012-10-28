@@ -9,6 +9,15 @@ Ce plugin vous apporte :
 * un historique,
 * l'enregistrement automatique de la transaction une fois validée.
 
+.. image:: ../_styles/static/images/plugin-paypal/preferences.png
+   :scale: 70%
+   :align: center
+
+.. image:: ../_styles/static/images/plugin-paypal/form.png
+   :scale: 70%
+   :align: center
+
+
 Installation
 ============
 
