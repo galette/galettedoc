@@ -32,7 +32,7 @@ Nouveautés
 * Modification des tailles minimales des identifiants (désormais, respectivement 2 et 6 caractères pour le login et le mot de passe - `#374 <http://redmine.ulysses.fr/issues/374>`_)
 * Ajout d'un bouton au tableau de bord pour effectuer des relances facilement vers les adhértents en retard (`#375 <http://redmine.ulysses.fr/issues/375>`_)
 
-.. _souscapot_071:
+.. _souscapot_072:
 
 Sous le capot...
 ================
