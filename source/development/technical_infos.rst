@@ -73,7 +73,7 @@ Interface utilisateur
 Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expérience de ce dernier, nous avons choisi de faire appel à un framework Javascript. `JQuery <http://jquery.com>`_ a été retenu, ainsi que certains de ses plugins, notamment :
 
 * `JQuery UI <http://ui.jquery.com/>`_ pour l'ajout d'onglets, de formulaires de sélection de dates, de fenêtres modales, etc,
-* `markItUp <http://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings (`TinyMCE <http://tinymce.moxiecode.com/>`_ est disponible en tant que plugin pour Galette, en remplacement de markItUp).
+* `markItUp <http://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings.
 
 .. _phpmailer:
 
