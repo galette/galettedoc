@@ -32,7 +32,6 @@ Les plugins actuellement disponibles pour Galette sont :
    admintools.rst
    maps.rst
    auto.rst
-   tinymce.rst
    sport.rst
 
 .. _plugins_managment:
