@@ -6,6 +6,19 @@
 Changelog
 =========
 
+******************
+0.7.2.1 -> 0.7.2.2
+******************
+
+* Le filtrage des groupes est désormais effectifs sur les enfants directs du groupe (`#301 <http://redmine.ulysses.fr/issues/301>`_)
+
+****************
+0.7.2 -> 0.7.2.1
+****************
+
+* Les champs dynamiques de type zone de texte étaient répétés indéfiniment (`#422 <http://redmine.ulysses.fr/issues/422>`_)
+* Les champs dynamiques de type choix étaient répétés sous MySQL (`#419 <http://redmine.ulysses.fr/issues/419>`_, `#422 <http://redmine.ulysses.fr/issues/422>`_)
+
 **************
 0.7.1 -> 0.7.2
 **************
