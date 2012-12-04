@@ -10,6 +10,13 @@ Changelog
 0.7.2.1 -> 0.7.2.2
 ******************
 
+* L'affichage de groupes vides causait des erreurs SQL (`#437 <http://redmine.ulysses.fr/issues/437>`_)
+* Impossible de lister les groupes sous Postgres 8.4 (`#430 <http://redmine.ulysses.fr/issues/430`_)
+
+******************
+0.7.2.1 -> 0.7.2.2
+******************
+
 * Le filtrage des groupes est désormais effectifs sur les enfants directs du groupe (`#301 <http://redmine.ulysses.fr/issues/301>`_)
 
 ****************
