@@ -7,6 +7,12 @@ Changelog
 =========
 
 ******************
+0.7.2.3 -> 0.7.2.4
+******************
+
+* Erreur à l'intialisation des bases des plugins (`#432 <http://redmine.ulysses.fr/issues/432>`_)
+
+******************
 0.7.2.1 -> 0.7.2.2
 ******************
 
