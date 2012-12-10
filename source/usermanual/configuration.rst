@@ -91,7 +91,7 @@ Voici la liste des variables disponibles :
 * `{LOGIN}` :  : l'identifiant de connexion de l'adhérent, disponible sous réserves,
 * `{MAIL_ADH}` : l'adresse courriel de l'adhérent, disponible sous réserves,
 * `{LOGIN_URI}` : l'URL de Galette, disponible globalement,
-* `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement s'il a été saisi,
+* `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement depuis la page d'auto inscription,
 * `{CHG_PWD_URI}` : lien de modification du mot de passe, disponible uniquement depuis la réinitialisation du mot de passe,
 * `{LINK_VALIDITY}` : durée de validité du lien, disponible uniquement depuis la réinitialisation du mot de passe,
 * `{DEADLINE}` : date de fin, disponible uniquement lors de la création d'une contribution,
