@@ -88,7 +88,7 @@ Voici la liste des variables disponibles :
 * `{ASSO_NAME}` : le nom de l'association, disponible globalement,
 * `{ASSO_SLOGAN}` : le slogan de l'association, disponible globalement,
 * `{NAME_ADH}` : le nom de l'adhérent, disponible sous réserves,
-* `{LOGIN}` :  : l'identifiant de connexion de l'adhérent, disponible sous réserves,
+* `{LOGIN}` :  l'identifiant de connexion de l'adhérent, disponible sous réserves,
 * `{MAIL_ADH}` : l'adresse courriel de l'adhérent, disponible sous réserves,
 * `{LOGIN_URI}` : l'URL de Galette, disponible globalement,
 * `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement depuis la page d'auto inscription,
