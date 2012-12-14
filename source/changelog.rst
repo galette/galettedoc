@@ -10,6 +10,14 @@ Changelog
 0.7.2.5 -> 0.7.2.6
 ******************
 
+* L'interface de gestion des groupes n'était pas accessible aux responsables (`#404 <http://redmine.ulysses.fr/issues/404>`_)
+* Différents problèmes se manifestaient avec la langue de l'adhérent (`#451 <http://redmine.ulysses.fr/issues/451>`_)
+* Correction d'un problème de log mineur
+
+******************
+0.7.2.5 -> 0.7.2.6
+******************
+
 * Problème de sélection des membres dans un nouveau mailing (`#442 <http://redmine.ulysses.fr/issues/442>`_)
 * Impossible d'annuler le filtrage des transactions (`#436 <http://redmine.ulysses.fr/issues/436>`_)
 * Le code postal n'aparaissait pas sur les cartes de membres (`#441 <http://redmine.ulysses.fr/issues/441>`_)
