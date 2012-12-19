@@ -7,7 +7,13 @@ Changelog
 =========
 
 ******************
-0.7.2.5 -> 0.7.2.6
+0.7.2.7 -> 0.7.2.8
+******************
+
+* Diverses améliorations des performances lors de la récupération de listes de membres (`#458 <http://redmine.ulysses.fr/issues/458>`_)
+
+******************
+0.7.2.6 -> 0.7.2.7
 ******************
 
 * L'interface de gestion des groupes n'était pas accessible aux responsables (`#404 <http://redmine.ulysses.fr/issues/404>`_)
