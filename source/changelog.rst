@@ -6,16 +6,51 @@
 Changelog
 =========
 
+****************
+0.7.2.3 -> 0.7.3
+****************
+
+.. note::
+
+   Un très grand merci à `Exsequenda, qui a subventionné cette version <http://galette.tuxfamily.org/dc/index.php/post/2013/01/01/Galette-0.7.3-%3A-Exsequenda-subventionne-!>`_ :-)
+
+.. _bogues_073:
+
+Bogues corrigés
+===============
+
+* Traduction des libellés des champs dynamiques (`#398 <http://redmine.ulysses.fr/issues/398>`_)
+
+.. _ajouts_073:
+
+Nouveautés
+==========
+
+* Login et mot de passes peuvent être non requis (`#303 <http://redmine.ulysses.fr/issues/303>`_)
+* Paramétrage de la visibilité des champs (`#369 <http://redmine.ulysses.fr/issues/369>`_)
+* Recherche avancée (`#370 <http://redmine.ulysses.fr/issues/370>`_)
+* Les traductions dynamiques inexistantes sont désormais créées (`#468 <http://redmine.ulysses.fr/issues/468>`_)
+* Pagination des pages publiques (`#460 <http://redmine.ulysses.fr/issues/460>`_)
+
+.. _souscapot_073:
+
+Sous le capot...
+================
+
+* Remplacement du logger (`#415 <http://redmine.ulysses.fr/issues/415>`_)
+
+
+
 ******************
 0.7.2.8 -> 0.7.2.9
 ******************
 
 * Champs complémentaires des contributions non enregistrés et/ou non chargés (`#396 <http://redmine.ulysses.fr/issues/396>`_)
 * L'upload de fichiers avec une extension en majuscules générati des fichiers vides (`#450 <http://redmine.ulysses.fr/issues/450>`_)
-* Les photos des adhérents sont requises pour de la génération des cartes (`#461 <http://redmine.ulysses.fr/issues/461`_)
-* Régénération de l'image depuis la base donnait parfois un fichier vide (`#463 <http://redmine.ulysses.fr/issues/463`_)
-* Impossible d'enregistrer une fiche adhérent (entre autres), les définitions de champs étaient manquantes (`#466 <http://redmine.ulysses.fr/issues/466`_)
-* Les rappels ne doivent pas inclure les comptes inactifs (`#462 <http://redmine.ulysses.fr/issues/462`_)
+* Les photos des adhérents sont requises pour de la génération des cartes (`#461 <http://redmine.ulysses.fr/issues/461>`_)
+* Régénération de l'image depuis la base donnait parfois un fichier vide (`#463 <http://redmine.ulysses.fr/issues/463>`_)
+* Impossible d'enregistrer une fiche adhérent (entre autres), les définitions de champs étaient manquantes (`#466 <http://redmine.ulysses.fr/issues/466>`_)
+* Les rappels ne doivent pas inclure les comptes inactifs (`#462 <http://redmine.ulysses.fr/issues/462>`_)
 * Les liens des nouveaux exports étaient incorrects
 
 ******************
@@ -58,7 +93,7 @@ Changelog
 ******************
 
 * L'affichage de groupes vides causait des erreurs SQL (`#437 <http://redmine.ulysses.fr/issues/437>`_)
-* Impossible de lister les groupes sous Postgres 8.4 (`#430 <http://redmine.ulysses.fr/issues/430`_)
+* Impossible de lister les groupes sous Postgres 8.4 (`#430 <http://redmine.ulysses.fr/issues/430>`_)
 
 ******************
 0.7.2.1 -> 0.7.2.2
