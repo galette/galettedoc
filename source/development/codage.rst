@@ -24,7 +24,7 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
   * |folder| `Smarty` : :ref:`système de templates Smarty <smarty>`
   * |folder| `smarty_plugins` : plugins Smarty complémentaires
   * |folder| `tcpdf` : :ref:`bibliothèque de création de PDF TCPDF <pdf>`
-  * |folder| `Zend` : :ref:`bibliothèques du Framework Zend <zend>`
+  * |folder| `Zend` : :ref:`bibliothèques du Framework Zend <zend_db>`
   * |phpfile| `galette.inc.php` : fichier d'initialisation principal de Galette. Ici est gérée la création de tous les objets nécessaires au bon fonctionnement du code.
   * |phpfile| `...`
   * |file| `...`
@@ -46,7 +46,7 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
   * |folder| `...`
 
-* |folder| `logs` : fichiers logs produits par :ref:`PEAR::Log <pearlog>`
+* |folder| `logs` : fichiers logs produits par :ref:`Analog <analog>`
 * |folder| `photos` : dossier de stockage des photos des membres
 * |folder| `plugins` : :ref:`dossier de stockage des plugins <plugins>`
 * |folder| `public` : pages publiques
