@@ -34,16 +34,12 @@ Bien que cette extension supporte un certain nombre de bases de données différ
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
-.. _pear:
-.. _pearlog:
+.. _analog:
 
-PEAR::Log
----------
+Analog
+------
 
-.. image:: ../_styles/static/images/libraries/pear.png
-   :align: right
-
-Un système de logs sera assuré par `l'extension PEAR Log <http://pear.php.net/package/Log>`_.
+Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analog/>`_.
 
 .. _smarty:
 

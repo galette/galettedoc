@@ -39,16 +39,15 @@ Certains chemins dans Galette sont paramétrables, comme le dossier des exports,
 Par défaut, Galette est fourni avec l'ensemble de ces chemins pointant à l'intérieur du dossier d'installation. Ainsi, si l'installation se trouve dans le dossier ``/var/www/galette`` ; les exports seront effectués dans ``/var/www/galette/exports``, on ira chercher les bibliothèques Zend requises dans ``/var/www/galette/includes/Zend-{version}``, et ainsi de suite.
 La configuration par défaut est définie dans le fichier ``config/paths.inc.php``, qui ne doit pas être modifié.
 
-Il est possible de surcharger tout ou partie de ces chemins en créant le fichier ``local_paths.inc.php`` dans le dossier ``config``, il suffira alors d'y placer les chemins souhaités ; sous forme de déclaration de variables globales PHP. Par exemple, pour utiliser les bibliothèques Zend, PEAR, PHPMailer et Smarty côté système sous Fedora ; ce fichier contiendrait :
+Il est possible de surcharger tout ou partie de ces chemins en créant le fichier ``local_paths.inc.php`` dans le dossier ``config``, il suffira alors d'y placer les chemins souhaités ; sous forme de déclaration de variables globales PHP. Par exemple, pour utiliser les bibliothèques Zend, Analog, PHPMailer et Smarty côté système sous Fedora ; ce fichier contiendrait :
 
    .. code-block:: php
 
       <?php
-      define('GALETTE_PEAR_PATH', '/usr/share/pear/');
       define('GALETTE_ZEND_PATH', '/usr/share/php/');
-      define('GALETTE_PEAR_LOG_PATH', '/usr/share/pear/');
+      define('GALETTE_ANALOG_PATH', '/usr/share/php/');
       define('GALETTE_PHP_MAILER_PATH', '/usr/share/php/PHPMailer/');
-      define('GALETTE_SMARTY_PATH', '/usr/share/php/Smarty/');
+      define('GALETTE_SMARTY_PATH', '/usr/share/php/Smarty3/');
       ?>
 
 Ces chemins peuvent varier en fonction des distributions, et vous pouvez aussi vouloir utiliser une version non système d'une bibliothèque, adaptez les chemins à votre convenance.
@@ -57,8 +56,7 @@ Chemins des bibliothèques
 -------------------------
 
 * `GALETTE_ZEND_PATH` : le chemin vers Zend_Db, Zend_Exception et Zend_Loader, les trois composants du framework Zend utilisés par Galette,
-* `GALETTE_PEAR_PATH` : le chemin de la :ref:`bibliothèque PEAR <pear>`,
-* `GALETTE_PEAR_LOG_PATH` : le chemin de la :ref:`bibliothèque PEAR::Log <pearlog>`, qui sera fort pobablement identique à celle de PEAR,
+* `GALETTE_ANALOG_PATH` : le chemin de la :ref:`bibliothèque Analog <analog>`,
 * `GALETTE_PHP_MAILER_PATH` : le chemin vers la :ref:`bibliothèque PHPMailer <phpmailer>`,
 * `GALETTE_SMARTY_PATH` : le chemin vers la :ref:`bibliothèque Smarty <smarty>`.
 
