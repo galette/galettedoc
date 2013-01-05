@@ -7,6 +7,14 @@ Changelog
 =========
 
 ****************
+0.7.3 -> 0.7.3.1
+****************
+
+* L'installation se bloque (`#473 <http://redmine.ulysses.fr/issues/473>`_)
+* L'image « captcha » ne s'affiche pas (`#474 <http://redmine.ulysses.fr/issues/474>`_)
+* Amélioration de la validation de la configuration des champs (`#475 <http://redmine.ulysses.fr/issues/475>`_)
+
+****************
 0.7.2.3 -> 0.7.3
 ****************
 
