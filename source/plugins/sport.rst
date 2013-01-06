@@ -14,18 +14,18 @@ Le présent plugin a pour vocation de réimplémenter les possibilités offertes
 * ajout d'un widget javascript de calendrier (fonctionnalité présente de base dans Galette 0.7),
 * Import de données CSV,
 * Export de données CSV (fonctionnalité présente de base dans Galette 0.7),
-* ajout de filtres sur les listes adhérents et cotisations,
-* gestion de groupe et leur(s) administrateur(s),
+* ajout de filtres sur les listes adhérents (fonctionnalité présente de base dans Galette 0.7 et améliorée au fil du temps ; recherche avancée possible depuis Galette 0.7.3) et cotisations,
+* gestion de groupe et leur(s) administrateur(s) (fonctionnalité présente de base dans Galette 0.7.1),
 * modification de la fiche adhérent :
 
   * Création de groupes auxquels est associé un responsable (appelé référent) qui à des droits d'administration de son groupe. Pour les sportifs il s'agit de sections comme des classes d'age avec des entraîneurs mais on se rend vite compte que le besoin existe pour toutes les associations qu'elles soient sportives ou non.
-  * assignation à un (plusieurs ?) groupe,
-  * ajout d'un champ `référent`,
-  * informations de licence (nom, identifiant, date),
-  * catégorie,
-  * certificat médical (nom du médecin et date),
-  * enveloppe (??),
-  * participation vêtements.
+  * assignation à un (plusieurs ?) groupe (fonctionnalité présente de base dans Galette 0.7.1),
+  * ajout d'un champ `référent` (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),
+  * informations de licence (nom, identifiant, date) (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),
+  * catégorie (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),
+  * certificat médical (nom du médecin et date) (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),
+  * enveloppe (??) (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),
+  * participation vêtements (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques).
 
 .. note::
 
