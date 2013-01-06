@@ -10,12 +10,8 @@ Ce plugin vous apporte :
 Installation
 ============
 
-.. note::
-
-   Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <mapsdev_download>`.
-
-Dans un premier temps, vous devez récupérer le plugin. Aucune version stable n'existe pour le moment, il faudra donc soit :ref:`cloner le dépôt du plugin <mapsdev_download>` pour utiliser la dernière version de la branche `develop`, soit en récupérer un snapshot depuis le webgit :
-http://git.tuxfamily.org/galette/plugin-maps?p=galette/plugin-maps.git;a=shortlog;h=refs/heads/develop
+Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+http://download.tuxfamily.org/galette/plugins/galette-plugin-maps-0.0.2.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
@@ -25,7 +21,7 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{githash}` par 
 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
-   $ tar xjvf galette-plugin-maps-{githash}.tar.gz
+   $ tar xjvf galette-plugin-maps-{version}.tar.gz
 
 Initialisation de la base de données
 ====================================
