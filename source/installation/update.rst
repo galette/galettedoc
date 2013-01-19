@@ -10,7 +10,7 @@ Si vous utilisez actuellement une version antérieure de Galette, vous choisirez
 
    Une mise à jour n'est jamais une opération anodine, puisque vos données sont modifiées. En conséquence, prenez bien soin d'effectuer une **sauvegarde de votre base de données actuelle** ; sous peine de perdre tout ou partie de vos données.
 
-Dans un premier temps, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.7.3.1.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
+Dans un premier temps, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.7.3.2.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
 
 Certains fichiers et répertoires contiennent des données et devraient être réintégrés à la nouvelle installation :
 

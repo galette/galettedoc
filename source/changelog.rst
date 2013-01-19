@@ -6,6 +6,14 @@
 Changelog
 =========
 
+******************
+0.7.3.1 -> 0.7.3.2
+******************
+
+* Affichage des groupes gérés mais dont l'adhérent n'est pas membre (`#480 <http://redmine.ulysses.fr/issues/480>`_)
+* Le mot de passe était réinitialisé lors d ela modification d'une fiche (`#488 <http://redmine.ulysses.fr/issues/488>`_)
+* Ajout du type de paiement à l'insitialisation d'une contribution (`#486 <http://redmine.ulysses.fr/issues/486>`_)
+
 ****************
 0.7.3 -> 0.7.3.1
 ****************
