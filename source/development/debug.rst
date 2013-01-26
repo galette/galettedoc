@@ -11,13 +11,7 @@ Logs
 
 Galette écrit certaines choses dans des fichiers de log (un par jour) stockés dans le dossier ``galette/logs``. Toutefois, il est important de noter que certaines erreurs ne peuvent absolument pas passer dans ce log, et qu'elles ne se retrouveront que dans les logs PHP du système. Il est aussi possible que certains cas qui pourraient être gérés aient été « oubliés » :)
 
-Le niveau de verbosité de ces fichiers de log est fixé par défaut à ``INFO`` ; il est cependant possible de le modifier. Pour cela, dans le fichier ``galette/includes/galette.inc.php``, cherchez aux alentours de la ligne 131 :
-
-.. code-block:: php
-
-   $log = new KLogger(GALETTE_LOGS_PATH, KLogger::INFO, $logfile);
-
-Il suffira ici de remplacer ``KLogger::INFO`` par ``KLogger::DEBUG`` pour obtenir d'avantage d'informations dans les fichiers de logs.
+Le niveau de verbosité de ces fichiers de log est fixé par défaut à ``INFO`` ; il est cependant possible :ref:`modifier le niveau de log par défaut <behavior>`.
 
 .. note::
 
@@ -36,11 +30,20 @@ Une fois XHProf installé et fonctionnel sur votre poste, il faut dire à Galett
 
 L'activation de XHProf lancera le profilage de chaque page affichée, vous fournissant en retour un lien dans le fichier de log de Galette pour consulter le résultat du rapport.
 
+.. _galettemodes:
+
 Les modes
 =========
 
-Certains modes sont prédéfinis dans Galette, et sont réglables via la constante ``GALETTE_MODE`` du fichier ``galette/includes/galette.inc.php``. Cette directive peut prendre les valeurs suivantes :
+Certains modes sont prédéfinis dans Galette, et sont réglables via la constante ``GALETTE_MODE`` (voyez la :ref:`configuration du comportement de galette <behavior>`). Cette directive peut prendre les valeurs suivantes :
 
 * ``PROD`` : le mode fortement conseillé pour la production, les parties éventuellement instables du code, ou les fonctionnalités qui ne sont pas terminées ou qui ne fonctionnent pas ne sont pas accessibles. C'est le mode par défaut lors des releases, mais ça peut éventuellement changer dans le dépôt,
-* ``DEV`` : mode développement. Les parties instables/pas finies seront affichées. De plus, certains objets ne seront pas stockés en session, rendant l'exécution du code plus lente, mais c'est nécessaire pour pouvoir travailler sur certaines fonctionnalités,
-* ``DEMO`` : un mode démonstration qui fonctionne sur le modèle du mode ``PROD``, mais qui bride certaines fonctionnalités qui ne devraient pas être effectives dans une application de démonstration ; tels que la modification des identifiants du super admin, ou encore l'envoi de mails.
+* ``DEV`` : mode développement :
+
+  - les éventuelles parties instables/pas finies seront affichées,
+  - certains objets ne seront pas stockés en session (l'historique, et le logo à l'heure où j'écris ces lignes),
+  - le niveau de log par défaut sera défini à `DEBUG`,
+  - les news ne seront pas mises en cache (Twitter et Google+ seront intérrogés à chaque afichage du Bureau).
+
+* ``DEMO`` : un mode démonstration qui fonctionne sur le modèle du mode ``PROD``, mais qui bride certaines fonctionnalités qui ne devraient pas être effectives dans une application de démonstration ; tels que la modification des identifiants du super admin, ou encore l'envoi de mails,
+* ``TEST`` : mode réservé aux test unitaires.

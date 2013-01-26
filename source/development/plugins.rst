@@ -17,7 +17,7 @@ Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin inst
 * |folder| `plugins`
 
   * |folder| `Auto`
-  * |folder| `Sport`
+  * |folder| `Paypal`
   * |folder| `...`
 
 Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire, il est possible de choisir le thème désiré via les préférences de Galette. Le thème par défaut se nomme ``default``), et les classes dans un répertoire ``classes`` (tout comme dans Galette).
@@ -40,7 +40,7 @@ Les plugins officiels de galette sont fournis sous licence GPL version 3, tout c
     *
     * PHP version 5
     *
-    * Copyright © 2011 The Galette Team
+    * Copyright © 2013 The Galette Team
     *
     * This file is part of Galette (http://galette.tuxfamily.org).
     *
@@ -65,7 +65,7 @@ Les plugins officiels de galette sont fournis sous licence GPL version 3, tout c
     * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @version   SVN: $Id$
     * @link      http://galette.tuxfamily.org
-    * @since     Available since 0.7dev - 2011-06-28
+    * @since     Available since 0.7.4dev - 2013-01-26
     */
 
     [...]
@@ -298,6 +298,46 @@ Certains plugins requièrent la création de nouvelles tables dans la base de do
 
 Le respect de ces règles assure que le plugin sera pleinement pris en charge par l'interface de gestion des plugins de Galette,e t que l'utilisateur sera en mesure de « facilement » installer ou mettre à jour la base du plugin.
 
+Fichiers PHP
+============
+
+Rapidement pour un plugin, on aura besoin d'un (ou plusieurs) fichiers PHP, qui seront appelés par exemple depuis le menu.
+
+Galette devra être référencée dans chacun de ces fichiers, notamment avec la déclaration correcte de la variable `GALETTE_BASE_PATH`, de la façon suivante :
+
+.. code-block:: php
+
+   <?php
+   [...]
+   //définition de la constante obligatoire
+   define('GALETTE_BASE_PATH', '../../');
+   //inclusion du fichier principal de galette
+   require_once GALETTE_BASE_PATH . 'includes/galette.inc.php';
+
+Vous aurez ainsi accès à l'ensemble des possibilités et des objets de Galette, sans avoir à vous préoccuper d'inclure les chemins vers les classes, tout ceci étant géré par un autoloader (ce n'est malheureusement pas le cas pour les plugins actuellement, comme expliqué ci-dessous).
+
+Classes PHP
+===========
+
+Certains plugins pour les plus complexes auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et le namespace sont importants. Dans les plugins, ce n'est pas encore le cas, l'ancienne pratique de Galette est toujours d'actualité : les classes vont dans le dossier ``classes`` du plugin ; une classe `MonPlugin` se trouverait dans ``classes/monplugin.class.php``.
+
+Lorsque vous aurez besoin de cet objet dans un fichier PHP (voir paragraphe précédent), il faudra faire un `require_once` :
+
+.. code-block:: php
+
+   [...]
+   require_once 'classes/monplugin.php';
+
+Bibliothèques externes
+======================
+
+Les plugins, tout comme Galette, devraient par défaut chercher leurs bibliothèques externes dans le dossier ``includes`` du plugin. Il suffit en ce cas de prendre en exemple les fichiers suivants de Galette et de les placer dans le dossier ``config`` du plugin :
+
+* ``config/versions.inc.php``,
+* ``config/paths.inc.php`` (notamment l'inclusion du fichier ``local_paths.inc.php`` permettant l'utilisation d'autres versions ou de bibliothèques système).
+
+La convention dans Galette est que les dossiers des bibliothèques externes respectent la nomenclature ``{nom bibliothèque}-{version}``. Les bibliothèques externes ne devraient pas être inclues dans les sources du plugin, uniquement dans ses releases.
+
 Hiérarchie
 ==========
 
@@ -330,6 +370,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
     * |phpfile| `_config.inc.php`
     * |phpfile| `_define.php`
     * |phpfile| `_smarties.php`
+    * |file| `plugin.php`
     * |file| `...`
 
 Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.tuxfamily.org/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.tuxfamily.org/dc/index.php/pages/Contact#irc>`_ ;-)
