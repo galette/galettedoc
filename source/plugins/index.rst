@@ -22,7 +22,11 @@ Chaque plugin est en fait un simple dossier qui doit être placé dans le dossie
 * ``_define.php`` : ce fichier :ref:`déclare le plugin auprès de Galette <pluginsconfig>`, il est bien entendu requis,
 * ``_disabled`` : permet de désactiver simplement un plugin, sans avoir à le désinstaller. Il suffit ainsi de créer un fichier portant ce nom dans le dossier d'un plugin pour qu'il soit immédiatement désactivé :-)
 
-Les plugins actuellement disponibles pour Galette sont :
+*********************
+Plugins « officiels »
+*********************
+
+Les plugins « officiels » sont développés et/ou maintenus par l'équipe de développement de Galette. Les plugins actuellement disponibles pour Galette sont :
 
 .. toctree::
    :maxdepth: 2
@@ -33,6 +37,18 @@ Les plugins actuellement disponibles pour Galette sont :
    maps.rst
    auto.rst
    sport.rst
+
+*************
+Plugins tiers
+*************
+
+Les plugins tiers sont développés et/ou maintenus par des membres de la communauté.
+
+Mélissa a développé plusieurs plugins pour Galette :
+
+* `Aéroclub <https://galetteaeroclub.codeplex.com/>`_ (gestion de base d'un aéroclub),
+* QR Code (à venir),
+* Location d'objets (à venir).
 
 .. _plugins_managment:
 
