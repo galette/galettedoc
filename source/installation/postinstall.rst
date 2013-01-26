@@ -56,7 +56,7 @@ Chemins des bibliothèques
 -------------------------
 
 * `GALETTE_ZEND_PATH` : le chemin vers Zend_Db, Zend_Exception et Zend_Loader, les trois composants du framework Zend utilisés par Galette,
-* `GALETTE_ANALOG_PATH` : le chemin de la :ref:`bibliothèque Analog <analog>`,
+* `GALETTE_ANALOG_PATH` : le chemin de la :ref:`bibliothèque Analog <galettelog>`,
 * `GALETTE_PHP_MAILER_PATH` : le chemin vers la :ref:`bibliothèque PHPMailer <phpmailer>`,
 * `GALETTE_SMARTY_PATH` : le chemin vers la :ref:`bibliothèque Smarty <smarty>`.
 

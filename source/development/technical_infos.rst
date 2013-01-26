@@ -35,7 +35,7 @@ Bien que cette extension supporte un certain nombre de bases de données différ
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
-.. _analog:
+.. _galettelog:
 
 Analog
 ------
@@ -78,4 +78,14 @@ Envoi de courriels
 ------------------
 
 L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <http://phpmailer.worxware.com/>`_.
+
+.. _unittests:
+
+Tests unitaires
+---------------
+
+.. image:: ../_styles/static/images/libraries/atoum.png
+   :align: right
+
+Les quelques tests unitaires qui existent dans Galette sont exécutés via `le framework de test unitaire Atoum <http://atoum.org>`_.
 

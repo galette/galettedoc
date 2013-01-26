@@ -46,7 +46,7 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
   * |folder| `...`
 
-* |folder| `logs` : fichiers logs produits par :ref:`Analog <analog>`
+* |folder| `logs` : fichiers logs produits par :ref:`Analog <galettelog>`
 * |folder| `photos` : dossier de stockage des photos des membres
 * |folder| `plugins` : :ref:`dossier de stockage des plugins <plugins>`
 * |folder| `public` : pages publiques
@@ -136,6 +136,30 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
 Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de ducumentation qui la précède.
 
 Pour une meilleure compréhension du code pour l'ensemble des intervenants, on essaiera de documenter au maximum le code produit.
+
+.. _behavior:
+
+Configuration du comportement
+=============================
+
+Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :
+
+* `GALETTE_MODE` : `le mode de Galette <galettemodes>` ;
+* `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
+* `GALETTE_HANDLE_ERRORS` : permet à Galette de se charger de traiter certaines erreurs. Pratique pour remonter des informations sur les hébergements dédiés (bien que les erreurs fatales ne puissent être interceptées). `false` indique à Galette de ne pas se préoccuper des erreurs PHP qui se retrouveront alors dans les logs du système (``/var/log/httpd/error_log`` en ce qui me concerne) ;
+* `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ; 
+* `GALETTE_LOG_LVL` : niveau de log (>= 3)
+
+Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Voici par exemple celui que j'utilise :
+
+.. code-block:: php
+
+   <?php
+   define('GALETTE_MODE', 'DEV');
+   define('GALETTE_DISPLAY_ERRORS', false);
+   define('GALETTE_HANDLE_ERRORS', false);
+   define('GALETTE_SYS_LOG', true);
+   define('GALETTE_LOG_LVL', 10);
 
 Créer une release
 =================
