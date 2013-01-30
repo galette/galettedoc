@@ -109,6 +109,8 @@ Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la l
    :align: center
    :alt: Paramétrage des champs requis
 
+.. _emailing:
+
 E-Mailing
 =========
 
