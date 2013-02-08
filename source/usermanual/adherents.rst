@@ -97,18 +97,6 @@ Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes le
 
 Pour les premiers cas, le résultat obtenu est assez transparent, il n'est pas vraiment besoin de le détailler ici. Pour le dernier cas, l'ordonnancement sera appliqué par date de création, exemption de cotisation et date d'échéance.
 
-Paramétrage des champs obligatoires
-===================================
-
-Lors de la saisie ou de la modification de fiches adhérents, certains champs sont marqués comme étant requis. Bien entendu, cette sélection par défaut peut ne pas vous convenir, mais vous avez la possibilité de paramétrer ça facilement :-)
-
-Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis.
-
-.. image:: ../_styles/static/images/usermanual/required_fields.png
-   :scale: 50%
-   :align: center
-   :alt: Paramétrage des champs requis
-
 .. _emailing:
 
 E-Mailing
