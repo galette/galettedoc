@@ -25,3 +25,14 @@ Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant les deu
    SetEnv PHP_VER 5_TEST
    SetEnv MAGIC_QUOTES 0
 
+Ouvaton
+=======
+
+Un problème particulier se présente avec cet hébergement, dès la première étape de l'installation qui propose normalement les langues disponibles ; rien n'est affiché... Si vous êtes dans ce cas de figure, la procédure est simple : il suffit de créer un fichier ``galette/config/behavior.inc.php`` avec le contenu suivant :
+
+.. code-block:: php
+
+   <?php
+   define('GALETTE_HANDLE_ERRORS', false);
+   define('GALETTE_SYS_LOG', true);
+
