@@ -4,6 +4,19 @@
 Configurer les éléments
 ***********************
 
+Champs obligatoires et visibilité des champs
+============================================
+
+Lors de la saisie ou de la modification de fiches adhérents, certains champs sont marqués comme étant requis. Bien entendu, cette sélection par défaut peut ne pas vous convenir, mais vous avez la possibilité de paramétrer ça facilement :-)
+
+Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis. Vous pourrez également définir à l'aide de cette interface la visibilité des champs (visibleaffichés, cachés ou visibles uniquement par les administrateurs).
+
+.. image:: ../_styles/static/images/usermanual/fields_config.png
+   :scale: 50%
+   :align: center
+   :alt: Paramétrage des champs requis et de la visibilité des champs
+
+
 Ajouts de champs supplémentaires
 ================================
 
