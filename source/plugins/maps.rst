@@ -38,7 +38,7 @@ Configuration du plugin
 Lorsque le plugin est installé, un groupe `Cartes` est ajouté au menu, comprenant deux nouvelles entrées :
 
 * `Ma localisation` : cette page permet aux adhérents de définir leur localisation,
-* `Cartes` : les préférences du plugin, réservées aux membres du bureau et aux administrateurs.
+* `Cartes` : affichage des membres localisés et à jour de leur cotisation. Les administrateurs et membres du bureau verront tous les profils, alors que les simples membres et les visiteurs anonymes ne verront que les profils publics.
 
 Dans un premier temps, vos adhérents devront entrer leur localisation, via l'entrée adéquate du menu. Si la base de données des villes a été initialisée (référez-vous à l'initialisation de la base de données ci-dessus), et que l'adhérent a renseigné sa ville sur sa fiche, une liste de possibilités d'emplacements lui sera soumise.
 
