@@ -60,7 +60,7 @@ Galette est régulièrement testé avec des versions récentes de ces composants
    
    D'autres fonctionnalités apportées par PHP 5.3 sont utilisées dans Galette, il n'est plus possible d'assurer une compatiblité avec une version antérieure.
 
-   Enfin, depuis Galette 0.7.4, un nouveau système de stockage est utilisé, qui ne fonctionne qu'avec une version 5.3.7 ou supérieure.
+   Enfin, le système de stockage des mots de passe ne fonctionne qu'avec une version 5.3.7 ou supérieure.
 
 Table des matières
 ------------------
