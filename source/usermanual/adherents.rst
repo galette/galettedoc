@@ -39,9 +39,10 @@ La liste des adhérents vous donne accès à de nombreuses fonctions :
 * envoi de mailings,
 * génération d'étiquettes (PDF),
 * génération de listes d'émargement (PDF),
-* génération de cartes de membres (PDF).
+* génération de cartes de membres (PDF),
+* export CSV.
 
-Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements.
+Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements. Vous êtes encouragés à utiliser ces actions sur une sélection coinjointement avec le filtrage et le nombre d'enregisrements affichés par page.
 
 Filtrage
 ^^^^^^^^
@@ -96,6 +97,18 @@ Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes le
 * état de cotisation
 
 Pour les premiers cas, le résultat obtenu est assez transparent, il n'est pas vraiment besoin de le détailler ici. Pour le dernier cas, l'ordonnancement sera appliqué par date de création, exemption de cotisation et date d'échéance.
+
+Configuration des champs CSV
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs que ceux présents dans la liste affichée à l'écran. Il est possible de modifier ce comportement en spécifian vous même la liste des champs qui doivent être exportés ; dans le fichier ``galette/config/local_export_fields.inc.php``. Si par exemple, vous souhaitez n'exporter que l'identifiant, le nom et le prénom de l'adhérent, le contenu de ce fichier sera :
+
+.. code-block:: php
+
+   <?php
+   $fields = array(
+       'id_adh',, 'nom_adh', 'prenom_adh'
+   );
 
 .. _emailing:
 
