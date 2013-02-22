@@ -46,7 +46,8 @@ Sachez enfin que du côté des hébergeurs, si certains (que je ne nommerai pas 
 Galette 0.7 ne fonctionne pas sur les hébergements suivants :
 
 * Free (versions de PHP antédiluviennes),
-* Olympe Networks (en raisons de limitations PHP trop importantes, et de plantages de l'application)
+* Olympe Networks (en raisons de limitations PHP trop importantes, et de plantages de l'application),
+* lautre.net ne permet pas d'utiliser Galette 0.7.4, la version de PHP fournie (`5.3.3`) est plus ancienne que celle requise (`5.3.7`).
 
 Galette est régulièrement testé avec des versions récentes de ces composants, si vous rencontrez des difficultés avec une version particulière, n'hésitez pas à nous le faire savoir ;-)
 
