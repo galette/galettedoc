@@ -102,7 +102,7 @@ Compatibilité des plugins
 La compatibilité des plugins repose sur un système assez simple : Galette définit une version de compatibilité des plugins qui peut être la version courante, ou une version antérieure (si rien n'a changé du côté des plugins) ; et chaque plugin définit de son côté la version de Galette avec laquelle il est compatible.
 
 Côté Galette, la version de compatibilité est déclarée à l'aide de la constante `GALETTE_COMPAT_VERSION` dans le fichier ``galette/includes/galette.inc.php``.
-Côté plugin, la version de compatibilité est déclarée en quatrième position dans le fichier ``_define.php`` du plugin.
+Côté plugin, la version de compatibilité est déclarée en `pénultième <http://fr.wikipedia.org/wiki/P%C3%A9nulti%C3%A8me>`_ position dans le fichier ``_define.php`` du plugin.
 
 Smarty
 ======

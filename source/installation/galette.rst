@@ -80,16 +80,6 @@ Les commandes décrites ci dessus peuvent varier, référez vous aux documentati
 * `phpMyAdmin <http://www.phpmyadmin.net>`_ ou `MySQL Workbench <http://www.mysql.fr/downloads/workbench/>`_ pour MySQL ;
 * `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <http://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL.
 
-Cas particulier de Free
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Free n'autorise qu'une seule base de données dont les éléments sont les suivants :
-
-* hôte : ``sql.free.fr``,
-* utilisateur : ``jean.dupond`` (si l'adresse électronique de votre compte principal est `jean.dupond@free.fr`)
-* mot de passe : le mot de passe associé à votre compte principal,
-* nom de la base : ``jean_dupond`` (si votre login comprend un ``.``, le remplacer par un ``_`` (le caractère de soulignement, parfois également appelé « le trait du 8 »)
-
 Cas particulier de NFrance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
