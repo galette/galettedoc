@@ -6,12 +6,52 @@
 Changelog
 =========
 
+****************
+0.7.3.2 -> 0.7.4
+****************
+
+.. note::
+
+   Un très grand merci de nouveau à `Exsequenda, qui a de nouveau subventionné cette version <http://galette.tuxfamily.org/dc/index.php/post/2013/02/23/Galette-0.7.4-%3A-Exsequenda-re-subventionne-!>`_ :-)
+
+.. _bogues_074:
+
+Bogues corrigés
+===============
+
+* Suppression du statut non membre (`#455 <http://redmine.ulysses.fr/issues/455>`_)
+* Calcul de la date de fin d'adhésion erroné après suppression de toutes les contributions d'un membre (`#515 <http://redmine.ulysses.fr/issues/515>`_)
+* Suppression d'un adhérent impossible (`#520 <http://redmine.ulysses.fr/issues/520>`_)
+* Amélioration de l'interface de saisie des contributions si aucun adhérent n'existe (`#534 <http://redmine.ulysses.fr/issues/534>`_)
+* Les informations de l'utilisateur authentifié n'étaient pas accessibles pour les plugins (`#449 <http://redmine.ulysses.fr/issues/449>`_)
+* Les champs dynamiques n'étaient pas enregistrés lorsque l'adhérent d'inscrivait lui même (`#539 <http://redmine.ulysses.fr/issues/539>`_)
+* Le lien dans la courriel de perte de mot de passe utilisait invariablement le protocole HTTP (`#557 <http://redmine.ulysses.fr/issues/557>`_)
+* Récupération des champs requis lors de la mise à jour en 0.7.3 (`#523 <http://redmine.ulysses.fr/issues/523>`_)
+
+.. _ajouts_074:
+
+Nouveautés
+==========
+
+* Gestion des civilités (subventionné - `#174 <http://redmine.ulysses.fr/issues/174>`_)
+* Recherche des adhérents via leurs contributions (subventionné - `#498 <http://redmine.ulysses.fr/issues/498>`_)
+* Export CSV de la liste des membres filtrée (subventionné - `#501 <http://redmine.ulysses.fr/issues/501>`_)
+* Support SQLite (`#482 <http://redmine.ulysses.fr/issues/482>`_)
+* Sécurité du stockage des mot de passe accrue (`#487 <http://redmine.ulysses.fr/issues/487>`_)
+* Suppression des exports générés (`#271 <http://redmine.ulysses.fr/issues/271>`_)
+* Possibilité d'utiliser séparément les nom et prénom de l'adhérent dans les textes des courriels (`#312 <http://redmine.ulysses.fr/issues/312>`_)
+* Navigation entre les fiches en mode édition (`#456 <http://redmine.ulysses.fr/issues/456>`_)
+* Tri des listes de contributions et de transactions par ordre chronologique inversé (`#465 <http://redmine.ulysses.fr/issues/465>`_)
+* Génération de graphiques (`#157 <http://redmine.ulysses.fr/issues/157>`_)
+* Liste PDF des adhérents par groupes (`#484 <http://redmine.ulysses.fr/issues/484>`_)
+* Affichage des informations sur le status des cotisations de l'adhérent (`#545 <http://redmine.ulysses.fr/issues/545>`_)
+
 ******************
 0.7.3.1 -> 0.7.3.2
 ******************
 
 * Affichage des groupes gérés mais dont l'adhérent n'est pas membre (`#480 <http://redmine.ulysses.fr/issues/480>`_)
-* Le mot de passe était réinitialisé lors d ela modification d'une fiche (`#488 <http://redmine.ulysses.fr/issues/488>`_)
+* Le mot de passe était réinitialisé lors de la modification d'une fiche (`#488 <http://redmine.ulysses.fr/issues/488>`_)
 * Ajout du type de paiement à l'insitialisation d'une contribution (`#486 <http://redmine.ulysses.fr/issues/486>`_)
 
 ****************
