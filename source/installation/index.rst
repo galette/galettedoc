@@ -30,7 +30,7 @@ Pré-requis et hébergement
 Pour installer Galette, vous aurez besoin que les composants suivants soient installés  :
 
 * un serveur web Apache,
-* PHP en version 5.3.7 ou supérieure,
+* PHP en version 5.3.7 ou supérieure (ou php 5.3.3 avec patchs de sécurité appliqués, consultez la note ci-dessous),
 
   * le module PHP `gd`,
   * le module PHP `PDO` `mysql` ou `postgresql`,
@@ -46,8 +46,7 @@ Sachez enfin que du côté des hébergeurs, si certains (que je ne nommerai pas 
 Galette 0.7 ne fonctionne pas sur les hébergements suivants :
 
 * Free (versions de PHP antédiluviennes),
-* Olympe Networks (en raisons de limitations PHP trop importantes, et de plantages de l'application),
-* lautre.net ne permet pas d'utiliser Galette 0.7.4, la version de PHP fournie (`5.3.3`) est plus ancienne que celle requise (`5.3.7`).
+* Olympe Networks (en raisons de limitations PHP trop importantes, et de plantages de l'application).
 
 Galette est régulièrement testé avec des versions récentes de ces composants, si vous rencontrez des difficultés avec une version particulière, n'hésitez pas à nous le faire savoir ;-)
 
@@ -61,7 +60,15 @@ Galette est régulièrement testé avec des versions récentes de ces composants
    
    D'autres fonctionnalités apportées par PHP 5.3 sont utilisées dans Galette, il n'est plus possible d'assurer une compatiblité avec une version antérieure.
 
-   Enfin, le système de stockage des mots de passe ne fonctionne qu'avec une version 5.3.7 ou supérieure.
+.. _php537:
+
+.. note::
+
+   **PHP 5.3.7 ? Mais on ne me propose que du 5.3.3 !**
+
+   Le système de stockage des mots de passe ne fonctionne qu'avec une version 5.3.7 ou supérieure ; notamment en raison de la correction d'un bogue de sécurité dans cette version. Cependant, la majorité des distributions GNU/Linux serveur (RedHat, Debian, leurs dérivés, etc) fournissent actuellement une version 5.3.3 de PHP dans laquelle le correctif de sécurité adéquat a été appliqué.
+   
+   Vous pourres utiliser Galette si vous êtes dans ce cas de figure en modifiant la valeur de la constante `GALETTE_PHP_MIN` de `5.3.7` en `5.3.3` dans le ficheir ``galette/includes/galette.inc.php``
 
 Table des matières
 ------------------
