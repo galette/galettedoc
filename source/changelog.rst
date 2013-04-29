@@ -63,7 +63,7 @@ Nouveautés
 * Amélioration de la validation de la configuration des champs (`#475 <http://redmine.ulysses.fr/issues/475>`_)
 
 ****************
-0.7.2.3 -> 0.7.3
+0.7.2.9 -> 0.7.3
 ****************
 
 .. note::
