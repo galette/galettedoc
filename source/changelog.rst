@@ -7,6 +7,35 @@ Changelog
 =========
 
 ****************
+0.7.4 -> 0.7.4.1
+****************
+
+* Correction d'une erreur HTML sur le sélecteur de date de fin de contribution dans l'interface de recherche avancée (`#600 <http://redmine.ulysses.fr/issues/600>`_)
+* La liste des adhérents pour les rappels n'était plus filtrée (`#599 <http://redmine.ulysses.fr/issues/599>`_)
+* L'export de la liste des membres filtrée se limite aux champs de la table des adhérents
+* Correction d'erreurs sur les exports CSV de la liste des membres sous MySQL
+* Implémentation d'une méthode moins sécurisée de stockage des mots de passe pour les *vielles* versions de PHP (`#597 <http://redmine.ulysses.fr/issues/597>`_)
+* Les titres dans la tables des adhérents doivent être optionnels (merci à Raphaël)
+* Les modules PHP requis et manquants n'étaient pas affichés (`#598 <http://redmine.ulysses.fr/issues/598>`_)
+* Vérification de la présence du module PHP mcrypt à l'installation (`#596 <http://redmine.ulysses.fr/issues/596>`_)
+* Vérification du support de la méthode de stockage du mot de passe à l'installation
+* L'Affichage de la requête après une recherche avancée ne fonctionnait que si l'on obtenait des résultats
+* Erreur SQL sur certaines recherches avancées (merci à Raphaël)
+* Correction de bogues mineurs HTML dans la page des préférences
+* Lors de la mise à jour d'une base existante, les adhérents ayant pour titre mademoiselle se retrouvaient du troisième sexe (`#572 <http://redmine.ulysses.fr/issues/572>`_)
+* Problèmes de booléens false sous PostgreSQL
+* Les mailings en cours n'étaient plus détectés (`#591 <http://redmine.ulysses.fr/issues/591>`_)
+* Modification du séparateur CSV par défaut (le défaut est désormais le point-virgule ; Excel n'aime pas les virgules apparemment...)
+* L'export CSV de la liste filtrée ne prenait pas compte du filtre (`#584 <http://redmine.ulysses.fr/issues/584>`_)
+* Le chemin de téléchargement suite à un export était incorrect (`#589 <http://redmine.ulysses.fr/issues/589>`_)
+* Ré-écriture des procédures de vérification et de réinitialisation de la configuration des champs (`#577 <http://redmine.ulysses.fr/issues/577>`_)
+* Suppression du bouton pour enlever les titres fixes (`#570 <http://redmine.ulysses.fr/issues/570>`_)
+* Type de colonne incorrect pour la visiblité des champs sous PostgreSQL (`#577 <http://redmine.ulysses.fr/issues/577>`_)
+* Certains champs étaient requis, mais désactivés (`#571 <http://redmine.ulysses.fr/issues/571>`_)
+* Problèmes SQL lors de l'installation sous MySQL (`#575 <http://redmine.ulysses.fr/issues/575>`_)
+* Les versions longues des titres étaient incorrectes sous MySQL (`#569 <http://redmine.ulysses.fr/issues/569>`_)
+
+****************
 0.7.3.2 -> 0.7.4
 ****************
 
@@ -52,7 +81,7 @@ Nouveautés
 
 * Affichage des groupes gérés mais dont l'adhérent n'est pas membre (`#480 <http://redmine.ulysses.fr/issues/480>`_)
 * Le mot de passe était réinitialisé lors de la modification d'une fiche (`#488 <http://redmine.ulysses.fr/issues/488>`_)
-* Ajout du type de paiement à l'insitialisation d'une contribution (`#486 <http://redmine.ulysses.fr/issues/486>`_)
+* Ajout du type de paiement à l'initialisation d'une contribution (`#486 <http://redmine.ulysses.fr/issues/486>`_)
 
 ****************
 0.7.3 -> 0.7.3.1
@@ -63,7 +92,7 @@ Nouveautés
 * Amélioration de la validation de la configuration des champs (`#475 <http://redmine.ulysses.fr/issues/475>`_)
 
 ****************
-0.7.2.3 -> 0.7.3
+0.7.2.9 -> 0.7.3
 ****************
 
 .. note::
