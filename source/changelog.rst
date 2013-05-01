@@ -10,6 +10,7 @@ Changelog
 0.7.4 -> 0.7.4.1
 ****************
 
+* Taille incorrecte du mot de passe temporaire (`#587 <http://redmine.ulysses.fr/issues/587>`_)
 * Correction d'une erreur HTML sur le sélecteur de date de fin de contribution dans l'interface de recherche avancée (`#600 <http://redmine.ulysses.fr/issues/600>`_)
 * La liste des adhérents pour les rappels n'était plus filtrée (`#599 <http://redmine.ulysses.fr/issues/599>`_)
 * L'export de la liste des membres filtrée se limite aux champs de la table des adhérents
