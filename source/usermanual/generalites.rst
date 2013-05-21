@@ -18,7 +18,7 @@ On distingue plusieurs niveaux de droits dans Galette, permettant l'accès à di
 
 Les membres du bureau, les administrateurs et le super administrateur peuvent créer ou modifier des adhérents, des cotisations, des transactions, effectuer des E-Mailings, ...
 
-Les administrateurs ont accès en plus à la configuration de l'application, à l'exception des informations de connexion du super administrateur. Par défaut, à la connexion, les administrateurs accèdent à un tableau de bord, sur lequel les dernières nouvelles de `Galette sur Twitter <http://twitter.com/galette>`_ et de la `page Google+ de Galette <https://plus.google.com/116977415489200387309>`_ sont affichées.
+Les administrateurs ont accès en plus à la configuration de l'application, à l'exception des informations de connexion du super administrateur. Par défaut, à la connexion, les administrateurs accèdent à un tableau de bord, sur lequel les dernières nouvelles de `Galette sur Twitter <http://twitter.com/galette_soft>`_ et de la `page Google+ de Galette <https://plus.google.com/116977415489200387309>`_ sont affichées.
 
 Le super administrateur a accès à l'intégralité de l'application ; mais pas forcément à toutes les fonctionnalités. En effet, il ne s'agit pas d'un adhérent, il peut ne pas posséder certaines informations nécessaires. Il peut bien entendu modifier les informations de connexion le concernant, depuis les préférences de l'application.
 
