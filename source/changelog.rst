@@ -5,6 +5,13 @@
 =========
 Changelog
 =========
+******************
+0.7.4.1 -> 0.7.4.2
+******************
+
+* Les titres, status, dates et genres apparaissent désormais en texte plutôt que par leurs identifiants  (`#611 <http://redmine.ulysses.fr/issues/611>`_)
+* La pagination de la liste publique des membres était cassée  (`#603 <http://redmine.ulysses.fr/issues/603>`_)
+* Correction d'un problème de recherche avancée sur les dates de fin de contribution (`#601 <http://redmine.ulysses.fr/issues/601>`_)
 
 ****************
 0.7.4 -> 0.7.4.1
