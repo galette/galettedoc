@@ -5,6 +5,16 @@
 =========
 Changelog
 =========
+
+******************
+0.7.4.2 -> 0.7.4.3
+******************
+
+* Le type de contribution n'était pas correctement sélectionné dans la seconde étape (`#618 <http://redmine.ulysses.fr/issues/618>`_)
+* La recherche avancée dans plusieurs champs dynamiques de type choix provoquait une erreur (`#619 <http://redmine.ulysses.fr/issues/619>`_)
+* Vérification de l'existance de la langue lors du chargement de textes (`#621 <http://redmine.ulysses.fr/issues/621>`_)
+* Le contributions qui se chevauchent ne doivent pas être enregistrées (`#622 <http://redmine.ulysses.fr/issues/622>`_)
+
 ******************
 0.7.4.1 -> 0.7.4.2
 ******************
