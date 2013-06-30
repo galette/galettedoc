@@ -7,6 +7,16 @@ Changelog
 =========
 
 ******************
+0.7.4.3 -> 0.7.4.4
+******************
+
+* Attribution de groupes impossible depuis la fiche adhérent (`#625 <http://redmine.ulysses.fr/issues/625>`_)
+* Amélioration de la feuille CSS pour l'impression (`#631 <http://redmine.ulysses.fr/issues/631>`_)
+* De multiples messages étaient affichés lorsque l'on cliquait sur le bouton supprimer sans avoir sélectionné d'adhérents (`#627 <http://redmine.ulysses.fr/issues/627>`_)
+* Désactivation de la carte adhérents pour les membres qui ne sont pas à jour de cotisation (`#546 <http://redmine.ulysses.fr/issues/546>`_)
+* Utilisation de la chaîne non traduite lors de l'édition des types de contributions (`#630 <http://redmine.ulysses.fr/issues/630>`_)
+
+******************
 0.7.4.2 -> 0.7.4.3
 ******************
 
