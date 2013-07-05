@@ -7,6 +7,13 @@ Changelog
 =========
 
 ******************
+0.7.4.4 -> 0.7.4.5
+******************
+
+* La suppression d'un adhérent se faisait sans confirmation (`#638 <http://redmine.ulysses.fr/issues/638>`_)
+* Mise à jour des biliothèques tierces dans leurs dernières versions
+
+******************
 0.7.4.3 -> 0.7.4.4
 ******************
 
