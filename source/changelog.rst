@@ -6,6 +6,39 @@
 Changelog
 =========
 
+****************
+0.7.4.5 -> 0.7.5
+****************
+
+.. note::
+
+   Un très grand merci à `Debian France <http://france.debian.net>`_, qui a `subventionné cette version <http://galette.tuxfamily.org>`_ :-)
+
+.. _bogues_075:
+
+Bogues corrigés
+===============
+
+* Les tables vides étaient exportées, mais ne pouvaient pas être récupérées ou supprimées (`#628 <http://redmine.ulysses.fr/issues/628>`_)
+* Traduction manquante dans l'historique lors d ela suppression de contributions (`#644 <http://redmine.ulysses.fr/issues/644>`_)
+
+.. _ajouts_075:
+
+Nouveautés
+==========
+
+* Modèles de courriels de rappel d'échéance (`#376 <http://redmine.ulysses.fr/issues/376>`_)
+* Envoi automatique de courriels de rappel d'échéance de cotisation (`#368 <http://redmine.ulysses.fr/issues/368>`_)
+* Automatisation (via cron) des rappels d'échéance (`#377 <http://redmine.ulysses.fr/issues/377>`_)
+* Édition de factures et de reçus, avec possibilité de personnaliser les modèles (`#394 <http://redmine.ulysses.fr/issues/394>`_)
+* Appel d'un script après l'enregistrement d'une nouvelle contribution (pour un enregistrement en comptabilité par exemple - `#490 <http://redmine.ulysses.fr/issues/490>`_)
+* L'envoi de courriels comporte toujours un destinataire (pour éviter d'être bloqué par certains système de listes de diffusion par exemple - `#595 <http://redmine.ulysses.fr/issues/595>`_)
+* Ajout des montants et types de contribution sur les courriels automatiques (`#620 <http://redmine.ulysses.fr/issues/620>`_)
+* Ajout de champs dynamiques de type date (`#191 <http://redmine.ulysses.fr/issues/191>`_) - Merci à Guillaume R. !
+* Ajout de champs dynamiques de type booléen (`#624 <http://redmine.ulysses.fr/issues/624>`_) - Merci à Guillaume R. !
+* Possibilité de surcharger la feuille CSS d'impression (`#634 <http://redmine.ulysses.fr/issues/634>`_)
+* Suppression des nouvelles Twitter et Google+ sur le tableau de bord
+
 ******************
 0.7.4.4 -> 0.7.4.5
 ******************
