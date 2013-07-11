@@ -10,7 +10,7 @@ Zac fait un chèque pour régler sa cotisation, celles de Marc et Julie, et auss
 
 Autre exemple : Pierre règle seulement son adhésion ; sa transaction ne contient que sa seule contribution, il n'y a pas de ventilation à faire.
 
-Si Pierre, Zac, Julie ou Marc sont en retard, vous pouvez toujours leur :ref:`envoyer un rappel <emailing>` :p
+Si Pierre, Zac, Julie ou Marc sont en retard, vous pouvez toujours leur :ref:`envoyer un rappel <reminders>` :p
 
 Les contributions
 =================
@@ -26,6 +26,8 @@ Les différents types de contributions sont entièrement paramétrables. On dist
 * celles qui n'amènent pas d'extention d'adhésion, comme les dons.
 
 L'interface de gestion des types de contributions vous permet de définir un libellé, et si oui ou non ce type étend l'adhésion.
+
+.. _reminders:
 
 Rappels
 ^^^^^^^
@@ -53,6 +55,13 @@ Enfin, il est possible d'automatiser les rappels de cotisation via une tâche cr
 .. code-block:: bash
 
    30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/reminder.php
+
+Factures et reçus
+^^^^^^^^^^^^^^^^^
+
+Depuis la liste des contributions, vous pourrez constater la présence d'une icône PDF permettant la génération de factures ou de reçus pour la contribution souhaitée.
+
+Ces générations font appel au système de :ref:`modèles PDF <pdf_models>`.
 
 Les Transactions
 ================

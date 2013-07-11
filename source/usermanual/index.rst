@@ -32,6 +32,7 @@ Table des matières
    adherents.rst
    contributions.rst
    configuration.rst
+   pdf_models.rst
    preferences.rst
    avancee.rst
 
