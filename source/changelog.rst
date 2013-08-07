@@ -20,7 +20,7 @@ Bogues corrigés
 ===============
 
 * Les tables vides étaient exportées, mais ne pouvaient pas être récupérées ou supprimées (`#628 <http://redmine.ulysses.fr/issues/628>`_)
-* Traduction manquante dans l'historique lors d ela suppression de contributions (`#644 <http://redmine.ulysses.fr/issues/644>`_)
+* Traduction manquante dans l'historique lors de la suppression de contributions (`#644 <http://redmine.ulysses.fr/issues/644>`_)
 
 .. _ajouts_075:
 
