@@ -12,7 +12,7 @@ Changelog
 
 .. note::
 
-   Un très grand merci à `Debian France <http://france.debian.net>`_, qui a `subventionné cette version <http://galette.tuxfamily.org>`_ :-)
+   Un très grand merci à `Debian France <http://france.debian.net>`_, qui a `subventionné cette version <http://galette.tuxfamily.org/dc/index.php/post/2013/08/17/Galette-0.7.5-:-subventionn%C3%A9e-par-Debian-France>`_ :-)
 
 .. _bogues_075:
 
