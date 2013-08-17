@@ -26,7 +26,7 @@ Zend DB
 .. image:: ../_styles/static/images/libraries/zend.gif
    :align: right
 
-*Version de la bibliothèque requise :* `1.12.1`
+*Version de la bibliothèque requise :* `1.12.3`
 
 L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/fr/zend.db.html>`_.
 
@@ -53,7 +53,7 @@ password_compat
 
 .. versionadded:: 0.7.4
 
-*Version de la bibliothèque requise :* `1.0.0`
+*Version de la bibliothèque requise :* `1.0.3`
 
 Pour le stockage des mots de passe. Cette bibliothèque n'est pas nécessaire si vous utilisez PHP 5.4 ou utlérieur, elle requiert PHP 5.3.7 minimum (:ref:`voir la note à ce propos... <php537>`).
 
@@ -62,7 +62,7 @@ Pour le stockage des mots de passe. Cette bibliothèque n'est pas nécessaire si
 Smarty
 ------
 
-*Version de la bibliothèque requise :* `3.1.12`
+*Version de la bibliothèque requise :* `3.1.14`
 
 Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format XHTML.
 
@@ -74,7 +74,7 @@ TCPDF
 .. image:: ../_styles/static/images/libraries/tcpdf.png
    :align: right
 
-*Version de la bibliothèque requise :* `5.9.202`
+*Version de la bibliothèque requise :* `6.0.020`
 
 L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <http://www.tcpdf.org/>`_.
 
@@ -86,7 +86,7 @@ Interface utilisateur
 .. image:: ../_styles/static/images/libraries/jquery.png
    :align: right
 
-*Version de la bibliothèque requise :* `1.6.2` (JQuery), `1.8.14` (UI), 1.1.12 (Markitup)
+*Version de la bibliothèque requise :* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)
 
 Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expérience de ce dernier, nous avons choisi de faire appel à un framework Javascript. `JQuery <http://jquery.com>`_ a été retenu, ainsi que certains de ses plugins, notamment :
 
@@ -98,7 +98,7 @@ Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expér
 Envoi de courriels
 ------------------
 
-*Version de la bibliothèque requise :* `5.2.2`
+*Version de la bibliothèque requise :* `5.2.6`
 
 L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <http://phpmailer.worxware.com/>`_.
 
