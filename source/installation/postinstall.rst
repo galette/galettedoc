@@ -71,8 +71,9 @@ Les chemins de Galette doivent pour la plupart impérativement être accessibles
 * `GALETTE_COMPILE_DIR` : le chemin de compilation des templates Smarty, que vous pouvez également adapter sans scrupules,
 * `GALETTE_CACHE_DIR` : le chemin de cache, qui n'est actuellement utilisé que lors de la génération de PDF,
 * `GALETTE_PLUGINS_PATH` : le chemin des plugins de galette (attention, cela ne fonctionnera peut-être pas en fonction des plugins !! Cette possibilité reste en cours de développement),
-* `GALETTE_EXPORTS_PATH` : le chemin de stockage des exports CSV
-* `GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos.
+* `GALETTE_EXPORTS_PATH` : le chemin de stockage des exports CSV,
+* `GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos,
+* `GALETTE_SQLITE_PATH` : le chemin de la base SQLite, si vous souhaitez utiliser ce moteur de base de données.
 
 Sécurité des données saisies
 ============================
