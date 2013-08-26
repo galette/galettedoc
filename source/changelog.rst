@@ -7,6 +7,19 @@ Changelog
 =========
 
 ****************
+0.7.5 -> 0.7.5.1
+****************
+
+* Correction d'una page blanche à l'export PDF des groupes (`#676 <http://redmine.ulysses.fr/issues/676>`_)
+* Correction du script de mise à jour MySQL (`#678 <http://redmine.ulysses.fr/issues/678>`_)
+* Correction du chemin de l'interpréteur dans le script de test post contribution
+* Typos
+* Le sujet des textes était trop court dans l'interface
+* Correction de notices PHP au lancement du script cron
+* Amélioration des données JSON du script post contribution (`#682 <http://redmine.ulysses.fr/issues/682>`_)
+* Correction du script d'installation SQLite
+
+****************
 0.7.4.5 -> 0.7.5
 ****************
 
