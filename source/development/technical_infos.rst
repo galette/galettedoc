@@ -33,7 +33,7 @@ L'accès aux bases de données sera désormais assuré par `l'extension de gesti
 Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'a été testé avec succès qu'avec :
 
 * `MySQL <http://mysql.com/>`_ version 5.x (le support InnoDB est requis),
-* `PostgreSQL <http://www.postgresql.org/>`_ 8.x ou 9.x.
+* `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente.
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
