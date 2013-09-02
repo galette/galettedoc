@@ -107,7 +107,7 @@ Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs
 
    <?php
    $fields = array(
-       'id_adh',, 'nom_adh', 'prenom_adh'
+       'id_adh', 'nom_adh', 'prenom_adh'
    );
 
 .. _emailing:
