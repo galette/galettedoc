@@ -96,7 +96,7 @@ Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes le
 * statut,
 * état de cotisation
 
-Pour les premiers cas, le résultat obtenu est assez transparent, il n'est pas vraiment besoin de le détailler ici. Pour le dernier cas, l'ordonnancement sera appliqué par date de création, exemption de cotisation et date d'échéance.
+Dans les deux premiers cas (`nom` et `pseudo`), le résultat obtenu est assez transparent. En ce qui concerne le tri par `statut`, il est effectué sur la priorité des statuts. Enfin, l'ordonnancement par `état de cotisation` sera appliqué par date de création, exemption de cotisation et date d'échéance.
 
 Configuration des champs CSV
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
