@@ -30,7 +30,7 @@ Pré-requis et hébergement
 Pour installer Galette, vous aurez besoin que les composants suivants soient installés  :
 
 * un serveur web Apache,
-* PHP en version 5.4 ou supérieure,
+* PHP en version 5.3.7 ou supérieure (ou php 5.3.3 avec patchs de sécurité appliqués, consultez la note ci-dessous),
 
   * le module PHP `gd`,
   * le module PHP `PDO` `mysql` ou `postgresql`,
@@ -39,9 +39,9 @@ Pour installer Galette, vous aurez besoin que les composants suivants soient ins
   * le module PHP `tidy` (optionnel, mais recommandé),
   * le module PHP `gettext` (optionnel).
 
-* un serveur `MySQL <http://mysql.com>`_ 5.5 ou `PostgreSQL <http://postgresql.org>`_ 9.1.
+* un serveur `MySQL <http://mysql.com>`_ ou `PostgreSQL <http://postgresql.org>`_.
 
-Sachez enfin que du côté des hébergeurs, si certains (que je ne nommerai pas :p) ne fournissent pas PHP 5.4 (loin s'en faut !) ; c'est désormais disponible sur bon nombre d'hébergement et de systèmes d'exploitation. Il reste aussi toujours la solution de l'auto-hébergement que je vous laisse la joie de découvrir ;-)
+Sachez enfin que du côté des hébergeurs, si certains (que je ne nommerai pas :p) ne fournissent pas PHP 5.3 (loin s'en faut !) ; c'est désormais disponible sur la plupart des hébergement « professionnels » (`OVH <http://ovh.com>`_, etc.), et que des hébergeurs gratuits tels que `LegTux <http://legtux.org/>`_, `KegTux <http://www.kegtux.org/>`_, `Kind Hosting <http://www.kind-hosting.fr/>`_ (un grand bravo à eux :-)). Il reste aussi toujours la solution de l'auto-hébergement que je vous laisse la joie de découvrir ;-)
 
 Galette 0.7 ne fonctionne pas sur les hébergements suivants :
 
@@ -49,6 +49,26 @@ Galette 0.7 ne fonctionne pas sur les hébergements suivants :
 * Olympe Networks (en raisons de limitations PHP trop importantes, et de plantages de l'application).
 
 Galette est régulièrement testé avec des versions récentes de ces composants, si vous rencontrez des difficultés avec une version particulière, n'hésitez pas à nous le faire savoir ;-)
+
+.. _php53:
+
+.. note::
+
+   **Pourquoi Galette 0.7 n'est compatible qu'avec PHP 5.3.7 ou supérieur ?**
+
+   `PHP 5.2 n'est plus maintenu depuis décembre 2010 <http://www.php.net/releases/5_2_16.php>`_. De plus, `PHP 5.3 apporte des fonctions de date et heure (et de calcul sur des date et heure) <http://fr.php.net/manual/fr/book.datetime.php>`_ très intéressantes et aisées à mettre en place qui sont utilisées dans le code actuel de Galette.
+   
+   D'autres fonctionnalités apportées par PHP 5.3 sont utilisées dans Galette, il n'est plus possible d'assurer une compatiblité avec une version antérieure.
+
+.. _php537:
+
+.. note::
+
+   **PHP 5.3.7 ? Mais on ne me propose que du 5.3.3 !**
+
+   Le système de stockage des mots de passe ne fonctionne qu'avec une version 5.3.7 ou supérieure ; notamment en raison de la correction d'un bogue de sécurité dans cette version. Cependant, la majorité des distributions GNU/Linux serveur (RedHat, Debian, leurs dérivés, etc) fournissent actuellement une version 5.3.3 de PHP dans laquelle le correctif de sécurité adéquat a été appliqué.
+   
+   Vous pourres utiliser Galette si vous êtes dans ce cas de figure en modifiant la valeur de la constante `GALETTE_PHP_MIN` de `5.3.7` en `5.3.3` dans le ficheir ``galette/includes/galette.inc.php``
 
 Table des matières
 ------------------

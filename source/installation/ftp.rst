@@ -18,11 +18,12 @@ Cas particuliers
 OVH
 ===
 
-Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant la ligne suivante qui va activer le support PHP 5.4 :
+Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant les deux lignes suivantes qui vont respectivement activer le support PHP 5.3, et désactiver la fonctionnalité « guillemets magiques » (qui n'ont de magique que le nom... :-D) :
 
 .. code-block:: apacheconf
 
-   SetEnv PHP_VER 5_4
+   SetEnv PHP_VER 5_TEST
+   SetEnv MAGIC_QUOTES 0
 
 Ouvaton
 =======
