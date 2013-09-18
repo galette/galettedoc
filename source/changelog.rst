@@ -6,6 +6,23 @@
 Changelog
 =========
 
+******************
+0.7.5.2 -> 0.7.5.3
+******************
+
+* Le bouton d'ajout de membres ou de responsables à un groupe avait disparu (`#707 <http://redmine.ulysses.fr/issues/707>`_)
+* Un membre appartenant à plusieurs sous groupes d'un même parent était affiché plusieurs fois si l'on cherchait le groupe parent (`#687 <http://redmine.ulysses.fr/issues/687>`_)
+* Les responsables de groupes ne pouvaient éditer la fiche d'un membre (`#686 <http://redmine.ulysses.fr/issues/686>`_)
+* Les responsables de groupes ne pouvaient visualiser la photo d'un membre
+
+******************
+0.7.5.1 -> 0.7.5.2
+******************
+
+* Correction d'un problème Javascript lors de l'ajout des champs dynamiques aux contributions ou aux transactions
+* Ajout du login au remplacement possibles dans les rappels
+* Correction de la license de deux fichiers utilisés par les traductions
+
 ****************
 0.7.5 -> 0.7.5.1
 ****************
