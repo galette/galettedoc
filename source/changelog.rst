@@ -10,6 +10,18 @@ Changelog
 0.7.5.2 -> 0.7.5.3
 ******************
 
+* Restriction de l'affichage des dossiers `tempimages` et `templates_c` depuis le serveur web
+* Une contrainte en base Postgres qui n'éxistait pas était supprimée (`#681 <http://redmine.ulysses.fr/issues/681>`_)
+* Correction d'une anomalie sur le filtrage par groupe des responsables de groupes (`#712 <http://redmine.ulysses.fr/issues/712>`_)
+* Restriction des boutons de gestion des membres et responsables de groupes, ainsi que le bouton de création de nouveaux groupes aux administrateurs et membres du bureau (`#709 <http://redmine.ulysses.fr/issues/709>`_)
+* Correction de divers problèmes relatifs aux droits des responsables de groupes (`#686 <http://redmine.ulysses.fr/issues/686>`_, `#499 <http://redmine.ulysses.fr/issues/499>`_)
+* Correction d'une inversion causant un bogue dans les champs dynamiques
+* La résolution de `l'anomalie #687  <http://redmine.ulysses.fr/issues/687>`_ bloquait la liste des membres sous PostgreSQL et a été supprimée
+
+******************
+0.7.5.2 -> 0.7.5.3
+******************
+
 * Le bouton d'ajout de membres ou de responsables à un groupe avait disparu (`#707 <http://redmine.ulysses.fr/issues/707>`_)
 * Un membre appartenant à plusieurs sous groupes d'un même parent était affiché plusieurs fois si l'on cherchait le groupe parent (`#687 <http://redmine.ulysses.fr/issues/687>`_)
 * Les responsables de groupes ne pouvaient éditer la fiche d'un membre (`#686 <http://redmine.ulysses.fr/issues/686>`_)
