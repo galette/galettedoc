@@ -7,7 +7,13 @@ Changelog
 =========
 
 ******************
-0.7.5.2 -> 0.7.5.3
+0.7.5.4 -> 0.7.5.5
+******************
+
+* Le super administrateur ne pouvait plus modifier certains champs (`#721 <http://redmine.ulysses.fr/issues/721>`_)
+
+******************
+0.7.5.3 -> 0.7.5.4
 ******************
 
 * Restriction de l'affichage des dossiers `tempimages` et `templates_c` depuis le serveur web
