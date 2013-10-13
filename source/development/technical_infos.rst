@@ -16,7 +16,7 @@ Le schéma de la base de données utilisée par Galette 0.7 est disponible sur `
 Bibliothèques utilisées
 =======================
 
-L'ensemble des `bibliothèques externes utilisées dans la version de développement de Galette <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ est didsponible sous forme d'une archive sur l'espace de téléchargement.
+L'ensemble des `bibliothèques externes utilisées dans la version de développement de Galette <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ est disponible sous forme d'une archive sur l'espace de téléchargement.
 
 .. _zend_db:
 
