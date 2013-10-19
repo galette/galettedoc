@@ -6,6 +6,23 @@
 Changelog
 =========
 
+****************
+0.7.5.5 -> 0.7.6
+****************
+
+.. note::
+
+   Un très grand merci à Loïs Taullelle, qui a `subventionné cette Galette 0.7.6 <http://galette.tuxfamily.org/dc/index.php/post/2013/10/19/Galette-0.7.6-:-subventionn%C3%A9e-par-Loïs>`_ :-)
+
+* Imports CSV (`#176 <http://redmine.ulysses.fr/issues/176>`_)
+* Filtrage des non membres (`#677 <http://redmine.ulysses.fr/issues/677>`_)
+* PostgreSQL est désormais requis en version 9.1 au minimum (`#693 <http://redmine.ulysses.fr/issues/693>`_)
+* Suppression de la méthode de stockage des mots de passe pour les *vieilles* versions de PHP (`#694 <http://redmine.ulysses.fr/issues/694>`_)
+* Le décompte des jours n'est plus affiché pour les comptes désactivés (`#716 <http://redmine.ulysses.fr/issues/716>`_)
+* Correction d'une incohérence lors de la vérification de l'unicité des champs dynamiques (`#642 <http://redmine.ulysses.fr/issues/642>`_)
+* Un échec  (voulu ou non) lors de la tentative de suppression d'un membre ne donnait pas lieu à un message dans l'interface (`#680 <http://redmine.ulysses.fr/issues/680>`_)
+* L'activation du bouton de création de la carte de membre se basait sur l'état des cotisations de l'adhérent connecté, et non celui consulté (`#725 <http://redmine.ulysses.fr/issues/725>`_)
+
 ******************
 0.7.5.4 -> 0.7.5.5
 ******************
