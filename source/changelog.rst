@@ -12,7 +12,7 @@ Changelog
 
 .. note::
 
-   Un très grand merci à Loïs Taullelle, qui a `subventionné cette Galette 0.7.6 <http://galette.tuxfamily.org/dc/index.php/post/2013/10/19/Galette-0.7.6-:-subventionn%C3%A9e-par-Loïs>`_ :-)
+   Un très grand merci à Loïs Taulelle, qui a `subventionné cette Galette 0.7.6 <http://galette.tuxfamily.org/dc/index.php/post/2013/10/19/Galette-0.7.6-:-subventionn%C3%A9e-par-Loïs>`_ :-)
 
 * Imports CSV (`#176 <http://redmine.ulysses.fr/issues/176>`_)
 * Filtrage des non membres (`#677 <http://redmine.ulysses.fr/issues/677>`_)
