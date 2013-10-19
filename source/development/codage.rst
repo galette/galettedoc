@@ -149,7 +149,6 @@ Il est possible de définir certains comportements de galette, qui interviennent
 * `GALETTE_HANDLE_ERRORS` : permet à Galette de se charger de traiter certaines erreurs. Pratique pour remonter des informations sur les hébergements dédiés (bien que les erreurs fatales ne puissent être interceptées). `false` indique à Galette de ne pas se préoccuper des erreurs PHP qui se retrouveront alors dans les logs du système (``/var/log/httpd/error_log`` en ce qui me concerne) ;
 * `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ; 
 * `GALETTE_LOG_LVL` : niveau de log (>= 3) ;
-* `GALETTE_UNSECURE_PASSWORDS` : `true` pour activer le stockage avec l'ancienne méthode (moins sécurisé, fortement déconseillé). Cette option ne devrait être activée que pour les hébergeurs ne proposant que PHP 5.3.3 avec la distribution Debian Squeeze.
 
 Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Voici par exemple celui que j'utilise :
 

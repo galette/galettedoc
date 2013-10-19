@@ -96,7 +96,7 @@ Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes le
 * statut,
 * état de cotisation
 
-Pour les premiers cas, le résultat obtenu est assez transparent, il n'est pas vraiment besoin de le détailler ici. Pour le dernier cas, l'ordonnancement sera appliqué par date de création, exemption de cotisation et date d'échéance.
+Dans les deux premiers cas (`nom` et `pseudo`), le résultat obtenu est assez transparent. En ce qui concerne le tri par `statut`, il est effectué sur la priorité des statuts. Enfin, l'ordonnancement par `état de cotisation` sera appliqué par date de création, exemption de cotisation et date d'échéance.
 
 Configuration des champs CSV
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,7 +107,7 @@ Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs
 
    <?php
    $fields = array(
-       'id_adh',, 'nom_adh', 'prenom_adh'
+       'id_adh', 'nom_adh', 'prenom_adh'
    );
 
 .. _emailing:
@@ -141,4 +141,57 @@ Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre
 Tout E-Mailing commencé sera automatiquement enregistré dans la session pour être repris par la suite. Une icône dans le titre des différentes pages vous informera qu'un E-Mailing a été débuté, et vous permettra d'y accéder.
 
 Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`, il sera alors effacé de la session.
+
+Imports CSV
+===========
+
+Un import CSV des adhérents selon un modèle prédéfini est possible. Un modèle d'import par défaut vous est proposé, mais vous pouvez aussi configurer le votre en fonction de vos besoins. L'interface est accessible via l'entrée `Imports` du menu.
+
+Le modèle
+^^^^^^^^^
+Le modèle d'import définit les champs possibles ainsi que leur ordre dans un fichier CSV. Lors de l'import proprement dit, c'est le modèle courant qui sera utilisé pour vérifier l'intégrité de votre fichier CSV.
+
+Pour accéder à la configuration du modèle d'import, et pour pouvoir récupérer le modèle vierge, cliquez sur le bouton `Configurer le modèle d'import` dans l'interface. Un modèle par défaut vous est proposé :
+
+.. image:: ../_styles/static/images/usermanual/csv_import_default_model.png
+   :scale: 50%
+   :align: center
+   :alt: Modèle d'import par défaut
+
+Si le modèle ne vous convient pas, cliquez sur l'onglet `Modifier le modèle`, et choisissez vos champs :
+
+.. image:: ../_styles/static/images/usermanual/csv_import_selection_model.png
+   :scale: 50%
+   :align: center
+   :alt: Configuration du modèle d'import
+
+Une fois les champs sélectionnés, cliquez sur le bouton `Enregistrer le nouveau modèle`.
+
+Dans l'onglet modèle courant, vous aurez la possibilité de récupérer le modèle vierge en cliquant sur le bouton `Générer un fichier CSV vide`. Vous pouvez bien entendu à tout moment modifier le modèle ou revenir au modèle par défaut en cliquant sur le bouton `Supprimer le modèle`.
+
+L'import
+^^^^^^^^
+
+Une fois le fichier vierge récupéré et dûment rempli, vous devrez l'envoyer sur le serveur via le formulaire `Envoyer un nouveau fichier`. À cette étape, Galette vérifiera que votre fichier porte bien l'extension ``.csv`` (ou ``.txt`` optionnellement) et qu'il ne dépasse pas la taille maximale autorisée (2Mo, la limite par défaut dans PHP).
+
+.. note::
+
+   Si vous souhaitez envoyer un fichier plus volumineux, il vous est toujours possible de le déposer vous même via FTP dans le dossier ``galette/imports/`` ou de le scinder en plusieurs fichiers distincts, que vous pourrez alors importer un par un.
+
+La liste des fichiers envoyés est affichée dans le tableau dans la section `Fichiers existants`. Vous pourrez ici voir le fichier, le supprimer, ou encore procéder à son import :
+
+.. image:: ../_styles/static/images/usermanual/csv_import_select_file.png
+   :scale: 50%
+   :align: center
+   :alt: Sélection et import du fichier
+
+La case `Galop d'essai` (cochée par défaut) vous permettra de tester si votre fichier et les données qu'il contient sont valides (champs obligatoires renseignés, dates correctement formatées, etc) sans enregistrer quoi que ce soit dans la base de données.
+
+Notez que si l'import rencontre un problème sur une ligne particulière, il se peut que les lignes précédentes aient été enregistrées. Il est donc fortement conseillé de lancer l'import une première fois avec la case activée pour corriger les potentielles erreurs.
+
+L'interface vous avertira de l'erreur rencontrée, en mode test ou non.
+
+.. note::
+
+   Il est tout à fait possible que l'import se passe correctement, mais qu'il vous soit ensuite indiqué que des champs obligatoires soient manquants lors de la modification d'une fiche. Ce type de comportement sera constaté si le modèle d'import n'inclut pas l'intégralité des champs obligatoires que vous avez configurés.
 
