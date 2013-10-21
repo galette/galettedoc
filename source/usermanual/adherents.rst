@@ -101,7 +101,7 @@ Dans les deux premiers cas (`nom` et `pseudo`), le résultat obtenu est assez tr
 Configuration des champs CSV
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs que ceux présents dans la liste affichée à l'écran. Il est possible de modifier ce comportement en spécifian vous même la liste des champs qui doivent être exportés ; dans le fichier ``galette/config/local_export_fields.inc.php``. Si par exemple, vous souhaitez n'exporter que l'identifiant, le nom et le prénom de l'adhérent, le contenu de ce fichier sera :
+Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs que ceux présents dans la liste affichée à l'écran. Il est possible de modifier ce comportement en spécifiant vous même la liste des champs qui doivent être exportés ; dans le fichier ``galette/config/local_export_fields.inc.php``. Si par exemple, vous souhaitez n'exporter que l'identifiant, le nom et le prénom de l'adhérent, le contenu de ce fichier sera :
 
 .. code-block:: php
 
