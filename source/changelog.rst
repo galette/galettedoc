@@ -7,6 +7,14 @@ Changelog
 =========
 
 ****************
+0.7.6 -> 0.7.6.1
+****************
+
+* Date de création d'un adhérent incorrecte (`#741 <http://redmine.ulysses.fr/issues/741>`_)
+* L'export CSV de la liste des adhérents résultait en un fichier vide (`#732 <http://redmine.ulysses.fr/issues/732>`_)
+* Le modèle d'import ne pouvait être modifé (`#728 <http://redmine.ulysses.fr/issues/728>`_)
+
+****************
 0.7.5.5 -> 0.7.6
 ****************
 
