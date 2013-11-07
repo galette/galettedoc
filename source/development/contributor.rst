@@ -150,7 +150,7 @@ Après avoir effectué vos modifications dans le code source, l'étape suivante 
    0001-Placebo-commit.patch
    0002-Destructive-commit.patch
 
-Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <http://redmine.ulysses.fr/projects/galette/>`_ adéquat :)
+Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <http://bugs.galette.eu/projects/galette/>`_ adéquat :)
 
 Quelques petits points de contrôle :
 
