@@ -42,7 +42,7 @@ Les plugins officiels de galette sont fournis sous licence GPL version 3, tout c
     *
     * Copyright © 2013 The Galette Team
     *
-    * This file is part of Galette (http://galette.tuxfamily.org).
+    * This file is part of Galette (http://galette.eu).
     *
     * Galette is free software: you can redistribute it and/or modify
     * it under the terms of the GNU General Public License as published by
@@ -64,7 +64,7 @@ Les plugins officiels de galette sont fournis sous licence GPL version 3, tout c
     * @copyright 2011 The Galette Team
     * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @version   SVN: $Id$
-    * @link      http://galette.tuxfamily.org
+    * @link      http://galette.eu
     * @since     Available since 0.7.4dev - 2013-01-26
     */
 
@@ -373,7 +373,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
     * |file| `plugin.php`
     * |file| `...`
 
-Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.tuxfamily.org/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.tuxfamily.org/dc/index.php/pages/Contact#irc>`_ ;-)
+Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)
 
 Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
 
