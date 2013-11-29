@@ -115,6 +115,8 @@ Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs
 E-Mailing
 =========
 
+.. warning:: Bien que Galette permette l'envoi de courriels au format HTML, notez que c'est une pratique qu'il faut déconseiller ; le poids des messages envoyés s'en trouve très fortement augmenté (pour finalement pas grand chose) et que certaines personnes lisent leurs courriels uniquement en texte simple (votre serviteur, par exemple). Sachez que Galette envoie **systématiquement** une version texte des couriels HTML, afin que le message puisse être lu partout.
+
 Depuis Galette, vous pouvez envoyer des E-Mailings à une sélection de vos adhérents. Chaque E-Mailing envoyé est stocké afin de pouvoir servir de modèle par la suite. Ainsi, depuis la `Gestion des E-Mailings` ; vous pourrez sélectionner un message que vous avez déjà envoyé, et l'utiliser comme modèle, récupérant ainsi la liste des personnes qui avaient été sélectionnées pour cet envoi, le sujet, et le contenu du message lui même.
 
 Pour envoyer un nouvel E-Mailing, il suffit de sélectionner dans la liste des adhérents les membres auxquels vous souhaitez le faire parvenir, puis de cliquer sur le bouton `Envoyer un courriel`. Si certains des membres sélectionnés ne possèdent pas d'adresse de courriel, Galette vous proposera de générer les étiquettes correspondantes.
@@ -131,6 +133,9 @@ L'interface par défaut de Galette est volontairement simple et légère ; pour 
 
 Dès lors que l'éditeur HTML est activé, la case `Interpréter les balises HTML` est automatiquement cochée. Si vous souhaitez envoyer un E-Mailing en HMTL sans utiliser l'éditeur, pensez à cocher cette case !
 
+Il est possible de joindre des fichiers à votre envoi, cliquez simplement sur le bouton `Parcourir` dans la zone `Ajouter une pièce jointe` pour ce faire. Si votre navigateur est compatible, il est possible de sélectionne plusieurs fichiers dans la fenêtre qui s'ouvrira (avec les touches Ctrl et/ou Shift).
+Les pièces jointes sont stockées sur le disque, dans un sous dossier spécifique portant le numéro d'identifiant de l'envoi (déterminé automatiquement par la base de données).
+
 Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre message avant de l'envoyer.
 
 .. image:: ../_styles/static/images/usermanual/mailing_preview.png
@@ -140,7 +145,24 @@ Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre
 
 Tout E-Mailing commencé sera automatiquement enregistré dans la session pour être repris par la suite. Une icône dans le titre des différentes pages vous informera qu'un E-Mailing a été débuté, et vous permettra d'y accéder.
 
-Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`, il sera alors effacé de la session.
+Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`, il sera alors effacé de la session. Si au contraire vous souhaitez enregistrer le mailing de manière plus durable, vous pouvez utiliser le bouton `Enregistrer`. Il  sera alors stocké dans l'historique des emailings, et vous pourrez le reprendre par la suite.
+
+Historique des emailings
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: Tout emailing commencé est stocké en session. La session prend fin lorsque l'utilisateur se déconnecte, ou après un temps défini par la configuration de votre serveur. L'historique quand à lui stocke les données en base, et vous assure qu'elles seront disponibles par la suite.
+
+Tout emailing envoyé est automatiquement stocké dans l'historique, et pourra servir de base pour rédiger un nouvel envoi. Dans ce cas, un nouvel emailing sera créé avec les informations de l'historique, et le mailing original sera conservé dans la base.
+
+Les mailings peuvent également êre stockés avant d'avoir été envoyés. Dans ce cas, il est possible de reprendre la rédaction là où elle en était au moment de l'enregistrement. Notez que si vous enregistrez le mailing, ou si vous l'envoyez, l'entrée d'origine sera alors remplacée.
+
+Lorsque vous utilisez une entrée existande de l'historique, l'ensemble des information du mailing sont reprises :
+
+* destinataires,
+* pièces-jointes,
+* sujet,
+* message,
+* propriété html/texte.
 
 Imports CSV
 ===========
