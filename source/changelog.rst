@@ -7,6 +7,21 @@ Changelog
 =========
 
 ****************
+0.7.6.1 -> 0.7.7
+****************
+
+.. note::
+
+    Merci à l'association `Club 404 <http://www.leclub404.com/>`_ qui a subventionné cette version ainsi que la première version officielle du :doc:`plugin Auto </plugins/auto>` :-)
+
+* Ajouts de pièces jointes aux mailings (`#187 <http://bugs.galette.eu/issues/187>`_)
+* Amélioration du système de génération de mots de passe et login aléatoires, pour éviter les doublons (`#731 <http://bugs.galette.eu/issues/731>`_)
+* Affichage d'un message explicatif lorsque l'on tente un import CSV avec un statut inexistant (`#739 <http://bugs.galette.eu/issues/739>`_)
+* Les données des graphiques n'avaient pas toujours le bon type (`#742 <http://bugs.galette.eu/issues/742>`_)
+* Correction des champs dynamiques des transactions (`#745 <http://bugs.galette.eu/issues/745>`_)
+* Correction d'un problème de date de création lors de l'import CSV
+
+****************
 0.7.6 -> 0.7.6.1
 ****************
 
@@ -85,7 +100,7 @@ Changelog
 
 .. note::
 
-   Un très grand merci à `Debian France <http://france.debian.net>`_, qui a `subventionné cette version <http://galette.eu/dc/index.php/post/2013/08/17/Galette-0.7.5-:-subventionn%C3%A9e-par-Debian-France>`_ :-)
+   Un très grand merci à `Debian France <http://france.debian.net>`_, qui a `subventionné cette version 0.7.5 <http://galette.eu/dc/index.php/post/2013/08/17/Galette-0.7.5-:-subventionn%C3%A9e-par-Debian-France>`_ :-)
 
 .. _bogues_075:
 
