@@ -19,11 +19,18 @@ Ce plugin a été développé en étroite collaboration avec Anatole du `Club 40
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin.
+Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+http://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.0.0.tar.bz2
 
-.. note::
+Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
-   Aucune version stable du plugin n'existe actuellement, voyez comment :ref:`récupérer la version de développement <autodev_download>`.
+Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
+
+.. code-block:: bash
+
+   $ cd /var/www/html/galette/plugins
+   $ wget {url}
+   $ tar xjvf galette-plugin-auto-{version}.tar.bz2
 
 Initialisation de la base de données
 ====================================
@@ -31,6 +38,8 @@ Initialisation de la base de données
 Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
 
 Et voilà ; le plugin Auto est installé :-)
+
+Le plugin Auto pour Galette ne requiert aucune configuration particulière, vous pouvez directement entrer vos données dans la base.
 
 Utilisateurs avancés
 ====================
