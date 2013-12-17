@@ -83,12 +83,13 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
 
    <?php
    $this->register(
-       'Mon Plugin', //Name
+       'Mon Plugin',                //Name
        'Plugin qui ne sert à rien', //Short description
-       'Votre Nom', //Author
-       '0.0.1', //Version
-       '0.7.1', //Galette version compatibility
-       null //Permissions needed - not yet implemented
+       'Votre Nom',                 //Author
+       '0.0.1',                     //Version
+       '0.7.1',                     //Galette version compatibility
+       '2013-12-17',                //Release date
+       null                         //Permissions needed - not yet implemented
    );
    ?>
 
@@ -135,6 +136,8 @@ De cette façon, quelque soit le nom du dossier de votre plugin, les chemins ser
 
 Entrées de menu
 ---------------
+Dans les entrées de menu (et de façon générale dans les templates du plugin), utilisez la variable ``{$galette_base_path}`` pour faire référence à la racine web de Galette, et ``{$galette_base_path}{$galette_mon_plugin_path}`` pour faire référence à la racine web du plugin (« mon_plugin » est ici à replacer par le nom du plugin défini dans le  fichier `_define.php``, en minuscules, les espaces remplacés par un underscore (`_`).
+
 
 Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il sera affiché en dessous des autres entrées de menu de Galette. Il doit avoir un aspect similaire aux menus de Galette, à savoir :
 
@@ -152,7 +155,20 @@ Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il
    {/if}
    </ul>
 
-Dans les entrées de menu (et de façon générale dans les templates du plugin), utilisez la variable ``{$galette_base_path}`` pour faire référence à la racine web de Galette, et ``{$galette_base_path}{$galette_mon_plugin_path}`` pour faire référence à la racine web du plugin (« mon_plugin » est ici à replacer par le nom du plugin défini dans le  fichier `_define.php``, en minuscules, les espaces remplacés par un underscore (`_`).
+Pages publiques
+^^^^^^^^^^^^^^^
+
+Il est également possible, depuis Galette 0.7.8, d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :
+
+.. code-block:: smarty
+
+   {if !$public_page}
+   <li{if $PAGENAME eq "maps.php"} class="selected"{/if}><a href="{$galette_base_path}{$galette_galette_maps_path}maps.php">{_T string="Maps"}</a></li>
+   {else}
+   <a id="pmaps" class="button{if $PAGENAME eq "maps.php"} selected{/if}" href="{$galette_base_path}{$galette_galette_maps_path}maps.php">{_T string="Maps"}</a>
+   {/if}
+
+Cette entrée de menu sert à afficher le lien vers la partie publique du menu pour les utilisateurs connectés (première partie), qui sera ajoutée à l'entrée « Pages publiques » de Galette. La seconde partie sert à afficher le bouton en haut de page depuis les pages publiques elles-mêmes.
 
 Ajout de headers HTML
 ---------------------
@@ -316,6 +332,43 @@ Galette devra être référencée dans chacun de ces fichiers, notamment avec la
 
 Vous aurez ainsi accès à l'ensemble des possibilités et des objets de Galette, sans avoir à vous préoccuper d'inclure les chemins vers les classes, tout ceci étant géré par un autoloader (ce n'est malheureusement pas le cas pour les plugins actuellement, comme expliqué ci-dessous).
 
+Restreindre l'affichage
+-----------------------
+
+Toutes les pages ne sont pas à affichage pulic, et - en fonction de la configuration de Galette - les pages publiques peuvent être restreintes à une catégorie d'utilisateurs.
+
+Pour les pages qui ont vocation à être « publiques » on effectura la vérification suivante juste après l'inclusion du fichier ``galette.inc.php`` :
+
+.. code-block:: php
+
+   <?php
+   [...]
+   if ( !$preferences->showPublicPages($login) ) {
+       header('location:' . GALETTE_BASE_PATH  . 'index.php');
+       die();
+   }
+   [...]
+   ?>
+
+Les utilisateurs qui n'auraient pas accès à cette page seraient aisi redirigés vers la page d'accueil de Galette.
+
+De la même façon, on peut limiter l'accès à une page particulière aux utilisateurs authentifés, ou encore aux seuls administrateurs ou membre du bureau. Voici par exemple une page qui n'est pas accesssible aux utilisateurs non authentifiés, ni aux simples membres :
+
+.. code-block:: php
+
+   <?php
+   [...]
+   if ( !$login->isLogged() ) {
+       header('location: ' . GALETTE_BASE_PATH . 'index.php');
+       die();
+   }
+   if ( !$login->isAdmin() && !$login->isStaff() ) {
+       header('location: ' . GALETTE_BASE_PATH . 'voir_adherent.php');
+       die();
+   }
+   [...]
+   ?>
+
 Classes PHP
 ===========
 
@@ -376,4 +429,6 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
 Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)
 
 Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
+
+Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à nue base doivent en faire de même.
 
