@@ -47,7 +47,6 @@ Les plugins tiers sont développés et/ou maintenus par des membres de la commun
 Mélissa a développé plusieurs plugins pour Galette :
 
 * `Aéroclub <https://galetteaeroclub.codeplex.com/>`_ (gestion de base d'un aéroclub),
-* QR Code (à venir),
 * `Location d'objets <https://galetteobjectslend.codeplex.com/>`_.
 
 .. _plugins_managment:
