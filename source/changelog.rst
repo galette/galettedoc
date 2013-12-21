@@ -6,6 +6,18 @@
 Changelog
 =========
 
+**************
+0.7.7 -> 0.7.8
+**************
+
+.. note::
+
+   Merci à Roland qui a subventionné cette version (ainsi que la mise à jour consécutive des plugins Maps et Paypal) !
+
+* Pages publiques pour les plugins (`#635 <http://bugs.galette.eu/issues/635>`_)
+* Ajout de la date de sortie des plugins (`#544 <http://bugs.galette.eu/issues/544>`_)
+* La ventilation de transactions en dons ne fonctionnait pas (`#755 <http://bugs.galette.eu/issues/755>`_)
+
 ****************
 0.7.6.1 -> 0.7.7
 ****************
