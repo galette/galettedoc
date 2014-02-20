@@ -11,7 +11,7 @@ Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.1.0.tar.bz2
+http://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.1.1.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
