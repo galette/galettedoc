@@ -53,7 +53,7 @@ Paramètres de Galette :
 * **Durée d'adhésion** : durée maximale d'une adhésion,
 * **Date de début d'exercice** : date du début de l'exercice pour l'association,
 * **Pages publiques actives** : active ou désactive l'affichage des pages publiques,
-* **Affichaer les pages publiques pour** : définit quels utilisateurs ont accès aux pages publiques. Vous pouvez choisir entre :
+* **Afficher les pages publiques pour** : définit quels utilisateurs ont accès aux pages publiques. Vous pouvez choisir entre :
 
   * **Tout le monde**, y compris les utilisateurs qui ne sont pas authentifiés,
   * **Adhérents à jour**,
