@@ -26,14 +26,15 @@ Zend DB
 .. image:: ../_styles/static/images/libraries/zend.gif
    :align: right
 
-*Version de la bibliothèque requise :* `1.12.3`
+*Version de la bibliothèque requise :* `2.2.5`
 
-L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/fr/zend.db.html>`_.
+L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_.
 
-Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'a été testé avec succès qu'avec :
+Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'est compatible qu'avec :
 
 * `MySQL <http://mysql.com/>`_ version 5.x (le support InnoDB est requis),
-* `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente.
+* `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente,
+* `SQLite <http://www.sqlite.org/>`
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
