@@ -379,3 +379,7 @@ pdf_extensions = ['dotted_toc']
 
 # Page template name for "regular" pages
 #pdf_page_template = 'cutePage'
+
+locale_dirs = ["locale"]
+gettext_uuid = True
+gettext_compact = False
