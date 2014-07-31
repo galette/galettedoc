@@ -214,6 +214,17 @@ Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin p
 
 Toute action sur les membres requiert évidemment un code qui va traiter les données envoyées au sein même du plugin.
 
+Ajout d'actions combinées sur les membres
+-----------------------------------------
+
+Un certain nombre d'actions combinées sont disponibles par défaut via la liste des membres, comme l'envoi de mailings, l'export CSV, la génération des étiquettes, ... Il est possible d'ajouter une nouvelle action pour un plugin. Un fichier nommé ``adh_batch_action.tpl`` et placé dans les templates du plugin, il contiendra une suite d'éléments de liste HTML (``<li></li>``) comprenant un bouton d'envoi (``<input type="submit"/>``) :
+
+.. code-block:: smarty
+
+   <li>
+       <input type="submit" name="pluginname_actionname" value="{_T string="My plugin batch action"}"/>
+   </li>
+
 Considérations sur les noms des fichiers template
 -------------------------------------------------
 
