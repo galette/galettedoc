@@ -35,7 +35,7 @@ Lors de la création d'un nouveau champ (ou de la modification d'un champ exista
 
 * choisir si le champ est visible par tous ou uniquement aux administrateurs,
 * rendre le champ obligatoire,
-* définir une position.
+* définir sa visibilité (tout le monde, membres de l'équipe ou administrateurs).
 
 .. image:: ../_styles/static/images/usermanual/champs_dynamiques_rendu.png
    :scale: 50%
