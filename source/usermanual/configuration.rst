@@ -101,13 +101,18 @@ Voici la liste des variables disponibles :
 * `{ASSO_NAME}` : le nom de l'association, disponible globalement,
 * `{ASSO_SLOGAN}` : le slogan de l'association, disponible globalement,
 * `{NAME_ADH}` : le nom de l'adhérent, disponible sous réserves,
-* `{LOGIN}` :  l'identifiant de connexion de l'adhérent, disponible sous réserves,
 * `{MAIL_ADH}` : l'adresse courriel de l'adhérent, disponible sous réserves,
+* `{LASTNAME_ADH}` : nom de l'adhérent, disponible sous réserves,
+* `{FIRSTNAME_ADH}` : prénom de l'adhérent, disponible sous réserves,
+* `{LOGIN}` :  l'identifiant de connexion de l'adhérent, disponible sous réserves,
 * `{LOGIN_URI}` : l'URL de Galette, disponible globalement,
 * `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement depuis la page d'auto inscription,
 * `{CHG_PWD_URI}` : lien de modification du mot de passe, disponible uniquement depuis la réinitialisation du mot de passe,
 * `{LINK_VALIDITY}` : durée de validité du lien, disponible uniquement depuis la réinitialisation du mot de passe,
 * `{DEADLINE}` : date de fin, disponible uniquement lors de la création d'une contribution,
-* `{CONTRIB_INFO}` : informations sur la contribution, disponible uniquement lors de la création d'une contribution.
-
+* `{CONTRIB_INFO}` : informations sur la contribution, disponible uniquement lors de la création d'une contribution,
+* `{CONTRIB_AMOUNT}` : montant de la contribution, disponible uniquement lors de la création d'une contribution,
+* `{CONTRIB_TYPE}` : type de contribution, disponible uniquement lors de la création d'une contribution,
+* `{DAYS_REMAINING}` : nombre de jours d'adhésion restants, disponible uniquement pour les courriels de rappel,
+* `{DAYS_EXPIRED}` : nombre de jours depuis que l'adhésion a expiré, disponible uniquement pour les courriels de rappel.
 
