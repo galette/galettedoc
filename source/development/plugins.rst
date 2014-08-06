@@ -158,7 +158,9 @@ Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il
 Pages publiques
 ^^^^^^^^^^^^^^^
 
-Il est également possible, depuis Galette 0.7.8, d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :
+.. versionadded:: 0.7.8
+
+Il est également possible d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :
 
 .. code-block:: smarty
 
@@ -216,6 +218,8 @@ Toute action sur les membres requiert évidemment un code qui va traiter les don
 
 Ajout d'actions combinées sur les membres
 -----------------------------------------
+
+.. versionadded:: 0.8
 
 Un certain nombre d'actions combinées sont disponibles par défaut via la liste des membres, comme l'envoi de mailings, l'export CSV, la génération des étiquettes, ... Il est possible d'ajouter une nouvelle action pour un plugin. Un fichier nommé ``adh_batch_action.tpl`` et placé dans les templates du plugin, il contiendra une suite d'éléments de liste HTML (``<li></li>``) comprenant un bouton d'envoi (``<input type="submit"/>``) :
 
