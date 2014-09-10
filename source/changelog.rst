@@ -666,6 +666,6 @@ O.60 -> 0.61
 * Corrections dans les en-têtes
 * Meilleure détection du fichier de langue
 * Correction de bug dans l'affichage des vignettes
-* Le permission DROP n'était pas vérifié durant l'installation
+* La permission DROP n'était pas vérifiée durant l'installation
 * Traduction en anglais
 
