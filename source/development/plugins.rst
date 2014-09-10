@@ -1,6 +1,6 @@
 .. include:: /globals.rst
 
-.. _plugins:
+.. _devplugins:
 
 *******************
 Écriture de plugins
