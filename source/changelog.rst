@@ -6,6 +6,64 @@
 Changelog
 =========
 
+************
+0.7.8 -> 0.8
+************
+
+.. note::
+
+   Cette nouvelle version met fin au support des versions 0.7 de Galette, qui auront été fort utiles :-)
+
+.. _bogues_08:
+
+Bogues corrigés
+===============
+
+* Le champ "genre" ne pouvait être désactivé,
+* Suppression de la fonction SQL `NOW()` iconnue de SQLite,
+* Corrections cosmétiques,
+* Droits sur les champs dynamiques,
+* Courriels multiples envoyés pour relance,
+* Problème d'encodage de caractères lors de mises à jour depuis Galette 0.6x,
+* Message d'avertissements dans la fenêtre de recherche avancée.
+
+.. _ajouts_08:
+
+Nouveautés
+==========
+
+* Refonte complète du système d'installation et de mise à jour,
+* Relocalisation des données dans un répertoire commun,
+* Actions combinées sur les membres pour les plugins,
+* Utilisation du logo dans les modèles PDF (merci à Guillaume R.),
+* Augmentation de la taille des étiquettes des status et des types de cotisations,
+* Choix de la date lors du filtrage des contributions,
+* Filtrage des transactions par date,
+* Compatibilité IPV6,
+* Changement du pictogramme des messages d'erreur (merci à Daniela D.),
+* Étiquettes ordonnées par noms et prénoms,
+* Possibilité de scinder ou non les versions texte des courriels par configuration,
+* Prévisualisation des courriels textes scindés,
+* Affichage des adresses courriel dans la liste publique des membres pour les adhérents connectés,
+* Textes de courriels pour les dons,
+* Date de naissance dans la recherche avancée,
+* Détection des types de fichiers si les fonctions relatives de PHP sont désactivées,
+* Possibilité de modifier la date de saisie d'une contribution,
+* Support de champs dynamiques de type fichier (merci à Guillaume R.),
+* Amélioration de la fenêtre de sélection des membres (utilisée dans les mailings, la gestion des groupes, le plugin auto, ...),
+* Suppression de groupes non vides.
+
+.. _souscapot_08:
+
+Sous le capot...
+================
+
+Quelques modifications, d'ordre un peu plus technique ont également été apportées :
+
+* Compatible PHP 5.4 et supérieurs,
+* Utilisation de Zend DB version 2 - en lieu et place de la version 1 - pour la gestion des bases de données.
+
+
 **************
 0.7.7 -> 0.7.8
 **************
