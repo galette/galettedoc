@@ -41,59 +41,10 @@ Et voilà ; le plugin Auto est installé :-)
 
 Le plugin Auto pour Galette ne requiert aucune configuration particulière, vous pouvez directement entrer vos données dans la base.
 
-Utilisateurs avancés
-====================
-
-.. _autodev_download:
-
 Récupération des sources
-------------------------
+========================
 
-Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :
+Le code source du plugin Maps est stocké dans un dépôt GIT accessible à l'adresse :
+`git://git.tuxfamily.org/gitroot/galette/plugin-auto.git <git://git.tuxfamily.org/gitroot/galette/plugin-auto.git>`_
 
-.. code-block:: bash
-
-   $ cd /var/www/html/galette/plugins
-   $ git clone git://git.tuxfamily.org/gitroot/galette/plugin-auto.git
-
-Pour obtenir la version de développement :
-
-* Sans utiliser git-flow :
-
-.. code-block:: bash
-
-   $ cd plugin-fullcard
-   $ git checkout -b develop origin/develop
-
-* en utilisant git-flow :
-
-.. code-block:: bash
-
-   $ git flow init
-   Which branch should be used for bringing forth production releases?
-      - master
-   Branch name for production releases: [master] 
-   Branch name for "next release" development: [develop] 
-   
-   How to name your supporting branch prefixes?
-   Feature branches? [feature/] 
-   Release branches? [release/] 
-   Hotfix branches? [hotfix/] 
-   Support branches? [support/] 
-   Version tag prefix? []
-
-Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-auto.git`` et ``c:\xampp\htdocs\galette\plugins\plugin-auto`` respectivement pour les chemins vers le dépôt et vers le dossier local.
-
-Initialisation de la base de données
-------------------------------------
-
-Si vous préférez initialiser la base sans l'interface de Galette, vous trouverez les scripts d'initialisation ``mysql.sql`` et ``pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence.
-
-Vous devrez ensuite importer ces instructions SQL dans votre base. Pour MySQL vous pourrez soit en utiliser PHPMyAmdin, soit opter directement pour la ligne de commande :
-
-.. code-block:: bash
-
-   $ mysql -u galette -p
-   mysql> use galette;
-   mysql> source /var/www/html/galette/plugins/Auto/sql/mysql.sql
-
+Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
