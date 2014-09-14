@@ -76,7 +76,7 @@ Pour l'exemple, nous allons nous baser sur une base de données nommée `magalet
 
 * SQLite
 
-Pour SQLite, vous devrez dans un premier temps soit :ref:`définir le chemin de la base dans votre système de fichiers <configpaths>`, soit créer le dossier ``data`` dans le répertoire d'installation de Galette, et lui donner les droits adéquats. La base elle même sera créée automatiquement, aucune configuration compmlémentaire n'est requise
+Pour SQLite, si vous avez spécifié un :ref:`chemin pour la base dans votre système de fichiers <configpaths>`, assurez-vous de lui donner les droits adéquats. Si cette directive n'est pas renseignée, la base sera stockée dans le dossier ``data``. La base elle même sera créée automatiquement, aucune configuration compmlémentaire n'est requise
 
 Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MySQL <http://dev.mysql.com/doc/#refman>`_, de `PostgreSQL <http://docs.postgresqlfr.org>`_ ou de `SQLite <https://sqlite.org/>`_ selon votre cas ; ou utilisez un outil graphique :
 

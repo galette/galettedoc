@@ -15,8 +15,10 @@ Dans un premier temps, `téléchargez la dernière version de Galette <http://do
 Certains fichiers et répertoires contiennent des données et devraient être réintégrés à la nouvelle installation :
 
 * ``config/config.inc.php``. Si ce fichier est absent, Galette en créera un nouveau. Si le fichier est présent, les données qu'il contient seront automatiquement chargées (hormis le mot de passe) lors de la configuration du moteur de base de données. C'est le seul fichier qui est modifié par la procédure de mise à jour,
-* ``photos`` qui contient les photos de vos adhérents et votre logo,
-* ``exports`` qui contient les exports CSV (Galette 0.7.0 et versions ultérieures).
+* ``data/photos`` qui contient les photos de vos adhérents et votre logo,
+* ``data/exports`` qui contient les exports CSV (Galette 0.7.0 et versions ultérieures),
+* ``data/files`` qui contient les fichiers attachés aux adhérents (Galette 0.8 et versions ultérieures),
+* ``data/attachments`` qui contient les fichiers attachés aux mailings.
 
 Une fois la  mise à jour des fichiers effectuée, rendez-vous sur la page `http://localhost/galette/install/index.php`. Toutes les autres pages indiqueront qu'une mise à jour est requise.
 

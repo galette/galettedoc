@@ -98,6 +98,10 @@ Cartes
 Administrateur
 ==============
 
+.. note::
+
+   Cette entrée ne sera visible que si le super administrateur est connecté.
+
 .. image:: ../_styles/static/images/usermanual/prefs_admin.png
    :scale: 50%
    :align: center

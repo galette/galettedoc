@@ -21,13 +21,16 @@ Il faut porter une attention particulière aux droits de certains dossiers de Ga
 
 Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lui est pas possible d'écrire dans les dossiers adéquats :
 
-* |folder| `cache`,
 * |folder| `config` [#configdirperms]_,
-* |folder| `exports`,
-* |folder| `logs`,
-* |folder| `photos`,
-* |folder| `templates_c`,
-* |folder| `tempimages`,
+* |folder| `data/attachments`,
+* |folder| `data/cache`,
+* |folder| `data/exports`,
+* |folder| `data/files`,
+* |folder| `data/imports`,
+* |folder| `data/logs`,
+* |folder| `data/photos`,
+* |folder| `data/tempimages`,
+* |folder| `data/templates_c`
 
 .. [#configdirperms] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
 
