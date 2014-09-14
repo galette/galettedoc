@@ -8,7 +8,7 @@ Utilisateurs avertis
 
    **Attention...**
 
-   N'utilisez les instructions suivantes qu'en toute connassance de cause... « La direction décline toute responsabilité [...] » :-D
+   N'utilisez les instructions suivantes qu'en toute connaissance de cause... « La direction décline toute responsabilité [...] » :-D
 
 Adaptation à votre charte graphique
 ===================================
@@ -40,7 +40,7 @@ Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale
 
 La modification sera visible immédiatement dans Galette. Prenez particulièrement garde à recopier la chaîne originale telle quelle ; et à échapper les apostrophes (à l'aide d'un anti-slash). Comme dans le fichier original, on attend ici une ligne par chaîne modifiée.
 
-Pensez également à créer le fichier ``lang_english_local.php`` qui contiendra les traductions anglaises de la chaîne (une simple recopie de la clé normalement).
+Pensez également à créer le fichier ``lang_english_local.php`` qui contiendra les traductions anglaises des chaînes que vous auriez ajoutées (une simple recopie de la clé normalement).
 
 Ces surcharges ne s'appliquent pas actuellement aux plugins ; ces derniers étant chargés par l'application bien plus tard :-(
 

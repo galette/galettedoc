@@ -15,8 +15,19 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
 * |folder| `cache` : dossier de cache utilisé par Smarty et TCPDF
 * |folder| `config` : les fichiers de configuration
+* |folder| `data` : conteneur global pour les données
+
+  * |folder| `attachments` : systfichiers attachés aux e-mailings
+  * |folder| `cache` : système de cache
+  * |folder| `exports` : dossier dans lequel seront stockés les exports CSV
+  * |folder| `files` : stockage des fichiers joints via les champs dynamiques
+  * |folder| `imports` : dossier dans lequel seront stockés les fichiers CSV à importer
+  * |folder| `logs` : fichiers logs produits par :ref:`Analog <galettelog>`
+  * |folder| `photos` : dossier de stockage des photos des membres
+  * |folder| `tempimages` : dossier de stockage des imagestemporaires du captcha
+  * |folder| `templates_c` : dossier de compilation des templates Smarty
+
 * |folder| `docs`
-* |folder| `exports` : dossier dans lequel seront stockés les exports CSV
 * |folder| `includes` : bibliothèques, fonctions et initialisation de Galette
 
   * |folder| `jquery` : :ref:`bibliothèque javascript JQuery <ui>`
@@ -46,17 +57,13 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
   * |folder| `...`
 
-* |folder| `logs` : fichiers logs produits par :ref:`Analog <galettelog>`
-* |folder| `photos` : dossier de stockage des photos des membres
 * |folder| `plugins` : :ref:`dossier de stockage des plugins <plugins>`
 * |folder| `public` : pages publiques
-* |folder| `tempimages` : dossier de stockage des imagestemporaires du captcha
 * |folder| `templates` : ensembles de templates Smarty
 
   * |folder| `default` : thème par défaut de Galette
   * |folder| `...`
 
-* |folder| `templates_c` : dossier de compilation des templates Smarty
 * |phpfile| `...`
 
 .. _conventions:
@@ -133,7 +140,7 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
    }
    ?>
 
-Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de ducumentation qui la précède.
+Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de documentation qui la précède.
 
 Pour une meilleure compréhension du code pour l'ensemble des intervenants, on essaiera de documenter au maximum le code produit.
 
