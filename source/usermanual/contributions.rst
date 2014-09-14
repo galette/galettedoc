@@ -4,7 +4,7 @@ Gestion des contributions
 
 Galette vous permet de gérer les contributions émises par vos adhérents. On distingue différents types de contributions, une notion de transaction est également proposée.
 
-Une transaction, késako ? Comme il paraît qu'un petit exemple vaut mieux qu'un lon discours... Prenons trois adhérents d'une même association : Marc, Julie et Zac. Chacun est membre de l'association, dans un même groupe ou dans des groupes différents, cela importe peu.
+Une transaction, késako ? Comme il paraît qu'un petit exemple vaut mieux qu'un long discours... Prenons trois adhérents d'une même association : Marc, Julie et Zac. Chacun est membre de l'association, dans un même groupe ou dans des groupes différents, cela importe peu.
 
 Zac fait un chèque pour régler sa cotisation, celles de Marc et Julie, et aussi un don à l'association. Dans ce cas là, le chèque que fera Zac fera l'objet d'une transaction, qui lui sera rattachée, et qui sera ventilée en 4 contributions, sur chacun des trois membres (chacune attachée au membre voulu de Galette).
 

@@ -6,7 +6,7 @@ Modèles PDF
 
 Des modèles PDF sont disponibles pour différentes sorties.
 
-Actuellement, il existe un modèle factures et un modèle Reçu. Tous deux héritent d'un modèle Global.
+Actuellement, il existe un modèle factures et un modèle Reçu. Tous deux héritent d'un modèle `Global`.
 
 .. image:: ../_styles/static/images/usermanual/pdf_models.png
    :scale: 75%
@@ -16,20 +16,20 @@ Actuellement, il existe un modèle factures et un modèle Reçu. Tous deux héri
 Héritage des modèles
 ====================
 
-Le fait q'un modèle hérite d'un autre implique différentes choses du point de vue de Galette. Le modèle Gloabl comprend trois champs distincts :
+Le fait qu'un modèle hérite d'un autre implique différentes choses du point de vue de Galette. Le modèle Gloabl comprend trois champs distincts :
 
 * l'en-tête,
 * le pied de page,
 * les styles CSS.
 
-Tout modèles héritant qe Global obtiendra automatiquement les mêmes en-tête et pied de page, sauf si l enouveau modèle en définit de nouveau, dans ce cas, les valerus spécifiques uniquement seront appliquées.
+Tout modèle héritant de `Global` obtiendra automatiquement les mêmes en-tête et pied de page, sauf si le nouveau modèle les re-définit ; dans ce cas, les valeurs spécifiques uniquement seront appliquées.
 
-Dans le cas des propriétés CSS, c'st un peu différent. En effe,t les propriétés du modèle Global seront toujours appliquées, les propriétés spécifiques du modèle enfant viendront en sus (comme pour de vraies feuilles de style CSS en somme).
+Dans le cas des propriétés CSS, c'est un peu différent. En effet, les propriétés du modèle `Global` seront toujours appliquées, les propriétés spécifiques du modèle enfant viendront en sus (comme pour de vraies feuilles de style CSS en somme).
 
 Généralités
 ===========
 
-Les modèles sont décomposés en plusieurs parties. Outre l'en-tête, le pied de page et les styles CSS présentés au paragraphe précédent, un titre, un sous titre et un corps existeront pour les modèles dits enfants.
+Les modèles sont décomposés en plusieurs parties. Outre l'en-tête, le pied de page et les styles CSS présentés au paragraphe précédent, un titre, un sous titre et un corps existeront pour les modèles enfants.
 
 Chacun de ces champs prend en compte un certain nombre de remplacements automatiques, une petite icône en forme d'ampoule en haut à droite de l'interface vous donnere davantage de détails sur ce point. Les différents champs peuvent également contenir des textes internationnalisés de la forme `_T("My text")` qui utiliseront les :ref:`fonctionnalités de traduction standard de Galette <i18nsyntax>`.
 
@@ -45,4 +45,4 @@ Les modèles factures et reçus sont sensiblement identiques, titre mis à part.
    :align: center
    :alt: Modèle PDF Factures
 
-Comme vous pourrez le constater dans la capture d'écran ci-dessus, le modèle Facture utilisera les en-tête et pied de page par défaut définis dans le modèle Global, aucun style CSS n''est ajouté par dé&faut. Le :doc:`plugin AdminTools <../plugins/admintools>` vous permet de réinitialiser les modèles par défaut à tout moment.
+Comme vous pourrez le constater dans la capture d'écran ci-dessus, le modèle Facture utilisera les en-tête et pied de page par défaut définis dans le modèle `Global`, aucun style CSS n'est ajouté par défaut. Le :doc:`plugin AdminTools <../plugins/admintools>` vous permet de réinitialiser les modèles par défaut à tout moment.

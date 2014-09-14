@@ -59,6 +59,7 @@ Vous pourrez ainsi filtrer sur :
 * une recherche textuelle sur l'une des informations suivante :
 
   * le nom (nom, prénom et pseudo),
+  * la raison sociale,
   * l'adresse (adresse, complément d'adresse, code postal, ville et pays),
   * le courriel et les messageries instantanées (adresse de courriel, URL du site web, adresses MSN, ICQ et Jabber),
   * l'emploi,
@@ -80,6 +81,7 @@ Vous pourrez ainsi filtrer sur :
   * comptes actifs,
   * comptes inactifs
 
+* l'appartenance à un groupe,
 * la présence ou l'absence d'une adresse de courriel.
 
 Tout filtrage sera conservé le temps de votre session, vous pourrez ainsi aller modifier un paramétrage ou autre, et revenir sur la liste ; vous récupérerez automatiquement le filtre que vous aviez exécuté.
@@ -94,9 +96,10 @@ Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes le
 * nom,
 * pseudo,
 * statut,
-* état de cotisation
+* état de cotisation,
+* date de modification.
 
-Dans les deux premiers cas (`nom` et `pseudo`), le résultat obtenu est assez transparent. En ce qui concerne le tri par `statut`, il est effectué sur la priorité des statuts. Enfin, l'ordonnancement par `état de cotisation` sera appliqué par date de création, exemption de cotisation et date d'échéance.
+Dans le cas des `nom`, `pseudo` et `date de modification`, le résultat obtenu est assez transparent. En ce qui concerne le tri par `statut`, il est effectué sur la priorité des statuts. Enfin, l'ordonnancement par `état de cotisation` sera appliqué par date de création, exemption de cotisation et date d'échéance.
 
 Configuration des champs CSV
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -198,7 +201,7 @@ Une fois le fichier vierge récupéré et dûment rempli, vous devrez l'envoyer 
 
 .. note::
 
-   Si vous souhaitez envoyer un fichier plus volumineux, il vous est toujours possible de le déposer vous même via FTP dans le dossier ``galette/imports/`` ou de le scinder en plusieurs fichiers distincts, que vous pourrez alors importer un par un.
+   Si vous souhaitez envoyer un fichier plus volumineux, il vous est toujours possible de le déposer vous même via FTP dans le dossier ``galette/data//imports/`` ou de le scinder en plusieurs fichiers distincts, que vous pourrez alors importer un par un.
 
 La liste des fichiers envoyés est affichée dans le tableau dans la section `Fichiers existants`. Vous pourrez ici voir le fichier, le supprimer, ou encore procéder à son import :
 

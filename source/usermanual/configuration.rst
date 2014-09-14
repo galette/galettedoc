@@ -9,7 +9,7 @@ Champs obligatoires et visibilité des champs
 
 Lors de la saisie ou de la modification de fiches adhérents, certains champs sont marqués comme étant requis. Bien entendu, cette sélection par défaut peut ne pas vous convenir, mais vous avez la possibilité de paramétrer ça facilement :-)
 
-Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis. Vous pourrez également définir à l'aide de cette interface la visibilité des champs (visibleaffichés, cachés ou visibles uniquement par les administrateurs).
+Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis. Vous pourrez également définir à l'aide de cette interface la visibilité des champs (visibles, cachés ou visibles uniquement par les administrateurs).
 
 .. image:: ../_styles/static/images/usermanual/fields_config.png
    :scale: 50%
@@ -35,7 +35,7 @@ Lors de la création d'un nouveau champ (ou de la modification d'un champ exista
 
 * choisir si le champ est visible par tous ou uniquement aux administrateurs,
 * rendre le champ obligatoire,
-* définir une position.
+* définir sa visibilité (tout le monde, membres de l'équipe ou administrateurs).
 
 .. image:: ../_styles/static/images/usermanual/champs_dynamiques_rendu.png
    :scale: 50%
@@ -90,24 +90,29 @@ Si ce paramètre est actif, un courriel sera envoyé à l'adhérent lorsque :
 De même, un courriel sera envoyé à l'administrateur lorsque :
 
 * un nouvel adhérent est inscrit ou s'auto inscrit,
-* une cotisation est attachée à un compte.
+* une contribution est attachée à un compte.
 
 Les courriels ne seront bien entendus envoyés que si le paramétrage de Galette permet l'envoi de messages (et si cela est configuré correctement). L'envoi de messages aux administrateurs est configuré de manière globale dans les préférences ; tandis que l'envoi de message à l'adhérent passe par une case à cocher au coup par coup dans l'interface, sauf pour le mail d'auto-inscription qui sera envoyé systématiquement.
 
-Un certain nombre de variables - remplacées automatiquement lors de l'envoi - sont disponibles, à la fos pour le sujet et pour le corps du message. Certaines sont utilisables pour la totalité des messages, d'autres (comme les informations de l'adhérent ou son mot de passe) ne le sont que dans certains contextes spécifiques.
+Un certain nombre de variables - remplacées automatiquement lors de l'envoi - sont disponibles, à la fois pour le sujet et pour le corps du message. Certaines sont utilisables pour la totalité des messages, d'autres (comme les informations de l'adhérent ou son mot de passe) ne le sont que dans certains contextes spécifiques.
 
 Voici la liste des variables disponibles :
 
 * `{ASSO_NAME}` : le nom de l'association, disponible globalement,
 * `{ASSO_SLOGAN}` : le slogan de l'association, disponible globalement,
 * `{NAME_ADH}` : le nom de l'adhérent, disponible sous réserves,
-* `{LOGIN}` :  l'identifiant de connexion de l'adhérent, disponible sous réserves,
 * `{MAIL_ADH}` : l'adresse courriel de l'adhérent, disponible sous réserves,
+* `{LASTNAME_ADH}` : nom de l'adhérent, disponible sous réserves,
+* `{FIRSTNAME_ADH}` : prénom de l'adhérent, disponible sous réserves,
+* `{LOGIN}` :  l'identifiant de connexion de l'adhérent, disponible sous réserves,
 * `{LOGIN_URI}` : l'URL de Galette, disponible globalement,
 * `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement depuis la page d'auto inscription,
 * `{CHG_PWD_URI}` : lien de modification du mot de passe, disponible uniquement depuis la réinitialisation du mot de passe,
 * `{LINK_VALIDITY}` : durée de validité du lien, disponible uniquement depuis la réinitialisation du mot de passe,
 * `{DEADLINE}` : date de fin, disponible uniquement lors de la création d'une contribution,
-* `{CONTRIB_INFO}` : informations sur la contribution, disponible uniquement lors de la création d'une contribution.
-
+* `{CONTRIB_INFO}` : informations sur la contribution, disponible uniquement lors de la création d'une contribution,
+* `{CONTRIB_AMOUNT}` : montant de la contribution, disponible uniquement lors de la création d'une contribution,
+* `{CONTRIB_TYPE}` : type de contribution, disponible uniquement lors de la création d'une contribution,
+* `{DAYS_REMAINING}` : nombre de jours d'adhésion restants, disponible uniquement pour les courriels de rappel,
+* `{DAYS_EXPIRED}` : nombre de jours depuis que l'adhésion a expiré, disponible uniquement pour les courriels de rappel.
 

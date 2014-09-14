@@ -1,6 +1,6 @@
 .. include:: /globals.rst
 
-.. _plugins:
+.. _devplugins:
 
 *******************
 Écriture de plugins
@@ -158,7 +158,9 @@ Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il
 Pages publiques
 ^^^^^^^^^^^^^^^
 
-Il est également possible, depuis Galette 0.7.8, d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :
+.. versionadded:: 0.7.8
+
+Il est également possible d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :
 
 .. code-block:: smarty
 
@@ -213,6 +215,19 @@ Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin p
    </li>
 
 Toute action sur les membres requiert évidemment un code qui va traiter les données envoyées au sein même du plugin.
+
+Ajout d'actions combinées sur les membres
+-----------------------------------------
+
+.. versionadded:: 0.8
+
+Un certain nombre d'actions combinées sont disponibles par défaut via la liste des membres, comme l'envoi de mailings, l'export CSV, la génération des étiquettes, ... Il est possible d'ajouter une nouvelle action pour un plugin. Un fichier nommé ``adh_batch_action.tpl`` et placé dans les templates du plugin, il contiendra une suite d'éléments de liste HTML (``<li></li>``) comprenant un bouton d'envoi (``<input type="submit"/>``) :
+
+.. code-block:: smarty
+
+   <li>
+       <input type="submit" name="pluginname_actionname" value="{_T string="My plugin batch action"}"/>
+   </li>
 
 Considérations sur les noms des fichiers template
 -------------------------------------------------
@@ -303,14 +318,14 @@ Le premier lancement de `make` va vous renvoyer pas mal d'erreurs, que vous pouv
    Cela signifie que vous verrez bien apparaître la traduction, et ce dès l'ajout de votre chaîne ; mais en revanche, la chaîne sera ajoutée également à votre plugin ; le risque d'une double traduction différente étant que celle du plugin vienne supplanter celle de Galette...
 
 
-Scripts SQL
-===========
+Scripts de mise à jour
+======================
 
-Certains plugins requièrent la création de nouvelles tables dans la base de données. Dans ce cas, il faudra créer un répertoire ``sql`` dans votre plugin, et y placer les scripts adéquats. Ce dossier se veut le pendant de ``{galette}/install/sql/``, et est donc soumis aux mêmes règles :
+Certains plugins requièrent la création de nouvelles tables dans la base de données. Dans ce cas, il faudra créer un répertoire ``scripts`` dans votre plugin, et y placer les scripts adéquats. Ce dossier se veut le pendant de ``{galette}/install/scripts/``, et est donc soumis aux mêmes règles :
 
 * les scripts d'initialisation doivent être fournis pour MySQL et pour PostgreSQL
 * les scripts de création doivent impérativement être nommés ``mysql.sql`` et ``pgsql.sql``. L'installation de la base du plugin depuis Galette échouera si le script n'est pas nommé correctement (il ne pourra pas être trouvé),
-* les scripts de mise à jour respectent la nomenclature ``upgrade-to-{version}-{dbtype}.sql`` ; où `{version}` correspond à la nouvelle version du plugin, et `{dbtype}` au type de base de données (`mysql` ou `pgsql` donc).
+* les scripts de mise à jour respectent la nomenclature ``upgrade-to-{version}-{dbtype}.sql`` ou ``upgrade-to-{version}.php`` ; où `{version}` correspond à la nouvelle version du plugin, et `{dbtype}` au type de base de données (`mysql` ou `pgsql` donc).
 
 Le respect de ces règles assure que le plugin sera pleinement pris en charge par l'interface de gestion des plugins de Galette,e t que l'utilisateur sera en mesure de « facilement » installer ou mettre à jour la base du plugin.
 
