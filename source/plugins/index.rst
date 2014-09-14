@@ -36,7 +36,6 @@ Les plugins « officiels » sont développés et/ou maintenus par l'équipe de d
    admintools.rst
    maps.rst
    auto.rst
-   sport.rst
 
 *************
 Plugins tiers
