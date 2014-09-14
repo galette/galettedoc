@@ -26,7 +26,7 @@ Zend DB
 .. image:: ../_styles/static/images/libraries/zend.gif
    :align: right
 
-*Version de la bibliothèque requise :* `2.2.5`
+*Version de la bibliothèque requise :* `2.3.1`
 
 L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_.
 
@@ -34,7 +34,7 @@ Bien que cette extension supporte un certain nombre de bases de données différ
 
 * `MySQL <http://mysql.com/>`_ version 5.x (le support InnoDB est requis),
 * `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente,
-* `SQLite <http://www.sqlite.org/>`
+* `SQLite <http://www.sqlite.org/>`_
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
@@ -63,9 +63,9 @@ Pour le stockage des mots de passe. Cette bibliothèque n'est pas nécessaire si
 Smarty
 ------
 
-*Version de la bibliothèque requise :* `3.1.14`
+*Version de la bibliothèque requise :* `3.1.19`
 
-Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format XHTML.
+Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format HTML 5.
 
 .. _pdf:
 
@@ -75,7 +75,7 @@ TCPDF
 .. image:: ../_styles/static/images/libraries/tcpdf.png
    :align: right
 
-*Version de la bibliothèque requise :* `6.0.020`
+*Version de la bibliothèque requise :* `6.0.089`
 
 L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <http://www.tcpdf.org/>`_.
 
@@ -99,7 +99,7 @@ Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expér
 Envoi de courriels
 ------------------
 
-*Version de la bibliothèque requise :* `5.2.6`
+*Version de la bibliothèque requise :* `5.2.8`
 
 L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <http://phpmailer.worxware.com/>`_.
 
