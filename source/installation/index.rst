@@ -30,7 +30,7 @@ Pré-requis et hébergement
 Pour installer Galette, vous aurez besoin que les composants suivants soient installés  :
 
 * un serveur web Apache,
-* PHP en version 5.3.7 ou supérieure (ou php 5.3.3 avec patchs de sécurité appliqués, consultez la note ci-dessous),
+* PHP en version 5.4 ou supérieure,
 
   * le module PHP `gd`,
   * le module PHP `PDO` `mysql` ou `postgresql`,
