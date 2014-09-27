@@ -6,7 +6,7 @@ Ce plugin permet certaines actions d'administration sur Galette.
 
 Les fonctionnalités apportées par ce plugin sont :
 
-* convertir l'encodage des donnéesi (MySQL uniquement). En effet, les versions de Galette précédant la 0.7 utilisaient l'ISO-8859-1 pour l'encodage des données de la base, la 0.7 utilise l'UTF-8. Le système de mise à jour prend cela pleinement en charge, mais il peut arriver, lors d'imports par exemple, de se retrouver avec des caractères mal encodés ; c'est à ce moment là que cette fonctionnalité devient utile,
+* convertir l'encodage des données (MySQL uniquement). En effet, les versions de Galette précédant la 0.7 utilisaient l'ISO-8859-1 pour l'encodage des données de la base, la 0.7 utilise l'UTF-8. Le système de mise à jour prend cela pleinement en charge, mais il peut arriver, lors d'imports par exemple, de se retrouver avec des caractères mal encodés ; c'est à ce moment là que cette fonctionnalité devient utile,
 * Réinitialisation des contenus des emails avec les valeurs d'origine,
 * Réinitialisation de la configuration des champs (caractère obligatoire et visibilité)
 * Réinitialisation des modèles PDF
