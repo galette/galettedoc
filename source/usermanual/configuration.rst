@@ -32,7 +32,7 @@ Il vous est proposé quatre types de champs dynamiques :
 * `choix` : ajoutera une liste de choix,
 * `date` : ajoutera un champ de type date, avec sélecteur,
 * `booléen` : ajoutera une case à cocher,
-* `fichier` : permettra de lier des ficheirs à la fiche adhérent.
+* `fichier` : permettra de lier des fichiers à la fiche adhérent.
 
 Lors de la création d'un nouveau champ (ou de la modification d'un champ existant) ; vous aurez également la possibilité de :
 
@@ -64,7 +64,7 @@ Certains champs - comme les séparateurs, les dates et les booléens - ne requi�
 
 * `fichier` :
 
-  * `taille` : taille maximale du ficheir, en kilo-octets (cette taille ne peut être supérieure à la limite imposée par la configuration de PHP).
+  * `taille` : taille maximale du fichier, en kilo-octets (cette taille ne peut être supérieure à la limite imposée par la configuration de PHP).
 
 Traduction de libellés
 ======================
