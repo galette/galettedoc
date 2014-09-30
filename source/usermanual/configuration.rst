@@ -29,7 +29,10 @@ Il vous est proposé quatre types de champs dynamiques :
 * `séparateur` : juste un libellé, comme un titre de partie,
 * `texte libre` : ajoutera une zone de texte multiligne,
 * `ligne simple` : ajoutera une zone de texte monoligne,
-* `choix` : ajoutera une liste de choix.
+* `choix` : ajoutera une liste de choix,
+* `date` : ajoutera un champ de type date, avec sélecteur,
+* `booléen` : ajoutera une case à cocher,
+* `fichier` : permettra de lier des ficheirs à la fiche adhérent.
 
 Lors de la création d'un nouveau champ (ou de la modification d'un champ existant) ; vous aurez également la possibilité de :
 
@@ -42,7 +45,7 @@ Lors de la création d'un nouveau champ (ou de la modification d'un champ exista
    :align: center
    :alt: Un champ dynamique de chaque type possible sur la fiche adhérent
 
-Certains champs - comme les séparateurs - ne requièrent aucune autre information complémentaire ; pour les autres :
+Certains champs - comme les séparateurs, les dates et les booléens - ne requièrent aucune autre information complémentaire ; pour les autres :
 
 * `texte libre` :
 
@@ -58,6 +61,10 @@ Certains champs - comme les séparateurs - ne requièrent aucune autre informati
 * `choix` :
 
   * `valeurs` : la liste des valeurs possibles pour la liste de choix.
+
+* `fichier` :
+
+  * `taille` : taille maximale du ficheir, en kilo-octets (cette taille ne peut être supérieure à la limite imposée par la configuration de PHP).
 
 Traduction de libellés
 ======================
