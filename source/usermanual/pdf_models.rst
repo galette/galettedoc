@@ -16,7 +16,7 @@ Actuellement, il existe un modèle factures et un modèle Reçu. Tous deux héri
 Héritage des modèles
 ====================
 
-Le fait qu'un modèle hérite d'un autre implique différentes choses du point de vue de Galette. Le modèle Gloabl comprend trois champs distincts :
+Le fait qu'un modèle hérite d'un autre implique différentes choses du point de vue de Galette. Le modèle Global comprend trois champs distincts :
 
 * l'en-tête,
 * le pied de page,

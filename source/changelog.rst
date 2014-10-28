@@ -7,6 +7,30 @@ Changelog
 =========
 
 ************
+0.8 -> 0.8.1
+************
+
+.. note::
+
+   Merci à Danielle qui a subventionné cette version !
+
+* Ajout des groupes de l'adhérent dans les modèles PDF,
+* Correction du nom de la table des champs dynamique de type liste,
+* Correction du bouton retour lors de l'ajout d'une contribution,
+* Un brin de nettoyage,
+* Correction de l'initialisation des catégories de champs,
+* Correction des champs dynamiques de type fichier,
+* Utilisation des traits PHP pour les ficheirs, images et imports CSV,
+* Les valeurs des champs dynamiques de type liste n'étaient pas affichées,
+* Correction de la détection de la classe SMTP pour l'envoi de courriels,
+* Suppression de l'entrée "Tous" dans les préférences pour le nombre d'enregistrements affichés,
+* Correction de champs dynamiques marqués répétables mais qui ne le sont pas,
+* Amélioration du thème, notamment pour les formulaires,
+* Correction de HTML invalide,
+* Correction de problèmes sur la page d'auto adhésion,
+* Ajout d'un flux RSS configurable.
+
+************
 0.7.8 -> 0.8
 ************
 
