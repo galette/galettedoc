@@ -10,7 +10,7 @@ Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que l
 
    Bien que l'utilisation du dépôt Git simplifie les choses pour le travail collaboratif, l'utiliser n'est **en rien une obligation**.
 
-   Vous pouvez parfaitement vous baser sur la `version nightly de Galette <http://downloads.tuxfamily.org/galette/galette-0.7-dev.tar.bz2>`_, mise à niveau depuis la branche `develop` quotidiennement.
+   Vous pouvez parfaitement vous baser sur la `version nightly de Galette <http://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_, mise à niveau depuis la branche `develop` quotidiennement.
 
 Pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez (nous y reviendrons dans le premier exemple patique) :-)
 
