@@ -79,7 +79,6 @@ Les chemins de Galette doivent pour la plupart impérativement être accessibles
 * `GALETTE_ATTACHMENTS_PATH` : le chemin vers les fichiers attachés,
 * `GALETTE_FILES_PATH` : chemin vers les fichiers stockés pour les adhérents (champs dynamiques),
 * `GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos,
-* `GALETTE_SQLITE_PATH` : le chemin de la base SQLite, si vous souhaitez utiliser ce moteur de base de données.
 
 Sécurité des données saisies
 ============================

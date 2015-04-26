@@ -43,7 +43,7 @@ Avant toute chose, vous devez vous assurer que votre base de données existe dé
 * nom de l'utilisateur de la base
 * mot de passe de l'utilisateur
 * nom de la base
-* type de la base (MySQL, PostgreSQL ou SQLite)
+* type de la base (MySQL ou PostgreSQL)
 
 Création de la base de données
 ------------------------------
@@ -74,15 +74,10 @@ Pour l'exemple, nous allons nous baser sur une base de données nommée `magalet
      $ createuser -P monutilisateurgalette
      $ createdb -O monutilisateurgalette magalette
 
-* SQLite
-
-Pour SQLite, si vous avez spécifié un :ref:`chemin pour la base dans votre système de fichiers <configpaths>`, assurez-vous de lui donner les droits adéquats. Si cette directive n'est pas renseignée, la base sera stockée dans le dossier ``data``. La base elle même sera créée automatiquement, aucune configuration compmlémentaire n'est requise
-
-Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MySQL <http://dev.mysql.com/doc/#refman>`_, de `PostgreSQL <http://docs.postgresqlfr.org>`_ ou de `SQLite <https://sqlite.org/>`_ selon votre cas ; ou utilisez un outil graphique :
+Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MySQL <http://dev.mysql.com/doc/#refman>`_ ou de `PostgreSQL <http://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique :
 
 * `phpMyAdmin <http://www.phpmyadmin.net>`_ ou `MySQL Workbench <http://www.mysql.fr/downloads/workbench/>`_ pour MySQL ;
-* `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <http://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL ;
-* `SQLite Manager pour Firefox <https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/>`_, une extension Firefox permettant la gestion de bases SQLite.
+* `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <http://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL.
 
 Paramètres de la base
 ---------------------
