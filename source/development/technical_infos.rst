@@ -4,15 +4,6 @@
 Informations techniques
 ***********************
 
-Schéma de Base de données
-=========================
-
-Le schéma de la base de données utilisée par Galette 0.7 est disponible sur `l'espace de téléchargements <http://download.tuxfamily.org/galette/dev/>`_. Le schéma à été généré depuis une installation de Galette à l'aide de `MySQL Workbench <http://www.mysql.fr/products/workbench/>`_. Il est disponible en plusieurs formats :
-
-* `format MySQL Workbench <http://download.tuxfamily.org/galette/dev/galette_07.mwb>`_,
-* `format PDF <http://download.tuxfamily.org/galette/dev/galette_07.pdf>`_,
-* `format PNG <http://download.tuxfamily.org/galette/dev/galette_07.png>`_.
-
 Bibliothèques utilisées
 =======================
 
