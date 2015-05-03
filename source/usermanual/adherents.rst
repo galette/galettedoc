@@ -218,3 +218,15 @@ L'interface vous avertira de l'erreur rencontrée, en mode test ou non.
 
    Il est tout à fait possible que l'import se passe correctement, mais qu'il vous soit ensuite indiqué que des champs obligatoires soient manquants lors de la modification d'une fiche. Ce type de comportement sera constaté si le modèle d'import n'inclut pas l'intégralité des champs obligatoires que vous avez configurés.
 
+Liens entre fiches adhérents
+============================
+
+.. versionadded: 0.8.2
+
+L'interface de Galette permet de relier plusieurs fiches à une fiche « parent ». Ce système peut être utilisé pour marquer le lien des différents membres d'une famille par exemple, ou les différentes personnes physiques liées à une même personne morale. L'interface permet alors d'accéder à la fiche parent depuis une fiche enfant, ou à n'importe quelle fiche enfant depuis la fiche parent.
+
+Il n'y a pas de limite dans le nombre des fiches attachées, mais la rattachement ne peut être récursif (une fiche enfant ne peut-être parente elle même).
+
+L'autre intérêt de ce système, c'est de pouvoir récupérer certaines informations lors de l'envoi de mailings ou de courriers postaux. En effet, dans chaque fiche enfant, les adresse de courriel et postales deviennent automatiquement facultatives, quelle que soit la configuration. Dans ce cas, si l'une ou l'autre de ces informations est manquante, elle sera récupérée depuis la fiche parent.
+
+.. note:: Tout adhérent dont l'adresse courriel n'est pas renseignée ne pourra pas utiliser la fonctionnalité « récupération du mot de passe ». Ce système ne lève pas la limite sur l'unicité de l'adresse de courriel en base de données.
