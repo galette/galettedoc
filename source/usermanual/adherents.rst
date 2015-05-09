@@ -225,7 +225,7 @@ Liens entre fiches adhérents
 
 L'interface de Galette permet de relier plusieurs fiches à une fiche « parent ». Ce système peut être utilisé pour marquer le lien des différents membres d'une famille par exemple, ou les différentes personnes physiques liées à une même personne morale. L'interface permet alors d'accéder à la fiche parent depuis une fiche enfant, ou à n'importe quelle fiche enfant depuis la fiche parent.
 
-Il n'y a pas de limite dans le nombre des fiches attachées, mais la rattachement ne peut être récursif (une fiche enfant ne peut-être parente elle même).
+Il n'y a pas de limite dans le nombre des fiches attachées, mais le rattachement ne peut être récursif (une fiche enfant ne peut-être parente elle même).
 
 L'autre intérêt de ce système, c'est de pouvoir récupérer certaines informations lors de l'envoi de mailings ou de courriers postaux. En effet, dans chaque fiche enfant, les adresse de courriel et postales deviennent automatiquement facultatives, quelle que soit la configuration. Dans ce cas, si l'une ou l'autre de ces informations est manquante, elle sera récupérée depuis la fiche parent.
 
