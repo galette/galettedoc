@@ -10,7 +10,47 @@ Changelog
 0.8.1 -> 0.8.2
 **************
 
+.. note::
+
+   Merci à Hélène de l'association Le Pic qui a subventionné cette version !
+
+.. _bogues_082:
+
+Bogues corrigés
+===============
+
+* Mots de passe de base de données contenant le caractère « $ » (entre autres)
+* Mise à jour des plugins
+* Génération des identifiants vides
+* Stockage des images des membres manquantes dans la base de données
+* Guillemets dans le script de mise à jour PostgreSQL
+* Suppression des caractères « : » dans les en-têtes des exports CSV
+* Exclusion des dons dans le calcul des dates de fin de cotisation
+* Import des sociétés depuis un fichier CSV
+* Soumission du formulaire de recherche avancée après sélection d'un groupe
+
+.. _ajouts_082:
+
+Nouveautés
+==========
+
+* Formulaire adhérent dynamique et paramétrable
+* Attachement d'adhérents
+* Numéro adhérent
+* Suppression des anciens fichiers de log
+* Affichage des membres d'un groupe par nom d'adhérent
 * Suppression du support SQLite.
+* Export des groupes sélectionnés ainsi que leurs sous groupes
+* Utilisation du filtre courant pour naviguer entre les fiches adhérents
+* Ajout du mode maintenance
+
+.. _souscapot_082:
+
+Sous le capot...
+================
+
+* Mise à jour des bilitohèques tierces
+* Ajout d'un paramètre pour régler les problèmes d'encodage sur certaines instances utilisant MySQL
 
 ************
 0.8 -> 0.8.1
