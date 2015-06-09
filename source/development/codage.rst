@@ -156,6 +156,7 @@ Il est possible de définir certains comportements de galette, qui interviennent
 * `GALETTE_HANDLE_ERRORS` : permet à Galette de se charger de traiter certaines erreurs. Pratique pour remonter des informations sur les hébergements dédiés (bien que les erreurs fatales ne puissent être interceptées). `false` indique à Galette de ne pas se préoccuper des erreurs PHP qui se retrouveront alors dans les logs du système (``/var/log/httpd/error_log`` en ce qui me concerne) ;
 * `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ; 
 * `GALETTE_LOG_LVL` : niveau de log (>= 3) ;
+* `NON_UTF_DBCONNECT` : désactiver la connexion explicite en UTF-8 à la base de données (utile poru certains utilisateurs qui rencontrent des problèmes d'encodage).
 
 Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Voici par exemple celui que j'utilise :
 
@@ -171,23 +172,23 @@ Ces directives peuvent être configurées dans un fichier nommé ``config/behavi
 Créer une release
 =================
 
-Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.7.2, il faut effectuer :
+Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.8.2, il faut effectuer :
 
 .. code-block:: bash
 
-   $ git archive --prefix=galette-0.7.2/ 0.7.2 | bzip2 > galette-0.7.2.tar.bz2
+   $ git archive --prefix=galette-0.8.2/ 0.8.2 | bzip2 > galette-0.8.2.tar.bz2
 
-Notez que cette archive ne contiendra pas `les bibliothèques externes <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ (Smarty, Zend et tcpdf) :
+Notez que cette archive ne contiendra pas `les bibliothèques externes <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ (Smarty, Zend, tcpdf, ...) :
 
 .. code-block:: bash
 
    $ wget http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2
    $ tar xjf galette_dev_includes.tar.bz2
 
-Vous devrez ajouter dans le dossier ``galette/includes`` du fichier ``galette-0.7.2.tar.bz2`` les dossiers contenus dans ``galette_dev_includes.tar.bz2``.
+Vous devrez ajouter dans le dossier ``galette/includes`` du fichier ``galette-0.8.2.tar.bz2`` les dossiers contenus dans ``galette_dev_includes.tar.bz2``.
 
 Finalement, l'archive peut être signée, avant sa mise en ligne (pour vérification ultérieure de l'intégrité de l'archive) :
 
 .. code-block:: bash
 
-   $ gpg --detach-sign --armor ./galette-0.7.2.tar.bz2
+   $ gpg --detach-sign --armor ./galette-0.8.2.tar.bz2

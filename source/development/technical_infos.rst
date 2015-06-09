@@ -4,15 +4,6 @@
 Informations techniques
 ***********************
 
-Schéma de Base de données
-=========================
-
-Le schéma de la base de données utilisée par Galette 0.7 est disponible sur `l'espace de téléchargements <http://download.tuxfamily.org/galette/dev/>`_. Le schéma à été généré depuis une installation de Galette à l'aide de `MySQL Workbench <http://www.mysql.fr/products/workbench/>`_. Il est disponible en plusieurs formats :
-
-* `format MySQL Workbench <http://download.tuxfamily.org/galette/dev/galette_07.mwb>`_,
-* `format PDF <http://download.tuxfamily.org/galette/dev/galette_07.pdf>`_,
-* `format PNG <http://download.tuxfamily.org/galette/dev/galette_07.png>`_.
-
 Bibliothèques utilisées
 =======================
 
@@ -33,8 +24,7 @@ L'accès aux bases de données sera désormais assuré par `l'extension de gesti
 Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'est compatible qu'avec :
 
 * `MySQL <http://mysql.com/>`_ version 5.x (le support InnoDB est requis),
-* `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente,
-* `SQLite <http://www.sqlite.org/>`_
+* `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente.
 
 Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
 
