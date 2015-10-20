@@ -6,6 +6,20 @@
 Changelog
 =========
 
+******************
+0.8.2.1 -> 0.8.2.2
+******************
+
+* Envoi de courriels à un membre attaché (`#931 <http://bugs.galette.eu/issues/931>`_)
+* La case à cocher « personne morale » était toujours décochée, provoquant l'effacement de la raison sociale (`#929 <http://bugs.galette.eu/issues/929>`_)
+* Problème avec les listes déroulantes sous Firefox (`#933 <http://bugs.galette.eu/issues/933>`_)
+
+****************
+0.8.2 -> 0.8.2.1
+****************
+
+* Problème avec le champs "Autres infos (admin)"
+
 **************
 0.8.1 -> 0.8.2
 **************
