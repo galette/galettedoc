@@ -10,7 +10,7 @@ Par exemple, sous `Fedora <http://fedora-fr.org>`_, vous lancerez (en root) :
 .. code-block:: bash
 
    # cd /var/www/galette/
-   # chown -R apache:apache cache data
+   # chown -R apache:apache config data
 
 Sous `Debian <http://debian.org/>`_, on remplacera ``apache:apache`` par ``www-data:www-data``.
 

@@ -28,6 +28,19 @@ Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant la lign
 
    SetEnv SetEnv PHP_VER 5_4
 
+Nginx
+=====
+
+Le `serveur web Nginx <http://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <http://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
+
+Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :
+
+.. code-block:: apacheconf
+
+   location ~ /(data|config|lib)/ {
+       deny all;
+   }
+
 Ouvaton
 =======
 
