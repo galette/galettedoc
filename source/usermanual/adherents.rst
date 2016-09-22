@@ -116,7 +116,9 @@ Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs
 E-Mailing
 =========
 
-.. warning:: Bien que Galette permette l'envoi de courriels au format HTML, notez que c'est une pratique qu'il faut déconseiller ; le poids des messages envoyés s'en trouve très fortement augmenté (pour finalement pas grand chose) et que certaines personnes lisent leurs courriels uniquement en texte simple (votre serviteur, par exemple). Sachez que Galette envoie **systématiquement** une version texte des couriels HTML, afin que le message puisse être lu partout.
+.. warning:: **L'envoi de mailings dans Galette est prévu pour fonctionner de manière optimale depuis la liste des adhérents.**
+
+   La création directe d'un mailing fonctionne tout aussi bien, mais la sélection des destinataires est bien plus limitative, elle ne peut servir que pour des cas très limités.
 
 Depuis Galette, vous pouvez envoyer des E-Mailings à une sélection de vos adhérents. Chaque E-Mailing envoyé est stocké afin de pouvoir servir de modèle par la suite. Ainsi, depuis la `Gestion des E-Mailings` ; vous pourrez sélectionner un message que vous avez déjà envoyé, et l'utiliser comme modèle, récupérant ainsi la liste des personnes qui avaient été sélectionnées pour cet envoi, le sujet, et le contenu du message lui même.
 
@@ -133,6 +135,8 @@ Une fois le sujet entré ; on passera à la rédaction du message en lui même. 
 L'interface par défaut de Galette est volontairement simple et légère ; pour ne pas alourdir inutilement l'ensemble du logiciel. L'envoi de courriels en HTML complexe est une pratique à décourager globalement :-)
 
 Dès lors que l'éditeur HTML est activé, la case `Interpréter les balises HTML` est automatiquement cochée. Si vous souhaitez envoyer un E-Mailing en HMTL sans utiliser l'éditeur, pensez à cocher cette case !
+
+.. warning:: Bien que Galette permette l'envoi de courriels au format HTML, notez que c'est une pratique qu'il faut déconseiller ; le poids des messages envoyés s'en trouve très fortement augmenté (pour finalement pas grand chose) et que certaines personnes lisent leurs courriels uniquement en texte simple (votre serviteur, par exemple). Sachez que Galette envoie **systématiquement** une version texte des couriels HTML, afin que le message puisse être lu partout.
 
 Il est possible de joindre des fichiers à votre envoi, cliquez simplement sur le bouton `Parcourir` dans la zone `Ajouter une pièce jointe` pour ce faire. Si votre navigateur est compatible, il est possible de sélectionne plusieurs fichiers dans la fenêtre qui s'ouvrira (avec les touches Ctrl et/ou Shift).
 Les pièces jointes sont stockées sur le disque, dans un sous dossier spécifique portant le numéro d'identifiant de l'envoi (déterminé automatiquement par la base de données).
