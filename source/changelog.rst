@@ -7,6 +7,15 @@ Changelog
 =========
 
 ******************
+0.8.2.2 -> 0.8.2.3
+******************
+
+* Compatibilité PHP 7 (`#953 <http://bugs.galette.eu/issues/953>`_)
+* Correction d'un problème de recherche avancée avec des champs dynamiques (`#948 <http://bugs.galette.eu/issues/948>`_)
+* Le module `mbstring` est requis (`#943 <http://bugs.galette.eu/issues/943>`_)
+* Empêcher les utilisateurs inactifs de se connecter (`#941 <http://bugs.galette.eu/issues/941>`_)
+
+******************
 0.8.2.1 -> 0.8.2.2
 ******************
 
