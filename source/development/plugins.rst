@@ -447,3 +447,22 @@ Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` d
 
 Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à nue base doivent en faire de même.
 
+URL du formulaire d'adhésion
+============================
+
+.. versionadded:: 0.8.3
+
+Il est possible de reconfigurer l'URL du formulaire PDF d'adhésion. Une version basique est fournie dns Galette, basée sur les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants.
+
+Le :doc:`plugin Fullcard <../plugins/fullcard>` par exemple, s'il est installé, remplacera le formulaire par défaut par un modèle plus précis.
+
+Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un code similaire à :
+
+.. code-block:: php
+
+   <?php
+   $_preferences = [
+      'pref_adhesion_form_uri' => '/plugins/' . $id . '/form.php'
+   ];
+
+Dans l'exemple qui précède, ``$id`` sera remplacé par le nom du répertoire dans lequel le plugin a été installé, et ``form.php`` représente le fichier PHP qui va effectivement afficher le PDF.
