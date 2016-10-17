@@ -6,6 +6,39 @@
 Changelog
 =========
 
+****************
+0.8.2.3 -> 0.8.3
+****************
+
+.. _bogues_083:
+
+Bogues corrigés
+===============
+
+* Améliorations sur la gestion des groupes (merci à `Remi <http://blog.remirepo.net>`_),
+* Validation des données sur les champs cachés (`#958 <http://bugs.galette.eu/issues/958>`_)
+* Corrections visuelles mineures
+* Désactivation du champ mot de passe (`#957 <http://bugs.galette.eu/issues/957>`_)
+* Pas d'ajout de contribution sur la création d'un adhérent exempt (`#966 <http://bugs.galette.eu/issues/966>`_)
+* Correction d'un problème MySQL survenant parfois sous Windows (`#954 <http://bugs.galette.eu/issues/954>`_)
+* Affichage des adhérents exempts actifs uniquement sur le spages publiques (`#971 <http://bugs.galette.eu/issues/971>`_)
+* Certains champs n'étaient pas marqués comme étant requis (`#974 <http://bugs.galette.eu/issues/974>`_)
+* Correction sur certains types de données dans la configuration des champs
+
+.. _ajouts_083:
+
+Nouveautés
+==========
+
+* Fiche adhérent PDF modifiable via les modèles
+* Ajout d'une addresse multi-ligne pour les modèles PDF
+* Support des champs dynamiques dans les modèles PDF
+* Support RSS pour les news (`#956 <http://bugs.galette.eu/issues/956>`_)
+* Remplacement de chaînes dans les modèles PDF
+* Utilisation de l'adresse postale de la fiche parente si celle de l'adhérent n'est pas renseignée
+* Utilisation de l'adresse email de la fiche parent (suite et fin)
+* Modification des nom, prénom, genre et titre par l'adhérent lui même
+
 ******************
 0.8.2.2 -> 0.8.2.3
 ******************
