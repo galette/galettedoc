@@ -9,6 +9,22 @@ Bibliothèques utilisées
 
 L'ensemble des `bibliothèques externes utilisées dans la version de développement de Galette <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ est disponible sous forme d'une archive sur l'espace de téléchargement.
 
+.. _slim:
+
+Slim
+----
+
+.. image:: ../_styles/static/images/libraries/slim.png
+   :align: right
+
+.. versionadded:: 0.9
+
+*Version de la biliothèque requise :* `3.2.0`
+
+Les URL utilisées dans Galette sont générées et servies par le `micro framework Slim <http://www.slimframework.com/>`_ dans sa version `3`.
+
+Là où nous avions auparavant un fichier ``.php`` par page à afficher, tout est désormais géré par un système de routes nommées et paramétrées ; ce qui rend les modifications et évolutions plus souples. La `documentation de Slim <http://www.slimframework.com/docs/>`_ est un bon point de départ pour comprendre comment le système fonctionne.
+
 .. _zend_db:
 
 Zend DB
