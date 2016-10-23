@@ -71,7 +71,7 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 Conventions d'écriture
 ======================
 
-Le code source de Galette se doit de suivre les `conventions d'écriture adoptées par PHP PEAR <http://pear.php.net/manual/en/standards.php>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
+Le code source de Galette se doit de suivre les `conventions d'écriture PSR2 <http://www.php-fig.org/psr/psr-2/>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
 
 Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains warnings peuvent être ignorés, mais les potentielles erreurs devraiet toutes être corrigées.
 
@@ -133,12 +133,11 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
       /**
        * Main constructor
        */
-      __construct()
+      public function __construct()
       {
          //do something :)
       }
    }
-   ?>
 
 Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de documentation qui la précède.
 
