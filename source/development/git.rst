@@ -21,11 +21,65 @@ Quelques liens qui peuvent être utiles :
 * http://ndpsoftware.com/git-cheatsheet.html
 * http://progit.org/book/
 
-Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, mais sous forme d'une `archive à télécharger <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ et à décompresser dans le dossier ``includes`` de Galette. Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
+Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, référez-vous au paragraphe :ref:`bibliothèques tierces <deps>`.
 
 Une fois le dépôt cloné et les bibliothèques externes installées, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
 
 Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
+
+.. _deps:
+
+Bibliothèques tierces
+---------------------
+
+Pour fonctionner, Galette a besoin d'un certain nombre de bibliothèques externes.
+
+Initialement, ces bibliothèques étaient dans le dépôt de Galette, mais cela prenait trop de place, et était trop compliqué à gérer. Il a été décidé de les placer dans une arcive à part, qu'il fallait récupérer et décompresser dans le dossier ``includes`` ; mais tout ceci est maintenant déprécié.
+
+Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <http://getcomposer.org>`:
+
+.. code-block:: bash
+
+   $ cd galette/galette
+   $ composer install -o
+
+L'utilisation de composer est pratique pour gérer les bibliothèques tierces durant la phase de développement, c'est également ce qui est utilisé pour générer les archives (nightly et releases) ; après un brin de nettoyage. A toutes fins utiles, voici une partie du script utilisé pour la nightly :
+
+.. code-block:: bash
+
+   cd /path/to/galette/clone
+   git archive --prefix=galette-dev/ develop galette | bzip2 > /tmp/galette-dev.tar.bz2
+   cd /tmp
+   tar xjf galette-dev.tar.bz2 && rm -f galette-dev.tar.bz2
+   cd galette-dev/galette
+   echo -n "Installing deps..."
+   composer install --no-dev -o --quiet
+   echo " Done"
+   pushd vendor > /dev/null
+   # Cleanup vendors
+   echo -n "Cleaning deps..."
+   find ./ -name test -or -name tests -type d -exec rm -rf {} \; 2>1 > /dev/null
+   find ./ -name doc -or -name docs -type d -exec rm -rf {} \; 2>1 > /dev/null
+   find ./ -name example -or -name examples -type d -exec rm -rf {} \; 2>1 > /dev/null
+   pushd tecnickcom/tcpdf > /dev/null
+   cp -a fonts fonts.orig
+   rm -rf fonts/*
+   cp -a fonts.orig/dejavusans.* fonts/
+   cp -a fonts.orig/dejavusansb.* fonts/
+   cp -a fonts.orig/dejavusansbi.* fonts/
+   cp -a fonts.orig/dejavusansi.* fonts/
+   cp -a fonts.orig/dejavu-fonts-ttf-2.34 fonts/
+   cp -a fonts.orig/helvetica.php fonts/
+   cp -a fonts.orig/zapfdingbats.php fonts/
+   rm -rf fonts.orig
+   popd > /dev/null
+   echo " Done"
+   popd > /dev/null
+   echo -n "Compressing..."
+   tar cjf galette-dev.tar.bz2 galette-dev
+   echo " Done"
+
+Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
 
 .. _gitlinux:
 
