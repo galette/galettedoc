@@ -37,17 +37,6 @@ Analog
 
 Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analog/>`_.
 
-.. _passwordcompat:
-
-password_compat
----------------
-
-.. versionadded:: 0.7.4
-
-*Version de la bibliothèque requise :* `1.0.3`
-
-Pour le stockage des mots de passe. Cette bibliothèque n'est pas nécessaire si vous utilisez PHP 5.5 ou utlérieur, elle requiert PHP 5.3.7 minimum.
-
 .. _smarty:
 
 Smarty
