@@ -73,7 +73,42 @@ Conventions d'écriture
 
 Le code source de Galette se doit de suivre les `conventions d'écriture PSR2 <http://www.php-fig.org/psr/psr-2/>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
 
-Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains warnings peuvent être ignorés, mais les potentielles erreurs devraiet toutes être corrigées.
+Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains avertissements peuvent être ignorés, mais les potentielles erreurs doivent toutes être corrigées. Pour lancer une vérification automatique, utilisez la commande ``phpcs`` :
+
+.. code-block:: bash
+
+   $ phpcs --standard=PEAR lib/Galette/Core/Authentication.php
+
+   FILE: .../private/galette.git/galette/lib/Galette/Core/Authentication.php
+   ----------------------------------------------------------------------
+   FOUND 9 ERRORS AND 2 WARNINGS AFFECTING 11 LINES
+   ----------------------------------------------------------------------
+     27 | ERROR   | [x] Tag value indented incorrectly; expected 1
+        |         |     spaces but found 2
+     28 | ERROR   | [x] Tag value indented incorrectly; expected 2
+        |         |     spaces but found 3
+     32 | WARNING | [ ] Line exceeds 85 characters; contains 108
+        |         |     characters
+     48 | WARNING | [ ] Line exceeds 85 characters; contains 108
+        |         |     characters
+     90 | ERROR   | [ ] Doc comment for parameter "$preferences" missing
+    124 | ERROR   | [x] First condition of a multi-line IF statement
+        |         |     must directly follow the opening parenthesis
+    202 | ERROR   | [ ] Doc comment short description must start with a
+        |         |     capital letter
+    222 | ERROR   | [x] First condition of a multi-line IF statement
+        |         |     must directly follow the opening parenthesis
+    225 | ERROR   | [x] First condition of a multi-line IF statement
+        |         |     must directly follow the opening parenthesis
+    255 | ERROR   | [x] First condition of a multi-line IF statement
+        |         |     must directly follow the opening parenthesis
+    277 | ERROR   | [x] First condition of a multi-line IF statement
+        |         |     must directly follow the opening parenthesis
+   ----------------------------------------------------------------------
+   PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+   ----------------------------------------------------------------------
+
+   Time: 83ms; Memory: 6.25Mb
 
 Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieure). L'ensemble des fichiers source PHP doit en contenir la mention ; selon le modèle suivant (issu de la classe `Authentication` de Galette) :
 
