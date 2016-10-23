@@ -51,7 +51,7 @@ Modification des champs inactifs
 
 .. versionadded:: 0.7.1
 
-Lors de la création ou de la modification d'adhérents, certains champs sont désactivés, en fonction des accrédidations de l'utilisateur connecté. Les champs inactifs sont déclarés au sein du code de Galette.
+Lors de la création ou de la modification d'adhérents, certains champs sont désactivés en fonction des accrédidations de l'utilisateur connecté. Les champs inactifs sont déclarés au sein du code de Galette.
 
 .. warning:: L'utilisation de cette possibilité en dehors du contexte peuvent amener à des problèmes de fonctionnement de Galette, tous les cas de figure n'ayant pas été testés. Il est **fortement recommandé** de modifier ces possibilités avec parcimonie, et de tester régulièrement vos modifications !
 
@@ -76,6 +76,10 @@ Toujours dans l'optique de ne pas modifier les fichiers de Galette (ce qui, je v
     );
 
 2. Les champs désactivés pour les simples utilisateurs, mais en mode modification uniquement :
+
+.. note::
+
+   Depuis la version `0.8.3` de Galette, plus aucun champ n'est désactivé pour les adhérents.
 
 .. code-block:: php
 

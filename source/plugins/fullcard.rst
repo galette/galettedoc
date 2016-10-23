@@ -4,6 +4,10 @@ Fullcard
 
 Ce plugin a été développé pour `l'association Borsalinux-fr (anciennement Fedora-Fr) <http://borsalinux-fr.org>`_. Il permet la génération d'une fiche adhérent PDF qui peut soit être vierge (pour une utilisation lors de salons, etc) ; soit pré-rempli avec les données de l'utilisateur (qui peut être joint à un paiement par chèque par exemple).
 
+.. note::
+
+   Depuis la version `0.8.3` de Galette, une fiche par défaut basée sur les modèles PDF est disponible. L'installation du plugin à partir de la version `1.6` remplacera cette fiche en ignorant le modèle.
+
 Installation
 ============
 
