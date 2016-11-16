@@ -43,41 +43,7 @@ Désormais, pour installer les bibliothèques tierces dans Galette, il faut util
    $ cd galette/galette
    $ composer install -o
 
-L'utilisation de composer est pratique pour gérer les bibliothèques tierces durant la phase de développement, c'est également ce qui est utilisé pour générer les archives (nightly et releases) ; après un brin de nettoyage. A toutes fins utiles, voici une partie du script utilisé pour la nightly :
-
-.. code-block:: bash
-
-   cd /path/to/galette/clone
-   git archive --prefix=galette-dev/ develop galette | bzip2 > /tmp/galette-dev.tar.bz2
-   cd /tmp
-   tar xjf galette-dev.tar.bz2 && rm -f galette-dev.tar.bz2
-   cd galette-dev/galette
-   echo -n "Installing deps..."
-   composer install --no-dev -o --quiet
-   echo " Done"
-   pushd vendor > /dev/null
-   # Cleanup vendors
-   echo -n "Cleaning deps..."
-   find ./ -name test -or -name tests -type d -exec rm -rf {} \; 2>1 > /dev/null
-   find ./ -name doc -or -name docs -type d -exec rm -rf {} \; 2>1 > /dev/null
-   find ./ -name example -or -name examples -type d -exec rm -rf {} \; 2>1 > /dev/null
-   pushd tecnickcom/tcpdf > /dev/null
-   cp -a fonts fonts.orig
-   rm -rf fonts/*
-   cp -a fonts.orig/dejavusans.* fonts/
-   cp -a fonts.orig/dejavusansb.* fonts/
-   cp -a fonts.orig/dejavusansbi.* fonts/
-   cp -a fonts.orig/dejavusansi.* fonts/
-   cp -a fonts.orig/dejavu-fonts-ttf-2.34 fonts/
-   cp -a fonts.orig/helvetica.php fonts/
-   cp -a fonts.orig/zapfdingbats.php fonts/
-   rm -rf fonts.orig
-   popd > /dev/null
-   echo " Done"
-   popd > /dev/null
-   echo -n "Compressing..."
-   tar cjf galette-dev.tar.bz2 galette-dev
-   echo " Done"
+L'utilisation de composer est pratique pour gérer les bibliothèques tierces durant la phase de développement, c'est également ce qui est utilisé pour générer les archives (nightly et releases) ; après un brin de nettoyage.
 
 Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
 
