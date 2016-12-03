@@ -6,6 +6,10 @@
 Écriture de plugins
 *******************
 
+.. warning::
+
+   Dans l'actuelle version de développement, le système de plugins a **énormément changé** ; la présente documentation n'est plus applicable.
+
 Depuis la version 0.7 ; Galette fournit un système de plugins - rudimentaire, certes, mais qui a le mérite d'exister :-)
 
 Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les templates Smarty) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
