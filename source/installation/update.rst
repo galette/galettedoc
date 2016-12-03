@@ -10,7 +10,9 @@ Si vous utilisez actuellement une version antérieure de Galette, vous choisirez
 
    Une mise à jour n'est jamais une opération anodine, puisque vos données sont modifiées. En conséquence, prenez bien soin d'effectuer une **sauvegarde de votre base de données actuelle** ; sous peine de perdre tout ou partie de vos données.
 
-Dans un premier temps, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.8.3.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
+Dans un premier temps, déconnectez-vous de votre instance de Galette actuelle.
+
+Ensuite, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.8.3.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
 
 Certains fichiers et répertoires contiennent des données et devraient être réintégrés à la nouvelle installation :
 
@@ -20,7 +22,9 @@ Certains fichiers et répertoires contiennent des données et devraient être r�
 * ``data/files`` qui contient les fichiers attachés aux adhérents (Galette 0.8 et versions ultérieures),
 * ``data/attachments`` qui contient les fichiers attachés aux mailings.
 
-Une fois la  mise à jour des fichiers effectuée, rendez-vous sur la page `http://localhost/galette/install/index.php`. Toutes les autres pages indiqueront qu'une mise à jour est requise.
+Une fois la  mise à jour des fichiers effectuée, rendez-vous sur votre instance de Galette. Lancez la procédure de mise à jour n'est pas toujours nécessaire, si votre instance ne vous le demande pas, c'est qu'il n'y a rien de plus à faire ;-)
+
+Dans le cas contraire, Galette vous informe qu'une mise à jour est nécessaire, il faut aller sur la page `http://localhost/galette/install/index.php`.
 
 .. note::
 
