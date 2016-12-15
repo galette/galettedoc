@@ -7,6 +7,13 @@ Changelog
 =========
 
 ****************
+0.8.3 -> 0.8.3.1
+****************
+
+* Corrections de bogues relatifs au mode strict de MySQL 5.7
+* Correction de l'adresse dans les PDF des fiches des membres
+
+****************
 0.8.2.3 -> 0.8.3
 ****************
 
