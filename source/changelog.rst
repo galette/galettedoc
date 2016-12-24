@@ -6,6 +6,19 @@
 Changelog
 =========
 
+******************
+0.8.3.2 -> 0.8.3.3
+******************
+
+* Correction du bug d'enregistrement (`#996 <http://bugs.galette.eu/issues/996>`_)
+* L'exension mcrypt n'est plus requise
+
+******************
+0.8.3.1 -> 0.8.3.2
+******************
+
+* Correction d'un régréssion introduite dans la version précédente
+
 ****************
 0.8.3 -> 0.8.3.1
 ****************
