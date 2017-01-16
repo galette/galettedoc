@@ -18,13 +18,13 @@ Les sources de la documentation sont sous `gestionnaire de versions Git <http://
 
   * si vous possédez un compte chez Tuxfamily et que vous faites partie du projet Galette :
 
-  .. code-block:: bash
+  .. code-block:: raw
 
      $ git clone ssh://VOTREUSER@git.tuxfamily.org/gitroot/galette/galettedoc.git
 
   * en tant qu'utilisateur anonyme :
 
-  .. code-block:: bash
+  .. code-block:: raw
 
      $ git clone git://git.tuxfamily.org/gitroot/galette/galettedoc.git
 
@@ -38,7 +38,7 @@ Une fois les sources récupérées, vous pourrez construire la documentation. To
 
 Depuis le dossier de la documentation, la liste des possibilités peut être affichés en tapant simplement ``make`` :
 
-.. code-block:: bash
+.. code-block:: raw
 
    $ make
    Please use `make <target>' where <target> is one of
@@ -61,7 +61,7 @@ Depuis le dossier de la documentation, la liste des possibilités peut être aff
 
 Pour construire les versions texte, PDF et HTML, on entrera donc :
 
-.. code-block:: bash
+.. code-block:: raw
 
    $ make html pdf text
    sphinx-build -b html -d build/doctrees -D latex_paper_size=a4  source build/html

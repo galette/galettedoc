@@ -283,7 +283,7 @@ Chaque plugin doit fournir les traductions des nouvelles chaînes qu'il propose.
 
 Pour ce faire, copiez dans le dossier ``lang`` du plugin depuis le dossier ``lang`` de Galette les fichiers ``Makefile`` et ``xgettext.py`` :
 
-.. code-block:: makefile
+.. code-block:: raw
 
    $ cd plugins/MyPlugin/lang
    $ cp ../../../lang/Makefile ../../../lang/xgettext.py .
