@@ -24,7 +24,7 @@ OVH
 
 Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant la ligne suivante qui va activer le support PHP 5.4 :
 
-.. code-block:: apacheconf
+.. code-block:: raw
 
    SetEnv SetEnv PHP_VER 5_4
 
@@ -35,7 +35,7 @@ Le `serveur web Nginx <http://nginx.com>`_ adopte une configuration différente 
 
 Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :
 
-.. code-block:: apacheconf
+.. code-block:: nginx
 
    location ~ /(data|config|lib)/ {
        deny all;
