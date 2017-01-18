@@ -135,10 +135,10 @@ La mise à jour de Galette, consistait historiquement à lancer de simples scrip
 
 Tout cela est totalement transparent, des informations sur les différentes étapes, leur échec ou leur succès vous seront affichées sur le même modèle que lors de la création des tables.
 
-Sélection de la verison précédente
+Sélection de la version précédente
 ----------------------------------
 
-Dans le cas d'une mise à jour, vous devrez sélectionner la version antérieure de Galette. Le système d'installation essaiera de « deviner » pour vous de quelle verison il s'agit, et sélectionnera l'entrée adéquate par défaut (elle sera affichée en caractères gras pour la différencier des autres).
+Dans le cas d'une mise à jour, vous devrez sélectionner la version antérieure de Galette. Le système d'installation essaiera de « deviner » pour vous de quelle version il s'agit, et sélectionnera l'entrée adéquate par défaut (elle sera affichée en caractères gras pour la différencier des autres).
 
 .. image:: ../_styles/static/images/installation/5_update_version_select.png
    :scale: 70%
