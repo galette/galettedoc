@@ -127,7 +127,7 @@ Une fois le développement terminé, il suffit de suivre le conseil donné par g
    - Feature branch 'feature/nimp' has been removed
    - You are now on branch 'develop'
 
-Et hop. Vos modifications ont été répercutées dans la branche `develop`, la fonctionnalité `nimp` est disponible aux tests :-) Bon, pas tout à fait dans la pratique, voyez :ref:`comment soummettre un patch <sendpatch>` pour la suite.
+Et hop. Vos modifications ont été répercutées dans la branche `develop`, la fonctionnalité `nimp` est disponible aux tests :-) Bon, pas tout à fait dans la pratique, voyez :ref:`comment soumettre un patch <sendpatch>` pour la suite.
 
 Correction d'un bogue
 ---------------------
