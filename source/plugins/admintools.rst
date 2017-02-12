@@ -31,7 +31,10 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
 Récupération des sources
 ========================
 
-Le code source du plugin Maps est stocké dans un dépôt GIT accessible à l'adresse :
-`git://git.tuxfamily.org/gitroot/galette/plugin-admintools.git <git://git.tuxfamily.org/gitroot/galette/plugin-admintools.git>`_
+Le code source du plugin Admintools est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-admintools.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-admintools.git>`_, utilisez :
+
+.. code-block:: bash
+
+   $ git clone git.tuxfamily.org/gitroot/galette/plugin-admintools.git
 
 Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
