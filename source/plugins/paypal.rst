@@ -58,7 +58,10 @@ Après cela, votre formulaire permettra à un internaute de sélectionner le typ
 Récupération des sources
 ========================
 
-Le code source du plugin Maps est stocké dans un dépôt GIT accessible à l'adresse :
-`git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git <git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git>`_
+Le code source du plugin Paypal est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-paypal.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git>`_, utilisez :
+
+.. code-block:: bash
+
+   $ git clone git.tuxfamily.org/gitroot/galette/plugin-paypal.git
 
 Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
