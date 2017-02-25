@@ -40,15 +40,3 @@ Il conviendra donc traduire les règles de restriction d'accès aux données dan
    location ~ /(data|config|lib)/ {
        deny all;
    }
-
-Ouvaton
-=======
-
-Un problème particulier se présente avec cet hébergement, dès la première étape de l'installation qui propose normalement les langues disponibles ; rien n'est affiché... Si vous êtes dans ce cas de figure, la procédure est simple : il suffit de créer un fichier ``galette/config/behavior.inc.php`` avec le contenu suivant :
-
-.. code-block:: php
-
-   <?php
-   define('GALETTE_HANDLE_ERRORS', false);
-   define('GALETTE_SYS_LOG', true);
-

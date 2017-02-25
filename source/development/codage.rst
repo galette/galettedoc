@@ -176,8 +176,7 @@ Configuration du comportement
 Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :
 
 * `GALETTE_MODE` : `le mode de Galette <galettemodes>` ;
-* `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
-* `GALETTE_HANDLE_ERRORS` : permet à Galette de se charger de traiter certaines erreurs. Pratique pour remonter des informations sur les hébergements dédiés (bien que les erreurs fatales ne puissent être interceptées). `false` indique à Galette de ne pas se préoccuper des erreurs PHP qui se retrouveront alors dans les logs du système (``/var/log/httpd/error_log`` en ce qui me concerne) ;
+* `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les détails des erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
 * `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ;
 * `GALETTE_LOG_LVL` : niveau de log ;
 * `NON_UTF_DBCONNECT` : désactiver la connexion explicite en UTF-8 à la base de données (utile pour certains utilisateurs qui rencontrent des problèmes d'encodage).
@@ -192,8 +191,7 @@ Ces directives peuvent être configurées dans un fichier nommé ``config/behavi
 
    <?php
    define('GALETTE_MODE', 'DEV');
-   define('GALETTE_DISPLAY_ERRORS', false);
-   define('GALETTE_HANDLE_ERRORS', false);
+   define('GALETTE_DISPLAY_ERRORS', true);
    define('GALETTE_SYS_LOG', true);
    define('GALETTE_LOG_LVL', 7);
 
