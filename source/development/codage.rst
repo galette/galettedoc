@@ -168,32 +168,6 @@ Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des cl
 
 Pour une meilleure compréhension du code pour l'ensemble des intervenants, on essaiera de documenter au maximum le code produit.
 
-.. _behavior:
-
-Configuration du comportement
-=============================
-
-Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :
-
-* `GALETTE_MODE` : `le mode de Galette <galettemodes>` ;
-* `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les détails des erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
-* `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ;
-* `GALETTE_LOG_LVL` : niveau de log ;
-* `NON_UTF_DBCONNECT` : désactiver la connexion explicite en UTF-8 à la base de données (utile pour certains utilisateurs qui rencontrent des problèmes d'encodage).
-
-.. warning::
-
-   La directive `GALETTE_SYS_LOG` ne fonctionnera par défaut comme escompté qu'avec ``mod_php``. Si vous utilisez FPM, il vous faudra définir la variable de configuration ``catch_worker_output`` à ``yes``, dans ce cas, les logs seront enregistrés dans le fichier d'erreur de FPM et non du pool utilisé.
-
-Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Par exemple :
-
-.. code-block:: php
-
-   <?php
-   define('GALETTE_MODE', 'DEV');
-   define('GALETTE_DISPLAY_ERRORS', true);
-   define('GALETTE_SYS_LOG', true);
-   define('GALETTE_LOG_LVL', 7);
 
 Créer une release
 =================
