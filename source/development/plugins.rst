@@ -470,3 +470,10 @@ Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un co
    ];
 
 Dans l'exemple qui précède, ``$id`` sera remplacé par le nom du répertoire dans lequel le plugin a été installé, et ``form.php`` représente le fichier PHP qui va effectivement afficher le PDF.
+
+Debug
+=====
+
+À l'instar de Galette elle-même, un :doc:`peu de déboguage <debug>` sera peut-être nécéssaire durant vos développements...
+
+Notez qu'il vous sera possible de modifier certains :ref:`comportements de Galette (niveau de verbosité, mode de l'application, ...) <behavior>`.

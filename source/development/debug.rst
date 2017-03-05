@@ -15,20 +15,20 @@ Le niveau de verbosité de ces fichiers de log est fixé par défaut à ``INFO``
 
 .. note::
 
-   Notez que l'écriture dans les fichiers de logs demande des ressources, plus les lgos sont verbeux, plus l'application sera « lente ».
+   Notez que l'écriture dans les fichiers de logs demande des ressources, plus les logs sont verbeux, plus l'application sera « lente ».
 
-Performances
-============
+   Notez également qu'il est possible que des données « sensibles » soient enregistrées dans le logs ; le mode ``DEBUG`` enregistre par exemple toute sles requêtes effectuées dans votre base !
 
-Les performances des différentes pages de Galette peuvent être testées à l'aide de l'`outil de profilage hiérarchique XHProf <http://php.net/manual/fr/book.xhprof.php>`_. L'installation de XHProf sur votre poste dépasse le cadre de ce manuel.
+Différents niveaux de log sont possibles ; de nombreux exemples d'utilisation sont visibles dans le code source. Il sont définis par `la biliothèque utilisée (Analog) <https://github.com/jbroadway/analog>`_, du plus critique au moins critique :
 
-Une fois XHProf installé et fonctionnel sur votre poste, il faut dire à Galette où il se trouve. Pour ce faire, ajoutez la ligne suivante à votre fichier ``galette/config/local.paths.inc.php`` :
-
-.. code-block:: php
-
-   define('GALETTE_XHPROF_PATH', '/usr/share/xhprof/');
-
-L'activation de XHProf lancera le profilage de chaque page affichée, vous fournissant en retour un lien dans le fichier de log de Galette pour consulter le résultat du rapport.
+* ``URGENT``
+* ``ALERT``
+* ``CRITICAL``
+* ``ERROR``
+* ``WARNING``
+* ``NOTICE``
+* ``INFO``
+* ``DEBUG``
 
 .. _galettemodes:
 
@@ -41,9 +41,38 @@ Certains modes sont prédéfinis dans Galette, et sont réglables via la constan
 * ``DEV`` : mode développement :
 
   - les éventuelles parties instables/pas finies seront affichées,
-  - certains objets ne seront pas stockés en session (l'historique, et le logo à l'heure où j'écris ces lignes),
-  - le niveau de log par défaut sera défini à `DEBUG`,
-  - les news ne seront pas mises en cache (Twitter et Google+ seront intérrogés à chaque afichage du Bureau).
+  - certains objets ne seront pas stockés en session,
+  - le niveau de log par défaut sera défini à ``DEBUG``,
+  - les news ne seront pas mises en cache,
+  - la version de la base de données ne sera pas vérifiée.
 
-* ``DEMO`` : un mode démonstration qui fonctionne sur le modèle du mode ``PROD``, mais qui bride certaines fonctionnalités qui ne devraient pas être effectives dans une application de démonstration ; tels que la modification des identifiants du super admin, ou encore l'envoi de mails,
+* ``DEMO`` : un mode démonstration qui fonctionne sur le modèle du mode ``PROD``, mais qui bride certaines fonctionnalités qui ne devraient pas être effectives dans une application de démonstration ; telles que la modification des identifiants du super admin, ou encore l'envoi de courriels,
 * ``TEST`` : mode réservé aux test unitaires.
+
+.. _behavior:
+
+Configuration du comportement
+=============================
+
+Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :
+
+* `GALETTE_MODE` : :ref:`le mode de Galette <galettemodes>` ;
+* `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
+* `GALETTE_HANDLE_ERRORS` : permet à Galette de se charger de traiter certaines erreurs. Pratique pour remonter des informations sur les hébergements dédiés (bien que les erreurs fatales ne puissent être interceptées). `false` indique à Galette de ne pas se préoccuper des erreurs PHP qui se retrouveront alors dans les logs du système (``/var/log/httpd/error_log`` en ce qui me concerne) ;
+* `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ; 
+* `GALETTE_LOG_LVL` : niveau de log (>= 3) ;
+* `NON_UTF_DBCONNECT` : désactiver la connexion explicite en UTF-8 à la base de données (utile pour certains utilisateurs qui rencontrent des problèmes d'encodage).
+
+Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Ce fichier est absolument optionnel ; l'application fonctionnera parfaitement sans.
+
+Voici par exemple celui que j'utilise :
+
+.. code-block:: php
+
+   <?php
+   define('GALETTE_MODE', 'DEV');
+   define('GALETTE_DISPLAY_ERRORS', false);
+   define('GALETTE_HANDLE_ERRORS', false);
+   define('GALETTE_SYS_LOG', true);
+   define('GALETTE_LOG_LVL', 10);
+
