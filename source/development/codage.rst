@@ -221,3 +221,9 @@ Finalement, l'archive peut être signée, avant sa mise en ligne (pour vérifica
 .. code-block:: bash
 
    $ gpg --detach-sign --armor ./galette-0.9.tar.bz2
+
+.. note::
+
+   Durant les phases de développement, un :doc:`peu de déboguage <debug>` sera peut-être nécéssaire...
+
+   Il vous sera possible de modifier certains :ref:`comportements de Galette (niveau de verbosité, mode de l'application, ...) <behavior>`.
