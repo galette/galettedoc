@@ -70,8 +70,6 @@ Les plugins officiels de galette sont fournis sous licence GPL version 3, tout c
 
     [...]
 
-    ?>
-
 .. _pluginsconfig:
 
 Configuration des plugins
@@ -83,7 +81,7 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
 
    <?php
    $this->register(
-       'Mon Plugin',                //Name
+       'Galette Mon Plugin',        //Name
        'Plugin qui ne sert à rien', //Short description
        'Votre Nom',                 //Author
        '0.0.1',                     //Version
@@ -387,14 +385,49 @@ De la même façon, on peut limiter l'accès à une page particulière aux utili
 Classes PHP
 ===========
 
-Certains plugins pour les plus complexes auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et le namespace sont importants. Dans les plugins, ce n'est pas encore le cas, l'ancienne pratique de Galette est toujours d'actualité : les classes vont dans le dossier ``classes`` du plugin ; une classe `MonPlugin` se trouverait dans ``classes/monplugin.class.php``.
+Certains plugins auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et `l'espace de nom <http://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) sont importants.
 
-Lorsque vous aurez besoin de cet objet dans un fichier PHP (voir paragraphe précédent), il faudra faire un `require_once` :
+Toutes les classes doivent se trouver dans un dossier ``lib/{namespace}``. Chaque classe est un fichier php qui porte le même nom que la classe. L'espace de nom est déterminé par le nom du plugin déclaré dans le fichier ``_define.php``. Dans notre exemple, le nom du plugin étant ``Galette Mon Plugin``, l'espace de noms sera donc ``GaletteMonPlugin``.
+
+Ainsi, une classe `MaClasse` se trouverait donc dans ``lib/GaletteMonPlugin/MaClasse.php`` :
 
 .. code-block:: php
 
-   [...]
-   require_once 'classes/monplugin.php';
+    <?php
+    namespace GaletteMonPlugin;
+
+    class MaClasse {
+        [...]
+    }
+
+Ensuite, pour y faire référence :
+
+.. code-block:: php
+
+    <?php
+    [...]
+    use GaletteMonPlugin\MaClasse;
+
+    $instance = new MaClasse();
+    //ou encore :
+    $instance = new \GaletteMonPlugin\MaClasse();
+
+.. warning::
+
+    Dès que l'on utilise les espaces de noms, les appels aux objets d'autres bibliothèques ou même d'objets PHP standards y est soumis. Ainsi, dans votre classe ``MaClasse``, les noms des classes seront réoslus comme suit :
+
+    .. code-block:: php
+
+        <?php
+        namespace GaletteMonPlugin;
+
+        class MaClasse {
+            public myMethod() {
+                $object = new stdClass(); // ==> référencera \GaletteMonPlugin\stdClass() - qui n'existe pas
+                $otherobject = new \stdClass(); // ==> référencera l'objet standard stdClass de PHP
+            }
+        }
+
 
 Bibliothèques externes
 ======================
@@ -413,11 +446,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
 
 * |folder| `plugins`
 
-  * |folder| `MonPlugin`
-
-    * |folder| `classes`
-
-      * |phpfile| `...`
+  * |folder| `galette-monplugin`
 
     * |folder| `includes`
 
@@ -426,6 +455,12 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
     * |folder| `lang`
 
       * |file| `...`
+
+    * |folder| `lib`
+
+      * |folder| `GaletteMonPlugin`
+
+        * |phpfile| `...`
 
     * |folder| `templates`
 
@@ -445,7 +480,7 @@ Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manua
 
 Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
 
-Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à nue base doivent en faire de même.
+Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à une base doivent en faire de même.
 
 URL du formulaire d'adhésion
 ============================
