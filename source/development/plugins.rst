@@ -27,7 +27,12 @@ Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou 
 Licence
 =======
 
-Les plugins officiels de galette sont fournis sous licence GPL version 3, tout comme le code principal. La licence doit être spécifiée sur chaque fichier ; selon le modèle suivant :
+Les plugins officiels de galette sont fournis sous licence GPL version 3, tout comme le code principal.
+
+La licence doit :
+
+* être incluse à la racine du dépôt (fichier ``LICENSE`` ou ``COPYING``),
+* être spécifiée sur chaque fichier ; selon le modèle suivant :
 
 .. code-block:: php
 
