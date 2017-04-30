@@ -45,8 +45,10 @@ Les plugins tiers sont développés et/ou maintenus par des membres de la commun
 
 * `Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (gestion de base d'un aéroclub), développé par Mélissa,
 * `Location d'objets <https://galetteobjectslend.codeplex.com/>`_ (gestion de prêt et de location d'objets), initialement développé par Mélissa, en passe de devenir un plugin officiel,
-* `QRCodes <https://galette-community.github.io/plugin-qrcodes/>` (génération de QRCodes), développé par Frédéric,
-* `Grades <https://galette-community.github.io/plugin-grades/>` (gestion d'évaluations), développé par Frédéric.
+* `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (génération de QRCodes), développé par Frédéric,
+* `Grades <https://galette-community.github.io/plugin-grades/>`_ (gestion d'évaluations), développé par Frédéric.
+
+Une `communauté Github <https://github.com/galette-community/>`_ a été créée pour :doc:`gérer les plugins tiers <plugins-tiers>`, si vous souhaitez y placer votre plugin.
 
 .. _plugins_managment:
 
