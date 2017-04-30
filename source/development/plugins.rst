@@ -24,7 +24,7 @@ Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin inst
   * |folder| `Paypal`
   * |folder| `...`
 
-Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire, il est possible de choisir le thème désiré via les préférences de Galette. Le thème par défaut se nomme ``default``), et les classes dans un répertoire ``classes`` (tout comme dans Galette).
+Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire, il est possible de choisir le thème désiré via les préférences de Galette. Le thème par défaut se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette).
 
 Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)
 
