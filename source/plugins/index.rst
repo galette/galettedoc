@@ -36,6 +36,7 @@ Les plugins « officiels » sont développés et/ou maintenus par l'équipe de d
    admintools.rst
    maps.rst
    auto.rst
+   objectslend.rst
 
 *************
 Plugins tiers
@@ -44,7 +45,6 @@ Plugins tiers
 Les plugins tiers sont développés et/ou maintenus par des membres de la communauté. Ils peuvent ne pas être disponibles dans différentes langues, ou ne pas fonctionner avec tous les moteurs de bases de données supportés oficiellement.
 
 * `Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (gestion de base d'un aéroclub), développé par Mélissa,
-* `Location d'objets <https://galetteobjectslend.codeplex.com/>`_ (gestion de prêt et de location d'objets), initialement développé par Mélissa, en passe de devenir un plugin officiel,
 * `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (génération de QRCodes), développé par Frédéric,
 * `Grades <https://galette-community.github.io/plugin-grades/>`_ (gestion d'évaluations), développé par Frédéric.
 
