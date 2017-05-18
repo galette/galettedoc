@@ -7,6 +7,14 @@ Changelog
 =========
 
 ******************
+0.8.3.3 -> 0.8.3.4
+******************
+
+* Problème avec l'URL du formulaire adhérent en enregistrant les préférences (`#1027 <http://bugs.galette.eu/issues/1027>`_)
+* Envoi d'images avec un nom composé d'un seul caractère (`#1028 <http://bugs.galette.eu/issues/1028>`_)
+* Correction de la sauvegarde des emailings (`#998 <http://bugs.galette.eu/issues/998>`_)
+
+******************
 0.8.3.2 -> 0.8.3.3
 ******************
 
