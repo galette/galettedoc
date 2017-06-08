@@ -108,3 +108,21 @@ Toujours dans l'optique de ne pas modifier les fichiers de Galette (ce qui, je v
         'id_adh' => 'disabled="disabled"',
         'date_echeance' => 'disabled="disabled"'
     );
+
+Log des addresses IP avec un proxy
+==================================
+
+Si votre installation de Galette se trouve derrière un proxy, l'adresse IP enregistrée dans l'historique sera celle du proxy, et non celle de l'utilisateur :-(
+
+Une directive à déclarer dans dans un fichier nommé ``config/behavior.inc.php`` peut vous permettre de corriger ce problème :
+
+.. code-block:: php
+
+   <?php
+   define('GALETTE_X_FORWARDED_FOR_INDEX', 1);
+
+En partant du principe que chaque serveur proxy viendra ajouter sa propre adresse à la liste ; l'exemple ci-dessus fonctionne si votre instnce ne dépend que d'un seul et unique serveur proxy.
+
+.. warning::
+
+   Pour des raisons de sécurité, évitez d'utilisez ce paramètre si vous n'êtes pas derrière un proxy !
