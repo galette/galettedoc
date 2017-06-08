@@ -56,7 +56,7 @@ Configuration du comportement
 
 Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :
 
-* `GALETTE_MODE` : `le mode de Galette <galettemodes>` ;
+* `GALETTE_MODE` : :ref:`le mode de Galette <galettemodes>` ;
 * `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les détails des erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
 * `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ;
 * `GALETTE_LOG_LVL` : niveau de log ;
