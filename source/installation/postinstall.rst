@@ -55,7 +55,6 @@ Ces chemins peuvent varier en fonction des distributions, et vous pouvez aussi v
 Chemins des bibliothèques
 -------------------------
 
-* `GALETTE_PASSWORD_COMPAT_PATH` : le chemin vers la :ref:`bibliothèque d'obfuscation des mots de passe <passwordcompat>`,
 * `GALETTE_ZEND_PATH` : le chemin vers le :ref:`framework Zend utilisés par Galette <zend_db>`,
 * `GALETTE_ANALOG_PATH` : le chemin de la :ref:`bibliothèque Analog <galettelog>`,
 * `GALETTE_PHP_MAILER_PATH` : le chemin vers la :ref:`bibliothèque PHPMailer <phpmailer>`,
