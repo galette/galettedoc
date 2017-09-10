@@ -9,7 +9,14 @@ Champs obligatoires et visibilité des champs
 
 Lors de la saisie ou de la modification de fiches adhérents, certains champs sont marqués comme étant requis. Bien entendu, cette sélection par défaut peut ne pas vous convenir, mais vous avez la possibilité de paramétrer ça facilement :-)
 
-Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis. Vous pourrez également définir à l'aide de cette interface la visibilité des champs (visibles, cachés ou visibles uniquement par les administrateurs).
+Depuis le menu `Configuration`, `Champs obligatoires`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis, ainsi que les droits d'accès associés:
+
+* `personne` correspond à un champ inaccessible par quiconque (désactivé, en fait)
+* `administrateur` correspond à un champ accessible en lecture/écriture par les administrateurs de l'application uniquement
+* `membre du bureau` correspond à un champ accessible en lecture/écriture par les membres du bureau, et les administrateurs
+* `responsables de groupes` correspond à un champ accessible en lecture/écriture par les responsables du groupe auquel appartient l'adhérent, les membres du bureau et les administrateurs
+* `lecture seule` correspond à un champ accessible en lecture seulement par l'adhérent, en lecture/écriture pour les responsables du groupe, les membres du bureau et les administrateurs
+* `lecture/écriture` correspond à un champ accessible en lecture/écriture par l'adhérent, les responsables du groupe, les membres du bureau et les administrateurs
 
 .. image:: ../_styles/static/images/usermanual/fields_config.png
    :scale: 50%
@@ -38,7 +45,7 @@ Lors de la création d'un nouveau champ (ou de la modification d'un champ exista
 
 * choisir si le champ est visible par tous ou uniquement aux administrateurs,
 * rendre le champ obligatoire,
-* définir sa visibilité (tout le monde, membres de l'équipe ou administrateurs).
+* définir ses droits d'accès, suivant les mêmes modalités que pour les champs du cœur
 
 .. image:: ../_styles/static/images/usermanual/champs_dynamiques_rendu.png
    :scale: 50%
