@@ -7,7 +7,7 @@ Informations techniques
 Bibliothèques utilisées
 =======================
 
-L'ensemble des `bibliothèques externes utilisées dans la version de développement de Galette <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ est disponible sous forme d'une archive sur l'espace de téléchargement.
+L'ensemble des bibliothèques externes utilisées par Galette est gérée par `le système de gestion de départendences Composer <http://getcomposer.org>`_. Une fois composer installé sur votre système, il vous suffira de vous placer dans le dossier de Galette (où se trouvent les fichiers ``composer.json`` et ``composer.lock`` et de lancer simplement ``composer install``.
 
 .. _slim:
 
@@ -19,7 +19,7 @@ Slim
 
 .. versionadded:: 0.9
 
-*Version de la biliothèque requise :* `3.2.0`
+*Version de la biliothèque requise :* `3.8.1`
 
 Les URL utilisées dans Galette sont générées et servies par le `micro framework Slim <http://www.slimframework.com/>`_ dans sa version `3`.
 
@@ -33,7 +33,7 @@ Zend DB
 .. image:: ../_styles/static/images/libraries/zend.gif
    :align: right
 
-*Version de la bibliothèque requise :* `2.3.1`
+*Version de la bibliothèque requise :* `2.8.2`
 
 L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_.
 
@@ -49,7 +49,7 @@ Les scripts d'installation et de mise à jour de Galette fournis ne le sont que 
 Analog
 ------
 
-*Version de la bibliothèque requise :* `1.0.0.git876d8a3bb`
+*Version de la bibliothèque requise :* `1.0.10`
 
 Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analog/>`_.
 
@@ -58,7 +58,7 @@ Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analo
 Smarty
 ------
 
-*Version de la bibliothèque requise :* `3.1.19`
+*Version de la bibliothèque requise :* `3.1.31`
 
 Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format HTML 5.
 
@@ -70,7 +70,7 @@ TCPDF
 .. image:: ../_styles/static/images/libraries/tcpdf.png
    :align: right
 
-*Version de la bibliothèque requise :* `6.0.089`
+*Version de la bibliothèque requise :* `6.2.13`
 
 L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <http://www.tcpdf.org/>`_.
 
@@ -94,7 +94,7 @@ Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expér
 Envoi de courriels
 ------------------
 
-*Version de la bibliothèque requise :* `5.2.8`
+*Version de la bibliothèque requise :* `5.2.25`
 
 L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <http://phpmailer.worxware.com/>`_.
 
@@ -106,5 +106,4 @@ Tests unitaires
 .. image:: ../_styles/static/images/libraries/atoum.png
    :align: right
 
-Les quelques tests unitaires qui existent dans Galette sont exécutés via `le framework de test unitaire Atoum <http://atoum.org>`_.
-
+Les tests unitaires dans Galette sont exécutés via `le framework de test unitaire Atoum <http://atoum.org>`_.
