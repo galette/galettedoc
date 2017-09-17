@@ -15,7 +15,7 @@ Changelog
 Nouveautés
 ==========
 
-* Généralisation de la suppression en deux étapes ; avec une réelle confirmation requise (et no npas un évènement basé sur du javascript)
+* Généralisation de la suppression en deux étapes ; avec une réelle confirmation requise (et non pas un évènement basé sur du javascript)
 * Suppression en cascade des groupes enfants
 * Modification de l'ensemble des URL (`#417 <https://bugs.galette.eu/issues/417>`_), et traduction de ces dernières
 * Possibilité pour le super-admin de se connecter à un autre compte sans connaître les identifiants
