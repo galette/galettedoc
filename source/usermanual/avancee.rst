@@ -46,69 +46,6 @@ Ces surcharges ne s'appliquent pas actuellement aux plugins ; ces derniers étan
 
 .. note:: Ce système n'est pas fonctionnel si vous utilisez les fonctionnalités Gettext par défaut de PHP, mais fonctionnera avec la configuration de base de Galette.
 
-Modification des champs inactifs
-================================
-
-.. versionadded:: 0.7.1
-
-Lors de la création ou de la modification d'adhérents, certains champs sont désactivés en fonction des accrédidations de l'utilisateur connecté. Les champs inactifs sont déclarés au sein du code de Galette.
-
-.. warning:: L'utilisation de cette possibilité en dehors du contexte peuvent amener à des problèmes de fonctionnement de Galette, tous les cas de figure n'ayant pas été testés. Il est **fortement recommandé** de modifier ces possibilités avec parcimonie, et de tester régulièrement vos modifications !
-
-Toujours dans l'optique de ne pas modifier les fichiers de Galette (ce qui, je vous le rapelle, simplifie grandement les mises à jour !), il vous est possible de créer un fichier de configuration spécifique, ``config/disabled_fields.php``. Quatre tableaux PHP peuvent être déclarés dans ce fichier :
-
-.. note:: Les valeurs déclarées dans le fichier ``disabled_fields.php`` vont entièrement remplacer les valeurs de base de Galette. Référez-vous au fichier ``lib/Galette/Entity/Adherent.php`` pour connaître les valeurs par défaut actuelles de votre version de Galette.
-
-1. Les champs désactivés pour les simples utilisateurs :
-
-.. code-block:: php
-
-    <?php
-    $loc_disabled_fields = array(
-        'id_adh' => 'disabled="disabled"',
-        'date_crea_adh' => 'disabled="disabled"',
-        'id_statut' => 'disabled="disabled"',
-        'activite_adh' => 'disabled="disabled"',
-        'bool_exempt_adh' => 'disabled="disabled"',
-        'bool_admin_adh' => 'disabled="disabled"',
-        'date_echeance' => 'disabled="disabled"',
-        'info_adh' => 'disabled="disabled"'
-    );
-
-2. Les champs désactivés pour les simples utilisateurs, mais en mode modification uniquement :
-
-.. note::
-
-   Depuis la version `0.8.3` de Galette, plus aucun champ n'est désactivé pour les adhérents.
-
-.. code-block:: php
-
-    <?php
-    $loc_edit_disabled_fields = array(
-        'titre_adh' => 'disabled',
-        'nom_adh' => 'disabled="disabled"',
-        'prenom_adh' => 'disabled="disabled"',
-    );
-
-3. Les champs désactivés en mode modification, mais pour le staff cette fois :
-
-.. code-block:: php
-
-    <?php
-    $loc_staff_edit_disabled_fields = array(
-        'bool_admin_adh' => 'disabled="disabled"'
-    );
-
-4. Les champs désactivés en mode modification toujours, mais pour les administrateurs :
-
-.. code-block:: php
-
-    <?php
-    $loc_adm_edit_disabled_fields = array(
-        'id_adh' => 'disabled="disabled"',
-        'date_echeance' => 'disabled="disabled"'
-    );
-
 Log des addresses IP avec un proxy
 ==================================
 
