@@ -28,13 +28,15 @@ Nouveautés
 * Sélection de toutes les entrées et inversion de la sélection pen haut et en bas de liste (`#795 <https://bugs.galette.eu/issues/795>`_)
 * Les status ne sont plus uniques (`#887 <https://bugs.galette.eu/issues/887>`_)
 * Identification depuis l'adresse de courriel (`#919 <https://bugs.galette.eu/issues/919>`_)
-* Prise en compte des reverse proxy pour les logs (`#997 <https://bugs.galette.eu/issues/997>`_ et `#1029 <https://bugs.galette.eu/issues/1029>`_)
+* Prise en compte des reverse proxy pour les logs (`#997 <https://bugs.galette.eu/issues/997>`_ et `#1029 <https://bugs.galette.eu/issues/1029>`_ - merci à Georges R.!)
 * Autocomplétion des villes, codes posatux, pays et lieux de naissance (`#1005 <https://bugs.galette.eu/issues/1005>`_)
 * Un fichier de configuration des comportements d'exemple est fourni dans le dossier config (`#1011 <https://bugs.galette.eu/issues/1011>`_)
 * Message d'avertissement si l'application est configurée pour afficher les erreurs (`#1011 <https://bugs.galette.eu/issues/1011>`_)
 * Gestion des connexions SMTP non sécurisées (certificat auto-signé, etc. `#1020 <https://bugs.galette.eu/issues/1020>`_)
 * La version minimale de PHP requise passe à 5.6
 * Possibilité de n'exposer par le serveur web qu'un seul sous dossier dont le contenu est limité
+* Typage des champs de la recherche libre (merci à Guillaume R.!)
+* Amélioration des contrôles d'accès aux champs via l'ajout de nouveaux rôles (merci à Guillaume R.!)
 
 .. _bogues_090:
 
