@@ -225,7 +225,7 @@ L'interface vous avertira de l'erreur rencontrée, en mode test ou non.
 Liens entre fiches adhérents
 ============================
 
-.. versionadded: 0.8.2
+.. versionadded:: 0.8.2
 
 L'interface de Galette permet de relier plusieurs fiches à une fiche « parent ». Ce système peut être utilisé pour marquer le lien des différents membres d'une famille par exemple, ou les différentes personnes physiques liées à une même personne morale. L'interface permet alors d'accéder à la fiche parent depuis une fiche enfant, ou à n'importe quelle fiche enfant depuis la fiche parent.
 

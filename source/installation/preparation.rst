@@ -34,6 +34,37 @@ Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lu
 
 .. [#configdirperms] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
 
+.. _installationsubdir:
+
+Exposition des dossiers par le serveur web
+==========================================
+
+.. versionadded:: 0.9
+
+L'installation par défaut de Galette (et de beaucoup d'autres applications web) se résume souvent à copier un dossier complet dans un endroit accessible par le serveur web. Cette manière de procéder fonctionne sans problèmes, mais elle expose depuis la web des fichiers qui ne devraient pas l'être (en gros, toute la mécanique interne, les fichiers de configuration, ...).
+
+Il est possible avec Galette de limiter cela en n'exposant que le seul dossier ``webroot`` depuis le serveur web. Tous les autres dossiers serotn davantage protégés ; il ne serontpurement et simplement plus du tout accessibles depuis le serveur web lui même.
+
+.. note::
+
+   Cette manière de faire est fortement conseillée si vous avez la possibilité de créer des hôtes virtuels sur votre hébergement.
+
+   Ce ne sera souvent pas le cas malheureusement avec les hébergements mutualisés.
+
+Voici un exemple de configuration valable pour les serveurs Apache, incluant la "disparition" du `index.php` :
+
+.. code-block:: apache
+
+   <VirtualHost *:80>
+       ServerName galette.localhost
+       DocumentRoot /var/www/galette/galette/webroot/
+       <Directory /var/www/galette/galette/webroot/>
+           RewriteEngine On
+           RewriteCond %{REQUEST_FILENAME} !-f
+           RewriteRule ^(.*)$ index.php [QSA,L]
+       </Directory>
+   </VirtualHost>
+
 .. _installationunix:
 
 .. include:: unix.rst
