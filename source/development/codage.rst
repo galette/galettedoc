@@ -6,7 +6,7 @@
 Le code source de Galette
 *************************
 
-Galette est un logiciel libre sous licence GPL version 3, écrit en PHP. À compter de la version 0.8, Galette n'est compatible qu'avec PHP en version 5.4 ou plus récente, à compter de la 0.9, ce sera PHP 5.5 qui sera requis.
+Galette est un logiciel libre sous licence GPL version 3, écrit en PHP. Galette n'est compatible qu'avec PHP en version 5.6 ou plus récente.
 
 Nomenclature des fichiers
 =========================
