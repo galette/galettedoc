@@ -6,6 +6,58 @@
 Changelog
 =========
 
+**************
+0.8.3.4 -> 0.9
+**************
+
+.. _ajouts_090:
+
+Nouveautés
+==========
+
+* Généralisation de la suppression en deux étapes ; avec une réelle confirmation requise (et no npas un évènement basé sur du javascript)
+* Suppression en cascade des groupes enfants
+* Modification de l'ensemble des URL (`#417 <https://bugs.galette.eu/issues/417>`_), et traduction de ces dernières
+* Possibilité pour le super-admin de se connecter à un autre compte sans connaître les identifiants
+* Affichage "responsive"
+* Configuration du délai de déconnexion
+* Test des paramètres de courriel depuis les préférences (`#588 <https://bugs.galette.eu/issues/588>`_)
+* Détection des doublons de courriels par le "galop d'essai" des imports (`#729 <https://bugs.galette.eu/issues/729>`_)
+* Vérification des status par le "galop d'essai" des imports (`#999 <https://bugs.galette.eu/issues/999>`_)
+* Prévisualisation des fichiers joints dans la prévisualisation des mailings (`#735 <https://bugs.galette.eu/issues/735>`_)
+* Sélection de toutes les entrées et inversion de la sélection pen haut et en bas de liste (`#795 <https://bugs.galette.eu/issues/795>`_)
+* Les status ne sont plus uniques (`#887 <https://bugs.galette.eu/issues/887>`_)
+* Identification depuis l'adresse de courriel (`#919 <https://bugs.galette.eu/issues/919>`_)
+* Prise en compte des reverse proxy pour les logs (`#997 <https://bugs.galette.eu/issues/997>`_ et `#1029 <https://bugs.galette.eu/issues/1029>`_)
+* Autocomplétion des villes, codes posatux, pays et lieux de naissance (`#1005 <https://bugs.galette.eu/issues/1005>`_)
+* Un fichier de configuration des comportements d'exemple est fourni dans le dossier config (`#1011 <https://bugs.galette.eu/issues/1011>`_)
+* Message d'avertissement si l'application est configurée pour afficher les erreurs (`#1011 <https://bugs.galette.eu/issues/1011>`_)
+* Gestion des connexions SMTP non sécurisées (certificat auto-signé, etc. `#1020 <https://bugs.galette.eu/issues/1020>`_)
+
+.. _bogues_090:
+
+Bogues corrigés
+===============
+
+* Meilleure gestion des erreurs des PDF (`#249 <https://bugs.galette.eu/issues/249>`_)
+* Ajout du numéro de version aux sessions (`#315 <https://bugs.galette.eu/issues/315>`_)
+* Traduction manquante dans les en-têtes des messages (`#673 <https://bugs.galette.eu/issues/673>`_)
+* Adhérents en doublon dans la liste lors d'une recherche sur les groupes (`correction définitive de #687 <https://bugs.galette.eu/issues/687>`_)
+* Erreur sur le retard de cotisation calculé dans certains cas (`#902 <https://bugs.galette.eu/issues/902>`_)
+* Perte du groupe parent lors de l'édition d'un groupe par un responsable (`#990 <https://bugs.galette.eu/issues/990>`_)
+* Suppression du champ parent de la configuration des champs (`#1033 <https://bugs.galette.eu/issues/1033>`_)
+* Erreur lors de l'envoi de courriels de rappel (`#1046 <https://bugs.galette.eu/issues/1046>`_)
+
+.. _souscapot_090:
+
+Sous le capot...
+================
+
+* Mise à jour des bilitohèques tierces
+* Utilisation de `Slim <http://slimframework.com/>`_ pour la génération des URL
+* Gestion des bibliothèques tierces via `Composer <https://getcomposer.org/>`_
+* Passage des coding standards à PSR2 (avec les commentaires des règles PEAR)
+
 ******************
 0.8.3.3 -> 0.8.3.4
 ******************
