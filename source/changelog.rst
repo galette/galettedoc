@@ -25,11 +25,11 @@ Nouveautés
 * Détection des doublons de courriels par le "galop d'essai" des imports (`#729 <https://bugs.galette.eu/issues/729>`_)
 * Vérification des status par le "galop d'essai" des imports (`#999 <https://bugs.galette.eu/issues/999>`_)
 * Prévisualisation des fichiers joints dans la prévisualisation des mailings (`#735 <https://bugs.galette.eu/issues/735>`_)
-* Sélection de toutes les entrées et inversion de la sélection pen haut et en bas de liste (`#795 <https://bugs.galette.eu/issues/795>`_)
+* Sélection de toutes les entrées et inversion de la sélection en haut et en bas de liste (`#795 <https://bugs.galette.eu/issues/795>`_)
 * Les status ne sont plus uniques (`#887 <https://bugs.galette.eu/issues/887>`_)
 * Identification depuis l'adresse de courriel (`#919 <https://bugs.galette.eu/issues/919>`_)
 * Prise en compte des reverse proxy pour les logs (`#997 <https://bugs.galette.eu/issues/997>`_ et `#1029 <https://bugs.galette.eu/issues/1029>`_ - merci à Georges R.!)
-* Autocomplétion des villes, codes posatux, pays et lieux de naissance (`#1005 <https://bugs.galette.eu/issues/1005>`_)
+* Autocomplétion des villes, codes postaux, pays et lieux de naissance (`#1005 <https://bugs.galette.eu/issues/1005>`_)
 * Un fichier de configuration des comportements d'exemple est fourni dans le dossier config (`#1011 <https://bugs.galette.eu/issues/1011>`_)
 * Message d'avertissement si l'application est configurée pour afficher les erreurs (`#1011 <https://bugs.galette.eu/issues/1011>`_)
 * Gestion des connexions SMTP non sécurisées (certificat auto-signé, etc. `#1020 <https://bugs.galette.eu/issues/1020>`_)
@@ -57,7 +57,7 @@ Bogues corrigés
 Sous le capot...
 ================
 
-* Mise à jour des bilitohèques tierces
+* Mise à jour des bibliothèques tierces
 * Utilisation de `Slim <http://slimframework.com/>`_ pour la génération des URL
 * Gestion des bibliothèques tierces via `Composer <https://getcomposer.org/>`_
 * Passage des coding standards à PSR2 (avec les commentaires des règles PEAR)
