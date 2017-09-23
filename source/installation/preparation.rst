@@ -60,6 +60,9 @@ Voici un exemple de configuration valable pour les serveurs Apache, incluant la 
        DocumentRoot /var/www/galette/galette/webroot/
        <Directory /var/www/galette/galette/webroot/>
            RewriteEngine On
+           #You may need to set RewriteBase if you setup
+           #rewritting in a .htaccess file for example.
+           #RewriteBase /
            RewriteCond %{REQUEST_FILENAME} !-f
            RewriteRule ^(.*)$ index.php [QSA,L]
        </Directory>
