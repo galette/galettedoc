@@ -43,7 +43,7 @@ Exposition des dossiers par le serveur web
 
 L'installation par défaut de Galette (et de beaucoup d'autres applications web) se résume souvent à copier un dossier complet dans un endroit accessible par le serveur web. Cette manière de procéder fonctionne sans problèmes, mais elle expose depuis la web des fichiers qui ne devraient pas l'être (en gros, toute la mécanique interne, les fichiers de configuration, ...).
 
-Il est possible avec Galette de limiter cela en n'exposant que le seul dossier ``webroot`` depuis le serveur web. Tous les autres dossiers serotn davantage protégés ; il ne serontpurement et simplement plus du tout accessibles depuis le serveur web lui même.
+Il est possible avec Galette de limiter cela en n'exposant que le seul dossier ``webroot`` depuis le serveur web. Tous les autres dossiers seront davantage protégés ; il ne seront purement et simplement plus du tout accessibles depuis le serveur web lui même.
 
 .. note::
 
