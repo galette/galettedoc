@@ -135,6 +135,13 @@ La mise à jour de Galette, consistait historiquement à lancer de simples scrip
 
 Tout cela est totalement transparent, des informations sur les différentes étapes, leur échec ou leur succès vous seront affichées sur le même modèle que lors de la création des tables.
 
+.. warning::
+
+   La passage à une version plus récente de Galette ne signifie pas forcément qu'une mise à jour de la base soit requise ! Certaines fois, la seule mise à jour des fichiers de l'application suffira, même pour une version majeure !
+
+   L'application vous avertira si une mise à jour est nécessaire, il est inutile de "forcer" le passage par l'oopréation de mise à jour si l'aplication ne le demande pas :)
+
+
 Sélection de la version précédente
 ----------------------------------
 
