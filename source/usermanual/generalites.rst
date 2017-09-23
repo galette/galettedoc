@@ -12,6 +12,7 @@ On distingue plusieurs niveaux de droits dans Galette, permettant l'accès à di
 * le **super administrateur**, qui est créé à l'installation ;
 * les **administrateurs**, qui sont des adhérents pour lesquels la case « administrateur » a été cochée ;
 * les **membres du bureau**, qui possèdent un statut particulier (Président, Trésorier, Secrétaire, ...) ;
+* les **gestionnaires de groupes**, qui n'ont de droits que sulr les groupes qu'ils gèrent ;
 * les **adhérents à jour**, qui sont marqués comme actifs, et qui sont à jour de leurs cotisations ;
 * les **adhérents** qui sont marqués comme inactifs, ou qui ne sont pas à jour de leurs cotisations,
 * les simples **visiteurs**.
@@ -25,6 +26,10 @@ Le super administrateur a accès à l'intégralité de l'application ; mais pas 
 Les adhérents peuvent consulter et modifier leur propre fiche d'informations, et peuvent aussi consulter les contributions et transactions les concernant (sans pouvoir les modifier).
 
 Les simples visiteurs peuvent consulter le trombinoscope et la liste des adhérents (en fonction du paramétrage choisi dans les préférences du logiciel) ; mais peuvent aussi... s'inscrire :-)
+
+.. todo::
+
+   Les droits des gestionnaires de groupes devraient être détaillés selon leurs valeurs actuelles... Il est en effet difficile de savoir qui peut faire quoi.
 
 Règles de gestion
 =================
