@@ -234,3 +234,16 @@ Il n'y a pas de limite dans le nombre des fiches attachées, mais le rattachemen
 L'autre intérêt de ce système, c'est de pouvoir récupérer certaines informations lors de l'envoi de mailings ou de courriers postaux. En effet, dans chaque fiche enfant, les adresse de courriel et postales deviennent automatiquement facultatives, quelle que soit la configuration. Dans ce cas, si l'une ou l'autre de ces informations est manquante, elle sera récupérée depuis la fiche parent.
 
 .. note:: Tout adhérent dont l'adresse courriel n'est pas renseignée ne pourra pas utiliser la fonctionnalité « récupération du mot de passe ». Ce système ne lève pas la limite sur l'unicité de l'adresse de courriel en base de données.
+
+Se connecter en tant que
+========================
+
+.. versionadded:: 0.9
+
+Dans la liste des adhérents, le super administrateur verra une icône supplémentaires qui lui permet de se connecter au compte de l'utilisateur en question, sans toutefois devoir connaître ses identifiants.
+
+Il arrive parfois qu'un problème ou une incompréhension amène un utilisateur - quel que soit son statut - à rencontrer un problème spécifique qui n'est pas reproductible avec d'autres comptes (pour des questions de droits, d'appartenance à des groupes, ..., ...).
+
+Dans ce cas de figure, il arrive que des identifants soient transmis de manière totalement insécure (personnellement, je ne donne *jamais* mot mot de passe à qui que ce soit, serais-ce pour résoudre un problème auquel je suis seul à faire façe).
+
+La fonctionnalité « se connecter en tant que » permet alors au **seul super-admininistrateur** d'utiliser le compte pour reproduire le problème, et éventuellement le résoudre ou fournir aux développeurs de Galette les informations nécessaires à la reproduction et/ou à la correction de ce problème.
