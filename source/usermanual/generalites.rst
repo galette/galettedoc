@@ -51,3 +51,22 @@ On considèrera qu'il n'était plus adhérent durant la période du 01/01/2005 a
 
 Ces règles de gestion sont cependant assouplies par le fait que l'administrateur est totalement libre de choisir la date d'une cotisation. On peut tout à fait imaginer le cas d'un association qui enregistre toutes les cotisations au premier du mois suivant (offrant ainsi un temps d'adhésion légèrement plus important).
 
+Interface
+=========
+
+Autant que possible, nous faisons en sorte que l'interface de Galette soit :
+
+* logique ;
+* cohérente (vous retrouverez ainsi les icônes et emplacements qui vous sont familiers) ;
+* respectueuse des standards du Web (respect des normes HTML et CSS) ;
+* respectueuse de la sémantique HTML ;
+* dépourvue de l'obligation de Javascript (certaines fenêtres ne sont pas en phase ; ou ne peuvent l'être - malheureusement) ;
+* accessible (sans forcément que des tests WCAG ou WAI soient menés régulièrement).
+
+Si vous constatez des manquements sur le points pré-cités ; n'hésitez pas à nous en faire part !
+
+.. versionadded:: 0.9
+
+Galette propose une interface dite « mobile » ; pour laquelle l'affichage est grandement modifié pour essayer de correspondre aux appareils mobiles de plus en plus répandus. Galette n'est pas une application mobile native, et certaines pages sont relativement difficiles à afficher de manière totalement utilisable sur certains appareils.  Sur cette question, nous essayons de faire notre possible avec les moyens dont nous disposons - tous les appareils possibles ne peuvent être testés !
+
+L'affichage mobile est actuellement traité comme un plus, et non comme l'une des bases sur lesquelles l'interface de Galette repose. Des améliorations pourront et seront apportées ; mais leur importance sera moindre dans le traitement des demandes.
