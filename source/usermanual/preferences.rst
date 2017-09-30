@@ -116,6 +116,8 @@ La configuration d'un serveur SMTP est un peu plus complexe :
 * **Utiliser TLS pour SMTP** : activer SSL (toujouors actif pour Gmail, qui ne permet pas autre chose),
 * **Autoriser TLS non sécirisé** : dans certains cas, le certificat SSL peut être invalide (certificats auto signés par exemple).
 
+Le bouton « Test des paramètres courriel » enverra un message de test à l'adresse renseignée pour l'administrateur des membres en utilisant la configuration acutellement enregistrée.
+
 Étiquettes
 ==========
 
