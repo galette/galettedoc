@@ -28,19 +28,18 @@ Cela suffira pour afficher correctement le nom de votre association en rouge. No
 Ajout et modification de chaînes
 ================================
 
-Il est également possible, au besoin, de personnaliser les chaînes de traduction existantes dans Galette - tout en évitant de modifier directement les fichiers fournis par le logiciel - en passant par un fichier spécifique. Pour ce faire, il suffira de créer un fichier nommé ``lang_{ma_langue}_local.php`` (où `{ma_langue}` est à remplacer par `french` ou `english`) dans le dossier ``lang`` auquel vous confierez les chaînes modifiées uniquement ; ce fichier sera inclus automatiquement s'il existe.
+Il est également possible, au besoin, de personnaliser les chaînes de traduction existantes dans Galette - tout en évitant de modifier directement les fichiers fournis par le logiciel - en passant par un fichier spécifique. Pour ce faire, il suffira de créer un fichier nommé ``galette_{ma_langue}_local.php`` (où `{ma_langue}` est à remplacer par `fr_FR.utf8` ou `en_US`) dans le dossier ``lang`` auquel vous confierez les chaînes modifiées uniquement ; ce fichier sera inclus automatiquement s'il existe.
 
-Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale. Pour cela, allez simplement consulter le fichier ``lang/lang_french.php``, et cherchez-y la valeur souhaitée. Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret` » en français, on aura dans notre nouveau fichier ``lang_french_local.php`` :
+Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale. Pour cela, allez simplement consulter le fichier ``lang/galette_fr_FR.utf8.php``, et cherchez-y la valeur souhaitée. Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret :` » en français, on aura dans notre nouveau fichier ``galette_fr_FR.utf8_local.php`` :
 
 .. code-block:: php
 
    <?php
-   $lang['Password:'] = 'Secret&nbsp;:';
-   ?>
+   $lang['galette']['Password:'] = 'Secret&nbsp;:';
 
 La modification sera visible immédiatement dans Galette. Prenez particulièrement garde à recopier la chaîne originale telle quelle ; et à échapper les apostrophes (à l'aide d'un anti-slash). Comme dans le fichier original, on attend ici une ligne par chaîne modifiée.
 
-Pensez également à créer le fichier ``lang_english_local.php`` qui contiendra les traductions anglaises des chaînes que vous auriez ajoutées (une simple recopie de la clé normalement).
+Pensez également à créer le fichier ``galette_en_US_local.php`` qui contiendra les traductions anglaises des chaînes que vous auriez ajoutées (une simple recopie de la clé normalement). Ce n'est évidemment pas nécessaire pour les chaînes modifiées, puisqu'elles existent déjà.
 
 Ces surcharges ne s'appliquent pas actuellement aux plugins ; ces derniers étant chargés par l'application bien plus tard :-(
 
