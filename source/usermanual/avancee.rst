@@ -64,3 +64,14 @@ En partant du principe que chaque serveur proxy viendra ajouter sa propre adress
 .. warning::
 
    Pour des raisons de sécurité, évitez d'utilisez ce paramètre si vous n'êtes pas derrière un proxy !
+
+Statistiques externes
+=====================
+
+Un certain nombre de plateformes de génération de statistiques (comme `Piwik <https://piwik.org/>`_ par exemple) requiert l'ajout de code Javascript spécifiques pour fonctionner.
+
+Galette vous permet d'utiliser ces fonctionnalités. Il suffit pour cela de créer un fichier nommé ``tracking.js`` dans le dossier ``webroot/themes/default`` qui sera inclus et exécuté automatiquement.
+
+.. warning::
+
+   Galette utilise du javascript pour son fonctionnement. Si le code que vous incluez dans le fichier ``tracking.js`` est incorrect, cela peut perturber le fonctionnement normal du logiciel !
