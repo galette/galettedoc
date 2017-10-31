@@ -40,6 +40,7 @@ Nouveautés
 * Réintégration du plugin admintools (`#1071 <https://bugs.galette.eu/issues/1071>`_)
 * Recherche libre sur les textes des status (`#1061 <https://bugs.galette.eu/issues/1061>`_)
 * Amélioration de la gestion des champs dans la recherche libre avancée (merci à Guillaume R. !)
+* Script pour les statistiques externes (`#787 <https://bugs.galette.eu/issues/787>`_)
 * Remontée des `informations de télémétrie et enregistrement <https://telemetry.galette.eu>`_ :)
 
 .. _bogues_090:
