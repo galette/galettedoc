@@ -13,7 +13,7 @@ Utilisateurs avertis
 Adaptation à votre charte graphique
 ===================================
 
-Il est possible, si vous le souhaitez et si vous maîtriser les feuilles de style CSS, d'adapter la charte graphique existante de Galette à vos besoins. Pour ce faire, il est fortement déconseillé de modifier directement le fichier CSS de Galette ; un mécanisme a été mis en place pour vous simplifier la tâche : créez simplement un fichier nommé ``galette_local.css`` dans le dossier ``templates/default/`` qui contiendra les surcharges CSS nécessaires, ce fichier sera inclus automatiquement :-)
+Il est possible, si vous le souhaitez et si vous maîtriser les feuilles de style CSS, d'adapter la charte graphique existante de Galette à vos besoins. Pour ce faire, il est fortement déconseillé de modifier directement le fichier CSS de Galette ; un mécanisme a été mis en place pour vous simplifier la tâche : créez simplement un fichier nommé ``galette_local.css`` dans le dossier ``webroot/themes/default/`` qui contiendra les surcharges CSS nécessaires, ce fichier sera inclus automatiquement :-)
 
 Prenez soin de ne pas vous compliquer les choses. Par exemple, si vous souhaitez modifier la couleur du nom de l'association affiché sous le titre de chaque page, vous trouverez dans Galette la règle CSS `#asso_name` qui comporte différentes informations, dont la couleur. Dans votre feuille de style  locale, vous aurez juste besoin de :
 
@@ -24,6 +24,8 @@ Prenez soin de ne pas vous compliquer les choses. Par exemple, si vous souhaitez
    }
 
 Cela suffira pour afficher correctement le nom de votre association en rouge. Notez que votre feuille CSS locale et les problèmes qu'elle pourrait engendrer ne peuvent pas être pris en compte par l'équipe de Galette ; aucun support ne pourra vous être fourni sur le sujet.
+
+De la même manière, vous pouvez surcharger la feuille de style utilisée pour l'impression en créant le fichier ``galette_local_print.css``.
 
 Ajout et modification de chaînes
 ================================
