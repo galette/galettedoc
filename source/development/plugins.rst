@@ -12,11 +12,11 @@
 
 Depuis la version 0.7 ; Galette fournit un système de plugins - rudimentaire, certes, mais qui a le mérite d'exister :-)
 
-Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les templates Smarty) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
+Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les `templates Smarty <https://www.smarty.net/>`_) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
 
 Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <http://fr.dotclear.org/>`_.
 
-Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit : 
+Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit :
 
 * |folder| `plugins`
 
@@ -24,7 +24,7 @@ Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin inst
   * |folder| `Paypal`
   * |folder| `...`
 
-Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire, il est possible de choisir le thème désiré via les préférences de Galette. Le thème par défaut se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette).
+Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire. Le thème par défaut [le seul supporté actuellement) se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette). Consultez les sections adéquates pour en savoir davantage
 
 Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)
 
@@ -36,7 +36,7 @@ Les plugins officiels de galette sont fournis sous licence GPL version 3, tout c
 La licence doit :
 
 * être incluse à la racine du dépôt (fichier ``LICENSE`` ou ``COPYING``),
-* être spécifiée sur chaque fichier ; selon le modèle suivant :
+* être spécifiée sur chaque fichier (si la license choisie l'exige) ; selon le modèle suivant :
 
 .. code-block:: php
 
@@ -441,12 +441,9 @@ Ensuite, pour y faire référence :
 Bibliothèques externes
 ======================
 
-Les plugins, tout comme Galette, devraient par défaut chercher leurs bibliothèques externes dans le dossier ``includes`` du plugin. Il suffit en ce cas de prendre en exemple les fichiers suivants de Galette et de les placer dans le dossier ``config`` du plugin :
+Les bibliothèques externes ne devraient pas être inclues dans les sources du plugin, uniquement dans ses releases.
 
-* ``config/versions.inc.php``,
-* ``config/paths.inc.php`` (notamment l'inclusion du fichier ``local_paths.inc.php`` permettant l'utilisation d'autres versions ou de bibliothèques système).
-
-La convention dans Galette est que les dossiers des bibliothèques externes respectent la nomenclature ``{nom bibliothèque}-{version}``. Les bibliothèques externes ne devraient pas être inclues dans les sources du plugin, uniquement dans ses releases.
+Galette utilise `composer <https://getcomposer.org>`_ pour gérer les bilibothèques externes ; les plugins peuvent en faire de même.
 
 Hiérarchie
 ==========
@@ -487,7 +484,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
 
 Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)
 
-Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>` depuis la version 0.7) doivent respecter les :ref:`conventions de codage PEAR <conventions>` dans leur ensemble : http://pear.php.net/manual/en/standards.php
+Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>`) doivent respecter les :ref:`conventions de codage PSR2 <conventions>` dans leur ensemble : http://www.php-fig.org/psr/psr-2/
 
 Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à une base doivent en faire de même.
 
@@ -496,9 +493,9 @@ URL du formulaire d'adhésion
 
 .. versionadded:: 0.8.3
 
-Il est possible de reconfigurer l'URL du formulaire PDF d'adhésion. Une version basique est fournie dns Galette, basée sur les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants.
+Il est possible de reconfigurer l'URL du formulaire PDF d'adhésion. Une version basique est fournie dans Galette, qui utilise les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants.
 
-Le :doc:`plugin Fullcard <../plugins/fullcard>` par exemple, s'il est installé, remplacera le formulaire par défaut par un modèle plus précis.
+Le :doc:`plugin Fullcard <../plugins/fullcard>` par exemple, s'il est installé, remplacera le formulaire par défaut par un modèle plus précis (l'URL du formulaire ne changera pas).
 
 Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un code similaire à :
 
@@ -506,10 +503,8 @@ Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un co
 
    <?php
    $_preferences = [
-      'pref_adhesion_form_uri' => '/plugins/' . $id . '/form.php'
+       'pref_adhesion_form' => '\GaletteFullcard\PdfFullcard'
    ];
-
-Dans l'exemple qui précède, ``$id`` sera remplacé par le nom du répertoire dans lequel le plugin a été installé, et ``form.php`` représente le fichier PHP qui va effectivement afficher le PDF.
 
 Debug
 =====
