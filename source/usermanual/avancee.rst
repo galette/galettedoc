@@ -68,6 +68,8 @@ En partant du principe que chaque serveur proxy viendra ajouter sa propre adress
 Statistiques externes
 =====================
 
+.. versionadded:: 0.9
+
 Un certain nombre de plateformes de génération de statistiques (comme `Piwik <https://piwik.org/>`_ par exemple) requiert l'ajout de code Javascript spécifiques pour fonctionner.
 
 Galette vous permet d'utiliser ces fonctionnalités. Il suffit pour cela de créer un fichier nommé ``tracking.js`` dans le dossier ``webroot/themes/default`` qui sera inclus et exécuté automatiquement.
@@ -75,3 +77,19 @@ Galette vous permet d'utiliser ces fonctionnalités. Il suffit pour cela de cré
 .. warning::
 
    Galette utilise du javascript pour son fonctionnement. Si le code que vous incluez dans le fichier ``tracking.js`` est incorrect, cela peut perturber le fonctionnement normal du logiciel !
+
+Taille et nombre de cartes
+==========================
+
+.. versionadded:: 0.9
+
+Les préférences de Galette permettent de définir les espacements et marges horizontaux et verticaux des cartes, mais pas leur taille, ni le nombre de colonnes ou de lignes. Pour éviter la modification de code ; un certain nombre de :ref:`constantes peuvent être définies <behavior>` :
+
+.. note::
+
+   La modification de ces valeurs pourrait entraîner des décalages relativement importants en fonction des valeurs choisies. Modifiez-les avec parcimonie, et n'oubliez pas de tester le résultat ;)
+
+* ``GALETTE_CARD_WIDTH`` permet de définir la largeur de chaque carte,
+* ``GALETTE_CARD_HEIGHT`` permet de définir la hauteur de chaque carte,
+* ``GALETTE_CARD_COLS`` permet de définir le nombre de colonnes,
+* ``GALETTE_CARD_ROWS`` permet de définir le nombre de lignes.
