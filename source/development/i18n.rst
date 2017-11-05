@@ -48,10 +48,6 @@ Pour la syntaxe PHP, on utilise la function « ``_T`` » :
    echo _T("Hello world!");
    ?>
 
-.. note::
-
-   Prenez bien garde à la syntaxe utilisée. Si par exemple vous utilisiez des guillemets simples au lieu de guillemets doubles, la chaîne ne pourrait pas être extraite du code pour traduction !
-
 Il est souvent nécessaire d'utiliser des variables à remplacer dans les chaînes à traduire. Via PHP, on utilisera simplemnt une fonction du type ``str_replace`` ou ``preg_replace`` pour arriver à nos fins :
 
 .. code-block:: php
@@ -80,6 +76,8 @@ Il est souvent nécessaire d'utiliser des variables à remplacer dans les chaîn
    );
    ?>
 
+Une fonction ``__()`` est également disponible ; la seule différence avec ``_T()``, c'est que les chaînes non traduites ne seront pas marquées comme telles (utilisé principalement pour les routes).
+
 .. _i18npatterns:
 
 Bien entendu, les patterns sont laissés à votre entière discrétion ; pensez seulement que la personne qui traduira pourra mieux contextualiser la chaîne si les variables à remplacer sont un minimum identifiée (nous aurions par exemple pu choisir `%s` au lieu de `%name` ; mais ça aurait été moins explicite :-) ).
@@ -101,6 +99,30 @@ Smarty propose des `modifiers` pour par exemple effectuer des remplacements. Le 
 
 La :ref:`note concernant le nommage des patterns <i18npatterns>` du précédent paragraphe s'applique ici aussi, bien entendu ;-)
 
+Domaines de traduction
+----------------------
+
+.. versionadded:: 0.9
+
+Les traductions dans Galette utilisent un système de domaine pour éviter que les chaînes provenant de différentes sources n'entrent en collision. Le domaine par défaut (utilisé si rien n'est spécifié) se nomme `galette`. Un domaine `galette_routes` (spécifique aux... routes :D) est également disponible.
+
+Chaque plugin fournira son propre domaine à minima (la plupart des plugins officiels fournissent également un domaine spécifique pour leurs routes).
+
+Lors de l'appel aux fonctions de traduction, il faudra donc spécifier le domaine :
+
+.. code-block:: php
+
+   <?php
+   echo _T('Hello, you'); //utilisation du domaine Galette ; la traduction sera 'Bonjour, vous'
+   echo _T('Hello, you', 'another'); //utilisation du domaine another ; la traduction sera 'Salut, toi'
+
+Le même exemple, avec Smarty :
+
+.. code-bloc:: smarty
+
+   {_T string="Hello, you!"}
+   {_T string="Hello, you!" domain="another"}
+
 Génération des fichiers de langue
 =================================
 
@@ -109,3 +131,7 @@ La génération des fichiers de langue est gérée par le fichier ``Makefile`` d
 Dans un premier temps, il va extraire les chaînes à traduire depuis les fichiers source listés. Ces chaînes seront utilisées pour créer les fichiers ``.po``. Le script va aussi compiler les fichiers ``.mo`` et générer les fichier de langue PHP.
 
 Une fois les fichiers ``.po`` modifiés ; vous aurez à lancer de nouveau la commande ``make`` pour que tous les fichiers soient générés. Le processus est identique pour les fichiers de langue des plugins.
+
+.. note::
+
+   Chaque domaine de traduction est stocké dans ses propres fichiers.
