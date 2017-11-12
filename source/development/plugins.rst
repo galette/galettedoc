@@ -6,11 +6,7 @@
 Écriture de plugins
 *******************
 
-.. warning::
-
-   Dans l'actuelle version de développement, le système de plugins a **énormément changé** ; la présente documentation n'est plus applicable.
-
-Depuis la version 0.7 ; Galette fournit un système de plugins - rudimentaire, certes, mais qui a le mérite d'exister :-)
+Depuis la version 0.7 ; Galette fournit un système de plugins.
 
 Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les `templates Smarty <https://www.smarty.net/>`_) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
 
@@ -24,7 +20,7 @@ Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin inst
   * |folder| `Paypal`
   * |folder| `...`
 
-Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}}`` (le nom du thème étant défini par le nom du répertoire. Le thème par défaut [le seul supporté actuellement) se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette). Consultez les sections adéquates pour en savoir davantage
+Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}`` (le nom du thème étant défini par le nom du répertoire, le thème par défaut [le seul supporté actuellement] se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette). Consultez les sections adéquates pour en savoir davantage
 
 Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)
 
@@ -138,6 +134,8 @@ Les considérations relatives aux arguments sont valables dans les deux cas.
 L'affichage d'une page par le biais d'un template Smarty ressemblerait à :
 
 .. code-block:: php
+
+   <?php
    // display page
    $this->view->render(
       $response,
@@ -151,7 +149,7 @@ On constate ici que le second argument passé à la méthode ``render()`` suit u
 
 Il peut y avoir conflit si un fichier de template portant le même nom existe déjà (dans le coeur ou das un autre plugin). Dans le cas où l'un de vos fichiers template porte le même nom qu'un autre (de Galette ou d'un autre plugin) ; le premier appelé sera compilé, et ce sera toujours celui-là qui sera chargé.
 
-Pour parer à ce problème, les dossiers des tmplates sont couplés à une clé unique pour chaque plugin. De cette manière, il n'est pas possible d'avoir de doublons ; mais il est nécessaire de spécfier la clé lors de l'appel.
+Pour parer à ce problème, les dossiers des templates sont couplés à une clé unique pour chaque plugin. De cette manière, il n'est pas possible d'avoir de doublons ; mais il est nécessaire de spécfier la clé lors de l'appel.
 
 Ainsi, ``fichier.tpl`` désigne le fichier ``fichier.tpl`` du coeur, et ``file:[abcde]fichier.tpl`` le fichier ``fichier.tpl`` du plugin dont l'identifiant est ``abcde``.
 
@@ -282,10 +280,6 @@ Il est possible d'assigner à Smarty des variables globales supplémentaires (vi
    ?>
 
 Les variables déclarées comme ceci seront alors accessibles depuis les templates Smarty de la manière habituelle : ``{$ma_var}``.
-
-.. todo::
-
-   Voir si c'est encore d'actualité en 0.9
 
 Des remplacements automatiques peuvent être appliqués au sein des variables déclarées, en utilisant des chaînes spécifiques :
 
@@ -581,7 +575,9 @@ URL du formulaire d'adhésion
 
 .. versionadded:: 0.8.3
 
-Il est possible de reconfigurer l'URL du formulaire PDF d'adhésion. Une version basique est fournie dans Galette, qui utilise les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants.
+.. versionchanged:: 0.9
+
+Il est possible de reconfigurer le formulaire PDF d'adhésion. Une version basique est fournie dans Galette, qui utilise les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants.
 
 Le :doc:`plugin Fullcard <../plugins/fullcard>` par exemple, s'il est installé, remplacera le formulaire par défaut par un modèle plus précis (l'URL du formulaire ne changera pas).
 
