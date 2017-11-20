@@ -24,6 +24,10 @@ Les fichiers de traduction du plugins seront placés dans un répertoire ``lang`
 
 Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)
 
+.. note::
+
+   Un bref :doc:`guide de migration des plugins de la 0.8 vers la 0.9 <plugins-0.8-0.9>` est disponible.
+
 Licence
 =======
 
