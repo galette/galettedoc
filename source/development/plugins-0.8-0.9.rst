@@ -23,7 +23,7 @@ Outre les modifications propres aux plugins, certaines méthodes et constructeur
    //nouvel appel - $this->zdb est utilisable au sein de routes
    $obj = new \Galette\Core\Object($this->zdb);
 
-Pour les besoins de la cause, des exemples en provenance du plugin prêt d'objet seront étudiés ici.
+Pour les besoins de la cause, des exemples en provenance du plugin prêt d'objet seront étudiés ici. Vous pouvez consulter le `commit en question <https://git.tuxfamily.org/galette/plugin-objectslend.git/commit/?h=develop&id=326b52f486c6dccd5896d9db13e3a074d3896b19>`_.
 
 _define.php
 ===========
@@ -291,3 +291,47 @@ Pour poursuivre notre exemple, le fichier ``preferences.tpl`` de notre plugin de
 .. note::
 
    L'action du formulaire a également été adaptée pour correspondre aux routes qui ont été définies.
+
+Langues
+=======
+
+Les locales dans Galette 0.9 utilisent désormais des domaines distincts, les fichiers ``Makefile`` et ``xgettext.py`` doivent être mis à jour. Copiez-les depuis un plugin officiel existant dans le dossier ``lang`` de votre plugin.
+
+Le fichier ``Makefile`` doit être adapté pour déclarer les langues et domaines utilisés :
+
+.. code-block:: makefile
+
+   LANGUAGES = en_US fr_FR.utf8
+   DOMAINS = objectslend objectslend_routes
+
+Les fichiers existants doivent être renommés pour correspondre aux langues et domaines :
+
+.. code-block:: bash
+
+   $ git mv messages.po objectslend.pot
+   $ git mv en_US.po objectslend_en_US.po
+   $ git mv fr_FR.utf8.po objectslend_fr_FR.utf8.po
+   $ git mv lang_french.php objectslend_fr_FR.utf8.php
+   $ git mv lang_english.php objectslend_en_US.php
+   $ git mv en_US/LC_MESSAGES/galette_objectslend.mo en_US/LC_MESSAGES/objectslend.mo
+   $ git mv fr_FR.utf8/LC_MESSAGES/galette_objectslend.mo fr_FR.utf8/LC_MESSAGES/objectslend.mo
+
+Il faut également adapter les fichiers PHP pour qu'ils prennent en compte le domaine :
+
+.. code-block:: bash
+
+   $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_en_US.php
+   $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_fr_FR.utf8.php
+Afin d'éviter des erreurs lors du premir lancement du ``make``, il faudra créer les fichier pour les traductions des routes :
+
+.. code-block:: bash
+
+   $ touch objectslend_routes_en_US.po
+   $ touch objectslend_routes_fr_FR.utf8.po
+   $ touch objectslend_routes.pot
+   $ touch en_US/LC_MESSAGES/objectslend_routes.mo
+   $ touch fr_FR.utf8/LC_MESSAGES/objectslend_routes.mo
+
+Il faudra modifier les différents fichiers du plugin pour ajouter le domaine ; c'est automatisable si l'on souhaite modifier l'ensemble des chaînes, mais ce n'était pas le cas pour ce plugin.
+
+Enfin, vous devriez pouvoir lancer un petit ``make`` :)
