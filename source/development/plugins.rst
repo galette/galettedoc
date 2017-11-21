@@ -263,6 +263,43 @@ En effet, les plugins n'étant plus directement disponibles dans l'arborescence 
 Smarty
 ======
 
+.. _smartyextends:
+
+Héritage
+--------
+
+Avant Galette 0.9, les templates ne fournissaient qu'une partie de la page à afficher, et le code PHP se chargeait de l'inclure au sein de la page. Désormais, les `fichiers de templates doivent déclarer leur héritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_.
+
+Trois possibilités de template parent sont disponibles :
+
+* ``page.tpl`` pour la grande majorité des pages,
+* ``public_page.tpl`` pour les pages publiques,
+* ``ajax.tpl`` pour les pages chargées en ajax.
+
+Chacun de ces templates fournit un bloc ``content`` pour afficher le contenu de la page. Les template ``page.tpl`` et ``public_page.tpl`` fournissent également un bloc ``javascript`` pour inclure les balises ``<script>``. Aucun des blocs n'est obligatoire ; mais une page sans contenu aurait relativement peu d'intérêt :)
+
+.. code-block:: smarty
+
+   {extends file="page.tpl"}
+   {block name="content"}
+       Votre contenu ici
+   {/block}
+   {block name="javascript"}
+       <script>alert('Coucou de javascript.');</script>
+   {/block}
+
+L'héritage d'un fichier template peut être adapté dynamiquement en fonction de certaines variables :
+
+.. code-block:: smarty
+
+   if $mode eq 'ajax'}
+       {assign var="extend" value='ajax.tpl'}
+   {else}
+       {assign var="extend" value='page.tpl'}
+   {/if}
+   {extends file=$extend}
+
+
 Assignation de variables
 ------------------------
 
