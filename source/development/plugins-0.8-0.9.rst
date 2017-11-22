@@ -228,7 +228,7 @@ L'adresse de notre page de préférences a changé ; le fichier ``menu.tpl`` doi
 On distingue trois changements :
 
 * le remplacement de l'appel au fichier par le nom de la route,
-* la récupération de la route courant pluôt qu'un nom de page pour marquer la sélection courante,
+* la récupération de la route courante plutôt qu'un nom de page pour marquer la sélection courante,
 * l'utilisation du domaine de traduction pour la chaîne. Notez qu'ici, il serait possible de se baser sur la traduction du terme fournie par le coeur, puisque ce serait certainement identique.
 
 Ressources web
@@ -268,7 +268,7 @@ Et qui deviendra pour la 0.9 :
 
 .. note::
 
-   Les noms des ressources d'un plugin importent peu, leur chemin est en effet conditionné par l'identifiant du plugin (``$module_id``) qui est unique.
+   Les noms des ressources d'un plugin importent peu, leur chemin est en effet conditionné par l'identifiant unique du plugin (``$module_id``).
 
 Fichiers de template
 ====================
