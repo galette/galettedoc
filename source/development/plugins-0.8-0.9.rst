@@ -275,7 +275,7 @@ Fichiers de template
 
 Outres les différents chemins vers les pages du plugin ou vers les ressources web, les :ref:`fichiers de template Smarty doivent désormais déclarer leur héritage <smartyextends>`, ce qui était auparavant effectué dans les appels PHP.
 
-Pour chaque fichier de template du plugin, il faudra donc au minimum entourer le contenu existant de ``{block name="content"}`` et de ``{/block}`` et d'ajouter l'instruction d'héritage. Les appels javascript doivent être regroupés, vos balises ``script`` devraient se trouver dans le bloc ``javascript``.
+Pour chaque fichier de template du plugin, il faudra donc au minimum entourer le contenu existant de ``{block name="content"}`` et de ``{/block}`` ainsi qu'ajouter l'instruction d'héritage. Les appels javascript doivent être regroupés, vos balises ``script`` devraient se trouver dans le bloc ``javascript``.
 
 Pour poursuivre notre exemple, le fichier ``preferences.tpl`` de notre plugin devra être modifié comme ceci :
 
@@ -322,7 +322,7 @@ Il faut également adapter les fichiers PHP pour qu'ils prennent en compte le do
 
    $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_en_US.php
    $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_fr_FR.utf8.php
-Afin d'éviter des erreurs lors du premir lancement du ``make``, il faudra créer les fichier pour les traductions des routes :
+Afin d'éviter des erreurs lors du premier lancement du ``make``, il faudra créer les fichier pour les traductions des routes :
 
 .. code-block:: bash
 
