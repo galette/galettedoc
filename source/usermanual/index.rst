@@ -22,9 +22,6 @@ Juste après l'écran de connexion, vous serez emmenés vers le tableau de bord 
 
 La partie principale du tableau de bord vous propose un accès rapide aux principales fonctionnalités du logiciel :)
 
-Table des matières
-------------------
-
 .. toctree::
    :maxdepth: 2
 

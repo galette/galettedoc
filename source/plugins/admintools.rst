@@ -2,6 +2,12 @@
 Outils d'administration
 =======================
 
+.. warning::
+
+   Ce plugin n'est plus maintenu.
+
+   Ses fonctionnalités ont été migrées dans le menu "Configuration", "Outils d'administration" depuis Galette 0.9.
+
 Ce plugin permet certaines actions d'administration sur Galette.
 
 Les fonctionnalités apportées par ce plugin sont :

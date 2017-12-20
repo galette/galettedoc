@@ -22,11 +22,10 @@ Cas particuliers
 OVH
 ===
 
-Placer à la racine de l'hébergement un fichier ``.htaccess`` contenant la ligne suivante qui va activer le support PHP 5.4 :
+Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <http://docs.ovh.com/fr/fr/web/hosting/mutualise-configurer-la-version-de-php-depuis-votre-espace-client/>`_.
 
-.. code-block:: raw
+Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
-   SetEnv SetEnv PHP_VER 5_4
 
 Nginx
 =====
@@ -40,15 +39,3 @@ Il conviendra donc traduire les règles de restriction d'accès aux données dan
    location ~ /(data|config|lib)/ {
        deny all;
    }
-
-Ouvaton
-=======
-
-Un problème particulier se présente avec cet hébergement, dès la première étape de l'installation qui propose normalement les langues disponibles ; rien n'est affiché... Si vous êtes dans ce cas de figure, la procédure est simple : il suffit de créer un fichier ``galette/config/behavior.inc.php`` avec le contenu suivant :
-
-.. code-block:: php
-
-   <?php
-   define('GALETTE_HANDLE_ERRORS', false);
-   define('GALETTE_SYS_LOG', true);
-

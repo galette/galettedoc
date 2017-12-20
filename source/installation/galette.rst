@@ -2,7 +2,7 @@
 Installation
 ************
 
-L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/install/.
+L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/install/. La procédure de :doc:`mise à jour de votre instance de Galette <update>` est documentée séparément.
 
 Vérification des paramètres
 ===========================
@@ -128,40 +128,12 @@ En ligne de commande, vous pouvez utiliser :
    :scale: 70%
    :align: center
 
-Mise à jour
-===========
-
-La mise à jour de Galette, consistait historiquement à lancer de simples scripts SQL, mais cela a changé depuis la version 0.8. Il est désormais toujours possible que des scripts SQL soient exécutés, mais il se peut également qu'il s'agisse d'un script PHP, voire d'un mélange des deux.
-
-Tout cela est totalement transparent, des informations sur les différentes étapes, leur échec ou leur succès vous seront affichées sur le même modèle que lors de la création des tables.
-
-Sélection de la version précédente
-----------------------------------
-
-Dans le cas d'une mise à jour, vous devrez sélectionner la version antérieure de Galette. Le système d'installation essaiera de « deviner » pour vous de quelle version il s'agit, et sélectionnera l'entrée adéquate par défaut (elle sera affichée en caractères gras pour la différencier des autres).
-
-.. image:: ../_styles/static/images/installation/5_update_version_select.png
-   :scale: 70%
-   :align: center
-
-Le système vous préviendra également si vous tentez de mettre à jour alors que votre base semble être à la bonne version.
-
-.. image:: ../_styles/static/images/installation/5bis_already_updated.png
-   :scale: 70%
-   :align: center
-
-Une fois le ou les scripts de mise à jour exécutés, un bref récapitulatif devrait être affiché :
-
-.. image:: ../_styles/static/images/installation/5ter_update_success.png
-   :scale: 70%
-   :align: center
-
 Paramètres de l'administrateur
 ==============================
 
 .. note:: Cet écran n'est affiché qu'en cas d'installation. Lors d'une mise à jour, les paramètres administrateurs auront déjà été renseignés ;)
 
-L'écran suivant vous demande de saisir les informations de l'administrateur de Galette. Par la suite, certains comptes créés via l'interface pourront être élevés au rang d'administrateur également, mais celui qui est créé à l'installation n'est pas un adhérent, et ne peut pas être supprimé.
+L'écran suivant vous demande de saisir les informations de l'administrateur de Galette. Par la suite, certains comptes créés via l'interface pourront être élevés au rang d'administrateur également, mais celui qui est créé à l'installation n'est pas un adhérent, il ne peut pas être supprimé et possède certains droits particuliers.
 
 .. image:: ../_styles/static/images/installation/6_admin.png
    :scale: 70%

@@ -21,11 +21,31 @@ Quelques liens qui peuvent être utiles :
 * http://ndpsoftware.com/git-cheatsheet.html
 * http://progit.org/book/
 
-Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, mais sous forme d'une `archive à télécharger <http://download.tuxfamily.org/galette/dev/galette_dev_includes.tar.bz2>`_ et à décompresser dans le dossier ``includes`` de Galette. Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
+Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, référez-vous au paragraphe :ref:`bibliothèques tierces <deps>`.
 
 Une fois le dépôt cloné et les bibliothèques externes installées, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
 
 Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
+
+.. _deps:
+
+Bibliothèques tierces
+---------------------
+
+Pour fonctionner, Galette a besoin d'un certain nombre de bibliothèques externes.
+
+Initialement, ces bibliothèques étaient dans le dépôt de Galette, mais cela prenait trop de place, et était trop compliqué à gérer. Il a été décidé de les placer dans une arcive à part, qu'il fallait récupérer et décompresser dans le dossier ``includes`` ; mais tout ceci est maintenant déprécié.
+
+Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <http://getcomposer.org>`:
+
+.. code-block:: bash
+
+   $ cd galette/galette
+   $ composer install -o
+
+L'utilisation de composer est pratique pour gérer les bibliothèques tierces durant la phase de développement, c'est également ce qui est utilisé pour générer les archives (nightly et releases) ; après un brin de nettoyage.
+
+Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
 
 .. _gitlinux:
 

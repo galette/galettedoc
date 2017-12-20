@@ -6,7 +6,7 @@ Modèles PDF
 
 Des modèles PDF sont disponibles pour différentes sorties.
 
-Actuellement, il existe un modèle factures et un modèle Reçu. Tous deux héritent d'un modèle `Global`.
+Actuellement, il existe un modèle factures, un modèle Reçu et un modèle formulaire d'adhésion. Tous héritent d'un modèle `Global`.
 
 .. image:: ../_styles/static/images/usermanual/pdf_models.png
    :scale: 75%
@@ -46,3 +46,10 @@ Les modèles factures et reçus sont sensiblement identiques, titre mis à part.
    :alt: Modèle PDF Factures
 
 Comme vous pourrez le constater dans la capture d'écran ci-dessus, le modèle Facture utilisera les en-tête et pied de page par défaut définis dans le modèle `Global`, aucun style CSS n'est ajouté par défaut. Le :doc:`plugin AdminTools <../plugins/admintools>` vous permet de réinitialiser les modèles par défaut à tout moment.
+
+Formulaire d'adhésion
+=====================
+
+Il s'agit d'un modèle qui peut être utilisé vide (pour imprimer des fiches d'adhésion lors d'évènements par exemple), ou pré-rempli avec les valeurs d'un adhérent spécifique.
+
+Les possiblités des modèles étant réduits, l'utlisation du :doc:`plugin FullCard </plugins/fullcard>` pourra remplacer ce modèle. Sa modification est plus complexe, mais le résultat peut être bien meilleur.
