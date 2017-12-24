@@ -15,12 +15,11 @@ Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décom
    :scale: 50 %
    :align: center
 
-****************
 Cas particuliers
-****************
+----------------
 
 OVH
-===
+^^^
 
 Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <http://docs.ovh.com/fr/fr/web/hosting/mutualise-configurer-la-version-de-php-depuis-votre-espace-client/>`_.
 
@@ -28,7 +27,7 @@ Des informations complémentaires sont disponibles à l'addresse : https://docs.
 
 
 Nginx
-=====
+^^^^^
 
 Le `serveur web Nginx <http://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <http://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
 
