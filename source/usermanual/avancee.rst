@@ -93,3 +93,56 @@ Les préférences de Galette permettent de définir les espacements et marges ho
 * ``GALETTE_CARD_HEIGHT`` permet de définir la hauteur de chaque carte,
 * ``GALETTE_CARD_COLS`` permet de définir le nombre de colonnes,
 * ``GALETTE_CARD_ROWS`` permet de définir le nombre de lignes.
+
+Exports CSV
+===========
+
+Galette propose le paramétrage d'exports CSV. Un seul export paramétré est disponible par défaut, mais vous pouvez créer les votres en les ajoutant au fichier ``config/exports.xml``. La configuration d'un export paramétré se décompose en plusieurs parties :
+
+* la requête SQL à exécuter,
+* les colonnes à afficher dans le fichier CSV,
+* le paramétrage du séparateur,
+* le paramétrage du caractère de séparation des chaînes.
+
+.. warning::
+
+   Le paramétrage des exports se fait dans un fichier XML. Ce dernier doit **impérativement être valide** !
+
+   Si le fichier n'était pas valide, aucun des exports ne serait présenté. Sous linux, vous pourrez utiliser un outil tel que ``xmlwf`` ou ``xmllint`` pour vous assurer de la validitié du fichier.
+
+Prenons en exemple la requête paramétrée d'export des contributions :
+
+.. code-block:: xml
+
+   <export id="cotisations" name="Cotisations" description="Export de l'état des cotisations pour l'ensemble des adhérents" filename="galette_cotisations.csv">
+       <!-- The Query to execute - mandatory -->
+       <query>SELECT nom_adh, prenom_adh, ville_adh, montant_cotis, date_debut_cotis, date_fin_cotis FROM galette_cotisations INNER JOIN galette_adherents ON (galette_cotisations.id_adh=galette_adherents.id_adh)</query>
+       <!-- CSV Headers - optionnal.
+            If not set, fields name will be exported.
+            If set to none (eg. <headers><none/></headers>, no headers will be outpoutted.
+            You can alternatively use named columns in you query instead of header tags.
+               -->
+       <headers>
+           <!--<none/>-->
+           <header>Name</header>
+           <header>Surname</header>
+           <header>Town</header>
+           <header>Amount</header>
+           <header>Begin date</header>
+           <header>End date</header>
+       </headers>
+       <!-- CSV separator to use - optionnal.
+            If this tag is not present, it will defaults to ',' (see Csv::DEFAULT_SEPARATOR from classes/csv.class.php)
+            Accepted values are also defined in Csv class.
+       -->
+       <separator>;</separator>
+       <!-- How to quote values - optionnal.
+            If this tag is not present, it will defaults to '"' (see Csv::DEFAULT_QUOTE from classes/csv.class.php)
+            Accepted values are also defined in Csv class.
+       -->
+       <quote><![CDATA["]]></quote>
+   </export>
+
+Chaque export paramétré est défini par une balise ``export``, qui contient un identifiant unique (``id``), une description affichée dans l'interface (``name``) et le nom du fichier de sortie (``filename``). La balise ``query`` contient la requête que vous souhaitez, il n'y a pas d'autre limitation que celle du moteur de base utilisé.
+
+La partie ``headers`` détermine les noms des colonnes à utiliser pour l'export. La balise ``separator`` determine le saparateur CSV, et ``quote`` le caractère de séparation des chaînes de caractères.
