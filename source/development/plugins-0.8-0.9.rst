@@ -322,6 +322,7 @@ Il faut également adapter les fichiers PHP pour qu'ils prennent en compte le do
 
    $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_en_US.php
    $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_fr_FR.utf8.php
+
 Afin d'éviter des erreurs lors du premier lancement du ``make``, il faudra créer les fichier pour les traductions des routes :
 
 .. code-block:: bash
