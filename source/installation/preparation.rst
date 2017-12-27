@@ -68,6 +68,29 @@ Voici un exemple de configuration valable pour les serveurs Apache, incluant la 
        </Directory>
    </VirtualHost>
 
+L'éqauivalent pour Nginx serait :
+
+.. code-block:: nginx
+
+   server{
+       listen 80;
+       server_name galette.localhost;
+
+       root /var/www/galette/galette/webroot;
+
+       location / {
+           index index.php;
+           if (!-e $request_filename){
+               rewrite ^(.*)$ /index.php last;
+           }
+       }
+
+       location ~ \.php$ {
+           fastcgi_pass unix:/var/run/php5-fpm.sock;
+           include fastcgi_params;
+       }
+   }
+
 .. _installationunix:
 
 .. include:: unix.rst
