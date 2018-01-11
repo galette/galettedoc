@@ -36,7 +36,7 @@ Pour fonctionner, Galette a besoin d'un certain nombre de bibliothèques externe
 
 Initialement, ces bibliothèques étaient dans le dépôt de Galette, mais cela prenait trop de place, et était trop compliqué à gérer. Il a été décidé de les placer dans une arcive à part, qu'il fallait récupérer et décompresser dans le dossier ``includes`` ; mais tout ceci est maintenant déprécié.
 
-Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <http://getcomposer.org>`:
+Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <http://getcomposer.org>`_ :
 
 .. code-block:: bash
 
