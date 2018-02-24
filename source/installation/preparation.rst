@@ -57,6 +57,16 @@ Voici un exemple de configuration valable pour les serveurs Apache, incluant la 
 
    <VirtualHost *:80>
        ServerName galette.localhost
+
+       #https - add *:443 in the <VirtualHost>
+       #SSLEngine on
+       #SSLProtocol all -SSLv2 -SSLv3
+       #Header always add Strict-Transport-Security "max-age=15768000; includeSubDomains; preload"
+
+       #SSLCertificateFile /etc/pki/tls/certs/galette.localhost.crt
+       #SSLCertificateChainFile /etc/pki/tls/certs/galette.localhost.chain.crt
+       #SSLCertificateKeyFile /etc/pki/tls/private/galette.localhost.key
+
        DocumentRoot /var/www/galette/galette/webroot/
        <Directory /var/www/galette/galette/webroot/>
            RewriteEngine On
@@ -68,27 +78,43 @@ Voici un exemple de configuration valable pour les serveurs Apache, incluant la 
        </Directory>
    </VirtualHost>
 
-L'éqauivalent pour Nginx serait :
+L'équivalent pour Nginx serait :
 
 .. code-block:: nginx
 
-   server{
-       listen 80;
+   server {
+       #http
+       listen 80
+       listen [::]:80;
+
+       # https
+       #listen 443 ssl http2;
+       #listen [::]:443 ssl http2;
+       #ssl_certificate      /etc/ssl/certs/galette.localhost.pem;
+       #ssl_certificate_key  /etc/ssl/private/galette.localhost.key;
+
        server_name galette.localhost;
 
        root /var/www/galette/galette/webroot;
 
+       index index.html index.php;
+
        location / {
-           index index.php;
-           if (!-e $request_filename){
-               rewrite ^(.*)$ /index.php last;
-           }
+           try_files $uri $uri/ @galette;
+       }
+
+       location @galette {
+           rewrite ^(.*)$ /index.php last;
        }
 
        location ~ \.php$ {
-           fastcgi_pass unix:/var/run/php5-fpm.sock;
-           include fastcgi_params;
+           include snippets/fastcgi-php.conf;
+           fastcgi_pass unix:/var/run/php7.0-fpm.sock;
        }
+   }
+
+   location ~ /(data|config|lib)/ {
+       deny all;
    }
 
 .. _installationunix:
