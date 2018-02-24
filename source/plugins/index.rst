@@ -37,6 +37,7 @@ Les plugins « officiels » sont développés et/ou maintenus par l'équipe de d
    maps.rst
    auto.rst
    objectslend.rst
+   events.rst
 
 *************
 Plugins tiers
