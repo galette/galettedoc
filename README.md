@@ -25,4 +25,4 @@ https://galete.eu/documentation
 La version de développement de la documentation est grâceusement fournie par [ReadsTheDocs](https://readthedocs.io):
 http://galette.readthedocs.io/fr/develop/
 
-Si vous souhaitez contribuer, [contactez-nous] (http://galette.eu/dc/index.php/pages/Contact) ;)
+Si vous souhaitez contribuer, [contactez-nous](http://galette.eu/dc/index.php/pages/Contact) ;)
