@@ -38,7 +38,8 @@ La liste des adhérents vous donne accès à de nombreuses fonctions :
 * génération d'étiquettes (PDF),
 * génération de listes d'émargement (PDF),
 * génération de cartes de membres (PDF),
-* export CSV.
+* export CSV,
+* modification en masse.
 
 Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements. Vous êtes encouragés à utiliser ces actions sur une sélection coinjointement avec le filtrage et le nombre d'enregisrements affichés par page.
 
@@ -85,6 +86,25 @@ Vous pourrez ainsi filtrer sur :
 Tout filtrage sera conservé le temps de votre session, vous pourrez ainsi aller modifier un paramétrage ou autre, et revenir sur la liste ; vous récupérerez automatiquement le filtre que vous aviez exécuté.
 
 Les différents filtres sont bien entendu complémentaires, vous donnant la possibilité par exemple de chercher parmi vos adhérents ceux dont le compte est actif, qui possèdent une adresse courriel et dont le nom contient un « a » ;-)
+
+Modifications en masse
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 0.9.1
+
+Les adhérents sélectionnés dans la liste peuvent être (partiellement) modifiés en une seule fois.
+
+.. image:: ../_styles/static/images/usermanual/mass_modif_selected_members.png
+   :scale: 50%
+   :align: center
+   :alt: Modification en masse des adhérents sélectionnés
+
+Seuls les champs pour lesquels la case à cocher en début de ligne seront effectivement modifiés. Un récapitulatif vous sera proposé.
+
+.. image:: ../_styles/static/images/usermanual/mass_modif_selected_members_recap.png
+   :scale: 50%
+   :align: center
+   :alt: Récapitulatif des modifications à apporter
 
 Tri
 ^^^
