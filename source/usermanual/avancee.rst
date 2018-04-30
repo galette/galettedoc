@@ -70,7 +70,7 @@ Statistiques externes
 
 .. versionadded:: 0.9
 
-Un certain nombre de plateformes de génération de statistiques (comme `Piwik <https://piwik.org/>`_ par exemple) requiert l'ajout de code Javascript spécifiques pour fonctionner.
+Un certain nombre de plateformes de génération de statistiques requiert l'ajout de code Javascript spécifiques pour fonctionner.
 
 Galette vous permet d'utiliser ces fonctionnalités. Il suffit pour cela de créer un fichier nommé ``tracking.js`` dans le dossier ``webroot/themes/default`` qui sera inclus et exécuté automatiquement.
 

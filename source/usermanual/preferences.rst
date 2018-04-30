@@ -19,17 +19,20 @@ Cet onglet vous donne accès aux paramètres relatifs à votre association :
 
 * **Nom** : nom (raison sociale) de l'association,
 * **Description** : brève description,
+* **Texte de pied de page** : texte (HTML autorisé) à afficher en bas de chaque page (pour ajouter un lien vers des mentions légals spécifiques par exemple),
 * **Logo** : envoi de votre logo,
-* **Adresse** : adresse de l'association
+* **Adresse** : adresse de l'association,
 * **Code postal** : code postal,
 * **Ville** : ville,
 * **Pays** : pays,
 * **Adresse postale** : choix de l'adresse postale qui sera affichée :
 
   * soit **depuis les préférences** pour utiliser l'adresse entrée plus haut,
-  * soit **depuis un membre du bureau** pour utiliser l'adresse de l'un des membres du bureau
+  * soit **depuis un membre du bureau** pour utiliser l'adresse de l'un des membres du bureau,
 
-* **Site web** : éventuelle adresse du site Web de l'association
+* **Site web** : éventuelle adresse du site Web de l'association,
+* **Date de télémétrie** : date à laquelle les `infomations de télémétrie <https://telemetry.galette.eu>`_ ont été envoyées,
+* **Date d'enregstrement** : date `d'enregistrement de votre instance de Galette <https://telemetry.galette.eu/reference>`_
 
 Paramètres
 ==========
@@ -42,14 +45,13 @@ Paramètres de Galette :
    :alt: Préférences de Galette, onglet Général
 
 * **Langue par défaut** : choix de la langue par défaut de l'application,
-* **Thème par défaut** : choix du thème à utiliser,
 * **Lignes/page** : nombre de lignes à afficher par défaut pour la pagination,
 * **Niveau d'historique** : modifie le niveau de l'historique :
 
-  * **Désactivé** : l'historique est complètement désactivé,
-  * **Normal** : historique activé,
-  * **Détaillé** : historique activé, mais plus verbeux.
+  * **Activé** : l'historique interne est complètement activé,
+  * **Désactivé** : l'historique interne est complètement désactivé,
 
+* **Statut d'adhésion** : le statut à affecter par défaut à tous les nouveaux utilisateurs créés,
 * **Durée d'adhésion** : durée maximale d'une adhésion,
 * **Date de début d'exercice** : date du début de l'exercice pour l'association,
 * **Pages publiques actives** : active ou désactive l'affichage des pages publiques,
@@ -70,6 +72,16 @@ Paramètres de Galette :
 
    L'utilisation de la méthode ``file://`` est potentiellement dangereuse, Galette se contente de lancer l'exécution du script fourni ; le bon fonctionnement et la sécurisation de ce script qui sera appelé tel quel par le logiciel sont votre **entière responsabilité**.
 
+* **URL du flux RSS** : lien vers le flux RSS à afficher sur le tableau de bord,
+* **URL de Galette** : adresse de l'instance Galette
+
+.. warning::
+
+   Cette addresse ne devrait être modifié qu'en cas de réel problème, des instabilités pourraint être constatées.
+
+   Une aide contextuelle est fournie au survol, veuillez vous-y référer pour plus de précisions.
+
+* **Afficher le numéro adhérent** : affiche le numéro de l'adhérent.
 
 Courriel
 ========

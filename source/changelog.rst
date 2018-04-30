@@ -6,6 +6,48 @@
 Changelog
 =========
 
+************
+0.9 -> 0.9.1
+************
+
+.. note::
+
+   Merci à l'Association Bretonne des Amis de Saint Jacques de Compostelle qui a sponsorisé le paramétrage des expéditeurs des courriels !
+
+.. _ajouts_091:
+
+Nouveautés
+==========
+
+* Modification en masse des adhérents (`#696 <https://bugs.galette.eu/issues/696>`_)
+* Choix du statut par défaut pour les nouveaux membres depuis les préférences (`#963 <https://bugs.galette.eu/issues/963>`_)
+* Texte paramétrable en pied de page (`#1107 <https://bugs.galette.eu/issues/1107>`_)
+* Ajout des traductions en Allemand (`#1165 <https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)
+* Choix des informations expéditeur lors de l'envoi d'un courriel (`#1142 <https://bugs.galette.eu/issues/1142>`_)
+
+.. _bogues_091:
+
+Bogues corrigés
+===============
+
+* Vérification de la présence des modèles PDF (`#1134 <https://bugs.galette.eu/issues/1134>`_)
+* Prise en compte des préférences de l'historique (`#440 <https://bugs.galette.eu/issues/440>`_)
+* La mise à jour des champs dynamiques met à jour la date de modification de la fiche adhérent (`#1002 <https://bugs.galette.eu/issues/1002>`_)
+* Le champ pour la clé GPG était trop court (`#1032 <https://bugs.galette.eu/issues/1032>`_)
+* Correction de différences entre les schémas MySQL et PostgreSQL (`#1072 <https://bugs.galette.eu/issues/1072>`_)
+* Nettoyage de données provenant des RC 0.9 (`#1093 <https://bugs.galette.eu/issues/1093>`_)
+* Modification de la taille du champ pour l'addresse courriel afin de respecter les standards (`#1121 <https://bugs.galette.eu/issues/1121>`_)
+* Correction de problèmes de mise à jour
+* Correction du calcul de la date de fin des contributions (`#1144 <https://bugs.galette.eu/issues/1144>`_)
+* Correction de la redirction après création d'une contribution (`#1145 <https://bugs.galette.eu/issues/1145>`_)
+* Correction des champs dynamiques pour les transactions et contributions (`#1146 <https://bugs.galette.eu/issues/1146>`_)
+* Correction des chemins des ressources statiques sur certaines configurations (`#1152 <https://bugs.galette.eu/issues/1152>`_)
+* Correction des champs admin lorsqu'une fiche adhérent est modifiée depuis un compte non admin (`#1154 <https://bugs.galette.eu/issues/1154>`_)
+* Correction des champs dynamiques de type fichier requis à la mise à jour d'une fiche adhérent (`#1160 <https://bugs.galette.eu/issues/1160>`_)
+* Correction des vérifications de sécurité à la génération des cartes de membres PDF (`#1164 <https://bugs.galette.eu/issues/1164>`_)
+* Expiration des appels aux flux RSS pour prévenir les blocages (`#989 <https://bugs.galette.eu/issues/989>`_)
+
+
 **************
 0.8.3.4 -> 0.9
 **************

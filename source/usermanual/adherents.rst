@@ -38,7 +38,8 @@ La liste des adhérents vous donne accès à de nombreuses fonctions :
 * génération d'étiquettes (PDF),
 * génération de listes d'émargement (PDF),
 * génération de cartes de membres (PDF),
-* export CSV.
+* export CSV,
+* modification en masse.
 
 Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements. Vous êtes encouragés à utiliser ces actions sur une sélection coinjointement avec le filtrage et le nombre d'enregisrements affichés par page.
 
@@ -86,6 +87,25 @@ Tout filtrage sera conservé le temps de votre session, vous pourrez ainsi aller
 
 Les différents filtres sont bien entendu complémentaires, vous donnant la possibilité par exemple de chercher parmi vos adhérents ceux dont le compte est actif, qui possèdent une adresse courriel et dont le nom contient un « a » ;-)
 
+Modifications en masse
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 0.9.1
+
+Les adhérents sélectionnés dans la liste peuvent être (partiellement) modifiés en une seule fois.
+
+.. image:: ../_styles/static/images/usermanual/mass_modif_selected_members.png
+   :scale: 50%
+   :align: center
+   :alt: Modification en masse des adhérents sélectionnés
+
+Seuls les champs pour lesquels la case à cocher en début de ligne seront effectivement modifiés. Un récapitulatif vous sera proposé.
+
+.. image:: ../_styles/static/images/usermanual/mass_modif_selected_members_recap.png
+   :scale: 50%
+   :align: center
+   :alt: Récapitulatif des modifications à apporter
+
 Tri
 ^^^
 
@@ -130,6 +150,19 @@ Pour envoyer un nouvel E-Mailing, il suffit de sélectionner dans la liste des a
    :alt: Adhérents sélectionnés pour l'E-Mailing
 
 .. note:: La sélection des adhérents dans le tableau doit se faire sur une seule et unique page (une limite inhérente aux pages web). Les fonctionnalités de filtrage, et la possibilité d'afficher l'intégralité des membres (filtrés ou non) sur une seule page vous seront alors fort utiles ;-)
+
+.. versionadded:: 0.9.1
+
+Vous avez la possibilité de choisir l'expéditeur lors de chaque envoi :
+
+* **depuis les paramètres** (valeur par défaut) : utilisera les informatons entrées dans les préférences de Galette,
+* **utilisateur actuellement connecté** : utilise les nom et adresse courriel de l'utilisateur courant (non disponible avec le compte super-admin),
+* **autre** : vous pouvez spécifier un nom et une adresse de courriel.
+
+.. image:: ../_styles/static/images/usermanual/mailing_sender.png
+   :scale: 50%
+   :align: center
+   :alt: Sélection de l'expéditeur
 
 Une fois le sujet entré ; on passera à la rédaction du message en lui même. Vous avez la possibilité d'envoyer les messages au format texte seul, ou au format HTML (gardez à l'esprit que l'envoi de messages HTML n'est pas toujours à préférer). Pour le second cas, une interface d'aide à la saisie vous est proposée.
 L'interface par défaut de Galette est volontairement simple et légère ; pour ne pas alourdir inutilement l'ensemble du logiciel. L'envoi de courriels en HTML complexe est une pratique à décourager globalement :-)

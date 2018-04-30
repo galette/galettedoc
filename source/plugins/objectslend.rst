@@ -43,7 +43,7 @@ Utilisation du plugin
 
 Lorsque le plugin est installé, un groupe `Prêt d'objets` est ajouté au menu principal de Galette.
 
-Lors de l'isntallation, quelques status par défaut sont définis ; vous devrez bien entendu définir les votres, les exemples ne correspondront probablement pas à votre utilisation :)
+Lors de l'installation, quelques status par défaut sont définis ; vous devrez bien entendu définir les votres, les exemples ne correspondront probablement pas à votre utilisation :)
 
 .. image:: ../_styles/static/images/plugin-objectslend/status.png
    :scale: 70%
