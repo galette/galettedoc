@@ -103,7 +103,7 @@ Paramètres d'envoi de courriels :
 * **Méthode d'envoie des courriels** : la méthode à utiliser pour l'envoi :
 
   * **Envoi de courriel désactivé** : aucun courriel ne sera envoyé par Galette,
-  * **Fonction PHP mail** : utilisation de la fonction PHP mail() et des paramètres qui y sont associas (recommandé),
+  * **Fonction PHP mail** : utilisation de la fonction PHP ``mail()`` et des paramètres qui y sont associés (recommandé),
   * **Utilisation d'un SMTP** : utilisation d'un serveur SMTP externe à configurer (sera certainement plus lent que la fonction php mail()),
   * **Utilisation de GMail pour serveur SMTP** : identique à la possibilité précédente, mais spécifique à GMail (sera certainement plus lent que la fonction php mail()),
   * **Utilisation d'un serveur sendmail** : utilisera le serveur sendmail local configuré sur le serveur,
@@ -111,7 +111,7 @@ Paramètres d'envoi de courriels :
   * **Signature courriel** : la signature apposée automatiquement à tous les courriels envoyés. Les variables disponibles sont :
 
     * ``{NAME]`` le nom de l'association,
-    * ``{WEBSITE}`` le sie web de l'assiciation,
+    * ``{WEBSITE}`` le site web de l'association,
     * ``{FACEBOOK}`` l'adresse Facebook renseignée dans les paramètres des réseaux sociaux,
     * ``{GOOGLEPLUS}`` l'adresse Google+ renseignée dans les paramètres des réseaux sociaux,
     * ``{TWITTER}`` l'adresse Twitter renseignée dans les paramètres des réseaux sociaux,
@@ -124,8 +124,8 @@ La configuration d'un serveur SMTP est un peu plus complexe :
 
 * **Serveur SMTP** : l'addresse du serveur, requis,
 * **Port SMTP** : le port du serveur, requis,
-* **Utiliser l'authentification SMTP** : si le serveur requiert une authentification. Dans ce cas, il vous faudra également rensigner l'utilisateur et le mot de passe,
-* **Utiliser TLS pour SMTP** : activer SSL (toujouors actif pour Gmail, qui ne permet pas autre chose),
+* **Utiliser l'authentification SMTP** : si le serveur requiert une authentification. Dans ce cas, il vous faudra également renseigner l'utilisateur et le mot de passe,
+* **Utiliser TLS pour SMTP** : activer SSL (toujours actif pour Gmail, qui ne permet pas autre chose),
 * **Autoriser TLS non sécirisé** : dans certains cas, le certificat SSL peut être invalide (certificats auto signés par exemple).
 
 Le bouton « Test des paramètres courriel » enverra un message de test à l'adresse renseignée pour l'administrateur des membres en utilisant la configuration acutellement enregistrée.
