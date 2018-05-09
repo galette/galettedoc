@@ -6,6 +6,14 @@
 Changelog
 =========
 
+****************
+0.9.1 -> 0.9.1.1
+****************
+
+* Correction de la suppression intempestive des groupes lors de la mise à jour d'un adhérent (`#1178 <https://bugs.galette.eu/issues/1178>`_)
+* Correction de l'URL pour les reverse proxy (`#1176 <https://bugs.galette.eu/issues/1176>`_)
+* Correction de la redirection lorsque l'utilisateur n'est pas connecté (`#1175 <https://bugs.galette.eu/issues/1175>`_)
+
 ************
 0.9 -> 0.9.1
 ************
