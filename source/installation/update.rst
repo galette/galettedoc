@@ -23,7 +23,7 @@ Mise à jour des fichiers
 
 Dans un premier temps, déconnectez-vous de votre instance de Galette actuelle.
 
-Ensuite, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.9.1.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
+Ensuite, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.9.1.1.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
 
 Certains fichiers et répertoires contiennent des données et devraient être réintégrés à la nouvelle installation :
 
