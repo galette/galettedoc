@@ -6,6 +6,13 @@
 Changelog
 =========
 
+******************
+0.9.1.1 -> 0.9.1.2
+******************
+
+* Correction à l'enregistrement des adhérents lors du décochage des cases à cocher (`#1181 <https://bugs.galette.eu/issues/1181>`_)
+* Correction à l'enregistrement des adhérents si le champ titre est masqué (`#1181 <https://bugs.galette.eu/issues/1181>`_)
+
 ****************
 0.9.1 -> 0.9.1.1
 ****************
