@@ -54,8 +54,9 @@ Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il
        'Votre Nom',                 //Author
        '0.0.1',                     //Version
        '0.7.1',                     //Galette version compatibility
-       '2013-12-17',                //Release date
-       [                           //Permissions needed
+       'monplugin',                 //routing name and translation domain
+       '2018-06-23',                //Release date
+       [                            //Permissions needed
            'monplugin_main' => 'staff'
        ]
    );
