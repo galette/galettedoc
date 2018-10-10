@@ -25,6 +25,13 @@ Cet hébergeur propose de `modifier la version de PHP utilisée depuis la config
 
 Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
+.. warning::
+
+   Beaucoup d'utilisateurs rencontrent des problèmes d'affichage des images ou d'accès à la liste d'émargement sur les hébergements OVH. La solution à ce problème passe par la configuration de votre espace. Il faut créer un fichier `.ovhconfig` à la racine du site avec le contenu suivant :
+
+   .. code-block:: shell
+
+      app.engine=phpcgi
 
 Nginx
 ^^^^^
