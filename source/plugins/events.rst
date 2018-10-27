@@ -16,7 +16,7 @@ Installation
     Ce plugin nécessite Galette 0.9.1 minimum pour fonctionner !
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.0.1.tar.bz2
+http://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.0.2.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
