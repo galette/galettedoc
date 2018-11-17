@@ -32,6 +32,12 @@ Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lu
 * |folder| `data/tempimages`,
 * |folder| `data/templates_c`
 
+Ou pour faire ça en une ligne de commande :
+
+.. code-block:: bash
+
+   # chmod u+w galette/galette/{config,data/attachments,data/cache,data/exports,data/files,data/imports,data/logs,data/photos,data/tempimages,data/templates_c}
+
 .. [#configdirperms] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
 
 .. _installationsubdir:
@@ -84,7 +90,7 @@ L'équivalent pour Nginx serait :
 
    server {
        #http
-       listen 80
+       listen 80;
        listen [::]:80;
 
        # https
@@ -109,12 +115,12 @@ L'équivalent pour Nginx serait :
 
        location ~ \.php$ {
            include snippets/fastcgi-php.conf;
-           fastcgi_pass unix:/var/run/php7.0-fpm.sock;
+           fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
        }
-   }
 
-   location ~ /(data|config|lib)/ {
-       deny all;
+       location ~ /(data|config|lib)/ {
+           deny all;
+       }
    }
 
 .. _installationunix:
