@@ -15,6 +15,7 @@ Changelog
 Nouveautés
 ==========
 
+* PHP 7.1 minimum,
 * Gestion des types de paiements (`#1084 <https://bugs.galette.eu/issues/1084>`_)
 * Suppression des mots de pass dans les courriels (`#1171 <https://bugs.galette.eu/issues/1171>`_)
 * Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)
