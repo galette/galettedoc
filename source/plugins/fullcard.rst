@@ -12,7 +12,7 @@ Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.7.1.tar.bz2
+http://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.7.2.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 

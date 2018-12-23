@@ -10,14 +10,21 @@ Changelog
 0.9.1.2 -> 0.9.2
 ****************
 
+.. note::
+
+   Un très grand merci à Danielle C. et à l'association Les Amis de la Gendarmerie pour leur généreux don sur le développement de cette version !
+
+
 .. _ajouts_092:
 
 Nouveautés
 ==========
 
+* Ajout d'une variable pour l'identifiant dans les modèles PDF et les textes des courriels (`#1222 <https://bugs.galette.eu/issues/1222>`_)
+* Recherche (nom, courriel, id, ...) des adhérents lors de l'ajout de transactions ou de contributions (`"1218 <https://bugs.galette.eu/issues/1218>`_)
 * PHP 7.1 minimum,
 * Gestion des types de paiements (`#1084 <https://bugs.galette.eu/issues/1084>`_)
-* Suppression des mots de pass dans les courriels (`#1171 <https://bugs.galette.eu/issues/1171>`_)
+* Suppression des mots de passie dans les courriels (`#1171 <https://bugs.galette.eu/issues/1171>`_)
 * Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)
 * Paramétrage du filtre compte par défaut (`#345 <https://bugs.galette.eu/issues/345>`_)
 * Le système de traduction a été entièrement revu, et nécéssite désormais l'extension PHP intl
