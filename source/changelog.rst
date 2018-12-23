@@ -6,6 +6,65 @@
 Changelog
 =========
 
+****************
+0.9.1.2 -> 0.9.2
+****************
+
+.. note::
+
+   Un très grand merci à Danielle C. et à l'association Les Amis de la Gendarmerie pour leur généreux don sur le développement de cette version !
+
+
+.. _ajouts_092:
+
+Nouveautés
+==========
+
+* Ajout d'une variable pour l'identifiant dans les modèles PDF et les textes des courriels (`#1222 <https://bugs.galette.eu/issues/1222>`_)
+* Recherche (nom, courriel, id, ...) des adhérents lors de l'ajout de transactions ou de contributions (`"1218 <https://bugs.galette.eu/issues/1218>`_)
+* PHP 7.1 minimum,
+* Gestion des types de paiements (`#1084 <https://bugs.galette.eu/issues/1084>`_)
+* Suppression des mots de passie dans les courriels (`#1171 <https://bugs.galette.eu/issues/1171>`_)
+* Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)
+* Paramétrage du filtre compte par défaut (`#345 <https://bugs.galette.eu/issues/345>`_)
+* Le système de traduction a été entièrement revu, et nécéssite désormais l'extension PHP intl
+* Affichage du compte des membres/responsables dans les groupes
+
+.. _bogues_092:
+
+Bogues corrigés
+===============
+
+* Le mode "galop d'essai" des imports CSV a été entièrement revu pour corriger différents problèmes
+* Correction de la détection de version pendant une mise à jour
+* Documentation des variables des modèles PDF (`#1066 <https://bugs.galette.eu/issues/1066>`_)
+* Admission de membres plus que centenaires (`#452 <https://bugs.galette.eu/issues/452>`_)
+* Correction de la plage pour les années de naissance
+* Ajout de vérifications sur la date de naissance à l'enregistrement
+* Correction du filtrage de la liste des contributions (`#1185 <https://bugs.galette.eu/issues/1185>`_)
+* Utilisation des informations de l'émétteur du courriel lors de la prévisualisation (`#1188 <https://bugs.galette.eu/issues/1188>`_)
+* Correction de l'enregistrement de l'émetteur du courriel dans l'historique (`#1188 <https://bugs.galette.eu/issues/1188>`_)
+* Suppression du message "not translated" sur les libellés des champs dynamiques
+* Correction de la recherche sur les champs dynamiques booléens (`#1186 <https://bugs.galette.eu/issues/1186>`_)
+* Correction de la suppression en masse de contributions (`#1192 <https://bugs.galette.eu/issues/1192>`_)
+* Suppression des données des champs dynamiques lorsque le champ est supprimé (`#1191 <https://bugs.galette.eu/issues/1191>`_)
+* Correction du script de mise à jour PostgreSQL
+* Correction des problèmes de redirection sur certains hébergements (et notamment avec l'utilisation de serveurs proxy)
+* Les champs dynamiques fonctionnent désormais dans les formulaires PDF (merci à Jérôme B.)
+* Correction de la configuration des champs CSV (`#1208 <https://bugs.galette.eu/issues/1208>`_)
+* Correction des droits sur les champs dynamiques (`#1201 <https://bugs.galette.eu/issues/1201>`_)
+
+.. _souscapot_092:
+
+Sous le capot...
+================
+
+* Utilisation du moteur InnoDB pour toutes les tables (`#1006 <https://bugs.galette.eu/issues/1006>`_)
+* Envoi automatique de la Télémétrie
+* Utilisation de `Zanata <https://zanata.org>`_ pour les traductions
+* Utilisation de `Zend Translator <https://docs.zendframework.com/zend-i18n/>`_
+* Mise à jour des bibliothèques tierces
+
 ******************
 0.9.1.1 -> 0.9.1.2
 ******************
