@@ -971,6 +971,10 @@ div.error{
 
 /** Mobile devices */
 @media (max-width: 767px) {
+    div.body {
+        min-width: unset;
+    }
+
     #page {
         margin: 0 .2em;
         min-width: auto;
