@@ -32,5 +32,3 @@ Le code source du plugin Fullcard est stocké dans un dépôt GIT hébergé chez
 .. code-block:: bash
 
    $ git clone git.tuxfamily.org/gitroot/galette/plugin-fullcard.git
-
-Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.

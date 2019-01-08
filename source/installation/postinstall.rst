@@ -19,16 +19,6 @@ Une fois votre Galette correctement installée, il reste une ou deux petites cho
        Deny from all
     </Directory>
 
-.. warning::
-
-   Si vous avez récupéré Galette depuis le dépôt Git, l'application est peut-être en « mode développement » ; et certaines entrées peuvent apparaître dans le menu pour des fonctionnalités qui n'existent pas ou ne sont pas fonctionnelles.
-
-   Dans ce cas, éditez le fichier ``includes/galette.inc.php``, et remplacez (aux alentours de la ligne 65) la valeur ``DEV`` par ``PROD`` pour ``GALETTE_MODE`` :
-
-   .. code-block:: php
-
-      define('GALETTE_MODE', 'DEV');
-
 .. _configpaths:
 
 Paramétrage des chemins
@@ -67,6 +57,6 @@ Sécurité des données saisies
 
 Vous-même, ainsi que l'ensemble de vos adhérents, allez probablement vous connecter à Galette, en utilisant un indentifiant et un mot de passe. Il faut savoir que les mots de passe sont dans ce cas transmis au serveur en clair ; et qu'une personne mal intentionnée pourrait récupérer vos identifiants en observant simplement le flux de données que vous transmettez.
 
-La problématique est la même à chaque fois que vous envoyez des informations sur Internet ; c'est pourquoi lorsque l'on vous demande votre numéro de carte bancaire, il faut d'abord vous assurer que lma page soit bien sécurisée - qu'elle utilise le protocole HTTPS - votre butineur vous l'indiquera clairement.
+La problématique est la même à chaque fois que vous envoyez des informations sur Internet ; c'est pourquoi lorsque l'on vous demande votre numéro de carte bancaire, il faut d'abord vous assurer que la page soit bien sécurisée - qu'elle utilise le protocole HTTPS - votre butineur vous l'indiquera clairement.
 
-Pour Galette, la logique est la même, et vous pouvez parfaitement l'utiliser via SSL, ça ne pose aucun problème ; toutes les données que vous allez saisir via cette connexion seront alors un peu plus confidentielles et sécurisée :)
+Pour Galette, la logique est la même, et vous pouvez parfaitement l'utiliser via SSL, ça ne pose aucun problème ; toutes les données que vous allez saisir via cette connexion seront alors un peu plus confidentielles et sécurisées :)

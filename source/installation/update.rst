@@ -14,7 +14,7 @@ Si vous utilisez actuellement une version antérieure de Galette, une mise à jo
 
 .. note::
 
-   La migration d'une instance de Galette depuis une version antérieure à la version 0.7.0 supportée... Théoriquement. Mais dans la pratique, ce n'est absolument pas testé (ces versions datent de pus de 10 ans !), et il est possible qu'une telle tentative échoue.
+   La migration d'une instance de Galette antérieure à la version 0.7.0 est supportée... théoriquement. Mais dans la pratique, ce n'est absolument pas testé (ces versions datent de pus de 10 ans !), et il est possible qu'une telle tentative échoue.
 
    Rien n'est actuellement prévu pour permettre d'effectuer réellement un tel saut dans le futur ;-) Si votre instance de Galette est antérieure à la 0.7.0, nous vous conseillons dans un premier temps de `migrer vers la version 0.7.8 <http://download.tuxfamily.org/galette/archives/galette-0.7.8.tar.bz2>`_ ; puis ensuite de recommencer avec la dernière version stable.
 
@@ -23,14 +23,14 @@ Mise à jour des fichiers
 
 Dans un premier temps, déconnectez-vous de votre instance de Galette actuelle.
 
-Ensuite, `téléchargez la dernière version de Galette <http://download.tuxfamily.org/galette/galette-0.9.2.tar.bz2>`_ et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
+Ensuite, téléchargez la dernière version de Galette et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
 
 Certains fichiers et répertoires contiennent des données et devraient être réintégrés à la nouvelle installation :
 
 * ``config/config.inc.php``. Si ce fichier est absent, Galette en créera un nouveau. Si le fichier est présent, les données qu'il contient seront automatiquement chargées (hormis le mot de passe) lors de la configuration du moteur de base de données. C'est le seul fichier qui est modifié par la procédure de mise à jour,
 * ``data/photos`` qui contient les photos de vos adhérents et votre logo,
-* ``data/exports`` qui contient les exports CSV (Galette 0.7.0 et versions ultérieures),
-* ``data/files`` qui contient les fichiers attachés aux adhérents (Galette 0.8 et versions ultérieures),
+* ``data/exports`` qui contient les exports CSV,
+* ``data/files`` qui contient les fichiers attachés aux adhérents,
 * ``data/attachments`` qui contient les fichiers attachés aux mailings.
 
 Une fois la mise à jour des fichier effectuée, rendez-vous ensuite sur votre instance de Galette. Celle-ci vous demandera, au besoin de lancer la procédure de mise à jour de votre base. Si votre instance ne vous demande rien, c'est que tout est terminé ;-)
@@ -66,7 +66,7 @@ Vous devrez ensuite sélectionner la version antérieure de Galette. Le système
    :scale: 70%
    :align: center
 
-Le système vous préviendra également si vous tentez de mettre à jour alors que votre base semble être à la bonne version. Si tel est le cas, aucune entrée ne sera affichée en caractères gras ; mais nous vous conseillons fortement de prendre conseil avant de faire des «bêtises » :
+Le système vous préviendra également si vous tentez de mettre à jour alors que votre base semble être à la bonne version. Si tel est le cas, aucune entrée ne sera affichée en caractères gras ; assurez-vous de choisir ce qui convient :
 
 .. image:: ../_styles/static/images/installation/5bis_already_updated.png
    :scale: 70%
