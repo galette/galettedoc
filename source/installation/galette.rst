@@ -2,7 +2,9 @@
 Installation
 ************
 
-L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/install/. La procédure de :doc:`mise à jour de votre instance de Galette <update>` est documentée séparément.
+L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/. La procédure de :doc:`mise à jour de votre instance de Galette <update>` est documentée séparément.
+
+Le principe, c'est d'installer Galette depuis l'archive de la dernière version stable. Vous pouvez aussi l'installer depuis :doc:`le code source <source-code>` (cette méthode est certainement plus complexe pour les non développeurs).
 
 Vérification des paramètres
 ===========================
@@ -56,7 +58,7 @@ Création de la base de données
 
 Pour l'exemple, nous allons nous baser sur une base de données nommée `magalette` appartenant à un utilisateur `monutilisateurgalette` dont le mot de passe est `monmotdepasse`.
 
-* MySQL
+* MariaDB
 
   .. code-block:: bash
 
@@ -74,9 +76,9 @@ Pour l'exemple, nous allons nous baser sur une base de données nommée `magalet
      $ createuser -P monutilisateurgalette
      $ createdb -O monutilisateurgalette magalette
 
-Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MySQL <http://dev.mysql.com/doc/#refman>`_ ou de `PostgreSQL <http://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique :
+Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ ou de `PostgreSQL <http://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique :
 
-* `phpMyAdmin <http://www.phpmyadmin.net>`_ ou `MySQL Workbench <http://www.mysql.fr/downloads/workbench/>`_ pour MySQL ;
+* `phpMyAdmin <http://www.phpmyadmin.net>`_ pour MariaDB ;
 * `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <http://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL.
 
 Paramètres de la base
@@ -110,7 +112,7 @@ Si une connexion à la base a pu être établie, et que les droits sont corrects
 
 En ligne de commande, vous pouvez utiliser :
 
-* pour MySQL :
+* pour MariaDB :
 
   .. code-block:: bash
 
