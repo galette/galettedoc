@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'rst2pdf.pdfbuilder']
+extensions = ['sphinx.ext.todo']
 
 todo_include_todos = True
 
@@ -43,7 +43,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Galette'
-copyright = u'2011-2018, Johan Cwiklinski'
+copyright = u'2011-2019, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -240,7 +240,6 @@ pdf_documents = [
 ('usermanual/index', u'usermanual', u'Manuel Utilisateur de Galette', u'Johan Cwiklinski'),
 ('installation/index', u'installation', u'Installation de Galette', u'Johan Cwiklinski'),
 ('plugins/index', u'plugins', u'Plugins de Galette', u'Johan Cwiklinski'),
-('development/index', u'development', u'Guide du Développeur Galette', u'Johan Cwiklinski'),
 ]
 
 # A comma-separated list of custom stylesheets. Example:
