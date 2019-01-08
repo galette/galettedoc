@@ -32,16 +32,15 @@ Ajout et modification de chaînes
 
 Il est également possible, au besoin, de personnaliser les chaînes de traduction existantes dans Galette - tout en évitant de modifier directement les fichiers fournis par le logiciel - en passant par un fichier spécifique. Pour ce faire, il suffira de créer un fichier nommé ``galette_{ma_langue}_local.php`` (où `{ma_langue}` est à remplacer par `fr_FR.utf8` ou `en_US`) dans le dossier ``lang`` auquel vous confierez les chaînes modifiées uniquement ; ce fichier sera inclus automatiquement s'il existe.
 
-Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale. Pour cela, allez simplement consulter le fichier ``lang/galette_fr_FR.utf8.php``, et cherchez-y la valeur souhaitée. Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret :` » en français, on aura dans notre nouveau fichier ``galette_fr_FR.utf8_local.php`` :
+Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale (soit depuis l'interface en anglais, soit dans le code source directement). Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret :` » en français, on aura dans notre nouveau fichier ``galette_fr_FR.utf8_local.php`` :
 
 .. code-block:: php
 
    <?php
-   $lang['galette']['Password:'] = 'Secret&nbsp;:';
+   $lang['Password:'] = 'Secret&nbsp;:';
+   return $lang;
 
 La modification sera visible immédiatement dans Galette. Prenez particulièrement garde à recopier la chaîne originale telle quelle ; et à échapper les apostrophes (à l'aide d'un anti-slash). Comme dans le fichier original, on attend ici une ligne par chaîne modifiée.
-
-Pensez également à créer le fichier ``galette_en_US_local.php`` qui contiendra les traductions anglaises des chaînes que vous auriez ajoutées (une simple recopie de la clé normalement). Ce n'est évidemment pas nécessaire pour les chaînes modifiées, puisqu'elles existent déjà.
 
 Ces surcharges ne s'appliquent pas actuellement aux plugins ; ces derniers étant chargés par l'application bien plus tard :-(
 
