@@ -255,6 +255,8 @@ L'interface vous avertira de l'erreur rencontrée, en mode test ou non.
 
    Il est tout à fait possible que l'import se passe correctement, mais qu'il vous soit ensuite indiqué que des champs obligatoires soient manquants lors de la modification d'une fiche. Ce type de comportement sera constaté si le modèle d'import n'inclut pas l'intégralité des champs obligatoires que vous avez configurés.
 
+.. _linkmembers:
+
 Liens entre fiches adhérents
 ============================
 
