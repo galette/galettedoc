@@ -108,3 +108,15 @@ Vous pourrez également lui associer une contribution existante, ou en créer un
    :align: center
    :alt: Ajout d'une contribution existante à une transaction
 
+.. _dropdown_members:
+
+Sélection des adhérents
+=======================
+
+.. versionadded: 0.9.2
+
+La liste déroulante de choix des adhérents disponible dans les contributions et transactions (ainsi que dans certains plugins) n'affiche qu'une partie des adhérents possibles, pour des raisons de performances.
+
+Il est toutefois possible d'en afficher davantage en cliquant sur « Charger les adhérents suivants... » ou en passant par la zone de recherche mise à disposition.
+
+Il est possible de chercher dans les nom, prénom et pseudo des membres ; ainsi que dans les identifiants si vous entrez un entier directement.
