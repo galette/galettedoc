@@ -4,7 +4,7 @@ Installation
 
 L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/. La procédure de :doc:`mise à jour de votre instance de Galette <update>` est documentée séparément.
 
-Le principe, c'est d'installer Galette depuis l'archive de la dernière version stable. Vous pouvez aussi l'installer depuis :doc:`le code source <source-code>` (cette méthode est certainement plus complexe pour les non développeurs).
+Le principe, c'est d'installer Galette depuis l'archive de la dernière version stable. Vous pouvez aussi l'installer depuis :doc:`le code source <../development/git>` (cette méthode est certainement plus complexe pour les non développeurs).
 
 Vérification des paramètres
 ===========================
