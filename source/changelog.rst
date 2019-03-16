@@ -7,6 +7,21 @@ Changelog
 =========
 
 ****************
+0.9.2 -> 0.9.2.1
+****************
+
+* Impossible d'enregistrer l'URL de Galette dans les préférences (`#1246 <https://bugs.galette.eu/issues/1246>`_)
+* Correction du filtrage des listes déroulantes (`#1234 <https://bugs.galette.eu/issues/1234>`_)
+* Fichiers de langue locales incompatibles (`#1232 <https://bugs.galette.eu/issues/1232>`_)
+* Correction des champs requis sur les fiches enfant (`#1230 <https://bugs.galette.eu/issues/1230>`_ et `#1229 <https://bugs.galette.eu/issues/1229>`_)
+* Correction de l'enregistrement des contributions (`#1228 <https://bugs.galette.eu/issues/1228>`_)
+* Sélection du type de ventilation d'une transaction inneficace (`#1227 <https://bugs.galette.eu/issues/1227>`_)
+* Problèmes de redirections (`#1226 <https://bugs.galette.eu/issues/1226>`_)
+* Revue des vérifications de la version de PHP et des extensions présentes (`#1225 <https://bugs.galette.eu/issues/1225>`_)
+* Correction de la recherche des adhérents à l'ajout de contributions (`#1224 <https://bugs.galette.eu/issues/1224>`_)
+* Suppression des traductions des routes (`#1223 <https://bugs.galette.eu/issues/1223>`_)
+
+****************
 0.9.1.2 -> 0.9.2
 ****************
 
