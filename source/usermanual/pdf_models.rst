@@ -31,7 +31,7 @@ Généralités
 
 Les modèles sont décomposés en plusieurs parties. Outre l'en-tête, le pied de page et les styles CSS présentés au paragraphe précédent, un titre, un sous titre et un corps existeront pour les modèles enfants.
 
-Chacun de ces champs prend en compte un certain nombre de remplacements automatiques, une petite icône en forme d'ampoule en haut à droite de l'interface vous donnere davantage de détails sur ce point. Les différents champs peuvent également contenir des textes internationnalisés de la forme `_T("My text")` qui utiliseront les fonctionnalités de traduction standard de Galette.
+Chacun de ces champs prend en compte un certain nombre de remplacements automatiques, une petite icône en forme d'ampoule en haut à droite de l'interface vous donnere davantage de détails sur ce point. Les différents champs peuvent également contenir des textes internationnalisés de la forme `_T("My text")` qui utiliseront les :ref:`fonctionnalités de traduction standard de Galette <i18nsyntax>`.
 
 Les différents modèles sont construits en utilisant du HTML et des styles CSS, mais ne perdez pas de vue qu'il s'agit ici de construire un fichier PDF, pas d'afficher une page HTML dans un navigateur récent, il est fort probable que nombre de possibilités ne soient pas disponibles.
 
