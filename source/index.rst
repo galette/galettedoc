@@ -20,6 +20,12 @@ Documentation de Galette
 
 :doc:`documentation des plugins <plugins/index>`
 
+.. rst-class:: docs devel_doc
+
+:doc:`guide du développeur <development/index>`
+
+Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de galette (technologies utilisées, comment récupérer les sources et les construire) <about>`.
+
 Table des matières :
 
 .. toctree::
@@ -29,3 +35,4 @@ Table des matières :
    usermanual/index.rst
    faq/index.rst
    plugins/index.rst
+   development/index.rst

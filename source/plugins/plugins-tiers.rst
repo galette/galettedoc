@@ -14,7 +14,7 @@ Pour qu'un projet soit accepté, il doit respecter certains pré-requis :
 * être sous license libre (GPLv3 ou compatible) et la respecter,
 * être compatible avec une version "décente" de Galette (un plugin qui serait compatible avec la seule version 0.7 par exemple serait refusé).
 
-Les plugins devraient (c'est une vive recommandation, pas une obligation) être localisés et respecter les conventions de codage de Galette.
+Les plugins devraient (c'est une vive recommandation, pas une obligation) être :ref:`localisés <i18n>` et respecter les :ref:`conventions de codage de Galette <conventions>`.
 
 Rejoindre la communauté
 -----------------------
