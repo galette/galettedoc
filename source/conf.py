@@ -180,6 +180,9 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
+
+# Maximum allowed nested levels in lists.
+'maxlistdepth': '8',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
