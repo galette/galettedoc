@@ -30,7 +30,7 @@ Là où nous avions auparavant un fichier ``.php`` par page à afficher, tout es
 Zend DB
 -------
 
-.. image:: ../_styles/static/images/libraries/zend.gif
+.. image:: ../_styles/static/images/libraries/zend.png
    :align: right
 
 *Version de la bibliothèque requise :* `2.8.2`
