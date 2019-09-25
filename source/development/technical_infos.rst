@@ -58,6 +58,9 @@ Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analo
 Smarty
 ------
 
+.. image:: ../_styles/static/images/libraries/smarty.png
+   :align: right
+
 *Version de la bibliothèque requise :* `3.1.31`
 
 Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format HTML 5.
@@ -93,6 +96,9 @@ Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expér
 
 Envoi de courriels
 ------------------
+
+.. image:: ../_styles/static/images/libraries/phpmailer.png
+   :align: right
 
 *Version de la bibliothèque requise :* `5.2.25`
 
