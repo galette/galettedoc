@@ -15,6 +15,7 @@ Slim
 ----
 
 .. image:: ../_styles/static/images/libraries/slim.png
+   :width: 140px
    :align: right
 
 .. versionadded:: 0.9
@@ -31,6 +32,7 @@ Zend DB
 -------
 
 .. image:: ../_styles/static/images/libraries/zend.png
+   :width: 140px
    :align: right
 
 *Version de la bibliothèque requise :* `2.8.2`
@@ -59,6 +61,7 @@ Smarty
 ------
 
 .. image:: ../_styles/static/images/libraries/smarty.png
+   :width: 140px
    :align: right
 
 *Version de la bibliothèque requise :* `3.1.31`
@@ -71,6 +74,7 @@ TCPDF
 -----
 
 .. image:: ../_styles/static/images/libraries/tcpdf.png
+   :width: 140px
    :align: right
 
 *Version de la bibliothèque requise :* `6.2.13`
@@ -83,6 +87,7 @@ Interface utilisateur
 ---------------------
 
 .. image:: ../_styles/static/images/libraries/jquery.png
+   :width: 140px
    :align: right
 
 *Version de la bibliothèque requise :* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)
@@ -98,6 +103,7 @@ Envoi de courriels
 ------------------
 
 .. image:: ../_styles/static/images/libraries/phpmailer.png
+   :width: 140px
    :align: right
 
 *Version de la bibliothèque requise :* `5.2.25`
@@ -110,6 +116,7 @@ Tests unitaires
 ---------------
 
 .. image:: ../_styles/static/images/libraries/atoum.png
+   :width: 140px
    :align: right
 
 Les tests unitaires dans Galette sont exécutés via `le framework de test unitaire Atoum <http://atoum.org>`_.
