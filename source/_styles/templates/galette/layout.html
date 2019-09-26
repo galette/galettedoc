@@ -22,6 +22,8 @@
 
 {%- block header %}
   <div id="galette">
+      <a href="#galette" class="nav-button-open" aria-label="open navigation">&#9776;</a>
+      <a href="#" class="nav-button-close" aria-label="close navigation">&#10761;</a>
       <div id="header">
           <div id="logo">
               <a href="http://galette.tuxfamily.org">Galette</a>
@@ -65,8 +67,6 @@
 {%- endblock %}
 
 {%- block document %}
-  <a href="#galette" class="nav-button-open" aria-label="open navigation"></a>
-  <a href="#" class="nav-button-close" aria-label="close navigation"></a>
   {{ super() }}
 {%- endblock %}
 
