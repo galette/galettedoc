@@ -24,7 +24,7 @@ Documentation de Galette
 
 :doc:`guide du développeur <development/index>`
 
-Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de galette (technologies utilisées, comment récupérer les sources et les construire) <about>`.
+Si vous le souhaitez, vous pouvez :doc:`en savoir plus sur la documentation de galette</about>` (technologies utilisées, comment récupérer les sources et les construire).
 
 Table des matières :
 
@@ -36,3 +36,9 @@ Table des matières :
    faq/index.rst
    plugins/index.rst
    development/index.rst
+   about.rst
+
+.. toctree::
+   :hidden:
+
+   changelog.rst
