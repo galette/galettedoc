@@ -48,7 +48,7 @@ Vous êtes encouragés à utiliser les actions sur une sélection coinjointement
 Filtrage et sélection d'adhérents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Le filtrage de la liste des adhérents est traité dans la section :ref:`recherche <search>`. Toutes les possibilités offertes peuvent bien entendu être utilisées conjointement avec les actions qui s'appliquent sur la sélection.
+Le filtrage de la liste des adhérents est traité dans la section :ref:`recherche <search_galette>`. Toutes les possibilités offertes peuvent bien entendu être utilisées conjointement avec les actions qui s'appliquent sur la sélection.
 
 Modifications en masse
 ^^^^^^^^^^^^^^^^^^^^^^
