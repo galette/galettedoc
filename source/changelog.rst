@@ -7,6 +7,32 @@ Changelog
 =========
 
 ****************
+0.9.2.1 -> 0.9.3
+****************
+
+* Enregistement des recherches (`#691 <https://bugs.galette.eu/issues/691>`_)
+* Utilisation d'adresses email multiples depuis les préférences (`#643 <https://bugs.galette.eu/issues/643>`_)
+* Envoi d'un courriel aux administrateurs lorsqu'un adhérent modifie sa fiche (`#756 <https://bugs.galette.eu/issues/756>`_)
+* Paramétrage de la redirection après ajout d'un adhérent (`#1136 <https://bugs.galette.eu/issues/1136>`_)
+* Ajout d'une variable pour la date du jour (`DATE_NOW`) dans les modèles PDF (`#1260 <https://bugs.galette.eu/issues/1260>`_)
+
+* Page blanche à l'installation sur certains environnements (`#1236 <https://bugs.galette.eu/issues/1236>`_)
+* Erreurs d'échappement javascript dans les mailings (`#1247 <https://bugs.galette.eu/issues/1247>`_)
+* Correction de la suppresion des adhérents liés à un groupe (`#1251 <https://bugs.galette.eu/issues/1251>`_)
+* Passage aux pages suivantes dans le trombinoscope (`#1252 <https://bugs.galette.eu/issues/1252>`_)
+* Le chemin du logo des fichiers PDF était incorrect dans certains cas (`#1255 <https://bugs.galette.eu/issues/1255>`_)
+* L'ordre des champs dynamiques n'était pas enregistré (`#1262 <https://bugs.galette.eu/issues/1262>`_)
+* Corrections diverses liées aux nouvelles listes déroulantes (`#1263 <https://bugs.galette.eu/issues/1263>`_, `#1264 <https://bugs.galette.eu/issues/1264>`_, `#1265 <https://bugs.galette.eu/issues/1265>`_)
+* Ajout de la migration de champs dates incorrects sous MySQL (`#1266 <https://bugs.galette.eu/issues/1266>`_)
+* Sélecteurs de dates manquants dans la recherche avancée et sur les champs dynamiques (`#1267 <https://bugs.galette.eu/issues/1267>`_)
+* Correction de l'extension et du type de contenu des fichiers PDF générés (`#1271 <https://bugs.galette.eu/issues/1271>`_)
+* Les majuscules étaient supprimées dans les prénoms composés (`#1272 <https://bugs.galette.eu/issues/1272>`_)
+* Suppression du nom de la société lorsque a case est décochée (`#1277 <https://bugs.galette.eu/issues/1277>`_)
+* Correction d'un appel sur le mauvais objet depuis les mailings (`#1280 <https://bugs.galette.eu/issues/1280>`_)
+* Champs dynamiques de type date non vérifiés (`#1213 <https://bugs.galette.eu/issues/1213>`_)
+
+
+****************
 0.9.2 -> 0.9.2.1
 ****************
 
