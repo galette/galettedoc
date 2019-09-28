@@ -194,7 +194,17 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = '_styles/static/images/galette.pdf'
+latex_logo = 'pdf_cover.pdf'
+
+# A list of file names, relative to the configuration directory, to copy to the
+# build directory when building LaTeX output. This is useful to copy files that 
+# Sphinx doesn’t copy automatically, e.g. if they are referenced in custom
+# LaTeX added in latex_elements. Image files that are referenced in source
+# files (e.g. via .. image::) are copied automatically.
+#
+# You have to make sure yourself that the filenames don’t collide with those of
+# any automatically copied files.
+latex_additional_files = ['pdf_cover.pdf']
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
