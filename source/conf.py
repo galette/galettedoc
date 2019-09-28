@@ -43,6 +43,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Galette'
+author = u'Johan Cwiklinski'
 copyright = u'2011-2019, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -167,6 +168,50 @@ html_show_sourcelink = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Galettedoc'
+
+
+# -- Options for epub output --------------------------------------------
+
+# The HTML theme for the epub output. Since the default themes are not
+# optimized for small screen space, using the same theme for HTML and epub
+# output is usually not wise. This defaults to 'epub', a theme designed to save
+# visual space.
+# epub_theme = 'epub'
+
+# The description of the document. The default value is 'unknown'.
+epub_description = 'Documentation de Galette'
+
+# The language of the document. This is put in the Dublin Core metadata. The 
+# default is the language option or 'en' if unset.
+epub_language = 'fr'
+
+# An identifier for the document. This is put in the Dublin Core metadata.
+# For published documents this is the ISBN number, but you can also use an 
+# alternative scheme, e.g. the project homepage. 
+# The default value is 'unknown'.
+epub_identifier = 'https://galette.eu'
+
+# The publication scheme for the epub_identifier. This is put in the Dublin 
+# Core metadata. For published books the scheme is 'ISBN'. If you use the 
+# project homepage, 'URL' seems reasonable. The default value is 'unknown'.
+epub_scheme = 'URL'
+
+# The cover page information. This is a tuple containing the filenames of the
+# cover image and the html template. The rendered html cover page is inserted
+# as the first item in the spine in content.opf. If the template filename is
+# empty, no html cover page is created. No cover at all is created if the tuple
+# is empty.
+epub_cover = ('_static/images/epub_cover.png', '')
+
+# Control whether to display URL addresses. This is very useful for readers 
+# that have no other means to display the linked URL. The settings can have the
+# following values:
+#    'inline' – display URLs inline in parentheses (default)
+#    'footnote' – display URLs in footnotes
+#    'no' – do not display URLs
+# The display of inline URLs can be customized by adding CSS rules for the
+# class link-target.
+# epub_show_urls = 'no'
 
 
 # -- Options for LaTeX output --------------------------------------------------
