@@ -27,6 +27,7 @@ La partie principale du tableau de bord vous propose un accès rapide aux princi
 
    generalites.rst
    adherents.rst
+   recherche.rst
    contributions.rst
    configuration.rst
    pdf_models.rst

@@ -41,51 +41,14 @@ La liste des adhérents vous donne accès à de nombreuses fonctions :
 * export CSV,
 * modification en masse.
 
-Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements. Vous êtes encouragés à utiliser ces actions sur une sélection coinjointement avec le filtrage et le nombre d'enregisrements affichés par page.
+Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements.
 
-Filtrage
-^^^^^^^^
+Vous êtes encouragés à utiliser les actions sur une sélection coinjointement avec le filtrage et le nombre d'enregisrements affichés par page, pour par exemple envoyer un mailing à une sélection d'adhérents résultant d'une recherche quelconque.
 
-Le formulaire situé en haut de page vous permet d'effectuer des opérations de filtrage.
+Filtrage et sélection d'adhérents
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../_styles/static/images/usermanual/list_members-filter.png
-   :scale: 50%
-   :align: center
-   :alt: Filtrage de la liste des membres
-
-Vous pourrez ainsi filtrer sur :
-
-* une recherche textuelle sur l'une des informations suivante :
-
-  * le nom (nom, prénom et pseudo),
-  * la raison sociale,
-  * l'adresse (adresse, complément d'adresse, code postal, ville et pays),
-  * le courriel et les messageries instantanées (adresse de courriel, URL du site web, adresses MSN, ICQ et Jabber),
-  * l'emploi,
-  * les informations (les informations publiques, et [pour les administrateurs uniquement] les informations destinées aux administrateurs).
-
-* l'un des statuts de l'adhérent :
-
-  * tous les adhérents,
-  * les adhérents à jour,
-  * les échéances proches (les adhérents dont la cotisation va arriver à échéance sous 30 jours),
-  * les retardataires,
-  * les adhérents n'ayant jamais cotisé,
-  * les membres du bureau,
-  * les administrateurs.
-
-* un état du compte :
-
-  * tous les comptes,
-  * comptes actifs,
-  * comptes inactifs
-
-* l'appartenance à un groupe,
-* la présence ou l'absence d'une adresse de courriel.
-
-Tout filtrage sera conservé le temps de votre session, vous pourrez ainsi aller modifier un paramétrage ou autre, et revenir sur la liste ; vous récupérerez automatiquement le filtre que vous aviez exécuté.
-
-Les différents filtres sont bien entendu complémentaires, vous donnant la possibilité par exemple de chercher parmi vos adhérents ceux dont le compte est actif, qui possèdent une adresse courriel et dont le nom contient un « a » ;-)
+Le filtrage de la liste des adhérents est traité dans la section :ref:`recherche <search>`. Toutes les possibilités offertes peuvent bien entendu être utilisées conjointement avec les actions qui s'appliquent sur la sélection.
 
 Modifications en masse
 ^^^^^^^^^^^^^^^^^^^^^^
