@@ -221,13 +221,19 @@ latex_elements = {
 'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+'pointsize': '12pt',
+
+# Font package inclusion.
+'fontpkg': '\usepackage{newcent}',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
 
 # Maximum allowed nested levels in lists.
 'maxlistdepth': '8',
+
+# LaTeX-type customization interface.
+'sphinxsetup': 'verbatimwithframe=false,VerbatimColor={rgb}{0.98,0.94,0.9},warningBorderColor={rgb}{0.84,0.23,0.24},warningBgColor={rgb}{0.87,0.68,0.69},noteBorderColor={rgb}{0.56,0.74,0.56},noteborder=3pt',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -256,10 +262,10 @@ latex_additional_files = ['pdf_cover.pdf']
 #latex_use_parts = False
 
 # If true, show page references after internal links.
-#latex_show_pagerefs = False
+latex_show_pagerefs = True
 
 # If true, show URL addresses after external links.
-#latex_show_urls = False
+latex_show_urls = 'footnote' 
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
