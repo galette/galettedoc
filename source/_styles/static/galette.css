@@ -84,6 +84,7 @@ div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points {
 div.sphinxsidebarwrapper {
     padding: 15px 0 0 0;
     margin: 0;
+    position: relative;
 }
 
 .sphinxsidebarwrapper * {
@@ -127,6 +128,18 @@ div.sphinxsidebarwrapper {
 
 .sphinxsidebarwrapper a:hover {
     color: #9AC528!important;
+}
+
+#searchbox {
+    display: block;
+    padding-bottom: 25px;
+}
+
+.searchformwrapper::after,
+.searchformwrapper form::after {
+    display: block;
+    content: '';
+    clear: both;
 }
 
 div.admonition {
