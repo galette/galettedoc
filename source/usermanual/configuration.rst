@@ -11,7 +11,7 @@ Lors de la saisie ou de la modification de fiches adhérents, certains champs so
 
 Depuis le menu `Configuration`, `Champs du coeur`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis, ainsi que les droits d'accès associés :
 
-* `personne` correspond à un champ inaccessible par quiconque (désactivé, en fait),
+* `inaccessible` correspond à un champ inaccessible par quiconque (désactivé, en fait),
 * `administrateur` correspond à un champ accessible en lecture/écriture par les administrateurs de l'application uniquement,
 * `membre du bureau` correspond à un champ accessible en lecture/écriture par les membres du bureau et les administrateurs,
 * `responsables de groupes` correspond à un champ accessible en lecture/écriture par les responsables du groupe auquel appartient l'adhérent, les membres du bureau et les administrateurs,
