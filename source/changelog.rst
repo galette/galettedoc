@@ -37,7 +37,7 @@ Bogues corrigés
 * Sélecteurs de dates manquants dans la recherche avancée et sur les champs dynamiques (`#1267 <https://bugs.galette.eu/issues/1267>`_)
 * Correction de l'extension et du type de contenu des fichiers PDF générés (`#1271 <https://bugs.galette.eu/issues/1271>`_)
 * Les majuscules étaient supprimées dans les prénoms composés (`#1272 <https://bugs.galette.eu/issues/1272>`_)
-* Suppression du nom de la société lorsque a case est décochée (`#1277 <https://bugs.galette.eu/issues/1277>`_)
+* Suppression du nom de la société lorsque la case est décochée (`#1277 <https://bugs.galette.eu/issues/1277>`_)
 * Correction d'un appel sur le mauvais objet depuis les mailings (`#1280 <https://bugs.galette.eu/issues/1280>`_)
 * Champs dynamiques de type date non vérifiés (`#1213 <https://bugs.galette.eu/issues/1213>`_)
 
