@@ -25,7 +25,7 @@ Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus d
 
 Une fois le dépôt cloné et les bibliothèques externes installées, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
 
-Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
+Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :doc:`la phase d'installation de Galette <../installation/index>`, félicitations ;-)
 
 .. _deps:
 

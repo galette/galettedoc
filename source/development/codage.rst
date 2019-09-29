@@ -57,7 +57,7 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
   * |folder| `...`
 
-* |folder| `plugins` : :ref:`dossier de stockage des plugins <plugins>`
+* |folder| `plugins` : :doc:`dossier de stockage des plugins <../plugins/index>`
 * |folder| `public` : pages publiques
 * |folder| `templates` : ensembles de templates Smarty
 

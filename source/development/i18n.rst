@@ -69,9 +69,9 @@ Il est souvent nécessaire d'utiliser des variables à remplacer dans les chaîn
 
 Une fonction ``__()`` est également disponible ; la seule différence avec ``_T()``, c'est que les chaînes non traduites ne seront pas marquées comme telles (utilisé principalement pour les routes).
 
-.. _i18npatterns:
+.. note::
 
-Bien entendu, les patterns sont laissés à votre entière discrétion ; pensez seulement que la personne qui traduira pourra mieux contextualiser la chaîne si les variables à remplacer sont un minimum identifiée (nous aurions par exemple pu choisir `%s` au lieu de `%name` ; mais ça aurait été moins explicite :-) ).
+   Bien entendu, les patterns sont laissés à votre entière discrétion ; pensez seulement que la personne qui traduira pourra mieux contextualiser la chaîne si les variables à remplacer sont un minimum identifiée (nous aurions par exemple pu choisir `%s` au lieu de `%name` ; mais ça aurait été moins explicite :-) ).
 
 Smarty
 ------
@@ -89,7 +89,9 @@ Smarty propose des `modifiers` pour par exemple effectuer des remplacements. Le 
 
    <p>{_T string="Hello %name!" pattern="/%name/" replace=$adh->name}</p>
 
-La :ref:`note concernant le nommage des patterns <i18npatterns>` du précédent paragraphe s'applique ici aussi, bien entendu ;-)
+.. note::
+
+   La note concernant le nommage des patterns du précédent paragraphe s'applique ici aussi, bien entendu ;-)
 
 Domaines de traduction
 ----------------------
