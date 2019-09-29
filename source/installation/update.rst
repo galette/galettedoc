@@ -16,7 +16,7 @@ Si vous utilisez actuellement une version antérieure de Galette, une mise à jo
 
    La migration d'une instance de Galette antérieure à la version 0.7.0 est supportée... théoriquement. Mais dans la pratique, ce n'est absolument pas testé (ces versions datent de pus de 10 ans !), et il est possible qu'une telle tentative échoue.
 
-   Rien n'est actuellement prévu pour permettre d'effectuer réellement un tel saut dans le futur ;-) Si votre instance de Galette est antérieure à la 0.7.0, nous vous conseillons dans un premier temps de `migrer vers la version 0.7.8 <http://download.tuxfamily.org/galette/archives/galette-0.7.8.tar.bz2>`_ ; puis ensuite de recommencer avec la dernière version stable.
+   Rien n'est actuellement prévu pour permettre d'effectuer réellement un tel saut dans le futur ;-) Si votre instance de Galette est antérieure à la 0.7.0, nous vous conseillons dans un premier temps de `migrer vers la version 0.7.8 <https://download.tuxfamily.org/galette/archives/galette-0.7.8.tar.bz2>`_ ; puis ensuite de recommencer avec la dernière version stable.
 
 Mise à jour des fichiers
 ========================

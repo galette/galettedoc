@@ -21,8 +21,7 @@ Les fonctionnalités apportées par ce plugin sont :
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-admintools-1.6.2.tar.bz2
+Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : (lien supprimé)
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 

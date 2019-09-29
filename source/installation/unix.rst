@@ -5,14 +5,14 @@ Linux/Unix
 
 L'installation de Galette sous Linux pré-suppose uniquement que vous ayez l'accès à un terminal sur le serveur, et les autorisations nécessaires pour adapter les droits sur les dossiers.
 
-Par exemple, sous `Fedora <http://fedora-fr.org>`_, vous lancerez (en root) :
+Par exemple, sous `Fedora <https://fedora-fr.org>`_, vous lancerez (en root) :
 
 .. code-block:: bash
 
    # cd /var/www/galette/
    # chown -R apache:apache config data
 
-Sous `Debian <http://debian.org/>`_, on remplacera ``apache:apache`` par ``www-data:www-data``.
+Sous `Debian <https://debian.org/>`_, on remplacera ``apache:apache`` par ``www-data:www-data``.
 
 Pour les systèmes protégés par SELinux, on entrera de surcroît :
 

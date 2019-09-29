@@ -11,7 +11,7 @@ Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.4.0.tar.bz2
+https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.4.0.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 
@@ -41,8 +41,8 @@ Enfin, une entrée `Cartes` apparaît dans la liste des pages publiques. Cette p
 
 Dans un premier temps, vos adhérents devront entrer leur localisation, via l'entrée adéquate du menu. Plusieurs options s'offrent à eux :
 
-* si l'adhérent a renseigné sa ville sur sa fiche, une liste de possibilités d'emplacements lui sera soumise (via le `service en ligne de Nominatim <http://nominatim.openstreetmap.org>`_),
-* une zone de recherche libre (dont les résultats sont basés sur `OpenStreetMap <http://nominatim.openstreetmap.org/>`_) est disponible en complément,
+* si l'adhérent a renseigné sa ville sur sa fiche, une liste de possibilités d'emplacements lui sera soumise (via le `service en ligne de Nominatim <https://nominatim.openstreetmap.org>`_),
+* une zone de recherche libre (dont les résultats sont basés sur `OpenStreetMap <https://nominatim.openstreetmap.org/>`_) est disponible en complément,
 * un bouton de géolocalisation utilisant les fonctionnalités du navigateur est également disponible.
 
 La zone de recherche est disponible lors de l'enregistrement de la localisation de vos membres, ainsi que lors de la consultation des cartes, que ce soit par les administrateurs ou les simples visiteurs.

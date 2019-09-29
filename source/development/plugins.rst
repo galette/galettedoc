@@ -10,7 +10,7 @@ Depuis la version 0.7 ; Galette fournit un système de plugins.
 
 Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les `templates Smarty <https://www.smarty.net/>`_) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
 
-Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <http://fr.dotclear.org/>`_.
+Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <https://fr.dotclear.org/>`_.
 
 Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit :
 
@@ -72,7 +72,7 @@ Compatibilité des plugins
 La compatibilité des plugins repose sur un système assez simple : Galette définit une version de compatibilité des plugins qui peut être la version courante, ou une version antérieure (si rien n'a changé du côté des plugins) ; et chaque plugin définit de son côté la version de Galette avec laquelle il est compatible.
 
 Côté Galette, la version de compatibilité est déclarée à l'aide de la constante `GALETTE_COMPAT_VERSION` dans le fichier ``galette/includes/galette.inc.php``.
-Côté plugin, la version de compatibilité est déclarée en `pénultième <http://fr.wikipedia.org/wiki/P%C3%A9nulti%C3%A8me>`_ position dans le fichier ``_define.php`` du plugin.
+Côté plugin, la version de compatibilité est déclarée en `pénultième <https://fr.wikipedia.org/wiki/P%C3%A9nulti%C3%A8me>`_ position dans le fichier ``_define.php`` du plugin.
 
 Routes
 ======
@@ -510,7 +510,7 @@ Le respect de ces règles assure que le plugin sera pleinement pris en charge pa
 Classes PHP
 ===========
 
-Certains plugins auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et `l'espace de nom <http://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) sont importants.
+Certains plugins auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et `l'espace de nom <https://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) sont importants.
 
 Toutes les classes doivent se trouver dans un dossier ``lib/{namespace}``. Chaque classe est un fichier php qui porte le même nom que la classe. L'espace de nom est déterminé par le nom du plugin déclaré dans le fichier ``_define.php``. Dans notre exemple, le nom du plugin étant ``Galette Mon Plugin``, l'espace de noms sera donc ``GaletteMonPlugin``.
 
@@ -606,9 +606,9 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
     * |phpfile| `_routes.php`
     * |file| `...`
 
-Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)
+Pour le reste... Il suffit de vous armer du `manuel PHP <https://fr.php.net/manual/fr/>`_, du `manuel Smarty <https://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <https://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <https://hexchat.github.io/>`_ pour rejoindre `le canal IRC de Galette <https://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)
 
-Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>`) doivent respecter les :ref:`conventions de codage PSR2 <conventions>` dans leur ensemble : http://www.php-fig.org/psr/psr-2/
+Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>`) doivent respecter les :ref:`conventions de codage PSR2 <conventions>` dans leur ensemble : https://www.php-fig.org/psr/psr-2/
 
 Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à une base doivent en faire de même.
 

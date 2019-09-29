@@ -91,8 +91,8 @@ Pour rappel, depuis 2017, deux listes sont à votre disposition :
 
 Les archives des listes d'avant 2017 sont disponibles aux adresses suivantes :
 
-* `ancienne liste de discussion utilisateurs <http://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_
-* `ancienne liste de discussion développement <http://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_
+* `ancienne liste de discussion utilisateurs <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_
+* `ancienne liste de discussion développement <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_
 
 Malheureusement, qu'il s'agisse des nouvelles, ou des anciennes listes, aucun système de recherche dans les archives n'est proposé :(
 

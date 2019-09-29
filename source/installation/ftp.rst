@@ -5,11 +5,11 @@ FTP
 
 .. warning::
 
-   Certains logiciels utilisés pour la décompression de l'archive, ou pour l'envoi des fichiers en FTP peuvent corrompre les fichiers... Il est fortement recommandé sous Windows d'avoir recours à `7zip <http://www.7-zip.org/fr/>`_ pour la décompression et à `FileZilla <http://filezilla-project.org/>`_ pour l'envoi des fichiers.
+   Certains logiciels utilisés pour la décompression de l'archive, ou pour l'envoi des fichiers en FTP peuvent corrompre les fichiers... Il est fortement recommandé sous Windows d'avoir recours à `7zip <https://www.7-zip.fr>`_ pour la décompression et à `FileZilla <https://filezilla-project.org/>`_ pour l'envoi des fichiers.
 
-Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <http://www.7-zip.org/fr/>`_ sous Windows.
+Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <https://www.7-zip.fr>`_ sous Windows.
 
-Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <http://filezilla-project.org/>`_.
+Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <https://filezilla-project.org/>`_.
 
 .. image:: ../_styles/static/images/installation/filezilla.jpg
    :scale: 50 %
@@ -21,7 +21,7 @@ Cas particuliers
 OVH
 ^^^
 
-Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <http://docs.ovh.com/fr/fr/web/hosting/mutualise-configurer-la-version-de-php-depuis-votre-espace-client/>`_.
+Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
 
 Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
@@ -36,7 +36,7 @@ Des informations complémentaires sont disponibles à l'addresse : https://docs.
 Nginx
 ^^^^^
 
-Le `serveur web Nginx <http://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <http://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
+Le `serveur web Nginx <https://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
 
 Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :
 

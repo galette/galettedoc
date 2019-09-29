@@ -19,7 +19,7 @@ Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-0.5beta.tar.bz2
+https://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-0.5beta.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 

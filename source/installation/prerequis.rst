@@ -19,7 +19,7 @@ Pour installer Galette, vous aurez besoin que les composants suivants soient ins
   * le module PHP `tidy` (optionnel, mais recommandé),
   * le module PHP `gettext` (optionnel).
 
-* un serveur `MariaDB <http://mariadb.org>`_  (ou MySQL) en version 5.5 minimum ou `PostgreSQL <http://postgresql.org>`_ en version 9.1 minimum.
+* un serveur `MariaDB <https://mariadb.org>`_  (ou MySQL) en version 5.5 minimum ou `PostgreSQL <https://postgresql.org>`_ en version 9.1 minimum.
 
 Galette ne fonctionne pas sur les hébergements suivants :
 

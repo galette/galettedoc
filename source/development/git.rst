@@ -2,24 +2,24 @@
 Récupération des sources
 ************************
 
-Le projet Galette utilise `Git <http://fr.wikipedia.org/wiki/Git>`_ comme gestionnaire de sources, après avoir longtemps utilisé Subversion.
+Le projet Galette utilise `Git <https://fr.wikipedia.org/wiki/Git>`_ comme gestionnaire de sources, après avoir longtemps utilisé Subversion.
 
 Git correspond d'avantage aujourd'hui à mes attentes pour un tel système, et offre une souplesse parfois fort utile.
 
-Il est possible de `parcourir le code source en utilisant l'interface web <http://git.tuxfamily.org/galette/galette>`_. Pour cloner le dépôt, utilisez :
+Il est possible de `parcourir le code source en utilisant l'interface web <https://git.tuxfamily.org/galette/galette>`_. Pour cloner le dépôt, utilisez :
 
 .. code-block:: bash
 
    $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
 
-Le dossier ``galette.git`` contiendra votre copie de travail de Galette, prête à être utilisée (même résultat qu'un `svn checkout`). Un bref mot sur les différents niveaux exitants dans Git : sous SVN, il y a la copie de travail, et le dépôt distant. Sous Git, c'est un peu plus compliqué, et de nombreux tutoriels/livres spécialisés traitent cet aspect des choses. Toutefois, voici une page qui `vous expliquera clairement les relations entre les différents niveaux d'un dépôt Git <http://ndpsoftware.com/git-cheatsheet.html>`_.
+Le dossier ``galette.git`` contiendra votre copie de travail de Galette, prête à être utilisée (même résultat qu'un `svn checkout`). Un bref mot sur les différents niveaux exitants dans Git : sous SVN, il y a la copie de travail, et le dépôt distant. Sous Git, c'est un peu plus compliqué, et de nombreux tutoriels/livres spécialisés traitent cet aspect des choses. Toutefois, voici une page qui `vous expliquera clairement les relations entre les différents niveaux d'un dépôt Git <https://ndpsoftware.com/git-cheatsheet.html>`_.
 
 Quelques liens qui peuvent être utiles :
 
 * http://www-cs-students.stanford.edu/~blynn/gitmagic/
-* http://schacon.github.com/git/gittutorial.html
-* http://ndpsoftware.com/git-cheatsheet.html
-* http://progit.org/book/
+* https://schacon.github.com/git/gittutorial.html
+* https://ndpsoftware.com/git-cheatsheet.html
+* https://git-scm.com/book/fr/v2
 
 Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, référez-vous au paragraphe :ref:`bibliothèques tierces <deps>`.
 
@@ -36,7 +36,7 @@ Pour fonctionner, Galette a besoin d'un certain nombre de bibliothèques externe
 
 Initialement, ces bibliothèques étaient dans le dépôt de Galette, mais cela prenait trop de place, et était trop compliqué à gérer. Il a été décidé de les placer dans une arcive à part, qu'il fallait récupérer et décompresser dans le dossier ``includes`` ; mais tout ceci est maintenant déprécié.
 
-Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <http://getcomposer.org>`_ :
+Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <https://getcomposer.org>`_ :
 
 .. code-block:: bash
 
@@ -66,8 +66,8 @@ Sous windows
 
 Git est parfaitement supporté sous Windows également ; en utilisant l'un des outils suivants :
 
-* `TortoiseGIT <http://code.google.com/p/tortoisegit/>`_, très similaire à TortoiseSVN pour ceux qui connaissent,
-* `Git Extensions <http://code.google.com/p/gitextensions/>`_
+* `TortoiseGIT <https://tortoisegit.org/>`_, très similaire à TortoiseSVN pour ceux qui connaissent,
+* `Git Extensions <https://gitextensions.github.io/>`_
 
 Il semblerait que Git Extensions fasse très bien ce qu'on attend de lui... Lors de son installation, il vous sera proposé l'installation de msysgit, et de kdiff3. Je vous conseille vivement l'installation de ces deux composants. Le premier est Git pour windows, le second un outil qui permet de faire des diff et de résourde des conflits.
 

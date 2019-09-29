@@ -14,13 +14,13 @@ Ce plugin permet la gestion de clubs automobiles. Vous pourrez gérer :
 * les finitions,
 * les états.
 
-Ce plugin a été développé en étroite collaboration avec Anatole du `Club 404 <http://www.leclub404.com/>`_, et François du `club Fiat 500 <http://www.leclub404.com/>`_. Un grand merci à eux pour les données qu'ils m'ont fournies durant la création du plugin :-)
+Ce plugin a été développé en étroite collaboration avec Anatole du `Club 404 <https://www.leclub404.com/>`_, et François du `club Fiat 500 <https://www.leclub404.com/>`_. Un grand merci à eux pour les données qu'ils m'ont fournies durant la création du plugin :-)
 
 Installation
 ============
 
 Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
-http://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.4.0.tar.bz2
+https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.4.0.tar.bz2
 
 Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
 

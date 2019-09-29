@@ -6,7 +6,7 @@
 Documentation de Galette
 ========================
 
-`Galette <http://galette.eu>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <http://galette.eu>`_ vous fournira quelques informations complémentaires sur le logiciel ; vous pouvez également consulter :doc:`le changelog de Galette </changelog>`.
+`Galette <https://galette.eu>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <https://galette.eu>`_ vous fournira quelques informations complémentaires sur le logiciel ; vous pouvez également consulter :doc:`le changelog de Galette </changelog>`.
 
 .. rst-class:: docs install_doc
 

@@ -75,9 +75,9 @@ Conventions d'écriture
 
    Le standard pour les conventions d'écriture est passé de PEAR à PSR2 depuis Galette 0.9.
 
-Le code source de Galette se doit de suivre les `conventions d'écriture PSR2 <http://www.php-fig.org/psr/psr-2/>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
+Le code source de Galette se doit de suivre les `conventions d'écriture PSR2 <https://www.php-fig.org/psr/psr-2/>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
 
-Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains avertissements peuvent être ignorés, mais les potentielles erreurs doivent toutes être corrigées. Pour lancer une vérification automatique, utilisez la commande ``phpcs`` :
+Vous pourrez utiliser `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains avertissements peuvent être ignorés, mais les potentielles erreurs doivent toutes être corrigées. Pour lancer une vérification automatique, utilisez la commande ``phpcs`` :
 
 .. code-block:: bash
 
@@ -115,7 +115,7 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     *
     * Copyright © 2009-2011 The Galette Team
     *
-    * This file is part of Galette (http://galette.eu).
+    * This file is part of Galette (https://galette.eu).
     *
     * Galette is free software: you can redistribute it and/or modify
     * it under the terms of the GNU General Public License as published by
@@ -128,16 +128,16 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     *  GNU General Public License for more details.
     *
     * You should have received a copy of the GNU General Public License
-    * along with Galette. If not, see <http://www.gnu.org/licenses/>.
+    * along with Galette. If not, see <https://www.gnu.org/licenses/>.
     *
     * @category  Authentication
     * @package   Galette
     *
     * @author    Johan Cwiklinski <johan@x-tnd.be>
     * @copyright 2009-2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
+    * @license   https://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @version   SVN: $Id$
-    * @link      http://galette.eu
+    * @link      https://galette.eu
     * @since     Available since 0.7dev - 2009-02-28
     */
 
@@ -149,8 +149,8 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     * @package   Galette
     * @author    Johan Cwiklinski <johan@x-tnd.be>
     * @copyright 2009-2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
-    * @link      http://galette.eu
+    * @license   https://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
+    * @link      https://galette.eu
     * @since     Available since 0.7dev - 2009-02-28
    */
    abstract class Authentication()

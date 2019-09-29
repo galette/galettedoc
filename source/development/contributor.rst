@@ -10,7 +10,7 @@ Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que l
 
    Bien que l'utilisation du dépôt Git simplifie les choses pour le travail collaboratif, l'utiliser n'est **en rien une obligation**.
 
-   Vous pouvez parfaitement vous baser sur la `version nightly de Galette <http://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_, mise à niveau depuis la branche `develop` quotidiennement.
+   Vous pouvez parfaitement vous baser sur la `version nightly de Galette <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_, mise à niveau depuis la branche `develop` quotidiennement.
 
 Pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez (nous y reviendrons dans le premier exemple patique) :-)
 
@@ -19,7 +19,7 @@ Modèle de développement
 
 Galette est constitué de versions stables, sur lesquelles il faut pouvoir apporter des correctifs, d'une version de développement, et de moult versions de tests pour l'intégration de nouvelles fonctionnalités qui seront (ou pas) implémentées par la suite.
 
-`Vincent Driessen <http://nvie.com>`_ a publié en 2010 un `modèle de gestion des branches Git que je trouve très pertinent <http://nvie.com/posts/a-successful-git-branching-model/>`_, et que j'ai décidié d'utiliser pour le développement de Galette. Couplé à l'outil git-flow du même auteur, le workflow est plus simple à suivre. Vous en doutez ? Alors, je vous laisse consulter cet `article qui vous explique pourquoi vous devriez utiliser git-flow <http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
+`Vincent Driessen <https://nvie.com>`_ a publié en 2010 un `modèle de gestion des branches Git que je trouve très pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, et que j'ai décidié d'utiliser pour le développement de Galette. Couplé à l'outil git-flow du même auteur, le workflow est plus simple à suivre. Vous en doutez ? Alors, je vous laisse consulter cet `article qui vous explique pourquoi vous devriez utiliser git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
 
 Configuration de Git
 ====================
@@ -31,7 +31,7 @@ La toute première chose à faire si vous venez d'installer Git, c'est de config
    $ git config --global user.name "Victor Hugo"
    $ git config --global user.email "victor@hugo.fr"
 
-Il s'agit là du minimum syndical de configuration Git que vous avez à faire :) Bien entendu, Git dispose de bon nombre d'options, je vous recommande la lecture du `chapitre sur la configuration de Git de ProGit.org <http://progit.org/book/fr/ch7-1.html>`_ (la traduction de ce chapitre peut ne pas être à jour, consultez la `version originale <http://progit.org/book/ch7-1.html>`_ en cas de doute).
+Il s'agit là du minimum syndical de configuration Git que vous avez à faire :) Bien entendu, Git dispose de bon nombre d'options, je vous recommande la lecture du `chapitre sur la configuration de Git sur le site officiel du logiciel <https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git>`_.
 
 Exemples pratiques : développement
 ==================================
@@ -150,7 +150,7 @@ Après avoir effectué vos modifications dans le code source, l'étape suivante 
    0001-Placebo-commit.patch
    0002-Destructive-commit.patch
 
-Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <http://bugs.galette.eu/projects/galette/>`_ adéquat :)
+Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <https://bugs.galette.eu/projects/galette/>`_ adéquat :)
 
 Quelques petits points de contrôle :
 
