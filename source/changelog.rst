@@ -10,11 +10,21 @@ Changelog
 0.9.2.1 -> 0.9.3
 ****************
 
+.. _ajouts_093:
+
+Nouveautés
+==========
+
 * Enregistement des recherches (`#691 <https://bugs.galette.eu/issues/691>`_)
 * Utilisation d'adresses email multiples depuis les préférences (`#643 <https://bugs.galette.eu/issues/643>`_)
 * Envoi d'un courriel aux administrateurs lorsqu'un adhérent modifie sa fiche (`#756 <https://bugs.galette.eu/issues/756>`_)
 * Paramétrage de la redirection après ajout d'un adhérent (`#1136 <https://bugs.galette.eu/issues/1136>`_)
 * Ajout d'une variable pour la date du jour (`DATE_NOW`) dans les modèles PDF (`#1260 <https://bugs.galette.eu/issues/1260>`_)
+
+.. _bogues_093:
+
+Bogues corrigés
+===============
 
 * Page blanche à l'installation sur certains environnements (`#1236 <https://bugs.galette.eu/issues/1236>`_)
 * Erreurs d'échappement javascript dans les mailings (`#1247 <https://bugs.galette.eu/issues/1247>`_)
