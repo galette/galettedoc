@@ -1060,7 +1060,7 @@ Quelques plugins sont dores et déjà disponibles pour Galette !
 * The log can now be sorted
 
 ************
-O.60 -> 0.61
+0.60 -> 0.61
 ************
 
 * Bugfix in member edition form (admin)
@@ -1085,7 +1085,7 @@ O.60 -> 0.61
 * English translation
 
 ************
-O.60 -> 0.61
+0.60 -> 0.61
 ************
 
 * Correction du formulaire d'édition d'adhérent (admin)
