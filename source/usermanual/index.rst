@@ -1,8 +1,10 @@
 .. _usermanual:
 
-.. rst-class:: docs user_doc
+.. only:: html
 
-:doc:`manuel de l'utilisateur <index>`
+   .. rst-class:: docs user_doc
+
+   :doc:`manuel de l'utilisateur <index>`
 
 .. rst-class:: doc_main_page
 

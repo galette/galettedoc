@@ -1,8 +1,10 @@
 .. _installation:
 
-.. rst-class:: docs install_doc
+.. only:: html
 
-:doc:`manuel d'installation <index>`
+   .. rst-class:: docs install_doc
+
+   :doc:`manuel d'installation <index>`
 
 .. rst-class:: doc_main_page
 

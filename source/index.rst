@@ -26,7 +26,9 @@ Documentation de Galette
 
 Si vous le souhaitez, vous pouvez :doc:`en savoir plus sur la documentation de galette</about>` (technologies utilisées, comment récupérer les sources et les construire).
 
-Table des matières :
+.. only:: html
+
+   Table des matières :
 
 .. toctree::
    :maxdepth: 2
