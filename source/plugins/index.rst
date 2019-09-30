@@ -47,6 +47,11 @@ Les plugins tiers sont développés et/ou maintenus par des membres de la commun
 
 Une `communauté Github <https://github.com/galette-community/>`_ a été créée pour :doc:`gérer les plugins tiers <plugins-tiers>`, si vous souhaitez y placer votre plugin.
 
+.. toctree::
+   :hidden:
+
+   plugins-tiers.rst
+
 .. _plugins_managment:
 
 ********************************

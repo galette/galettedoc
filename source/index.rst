@@ -44,3 +44,4 @@ Si vous le souhaitez, vous pouvez :doc:`en savoir plus sur la documentation de g
    :hidden:
 
    changelog.rst
+   development/plugins-0.8-0.9.rst
