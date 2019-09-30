@@ -26,6 +26,8 @@ Nouveautés
 Bogues corrigés
 ===============
 
+* Traduction des libellés des groupes non appliquée dans la configuration des champs du cœur (`#1125 <https://bugs.galette.eu/issues/1125>`_)
+* Champs dynamiques de type date non vérifiés (`#1213 <https://bugs.galette.eu/issues/1213>`_)
 * Page blanche à l'installation sur certains environnements (`#1236 <https://bugs.galette.eu/issues/1236>`_)
 * Erreurs d'échappement javascript dans les mailings (`#1247 <https://bugs.galette.eu/issues/1247>`_)
 * Correction de la suppresion des adhérents liés à un groupe (`#1251 <https://bugs.galette.eu/issues/1251>`_)
@@ -39,7 +41,6 @@ Bogues corrigés
 * Les majuscules étaient supprimées dans les prénoms composés (`#1272 <https://bugs.galette.eu/issues/1272>`_)
 * Suppression du nom de la société lorsque la case est décochée (`#1277 <https://bugs.galette.eu/issues/1277>`_)
 * Correction d'un appel sur le mauvais objet depuis les mailings (`#1280 <https://bugs.galette.eu/issues/1280>`_)
-* Champs dynamiques de type date non vérifiés (`#1213 <https://bugs.galette.eu/issues/1213>`_)
 
 
 ****************
