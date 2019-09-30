@@ -8,9 +8,9 @@
 
 .. rst-class:: doc_main_page
 
-====================
-Plugins pour Galette
-====================
+=======
+Plugins
+=======
 
 Le système de plugins permet d'étendre les fonctionnalités de Galette dans certains cas particuliers, tout en évitant « d'encombrer » l'application principale. Les plugins non compatibles seront automatiquement désactivés. Il faut dans ce cas envisager de passer à la version supérieure du plugin.
 

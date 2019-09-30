@@ -8,9 +8,9 @@
 
 .. rst-class:: doc_main_page
 
-================================
-Manuel du développeur de Galette
-================================
+================
+Developer manual
+================
 
 Le projet Galette est hébergé chez `TuxFamily <https://www.tuxfamily.org>`_ :
 

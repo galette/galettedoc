@@ -8,9 +8,9 @@
 
 .. rst-class:: doc_main_page
 
-================================
-Manuel d'installation de Galette
-================================
+===================
+Installarion manual
+===================
 
 L'installation de Galette consiste simplement, après avoir effectué quelques tâches préalables, à vous laisser guider par l'interface et renseigner les quelques informations qui vous seront demandées.
 

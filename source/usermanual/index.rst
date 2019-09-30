@@ -8,9 +8,9 @@
 
 .. rst-class:: doc_main_page
 
-=======================
-Manuel de l'utilisateur
-=======================
+===========
+User manual
+===========
 
 Bienvenue dans le guide de l'utilisateur de Galette :-)
 Ces pages vous guideront à travers les différents écrans et possibilités offerts par Galette pour la gestion de votre association.

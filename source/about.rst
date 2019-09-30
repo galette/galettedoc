@@ -2,44 +2,40 @@
 
 .. _about:
 
-***************************************
-À propos de la Documentation de Galette
-***************************************
+*****************************
+About Galette's documentation
+*****************************
 
-La documentation de `Galette <https://galette.eu>`_, distribuée sous `Licence Creative Commons Paternité - Partage à l'Identique 3.0 non transposé <https://creativecommons.org/licenses/by-sa/3.0/>`_, est rédigée avec la syntaxe `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ et est construite avec `Sphinx <https://www.sphinx-doc.org>`_.
+`Galette <https://galette.eu>`_ documentation, under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ license, is written using `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and is built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_.
 
-Récupération des sources
-========================
+Retrieve sources
+================
 
-Les sources de la documentation sont gérées dans un dépôt `Git <https://fr.wikipedia.org/wiki/Git>`_ hébergé chez `Tuxfamily <https://www.tuxfamily.org>`_ (grand merci à eux !), vous pouvez au choix :
+`Documentation sources <https://git.tuxfamily.org/galette/galettedoc.git>`_ are stored in their own `Git <https://fr.wikipedia.org/wiki/Git>`_ repository hosted at `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `mirror is also available on github <https://github.com/galette/documentation>`_.
 
-* `parcourir le dépôt Git de la documentation de galette <https://git.tuxfamily.org/galette/galettedoc.git>`_,
-* récupérer les sources de la documentation de Galette :
-
-  * si vous possédez un compte chez Tuxfamily et que vous faites partie du projet Galette :
+To clone main repository, use the following along with your Tuxfamily credentials:
 
   ::
 
      $ git clone ssh://VOTREUSER@git.tuxfamily.org/gitroot/galette/galettedoc.git
 
-  * en tant qu'utilisateur anonyme :
+Or as anonymous user:
 
   ::
 
      $ git clone git://git.tuxfamily.org/gitroot/galette/galettedoc.git
 
+Sphinx allows to build documentation for various formats from same sources. Galette documentation is therefore available as HTML, PDF and EPUB formats; thanks to `Read the docs <https://readthedocs.io>`_.
 
-Sphinx permet de construire la documentation sous plusieurs formats depuis les mêmes sources. La documentation de Galette est ainsi distribuée aux formats HTML, PDF et EPUB. La version HTML est consultable telle quelle hors-ligne :-)
+Build documentation
+===================
 
-Construire la documentation
-===========================
+Once repository has been cloned, you should be able to build the documentation, but you may need some prerequisites installed:
 
-Une fois les sources récupérées, vous pourrez construire la documentation. Toutefois, vous aurez préalablement besoin d'installer sur votre machine :
+* `Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ to generate HTML and EPUB formats,
+* a complete TeX/LaTeX environment to generate PDF (`TeX Live <https://www.tug.org/texlive/>`_, `MacTEx <https://www.tug.org/mactex/>`_, `MikTeX <https://miktex.org/>`_).
 
-* `le logiciel Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ pour générer les versions HTML et EPUB,
-* un environnement TeX/LaTeX complet pour générer la version PDF (`TeX Live <https://www.tug.org/texlive/>`_, `MacTEx <https://www.tug.org/mactex/>`_, `MikTeX <https://miktex.org/>`_).
-
-Pour construire la documentation, il faut se placer à la racine du projet (dans le dossier ``galettedoc`` si vous avez cloné le dépôt Git) :
+To build the documentation, go to the root of the project (``galettedoc`` directory if you've cloned the GIT repository):
 
 ::
 
@@ -53,7 +49,7 @@ Pour construire la documentation, il faut se placer à la racine du projet (dans
 
    $ cd galettedoc
 
-Puis il faut lancer la commande ``make`` suivie de la (ou les) version(s) à contruire (``html``, ``epub``, ``latexpdf``). Ainsi, pour construire la documentation dans les trois formats prévus, on lancera la commande :
+Then, you have to run ``make`` with one of the formats you want to compile (``html``, ``epub``, ``latexpdf``). In order to build the documentation for all three formats, we'll run:
 
 ::
 
@@ -87,8 +83,8 @@ Puis il faut lancer la commande ``make`` suivie de la (ou les) version(s) à con
      [...]
      pdflatex finished; the PDF files are in build/latex.
 
-Traductions
------------
+Translations
+------------
 
 In order to update translations, update POT files from sources rst files. This can be achieved running the following command:
 
@@ -97,9 +93,9 @@ In order to update translations, update POT files from sources rst files. This c
    $ sphinx-build -b gettext source source/locale
 
 
-Comment Contribuer ?
-====================
+How to contribute?
+==================
 
-`Un gestionnaire de bogues dédié à la documentation <https://bugs.galette.eu/projects/documentation-galette>`_ vous permet de nous signaler tout problème que vous auriez rencontré et aussi nous soummettre les corrections ou autres améliorations que vous souhaiteriez voir intégrer au projet.
+`A bug tracker dedicated to the documentation <https://bugs.galette.eu/projects/documentation-galette>`_ allow you to inform us for all issues you may find and submit us fixes or evolutions you would want to integrate.
 
-Les contributions pour la documentation suivent :doc:`le même modèle que pour le code de Galette <development/contributor>`.
+All documentation contributions must follow the :doc:`same rules as Galette source code <development/contributor>`.
