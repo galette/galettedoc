@@ -3,32 +3,32 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentation de Galette
-========================
+Galette's documentation
+=======================
 
-`Galette <https://galette.eu>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <https://galette.eu>`_ vous fournira quelques informations complémentaires sur le logiciel ; vous pouvez également consulter :doc:`le changelog de Galette </changelog>`.
+`Galette <https://galette.eu>`_ is an open source and free membership management web application towards non profit organizations.
 
 .. rst-class:: docs install_doc
 
-:doc:`manuel d'installation <installation/index>`
+:doc:`installation manual <installation/index>`
 
 .. rst-class:: docs user_doc
 
-:doc:`manuel de l'utilisateur <usermanual/index>`
+:doc:`user manual <usermanual/index>`
 
 .. rst-class:: docs plugins_doc
 
-:doc:`documentation des plugins <plugins/index>`
+:doc:`plugins documentation <plugins/index>`
 
 .. rst-class:: docs devel_doc
 
-:doc:`guide du développeur <development/index>`
+:doc:`developer guide <development/index>`
 
-Si vous le souhaitez, vous pouvez :doc:`en savoir plus sur la documentation de galette</about>` (technologies utilisées, comment récupérer les sources et les construire).
+You can also :doc:`know more about Galette documentation </about>` (used technologies, how to retrieve sources and build).
 
 .. only:: html
 
-   Table des matières :
+   Table of contents:
 
 .. toctree::
    :maxdepth: 2
