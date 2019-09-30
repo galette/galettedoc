@@ -1,6 +1,6 @@
 .. _plugins:
 
-.. only:: html
+.. only:: builder_html
 
    .. rst-class:: docs plugins_doc
 

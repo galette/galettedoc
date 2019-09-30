@@ -1,6 +1,6 @@
 .. _developerguide:
 
-.. only:: html
+.. only:: builder_html
 
    .. rst-class:: docs devel_doc
 

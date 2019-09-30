@@ -1,6 +1,6 @@
 .. _installation:
 
-.. only:: html
+.. only:: builder_html
 
    .. rst-class:: docs install_doc
 

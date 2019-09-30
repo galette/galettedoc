@@ -1,6 +1,6 @@
 .. _usermanual:
 
-.. only:: html
+.. only:: builder_html
 
    .. rst-class:: docs user_doc
 
