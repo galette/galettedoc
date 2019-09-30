@@ -213,6 +213,15 @@ epub_cover = ('_static/images/epub_cover.png', '')
 # class link-target.
 # epub_show_urls = 'no'
 
+# A list of files that are generated/copied in the build directory but should 
+# not be included in the epub file. The default value is [].
+epub_exclude_files = [
+  '_static/favicon.ico',
+  'installation/unix.xhtml',
+  'installation/ftp.xhtml',
+  'installation/windows.xhtml',
+]
+
 
 # -- Options for LaTeX output --------------------------------------------------
 
