@@ -1,0 +1,852 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/plugins.rst:7
+# 3feac7c124634e038cd7f21cb532776f
+msgid "Écriture de plugins"
+msgstr ""
+
+#: ../development/plugins.rst:9
+# d4a3818256e448cc895a76fd0d9d71eb
+msgid "Depuis la version 0.7 ; Galette fournit un système de plugins."
+msgstr ""
+
+#: ../development/plugins.rst:11
+# ec2a9e09d6ca4e709bc0da6dc582072c
+msgid "Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les `templates Smarty <https://www.smarty.net/>`_) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents."
+msgstr ""
+
+#: ../development/plugins.rst:13
+# a8296142d6e742a8bc056c379f1e5b01
+msgid "Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <https://fr.dotclear.org/>`_."
+msgstr ""
+
+#: ../development/plugins.rst:15
+# aa2d42fc1ed24ef8b4f0dee20f2575e3
+msgid "Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit :"
+msgstr ""
+
+#: ../development/plugins.rst:17
+#: ../development/plugins.rst:569
+# 4f8b564ef28542e994358b1247ff1597
+# c79d7a29423d47dd9207b95e00c9290d
+msgid "|folder| `plugins`"
+msgstr ""
+
+#: ../development/plugins.rst:19
+# 0df6e06d23ae43aa869032e6f51e7e1c
+msgid "|folder| `Auto`"
+msgstr ""
+
+#: ../development/plugins.rst:20
+# aa8f2b51e97843d88dad4da2bb20e8a0
+msgid "|folder| `Paypal`"
+msgstr ""
+
+#: ../development/plugins.rst:21
+# 996d2e627f5d4bf5b15e13da42643e0a
+msgid "|folder| `...`"
+msgstr ""
+
+#: ../development/plugins.rst:23
+# f4829b7270564f169fb9d02f59fa05db
+msgid "Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}`` (le nom du thème étant défini par le nom du répertoire, le thème par défaut [le seul supporté actuellement] se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette). Consultez les sections adéquates pour en savoir davantage"
+msgstr ""
+
+#: ../development/plugins.rst:25
+# 1ccf72d0df064bc68b1a9c364705e149
+msgid "Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)"
+msgstr ""
+
+#: ../development/plugins.rst:29
+# 5bd9a3cc9a41480ea3a7ac8eaf6489a5
+msgid "Un bref :doc:`guide de migration des plugins de la 0.8 vers la 0.9 <plugins-0.8-0.9>` est disponible."
+msgstr ""
+
+#: ../development/plugins.rst:32
+# 27873eeb52534363bfefb5a05b6f719e
+msgid "Licence"
+msgstr ""
+
+#: ../development/plugins.rst:34
+# 0a38b2d3790c4f5ba8e143e05383bdda
+msgid "Les plugins officiels de galette sont fournis sous licence GPL version 3, tout comme le code principal."
+msgstr ""
+
+#: ../development/plugins.rst:36
+# 190655e6d0e7404186ab403cd2f948d0
+msgid "La licence doit :"
+msgstr ""
+
+#: ../development/plugins.rst:38
+# 03759838e40d4eee8402bc4c51a54a5a
+msgid "être incluse à la racine du dépôt (fichier ``LICENSE`` ou ``COPYING``),"
+msgstr ""
+
+#: ../development/plugins.rst:39
+# 0702be68ef9f483f84c351132ad8266b
+msgid "être spécifiée sur chaque fichier si la license choisie l'exige (voyez les fichiers de Galette ou des plugins officiels pour des exemples concernant la GPLv3).."
+msgstr ""
+
+#: ../development/plugins.rst:44
+# d313fed5acca47aab96d7d8e70c2bf9d
+msgid "Configuration des plugins"
+msgstr ""
+
+#: ../development/plugins.rst:46
+# 494e4f33fdc64e9f8b2225cdb73008b4
+msgid "Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il définit le nom du plugin, son auteur, etc, selon la nomenclature suivante :"
+msgstr ""
+
+#: ../development/plugins.rst:65
+# 0e9e443524e645bea1c8178f9eeaf1e5
+msgid "L'activation du module dans Galette dépend de ce fichier, s'il n'est pas présent, ou s'il est incorrect, le module ne sera pas activé."
+msgstr ""
+
+#: ../development/plugins.rst:70
+# 848ef69d7f85431181b4ea75922bb52e
+msgid "Compatibilité des plugins"
+msgstr ""
+
+#: ../development/plugins.rst:72
+# dd8f1797626f45c1b0ff69cd305b8177
+msgid "La compatibilité des plugins repose sur un système assez simple : Galette définit une version de compatibilité des plugins qui peut être la version courante, ou une version antérieure (si rien n'a changé du côté des plugins) ; et chaque plugin définit de son côté la version de Galette avec laquelle il est compatible."
+msgstr ""
+
+#: ../development/plugins.rst:74
+# 509d7ad0c096473da6541f400344d594
+msgid "Côté Galette, la version de compatibilité est déclarée à l'aide de la constante `GALETTE_COMPAT_VERSION` dans le fichier ``galette/includes/galette.inc.php``. Côté plugin, la version de compatibilité est déclarée en `pénultième <https://fr.wikipedia.org/wiki/P%C3%A9nulti%C3%A8me>`_ position dans le fichier ``_define.php`` du plugin."
+msgstr ""
+
+#: ../development/plugins.rst:78
+# 37938bfb5c5744cab6365658e5d827f8
+msgid "Routes"
+msgstr ""
+
+#: ../development/plugins.rst:82
+# 6a69042964b14dd0b6ec53394c18d4f2
+msgid "La grande majorité des plugins aura besoin de mettre à disposition des pages aux utilisateurs. Dans les versions antérieures, les plugins (tout comme le coeur par ailleurs) utilisaient pour ce faire des fichiers PHP directement accessibles. Depuis la version 0.9 ; cela n'est plus possible."
+msgstr ""
+
+#: ../development/plugins.rst:84
+# cbc6854f22e148e9b05345bf137816a8
+msgid "La présence d'un fichier ``_routes.php`` est obligatoire. Dans ce fichier, seront déclarées les différentes URL du plugin. Galette fournit automatiquement une URL du type ``{galette}/plugin/moplugin`` à laquelle des informations sur le plugin sont affichées. Toutes les routes déclarées dans un plugin se trouveront \"sous\" cette adresse (évitant ainsi toute collision avec Galette ou d'aures plugins)."
+msgstr ""
+
+#: ../development/plugins.rst:86
+# 28cef53e05cf4873b02ca5156a153b50
+msgid "Chaque route est caractérisée par différents éléments :"
+msgstr ""
+
+#: ../development/plugins.rst:88
+# 076f69df6c74451db52dd61d568cac02
+msgid "une URL,"
+msgstr ""
+
+#: ../development/plugins.rst:89
+# ec27e4a5edd74bd194ba1fdba3e38cf5
+msgid "d'éventuels paramètres d'URL, requis ou optionnels,"
+msgstr ""
+
+#: ../development/plugins.rst:90
+# dd7ac1e9eab1438a9c0b6d09e8af9c3f
+msgid "un nom (unique),"
+msgstr ""
+
+#: ../development/plugins.rst:91
+# b47934527c4c4f4e9ed51941ce99e6e3
+msgid "d'éventuelles restrictons d'accès,"
+msgstr ""
+
+#: ../development/plugins.rst:92
+# fdddf9406ccf49198c33d65ff279d9cf
+msgid "une méthode d'accè (généralement `GET` et/ou `POST`)."
+msgstr ""
+
+#: ../development/plugins.rst:94
+# fd9b84b9eb6847ab9686a40c8be44d18
+msgid "Un exemple de route relativement simple donnerait :"
+msgstr ""
+
+#: ../development/plugins.rst:106
+# f8b50ec5b2534ab89a5bfab2ae99c8ab
+msgid "Cette route sera accessible à l'adresse ``{galette}/plugin/moplugin/main`` ; elle ne fera qu'afficher `Welcome to the main page`."
+msgstr ""
+
+#: ../development/plugins.rst:110
+# 5120d54acc674e37ab6e030e68f40378
+msgid "Les noms des routes doivent être uniques. Pour éviter toute collision, tout nom de route devra être préfixé par le nom du plugin."
+msgstr ""
+
+#: ../development/plugins.rst:112
+# ad590386b6bb431d9f2ebc5ee41c92ba
+msgid "Les routes peuvent avoir des paramètres obligatoires ou non. L'exemple suivant ajoute un paramètre `arg1` obligatoire et un paramètre `arg2` optionnel :"
+msgstr ""
+
+#: ../development/plugins.rst:128
+# 8adf487186994093902f087d4cc80f9b
+msgid "Il est aussi possible de restreindre la valeur d'un paramètre par le biais d'une expression régulière. Consultez la `documentation sur les routes de Slim <https://www.slimframework.com/docs/objects/router.html>`_ pour davantage de détails."
+msgstr ""
+
+#: ../development/plugins.rst:131
+# ee3b8830805d4d18856f81227eb8c4d3
+msgid "Routes et templates"
+msgstr ""
+
+#: ../development/plugins.rst:133
+# 3e8b7dd5ee2b443a8b82d69b393881b2
+msgid "Bien entendu, lancer de pauvres ``echo`` depuis une route n'est probablement pas ce que nous souhaitons faire ; c'est souvent un peu plus compliqué :-)"
+msgstr ""
+
+#: ../development/plugins.rst:135
+# 7b66ffbcd8a140bfb5b3e4e383e54881
+msgid "D'une manière générale, au sein de Galette, les routes `GET` affichent des informations ou des formulaires, et les routes `POST` effectuent les actions. Ainsi, un formulaire a pour destination la route `POST`, cette dernière effectue le traitement, et renvoie sur la route `GET`."
+msgstr ""
+
+#: ../development/plugins.rst:137
+# 013d90e865ca4be692a0745fef75adfe
+msgid "Les considérations relatives aux arguments sont valables dans les deux cas."
+msgstr ""
+
+#: ../development/plugins.rst:139
+# 166bc139aa704e4cb6ef311aaa214f61
+msgid "L'affichage d'une page par le biais d'un template Smarty ressemblerait à :"
+msgstr ""
+
+#: ../development/plugins.rst:153
+# 18c7f53ac7a24484bbc5202a13d736e6
+msgid "On constate ici que le second argument passé à la méthode ``render()`` suit un schéma particulier."
+msgstr ""
+
+#: ../development/plugins.rst:155
+# 6737de5674624ab3b0e86c958bbc38cb
+msgid "Il peut y avoir conflit si un fichier de template portant le même nom existe déjà (dans le coeur ou das un autre plugin). Dans le cas où l'un de vos fichiers template porte le même nom qu'un autre (de Galette ou d'un autre plugin) ; le premier appelé sera compilé, et ce sera toujours celui-là qui sera chargé."
+msgstr ""
+
+#: ../development/plugins.rst:157
+# aaa5c49951cc42679afcbe23859c376d
+msgid "Pour parer à ce problème, les dossiers des templates sont couplés à une clé unique pour chaque plugin. De cette manière, il n'est pas possible d'avoir de doublons ; mais il est nécessaire de spécfier la clé lors de l'appel."
+msgstr ""
+
+#: ../development/plugins.rst:159
+# c93c7f9e29b74a569bb6e3f17473058b
+msgid "Ainsi, ``fichier.tpl`` désigne le fichier ``fichier.tpl`` du coeur, et ``file:[abcde]fichier.tpl`` le fichier ``fichier.tpl`` du plugin dont l'identifiant est ``abcde``."
+msgstr ""
+
+#: ../development/plugins.rst:163
+# e6a96f57f642444abf145679a426ab6a
+msgid "Galette se charge d'attribuer les identifiants aux plugins. N'essayez pas de le deviner, et utilisez plutôt ``$module['route']``. Cette variable est rendue accessible aux routes des plugins, utilisez le mot clé ``use`` pour l'inclure dans vos fonctions anonymes :"
+msgstr ""
+
+#: ../development/plugins.rst:174
+# 356c5e11180d4e10a6dec499273b6cc3
+msgid "Les redirections sont simples à mettre en oeuvre :"
+msgstr ""
+
+#: ../development/plugins.rst:184
+# 3071e682003f4e59b1417c1b656ccfcd
+msgid "Restrictions d'accès"
+msgstr ""
+
+#: ../development/plugins.rst:186
+# ab05df5611e94cd68f0d93ca46964cd5
+msgid "Galette fournit un `middleware <https://www.slimframework.com/docs/concepts/middleware.html>`_ qui permet de restreindre l'accès aux différentes routes."
+msgstr ""
+
+#: ../development/plugins.rst:188
+# abe12a2fd8b84e8abdac28b068b73ce8
+msgid "L'accès peut être restreint aux rôles suivants :"
+msgstr ""
+
+#: ../development/plugins.rst:190
+# b9797ef54ba74df0975441ab1191ce1b
+msgid "``superadmin`` (super-administrateur),"
+msgstr ""
+
+#: ../development/plugins.rst:191
+# 656de8210a934945815b5c88943f840f
+msgid "``admin`` (administrateurs),"
+msgstr ""
+
+#: ../development/plugins.rst:192
+# ebb13bab527e4756807fcc5037e71a77
+msgid "``staff`` (membres du bureau)"
+msgstr ""
+
+#: ../development/plugins.rst:193
+# ceed67b1568c432b9d8de58107f339d8
+msgid "``groupmanager`` (responsables de groupes)"
+msgstr ""
+
+#: ../development/plugins.rst:194
+# 959eb8cec2d544499a0541aba6c170ce
+msgid "``member`` (utilisateur connecté)"
+msgstr ""
+
+#: ../development/plugins.rst:196
+# 8cd2f91101b34a159735e6d2e1ac123b
+msgid "Les accès ``groupmanager`` et ``member`` requièrent généralement une vérification supplémentaire au sein de la route. En effet, si une route est accessible aux responsables de groupes ; leur accès doit se limiter aux adhérents des groupes qu'ils gèrent."
+msgstr ""
+
+#: ../development/plugins.rst:198
+# ebabfb64bc754a36a9b88f6ff6ce33ff
+msgid "Pour ajouter une restriction d'accès sur une route ; il suffit d'ajouter un appel au middleware fourni par la variable ``$authenticate`` :"
+msgstr ""
+
+#: ../development/plugins.rst:210
+# 9552914653004e6bb80eb50077e0cca4
+msgid "Il faut à côté de cela définir les accès en fonction des noms de routes dans le fichier ``_define.php``. Dans l'exemple donné au début de la documentation, la route ``monplugin_main`` a été restreinte aux seuls membres du bureau."
+msgstr ""
+
+#: ../development/plugins.rst:212
+# 4f15b6be0f494dd3b285af81fdd76611
+msgid "Les pages qui ne nécéssitent pas de restriction particulière n'utiliseront simplement pas le middleware. Il en va de même pour les pages qui pourraient à la fois être accessibles pour un visiteur comme pourun utilisateur authentifié. Dans ce dernier cas, c'est au seain de la route ou des fonctions que la restriction devrait être appliquée."
+msgstr ""
+
+#: ../development/plugins.rst:215
+#: ../development/plugins.rst:358
+# 04dad5d39b114573a1422a93ade01ee8
+# 131cc66b64a54c85b8749075962c4eb7
+msgid "Pages publiques"
+msgstr ""
+
+#: ../development/plugins.rst:217
+# e4e8c5faa1d445bc868dd5ac052eee29
+msgid "Certaines pages peuvent être accessibles de manière publique ; mais cela est soumis à un paramétrage des préférences de Galette. Pour de telles pages, on testera la valeur de la préférence, et on redirigera au besoin :"
+msgstr ""
+
+#: ../development/plugins.rst:236
+# eebda96cf846467886db699a0c6957be
+msgid "Utilisation"
+msgstr ""
+
+#: ../development/plugins.rst:238
+# 06a8f53fa18e4471980ce6d11892260a
+msgid "Vous serez certainement amenés à devoir utiliser vos routes ; soit depuis un template Smarty, soit depuis une ate route (dans le cas d'une redirection par exemple)."
+msgstr ""
+
+#: ../development/plugins.rst:240
+# 02bd7475e4994756b7515b5e33306996
+msgid "En PHP, il faudra utiliser la fonction ``pathFor``. Si la route attend des paramètres, il faudra les passer sous forme de tableau en second paramètre :"
+msgstr ""
+
+#: ../development/plugins.rst:248
+# a3d9d901928948ce959472f29be36887
+msgid "Depuis un template Smarty ; utilisez la fonction ``path_for`` :"
+msgstr ""
+
+#: ../development/plugins.rst:257
+# 28141d29c168460d99128a5c434b5fde
+msgid "Si un paramètre requis est manquant, le chemin ne pourra être généré et une erreur se produira."
+msgstr ""
+
+#: ../development/plugins.rst:262
+# 0dc7b98f4bb441c684c6cd68e3b7dcb3
+msgid "Ressources web"
+msgstr ""
+
+#: ../development/plugins.rst:264
+# ec2b456d99cc4383a9eb2307a94f7f99
+msgid "Les différentes ressources qui doivent être disponibles depuis le navigateur (images, fichiers CSS, ficiers javascript, ...) doivent être pacées dans le dossier ``webroot``."
+msgstr ""
+
+#: ../development/plugins.rst:266
+# 60861a3811894b4a967b3319ac3a1ec3
+msgid "En effet, les plugins n'étant plus directement disponibles dans l'arborescence du serveur web, Galette fournit un mécanisme qui les servira à partir de ce dossier. Tous les autres dossiers ne seront pas rendus accessibles depuis le serveur web."
+msgstr ""
+
+#: ../development/plugins.rst:269
+# 0c259ccf98a74c11aceaf6ef9f7105fa
+msgid "Smarty"
+msgstr ""
+
+#: ../development/plugins.rst:274
+# 854b6ecd829249a7b4b7c99b9c42b757
+msgid "Héritage"
+msgstr ""
+
+#: ../development/plugins.rst:276
+# 3980dc5ce6764d1aaeef3b51dfaa4f31
+msgid "Avant Galette 0.9, les templates ne fournissaient qu'une partie de la page à afficher, et le code PHP se chargeait de l'inclure au sein de la page. Désormais, les `fichiers de templates doivent déclarer leur héritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_."
+msgstr ""
+
+#: ../development/plugins.rst:278
+# 14f8fc8017eb4de6bf86015aa958155b
+msgid "Trois possibilités de template parent sont disponibles :"
+msgstr ""
+
+#: ../development/plugins.rst:280
+# 6b896840902f4937b019f70d594e6eb1
+msgid "``page.tpl`` pour la grande majorité des pages,"
+msgstr ""
+
+#: ../development/plugins.rst:281
+# 8f15ca4759fa4961b7dc7598e9f92b92
+msgid "``public_page.tpl`` pour les pages publiques,"
+msgstr ""
+
+#: ../development/plugins.rst:282
+# de33749299034728a487eecf5b5fe3f2
+msgid "``ajax.tpl`` pour les pages chargées en ajax."
+msgstr ""
+
+#: ../development/plugins.rst:284
+# dc2bdd9f06fb4e91ba83c264b12e7b37
+msgid "Chacun de ces templates fournit un bloc ``content`` pour afficher le contenu de la page. Les template ``page.tpl`` et ``public_page.tpl`` fournissent également un bloc ``javascript`` pour inclure les balises ``<script>``. Aucun des blocs n'est obligatoire ; mais une page sans contenu aurait relativement peu d'intérêt :)"
+msgstr ""
+
+#: ../development/plugins.rst:296
+# 3444327672a14aa8a2ff98c9bdae7eab
+msgid "L'héritage d'un fichier template peut être adapté dynamiquement en fonction de certaines variables :"
+msgstr ""
+
+#: ../development/plugins.rst:309
+# dd7429f385aa44cf93b46ee4cf4b6760
+msgid "Assignation de variables"
+msgstr ""
+
+#: ../development/plugins.rst:311
+# d6e5a5a2d5584c31a0f3c8f9f19fb8b8
+msgid "Il est possible d'assigner à Smarty des variables globales supplémentaires (via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` :"
+msgstr ""
+
+#: ../development/plugins.rst:324
+# ab38566486e74f86bc4804a01fc21562
+msgid "Les variables déclarées comme ceci seront alors accessibles depuis les templates Smarty de la manière habituelle : ``{$ma_var}``."
+msgstr ""
+
+#: ../development/plugins.rst:326
+# cd00a291023946ed9f501abfd5e8f8d7
+msgid "Des remplacements automatiques peuvent être appliqués au sein des variables déclarées, en utilisant des chaînes spécifiques :"
+msgstr ""
+
+#: ../development/plugins.rst:328
+# 0a215b19363048c6b68e6aabf1bf20d8
+msgid "``__plugin_include_dir__`` ira chercher le dossier ``includes`` dans l'arborescence de votre plugin (ça donnera ``./plugins/nom_dossier/includes/dossier`` pour notre exemple)"
+msgstr ""
+
+#: ../development/plugins.rst:329
+# b1f5b8a6fc0140ebb5866ec65125a1d0
+msgid "``__plugin_templates_dir__`` sera remplacé par le chemin vers le dossier ``templates`` de vote plugin (ça donnera ``./plugins/nom_dossier/templates/`` pour notre exemple)"
+msgstr ""
+
+#: ../development/plugins.rst:330
+# 1b5bf6e2b4024e82b56dc3693ad6ad30
+msgid "``__plugin_dir__`` sera remplacé par le chemin vers le dossier de vote plugin (ça donnera ``./plugins/nom_dossier/`` pour notre exemple)"
+msgstr ""
+
+#: ../development/plugins.rst:332
+# f8bf3e8d9e154c2dadeef2ef702aaae7
+msgid "De cette façon, quelque soit le nom du dossier de votre plugin, les chemins seront les bons :-)"
+msgstr ""
+
+#: ../development/plugins.rst:335
+# 09b1b82c8faf46599f41e735d52ab09d
+msgid "Entrées de menu"
+msgstr ""
+
+#: ../development/plugins.rst:337
+# 6adc8c82794f4f0c9be0044b09e18681
+msgid "Les liens du menu (et les liens dans les templates d'une manière générale) pointeront sur une route, en utilisant son nom. Utilisez la fonction ``path_for``."
+msgstr ""
+
+#: ../development/plugins.rst:339
+# 7d65169696fe4eb5a8988d23693c4671
+msgid "Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il sera affiché en dessous des autres entrées de menu de Galette. Il doit avoir un aspect similaire aux menus de Galette, à savoir :"
+msgstr ""
+
+#: ../development/plugins.rst:362
+# 9f09e8bea1e840079052dc70c2cce306
+msgid "Il est également possible d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :"
+msgstr ""
+
+#: ../development/plugins.rst:372
+# d86af7ca7a364b44bbddeb29a674161f
+msgid "Cette entrée de menu sert à afficher le lien vers la partie publique du menu pour les utilisateurs connectés (première partie), qui sera ajoutée à l'entrée « Pages publiques » de Galette. La seconde partie sert à afficher le bouton en haut de page depuis les pages publiques elles-mêmes."
+msgstr ""
+
+#: ../development/plugins.rst:375
+# e42e575819044edb9fe323040452385f
+msgid "Ajout de headers HTML"
+msgstr ""
+
+#: ../development/plugins.rst:377
+# 398dbad09f4644bda4dfdefff2e7bb3b
+msgid "La présence d'un fichier nommé ``headers.tpl`` dans les templates de votre plugin ajoutera automatiquement sont contenu dans l'en-tête de la page (dans la balise ``<head>`` donc) ; après le chargement de l'en-tête standard de Galette."
+msgstr ""
+
+#: ../development/plugins.rst:386
+# b04b9ad4f9e3473fad7980cde7aff88c
+msgid "Notez que les en-têtes ajoutés par ce biais seront disponibles dans l'ensemble de l'application. Pour le cas des feuilles CSS, prenez garde à ne pas modifier des règles CSS existantes dans Galette ; cela pourrait causer des bogues d'affichage."
+msgstr ""
+
+#: ../development/plugins.rst:388
+# 9f5a0bf543f146bc804d8d4b368b555c
+msgid "Notez également que le :ref:`chemin vers le fichier CSS est obtenu en utilisant une route <plugins_web_resource>`, et non pas un chemin sur le système de fichiers."
+msgstr ""
+
+#: ../development/plugins.rst:391
+# 55539282d9e5436789dda373a022a8f8
+msgid "Ajout d'actions sur les membres"
+msgstr ""
+
+#: ../development/plugins.rst:393
+# 7880e188586b4361bb94d88e14daf64f
+msgid "Il est possible pour un plugin d'ajouter des actions sur les membres. En plus d'une entrée dans le menu pour les fonctionnalités du Plugin, il est possible d'ajouter une ou plusieurs entrées dans la gestion des adhérents ou lors de la consultation d'une fiche."
+msgstr ""
+
+#: ../development/plugins.rst:395
+# e9f63dea12b1414a8e21d1bef5dd8320
+msgid "Un fichier nommé ``adh_actions.tpl`` dans les templates du plugin permettra l'ajout des actions dans la liste des adhérent (les actions par défaut étant « Modifier » ou « Supprimer »). Il s'agit d'une simple liste de liens :"
+msgstr ""
+
+#: ../development/plugins.rst:406
+# 16946e34f3e940228ea74836cf15bf47
+msgid "Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin permettra quant à lui l'ajout d'actions lors de la consultation d'une fiche. Il s'agit d'une suite d'éléments de liste HTML (``<li></li>``) :"
+msgstr ""
+
+#: ../development/plugins.rst:418
+# 9f18fae5669840cb9079d792480ff450
+msgid "Toute action sur les membres requiert évidemment un code qui va traiter les données envoyées au sein même du plugin."
+msgstr ""
+
+#: ../development/plugins.rst:421
+# 0d0f42e9dc0248a3b68f39f7cffb0e58
+msgid "Ajout d'actions combinées sur les membres"
+msgstr ""
+
+#: ../development/plugins.rst:425
+# c4de098c26824bb2be2b62ccb938296b
+msgid "Un certain nombre d'actions combinées sont disponibles par défaut via la liste des membres, comme l'envoi de mailings, l'export CSV, la génération des étiquettes, ... Il est possible d'ajouter une nouvelle action pour un plugin. Un fichier nommé ``adh_batch_action.tpl`` et placé dans les templates du plugin, il contiendra une suite d'éléments de liste HTML (``<li></li>``) comprenant un bouton d'envoi (``<input type=\"submit\"/>``) :"
+msgstr ""
+
+#: ../development/plugins.rst:437
+# 57f92ec6fad842e9aefce9ae8b8e9430
+msgid "Déclaration de constantes"
+msgstr ""
+
+#: ../development/plugins.rst:439
+# be107744d19b4412b9d37d2f5d332faf
+msgid "Si le plugin doit avoir ses propres tables dans la base de données, il est conseillé de lui adjoindre un préfixe supplémentaire afin que chaque table soit facilement identifiable dans la base."
+msgstr ""
+
+#: ../development/plugins.rst:441
+# fb5df3b181504897a710af87251ff248
+msgid "Il est conseillé de placer les déclarations de constantes dans un fichier ``_config.inc.php`` :"
+msgstr ""
+
+#: ../development/plugins.rst:449
+# 2c5808a7bb1f46ee94a1e156ec69d8d5
+msgid "L'appel à une table dans le code se ferait donc de la façon suivante :"
+msgstr ""
+
+#: ../development/plugins.rst:463
+# 48adac794cb14e73b69ff792de9b473d
+msgid "Internationalisation"
+msgstr ""
+
+#: ../development/plugins.rst:465
+# cde771d44c714d77bb266a8a7984e430
+msgid "Chaque plugin doit fournir les traductions des nouvelles chaînes qu'il propose. C'est le :doc:`système global d'internationalisation de Galette <i18n>` qui s'applique ici ; la principale tâche (hormis la mise à jour des fichiers au cours de la vie du plugin, bien entendu) consiste à mettre en place les fichiers de traduction pour la première fois."
+msgstr ""
+
+#: ../development/plugins.rst:467
+# b8947b4d352d4babae218fcc287afefa
+msgid "Pour ce faire, copiez dans le dossier ``lang`` du plugin depuis le dossier ``lang`` d'un autre plugin les fichiers ``Makefile`` et ``xgettext.py`` :"
+msgstr ""
+
+#: ../development/plugins.rst:474
+# bd5963af8cf44fd581fd4288c3e26e14
+msgid "Quelques adaptations sont à apporter au fichier ``Makefile`` pour qu'il soit fonctionnel et adapté au plugin :"
+msgstr ""
+
+#: ../development/plugins.rst:476
+# e2cf68074d8749d985115fc4e21497f3
+msgid "modifier la valeur de ``DOMAINS`` pour réfléter les domaines de votre plugin ;"
+msgstr ""
+
+#: ../development/plugins.rst:477
+# 57b39cfd2d4146d4a65b8952e8b12c32
+msgid "modifier la valeur de ``LANGUAGES`` pour réfléter les langues de votre pugin ;"
+msgstr ""
+
+#: ../development/plugins.rst:478
+# dddde6f037d4481893b7f30398a41028
+msgid "adapter la valeur de ``PHP_SOURCES``."
+msgstr ""
+
+#: ../development/plugins.rst:480
+# db0fb40fbf6f4502b9dfd250ee440f24
+msgid "La variable ``PHP_SOURCES`` va chercher et lister les fichiers susceptibles de contenir des chaînes à traduire. En fonction de la hiérarchie des dossiers (et des besoins de votre plugin, bien entendu), ces chemins peuvent varier. Par exemple, pour un plugin relativement simple qui apporterait juste des classes PHP et un ou plusieurs templates Smarty ; il faudra utiliser :"
+msgstr ""
+
+#: ../development/plugins.rst:488
+# 52b5aae4ed734387a667c6c4544ffb43
+msgid "Si vous suivez les règles de développement de Galette et de ses plugins, il est fort peu probable que vous ayez des ajouts à faire aux ``PHP_SOURCES``. La modification plus avancée du fichier ``Makefile`` sort du cadre de ce manuel."
+msgstr ""
+
+#: ../development/plugins.rst:490
+# 86ff330c671d48efa9885cc85546b9f2
+msgid "Le premier lancement de `make` peut vous renvoyer pas mal d'erreurs, que vous pouvez ignorer en toute quiétude ; les fichiers ``.po`` sont vides, et il n'apprécie pas :) En revanche, les dossiers et fichiers requis ont été générés et remplis, et vous pouvez maintenant utiliser votre logiciel de traduction de fichiers gettext pour renseigner leur contenu."
+msgstr ""
+
+#: ../development/plugins.rst:493
+# 468efa49d7454c468893a9de8d5538a5
+msgid "Internationalisation des routes"
+msgstr ""
+
+#: ../development/plugins.rst:495
+# 99f5ec2e24a048f7b08071aea593e753
+msgid "Les routes dans Galette sont internationnalisées ; bien que ce ne soit pas une obligation. Si vous souhaitez utliser les possibilités d'internationalisation, vous devrez utiliser la méthode ``__()`` qui se comporte exactement comme la fonction ``_T()`` mais qui n'affichera que la chaîne d'origine si la traduction est manquante."
+msgstr ""
+
+#: ../development/plugins.rst:497
+# 4e36813c895e4779afe595074927a27f
+msgid "Il convient aussi de respecter certaines règles quant aux URL : éviter les caractères spéciaux, éviter les majuscules, remplacer les espaces par des tirets simples, ... et être concis :)"
+msgstr ""
+
+#: ../development/plugins.rst:500
+# c8261ce2b2b7426e8b81a72168da4759
+msgid "Scripts de mise à jour"
+msgstr ""
+
+#: ../development/plugins.rst:502
+# 17a5c131182849b2bfc525fa1a27c597
+msgid "Certains plugins requièrent la création de nouvelles tables dans la base de données. Dans ce cas, il faudra créer un répertoire ``scripts`` dans votre plugin, et y placer les scripts adéquats. Ce dossier se veut le pendant de ``{galette}/install/scripts/``, et est donc soumis aux mêmes règles :"
+msgstr ""
+
+#: ../development/plugins.rst:504
+# f9164e7febff4554b8a8245190adf259
+msgid "les scripts d'initialisation doivent être fournis pour MySQL et pour PostgreSQL"
+msgstr ""
+
+#: ../development/plugins.rst:505
+# 3373b00878a04a31851aa226e62f9f57
+msgid "les scripts de création doivent impérativement être nommés ``mysql.sql`` et ``pgsql.sql``. L'installation de la base du plugin depuis Galette échouera si le script n'est pas nommé correctement (il ne pourra pas être trouvé),"
+msgstr ""
+
+#: ../development/plugins.rst:506
+# c039e61ac31a44e597a71f6c2e3cb69a
+msgid "les scripts de mise à jour respectent la nomenclature ``upgrade-to-{version}-{dbtype}.sql`` ou ``upgrade-to-{version}.php`` ; où `{version}` correspond à la nouvelle version du plugin, et `{dbtype}` au type de base de données (`mysql` ou `pgsql` donc)."
+msgstr ""
+
+#: ../development/plugins.rst:508
+# a09720c3d7fa4627b773bb71cf9dc03b
+msgid "Le respect de ces règles assure que le plugin sera pleinement pris en charge par l'interface de gestion des plugins de Galette, et que l'utilisateur sera en mesure de « facilement » installer ou mettre à jour la base du plugin."
+msgstr ""
+
+#: ../development/plugins.rst:511
+# 02627eab28f04e3bb547d4e8211a24ae
+msgid "Classes PHP"
+msgstr ""
+
+#: ../development/plugins.rst:513
+# 986315c4117a455a9f9ea98cc08684ad
+msgid "Certains plugins auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et `l'espace de nom <https://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) sont importants."
+msgstr ""
+
+#: ../development/plugins.rst:515
+# ad36e9d41bea4f2f880fadcaaceab1e6
+msgid "Toutes les classes doivent se trouver dans un dossier ``lib/{namespace}``. Chaque classe est un fichier php qui porte le même nom que la classe. L'espace de nom est déterminé par le nom du plugin déclaré dans le fichier ``_define.php``. Dans notre exemple, le nom du plugin étant ``Galette Mon Plugin``, l'espace de noms sera donc ``GaletteMonPlugin``."
+msgstr ""
+
+#: ../development/plugins.rst:517
+# 0f63475e6783494984f76aedb293d1e7
+msgid "Ainsi, une classe `MaClasse` se trouverait donc dans ``lib/GaletteMonPlugin/MaClasse.php`` :"
+msgstr ""
+
+#: ../development/plugins.rst:528
+# 5752cacbf87e413388d41a46a4e9fc67
+msgid "Ensuite, pour y faire référence :"
+msgstr ""
+
+#: ../development/plugins.rst:542
+# b2dfacf8b95c4e4381cc76e6e7c29d4c
+msgid "Dès que l'on utilise les espaces de noms, les appels aux objets d'autres bibliothèques ou même d'objets PHP standards y est soumis. Ainsi, dans votre classe ``MaClasse``, les noms des classes seront résolus comme suit :"
+msgstr ""
+
+#: ../development/plugins.rst:558
+# bb987d34ca44424091d5bb6b972717f5
+msgid "Bibliothèques externes"
+msgstr ""
+
+#: ../development/plugins.rst:560
+# fa30f9d25f0c403fb421686d5734af9c
+msgid "Les bibliothèques externes ne devraient pas être inclues dans les sources du plugin, uniquement dans ses releases."
+msgstr ""
+
+#: ../development/plugins.rst:562
+# 2f19e22ce29f4f6987eb17b249d84b94
+msgid "Galette utilise `composer <https://getcomposer.org>`_ pour gérer les bilibothèques externes ; les plugins peuvent en faire de même."
+msgstr ""
+
+#: ../development/plugins.rst:565
+# 0a0985de21104ef9bde5e0aa3308faad
+msgid "Hiérarchie"
+msgstr ""
+
+#: ../development/plugins.rst:567
+# 84b849682ad9457dacd9ee0027373f2f
+msgid "Au final, la hiérarchie d'un plugin devrait ressembler à ça :"
+msgstr ""
+
+#: ../development/plugins.rst:571
+# 96ddf672382a4e40a44953db0113149f
+msgid "|folder| `galette-monplugin`"
+msgstr ""
+
+#: ../development/plugins.rst:573
+# 03abd292ad6b4de29a77b22894c17a62
+msgid "|folder| `includes`"
+msgstr ""
+
+#: ../development/plugins.rst:575
+#: ../development/plugins.rst:579
+#: ../development/plugins.rst:593
+#: ../development/plugins.rst:597
+#: ../development/plugins.rst:601
+#: ../development/plugins.rst:607
+# adc03270adbd4689a5aec7763f9dd6b3
+# 6e5496be674746e6ace0064b85aa4c98
+# 234583ece338477985620120841d687b
+# 5ee114778dc9448183d15e82bb1f6590
+# af258d19b74945f08e98d16f86aa1449
+# f4df5062829542fd9b462db7eeb7ef5d
+msgid "|file| `...`"
+msgstr ""
+
+#: ../development/plugins.rst:577
+# d244cc4a9e124397a9fb80c2547e2a6c
+msgid "|folder| `lang`"
+msgstr ""
+
+#: ../development/plugins.rst:581
+# 479fade0c7c8467da1d5aa170069e326
+msgid "|folder| `lib`"
+msgstr ""
+
+#: ../development/plugins.rst:583
+# dbe772023f0b45fc8c8a324002075ed8
+msgid "|folder| `GaletteMonPlugin`"
+msgstr ""
+
+#: ../development/plugins.rst:585
+# 928e2d7ae18e42df8aace1b6fc3134d2
+msgid "|phpfile| `...`"
+msgstr ""
+
+#: ../development/plugins.rst:587
+# 19f1167ba053456583c179e435564a9e
+msgid "|folder| `templates`"
+msgstr ""
+
+#: ../development/plugins.rst:589
+# d7ca6f6ea6bd400e946e1f8870b8d6af
+msgid "|folder| `default`"
+msgstr ""
+
+#: ../development/plugins.rst:591
+# aca2a50cb5864357a305eed3440ab742
+msgid "|file| `headers.tpl`"
+msgstr ""
+
+#: ../development/plugins.rst:592
+# 889fd6a9bd6a4141948b1846c6a93dd2
+msgid "|file| `menu.tpl`"
+msgstr ""
+
+#: ../development/plugins.rst:595
+# 7e56837aef994857924dc95c525818e8
+msgid "|folder| webroot"
+msgstr ""
+
+#: ../development/plugins.rst:599
+# a471d13f58164fb9bd17a0f71738d691
+msgid "|folder| `images`"
+msgstr ""
+
+#: ../development/plugins.rst:603
+# 9148b967478b46ca8da9aa6a3eeb0c4e
+msgid "|phpfile| `_config.inc.php`"
+msgstr ""
+
+#: ../development/plugins.rst:604
+# 0899ef1e2fec492098d94678b4041c2b
+msgid "|phpfile| `_define.php`"
+msgstr ""
+
+#: ../development/plugins.rst:605
+# 7bf5b2db19234762b120fba381e3afb2
+msgid "|phpfile| `_smarties.php`"
+msgstr ""
+
+#: ../development/plugins.rst:606
+# e1f28a6a8d0a45cab8709523279611fc
+msgid "|phpfile| `_routes.php`"
+msgstr ""
+
+#: ../development/plugins.rst:609
+# 4b0469e4ff6a4b2fafa721cbbfb25b7f
+msgid "Pour le reste... Il suffit de vous armer du `manuel PHP <https://fr.php.net/manual/fr/>`_, du `manuel Smarty <https://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <https://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <https://hexchat.github.io/>`_ pour rejoindre `le canal IRC de Galette <https://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)"
+msgstr ""
+
+#: ../development/plugins.rst:611
+# c8d511a7bb4142f5bd4b49f48652c489
+msgid "Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>`) doivent respecter les :ref:`conventions de codage PSR2 <conventions>` dans leur ensemble : https://www.php-fig.org/psr/psr-2/"
+msgstr ""
+
+#: ../development/plugins.rst:613
+# 9c2d7d68ef9048b88c19525412d32a6f
+msgid "Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à une base doivent en faire de même."
+msgstr ""
+
+#: ../development/plugins.rst:616
+# 55df3f7d3f0645a8bacf24fb215f6ca6
+msgid "URL du formulaire d'adhésion"
+msgstr ""
+
+#: ../development/plugins.rst:622
+# 82495e0a766649ba94dbabd099392790
+msgid "Il est possible de reconfigurer le formulaire PDF d'adhésion. Une version basique est fournie dans Galette, qui utilise les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants."
+msgstr ""
+
+#: ../development/plugins.rst:624
+# 144d5001c2884da482d023cde6ee96a4
+msgid "Le :doc:`plugin Fullcard <../plugins/fullcard>` par exemple, s'il est installé, remplacera le formulaire par défaut par un modèle plus précis (l'URL du formulaire ne changera pas)."
+msgstr ""
+
+#: ../development/plugins.rst:626
+# 05dd2706e8ab448bb0d725eb0d6db685
+msgid "Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un code similaire à :"
+msgstr ""
+
+#: ../development/plugins.rst:636
+# 5a264d5a2a6b4f059f44025dc1318fbc
+msgid "Debug"
+msgstr ""
+
+#: ../development/plugins.rst:638
+# 5cf87d88d53243bf94cebbd151b0b138
+msgid "À l'instar de Galette elle-même, un :doc:`peu de déboguage <debug>` sera peut-être nécéssaire durant vos développements..."
+msgstr ""
+
+#: ../development/plugins.rst:640
+# 502a789a5aa84ad2af1fb5b75fb425db
+msgid "Notez qu'il vous sera possible de modifier certains :ref:`comportements de Galette (niveau de verbosité, mode de l'application, ...) <behavior>`."
+msgstr ""
+

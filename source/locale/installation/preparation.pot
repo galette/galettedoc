@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../installation/preparation.rst:7
+# d43d2fb3401d44078193e7624f6291b2
+msgid "Préparation"
+msgstr ""
+
+#: ../installation/preparation.rst:9
+# c05ecd72d1534fdb96c4789071459755
+msgid "Quelques étapes de préparation sont requises pour l'installation de Galette. La façon de faire va dépendre de ce que vous souhaitez faire."
+msgstr ""
+
+#: ../installation/preparation.rst:14
+# 2abd1d97792d4f4a8cae1421e49c5c5e
+msgid "Droits des fichiers"
+msgstr ""
+
+#: ../installation/preparation.rst:18
+# 962cf1b14ebc4925945a334c6949aaae
+msgid "Une astuce malheureusement communément répandue consiste à donner tous les droits à tout le monde sur le dossier (``chmod 777``). Ceci est une très très mauvaise idée en termes de sécurité, nous vous déconseillons fortement cette pratique pour l'installation de Galette, vous êtes prévenus :-D"
+msgstr ""
+
+#: ../installation/preparation.rst:20
+# c5f5ad545364473ca2f1556711a15734
+msgid "Il faut porter une attention particulière aux droits de certains dossiers de Galette. En effet, l'application aura besoin d'écrire dans certains d'entre eux, il faut nous assurer qu'elle le pourra."
+msgstr ""
+
+#: ../installation/preparation.rst:22
+# 49c92b2985fb40fc8937051d578c3512
+msgid "Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lui est pas possible d'écrire dans les dossiers adéquats :"
+msgstr ""
+
+#: ../installation/preparation.rst:24
+# a0cece137cb648cb806ed0e297c01721
+msgid "|folder| `config` [#configdirperms]_,"
+msgstr ""
+
+#: ../installation/preparation.rst:25
+# fe4419b24f694e1798bab1eaaf552452
+msgid "|folder| `data/attachments`,"
+msgstr ""
+
+#: ../installation/preparation.rst:26
+# 102b6ef8989b40c2bc5c30299393e7dc
+msgid "|folder| `data/cache`,"
+msgstr ""
+
+#: ../installation/preparation.rst:27
+# 98290dcf443444039e4f9dd1376ef9a8
+msgid "|folder| `data/exports`,"
+msgstr ""
+
+#: ../installation/preparation.rst:28
+# 71f3f3da93464009ac9fa6dfea1f25b1
+msgid "|folder| `data/files`,"
+msgstr ""
+
+#: ../installation/preparation.rst:29
+# b1be0aa043bf4963bfa02104d94f49aa
+msgid "|folder| `data/imports`,"
+msgstr ""
+
+#: ../installation/preparation.rst:30
+# 7a9a5f2d6e644d5186ce75452e77ff90
+msgid "|folder| `data/logs`,"
+msgstr ""
+
+#: ../installation/preparation.rst:31
+# 28dd0184d7234c91b961921cdff44f74
+msgid "|folder| `data/photos`,"
+msgstr ""
+
+#: ../installation/preparation.rst:32
+# bacf94f881424ba58cb5ce0335804fbe
+msgid "|folder| `data/tempimages`,"
+msgstr ""
+
+#: ../installation/preparation.rst:33
+# 84541e1551694f84b886dce961a4c441
+msgid "|folder| `data/templates_c`"
+msgstr ""
+
+#: ../installation/preparation.rst:35
+# a19ce5e271644aa78e9a533aa8185b00
+msgid "Ou pour faire ça en une ligne de commande :"
+msgstr ""
+
+#: ../installation/preparation.rst:41
+# 11c67833dd714e23b0c7cb9a41419076
+msgid "Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)"
+msgstr ""
+
+#: ../installation/preparation.rst:46
+# 53a65643eb0f415ba5093a85803b5fe1
+msgid "Exposition des dossiers par le serveur web"
+msgstr ""
+
+#: ../installation/preparation.rst:50
+# 1ec3a274d7c840b3b555afd0cbdac3b1
+msgid "L'installation par défaut de Galette (et de beaucoup d'autres applications web) se résume souvent à copier un dossier complet dans un endroit accessible par le serveur web. Cette manière de procéder fonctionne sans problèmes, mais elle expose depuis la web des fichiers qui ne devraient pas l'être (en gros, toute la mécanique interne, les fichiers de configuration, ...)."
+msgstr ""
+
+#: ../installation/preparation.rst:52
+# dc37e38b2bc9483fa5a562f161865a5b
+msgid "Il est possible avec Galette de limiter cela en n'exposant que le seul dossier ``webroot`` depuis le serveur web. Tous les autres dossiers seront davantage protégés ; il ne seront purement et simplement plus du tout accessibles depuis le serveur web lui même."
+msgstr ""
+
+#: ../installation/preparation.rst:56
+# de5dd97748ed4639bd71a85909860322
+msgid "Cette manière de faire est fortement conseillée si vous avez la possibilité de créer des hôtes virtuels sur votre hébergement."
+msgstr ""
+
+#: ../installation/preparation.rst:58
+# 37aef4575a7a4d4890ca4bf8a26d6f4f
+msgid "Ce ne sera souvent pas le cas malheureusement avec les hébergements mutualisés."
+msgstr ""
+
+#: ../installation/preparation.rst:60
+# 2b75c073cd7e4662abe846221eddd812
+msgid "Voici un exemple de configuration valable pour les serveurs Apache, incluant la \"disparition\" du `index.php` :"
+msgstr ""
+
+#: ../installation/preparation.rst:87
+# 950ddea2eb5f4abfaf681d001f98c6e9
+msgid "L'équivalent pour Nginx serait :"
+msgstr ""
+
+#: ../installation/unix.rst:4
+# 9b190b68b7994e08b4071651fd91015e
+msgid "Linux/Unix"
+msgstr ""
+
+#: ../installation/unix.rst:6
+# c3f2dded7d414581ae8356b6316a6ee3
+msgid "L'installation de Galette sous Linux pré-suppose uniquement que vous ayez l'accès à un terminal sur le serveur, et les autorisations nécessaires pour adapter les droits sur les dossiers."
+msgstr ""
+
+#: ../installation/unix.rst:8
+# f825eb0ee89e45b796c31ced622f0aa4
+msgid "Par exemple, sous `Fedora <https://fedora-fr.org>`_, vous lancerez (en root) :"
+msgstr ""
+
+#: ../installation/unix.rst:15
+# fa6f25376d61437db44069b3e43d1a9f
+msgid "Sous `Debian <https://debian.org/>`_, on remplacera ``apache:apache`` par ``www-data:www-data``."
+msgstr ""
+
+#: ../installation/unix.rst:17
+# ce6c7450105c46b78a29914e9bd0b946
+msgid "Pour les systèmes protégés par SELinux, on entrera de surcroît :"
+msgstr ""
+
+#: ../installation/unix.rst:25
+# bc1ed92c7a254cad964bdd0364084b8f
+msgid "De plus, vous devrez autoriser le serveur web à se connecter au réseau via un booléen SELinux :"
+msgstr ""
+
+#: ../installation/ftp.rst:4
+# 164d05bd80d84bbabd590a88392ecb02
+msgid "FTP"
+msgstr ""
+
+#: ../installation/ftp.rst:8
+# 3d0f189789714f439598660523c3b8bd
+msgid "Certains logiciels utilisés pour la décompression de l'archive, ou pour l'envoi des fichiers en FTP peuvent corrompre les fichiers... Il est fortement recommandé sous Windows d'avoir recours à `7zip <https://www.7-zip.fr>`_ pour la décompression et à `FileZilla <https://filezilla-project.org/>`_ pour l'envoi des fichiers."
+msgstr ""
+
+#: ../installation/ftp.rst:10
+# 95e3a14babd14e8db524c20efdf136de
+msgid "Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <https://www.7-zip.fr>`_ sous Windows."
+msgstr ""
+
+#: ../installation/ftp.rst:12
+# 026b65f0a2354a45b20fff80ccf6e2cf
+msgid "Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <https://filezilla-project.org/>`_."
+msgstr ""
+
+#: ../installation/ftp.rst:19
+# 7f89d64756a240a5b8454f028a7f850c
+msgid "Cas particuliers"
+msgstr ""
+
+#: ../installation/ftp.rst:22
+# be0623903cd14b8ca0f02b9595bf4757
+msgid "OVH"
+msgstr ""
+
+#: ../installation/ftp.rst:24
+# 8de4a950709e455fa1c9ae6d4613e2b1
+msgid "Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
+msgstr ""
+
+#: ../installation/ftp.rst:26
+# aad00390258f44e1a6dd2b960bf7e2d5
+msgid "Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
+msgstr ""
+
+#: ../installation/ftp.rst:30
+# 7771f76126ac463286256f57d9d86a43
+msgid "Beaucoup d'utilisateurs rencontrent des problèmes d'affichage des images ou d'accès à la liste d'émargement sur les hébergements OVH. La solution à ce problème passe par la configuration de votre espace. Il faut créer un fichier `.ovhconfig` à la racine du site avec le contenu suivant :"
+msgstr ""
+
+#: ../installation/ftp.rst:37
+# 4297ab4699d14a288e793398c70dec5a
+msgid "Nginx"
+msgstr ""
+
+#: ../installation/ftp.rst:39
+# cd8cfb71683a4f45a6cb65ed9a1de3cf
+msgid "Le `serveur web Nginx <https://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
+msgstr ""
+
+#: ../installation/ftp.rst:41
+# 5407508779f64027b788b8517ef4946b
+msgid "Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :"
+msgstr ""
+
+#: ../installation/windows.rst:4
+# b9a9621b57424638bf9596b5493629f7
+msgid "Windows"
+msgstr ""
+
+#: ../installation/windows.rst:6
+# 61ebebf7b3e34049b544fa763859883a
+msgid "L'installation présentée ici repose sur `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_ ; il existe d'autres méthodes d'installation qui ne seront pas décrites ici."
+msgstr ""
+
+#: ../installation/windows.rst:8
+# 4db4c9a31f274a509e72a4d027dc29eb
+msgid "Dans un premier temps, il faudra donc télécharger et installer XAMPP sur votre poste. Installons tout cela dans ``C:\\xampp``."
+msgstr ""
+
+#: ../installation/windows.rst:14
+# 8a61560cd16644f48ee578e5b83ab6b7
+msgid "Lancez ensuite le programme ``xampp-control`` (qui se trouve dans ``C:\\xampp``), afin de démarrer les services Apache et MySQL."
+msgstr ""
+
+#: ../installation/windows.rst:20
+# 553a2b154d19471b85fa4d9a1ce7f937
+msgid "Une fois ces étapes effectuées, il vous faudra récupérer Galette et la placer dans le dossier ``C:\\wampp\\htdocs\\galette``, l'application sera alors accessible à l'adresse http://127.0.0.1/galette/. Il suffit de visiter cette adresse pour que le processus d'installation se lance."
+msgstr ""
+
+#: ../installation/windows.rst:24
+# acaacc99a013455faf2483a883986eb0
+msgid "L'activation de modules PHP sous XAMPP se fait dans le fichier ``xampp/php/php.ini``. La plupart des extensions requises sont déjà présentes, mais commentées (ligne précédée d'un point-virgule) ; il suffira alors de décommenter les lignes adéquates, et de relancer XAMPP."
+msgstr ""
+
+#: ../installation/windows.rst:26
+# 61599c7740184b50a091603af773f58f
+msgid "L'extension `openssl` n'est pas présente dans le fichier, il faudra pour l'activer ajouter la ligne suivante à votre `php.ini` ``extension=php_openssl.dll``"
+msgstr ""
+

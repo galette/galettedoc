@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../installation/ftp.rst:4
+# 4ae07b0820dc4272ae81887dfd4e78a7
+msgid "FTP"
+msgstr ""
+
+#: ../installation/ftp.rst:8
+# e1177e0fc78248bf8cc9a5aa4550eaa2
+msgid "Certains logiciels utilisés pour la décompression de l'archive, ou pour l'envoi des fichiers en FTP peuvent corrompre les fichiers... Il est fortement recommandé sous Windows d'avoir recours à `7zip <https://www.7-zip.fr>`_ pour la décompression et à `FileZilla <https://filezilla-project.org/>`_ pour l'envoi des fichiers."
+msgstr ""
+
+#: ../installation/ftp.rst:10
+# 641802a5d0524b969d996d65849145ac
+msgid "Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <https://www.7-zip.fr>`_ sous Windows."
+msgstr ""
+
+#: ../installation/ftp.rst:12
+# 80f9354bddb84b5886a9b51193d00906
+msgid "Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <https://filezilla-project.org/>`_."
+msgstr ""
+
+#: ../installation/ftp.rst:19
+# c913cd00c12f4666afb4c5713edfe8c9
+msgid "Cas particuliers"
+msgstr ""
+
+#: ../installation/ftp.rst:22
+# 4e89a0ce4e3f4068abbe6e845e61f4c8
+msgid "OVH"
+msgstr ""
+
+#: ../installation/ftp.rst:24
+# c2f48fd2ca694541bfed4f437fb7b15f
+msgid "Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
+msgstr ""
+
+#: ../installation/ftp.rst:26
+# 89db6d9accf546589b65239c564e36c5
+msgid "Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
+msgstr ""
+
+#: ../installation/ftp.rst:30
+# cd8bfefd8e7747fcb55f84948a2604b5
+msgid "Beaucoup d'utilisateurs rencontrent des problèmes d'affichage des images ou d'accès à la liste d'émargement sur les hébergements OVH. La solution à ce problème passe par la configuration de votre espace. Il faut créer un fichier `.ovhconfig` à la racine du site avec le contenu suivant :"
+msgstr ""
+
+#: ../installation/ftp.rst:37
+# c10fafb9bf9b4957851f75f40fd246b8
+msgid "Nginx"
+msgstr ""
+
+#: ../installation/ftp.rst:39
+# 43563b67c0614d32b3e8210e7d02bca3
+msgid "Le `serveur web Nginx <https://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
+msgstr ""
+
+#: ../installation/ftp.rst:41
+# da241153d65747b9b1bdf27a8df68008
+msgid "Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :"
+msgstr ""
+

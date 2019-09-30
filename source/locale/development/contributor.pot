@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/contributor.rst:3
+# 5b5e33e0b62241a78525afa6bffc3ec7
+msgid "Comment contribuer ?"
+msgstr ""
+
+#: ../development/contributor.rst:5
+# b5487d2324604411a6536131415e1122
+msgid "Un dépôt Git, un workflow... Wow, mais c'est compliqué, je n'y arriverai jamais !"
+msgstr ""
+
+#: ../development/contributor.rst:7
+# 965a380d994e4ed68628b231c283f0f5
+msgid "Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que le worflow doit être suivi et respecté pour le développement de Galette. Sur votre dépôt Git local, vous faites comme vous voulez. Gardez en tête que la branche `master` représente la version stable de Galette et la branche `develop` la version de développement."
+msgstr ""
+
+#: ../development/contributor.rst:11
+# daff0dcdc1ba4b4b91f479abbf8b7040
+msgid "Bien que l'utilisation du dépôt Git simplifie les choses pour le travail collaboratif, l'utiliser n'est **en rien une obligation**."
+msgstr ""
+
+#: ../development/contributor.rst:13
+# f26b00cbfa4f43a0913f5cbc19813718
+msgid "Vous pouvez parfaitement vous baser sur la `version nightly de Galette <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_, mise à niveau depuis la branche `develop` quotidiennement."
+msgstr ""
+
+#: ../development/contributor.rst:15
+# 2f01654104534c59b3926a3a0c01ae01
+msgid "Pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez (nous y reviendrons dans le premier exemple patique) :-)"
+msgstr ""
+
+#: ../development/contributor.rst:18
+# e872be63055649b4a5c84ae099366407
+msgid "Modèle de développement"
+msgstr ""
+
+#: ../development/contributor.rst:20
+# f6da60a00f2740c69aa00e17ae9b5442
+msgid "Galette est constitué de versions stables, sur lesquelles il faut pouvoir apporter des correctifs, d'une version de développement, et de moult versions de tests pour l'intégration de nouvelles fonctionnalités qui seront (ou pas) implémentées par la suite."
+msgstr ""
+
+#: ../development/contributor.rst:22
+# 905bccece0fa492c99d89f8583dba64f
+msgid "`Vincent Driessen <https://nvie.com>`_ a publié en 2010 un `modèle de gestion des branches Git que je trouve très pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, et que j'ai décidié d'utiliser pour le développement de Galette. Couplé à l'outil git-flow du même auteur, le workflow est plus simple à suivre. Vous en doutez ? Alors, je vous laisse consulter cet `article qui vous explique pourquoi vous devriez utiliser git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_."
+msgstr ""
+
+#: ../development/contributor.rst:25
+# ebad4d9c407b44ca8925c847371db289
+msgid "Configuration de Git"
+msgstr ""
+
+#: ../development/contributor.rst:27
+# e7290996b81749f290c115d8ffd24dca
+msgid "La toute première chose à faire si vous venez d'installer Git, c'est de configurer vos nom et adresse email. Pour ce faire, entrez simplement :"
+msgstr ""
+
+#: ../development/contributor.rst:34
+# 14ac9c43cfa14b30abc19b14791f0d06
+msgid "Il s'agit là du minimum syndical de configuration Git que vous avez à faire :) Bien entendu, Git dispose de bon nombre d'options, je vous recommande la lecture du `chapitre sur la configuration de Git sur le site officiel du logiciel <https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git>`_."
+msgstr ""
+
+#: ../development/contributor.rst:37
+# bf4677b49aaa4fda8f8a31461d7425b7
+msgid "Exemples pratiques : développement"
+msgstr ""
+
+#: ../development/contributor.rst:39
+# b0c2ac33757049e796b20c6e45648cc6
+msgid "Si vous ne souhaitez pas utiliser git-flow, la procédure est simple :"
+msgstr ""
+
+#: ../development/contributor.rst:47
+# 87f2ecdb84ed4f1eb539236df2c93112
+msgid "La dernière commande vous place sur la version de développement. Utiliser une branche locale dans laquelle vous pourrez travailler en toute sérénité est une bonne pratique répandue, je vous encourage à l'utiliser. Créez une branche locale dérivée de la branche `develop` (après avoir récupéré cette dernière) :"
+msgstr ""
+
+#: ../development/contributor.rst:53
+# c6878f233a6e4d938e37096bf4387cae
+msgid "Vous pouvez travailler tout votre soûl dans cette branche. Les opérations de merge de branches automatisées par git-flow doivent ici être effectuées \"à la main\", et ne seront pas traitées ici. Une fois le développement terminé, vous pouvez :ref:`nous soumettre votre nouvelle fonctionnalité <sendpatch>`, en vous assurant de générer le patch depuis la branche adéquate (`ma_fonctionnalite` dans notre exemple)."
+msgstr ""
+
+#: ../development/contributor.rst:57
+# 0223288582ce4d1b8e59d5002fe48de2
+msgid "Si vous souhaitez utiliser les bons et loyaux services de git-flow ; assurez-vous dans un premier temps qu'il est bien installé"
+msgstr ""
+
+#: ../development/contributor.rst:80
+# 3207665be30e4493864b1db9163ad2cd
+msgid "La commande `git-flow init` initialise le workflow en fonction des paramètres que vous avez entrés. Le système se charge automatiquement de créer la branche locale `develop`, basée sur la branche `develop` distante."
+msgstr ""
+
+#: ../development/contributor.rst:82
+# 838dd653e2924ff1849717fdcd5cc5b9
+msgid "Dès lors, vous pouvez travailler :)"
+msgstr ""
+
+#: ../development/contributor.rst:85
+# a39afb3917254c36afc1b0c639c3993b
+msgid "Implémenter une fonctionnalité"
+msgstr ""
+
+#: ../development/contributor.rst:87
+# bda9e1f3735848cdb347baa5493afc05
+msgid "Pour travailler sur l'implémentation de la fonctionnalité `n'importe quoi` (code secret `nimp`) par exemple, on fera :"
+msgstr ""
+
+#: ../development/contributor.rst:102
+# 3542726efafd46639df59dbcc9286e45
+msgid "Et voilà ! Vous êtes maintenant paré à developper la fonctionnalité `n'importe quoi` ! Toutes mes félicitations :p"
+msgstr ""
+
+#: ../development/contributor.rst:104
+# fe9f0891e2c64f749da84486aa4c25d4
+msgid "Dans le courant de votre développement, si la branche de développement évolue, il est recommandé de synchroniser votre branche `nimp` avec les modifications apportées. Une fois encore, git-flow va venir à votre secours :"
+msgstr ""
+
+#: ../development/contributor.rst:110
+# ae5aa19eef684f2abf68c07c43a7213c
+msgid "Une fois le développement terminé, il suffit de suivre le conseil donné par git-flow lui même lors de la création :"
+msgstr ""
+
+#: ../development/contributor.rst:130
+# 46e6166f5b21409e8d5ff0e1ee5aaab9
+msgid "Et hop. Vos modifications ont été répercutées dans la branche `develop`, la fonctionnalité `nimp` est disponible aux tests :-) Bon, pas tout à fait dans la pratique, voyez :ref:`comment soumettre un patch <sendpatch>` pour la suite."
+msgstr ""
+
+#: ../development/contributor.rst:133
+# ee6076f2b29f48b5b63b952a3b5756c3
+msgid "Correction d'un bogue"
+msgstr ""
+
+#: ../development/contributor.rst:135
+# c2cc1eb9f1e642de9942a8a96f017980
+msgid "Pour un correctif de bogue, on utilisera git-flow avec le mot clé `hotfix` au lieu de `feature`. La grosse différence est que le `hotfix` sera basé sur la branche stable, alors que la `feature` sera elle basée sur la branche de développement. git-flow vous permet de vous abstraire entièrement cet apsect des choses."
+msgstr ""
+
+#: ../development/contributor.rst:140
+# be40a4cb56ad4a3d9168b122f6fd00c4
+msgid "Exemples pratiques : soumission de correctifs et fonctionnalités"
+msgstr ""
+
+#: ../development/contributor.rst:142
+# d387322c875243e79ab2c15ab8430cc5
+msgid "Après avoir effectué vos modifications dans le code source, l'étape suivante est généralement d'envoyer un patch au projet, pour que vos modifications soient appliquées. L'utilisation de Git simplifie ce processus. Vos modifications ont été apportées à une branche (disons `develop` pour l'exemple), qui dérive d'une autre branche (`origin/develop` pour notre exemple). Sachant cela, demandons juste à Git de nous fournir la liste des modifications apportées, sous forme de patchs :"
+msgstr ""
+
+#: ../development/contributor.rst:153
+# d614283759f54338ba098ab31e084f7f
+msgid "Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <https://bugs.galette.eu/projects/galette/>`_ adéquat :)"
+msgstr ""
+
+#: ../development/contributor.rst:155
+# 234f994bbdec42bab124e9fada81ba90
+msgid "Quelques petits points de contrôle :"
+msgstr ""
+
+#: ../development/contributor.rst:157
+# 5ec7b3eae997497ca19a36d13a4d6f4e
+msgid "précisez sur quelle branche votre travail est basé,"
+msgstr ""
+
+#: ../development/contributor.rst:158
+# 82f60cb60f784b6f9b0c3f2adc40d40b
+msgid "respectez tant que faire se peut les conventions de codage,"
+msgstr ""
+
+#: ../development/contributor.rst:159
+# 1254821db22e4fe7acaa23e64e64a95c
+msgid "testez le patch,"
+msgstr ""
+
+#: ../development/contributor.rst:160
+# 54f1aa4975c547d6bfc0f861c694bdaf
+msgid "précisez brièvement ce que fait le patch."
+msgstr ""
+
+#: ../development/contributor.rst:162
+# 094964379c3648b499987f558ce82823
+msgid "L'envoi de patchs par email est envisageable si leur taille cumulée reste raisonnable ; mais il est plus simple pour l'équipe de développement de se référer aux tickets."
+msgstr ""
+
+#: ../development/contributor.rst:164
+# bc605c74f2db475e98a0d6626c2b669e
+msgid "Pensez, lors de la soumission de votre patch, à préciser sur quelle branche vous avez travaillé à l'origine."
+msgstr ""
+

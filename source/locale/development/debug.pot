@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/debug.rst:7
+# bcfd6fdb80c145a2a1d7319d88c28dfb
+msgid "Déboguage"
+msgstr ""
+
+#: ../development/debug.rst:10
+# 393bb17bb2c04c1895ea4106a07b3462
+msgid "Logs"
+msgstr ""
+
+#: ../development/debug.rst:12
+# 99146b0e28254ad299d066d300a3d390
+msgid "Galette écrit certaines choses dans des fichiers de log (un par jour) stockés dans le dossier ``galette/logs``. Toutefois, il est important de noter que certaines erreurs ne peuvent absolument pas passer dans ce log, et qu'elles ne se retrouveront que dans les logs PHP du système. Il est aussi possible que certains cas qui pourraient être gérés aient été « oubliés » :)"
+msgstr ""
+
+#: ../development/debug.rst:14
+# 1e6535a33c9446689d1b584495150332
+msgid "Le niveau de verbosité de ces fichiers de log est fixé par défaut à ``INFO`` ; il est cependant possible :ref:`modifier le niveau de log par défaut <behavior>`."
+msgstr ""
+
+#: ../development/debug.rst:18
+# 69d39140b3844179bdbbc15b02eb5c93
+msgid "Notez que l'écriture dans les fichiers de logs demande des ressources, plus les logs sont verbeux, plus l'application sera « lente »."
+msgstr ""
+
+#: ../development/debug.rst:20
+# c5d2c387ae29489da93a87a2632db3db
+msgid "Notez également qu'il est possible que des données « sensibles » soient enregistrées dans le logs ; le mode ``DEBUG`` enregistre par exemple toute sles requêtes effectuées dans votre base !"
+msgstr ""
+
+#: ../development/debug.rst:22
+# 0083fa532536455fa833a1a5d2672dd0
+msgid "Différents niveaux de log sont possibles ; de nombreux exemples d'utilisation sont visibles dans le code source. Il sont définis par `la biliothèque utilisée (Analog) <https://github.com/jbroadway/analog>`_, du plus critique au moins critique :"
+msgstr ""
+
+#: ../development/debug.rst:24
+# 74df2652ad474355aa27adbaefd55bb4
+msgid "``URGENT``"
+msgstr ""
+
+#: ../development/debug.rst:25
+# 1f02eb422033429f8b6cb135d5b78953
+msgid "``ALERT``"
+msgstr ""
+
+#: ../development/debug.rst:26
+# 39835dd801ba4b2a843b06043dcc00d3
+msgid "``CRITICAL``"
+msgstr ""
+
+#: ../development/debug.rst:27
+# 30edb8d0a69744be8c0fed6770b40dfb
+msgid "``ERROR``"
+msgstr ""
+
+#: ../development/debug.rst:28
+# 5ecdd0faf68f4cc79ca5e9f9a4292d41
+msgid "``WARNING``"
+msgstr ""
+
+#: ../development/debug.rst:29
+# a2aa302ebba649c3b04f9a8bedb1d65f
+msgid "``NOTICE``"
+msgstr ""
+
+#: ../development/debug.rst:30
+# 07fe1db6d84e493291a86e8e89ee26f3
+msgid "``INFO``"
+msgstr ""
+
+#: ../development/debug.rst:31
+# d5554fe3bda243ce9592e95151680f84
+msgid "``DEBUG``"
+msgstr ""
+
+#: ../development/debug.rst:36
+# 1d98138515aa41fab3bb08a3d81c1dc8
+msgid "Les modes"
+msgstr ""
+
+#: ../development/debug.rst:38
+# 063cfbc8a23c494d83054d9f19273768
+msgid "Certains modes sont prédéfinis dans Galette, et sont réglables via la constante ``GALETTE_MODE`` (voyez la :ref:`configuration du comportement de galette <behavior>`). Cette directive peut prendre les valeurs suivantes :"
+msgstr ""
+
+#: ../development/debug.rst:40
+# 0f7341aa193e43ee875d2b8318081e03
+msgid "``PROD`` : le mode fortement conseillé pour la production, les parties éventuellement instables du code, ou les fonctionnalités qui ne sont pas terminées ou qui ne fonctionnent pas ne sont pas accessibles. C'est le mode par défaut lors des releases, mais ça peut éventuellement changer dans le dépôt,"
+msgstr ""
+
+#: ../development/debug.rst:41
+# 3f586a71f370431fb997556e1912209f
+msgid "``DEV`` : mode développement :"
+msgstr ""
+
+#: ../development/debug.rst:43
+# a428edd574594558b345ccc4e8fb24ea
+msgid "les éventuelles parties instables/pas finies seront affichées,"
+msgstr ""
+
+#: ../development/debug.rst:44
+# 6fe23c9c056c4ac38ed1e2f0f608b53c
+msgid "certains objets ne seront pas stockés en session,"
+msgstr ""
+
+#: ../development/debug.rst:45
+# e80aac396c914018bb59be69d4974d15
+msgid "le niveau de log par défaut sera défini à ``DEBUG``,"
+msgstr ""
+
+#: ../development/debug.rst:46
+# 52abda3919384df68ec99d0e222288a1
+msgid "les news ne seront pas mises en cache,"
+msgstr ""
+
+#: ../development/debug.rst:47
+# cdb036c84d7446c68544e179e71fe8ab
+msgid "la version de la base de données ne sera pas vérifiée."
+msgstr ""
+
+#: ../development/debug.rst:49
+# db313c2103554c4db8c4fcbe867d8160
+msgid "``DEMO`` : un mode démonstration qui fonctionne sur le modèle du mode ``PROD``, mais qui bride certaines fonctionnalités qui ne devraient pas être effectives dans une application de démonstration ; telles que la modification des identifiants du super admin, ou encore l'envoi de courriels,"
+msgstr ""
+
+#: ../development/debug.rst:50
+# 61709c38359943d9b1ea7c004dfbeeca
+msgid "``TEST`` : mode réservé aux test unitaires."
+msgstr ""
+
+#: ../development/debug.rst:55
+# 18dbaf53c2914be0baa37ad52bf88f50
+msgid "Configuration du comportement"
+msgstr ""
+
+#: ../development/debug.rst:57
+# 10ad426968af4be3b84c35747b4e6aa9
+msgid "Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :"
+msgstr ""
+
+#: ../development/debug.rst:59
+# 248295421f604b5f888da049b964397d
+msgid "`GALETTE_MODE` : :ref:`le mode de Galette <galettemodes>` ;"
+msgstr ""
+
+#: ../development/debug.rst:60
+# c4689a95c4a741c287fb975bc64393a4
+msgid "`GALETTE_DISPLAY_ERRORS` : `true` pour afficher les détails des erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;"
+msgstr ""
+
+#: ../development/debug.rst:61
+# 6cac9c21b0ed4a4a937f8f717a96f6fc
+msgid "`GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ;"
+msgstr ""
+
+#: ../development/debug.rst:62
+# e81c49f6f7a64d1ea3e62e3aee20c557
+msgid "`GALETTE_LOG_LVL` : niveau de log ;"
+msgstr ""
+
+#: ../development/debug.rst:63
+# 60e44285843546b18f0003ea15e2921a
+msgid "`NON_UTF_DBCONNECT` : désactiver la connexion explicite en UTF-8 à la base de données (utile pour certains utilisateurs qui rencontrent des problèmes d'encodage)."
+msgstr ""
+
+#: ../development/debug.rst:67
+# 962f31ee8e304903bdffb4397254f3e6
+msgid "La directive `GALETTE_SYS_LOG` ne fonctionnera par défaut comme escompté qu'avec ``mod_php``. Si vous utilisez FPM, il vous faudra définir la variable de configuration ``catch_worker_output`` à ``yes``, dans ce cas, les logs seront enregistrés dans le fichier d'erreur de FPM et non du pool utilisé."
+msgstr ""
+
+#: ../development/debug.rst:69
+# a1849549d1184cb6bef6e9181071b47e
+msgid "Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Ce fichier est absolument optionnel ; l'application fonctionnera parfaitement sans."
+msgstr ""
+
+#: ../development/debug.rst:71
+# 0e9f53373c8c4e9bb770760067244bc0
+msgid "Par exemple :"
+msgstr ""
+

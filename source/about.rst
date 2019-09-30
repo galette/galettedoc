@@ -87,6 +87,16 @@ Puis il faut lancer la commande ``make`` suivie de la (ou les) version(s) à con
      [...]
      pdflatex finished; the PDF files are in build/latex.
 
+Traductions
+-----------
+
+In order to update translations, update POT files from sources rst files. This can be achieved running the following command:
+
+::
+
+   $ sphinx-build -b gettext source source/locale
+
+
 Comment Contribuer ?
 ====================
 

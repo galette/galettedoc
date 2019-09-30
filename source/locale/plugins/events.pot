@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/events.rst:3
+#: ../plugins/events.rst:61
+# cbafcad448814aa2b4768afe3563c96c
+# 6e8365d2689f4426871d758d5378730b
+msgid "Évènements"
+msgstr ""
+
+#: ../plugins/events.rst:5
+# cac018e3663842cda827cd265981be45
+msgid "Ce plugin vous apporte :"
+msgstr ""
+
+#: ../plugins/events.rst:7
+# 232073be7643482b974291665156d5fd
+msgid "la gestion d'évènements,"
+msgstr ""
+
+#: ../plugins/events.rst:8
+# dfd684a4ddb84001a7411997492e7242
+msgid "l'association d'activités à ces évènements,"
+msgstr ""
+
+#: ../plugins/events.rst:9
+# 1102a7e4d81c44628245649d687dfe0e
+msgid "la gestion de réservations."
+msgstr ""
+
+#: ../plugins/events.rst:12
+# 4f462660ab6241e987815af4b51bf689
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/events.rst:16
+# 423c48ce503a4bc6a09d91ba9caf9dbe
+msgid "Ce plugin nécessite Galette 0.9.1 minimum pour fonctionner !"
+msgstr ""
+
+#: ../plugins/events.rst:18
+# 0c8a3111983d42258f07945105675c01
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.1.1.tar.bz2"
+msgstr ""
+
+#: ../plugins/events.rst:21
+# bef02e69bc55492ca8c8706f3aaa74eb
+msgid "Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette."
+msgstr ""
+
+#: ../plugins/events.rst:23
+# 8f13b6b084b5460f8935ed02470d0718
+msgid "Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :"
+msgstr ""
+
+#: ../plugins/events.rst:32
+# 080ee07ee3c24b578095fabebc86a4b1
+msgid "Initialisation de la base de données"
+msgstr ""
+
+#: ../plugins/events.rst:34
+# 74deb904114b4b9f80698c635e3ae0d8
+msgid "Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin."
+msgstr ""
+
+#: ../plugins/events.rst:36
+# 01af35e8afc24e9cb2c779d6f1eb0f2e
+msgid "Et voilà ; le plugin Évènements est installé :-)"
+msgstr ""
+
+#: ../plugins/events.rst:39
+# 9869556a98314a33a2e22e81472d84b1
+msgid "Utilisation du plugin"
+msgstr ""
+
+#: ../plugins/events.rst:41
+# 40378abf2bce45c58350065a5473ef43
+msgid "Lorsque le plugin est installé, un groupe `Évènements` est ajouté au menu lorsqu'un adhérent est connecté. Les possibilités offertes varient en fonction du profil de l'utilisateur (simple adhérent, responsable de groupe, administrateur, ...)."
+msgstr ""
+
+#: ../plugins/events.rst:44
+# dd7e98d1abf340a1a9664dc15536eb51
+msgid "Activités"
+msgstr ""
+
+#: ../plugins/events.rst:46
+# e0aa72065404488a856086dc774adf47
+msgid "Vous pouvez définir autant d'activités que vous le souhaitez, et les associer ensuite à un évènement. Une activité peut être une sortie organisée, un repas, le logement, ..."
+msgstr ""
+
+#: ../plugins/events.rst:52
+# 3cedd63eef71434faf5d21624f2ff530
+msgid "Les activités sont simplement caractérisées par un nom, un statut d'activité et un éventuel commentaire purement informatif."
+msgstr ""
+
+#: ../plugins/events.rst:54
+# 40d35ea602ba4970a1f500a1c216626a
+msgid "Pour ajouter une nouvelle activité, cliquez sur le lien \"Nouvelle activité\" et renseignez les informations :"
+msgstr ""
+
+#: ../plugins/events.rst:63
+# 1e4cdb1786e64f31b63f04f7ee4bdf9c
+msgid "Les évènements sont la raison d'être du plugin. Vous pourrez définir un certain nombre d'informations relatives à l'évènement, comme son nom, les dates de début et de fin, la localisation, ..."
+msgstr ""
+
+#: ../plugins/events.rst:69
+# 82daffd322504b1fbfaf1eed2a76137b
+msgid "Les nom, date de début et ville sont obligatoires pour tout évènement, le reste des informations est totalement facultatif."
+msgstr ""
+
+#: ../plugins/events.rst:71
+# 85e8d4c8458e426cb36fa8c70585b06f
+msgid "Les évènements qui ne sont pas liés à un groupe seront accessibles à tous les adhérents. Si un groupe est spécifié, seuls les membres (ou responsables) de ce groupe y auront accès."
+msgstr ""
+
+#: ../plugins/events.rst:75
+# 3617413a497840ebbd333a0597e3fc1d
+msgid "Lorsqu'un nouvel évènement est créé par un responsable de groupe, le choix d'un des groupes qu'il gère est obligatoire !"
+msgstr ""
+
+#: ../plugins/events.rst:77
+# 9af8a27680e5417bb864ced089e236f3
+msgid "Vous pourrez associer une ou plusieurs activités à chaque évènement, et préciser pour chacune si elle est disponible, non disponible, ou encore obligatoire. Choisissez l'activité à ajouter, et cliquez sur le bouton d'ajout."
+msgstr ""
+
+#: ../plugins/events.rst:85
+# 6a6c190ddb13400ea828a1ca6266a3f7
+msgid "L'ajout ou la suppression d'une activité à un évènement rechargera la page et vous demandera de remplir les champs obligatoires. Néanmoins (et cela est précisé à chaque fois), l'évènement n'est **pas enregistré** à cette occasion."
+msgstr ""
+
+#: ../plugins/events.rst:87
+# 48ddbbdc736e4b19a5e2ae5bdccfef23
+msgid "Assurez-vous donc d'enregistrer l'évènement ensuite :)"
+msgstr ""
+
+#: ../plugins/events.rst:89
+# 5693cfe398ae414bbd1ba2362268e7f9
+msgid "La liste des évènements permet de modifier ou supprimer les différentes entrées ; vous pouvez aussi accéder à la liste des réservations ou encore exporter les réservations au format CSV."
+msgstr ""
+
+#: ../plugins/events.rst:96
+# a451b44881a94cb48699368304a69dd8
+msgid "Réservations"
+msgstr ""
+
+#: ../plugins/events.rst:98
+# 2a6b4854e5d34c3ca728a90e893c0a40
+msgid "Des réservations peuvent être enregistrées pour chaque évènement. Comme indiqué plus haut, les simples adhérents et les responsables de groupes seront limités aux évènements de leurs groupes, ou pour lesquels aucun groupe n'est défini (ouvert à tous)."
+msgstr ""
+
+#: ../plugins/events.rst:100
+# 6b152a74325a495db76f845abe90472a
+msgid "Ajouter une nouvelle réservation peut se faire en cliquant sur \"Nouvelle réservation\" dans le menu du plugin, ou encore depuis la liste des réservations d'un évènement particulier."
+msgstr ""
+
+#: ../plugins/events.rst:106
+# 5fbcbe755aa14b5ea4615fdab1240d74
+msgid "Les réservations pour les simples membres sont considérées comme fermées dès lors que l'évènement est marqué comme fermé, ou encore lorsque la date de début est dépassée. Les administrateurs et membres du bureau peuvent toujours ajouter de nouvelles réservations."
+msgstr ""
+
+#: ../plugins/events.rst:108
+# d60ee44ca5cc4d80b9858ab6cd41a573
+msgid "La liste des activités disponibles est récupérée depuis l'évènement ; les activités obligatoires devront bien entendu être cochées dans les réservations."
+msgstr ""
+
+#: ../plugins/events.rst:114
+# fb58170fcffd4305ae6cfb68cef262db
+msgid "Vous pouvez filtrer la liste des réservations par évènement, type de paiement, ou encore par statut de paiement. Il est ensuite possible d'envoyer un emailing aux membres ayant reservé, en utilisant le système d'emailing standard de Galette."
+msgstr ""
+
+#: ../plugins/events.rst:117
+# 8d1a77556e99407494fcc40b29ba3f39
+msgid "Récupération des sources"
+msgstr ""
+
+#: ../plugins/events.rst:119
+# dbd8883889dc4edaa1431874af76e298
+msgid "Le code source du plugin Évènements est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-events.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-events.git>`_, utilisez :"
+msgstr ""
+
+#: ../plugins/events.rst:125
+# f4d9e8d2ef144eea922f5a5aecdbd20b
+msgid "Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`."
+msgstr ""
+

@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/paypal.rst:3
+# 8beb3b84cd264cd7aaf4481b6c3c0383
+msgid "Paypal"
+msgstr ""
+
+#: ../plugins/paypal.rst:5
+# 4f9c54e168b44741b3a9a860ddbd1f50
+msgid "Ce plugin vous apporte :"
+msgstr ""
+
+#: ../plugins/paypal.rst:7
+# 66065a0964f94e2a8cc0f8255927d5af
+msgid "la possibilité d'associer un montant à un type de cotisation,"
+msgstr ""
+
+#: ../plugins/paypal.rst:8
+# 75d123ab2997415c8dfc457ccc47f78a
+msgid "la création d'un formulaire de paiement Paypal,"
+msgstr ""
+
+#: ../plugins/paypal.rst:9
+# 0a3434b312e1462183bdf76243aa8969
+msgid "un historique,"
+msgstr ""
+
+#: ../plugins/paypal.rst:10
+# 15f16da95bfa47fba60a9321c48ff6c8
+msgid "l'enregistrement automatique de la transaction une fois validée."
+msgstr ""
+
+#: ../plugins/paypal.rst:22
+# debc9f64de1b4ac79d562c79fd684c2a
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/paypal.rst:24
+# a4c2c9b3afe347b9aa3bdf953059f2bb
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : https://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-1.7.0.tar.bz2"
+msgstr ""
+
+#: ../plugins/paypal.rst:27
+# a9333135951f49c499260ce6a5040a4a
+msgid "Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette."
+msgstr ""
+
+#: ../plugins/paypal.rst:29
+# ccc86c4ccaa347c7b3b457e5a739932c
+msgid "Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :"
+msgstr ""
+
+#: ../plugins/paypal.rst:38
+# 3b089a1f47374fb386ce2e4d48f3ee6a
+msgid "Initialisation de la base de données"
+msgstr ""
+
+#: ../plugins/paypal.rst:40
+# 8a32772c42a94e12a4001a1e16314a28
+msgid "Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin."
+msgstr ""
+
+#: ../plugins/paypal.rst:42
+# 0a2c699f0d0f482fac9737bc776672e0
+msgid "Et voilà ; le plugin Paypal est installé :-)"
+msgstr ""
+
+#: ../plugins/paypal.rst:45
+# b24baa44179047cc9d3e1245b92dcbda
+msgid "Configuration du plugin"
+msgstr ""
+
+#: ../plugins/paypal.rst:47
+# bd93ab5a55fa4cb192c8037ee1549a1f
+msgid "Lorsque le plugin est installé, un groupe `Paypal` est ajouté au menu, comprenant deux nouvelles entrées :"
+msgstr ""
+
+#: ../plugins/paypal.rst:49
+# f5cc2525c1964f3e98f74e1f09752fc5
+msgid "`Formulaire de paiement` : le formulaire lui même, dont l'URL est publiquement accessible,"
+msgstr ""
+
+#: ../plugins/paypal.rst:50
+# 4df8771ef3344776a5820c90737368db
+msgid "`Préférences Paypal` : les préférences du plugin, réservées aux membres du bureau et aux administrateurs."
+msgstr ""
+
+#: ../plugins/paypal.rst:52
+# 9035e521e55642b1bb2dd41fdbadcd51
+msgid "Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vous pouvez soit utiliser l'adresse email associée à votre compte (qu'il faudra mettre à jour côté Galette si vous la modifiez) ou votre identifiant de compte marchand. Pour trouver ce dernier, connectez-vous à votre compte Paypal, rendez-vous dans le menu \"Préférences\" -> \"Plus d'options\" ; et cherchez la valeur \"Identifiant de compte marchand\" (mille mercis à Thomas pour cette procédure détaillée !). La modification de l'identifiant Paypal n'est autorisée que pour les administrateurs, les membres du bureau ne peuvent pas modifier cette valeur."
+msgstr ""
+
+#: ../plugins/paypal.rst:54
+# 6c8febbb77a242b29eff2a98626dad13
+msgid "L'interface des préférences vous permet aussi de gérer les montants associés aux différents types de cotisations, et vous permet également de désactiver l'affichages de certains types de contributions."
+msgstr ""
+
+#: ../plugins/paypal.rst:56
+# 202ad6c953f7411ba01db8a3db439e4e
+msgid "Après cela, votre formulaire permettra à un internaute de sélectionner le type de contribution qu'il souhaite, ajuster au besoin le montant, et de régler le tout depuis son compte Paypal."
+msgstr ""
+
+#: ../plugins/paypal.rst:59
+# d7a107654dbb4334a867c1c649f26793
+msgid "Récupération des sources"
+msgstr ""
+
+#: ../plugins/paypal.rst:61
+# 449b2421caef4151b5fa91f19103792e
+msgid "Le code source du plugin Paypal est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-paypal.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git>`_, utilisez :"
+msgstr ""
+
+#: ../plugins/paypal.rst:67
+# ac382ec59e04408ca234576fb90838fd
+msgid "Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`."
+msgstr ""
+

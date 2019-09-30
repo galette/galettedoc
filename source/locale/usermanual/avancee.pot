@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../usermanual/avancee.rst:5
+# 7a44a62467704e35bfacb7db7871d38a
+msgid "Utilisateurs avertis"
+msgstr ""
+
+#: ../usermanual/avancee.rst:9
+# 9ebd83eae3e04c08bdd50b9a5f1e755e
+msgid "**Attention...**"
+msgstr ""
+
+#: ../usermanual/avancee.rst:11
+# fe1c97094dd24dddbda4ae44ecf62e16
+msgid "N'utilisez les instructions suivantes qu'en toute connaissance de cause... « La direction décline toute responsabilité [...] » :-D"
+msgstr ""
+
+#: ../usermanual/avancee.rst:14
+# 8ba1e8ddbcab4f889e4a3dcb226fdc6e
+msgid "Adaptation à votre charte graphique"
+msgstr ""
+
+#: ../usermanual/avancee.rst:16
+# 0c86e63bb634478ca0714c453ed37024
+msgid "Il est possible, si vous le souhaitez et si vous maîtriser les feuilles de style CSS, d'adapter la charte graphique existante de Galette à vos besoins. Pour ce faire, il est fortement déconseillé de modifier directement le fichier CSS de Galette ; un mécanisme a été mis en place pour vous simplifier la tâche : créez simplement un fichier nommé ``galette_local.css`` dans le dossier ``webroot/themes/default/`` qui contiendra les surcharges CSS nécessaires, ce fichier sera inclus automatiquement :-)"
+msgstr ""
+
+#: ../usermanual/avancee.rst:18
+# 229c137688b44e53b0b68df609ce50de
+msgid "Prenez soin de ne pas vous compliquer les choses. Par exemple, si vous souhaitez modifier la couleur du nom de l'association affiché sous le titre de chaque page, vous trouverez dans Galette la règle CSS `#asso_name` qui comporte différentes informations, dont la couleur. Dans votre feuille de style  locale, vous aurez juste besoin de :"
+msgstr ""
+
+#: ../usermanual/avancee.rst:26
+# a9016358fa144a4398ef8b3937317816
+msgid "Cela suffira pour afficher correctement le nom de votre association en rouge. Notez que votre feuille CSS locale et les problèmes qu'elle pourrait engendrer ne peuvent pas être pris en compte par l'équipe de Galette ; aucun support ne pourra vous être fourni sur le sujet."
+msgstr ""
+
+#: ../usermanual/avancee.rst:28
+# 418a614d1e4a48399970958a1fc7c03c
+msgid "De la même manière, vous pouvez surcharger la feuille de style utilisée pour l'impression en créant le fichier ``galette_local_print.css``."
+msgstr ""
+
+#: ../usermanual/avancee.rst:31
+# 2cc2bf2483d348d9aa4fcc93c7905858
+msgid "Ajout et modification de chaînes"
+msgstr ""
+
+#: ../usermanual/avancee.rst:33
+# 9435d50e5c614b46acba4233a3f608a7
+msgid "Il est également possible, au besoin, de personnaliser les chaînes de traduction existantes dans Galette - tout en évitant de modifier directement les fichiers fournis par le logiciel - en passant par un fichier spécifique. Pour ce faire, il suffira de créer un fichier nommé ``galette_{ma_langue}_local_lang.php`` (où `{ma_langue}` est à remplacer par `fr_FR.utf8` ou `en_US`) dans le dossier ``lang`` auquel vous confierez les chaînes modifiées uniquement ; ce fichier sera inclus automatiquement s'il existe."
+msgstr ""
+
+#: ../usermanual/avancee.rst:35
+# d8d346098290482eb1350bc704d73838
+msgid "Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale (soit depuis l'interface en anglais, soit dans le code source directement). Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret :` » en français, on aura dans notre nouveau fichier ``galette_fr_FR.utf8_local_lang.php`` :"
+msgstr ""
+
+#: ../usermanual/avancee.rst:43
+# 4ebe478248bf4de6b926b6af9ef0c847
+msgid "La modification sera visible immédiatement dans Galette. Prenez particulièrement garde à recopier la chaîne originale telle quelle ; et à échapper les apostrophes (à l'aide d'un anti-slash). Comme dans le fichier original, on attend ici une ligne par chaîne modifiée."
+msgstr ""
+
+#: ../usermanual/avancee.rst:45
+# 2ddce0fb28d144268018304d6000759b
+msgid "Ces surcharges ne s'appliquent pas actuellement aux plugins ; ces derniers étant chargés par l'application bien plus tard :-("
+msgstr ""
+
+#: ../usermanual/avancee.rst:47
+# 5da83d6f575a4b35b6cb9d81a17c1c18
+msgid "Ce système n'est pas fonctionnel si vous utilisez les fonctionnalités Gettext par défaut de PHP, mais fonctionnera avec la configuration de base de Galette."
+msgstr ""
+
+#: ../usermanual/avancee.rst:50
+# afd94928ad6d4247bc84d5ea14ccfdfd
+msgid "Log des addresses IP avec un proxy"
+msgstr ""
+
+#: ../usermanual/avancee.rst:52
+# b16821cde0e84731858ddefa96fe01bc
+msgid "Si votre installation de Galette se trouve derrière un proxy, l'adresse IP enregistrée dans l'historique sera celle du proxy, et non celle de l'utilisateur :-("
+msgstr ""
+
+#: ../usermanual/avancee.rst:54
+# d8f83432cc4648598e0d31e8106ff95d
+msgid "Une directive à déclarer dans dans un fichier nommé ``config/behavior.inc.php`` peut vous permettre de corriger ce problème :"
+msgstr ""
+
+#: ../usermanual/avancee.rst:61
+# 89edefe5835540189628b3df51b1eb5d
+msgid "En partant du principe que chaque serveur proxy viendra ajouter sa propre adresse à la liste ; l'exemple ci-dessus fonctionne si votre instnce ne dépend que d'un seul et unique serveur proxy."
+msgstr ""
+
+#: ../usermanual/avancee.rst:65
+# 8a60b91bb5ba473cbff43abb22246ee3
+msgid "Pour des raisons de sécurité, évitez d'utilisez ce paramètre si vous n'êtes pas derrière un proxy !"
+msgstr ""
+
+#: ../usermanual/avancee.rst:68
+# 0853a465f6844ec2834ba1b19cc3d03d
+msgid "Statistiques externes"
+msgstr ""
+
+#: ../usermanual/avancee.rst:72
+# 06e0c0d4180c41708d0e5fd4da7f739a
+msgid "Un certain nombre de plateformes de génération de statistiques requiert l'ajout de code Javascript spécifiques pour fonctionner."
+msgstr ""
+
+#: ../usermanual/avancee.rst:74
+# 6a05bcc7fee14c3983e0980615d6f9ca
+msgid "Galette vous permet d'utiliser ces fonctionnalités. Il suffit pour cela de créer un fichier nommé ``tracking.js`` dans le dossier ``webroot/themes/default`` qui sera inclus et exécuté automatiquement."
+msgstr ""
+
+#: ../usermanual/avancee.rst:78
+# 1291228cb68d43e5a66334da4ca949d4
+msgid "Galette utilise du javascript pour son fonctionnement. Si le code que vous incluez dans le fichier ``tracking.js`` est incorrect, cela peut perturber le fonctionnement normal du logiciel !"
+msgstr ""
+
+#: ../usermanual/avancee.rst:81
+# 25a8b5340b124b30b59463fb067a7d75
+msgid "Taille et nombre de cartes"
+msgstr ""
+
+#: ../usermanual/avancee.rst:85
+# 549216c6871f4e3ebceb31866b7700fe
+msgid "Les préférences de Galette permettent de définir les espacements et marges horizontaux et verticaux des cartes, mais pas leur taille, ni le nombre de colonnes ou de lignes. Pour éviter la modification de code ; un certain nombre de :ref:`constantes peuvent être définies <behavior>` :"
+msgstr ""
+
+#: ../usermanual/avancee.rst:89
+# fc0896aa06aa4f0e89576e2312d9a0a1
+msgid "La modification de ces valeurs pourrait entraîner des décalages relativement importants en fonction des valeurs choisies. Modifiez-les avec parcimonie, et n'oubliez pas de tester le résultat ;)"
+msgstr ""
+
+#: ../usermanual/avancee.rst:91
+# 6d4f09c73b3c41a598ac2d45c276b413
+msgid "``GALETTE_CARD_WIDTH`` permet de définir la largeur de chaque carte,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:92
+# fc7677a0d25e4e56a17bf6b1b2a7881e
+msgid "``GALETTE_CARD_HEIGHT`` permet de définir la hauteur de chaque carte,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:93
+# dc7e746e183a464e951a88822954a339
+msgid "``GALETTE_CARD_COLS`` permet de définir le nombre de colonnes,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:94
+# 37a66524f5af40fe8cb857b84f85f6fe
+msgid "``GALETTE_CARD_ROWS`` permet de définir le nombre de lignes."
+msgstr ""
+
+#: ../usermanual/avancee.rst:97
+# 6377f8cde8f24a3b9c3b1ec38cd5b3d9
+msgid "Exports CSV"
+msgstr ""
+
+#: ../usermanual/avancee.rst:99
+# 51c711f0990641d9afe90c2919041293
+msgid "Galette propose le paramétrage d'exports CSV. Un seul export paramétré est disponible par défaut, mais vous pouvez créer les votres en les ajoutant au fichier ``config/exports.xml``. La configuration d'un export paramétré se décompose en plusieurs parties :"
+msgstr ""
+
+#: ../usermanual/avancee.rst:101
+# a042e8808b924f978dfc1ae670d16eaa
+msgid "la requête SQL à exécuter,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:102
+# dd513af7f872495997bf6d4f3836882e
+msgid "les colonnes à afficher dans le fichier CSV,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:103
+# 1c28242ed6e8474cb38cc98fb1e679cc
+msgid "le paramétrage du séparateur,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:104
+# d9646f68e20e4d5eb4c119c932915074
+msgid "le paramétrage du caractère de séparation des chaînes."
+msgstr ""
+
+#: ../usermanual/avancee.rst:108
+# 7f2c9697aea443a6a84100e96a34a318
+msgid "Le paramétrage des exports se fait dans un fichier XML. Ce dernier doit **impérativement être valide** !"
+msgstr ""
+
+#: ../usermanual/avancee.rst:110
+# 81e0e259b86b41b4b8c99716f1adb442
+msgid "Si le fichier n'était pas valide, aucun des exports ne serait présenté. Sous linux, vous pourrez utiliser un outil tel que ``xmlwf`` ou ``xmllint`` pour vous assurer de la validitié du fichier."
+msgstr ""
+
+#: ../usermanual/avancee.rst:112
+# fa2b1b52e3054364a0dff5545b7972aa
+msgid "Prenons en exemple la requête paramétrée d'export des contributions :"
+msgstr ""
+
+#: ../usermanual/avancee.rst:145
+# 38ac3e669a6c4abd9495f55ccd3f1d8d
+msgid "Chaque export paramétré est défini par une balise ``export``, qui contient un identifiant unique (``id``), une description affichée dans l'interface (``name``) et le nom du fichier de sortie (``filename``). La balise ``query`` contient la requête que vous souhaitez, il n'y a pas d'autre limitation que celle du moteur de base utilisé."
+msgstr ""
+
+#: ../usermanual/avancee.rst:147
+# 4cd400d8d51f425f884617a512d59e22
+msgid "La partie ``headers`` détermine les noms des colonnes à utiliser pour l'export. La balise ``separator`` determine le saparateur CSV, et ``quote`` le caractère de séparation des chaînes de caractères."
+msgstr ""
+

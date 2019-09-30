@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../usermanual/generalites.rst:5
+# 19a549b0313d4208962bae5e31a7fcee
+msgid "Généralités"
+msgstr ""
+
+#: ../usermanual/generalites.rst:8
+# 52f76c87879d4bba9008280bfb40f3bd
+msgid "Les droits"
+msgstr ""
+
+#: ../usermanual/generalites.rst:10
+# 3ce39dd5d04d487c876cd2e7be0b1728
+msgid "On distingue plusieurs niveaux de droits dans Galette, permettant l'accès à différentes parties et fonctionnalités de l'application. Les différents niveaux sont les suivants :"
+msgstr ""
+
+#: ../usermanual/generalites.rst:12
+# 1e7f756ef9d14035aeddbec93e41c20f
+msgid "le **super administrateur**, qui est créé à l'installation ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:13
+# da39b8f0f2df48669d4865e83065fa4b
+msgid "les **administrateurs**, qui sont des adhérents pour lesquels la case « administrateur » a été cochée ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:14
+# b0cbfe4540524f8f8a55889d1d51b95b
+msgid "les **membres du bureau**, qui possèdent un statut particulier (Président, Trésorier, Secrétaire, ...) ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:15
+# 055c536fb76c434c8b3b6c7d21e77970
+msgid "les **gestionnaires de groupes**, qui n'ont de droits que sulr les groupes qu'ils gèrent ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:16
+# 140e572210b04180b61ee0d817f09f0e
+msgid "les **adhérents à jour**, qui sont marqués comme actifs, et qui sont à jour de leurs cotisations ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:17
+# a882e4f93c15402f8fd2ec0fad0e3f18
+msgid "les **adhérents** qui sont marqués comme inactifs, ou qui ne sont pas à jour de leurs cotisations,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:18
+# ae9c40ea2176408c86d14a9a8c0423b7
+msgid "les simples **visiteurs**."
+msgstr ""
+
+#: ../usermanual/generalites.rst:20
+# fdda13e78d31429d940910304d3fbb90
+msgid "Les membres du bureau, les administrateurs et le super administrateur peuvent créer ou modifier des adhérents, des cotisations, des transactions, effectuer des E-Mailings, ..."
+msgstr ""
+
+#: ../usermanual/generalites.rst:22
+# 39eeb74b561347e28ba1dfada4399abe
+msgid "Les administrateurs ont également à la configuration de l'application, à l'exception des informations de connexion du super administrateur."
+msgstr ""
+
+#: ../usermanual/generalites.rst:24
+# 76b4581c757f4619aaf674089af26ebc
+msgid "Le super administrateur a accès à l'intégralité de l'application ; mais pas forcément à toutes les fonctionnalités. En effet, il ne s'agit pas d'un adhérent, il peut ne pas posséder certaines informations nécessaires. Il peut bien entendu modifier les informations de connexion le concernant, depuis les préférences de l'application."
+msgstr ""
+
+#: ../usermanual/generalites.rst:26
+# 6b2feec413cc4495ae5e3e5d0b5d4aae
+msgid "Les adhérents peuvent consulter et modifier leur propre fiche d'informations, et peuvent aussi consulter les contributions et transactions les concernant (sans pouvoir les modifier)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:28
+# f17f05ce464846198a77017e24fd1f0d
+msgid "Les simples visiteurs peuvent consulter le trombinoscope et la liste des adhérents (en fonction du paramétrage choisi dans les préférences du logiciel) ; mais peuvent aussi... s'inscrire :-)"
+msgstr ""
+
+#: ../usermanual/generalites.rst:30
+# 2ddb7b1e3c754be992158a4a3a218b3e
+msgid "À faire"
+msgstr ""
+
+#: ../usermanual/generalites.rst:32
+# 74f3ce31625b420cbd5c3af638f1e092
+msgid "Les droits des gestionnaires de groupes devraient être détaillés selon leurs valeurs actuelles... Il est en effet difficile de savoir qui peut faire quoi."
+msgstr ""
+
+#: ../usermanual/generalites.rst:35
+# a866090c91f045ae94ec67dbff818133
+msgid "Règles de gestion"
+msgstr ""
+
+#: ../usermanual/generalites.rst:37
+# 93d05cae5d864a3ba19a0340394a88e0
+msgid "Les échéances sont calculées au jour près. Si un adhérent cotise avant la fin de son adhésion, la durée de cette adhésion sera additionnée aux jours qu'il lui restait. Exemple :"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+#: ../usermanual/generalites.rst:0
+# 7121bc7402084880bc664774c342d4fc
+# 6a04a196d54f4f5dbad9fc33527e247f
+msgid "Roger s'est inscrit le 01/01/2004 pour un an."
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+# 3250a418c44849cfb32fe55f8d5f66ea
+msgid "S'il envoie une nouvelle cotisation pour un an le 13/12/2004,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+# 12083266714c438a93698d3747eab178
+msgid "l'échéance de son adhésion sera le 01/01/2006."
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+# 6f7dd80c1c8640ab97c4559d19296b63
+msgid "Aucun jour n'aura été oublié."
+msgstr ""
+
+#: ../usermanual/generalites.rst:44
+# 4744bc418a894e48b2e227a318522710
+msgid "A l'inverse, si un adhérent renouvelle son adhésion en retard, on ne procède à aucune réévaluation de sa durée d'adhésion :"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+# e9353874d1c642bc85b90123d20955a7
+msgid "S'il envoie une nouvelle cotisation pour un an le 13/01/2005,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+# 61f02bdeee7c4ef89b0be09ebd2220b2
+msgid "l'échéance de son adhésion sera le 13/01/2006."
+msgstr ""
+
+#: ../usermanual/generalites.rst:50
+# e7e9b9496ca747988071ce10b735624f
+msgid "On considèrera qu'il n'était plus adhérent durant la période du 01/01/2005 au 13/01/2005... Enfin, sur le papier :)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:52
+# 6c97fb3754fe4aba8f136d092738f459
+msgid "Ces règles de gestion sont cependant assouplies par le fait que l'administrateur est totalement libre de choisir la date d'une cotisation. On peut tout à fait imaginer le cas d'un association qui enregistre toutes les cotisations au premier du mois suivant (offrant ainsi un temps d'adhésion légèrement plus important)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:55
+# b1f41199de89443794dc11a0f99b22fe
+msgid "Interface"
+msgstr ""
+
+#: ../usermanual/generalites.rst:57
+# 7ce26d102dc6430f9fceb17f1f450acd
+msgid "Autant que possible, nous faisons en sorte que l'interface de Galette soit :"
+msgstr ""
+
+#: ../usermanual/generalites.rst:59
+# aba89768404a4ee8a32f7d3466b5783e
+msgid "logique ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:60
+# 1dd37d66f0bf4d6394de9fe09471dfc9
+msgid "cohérente (vous retrouverez ainsi les icônes et emplacements qui vous sont familiers) ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:61
+# ced623fc0687488bbc5608b40c01a123
+msgid "respectueuse des standards du Web (respect des normes HTML et CSS) ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:62
+# 4cca3af7a94b4a04b0885cef084d78c3
+msgid "respectueuse de la sémantique HTML ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:63
+# 779bab22d2cf4f5eb74a98308d36892f
+msgid "dépourvue de l'obligation de Javascript (certaines fenêtres ne sont pas en phase ; ou ne peuvent l'être - malheureusement) ;"
+msgstr ""
+
+#: ../usermanual/generalites.rst:64
+# ebf34dac1cb04a8784b4ce6ca2f0251a
+msgid "accessible (sans forcément que des tests WCAG ou WAI soient menés régulièrement)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:66
+# e7d3d8316c124ee98eb14beab33fc045
+msgid "Si vous constatez des manquements sur le points pré-cités ; n'hésitez pas à nous en faire part !"
+msgstr ""
+
+#: ../usermanual/generalites.rst:70
+# 3959e5c5bcae4b3cb0df230f6b66e163
+msgid "Galette propose une interface dite « mobile » ; pour laquelle l'affichage est grandement modifié pour essayer de correspondre aux appareils mobiles de plus en plus répandus. Galette n'est pas une application mobile native, et certaines pages sont relativement difficiles à afficher de manière totalement utilisable sur certains appareils.  Sur cette question, nous essayons de faire notre possible avec les moyens dont nous disposons - tous les appareils possibles ne peuvent être testés !"
+msgstr ""
+
+#: ../usermanual/generalites.rst:72
+# c9186ce96f8c4ed7900455a75c785aa3
+msgid "L'affichage mobile est actuellement traité comme un plus, et non comme l'une des bases sur lesquelles l'interface de Galette repose. Des améliorations pourront et seront apportées ; mais leur importance sera moindre dans le traitement des demandes."
+msgstr ""
+
+#: ../usermanual/generalites.rst:75
+# 1844964accaa45b987b36a017687263d
+msgid "Télémétrie"
+msgstr ""
+
+#: ../usermanual/generalites.rst:79
+# 58dbc9d06a874b42b71cb1507f842755
+msgid "Galette vous propose d'envoyer des informations de télémétrie :"
+msgstr ""
+
+#: ../usermanual/generalites.rst:81
+# 6d3fb6407d81456fb02671925e5336e1
+msgid "**totalement anonymes** : aucune information concernant votre association ou vos adhérents n'est transmise,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:82
+# 803bf676d7554a3a939e312c323856ff
+msgid "**volontairement floues** : nous récupérons une estimation du nombre d'adhérents ; jamais le nombre exact,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:83
+# 6722d78568ea46c5ba46ab1dc9b08a27
+msgid "par le biais d'un canal **sécurisé** (`HTTPS`) sur https://telemetry.galette.eu."
+msgstr ""
+
+#: ../usermanual/generalites.rst:85
+# 8cfd11ddd3b94836be47038215bd6654
+msgid "Le processus est entièrement manuel, aucune information n'est envoyée tant que vous ne le décidez pas **explicitement**. Ces informations nous permettent de mieux connaître les différentes utilisations de Galette, nous donnent une idée du nombre d'adhérents et de transactions, des plugins utilisés, ..."
+msgstr ""
+
+#: ../usermanual/generalites.rst:87
+# 0d791a03e9914ed298d5a7150797d101
+msgid "Ces informations sont très utiles pour le développement et la promotion du projet. Lorsque vous acceptez d'envoyer ces informations, vous pouvez visualiser l'ensemble des informations qui seront transmises."
+msgstr ""
+
+#: ../usermanual/generalites.rst:94
+# cc4b3a213586469980f1dfdc977aee79
+msgid "Par la suite, puisque les données envoyées peuvent avoir changé, Galette vous proposera de les envoyer de nouveau une fois par an. Vous avez également la possibilité de les envoyer depuis les préférences de Galette."
+msgstr ""
+
+#: ../usermanual/generalites.rst:100
+# 0a98b36343c2401ea74f5c95515d7fa1
+msgid "Il est aussi possible de référencer votre instance sur le site. Les données de référencement ne sont évidemment pas anonymes ; mais il est impossible de faire un lien quelconque entre télémétrie et référencement (chacun utilisant son propre identifiant aléatoire). L'ajout d'une nouvelle référence est soumis à modération."
+msgstr ""
+
+#: ../usermanual/generalites.rst:102
+# 1071715acab74b6c8da23617df3d0c5c
+msgid "Vous avez la possibilité depuis les préférences de Galette de modifier vos informations. Le formulaire sera vide (personne ne peut donc voir les informations qui ne sont pas affichés dans la liste), mais les informations de votre instance seront bel et bien modifiées (en se basant sur l'identifiant unique pour le référencement de votre instance)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:108
+# db4247dd3b0844008e78d802b497fcf3
+msgid "Un nouvel espace a été ajouté sur le tableau de bord pour envoyer les informations de télémétrie et/ou pour vous enregistrer. Une fois ces étapes effectuées, l'espace en question disparaîtra. Vous avez également la possibilité de le désactiver."
+msgstr ""
+

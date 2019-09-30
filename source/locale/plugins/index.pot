@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/index.rst:7
+# cb2c08b56ee4462f95412ad5c8c4b3fc
+msgid ":doc:`documentation des plugins <index>`"
+msgstr ""
+
+#: ../plugins/index.rst:13
+# ffba162f78b946e18b32e99801445744
+msgid "Plugins pour Galette"
+msgstr ""
+
+#: ../plugins/index.rst:15
+# 87605ca2af514bdfaba9739f5665cba5
+msgid "Le système de plugins permet d'étendre les fonctionnalités de Galette dans certains cas particuliers, tout en évitant « d'encombrer » l'application principale. Les plugins non compatibles seront automatiquement désactivés. Il faut dans ce cas envisager de passer à la version supérieure du plugin."
+msgstr ""
+
+#: ../plugins/index.rst:17
+# 6d853cc48b6b4f238a563c5ecbdbd1d1
+msgid "Chaque plugin est en fait un simple dossier qui doit être placé dans le dossier ``{galette}/plugins/``. Reportez-vous ensuite à la documentation du plugin pour l'installer."
+msgstr ""
+
+#: ../plugins/index.rst:19
+# 522a533a99184d0ab0062ab11dd75c1e
+msgid "Il est possible de désactiver un plugin en créant simplement un fichier ``_disabled`` vide dans le répertoire du plugin."
+msgstr ""
+
+#: ../plugins/index.rst:23
+# 4ae9a6c2fc11439b8f61e515f567b398
+msgid "Plugins « officiels »"
+msgstr ""
+
+#: ../plugins/index.rst:25
+# 82f7220dbbc242ffbc021e0adcfb0255
+msgid "Les plugins « officiels » sont développés et/ou maintenus par l'équipe de développement de Galette. Les plugins actuellement disponibles pour Galette sont :"
+msgstr ""
+
+#: ../plugins/index.rst:40
+# c2bbd0fb018f48068651693c5073a58d
+msgid "Plugins tiers"
+msgstr ""
+
+#: ../plugins/index.rst:42
+# 57e6cb31301f45b7891138b4c6e08946
+msgid "Les plugins tiers sont développés et/ou maintenus par des membres de la communauté. Ils peuvent ne pas être disponibles dans différentes langues, ou ne pas fonctionner avec tous les moteurs de bases de données supportés oficiellement."
+msgstr ""
+
+#: ../plugins/index.rst:44
+# 8b24913f87fe49fa923684426d5f6225
+msgid "`Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (gestion de base d'un aéroclub), développé par Mélissa,"
+msgstr ""
+
+#: ../plugins/index.rst:45
+# 3ebf7cc879b444b6b8ae44ba2e0a099d
+msgid "`QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (génération de QRCodes), développé par Frédéric,"
+msgstr ""
+
+#: ../plugins/index.rst:46
+# 040caa11ca7d491fb954395812e4abe4
+msgid "`Grades <https://galette-community.github.io/plugin-grades/>`_ (gestion d'évaluations), développé par Frédéric."
+msgstr ""
+
+#: ../plugins/index.rst:48
+# 990aa0603a40470a8856734813da9b6a
+msgid "Une `communauté Github <https://github.com/galette-community/>`_ a été créée pour :doc:`gérer les plugins tiers <plugins-tiers>`, si vous souhaitez y placer votre plugin."
+msgstr ""
+
+#: ../plugins/index.rst:59
+# e98c6eb0ac56436aa3808f87d6430357
+msgid "Interface de gestion des plugins"
+msgstr ""
+
+#: ../plugins/index.rst:61
+# 5d3ddcddfddf4686b7d0751f894eafa7
+msgid "Une interface de gestion des plugins est disponible, accessible par les administrateurs depuis le tableau de bord. Après avoir copié le(s) plugin(s) téléchargé(s) dans le dossier ``plugins`` de Galette ; une liste vous sera proposée :"
+msgstr ""
+
+#: ../plugins/index.rst:68
+# 20d0231889e0492ea3517dc86340040c
+msgid "Si le serveur web possède les droits en écriture dans les dossiers des plugins, il vous sera possible d'activer ou de désactiver un plugin simplement en cliquant sur l'icône de statut en fin de ligne."
+msgstr ""
+
+#: ../plugins/index.rst:70
+# 55429c1a2d184447b3679ef172515c40
+msgid "Si le plugin requiert une base de données pour son fonctionnement, vous pourrez jouer les scripts d'installation et de mise à jour depuis l'interface. Et puisqu''un petit schéma vaut mieux qu'un long discours, voici - en images - l'illustration de l'installation de la base de données du plugin Paypal :-)"
+msgstr ""
+
+#: ../plugins/index.rst:72
+# 00e2d09170d84224896bf285105f79c2
+msgid "Dans un premier temps, vous aurez à sélectionner le type d'installation (installation ou mise à jour - ça ne vous rapelle rien ? ;-)) :"
+msgstr ""
+
+#: ../plugins/index.rst:79
+# 12c08ae7aaa8406e822d1f5329f922ed
+msgid "Les droits sur la base de données seront ensuite vérifiés. Contrairement à l'installation du Galette ; aucune information concernant la base de données ne vous sera demandée, puisque les informations en question sont déjà disponibles (le simple fait d'accéder à l'interface des plugins confirme cela) :"
+msgstr ""
+
+#: ../plugins/index.rst:86
+# cf73ff4d8dc94c038c3db63bc2e0c06e
+msgid "Les scripts en eux-mêmes seront alors exécutés, si les droits sont corrects :"
+msgstr ""
+
+#: ../plugins/index.rst:93
+# 03e3f41b92e14fdfa016517098d9311b
+msgid "Et voilà, c'est fini !"
+msgstr ""
+

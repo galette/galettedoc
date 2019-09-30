@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/i18n.rst:5
+# 276be0a802e14b37910aac9c349ce3da
+msgid "Internationnalisation (i18n)"
+msgstr ""
+
+#: ../development/i18n.rst:7
+# 3caf80c4fd81475eb6fb1d27d8571c37
+msgid "Le code de Galette est entièrement traduit à l'aide des possibilités offertes par `GNU Gettext <https://www.gnu.org/software/gettext/>`_. L'intégralité des chaînes contenues dans le code source doivent être en anglais."
+msgstr ""
+
+#: ../development/i18n.rst:9
+# 164e8d863d6d43608825c9403020d13b
+msgid "Le répertoire ``lang`` contient un certain nombre de fichiers :"
+msgstr ""
+
+#: ../development/i18n.rst:11
+# 26535ff3f795445fbc19e3c0f225a898
+msgid "``Makefile``, ``make_lang_l12n.py``, ``xgettext.py`` : fichiers de génération divers,"
+msgstr ""
+
+#: ../development/i18n.rst:12
+# d28e0e680da54473ad150938f80c1444
+msgid "``*.pot`` : fichiers de template des traductions, un par domaine,"
+msgstr ""
+
+#: ../development/i18n.rst:13
+# f8a27251591d4cf18e020dd20976088f
+msgid "``*.po`` : fchiers de traduction, un par langue et par domaine,"
+msgstr ""
+
+#: ../development/i18n.rst:14
+# 7cbd98ab89ed42eea4aa4746f1eea833
+msgid "``*.php`` : fichier de traduction PHP (générés depuis les fichiers de langue gettext)."
+msgstr ""
+
+#: ../development/i18n.rst:16
+# 53ec2930d07f4951b71792299a3f2665
+msgid "Les `traductions de Galette <https://translate.zanata.org/project/view/galette?dswid=-2385>`_ en elles-mêmes sont effectuées via la plate forme Zanata."
+msgstr ""
+
+#: ../development/i18n.rst:21
+# cb20b4de8467401d9f534df1f73b38b2
+msgid "Syntaxe"
+msgstr ""
+
+#: ../development/i18n.rst:23
+# bc38dc26f3864db0a49a9b9d59bd55ff
+msgid "Deux types de syntaxes différentes peuvent être rencontrées :"
+msgstr ""
+
+#: ../development/i18n.rst:25
+# 7caa3d32ecb84ad7b0dfdf5841d9b3e8
+msgid "la syntaxe PHP,"
+msgstr ""
+
+#: ../development/i18n.rst:26
+# ede21af81b014d6b8a2f0c41a3cac1c7
+msgid "la syntaxe Smarty."
+msgstr ""
+
+#: ../development/i18n.rst:29
+# 6eaee3a67acd4ba997d080723c0959cd
+msgid "PHP"
+msgstr ""
+
+#: ../development/i18n.rst:31
+# 48629bde438f485bb5cbc32d5b373b09
+msgid "Pour la syntaxe PHP, on utilise la function « ``_T`` » :"
+msgstr ""
+
+#: ../development/i18n.rst:40
+# cc986e9f7d6d4144a8a328cd6d518b94
+msgid "Le second paramètre est le domaine de traduction, le domaine par défaut sera utilisé si rien n'est précisé."
+msgstr ""
+
+#: ../development/i18n.rst:42
+# ce9bf712966648b4b4689e3488eced00
+msgid "Il est souvent nécessaire d'utiliser des variables à remplacer dans les chaînes à traduire. Via PHP, on utilisera simplement une fonction du type ``str_replace`` ou ``preg_replace`` pour arriver à nos fins :"
+msgstr ""
+
+#: ../development/i18n.rst:70
+# 2352fc00d40442109ff709ae40bf8fe4
+msgid "Une fonction ``__()`` est également disponible ; la seule différence avec ``_T()``, c'est que les chaînes non traduites ne seront pas marquées comme telles (utilisé principalement pour les routes)."
+msgstr ""
+
+#: ../development/i18n.rst:74
+# 3b76f56f401c468d984254dcf6ee7989
+msgid "Bien entendu, les patterns sont laissés à votre entière discrétion ; pensez seulement que la personne qui traduira pourra mieux contextualiser la chaîne si les variables à remplacer sont un minimum identifiée (nous aurions par exemple pu choisir `%s` au lieu de `%name` ; mais ça aurait été moins explicite :-) )."
+msgstr ""
+
+#: ../development/i18n.rst:77
+# a533f925c7ff46aaa8ecd95b36362071
+msgid "Smarty"
+msgstr ""
+
+#: ../development/i18n.rst:79
+# 3fab0d7b7571486aa543482c7acba7f9
+msgid "La syntaxe smarty se base sur un plugin développé pour la cause, on l'utilisera de la façon suivante :"
+msgstr ""
+
+#: ../development/i18n.rst:86
+# bbb52fe9fbe446709273e843aee5a95c
+msgid "Smarty propose des `modifiers` pour par exemple effectuer des remplacements. Le problème ; c'est que le remplacement est effectué avant que le texte ait été récupéré, la traduction n'est donc jamais trouvée. Pour pallier à ce problème, notre plugin smarty prend en charge deux attributs supplémentaires : un pattern et une valeur de remplacement ; qui ne seront appliquées qu'une fois la chaîne traduite récupérée :"
+msgstr ""
+
+#: ../development/i18n.rst:94
+# cb332c2fa9864c2eb79488d31ad2c33d
+msgid "La note concernant le nommage des patterns du précédent paragraphe s'applique ici aussi, bien entendu ;-)"
+msgstr ""
+
+#: ../development/i18n.rst:97
+# 680992e828194977863d320c60b75a35
+msgid "Domaines de traduction"
+msgstr ""
+
+#: ../development/i18n.rst:101
+# 9fbdc1eec46f4114baf2a042d8cede1e
+msgid "Les traductions dans Galette utilisent un système de domaine pour éviter que les chaînes provenant de différentes sources n'entrent en collision. Le domaine par défaut (utilisé si rien n'est spécifié) se nomme `galette`. Un domaine `galette_routes` (spécifique aux... routes :D) est également disponible."
+msgstr ""
+
+#: ../development/i18n.rst:103
+# ccbb8c5d82c649c5b975f61d0608a948
+msgid "Chaque plugin fournira son propre domaine à minima (la plupart des plugins officiels fournissent également un domaine spécifique pour leurs routes)."
+msgstr ""
+
+#: ../development/i18n.rst:105
+# 5805d1b56dee4d46bab9ded1d6868456
+msgid "Lors de l'appel aux fonctions de traduction, il faudra donc spécifier le domaine :"
+msgstr ""
+
+#: ../development/i18n.rst:113
+# 1bc01e00ac7e4b6ab1937d84b8e01425
+msgid "Le même exemple, avec Smarty :"
+msgstr ""
+
+#: ../development/i18n.rst:121
+# 2a10ff9761e94b809c36a4c3f1fb9b04
+msgid "Génération des fichiers de langue"
+msgstr ""
+
+#: ../development/i18n.rst:123
+# 58bb8814ed4c453a99b5299cefd83c45
+msgid "La mise à jour des traductions de Galette se décompose en plusieurs étapes :"
+msgstr ""
+
+#: ../development/i18n.rst:125
+# f55ccb595c704274b3cbf6f11bf54fa0
+msgid "Extraction des chaînes du code source et mise à jour des templates de traduction,"
+msgstr ""
+
+#: ../development/i18n.rst:126
+# 54af9f95c1e544e78bbf9072b8266e13
+msgid "Envoi des ouveaux templates sur Zanata,"
+msgstr ""
+
+#: ../development/i18n.rst:127
+# 025708b33d8148edaf67af8ca1465e3b
+msgid "Récupération des traductions depuis Zanata,"
+msgstr ""
+
+#: ../development/i18n.rst:128
+# cacba4692afe4f518ae8f53747dd0892
+msgid "Génération des fichiers MO et PHP."
+msgstr ""
+
+#: ../development/i18n.rst:137
+# 4abaf70c288f44d4b669781f1bfadf21
+msgid "Il est possible de générer les fichiers PO en local avec la commande ``make po``, mais le système est prévu pour qu'ils soient générés automatiquement par Zanata lors de la récupération des données."
+msgstr ""
+
+#: ../development/i18n.rst:147
+# 70b9247f309542a9aafe8b9651451da9
+msgid "Chaque domaine de traduction est stocké dans ses propres fichiers."
+msgstr ""
+

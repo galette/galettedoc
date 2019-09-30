@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../installation/postinstall.rst:5
+# 9ac75a1dd092403a98b7921a4c654916
+msgid "Après installation"
+msgstr ""
+
+#: ../installation/postinstall.rst:8
+# 995abfe1457d409eacb5890a43a830a4
+msgid "Tâches diverses"
+msgstr ""
+
+#: ../installation/postinstall.rst:10
+# a887828011774b3bbbd7d9a077fb7a38
+msgid "Une fois votre Galette correctement installée, il reste une ou deux petites choses à faire :"
+msgstr ""
+
+#: ../installation/postinstall.rst:12
+# 02a8055756084d3aac42570654847513
+msgid "vous pouvez retirer les droits en écriture sur le dossier ``config``,"
+msgstr ""
+
+#: ../installation/postinstall.rst:13
+# a59acf88ef8144d4838457f36062ad4b
+msgid "supprimez le dossier ``install``, ou rendez-le inaccessible, par exemple avec la directive suivante dans la configuration d'un hôte virtuel (l'exemple donné ici fonctionnera pour Apache) :"
+msgstr ""
+
+#: ../installation/postinstall.rst:25
+# 774f3c37f7764c5cbcb8df424126582c
+msgid "Paramétrage des chemins"
+msgstr ""
+
+#: ../installation/postinstall.rst:27
+# ac66d649bff14eca9115d79104b3f439
+msgid "Certains chemins dans Galette sont paramétrables, comme le dossier des exports, des photos, etc."
+msgstr ""
+
+#: ../installation/postinstall.rst:29
+# e052efb60d2f489ea03c17063aa4ed08
+msgid "Par défaut, Galette est fourni avec l'ensemble de ces chemins pointant à l'intérieur du dossier d'installation. Ainsi, si l'installation se trouve dans le dossier ``/var/www/galette`` ; les exports seront effectués dans ``/var/www/galette/data/exports``, les photos seront stockées dans ``/var/www/galette/data/photos/``, et ainsi de suite. La configuration par défaut est définie dans le fichier ``config/paths.inc.php``, qui ne doit pas être modifié."
+msgstr ""
+
+#: ../installation/postinstall.rst:32
+# f888ad7b67f3436880fc70966beaad5e
+msgid "Il est possible de surcharger tout ou partie de ces chemins en créant le fichier ``local_paths.inc.php`` dans le dossier ``config``, il suffira alors d'y placer les chemins souhaités ; sous forme de déclaration de variables globales PHP. Par exemple, pour définir un emplacement particulier pour les photos ; ce fichier contiendrait :"
+msgstr ""
+
+#: ../installation/postinstall.rst:40
+# 7a69d98f3864466597be16e593580a12
+msgid "Les chemins de Galette doivent pour la plupart impérativement être accessibles en écriture par le serveur web, sous peine de mauvais fonctionnement de l'application, et d'erreurs pas toujours très faciles à comprendre ou à tracer. Les deux seules exceptions à cette règle concernent les templates (le serveur web n'a aucun besoin d'écrire là dedans !) et les plugins (les droits en écriture ne sont pas requis sur les dossiers des plugins, et ne devraient jamais l'être)."
+msgstr ""
+
+#: ../installation/postinstall.rst:42
+# 92c0df65c4ef4310b032404042254139
+msgid "`GALETTE_CONFIG_PATH` : chemin vers les fichiers de configuration de Galette,"
+msgstr ""
+
+#: ../installation/postinstall.rst:43
+# 1b4986a423b74938bbed1ec06402e3b8
+msgid "`GALETTE_DATA_PATH` : chemin vers les données de Galette (depuis la version 0.8),"
+msgstr ""
+
+#: ../installation/postinstall.rst:44
+# 2c7b6531b0d649f4b03a31130f01476c
+msgid "`GALETTE_TEMPLATES_PATH` : chemin vers les fichiers de template Smarty de Galette. Ces templates, et le code qu'ils contiennent sont très fortement liés à l'application, je vous déconseille vivement de modifier leur emplacement, de façon à ce qu'ils soient mis à jour systématiquement avec l'application,"
+msgstr ""
+
+#: ../installation/postinstall.rst:45
+# dcadac40499d499f95f21b783bb6485d
+msgid "`GALETTE_LOGS_PATH` : le chemin des logs de Galette ; vous pouvez changer ce paramètre à votre guise,"
+msgstr ""
+
+#: ../installation/postinstall.rst:46
+# 50f20e8a214d4ba0a6f1ad436d3288c7
+msgid "`GALETTE_COMPILE_DIR` : le chemin de compilation des templates Smarty, que vous pouvez également adapter sans scrupules,"
+msgstr ""
+
+#: ../installation/postinstall.rst:47
+# b4f6e0b92be14835a3257b400604db66
+msgid "`GALETTE_CACHE_DIR` : le chemin de cache, qui n'est actuellement utilisé que lors de la génération de PDF,"
+msgstr ""
+
+#: ../installation/postinstall.rst:48
+# 223f625806be41c0b0c79f7185b47499
+msgid "`GALETTE_PLUGINS_PATH` : le chemin des plugins de galette (attention, cela ne fonctionnera peut-être pas en fonction des plugins !! Cette possibilité reste en cours de développement),"
+msgstr ""
+
+#: ../installation/postinstall.rst:49
+# 70ad3f3e6e9d43b7b7b93949782dc83a
+msgid "`GALETTE_EXPORTS_PATH` : le chemin de stockage des exports CSV,"
+msgstr ""
+
+#: ../installation/postinstall.rst:50
+# 2d4cc3d2ed714548bb6246cf8f8b5db2
+msgid "`GALETTE_IMPORTS_PATH` : le chemin de stockage des fichiers CSV à importer,"
+msgstr ""
+
+#: ../installation/postinstall.rst:51
+# e578530b0fe9408ba7bce8e0af5e460d
+msgid "`GALETTE_ATTACHMENTS_PATH` : le chemin vers les fichiers attachés,"
+msgstr ""
+
+#: ../installation/postinstall.rst:52
+# 2c3f056b3c244a459b8a368e419c8a00
+msgid "`GALETTE_FILES_PATH` : chemin vers les fichiers stockés pour les adhérents (champs dynamiques),"
+msgstr ""
+
+#: ../installation/postinstall.rst:53
+# 84e5f33b5d37473dacf2c5b0fafb8b55
+msgid "`GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos,"
+msgstr ""
+
+#: ../installation/postinstall.rst:56
+# 0714cb5ceeb84ea6920807a683af8684
+msgid "Sécurité des données saisies"
+msgstr ""
+
+#: ../installation/postinstall.rst:58
+# fc193637bcb6481d8bd604218c4f04fe
+msgid "Vous-même, ainsi que l'ensemble de vos adhérents, allez probablement vous connecter à Galette, en utilisant un indentifiant et un mot de passe. Il faut savoir que les mots de passe sont dans ce cas transmis au serveur en clair ; et qu'une personne mal intentionnée pourrait récupérer vos identifiants en observant simplement le flux de données que vous transmettez."
+msgstr ""
+
+#: ../installation/postinstall.rst:60
+# ede2d7f7a0374aa28c68643998a96383
+msgid "La problématique est la même à chaque fois que vous envoyez des informations sur Internet ; c'est pourquoi lorsque l'on vous demande votre numéro de carte bancaire, il faut d'abord vous assurer que la page soit bien sécurisée - qu'elle utilise le protocole HTTPS - votre butineur vous l'indiquera clairement."
+msgstr ""
+
+#: ../installation/postinstall.rst:62
+# 91a16704b1384a3c9ed214d69246df23
+msgid "Pour Galette, la logique est la même, et vous pouvez parfaitement l'utiliser via SSL, ça ne pose aucun problème ; toutes les données que vous allez saisir via cette connexion seront alors un peu plus confidentielles et sécurisées :)"
+msgstr ""
+

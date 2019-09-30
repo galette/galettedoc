@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../faq/index.rst:5
+# f6923a3b7fd24fe580bcf03d0d6f9a48
+msgid "Questions fréquentes (FAQ)"
+msgstr ""
+
+#: ../faq/index.rst:9
+# 76d9d392e98043b1b2fe65f965f38d44
+msgid "Que faire quand Galette ne fonctionne pas ?"
+msgstr ""
+
+#: ../faq/index.rst:11
+# a57db8fc45364ef5b3d7324a48911e57
+msgid "Il arrive parfois que suite à une mise à jour - même mineure, un changement sur le serveur d'hébergement, ou encore une simple anomalie, que le comportement de Galette soit anormal."
+msgstr ""
+
+#: ../faq/index.rst:13
+# 0ab0f68b390143a1bad0b6034b0929f9
+msgid "Il peut y avoir différents symptômes :"
+msgstr ""
+
+#: ../faq/index.rst:15
+# b863ed77c25a46ec9f50097105308a51
+msgid "les modifications ne sont pas enregistrées sans autre forme de procès,"
+msgstr ""
+
+#: ../faq/index.rst:16
+# 1b993e7cca674fc6817d4a29ffc224be
+msgid "un message d'erreur sans autre explication est affiché,"
+msgstr ""
+
+#: ../faq/index.rst:17
+# 33d508a49eca4d07ab0f16f0d16929b0
+msgid "une page blanche est renvoyée,"
+msgstr ""
+
+#: ../faq/index.rst:18
+#: ../faq/index.rst:121
+# ba478b91878e4b7aa397df6a78cb7776
+# 620fe40583884a70ae26d8bef12b55d8
+msgid "..."
+msgstr ""
+
+#: ../faq/index.rst:20
+# e2882f9de7714d7a9c7a6ae2cb18885f
+msgid "Dans tous les cas de figure ; la solution est de consulter les fichiers de logs. La grande majorité des anomalies rencontrées sont enregistrées dans ces fichiers ; c'est donc un bon point de départ pour comprendre et éventuellement résoudre le problème."
+msgstr ""
+
+#: ../faq/index.rst:22
+# bdf082216a714c21a26fdcadbce9380f
+msgid "Il existe deux types de fichiers de logs : les logs de Galette, et les logs du serveur. Les logs de Galette sont stockés dans le dossier ``galette/data/logs/`` et sont accessibles aux utilisateurs. Les logs du serveur, c'est un autre problème. Avec les hébergements mutualisés, ils ne sont pas accessibles la plupart du temps :-( Sur un hébergement dédié, leur emplacement varie en fonction de la configuration du serveur ; c'est à voir avec la distribution utilisée, la configuration de PHP et/ou du serveur web."
+msgstr ""
+
+#: ../faq/index.rst:25
+# bc26457004284810bbbf742a31c8fc5c
+msgid "avec PHP en mode FPM, les logs se trouveront dans ``/var/log/php-fpm/www-error.log`` (pour les serveurs RedHat et assimilés),"
+msgstr ""
+
+#: ../faq/index.rst:26
+# 14f7b84785864055b0519b1d85aa3da4
+msgid "avec `mod_php`, vous les trouverez dans ``/var/log/httpd/error_log`` (sous d’autres distributions Linux, `httpd` peut se nommer `apache`),"
+msgstr ""
+
+#: ../faq/index.rst:27
+# bfaf121be62c4a95afec729e43f1a4f3
+msgid "sous Windows/MacOS avec des solutions de type XAMPP, il y a un dossier logs dans le répertoire d’installation,"
+msgstr ""
+
+#: ../faq/index.rst:28
+# e07e1c26afc24ed8a874382256fba381
+msgid "si vous n’avez pas accès aux logs du serveur (typique sur des hébergements mutualisés), voyez la section \"afficher les erreurs\" ci-dessous."
+msgstr ""
+
+#: ../faq/index.rst:31
+# 589bf89866954052ab315362c4d46088
+msgid "Afficher les erreurs"
+msgstr ""
+
+#: ../faq/index.rst:33
+# 88baac0583a741cb9494645229fb1a0c
+msgid "Si pour une raison ou une autre vous ne pouvez accéder aux fichiers de logs (notamment les logs serveur sur un hébergement mutualisé), il est possible d'afficher les erreurs rencontrées directement dans la page."
+msgstr ""
+
+#: ../faq/index.rst:37
+# c7e92826b1da40d3853e6742f309ca57
+msgid "Afficher les erreurs sur la page fournit parfois des informations qui ne devraient pas être rendues publiques. En mode production, il est **fortement déconseillé** de les afficher, la solution décrite ci-dessous ne doit donc être que temporaire, le temps d’obtenir des informations sur le problème rencontré."
+msgstr ""
+
+#: ../faq/index.rst:39
+# 5bfe158d8612420daade3b38246440b3
+msgid "Pour afficher (temporairement) les erreurs sur la page, créez un fichier galette/config/behavior.inc.php avec le contenu suivant :"
+msgstr ""
+
+#: ../faq/index.rst:46
+# a765cbc13eec489d93dd176630c1603e
+msgid "Il faudra ensuite reproduire le problème ; les erreurs s'afficheront sur la page."
+msgstr ""
+
+#: ../faq/index.rst:48
+# d064dfece3c44b70b88d76f84f04f0c8
+msgid "D'une manière générale, vous pourrez utiliser :ref:`la configuration du comportement de Galette <behavior>` pour vous aider à obtenir davantage d'informations."
+msgstr ""
+
+#: ../faq/index.rst:52
+# cfcbaa6af37d4b9c9c846659402234a2
+msgid "Comment rapporter un bogue ou faire une demande d'évolution ?"
+msgstr ""
+
+#: ../faq/index.rst:54
+# 6f3d30bd25ab4d968d8c7587e3466e34
+msgid "Les rapports de bogues (anomalies) ainsi que les demandes d'évolution (souhaits) se font sur le `tracker de Galette <https://bugs.galette.eu/projects/galette>`_, que ce soit pour Galette elle-même ou pour les plugins officiels."
+msgstr ""
+
+#: ../faq/index.rst:58
+# 68002ede08fa4a2fb11b5d4d08bb2369
+msgid "Sauf mention explicite contraire, veuillez ne pas attribuer le ticket à qui que ce soit, ni spécifier la version cible ; c'est le travail de la personne qui va traiter le ticket."
+msgstr ""
+
+#: ../faq/index.rst:60
+# b1bac87cb0674464804673c4f9e2986c
+msgid "Si vous avez un doute, n'hésitez pas à poser d'abord la question."
+msgstr ""
+
+#: ../faq/index.rst:63
+# 6a9195728ae445f3b3bf340f2ca749b2
+msgid "Remonter un bogue"
+msgstr ""
+
+#: ../faq/index.rst:65
+# 609bad27661047d89c7a4c45259ada43
+msgid "N'oubliez pas :"
+msgstr ""
+
+#: ../faq/index.rst:67
+# d38df15a2c9d45ae9d8c557179d18549
+msgid "de préciser la version de Galette utilisée,"
+msgstr ""
+
+#: ../faq/index.rst:68
+# 4ba44a721e7f4c98a249caf2b829b1d0
+msgid "d'être clair et concis,"
+msgstr ""
+
+#: ../faq/index.rst:69
+# c0846264ccc94e48b08d67fd79a4df7d
+msgid "de fournir les informations nécessaires pour que le problème puisse être répliqué,"
+msgstr ""
+
+#: ../faq/index.rst:70
+# d1d21cf7169141fa9f218588781f7007
+msgid "de fournir les entrées de logs nécessaire (consultez la FAQ ainsi que la documentation à ce propos !)"
+msgstr ""
+
+#: ../faq/index.rst:73
+# a192423f9af24e9aa0ae809794337582
+msgid "Demander une évolution"
+msgstr ""
+
+#: ../faq/index.rst:75
+# 8b439a4ff8a04a9ab1a9dcc13a83929e
+msgid "Pour les demandes d'évolution, soyez précis également, les développeurs ne peuvent souvent pas deviner ce que vous avez en tête, même si ça peut vous paraître évident ;-)"
+msgstr ""
+
+#: ../faq/index.rst:77
+# 2417085c2fd5437eb57fcc192a19c329
+msgid "Les évolutions demandées par les utilisateurs sont placées en \"Souhaits\", puis requalifiés au besoin par la suite par les développeurs."
+msgstr ""
+
+#: ../faq/index.rst:79
+# e59599bf588442cab97bc36dd98c8e23
+msgid "Une fois votre souhait exprimé, vous pouvez également `le soumettre au vote <https://vote.galette.eu/>`_, les demandes les plus plébiscitées pourront se voir porter une attention plus particulière."
+msgstr ""
+
+#: ../faq/index.rst:83
+# 74adf6c1aaf6447c9264e85e4fa47067
+msgid "Comment effectuer une recherche dans les archives des listes ?"
+msgstr ""
+
+#: ../faq/index.rst:85
+# 710187e79fc94b928df62507ef10e450
+msgid "Les listes de discussion restent le canal principal de communication autour du projet, depuis ses débuts."
+msgstr ""
+
+#: ../faq/index.rst:87
+# 0eb4ccbf390f419e9bc81f067b5ad276
+msgid "Pour rappel, depuis 2017, deux listes sont à votre disposition :"
+msgstr ""
+
+#: ../faq/index.rst:89
+# aca7cec4be474f6b96edafe92572c67a
+msgid "`liste de discussion utilisateurs <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : discussions générales, entraide, FAQ..."
+msgstr ""
+
+#: ../faq/index.rst:90
+# 9f23a65d2f2649ac8913ea57ee12285e
+msgid "`liste de discussion développement <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : discussions développements, bogues, tâches..."
+msgstr ""
+
+#: ../faq/index.rst:92
+# 75d95df5318542d48a1e06e54ac33e07
+msgid "Les archives des listes d'avant 2017 sont disponibles aux adresses suivantes :"
+msgstr ""
+
+#: ../faq/index.rst:94
+# 33017201fc7a48a7a9800ff13015c359
+msgid "`ancienne liste de discussion utilisateurs <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_"
+msgstr ""
+
+#: ../faq/index.rst:95
+# b74474e666ad453fab1474709c41215a
+msgid "`ancienne liste de discussion développement <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_"
+msgstr ""
+
+#: ../faq/index.rst:97
+# 912ef5ea970a446f8c30033bec8773eb
+msgid "Malheureusement, qu'il s'agisse des nouvelles, ou des anciennes listes, aucun système de recherche dans les archives n'est proposé :("
+msgstr ""
+
+#: ../faq/index.rst:99
+# f395909138774599a777ec1504d69349
+msgid "L'alternative, c'est d'utiliser le mot clé `site:` depuis votre moteur de recherche favori (la plupart des moteurs implémentent aujourd’hui cette possibilité) :"
+msgstr ""
+
+#: ../faq/index.rst:105
+# 62d6b40107414d908193e55831012ecb
+msgid "La recherche présentée ci-dessus vous donnera les résultats sur le mot clé plugin dans les archives des listes utilisateurs. Bien entendu, il faut adapter l'URL et les mots clés ;)"
+msgstr ""
+
+#: ../faq/index.rst:107
+# 5df47c7a412a45b9a53d1e7276e254c1
+msgid "Pour effectuer une recherche plus précise, consultez l'aide de votre moteur de recherche préféré."
+msgstr ""
+
+#: ../faq/index.rst:111
+# f7d05c103c1f49f8940340116982d83c
+msgid "Comment utiliser une même adresse email pour plusieurs adhérents ?"
+msgstr ""
+
+#: ../faq/index.rst:113
+# d081109acdea44568140322ebff97bb4
+msgid "Il s'agit d'un question récurrente ; beaucoup souhaiteraient pouvoir utiliser une même adresse de courriel pour plusieurs adhérents de leur base."
+msgstr ""
+
+#: ../faq/index.rst:115
+# b06e21cb806f44ab94f8cd8442f9b676
+msgid "**Ce n'est pas possible.**"
+msgstr ""
+
+#: ../faq/index.rst:117
+# 9ab1506f48d9456aa1045ee2432f6702
+msgid "En effet, les adresses de courriel doivent être uniques au sein de la base de données. Il s'agit d'une contrainte volontaire, sur laquelle plusieurs fonctionnalités de Galette reposent :"
+msgstr ""
+
+#: ../faq/index.rst:119
+# daf4be43a4104b95a337f4e6d8a28ebe
+msgid "récupération du mot de passe (depuis... toujours ou presque),"
+msgstr ""
+
+#: ../faq/index.rst:120
+# 8844e5a7c8d64bd792ac3440cca42ee8
+msgid "connexion (depuis Galette 0.9),"
+msgstr ""
+
+#: ../faq/index.rst:123
+# eb197a8e72a04d5d87af1c46271628f1
+msgid "Rendre les adresses non uniques n'est d'une part pas souhaitable, et serait d'autre part très compliqué, et puorrait mener à de nombreux bugs."
+msgstr ""
+
+#: ../faq/index.rst:125
+# f7b65eaaf3c24bfba705375f2aac408b
+msgid "En revanche, Galette propose depuis un certain temps la possibilité de :ref:`lier plusieurs fiches adhérents entre elles <linkmembers>`. De cette manière, certaines informations, telles que les adresses email et postale seront récupérées depuis la fiche « parent » si elles sont absentes d'une fiche « enfant »."
+msgstr ""
+
+#: ../faq/index.rst:127
+# fe0a2667c29c49c9a3238207edac0248
+msgid "Ce mécanisme permet donc au final d'utiliser une seule et même adresse de courriel pour plusieurs adhérents ; sans toutefois qu'elle soit dupliquée en base."
+msgstr ""
+

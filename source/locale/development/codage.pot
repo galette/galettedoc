@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/codage.rst:7
+# 5c9623d44f4b4f758e62a43e8ee2533c
+msgid "Le code source de Galette"
+msgstr ""
+
+#: ../development/codage.rst:9
+# 66836fce7a5b434b9c0d0cafa71012cf
+msgid "Galette est un logiciel libre sous licence GPL version 3, écrit en PHP. Galette n'est compatible qu'avec PHP en version 7.1 ou plus récente."
+msgstr ""
+
+#: ../development/codage.rst:12
+# 6c24c30b9e69420e8b9dc9e8eaf76906
+msgid "Nomenclature des fichiers"
+msgstr ""
+
+#: ../development/codage.rst:14
+# 2590c85d35f54768b55cdc170301839b
+msgid "Les fichiers de galette sont répartis dans différents dossiers, dont voici un bref aperçu :"
+msgstr ""
+
+#: ../development/codage.rst:16
+# 48cb7156709d4f53ad2f0b9b43e7810a
+msgid "|folder| `cache` : dossier de cache utilisé par Smarty et TCPDF"
+msgstr ""
+
+#: ../development/codage.rst:17
+# 91c8f9eb39cb4d4a9f70c0f52d4bd405
+msgid "|folder| `config` : les fichiers de configuration"
+msgstr ""
+
+#: ../development/codage.rst:18
+# 189b48f25c2d4243bffa1ebbdbaff114
+msgid "|folder| `data` : conteneur global pour les données"
+msgstr ""
+
+#: ../development/codage.rst:20
+# 52d82f4f40714fab919ef78a4dd2cc2a
+msgid "|folder| `attachments` : systfichiers attachés aux e-mailings"
+msgstr ""
+
+#: ../development/codage.rst:21
+# f0128420f18f44259ea801625757eec5
+msgid "|folder| `cache` : système de cache"
+msgstr ""
+
+#: ../development/codage.rst:22
+# 568fd5f2f16546c090e1111e9c79dd5e
+msgid "|folder| `exports` : dossier dans lequel seront stockés les exports CSV"
+msgstr ""
+
+#: ../development/codage.rst:23
+# 8bf58ad039764d3e91d2e6c0d58d3ed9
+msgid "|folder| `files` : stockage des fichiers joints via les champs dynamiques"
+msgstr ""
+
+#: ../development/codage.rst:24
+# d1c160d9b276477a81ae645dd506e830
+msgid "|folder| `imports` : dossier dans lequel seront stockés les fichiers CSV à importer"
+msgstr ""
+
+#: ../development/codage.rst:25
+# 081d60b70caf4f1fa17a2299ef4c5c9e
+msgid "|folder| `logs` : fichiers logs produits par :ref:`Analog <galettelog>`"
+msgstr ""
+
+#: ../development/codage.rst:26
+# 0e14e0b2eb804580905b83c17dd302c2
+msgid "|folder| `photos` : dossier de stockage des photos des membres"
+msgstr ""
+
+#: ../development/codage.rst:27
+# 37682fe2fb854ab6ab1fbf3b1652b2dc
+msgid "|folder| `tempimages` : dossier de stockage des imagestemporaires du captcha"
+msgstr ""
+
+#: ../development/codage.rst:28
+# ac74a3cc1de24fc4b753b9ef45ed9c88
+msgid "|folder| `templates_c` : dossier de compilation des templates Smarty"
+msgstr ""
+
+#: ../development/codage.rst:30
+# 6f069e739ee84f40a873c3fb1306131f
+msgid "|folder| `docs`"
+msgstr ""
+
+#: ../development/codage.rst:31
+# 28eea20d33e844918e4502485ce30fec
+msgid "|folder| `includes` : bibliothèques, fonctions et initialisation de Galette"
+msgstr ""
+
+#: ../development/codage.rst:33
+# 15fd7c104d794718a8f480de9f449e67
+msgid "|folder| `jquery` : :ref:`bibliothèque javascript JQuery <ui>`"
+msgstr ""
+
+#: ../development/codage.rst:34
+# 701d47da27e844eca308c26159e33ffd
+msgid "|folder| `phpMailer` : :ref:`bibliothèque d'envoi de mails phpMailer <phpmailer>`"
+msgstr ""
+
+#: ../development/codage.rst:35
+# 881f950db9c74a769c051f2575a994c4
+msgid "|folder| `Smarty` : :ref:`système de templates Smarty <smarty>`"
+msgstr ""
+
+#: ../development/codage.rst:36
+# 48f361bd5cb044e29f4576ad47087ce6
+msgid "|folder| `smarty_plugins` : plugins Smarty complémentaires"
+msgstr ""
+
+#: ../development/codage.rst:37
+# 6544074ae65240d1878c5d35cae4eea7
+msgid "|folder| `tcpdf` : :ref:`bibliothèque de création de PDF TCPDF <pdf>`"
+msgstr ""
+
+#: ../development/codage.rst:38
+# 54cf9f52971b4675a802a60884fd7d58
+msgid "|folder| `Zend` : :ref:`bibliothèques du Framework Zend <zend_db>`"
+msgstr ""
+
+#: ../development/codage.rst:39
+# d2ba28c7835543329ed0d8e8fdc3ac99
+msgid "|phpfile| `galette.inc.php` : fichier d'initialisation principal de Galette. Ici est gérée la création de tous les objets nécessaires au bon fonctionnement du code."
+msgstr ""
+
+#: ../development/codage.rst:40
+#: ../development/codage.rst:54
+#: ../development/codage.rst:67
+# e444d2b45b7b4354a563c268d7fc2a4a
+# ebe6c647b12a44b0b34be118f1f95630
+# 315b4a7870b14ef191749853e15a6c3b
+msgid "|phpfile| `...`"
+msgstr ""
+
+#: ../development/codage.rst:41
+# 770e61baab3548718ed6b2d181b38896
+msgid "|file| `...`"
+msgstr ""
+
+#: ../development/codage.rst:43
+# cb9215a04e404f5ba4cbc5d9458392cb
+msgid "|folder| `install` : scripts d'installation"
+msgstr ""
+
+#: ../development/codage.rst:44
+# 9e28da15e8574ac3ac03c077b73e8088
+msgid "|folder| `lang` : fichiers de traduction gettext (``.mo``), scripts d'extraction des chaînes depuis le code source, fichiers de langue compilés"
+msgstr ""
+
+#: ../development/codage.rst:45
+# a8b518f7b81d4863a68531a399335a20
+msgid "|folder| `lib` : les bibliothèques internes"
+msgstr ""
+
+#: ../development/codage.rst:47
+# ed90f51af02345c3aaf77f0452b6320f
+msgid "|folder| `Galette` : la bibliothèque Galette"
+msgstr ""
+
+#: ../development/codage.rst:49
+# ad886d71e64d4eaca32343b44215f148
+msgid "|folder| `Common` : classes `Galette\\\\Commons`"
+msgstr ""
+
+#: ../development/codage.rst:50
+# badaba7c98644876b83672eab7afe3bb
+msgid "|folder| `Core` : classes `Galette\\\\Core`"
+msgstr ""
+
+#: ../development/codage.rst:52
+# 620be6e6f20c40f4924bf9b4638e9120
+msgid "|phpfile| `Authentication.php`"
+msgstr ""
+
+#: ../development/codage.rst:53
+# 7e2b744389974adab7636f2327e7a254
+msgid "|phpfile| `CheckModules.php`"
+msgstr ""
+
+#: ../development/codage.rst:56
+#: ../development/codage.rst:58
+#: ../development/codage.rst:65
+# bae23c18ca1b4c38b92eaaacee0a4bb5
+# 963390bdf934431aa04b3dda0eeae06d
+# d49b737791f84829b7495fb24d42b327
+msgid "|folder| `...`"
+msgstr ""
+
+#: ../development/codage.rst:60
+# ee5be970555a41ffb33973dbde581be3
+msgid "|folder| `plugins` : :doc:`dossier de stockage des plugins <../plugins/index>`"
+msgstr ""
+
+#: ../development/codage.rst:61
+# 9aeb8a3d034f486194f98ad96b0c61e0
+msgid "|folder| `public` : pages publiques"
+msgstr ""
+
+#: ../development/codage.rst:62
+# 9d18d8442a2347f6880d799bfad2f467
+msgid "|folder| `templates` : ensembles de templates Smarty"
+msgstr ""
+
+#: ../development/codage.rst:64
+# 6569620d15c24088a69ffb97f7c8c612
+msgid "|folder| `default` : thème par défaut de Galette"
+msgstr ""
+
+#: ../development/codage.rst:72
+# 20b4cc01afae4168a4343bea0c9788be
+msgid "Conventions d'écriture"
+msgstr ""
+
+#: ../development/codage.rst:76
+# d832f549d34e475fa349270daf6b44d8
+msgid "Le standard pour les conventions d'écriture est passé de PEAR à PSR2 depuis Galette 0.9."
+msgstr ""
+
+#: ../development/codage.rst:78
+# 5a1c32eb476c43b28604a17e26b1f52a
+msgid "Le code source de Galette se doit de suivre les `conventions d'écriture PSR2 <https://www.php-fig.org/psr/psr-2/>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre."
+msgstr ""
+
+#: ../development/codage.rst:80
+# 40b9702e06844f4aa983382043e2e931
+msgid "Vous pourrez utiliser `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains avertissements peuvent être ignorés, mais les potentielles erreurs doivent toutes être corrigées. Pour lancer une vérification automatique, utilisez la commande ``phpcs`` :"
+msgstr ""
+
+#: ../development/codage.rst:103
+# adaef82a516341e49827811748dc8cc4
+msgid "Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieure). L'ensemble des fichiers source PHP doit en contenir la mention ; selon le modèle suivant (issu de la classe `Authentication` de Galette) :"
+msgstr ""
+
+#: ../development/codage.rst:167
+# 9dc749f161a84cc0be18e8c8a7cf0c01
+msgid "Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de documentation qui la précède."
+msgstr ""
+
+#: ../development/codage.rst:169
+# 06878197eaa248248deefe7014c84620
+msgid "Pour une meilleure compréhension du code pour l'ensemble des intervenants, on essaiera de documenter au maximum le code produit."
+msgstr ""
+
+#: ../development/codage.rst:173
+# 991591de4a9942b7a003671d2f106bdd
+msgid "Créer une release"
+msgstr ""
+
+#: ../development/codage.rst:175
+# 89c90dc2d86243e5a0229602c6e07378
+msgid "Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.9, il faut effectuer :"
+msgstr ""
+
+#: ../development/codage.rst:181
+# d2b36ac2777c4fceab05a1c101a506bf
+msgid "Notez que cette archive ne contiendra pas :ref:`les bibliothèques externes <deps>` (Smarty, Zend, tcpdf, ...); il vous faudra les ajouter au fichier ``galetee-0.9.tar.bz2`` obtenu."
+msgstr ""
+
+#: ../development/codage.rst:183
+# f25865093c5d4e8d90bbc5772e4af4b9
+msgid "A toutes fins utiles, voici une partie du script utilisé pour construire l'archive de la nightly :"
+msgstr ""
+
+#: ../development/codage.rst:219
+# c2ae31b630de49c9a02474d56bd5a431
+msgid "Finalement, l'archive peut être signée, avant sa mise en ligne (pour vérification ultérieure de l'intégrité de l'archive) :"
+msgstr ""
+
+#: ../development/codage.rst:227
+# b53a544da58a4c10a34481086f0bab35
+msgid "Durant les phases de développement, un :doc:`peu de déboguage <debug>` sera peut-être nécéssaire..."
+msgstr ""
+
+#: ../development/codage.rst:229
+# dfb0eb5da9cf46a3b0fbc90289d7351e
+msgid "Il vous sera possible de modifier certains :ref:`comportements de Galette (niveau de verbosité, mode de l'application, ...) <behavior>`."
+msgstr ""
+

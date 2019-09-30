@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../installation/windows.rst:4
+# 0d109d8463884829a96a8685fae90fbf
+msgid "Windows"
+msgstr ""
+
+#: ../installation/windows.rst:6
+# f6fdfc6962984f379228e373c91b3232
+msgid "L'installation présentée ici repose sur `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_ ; il existe d'autres méthodes d'installation qui ne seront pas décrites ici."
+msgstr ""
+
+#: ../installation/windows.rst:8
+# 8e91949bd432436890b6139b39452479
+msgid "Dans un premier temps, il faudra donc télécharger et installer XAMPP sur votre poste. Installons tout cela dans ``C:\\xampp``."
+msgstr ""
+
+#: ../installation/windows.rst:14
+# 4ef0afad21be48ae82015f1e8ea5dd87
+msgid "Lancez ensuite le programme ``xampp-control`` (qui se trouve dans ``C:\\xampp``), afin de démarrer les services Apache et MySQL."
+msgstr ""
+
+#: ../installation/windows.rst:20
+# ca0de9eb08e14478b5a88934ae160e90
+msgid "Une fois ces étapes effectuées, il vous faudra récupérer Galette et la placer dans le dossier ``C:\\wampp\\htdocs\\galette``, l'application sera alors accessible à l'adresse http://127.0.0.1/galette/. Il suffit de visiter cette adresse pour que le processus d'installation se lance."
+msgstr ""
+
+#: ../installation/windows.rst:24
+# f7247473dc5a4bdeae9d932ca0a3a34b
+msgid "L'activation de modules PHP sous XAMPP se fait dans le fichier ``xampp/php/php.ini``. La plupart des extensions requises sont déjà présentes, mais commentées (ligne précédée d'un point-virgule) ; il suffira alors de décommenter les lignes adéquates, et de relancer XAMPP."
+msgstr ""
+
+#: ../installation/windows.rst:26
+# 9e5a5423b2274177ae720e1935bec4d2
+msgid "L'extension `openssl` n'est pas présente dans le fichier, il faudra pour l'activer ajouter la ligne suivante à votre `php.ini` ``extension=php_openssl.dll``"
+msgstr ""
+

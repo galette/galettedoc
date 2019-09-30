@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/maps.rst:3
+# 0a67c8abb0bb47008b157ac97dca6776
+msgid "Maps"
+msgstr ""
+
+#: ../plugins/maps.rst:5
+# 9dfc986415074962a4e6076721e9cc4d
+msgid "Ce plugin vous apporte :"
+msgstr ""
+
+#: ../plugins/maps.rst:7
+# 62d82491e0f94764bf2da57f69f1e8e4
+msgid "la possibilité pour vos adhérents d'enregisrer leurs coordonnées géographiques (latitude et longitude),"
+msgstr ""
+
+#: ../plugins/maps.rst:8
+# a475f2f56fa24d7ba8d09948ce9b85a9
+msgid "une carte publique (pour les membres à jour de cotisation et ayant demandé à ce que leur profil soit public) de ces emplacements."
+msgstr ""
+
+#: ../plugins/maps.rst:11
+# eedc4af5eaf343d29f9f6025782e35f2
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/maps.rst:13
+# 24b0bb67fbe8415f96acc932fef449fc
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.4.0.tar.bz2"
+msgstr ""
+
+#: ../plugins/maps.rst:16
+# 359e6c8785a4432f9d67eb62ac42e861
+msgid "Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette."
+msgstr ""
+
+#: ../plugins/maps.rst:18
+# b27a79890c9546b286a24a195a0e4181
+msgid "Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :"
+msgstr ""
+
+#: ../plugins/maps.rst:27
+# f293af4f669748ffb15116d1122e87c6
+msgid "Initialisation de la base de données"
+msgstr ""
+
+#: ../plugins/maps.rst:29
+# e97d259b392d40b3a9a6c3df9270d461
+msgid "Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin."
+msgstr ""
+
+#: ../plugins/maps.rst:31
+# 38f6fdc213894b00bd418f10d4dde543
+msgid "Et voilà ; le plugin Maps est installé :-)"
+msgstr ""
+
+#: ../plugins/maps.rst:34
+# 17db75e761714f0d81b6426fed46a732
+msgid "Utilisation du plugin"
+msgstr ""
+
+#: ../plugins/maps.rst:36
+# fdd58b30dd464a1b87701a3f143bf9c4
+msgid "Lorsque le plugin est installé, un groupe `Cartes` est ajouté au menu lorsqu'un adhérent est connecté, qui comprend une entrée `Ma localisation`. Cette page permet aux adhérents de définir leur localisation."
+msgstr ""
+
+#: ../plugins/maps.rst:38
+# bd1a9816bf224610b01b39db12c38e24
+msgid "Un bouton `Géolocaliser l'adhérent` est également ajouté lors de la visualisation des fiches des adhérents. Ce bouton permet aux administrateurs et membres du bureau de géolocaliser l'adhérent."
+msgstr ""
+
+#: ../plugins/maps.rst:40
+# 5b67864cdd8947ebbf6bbc8f8a3247a2
+msgid "Enfin, une entrée `Cartes` apparaît dans la liste des pages publiques. Cette page affiche des membres localisés et à jour de leur cotisation. Les administrateurs et membres du bureau verront tous les profils, alors que les simples membres et les visiteurs anonymes ne verront que les profils publics."
+msgstr ""
+
+#: ../plugins/maps.rst:42
+# a38428797694496e94abdf365f945d58
+msgid "Dans un premier temps, vos adhérents devront entrer leur localisation, via l'entrée adéquate du menu. Plusieurs options s'offrent à eux :"
+msgstr ""
+
+#: ../plugins/maps.rst:44
+# 421a798d924c47ed8308e9e1a0d04e29
+msgid "si l'adhérent a renseigné sa ville sur sa fiche, une liste de possibilités d'emplacements lui sera soumise (via le `service en ligne de Nominatim <https://nominatim.openstreetmap.org>`_),"
+msgstr ""
+
+#: ../plugins/maps.rst:45
+# fb0051f295114a639cd8747cb7e30c98
+msgid "une zone de recherche libre (dont les résultats sont basés sur `OpenStreetMap <https://nominatim.openstreetmap.org/>`_) est disponible en complément,"
+msgstr ""
+
+#: ../plugins/maps.rst:46
+# 3884094d5ca04cbab4cc5f2ba754af44
+msgid "un bouton de géolocalisation utilisant les fonctionnalités du navigateur est également disponible."
+msgstr ""
+
+#: ../plugins/maps.rst:48
+# e973a5a56c3446598fa6a84ed97ef7be
+msgid "La zone de recherche est disponible lors de l'enregistrement de la localisation de vos membres, ainsi que lors de la consultation des cartes, que ce soit par les administrateurs ou les simples visiteurs."
+msgstr ""
+
+#: ../plugins/maps.rst:54
+# 556a5afa18c64b03bd988afaf34bde45
+msgid "En sélectionnant l'une de ces propositions, ou en cliquant sur la carte, l'adhérent pourra définir son lieu de résidence (avec la présision qu'il désire) à l'aide de la fenêtre qui s'ouvrira."
+msgstr ""
+
+#: ../plugins/maps.rst:60
+# 63e66bbb90fa4db3ba99450723e51b00
+msgid "L'adhérent peut choisir de cliquer sur le bouton de géolocalisation, sa position sera définie approximativement en l'absence d'appareil GPS :"
+msgstr ""
+
+#: ../plugins/maps.rst:66
+# 4b2e629837534d2397c871ef3837caff
+msgid "Une fois ses coordonnées enregistrées, l'adhérent verra sa localisation affichée, et aura la possibilité de la supprimer."
+msgstr ""
+
+#: ../plugins/maps.rst:73
+# 192e2ddd76c0442a9ac27da6993162ea
+msgid "Notes de fonctionnement"
+msgstr ""
+
+#: ../plugins/maps.rst:75
+# 702de2670840445da1b0157804109820
+msgid "La page `galette/plugins/plugin-maps/maps.php` est accessible aux utilisateurs non authentifiés (si toutefois votre instance de Galette est paramétrée pour afficher les pages publiques à tout le monde). Ceux-ci ne pourront voir que les membres ayant rendu leur profil public, et qui sont à jour de leur cotisation. Les « simples adhérents » connectés auront accès aux mêmes informations, en plus de la possibilité de définir leur position géographique."
+msgstr ""
+
+#: ../plugins/maps.rst:77
+# 3372e77dc5d745718ad9fa306c027996
+msgid "Les administrateurs et membres du staff peuvent consulter la localisation de tous les adhérents, mais ne peuvent la changer ni la supprimer ; il doivent passer par la fiche de l'adhérent pour cela."
+msgstr ""
+
+#: ../plugins/maps.rst:80
+# 9dba5733c20e4d689960dfcd995c4499
+msgid "Récupération des sources"
+msgstr ""
+
+#: ../plugins/maps.rst:82
+# c558f158b9b14edfb81cc2be289718db
+msgid "Le code source du plugin Maps est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-maps.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-maps.git>`_, utilisez :"
+msgstr ""
+
+#: ../plugins/maps.rst:88
+# 8ab3818847f34703af6be315a8fd7a5a
+msgid "Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`."
+msgstr ""
+

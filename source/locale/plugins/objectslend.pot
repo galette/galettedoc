@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/objectslend.rst:3
+# 2b98efc00eb3448ca020508c262993c2
+msgid "Prêt d'objets"
+msgstr ""
+
+#: ../plugins/objectslend.rst:7
+# d4be0d7881544547925dfa67d78d94b1
+msgid "Ce plugin est actuellement en version **BETA** ; prenez garde à sauvegarder le données existantes avant toute mise à jour !"
+msgstr ""
+
+#: ../plugins/objectslend.rst:9
+# 955737718cb44dd99fc730da3af27fbd
+msgid "Le plugin `ObjectsLend` vous permet de :"
+msgstr ""
+
+#: ../plugins/objectslend.rst:11
+# 0774d2882d4a4c0dba74106905aa5546
+msgid "gérer des objets (description, taille, poids, prix, ...)"
+msgstr ""
+
+#: ../plugins/objectslend.rst:12
+# cafd9814dcb34f01839754a1405d2162
+msgid "regrouper les objets en catégories,"
+msgstr ""
+
+#: ../plugins/objectslend.rst:13
+# d1c1ab54b0784a26b5c4b467f59888d6
+msgid "gérer les statuts des objets (et leur présence \"en stock\" ou non),"
+msgstr ""
+
+#: ../plugins/objectslend.rst:14
+# 6fc84ca33c314698a52629c27a9cca13
+msgid "gérer les prêts et/ou location d'objets,"
+msgstr ""
+
+#: ../plugins/objectslend.rst:15
+# 0cdcbb4e1c0c4d5fb314a938df4526c4
+msgid "générer une contribution,"
+msgstr ""
+
+#: ../plugins/objectslend.rst:16
+# 66ed11894c5e491f8d3c261febdeba88
+msgid "..."
+msgstr ""
+
+#: ../plugins/objectslend.rst:19
+# 9f143d2fd1ac4020bc984f1ab6fd6156
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/objectslend.rst:21
+# 3aa73647283343f29ede74fda11e153c
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : https://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-0.5beta.tar.bz2"
+msgstr ""
+
+#: ../plugins/objectslend.rst:24
+# bfa387c465c144718917dcaf4c6646d5
+msgid "Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette."
+msgstr ""
+
+#: ../plugins/objectslend.rst:26
+# 612462067147464798670f871ad12117
+msgid "Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :"
+msgstr ""
+
+#: ../plugins/objectslend.rst:35
+# d6b6d3282a644c749714229d6a8e0903
+msgid "Initialisation de la base de données"
+msgstr ""
+
+#: ../plugins/objectslend.rst:37
+# aeb37865de984859a78b74ce40298e1b
+msgid "Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin."
+msgstr ""
+
+#: ../plugins/objectslend.rst:39
+# 5275326486fe425c98d3684a81f1ffb5
+msgid "Et voilà ; le plugin ObjectsLend est installé :-)"
+msgstr ""
+
+#: ../plugins/objectslend.rst:42
+# 567d8b7db78c46b2bc998828244c2f41
+msgid "Utilisation du plugin"
+msgstr ""
+
+#: ../plugins/objectslend.rst:44
+# d19a0498c2284a4d99f0206cd4917c58
+msgid "Lorsque le plugin est installé, un groupe `Prêt d'objets` est ajouté au menu principal de Galette."
+msgstr ""
+
+#: ../plugins/objectslend.rst:46
+# 5b88dc38c02b406f9273776fe6e4a41f
+msgid "Lors de l'installation, quelques status par défaut sont définis ; vous devrez bien entendu définir les votres, les exemples ne correspondront probablement pas à votre utilisation :)"
+msgstr ""
+
+#: ../plugins/objectslend.rst:52
+# 0c41b9b127064c719ac98bffa6c87ab0
+msgid "Une fois vos status définis, crééez éventuellement des catégories et crééez des objets. Les utilisateurs pourront se \"servir\" dans les objets disponibles en indiquant la raison de l'emprunt, puis reposer les objets en indiquant où ils reposent l'objet en question."
+msgstr ""
+
+#: ../plugins/objectslend.rst:54
+# 743bf0dc3bce44c3b6bf52307756161a
+msgid "Depuis la fiche d'un objet, les administrateurs et membres du bureau peuvent consulter l'historique des emprunts d'un objet avec le membre qui a emprunté à chaque fois."
+msgstr ""
+
+#: ../plugins/objectslend.rst:57
+# 790e83fd50164ef7a9f1fd56e2e63a0e
+msgid "Préférences"
+msgstr ""
+
+#: ../plugins/objectslend.rst:59
+# b50a18e897bb494387cb7daf64905a24
+msgid "Diverses préférences vous permettront d'ajuster le comportement du plugin."
+msgstr ""
+
+#: ../plugins/objectslend.rst:66
+# f1d3ca722c99448685afea8c1ee0bc6e
+msgid "Depuis cet écran, vous pourrez préciser si les adhérents peuvent emprunter ou non des objets, s'il faut ou non générer une nouvelle contribution et, le cas échéant, son type ainsi que le texte descriptif qui y sera associé."
+msgstr ""
+
+#: ../plugins/objectslend.rst:68
+# 905967354c44433d844a47b6b41609a6
+msgid "Les images peuvent être affichées ou non dans les listes d'objets et de catégories et définir la taille des miniatures."
+msgstr ""
+
+#: ../plugins/objectslend.rst:72
+# ec9d30de8321463aa4938c0df9b11ffe
+msgid "Il est également possible d'activer l'affichage des photos en pleine taille."
+msgstr ""
+
+#: ../plugins/objectslend.rst:76
+# ade224d33c8d4b13b1fae46cf725ba8c
+msgid "Les photos envoyées avec les versions précédentes du plugin étaient systématiquement retaillées, seule la miniature était stockée. Pour bénéficier de l'affichage en pleine taille, il faudra de nouveau envoyer la photo."
+msgstr ""
+
+#: ../plugins/objectslend.rst:78
+# eeea8e8d522645e691ca3fb264a661e2
+msgid "Enfin, l'écran permet d'activer ou de désactiver l'affichage de certaines informations."
+msgstr ""
+
+#: ../plugins/objectslend.rst:81
+# 48a14f7db2c04bcc87ce891b42e48bac
+msgid "Récupération des sources"
+msgstr ""
+
+#: ../plugins/objectslend.rst:83
+# 5d89db23e18346f58454709be7f77569
+msgid "Le code source du plugin ObjectsLend est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-objectslend.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-objectslend.git>`_, utilisez :"
+msgstr ""
+
+#: ../plugins/objectslend.rst:89
+# 414a3075e9fe4cf69edca7d054abfaaa
+msgid "Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`."
+msgstr ""
+

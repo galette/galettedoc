@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/technical_infos.rst:5
+# 051b54b454fa4e779b8f2825e8e552a2
+msgid "Informations techniques"
+msgstr ""
+
+#: ../development/technical_infos.rst:8
+# 60c7a2760ea143a6839ec6c5f9cc3ed2
+msgid "Bibliothèques utilisées"
+msgstr ""
+
+#: ../development/technical_infos.rst:10
+# fd2387133cf34be3884bd48ca20b5fd5
+msgid "L'ensemble des bibliothèques externes utilisées par Galette est gérée par `le système de gestion de départendences Composer <https://getcomposer.org>`_. Une fois composer installé sur votre système, il vous suffira de vous placer dans le dossier de Galette (où se trouvent les fichiers ``composer.json`` et ``composer.lock`` et de lancer simplement ``composer install``."
+msgstr ""
+
+#: ../development/technical_infos.rst:15
+# c32438c272e24e93b57bd1c56d5efecc
+msgid "Slim"
+msgstr ""
+
+#: ../development/technical_infos.rst:23
+# d46d690476e249e69f1c062c30abac14
+msgid "*Version de la biliothèque requise :* `3.8.1`"
+msgstr ""
+
+#: ../development/technical_infos.rst:25
+# a150acf391094d5da95ac8ea12ecb0a8
+msgid "Les URL utilisées dans Galette sont générées et servies par le `micro framework Slim <https://www.slimframework.com/>`_ dans sa version `3`."
+msgstr ""
+
+#: ../development/technical_infos.rst:27
+# aed9f80529714378b270ccc2ed1bac9c
+msgid "Là où nous avions auparavant un fichier ``.php`` par page à afficher, tout est désormais géré par un système de routes nommées et paramétrées ; ce qui rend les modifications et évolutions plus souples. La `documentation de Slim <https://www.slimframework.com/docs/v3>`_ est un bon point de départ pour comprendre comment le système fonctionne."
+msgstr ""
+
+#: ../development/technical_infos.rst:32
+# 957d60039be043db96ba25c6f525c717
+msgid "Zend DB"
+msgstr ""
+
+#: ../development/technical_infos.rst:38
+# 64da1ce85482446d9b8d67e2a329595b
+msgid "*Version de la bibliothèque requise :* `2.8.2`"
+msgstr ""
+
+#: ../development/technical_infos.rst:40
+# d133f457d0bf4f46a23324db069d626e
+msgid "L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <https://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_."
+msgstr ""
+
+#: ../development/technical_infos.rst:42
+# cb8a691fd7e64e35af7c70106da659e3
+msgid "Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'est compatible qu'avec :"
+msgstr ""
+
+#: ../development/technical_infos.rst:44
+# faf143086aac44e29f3849992a689f07
+msgid "`MySQL <https://mysql.com/>`_ version 5.x (le support InnoDB est requis),"
+msgstr ""
+
+#: ../development/technical_infos.rst:45
+# 92dae19314df48588914636c8b95b53e
+msgid "`PostgreSQL <https://www.postgresql.org/>`_ 9.1 ou plus récente."
+msgstr ""
+
+#: ../development/technical_infos.rst:47
+# 14081406603d48c58df21841b13dc9c5
+msgid "Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ pour leur en faire part :-)"
+msgstr ""
+
+#: ../development/technical_infos.rst:52
+# b6ae6b93752d429fbced33569df503cc
+msgid "Analog"
+msgstr ""
+
+#: ../development/technical_infos.rst:54
+# 2cb4ae2079764b6180ddaa1e9c921249
+msgid "*Version de la bibliothèque requise :* `1.0.10`"
+msgstr ""
+
+#: ../development/technical_infos.rst:56
+# 6882cd5c111c476b8ee3f232e7dacd30
+msgid "Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analog/>`_."
+msgstr ""
+
+#: ../development/technical_infos.rst:61
+# 3edf7b692d0b4743894d8ce61dc8ce1a
+msgid "Smarty"
+msgstr ""
+
+#: ../development/technical_infos.rst:67
+# 3f83fc0d92764e75a2894f4e0256ecab
+msgid "*Version de la bibliothèque requise :* `3.1.31`"
+msgstr ""
+
+#: ../development/technical_infos.rst:69
+# 669a2992805445878d8b266b72837316
+msgid "Pour l'affichage des pages, c'est `le système de template Smarty <https://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format HTML 5."
+msgstr ""
+
+#: ../development/technical_infos.rst:74
+# 3d6f8d03c0af4acfbc3c9808a60f4823
+msgid "TCPDF"
+msgstr ""
+
+#: ../development/technical_infos.rst:80
+# a68bdafbd8f44eedab55578ea10bc992
+msgid "*Version de la bibliothèque requise :* `6.2.13`"
+msgstr ""
+
+#: ../development/technical_infos.rst:82
+# 21f0e14ad58449909334ce8d33df771f
+msgid "L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <https://www.tcpdf.org/>`_."
+msgstr ""
+
+#: ../development/technical_infos.rst:87
+# 4168d0d821ea49baa3dd0cddfc3d1cc1
+msgid "Interface utilisateur"
+msgstr ""
+
+#: ../development/technical_infos.rst:93
+# dbca9dfad8014c02b6c9386e7761feb3
+msgid "*Version de la bibliothèque requise :* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)"
+msgstr ""
+
+#: ../development/technical_infos.rst:95
+# 68ba5655a88448359b41c86308f94a7a
+msgid "Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expérience de ce dernier, nous avons choisi de faire appel à un framework Javascript. `JQuery <https://jquery.com>`_ a été retenu, ainsi que certains de ses plugins, notamment :"
+msgstr ""
+
+#: ../development/technical_infos.rst:97
+# cbb4f121bd9241b89eee6b7c8c8febe6
+msgid "`JQuery UI <https://ui.jquery.com/>`_ pour l'ajout d'onglets, de formulaires de sélection de dates, de fenêtres modales, etc,"
+msgstr ""
+
+#: ../development/technical_infos.rst:98
+# 7edf67e6a84f47b7a43777cc947f7b2e
+msgid "`markItUp <https://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings."
+msgstr ""
+
+#: ../development/technical_infos.rst:103
+# 583dbc19c5a7490d89c37048cd48d67f
+msgid "Envoi de courriels"
+msgstr ""
+
+#: ../development/technical_infos.rst:109
+# 539ee1b09545461ab35fd2c38210c457
+msgid "*Version de la bibliothèque requise :* `5.2.25`"
+msgstr ""
+
+#: ../development/technical_infos.rst:111
+# 18986482d02d41c1892e8741fafb5174
+msgid "L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <https://github.com/PHPMailer/PHPMailer>`_."
+msgstr ""
+
+#: ../development/technical_infos.rst:116
+# 5e5fec006794416cade0b543c39bacb2
+msgid "Tests unitaires"
+msgstr ""
+
+#: ../development/technical_infos.rst:122
+# 0b853633c13245558bb71a4494ebcbb6
+msgid "Les tests unitaires dans Galette sont exécutés via `le framework de test unitaire Atoum <http://atoum.org>`_."
+msgstr ""
+

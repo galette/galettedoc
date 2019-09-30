@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../installation/galette.rst:3
+# 178286e8ac8e400a9c1891d6e47cbef4
+msgid "Installation"
+msgstr ""
+
+#: ../installation/galette.rst:5
+# 3192568dc229456f8734049f522e8eec
+msgid "L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/. La procédure de :doc:`mise à jour de votre instance de Galette <update>` est documentée séparément."
+msgstr ""
+
+#: ../installation/galette.rst:7
+# 9f61c6a0e61d4909b7ded9f38dd34d9c
+msgid "Le principe, c'est d'installer Galette depuis l'archive de la dernière version stable. Vous pouvez aussi l'installer depuis :doc:`le code source <../development/git>` (cette méthode est certainement plus complexe pour les non développeurs)."
+msgstr ""
+
+#: ../installation/galette.rst:10
+# 5addbad0a3144333a629b9ec3f944e22
+msgid "Vérification des paramètres"
+msgstr ""
+
+#: ../installation/galette.rst:12
+# 245cbeba902d4157966edd2fbdd4210f
+msgid "Un certain nombre de choses doit être respécté pour que l'installation de Galette se déroule sans accroc :"
+msgstr ""
+
+#: ../installation/galette.rst:14
+# 4435236a9d8948d4ba41aa0333cab545
+msgid "la version de PHP doit être sufisante,"
+msgstr ""
+
+#: ../installation/galette.rst:15
+# 33fb250e0dd94274b2ecd3532bb6da49
+msgid "certaines extensions PHP doivent être disponibles,"
+msgstr ""
+
+#: ../installation/galette.rst:16
+# 0275dadf9f57467aab8bf75518fc232d
+msgid "certains dossiers doivent être accessible en écriture."
+msgstr ""
+
+#: ../installation/galette.rst:18
+# fe30f4a55f0344df930804fdc7aae4ea
+msgid "La première étape de l'installation se chargera de vérifier ces points, et vous avertira si quelque chose n'est pas compatible."
+msgstr ""
+
+#: ../installation/galette.rst:24
+# db58310185934ca998e31e0225928919
+msgid "Si toutes :ref:`les étapes de préparation <preparation>` ont été correctement suivies, les droits des dossiers devraient être corrects."
+msgstr ""
+
+#: ../installation/galette.rst:26
+# d8faaa24730f4188945d99076136c342
+msgid "Cette étape s'assure que les droits nécessaires au bon fonctionnement de Galette ont été placés. En cas de problème (rectangle rouge), référez-vous à la section « :ref:`Droits des fichiers <droitsfichiers>` », rafraîchissez ensuite la page pour relancer la procédure de vérification des droits."
+msgstr ""
+
+#: ../installation/galette.rst:28
+# 54d08847ac81426cb4b905c602b73049
+msgid "Elle vérifie aussi la version de PHP utilisée, la présence des modules requis ou conseillés, et le paramétrage de la date (requis depuis PHP 5.3). L'installation d'un module se fait fait sur le serveur (rapprochez-vous de votre hébergeur ou de votre administrateur système, Galette ne requiert à priori rien d'exceptionnel), de même que le paramétrage de la date."
+msgstr ""
+
+#: ../installation/galette.rst:31
+# 9c77c8f3cd9442d792fc0d1ea2b38c5c
+msgid "Type d'installation"
+msgstr ""
+
+#: ../installation/galette.rst:33
+# 76a3a8aa6c734e8bbb6908f15a32ce60
+msgid "L'écran suivant vous permet de choisir le type d'installation. Vous aurez le choix entre « Nouvelle installation » et une « Mise à jour ». Les étapes suivantes seront pour beaucoup communes, mais certaintes étapes spécifiques seront à effectuer dans un cas ou dans l'autre."
+msgstr ""
+
+#: ../installation/galette.rst:40
+# d26d8b889681462cb92fa536b55719fe
+msgid "Base de données"
+msgstr ""
+
+#: ../installation/galette.rst:42
+# 81bfc75d0bb6414086d9ad7671c41ceb
+msgid "Avant toute chose, vous devez vous assurer que votre base de données existe déjà. Rassemblez les éléments requis, à savoir :"
+msgstr ""
+
+#: ../installation/galette.rst:44
+# c2e6ee406d1c400d89bfedf04e36184f
+msgid "nom de l'hôte"
+msgstr ""
+
+#: ../installation/galette.rst:45
+# 3b26d9cd3c7746fabee2b2a803d82524
+msgid "nom de l'utilisateur de la base"
+msgstr ""
+
+#: ../installation/galette.rst:46
+# a8ebac4c8f834c15a2cc61d01431ecc1
+msgid "mot de passe de l'utilisateur"
+msgstr ""
+
+#: ../installation/galette.rst:47
+# 092c77908940409490fbae61f6ff718b
+msgid "nom de la base"
+msgstr ""
+
+#: ../installation/galette.rst:48
+# 7629e9e77ae346c893ba542b4a25b5ee
+msgid "type de la base (MySQL ou PostgreSQL)"
+msgstr ""
+
+#: ../installation/galette.rst:51
+# da493f17adfd42eea71e4d171f7b5a5b
+msgid "Création de la base de données"
+msgstr ""
+
+#: ../installation/galette.rst:55
+# 58b300119e474a78a7be703b3ef1ceb6
+msgid "**N'utilisez pas l'utilisateur root de votre base de données !**"
+msgstr ""
+
+#: ../installation/galette.rst:57
+# db642e401ea0404ebabac3e2816b4f2f
+msgid "Pour des raisons de sécurité, il est fortement conseillé de créer un utilisateur spécifique pour la base de données Galette, et de ne lui attribuer des droits que sur la base Galette."
+msgstr ""
+
+#: ../installation/galette.rst:59
+# 1521da2585f944fb87aa93d02f6c56aa
+msgid "Pour l'exemple, nous allons nous baser sur une base de données nommée `magalette` appartenant à un utilisateur `monutilisateurgalette` dont le mot de passe est `monmotdepasse`."
+msgstr ""
+
+#: ../installation/galette.rst:61
+# 30b7499e81c84f169621a06d121d085b
+msgid "MariaDB"
+msgstr ""
+
+#: ../installation/galette.rst:70
+# 76287fb991f542ae80505d5c82d0360e
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../installation/galette.rst:79
+# b4a90fc8ffd34da68023a9a05645c50b
+msgid "Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ ou de `PostgreSQL <https://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique :"
+msgstr ""
+
+#: ../installation/galette.rst:81
+# 9e3595b8a2044262a9eefe64227bdb19
+msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ pour MariaDB ;"
+msgstr ""
+
+#: ../installation/galette.rst:82
+# fae17fcbdf6a4602a9e45f724980caa4
+msgid "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <https://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL."
+msgstr ""
+
+#: ../installation/galette.rst:85
+# b2020f239f044ea8910a5a4dcb396421
+msgid "Paramètres de la base"
+msgstr ""
+
+#: ../installation/galette.rst:87
+# 351a9095d33b4887885891bcb6252d08
+msgid "Sur cet écran, sélectionnez votre type de base de données puis entrez simplement les nom d'hôte, nom de base de données, nom d'utilisateur et mot de passe. Le préfixe de la table est fort utile si vous n'avez pas une base dédiée intégralement à Galette ; la proposition par défaut devrait être parfaitement acceptable, mais vous pouvez bien entendu y mettre ce que vous souhaitez :-)"
+msgstr ""
+
+#: ../installation/galette.rst:93
+# 8f643a22d8ee462c8d2be878c3025f38
+msgid "Cette étape sera strictement similaire en installation et en mise à jour. Si un fichier de configuration existe déjà, Galette ira y chercher les informations (à l'exception du mot de passe). En cas de mise à jour, vous devrez vous assurer que le préfixe des tables correspond bel et bien à celui qui existe."
+msgstr ""
+
+#: ../installation/galette.rst:96
+# 8272efa93e44436b85ebcab09746982f
+msgid "Vérifications et création des tables"
+msgstr ""
+
+#: ../installation/galette.rst:98
+# b7305462687a4d61871e37b5de614016
+msgid "L'écran suivant va vérifier qu'une connexion peut être établie à votre base de données en utilisant les éléments que vous avez fournis, puis que les droits sont corrects (ajout/suppression/modification de tables, ajout/suppression/modification d'enregistrements, ...)."
+msgstr ""
+
+#: ../installation/galette.rst:104
+# db032f18763f4b73937a777713f14606
+msgid "En cas d'erreur, revenez à l'étape précédente, effectuez les éventuels ajustement requis, puis validez de nouveau en cliquant le bouton « étape suivante ». Si l'erreur concerne un ou plusieurs tests lors de la vérification des droits, il faudra vous assurer que l'utilisateur de votre base de données possède bien les droits requis sur la base."
+msgstr ""
+
+#: ../installation/galette.rst:107
+# f57013be00174352bf329a80f5ccad40
+msgid "Création des tables"
+msgstr ""
+
+#: ../installation/galette.rst:109
+# f8017f8cd26642e180bab91a2f094348
+msgid "Ces instructions ne sont valables que pour une nouvelle installation. Dans le cas d'une mise à jour, la base de données existera déjà bien évidemment."
+msgstr ""
+
+#: ../installation/galette.rst:111
+# 030ceded17614c27aba4424a24693a01
+msgid "Si une connexion à la base a pu être établie, et que les droits sont corrects, l'installation va maintenant créer les tables et y insérer les valeurs par défaut. La création des tables peut être vérifiée à l'aide de PhpMyAdmin."
+msgstr ""
+
+#: ../installation/galette.rst:113
+# bbb5c80e69f94e5ab2e607bdf6254479
+msgid "En ligne de commande, vous pouvez utiliser :"
+msgstr ""
+
+#: ../installation/galette.rst:115
+# fd0fa4c53a214c85b34930295212aa03
+msgid "pour MariaDB :"
+msgstr ""
+
+#: ../installation/galette.rst:122
+# e99760213a51442d9213c8cc30e27792
+msgid "pour PostgreSQL :"
+msgstr ""
+
+#: ../installation/galette.rst:134
+# 5681c98fb24b4da6ace6e47137edee5b
+msgid "Paramètres de l'administrateur"
+msgstr ""
+
+#: ../installation/galette.rst:136
+# 015fb3fbd7564b29ba0cc931e741c697
+msgid "Cet écran n'est affiché qu'en cas d'installation. Lors d'une mise à jour, les paramètres administrateurs auront déjà été renseignés ;)"
+msgstr ""
+
+#: ../installation/galette.rst:138
+# 518db151fe7b453b976269731f85c5bc
+msgid "L'écran suivant vous demande de saisir les informations de l'administrateur de Galette. Par la suite, certains comptes créés via l'interface pourront être élevés au rang d'administrateur également, mais celui qui est créé à l'installation n'est pas un adhérent, il ne peut pas être supprimé et possède certains droits particuliers."
+msgstr ""
+
+#: ../installation/galette.rst:145
+# eccf13ee478d4caa8d6dd920ebbd9608
+msgid "Initialisation"
+msgstr ""
+
+#: ../installation/galette.rst:147
+# ec8488a16d55488cbfa71868de6feee4
+msgid "La toute dernière étape va écrire le fichier de configuration (s'il n'existe pas ou s'il n'est pas à jour), et initialiser certaines valeurs dans votre base de données toute fraîche, comme par exemple :"
+msgstr ""
+
+#: ../installation/galette.rst:149
+# aabecb7e6ce44987b375ed63275230ba
+msgid "la création des préférences de base,"
+msgstr ""
+
+#: ../installation/galette.rst:150
+# 03cca4d259a2445f9e1952669a7c7967
+msgid "l'ajout des types de contributions et des statuts par défaut,"
+msgstr ""
+
+#: ../installation/galette.rst:151
+# afa985637ec246dbaf00b603b98ffd01
+msgid "la configuration des champs et leur visibilité,"
+msgstr ""
+
+#: ../installation/galette.rst:152
+# d3ec4f005ad3469baa87b051b2f36e73
+msgid "les textes des différents courriels,"
+msgstr ""
+
+#: ../installation/galette.rst:153
+# 1caae5cda90041e092ba043c1b29c418
+msgid "les titres des adhérents,"
+msgstr ""
+
+#: ../installation/galette.rst:154
+# 3549e954d8c349e2b72a54d2ffaaa2fd
+msgid "les modèles PDF,"
+msgstr ""
+
+#: ../installation/galette.rst:155
+# abc2ea41b5c5492a865d7b67cfedeaf0
+msgid "..."
+msgstr ""
+
+#: ../installation/galette.rst:157
+# d555645ec4ef427a8668f1a30371bf7b
+msgid "Lors d'une mise à jour, la plupart des données de base étant déjà initialisées, la liste sera beaucoup moins longue."
+msgstr ""
+
+#: ../installation/galette.rst:160
+# fb55da20339b4228a45efc2c35b54038
+msgid "Fin de l'installation"
+msgstr ""
+
+#: ../installation/galette.rst:162
+# 8bf545c0dc31441ea6b1b859e94951ef
+msgid "Nous voici à la fin de l'installation, félicitations !"
+msgstr ""
+
+#: ../installation/galette.rst:166
+# 22453b7db6a64f769bd83048d641db70
+msgid "Pour des raisons de sécurité, nous vous **conseillons fortement de supprimer le dossier install**, ou, au pire, d'en désactiver l'accès par le serveur web."
+msgstr ""
+
+#: ../installation/galette.rst:172
+# 70bce5b95fbb49d8b468453169368dd5
+msgid "Vous avez maintenant accès à la page de login de Galette, entrez-y les identifiants administrateur préalablement renseignés, et vous pouvez commencer à l'utiliser. Vous pouvez maintenant vous référer au :doc:`manuel de l'utilisateur de Galette <../usermanual/index>`."
+msgstr ""
+
