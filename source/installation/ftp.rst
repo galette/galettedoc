@@ -16,10 +16,10 @@ Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décom
    :align: center
 
 Cas particuliers
-----------------
+================
 
 OVH
-^^^
+---
 
 Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
 
@@ -34,7 +34,7 @@ Des informations complémentaires sont disponibles à l'addresse : https://docs.
       app.engine=phpcgi
 
 Nginx
-^^^^^
+-----
 
 Le `serveur web Nginx <https://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
 
