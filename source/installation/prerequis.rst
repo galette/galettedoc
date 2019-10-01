@@ -3,27 +3,27 @@
 .. _prerequis:
 
 *************************
-Pré-requis et hébergement
+Prerequisites and hosting
 *************************
 
-Pour installer Galette, vous aurez besoin que les composants suivants soient installés  :
+To install Galette, you will need the following:
 
-* un serveur web Apache,
-* PHP en version 7.1 ou supérieure,
+* a web server (like Apache),
+* PHP 7.1 or more recent,
 
-  * le module PHP `gd`,
-  * le module PHP `PDO` `mysql` ou `postgresql`,
-  * le module PHP `curl`,
-  * le module PHP `intl`,
-  * le support SSL,
-  * le module PHP `tidy` (optionnel, mais recommandé),
-  * le module PHP `gettext` (optionnel).
+  * `gd` PHP module,
+  * `PDO` module and `mysql` ou `postgresql` for PDO,
+  * `curl` PHP module,
+  * `intl` PHP module,
+  * SSL support,
+  * `tidy` HPHP module (optionnal, but recommended),
+  * `gettext` PHP module (optionnal).
 
-* un serveur `MariaDB <https://mariadb.org>`_  (ou MySQL) en version 5.5 minimum ou `PostgreSQL <https://postgresql.org>`_ en version 9.1 minimum.
+* A database server, `MariaDB <https://mariadb.org>`_  (or MySQL) 5.5 minimum, or `PostgreSQL <https://postgresql.org>`_ 9.1 minimum.
 
-Galette ne fonctionne pas sur les hébergements suivants :
+Galette does not work on following hostings:
 
 * Free,
 * Olympe Networks.
 
-Galette est régulièrement testé avec des versions récentes de ces composants, si vous rencontrez des difficultés avec une version particulière, n'hésitez pas à nous le faire savoir ;-)
+Galette is tested continuousely with recent versions of different composants, is you have issues with a recent version, please let us know ;)

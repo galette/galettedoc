@@ -4,27 +4,28 @@
 
    .. rst-class:: docs install_doc
 
-   :doc:`manuel d'installation <index>`
+   :doc:`installation manual <index>`
 
 .. rst-class:: doc_main_page
 
 ===================
-Installarion manual
+Installation manual
 ===================
 
-L'installation de Galette consiste simplement, après avoir effectué quelques tâches préalables, à vous laisser guider par l'interface et renseigner les quelques informations qui vous seront demandées.
+Galette installation is quite simple, really :) Just a few graphical steps to follow once pre-requisites are met.
 
-Dans un premier temps, vous allez `télécharger Galette <https://download.tuxfamily.org/galette/galette-0.9.2.tar.bz2>`_ et décompresser l'archive. Si vous êtes sous Linux, ça donnera quelque chose comme :
+First, `download Galette <https://download.tuxfamily.org/galette/galette-0.9.3.tar.bz2>`_ and uncompress the archive.
+
+If you are running Windows, you will have to install a TAR archives compatible client, such as `7zip <https://www.7-zip.org/>`_.
+If you are using Linux, run:
 
 .. code-block:: bash
 
    $ cd /var/www/html/
-   $ wget https://download.tuxfamily.org/galette/galette-0.9.2.tar.bz2
-   $ tar xjvf galette-0.9.2.tar.bz2
+   $ wget https://download.tuxfamily.org/galette/galette-0.9.3.tar.bz2
+   $ tar xjvf galette-0.9.3.tar.bz2
 
-Si vous êtes sous windows, vous devrez préalablement installer un logiciel capable de gérer les archives tar, comme le `logiciel libre 7zip <https://www.7-zip.org/>`_.
-
-La version 0.9.2 de Galette est l'actuelle version stable. Il existe une archive mise à jour quotidiennement (`nightly <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_) de la version de développement, et vous pouvez également choisir de  :doc:`récupérer la version de développement de Galette <../development/git>` comme expliqué dans la documentation de développement.
+Current Galette stable version is 0.9.3. A `nightly archive <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ is build each night from the development branch, and you also :doc:`retrieve Galette development version  <../development/git>` as explained in developer guide.
 
 .. toctree::
    :maxdepth: 3

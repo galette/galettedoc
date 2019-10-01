@@ -5,29 +5,29 @@ FTP
 
 .. warning::
 
-   Certains logiciels utilisés pour la décompression de l'archive, ou pour l'envoi des fichiers en FTP peuvent corrompre les fichiers... Il est fortement recommandé sous Windows d'avoir recours à `7zip <https://www.7-zip.fr>`_ pour la décompression et à `FileZilla <https://filezilla-project.org/>`_ pour l'envoi des fichiers.
+   Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ fo TFP transferts.
 
-Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <https://www.7-zip.fr>`_ sous Windows.
+Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows.
 
-Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <https://filezilla-project.org/>`_.
+Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client.
 
 .. image:: ../_styles/static/images/installation/filezilla.jpg
    :scale: 50 %
    :align: center
 
-Cas particuliers
-================
+Specific cases
+==============
 
 OVH
 ---
 
-Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
+This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
 
-Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
+Aditionnal informations are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
 .. warning::
 
-   Beaucoup d'utilisateurs rencontrent des problèmes d'affichage des images ou d'accès à la liste d'émargement sur les hébergements OVH. La solution à ce problème passe par la configuration de votre espace. Il faut créer un fichier `.ovhconfig` à la racine du site avec le contenu suivant :
+   Many users have display images or ermagement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:
 
    .. code-block:: shell
 
@@ -36,9 +36,9 @@ Des informations complémentaires sont disponibles à l'addresse : https://docs.
 Nginx
 -----
 
-Le `serveur web Nginx <https://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
+`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
 
-Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :
+So you have to convert restriction access files in Nginx configuration, as per example:
 
 .. code-block:: nginx
 

@@ -1,16 +1,16 @@
 .. _postinstall:
 
-******************
-Après installation
-******************
+*****************
+Post installation
+*****************
 
-Tâches diverses
-===============
+Various tasks
+=============
 
-Une fois votre Galette correctement installée, il reste une ou deux petites choses à faire :
+One Galette properly installed, you still have a few things to do:
 
-* vous pouvez retirer les droits en écriture sur le dossier ``config``,
-* supprimez le dossier ``install``, ou rendez-le inaccessible, par exemple avec la directive suivante dans la configuration d'un hôte virtuel (l'exemple donné ici fonctionnera pour Apache) :
+* remove write access to the ``config`` directory,
+* remove the whole ``install`` directory, ou make it unavailable with a directive like (ofr Apache):
 
 .. code-block:: apacheconf
 
@@ -21,15 +21,15 @@ Une fois votre Galette correctement installée, il reste une ou deux petites cho
 
 .. _configpaths:
 
-Paramétrage des chemins
-=======================
+Configure paths
+===============
 
-Certains chemins dans Galette sont paramétrables, comme le dossier des exports, des photos, etc.
+Some galette paths may be changed from a configuration parameter, such as exports, photos, etc
 
-Par défaut, Galette est fourni avec l'ensemble de ces chemins pointant à l'intérieur du dossier d'installation. Ainsi, si l'installation se trouve dans le dossier ``/var/www/galette`` ; les exports seront effectués dans ``/var/www/galette/data/exports``, les photos seront stockées dans ``/var/www/galette/data/photos/``, et ainsi de suite.
-La configuration par défaut est définie dans le fichier ``config/paths.inc.php``, qui ne doit pas être modifié.
+By default, Galette provides all those directories inside installation directory. That way, if installation is located at ``/var/www/galette``, exports will be in ``/var/www/galette/data/exports``, photos in ``/var/www/galette/data/photos/``, and so on.
+Default configuration is done in ``config/paths.inc.php`` file that should not be changed.
 
-Il est possible de surcharger tout ou partie de ces chemins en créant le fichier ``local_paths.inc.php`` dans le dossier ``config``, il suffira alors d'y placer les chemins souhaités ; sous forme de déclaration de variables globales PHP. Par exemple, pour définir un emplacement particulier pour les photos ; ce fichier contiendrait :
+Instead, you may override some or all of the values in a ``config/local_paths.inc.php``, with paths you want declared as PHP constants. For exemple, to define a different path for photos:
 
    .. code-block:: php
 
@@ -37,26 +37,24 @@ Il est possible de surcharger tout ou partie de ces chemins en créant le fichie
       define('GALETTE_PHOTOS_PATH', '/path/to/photos_dir/');
       ?>
 
-Les chemins de Galette doivent pour la plupart impérativement être accessibles en écriture par le serveur web, sous peine de mauvais fonctionnement de l'application, et d'erreurs pas toujours très faciles à comprendre ou à tracer. Les deux seules exceptions à cette règle concernent les templates (le serveur web n'a aucun besoin d'écrire là dedans !) et les plugins (les droits en écriture ne sont pas requis sur les dossiers des plugins, et ne devraient jamais l'être).
+All paths that originally resides in ``data`` directory must stay accessible read/write for the web server. All other directories should be set as read only, the web server should not have to write in them. Here is the complete list:
 
-* `GALETTE_CONFIG_PATH` : chemin vers les fichiers de configuration de Galette,
-* `GALETTE_DATA_PATH` : chemin vers les données de Galette (depuis la version 0.8),
-* `GALETTE_TEMPLATES_PATH` : chemin vers les fichiers de template Smarty de Galette. Ces templates, et le code qu'ils contiennent sont très fortement liés à l'application, je vous déconseille vivement de modifier leur emplacement, de façon à ce qu'ils soient mis à jour systématiquement avec l'application,
-* `GALETTE_LOGS_PATH` : le chemin des logs de Galette ; vous pouvez changer ce paramètre à votre guise,
-* `GALETTE_COMPILE_DIR` : le chemin de compilation des templates Smarty, que vous pouvez également adapter sans scrupules,
-* `GALETTE_CACHE_DIR` : le chemin de cache, qui n'est actuellement utilisé que lors de la génération de PDF,
-* `GALETTE_PLUGINS_PATH` : le chemin des plugins de galette (attention, cela ne fonctionnera peut-être pas en fonction des plugins !! Cette possibilité reste en cours de développement),
-* `GALETTE_EXPORTS_PATH` : le chemin de stockage des exports CSV,
-* `GALETTE_IMPORTS_PATH` : le chemin de stockage des fichiers CSV à importer,
-* `GALETTE_ATTACHMENTS_PATH` : le chemin vers les fichiers attachés,
-* `GALETTE_FILES_PATH` : chemin vers les fichiers stockés pour les adhérents (champs dynamiques),
-* `GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos,
+* `GALETTE_CONFIG_PATH` : path to Galette configuration files,
+* `GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),
+* `GALETTE_LOGS_PATH` : Galette logs path, change it as you want,
+* `GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,
+* `GALETTE_CACHE_DIR` : caching directory for a few cases,
+* `GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,
+* `GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to import,
+* `GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,
+* `GALETTE_FILES_PATH` : path to the dynamic files directory storage (from dynamic fields),
+* `GALETTE_PHOTOS_PATH` : path to store members photos and logos.
 
-Sécurité des données saisies
-============================
+Data security
+=============
 
-Vous-même, ainsi que l'ensemble de vos adhérents, allez probablement vous connecter à Galette, en utilisant un indentifiant et un mot de passe. Il faut savoir que les mots de passe sont dans ce cas transmis au serveur en clair ; et qu'une personne mal intentionnée pourrait récupérer vos identifiants en observant simplement le flux de données que vous transmettez.
+You and yous members will login to Galette, using a login and a pawwsord. You must be aware that tose informations are transmitted as is to the server; and someone may intercept and read them sniffing your exchanges.
 
-La problématique est la même à chaque fois que vous envoyez des informations sur Internet ; c'est pourquoi lorsque l'on vous demande votre numéro de carte bancaire, il faut d'abord vous assurer que la page soit bien sécurisée - qu'elle utilise le protocole HTTPS - votre butineur vous l'indiquera clairement.
+This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive informations such as login, passords, credit card number, ...
 
-Pour Galette, la logique est la même, et vous pouvez parfaitement l'utiliser via SSL, ça ne pose aucun problème ; toutes les données que vous allez saisir via cette connexion seront alors un peu plus confidentielles et sécurisées :)
+And this is the samef for Galette, you can use it walong with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)

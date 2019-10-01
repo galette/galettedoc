@@ -2,70 +2,69 @@
 Installation
 ************
 
-L'installation de Galette se fait entièrement depuis votre navigateur web (une fois :doc:`les étapes préliminaires <preparation>` achevées). Rendez-vous à l'adresse http://localhost/galette/. La procédure de :doc:`mise à jour de votre instance de Galette <update>` est documentée séparément.
+Galette installation is a web based process (once :doc:`preparation steps <preparation>` are done). Go to http://localhost/galette. :doc:`Update process <update>` is documented separately.
 
-Le principe, c'est d'installer Galette depuis l'archive de la dernière version stable. Vous pouvez aussi l'installer depuis :doc:`le code source <../development/git>` (cette méthode est certainement plus complexe pour les non développeurs).
+You should rely on latest stable release, but it is also possible (if your know what you are doing, this is more complex for non developers!) grab it from :doc:`source code <../development/git>`
 
-Vérification des paramètres
-===========================
+Checks
+======
 
-Un certain nombre de choses doit être respécté pour que l'installation de Galette se déroule sans accroc :
+Please check the following if you want Galette to install without problems:
 
-* la version de PHP doit être sufisante,
-* certaines extensions PHP doivent être disponibles,
-* certains dossiers doivent être accessible en écriture.
+* your PHP version is high enough,
+* PHP timezone is set (required since PHP 5.3),
+* all required PHP extensions are installed and loaded,
+* some directories requires write access.
 
-La première étape de l'installation se chargera de vérifier ces points, et vous avertira si quelque chose n'est pas compatible.
+If one of the mandatory extensions is missing or if the timezone is not set, please ask you system administrator. Galette does not require any "exotic" extension.
+
+The very first installation step will check those points, and will warn you if something gets wrong.
 
 .. image:: ../_styles/static/images/installation/1_checks.png
    :scale: 70%
    :align: center
 
-Si toutes :ref:`les étapes de préparation <preparation>` ont été correctement suivies, les droits des dossiers devraient être corrects.
+If all :ref:`the installation steps <preparation>` has been properly followed, directories ACLs should be correct, please refer to :ref:`files ACLs section <droitsfichiers>` and refresh page in your browser.
 
-Cette étape s'assure que les droits nécessaires au bon fonctionnement de Galette ont été placés. En cas de problème (rectangle rouge), référez-vous à la section « :ref:`Droits des fichiers <droitsfichiers>` », rafraîchissez ensuite la page pour relancer la procédure de vérification des droits.
+Installation type
+=================
 
-Elle vérifie aussi la version de PHP utilisée, la présence des modules requis ou conseillés, et le paramétrage de la date (requis depuis PHP 5.3). L'installation d'un module se fait fait sur le serveur (rapprochez-vous de votre hébergeur ou de votre administrateur système, Galette ne requiert à priori rien d'exceptionnel), de même que le paramétrage de la date.
-
-Type d'installation
-===================
-
-L'écran suivant vous permet de choisir le type d'installation. Vous aurez le choix entre « Nouvelle installation » et une « Mise à jour ». Les étapes suivantes seront pour beaucoup communes, mais certaintes étapes spécifiques seront à effectuer dans un cas ou dans l'autre.
+Next screen ask you for installation type. You'll choose beetween "New installation" or "Update". Several of the steps that will follow will be specific to the type you will choose here.
 
 .. image:: ../_styles/static/images/installation/2_type_install.png
    :scale: 70%
    :align: center
 
-Base de données
-===============
+Database
+========
 
-Avant toute chose, vous devez vous assurer que votre base de données existe déjà. Rassemblez les éléments requis, à savoir :
+First of all, make sure the database exists, and prepare all required informations:
 
-* nom de l'hôte
-* nom de l'utilisateur de la base
-* mot de passe de l'utilisateur
-* nom de la base
-* type de la base (MySQL ou PostgreSQL)
+* host name
+* database user name
+* database user password
+* database name
+* database type (MariaDB/MySQL or PostgreSQL)
 
-Création de la base de données
-------------------------------
+Create database
+---------------
 
 .. note::
 
-   **N'utilisez pas l'utilisateur root de votre base de données !**
+   **Never use database root user!**
 
-   Pour des raisons de sécurité, il est fortement conseillé de créer un utilisateur spécifique pour la base de données Galette, et de ne lui attribuer des droits que sur la base Galette.
+   For security reasons, it is stongly advised to rely on a specific user for Galette database, and give him only requested access on the single Galette database.
 
-Pour l'exemple, nous allons nous baser sur une base de données nommée `magalette` appartenant à un utilisateur `monutilisateurgalette` dont le mot de passe est `monmotdepasse`.
+For the example, we will use a database named `mygalette` with a user `mygaletteuser` with `mypass` as password.
 
 * MariaDB
 
   .. code-block:: bash
 
      $ mysql -u root -p
-     mysql> CREATE DATABASE magalette;
+     mysql> CREATE DATABASE mygalette;
      mysql> GRANT ALL ON magalette.* to
-         ->'monutilisateurgalette'@'localhost' IDENTIFIED BY 'monmotdepasse';
+         ->'mygaletteuser'@'localhost' IDENTIFIED BY 'mypass';
 
 * PostgreSQL
 
@@ -73,105 +72,104 @@ Pour l'exemple, nous allons nous baser sur une base de données nommée `magalet
 
      $ su -
      # su - postgres
-     $ createuser -P monutilisateurgalette
-     $ createdb -O monutilisateurgalette magalette
+     $ createuser -P mygaletteuser
+     $ createdb -O mygaletteuser mygalette
 
-Les commandes décrites ci dessus peuvent varier, référez vous aux documentations de `MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ ou de `PostgreSQL <https://docs.postgresqlfr.org>`_ selon votre cas ; ou utilisez un outil graphique :
+Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ documentations, or use a graphical tool:
 
-* `phpMyAdmin <https://www.phpmyadmin.net>`_ pour MariaDB ;
-* `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ou `PgAdmin3 <https://www.pgadmin.org/download/?lang=fr_FR>`_ pour PostgreSQL.
+* `phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;
+* `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL.
 
-Paramètres de la base
----------------------
+Database parameters
+-------------------
 
-Sur cet écran, sélectionnez votre type de base de données puis entrez simplement les nom d'hôte, nom de base de données, nom d'utilisateur et mot de passe. Le préfixe de la table est fort utile si vous n'avez pas une base dédiée intégralement à Galette ; la proposition par défaut devrait être parfaitement acceptable, mais vous pouvez bien entendu y mettre ce que vous souhaitez :-)
+On that screen, select your database type, and enter hostname, database name, user name and password. Tables prefix is usefull if you do not have a Galette dedicated database, defult proposal should be ok but you can choose what you want :)
 
 .. image:: ../_styles/static/images/installation/3_bdd.png
    :scale: 70%
    :align: center
 
-Cette étape sera strictement similaire en installation et en mise à jour. Si un fichier de configuration existe déjà, Galette ira y chercher les informations (à l'exception du mot de passe). En cas de mise à jour, vous devrez vous assurer que le préfixe des tables correspond bel et bien à celui qui existe.
+This step is the same for installation and update processes. If a configuration file already exists, Galette will grab the informations to pre fill the form (not for the password). When upgrading, double check the prefix fit the eisting one.
 
-Vérifications et création des tables
-------------------------------------
+Checks
+------
 
-L'écran suivant va vérifier qu'une connexion peut être établie à votre base de données en utilisant les éléments que vous avez fournis, puis que les droits sont corrects (ajout/suppression/modification de tables, ajout/suppression/modification d'enregistrements, ...).
+Next screen will try to connect to the database using provided elements, than it will check database rights are correct (user can add/remove/alter tables, and can add/remove/edit rows, ...).
 
 .. image:: ../_styles/static/images/installation/4_bdd_rights.png
    :scale: 70%
    :align: center
 
-En cas d'erreur, revenez à l'étape précédente, effectuez les éventuels ajustement requis, puis validez de nouveau en cliquant le bouton « étape suivante ». Si l'erreur concerne un ou plusieurs tests lors de la vérification des droits, il faudra vous assurer que l'utilisateur de votre base de données possède bien les droits requis sur la base.
+If there is a connexion error, go back to previous step, fix your setup and try again. If you see rights issues, get them fixed on your server and use the "Refresh" button.
 
-Création des tables
--------------------
+Create tables
+-------------
 
-.. note:: Ces instructions ne sont valables que pour une nouvelle installation. Dans le cas d'une mise à jour, la base de données existera déjà bien évidemment.
+.. note:: Those instructions are only for installation. When updating, a database already exists.
 
-Si une connexion à la base a pu être établie, et que les droits sont corrects, l'installation va maintenant créer les tables et y insérer les valeurs par défaut. La création des tables peut être vérifiée à l'aide de PhpMyAdmin.
+If a connection can be established to the database, and all is correct; installer will now create the tables, and insert default values. You can show created tables from any graphical tool or in command line:
 
-En ligne de commande, vous pouvez utiliser :
-
-* pour MariaDB :
+* MariaDB :
 
   .. code-block:: bash
 
-     mysql> use magalette;
+     mysql> use mygalette;
      mysql> show tables;
 
-* pour PostgreSQL :
+* PostgreSQL :
 
   .. code-block:: bash
 
-     postgres=# \c magalette
+     postgres=# \c mygalette
      postgres=# \dt
 
 .. image:: ../_styles/static/images/installation/5_tables_creation.png
    :scale: 70%
    :align: center
 
-Paramètres de l'administrateur
-==============================
+Admin parameters
+================
 
-.. note:: Cet écran n'est affiché qu'en cas d'installation. Lors d'une mise à jour, les paramètres administrateurs auront déjà été renseignés ;)
+.. note:: This screen is displayed from installation only. When updating, super admin user is already existing.
 
-L'écran suivant vous demande de saisir les informations de l'administrateur de Galette. Par la suite, certains comptes créés via l'interface pourront être élevés au rang d'administrateur également, mais celui qui est créé à l'installation n'est pas un adhérent, il ne peut pas être supprimé et possède certains droits particuliers.
+Next screen will ask you for informations to create the Galette super admin user. Using Galette, you can set some members as administrators, but the one created at installation time is not a member, cannot be removed, and has some extra rights.
 
 .. image:: ../_styles/static/images/installation/6_admin.png
    :scale: 70%
    :align: center
 
-Initialisation
-==============
+Initialyse
+==========
 
-La toute dernière étape va écrire le fichier de configuration (s'il n'existe pas ou s'il n'est pas à jour), et initialiser certaines valeurs dans votre base de données toute fraîche, comme par exemple :
+The last step will write the configuration file if needed, and initialyse some values in your fresh databae, as exemple:
 
-* la création des préférences de base,
-* l'ajout des types de contributions et des statuts par défaut,
-* la configuration des champs et leur visibilité,
-* les textes des différents courriels,
-* les titres des adhérents,
-* les modèles PDF,
+* add Galette default preferences
+* add default contributions and statuses types,
+* fields configuration and permissions,
+* texts for administrative emails,
+* members default titles,
+* default PDF models
 * ...
 
-Lors d'une mise à jour, la plupart des données de base étant déjà initialisées, la liste sera beaucoup moins longue.
+When updating, only the missing preferences and the new default data if any will be handled.
 
-Fin de l'installation
-=====================
+Installation end
+================
 
-Nous voici à la fin de l'installation, félicitations !
+Installation is now finished, congratulations!
 
 .. warning::
 
-   Pour des raisons de sécurité, nous vous **conseillons fortement de supprimer le dossier install**, ou, au pire, d'en désactiver l'accès par le serveur web.
+   For security reasons, **we advise you to remove the install directory** if it is web exposed, or to drop access from your web configuration.
 
 .. image:: ../_styles/static/images/installation/8_the_end.png
    :scale: 70%
    :align: center
 
-Vous avez maintenant accès à la page de login de Galette, entrez-y les identifiants administrateur préalablement renseignés, et vous pouvez commencer à l'utiliser. Vous pouvez maintenant vous référer au :doc:`manuel de l'utilisateur de Galette <../usermanual/index>`.
+You can now login to Galette, using super admin informations you used at installation time. You can now go to the :doc:`Galette user manual <../usermanual/index>`.
 
 .. image:: ../_styles/static/images/installation/9_login.png
    :scale: 70%
    :align: center
 
+Happy Galette!
