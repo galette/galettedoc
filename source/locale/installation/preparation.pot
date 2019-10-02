@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-02 09:14+0200\n"
+"POT-Creation-Date: 2019-10-02 17:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../installation/preparation.rst:9
 # 7b90a83dc90642909e78e74a4fb6e58f
-msgid "You have to follow some preparation steps for Galette installation. The way to go differs on wht you want to achieve."
+msgid "You have to follow some preparation steps for Galette installation. The way to go differs on what you want to achieve."
 msgstr ""
 
 #: ../installation/preparation.rst:14
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../installation/preparation.rst:33
 # 11c67833dd714e23b0c7cb9a41419076
-msgid "write access ``config`` directory is only needed for Galette installation, we advice you to reove the write access once Galette has been installed :)"
+msgid "write access on ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)"
 msgstr ""
 
 #: ../installation/preparation.rst:38
@@ -103,17 +103,17 @@ msgstr ""
 
 #: ../installation/preparation.rst:42
 # 59bf98803a7543038830473e8ba47e45
-msgid "Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This way to go works well, but this exposes from the web files and directories that should not be available this way."
+msgid "Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way."
 msgstr ""
 
 #: ../installation/preparation.rst:44
 # dc37e38b2bc9483fa5a562f161865a5b
-msgid "It is possible to limit that by exposing only the ``webroot`` directory. All oter directories are more safe : it is not possible to reach them from the web server!"
+msgid "It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!"
 msgstr ""
 
 #: ../installation/preparation.rst:48
 # 801d1e39a00249ce99b648ce5f6804e6
-msgid "Exposing onlye ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution."
+msgid "Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution."
 msgstr ""
 
 #: ../installation/preparation.rst:50
@@ -198,12 +198,12 @@ msgstr ""
 
 #: ../installation/ftp.rst:26
 # aad00390258f44e1a6dd2b960bf7e2d5
-msgid "Aditionnal informations are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
+msgid "Additionnal informations are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 
 #: ../installation/ftp.rst:30
 # a60b387f545d4e9c8fff0ea509f94fb1
-msgid "Many users have display images or ermagement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:"
+msgid "Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:"
 msgstr ""
 
 #: ../installation/ftp.rst:37
@@ -218,7 +218,7 @@ msgstr ""
 
 #: ../installation/ftp.rst:41
 # 5407508779f64027b788b8517ef4946b
-msgid "So you have to convert restriction access files in Nginx configuration, as per example:"
+msgid "So you have to convert restriction access files in Nginx configuration, as for example:"
 msgstr ""
 
 #: ../installation/windows.rst:4
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../installation/windows.rst:6
 # 61ebebf7b3e34049b544fa763859883a
-msgid "Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; ohter instalaltion methods exists but are not listed here."
+msgid "Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; other installation methods exist but are not listed here."
 msgstr ""
 
 #: ../installation/windows.rst:8
@@ -248,7 +248,7 @@ msgstr ""
 
 #: ../installation/windows.rst:24
 # acaacc99a013455faf2483a883986eb0
-msgid "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line bebings with a \";\"), just uncomment them and restart XAMPP."
+msgid "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a \";\"), just uncomment them and restart XAMPP."
 msgstr ""
 
 #: ../installation/windows.rst:26
