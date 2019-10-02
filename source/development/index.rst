@@ -4,7 +4,7 @@
 
    .. rst-class:: docs devel_doc
 
-   :doc:`guide du développeur <index>`
+   :doc:`developer guide <index>`
 
 .. rst-class:: doc_main_page
 
@@ -12,13 +12,22 @@
 Developer manual
 ================
 
-Le projet Galette est hébergé chez `TuxFamily <https://www.tuxfamily.org>`_ :
+Galette project is kindly hosted by `TuxFamily <https://www.tuxfamily.org>`_:
 
-* le `site web de Galette <https://galette.eu>`_,
-* :doc:`un dépôt GIT pour gérer les source de galette <git>` ; dans lesquelles les modifications sont apportées,
-* `un gestionnaire de bogues <https://bugs.galette.eu/projects/galette/>`_, pour nous signaler tout problème que vous auriez rencontré ainsi et aussi nous faire connaître les fonctionnalités ou autres améliorations que vous souhaiteriez voir intégrer au projet.
+* `Galette website <https://galette.eu>`_,
+* :doc:`a GIT repository to manage Galette source code <git>`,
+* mailing lists,
+* ...
 
-La présente documentation vous expliquera les règles de développement adoptées pour Galette, ainsi que la récupération du code source, etc.
+There are also a few external services:
+
+* `a bug tracker <https://bugs.galette.eu/projects/galette/>`_, to declare issues or to ask for evolutions,
+* `a wonderfull :p documentation <https://doc.galette.eu>`_, you are currently reading,
+* `a voting system <https://vote.galette.eu>`_, you can vote for proposed features,
+* a `Github mirror <htttps://github.com/galette/galette>`_, that is used to run unit tests or documentation on readthedocs, amon others,
+* `a continous integration system <https://travis-ci.org/galette/galette>`_, that run a bunch of tests each time a commit is done on the github mirror.
+
+Current documentation aims to help you understand development rules for Galette, how the code is managed, ...
 
 .. toctree::
    :maxdepth: 2
