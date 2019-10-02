@@ -83,13 +83,13 @@ Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/lib
 Database parameters
 -------------------
 
-On that screen, select your database type, and enter hostname, database name, user name and password. Tables prefix is usefull if you do not have a Galette dedicated database, defult proposal should be ok but you can choose what you want :)
+On that screen, select your database type, and enter hostname, database name, user name and password. Tables prefix is usefull if you do not have a Galette dedicated database, default proposal should be ok but you can choose what you want :)
 
 .. image:: ../_styles/static/images/installation/3_bdd.png
    :scale: 70%
    :align: center
 
-This step is the same for installation and update processes. If a configuration file already exists, Galette will grab the informations to pre fill the form (not for the password). When upgrading, double check the prefix fit the eisting one.
+This step is the same for installation and update processes. If a configuration file already exists, Galette will grab the informations to pre fill the form (not for the password). When upgrading, double check the prefix fit the existing one.
 
 Checks
 ------
@@ -141,10 +141,10 @@ Next screen will ask you for informations to create the Galette super admin user
 Initialyse
 ==========
 
-The last step will write the configuration file if needed, and initialyse some values in your fresh databae, as exemple:
+The last step will write the configuration file if needed, and initialyse some values in your fresh database, as exemple:
 
 * add Galette default preferences
-* add default contributions and statuses types,
+* add default contributions and status types,
 * fields configuration and permissions,
 * texts for administrative emails,
 * members default titles,

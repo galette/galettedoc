@@ -10,7 +10,7 @@ Various tasks
 One Galette properly installed, you still have a few things to do:
 
 * remove write access to the ``config`` directory,
-* remove the whole ``install`` directory, ou make it unavailable with a directive like (ofr Apache):
+* remove the whole ``install`` directory, or make it unavailable with a directive like (for Apache):
 
 .. code-block:: apacheconf
 
@@ -53,8 +53,8 @@ All paths that originally resides in ``data`` directory must stay accessible rea
 Data security
 =============
 
-You and yous members will login to Galette, using a login and a pawwsord. You must be aware that tose informations are transmitted as is to the server; and someone may intercept and read them sniffing your exchanges.
+You and your members will login to Galette, using a login and a password. You must be aware that those informations are transmitted as is to the server; and someone may intercept and read them sniffing your exchanges.
 
-This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive informations such as login, passords, credit card number, ...
+This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive informations such as login, passwords, credit card number, ...
 
-And this is the samef for Galette, you can use it walong with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)
+And this is the same for Galette, you can use it walong with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)

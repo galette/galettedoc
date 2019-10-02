@@ -3,7 +3,7 @@
 Windows
 =======
 
-Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; ohter instalaltion methods exists but are not listed here.
+Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; other installation methods exist but are not listed here.
 
 First of all, download XAMPP on your computer. Let's install it under ``C:\xampp``.
 
@@ -21,6 +21,6 @@ Once those steps done, download galette and move it to ``C:\wampp\htdocs\galette
 
 .. note::
 
-   Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line bebings with a ";"), just uncomment them and restart XAMPP.
+   Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a ";"), just uncomment them and restart XAMPP.
 
    `openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``

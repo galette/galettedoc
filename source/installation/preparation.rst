@@ -6,7 +6,7 @@
 Preparation
 ***********
 
-You have to follow some preparation steps for Galette installation. The way to go differs on wht you want to achieve.
+You have to follow some preparation steps for Galette installation. The way to go differs on what you want to achieve.
 
 .. _droitsfichiers:
 
@@ -30,7 +30,7 @@ Some Galette directories need specific rights. The application will need to writ
 * |folder| `data/tempimages`,
 * |folder| `data/templates_c`
 
-.. [#configdirperms] write access ``config`` directory is only needed for Galette installation, we advice you to reove the write access once Galette has been installed :)
+.. [#configdirperms] write access ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)
 
 .. _installationsubdir:
 
@@ -39,9 +39,9 @@ Web server directory exposition
 
 .. versionadded:: 0.9
 
-Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This way to go works well, but this exposes from the web files and directories that should not be available this way. 
+Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way.
 
-It is possible to limit that by exposing only the ``webroot`` directory. All oter directories are more safe : it is not possible to reach them from the web server!
+It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!
 
 .. note::
 
