@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-02 09:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,26 +23,26 @@ msgstr ""
 
 #: ../installation/unix.rst:6
 # bf7d6ae6f9ee4764bb9629acb51523bb
-msgid "L'installation de Galette sous Linux pré-suppose uniquement que vous ayez l'accès à un terminal sur le serveur, et les autorisations nécessaires pour adapter les droits sur les dossiers."
+msgid "Installing Galette on Linux implies you have an access to the terminal on the server and required ACLs on directories."
 msgstr ""
 
 #: ../installation/unix.rst:8
 # ab2a4ec4941546c88a864f7ef2a3fb29
-msgid "Par exemple, sous `Fedora <https://fedora-fr.org>`_, vous lancerez (en root) :"
+msgid "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 
 #: ../installation/unix.rst:15
 # 2936ad3d31774a6ca6c0bd5f2b0e9460
-msgid "Sous `Debian <https://debian.org/>`_, on remplacera ``apache:apache`` par ``www-data:www-data``."
+msgid "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with ``www-data:www-data``."
 msgstr ""
 
 #: ../installation/unix.rst:17
-# d4b1fafaa39d453b8ee6a31655f1c6c4
-msgid "Pour les systèmes protégés par SELinux, on entrera de surcroît :"
+# 0375b83df0474f259770abb95b6a27a0
+msgid "On SELinux enabled systems, we'll also add:"
 msgstr ""
 
 #: ../installation/unix.rst:25
-# a9065a4545e64ce1a8d93a2d5d64d98a
-msgid "De plus, vous devrez autoriser le serveur web à se connecter au réseau via un booléen SELinux :"
+# f834501aa7b84eb8a441c7ed2b35e1ce
+msgid "You will also have to authorize webserver to connect to the network, with a SELinux boolean:"
 msgstr ""
 

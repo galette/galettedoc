@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-02 09:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,131 +18,121 @@ msgstr ""
 
 #: ../installation/postinstall.rst:5
 # 9ac75a1dd092403a98b7921a4c654916
-msgid "Après installation"
+msgid "Post installation"
 msgstr ""
 
 #: ../installation/postinstall.rst:8
-# 995abfe1457d409eacb5890a43a830a4
-msgid "Tâches diverses"
+# ed8c921ecce445819f6927d767433dc4
+msgid "Various tasks"
 msgstr ""
 
 #: ../installation/postinstall.rst:10
 # a887828011774b3bbbd7d9a077fb7a38
-msgid "Une fois votre Galette correctement installée, il reste une ou deux petites choses à faire :"
+msgid "One Galette properly installed, you still have a few things to do:"
 msgstr ""
 
 #: ../installation/postinstall.rst:12
-# 02a8055756084d3aac42570654847513
-msgid "vous pouvez retirer les droits en écriture sur le dossier ``config``,"
+# 14648c144c9b497eb1d7c5a05bdbdcfc
+msgid "remove write access to the ``config`` directory,"
 msgstr ""
 
 #: ../installation/postinstall.rst:13
-# a59acf88ef8144d4838457f36062ad4b
-msgid "supprimez le dossier ``install``, ou rendez-le inaccessible, par exemple avec la directive suivante dans la configuration d'un hôte virtuel (l'exemple donné ici fonctionnera pour Apache) :"
+# 0ead6649441843f0ab864a76bc1b1adb
+msgid "remove the whole ``install`` directory, ou make it unavailable with a directive like (ofr Apache):"
 msgstr ""
 
 #: ../installation/postinstall.rst:25
-# 774f3c37f7764c5cbcb8df424126582c
-msgid "Paramétrage des chemins"
+# f06b4105ce3b485abe9341fc7bbd2523
+msgid "Configure paths"
 msgstr ""
 
 #: ../installation/postinstall.rst:27
-# ac66d649bff14eca9115d79104b3f439
-msgid "Certains chemins dans Galette sont paramétrables, comme le dossier des exports, des photos, etc."
+# 3a846642ea6c4f6fa1138f782d56ca4b
+msgid "Some galette paths may be changed from a configuration parameter, such as exports, photos, etc"
 msgstr ""
 
 #: ../installation/postinstall.rst:29
 # e052efb60d2f489ea03c17063aa4ed08
-msgid "Par défaut, Galette est fourni avec l'ensemble de ces chemins pointant à l'intérieur du dossier d'installation. Ainsi, si l'installation se trouve dans le dossier ``/var/www/galette`` ; les exports seront effectués dans ``/var/www/galette/data/exports``, les photos seront stockées dans ``/var/www/galette/data/photos/``, et ainsi de suite. La configuration par défaut est définie dans le fichier ``config/paths.inc.php``, qui ne doit pas être modifié."
+msgid "By default, Galette provides all those directories inside installation directory. That way, if installation is located at ``/var/www/galette``, exports will be in ``/var/www/galette/data/exports``, photos in ``/var/www/galette/data/photos/``, and so on. Default configuration is done in ``config/paths.inc.php`` file that should not be changed."
 msgstr ""
 
 #: ../installation/postinstall.rst:32
-# f888ad7b67f3436880fc70966beaad5e
-msgid "Il est possible de surcharger tout ou partie de ces chemins en créant le fichier ``local_paths.inc.php`` dans le dossier ``config``, il suffira alors d'y placer les chemins souhaités ; sous forme de déclaration de variables globales PHP. Par exemple, pour définir un emplacement particulier pour les photos ; ce fichier contiendrait :"
+# 96ca20a347f445f8851b84037b881c39
+msgid "Instead, you may override some or all of the values in a ``config/local_paths.inc.php``, with paths you want declared as PHP constants. For exemple, to define a different path for photos:"
 msgstr ""
 
 #: ../installation/postinstall.rst:40
-# 7a69d98f3864466597be16e593580a12
-msgid "Les chemins de Galette doivent pour la plupart impérativement être accessibles en écriture par le serveur web, sous peine de mauvais fonctionnement de l'application, et d'erreurs pas toujours très faciles à comprendre ou à tracer. Les deux seules exceptions à cette règle concernent les templates (le serveur web n'a aucun besoin d'écrire là dedans !) et les plugins (les droits en écriture ne sont pas requis sur les dossiers des plugins, et ne devraient jamais l'être)."
+# 0d06930083394179bb1727ff805ed333
+msgid "All paths that originally resides in ``data`` directory must stay accessible read/write for the web server. All other directories should be set as read only, the web server should not have to write in them. Here is the complete list:"
 msgstr ""
 
 #: ../installation/postinstall.rst:42
 # 92c0df65c4ef4310b032404042254139
-msgid "`GALETTE_CONFIG_PATH` : chemin vers les fichiers de configuration de Galette,"
+msgid "`GALETTE_CONFIG_PATH` : path to Galette configuration files,"
 msgstr ""
 
 #: ../installation/postinstall.rst:43
 # 1b4986a423b74938bbed1ec06402e3b8
-msgid "`GALETTE_DATA_PATH` : chemin vers les données de Galette (depuis la version 0.8),"
+msgid "`GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),"
 msgstr ""
 
 #: ../installation/postinstall.rst:44
-# 2c7b6531b0d649f4b03a31130f01476c
-msgid "`GALETTE_TEMPLATES_PATH` : chemin vers les fichiers de template Smarty de Galette. Ces templates, et le code qu'ils contiennent sont très fortement liés à l'application, je vous déconseille vivement de modifier leur emplacement, de façon à ce qu'ils soient mis à jour systématiquement avec l'application,"
+# dcadac40499d499f95f21b783bb6485d
+msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr ""
 
 #: ../installation/postinstall.rst:45
-# dcadac40499d499f95f21b783bb6485d
-msgid "`GALETTE_LOGS_PATH` : le chemin des logs de Galette ; vous pouvez changer ce paramètre à votre guise,"
+# 50f20e8a214d4ba0a6f1ad436d3288c7
+msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
 msgstr ""
 
 #: ../installation/postinstall.rst:46
-# 50f20e8a214d4ba0a6f1ad436d3288c7
-msgid "`GALETTE_COMPILE_DIR` : le chemin de compilation des templates Smarty, que vous pouvez également adapter sans scrupules,"
+# e578530b0fe9408ba7bce8e0af5e460d
+msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
 msgstr ""
 
 #: ../installation/postinstall.rst:47
-# b4f6e0b92be14835a3257b400604db66
-msgid "`GALETTE_CACHE_DIR` : le chemin de cache, qui n'est actuellement utilisé que lors de la génération de PDF,"
+# 70ad3f3e6e9d43b7b7b93949782dc83a
+msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
 
 #: ../installation/postinstall.rst:48
-# 223f625806be41c0b0c79f7185b47499
-msgid "`GALETTE_PLUGINS_PATH` : le chemin des plugins de galette (attention, cela ne fonctionnera peut-être pas en fonction des plugins !! Cette possibilité reste en cours de développement),"
+# 2d4cc3d2ed714548bb6246cf8f8b5db2
+msgid "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to import,"
 msgstr ""
 
 #: ../installation/postinstall.rst:49
-# 70ad3f3e6e9d43b7b7b93949782dc83a
-msgid "`GALETTE_EXPORTS_PATH` : le chemin de stockage des exports CSV,"
+# e578530b0fe9408ba7bce8e0af5e460d
+msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
 msgstr ""
 
 #: ../installation/postinstall.rst:50
-# 2d4cc3d2ed714548bb6246cf8f8b5db2
-msgid "`GALETTE_IMPORTS_PATH` : le chemin de stockage des fichiers CSV à importer,"
+# 2c3f056b3c244a459b8a368e419c8a00
+msgid "`GALETTE_FILES_PATH` : path to the dynamic files directory storage (from dynamic fields),"
 msgstr ""
 
 #: ../installation/postinstall.rst:51
-# e578530b0fe9408ba7bce8e0af5e460d
-msgid "`GALETTE_ATTACHMENTS_PATH` : le chemin vers les fichiers attachés,"
-msgstr ""
-
-#: ../installation/postinstall.rst:52
-# 2c3f056b3c244a459b8a368e419c8a00
-msgid "`GALETTE_FILES_PATH` : chemin vers les fichiers stockés pour les adhérents (champs dynamiques),"
-msgstr ""
-
-#: ../installation/postinstall.rst:53
 # 84e5f33b5d37473dacf2c5b0fafb8b55
-msgid "`GALETTE_PHOTOS_PATH` : le chemin de stockage des photos des adhérents, et des logos,"
+msgid "`GALETTE_PHOTOS_PATH` : path to store members photos and logos."
+msgstr ""
+
+#: ../installation/postinstall.rst:54
+# aeef68dfde5d4d328bfd898a726c6feb
+msgid "Data security"
 msgstr ""
 
 #: ../installation/postinstall.rst:56
-# 0714cb5ceeb84ea6920807a683af8684
-msgid "Sécurité des données saisies"
+# e949649a9d6442a7b9b15cb6371ee061
+msgid "You and yous members will login to Galette, using a login and a pawwsord. You must be aware that tose informations are transmitted as is to the server; and someone may intercept and read them sniffing your exchanges."
 msgstr ""
 
 #: ../installation/postinstall.rst:58
-# fc193637bcb6481d8bd604218c4f04fe
-msgid "Vous-même, ainsi que l'ensemble de vos adhérents, allez probablement vous connecter à Galette, en utilisant un indentifiant et un mot de passe. Il faut savoir que les mots de passe sont dans ce cas transmis au serveur en clair ; et qu'une personne mal intentionnée pourrait récupérer vos identifiants en observant simplement le flux de données que vous transmettez."
+# 7507b88a510d4be5815ea243f5d20abf
+msgid "This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive informations such as login, passords, credit card number, ..."
 msgstr ""
 
 #: ../installation/postinstall.rst:60
-# ede2d7f7a0374aa28c68643998a96383
-msgid "La problématique est la même à chaque fois que vous envoyez des informations sur Internet ; c'est pourquoi lorsque l'on vous demande votre numéro de carte bancaire, il faut d'abord vous assurer que la page soit bien sécurisée - qu'elle utilise le protocole HTTPS - votre butineur vous l'indiquera clairement."
-msgstr ""
-
-#: ../installation/postinstall.rst:62
-# 91a16704b1384a3c9ed214d69246df23
-msgid "Pour Galette, la logique est la même, et vous pouvez parfaitement l'utiliser via SSL, ça ne pose aucun problème ; toutes les données que vous allez saisir via cette connexion seront alors un peu plus confidentielles et sécurisées :)"
+# 836ec337cd8c4786b22392883653cbb2
+msgid "And this is the samef for Galette, you can use it walong with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)"
 msgstr ""
 

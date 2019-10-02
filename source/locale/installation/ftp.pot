@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-02 09:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,22 +23,22 @@ msgstr ""
 
 #: ../installation/ftp.rst:8
 # e1177e0fc78248bf8cc9a5aa4550eaa2
-msgid "Certains logiciels utilisés pour la décompression de l'archive, ou pour l'envoi des fichiers en FTP peuvent corrompre les fichiers... Il est fortement recommandé sous Windows d'avoir recours à `7zip <https://www.7-zip.fr>`_ pour la décompression et à `FileZilla <https://filezilla-project.org/>`_ pour l'envoi des fichiers."
+msgid "Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ fo TFP transferts."
 msgstr ""
 
 #: ../installation/ftp.rst:10
 # 641802a5d0524b969d996d65849145ac
-msgid "Une fois les sources récupérées en local, utilisez la commande :samp:`tar xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou le `logiciel libre 7zip <https://www.7-zip.fr>`_ sous Windows."
+msgid "Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
 msgstr ""
 
 #: ../installation/ftp.rst:12
-# 80f9354bddb84b5886a9b51193d00906
-msgid "Envoyez ensuite à l'emplacement prévu chez votre hébergeur, le dossier décompressé (ainsi que l'ensemble des dossiers et fichiers extraits) via un client FTP, par exemple le `logiciel libre FileZilla <https://filezilla-project.org/>`_."
+# 32ef2360be684dbb8fa5db5cfff8207e
+msgid "Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client."
 msgstr ""
 
 #: ../installation/ftp.rst:19
-# c913cd00c12f4666afb4c5713edfe8c9
-msgid "Cas particuliers"
+# 969ab82c1de4437f859e0d17a50fd3d1
+msgid "Specific cases"
 msgstr ""
 
 #: ../installation/ftp.rst:22
@@ -48,17 +48,17 @@ msgstr ""
 
 #: ../installation/ftp.rst:24
 # c2f48fd2ca694541bfed4f437fb7b15f
-msgid "Cet hébergeur propose de `modifier la version de PHP utilisée depuis la configuration de votre compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
+msgid "This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
 msgstr ""
 
 #: ../installation/ftp.rst:26
 # 89db6d9accf546589b65239c564e36c5
-msgid "Des informations complémentaires sont disponibles à l'addresse : https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
+msgid "Aditionnal informations are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 
 #: ../installation/ftp.rst:30
-# cd8bfefd8e7747fcb55f84948a2604b5
-msgid "Beaucoup d'utilisateurs rencontrent des problèmes d'affichage des images ou d'accès à la liste d'émargement sur les hébergements OVH. La solution à ce problème passe par la configuration de votre espace. Il faut créer un fichier `.ovhconfig` à la racine du site avec le contenu suivant :"
+# 5f78f4e491c2441a884e481e1f39739d
+msgid "Many users have display images or ermagement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:"
 msgstr ""
 
 #: ../installation/ftp.rst:37
@@ -68,11 +68,11 @@ msgstr ""
 
 #: ../installation/ftp.rst:39
 # 43563b67c0614d32b3e8210e7d02bca3
-msgid "Le `serveur web Nginx <https://nginx.com>`_ adopte une configuration différente de celle d'Apache (consultez `la documentation de Nginx pour une explication plus complète <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
+msgid "`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
 msgstr ""
 
 #: ../installation/ftp.rst:41
 # da241153d65747b9b1bdf27a8df68008
-msgid "Il conviendra donc traduire les règles de restriction d'accès aux données dans la configuration Nginx. Par exemple :"
+msgid "So you have to convert restriction access files in Nginx configuration, as per example:"
 msgstr ""
 

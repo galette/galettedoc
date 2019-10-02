@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-02 09:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,31 +23,31 @@ msgstr ""
 
 #: ../installation/windows.rst:6
 # f6fdfc6962984f379228e373c91b3232
-msgid "L'installation présentée ici repose sur `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_ ; il existe d'autres méthodes d'installation qui ne seront pas décrites ici."
+msgid "Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; ohter instalaltion methods exists but are not listed here."
 msgstr ""
 
 #: ../installation/windows.rst:8
 # 8e91949bd432436890b6139b39452479
-msgid "Dans un premier temps, il faudra donc télécharger et installer XAMPP sur votre poste. Installons tout cela dans ``C:\\xampp``."
+msgid "First of all, download XAMPP on your computer. Let's install it under ``C:\\xampp``."
 msgstr ""
 
 #: ../installation/windows.rst:14
 # 4ef0afad21be48ae82015f1e8ea5dd87
-msgid "Lancez ensuite le programme ``xampp-control`` (qui se trouve dans ``C:\\xampp``), afin de démarrer les services Apache et MySQL."
+msgid "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), so you can start Apache and MySQL services."
 msgstr ""
 
 #: ../installation/windows.rst:20
 # ca0de9eb08e14478b5a88934ae160e90
-msgid "Une fois ces étapes effectuées, il vous faudra récupérer Galette et la placer dans le dossier ``C:\\wampp\\htdocs\\galette``, l'application sera alors accessible à l'adresse http://127.0.0.1/galette/. Il suffit de visiter cette adresse pour que le processus d'installation se lance."
+msgid "Once those steps done, download galette and move it to ``C:\\wampp\\htdocs\\galette``, web application will be available from http://127.0.0.1/galette/. Just visit this URL so the installation process begin."
 msgstr ""
 
 #: ../installation/windows.rst:24
 # f7247473dc5a4bdeae9d932ca0a3a34b
-msgid "L'activation de modules PHP sous XAMPP se fait dans le fichier ``xampp/php/php.ini``. La plupart des extensions requises sont déjà présentes, mais commentées (ligne précédée d'un point-virgule) ; il suffira alors de décommenter les lignes adéquates, et de relancer XAMPP."
+msgid "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line bebings with a \";\"), just uncomment them and restart XAMPP."
 msgstr ""
 
 #: ../installation/windows.rst:26
 # 9e5a5423b2274177ae720e1935bec4d2
-msgid "L'extension `openssl` n'est pas présente dans le fichier, il faudra pour l'activer ajouter la ligne suivante à votre `php.ini` ``extension=php_openssl.dll``"
+msgid "`openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``"
 msgstr ""
 
