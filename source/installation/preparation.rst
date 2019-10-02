@@ -30,7 +30,7 @@ Some Galette directories need specific rights. The application will need to writ
 * |folder| `data/tempimages`,
 * |folder| `data/templates_c`
 
-.. [#configdirperms] write access ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)
+.. [#configdirperms] write access on ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)
 
 .. _installationsubdir:
 
@@ -45,7 +45,7 @@ It is possible to limit that by exposing only the ``webroot`` directory. All oth
 
 .. note::
 
-   Exposing onlye ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution.
+   Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution.
 
    And that will certainly not be possible for many free hostings.
 
