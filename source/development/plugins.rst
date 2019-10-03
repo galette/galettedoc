@@ -489,13 +489,6 @@ Si vous suivez les règles de développement de Galette et de ses plugins, il es
 
 Le premier lancement de `make` peut vous renvoyer pas mal d'erreurs, que vous pouvez ignorer en toute quiétude ; les fichiers ``.po`` sont vides, et il n'apprécie pas :) En revanche, les dossiers et fichiers requis ont été générés et remplis, et vous pouvez maintenant utiliser votre logiciel de traduction de fichiers gettext pour renseigner leur contenu.
 
-Internationalisation des routes
--------------------------------
-
-Les routes dans Galette sont internationnalisées ; bien que ce ne soit pas une obligation. Si vous souhaitez utliser les possibilités d'internationalisation, vous devrez utiliser la méthode ``__()`` qui se comporte exactement comme la fonction ``_T()`` mais qui n'affichera que la chaîne d'origine si la traduction est manquante.
-
-Il convient aussi de respecter certaines règles quant aux URL : éviter les caractères spéciaux, éviter les majuscules, remplacer les espaces par des tirets simples, ... et être concis :)
-
 Scripts de mise à jour
 ======================
 
