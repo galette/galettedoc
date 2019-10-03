@@ -100,7 +100,7 @@ In order to test your modifications locally on your workstation, you will need t
 
 .. note::
 
-   By default, the ``make`` command will build the documentation in French.
+   By default, the ``make`` command will build the documentation in current locale.
 
 
 How to contribute?
