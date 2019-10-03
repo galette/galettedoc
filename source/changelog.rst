@@ -1089,24 +1089,21 @@ Quelques plugins sont dores et déjà disponibles pour Galette !
 0.60 -> 0.61
 ************
 
-* Correction du formulaire d'édition d'adhérent (admin)
-* Fusion des fichiers ajouter_adherent.php et gestion_contributions.php
-  (edition de membre)
-* Les prefixes de tables sont maintenant autorisés
-* Réduction des photos si GD est disponible
-* Les équivalents HTML dans les noms d'adhérents étaient parfois
-  mal affichés
-* Retour aux contributions d'un membre après l'ajout d'un contribution
-* Filtre sur les dates dans le listing des cotisations
-* Correction de fautes d'orthographe
-* Liens de navigation sur la fiche de cotisations d'un membre
-* Cliquer sur le nom d'un adhérent dans la liste des cotisations
-  permet d'obtenir ses contributions au lieu de son profil
-* Lien "mot de passe perdu"
-* Masquage de la signification de l'acronyme "Galette"
-* Corrections dans les en-têtes
-* Meilleure détection du fichier de langue
-* Correction de bug dans l'affichage des vignettes
-* La permission DROP n'était pas vérifiée durant l'installation
-* Traduction en anglais
+* Fix the membership editing form (admin)
+* Merge files add_adherent.php and management_contributions.php (membership edition)
+* Table prefixes are now allowed
+* Shrink photos if GD is available
+* HTML equivalents in membership names were sometimes poorly displayed
+* Back to the contributions of a member after adding a contribution
+* Filter by date on the list of contributions
+* Fix spelling errors
+* Navigation links on the membership form of a member
+* Click on the name of a member in the list of contributions allows to get his contributions instead of his profile
+* "Lost password" link
+* Hiding the meaning of "Galette" acronym
+* Fixes in the headers
+* Better detection of the language file
+* Fix bug on thumbnails display
+* DROP permission was not verified during installation
+* English translation
 
