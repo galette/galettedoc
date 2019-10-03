@@ -61,16 +61,16 @@
 0.62 -> 0.63
 ************
 
-* Changement de leader du projet :-)
-* Ajout de la gestion des transactions
-* Ajout de la gestion de champs dynamiques, pour ajouter des champs supplémentaires aux fiches adhérents ; ainsi que la traduction des libellés de ces champs
-* Les membres peuvent désormais s'inscrire eux-mêmes
-* Utilisation du moteur de templates Smarty pour la génération des pages. Ceci a causé la ré-écriture de l'ensemble des pages en XHTML
-* Mise à jour de ADODB de 4.7.1 vers 4.9.2
-* Utilisation des possibilités de gettext pour les traductions
-* Ajout de la traduction espagnole (toutes les chaînes ne sont pas encore traduites)
-* Possibilité d'envoyer un logo personnalisé
-* Correction de nombreux bogues
+* Project leader has changed :-)
+* Add transactions management
+* Add dynamic fields, to add extra fields to members, as well as their label translation
+* Members can now self subscribe
+* Use Smarty templating system to generate pages. This causes the rewriting of all pages to XHTML
+* Update ADODB from 4.7.1 to 4.9.2
+* Use gettext capabilities for translations
+* Add spanih translation (all strings are not yet translated)
+* Capacity to use a custom logo
+* Fix of numerous bugs
 
 ***************
 0.62a -> 0.62.2
@@ -132,26 +132,4 @@
 * Better language file detection
 * Bugfix in thumbnail display
 * DROP permission wasn't checked during install process
-* English translation
-
-************
-0.60 -> 0.61
-************
-
-* Fix the membership editing form (admin)
-* Merge files add_adherent.php and management_contributions.php (membership edition)
-* Table prefixes are now allowed
-* Shrink photos if GD is available
-* HTML equivalents in membership names were sometimes poorly displayed
-* Back to the contributions of a member after adding a contribution
-* Filter by date on the list of contributions
-* Fix spelling errors
-* Navigation links on the membership form of a member
-* Click on the name of a member in the list of contributions allows to get his contributions instead of his profile
-* "Lost password" link
-* Hiding the meaning of "Galette" acronym
-* Fixes in the headers
-* Better detection of the language file
-* Fix bug on thumbnails display
-* DROP permission was not verified during installation
 * English translation
