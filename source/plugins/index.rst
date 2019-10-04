@@ -29,11 +29,11 @@ Les plugins « officiels » sont développés et/ou maintenus par l'équipe de d
 
    paypal.rst
    fullcard.rst
-   admintools.rst
    maps.rst
    auto.rst
-   objectslend.rst
    events.rst
+   objectslend.rst
+   admintools.rst
 
 *************
 Plugins tiers

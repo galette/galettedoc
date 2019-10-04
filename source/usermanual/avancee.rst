@@ -145,3 +145,19 @@ Prenons en exemple la requête paramétrée d'export des contributions :
 Chaque export paramétré est défini par une balise ``export``, qui contient un identifiant unique (``id``), une description affichée dans l'interface (``name``) et le nom du fichier de sortie (``filename``). La balise ``query`` contient la requête que vous souhaitez, il n'y a pas d'autre limitation que celle du moteur de base utilisé.
 
 La partie ``headers`` détermine les noms des colonnes à utiliser pour l'export. La balise ``separator`` determine le saparateur CSV, et ``quote`` le caractère de séparation des chaînes de caractères.
+
+.. _admintools:
+
+Administration tools
+====================
+
+.. warning::
+
+   All the admin tools operation are destructive, use it with cautions, and **make sure you did a database backup** before!
+
+There are a few tools provided for Galette admin that permits to:
+
+* **reinitialize mailings contents** will reset all emails contents to default values,
+* **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
+* **reinitialize PDF models** will reset ll PDF models to default values,
+* **generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random vales as login and password fields that would be empty in database.
