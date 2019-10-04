@@ -11,6 +11,8 @@ There are numerous way to contribute to an Open Source project like Galette. You
 * `offer the developer a donation <https://www.paypal.me/galettesoft>`_
 * and, last but not least, help on :ref:`writting code <contrib_coding>`.
 
+Current documentation is only a technical cover of the contribution process. See the `how to contribute to  Galette <https://galette.eu/dc/index.php/pages/Contribuer>`_ page on our website.
+
 .. _contrib_coding:
 
 Writting code
@@ -46,6 +48,21 @@ First, set your name and email in git configuration:
    $ git config --global user.email "victor@hugo.fr"
 
 It is the minimal configuration required to use GIT :) Of course, there are a lot of other options available, see `this chapter about GIT configuration <https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git>`_.
+
+Commit messages
+===============
+
+Commits messages ar enot normalized, but we aims to follow the official documentation note about them:
+
+ Though not required, it’s a good idea to begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description. The text up to the first blank line in a commit message is treated as the commit title, and that title is used throughout Git. For example, git-format-patch[1] turns a commit into email, and it uses the title on the Subject line and the rest of the commit in the body.
+
+The `Galette tracker <https://bugs.galette.eu/projects/galette>`_ can link automatically a commit with any issue, just use ``refs`` keyword to just reference a ticket, and ``fixes`` or ``closes`` to get it closed aswell. For example:
+
+   Do something, fixes #1
+
+   Also refs #2 and #3
+
+Will closes ticket 1, and just add commit as reference in both tickets 2 and 3.
 
 Practical example : code changes
 ================================
@@ -141,8 +158,6 @@ Main difference, as already explained, is that this branch will be based on the 
 
 Practical example: send a new feature
 =====================================
-
-Most of the features or bug fixes are related to a `ticket on the bug tracker <https://bugs.galette.eu/projects/galette>`_. Please use ``refs`` and ``closes`` or ``fixes`` keywords in your commits messages so they will be linked on the ticket automatically (and maybe mark it as resolved).
 
 .. note::
 
