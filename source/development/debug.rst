@@ -2,24 +2,24 @@
 
 .. _debug:
 
-*********
-Déboguage
-*********
+*****
+Debug
+*****
 
 Logs
 ====
 
-Galette écrit certaines choses dans des fichiers de log (un par jour) stockés dans le dossier ``galette/logs``. Toutefois, il est important de noter que certaines erreurs ne peuvent absolument pas passer dans ce log, et qu'elles ne se retrouveront que dans les logs PHP du système. Il est aussi possible que certains cas qui pourraient être gérés aient été « oubliés » :)
+Galette writes in logs files (one file per day) stored in ``galette/data/logs`` if you do not change the log path configuration. But be aware that some errors will only be displayed in system PHP logs.
 
-Le niveau de verbosité de ces fichiers de log est fixé par défaut à ``INFO`` ; il est cependant possible :ref:`modifier le niveau de log par défaut <behavior>`.
+Verbosity level is fixed to ``INFO`` on a standard installation; you can  :ref:`change log level <behavior>`.
 
 .. note::
 
-   Notez que l'écriture dans les fichiers de logs demande des ressources, plus les logs sont verbeux, plus l'application sera « lente ».
+   Writting in logs files takes resources (writes to disk). The more logs are verbose, the more Galette will be "slow".
 
-   Notez également qu'il est possible que des données « sensibles » soient enregistrées dans le logs ; le mode ``DEBUG`` enregistre par exemple toute sles requêtes effectuées dans votre base !
+   Please also note is is possible some "sensitive" data are stored in the logs. `DEBUG` mode for example will store every query executed in the database!
 
-Différents niveaux de log sont possibles ; de nombreux exemples d'utilisation sont visibles dans le code source. Il sont définis par `la biliothèque utilisée (Analog) <https://github.com/jbroadway/analog>`_, du plus critique au moins critique :
+Several logs levels exists, you can find many use cases in the source code. They are defined by `the logs lib (Analog) <https://github.com/jbroadway/analog>`_, from the most critical to the less critical:
 
 * ``URGENT``
 * ``ALERT``
@@ -32,43 +32,44 @@ Différents niveaux de log sont possibles ; de nombreux exemples d'utilisation s
 
 .. _galettemodes:
 
-Les modes
-=========
+Galette modes
+=============
 
-Certains modes sont prédéfinis dans Galette, et sont réglables via la constante ``GALETTE_MODE`` (voyez la :ref:`configuration du comportement de galette <behavior>`). Cette directive peut prendre les valeurs suivantes :
+Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref`see Galette behavior configuration <behavior>`). This directive can take the following values:
 
-* ``PROD`` : le mode fortement conseillé pour la production, les parties éventuellement instables du code, ou les fonctionnalités qui ne sont pas terminées ou qui ne fonctionnent pas ne sont pas accessibles. C'est le mode par défaut lors des releases, mais ça peut éventuellement changer dans le dépôt,
-* ``DEV`` : mode développement :
+* ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may vhange in development branch.
+* ``DEV``: development mode:
 
-  - les éventuelles parties instables/pas finies seront affichées,
-  - certains objets ne seront pas stockés en session,
-  - le niveau de log par défaut sera défini à ``DEBUG``,
-  - les news ne seront pas mises en cache,
-  - la version de la base de données ne sera pas vérifiée.
+  - unstable/not finished parts will be activated,
+  - some data will not be stored in session,
+  - default log level is set to ``DEBUG``,
+  - news won't be cached,
+  - database verion check will not be done.
 
-* ``DEMO`` : un mode démonstration qui fonctionne sur le modèle du mode ``PROD``, mais qui bride certaines fonctionnalités qui ne devraient pas être effectives dans une application de démonstration ; telles que la modification des identifiants du super admin, ou encore l'envoi de courriels,
-* ``TEST`` : mode réservé aux test unitaires.
+* ``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ...
+* ``TEST``: resrved for unit tests
+* ``MAINT``: maintainance mode. Only super admin will be able to login.
 
 .. _behavior:
 
-Configuration du comportement
-=============================
+Behavior configuration
+======================
 
-Il est possible de définir certains comportements de galette, qui interviennent au niveau des logs ou de la gestion des erreurs. Les directives utiles sont :
+It is possible to change some of Galette behaviors:
 
-* `GALETTE_MODE` : :ref:`le mode de Galette <galettemodes>` ;
-* `GALETTE_DISPLAY_ERRORS` : `true` pour afficher les détails des erreurs dans la page HTML. Très fortement découragé pour une utilisation en production ;
-* `GALETTE_SYS_LOG` : `true` indique à Galette d'utiliser les logs système pour enregistrer ses propres erreurs ;
-* `GALETTE_LOG_LVL` : niveau de log ;
-* `NON_UTF_DBCONNECT` : désactiver la connexion explicite en UTF-8 à la base de données (utile pour certains utilisateurs qui rencontrent des problèmes d'encodage).
+* `GALETTE_MODE`: :ref:`see Galette modes <galettemodes>` ;
+* `GALETTE_DISPLAY_ERRORS`: `true` to display error details in page. Really discouraged for production environments! You will not see errors if there is a routing redirect... And there are plenty of them.
+* `GALETTE_SYS_LOG`: `true` tells Galette to use system logs to log its own errors;
+* `GALETTE_LOG_LVL`: log level;
+* `NON_UTF_DBCONNECT` : disable explicitely UTf-8 connection to the database (for users who see encoding issues).
 
 .. warning::
 
-   La directive `GALETTE_SYS_LOG` ne fonctionnera par défaut comme escompté qu'avec ``mod_php``. Si vous utilisez FPM, il vous faudra définir la variable de configuration ``catch_worker_output`` à ``yes``, dans ce cas, les logs seront enregistrés dans le fichier d'erreur de FPM et non du pool utilisé.
+   `GALETTE_SYS_LOG` makes sense only with ``mod_php``. If you use FPM, you will have to set ``catch_worker_output`` to ``yes`` in your configuration; this will cause entries to be logged in FPM main log (not pool one)).
 
-Ces directives peuvent être configurées dans un fichier nommé ``config/behavior.inc.php``. Ce fichier est absolument optionnel ; l'application fonctionnera parfaitement sans.
+You can add those directives in a ``config/behavior.inc.php``.
 
-Par exemple :
+Fo example:
 
 .. code-block:: php
 
