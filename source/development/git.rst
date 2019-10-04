@@ -72,7 +72,7 @@ Si vous souhaitez juste installer la version de développement de Galette pour t
 Third party libs
 ----------------
 
-Third party libs are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer installed on your system, just go in Galette directory (where you can see `composer.json` and `composer.lock` files) and just run:
+:doc:`Galette third party dependencies <technical_infos>` are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer installed on your system, just go in Galette directory (where you can see `composer.json` and `composer.lock` files) and just run:
 
 .. code-block:: bash
 

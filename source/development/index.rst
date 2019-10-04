@@ -32,7 +32,6 @@ Current documentation aims to help you understand development rules for Galette,
 .. toctree::
    :maxdepth: 2
 
-   technical_infos.rst
    git.rst
    contributor.rst
    codage.rst
