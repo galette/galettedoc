@@ -4,7 +4,7 @@
 Internationnalisation (i18n)
 ****************************
 
-Galette source code is enterly internationnalised thanks to `GNU Gettext <https://www.gnu.org/software/gettext/>`_. All translatable strings in the source code must be in english.
+Galette source code is entirely internationnalised thanks to `GNU Gettext <https://www.gnu.org/software/gettext/>`_. All translatable strings in the source code must be in english.
 
 The ``lang`` directory contains:
 
@@ -35,8 +35,6 @@ For PHP syntax, this is the ``_T`` function that is used. There is a second opti
    echo _T("Hello world!");
    echo _T("Hello world!", "galette"); //galette is the default domain
    ?>
-
-Le second paramètre est le domaine de traduction, le domaine par défaut sera utilisé si rien n'est précisé.
 
 .. note::
 
@@ -74,7 +72,7 @@ Often, you will have to use variables in translated strings. To do that, use a p
 
 .. note::
 
-   You can ause any word you want as pattern, just try to keep simple for others :) There are several other ways to handle string replacements, check PHP documentation.
+   You can use any word you want as pattern, just try to keep simple for others :) There are several other ways to handle string replacements, check PHP documentation.
 
 Smarty
 ------
@@ -86,7 +84,7 @@ Smarty translation is done with a custom plugin:
    <p>{_T string="Hello world!"}</p>
    <p>{_T string="Hello world!" domain="galette"}</p>
 
-Smarty comes with `modifiers` that may be used to do remplacements among others. Problem is it is done before the text is sent to the plugin, translation cannot be found (it already contains a replacement value for our pattern). Our Smarty plugin can take two optionnal arguments to handle properly replacements:
+Smarty comes with `modifiers` that may be used to do remplacements among others. But it is done before the text is sent to the plugin, so translation cannot be found (it already contains a replacement value for our pattern). Our Smarty plugin can take two optionnal arguments to handle properly replacements:
 
 .. code-block:: smarty
 
@@ -134,7 +132,7 @@ There are several steps to update Galette translations:
    $ cd ../../
    $ zanata-cli push
 
-It is possible to generate local PO files with ``make po``, but all mecanisms assumes the translation platform is used.
+It is possible to generate local PO files with ``make po``, but all mecanisms assume the translation platform is used.
 
 .. code-block:: bash
 

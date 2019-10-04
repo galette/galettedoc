@@ -33,19 +33,19 @@ Here is a plan of Galette used directories and some explanations about them:
   * |folder| `templates_c`: used to store Smarty compiled templates
 
 * |folder| `docs`
-* |folder| `includes`: libraries, functions and Galette instanciation
+* |folder| `includes`: libraries, functions and Galette instantiation
 
   * |folder| `fields_def`: definition of the fields for some objects. A huge fields definition in class cause performances issues...
   * |folder| `routes`: routes configuration for Slim
-  * |folder| `smarty_plugins` : plugins Smarty complémentaires
+  * |folder| `smarty_plugins` : specific Smarty plugin for Translation
   * |phpfile| `dependencies.php`: dependencies configuration for Slim. This handle all routes ACLs
-  * |phpfile| `galette.inc.php` : one of main Galette instanciation files
+  * |phpfile| `galette.inc.php` : one of main Galette instantiation files
   * |phpfile| `...`
   * |file| `...`
 
 * |folder| `install`: installation script
-* |folder| `lang`: translation files and scripts 
-* |folder| `lib`: internal frameork
+* |folder| `lang`: translation files and scripts
+* |folder| `lib`: internal framework
 
   * |folder| `Galette`: Galette framework
 
@@ -75,7 +75,7 @@ Writting Conventions
 
 Galette source code must follow `PSR2 writting conventions <https://www.php-fig.org/psr/psr-2/>`_. To respect a writting convention make the source code more easy to read, the syntax is the same from a file to another.
 
-You can use `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ to your changed code in order to be sure coding rules are respected. surSome warnings may be ignored, but errors must be all fixed. An example of ``phpcs``:
+You can use `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ to your changed code in order to be sure coding rules are respected. Some warnings may be ignored, but errors must be all fixed. An example of ``phpcs``:
 
 .. code-block:: bash
 
@@ -98,7 +98,7 @@ You can use `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ t
 
    Time: 105ms; Memory: 6.75Mb
 
-Galette is liensed under GPL version 3. Each PHP source file must contain the following mention (this exemple is from Galette `Authentication` class):
+Galette is licensed under GPL version 3. Each PHP source file must contain the following mention (this example is from Galette `Authentication` class):
 
 .. code-block:: php
 
@@ -170,7 +170,7 @@ To help other developers to understand the code, we will try to document the cod
 Create a release
 ================
 
-Releases are created against tags in the GIT repository. As an exemple to get an archive for Galette 0.9:
+Releases are created against tags in the GIT repository. As an example to get an archive for Galette 0.9:
 
 .. code-block:: bash
 
@@ -178,7 +178,7 @@ Releases are created against tags in the GIT repository. As an exemple to get an
 
 Note this archive will not embed :ref:`external libraries <deps>` (Smarty, Zend, tcpdf, ...); you will have to add them to the ``galette-0.9.tar.bz2`` file.
 
-Hre is the script used for Galette nightly build:
+Here is the script used for Galette nightly build:
 
 .. code-block:: bash
 
