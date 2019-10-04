@@ -15,9 +15,9 @@ Verbosity level is fixed to ``INFO`` on a standard installation; you can  :ref:`
 
 .. note::
 
-   Writting in logs files takes resources (writes to disk). The more logs are verbose, the more Galette will be "slow".
+   Writting in logs files takes ressources (writes to disk). The more logs are verbose, the more Galette will be "slow".
 
-   Please also note is is possible some "sensitive" data are stored in the logs. `DEBUG` mode for example will store every query executed in the database!
+   Please also note it is possible some "sensitive" data are stored in the logs. `DEBUG` mode for example will store every query executed in the database!
 
 Several logs levels exists, you can find many use cases in the source code. They are defined by `the logs lib (Analog) <https://github.com/jbroadway/analog>`_, from the most critical to the less critical:
 
@@ -37,7 +37,7 @@ Galette modes
 
 Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref`see Galette behavior configuration <behavior>`). This directive can take the following values:
 
-* ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may vhange in development branch.
+* ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch.
 * ``DEV``: development mode:
 
   - unstable/not finished parts will be activated,
@@ -47,7 +47,7 @@ Several modes are provided in Galette you can configure with ``GALETTE_MODE`` co
   - database verion check will not be done.
 
 * ``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ...
-* ``TEST``: resrved for unit tests
+* ``TEST``: reserved for unit tests.
 * ``MAINT``: maintainance mode. Only super admin will be able to login.
 
 .. _behavior:
@@ -69,7 +69,7 @@ It is possible to change some of Galette behaviors:
 
 You can add those directives in a ``config/behavior.inc.php``.
 
-Fo example:
+For example:
 
 .. code-block:: php
 
