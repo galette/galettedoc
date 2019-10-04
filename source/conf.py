@@ -67,8 +67,15 @@ today_fmt = '%d/%m/%Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
-
+#
+# Adding a pattern or a file on this list will still make file available in the documentation,
+# but will eliminate the warning message "document isn't included in any toctree"
+# However, some files that generate such warning contain labels being referred to from other files,
+# if put on the exclude_patters list, such labels are not visible. The commented out files in the 
+# exclude_patters list below, are such files. They generate a warning, but contain reference labels.
+exclude_patterns = [
+    'changelogs/*.rst'
+]
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
 
