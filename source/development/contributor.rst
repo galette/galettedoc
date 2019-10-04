@@ -11,7 +11,7 @@ There are numerous way to contribute to an Open Source project like Galette. You
 * `offer the developer a donation <https://www.paypal.me/galettesoft>`_
 * and, last but not least, help on :ref:`writting code <contrib_coding>`.
 
-Current documentation is only a technical cover of the contribution process. See the `how to contribute to  Galette <https://galette.eu/dc/index.php/pages/Contribuer>`_ page on our website.
+Current documentation is only a technical cover of the contribution process. See the `how to contribute to Galette <https://galette.eu/dc/index.php/pages/Contribuer>`_ page on our website.
 
 .. _contrib_coding:
 
@@ -35,7 +35,7 @@ Development model
 
 `Vincent Driessen <https://nvie.com>`_ published in 2010 `development model for GIT branches I found very pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, and I decided to use for Galette. With the ``git-flow`` tool from the same author, the workflow is quite simple to follow. Have doubts? Let's take a look at `this article which explains why you should use git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
 
-This is perfectible (well, among many, many others :D), but this does the job, and wen ensure everyone works the same way.
+This is perfectible (well, among many, many others :D), but this does the job, and ensure everyone works the same way.
 
 Git configuration
 =================
@@ -52,7 +52,7 @@ It is the minimal configuration required to use GIT :) Of course, there are a lo
 Commit messages
 ===============
 
-Commits messages ar enot normalized, but we aims to follow the official documentation note about them:
+Commits messages are not normalized, but we aims to follow the official documentation note about them:
 
  Though not required, it’s a good idea to begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description. The text up to the first blank line in a commit message is treated as the commit title, and that title is used throughout Git. For example, git-format-patch[1] turns a commit into email, and it uses the title on the Subject line and the rest of the commit in the body.
 

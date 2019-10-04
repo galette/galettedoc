@@ -16,7 +16,7 @@ Galette sources
 
 All Galette sources are stored in their own `Git <https://en.wikipedia.org/wiki/Git>`_ repository hosted by `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `Galette organization is also available on github <https://github.com/galette/>`_, in which all repositories are mirrored.
 
-All GIT reposotories follows the :ref:`adopted development model <devmodel>`, therefore you will find two branches on each repository:
+All GIT repositories follow the :ref:`adopted development model <devmodel>`, therefore you will find two branches on each repository:
 
 * ``master``: this is always the latest stable release,
 * ``develop``: development version, may be unstable.
@@ -59,9 +59,9 @@ Or as anonymous user:
 
      $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
 
-The ``galette`` directory will then contains a woking copy of Galette source code.
+The ``galette`` directory will then contains a working copy of Galette source code.
 
-:ref:`Third party dependencies <deps>` required by Galette are not available from the epository. You can refer to the :ref:`coding part of contributor manual <contrib_coding>` to get details and example of code contribution.
+:ref:`Third party dependencies <deps>` required by Galette are not available from the repository. You can refer to the :ref:`coding part of contributor manual <contrib_coding>` to get details and example of code contribution.
 
 .. _deps:
 
@@ -75,18 +75,18 @@ Third party libs
    $ cd galette/galette
    $ composer install -o
 
-It is possible to use another installed version of the lib, the ssytem side one for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`.
+It is possible to use another installed version of the lib, the system side one for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`.
 
 .. _gitlinux:
 
 GNU/Linux
 ---------
 
-Standards GIT commands are certainly provided fom default repositories on most GNU/Linux distributions.
+Standards GIT commands are certainly provided from default repositories on most GNU/Linux distributions.
 
 Some graphical interfaces:
 
-* GIT comse with its own UI; just run ``git gui``,
+* GIT comes with its own UI; just run ``git gui``,
 * ``gitg`` is a Gnome compliant alternative UI.
 
 .. _gitwindows:
