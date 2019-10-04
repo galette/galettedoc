@@ -73,9 +73,9 @@ TCPDF
    :width: 140px
    :align: right
 
-*Version de la bibliothèque requise :* `6.2.13`
+*Required version:* `6.x`
 
-L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <https://www.tcpdf.org/>`_.
+`TCPDF <https://www.tcpdf.org/>`_ is a PDF generation lib Used to produce all PDF from Galette.
 
 .. _ui:
 

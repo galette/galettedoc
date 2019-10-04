@@ -16,7 +16,7 @@ There are numerous way to contribute to an Open Source project like Galette. You
 Coding
 ======
 
-To fix a bug on the stable version, you have to work on the stable version, so the `master` branch, and you will use the development version on `develop` branch to implement new features.
+To fix a bug on the stable version, you have to work on the  `master` branch, and you will use the development version on `develop` branch to implement new features.
 Working on separate branches is a well-known GIT good practice I advise you to follow :)
 
 .. note::
@@ -37,7 +37,7 @@ This is perfectible (well, among many, many others :D), but this does the job, a
 Git configuration
 =================
 
-First, set jour name and email in git configuration:
+First, set your name and email in git configuration:
 
 .. code-block:: bash
 
