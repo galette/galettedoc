@@ -7,7 +7,6 @@ Galette sources
    If you are not familiar with GIT, there are plenty of documentation over the internet.
 
    Some links of interest:
-   Quelques liens qui peuvent être utiles :
 
    * http://www-cs-students.stanford.edu/~blynn/gitmagic/
    * https://schacon.github.com/git/gittutorial.html
@@ -62,10 +61,7 @@ Or as anonymous user:
 
 The ``galette`` directory will then contains a woking copy of Galette source code.
 
-Thrid party libs used by Galettee are not available from the epository, please refer to :ref:`third party dependencies <deps>`. Refer to the :ref:`coding part of contributor manual <contrib_coding>` to get details and example of code contribution.
-
-
-Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :doc:`la phase d'installation de Galette <../installation/index>`, félicitations ;-)
+:ref:`Third party dependencies <deps>` required by Galette are not available from the epository. You can refer to the :ref:`coding part of contributor manual <contrib_coding>` to get details and example of code contribution.
 
 .. _deps:
 
@@ -79,14 +75,14 @@ Third party libs
    $ cd galette/galette
    $ composer install -o
 
-It is possible to use another installed version of the lib, the ssytem side one for example. Just take a look at :ref:`how to configura Galette paths <configpaths>`.
+It is possible to use another installed version of the lib, the ssytem side one for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`.
 
 .. _gitlinux:
 
 GNU/Linux
 ---------
 
-Standards GIT commands are certainly provided fom default repositories os most GNU/Linus distributions.
+Standards GIT commands are certainly provided fom default repositories on most GNU/Linux distributions.
 
 Some graphical interfaces:
 

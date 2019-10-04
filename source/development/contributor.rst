@@ -8,22 +8,23 @@ There are numerous way to contribute to an Open Source project like Galette. You
 * help on testing proposed fixes and features,
 * help on translations (Galette, plugins, documentation),
 * help on documentation,
-* `offer the developer a beer or a donation <https://www.paypal.me/galettesoft>`_
-* and, last but not least, help on coding, for which you'll find some details in the nex chapter!
+* `offer the developer a donation <https://www.paypal.me/galettesoft>`_
+* and, last but not least, help on :ref:`writting code <contrib_coding>`.
 
 .. _contrib_coding:
 
-Coding
-======
+Writting code
+=============
 
 To fix a bug on the stable version, you have to work on the  `master` branch, and you will use the development version on `develop` branch to implement new features.
+
 Working on separate branches is a well-known GIT good practice I advise you to follow :)
 
 .. note::
 
    If you just want to look at the development version, `download Galette nightly build archive <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_ that is updated each night.
 
-If you want to submit a patch, you can :ref:`send us your fix or your feature <sendpatch>`, make sur to produce it from the proper branch).
+To send us a chode change, :ref:`see our sending patch practical example <sendpatch>`.
 
 .. _devmodel:
 
