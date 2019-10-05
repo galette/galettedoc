@@ -26,6 +26,7 @@ There are also a few external services:
 * `a voting system <https://vote.galette.eu>`_, you can vote for features,
 * a `Github organization <https://github.com/galette>`_, used to run unit tests or documentation on readthedocs, among others,
 * `a continous integration system <https://travis-ci.org/galette/galette>`_, that run a bunch of tests each time a commit is done on the github mirror.
+* `a Telemetry application <https://telemetry.galette.eu>`_ which handle and display Telemetry informations sent from volunteers Galette instances.
 
 Current documentation aims to help you understand development rules for Galette, how the code is managed, ...
 
