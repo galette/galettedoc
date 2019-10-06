@@ -2,70 +2,82 @@
 How to contribute
 *****************
 
-There are numerous way to contribute to an Open Source project like Galette. You may:
+There are numerous ways to contribute to an Open Source project like Galette. You may:
 
-* help on question asked by others on the lists,
+* help on questions asked by others on the lists,
 * help on testing proposed fixes and features,
 * help on translations (Galette, plugins, documentation),
 * help on documentation,
 * `offer the developer a donation <https://www.paypal.me/galettesoft>`_
 * and, last but not least, help on :ref:`writting code <contrib_coding>`.
 
-Current documentation is only a technical cover of the contribution process. See the `how to contribute to Galette <https://galette.eu/dc/index.php/pages/Contribuer>`_ page on our website.
+This documentation is a technical overview of the contribution process to the source code of Galette and its plugins. Read the `how to contribute to Galette <https://galette.eu/dc/index.php/pages/Contribuer?navlang=en>`_ page on our website if your are looking for an introduction of the global process.
 
 .. _contrib_coding:
 
 Writting code
 =============
 
-To fix a bug on the stable version, you have to work on the  `master` branch, and you will use the development version on `develop` branch to implement new features.
+To fix a bug on the stable version, you have to work on the `master` branch. Use the development version on the `develop` branch to implement new features or fix issues in the next release.
 
 Working on separate branches is a well-known GIT good practice I advise you to follow :)
 
 .. note::
 
-   If you just want to look at the development version, `download Galette nightly build archive <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_ that is updated each night.
+   If you just want to have look at the development version, `download Galette nightly build archive <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_ which is updated each night.
 
-To send us a chode change, :ref:`see our sending patch practical example <sendpatch>`.
+To send us a code modification, :ref:`read our sending patch practical example <sendpatch>`.
 
 .. _devmodel:
 
 Development model
 =================
 
-`Vincent Driessen <https://nvie.com>`_ published in 2010 `development model for GIT branches I found very pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, and I decided to use for Galette. With the ``git-flow`` tool from the same author, the workflow is quite simple to follow. Have doubts? Let's take a look at `this article which explains why you should use git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
+`Vincent Driessen <https://nvie.com>`_ published in 2010 a `development model for GIT branches I found very pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, and that I decided to use for Galette. With the ``git-flow`` tool from the same author, the workflow is quite simple to follow. Having doubts? Let's take a look at `this article which explains why you should use git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
 
-This is perfectible (well, among many, many others :D), but this does the job, and ensure everyone works the same way.
+This is perfectible (well, among many, many others :D), but this does the job, and ensures everyone works the same way.
 
 Git configuration
 =================
 
 First, set your name and email in git configuration:
 
-.. code-block:: bash
+::
 
    $ git config --global user.name "Victor Hugo"
    $ git config --global user.email "victor@hugo.fr"
 
-It is the minimal configuration required to use GIT :) Of course, there are a lot of other options available, see `this chapter about GIT configuration <https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git>`_.
+It is the minimal configuration required to use GIT :) Of course, there are a lot of other options available, see `this chapter about GIT configuration <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration>`_.
+
+.. note::
+
+   The commands above sets the configuration globally for all your Git
+   repositories.
+
+   Removing the ``--global`` option will set the configuation locally in the
+   repository your working on. It is usefull when you use different identities
+   on several projects. But *in this case, don't forget to configure your
+   repository after the initial clone*.
 
 Commit messages
 ===============
 
-Commits messages are not normalized, but we aims to follow the official documentation note about them:
+Commit messages are not normalized, but we intend to follow `the official documentation note <https://git-scm.com/docs/git-commit/#_discussion>`_ about them:
 
- Though not required, it’s a good idea to begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description. The text up to the first blank line in a commit message is treated as the commit title, and that title is used throughout Git. For example, git-format-patch[1] turns a commit into email, and it uses the title on the Subject line and the rest of the commit in the body.
+    Though not required, it’s a good idea to begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description. The text up to the first blank line in a commit message is treated as the commit title, and that title is used throughout Git. For example, git-format-patch[1] turns a commit into email, and it uses the title on the Subject line and the rest of the commit in the body.
 
-The `Galette tracker <https://bugs.galette.eu/projects/galette>`_ can link automatically a commit with any issue, just use ``refs`` keyword to just reference a ticket, and ``fixes`` or ``closes`` to get it closed aswell. For example:
+The `Galette tracker <https://bugs.galette.eu/projects/galette>`_ can automatically link a commit to any issue, just use ``refs`` keyword in your commit message to reference a ticket, and ``fixes`` or ``closes`` to get it closed aswell. For example:
+
+::
 
    Do something, fixes #1
 
    Also refs #2 and #3
 
-Will closes ticket 1, and just add commit as reference in both tickets 2 and 3.
+This will close ticket 1, and add the commit as a reference in both tickets 2 and 3.
 
-Practical example : code changes
-================================
+Practical example : code modifications
+======================================
 
 .. note::
 
@@ -76,14 +88,14 @@ Prepare the working copy
 
 Clone the repository:
 
-.. code-block:: bash
+::
 
    $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
    $ cd galette
 
 Then, initialize git-flow:
 
-.. code-block:: bash
+::
 
    $ git flow init
 
@@ -104,21 +116,21 @@ Then, initialize git-flow:
 
 .. note::
 
-   When you clone Galette GIT repository, you are on the ``master`` branch, current documentation assumes we are on the ``develop`` branch.
+   When you clone the Galette GIT repository, you land on the ``master`` branch. This documentation assumes you are working on the ``develop`` branch.
 
-   .. code-block:: bash
+   ::
 
       $ git checkout -b develop origin/develop
 
-   Since git-flow gives the details of what it does, just check the output ;)
+   Then, since git-flow gives the details of what it does, just check the output ;)
 
 
 Add a feature
 -------------
 
-To start working on a feature we will name ``killer``:
+To start working on a feature that we will name ``killer`` for the example :
 
-.. code-block:: bash
+::
 
    $ git flow feature start killer
    Switched to a new branch 'feature/killer'
@@ -131,28 +143,29 @@ To start working on a feature we will name ``killer``:
    
         git flow feature finish killer
 
-And voila! You know can work on your killer feature, congratulations!
+And voila! Now you can work on your killer feature, congratulations!
 
-While coding, it is a good idea to take back changes from the develop branch. First make sure ``develop`` is up to date, then go to your ``feature/killer`` branch and run:
+While coding, it is a good pratice to bring back the last changes from the develop branch. First make sure ``develop`` is up to date, then run a rebase command from your ``feature/killer`` branch:
 
-.. code-block:: bash
+::
 
+   $ git pull origin develop:develop
    $ git flow feature rebase
    or
    $ git rebase develop
 
-Once the development is finished, send us the patch. Finish the feature only happens on main repository itself).
+Once the development is over, send us the patch. The feature's finishings only happens on the main repository itself.
 
-Fixing a bug
+Fix a bug
 ------------
 
-To fix a bug, you'll use git-flow with the `hotif` keyword instead of `feature`:
+To fix a bug, you'll use git-flow with the `hotfix` keyword instead of `feature`:
 
-.. code-block:: bash
+::
 
    $ git flow hotfix start 0.9.3.1
 
-Main difference, as already explained, is that this branch will be based on the `master` branch.
+The main difference, as already explained, is that this branch will be based on the `master` branch.
 
 .. _sendpatch:
 
@@ -161,11 +174,11 @@ Practical example: send a new feature
 
 .. note::
 
-   For technical reasons, we have created mirrors of all ours GIT repositories on github. All source code is on github, and you may prefer to use their fork/pull request capacities. It is ok as well.
+   For technical reasons, we have created mirrors of all our GIT repositories on github. All the source code is on github, and you may prefer to use their fork/pull request capacities. It is ok as well.
 
-From your work branch (let's say we are sending the ``killer`` feature), generate a patch you can sent to us:
+From your working branch (let's say you are sending the ``killer`` feature), generate a patch you can send to us:
 
-.. code-block:: bash
+::
 
    $ git branch
      develop
@@ -176,11 +189,11 @@ From your work branch (let's say we are sending the ``killer`` feature), generat
    0001-Placebo-commit.patch
    0002-Destructive-commit.patch
 
-You can now attach those patchs files to the `related ticket on Galette tracker <https://bugs.galette.eu/projects/galette/>`_ :)
-Please precise which branch you choose to start.
+You can now attach those patches files to the `related ticket on Galette tracker <https://bugs.galette.eu/projects/galette/>`_ :)
+Please precise which branch you chose to start from.
 
 A few hints:
 
-* try to respect as possible coding standards
+* try to respect as possible :ref:`our coding standards <conventions>`,
 * test your work, and other features it may affect,
 * try to add unit tests.
