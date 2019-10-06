@@ -92,16 +92,15 @@ In order to update translations, it is necessary to update POT files from the so
 
    $ sphinx-build -b gettext source source/locale
 
-In order to test your modifications locally on your workstation, you will need to build the documentation using an addtitonnal parameter with the ``make`` command. For example, to build the documentation in HTML in English, run :
+In order to test your modifications locally on your workstation, you will need to build the documentation using an additional parameter with the ``make`` command. For example, to build the documentation in HTML in French, run :
 
 ::
 
-   $ make -e SPHINXOPTS="-D language='en'" html
+   $ make -e SPHINXOPTS="-D language='fr'" html
 
 .. note::
 
-   By default, the ``make`` command will build the documentation in current locale.
-
+   By default, the ``make`` command will build the documentation in English.
 
 How to contribute?
 ==================
