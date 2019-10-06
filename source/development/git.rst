@@ -48,15 +48,15 @@ All GIT repositories follow the :ref:`adopted development model <devmodel>`, the
 
 To clone one repository, use the following along with your Tuxfamily credentials:
 
-  ::
+::
 
-     $ git clone ssh://YOURUSER@git.tuxfamily.org/gitroot/galette/galette.git
+   $ git clone ssh://YOURUSER@git.tuxfamily.org/gitroot/galette/galette.git
 
 Or as anonymous user:
 
-  ::
+::
 
-     $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
+   $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
 
 The ``galette`` directory will then contain a working copy of Galette's source code.
 
@@ -67,7 +67,7 @@ Third party librarires
 
 :doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, they are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:
 
-.. code-block:: bash
+::
 
    $ cd galette/galette
    $ composer install -o
