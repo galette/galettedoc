@@ -10,11 +10,11 @@ Plugin system in Galette 0.9 is incompatible with previous versions. This does n
 
 
 Generalities
-===========
+============
 
 Of course, you have to refer to the :ref:`plugins development guide <devplugins>` for all details.
 
-Several Galette core objects has been modified to remove some globals. This is now mandatory to send them those informations, likde:
+Several Galette core objects has been modified to remove some globals. This is now mandatory to send them those informations, like:
 
 .. code-block:: php
 
@@ -50,7 +50,6 @@ A ``define.php`` file for Galette 0.8:
    );
 
 After being updated to Galette 0.9, the file will look like:
-Après mise à jour pour 0.9 (le tableau des droits sera rempli au fur et à mesure de la création des routes) :
 
 .. code-block:: php
 
@@ -74,7 +73,7 @@ Routes ACLs are handled while plugin development.
 _config.php
 ===========
 
-It was advised to reate a variable to prefix display template, this is no longer needed.
+It was advised to create a variable to prefix display template, this is no longer needed.
 
 _routes.php
 ===========
@@ -199,7 +198,7 @@ This page was providing both display and storage of the preferences of the plugi
        }
    )->setName('store_objectlend_preferences')->add($authenticate);
 
-You can oberve that the two routes URLs are the same, but with HTTP methods (an of course routes names!) that differs. For the needs of our plugin, access will be restricted to administratore. We have already setted up the middleware call in the previous example, we now need to add those new routes to the acls configuration of ``_define.php``:
+You can observe that the two routes URLs are the same, but with HTTP methods (an of course routes names!) that differs. For the needs of our plugin, access will be restricted to administratore. We have already setted up the middleware call in the previous example, we now need to add those new routes to the ACLs configuration of ``_define.php``:
 
 .. code-block:: php
 
@@ -232,13 +231,13 @@ Since our plugin preferences page URL has changed, we need to adapt ``menu.tpl``
 There are three changes here:
 
 * PHP file call has been replaced with a call to the route,
-* selection class condition must be changed, this could no longr rely on file name,
-* translation domain has been used for translatable strings, it is not striclty mandatory if you use Galette core strings verbatim (which should have been the cas here).
+* selection class condition must be changed, this could no longer rely on file name,
+* translation domain has been used for translatable strings, it is not striclty mandatory if you use Galette core strings verbatim (which should have been the case here).
 
 Web resources
 =============
 
-All resources that must be accessibles from browsers must be handled specifically. You have to move all of them in the ``webroot`` directory of the plugin:
+All resources that must be accessible from browsers must be handled specifically. You have to move all of them in the ``webroot`` directory of the plugin:
 
 .. code-block:: bash
 
@@ -248,7 +247,7 @@ All resources that must be accessibles from browsers must be handled specificall
    $ git move templates/default/lend.js webroot
    $ git move templates/default/images webroot
 
-Then, you have to change paths to those files. As an example, see the ``header.tpl`` file, whicho looks like the following in 0.8:
+Then, you have to change paths to those files. As an example, see the ``header.tpl`` file, which looks like the following in 0.8:
 
 .. code-block:: smarty
 
