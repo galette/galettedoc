@@ -6,35 +6,35 @@
 
 .. _ajouts_093:
 
-Nouveautés
-==========
+Added
+=====
 
-* Enregistement des recherches (`#691 <https://bugs.galette.eu/issues/691>`_)
-* Utilisation d'adresses email multiples depuis les préférences (`#643 <https://bugs.galette.eu/issues/643>`_)
-* Envoi d'un courriel aux administrateurs lorsqu'un adhérent modifie sa fiche (`#756 <https://bugs.galette.eu/issues/756>`_)
-* Paramétrage de la redirection après ajout d'un adhérent (`#1136 <https://bugs.galette.eu/issues/1136>`_)
-* Ajout d'une variable pour la date du jour (`DATE_NOW`) dans les modèles PDF (`#1260 <https://bugs.galette.eu/issues/1260>`_)
+* Save searches (`#691 <https://bugs.galette.eu/issues/691>`_)
+* Ability to use several admins email addresses from preferences (`#643 <https://bugs.galette.eu/issues/643>`_)
+* Send a mail to admins when a member edit his card (`#756 <https://bugs.galette.eu/issues/756>`_)
+* Flexible redirect after member creation (`#1136 <https://bugs.galette.eu/issues/1136>`_)
+* Add current date variable (DATE_NOW) in PDF models (`DATE_NOW`) dans les modèles PDF (`#1260 <https://bugs.galette.eu/issues/1260>`_)
 
 .. _bogues_093:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
-* Traduction des libellés des groupes non appliquée dans la configuration des champs du cœur (`#1125 <https://bugs.galette.eu/issues/1125>`_)
-* Champs dynamiques de type date non vérifiés (`#1213 <https://bugs.galette.eu/issues/1213>`_)
-* Page blanche à l'installation sur certains environnements (`#1236 <https://bugs.galette.eu/issues/1236>`_)
-* Erreurs d'échappement javascript dans les mailings (`#1247 <https://bugs.galette.eu/issues/1247>`_)
-* Correction de la suppresion des adhérents liés à un groupe (`#1251 <https://bugs.galette.eu/issues/1251>`_)
-* Passage aux pages suivantes dans le trombinoscope (`#1252 <https://bugs.galette.eu/issues/1252>`_)
-* Le chemin du logo des fichiers PDF était incorrect dans certains cas (`#1255 <https://bugs.galette.eu/issues/1255>`_)
-* L'ordre des champs dynamiques n'était pas enregistré (`#1262 <https://bugs.galette.eu/issues/1262>`_)
-* Corrections diverses liées aux nouvelles listes déroulantes (`#1263 <https://bugs.galette.eu/issues/1263>`_, `#1264 <https://bugs.galette.eu/issues/1264>`_, `#1265 <https://bugs.galette.eu/issues/1265>`_)
-* Ajout de la migration de champs dates incorrects sous MySQL (`#1266 <https://bugs.galette.eu/issues/1266>`_)
-* Sélecteurs de dates manquants dans la recherche avancée et sur les champs dynamiques (`#1267 <https://bugs.galette.eu/issues/1267>`_)
-* Correction de l'extension et du type de contenu des fichiers PDF générés (`#1271 <https://bugs.galette.eu/issues/1271>`_)
-* Les majuscules étaient supprimées dans les prénoms composés (`#1272 <https://bugs.galette.eu/issues/1272>`_)
-* Suppression du nom de la société lorsque la case est décochée (`#1277 <https://bugs.galette.eu/issues/1277>`_)
-* Correction d'un appel sur le mauvais objet depuis les mailings (`#1280 <https://bugs.galette.eu/issues/1280>`_)
+* Fix translation issue on memebrs page fieldsets (`#1125 <https://bugs.galette.eu/issues/1125>`_)
+* Fix dynamic date fields check (`#1213 <https://bugs.galette.eu/issues/1213>`_)
+* Fix blank page at install on some environments (`#1236 <https://bugs.galette.eu/issues/1236>`_)
+* Fix javascript escaping on mailings (`#1247 <https://bugs.galette.eu/issues/1247>`_)
+* Fix groups members removal error (`#1251 <https://bugs.galette.eu/issues/1251>`_)
+* Fix pagination on trombinoscope (`#1252 <https://bugs.galette.eu/issues/1252>`_)
+* Fix logo path on some web server configurations (`#1255 <https://bugs.galette.eu/issues/1255>`_)
+* Dynamic fields order was not stored (`#1262 <https://bugs.galette.eu/issues/1262>`_)
+* Various fixes related to new dropdowns (`#1263 <https://bugs.galette.eu/issues/1263>`_, `#1264 <https://bugs.galette.eu/issues/1264>`_, `#1265 <https://bugs.galette.eu/issues/1265>`_)
+* Add missing date fields changes on mysql (`#1266 <https://bugs.galette.eu/issues/1266>`_)
+* Missing date selectors on advanced search and dynamic fields (`#1267 <https://bugs.galette.eu/issues/1267>`_)
+* Fix PDF extension and content type (`#1271 <https://bugs.galette.eu/issues/1271>`_)
+* Fix upper case removal from composed names (`#1272 <https://bugs.galette.eu/issues/1272>`_)
+* Remove company name when checkbox is unchecked (`#1277 <https://bugs.galette.eu/issues/1277>`_)
+* Fix call from wrong object in mailing (`#1280 <https://bugs.galette.eu/issues/1280>`_)
 
 
 ****************
