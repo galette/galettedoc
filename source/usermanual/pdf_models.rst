@@ -1,55 +1,53 @@
 .. _pdf_models:
 
 ***********
-Modèles PDF
+PDF models
 ***********
 
-Des modèles PDF sont disponibles pour différentes sorties.
-
-Actuellement, il existe un modèle factures, un modèle Reçu et un modèle formulaire d'adhésion. Tous héritent d'un modèle `Global`.
+PDF models are provided for several outputs : an invoice model, a receipt model and a membership from model are currently available. All of them inherits from a `Global` model.
 
 .. image:: ../_styles/static/images/usermanual/pdf_models.png
    :scale: 75%
    :align: center
-   :alt: Interface de gestion des modèles PDF
+   :alt: PDF models management
 
-Héritage des modèles
-====================
+Models inheritance
+==================
 
-Le fait qu'un modèle hérite d'un autre implique différentes choses du point de vue de Galette. Le modèle Global comprend trois champs distincts :
+The global model defines three distincts parts:
 
-* l'en-tête,
-* le pied de page,
-* les styles CSS.
+* header,
+* footer,
+* CSS styles.
 
-Tout modèle héritant de `Global` obtiendra automatiquement les mêmes en-tête et pied de page, sauf si le nouveau modèle les re-définit ; dans ce cas, les valeurs spécifiques uniquement seront appliquées.
+Each model which inherits from `Global` will automatically obtain same header and footer except if the new model redefines them, in which case only specific values will be applied.
 
-Dans le cas des propriétés CSS, c'est un peu différent. En effet, les propriétés du modèle `Global` seront toujours appliquées, les propriétés spécifiques du modèle enfant viendront en sus (comme pour de vraies feuilles de style CSS en somme).
+For CSS properties it is a bit different: `Global` model properties will always be applied, and specific model properties will be appended (jsut like real CSS stylesheets).
 
-Généralités
-===========
+Generalities
+============
 
-Les modèles sont décomposés en plusieurs parties. Outre l'en-tête, le pied de page et les styles CSS présentés au paragraphe précédent, un titre, un sous titre et un corps existeront pour les modèles enfants.
+In addition of header, footer and CSS styles, a model defines a title, a sub title and a body.
 
-Chacun de ces champs prend en compte un certain nombre de remplacements automatiques, une petite icône en forme d'ampoule en haut à droite de l'interface vous donnere davantage de détails sur ce point. Les différents champs peuvent également contenir des textes internationnalisés de la forme `_T("My text")` qui utiliseront les :ref:`fonctionnalités de traduction standard de Galette <i18nsyntax>`.
+Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationnalized texts like `_T("My text")` that relies on :ref:`Galette standard translation capacities <i18nsyntax>`.
 
-Les différents modèles sont construits en utilisant du HTML et des styles CSS, mais ne perdez pas de vue qu'il s'agit ici de construire un fichier PDF, pas d'afficher une page HTML dans un navigateur récent, il est fort probable que nombre de possibilités ne soient pas disponibles.
+Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent brower; there are many limitations.
 
-Factures et reçus
-=================
+Invoices and receipts
+=====================
 
-Les modèles factures et reçus sont sensiblement identiques, titre mis à part.
+Invoice and receipt models are the same, excepting their titles.
 
 .. image:: ../_styles/static/images/usermanual/pdf_model_invoice.png
    :scale: 75%
    :align: center
-   :alt: Modèle PDF Factures
+   :alt: Invoice PDF model
 
-Comme vous pourrez le constater dans la capture d'écran ci-dessus, le modèle Facture utilisera les en-tête et pied de page par défaut définis dans le modèle `Global`, aucun style CSS n'est ajouté par défaut. Le :doc:`plugin AdminTools <../plugins/admintools>` vous permet de réinitialiser les modèles par défaut à tout moment.
+As you can see in the above screenshot, invoice model does not define any header, footer or CSS styles, the ones form the `Global` model are used.
 
-Formulaire d'adhésion
-=====================
+Membership form
+===============
 
-Il s'agit d'un modèle qui peut être utilisé vide (pour imprimer des fiches d'adhésion lors d'évènements par exemple), ou pré-rempli avec les valeurs d'un adhérent spécifique.
+It is a model that can be used to print a membership form. It can be empty (to print some of them for any event for example) or filled with one member informations.
 
-Les possiblités des modèles étant réduits, l'utlisation du :doc:`plugin FullCard </plugins/fullcard>` pourra remplacer ce modèle. Sa modification est plus complexe, mais le résultat peut être bien meilleur.
+Since there are many limitation, you may use the :doc:`FullCard plugin </plugins/fullcard>` that will replace this model. It is more complex to change, but you can do many more with it. You can also create your own plugin based on FullCard.

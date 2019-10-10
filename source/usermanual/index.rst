@@ -4,7 +4,7 @@
 
    .. rst-class:: docs user_doc
 
-   :doc:`manuel de l'utilisateur <index>`
+   :doc:`user manual <index>`
 
 .. rst-class:: doc_main_page
 
@@ -12,17 +12,17 @@
 User manual
 ===========
 
-Bienvenue dans le guide de l'utilisateur de Galette :-)
-Ces pages vous guideront à travers les différents écrans et possibilités offerts par Galette pour la gestion de votre association.
+Welcome to Galette user manual :)
+Following pages will guide you into Galette screens and features to manage your association.
 
-Juste après l'écran de connexion, vous serez emmenés vers le tableau de bord de Galette.
+Just after login screen, you will reach Galette dashboard:
 
 .. image:: ../_styles/static/images/usermanual/desktop.png
    :scale: 75%
    :align: center
    :alt: Tableau de bord
 
-La partie principale du tableau de bord vous propose un accès rapide aux principales fonctionnalités du logiciel :)
+Main dashboard part propose you a quick access to main Galette features :)
 
 .. toctree::
    :maxdepth: 2

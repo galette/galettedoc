@@ -1,21 +1,19 @@
 .. _man_avancees:
 
-********************
-Utilisateurs avertis
-********************
+******************
+Experimented users
+******************
 
-.. note::
+.. warning::
 
-   **Attention...**
+   use only following instructions if you know what you are doing... "The management is not responsable for any case of [...]" :D
 
-   N'utilisez les instructions suivantes qu'en toute connaissance de cause... « La direction décline toute responsabilité [...] » :-D
+Adapt to your graphical chart
+=============================
 
-Adaptation à votre charte graphique
-===================================
+If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mecanism desinged for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
 
-Il est possible, si vous le souhaitez et si vous maîtriser les feuilles de style CSS, d'adapter la charte graphique existante de Galette à vos besoins. Pour ce faire, il est fortement déconseillé de modifier directement le fichier CSS de Galette ; un mécanisme a été mis en place pour vous simplifier la tâche : créez simplement un fichier nommé ``galette_local.css`` dans le dossier ``webroot/themes/default/`` qui contiendra les surcharges CSS nécessaires, ce fichier sera inclus automatiquement :-)
-
-Prenez soin de ne pas vous compliquer les choses. Par exemple, si vous souhaitez modifier la couleur du nom de l'association affiché sous le titre de chaque page, vous trouverez dans Galette la règle CSS `#asso_name` qui comporte différentes informations, dont la couleur. Dans votre feuille de style  locale, vous aurez juste besoin de :
+Try to keep things as simple as possible. For example, if you want to change association name color (displayed under pages titles), you will find in Galette the CSS rule `#asso_name` that defines several parameters including the color. Then, in your stylesheet, you will just need the following:
 
 .. code-block:: css
 
@@ -23,16 +21,16 @@ Prenez soin de ne pas vous compliquer les choses. Par exemple, si vous souhaitez
        color: red;
    }
 
-Cela suffira pour afficher correctement le nom de votre association en rouge. Notez que votre feuille CSS locale et les problèmes qu'elle pourrait engendrer ne peuvent pas être pris en compte par l'équipe de Galette ; aucun support ne pourra vous être fourni sur le sujet.
+This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be took into account by the Galette team, no support will be provided.
 
-De la même manière, vous pouvez surcharger la feuille de style utilisée pour l'impression en créant le fichier ``galette_local_print.css``.
+You also can override the print stylesheet, just create a ``galette_local_print.css`` file.
 
-Ajout et modification de chaînes
-================================
+Add and change strings
+======================
 
-Il est également possible, au besoin, de personnaliser les chaînes de traduction existantes dans Galette - tout en évitant de modifier directement les fichiers fournis par le logiciel - en passant par un fichier spécifique. Pour ce faire, il suffira de créer un fichier nommé ``galette_{ma_langue}_local_lang.php`` (où `{ma_langue}` est à remplacer par `fr_FR.utf8` ou `en_US`) dans le dossier ``lang`` auquel vous confierez les chaînes modifiées uniquement ; ce fichier sera inclus automatiquement s'il existe.
+It is possible if needed to customize translated strings in Galette - without editing any Galette source file. Just create a ``galette_{mylang}_local_lang.php`` file (where `{mylang}` must be replaced with the language, like `fr_FR.utf8` or `en_US`) in the ``lang`` directory. This file must contains a simple PHP array with the original string (the one in Galette source code) as index.
 
-Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale (celle qui se trouve dans le code de Galette). Ainsi, pour modifier par exemple la chaîne « `Mot de passe` » que l'on trouve sur le formulaire de login, il faudra dans un premier temps trouver la chaîne originale (soit depuis l'interface en anglais, soit dans le code source directement). Dans notre exemple, la chaîne originale est « `Password:` ». Pour modifier cette valeur en « `Secret :` » en français, on aura dans notre nouveau fichier ``galette_fr_FR.utf8_local_lang.php`` :
+As example,  we want to change the "Password" string on the login page in french, translated as `Mot de passe :`. The original string is `Password:` (see ``galette/templates/default/index.tpl``), its french translation is `Mot de passe :` and we want to replace it with `Secret :`; so we will create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:
 
 .. code-block:: php
 
@@ -40,76 +38,75 @@ Ce fichier contiendra un simple tableau PHP, ayant en index la chaîne originale
    $lang['Password:'] = 'Secret&nbsp;:';
    return $lang;
 
-La modification sera visible immédiatement dans Galette. Prenez particulièrement garde à recopier la chaîne originale telle quelle ; et à échapper les apostrophes (à l'aide d'un anti-slash). Comme dans le fichier original, on attend ici une ligne par chaîne modifiée.
+Since Galette uses a cache system for translations, changes may not be visible immediately; you may have to restart PHP (or to clear cache). It is important to take the original string verbatim, punctuation included; and take care to escape single quotes (with a backslash) in all the strings.
 
-Ces surcharges ne s'appliquent pas actuellement aux plugins ; ces derniers étant chargés par l'application bien plus tard :-(
+You also can override langs for plugins using the sam method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is th routing name you can find in the ``_define.php`` file.
 
-.. note:: Ce système n'est pas fonctionnel si vous utilisez les fonctionnalités Gettext par défaut de PHP, mais fonctionnera avec la configuration de base de Galette.
+.. note:: This will work only if you use Galette translation features, and not with native gettext.
 
-Log des addresses IP avec un proxy
-==================================
+Log IP addresses behind a proxy
+===============================
 
-Si votre installation de Galette se trouve derrière un proxy, l'adresse IP enregistrée dans l'historique sera celle du proxy, et non celle de l'utilisateur :-(
+If your Galette instance is behind a proxy, IP addresses stored in history will be the proxy one, and not the user one :(
 
-Une directive à déclarer dans dans un fichier nommé ``config/behavior.inc.php`` peut vous permettre de corriger ce problème :
+To fix that, create a ``config/behavior.inc.php`` file with the following contents:
 
 .. code-block:: php
 
    <?php
    define('GALETTE_X_FORWARDED_FOR_INDEX', 1);
 
-En partant du principe que chaque serveur proxy viendra ajouter sa propre adresse à la liste ; l'exemple ci-dessus fonctionne si votre instnce ne dépend que d'un seul et unique serveur proxy.
+Each proxy server will add its own address on the list, example above will work only if there is only one proxy server.
 
 .. warning::
 
-   Pour des raisons de sécurité, évitez d'utilisez ce paramètre si vous n'êtes pas derrière un proxy !
+   For security reasons, do not use this if your instance is not behind a proxy!
 
-Statistiques externes
-=====================
+External stats
+==============
 
 .. versionadded:: 0.9
 
-Un certain nombre de plateformes de génération de statistiques requiert l'ajout de code Javascript spécifiques pour fonctionner.
+Many statistics plaftforms relies on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
 
-Galette vous permet d'utiliser ces fonctionnalités. Il suffit pour cela de créer un fichier nommé ``tracking.js`` dans le dossier ``webroot/themes/default`` qui sera inclus et exécuté automatiquement.
 
 .. warning::
 
-   Galette utilise du javascript pour son fonctionnement. Si le code que vous incluez dans le fichier ``tracking.js`` est incorrect, cela peut perturber le fonctionnement normal du logiciel !
+   Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
-Taille et nombre de cartes
-==========================
+Cards size and count
+====================
 
 .. versionadded:: 0.9
 
-Les préférences de Galette permettent de définir les espacements et marges horizontaux et verticaux des cartes, mais pas leur taille, ni le nombre de colonnes ou de lignes. Pour éviter la modification de code ; un certain nombre de :ref:`constantes peuvent être définies <behavior>` :
+Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can change that by :ref:`adding some constants <behavior>`:
 
 .. note::
 
-   La modification de ces valeurs pourrait entraîner des décalages relativement importants en fonction des valeurs choisies. Modifiez-les avec parcimonie, et n'oubliez pas de tester le résultat ;)
+   Changing those values may cause gaps; change them with caution, and do not forget to test the result ;)
 
-* ``GALETTE_CARD_WIDTH`` permet de définir la largeur de chaque carte,
-* ``GALETTE_CARD_HEIGHT`` permet de définir la hauteur de chaque carte,
-* ``GALETTE_CARD_COLS`` permet de définir le nombre de colonnes,
-* ``GALETTE_CARD_ROWS`` permet de définir le nombre de lignes.
+* ``GALETTE_CARD_WIDTH`` defines cards width,
+* ``GALETTE_CARD_HEIGHT`` defines cards height,
+* ``GALETTE_CARD_COLS`` defines the number of columns,
+* ``GALETTE_CARD_ROWS`` defines the number of lines.
 
-Exports CSV
+CSV exports
 ===========
 
-Galette propose le paramétrage d'exports CSV. Un seul export paramétré est disponible par défaut, mais vous pouvez créer les votres en les ajoutant au fichier ``config/exports.xml``. La configuration d'un export paramétré se décompose en plusieurs parties :
+Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.xml`` file. Its configuration is done with several parts:
 
-* la requête SQL à exécuter,
-* les colonnes à afficher dans le fichier CSV,
-* le paramétrage du séparateur,
-* le paramétrage du caractère de séparation des chaînes.
+* the SQL query to use,
+* the columns to export,
+* the CSV separator,
+* the strings separator character.
 
 .. warning::
 
-   Le paramétrage des exports se fait dans un fichier XML. Ce dernier doit **impérativement être valide** !
+   Configuration of CSV exports is done in a XML file, that **must** be vaild!
 
-   Si le fichier n'était pas valide, aucun des exports ne serait présenté. Sous linux, vous pourrez utiliser un outil tel que ``xmlwf`` ou ``xmllint`` pour vous assurer de la validitié du fichier.
+   If it is not, no export will be proposed from the user interface. Under linux, you can use tools like ``xmlwf`` or ``xmllint`` to ensure your file is valid.
 
-Prenons en exemple la requête paramétrée d'export des contributions :
+Let's examine contributions parameted export:
 
 .. code-block:: xml
 
@@ -142,9 +139,9 @@ Prenons en exemple la requête paramétrée d'export des contributions :
        <quote><![CDATA["]]></quote>
    </export>
 
-Chaque export paramétré est défini par une balise ``export``, qui contient un identifiant unique (``id``), une description affichée dans l'interface (``name``) et le nom du fichier de sortie (``filename``). La balise ``query`` contient la requête que vous souhaitez, il n'y a pas d'autre limitation que celle du moteur de base utilisé.
+Each parameted export is defined inside a tag named ``export``, which contains a unique identifier (``id``), a description displayed in the user interface (``name``) and output filename (``filename``).. The ``query`` tag contains the SQL query to execute, there is no other limitation than the SQL engine ones.
 
-La partie ``headers`` détermine les noms des colonnes à utiliser pour l'export. La balise ``separator`` determine le saparateur CSV, et ``quote`` le caractère de séparation des chaînes de caractères.
+The ``headers`` part defines columns that will be exported, the ``separator`` tag the CSV separator and the ``quote`` tag the strings separator.
 
 .. _admintools:
 
@@ -160,4 +157,4 @@ There are a few tools provided for Galette admin that permits to:
 * **reinitialize mailings contents** will reset all emails contents to default values,
 * **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
 * **reinitialize PDF models** will reset ll PDF models to default values,
-* **generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random vales as login and password fields that would be empty in database.
+* **generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.

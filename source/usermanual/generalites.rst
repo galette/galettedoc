@@ -1,113 +1,112 @@
 .. _man_generalites:
 
-***********
-Généralités
-***********
+************
+Generalities
+************
 
-Les droits
-==========
+Rights
+======
 
-On distingue plusieurs niveaux de droits dans Galette, permettant l'accès à différentes parties et fonctionnalités de l'application. Les différents niveaux sont les suivants :
+We can see several rights level in Galette, allowing access to different parts and features of the application. Levels are:
 
-* le **super administrateur**, qui est créé à l'installation ;
-* les **administrateurs**, qui sont des adhérents pour lesquels la case « administrateur » a été cochée ;
-* les **membres du bureau**, qui possèdent un statut particulier (Président, Trésorier, Secrétaire, ...) ;
-* les **gestionnaires de groupes**, qui n'ont de droits que sulr les groupes qu'ils gèrent ;
-* les **adhérents à jour**, qui sont marqués comme actifs, et qui sont à jour de leurs cotisations ;
-* les **adhérents** qui sont marqués comme inactifs, ou qui ne sont pas à jour de leurs cotisations,
-* les simples **visiteurs**.
+* **super administrator** is a special user (the only one that is not a member) created at installation,
+* **administrators** are members for who the "administrator" checkbox has been checked,
+* **staff members** have a specific status (President, Treasurer, Secretary, ...),
+* **groups managers** have only rights on the groups they manage,
+* **up to date members** are members whose account are active, and whose subscription are up to date,
+* **members** are members whose account is inactive or whose subscriptions are not up to date,
+* simple **visitors**.
 
-Les membres du bureau, les administrateurs et le super administrateur peuvent créer ou modifier des adhérents, des cotisations, des transactions, effectuer des E-Mailings, ...
+Staff members, administrators as well as the super administrator can create, edit and remove members, contributions, transactions, send emailings, ...
 
-Les administrateurs ont également à la configuration de l'application, à l'exception des informations de connexion du super administrateur.
+Administrators have also access to the application configuration, excepted super admin informations.
 
-Le super administrateur a accès à l'intégralité de l'application ; mais pas forcément à toutes les fonctionnalités. En effet, il ne s'agit pas d'un adhérent, il peut ne pas posséder certaines informations nécessaires. Il peut bien entendu modifier les informations de connexion le concernant, depuis les préférences de l'application.
+The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required informations. He of course can change its own login informations from application preferences.
 
-Les adhérents peuvent consulter et modifier leur propre fiche d'informations, et peuvent aussi consulter les contributions et transactions les concernant (sans pouvoir les modifier).
+Members can change their own informations, and can see their contributions and transactions (as read only).
 
-Les simples visiteurs peuvent consulter le trombinoscope et la liste des adhérents (en fonction du paramétrage choisi dans les préférences du logiciel) ; mais peuvent aussi... s'inscrire :-)
+Visitors can - if this is parameted in preferences - access to public pages (trombinoscope, public members list) but can also register :)
 
 .. todo::
 
-   Les droits des gestionnaires de groupes devraient être détaillés selon leurs valeurs actuelles... Il est en effet difficile de savoir qui peut faire quoi.
+   Groups managers rights must be detailled with their current values... It is difficult to know who can do what.
 
-Règles de gestion
-=================
+Management rules
+================
 
-Les échéances sont calculées au jour près. Si un adhérent cotise avant la fin de son adhésion, la durée de cette adhésion sera additionnée aux jours qu'il lui restait. Exemple :
+Due dates are calculated by day. If a member pay into before the end of his membership, duration of this membership will be added to remaining days. Example:
 
- | Roger s'est inscrit le 01/01/2004 pour un an.
- | S'il envoie une nouvelle cotisation pour un an le 13/12/2004,
- | l'échéance de son adhésion sera le 01/01/2006.
- | Aucun jour n'aura été oublié.
+ | Roger subscribed on 2004-01-01 for one year,
+ | if he pays into for a year on 2004-12-13,
+ | his due date will become 2006-01-01.
+ | No day will be forget.
 
-A l'inverse, si un adhérent renouvelle son adhésion en retard, on ne procède à aucune réévaluation de sa durée d'adhésion :
+At the contrary, if a member renew his membership late, we evaluate again his membership duration:
 
- | Roger s'est inscrit le 01/01/2004 pour un an.
- | S'il envoie une nouvelle cotisation pour un an le 13/01/2005,
- | l'échéance de son adhésion sera le 13/01/2006.
+ | Roger subscribed on 2004-01-01 for one year,
+ | if he pays into for a year on 2006-01-13,
+ | his due date will become 2006-01-13.
 
-On considèrera qu'il n'était plus adhérent durant la période du 01/01/2005 au 13/01/2005... Enfin, sur le papier :).
+He is not an up to date member from 2005-01-01 to 2005-01-13... On paper at least :)
 
-Ces règles de gestion sont cependant assouplies par le fait que l'administrateur est totalement libre de choisir la date d'une cotisation. On peut tout à fait imaginer le cas d'un association qui enregistre toutes les cotisations au premier du mois suivant (offrant ainsi un temps d'adhésion légèrement plus important).
+Those rules are flexible because you can freely change membership dates on contributions, if you have rights to add or update them. We can imagine an association who stores all contributions on the first day of the next month (offering its members a longer membership time).
 
 Interface
 =========
 
-Autant que possible, nous faisons en sorte que l'interface de Galette soit :
+We do our best for the Galette interface to be:
 
-* logique ;
-* cohérente (vous retrouverez ainsi les icônes et emplacements qui vous sont familiers) ;
-* respectueuse des standards du Web (respect des normes HTML et CSS) ;
-* respectueuse de la sémantique HTML ;
-* dépourvue de l'obligation de Javascript (certaines fenêtres ne sont pas en phase ; ou ne peuvent l'être - malheureusement) ;
-* accessible (sans forcément que des tests WCAG ou WAI soient menés régulièrement).
+* logical and consistent (you will always find icons at familiar places),
+* web standards compliant (HTML and CSS valid),
+* HTML semantic respectful,
+* working even if Javascript is disabled (as possible, but really you should enable Javascript to really take advantage of Galette)),
+* accessible (without any WCAG, WAI or equivalent tests run).
 
-Si vous constatez des manquements sur le points pré-cités ; n'hésitez pas à nous en faire part !
-
-.. versionadded:: 0.9
-
-Galette propose une interface dite « mobile » ; pour laquelle l'affichage est grandement modifié pour essayer de correspondre aux appareils mobiles de plus en plus répandus. Galette n'est pas une application mobile native, et certaines pages sont relativement difficiles à afficher de manière totalement utilisable sur certains appareils.  Sur cette question, nous essayons de faire notre possible avec les moyens dont nous disposons - tous les appareils possibles ne peuvent être testés !
-
-L'affichage mobile est actuellement traité comme un plus, et non comme l'une des bases sur lesquelles l'interface de Galette repose. Des améliorations pourront et seront apportées ; mais leur importance sera moindre dans le traitement des demandes.
-
-Télémétrie
-==========
+If you find places where one of those points is incorrect, do not hesitate to tell us on the tracker or on the mailing list!
 
 .. versionadded:: 0.9
 
-Galette vous propose d'envoyer des informations de télémétrie :
+Galette provide a "mobile compatible" UI, but it has not been designed for that. Therefore, it may be difficult or worst to use; in this case we do our best, but all devices cannot be tested!
 
-* **totalement anonymes** : aucune information concernant votre association ou vos adhérents n'est transmise,
-* **volontairement floues** : nous récupérons une estimation du nombre d'adhérents ; jamais le nombre exact,
-* par le biais d'un canal **sécurisé** (`HTTPS`) sur https://telemetry.galette.eu.
+Mobile display is currently a plus and not a fundation of the UI. Improvements can be done, this will just not be a priority. Note that we have in mind to rework the whole UI, with a better support.
 
-Le processus est entièrement manuel, aucune information n'est envoyée tant que vous ne le décidez pas **explicitement**. Ces informations nous permettent de mieux connaître les différentes utilisations de Galette, nous donnent une idée du nombre d'adhérents et de transactions, des plugins utilisés, ...
+Telemetry
+=========
 
-Ces informations sont très utiles pour le développement et la promotion du projet. Lorsque vous acceptez d'envoyer ces informations, vous pouvez visualiser l'ensemble des informations qui seront transmises.
+.. versionadded:: 0.9
+
+Galette propose to send some telemetry informations:
+
+* **entirely anonymous**: no information about your association or your members is sent,
+* **deliberately blurred**: we retrieve an estimation of members count, never a real count,
+* sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu.
+
+Sending telemetry data is a manual process, nothing will be send until you **explicitely** ask it. With those informations, we can have a better knwownledge of different usages of Galette, their number of member or contributions, plugins used, ...
+
+Those informations are useful for the project development and promotion. When you send those informations, you can review data that would be sent.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_data.png
    :scale: 30%
    :align: center
-   :alt: Prévisualisation des informations envoyées
+   :alt: Preview Telemetry data
 
-Par la suite, puisque les données envoyées peuvent avoir changé, Galette vous proposera de les envoyer de nouveau une fois par an. Vous avez également la possibilité de les envoyer depuis les préférences de Galette.
+After data has been sent once, Galette will propose to send an update from time to time. You can also send them from Galette preferences.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_reminder.png
    :align: center
-   :alt: Rappel annuel
+   :alt: Telemetry update reminder
 
-Il est aussi possible de référencer votre instance sur le site. Les données de référencement ne sont évidemment pas anonymes ; mais il est impossible de faire un lien quelconque entre télémétrie et référencement (chacun utilisant son propre identifiant aléatoire). L'ajout d'une nouvelle référence est soumis à modération.
+It is also possible to register your association on the website, of course, not anonymously, but it is not possible to link telemetry and registration. New references are moderated.
 
-Vous avez la possibilité depuis les préférences de Galette de modifier vos informations. Le formulaire sera vide (personne ne peut donc voir les informations qui ne sont pas affichés dans la liste), mais les informations de votre instance seront bel et bien modifiées (en se basant sur l'identifiant unique pour le référencement de votre instance).
+You can update your registration informations from Galette preferences. The form will be blank (because it is not possible to retrieve data you've sent) but all data will be updated because your instance has a unique registration identifier designed for that.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_prefs.png
    :align: center
-   :alt: Télémétrie depusi les préférences
+   :alt: Telemetry from preferences
 
-Un nouvel espace a été ajouté sur le tableau de bord pour envoyer les informations de télémétrie et/ou pour vous enregistrer. Une fois ces étapes effectuées, l'espace en question disparaîtra. Vous avez également la possibilité de le désactiver.
+A new panel has been added on Galette dashboard to send telemetry informations and/or register your instance. Once those steps has been completed, the panel will dissapear. You aslo can choose to just disable it.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_dashboard.png
    :scale: 50%
    :align: center
-   :alt: Télémétrie sur le tableau de bord
+   :alt: Telemetry on dashboard

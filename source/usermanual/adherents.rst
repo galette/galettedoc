@@ -1,91 +1,92 @@
 .. _man_adherents:
 
-*********************
-Gestion des Adhérents
-*********************
+******************
+Members management
+******************
 
-L'un de vos tout premiers contacts avec l'interface de Galette - hormis les pages d'installation, la page de connexion et le bureau - sera la liste des adhérents, le cœur du système. Bien entendu, juste après l'installation ; cela ne sera pas fort parlant, puisque cette liste sera vide... Mais ça ne devrait pas durer :-D
+One of the first contact with Galette interface after the installation, login and dashboard will be members list, main part of the system. Of course, this list will be empty for now :)
 
-Commencez donc par la création d'une nouvelle fiche adhérent. Comme partout dans Galette, les champs obligatoires sont marqués en rouge ; tous les autres champs sont facultatifs. Les différentes parties de cet écran (`Identité`, `Informations de contact`, `Informations relatives à Galette` et éventuellement `Champs supplémentaires`) sont rétractables, en cliquant sur la flèche qui précède le titre.
+.. note::
+
+   You can use the "Generate fake data" from the "Configuration" menu to add demonstration data in your instance.
+
+Let's start by creating a new member. As everywhere in Galette, mandatory fields are displayed with a red border; all other are optionnal. Different parts of the page (`Identity`, `Contact informations`, `Galette related data` and maybe `Dynamic fields`) can be retracted clicking on their respective title.
 
 .. image:: ../_styles/static/images/usermanual/add_member.png
    :scale: 50%
    :align: center
-   :alt: La partie `Identité` de l'écran d'ajout d'adhérent
+   :alt: `Identity` screen part adding member
 
 .. image:: ../_styles/static/images/usermanual/edit_member.png
    :scale: 50%
    :align: center
-   :alt: La partie `Identité` de l'écran de modification d'adhérent
+   :alt: `Identity` screen part editing member
 
-Sur les champs de type date, la petite icône en fin de ligne vous donne accès à un calendrier.
+On date fields, you can access a calendar:
 
 .. image:: ../_styles/static/images/usermanual/calendar.png
    :align: center
-   :alt: Sélection d'une date
+   :alt: Date selection
 
-Si votre navigateur supporte HTML5 (c'est le cas depuis un certain temps pour Firefox et Chromium par exemple) ; il vous avertira directement des champs requis et non renseignés. Si, pour une raison ou une autre, l'une des informations était erronée, la page serait rechargée avec les informations saisies (en dehors du mot de passe !), et un message en haut de page vous informera des erreurs rencontrées. Le même type de message s'affichera pour les champs requis si votre navigateur ne supporte pas HTML5 (dans ce cas, je vous invite fortement à `utiliser un navigateur web récent et respectueux des standards <https://www.mozilla.org/fr/firefox/>`_ ; votre expérience avec Galette et bien d'autres sites s'en retrouverait améliorée).
+When storing a member (or any other object in Galette), page will be reloaded with all informations you've entered (excepting passwords).
 
-Liste des adhérents
-===================
+Members list
+============
 
-La liste des adhérents vous donne accès à de nombreuses fonctions :
+Members list allows you to:
 
-* filtrage et tri des adhérents,
-* affichage des fiches des adhérents,
-* suppression(s),
-* envoi de mailings,
-* génération d'étiquettes (PDF),
-* génération de listes d'émargement (PDF),
-* génération de cartes de membres (PDF),
-* export CSV,
-* modification en masse.
+* filter and order members,
+* display members card,
+* removals,
+* send mailings,
+* generate PDF labels,
+* generate PDF emargement lists,
+* generate PDF members cards,
+* CSV exports,
+* mass changes.
 
-Les actions possibles sur chaque adhérent sont regroupées en fin de chaque ligne, les actions possibles sur une sélection d'adhérents sont regroupées en bas de la liste. Certains plugins peuvent ajouter des entrées dans l'un ou l'autre de ces regroupements.
+Each possible action per member is grouped at the end of the line, actions designed to be applied on a selection are at the bottom of the list. Plugins may add entries in both cases.
 
-Vous êtes encouragés à utiliser les actions sur une sélection coinjointement avec le filtrage et le nombre d'enregisrements affichés par page, pour par exemple envoyer un mailing à une sélection d'adhérents résultant d'une recherche quelconque.
+Filter and select members
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Filtrage et sélection d'adhérents
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Filtering members list is documented in :ref:`search section <search_galette>`. All possibilities can be used with actions on selection.
 
-Le filtrage de la liste des adhérents est traité dans la section :ref:`recherche <search_galette>`. Toutes les possibilités offertes peuvent bien entendu être utilisées conjointement avec les actions qui s'appliquent sur la sélection.
-
-Modifications en masse
-^^^^^^^^^^^^^^^^^^^^^^
+Mass changes
+^^^^^^^^^^^^
 
 .. versionadded:: 0.9.1
 
-Les adhérents sélectionnés dans la liste peuvent être (partiellement) modifiés en une seule fois.
+Members selected in list can be edited (partially) at once.
 
 .. image:: ../_styles/static/images/usermanual/mass_modif_selected_members.png
    :scale: 50%
    :align: center
-   :alt: Modification en masse des adhérents sélectionnés
+   :alt: Mass change selected members
 
-Seuls les champs pour lesquels la case à cocher en début de ligne seront effectivement modifiés. Un récapitulatif vous sera proposé.
+Only fields with a chacked checkbox at the beginning of the line will be changed. A summary will be displayed.
 
 .. image:: ../_styles/static/images/usermanual/mass_modif_selected_members_recap.png
    :scale: 50%
    :align: center
-   :alt: Récapitulatif des modifications à apporter
+   :alt: Summary of changes
 
-Tri
-^^^
+Ordering
+^^^^^^^^
+It is possible to order members list on following fields:
 
-Il est possible de trier la liste des adhérents (filtrée ou non) sur toutes les colonnes contenant une information provenant de votre base d'adhérents. Ainsi, vous pouvez trier la liste par :
+* name,
+* nickname,
+* status,
+* contribution status,
+* modification date.
 
-* nom,
-* pseudo,
-* statut,
-* état de cotisation,
-* date de modification.
+Most of the times, the result is transparent. Just note ordering on `status` will use status priority and ordering on `contribution status` will use creation date, contribution exemption and due date;
 
-Dans le cas des `nom`, `pseudo` et `date de modification`, le résultat obtenu est assez transparent. En ce qui concerne le tri par `statut`, il est effectué sur la priorité des statuts. Enfin, l'ordonnancement par `état de cotisation` sera appliqué par date de création, exemption de cotisation et date d'échéance.
+Configure CSV fields
+^^^^^^^^^^^^^^^^^^^^
 
-Configuration des champs CSV
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs que ceux présents dans la liste affichée à l'écran. Il est possible de modifier ce comportement en spécifiant vous même la liste des champs qui doivent être exportés ; dans le fichier ``galette/config/local_export_fields.inc.php``. Si par exemple, vous souhaitez n'exporter que l'identifiant, le nom et le prénom de l'adhérent, le contenu de ce fichier sera :
+Per default, CSV export for a members selection will provide same fields as the ones that are displayed on screen. It is possible to change this behavior specifiying yourself which fields must be exported in the ``galette/config/local_export_fields.inc.php`` file. If for example you only want identifier, first and last member names, the content of the file will be:
 
 .. code-block:: php
 
@@ -99,149 +100,145 @@ Par défaut, l'export CSV d'une sélection adhérents fournira les mêmes champs
 E-Mailing
 =========
 
-.. warning:: **L'envoi de mailings dans Galette est prévu pour fonctionner de manière optimale depuis la liste des adhérents.**
+.. warning:: **Mailings in Galette are designed to work from the members list.**
 
-   La création directe d'un mailing fonctionne tout aussi bien, mais la sélection des destinataires est bien plus limitative, elle ne peut servir que pour des cas très limités.
+   Direct mailing creation will work without problems, but members selection is harder.
 
-Depuis Galette, vous pouvez envoyer des E-Mailings à une sélection de vos adhérents. Chaque E-Mailing envoyé est stocké afin de pouvoir servir de modèle par la suite. Ainsi, depuis la `Gestion des E-Mailings` ; vous pourrez sélectionner un message que vous avez déjà envoyé, et l'utiliser comme modèle, récupérant ainsi la liste des personnes qui avaient été sélectionnées pour cet envoi, le sujet, et le contenu du message lui même.
+From Galette, you can send mailings to a selection of members. Each sent mailing is stored in order to be reused, so you can select a stored mailing to be used as a template, retrieving selected members list, mailing subject and contents.
 
-Pour envoyer un nouvel E-Mailing, il suffit de sélectionner dans la liste des adhérents les membres auxquels vous souhaitez le faire parvenir, puis de cliquer sur le bouton `Envoyer un courriel`. Si certains des membres sélectionnés ne possèdent pas d'adresse de courriel, Galette vous proposera de générer les étiquettes correspondantes.
+To send a new mailing, select members from the list and then use the `Send an email` button at the bottom of the list. If some of selected members does not have an email address, Galette will propose you to print corresponding labels.
 
 .. image:: ../_styles/static/images/usermanual/mailing_selected_members.png
    :scale: 50%
    :align: center
-   :alt: Adhérents sélectionnés pour l'E-Mailing
+   :alt: Selected members for mailing
 
-.. note:: La sélection des adhérents dans le tableau doit se faire sur une seule et unique page (une limite inhérente aux pages web). Les fonctionnalités de filtrage, et la possibilité d'afficher l'intégralité des membres (filtrés ou non) sur une seule page vous seront alors fort utiles ;-)
+.. note:: Selecting members in the list must be done on one page only. Filtering features, as well as the possibility to display all members will be useful ;)
 
 .. versionadded:: 0.9.1
 
-Vous avez la possibilité de choisir l'expéditeur lors de chaque envoi :
+You can choose a sender for each mailing:
 
-* **depuis les paramètres** (valeur par défaut) : utilisera les informatons entrées dans les préférences de Galette,
-* **utilisateur actuellement connecté** : utilise les nom et adresse courriel de l'utilisateur courant (non disponible avec le compte super-admin),
-* **autre** : vous pouvez spécifier un nom et une adresse de courriel.
+* **from Galette preferences** (default value): this will use informations stored in preferences,
+* **current logged-in user**: will use the name and the email of the current logged-in user (not available for super admin),
+* **other**: you can set any name and email address you want.
 
 .. image:: ../_styles/static/images/usermanual/mailing_sender.png
    :scale: 50%
    :align: center
-   :alt: Sélection de l'expéditeur
+   :alt: Sender selection
 
-Une fois le sujet entré ; on passera à la rédaction du message en lui même. Vous avez la possibilité d'envoyer les messages au format texte seul, ou au format HTML (gardez à l'esprit que l'envoi de messages HTML n'est pas toujours à préférer). Pour le second cas, une interface d'aide à la saisie vous est proposée.
-L'interface par défaut de Galette est volontairement simple et légère ; pour ne pas alourdir inutilement l'ensemble du logiciel. L'envoi de courriels en HTML complexe est une pratique à décourager globalement :-)
+Once the subject has been filled, you can work on the contents. You can send email in text only, or in HTML (keep in mind sending HTML messages by mail is often not the way to go). A simple HTML WYSIWYG editor is provided.
 
-Dès lors que l'éditeur HTML est activé, la case `Interpréter les balises HTML` est automatiquement cochée. Si vous souhaitez envoyer un E-Mailing en HMTL sans utiliser l'éditeur, pensez à cocher cette case !
+Once the HTML editor is enabled, the checkbox to handle HTML tags is automatically checked, remember to check the box if you do not use the editor but want to send HTML!
 
-.. warning:: Bien que Galette permette l'envoi de courriels au format HTML, notez que c'est une pratique qu'il faut déconseiller ; le poids des messages envoyés s'en trouve très fortement augmenté (pour finalement pas grand chose) et que certaines personnes lisent leurs courriels uniquement en texte simple (votre serviteur, par exemple). Sachez que Galette envoie **systématiquement** une version texte des couriels HTML, afin que le message puisse être lu partout.
+.. warning:: Even if Galette is able to send HTML emails, this is discouraged. Messages lenght will be way larger (for almost nothing), and some (like me!) read their emails as text only. That is why Galette will **always** provide a texte version of HTML emails.
 
-Il est possible de joindre des fichiers à votre envoi, cliquez simplement sur le bouton `Parcourir` dans la zone `Ajouter une pièce jointe` pour ce faire. Si votre navigateur est compatible, il est possible de sélectionne plusieurs fichiers dans la fenêtre qui s'ouvrira (avec les touches Ctrl et/ou Shift).
-Les pièces jointes sont stockées sur le disque, dans un sous dossier spécifique portant le numéro d'identifiant de l'envoi (déterminé automatiquement par la base de données).
+It is also possible to add attachements, just click on the `Browse` button in that attachements section. If your browser is compatible, you can add several files at once (using `Shift` and `Ctrl` keys).
+All attachements are stored on disk, under a directory named with the mailing identifier (automatically defined from database).
 
-Le bouton `Prévisualisation` vous permettra d'avoir un aperçu complet de votre message avant de l'envoyer.
+`Preview` button let you preview your message before sending it.
 
 .. image:: ../_styles/static/images/usermanual/mailing_preview.png
    :scale: 50%
    :align: center
-   :alt: Prévisualisation du message
+   :alt: Preview message
 
-Tout E-Mailing commencé sera automatiquement enregistré dans la session pour être repris par la suite. Une icône dans le titre des différentes pages vous informera qu'un E-Mailing a été débuté, et vous permettra d'y accéder.
+Any started emailings will be stored in your session to be retrieved in the future. An icon will be displayed in pages titles when a mailing is progress and will provide a link to go to it.
 
-Si vous le souhaitez, vous pouvez annuler ce mailing en utilisant le bouton `Annuler le mailing`, il sera alors effacé de la session. Si au contraire vous souhaitez enregistrer le mailing de manière plus durable, vous pouvez utiliser le bouton `Enregistrer`. Il  sera alors stocké dans l'historique des emailings, et vous pourrez le reprendre par la suite.
+If you want, you can cancel this mailing using the `Cancel mailing` button, it will be deleted from your session. If you want to store it for a longer time, you can add the `Save` button. It will then be stored in the mailings list, and you will be able to grab it later.
 
-Historique des emailings
-^^^^^^^^^^^^^^^^^^^^^^^^
+Mailings history
+^^^^^^^^^^^^^^^^
 
-.. note:: Tout emailing commencé est stocké en session. La session prend fin lorsque l'utilisateur se déconnecte, ou après un temps défini par la configuration de votre serveur. L'historique quand à lui stocke les données en base, et vous assure qu'elles seront disponibles par la suite.
+.. note:: When you start a mailing, it is stored into your session. Session ends when users log out, or on a server defined timeout. Mailing history stores the mailing in the database, this ensure it will always be available in the future.
 
-Tout emailing envoyé est automatiquement stocké dans l'historique, et pourra servir de base pour rédiger un nouvel envoi. Dans ce cas, un nouvel emailing sera créé avec les informations de l'historique, et le mailing original sera conservé dans la base.
+Every sent mailing is stored into the database, and can be used as a template to write a new one. In this case, a new mailing will be created using informations from the history, and the original one will be kept as is.
 
-Les mailings peuvent également êre stockés avant d'avoir été envoyés. Dans ce cas, il est possible de reprendre la rédaction là où elle en était au moment de l'enregistrement. Notez que si vous enregistrez le mailing, ou si vous l'envoyez, l'entrée d'origine sera alors remplacée.
+Mailings can be stored before they are sent. In this case, it is possible to continue it later. When you use history on a draft mailing, original entry will be replaced on sending.
 
-Lorsque vous utilisez une entrée existande de l'historique, l'ensemble des information du mailing sont reprises :
+When you use an existing history entry, here are the informations that will be used:
 
-* destinataires,
-* pièces-jointes,
-* sujet,
+* recipients,
+* attachements,
+* subject,
 * message,
-* propriété html/texte.
+* html/text flag.
 
-Imports CSV
+CSV imports
 ===========
 
-Un import CSV des adhérents selon un modèle prédéfini est possible. Un modèle d'import par défaut vous est proposé, mais vous pouvez aussi configurer le votre en fonction de vos besoins. L'interface est accessible via l'entrée `Imports` du menu.
+It is possible to import member data from a predefined model. A default model is provided, but you can configure it to suits your needs, using the `Imports` menu entry.
 
-Le modèle
-^^^^^^^^^
-Le modèle d'import définit les champs possibles ainsi que leur ordre dans un fichier CSV. Lors de l'import proprement dit, c'est le modèle courant qui sera utilisé pour vérifier l'intégrité de votre fichier CSV.
+Model
+^^^^^
 
-Pour accéder à la configuration du modèle d'import, et pour pouvoir récupérer le modèle vierge, cliquez sur le bouton `Configurer le modèle d'import` dans l'interface. Un modèle par défaut vous est proposé :
+Import model defines fields and their order in a CSV file. When importing, current model will be used to check your CSV file intergity.
+
+To configure the model, click on the `Configure` button from the UI.
 
 .. image:: ../_styles/static/images/usermanual/csv_import_default_model.png
    :scale: 50%
    :align: center
-   :alt: Modèle d'import par défaut
+   :alt: Default import model
 
-Si le modèle ne vous convient pas, cliquez sur l'onglet `Modifier le modèle`, et choisissez vos champs :
+If proposed model is not ok for you, click on `Edit model` and choose your fields:
 
 .. image:: ../_styles/static/images/usermanual/csv_import_selection_model.png
    :scale: 50%
    :align: center
-   :alt: Configuration du modèle d'import
+   :alt: Import model configuration
 
-Une fois les champs sélectionnés, cliquez sur le bouton `Enregistrer le nouveau modèle`.
+Once you have selected your fields, click on the `Store new model` button.
 
-Dans l'onglet modèle courant, vous aurez la possibilité de récupérer le modèle vierge en cliquant sur le bouton `Générer un fichier CSV vide`. Vous pouvez bien entendu à tout moment modifier le modèle ou revenir au modèle par défaut en cliquant sur le bouton `Supprimer le modèle`.
+When in the current model tab, you can download an empty model from the `Generate an empty CSV file` button. Of course, you can change model if you want, or remove it to get the default model back.
 
-L'import
-^^^^^^^^
+Import
+^^^^^^
 
-Une fois le fichier vierge récupéré et dûment rempli, vous devrez l'envoyer sur le serveur via le formulaire `Envoyer un nouveau fichier`. À cette étape, Galette vérifiera que votre fichier porte bien l'extension ``.csv`` (ou ``.txt`` optionnellement) et qu'il ne dépasse pas la taille maximale autorisée (2Mo, la limite par défaut dans PHP).
+Once you have retrieved and fill the empty file, you have to send it using the form `Send a new file`. At this step, Galette will check your file extension is ``csv`` (or ``txt``) and it size does not exceed maximum upload file size (2Mio per default in PHP).
 
 .. note::
 
-   Si vous souhaitez envoyer un fichier plus volumineux, il vous est toujours possible de le déposer vous même via FTP dans le dossier ``galette/data//imports/`` ou de le scinder en plusieurs fichiers distincts, que vous pourrez alors importer un par un.
+   If you want to import a huge file, you can put it from your FTP client in the ``galett/data/imports`` directory, or split it into several smaller files you can import one by one.
 
-La liste des fichiers envoyés est affichée dans le tableau dans la section `Fichiers existants`. Vous pourrez ici voir le fichier, le supprimer, ou encore procéder à son import :
+Sent files are listed in the `Existing files` section. You can show, remove or import it:
 
 .. image:: ../_styles/static/images/usermanual/csv_import_select_file.png
    :scale: 50%
    :align: center
-   :alt: Sélection et import du fichier
+   :alt: Select and import file
 
-La case `Galop d'essai` (cochée par défaut) vous permettra de tester si votre fichier et les données qu'il contient sont valides (champs obligatoires renseignés, dates correctement formatées, etc) sans enregistrer quoi que ce soit dans la base de données.
+The `dry run` checkbox (checked per default) is designed to test your file data are valid (mandatory fields filled, data formatting is correct, ...) without storing anything in the database.
 
-Notez que si l'import rencontre un problème sur une ligne particulière, il se peut que les lignes précédentes aient été enregistrées. Il est donc fortement conseillé de lancer l'import une première fois avec la case activée pour corriger les potentielles erreurs.
+When you import a CSV file, if one line is incorrect, previous ones may be stored in the database already; so it is advised to use the dry-run before to get error fixed.
 
-L'interface vous avertira de l'erreur rencontrée, en mode test ou non.
+You will have error messages than something went wrong (in dry-run mode or not):
 
 .. note::
 
-   Il est tout à fait possible que l'import se passe correctement, mais qu'il vous soit ensuite indiqué que des champs obligatoires soient manquants lors de la modification d'une fiche. Ce type de comportement sera constaté si le modèle d'import n'inclut pas l'intégralité des champs obligatoires que vous avez configurés.
+   You may see mandatory missing fields even if import is ok. This may happen when all the fields you set as required in Galette configuration are not listed in your import model.
 
 .. _linkmembers:
 
-Liens entre fiches adhérents
-============================
+Links beetween members
+======================
 
 .. versionadded:: 0.8.2
 
-L'interface de Galette permet de relier plusieurs fiches à une fiche « parent ». Ce système peut être utilisé pour marquer le lien des différents membres d'une famille par exemple, ou les différentes personnes physiques liées à une même personne morale. L'interface permet alors d'accéder à la fiche parent depuis une fiche enfant, ou à n'importe quelle fiche enfant depuis la fiche parent.
+You can link several members to a "parent" one. This may be used to store families for exemple, or members of a same compagny. You can access children members from the parent, and parent from the children.
 
-Il n'y a pas de limite dans le nombre des fiches attachées, mais le rattachement ne peut être récursif (une fiche enfant ne peut-être parente elle même).
+You can add as many child as you want for a member, but a child cannot become a parent.
 
-L'autre intérêt de ce système, c'est de pouvoir récupérer certaines informations lors de l'envoi de mailings ou de courriers postaux. En effet, dans chaque fiche enfant, les adresse de courriel et postales deviennent automatiquement facultatives, quelle que soit la configuration. Dans ce cas, si l'une ou l'autre de ces informations est manquante, elle sera récupérée depuis la fiche parent.
+The other interesting point of this system is you can retrieve some informations from the parent when sending mailings or labels. In the children members, email and postal addresses automatically become optionnal, whatever the configuration says. If any of those informations is missing, it will be retrieved from the parent.
 
-.. note:: Tout adhérent dont l'adresse courriel n'est pas renseignée ne pourra pas utiliser la fonctionnalité « récupération du mot de passe ». Ce système ne lève pas la limite sur l'unicité de l'adresse de courriel en base de données.
+.. note:: Members without email adresses cannot use the "retrieve password" feature. This does not affect the unicity email constraint in the database.
 
-Se connecter en tant que
-========================
+Impersonnating
+==============
 
 .. versionadded:: 0.9
 
-Dans la liste des adhérents, le super administrateur verra une icône supplémentaires qui lui permet de se connecter au compte de l'utilisateur en question, sans toutefois devoir connaître ses identifiants.
+Some issues may be related to a particular account, because of its ACLs, groups, ... In this case, it is unfortuntely frequent to see some credentials sent by insecure emails; which should really be avoid.
 
-Il arrive parfois qu'un problème ou une incompréhension amène un utilisateur - quel que soit son statut - à rencontrer un problème spécifique qui n'est pas reproductible avec d'autres comptes (pour des questions de droits, d'appartenance à des groupes, ..., ...).
-
-Dans ce cas de figure, il arrive que des identifants soient transmis de manière totalement insécure (personnellement, je ne donne *jamais* mot mot de passe à qui que ce soit, serais-ce pour résoudre un problème auquel je suis seul à faire façe).
-
-La fonctionnalité « se connecter en tant que » permet alors au **seul super-admininistrateur** d'utiliser le compte pour reproduire le problème, et éventuellement le résoudre ou fournir aux développeurs de Galette les informations nécessaires à la reproduction et/ou à la correction de ce problème.
+As super admininistrator user, you wil see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonnated the user, you can reproduce the issue and fix it or get all required informations to report the issue upstream.

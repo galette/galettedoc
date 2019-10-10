@@ -1,132 +1,109 @@
 .. _man_configuration:
 
-***********************
-Configurer les éléments
-***********************
+********************
+Fields Configuration
+********************
 
-Champs obligatoires et droits d'accès
-=====================================
+Mandatory fields and access rights
+==================================
 
-Lors de la saisie ou de la modification de fiches adhérents, certains champs sont marqués comme étant requis. Bien entendu, cette sélection par défaut peut ne pas vous convenir, mais vous avez la possibilité de paramétrer ça facilement :-)
+When you create or edit a member, some fields are mandatory. Default configuration may not suit your needs, but you can configure some elements easily ;)
 
-Depuis le menu `Configuration`, `Champs du coeur`, vous aurez accès à la liste des champs de la fiche adhérent, il vous suffira pour chacun d'entre eux, de définir si oui ou non il est requis, ainsi que les droits d'accès associés :
+From the `Configuration`, `Core fields` menu, you will get access to all fields available for members, and choose for each one if it is mandatory or not, as well as associated access rights:
 
-* `inaccessible` correspond à un champ inaccessible par quiconque (désactivé, en fait),
-* `administrateur` correspond à un champ accessible en lecture/écriture par les administrateurs de l'application uniquement,
-* `membre du bureau` correspond à un champ accessible en lecture/écriture par les membres du bureau et les administrateurs,
-* `responsables de groupes` correspond à un champ accessible en lecture/écriture par les responsables du groupe auquel appartient l'adhérent, les membres du bureau et les administrateurs,
-* `lecture/écriture` correspond à un champ accessible en lecture/écriture par l'adhérent, les responsables du groupe, les membres du bureau et les administrateurs,
-* `lecture seule` correspond à un champ accessible en lecture seulement par l'adhérent, en lecture/écriture pour les responsables du groupe, les membres du bureau et les administrateurs.
+* `inaccessible` will make the field inaccessible for everyone,
+* `administrator` will make the field readable and writeable for administrators only,
+* `staff members` will make the field readable and writable for staff members and administrators,
+* `groups managers` will make the field readable and writable for groups managers on the memebrs of groups they own, and for staff memebrs and administrators,
+* `read/write` will make the field readable and writeable for member, groups managers, staff members and administrators,
+* `read only` will make the field read only for the members, but writable for groups managers, staff members and administrators.
 
 .. image:: ../_styles/static/images/usermanual/fields_config.png
    :scale: 50%
    :align: center
-   :alt: Paramétrage des champs requis et des droits d'accès
+   :alt: Core fields management
 
+Dynamic fields
+==============
 
-Ajouts de champs supplémentaires
-================================
+Galette comes per default with many fields for members, contributions and transactions. Some of them will be useless, but you may need fields that does not exists...
 
-Galette propose par défaut un certain nombre de champs, pour la gestion des adhérents, des contributions et des transactions. Certains champs ne vous seront probablement pas utiles, mais d'autres vont peut-être cruellement vous manquer...
+In this case, that is quite simple : just add a new dynamic field with a label, define if it is mandatory or not, and that's all : Galette will handle them automatically, just show the result ;)
 
-Dans ce cas, c'est simple : créez un nouveau champ, sélectionnez son type, donnez lui un libellé, définissez s'il est requis ou optionnel ; et c'est tout : Galette se chargera du reste, il suffira d'admirer le résultat... ;-)
+There are several types of dynamic fields:
 
-Il vous est proposé quatre types de champs dynamiques :
+* `separator`: just a label, like a part title,
+* `free text`: multiline text area,
+* `single line`: one line text,
+* `choice`: a dropdown list,
+* `date`: a date field with a selector,
+* `boolean`: a checkbox,
+* `file`: add files.
 
-* `séparateur` : juste un libellé, comme un titre de partie,
-* `texte libre` : ajoutera une zone de texte multiligne,
-* `ligne simple` : ajoutera une zone de texte monoligne,
-* `choix` : ajoutera une liste de choix,
-* `date` : ajoutera un champ de type date, avec sélecteur,
-* `booléen` : ajoutera une case à cocher,
-* `fichier` : permettra de lier des fichiers à la fiche adhérent.
+While creating a new field (or editing an existing one); you also can:
 
-Lors de la création d'un nouveau champ (ou de la modification d'un champ existant) ; vous aurez également la possibilité de :
-
-* choisir si le champ est visible par tous ou uniquement aux administrateurs,
-* rendre le champ obligatoire,
-* définir ses droits d'accès, suivant les mêmes modalités que pour les champs du cœur.
+* mark it as required,
+* define access rights, tha same as for core fields.
 
 .. image:: ../_styles/static/images/usermanual/champs_dynamiques_rendu.png
    :scale: 50%
    :align: center
-   :alt: Un champ dynamique de chaque type possible sur la fiche adhérent
+   :alt: A dynamic field
 
-Certains champs - comme les séparateurs, les dates et les booléens - ne requièrent aucune autre information complémentaire ; pour les autres :
+Some field types like separators, dates and booleans, does not need any extra information; for others:
 
-* `texte libre` :
+* `free text`:
 
-  * `largeur` : définit la largeur de la zone de texte,
-  * `hauteur` : définit la hauteur de la zone de texte.
+  * `width`: define number of columns,
+  * `height`: define number of rows.
 
-* `ligne simple` :
+* `single line`:
 
-  * `largeur` : la largeur de la zone,
-  * `taille` : le nombre de caractères maximum que peut contenir la zone,
-  * `répétition` : nombre d'occurrences possibles de ce champ.
+  * `width`: field width,
+  * `size`: number of characters,
+  * `repeat`: number of possible ocurences.
 
-* `choix` :
+* `choice`:
 
-  * `valeurs` : la liste des valeurs possibles pour la liste de choix.
+  * `values`: possible values for the dropdown.
 
-* `fichier` :
+* `file`:
 
-  * `taille` : taille maximale du fichier, en kilo-octets (cette taille ne peut être supérieure à la limite imposée par la configuration de PHP).
+  * `size`: maximum file size, in Kio (this size is limited to the one for the PHP configuration).
 
-Traduction de libellés
-======================
+Labels translation
+==================
 
-Galette est multilingue, l'ajout de nouvelles valeurs telles que les libellés des champs dynamiques ne permet l'adjonction que d'une seule et unique valeur (monolingue donc). Galette propose donc une interface qui vous permet de traduire de tels libellés dans les différentes langues disponibles.
+Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language.
 
-Notez que par défaut, tout libellé entré correspondra à sa traduction dans la langue courante de Galette.
+Note that each new label will be added with current Galette lang.
 
-Contenu des courriels
-=====================
+Emails contents
+===============
 
-En fonction de la configuration (voir les préférences), des courriels peuvent être envoyés aux adhérents et/ou aux administrateurs ; lors de la création d'une nouvelle fiche, ou lors de l'ajout d'une contribution par exemple.
+Depending on your configuration (see preferences), administrative emails cans be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example.
 
-Les textes en question sont fournis par défaut, et une interface vous est proposée pour les modifier.
+Defaults are provided, but you can change them.
 
-.. note:: Il est important de noter que les textes en question comportent des variables - notées sous la forme ``{VARIABLE}`` - qui seront remplacées automatiquement lors de l'envoi du message. L'oubli de l'une de ces valeurs peut potentiellement causer des problèmes d'envoi des messages.
+.. note:: It is important to note that those textes contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be carefull to not forget any of those, that could cause sending issues.
 
 .. image:: ../_styles/static/images/usermanual/edit_mails.png
    :scale: 50%
    :align: center
-   :alt: Modification du texte en français envoyé à un adhérent lors de son adhésion
+   :alt: Edit mail send to a new member in french
 
-Si ce paramètre est actif, un courriel sera envoyé à l'adhérent lorsque :
+An email will be send to member when:
 
-* il s'auto inscrit. Ce courriel comporte typiquement ses identifiants de connexion,
-* sa fiche est ajoutée ou modifiée par qui de droit (à condition que la case correspondante soit cochée lors de la saisie),
-* il demande à réinitialiser son mot de passe,
-* une nouvelle contribution est attachée à son compte (à condition que la case correspondante soit cochée lors de la saisie).
+* he self subscribes. This mail contains authentication informations,
+* his card is added or edited by someone else (if the corresponding box is checked),
+* he uses lost password feature,
+* a new contribution is attache to his account (if the corresponding box is checked).
 
-De même, un courriel sera envoyé à l'administrateur lorsque :
+An email will be send to administrators when:
 
-* un nouvel adhérent est inscrit ou s'auto inscrit,
-* une contribution est attachée à un compte.
+* a new member is added or self subscribes,
+* a new contribution is attached to his account.
 
-Les courriels ne seront bien entendus envoyés que si le paramétrage de Galette permet l'envoi de messages (et si cela est configuré correctement). L'envoi de messages aux administrateurs est configuré de manière globale dans les préférences ; tandis que l'envoi de message à l'adhérent passe par une case à cocher au coup par coup dans l'interface, sauf pour le mail d'auto-inscription qui sera envoyé systématiquement.
+Of course, emails will be sent ony if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditionned on a checkbox from the user interface, excepting for self subscription messages that will always be send.
 
-Un certain nombre de variables - remplacées automatiquement lors de l'envoi - sont disponibles, à la fois pour le sujet et pour le corps du message. Certaines sont utilisables pour la totalité des messages, d'autres (comme les informations de l'adhérent ou son mot de passe) ne le sont que dans certains contextes spécifiques.
-
-Voici la liste des variables disponibles :
-
-* `{ASSO_NAME}` : le nom de l'association, disponible globalement,
-* `{ASSO_SLOGAN}` : le slogan de l'association, disponible globalement,
-* `{NAME_ADH}` : le nom de l'adhérent, disponible sous réserves,
-* `{MAIL_ADH}` : l'adresse courriel de l'adhérent, disponible sous réserves,
-* `{LASTNAME_ADH}` : nom de l'adhérent, disponible sous réserves,
-* `{FIRSTNAME_ADH}` : prénom de l'adhérent, disponible sous réserves,
-* `{LOGIN}` :  l'identifiant de connexion de l'adhérent, disponible sous réserves,
-* `{LOGIN_URI}` : l'URL de Galette, disponible globalement,
-* `{PASSWORD}` : le mot de passe de l'adhérent, disponible uniquement depuis la page d'auto inscription,
-* `{CHG_PWD_URI}` : lien de modification du mot de passe, disponible uniquement depuis la réinitialisation du mot de passe,
-* `{LINK_VALIDITY}` : durée de validité du lien, disponible uniquement depuis la réinitialisation du mot de passe,
-* `{DEADLINE}` : date de fin, disponible uniquement lors de la création d'une contribution,
-* `{CONTRIB_INFO}` : informations sur la contribution, disponible uniquement lors de la création d'une contribution,
-* `{CONTRIB_AMOUNT}` : montant de la contribution, disponible uniquement lors de la création d'une contribution,
-* `{CONTRIB_TYPE}` : type de contribution, disponible uniquement lors de la création d'une contribution,
-* `{DAYS_REMAINING}` : nombre de jours d'adhésion restants, disponible uniquement pour les courriels de rappel,
-* `{DAYS_EXPIRED}` : nombre de jours depuis que l'adhésion a expiré, disponible uniquement pour les courriels de rappel.
-
+Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more.

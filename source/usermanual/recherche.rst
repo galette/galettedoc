@@ -1,88 +1,89 @@
 .. _search_galette:
 
-**********
-Recherches
-**********
+******
+Search
+******
 
-Toute recherche exécutée sera conservée le temps de votre session. Vous pourrez ainsi aller modifier un paramétrage ou autre puis revenir sur la liste ; vous récupérerez automatiquement le filtre que vous aviez exécuté.
+Every executed search will be conserved during your session. You can change a parameter or else, and come back to the list, you will find all your previous search parameters.
 
-Filtrage de la liste des adhérents
-==================================
+Filtering members list
+======================
 
-Le formulaire situé en haut de la liste des adhérents vous permet d'effectuer des recherches parmi les adhérents. La `Recherche avancée`_ vous propose bien plus de critères et de possibilités.
+The form at the top of the members lit allow you to make some search among members. The :ref:`advanced search <advsearch>` provides more cireria and possibilities.
 
 .. image:: ../_styles/static/images/usermanual/list_members-filter.png
    :scale: 50%
    :align: center
-   :alt: Filtrage de la liste des membres
+   :alt: Filter members list
 
-Vous pourrez ainsi filtrer sur :
+You can filter on:
 
-* une recherche textuelle sur l'une des informations suivante :
+* a full text search on one of the following informations:
 
-  * le nom (nom, prénom et pseudo),
-  * la raison sociale,
-  * l'adresse (adresse, complément d'adresse, code postal, ville et pays),
-  * le courriel et les messageries instantanées (adresse de courriel, URL du site web, adresses MSN, ICQ et Jabber),
-  * l'emploi,
-  * les informations (les informations publiques, et [pour les administrateurs uniquement] les informations destinées aux administrateurs).
+  * name (first name, last name and nickname),
+  * company name,
+  * address (address, address continuation, zipcode, town and country),
+  * email and instant messaging addresses (email addrss, website URL, and all direct messenging addresses),
+  * job position,
+  * informations (public informations and - for administrators only - pivate informations).
 
-* l'un des statuts de l'adhérent :
+* a member status:
 
-  * tous les adhérents,
-  * les adhérents à jour,
-  * les échéances proches (les adhérents dont la cotisation va arriver à échéance sous 30 jours),
-  * les retardataires,
-  * les adhérents n'ayant jamais cotisé,
-  * les membres du bureau,
-  * les administrateurs.
+  * all members,
+  * up to date members,
+  * closes expiries (members whose membership expires in 30 days)
+  * latecomers,
+  * members whose never had a membership,
+  * staff members,
+  * administrators.
 
-* un état du compte :
+* a status of the account:
 
-  * tous les comptes,
-  * comptes actifs,
-  * comptes inactifs
+  * all accounts,
+  * active accounts,
+  * inactive accounts.
 
-* l'appartenance à un groupe,
-* la présence ou l'absence d'une adresse de courriel.
+* group affiliation,
+* presence or absence of an email address.
 
-Les différents filtres sont bien entendu complémentaires, vous donnant la possibilité par exemple de chercher parmi vos adhérents ceux dont le compte est actif, qui possèdent une adresse courriel et dont le nom contient un « a » ;-)
+All filters can be combined, giving you the ability to search among your active members whose have an email address and whose name contains a "a" ;)
 
+.. _advsearch:
 
-Recherche avancée
-=================
+Advanced search
+===============
 
-La recherche avancée, accessible depuis le menu principal, propose un certain nombre de champs de types différents, qui sont liées aux adhérents ou à leurs contributions. L'interface est séparée en quatre parties (qu'il est possible de réduire individuellement) :
+Advanced search can be found in the main menu and propose an certain amount of fields types, related to members or their membership. The screen is separated into four parts (you can reduce individually):
 
-* la **recherche simple** qui reprend à l'identique les possibilités de filtrage de la liste des adhérents,
-* la **recherche avancée** qui propose quelques champs complémentaires d'une potentielle utilité,
-* la **recherche dans les contributions** qui permet de rechercher des adhérents à partir d'informations liées à leurs contributions,
-* la **recherche libre** permet de chercher dans tous les chamsp possibles d'un adhérent (y compris les champs dynamiques) et qui s'adaptera automatiquement au champ sélectionné. Vous pouvez ajouter et supprimer des lignes pour affiner la recherche.
+* **simple search** which recall all filters present in the members list,
+* **advanced search** which proposes extra fields on members that can be of use,
+* **search in contributions** allowing search on members contributions,
+* **free search** which allow to select any member field possible, including dynamic fields, and which will automatically adapt to selected field. You can add and remove lines to refine search.
 
 .. image:: ../_styles/static/images/usermanual/advanced_search.png
    :scale: 50%
    :align: center
-   :alt: Recherche avancée
+   :alt: Advanced search
 
-Recherches enregistrées
-=======================
+Saved searches
+==============
 
 .. versionadded:: 0.9.3
 
-Toute recherche effectuée sur les adhérents peut être enregistrée avec un titre pour être exécutée à nouveau par la suite. Les recherches sont liées à un utilisateur.
+Every search on members can be stored (with a name) in order to be executed again later. They are accessible only for their author.
 
-Après avoir effectué une recherche (« simple » ou « avancée »), cliquez simplement sur le bouton « Enregistrer », et renseignez un titre.
+After you proceed a search ("simple" or "advanced"), just click on the "Save" button, and pick up a name.
 
 .. image:: ../_styles/static/images/usermanual/save_search.png
    :scale: 50%
    :align: center
-   :alt: Enregistrement d'une recherche
+   :alt: Save a search
 
-Vous pourrez ensuite la retrouver dans la liste des recherches :
+You can find saved searches in the list:
 
 .. image:: ../_styles/static/images/usermanual/search_list.png
    :scale: 50%
    :align: center
-   :alt: Liste des recherches
+   :alt: Searches list
 
-Depuis cette liste, vous pourrez supprimer ou ré-exécuter les recherches, ainsi que voir le détail des paramètres utilisés.
+From this list, you will be able to remove or execute again searches, and also see a detail of used criteria.
