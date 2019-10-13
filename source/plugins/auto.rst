@@ -41,6 +41,20 @@ Et voilà ; le plugin Auto est installé :-)
 
 Le plugin Auto pour Galette ne requiert aucune configuration particulière, vous pouvez directement entrer vos données dans la base.
 
+Configure required fields
+=========================
+
+When adding a new vehicle in database, there are several fields that are required, but that mya not fit your needs. In such case, you can define your own require fields: juste create a ``local_auto_required.inc.php`` file in your Galette ``config`` directory and declare an array of the fields you want to require. As example, if you just want to require name and modle for a car, you will need:
+
+.. code-block:: php
+
+   <?php
+   return array(
+        'name'  => 1,
+        'model' => 1
+   );
+   ?>
+
 Récupération des sources
 ========================
 
