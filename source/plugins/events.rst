@@ -113,13 +113,7 @@ La liste des activités disponibles est récupérée depuis l'évènement ; les 
 
 Vous pouvez filtrer la liste des réservations par évènement, type de paiement, ou encore par statut de paiement. Il est ensuite possible d'envoyer un emailing aux membres ayant reservé, en utilisant le système d'emailing standard de Galette.
 
-Récupération des sources
-========================
+How to get the sources?
+=======================
 
-Le code source du plugin Évènements est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-events.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-events.git>`_, utilisez :
-
-.. code-block:: bash
-
-   $ git clone git.tuxfamily.org/gitroot/galette/plugin-events.git
-
-Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
+Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

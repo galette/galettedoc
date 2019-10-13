@@ -1,72 +1,109 @@
-********************
-Comment contribuer ?
-********************
+*****************
+How to contribute
+*****************
 
-Un dépôt Git, un workflow... Wow, mais c'est compliqué, je n'y arriverai jamais !
+There are numerous ways to contribute to an Open Source project like Galette. You may:
 
-Mais si, ne vous inquiétez pas... :-) La première chose à savoir, c'est que le worflow doit être suivi et respecté pour le développement de Galette. Sur votre dépôt Git local, vous faites comme vous voulez. Gardez en tête que la branche `master` représente la version stable de Galette et la branche `develop` la version de développement.
+* help on questions asked by others on the lists,
+* help on testing proposed fixes and features,
+* help on translations (Galette, plugins, documentation),
+* help on documentation,
+* `offer the developer a donation <https://www.paypal.me/galettesoft>`_
+* and, last but not least, help on :ref:`writting code <contrib_coding>`.
+
+This documentation is a technical overview of the contribution process to the source code of Galette and its plugins. Read the `how to contribute to Galette <https://galette.eu/dc/index.php/pages/Contribuer?navlang=en>`_ page on our website if your are looking for an introduction of the global process.
+
+.. _contrib_coding:
+
+Writting code
+=============
+
+To fix a bug on the stable version, you have to work on the `master` branch. Use the development version on the `develop` branch to implement new features or fix issues in the next release.
+
+Working on separate branches is a well-known GIT good practice I advise you to follow :)
 
 .. note::
 
-   Bien que l'utilisation du dépôt Git simplifie les choses pour le travail collaboratif, l'utiliser n'est **en rien une obligation**.
+   If you just want to have look at the development version, `download Galette nightly build archive <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_ which is updated each night.
 
-   Vous pouvez parfaitement vous baser sur la `version nightly de Galette <https://downloads.tuxfamily.org/galette/galette-dev.tar.bz2>`_, mise à niveau depuis la branche `develop` quotidiennement.
+To send us a code modification, :ref:`read our sending patch practical example <sendpatch>`.
 
-Pour corriger un bogue déclaré sur la version stable, il faut se baser sur la version stable (branche `master`) ; de même qu'on se basera sur la version de développement (branche `develop`) pour implémenter une nouvelle fonctionnalité. En dehors de cela, libre à vous de faire comme vous voulez (nous y reviendrons dans le premier exemple patique) :-)
+.. _devmodel:
 
-Modèle de développement
-=======================
+Development model
+=================
 
-Galette est constitué de versions stables, sur lesquelles il faut pouvoir apporter des correctifs, d'une version de développement, et de moult versions de tests pour l'intégration de nouvelles fonctionnalités qui seront (ou pas) implémentées par la suite.
+`Vincent Driessen <https://nvie.com>`_ published in 2010 a `development model for GIT branches I found very pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, and that I decided to use for Galette. With the ``git-flow`` tool from the same author, the workflow is quite simple to follow. Having doubts? Let's take a look at `this article which explains why you should use git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
 
-`Vincent Driessen <https://nvie.com>`_ a publié en 2010 un `modèle de gestion des branches Git que je trouve très pertinent <https://nvie.com/posts/a-successful-git-branching-model/>`_, et que j'ai décidié d'utiliser pour le développement de Galette. Couplé à l'outil git-flow du même auteur, le workflow est plus simple à suivre. Vous en doutez ? Alors, je vous laisse consulter cet `article qui vous explique pourquoi vous devriez utiliser git-flow <https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_.
+This is perfectible (well, among many, many others :D), but this does the job, and ensures everyone works the same way.
 
-Configuration de Git
-====================
+Git configuration
+=================
 
-La toute première chose à faire si vous venez d'installer Git, c'est de configurer vos nom et adresse email. Pour ce faire, entrez simplement :
+First, set your name and email in git configuration:
 
-.. code-block:: bash
+::
 
    $ git config --global user.name "Victor Hugo"
    $ git config --global user.email "victor@hugo.fr"
 
-Il s'agit là du minimum syndical de configuration Git que vous avez à faire :) Bien entendu, Git dispose de bon nombre d'options, je vous recommande la lecture du `chapitre sur la configuration de Git sur le site officiel du logiciel <https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git>`_.
-
-Exemples pratiques : développement
-==================================
-
-Si vous ne souhaitez pas utiliser git-flow, la procédure est simple :
-
-.. code-block:: bash
-
-   $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
-   $ cd galette
-   $ git checkout -b develop origin/develop
-
-La dernière commande vous place sur la version de développement. Utiliser une branche locale dans laquelle vous pourrez travailler en toute sérénité est une bonne pratique répandue, je vous encourage à l'utiliser. Créez une branche locale dérivée de la branche `develop` (après avoir récupéré cette dernière) :
-
-.. code-block:: bash
-
-   $ git checkout -b ma_fonctionnalite develop
-
-Vous pouvez travailler tout votre soûl dans cette branche. Les opérations de merge de branches automatisées par git-flow doivent ici être effectuées "à la main", et ne seront pas traitées ici. Une fois le développement terminé, vous pouvez :ref:`nous soumettre votre nouvelle fonctionnalité <sendpatch>`, en vous assurant de générer le patch depuis la branche adéquate (`ma_fonctionnalite` dans notre exemple).
+It is the minimal configuration required to use GIT :) Of course, there are a lot of other options available, see `this chapter about GIT configuration <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration>`_.
 
 .. note::
 
-   Si vous souhaitez utiliser les bons et loyaux services de git-flow ; assurez-vous dans un premier temps qu'il est bien installé
+   The commands above sets the configuration globally for all your Git
+   repositories.
 
-.. code-block:: bash
+   Removing the ``--global`` option will set the configuation locally in the
+   repository your working on. It is usefull when you use different identities
+   on several projects. But *in this case, don't forget to configure your
+   repository after the initial clone*.
+
+Commit messages
+===============
+
+Commit messages are not normalized, but we intend to follow `the official documentation note <https://git-scm.com/docs/git-commit/#_discussion>`_ about them:
+
+    Though not required, it’s a good idea to begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description. The text up to the first blank line in a commit message is treated as the commit title, and that title is used throughout Git. For example, git-format-patch[1] turns a commit into email, and it uses the title on the Subject line and the rest of the commit in the body.
+
+The `Galette tracker <https://bugs.galette.eu/projects/galette>`_ can automatically link a commit to any issue, just use ``refs`` keyword in your commit message to reference a ticket, and ``fixes`` or ``closes`` to get it closed aswell. For example:
+
+::
+
+   Do something, fixes #1
+
+   Also refs #2 and #3
+
+This will close ticket 1, and add the commit as a reference in both tickets 2 and 3.
+
+Practical example : code modifications
+======================================
+
+.. note::
+
+   If you want to use git-flow, please make sure it is properly installed
+
+Prepare the working copy
+------------------------
+
+Clone the repository:
+
+::
 
    $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
    $ cd galette
+
+Then, initialize git-flow:
+
+::
+
    $ git flow init
 
    Which branch should be used for bringing forth production releases?
       - master
    Branch name for production releases: [master] 
    Branch name for "next release" development: [develop] 
-   
+
    How to name your supporting branch prefixes?
    Feature branches? [feature/] 
    Release branches? [release/] 
@@ -77,88 +114,86 @@ Vous pouvez travailler tout votre soûl dans cette branche. Les opérations de m
    * develop
      master
 
-La commande `git-flow init` initialise le workflow en fonction des paramètres que vous avez entrés. Le système se charge automatiquement de créer la branche locale `develop`, basée sur la branche `develop` distante.
+.. note::
 
-Dès lors, vous pouvez travailler :)
+   When you clone the Galette GIT repository, you land on the ``master`` branch. This documentation assumes you are working on the ``develop`` branch.
 
-Implémenter une fonctionnalité
-------------------------------
+   ::
 
-Pour travailler sur l'implémentation de la fonctionnalité `n'importe quoi` (code secret `nimp`) par exemple, on fera :
+      $ git checkout -b develop origin/develop
 
-.. code-block:: bash
+   Then, since git-flow gives the details of what it does, just check the output ;)
 
-   $ git flow feature start nimp
-   Switched to a new branch 'feature/nimp'
+
+Add a feature
+-------------
+
+To start working on a feature that we will name ``killer`` for the example :
+
+::
+
+   $ git flow feature start killer
+   Switched to a new branch 'feature/killer'
    
    Summary of actions:
-   - A new branch 'feature/nimp' was created, based on 'develop'
-   - You are now on branch 'feature/nimp'
+   - A new branch 'feature/killer' was created, based on 'develop'
+   - You are now on branch 'feature/killer'
    
    Now, start committing on your feature. When done, use:
    
-        git flow feature finish nimp
+        git flow feature finish killer
 
-Et voilà ! Vous êtes maintenant paré à developper la fonctionnalité `n'importe quoi` ! Toutes mes félicitations :p
+And voila! Now you can work on your killer feature, congratulations!
 
-Dans le courant de votre développement, si la branche de développement évolue, il est recommandé de synchroniser votre branche `nimp` avec les modifications apportées. Une fois encore, git-flow va venir à votre secours :
+While coding, it is a good pratice to bring back the last changes from the develop branch. First make sure ``develop`` is up to date, then run a rebase command from your ``feature/killer`` branch:
 
-.. code-block:: bash
+::
 
+   $ git pull origin develop:develop
    $ git flow feature rebase
+   or
+   $ git rebase develop
 
-Une fois le développement terminé, il suffit de suivre le conseil donné par git-flow lui même lors de la création : 
+Once the development is over, send us the patch. The feature's finishings only happens on the main repository itself.
 
-.. code-block:: bash
+Fix a bug
+------------
 
-   $ git flow feature finish
-   Branches 'develop' and 'origin/develop' have diverged.
-   And local branch 'develop' is ahead of 'origin/develop'.
-   Switched to branch 'develop'
-   Your branch is ahead of 'origin/develop' by 1 commit.
-   Updating caad186..185b682
-   Fast-forward
-    galette/index.php |    1 -
-    1 files changed, 0 insertions(+), 1 deletions(-)
-   Deleted branch feature/nimp (was 185b682).
-   
-   Summary of actions:
-   - The feature branch 'feature/nimp' was merged into 'develop'
-   - Feature branch 'feature/nimp' has been removed
-   - You are now on branch 'develop'
+To fix a bug, you'll use git-flow with the `hotfix` keyword instead of `feature`:
 
-Et hop. Vos modifications ont été répercutées dans la branche `develop`, la fonctionnalité `nimp` est disponible aux tests :-) Bon, pas tout à fait dans la pratique, voyez :ref:`comment soumettre un patch <sendpatch>` pour la suite.
+::
 
-Correction d'un bogue
----------------------
+   $ git flow hotfix start 0.9.3.1
 
-Pour un correctif de bogue, on utilisera git-flow avec le mot clé `hotfix` au lieu de `feature`. La grosse différence est que le `hotfix` sera basé sur la branche stable, alors que la `feature` sera elle basée sur la branche de développement. git-flow vous permet de vous abstraire entièrement cet apsect des choses.
+The main difference, as already explained, is that this branch will be based on the `master` branch.
 
 .. _sendpatch:
 
-Exemples pratiques : soumission de correctifs et fonctionnalités
-================================================================
+Practical example: send a new feature
+=====================================
 
-Après avoir effectué vos modifications dans le code source, l'étape suivante est généralement d'envoyer un patch au projet, pour que vos modifications soient appliquées. L'utilisation de Git simplifie ce processus. Vos modifications ont été apportées à une branche (disons `develop` pour l'exemple), qui dérive d'une autre branche (`origin/develop` pour notre exemple). Sachant cela, demandons juste à Git de nous fournir la liste des modifications apportées, sous forme de patchs :
+.. note::
 
-.. code-block:: bash
+   For technical reasons, we have created mirrors of all our GIT repositories on github. All the source code is on github, and you may prefer to use their fork/pull request capacities. It is ok as well.
+
+From your working branch (let's say you are sending the ``killer`` feature), generate a patch you can send to us:
+
+::
 
    $ git branch
-   * develop
+     develop
+   * feature/killer
      master
-   $ git format-patch origin/develop 
+   $ git fetch origin
+   $ git format-patch origin/develop
    0001-Placebo-commit.patch
    0002-Destructive-commit.patch
 
-Vous pourrez ensuite déposer ces fichiers sur le `rapport de bogue ou sur la demande d'évolution <https://bugs.galette.eu/projects/galette/>`_ adéquat :)
+You can now attach those patches files to the `related ticket on Galette tracker <https://bugs.galette.eu/projects/galette/>`_ :)
+Please precise which branch you chose to start from.
 
-Quelques petits points de contrôle :
+A few hints:
 
-* précisez sur quelle branche votre travail est basé,
-* respectez tant que faire se peut les conventions de codage,
-* testez le patch,
-* précisez brièvement ce que fait le patch.
-
-L'envoi de patchs par email est envisageable si leur taille cumulée reste raisonnable ; mais il est plus simple pour l'équipe de développement de se référer aux tickets.
-
-Pensez, lors de la soumission de votre patch, à préciser sur quelle branche vous avez travaillé à l'origine.
+* try to respect as possible :ref:`our coding standards <conventions>`,
+* test your work, and other features it may affect,
+* try to add unit tests.

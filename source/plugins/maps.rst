@@ -76,13 +76,7 @@ La page `galette/plugins/plugin-maps/maps.php` est accessible aux utilisateurs n
 
 Les administrateurs et membres du staff peuvent consulter la localisation de tous les adhérents, mais ne peuvent la changer ni la supprimer ; il doivent passer par la fiche de l'adhérent pour cela.
 
-Récupération des sources
-========================
+How to get the sources?
+=======================
 
-Le code source du plugin Maps est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-maps.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-maps.git>`_, utilisez :
-
-.. code-block:: bash
-
-   $ git clone git.tuxfamily.org/gitroot/galette/plugin-maps.git
-
-Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
+Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

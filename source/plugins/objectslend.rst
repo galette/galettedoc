@@ -77,13 +77,7 @@ Il est également possible d'activer l'affichage des photos en pleine taille.
 
 Enfin, l'écran permet d'activer ou de désactiver l'affichage de certaines informations.
 
-Récupération des sources
-========================
+How to get the sources?
+=======================
 
-Le code source du plugin ObjectsLend est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-objectslend.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-objectslend.git>`_, utilisez :
-
-.. code-block:: bash
-
-   $ git clone git.tuxfamily.org/gitroot/galette/plugin-objectslend.git
-
-Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
+Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

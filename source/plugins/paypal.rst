@@ -55,13 +55,7 @@ L'interface des préférences vous permet aussi de gérer les montants associés
 
 Après cela, votre formulaire permettra à un internaute de sélectionner le type de contribution qu'il souhaite, ajuster au besoin le montant, et de régler le tout depuis son compte Paypal.
 
-Récupération des sources
-========================
+How to get the sources?
+=======================
 
-Le code source du plugin Paypal est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-paypal.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git>`_, utilisez :
-
-.. code-block:: bash
-
-   $ git clone git.tuxfamily.org/gitroot/galette/plugin-paypal.git
-
-Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`.
+Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

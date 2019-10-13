@@ -8,48 +8,18 @@ About Galette's documentation
 
 `Galette <https://galette.eu/dc/?navlang=en>`_'s documentation, released under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ license, is written using `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and is built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_.
 
-Retrieve sources
-================
-
-`Documentation sources <https://git.tuxfamily.org/galette/galettedoc.git>`_ are stored in their own `Git <https://en.wikipedia.org/wiki/Git>`_ repository hosted by `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `mirror is also available on github <https://github.com/galette/documentation>`_.
-
-To clone the main repository, use the following along with your Tuxfamily credentials:
-
-  ::
-
-     $ git clone ssh://YOURUSER@git.tuxfamily.org/gitroot/galette/galettedoc.git
-
-Or as anonymous user:
-
-  ::
-
-     $ git clone git://git.tuxfamily.org/gitroot/galette/galettedoc.git
-
 Sphinx allows to build documentation in various formats from the same sources. Galette's documentation is therefore available as HTML, PDF and EPUB formats; thanks to `Read the docs <https://readthedocs.io>`_.
 
 Build documentation
 ===================
 
-Once the repository has been cloned, you should be able to build the documentation, but you may need some prerequisites installed:
+First, clone repository, please refer to the :doc:`Galette Documentation GIT documentation to get its source <development/git>`.
+
 
 * `Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ to generate HTML and EPUB formats,
 * a complete TeX/LaTeX environment to generate PDF (`TeX Live <https://www.tug.org/texlive/>`_, `MacTEx <https://www.tug.org/mactex/>`_, `MikTeX <https://miktex.org/>`_).
 
-To build the documentation, go to the root of the project (``galettedoc`` directory if you've cloned the GIT repository):
-
-::
-
-   $ git clone git://git.tuxfamily.org/gitroot/galette/galettedoc.git
-     Cloning into 'galettedoc'...
-     [...]
-     Receiving objects: 100% (4209/4209), 10.62 MiB | 840.00 KiB/s, done.
-     Resolving deltas: 100% (2658/2658), done.
-
-::
-
-   $ cd galettedoc
-
-Then, you have to run ``make`` with one of the formats you want to compile (``html``, ``epub``, ``latexpdf``). In order to build the documentation for all three formats, we'll run:
+To build the documentation, go to the root of the project (``galettedoc`` directory if you've cloned the GIT repository) and then run ``make`` with one of the formats you want to compile (``html``, ``epub``, ``latexpdf``). In order to build the documentation for all three formats, we would run:
 
 ::
 
