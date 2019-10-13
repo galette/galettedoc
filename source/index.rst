@@ -6,7 +6,7 @@
 Galette's documentation
 =======================
 
-`Galette <https://galette.eu>`_ is an open source and free membership management web application towards non profit organizations.
+`Galette <https://galette.eu>`_ is a `Free/Libre Open Source <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__ membership management web application dedicated towards non profit organizations.
 
 .. rst-class:: docs install_doc
 
@@ -24,7 +24,7 @@ Galette's documentation
 
 :doc:`developer guide <development/index>`
 
-You can also :doc:`know more about Galette documentation </about>` (used technologies, how to retrieve sources and build).
+If you want, you can also :doc:`learn more about Galette's documentation itself</about>` (used technologies, how to retrieve the documentation sources, translate and build it).
 
 .. only:: html
 
