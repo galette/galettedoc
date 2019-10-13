@@ -80,7 +80,7 @@ _routes.php
 
 This file is now the core of your plugin. All old PHP files that was directly called in URL in older versions will now be dispatched in several routes (one per PHP file, or not).
 
-As an example, take the ``preferences.php` page of our plugin. The source code for the 0.8 version was:
+As an example, take the ``preferences.php`` page of our plugin. The source code for the 0.8 version was:
 
 .. code-block:: php
 
