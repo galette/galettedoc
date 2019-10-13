@@ -8,7 +8,7 @@ There are numerous ways to contribute to an Open Source project like Galette. Yo
 * help on testing proposed fixes and features,
 * help on translations (Galette, plugins, documentation),
 * help on documentation,
-* `offer the developer a donation <https://www.paypal.me/galettesoft>`_
+* `offer the developer a donation <https://www.paypal.me/galettesoft>`_ (contact him if you prefer to use a check or a transfer),
 * and, last but not least, help on :ref:`writting code <contrib_coding>`.
 
 This documentation is a technical overview of the contribution process to the source code of Galette and its plugins. Read the `how to contribute to Galette <https://galette.eu/dc/index.php/pages/Contribuer?navlang=en>`_ page on our website if your are looking for an introduction of the global process.
