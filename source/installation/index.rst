@@ -25,7 +25,7 @@ If you are using Linux, run the following commands :
    $ wget https://download.tuxfamily.org/galette/galette-0.9.3.tar.bz2
    $ tar xjvf galette-0.9.3.tar.bz2
 
-The current stable version of Galette is |version|. A `nightly archive <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../development/git>` as explained in the developer guide.
+The current stable version of Galette is 0.9.3. A `nightly archive <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../development/git>` as explained in the developer guide.
 
 .. toctree::
    :maxdepth: 3
