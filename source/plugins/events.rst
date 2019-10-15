@@ -1,26 +1,25 @@
-==========
-Évènements
-==========
+======
+Events
+======
 
-Ce plugin vous apporte :
+This plugin provides:
 
-* la gestion d'évènements,
-* l'association d'activités à ces évènements,
-* la gestion de réservations.
+* events management,
+* associate activities with events,
+* booking management.
 
 Installation
 ============
 
 .. warning::
 
-    Ce plugin nécessite Galette 0.9.1 minimum pour fonctionner !
+   This plugin requires Galette 0.9.1 to work!
 
-Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+First of all, download the plugin:
 https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.1.1.tar.bz2
 
-Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
-
-Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
+Extract the downloaded archive in Galette ``plugins`` directory.
+For example, under linux (replacing `{url}` and `{version}` with correct values):
 
 .. code-block:: bash
 
@@ -28,53 +27,53 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ wget {url}
    $ tar xjvf galette-plugin-events-{version}.tar.gz
 
-Initialisation de la base de données
-====================================
+Database initialisation
+=======================
 
-Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
+In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`.
 
-Et voilà ; le plugin Évènements est installé :-)
+And this is finished; Events plugin is installed :)
 
-Utilisation du plugin
-=====================
+Plugin usage
+============
 
-Lorsque le plugin est installé, un groupe `Évènements` est ajouté au menu lorsqu'un adhérent est connecté. Les possibilités offertes varient en fonction du profil de l'utilisateur (simple adhérent, responsable de groupe, administrateur, ...).
+When the plugin is installed, an `Events` group is added to Galette menu when a user is logged in. There are various possibilities that change depending on user profile (simple member, group manager, administrator, ...)?
 
-Activités
----------
+Activities
+----------
 
-Vous pouvez définir autant d'activités que vous le souhaitez, et les associer ensuite à un évènement. Une activité peut être une sortie organisée, un repas, le logement, ...
+You can define as much activities as you want, and associate them to an event. An activity may be an organized trip, a meal, a housing, ...
 
 .. image:: ../_styles/static/images/plugin-events/list_activities.png
    :scale: 50%
    :align: center
 
-Les activités sont simplement caractérisées par un nom, un statut d'activité et un éventuel commentaire purement informatif.
+An activity is composed with a name, a status and an optionnal comment.
 
-Pour ajouter une nouvelle activité, cliquez sur le lien "Nouvelle activité" et renseignez les informations :
+To add a new activity, just click on "New activity" link:
 
 .. image:: ../_styles/static/images/plugin-events/new_activity.png
    :scale: 50%
    :align: center
 
-Évènements
-----------
+Events
+------
 
-Les évènements sont la raison d'être du plugin. Vous pourrez définir un certain nombre d'informations relatives à l'évènement, comme son nom, les dates de début et de fin, la localisation, ...
+Events are the main goal of the plugin. You can define several informations, like a name, begin and ending dates, location, ...
 
 .. image:: ../_styles/static/images/plugin-events/new_event.png
    :scale: 50%
    :align: center
 
-Les nom, date de début et ville sont obligatoires pour tout évènement, le reste des informations est totalement facultatif.
+Name, begin date and town are mandatory. All other informations are entirely optionnal.
 
-Les évènements qui ne sont pas liés à un groupe seront accessibles à tous les adhérents. Si un groupe est spécifié, seuls les membres (ou responsables) de ce groupe y auront accès.
+Events that are not linked to a group will be available for all members. If a group is set, only members and managers of this group will have access.
 
 .. note::
 
-    Lorsqu'un nouvel évènement est créé par un responsable de groupe, le choix d'un des groupes qu'il gère est obligatoire !
+   When a group manager creates a new event, he must choose one of the groups he owns!
 
-Vous pourrez associer une ou plusieurs activités à chaque évènement, et préciser pour chacune si elle est disponible, non disponible, ou encore obligatoire. Choisissez l'activité à ajouter, et cliquez sur le bouton d'ajout.
+You can attach one or several activities to each event, and for each one set if it is available, not available or even mandatory. Choose the activity to add, and click the button.
 
 .. image:: ../_styles/static/images/plugin-events/event_activities.png
    :scale: 50%
@@ -82,36 +81,36 @@ Vous pourrez associer une ou plusieurs activités à chaque évènement, et pré
 
 .. warning::
 
-    L'ajout ou la suppression d'une activité à un évènement rechargera la page et vous demandera de remplir les champs obligatoires. Néanmoins (et cela est précisé à chaque fois), l'évènement n'est **pas enregistré** à cette occasion.
+   Adding or removing activity from an event will reload the page and ask you to fill mandatory informations. Nonetheless (and this is specified each time), the event **will not be stored** during this operation.
 
-    Assurez-vous donc d'enregistrer l'évènement ensuite :)
+   Ensure you save the event :)
 
-La liste des évènements permet de modifier ou supprimer les différentes entrées ; vous pouvez aussi accéder à la liste des réservations ou encore exporter les réservations au format CSV.
+From Events list, you can edit or remove entries, access to booking list ou export bookings as CSV.
 
 .. image:: ../_styles/static/images/plugin-events/events_list.png
    :scale: 50%
    :align: center
 
-Réservations
-------------
+Bookings
+--------
 
-Des réservations peuvent être enregistrées pour chaque évènement. Comme indiqué plus haut, les simples adhérents et les responsables de groupes seront limités aux évènements de leurs groupes, ou pour lesquels aucun groupe n'est défini (ouvert à tous).
+Bookings can be registered for each event. As we said before, simple members and groups managers will be limited to their groups events, ou to the events that are not restricted to a group.
 
-Ajouter une nouvelle réservation peut se faire en cliquant sur "Nouvelle réservation" dans le menu du plugin, ou encore depuis la liste des réservations d'un évènement particulier.
+Adding a new booking can be achieved from the menu "New booking" or from the event bookings list.
 
 .. image:: ../_styles/static/images/plugin-events/new_booking.png
    :scale: 50%
    :align: center
 
-Les réservations pour les simples membres sont considérées comme fermées dès lors que l'évènement est marqué comme fermé, ou encore lorsque la date de début est dépassée. Les administrateurs et membres du bureau peuvent toujours ajouter de nouvelles réservations.
+Bookings are closed once the event is marked as close, or when the begin date is over. Administrators and staff members can always add new bookings.
 
-La liste des activités disponibles est récupérée depuis l'évènement ; les activités obligatoires devront bien entendu être cochées dans les réservations.
+Activities list is retrieved from the event; mandatory ones must of course be checked during booking.
 
 .. image:: ../_styles/static/images/plugin-events/bookings_list.png
    :scale: 50%
    :align: center
 
-Vous pouvez filtrer la liste des réservations par évènement, type de paiement, ou encore par statut de paiement. Il est ensuite possible d'envoyer un emailing aux membres ayant reservé, en utilisant le système d'emailing standard de Galette.
+You can filter bookings list per event, payment type or payment status. You can then send a mailing to booked members, using the standard Galette mailing mechanism.
 
 How to get the sources?
 =======================

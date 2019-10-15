@@ -2,31 +2,35 @@
 Paypal
 ======
 
-Ce plugin vous apporte :
+This plugin provides:
 
-* la possibilité d'associer un montant à un type de cotisation,
-* la création d'un formulaire de paiement Paypal,
-* un historique,
-* l'enregistrement automatique de la transaction une fois validée.
+* possibility to associate an amount to a contribution type,
+* create a Paypal payment form,
+* an history,
+* automatic transaction storage once validated.
 
 .. image:: ../_styles/static/images/plugin-paypal/preferences.png
    :scale: 70%
    :align: center
+   :alt: Paypal plugin preferences
 
 .. image:: ../_styles/static/images/plugin-paypal/form.png
    :scale: 70%
    :align: center
+   :alt: Paypal payment form
 
+.. warning::
+
+   Due to the way Paypal payments are handled, especially the payment confirmation, your instance must be publically accessible.
 
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+First of all, download the plugin:
 https://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-1.7.0.tar.bz2
 
-Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
-
-Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
+Extract the downloaded archive in Galette ``plugins`` directory.
+For example, under linux (replacing `{url}` and `{version}` with correct values):
 
 .. code-block:: bash
 
@@ -34,26 +38,26 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ wget {url}
    $ tar xjvf galette-plugin-Paypal-{version}.tar.bz2
 
-Initialisation de la base de données
-====================================
-
-Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
-
-Et voilà ; le plugin Paypal est installé :-)
-
-Configuration du plugin
+Database initialisation
 =======================
 
-Lorsque le plugin est installé, un groupe `Paypal` est ajouté au menu, comprenant deux nouvelles entrées :
+In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`.
 
-* `Formulaire de paiement` : le formulaire lui même, dont l'URL est publiquement accessible,
-* `Préférences Paypal` : les préférences du plugin, réservées aux membres du bureau et aux administrateurs.
+And this is finished; Paypal plugin is installed :)
 
-Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vous pouvez soit utiliser l'adresse email associée à votre compte (qu'il faudra mettre à jour côté Galette si vous la modifiez) ou votre identifiant de compte marchand. Pour trouver ce dernier, connectez-vous à votre compte Paypal, rendez-vous dans le menu "Préférences" -> "Plus d'options" ; et cherchez la valeur "Identifiant de compte marchand" (mille mercis à Thomas pour cette procédure détaillée !). La modification de l'identifiant Paypal n'est autorisée que pour les administrateurs, les membres du bureau ne peuvent pas modifier cette valeur.
+Plugin configuration
+====================
 
-L'interface des préférences vous permet aussi de gérer les montants associés aux différents types de cotisations, et vous permet également de désactiver l'affichages de certains types de contributions.
+Once plugin has been installed, a `Paypal` group is added to the menu, with some new entries:
 
-Après cela, votre formulaire permettra à un internaute de sélectionner le type de contribution qu'il souhaite, ajuster au besoin le montant, et de régler le tout depuis son compte Paypal.
+* `Payment form`: the payment form itself, which is accessible as a public page,
+* `Preferences`: plugin preferences, accessible for administrators and staff members.
+
+In order to work properly, you need to fill a very important value: your Paypal account code. You can either use the email address associated with your Paypal account (but you will need to chang it in Galette if it changes on Paypal) or your merchant identifier. To find your merchant identifiant, log in to Paypal and you will find it in your account preferences. Changing identifier is only allowed for administrators.
+
+Preferences screen also permit to edit amount related to contributions types, and to hide some types.
+
+After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membershop extension, its membership wil be recalculated when the payment will be confirmed.
 
 How to get the sources?
 =======================

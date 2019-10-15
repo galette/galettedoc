@@ -2,29 +2,28 @@
 Auto
 ====
 
-Ce plugin permet la gestion de clubs automobiles. Vous pourrez gérer :
+This plugin provides vehicles management for automobile clubs, you can manage:
 
-* les véhicules (propriétaire, informations diverses, photo, etc.),
-* l'historique des modifications d'un véhicule,
-* les marques des véhicules,
-* les modèles des différentes marques,
-* les types de transmissions,
-* les types de carrosseries,
-* les couleurs,
-* les finitions,
-* les états.
+* vehicles (owner, several informations, photo, etc),
+* vehicle history modification (owner, color, ...),
+* brands,
+* models,
+* transmission types,
+* body types,
+* colors,
+* finitions,
+* states.
 
-Ce plugin a été développé en étroite collaboration avec Anatole du `Club 404 <https://www.leclub404.com/>`_, et François du `club Fiat 500 <https://www.leclub404.com/>`_. Un grand merci à eux pour les données qu'ils m'ont fournies durant la création du plugin :-)
+This plugin has been initially developed in collaboration with Anatole from `Club 404 <https://www.leclub404.com/>`_, and François from `club Fiat 500 <http://www.club500.fr/>`_. A big thanks to them for their precious help during plugin development :)
 
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+First of all, download the plugin:
 https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.4.0.tar.bz2
 
-Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
-
-Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
+Extract the downloaded archive in Galette ``plugins`` directory.
+For example, under linux (replacing `{url}` and `{version}` with correct values):
 
 .. code-block:: bash
 
@@ -32,14 +31,14 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ wget {url}
    $ tar xjvf galette-plugin-auto-{version}.tar.bz2
 
-Initialisation de la base de données
-====================================
+Database initialisation
+=======================
 
-Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
+In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`.
 
-Et voilà ; le plugin Auto est installé :-)
+And this is finished; Auto plugin is installed :)
 
-Le plugin Auto pour Galette ne requiert aucune configuration particulière, vous pouvez directement entrer vos données dans la base.
+There is no particular setup required, you can just enter data in the database.
 
 Configure required fields
 =========================

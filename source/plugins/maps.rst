@@ -2,20 +2,19 @@
 Maps
 ====
 
-Ce plugin vous apporte :
+This plugin provides:
 
-* la possibilité pour vos adhérents d'enregisrer leurs coordonnées géographiques (latitude et longitude),
-* une carte publique (pour les membres à jour de cotisation et ayant demandé à ce que leur profil soit public) de ces emplacements.
+* possibility to store geogaphical coordinates for members (latitude and longitude),
+* a public map displaying up to date members that have choosen to be publically visible.
 
 Installation
 ============
 
-Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse :
+First of all, download the plugin:
 https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.4.0.tar.bz2
 
-Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette.
-
-Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :
+Extract the downloaded archive in Galette ``plugins`` directory.
+For example, under linux (replacing `{url}` and `{version}` with correct values):
 
 .. code-block:: bash
 
@@ -23,58 +22,51 @@ Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par 
    $ wget {url}
    $ tar xjvf galette-plugin-maps-{version}.tar.gz
 
-Initialisation de la base de données
-====================================
+Database initialisation
+=======================
 
-Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin.
+In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`.
 
-Et voilà ; le plugin Maps est installé :-)
+And this is finished; Maps plugin is installed :)
 
-Utilisation du plugin
-=====================
+Plugin usage
+============
 
-Lorsque le plugin est installé, un groupe `Cartes` est ajouté au menu lorsqu'un adhérent est connecté, qui comprend une entrée `Ma localisation`. Cette page permet aux adhérents de définir leur localisation.
+When the plugin is installed, a group `Maps` is added to Galette menu when a member is logged in, which contains `My location` entry. This page allow member to store its location.
 
-Un bouton `Géolocaliser l'adhérent` est également ajouté lors de la visualisation des fiches des adhérents. Ce bouton permet aux administrateurs et membres du bureau de géolocaliser l'adhérent.
+A `Geolocalize` button is also added when displaying a member, that allows administrators to set member coordinates.
 
-Enfin, une entrée `Cartes` apparaît dans la liste des pages publiques. Cette page affiche des membres localisés et à jour de leur cotisation. Les administrateurs et membres du bureau verront tous les profils, alors que les simples membres et les visiteurs anonymes ne verront que les profils publics.
+Also, a `Map` entry is added in public pages list, that displays geolocalized members that are up to date. Administrators and staff members will see all members, while simple members and visitors will only see up to date public ones.
 
-Dans un premier temps, vos adhérents devront entrer leur localisation, via l'entrée adéquate du menu. Plusieurs options s'offrent à eux :
+First of all, members will enter their location coordinates. Several options are provided:
 
-* si l'adhérent a renseigné sa ville sur sa fiche, une liste de possibilités d'emplacements lui sera soumise (via le `service en ligne de Nominatim <https://nominatim.openstreetmap.org>`_),
-* une zone de recherche libre (dont les résultats sont basés sur `OpenStreetMap <https://nominatim.openstreetmap.org/>`_) est disponible en complément,
-* un bouton de géolocalisation utilisant les fonctionnalités du navigateur est également disponible.
+* if town has been set in member informations, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),
+* additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim.openstreetmap.org/>`_),
+* and also a geolocalize button using browser capacities.
 
-La zone de recherche est disponible lors de l'enregistrement de la localisation de vos membres, ainsi que lors de la consultation des cartes, que ce soit par les administrateurs ou les simples visiteurs.
+The search zone can be used when saving members location, and when displaying the maps.
 
 .. image:: ../_styles/static/images/plugin-maps/towns_list.png
    :scale: 70%
    :align: center
 
-En sélectionnant l'une de ces propositions, ou en cliquant sur la carte, l'adhérent pourra définir son lieu de résidence (avec la présision qu'il désire) à l'aide de la fenêtre qui s'ouvrira.
+A member can define its location (with the precision he wants) on the map selecting one of the propositions:
 
 .. image:: ../_styles/static/images/plugin-maps/location_select.png
    :scale: 70%
    :align: center
 
-L'adhérent peut choisir de cliquer sur le bouton de géolocalisation, sa position sera définie approximativement en l'absence d'appareil GPS :
+Using the geolocalization button will define its position from the browser:
 
 .. image:: ../_styles/static/images/plugin-maps/geoloc.png
    :scale: 70%
    :align: center
 
-Une fois ses coordonnées enregistrées, l'adhérent verra sa localisation affichée, et aura la possibilité de la supprimer.
+Then, member location is displayed on map, and can be removed:
 
 .. image:: ../_styles/static/images/plugin-maps/location_selected.png
    :scale: 70%
    :align: center
-
-Notes de fonctionnement
-=======================
-
-La page `galette/plugins/plugin-maps/maps.php` est accessible aux utilisateurs non authentifiés (si toutefois votre instance de Galette est paramétrée pour afficher les pages publiques à tout le monde). Ceux-ci ne pourront voir que les membres ayant rendu leur profil public, et qui sont à jour de leur cotisation. Les « simples adhérents » connectés auront accès aux mêmes informations, en plus de la possibilité de définir leur position géographique.
-
-Les administrateurs et membres du staff peuvent consulter la localisation de tous les adhérents, mais ne peuvent la changer ni la supprimer ; il doivent passer par la fiche de l'adhérent pour cela.
 
 How to get the sources?
 =======================

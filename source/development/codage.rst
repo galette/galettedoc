@@ -10,7 +10,7 @@ Galette is a free software licensed under GPL version 3 and written in PHP. Gale
 
 .. note::
 
-   While developping, you may find useful to do a :doc:`bit of debug <debug>`...
+   While developing, you may find useful to do a :doc:`bit of debug <debug>`...
 
    It is also possible to change some :ref:`Galette behaviors (verbosity level, application mode, ...) <behavior>`.
 

@@ -455,7 +455,7 @@ Call to a table in the code will then look like:
 Internationalisation
 ====================
 
-Every plugin must provide translations for new string it proposes. :doc:`Galette global internationalisation system <i18n>` applies here. The main task (exepted files update while developping plugin) consists to set up translation files the first time.
+Every plugin must provide translations for new string it proposes. :doc:`Galette global internationalisation system <i18n>` applies here. The main task (exepted files update while developing plugin) consists to set up translation files the first time.
 
 Use an official plugin up to date as references, and copy ``lang/Makefile`` and ``lang/xgettext.py`` files in your own ``lang`` directory:
 

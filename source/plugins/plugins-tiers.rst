@@ -1,36 +1,38 @@
 :orphan:
 
-Communauté plugins tiers
-========================
+=============================
+Third party plugins community
+=============================
 
-Une `organisation Github, nommée galette-community <https://github.com/galette-community/>`_ a été créée. Le but est d'y centraliser les plugins développés par la communauté ; et de leur fournir un dépôt de code source, une gestion de tickets, un site web, ... Et éventuellement de reçevoir une aide ponctuelle technique des développeurs de Galette.
+A `Gitub organisation name galette-community <https://github.com/galette-community/>`_ has been created. Its goal is to centralize plugins that are not developed by Galette team, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team.
 
-Pré-requis
-----------
+Prerequisites
+=============
 
-Pour qu'un projet soit accepté, il doit respecter certains pré-requis :
+For a plugin to be accepted, it must fit some prerequisites:
 
-* être un plugin Galette (le but n'est pas d'y mettre tout et n'importe quoi ;)),
-* être sous license libre (GPLv3 ou compatible) et la respecter,
-* être compatible avec une version "décente" de Galette (un plugin qui serait compatible avec la seule version 0.7 par exemple serait refusé).
+* be a Galette plugin,
+* be licensed under a license compatible with Galette (GPLv3 or compatible) and respect it,
+* be compatible with a "decent" Galette version.
 
-Les plugins devraient (c'est une vive recommandation, pas une obligation) être :ref:`localisés <i18n>` et respecter les :ref:`conventions de codage de Galette <conventions>`.
+Plugins should (this is a strong recommandation, not an obligation) be :ref:`localized <i18n>` and respect :ref:`Galette coding conventions <conventions>`.
 
-Rejoindre la communauté
------------------------
+Join community
+==============
 
-Le système d'organisation Github ne permet pas de faire des demandes d'inclusion ; il vous faudra alors contacter l'équipe de Galette par le biais des listes de diffusion ; en fournissant simplement votre nom d'utilisateur Github. Une invitation à rejoindre l'organisation vous sera ensuite envoyée.
+Github organization system does not allow to request inclusion, you will have to contact Galette team from mailing lists, giving them your Github account name.
+An invitation will then be send to you.
 
-Ajout d'un plugin
------------------
+Add a plugin
+============
 
-Une fois l'invitation acceptée, vous aurez le droit de créer un dépôt pour votre plugin.
+Once the invitation has been accepted, you will get right to create a repository for your plugin.
 
-Si votre plugin n'existe pas, il suffira alors de créer un nouveau dépôt au sein de l'organisation. Si votre plugin se trouve déjà sur Github, il est possible de le transférer vers l'organisation depuis "Transfer ownership" des "Settings" du dépôt.
+If your plugin does not yet exist, just create it. If it already exist on github, you can transfer ownership to the organization from your existing repository settings.
 
-Site web
---------
+Website
+=======
 
-Un site web « à la Github » peut-être ajouté à votre projet. Concrètement, la configuration ainsi que le contenu de ce dernier seront stockés dans une branche de votre plugin nommée ``gh-pages`` qui ne servira qu'au site.
+A website ala Github can be added to your project. Concretely, configuration and contents will be stored in a specific branch of the repository name ``gh-pages`` that will only be used for the website.
 
-Le but étant l'unicité, tant logique que visuelle, les sites de plugins communautaires devraient tous utiliser le même thème d'affichage. L'équipe Galette se propose de vous donner un coup de main pour la mise en place initiale du site ; le contenu et les futures mises à jour restant bein entendu à la charge de l'auteur ;)
+The goal is to have a certain unicity on all third party plugins website. Galette team may help you for the initial setup of the website; contents and updates are in charge of the author.
