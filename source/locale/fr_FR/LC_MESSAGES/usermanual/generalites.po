@@ -1,0 +1,281 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 09:21+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../usermanual/generalites.rst:5
+msgid "Generalities"
+msgstr "Généralités"
+
+#: ../usermanual/generalites.rst:8
+msgid "Rights"
+msgstr ""
+
+#: ../usermanual/generalites.rst:10
+msgid ""
+"We can see several rights level in Galette, allowing access to different "
+"parts and features of the application. Levels are:"
+msgstr ""
+
+#: ../usermanual/generalites.rst:12
+msgid ""
+"**super administrator** is a special user (the only one that is not a "
+"member) created at installation,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:13
+msgid ""
+"**administrators** are members for who the \"administrator\" checkbox has "
+"been checked,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:14
+msgid ""
+"**staff members** have a specific status (President, Treasurer, Secretary, "
+"...),"
+msgstr ""
+
+#: ../usermanual/generalites.rst:15
+msgid "**groups managers** have only rights on the groups they manage,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:16
+msgid ""
+"**up to date members** are members whose account are active, and whose "
+"subscription are up to date,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:17
+msgid ""
+"**members** are members whose account is inactive or whose subscriptions are"
+" not up to date,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:18
+msgid "simple **visitors**."
+msgstr ""
+
+#: ../usermanual/generalites.rst:20
+msgid ""
+"Staff members, administrators as well as the super administrator can create,"
+" edit and remove members, contributions, transactions, send emailings, ..."
+msgstr ""
+
+#: ../usermanual/generalites.rst:22
+msgid ""
+"Administrators have also access to the application configuration, excepted "
+"super admin informations."
+msgstr ""
+
+#: ../usermanual/generalites.rst:24
+msgid ""
+"The super administrator has a full access to the application, but not to all"
+" features. Indeed, this is not a member account, and it cannot have some of "
+"required informations. He of course can change its own login informations "
+"from application preferences."
+msgstr ""
+
+#: ../usermanual/generalites.rst:26
+msgid ""
+"Members can change their own informations, and can see their contributions "
+"and transactions (as read only)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:28
+msgid ""
+"Visitors can - if this is parameted in preferences - access to public pages "
+"(trombinoscope, public members list) but can also register :)"
+msgstr ""
+
+#: ../usermanual/generalites.rst:30
+msgid "Todo"
+msgstr ""
+
+#: ../usermanual/generalites.rst:32
+msgid ""
+"Groups managers rights must be detailled with their current values... It is "
+"difficult to know who can do what."
+msgstr ""
+
+#: ../usermanual/generalites.rst:35
+msgid "Management rules"
+msgstr ""
+
+#: ../usermanual/generalites.rst:37
+msgid ""
+"Due dates are calculated by day. If a member pay into before the end of his "
+"membership, duration of this membership will be added to remaining days. "
+"Example:"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0 ../usermanual/generalites.rst:0
+msgid "Roger subscribed on 2004-01-01 for one year,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+msgid "if he pays into for a year on 2004-12-13,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+msgid "his due date will become 2006-01-01."
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+msgid "No day will be forget."
+msgstr ""
+
+#: ../usermanual/generalites.rst:44
+msgid ""
+"At the contrary, if a member renew his membership late, we evaluate again "
+"his membership duration:"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+msgid "if he pays into for a year on 2006-01-13,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:0
+msgid "his due date will become 2006-01-13."
+msgstr ""
+
+#: ../usermanual/generalites.rst:50
+msgid ""
+"He is not an up to date member from 2005-01-01 to 2005-01-13... On paper at "
+"least :)"
+msgstr ""
+
+#: ../usermanual/generalites.rst:52
+msgid ""
+"Those rules are flexible because you can freely change membership dates on "
+"contributions, if you have rights to add or update them. We can imagine an "
+"association who stores all contributions on the first day of the next month "
+"(offering its members a longer membership time)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:55
+msgid "Interface"
+msgstr ""
+
+#: ../usermanual/generalites.rst:57
+msgid "We do our best for the Galette interface to be:"
+msgstr ""
+
+#: ../usermanual/generalites.rst:59
+msgid ""
+"logical and consistent (you will always find icons at familiar places),"
+msgstr ""
+
+#: ../usermanual/generalites.rst:60
+msgid "web standards compliant (HTML and CSS valid),"
+msgstr ""
+
+#: ../usermanual/generalites.rst:61
+msgid "HTML semantic respectful,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:62
+msgid ""
+"working even if Javascript is disabled (as possible, but really you should "
+"enable Javascript to really take advantage of Galette)),"
+msgstr ""
+
+#: ../usermanual/generalites.rst:63
+msgid "accessible (without any WCAG, WAI or equivalent tests run)."
+msgstr ""
+
+#: ../usermanual/generalites.rst:65
+msgid ""
+"If you find places where one of those points is incorrect, do not hesitate "
+"to tell us on the tracker or on the mailing list!"
+msgstr ""
+
+#: ../usermanual/generalites.rst:69
+msgid ""
+"Galette provide a \"mobile compatible\" UI, but it has not been designed for"
+" that. Therefore, it may be difficult or worst to use; in this case we do "
+"our best, but all devices cannot be tested!"
+msgstr ""
+
+#: ../usermanual/generalites.rst:71
+msgid ""
+"Mobile display is currently a plus and not a fundation of the UI. "
+"Improvements can be done, this will just not be a priority. Note that we "
+"have in mind to rework the whole UI, with a better support."
+msgstr ""
+
+#: ../usermanual/generalites.rst:74
+msgid "Telemetry"
+msgstr ""
+
+#: ../usermanual/generalites.rst:78
+msgid "Galette propose to send some telemetry informations:"
+msgstr ""
+
+#: ../usermanual/generalites.rst:80
+msgid ""
+"**entirely anonymous**: no information about your association or your "
+"members is sent,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:81
+msgid ""
+"**deliberately blurred**: we retrieve an estimation of members count, never "
+"a real count,"
+msgstr ""
+
+#: ../usermanual/generalites.rst:82
+msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
+msgstr ""
+
+#: ../usermanual/generalites.rst:84
+msgid ""
+"Sending telemetry data is a manual process, nothing will be send until you "
+"**explicitely** ask it. With those informations, we can have a better "
+"knwownledge of different usages of Galette, their number of member or "
+"contributions, plugins used, ..."
+msgstr ""
+
+#: ../usermanual/generalites.rst:86
+msgid ""
+"Those informations are useful for the project development and promotion. "
+"When you send those informations, you can review data that would be sent."
+msgstr ""
+
+#: ../usermanual/generalites.rst:93
+msgid ""
+"After data has been sent once, Galette will propose to send an update from "
+"time to time. You can also send them from Galette preferences."
+msgstr ""
+
+#: ../usermanual/generalites.rst:99
+msgid ""
+"It is also possible to register your association on the website, of course, "
+"not anonymously, but it is not possible to link telemetry and registration. "
+"New references are moderated."
+msgstr ""
+
+#: ../usermanual/generalites.rst:101
+msgid ""
+"You can update your registration informations from Galette preferences. The "
+"form will be blank (because it is not possible to retrieve data you've sent)"
+" but all data will be updated because your instance has a unique "
+"registration identifier designed for that."
+msgstr ""
+
+#: ../usermanual/generalites.rst:107
+msgid ""
+"A new panel has been added on Galette dashboard to send telemetry "
+"informations and/or register your instance. Once those steps has been "
+"completed, the panel will dissapear. You aslo can choose to just disable it."
+msgstr ""

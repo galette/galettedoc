@@ -1,0 +1,292 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 08:55+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../development/contributor.rst:3
+msgid "How to contribute"
+msgstr "Comment contribuer"
+
+#: ../development/contributor.rst:5
+msgid ""
+"There are numerous ways to contribute to an Open Source project like "
+"Galette. You may:"
+msgstr ""
+
+#: ../development/contributor.rst:7
+msgid "help on questions asked by others on the lists,"
+msgstr ""
+
+#: ../development/contributor.rst:8
+msgid "help on testing proposed fixes and features,"
+msgstr ""
+
+#: ../development/contributor.rst:9
+msgid "help on translations (Galette, plugins, documentation),"
+msgstr ""
+
+#: ../development/contributor.rst:10
+msgid "help on documentation,"
+msgstr ""
+
+#: ../development/contributor.rst:11
+msgid ""
+"`offer the developer a donation <https://www.paypal.me/galettesoft>`_ "
+"(contact him if you prefer to use a check or a transfer),"
+msgstr ""
+
+#: ../development/contributor.rst:12
+msgid ""
+"and, last but not least, help on :ref:`writting code <contrib_coding>`."
+msgstr ""
+
+#: ../development/contributor.rst:14
+msgid ""
+"This documentation is a technical overview of the contribution process to "
+"the source code of Galette and its plugins. Read the `how to contribute to "
+"Galette <https://galette.eu/dc/index.php/pages/Contribuer?navlang=en>`_ page"
+" on our website if your are looking for an introduction of the global "
+"process."
+msgstr ""
+
+#: ../development/contributor.rst:19
+msgid "Writting code"
+msgstr ""
+
+#: ../development/contributor.rst:21
+msgid ""
+"To fix a bug on the stable version, you have to work on the `master` branch."
+" Use the development version on the `develop` branch to implement new "
+"features or fix issues in the next release."
+msgstr ""
+
+#: ../development/contributor.rst:23
+msgid ""
+"Working on separate branches is a well-known GIT good practice I advise you "
+"to follow :)"
+msgstr ""
+
+#: ../development/contributor.rst:27
+msgid ""
+"If you just want to have look at the development version, `download Galette "
+"nightly build archive <https://downloads.tuxfamily.org/galette/galette-"
+"dev.tar.bz2>`_ which is updated each night."
+msgstr ""
+
+#: ../development/contributor.rst:29
+msgid ""
+"To send us a code modification, :ref:`read our sending patch practical "
+"example <sendpatch>`."
+msgstr ""
+
+#: ../development/contributor.rst:34
+msgid "Development model"
+msgstr ""
+
+#: ../development/contributor.rst:36
+msgid ""
+"`Vincent Driessen <https://nvie.com>`_ published in 2010 a `development "
+"model for GIT branches I found very pertinent "
+"<https://nvie.com/posts/a-successful-git-branching-model/>`_, and that I "
+"decided to use for Galette. With the ``git-flow`` tool from the same author,"
+" the workflow is quite simple to follow. Having doubts? Let's take a look at"
+" `this article which explains why you should use git-flow "
+"<https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_."
+msgstr ""
+
+#: ../development/contributor.rst:38
+msgid ""
+"This is perfectible (well, among many, many others :D), but this does the "
+"job, and ensures everyone works the same way."
+msgstr ""
+
+#: ../development/contributor.rst:41
+msgid "Git configuration"
+msgstr ""
+
+#: ../development/contributor.rst:43
+msgid "First, set your name and email in git configuration:"
+msgstr ""
+
+#: ../development/contributor.rst:50
+msgid ""
+"It is the minimal configuration required to use GIT :) Of course, there are "
+"a lot of other options available, see `this chapter about GIT configuration "
+"<https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration>`_."
+msgstr ""
+
+#: ../development/contributor.rst:54
+msgid ""
+"The commands above sets the configuration globally for all your Git "
+"repositories."
+msgstr ""
+
+#: ../development/contributor.rst:57
+msgid ""
+"Removing the ``--global`` option will set the configuation locally in the "
+"repository your working on. It is usefull when you use different identities "
+"on several projects. But *in this case, don't forget to configure your "
+"repository after the initial clone*."
+msgstr ""
+
+#: ../development/contributor.rst:63
+msgid "Commit messages"
+msgstr ""
+
+#: ../development/contributor.rst:65
+msgid ""
+"Commit messages are not normalized, but we intend to follow `the official "
+"documentation note <https://git-scm.com/docs/git-commit/#_discussion>`_ "
+"about them:"
+msgstr ""
+
+#: ../development/contributor.rst:67
+msgid ""
+"Though not required, it’s a good idea to begin the commit message with a "
+"single short (less than 50 character) line summarizing the change, followed "
+"by a blank line and then a more thorough description. The text up to the "
+"first blank line in a commit message is treated as the commit title, and "
+"that title is used throughout Git. For example, git-format-patch[1] turns a "
+"commit into email, and it uses the title on the Subject line and the rest of"
+" the commit in the body."
+msgstr ""
+
+#: ../development/contributor.rst:69
+msgid ""
+"The `Galette tracker <https://bugs.galette.eu/projects/galette>`_ can "
+"automatically link a commit to any issue, just use ``refs`` keyword in your "
+"commit message to reference a ticket, and ``fixes`` or ``closes`` to get it "
+"closed aswell. For example:"
+msgstr ""
+
+#: ../development/contributor.rst:77
+msgid ""
+"This will close ticket 1, and add the commit as a reference in both tickets "
+"2 and 3."
+msgstr ""
+
+#: ../development/contributor.rst:80
+msgid "Practical example : code modifications"
+msgstr ""
+
+#: ../development/contributor.rst:84
+msgid "If you want to use git-flow, please make sure it is properly installed"
+msgstr ""
+
+#: ../development/contributor.rst:87
+msgid "Prepare the working copy"
+msgstr ""
+
+#: ../development/contributor.rst:89
+msgid "Clone the repository:"
+msgstr ""
+
+#: ../development/contributor.rst:96
+msgid "Then, initialize git-flow:"
+msgstr ""
+
+#: ../development/contributor.rst:119
+msgid ""
+"When you clone the Galette GIT repository, you land on the ``master`` "
+"branch. This documentation assumes you are working on the ``develop`` "
+"branch."
+msgstr ""
+
+#: ../development/contributor.rst:125
+msgid ""
+"Then, since git-flow gives the details of what it does, just check the "
+"output ;)"
+msgstr ""
+
+#: ../development/contributor.rst:129
+msgid "Add a feature"
+msgstr ""
+
+#: ../development/contributor.rst:131
+msgid ""
+"To start working on a feature that we will name ``killer`` for the example :"
+msgstr ""
+
+#: ../development/contributor.rst:146
+msgid "And voila! Now you can work on your killer feature, congratulations!"
+msgstr ""
+
+#: ../development/contributor.rst:148
+msgid ""
+"While coding, it is a good pratice to bring back the last changes from the "
+"develop branch. First make sure ``develop`` is up to date, then run a rebase"
+" command from your ``feature/killer`` branch:"
+msgstr ""
+
+#: ../development/contributor.rst:157
+msgid ""
+"Once the development is over, send us the patch. The feature's finishings "
+"only happens on the main repository itself."
+msgstr ""
+
+#: ../development/contributor.rst:160
+msgid "Fix a bug"
+msgstr ""
+
+#: ../development/contributor.rst:162
+msgid ""
+"To fix a bug, you'll use git-flow with the `hotfix` keyword instead of "
+"`feature`:"
+msgstr ""
+
+#: ../development/contributor.rst:168
+msgid ""
+"The main difference, as already explained, is that this branch will be based"
+" on the `master` branch."
+msgstr ""
+
+#: ../development/contributor.rst:173
+msgid "Practical example: send a new feature"
+msgstr ""
+
+#: ../development/contributor.rst:177
+msgid ""
+"For technical reasons, we have created mirrors of all our GIT repositories "
+"on github. All the source code is on github, and you may prefer to use their"
+" fork/pull request capacities. It is ok as well."
+msgstr ""
+
+#: ../development/contributor.rst:179
+msgid ""
+"From your working branch (let's say you are sending the ``killer`` feature),"
+" generate a patch you can send to us:"
+msgstr ""
+
+#: ../development/contributor.rst:192
+msgid ""
+"You can now attach those patches files to the `related ticket on Galette "
+"tracker <https://bugs.galette.eu/projects/galette/>`_ :) Please precise "
+"which branch you chose to start from."
+msgstr ""
+
+#: ../development/contributor.rst:195
+msgid "A few hints:"
+msgstr ""
+
+#: ../development/contributor.rst:197
+msgid "try to respect as possible :ref:`our coding standards <conventions>`,"
+msgstr ""
+
+#: ../development/contributor.rst:198
+msgid "test your work, and other features it may affect,"
+msgstr ""
+
+#: ../development/contributor.rst:199
+msgid "try to add unit tests."
+msgstr ""

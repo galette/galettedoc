@@ -1,0 +1,398 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 09:19+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../usermanual/preferences.rst:5
+msgid "Galette preferences"
+msgstr "Préférences de Galette"
+
+#: ../usermanual/preferences.rst:7
+msgid "You can configure several aspects of Galette from the preferences."
+msgstr ""
+
+#: ../usermanual/preferences.rst:10
+msgid "General"
+msgstr ""
+
+#: ../usermanual/preferences.rst:12
+msgid "This tab defines some parameters related to your association:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:19
+msgid "**Name**: name of the association,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:20
+msgid "**Description**: a short description,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:21
+msgid ""
+"**Footer text**: a text (HTML is allowed) to display in the footer of each "
+"page (to add a link to particular legal notices as example),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:22
+msgid "**Logo**: set your own logo,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:23
+msgid "**Address**,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:24
+msgid "**Zipcode**,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:25
+msgid "**Town**,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:26
+msgid "**Country**,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:27
+msgid "**Postal address**: choose which postal address will be used:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:29
+msgid "either **from the preferences** to use the one entered in the form,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:30
+msgid "either **from a member** to use address from a staff member,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:32
+msgid "**Website**: website URL,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:33
+msgid ""
+"**Telemetry date**: date on which `telemetry infomations "
+"<https://telemetry.galette.eu>`_ was sent,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:34
+msgid ""
+"**Registration date**: date of `registration of your Galette instance "
+"<https://telemetry.galette.eu/reference>`_"
+msgstr ""
+
+#: ../usermanual/preferences.rst:37
+msgid "Parameters"
+msgstr ""
+
+#: ../usermanual/preferences.rst:39
+msgid "Galette related parameters:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:46
+msgid ""
+"**Default lang**: default instance lang (can be changed many ways by the "
+"user),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:47
+msgid "**Lines / page**: number of lines to display on lists for pagination,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:48
+msgid "**Logging level**: change history level:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:50
+msgid "**Enabled**: internal history is entirely disabled,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:51
+msgid "**Disabled**: internal history is fully enabled,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:53
+msgid ""
+"**Default membership status**: the status to affect to all new created users"
+" (can be changed on creation form if current user have rights),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:54
+msgid ""
+"**Default account filter**: default account filter to apply on members list,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:55
+msgid "**Default membership extension**: membership extension in months,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:56
+msgid "**Beginning of membership**: beginning date of the financial period,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:57
+msgid "**Public pages enabled**: enable or disable public pages,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:58
+msgid "**Show public pages for**: defines who can see public pages:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:60
+msgid "**Everyone**, including simple visitors,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:61
+msgid "**Up to date members**,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:62
+msgid "**Administrators and staff members**,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:64
+msgid ""
+"**Self subscription enabled**: enable or disable self subscription feature,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:65
+msgid ""
+"**Post new contribution script URI**: URI of a script that will be called "
+"after a new contribution has been added. Several prefixes are handled:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:67
+msgid ""
+"**galette://**: call a script provided by Galette that will be called with "
+"the HTTP POST method. Path must be relative to your Galette installation. "
+"For example, the URI for the ``galette/post_contribution_test.php`` example "
+"script would be `galette://post_contribution_test.php`."
+msgstr ""
+
+#: ../usermanual/preferences.rst:68
+msgid ""
+"**get://** or **post://**: use HTTP GET or POST method to call a web "
+"address, prefix will be replaced with ``http://``,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:69
+msgid ""
+"**file://**: call a file on the web server, full path must be provided. "
+"Description script must be executable, and should define a shellbang if "
+"necessary. An email that contains contribution informations and script "
+"return (if any) will be sent to the administrator if an error occurs. The "
+"behavior is the same as cron : if the script outputs something, a mail is "
+"sent."
+msgstr ""
+
+#: ../usermanual/preferences.rst:73
+msgid ""
+"Using ``file://`` method can be dangerous, Galette just call the provided "
+"script, usage and security of the script is **under your own "
+"responsability**."
+msgstr ""
+
+#: ../usermanual/preferences.rst:75
+msgid "**RSS feed URL**: link to the RSS feed to display on dashboard,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:76
+msgid ""
+"**Galette base URL**: Galette instance URL, if the one proposed is "
+"incorrect,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:80
+msgid ""
+"This URL should be changed only if there are issues, this may cause "
+"instability."
+msgstr ""
+
+#: ../usermanual/preferences.rst:82
+msgid "A contextual help is provided, check it for more informations."
+msgstr ""
+
+#: ../usermanual/preferences.rst:84
+msgid ""
+"**Show identifiers**: display database identifiers instead of simple counts "
+"on lists."
+msgstr ""
+
+#: ../usermanual/preferences.rst:87
+msgid "E-Mail"
+msgstr ""
+
+#: ../usermanual/preferences.rst:89
+msgid "Sending email parameters:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:96
+msgid "**Sender name**: name of the sender,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:97
+msgid "**Sender email**: email address of the sender,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:98
+msgid ""
+"**Reply-to email**: reply email address. If empty, sender email will be "
+"used,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:99
+msgid ""
+"**Members administrator email**: email address on which inscription "
+"notifications will be send, you can set several addresses separated with "
+"comas,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:100
+msgid ""
+"**Send emails to administrators**: whether to send emails to administrators "
+"on subscription,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:101
+msgid ""
+"**Wrap text emails**: automatically wraps long lines in emails. If you "
+"disable this options, make sure to wrap yourself,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:102
+msgid ""
+"**Activate HTML editor**: activate HTML format when sending emails "
+"(discouraged),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:103
+msgid "**Emailing method**: method used to send emails:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:105
+msgid "**Emailing disabled**: no email will be send from Galette,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:106
+msgid ""
+"**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
+"parameters (recommended when possible),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:107
+msgid ""
+"**Using a SMTP server**: uses an external SMTP server to configure (will be "
+"slower than PHP ``mail()`` function),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:108
+msgid ""
+"**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also "
+"be slower than PHP ``mail()`` function),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:109
+msgid "**Using sendmail server**: uses local server sendmail,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:110
+msgid "**Using qmail server**: uses local server qmail,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:112
+msgid ""
+"**Mail signature**: signature added to all sent emails. Available variables "
+"are:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:114
+msgid "``{NAME]`` association name,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:115
+msgid "``{WEBSITE}`` association website,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:116
+msgid "``{FACEBOOK}`` faceboox URL set in preferences,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:117
+msgid "``{TWITTER}`` twitter URL set in preferences,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:118
+msgid "``{LINKEDIN}`` linkedin URL set in preferences,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:119
+msgid "``{VIADEO}`` viadeo URL set in preferences."
+msgstr ""
+
+#: ../usermanual/preferences.rst:121
+msgid ""
+"When using GMail as SMTP, you will have to configure user name and password "
+"to use."
+msgstr ""
+
+#: ../usermanual/preferences.rst:123
+msgid "SMTP configuration is a bit more complexe :"
+msgstr ""
+
+#: ../usermanual/preferences.rst:125
+msgid "**SMTP server**: server address, required,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:126
+msgid "**SMTP port**: server port, required,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:127
+msgid ""
+"**Use SMTP authentication**: if your server requires an authentication. In "
+"this case, you will also have to set username and password,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:128
+msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:129
+msgid ""
+"**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
+"signed for example)."
+msgstr ""
+
+#: ../usermanual/preferences.rst:131
+msgid ""
+"The `Test mail settings` button will send a test message to the email "
+"currently stored as members administrator."
+msgstr ""
+
+#: ../usermanual/preferences.rst:134
+msgid "Labels"
+msgstr ""
+
+#: ../usermanual/preferences.rst:142
+msgid "Cards"
+msgstr ""
+
+#: ../usermanual/preferences.rst:150
+msgid "Admin"
+msgstr ""
+
+#: ../usermanual/preferences.rst:154
+msgid ""
+"This tab wil be present only if you are logged in as super administrator."
+msgstr ""

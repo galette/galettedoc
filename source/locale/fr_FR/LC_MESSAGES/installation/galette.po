@@ -1,0 +1,311 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-02 17:22+0200\n"
+"PO-Revision-Date: 2019-10-20 08:59+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../installation/galette.rst:3
+msgid "Installation"
+msgstr "Installation"
+
+#: ../installation/galette.rst:5
+msgid ""
+"Galette installation is a web based process (once :doc:`preparation steps "
+"<preparation>` are done). Go to http://localhost/galette. :doc:`Update "
+"process <update>` is documented separately."
+msgstr ""
+
+#: ../installation/galette.rst:7
+msgid ""
+"You should rely on latest stable release, but it is also possible (if your "
+"know what you are doing, this is more complex for non developers!) grab it "
+"from :doc:`source code <../development/git>`"
+msgstr ""
+
+#: ../installation/galette.rst:10 ../installation/galette.rst:95
+msgid "Checks"
+msgstr ""
+
+#: ../installation/galette.rst:12
+msgid ""
+"Please check the following if you want Galette to install without problems:"
+msgstr ""
+
+#: ../installation/galette.rst:14
+msgid "your PHP version is high enough,"
+msgstr ""
+
+#: ../installation/galette.rst:15
+msgid "PHP timezone is set (required since PHP 5.3),"
+msgstr ""
+
+#: ../installation/galette.rst:16
+msgid "all required PHP extensions are installed and loaded,"
+msgstr ""
+
+#: ../installation/galette.rst:17
+msgid "some directories requires write access."
+msgstr ""
+
+#: ../installation/galette.rst:19
+msgid ""
+"If one of the mandatory extensions is missing or if the timezone is not set,"
+" please ask you system administrator. Galette does not require any "
+"\"exotic\" extension."
+msgstr ""
+
+#: ../installation/galette.rst:21
+msgid ""
+"The very first installation step will check those points, and will warn you "
+"if something gets wrong."
+msgstr ""
+
+#: ../installation/galette.rst:27
+msgid ""
+"If all :ref:`the installation steps <preparation>` has been properly "
+"followed, directories ACLs should be correct, please refer to :ref:`files "
+"ACLs section <droitsfichiers>` and refresh page in your browser."
+msgstr ""
+
+#: ../installation/galette.rst:30
+msgid "Installation type"
+msgstr ""
+
+#: ../installation/galette.rst:32
+msgid ""
+"Next screen ask you for installation type. You'll choose beetween \"New "
+"installation\" or \"Update\". Several of the steps that will follow will be "
+"specific to the type you will choose here."
+msgstr ""
+
+#: ../installation/galette.rst:39
+msgid "Database"
+msgstr ""
+
+#: ../installation/galette.rst:41
+msgid ""
+"First of all, make sure the database exists, and prepare all required "
+"informations:"
+msgstr ""
+
+#: ../installation/galette.rst:43
+msgid "host name"
+msgstr ""
+
+#: ../installation/galette.rst:44
+msgid "database user name"
+msgstr ""
+
+#: ../installation/galette.rst:45
+msgid "database user password"
+msgstr ""
+
+#: ../installation/galette.rst:46
+msgid "database name"
+msgstr ""
+
+#: ../installation/galette.rst:47
+msgid "database type (MariaDB/MySQL or PostgreSQL)"
+msgstr ""
+
+#: ../installation/galette.rst:50
+msgid "Create database"
+msgstr ""
+
+#: ../installation/galette.rst:54
+msgid "**Never use database root user!**"
+msgstr ""
+
+#: ../installation/galette.rst:56
+msgid ""
+"For security reasons, it is stongly advised to rely on a specific user for "
+"Galette database, and give him only requested access on the single Galette "
+"database."
+msgstr ""
+
+#: ../installation/galette.rst:58
+msgid ""
+"For the example, we will use a database named `mygalette` with a user "
+"`mygaletteuser` with `mypass` as password."
+msgstr ""
+
+#: ../installation/galette.rst:60
+msgid "MariaDB"
+msgstr ""
+
+#: ../installation/galette.rst:69
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../installation/galette.rst:78
+msgid ""
+"Those commands may vary, please refer to `MariaDB "
+"<https://mariadb.com/kb/en/library/documentation/>`_ or `PostgreSQL "
+"<https://docs.postgresqlfr.org>`_ documentations, or use a graphical tool:"
+msgstr ""
+
+#: ../installation/galette.rst:80
+msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;"
+msgstr ""
+
+#: ../installation/galette.rst:81
+msgid ""
+"`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin "
+"<https://www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
+msgstr ""
+
+#: ../installation/galette.rst:84
+msgid "Database parameters"
+msgstr ""
+
+#: ../installation/galette.rst:86
+msgid ""
+"On that screen, select your database type, and enter hostname, database "
+"name, user name and password. Tables prefix is usefull if you do not have a "
+"Galette dedicated database, default proposal should be ok but you can choose"
+" what you want :)"
+msgstr ""
+
+#: ../installation/galette.rst:92
+msgid ""
+"This step is the same for installation and update processes. If a "
+"configuration file already exists, Galette will grab the informations to pre"
+" fill the form (not for the password). When upgrading, double check the "
+"prefix fit the existing one."
+msgstr ""
+
+#: ../installation/galette.rst:97
+msgid ""
+"Next screen will try to connect to the database using provided elements, "
+"than it will check database rights are correct (user can add/remove/alter "
+"tables, and can add/remove/edit rows, ...)."
+msgstr ""
+
+#: ../installation/galette.rst:103
+msgid ""
+"If there is a connexion error, go back to previous step, fix your setup and "
+"try again. If you see rights issues, get them fixed on your server and use "
+"the \"Refresh\" button."
+msgstr ""
+
+#: ../installation/galette.rst:106
+msgid "Create tables"
+msgstr ""
+
+#: ../installation/galette.rst:108
+msgid ""
+"Those instructions are only for installation. When updating, a database "
+"already exists."
+msgstr ""
+
+#: ../installation/galette.rst:110
+msgid ""
+"If a connection can be established to the database, and all is correct; "
+"installer will now create the tables, and insert default values. You can "
+"show created tables from any graphical tool or in command line:"
+msgstr ""
+
+#: ../installation/galette.rst:112
+msgid "MariaDB :"
+msgstr ""
+
+#: ../installation/galette.rst:119
+msgid "PostgreSQL :"
+msgstr ""
+
+#: ../installation/galette.rst:131
+msgid "Admin parameters"
+msgstr ""
+
+#: ../installation/galette.rst:133
+msgid ""
+"This screen is displayed from installation only. When updating, super admin "
+"user is already existing."
+msgstr ""
+
+#: ../installation/galette.rst:135
+msgid ""
+"Next screen will ask you for informations to create the Galette super admin "
+"user. Using Galette, you can set some members as administrators, but the one"
+" created at installation time is not a member, cannot be removed, and has "
+"some extra rights."
+msgstr ""
+
+#: ../installation/galette.rst:142
+msgid "Initialyse"
+msgstr ""
+
+#: ../installation/galette.rst:144
+msgid ""
+"The last step will write the configuration file if needed, and initialyse "
+"some values in your fresh database, as exemple:"
+msgstr ""
+
+#: ../installation/galette.rst:146
+msgid "add Galette default preferences"
+msgstr ""
+
+#: ../installation/galette.rst:147
+msgid "add default contributions and status types,"
+msgstr ""
+
+#: ../installation/galette.rst:148
+msgid "fields configuration and permissions,"
+msgstr ""
+
+#: ../installation/galette.rst:149
+msgid "texts for administrative emails,"
+msgstr ""
+
+#: ../installation/galette.rst:150
+msgid "members default titles,"
+msgstr ""
+
+#: ../installation/galette.rst:151
+msgid "default PDF models"
+msgstr ""
+
+#: ../installation/galette.rst:152
+msgid "..."
+msgstr ""
+
+#: ../installation/galette.rst:154
+msgid ""
+"When updating, only the missing preferences and the new default data if any "
+"will be handled."
+msgstr ""
+
+#: ../installation/galette.rst:157
+msgid "Installation end"
+msgstr ""
+
+#: ../installation/galette.rst:159
+msgid "Installation is now finished, congratulations!"
+msgstr ""
+
+#: ../installation/galette.rst:163
+msgid ""
+"For security reasons, **we advise you to remove the install directory** if "
+"it is web exposed, or to drop access from your web configuration."
+msgstr ""
+
+#: ../installation/galette.rst:169
+msgid ""
+"You can now login to Galette, using super admin informations you used at "
+"installation time. You can now go to the :doc:`Galette user manual "
+"<../usermanual/index>`."
+msgstr ""
+
+#: ../installation/galette.rst:175
+msgid "Happy Galette!"
+msgstr ""

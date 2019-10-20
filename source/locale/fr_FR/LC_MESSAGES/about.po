@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 23:20+0200\n"
-"PO-Revision-Date: 2019-10-01 05:37+0000\n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 23:17+0200\n"
 "Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: ../about.rst:7
 msgid "About Galette's documentation"
@@ -20,77 +20,32 @@ msgstr "À propos de la documentation de Galette"
 
 #: ../about.rst:9
 msgid ""
-"`Galette <https://galette.eu>`_ documentation, under the terms of the "
-"`Attribution-ShareAlike 3.0 Unported  "
-"<https://creativecommons.org/licenses/by-sa/3.0/>`_ license, is written "
-"using `reStructuredText "
-"<http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and "
-"is built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_."
+"`Galette <https://galette.eu/dc/?navlang=en>`_'s documentation, released "
+"under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://"
+"creativecommons.org/licenses/by-sa/3.0/>`_ license, is written using "
+"`reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/"
+"restructuredtext.html>`_ and is built with `Sphinx documentation builder "
+"<https://www.sphinx-doc.org>`_."
 msgstr ""
-"La documentation de `Galette <https://galette.eu>`_, distribuée sous license"
-" `Attribution - Partage dans les Mêmes Conditions 3.0 non transposé  "
-"<https://creativecommons.org/licenses/by-sa/3.0/>`_, est écrite au format  "
-"`reStructuredText "
-"<http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ et "
-"est construite avec `le système de documentation Sphinx <https://www.sphinx-"
-"doc.org>`_."
 
-#: ../about.rst:12
-msgid "Retrieve sources"
-msgstr "Récupérer les sources"
+#: ../about.rst:11
+msgid ""
+"Sphinx allows to build documentation in various formats from the same "
+"sources. Galette's documentation is therefore available as HTML, PDF and "
+"EPUB formats; thanks to `Read the docs <https://readthedocs.io>`_."
+msgstr ""
 
 #: ../about.rst:14
-msgid ""
-"`Documentation sources <https://git.tuxfamily.org/galette/galettedoc.git>`_ "
-"are stored in their own `Git <https://fr.wikipedia.org/wiki/Git>`_ "
-"repository hosted at `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to"
-" them!). A `mirror is also available on github "
-"<https://github.com/galette/documentation>`_."
-msgstr ""
-"`Le code source de la documentation "
-"<https://git.tuxfamily.org/galette/galettedoc.git>`_ est stocké dans son "
-"propre dépôt `Git <https://fr.wikipedia.org/wiki/Git>`_ hébergé chez "
-"`Tuxfamily <https://www.tuxfamily.org>`_ (un grand merci à eux !). Un "
-"`miroir est également disponible sur Github "
-"<https://github.com/galette/documentation>`_."
-
-#: ../about.rst:16
-msgid ""
-"To clone main repository, use the following along with your Tuxfamily "
-"credentials:"
-msgstr ""
-"Pour cloner le dépôt principal, utilisez la commande suivante avec vos "
-"identifiants Tuxfamily :"
-
-#: ../about.rst:22
-msgid "Or as anonymous user:"
-msgstr "Ou en tant qu'utilisateur anonyme :"
-
-#: ../about.rst:28
-msgid ""
-"Sphinx allows to build documentation for various formats from same sources. "
-"Galette documentation is therefore available as HTML, PDF and EPUB formats; "
-"thanks to `Read the docs <https://readthedocs.io>`_."
-msgstr ""
-"Sphinx permet de construire la documentation dans différents formats depuis "
-"les mêmes sources.. La documentation de Galette est donc disponible aux "
-"formats HTML, PDF et EPUB ; grâce à `Read the docs "
-"<https://readthedocs.io>`_."
-
-#: ../about.rst:31
 msgid "Build documentation"
 msgstr "Construire la documentation"
 
-#: ../about.rst:33
+#: ../about.rst:16
 msgid ""
-"Once repository has been cloned, you should be able to build the "
-"documentation, but you may need some prerequisites installed:"
+"First, clone repository, please refer to the :doc:`Galette Documentation "
+"GIT documentation to get its source <development/git>`."
 msgstr ""
-"Une fois que le dépôt a été cloné, vous êtes en mesure de construire la "
-"documentation, mais il est possible que vous ayez à installer quelques pré-"
-"requis :"
 
-#: ../about.rst:35
+#: ../about.rst:19
 msgid ""
 "`Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ to "
 "generate HTML and EPUB formats,"
@@ -98,67 +53,72 @@ msgstr ""
 "`Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ "
 "pour générer les formats HtML et EPUB,"
 
-#: ../about.rst:36
+#: ../about.rst:20
 msgid ""
-"a complete TeX/LaTeX environment to generate PDF (`TeX Live "
-"<https://www.tug.org/texlive/>`_, `MacTEx <https://www.tug.org/mactex/>`_, "
-"`MikTeX <https://miktex.org/>`_)."
+"a complete TeX/LaTeX environment to generate PDF (`TeX Live <https://www."
+"tug.org/texlive/>`_, `MacTEx <https://www.tug.org/mactex/>`_, `MikTeX "
+"<https://miktex.org/>`_)."
 msgstr ""
 "un environnement TeX/LaTeX complelt  pour générer le PDF (`TeX Live "
 "<https://www.tug.org/texlive/>`_, `MacTEx <https://www.tug.org/mactex/>`_, "
 "`MikTeX <https://miktex.org/>`_)."
 
-#: ../about.rst:38
+#: ../about.rst:22
 msgid ""
 "To build the documentation, go to the root of the project (``galettedoc`` "
-"directory if you've cloned the GIT repository):"
+"directory if you've cloned the GIT repository) and then run ``make`` with "
+"one of the formats you want to compile (``html``, ``epub``, ``latexpdf``). "
+"In order to build the documentation for all three formats, we would run:"
 msgstr ""
-"Pour construire la documentation, allez à la racine du projet (le répertoire"
-" ``galettedoc`` si vous avez cloné le dépôt GIT) :"
 
-#: ../about.rst:52
-msgid ""
-"Then, you have to run ``make`` with one of the formats you want to compile "
-"(``html``, ``epub``, ``latexpdf``). In order to build the documentation for "
-"all three formats, we'll run:"
-msgstr ""
-"Ensuite, vous devrez lancer ``make`` avec un des formats qu vous voulez "
-"compiler (``html``, ``epub``, ``latexpdf``). Pour construire la "
-"documentation dans l'ensemble de ces formats, on lancera :"
-
-#: ../about.rst:87
+#: ../about.rst:57
 msgid "Translations"
 msgstr "Traductions"
 
-#: ../about.rst:89
+#: ../about.rst:59
 msgid ""
-"In order to update translations, update POT files from sources rst files. "
-"This can be achieved running the following command:"
+"In order to update translations, it is necessary to update POT files from "
+"the sources rst files. This can be achieved running the following command:"
 msgstr ""
-"Pour mettre à jour les traductions, mettez à jour les fichiers POT depuis "
-"les sources RST. Cela peut être fait avec la commande :"
 
-#: ../about.rst:97
+#: ../about.rst:65
+msgid ""
+"In order to test your modifications locally on your workstation, you will "
+"need to build the documentation using an additional parameter with the "
+"``make`` command. For example, to build the documentation in HTML in "
+"French, run :"
+msgstr ""
+"Pour tester vos modifications sur votre poste de travail, vous devrez "
+"compiler la documentation en utilisant des paramètres complémentaires à la "
+"commande ``make``. Par exemple, pour construire la documentation en HTML en "
+"français, lancez :"
+
+#: ../about.rst:73
+msgid ""
+"By default, the ``make`` command will build the documentation in English."
+msgstr ""
+"Par défaut, la commande ``make`` compilera la documentation en anglais."
+
+#: ../about.rst:76
 msgid "How to contribute?"
 msgstr "Comment contribuer ?"
 
-#: ../about.rst:99
+#: ../about.rst:78
 msgid ""
-"`A bug tracker dedicated to the documentation "
-"<https://bugs.galette.eu/projects/documentation-galette>`_ allow you to "
-"inform us for all issues you may find and submit us fixes or evolutions you "
-"would want to integrate."
+"`A bug tracker dedicated to the documentation <https://bugs.galette.eu/"
+"projects/documentation-galette>`_ allows you to inform us about all the "
+"issues you may find and submit us fixes or evolutions you would like to "
+"integrate in the project."
 msgstr ""
-"`Un outil de gestion des bogues (appelé tracker) dédié à la documentation "
-"<https://bugs.galette.eu/projects/documentation-galette>`_ vous permet de "
-"nous informer des problèmes que vous pourriez rencontrer, ou encore nous "
-"faire part de demandes d'amélioration."
+"`Un gestionnaire de bogues dédié à la documentation <https://bugs.galette."
+"eu/projects/documentation-galette>`_ vous permet de nous informer des "
+"problèmes que vous pourriez trouver et nous soumettre des correctifs ou des "
+"évolutions que vous souhaiteriez voir intégrées au projet."
 
-#: ../about.rst:101
+#: ../about.rst:80
 msgid ""
-"All documentation contributions must follow the :doc:`same rules as Galette "
-"source code <development/contributor>`."
+"All contributions to the documentation must follow the :doc:`same rules as "
+"contributions to the source code of Galette <development/contributor>`."
 msgstr ""
-"L'ensemble des contributions à la documentation doit respecter les "
-":doc:`même règles que celles du code source de Galette "
-"<development/contributor>`."
+"Toutes les contributions à la documentation doivent suivre :doc:`les règles "
+"de contribution au code source de Galette <development/contributor>`."

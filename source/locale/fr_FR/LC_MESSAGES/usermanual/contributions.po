@@ -1,0 +1,226 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 09:21+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../usermanual/contributions.rst:3
+msgid "Contributions management"
+msgstr "Gestion des contributions"
+
+#: ../usermanual/contributions.rst:5
+msgid ""
+"Galette allows you to manage contributions sent from your members. There are"
+" several types of contributions, and transactions are also proposed."
+msgstr ""
+
+#: ../usermanual/contributions.rst:7
+msgid ""
+"A transaction? What's that? Well, a simple example is better than a long "
+"text... We will use three members of a same association: Marc, Julie and "
+"Zac. Each one is member, independently of which group or else they are "
+"affected to, that does not matters."
+msgstr ""
+
+#: ../usermanual/contributions.rst:9
+msgid ""
+"Zac send you a check to pay his own membership, Marc and Julie ones and also"
+" a donation to the association. In this case, Zac's check will be handled in"
+" a transaction attached to his account, and which will be distributed in "
+"four contributions, each one attached to corresponding member."
+msgstr ""
+
+#: ../usermanual/contributions.rst:11
+msgid ""
+"Another example: Pierre pays his own contribution, his transaction will only"
+" contains his membership and will be distributed in only one contribution."
+msgstr ""
+
+#: ../usermanual/contributions.rst:13
+msgid ""
+"If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder "
+"<reminders>` :p"
+msgstr ""
+
+#: ../usermanual/contributions.rst:16
+msgid "Contributions"
+msgstr ""
+
+#: ../usermanual/contributions.rst:18
+msgid ""
+"A contribution can be a membership, a donation, a gift, ... Galette allows "
+"you to store all of that for each member."
+msgstr ""
+
+#: ../usermanual/contributions.rst:21
+msgid "Contributions types"
+msgstr ""
+
+#: ../usermanual/contributions.rst:23
+msgid ""
+"Contributions are entirely configurable. There are two main types of "
+"contributions in Galette:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:25
+msgid ""
+"the ones that extends a membership (a montly or yearly membership for "
+"example),"
+msgstr ""
+
+#: ../usermanual/contributions.rst:26
+msgid "the ones that do not extends membership, like donations."
+msgstr ""
+
+#: ../usermanual/contributions.rst:28
+msgid ""
+"Contribution types management allows you to define a label, and if it "
+"extends the memebrship or not."
+msgstr ""
+
+#: ../usermanual/contributions.rst:33
+msgid "Reminders"
+msgstr ""
+
+#: ../usermanual/contributions.rst:35
+msgid ""
+"Emails models to remind due dates are available from the emails contents "
+"(\"Impending due date\" and \"Late due date\")."
+msgstr ""
+
+#: ../usermanual/contributions.rst:37
+msgid ""
+"The reminder button from the dashboard or the reminders entry of the menu "
+"will give you access to the reminders management interface."
+msgstr ""
+
+#: ../usermanual/contributions.rst:44
+msgid "Two categories can be selected:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:46
+msgid "members whose due date is close,"
+msgstr ""
+
+#: ../usermanual/contributions.rst:47
+msgid "members whose due date is in the past."
+msgstr ""
+
+#: ../usermanual/contributions.rst:49
+msgid ""
+"Per default (this is currently not configurable), reminders are sent one "
+"month, then seven days before the due date; and then one and two months "
+"after the due date expiration. Reminders are stored in the database, if you "
+"never sent any reminder, all matching members will be reminded."
+msgstr ""
+
+#: ../usermanual/contributions.rst:51
+msgid ""
+"Galette will tell you if some members do not have an email address, you can "
+"print labels for those ones."
+msgstr ""
+
+#: ../usermanual/contributions.rst:53
+msgid ""
+"Finally, it is possible to automate reminders with a cron task which will "
+"call the ``galette/reminder.php`` file. If you want reminders to be sent "
+"every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on "
+"Fedora and similar, look at your system documentation to know how to add a "
+"crontab) with the following content:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:60
+msgid "Invoices and receipts"
+msgstr ""
+
+#: ../usermanual/contributions.rst:62
+msgid ""
+"In the contributions list, there is a PDF icon which is designed to generate"
+" invoice ou receipt for one contribution."
+msgstr ""
+
+#: ../usermanual/contributions.rst:64
+msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
+msgstr ""
+
+#: ../usermanual/contributions.rst:67
+msgid "Transactions"
+msgstr ""
+
+#: ../usermanual/contributions.rst:69
+msgid ""
+"As seen in the example from this chapter introduction, a transaction is a "
+"global payment for a member."
+msgstr ""
+
+#: ../usermanual/contributions.rst:71
+msgid "Only a few informations are required to add a new transaction:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:73
+msgid "a description,"
+msgstr ""
+
+#: ../usermanual/contributions.rst:74
+msgid "the originator,"
+msgstr ""
+
+#: ../usermanual/contributions.rst:75
+msgid "the date (current date per default),"
+msgstr ""
+
+#: ../usermanual/contributions.rst:76
+msgid "the amount."
+msgstr ""
+
+#: ../usermanual/contributions.rst:83
+msgid ""
+"Each transaction is dispatched among contributions, in the limit of the "
+"transaction amount. A transaction has itself no effect on members due dates."
+msgstr ""
+
+#: ../usermanual/contributions.rst:90
+msgid ""
+"After adding a new transaction, you will be redirected to a new contribution"
+" creation. If this new contribution does not dispatch the remaning amount of"
+" the transaction, galette will propose you to create another one. Per "
+"default, the amount of a new contribution from a transaction will be the "
+"remaning amount of the transaction."
+msgstr ""
+
+#: ../usermanual/contributions.rst:97
+msgid "Of course, it is also possible to edit a transaction:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:104
+msgid ""
+"You can also attach an existing contribution instead of creating a new one."
+msgstr ""
+
+#: ../usermanual/contributions.rst:114
+msgid "Members selection"
+msgstr ""
+
+#: ../usermanual/contributions.rst:118
+msgid ""
+"The dropdown list to choose a member is available from contributions and "
+"transactions (as well as from several plugins) displays only a few members, "
+"for performances reasons."
+msgstr ""
+
+#: ../usermanual/contributions.rst:120
+msgid ""
+"You can display more members using the \"Load following memebrs...\" link, "
+"and you can also try to search entering any text (this will search in first "
+"name, last name and identifiers)."
+msgstr ""

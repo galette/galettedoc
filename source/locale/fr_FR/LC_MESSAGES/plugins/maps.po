@@ -1,0 +1,147 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 09:24+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../plugins/maps.rst:3
+msgid "Maps"
+msgstr "Maps"
+
+#: ../plugins/maps.rst:5
+msgid "This plugin provides:"
+msgstr ""
+
+#: ../plugins/maps.rst:7
+msgid ""
+"possibility to store geogaphical coordinates for members (latitude and "
+"longitude),"
+msgstr ""
+
+#: ../plugins/maps.rst:8
+msgid ""
+"a public map displaying up to date members that have choosen to be "
+"publically visible."
+msgstr ""
+
+#: ../plugins/maps.rst:11
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/maps.rst:13
+msgid ""
+"First of all, download the plugin: "
+"https://download.tuxfamily.org/galette/plugins/galette-plugin-"
+"maps-1.4.0.tar.bz2"
+msgstr ""
+
+#: ../plugins/maps.rst:16
+msgid ""
+"Extract the downloaded archive in Galette ``plugins`` directory. For "
+"example, under linux (replacing `{url}` and `{version}` with correct "
+"values):"
+msgstr ""
+
+#: ../plugins/maps.rst:26
+msgid "Database initialisation"
+msgstr ""
+
+#: ../plugins/maps.rst:28
+msgid ""
+"In order to work, this plugin requires several tables in the database. See "
+":ref:`Galette plugins management interface <plugins_managment>`."
+msgstr ""
+
+#: ../plugins/maps.rst:30
+msgid "And this is finished; Maps plugin is installed :)"
+msgstr ""
+
+#: ../plugins/maps.rst:33
+msgid "Plugin usage"
+msgstr ""
+
+#: ../plugins/maps.rst:35
+msgid ""
+"When the plugin is installed, a group `Maps` is added to Galette menu when a"
+" member is logged in, which contains `My location` entry. This page allow "
+"member to store its location."
+msgstr ""
+
+#: ../plugins/maps.rst:37
+msgid ""
+"A `Geolocalize` button is also added when displaying a member, that allows "
+"administrators to set member coordinates."
+msgstr ""
+
+#: ../plugins/maps.rst:39
+msgid ""
+"Also, a `Map` entry is added in public pages list, that displays "
+"geolocalized members that are up to date. Administrators and staff members "
+"will see all members, while simple members and visitors will only see up to "
+"date public ones."
+msgstr ""
+
+#: ../plugins/maps.rst:41
+msgid ""
+"First of all, members will enter their location coordinates. Several options"
+" are provided:"
+msgstr ""
+
+#: ../plugins/maps.rst:43
+msgid ""
+"if town has been set in member informations, a list of possible places will "
+"be proposed (via `Nominatim online service "
+"<https://nominatim.openstreetmap.org>`_),"
+msgstr ""
+
+#: ../plugins/maps.rst:44
+msgid ""
+"additionnaly, a search zone (provided from `OpenStreetMap "
+"<https://nominatim.openstreetmap.org/>`_),"
+msgstr ""
+
+#: ../plugins/maps.rst:45
+msgid "and also a geolocalize button using browser capacities."
+msgstr ""
+
+#: ../plugins/maps.rst:47
+msgid ""
+"The search zone can be used when saving members location, and when "
+"displaying the maps."
+msgstr ""
+
+#: ../plugins/maps.rst:53
+msgid ""
+"A member can define its location (with the precision he wants) on the map "
+"selecting one of the propositions:"
+msgstr ""
+
+#: ../plugins/maps.rst:59
+msgid ""
+"Using the geolocalization button will define its position from the browser:"
+msgstr ""
+
+#: ../plugins/maps.rst:65
+msgid "Then, member location is displayed on map, and can be removed:"
+msgstr ""
+
+#: ../plugins/maps.rst:72
+msgid "How to get the sources?"
+msgstr ""
+
+#: ../plugins/maps.rst:74
+msgid ""
+"Please refer to :doc:`Galette developer guide <../development/index>` to get"
+" informations about :doc:`souces retrieval <../development/git>`, and "
+":ref:`development model <devmodel>`."
+msgstr ""

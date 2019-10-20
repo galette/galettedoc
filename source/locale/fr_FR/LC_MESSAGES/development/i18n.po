@@ -1,0 +1,184 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 08:57+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../development/i18n.rst:5
+msgid "Internationnalisation (i18n)"
+msgstr "Internationalisation (i18n)"
+
+#: ../development/i18n.rst:7
+msgid ""
+"Galette source code is entirely internationnalised thanks to `GNU Gettext "
+"<https://www.gnu.org/software/gettext/>`_. All translatable strings in the "
+"source code must be in english."
+msgstr ""
+
+#: ../development/i18n.rst:9
+msgid "The ``lang`` directory contains:"
+msgstr ""
+
+#: ../development/i18n.rst:11
+msgid ""
+"``Makefile``, ``make_lang_l12n.py``, ``xgettext.py``: utilities to manage "
+"translations,"
+msgstr ""
+
+#: ../development/i18n.rst:12
+msgid "``*.pot`` : transaltions templte files, one per domain,"
+msgstr ""
+
+#: ../development/i18n.rst:13
+msgid "``*.po``: translation files, one per lang and per domain"
+msgstr ""
+
+#: ../development/i18n.rst:15
+msgid ""
+"`Galette core translations "
+"<https://translate.zanata.org/project/view/galette>`_ and also `Galette "
+"documentation translations "
+"<https://translate.zanata.org/project/view/galettedoc>`_ are translated "
+"using `Zanata <http://zanata.org/>`_ platform."
+msgstr ""
+
+#: ../development/i18n.rst:20
+msgid "Syntax"
+msgstr ""
+
+#: ../development/i18n.rst:22
+msgid "Two different types of syntax are used:"
+msgstr ""
+
+#: ../development/i18n.rst:24
+msgid "PHP syntax,"
+msgstr ""
+
+#: ../development/i18n.rst:25
+msgid "Smarty syntax."
+msgstr ""
+
+#: ../development/i18n.rst:28
+msgid "PHP"
+msgstr ""
+
+#: ../development/i18n.rst:30
+msgid ""
+"For PHP syntax, this is the ``_T`` function that is used. There is a second "
+"optionnal argument for translation domain, which defaults to `galette`."
+msgstr ""
+
+#: ../development/i18n.rst:41
+msgid ""
+"Another method, ``__()`` is very similar to ``_T()``. This one will not mark"
+" strings which miss a translation."
+msgstr ""
+
+#: ../development/i18n.rst:43
+msgid ""
+"This was used to translate routes mainly; but this is no longer possible."
+msgstr ""
+
+#: ../development/i18n.rst:45
+msgid ""
+"Often, you will have to use variables in translated strings. To do that, use"
+" a placeholder in the string to translate, and use something like "
+"``str_replace`` or ``preg_replace`` to do the effective replacement:"
+msgstr ""
+
+#: ../development/i18n.rst:75
+msgid ""
+"You can use any word you want as pattern, just try to keep simple for others"
+" :) There are several other ways to handle string replacements, check PHP "
+"documentation."
+msgstr ""
+
+#: ../development/i18n.rst:78
+msgid "Smarty"
+msgstr ""
+
+#: ../development/i18n.rst:80
+msgid "Smarty translation is done with a custom plugin:"
+msgstr ""
+
+#: ../development/i18n.rst:87
+msgid ""
+"Smarty comes with `modifiers` that may be used to do remplacements among "
+"others. But it is done before the text is sent to the plugin, so translation"
+" cannot be found (it already contains a replacement value for our pattern). "
+"Our Smarty plugin can take two optionnal arguments to handle properly "
+"replacements:"
+msgstr ""
+
+#: ../development/i18n.rst:94
+msgid "Translation domains"
+msgstr ""
+
+#: ../development/i18n.rst:98
+msgid ""
+"Galette uses translation domains to prevent string replacements from "
+"external sources. Default domain name (implicit if not specified) is "
+"``galette``"
+msgstr ""
+
+#: ../development/i18n.rst:100
+msgid "Each plugin will come with at least one domain of its own."
+msgstr ""
+
+#: ../development/i18n.rst:102
+msgid "You must then tell the functions which domain you want to use:"
+msgstr ""
+
+#: ../development/i18n.rst:110
+msgid "Same example, with Smarty:"
+msgstr ""
+
+#: ../development/i18n.rst:118
+msgid "Generate lang files"
+msgstr ""
+
+#: ../development/i18n.rst:120
+msgid "There are several steps to update Galette translations:"
+msgstr ""
+
+#: ../development/i18n.rst:122
+msgid ""
+"extract strings from source code and update translation templats (POT "
+"files),"
+msgstr ""
+
+#: ../development/i18n.rst:123
+msgid "send new templates to translation platform,"
+msgstr ""
+
+#: ../development/i18n.rst:124
+msgid "(let translators do their job)"
+msgstr ""
+
+#: ../development/i18n.rst:125
+msgid "retrieve translated files (PO) from translation platform"
+msgstr ""
+
+#: ../development/i18n.rst:126
+msgid "compile translation files (MO)"
+msgstr ""
+
+#: ../development/i18n.rst:135
+msgid ""
+"It is possible to generate local PO files with ``make po``, but all "
+"mecanisms assume the translation platform is used."
+msgstr ""
+
+#: ../development/i18n.rst:145
+msgid "Each translation domain is stored in its own file."
+msgstr ""

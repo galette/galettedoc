@@ -1,0 +1,276 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 09:22+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../usermanual/configuration.rst:5
+msgid "Fields Configuration"
+msgstr "Configuration des champs"
+
+#: ../usermanual/configuration.rst:8
+msgid "Mandatory fields and access rights"
+msgstr ""
+
+#: ../usermanual/configuration.rst:10
+msgid ""
+"When you create or edit a member, some fields are mandatory. Default "
+"configuration may not suit your needs, but you can configure some elements "
+"easily ;)"
+msgstr ""
+
+#: ../usermanual/configuration.rst:12
+msgid ""
+"From the `Configuration`, `Core fields` menu, you will get access to all "
+"fields available for members, and choose for each one if it is mandatory or "
+"not, as well as associated access rights:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:14
+msgid "`inaccessible` will make the field inaccessible for everyone,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:15
+msgid ""
+"`administrator` will make the field readable and writeable for "
+"administrators only,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:16
+msgid ""
+"`staff members` will make the field readable and writable for staff members "
+"and administrators,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:17
+msgid ""
+"`groups managers` will make the field readable and writable for groups "
+"managers on the memebrs of groups they own, and for staff memebrs and "
+"administrators,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:18
+msgid ""
+"`read/write` will make the field readable and writeable for member, groups "
+"managers, staff members and administrators,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:19
+msgid ""
+"`read only` will make the field read only for the members, but writable for "
+"groups managers, staff members and administrators."
+msgstr ""
+
+#: ../usermanual/configuration.rst:27
+msgid "Dynamic fields"
+msgstr ""
+
+#: ../usermanual/configuration.rst:29
+msgid ""
+"Galette comes per default with many fields for members, contributions and "
+"transactions. Some of them will be useless, but you may need fields that "
+"does not exists..."
+msgstr ""
+
+#: ../usermanual/configuration.rst:31
+msgid ""
+"In this case, that is quite simple : just add a new dynamic field with a "
+"label, define if it is mandatory or not, and that's all : Galette will "
+"handle them automatically, just show the result ;)"
+msgstr ""
+
+#: ../usermanual/configuration.rst:33
+msgid "There are several types of dynamic fields:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:35
+msgid "`separator`: just a label, like a part title,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:36
+msgid "`free text`: multiline text area,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:37
+msgid "`single line`: one line text,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:38
+msgid "`choice`: a dropdown list,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:39
+msgid "`date`: a date field with a selector,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:40
+msgid "`boolean`: a checkbox,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:41
+msgid "`file`: add files."
+msgstr ""
+
+#: ../usermanual/configuration.rst:43
+msgid "While creating a new field (or editing an existing one); you also can:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:45
+msgid "mark it as required,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:46
+msgid "define access rights, tha same as for core fields."
+msgstr ""
+
+#: ../usermanual/configuration.rst:53
+msgid ""
+"Some field types like separators, dates and booleans, does not need any "
+"extra information; for others:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:55
+msgid "`free text`:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:57
+msgid "`width`: define number of columns,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:58
+msgid "`height`: define number of rows."
+msgstr ""
+
+#: ../usermanual/configuration.rst:60
+msgid "`single line`:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:62
+msgid "`width`: field width,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:63
+msgid "`size`: number of characters,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:64
+msgid "`repeat`: number of possible ocurences."
+msgstr ""
+
+#: ../usermanual/configuration.rst:66
+msgid "`choice`:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:68
+msgid "`values`: possible values for the dropdown."
+msgstr ""
+
+#: ../usermanual/configuration.rst:70
+msgid "`file`:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:72
+msgid ""
+"`size`: maximum file size, in Kio (this size is limited to the one for the "
+"PHP configuration)."
+msgstr ""
+
+#: ../usermanual/configuration.rst:75
+msgid "Labels translation"
+msgstr ""
+
+#: ../usermanual/configuration.rst:77
+msgid ""
+"Galette handle several languages, but when you add a new dynamic field, "
+"there is only one value possible. Galette proposes an interface to translate"
+" those labels in each available language."
+msgstr ""
+
+#: ../usermanual/configuration.rst:79
+msgid "Note that each new label will be added with current Galette lang."
+msgstr ""
+
+#: ../usermanual/configuration.rst:82
+msgid "Emails contents"
+msgstr ""
+
+#: ../usermanual/configuration.rst:84
+msgid ""
+"Depending on your configuration (see preferences), administrative emails "
+"cans be sent to users and/or administrators, when you add a new member or a "
+"new contribution, or from the lost password feature for example."
+msgstr ""
+
+#: ../usermanual/configuration.rst:86
+msgid "Defaults are provided, but you can change them."
+msgstr ""
+
+#: ../usermanual/configuration.rst:88
+msgid ""
+"It is important to note that those textes contain variables - of the "
+"``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
+"carefull to not forget any of those, that could cause sending issues."
+msgstr ""
+
+#: ../usermanual/configuration.rst:95
+msgid "An email will be send to member when:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:97
+msgid "he self subscribes. This mail contains authentication informations,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:98
+msgid ""
+"his card is added or edited by someone else (if the corresponding box is "
+"checked),"
+msgstr ""
+
+#: ../usermanual/configuration.rst:99
+msgid "he uses lost password feature,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:100
+msgid ""
+"a new contribution is attache to his account (if the corresponding box is "
+"checked)."
+msgstr ""
+
+#: ../usermanual/configuration.rst:102
+msgid "An email will be send to administrators when:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:104
+msgid "a new member is added or self subscribes,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:105
+msgid "a new contribution is attached to his account."
+msgstr ""
+
+#: ../usermanual/configuration.rst:107
+msgid ""
+"Of course, emails will be sent ony if Galette configuration allows it (and "
+"the setup is correct). Sending messages to administrators is configured "
+"globally from the preferences, while sending emails to members is "
+"conditionned on a checkbox from the user interface, excepting for self "
+"subscription messages that will always be send."
+msgstr ""
+
+#: ../usermanual/configuration.rst:109
+msgid ""
+"Several variables - automatically replaced on sending - are available for "
+"both subject and contents. Some of them may be used in all messages, but "
+"others will be only on some conditions. Refer to the inline help on Galette "
+"interface to know more."
+msgstr ""

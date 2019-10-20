@@ -1,0 +1,118 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-20 09:20+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../usermanual/pdf_models.rst:5
+msgid "PDF models"
+msgstr "Modèles PDF"
+
+#: ../usermanual/pdf_models.rst:7
+msgid ""
+"PDF models are provided for several outputs : an invoice model, a receipt "
+"model and a membership from model are currently available. All of them "
+"inherits from a `Global` model."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:15
+msgid "Models inheritance"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:17
+msgid "The global model defines three distincts parts:"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:19
+msgid "header,"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:20
+msgid "footer,"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:21
+msgid "CSS styles."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:23
+msgid ""
+"Each model which inherits from `Global` will automatically obtain same "
+"header and footer except if the new model redefines them, in which case only"
+" specific values will be applied."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:25
+msgid ""
+"For CSS properties it is a bit different: `Global` model properties will "
+"always be applied, and specific model properties will be appended (jsut like"
+" real CSS stylesheets)."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:28
+msgid "Generalities"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:30
+msgid ""
+"In addition of header, footer and CSS styles, a model defines a title, a sub"
+" title and a body."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:32
+msgid ""
+"Each of those fields can take some replacement values, refer to the inline "
+"help from the user interface to get details. They also can contains "
+"internationnalized texts like `_T(\"My text\")` that relies on :ref:`Galette"
+" standard translation capacities <i18nsyntax>`."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:34
+msgid ""
+"Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
+"file, and not displaying a page in a recent brower; there are many "
+"limitations."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:37
+msgid "Invoices and receipts"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:39
+msgid "Invoice and receipt models are the same, excepting their titles."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:46
+msgid ""
+"As you can see in the above screenshot, invoice model does not define any "
+"header, footer or CSS styles, the ones form the `Global` model are used."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:49
+msgid "Membership form"
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:51
+msgid ""
+"It is a model that can be used to print a membership form. It can be empty "
+"(to print some of them for any event for example) or filled with one member "
+"informations."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:53
+msgid ""
+"Since there are many limitation, you may use the :doc:`FullCard plugin "
+"</plugins/fullcard>` that will replace this model. It is more complex to "
+"change, but you can do many more with it. You can also create your own "
+"plugin based on FullCard."
+msgstr ""
