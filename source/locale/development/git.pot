@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,151 +18,286 @@ msgstr ""
 
 #: ../development/git.rst:3
 # 966d4e09136a45f68eb40609b6716b91
-msgid "Récupération des sources"
-msgstr ""
-
-#: ../development/git.rst:5
-# f8f46285fcfa43088f1ed323dbf7ecfc
-msgid "Le projet Galette utilise `Git <https://fr.wikipedia.org/wiki/Git>`_ comme gestionnaire de sources, après avoir longtemps utilisé Subversion."
+msgid "Galette sources"
 msgstr ""
 
 #: ../development/git.rst:7
-# 7272e66f746c41008c8dd517fc6b3d58
-msgid "Git correspond d'avantage aujourd'hui à mes attentes pour un tel système, et offre une souplesse parfois fort utile."
+# 97ad578ab5f74fb0992435b002171650
+msgid "If you are not familiar with GIT, there are plenty of documentations over the internet."
 msgstr ""
 
 #: ../development/git.rst:9
-# 1473f55477d94d5587903f1e38b94255
-msgid "Il est possible de `parcourir le code source en utilisant l'interface web <https://git.tuxfamily.org/galette/galette>`_. Pour cloner le dépôt, utilisez :"
+# 170693edf32b47c7bbed1ba0b0187fb1
+msgid "Some links of interest:"
 msgstr ""
 
-#: ../development/git.rst:15
-# 8a27dd720cca484f97ea47fe09add95c
-msgid "Le dossier ``galette.git`` contiendra votre copie de travail de Galette, prête à être utilisée (même résultat qu'un `svn checkout`). Un bref mot sur les différents niveaux exitants dans Git : sous SVN, il y a la copie de travail, et le dépôt distant. Sous Git, c'est un peu plus compliqué, et de nombreux tutoriels/livres spécialisés traitent cet aspect des choses. Toutefois, voici une page qui `vous expliquera clairement les relations entre les différents niveaux d'un dépôt Git <https://ndpsoftware.com/git-cheatsheet.html>`_."
-msgstr ""
-
-#: ../development/git.rst:17
-# 6d7b099924e0478886b55b760bccb1b7
-msgid "Quelques liens qui peuvent être utiles :"
-msgstr ""
-
-#: ../development/git.rst:19
+#: ../development/git.rst:11
 # 100cd7c1b46f443db39fc2f2bf37a36b
 msgid "http://www-cs-students.stanford.edu/~blynn/gitmagic/"
 msgstr ""
 
-#: ../development/git.rst:20
+#: ../development/git.rst:12
 # f6e90f659e2f40e49a21b107e955c75c
 msgid "https://schacon.github.com/git/gittutorial.html"
 msgstr ""
 
-#: ../development/git.rst:21
-# d7769e3d83e941a5aedb938a6c8c161a
-msgid "https://ndpsoftware.com/git-cheatsheet.html"
-msgstr ""
-
-#: ../development/git.rst:22
+#: ../development/git.rst:13
 # 195dfa66724f4b91b578cac4db9658f4
 msgid "https://git-scm.com/book/fr/v2"
 msgstr ""
 
+#: ../development/git.rst:14
+# 3afe623fe75749019fd3562f6f0ffadd
+msgid "https://ndpsoftware.com/git-cheatsheet.html explaining the relations beetween git commands and the existing levels in the structure of a repository"
+msgstr ""
+
+#: ../development/git.rst:16
+# f3604d04385f404bbf4dc27dd09e0e23
+msgid "All Galette sources are stored in their own `Git <https://en.wikipedia.org/wiki/Git>`_ repository hosted by `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `Galette organization is also available on github <https://github.com/galette/>`_, in which all repositories are mirrored."
+msgstr ""
+
+#: ../development/git.rst:18
+# e9e4d6627feb4e38b7f10dd3823c19cf
+msgid "All GIT repositories follow the :ref:`adopted development model <devmodel>`, therefore you will find two branches on each repository:"
+msgstr ""
+
+#: ../development/git.rst:20
+# ae3ab9fee83445b8866a99f0158fb655
+msgid "``master``: this is always the latest stable release,"
+msgstr ""
+
+#: ../development/git.rst:21
+# 81eb1476913346d4893ca9b5aa0bdd6d
+msgid "``develop``: the development version, may be unstable."
+msgstr ""
+
 #: ../development/git.rst:24
-# cc29d26f643e46128b4064cbf30dbfe2
-msgid "Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, référez-vous au paragraphe :ref:`bibliothèques tierces <deps>`."
+# b2ddfda94c894324b6b52fab7242f889
+msgid "Project"
 msgstr ""
 
-#: ../development/git.rst:26
-# 2555aa65a4de479bb75b94995c39b1ca
-msgid "Une fois le dépôt cloné et les bibliothèques externes installées, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)"
+#: ../development/git.rst:24
+# f540f7e79fdf495b8b0444979d96cd4e
+msgid "Tuxfamily"
 msgstr ""
 
-#: ../development/git.rst:28
-# 8a638f1286474d1e840a678de84a4c35
-msgid "Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :doc:`la phase d'installation de Galette <../installation/index>`, félicitations ;-)"
+#: ../development/git.rst:24
+# 548311616c4d4d2489aa986740e9caf4
+msgid "Github"
+msgstr ""
+
+#: ../development/git.rst:27
+# b13f97d5c6404453915cc9344b77a486
+msgid "Galette core"
+msgstr ""
+
+#: ../development/git.rst:0
+# bb3a6267befe4c9592880a7bf6ab0bc0
+msgid "`git.tuxfamily.org/gitroot/galette/galette.git`"
+msgstr ""
+
+#: ../development/git.rst:0
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://git.tuxfamily.org/galette/galette"
+msgstr ""
+
+#: ../development/git.rst:27
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/galette"
+msgstr ""
+
+#: ../development/git.rst:30
+# 9a46ff5125b24452bef1048fb6ee7cd0
+msgid "Documentation"
+msgstr ""
+
+#: ../development/git.rst:0
+# 7ac5bdd05d0f4116b551246c7caf62d7
+msgid "`git.tuxfamily.org/gitroot/galette/galettedoc.git`"
+msgstr ""
+
+#: ../development/git.rst:0
+# 2638b7e153064e07bbd952e817b16dae
+msgid "https://git.tuxfamily.org/galette/galettedoc"
+msgstr ""
+
+#: ../development/git.rst:30
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/documentation"
 msgstr ""
 
 #: ../development/git.rst:33
-# 95118431e0fa4e62b7795a7d4e8a10ff
-msgid "Bibliothèques tierces"
+# 57141f97491c45b8a1cc2947f6797290
+msgid "Auto plugin"
 msgstr ""
 
-#: ../development/git.rst:35
-# e69e6a0365e047a3914bd4e06ca7d6aa
-msgid "Pour fonctionner, Galette a besoin d'un certain nombre de bibliothèques externes."
+#: ../development/git.rst:0
+# f68ddc51ebd548a6a3265c2423f774c9
+msgid "`git.tuxfamily.org/gitroot/galette/plugin-auto.git`"
 msgstr ""
 
-#: ../development/git.rst:37
-# 32942b1b23ff4bdf922ac9b09ada47a3
-msgid "Initialement, ces bibliothèques étaient dans le dépôt de Galette, mais cela prenait trop de place, et était trop compliqué à gérer. Il a été décidé de les placer dans une arcive à part, qu'il fallait récupérer et décompresser dans le dossier ``includes`` ; mais tout ceci est maintenant déprécié."
+#: ../development/git.rst:0
+# 98fd31a7032540cab363911e67d6b456
+msgid "https://git.tuxfamily.org/galette/plugin-auto"
+msgstr ""
+
+#: ../development/git.rst:33
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/plugin-auto"
+msgstr ""
+
+#: ../development/git.rst:36
+# ae06165374f644e9bdf7b44a351c9545
+msgid "Events plugin"
+msgstr ""
+
+#: ../development/git.rst:0
+# a20d1300ab3e442c9c8030672914d074
+msgid "`git.tuxfamily.org/gitroot/galette/plugin-events.git`"
+msgstr ""
+
+#: ../development/git.rst:0
+# e48a010077f74b30a089c31f00d9e0f3
+msgid "https://git.tuxfamily.org/galette/plugin-evnts"
+msgstr ""
+
+#: ../development/git.rst:36
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/plugin-events"
 msgstr ""
 
 #: ../development/git.rst:39
-# f622daccf6294456906bdba04a7d1954
-msgid "Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <https://getcomposer.org>`_ :"
+# 66071291e4ca47d58f6f38c1ee0ac592
+msgid "Paypal plugin"
 msgstr ""
 
-#: ../development/git.rst:46
-# a6ea14e5b2a14d5d9e15aa4510dbf5bf
-msgid "L'utilisation de composer est pratique pour gérer les bibliothèques tierces durant la phase de développement, c'est également ce qui est utilisé pour générer les archives (nightly et releases) ; après un brin de nettoyage."
+#: ../development/git.rst:0
+# c1bf305d3c7e4547b2681a04a9b7c3e8
+msgid "`git.tuxfamily.org/gitroot/galette/plugin-paypal.git`"
 msgstr ""
 
-#: ../development/git.rst:48
-# 01be8af4b72347fb9d8a9e0e9dd999ae
-msgid "Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`."
+#: ../development/git.rst:0
+# 7be771262cfc4c27a250e456887ce7e4
+msgid "https://git.tuxfamily.org/galette/plugin-paypal"
 msgstr ""
 
-#: ../development/git.rst:53
-# 61aa022eb6674ad5b2ff3432ceca5f8a
-msgid "Sous GNU/Linux"
+#: ../development/git.rst:39
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/plugin-paypal"
+msgstr ""
+
+#: ../development/git.rst:42
+# 5fd2e9fc300a402ea8a660904464b422
+msgid "Objectslend plugin"
+msgstr ""
+
+#: ../development/git.rst:0
+# 7d497da3df414e9ea5f130e6d771a069
+msgid "`git.tuxfamily.org/gitroot/galette/plugin-objectslend.git`"
+msgstr ""
+
+#: ../development/git.rst:0
+# 50d68cadf3e14736b966f0c1435fe1b4
+msgid "https://git.tuxfamily.org/galette/plugin-objectslend"
+msgstr ""
+
+#: ../development/git.rst:42
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/plugin-objectslend"
+msgstr ""
+
+#: ../development/git.rst:45
+# 7eef59bc2c684c75b0e00502cbf47bdc
+msgid "Maps plugin"
+msgstr ""
+
+#: ../development/git.rst:0
+# 91bedd08fa00492aba02f85e8c07cdfe
+msgid "`git.tuxfamily.org/gitroot/galette/plugin-maps.git`"
+msgstr ""
+
+#: ../development/git.rst:0
+# cc1fcc3c44cd4a558c9c58550b5adb9c
+msgid "https://git.tuxfamily.org/galette/plugin-maps"
+msgstr ""
+
+#: ../development/git.rst:45
+# f6e90f659e2f40e49a21b107e955c75c
+msgid "https://github.com/galette/plugin-maps"
+msgstr ""
+
+#: ../development/git.rst:49
+# e16291b3f0b14ce3b579da5f697bbd79
+msgid "To clone one repository, use the following along with your Tuxfamily credentials:"
 msgstr ""
 
 #: ../development/git.rst:55
-# c74c0d50e7154598ae0fd9418e22656b
-msgid "L'ensemble des distributions linux actuelles fournit certainement les commandes git standard."
+# 07aaf617b2624b60beb0c986de1b1e97
+msgid "Or as anonymous user:"
 msgstr ""
 
-#: ../development/git.rst:57
-# 7660ef5e841b45c0b3e66a5888b5b23e
-msgid "Quelques interfaces graphiques :"
+#: ../development/git.rst:61
+# 43b3273f1e824ccebddad72ce6e09fc1
+msgid "The ``galette`` directory will then contain a working copy of Galette's source code."
 msgstr ""
 
-#: ../development/git.rst:59
-# d4cd0da498734687b013344682549588
-msgid "Git est fourni avec une interface graphique que vous pouvez lancer avec la commande `git gui`,"
+#: ../development/git.rst:66
+# 08819ed6f8104330ab663ccaea796bf4
+msgid "Third party librarires"
 msgstr ""
 
-#: ../development/git.rst:60
-# 8b2df9e8539742e2a7b929865ae10354
-msgid "`gitg` est une interface graphique qui vous permet de consulter l'historique du dépôt, d'effectuer des commits (et même des commits partiels, vous pourrez choisir les lignes que vous souhaitez commiter ou non) ; il reste cependant moins complet que git-gui."
+#: ../development/git.rst:68
+# 2c7dfe7d8fa748e8bc173f242d889470
+msgid ":doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, they are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:"
 msgstr ""
 
-#: ../development/git.rst:65
+#: ../development/git.rst:75
+# b8324d249dec409b8585fbcba4eb9a1f
+msgid "It is also possible to use these libraries if they are provided by another way, on your system side for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`."
+msgstr ""
+
+#: ../development/git.rst:80
+# 61aa022eb6674ad5b2ff3432ceca5f8a
+msgid "GNU/Linux"
+msgstr ""
+
+#: ../development/git.rst:82
+# 712ec3bd9d9f4dd9b096da65a75a13bf
+msgid "Standard GIT commands are provided by default in the package manager of most GNU/Linux distributions."
+msgstr ""
+
+#: ../development/git.rst:84
+# 963056cb5e5642bf8f9e9af224bcbf84
+msgid "Some graphical interfaces:"
+msgstr ""
+
+#: ../development/git.rst:86
+# 78280da91bc54d478b5f38d4744cee85
+msgid "GIT comes with its own UI; just run ``git gui``,"
+msgstr ""
+
+#: ../development/git.rst:87
+# 677f796fb1f646b98a98c4f7d76d2cfb
+msgid "``gitg`` is a Gnome compliant alternative UI."
+msgstr ""
+
+#: ../development/git.rst:92
 # ae6dd4499b214cdcaf508016f286052f
-msgid "Sous windows"
+msgid "Windows"
 msgstr ""
 
-#: ../development/git.rst:67
-# 770a4bac2a03427a93c02a03b69c63d1
-msgid "Git est parfaitement supporté sous Windows également ; en utilisant l'un des outils suivants :"
+#: ../development/git.rst:94
+# 69faf1e63e4a4e3489b3df2befe9621a
+msgid "GIT is supported on windows using one of the following solutions:"
 msgstr ""
 
-#: ../development/git.rst:69
-# 7192e3c74774490aa71700db6eaccf8e
-msgid "`TortoiseGIT <https://tortoisegit.org/>`_, très similaire à TortoiseSVN pour ceux qui connaissent,"
+#: ../development/git.rst:96
+# 5c3be047b3f6496b959d375d739aa2ca
+msgid "`TortoiseGIT <https://tortoisegit.org/>`_,"
 msgstr ""
 
-#: ../development/git.rst:70
+#: ../development/git.rst:97
 # 5c3be047b3f6496b959d375d739aa2ca
 msgid "`Git Extensions <https://gitextensions.github.io/>`_"
-msgstr ""
-
-#: ../development/git.rst:72
-# 2734b52195b245988ccf33507b444376
-msgid "Il semblerait que Git Extensions fasse très bien ce qu'on attend de lui... Lors de son installation, il vous sera proposé l'installation de msysgit, et de kdiff3. Je vous conseille vivement l'installation de ces deux composants. Le premier est Git pour windows, le second un outil qui permet de faire des diff et de résourde des conflits."
-msgstr ""
-
-#: ../development/git.rst:74
-# e907e75056e64c68b58d0490293fe8ae
-msgid "Bien que nous soyons parfaitement conscients que les personnes sous windows sont très peu habituées à voir une console, les commandes Git requises sont valables sur toutes les plate-formes ; ce sont donc elles qui seront documentées (par ailleurs, git-flow n'est intégré à aucune des interfaces graphiques que j'ai vues à ce jour)."
 msgstr ""
 

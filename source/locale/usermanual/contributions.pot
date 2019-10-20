@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,202 +17,197 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../usermanual/contributions.rst:3
-# 123224002b8c490cbd16a8cd46840265
-msgid "Gestion des contributions"
+# c653658000d54142b9e882885bbe3cdf
+msgid "Contributions management"
 msgstr ""
 
 #: ../usermanual/contributions.rst:5
 # 5d258269566d4783b2af846af87ba16f
-msgid "Galette vous permet de gérer les contributions émises par vos adhérents. On distingue différents types de contributions, une notion de transaction est également proposée."
+msgid "Galette allows you to manage contributions sent from your members. There are several types of contributions, and transactions are also proposed."
 msgstr ""
 
 #: ../usermanual/contributions.rst:7
 # 6c08a23a4ae240ef94defa46abd323ed
-msgid "Une transaction, késako ? Comme il paraît qu'un petit exemple vaut mieux qu'un long discours... Prenons trois adhérents d'une même association : Marc, Julie et Zac. Chacun est membre de l'association, dans un même groupe ou dans des groupes différents, cela importe peu."
+msgid "A transaction? What's that? Well, a simple example is better than a long text... We will use three members of a same association: Marc, Julie and Zac. Each one is member, independently of which group or else they are affected to, that does not matters."
 msgstr ""
 
 #: ../usermanual/contributions.rst:9
-# 16be30000ca54998a23836298967f009
-msgid "Zac fait un chèque pour régler sa cotisation, celles de Marc et Julie, et aussi un don à l'association. Dans ce cas là, le chèque que fera Zac fera l'objet d'une transaction, qui lui sera rattachée, et qui sera ventilée en 4 contributions, sur chacun des trois membres (chacune attachée au membre voulu de Galette)."
+# 0ff2c0f8c01f4886aaa783f5282c3abb
+msgid "Zac send you a check to pay his own membership, Marc and Julie ones and also a donation to the association. In this case, Zac's check will be handled in a transaction attached to his account, and which will be distributed in four contributions, each one attached to corresponding member."
 msgstr ""
 
 #: ../usermanual/contributions.rst:11
 # 5b27e1f3b7ae469abac7cab78b3aecc5
-msgid "Autre exemple : Pierre règle seulement son adhésion ; sa transaction ne contient que sa seule contribution, il n'y a pas de ventilation à faire."
+msgid "Another example: Pierre pays his own contribution, his transaction will only contains his membership and will be distributed in only one contribution."
 msgstr ""
 
 #: ../usermanual/contributions.rst:13
 # 959f5cb384a844ab853a9eccd72f8a54
-msgid "Si Pierre, Zac, Julie ou Marc sont en retard, vous pouvez toujours leur :ref:`envoyer un rappel <reminders>` :p"
+msgid "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder <reminders>` :p"
 msgstr ""
 
 #: ../usermanual/contributions.rst:16
 # 516151f67cd44abe899b00a310ea9734
-msgid "Les contributions"
+msgid "Contributions"
 msgstr ""
 
 #: ../usermanual/contributions.rst:18
 # d89bd5bf9e344cb8832b37ee3d8d6d2e
-msgid "Une contribution peut correspondre à une cotisation, à un don, à un cadeau, ... Galette vous permet d'enregistrer cela pour chaque adhérent."
+msgid "A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member."
 msgstr ""
 
 #: ../usermanual/contributions.rst:21
-# 5cc65b1a9e344ee7a80a7a2c0b6e420c
-msgid "Types de contribution"
+# 516151f67cd44abe899b00a310ea9734
+msgid "Contributions types"
 msgstr ""
 
 #: ../usermanual/contributions.rst:23
 # 735634df7fd64cfa87ea2b29046dc4a5
-msgid "Les différents types de contributions sont entièrement paramétrables. On distingue deux groupes principaux qui ont un comportement différent dans Galette :"
+msgid "Contributions are entirely configurable. There are two main types of contributions in Galette:"
 msgstr ""
 
 #: ../usermanual/contributions.rst:25
-# 43b210b565744da1b47d4ede7b8487cf
-msgid "celles qui amènent une extension d'adhésion (une cotisation annuelle ou mensuelle par exemple),"
+# a5410927c4e94713b42db7ff3d45d138
+msgid "the ones that extends a membership (a montly or yearly membership for example),"
 msgstr ""
 
 #: ../usermanual/contributions.rst:26
-# d294a5070885465386ec9692873bb9ab
-msgid "celles qui n'amènent pas d'extention d'adhésion, comme les dons."
+# cecfe8620adf4f5797fce76558cc91d0
+msgid "the ones that do not extends membership, like donations."
 msgstr ""
 
 #: ../usermanual/contributions.rst:28
-# 42db509fce634a6cb9f8905649ad879d
-msgid "L'interface de gestion des types de contributions vous permet de définir un libellé, et si oui ou non ce type étend l'adhésion."
+# e312d5ad76c1480fa0e0c01851199393
+msgid "Contribution types management allows you to define a label, and if it extends the memebrship or not."
 msgstr ""
 
 #: ../usermanual/contributions.rst:33
-# 44a4ef94e1924fa8aeff2fc58d79a5f3
-msgid "Rappels"
+# 00e9bf857eae40a78923f3b7e24d93b3
+msgid "Reminders"
 msgstr ""
 
 #: ../usermanual/contributions.rst:35
-# 1eb959adb6b547af97b432fa4a8f3316
-msgid "Des modèles de courriels de rappels d'échéance de cotisation sont disponible depuis la gestion du contenu des courriels (« échance proche » et « échéance dépassée »)."
+# 705c40fd936a4985b46cf265611ce3df
+msgid "Emails models to remind due dates are available from the emails contents (\"Impending due date\" and \"Late due date\")."
 msgstr ""
 
 #: ../usermanual/contributions.rst:37
-# b33169dd82c943ed90f4cacc0315a506
-msgid "Le bouton « rappel » du tableau de bord ou l'entrée « Rappels » disponible dans le menu vous donneront accès à l'interface de gestion des rappels de cotisation."
+# 1244ba6649054c45a0aced9e6244c44d
+msgid "The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface."
 msgstr ""
 
 #: ../usermanual/contributions.rst:44
 # a7d085a1b3c8469898d1e4c1fa551bee
-msgid "Deux catégories distinctes sont sélectionnables :"
+msgid "Two categories can be selected:"
 msgstr ""
 
 #: ../usermanual/contributions.rst:46
-# cd04b5a2cb144e51ab2a47903691cbc0
-msgid "les adhérents dont l'échéance de cotisation est proche,"
+# a3687cc4c2c446da8e7fc3aefd6b1bb6
+msgid "members whose due date is close,"
 msgstr ""
 
 #: ../usermanual/contributions.rst:47
-# 2f40abe454d043a2b3fddd6a4ab5ff32
-msgid "les adhérents dont l'échéance de cotisation est dépassée."
+# bb4cb78f8a514a848dd05d3117e80c15
+msgid "members whose due date is in the past."
 msgstr ""
 
 #: ../usermanual/contributions.rst:49
-# e2d8e49f802a426588a99694669a0a17
-msgid "Par défaut (ce n'est actuellement pas paramétrable), les courriels sont envoyés 1 mois, puis 7 jours avant la daté d'échéance ; puis un mois et 2 mois après la date d'échéance. Les rappels envoyés sont stockés dans la base, si vous n'en avez jamais envoyés, l'ensemble des adhérents marqués comme étant en retard seront considérés comme étant à relancer."
+# 3c1ec3cc911a4492b7d9874326403ae1
+msgid "Per default (this is currently not configurable), reminders are sent one month, then seven days before the due date; and then one and two months after the due date expiration. Reminders are stored in the database, if you never sent any reminder, all matching members will be reminded."
 msgstr ""
 
 #: ../usermanual/contributions.rst:51
-# 15343cfe700843798af0e1ea755f05d0
-msgid "L'interface vous informe également si des membres ne possèdent pas d'adresse de courriel, et vous donne la possibilité d'imprimer les étiquettes pour ces derniers."
+# d56cdc1b93354570873344c2af5abaf2
+msgid "Galette will tell you if some members do not have an email address, you can print labels for those ones."
 msgstr ""
 
 #: ../usermanual/contributions.rst:53
-# 6a481deea9744adbb16ed175d164c738
-msgid "Enfin, il est possible d'automatiser les rappels de cotisation via une tâche cron qui executera le fichier php ``galette/reminder.php``. Si vous souhaitez lancer l'envoi des rappels automatiques tous les jours à 8h30, vous pourrez, sous Fedora (ainsi que Red hat et assimilés), ajouter un fichier nommé ``galette`` dans le dossier ``/etc/cron.d/`` avec le contenu suivant :"
+# 2eda7afc7c5c43e99e8740318ed7764e
+msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
 msgstr ""
 
 #: ../usermanual/contributions.rst:60
-# 6363dd034f3d4ede8166d98abba42e2d
-msgid "Factures et reçus"
+# 8b1de089f06d4272bfda0b3d725a6924
+msgid "Invoices and receipts"
 msgstr ""
 
 #: ../usermanual/contributions.rst:62
 # 675042b06b8e412898bb971a19d41f75
-msgid "Depuis la liste des contributions, vous pourrez constater la présence d'une icône PDF permettant la génération de factures ou de reçus pour la contribution souhaitée."
+msgid "In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution."
 msgstr ""
 
 #: ../usermanual/contributions.rst:64
 # 85a0732a8eb046c7bcfa0b3f4c657758
-msgid "Ces générations font appel au système de :ref:`modèles PDF <pdf_models>`."
+msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
 
 #: ../usermanual/contributions.rst:67
 # 735eb6b5cec941fe8c2dd831d3c53457
-msgid "Les Transactions"
+msgid "Transactions"
 msgstr ""
 
 #: ../usermanual/contributions.rst:69
-# 3cabec221cf9467ca7bb0de3fc5d93df
-msgid "Les transactions correspondent à un règlement global d'un adhérent."
+# 5a31511927df4dfab3fe599ad0f249db
+msgid "As seen in the example from this chapter introduction, a transaction is a global payment for a member."
 msgstr ""
 
 #: ../usermanual/contributions.rst:71
 # 7340476021c34c6a9f2b94b21f1003d3
-msgid "Seules quelques informations sont nécessaires à la création d'une transaction :"
+msgid "Only a few informations are required to add a new transaction:"
 msgstr ""
 
 #: ../usermanual/contributions.rst:73
 # 400e4804a9e24e3494f36d989ad7b2d7
-msgid "une brève description,"
+msgid "a description,"
 msgstr ""
 
 #: ../usermanual/contributions.rst:74
-# 007c9bda88a446fca6f84284265764f3
-msgid "l'émetteur,"
+# 4a95b5c6707f4f70a76fafd91b4943e1
+msgid "the originator,"
 msgstr ""
 
 #: ../usermanual/contributions.rst:75
 # 60ea4810f4b3422f872d4640c618960f
-msgid "la date (renseignée par défaut à la date du jour),"
+msgid "the date (current date per default),"
 msgstr ""
 
 #: ../usermanual/contributions.rst:76
 # e7a81a3043c04d13b49440493710ed4c
-msgid "le montant."
+msgid "the amount."
 msgstr ""
 
 #: ../usermanual/contributions.rst:83
 # a83f97a806304b32b081dd11f5321398
-msgid "Chaque transaction est ensuite ventilée en contributions à concurrence du montant de la transaction. Ainsi, une transaction n'aura aucun effet sur la date de fin d'inscription d'un adhérent."
+msgid "Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
 
 #: ../usermanual/contributions.rst:90
 # 97663f4124c64ed68ccef6918987f429
-msgid "Après enregistrement d'une transaction, vous serez redirigé vers la fenêtre de création d'une contribution. Si la contribution entrée ne ventile pas entièrement le montant de la transaction, il vous sera proposé d'en créer une nouvelle, et ainsi de suite. Par défaut, toute nouvelle contribution créée à partir d'une transaction prendra comme montant la somme non ventilée de la transaction."
+msgid "After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction."
 msgstr ""
 
 #: ../usermanual/contributions.rst:97
 # 83596b7c744f45d5a84a3bbd2ab21a71
-msgid "Bien entendu, il vous est aussi possible de modifier une transaction après coup :"
+msgid "Of course, it is also possible to edit a transaction:"
 msgstr ""
 
 #: ../usermanual/contributions.rst:104
 # d57cf9defb3f415a8425d96af22acb7f
-msgid "Vous pourrez également lui associer une contribution existante, ou en créer une nouvelle."
+msgid "You can also attach an existing contribution instead of creating a new one."
 msgstr ""
 
 #: ../usermanual/contributions.rst:114
-# 255df9d72cfc47eda962a8377eeed5cb
-msgid "Sélection des adhérents"
+# 735eb6b5cec941fe8c2dd831d3c53457
+msgid "Members selection"
 msgstr ""
 
 #: ../usermanual/contributions.rst:118
 # 8ecaa35f29d5411a9be3240887fa49a0
-msgid "La liste déroulante de choix des adhérents disponible dans les contributions et transactions (ainsi que dans certains plugins) n'affiche qu'une partie des adhérents possibles, pour des raisons de performances."
+msgid "The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons."
 msgstr ""
 
 #: ../usermanual/contributions.rst:120
-# 2936c6fba6b64699b658c54124e613d3
-msgid "Il est toutefois possible d'en afficher davantage en cliquant sur « Charger les adhérents suivants... » ou en passant par la zone de recherche mise à disposition."
-msgstr ""
-
-#: ../usermanual/contributions.rst:122
-# 88674d69d2864e7e87ee26b557675466
-msgid "Il est possible de chercher dans les nom, prénom et pseudo des membres ; ainsi que dans les identifiants si vous entrez un entier directement."
+# f3d00ac0462e4ae2b4c41ac5dc1a9ebd
+msgid "You can display more members using the \"Load following memebrs...\" link, and you can also try to search entering any text (this will search in first name, last name and identifiers)."
 msgstr ""
 

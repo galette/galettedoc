@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 18:22+0200\n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,58 +22,58 @@ msgid "Auto"
 msgstr ""
 
 #: ../plugins/auto.rst:5
-# 9e66426f368e4b8b912f3723b932bb3c
-msgid "Ce plugin permet la gestion de clubs automobiles. Vous pourrez gérer :"
+# ff6d4faf743341c7828ba75d1f00a500
+msgid "This plugin provides vehicles management for automobile clubs, you can manage:"
 msgstr ""
 
 #: ../plugins/auto.rst:7
 # 72940dd29b45400387e4eb780cdfc75b
-msgid "les véhicules (propriétaire, informations diverses, photo, etc.),"
+msgid "vehicles (owner, several informations, photo, etc),"
 msgstr ""
 
 #: ../plugins/auto.rst:8
-# 76539bf4b7b14539b36f91d695a55c3c
-msgid "l'historique des modifications d'un véhicule,"
+# 72940dd29b45400387e4eb780cdfc75b
+msgid "vehicle history modification (owner, color, ...),"
 msgstr ""
 
 #: ../plugins/auto.rst:9
-# 28a0e98544704d92aa18c5e529e2fd07
-msgid "les marques des véhicules,"
+# 2c482dacb4184d1c8a8cb4b0b673f6cd
+msgid "brands,"
 msgstr ""
 
 #: ../plugins/auto.rst:10
-# f2d8c5af90d04455ab36755dc38406f6
-msgid "les modèles des différentes marques,"
+# 344b25f32440425484923dc391f546f0
+msgid "models,"
 msgstr ""
 
 #: ../plugins/auto.rst:11
-# b2dec5f6a12544dc8da6a0ae92b99310
-msgid "les types de transmissions,"
+# 6b1a392d32074e7eacb1ef5a1c85122e
+msgid "transmission types,"
 msgstr ""
 
 #: ../plugins/auto.rst:12
-# a4ddb10d071247c0a780c3594f292288
-msgid "les types de carrosseries,"
+# 53f9bdabcb574ff7b0c24debf350fe2c
+msgid "body types,"
 msgstr ""
 
 #: ../plugins/auto.rst:13
 # 62700c003002406fbffaa5dbd092051a
-msgid "les couleurs,"
+msgid "colors,"
 msgstr ""
 
 #: ../plugins/auto.rst:14
 # ba959b8f0a1c496b9c1b63b599550a3f
-msgid "les finitions,"
+msgid "finitions,"
 msgstr ""
 
 #: ../plugins/auto.rst:15
 # 7765b75373fc4aa1a13a360e88ccedfb
-msgid "les états."
+msgid "states."
 msgstr ""
 
 #: ../plugins/auto.rst:17
 # 9bbbd0243e6348baa02c09c95ffa4f6e
-msgid "Ce plugin a été développé en étroite collaboration avec Anatole du `Club 404 <https://www.leclub404.com/>`_, et François du `club Fiat 500 <https://www.leclub404.com/>`_. Un grand merci à eux pour les données qu'ils m'ont fournies durant la création du plugin :-)"
+msgid "This plugin has been initially developed in collaboration with Anatole from `Club 404 <https://www.leclub404.com/>`_, and François from `club Fiat 500 <http://www.club500.fr/>`_. A big thanks to them for their precious help during plugin development :)"
 msgstr ""
 
 #: ../plugins/auto.rst:20
@@ -83,51 +83,51 @@ msgstr ""
 
 #: ../plugins/auto.rst:22
 # d34cb2ed0d224b358a1738f0f588822e
-msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.4.0.tar.bz2"
+msgid "First of all, download the plugin: https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.4.0.tar.bz2"
 msgstr ""
 
 #: ../plugins/auto.rst:25
-# 161d8cf869f44de08c69e29b2d7e910b
-msgid "Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette."
+# c559a6cb82f64868985c9e8301d13877
+msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 
-#: ../plugins/auto.rst:27
-# 1ef353f0b0134acba7db477d0f88657d
-msgid "Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :"
+#: ../plugins/auto.rst:35
+# 2f6e15f9fd5747bbb68b687ea3a00db0
+msgid "Database initialisation"
 msgstr ""
 
-#: ../plugins/auto.rst:36
-# 961be1cdbec741038169cda2e451990c
-msgid "Initialisation de la base de données"
+#: ../plugins/auto.rst:37
+# d26fa9a1349946d29e0933637a983cb3
+msgid "In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
 
-#: ../plugins/auto.rst:38
-# fb969b6a4b854117a5a050ab5c986202
-msgid "Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin."
+#: ../plugins/auto.rst:39
+# 2baae414d25e4437a2e9e9686ebce993
+msgid "And this is finished; Auto plugin is installed :)"
 msgstr ""
 
-#: ../plugins/auto.rst:40
-# 22879c8f68da4e34a73d0206083f8382
-msgid "Et voilà ; le plugin Auto est installé :-)"
+#: ../plugins/auto.rst:41
+# d6fb25cc7ac640d39f4637864e146f3d
+msgid "There is no particular setup required, you can just enter data in the database."
 msgstr ""
 
-#: ../plugins/auto.rst:42
-# e3ab39c843764b65867991e871c16d1c
-msgid "Le plugin Auto pour Galette ne requiert aucune configuration particulière, vous pouvez directement entrer vos données dans la base."
+#: ../plugins/auto.rst:44
+# ded5add1d7644842be16745e5af7ec8d
+msgid "Configure required fields"
 msgstr ""
 
-#: ../plugins/auto.rst:45
-# 12cb2d1c23734ffd98cd3a448e128cd4
-msgid "Récupération des sources"
+#: ../plugins/auto.rst:46
+# d28d82aade9e463cb8b4980650744ac3
+msgid "When adding a new vehicle in database, there are several fields that are required, but that may not fit your needs. In such case, you can define your own required fields: just create a ``local_auto_required.inc.php`` file in your Galette ``config`` directory and declare an array of the fields you want to require. As example, if you just want to require name and model for a car, you will need:"
 msgstr ""
 
-#: ../plugins/auto.rst:47
-# 8bd2f41aee15414fba617b1d9580150a
-msgid "Le code source du plugin Auto est stocké dans un dépôt GIT hébergé chez Tuxfamily. Il est possible de `parcourir le code source en utilisant l’interface web <https://git.tuxfamily.org/galette/plugin-auto.git/>`_. Pour `cloner le dépôt <git://git.tuxfamily.org/gitroot/galette/plugin-auto.git>`_, utilisez :"
+#: ../plugins/auto.rst:57
+# e7fbe0ef631b4f888ea266ea47d8b76b
+msgid "How to get the sources?"
 msgstr ""
 
-#: ../plugins/auto.rst:53
+#: ../plugins/auto.rst:59
 # ec5840381c66471a9edcd8d6e1af987f
-msgid "Veuillez vous reporter au :doc:`guide du développeur de Galette <../development/index>` pour obtenir davantage d'informations sur la :doc:`récupération des sources <../development/git>`, et sur le :doc:`modèle de développement <../development/contributor>`."
+msgid "Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`."
 msgstr ""
 
