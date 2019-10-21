@@ -5,7 +5,7 @@ FTP
 
 .. warning::
 
-   Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ fo TFP transferts.
+   Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts.
 
 Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows.
 
