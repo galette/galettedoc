@@ -1,6 +1,8 @@
 # Galette
 ## Gestionnaire d'Adhérents en Ligne Extrêmement Tarabiscoté mais Tellement Efficace
 
+[![Documentation Status](https://readthedocs.org/projects/galette/badge/?version=latest)](https://doc.galette.eu/?badge=latest)
+
 ### English
 
 [Galette](https://galette.eu) is a membership management web application towards non profit organizations; released under GPLv3.
