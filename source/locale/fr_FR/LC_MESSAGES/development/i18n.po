@@ -4,15 +4,15 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2019-10-20 10:01+0000\n"
+"PO-Revision-Date: 2019-11-06 12:35+0100\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: ../development/i18n.rst:5
 msgid "Internationnalisation (i18n)"
@@ -45,11 +45,10 @@ msgstr ""
 
 #: ../development/i18n.rst:15
 msgid ""
-"`Galette core translations "
-"<https://translate.zanata.org/project/view/galette>`_ and also `Galette "
-"documentation translations "
-"<https://translate.zanata.org/project/view/galettedoc>`_ are translated "
-"using `Zanata <http://zanata.org/>`_ platform."
+"`Galette core translations <https://hosted.weblate.org/projects/galette/"
+"galette/>`_ and also `Galette documentation translations <https://hosted."
+"weblate.org/projects/galette/documentation/>`_ are translated using "
+"`Weblate <https://hosted.weblate.org/>`_ platform."
 msgstr ""
 
 #: ../development/i18n.rst:20
@@ -70,7 +69,7 @@ msgstr ""
 
 #: ../development/i18n.rst:28
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: ../development/i18n.rst:30
 msgid ""
@@ -80,8 +79,8 @@ msgstr ""
 
 #: ../development/i18n.rst:41
 msgid ""
-"Another method, ``__()`` is very similar to ``_T()``. This one will not mark"
-" strings which miss a translation."
+"Another method, ``__()`` is very similar to ``_T()``. This one will not "
+"mark strings which miss a translation."
 msgstr ""
 
 #: ../development/i18n.rst:43
@@ -91,21 +90,21 @@ msgstr ""
 
 #: ../development/i18n.rst:45
 msgid ""
-"Often, you will have to use variables in translated strings. To do that, use"
-" a placeholder in the string to translate, and use something like "
+"Often, you will have to use variables in translated strings. To do that, "
+"use a placeholder in the string to translate, and use something like "
 "``str_replace`` or ``preg_replace`` to do the effective replacement:"
 msgstr ""
 
 #: ../development/i18n.rst:75
 msgid ""
-"You can use any word you want as pattern, just try to keep simple for others"
-" :) There are several other ways to handle string replacements, check PHP "
-"documentation."
+"You can use any word you want as pattern, just try to keep simple for "
+"others :) There are several other ways to handle string replacements, check "
+"PHP documentation."
 msgstr ""
 
 #: ../development/i18n.rst:78
 msgid "Smarty"
-msgstr ""
+msgstr "Smarty"
 
 #: ../development/i18n.rst:80
 msgid "Smarty translation is done with a custom plugin:"
@@ -114,10 +113,10 @@ msgstr ""
 #: ../development/i18n.rst:87
 msgid ""
 "Smarty comes with `modifiers` that may be used to do remplacements among "
-"others. But it is done before the text is sent to the plugin, so translation"
-" cannot be found (it already contains a replacement value for our pattern). "
-"Our Smarty plugin can take two optionnal arguments to handle properly "
-"replacements:"
+"others. But it is done before the text is sent to the plugin, so "
+"translation cannot be found (it already contains a replacement value for "
+"our pattern). Our Smarty plugin can take two optionnal arguments to handle "
+"properly replacements:"
 msgstr ""
 
 #: ../development/i18n.rst:94
@@ -154,31 +153,42 @@ msgstr ""
 #: ../development/i18n.rst:122
 msgid ""
 "extract strings from source code and update translation templats (POT "
-"files),"
+"files) (run ``make extract`` from lang directory and commit updated POT "
+"file),"
 msgstr ""
 
 #: ../development/i18n.rst:123
-msgid "send new templates to translation platform,"
-msgstr ""
-
-#: ../development/i18n.rst:124
 msgid "(let translators do their job)"
 msgstr ""
 
-#: ../development/i18n.rst:125
+#: ../development/i18n.rst:124
 msgid "retrieve translated files (PO) from translation platform"
 msgstr ""
 
-#: ../development/i18n.rst:126
+#: ../development/i18n.rst:125
 msgid "compile translation files (MO)"
 msgstr ""
 
-#: ../development/i18n.rst:135
+#: ../development/i18n.rst:129
 msgid ""
 "It is possible to generate local PO files with ``make po``, but all "
 "mecanisms assume the translation platform is used."
 msgstr ""
 
+#: ../development/i18n.rst:131
+msgid ""
+"Once the updated POT file has been pushed to the Github mirror, an update "
+"is triggered on the Weblate platform. Weblate translations are commited in "
+"a forked Git repository, and must be merged back to Galette:"
+msgstr ""
+
+#: ../development/i18n.rst:139
+msgid ""
+"Finally, you must compile translations (compiled files are the ones used):"
+msgstr ""
+
 #: ../development/i18n.rst:145
-msgid "Each translation domain is stored in its own file."
+msgid ""
+"In order to refresh known languages, you will have to logout/login from "
+"your Galette instance. You may have to restart PHP as well."
 msgstr ""

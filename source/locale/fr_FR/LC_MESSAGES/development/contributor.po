@@ -4,15 +4,15 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2019-10-20 10:00+0000\n"
+"PO-Revision-Date: 2019-11-06 12:34+0100\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: ../development/contributor.rst:3
 msgid "How to contribute"
@@ -23,52 +23,71 @@ msgid ""
 "There are numerous ways to contribute to an Open Source project like "
 "Galette. You may:"
 msgstr ""
+"Il existe différentes façons de contribuer à un projet Open Source comme "
+"Galette. Vous pouvez :"
 
 #: ../development/contributor.rst:7
-msgid "help on questions asked by others on the lists,"
+msgid ""
+"help on questions asked by others on `user mailing list <https://listengine."
+"tuxfamily.org/lists.galette.eu/users/>`_,"
 msgstr ""
+"aider sur les questions posées par d'autres sur `la liste de diffusion des "
+"utilisateurs <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_,"
 
 #: ../development/contributor.rst:8
 msgid "help on testing proposed fixes and features,"
-msgstr ""
+msgstr "aider à tester les correctifs et fonctionnalités proposés,"
 
 #: ../development/contributor.rst:9
-msgid "help on translations (Galette, plugins, documentation),"
+msgid ""
+"help on `translations (Galette, plugins, documentation) <https://hosted."
+"weblate.org/projects/galette/galette/>`_,"
 msgstr ""
+"aider à traduire (Galette, plugins, documentation) <https://hosted.weblate."
+"org/projects/galette/galette/>`_,"
 
 #: ../development/contributor.rst:10
 msgid "help on documentation,"
-msgstr ""
+msgstr "aider sur sur la documentation,"
 
 #: ../development/contributor.rst:11
 msgid ""
 "`offer the developer a donation <https://www.paypal.me/galettesoft>`_ "
 "(contact him if you prefer to use a check or a transfer),"
 msgstr ""
+"`faire un don au développeur <https://www.paypal.me/galettesoft>`_ "
+"(contactez-le si vous préférez utiliser un chèque ou un virement),"
 
 #: ../development/contributor.rst:12
 msgid ""
 "and, last but not least, help on :ref:`writting code <contrib_coding>`."
 msgstr ""
+"en enfin, mais pas des moindres, aider au :ref:`développement "
+"<contrib_coding>`."
 
 #: ../development/contributor.rst:14
 msgid ""
 "This documentation is a technical overview of the contribution process to "
 "the source code of Galette and its plugins. Read the `how to contribute to "
-"Galette <https://galette.eu/dc/index.php/pages/Contribuer?navlang=en>`_ page"
-" on our website if your are looking for an introduction of the global "
+"Galette <https://galette.eu/dc/index.php/pages/Contribuer?navlang=en>`_ "
+"page on our website if your are looking for an introduction of the global "
 "process."
 msgstr ""
+"La présente documentation est un aperçu technique du processus de "
+"contribution au code source de Galette et de ses plugins. Lisez la page "
+"`comment contribuer à Galette <https://galette.eu/dc/index.php/pages/"
+"Contribuer?navlang=fr>`_ sur le site si vous cherchez une introduction plus "
+"générale du processus."
 
 #: ../development/contributor.rst:19
 msgid "Writting code"
-msgstr ""
+msgstr "Écrire du code"
 
 #: ../development/contributor.rst:21
 msgid ""
-"To fix a bug on the stable version, you have to work on the `master` branch."
-" Use the development version on the `develop` branch to implement new "
-"features or fix issues in the next release."
+"To fix a bug on the stable version, you have to work on the `master` "
+"branch. Use the development version on the `develop` branch to implement "
+"new features or fix issues in the next release."
 msgstr ""
 
 #: ../development/contributor.rst:23
@@ -80,8 +99,8 @@ msgstr ""
 #: ../development/contributor.rst:27
 msgid ""
 "If you just want to have look at the development version, `download Galette "
-"nightly build archive <https://downloads.tuxfamily.org/galette/galette-"
-"dev.tar.bz2>`_ which is updated each night."
+"nightly build archive <https://downloads.tuxfamily.org/galette/galette-dev."
+"tar.bz2>`_ which is updated each night."
 msgstr ""
 
 #: ../development/contributor.rst:29
@@ -92,17 +111,17 @@ msgstr ""
 
 #: ../development/contributor.rst:34
 msgid "Development model"
-msgstr ""
+msgstr "Modèle de développement"
 
 #: ../development/contributor.rst:36
 msgid ""
 "`Vincent Driessen <https://nvie.com>`_ published in 2010 a `development "
-"model for GIT branches I found very pertinent "
-"<https://nvie.com/posts/a-successful-git-branching-model/>`_, and that I "
-"decided to use for Galette. With the ``git-flow`` tool from the same author,"
-" the workflow is quite simple to follow. Having doubts? Let's take a look at"
-" `this article which explains why you should use git-flow "
-"<https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/>`_."
+"model for GIT branches I found very pertinent <https://nvie.com/posts/a-"
+"successful-git-branching-model/>`_, and that I decided to use for Galette. "
+"With the ``git-flow`` tool from the same author, the workflow is quite "
+"simple to follow. Having doubts? Let's take a look at `this article which "
+"explains why you should use git-flow <https://jeffkreeftmeijer.com/2010/why-"
+"arent-you-using-git-flow/>`_."
 msgstr ""
 
 #: ../development/contributor.rst:38
@@ -113,7 +132,7 @@ msgstr ""
 
 #: ../development/contributor.rst:41
 msgid "Git configuration"
-msgstr ""
+msgstr "Configuration GIT"
 
 #: ../development/contributor.rst:43
 msgid "First, set your name and email in git configuration:"
@@ -142,7 +161,7 @@ msgstr ""
 
 #: ../development/contributor.rst:63
 msgid "Commit messages"
-msgstr ""
+msgstr "Messages de commit"
 
 #: ../development/contributor.rst:65
 msgid ""
@@ -150,6 +169,9 @@ msgid ""
 "documentation note <https://git-scm.com/docs/git-commit/#_discussion>`_ "
 "about them:"
 msgstr ""
+"Les messages de commit ne sont pas normalisés, mais nous essayons de suivre "
+"`les notes de la documentation officielle <https://git-scm.com/docs/git-"
+"commit/#_discussion>`_ les concernant :"
 
 #: ../development/contributor.rst:67
 msgid ""
@@ -158,8 +180,8 @@ msgid ""
 "by a blank line and then a more thorough description. The text up to the "
 "first blank line in a commit message is treated as the commit title, and "
 "that title is used throughout Git. For example, git-format-patch[1] turns a "
-"commit into email, and it uses the title on the Subject line and the rest of"
-" the commit in the body."
+"commit into email, and it uses the title on the Subject line and the rest "
+"of the commit in the body."
 msgstr ""
 
 #: ../development/contributor.rst:69
@@ -211,7 +233,7 @@ msgstr ""
 
 #: ../development/contributor.rst:129
 msgid "Add a feature"
-msgstr ""
+msgstr "Ajouter une fonctionnalité"
 
 #: ../development/contributor.rst:131
 msgid ""
@@ -225,8 +247,8 @@ msgstr ""
 #: ../development/contributor.rst:148
 msgid ""
 "While coding, it is a good pratice to bring back the last changes from the "
-"develop branch. First make sure ``develop`` is up to date, then run a rebase"
-" command from your ``feature/killer`` branch:"
+"develop branch. First make sure ``develop`` is up to date, then run a "
+"rebase command from your ``feature/killer`` branch:"
 msgstr ""
 
 #: ../development/contributor.rst:157
@@ -237,7 +259,7 @@ msgstr ""
 
 #: ../development/contributor.rst:160
 msgid "Fix a bug"
-msgstr ""
+msgstr "Corriger un bogue"
 
 #: ../development/contributor.rst:162
 msgid ""
@@ -247,8 +269,8 @@ msgstr ""
 
 #: ../development/contributor.rst:168
 msgid ""
-"The main difference, as already explained, is that this branch will be based"
-" on the `master` branch."
+"The main difference, as already explained, is that this branch will be "
+"based on the `master` branch."
 msgstr ""
 
 #: ../development/contributor.rst:173
@@ -258,14 +280,14 @@ msgstr ""
 #: ../development/contributor.rst:177
 msgid ""
 "For technical reasons, we have created mirrors of all our GIT repositories "
-"on github. All the source code is on github, and you may prefer to use their"
-" fork/pull request capacities. It is ok as well."
+"on github. All the source code is on github, and you may prefer to use "
+"their fork/pull request capacities. It is ok as well."
 msgstr ""
 
 #: ../development/contributor.rst:179
 msgid ""
-"From your working branch (let's say you are sending the ``killer`` feature),"
-" generate a patch you can send to us:"
+"From your working branch (let's say you are sending the ``killer`` "
+"feature), generate a patch you can send to us:"
 msgstr ""
 
 #: ../development/contributor.rst:192

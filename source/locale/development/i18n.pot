@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"POT-Creation-Date: 2019-11-06 10:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../development/i18n.rst:15
 # 0ca36c9a6fc5447fa655357281e2459e
-msgid "`Galette core translations <https://translate.zanata.org/project/view/galette>`_ and also `Galette documentation translations <https://translate.zanata.org/project/view/galettedoc>`_ are translated using `Zanata <http://zanata.org/>`_ platform."
+msgid "`Galette core translations <https://hosted.weblate.org/projects/galette/galette/>`_ and also `Galette documentation translations <https://hosted.weblate.org/projects/galette/documentation/>`_ are translated using `Weblate <https://hosted.weblate.org/>`_ platform."
 msgstr ""
 
 #: ../development/i18n.rst:20
@@ -152,37 +152,42 @@ msgid "There are several steps to update Galette translations:"
 msgstr ""
 
 #: ../development/i18n.rst:122
-# bc123f4491ef4f5397c84f0f403651fc
-msgid "extract strings from source code and update translation templats (POT files),"
+# 1e824d9142e44b419772c2c44de70f43
+msgid "extract strings from source code and update translation templats (POT files) (run ``make extract`` from lang directory and commit updated POT file),"
 msgstr ""
 
 #: ../development/i18n.rst:123
-# f98a1b882e9644e880241777c8e74be0
-msgid "send new templates to translation platform,"
-msgstr ""
-
-#: ../development/i18n.rst:124
 # 9db92e3a1ea04ebc87a107dc6ddca5fa
 msgid "(let translators do their job)"
 msgstr ""
 
-#: ../development/i18n.rst:125
+#: ../development/i18n.rst:124
 # ebf9a51bff96492f8110dcd814ef16d1
 msgid "retrieve translated files (PO) from translation platform"
 msgstr ""
 
-#: ../development/i18n.rst:126
+#: ../development/i18n.rst:125
 # 367d8ead9a20436581b3189b9e0d82ce
 msgid "compile translation files (MO)"
 msgstr ""
 
-#: ../development/i18n.rst:135
+#: ../development/i18n.rst:129
 # c6f2705d220348328ba6e29d1ce3428a
 msgid "It is possible to generate local PO files with ``make po``, but all mecanisms assume the translation platform is used."
 msgstr ""
 
+#: ../development/i18n.rst:131
+# fbd52022ab9648f5a01e8c635119cb15
+msgid "Once the updated POT file has been pushed to the Github mirror, an update is triggered on the Weblate platform. Weblate translations are commited in a forked Git repository, and must be merged back to Galette:"
+msgstr ""
+
+#: ../development/i18n.rst:139
+# 0eda59c0fee44c1397168df3e34be5c4
+msgid "Finally, you must compile translations (compiled files are the ones used):"
+msgstr ""
+
 #: ../development/i18n.rst:145
-# 70b9247f309542a9aafe8b9651451da9
-msgid "Each translation domain is stored in its own file."
+# 060ecfc598cb48ba8b9b984ec189b437
+msgid "In order to refresh known languages, you will have to logout/login from your Galette instance. You may have to restart PHP as well."
 msgstr ""
 
