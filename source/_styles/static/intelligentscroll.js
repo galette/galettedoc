@@ -14,7 +14,6 @@ $(window).scroll(function() {
   var curtop = sb.offset()['top'];
   var curbot = curtop + sbh;
 
-  console.log(winbot + ' ' + curbot);
   // does sidebar fit in window?
   if (sbh < win.innerHeight()) {
     // yes: easy case -- always keep at the top
