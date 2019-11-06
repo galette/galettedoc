@@ -4,9 +4,9 @@ How to contribute
 
 There are numerous ways to contribute to an Open Source project like Galette. You may:
 
-* help on questions asked by others on the lists,
+* help on questions asked by others on `user mailing list <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_,
 * help on testing proposed fixes and features,
-* help on translations (Galette, plugins, documentation),
+* help on `translations (Galette, plugins, documentation) <https://hosted.weblate.org/projects/galette/galette/>`_,
 * help on documentation,
 * `offer the developer a donation <https://www.paypal.me/galettesoft>`_ (contact him if you prefer to use a check or a transfer),
 * and, last but not least, help on :ref:`writting code <contrib_coding>`.
