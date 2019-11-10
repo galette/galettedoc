@@ -9,10 +9,10 @@ Galette source code is entirely internationnalised thanks to `GNU Gettext <https
 The ``lang`` directory contains:
 
 * ``Makefile``, ``make_lang_l12n.py``, ``xgettext.py``: utilities to manage translations,
-* ``*.pot`` : transaltions templte files, one per domain,
-* ``*.po``: translation files, one per lang and per domain
+* ``*.pot``: transaltions template files, one per domain,
+* ``*.po``: translation files, one per lang and per domain.
 
-`Galette core translations <https://hosted.weblate.org/projects/galette/galette/>`_ and also `Galette documentation translations <https://hosted.weblate.org/projects/galette/documentation/>`_ are translated using `Weblate <https://hosted.weblate.org/>`_ platform.
+`Galette core <https://hosted.weblate.org/projects/galette/galette/>`_ is translated using `Weblate <https://hosted.weblate.org/>`_ platform. `Galette documentation translations <https://translate.zanata.org/project/view/galettedoc>`_ are still using `Zanata <https://zanata.org/>`_ platform, but will certainly move to Weblate as well in the future..
 
 .. _i18nsyntax:
 

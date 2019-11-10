@@ -90,11 +90,11 @@ Interface utilisateur
 
 *Required versions:* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)
 
-To make user interface a it dynamic and improve user experience, we choose to use a Javascript framework. We rely on `JQuery <https://jquery.com>`_, among others:
+To make user interface a bit dynamic and improve user experience, we choose to use a Javascript framework. We rely on `JQuery <https://jquery.com>`_, among others:
 
 * `JQuery UI <https://ui.jquery.com/>`_ to handle tabs, date selection, modals, ...
 * `markItUp <https://markitup.jaysalvat.com>`_ used as HTML editor in mailings,
-* `Selectable.js <https://selectize.github.io/selectize.js/>`_ for dropdowns to look better and searchable.
+* `Selectize.js <https://selectize.github.io/selectize.js/>`_ for dropdowns to look better and searchable.
 
 .. _phpmailer:
 
@@ -107,7 +107,7 @@ Sending mails
 
 *Required version:* `*`
 
-Sending mails ins Galette is done with `la phpMailer library <https://github.com/PHPMailer/PHPMailer>`_.
+Sending mails ins Galette is done with `phpMailer library <https://github.com/PHPMailer/PHPMailer>`_.
 
 .. _unittests:
 
