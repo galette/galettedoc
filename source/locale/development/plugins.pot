@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"POT-Creation-Date: 2019-11-11 19:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../development/plugins.rst:15
 # 7d734372cb724308a635edbcd51e28a6
-msgid "A ``plugin`` directory in Galette will host plugins, one directory per plugin is expected:"
+msgid "A ``plugins`` directory in Galette will host plugins, one directory per plugin is expected:"
 msgstr ""
 
 #: ../development/plugins.rst:17
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../development/plugins.rst:23
 # 7e3272761c83415cb0864639bcd3dda9
-msgid "Just as in Galette, you will find a ``lang`` directory used for translation files, an ``template/default`` directory for Smarty templates, a ``lib`` directory for classes, ..."
+msgid "Just as in Galette, you will find a ``lang`` directory used for translation files, a ``template/default`` directory for Smarty templates, a ``lib`` directory for classes, ..."
 msgstr ""
 
 #: ../development/plugins.rst:25
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../development/plugins.rst:43
 # 4290e9bec7514a0ebb3d7c82a936f8ec
-msgid "be present in all source file headers - if the selected license wants it)."
+msgid "be present in all source file headers - if the selected license wants it."
 msgstr ""
 
 #: ../development/plugins.rst:48
@@ -145,7 +145,7 @@ msgstr ""
 
 #: ../development/plugins.rst:88
 # c144440e5cc243f3a3d91acc294c4c0e
-msgid "In plugins, you must add a ``_routes.php`` file. In this file, you will declare all your plugin URLs. Galette provide URL similar to ``{galette}/plugin/myplugin`` on which your own routes wil be append."
+msgid "In plugins, you must add a ``_routes.php`` file. In this file, you will declare all your plugin URLs. Galette provide URL similar to ``{galette}/plugins/myplugin`` on which your own routes wil be append."
 msgstr ""
 
 #: ../development/plugins.rst:90
@@ -185,7 +185,7 @@ msgstr ""
 
 #: ../development/plugins.rst:110
 # f8b50ec5b2534ab89a5bfab2ae99c8ab
-msgid "This will respond to the URL ``{galette}/plugin/myplugin/main``; and it will just display `Welcome to the main page`."
+msgid "This will respond to the URL ``{galette}/plugins/myplugin/main``; and it will just display `Welcome to the main page`."
 msgstr ""
 
 #: ../development/plugins.rst:114
@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../development/plugins.rst:116
 # ad590386b6bb431d9f2ebc5ee41c92ba
-msgid "Routes can have parameters, mandatory or not. Following example add th `arg1` required parameter, and the `arg2` optionnal one:"
+msgid "Routes can have parameters, mandatory or not. Following example add the `arg1` required parameter, and the `arg2` optionnal one:"
 msgstr ""
 
 #: ../development/plugins.rst:132
@@ -225,7 +225,7 @@ msgstr ""
 
 #: ../development/plugins.rst:155
 # 42b8487677044797aba29a533b491ea9
-msgid "The use of the ``$module['root']`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded from your plugin, and this won't work. Then, ``file.tpl`` is core file ``file.tpl``, and ``file:[abcde]file.tpl`` the ``file.tpl`` file from plugin which identifier is ``abcde``."
+msgid "The use of the ``$module['root']`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded frinstead of the one from your plugin, and this won't work. Then, ``file.tpl`` is core file ``file.tpl``, and ``file:[abcde]file.tpl`` the ``file.tpl`` file from plugin which identifier is ``abcde``."
 msgstr ""
 
 #: ../development/plugins.rst:160
@@ -322,7 +322,7 @@ msgstr ""
 
 #: ../development/plugins.rst:237
 # 4be00f16d87e46bba47a9d6493383a94
-msgid "From PHP code, you will use ``pathFor`` method. Is route is waiting for parameters, send them as an indexed array:"
+msgid "From PHP code, you will use ``pathFor`` method. If route is waiting for parameters, send them as an indexed array:"
 msgstr ""
 
 #: ../development/plugins.rst:245
@@ -357,7 +357,7 @@ msgstr ""
 
 #: ../development/plugins.rst:271
 # 3980dc5ce6764d1aaeef3b51dfaa4f31
-msgid "Before Galette 0.9, templates ws providing a page part only, and PHP code was in charge to include it in the page. But now, `template files must declare their heritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_."
+msgid "Before Galette 0.9, templates was providing a page part only, and PHP code was in charge to include it in the page. But now, `template files must declare their heritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_."
 msgstr ""
 
 #: ../development/plugins.rst:273

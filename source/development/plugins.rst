@@ -12,7 +12,7 @@ From plugins, you can benefit from the entire Galette API, extends or complete i
 
 Plugin system was inspired from `DotClear blogging solution <https://fr.dotclear.org/>`_.
 
-A ``plugin`` directory in Galette will host plugins, one directory per plugin is expected:
+A ``plugins`` directory in Galette will host plugins, one directory per plugin is expected:
 
 * |folder| `plugins`
 
@@ -20,7 +20,7 @@ A ``plugin`` directory in Galette will host plugins, one directory per plugin is
   * |folder| `Paypal`
   * |folder| `...`
 
-Just as in Galette, you will find a ``lang`` directory used for translation files, an ``template/default`` directory for Smarty templates, a ``lib`` directory for classes, ...
+Just as in Galette, you will find a ``lang`` directory used for translation files, a ``template/default`` directory for Smarty templates, a ``lib`` directory for classes, ...
 
 None of those directories are mandatory, plugin may have no need for them :)
 
@@ -40,7 +40,7 @@ Official Galette plugins are licensed under GPL version 3.
 Licence must:
 
 * be included in the root directory (``LICENSE`` or ``COPYING`` file),
-* be present in all source file headers - if the selected license wants it).
+* be present in all source file headers - if the selected license wants it.
 
 .. _pluginsconfig:
 
@@ -85,7 +85,7 @@ Routes
 
 You will need some URLs for your plugin. Galette rely on Slim framework to expose routes. Each URL fit a route, with a name, possible arguments, HTTP method, ...
 
-In plugins, you must add a ``_routes.php`` file. In this file, you will declare all your plugin URLs. Galette provide URL similar to ``{galette}/plugin/myplugin`` on which your own routes wil be append.
+In plugins, you must add a ``_routes.php`` file. In this file, you will declare all your plugin URLs. Galette provide URL similar to ``{galette}/plugins/myplugin`` on which your own routes wil be append.
 
 A route is constitued of the following elements:
 
@@ -107,13 +107,13 @@ A simple route example would look like:
        }
    )->setName('myplugin_main');
 
-This will respond to the URL ``{galette}/plugin/myplugin/main``; and it will just display `Welcome to the main page`.
+This will respond to the URL ``{galette}/plugins/myplugin/main``; and it will just display `Welcome to the main page`.
 
 .. warning::
 
    Routes names must be unique. To prevent any collision, all plugins routes names must be prefixed with plugin name.
 
-Routes can have parameters, mandatory or not. Following example add th `arg1` required parameter, and the `arg2` optionnal one:
+Routes can have parameters, mandatory or not. Following example add the `arg1` required parameter, and the `arg2` optionnal one:
 
 .. code-block:: php
 
@@ -152,7 +152,7 @@ Displaying a page from a Smarty template would look like:
       ]
    );
 
-The use of the ``$module['root']`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded from your plugin, and this won't work.
+The use of the ``$module['root']`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded frinstead of the one from your plugin, and this won't work.
 Then, ``file.tpl`` is core file ``file.tpl``, and ``file:[abcde]file.tpl`` the ``file.tpl`` file from plugin which identifier is ``abcde``.
 
 .. note::
@@ -234,7 +234,7 @@ Usage
 
 You will need to use links to your different routes, either in Smarty templates or in routes themselves (redirection case for example).
 
-From PHP code, you will use ``pathFor`` method. Is route is waiting for parameters, send them as an indexed array:
+From PHP code, you will use ``pathFor`` method. If route is waiting for parameters, send them as an indexed array:
 
 .. code-block:: php
 
@@ -268,7 +268,7 @@ Smarty
 Heritage
 --------
 
-Before Galette 0.9, templates ws providing a page part only, and PHP code was in charge to include it in the page. But now, `template files must declare their heritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_.
+Before Galette 0.9, templates was providing a page part only, and PHP code was in charge to include it in the page. But now, `template files must declare their heritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_.
 
 Three parent templates are provided:
 
