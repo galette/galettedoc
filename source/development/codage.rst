@@ -20,14 +20,14 @@ Filesystem hierarchy
 Here is a plan of Galette used directories and some explanations about them:
 
 * |folder| `config`: configuration files
-* |folder| `data` : mai directory to store data
+* |folder| `data`: directory to store data
 
-  * |folder| `attachments` : files attached to emailings
+  * |folder| `attachments`: files attached to emailings
   * |folder| `cache`: caching directory
   * |folder| `exports`: where CSV exports are stored
   * |folder| `files`: files attached to members with dynamic fields of type file
   * |folder| `imports`: where to place CSV files you want to import
-  * |folder| `logs` : :ref:`log files <galettelog>`
+  * |folder| `logs`: :ref:`log files <galettelog>`
   * |folder| `photos`: members photos, and logos
   * |folder| `tempimages`: temporary captcha images
   * |folder| `templates_c`: used to store Smarty compiled templates
@@ -37,9 +37,9 @@ Here is a plan of Galette used directories and some explanations about them:
 
   * |folder| `fields_def`: definition of the fields for some objects. A huge fields definition in class cause performances issues...
   * |folder| `routes`: routes configuration for Slim
-  * |folder| `smarty_plugins` : specific Smarty plugin for Translation
+  * |folder| `smarty_plugins`: specific Smarty plugin for Translation
   * |phpfile| `dependencies.php`: dependencies configuration for Slim. This handle all routes ACLs
-  * |phpfile| `galette.inc.php` : one of main Galette instantiation files
+  * |phpfile| `galette.inc.php`: one of main Galette instantiation files
   * |phpfile| `...`
   * |file| `...`
 
@@ -49,8 +49,8 @@ Here is a plan of Galette used directories and some explanations about them:
 
   * |folder| `Galette`: Galette framework
 
-    * |folder| `Common` : `Galette\\Commons` clases
-    * |folder| `Core` : `Galette\\Core` classes
+    * |folder| `Common`: `Galette\\Commons` classes
+    * |folder| `Core`: `Galette\\Core` classes
 
       * |phpfile| `Authentication.php`
       * |phpfile| `CheckModules.php`
@@ -60,7 +60,7 @@ Here is a plan of Galette used directories and some explanations about them:
 
   * |folder| `...`
 
-* |folder| `plugins` : :doc:`directory to install plugins <../plugins/index>`
+* |folder| `plugins`: :doc:`directory to install plugins <../plugins/index>`
 * |folder| `templates`: Smarty templates source code
 
   * |folder| `default`: default Galette theme
@@ -77,7 +77,7 @@ Galette source code must follow `PSR2 writting conventions <https://www.php-fig.
 
 You can use `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ to your changed code in order to be sure coding rules are respected. Some warnings may be ignored, but errors must be all fixed. An example of ``phpcs``:
 
-.. code-block:: bash
+::
 
    $ phpcs --standard=PSR2 lib/Galette/Core/Authentication.php
 
@@ -172,7 +172,7 @@ Create a release
 
 Releases are created against tags in the GIT repository. As an example to get an archive for Galette 0.9:
 
-.. code-block:: bash
+::
 
    $ git archive --prefix=galette-0.9/ 0.9 | bzip2 > galette-0.9.tar.bz2
 
@@ -180,7 +180,7 @@ Note this archive will not embed :ref:`external libraries <deps>` (Smarty, Zend,
 
 Here is the script used for Galette nightly build:
 
-.. code-block:: bash
+::
 
    cd /path/to/galette/clone
    git archive --prefix=galette-dev/ develop galette | bzip2 > /tmp/galette-dev.tar.bz2
@@ -216,6 +216,6 @@ Here is the script used for Galette nightly build:
 
 Finaly, archive may be signed (to check download integrity):
 
-.. code-block:: bash
+::
 
    $ gpg --detach-sign --armor ./galette-0.9.tar.bz2

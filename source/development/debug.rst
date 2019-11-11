@@ -35,7 +35,7 @@ Several logs levels exists, you can find many use cases in the source code. They
 Galette modes
 =============
 
-Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref`see Galette behavior configuration <behavior>`). This directive can take the following values:
+Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration <behavior>`). This directive can take the following values:
 
 * ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch.
 * ``DEV``: development mode:
