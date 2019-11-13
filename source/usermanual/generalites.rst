@@ -47,7 +47,7 @@ At the contrary, if a member renew his membership late, we evaluate again his me
  | if he pays into for a year on 2006-01-13,
  | his due date will become 2006-01-13.
 
-He is not an up to date member from 2005-01-01 to 2005-01-13... On paper at least :)
+He is not an up to date member from 2006-01-01 to 2006-01-13... On paper at least :)
 
 Those rules are flexible because you can freely change membership dates on contributions, if you have rights to add or update them. We can imagine an association who stores all contributions on the first day of the next month (offering its members a longer membership time).
 
@@ -59,7 +59,7 @@ We do our best for the Galette interface to be:
 * logical and consistent (you will always find icons at familiar places),
 * web standards compliant (HTML and CSS valid),
 * HTML semantic respectful,
-* working even if Javascript is disabled (as possible, but really you should enable Javascript to really take advantage of Galette)),
+* working even if Javascript is disabled (as possible, but really you should enable Javascript to really take advantage of Galette),
 * accessible (without any WCAG, WAI or equivalent tests run).
 
 If you find places where one of those points is incorrect, do not hesitate to tell us on the tracker or on the mailing list!

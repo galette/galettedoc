@@ -64,7 +64,7 @@ Members selected in list can be edited (partially) at once.
    :align: center
    :alt: Mass change selected members
 
-Only fields with a chacked checkbox at the beginning of the line will be changed. A summary will be displayed.
+Only fields with a checked checkbox at the beginning of the line will be changed. A summary will be displayed.
 
 .. image:: ../_styles/static/images/usermanual/mass_modif_selected_members_recap.png
    :scale: 50%
@@ -132,7 +132,7 @@ Once the subject has been filled, you can work on the contents. You can send ema
 
 Once the HTML editor is enabled, the checkbox to handle HTML tags is automatically checked, remember to check the box if you do not use the editor but want to send HTML!
 
-.. warning:: Even if Galette is able to send HTML emails, this is discouraged. Messages lenght will be way larger (for almost nothing), and some (like me!) read their emails as text only. That is why Galette will **always** provide a texte version of HTML emails.
+.. warning:: Even if Galette is able to send HTML emails, this is discouraged. Messages lenght will be way larger (for almost nothing), and some (like me!) read their emails as text only. That is why Galette will **always** provide a text version of HTML emails.
 
 It is also possible to add attachements, just click on the `Browse` button in that attachements section. If your browser is compatible, you can add several files at once (using `Shift` and `Ctrl` keys).
 All attachements are stored on disk, under a directory named with the mailing identifier (automatically defined from database).
