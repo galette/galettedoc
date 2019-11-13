@@ -45,10 +45,19 @@ Galette related parameters:
 
 * **Default lang**: default instance lang (can be changed many ways by the user),
 * **Lines / page**: number of lines to display on lists for pagination,
-* **Logging level**: change history level:
+* **After member creation**: defines action to execute after a member has been added:
 
-  * **Enabled**: internal history is entirely disabled,
-  * **Disabled**: internal history is fully enabled,
+  * create a new contribution,
+  * create a new transaction,
+  * create another member,
+  * show member,
+  * go to members list,
+  * go to main page,
+
+* **Logging**: handles internal history:
+
+  * Enabled,
+  * Disabled,
 
 * **Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),
 * **Default account filter**: default account filter to apply on members list,
@@ -66,7 +75,7 @@ Galette related parameters:
 
   * **galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`.
   * **get://** or **post://**: use HTTP GET or POST method to call a web address, prefix will be replaced with ``http://``,
-  * **file://**: call a file on the web server, full path must be provided. Description script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent.
+  * **file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent.
 
 .. warning::
 

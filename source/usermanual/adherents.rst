@@ -200,7 +200,7 @@ Once you have retrieved and fill the empty file, you have to send it using the f
 
 .. note::
 
-   If you want to import a huge file, you can put it from your FTP client in the ``galett/data/imports`` directory, or split it into several smaller files you can import one by one.
+   If you want to import a huge file, you can put it from your FTP client in the ``galette/data/imports`` directory, or split it into several smaller files you can import one by one.
 
 Sent files are listed in the `Existing files` section. You can show, remove or import it:
 

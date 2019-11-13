@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"POT-Creation-Date: 2019-11-13 22:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,291 +127,326 @@ msgid "**Lines / page**: number of lines to display on lists for pagination,"
 msgstr ""
 
 #: ../usermanual/preferences.rst:48
-# a38a9e96836f4c85b10810cf780eebbe
-msgid "**Logging level**: change history level:"
+# a74adc40bf304b25b72704fc6821e459
+msgid "**After member creation**: defines action to execute after a member has been added:"
 msgstr ""
 
 #: ../usermanual/preferences.rst:50
-# c3daa8acd54f49d686f755baac1968f0
-msgid "**Enabled**: internal history is entirely disabled,"
+# 1ec03152bc7045c88802eb693ae6af55
+msgid "create a new contribution,"
 msgstr ""
 
 #: ../usermanual/preferences.rst:51
-# c3daa8acd54f49d686f755baac1968f0
-msgid "**Disabled**: internal history is fully enabled,"
+# 1ec03152bc7045c88802eb693ae6af55
+msgid "create a new transaction,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:52
+# a133f33f172f47fb9b468f6f161b63b1
+msgid "create another member,"
 msgstr ""
 
 #: ../usermanual/preferences.rst:53
+# a133f33f172f47fb9b468f6f161b63b1
+msgid "show member,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:54
+# a133f33f172f47fb9b468f6f161b63b1
+msgid "go to members list,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:55
+# a133f33f172f47fb9b468f6f161b63b1
+msgid "go to main page,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:57
+# a38a9e96836f4c85b10810cf780eebbe
+msgid "**Logging**: handles internal history:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:59
+# c2f7a989032f4fb3bb206c858dd6f998
+msgid "Enabled,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:60
+# b2d24d5024dc4bdcb69d9f8198490fa4
+msgid "Disabled,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:62
 # 854f81e00a0448d2b952d0a9666972a8
 msgid "**Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:54
+#: ../usermanual/preferences.rst:63
 # 4426d5ef6df742c78ad294bdf51ebe65
 msgid "**Default account filter**: default account filter to apply on members list,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:55
+#: ../usermanual/preferences.rst:64
 # 74699d4a8c0347379d5253c6dbdfdff9
 msgid "**Default membership extension**: membership extension in months,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:56
+#: ../usermanual/preferences.rst:65
 # 5de64728876e4b5db1e968b05aa5041e
 msgid "**Beginning of membership**: beginning date of the financial period,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:57
+#: ../usermanual/preferences.rst:66
 # a8a6fe3062b54441829ab181beba587a
 msgid "**Public pages enabled**: enable or disable public pages,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:58
+#: ../usermanual/preferences.rst:67
 # c41663e8960b42a6baea67d77de6997a
 msgid "**Show public pages for**: defines who can see public pages:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:60
+#: ../usermanual/preferences.rst:69
 # a725eead98f648178cacaa67d696d26b
 msgid "**Everyone**, including simple visitors,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:61
+#: ../usermanual/preferences.rst:70
 # a133f33f172f47fb9b468f6f161b63b1
 msgid "**Up to date members**,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:62
+#: ../usermanual/preferences.rst:71
 # a133f33f172f47fb9b468f6f161b63b1
 msgid "**Administrators and staff members**,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:64
+#: ../usermanual/preferences.rst:73
 # 9d27031c9d5d449db6bd1e75cceff763
 msgid "**Self subscription enabled**: enable or disable self subscription feature,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:65
+#: ../usermanual/preferences.rst:74
 # fe58de65d84143cf8fc1ea58bd202345
 msgid "**Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:67
+#: ../usermanual/preferences.rst:76
 # 2c2456c38d554c03b41a91395087270c
 msgid "**galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:68
+#: ../usermanual/preferences.rst:77
 # 216775658dee4e7ba217f5503e452d99
 msgid "**get://** or **post://**: use HTTP GET or POST method to call a web address, prefix will be replaced with ``http://``,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:69
+#: ../usermanual/preferences.rst:78
 # 70762e1fdaa14578b6d4516582ed2f91
-msgid "**file://**: call a file on the web server, full path must be provided. Description script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent."
+msgid "**file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent."
 msgstr ""
 
-#: ../usermanual/preferences.rst:73
+#: ../usermanual/preferences.rst:82
 # ace48f05a5a3401b86f24a392e69dae3
 msgid "Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsability**."
 msgstr ""
 
-#: ../usermanual/preferences.rst:75
+#: ../usermanual/preferences.rst:84
 # fab7cb6e266d4bd8bd07c9ca0580392f
 msgid "**RSS feed URL**: link to the RSS feed to display on dashboard,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:76
+#: ../usermanual/preferences.rst:85
 # 048bde22af91492eb1f6a1c2e579b2e9
 msgid "**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:80
+#: ../usermanual/preferences.rst:89
 # b887a9cc31e14932873f4a0a8f18a5f1
 msgid "This URL should be changed only if there are issues, this may cause instability."
 msgstr ""
 
-#: ../usermanual/preferences.rst:82
+#: ../usermanual/preferences.rst:91
 # a8e41494a9af4ba58e2a44a5ebd55f06
 msgid "A contextual help is provided, check it for more informations."
 msgstr ""
 
-#: ../usermanual/preferences.rst:84
+#: ../usermanual/preferences.rst:93
 # b5cb2192622d4920a5732be8190e2eb5
 msgid "**Show identifiers**: display database identifiers instead of simple counts on lists."
 msgstr ""
 
-#: ../usermanual/preferences.rst:87
+#: ../usermanual/preferences.rst:96
 # b684c4af222e486387539f5433849d3a
 msgid "E-Mail"
 msgstr ""
 
-#: ../usermanual/preferences.rst:89
+#: ../usermanual/preferences.rst:98
 # 46e662a891b34b9595fd90d9e0a6dd4f
 msgid "Sending email parameters:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:96
+#: ../usermanual/preferences.rst:105
 # dbd02bfa5d7b46c196dc5817949bedaa
 msgid "**Sender name**: name of the sender,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:97
+#: ../usermanual/preferences.rst:106
 # dbd02bfa5d7b46c196dc5817949bedaa
 msgid "**Sender email**: email address of the sender,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:98
+#: ../usermanual/preferences.rst:107
 # 1ff90e398da94ad39ae2f293c2e6cc34
 msgid "**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:99
+#: ../usermanual/preferences.rst:108
 # d0b6da724d06488199459c5acb4536cc
 msgid "**Members administrator email**: email address on which inscription notifications will be send, you can set several addresses separated with comas,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:100
+#: ../usermanual/preferences.rst:109
 # d728804220a748dc91fb951b42dfbde6
 msgid "**Send emails to administrators**: whether to send emails to administrators on subscription,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:101
+#: ../usermanual/preferences.rst:110
 # 24345879ded74df081c28cac46388883
 msgid "**Wrap text emails**: automatically wraps long lines in emails. If you disable this options, make sure to wrap yourself,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:102
+#: ../usermanual/preferences.rst:111
 # 8cc20117d60d45f998542a2d9bd59afb
 msgid "**Activate HTML editor**: activate HTML format when sending emails (discouraged),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:103
+#: ../usermanual/preferences.rst:112
 # c8431ad8403844e5b7136d89febdbf2f
 msgid "**Emailing method**: method used to send emails:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:105
+#: ../usermanual/preferences.rst:114
 # 8df5f691376944c58c61bb367ceba926
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:106
+#: ../usermanual/preferences.rst:115
 # b64b330dcbf549289ad847e7b92cb78b
 msgid "**PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:107
+#: ../usermanual/preferences.rst:116
 # be13834f853840728411948677101891
 msgid "**Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:108
+#: ../usermanual/preferences.rst:117
 # b19fb1437dde49528dfa768799d5ae21
 msgid "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:109
+#: ../usermanual/preferences.rst:118
 # 8c2c072e358049a0ae6527beb4a450e0
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:110
+#: ../usermanual/preferences.rst:119
 # 053a473267784fa1b1aca530ad321837
 msgid "**Using qmail server**: uses local server qmail,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:112
+#: ../usermanual/preferences.rst:121
 # 45e3cfb8c81e4a5291672ddc3e5c8400
 msgid "**Mail signature**: signature added to all sent emails. Available variables are:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:114
+#: ../usermanual/preferences.rst:123
 # a0d7a96608d84df0a76a7e12afaae890
 msgid "``{NAME]`` association name,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:115
+#: ../usermanual/preferences.rst:124
 # 34c91db358104d7e948ae30a03798510
 msgid "``{WEBSITE}`` association website,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:116
+#: ../usermanual/preferences.rst:125
 # 761da18c8fe746e7b9569980ac55ea4f
 msgid "``{FACEBOOK}`` faceboox URL set in preferences,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:117
+#: ../usermanual/preferences.rst:126
 # 5d96cad58ee3437094e39e6403424f69
 msgid "``{TWITTER}`` twitter URL set in preferences,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:118
+#: ../usermanual/preferences.rst:127
 # 731c5f3e065e45a790df2c62775f7962
 msgid "``{LINKEDIN}`` linkedin URL set in preferences,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:119
+#: ../usermanual/preferences.rst:128
 # 053d2156e98846cb8e765b7d60c6205d
 msgid "``{VIADEO}`` viadeo URL set in preferences."
 msgstr ""
 
-#: ../usermanual/preferences.rst:121
+#: ../usermanual/preferences.rst:130
 # 64ac88b2ac1b4645ac0fcb7f5b4fab71
 msgid "When using GMail as SMTP, you will have to configure user name and password to use."
 msgstr ""
 
-#: ../usermanual/preferences.rst:123
+#: ../usermanual/preferences.rst:132
 # 3e0b9a2c06ff44aaa738af0ded2d9100
 msgid "SMTP configuration is a bit more complexe :"
 msgstr ""
 
-#: ../usermanual/preferences.rst:125
+#: ../usermanual/preferences.rst:134
 # 85de833985d64f868295d3ec5308506c
 msgid "**SMTP server**: server address, required,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:126
+#: ../usermanual/preferences.rst:135
 # 85de833985d64f868295d3ec5308506c
 msgid "**SMTP port**: server port, required,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:127
+#: ../usermanual/preferences.rst:136
 # ccf4ad5a86b44cbf8502c933c1ce465c
 msgid "**Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:128
+#: ../usermanual/preferences.rst:137
 # 103e92a814d34a83bd4daeeb9e8e60aa
 msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:129
+#: ../usermanual/preferences.rst:138
 # 3d9a5f2b689342a4bb194eda8b8bf008
 msgid "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:131
+#: ../usermanual/preferences.rst:140
 # 4a761bb60afe49ee8102a02d430c86cd
 msgid "The `Test mail settings` button will send a test message to the email currently stored as members administrator."
 msgstr ""
 
-#: ../usermanual/preferences.rst:134
+#: ../usermanual/preferences.rst:143
 # 223d6bd509404f92a8ea0420ff575d9f
 msgid "Labels"
 msgstr ""
 
-#: ../usermanual/preferences.rst:142
+#: ../usermanual/preferences.rst:151
 # b64b14c7b04040308b2b88651a2ecf52
 msgid "Cards"
 msgstr ""
 
-#: ../usermanual/preferences.rst:150
+#: ../usermanual/preferences.rst:159
 # eac9efb0772141a0810bd00e10fdf9f2
 msgid "Admin"
 msgstr ""
 
-#: ../usermanual/preferences.rst:154
+#: ../usermanual/preferences.rst:163
 # 8634b16f93304567bd2dacf2913e67ca
 msgid "This tab wil be present only if you are logged in as super administrator."
 msgstr ""
