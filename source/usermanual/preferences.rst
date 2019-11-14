@@ -122,7 +122,7 @@ Sending email parameters:
 
   * ``{NAME]`` association name,
   * ``{WEBSITE}`` association website,
-  * ``{FACEBOOK}`` faceboox URL set in preferences,
+  * ``{FACEBOOK}`` Facebook URL set in preferences,
   * ``{TWITTER}`` twitter URL set in preferences,
   * ``{LINKEDIN}`` linkedin URL set in preferences,
   * ``{VIADEO}`` viadeo URL set in preferences.

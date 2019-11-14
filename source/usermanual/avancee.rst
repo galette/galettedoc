@@ -6,7 +6,7 @@ Experimented users
 
 .. warning::
 
-   use only following instructions if you know what you are doing... "The management is not responsable for any case of [...]" :D
+   Use only following instructions if you know what you are doing... "The management is not responsable for any case of [...]" :D
 
 Adapt to your graphical chart
 =============================
@@ -40,7 +40,7 @@ As example,  we want to change the "Password" string on the login page in french
 
 Since Galette uses a cache system for translations, changes may not be visible immediately; you may have to restart PHP (or to clear cache). It is important to take the original string verbatim, punctuation included; and take care to escape single quotes (with a backslash) in all the strings.
 
-You also can override langs for plugins using the sam method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is th routing name you can find in the ``_define.php`` file.
+You also can override langs for plugins using the sam method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file.
 
 .. note:: This will work only if you use Galette translation features, and not with native gettext.
 
@@ -139,7 +139,7 @@ Let's examine contributions parameted export:
        <quote><![CDATA["]]></quote>
    </export>
 
-Each parameted export is defined inside a tag named ``export``, which contains a unique identifier (``id``), a description displayed in the user interface (``name``) and output filename (``filename``).. The ``query`` tag contains the SQL query to execute, there is no other limitation than the SQL engine ones.
+Each parameted export is defined inside a tag named ``export``, which contains a unique identifier (``id``), a description displayed in the user interface (``name``) and output filename (``filename``). The ``query`` tag contains the SQL query to execute, there is no other limitation than the SQL engine ones.
 
 The ``headers`` part defines columns that will be exported, the ``separator`` tag the CSV separator and the ``quote`` tag the strings separator.
 

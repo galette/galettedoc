@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2019-11-13 09:52+0000\n"
+"PO-Revision-Date: 2019-11-14 06:27+0000\n"
 "Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -337,6 +337,8 @@ msgid ""
 "**Reply-to email**: reply email address. If empty, sender email will be "
 "used,"
 msgstr ""
+"**Courriel de réponse** : l'adresse de courriel de réponse. Si elle est "
+"vide, l'adresse de l'expéditeur sera utilisée."
 
 #: ../usermanual/preferences.rst:108
 msgid ""
@@ -344,142 +346,178 @@ msgid ""
 "notifications will be send, you can set several addresses separated with "
 "comas,"
 msgstr ""
+"**Courriel de l'administrateur**: l'adresse de courriel sur laquelle les "
+"notifications d'inscription seront envoyées, vous pouvez déclarer plusieurs "
+"adresses séparées par des virgules."
 
 #: ../usermanual/preferences.rst:109
 msgid ""
 "**Send emails to administrators**: whether to send emails to administrators "
 "on subscription,"
 msgstr ""
+"**Envoyer des courriels aux administrateurs** : s'il faut evoyer es "
+"courriels aux administrateurs lors de nouvelles inscriptions,"
 
 #: ../usermanual/preferences.rst:110
 msgid ""
 "**Wrap text emails**: automatically wraps long lines in emails. If you "
 "disable this options, make sure to wrap yourself,"
 msgstr ""
+"**Scinder les courriels texte** : scinde automatiquement les longues lignes "
+"dans les courriels. Si vous désactivez cette option, vous devrez le faire "
+"vous même."
 
 #: ../usermanual/preferences.rst:111
 msgid ""
 "**Activate HTML editor**: activate HTML format when sending emails "
 "(discouraged),"
 msgstr ""
+"**Activer l'éditeur HTML** : active l'éditeur HTML lors de l'envoi de "
+"courriels (déconseillé),"
 
 #: ../usermanual/preferences.rst:112
 msgid "**Emailing method**: method used to send emails:"
 msgstr ""
+"**Méthode d'envoi des courriels** : méthode utilisée pour envoyer les "
+"courriels :"
 
 #: ../usermanual/preferences.rst:114
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr ""
+"**Envoi de courriel désactivé** : aucun courriel ne sera envoyé depuis "
+"Galette,"
 
 #: ../usermanual/preferences.rst:115
 msgid ""
 "**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
 "parameters (recommended when possible),"
 msgstr ""
+"**Fonction PHP mail** : utilise la fonction php ``mail()`` et les paramètres"
+" relatifs (recommandé si possible),"
 
 #: ../usermanual/preferences.rst:116
 msgid ""
 "**Using a SMTP server**: uses an external SMTP server to configure (will be "
 "slower than PHP ``mail()`` function),"
 msgstr ""
+"**Utiliser un serveur SMTP** : utilise un serveur SMTP externe à configurer "
+"(sera plus lent que la fonction PHP ``mail()``),"
 
 #: ../usermanual/preferences.rst:117
 msgid ""
 "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also "
 "be slower than PHP ``mail()`` function),"
 msgstr ""
+"**Utiliser GMail comme serveur SMTP** : similaire au serveur smTp, mais "
+"spécifique à GMail (sera plus lent que la fonction PHP ``mail()``),"
 
 #: ../usermanual/preferences.rst:118
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr ""
+"**Utiliser un serveur sendmail** : utilisation du serveur sendmail local,"
 
 #: ../usermanual/preferences.rst:119
 msgid "**Using qmail server**: uses local server qmail,"
-msgstr ""
+msgstr "**Utiliser un serveur qmail** : utilisation du serveur qmail local,"
 
 #: ../usermanual/preferences.rst:121
 msgid ""
 "**Mail signature**: signature added to all sent emails. Available variables "
 "are:"
 msgstr ""
+"**Signature courriels** : signature à ajouter à tous les courriels envoyés. "
+"Les variables disponibles sont :"
 
 #: ../usermanual/preferences.rst:123
 msgid "``{NAME]`` association name,"
-msgstr ""
+msgstr "``{NAME]`` nom de l'association,"
 
 #: ../usermanual/preferences.rst:124
 msgid "``{WEBSITE}`` association website,"
-msgstr ""
+msgstr "``{WEBSITE}`` site web de l'association,"
 
 #: ../usermanual/preferences.rst:125
-msgid "``{FACEBOOK}`` faceboox URL set in preferences,"
-msgstr ""
+msgid "``{FACEBOOK}`` Facebook URL set in preferences,"
+msgstr "``{FACEBOOK}`` URL Facebook définie dans les préférences,"
 
 #: ../usermanual/preferences.rst:126
 msgid "``{TWITTER}`` twitter URL set in preferences,"
-msgstr ""
+msgstr "``{TWITTER}`` URL twitter URL définie dans les préférences,"
 
 #: ../usermanual/preferences.rst:127
 msgid "``{LINKEDIN}`` linkedin URL set in preferences,"
-msgstr ""
+msgstr "``{LINKEDIN}`` URL linkedin définie dans les préférences,"
 
 #: ../usermanual/preferences.rst:128
 msgid "``{VIADEO}`` viadeo URL set in preferences."
-msgstr ""
+msgstr "``{VIADEO}`` URL viadeo définie dans les préférences."
 
 #: ../usermanual/preferences.rst:130
 msgid ""
 "When using GMail as SMTP, you will have to configure user name and password "
 "to use."
 msgstr ""
+"Lorsque vous utilisez GMail comme SMTP, vous devrez configurer le nom "
+"d'utilisateur et le mot de passe à utiliser."
 
 #: ../usermanual/preferences.rst:132
 msgid "SMTP configuration is a bit more complexe :"
-msgstr ""
+msgstr "La configuration SMTP est un peu plus complexe :"
 
 #: ../usermanual/preferences.rst:134
 msgid "**SMTP server**: server address, required,"
-msgstr ""
+msgstr "**Serveur SMTP** : adresse du serveur , requise,"
 
 #: ../usermanual/preferences.rst:135
 msgid "**SMTP port**: server port, required,"
-msgstr ""
+msgstr "**Port SMTP** : port du serveur, requis,"
 
 #: ../usermanual/preferences.rst:136
 msgid ""
 "**Use SMTP authentication**: if your server requires an authentication. In "
 "this case, you will also have to set username and password,"
 msgstr ""
+"**Utiliser l'authentification SMTP** : si votre serveur requiert une "
+"authentification. Dans ce cas, vous devrez également renseigner les nom "
+"d'utilisateur et mot de passe."
 
 #: ../usermanual/preferences.rst:137
 msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
 msgstr ""
+"**Utiliser TLS pour SMTP** : active le support SSL (toujours actif pour "
+"GMail),"
 
 #: ../usermanual/preferences.rst:138
 msgid ""
 "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
 "signed for example)."
 msgstr ""
+"**Autoriser TLS non sécurisé** : dans certains cas, le certificat SSL peut-"
+"être invalide (auto signé  par exemple),"
 
 #: ../usermanual/preferences.rst:140
 msgid ""
 "The `Test mail settings` button will send a test message to the email "
 "currently stored as members administrator."
 msgstr ""
+"Le bouton `Test des paramètres courriels` enverra un message de test à "
+"l'adresse actuellement enregistrée de l'administrateur des adhérents,"
 
 #: ../usermanual/preferences.rst:143
 msgid "Labels"
-msgstr ""
+msgstr "Étiquettes"
 
 #: ../usermanual/preferences.rst:151
 msgid "Cards"
-msgstr ""
+msgstr "Cartes"
 
 #: ../usermanual/preferences.rst:159
 msgid "Admin"
-msgstr ""
+msgstr "Administrateur"
 
 #: ../usermanual/preferences.rst:163
 msgid ""
 "This tab wil be present only if you are logged in as super administrator."
 msgstr ""
+"Cet onglet ne sera présent que si vous êtes connecté en tant que super "
+"administrateur."
