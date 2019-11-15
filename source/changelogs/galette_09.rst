@@ -13,7 +13,7 @@ Added
 * Ability to use several admins email addresses from preferences (`#643 <https://bugs.galette.eu/issues/643>`_)
 * Send a mail to admins when a member edit his card (`#756 <https://bugs.galette.eu/issues/756>`_)
 * Flexible redirect after member creation (`#1136 <https://bugs.galette.eu/issues/1136>`_)
-* Add current date variable (DATE_NOW) in PDF models (`DATE_NOW`) dans les modèles PDF (`#1260 <https://bugs.galette.eu/issues/1260>`_)
+* Add current date variable (``DATE_NOW``) in PDF models (`#1260 <https://bugs.galette.eu/issues/1260>`_)
 
 .. _bogues_093:
 
