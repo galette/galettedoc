@@ -41,16 +41,16 @@ Fixed
 0.9.2 -> 0.9.2.1
 ****************
 
-* Impossible d'enregistrer l'URL de Galette dans les préférences (`#1246 <https://bugs.galette.eu/issues/1246>`_)
-* Correction du filtrage des listes déroulantes (`#1234 <https://bugs.galette.eu/issues/1234>`_)
-* Fichiers de langue locales incompatibles (`#1232 <https://bugs.galette.eu/issues/1232>`_)
-* Correction des champs requis sur les fiches enfant (`#1230 <https://bugs.galette.eu/issues/1230>`_ et `#1229 <https://bugs.galette.eu/issues/1229>`_)
-* Correction de l'enregistrement des contributions (`#1228 <https://bugs.galette.eu/issues/1228>`_)
-* Sélection du type de ventilation d'une transaction inneficace (`#1227 <https://bugs.galette.eu/issues/1227>`_)
-* Problèmes de redirections (`#1226 <https://bugs.galette.eu/issues/1226>`_)
-* Revue des vérifications de la version de PHP et des extensions présentes (`#1225 <https://bugs.galette.eu/issues/1225>`_)
-* Correction de la recherche des adhérents à l'ajout de contributions (`#1224 <https://bugs.galette.eu/issues/1224>`_)
-* Suppression des traductions des routes (`#1223 <https://bugs.galette.eu/issues/1223>`_)
+* Unable to store Galette URL in preferences (`#1246 <https://bugs.galette.eu/issues/1246>`_)
+* Fix dropdowns filtering (`#1234 <https://bugs.galette.eu/issues/1234>`_)
+* Imcompatible locales files (`#1232 <https://bugs.galette.eu/issues/1232>`_)
+* Fix required fields on children cards (`#1230 <https://bugs.galette.eu/issues/1230>`_ et `#1229 <https://bugs.galette.eu/issues/1229>`_)
+* Fix contributions storage (`#1228 <https://bugs.galette.eu/issues/1228>`_)
+* Fix distribution type in transaction (`#1227 <https://bugs.galette.eu/issues/1227>`_)
+* Redirection issues (`#1226 <https://bugs.galette.eu/issues/1226>`_)
+* Rework PHP version and extensions checks (`#1225 <https://bugs.galette.eu/issues/1225>`_)
+* Fix members search when adding a new contribution (`#1224 <https://bugs.galette.eu/issues/1224>`_)
+* Remove routes translations (`#1223 <https://bugs.galette.eu/issues/1223>`_)
 
 ****************
 0.9.1.2 -> 0.9.2
@@ -58,13 +58,13 @@ Fixed
 
 .. note::
 
-   Un très grand merci à Danielle C. et à l'association Les Amis de la Gendarmerie pour leur généreux don sur le développement de cette version !
+   A very big thanks to Danielle C. and "Les Amis de la Gendarmerie" for their generous donation to support this release!
 
 
 .. _ajouts_092:
 
-Nouveautés
-==========
+Added
+=====
 
 * Ajout d'une variable pour l'identifiant dans les modèles PDF et les textes des courriels (`#1222 <https://bugs.galette.eu/issues/1222>`_)
 * Recherche (nom, courriel, id, ...) des adhérents lors de l'ajout de transactions ou de contributions (`"1218 <https://bugs.galette.eu/issues/1218>`_)
@@ -78,8 +78,8 @@ Nouveautés
 
 .. _bogues_092:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Le mode "galop d'essai" des imports CSV a été entièrement revu pour corriger différents problèmes
 * Correction de la détection de version pendant une mise à jour
@@ -102,8 +102,8 @@ Bogues corrigés
 
 .. _souscapot_092:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 * Utilisation du moteur InnoDB pour toutes les tables (`#1006 <https://bugs.galette.eu/issues/1006>`_)
 * Envoi automatique de la Télémétrie
@@ -136,8 +136,8 @@ Sous le capot...
 
 .. _ajouts_091:
 
-Nouveautés
-==========
+Added
+=====
 
 * Modification en masse des adhérents (`#696 <https://bugs.galette.eu/issues/696>`_)
 * Choix du statut par défaut pour les nouveaux membres depuis les préférences (`#963 <https://bugs.galette.eu/issues/963>`_)
@@ -147,8 +147,8 @@ Nouveautés
 
 .. _bogues_091:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Vérification de la présence des modèles PDF (`#1134 <https://bugs.galette.eu/issues/1134>`_)
 * Prise en compte des préférences de l'historique (`#440 <https://bugs.galette.eu/issues/440>`_)
@@ -174,8 +174,8 @@ Bogues corrigés
 
 .. _ajouts_090:
 
-Nouveautés
-==========
+Added
+=====
 
 * Généralisation de la suppression en deux étapes ; avec une réelle confirmation requise (et non pas un évènement basé sur du javascript)
 * Suppression en cascade des groupes enfants
@@ -207,8 +207,8 @@ Nouveautés
 
 .. _bogues_090:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Meilleure gestion des erreurs des PDF (`#249 <https://bugs.galette.eu/issues/249>`_)
 * Ajout du numéro de version aux sessions (`#315 <https://bugs.galette.eu/issues/315>`_)
@@ -221,8 +221,8 @@ Bogues corrigés
 
 .. _souscapot_090:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 * Mise à jour des bibliothèques tierces
 * Utilisation de `Slim <https://www.slimframework.com/>`_ pour la génération des URL

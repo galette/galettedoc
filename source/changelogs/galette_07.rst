@@ -110,16 +110,16 @@
 
 .. _bogues_075:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Les tables vides étaient exportées, mais ne pouvaient pas être récupérées ou supprimées (`#628 <https://bugs.galette.eu/issues/628>`_)
 * Traduction manquante dans l'historique lors de la suppression de contributions (`#644 <https://bugs.galette.eu/issues/644>`_)
 
 .. _ajouts_075:
 
-Nouveautés
-==========
+Added
+=====
 
 * Modèles de courriels de rappel d'échéance (`#376 <https://bugs.galette.eu/issues/376>`_)
 * Envoi automatique de courriels de rappel d'échéance de cotisation (`#368 <https://bugs.galette.eu/issues/368>`_)
@@ -207,8 +207,8 @@ Nouveautés
 
 .. _bogues_074:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Suppression du statut non membre (`#455 <https://bugs.galette.eu/issues/455>`_)
 * Calcul de la date de fin d'adhésion erroné après suppression de toutes les contributions d'un membre (`#515 <https://bugs.galette.eu/issues/515>`_)
@@ -221,8 +221,8 @@ Bogues corrigés
 
 .. _ajouts_074:
 
-Nouveautés
-==========
+Added
+=====
 
 * Gestion des civilités (subventionné - `#174 <https://bugs.galette.eu/issues/174>`_)
 * Recherche des adhérents via leurs contributions (subventionné - `#498 <https://bugs.galette.eu/issues/498>`_)
@@ -263,15 +263,15 @@ Nouveautés
 
 .. _bogues_073:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Traduction des libellés des champs dynamiques (`#398 <https://bugs.galette.eu/issues/398>`_)
 
 .. _ajouts_073:
 
-Nouveautés
-==========
+Added
+=====
 
 * Login et mot de passes peuvent être non requis (`#303 <https://bugs.galette.eu/issues/303>`_)
 * Paramétrage de la visibilité des champs (`#369 <https://bugs.galette.eu/issues/369>`_)
@@ -281,8 +281,8 @@ Nouveautés
 
 .. _souscapot_073:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 * Remplacement du logger (`#415 <https://bugs.galette.eu/issues/415>`_)
 
@@ -365,16 +365,16 @@ Sous le capot...
 
 .. _bogues_072:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Erreur d'objet incomplet lors d'une mise à jour (`#393 <https://bugs.galette.eu/issues/393>`_)
 * Détection correcte du module PHP Curl à l'installation (`#395 <https://bugs.galette.eu/issues/395>`_)
 
 .. _ajouts_072:
 
-Nouveautés
-==========
+Added
+=====
 
 * Amélioration de l'interface des champs complémentaires multiples (`#289 <https://bugs.galette.eu/issues/289>`_)
 * Présentation des champs dynamiques contenant une URL ou une adresse courriel sous forme d'hyperlien (`#355 <https://bugs.galette.eu/issues/355>`_)
@@ -383,8 +383,8 @@ Nouveautés
 
 .. _souscapot_072:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 * Passage en objet de la gestion des champs dynamiques (`#194 <https://bugs.galette.eu/issues/194>`_)
 
@@ -394,8 +394,8 @@ Sous le capot...
 
 .. _bogues_071:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Problèmes lors de l'envoi de logo transparent ou de types non supportés (`#164 <https://bugs.galette.eu/issues/164>`_, `#165 <https://bugs.galette.eu/issues/165>`_),
 * Chemin parfois incorect dans les entrées de menu des plugins (`#203 <https://bugs.galette.eu/issues/203>`_),
@@ -412,8 +412,8 @@ Bogues corrigés
 
 .. _ajouts_071:
 
-Nouveautés
-==========
+Added
+=====
 
 * Filtrage de la liste des adhérents par groupe (`#169 <https://bugs.galette.eu/issues/169>`_),
 * Test de la présence des modules PHP requis et conseillés à l'installation (`#172 <https://bugs.galette.eu/issues/172>`_),
@@ -428,8 +428,8 @@ Nouveautés
 
 .. _souscapot_071:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 Quelques modifications, d'ordre un peu plus technique ont également été apportées :
 
@@ -447,8 +447,8 @@ Quelques modifications, d'ordre un peu plus technique ont également été appor
 
 .. _ajouts_07:
 
-Ajouts et modifications
-=======================
+Added and changed
+=================
 
 * Refonte complète de l'interface,
 * Validation HTML 5 et CSS 3,
@@ -471,16 +471,16 @@ Ajouts et modifications
 
 .. _suppressions_07:
 
-Suppressions
-============
+Removals
+========
 
 * Suppression du support IE6 et IE7,
 * Suppression de l'espagnol (qui n'est plus maintenu :'( )
 
 .. _souscapot_07:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 Quelques modifications, d'ordre un peu plus technique ont également été apportées :
 

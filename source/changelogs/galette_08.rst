@@ -34,8 +34,8 @@
 
 .. _bogues_083:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Améliorations sur la gestion des groupes (merci à `Remi <https://blog.remirepo.net>`_),
 * Validation des données sur les champs cachés (`#958 <https://bugs.galette.eu/issues/958>`_)
@@ -49,8 +49,8 @@ Bogues corrigés
 
 .. _ajouts_083:
 
-Nouveautés
-==========
+Added
+=====
 
 * Fiche adhérent PDF modifiable via les modèles
 * Ajout d'une addresse multi-ligne pour les modèles PDF
@@ -94,8 +94,8 @@ Nouveautés
 
 .. _bogues_082:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Mots de passe de base de données contenant le caractère « $ » (entre autres)
 * Mise à jour des plugins
@@ -109,8 +109,8 @@ Bogues corrigés
 
 .. _ajouts_082:
 
-Nouveautés
-==========
+Added
+=====
 
 * Formulaire adhérent dynamique et paramétrable
 * Attachement d'adhérents
@@ -124,8 +124,8 @@ Nouveautés
 
 .. _souscapot_082:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 * Mise à jour des bilitohèques tierces
 * Ajout d'un paramètre pour régler les problèmes d'encodage sur certaines instances utilisant MySQL
@@ -164,8 +164,8 @@ Sous le capot...
 
 .. _bogues_08:
 
-Bogues corrigés
-===============
+Fixed
+=====
 
 * Le champ "genre" ne pouvait être désactivé,
 * Suppression de la fonction SQL `NOW()` iconnue de SQLite,
@@ -177,8 +177,8 @@ Bogues corrigés
 
 .. _ajouts_08:
 
-Nouveautés
-==========
+Added
+=====
 
 * Refonte complète du système d'installation et de mise à jour,
 * Relocalisation des données dans un répertoire commun,
@@ -203,8 +203,8 @@ Nouveautés
 
 .. _souscapot_08:
 
-Sous le capot...
-================
+Under the hood...
+=================
 
 Quelques modifications, d'ordre un peu plus technique ont également été apportées :
 
