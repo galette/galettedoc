@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2019-11-15 10:20+0000\n"
+"PO-Revision-Date: 2019-11-18 07:46+0000\n"
 "Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -182,6 +182,8 @@ msgid ""
 "Fix upper case removal from composed names (`#1272 "
 "<https://bugs.galette.eu/issues/1272>`_)"
 msgstr ""
+"Correction de la suppression des majuscules sur les noms composés (`#1272 "
+"<https://bugs.galette.eu/issues/1272>`_)"
 
 #: ../changelogs/galette_09.rst:36
 msgid ""
@@ -287,155 +289,185 @@ msgid ""
 "A very big thanks to Danielle C. and \"Les Amis de la Gendarmerie\" for "
 "their generous donation to support this release!"
 msgstr ""
+"Un grand merci à Danielle C. et \"Les Amis de la Gendarmerie\" pour leur "
+"généreux don de sponsoriser de cette version !"
 
 #: ../changelogs/galette_09.rst:69
 msgid ""
-"Ajout d'une variable pour l'identifiant dans les modèles PDF et les textes "
-"des courriels (`#1222 <https://bugs.galette.eu/issues/1222>`_)"
+"Add a variable for the identifier in PDF models and emails texts (`#1222 "
+"<https://bugs.galette.eu/issues/1222>`_)"
 msgstr ""
+"Ajout d'une variable pour l'identifiant dans le smodèles PDF models et les "
+"textes des courriels (`#1222 <https://bugs.galette.eu/issues/1222>`_)"
 
 #: ../changelogs/galette_09.rst:70
 msgid ""
-"Recherche (nom, courriel, id, ...) des adhérents lors de l'ajout de "
-"transactions ou de contributions (`\"1218 "
-"<https://bugs.galette.eu/issues/1218>`_)"
+"Search (name, email, id, ...) for members when adding transactions and "
+"contributions (`#1218 <https://bugs.galette.eu/issues/1218>`_)"
 msgstr ""
+"Recherche (nom, courriel, id, ...) d'adhérents à l'ajout de nouvelles "
+"contributions et transactions (`#1218 "
+"<https://bugs.galette.eu/issues/1218>`_)"
 
 #: ../changelogs/galette_09.rst:71
 msgid "PHP 7.1 minimum,"
 msgstr "PHP 7.1 minimum,"
 
 #: ../changelogs/galette_09.rst:72
-msgid ""
-"Gestion des types de paiements (`#1084 "
-"<https://bugs.galette.eu/issues/1084>`_)"
+msgid "Manage payment types (`#1084 <https://bugs.galette.eu/issues/1084>`_)"
 msgstr ""
+"Gestion des types de paiement (`#1084 "
+"<https://bugs.galette.eu/issues/1084>`_)"
 
 #: ../changelogs/galette_09.rst:73
 msgid ""
-"Suppression des mots de passie dans les courriels (`#1171 "
-"<https://bugs.galette.eu/issues/1171>`_)"
+"Remove passwords in emails (`#1171 <https://bugs.galette.eu/issues/1171>`_)"
 msgstr ""
+"Suppression des mots de passe dans les courriels (`#1171 "
+"<https://bugs.galette.eu/issues/1171>`_)"
 
 #: ../changelogs/galette_09.rst:74
-msgid "Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)"
+msgid "Duplicate members (`#633 <https://bugs.galette.eu/issues/633>`_)"
 msgstr ""
+"Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)"
 
 #: ../changelogs/galette_09.rst:75
 msgid ""
-"Paramétrage du filtre compte par défaut (`#345 "
+"Configure default account filter (`#345 "
 "<https://bugs.galette.eu/issues/345>`_)"
 msgstr ""
+"Configuration du filtre du compte par défaut (`#345 "
+"<https://bugs.galette.eu/issues/345>`_)"
 
 #: ../changelogs/galette_09.rst:76
-msgid ""
-"Le système de traduction a été entièrement revu, et nécéssite désormais "
-"l'extension PHP intl"
+msgid "Rework translation system, which now requires the PHP intl extension"
 msgstr ""
+"Refonte du ssytème de traduction, qui requiert désormais l'extension PHP "
+"intl"
 
 #: ../changelogs/galette_09.rst:77
-msgid "Affichage du compte des membres/responsables dans les groupes"
-msgstr ""
+msgid "Display count for members and managers in groups"
+msgstr "Affichage du compte pour les membres et responsables de groupes"
 
 #: ../changelogs/galette_09.rst:84
-msgid ""
-"Le mode \"galop d'essai\" des imports CSV a été entièrement revu pour "
-"corriger différents problèmes"
+msgid "Dry run mode of imports has been reworked to fix several issues"
 msgstr ""
+"Le mode \"galop d'essai\" des imports a été ré-écrit pour corriger plusieurs"
+" problèmes"
 
 #: ../changelogs/galette_09.rst:85
-msgid "Correction de la détection de version pendant une mise à jour"
-msgstr ""
+msgid "Fix version detection when updating"
+msgstr "Correction de la détection de version à la mise à jour"
 
 #: ../changelogs/galette_09.rst:86
 msgid ""
-"Documentation des variables des modèles PDF (`#1066 "
+"Document PDF models variables (`#1066 "
 "<https://bugs.galette.eu/issues/1066>`_)"
 msgstr ""
+"Documentation des variables dans les modèles PDF (`#1066 "
+"<https://bugs.galette.eu/issues/1066>`_)"
 
 #: ../changelogs/galette_09.rst:87
 msgid ""
-"Admission de membres plus que centenaires (`#452 "
+"Admit more than 100 years old members (`#452 "
 "<https://bugs.galette.eu/issues/452>`_)"
 msgstr ""
+"Admettre des adhérents plus que centenaires (`#452 "
+"<https://bugs.galette.eu/issues/452>`_)"
 
 #: ../changelogs/galette_09.rst:88
-msgid "Correction de la plage pour les années de naissance"
-msgstr ""
+msgid "Fix birth dates range"
+msgstr "Correction de la plage pour les dates de naissance"
 
 #: ../changelogs/galette_09.rst:89
-msgid "Ajout de vérifications sur la date de naissance à l'enregistrement"
-msgstr ""
+msgid "Add checks on birthdate when storing"
+msgstr "Ajouts de vérifications sur la date de naissance à l'enregistrement"
 
 #: ../changelogs/galette_09.rst:90
 msgid ""
-"Correction du filtrage de la liste des contributions (`#1185 "
+"Fix contributions list filtering (`#1185 "
 "<https://bugs.galette.eu/issues/1185>`_)"
 msgstr ""
+"Correction du filtrage des contributions (`#1185 "
+"<https://bugs.galette.eu/issues/1185>`_)"
 
 #: ../changelogs/galette_09.rst:91
 msgid ""
-"Utilisation des informations de l'émétteur du courriel lors de la "
-"prévisualisation (`#1188 <https://bugs.galette.eu/issues/1188>`_)"
+"Use sender informations on preview (`#1188 "
+"<https://bugs.galette.eu/issues/1188>`_)"
 msgstr ""
+"Utilisation des informations dde l'expéditeur lors de la prévisualisation "
+"(`#1188 <https://bugs.galette.eu/issues/1188>`_)"
 
 #: ../changelogs/galette_09.rst:92
 msgid ""
-"Correction de l'enregistrement de l'émetteur du courriel dans l'historique "
-"(`#1188 <https://bugs.galette.eu/issues/1188>`_)"
+"Fix mail sender storage in history (`#1188 "
+"<https://bugs.galette.eu/issues/1188>`_)"
 msgstr ""
+"Correction de l'enregistrement de l'expéditeur dans l'historique des "
+"mailings (`#1188 <https://bugs.galette.eu/issues/1188>`_)"
 
 #: ../changelogs/galette_09.rst:93
-msgid ""
-"Suppression du message \"not translated\" sur les libellés des champs "
-"dynamiques"
+msgid "Remove \"not translated\" message on dynamic fields labels"
 msgstr ""
+"Suppression du message \"not translated\" sur les étiquettes des champs "
+"dynamiques"
 
 #: ../changelogs/galette_09.rst:94
 msgid ""
-"Correction de la recherche sur les champs dynamiques booléens (`#1186 "
+"Fix search on boolean dynamic fields (`#1186 "
 "<https://bugs.galette.eu/issues/1186>`_)"
 msgstr ""
+"Correction de la recherche sur les champs dynamiques booléens (`#1186 "
+"<https://bugs.galette.eu/issues/1186>`_)"
 
 #: ../changelogs/galette_09.rst:95
 msgid ""
-"Correction de la suppression en masse de contributions (`#1192 "
+"Fix contributions mass removal (`#1192 "
 "<https://bugs.galette.eu/issues/1192>`_)"
 msgstr ""
+"Correction de la suppression de contributions multiples (`#1192 "
+"<https://bugs.galette.eu/issues/1192>`_)"
 
 #: ../changelogs/galette_09.rst:96
 msgid ""
-"Suppression des données des champs dynamiques lorsque le champ est supprimé "
-"(`#1191 <https://bugs.galette.eu/issues/1191>`_)"
+"Remove dynamic field content when it is removed (`#1191 "
+"<https://bugs.galette.eu/issues/1191>`_)"
 msgstr ""
+"Suppression du contenu des champs dynamiques supprimés (`#1191 "
+"<https://bugs.galette.eu/issues/1191>`_)"
 
 #: ../changelogs/galette_09.rst:97
-msgid "Correction du script de mise à jour PostgreSQL"
-msgstr ""
+msgid "Fix PostgreSQL update script"
+msgstr "Correction du script de mise à jour PostgreSQL"
 
 #: ../changelogs/galette_09.rst:98
-msgid ""
-"Correction des problèmes de redirection sur certains hébergements (et "
-"notamment avec l'utilisation de serveurs proxy)"
+msgid "Fix redirection issues on some cases (mainly when using proxies)"
 msgstr ""
+"Correction de problèmes de redirections dans certains cas (notamment avec "
+"l'utilisation de serveurs proxy)"
 
 #: ../changelogs/galette_09.rst:99
-msgid ""
-"Les champs dynamiques fonctionnent désormais dans les formulaires PDF (merci"
-" à Jérôme B.)"
+msgid "Dynamic fields now works in PDF forms (thanks to Jérôme B.!)"
 msgstr ""
+"Les champs dynamiques fonctionnent désormais dans les formulaires PDF (merci"
+" à Jérôme B. !)"
 
 #: ../changelogs/galette_09.rst:100
 msgid ""
-"Correction de la configuration des champs CSV (`#1208 "
+"Fix Csv fields configuration (`#1208 "
 "<https://bugs.galette.eu/issues/1208>`_)"
 msgstr ""
+"Correction de la configuration des champs CSV (`#1208 "
+"<https://bugs.galette.eu/issues/1208>`_)"
 
 #: ../changelogs/galette_09.rst:101
 msgid ""
-"Correction des droits sur les champs dynamiques (`#1201 "
+"Fix rights on dynamic fields (`#1201 "
 "<https://bugs.galette.eu/issues/1201>`_)"
 msgstr ""
+"Correction des droits sur les champs dynamiques (`#1201 "
+"<https://bugs.galette.eu/issues/1201>`_)"
 
 #: ../changelogs/galette_09.rst:106 ../changelogs/galette_09.rst:225
 #: ../changelogs/galette_08.rst:128 ../changelogs/galette_08.rst:207
@@ -446,27 +478,29 @@ msgstr "Sous le capot"
 
 #: ../changelogs/galette_09.rst:108
 msgid ""
-"Utilisation du moteur InnoDB pour toutes les tables (`#1006 "
+"Use InnoDB engine for all tables (`#1006 "
 "<https://bugs.galette.eu/issues/1006>`_)"
 msgstr ""
+"Utilisation du moteur InnoDB pour toutes les tables (`#1006 "
+"<https://bugs.galette.eu/issues/1006>`_)"
 
 #: ../changelogs/galette_09.rst:109
-msgid "Envoi automatique de la Télémétrie"
-msgstr ""
+msgid "Automatic send of telemetry"
+msgstr "Envoi automatique des informations de télémétrie"
 
 #: ../changelogs/galette_09.rst:110
-msgid "Utilisation de `Zanata <https://zanata.org>`_ pour les traductions"
-msgstr ""
+msgid "Use of `Zanata <https://zanata.org>`_ for translations"
+msgstr "Utilisation de `Zanata <https://zanata.org>`_ pour les traductions"
 
 #: ../changelogs/galette_09.rst:111
-msgid ""
+msgid "Use of `Zend Translator <https://docs.zendframework.com/zend-i18n/>`_"
+msgstr ""
 "Utilisation de `Zend Translator "
 "<https://docs.zendframework.com/zend-i18n/>`_"
-msgstr ""
 
 #: ../changelogs/galette_09.rst:112 ../changelogs/galette_09.rst:227
-msgid "Mise à jour des bibliothèques tierces"
-msgstr ""
+msgid "Update third party libraries"
+msgstr "Mise à jour des bibliothèques tierces"
 
 #: ../changelogs/galette_09.rst:116
 msgid "0.9.1.1 -> 0.9.1.2"
@@ -474,15 +508,19 @@ msgstr "0.9.1.1 -> 0.9.1.2"
 
 #: ../changelogs/galette_09.rst:118
 msgid ""
-"Correction à l'enregistrement des adhérents lors du décochage des cases à "
-"cocher (`#1181 <https://bugs.galette.eu/issues/1181>`_)"
+"Fix member storage on unchecking checkboxes (`#1181 "
+"<https://bugs.galette.eu/issues/1181>`_)"
 msgstr ""
+"Correction de l'enregistrement des adhérents lorsqu'une case est décochée "
+"(`#1181 <https://bugs.galette.eu/issues/1181>`_)"
 
 #: ../changelogs/galette_09.rst:119
 msgid ""
-"Correction à l'enregistrement des adhérents si le champ titre est masqué "
-"(`#1181 <https://bugs.galette.eu/issues/1181>`_)"
+"Fix member storage when title field is not displayed (`#1181 "
+"<https://bugs.galette.eu/issues/1181>`_)"
 msgstr ""
+"Correction de l'enregistrement des adhérents lorsque le champ titre n'est "
+"pas affiché (`#1181 <https://bugs.galette.eu/issues/1181>`_)"
 
 #: ../changelogs/galette_09.rst:123
 msgid "0.9.1 -> 0.9.1.1"
@@ -490,21 +528,26 @@ msgstr "0.9.1 -> 0.9.1.1"
 
 #: ../changelogs/galette_09.rst:125
 msgid ""
-"Correction de la suppression intempestive des groupes lors de la mise à jour"
-" d'un adhérent (`#1178 <https://bugs.galette.eu/issues/1178>`_)"
+"Fix unopportune group removal on member update (`#1178 "
+"<https://bugs.galette.eu/issues/1178>`_)"
 msgstr ""
+"Correction de la suppression intempestive des groupes à l'enregistrement "
+"d'un adhérent (`#1178 <https://bugs.galette.eu/issues/1178>`_)"
 
 #: ../changelogs/galette_09.rst:126
 msgid ""
-"Correction de l'URL pour les reverse proxy (`#1176 "
-"<https://bugs.galette.eu/issues/1176>`_)"
+"Fix URL for reverse proxies (`#1176 <https://bugs.galette.eu/issues/1176>`_)"
 msgstr ""
+"Correction des l'URL pour les proxy invesrés (`#1176 "
+"<https://bugs.galette.eu/issues/1176>`_)"
 
 #: ../changelogs/galette_09.rst:127
 msgid ""
-"Correction de la redirection lorsque l'utilisateur n'est pas connecté "
-"(`#1175 <https://bugs.galette.eu/issues/1175>`_)"
+"Fix redirection when member is not logged in (`#1175 "
+"<https://bugs.galette.eu/issues/1175>`_)"
 msgstr ""
+"Correction de la redirection lorsque l'adhérent n'est pas connecté (`#1175 "
+"<https://bugs.galette.eu/issues/1175>`_)"
 
 #: ../changelogs/galette_09.rst:131
 msgid "0.9 -> 0.9.1"
@@ -512,133 +555,171 @@ msgstr "0.9 -> 0.9.1"
 
 #: ../changelogs/galette_09.rst:135
 msgid ""
-"Merci à l'Association Bretonne des Amis de Saint Jacques de Compostelle qui "
-"a sponsorisé le paramétrage des expéditeurs des courriels !"
+"Thanks to the \"Association Bretonne des Amis de Saint Jacques de "
+"Compostelle\" who has sponsorised sender choice!"
 msgstr ""
+"Merci à \"Association Bretonne des Amis de Saint Jacques de Compostelle\" "
+"qui a sponsorisé  le choix de l'expéditeur !"
 
 #: ../changelogs/galette_09.rst:142
-msgid ""
-"Modification en masse des adhérents (`#696 "
-"<https://bugs.galette.eu/issues/696>`_)"
+msgid "Mass change on members (`#696 <https://bugs.galette.eu/issues/696>`_)"
 msgstr ""
+"Modification massive des adhérents (`#696 "
+"<https://bugs.galette.eu/issues/696>`_)"
 
 #: ../changelogs/galette_09.rst:143
 msgid ""
-"Choix du statut par défaut pour les nouveaux membres depuis les préférences "
-"(`#963 <https://bugs.galette.eu/issues/963>`_)"
+"Choose default state for new members in preferences (`#963 "
+"<https://bugs.galette.eu/issues/963>`_)"
 msgstr ""
+"Choix du statut par défaut des nouveaux adhérents dans les préférences "
+"(`#963 <https://bugs.galette.eu/issues/963>`_)"
 
 #: ../changelogs/galette_09.rst:144
 msgid ""
-"Texte paramétrable en pied de page (`#1107 "
+"Customizabe text in pages footer (`#1107 "
 "<https://bugs.galette.eu/issues/1107>`_)"
 msgstr ""
+"Texte personnalisable dans le pied de page (`#1107 "
+"<https://bugs.galette.eu/issues/1107>`_)"
 
 #: ../changelogs/galette_09.rst:145
 msgid ""
-"Ajout des traductions en Allemand (`#1165 "
-"<https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)"
+"Add German translation (`#1165 <https://bugs.galette.eu/issues/1165>`_, "
+"merci à Arnold W.)"
 msgstr ""
+"Ajout de la traduction en Allemand (`#1165 "
+"<https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)"
 
 #: ../changelogs/galette_09.rst:146
 msgid ""
-"Choix des informations expéditeur lors de l'envoi d'un courriel (`#1142 "
+"Choose sender informations when sending a mail (`#1142 "
 "<https://bugs.galette.eu/issues/1142>`_)"
 msgstr ""
+"Choix des informations de l'expéditeur à l'envoi de mailings (`#1142 "
+"<https://bugs.galette.eu/issues/1142>`_)"
 
 #: ../changelogs/galette_09.rst:153
 msgid ""
-"Vérification de la présence des modèles PDF (`#1134 "
+"Check PDF models are present (`#1134 "
 "<https://bugs.galette.eu/issues/1134>`_)"
 msgstr ""
+"Vérification de la présence des modèles PDF (`#1134 "
+"<https://bugs.galette.eu/issues/1134>`_)"
 
 #: ../changelogs/galette_09.rst:154
 msgid ""
-"Prise en compte des préférences de l'historique (`#440 "
+"Take into account logs preferences (`#440 "
 "<https://bugs.galette.eu/issues/440>`_)"
 msgstr ""
+"Prise en compte des préférences des logs (`#440 "
+"<https://bugs.galette.eu/issues/440>`_)"
 
 #: ../changelogs/galette_09.rst:155
 msgid ""
-"La mise à jour des champs dynamiques met à jour la date de modification de "
-"la fiche adhérent (`#1002 <https://bugs.galette.eu/issues/1002>`_)"
+"Update a dynamic field now updates member's modification date (`#1002 "
+"<https://bugs.galette.eu/issues/1002>`_)"
 msgstr ""
+"La mise à jour d'un champ dynamique met maintenant à jour la date de "
+"modification de l'adhérent (`#1002 <https://bugs.galette.eu/issues/1002>`_)"
 
 #: ../changelogs/galette_09.rst:156
 msgid ""
+"GPG key field was too short (`#1032 <https://bugs.galette.eu/issues/1032>`_)"
+msgstr ""
 "Le champ pour la clé GPG était trop court (`#1032 "
 "<https://bugs.galette.eu/issues/1032>`_)"
-msgstr ""
 
 #: ../changelogs/galette_09.rst:157
 msgid ""
-"Correction de différences entre les schémas MySQL et PostgreSQL (`#1072 "
+"Fix differences beetween MySQL and PostgreSQL schemas (`#1072 "
 "<https://bugs.galette.eu/issues/1072>`_)"
 msgstr ""
+"Correction de différences de schéma entre MySQL et PostgreSQL (`#1072 "
+"<https://bugs.galette.eu/issues/1072>`_)"
 
 #: ../changelogs/galette_09.rst:158
-msgid ""
-"Nettoyage de données provenant des RC 0.9 (`#1093 "
-"<https://bugs.galette.eu/issues/1093>`_)"
+msgid "Clean data from 0.9RC (`#1093 <https://bugs.galette.eu/issues/1093>`_)"
 msgstr ""
+"Nettoyage des données des 0.9RC (`#1093 "
+"<https://bugs.galette.eu/issues/1093>`_)"
 
 #: ../changelogs/galette_09.rst:159
 msgid ""
-"Modification de la taille du champ pour l'addresse courriel afin de "
-"respecter les standards (`#1121 <https://bugs.galette.eu/issues/1121>`_)"
+"Change email field size to suits standards (`#1121 "
+"<https://bugs.galette.eu/issues/1121>`_)"
 msgstr ""
+"Modification du champ de l'adresse de courriel pour respecter les standards "
+"(`#1121 <https://bugs.galette.eu/issues/1121>`_)"
 
 #: ../changelogs/galette_09.rst:160
-msgid "Correction de problèmes de mise à jour"
-msgstr ""
+msgid "Fix update issues"
+msgstr "Correction d'un problème de mise à jour"
 
 #: ../changelogs/galette_09.rst:161
 msgid ""
-"Correction du calcul de la date de fin des contributions (`#1144 "
+"Fix contribution end date calculation (`#1144 "
 "<https://bugs.galette.eu/issues/1144>`_)"
 msgstr ""
+"Correction du calcul de la date de fin d'adhésion (`#1144 "
+"<https://bugs.galette.eu/issues/1144>`_)"
 
 #: ../changelogs/galette_09.rst:162
 msgid ""
-"Correction de la redirction après création d'une contribution (`#1145 "
+"Fix redirection after creating a new contribution (`#1145 "
 "<https://bugs.galette.eu/issues/1145>`_)"
 msgstr ""
+"Correction de la redirection après l'ajout d'une nouvelle contribution "
+"(`#1145 <https://bugs.galette.eu/issues/1145>`_)"
 
 #: ../changelogs/galette_09.rst:163
 msgid ""
-"Correction des champs dynamiques pour les transactions et contributions "
-"(`#1146 <https://bugs.galette.eu/issues/1146>`_)"
+"Fix dynamic fields on transactions and contributions (`#1146 "
+"<https://bugs.galette.eu/issues/1146>`_)"
 msgstr ""
+"Correction des champs dynamiques sur les transactions et contributions "
+"(`#1146 <https://bugs.galette.eu/issues/1146>`_)"
 
 #: ../changelogs/galette_09.rst:164
 msgid ""
-"Correction des chemins des ressources statiques sur certaines configurations"
-" (`#1152 <https://bugs.galette.eu/issues/1152>`_)"
+"Fix static resources path on some configurations (`#1152 "
+"<https://bugs.galette.eu/issues/1152>`_)"
 msgstr ""
+"Correction du chemin des ressources statiques sur certaines configurations "
+"(`#1152 <https://bugs.galette.eu/issues/1152>`_)"
 
 #: ../changelogs/galette_09.rst:165
 msgid ""
-"Correction des champs admin lorsqu'une fiche adhérent est modifiée depuis un"
-" compte non admin (`#1154 <https://bugs.galette.eu/issues/1154>`_)"
+"Admin informations fields was emptied when a member was edited from a non "
+"admin account (`#1154 <https://bugs.galette.eu/issues/1154>`_)"
 msgstr ""
+"Les champ des informations administrateur était remis à zéro lorsqu'un "
+"adhérent était modifié par un compte non adim (`#1154 "
+"<https://bugs.galette.eu/issues/1154>`_)"
 
 #: ../changelogs/galette_09.rst:166
 msgid ""
-"Correction des champs dynamiques de type fichier requis à la mise à jour "
-"d'une fiche adhérent (`#1160 <https://bugs.galette.eu/issues/1160>`_)"
+"Fix required dynamic file fields updating member (`#1160 "
+"<https://bugs.galette.eu/issues/1160>`_)"
 msgstr ""
+"Correction des champs dynamiques requis à la modification d'un adhérent "
+"(`#1160 <https://bugs.galette.eu/issues/1160>`_)"
 
 #: ../changelogs/galette_09.rst:167
 msgid ""
-"Correction des vérifications de sécurité à la génération des cartes de "
-"membres PDF (`#1164 <https://bugs.galette.eu/issues/1164>`_)"
+"Fix security Checks generating PDF members cards (`#1164 "
+"<https://bugs.galette.eu/issues/1164>`_)"
 msgstr ""
+"Correction des vérification de sécurité à la génération des cartes de "
+"membres (`#1164 <https://bugs.galette.eu/issues/1164>`_)"
 
 #: ../changelogs/galette_09.rst:168
 msgid ""
-"Expiration des appels aux flux RSS pour prévenir les blocages (`#989 "
+"Add expiration on RSS feed calls to prevent freezes (`#989 "
 "<https://bugs.galette.eu/issues/989>`_)"
 msgstr ""
+"Ajout de l'expiration de l'appel du flux RSS pour éviter les blocages (`#989"
+" <https://bugs.galette.eu/issues/989>`_)"
 
 #: ../changelogs/galette_09.rst:173
 msgid "0.8.3.4 -> 0.9"
@@ -646,219 +727,209 @@ msgstr "0.8.3.4 -> 0.9"
 
 #: ../changelogs/galette_09.rst:180
 msgid ""
-"Généralisation de la suppression en deux étapes ; avec une réelle "
-"confirmation requise (et non pas un évènement basé sur du javascript)"
+"Use two steps removal everywhere; with a real confirmation required (not "
+"relying on a Javascript event)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:181
-msgid "Suppression en cascade des groupes enfants"
+msgid "Cascade removal on groups children"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:182
 msgid ""
-"Modification de l'ensemble des URL (`#417 "
-"<https://bugs.galette.eu/issues/417>`_), et traduction de ces dernières"
+"Change all URLs (`#417 <https://bugs.galette.eu/issues/417>`_), and "
+"translate them"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:183
 msgid ""
-"Possibilité pour le super-admin de se connecter à un autre compte sans "
-"connaître les identifiants"
+"Super admin can impersonate another account without its authentication "
+"informations"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:184
-msgid "Affichage \"responsive\""
+msgid "Responsive display"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:185
-msgid "Configuration du délai de déconnexion"
+msgid "Configure connection delay"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:186
 msgid ""
-"Test des paramètres de courriel depuis les préférences (`#588 "
+"Test mail parameters from preferences (`#588 "
 "<https://bugs.galette.eu/issues/588>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:187
 msgid ""
-"Détection des doublons de courriels par le \"galop d'essai\" des imports "
-"(`#729 <https://bugs.galette.eu/issues/729>`_)"
+"Check for duplicates created using imports dry-run (`#729 "
+"<https://bugs.galette.eu/issues/729>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:188
 msgid ""
-"Vérification des status par le \"galop d'essai\" des imports (`#999 "
+"Check statuses using imports dry-run (`#999 "
 "<https://bugs.galette.eu/issues/999>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:189
 msgid ""
-"Prévisualisation des fichiers joints dans la prévisualisation des mailings "
-"(`#735 <https://bugs.galette.eu/issues/735>`_)"
+"Preview attached files on mailing preview (`#735 "
+"<https://bugs.galette.eu/issues/735>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:190
 msgid ""
-"Sélection de toutes les entrées et inversion de la sélection en haut et en "
-"bas de liste (`#795 <https://bugs.galette.eu/issues/795>`_)"
+"Select all and reverse selection on top and bottom of list (`#795 "
+"<https://bugs.galette.eu/issues/795>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:191
 msgid ""
-"Les status ne sont plus uniques (`#887 "
+"Statuses are no longer uniques (`#887 "
 "<https://bugs.galette.eu/issues/887>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:192
 msgid ""
-"Identification depuis l'adresse de courriel (`#919 "
+"Authenticate from email address (`#919 "
 "<https://bugs.galette.eu/issues/919>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:193
 msgid ""
-"Prise en compte des reverse proxy pour les logs (`#997 "
-"<https://bugs.galette.eu/issues/997>`_ et `#1029 "
-"<https://bugs.galette.eu/issues/1029>`_ - merci à Georges R. !)"
+"Handle reverse proxy on logs (`#997 <https://bugs.galette.eu/issues/997>`_ "
+"et `#1029 <https://bugs.galette.eu/issues/1029>`_ - thanks to Georges R.!)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:194
 msgid ""
-"Autocomplétion des villes, codes postaux, pays et lieux de naissance (`#1005"
-" <https://bugs.galette.eu/issues/1005>`_)"
+"Autocomplete towns, zip codes, countries and birth places (`#1005 "
+"<https://bugs.galette.eu/issues/1005>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:195
 msgid ""
-"Un fichier de configuration des comportements d'exemple est fourni dans le "
-"dossier config (`#1011 <https://bugs.galette.eu/issues/1011>`_)"
+"A behavior configuration file whith some examples has been added in "
+"``config`` directory (`#1011 <https://bugs.galette.eu/issues/1011>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:196
 msgid ""
-"Message d'avertissement si l'application est configurée pour afficher les "
-"erreurs (`#1011 <https://bugs.galette.eu/issues/1011>`_)"
+"Warning message when application is configured to display errors (`#1011 "
+"<https://bugs.galette.eu/issues/1011>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:197
 msgid ""
-"Gestion des connexions SMTP non sécurisées (certificat auto-signé, etc. "
-"`#1020 <https://bugs.galette.eu/issues/1020>`_)"
+"Handle non secure SMTP connections (self-signed certificates, etc. `#1020 "
+"<https://bugs.galette.eu/issues/1020>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:198
-msgid "La version minimale de PHP requise passe à 5.6"
+msgid "Minimum PHP version is now 5.6"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:199
 msgid ""
-"Possibilité de n'exposer par le serveur web qu'un seul sous dossier dont le "
-"contenu est limité"
+"It is possible to expose only a sub directory (``webroot``, whith limited "
+"contents) on the web server"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:200
-msgid "Typage des champs de la recherche libre (merci à Guillaume R. !)"
+msgid "Type free search fields (thanks to Guillaume R.!)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:201
 msgid ""
-"Amélioration des contrôles d'accès aux champs via l'ajout de nouveaux rôles "
-"(merci à Guillaume R. !)"
+"Improve access control on fields by adding new roles (thanks to Guillaume "
+"R.!)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:202
 msgid ""
-"Réintégration du plugin admintools (`#1071 "
-"<https://bugs.galette.eu/issues/1071>`_)"
+"Integrate AdminTools plugin (`#1071 <https://bugs.galette.eu/issues/1071>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:203
 msgid ""
-"Recherche libre sur les textes des status (`#1061 "
-"<https://bugs.galette.eu/issues/1061>`_)"
+"Free search on status texts (`#1061 <https://bugs.galette.eu/issues/1061>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:204
-msgid ""
-"Amélioration de la gestion des champs dans la recherche libre avancée (merci"
-" à Guillaume R. !)"
+msgid "Improve fields management in free search (thanks to Guillaume R.!)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:205
 msgid ""
-"Script pour les statistiques externes (`#787 "
+"Script for extrernal statistics (`#787 "
 "<https://bugs.galette.eu/issues/787>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:206
 msgid ""
-"Remontée des `informations de télémétrie et enregistrement "
+"Send `telemetry informations and registration "
 "<https://telemetry.galette.eu>`_ :)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:213
 msgid ""
-"Meilleure gestion des erreurs des PDF (`#249 "
-"<https://bugs.galette.eu/issues/249>`_)"
+"Better PDF errors management (`#249 <https://bugs.galette.eu/issues/249>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:214
 msgid ""
-"Ajout du numéro de version aux sessions (`#315 "
+"Add version number to sessions (`#315 "
 "<https://bugs.galette.eu/issues/315>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:215
 msgid ""
-"Traduction manquante dans les en-têtes des messages (`#673 "
+"Missing translation in messages headers (`#673 "
 "<https://bugs.galette.eu/issues/673>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:216
 msgid ""
-"Adhérents en doublon dans la liste lors d'une recherche sur les groupes "
-"(`correction définitive de #687 <https://bugs.galette.eu/issues/687>`_)"
+"Members listed several times when searching on groups (`correction "
+"définitive de #687 <https://bugs.galette.eu/issues/687>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:217
 msgid ""
-"Erreur sur le retard de cotisation calculé dans certains cas (`#902 "
+"Error on calculated late days in some cases (`#902 "
 "<https://bugs.galette.eu/issues/902>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:218
 msgid ""
-"Perte du groupe parent lors de l'édition d'un groupe par un responsable "
-"(`#990 <https://bugs.galette.eu/issues/990>`_)"
+"Parent group was lost when a group manager edit a group (`#990 "
+"<https://bugs.galette.eu/issues/990>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:219
 msgid ""
-"Suppression du champ parent de la configuration des champs (`#1033 "
+"Remove parent field from fields configuration (`#1033 "
 "<https://bugs.galette.eu/issues/1033>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:220
 msgid ""
-"Erreur lors de l'envoi de courriels de rappel (`#1046 "
-"<https://bugs.galette.eu/issues/1046>`_)"
+"Error sending reminder mail (`#1046 <https://bugs.galette.eu/issues/1046>`_)"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:228
-msgid ""
-"Utilisation de `Slim <https://www.slimframework.com/>`_ pour la génération "
-"des URL"
+msgid "Rely on `Slim <https://www.slimframework.com/>`_ for URL management"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:229
 msgid ""
-"Gestion des bibliothèques tierces via `Composer <https://getcomposer.org/>`_"
+"Manage third party libraries with `Composer <https://getcomposer.org/>`_"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:230
-msgid ""
-"Passage des coding standards à PSR2 (avec les commentaires des règles PEAR)"
+msgid "Use PSR2 coding standards (with PEAR comment rules)"
 msgstr ""
 
 #: ../changelogs/galette_08.rst:5
@@ -3150,31 +3221,35 @@ msgstr "Définition de la taille de la police pour les en-têtes des tables"
 
 #: ../changelogs/galette_06.rst:102
 msgid "\"Update complete\" string translated"
-msgstr ""
+msgstr "Chîne \"Update complete\" traduite"
 
 #: ../changelogs/galette_06.rst:103
 msgid "Errors on DROP and RENAME operations can now be safely be ignored"
-msgstr ""
+msgstr "Les erreurs dur DROP et RENAME peuvent désormais être ignorées"
 
 #: ../changelogs/galette_06.rst:104
 msgid "Structure of the 'preferences' table enhanced"
-msgstr ""
+msgstr "Amélioration de la structure de la table 'prefrences'"
 
 #: ../changelogs/galette_06.rst:105
 msgid "Font size defined for form labels"
-msgstr ""
+msgstr "Définition de la taille de la police pour les étiquettes"
 
 #: ../changelogs/galette_06.rst:106
 msgid ""
 "Bugfix concerning a call to imagegif when the function wasn't available "
 "(reported by Vincent Bossuet)"
 msgstr ""
+"Correction d'un bogue à l'appel de la fonction imagegif si elle n'était pas "
+"disponible (rapporté par Vincent Bossuet)"
 
 #: ../changelogs/galette_06.rst:107
 msgid ""
 "Fixed a bug reported by Lois Taulelle. Membership ending date wasn't updated"
 " when removing the \"Freed of dues\" attribute"
 msgstr ""
+"Correction d'un bogue rapporté par Lois Taulelle. La date de fin d'adhésion "
+"n'était pas recalculée lors de la suppression de l'exemption de cotisation."
 
 #: ../changelogs/galette_06.rst:108
 msgid ""
@@ -3195,7 +3270,7 @@ msgstr ""
 
 #: ../changelogs/galette_06.rst:110
 msgid "The log can now be sorted"
-msgstr ""
+msgstr "L'historique peut désormais être trié"
 
 #: ../changelogs/galette_06.rst:114
 msgid "0.60 -> 0.61"
@@ -3209,6 +3284,8 @@ msgstr "Correction d'un bogue dans le formulaire de modification (admin)"
 msgid ""
 "Merged ajouter_adherent.php and gestion_contributions.php (member edition)"
 msgstr ""
+"Mise en commun de ajouter_adherent.php et gestion_contributions.php "
+"(modification d'adhérent)"
 
 #: ../changelogs/galette_06.rst:118
 msgid "Table prefixes are now allowed"

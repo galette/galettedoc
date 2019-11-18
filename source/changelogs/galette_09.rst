@@ -66,65 +66,65 @@ Fixed
 Added
 =====
 
-* Ajout d'une variable pour l'identifiant dans les modèles PDF et les textes des courriels (`#1222 <https://bugs.galette.eu/issues/1222>`_)
-* Recherche (nom, courriel, id, ...) des adhérents lors de l'ajout de transactions ou de contributions (`"1218 <https://bugs.galette.eu/issues/1218>`_)
+* Add a variable for the identifier in PDF models and emails texts (`#1222 <https://bugs.galette.eu/issues/1222>`_)
+* Search (name, email, id, ...) for members when adding transactions and contributions (`#1218 <https://bugs.galette.eu/issues/1218>`_)
 * PHP 7.1 minimum,
-* Gestion des types de paiements (`#1084 <https://bugs.galette.eu/issues/1084>`_)
-* Suppression des mots de passie dans les courriels (`#1171 <https://bugs.galette.eu/issues/1171>`_)
-* Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)
-* Paramétrage du filtre compte par défaut (`#345 <https://bugs.galette.eu/issues/345>`_)
-* Le système de traduction a été entièrement revu, et nécéssite désormais l'extension PHP intl
-* Affichage du compte des membres/responsables dans les groupes
+* Manage payment types (`#1084 <https://bugs.galette.eu/issues/1084>`_)
+* Remove passwords in emails (`#1171 <https://bugs.galette.eu/issues/1171>`_)
+* Duplicate members (`#633 <https://bugs.galette.eu/issues/633>`_)
+* Configure default account filter (`#345 <https://bugs.galette.eu/issues/345>`_)
+* Rework translation system, which now requires the PHP intl extension
+* Display count for members and managers in groups
 
 .. _bogues_092:
 
 Fixed
 =====
 
-* Le mode "galop d'essai" des imports CSV a été entièrement revu pour corriger différents problèmes
-* Correction de la détection de version pendant une mise à jour
-* Documentation des variables des modèles PDF (`#1066 <https://bugs.galette.eu/issues/1066>`_)
-* Admission de membres plus que centenaires (`#452 <https://bugs.galette.eu/issues/452>`_)
-* Correction de la plage pour les années de naissance
-* Ajout de vérifications sur la date de naissance à l'enregistrement
-* Correction du filtrage de la liste des contributions (`#1185 <https://bugs.galette.eu/issues/1185>`_)
-* Utilisation des informations de l'émétteur du courriel lors de la prévisualisation (`#1188 <https://bugs.galette.eu/issues/1188>`_)
-* Correction de l'enregistrement de l'émetteur du courriel dans l'historique (`#1188 <https://bugs.galette.eu/issues/1188>`_)
-* Suppression du message "not translated" sur les libellés des champs dynamiques
-* Correction de la recherche sur les champs dynamiques booléens (`#1186 <https://bugs.galette.eu/issues/1186>`_)
-* Correction de la suppression en masse de contributions (`#1192 <https://bugs.galette.eu/issues/1192>`_)
-* Suppression des données des champs dynamiques lorsque le champ est supprimé (`#1191 <https://bugs.galette.eu/issues/1191>`_)
-* Correction du script de mise à jour PostgreSQL
-* Correction des problèmes de redirection sur certains hébergements (et notamment avec l'utilisation de serveurs proxy)
-* Les champs dynamiques fonctionnent désormais dans les formulaires PDF (merci à Jérôme B.)
-* Correction de la configuration des champs CSV (`#1208 <https://bugs.galette.eu/issues/1208>`_)
-* Correction des droits sur les champs dynamiques (`#1201 <https://bugs.galette.eu/issues/1201>`_)
+* Dry run mode of imports has been reworked to fix several issues
+* Fix version detection when updating
+* Document PDF models variables (`#1066 <https://bugs.galette.eu/issues/1066>`_)
+* Admit more than 100 years old members (`#452 <https://bugs.galette.eu/issues/452>`_)
+* Fix birth dates range
+* Add checks on birthdate when storing
+* Fix contributions list filtering (`#1185 <https://bugs.galette.eu/issues/1185>`_)
+* Use sender informations on preview (`#1188 <https://bugs.galette.eu/issues/1188>`_)
+* Fix mail sender storage in history (`#1188 <https://bugs.galette.eu/issues/1188>`_)
+* Remove "not translated" message on dynamic fields labels
+* Fix search on boolean dynamic fields (`#1186 <https://bugs.galette.eu/issues/1186>`_)
+* Fix contributions mass removal (`#1192 <https://bugs.galette.eu/issues/1192>`_)
+* Remove dynamic field content when it is removed (`#1191 <https://bugs.galette.eu/issues/1191>`_)
+* Fix PostgreSQL update script
+* Fix redirection issues on some cases (mainly when using proxies)
+* Dynamic fields now works in PDF forms (thanks to Jérôme B.!)
+* Fix Csv fields configuration (`#1208 <https://bugs.galette.eu/issues/1208>`_)
+* Fix rights on dynamic fields (`#1201 <https://bugs.galette.eu/issues/1201>`_)
 
 .. _souscapot_092:
 
 Under the hood...
 =================
 
-* Utilisation du moteur InnoDB pour toutes les tables (`#1006 <https://bugs.galette.eu/issues/1006>`_)
-* Envoi automatique de la Télémétrie
-* Utilisation de `Zanata <https://zanata.org>`_ pour les traductions
-* Utilisation de `Zend Translator <https://docs.zendframework.com/zend-i18n/>`_
-* Mise à jour des bibliothèques tierces
+* Use InnoDB engine for all tables (`#1006 <https://bugs.galette.eu/issues/1006>`_)
+* Automatic send of telemetry
+* Use of `Zanata <https://zanata.org>`_ for translations
+* Use of `Zend Translator <https://docs.zendframework.com/zend-i18n/>`_
+* Update third party libraries
 
 ******************
 0.9.1.1 -> 0.9.1.2
 ******************
 
-* Correction à l'enregistrement des adhérents lors du décochage des cases à cocher (`#1181 <https://bugs.galette.eu/issues/1181>`_)
-* Correction à l'enregistrement des adhérents si le champ titre est masqué (`#1181 <https://bugs.galette.eu/issues/1181>`_)
+* Fix member storage on unchecking checkboxes (`#1181 <https://bugs.galette.eu/issues/1181>`_)
+* Fix member storage when title field is not displayed (`#1181 <https://bugs.galette.eu/issues/1181>`_)
 
 ****************
 0.9.1 -> 0.9.1.1
 ****************
 
-* Correction de la suppression intempestive des groupes lors de la mise à jour d'un adhérent (`#1178 <https://bugs.galette.eu/issues/1178>`_)
-* Correction de l'URL pour les reverse proxy (`#1176 <https://bugs.galette.eu/issues/1176>`_)
-* Correction de la redirection lorsque l'utilisateur n'est pas connecté (`#1175 <https://bugs.galette.eu/issues/1175>`_)
+* Fix unopportune group removal on member update (`#1178 <https://bugs.galette.eu/issues/1178>`_)
+* Fix URL for reverse proxies (`#1176 <https://bugs.galette.eu/issues/1176>`_)
+* Fix redirection when member is not logged in (`#1175 <https://bugs.galette.eu/issues/1175>`_)
 
 ************
 0.9 -> 0.9.1
@@ -132,40 +132,40 @@ Under the hood...
 
 .. note::
 
-   Merci à l'Association Bretonne des Amis de Saint Jacques de Compostelle qui a sponsorisé le paramétrage des expéditeurs des courriels !
+   Thanks to the "Association Bretonne des Amis de Saint Jacques de Compostelle" who has sponsorised sender choice!
 
 .. _ajouts_091:
 
 Added
 =====
 
-* Modification en masse des adhérents (`#696 <https://bugs.galette.eu/issues/696>`_)
-* Choix du statut par défaut pour les nouveaux membres depuis les préférences (`#963 <https://bugs.galette.eu/issues/963>`_)
-* Texte paramétrable en pied de page (`#1107 <https://bugs.galette.eu/issues/1107>`_)
-* Ajout des traductions en Allemand (`#1165 <https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)
-* Choix des informations expéditeur lors de l'envoi d'un courriel (`#1142 <https://bugs.galette.eu/issues/1142>`_)
+* Mass change on members (`#696 <https://bugs.galette.eu/issues/696>`_)
+* Choose default state for new members in preferences (`#963 <https://bugs.galette.eu/issues/963>`_)
+* Customizabe text in pages footer (`#1107 <https://bugs.galette.eu/issues/1107>`_)
+* Add German translation (`#1165 <https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)
+* Choose sender informations when sending a mail (`#1142 <https://bugs.galette.eu/issues/1142>`_)
 
 .. _bogues_091:
 
 Fixed
 =====
 
-* Vérification de la présence des modèles PDF (`#1134 <https://bugs.galette.eu/issues/1134>`_)
-* Prise en compte des préférences de l'historique (`#440 <https://bugs.galette.eu/issues/440>`_)
-* La mise à jour des champs dynamiques met à jour la date de modification de la fiche adhérent (`#1002 <https://bugs.galette.eu/issues/1002>`_)
-* Le champ pour la clé GPG était trop court (`#1032 <https://bugs.galette.eu/issues/1032>`_)
-* Correction de différences entre les schémas MySQL et PostgreSQL (`#1072 <https://bugs.galette.eu/issues/1072>`_)
-* Nettoyage de données provenant des RC 0.9 (`#1093 <https://bugs.galette.eu/issues/1093>`_)
-* Modification de la taille du champ pour l'addresse courriel afin de respecter les standards (`#1121 <https://bugs.galette.eu/issues/1121>`_)
-* Correction de problèmes de mise à jour
-* Correction du calcul de la date de fin des contributions (`#1144 <https://bugs.galette.eu/issues/1144>`_)
-* Correction de la redirction après création d'une contribution (`#1145 <https://bugs.galette.eu/issues/1145>`_)
-* Correction des champs dynamiques pour les transactions et contributions (`#1146 <https://bugs.galette.eu/issues/1146>`_)
-* Correction des chemins des ressources statiques sur certaines configurations (`#1152 <https://bugs.galette.eu/issues/1152>`_)
-* Correction des champs admin lorsqu'une fiche adhérent est modifiée depuis un compte non admin (`#1154 <https://bugs.galette.eu/issues/1154>`_)
-* Correction des champs dynamiques de type fichier requis à la mise à jour d'une fiche adhérent (`#1160 <https://bugs.galette.eu/issues/1160>`_)
-* Correction des vérifications de sécurité à la génération des cartes de membres PDF (`#1164 <https://bugs.galette.eu/issues/1164>`_)
-* Expiration des appels aux flux RSS pour prévenir les blocages (`#989 <https://bugs.galette.eu/issues/989>`_)
+* Check PDF models are present (`#1134 <https://bugs.galette.eu/issues/1134>`_)
+* Take into account logs preferences (`#440 <https://bugs.galette.eu/issues/440>`_)
+* Update a dynamic field now updates member's modification date (`#1002 <https://bugs.galette.eu/issues/1002>`_)
+* GPG key field was too short (`#1032 <https://bugs.galette.eu/issues/1032>`_)
+* Fix differences beetween MySQL and PostgreSQL schemas (`#1072 <https://bugs.galette.eu/issues/1072>`_)
+* Clean data from 0.9RC (`#1093 <https://bugs.galette.eu/issues/1093>`_)
+* Change email field size to suits standards (`#1121 <https://bugs.galette.eu/issues/1121>`_)
+* Fix update issues
+* Fix contribution end date calculation (`#1144 <https://bugs.galette.eu/issues/1144>`_)
+* Fix redirection after creating a new contribution (`#1145 <https://bugs.galette.eu/issues/1145>`_)
+* Fix dynamic fields on transactions and contributions (`#1146 <https://bugs.galette.eu/issues/1146>`_)
+* Fix static resources path on some configurations (`#1152 <https://bugs.galette.eu/issues/1152>`_)
+* Admin informations fields was emptied when a member was edited from a non admin account (`#1154 <https://bugs.galette.eu/issues/1154>`_)
+* Fix required dynamic file fields updating member (`#1160 <https://bugs.galette.eu/issues/1160>`_)
+* Fix security Checks generating PDF members cards (`#1164 <https://bugs.galette.eu/issues/1164>`_)
+* Add expiration on RSS feed calls to prevent freezes (`#989 <https://bugs.galette.eu/issues/989>`_)
 
 
 **************
@@ -177,55 +177,55 @@ Fixed
 Added
 =====
 
-* Généralisation de la suppression en deux étapes ; avec une réelle confirmation requise (et non pas un évènement basé sur du javascript)
-* Suppression en cascade des groupes enfants
-* Modification de l'ensemble des URL (`#417 <https://bugs.galette.eu/issues/417>`_), et traduction de ces dernières
-* Possibilité pour le super-admin de se connecter à un autre compte sans connaître les identifiants
-* Affichage "responsive"
-* Configuration du délai de déconnexion
-* Test des paramètres de courriel depuis les préférences (`#588 <https://bugs.galette.eu/issues/588>`_)
-* Détection des doublons de courriels par le "galop d'essai" des imports (`#729 <https://bugs.galette.eu/issues/729>`_)
-* Vérification des status par le "galop d'essai" des imports (`#999 <https://bugs.galette.eu/issues/999>`_)
-* Prévisualisation des fichiers joints dans la prévisualisation des mailings (`#735 <https://bugs.galette.eu/issues/735>`_)
-* Sélection de toutes les entrées et inversion de la sélection en haut et en bas de liste (`#795 <https://bugs.galette.eu/issues/795>`_)
-* Les status ne sont plus uniques (`#887 <https://bugs.galette.eu/issues/887>`_)
-* Identification depuis l'adresse de courriel (`#919 <https://bugs.galette.eu/issues/919>`_)
-* Prise en compte des reverse proxy pour les logs (`#997 <https://bugs.galette.eu/issues/997>`_ et `#1029 <https://bugs.galette.eu/issues/1029>`_ - merci à Georges R. !)
-* Autocomplétion des villes, codes postaux, pays et lieux de naissance (`#1005 <https://bugs.galette.eu/issues/1005>`_)
-* Un fichier de configuration des comportements d'exemple est fourni dans le dossier config (`#1011 <https://bugs.galette.eu/issues/1011>`_)
-* Message d'avertissement si l'application est configurée pour afficher les erreurs (`#1011 <https://bugs.galette.eu/issues/1011>`_)
-* Gestion des connexions SMTP non sécurisées (certificat auto-signé, etc. `#1020 <https://bugs.galette.eu/issues/1020>`_)
-* La version minimale de PHP requise passe à 5.6
-* Possibilité de n'exposer par le serveur web qu'un seul sous dossier dont le contenu est limité
-* Typage des champs de la recherche libre (merci à Guillaume R. !)
-* Amélioration des contrôles d'accès aux champs via l'ajout de nouveaux rôles (merci à Guillaume R. !)
-* Réintégration du plugin admintools (`#1071 <https://bugs.galette.eu/issues/1071>`_)
-* Recherche libre sur les textes des status (`#1061 <https://bugs.galette.eu/issues/1061>`_)
-* Amélioration de la gestion des champs dans la recherche libre avancée (merci à Guillaume R. !)
-* Script pour les statistiques externes (`#787 <https://bugs.galette.eu/issues/787>`_)
-* Remontée des `informations de télémétrie et enregistrement <https://telemetry.galette.eu>`_ :)
+* Use two steps removal everywhere; with a real confirmation required (not relying on a Javascript event)
+* Cascade removal on groups children
+* Change all URLs (`#417 <https://bugs.galette.eu/issues/417>`_), and translate them
+* Super admin can impersonate another account without its authentication informations
+* Responsive display
+* Configure connection delay
+* Test mail parameters from preferences (`#588 <https://bugs.galette.eu/issues/588>`_)
+* Check for duplicates created using imports dry-run (`#729 <https://bugs.galette.eu/issues/729>`_)
+* Check statuses using imports dry-run (`#999 <https://bugs.galette.eu/issues/999>`_)
+* Preview attached files on mailing preview (`#735 <https://bugs.galette.eu/issues/735>`_)
+* Select all and reverse selection on top and bottom of list (`#795 <https://bugs.galette.eu/issues/795>`_)
+* Statuses are no longer uniques (`#887 <https://bugs.galette.eu/issues/887>`_)
+* Authenticate from email address (`#919 <https://bugs.galette.eu/issues/919>`_)
+* Handle reverse proxy on logs (`#997 <https://bugs.galette.eu/issues/997>`_ et `#1029 <https://bugs.galette.eu/issues/1029>`_ - thanks to Georges R.!)
+* Autocomplete towns, zip codes, countries and birth places (`#1005 <https://bugs.galette.eu/issues/1005>`_)
+* A behavior configuration file whith some examples has been added in ``config`` directory (`#1011 <https://bugs.galette.eu/issues/1011>`_)
+* Warning message when application is configured to display errors (`#1011 <https://bugs.galette.eu/issues/1011>`_)
+* Handle non secure SMTP connections (self-signed certificates, etc. `#1020 <https://bugs.galette.eu/issues/1020>`_)
+* Minimum PHP version is now 5.6
+* It is possible to expose only a sub directory (``webroot``, whith limited contents) on the web server
+* Type free search fields (thanks to Guillaume R.!)
+* Improve access control on fields by adding new roles (thanks to Guillaume R.!)
+* Integrate AdminTools plugin (`#1071 <https://bugs.galette.eu/issues/1071>`_)
+* Free search on status texts (`#1061 <https://bugs.galette.eu/issues/1061>`_)
+* Improve fields management in free search (thanks to Guillaume R.!)
+* Script for extrernal statistics (`#787 <https://bugs.galette.eu/issues/787>`_)
+* Send `telemetry informations and registration <https://telemetry.galette.eu>`_ :)
 
 .. _bogues_090:
 
 Fixed
 =====
 
-* Meilleure gestion des erreurs des PDF (`#249 <https://bugs.galette.eu/issues/249>`_)
-* Ajout du numéro de version aux sessions (`#315 <https://bugs.galette.eu/issues/315>`_)
-* Traduction manquante dans les en-têtes des messages (`#673 <https://bugs.galette.eu/issues/673>`_)
-* Adhérents en doublon dans la liste lors d'une recherche sur les groupes (`correction définitive de #687 <https://bugs.galette.eu/issues/687>`_)
-* Erreur sur le retard de cotisation calculé dans certains cas (`#902 <https://bugs.galette.eu/issues/902>`_)
-* Perte du groupe parent lors de l'édition d'un groupe par un responsable (`#990 <https://bugs.galette.eu/issues/990>`_)
-* Suppression du champ parent de la configuration des champs (`#1033 <https://bugs.galette.eu/issues/1033>`_)
-* Erreur lors de l'envoi de courriels de rappel (`#1046 <https://bugs.galette.eu/issues/1046>`_)
+* Better PDF errors management (`#249 <https://bugs.galette.eu/issues/249>`_)
+* Add version number to sessions (`#315 <https://bugs.galette.eu/issues/315>`_)
+* Missing translation in messages headers (`#673 <https://bugs.galette.eu/issues/673>`_)
+* Members listed several times when searching on groups (`correction définitive de #687 <https://bugs.galette.eu/issues/687>`_)
+* Error on calculated late days in some cases (`#902 <https://bugs.galette.eu/issues/902>`_)
+* Parent group was lost when a group manager edit a group (`#990 <https://bugs.galette.eu/issues/990>`_)
+* Remove parent field from fields configuration (`#1033 <https://bugs.galette.eu/issues/1033>`_)
+* Error sending reminder mail (`#1046 <https://bugs.galette.eu/issues/1046>`_)
 
 .. _souscapot_090:
 
 Under the hood...
 =================
 
-* Mise à jour des bibliothèques tierces
-* Utilisation de `Slim <https://www.slimframework.com/>`_ pour la génération des URL
-* Gestion des bibliothèques tierces via `Composer <https://getcomposer.org/>`_
-* Passage des coding standards à PSR2 (avec les commentaires des règles PEAR)
+* Update third party libraries
+* Rely on `Slim <https://www.slimframework.com/>`_ for URL management
+* Manage third party libraries with `Composer <https://getcomposer.org/>`_
+* Use PSR2 coding standards (with PEAR comment rules)
 
