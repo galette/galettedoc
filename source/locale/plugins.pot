@@ -1,0 +1,740 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2014, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-26 23:09\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/admintools.rst:3
+# def769e6b85e401e815bb6f604d06621
+msgid "Outils d'administration"
+msgstr ""
+
+#: ../plugins/admintools.rst:5
+# fa6c684b5acc428d8dc1eb96af5d7ed4
+msgid "Ce plugin permet certaines actions d'administration sur Galette."
+msgstr ""
+
+#: ../plugins/admintools.rst:7
+# fc2478207798496291e2f6e852089901
+msgid "Les fonctionnalités apportées par ce plugin sont :"
+msgstr ""
+
+#: ../plugins/admintools.rst:9
+# 704a2d65af7a40f1aa4dad6833bedd84
+msgid "convertir l'encodage des donnéesi (MySQL uniquement). En effet, les versions de Galette précédant la 0.7 utilisaient l'ISO-8859-1 pour l'encodage des données de la base, la 0.7 utilise l'UTF-8. Le système de mise à jour prend cela pleinement en charge, mais il peut arriver, lors d'imports par exemple, de se retrouver avec des caractères mal encodés ; c'est à ce moment là que cette fonctionnalité devient utile,"
+msgstr ""
+
+#: ../plugins/admintools.rst:10
+# 1b3eed907b974f8aadff083efe87f2e7
+msgid "Réinitialisation des contenus des emails avec les valeurs d'origine,"
+msgstr ""
+
+#: ../plugins/admintools.rst:11
+# c556c60cf63f49948a85036573f28a44
+msgid "Réinitialisation de la configuration des champs (caractère obligatoire et visibilité)"
+msgstr ""
+
+#: ../plugins/admintools.rst:12
+# 984bc349df0f4a4891caa8e4ada5811f
+msgid "Réinitialisation des modèles PDF"
+msgstr ""
+
+#: ../plugins/admintools.rst:13
+# f52c86555c15456b9fff77dca070a859
+msgid "Génération de valeurs pour les logins et mot de passe vides en base. Les identifiants peuvent - depuis Galette 0.7.3 - être marqués comme optionnels, mais cela ne signifie pas qu'ils puissent être vides en base ; dans ce cas de figure, Galette créera automatiquement des identifiants aléatoires. Ce plugin permet (après un import ou en cas de problème quelconque) de générer les identifiants manquants."
+msgstr ""
+
+#: ../plugins/admintools.rst:14
+# 9e4110cbeb65475ea851f1b6eaa23908
+msgid "Vérification des modules PHP"
+msgstr ""
+
+#: ../plugins/admintools.rst:17
+#: ../plugins/auto.rst:20
+#: ../plugins/fullcard.rst:8
+#: ../plugins/maps.rst:11
+#: ../plugins/paypal.rst:22
+# f0441511ff3d47cda26e455e3d635aa1
+# 85069ae100ee47cdb04eb01a153d5779
+# 2dc846d79f974bc8955d045f18244251
+# 9461e2dc01874c6abdcd319061805f27
+# 5b61f235b7864bc49597c236bc0f3db6
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/admintools.rst:19
+# d6ec7117976a4b19b1b310b091637cde
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : http://download.tuxfamily.org/galette/plugins/galette-plugin-admintools-1.4.tar.bz2"
+msgstr ""
+
+#: ../plugins/admintools.rst:22
+#: ../plugins/auto.rst:25
+#: ../plugins/fullcard.rst:13
+#: ../plugins/maps.rst:16
+#: ../plugins/paypal.rst:27
+# 2e1f713c14f1473ca5fef8e30078d806
+# 0ee5db1279c840df918bcf7733e321a8
+# b0a95ff6fdf14e84a6db8675b9893084
+# 5909f1c0167e4e52936e810a2a5893c0
+# 9461dd26e13944cb828de25c96d59fd9
+msgid "Il vous suffira de placer ensuite le dossier de l'archive ainsi récupérée dans le répertoire ``plugins`` de votre installation de Galette."
+msgstr ""
+
+#: ../plugins/admintools.rst:24
+#: ../plugins/auto.rst:27
+#: ../plugins/fullcard.rst:15
+#: ../plugins/maps.rst:18
+#: ../plugins/paypal.rst:29
+# 0367893bb5374679bae7e7e29ce71f2a
+# 5c5df0e5ed0c4d46965b705cfb930677
+# e60cc7352e364a8683be1b4173a4c35d
+# 06f2db40f033443498987db5a109d989
+# 966f6e1485144aa2abaa521c56c6b703
+msgid "Sous Linux, par exemple (en remplaçant bien entendu `{url}` et `{version}` par les valeurs adéquates) :"
+msgstr ""
+
+#: ../plugins/admintools.rst:33
+#: ../plugins/auto.rst:45
+#: ../plugins/fullcard.rst:24
+#: ../plugins/maps.rst:81
+#: ../plugins/paypal.rst:59
+# dd1a8c915d80432bb9cf1b62a69767ea
+# 33cf34c0e38247e287cda70200c289d4
+# e5f2da327d87412d9079b49065cd2d2c
+# 6e9b9904cca44282aaa8dc017e338e59
+# cc0bd1e4a60a48fcbbeeb56458daee82
+msgid "Utilisateurs avancés"
+msgstr ""
+
+#: ../plugins/admintools.rst:36
+#: ../plugins/auto.rst:50
+#: ../plugins/fullcard.rst:27
+#: ../plugins/maps.rst:86
+#: ../plugins/paypal.rst:62
+# ea556fad036d43aa9fc78b9875aadf6a
+# b40e7fc7570743b0b4250f6e67d2df32
+# 8a684469dec34897ad7f43aa27042ed9
+# c7bedc97bb734df3a36e926a1f7276a7
+# 149bdd5364a249e583814d122ff57b1f
+msgid "Récupération des sources"
+msgstr ""
+
+#: ../plugins/admintools.rst:38
+#: ../plugins/fullcard.rst:29
+#: ../plugins/maps.rst:88
+#: ../plugins/paypal.rst:64
+# b9269748b6d14bb3a6f728951097610c
+# 22d5d47117a04ec8a7a6fcb7ce17ea32
+# 6811bcd58956403c95f3547a7d4d480b
+# aea459fc81c9495d98bf1c0690a470a0
+msgid "Si vous souhaitez récupérer la version de développement du plugin, vous pouvez utiliser le dépôt :"
+msgstr ""
+
+#: ../plugins/admintools.rst:45
+#: ../plugins/auto.rst:59
+#: ../plugins/fullcard.rst:36
+#: ../plugins/maps.rst:95
+#: ../plugins/paypal.rst:71
+# 36be894254c04b978275e31007c7b619
+# 16bfc3aeb6f2432589447ff9817745b5
+# bbe60a89d429456ebdefd9ed3969c881
+# 0da39a2a7e404d9b8c224f57dae65532
+# efa25cd9f8604e0497856d5e34a79ff0
+msgid "Pour obtenir la version de développement :"
+msgstr ""
+
+#: ../plugins/admintools.rst:47
+#: ../plugins/auto.rst:61
+#: ../plugins/fullcard.rst:38
+#: ../plugins/maps.rst:97
+#: ../plugins/paypal.rst:73
+# 95cfb71d9b1c49e8b568e4b560f4a185
+# 933b4373b49d46eda1c4a2f1b9ee9d5a
+# daa7c11fdea14beea8d03b979fc94e1d
+# a8672845ffae4045b37c56a6a0eca007
+# 43c3164a7e084bee98c063ef264279de
+msgid "Sans utiliser git-flow :"
+msgstr ""
+
+#: ../plugins/admintools.rst:54
+#: ../plugins/auto.rst:68
+#: ../plugins/fullcard.rst:45
+#: ../plugins/maps.rst:104
+#: ../plugins/paypal.rst:80
+# 596b1c79328541fbbbd87b8ab981e43b
+# c326e4e6127a4c51a5e207fe0e3dcc12
+# 8b4a99db30e245f1b11500902a98a1f2
+# 60a00044bb0145d293928395c0bc6dce
+# 0a77ebd402f74d14a037142cca406d99
+msgid "en utilisant git-flow :"
+msgstr ""
+
+#: ../plugins/admintools.rst:71
+# 21a3f7941ab84e68afd08518c24a7988
+msgid "Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-admintools.git`` et ``c:\\xampp\\htdocs\\galette\\plugins\\plugin-admintools`` respectivement pour les chemins vers le dépôt et vers le dossier local."
+msgstr ""
+
+#: ../plugins/auto.rst:3
+# 3ee41270b0d64e248332330575fd2bce
+msgid "Auto"
+msgstr ""
+
+#: ../plugins/auto.rst:5
+# 9c2ea19867b6431985551a323a0efd31
+msgid "Ce plugin permet la gestion de clubs automobiles. Vous pourrez gérer :"
+msgstr ""
+
+#: ../plugins/auto.rst:7
+# 895aa0ecd3bd499aa71e7ea0e18544a8
+msgid "les véhicules (propriétaire, informations diverses, photo, etc.),"
+msgstr ""
+
+#: ../plugins/auto.rst:8
+# fff5b70ad062496db7b7322d24d111c6
+msgid "l'historique des modifications d'un véhicule,"
+msgstr ""
+
+#: ../plugins/auto.rst:9
+# c86f858a46e94d409b45588e6980b193
+msgid "les marques des véhicules,"
+msgstr ""
+
+#: ../plugins/auto.rst:10
+# 7fc2017aafc84f77aff1204fb3681281
+msgid "les modèles des différentes marques,"
+msgstr ""
+
+#: ../plugins/auto.rst:11
+# 60754f3a7917427d94f0999f7bf57207
+msgid "les types de transmissions,"
+msgstr ""
+
+#: ../plugins/auto.rst:12
+# 85421881625a4b44b1ed93259c124fab
+msgid "les types de carrosseries,"
+msgstr ""
+
+#: ../plugins/auto.rst:13
+# a5c7a5a20596481f80fbef088efc7eae
+msgid "les couleurs,"
+msgstr ""
+
+#: ../plugins/auto.rst:14
+# 7c4a55a635974f828587c15d80ca3d97
+msgid "les finitions,"
+msgstr ""
+
+#: ../plugins/auto.rst:15
+# e56d74a7a27348c2afe6caf6ca88a5e4
+msgid "les états."
+msgstr ""
+
+#: ../plugins/auto.rst:17
+# 3274032acb524ea7838d0e8dcb36ba2a
+msgid "Ce plugin a été développé en étroite collaboration avec Anatole du `Club 404 <http://www.leclub404.com/>`_, et François du `club Fiat 500 <http://www.leclub404.com/>`_. Un grand merci à eux pour les données qu'ils m'ont fournies durant la création du plugin :-)"
+msgstr ""
+
+#: ../plugins/auto.rst:22
+# 5d6da776ed5d4afaaf0686b633f2f5ab
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : http://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.0.0.tar.bz2"
+msgstr ""
+
+#: ../plugins/auto.rst:36
+#: ../plugins/auto.rst:88
+#: ../plugins/maps.rst:27
+#: ../plugins/maps.rst:124
+#: ../plugins/paypal.rst:38
+#: ../plugins/paypal.rst:100
+# 8c140501629a444fa9c9ae64b30d40b0
+# 88c0788ed1df45018356aaa919b29145
+# 7a194f0077d645429d04be4a007dc6f0
+# f3a5c2bb58b144caab5c8936f061cdd2
+# d549b8b304cb438ba1bcf1aada80c347
+# 6d1bb4bb70f247c08aecc6551a227e7d
+msgid "Initialisation de la base de données"
+msgstr ""
+
+#: ../plugins/auto.rst:38
+#: ../plugins/maps.rst:29
+#: ../plugins/paypal.rst:40
+# 8145e46804164aab86b71426bdd71007
+# 5860366b56d74d2b9e60bb18ac34b195
+# 2438dc0a2cc54fe0867faa991b1841be
+msgid "Pour fonctionner, le plugin requiert des tables dans la base de données. Galette fournit une :ref:`interface de gestion des plugins <plugins_managment>`, qui est en mesure de se charger des installations et mises à jour de la base de données du plugin."
+msgstr ""
+
+#: ../plugins/auto.rst:40
+# fcf37df041054089b8689b24038e080f
+msgid "Et voilà ; le plugin Auto est installé :-)"
+msgstr ""
+
+#: ../plugins/auto.rst:42
+# a900b03b3d9f4591a6e9c771b6f74d6f
+msgid "Le plugin Auto pour Galette ne requiert aucune configuration particulière, vous pouvez directement entrer vos données dans la base."
+msgstr ""
+
+#: ../plugins/auto.rst:52
+# e1e7f4f62c7c4ee4ab3099209af20d70
+msgid "Sous Linux, vous pourrez récupérer la version de développement du plugin de cette façon :"
+msgstr ""
+
+#: ../plugins/auto.rst:85
+# f06397661fbd4ab49209923a93f6401d
+msgid "Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-auto.git`` et ``c:\\xampp\\htdocs\\galette\\plugins\\plugin-auto`` respectivement pour les chemins vers le dépôt et vers le dossier local."
+msgstr ""
+
+#: ../plugins/auto.rst:90
+# 31b815c99c1e4a25a3538ffe98a9439e
+msgid "Si vous préférez initialiser la base sans l'interface de Galette, vous trouverez les scripts d'initialisation ``mysql.sql`` et ``pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence."
+msgstr ""
+
+#: ../plugins/auto.rst:92
+#: ../plugins/maps.rst:128
+#: ../plugins/paypal.rst:104
+# 77982b710573468699fe5861bdb78bac
+# d4bcf4cf9bde4f71b2fcb328df772ada
+# f9172153441d4c71b02e40f96283e031
+msgid "Vous devrez ensuite importer ces instructions SQL dans votre base. Pour MySQL vous pourrez soit en utiliser PHPMyAmdin, soit opter directement pour la ligne de commande :"
+msgstr ""
+
+#: ../plugins/fullcard.rst:3
+# 9395d0034d8e4acfb239eb77c1c823d3
+msgid "Fullcard"
+msgstr ""
+
+#: ../plugins/fullcard.rst:5
+# 267fe69fc2054345854cfcc758388051
+msgid "Ce plugin a été développé pour `l'association Borsalinux-fr (anciennement Fedora-Fr) <http://borsalinux-fr.org>`_. Il permet la génération d'une fiche adhérent PDF qui peut soit être vierge (pour une utilisation lors de salons, etc) ; soit pré-rempli avec les données de l'utilisateur (qui peut être joint à un paiement par chèque par exemple)."
+msgstr ""
+
+#: ../plugins/fullcard.rst:10
+# 642084f4892540518cd7db7f1178e689
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : http://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.4.tar.bz2"
+msgstr ""
+
+#: ../plugins/fullcard.rst:62
+# b44f7b998e854859a93b1f991ddf6088
+msgid "Si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-fullcard.git`` et ``c:\\xampp\\htdocs\\galette\\plugins\\plugin-fullcard`` respectivement pour les chemins vers le dépôt et vers le dossier local."
+msgstr ""
+
+#: ../plugins/index.rst:5
+# d70d8df96f8e4facbde3350a7bb611b2
+msgid ":doc:`documentation des plugins <index>`"
+msgstr ""
+
+#: ../plugins/index.rst:11
+# ba5b093dcb8346ab96d4c7499ccaade7
+msgid "Plugins pour Galette"
+msgstr ""
+
+#: ../plugins/index.rst:13
+# c7898e3e197e43afb19f18d13bafd206
+msgid "Au cours du développement de Galette 0.7, un système de plugins a été ajouté, dans le but d'étendre les fonctionnalités de Galette dans certains cas particuliers, tout en évitant « d'encombrer » l'application principale."
+msgstr ""
+
+#: ../plugins/index.rst:18
+# 60d09b71e6f044909ad4fe68c6e61d70
+msgid "Depuis Galette 0.7.1, un système de compatibilité des plugins a été mis en place. Les plugins non compatibles seront automatiquement désactivés. Il faut dans ce cas envisager de passer à la version supérieure du plugin."
+msgstr ""
+
+#: ../plugins/index.rst:20
+# de62bd9463e84109b605a538b13a8271
+msgid "Chaque plugin est en fait un simple dossier qui doit être placé dans le dossier ``{galette}/plugins/``. La présence de certains fichiers dans le plugin permet à Galette de savoir que faire :"
+msgstr ""
+
+#: ../plugins/index.rst:22
+# 9ddee239528148469ebb3d6227acf0ac
+msgid "``_define.php`` : ce fichier :ref:`déclare le plugin auprès de Galette <pluginsconfig>`, il est bien entendu requis,"
+msgstr ""
+
+#: ../plugins/index.rst:23
+# 887726978fd841dfafc20f310636f79f
+msgid "``_disabled`` : permet de désactiver simplement un plugin, sans avoir à le désinstaller. Il suffit ainsi de créer un fichier portant ce nom dans le dossier d'un plugin pour qu'il soit immédiatement désactivé :-)"
+msgstr ""
+
+#: ../plugins/index.rst:27
+# 292afaad334d402ab4af04ffc3fe4d9d
+msgid "Plugins « officiels »"
+msgstr ""
+
+#: ../plugins/index.rst:29
+# 80578f6c5def48d3aa050d940a905239
+msgid "Les plugins « officiels » sont développés et/ou maintenus par l'équipe de développement de Galette. Les plugins actuellement disponibles pour Galette sont :"
+msgstr ""
+
+#: ../plugins/index.rst:43
+# 014e2281198341d592d39d9baddff11b
+msgid "Plugins tiers"
+msgstr ""
+
+#: ../plugins/index.rst:45
+# 32626616ba344e3fbc4ee6961e0924f0
+msgid "Les plugins tiers sont développés et/ou maintenus par des membres de la communauté."
+msgstr ""
+
+#: ../plugins/index.rst:47
+# 3d3eebef741746b7b478447a1c78ffa9
+msgid "Mélissa a développé plusieurs plugins pour Galette :"
+msgstr ""
+
+#: ../plugins/index.rst:49
+# be1e10cb290b47859250f2d93b984b41
+msgid "`Aéroclub <https://galetteaeroclub.codeplex.com/>`_ (gestion de base d'un aéroclub),"
+msgstr ""
+
+#: ../plugins/index.rst:50
+# 3fa72c9be4894105b231634843642534
+msgid "`Location d'objets <https://galetteobjectslend.codeplex.com/>`_."
+msgstr ""
+
+#: ../plugins/index.rst:56
+# 5689b784b7dc4bfc9daae74498be0462
+msgid "Interface de gestion des plugins"
+msgstr ""
+
+#: ../plugins/index.rst:58
+# 8d6643b563024f9caccdda2769100e6c
+msgid "Une interface de gestion des plugins est disponible, accessible par les administrateurs depuis le tableau de bord. Après avoir copié le(s) plugin(s) téléchargé(s) dans le dossier ``plugins`` de Galette ; une liste vous sera proposée :"
+msgstr ""
+
+#: ../plugins/index.rst:65
+# 017642f5a3dc40ce8a16bd25807a2ed1
+msgid "Si le serveur web possède les droits en écriture dans les dossiers des plugins, il vous sera possible d'activer ou de désactiver un plugin simplement en cliquant sur l'icône de statut en fin de ligne."
+msgstr ""
+
+#: ../plugins/index.rst:67
+# c7f97e52c0374e9d9e36666376086aec
+msgid "Si le plugin requiert une base de données pour son fonctionnement, vous pourrez jouer les scripts d'installation et de mise à jour depuis l'interface. Et puisqu''un petit schéma vaut mieux qu'un long discours, voici - en images - l'illustration de l'installation de la base de données du plugin Paypal :-)"
+msgstr ""
+
+#: ../plugins/index.rst:69
+# 67eeaddfa64547d9bf37205882933820
+msgid "Dans un premier temps, vous aurez à sélectionner le type d'installation (installation ou mise à jour - ça ne vous rapelle rien ? ;-)) :"
+msgstr ""
+
+#: ../plugins/index.rst:76
+# f189c166e5ec41fe9ff68aa8b6e79ca2
+msgid "Les droits sur la base de données seront ensuite vérifiés. Contrairement à l'installation du Galette ; aucune information concernant la base de données ne vous sera demandée, puisque les informations en question sont déjà disponibles (le simple fait d'accéder à l'interface des plugins confirme cela) :"
+msgstr ""
+
+#: ../plugins/index.rst:83
+# bf59fc3a920b42529b73817633964c7b
+msgid "Les scripts en eux-mêmes seront alors exécutés, si les droits sont corrects :"
+msgstr ""
+
+#: ../plugins/index.rst:90
+# 495c6772834644bfa6ce049f1b05a727
+msgid "Et voilà, c'est fini !"
+msgstr ""
+
+#: ../plugins/maps.rst:3
+# 2965b58412fd495292af05249d970a78
+msgid "Maps"
+msgstr ""
+
+#: ../plugins/maps.rst:5
+#: ../plugins/paypal.rst:5
+# 0e3b55f3fe334d19b7e8ccc407f9da39
+# ef7d968ca8234855a75bb1ea42c3f07f
+msgid "Ce plugin vous apporte :"
+msgstr ""
+
+#: ../plugins/maps.rst:7
+# cae54be80b944faa853821e7dd8890b9
+msgid "la possibilité pour vos adhérents d'enregisrer leurs coordonnées géographiques (latitude et longitude),"
+msgstr ""
+
+#: ../plugins/maps.rst:8
+# 52c50f004b8f487990bacc6279b60236
+msgid "une carte publique (pour les membres à jour de cotisation et ayant demandé à ce que leur profil soit public) de ces emplacements."
+msgstr ""
+
+#: ../plugins/maps.rst:13
+# 11abb3bf6b1b4d0db123ae82cc8cc393
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : http://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.1.1.tar.bz2"
+msgstr ""
+
+#: ../plugins/maps.rst:31
+# f4a3595bc39742a2b5b2b1370050dae5
+msgid "L'une des tables créée a pour vocation de recevoir une liste de villes avec leurs coordonnées, pour fournir des proposition à l'enregistrement des coordonnées, selon la ville renseignée dans la fiche adhérent. Veuillez vous référer au fichier README pour connaître la façon de récupérer et d'importer ces données dans votre base Galette. Cette étape est optionnelle."
+msgstr ""
+
+#: ../plugins/maps.rst:33
+# 14198be866ec4df5b856fa18a8f5d9d9
+msgid "Et voilà ; le plugin Maps est installé :-)"
+msgstr ""
+
+#: ../plugins/maps.rst:36
+# d569e58154784431ba8cc25eacd68bf5
+msgid "Utilisation du plugin"
+msgstr ""
+
+#: ../plugins/maps.rst:38
+# a5db47420b5348d0866832eacfa20b2c
+msgid "Lorsque le plugin est installé, un groupe `Cartes` est ajouté au menu, comprenant deux nouvelles entrées :"
+msgstr ""
+
+#: ../plugins/maps.rst:40
+# e543fd522da44d098900846b9d21b186
+msgid "`Ma localisation` : cette page permet aux adhérents de définir leur localisation,"
+msgstr ""
+
+#: ../plugins/maps.rst:41
+# 28fb50578dd94f32918eea75aa606abe
+msgid "`Cartes` : affichage des membres localisés et à jour de leur cotisation. Les administrateurs et membres du bureau verront tous les profils, alors que les simples membres et les visiteurs anonymes ne verront que les profils publics."
+msgstr ""
+
+#: ../plugins/maps.rst:43
+# 40266240307d4c568707c7149edaf417
+msgid "Dans un premier temps, vos adhérents devront entrer leur localisation, via l'entrée adéquate du menu. Plusieurs options s'offrent à eux :"
+msgstr ""
+
+#: ../plugins/maps.rst:45
+# a589a4ef271f41869fe2cfdda4c04865
+msgid "si les villes ont été importées (référez-vous à l'initialisation de la base de données ci-dessus), et que l'adhérent a renseigné sa ville sur sa fiche, une liste de possibilités d'emplacements lui sera soumise,"
+msgstr ""
+
+#: ../plugins/maps.rst:46
+# ee8508c9f5704304909025fd41de254a
+msgid "une zone de recherche permettant de chercher différents lieux (dont les résultats sont basés sur `OpenStreetMap <http://nominatim.openstreetmap.org/>`_) est disponible,"
+msgstr ""
+
+#: ../plugins/maps.rst:47
+# 01d0238b0864452da74a4790361abb6c
+msgid "un bouton de géolocalisation est également disponible."
+msgstr ""
+
+#: ../plugins/maps.rst:49
+# 34edc3c1eeb544598985d4bb0183bd59
+msgid "La zone de recherche est disponible lors de l'enregistrement de la localisation de vos membres, ainsi que lors de la consultation des cartes, que ce soit pas les administrateurs ou les simples visiteurs."
+msgstr ""
+
+#: ../plugins/maps.rst:55
+# 7061648fbee04830ac40710f33279a64
+msgid "En sélectionnant l'une de ces propositions, ou en cliquant sur la carte, l'adhérent pourra définir son lieu de résidence (avec la présision qu'il désire) à l'aide de la fenêtre qui s'ouvrira."
+msgstr ""
+
+#: ../plugins/maps.rst:61
+# 0ba7a1830ffb4883b8afa3a68bb4df1d
+msgid "L'adhérent peut choisir de cliquer sur le bouton de géolocalisation, sa position sera définie approximativement en l'absence d'appareil GPS :"
+msgstr ""
+
+#: ../plugins/maps.rst:67
+# 23435be3f9cb4db1a90e1a01b6dc7d7e
+msgid "Une fois ses coordonnées enregistrées, l'adhérent verra sa localisation affichée, et aura la possibilité de la supprimer."
+msgstr ""
+
+#: ../plugins/maps.rst:74
+# d89805bda6964e2a8cba7ca6706bbfa4
+msgid "Notes de fonctionnement"
+msgstr ""
+
+#: ../plugins/maps.rst:76
+# 003aaee436a74661a19e16bb7293af59
+msgid "La page `galette/plugins/plugin-maps/maps.php` est accessible aux utilisateurs non authentifiés. Ceux-ci ne pourront voir que les membres ayant rendu leur profil public, et qui sont à jour de leur cotisation. Les « simples adhérents » connectés auront accès aux mêmes informations, en plus de la possibilité de définir leur position géographique."
+msgstr ""
+
+#: ../plugins/maps.rst:78
+# 47f8b426b58242d69c722b52c41dbbf4
+msgid "Les administrateurs et membres du staff peuvent voir la localisation de tous les adhérents, mais ne peuvent la canger ni la supprimer."
+msgstr ""
+
+#: ../plugins/maps.rst:121
+# 22f1c791d4194b5099552b92b385cd91
+msgid "Pour la version de développement, si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-maps.git`` et ``c:\\xampp\\htdocs\\galette\\plugins\\plugin-maps`` respectivement pour les chemins vers le dépôt et vers le dossier local."
+msgstr ""
+
+#: ../plugins/maps.rst:126
+#: ../plugins/paypal.rst:102
+# 6fa3dfa8f77c4403a032f41557a2fb7a
+# 503b82b06df7491dac0d129dabbcd812
+msgid "Si vous préférez initialiser la base sans :ref:`l'interface de Galette <plugins_managment>`, vous trouverez les scripts d'initialisation ``mysql.sql`` et ``pgsql.sql`` dans le dossier ``sql`` du plugin. Si vous avez opté pour un préfixe de base de données autre que ``galette_`` (proposé par défaut à l'installation), il faudra modifier le script SQL en conséquence."
+msgstr ""
+
+#: ../plugins/paypal.rst:3
+# 49246bf49e0a488d9152d16c813600ce
+msgid "Paypal"
+msgstr ""
+
+#: ../plugins/paypal.rst:7
+# 1936aaf344f4471ab7565efa07bfdb12
+msgid "la possibilité d'associer un montant à un type de cotisation,"
+msgstr ""
+
+#: ../plugins/paypal.rst:8
+# 79cd28a9703b4dd79d4fc2e2403277df
+msgid "la création d'un formulaire de paiement Paypal,"
+msgstr ""
+
+#: ../plugins/paypal.rst:9
+# 2d9dbf11effc49f7a2f8cc5b90954092
+msgid "un historique,"
+msgstr ""
+
+#: ../plugins/paypal.rst:10
+# 652d7edae7a743f2a5860033fde42907
+msgid "l'enregistrement automatique de la transaction une fois validée."
+msgstr ""
+
+#: ../plugins/paypal.rst:24
+# 986d6b0033764253a3aca4847b6694f5
+msgid "Dans un premier temps, vous devez récupérer le plugin ; vous pouvez le télécharger à l'adresse : http://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-1.4.3.tar.bz2"
+msgstr ""
+
+#: ../plugins/paypal.rst:42
+# 582ad1714cff402e99f1a17a761358bd
+msgid "Et voilà ; le plugin Paypal est installé :-)"
+msgstr ""
+
+#: ../plugins/paypal.rst:45
+# ea05a57306c24ade9f930447e26c81ff
+msgid "Configuration du plugin"
+msgstr ""
+
+#: ../plugins/paypal.rst:47
+# 2b102fd5238e4ac9b0dc0dd73995ec65
+msgid "Lorsque le plugin est installé, un groupe `Paypal` est ajouté au menu, comprenant deux nouvelles entrées :"
+msgstr ""
+
+#: ../plugins/paypal.rst:49
+# 8eae8b2fb1d44becb62e8b48df97168f
+msgid "`Formulaire de paiement` : le formulaire lui même, dont l'URL est publiquement accessible,"
+msgstr ""
+
+#: ../plugins/paypal.rst:50
+# 9c4dcbf8d9ac4713bed3bd18491bd229
+msgid "`Préférences Paypal` : les préférences du plugin, réservées aux membres du bureau et aux administrateurs."
+msgstr ""
+
+#: ../plugins/paypal.rst:52
+# e44a1fa8be78463fb339d124b1ee3ff4
+msgid "Pour fonctionner, le plugin a besoin d'une information importante : le code de votre compte paypal. Vous pouvez soit utiliser l'adresse email associée à votre compte (qu'il faudra mettre à jour côté Galette si vous la modifiez) ou votre identifiant de compte marchand. Pour trouver ce dernier, connectez-vous à votre compte Paypal, rendez-vous dans le menu \"Préférences\" -> \"Plus d'options\" ; et cherchez la valeur \"Identifiant de compte marchand\" (mille mercis à Thomas pour cette procédure détaillée !). La modification de l'identifiant Paypal n'est autorisée que pour les administrateurs, les membres du bureau ne peuvent pas modifier cette valeur."
+msgstr ""
+
+#: ../plugins/paypal.rst:54
+# f743a118cb004a1494b9f0f1238b8c80
+msgid "L'interface des préférences vous permet aussi de gérer les montants associés aux différents types de cotisations, et vous permet également de désactiver l'affichages de certains types de contributions."
+msgstr ""
+
+#: ../plugins/paypal.rst:56
+# a729008496cd4446a5d644cd7b9615d5
+msgid "Après cela, votre formulaire permettra à un internaute de sélectionner le type de contribution qu'il souhaite, ajuster au besoin le montant, et de régler le tout depuis son compte Paypal."
+msgstr ""
+
+#: ../plugins/paypal.rst:97
+# 647f488d67e5494b81dd5d32db3a6fa8
+msgid "Pour la version de développement, si vous êtes sous windows, suivez simplement la :ref:`récupération de la version de développement de galette sous Windows <gitwindows>`, veillez juste à entrer les valeurs ``git://git.tuxfamily.org/gitroot/galette/plugin-paypal.git`` et ``c:\\xampp\\htdocs\\galette\\plugins\\plugin-paypal`` respectivement pour les chemins vers le dépôt et vers le dossier local."
+msgstr ""
+
+#: ../plugins/sport.rst:3
+# 4bca2a58974e43409bb04fd44429e7a9
+msgid "Sport"
+msgstr ""
+
+#: ../plugins/sport.rst:7
+# 8c676b1e482f4cbeb476439ec92d5c9b
+msgid "Le développement de ce plugin est encore en projet uniquement à l'heure actuelle."
+msgstr ""
+
+#: ../plugins/sport.rst:9
+# 6af613cc276e4e46a31cb4d5a008d07d
+msgid "Il y a quelques années, Olivier Perron a `créé un fork de Galette <http://fr.wikipedia.org/wiki/Fork_(développement_logiciel)>`_ basé sur la version 0.62 ; afin d'y inclure des fonctionnalités utiles à la gestion des associations sportives. Cette version, bien qu'ayant remporté un certain succès, n'a jamais été reprise dans le code principal de Galette, et n'a pas non plus évolué depuis sa sortie initiale, en 2007 :-("
+msgstr ""
+
+#: ../plugins/sport.rst:11
+# 198790697d5c48d5b0262aacbfcfc349
+msgid "Le présent plugin a pour vocation de réimplémenter les possibilités offertes par galette-sport, à savoir :"
+msgstr ""
+
+#: ../plugins/sport.rst:13
+# 974ff077e89540a5a4bd61934fb4abd0
+msgid "ajout de la notion de super-utilisateur (fonctionnalité présente de base dans Galette 0.7),"
+msgstr ""
+
+#: ../plugins/sport.rst:14
+# d378f5cbd5ea4e3d93d8f3a33c3b3071
+msgid "ajout d'un widget javascript de calendrier (fonctionnalité présente de base dans Galette 0.7),"
+msgstr ""
+
+#: ../plugins/sport.rst:15
+# 0f8262bcbf474711a3880fdfbd13495b
+msgid "Import de données CSV,"
+msgstr ""
+
+#: ../plugins/sport.rst:16
+# 74ea84d2a01045ca8e742d23af1476a3
+msgid "Export de données CSV (fonctionnalité présente de base dans Galette 0.7),"
+msgstr ""
+
+#: ../plugins/sport.rst:17
+# d18894055f4c4ca9aa29b3945ba6e142
+msgid "ajout de filtres sur les listes adhérents (fonctionnalité présente de base dans Galette 0.7 et améliorée au fil du temps ; recherche avancée possible depuis Galette 0.7.3) et cotisations,"
+msgstr ""
+
+#: ../plugins/sport.rst:18
+# 7db31a02fcd748ac84dfc4ae63065c80
+msgid "gestion de groupe et leur(s) administrateur(s) (fonctionnalité présente de base dans Galette 0.7.1),"
+msgstr ""
+
+#: ../plugins/sport.rst:19
+# 0bfb3a45f138451fb414b451f2154f9a
+msgid "modification de la fiche adhérent :"
+msgstr ""
+
+#: ../plugins/sport.rst:21
+# 602492c4d7f34478bebe73430bb073b5
+msgid "Création de groupes auxquels est associé un responsable (appelé référent) qui à des droits d'administration de son groupe. Pour les sportifs il s'agit de sections comme des classes d'age avec des entraîneurs mais on se rend vite compte que le besoin existe pour toutes les associations qu'elles soient sportives ou non."
+msgstr ""
+
+#: ../plugins/sport.rst:22
+# 5ca72f4724564d6aab0d4a4534e5d270
+msgid "assignation à un (plusieurs ?) groupe (fonctionnalité présente de base dans Galette 0.7.1),"
+msgstr ""
+
+#: ../plugins/sport.rst:23
+# c1f0abbaead74b68896f9b8376a1ceff
+msgid "ajout d'un champ `référent` (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),"
+msgstr ""
+
+#: ../plugins/sport.rst:24
+# 77b7ba6e650e40f2bcbe5eb0c9fb3351
+msgid "informations de licence (nom, identifiant, date) (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),"
+msgstr ""
+
+#: ../plugins/sport.rst:25
+# 8d0a373b30e34d22a6396fe29b71f3d0
+msgid "catégorie (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),"
+msgstr ""
+
+#: ../plugins/sport.rst:26
+# bf5cf26e3d8f4c428bd92c17c1b7cbd4
+msgid "certificat médical (nom du médecin et date) (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),"
+msgstr ""
+
+#: ../plugins/sport.rst:27
+# 607f424045084eb2b1a34f37e8b2ea9b
+msgid "enveloppe (??) (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques),"
+msgstr ""
+
+#: ../plugins/sport.rst:28
+# 70606e4169f34ab3b2da1b8699438399
+msgid "participation vêtements (fonctionnalité présente de base dans Galette 0.63 via les champs dynamiques)."
+msgstr ""
+
+#: ../plugins/sport.rst:32
+# ea11ba4adbf44c2e8125bb83e55e4a5e
+msgid "Dans un message sur la liste de diffusion, `John nous explique les différences entre Galette et Galette-sport <https://mail.gna.org/public/galette-discussion/2007-10/msg00020.html>`_. La notion de groupes est intégrée à Galette depuis la version 0.7."
+msgstr ""
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,102 +17,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../plugins/index.rst:7
-# cb2c08b56ee4462f95412ad5c8c4b3fc
+# d70d8df96f8e4facbde3350a7bb611b2
 msgid ":doc:`Plugins documentation <index>`"
 msgstr ""
 
 #: ../plugins/index.rst:13
-# f473894207f7411995825fd4a1cdc91c
+# 014e2281198341d592d39d9baddff11b
 msgid "Plugins"
 msgstr ""
 
 #: ../plugins/index.rst:15
-# 7bd14079fd1a4e64bc72f540409071f1
+# bb14736ae8fb4e0eac528936db331b18
 msgid "Plugins system allows to extend Galette with specific features that would not be useful for most of the users. Incompatible plugins will automatically be disabled, in which case you should consider upgrading to a more recent version."
 msgstr ""
 
 #: ../plugins/index.rst:17
-# 6d853cc48b6b4f238a563c5ecbdbd1d1
+# de62bd9463e84109b605a538b13a8271
 msgid "Each plugin is a simple directory in ``{galette}/plugins/``, then refer to the plugin documentation to install it."
 msgstr ""
 
 #: ../plugins/index.rst:19
-# 522a533a99184d0ab0062ab11dd75c1e
+# 93cebd6f0d994b27bf837134e8d59d6e
 msgid "You can disable a plugin creating a ``_disabled`` file in its directory."
 msgstr ""
 
 #: ../plugins/index.rst:23
-# 28f292776d4e4775b8500e6e9a223443
+# 3eac82c27dc54c808ee3d2cab8cbbd36
 msgid "Official Plugins"
 msgstr ""
 
 #: ../plugins/index.rst:25
-# 885928a144324cd29eef8789286b7949
+# fef38005c31d426ead686dd2f564f856
 msgid "Official plugins are developed and maintained by the Galette team. Available official plugins are:"
 msgstr ""
 
 #: ../plugins/index.rst:40
-# e98c6eb0ac56436aa3808f87d6430357
+# 5689b784b7dc4bfc9daae74498be0462
 msgid "Third party plugins"
 msgstr ""
 
 #: ../plugins/index.rst:42
-# a9bc6f601796483396c1007429a71e29
+# e385bc45897e497abc9e9c4868e9476a
 msgid "Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine."
 msgstr ""
 
 #: ../plugins/index.rst:44
-# 8b24913f87fe49fa923684426d5f6225
+# d2472597dcea4e1c8b7bc71a9a85963b
 msgid "`Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (base management of a flying club), developed by Mélissa (**no longer maintained**),"
 msgstr ""
 
 #: ../plugins/index.rst:45
-# 3ebf7cc879b444b6b8ae44ba2e0a099d
+# 318b9c5415ea4c28b37011fba01a1f14
 msgid "`QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes generation), developed by Frédéric,"
 msgstr ""
 
 #: ../plugins/index.rst:46
-# 040caa11ca7d491fb954395812e4abe4
+# c2ecc5a5c5d642e6b14e8b6a137a397e
 msgid "`Grades <https://galette-community.github.io/plugin-grades/>`_ (evaluations management), developed by Frédéric."
 msgstr ""
 
 #: ../plugins/index.rst:48
-# 990aa0603a40470a8856734813da9b6a
+# 1a8873b073f04317934b9d39ad00f7f6
 msgid "A `Github community <https://github.com/galette-community/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin."
 msgstr ""
 
 #: ../plugins/index.rst:59
-# 30b3802789b54bad943f191a1b515f2e
+# 93f2e6d41fee4186a5f2ffc37247122c
 msgid "Plugins management interface"
 msgstr ""
 
 #: ../plugins/index.rst:61
-# 7f075d63127340e3b1de063ba4e71526
+# 5316111323444886bd68afe7c71ab77d
 msgid "A plugins management interface is provided, you will find it from the dashboard or in the configuration menu. After you have downloaded plugin(s) in Galette ``plugins`` directory, a list will be displayed:"
 msgstr ""
 
 #: ../plugins/index.rst:68
-# 53e72e5f118844f0884fb34ee064735d
+# 1fa2a84cfbe946618c805317d63ee959
 msgid "If web server has read access to your plugins directory, then you can enable or disable any plugin from the related icon."
 msgstr ""
 
 #: ../plugins/index.rst:70
-# 8dcb3a8043d94114874222b02efca1c2
+# 219b321c804d4f1eaeb1e55de355a4c0
 msgid "If plugin requires a database to work, you can play installation and update scripts from the interface. As example, the Paypal plugin database installation:"
 msgstr ""
 
 #: ../plugins/index.rst:77
-# ecf6d2936781454eac4f197b4a98c95b
+# bd96e8596cde47b490f773c27b17d5e2
 msgid "Database ACLs will then be checked. Unlike Galette, no information will be asked to you, since all is already available from your current instance:"
 msgstr ""
 
 #: ../plugins/index.rst:84
-# 453aeff5334147e3b13865760e33542a
+# 6d646c3d58944720b01d568ca297a381
 msgid "Scripts themselves will then be run:"
 msgstr ""
 
 #: ../plugins/index.rst:91
-# 700049f108224e8a83c2845ebfcd7aa2
+# e409c0697b384cd0ba6a6083d6491bc5
 msgid "And this is finished!"
 msgstr ""
 

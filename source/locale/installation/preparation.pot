@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 08:08+0200\n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,242 +17,242 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../installation/preparation.rst:7
-# d43d2fb3401d44078193e7624f6291b2
+# 5a6a39183c4a4d3e93057ec0b0b8aa32
 msgid "Preparation"
 msgstr ""
 
 #: ../installation/preparation.rst:9
-# 7b90a83dc90642909e78e74a4fb6e58f
+# 3b341f6749d44bacb51777dd73b4d538
 msgid "You have to follow some preparation steps for Galette installation. The way to go differs on what you want to achieve."
 msgstr ""
 
 #: ../installation/preparation.rst:14
-# 698f9d7191e048c3b10d324fe3770cdb
+# c76b7d34e5bd4f66b6980cf18a12368f
 msgid "File permissions"
 msgstr ""
 
 #: ../installation/preparation.rst:18
-# 785dcfd1045840dfb895d73e7e1ad41a
+# cd2af8b9fb2747918f0e1af226b3d50a
 msgid "A commonly used hack is to give all rights to everyone recursively on the directory (``chmod 777``). This is a very very bad idea from a security point of view. Please do not use that hack, you've been warned ;)"
 msgstr ""
 
 #: ../installation/preparation.rst:20
-# bc5a4fa3de504476b66aa7a80e30cf80
+# 94500bbf71384f1cb236f4136538d8e1
 msgid "Some Galette directories need specific rights. The application will need to write in some of them, you have to ensure it will be possible. Here are directories that need a write access:"
 msgstr ""
 
 #: ../installation/preparation.rst:22
-# a0cece137cb648cb806ed0e297c01721
+# 077b1b83c4dc44c0858a43dcd7a4732e
 msgid "|folder| `config` [#configdirperms]_,"
 msgstr ""
 
 #: ../installation/preparation.rst:23
-# fe4419b24f694e1798bab1eaaf552452
+# 2596c0fd1dc64b068bb8d192f773ce57
 msgid "|folder| `data/attachments`,"
 msgstr ""
 
 #: ../installation/preparation.rst:24
-# 102b6ef8989b40c2bc5c30299393e7dc
+# 4ac9df03b24e4216a36524225250a48d
 msgid "|folder| `data/cache`,"
 msgstr ""
 
 #: ../installation/preparation.rst:25
-# 98290dcf443444039e4f9dd1376ef9a8
+# 7018cb2f00d949058fc492547b18b3c1
 msgid "|folder| `data/exports`,"
 msgstr ""
 
 #: ../installation/preparation.rst:26
-# 71f3f3da93464009ac9fa6dfea1f25b1
+# 2596c0fd1dc64b068bb8d192f773ce57
 msgid "|folder| `data/files`,"
 msgstr ""
 
 #: ../installation/preparation.rst:27
-# b1be0aa043bf4963bfa02104d94f49aa
+# 7018cb2f00d949058fc492547b18b3c1
 msgid "|folder| `data/imports`,"
 msgstr ""
 
 #: ../installation/preparation.rst:28
-# 7a9a5f2d6e644d5186ce75452e77ff90
+# 9805acc59e0f4e52a58977405301e341
 msgid "|folder| `data/logs`,"
 msgstr ""
 
 #: ../installation/preparation.rst:29
-# 28dd0184d7234c91b961921cdff44f74
+# da400c84cf57432abc6f9a3ee5b85d3e
 msgid "|folder| `data/photos`,"
 msgstr ""
 
 #: ../installation/preparation.rst:30
-# bacf94f881424ba58cb5ce0335804fbe
+# 2596c0fd1dc64b068bb8d192f773ce57
 msgid "|folder| `data/tempimages`,"
 msgstr ""
 
 #: ../installation/preparation.rst:31
-# 84541e1551694f84b886dce961a4c441
+# 2066350790744fc0ba92912eb3c8acbb
 msgid "|folder| `data/templates_c`"
 msgstr ""
 
 #: ../installation/preparation.rst:33
-# 11c67833dd714e23b0c7cb9a41419076
+# 2d3a5843cd2f424cb21b3f25b2a73c08
 msgid "write access on ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)"
 msgstr ""
 
 #: ../installation/preparation.rst:38
-# 3df1316a7f674a3c87c6bab71c506925
+# 98e49d727f764955887f51ac9713019e
 msgid "Web server directory exposition"
 msgstr ""
 
 #: ../installation/preparation.rst:42
-# 59bf98803a7543038830473e8ba47e45
+# d2dd25b7ad05451fbe0165b0a15a6c73
 msgid "Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way."
 msgstr ""
 
 #: ../installation/preparation.rst:44
-# dc37e38b2bc9483fa5a562f161865a5b
+# 9b1b674be3a647d98b2f57a6ed48bbce
 msgid "It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!"
 msgstr ""
 
 #: ../installation/preparation.rst:48
-# 801d1e39a00249ce99b648ce5f6804e6
+# f1820086e909415b908e4add65b5f497
 msgid "Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution."
 msgstr ""
 
 #: ../installation/preparation.rst:50
-# 2ebd34fd8cdf4e3badbad0a5ec469c31
+# b0ab9b186fc94d86b1daffad27044967
 msgid "And that will certainly not be possible for many free hostings."
 msgstr ""
 
 #: ../installation/preparation.rst:52
-# 2b75c073cd7e4662abe846221eddd812
+# 08ad816de5ee4adba525f4baa6651f05
 msgid "Here is a virtual host configuration example, including the hide of `index.php`:"
 msgstr ""
 
 #: ../installation/preparation.rst:79
-# ffe3fced1a1248c39811039cf74116da
+# 9762bcc128b143faaf425436e579f358
 msgid "Nginx would be:"
 msgstr ""
 
 #: ../installation/unix.rst:4
-# 9b190b68b7994e08b4071651fd91015e
+# 9f4b4d67344347b48319bbf1a4fd4c9f
 msgid "Linux/Unix"
 msgstr ""
 
 #: ../installation/unix.rst:6
-# c3f2dded7d414581ae8356b6316a6ee3
+# ab54450b322446f1b15d70b19aa62e43
 msgid "Installing Galette on Linux implies you have an access to the terminal on the server and required ACLs on directories."
 msgstr ""
 
 #: ../installation/unix.rst:8
-# f825eb0ee89e45b796c31ced622f0aa4
+# cf2c5cfb8a9e476b850586cc24064bd6
 msgid "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 
 #: ../installation/unix.rst:15
-# fa6f25376d61437db44069b3e43d1a9f
+# b39e82f2deb54a62a0ca5399d06fed9e
 msgid "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with ``www-data:www-data``."
 msgstr ""
 
 #: ../installation/unix.rst:17
-# ccf8f49818994417bec42a6d311225b9
+# b6c5f3c4de3d45538411a3569bdd56ca
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr ""
 
 #: ../installation/unix.rst:25
-# c05c51688417471587db39e632edceee
+# 1221c47270f145a2ad1083393d2b21b3
 msgid "You will also have to authorize webserver to connect to the network, with a SELinux boolean:"
 msgstr ""
 
 #: ../installation/ftp.rst:4
-# 164d05bd80d84bbabd590a88392ecb02
+# ee5f4f9851304fba8aa64c12c51151cc
 msgid "FTP"
 msgstr ""
 
 #: ../installation/ftp.rst:8
-# 3d0f189789714f439598660523c3b8bd
+# af40a1e724b248c7b0c2e49e7eb45d18
 msgid "Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts."
 msgstr ""
 
 #: ../installation/ftp.rst:10
-# 95e3a14babd14e8db524c20efdf136de
+# 15656e9890974bab82d1bbab5c6dd054
 msgid "Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
 msgstr ""
 
 #: ../installation/ftp.rst:12
-# 3fe23028e11e4a9ebb140b2e032022e2
+# 6d1bf55770594f94bd14bf20ce681daf
 msgid "Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client."
 msgstr ""
 
 #: ../installation/ftp.rst:19
-# d969c56eb71d4345831252c70f321157
+# ae240d84f23d4b12a9b737e65a4e64eb
 msgid "Specific cases"
 msgstr ""
 
 #: ../installation/ftp.rst:22
-# be0623903cd14b8ca0f02b9595bf4757
+# 7445008504dc4ebfb8638ef38f67b770
 msgid "OVH"
 msgstr ""
 
 #: ../installation/ftp.rst:24
-# 8de4a950709e455fa1c9ae6d4613e2b1
+# e6dd982c1015477ba36925184a02bde9
 msgid "This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
 msgstr ""
 
 #: ../installation/ftp.rst:26
-# aad00390258f44e1a6dd2b960bf7e2d5
+# 87ae18444b054465a207483af877f279
 msgid "Additionnal informations are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 
 #: ../installation/ftp.rst:30
-# a60b387f545d4e9c8fff0ea509f94fb1
+# 633913c855bb4a08940e43acfb58a1c8
 msgid "Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:"
 msgstr ""
 
 #: ../installation/ftp.rst:37
-# 4297ab4699d14a288e793398c70dec5a
+# d30ac4b75c7849a79b3eb785b31e08d8
 msgid "Nginx"
 msgstr ""
 
 #: ../installation/ftp.rst:39
-# cd8cfb71683a4f45a6cb65ed9a1de3cf
+# 56b5670656a74d4bb2f73c68b68da6a1
 msgid "`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
 msgstr ""
 
 #: ../installation/ftp.rst:41
-# 5407508779f64027b788b8517ef4946b
+# 80c1ed87836f498080f9b01418820082
 msgid "So you have to convert restriction access files in Nginx configuration, as for example:"
 msgstr ""
 
 #: ../installation/windows.rst:4
-# b9a9621b57424638bf9596b5493629f7
+# fc40bf99a62c4b5cadbad95de556330f
 msgid "Windows"
 msgstr ""
 
 #: ../installation/windows.rst:6
-# 61ebebf7b3e34049b544fa763859883a
+# 9c9f2a3fb6d34104b5c6a0309ebe4c1f
 msgid "Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; other installation methods exist but are not listed here."
 msgstr ""
 
 #: ../installation/windows.rst:8
-# 4db4c9a31f274a509e72a4d027dc29eb
+# 3279c5d2762b4bbc8392332ba9952a17
 msgid "First of all, download XAMPP on your computer. Let's install it under ``C:\\xampp``."
 msgstr ""
 
 #: ../installation/windows.rst:14
-# 8a61560cd16644f48ee578e5b83ab6b7
+# 734eca04699a4e96acdbc8f75bd0ad55
 msgid "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), so you can start Apache and MySQL services."
 msgstr ""
 
 #: ../installation/windows.rst:20
-# 553a2b154d19471b85fa4d9a1ce7f937
+# e9d93503d1b94007ade0f1c1cbb09784
 msgid "Once those steps done, download galette and move it to ``C:\\wampp\\htdocs\\galette``, web application will be available from http://127.0.0.1/galette/. Just visit this URL so the installation process begin."
 msgstr ""
 
 #: ../installation/windows.rst:24
-# acaacc99a013455faf2483a883986eb0
+# d52a7bc7e8a8490fb3e95f51c51dfc3c
 msgid "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a \";\"), just uncomment them and restart XAMPP."
 msgstr ""
 
 #: ../installation/windows.rst:26
-# 61599c7740184b50a091603af773f58f
+# ab94aa4361a243beac2fef8307384074
 msgid "`openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``"
 msgstr ""
 

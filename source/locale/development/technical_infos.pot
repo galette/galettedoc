@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-10 23:57+0100\n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,162 +17,162 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../development/technical_infos.rst:7
-# 6ba32a3fe8464eabacb7f8bd5f86cb78
+# 72b6e61c9b9a445081276e583253d51b
 msgid "Technical informations"
 msgstr ""
 
 #: ../development/technical_infos.rst:10
-# 735987f9055f4a87ab6e314d300219a9
+# 34a1834d34634ac4a914f52b3da4a2ef
 msgid "Third party libs"
 msgstr ""
 
 #: ../development/technical_infos.rst:15
-# c32438c272e24e93b57bd1c56d5efecc
+# a75c3461c9864d98ac5ca656aac506b7
 msgid "Slim"
 msgstr ""
 
 #: ../development/technical_infos.rst:23
-# 9167624cbe644862ae207ebd6402cd37
+# 4f70a7913e644e8ebf5c3e131e289502
 msgid "*Required version:* `3.x`"
 msgstr ""
 
 #: ../development/technical_infos.rst:25
-# a150acf391094d5da95ac8ea12ecb0a8
+# 8368cafebb4948629de364e7298f5a90
 msgid "All URLs in Galette are handled with `Slim micro framework <https://www.slimframework.com/>`_."
 msgstr ""
 
 #: ../development/technical_infos.rst:27
-# aed9f80529714378b270ccc2ed1bac9c
+# 8a0ffd174e5d4351b326772202e39353
 msgid "Where we previousely use on `.php` file per page to display, all is now in a routing system named and parameted. This makes changes and enhancements easiest and flexible. `Slim documentation <https://www.slimframework.com/docs/v3>`_ is a good starting point to understand how it works."
 msgstr ""
 
 #: ../development/technical_infos.rst:32
-# 957d60039be043db96ba25c6f525c717
+# 1e916cf8ccce42b98882917faa26caa0
 msgid "Zend DB"
 msgstr ""
 
 #: ../development/technical_infos.rst:38
-# 5af657a8c3874d8d853fffd435c2d53e
+# 889047b52e9b49849df62d02b6568362
 msgid "*Required version:* `2.8.2` (see https://github.com/zendframework/zend-db/issues/322)"
 msgstr ""
 
 #: ../development/technical_infos.rst:40
-# 248544e8c1ea4a608d77561ab7258a28
+# 288e125f8d044013a67bdeb8c7939736
 msgid "`Zend Db library to manage databases <https://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_ is used to manage all databases queries."
 msgstr ""
 
 #: ../development/technical_infos.rst:42
-# cb8a691fd7e64e35af7c70106da659e3
+# 5a521baa202a4413a8ea690a47ce232b
 msgid "Even if the lib is compatible with several database systems; Galette is only compatible with:"
 msgstr ""
 
 #: ../development/technical_infos.rst:44
-# faf143086aac44e29f3849992a689f07
+# ef12b74645ec4402b6658c705ecdf073
 msgid "`MySQL <https://mysql.com/>`_ with InnoDB support,"
 msgstr ""
 
 #: ../development/technical_infos.rst:45
-# 92dae19314df48588914636c8b95b53e
+# c97ca47ebcae487a947501541227a2f6
 msgid "`PostgreSQL <https://www.postgresql.org/>`_ 9.1 minimum."
 msgstr ""
 
 #: ../development/technical_infos.rst:50
-# b6ae6b93752d429fbced33569df503cc
+# ea7836361ada49bdb519f59259c6d028
 msgid "Analog"
 msgstr ""
 
 #: ../development/technical_infos.rst:52
-# ac354ff0b7a74966971b9c325e85f869
+# c0515941f5ce42ea8ddabc60cc480ffc
 msgid "*Required version:* `1.x`"
 msgstr ""
 
 #: ../development/technical_infos.rst:54
-# 4508809f62c94f5685bc1448a534a9a1
+# 3b42a56a7b534d23ae6caa2be1d6fcb9
 msgid "`Analog <https://github.com/jbroadway/analog/>`_ is used to handle log files."
 msgstr ""
 
 #: ../development/technical_infos.rst:59
-# 3edf7b692d0b4743894d8ce61dc8ce1a
+# 9c67c740ed984cb1a5118ef730c8b2ae
 msgid "Smarty"
 msgstr ""
 
 #: ../development/technical_infos.rst:65
-# 3f83fc0d92764e75a2894f4e0256ecab
+# 770f11c8bedd46e4abf67caca7500e53
 msgid "*Required version:* `3.1.31`"
 msgstr ""
 
 #: ../development/technical_infos.rst:67
-# 669a2992805445878d8b266b72837316
+# 70dcadb942a543fdafa8f36a8c9633b9
 msgid "Page display is handled by `Smarty templating system <https://www.smarty.net/>`_. All pages are rendered with a HTML5 doctype."
 msgstr ""
 
 #: ../development/technical_infos.rst:72
-# 3d6f8d03c0af4acfbc3c9808a60f4823
+# bd280e38b0fd481ea30cb3bdec0ac572
 msgid "TCPDF"
 msgstr ""
 
 #: ../development/technical_infos.rst:78
-# 14d55351c95d4c02bacdeac0c964da56
+# 7b78255f9ca844bb9cf2657f27284b5b
 msgid "*Required version:* `6.x`"
 msgstr ""
 
 #: ../development/technical_infos.rst:80
-# 52118b37c8914c728685d451233f8a7e
+# 05cb0c33b07e491ba7d092fb5f73b939
 msgid "`TCPDF <https://www.tcpdf.org/>`_ is a PDF generation lib Used to produce all PDF from Galette."
 msgstr ""
 
 #: ../development/technical_infos.rst:85
-# 4168d0d821ea49baa3dd0cddfc3d1cc1
+# 949ddb4f60a24295bb3de7babfb70d94
 msgid "Interface utilisateur"
 msgstr ""
 
 #: ../development/technical_infos.rst:91
-# dbca9dfad8014c02b6c9386e7761feb3
+# ac1f4c8c31d340f492d9bade2127ae98
 msgid "*Required versions:* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)"
 msgstr ""
 
 #: ../development/technical_infos.rst:93
-# 68ba5655a88448359b41c86308f94a7a
+# fb3b6950e202406ba8ea4e7bbd836c5f
 msgid "To make user interface a bit dynamic and improve user experience, we choose to use a Javascript framework. We rely on `JQuery <https://jquery.com>`_, among others:"
 msgstr ""
 
 #: ../development/technical_infos.rst:95
-# cbb4f121bd9241b89eee6b7c8c8febe6
+# a6ffb920ff05436d91058be29d617027
 msgid "`JQuery UI <https://ui.jquery.com/>`_ to handle tabs, date selection, modals, ..."
 msgstr ""
 
 #: ../development/technical_infos.rst:96
-# 7edf67e6a84f47b7a43777cc947f7b2e
+# b69047380fdd4dccabe0f9164920f120
 msgid "`markItUp <https://markitup.jaysalvat.com>`_ used as HTML editor in mailings,"
 msgstr ""
 
 #: ../development/technical_infos.rst:97
-# f58774deaefc467fa197d3b47b74f96f
+# 108aa769af1a409f8d12ba88238eb3c7
 msgid "`Selectize.js <https://selectize.github.io/selectize.js/>`_ for dropdowns to look better and searchable."
 msgstr ""
 
 #: ../development/technical_infos.rst:102
-# be245e8347db4476a3854a204ee0db64
+# 9df318f4e86f45458ab7e426a06b10b3
 msgid "Sending mails"
 msgstr ""
 
 #: ../development/technical_infos.rst:108
-# 26073f991a724872b25074671543160d
+# b8869494789f46668f15a9877df898e2
 msgid "*Required version:* `*`"
 msgstr ""
 
 #: ../development/technical_infos.rst:110
-# 18986482d02d41c1892e8741fafb5174
+# 863d164c6c6146af9ea7c25b7b50a3ac
 msgid "Sending mails ins Galette is done with `phpMailer library <https://github.com/PHPMailer/PHPMailer>`_."
 msgstr ""
 
 #: ../development/technical_infos.rst:115
-# a1e57ed7a72f4b1199deacf0a7fbd47a
+# 0a748ea87a4547e2b180e1298b5bece4
 msgid "Unit tests"
 msgstr ""
 
 #: ../development/technical_infos.rst:121
-# 0b853633c13245558bb71a4494ebcbb6
+# c3f61dc05cfd4bceb47575dc1ba6248a
 msgid "Galette uses `atoum testing framework <http://atoum.org>`_"
 msgstr ""
 
