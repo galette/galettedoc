@@ -1,74 +1,97 @@
-************************
-Récupération des sources
-************************
+***************
+Galette sources
+***************
 
-Le projet Galette utilise `Git <http://fr.wikipedia.org/wiki/Git>`_ comme gestionnaire de sources, après avoir longtemps utilisé Subversion.
+.. note::
 
-Git correspond d'avantage aujourd'hui à mes attentes pour un tel système, et offre une souplesse parfois fort utile.
+   If you are not familiar with GIT, there are plenty of documentations over the internet.
 
-Il est possible de `parcourir le code source en utilisant l'interface web <http://git.tuxfamily.org/galette/galette>`_. Pour cloner le dépôt, utilisez :
+   Some links of interest:
 
-.. code-block:: bash
+   * http://www-cs-students.stanford.edu/~blynn/gitmagic/
+   * https://schacon.github.com/git/gittutorial.html
+   * https://git-scm.com/book/fr/v2
+   * https://ndpsoftware.com/git-cheatsheet.html explaining the relations beetween git commands and the existing levels in the structure of a repository
+
+All Galette sources are stored in their own `Git <https://en.wikipedia.org/wiki/Git>`_ repository hosted by `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `Galette organization is also available on github <https://github.com/galette/>`_, in which all repositories are mirrored.
+
+All GIT repositories follow the :ref:`adopted development model <devmodel>`, therefore you will find two branches on each repository:
+
+* ``master``: this is always the latest stable release,
+* ``develop``: the development version, may be unstable.
+
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Project               | Tuxfamily                                                      | Github                                        |
+|                       |                                                                |                                               |
++=======================+================================================================+===============================================+
+| Galette core          | | `git.tuxfamily.org/gitroot/galette/galette.git`              | https://github.com/galette/galette            |
+|                       | | https://git.tuxfamily.org/galette/galette                    |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Documentation         | | `git.tuxfamily.org/gitroot/galette/galettedoc.git`           | https://github.com/galette/documentation      |
+|                       | | https://git.tuxfamily.org/galette/galettedoc                 |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Auto plugin           | | `git.tuxfamily.org/gitroot/galette/plugin-auto.git`          | https://github.com/galette/plugin-auto        |
+|                       | | https://git.tuxfamily.org/galette/plugin-auto                |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Events plugin         | | `git.tuxfamily.org/gitroot/galette/plugin-events.git`        | https://github.com/galette/plugin-events      |
+|                       | | https://git.tuxfamily.org/galette/plugin-evnts               |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Paypal plugin         | | `git.tuxfamily.org/gitroot/galette/plugin-paypal.git`        | https://github.com/galette/plugin-paypal      |
+|                       | | https://git.tuxfamily.org/galette/plugin-paypal              |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Objectslend plugin    | | `git.tuxfamily.org/gitroot/galette/plugin-objectslend.git`   | https://github.com/galette/plugin-objectslend |
+|                       | | https://git.tuxfamily.org/galette/plugin-objectslend         |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Maps plugin           | | `git.tuxfamily.org/gitroot/galette/plugin-maps.git`          | https://github.com/galette/plugin-maps        |
+|                       | | https://git.tuxfamily.org/galette/plugin-maps                |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+
+To clone one repository, use the following along with your Tuxfamily credentials:
+
+::
+
+   $ git clone ssh://YOURUSER@git.tuxfamily.org/gitroot/galette/galette.git
+
+Or as anonymous user:
+
+::
 
    $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
 
-Le dossier ``galette.git`` contiendra votre copie de travail de Galette, prête à être utilisée (même résultat qu'un `svn checkout`). Un bref mot sur les différents niveaux exitants dans Git : sous SVN, il y a la copie de travail, et le dépôt distant. Sous Git, c'est un peu plus compliqué, et de nombreux tutoriels/livres spécialisés traitent cet aspect des choses. Toutefois, voici une page qui `vous expliquera clairement les relations entre les différents niveaux d'un dépôt Git <http://ndpsoftware.com/git-cheatsheet.html>`_.
-
-Quelques liens qui peuvent être utiles :
-
-* http://www-cs-students.stanford.edu/~blynn/gitmagic/
-* http://schacon.github.com/git/gittutorial.html
-* http://ndpsoftware.com/git-cheatsheet.html
-* http://progit.org/book/
-
-Les bibliothèques externes dont dépend Galette pour fonctionner ne sont plus disponibles sur le dépôt, référez-vous au paragraphe :ref:`bibliothèques tierces <deps>`.
-
-Une fois le dépôt cloné et les bibliothèques externes installées, vous vous trouvez sur la dernière version stable. Pour récupérer la version de développement, reportez-vous au « :doc:`guide du contributeur <contributor>` » ;-)
-
-Si vous souhaitez juste installer la version de développement de Galette pour tester, vous pouvez maintenant passer à :ref:`la phase d'installation de Galette <installation>`, félicitations ;-)
+The ``galette`` directory will then contain a working copy of Galette's source code.
 
 .. _deps:
 
-Bibliothèques tierces
----------------------
+Third party librarires
+----------------------
 
-Pour fonctionner, Galette a besoin d'un certain nombre de bibliothèques externes.
+:doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, they are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:
 
-Initialement, ces bibliothèques étaient dans le dépôt de Galette, mais cela prenait trop de place, et était trop compliqué à gérer. Il a été décidé de les placer dans une arcive à part, qu'il fallait récupérer et décompresser dans le dossier ``includes`` ; mais tout ceci est maintenant déprécié.
-
-Désormais, pour installer les bibliothèques tierces dans Galette, il faut utiliser `composer <http://getcomposer.org>`_ :
-
-.. code-block:: bash
+::
 
    $ cd galette/galette
    $ composer install -o
 
-L'utilisation de composer est pratique pour gérer les bibliothèques tierces durant la phase de développement, c'est également ce qui est utilisé pour générer les archives (nightly et releases) ; après un brin de nettoyage.
-
-Vous pouvez également installer ces bilbiothèques ailleurs, ou utiliser une version qui serait mise à disposition pour votre système ; dans ce cas, vous devrez simplement :ref:`configurer les chemins <configpaths>`.
+It is also possible to use these libraries if they are provided by another way, on your system side for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`.
 
 .. _gitlinux:
 
-Sous GNU/Linux
---------------
+GNU/Linux
+---------
 
-L'ensemble des distributions linux actuelles fournit certainement les commandes git standard.
+Standard GIT commands are provided by default in the package manager of most GNU/Linux distributions.
 
-Quelques interfaces graphiques :
+Some graphical interfaces:
 
-* Git est fourni avec une interface graphique que vous pouvez lancer avec la commande `git gui`,
-* `gitg` est une interface graphique qui vous permet de consulter l'historique du dépôt, d'effectuer des commits (et même des commits partiels, vous pourrez choisir les lignes que vous souhaitez commiter ou non) ; il reste cependant moins complet que git-gui.
+* GIT comes with its own UI; just run ``git gui``,
+* ``gitg`` is a Gnome compliant alternative UI.
 
 .. _gitwindows:
 
-Sous windows
-------------
+Windows
+-------
 
-Git est parfaitement supporté sous Windows également ; en utilisant l'un des outils suivants :
+GIT is supported on windows using one of the following solutions:
 
-* `TortoiseGIT <http://code.google.com/p/tortoisegit/>`_, très similaire à TortoiseSVN pour ceux qui connaissent,
-* `Git Extensions <http://code.google.com/p/gitextensions/>`_
-
-Il semblerait que Git Extensions fasse très bien ce qu'on attend de lui... Lors de son installation, il vous sera proposé l'installation de msysgit, et de kdiff3. Je vous conseille vivement l'installation de ces deux composants. Le premier est Git pour windows, le second un outil qui permet de faire des diff et de résourde des conflits.
-
-Bien que nous soyons parfaitement conscients que les personnes sous windows sont très peu habituées à voir une console, les commandes Git requises sont valables sur toutes les plate-formes ; ce sont donc elles qui seront documentées (par ailleurs, git-flow n'est intégré à aucune des interfaces graphiques que j'ai vues à ce jour).
+* `TortoiseGIT <https://tortoisegit.org/>`_,
+* `Git Extensions <https://gitextensions.github.io/>`_

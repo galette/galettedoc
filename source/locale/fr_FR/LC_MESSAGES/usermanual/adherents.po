@@ -1,0 +1,639 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-11-13 08:12+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../usermanual/adherents.rst:5
+msgid "Members management"
+msgstr "Gestion des adhérents"
+
+#: ../usermanual/adherents.rst:7
+msgid ""
+"One of the first contact with Galette interface after the installation, "
+"login and dashboard will be members list, main part of the system. Of "
+"course, this list will be empty for now :)"
+msgstr ""
+"L'un des premiers contacts que vous aurez avec l'interface de Galette après "
+"l'installation, l'authentification et le tableau de bord sera la liste des "
+"adhérents, la partie principale du système. Bien entendu, la liste sera vide"
+" pour le moment :)"
+
+#: ../usermanual/adherents.rst:11
+msgid ""
+"You can use the \"Generate fake data\" from the \"Configuration\" menu to "
+"add demonstration data in your instance."
+msgstr ""
+"Vous pouvez utiliser la « Génération des données factices » depuis la menu «"
+" Configuration » pour ajouter des données d'exemple à votre instance."
+
+#: ../usermanual/adherents.rst:13
+msgid ""
+"Let's start by creating a new member. As everywhere in Galette, mandatory "
+"fields are displayed with a red border; all other are optionnal. Different "
+"parts of the page (`Identity`, `Contact informations`, `Galette related "
+"data` and maybe `Dynamic fields`) can be retracted clicking on their "
+"respective title."
+msgstr ""
+"Commençons par créer un nouvel adhérent. Comme partout dans Galette, les "
+"champs requis sont affichés avec une bordure rouge ; tous les autres sont "
+"optionnels. Les différentes parties de la page (`Identité`, `Informations de"
+" contact`, `Informations relatives à Galette` et éventuellement `Champs "
+"dynamiques`) peuvent être rétractées en cliquant sur leur titre respectif."
+
+#: ../usermanual/adherents.rst:25
+msgid "On date fields, you can access a calendar:"
+msgstr "Sur les champs de date, vous pourrez accéder à un calendrier :"
+
+#: ../usermanual/adherents.rst:31
+msgid ""
+"When storing a member (or any other object in Galette), page will be "
+"reloaded with all informations you've entered (excepting passwords)."
+msgstr ""
+"Lors d l'enregistrement d'un adhérent (ou de tout autre objet dans Galette),"
+" la page sera rechargées avec toutes les informations que vous aurez saisies"
+" (à l'exception des mots de passe)."
+
+#: ../usermanual/adherents.rst:34
+msgid "Members list"
+msgstr "Liste des adhérents"
+
+#: ../usermanual/adherents.rst:36
+msgid "Members list allows you to:"
+msgstr "La liste des adhérents vous permet de :"
+
+#: ../usermanual/adherents.rst:38
+msgid "filter and order members,"
+msgstr "filtrer et ordonner les adhérents,"
+
+#: ../usermanual/adherents.rst:39
+msgid "display members card,"
+msgstr "afficher les fiches membres,"
+
+#: ../usermanual/adherents.rst:40
+msgid "removals,"
+msgstr "supprimer,"
+
+#: ../usermanual/adherents.rst:41
+msgid "send mailings,"
+msgstr "envoyer des emailings,"
+
+#: ../usermanual/adherents.rst:42
+msgid "generate PDF labels,"
+msgstr "générer des étiquettes PDF,"
+
+#: ../usermanual/adherents.rst:43
+msgid "generate PDF emargement lists,"
+msgstr "générer des listes d'émargement PDF,"
+
+#: ../usermanual/adherents.rst:44
+msgid "generate PDF members cards,"
+msgstr "générer des cartes de membres, "
+
+#: ../usermanual/adherents.rst:45
+msgid "CSV exports,"
+msgstr "exporter en CSV,"
+
+#: ../usermanual/adherents.rst:46
+msgid "mass changes."
+msgstr "modifications en masse."
+
+#: ../usermanual/adherents.rst:48
+msgid ""
+"Each possible action per member is grouped at the end of the line, actions "
+"designed to be applied on a selection are at the bottom of the list. Plugins"
+" may add entries in both cases."
+msgstr ""
+"Chaque action possible sur un adhérent sont regroupées en fin de ligne, les "
+"actions prévues pour être appliquées sur une sélection se trouvent en bas de"
+" la liste. Les pluginns peuvent ajouter des entrées dans les deux cas."
+
+#: ../usermanual/adherents.rst:51
+msgid "Filter and select members"
+msgstr "Filtrage et sélection d'adhérents"
+
+#: ../usermanual/adherents.rst:53
+msgid ""
+"Filtering members list is documented in :ref:`search section "
+"<search_galette>`. All possibilities can be used with actions on selection."
+msgstr ""
+"Le filtrage de la liste des adhérents est documenté dans :ref:`la section "
+"recherche <search_galette>`. Toutes les possibilités peuvent être utilisées "
+"conjointement avec les actions sur la sélection."
+
+#: ../usermanual/adherents.rst:56
+msgid "Mass changes"
+msgstr "Modifications en masse"
+
+#: ../usermanual/adherents.rst:60
+msgid "Members selected in list can be edited (partially) at once."
+msgstr ""
+"Les adhérents sélectionnés dans la liste peuvent re (partiellement) modifiés"
+" en une seule fois."
+
+#: ../usermanual/adherents.rst:67
+msgid ""
+"Only fields with a checked checkbox at the beginning of the line will be "
+"changed. A summary will be displayed."
+msgstr ""
+"Seuls les champs dont la case en début de ligne  est cochée  seront "
+"modifiés. Un résumé sera affiché."
+
+#: ../usermanual/adherents.rst:75
+msgid "Ordering"
+msgstr "Tri"
+
+#: ../usermanual/adherents.rst:76
+msgid "It is possible to order members list on following fields:"
+msgstr "Il est possible de trier les adhérents sur les champs suivants :"
+
+#: ../usermanual/adherents.rst:78
+msgid "name,"
+msgstr "nom,"
+
+#: ../usermanual/adherents.rst:79
+msgid "nickname,"
+msgstr "pseudo,"
+
+#: ../usermanual/adherents.rst:80
+msgid "status,"
+msgstr "statut,"
+
+#: ../usermanual/adherents.rst:81
+msgid "contribution status,"
+msgstr "statut de contribution,"
+
+#: ../usermanual/adherents.rst:82
+msgid "modification date."
+msgstr "date de modification,"
+
+#: ../usermanual/adherents.rst:84
+msgid ""
+"Most of the times, the result is transparent. Just note ordering on `status`"
+" will use status priority and ordering on `contribution status` will use "
+"creation date, contribution exemption and due date;"
+msgstr ""
+"La plupart du temps, les résultats sont transparents. Notez simplement que "
+"le tri sur le `statut` utilisera la proiorité du statut et le tri sur le "
+"`statut de contribution` utilisera la date de création, l'exemption de "
+"contribution et la date d'échéance ;"
+
+#: ../usermanual/adherents.rst:87
+msgid "Configure CSV fields"
+msgstr "Configuration des champs CSV"
+
+#: ../usermanual/adherents.rst:89
+msgid ""
+"Per default, CSV export for a members selection will provide same fields as "
+"the ones that are displayed on screen. It is possible to change this "
+"behavior specifiying yourself which fields must be exported in the "
+"``galette/config/local_export_fields.inc.php`` file. If for example you only"
+" want identifier, first and last member names, the content of the file will "
+"be:"
+msgstr ""
+"Par défaut, les exports CSV des adhérents fourniront les champs qui sont "
+"affichés à l'écran. Il est possible de modifier ce comportement en "
+"spécifiant vous même quels champs doivent être exportés dans le fichier "
+"``galette/config/local_export_fields.inc.php``. Si par exemple vous "
+"souhaitez juste l'identifiant, nom et prénom de l'adhérent, le contenu sera "
+":"
+
+#: ../usermanual/adherents.rst:101
+msgid "E-Mailing"
+msgstr "E-Mailing"
+
+#: ../usermanual/adherents.rst:103
+msgid "**Mailings in Galette are designed to work from the members list.**"
+msgstr ""
+"**Les mailings dans Galette sont prévus pour fonctionner depuis la liste des"
+" adhérents.**"
+
+#: ../usermanual/adherents.rst:105
+msgid ""
+"Direct mailing creation will work without problems, but members selection is"
+" harder."
+msgstr ""
+"La création directe de mailings fonctionnera, mais la sélection des adhérent"
+" sera moins pratique."
+
+#: ../usermanual/adherents.rst:107
+msgid ""
+"From Galette, you can send mailings to a selection of members. Each sent "
+"mailing is stored in order to be reused, so you can select a stored mailing "
+"to be used as a template, retrieving selected members list, mailing subject "
+"and contents."
+msgstr ""
+"Depuis Galette, vous pouvez envoyer des emailings à une sélection "
+"d'adhérents. Chaque mailing envoyé sera enregistré pour être réutilisé, vous"
+" pouvez donc utiliser un emailing déjà envoyé comme modèle, récupérant la "
+"liste des adhérents, le sujet ainsi que le contenu. "
+
+#: ../usermanual/adherents.rst:109
+msgid ""
+"To send a new mailing, select members from the list and then use the `Send "
+"an email` button at the bottom of the list. If some of selected members does"
+" not have an email address, Galette will propose you to print corresponding "
+"labels."
+msgstr ""
+"Pour envoyer un nouvel emailing, sélectionnez les adhérents dans la liste et"
+" utilisez le bouton `Envoyer un mailing` en bas de la liste. Si certains "
+"adhérents ne possèdent pas d'adresse de courriel, Galette vous proposera "
+"d'imprimer les étiquettes correspondantes."
+
+#: ../usermanual/adherents.rst:116
+msgid ""
+"Selecting members in the list must be done on one page only. Filtering "
+"features, as well as the possibility to display all members will be useful "
+";)"
+msgstr ""
+"La sélection des adhérents de la liste doit être effectuée sur une seule "
+"page uniquement. Les fonctionnalités de recherche ainsi que la possibilité "
+"d'afficher tous les membres seront utiles ;)"
+
+#: ../usermanual/adherents.rst:120
+msgid "You can choose a sender for each mailing:"
+msgstr "Vous pouvez choisir un expéditeur pour chaque emailing :"
+
+#: ../usermanual/adherents.rst:122
+msgid ""
+"**from Galette preferences** (default value): this will use informations "
+"stored in preferences,"
+msgstr ""
+"**depuis les préférences de galette** (par défaut) : utilisera les "
+"informations enregistrées dans les préférences,"
+
+#: ../usermanual/adherents.rst:123
+msgid ""
+"**current logged-in user**: will use the name and the email of the current "
+"logged-in user (not available for super admin),"
+msgstr ""
+"**utilisateur courant** : utilisera le nom et l'adresse de courriel de "
+"l'utilisateur actuellement connecté (non disponible pour le super "
+"administrateur),"
+
+#: ../usermanual/adherents.rst:124
+msgid "**other**: you can set any name and email address you want."
+msgstr ""
+"**autre** : vous pouvez indiquer les nom et adresse de courriel que vous "
+"souhaitez."
+
+#: ../usermanual/adherents.rst:131
+msgid ""
+"Once the subject has been filled, you can work on the contents. You can send"
+" email in text only, or in HTML (keep in mind sending HTML messages by mail "
+"is often not the way to go). A simple HTML WYSIWYG editor is provided."
+msgstr ""
+"Une fois le sujet renseigné, vous pouvez travailler sur le contenu. Vous "
+"pouvez envoyer des courriels en texte seul, ou en HTML (gardez à l'esprit "
+"que l'envoi de courriels HTML n'est souvent pas la bonne manière de "
+"procéder). Un éditeur WYSIWYG est fourni."
+
+#: ../usermanual/adherents.rst:133
+msgid ""
+"Once the HTML editor is enabled, the checkbox to handle HTML tags is "
+"automatically checked, remember to check the box if you do not use the "
+"editor but want to send HTML!"
+msgstr ""
+"Une fois l'éditeur HTML activé, la case pour gérer le HTML est "
+"automatiquement cochée., pensez à cocher cette case si vous n'utilisez pas "
+"l'éditeur mais que vous souhaitez utiliser du HTML !"
+
+#: ../usermanual/adherents.rst:135
+msgid ""
+"Even if Galette is able to send HTML emails, this is discouraged. Messages "
+"lenght will be way larger (for almost nothing), and some (like me!) read "
+"their emails as text only. That is why Galette will **always** provide a "
+"text version of HTML emails."
+msgstr ""
+"Bien que Galette soit en mesure d'envoyer des courriels HTML, c'est "
+"déconseillé. La taille des messages n'en sera que plus grande (pour pas "
+"grand chose), et certains (comme moi !) lisent leurs courriels en texte "
+"seul. C'est pourquoi Galette enverra **toujours** une version texte des "
+"courriels HTML."
+
+#: ../usermanual/adherents.rst:137
+msgid ""
+"It is also possible to add attachements, just click on the `Browse` button "
+"in that attachements section. If your browser is compatible, you can add "
+"several files at once (using `Shift` and `Ctrl` keys). All attachements are "
+"stored on disk, under a directory named with the mailing identifier "
+"(automatically defined from database)."
+msgstr ""
+"Il est également possible d'ajouter des pièces jointes, cliquez juste sur le"
+" bouton `Parcourir` dans la section pièces jointes. Si votre navigateur le "
+"permet, vous pouvez ajouter plusieurs fichiers en une seule fois (en "
+"utilisant les touches `Shift` et `Ctrl`). Toutes les pièces jointes sont "
+"enregistrées sur le disque, dans un dossier nommé avec l'identifiant du "
+"mailing (déterminé automatiquement par la base de données)."
+
+#: ../usermanual/adherents.rst:140
+msgid "`Preview` button let you preview your message before sending it."
+msgstr ""
+"Le bouton `Prévisualiser` vous permet de vérifier le message avant de "
+"l'envoyer."
+
+#: ../usermanual/adherents.rst:147
+msgid ""
+"Any started emailings will be stored in your session to be retrieved in the "
+"future. An icon will be displayed in pages titles when a mailing is progress"
+" and will provide a link to go to it."
+msgstr ""
+"Tout emailing commencé est stocké en session pour être retrouvé par la "
+"suite. Une icône sera affichée dans les titres des pages dès qu'un emailing "
+"est en cours et fourni un lien pour y accéder."
+
+#: ../usermanual/adherents.rst:149
+msgid ""
+"If you want, you can cancel this mailing using the `Cancel mailing` button, "
+"it will be deleted from your session. If you want to store it for a longer "
+"time, you can add the `Save` button. It will then be stored in the mailings "
+"list, and you will be able to grab it later."
+msgstr ""
+"Si vous souhaitez annuler un emailing, utilisez le bouton `Annuler le "
+"mailing`, il sera supprimé de votre session. Si vous souhaitez l'enregistrer"
+" pour plus tard, utilisez le bouton `Enregistrer`. Il sera alors enregistré "
+"dans la liste des mailings et vous pourrez le récupérer plus tard."
+
+#: ../usermanual/adherents.rst:152
+msgid "Mailings history"
+msgstr "Historique des emailings"
+
+#: ../usermanual/adherents.rst:154
+msgid ""
+"When you start a mailing, it is stored into your session. Session ends when "
+"users log out, or on a server defined timeout. Mailing history stores the "
+"mailing in the database, this ensure it will always be available in the "
+"future."
+msgstr ""
+"Lorsque vous commencez un mailing, il est enregistré dans votre session. La "
+"session se termine lorsque l'utilisateur se déconnecte, ou en fonction du "
+"paramétrage du serveur. L'historique des mailings stocke en base de données,"
+" ce qui vous assure que ce sera toujours disponible par la suite."
+
+#: ../usermanual/adherents.rst:156
+msgid ""
+"Every sent mailing is stored into the database, and can be used as a "
+"template to write a new one. In this case, a new mailing will be created "
+"using informations from the history, and the original one will be kept as "
+"is."
+msgstr ""
+"Chaque emailing envoyé est stocké dans la base de données, et peut être "
+"utilisé comme modèle pour en créer un nouveau. Dans ce cas, un nouvel "
+"emailing sera créé en utilisant les informations de l'historique, et les "
+"originaux conservés tels quels."
+
+#: ../usermanual/adherents.rst:158
+msgid ""
+"Mailings can be stored before they are sent. In this case, it is possible to"
+" continue it later. When you use history on a draft mailing, original entry "
+"will be replaced on sending."
+msgstr ""
+"Les emailings peuvent être enregistrés en base avant leur envoi. Dans ce "
+"cas, il est possible de les reprendre par la suite. Lorsque vous utilisez "
+"l'historique avec un emailing brouillon, l'entrée originale sera remplacée "
+"lors de l'envoi."
+
+#: ../usermanual/adherents.rst:160
+msgid ""
+"When you use an existing history entry, here are the informations that will "
+"be used:"
+msgstr ""
+"Lorsque vous utilisez une entrée de l'historique, voici les informations qui"
+" seront utilisées :"
+
+#: ../usermanual/adherents.rst:162
+msgid "recipients,"
+msgstr "destinataires,"
+
+#: ../usermanual/adherents.rst:163
+msgid "attachements,"
+msgstr "pièces jointes,"
+
+#: ../usermanual/adherents.rst:164
+msgid "subject,"
+msgstr "sujet,"
+
+#: ../usermanual/adherents.rst:165
+msgid "message,"
+msgstr "message,"
+
+#: ../usermanual/adherents.rst:166
+msgid "html/text flag."
+msgstr "drapeau html/texte,"
+
+#: ../usermanual/adherents.rst:169
+msgid "CSV imports"
+msgstr "Imports CSV"
+
+#: ../usermanual/adherents.rst:171
+msgid ""
+"It is possible to import member data from a predefined model. A default "
+"model is provided, but you can configure it to suits your needs, using the "
+"`Imports` menu entry."
+msgstr ""
+"Il est possible d'importer des adhérents à partir d'un modèle prédéfini. Un "
+"modèle par défaut est fourni, mais vous pouvez l'adapter à vos besoins, en "
+"utilisant l'entrée de menu `Imports`."
+
+#: ../usermanual/adherents.rst:174
+msgid "Model"
+msgstr "Modèle"
+
+#: ../usermanual/adherents.rst:176
+msgid ""
+"Import model defines fields and their order in a CSV file. When importing, "
+"current model will be used to check your CSV file intergity."
+msgstr ""
+"Le modèle d'import définit des champs et leur ordre au sein d'un fichier "
+"CSV. Lors de l'import, le modèle courant sera utilisé pour vérifier "
+"l'intégrité de votre fichier CSV."
+
+#: ../usermanual/adherents.rst:178
+msgid "To configure the model, click on the `Configure` button from the UI."
+msgstr ""
+"Pour configurer le modèle, cliquez sur le bouton `Configurer` depuis "
+"l'interface."
+
+#: ../usermanual/adherents.rst:185
+msgid ""
+"If proposed model is not ok for you, click on `Edit model` and choose your "
+"fields:"
+msgstr ""
+"Si le modèle proposé ne vous convient pas, cliquez sur `Modifier le modèle` "
+"et choisissez vos champs :"
+
+#: ../usermanual/adherents.rst:192
+msgid ""
+"Once you have selected your fields, click on the `Store new model` button."
+msgstr ""
+"Une fois vos champs sélectionnés, cliquez sur le bouton `Enregistrer un "
+"nouveau modèle`."
+
+#: ../usermanual/adherents.rst:194
+msgid ""
+"When in the current model tab, you can download an empty model from the "
+"`Generate an empty CSV file` button. Of course, you can change model if you "
+"want, or remove it to get the default model back."
+msgstr ""
+"Depuis l'onglet modèle courant, vous pouvez télécharger un modèle vide avec "
+"le bouton `Générer un fichier CSV vide`. Bien sûr, vous pouvez changer le "
+"modèle si vous le souhaitez, ou le supprimer pour retourner au modèle par "
+"défaut."
+
+#: ../usermanual/adherents.rst:197
+msgid "Import"
+msgstr "Import"
+
+#: ../usermanual/adherents.rst:199
+msgid ""
+"Once you have retrieved and fill the empty file, you have to send it using "
+"the form `Send a new file`. At this step, Galette will check your file "
+"extension is ``csv`` (or ``txt``) and it size does not exceed maximum upload"
+" file size (2Mio per default in PHP)."
+msgstr ""
+"Une fois le fichier vide récupéré et rempli, vous devez l'envoyer en "
+"utilisant le formulaire `Envoyer un nouveau fichier`. Durant cette étape, "
+"Galette vérifiera que l'extension de votre fichier est ``csv`` (ou ``txt``) "
+"et que sa taille n'excède pas la taille maximale d'envoi autorisée (2Mio par"
+" défaut côté PHP)."
+
+#: ../usermanual/adherents.rst:203
+msgid ""
+"If you want to import a huge file, you can put it from your FTP client in "
+"the ``galette/data/imports`` directory, or split it into several smaller "
+"files you can import one by one."
+msgstr ""
+"Si vous souhaitez importer un fichier volumineux, vous pouvez l'envoyer avec"
+" votre client FTP dans le dossier ``galette/data/imports``, ou le scinder en"
+" fichiers plus petits que vous pourrez importer un par un."
+
+#: ../usermanual/adherents.rst:205
+msgid ""
+"Sent files are listed in the `Existing files` section. You can show, remove "
+"or import it:"
+msgstr ""
+"Les fichiers envoyés sont listés dans la section `Fichiers existants`. Vous "
+"pouvez les consulter, les supprimer ou les importer :"
+
+#: ../usermanual/adherents.rst:212
+msgid ""
+"The `dry run` checkbox (checked per default) is designed to test your file "
+"data are valid (mandatory fields filled, data formatting is correct, ...) "
+"without storing anything in the database."
+msgstr ""
+"La case `galop d'essai` (cochée par défaut) est prévue pour tester que les "
+"données de votre fichier sont valides (présence des champs requis, formatage"
+" correct des données, ...) sans enregistrer quoi que ce soit dans votre base"
+" de données."
+
+#: ../usermanual/adherents.rst:214
+msgid ""
+"When you import a CSV file, if one line is incorrect, previous ones may be "
+"stored in the database already; so it is advised to use the dry-run before "
+"to get error fixed."
+msgstr ""
+"Lorsque vous importez un fichier CSV, si une ligne est incorrecte, les "
+"précédentes pourraient être enregistrées en base déjà ; il est fortement "
+"conseillé d'utiliser le galop d'essai auparavant pour corriger les erreurs."
+
+#: ../usermanual/adherents.rst:216
+msgid ""
+"You will have error messages than something went wrong (in dry-run mode or "
+"not):"
+msgstr ""
+"Des messages d'erreurs seront affichés si quelque chose tourne mal (en galop"
+" d'essai ou pas) :"
+
+#: ../usermanual/adherents.rst:220
+msgid ""
+"You may see mandatory missing fields even if import is ok. This may happen "
+"when all the fields you set as required in Galette configuration are not "
+"listed in your import model."
+msgstr ""
+"Vous pourrez voir des champs requis manquants même si l'import est ok. Cela "
+"peut arriver si tous les champs marqués comme requis dans Galette ne sont "
+"pas listés dans votre modèle d'import."
+
+#: ../usermanual/adherents.rst:225
+msgid "Links beetween members"
+msgstr "Lien entre fiches adhérent"
+
+#: ../usermanual/adherents.rst:229
+msgid ""
+"You can link several members to a \"parent\" one. This may be used to store "
+"families for exemple, or members of a same compagny. You can access children"
+" members from the parent, and parent from the children."
+msgstr ""
+"Vous pouvez attacher plusieurs adhérents à un « parent ». Cela peut être "
+"utilisé pour gérer des familles par exemple, ou des membres d'une même "
+"société. Vous pouvez accéder aux fiches « enfants » depuis le parent, et du "
+"parent depuis les enfants."
+
+#: ../usermanual/adherents.rst:231
+msgid ""
+"You can add as many child as you want for a member, but a child cannot "
+"become a parent."
+msgstr ""
+"Vous pouvez ajouter autant d'enfants que vous le souhaitez pour un adhérent,"
+" mais un enfant ne peut devnir parent lui même."
+
+#: ../usermanual/adherents.rst:233
+msgid ""
+"The other interesting point of this system is you can retrieve some "
+"informations from the parent when sending mailings or labels. In the "
+"children members, email and postal addresses automatically become optionnal,"
+" whatever the configuration says. If any of those informations is missing, "
+"it will be retrieved from the parent."
+msgstr ""
+"L'autre point intéressant de ce système est de pouvoir récupérer certaines "
+"informations depuis le parent lors de l'envoi de mailings ou d'étiquettes. "
+"Pour les enfants, l'adresse de courriel et l'adresse postale deviennent "
+"optionnelles, quoi qu'en dise la configuration. Si l'une de ces informations"
+" est manquante, elle sera récupérée depuis son parent."
+
+#: ../usermanual/adherents.rst:235
+msgid ""
+"Members without email adresses cannot use the \"retrieve password\" feature."
+" This does not affect the unicity email constraint in the database."
+msgstr ""
+"Les adhérents sans adresse courriel ne peuvent utiliser la fonctionnalité « "
+"Mot de passe perdu ». Cela n'affecte pas l'unicité des courriels en base."
+
+#: ../usermanual/adherents.rst:238
+msgid "Impersonnating"
+msgstr "Prise d'identité"
+
+#: ../usermanual/adherents.rst:242
+msgid ""
+"Some issues may be related to a particular account, because of its ACLs, "
+"groups, ... In this case, it is unfortuntely frequent to see some "
+"credentials sent by insecure emails; which should really be avoid."
+msgstr ""
+"Certains problèmes peuvent être liés à un compte spécifique, pour des "
+"raisons de droits, d'appartenance à des groupes, ... Dans ce cas Il est "
+"malheureusement fréquent de voir des informations d'authentification "
+"envoyées par le biais de courriels non sécurisés ; ce qui doit absolument "
+"être évité."
+
+#: ../usermanual/adherents.rst:244
+msgid ""
+"As super admininistrator user, you wil see an extra icon in the members "
+"list, allowing you to log in as selected user without his credentials. Once "
+"you've impersonnated the user, you can reproduce the issue and fix it or get"
+" all required informations to report the issue upstream."
+msgstr ""
+"En tant que super administrateur, vous verrez une action supplémentaire "
+"depuis la liste des adhérents, qui vous permettra de vous connecter avec le "
+"compte de l'utilisateur sans ses informations de connexion. Une fois cela "
+"fait, vous pourrez reproduire le problème et le corriger ou obtenir les "
+"informations nécessaires à un rapport de bogue."

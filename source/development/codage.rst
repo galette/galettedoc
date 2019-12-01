@@ -2,52 +2,55 @@
 
 .. _codage:
 
-*************************
-Le code source de Galette
-*************************
+*******************
+Galette source code
+*******************
 
-Galette est un logiciel libre sous licence GPL version 3, écrit en PHP. Galette n'est compatible qu'avec PHP en version 7.1 ou plus récente.
+Galette is a free software licensed under GPL version 3 and written in PHP. Galette is only compatible with PHP 7.1 or more recent.
 
-Nomenclature des fichiers
-=========================
+.. note::
 
-Les fichiers de galette sont répartis dans différents dossiers, dont voici un bref aperçu :
+   While developing, you may find useful to do a :doc:`bit of debug <debug>`...
 
-* |folder| `cache` : dossier de cache utilisé par Smarty et TCPDF
-* |folder| `config` : les fichiers de configuration
-* |folder| `data` : conteneur global pour les données
+   It is also possible to change some :ref:`Galette behaviors (verbosity level, application mode, ...) <behavior>`.
 
-  * |folder| `attachments` : systfichiers attachés aux e-mailings
-  * |folder| `cache` : système de cache
-  * |folder| `exports` : dossier dans lequel seront stockés les exports CSV
-  * |folder| `files` : stockage des fichiers joints via les champs dynamiques
-  * |folder| `imports` : dossier dans lequel seront stockés les fichiers CSV à importer
-  * |folder| `logs` : fichiers logs produits par :ref:`Analog <galettelog>`
-  * |folder| `photos` : dossier de stockage des photos des membres
-  * |folder| `tempimages` : dossier de stockage des imagestemporaires du captcha
-  * |folder| `templates_c` : dossier de compilation des templates Smarty
+Filesystem hierarchy
+====================
+
+Here is a plan of Galette used directories and some explanations about them:
+
+* |folder| `config`: configuration files
+* |folder| `data`: directory to store data
+
+  * |folder| `attachments`: files attached to emailings
+  * |folder| `cache`: caching directory
+  * |folder| `exports`: where CSV exports are stored
+  * |folder| `files`: files attached to members with dynamic fields of type file
+  * |folder| `imports`: where to place CSV files you want to import
+  * |folder| `logs`: :ref:`log files <galettelog>`
+  * |folder| `photos`: members photos, and logos
+  * |folder| `tempimages`: temporary captcha images
+  * |folder| `templates_c`: used to store Smarty compiled templates
 
 * |folder| `docs`
-* |folder| `includes` : bibliothèques, fonctions et initialisation de Galette
+* |folder| `includes`: libraries, functions and Galette instantiation
 
-  * |folder| `jquery` : :ref:`bibliothèque javascript JQuery <ui>`
-  * |folder| `phpMailer` : :ref:`bibliothèque d'envoi de mails phpMailer <phpmailer>`
-  * |folder| `Smarty` : :ref:`système de templates Smarty <smarty>`
-  * |folder| `smarty_plugins` : plugins Smarty complémentaires
-  * |folder| `tcpdf` : :ref:`bibliothèque de création de PDF TCPDF <pdf>`
-  * |folder| `Zend` : :ref:`bibliothèques du Framework Zend <zend_db>`
-  * |phpfile| `galette.inc.php` : fichier d'initialisation principal de Galette. Ici est gérée la création de tous les objets nécessaires au bon fonctionnement du code.
+  * |folder| `fields_def`: definition of the fields for some objects. A huge fields definition in class cause performances issues...
+  * |folder| `routes`: routes configuration for Slim
+  * |folder| `smarty_plugins`: specific Smarty plugin for Translation
+  * |phpfile| `dependencies.php`: dependencies configuration for Slim. This handle all routes ACLs
+  * |phpfile| `galette.inc.php`: one of main Galette instantiation files
   * |phpfile| `...`
   * |file| `...`
 
-* |folder| `install` : scripts d'installation
-* |folder| `lang` : fichiers de traduction gettext (``.mo``), scripts d'extraction des chaînes depuis le code source, fichiers de langue compilés
-* |folder| `lib` : les bibliothèques internes
+* |folder| `install`: installation script
+* |folder| `lang`: translation files and scripts
+* |folder| `lib`: internal framework
 
-  * |folder| `Galette` : la bibliothèque Galette
+  * |folder| `Galette`: Galette framework
 
-    * |folder| `Common` : classes `Galette\\Commons`
-    * |folder| `Core` : classes `Galette\\Core`
+    * |folder| `Common`: `Galette\\Commons` classes
+    * |folder| `Core`: `Galette\\Core` classes
 
       * |phpfile| `Authentication.php`
       * |phpfile| `CheckModules.php`
@@ -57,29 +60,24 @@ Les fichiers de galette sont répartis dans différents dossiers, dont voici un 
 
   * |folder| `...`
 
-* |folder| `plugins` : :ref:`dossier de stockage des plugins <plugins>`
-* |folder| `public` : pages publiques
-* |folder| `templates` : ensembles de templates Smarty
+* |folder| `plugins`: :doc:`directory to install plugins <../plugins/index>`
+* |folder| `templates`: Smarty templates source code
 
-  * |folder| `default` : thème par défaut de Galette
+  * |folder| `default`: default Galette theme
   * |folder| `...`
 
 * |phpfile| `...`
 
 .. _conventions:
 
-Conventions d'écriture
-======================
+Writting Conventions
+====================
 
-.. note::
+Galette source code must follow `PSR2 writting conventions <https://www.php-fig.org/psr/psr-2/>`_. To respect a writting convention make the source code more easy to read, the syntax is the same from a file to another.
 
-   Le standard pour les conventions d'écriture est passé de PEAR à PSR2 depuis Galette 0.9.
+You can use `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ to your changed code in order to be sure coding rules are respected. Some warnings may be ignored, but errors must be all fixed. An example of ``phpcs``:
 
-Le code source de Galette se doit de suivre les `conventions d'écriture PSR2 <http://www.php-fig.org/psr/psr-2/>`_. Respecter une convention d'écriture permet d'obtenir un code plus lisible ; la syntaxe étant invariable d'un fichier à l'autre.
-
-Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ sur le code produit pour vous assurer du respect des règles de codage. Certains avertissements peuvent être ignorés, mais les potentielles erreurs doivent toutes être corrigées. Pour lancer une vérification automatique, utilisez la commande ``phpcs`` :
-
-.. code-block:: bash
+::
 
    $ phpcs --standard=PSR2 lib/Galette/Core/Authentication.php
 
@@ -100,7 +98,7 @@ Vous pourrez utiliser `PHP Code Sniffer <http://pear.php.net/package/PHP_CodeSni
 
    Time: 105ms; Memory: 6.75Mb
 
-Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieure). L'ensemble des fichiers source PHP doit en contenir la mention ; selon le modèle suivant (issu de la classe `Authentication` de Galette) :
+Galette is licensed under GPL version 3. Each PHP source file must contain the following mention (this example is from Galette `Authentication` class):
 
 .. code-block:: php
 
@@ -115,7 +113,7 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     *
     * Copyright © 2009-2011 The Galette Team
     *
-    * This file is part of Galette (http://galette.eu).
+    * This file is part of Galette (https://galette.eu).
     *
     * Galette is free software: you can redistribute it and/or modify
     * it under the terms of the GNU General Public License as published by
@@ -128,16 +126,16 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     *  GNU General Public License for more details.
     *
     * You should have received a copy of the GNU General Public License
-    * along with Galette. If not, see <http://www.gnu.org/licenses/>.
+    * along with Galette. If not, see <https://www.gnu.org/licenses/>.
     *
     * @category  Authentication
     * @package   Galette
     *
     * @author    Johan Cwiklinski <johan@x-tnd.be>
     * @copyright 2009-2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
+    * @license   https://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
     * @version   SVN: $Id$
-    * @link      http://galette.eu
+    * @link      https://galette.eu
     * @since     Available since 0.7dev - 2009-02-28
     */
 
@@ -149,8 +147,8 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
     * @package   Galette
     * @author    Johan Cwiklinski <johan@x-tnd.be>
     * @copyright 2009-2011 The Galette Team
-    * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
-    * @link      http://galette.eu
+    * @license   https://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or later
+    * @link      https://galette.eu
     * @since     Available since 0.7dev - 2009-02-28
    */
    abstract class Authentication()
@@ -164,25 +162,25 @@ Galette est à partir de la version 0.7 sous licence GPL version 3 (ou supérieu
       }
    }
 
-Ce modèle s'applique également aux autres fichiers PHP (qui ne sont pas des classes donc), il conviendrait en ce cas de ne pas conserver la délcaration de la classe et le bloc de documentation qui la précède.
+If your php file is not a class, use the same model, but just remove the class declaration and docblock.
 
-Pour une meilleure compréhension du code pour l'ensemble des intervenants, on essaiera de documenter au maximum le code produit.
+To help other developers to understand the code, we will try to document the code as well as possible.
 
 
-Créer une release
-=================
+Create a release
+================
 
-Les releases sont créées à partir de tags dans le dépôt Git. Pour obtenir une archive de Galette 0.9, il faut effectuer :
+Releases are created against tags in the GIT repository. As an example to get an archive for Galette 0.9:
 
-.. code-block:: bash
+::
 
    $ git archive --prefix=galette-0.9/ 0.9 | bzip2 > galette-0.9.tar.bz2
 
-Notez que cette archive ne contiendra pas :ref:`les bibliothèques externes <deps>` (Smarty, Zend, tcpdf, ...); il vous faudra les ajouter au fichier ``galetee-0.9.tar.bz2`` obtenu.
+Note this archive will not embed :ref:`external libraries <deps>` (Smarty, Zend, tcpdf, ...); you will have to add them to the ``galette-0.9.tar.bz2`` file.
 
-A toutes fins utiles, voici une partie du script utilisé pour construire l'archive de la nightly :
+Here is the script used for Galette nightly build:
 
-.. code-block:: bash
+::
 
    cd /path/to/galette/clone
    git archive --prefix=galette-dev/ develop galette | bzip2 > /tmp/galette-dev.tar.bz2
@@ -216,14 +214,8 @@ A toutes fins utiles, voici une partie du script utilisé pour construire l'arch
    tar cjf galette-dev.tar.bz2 galette-dev
    echo " Done"
 
-Finalement, l'archive peut être signée, avant sa mise en ligne (pour vérification ultérieure de l'intégrité de l'archive) :
+Finaly, archive may be signed (to check download integrity):
 
-.. code-block:: bash
+::
 
    $ gpg --detach-sign --armor ./galette-0.9.tar.bz2
-
-.. note::
-
-   Durant les phases de développement, un :doc:`peu de déboguage <debug>` sera peut-être nécéssaire...
-
-   Il vous sera possible de modifier certains :ref:`comportements de Galette (niveau de verbosité, mode de l'application, ...) <behavior>`.

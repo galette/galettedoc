@@ -4,31 +4,30 @@
 Internationnalisation (i18n)
 ****************************
 
-Le code de Galette est entièrement traduit à l'aide des possibilités offertes par `GNU Gettext <http://www.gnu.org/software/gettext/>`_. L'intégralité des chaînes contenues dans le code source doivent être en anglais.
+Galette source code is entirely internationnalised thanks to `GNU Gettext <https://www.gnu.org/software/gettext/>`_. All translatable strings in the source code must be in english.
 
-Le répertoire ``lang`` contient un certain nombre de fichiers :
+The ``lang`` directory contains:
 
-* ``Makefile``, ``make_lang_l12n.py``, ``xgettext.py`` : fichiers de génération divers,
-* ``*.pot`` : fichiers de template des traductions, un par domaine,
-* ``*.po`` : fchiers de traduction, un par langue et par domaine,
-* ``*.php`` : fichier de traduction PHP (générés depuis les fichiers de langue gettext).
+* ``Makefile``, ``make_lang_l12n.py``, ``xgettext.py``: utilities to manage translations,
+* ``*.pot``: transaltions template files, one per domain,
+* ``*.po``: translation files, one per lang and per domain.
 
-Les `traductions de Galette <https://translate.zanata.org/project/view/galette?dswid=-2385>`_ en elles-mêmes sont effectuées via la plate forme Zanata.
+`Galette core <https://hosted.weblate.org/projects/galette/galette/>`_ is translated using `Weblate <https://hosted.weblate.org/>`_ platform. `Galette documentation translations <https://translate.zanata.org/project/view/galettedoc>`_ are still using `Zanata <https://zanata.org/>`_ platform, but will certainly move to Weblate as well in the future..
 
 .. _i18nsyntax:
 
-Syntaxe
-=======
+Syntax
+======
 
-Deux types de syntaxes différentes peuvent être rencontrées :
+Two different types of syntax are used:
 
-* la syntaxe PHP,
-* la syntaxe Smarty.
+* PHP syntax,
+* Smarty syntax.
 
 PHP
 ---
 
-Pour la syntaxe PHP, on utilise la function « ``_T`` » :
+For PHP syntax, this is the ``_T`` function that is used. There is a second optionnal argument for translation domain, which defaults to `galette`.
 
 .. code-block:: php
 
@@ -37,9 +36,13 @@ Pour la syntaxe PHP, on utilise la function « ``_T`` » :
    echo _T("Hello world!", "galette"); //galette is the default domain
    ?>
 
-Le second paramètre est le domaine de traduction, le domaine par défaut sera utilisé si rien n'est précisé.
+.. note::
 
-Il est souvent nécessaire d'utiliser des variables à remplacer dans les chaînes à traduire. Via PHP, on utilisera simplement une fonction du type ``str_replace`` ou ``preg_replace`` pour arriver à nos fins :
+   Another method, ``__()`` is very similar to ``_T()``. This one will not mark strings which miss a translation.
+
+   This was used to translate routes mainly; but this is no longer possible.
+
+Often, you will have to use variables in translated strings. To do that, use a placeholder in the string to translate, and use something like ``str_replace`` or ``preg_replace`` to do the effective replacement:
 
 .. code-block:: php
 
@@ -67,79 +70,76 @@ Il est souvent nécessaire d'utiliser des variables à remplacer dans les chaîn
    );
    ?>
 
-Une fonction ``__()`` est également disponible ; la seule différence avec ``_T()``, c'est que les chaînes non traduites ne seront pas marquées comme telles (utilisé principalement pour les routes).
+.. note::
 
-.. _i18npatterns:
-
-Bien entendu, les patterns sont laissés à votre entière discrétion ; pensez seulement que la personne qui traduira pourra mieux contextualiser la chaîne si les variables à remplacer sont un minimum identifiée (nous aurions par exemple pu choisir `%s` au lieu de `%name` ; mais ça aurait été moins explicite :-) ).
+   You can use any word you want as pattern, just try to keep simple for others :) There are several other ways to handle string replacements, check PHP documentation.
 
 Smarty
 ------
 
-La syntaxe smarty se base sur un plugin développé pour la cause, on l'utilisera de la façon suivante :
+Smarty translation is done with a custom plugin:
 
 .. code-block:: smarty
 
    <p>{_T string="Hello world!"}</p>
    <p>{_T string="Hello world!" domain="galette"}</p>
 
-Smarty propose des `modifiers` pour par exemple effectuer des remplacements. Le problème ; c'est que le remplacement est effectué avant que le texte ait été récupéré, la traduction n'est donc jamais trouvée. Pour pallier à ce problème, notre plugin smarty prend en charge deux attributs supplémentaires : un pattern et une valeur de remplacement ; qui ne seront appliquées qu'une fois la chaîne traduite récupérée :
+Smarty comes with `modifiers` that may be used to do remplacements among others. But it is done before the text is sent to the plugin, so translation cannot be found (it already contains a replacement value for our pattern). Our Smarty plugin can take two optionnal arguments to handle properly replacements:
 
 .. code-block:: smarty
 
    <p>{_T string="Hello %name!" pattern="/%name/" replace=$adh->name}</p>
 
-La :ref:`note concernant le nommage des patterns <i18npatterns>` du précédent paragraphe s'applique ici aussi, bien entendu ;-)
-
-Domaines de traduction
-----------------------
+Translation domains
+-------------------
 
 .. versionadded:: 0.9
 
-Les traductions dans Galette utilisent un système de domaine pour éviter que les chaînes provenant de différentes sources n'entrent en collision. Le domaine par défaut (utilisé si rien n'est spécifié) se nomme `galette`. Un domaine `galette_routes` (spécifique aux... routes :D) est également disponible.
+Galette uses translation domains to prevent string replacements from external sources. Default domain name (implicit if not specified) is ``galette``
 
-Chaque plugin fournira son propre domaine à minima (la plupart des plugins officiels fournissent également un domaine spécifique pour leurs routes).
+Each plugin will come with at least one domain of its own.
 
-Lors de l'appel aux fonctions de traduction, il faudra donc spécifier le domaine :
+You must then tell the functions which domain you want to use:
 
 .. code-block:: php
 
    <?php
-   echo _T('Hello, you'); //utilisation du domaine Galette ; la traduction sera 'Bonjour, vous'
-   echo _T('Hello, you', 'another'); //utilisation du domaine another ; la traduction sera 'Salut, toi'
+   echo _T('Hello, you'); //uses default domain, french will be 'Bonjour, vous'
+   echo _T('Hello, you', 'another'); //use another doamin ; french will be 'Salut, toi'
 
-Le même exemple, avec Smarty :
+Same example, with Smarty:
 
 .. code-block:: smarty
 
    {_T string="Hello, you!"}
    {_T string="Hello, you!" domain="another"}
 
-Génération des fichiers de langue
-=================================
+Generate lang files
+===================
 
-La mise à jour des traductions de Galette se décompose en plusieurs étapes :
+There are several steps to update Galette translations:
 
-* Extraction des chaînes du code source et mise à jour des templates de traduction,
-* Envoi des ouveaux templates sur Zanata,
-* Récupération des traductions depuis Zanata,
-* Génération des fichiers MO et PHP.
-
-.. code-block:: bash
-
-   $ cd galette/lang
-   $ make extract
-   $ cd ../../ 
-   $ zanata-cli push
-
-Il est possible de générer les fichiers PO en local avec la commande ``make po``, mais le système est prévu pour qu'ils soient générés automatiquement par Zanata lors de la récupération des données.
-
-.. code-block:: bash
-
-   $ zanata-cli pull
-   $ cd galette/lang
-   $ make mo lang check
+* extract strings from source code and update translation templats (POT files) (run ``make extract`` from lang directory and commit updated POT file),
+* (let translators do their job)
+* retrieve translated files (PO) from translation platform
+* compile translation files (MO)
 
 .. note::
 
-   Chaque domaine de traduction est stocké dans ses propres fichiers.
+   It is possible to generate local PO files with ``make po``, but all mecanisms assume the translation platform is used.
+
+Once the updated POT file has been pushed to the Github mirror, an update is triggered on the Weblate platform. Weblate translations are commited in a forked Git repository, and must be merged back to Galette:
+
+::
+
+   $ git remote add weblate https://hosted.weblate.org/git/galette/galette/
+   $ git fetch weblate
+   $ git merge weblate/develop
+
+Finally, you must compile translations (compiled files are the ones used):
+
+::
+
+   $ make mo
+
+In order to refresh known languages, you will have to logout/login from your Galette instance. You may have to restart PHP as well.

@@ -1,128 +1,125 @@
 .. _faq:
 
-==========================
-Questions fréquentes (FAQ)
-==========================
+===============================
+Frequently Asked Question (FAQ)
+===============================
 
-*******************************************
-Que faire quand Galette ne fonctionne pas ?
-*******************************************
+******************************
+What if Galette does not work?
+******************************
 
-Il arrive parfois que suite à une mise à jour - même mineure, un changement sur le serveur d'hébergement, ou encore une simple anomalie, que le comportement de Galette soit anormal.
+Sometimes, after an update, a change on hosting, or a simple bug - even minor ones - may cause a fail in Galette. You may observe:
 
-Il peut y avoir différents symptômes :
-
-* les modifications ne sont pas enregistrées sans autre forme de procès,
-* un message d'erreur sans autre explication est affiché,
-*  une page blanche est renvoyée,
+* a simple error message id displayed,
+* a blank page,
+* a page with a backtace (usually, not in production mode),
 * ...
 
-Dans tous les cas de figure ; la solution est de consulter les fichiers de logs. La grande majorité des anomalies rencontrées sont enregistrées dans ces fichiers ; c'est donc un bon point de départ pour comprendre et éventuellement résoudre le problème.
+In all cases, you **must check the logs**. Most of errors are stored in those files, it is a very good start point to understand the problem and potentially solve it.
 
-Il existe deux types de fichiers de logs : les logs de Galette, et les logs du serveur. Les logs de Galette sont stockés dans le dossier ``galette/data/logs/`` et sont accessibles aux utilisateurs.
-Les logs du serveur, c'est un autre problème. Avec les hébergements mutualisés, ils ne sont pas accessibles la plupart du temps :-( Sur un hébergement dédié, leur emplacement varie en fonction de la configuration du serveur ; c'est à voir avec la distribution utilisée, la configuration de PHP et/ou du serveur web.
+There are two types of log files: Galette ones, and system ones.
+Galette logs are stored in the ``galette/data/log`` per default.
 
-* avec PHP en mode FPM, les logs se trouveront dans ``/var/log/php-fpm/www-error.log`` (pour les serveurs RedHat et assimilés),
-* avec `mod_php`, vous les trouverez dans ``/var/log/httpd/error_log`` (sous d’autres distributions Linux, `httpd` peut se nommer `apache`),
-* sous Windows/MacOS avec des solutions de type XAMPP, il y a un dossier logs dans le répertoire d’installation,
-* si vous n’avez pas accès aux logs du serveur (typique sur des hébergements mutualisés), voyez la section "afficher les erreurs" ci-dessous.
+Server logs are another subject. On shared webservers, they are often not accessible to you :( On a dedicated webserver, their location change with server configuration; it is related to the operating system used, PHP and/or web server configuration, ...
 
-Afficher les erreurs
---------------------
+* with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for GNU/Linux Red Hat like distributions),
+* with (the deprecated) ``mod_php``, you'll find them in ``/var/log/httpd/error_log`` (on other GNU/Linux distributions, `httpd` may be named `apache`),
+* on Windows/MacOS with XAMPP like solutions, there is at least one log directory in installation; you may find what you look for there.
 
-Si pour une raison ou une autre vous ne pouvez accéder aux fichiers de logs (notamment les logs serveur sur un hébergement mutualisé), il est possible d'afficher les erreurs rencontrées directement dans la page.
+Displaying errors
+-----------------
+
+If you cannot access system logs files (frequent on shared hostings), you can display errors directly on the page.
 
 .. warning::
 
-   Afficher les erreurs sur la page fournit parfois des informations qui ne devraient pas être rendues publiques. En mode production, il est **fortement déconseillé** de les afficher, la solution décrite ci-dessous ne doit donc être que temporaire, le temps d’obtenir des informations sur le problème rencontré.
+   Displaying errors on a web page may provide informations that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool.
 
-Pour afficher (temporairement) les erreurs sur la page, créez un fichier galette/config/behavior.inc.php avec le contenu suivant :
+   Please also note that with routing intgration, some of those displayed informations may be "hidden" from a buggy redirection... Logs are safer on that point.
+
+To temporary display errors on page, create a ``galette/config/behavior.inc.php`` file with the following contents:
 
 .. code-block:: php
 
    <?php
    define('GALETTE_DISPLAY_ERRORS', 1);
 
-Il faudra ensuite reproduire le problème ; les erreurs s'afficheront sur la page.
+The next time you reproduce the issue, errors will be displayed on the page.
 
-D'une manière générale, vous pourrez utiliser :ref:`la configuration du comportement de Galette <behavior>` pour vous aider à obtenir davantage d'informations.
+Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grabadditional informations.
 
-*************************************************************
-Comment rapporter un bogue ou faire une demande d'évolution ?
-*************************************************************
+*****************************************
+How to report a bug or ask for a feature?
+*****************************************
 
-Les rapports de bogues (anomalies) ainsi que les demandes d'évolution (souhaits) se font sur le `tracker de Galette <https://bugs.galette.eu/projects/galette>`_, que ce soit pour Galette elle-même ou pour les plugins officiels.
+Bugs reports as well as RFE (Request For Enhancement) must be done on the `Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette itself, all official plugins and also documentation.
 
 .. note::
 
-   Sauf mention explicite contraire, veuillez ne pas attribuer le ticket à qui que ce soit, ni spécifier la version cible ; c'est le travail de la personne qui va traiter le ticket.
+   Unless you are sure you know, please de not attribute the ticket and do not set target version. It will be done when it will be took into account.
 
-Si vous avez un doute, n'hésitez pas à poser d'abord la question.
+If you have doubts, feel free to ask your questions on mailing lists ;)
 
-Remonter un bogue
------------------
+Report a bug
+------------
 
-N'oubliez pas :
+Please, do not forget to:
 
-* de préciser la version de Galette utilisée,
-* d'être clair et concis,
-* de fournir les informations nécessaires pour que le problème puisse être répliqué,
-* de fournir les entrées de logs nécessaire (consultez la FAQ ainsi que la documentation à ce propos !)
+* tell us the Galette version you are using,
+* be clear and consise,
+* to provide all required informations in order to reproduce the issue
+* to provide related logs entries.
 
-Demander une évolution
-----------------------
+Request For Enhancement
+-----------------------
 
-Pour les demandes d'évolution, soyez précis également, les développeurs ne peuvent souvent pas deviner ce que vous avez en tête, même si ça peut vous paraître évident ;-)
+Make sure to be precise as well on RFEs. Developers may not guess what you have in mind, you have to explain them, event if this seems obvious to you ;)
+Requested enhancements are tagged as "Souhaits" (whishes, in french), and moved by developers when work begins most of the time.
 
-Les évolutions demandées par les utilisateurs sont placées en "Souhaits", puis requalifiés au besoin par la suite par les développeurs.
+Once you made your whishes, you can `submit it to a vote <https://vote.galette.eu/>`_, most wanted features may catch devs attention.
 
-Une fois votre souhait exprimé, vous pouvez également `le soumettre au vote <https://vote.galette.eu/>`_, les demandes les plus plébiscitées pourront se voir porter une attention plus particulière.
+********************************
+How to search in lists archives?
+********************************
 
-**************************************************************
-Comment effectuer une recherche dans les archives des listes ?
-**************************************************************
+Mailing lists are the main communication channel for Galette, from its beginnings.
 
-Les listes de discussion restent le canal principal de communication autour du projet, depuis ses débuts.
+As a reminder, since 2017, two lists are available:
 
-Pour rappel, depuis 2017, deux listes sont à votre disposition :
+* `users discussion list <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : general talks, help, ...
+* `development discussion list <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : technical discussions, tickets triaging, ...
 
-* `liste de discussion utilisateurs <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : discussions générales, entraide, FAQ...
-* `liste de discussion développement <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : discussions développements, bogues, tâches...
+If you are looking for archives before 2017, see:
 
-Les archives des listes d'avant 2017 sont disponibles aux adresses suivantes :
+* `old users discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_
+* `old development discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_
 
-* `ancienne liste de discussion utilisateurs <http://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_
-* `ancienne liste de discussion développement <http://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_
-
-Malheureusement, qu'il s'agisse des nouvelles, ou des anciennes listes, aucun système de recherche dans les archives n'est proposé :(
-
-L'alternative, c'est d'utiliser le mot clé `site:` depuis votre moteur de recherche favori (la plupart des moteurs implémentent aujourd’hui cette possibilité) :
+Unfortunately, there is no search mechanism in any of those lists archives. The alternative is to use the `site:` keyword from your favorite search engine (most of them supports that keyword):
 
 .. code-block:: php
 
    site:https://listengine.tuxfamily.org/lists.galette.eu/users plugin
 
-La recherche présentée ci-dessus vous donnera les résultats sur le mot clé plugin dans les archives des listes utilisateurs. Bien entendu, il faut adapter l'URL et les mots clés ;)
+Above search will look for "plugin" in archives of users mailing list. Just adapt the URL to the list/period and keywords you want ;)
 
-Pour effectuer une recherche plus précise, consultez l'aide de votre moteur de recherche préféré.
+To improve the search, refer to your search engine documentation.
 
-******************************************************************
-Comment utiliser une même adresse email pour plusieurs adhérents ?
-******************************************************************
+**************************************************
+How to use same email address for several members?
+**************************************************
 
-Il s'agit d'un question récurrente ; beaucoup souhaiteraient pouvoir utiliser une même adresse de courriel pour plusieurs adhérents de leur base.
+This is a very frequent question; many would love to do that...
 
-**Ce n'est pas possible.**
+**This is not possible.**
 
-En effet, les adresses de courriel doivent être uniques au sein de la base de données. Il s'agit d'une contrainte volontaire, sur laquelle plusieurs fonctionnalités de Galette reposent :
+Indeed, mail addresses must be unique in the database. It is a choice for the project on which several features are built:
 
-* récupération du mot de passe (depuis... toujours ou presque),
-* connexion (depuis Galette 0.9),
+* lost password (since... always or almost),
+* login (since Galette 0.9),
 * ...
 
-Rendre les adresses non uniques n'est d'une part pas souhaitable, et serait d'autre part très compliqué, et puorrait mener à de nombreux bugs.
+Making them non uniques is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
 
-En revanche, Galette propose depuis un certain temps la possibilité de :ref:`lier plusieurs fiches adhérents entre elles <linkmembers>`. De cette manière, certaines informations, telles que les adresses email et postale seront récupérées depuis la fiche « parent » si elles sont absentes d'une fiche « enfant ».
+However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some informations such as email and postal addressess will be retrieved from the parent member if missing.
 
-Ce mécanisme permet donc au final d'utiliser une seule et même adresse de courriel pour plusieurs adhérents ; sans toutefois qu'elle soit dupliquée en base.
-
+This allows finally to use a unique email address for several members in database; but they are no duplicates in database.

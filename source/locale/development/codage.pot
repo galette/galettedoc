@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/codage.rst:7
+# 69583cd5467d4e51b05a767436de4dd5
+msgid "Galette source code"
+msgstr ""
+
+#: ../development/codage.rst:9
+# 35818fbda57643a886b5a90e0c2a3f6a
+msgid "Galette is a free software licensed under GPL version 3 and written in PHP. Galette is only compatible with PHP 7.1 or more recent."
+msgstr ""
+
+#: ../development/codage.rst:13
+# bfa8b824d9a5457ea6ed77e33e2b177a
+msgid "While developing, you may find useful to do a :doc:`bit of debug <debug>`..."
+msgstr ""
+
+#: ../development/codage.rst:15
+# f5920fa9d5a3457fb30b1cdf6fc0ebf9
+msgid "It is also possible to change some :ref:`Galette behaviors (verbosity level, application mode, ...) <behavior>`."
+msgstr ""
+
+#: ../development/codage.rst:18
+# cef6e9dc53994895b57b09d4336ec444
+msgid "Filesystem hierarchy"
+msgstr ""
+
+#: ../development/codage.rst:20
+# be4e7e7f3a044af0850b2381b23b0d7f
+msgid "Here is a plan of Galette used directories and some explanations about them:"
+msgstr ""
+
+#: ../development/codage.rst:22
+# 6711447495b6482e9556b7f9b7cbc3d9
+msgid "|folder| `config`: configuration files"
+msgstr ""
+
+#: ../development/codage.rst:23
+# 860b84ccc41a41ca9a7b1eaf52dca925
+msgid "|folder| `data`: directory to store data"
+msgstr ""
+
+#: ../development/codage.rst:25
+# cdcd1b5cd34e4750b094ce87c2e87fa5
+msgid "|folder| `attachments`: files attached to emailings"
+msgstr ""
+
+#: ../development/codage.rst:26
+# 28ed97a407564ccdb83ae1e872407a99
+msgid "|folder| `cache`: caching directory"
+msgstr ""
+
+#: ../development/codage.rst:27
+# efb173c17478448cafefb7d162ee40c9
+msgid "|folder| `exports`: where CSV exports are stored"
+msgstr ""
+
+#: ../development/codage.rst:28
+# 2c9be72b10d544ea881428aa67adf1bf
+msgid "|folder| `files`: files attached to members with dynamic fields of type file"
+msgstr ""
+
+#: ../development/codage.rst:29
+# d069aa9a17544f8185f05ed6a9f446a6
+msgid "|folder| `imports`: where to place CSV files you want to import"
+msgstr ""
+
+#: ../development/codage.rst:30
+# 5982f4093f59423aa77e9c13be70811c
+msgid "|folder| `logs`: :ref:`log files <galettelog>`"
+msgstr ""
+
+#: ../development/codage.rst:31
+# d11d3c3795424dfd870e7401b088f6dc
+msgid "|folder| `photos`: members photos, and logos"
+msgstr ""
+
+#: ../development/codage.rst:32
+# 7e95545141c244d5bf5e06fdc8c4d72f
+msgid "|folder| `tempimages`: temporary captcha images"
+msgstr ""
+
+#: ../development/codage.rst:33
+# d069aa9a17544f8185f05ed6a9f446a6
+msgid "|folder| `templates_c`: used to store Smarty compiled templates"
+msgstr ""
+
+#: ../development/codage.rst:35
+# ed093aad5e484cb0902b58babda44696
+msgid "|folder| `docs`"
+msgstr ""
+
+#: ../development/codage.rst:36
+# f0deceef9fd6425eac8651c9d0db9523
+msgid "|folder| `includes`: libraries, functions and Galette instantiation"
+msgstr ""
+
+#: ../development/codage.rst:38
+# 35eae6368ced448cb1f68ffe1d9d42a4
+msgid "|folder| `fields_def`: definition of the fields for some objects. A huge fields definition in class cause performances issues..."
+msgstr ""
+
+#: ../development/codage.rst:39
+# 6711447495b6482e9556b7f9b7cbc3d9
+msgid "|folder| `routes`: routes configuration for Slim"
+msgstr ""
+
+#: ../development/codage.rst:40
+# cdcd1b5cd34e4750b094ce87c2e87fa5
+msgid "|folder| `smarty_plugins`: specific Smarty plugin for Translation"
+msgstr ""
+
+#: ../development/codage.rst:41
+# 699396a107344f10bc8274589a4ddffb
+msgid "|phpfile| `dependencies.php`: dependencies configuration for Slim. This handle all routes ACLs"
+msgstr ""
+
+#: ../development/codage.rst:42
+# 53535b3fc0c94b9eaadc62a1d333015f
+msgid "|phpfile| `galette.inc.php`: one of main Galette instantiation files"
+msgstr ""
+
+#: ../development/codage.rst:43
+#: ../development/codage.rst:57
+#: ../development/codage.rst:69
+# ed0c76d33d694be6aaf858b1a71a0a02
+# ed0c76d33d694be6aaf858b1a71a0a02
+# ed0c76d33d694be6aaf858b1a71a0a02
+msgid "|phpfile| `...`"
+msgstr ""
+
+#: ../development/codage.rst:44
+# 5d503575708043bd912cdd24873d75e3
+msgid "|file| `...`"
+msgstr ""
+
+#: ../development/codage.rst:46
+# 5f844bb3df884a1689fa625e0888d11a
+msgid "|folder| `install`: installation script"
+msgstr ""
+
+#: ../development/codage.rst:47
+# b240ed164609491c92dabcbcafb2a6bb
+msgid "|folder| `lang`: translation files and scripts"
+msgstr ""
+
+#: ../development/codage.rst:48
+# b240ed164609491c92dabcbcafb2a6bb
+msgid "|folder| `lib`: internal framework"
+msgstr ""
+
+#: ../development/codage.rst:50
+# dc1950e0d12e426fa34c88a8ef5d021b
+msgid "|folder| `Galette`: Galette framework"
+msgstr ""
+
+#: ../development/codage.rst:52
+# eba7f3d09e044069943fab653268fd42
+msgid "|folder| `Common`: `Galette\\\\Commons` classes"
+msgstr ""
+
+#: ../development/codage.rst:53
+# 28ed97a407564ccdb83ae1e872407a99
+msgid "|folder| `Core`: `Galette\\\\Core` classes"
+msgstr ""
+
+#: ../development/codage.rst:55
+# 8f892394954646b2a5817552a519cdf5
+msgid "|phpfile| `Authentication.php`"
+msgstr ""
+
+#: ../development/codage.rst:56
+# 46a355fe3830440a9e394bc81e15c435
+msgid "|phpfile| `CheckModules.php`"
+msgstr ""
+
+#: ../development/codage.rst:59
+#: ../development/codage.rst:61
+#: ../development/codage.rst:67
+# f9eceed3cb4e41e28d9359c8f91da9dd
+# aa5d7c11ae4b42fbb0449a189da6eaa0
+# f9eceed3cb4e41e28d9359c8f91da9dd
+msgid "|folder| `...`"
+msgstr ""
+
+#: ../development/codage.rst:63
+# 47391a6c1e1a45429fecd9d01ac1fc84
+msgid "|folder| `plugins`: :doc:`directory to install plugins <../plugins/index>`"
+msgstr ""
+
+#: ../development/codage.rst:64
+# 7e95545141c244d5bf5e06fdc8c4d72f
+msgid "|folder| `templates`: Smarty templates source code"
+msgstr ""
+
+#: ../development/codage.rst:66
+# 860b84ccc41a41ca9a7b1eaf52dca925
+msgid "|folder| `default`: default Galette theme"
+msgstr ""
+
+#: ../development/codage.rst:74
+# 20ccf43640674181be32caa2fd6d14b1
+msgid "Writting Conventions"
+msgstr ""
+
+#: ../development/codage.rst:76
+# 5d67c9705cfc490899f8c98d44afc2c6
+msgid "Galette source code must follow `PSR2 writting conventions <https://www.php-fig.org/psr/psr-2/>`_. To respect a writting convention make the source code more easy to read, the syntax is the same from a file to another."
+msgstr ""
+
+#: ../development/codage.rst:78
+# eb350ba169704cedb32b3faa6f3a5e23
+msgid "You can use `PHP Code Sniffer <https://pear.php.net/package/PHP_CodeSniffer>`_ to your changed code in order to be sure coding rules are respected. Some warnings may be ignored, but errors must be all fixed. An example of ``phpcs``:"
+msgstr ""
+
+#: ../development/codage.rst:101
+# f1706d762fdc4b70b10cd8809f14961f
+msgid "Galette is licensed under GPL version 3. Each PHP source file must contain the following mention (this example is from Galette `Authentication` class):"
+msgstr ""
+
+#: ../development/codage.rst:165
+# 2bd4ec7d1f18451888b6f9325816dd34
+msgid "If your php file is not a class, use the same model, but just remove the class declaration and docblock."
+msgstr ""
+
+#: ../development/codage.rst:167
+# ea046bb3194d4de9a2889db1dd672d0d
+msgid "To help other developers to understand the code, we will try to document the code as well as possible."
+msgstr ""
+
+#: ../development/codage.rst:171
+# f8a8f02fa4c54fa993f6f22af0ec0800
+msgid "Create a release"
+msgstr ""
+
+#: ../development/codage.rst:173
+# 6e19602aa437462b95b31718570504e1
+msgid "Releases are created against tags in the GIT repository. As an example to get an archive for Galette 0.9:"
+msgstr ""
+
+#: ../development/codage.rst:179
+# a206439b0db547de8217a0b2bbd77012
+msgid "Note this archive will not embed :ref:`external libraries <deps>` (Smarty, Zend, tcpdf, ...); you will have to add them to the ``galette-0.9.tar.bz2`` file."
+msgstr ""
+
+#: ../development/codage.rst:181
+# 539767350d55412085d9504e3a85bc68
+msgid "Here is the script used for Galette nightly build:"
+msgstr ""
+
+#: ../development/codage.rst:217
+# 232d9bbdba894204a65a66b7d1b8e99c
+msgid "Finaly, archive may be signed (to check download integrity):"
+msgstr ""
+

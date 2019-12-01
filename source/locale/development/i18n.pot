@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../development/i18n.rst:5
+# f6648c4be7d64b41bdd78d77d2ba40b6
+msgid "Internationnalisation (i18n)"
+msgstr ""
+
+#: ../development/i18n.rst:7
+# 4d68b9140c50418abec802b57cc973bc
+msgid "Galette source code is entirely internationnalised thanks to `GNU Gettext <https://www.gnu.org/software/gettext/>`_. All translatable strings in the source code must be in english."
+msgstr ""
+
+#: ../development/i18n.rst:9
+# 3fe2b5cc1fc744788117db75c4de0333
+msgid "The ``lang`` directory contains:"
+msgstr ""
+
+#: ../development/i18n.rst:11
+# b5d5ee1d44334dcc9c65aa33e80bfa16
+msgid "``Makefile``, ``make_lang_l12n.py``, ``xgettext.py``: utilities to manage translations,"
+msgstr ""
+
+#: ../development/i18n.rst:12
+# 9e237dc42ae04b568871a5757ceec4f9
+msgid "``*.pot``: transaltions template files, one per domain,"
+msgstr ""
+
+#: ../development/i18n.rst:13
+# 3550d37aca6944c2b67a3fc2affa2aaf
+msgid "``*.po``: translation files, one per lang and per domain."
+msgstr ""
+
+#: ../development/i18n.rst:15
+# 19e32bf855b445799bd7fa87c0b4d352
+msgid "`Galette core <https://hosted.weblate.org/projects/galette/galette/>`_ is translated using `Weblate <https://hosted.weblate.org/>`_ platform. `Galette documentation translations <https://translate.zanata.org/project/view/galettedoc>`_ are still using `Zanata <https://zanata.org/>`_ platform, but will certainly move to Weblate as well in the future.."
+msgstr ""
+
+#: ../development/i18n.rst:20
+# 2c8434fa5081494bb4416a9689122e52
+msgid "Syntax"
+msgstr ""
+
+#: ../development/i18n.rst:22
+# a786b265607b4259a790920dbe17c431
+msgid "Two different types of syntax are used:"
+msgstr ""
+
+#: ../development/i18n.rst:24
+# cf4a0ac17d9249838e8e72e6330912c6
+msgid "PHP syntax,"
+msgstr ""
+
+#: ../development/i18n.rst:25
+# ed7963e4868744beb121d09ed84fbdcd
+msgid "Smarty syntax."
+msgstr ""
+
+#: ../development/i18n.rst:28
+# 28c74e302da84efcbe4b2406ed0b7afa
+msgid "PHP"
+msgstr ""
+
+#: ../development/i18n.rst:30
+# 21dfc9f9ab3c447c88c25f357629ae39
+msgid "For PHP syntax, this is the ``_T`` function that is used. There is a second optionnal argument for translation domain, which defaults to `galette`."
+msgstr ""
+
+#: ../development/i18n.rst:41
+# f781177bd17442cbab87e557b9dd811a
+msgid "Another method, ``__()`` is very similar to ``_T()``. This one will not mark strings which miss a translation."
+msgstr ""
+
+#: ../development/i18n.rst:43
+# 719a264f0b2348fc9a33281d0ac6e197
+msgid "This was used to translate routes mainly; but this is no longer possible."
+msgstr ""
+
+#: ../development/i18n.rst:45
+# 7175779b304349d1b48c762ce6ab4475
+msgid "Often, you will have to use variables in translated strings. To do that, use a placeholder in the string to translate, and use something like ``str_replace`` or ``preg_replace`` to do the effective replacement:"
+msgstr ""
+
+#: ../development/i18n.rst:75
+# 48b586f2d3be47a8899c273535d142e0
+msgid "You can use any word you want as pattern, just try to keep simple for others :) There are several other ways to handle string replacements, check PHP documentation."
+msgstr ""
+
+#: ../development/i18n.rst:78
+# f75b99087772463bad830f41e09c8e18
+msgid "Smarty"
+msgstr ""
+
+#: ../development/i18n.rst:80
+# 0443ae6b30cb4000afc124b4a4a25d90
+msgid "Smarty translation is done with a custom plugin:"
+msgstr ""
+
+#: ../development/i18n.rst:87
+# 5037785bae5a4ccaa3b398d7b58d64c5
+msgid "Smarty comes with `modifiers` that may be used to do remplacements among others. But it is done before the text is sent to the plugin, so translation cannot be found (it already contains a replacement value for our pattern). Our Smarty plugin can take two optionnal arguments to handle properly replacements:"
+msgstr ""
+
+#: ../development/i18n.rst:94
+# 4164107dd51043d7907bd8932788907c
+msgid "Translation domains"
+msgstr ""
+
+#: ../development/i18n.rst:98
+# 418ecb7216904da5a04a2c6f226e9ef5
+msgid "Galette uses translation domains to prevent string replacements from external sources. Default domain name (implicit if not specified) is ``galette``"
+msgstr ""
+
+#: ../development/i18n.rst:100
+# 1c1df26156244115aef3eefaa2386ae2
+msgid "Each plugin will come with at least one domain of its own."
+msgstr ""
+
+#: ../development/i18n.rst:102
+# 40b7e0f660fa4e309ae9d2edeb6ebe86
+msgid "You must then tell the functions which domain you want to use:"
+msgstr ""
+
+#: ../development/i18n.rst:110
+# 195ca90fe03f4bce915197cc09a9f8b3
+msgid "Same example, with Smarty:"
+msgstr ""
+
+#: ../development/i18n.rst:118
+# 71a21df968244ca3b7f1cad53cd61ee6
+msgid "Generate lang files"
+msgstr ""
+
+#: ../development/i18n.rst:120
+# 15394569df1c4a9795531cfe406c06f5
+msgid "There are several steps to update Galette translations:"
+msgstr ""
+
+#: ../development/i18n.rst:122
+# f1d4fe28ec3248949bb1bb4f874f0778
+msgid "extract strings from source code and update translation templats (POT files) (run ``make extract`` from lang directory and commit updated POT file),"
+msgstr ""
+
+#: ../development/i18n.rst:123
+# c2f645609caf4ae7aaf551ce9e369c3c
+msgid "(let translators do their job)"
+msgstr ""
+
+#: ../development/i18n.rst:124
+# 8d15111c46e749fda97a969bac86048f
+msgid "retrieve translated files (PO) from translation platform"
+msgstr ""
+
+#: ../development/i18n.rst:125
+# 25b7efdfc99d40988dbefa7f1a34ec74
+msgid "compile translation files (MO)"
+msgstr ""
+
+#: ../development/i18n.rst:129
+# 96e53ef75ee0419397a1fd4167d9a1a4
+msgid "It is possible to generate local PO files with ``make po``, but all mecanisms assume the translation platform is used."
+msgstr ""
+
+#: ../development/i18n.rst:131
+# d423a205261d4432b0727a3f21813669
+msgid "Once the updated POT file has been pushed to the Github mirror, an update is triggered on the Weblate platform. Weblate translations are commited in a forked Git repository, and must be merged back to Galette:"
+msgstr ""
+
+#: ../development/i18n.rst:139
+# bc0e1d8960fc4a21bc8cb4f694f3fecb
+msgid "Finally, you must compile translations (compiled files are the ones used):"
+msgstr ""
+
+#: ../development/i18n.rst:145
+# a9ece9c4ba0d40ec802ea0b195ba7f3e
+msgid "In order to refresh known languages, you will have to logout/login from your Galette instance. You may have to restart PHP as well."
+msgstr ""
+

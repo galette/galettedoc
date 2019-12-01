@@ -2,17 +2,17 @@
 
 .. _devplugins:
 
-*******************
-Écriture de plugins
-*******************
+****************
+Writting plugins
+****************
 
-Depuis la version 0.7 ; Galette fournit un système de plugins.
+.. versionadded:: 0.7
 
-Les possibilités sont ajoutées au fur et à mesure des besoins ; il est dores et déjà possible de profiter de l'API entière de Galette, de l'étendre, de la compléter avec des classes ; de créer des pages spécifiques à un plugin (via les `templates Smarty <https://www.smarty.net/>`_) ; de créer des entrées de menus pour accéder aux pages précédemment créées, et d'ajouter des boutons de fonction dans la liste des adhérents.
+From plugins, you can benefit from the entire Galette API, extends or complete it with classes, you can create specific pages, menu entries, and action buttons on members.
 
-Le système de plugins est initialement basé sur celui utilisé par le `logiciel de publication web DotClear <http://fr.dotclear.org/>`_.
+Plugin system was inspired from `DotClear blogging solution <https://fr.dotclear.org/>`_.
 
-Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin installé se trouvera dans son propre sous dossier à cet endroit :
+A ``plugins`` directory in Galette will host plugins, one directory per plugin is expected:
 
 * |folder| `plugins`
 
@@ -20,102 +20,106 @@ Un dossier ``plugins`` existe dans l'arborescence de Galette. Chaque plugin inst
   * |folder| `Paypal`
   * |folder| `...`
 
-Les fichiers de traduction du plugins seront placés dans un répertoire ``lang``, les templates Smarty dans un répertoire ``templates/{nom du thème}`` (le nom du thème étant défini par le nom du répertoire, le thème par défaut [le seul supporté actuellement] se nomme ``default``), et les classes dans un répertoire ``lib`` (tout comme dans Galette). Consultez les sections adéquates pour en savoir davantage
+Just as in Galette, you will find a ``lang`` directory used for translation files, a ``template/default`` directory for Smarty templates, a ``lib`` directory for classes, ...
 
-Ces dossiers ne sont pas obligatoires, tout dépend si le plugin en a besoin ou pas :-)
+None of those directories are mandatory, plugin may have no need for them :)
 
 .. note::
 
-   Un bref :doc:`guide de migration des plugins de la 0.8 vers la 0.9 <plugins-0.8-0.9>` est disponible.
+   A :doc:`migration guide for plugins from Galette 0.8 to 0.9 <plugins-0.8-0.9>` is available.
+
+.. note::
+
+    All Galette :doc:`development informations <index>` also apply to plugins. You may need to :doc:`debug a bit <debug>` or :ref:`change application behavior <behavior>`
 
 Licence
 =======
 
-Les plugins officiels de galette sont fournis sous licence GPL version 3, tout comme le code principal.
+Official Galette plugins are licensed under GPL version 3.
 
-La licence doit :
+Licence must:
 
-* être incluse à la racine du dépôt (fichier ``LICENSE`` ou ``COPYING``),
-* être spécifiée sur chaque fichier si la license choisie l'exige (voyez les fichiers de Galette ou des plugins officiels pour des exemples concernant la GPLv3)..
+* be included in the root directory (``LICENSE`` or ``COPYING`` file),
+* be present in all source file headers - if the selected license wants it.
 
 .. _pluginsconfig:
 
-Configuration des plugins
-=========================
+Plugins Configuration
+=====================
 
-Un fichier ``_define.php`` doit absolument être présent pour chaque plugin. Il définit le nom du plugin, son auteur, etc, selon la nomenclature suivante :
+A ``_define.php`` file must be present for each plugin. It defines plugin name, its author, ...
 
 .. code-block:: php
 
    <?php
    $this->register(
-       'Galette Mon Plugin',        //Name
-       'Plugin qui ne sert à rien', //Short description
-       'Votre Nom',                 //Author
+       'Galette My Plugin',         //Name
+       'Plugin that does nothing',  //Short description
+       'Your name',                 //Author
        '0.0.1',                     //Version
-       '0.7.1',                     //Galette version compatibility
-       'monplugin',                 //routing name and translation domain
-       '2018-06-23',                //Release date
+       '0.9',                       //Galette version compatibility
+       'myplugin',                  //routing name and translation domain
+       '2019-10-04',                //Release date
        [                            //Permissions needed
-           'monplugin_main' => 'staff'
+           'myplugin_main' => 'staff'
        ]
    );
    ?>
 
-L'activation du module dans Galette dépend de ce fichier, s'il n'est pas présent, ou s'il est incorrect, le module ne sera pas activé.
+If the file is missing or incorrect, plugin will not be loaded at all.
 
 .. since: 0.7.1
 
-Compatibilité des plugins
--------------------------
+Plugins compatibility
+---------------------
 
-La compatibilité des plugins repose sur un système assez simple : Galette définit une version de compatibilité des plugins qui peut être la version courante, ou une version antérieure (si rien n'a changé du côté des plugins) ; et chaque plugin définit de son côté la version de Galette avec laquelle il est compatible.
+Plugins compatibility is a quite simple system: Galette define a compatibility version that does not change on every Galette release, and plugins declare a Galette compatible version. Those versions are compared, and plugin is marked as compatible if it declare to support current Galette version.
 
-Côté Galette, la version de compatibilité est déclarée à l'aide de la constante `GALETTE_COMPAT_VERSION` dans le fichier ``galette/includes/galette.inc.php``.
-Côté plugin, la version de compatibilité est déclarée en `pénultième <http://fr.wikipedia.org/wiki/P%C3%A9nulti%C3%A8me>`_ position dans le fichier ``_define.php`` du plugin.
+On Galette side, compatibility version is declared with `GALETTE_COMPAT_VERSION` constant in ``galette/includes/galette.inc.php``.
+On plugin side, compatibility version is declared in the ``_define.php`` plugin file.
 
 Routes
 ======
 
 .. versionadded:: 0.9
 
-La grande majorité des plugins aura besoin de mettre à disposition des pages aux utilisateurs. Dans les versions antérieures, les plugins (tout comme le coeur par ailleurs) utilisaient pour ce faire des fichiers PHP directement accessibles. Depuis la version 0.9 ; cela n'est plus possible.
+You will need some URLs for your plugin. Galette rely on Slim framework to expose routes. Each URL fit a route, with a name, possible arguments, HTTP method, ...
 
-La présence d'un fichier ``_routes.php`` est obligatoire. Dans ce fichier, seront déclarées les différentes URL du plugin. Galette fournit automatiquement une URL du type ``{galette}/plugin/moplugin`` à laquelle des informations sur le plugin sont affichées. Toutes les routes déclarées dans un plugin se trouveront "sous" cette adresse (évitant ainsi toute collision avec Galette ou d'aures plugins).
+In plugins, you must add a ``_routes.php`` file. In this file, you will declare all your plugin URLs. Galette provide URL similar to ``{galette}/plugins/myplugin`` on which your own routes wil be append.
 
-Chaque route est caractérisée par différents éléments :
+A route is constitued of the following elements:
 
-* une URL,
-* d'éventuels paramètres d'URL, requis ou optionnels,
-* un nom (unique),
-* d'éventuelles restrictons d'accès,
-* une méthode d'accè (généralement `GET` et/ou `POST`).
+* an URL,
+* maybe some URL parameters, some may be required,
+* a name (unique),
+* access restriction,
+* a HTTP method (`GET` and/or `POST`).
 
-Un exemple de route relativement simple donnerait :
+A simple route example would look like:
 
 .. code-block:: php
 
    <?php
    $this->get(
-       __('/main', 'monplugin_routes'),
+       '/main',
        function ($request, $response) {
            echo 'Welcome to the main page';
        }
-   )->setName('monplugin_main');
+   )->setName('myplugin_main');
 
-Cette route sera accessible à l'adresse ``{galette}/plugin/moplugin/main`` ; elle ne fera qu'afficher `Welcome to the main page`.
+This will respond to the URL ``{galette}/plugins/myplugin/main``; and it will just display `Welcome to the main page`.
 
 .. warning::
 
-   Les noms des routes doivent être uniques. Pour éviter toute collision, tout nom de route devra être préfixé par le nom du plugin.
+   Routes names must be unique. To prevent any collision, all plugins routes names must be prefixed with plugin name.
 
-Les routes peuvent avoir des paramètres obligatoires ou non. L'exemple suivant ajoute un paramètre `arg1` obligatoire et un paramètre `arg2` optionnel :
+Routes can have parameters, mandatory or not. Following example add the `arg1` required parameter, and the `arg2` optionnal one:
 
 .. code-block:: php
 
    <?php
    $this->get(
-       __('/test', 'monplugin_routes') . '/{arg1}[/{arg2}]',
+       '/test/{arg1}[/{arg2}]',
        function ($request, $response, $args) {
            //wit an URL like /test/value1/value2
            echo $args['arg1']; //value1
@@ -125,18 +129,16 @@ Les routes peuvent avoir des paramètres obligatoires ou non. L'exemple suivant 
        }
    )->setName('monplugin_test');
 
-Il est aussi possible de restreindre la valeur d'un paramètre par le biais d'une expression régulière. Consultez la `documentation sur les routes de Slim <https://www.slimframework.com/docs/objects/router.html>`_ pour davantage de détails.
+It is also possible to restrict a parameter value using regular expressions. See `Slim routing documentation <https://www.slimframework.com/docs/objects/router.html>`_ to know more.
 
-Routes et templates
--------------------
+Routes and templates
+--------------------
 
-Bien entendu, lancer de pauvres ``echo`` depuis une route n'est probablement pas ce que nous souhaitons faire ; c'est souvent un peu plus compliqué :-)
+Of course, you will probably need something more than simple ``echo`` from a display point of view;
 
-D'une manière générale, au sein de Galette, les routes `GET` affichent des informations ou des formulaires, et les routes `POST` effectuent les actions. Ainsi, un formulaire a pour destination la route `POST`, cette dernière effectue le traitement, et renvoie sur la route `GET`.
+Globally, inside Galette, `GET` routes displays informations (lists, forms, ...) and `POST` routes do actions. That way, forms will have a `POST` action, that will do the job, and then will redirect on a `GET` page.
 
-Les considérations relatives aux arguments sont valables dans les deux cas.
-
-L'affichage d'une page par le biais d'un template Smarty ressemblerait à :
+Displaying a page from a Smarty template would look like:
 
 .. code-block:: php
 
@@ -144,34 +146,29 @@ L'affichage d'une page par le biais d'un template Smarty ressemblerait à :
    // display page
    $this->view->render(
       $response,
-      'file:[' . $module['route'] . ']fichier.tpl', [
+      'file:[' . $module['route'] . ']file.tpl', [
           'require_dialog' => true,
           'list_values'    => $myvalues
       ]
    );
 
-On constate ici que le second argument passé à la méthode ``render()`` suit un schéma particulier.
-
-Il peut y avoir conflit si un fichier de template portant le même nom existe déjà (dans le coeur ou das un autre plugin). Dans le cas où l'un de vos fichiers template porte le même nom qu'un autre (de Galette ou d'un autre plugin) ; le premier appelé sera compilé, et ce sera toujours celui-là qui sera chargé.
-
-Pour parer à ce problème, les dossiers des templates sont couplés à une clé unique pour chaque plugin. De cette manière, il n'est pas possible d'avoir de doublons ; mais il est nécessaire de spécfier la clé lors de l'appel.
-
-Ainsi, ``fichier.tpl`` désigne le fichier ``fichier.tpl`` du coeur, et ``file:[abcde]fichier.tpl`` le fichier ``fichier.tpl`` du plugin dont l'identifiant est ``abcde``.
+The use of the ``$module['root']`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded frinstead of the one from your plugin, and this won't work.
+Then, ``file.tpl`` is core file ``file.tpl``, and ``file:[abcde]file.tpl`` the ``file.tpl`` file from plugin which identifier is ``abcde``.
 
 .. note::
 
-   Galette se charge d'attribuer les identifiants aux plugins. N'essayez pas de le deviner, et utilisez plutôt ``$module['route']``. Cette variable est rendue accessible aux routes des plugins, utilisez le mot clé ``use`` pour l'inclure dans vos fonctions anonymes :
+   Galette is in charge to attribute identifiers to plugins. Do no try to guess it, and use ``$module['root']`` which is unique per plugin. Rely on the ``use`` keyword to pass it to your anonymous functions:
 
    .. code-block:: php
 
       $this->get(
-          __('/main', 'monplugin_routes'),
+          'myplugin_routes',
           function ($request, $response) use ($module) {
               //$module is available here
           }
       );
 
-Les redirections sont simples à mettre en oeuvre :
+Redirections are simple to do:
 
 .. code-block:: php
 
@@ -180,47 +177,47 @@ Les redirections sont simples à mettre en oeuvre :
       ->withStatus(301)
       ->withHeader('Location', $this->router->pathFor('slash'));
 
-Restrictions d'accès
---------------------
+Access restrictions
+-------------------
 
-Galette fournit un `middleware <https://www.slimframework.com/docs/concepts/middleware.html>`_ qui permet de restreindre l'accès aux différentes routes.
+Galette provides a `middleware <https://www.slimframework.com/docs/concepts/middleware.html>` which restricts routes access.
 
-L'accès peut être restreint aux rôles suivants :
+Following roles can be used:
 
-* ``superadmin`` (super-administrateur),
-* ``admin`` (administrateurs),
-* ``staff`` (membres du bureau)
-* ``groupmanager`` (responsables de groupes)
-* ``member`` (utilisateur connecté)
+* ``superadmin`` (super-administrator),
+* ``admin`` (administrators),
+* ``staff`` (staff members)
+* ``groupmanager`` (groups managers)
+* ``member`` (logged in user)
 
-Les accès ``groupmanager`` et ``member`` requièrent généralement une vérification supplémentaire au sein de la route. En effet, si une route est accessible aux responsables de groupes ; leur accès doit se limiter aux adhérents des groupes qu'ils gèrent.
+``groupmanager`` and ``member`` roles requires additional work. A route that is accessible for groups managers, but their access must certainly be restricted to the groups they owns.
 
-Pour ajouter une restriction d'accès sur une route ; il suffit d'ajouter un appel au middleware fourni par la variable ``$authenticate`` :
+To add a restriction access to a route, call the ``$authenticate`` middleware on your route:
 
 .. code-block:: php
 
    <?php
    $this->get(
-       __('/main', 'monplugin_routes'),
+       'myplugin_routes',
        function ($request, $response) {
            echo 'Welcome to the main page';
        }
-   )->setName('monplugin_main')->add($authenticate);
+   )->setName('myplugin_main')->add($authenticate);
 
-Il faut à côté de cela définir les accès en fonction des noms de routes dans le fichier ``_define.php``. Dans l'exemple donné au début de la documentation, la route ``monplugin_main`` a été restreinte aux seuls membres du bureau.
+Along with that, you have to define the access to that route in your ``_define.php`` file. In the example from the begginning of the doc, ``myplugin_main`` route has been restricted to staff members only.
 
-Les pages qui ne nécéssitent pas de restriction particulière n'utiliseront simplement pas le middleware. Il en va de même pour les pages qui pourraient à la fois être accessibles pour un visiteur comme pourun utilisateur authentifié. Dans ce dernier cas, c'est au seain de la route ou des fonctions que la restriction devrait être appliquée.
+Pages which does not need any specific restriction will just not call the middleware. It is the same for pages which may be displayed for boths logged in and not. In that case, you must have logic in your route and/or in your classes to manage access.
 
-Pages publiques
----------------
+Public pages
+------------
 
-Certaines pages peuvent être accessibles de manière publique ; mais cela est soumis à un paramétrage des préférences de Galette. Pour de telles pages, on testera la valeur de la préférence, et on redirigera au besoin :
+Some of pages may be accessible without authentication, this is a Galette preference. For such pages, you will have to check if public pages are active for current logged in user:
 
 .. code-block:: php
 
    <?php
    $this->get(
-       __('/main', 'monplugin_routes'),
+       '/main',
        function ($request, $response) {
            if (!$this->preferences->showPublicPages($login)) {
                //public pages are not actives
@@ -228,72 +225,70 @@ Certaines pages peuvent être accessibles de manière publique ; mais cela est s
                    ->withStatus(301)
                    ->withHeader('Location', $this->router->pathFor('slash'));
            }
-           //contenu si accessible
+           //content if accessible
        }
-   )->setName('monplugin_public');
+   )->setName('myplugin_public');
 
-Utilisation
------------
+Usage
+-----
 
-Vous serez certainement amenés à devoir utiliser vos routes ; soit depuis un template Smarty, soit depuis une ate route (dans le cas d'une redirection par exemple).
+You will need to use links to your different routes, either in Smarty templates or in routes themselves (redirection case for example).
 
-En PHP, il faudra utiliser la fonction ``pathFor``. Si la route attend des paramètres, il faudra les passer sous forme de tableau en second paramètre :
+From PHP code, you will use ``pathFor`` method. If route is waiting for parameters, send them as an indexed array:
 
 .. code-block:: php
 
    <?php
-   $this->router->pathFor('monplugin_main');
-   $this->router->pathFor('monplugin_test', ['arg1' => 'value1', 'arg2' => 'value2']);
+   $this->router->pathFor('myplugin_main');
+   $this->router->pathFor('myplugin_test', ['arg1' => 'value1', 'arg2' => 'value2']);
 
-Depuis un template Smarty ; utilisez la fonction ``path_for`` :
+From a Smarty template, use the ``path_for`` function:
 
 .. code-block:: smarty
 
-   {path_for name="monplugin_main"}
-   {path_for name="monplugin_test" data=["args1" => "value1", "args2" => "value2"]}
+   {path_for name="myplugin_main"}
+   {path_for name="myplugin_test" data=["args1" => "value1", "args2" => "value2"]}
 
 .. note::
 
-   Si un paramètre requis est manquant, le chemin ne pourra être généré et une erreur se produira.
+   If a required parameter is missing, path will not be generated and this will produce an error.
 
 .. _plugins_web_resource:
 
-Ressources web
-==============
+Web resources
+=============
 
-Les différentes ressources qui doivent être disponibles depuis le navigateur (images, fichiers CSS, ficiers javascript, ...) doivent être pacées dans le dossier ``webroot``.
-
-En effet, les plugins n'étant plus directement disponibles dans l'arborescence du serveur web, Galette fournit un mécanisme qui les servira à partir de ce dossier. Tous les autres dossiers ne seront pas rendus accessibles depuis le serveur web.
+In Galette, all resources that must be read from the server (images, CSS and javascript files) must be in the ``webroot`` directory in your plugin. This one will be kind of mapped to be served from the web.
 
 Smarty
 ======
 
 .. _smartyextends:
 
-Héritage
+Heritage
 --------
 
-Avant Galette 0.9, les templates ne fournissaient qu'une partie de la page à afficher, et le code PHP se chargeait de l'inclure au sein de la page. Désormais, les `fichiers de templates doivent déclarer leur héritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_.
+Before Galette 0.9, templates was providing a page part only, and PHP code was in charge to include it in the page. But now, `template files must declare their heritage <https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_.
 
-Trois possibilités de template parent sont disponibles :
+Three parent templates are provided:
 
-* ``page.tpl`` pour la grande majorité des pages,
-* ``public_page.tpl`` pour les pages publiques,
-* ``ajax.tpl`` pour les pages chargées en ajax.
+* ``page.tpl`` for most of the pages,
+* ``public_page.tpl`` for public pages,
+* ``ajax.tpl`` for AJAX called pages.
 
-Chacun de ces templates fournit un bloc ``content`` pour afficher le contenu de la page. Les template ``page.tpl`` et ``public_page.tpl`` fournissent également un bloc ``javascript`` pour inclure les balises ``<script>``. Aucun des blocs n'est obligatoire ; mais une page sans contenu aurait relativement peu d'intérêt :)
+Parents templates provide a ``content`` block to display page contents. ``page.tpl`` and ``public_page.tpl`` also provide a ``javascript`` to include all ``<script>`` elements at the right place. None of those blocks is mandatory, but an empty page would not make sense ;)
 
 .. code-block:: smarty
 
    {extends file="page.tpl"}
    {block name="content"}
-       Votre contenu ici
+       Your content here
    {/block}
    {block name="javascript"}
-       <script>alert('Coucou de javascript.');</script>
+       <script>alert('Hello from javascript.');</script>
    {/block}
 
-L'héritage d'un fichier template peut être adapté dynamiquement en fonction de certaines variables :
+Parent template can be conditionned if you use a variable:
 
 .. code-block:: smarty
 
@@ -304,62 +299,61 @@ L'héritage d'un fichier template peut être adapté dynamiquement en fonction d
    {/if}
    {extends file=$extend}
 
+Variables assignement
+---------------------
 
-Assignation de variables
-------------------------
-
-Il est possible d'assigner à Smarty des variables globales supplémentaires (via ``$tpl->assign('ma_var', 'ma_valeur');``). Pour cela, il faut ajouter un fichier nommé ``_smarties.php`` à votre plugin. Pour l'heure, il ne peut contenir qu'un tableau php nommé ``_tpl_assignments`` : 
+It is possible to pass global variables to Smarty (with ``$tpl->assign('my_var', 'my_value');``). To achieve that, add a ``_smarties.php`` file to your plugin. It may currently provide only one array named ``_tpl_assignments``:
 
 .. code-block:: php
 
    <?php
    $_tpl_assignments = array(
-       'ma_var'             => 'mavaleur',
+       'my_var'             => 'my_value',
        'dossier_includes'   => '__plugin_include_dir__dossier',
        'nomplugin_tpl_dir'  => '__plugin_templates_dir__',
        'nomplugin_dir'      => '__plugin_dir__'
    );
    ?>
 
-Les variables déclarées comme ceci seront alors accessibles depuis les templates Smarty de la manière habituelle : ``{$ma_var}``.
+All declared variables will be accessible from Smarty templates like all other variables: ``{$my_var}``.
 
-Des remplacements automatiques peuvent être appliqués au sein des variables déclarées, en utilisant des chaînes spécifiques :
+Automatic replacements may occurs in declared variable, using specific strings:
 
-* ``__plugin_include_dir__`` ira chercher le dossier ``includes`` dans l'arborescence de votre plugin (ça donnera ``./plugins/nom_dossier/includes/dossier`` pour notre exemple)
-* ``__plugin_templates_dir__`` sera remplacé par le chemin vers le dossier ``templates`` de vote plugin (ça donnera ``./plugins/nom_dossier/templates/`` pour notre exemple)
-* ``__plugin_dir__`` sera remplacé par le chemin vers le dossier de vote plugin (ça donnera ``./plugins/nom_dossier/`` pour notre exemple)
+* ``__plugin_include_dir__`` will look for ``includes`` directory in your plugin (will be ``./plugins/dir_name/includes/dossier`` for our example)
+* ``__plugin_templates_dir__`` will be replaced with plugin ``templates`` directory (will be ``./plugins/dir_name/templates/`` for our example)
+* ``__plugin_dir__`` will be replaced with path to your plugin (will ``./plugins/dir_name/`` for our exemple)
 
-De cette façon, quelque soit le nom du dossier de votre plugin, les chemins seront les bons :-)
+That way, whatever the directory name used, you'll find the good one :)
 
-Entrées de menu
----------------
+Menu entries
+------------
 
-Les liens du menu (et les liens dans les templates d'une manière générale) pointeront sur une route, en utilisant son nom. Utilisez la fonction ``path_for``.
+Menu links (and links in template more globally) will refer to a route using its name. Use the ``path_for`` Smarty function as already said.
 
-Un fichier ``menu.tpl`` dans le répertoire des templates peut être ajouté, il sera affiché en dessous des autres entrées de menu de Galette. Il doit avoir un aspect similaire aux menus de Galette, à savoir :
+Presence of a ``menu.tpl`` file in your template directory will add its content below other Galette menu entries. It must be the same design as Galette core menus:
 
 .. code-block:: smarty
 
-   {* Titre du bloc *}
-   <h1 class="nojs">{_T string="My plugin" domain="monplugin"}</h1>
-   {* Entrées du menu *}
+   {* Block title *}
+   <h1 class="nojs">{_T string="My plugin" domain="myplugin"}</h1>
+   {* Menu entries *}
    <ul>
-      <li><a href="{path_for name="main"}">{_T string="Main" domain="monplugin"}</a></li>
-      <li>{_T string="My first plugin menu entry" domain="monplugin"}</li>
-      <li>{_T string="My second plugin menu entry" domain="monplugin"}</li>
+      <li><a href="{path_for name="main"}">{_T string="Main" domain="myplugin"}</a></li>
+      <li>{_T string="My first plugin menu entry" domain="myplugin"}</li>
+      <li>{_T string="My second plugin menu entry" domain="myplugin"}</li>
    {if $login->isAdmin()}
-      {* Une entrée de menu visible uniquement par les administrateurs *}
-      <li>{_T string="My admin plugin menu entry" domain="monplugin"}</li>
+      {* A meun entry displayed only for admin *}
+      <li>{_T string="My admin plugin menu entry" domain="myplugin"}</li>
    {/if}
    </ul>
 
 
-Pages publiques
-^^^^^^^^^^^^^^^
+Public pages
+^^^^^^^^^^^^
 
 .. versionadded:: 0.7.8
 
-Il est également possible d'ajouter des pages publiques aux plugins. Les liens vers ces pages sont ajoutés via le fichier ``public_menu.tpl`` qui ressemble à ceci :
+Public pages menu is distinct in Galette, if you want to add public pages in your menu, put compatible contents in ``public_menu.tpl``:
 
 .. code-block:: smarty
 
@@ -369,76 +363,75 @@ Il est également possible d'ajouter des pages publiques aux plugins. Les liens 
    <a id="pmaps" class="button{if $cur_route eq 'maps_map'} selected{/if}" href="{path_for name="maps_map"}">{_T string="Maps" domain="maps"}</a>
    {/if}
 
-Cette entrée de menu sert à afficher le lien vers la partie publique du menu pour les utilisateurs connectés (première partie), qui sera ajoutée à l'entrée « Pages publiques » de Galette. La seconde partie sert à afficher le bouton en haut de page depuis les pages publiques elles-mêmes.
+This menu entry will display a link for logged in members (first part) in the "Public pages" Galette menu, while second part is used to display top page button on public pages.
 
-Ajout de headers HTML
----------------------
+Add HTML headers
+----------------
 
-La présence d'un fichier nommé ``headers.tpl`` dans les templates de votre plugin ajoutera automatiquement sont contenu dans l'en-tête de la page (dans la balise ``<head>`` donc) ; après le chargement de l'en-tête standard de Galette.
+When present, the content of ``header.tpl`` file will add its content in HTML pages headers (the ``<head>`` tag), just after core ones.
 
 .. code-block:: smarty
 
    <link
       rel="stylesheet"
       type="text/css"
-      href="{path_for name="plugin_res" data=["plugin" => $module_id, "path" => "galette_nomplugin.css"]}"/>
+      href="{path_for name="plugin_res" data=["plugin" => $module_id, "path" => "galette_pluginname.css"]}"/>
 
-Notez que les en-têtes ajoutés par ce biais seront disponibles dans l'ensemble de l'application. Pour le cas des feuilles CSS, prenez garde à ne pas modifier des règles CSS existantes dans Galette ; cela pourrait causer des bogues d'affichage.
+Headers added this way will be used in the entire application. For CSS stylesheet files, please make sure not to change existing Galette rules, this may cause display issues.
 
-Notez également que le :ref:`chemin vers le fichier CSS est obtenu en utilisant une route <plugins_web_resource>`, et non pas un chemin sur le système de fichiers.
+Also note the :ref:`path to the CSS file must be obtained using a route <plugins_web_resource>`.
 
-Ajout d'actions sur les membres
--------------------------------
+Add actions on members
+----------------------
 
-Il est possible pour un plugin d'ajouter des actions sur les membres. En plus d'une entrée dans le menu pour les fonctionnalités du Plugin, il est possible d'ajouter une ou plusieurs entrées dans la gestion des adhérents ou lors de la consultation d'une fiche.
+It is possible for a plugin to add actions on members, adding one or more entries in members list "actions" column, or displaying one member informations.
 
-Un fichier nommé ``adh_actions.tpl`` dans les templates du plugin permettra l'ajout des actions dans la liste des adhérent (les actions par défaut étant « Modifier » ou « Supprimer »). Il s'agit d'une simple liste de liens :
+An ``adh_actions.tpl`` file in your plugin templates will add new actions in members list, with a simple list of links:
 
 .. code-block:: smarty
 
    <a href="{path_for name="myroute" data=["id" => $member->id]}">
       <img
          src="{path_for name="plugin_res" data=["plugin" => $module_id, "path" => "images/icon-plugin.png"]}"
-         alt="{_T string="Plugin menu entry" domain="monplugin"}"
+         alt="{_T string="Plugin menu entry" domain="myplugin"}"
          width="16" height="16"/>
    </a>
 
-Un autre fichier, nommé ``adh_fiche_action.tpl`` dans les templates du plugin permettra quant à lui l'ajout d'actions lors de la consultation d'une fiche. Il s'agit d'une suite d'éléments de liste HTML (``<li></li>``) :
+Another file named ``adh_fiche_action.tpl`` in your plugin templates will add actions displaying a member for edition, as a HTML list element (``li`` tag):
 
 .. code-block:: smarty
 
    <li>
       <a
          href="{path_for name="myotherroute" data=["id" => $member->id]}"
-         id="btn_plugins_nomplugin">
-         {_T string="Plugin menu entry" domain="monplugin"}
+         id="btn_plugins_myplugin">
+         {_T string="Plugin menu entry" domain="myplugin"}
       </a>
    </li>
 
-Toute action sur les membres requiert évidemment un code qui va traiter les données envoyées au sein même du plugin.
+Each added action must of course add a PHP code that will handle sent data.
 
-Ajout d'actions combinées sur les membres
------------------------------------------
+Add combined actions on members
+-------------------------------
 
 .. versionadded:: 0.8
 
-Un certain nombre d'actions combinées sont disponibles par défaut via la liste des membres, comme l'envoi de mailings, l'export CSV, la génération des étiquettes, ... Il est possible d'ajouter une nouvelle action pour un plugin. Un fichier nommé ``adh_batch_action.tpl`` et placé dans les templates du plugin, il contiendra une suite d'éléments de liste HTML (``<li></li>``) comprenant un bouton d'envoi (``<input type="submit"/>``) :
+Some actions are available to be run combined with a members selection from the list, like mailings, CSV exports, labels generations, ... It is also possible to add that kind of action from a plugin. Create a ``adh_batch_action.tpl`` file in your plugin templates, it will contain a HTML list element (``li`` tag) with a send button (``<input type="submit"/>``):
 
 .. code-block:: smarty
 
    <li>
        <input type="submit"
            name="pluginname_actionname"
-           value="{_T string="My plugin batch action" domain="monplugin"}"
+           value="{_T string="My plugin batch action" domain="myplugin"}"
        />
    </li>
 
-Déclaration de constantes
-=========================
+Constants declaration
+=====================
 
-Si le plugin doit avoir ses propres tables dans la base de données, il est conseillé de lui adjoindre un préfixe supplémentaire afin que chaque table soit facilement identifiable dans la base.
-
-Il est conseillé de placer les déclarations de constantes dans un fichier ``_config.inc.php`` :
+If your plugin must own his own tables in database, it is adivsed to declare an extra prefix so each table can be easily identified in the database.
+You can declare constants in a ``_config.inc.php`` file to achieve that:
 
 .. code-block:: php
 
@@ -446,7 +439,7 @@ Il est conseillé de placer les déclarations de constantes dans un fichier ``_c
    define('PLUGIN_PREFIX', 'myplugin_');
    ?>
 
-L'appel à une table dans le code se ferait donc de la façon suivante :
+Call to a table in the code will then look like:
 
 .. code-block:: php
 
@@ -462,22 +455,22 @@ L'appel à une table dans le code se ferait donc de la façon suivante :
 Internationalisation
 ====================
 
-Chaque plugin doit fournir les traductions des nouvelles chaînes qu'il propose. C'est le :doc:`système global d'internationalisation de Galette <i18n>` qui s'applique ici ; la principale tâche (hormis la mise à jour des fichiers au cours de la vie du plugin, bien entendu) consiste à mettre en place les fichiers de traduction pour la première fois.
+Every plugin must provide translations for new string it proposes. :doc:`Galette global internationalisation system <i18n>` applies here. The main task (exepted files update while developing plugin) consists to set up translation files the first time.
 
-Pour ce faire, copiez dans le dossier ``lang`` du plugin depuis le dossier ``lang`` d'un autre plugin les fichiers ``Makefile`` et ``xgettext.py`` :
+Use an official plugin up to date as references, and copy ``lang/Makefile`` and ``lang/xgettext.py`` files in your own ``lang`` directory:
 
 .. code-block:: bash
 
    $ cd plugins/MyPlugin/lang
-   $ cp ../../../lang/Makefile ../../../lang/xgettext.py .
+   $ cp ../../MapsPlugin/lang/Makefile ../../MapsPlugin/lang/xgettext.py .
 
-Quelques adaptations sont à apporter au fichier ``Makefile`` pour qu'il soit fonctionnel et adapté au plugin :
+You will have to adapt ``Makefile`` file to your plugin:
 
-* modifier la valeur de ``DOMAINS`` pour réfléter les domaines de votre plugin ;
-* modifier la valeur de ``LANGUAGES`` pour réfléter les langues de votre pugin ;
-* adapter la valeur de ``PHP_SOURCES``.
+* change ``DOMAINS`` value to reflect translation(s) domain(s) of your plugin;
+* change ``LANGUAGES`` value to reflect available langs of your plugin;
+* adapt ``PHP_SOURCES`` value.
 
-  La variable ``PHP_SOURCES`` va chercher et lister les fichiers susceptibles de contenir des chaînes à traduire. En fonction de la hiérarchie des dossiers (et des besoins de votre plugin, bien entendu), ces chemins peuvent varier. Par exemple, pour un plugin relativement simple qui apporterait juste des classes PHP et un ou plusieurs templates Smarty ; il faudra utiliser :
+``PHP_SOURCES`` variables will list all files that mays contains strings to translate. Regarding your needs and your plugins directory hierarchy; they may vary. For example, for a plugin with only a few PHP classes and some Smarty templates, you would use:
 
   .. code-block:: bash
 
@@ -485,90 +478,81 @@ Quelques adaptations sont à apporter au fichier ``Makefile`` pour qu'il soit fo
                    $(shell find ../lib/GaletteMonPlugin/ -name \*.php) \
                    $(shell find ../templates -name \*.tpl)
 
-Si vous suivez les règles de développement de Galette et de ses plugins, il est fort peu probable que vous ayez des ajouts à faire aux ``PHP_SOURCES``. La modification plus avancée du fichier ``Makefile`` sort du cadre de ce manuel.
+If you follow Galette development standards, you should not have to change ``PHP_SOURCES``. Advanced editing of the ``Makefile`` is out of the gaols of the documentation.
 
-Le premier lancement de `make` peut vous renvoyer pas mal d'erreurs, que vous pouvez ignorer en toute quiétude ; les fichiers ``.po`` sont vides, et il n'apprécie pas :) En revanche, les dossiers et fichiers requis ont été générés et remplis, et vous pouvez maintenant utiliser votre logiciel de traduction de fichiers gettext pour renseigner leur contenu.
+First time you will launch `make`, you may see a lot of errors. You should ignore them, the script is not happy to work with empty `PO` files :) All required directories and files will be created, and you can now use your translation tool to work on them.
 
-Internationalisation des routes
--------------------------------
+Update scripts
+==============
 
-Les routes dans Galette sont internationnalisées ; bien que ce ne soit pas une obligation. Si vous souhaitez utliser les possibilités d'internationalisation, vous devrez utiliser la méthode ``__()`` qui se comporte exactement comme la fonction ``_T()`` mais qui n'affichera que la chaîne d'origine si la traduction est manquante.
+In a new version, your plugin may need to add/change/drop new tables/columns/else in your tables. To achieve that, you must create a ``scripts`` directory. It is handled the exact same ay as ``{galette}/install/scripts/``, and must follow the same rules:
 
-Il convient aussi de respecter certaines règles quant aux URL : éviter les caractères spéciaux, éviter les majuscules, remplacer les espaces par des tirets simples, ... et être concis :)
+* installation and update scripts must be provided for both MariaDB (MySQL) and PostgreSQL,
+* installation script names must be ``mysql.sql`` and ``pgsql.sql`` in order to be found from Galette,
+* update scripts must also follow a naming convention: ``upgrade-to-{version}-{dbtype}.sql`` or ``upgrade-to-{version}.php``, where `{version}` is the new plugin version and `{dbtype}` the database type (`mysql` or `pgsql`). PHP update scripts does not rely on database engine, if there are specificities, they'll be handled in code itself.
 
-Scripts de mise à jour
-======================
+Respecting those rules ensures plugin will be supported from the Galette plugins management interface, and user will be able to install or update easily your plugin.
 
-Certains plugins requièrent la création de nouvelles tables dans la base de données. Dans ce cas, il faudra créer un répertoire ``scripts`` dans votre plugin, et y placer les scripts adéquats. Ce dossier se veut le pendant de ``{galette}/install/scripts/``, et est donc soumis aux mêmes règles :
-
-* les scripts d'initialisation doivent être fournis pour MySQL et pour PostgreSQL
-* les scripts de création doivent impérativement être nommés ``mysql.sql`` et ``pgsql.sql``. L'installation de la base du plugin depuis Galette échouera si le script n'est pas nommé correctement (il ne pourra pas être trouvé),
-* les scripts de mise à jour respectent la nomenclature ``upgrade-to-{version}-{dbtype}.sql`` ou ``upgrade-to-{version}.php`` ; où `{version}` correspond à la nouvelle version du plugin, et `{dbtype}` au type de base de données (`mysql` ou `pgsql` donc).
-
-Le respect de ces règles assure que le plugin sera pleinement pris en charge par l'interface de gestion des plugins de Galette, et que l'utilisateur sera en mesure de « facilement » installer ou mettre à jour la base du plugin.
-
-Classes PHP
+PHP classes
 ===========
 
-Certains plugins auront probablement besoin de leurs propres classes. Dans Galette, la hiérarchie, le nom et `l'espace de nom <http://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) sont importants.
+Plugins may need their own classes. For Galette, class name and `namespace <https://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) are importants.
 
-Toutes les classes doivent se trouver dans un dossier ``lib/{namespace}``. Chaque classe est un fichier php qui porte le même nom que la classe. L'espace de nom est déterminé par le nom du plugin déclaré dans le fichier ``_define.php``. Dans notre exemple, le nom du plugin étant ``Galette Mon Plugin``, l'espace de noms sera donc ``GaletteMonPlugin``.
+All classes must be in the ``lib/{namespace}`` directory of your plugin. Each class is a PHP file which name is the class name (including case). Namespace is built with plugin name as declared in ``_define.php``. In our example, plugin name is ``Galette My Plugin`` and therefore the namespace will be ``GaletteMyPlugin``.
 
-Ainsi, une classe `MaClasse` se trouverait donc dans ``lib/GaletteMonPlugin/MaClasse.php`` :
+The `MyClass` class will will be written in ``lib/GaletteMyPlugin/MyClass.php``:
 
 .. code-block:: php
 
     <?php
-    namespace GaletteMonPlugin;
+    namespace GaletteMyPlugin;
 
-    class MaClasse {
+    class MyClass {
         [...]
     }
 
-Ensuite, pour y faire référence :
+And to call it:
 
 .. code-block:: php
 
     <?php
     [...]
-    use GaletteMonPlugin\MaClasse;
-
-    $instance = new MaClasse();
-    //ou encore :
-    $instance = new \GaletteMonPlugin\MaClasse();
+    use GaletteMyPlugin\MClass;
+    $instance = new MyClasse();
+    //or
+    $instance = new \GaletteMyPlugin\MyClass();
 
 .. warning::
 
-    Dès que l'on utilise les espaces de noms, les appels aux objets d'autres bibliothèques ou même d'objets PHP standards y est soumis. Ainsi, dans votre classe ``MaClasse``, les noms des classes seront résolus comme suit :
+    When you use namespaces, all other libraries or PHP objects used them aswell. In your ``MyClass``, names of classes will be resolved that way:
 
     .. code-block:: php
 
         <?php
-        namespace GaletteMonPlugin;
+        namespace GaletteMyPlugin;
 
-        class MaClasse {
+        class MyClass {
             public myMethod() {
-                $object = new stdClass(); // ==> référencera \GaletteMonPlugin\stdClass() - qui n'existe pas
-                $otherobject = new \stdClass(); // ==> référencera l'objet standard stdClass de PHP
+                $object = new stdClass(); // ==> instanciate a \GaletteMyPlugin\stdClass() - that does not exists
+                $otherobject = new \stdClass(); // ==> instanciate a PHP stdClass object
             }
         }
 
+Third party libraries
+=====================
 
-Bibliothèques externes
-======================
+Third party dependencies must not be included in plugin sources, but in releases only.
 
-Les bibliothèques externes ne devraient pas être inclues dans les sources du plugin, uniquement dans ses releases.
+Galette uses :ref:`composer <deps>` to handle third party libraries, plugins can do the same if needed.
 
-Galette utilise `composer <https://getcomposer.org>`_ pour gérer les bilibothèques externes ; les plugins peuvent en faire de même.
+File system hierarchy
+=====================
 
-Hiérarchie
-==========
-
-Au final, la hiérarchie d'un plugin devrait ressembler à ça :
+Finally, a plugin directory should look like:
 
 * |folder| `plugins`
 
-  * |folder| `galette-monplugin`
+  * |folder| `galette-myplugin`
 
     * |folder| `includes`
 
@@ -580,7 +564,7 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
 
     * |folder| `lib`
 
-      * |folder| `GaletteMonPlugin`
+      * |folder| `GaletteMyPlugin`
 
         * |phpfile| `...`
 
@@ -606,24 +590,22 @@ Au final, la hiérarchie d'un plugin devrait ressembler à ça :
     * |phpfile| `_routes.php`
     * |file| `...`
 
-Pour le reste... Il suffit de vous armer du `manuel PHP <http://fr.php.net/manual/fr/>`_, du `manuel Smarty <http://www.smarty.net/manual/fr/>`_, d'un client de messagerie email pour `contacter les listes de diffusion <http://galette.eu/dc/index.php/pages/Contact#mailing_lists>`_, et éventuellement d'un `client IRC <http://xchat.org/>`_ pour rejoindre `le canal IRC de Galette <http://galette.eu/dc/index.php/pages/Contact#irc>`_ ;-)
+And for all remaining development questions... Well, rely on `PHP manual <https://php.net/manual/>`_, `Smarty manual <https://www.smarty.net/docs/en/>`_, a mail client to `write to mailing lists <https://galette.eu/dc/index.php/pages/Contact?navlang=en#mailing_lists>`_, and potentially an `IRC client <https://hexchat.github.io/>`_ to join `Galette IRC channel <https://galette.eu/dc/index.php/pages/Contact?navlang=en#irc>`_ ;-)
 
-Notez que les plugins (tout comme :ref:`le code principal de Galette <codage>`) doivent respecter les :ref:`conventions de codage PSR2 <conventions>` dans leur ensemble : http://www.php-fig.org/psr/psr-2/
+Just like `Galette core source code <codage>`_, plugins must follow :ref:`PSR2 coding standards <conventions>`: https://www.php-fig.org/psr/psr-2/
 
-Notez également que Galette supporte plusieurs bases de données différentes ; les plugins qui ont recours à une base doivent en faire de même.
+Since Galette provide support for both MariaDB and PostgreSQL, it would be logicial for plugins to do the same.
 
-URL du formulaire d'adhésion
-============================
+Registration form
+=================
 
 .. versionadded:: 0.8.3
 
 .. versionchanged:: 0.9
 
-Il est possible de reconfigurer le formulaire PDF d'adhésion. Une version basique est fournie dans Galette, qui utilise les modèles PDF ; mais cela pourrait ne pas convenir aux plus exigeants.
+It is possible to reconfigure the registration form. A basic version is provided in Galette, that uses PDF models, but it may not suit everyone needs. The :doc:`fullcard plugin <../plugins/fullcard>` for example, will override to provide its own version, without any change in the browsers URL (completely invisible for users).
 
-Le :doc:`plugin Fullcard <../plugins/fullcard>` par exemple, s'il est installé, remplacera le formulaire par défaut par un modèle plus précis (l'URL du formulaire ne changera pas).
-
-Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un code similaire à :
+This is enabled by creating a ``_preferences.php`` file in your plugin, with a content like:
 
 .. code-block:: php
 
@@ -631,10 +613,3 @@ Pour ce faire, dans le fichier ``_preferences.php`` du plugin, on ajoutera un co
    $_preferences = [
        'pref_adhesion_form' => '\GaletteFullcard\PdfFullcard'
    ];
-
-Debug
-=====
-
-À l'instar de Galette elle-même, un :doc:`peu de déboguage <debug>` sera peut-être nécéssaire durant vos développements...
-
-Notez qu'il vous sera possible de modifier certains :ref:`comportements de Galette (niveau de verbosité, mode de l'application, ...) <behavior>`.

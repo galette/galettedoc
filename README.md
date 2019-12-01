@@ -1,16 +1,17 @@
 # Galette
 ## Gestionnaire d'Adhérents en Ligne Extrêmement Tarabiscoté mais Tellement Efficace
 
+[![Documentation Status](https://readthedocs.org/projects/galette/badge/?version=latest)](https://doc.galette.eu/?badge=latest)
+
 ### English
 
 [Galette](https://galette.eu) is a membership management web application towards non profit organizations; released under GPLv3.
 This repository hosts its documentation.
 
-Last stable release documentations can be found on:
-https://galete.eu/documentation
+- [last stable documentation](https://doc.galette.eu/en/latest)
+- [last development documentation](https://doc.galette.eu/en/develop/)
 
-Current development version is a courtsy from [ReadsTheDocs](https://readthedocs.io):
-http://galette.readthedocs.io/fr/develop/
+Documentation is generated and hosted on [ReadsTheDocs](https://readthedocs.io).
 
 If you want to contribute, [Contact-us](http://galette.eu/dc/index.php/pages/Contact) ;)
 
@@ -19,10 +20,9 @@ If you want to contribute, [Contact-us](http://galette.eu/dc/index.php/pages/Con
 [Galette](https://galette.eu) est un outil de gestion d’adhérents et de cotisations en ligne à destination des associations, sous license GPLV3.
 Le présent dépôt contient sa documentation.
 
-La documentation pour la dernière version stable est disponible là :
-https://galete.eu/documentation
+- [documentation de la dernière version stable](https://doc.galette.eu/en/latest)
+- [documentation de la version de développement](https://doc.galette.eu/en/develop/)
 
-La version de développement de la documentation est grâceusement fournie par [ReadsTheDocs](https://readthedocs.io):
-http://galette.readthedocs.io/fr/develop/
+La documentation est générée et ditribuée par [ReadsTheDocs](https://readthedocs.io).
 
 Si vous souhaitez contribuer, [contactez-nous](http://galette.eu/dc/index.php/pages/Contact) ;)

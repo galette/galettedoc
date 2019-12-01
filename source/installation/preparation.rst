@@ -3,23 +3,21 @@
 .. _preparation:
 
 ***********
-Préparation
+Preparation
 ***********
 
-Quelques étapes de préparation sont requises pour l'installation de Galette. La façon de faire va dépendre de ce que vous souhaitez faire.
+You have to follow some preparation steps for Galette installation. The way to go differs on what you want to achieve.
 
 .. _droitsfichiers:
 
-Droits des fichiers
-===================
+File permissions
+================
 
 .. warning::
 
-   Une astuce malheureusement communément répandue consiste à donner tous les droits à tout le monde sur le dossier (``chmod 777``). Ceci est une très très mauvaise idée en termes de sécurité, nous vous déconseillons fortement cette pratique pour l'installation de Galette, vous êtes prévenus :-D
+   A commonly used hack is to give all rights to everyone recursively on the directory (``chmod 777``). This is a very very bad idea from a security point of view. Please do not use that hack, you've been warned ;)
 
-Il faut porter une attention particulière aux droits de certains dossiers de Galette. En effet, l'application aura besoin d'écrire dans certains d'entre eux, il faut nous assurer qu'elle le pourra.
-
-Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lui est pas possible d'écrire dans les dossiers adéquats :
+Some Galette directories need specific rights. The application will need to write in some of them, you have to ensure it will be possible. Here are directories that need a write access:
 
 * |folder| `config` [#configdirperms]_,
 * |folder| `data/attachments`,
@@ -32,26 +30,26 @@ Le processus d'installation ne vous permettra pas d'installer Galette s'il ne lu
 * |folder| `data/tempimages`,
 * |folder| `data/templates_c`
 
-.. [#configdirperms] Les droits en écriture dans le dossier ``config`` sont requis uniquement le temps de l'installation de Galette, nous vous conseillons de les supprimer une fois votre Galette installée :-)
+.. [#configdirperms] write access on ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)
 
 .. _installationsubdir:
 
-Exposition des dossiers par le serveur web
-==========================================
+Web server directory exposition
+===============================
 
 .. versionadded:: 0.9
 
-L'installation par défaut de Galette (et de beaucoup d'autres applications web) se résume souvent à copier un dossier complet dans un endroit accessible par le serveur web. Cette manière de procéder fonctionne sans problèmes, mais elle expose depuis la web des fichiers qui ne devraient pas l'être (en gros, toute la mécanique interne, les fichiers de configuration, ...).
+Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way.
 
-Il est possible avec Galette de limiter cela en n'exposant que le seul dossier ``webroot`` depuis le serveur web. Tous les autres dossiers seront davantage protégés ; il ne seront purement et simplement plus du tout accessibles depuis le serveur web lui même.
+It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!
 
 .. note::
 
-   Cette manière de faire est fortement conseillée si vous avez la possibilité de créer des hôtes virtuels sur votre hébergement.
+   Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution.
 
-   Ce ne sera souvent pas le cas malheureusement avec les hébergements mutualisés.
+   And that will certainly not be possible for many free hostings.
 
-Voici un exemple de configuration valable pour les serveurs Apache, incluant la "disparition" du `index.php` :
+Here is a virtual host configuration example, including the hide of `index.php`:
 
 .. code-block:: apache
 
@@ -78,13 +76,13 @@ Voici un exemple de configuration valable pour les serveurs Apache, incluant la 
        </Directory>
    </VirtualHost>
 
-L'équivalent pour Nginx serait :
+Nginx would be:
 
 .. code-block:: nginx
 
    server {
        #http
-       listen 80
+       listen 80;
        listen [::]:80;
 
        # https
@@ -109,12 +107,13 @@ L'équivalent pour Nginx serait :
 
        location ~ \.php$ {
            include snippets/fastcgi-php.conf;
+           # You may have to adapt this path, depending on your distribution.
            fastcgi_pass unix:/var/run/php7.0-fpm.sock;
        }
-   }
 
-   location ~ /(data|config|lib)/ {
-       deny all;
+       location ~ /(data|config|lib)/ {
+           deny all;
+       }
    }
 
 .. _installationunix:

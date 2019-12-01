@@ -1,160 +1,168 @@
 .. _man_preferences:
 
-**************************
-Les Préférences de Galette
-**************************
+*******************
+Galette preferences
+*******************
 
-Cet écran vous permet de configurer divers aspects relatifs à l'application ou à votre association.
+You can configure several aspects of Galette from the preferences.
 
-Général
+General
 =======
 
-Cet onglet vous donne accès aux paramètres relatifs à votre association :
+This tab defines some parameters related to your association:
 
 .. image:: ../_styles/static/images/usermanual/prefs_general.png
    :scale: 50%
    :align: center
-   :alt: Préférences de Galette, onglet Général
+   :alt: Galette settings, general tab
 
+* **Name**: name of the association,
+* **Description**: a short description,
+* **Footer text**: a text (HTML is allowed) to display in the footer of each page (to add a link to particular legal notices as example),
+* **Logo**: set your own logo,
+* **Address**,
+* **Zipcode**,
+* **Town**,
+* **Country**,
+* **Postal address**: choose which postal address will be used:
 
-* **Nom** : nom (raison sociale) de l'association,
-* **Description** : brève description,
-* **Texte de pied de page** : texte (HTML autorisé) à afficher en bas de chaque page (pour ajouter un lien vers des mentions légals spécifiques par exemple),
-* **Logo** : envoi de votre logo,
-* **Adresse** : adresse de l'association,
-* **Code postal** : code postal,
-* **Ville** : ville,
-* **Pays** : pays,
-* **Adresse postale** : choix de l'adresse postale qui sera affichée :
+  * either **from the preferences** to use the one entered in the form,
+  * either **from a member** to use address from a staff member,
 
-  * soit **depuis les préférences** pour utiliser l'adresse entrée plus haut,
-  * soit **depuis un membre du bureau** pour utiliser l'adresse de l'un des membres du bureau,
+* **Website**: website URL,
+* **Telemetry date**: date on which `telemetry infomations <https://telemetry.galette.eu>`_ was sent,
+* **Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_
 
-* **Site web** : éventuelle adresse du site Web de l'association,
-* **Date de télémétrie** : date à laquelle les `infomations de télémétrie <https://telemetry.galette.eu>`_ ont été envoyées,
-* **Date d'enregstrement** : date `d'enregistrement de votre instance de Galette <https://telemetry.galette.eu/reference>`_
-
-Paramètres
+Parameters
 ==========
 
-Paramètres de Galette :
+Galette related parameters:
 
 .. image:: ../_styles/static/images/usermanual/prefs_parameters.png
    :scale: 50%
    :align: center
-   :alt: Préférences de Galette, onglet Général
+   :alt: Galette settings, parameters tab
 
-* **Langue par défaut** : choix de la langue par défaut de l'application,
-* **Lignes/page** : nombre de lignes à afficher par défaut pour la pagination,
-* **Niveau d'historique** : modifie le niveau de l'historique :
+* **Default lang**: default instance lang (can be changed many ways by the user),
+* **Lines / page**: number of lines to display on lists for pagination,
+* **After member creation**: defines action to execute after a member has been added:
 
-  * **Activé** : l'historique interne est complètement activé,
-  * **Désactivé** : l'historique interne est complètement désactivé,
+  * create a new contribution,
+  * create a new transaction,
+  * create another member,
+  * show member,
+  * go to members list,
+  * go to main page,
 
-* **Statut d'adhésion** : le statut à affecter par défaut à tous les nouveaux utilisateurs créés,
-* **Durée d'adhésion** : durée maximale d'une adhésion,
-* **Date de début d'exercice** : date du début de l'exercice pour l'association,
-* **Pages publiques actives** : active ou désactive l'affichage des pages publiques,
-* **Afficher les pages publiques pour** : définit quels utilisateurs ont accès aux pages publiques. Vous pouvez choisir entre :
+* **Logging**: handles internal history:
 
-  * **Tout le monde**, y compris les utilisateurs qui ne sont pas authentifiés,
-  * **Adhérents à jour**,
-  * **Administrateurs et membres du bureau**,
+  * Enabled,
+  * Disabled,
 
-* **Auto-enregistrement actif** : active ou désactive la page d'auto enregistrement,
-* **URI du script post contribution** : l'URI d'un script qui sera appelé après l'enregistrement d'une nouvelle contribution. Plusieurs préfixes sont possibles, qui vont définir la méthode à utiliser :
+* **Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),
+* **Default account filter**: default account filter to apply on members list,
+* **Default membership extension**: membership extension in months,
+* **Beginning of membership**: beginning date of the financial period,
+* **Public pages enabled**: enable or disable public pages,
+* **Show public pages for**: defines who can see public pages:
 
-  * **galette://** : appel d'un script fourni par Galette, qui sera appelé avec la méthode HTTP POST. Le chemin doit être relatif à l'installation de Galette. Par exemple, L'URI du script d'exemple qui se trouve dans ``galette/post_contribution_test.php`` sera `galette://post_contribution_test.php`.
-  * **get://** ou **post://** : utilisation de la méthode HTTP GET ou HTTP POST. Dans ces deux cas de figure, le préfixe sera automatiquement rempalcé par ``http://`` par Galette,
-  * **file://** : appel d'un fichier sur le serveur, le chemin complet doit être fourni, le script de destination doit être exécutable et fournir au besoin le shellbang nécessaire. Un courriel qui contiendra les informations sur la contribution, ainsi que le retour du script sera envoyé à l'administrateur en cas de problème. Le fonctionnement est pareil à celui de cron : si le script renvoie quelque chose, un courriel est envoyé.
+  * **Everyone**, including simple visitors,
+  * **Up to date members**,
+  * **Administrators and staff members**,
+
+* **Self subscription enabled**: enable or disable self subscription feature,
+* **Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:
+
+  * **galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`.
+  * **get://** or **post://**: use HTTP GET or POST method to call a web address, prefix will be replaced with ``http://``,
+  * **file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent.
 
 .. warning::
 
-   L'utilisation de la méthode ``file://`` est potentiellement dangereuse, Galette se contente de lancer l'exécution du script fourni ; le bon fonctionnement et la sécurisation de ce script qui sera appelé tel quel par le logiciel sont votre **entière responsabilité**.
+   Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsability**.
 
-* **URL du flux RSS** : lien vers le flux RSS à afficher sur le tableau de bord,
-* **URL de Galette** : adresse de l'instance Galette
+* **RSS feed URL**: link to the RSS feed to display on dashboard,
+* **Galette base URL**: Galette instance URL, if the one proposed is incorrect,
 
 .. warning::
 
-   Cette addresse ne devrait être modifié qu'en cas de réel problème, des instabilités pourraint être constatées.
+   This URL should be changed only if there are issues, this may cause instability.
 
-   Une aide contextuelle est fournie au survol, veuillez vous-y référer pour plus de précisions.
+   A contextual help is provided, check it for more informations.
 
-* **Afficher le numéro adhérent** : affiche le numéro de l'adhérent.
+* **Show identifiers**: display database identifiers instead of simple counts on lists.
 
-Courriel
-========
+E-Mail
+======
 
-Paramètres d'envoi de courriels :
+Sending email parameters:
 
 .. image:: ../_styles/static/images/usermanual/prefs_mail.png
    :scale: 50%
    :align: center
-   :alt: Préférences de Galette, onglet Général
+   :alt: Galette settings, e-mail tab
 
-* **Nom expéditeur** : le nom textuel de l'expéditeur des courriels,
-* **Courriel expéditeur** : l'adresse courriel de l'expéditeur des courriels,
-* **Courriel de réponse** : l'addresse de réponse aux courriels envoyés. Si cette valeur est vide, l'addresse de courriel de l'expéditeur sera utilisée,
-* **Courriel de l'administrateur des membres** : adresse à laquelle les courriels de notification d'inscription des membres seront envoyés,
-* **Envoyer des mails aux administrateurs** : envoi de courriels aux administrateurs lors d'une inscription,
-* **Scinder les courriels texte** : coupe automatiquement les longues lignes dans les courriels en mode texte. Si vous désactivez cette option, il faudra vous assurer de scinder vous-mêmes ces courriels,
-* **Activer l'éditeur HTML** : active l'envoie de courriels au format HTML (déconseillé - une copie en texte sera envoyée dans tous les cas, mais la génération peut ne pas convenir à ce que vous pourriez souhaiter),
-* **Méthode d'envoie des courriels** : la méthode à utiliser pour l'envoi :
+* **Sender name**: name of the sender,
+* **Sender email**: email address of the sender,
+* **Reply-to email**: reply email address. If empty, sender email will be used,
+* **Members administrator email**: email address on which inscription notifications will be send, you can set several addresses separated with comas,
+* **Send emails to administrators**: whether to send emails to administrators on subscription,
+* **Wrap text emails**: automatically wraps long lines in emails. If you disable this options, make sure to wrap yourself,
+* **Activate HTML editor**: activate HTML format when sending emails (discouraged),
+* **Emailing method**: method used to send emails:
 
-  * **Envoi de courriel désactivé** : aucun courriel ne sera envoyé par Galette,
-  * **Fonction PHP mail** : utilisation de la fonction PHP ``mail()`` et des paramètres qui y sont associés (recommandé),
-  * **Utilisation d'un SMTP** : utilisation d'un serveur SMTP externe à configurer (sera certainement plus lent que la fonction php mail()),
-  * **Utilisation de GMail pour serveur SMTP** : identique à la possibilité précédente, mais spécifique à GMail (sera certainement plus lent que la fonction php mail()),
-  * **Utilisation d'un serveur sendmail** : utilisera le serveur sendmail local configuré sur le serveur,
-  * **Utilisation d'un serveur qmail** : utilisera le serveur qmail local configuré sur le serveur,
-  * **Signature courriel** : la signature apposée automatiquement à tous les courriels envoyés. Les variables disponibles sont :
+  * **Emailing disabled**: no email will be send from Galette,
+  * **PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),
+  * **Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),
+  * **Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),
+  * **Using sendmail server**: uses local server sendmail,
+  * **Using qmail server**: uses local server qmail,
 
-    * ``{NAME]`` le nom de l'association,
-    * ``{WEBSITE}`` le site web de l'association,
-    * ``{FACEBOOK}`` l'adresse Facebook renseignée dans les paramètres des réseaux sociaux,
-    * ``{GOOGLEPLUS}`` l'adresse Google+ renseignée dans les paramètres des réseaux sociaux,
-    * ``{TWITTER}`` l'adresse Twitter renseignée dans les paramètres des réseaux sociaux,
-    * ``{LINKEDIN}`` l'adresse LinkedIn renseignée dans les paramètres des réseaux sociaux,
-    * ``{VIADEO}`` l'adresse Viadeo renseignée dans les paramètres des réseaux sociaux.
+* **Mail signature**: signature added to all sent emails. Available variables are:
 
-Dans le cas de l'utilisation de GMail comme serveur SMTP, vous devrez configurer le nom d'utilisateur et le most de passe à utiliser.
+  * ``{NAME]`` association name,
+  * ``{WEBSITE}`` association website,
+  * ``{FACEBOOK}`` Facebook URL set in preferences,
+  * ``{TWITTER}`` twitter URL set in preferences,
+  * ``{LINKEDIN}`` linkedin URL set in preferences,
+  * ``{VIADEO}`` viadeo URL set in preferences.
 
-La configuration d'un serveur SMTP est un peu plus complexe :
+When using GMail as SMTP, you will have to configure user name and password to use.
 
-* **Serveur SMTP** : l'addresse du serveur, requis,
-* **Port SMTP** : le port du serveur, requis,
-* **Utiliser l'authentification SMTP** : si le serveur requiert une authentification. Dans ce cas, il vous faudra également renseigner l'utilisateur et le mot de passe,
-* **Utiliser TLS pour SMTP** : activer SSL (toujours actif pour Gmail, qui ne permet pas autre chose),
-* **Autoriser TLS non sécirisé** : dans certains cas, le certificat SSL peut être invalide (certificats auto signés par exemple).
+SMTP configuration is a bit more complexe :
 
-Le bouton « Test des paramètres courriel » enverra un message de test à l'adresse renseignée pour l'administrateur des membres en utilisant la configuration acutellement enregistrée.
+* **SMTP server**: server address, required,
+* **SMTP port**: server port, required,
+* **Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,
+* **Use TLS for SMTP**: enable SSL support (always on for GMail),
+* **Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example).
 
-Étiquettes
-==========
+The `Test mail settings` button will send a test message to the email currently stored as members administrator.
+
+Labels
+======
 
 .. image:: ../_styles/static/images/usermanual/prefs_labels.png
    :scale: 50%
    :align: center
-   :alt: Préférences de Galette, onglet Général
+   :alt: Galette settings, labels tab
 
-Cartes
-======
+Cards
+=====
 
 .. image:: ../_styles/static/images/usermanual/prefs_cards.png
    :scale: 50%
    :align: center
-   :alt: Préférences de Galette, onglet Général
+   :alt: Galette settings, cards tab
 
-Administrateur
-==============
+Admin
+=====
 
 .. note::
 
-   Cette entrée ne sera visible que si le super administrateur est connecté.
+   This tab wil be present only if you are logged in as super administrator.
 
 .. image:: ../_styles/static/images/usermanual/prefs_admin.png
    :scale: 50%
    :align: center
-   :alt: Préférences de Galette, onglet Général
-
+   :alt: Galette settings, admin tab

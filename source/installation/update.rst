@@ -1,80 +1,77 @@
 .. _update:
 
-***********
-Mise à jour
-***********
+********
+Updating
+********
 
-Si vous utilisez actuellement une version antérieure de Galette, une mise à jour s'impose.
-
-.. warning::
-
-   Une mise à jour n'est jamais une opération anodine, puisque vos données sont modifiées. En conséquence, prenez bien soin d'effectuer une **sauvegarde de votre base de données actuelle** ; sous peine de perdre tout ou partie de vos données.
-
-   Une sauvegarde de l'intégralité des fichiers de Galette est aussi fortement conseillée ; pour le cas où vous rencontreriez un problème de mise à jour et devriez revenir à la version précédente, ou encore si votre Galette avait été modifiée (ce qui est déconseillé, à juste titre !).
-
-.. note::
-
-   La migration d'une instance de Galette antérieure à la version 0.7.0 est supportée... théoriquement. Mais dans la pratique, ce n'est absolument pas testé (ces versions datent de pus de 10 ans !), et il est possible qu'une telle tentative échoue.
-
-   Rien n'est actuellement prévu pour permettre d'effectuer réellement un tel saut dans le futur ;-) Si votre instance de Galette est antérieure à la 0.7.0, nous vous conseillons dans un premier temps de `migrer vers la version 0.7.8 <http://download.tuxfamily.org/galette/archives/galette-0.7.8.tar.bz2>`_ ; puis ensuite de recommencer avec la dernière version stable.
-
-Mise à jour des fichiers
-========================
-
-Dans un premier temps, déconnectez-vous de votre instance de Galette actuelle.
-
-Ensuite, téléchargez la dernière version de Galette et mettez à jour les fichiers. Pour plus de détails sur l'installation des fichiers de Galette, reportez-vous à la section :ref:`préparation de l'installation <preparation>`.
-
-Certains fichiers et répertoires contiennent des données et devraient être réintégrés à la nouvelle installation :
-
-* ``config/config.inc.php``. Si ce fichier est absent, Galette en créera un nouveau. Si le fichier est présent, les données qu'il contient seront automatiquement chargées (hormis le mot de passe) lors de la configuration du moteur de base de données. C'est le seul fichier qui est modifié par la procédure de mise à jour,
-* ``data/photos`` qui contient les photos de vos adhérents et votre logo,
-* ``data/exports`` qui contient les exports CSV,
-* ``data/files`` qui contient les fichiers attachés aux adhérents,
-* ``data/attachments`` qui contient les fichiers attachés aux mailings.
-
-Une fois la mise à jour des fichier effectuée, rendez-vous ensuite sur votre instance de Galette. Celle-ci vous demandera, au besoin de lancer la procédure de mise à jour de votre base. Si votre instance ne vous demande rien, c'est que tout est terminé ;-)
-
-Dans le cas contraire, rendez vous sur la page `http://localhost/galette/webroot/installer.php`.
-
-Mise à jour de la base de données
-=================================
+If you are using an old Galette release, it's time to update.
 
 .. warning::
 
-   La passage à une version plus récente de Galette ne signifie pas forcément qu'une mise à jour de la base soit requise ! Certaines fois, la seule mise à jour des fichiers de l'application suffira, même pour une version majeure !
+   An update is often not something lite, your data may be modified. So, please make sure you made **a backup of your current database**, or you may lost all or a part of your data.
 
-   L'application vous avertira si une mise à jour est nécessaire, il est inutile de "forcer" le passage par l'opération de mise à jour.
-
-La procédure de mise à jour est similaire à :doc:`l'installation de Galette <galette>`, avec certaines étapes en plus ou en moins. Tout cela est totalement transparent, des informations sur les différentes étapes, leur échec ou leur succès vous seront affichées sur le même modèle que lors de la création des tables.
-
-Informations de la base
------------------------
-
-À l'étape « Type d’installation », vous devrez sélectionner « mise à jour ». L'étape de paramétrage de la base de données sera pré-remplie avec les informations existantes, à l'exception du mot de passe de la base que vous devrez saisir vous-même. Normalement, les autres informations ne doivent pas être modifiées.
+   A backup of all Galette files is also recommended it would be helpfull if you find a bug that prevent you to migrate and have to restore an old version;
 
 .. note::
 
-   Notez qu'il est important que le nom de la base de données et le préfixe qui vous sont demandés lors de l'installation correspondent aux **valeurs actuelles**.
+   Migrating a pre 0.7 release is theorically supported, but this is not tested (those releases are more than 10 years old!), and it is possible your attempt fail.
 
-Sélection de la version précédente
-----------------------------------
+   Nothing is really made to make such a time travel ;) If this is your case, you should first `migrate to Galette 0.7.8 <https://download.tuxfamily.org/galette/archives/galette-0.7.8.tar.bz2>`; and do another migration to the latest version.
 
-Vous devrez ensuite sélectionner la version antérieure de Galette. Le système d'installation essaiera de « deviner » pour vous de quelle version il s'agit, et sélectionnera l'entrée adéquate par défaut (elle sera affichée en caractères gras pour la différencier des autres).
+Updating files
+==============
+
+First, logout from your instance, and make sure to use a maintenance mode to prevent other users to reach the instance.
+
+Then, download latest Galette version and replace the files. For more informations on files installation, refer to the :ref:`prepare installation <preparation>` section.
+
+Some directories keep data and/or configurations and should be copied back to the new instance:
+
+* ``config/config.inc.php``. If this file is missing, Galette update process will ask you the informations and create a new one. If the file is present, it will be used to fill informations excepted database password. It is the only file that can be edited during update process,
+* ``data/photos`` your members photos and logos,
+* ``data/exports`` contains CSv exports,
+* ``data/files`` contains files from dynamic fields of type file,
+* ``data/attachments`` contains mailing attached documents.
+
+Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database. If it asks you nothing you're just done already ;)
+
+Updating database
+=================
+
+.. warning::
+
+   Installing a new Galette release does not strictly means a database update will be required! Sometimes, only updating the files will be enough; even for a major release.
+
+   Galette will tell you if an update is needed, no need to "force" an update.
+
+Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is motly transparent, informations are provided on each step.
+
+Datbase informations
+--------------------
+
+At "Installation type" step, you'll have to choose "update". Database informations page will be pre filled with existing informations, excepting password. Other informations should not be changed.
+
+.. note::
+
+   Note it is important that database name and prefixed used in previous database correspond to configuration.
+
+Previous version selection
+--------------------------
+
+Next step is the choice of the previous Galette version. Installation process will try to "guess" what version it as, and will select this one per default (the one that will be displayed as bold text).
 
 .. image:: ../_styles/static/images/installation/5_update_version_select.png
    :scale: 70%
    :align: center
 
-Le système vous préviendra également si vous tentez de mettre à jour alors que votre base semble être à la bonne version. Si tel est le cas, aucune entrée ne sera affichée en caractères gras ; assurez-vous de choisir ce qui convient :
+If you try to update but your database version seems already correct, you will be warned. No entry will be displayed as bold text, please make sure to choose the right one:
 
 .. image:: ../_styles/static/images/installation/5bis_already_updated.png
    :scale: 70%
    :align: center
 
-Une fois le ou les scripts de mise à jour exécutés, un bref récapitulatif devrait être affiché :
+Once update scripts have run, a summary will be displayed:
 
 .. image:: ../_styles/static/images/installation/5ter_update_success.png
    :scale: 70%
    :align: center
-

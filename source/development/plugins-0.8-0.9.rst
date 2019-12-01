@@ -2,38 +2,39 @@
 
 .. _pluginsmigration_09:
 
-*******************************
-Migration de plugins 0.8 => 0.9
-*******************************
+****************************
+Plugins migration 0.8 => 0.9
+****************************
 
-Le système de plugins de Galette 0.9 est incompatible avec celui des versions antérieures. Cela ne signifie pas que l'intégralité des plugins soit récrit, mais certaines adaptations sont à prendre en considération.
+Plugin system in Galette 0.9 is incompatible with previous versions. This does not means that you must rewrite your plugin completely, but you will have to do some adaptations.
 
-Généralités
-===========
 
-Le :ref:`guide de développement des plugins <devplugins>` doit bien entendu être consulté pour tous les points de détails.
+Generalities
+============
 
-Outre les modifications propres aux plugins, certaines méthodes et constructeurs de Galette ont peut-être vu leur signature évoluer ; notamment pour continuer la suppression des variables globales. Ainsi, il n'est pas rare qu'un objet qui était préalablement initalisé sans aucun argument requiert désormais à minima l'instance de la base de données :
+Of course, you have to refer to the :ref:`plugins development guide <devplugins>` for all details.
+
+Several Galette core objects has been modified to remove some globals. This is now mandatory to send them those informations, like:
 
 .. code-block:: php
 
    <?php
-   //ancien appel
+   //old call
    $obj = new \Galette\Core\Object();
-   //nouvel appel - $this->zdb est utilisable au sein de routes
+   //new call - $this->zdb is accessible from routes
    $obj = new \Galette\Core\Object($this->zdb);
 
-Pour les besoins de la cause, des exemples en provenance du plugin prêt d'objet seront étudiés ici. Vous pouvez consulter le `commit en question <https://git.tuxfamily.org/galette/plugin-objectslend.git/commit/?h=develop&id=326b52f486c6dccd5896d9db13e3a074d3896b19>`_.
+We've based our examples on the :doc:`ObjectsLend plugin <../plugins/objectslend>`, you can refer to the `related commit (`326b52f4`) <https://git.tuxfamily.org/galette/plugin-objectslend.git/commit/?h=develop&id=326b52f486c6dccd5896d9db13e3a074d3896b19>`_.
 
 _define.php
 ===========
 
-Ce fichier s'est vu adjoindre deux paramètres supplémentaires :
+Two new parameters has been added:
 
-* un nom utilisé pour le routage et les domaines de traduction, une chaine de texte sans caractères spéciaux qui vient s'intercaler entre la version de compatibilité de Galette et la date du plugin,
-* la liste des accès aux URL dont l'accès est limité (par l'utilisation du middleware ``$authenticate``), un tableau dont les clés sont les noms des routes, et les valeurs les accès autorisés, qui vient s'ajouter en fin de fichier.
+* a name, used for the routing and translation domains, a single string to add beetween Galette compatibility version and plugin date,
+* limited access URLs list (when ``$authenticate`` middleware is used) configuration, in an array at the end of the existing configuration.
 
-Un fichier ``define.php`` en version 0.8 :
+A ``define.php`` file for Galette 0.8:
 
 .. code-block:: php
 
@@ -48,7 +49,7 @@ Un fichier ``define.php`` en version 0.8 :
        null //Permissions needed - not yet implemented
    );
 
-Après mise à jour pour 0.9 (le tableau des droits sera rempli au fur et à mesure de la création des routes) :
+After being updated to Galette 0.9, the file will look like:
 
 .. code-block:: php
 
@@ -67,17 +68,19 @@ Après mise à jour pour 0.9 (le tableau des droits sera rempli au fur et à mes
        ]
    );
 
+Routes ACLs are handled while plugin development.
+
 _config.php
 ===========
 
-Il était conseillé de déclarer une variable servant de préfixe pour les templates d'affichage, ce n'est désormais plus nécéssaire.
+It was advised to create a variable to prefix display template, this is no longer needed.
 
 _routes.php
 ===========
 
-Ce fichier constitue désormais le coeur du plugin. Les anciens fichiers PHP qui étaient appelés directement dans les versions antérieures vont être redispatchés dans différentes routes.
+This file is now the core of your plugin. All old PHP files that was directly called in URL in older versions will now be dispatched in several routes (one per PHP file, or not).
 
-Prenons en exemple le fichier ``preferences.php`` de notre plugin. Le code pour la version 0.8 est le suivant :
+As an example, take the ``preferences.php`` page of our plugin. The source code for the 0.8 version was:
 
 .. code-block:: php
 
@@ -124,7 +127,7 @@ Prenons en exemple le fichier ``preferences.php`` de notre plugin. Le code pour 
    $tpl->template_dir = $orig_template_path;
    $tpl->display('page.tpl', LEND_SMARTY_PREFIX);
 
-Cette page fournissait à la fois l'affichage et l'enregistrement des préférences. Nous allons remplacer ce comportement par deux routes distinctes : une en `GET` qui sera en charge de l'affichage, et l'autre en `POST` pour l'enregistrement des données. Dans notre fichier ``_routes.php`` nous aurons donc :
+This page was providing both display and storage of the preferences of the plugin. We will replace this behavior with two distinct routes: one with HTTP `GET` method that will handle display and another one with HTTP ``POST`` method to handle the storage. In our ``_routes.php`` file, we will have:
 
 .. code-block:: php
 
@@ -195,7 +198,7 @@ Cette page fournissait à la fois l'affichage et l'enregistrement des préféren
        }
    )->setName('store_objectlend_preferences')->add($authenticate);
 
-On peut observer la création de deux routes avec une URL identique, mais des méthodes d'accès différentes (cela ne pose aucun problème) et bien entendu des noms différents. S'agissant de la configuration de notre plugin, l'accès devra être limité aux seuls administrateurs. Modifions donc notre tableau des ACL dans ``_define.php`` en conséquence :
+You can observe that the two routes URLs are the same, but with HTTP methods (an of course routes names!) that differs. For the needs of our plugin, access will be restricted to administratore. We have already setted up the middleware call in the previous example, we now need to add those new routes to the ACLs configuration of ``_define.php``:
 
 .. code-block:: php
 
@@ -206,12 +209,12 @@ On peut observer la création de deux routes avec une URL identique, mais des m�
            'store_objectlend_preferences'   => 'admin'
        ]
 
-L'ensemble des traitements du fichier ``preferences.php`` ayant été déplacés dans une route, on peut désormais supprimer le fichier.
+All treatments from ``preferences.php`` file has been moved, we can now remove the file.
 
 templates/default/menu.tpl
 ==========================
 
-L'adresse de notre page de préférences a changé ; le fichier ``menu.tpl`` doit donc être adapté en conséquence :
+Since our plugin preferences page URL has changed, we need to adapt ``menu.tpl``:
 
 .. code-block:: smarty
 
@@ -225,16 +228,16 @@ L'adresse de notre page de préférences a changé ; le fichier ``menu.tpl`` doi
        <a href="{path_for name="objectslend_preferences"}">{_T string="Preferences" domain="objectslend"}</a>
    </li>
 
-On distingue trois changements :
+There are three changes here:
 
-* le remplacement de l'appel au fichier par le nom de la route,
-* la récupération de la route courante plutôt qu'un nom de page pour marquer la sélection courante,
-* l'utilisation du domaine de traduction pour la chaîne. Notez qu'ici, il serait possible de se baser sur la traduction du terme fournie par le coeur, puisque ce serait certainement identique.
+* PHP file call has been replaced with a call to the route,
+* selection class condition must be changed, this could no longer rely on file name,
+* translation domain has been used for translatable strings, it is not striclty mandatory if you use Galette core strings verbatim (which should have been the case here).
 
-Ressources web
-==============
+Web resources
+=============
 
-Les différentes ressources qui doivent être accessibles depuis le serveur web sont traitées de manière particulière. Elles doivent être déplacées de leur emplacement d'origine vers le dossier ``webroot`` du plugin :
+All resources that must be accessible from browsers must be handled specifically. You have to move all of them in the ``webroot`` directory of the plugin:
 
 .. code-block:: bash
 
@@ -244,7 +247,7 @@ Les différentes ressources qui doivent être accessibles depuis le serveur web 
    $ git move templates/default/lend.js webroot
    $ git move templates/default/images webroot
 
-Il faudra ensuite modifier les chemins d'accès pour ces différents fichiers. Prenons par exemple le fichier ``header.tpl``, qui pour la 0.8 ressemblait à ceci :
+Then, you have to change paths to those files. As an example, see the ``header.tpl`` file, which looks like the following in 0.8:
 
 .. code-block:: smarty
 
@@ -255,7 +258,7 @@ Il faudra ensuite modifier les chemins d'accès pour ces différents fichiers. P
    {/if}
    <script type="text/javascript" src="{$galette_base_path}{$lend_tpl_dir}lend.js"></script>
 
-Et qui deviendra pour la 0.9 :
+That will become in 0.9:
 
 .. code-block:: smarty
 
@@ -268,16 +271,16 @@ Et qui deviendra pour la 0.9 :
 
 .. note::
 
-   Les noms des ressources d'un plugin importent peu, leur chemin est en effet conditionné par l'identifiant unique du plugin (``$module_id``).
+   Directory names of resources does not matter, their paths are conditionned by the plugin unique id (``$module_id``).
 
-Fichiers de template
-====================
+Template files
+==============
 
-Outres les différents chemins vers les pages du plugin ou vers les ressources web, les :ref:`fichiers de template Smarty doivent désormais déclarer leur héritage <smartyextends>`, ce qui était auparavant effectué dans les appels PHP.
+:ref:`Smarty templates files must declare their heritage <smartyextends>`, that was previousely done in PHP calls.
 
-Pour chaque fichier de template du plugin, il faudra donc au minimum entourer le contenu existant de ``{block name="content"}`` et de ``{/block}`` ainsi qu'ajouter l'instruction d'héritage. Les appels javascript doivent être regroupés, vos balises ``script`` devraient se trouver dans le bloc ``javascript``.
+For all templates file in the plugin, you need at least to add ``{block name="content"}`` and ``{/block}`` around the whole content and add heritage instruction. Javascript calls must be moved together into the optionnal ``javascript`` block.
 
-Pour poursuivre notre exemple, le fichier ``preferences.tpl`` de notre plugin devra être modifié comme ceci :
+To follow our example, the ``preferences.tpl`` file of the plugin must be changed as follows:
 
 .. code-block:: smarty
 
@@ -290,49 +293,30 @@ Pour poursuivre notre exemple, le fichier ``preferences.tpl`` de notre plugin de
 
 .. note::
 
-   L'action du formulaire a également été adaptée pour correspondre aux routes qui ont été définies.
+   The form action has also been changed to suit defined routes.
 
-Langues
-=======
+Langs
+=====
 
-Les locales dans Galette 0.9 utilisent désormais des domaines distincts, les fichiers ``Makefile`` et ``xgettext.py`` doivent être mis à jour. Copiez-les depuis un plugin officiel existant dans le dossier ``lang`` de votre plugin.
+Locales in Galette now rely on translation domains. ``Makefile`` and ``xgettext.py`` must be updated, just copy them from an up to date official plugin.
 
-Le fichier ``Makefile`` doit être adapté pour déclarer les langues et domaines utilisés :
+``Makefile`` must be adapted to declare langs and used domains:
 
 .. code-block:: makefile
 
    LANGUAGES = en_US fr_FR.utf8
-   DOMAINS = objectslend objectslend_routes
+   DOMAINS = objectslend
 
-Les fichiers existants doivent être renommés pour correspondre aux langues et domaines :
+Existing files must be renamed to fit langs and domains, PHP files are no longer used, you may remove them:
 
 .. code-block:: bash
 
    $ git mv messages.po objectslend.pot
    $ git mv en_US.po objectslend_en_US.po
    $ git mv fr_FR.utf8.po objectslend_fr_FR.utf8.po
-   $ git mv lang_french.php objectslend_fr_FR.utf8.php
-   $ git mv lang_english.php objectslend_en_US.php
    $ git mv en_US/LC_MESSAGES/galette_objectslend.mo en_US/LC_MESSAGES/objectslend.mo
    $ git mv fr_FR.utf8/LC_MESSAGES/galette_objectslend.mo fr_FR.utf8/LC_MESSAGES/objectslend.mo
+   $ git rm lang_french.php
+   $ git rm lang_english.php
 
-Il faut également adapter les fichiers PHP pour qu'ils prennent en compte le domaine :
-
-.. code-block:: bash
-
-   $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_en_US.php
-   $ sed -e "s/\$lang\[/\$lang['objectslend'][/" -i objectslend_fr_FR.utf8.php
-
-Afin d'éviter des erreurs lors du premier lancement du ``make``, il faudra créer les fichier pour les traductions des routes :
-
-.. code-block:: bash
-
-   $ touch objectslend_routes_en_US.po
-   $ touch objectslend_routes_fr_FR.utf8.po
-   $ touch objectslend_routes.pot
-   $ touch en_US/LC_MESSAGES/objectslend_routes.mo
-   $ touch fr_FR.utf8/LC_MESSAGES/objectslend_routes.mo
-
-Il faudra modifier les différents fichiers du plugin pour ajouter le domaine ; c'est automatisable si l'on souhaite modifier l'ensemble des chaînes, mais ce n'était pas le cas pour ce plugin.
-
-Enfin, vous devriez pouvoir lancer un petit ``make`` :)
+And finally, you will have to add the domain when needed in your code. It is certainly possible to use a script to do it at once, but that was not needed for this plugin.

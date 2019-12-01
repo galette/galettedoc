@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../usermanual/contributions.rst:3
+# 2b16bbf0c27e44e892903fd9d8fc74a9
+msgid "Contributions management"
+msgstr ""
+
+#: ../usermanual/contributions.rst:5
+# c0869c8c6646421aaa195bc098d05483
+msgid "Galette allows you to manage contributions sent from your members. There are several types of contributions, and transactions are also proposed."
+msgstr ""
+
+#: ../usermanual/contributions.rst:7
+# 5bea935af9f9402f9ff5de56b3e8ccb9
+msgid "A transaction? What's that? Well, a simple example is better than a long text... We will use three members of a same association: Marc, Julie and Zac. Each one is member, independently of which group or else they are affected to, that does not matters."
+msgstr ""
+
+#: ../usermanual/contributions.rst:9
+# 066b5ac1f5284cabbb81910e00447243
+msgid "Zac send you a check to pay his own membership, Marc and Julie ones and also a donation to the association. In this case, Zac's check will be handled in a transaction attached to his account, and which will be distributed in four contributions, each one attached to corresponding member."
+msgstr ""
+
+#: ../usermanual/contributions.rst:11
+# 9fd5da4753b14ad79656eec72b8a7d7f
+msgid "Another example: Pierre pays his own contribution, his transaction will only contains his membership and will be distributed in only one contribution."
+msgstr ""
+
+#: ../usermanual/contributions.rst:13
+# 67a76919fc54404c92f6a676320e3f79
+msgid "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder <reminders>` :p"
+msgstr ""
+
+#: ../usermanual/contributions.rst:16
+# 7f30e21d5c9a4438aeef5dbac11a81db
+msgid "Contributions"
+msgstr ""
+
+#: ../usermanual/contributions.rst:18
+# b9677baee9b74c8cb34a22c384d52369
+msgid "A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member."
+msgstr ""
+
+#: ../usermanual/contributions.rst:21
+# 7f30e21d5c9a4438aeef5dbac11a81db
+msgid "Contributions types"
+msgstr ""
+
+#: ../usermanual/contributions.rst:23
+# d4d98297fb514c148bef61407e56474e
+msgid "Contributions are entirely configurable. There are two main types of contributions in Galette:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:25
+# ce9c8f016b374a24a6ff7ac7a9e8a541
+msgid "the ones that extends a membership (a montly or yearly membership for example),"
+msgstr ""
+
+#: ../usermanual/contributions.rst:26
+# 8afdd1e7663d40b7b97a7064956b12e2
+msgid "the ones that do not extends membership, like donations."
+msgstr ""
+
+#: ../usermanual/contributions.rst:28
+# 0bb6ff909251417380148d8c477a96cc
+msgid "Contribution types management allows you to define a label, and if it extends the memebrship or not."
+msgstr ""
+
+#: ../usermanual/contributions.rst:33
+# edc320ae032640cebfb214da5c98ac8a
+msgid "Reminders"
+msgstr ""
+
+#: ../usermanual/contributions.rst:35
+# 4a3e1eed816f43da97354c7e401ad46c
+msgid "Emails models to remind due dates are available from the emails contents (\"Impending due date\" and \"Late due date\")."
+msgstr ""
+
+#: ../usermanual/contributions.rst:37
+# 14229f894f9a475db8bf6c252d1919d8
+msgid "The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface."
+msgstr ""
+
+#: ../usermanual/contributions.rst:44
+# c29b961d5e774260b9d9f0e84b234697
+msgid "Two categories can be selected:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:46
+# 25ae63f3158041299694239248a1035d
+msgid "members whose due date is close,"
+msgstr ""
+
+#: ../usermanual/contributions.rst:47
+# 594ea41c75f344c9a36e5bfb8e7f2843
+msgid "members whose due date is in the past."
+msgstr ""
+
+#: ../usermanual/contributions.rst:49
+# 4978bca3f200491596e4841c1f71009f
+msgid "Per default (this is currently not configurable), reminders are sent one month, then seven days before the due date; and then one and two months after the due date expiration. Reminders are stored in the database, if you never sent any reminder, all matching members will be reminded."
+msgstr ""
+
+#: ../usermanual/contributions.rst:51
+# 9bb47466329d409688998042bccc3cef
+msgid "Galette will tell you if some members do not have an email address, you can print labels for those ones."
+msgstr ""
+
+#: ../usermanual/contributions.rst:53
+# c69d722b1d75476d9b1618ed5714d394
+msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:60
+# e709cbf726bc4c9683bda2a625d1a023
+msgid "Invoices and receipts"
+msgstr ""
+
+#: ../usermanual/contributions.rst:62
+# d1b7fd228e5843a8a4480166ace5223c
+msgid "In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution."
+msgstr ""
+
+#: ../usermanual/contributions.rst:64
+# 081d577a5f1a45938e690750724b39af
+msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
+msgstr ""
+
+#: ../usermanual/contributions.rst:67
+# db85f37ec00242f3a30f33d2872eb4a1
+msgid "Transactions"
+msgstr ""
+
+#: ../usermanual/contributions.rst:69
+# 0ead47536a8a4ce999e0002163efe2ee
+msgid "As seen in the example from this chapter introduction, a transaction is a global payment for a member."
+msgstr ""
+
+#: ../usermanual/contributions.rst:71
+# dcbcd4ab488b4a3ebd36ef8000b33d30
+msgid "Only a few informations are required to add a new transaction:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:73
+# 265985acb5fc42bba182b01990a1a932
+msgid "a description,"
+msgstr ""
+
+#: ../usermanual/contributions.rst:74
+# 70c0acb63749413089f6b4e4d6c730ab
+msgid "the originator,"
+msgstr ""
+
+#: ../usermanual/contributions.rst:75
+# 5bc579f89c4c4e00930625f8409ba3c5
+msgid "the date (current date per default),"
+msgstr ""
+
+#: ../usermanual/contributions.rst:76
+# dbc5cda8c26b40af9b73e275776d6439
+msgid "the amount."
+msgstr ""
+
+#: ../usermanual/contributions.rst:83
+# 4845ed4d5e9c4b9e9a45e984734c1ed3
+msgid "Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates."
+msgstr ""
+
+#: ../usermanual/contributions.rst:90
+# 66b1519977044ab2a93617eb106821ec
+msgid "After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction."
+msgstr ""
+
+#: ../usermanual/contributions.rst:97
+# 768b67d41c9a4032be4ef9cee2fe56ec
+msgid "Of course, it is also possible to edit a transaction:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:104
+# ea44f2dee61743f08db8f7415e36d834
+msgid "You can also attach an existing contribution instead of creating a new one."
+msgstr ""
+
+#: ../usermanual/contributions.rst:114
+# db85f37ec00242f3a30f33d2872eb4a1
+msgid "Members selection"
+msgstr ""
+
+#: ../usermanual/contributions.rst:118
+# 975e425ee85a4e78b0e2cabc81cee127
+msgid "The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons."
+msgstr ""
+
+#: ../usermanual/contributions.rst:120
+# 06d6bb04b9a44f098c5dc70ab06bb89b
+msgid "You can display more members using the \"Load following memebrs...\" link, and you can also try to search entering any text (this will search in first name, last name and identifiers)."
+msgstr ""
+

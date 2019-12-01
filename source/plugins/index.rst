@@ -1,91 +1,96 @@
 .. _plugins:
 
-.. rst-class:: docs plugins_doc
+.. only:: builder_html or readthedocs
 
-:doc:`documentation des plugins <index>`
+   .. rst-class:: docs plugins_doc
+
+   :doc:`Plugins documentation <index>`
 
 .. rst-class:: doc_main_page
 
-====================
-Plugins pour Galette
-====================
+=======
+Plugins
+=======
 
-Le système de plugins permet d'étendre les fonctionnalités de Galette dans certains cas particuliers, tout en évitant « d'encombrer » l'application principale. Les plugins non compatibles seront automatiquement désactivés. Il faut dans ce cas envisager de passer à la version supérieure du plugin.
+Plugins system allows to extend Galette with specific features that would not be useful for most of the users. Incompatible plugins will automatically be disabled, in which case you should consider upgrading to a more recent version.
 
-Chaque plugin est en fait un simple dossier qui doit être placé dans le dossier ``{galette}/plugins/``. Reportez-vous ensuite à la documentation du plugin pour l'installer.
+Each plugin is a simple directory in ``{galette}/plugins/``, then refer to the plugin documentation to install it.
 
-Il est possible de désactiver un plugin en créant simplement un fichier ``_disabled`` vide dans le répertoire du plugin.
+You can disable a plugin creating a ``_disabled`` file in its directory.
 
-*********************
-Plugins « officiels »
-*********************
+****************
+Official Plugins
+****************
 
-Les plugins « officiels » sont développés et/ou maintenus par l'équipe de développement de Galette. Les plugins actuellement disponibles pour Galette sont :
+Official plugins are developed and maintained by the Galette team. Available official plugins are:
 
 .. toctree::
    :maxdepth: 2
 
    paypal.rst
    fullcard.rst
-   admintools.rst
    maps.rst
    auto.rst
-   objectslend.rst
    events.rst
+   objectslend.rst
+   admintools.rst
 
-*************
-Plugins tiers
-*************
+*******************
+Third party plugins
+*******************
 
-Les plugins tiers sont développés et/ou maintenus par des membres de la communauté. Ils peuvent ne pas être disponibles dans différentes langues, ou ne pas fonctionner avec tous les moteurs de bases de données supportés oficiellement.
+Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
 
-* `Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (gestion de base d'un aéroclub), développé par Mélissa,
-* `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (génération de QRCodes), développé par Frédéric,
-* `Grades <https://galette-community.github.io/plugin-grades/>`_ (gestion d'évaluations), développé par Frédéric.
+* `Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (base management of a flying club), developed by Mélissa (**no longer maintained**),
+* `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes generation), developed by Frédéric,
+* `Grades <https://galette-community.github.io/plugin-grades/>`_ (evaluations management), developed by Frédéric.
 
-Une `communauté Github <https://github.com/galette-community/>`_ a été créée pour :doc:`gérer les plugins tiers <plugins-tiers>`, si vous souhaitez y placer votre plugin.
+A `Github community <https://github.com/galette-community/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin.
+
+.. toctree::
+   :hidden:
+
+   plugins-tiers.rst
 
 .. _plugins_managment:
 
-********************************
-Interface de gestion des plugins
-********************************
+****************************
+Plugins management interface
+****************************
 
-Une interface de gestion des plugins est disponible, accessible par les administrateurs depuis le tableau de bord. Après avoir copié le(s) plugin(s) téléchargé(s) dans le dossier ``plugins`` de Galette ; une liste vous sera proposée :
+A plugins management interface is provided, you will find it from the dashboard or in the configuration menu. After you have downloaded plugin(s) in Galette ``plugins`` directory, a list will be displayed:
 
 .. image:: ../_styles/static/images/usermanual/plugins_managment.png
    :scale: 75%
    :align: center
-   :alt: Gestion des plugins
+   :alt: Plugins management
 
-Si le serveur web possède les droits en écriture dans les dossiers des plugins, il vous sera possible d'activer ou de désactiver un plugin simplement en cliquant sur l'icône de statut en fin de ligne.
+If web server has read access to your plugins directory, then you can enable or disable any plugin from the related icon.
 
-Si le plugin requiert une base de données pour son fonctionnement, vous pourrez jouer les scripts d'installation et de mise à jour depuis l'interface. Et puisqu''un petit schéma vaut mieux qu'un long discours, voici - en images - l'illustration de l'installation de la base de données du plugin Paypal :-)
-
-Dans un premier temps, vous aurez à sélectionner le type d'installation (installation ou mise à jour - ça ne vous rapelle rien ? ;-)) :
+If plugin requires a database to work, you can play installation and update scripts from the interface. As example, the Paypal plugin database installation:
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step1.png
    :scale: 50%
    :align: center
-   :alt: Initialisation de la base de données d'un plugin, étape 1 : sélection d'un type d'installation
+   :alt: Initialize plugin database step 1: select installation type
 
-Les droits sur la base de données seront ensuite vérifiés. Contrairement à l'installation du Galette ; aucune information concernant la base de données ne vous sera demandée, puisque les informations en question sont déjà disponibles (le simple fait d'accéder à l'interface des plugins confirme cela) :
+Database ACLs will then be checked. Unlike Galette, no information will be asked to you, since all is already available from your current instance:
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step2.png
    :scale: 50%
    :align: center
-   :alt: Initialisation de la base de données d'un plugin, étape 2 : vérification des droits de la base
+   :alt: Initialize plugin database step 2: database checks
 
-Les scripts en eux-mêmes seront alors exécutés, si les droits sont corrects :
+Scripts themselves will then be run:
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step3.png
    :scale: 50%
    :align: center
-   :alt: Initialisation de la base de données d'un plugin, étape 3 : exécution des scripts
+   :alt: Initialize plugin database step 3: execute scripts
 
-Et voilà, c'est fini !
+And this is finished!
 
 .. image:: ../_styles/static/images/usermanual/plugins_install_step4.png
    :scale: 50%
    :align: center
-   :alt: Initialisation de la base de données d'un plugin, étape 4 : fin :-)
+   :alt: Initialize plugin database step 4: end :)

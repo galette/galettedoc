@@ -1,0 +1,254 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-20 21:12+0200\n"
+"PO-Revision-Date: 2019-10-23 09:07+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../plugins/events.rst:3 ../plugins/events.rst:60
+msgid "Events"
+msgstr "Évènements"
+
+#: ../plugins/events.rst:5
+msgid "This plugin provides:"
+msgstr "Ce plugin fournit :"
+
+#: ../plugins/events.rst:7
+msgid "events management,"
+msgstr "gestion d'évènements,"
+
+#: ../plugins/events.rst:8
+msgid "associate activities with events,"
+msgstr "association d'activités avec des évènements,"
+
+#: ../plugins/events.rst:9
+msgid "booking management."
+msgstr "gestion des réservations."
+
+#: ../plugins/events.rst:12
+msgid "Installation"
+msgstr "Installation"
+
+#: ../plugins/events.rst:16
+msgid "This plugin requires Galette 0.9.1 to work!"
+msgstr "Ce plugin requiert Galette 0.9.1 pour fonctionner !"
+
+#: ../plugins/events.rst:18
+msgid ""
+"First of all, download the plugin: "
+"https://download.tuxfamily.org/galette/plugins/galette-plugin-"
+"events-1.1.1.tar.bz2"
+msgstr ""
+"Tout d'abord, téléchargez le plugin : "
+"https://download.tuxfamily.org/galette/plugins/galette-plugin-"
+"events-1.1.1.tar.bz2"
+
+#: ../plugins/events.rst:21
+msgid ""
+"Extract the downloaded archive in Galette ``plugins`` directory. For "
+"example, under linux (replacing `{url}` and `{version}` with correct "
+"values):"
+msgstr ""
+"Extrayez l'archive téléchargée dans le dossier ``plugins`` de Galette. Par "
+"exemple, sous linux (en remplaçant `{url}` et `{version}` par les valeurs "
+"adéquates) :"
+
+#: ../plugins/events.rst:31
+msgid "Database initialisation"
+msgstr "Initialisation de la base de données"
+
+#: ../plugins/events.rst:33
+msgid ""
+"In order to work, this plugin requires several tables in the database. See "
+":ref:`Galette plugins management interface <plugins_managment>`."
+msgstr ""
+"Pour fonctionner, ce plugin requiert des tables dans la base de données. "
+"Référez-vous :ref:`à l'interface de gestion des plugins de Galette "
+"<plugins_managment>`."
+
+#: ../plugins/events.rst:35
+msgid "And this is finished; Events plugin is installed :)"
+msgstr "Et c'est terminé, le plugin Events est installé :)"
+
+#: ../plugins/events.rst:38
+msgid "Plugin usage"
+msgstr "Utilisation du plugin"
+
+#: ../plugins/events.rst:40
+msgid ""
+"When the plugin is installed, an `Events` group is added to Galette menu "
+"when a user is logged in. There are various possibilities that change "
+"depending on user profile (simple member, group manager, administrator, "
+"...)?"
+msgstr ""
+"Lorsque le plugin est installé, un groupe `Évènements` est ajouté au menu de"
+" Galette lorsqu'un utilisateur est connecté. Il y a plusieurs possibilités "
+"qui diffèrent en fonction du profil de l'utilisateur (simple adhérent, "
+"responsable de groupe, administrateur, ...)."
+
+#: ../plugins/events.rst:43
+msgid "Activities"
+msgstr "Activités"
+
+#: ../plugins/events.rst:45
+msgid ""
+"You can define as much activities as you want, and associate them to an "
+"event. An activity may be an organized trip, a meal, a housing, ..."
+msgstr ""
+"Vous pouvez définir autant d'activités que vous le souhaitez, et les "
+"associer à un évènement. Une activité peut être un voyage organisé, un "
+"repas, une sortie, un hébergement, ..."
+
+#: ../plugins/events.rst:51
+msgid ""
+"An activity is composed with a name, a status and an optionnal comment."
+msgstr ""
+"Una activité se compose d'un nom, d'un statut et éventuellement d'un "
+"commentaire."
+
+#: ../plugins/events.rst:53
+msgid "To add a new activity, just click on \"New activity\" link:"
+msgstr ""
+"Pour ajouter une nouvelle activité, cliquez sur le lien « Nouvelle activité "
+"» :"
+
+#: ../plugins/events.rst:62
+msgid ""
+"Events are the main goal of the plugin. You can define several informations,"
+" like a name, begin and ending dates, location, ..."
+msgstr ""
+"Les évènements sont le cœur du plugin. Vous pouvez définir diverses "
+"informations, comme un nom, des dates de début et de fin, un lieu, ..."
+
+#: ../plugins/events.rst:68
+msgid ""
+"Name, begin date and town are mandatory. All other informations are entirely"
+" optionnal."
+msgstr ""
+"Les nom, date de début et ville sont requis. Toutes les autres informations "
+"sont optionnelles."
+
+#: ../plugins/events.rst:70
+msgid ""
+"Events that are not linked to a group will be available for all members. If "
+"a group is set, only members and managers of this group will have access."
+msgstr ""
+"Les évènements qui ne sont pas liés à un groupe seront accessible pour tous "
+"les adhérents; Si un groupe est défini, seuls les membres et responsable de "
+"ce groupe y auront accès."
+
+#: ../plugins/events.rst:74
+msgid ""
+"When a group manager creates a new event, he must choose one of the groups "
+"he owns!"
+msgstr ""
+"Lorsqu'un responsable de groupe crée un nouvel évènement, il doit choisir "
+"l'un des groupes qu'il gère !"
+
+#: ../plugins/events.rst:76
+msgid ""
+"You can attach one or several activities to each event, and for each one set"
+" if it is available, not available or even mandatory. Choose the activity to"
+" add, and click the button."
+msgstr ""
+"Vous pouvez attacher une ou plusieurs activités à chaque évènement, et pour "
+"chacune d'entre elles si elle est disponible, non disponible ou encore "
+"obligatoire. Choisissez l'activité à ajouter et cliquez sur le bouton :"
+
+#: ../plugins/events.rst:84
+msgid ""
+"Adding or removing activity from an event will reload the page and ask you "
+"to fill mandatory informations. Nonetheless (and this is specified each "
+"time), the event **will not be stored** during this operation."
+msgstr ""
+"Ajouter ou supprimer une activité d'un évènement rechargera la page et vous "
+"demandera d'enregistrer les informations requises. Néanmoins (et c'est "
+"précisé à chaque fois), l'évènement **ne sera pas enrigistré** pendant cette"
+" opération."
+
+#: ../plugins/events.rst:86
+msgid "Ensure you save the event :)"
+msgstr "Assurez-vous de sauvegarder l'évènement :)"
+
+#: ../plugins/events.rst:88
+msgid ""
+"From Events list, you can edit or remove entries, access to booking list ou "
+"export bookings as CSV."
+msgstr ""
+"Depuis la liste des évènements, vous pouvez modifier ou supprimer des "
+"entrées, accéder à la liste des réservations ou exporter ces dernières en "
+"CSV."
+
+#: ../plugins/events.rst:95
+msgid "Bookings"
+msgstr "Réservations"
+
+#: ../plugins/events.rst:97
+msgid ""
+"Bookings can be registered for each event. As we said before, simple members"
+" and groups managers will be limited to their groups events, ou to the "
+"events that are not restricted to a group."
+msgstr ""
+"Les réservations peuvent être enregistrées sur chaque évènement. Comme dit "
+"précédemment, les simples membres et responsables de groupes seront limités "
+"aux évènements liés aux groupes auxquels ils appartiennent, ou à ceux qui ne"
+" sont pas restreints à un groupe."
+
+#: ../plugins/events.rst:99
+msgid ""
+"Adding a new booking can be achieved from the menu \"New booking\" or from "
+"the event bookings list."
+msgstr ""
+"Ajouter une nouvelle réservation se fait depuis l'entrée de menu « Nouvelle "
+"réservation » ou depuis la liste des réservations."
+
+#: ../plugins/events.rst:105
+msgid ""
+"Bookings are closed once the event is marked as close, or when the begin "
+"date is over. Administrators and staff members can always add new bookings."
+msgstr ""
+"Les réservations sont closes dès que l'évènement est marqué comme fermé, ou "
+"si la date de début est dépassée. Les administrateurs et membres du bureau "
+"peuvent toujours ajouter de nouvelles réservations."
+
+#: ../plugins/events.rst:107
+msgid ""
+"Activities list is retrieved from the event; mandatory ones must of course "
+"be checked during booking."
+msgstr ""
+"La liste des activités est récupérée depuis l'évènement ; celles qui sont "
+"obligatoires doivent bien sur être cochées lors de la réservation."
+
+#: ../plugins/events.rst:113
+msgid ""
+"You can filter bookings list per event, payment type or payment status. You "
+"can then send a mailing to booked members, using the standard Galette "
+"mailing mechanism."
+msgstr ""
+"Vous pouvez filtrer la liste des évènements par évènement, type ou statut de"
+" paiement. Vous pouvez envoyer des mailings aux membres qui ont réservé, en "
+"utilisant le mécanisme de mailing de Galette."
+
+#: ../plugins/events.rst:116
+msgid "How to get the sources?"
+msgstr "Comment récupérer les sources ?"
+
+#: ../plugins/events.rst:118
+msgid ""
+"Please refer to :doc:`Galette developer guide <../development/index>` to get"
+" informations about :doc:`souces retrieval <../development/git>`, and "
+":ref:`development model <devmodel>`."
+msgstr ""
+"Veuillez voir :doc:`le guide du développeur de Galette "
+"<../development/index>` pour obtenir des informations sur :doc:`la "
+"récupération des sources <../development/git>`, et le :ref:`modèle de "
+"développement <devmodel>`."

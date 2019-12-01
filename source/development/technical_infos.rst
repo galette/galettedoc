@@ -1,13 +1,13 @@
+:orphan:
+
 .. _libraries:
 
-***********************
-Informations techniques
-***********************
+**********************
+Technical informations
+**********************
 
-Bibliothèques utilisées
-=======================
-
-L'ensemble des bibliothèques externes utilisées par Galette est gérée par `le système de gestion de départendences Composer <http://getcomposer.org>`_. Une fois composer installé sur votre système, il vous suffira de vous placer dans le dossier de Galette (où se trouvent les fichiers ``composer.json`` et ``composer.lock`` et de lancer simplement ``composer install``.
+Third party libs
+================
 
 .. _slim:
 
@@ -15,52 +15,56 @@ Slim
 ----
 
 .. image:: ../_styles/static/images/libraries/slim.png
+   :width: 140px
    :align: right
 
 .. versionadded:: 0.9
 
-*Version de la biliothèque requise :* `3.8.1`
+*Required version:* `3.x`
 
-Les URL utilisées dans Galette sont générées et servies par le `micro framework Slim <http://www.slimframework.com/>`_ dans sa version `3`.
+All URLs in Galette are handled with `Slim micro framework <https://www.slimframework.com/>`_.
 
-Là où nous avions auparavant un fichier ``.php`` par page à afficher, tout est désormais géré par un système de routes nommées et paramétrées ; ce qui rend les modifications et évolutions plus souples. La `documentation de Slim <http://www.slimframework.com/docs/>`_ est un bon point de départ pour comprendre comment le système fonctionne.
+Where we previousely use on `.php` file per page to display, all is now in a routing system named and parameted. This makes changes and enhancements easiest and flexible. `Slim documentation <https://www.slimframework.com/docs/v3>`_ is a good starting point to understand how it works.
 
 .. _zend_db:
 
 Zend DB
 -------
 
-.. image:: ../_styles/static/images/libraries/zend.gif
+.. image:: ../_styles/static/images/libraries/zend.png
+   :width: 140px
    :align: right
 
-*Version de la bibliothèque requise :* `2.8.2`
+*Required version:* `2.8.2` (see https://github.com/zendframework/zend-db/issues/322)
 
-L'accès aux bases de données sera désormais assuré par `l'extension de gestion de bases de données de Zend <http://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_.
+`Zend Db library to manage databases <https://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_ is used to manage all databases queries.
 
-Bien que cette extension supporte un certain nombre de bases de données différentes, Galette n'est compatible qu'avec :
+Even if the lib is compatible with several database systems; Galette is only compatible with:
 
-* `MySQL <http://mysql.com/>`_ version 5.x (le support InnoDB est requis),
-* `PostgreSQL <http://www.postgresql.org/>`_ 9.1 ou plus récente.
-
-Les scripts d'installation et de mise à jour de Galette fournis ne le sont que pour les serveurs de bases de données pré-cités. Néanmoins, si vous avez testé Galette avec succès pour un autre moteur et/ou si vous avez le script SQL d'initialisation de la base, n'hésitez pas à contacter `la liste des développeurs <https://mail.gna.org/listinfo/galette-devel/>`_ pour leur en faire part :-)
+* `MySQL <https://mysql.com/>`_ with InnoDB support,
+* `PostgreSQL <https://www.postgresql.org/>`_ 9.1 minimum.
 
 .. _galettelog:
 
 Analog
 ------
 
-*Version de la bibliothèque requise :* `1.0.10`
+*Required version:* `1.x`
 
-Un système de logs sera assuré par `Analog <https://github.com/jbroadway/analog/>`_.
+`Analog <https://github.com/jbroadway/analog/>`_ is used to handle log files.
 
 .. _smarty:
 
 Smarty
 ------
 
-*Version de la bibliothèque requise :* `3.1.31`
+.. image:: ../_styles/static/images/libraries/smarty.png
+   :width: 140px
+   :align: right
 
-Pour l'affichage des pages, c'est `le système de template Smarty <http://www.smarty.net/>`_ qui a été retenu. L'ensemble des pages est rendu au format HTML 5.
+*Required version:* `3.1.31`
+
+Page display is handled by `Smarty templating system <https://www.smarty.net/>`_. All pages are rendered with a HTML5 doctype.
 
 .. _pdf:
 
@@ -68,11 +72,12 @@ TCPDF
 -----
 
 .. image:: ../_styles/static/images/libraries/tcpdf.png
+   :width: 140px
    :align: right
 
-*Version de la bibliothèque requise :* `6.2.13`
+*Required version:* `6.x`
 
-L'ancienne bibliothèque de génération de PDF est remplacée par `TCPDF <http://www.tcpdf.org/>`_.
+`TCPDF <https://www.tcpdf.org/>`_ is a PDF generation lib Used to produce all PDF from Galette.
 
 .. _ui:
 
@@ -80,30 +85,37 @@ Interface utilisateur
 ---------------------
 
 .. image:: ../_styles/static/images/libraries/jquery.png
+   :width: 140px
    :align: right
 
-*Version de la bibliothèque requise :* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)
+*Required versions:* `1.10.2` (JQuery), `1.10.3` (UI), `1.1.14` (Markitup)
 
-Pour rendre plus dynamique l'interface utilisateur, et ainsi améliorer l'expérience de ce dernier, nous avons choisi de faire appel à un framework Javascript. `JQuery <http://jquery.com>`_ a été retenu, ainsi que certains de ses plugins, notamment :
+To make user interface a bit dynamic and improve user experience, we choose to use a Javascript framework. We rely on `JQuery <https://jquery.com>`_, among others:
 
-* `JQuery UI <http://ui.jquery.com/>`_ pour l'ajout d'onglets, de formulaires de sélection de dates, de fenêtres modales, etc,
-* `markItUp <http://markitup.jaysalvat.com>`_ en tant qu'éditeur HTML lors de l'envoi de mailings.
+* `JQuery UI <https://ui.jquery.com/>`_ to handle tabs, date selection, modals, ...
+* `markItUp <https://markitup.jaysalvat.com>`_ used as HTML editor in mailings,
+* `Selectize.js <https://selectize.github.io/selectize.js/>`_ for dropdowns to look better and searchable.
 
 .. _phpmailer:
 
-Envoi de courriels
-------------------
+Sending mails
+-------------
 
-*Version de la bibliothèque requise :* `5.2.25`
+.. image:: ../_styles/static/images/libraries/phpmailer.png
+   :width: 140px
+   :align: right
 
-L'envoi de courriels depuis Galette est géré par `la biliothèque phpMailer <http://phpmailer.worxware.com/>`_.
+*Required version:* `*`
+
+Sending mails ins Galette is done with `phpMailer library <https://github.com/PHPMailer/PHPMailer>`_.
 
 .. _unittests:
 
-Tests unitaires
+Unit tests
 ---------------
 
 .. image:: ../_styles/static/images/libraries/atoum.png
+   :width: 140px
    :align: right
 
-Les tests unitaires dans Galette sont exécutés via `le framework de test unitaire Atoum <http://atoum.org>`_.
+Galette uses `atoum testing framework <http://atoum.org>`_

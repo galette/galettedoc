@@ -1,0 +1,351 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-02 17:46+0200\n"
+"PO-Revision-Date: 2019-10-21 07:50+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../installation/preparation.rst:7
+msgid "Preparation"
+msgstr "Préparation"
+
+#: ../installation/preparation.rst:9
+msgid ""
+"You have to follow some preparation steps for Galette installation. The way "
+"to go differs on what you want to achieve."
+msgstr ""
+"Vous devrez suivre quelques étapes pour préparer l'installation de Galette. "
+"La manière de faire dépend de ce que vous souhaitez faire."
+
+#: ../installation/preparation.rst:14
+msgid "File permissions"
+msgstr "Permissions des fichiers"
+
+#: ../installation/preparation.rst:18
+msgid ""
+"A commonly used hack is to give all rights to everyone recursively on the "
+"directory (``chmod 777``). This is a very very bad idea from a security "
+"point of view. Please do not use that hack, you've been warned ;)"
+msgstr ""
+"Un contournement fréquemment utilisé est de donner tous les droits à tout le"
+" monde (``chmod 777``). C'est une très très mauvaise manière de faire d'un "
+"point de vue sécurité. Merci de ne pas faire ça, vous êtes prévenus ;)"
+
+#: ../installation/preparation.rst:20
+msgid ""
+"Some Galette directories need specific rights. The application will need to "
+"write in some of them, you have to ensure it will be possible. Here are "
+"directories that need a write access:"
+msgstr ""
+"Certains répertoires de Galette demandent des droits particuliers. "
+"L'application peut avoir à écrire dans certains d'entre eux, vou devrez vous"
+" assurer que c'est possible. Voici les dossiers qui demandent les droits en "
+"écriture :"
+
+#: ../installation/preparation.rst:22
+msgid "|folder| `config` [#configdirperms]_,"
+msgstr "|folder| `config` [#configdirperms]_,"
+
+#: ../installation/preparation.rst:23
+msgid "|folder| `data/attachments`,"
+msgstr "|folder| `data/attachments`,"
+
+#: ../installation/preparation.rst:24
+msgid "|folder| `data/cache`,"
+msgstr "|folder| `data/cache`,"
+
+#: ../installation/preparation.rst:25
+msgid "|folder| `data/exports`,"
+msgstr "|folder| `data/exports`,"
+
+#: ../installation/preparation.rst:26
+msgid "|folder| `data/files`,"
+msgstr "|folder| `data/files`,"
+
+#: ../installation/preparation.rst:27
+msgid "|folder| `data/imports`,"
+msgstr "|folder| `data/imports`,"
+
+#: ../installation/preparation.rst:28
+msgid "|folder| `data/logs`,"
+msgstr "|folder| `data/logs`,"
+
+#: ../installation/preparation.rst:29
+msgid "|folder| `data/photos`,"
+msgstr "|folder| `data/photos`,"
+
+#: ../installation/preparation.rst:30
+msgid "|folder| `data/tempimages`,"
+msgstr "|folder| `data/tempimages`,"
+
+#: ../installation/preparation.rst:31
+msgid "|folder| `data/templates_c`"
+msgstr "|folder| `data/templates_c`"
+
+#: ../installation/preparation.rst:33
+msgid ""
+"write access on ``config`` directory is only needed for Galette "
+"installation, we advice you to remove the write access once Galette has been"
+" installed :)"
+msgstr ""
+"l'accès en écriture sur le dossier ``config`` est uniquement requis lors de "
+"l'installation de Galette. Il est fortement conseillé de les enlever une "
+"fois l'installation terminée."
+
+#: ../installation/preparation.rst:38
+msgid "Web server directory exposition"
+msgstr "Exposition des dossiers sur le serveur web"
+
+#: ../installation/preparation.rst:42
+msgid ""
+"Galette defaults installation (as well as for many other web applications) "
+"consists in copying a complete directory to a location the web server can "
+"read. This method works well, but this exposes from the web files and "
+"directories that should not be available this way."
+msgstr ""
+"L'installation par défaut de Galette (tout comme bon nombre d'autres "
+"applications web) consiste à copier un dossier complet à nu endroit que le "
+"serveur web peut lire. Cette méthode fonctionne bien, mais elle expose des "
+"fichiers et dossiers sur les web alors qu'ils ne devraient pas forcément "
+"être accessibles de cette manière."
+
+#: ../installation/preparation.rst:44
+msgid ""
+"It is possible to limit that by exposing only the ``webroot`` directory. All"
+" other directories are more safe: it is not possible to reach them from the "
+"web server!"
+msgstr ""
+"Il est possible de limiter cela en n'exposant que le dossier ``webroot``. "
+"Tous les autres dossiers seront ainsi davantage en sécurité puisque non "
+"accessibles depuis le web !"
+
+#: ../installation/preparation.rst:48
+msgid ""
+"Exposing only ``webroot`` directory is the recommended way if you can create"
+" virtual hosts on your hosting solution."
+msgstr ""
+"L'exposition du seul dossier ``webroot`` est la manière recommandée si vous "
+"avez la possibilité de créer des hôtes virtuels sur votre hébergement."
+
+#: ../installation/preparation.rst:50
+msgid "And that will certainly not be possible for many free hostings."
+msgstr ""
+"Et ce ne sera certainement pas possible sur nombre d'hébergements gratuits "
+"et/ou mutualisés."
+
+#: ../installation/preparation.rst:52
+msgid ""
+"Here is a virtual host configuration example, including the hide of "
+"`index.php`:"
+msgstr ""
+"Voici un exemple de configuration d'un hôte virtuel, y compris le masquage "
+"de `index.php` :"
+
+#: ../installation/preparation.rst:79
+msgid "Nginx would be:"
+msgstr "Pour Nginx, ce serait :"
+
+#: ../installation/unix.rst:4
+msgid "Linux/Unix"
+msgstr "Linux/Unix"
+
+#: ../installation/unix.rst:6
+msgid ""
+"Installing Galette on Linux implies you have an access to the terminal on "
+"the server and required ACLs on directories."
+msgstr ""
+"Installer Galette sous Linux implique que vous ayez accès à une console sur "
+"le serveur, et les droits requis sur les répertoires."
+
+#: ../installation/unix.rst:8
+msgid ""
+"As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
+msgstr ""
+"Par exemple, sous `Fedora <https://fedora.org>`_, vous lancerez (en root) :"
+
+#: ../installation/unix.rst:15
+msgid ""
+"Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
+"``www-data:www-data``."
+msgstr ""
+"Sous `Debian <https://debian.org/>`_, on remplacera ``apache:apache`` par "
+"``www-data:www-data``."
+
+#: ../installation/unix.rst:17
+msgid "On SELinux enabled systems, we'll also add:"
+msgstr "Sur les systèmes avec SELinux activé, on ajoutera :"
+
+#: ../installation/unix.rst:25
+msgid ""
+"You will also have to authorize webserver to connect to the network, with a "
+"SELinux boolean:"
+msgstr ""
+"Vous devrez aussi autoriser le serveur web à se connecter au réseau, avec un"
+" booléen SELinux :"
+
+#: ../installation/ftp.rst:4
+msgid "FTP"
+msgstr "FTP"
+
+#: ../installation/ftp.rst:8
+msgid ""
+"Some archive or FTP softwares may corrupt files... It is strongly adviced if"
+" you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
+"and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts."
+msgstr ""
+"Certains logiciels d'archives ou de transfert FTP peuvent corrompre les "
+"fichiers... Il est fortement conseillé si vous êtes sous Windows d'utiliser "
+"`7zip <https://www.7-zip.fr>`_ pour décompresser les archives et `FileZilla "
+"<https://filezilla-project.org/>`_ pour les transferts FTP."
+
+#: ../installation/ftp.rst:10
+msgid ""
+"Once source code has been retrived locally, use :samp:`tar xjvf "
+"{galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under "
+"Windows."
+msgstr ""
+"Une fois que le code source est récupéré en local ; utilisez :samp:`tar xjvf"
+" {galette.tar.bz2}` sous Linux/Unix/MacOS ou un outil de gestion graphique "
+"sous Windows."
+
+#: ../installation/ftp.rst:12
+msgid ""
+"Just copy the uncompressed directory obtained, and all its sub directories "
+"and files, with your FTP client."
+msgstr ""
+"Copiez simplement le dossier obtenu après décompression, ainsi que tous les "
+"fichiers et dossiers qu'ils contient, à l'aide de votre client FTP."
+
+#: ../installation/ftp.rst:19
+msgid "Specific cases"
+msgstr "Cas particuliers"
+
+#: ../installation/ftp.rst:22
+msgid "OVH"
+msgstr "OVH"
+
+#: ../installation/ftp.rst:24
+msgid ""
+"This hosting compay offers to `change PHP version you use from your customer"
+" account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
+"hebergement-web-mutu-2014/>`_."
+msgstr ""
+"Cette société d'hébergement offre de `changer la version de PHP utilisée "
+"depuis l'interface client <https://docs.ovh.com/fr/hosting/configurer-le-"
+"php-sur-son-hebergement-web-mutu-2014/>`_."
+
+#: ../installation/ftp.rst:26
+msgid ""
+"Additionnal informations are available at: "
+"https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-"
+"hebergement-web-mutu-2014/"
+msgstr ""
+"Des informations complémentaires sont également disponibles : "
+"https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-"
+"hebergement-web-mutu-2014/"
+
+#: ../installation/ftp.rst:30
+msgid ""
+"Many users have display images or emargement list issues on OVH hosts. The "
+"solution to this issue is to create a `.ovhconfig` file at your hosting root"
+" with the following contents:"
+msgstr ""
+"Beaucoup d'utilisateurs ont rencontré des problèmes de chargement d'images, "
+"ou de la liste d'émargement chez OVH. La solution à ce problème est de créer"
+" un fichier `.ovhconfig` à la racine de votre hébergement avec le contenu "
+"suivant :"
+
+#: ../installation/ftp.rst:37
+msgid "Nginx"
+msgstr "Nginx"
+
+#: ../installation/ftp.rst:39
+msgid ""
+"`Nginx webserver <https://nginx.com>`_ configuration is different from "
+"Apache one (see `Nginx documentation for a more complete explanation "
+"<https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-"
+"htaccess/>`_)."
+msgstr ""
+"La configuration du `serveur web Nginx <https://nginx.com>`_ est différente "
+"de celle d'Apache (voir `la documentation Nginx pour de plsu amples "
+"informations "
+"<https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-"
+"htaccess/>`_)."
+
+#: ../installation/ftp.rst:41
+msgid ""
+"So you have to convert restriction access files in Nginx configuration, as "
+"for example:"
+msgstr ""
+"Vous devrez donc convertir les restrictions d'accès dans la configuration de"
+" Nginx, comme par exemple :"
+
+#: ../installation/windows.rst:4
+msgid "Windows"
+msgstr "Windows"
+
+#: ../installation/windows.rst:6
+msgid ""
+"Installation described here rely on `XAMPP "
+"<https://www.apachefriends.org/fr/xampp-windows.html>`_; other installation "
+"methods exist but are not listed here."
+msgstr ""
+"L'installation décrite ici est basée sur `XAMPP "
+"<https://www.apachefriends.org/fr/xampp-windows.html>`_ ; d'autres méthodes "
+"sont certainement disponibles, mais elle ne sont pas traitées ici."
+
+#: ../installation/windows.rst:8
+msgid ""
+"First of all, download XAMPP on your computer. Let's install it under "
+"``C:\\xampp``."
+msgstr ""
+"Tout d'abord, téléchargez XAMPP sur votre ordinateur. installons le dans "
+"``C:\\xampp``."
+
+#: ../installation/windows.rst:14
+msgid ""
+"Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
+"so you can start Apache and MySQL services."
+msgstr ""
+"Lancez le programme ``xampp-control`` (vous le trouverez dans `C:\\xampp``),"
+" vous pourrez ainsi lancer les services Apache et MySQL."
+
+#: ../installation/windows.rst:20
+msgid ""
+"Once those steps done, download galette and move it to "
+"``C:\\wampp\\htdocs\\galette``, web application will be available from "
+"http://127.0.0.1/galette/. Just visit this URL so the installation process "
+"begin."
+msgstr ""
+"Une fois ces étapes terminées, téléchargez Galette et déplacez le dans "
+"``C:\\wampp\\htdocs\\galette``, l'application sera accessible depuis "
+"http://127.0.0.1/galette/. Ouvrez simplement cette URL pour que le processus"
+" d'installation démarre."
+
+#: ../installation/windows.rst:24
+msgid ""
+"Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
+"the required extensions are already present, but commented (line begins with"
+" a \";\"), just uncomment them and restart XAMPP."
+msgstr ""
+"L'activation de modules PHP sous XAMPP se fait dans `xampp/php/php.ini``. La"
+" plupart des extensions requises sont déjà présentes, mais sont commentées "
+"(la ligne commence par un « ; »), dé-commentez les simplement et relancez "
+"XAMPP."
+
+#: ../installation/windows.rst:26
+msgid ""
+"`openssl` extension is missing in the file, to activate it just add the "
+"following to your `php.ini`: ``extension=php_openssl.dll``"
+msgstr ""
+"L'extension `openssl` est absente du fichier, pour l'activer, ajoutez "
+"simplement ceci à votre `php.ini` : ``extension=php_openssl.dll``"

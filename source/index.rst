@@ -3,30 +3,32 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentation de Galette
-========================
+Galette's documentation
+=======================
 
-`Galette <http://galette.eu>`_ est un outil libre et gratuit de gestion d'adhérents et de cotisations en ligne à destination des associations. Le `site internet de Galette <http://galette.eu>`_ vous fournira quelques informations complémentaires sur le logiciel ; vous pouvez également consulter :doc:`le changelog de Galette </changelog>`.
+`Galette <https://galette.eu>`_ is a `Free/Libre Open Source <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__ membership management web application dedicated towards non profit organizations.
 
 .. rst-class:: docs install_doc
 
-:doc:`manuel d'installation <installation/index>`
+:doc:`installation manual <installation/index>`
 
 .. rst-class:: docs user_doc
 
-:doc:`manuel de l'utilisateur <usermanual/index>`
+:doc:`user manual <usermanual/index>`
 
 .. rst-class:: docs plugins_doc
 
-:doc:`documentation des plugins <plugins/index>`
+:doc:`plugins documentation <plugins/index>`
 
 .. rst-class:: docs devel_doc
 
-:doc:`guide du développeur <development/index>`
+:doc:`developer guide <development/index>`
 
-Si vous le souhaitez, vous pouvez :ref:`en savoir plus sur la documentation de galette (technologies utilisées, comment récupérer les sources et les construire) <about>`.
+If you want, you can also :doc:`learn more about Galette's documentation itself</about>` (used technologies, how to retrieve the documentation sources, translate and build it).
 
-Table des matières :
+.. only:: html
+
+   Table of contents:
 
 .. toctree::
    :maxdepth: 2
@@ -36,3 +38,10 @@ Table des matières :
    faq/index.rst
    plugins/index.rst
    development/index.rst
+   about.rst
+
+.. toctree::
+   :hidden:
+
+   changelog.rst
+   development/plugins-0.8-0.9.rst

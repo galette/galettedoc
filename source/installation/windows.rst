@@ -3,24 +3,24 @@
 Windows
 =======
 
-L'installation présentée ici repose sur `XAMPP <http://www.apachefriends.org/fr/xampp-windows.html>`_ ; il existe d'autres méthodes d'installation qui ne seront pas décrites ici.
+Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; other installation methods exist but are not listed here.
 
-Dans un premier temps, il faudra donc télécharger et installer XAMPP sur votre poste. Installons tout cela dans ``C:\xampp``.
+First of all, download XAMPP on your computer. Let's install it under ``C:\xampp``.
 
 .. image:: ../_styles/static/images/installation/windows/xampp_directory.jpg
    :scale: 50 %
    :align: center
 
-Lancez ensuite le programme ``xampp-control`` (qui se trouve dans ``C:\xampp``), afin de démarrer les services Apache et MySQL.
+Launch the ``xampp-control`` executable (you can find it in ``C:\xampp``), so you can start Apache and MySQL services.
 
 .. image:: ../_styles/static/images/installation/windows/xampp_control.jpg
    :scale: 50 %
    :align: center
 
-Une fois ces étapes effectuées, il vous faudra récupérer Galette et la placer dans le dossier ``C:\wampp\htdocs\galette``, l'application sera alors accessible à l'adresse http://127.0.0.1/galette/. Il suffit de visiter cette adresse pour que le processus d'installation se lance.
+Once those steps done, download galette and move it to ``C:\wampp\htdocs\galette``, web application will be available from http://127.0.0.1/galette/. Just visit this URL so the installation process begin.
 
 .. note::
 
-   L'activation de modules PHP sous XAMPP se fait dans le fichier ``xampp/php/php.ini``. La plupart des extensions requises sont déjà présentes, mais commentées (ligne précédée d'un point-virgule) ; il suffira alors de décommenter les lignes adéquates, et de relancer XAMPP.
+   Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a ";"), just uncomment them and restart XAMPP.
 
-   L'extension `openssl` n'est pas présente dans le fichier, il faudra pour l'activer ajouter la ligne suivante à votre `php.ini` ``extension=php_openssl.dll``
+   `openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``

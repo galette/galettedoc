@@ -1,0 +1,388 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-02 09:14+0200\n"
+"PO-Revision-Date: 2019-10-22 06:23+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../faq/index.rst:5
+msgid "Frequently Asked Question (FAQ)"
+msgstr "Questions fréquentes (FAQ)"
+
+#: ../faq/index.rst:9
+msgid "What if Galette does not work?"
+msgstr "Que faire si Galette ne fonctionne pas ?"
+
+#: ../faq/index.rst:11
+msgid ""
+"Sometimes, after an update, a change on hosting, or a simple bug - even "
+"minor ones - may cause a fail in Galette. You may observe:"
+msgstr ""
+"Parfois, une mise à jour, une modification sur l'hébergement, ou un simple "
+"bogue - même mineurs - peuvent causer une erreur dans Galette. Vous pourriez"
+" observer :"
+
+#: ../faq/index.rst:13
+msgid "a simple error message id displayed,"
+msgstr "un simple message d'erreur est affiché,"
+
+#: ../faq/index.rst:14
+msgid "a blank page,"
+msgstr "une page blanche,"
+
+#: ../faq/index.rst:15
+msgid "a page with a backtace (usually, not in production mode),"
+msgstr "une page avec une trace (généralement pas en mode production),"
+
+#: ../faq/index.rst:16 ../faq/index.rst:119
+msgid "..."
+msgstr "..."
+
+#: ../faq/index.rst:18
+msgid ""
+"In all cases, you **must check the logs**. Most of errors are stored in "
+"those files, it is a very good start point to understand the problem and "
+"potentially solve it."
+msgstr ""
+"Dans tous les cas, vous **devez consulter les logs**. La plupart des erreurs"
+" sont stockées dans ces fichiers, c'est un très bon point de départ pour "
+"comprendre le problème, et éventuellement le résoudre."
+
+#: ../faq/index.rst:20
+msgid ""
+"There are two types of log files: Galette ones, and system ones. Galette "
+"logs are stored in the ``galette/data/log`` per default."
+msgstr ""
+"Il existe deux types de fichiers de logs : ceux de Galette, et les logs "
+"système. Les logs de Galette sont stockés dans le dossier "
+"``galette/data/log`` par défaut."
+
+#: ../faq/index.rst:23
+msgid ""
+"Server logs are another subject. On shared webservers, they are often not "
+"accessible to you :( On a dedicated webserver, their location change with "
+"server configuration; it is related to the operating system used, PHP and/or"
+" web server configuration, ..."
+msgstr ""
+"Les logs système sont un autre problème. Sur des hébergements mutualisés, "
+"ils ne vous sont généralement pas accessibles :( Sur un serveur dédié, leur "
+"emplacement change en fonction de la configuration du serveur, et c'est lié "
+"aux système d'exploitation, version de PHP, configuration du serveur web, "
+"..."
+
+#: ../faq/index.rst:25
+msgid ""
+"with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for"
+" GNU/Linux Red Hat like distributions),"
+msgstr ""
+"avec le service ``php-fpm`` les logs sont dans ``/var/log/php-fpm/www-"
+"error.log`` (pour les distributions GNU/Linux Red Hat like),"
+
+#: ../faq/index.rst:26
+msgid ""
+"with (the deprecated) ``mod_php``, you'll find them in "
+"``/var/log/httpd/error_log`` (on other GNU/Linux distributions, `httpd` may "
+"be named `apache`),"
+msgstr ""
+"avec le (déprécié) ``mod_php``, vous les trouverez dans "
+"``/var/log/httpd/error_log`` (sur d'autres distributions GNU/Linux, `httpd` "
+"peut être nommé `apache`),"
+
+#: ../faq/index.rst:27
+msgid ""
+"on Windows/MacOS with XAMPP like solutions, there is at least one log "
+"directory in installation; you may find what you look for there."
+msgstr ""
+"sur des solutions Windows/MacOS avec des solutions de type XAMPP, il existe "
+"généralement un dossier log où ils ont été installés, vous devriez trouver "
+"votre bonheur à cet endroit."
+
+#: ../faq/index.rst:30
+msgid "Displaying errors"
+msgstr "Afficher les erreurs"
+
+#: ../faq/index.rst:32
+msgid ""
+"If you cannot access system logs files (frequent on shared hostings), you "
+"can display errors directly on the page."
+msgstr ""
+"Si vous ne pouvez pas accéder aux logs système (fréquent sur les "
+"hébergements mutualisés), vous pouvez afficher les erreurs directement sur "
+"la page."
+
+#: ../faq/index.rst:36
+msgid ""
+"Displaying errors on a web page may provide informations that should not be "
+"public. In production mode, is it **strongly advised not to display them**. "
+"Above solution is only a temporary debug tool."
+msgstr ""
+"Afficher les erreurs sur une page web peut fournir des informations qui ne "
+"devraient pas être publiques. En mode production, il est **fortement "
+"recommandé de ne pas les afficher**. la solution décrite ici n'est qu'un "
+"outil de déboguage."
+
+#: ../faq/index.rst:38
+msgid ""
+"Please also note that with routing intgration, some of those displayed "
+"informations may be \"hidden\" from a buggy redirection... Logs are safer on"
+" that point."
+msgstr ""
+"Notez également qu'avec le système de routes, certaines informations "
+"pourraient être « cachées » par une redirection inadaptée... Les logs sont "
+"bien plus fiables sur ce point."
+
+#: ../faq/index.rst:40
+msgid ""
+"To temporary display errors on page, create a "
+"``galette/config/behavior.inc.php`` file with the following contents:"
+msgstr ""
+"Pour afficher temporairement les erreurs sur la page, créez un fichier "
+"``galette/config/behavior.inc.php`` avec le contenu suivant :"
+
+#: ../faq/index.rst:47
+msgid ""
+"The next time you reproduce the issue, errors will be displayed on the page."
+msgstr ""
+"La prochaine fois que vous rencontrerez le problème, les erreurs seront "
+"affichées sur la page en question."
+
+#: ../faq/index.rst:49
+msgid ""
+"Globally, you can use :ref:`Galette behavior configuration <behavior>` to "
+"help you grabadditional informations."
+msgstr ""
+"Globalement, vous pouvez utiliser :ref:`la configuration du comportement de "
+"Galette <behavior>` pour vous aider à obtenir davantage d'informations."
+
+#: ../faq/index.rst:53
+msgid "How to report a bug or ask for a feature?"
+msgstr "Comment rapporter un bogue ou demander une fonctionnalité ?"
+
+#: ../faq/index.rst:55
+msgid ""
+"Bugs reports as well as RFE (Request For Enhancement) must be done on the "
+"`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
+"itself, all official plugins and also documentation."
+msgstr ""
+"Les rapports de bogues et RFE (Request For Enhancement) doivent être "
+"effectués sur le `tracker de Galette "
+"<https://bugs.galette.eu/projects/galette>`_, pour Galette elle même, tous "
+"les plugins officiels et aussi pour la documentation."
+
+#: ../faq/index.rst:59
+msgid ""
+"Unless you are sure you know, please de not attribute the ticket and do not "
+"set target version. It will be done when it will be took into account."
+msgstr ""
+"À moins d'être certain de ce que vous faites, merci de ne pas attribuer le "
+"ticket et de ne pas définir la version cible. Cela sera fait lorsque le "
+"ticket sera pris en compte."
+
+#: ../faq/index.rst:61
+msgid ""
+"If you have doubts, feel free to ask your questions on mailing lists ;)"
+msgstr ""
+"Si vous avez des doutes, n'hésitez pas à poser vos questions sur les listes "
+"de diffusion ;)"
+
+#: ../faq/index.rst:64
+msgid "Report a bug"
+msgstr "Rapporter un bogue"
+
+#: ../faq/index.rst:66
+msgid "Please, do not forget to:"
+msgstr "S'il vous plaît, n'oubliez pas de :"
+
+#: ../faq/index.rst:68
+msgid "tell us the Galette version you are using,"
+msgstr "nous dire quelle version de Galette vous utilisez,"
+
+#: ../faq/index.rst:69
+msgid "be clear and consise,"
+msgstr "être clair et concis,"
+
+#: ../faq/index.rst:70
+msgid "to provide all required informations in order to reproduce the issue"
+msgstr "fournir toutes les informations pour reproduire le problème,"
+
+#: ../faq/index.rst:71
+msgid "to provide related logs entries."
+msgstr "de fournir les entrées de logs adéquates."
+
+#: ../faq/index.rst:74
+msgid "Request For Enhancement"
+msgstr "Demande de fonctionnalités"
+
+#: ../faq/index.rst:76
+msgid ""
+"Make sure to be precise as well on RFEs. Developers may not guess what you "
+"have in mind, you have to explain them, event if this seems obvious to you "
+";) Requested enhancements are tagged as \"Souhaits\" (whishes, in french), "
+"and moved by developers when work begins most of the time."
+msgstr ""
+"Assurez vous d'être précis pour les demandes d'évolution également. Les "
+"développeurs peuvent ne pas deviner ce que vous avez à l'esprit, vous devez "
+"leur expliquer, même si ça vous semble évident ;) Les demandes dévolution "
+"sont marquées comme « Souhaits », et déplacées par les développeurs lorsque "
+"le travail commence."
+
+#: ../faq/index.rst:79
+msgid ""
+"Once you made your whishes, you can `submit it to a vote "
+"<https://vote.galette.eu/>`_, most wanted features may catch devs attention."
+msgstr ""
+"Une fois votre souhait exprimé, vous pouvez `le soumettre au vote "
+"<https://vote.galette.eu/>`_, les demandes les plus plébiscitées pourraient "
+"retenir l'attention des développeurs."
+
+#: ../faq/index.rst:83
+msgid "How to search in lists archives?"
+msgstr "Comment chercher dans les archives des listes ?"
+
+#: ../faq/index.rst:85
+msgid ""
+"Mailing lists are the main communication channel for Galette, from its "
+"beginnings."
+msgstr ""
+"Les listes de diffusion sont le canal principal de communication pour "
+"Galette, depuis ses débuts."
+
+#: ../faq/index.rst:87
+msgid "As a reminder, since 2017, two lists are available:"
+msgstr "Pour rappel, depuis 2017, deux listes sont disponibles :"
+
+#: ../faq/index.rst:89
+msgid ""
+"`users discussion list "
+"<https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : general "
+"talks, help, ..."
+msgstr ""
+"`liste de diffusion des utilisateurs "
+"<https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : discussions "
+"générales, support, ..."
+
+#: ../faq/index.rst:90
+msgid ""
+"`development discussion list "
+"<https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : technical "
+"discussions, tickets triaging, ..."
+msgstr ""
+"`liste de diffusion des développeurs "
+"<https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : discussions "
+"techniques, tri des tickets, ..."
+
+#: ../faq/index.rst:92
+msgid "If you are looking for archives before 2017, see:"
+msgstr "Si vous cherchez les archives avant 2017, voyez :"
+
+#: ../faq/index.rst:94
+msgid ""
+"`old users discussion list <https://download.tuxfamily.org/galette/listes-"
+"galette/mail.gna.org/public/galette-discussion/index.html>`_"
+msgstr ""
+"`ancienne liste de diffusion des utilisateurs "
+"<https://download.tuxfamily.org/galette/listes-"
+"galette/mail.gna.org/public/galette-discussion/index.html>`_"
+
+#: ../faq/index.rst:95
+msgid ""
+"`old development discussion list "
+"<https://download.tuxfamily.org/galette/listes-"
+"galette/mail.gna.org/public/galette-devel/index.html>`_"
+msgstr ""
+"`ancienne lise de diffusion des développement "
+"<https://download.tuxfamily.org/galette/listes-"
+"galette/mail.gna.org/public/galette-devel/index.html>`_"
+
+#: ../faq/index.rst:97
+msgid ""
+"Unfortunately, there is no search mechanism in any of those lists archives. "
+"The alternative is to use the `site:` keyword from your favorite search "
+"engine (most of them supports that keyword):"
+msgstr ""
+"Malheureusement, il n'y a pas de mécanisme de recherche dans ces archives. "
+"L'alternative est d'utiliser le mot clé `site:` depuis votre moteur de "
+"recherche (la plupart supporte ce mot clé)."
+
+#: ../faq/index.rst:103
+msgid ""
+"Above search will look for \"plugin\" in archives of users mailing list. "
+"Just adapt the URL to the list/period and keywords you want ;)"
+msgstr ""
+"La recherche ci-dessus cherchera « plugin » dans les archives de la liste de"
+" diffusion des utilisateurs. Adaptez juste l'URL aux liste et période que "
+"vous souhaitez ;)"
+
+#: ../faq/index.rst:105
+msgid "To improve the search, refer to your search engine documentation."
+msgstr ""
+"Pour affiner la recherche, référez-vous à la documentation de votre moteur "
+"de recherche."
+
+#: ../faq/index.rst:109
+msgid "How to use same email address for several members?"
+msgstr ""
+"Comment utiliser une même adresse de courriel pour plusieurs adhérents ?"
+
+#: ../faq/index.rst:111
+msgid "This is a very frequent question; many would love to do that..."
+msgstr ""
+"C'est une question très fréquente, beaucoup souhaiteraient pouvoir faire "
+"ça..."
+
+#: ../faq/index.rst:113
+msgid "**This is not possible.**"
+msgstr "**Ce n'est pas possible.**"
+
+#: ../faq/index.rst:115
+msgid ""
+"Indeed, mail addresses must be unique in the database. It is a choice for "
+"the project on which several features are built:"
+msgstr ""
+"En effet, les adresses de courriel doivent être uniques dans la base de "
+"données. C'est un choix du projet sur lequel plusieurs fonctionnalités "
+"reposent :"
+
+#: ../faq/index.rst:117
+msgid "lost password (since... always or almost),"
+msgstr "récupération du mot de passe (depuis... toujours ou presque),"
+
+#: ../faq/index.rst:118
+msgid "login (since Galette 0.9),"
+msgstr "la connexion (depuis Galette 0.9),"
+
+#: ../faq/index.rst:121
+msgid ""
+"Making them non uniques is not a solution we want to rely on. This would be "
+"complicated, and should be source of many bugs."
+msgstr ""
+"Les rendre non uniques n'est pas une solution que nous souhaitons mettre en "
+"œuvre. Ce serait compliqué, et source de nombreux bogues."
+
+#: ../faq/index.rst:123
+msgid ""
+"However, it is possible in Galette to :ref:`link several members "
+"<linkmembers>`. That way, some informations such as email and postal "
+"addressess will be retrieved from the parent member if missing."
+msgstr ""
+"Toutefois, il est possible dans Galette de :ref:`lier plusieurs adhérents "
+"<linkmembers>`. De cette manière, certaines informations comme l'adresse "
+"courriel ou l'adresse postale seront récupérées depuis le parent si elles "
+"sont manquantes."
+
+#: ../faq/index.rst:125
+msgid ""
+"This allows finally to use a unique email address for several members in "
+"database; but they are no duplicates in database."
+msgstr ""
+"Ceci permet finalement d'utiliser une même adresse de courriel pour "
+"plusieurs membres en base ; mais il n'y a pas de doublons dans la base."

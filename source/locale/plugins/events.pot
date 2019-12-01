@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/events.rst:3
+#: ../plugins/events.rst:60
+# cb7cf263f8084fce9508174657d89ee2
+# d7d6319f7f7946ccbafef48e231f9450
+msgid "Events"
+msgstr ""
+
+#: ../plugins/events.rst:5
+# b53d8248ce31483b840e266fb1e222b0
+msgid "This plugin provides:"
+msgstr ""
+
+#: ../plugins/events.rst:7
+# e7a8d0455beb4d3781e00641183db094
+msgid "events management,"
+msgstr ""
+
+#: ../plugins/events.rst:8
+# 83799a4115074ce9912b49c4f6aab367
+msgid "associate activities with events,"
+msgstr ""
+
+#: ../plugins/events.rst:9
+# c46e93a663aa4036ba676db17ab63eea
+msgid "booking management."
+msgstr ""
+
+#: ../plugins/events.rst:12
+# e598d0ce8ae14798a264c1f32653dad2
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/events.rst:16
+# 4efa79896b1547b8b2bf6a49976be727
+msgid "This plugin requires Galette 0.9.1 to work!"
+msgstr ""
+
+#: ../plugins/events.rst:18
+# 8eae9adef4a04b8587d0b5a580709ddb
+msgid "First of all, download the plugin: https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.1.1.tar.bz2"
+msgstr ""
+
+#: ../plugins/events.rst:21
+# ec825af5c774434aaef6109a3e3a51fb
+msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
+msgstr ""
+
+#: ../plugins/events.rst:31
+# 31567afc7b2c40cd839f7c7e413308e0
+msgid "Database initialisation"
+msgstr ""
+
+#: ../plugins/events.rst:33
+# 5f8d0869a9a7486fa8890a5b6d37549a
+msgid "In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`."
+msgstr ""
+
+#: ../plugins/events.rst:35
+# 9b28c098e1b6487483059dc47f6d49bc
+msgid "And this is finished; Events plugin is installed :)"
+msgstr ""
+
+#: ../plugins/events.rst:38
+# 3d75305f91e145f9b4e14dacc188b484
+msgid "Plugin usage"
+msgstr ""
+
+#: ../plugins/events.rst:40
+# 1d9120ae626b401a9c6f126c4dc65766
+msgid "When the plugin is installed, an `Events` group is added to Galette menu when a user is logged in. There are various possibilities that change depending on user profile (simple member, group manager, administrator, ...)?"
+msgstr ""
+
+#: ../plugins/events.rst:43
+# a9745a2694a34a73ba3c5f0f0219ce61
+msgid "Activities"
+msgstr ""
+
+#: ../plugins/events.rst:45
+# 320c67a2fdb24aa5aa073bdb752adfb6
+msgid "You can define as much activities as you want, and associate them to an event. An activity may be an organized trip, a meal, a housing, ..."
+msgstr ""
+
+#: ../plugins/events.rst:51
+# 0907cae7e83c4e118d63daac4974bff2
+msgid "An activity is composed with a name, a status and an optionnal comment."
+msgstr ""
+
+#: ../plugins/events.rst:53
+# 44e742723bfa4250908502ab57b5c726
+msgid "To add a new activity, just click on \"New activity\" link:"
+msgstr ""
+
+#: ../plugins/events.rst:62
+# 522bdcca91854e8da9324f69bf16a1cb
+msgid "Events are the main goal of the plugin. You can define several informations, like a name, begin and ending dates, location, ..."
+msgstr ""
+
+#: ../plugins/events.rst:68
+# 7dcac540a91f41b0b8e21fbcfc264779
+msgid "Name, begin date and town are mandatory. All other informations are entirely optionnal."
+msgstr ""
+
+#: ../plugins/events.rst:70
+# 7eef9b25cf5c41348d5203ff62100fdd
+msgid "Events that are not linked to a group will be available for all members. If a group is set, only members and managers of this group will have access."
+msgstr ""
+
+#: ../plugins/events.rst:74
+# 442af544af3946f5934f67cfd95b2279
+msgid "When a group manager creates a new event, he must choose one of the groups he owns!"
+msgstr ""
+
+#: ../plugins/events.rst:76
+# 12d0bf474a1a422e99496a033d5d6795
+msgid "You can attach one or several activities to each event, and for each one set if it is available, not available or even mandatory. Choose the activity to add, and click the button."
+msgstr ""
+
+#: ../plugins/events.rst:84
+# 7101bc2039ce41508a78cdf90379393b
+msgid "Adding or removing activity from an event will reload the page and ask you to fill mandatory informations. Nonetheless (and this is specified each time), the event **will not be stored** during this operation."
+msgstr ""
+
+#: ../plugins/events.rst:86
+# d21851feb4c44b4591d11bd90397a82c
+msgid "Ensure you save the event :)"
+msgstr ""
+
+#: ../plugins/events.rst:88
+# 9124ae7f484d4705aee55f23b2c61d8a
+msgid "From Events list, you can edit or remove entries, access to booking list ou export bookings as CSV."
+msgstr ""
+
+#: ../plugins/events.rst:95
+# e2938292975b4a2a9f626d9e4718b117
+msgid "Bookings"
+msgstr ""
+
+#: ../plugins/events.rst:97
+# 5b882d68daff4f29b7c631aa3e555a69
+msgid "Bookings can be registered for each event. As we said before, simple members and groups managers will be limited to their groups events, ou to the events that are not restricted to a group."
+msgstr ""
+
+#: ../plugins/events.rst:99
+# 7ebe3751468d412a8b1647adfa76a8a0
+msgid "Adding a new booking can be achieved from the menu \"New booking\" or from the event bookings list."
+msgstr ""
+
+#: ../plugins/events.rst:105
+# ab9d23fdf30c4cf18531546f9c0b62d6
+msgid "Bookings are closed once the event is marked as close, or when the begin date is over. Administrators and staff members can always add new bookings."
+msgstr ""
+
+#: ../plugins/events.rst:107
+# 1641d9c4a7424f70a544170ad3d7a82c
+msgid "Activities list is retrieved from the event; mandatory ones must of course be checked during booking."
+msgstr ""
+
+#: ../plugins/events.rst:113
+# 66e61a92541945a4baa2c1875d79377c
+msgid "You can filter bookings list per event, payment type or payment status. You can then send a mailing to booked members, using the standard Galette mailing mechanism."
+msgstr ""
+
+#: ../plugins/events.rst:116
+# f0c8f5b538c247b582ac5dc26dddfebe
+msgid "How to get the sources?"
+msgstr ""
+
+#: ../plugins/events.rst:118
+# c4c67e0a15154325a3c3745895cfd7c0
+msgid "Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`."
+msgstr ""
+

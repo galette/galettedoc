@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2019, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-01 21:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../plugins/paypal.rst:3
+# 49246bf49e0a488d9152d16c813600ce
+msgid "Paypal"
+msgstr ""
+
+#: ../plugins/paypal.rst:5
+# ef7d968ca8234855a75bb1ea42c3f07f
+msgid "This plugin provides:"
+msgstr ""
+
+#: ../plugins/paypal.rst:7
+# 1936aaf344f4471ab7565efa07bfdb12
+msgid "possibility to associate an amount to a contribution type,"
+msgstr ""
+
+#: ../plugins/paypal.rst:8
+# 720faf685b3142939cfd7bb012c3e443
+msgid "create a Paypal payment form,"
+msgstr ""
+
+#: ../plugins/paypal.rst:9
+# 2d9dbf11effc49f7a2f8cc5b90954092
+msgid "an history,"
+msgstr ""
+
+#: ../plugins/paypal.rst:10
+# 652d7edae7a743f2a5860033fde42907
+msgid "automatic transaction storage once validated."
+msgstr ""
+
+#: ../plugins/paypal.rst:24
+# 1d8cebcfbb7d442d93acadf296ecc0a0
+msgid "Due to the way Paypal payments are handled, especially the payment confirmation, your instance must be publically accessible."
+msgstr ""
+
+#: ../plugins/paypal.rst:27
+# 5b61f235b7864bc49597c236bc0f3db6
+msgid "Installation"
+msgstr ""
+
+#: ../plugins/paypal.rst:29
+# 986d6b0033764253a3aca4847b6694f5
+msgid "First of all, download the plugin: https://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-1.7.0.tar.bz2"
+msgstr ""
+
+#: ../plugins/paypal.rst:32
+# fe3d53764e104a96b005f52a61bfdcfa
+msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
+msgstr ""
+
+#: ../plugins/paypal.rst:42
+# 7d2b737477264a5b8b4cf07d911b49ec
+msgid "Database initialisation"
+msgstr ""
+
+#: ../plugins/paypal.rst:44
+# f7a19c0b75b04d89aad5ee5f0a4dd2e8
+msgid "In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`."
+msgstr ""
+
+#: ../plugins/paypal.rst:46
+# 6352cda2357a46038206096042c34c75
+msgid "And this is finished; Paypal plugin is installed :)"
+msgstr ""
+
+#: ../plugins/paypal.rst:49
+# f6c38ecd1bb945f3a7b4af803ba3e044
+msgid "Plugin configuration"
+msgstr ""
+
+#: ../plugins/paypal.rst:51
+# 2b102fd5238e4ac9b0dc0dd73995ec65
+msgid "Once plugin has been installed, a `Paypal` group is added to the menu, with some new entries:"
+msgstr ""
+
+#: ../plugins/paypal.rst:53
+# 898fd1e77bdb40869576da5dcea6f672
+msgid "`Payment form`: the payment form itself, which is accessible as a public page,"
+msgstr ""
+
+#: ../plugins/paypal.rst:54
+# 9c4dcbf8d9ac4713bed3bd18491bd229
+msgid "`Preferences`: plugin preferences, accessible for administrators and staff members."
+msgstr ""
+
+#: ../plugins/paypal.rst:56
+# 5a41d93ae8dd482291fac6320706862f
+msgid "In order to work properly, you need to fill a very important value: your Paypal account code. You can either use the email address associated with your Paypal account (but you will need to chang it in Galette if it changes on Paypal) or your merchant identifier. To find your merchant identifiant, log in to Paypal and you will find it in your account preferences. Changing identifier is only allowed for administrators."
+msgstr ""
+
+#: ../plugins/paypal.rst:58
+# a436f88a3f804e009c68d6f316abfe65
+msgid "Preferences screen also permit to edit amount related to contributions types, and to hide some types."
+msgstr ""
+
+#: ../plugins/paypal.rst:60
+# c1c407910c0f444e9e80068814d7821f
+msgid "After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membershop extension, its membership wil be recalculated when the payment will be confirmed."
+msgstr ""
+
+#: ../plugins/paypal.rst:63
+# 0bceac6969d84f1c93dd18f251bbc68a
+msgid "How to get the sources?"
+msgstr ""
+
+#: ../plugins/paypal.rst:65
+# c9829226c90742a58209ea5d270d20f2
+msgid "Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`."
+msgstr ""
+

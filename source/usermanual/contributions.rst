@@ -1,122 +1,120 @@
-*************************
-Gestion des contributions
-*************************
+************************
+Contributions management
+************************
 
-Galette vous permet de gérer les contributions émises par vos adhérents. On distingue différents types de contributions, une notion de transaction est également proposée.
+Galette allows you to manage contributions sent from your members. There are several types of contributions, and transactions are also proposed.
 
-Une transaction, késako ? Comme il paraît qu'un petit exemple vaut mieux qu'un long discours... Prenons trois adhérents d'une même association : Marc, Julie et Zac. Chacun est membre de l'association, dans un même groupe ou dans des groupes différents, cela importe peu.
+A transaction? What's that? Well, a simple example is better than a long text... We will use three members of a same association: Marc, Julie and Zac. Each one is member, independently of which group or else they are affected to, that does not matters.
 
-Zac fait un chèque pour régler sa cotisation, celles de Marc et Julie, et aussi un don à l'association. Dans ce cas là, le chèque que fera Zac fera l'objet d'une transaction, qui lui sera rattachée, et qui sera ventilée en 4 contributions, sur chacun des trois membres (chacune attachée au membre voulu de Galette).
+Zac send you a check to pay his own membership, Marc and Julie ones and also a donation to the association. In this case, Zac's check will be handled in a transaction attached to his account, and which will be distributed in four contributions, each one attached to corresponding member.
 
-Autre exemple : Pierre règle seulement son adhésion ; sa transaction ne contient que sa seule contribution, il n'y a pas de ventilation à faire.
+Another example: Pierre pays his own contribution, his transaction will only contains his membership and will be distributed in only one contribution.
 
-Si Pierre, Zac, Julie ou Marc sont en retard, vous pouvez toujours leur :ref:`envoyer un rappel <reminders>` :p
+If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder <reminders>` :p
 
-Les contributions
-=================
+Contributions
+=============
 
-Une contribution peut correspondre à une cotisation, à un don, à un cadeau, ... Galette vous permet d'enregistrer cela pour chaque adhérent.
+A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member.
 
-Types de contribution
-^^^^^^^^^^^^^^^^^^^^^
+Contributions types
+^^^^^^^^^^^^^^^^^^^
 
-Les différents types de contributions sont entièrement paramétrables. On distingue deux groupes principaux qui ont un comportement différent dans Galette :
+Contributions are entirely configurable. There are two main types of contributions in Galette:
 
-* celles qui amènent une extension d'adhésion (une cotisation annuelle ou mensuelle par exemple),
-* celles qui n'amènent pas d'extention d'adhésion, comme les dons.
+* the ones that extends a membership (a montly or yearly membership for example),
+* the ones that do not extends membership, like donations.
 
-L'interface de gestion des types de contributions vous permet de définir un libellé, et si oui ou non ce type étend l'adhésion.
+Contribution types management allows you to define a label, and if it extends the memebrship or not.
 
 .. _reminders:
 
-Rappels
-^^^^^^^
+Reminders
+^^^^^^^^^
 
-Des modèles de courriels de rappels d'échéance de cotisation sont disponible depuis la gestion du contenu des courriels (« échance proche » et « échéance dépassée »).
+Emails models to remind due dates are available from the emails contents ("Impending due date" and "Late due date").
 
-Le bouton « rappel » du tableau de bord ou l'entrée « Rappels » disponible dans le menu vous donneront accès à l'interface de gestion des rappels de cotisation.
+The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface.
 
 .. image:: ../_styles/static/images/usermanual/reminders.png
    :scale: 75%
    :align: center
-   :alt: Interface de gestion des rappels
+   :alt: Reminders management interface
 
-Deux catégories distinctes sont sélectionnables :
+Two categories can be selected:
 
-* les adhérents dont l'échéance de cotisation est proche,
-* les adhérents dont l'échéance de cotisation est dépassée.
+* members whose due date is close,
+* members whose due date is in the past.
 
-Par défaut (ce n'est actuellement pas paramétrable), les courriels sont envoyés 1 mois, puis 7 jours avant la daté d'échéance ; puis un mois et 2 mois après la date d'échéance. Les rappels envoyés sont stockés dans la base, si vous n'en avez jamais envoyés, l'ensemble des adhérents marqués comme étant en retard seront considérés comme étant à relancer.
+Per default (this is currently not configurable), reminders are sent one month, then seven days before the due date; and then one and two months after the due date expiration. Reminders are stored in the database, if you never sent any reminder, all matching members will be reminded.
 
-L'interface vous informe également si des membres ne possèdent pas d'adresse de courriel, et vous donne la possibilité d'imprimer les étiquettes pour ces derniers.
+Galette will tell you if some members do not have an email address, you can print labels for those ones.
 
-Enfin, il est possible d'automatiser les rappels de cotisation via une tâche cron qui executera le fichier php ``galette/reminder.php``. Si vous souhaitez lancer l'envoi des rappels automatiques tous les jours à 8h30, vous pourrez, sous Fedora (ainsi que Red hat et assimilés), ajouter un fichier nommé ``galette`` dans le dossier ``/etc/cron.d/`` avec le contenu suivant :
+Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
 
 .. code-block:: bash
 
    30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/reminder.php
 
-Factures et reçus
-^^^^^^^^^^^^^^^^^
+Invoices and receipts
+^^^^^^^^^^^^^^^^^^^^^
 
-Depuis la liste des contributions, vous pourrez constater la présence d'une icône PDF permettant la génération de factures ou de reçus pour la contribution souhaitée.
+In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution.
 
-Ces générations font appel au système de :ref:`modèles PDF <pdf_models>`.
+You can customize the PDF using :ref:`PDF models <pdf_models>`.
 
-Les Transactions
-================
+Transactions
+============
 
-Les transactions correspondent à un règlement global d'un adhérent.
+As seen in the example from this chapter introduction, a transaction is a global payment for a member.
 
-Seules quelques informations sont nécessaires à la création d'une transaction :
+Only a few informations are required to add a new transaction:
 
-* une brève description,
-* l'émetteur,
-* la date (renseignée par défaut à la date du jour),
-* le montant.
+* a description,
+* the originator,
+* the date (current date per default),
+* the amount.
 
 .. image:: ../_styles/static/images/usermanual/transactions_list.png
    :scale: 75%
    :align: center
-   :alt: Liste des transactions
+   :alt: Transactions list
 
-Chaque transaction est ensuite ventilée en contributions à concurrence du montant de la transaction. Ainsi, une transaction n'aura aucun effet sur la date de fin d'inscription d'un adhérent.
+Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates.
 
 .. image:: ../_styles/static/images/usermanual/transactions_add.png
    :scale: 75%
    :align: center
-   :alt: Ajout d'une transaction
+   :alt: Add a transaction
 
-Après enregistrement d'une transaction, vous serez redirigé vers la fenêtre de création d'une contribution. Si la contribution entrée ne ventile pas entièrement le montant de la transaction, il vous sera proposé d'en créer une nouvelle, et ainsi de suite. Par défaut, toute nouvelle contribution créée à partir d'une transaction prendra comme montant la somme non ventilée de la transaction.
+After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction.
 
 .. image:: ../_styles/static/images/usermanual/transactions_add_cotisation.png
    :scale: 75%
    :align: center
-   :alt: Ajout d'une cotisation liée à une transaction partiellement ventilée
+   :alt: Add a contribution linked to a partially dispatched transaction
 
-Bien entendu, il vous est aussi possible de modifier une transaction après coup :
+Of course, it is also possible to edit a transaction:
 
 .. image:: ../_styles/static/images/usermanual/transactions_edit.png
    :scale: 75%
    :align: center
-   :alt: Modification d'une transaction
+   :alt: Transaction edition
 
-Vous pourrez également lui associer une contribution existante, ou en créer une nouvelle.
+You can also attach an existing contribution instead of creating a new one.
 
 .. image:: ../_styles/static/images/usermanual/transactions_edit_add_contrib.png
    :scale: 50%
    :align: center
-   :alt: Ajout d'une contribution existante à une transaction
+   :alt: Add an already existing contribution to a transaction
 
 .. _dropdown_members:
 
-Sélection des adhérents
-=======================
+Members selection
+=================
 
 .. versionadded: 0.9.2
 
-La liste déroulante de choix des adhérents disponible dans les contributions et transactions (ainsi que dans certains plugins) n'affiche qu'une partie des adhérents possibles, pour des raisons de performances.
+The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons.
 
-Il est toutefois possible d'en afficher davantage en cliquant sur « Charger les adhérents suivants... » ou en passant par la zone de recherche mise à disposition.
-
-Il est possible de chercher dans les nom, prénom et pseudo des membres ; ainsi que dans les identifiants si vous entrez un entier directement.
+You can display more members using the "Load following memebrs..." link, and you can also try to search entering any text (this will search in first name, last name and identifiers).
