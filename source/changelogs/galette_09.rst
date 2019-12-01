@@ -9,6 +9,8 @@
 Added
 =====
 
+* New translations has been added!
+* `Galette translation <https://hosted.weblate.org/projects/galette/>`_ are now done on weblate platform
 * Save searches (`#691 <https://bugs.galette.eu/issues/691>`_)
 * Ability to use several admins email addresses from preferences (`#643 <https://bugs.galette.eu/issues/643>`_)
 * Send a mail to admins when a member edit his card (`#756 <https://bugs.galette.eu/issues/756>`_)
@@ -35,7 +37,9 @@ Fixed
 * Fix upper case removal from composed names (`#1272 <https://bugs.galette.eu/issues/1272>`_)
 * Remove company name when checkbox is unchecked (`#1277 <https://bugs.galette.eu/issues/1277>`_)
 * Fix call from wrong object in mailing (`#1280 <https://bugs.galette.eu/issues/1280>`_)
-
+* Reply-to in preferences was not used (`#1349 <https://bugs.galette.eu/issues/1349>`_)
+* Fix issues with HTTP 2.0 servers (`#1342 <https://bugs.galette.eu/issues/1342>`_, `#1343 <https://bugs.galette.eu/issues/1343>`_, `#1348 <https://bugs.galette.eu/issues/1348>`_, `#1347 <https://bugs.galette.eu/issues/1347>`_)
+* Use PDF models header and footer on emargement lists (`#1346 <https://bugs.galette.eu/issues/1346>`_)
 
 ****************
 0.9.2 -> 0.9.2.1
