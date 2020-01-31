@@ -6,7 +6,7 @@
 About Galette's documentation
 *****************************
 
-`Galette <https://galette.eu/dc/?navlang=en>`_'s documentation, released under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ license, is written using `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and is built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_.
+`Galette <https://galette.eu/dc/>`_'s documentation, released under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ license, is written using `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and is built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_.
 
 Sphinx allows to build documentation in various formats from the same sources. Galette's documentation is therefore available as HTML, PDF and EPUB formats; thanks to `Read the docs <https://readthedocs.io>`_.
 

@@ -10,7 +10,7 @@ Writting plugins
 
 From plugins, you can benefit from the entire Galette API, extends or complete it with classes, you can create specific pages, menu entries, and action buttons on members.
 
-Plugin system was inspired from `DotClear blogging solution <https://fr.dotclear.org/>`_.
+Plugin system was inspired from `DotClear blogging solution <https://dotclear.org/>`_.
 
 A ``plugins`` directory in Galette will host plugins, one directory per plugin is expected:
 
@@ -496,7 +496,7 @@ Respecting those rules ensures plugin will be supported from the Galette plugins
 PHP classes
 ===========
 
-Plugins may need their own classes. For Galette, class name and `namespace <https://php.net/manual/fr/language.namespaces.php>`_ (`namespace`) are importants.
+Plugins may need their own classes. For Galette, class name and `namespace <https://php.net/manual/language.namespaces.php>`_ (`namespace`) are importants.
 
 All classes must be in the ``lib/{namespace}`` directory of your plugin. Each class is a PHP file which name is the class name (including case). Namespace is built with plugin name as declared in ``_define.php``. In our example, plugin name is ``Galette My Plugin`` and therefore the namespace will be ``GaletteMyPlugin``.
 
