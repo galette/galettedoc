@@ -10,7 +10,7 @@ Galette sources
 
    * http://www-cs-students.stanford.edu/~blynn/gitmagic/
    * https://schacon.github.com/git/gittutorial.html
-   * https://git-scm.com/book/fr/v2
+   * https://git-scm.com/book
    * https://ndpsoftware.com/git-cheatsheet.html explaining the relations beetween git commands and the existing levels in the structure of a repository
 
 All Galette sources are stored in their own `Git <https://en.wikipedia.org/wiki/Git>`_ repository hosted by `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `Galette organization is also available on github <https://github.com/galette/>`_, in which all repositories are mirrored.

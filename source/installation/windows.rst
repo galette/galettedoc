@@ -3,7 +3,7 @@
 Windows
 =======
 
-Installation described here rely on `XAMPP <https://www.apachefriends.org/fr/xampp-windows.html>`_; other installation methods exist but are not listed here.
+Installation described here rely on `XAMPP <https://www.apachefriends.org/xampp-windows.html>`_; other installation methods exist but are not listed here.
 
 First of all, download XAMPP on your computer. Let's install it under ``C:\xampp``.
 
