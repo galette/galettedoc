@@ -1,6 +1,19 @@
 :orphan:
 
 ****************
+0.9.3 -> 0.9.3.1
+****************
+
+* Use new icons in titles management (`#1375 <https://bugs.galette.eu/issues/1375>`_)
+* Ensure PHP 7.4 is supported
+* Handle proprely and test sequences in PostgreSQL for titles, payment types, PDF models, texts and fields categories (`#1374 <https://bugs.galette.eu/issues/1374>`_, `#1378 <https://bugs.galette.eu/issues/1378>`_)
+* Fix Telemetry from PostgreSQL instances (`#1376 <https://bugs.galette.eu/issues/1376>`_)
+* Fix dynamic translations removal
+* Check for session extension presence (`#1380 <https://bugs.galette.eu/issues/1380>`_)
+* Redo multiple status selection in advanced search (`#1390 <https://bugs.galette.eu/issues/1390>`_)
+* Fix user search by nickname in dropdowns (`#1383 <https://bugs.galette.eu/issues/1383>`_)
+
+****************
 0.9.2.1 -> 0.9.3
 ****************
 
