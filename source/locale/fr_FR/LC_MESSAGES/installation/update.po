@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-02 17:22+0200\n"
-"PO-Revision-Date: 2020-02-15 08:23+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2020-02-15 10:54+0000\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -127,7 +127,15 @@ msgstr ""
 msgid "``data/attachments`` contains mailing attached documents."
 msgstr "``data/attachments`` contient les pièces jointes aux mailings."
 
-#: ../installation/update.rst:36
+#: ../installation/update.rst:35
+msgid ""
+"``plugins`` your current plugins. It is a good idea to check if new plugins "
+"versions are available ;)"
+msgstr ""
+"``plugins`` vos actuels plugins. C'est une bonne idée d'en profiter pour "
+"vérifier si de nouvelles versions de vos plugins sont disponibles ;)"
+
+#: ../installation/update.rst:37
 msgid ""
 "Once files are updated, go to your Galette instance. It will ask you if "
 "needed to proceed to the update of your database. If it asks you nothing "
@@ -137,11 +145,11 @@ msgstr ""
 "vous demandera si besoin de procéder à la mise à jour de la base de données."
 " Si rien ne vous est demandé, c'est que c'est déjà bon ;)"
 
-#: ../installation/update.rst:39
+#: ../installation/update.rst:40
 msgid "Updating database"
 msgstr "Mise à jour de la base de données"
 
-#: ../installation/update.rst:43
+#: ../installation/update.rst:44
 msgid ""
 "Installing a new Galette release does not strictly means a database update "
 "will be required! Sometimes, only updating the files will be enough; even "
@@ -151,7 +159,7 @@ msgstr ""
 "une mise à jour de la base de données. Quelquefois, la seule mise à jour des"
 " fichiers sera suffisante ; même pour une version majeure."
 
-#: ../installation/update.rst:45
+#: ../installation/update.rst:46
 msgid ""
 "Galette will tell you if an update is needed, no need to \"force\" an "
 "update."
@@ -159,7 +167,7 @@ msgstr ""
 "Galette vous dira qu'une mise à jour est nécessaire, pas la peine d'essayer "
 "de « forcer » une mise à jour."
 
-#: ../installation/update.rst:47
+#: ../installation/update.rst:48
 msgid ""
 "Update process is very similar to :doc:`Galette installation process "
 "<galette>`, with some steps that change. All is motly transparent, "
@@ -169,11 +177,11 @@ msgstr ""
 "d'installation de Galette <galette>`, avec quelques étapes qui changent. "
 "Tout est assez transparent, des informations sont fournies à chaque étape."
 
-#: ../installation/update.rst:50
+#: ../installation/update.rst:51
 msgid "Datbase informations"
 msgstr "Informations de la base de données"
 
-#: ../installation/update.rst:52
+#: ../installation/update.rst:53
 msgid ""
 "At \"Installation type\" step, you'll have to choose \"update\". Database "
 "informations page will be pre filled with existing informations, excepting "
@@ -184,7 +192,7 @@ msgstr ""
 " informations existantes, à l'exception du mot de passe. Les autres "
 "informations ne devraient pas changer."
 
-#: ../installation/update.rst:56
+#: ../installation/update.rst:57
 msgid ""
 "Note it is important that database name and prefixed used in previous "
 "database correspond to configuration."
@@ -192,11 +200,11 @@ msgstr ""
 "Notez qu'il est important que les noms et préfixe de la base utilisés dans "
 "la version précédente correspondent aux informations."
 
-#: ../installation/update.rst:59
+#: ../installation/update.rst:60
 msgid "Previous version selection"
 msgstr "Sélection de la version précédente"
 
-#: ../installation/update.rst:61
+#: ../installation/update.rst:62
 msgid ""
 "Next step is the choice of the previous Galette version. Installation "
 "process will try to \"guess\" what version it as, and will select this one "
@@ -207,7 +215,7 @@ msgstr ""
 "s'agissait, et sélectionnera cette dernière par défaut (celle qui sera "
 "affichée en caractères gras)."
 
-#: ../installation/update.rst:67
+#: ../installation/update.rst:68
 msgid ""
 "If you try to update but your database version seems already correct, you "
 "will be warned. No entry will be displayed as bold text, please make sure to"
@@ -217,7 +225,7 @@ msgstr ""
 "semble être déjà à jour, vous en serez informé. Aucune entrée ne sera pré-"
 "sélectionnée, assurez-vous de choisir la bonne :"
 
-#: ../installation/update.rst:73
+#: ../installation/update.rst:74
 msgid "Once update scripts have run, a summary will be displayed:"
 msgstr ""
 "Une fois que les scripts de mise à jour auront été exécutés, un "
