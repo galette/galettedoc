@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-02-15 11:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,62 +91,67 @@ msgstr ""
 msgid "``data/attachments`` contains mailing attached documents."
 msgstr ""
 
-#: ../installation/update.rst:36
+#: ../installation/update.rst:35
+# 04c75cd099ad4034972f5e4358827f29
+msgid "``plugins`` your current plugins. It is a good idea to check if new plugins versions are available ;)"
+msgstr ""
+
+#: ../installation/update.rst:37
 # 6cd386dbd5d34f6981a6bd0ae7c33267
 msgid "Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database. If it asks you nothing you're just done already ;)"
 msgstr ""
 
-#: ../installation/update.rst:39
+#: ../installation/update.rst:40
 # 95d638fe2b854ff99b4419e616013e7d
 msgid "Updating database"
 msgstr ""
 
-#: ../installation/update.rst:43
+#: ../installation/update.rst:44
 # 9154f9f3d8684210a2d2502959a38adc
 msgid "Installing a new Galette release does not strictly means a database update will be required! Sometimes, only updating the files will be enough; even for a major release."
 msgstr ""
 
-#: ../installation/update.rst:45
+#: ../installation/update.rst:46
 # 791a611b842f4da1ba343e1d02f5d3d1
 msgid "Galette will tell you if an update is needed, no need to \"force\" an update."
 msgstr ""
 
-#: ../installation/update.rst:47
+#: ../installation/update.rst:48
 # 5d0a9ea5d0234999893ba63a76d41df0
 msgid "Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is motly transparent, informations are provided on each step."
 msgstr ""
 
-#: ../installation/update.rst:50
+#: ../installation/update.rst:51
 # a864b9aeda544171b283c422c24af55b
 msgid "Datbase informations"
 msgstr ""
 
-#: ../installation/update.rst:52
+#: ../installation/update.rst:53
 # 56445348e3ef45e290254351561ced0a
 msgid "At \"Installation type\" step, you'll have to choose \"update\". Database informations page will be pre filled with existing informations, excepting password. Other informations should not be changed."
 msgstr ""
 
-#: ../installation/update.rst:56
+#: ../installation/update.rst:57
 # 31d781684ca647e6ac47e1afa47ca2b4
 msgid "Note it is important that database name and prefixed used in previous database correspond to configuration."
 msgstr ""
 
-#: ../installation/update.rst:59
+#: ../installation/update.rst:60
 # 00dd35fba389478d986707cc18cbc034
 msgid "Previous version selection"
 msgstr ""
 
-#: ../installation/update.rst:61
+#: ../installation/update.rst:62
 # 43b40bcc85514b23bf55471adbf39a1e
 msgid "Next step is the choice of the previous Galette version. Installation process will try to \"guess\" what version it as, and will select this one per default (the one that will be displayed as bold text)."
 msgstr ""
 
-#: ../installation/update.rst:67
+#: ../installation/update.rst:68
 # 380e4053c07b49d2a8c1621983043be8
 msgid "If you try to update but your database version seems already correct, you will be warned. No entry will be displayed as bold text, please make sure to choose the right one:"
 msgstr ""
 
-#: ../installation/update.rst:73
+#: ../installation/update.rst:74
 # 9c4e161fb85f49e5ac68135298b11653
 msgid "Once update scripts have run, a summary will be displayed:"
 msgstr ""
