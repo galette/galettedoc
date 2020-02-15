@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2011-2019, Johan Cwiklinski
+# Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-01 21:07+0100\n"
+"POT-Creation-Date: 2020-02-15 09:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,59 @@ msgid "Changelog"
 msgstr ""
 
 #: ../changelogs/galette_09.rst:5
+# 240e4a1dc9c2472d9da408e5d27d85b8
+msgid "0.9.3 -> 0.9.3.1"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:7
+# 520c10b0b558465b8d99b67b4c77a5ce
+msgid "Use new icons in titles management (`#1375 <https://bugs.galette.eu/issues/1375>`_)"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:8
+# 617643109fba4d9caf628525d42b22ad
+msgid "Ensure PHP 7.4 is supported"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:9
+# 13cac31df6e0445fa22db4f1d8a696bf
+msgid "Handle proprely and test sequences in PostgreSQL for titles, payment types, PDF models, texts and fields categories (`#1374 <https://bugs.galette.eu/issues/1374>`_, `#1378 <https://bugs.galette.eu/issues/1378>`_)"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:10
+# c395b4a01ca14956a53bc18aa6c0b6b5
+msgid "Fix Telemetry from PostgreSQL instances (`#1376 <https://bugs.galette.eu/issues/1376>`_)"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:11
+# deb6a62dcd9a4529bced2148297435c0
+msgid "Fix dynamic translations removal"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:12
+# 08cf9b68a378433fabfec362b0be14ea
+msgid "Check for session extension presence (`#1380 <https://bugs.galette.eu/issues/1380>`_)"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:13
+# 23301b0dac374553bf4c8b9dded21176
+msgid "Redo multiple status selection in advanced search (`#1390 <https://bugs.galette.eu/issues/1390>`_)"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:14
+# 27d34944682643eeac6ca809a9a8233c
+msgid "Fix user search by nickname in dropdowns (`#1383 <https://bugs.galette.eu/issues/1383>`_)"
+msgstr ""
+
+#: ../changelogs/galette_09.rst:18
 # 1356cc5608fe4b0aa0293c2235df550d
 msgid "0.9.2.1 -> 0.9.3"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:10
-#: ../changelogs/galette_09.rst:71
-#: ../changelogs/galette_09.rst:144
-#: ../changelogs/galette_09.rst:182
+#: ../changelogs/galette_09.rst:23
+#: ../changelogs/galette_09.rst:84
+#: ../changelogs/galette_09.rst:157
+#: ../changelogs/galette_09.rst:195
 #: ../changelogs/galette_08.rst:53
 #: ../changelogs/galette_08.rst:113
 #: ../changelogs/galette_08.rst:181
@@ -39,59 +84,59 @@ msgstr ""
 #: ../changelogs/galette_07.rst:377
 #: ../changelogs/galette_07.rst:416
 # 6b08b9069e5644f8a990a55ee190883d
-# d411dad0d4404c6dabbb8db5062d3d4c
-# 09e7e3cc7b16447eb9622f7a8e295028
-# acfa40c1af634ba8afc261027437345e
-# ef87789f46d64e4c84bf731c87154b50
-# 26644508dbf44bd1a399d4465c2a6399
-# af66f42de6c74d7d95bbb2039b944328
-# 67bed69e15e140268964ecb502081710
-# eb5bc02929ae43c9b0889275256763f8
-# ddfb7bc6fa1143f0a4d6e9d305f81ac4
-# eafc8a693c9b4ecc9cad30fb33b9080a
-# 2c76f00aea224d649426ea2ac1a63b60
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
+# 6b08b9069e5644f8a990a55ee190883d
 msgid "Added"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:12
+#: ../changelogs/galette_09.rst:25
 # db44c1d3856b4989910d4a61475f9b85
 msgid "New translations has been added!"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:13
+#: ../changelogs/galette_09.rst:26
 # 9d5ed752758e450baf78b4265c1bdba8
 msgid "`Galette translation <https://hosted.weblate.org/projects/galette/>`_ are now done on weblate platform"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:14
+#: ../changelogs/galette_09.rst:27
 # 74426005ffec4491aa05552513dde418
 msgid "Save searches (`#691 <https://bugs.galette.eu/issues/691>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:15
+#: ../changelogs/galette_09.rst:28
 # fe4eae3749214e0181b65f9361f61e8c
 msgid "Ability to use several admins email addresses from preferences (`#643 <https://bugs.galette.eu/issues/643>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:16
+#: ../changelogs/galette_09.rst:29
 # 4d83a6c1c69b46dfa725f5fbbffd1ef1
 msgid "Send a mail to admins when a member edit his card (`#756 <https://bugs.galette.eu/issues/756>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:17
+#: ../changelogs/galette_09.rst:30
 # 11af76b8e104444daac48e5095a61d8d
 msgid "Flexible redirect after member creation (`#1136 <https://bugs.galette.eu/issues/1136>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:18
+#: ../changelogs/galette_09.rst:31
 # c1d5021c23024dbfbf7cf2d077453629
 msgid "Add current date variable (``DATE_NOW``) in PDF models (`#1260 <https://bugs.galette.eu/issues/1260>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:23
-#: ../changelogs/galette_09.rst:86
-#: ../changelogs/galette_09.rst:155
-#: ../changelogs/galette_09.rst:215
+#: ../changelogs/galette_09.rst:36
+#: ../changelogs/galette_09.rst:99
+#: ../changelogs/galette_09.rst:168
+#: ../changelogs/galette_09.rst:228
 #: ../changelogs/galette_08.rst:38
 #: ../changelogs/galette_08.rst:98
 #: ../changelogs/galette_08.rst:168
@@ -115,298 +160,298 @@ msgstr ""
 msgid "Fixed"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:25
+#: ../changelogs/galette_09.rst:38
 # a6e127f18bb945a1895e0df6d681ba8c
 msgid "Fix translation issue on memebrs page fieldsets (`#1125 <https://bugs.galette.eu/issues/1125>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:26
+#: ../changelogs/galette_09.rst:39
 # 48e2ca85437a4e39882299fa67f240bf
 msgid "Fix dynamic date fields check (`#1213 <https://bugs.galette.eu/issues/1213>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:27
+#: ../changelogs/galette_09.rst:40
 # 8fe23672de844baeb82b23c7f8f8a1a1
 msgid "Fix blank page at install on some environments (`#1236 <https://bugs.galette.eu/issues/1236>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:28
+#: ../changelogs/galette_09.rst:41
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix javascript escaping on mailings (`#1247 <https://bugs.galette.eu/issues/1247>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:29
+#: ../changelogs/galette_09.rst:42
 # 0542f40a56a34875b5c6dfdeaad766be
 msgid "Fix groups members removal error (`#1251 <https://bugs.galette.eu/issues/1251>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:30
+#: ../changelogs/galette_09.rst:43
 # 11b1ece7f36643ccab881b3a5bc842fd
 msgid "Fix pagination on trombinoscope (`#1252 <https://bugs.galette.eu/issues/1252>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:31
+#: ../changelogs/galette_09.rst:44
 # c1d5021c23024dbfbf7cf2d077453629
 msgid "Fix logo path on some web server configurations (`#1255 <https://bugs.galette.eu/issues/1255>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:32
+#: ../changelogs/galette_09.rst:45
 # a6e127f18bb945a1895e0df6d681ba8c
 msgid "Dynamic fields order was not stored (`#1262 <https://bugs.galette.eu/issues/1262>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:33
+#: ../changelogs/galette_09.rst:46
 # 835e374b95ee46b3b046b79871dac4cb
 msgid "Various fixes related to new dropdowns (`#1263 <https://bugs.galette.eu/issues/1263>`_, `#1264 <https://bugs.galette.eu/issues/1264>`_, `#1265 <https://bugs.galette.eu/issues/1265>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:34
+#: ../changelogs/galette_09.rst:47
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Add missing date fields changes on mysql (`#1266 <https://bugs.galette.eu/issues/1266>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:35
+#: ../changelogs/galette_09.rst:48
 # 23301b0dac374553bf4c8b9dded21176
 msgid "Missing date selectors on advanced search and dynamic fields (`#1267 <https://bugs.galette.eu/issues/1267>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:36
+#: ../changelogs/galette_09.rst:49
 # 0542f40a56a34875b5c6dfdeaad766be
 msgid "Fix PDF extension and content type (`#1271 <https://bugs.galette.eu/issues/1271>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:37
+#: ../changelogs/galette_09.rst:50
 # c395b4a01ca14956a53bc18aa6c0b6b5
 msgid "Fix upper case removal from composed names (`#1272 <https://bugs.galette.eu/issues/1272>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:38
+#: ../changelogs/galette_09.rst:51
 # d17f60d028724792bf669cf7ee76a813
 msgid "Remove company name when checkbox is unchecked (`#1277 <https://bugs.galette.eu/issues/1277>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:39
+#: ../changelogs/galette_09.rst:52
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix call from wrong object in mailing (`#1280 <https://bugs.galette.eu/issues/1280>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:40
+#: ../changelogs/galette_09.rst:53
 # 520c10b0b558465b8d99b67b4c77a5ce
 msgid "Reply-to in preferences was not used (`#1349 <https://bugs.galette.eu/issues/1349>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:41
+#: ../changelogs/galette_09.rst:54
 # 13cac31df6e0445fa22db4f1d8a696bf
 msgid "Fix issues with HTTP 2.0 servers (`#1342 <https://bugs.galette.eu/issues/1342>`_, `#1343 <https://bugs.galette.eu/issues/1343>`_, `#1348 <https://bugs.galette.eu/issues/1348>`_, `#1347 <https://bugs.galette.eu/issues/1347>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:42
+#: ../changelogs/galette_09.rst:55
 # fe4eae3749214e0181b65f9361f61e8c
 msgid "Use PDF models header and footer on emargement lists (`#1346 <https://bugs.galette.eu/issues/1346>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:46
+#: ../changelogs/galette_09.rst:59
 # 240e4a1dc9c2472d9da408e5d27d85b8
 msgid "0.9.2 -> 0.9.2.1"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:48
+#: ../changelogs/galette_09.rst:61
 # 185583346fc24773bc5907c4907ab243
 msgid "Unable to store Galette URL in preferences (`#1246 <https://bugs.galette.eu/issues/1246>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:49
+#: ../changelogs/galette_09.rst:62
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix dropdowns filtering (`#1234 <https://bugs.galette.eu/issues/1234>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:50
+#: ../changelogs/galette_09.rst:63
 # 99596b52979c4b4c8ae70c81dfbe2790
 msgid "Imcompatible locales files (`#1232 <https://bugs.galette.eu/issues/1232>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:51
+#: ../changelogs/galette_09.rst:64
 # ae10654e97c5489d854057440fbf5b92
 msgid "Fix required fields on children cards (`#1230 <https://bugs.galette.eu/issues/1230>`_ and `#1229 <https://bugs.galette.eu/issues/1229>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:52
+#: ../changelogs/galette_09.rst:65
 # bd6142e66f1444acae02aecddce4a926
 msgid "Fix contributions storage (`#1228 <https://bugs.galette.eu/issues/1228>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:53
+#: ../changelogs/galette_09.rst:66
 # 3a50f614d92642d18f145fbd6622ec34
 msgid "Fix distribution type in transaction (`#1227 <https://bugs.galette.eu/issues/1227>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:54
+#: ../changelogs/galette_09.rst:67
 # 11b1ece7f36643ccab881b3a5bc842fd
 msgid "Redirection issues (`#1226 <https://bugs.galette.eu/issues/1226>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:55
+#: ../changelogs/galette_09.rst:68
 # 08cf9b68a378433fabfec362b0be14ea
 msgid "Rework PHP version and extensions checks (`#1225 <https://bugs.galette.eu/issues/1225>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:56
+#: ../changelogs/galette_09.rst:69
 # c395b4a01ca14956a53bc18aa6c0b6b5
 msgid "Fix members search when adding a new contribution (`#1224 <https://bugs.galette.eu/issues/1224>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:57
+#: ../changelogs/galette_09.rst:70
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Remove routes translations (`#1223 <https://bugs.galette.eu/issues/1223>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:61
+#: ../changelogs/galette_09.rst:74
 # 3233592d8ebc410097890a40e777f015
 msgid "0.9.1.2 -> 0.9.2"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:65
+#: ../changelogs/galette_09.rst:78
 # 5ea554d960d04b8d9dfdee7128f53746
 msgid "A very big thanks to Danielle C. and \"Les Amis de la Gendarmerie\" for their generous donation to support this release!"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:73
+#: ../changelogs/galette_09.rst:86
 # 18f1385baa3c4b0f83090b7a6fea67e9
 msgid "Add a variable for the identifier in PDF models and emails texts (`#1222 <https://bugs.galette.eu/issues/1222>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:74
+#: ../changelogs/galette_09.rst:87
 # 3a6925ae39674e6bae263d35f22b2073
 msgid "Search (name, email, id, ...) for members when adding transactions and contributions (`#1218 <https://bugs.galette.eu/issues/1218>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:75
+#: ../changelogs/galette_09.rst:88
 # 40976d41c8f34d54b41eb609628aa4d5
 msgid "PHP 7.1 minimum,"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:76
+#: ../changelogs/galette_09.rst:89
 # a8cc8a26e0184cba8f63e117c3009cdb
 msgid "Manage payment types (`#1084 <https://bugs.galette.eu/issues/1084>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:77
+#: ../changelogs/galette_09.rst:90
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Remove passwords in emails (`#1171 <https://bugs.galette.eu/issues/1171>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:78
+#: ../changelogs/galette_09.rst:91
 # 44bdd6f26e844d1bbbd9962af18ccb38
 msgid "Duplicate members (`#633 <https://bugs.galette.eu/issues/633>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:79
+#: ../changelogs/galette_09.rst:92
 # 00c80be4d22540c9913fdaf131fbfe33
 msgid "Configure default account filter (`#345 <https://bugs.galette.eu/issues/345>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:80
+#: ../changelogs/galette_09.rst:93
 # 77b83af7f70a4e5e9546ae68328506e6
 msgid "Rework translation system, which now requires the PHP intl extension"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:81
+#: ../changelogs/galette_09.rst:94
 # 3412e7267b3f42468e04af225f71936b
 msgid "Display count for members and managers in groups"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:88
+#: ../changelogs/galette_09.rst:101
 # 66fc8ede95574369b70e85931d2029e5
 msgid "Dry run mode of imports has been reworked to fix several issues"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:89
+#: ../changelogs/galette_09.rst:102
 # 93069a78583642f3bea3bbfac2053c66
 msgid "Fix version detection when updating"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:90
+#: ../changelogs/galette_09.rst:103
 # 520c10b0b558465b8d99b67b4c77a5ce
 msgid "Document PDF models variables (`#1066 <https://bugs.galette.eu/issues/1066>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:91
+#: ../changelogs/galette_09.rst:104
 # 00c80be4d22540c9913fdaf131fbfe33
 msgid "Admit more than 100 years old members (`#452 <https://bugs.galette.eu/issues/452>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:92
+#: ../changelogs/galette_09.rst:105
 # a2c420f40b4c4a618de037e3f00be169
 msgid "Fix birth dates range"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:93
+#: ../changelogs/galette_09.rst:106
 # accf3698a9c4452894ca9e3e31d04378
 msgid "Add checks on birthdate when storing"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:94
+#: ../changelogs/galette_09.rst:107
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix contributions list filtering (`#1185 <https://bugs.galette.eu/issues/1185>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:95
+#: ../changelogs/galette_09.rst:108
 # 520c10b0b558465b8d99b67b4c77a5ce
 msgid "Use sender informations on preview (`#1188 <https://bugs.galette.eu/issues/1188>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:96
+#: ../changelogs/galette_09.rst:109
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix mail sender storage in history (`#1188 <https://bugs.galette.eu/issues/1188>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:97
+#: ../changelogs/galette_09.rst:110
 # ffe2fa2e125b4b7ca9e00617d5d64898
 msgid "Remove \"not translated\" message on dynamic fields labels"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:98
+#: ../changelogs/galette_09.rst:111
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix search on boolean dynamic fields (`#1186 <https://bugs.galette.eu/issues/1186>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:99
+#: ../changelogs/galette_09.rst:112
 # 62570f46eba04a1984b81bb3e449c922
 msgid "Fix contributions mass removal (`#1192 <https://bugs.galette.eu/issues/1192>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:100
+#: ../changelogs/galette_09.rst:113
 # c6c6f5d49b9640e4b0d24c09a6922240
 msgid "Remove dynamic field content when it is removed (`#1191 <https://bugs.galette.eu/issues/1191>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:101
+#: ../changelogs/galette_09.rst:114
 # 71fd8def2a2f42fa955a128b3f82dbcf
 msgid "Fix PostgreSQL update script"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:102
+#: ../changelogs/galette_09.rst:115
 # c58114b71f5f418cb2b7caac1e077400
 msgid "Fix redirection issues on some cases (mainly when using proxies)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:103
+#: ../changelogs/galette_09.rst:116
 # e98e66d9aa66430db8243f8abd880cda
 msgid "Dynamic fields now works in PDF forms (thanks to Jérôme B.!)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:104
+#: ../changelogs/galette_09.rst:117
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Fix Csv fields configuration (`#1208 <https://bugs.galette.eu/issues/1208>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:105
+#: ../changelogs/galette_09.rst:118
 # 11b1ece7f36643ccab881b3a5bc842fd
 msgid "Fix rights on dynamic fields (`#1201 <https://bugs.galette.eu/issues/1201>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:110
-#: ../changelogs/galette_09.rst:229
+#: ../changelogs/galette_09.rst:123
+#: ../changelogs/galette_09.rst:242
 #: ../changelogs/galette_08.rst:128
 #: ../changelogs/galette_08.rst:207
 #: ../changelogs/galette_07.rst:285
@@ -414,384 +459,384 @@ msgstr ""
 #: ../changelogs/galette_07.rst:432
 #: ../changelogs/galette_07.rst:483
 # 0bf25ae3db2b447d8c3c138e3c7b360d
-# b8146b0e04f64d099a49ca36ba8cb8e4
-# d8bfd0dc03d5486d9072455d6df168a2
-# 9a7f08adbf4f4663946cbdbf1005988f
-# ac6531e3916940f3a585b6ef7c5dd11b
-# 482524814e364604b23e08bff5debb0c
-# 8e2b7609ea8b488591cef44ad6f27ce0
-# 8b971d8b47e74a74b21b3c853d25d8c4
+# 0bf25ae3db2b447d8c3c138e3c7b360d
+# 0bf25ae3db2b447d8c3c138e3c7b360d
+# 0bf25ae3db2b447d8c3c138e3c7b360d
+# 0bf25ae3db2b447d8c3c138e3c7b360d
+# 0bf25ae3db2b447d8c3c138e3c7b360d
+# 0bf25ae3db2b447d8c3c138e3c7b360d
+# 0bf25ae3db2b447d8c3c138e3c7b360d
 msgid "Under the hood..."
 msgstr ""
 
-#: ../changelogs/galette_09.rst:112
+#: ../changelogs/galette_09.rst:125
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Use InnoDB engine for all tables (`#1006 <https://bugs.galette.eu/issues/1006>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:113
+#: ../changelogs/galette_09.rst:126
 # 5d5d83c44839438e903bfe87184b7c70
 msgid "Automatic send of telemetry"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:114
+#: ../changelogs/galette_09.rst:127
 # 706fe5a26c404cfc9dfdd53c99d6d90e
 msgid "Use of `Zanata <https://zanata.org>`_ for translations"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:115
+#: ../changelogs/galette_09.rst:128
 # 9e5ae8b4328a45d093a1835b7dfcd6dd
 msgid "Use of `Zend Translator <https://docs.zendframework.com/zend-i18n/>`_"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:116
-#: ../changelogs/galette_09.rst:231
+#: ../changelogs/galette_09.rst:129
+#: ../changelogs/galette_09.rst:244
 # a6337a23e96547d6bc040e834c0cf5bd
-# b789ff6cd4a74a248e9344fee264084b
+# a6337a23e96547d6bc040e834c0cf5bd
 msgid "Update third party libraries"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:120
+#: ../changelogs/galette_09.rst:133
 # 74328d3a17e44024ba6b898bae815d9c
 msgid "0.9.1.1 -> 0.9.1.2"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:122
+#: ../changelogs/galette_09.rst:135
 # 27d34944682643eeac6ca809a9a8233c
 msgid "Fix member storage on unchecking checkboxes (`#1181 <https://bugs.galette.eu/issues/1181>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:123
+#: ../changelogs/galette_09.rst:136
 # 4bc6b3d9e04b4575921d76d85948d2ad
 msgid "Fix member storage when title field is not displayed (`#1181 <https://bugs.galette.eu/issues/1181>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:127
+#: ../changelogs/galette_09.rst:140
 # d95b061e92824b6f94cab095dc940894
 msgid "0.9.1 -> 0.9.1.1"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:129
+#: ../changelogs/galette_09.rst:142
 # ca65385f3c3e4efaa1c1cdd79b3e180a
 msgid "Fix unopportune group removal on member update (`#1178 <https://bugs.galette.eu/issues/1178>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:130
+#: ../changelogs/galette_09.rst:143
 # 11b1ece7f36643ccab881b3a5bc842fd
 msgid "Fix URL for reverse proxies (`#1176 <https://bugs.galette.eu/issues/1176>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:131
+#: ../changelogs/galette_09.rst:144
 # 9ad29d3da182491ca3ca038ae2b355d3
 msgid "Fix redirection when member is not logged in (`#1175 <https://bugs.galette.eu/issues/1175>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:135
+#: ../changelogs/galette_09.rst:148
 # 563d551ff97743b6baa5696f5c915eb9
 msgid "0.9 -> 0.9.1"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:139
+#: ../changelogs/galette_09.rst:152
 # eed68eba89c1434381a3a04d503e45ca
 msgid "Thanks to the \"Association Bretonne des Amis de Saint Jacques de Compostelle\" who has sponsorised sender choice!"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:146
+#: ../changelogs/galette_09.rst:159
 # 44bdd6f26e844d1bbbd9962af18ccb38
 msgid "Mass change on members (`#696 <https://bugs.galette.eu/issues/696>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:147
+#: ../changelogs/galette_09.rst:160
 # 201645f03adf4eb096d7ed80fc0a5b47
 msgid "Choose default state for new members in preferences (`#963 <https://bugs.galette.eu/issues/963>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:148
+#: ../changelogs/galette_09.rst:161
 # d06427940d654c97be3baf88bda2023f
 msgid "Customizabe text in pages footer (`#1107 <https://bugs.galette.eu/issues/1107>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:149
+#: ../changelogs/galette_09.rst:162
 # e88e2fd2aed34108aee6d8e78a52fd52
 msgid "Add German translation (`#1165 <https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:150
+#: ../changelogs/galette_09.rst:163
 # 9ad29d3da182491ca3ca038ae2b355d3
 msgid "Choose sender informations when sending a mail (`#1142 <https://bugs.galette.eu/issues/1142>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:157
+#: ../changelogs/galette_09.rst:170
 # 520c10b0b558465b8d99b67b4c77a5ce
 msgid "Check PDF models are present (`#1134 <https://bugs.galette.eu/issues/1134>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:158
+#: ../changelogs/galette_09.rst:171
 # d06427940d654c97be3baf88bda2023f
 msgid "Take into account logs preferences (`#440 <https://bugs.galette.eu/issues/440>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:159
+#: ../changelogs/galette_09.rst:172
 # 42ef0f6e129e49a2b332d600ff1127b3
 msgid "Update a dynamic field now updates member's modification date (`#1002 <https://bugs.galette.eu/issues/1002>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:160
+#: ../changelogs/galette_09.rst:173
 # 49b46827fa094ec0be014e03018f16d4
 msgid "GPG key field was too short (`#1032 <https://bugs.galette.eu/issues/1032>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:161
+#: ../changelogs/galette_09.rst:174
 # 46f9abb537074acfa672a36d46e47d94
 msgid "Fix differences beetween MySQL and PostgreSQL schemas (`#1072 <https://bugs.galette.eu/issues/1072>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:162
+#: ../changelogs/galette_09.rst:175
 # 11b1ece7f36643ccab881b3a5bc842fd
 msgid "Clean data from 0.9RC (`#1093 <https://bugs.galette.eu/issues/1093>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:163
+#: ../changelogs/galette_09.rst:176
 # cd9838e1b3be4577ab04813d0fd828b0
 msgid "Change email field size to suits standards (`#1121 <https://bugs.galette.eu/issues/1121>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:164
+#: ../changelogs/galette_09.rst:177
 # 99d3c7445341466eb077eaa12a3a496f
 msgid "Fix update issues"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:165
+#: ../changelogs/galette_09.rst:178
 # 01974491864e4f06a0f86a874a91d30d
 msgid "Fix contribution end date calculation (`#1144 <https://bugs.galette.eu/issues/1144>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:166
+#: ../changelogs/galette_09.rst:179
 # 3a50f614d92642d18f145fbd6622ec34
 msgid "Fix redirection after creating a new contribution (`#1145 <https://bugs.galette.eu/issues/1145>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:167
+#: ../changelogs/galette_09.rst:180
 # 1bc733aba2b246ea85c6aae39e80c0fd
 msgid "Fix dynamic fields on transactions and contributions (`#1146 <https://bugs.galette.eu/issues/1146>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:168
+#: ../changelogs/galette_09.rst:181
 # c1d5021c23024dbfbf7cf2d077453629
 msgid "Fix static resources path on some configurations (`#1152 <https://bugs.galette.eu/issues/1152>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:169
+#: ../changelogs/galette_09.rst:182
 # a2a50aff13b44f24955b6197874abf65
 msgid "Admin informations fields was emptied when a member was edited from a non admin account (`#1154 <https://bugs.galette.eu/issues/1154>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:170
+#: ../changelogs/galette_09.rst:183
 # c6c6f5d49b9640e4b0d24c09a6922240
 msgid "Fix required dynamic file fields updating member (`#1160 <https://bugs.galette.eu/issues/1160>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:171
+#: ../changelogs/galette_09.rst:184
 # c395b4a01ca14956a53bc18aa6c0b6b5
 msgid "Fix security Checks generating PDF members cards (`#1164 <https://bugs.galette.eu/issues/1164>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:172
+#: ../changelogs/galette_09.rst:185
 # ccc0c3cadf064aabbf731788c8bd971b
 msgid "Add expiration on RSS feed calls to prevent freezes (`#989 <https://bugs.galette.eu/issues/989>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:177
+#: ../changelogs/galette_09.rst:190
 # 3233592d8ebc410097890a40e777f015
 msgid "0.8.3.4 -> 0.9"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:184
+#: ../changelogs/galette_09.rst:197
 # 3fb8918ac739410b84a3c135f05044b0
 msgid "Use two steps removal everywhere; with a real confirmation required (not relying on a Javascript event)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:185
+#: ../changelogs/galette_09.rst:198
 # 1f78373bcb05494ea10fbaf47e7e61db
 msgid "Cascade removal on groups children"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:186
+#: ../changelogs/galette_09.rst:199
 # e88e2fd2aed34108aee6d8e78a52fd52
 msgid "Change all URLs (`#417 <https://bugs.galette.eu/issues/417>`_), and translate them"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:187
+#: ../changelogs/galette_09.rst:200
 # 8d5f39e40e2d4426b62c4935a062c2f1
 msgid "Super admin can impersonate another account without its authentication informations"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:188
+#: ../changelogs/galette_09.rst:201
 # 41dba5026fdd446b92376a3b44640506
 msgid "Responsive display"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:189
+#: ../changelogs/galette_09.rst:202
 # 3b3bc34378dd47389aa3ef076dce8eff
 msgid "Configure connection delay"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:190
+#: ../changelogs/galette_09.rst:203
 # a0e89e1bed0848e3a04ec5a34484adc1
 msgid "Test mail parameters from preferences (`#588 <https://bugs.galette.eu/issues/588>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:191
+#: ../changelogs/galette_09.rst:204
 # 4bc6b3d9e04b4575921d76d85948d2ad
 msgid "Check for duplicates created using imports dry-run (`#729 <https://bugs.galette.eu/issues/729>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:192
+#: ../changelogs/galette_09.rst:205
 # 0542f40a56a34875b5c6dfdeaad766be
 msgid "Check statuses using imports dry-run (`#999 <https://bugs.galette.eu/issues/999>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:193
+#: ../changelogs/galette_09.rst:206
 # 9ec7a1243c6e43eb8129176f934c3f16
 msgid "Preview attached files on mailing preview (`#735 <https://bugs.galette.eu/issues/735>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:194
+#: ../changelogs/galette_09.rst:207
 # 4d83a6c1c69b46dfa725f5fbbffd1ef1
 msgid "Select all and reverse selection on top and bottom of list (`#795 <https://bugs.galette.eu/issues/795>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:195
+#: ../changelogs/galette_09.rst:208
 # 11b1ece7f36643ccab881b3a5bc842fd
 msgid "Statuses are no longer uniques (`#887 <https://bugs.galette.eu/issues/887>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:196
+#: ../changelogs/galette_09.rst:209
 # 01974491864e4f06a0f86a874a91d30d
 msgid "Authenticate from email address (`#919 <https://bugs.galette.eu/issues/919>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:197
+#: ../changelogs/galette_09.rst:210
 # 835e374b95ee46b3b046b79871dac4cb
 msgid "Handle reverse proxy on logs (`#997 <https://bugs.galette.eu/issues/997>`_ and `#1029 <https://bugs.galette.eu/issues/1029>`_ - thanks to Georges R.!)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:198
+#: ../changelogs/galette_09.rst:211
 # 4a78b228d3084f33a5fca99fac8678ca
 msgid "Autocomplete towns, zip codes, countries and birth places (`#1005 <https://bugs.galette.eu/issues/1005>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:199
+#: ../changelogs/galette_09.rst:212
 # b54c4045653a440fa3200496354916ea
 msgid "A behavior configuration file whith some examples has been added in ``config`` directory (`#1011 <https://bugs.galette.eu/issues/1011>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:200
+#: ../changelogs/galette_09.rst:213
 # c1d5021c23024dbfbf7cf2d077453629
 msgid "Warning message when application is configured to display errors (`#1011 <https://bugs.galette.eu/issues/1011>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:201
+#: ../changelogs/galette_09.rst:214
 # 18f1385baa3c4b0f83090b7a6fea67e9
 msgid "Handle non secure SMTP connections (self-signed certificates, etc. `#1020 <https://bugs.galette.eu/issues/1020>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:202
+#: ../changelogs/galette_09.rst:215
 # 9427bbe083d54bcabb28e0a9d45064ac
 msgid "Minimum PHP version is now 5.6"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:203
+#: ../changelogs/galette_09.rst:216
 # 4a4efaa5f72848f3b197b329e19c4337
 msgid "It is possible to expose only a sub directory (``webroot``, whith limited contents) on the web server"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:204
+#: ../changelogs/galette_09.rst:217
 # ccb81e9e49f1403c9087a4335dcf698f
 msgid "Type free search fields (thanks to Guillaume R.!)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:205
+#: ../changelogs/galette_09.rst:218
 # 3cabb7507fa54f1ca4d03af62ab2f829
 msgid "Improve access control on fields by adding new roles (thanks to Guillaume R.!)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:206
+#: ../changelogs/galette_09.rst:219
 # 49b46827fa094ec0be014e03018f16d4
 msgid "Integrate AdminTools plugin (`#1071 <https://bugs.galette.eu/issues/1071>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:207
+#: ../changelogs/galette_09.rst:220
 # 503de1b31e424451943c9903fbec7804
 msgid "Free search on status texts (`#1061 <https://bugs.galette.eu/issues/1061>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:208
+#: ../changelogs/galette_09.rst:221
 # fa65dd7f751741859ead5853f9a7920f
 msgid "Improve fields management in free search (thanks to Guillaume R.!)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:209
+#: ../changelogs/galette_09.rst:222
 # 520c10b0b558465b8d99b67b4c77a5ce
 msgid "Script for extrernal statistics (`#787 <https://bugs.galette.eu/issues/787>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:210
+#: ../changelogs/galette_09.rst:223
 # 3ed745c11367423595434b6dec6bd832
 msgid "Send `telemetry informations and registration <https://telemetry.galette.eu>`_ :)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:217
+#: ../changelogs/galette_09.rst:230
 # 520c10b0b558465b8d99b67b4c77a5ce
 msgid "Better PDF errors management (`#249 <https://bugs.galette.eu/issues/249>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:218
+#: ../changelogs/galette_09.rst:231
 # 00c80be4d22540c9913fdaf131fbfe33
 msgid "Add version number to sessions (`#315 <https://bugs.galette.eu/issues/315>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:219
+#: ../changelogs/galette_09.rst:232
 # bd6142e66f1444acae02aecddce4a926
 msgid "Missing translation in messages headers (`#673 <https://bugs.galette.eu/issues/673>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:220
+#: ../changelogs/galette_09.rst:233
 # b66c558143884e4cb24bf2ee5777fca1
 msgid "Members listed several times when searching on groups (`final fix for #687 <https://bugs.galette.eu/issues/687>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:221
+#: ../changelogs/galette_09.rst:234
 # 08cf9b68a378433fabfec362b0be14ea
 msgid "Error on calculated late days in some cases (`#902 <https://bugs.galette.eu/issues/902>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:222
+#: ../changelogs/galette_09.rst:235
 # cdfd484565904208ad89db0c28ac2097
 msgid "Parent group was lost when a group manager edit a group (`#990 <https://bugs.galette.eu/issues/990>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:223
+#: ../changelogs/galette_09.rst:236
 # 3b5748cda0d047c9a4b51f7da03a486a
 msgid "Remove parent field from fields configuration (`#1033 <https://bugs.galette.eu/issues/1033>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:224
+#: ../changelogs/galette_09.rst:237
 # 40b20dea2db047fd90e4dcdacaaa7b7e
 msgid "Error sending reminder mail (`#1046 <https://bugs.galette.eu/issues/1046>`_)"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:232
+#: ../changelogs/galette_09.rst:245
 # 7ccf6aefc45b40c397af7a9904073430
 msgid "Rely on `Slim <https://www.slimframework.com/>`_ for URL management"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:233
+#: ../changelogs/galette_09.rst:246
 # aece0d53ca0245d6899e7febaf6f35c4
 msgid "Manage third party libraries with `Composer <https://getcomposer.org/>`_"
 msgstr ""
 
-#: ../changelogs/galette_09.rst:234
+#: ../changelogs/galette_09.rst:247
 # d9522563998d46329ba74ab1c94748d6
 msgid "Use PSR2 coding standards (with PEAR comment rules)"
 msgstr ""
