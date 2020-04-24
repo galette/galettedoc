@@ -86,12 +86,7 @@ Practical example : code modifications
 Prepare the working copy
 ------------------------
 
-Clone the repository:
-
-::
-
-   $ git clone git://git.tuxfamily.org/gitroot/galette/galette.git
-   $ cd galette
+First of all, you'll have to clone Galette repository, and properly instanciate your working copy (installing all third party dependencies, etc). Please rely on :doc:`Galette source code <git>` page to find all details about it.
 
 Then, initialize git-flow:
 

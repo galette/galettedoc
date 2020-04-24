@@ -65,14 +65,34 @@ The ``galette`` directory will then contain a working copy of Galette's source c
 Third party librarires
 ----------------------
 
-:doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, they are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:
+:doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, PHP dependencies are handled with `Composer dependency manager <https://getcomposer.org>`_ and Javascript ones with `Node Package Manager (npm) <https://npmjs.com>`_ and `gulpjs <https://gulpjs.com/>`_.
+
+Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:
 
 ::
 
    $ cd galette/galette
    $ composer install -o
 
-It is also possible to use these libraries if they are provided by another way, on your system side for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`.
+.. versionadded:: 0.9.4
+
+To get Javascript dependencies up and running, go to the main directory (where you will find `package.json` and `package-lock.json` files), and run following commands:
+
+::
+
+    $ cd galette
+    $ npm install
+    $ npm run-script gulp
+
+The first command will install all javascript dependencies into the `node_modules` directory; while the second one will merge, minify (among others) and then copy all javascript and CSS files to a directory the web server can read.
+
+.. note::
+
+   With this workflow, changes done on Galette CSS or JS files won't be visible until you run gulp again. To avoid this, you can use the ``watch`` gulp task; which will look for modifed files on disk and automatically rebuild when changed:
+
+      ::
+
+         $ npm run-script gulp watch
 
 .. _gitlinux:
 
