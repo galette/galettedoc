@@ -9,7 +9,7 @@ Prerequisites and hosting
 To install Galette, you will need to meet the following requirements :
 
 * a web server (like Apache),
-* PHP 7.2: or more recent,
+* PHP 7.2 or more recent,
 
   * `gd` PHP module,
   * `PDO` module and `mysql` ou `postgresql` for PDO,
