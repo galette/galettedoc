@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-04-27 15:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,101 +167,101 @@ msgid "Prepare the working copy"
 msgstr ""
 
 #: ../development/contributor.rst:89
-# 2c9b73f58db8446ab6ff88d2ac244496
-msgid "Clone the repository:"
+# 6017994677254bfd959e0b27b959c231
+msgid "First of all, you'll have to clone Galette repository, and properly instanciate your working copy (installing all third party dependencies, etc). Please rely on :doc:`Galette source code <git>` page to find all details about it."
 msgstr ""
 
-#: ../development/contributor.rst:96
+#: ../development/contributor.rst:91
 # 5d8356cc11b745e8868dfa00b6eb41fb
 msgid "Then, initialize git-flow:"
 msgstr ""
 
-#: ../development/contributor.rst:119
+#: ../development/contributor.rst:114
 # 0fcb0ff9fe7f4e1fa523e134b0af59e2
 msgid "When you clone the Galette GIT repository, you land on the ``master`` branch. This documentation assumes you are working on the ``develop`` branch."
 msgstr ""
 
-#: ../development/contributor.rst:125
+#: ../development/contributor.rst:120
 # 54ef9af5d48e4df1927bd031a7816ce0
 msgid "Then, since git-flow gives the details of what it does, just check the output ;)"
 msgstr ""
 
-#: ../development/contributor.rst:129
+#: ../development/contributor.rst:124
 # b44b707f0f284cb482789dc8c4631ea3
 msgid "Add a feature"
 msgstr ""
 
-#: ../development/contributor.rst:131
+#: ../development/contributor.rst:126
 # 6a97cf33d0c0448da13f4d07eebf2479
 msgid "To start working on a feature that we will name ``killer`` for the example :"
 msgstr ""
 
-#: ../development/contributor.rst:146
+#: ../development/contributor.rst:141
 # 4a8af4050eb4420fb6c667989fd9a179
 msgid "And voila! Now you can work on your killer feature, congratulations!"
 msgstr ""
 
-#: ../development/contributor.rst:148
+#: ../development/contributor.rst:143
 # 03ff90f466b849cea928ef34ed655ed3
 msgid "While coding, it is a good pratice to bring back the last changes from the develop branch. First make sure ``develop`` is up to date, then run a rebase command from your ``feature/killer`` branch:"
 msgstr ""
 
-#: ../development/contributor.rst:157
+#: ../development/contributor.rst:152
 # 1e1c5463625a418395f496b59ea1ef07
 msgid "Once the development is over, send us the patch. The feature's finishings only happens on the main repository itself."
 msgstr ""
 
-#: ../development/contributor.rst:160
+#: ../development/contributor.rst:155
 # 273d6d51341547699a76bf05f9a77b5f
 msgid "Fix a bug"
 msgstr ""
 
-#: ../development/contributor.rst:162
+#: ../development/contributor.rst:157
 # ea20d875cb464a62bfacbb6f2df96291
 msgid "To fix a bug, you'll use git-flow with the `hotfix` keyword instead of `feature`:"
 msgstr ""
 
-#: ../development/contributor.rst:168
+#: ../development/contributor.rst:163
 # 6be71e278b8e489faf5d61432d157aea
 msgid "The main difference, as already explained, is that this branch will be based on the `master` branch."
 msgstr ""
 
-#: ../development/contributor.rst:173
+#: ../development/contributor.rst:168
 # ba22c7cede4a4185ae3a6e7d4ed965e8
 msgid "Practical example: send a new feature"
 msgstr ""
 
-#: ../development/contributor.rst:177
+#: ../development/contributor.rst:172
 # 3890838632f74a96ba3ff8a673db724f
 msgid "For technical reasons, we have created mirrors of all our GIT repositories on github. All the source code is on github, and you may prefer to use their fork/pull request capacities. It is ok as well."
 msgstr ""
 
-#: ../development/contributor.rst:179
+#: ../development/contributor.rst:174
 # c6772af5028d46b49367050fcff027a0
 msgid "From your working branch (let's say you are sending the ``killer`` feature), generate a patch you can send to us:"
 msgstr ""
 
-#: ../development/contributor.rst:192
+#: ../development/contributor.rst:187
 # aa5c97df2c844d60b29de0ab3ceda6f8
 msgid "You can now attach those patches files to the `related ticket on Galette tracker <https://bugs.galette.eu/projects/galette/>`_ :) Please precise which branch you chose to start from."
 msgstr ""
 
-#: ../development/contributor.rst:195
+#: ../development/contributor.rst:190
 # cdb53e7d9e914fb48688f07df80e15c4
 msgid "A few hints:"
 msgstr ""
 
-#: ../development/contributor.rst:197
+#: ../development/contributor.rst:192
 # f0eff282876f433a82f2700b2539049c
 msgid "try to respect as possible :ref:`our coding standards <conventions>`,"
 msgstr ""
 
-#: ../development/contributor.rst:198
+#: ../development/contributor.rst:193
 # 7d1e7d41b560450783058d6a63c4cc9e
 msgid "test your work, and other features it may affect,"
 msgstr ""
 
-#: ../development/contributor.rst:199
+#: ../development/contributor.rst:194
 # e199725dec5b40d19a30537add8da833
 msgid "try to add unit tests."
 msgstr ""

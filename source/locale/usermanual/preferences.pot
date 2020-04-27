@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-04-27 15:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,7 +243,7 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:78
 # cc49cb2207724b3b8af1c7aa88039b3a
-msgid "**file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent."
+msgid "**file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution information and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent."
 msgstr ""
 
 #: ../usermanual/preferences.rst:82
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:91
 # 08745bbca51d47588f164ca52ea5c1d2
-msgid "A contextual help is provided, check it for more informations."
+msgid "A contextual help is provided, check it for more information."
 msgstr ""
 
 #: ../usermanual/preferences.rst:93
@@ -442,11 +442,191 @@ msgid "Cards"
 msgstr ""
 
 #: ../usermanual/preferences.rst:159
+# 91094aa326324eff9370afa6c2db6ce5
+msgid "Security"
+msgstr ""
+
+#: ../usermanual/preferences.rst:165
+# bdcb17df4b654a9d8ee717eb7f4f5b81
+msgid "Complex password rules are not user friendly; but security is mainly never :)"
+msgstr ""
+
+#: ../usermanual/preferences.rst:167
+# 1e5b0c328bd846549742d3a07eb7b8e0
+msgid "Of course, all passwords should be as secure as possible, but this is especially true for all accounts that have privileges (staff, admin, super-admin); you may explain your users why this is important."
+msgstr ""
+
+#: ../usermanual/preferences.rst:169
+# 9dbcc5c0f9ac43abae0fdf4d1c26c20a
+msgid "You can enforce some rules for members (and super-admin) passwords:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:171
+# 79778f37a15d4bdea698f19d6e896b0a
+msgid "minimum length (6 characters or more),"
+msgstr ""
+
+#: ../usermanual/preferences.rst:172
+# f673ef9ff1e74c38a0f491de2d71de60
+msgid "minimum \"strength\","
+msgstr ""
+
+#: ../usermanual/preferences.rst:173
+# 557606c0c5da492997004059c3a2152c
+msgid "blacklist,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:174
+# 5c5edfad018b431a89476b828c8ed78e
+msgid "no personal information."
+msgstr ""
+
+#: ../usermanual/preferences.rst:176
+# 6d3a4b73cd724e428527d450f110d9d7
+msgid "Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a \"strength meter\" displayed for information."
+msgstr ""
+
+#: ../usermanual/preferences.rst:180
+# ab817f8bab0e462eb836ca70a7bf685d
+msgid "If you enable password checks, it is not possible to know if some of existing ones does not respect them. Galette will display a warning at login if checks are not respected, but login will still be possible!"
+msgstr ""
+
+#: ../usermanual/preferences.rst:182
+# 2cfe916632454bff81f93f62ecd4662a
+msgid "But wait... Password security is important, but Galette does not enforce nothing! Isn't that dumb? Well, not really. For tests or entirely private instances, security may be less important; and in some cases, being too restrictive may be an issue for your users; that's why this is up to you to secure as needed; just like using SSL or not :)"
+msgstr ""
+
+#: ../usermanual/preferences.rst:185
+# 1a8fbe07c1a74ab9b9f4cb34f83c16c0
+msgid "Password strength"
+msgstr ""
+
+#: ../usermanual/preferences.rst:187
+# eb3d033c96c1435cad141dc44c6f2aa6
+msgid "Password strength calculation is quite simple. It is based on 4 rules:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:189
+# 6aef90e297f242938ceb054d78a30a66
+msgid "contains lower case characters,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:190
+# 35fc99baa18e4d75bcb745eac141bac2
+msgid "contains upper case characters,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:191
+# 552837b716c74765bdd4138e65b27f18
+msgid "contains number,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:192
+# e2743381ca9c4d6f82f9b098ba429761
+msgid "contains special characters."
+msgstr ""
+
+#: ../usermanual/preferences.rst:194
+# 5ca88a0553cf4ba694c5480c48010f63
+msgid "You can choose between 5 values for strength configuration:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:196
+# a652abf5c29e4ec0bbc9290cbd40b9c1
+msgid "**none**: (default): disables strength checks and check for personal information,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:197
+# 17e0186029af41819a2564eb3172495c
+msgid "**weaker**: enables check for personal information, only one of the rule is mandatory,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:198
+# 9db1a21fa68c4d9a9a848422cc3eede6
+msgid "**medium**: two rules are mandatory,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:199
+# c0225cf254fc45f8988429109302346e
+msgid "**strong**: three rules are mandatory,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:200
+# 7e772e73e6bc42d6aae0957515e573ed
+msgid "**very strong**: the four rules are mandatory."
+msgstr ""
+
+#: ../usermanual/preferences.rst:203
+# a5aeceaa77a74b88aa2cd03a9c4b36af
+msgid "Blacklisted passwords"
+msgstr ""
+
+#: ../usermanual/preferences.rst:205
+# d56f93cf456d4a0aa04b8dae90de6101
+msgid "A default list of 500 common passwords is provided as a blacklist you can enable, \"galette\" is also blacklisted."
+msgstr ""
+
+#: ../usermanual/preferences.rst:209
+# 8c19a59223e0455da9a75c932d5aea14
+msgid "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms (one per line). You can provide your own file, we advice you to complete the existing one."
+msgstr ""
+
+#: ../usermanual/preferences.rst:212
+# e3a60c776f554caeb8099d9ddf8e7c9b
+msgid "Personal information as password"
+msgstr ""
+
+#: ../usermanual/preferences.rst:214
+# c6dea5fe1d074fa1879de4bbe269ab09
+msgid "This check rely on strength activation (all but **none** level). For the super-admin account, this will just ensure you are not using login as password. For standard accounts, there are several information involved:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:216
+# 9a921305b4ad4e90862ffcb501f33029
+msgid "name,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:217
+# 451cd38cb975429f8991a283ec76cbee
+msgid "surname,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:218
+# b3dc0f5a39bf457fb6aa9295a044efda
+msgid "nickname,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:219
+# ce51c55b241149459405e43060335207
+msgid "login,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:220
+# 51b5122aaee9416b900df2d92c730ef0
+msgid "email,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:221
+# 070ac6faa7f84373a9c65698cf022777
+msgid "birthdate,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:222
+# aab876a42e0f4cb98b912f59eaa5df61
+msgid "town"
+msgstr ""
+
+#: ../usermanual/preferences.rst:224
+# d05280ba75754324a1e78b822fad4fee
+msgid "Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants)."
+msgstr ""
+
+#: ../usermanual/preferences.rst:227
 # fbdd550bae7d4523bbf280a540555b2b
 msgid "Admin"
 msgstr ""
 
-#: ../usermanual/preferences.rst:163
+#: ../usermanual/preferences.rst:231
 # 0995882311ba4594895ca927affe1fe0
 msgid "This tab wil be present only if you are logged in as super administrator."
 msgstr ""

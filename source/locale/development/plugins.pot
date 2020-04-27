@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-04-27 15:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "A ``plugins`` directory in Galette will host plugins, one directory per p
 msgstr ""
 
 #: ../development/plugins.rst:17
-#: ../development/plugins.rst:553
+#: ../development/plugins.rst:555
 # 20c3df765e7e42329775e8296be56b19
 # 20c3df765e7e42329775e8296be56b19
 msgid "|folder| `plugins`"
@@ -605,77 +605,77 @@ msgstr ""
 msgid "Respecting those rules ensures plugin will be supported from the Galette plugins management interface, and user will be able to install or update easily your plugin."
 msgstr ""
 
-#: ../development/plugins.rst:497
+#: ../development/plugins.rst:499
 # 772f3d2699924bbf8f919bc88556f9cc
 msgid "PHP classes"
 msgstr ""
 
-#: ../development/plugins.rst:499
+#: ../development/plugins.rst:501
 # fd9a4000e28f46048913af8e56201f5c
 msgid "Plugins may need their own classes. For Galette, class name and `namespace <https://php.net/manual/language.namespaces.php>`_ (`namespace`) are importants."
 msgstr ""
 
-#: ../development/plugins.rst:501
+#: ../development/plugins.rst:503
 # e8f99b8e5f244a78b59fcd9e81cb01e7
 msgid "All classes must be in the ``lib/{namespace}`` directory of your plugin. Each class is a PHP file which name is the class name (including case). Namespace is built with plugin name as declared in ``_define.php``. In our example, plugin name is ``Galette My Plugin`` and therefore the namespace will be ``GaletteMyPlugin``."
 msgstr ""
 
-#: ../development/plugins.rst:503
+#: ../development/plugins.rst:505
 # bdffa7f66bd0437990d4fcc70dbeff2d
 msgid "The `MyClass` class will will be written in ``lib/GaletteMyPlugin/MyClass.php``:"
 msgstr ""
 
-#: ../development/plugins.rst:514
+#: ../development/plugins.rst:516
 # fdac42ffa98a4a778c75f3046ca74c58
 msgid "And to call it:"
 msgstr ""
 
-#: ../development/plugins.rst:527
+#: ../development/plugins.rst:529
 # ff1d79777c344e658894f9524eb6498d
 msgid "When you use namespaces, all other libraries or PHP objects used them aswell. In your ``MyClass``, names of classes will be resolved that way:"
 msgstr ""
 
-#: ../development/plugins.rst:542
+#: ../development/plugins.rst:544
 # 3e05ab5bdc4f4b688798b4510e1bd861
 msgid "Third party libraries"
 msgstr ""
 
-#: ../development/plugins.rst:544
+#: ../development/plugins.rst:546
 # fd4a91ccb06444ac8c3447686360e9ad
 msgid "Third party dependencies must not be included in plugin sources, but in releases only."
 msgstr ""
 
-#: ../development/plugins.rst:546
+#: ../development/plugins.rst:548
 # 14eec0a95da04ce5a00ed4462b32687d
 msgid "Galette uses :ref:`composer <deps>` to handle third party libraries, plugins can do the same if needed."
 msgstr ""
 
-#: ../development/plugins.rst:549
+#: ../development/plugins.rst:551
 # fd9df07c146845e2b494272c69c8c240
 msgid "File system hierarchy"
 msgstr ""
 
-#: ../development/plugins.rst:551
+#: ../development/plugins.rst:553
 # 7c8c9eaf2fb043b4b8315b80e5edafd4
 msgid "Finally, a plugin directory should look like:"
 msgstr ""
 
-#: ../development/plugins.rst:555
+#: ../development/plugins.rst:557
 # 560aceb2cf2847fea9764b77d2a41c0d
 msgid "|folder| `galette-myplugin`"
 msgstr ""
 
-#: ../development/plugins.rst:557
+#: ../development/plugins.rst:559
 # 1e7e31fbd9e943d2a09804a5f1661dea
 msgid "|folder| `includes`"
 msgstr ""
 
-#: ../development/plugins.rst:559
-#: ../development/plugins.rst:563
-#: ../development/plugins.rst:577
-#: ../development/plugins.rst:581
-#: ../development/plugins.rst:585
-#: ../development/plugins.rst:591
+#: ../development/plugins.rst:561
+#: ../development/plugins.rst:565
+#: ../development/plugins.rst:579
+#: ../development/plugins.rst:583
+#: ../development/plugins.rst:587
+#: ../development/plugins.rst:593
 # c5409af3062143bd907ad0aa280d0005
 # c5409af3062143bd907ad0aa280d0005
 # c5409af3062143bd907ad0aa280d0005
@@ -685,103 +685,173 @@ msgstr ""
 msgid "|file| `...`"
 msgstr ""
 
-#: ../development/plugins.rst:561
+#: ../development/plugins.rst:563
 # 537bbba5bebc42e9885af01a97bad6db
 msgid "|folder| `lang`"
 msgstr ""
 
-#: ../development/plugins.rst:565
+#: ../development/plugins.rst:567
 # 537bbba5bebc42e9885af01a97bad6db
 msgid "|folder| `lib`"
 msgstr ""
 
-#: ../development/plugins.rst:567
+#: ../development/plugins.rst:569
 # cf63923bda394c9a834656e432280fdd
 msgid "|folder| `GaletteMyPlugin`"
 msgstr ""
 
-#: ../development/plugins.rst:569
+#: ../development/plugins.rst:571
 # 0b67001a8ffd42b486c39db92d4a9371
 msgid "|phpfile| `...`"
 msgstr ""
 
-#: ../development/plugins.rst:571
+#: ../development/plugins.rst:573
 # 560aceb2cf2847fea9764b77d2a41c0d
 msgid "|folder| `templates`"
 msgstr ""
 
-#: ../development/plugins.rst:573
+#: ../development/plugins.rst:575
 # ff4f4260ebac4aaf972e43a5b79e153d
 msgid "|folder| `default`"
 msgstr ""
 
-#: ../development/plugins.rst:575
+#: ../development/plugins.rst:577
 # 9aed5ccd7797480d98d9e903acf8e666
 msgid "|file| `headers.tpl`"
 msgstr ""
 
-#: ../development/plugins.rst:576
+#: ../development/plugins.rst:578
 # 4090d056aedc4ea0a69e8a0321634e24
 msgid "|file| `menu.tpl`"
 msgstr ""
 
-#: ../development/plugins.rst:579
+#: ../development/plugins.rst:581
 # ff4f4260ebac4aaf972e43a5b79e153d
 msgid "|folder| webroot"
 msgstr ""
 
-#: ../development/plugins.rst:583
+#: ../development/plugins.rst:585
 # 772f3d2699924bbf8f919bc88556f9cc
 msgid "|folder| `images`"
 msgstr ""
 
-#: ../development/plugins.rst:587
+#: ../development/plugins.rst:589
 # e5eee3e4377a440c91834d5499b0c14f
 msgid "|phpfile| `_config.inc.php`"
 msgstr ""
 
-#: ../development/plugins.rst:588
+#: ../development/plugins.rst:590
 # b821fc6e18c0485e80e028852a4c4928
 msgid "|phpfile| `_define.php`"
 msgstr ""
 
-#: ../development/plugins.rst:589
+#: ../development/plugins.rst:591
 # 290b2b519356499fa46592d8019a8a3c
 msgid "|phpfile| `_smarties.php`"
 msgstr ""
 
-#: ../development/plugins.rst:590
+#: ../development/plugins.rst:592
 # 290b2b519356499fa46592d8019a8a3c
 msgid "|phpfile| `_routes.php`"
 msgstr ""
 
-#: ../development/plugins.rst:593
+#: ../development/plugins.rst:595
 # 52f605385d0c4b1aa4192625905f7b2d
 msgid "And for all remaining development questions... Well, rely on `PHP manual <https://php.net/manual/>`_, `Smarty manual <https://www.smarty.net/docs/en/>`_, a mail client to `write to mailing lists <https://galette.eu/dc/index.php/pages/Contact?navlang=en#mailing_lists>`_, and potentially an `IRC client <https://hexchat.github.io/>`_ to join `Galette IRC channel <https://galette.eu/dc/index.php/pages/Contact?navlang=en#irc>`_ ;-)"
 msgstr ""
 
-#: ../development/plugins.rst:595
+#: ../development/plugins.rst:597
 # c7874ee5afea47db8abddc7db260a014
 msgid "Just like `Galette core source code <codage>`_, plugins must follow :ref:`PSR2 coding standards <conventions>`: https://www.php-fig.org/psr/psr-2/"
 msgstr ""
 
-#: ../development/plugins.rst:597
+#: ../development/plugins.rst:599
 # bf79ea3455da4211a034ea7a3f4a2214
 msgid "Since Galette provide support for both MariaDB and PostgreSQL, it would be logicial for plugins to do the same."
 msgstr ""
 
-#: ../development/plugins.rst:600
+#: ../development/plugins.rst:602
 # 70aacff4d64343339abf7093183ebb20
 msgid "Registration form"
 msgstr ""
 
-#: ../development/plugins.rst:606
+#: ../development/plugins.rst:608
 # 10fc1bda654c476fb521a367db92b8b8
 msgid "It is possible to reconfigure the registration form. A basic version is provided in Galette, that uses PDF models, but it may not suit everyone needs. The :doc:`fullcard plugin <../plugins/fullcard>` for example, will override to provide its own version, without any change in the browsers URL (completely invisible for users)."
 msgstr ""
 
-#: ../development/plugins.rst:608
+#: ../development/plugins.rst:610
 # e47304c1296b4f7da54a5fd2ad70d3c1
 msgid "This is enabled by creating a ``_preferences.php`` file in your plugin, with a content like:"
+msgstr ""
+
+#: ../development/plugins.rst:620
+# d4595ec26f9c441a899028dfcc2f54b6
+msgid "Galette events"
+msgstr ""
+
+#: ../development/plugins.rst:624
+# 96844a65b3cc4c19b559bd9d10ae57a4
+msgid "Galette emit some events when members, contributions and transactions are added, updated or removed. This is provided using `PHP league Event library <https://event.thephpleague.com/2.0/>`_."
+msgstr ""
+
+#: ../development/plugins.rst:626
+# abda77f2afd04e97b4d41f83f14bfb52
+msgid "All possible events are:"
+msgstr ""
+
+#: ../development/plugins.rst:628
+# 16568b0db8d64425b9a48ec7c1df1a98
+msgid "``adherent.add``,"
+msgstr ""
+
+#: ../development/plugins.rst:629
+# 603dac1da85e4397bfb5a580f6bb5075
+msgid "``adherent.edit``,"
+msgstr ""
+
+#: ../development/plugins.rst:630
+# 4d1a7ea9f99941629296bcab90cbcd21
+msgid "``adherent.remove``,"
+msgstr ""
+
+#: ../development/plugins.rst:631
+# 8c7c7c2642a04a058c5278d379501982
+msgid "``contribution.add``,"
+msgstr ""
+
+#: ../development/plugins.rst:632
+# 4a6e84435f8b48e981c2deb87bd17538
+msgid "``contribution.edit``,"
+msgstr ""
+
+#: ../development/plugins.rst:633
+# 4cdded92a5ef42a9bf1589ba14bde886
+msgid "``contribution.remove``,"
+msgstr ""
+
+#: ../development/plugins.rst:634
+# f15a9b60b9e94ceb941bb2fbf6c27dc4
+msgid "``transaction.add``,"
+msgstr ""
+
+#: ../development/plugins.rst:635
+# 23ea1fe6e9314d4ea72e29d59111f863
+msgid "``transaction.edit``,"
+msgstr ""
+
+#: ../development/plugins.rst:636
+# e0f483739a6141d59581f54c76f80144
+msgid "``transaction.remove``."
+msgstr ""
+
+#: ../development/plugins.rst:638
+# 11d560520bab4898ae3a13e2011668d4
+msgid "In order to catch any of those events, you will need a :ref:`PHP class <plugins_phpclasses>` named ``PluginEventProvider`` in your plugin namespace, which must provide a ``provideListeners`` method:"
+msgstr ""
+
+#: ../development/plugins.rst:666
+# 1b13e0181a6a4dffae0def0587c0a3c8
+msgid "First argument of your listener is the event name, and the second an anonymous function that will receive the event itself as first argumennt, and an instance of the related Galette object. You can of course add several listeners on possible events."
 msgstr ""
 

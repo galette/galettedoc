@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-04-27 15:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,55 +248,70 @@ msgstr ""
 
 #: ../development/git.rst:68
 # 5ab7ac2937184322b6e97baf82ebf7ad
-msgid ":doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, they are handled with `Composer dependency manager <https://getcomposer.org>`_. Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:"
+msgid ":doc:`Galette's third party dependencies <technical_infos>` are not included in the repository. Instead, PHP dependencies are handled with `Composer dependency manager <https://getcomposer.org>`_ and Javascript ones with `Node Package Manager (npm) <https://npmjs.com>`_ and `gulpjs <https://gulpjs.com/>`_."
 msgstr ""
 
-#: ../development/git.rst:75
-# c05234f94d2443b6bdb8883adb400868
-msgid "It is also possible to use these libraries if they are provided by another way, on your system side for example. Just take a look at :ref:`how to configure Galette paths <configpaths>`."
+#: ../development/git.rst:70
+# 5ab7ac2937184322b6e97baf82ebf7ad
+msgid "Once composer is installed on your workstation, just go in Galette directory (where you will find `composer.json` and `composer.lock` files) and run composer:"
 msgstr ""
 
-#: ../development/git.rst:80
+#: ../development/git.rst:79
+# c07e340172a94406944a4eeb110270b5
+msgid "To get Javascript dependencies up and running, go to the main directory (where you will find `package.json` and `package-lock.json` files), and run following commands:"
+msgstr ""
+
+#: ../development/git.rst:87
+# 71466f4024354029844b05117ef71dbd
+msgid "The first command will install all javascript dependencies into the `node_modules` directory; while the second one will merge, minify (among others) and then copy all javascript and CSS files to a directory the web server can read."
+msgstr ""
+
+#: ../development/git.rst:91
+# 404f518c53b0457c9cd590b2e8eaf225
+msgid "With this workflow, changes done on Galette CSS or JS files won't be visible until you run gulp again. To avoid this, you can use the ``watch`` gulp task; which will look for modifed files on disk and automatically rebuild when changed:"
+msgstr ""
+
+#: ../development/git.rst:100
 # 6373596710b743e591e1dbb5cab15477
 msgid "GNU/Linux"
 msgstr ""
 
-#: ../development/git.rst:82
+#: ../development/git.rst:102
 # 3209335e233143e7af8eb8953f16885a
 msgid "Standard GIT commands are provided by default in the package manager of most GNU/Linux distributions."
 msgstr ""
 
-#: ../development/git.rst:84
+#: ../development/git.rst:104
 # 39122a510ef149fbbbd2c2676d4612a1
 msgid "Some graphical interfaces:"
 msgstr ""
 
-#: ../development/git.rst:86
+#: ../development/git.rst:106
 # 256c00c39a874640a383259d0d0e262f
 msgid "GIT comes with its own UI; just run ``git gui``,"
 msgstr ""
 
-#: ../development/git.rst:87
+#: ../development/git.rst:107
 # ba1004661af14694a6c313f5492b0108
 msgid "``gitg`` is a Gnome compliant alternative UI."
 msgstr ""
 
-#: ../development/git.rst:92
+#: ../development/git.rst:112
 # 52f940b9970742f6a816bea339815ab0
 msgid "Windows"
 msgstr ""
 
-#: ../development/git.rst:94
+#: ../development/git.rst:114
 # 22f0b0d8d84a4db68532070e9b94ce49
 msgid "GIT is supported on windows using one of the following solutions:"
 msgstr ""
 
-#: ../development/git.rst:96
+#: ../development/git.rst:116
 # eff4543fe7ef4c0e8c618b2fec94b433
 msgid "`TortoiseGIT <https://tortoisegit.org/>`_,"
 msgstr ""
 
-#: ../development/git.rst:97
+#: ../development/git.rst:117
 # eff4543fe7ef4c0e8c618b2fec94b433
 msgid "`Git Extensions <https://gitextensions.github.io/>`_"
 msgstr ""
