@@ -75,7 +75,7 @@ Galette related parameters:
 
   * **galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`.
   * **get://** or **post://**: use HTTP GET or POST method to call a web address, prefix will be replaced with ``http://``,
-  * **file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution informations and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent.
+  * **file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution information and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent.
 
 .. warning::
 
@@ -88,7 +88,7 @@ Galette related parameters:
 
    This URL should be changed only if there are issues, this may cause instability.
 
-   A contextual help is provided, check it for more informations.
+   A contextual help is provided, check it for more information.
 
 * **Show identifiers**: display database identifiers instead of simple counts on lists.
 
@@ -154,6 +154,74 @@ Cards
    :scale: 50%
    :align: center
    :alt: Galette settings, cards tab
+
+Security
+========
+
+.. versionadded:: 0.9.4
+
+.. warning::
+
+   Complex password rules are not user friendly; but security is mainly never :)
+
+   Of course, all passwords should be as secure as possible, but this is especially true for all accounts that have privileges (staff, admin, super-admin); you may explain your users why this is important.
+
+You can enforce some rules for members (and super-admin) passwords:
+
+* minimum length (6 characters or more),
+* minimum "strength",
+* blacklist,
+* no personal information.
+
+Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a "strength meter" displayed for information.
+
+.. note::
+
+   If you enable password checks, it is not possible to know if some of existing ones does not respect them. Galette will display a warning at login if checks are not respected, but login will still be possible!
+
+But wait... Password security is important, but Galette does not enforce nothing! Isn't that dumb? Well, not really. For tests or entirely private instances, security may be less important; and in some cases, being too restrictive may be an issue for your users; that's why this is up to you to secure as needed; just like using SSL or not :)
+
+Password strength
+^^^^^^^^^^^^^^^^^
+
+Password strength calculation is quite simple. It is based on 4 rules:
+
+* contains lower case characters,
+* contains upper case characters,
+* contains number,
+* contains special characters.
+
+You can choose between 5 values for strength configuration:
+
+* **none**: (default): disables strength checks and check for personal information,
+* **weaker**: enables check for personal information, only one of the rule is mandatory,
+* **medium**: two rules are mandatory,
+* **strong**: three rules are mandatory,
+* **very strong**: the four rules are mandatory.
+
+Blacklisted passwords
+^^^^^^^^^^^^^^^^^^^^^
+
+A default list of 500 common passwords is provided as a blacklist you can enable, "galette" is also blacklisted.
+
+.. note::
+
+   The ``galette/data/blacklist.txt`` file is used to list blacklisted terms (one per line). You can provide your own file, we advice you to complete the existing one.
+
+Personal information as password
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This check rely on strength activation (all but **none** level). For the super-admin account, this will just ensure you are not using login as password. For standard accounts, there are several information involved:
+
+* name,
+* surname,
+* nickname,
+* login,
+* email,
+* birthdate,
+* town
+
+Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants).
 
 Admin
 =====
