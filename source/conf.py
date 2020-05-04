@@ -42,9 +42,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Galette'
-author = u'Johan Cwiklinski'
-copyright = u'2011-2020, Johan Cwiklinski'
+project = 'Galette'
+author = 'Johan Cwiklinski'
+copyright = '2011-2020, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -246,7 +246,7 @@ latex_elements = {
 'pointsize': '12pt',
 
 # Font package inclusion.
-'fontpkg': '\usepackage{newcent}',
+'fontpkg': '\\usepackage{newcent}',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
@@ -261,8 +261,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'Galette.tex', u'Galette Documentation',
-   u'Johan Cwiklinski', 'manual'),
+  ('index', 'Galette.tex', 'Galette Documentation',
+   'Johan Cwiklinski', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
