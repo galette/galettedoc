@@ -56,6 +56,19 @@ Here is a plan of Galette used directories and some explanations about them:
       * |phpfile| `CheckModules.php`
       * |phpfile| `...`
 
+    * |folder| `Controllers`: :ref:`Controllers <controllers>` classes (since 0.9.4)
+
+      * |phpfile| `PdfController.php`
+      * |phpfile| `CsvController.php`
+      * |phpfile| `ImagesController.php`
+      * |folder| `Crud`: CRUD (Create, Read, Update, Delete) controllers
+
+        * |phpfile| `MembersController.php`
+        * |phpfile| `PaymentTypesController.php`
+        * |phpfile| `...`
+
+      * |phpfile| `...`
+
     * |folder| `...`
 
   * |folder| `...`

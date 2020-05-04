@@ -38,4 +38,5 @@ This documentation aims to help you understand the development rules of Galette,
    codage.rst
    plugins.rst
    i18n.rst
+   controllers.rst
    debug.rst
