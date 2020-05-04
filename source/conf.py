@@ -51,9 +51,9 @@ copyright = '2011-2020, Johan Cwiklinski'
 # built documents.
 #
 # The short X.Y version.
-version = '0.9.3'
+version = '0.9.4'
 # The full version, including alpha/beta/rc tags.
-release = '0.9.3'
+release = '0.9.4'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
