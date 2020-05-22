@@ -120,6 +120,6 @@ Indeed, mail addresses must be unique in the database. It is a choice for the pr
 
 Making them non uniques is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
 
-However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some informations such as email and postal addressess will be retrieved from the parent member if missing.
+However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some informations such as email and postal addresses will be retrieved from the parent member if missing.
 
-This allows finally to use a unique email address for several members in database; but they are no duplicates in database.
+This allows finally to use a unique email address for several members in database; but they are not duplicates in database.
