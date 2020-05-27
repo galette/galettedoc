@@ -1,5 +1,7 @@
 :orphan:
 
+.. _v078:
+
 **************
 0.7.7 -> 0.7.8
 **************
@@ -11,6 +13,8 @@
 * Pages publiques pour les plugins (`#635 <https://bugs.galette.eu/issues/635>`_)
 * Ajout de la date de sortie des plugins (`#544 <https://bugs.galette.eu/issues/544>`_)
 * La ventilation de transactions en dons ne fonctionnait pas (`#755 <https://bugs.galette.eu/issues/755>`_)
+
+.. _v077:
 
 ****************
 0.7.6.1 -> 0.7.7
@@ -27,6 +31,8 @@
 * Correction des champs dynamiques des transactions (`#745 <https://bugs.galette.eu/issues/745>`_)
 * Correction d'un problème de date de création lors de l'import CSV
 
+.. _v0761:
+
 ****************
 0.7.6 -> 0.7.6.1
 ****************
@@ -34,6 +40,8 @@
 * Date de création d'un adhérent incorrecte (`#741 <https://bugs.galette.eu/issues/741>`_)
 * L'export CSV de la liste des adhérents résultait en un fichier vide (`#732 <https://bugs.galette.eu/issues/732>`_)
 * Le modèle d'import ne pouvait être modifé (`#728 <https://bugs.galette.eu/issues/728>`_)
+
+.. _v076:
 
 ****************
 0.7.5.5 -> 0.7.6
@@ -52,11 +60,15 @@
 * Un échec  (voulu ou non) lors de la tentative de suppression d'un membre ne donnait pas lieu à un message dans l'interface (`#680 <https://bugs.galette.eu/issues/680>`_)
 * L'activation du bouton de création de la carte de membre se basait sur l'état des cotisations de l'adhérent connecté, et non celui consulté (`#725 <https://bugs.galette.eu/issues/725>`_)
 
+.. _v0755:
+
 ******************
 0.7.5.4 -> 0.7.5.5
 ******************
 
 * Le super administrateur ne pouvait plus modifier certains champs (`#721 <https://bugs.galette.eu/issues/721>`_)
+
+.. _v0754:
 
 ******************
 0.7.5.3 -> 0.7.5.4
@@ -70,6 +82,8 @@
 * Correction d'une inversion causant un bogue dans les champs dynamiques
 * La résolution de `l'anomalie #687  <https://bugs.galette.eu/issues/687>`_ bloquait la liste des membres sous PostgreSQL et a été supprimée
 
+.. _v0753:
+
 ******************
 0.7.5.2 -> 0.7.5.3
 ******************
@@ -79,6 +93,8 @@
 * Les responsables de groupes ne pouvaient éditer la fiche d'un membre (`#686 <https://bugs.galette.eu/issues/686>`_)
 * Les responsables de groupes ne pouvaient visualiser la photo d'un membre
 
+.. _v0752:
+
 ******************
 0.7.5.1 -> 0.7.5.2
 ******************
@@ -86,6 +102,8 @@
 * Correction d'un problème Javascript lors de l'ajout des champs dynamiques aux contributions ou aux transactions
 * Ajout du login au remplacement possibles dans les rappels
 * Correction de la license de deux fichiers utilisés par les traductions
+
+.. _v0751:
 
 ****************
 0.7.5 -> 0.7.5.1
@@ -99,6 +117,8 @@
 * Correction de notices PHP au lancement du script cron
 * Amélioration des données JSON du script post contribution (`#682 <https://bugs.galette.eu/issues/682>`_)
 * Correction du script d'installation SQLite
+
+.. _v075:
 
 ****************
 0.7.4.5 -> 0.7.5
@@ -133,12 +153,16 @@ Added
 * Possibilité de surcharger la feuille CSS d'impression (`#634 <https://bugs.galette.eu/issues/634>`_)
 * Suppression des nouvelles Twitter et Google+ sur le tableau de bord
 
+.. _v0745:
+
 ******************
 0.7.4.4 -> 0.7.4.5
 ******************
 
 * La suppression d'un adhérent se faisait sans confirmation (`#638 <https://bugs.galette.eu/issues/638>`_)
 * Mise à jour des biliothèques tierces dans leurs dernières versions
+
+.. _v0744:
 
 ******************
 0.7.4.3 -> 0.7.4.4
@@ -150,6 +174,8 @@ Added
 * Désactivation de la carte adhérents pour les membres qui ne sont pas à jour de cotisation (`#546 <https://bugs.galette.eu/issues/546>`_)
 * Utilisation de la chaîne non traduite lors de l'édition des types de contributions (`#630 <https://bugs.galette.eu/issues/630>`_)
 
+.. _v0743:
+
 ******************
 0.7.4.2 -> 0.7.4.3
 ******************
@@ -159,6 +185,8 @@ Added
 * Vérification de l'existance de la langue lors du chargement de textes (`#621 <https://bugs.galette.eu/issues/621>`_)
 * Le contributions qui se chevauchent ne doivent pas être enregistrées (`#622 <https://bugs.galette.eu/issues/622>`_)
 
+.. _v0742:
+
 ******************
 0.7.4.1 -> 0.7.4.2
 ******************
@@ -166,6 +194,8 @@ Added
 * Les titres, status, dates et genres apparaissent désormais en texte plutôt que par leurs identifiants  (`#611 <https://bugs.galette.eu/issues/611>`_)
 * La pagination de la liste publique des membres était cassée  (`#603 <https://bugs.galette.eu/issues/603>`_)
 * Correction d'un problème de recherche avancée sur les dates de fin de contribution (`#601 <https://bugs.galette.eu/issues/601>`_)
+
+.. _v0741:
 
 ****************
 0.7.4 -> 0.7.4.1
@@ -196,6 +226,8 @@ Added
 * Certains champs étaient requis, mais désactivés (`#571 <https://bugs.galette.eu/issues/571>`_)
 * Problèmes SQL lors de l'installation sous MySQL (`#575 <https://bugs.galette.eu/issues/575>`_)
 * Les versions longues des titres étaient incorrectes sous MySQL (`#569 <https://bugs.galette.eu/issues/569>`_)
+
+.. _v074:
 
 ****************
 0.7.3.2 -> 0.7.4
@@ -237,6 +269,8 @@ Added
 * Liste PDF des adhérents par groupes (`#484 <https://bugs.galette.eu/issues/484>`_)
 * Affichage des informations sur le status des cotisations de l'adhérent (`#545 <https://bugs.galette.eu/issues/545>`_)
 
+.. _v0732:
+
 ******************
 0.7.3.1 -> 0.7.3.2
 ******************
@@ -245,6 +279,8 @@ Added
 * Le mot de passe était réinitialisé lors de la modification d'une fiche (`#488 <https://bugs.galette.eu/issues/488>`_)
 * Ajout du type de paiement à l'initialisation d'une contribution (`#486 <https://bugs.galette.eu/issues/486>`_)
 
+.. _v0731:
+
 ****************
 0.7.3 -> 0.7.3.1
 ****************
@@ -252,6 +288,8 @@ Added
 * L'installation se bloque (`#473 <https://bugs.galette.eu/issues/473>`_)
 * L'image « captcha » ne s'affiche pas (`#474 <https://bugs.galette.eu/issues/474>`_)
 * Amélioration de la validation de la configuration des champs (`#475 <https://bugs.galette.eu/issues/475>`_)
+
+.. _v073:
 
 ****************
 0.7.2.9 -> 0.7.3
@@ -287,6 +325,7 @@ Under the hood...
 * Remplacement du logger (`#415 <https://bugs.galette.eu/issues/415>`_)
 
 
+.. _v0729:
 
 ******************
 0.7.2.8 -> 0.7.2.9
@@ -300,11 +339,15 @@ Under the hood...
 * Les rappels ne doivent pas inclure les comptes inactifs (`#462 <https://bugs.galette.eu/issues/462>`_)
 * Les liens des nouveaux exports étaient incorrects
 
+.. _v0728:
+
 ******************
 0.7.2.7 -> 0.7.2.8
 ******************
 
 * Diverses améliorations des performances lors de la récupération de listes de membres (`#458 <https://bugs.galette.eu/issues/458>`_)
+
+.. _v0727:
 
 ******************
 0.7.2.6 -> 0.7.2.7
@@ -313,6 +356,8 @@ Under the hood...
 * L'interface de gestion des groupes n'était pas accessible aux responsables (`#404 <https://bugs.galette.eu/issues/404>`_)
 * Différents problèmes se manifestaient avec la langue de l'adhérent (`#451 <https://bugs.galette.eu/issues/451>`_)
 * Correction d'un problème de log mineur
+
+.. _v0726:
 
 ******************
 0.7.2.5 -> 0.7.2.6
@@ -323,11 +368,15 @@ Under the hood...
 * Le code postal n'aparaissait pas sur les cartes de membres (`#441 <https://bugs.galette.eu/issues/441>`_)
 * Correction de diverses notices
 
+.. _v0725:
+
 ******************
 0.7.2.4 -> 0.7.2.5
 ******************
 
 * Compatibilité PostgreSQL 8.4 (`#439 <https://bugs.galette.eu/issues/439>`_)
+
+.. _v0724:
 
 ******************
 0.7.2.3 -> 0.7.2.4
@@ -335,12 +384,16 @@ Under the hood...
 
 * Erreur à l'intialisation des bases des plugins (`#432 <https://bugs.galette.eu/issues/432>`_)
 
+.. _v0723:
+
 ******************
-0.7.2.1 -> 0.7.2.2
+0.7.2.1 -> 0.7.2.3
 ******************
 
 * L'affichage de groupes vides causait des erreurs SQL (`#437 <https://bugs.galette.eu/issues/437>`_)
 * Impossible de lister les groupes sous Postgres 8.4 (`#430 <https://bugs.galette.eu/issues/430>`_)
+
+.. _v0722:
 
 ******************
 0.7.2.1 -> 0.7.2.2
@@ -348,12 +401,16 @@ Under the hood...
 
 * Le filtrage des groupes est désormais effectifs sur les enfants directs du groupe (`#301 <https://bugs.galette.eu/issues/301>`_)
 
+.. _v0721:
+
 ****************
 0.7.2 -> 0.7.2.1
 ****************
 
 * Les champs dynamiques de type zone de texte étaient répétés indéfiniment (`#422 <https://bugs.galette.eu/issues/422>`_)
 * Les champs dynamiques de type choix étaient répétés sous MySQL (`#419 <https://bugs.galette.eu/issues/419>`_, `#422 <https://bugs.galette.eu/issues/422>`_)
+
+.. _v072:
 
 **************
 0.7.1 -> 0.7.2
@@ -387,6 +444,8 @@ Under the hood...
 =================
 
 * Passage en objet de la gestion des champs dynamiques (`#194 <https://bugs.galette.eu/issues/194>`_)
+
+.. _v071:
 
 ************
 0.7 -> 0.7.1
@@ -440,6 +499,8 @@ Quelques modifications, d'ordre un peu plus technique ont également été appor
 * Remplacement de PEAR::Log par KLoger (modifié pour l'occasion) et suppression des bibliothèques PEAR qui ne sont plus utiles,
 * Passage à Smarty 3 (`#238 <https://bugs.galette.eu/issues/238>`_),
 * Compatibilité des différents fichiers ``.htaccess`` pour Apache 2.4.
+
+.. _v070:
 
 ***********
 0.64 -> 0.7

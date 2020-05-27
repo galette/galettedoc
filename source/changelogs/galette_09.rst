@@ -1,5 +1,7 @@
 :orphan:
 
+.. _v0931:
+
 ****************
 0.9.3 -> 0.9.3.1
 ****************
@@ -12,6 +14,8 @@
 * Check for session extension presence (`#1380 <https://bugs.galette.eu/issues/1380>`_)
 * Redo multiple status selection in advanced search (`#1390 <https://bugs.galette.eu/issues/1390>`_)
 * Fix user search by nickname in dropdowns (`#1383 <https://bugs.galette.eu/issues/1383>`_)
+
+.. _v093:
 
 ****************
 0.9.2.1 -> 0.9.3
@@ -54,6 +58,8 @@ Fixed
 * Fix issues with HTTP 2.0 servers (`#1342 <https://bugs.galette.eu/issues/1342>`_, `#1343 <https://bugs.galette.eu/issues/1343>`_, `#1348 <https://bugs.galette.eu/issues/1348>`_, `#1347 <https://bugs.galette.eu/issues/1347>`_)
 * Use PDF models header and footer on emargement lists (`#1346 <https://bugs.galette.eu/issues/1346>`_)
 
+.. _v0921:
+
 ****************
 0.9.2 -> 0.9.2.1
 ****************
@@ -68,6 +74,8 @@ Fixed
 * Rework PHP version and extensions checks (`#1225 <https://bugs.galette.eu/issues/1225>`_)
 * Fix members search when adding a new contribution (`#1224 <https://bugs.galette.eu/issues/1224>`_)
 * Remove routes translations (`#1223 <https://bugs.galette.eu/issues/1223>`_)
+
+.. _v092:
 
 ****************
 0.9.1.2 -> 0.9.2
@@ -128,12 +136,16 @@ Under the hood...
 * Use of `Zend Translator <https://docs.zendframework.com/zend-i18n/>`_
 * Update third party libraries
 
+.. _v0912:
+
 ******************
 0.9.1.1 -> 0.9.1.2
 ******************
 
 * Fix member storage on unchecking checkboxes (`#1181 <https://bugs.galette.eu/issues/1181>`_)
 * Fix member storage when title field is not displayed (`#1181 <https://bugs.galette.eu/issues/1181>`_)
+
+.. _v0911:
 
 ****************
 0.9.1 -> 0.9.1.1
@@ -142,6 +154,8 @@ Under the hood...
 * Fix unopportune group removal on member update (`#1178 <https://bugs.galette.eu/issues/1178>`_)
 * Fix URL for reverse proxies (`#1176 <https://bugs.galette.eu/issues/1176>`_)
 * Fix redirection when member is not logged in (`#1175 <https://bugs.galette.eu/issues/1175>`_)
+
+.. _v091:
 
 ************
 0.9 -> 0.9.1
@@ -184,6 +198,7 @@ Fixed
 * Fix security Checks generating PDF members cards (`#1164 <https://bugs.galette.eu/issues/1164>`_)
 * Add expiration on RSS feed calls to prevent freezes (`#989 <https://bugs.galette.eu/issues/989>`_)
 
+.. _v090:
 
 **************
 0.8.3.4 -> 0.9
