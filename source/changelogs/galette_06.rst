@@ -1,5 +1,7 @@
 :orphan:
 
+.. _v064:
+
 **************
 0.63.3 -> 0.64
 **************
@@ -19,6 +21,8 @@
 * Déplacement du fichier de configuration du dossier includes vers le dossier config. Les droits en écriture sur le dossier includes ne sont désormais plus requis à l'installation
 * Seul le super-administrateur peut désormais changer ses propres identifiant et mot de passe. Les administrateurs standards ne peuvent désormais plus faire cela
 
+.. _v0633:
+
 ****************
 0.63.2 -> 0.63.3
 ****************
@@ -31,6 +35,8 @@
 * Des informations inutiles étaient stockées dans les logs (et n'étaient pas au bon endroit) lors de l'envoi de courriels (bogue #14569)
 * Des erreurs d'analyse XML étaient rencontrées sur les pages de l'historique quand la carte de membre contenait des caractères réservés (bogue #14561)
 * Les balises html lors de la prévisualisation de mailings ne s'affichaient pas sous Firefox (bogue #14465)
+
+.. _v0632:
 
 ****************
 0.63.1 -> 0.63.2
@@ -46,6 +52,8 @@
 * Certains caractères - comme les guillemets simples - étaient mal encodés dans les sujets des mailings (bogue #14449)
 * L'envoi de mails était toujours actif, même s'il était désactivé dans les préférences (bogue #14450)
 
+.. _v0631:
+
 **************
 0.63 -> 0.63.1
 **************
@@ -56,6 +64,8 @@
 * Correction de notices PHP dans l'historique (patch #1133)
 * Suppression des fonctions posix qui sont supprimées dans PHP 5.3
 * Ajout d'un fichier .htaccess pour empêcher l'affichage direct des photos envoyées
+
+.. _v063:
 
 ************
 0.62 -> 0.63
@@ -72,22 +82,28 @@
 * Capacity to use a custom logo
 * Fix of numerous bugs
 
-***************
-0.62a -> 0.62.2
-***************
+.. _v0622:
+
+****************
+0.62.1 -> 0.62.2
+****************
 
 * change adodb framework due to security alert :
   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0410
 * use x.y.z naming convention (0.62a == 0.62.1)
 
-*************
-0.62 -> 0.62a
-*************
+.. _v0621:
+
+**************
+0.62 -> 0.62.1
+**************
 
 * correct bug #590 : date before 1970 [Frédéric Jacquot]
 * Typos fixed [Roland Telle]
 * replace logo by new one [Frédéric Jacquot]
 * add an empty config.inc.php [Loïs Taulelle]
+
+.. _v062:
 
 ************
 0.61 -> 0.62
@@ -108,6 +124,8 @@
 * Added the possibility to be visible or not in the members list (if you wan't to list members outside from Galette). Courtesy of Stephane Sales
 * Removed many PHP warnings (Galette should be running fine when error_reporting = E_ALL)
 * The log can now be sorted
+
+.. _v061:
 
 ************
 0.60 -> 0.61
