@@ -1,5 +1,7 @@
 :orphan:
 
+.. _v0834:
+
 ******************
 0.8.3.3 -> 0.8.3.4
 ******************
@@ -8,6 +10,8 @@
 * Envoi d'images avec un nom composé d'un seul caractère (`#1028 <https://bugs.galette.eu/issues/1028>`_)
 * Correction de la sauvegarde des emailings (`#998 <https://bugs.galette.eu/issues/998>`_)
 
+.. _v0833:
+
 ******************
 0.8.3.2 -> 0.8.3.3
 ******************
@@ -15,11 +19,15 @@
 * Correction du bug d'enregistrement (`#996 <https://bugs.galette.eu/issues/996>`_)
 * L'exension mcrypt n'est plus requise
 
+.. _v0832:
+
 ******************
 0.8.3.1 -> 0.8.3.2
 ******************
 
 * Correction d'un régréssion introduite dans la version précédente
+
+.. _v0831:
 
 ****************
 0.8.3 -> 0.8.3.1
@@ -27,6 +35,8 @@
 
 * Corrections de bogues relatifs au mode strict de MySQL 5.7
 * Correction de l'adresse dans les PDF des fiches des membres
+
+.. _v083:
 
 ****************
 0.8.2.3 -> 0.8.3
@@ -61,6 +71,8 @@ Added
 * Utilisation de l'adresse email de la fiche parent (suite et fin)
 * Modification des nom, prénom, genre et titre par l'adhérent lui même
 
+.. _v0823:
+
 ******************
 0.8.2.2 -> 0.8.2.3
 ******************
@@ -70,6 +82,8 @@ Added
 * Le module `mbstring` est requis (`#943 <https://bugs.galette.eu/issues/943>`_)
 * Empêcher les utilisateurs inactifs de se connecter (`#941 <https://bugs.galette.eu/issues/941>`_)
 
+.. _v0822:
+
 ******************
 0.8.2.1 -> 0.8.2.2
 ******************
@@ -78,11 +92,15 @@ Added
 * La case à cocher « personne morale » était toujours décochée, provoquant l'effacement de la raison sociale (`#929 <https://bugs.galette.eu/issues/929>`_)
 * Problème avec les listes déroulantes sous Firefox (`#933 <https://bugs.galette.eu/issues/933>`_)
 
+.. _v0821:
+
 ****************
 0.8.2 -> 0.8.2.1
 ****************
 
 * Problème avec le champs "Autres infos (admin)"
+
+.. _v082:
 
 **************
 0.8.1 -> 0.8.2
@@ -130,6 +148,8 @@ Under the hood...
 * Mise à jour des bilitohèques tierces
 * Ajout d'un paramètre pour régler les problèmes d'encodage sur certaines instances utilisant MySQL
 
+.. _v081:
+
 ************
 0.8 -> 0.8.1
 ************
@@ -153,6 +173,8 @@ Under the hood...
 * Correction de HTML invalide,
 * Correction de problèmes sur la page d'auto adhésion,
 * Ajout d'un flux RSS configurable.
+
+.. _v080:
 
 ************
 0.7.8 -> 0.8
