@@ -30,6 +30,9 @@ All GIT repositories follow the :ref:`adopted development model <devmodel>`, the
 | Documentation         | | `git.tuxfamily.org/gitroot/galette/galettedoc.git`           | https://github.com/galette/documentation      |
 |                       | | https://git.tuxfamily.org/galette/galettedoc                 |                                               |
 +-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Website               | | `git.tuxfamily.org/gitroot/galette/website.git`              | https://github.com/galette/website            |
+|                       | | https://git.tuxfamily.org/galette/website                    |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
 | Auto plugin           | | `git.tuxfamily.org/gitroot/galette/plugin-auto.git`          | https://github.com/galette/plugin-auto        |
 |                       | | https://git.tuxfamily.org/galette/plugin-auto                |                                               |
 +-----------------------+----------------------------------------------------------------+-----------------------------------------------+
