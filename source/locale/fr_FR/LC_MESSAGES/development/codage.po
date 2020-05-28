@@ -1,10 +1,11 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+# Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2020-04-27 16:21+0200\n"
+"PO-Revision-Date: 2020-05-28 12:44+0200\n"
 "Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -145,7 +146,8 @@ msgstr ""
 "Galette"
 
 #: ../development/codage.rst:43 ../development/codage.rst:57
-#: ../development/codage.rst:69
+#: ../development/codage.rst:68 ../development/codage.rst:70
+#: ../development/codage.rst:82
 msgid "|phpfile| `...`"
 msgstr "|phpfile| `...`"
 
@@ -185,31 +187,63 @@ msgstr "|phpfile| `Authentication.php`"
 msgid "|phpfile| `CheckModules.php`"
 msgstr "|phpfile| `CheckModules.php`"
 
-#: ../development/codage.rst:59 ../development/codage.rst:61
+#: ../development/codage.rst:59
+msgid ""
+"|folder| `Controllers`: :ref:`Controllers <controllers>` classes (since "
+"0.9.4)"
+msgstr ""
+"|folder| `Controllers`: :ref:`Controllers <controllers>` classes (depuis "
+"0.9.4)"
+
+#: ../development/codage.rst:61
+msgid "|phpfile| `PdfController.php`"
+msgstr "|phpfile| `PdfController.php`"
+
+#: ../development/codage.rst:62
+msgid "|phpfile| `CsvController.php`"
+msgstr "|phpfile| `CsvController.php`"
+
+#: ../development/codage.rst:63
+msgid "|phpfile| `ImagesController.php`"
+msgstr "|phpfile| `ImagesController.php`"
+
+#: ../development/codage.rst:64
+msgid "|folder| `Crud`: CRUD (Create, Read, Update, Delete) controllers"
+msgstr "|folder| `Crud`: CRUD (Create, Read, Update, Delete) controllers"
+
+#: ../development/codage.rst:66
+msgid "|phpfile| `MembersController.php`"
+msgstr "|phpfile| `MembersController.php`"
+
 #: ../development/codage.rst:67
+msgid "|phpfile| `PaymentTypesController.php`"
+msgstr "|phpfile| `PaymentTypesController.php`"
+
+#: ../development/codage.rst:72 ../development/codage.rst:74
+#: ../development/codage.rst:80
 msgid "|folder| `...`"
 msgstr "|folder| `...`"
 
-#: ../development/codage.rst:63
+#: ../development/codage.rst:76
 msgid ""
 "|folder| `plugins`: :doc:`directory to install plugins <../plugins/index>`"
 msgstr ""
 "|folder| `plugins` : :doc:`dossier d'installation des plugins <../plugins/"
 "index>`"
 
-#: ../development/codage.rst:64
+#: ../development/codage.rst:77
 msgid "|folder| `templates`: Smarty templates source code"
 msgstr "|folder| `templates` : code source des gabarits Smarty"
 
-#: ../development/codage.rst:66
+#: ../development/codage.rst:79
 msgid "|folder| `default`: default Galette theme"
 msgstr "|folder| `default` : thème par défaut de Galette"
 
-#: ../development/codage.rst:74
+#: ../development/codage.rst:87
 msgid "Writting Conventions"
 msgstr "Conventions d'écriture"
 
-#: ../development/codage.rst:76
+#: ../development/codage.rst:89
 msgid ""
 "Galette source code must follow `PSR2 writting conventions <https://www.php-"
 "fig.org/psr/psr-2/>`_. To respect a writting convention make the source "
@@ -220,7 +254,7 @@ msgstr ""
 "rend le code source plus aisé à lire, la syntaxe étant identique d'un "
 "fichier à l'autre."
 
-#: ../development/codage.rst:78
+#: ../development/codage.rst:91
 msgid ""
 "You can use `PHP Code Sniffer <https://pear.php.net/package/"
 "PHP_CodeSniffer>`_ to your changed code in order to be sure coding rules "
@@ -232,7 +266,7 @@ msgstr ""
 "conventions sont respectées. Certains avertissements peuvent être ignorés, "
 "mais les erreurs doivent toutes être corrigées. Un exemple de ``phpcs`` :"
 
-#: ../development/codage.rst:101
+#: ../development/codage.rst:114
 msgid ""
 "Galette is licensed under GPL version 3. Each PHP source file must contain "
 "the following mention (this example is from Galette `Authentication` class):"
@@ -241,7 +275,7 @@ msgstr ""
 "les mentions suivantes (cet exemple provint de la classe `Authentication` "
 "de Galette) :"
 
-#: ../development/codage.rst:165
+#: ../development/codage.rst:178
 msgid ""
 "If your php file is not a class, use the same model, but just remove the "
 "class declaration and docblock."
@@ -249,7 +283,7 @@ msgstr ""
 "Si le fichier PHP n'est pas une classe, utilisez le même modèle, mais "
 "supprimez la partie concernant la classe."
 
-#: ../development/codage.rst:167
+#: ../development/codage.rst:180
 msgid ""
 "To help other developers to understand the code, we will try to document "
 "the code as well as possible."
@@ -257,11 +291,11 @@ msgstr ""
 "Pour aider les autres développeurs à comprendre le code, nous essayons de "
 "le documenter autant que possible."
 
-#: ../development/codage.rst:171
+#: ../development/codage.rst:184
 msgid "Create a release"
 msgstr "Créer une release"
 
-#: ../development/codage.rst:173
+#: ../development/codage.rst:186
 msgid ""
 "Releases are created against tags in the GIT repository. As an example to "
 "get an archive for Galette 0.9:"
@@ -269,7 +303,7 @@ msgstr ""
 "Les releases sont crées à partir de tags du dépôt GIT. Par exemple, pour "
 "obtenir une archive de Galette 0.9 : "
 
-#: ../development/codage.rst:179
+#: ../development/codage.rst:192
 msgid ""
 "Note this archive will not embed :ref:`external libraries <deps>` (Smarty, "
 "Zend, tcpdf, ...); you will have to add them to the ``galette-0.9.tar.bz2`` "
@@ -279,11 +313,11 @@ msgstr ""
 "<deps>` (Smarty, Zend, tcpdf, ...); vous devrez les ajouter au fichier "
 "``galette-0.9.tar.bz2``."
 
-#: ../development/codage.rst:181
+#: ../development/codage.rst:194
 msgid "Here is the script used for Galette nightly build:"
 msgstr "Voici le script utilisé pour l'archive quotidienne de Galette :"
 
-#: ../development/codage.rst:217
+#: ../development/codage.rst:230
 msgid "Finaly, archive may be signed (to check download integrity):"
 msgstr ""
 "Finalement, l'archive peut être signée (pour vérifier l'intégrité du "
