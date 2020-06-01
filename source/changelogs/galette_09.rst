@@ -1,5 +1,55 @@
 :orphan:
 
+.. _v094:
+
+****************
+0.9.3.1 -> 0.9.4
+****************
+
+.. note::
+
+   A very big thanks to `APiCy <https://www.apicy.fr/>`_ for their donation to support this release by including direct links to members cards, invoices and receipts!
+
+.. _ajouts_094:
+
+Added
+=====
+
+* Configurable password security enforcement (on strength, blacklist, ...) (`#1039 <https://bugs.galette.eu/issues/1039>`_)
+* Import dynamic fields from CSV (`#940 <https://bugs.galette.eu/issues/940>`_)
+* Handle already encrypted passwords on imports (`#1215 <https://bugs.galette.eu/issues/1215>`_)
+* Manage members list displayed fields (`#979 <https://bugs.galette.eu/issues/979>`_)
+* Emit events when members, contributions or transactions are added, edited or removed (`#1400 <https://bugs.galette.eu/issues/1400>`_ - thanks to Nicolas B.)
+* Add direct download links to member card, invoice/receipt in sent emails (`#1004 <https://bugs.galette.eu/issues/1004>`_)
+* Advanced search on groups with AND/OR (experimental) (`#907 <https://bugs.galette.eu/issues/907>`_ - thanks to Alain C.)
+* Handle RTL on PDF (`#1430 <https://bugs.galette.eu/issues/1430>`_)
+* Administrative emails can now be translated in all available languages (and are present on translation platform) (`#1330 <https://bugs.galette.eu/issues/1330>`_)
+* Offer last months when using beginning of membership date (`#1407 <https://bugs.galette.eu/issues/1407>`_ -thanks to Manuel H.)
+* Members can print their own invoices/receipts (`#1409 <https://bugs.galette.eu/issues/1409>`_ - thanks to Nicolas B.)
+* Send member and contribution IDs to post script (`#1406 <https://bugs.galette.eu/issues/1406>`_)
+
+.. _bogues_094:
+
+Fixed
+=====
+
+* Fix member card with PHP 7.4 (`#1423 <https://bugs.galette.eu/issues/1423>`_)
+* Fix contribution PDF on some cases (`#1411 <https://bugs.galette.eu/issues/1411>`_ - thanks to Manuel H.)
+* Fix date calculation issue with new contributions types (`#1410 <https://bugs.galette.eu/issues/1410>`_ - thanks to Manuel H.)
+* Fix wrong value in history creating new member (`#1405 <https://bugs.galette.eu/issues/1405>`_)
+* Several fixes on CSV imports (`#1403 <https://bugs.galette.eu/issues/1403>`_)
+* Fix some issues using MySQL (`#1219 <https://bugs.galette.eu/issues/1219>`_)
+
+.. _souscapot_094:
+
+Under the hood...
+=================
+
+* Improve routes ACLs to support regular expressions (`#1426 <https://bugs.galette.eu/issues/1426>`_)
+* Rely on `GulpJS <https://gulpjs.com/>`_ and `NPMJS <https://www.npmjs.com/>`_ to handle Javascript dependencies (`#1341 <https://bugs.galette.eu/issues/1341>`_)
+* Switch to Laminas (`#1385 <https://bugs.galette.eu/issues/1385>`_)
+* Rework routes using controllers (`#1354 <https://bugs.galette.eu/issues/1354>`_)
+
 .. _v0931:
 
 ****************
@@ -8,7 +58,7 @@
 
 * Use new icons in titles management (`#1375 <https://bugs.galette.eu/issues/1375>`_)
 * Ensure PHP 7.4 is supported
-* Handle proprely and test sequences in PostgreSQL for titles, payment types, PDF models, texts and fields categories (`#1374 <https://bugs.galette.eu/issues/1374>`_, `#1378 <https://bugs.galette.eu/issues/1378>`_)
+* Handle properly and test sequences in PostgreSQL for titles, payment types, PDF models, texts and fields categories (`#1374 <https://bugs.galette.eu/issues/1374>`_, `#1378 <https://bugs.galette.eu/issues/1378>`_)
 * Fix Telemetry from PostgreSQL instances (`#1376 <https://bugs.galette.eu/issues/1376>`_)
 * Fix dynamic translations removal
 * Check for session extension presence (`#1380 <https://bugs.galette.eu/issues/1380>`_)
@@ -173,7 +223,7 @@ Added
 * Mass change on members (`#696 <https://bugs.galette.eu/issues/696>`_)
 * Choose default state for new members in preferences (`#963 <https://bugs.galette.eu/issues/963>`_)
 * Customizabe text in pages footer (`#1107 <https://bugs.galette.eu/issues/1107>`_)
-* Add German translation (`#1165 <https://bugs.galette.eu/issues/1165>`_, merci à Arnold W.)
+* Add German translation (`#1165 <https://bugs.galette.eu/issues/1165>`_, thanks to Arnold W.)
 * Choose sender informations when sending a mail (`#1142 <https://bugs.galette.eu/issues/1142>`_)
 
 .. _bogues_091:
