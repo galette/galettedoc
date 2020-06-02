@@ -39,6 +39,7 @@ Fixed
 * Fix wrong value in history creating new member (`#1405 <https://bugs.galette.eu/issues/1405>`_)
 * Several fixes on CSV imports (`#1403 <https://bugs.galette.eu/issues/1403>`_)
 * Fix some issues using MySQL (`#1219 <https://bugs.galette.eu/issues/1219>`_)
+* Fix some issues on member duplication (`#1432 <https://bugs.galette.eu/issues/1432>`_)
 
 .. _souscapot_094:
 
