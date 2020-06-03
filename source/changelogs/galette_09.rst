@@ -27,6 +27,7 @@ Added
 * Offer last months when using beginning of membership date (`#1407 <https://bugs.galette.eu/issues/1407>`_ -thanks to Manuel H.)
 * Members can print their own invoices/receipts (`#1409 <https://bugs.galette.eu/issues/1409>`_ - thanks to Nicolas B.)
 * Send member and contribution IDs to post script (`#1406 <https://bugs.galette.eu/issues/1406>`_)
+* Possibility to use member's deadline instead of year in PDF cards (`#1425 <https://bugs.galette.eu/issues/1425>`_)
 
 .. _bogues_094:
 
