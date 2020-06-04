@@ -15,11 +15,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: ../development/plugins-0.8-0.9.rst:7
+#: ../development/plugins-0.8-0.9.rst:7 4cc37bda58624757bf4ccb3f839dae97
 msgid "Plugins migration 0.8 => 0.9"
 msgstr "Migration des plugins 0.8 => 0.9"
 
-#: ../development/plugins-0.8-0.9.rst:9
+#: ../development/plugins-0.8-0.9.rst:9 219a3a32810a4111a5177385c8617acf
 msgid ""
 "Plugin system in Galette 0.9 is incompatible with previous versions. This "
 "does not means that you must rewrite your plugin completely, but you will "
@@ -29,11 +29,11 @@ msgstr ""
 "précédentes. Cela ne signifie pas que vous deviez récrire l’ensemble de "
 "votre plugin, mais vous devez procéder à des adaptations."
 
-#: ../development/plugins-0.8-0.9.rst:13
+#: ../development/plugins-0.8-0.9.rst:13 7f5257286ba9478db4c631f716469fbd
 msgid "Generalities"
 msgstr "Généralités"
 
-#: ../development/plugins-0.8-0.9.rst:15
+#: ../development/plugins-0.8-0.9.rst:15 32fdb3f560b14159902e69a5aeaeedfd
 msgid ""
 "Of course, you have to refer to the :ref:`plugins development guide "
 "<devplugins>` for all details."
@@ -41,7 +41,7 @@ msgstr ""
 "Bien sûr, vous devez vous référer au :ref:`guide de développement des "
 "plugins <devplugins>` pour tous les détails."
 
-#: ../development/plugins-0.8-0.9.rst:17
+#: ../development/plugins-0.8-0.9.rst:17 232ced6d8a634caa9a3c287aeb90fd1b
 msgid ""
 "Several Galette core objects has been modified to remove some globals. This "
 "is now mandatory to send them those informations, like:"
@@ -50,7 +50,7 @@ msgstr ""
 "globales. Il est désormais nécessaire de leur envoyer ces informations, "
 "comme :"
 
-#: ../development/plugins-0.8-0.9.rst:27
+#: ../development/plugins-0.8-0.9.rst:27 78684d43f8774ba8a3daadde68920965
 msgid ""
 "We've based our examples on the :doc:`ObjectsLend plugin "
 "<../plugins/objectslend>`, you can refer to the `related commit (`326b52f4`)"
@@ -62,15 +62,15 @@ msgstr ""
 "<https://git.tuxfamily.org/galette/plugin-"
 "objectslend.git/commit/?h=develop&id=326b52f486c6dccd5896d9db13e3a074d3896b19>`_."
 
-#: ../development/plugins-0.8-0.9.rst:30
+#: ../development/plugins-0.8-0.9.rst:30 b1bdf296325748ed80524b9d58188a8f
 msgid "_define.php"
 msgstr "_define.php"
 
-#: ../development/plugins-0.8-0.9.rst:32
+#: ../development/plugins-0.8-0.9.rst:32 88e7b8febf3c4b34bd9574686101a14c
 msgid "Two new parameters has been added:"
 msgstr "Deux nouveaux paramètres ont été ajoutés :"
 
-#: ../development/plugins-0.8-0.9.rst:34
+#: ../development/plugins-0.8-0.9.rst:34 3728a31ac47548e8a3c35ddf32a1e9f7
 msgid ""
 "a name, used for the routing and translation domains, a single string to add"
 " beetween Galette compatibility version and plugin date,"
@@ -79,7 +79,7 @@ msgstr ""
 "chaîne à ajouter entre la version de compatibilité de galette et le date du "
 "plugin,"
 
-#: ../development/plugins-0.8-0.9.rst:35
+#: ../development/plugins-0.8-0.9.rst:35 b31638d7fdb341fca127d98a70202049
 msgid ""
 "limited access URLs list (when ``$authenticate`` middleware is used) "
 "configuration, in an array at the end of the existing configuration."
@@ -88,24 +88,24 @@ msgstr ""
 "middleware ``$authenticate`` est utilisé), dans un tableau à la fin de la "
 "configuration existante."
 
-#: ../development/plugins-0.8-0.9.rst:37
+#: ../development/plugins-0.8-0.9.rst:37 fb4ec72db336493e91c68a00ac3fa409
 msgid "A ``define.php`` file for Galette 0.8:"
 msgstr "Un fichier ``define.php`` pour Galette 0.8 :"
 
-#: ../development/plugins-0.8-0.9.rst:52
+#: ../development/plugins-0.8-0.9.rst:52 4384892f86954dee86e354071c9a68bf
 msgid "After being updated to Galette 0.9, the file will look like:"
 msgstr ""
 "Après avoir été mis à jour pour Galette 0.9, le fichier ressemblera à :"
 
-#: ../development/plugins-0.8-0.9.rst:71
+#: ../development/plugins-0.8-0.9.rst:71 5243b8dc07504768a4c38832ff6a55aa
 msgid "Routes ACLs are handled while plugin development."
 msgstr "Les ACL des routes sont gérés durant le développement du plugin."
 
-#: ../development/plugins-0.8-0.9.rst:74
+#: ../development/plugins-0.8-0.9.rst:74 3c7797c8a9ea4a08ac8e2319cdf22500
 msgid "_config.php"
 msgstr "_config.php"
 
-#: ../development/plugins-0.8-0.9.rst:76
+#: ../development/plugins-0.8-0.9.rst:76 f5b7bcc7cf9049e98912438ecc576955
 msgid ""
 "It was advised to create a variable to prefix display template, this is no "
 "longer needed."
@@ -113,11 +113,11 @@ msgstr ""
 "Il était conseillé de créer un variable pour préfixer les gabarits "
 "d'affichage, ce n'est plus utile."
 
-#: ../development/plugins-0.8-0.9.rst:79
+#: ../development/plugins-0.8-0.9.rst:79 983ca06a7906448888c1cac64d305cc1
 msgid "_routes.php"
 msgstr "_routes.php"
 
-#: ../development/plugins-0.8-0.9.rst:81
+#: ../development/plugins-0.8-0.9.rst:81 d4436f7af05c4b559b7bb37a81aaf5bf
 msgid ""
 "This file is now the core of your plugin. All old PHP files that was "
 "directly called in URL in older versions will now be dispatched in several "
@@ -127,7 +127,7 @@ msgstr ""
 " qui étaient directement appelés seront maintenant dispatchés en plusieurs "
 "routes (une par fichier PHP, ou pas)."
 
-#: ../development/plugins-0.8-0.9.rst:83
+#: ../development/plugins-0.8-0.9.rst:83 fb4bc0129e554e48906da9727b57b818
 msgid ""
 "As an example, take the ``preferences.php`` page of our plugin. The source "
 "code for the 0.8 version was:"
@@ -135,7 +135,7 @@ msgstr ""
 "Par exemple, prenons la page ``preferences.php`` de notre plugin. Le code "
 "source pour la 0.8 était :"
 
-#: ../development/plugins-0.8-0.9.rst:130
+#: ../development/plugins-0.8-0.9.rst:130 b359990caf024ec9b2d07849f7fc9155
 msgid ""
 "This page was providing both display and storage of the preferences of the "
 "plugin. We will replace this behavior with two distinct routes: one with "
@@ -149,7 +149,7 @@ msgstr ""
 "l'affichage et ue autre avec la méthode HTTP `POST` pour gérer le stockage "
 "lui même. Dans notre ``_routes.php`` nous aurons :"
 
-#: ../development/plugins-0.8-0.9.rst:201
+#: ../development/plugins-0.8-0.9.rst:201 d81dd38f90b64f2e99dddb0b1b2c1ac7
 msgid ""
 "You can observe that the two routes URLs are the same, but with HTTP methods"
 " (an of course routes names!) that differs. For the needs of our plugin, "
@@ -164,7 +164,7 @@ msgstr ""
 "nous devons maintenant ajouter les ACL pour ces nouvelles routes dans "
 "``_define.php`` :"
 
-#: ../development/plugins-0.8-0.9.rst:212
+#: ../development/plugins-0.8-0.9.rst:212 b3430f06ef1f4b298b3f20ccd6722078
 msgid ""
 "All treatments from ``preferences.php`` file has been moved, we can now "
 "remove the file."
@@ -172,11 +172,11 @@ msgstr ""
 "Tous les traitements de ``preferences.php`` ont été déplacés, nous pouvons "
 "supprimer le fichier."
 
-#: ../development/plugins-0.8-0.9.rst:215
+#: ../development/plugins-0.8-0.9.rst:215 b09e66991a5948e1803b2aae45426256
 msgid "templates/default/menu.tpl"
 msgstr "templates/default/menu.tpl"
 
-#: ../development/plugins-0.8-0.9.rst:217
+#: ../development/plugins-0.8-0.9.rst:217 415bdd97512147faac280684a5b6d712
 msgid ""
 "Since our plugin preferences page URL has changed, we need to adapt "
 "``menu.tpl``:"
@@ -184,15 +184,15 @@ msgstr ""
 "Puisque l'URL de la page préférences de notre plugin a changé, nous devons "
 "adapter ``menu.tpl`` :"
 
-#: ../development/plugins-0.8-0.9.rst:231
+#: ../development/plugins-0.8-0.9.rst:231 b52e466ebd7d4b568acf1422a52757ac
 msgid "There are three changes here:"
 msgstr "Il y a trois modifications ici :"
 
-#: ../development/plugins-0.8-0.9.rst:233
+#: ../development/plugins-0.8-0.9.rst:233 5098a3f0b9704da280522b6d18eba515
 msgid "PHP file call has been replaced with a call to the route,"
 msgstr "L'appel au fichier PHP a été remplacé par un appel à la route,"
 
-#: ../development/plugins-0.8-0.9.rst:234
+#: ../development/plugins-0.8-0.9.rst:234 523a513255804bd590f404d6605ab094
 msgid ""
 "selection class condition must be changed, this could no longer rely on file"
 " name,"
@@ -200,7 +200,7 @@ msgstr ""
 "la condition de sélection doit être changée, cela ne peut plus être basé sur"
 " le nom de fichier,"
 
-#: ../development/plugins-0.8-0.9.rst:235
+#: ../development/plugins-0.8-0.9.rst:235 185809275b964ff0aa63c29e9c29a25e
 msgid ""
 "translation domain has been used for translatable strings, it is not "
 "striclty mandatory if you use Galette core strings verbatim (which should "
@@ -210,11 +210,11 @@ msgstr ""
 " pas toujours une nécessité si vous utilisez les chaînes du coeur telles "
 "quelles (ce qui aurait du être le cas ici)."
 
-#: ../development/plugins-0.8-0.9.rst:238
+#: ../development/plugins-0.8-0.9.rst:238 a2090eed8c294ff183ba200d578660a2
 msgid "Web resources"
 msgstr "Ressources web"
 
-#: ../development/plugins-0.8-0.9.rst:240
+#: ../development/plugins-0.8-0.9.rst:240 6844927c18ea45f9a9d56ae0cba4022e
 msgid ""
 "All resources that must be accessible from browsers must be handled "
 "specifically. You have to move all of them in the ``webroot`` directory of "
@@ -224,7 +224,7 @@ msgstr ""
 "doivent être traitées de manière particulière. Vous devez les déplacer dans "
 "le dossier ``webroot`` de votre plugin :"
 
-#: ../development/plugins-0.8-0.9.rst:250
+#: ../development/plugins-0.8-0.9.rst:250 810f60b52e0e4f319ed95cbd89fa18c7
 msgid ""
 "Then, you have to change paths to those files. As an example, see the "
 "``header.tpl`` file, which looks like the following in 0.8:"
@@ -232,11 +232,11 @@ msgstr ""
 "Ensuite, vous devez changer les chemins vers ces fichiers. Par exemple, "
 "voyez le fichier ``header.tpl`` qui ressemble en 0.8 :"
 
-#: ../development/plugins-0.8-0.9.rst:261
+#: ../development/plugins-0.8-0.9.rst:261 6532edcc556d48cc99612eaf29c83c60
 msgid "That will become in 0.9:"
 msgstr "Et qui deviendra en 0.9 :"
 
-#: ../development/plugins-0.8-0.9.rst:274
+#: ../development/plugins-0.8-0.9.rst:274 44d3eca5720043299f397a317ad5eabe
 msgid ""
 "Directory names of resources does not matter, their paths are conditionned "
 "by the plugin unique id (``$module_id``)."
@@ -244,11 +244,11 @@ msgstr ""
 "Les noms de dossiers des ressources n'a pas d'importance, leur chemin est "
 "conditionné par l'identifiant unique du plugin (``$module_id``)."
 
-#: ../development/plugins-0.8-0.9.rst:277
+#: ../development/plugins-0.8-0.9.rst:277 9fe094f3e2754e2cace111ce75307c1f
 msgid "Template files"
 msgstr "Fichiers de gabarits"
 
-#: ../development/plugins-0.8-0.9.rst:279
+#: ../development/plugins-0.8-0.9.rst:279 30f8ab9a588644f48959596f3d3c19c8
 msgid ""
 ":ref:`Smarty templates files must declare their heritage <smartyextends>`, "
 "that was previousely done in PHP calls."
@@ -256,7 +256,7 @@ msgstr ""
 ":ref:`Les fichiers de gabarit Smarty doivent déclarer leur héritage "
 "<smartyextends>`, ce qui était auparavant fait depuis des appels PHP."
 
-#: ../development/plugins-0.8-0.9.rst:281
+#: ../development/plugins-0.8-0.9.rst:281 1dc3faaf22ab438586c102635fe7839a
 msgid ""
 "For all templates file in the plugin, you need at least to add ``{block "
 "name=\"content\"}`` and ``{/block}`` around the whole content and add "
@@ -268,7 +268,7 @@ msgstr ""
 "ajouter l'instruction d'héritage. Les appels javascript doivent être "
 "déplacés dans le bloc optionnel ``javascript``."
 
-#: ../development/plugins-0.8-0.9.rst:283
+#: ../development/plugins-0.8-0.9.rst:283 874763340fee4b2e8e64dcbce47194c4
 msgid ""
 "To follow our example, the ``preferences.tpl`` file of the plugin must be "
 "changed as follows:"
@@ -276,17 +276,17 @@ msgstr ""
 "Pour suivre notre exemple, le fichier ``preferences.tpl`` de votre plugin "
 "doit changer comme suit :"
 
-#: ../development/plugins-0.8-0.9.rst:296
+#: ../development/plugins-0.8-0.9.rst:296 bf9e230fd5e34892af3a0d0b1f645fa5
 msgid "The form action has also been changed to suit defined routes."
 msgstr ""
 "L'action du formulaire a également été changée pour suivre les routes "
 "définies."
 
-#: ../development/plugins-0.8-0.9.rst:299
+#: ../development/plugins-0.8-0.9.rst:299 a57e6cfa9ea8474d85977ceb7938fe66
 msgid "Langs"
 msgstr "Langues"
 
-#: ../development/plugins-0.8-0.9.rst:301
+#: ../development/plugins-0.8-0.9.rst:301 f8dcf72a9f4f44b5821a929b8898489c
 msgid ""
 "Locales in Galette now rely on translation domains. ``Makefile`` and "
 "``xgettext.py`` must be updated, just copy them from an up to date official "
@@ -296,13 +296,13 @@ msgstr ""
 "``Makefile`` et ``xgettext.py`` doivent être mis à jour, copez les depusi un"
 " plugin officiel à jour."
 
-#: ../development/plugins-0.8-0.9.rst:303
+#: ../development/plugins-0.8-0.9.rst:303 5845fd0376684a69be3d51078779fb15
 msgid "``Makefile`` must be adapted to declare langs and used domains:"
 msgstr ""
 "``Makefile`` doit être adapté pour déclarer les langues et domaines utilisés"
 " :"
 
-#: ../development/plugins-0.8-0.9.rst:310
+#: ../development/plugins-0.8-0.9.rst:310 6fb674aa682f4c11b32daedfbc50d5ec
 msgid ""
 "Existing files must be renamed to fit langs and domains, PHP files are no "
 "longer used, you may remove them:"
@@ -311,7 +311,7 @@ msgstr ""
 "domaines, les fichiers PHP ne sont plus utilisés, vous pouvez les supprimer "
 ":"
 
-#: ../development/plugins-0.8-0.9.rst:322
+#: ../development/plugins-0.8-0.9.rst:322 2f5af5110e41471f8094d505a3ebef0c
 msgid ""
 "And finally, you will have to add the domain when needed in your code. It is"
 " certainly possible to use a script to do it at once, but that was not "

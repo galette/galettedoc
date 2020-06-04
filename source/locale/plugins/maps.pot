@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-28 12:07+0200\n"
+"POT-Creation-Date: 2020-06-04 00:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,122 +17,121 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../plugins/maps.rst:3
-# 2965b58412fd495292af05249d970a78
+#: 1456e63e95754e1fb28a53f850c4b9ad
 msgid "Maps"
 msgstr ""
 
 #: ../plugins/maps.rst:5
-# 0e3b55f3fe334d19b7e8ccc407f9da39
+#: 37dc6411a00f4298befed6288d6a5324
 msgid "This plugin provides:"
 msgstr ""
 
 #: ../plugins/maps.rst:7
-# cae54be80b944faa853821e7dd8890b9
+#: 313d0936e88d44fd80fc46310286c8d5
 msgid "possibility to store geogaphical coordinates for members (latitude and longitude),"
 msgstr ""
 
 #: ../plugins/maps.rst:8
-# cffa3da882e54709b37996513938a691
+#: 9ee44748c93d439b9334078d8f591999
 msgid "a public map displaying up to date members that have choosen to be publically visible."
 msgstr ""
 
 #: ../plugins/maps.rst:11
-# 9461e2dc01874c6abdcd319061805f27
+#: cfd5ac1519764dd9bb293edf8ad1da94
 msgid "Installation"
 msgstr ""
 
 #: ../plugins/maps.rst:13
-# 11abb3bf6b1b4d0db123ae82cc8cc393
+#: 3108d23f4819402d903d5c4b43ec9c44
 msgid "First of all, download the plugin: https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.4.0.tar.bz2"
 msgstr ""
 
 #: ../plugins/maps.rst:16
-# 6d2f6d8834394ef49299aa875355d913
+#: 12972b70c1e84038aa983bf162bb561d
 msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 
 #: ../plugins/maps.rst:26
-# 6f4a5fdab6d443de9c21d9930910b619
+#: df9d209ffc094964966364f420e03675
 msgid "Database initialisation"
 msgstr ""
 
 #: ../plugins/maps.rst:28
-# 0de345dc02b14928bc79376561b056d3
+#: 19bfd692fbaa4a89ab570a1dc61893f6
 msgid "In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
 
 #: ../plugins/maps.rst:30
-# 3c0adc739ac54998902c6c59d2aec398
+#: bdcac6382fd046d4867b7dbd7a9144fd
 msgid "And this is finished; Maps plugin is installed :)"
 msgstr ""
 
 #: ../plugins/maps.rst:33
-# 0e3b55f3fe334d19b7e8ccc407f9da39
+#: 27830182254440878b13199d6b5e55c6
 msgid "Plugin usage"
 msgstr ""
 
 #: ../plugins/maps.rst:35
-# 585b4415c6f8467fb971459118609283
+#: b9c3b08462f24dc891cc1438d26f41ad
 msgid "When the plugin is installed, a group `Maps` is added to Galette menu when a member is logged in, which contains `My location` entry. This page allow member to store its location."
 msgstr ""
 
 #: ../plugins/maps.rst:37
-# 3a6e6e4f986a406a8bd2368b784ff8d5
+#: db360f726f3a4304a579a341756413f3
 msgid "A `Geolocalize` button is also added when displaying a member, that allows administrators to set member coordinates."
 msgstr ""
 
 #: ../plugins/maps.rst:39
-# 30e3ff92502c487891d5676793df9c6d
+#: 1af3d5aae17b4bada49a1c0f0ca06b29
 msgid "Also, a `Map` entry is added in public pages list, that displays geolocalized members that are up to date. Administrators and staff members will see all members, while simple members and visitors will only see up to date public ones."
 msgstr ""
 
 #: ../plugins/maps.rst:41
-# 21377767425d4292be8aeddb9f81416e
+#: 33b190b6ca084cefa8b9bd03c6981002
 msgid "First of all, members will enter their location coordinates. Several options are provided:"
 msgstr ""
 
 #: ../plugins/maps.rst:43
-# 48f01c832e6741deabaa4e4148971d43
+#: 72dc0efe31654226bbbe60dd20f66c12
 msgid "if town has been set in member informations, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),"
 msgstr ""
 
 #: ../plugins/maps.rst:44
-# ee8508c9f5704304909025fd41de254a
+#: 1219157d2ba741938fb71d75fec71728
 msgid "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim.openstreetmap.org/>`_),"
 msgstr ""
 
 #: ../plugins/maps.rst:45
-# 01b4072aa3544dbfb44fe0f14b5e2336
+#: f581f5c6ae7b4d0aabb4838bdabcb4d1
 msgid "and also a geolocalize button using browser capacities."
 msgstr ""
 
 #: ../plugins/maps.rst:47
-# 2cd4ac88373b4ff2bf272d6363b07e7a
+#: 99d4a42cc87645d4bf15eef0c0de81bf
 msgid "The search zone can be used when saving members location, and when displaying the maps."
 msgstr ""
 
 #: ../plugins/maps.rst:53
-# cf8ea7c45bb7475db6d812717e02661c
+#: da083618a9c54f1e9fe1a5ac4d49e503
 msgid "A member can define its location (with the precision he wants) on the map selecting one of the propositions:"
 msgstr ""
 
 #: ../plugins/maps.rst:59
-# 1be46f4e21884d74a84c214d761eb45f
+#: 5cc12078cb6345c8876df9a227d64be8
 msgid "Using the geolocalization button will define its position from the browser:"
 msgstr ""
 
 #: ../plugins/maps.rst:65
-# b8b4d896d3524c029017feb9d12db52d
+#: 822d4913304041ca8e197e0470a3ef78
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
 
 #: ../plugins/maps.rst:72
-# d3bd095e09e5470fa6a87c153c6907c3
+#: 66863b1337bf4c26b111618e07f807ad
 msgid "How to get the sources?"
 msgstr ""
 
 #: ../plugins/maps.rst:74
-# 9b6f660850684bbe8a06e66670fdb160
+#: 60f845bb881648489c4bdfc2ad35a1db
 msgid "Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`."
 msgstr ""
-
