@@ -4,6 +4,24 @@
 Fields Configuration
 ********************
 
+List fields
+===========
+
+.. versionadded:: 0.9.4
+
+You can choose which fields will appears on Galette members list and the order they will appear with a drag & drop interface. Related access rights can be set from core fields configuration (see below).
+
+.. note::
+
+    Two fields are mandatory and cannot be moved: member number and name.
+
+    It is not possible to set access rights on id column, and parent will be accessible for staff members only.
+
+.. image:: ../_styles/static/images/usermanual/list_config.png
+   :scale: 50%
+   :align: center
+   :alt: List fields management
+
 Mandatory fields and access rights
 ==================================
 
