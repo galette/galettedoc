@@ -173,6 +173,11 @@ You can enforce some rules for members (and super-admin) passwords:
 * blacklist,
 * no personal information.
 
+.. image:: ../_styles/static/images/usermanual/prefs_security.png
+   :scale: 50%
+   :align: center
+   :alt: Galette settings, security tab
+
 Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a "strength meter" displayed for information.
 
 .. note::
