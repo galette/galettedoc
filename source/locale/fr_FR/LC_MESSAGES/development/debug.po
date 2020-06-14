@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2020-04-27 10:23-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2020-06-14 05:02-0400\n"
+"Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -15,15 +15,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: ../development/debug.rst:7 d4de18a94f8147f892c3b920ff827e1f
+#: ../development/debug.rst:7
 msgid "Debug"
-msgstr "Déboguage"
+msgstr "Débogage"
 
-#: ../development/debug.rst:10 606cf93aa96c4682a9033d5ef2959e17
+#: ../development/debug.rst:10
 msgid "Logs"
 msgstr "Logs"
 
-#: ../development/debug.rst:12 5b04fdd8a0c6432ebb0b801073694d99
+#: ../development/debug.rst:12
 msgid ""
 "Galette writes in logs files (one file per day) stored in "
 "``galette/data/logs`` if you do not change the log path configuration. But "
@@ -34,7 +34,7 @@ msgstr ""
 "chemins. Gardez en tête que certaines erreurs seront affichées uniquement "
 "des les logs système de PHP."
 
-#: ../development/debug.rst:14 c24f169228324ca6a255659a8bef282b
+#: ../development/debug.rst:14
 msgid ""
 "Verbosity level is fixed to ``INFO`` on a standard installation; you can  "
 ":ref:`change log level <behavior>`."
@@ -42,7 +42,7 @@ msgstr ""
 "Le niveau de verbosité est défini sur ``INFO`` sur une installation standard"
 " ; vous pouvez ref:`modifier le niveau de verbosité des logs <behavior>`."
 
-#: ../development/debug.rst:18 54361c6e0bed4ac89f39d303f8f46361
+#: ../development/debug.rst:18
 msgid ""
 "Writting in logs files takes ressources (writes to disk). The more logs are "
 "verbose, the more Galette will be \"slow\"."
@@ -50,7 +50,7 @@ msgstr ""
 "L'écriture dans les logs consomme des ressources (écriture sur disque). Plus"
 " les logs sont verbeux, plus Galette sera « lent »."
 
-#: ../development/debug.rst:20 32ca2ec51a5a4865ab89255c4ab2dae9
+#: ../development/debug.rst:20
 msgid ""
 "Please also note it is possible some \"sensitive\" data are stored in the "
 "logs. `DEBUG` mode for example will store every query executed in the "
@@ -60,7 +60,7 @@ msgstr ""
 "enregistrées dans les logs. Le mode ``DEBUG`` par exemple enregistre toutes "
 "les requêtes envoyées à la base de données !"
 
-#: ../development/debug.rst:22 5d84ea678e7c4bdbb92195b96bea5195
+#: ../development/debug.rst:22
 msgid ""
 "Several logs levels exists, you can find many use cases in the source code. "
 "They are defined by `the logs lib (Analog) "
@@ -72,43 +72,43 @@ msgstr ""
 "de logs (Analog) <https://github.com/jbroadway/analog>`_, du plus critique "
 "au moins critique :"
 
-#: ../development/debug.rst:24 9310727f57434b579b4330863e94c705
+#: ../development/debug.rst:24
 msgid "``URGENT``"
 msgstr "``URGENT``"
 
-#: ../development/debug.rst:25 839064deaf17483784e628d8b96acb8b
+#: ../development/debug.rst:25
 msgid "``ALERT``"
 msgstr "``ALERT``"
 
-#: ../development/debug.rst:26 dcf79d43a33349409e50971b788e1c71
+#: ../development/debug.rst:26
 msgid "``CRITICAL``"
 msgstr "``CRITICAL``"
 
-#: ../development/debug.rst:27 03c41a2be4404c48adaa3e3d4c60f4bf
+#: ../development/debug.rst:27
 msgid "``ERROR``"
 msgstr "``ERROR``"
 
-#: ../development/debug.rst:28 b50e3cebfb6247fea3ba649a770102f3
+#: ../development/debug.rst:28
 msgid "``WARNING``"
 msgstr "``WARNING``"
 
-#: ../development/debug.rst:29 86075ef5ea0c432da3eacc4ed948eb4c
+#: ../development/debug.rst:29
 msgid "``NOTICE``"
 msgstr "``NOTICE``"
 
-#: ../development/debug.rst:30 b7e69c6dfad34beba1f5ab6a286e0312
+#: ../development/debug.rst:30
 msgid "``INFO``"
 msgstr "``INFO``"
 
-#: ../development/debug.rst:31 57658a183c5c45f7844fcf11ad9b2998
+#: ../development/debug.rst:31
 msgid "``DEBUG``"
 msgstr "``DEBUG``"
 
-#: ../development/debug.rst:36 490ed9f57afe4716be0828f1c1208d89
+#: ../development/debug.rst:36
 msgid "Galette modes"
 msgstr "Modes de Galette"
 
-#: ../development/debug.rst:38 430852107950490e9631da665ce43bd3
+#: ../development/debug.rst:38
 msgid ""
 "Several modes are provided in Galette you can configure with "
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
@@ -118,7 +118,7 @@ msgstr ""
 " constante ``GALETTE_MODE`` (:ref:`voir la configuration du comportement de "
 "Galette <behavior>`). Cette directive peut prendre les valeurs suivantes :"
 
-#: ../development/debug.rst:40 020afd2ecdd742c9a1208f505cc29196
+#: ../development/debug.rst:40
 msgid ""
 "``PROD``: production mode (non production instance should be on an other "
 "mode). This is the default mode for releases, but it may change in "
@@ -128,32 +128,32 @@ msgstr ""
 "devraient utiliser un autre mode). C'est le mode par défaut dans les "
 "releases, mais il peut changer dans la version de développement."
 
-#: ../development/debug.rst:41 022a40d2676341c58f0bf89f0d5d49ef
+#: ../development/debug.rst:41
 msgid "``DEV``: development mode:"
 msgstr "``DEV`` : mode développement :"
 
-#: ../development/debug.rst:43 a34ca751f41346d0a10a87974b6603c9
+#: ../development/debug.rst:43
 msgid "unstable/not finished parts will be activated,"
 msgstr "les parties non terminées ou instables seront activées,"
 
-#: ../development/debug.rst:44 776aeb6feb0145ec800b8423b94c9a95
+#: ../development/debug.rst:44
 msgid "some data will not be stored in session,"
 msgstr "certaines données ne seront pas stockées en session,"
 
-#: ../development/debug.rst:45 04957553889c474b996a0f5b6df00361
+#: ../development/debug.rst:45
 msgid "default log level is set to ``DEBUG``,"
 msgstr "le niveau de verbosité des logs est défini à ``DEBUG``,"
 
-#: ../development/debug.rst:46 1956507dcadd496a82b77617b9ee8063
+#: ../development/debug.rst:46
 msgid "news won't be cached,"
 msgstr "les nouvelles ne seront pas cachées,"
 
-#: ../development/debug.rst:47 49fb2f7d8da84bfd80b1b9287af8152e
+#: ../development/debug.rst:47
 msgid "database verion check will not be done."
 msgstr ""
 "la vérification de la version de la base de données ne sera pas effectuée."
 
-#: ../development/debug.rst:49 4ed22c21b9df4b5096ced887520507c5
+#: ../development/debug.rst:49
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
@@ -162,28 +162,28 @@ msgstr ""
 "fonctionnalités désactivées comme l'envoi de courriels, la modification des "
 "informations du super administrateur, ..."
 
-#: ../development/debug.rst:50 d8280c070ed74199b43b2e1390948e8e
+#: ../development/debug.rst:50
 msgid "``TEST``: reserved for unit tests."
 msgstr "``TEST`` : réservé aux tests unitaires."
 
-#: ../development/debug.rst:51 76ec32140c6b40ad8be5707a05cf8963
+#: ../development/debug.rst:51
 msgid "``MAINT``: maintainance mode. Only super admin will be able to login."
 msgstr ""
 "``MAINT`` : mode maintenance. Seul le super admin pourra se connecter."
 
-#: ../development/debug.rst:56 efe655759962467ab6b42f21b5317580
+#: ../development/debug.rst:56
 msgid "Behavior configuration"
 msgstr "Configuration du comportement"
 
-#: ../development/debug.rst:58 e99d0893754249f39f7efdfd36d60845
+#: ../development/debug.rst:58
 msgid "It is possible to change some of Galette behaviors:"
 msgstr "Il est possible de modifier certains comportements de Galette :"
 
-#: ../development/debug.rst:60 77163ef86170459598bfdddf6a7e6aa1
+#: ../development/debug.rst:60
 msgid "`GALETTE_MODE`: :ref:`see Galette modes <galettemodes>` ;"
 msgstr "`GALETTE_MODE`: :ref:`voir les modes de Galette <galettemodes>`  ;"
 
-#: ../development/debug.rst:61 c61cc82a0c0e47b3b69ed6737671e0d4
+#: ../development/debug.rst:61
 msgid ""
 "`GALETTE_DISPLAY_ERRORS`: `true` to display error details in page. Really "
 "discouraged for production environments! You will not see errors if there is"
@@ -194,7 +194,7 @@ msgstr ""
 "ne verrez pas les erreurs s'il y a une redirection des routes... Et il y en "
 "a pas mal."
 
-#: ../development/debug.rst:62 5a176c5f130e4805a3663d7d8b9eea3f
+#: ../development/debug.rst:62
 msgid ""
 "`GALETTE_SYS_LOG`: `true` tells Galette to use system logs to log its own "
 "errors;"
@@ -202,19 +202,29 @@ msgstr ""
 "`GALETTE_SYS_LOG` : `true` demande à Galette d'utiliser les logs système "
 "pour ses propres erreurs ;"
 
-#: ../development/debug.rst:63 0d6459a7caab4594a3453a581c74086b
+#: ../development/debug.rst:63
 msgid "`GALETTE_LOG_LVL`: log level;"
 msgstr "`GALETTE_LOG_LVL` : niveau de log ;"
 
-#: ../development/debug.rst:64 8b4ee9e1f41c4b6ab184adca1bd9e508
+#: ../development/debug.rst:64
 msgid ""
 "`NON_UTF_DBCONNECT` : disable explicitely UTf-8 connection to the database "
-"(for users who see encoding issues)."
+"(for users who see encoding issues);"
 msgstr ""
-"`NON_UTF_DBCONNECT` : désactive la connection explicite en UTF8 à la base de"
-" données (pour les utilisateurs qui rencontrent des problèmes d'encodage)."
+"`NON_UTF_DBCONNECT` : désactive la connexion explicite en UTF8 à la base de "
+"données (pour les utilisateurs qui rencontrent des problèmes d'encodage) ;"
 
-#: ../development/debug.rst:68 64636e4be656479db70f1b6fcdfe0a2f
+#: ../development/debug.rst:65
+msgid ""
+"you'll find in related part of the documentation you can use behavior "
+"configuration for some other usages (such as PDF cards settings, session "
+"lifetime, ...)."
+msgstr ""
+"vous verrez dans d'autres parties de la documentation qu'il est possible "
+"d'utiliser la configuration du comportement pour d'autres usages (tels que "
+"les cartes PDF, la durée de vie de la session, ...)."
+
+#: ../development/debug.rst:69
 msgid ""
 "`GALETTE_SYS_LOG` makes sense only with ``mod_php``. If you use FPM, you "
 "will have to set ``catch_worker_output`` to ``yes`` in your configuration; "
@@ -225,10 +235,14 @@ msgstr ""
 "configuration ; ce qui enverra les entrées dans le log principal de FPM (pas"
 " celui du pool))."
 
-#: ../development/debug.rst:70 258c456585754dafaba392ad191db5ba
-msgid "You can add those directives in a ``config/behavior.inc.php``."
-msgstr "Vous pouvez ajouter ces directives via ``config/behavior.inc.php``."
+#: ../development/debug.rst:71
+msgid ""
+"You can add those directives by declaring constants in the "
+"``config/behavior.inc.php``."
+msgstr ""
+"Vous pouvez ajouter ces directives en déclarant des constantes via le "
+"fichier ``config/behavior.inc.php``."
 
-#: ../development/debug.rst:72 e5ad8574060d4e82987a4c19b3542da0
+#: ../development/debug.rst:73
 msgid "For example:"
 msgstr "Par exemple :"

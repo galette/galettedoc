@@ -15,11 +15,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: ../usermanual/pdf_models.rst:5 d16a73f2eec64382be813390f87e062c
+#: ../usermanual/pdf_models.rst:5
 msgid "PDF models"
 msgstr "Modèles PDF"
 
-#: ../usermanual/pdf_models.rst:7 96cb9421538941e38a391868bb5a27ce
+#: ../usermanual/pdf_models.rst:7
 msgid ""
 "PDF models are provided for several outputs : an invoice model, a receipt "
 "model and a membership from model are currently available. All of them "
@@ -29,27 +29,27 @@ msgstr ""
 "facture, un modèle de reçu et une fiche d'adhésion sont actuellement "
 "disponibles. Tous héritent du modèle `Global`."
 
-#: ../usermanual/pdf_models.rst:15 3f47123045c44997b7b599dd611fc47a
+#: ../usermanual/pdf_models.rst:15
 msgid "Models inheritance"
 msgstr "Héritage des modèles"
 
-#: ../usermanual/pdf_models.rst:17 f2868b0991074dafb33a8eaca031ae3d
+#: ../usermanual/pdf_models.rst:17
 msgid "The global model defines three distincts parts:"
 msgstr "Le modèle global définit trois parties distinctes :"
 
-#: ../usermanual/pdf_models.rst:19 9677543b8f084a4cb0be4b7db5824d7d
+#: ../usermanual/pdf_models.rst:19
 msgid "header,"
 msgstr "en-tête,"
 
-#: ../usermanual/pdf_models.rst:20 f25efe84e91547f5ad3a0f613bac10aa
+#: ../usermanual/pdf_models.rst:20
 msgid "footer,"
 msgstr "pied de page,"
 
-#: ../usermanual/pdf_models.rst:21 fb0633cd2723449982e52dada96f3801
+#: ../usermanual/pdf_models.rst:21
 msgid "CSS styles."
 msgstr "styles CSS."
 
-#: ../usermanual/pdf_models.rst:23 2f91f1a54da04be99a9ebdeeb2c961e9
+#: ../usermanual/pdf_models.rst:23
 msgid ""
 "Each model which inherits from `Global` will automatically obtain same "
 "header and footer except if the new model redefines them, in which case only"
@@ -59,7 +59,7 @@ msgstr ""
 "et pied de page sauf si le nouveau modèle les redéfinit, auquel cas seules "
 "les valeurs spécifiques seront appliquées."
 
-#: ../usermanual/pdf_models.rst:25 fb19833be15644cfbe98f65537d0b31b
+#: ../usermanual/pdf_models.rst:25
 msgid ""
 "For CSS properties it is a bit different: `Global` model properties will "
 "always be applied, and specific model properties will be appended (jsut like"
@@ -69,11 +69,11 @@ msgstr ""
 "`Global` seront toujours appliquées,et les propriétés spécifiques au modèle "
 "seront ajoutées (comme dans une feuille de style CSS)."
 
-#: ../usermanual/pdf_models.rst:28 18028586cc404605b575cace3f08bc8f
+#: ../usermanual/pdf_models.rst:28
 msgid "Generalities"
 msgstr "Généralités"
 
-#: ../usermanual/pdf_models.rst:30 514847b03f1645cca71ce658d425006b
+#: ../usermanual/pdf_models.rst:30
 msgid ""
 "In addition of header, footer and CSS styles, a model defines a title, a sub"
 " title and a body."
@@ -81,7 +81,7 @@ msgstr ""
 "En plus des en-tête, pied de page et styles CSS, un modèle définit un titre,"
 " un sous tire et un corps."
 
-#: ../usermanual/pdf_models.rst:32 7799205d9ec94bde904af0eea99e655d
+#: ../usermanual/pdf_models.rst:32
 msgid ""
 "Each of those fields can take some replacement values, refer to the inline "
 "help from the user interface to get details. They also can contains "
@@ -93,7 +93,7 @@ msgstr ""
 "contenir des chaînes internationalisées comme `_T(\"My text\")` qui se base "
 "sur :ref:`les capacités standard de traduction de Galette <i18nsyntax>`."
 
-#: ../usermanual/pdf_models.rst:34 5c5cbe88aa964926a2ab04f76292fd39
+#: ../usermanual/pdf_models.rst:34
 msgid ""
 "Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
 "file, and not displaying a page in a recent brower; there are many "
@@ -103,17 +103,17 @@ msgstr ""
 " que nous construisons un PDF, pas une page pour un navigateur récent ; il y"
 " a de nombreuses limitations."
 
-#: ../usermanual/pdf_models.rst:37 13da33a36db64a4c96c92bf4ba19b86e
+#: ../usermanual/pdf_models.rst:37
 msgid "Invoices and receipts"
 msgstr "Factures et reçus"
 
-#: ../usermanual/pdf_models.rst:39 87197e2d52b743d9b0362facef8747e1
+#: ../usermanual/pdf_models.rst:39
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr ""
 "Les modèles de factures et de reçus sont identiques, à l'exception de leurs "
 "titres."
 
-#: ../usermanual/pdf_models.rst:46 81316cb5e5a14037b0af6b42c62ffa1e
+#: ../usermanual/pdf_models.rst:46
 msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
@@ -122,11 +122,11 @@ msgstr ""
 "facture ne définit pas d'en-tête, pied de page ou style CSS, ceux du modèle "
 "`Global` sont utilisés."
 
-#: ../usermanual/pdf_models.rst:49 1195c0c6d5384d3eb41a5efa90800e4a
+#: ../usermanual/pdf_models.rst:49
 msgid "Membership form"
 msgstr "Formulaire d'adhésion"
 
-#: ../usermanual/pdf_models.rst:51 cf1c6206876d4ada90aa90e05dff5b85
+#: ../usermanual/pdf_models.rst:51
 msgid ""
 "It is a model that can be used to print a membership form. It can be empty "
 "(to print some of them for any event for example) or filled with one member "
@@ -136,7 +136,7 @@ msgstr ""
 " peut être vierge (pour les imprimer pour un évènement par exemple) ou "
 "rempli avec les informations d'un adhérent."
 
-#: ../usermanual/pdf_models.rst:53 3cfab6378f114b25ad54a51127100c72
+#: ../usermanual/pdf_models.rst:53
 msgid ""
 "Since there are many limitation, you may use the :doc:`FullCard plugin "
 "</plugins/fullcard>` that will replace this model. It is more complex to "
