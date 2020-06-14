@@ -14,6 +14,8 @@ Galette is a free software licensed under GPL version 3 and written in PHP. Gale
 
    It is also possible to change some :ref:`Galette behaviors (verbosity level, application mode, ...) <behavior>`.
 
+The complete `API documentation for Galette <https://apidoc.galette.eu>` is available for reference.
+
 Filesystem hierarchy
 ====================
 

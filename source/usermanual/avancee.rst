@@ -44,12 +44,24 @@ You also can override langs for plugins using the sam method, just place the fil
 
 .. note:: This will work only if you use Galette translation features, and not with native gettext.
 
+Change session lifetime
+=======================
+
+Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). You can anyways define a constant named ``GALETTE_TIMEOUT`` to :ref:`change session lifetime using behavior configuration <behavior>`:
+
+.. code-block:: php
+
+   <?php
+   //see https://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime
+   define('GALETTE_TIMEOUT', 0);
+
+
 Log IP addresses behind a proxy
 ===============================
 
-If your Galette instance is behind a proxy, IP addresses stored in history will be the proxy one, and not the user one :(
+If your Galette instance is behind a proxy, IP address stored in history will be the proxy one, and not the user one :(
 
-To fix that, create a ``config/behavior.inc.php`` file with the following contents:
+To fix that, :ref:`use behavior configuration <behavior>` to create a constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:
 
 .. code-block:: php
 
@@ -79,7 +91,7 @@ Cards size and count
 
 .. versionadded:: 0.9
 
-Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can change that by :ref:`adding some constants <behavior>`:
+Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can :ref:`use behavior configuration to configure cards<behavior>`, following constants are provided:
 
 .. note::
 
