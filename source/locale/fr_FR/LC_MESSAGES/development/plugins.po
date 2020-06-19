@@ -1,19 +1,21 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2020-04-27 10:23-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"PO-Revision-Date: 2020-06-19 16:19+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/"
+"doc-developer-plugins/fr/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../development/plugins.rst:7
 msgid "Writting plugins"
@@ -335,11 +337,11 @@ msgstr "Les rôles suivants peuvent être utilisés :"
 
 #: ../development/plugins.rst:187
 msgid "``superadmin`` (super-administrator),"
-msgstr "``superadmin`` (super-administrator),"
+msgstr "``superadmin`` (super-administrateur),"
 
 #: ../development/plugins.rst:188
 msgid "``admin`` (administrators),"
-msgstr "``admin`` (administrators),"
+msgstr "``admin`` (administrateurs),"
 
 #: ../development/plugins.rst:189
 msgid "``staff`` (staff members)"
@@ -388,8 +390,8 @@ msgid ""
 " in and not. In that case, you must have logic in your route and/or in your "
 "classes to manage access."
 msgstr ""
-"Les pages qui ne nécessitent pas de restrictions particulières ne feront pas"
-" appel au middleware. Il  en va de même pour les pages qui seraient "
+"Les pages qui ne nécessitent pas de restrictions particulières ne feront pas "
+"appel au middleware. Il en va de même pour les pages qui seraient "
 "accessibles à la fois aux utilisateurs authentifiés et non authentifiés. "
 "Dans ce cas, la logique de gestion des accès devra se trouver dans votre "
 "route et/ou dans vos classes."
@@ -473,8 +475,8 @@ msgid ""
 msgstr ""
 "Avant Galette 0.9, les gabarits fournissaient une partie de la page "
 "seulement, et le code était en charge de l'incorporer dans la page. Mais "
-"maintenant,  `les gabarits doivent déclarer leur héritage "
-"<https://www.smarty.net/docs/en/advanced.features.template.inheritance.tpl>`_."
+"maintenant, `les gabarits doivent déclarer leur héritage <https://www.smarty."
+"net/docs/en/advanced.features.template.inheritance.tpl>`_."
 
 #: ../development/plugins.rst:273
 msgid "Three parent templates are provided:"
@@ -523,8 +525,8 @@ msgid ""
 msgstr ""
 "Il est possible de passer des variables globales à Smarty (avec "
 "``$tpl->assign('my_var', 'my_value');``). Pour cela, ajoutez un fichier "
-"``_smarties.php`` à votre plugin plugin. Il ne peut actuellement fournir "
-"qu'un seul tableau nommé ``_tpl_assignments`` :"
+"``_smarties.php`` à votre plugin. Il ne peut actuellement fournir qu'un seul "
+"tableau nommé ``_tpl_assignments`` :"
 
 #: ../development/plugins.rst:318
 msgid ""
@@ -556,7 +558,7 @@ msgid ""
 "directory (will be ``./plugins/dir_name/templates/`` for our example)"
 msgstr ""
 "``__plugin_templates_dir__`` sera remplacé par le dossier ``templates`` de "
-"votre plugin  (ce sera ``./plugins/dir_name/templates/`` pour notre exemple)"
+"votre plugin (ce sera ``./plugins/dir_name/templates/`` pour notre exemple)"
 
 #: ../development/plugins.rst:324
 msgid ""
