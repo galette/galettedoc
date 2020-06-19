@@ -32,12 +32,12 @@ None of those directories are mandatory, plugin may have no need for them :)
 
     All Galette :doc:`development informations <index>` also apply to plugins. You may need to :doc:`debug a bit <debug>` or :ref:`change application behavior <behavior>`
 
-Licence
+License
 =======
 
 Official Galette plugins are licensed under GPL version 3.
 
-Licence must:
+License must:
 
 * be included in the root directory (``LICENSE`` or ``COPYING`` file),
 * be present in all source file headers - if the selected license wants it.
