@@ -47,8 +47,8 @@ Updating database
 
 Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is motly transparent, information are provided on each step.
 
-Datbase information
---------------------
+Database information
+---------------------
 
 At "Installation type" step, you'll have to choose "update". Database information page will be pre filled with existing information, excepting password. Other information should not be changed.
 
