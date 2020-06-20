@@ -109,14 +109,14 @@ Create tables
 
 If a connection can be established to the database, and all is correct; installer will now create the tables, and insert default values. You can show created tables from any graphical tool or in command line:
 
-* MariaDB :
+* MariaDB:
 
   .. code-block:: bash
 
      mysql> use mygalette;
      mysql> show tables;
 
-* PostgreSQL :
+* PostgreSQL:
 
   .. code-block:: bash
 
