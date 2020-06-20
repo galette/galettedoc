@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2020, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Weblate <noreply@weblate.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 0.9.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-14 10:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# bbcde397f0224f72858e13dfb0a7bd10
+#: ../development/controllers.rst:5
+msgid "Controllers"
+msgstr ""
+
+# 44135e2cbcf3487dafd7402cee5ce8ee
+#: ../development/controllers.rst:9
+msgid "Controllers are - in a MVC model - in charge of make relation between an URL and Objects that does the job behind the scenes. Since Galette uses Slim Framework, we've used anonymous functions in routes; but that makes all that code not reusable; therefore there were plenty of code that was very similar in several places."
+msgstr ""
+
+# cfacec9fe06140b180b849c05a8d1ae0
+#: ../development/controllers.rst:11
+msgid "This includes two steps removal mechanisms, outputs, and so on."
+msgstr ""
+
+# 5f98704d64e14fd68aaf4c0328861ea7
+#: ../development/controllers.rst:13
+msgid "With new controllers, is is now possible to add specific methods that ease the development, and makes it less dependent on the framework. Check the `Slim documentation about container resolution <https://www.slimframework.com/docs/v3/objects/router.html#container-resolution>`_ to known more."
+msgstr ""
+
+# 5599812c1b9b43aeb1dd9a47661099a2
+#: ../development/controllers.rst:17
+msgid "Of course, plugins can inherit of existing controllers and benefit of existing automations!"
+msgstr ""
+
+# 8173de5fb1784a94ab83518400335050
+#: ../development/controllers.rst:20
+msgid "Abstract controller"
+msgstr ""
+
+# d9714a6a94a8488192ce266ac4b0829a
+#: ../development/controllers.rst:22
+msgid "Galette provides an ``AbstractController`` class all controllers must inherit. It declares in its constructor all properties from dependency injection used:"
+msgstr ""
+
+# 0cbcbba18ffe42faa7622b0dc084e0b7
+#: ../development/controllers.rst:24
+msgid "``$zdb`` database instance,"
+msgstr ""
+
+# 70eeacb90b9f466d9ef9205fc470f9f4
+#: ../development/controllers.rst:25
+msgid "``$login`` current logged in user instance,"
+msgstr ""
+
+# 02645e314f2b4adebb87150c70116854
+#: ../development/controllers.rst:26
+msgid "``$preferences`` Galette configuration instance,"
+msgstr ""
+
+# 2ad9885766ae4e339ff25e1513ecda44
+#: ../development/controllers.rst:27
+msgid "``$view`` Smarty instance,"
+msgstr ""
+
+# 9c1f25c5cd50420abebf4367be8de990
+# d5562cb02d2040379883670c7755b8cb
+#: ../development/controllers.rst:28
+#: ../development/controllers.rst:43
+msgid "..."
+msgstr ""
+
+# 35079c61f8ad453c80341fe566063c82
+#: ../development/controllers.rst:30
+msgid "All those properties are then accessible like ``$this->zdb`` inside controllers."
+msgstr ""
+
+# edb43d642bca4d788a3ca12339ede22b
+#: ../development/controllers.rst:33
+msgid "CRUD controllers"
+msgstr ""
+
+# 95e062ef8c8042808d96d82ef5ab51a9
+#: ../development/controllers.rst:35
+msgid "CRUD stands for Create, Read, Update, Delete. Galette provides a ``Galette\\Controllers\\CrudController`` abstract class all objects that suits CRUD should rely on. By extending this class, you must declare all abstract methods:"
+msgstr ""
+
+# 768032fd2096444b9c3aa521769ddc69
+#: ../development/controllers.rst:37
+msgid "``add`` for the add page,"
+msgstr ""
+
+# 5855e1e135764afdbe9bc8d508dae301
+#: ../development/controllers.rst:38
+msgid "``doAdd`` that will handle the add code,"
+msgstr ""
+
+# bdd5aeee81a048ca98fccb3966d37fff
+#: ../development/controllers.rst:39
+msgid "``list`` for a list,"
+msgstr ""
+
+# 0b5c49741a40420a85e8dc9fe0427c64
+#: ../development/controllers.rst:40
+msgid "``filter`` for list filtering,"
+msgstr ""
+
+# 6e4c967505be4d6380b68febc90c30fc
+#: ../development/controllers.rst:41
+msgid "``edit`` for the edit page,"
+msgstr ""
+
+# 9cc2dd2b5e6c469893a4d55d037185df
+#: ../development/controllers.rst:42
+msgid "``doEdit`` that will handle the edit code,"
+msgstr ""
+
+# 15912dee3a5749fc812ef25156fa1fe9
+#: ../development/controllers.rst:45
+msgid "For most of the pages, ``add`` and ``edit`` as well as ``doAdd`` and ``doEdit`` may be very similar; then you can use another new method (say ``store``) that does the real job (that was not possible with anonymous functions previousely used):"
+msgstr ""
+
+# a5d15e89d66b4ea8ad8491381f6770c8
+#: ../development/controllers.rst:70
+msgid "Two steps removal (one for removal confirmation, and then real removal) is quite simple: most of the code is automatically handled from the ``CrudController``; you will have to define a few methods, to set the confirmation page title, the form and redirection URLs, and the removal itself; without taking care of what will be output. As an example, for payment types removal, this looks like the following:"
+msgstr ""
+
+# 96fbac9b090c44e68218aae1698fa094
+#: ../development/controllers.rst:105
+msgid "As you can see, we remove only one payment type at once; but you can also handle batch removal, with a few adaptations from the example below, and redefinition of the ``getIdsToRemove`` method that rely per default on a ``id`` argument set in URL."
+msgstr ""
+
+# 549bbf88e3af4c4fa693729342dc79db
+#: ../development/controllers.rst:122
+msgid "PDF and CSV controllers"
+msgstr ""
+
+# e00821b5fd6243fe95804137554f9a7c
+#: ../development/controllers.rst:124
+msgid "The ``PdfController`` and ``CsvController`` in Galette centralize all PDF/CSV outputs, but the most interesting point is the ``sendResponse`` method that set correct headers and contents for those specific outputs."
+msgstr ""
+
+# d0d41db818714e0dbfde85ef48ab0932
+#: ../development/controllers.rst:126
+msgid "The ``PdfController::sendResponse`` method waits for a ``Slim\\Http\\Response`` and a ``Galette\\IO\\Pdf`` objects to work."
+msgstr ""
+
+# 07581dc2028f44cfa88e7586dea800c5
+#: ../development/controllers.rst:128
+msgid "The ``CsvController::sendResponse`` method waits for a ``Slim\\Http\\Response``, path to the file on disk, and file name for download."
+msgstr ""
+
+# 07ac6e742ab64db0b02e33cccc63d518
+#: ../development/controllers.rst:131
+msgid "Usage in routes"
+msgstr ""
+
+# 72c9249ae3fc4152aab1ef6a7ee89574
+#: ../development/controllers.rst:133
+msgid "Instead of using anonymous function directly in routes, you will call controller's methods. For example , for members it would look like:"
+msgstr ""
