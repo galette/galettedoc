@@ -1,92 +1,86 @@
-# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2020, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Weblate <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: Galette 0.9.3\n"
+"Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-14 10:39+0200\n"
-"PO-Revision-Date: 2019-10-21 07:49-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
 
+# 3625b00c103f48e588e733741996907a
 #: ../installation/ftp.rst:4
 msgid "FTP"
-msgstr "FTP"
+msgstr ""
 
+# 46fc2a3c5c4e4e0f9ddbd0dd3acbb983
 #: ../installation/ftp.rst:8
 msgid ""
 "Some archive or FTP softwares may corrupt files... It is strongly adviced if "
 "you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
 "and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts."
 msgstr ""
-"Certains logiciels d'archives ou de transfert FTP peuvent corrompre les "
-"fichiers... Il est fortement conseillé si vous êtes sous Windows d'utiliser "
-"`7zip <https://www.7-zip.fr>`_ pour décompresser les archives et `FileZilla "
-"<https://filezilla-project.org/>`_ pour les transferts FTP."
 
+# 89f6ce0244764a3e8102491a7e44e8c8
 #: ../installation/ftp.rst:10
 msgid ""
 "Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar."
 "bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
 msgstr ""
-"Une fois les sources récupérées en local, utilisez la commande :samp:`tar "
-"xjvf {galette.tar.bz2}` sous Linux/Unix/MacOS ou un outil graphique sous "
-"Windows."
 
+# 1f7d7d06b2804da3848459ad56ce0814
 #: ../installation/ftp.rst:12
 msgid ""
 "Just copy the uncompressed directory obtained, and all its sub directories "
 "and files, with your FTP client."
 msgstr ""
-"Copiez simplement le dossier obtenu, ainsi que tout ses sous dossiers et "
-"fichiers, avec votre client FTP."
 
+# 7d0e0e76bd3d439693165f062e97d314
 #: ../installation/ftp.rst:19
 msgid "Specific cases"
-msgstr "Cas spéciaux"
+msgstr ""
 
+# a880bd8ec8964c13a18e331e477e1ed1
 #: ../installation/ftp.rst:22
 msgid "OVH"
-msgstr "OVH"
+msgstr ""
 
+# 04fb9e1ff727400d8a0dc7ea42ff0b79
 #: ../installation/ftp.rst:24
 msgid ""
 "This hosting compay offers to `change PHP version you use from your customer "
 "account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
 "hebergement-web-mutu-2014/>`_."
 msgstr ""
-"Cette société propose de `changer la version de PHP utilisée depuis votre "
-"compte client <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
-"hebergement-web-mutu-2014/>`_."
 
+# 5b289abe45bd4938aa4b4b356ab33fe4
 #: ../installation/ftp.rst:26
 msgid ""
 "Additionnal informations are available at: https://docs.ovh.com/fr/fr/web/"
 "hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
-"Des informations complémentaires sont disponibles à l'adresse : https://docs."
-"ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-"
-"mutu-2014/"
 
+# 8c4c223edd5e40fa8f3da69d7b9ae2cd
 #: ../installation/ftp.rst:30
 msgid ""
 "Many users have display images or emargement list issues on OVH hosts. The "
 "solution to this issue is to create a `.ovhconfig` file at your hosting root "
 "with the following contents:"
 msgstr ""
-"Certains rencontrerons des problèmes d'affichage d'images ou de liste "
-"d'émargement sur les hôtes OVH. La solution est de créer un fichier `."
-"ovhconfig` à la racine de votre hébergement avec le contenu suivant :"
 
+# d7d5ef05d90f46779d8756e41badcccf
 #: ../installation/ftp.rst:37
 msgid "Nginx"
-msgstr "Nginx"
+msgstr ""
 
+# 8f899f6e136043b587b292e2cbb3c9b5
 #: ../installation/ftp.rst:39
 msgid ""
 "`Nginx webserver <https://nginx.com>`_ configuration is different from "
@@ -94,15 +88,10 @@ msgid ""
 "<https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-"
 "htaccess/>`_)."
 msgstr ""
-"La configuration du `serveur web Nginx <https://nginx.com>`_ es différente "
-"de celle d'Apache (voir `la documentation de Nginx pour une explication "
-"détaillée <https://www.nginx.com/resources/wiki/start/topics/examples/"
-"likeapache-htaccess/>`_)."
 
+# b0fecd17ab2f46d58260ce08b4b049f0
 #: ../installation/ftp.rst:41
 msgid ""
 "So you have to convert restriction access files in Nginx configuration, as "
 "for example:"
 msgstr ""
-"Donc vous devrez convertir les fichiers de restriction d'accès dans la "
-"configuration Nginx, comme par exemple :"
