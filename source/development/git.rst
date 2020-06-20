@@ -27,7 +27,7 @@ All GIT repositories follow the :ref:`adopted development model <devmodel>`, the
 | Galette core          | | `git.tuxfamily.org/gitroot/galette/galette.git`              | https://github.com/galette/galette            |
 |                       | | https://git.tuxfamily.org/galette/galette                    |                                               |
 +-----------------------+----------------------------------------------------------------+-----------------------------------------------+
-| Documentation         | | `git.tuxfamily.org/gitroot/galette/galettedoc.git`           | https://github.com/galette/documentation      |
+| Documentation         | | `git.tuxfamily.org/gitroot/galette/galettedoc.git`           | https://github.com/galette/galettedoc         |
 |                       | | https://git.tuxfamily.org/galette/galettedoc                 |                                               |
 +-----------------------+----------------------------------------------------------------+-----------------------------------------------+
 | Website               | | `git.tuxfamily.org/gitroot/galette/website.git`              | https://github.com/galette/website            |
