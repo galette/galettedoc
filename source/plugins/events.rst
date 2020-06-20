@@ -37,7 +37,7 @@ And this is finished; Events plugin is installed :)
 Plugin usage
 ============
 
-When the plugin is installed, an `Events` group is added to Galette menu when a user is logged in. There are various possibilities that change depending on user profile (simple member, group manager, administrator, ...)?
+When the plugin is installed, an `Events` group is added to Galette menu when a user is logged in. There are various possibilities that change depending on user profile (simple member, group manager, administrator, ...).
 
 Activities
 ----------
