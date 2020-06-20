@@ -165,7 +165,7 @@ Fixed
 * Fix birth dates range
 * Add checks on birthdate when storing
 * Fix contributions list filtering (`#1185 <https://bugs.galette.eu/issues/1185>`_)
-* Use sender informations on preview (`#1188 <https://bugs.galette.eu/issues/1188>`_)
+* Use sender information on preview (`#1188 <https://bugs.galette.eu/issues/1188>`_)
 * Fix mail sender storage in history (`#1188 <https://bugs.galette.eu/issues/1188>`_)
 * Remove "not translated" message on dynamic fields labels
 * Fix search on boolean dynamic fields (`#1186 <https://bugs.galette.eu/issues/1186>`_)
@@ -226,7 +226,7 @@ Added
 * Choose default state for new members in preferences (`#963 <https://bugs.galette.eu/issues/963>`_)
 * Customizabe text in pages footer (`#1107 <https://bugs.galette.eu/issues/1107>`_)
 * Add German translation (`#1165 <https://bugs.galette.eu/issues/1165>`_, thanks to Arnold W.)
-* Choose sender informations when sending a mail (`#1142 <https://bugs.galette.eu/issues/1142>`_)
+* Choose sender information when sending a mail (`#1142 <https://bugs.galette.eu/issues/1142>`_)
 
 .. _bogues_091:
 
@@ -245,7 +245,7 @@ Fixed
 * Fix redirection after creating a new contribution (`#1145 <https://bugs.galette.eu/issues/1145>`_)
 * Fix dynamic fields on transactions and contributions (`#1146 <https://bugs.galette.eu/issues/1146>`_)
 * Fix static resources path on some configurations (`#1152 <https://bugs.galette.eu/issues/1152>`_)
-* Admin informations fields was emptied when a member was edited from a non admin account (`#1154 <https://bugs.galette.eu/issues/1154>`_)
+* Admin information fields was emptied when a member was edited from a non admin account (`#1154 <https://bugs.galette.eu/issues/1154>`_)
 * Fix required dynamic file fields updating member (`#1160 <https://bugs.galette.eu/issues/1160>`_)
 * Fix security Checks generating PDF members cards (`#1164 <https://bugs.galette.eu/issues/1164>`_)
 * Add expiration on RSS feed calls to prevent freezes (`#989 <https://bugs.galette.eu/issues/989>`_)
@@ -264,7 +264,7 @@ Added
 * Use two steps removal everywhere; with a real confirmation required (not relying on a Javascript event)
 * Cascade removal on groups children
 * Change all URLs (`#417 <https://bugs.galette.eu/issues/417>`_), and translate them
-* Super admin can impersonate another account without its authentication informations
+* Super admin can impersonate another account without its authentication information
 * Responsive display
 * Configure connection delay
 * Test mail parameters from preferences (`#588 <https://bugs.galette.eu/issues/588>`_)
@@ -287,7 +287,7 @@ Added
 * Free search on status texts (`#1061 <https://bugs.galette.eu/issues/1061>`_)
 * Improve fields management in free search (thanks to Guillaume R.!)
 * Script for extrernal statistics (`#787 <https://bugs.galette.eu/issues/787>`_)
-* Send `telemetry informations and registration <https://telemetry.galette.eu>`_ :)
+* Send `telemetry information and registration <https://telemetry.galette.eu>`_ :)
 
 .. _bogues_090:
 

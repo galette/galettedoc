@@ -3,7 +3,7 @@
 .. _libraries:
 
 **********************
-Technical informations
+Technical information
 **********************
 
 Third party libs

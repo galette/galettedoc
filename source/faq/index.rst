@@ -33,9 +33,9 @@ If you cannot access system logs files (frequent on shared hostings), you can di
 
 .. warning::
 
-   Displaying errors on a web page may provide informations that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool.
+   Displaying errors on a web page may provide information that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool.
 
-   Please also note that with routing intgration, some of those displayed informations may be "hidden" from a buggy redirection... Logs are safer on that point.
+   Please also note that with routing intgration, some of those displayed information may be "hidden" from a buggy redirection... Logs are safer on that point.
 
 To temporary display errors on page, create a ``galette/config/behavior.inc.php`` file with the following contents:
 
@@ -46,7 +46,7 @@ To temporary display errors on page, create a ``galette/config/behavior.inc.php`
 
 The next time you reproduce the issue, errors will be displayed on the page.
 
-Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grabadditional informations.
+Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grabadditional information.
 
 *****************************************
 How to report a bug or ask for a feature?
@@ -67,7 +67,7 @@ Please, do not forget to:
 
 * tell us the Galette version you are using,
 * be clear and consise,
-* to provide all required informations in order to reproduce the issue
+* to provide all required information in order to reproduce the issue
 * to provide related logs entries.
 
 Request For Enhancement
@@ -120,6 +120,6 @@ Indeed, mail addresses must be unique in the database. It is a choice for the pr
 
 Making them non uniques is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
 
-However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some informations such as email and postal addresses will be retrieved from the parent member if missing.
+However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some information such as email and postal addresses will be retrieved from the parent member if missing.
 
 This allows finally to use a unique email address for several members in database; but they are not duplicates in database.

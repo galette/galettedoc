@@ -30,7 +30,7 @@ None of those directories are mandatory, plugin may have no need for them :)
 
 .. note::
 
-    All Galette :doc:`development informations <index>` also apply to plugins. You may need to :doc:`debug a bit <debug>` or :ref:`change application behavior <behavior>`
+    All Galette :doc:`development information <index>` also apply to plugins. You may need to :doc:`debug a bit <debug>` or :ref:`change application behavior <behavior>`
 
 License
 =======
@@ -136,7 +136,7 @@ Routes and templates
 
 Of course, you will probably need something more than simple ``echo`` from a display point of view;
 
-Globally, inside Galette, `GET` routes displays informations (lists, forms, ...) and `POST` routes do actions. That way, forms will have a `POST` action, that will do the job, and then will redirect on a `GET` page.
+Globally, inside Galette, `GET` routes displays information (lists, forms, ...) and `POST` routes do actions. That way, forms will have a `POST` action, that will do the job, and then will redirect on a `GET` page.
 
 Displaying a page from a Smarty template would look like:
 
@@ -384,7 +384,7 @@ Also note the :ref:`path to the CSS file must be obtained using a route <plugins
 Add actions on members
 ----------------------
 
-It is possible for a plugin to add actions on members, adding one or more entries in members list "actions" column, or displaying one member informations.
+It is possible for a plugin to add actions on members, adding one or more entries in members list "actions" column, or displaying one member information.
 
 An ``adh_actions.tpl`` file in your plugin templates will add new actions in members list, with a simple list of links:
 
