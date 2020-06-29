@@ -18,6 +18,11 @@ Just copy the uncompressed directory obtained, and all its sub directories and f
 Specific cases
 ==============
 
+Ionos
+-----
+
+If you're hosted on Ionos; and want to use a specific subdomain for Galette, you must create your subdomain from their UI, and make it points to the ``webroot`` directory. You also have to edit the ``.htaccess`` file it contains, and uncomment the ``RewriteBase /`` directive.
+
 OVH
 ---
 
