@@ -70,7 +70,7 @@ today_fmt = '%d/%m/%Y'
 # if put on the exclude_patters list, such labels are not visible. The commented out files in the 
 # exclude_patters list below, are such files. They generate a warning, but contain reference labels.
 exclude_patterns = [
-    'changelogs/*.rst'
+    'changelogs/galette_09.rst'
 ]
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None

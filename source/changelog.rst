@@ -9,11 +9,13 @@ Changelog
 .. include:: changelogs/galette_09.rst
    :start-after: :orphan:
 
-.. include:: changelogs/galette_08.rst
-   :start-after: :orphan:
+***************
+Legacy versions
+***************
 
-.. include:: changelogs/galette_07.rst
-   :start-after: :orphan:
+.. toctree::
+   :maxdepth: 1
 
-.. include:: changelogs/galette_06.rst
-   :start-after: :orphan:
+   changelogs/galette_08.rst
+   changelogs/galette_07.rst
+   changelogs/galette_06.rst
