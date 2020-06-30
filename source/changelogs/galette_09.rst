@@ -51,6 +51,7 @@ Under the hood...
 * Rely on `GulpJS <https://gulpjs.com/>`_ and `NPMJS <https://www.npmjs.com/>`_ to handle Javascript dependencies (`#1341 <https://bugs.galette.eu/issues/1341>`_)
 * Switch to Laminas (`#1385 <https://bugs.galette.eu/issues/1385>`_)
 * Rework routes using controllers (`#1354 <https://bugs.galette.eu/issues/1354>`_)
+* Use of `Weblate <https://weblate.org>`_ for translations
 
 .. _v0931:
 
