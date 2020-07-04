@@ -20,7 +20,7 @@ Installation
 ============
 
 First of all, download the plugin:
-https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.5.0.tar.bz2
+https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.6.0.tar.bz2
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
