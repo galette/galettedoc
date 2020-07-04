@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-14 10:39+0200\n"
+"POT-Creation-Date: 2020-07-04 18:35+0200\n"
 "PO-Revision-Date: 2019-10-23 06:37-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: French\n"
@@ -50,15 +50,12 @@ msgstr ""
 msgid "Installation"
 msgstr "Installation"
 
+# 212f7ad9c6a2492ca77195fca1aa11b7
 #: ../plugins/paypal.rst:29
-msgid ""
-"First of all, download the plugin: https://download.tuxfamily.org/galette/"
-"plugins/galette-plugin-paypal-1.7.0.tar.bz2"
+msgid "First of all, download the plugin:"
 msgstr ""
-"Tout d'abord, téléchargez le plugin : https://download.tuxfamily.org/galette/"
-"plugins/galette-plugin-paypal-1.7.0.tar.bz2"
 
-#: ../plugins/paypal.rst:32
+#: ../plugins/paypal.rst:35
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -67,11 +64,11 @@ msgstr ""
 "exemple, sous linux (en remplaçant `{url}` et `{version}` par les valeurs "
 "adéquates) :"
 
-#: ../plugins/paypal.rst:42
+#: ../plugins/paypal.rst:45
 msgid "Database initialisation"
 msgstr "Initialisation de la base de données"
 
-#: ../plugins/paypal.rst:44
+#: ../plugins/paypal.rst:47
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
@@ -80,15 +77,15 @@ msgstr ""
 "Référez-vous :ref:`à l'interface de gestion des plugins de Galette "
 "<plugins_managment>`."
 
-#: ../plugins/paypal.rst:46
+#: ../plugins/paypal.rst:49
 msgid "And this is finished; Paypal plugin is installed :)"
 msgstr "Et c'est terminé, le plugin Paypal est installé :)"
 
-#: ../plugins/paypal.rst:49
+#: ../plugins/paypal.rst:52
 msgid "Plugin configuration"
 msgstr "Configuration du plugin"
 
-#: ../plugins/paypal.rst:51
+#: ../plugins/paypal.rst:54
 msgid ""
 "Once plugin has been installed, a `Paypal` group is added to the menu, with "
 "some new entries:"
@@ -96,7 +93,7 @@ msgstr ""
 "Une fois le plugin installé, un groupe `Paypal` est ajouté au menu, avec "
 "quelques nouvelles entrées :"
 
-#: ../plugins/paypal.rst:53
+#: ../plugins/paypal.rst:56
 msgid ""
 "`Payment form`: the payment form itself, which is accessible as a public "
 "page,"
@@ -104,7 +101,7 @@ msgstr ""
 "`Formulaire de paiement` : le formulaire de paiement lui même, qui est "
 "accessible en tant que page publique,"
 
-#: ../plugins/paypal.rst:54
+#: ../plugins/paypal.rst:57
 msgid ""
 "`Preferences`: plugin preferences, accessible for administrators and staff "
 "members."
@@ -112,7 +109,7 @@ msgstr ""
 "`Préférences` : les préférences du plugin , accessible aux administrateurs "
 "et membres du bureau."
 
-#: ../plugins/paypal.rst:56
+#: ../plugins/paypal.rst:59
 msgid ""
 "In order to work properly, you need to fill a very important value: your "
 "Paypal account code. You can either use the email address associated with "
@@ -129,7 +126,7 @@ msgstr ""
 "et vous le trouverez dans les préférences de votre compte. La modification "
 "de l'identifiant est accessible aux administrateurs seulement."
 
-#: ../plugins/paypal.rst:58
+#: ../plugins/paypal.rst:61
 msgid ""
 "Preferences screen also permit to edit amount related to contributions "
 "types, and to hide some types."
@@ -137,7 +134,7 @@ msgstr ""
 "L'écran des préférences permet également d'associer des montant aux types de "
 "contributions, et de masquer certains types."
 
-#: ../plugins/paypal.rst:60
+#: ../plugins/paypal.rst:63
 msgid ""
 "After that, any user can choose the contribution type, adjust the amount and "
 "pay from his Paypal account. If the user is a logged in member, and if the "
@@ -150,11 +147,11 @@ msgstr ""
 "extension de l'adhésion, son adhésion sera recalculée lorsque le paiement "
 "sera confirmé."
 
-#: ../plugins/paypal.rst:63
+#: ../plugins/paypal.rst:66
 msgid "How to get the sources?"
 msgstr "Comment récupérer les sources ?"
 
-#: ../plugins/paypal.rst:65
+#: ../plugins/paypal.rst:68
 msgid ""
 "Please refer to :doc:`Galette developer guide <../development/index>` to get "
 "informations about :doc:`souces retrieval <../development/git>`, and :ref:"
@@ -163,3 +160,10 @@ msgstr ""
 "Veuillez voir :doc:`le guide du développeur de Galette <../development/"
 "index>` pour obtenir des informations sur :doc:`la récupération des sources "
 "<../development/git>`, et le :ref:`modèle de développement <devmodel>`."
+
+#~ msgid ""
+#~ "First of all, download the plugin: https://download.tuxfamily.org/galette/"
+#~ "plugins/galette-plugin-paypal-1.7.0.tar.bz2"
+#~ msgstr ""
+#~ "Tout d'abord, téléchargez le plugin : https://download.tuxfamily.org/"
+#~ "galette/plugins/galette-plugin-paypal-1.7.0.tar.bz2"
