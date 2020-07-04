@@ -14,7 +14,7 @@ Generalities
 
 Of course, you have to refer to the :ref:`plugins development guide <devplugins>` for all details.
 
-Several Galette core objects has been modified to remove some globals. This is now mandatory to send them those informations, like:
+Several Galette core objects has been modified to remove some globals. This is now mandatory to send them those information, like:
 
 .. code-block:: php
 

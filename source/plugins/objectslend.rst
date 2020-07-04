@@ -2,10 +2,6 @@
 Objects lend
 ============
 
-.. warning::
-
-   This plugin is **BETA**, make sure to backup your data if you were using a previous version!
-
 This plugin provides:
 
 * objects management (description, size, lenght, price, ...)
@@ -19,7 +15,7 @@ Installation
 ============
 
 First of all, download the plugin:
-https://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-0.5beta.tar.bz2
+https://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-1.0.0.tar.bz2
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):

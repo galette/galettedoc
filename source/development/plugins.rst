@@ -30,14 +30,14 @@ None of those directories are mandatory, plugin may have no need for them :)
 
 .. note::
 
-    All Galette :doc:`development informations <index>` also apply to plugins. You may need to :doc:`debug a bit <debug>` or :ref:`change application behavior <behavior>`
+    All Galette :doc:`development information <index>` also apply to plugins. You may need to :doc:`debug a bit <debug>` or :ref:`change application behavior <behavior>`
 
-Licence
+License
 =======
 
 Official Galette plugins are licensed under GPL version 3.
 
-Licence must:
+License must:
 
 * be included in the root directory (``LICENSE`` or ``COPYING`` file),
 * be present in all source file headers - if the selected license wants it.
@@ -136,7 +136,7 @@ Routes and templates
 
 Of course, you will probably need something more than simple ``echo`` from a display point of view;
 
-Globally, inside Galette, `GET` routes displays informations (lists, forms, ...) and `POST` routes do actions. That way, forms will have a `POST` action, that will do the job, and then will redirect on a `GET` page.
+Globally, inside Galette, `GET` routes displays information (lists, forms, ...) and `POST` routes do actions. That way, forms will have a `POST` action, that will do the job, and then will redirect on a `GET` page.
 
 Displaying a page from a Smarty template would look like:
 
@@ -384,7 +384,7 @@ Also note the :ref:`path to the CSS file must be obtained using a route <plugins
 Add actions on members
 ----------------------
 
-It is possible for a plugin to add actions on members, adding one or more entries in members list "actions" column, or displaying one member informations.
+It is possible for a plugin to add actions on members, adding one or more entries in members list "actions" column, or displaying one member information.
 
 An ``adh_actions.tpl`` file in your plugin templates will add new actions in members list, with a simple list of links:
 
@@ -492,6 +492,8 @@ In a new version, your plugin may need to add/change/drop new tables/columns/els
 * update scripts must also follow a naming convention: ``upgrade-to-{version}-{dbtype}.sql`` or ``upgrade-to-{version}.php``, where `{version}` is the new plugin version and `{dbtype}` the database type (`mysql` or `pgsql`). PHP update scripts does not rely on database engine, if there are specificities, they'll be handled in code itself.
 
 Respecting those rules ensures plugin will be supported from the Galette plugins management interface, and user will be able to install or update easily your plugin.
+
+.. _plugins_phpclasses:
 
 PHP classes
 ===========
@@ -613,3 +615,52 @@ This is enabled by creating a ``_preferences.php`` file in your plugin, with a c
    $_preferences = [
        'pref_adhesion_form' => '\GaletteFullcard\PdfFullcard'
    ];
+
+Galette events
+==============
+
+.. versionadded:: 0.9.4
+
+Galette emit some events when members, contributions and transactions are added, updated or removed. This is provided using `PHP league Event library <https://event.thephpleague.com/2.0/>`_.
+
+All possible events are:
+
+* ``adherent.add``,
+* ``adherent.edit``,
+* ``adherent.remove``,
+* ``contribution.add``,
+* ``contribution.edit``,
+* ``contribution.remove``,
+* ``transaction.add``,
+* ``transaction.edit``,
+* ``transaction.remove``.
+
+In order to catch any of those events, you will need a :ref:`PHP class <plugins_phpclasses>` named ``PluginEventProvider`` in your plugin namespace, which must provide a ``provideListeners`` method:
+
+.. code-block:: php
+
+   <?php
+   namespace GaletteMyPlugin;
+
+   use League\Event\ListenerAcceptorInterface;
+   use League\Event\ListenerProviderInterface;
+   use Analog\Analog;
+
+   class PluginEventProvider implements ListenerProviderInterface
+   {
+       public function provideListeners(ListenerAcceptorInterface $acceptor)
+       {
+           $acceptor->addListener('member.add', function ($event, $member) {
+               Analog::log(
+                   sprintf(
+                       '[%1$s] Event emitted: member %2$s has been added.',
+                       get_class($this),
+                       $member->sfullname
+                   ),
+                   Analog::DEBUG
+               );
+           });
+       }
+   }
+
+First argument of your listener is the event name, and the second an anonymous function that will receive the event itself as first argumennt, and an instance of the related Galette object. You can of course add several listeners on possible events.

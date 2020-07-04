@@ -9,7 +9,7 @@ BUILDDIR      = build
 # Internal variables.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) source
 # the i18n builder cannot share the environment and doctrees with the others
-I18NSPHINXOPTS  = $(SPHINXOPTS) source
+I18NSPHINXOPTS  = $(SPHINXOPTS) source -D exclude_patterns="changelogs/*.rst"
 
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 

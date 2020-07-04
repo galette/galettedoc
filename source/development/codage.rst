@@ -14,6 +14,8 @@ Galette is a free software licensed under GPL version 3 and written in PHP. Gale
 
    It is also possible to change some :ref:`Galette behaviors (verbosity level, application mode, ...) <behavior>`.
 
+The complete `API documentation for Galette <https://apidoc.galette.eu>`_ is available for reference.
+
 Filesystem hierarchy
 ====================
 
@@ -54,6 +56,19 @@ Here is a plan of Galette used directories and some explanations about them:
 
       * |phpfile| `Authentication.php`
       * |phpfile| `CheckModules.php`
+      * |phpfile| `...`
+
+    * |folder| `Controllers`: :ref:`Controllers <controllers>` classes (since 0.9.4)
+
+      * |phpfile| `PdfController.php`
+      * |phpfile| `CsvController.php`
+      * |phpfile| `ImagesController.php`
+      * |folder| `Crud`: CRUD (Create, Read, Update, Delete) controllers
+
+        * |phpfile| `MembersController.php`
+        * |phpfile| `PaymentTypesController.php`
+        * |phpfile| `...`
+
       * |phpfile| `...`
 
     * |folder| `...`

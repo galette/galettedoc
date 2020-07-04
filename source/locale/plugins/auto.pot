@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Galette 0.9.3\n"
+"Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-06-14 10:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,117 +17,117 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../plugins/auto.rst:3
-# 3ee41270b0d64e248332330575fd2bce
+# 9d9a5af2194e4d10bfa543f9119ba2dc
 msgid "Auto"
 msgstr ""
 
 #: ../plugins/auto.rst:5
-# 240338e4502343d8ba972f58bf08e4e3
+# c4b1b2d4a1bb4fc3bd9d23b272f9b70e
 msgid "This plugin provides vehicles management for automobile clubs, you can manage:"
 msgstr ""
 
 #: ../plugins/auto.rst:7
-# 895aa0ecd3bd499aa71e7ea0e18544a8
+# 8e0867f3fa3047d5a575df7adddf3252
 msgid "vehicles (owner, several informations, photo, etc),"
 msgstr ""
 
 #: ../plugins/auto.rst:8
-# 895aa0ecd3bd499aa71e7ea0e18544a8
+# 1ced6f6a0cfd4ed595f8c31979ae7e0c
 msgid "vehicle history modification (owner, color, ...),"
 msgstr ""
 
 #: ../plugins/auto.rst:9
-# 6b671a2ad11e4c7086b547b2b8011a36
+# 8b51a8e0076a4e97850616ce0acccc92
 msgid "brands,"
 msgstr ""
 
 #: ../plugins/auto.rst:10
-# bda14234904a4f70872f319414c16b24
+# d691681dbbd94a968eab23f877e0b430
 msgid "models,"
 msgstr ""
 
 #: ../plugins/auto.rst:11
-# 382ce382873a4906a9d5dfbc260ba2c5
+# b041d375471b40ab9e854b47eb10b77b
 msgid "transmission types,"
 msgstr ""
 
 #: ../plugins/auto.rst:12
-# 43c0f8f5c80e435ea5cf1a7ab6db142c
+# 9107154aefbd4f149d84f3ffe00f98c9
 msgid "body types,"
 msgstr ""
 
 #: ../plugins/auto.rst:13
-# a5c7a5a20596481f80fbef088efc7eae
+# 928fe64865bc4c1bbf1381072069a353
 msgid "colors,"
 msgstr ""
 
 #: ../plugins/auto.rst:14
-# 7c4a55a635974f828587c15d80ca3d97
+# adf67773f58543fd9330b7b0e4b699fb
 msgid "finitions,"
 msgstr ""
 
 #: ../plugins/auto.rst:15
-# e56d74a7a27348c2afe6caf6ca88a5e4
+# 02aebc2421554373958c552d1ba11ea4
 msgid "states."
 msgstr ""
 
 #: ../plugins/auto.rst:17
-# 3274032acb524ea7838d0e8dcb36ba2a
+# f45921712638440893877f1cff286a5f
 msgid "This plugin has been initially developed in collaboration with Anatole from `Club 404 <https://www.leclub404.com/>`_, and François from `club Fiat 500 <http://www.club500.fr/>`_. A big thanks to them for their precious help during plugin development :)"
 msgstr ""
 
 #: ../plugins/auto.rst:20
-# 85069ae100ee47cdb04eb01a153d5779
+# 4e22ed6068cc4a9b9e4f8b0e08c31c8d
 msgid "Installation"
 msgstr ""
 
 #: ../plugins/auto.rst:22
-# 5d6da776ed5d4afaaf0686b633f2f5ab
+# c2d106133e3c4089bcab397f877a1a20
 msgid "First of all, download the plugin: https://download.tuxfamily.org/galette/plugins/galette-plugin-auto-1.5.0.tar.bz2"
 msgstr ""
 
 #: ../plugins/auto.rst:25
-# c990f821ebf647f780c5e7e9c9612a4e
+# 037b5fefb9224607ac170b0c3b5bcfa6
 msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 
 #: ../plugins/auto.rst:35
-# fb798dd1b3074f92bfbebf0411bba230
+# 78e4bde975ce4943acb69b2b0bc25c9e
 msgid "Database initialisation"
 msgstr ""
 
 #: ../plugins/auto.rst:37
-# e6bb12550ea4424da305107d622ea726
+# b3d1f4cf653e49ff8ae1b720717afae0
 msgid "In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
 
 #: ../plugins/auto.rst:39
-# b80b120359db449c82e2cf690f58ba9f
+# d6e4cb8fdbdd49cab1f9d3633b22e9a5
 msgid "And this is finished; Auto plugin is installed :)"
 msgstr ""
 
 #: ../plugins/auto.rst:41
-# 39f4132301154c129cc78744cdd6b735
+# b618b67c4afe4f678895e0300c67e7d5
 msgid "There is no particular setup required, you can just enter data in the database."
 msgstr ""
 
 #: ../plugins/auto.rst:44
-# d35688cd74bc4f6cb606d0a5339ed831
+# e93aeb5836914487b171b8968e9dfc84
 msgid "Configure required fields"
 msgstr ""
 
 #: ../plugins/auto.rst:46
-# 56cf022691184a4fbe38840826eb4347
+# 634ff5198891409ea744b953ce630a94
 msgid "When adding a new vehicle in database, there are several fields that are required, but that may not fit your needs. In such case, you can define your own required fields: just create a ``local_auto_required.inc.php`` file in your Galette ``config`` directory and declare an array of the fields you want to require. As example, if you just want to require name and model for a car, you will need:"
 msgstr ""
 
 #: ../plugins/auto.rst:57
-# e16fa20f98bf4442ae2e7a52bfc68860
+# b3cd519c29f049618e2c3577b345c9e4
 msgid "How to get the sources?"
 msgstr ""
 
 #: ../plugins/auto.rst:59
-# fd95935dd37a49349b228d4b3eabb39e
+# 5a72c01e08c14f7a945659508c9721dc
 msgid "Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`."
 msgstr ""
 

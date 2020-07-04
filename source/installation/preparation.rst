@@ -118,16 +118,110 @@ Nginx would be:
 
 .. _installationunix:
 
-.. include:: unix.rst
-   :start-after: :orphan:
+Linux/Unix
+==========
+
+Installing Galette on Linux implies you have an access to the terminal on the server and required ACLs on directories.
+
+As an example, on `Fedora <https://fedora.org>`_, you will run (as root):
+
+.. code-block:: bash
+
+   # cd /var/www/galette/
+   # chown -R apache:apache config data
+
+Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with ``www-data:www-data``.
+
+On SELinux enabled systems, we'll also add:
+
+.. code-block:: bash
+
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/config(/.*)?'
+   # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/data(/.*)?'
+   # restorecon -R -v /var/www/html/galette/
+
+You will also have to authorize webserver to connect to the network, with a SELinux boolean:
+
+.. code-block:: bash
+
+   # setsebool httpd_can_network_connect on
 
 .. _installationftp:
 
-.. include:: ftp.rst
-   :start-after: :orphan:
+FTP
+===
+
+.. warning::
+
+   Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts.
+
+Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows.
+
+Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client.
+
+.. image:: ../_styles/static/images/installation/filezilla.jpg
+   :scale: 50 %
+   :align: center
+
+Specific cases
+==============
+
+Ionos
+-----
+
+If you're hosted on Ionos; and want to use a specific subdomain for Galette, you must create your subdomain from their UI, and make it points to the ``webroot`` directory. You also have to edit the ``.htaccess`` file it contains, and uncomment the ``RewriteBase /`` directive.
+
+OVH
+---
+
+This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
+
+Additionnal information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
+
+.. warning::
+
+   Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:
+
+   .. code-block:: shell
+
+      app.engine=phpcgi
+
+Nginx
+-----
+
+`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_).
+
+So you have to convert restriction access files in Nginx configuration, as for example:
+
+.. code-block:: nginx
+
+   location ~ /(data|config|lib)/ {
+       deny all;
+   }
 
 .. _installationwindows:
 
-.. include:: windows.rst
-   :start-after: :orphan:
+Windows
+=======
 
+Installation described here rely on `XAMPP <https://www.apachefriends.org/xampp-windows.html>`_; other installation methods exist but are not listed here.
+
+First of all, download XAMPP on your computer. Let's install it under ``C:\xampp``.
+
+.. image:: ../_styles/static/images/installation/windows/xampp_directory.jpg
+   :scale: 50 %
+   :align: center
+
+Launch the ``xampp-control`` executable (you can find it in ``C:\xampp``), so you can start Apache and MySQL services.
+
+.. image:: ../_styles/static/images/installation/windows/xampp_control.jpg
+   :scale: 50 %
+   :align: center
+
+Once those steps done, download galette and move it to ``C:\wampp\htdocs\galette``, web application will be available from http://127.0.0.1/galette/. Just visit this URL so the installation process begin.
+
+.. note::
+
+   Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a ";"), just uncomment them and restart XAMPP.
+
+   `openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``

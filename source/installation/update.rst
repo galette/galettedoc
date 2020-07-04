@@ -23,11 +23,11 @@ Updating files
 
 First, logout from your instance, and make sure to use a maintenance mode to prevent other users to reach the instance.
 
-Then, download latest Galette version and replace the files. For more informations on files installation, refer to the :ref:`prepare installation <preparation>` section.
+Then, download latest Galette version and replace the files. For more information on files installation, refer to the :ref:`prepare installation <preparation>` section.
 
 Some directories keep data and/or configurations and should be copied back to the new instance:
 
-* ``config/config.inc.php``. If this file is missing, Galette update process will ask you the informations and create a new one. If the file is present, it will be used to fill informations excepted database password. It is the only file that can be edited during update process,
+* ``config/config.inc.php``. If this file is missing, Galette update process will ask you the information and create a new one. If the file is present, it will be used to fill information excepted database password. It is the only file that can be edited during update process,
 * ``data/photos`` your members photos and logos,
 * ``data/exports`` contains CSv exports,
 * ``data/files`` contains files from dynamic fields of type file,
@@ -45,12 +45,12 @@ Updating database
 
    Galette will tell you if an update is needed, no need to "force" an update.
 
-Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is motly transparent, informations are provided on each step.
+Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is motly transparent, information are provided on each step.
 
-Datbase informations
---------------------
+Database information
+---------------------
 
-At "Installation type" step, you'll have to choose "update". Database informations page will be pre filled with existing informations, excepting password. Other informations should not be changed.
+At "Installation type" step, you'll have to choose "update". Database information page will be pre filled with existing information, excepting password. Other information should not be changed.
 
 .. note::
 

@@ -42,18 +42,18 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Galette'
-author = u'Johan Cwiklinski'
-copyright = u'2011-2020, Johan Cwiklinski'
+project = 'Galette'
+author = 'Johan Cwiklinski'
+copyright = '2011-2020, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.9.3'
+version = '0.9.4'
 # The full version, including alpha/beta/rc tags.
-release = '0.9.3'
+release = '0.9.4'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -70,7 +70,10 @@ today_fmt = '%d/%m/%Y'
 # if put on the exclude_patters list, such labels are not visible. The commented out files in the 
 # exclude_patters list below, are such files. They generate a warning, but contain reference labels.
 exclude_patterns = [
-    'changelogs/*.rst'
+    'changelogs/galette_09.rst',
+    'installation/ftp.rst',
+    'installation/unix.rst',
+    'installation/windows.rst'
 ]
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -246,7 +249,7 @@ latex_elements = {
 'pointsize': '12pt',
 
 # Font package inclusion.
-'fontpkg': '\usepackage{newcent}',
+'fontpkg': '\\usepackage{newcent}',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
@@ -261,8 +264,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'Galette.tex', u'Galette Documentation',
-   u'Johan Cwiklinski', 'manual'),
+  ('index', 'Galette.tex', 'Galette Documentation',
+   'Johan Cwiklinski', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Galette 0.9.3\n"
+"Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-15 09:41+0100\n"
+"POT-Creation-Date: 2020-06-14 10:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,232 +17,242 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../usermanual/avancee.rst:5
-# 421860e3dd314c45bd878ea77c223668
+# 146a7da35cab4d59bcc2bcf51c1acdd9
 msgid "Experimented users"
 msgstr ""
 
 #: ../usermanual/avancee.rst:9
-# 79369fe94c1746a2bab830518c8c9187
+# 1f9bbed20cf5465d9384452334706982
 msgid "Use only following instructions if you know what you are doing... \"The management is not responsable for any case of [...]\" :D"
 msgstr ""
 
 #: ../usermanual/avancee.rst:12
-# 4e856505855e4e748c828cfa5bba1e46
+# 73aa7121c47b43ce986562d44a72d14f
 msgid "Adapt to your graphical chart"
 msgstr ""
 
 #: ../usermanual/avancee.rst:14
-# c949f8d42f4848f1a05fcfdc4489ecd5
+# 3b8372bf5196483784a70dd21c9548bc
 msgid "If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mecanism desinged for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included."
 msgstr ""
 
 #: ../usermanual/avancee.rst:16
-# 1491a8d4d019461884732a311add1301
+# 4c117cdc3e114fe59486d6e5fa1ff289
 msgid "Try to keep things as simple as possible. For example, if you want to change association name color (displayed under pages titles), you will find in Galette the CSS rule `#asso_name` that defines several parameters including the color. Then, in your stylesheet, you will just need the following:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:24
-# fe6a9eea62844d2290cbe044787b6ba5
+# 1e96e02eb7b34e39bd65c5c63a67501b
 msgid "This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be took into account by the Galette team, no support will be provided."
 msgstr ""
 
 #: ../usermanual/avancee.rst:26
-# 0e261125eb12423ca048ee05e8aa8da9
+# fb6684b53601415f9a1227f60a605450
 msgid "You also can override the print stylesheet, just create a ``galette_local_print.css`` file."
 msgstr ""
 
 #: ../usermanual/avancee.rst:29
-# b6dc78cf396545029cff7b3bb9042797
+# 0b370ab020e041978a129a9e9bd88e6b
 msgid "Add and change strings"
 msgstr ""
 
 #: ../usermanual/avancee.rst:31
-# 1b737f908d314cab9bc3d5ed8df4cb02
+# 790842fad86747e3a276e1e17ed66b6a
 msgid "It is possible if needed to customize translated strings in Galette - without editing any Galette source file. Just create a ``galette_{mylang}_local_lang.php`` file (where `{mylang}` must be replaced with the language, like `fr_FR.utf8` or `en_US`) in the ``lang`` directory. This file must contains a simple PHP array with the original string (the one in Galette source code) as index."
 msgstr ""
 
 #: ../usermanual/avancee.rst:33
-# 758c74776a104d9787875f0a5695bdcd
+# d4b7b7d2e60e49d4903903a8941c6438
 msgid "As example,  we want to change the \"Password\" string on the login page in french, translated as `Mot de passe :`. The original string is `Password:` (see ``galette/templates/default/index.tpl``), its french translation is `Mot de passe :` and we want to replace it with `Secret :`; so we will create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:41
-# 4cc1920892f241abb44e92bc08008606
+# 860fe6d76a224c0bba74e0bc108f9c6b
 msgid "Since Galette uses a cache system for translations, changes may not be visible immediately; you may have to restart PHP (or to clear cache). It is important to take the original string verbatim, punctuation included; and take care to escape single quotes (with a backslash) in all the strings."
 msgstr ""
 
 #: ../usermanual/avancee.rst:43
-# 27e79b3e3be74b7dba64f972bed1626c
+# f928d85c3e2b44b7a87ecc7c848eb051
 msgid "You also can override langs for plugins using the sam method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file."
 msgstr ""
 
 #: ../usermanual/avancee.rst:45
-# 4e4ae86bb6cc41dfb0362daf9a493235
+# ae27f3e2e3fa4b67ad6fb55a30d83d00
 msgid "This will work only if you use Galette translation features, and not with native gettext."
 msgstr ""
 
 #: ../usermanual/avancee.rst:48
-# c24a155b22f24eccb905c1e521fc8e11
-msgid "Log IP addresses behind a proxy"
+# 175f39314197485ea541b80324e86e63
+msgid "Change session lifetime"
 msgstr ""
 
 #: ../usermanual/avancee.rst:50
-# 9abac0bc91f84d0881f7f962caa18521
-msgid "If your Galette instance is behind a proxy, IP addresses stored in history will be the proxy one, and not the user one :("
+# be24dd1f3fa94b5dacee5b25f1adecf7
+msgid "Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). You can anyways define a constant named ``GALETTE_TIMEOUT`` to :ref:`change session lifetime using behavior configuration <behavior>`:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:52
-# d07c2b6aa4ab4f5ebd6139cd4bb834d9
-msgid "To fix that, create a ``config/behavior.inc.php`` file with the following contents:"
+#: ../usermanual/avancee.rst:60
+# 009f4a8642bc41fd8de77df9776d4481
+msgid "Log IP addresses behind a proxy"
 msgstr ""
 
-#: ../usermanual/avancee.rst:59
-# e85944348c524a9a9a25fda305e53f86
+#: ../usermanual/avancee.rst:62
+# 0dffc6fdd7c84dc1aafb69b6e91bcc94
+msgid "If your Galette instance is behind a proxy, IP address stored in history will be the proxy one, and not the user one :("
+msgstr ""
+
+#: ../usermanual/avancee.rst:64
+# 58bf33403a6545b389d880de8c5aa65d
+msgid "To fix that, :ref:`use behavior configuration <behavior>` to create a constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:71
+# 812bdb7b79fc42f28edbefc5cf583291
 msgid "Each proxy server will add its own address on the list, example above will work only if there is only one proxy server."
 msgstr ""
 
-#: ../usermanual/avancee.rst:63
-# d8687488a50748bb9b5740b51d821083
+#: ../usermanual/avancee.rst:75
+# f47cf8b5248649f09a8b5c6627e4c267
 msgid "For security reasons, do not use this if your instance is not behind a proxy!"
 msgstr ""
 
-#: ../usermanual/avancee.rst:66
-# bf599afd932449ac87df25dd36c51653
+#: ../usermanual/avancee.rst:78
+# b63fb714b73140d58f8bddce5af80d2d
 msgid "External stats"
 msgstr ""
 
-#: ../usermanual/avancee.rst:70
-# 4969c6b26dad4c2c85a675d4e87fbba2
+#: ../usermanual/avancee.rst:82
+# 8bcd105d1b614a57ad7ebfc1bbc88516
 msgid "Many statistics plaftforms relies on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included."
 msgstr ""
 
-#: ../usermanual/avancee.rst:75
-# e5dc94758b3743788b5fcf051bf389a6
+#: ../usermanual/avancee.rst:87
+# 28fb00fb44184a929e34b7a788048b05
 msgid "Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!"
 msgstr ""
 
-#: ../usermanual/avancee.rst:78
-# 40761e8d2c4c43b3bdaae20fd55114c1
+#: ../usermanual/avancee.rst:90
+# 4a15068c329346ce8b84baf2bbc60907
 msgid "Cards size and count"
 msgstr ""
 
-#: ../usermanual/avancee.rst:82
-# 7f2abffc83b1498787737439cb1d9eae
-msgid "Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can change that by :ref:`adding some constants <behavior>`:"
-msgstr ""
-
-#: ../usermanual/avancee.rst:86
-# f97cf99ca1f14beab8e5b6305c2d3af0
-msgid "Changing those values may cause gaps; change them with caution, and do not forget to test the result ;)"
-msgstr ""
-
-#: ../usermanual/avancee.rst:88
-# 3b25baabf18c464997e64dc8b2c7a913
-msgid "``GALETTE_CARD_WIDTH`` defines cards width,"
-msgstr ""
-
-#: ../usermanual/avancee.rst:89
-# cd92094e7c4445aca94e89e470ed5932
-msgid "``GALETTE_CARD_HEIGHT`` defines cards height,"
-msgstr ""
-
-#: ../usermanual/avancee.rst:90
-# 39cc634c7e9a4684aa917e3a38f704dd
-msgid "``GALETTE_CARD_COLS`` defines the number of columns,"
-msgstr ""
-
-#: ../usermanual/avancee.rst:91
-# cc58a0fddc8e424193acf5144846ce8c
-msgid "``GALETTE_CARD_ROWS`` defines the number of lines."
-msgstr ""
-
 #: ../usermanual/avancee.rst:94
-# 32f65e168d554354a1248190961876e8
-msgid "CSV exports"
-msgstr ""
-
-#: ../usermanual/avancee.rst:96
-# c71ad809b31c493aadfc0b54f15ebbb8
-msgid "Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.xml`` file. Its configuration is done with several parts:"
+# 06aa60922ed74ebbb03bfc80d54aeb8c
+msgid "Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can :ref:`use behavior configuration to configure cards<behavior>`, following constants are provided:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:98
-# af318050f1f5407f90111ab7d45d5d5a
-msgid "the SQL query to use,"
-msgstr ""
-
-#: ../usermanual/avancee.rst:99
-# c14d7d13ae914968acf9b157b121c2fd
-msgid "the columns to export,"
+# 9cd03a0c1f424941a40b57b5b76f7e8e
+msgid "Changing those values may cause gaps; change them with caution, and do not forget to test the result ;)"
 msgstr ""
 
 #: ../usermanual/avancee.rst:100
-# 3cd1e0e612e34b38ad627b42fedcfc15
-msgid "the CSV separator,"
+# 4c88f7c895c3405b8378ace539eeb327
+msgid "``GALETTE_CARD_WIDTH`` defines cards width,"
 msgstr ""
 
 #: ../usermanual/avancee.rst:101
-# 69d57284b036455ba3c050d063ecd1e8
+# 410fdb76ed9a4092a81792aab69d921d
+msgid "``GALETTE_CARD_HEIGHT`` defines cards height,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:102
+# 60a4d4c995334af5ae66a5b92d24c688
+msgid "``GALETTE_CARD_COLS`` defines the number of columns,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:103
+# d9b73bebd1834a67ae720a53aa63d829
+msgid "``GALETTE_CARD_ROWS`` defines the number of lines."
+msgstr ""
+
+#: ../usermanual/avancee.rst:106
+# 9c1b46e7a978430b869f0c6e3262fce2
+msgid "CSV exports"
+msgstr ""
+
+#: ../usermanual/avancee.rst:108
+# 2820fa30b5634d628a933ee340294131
+msgid "Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.xml`` file. Its configuration is done with several parts:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:110
+# 1a915326f2fb479885c6c582c60fc130
+msgid "the SQL query to use,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:111
+# dbdee85f9a0f45a595c8a21171b4872d
+msgid "the columns to export,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:112
+# d6aba5be13df4a5795c067c3526efd39
+msgid "the CSV separator,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:113
+# 2782882bc8ff40519015c4db7f6cf294
 msgid "the strings separator character."
 msgstr ""
 
-#: ../usermanual/avancee.rst:105
-# 502f60734ea44f1e8f06dff018928625
+#: ../usermanual/avancee.rst:117
+# 523f8ead2b414c94ac1019904ba83fc8
 msgid "Configuration of CSV exports is done in a XML file, that **must** be vaild!"
 msgstr ""
 
-#: ../usermanual/avancee.rst:107
-# 4e8f472a8acf41fab27a45faea5838ac
+#: ../usermanual/avancee.rst:119
+# 36ca4462722c47579295200081340d93
 msgid "If it is not, no export will be proposed from the user interface. Under linux, you can use tools like ``xmlwf`` or ``xmllint`` to ensure your file is valid."
 msgstr ""
 
-#: ../usermanual/avancee.rst:109
-# 42adab909c244053932c14aa1054373b
+#: ../usermanual/avancee.rst:121
+# 4986fbad39154b4aab68c8c771a72453
 msgid "Let's examine contributions parameted export:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:142
-# 172a9779cb4f4308a731f3c102769e29
+#: ../usermanual/avancee.rst:154
+# 682108649abf4f148cb4febd7e4030a2
 msgid "Each parameted export is defined inside a tag named ``export``, which contains a unique identifier (``id``), a description displayed in the user interface (``name``) and output filename (``filename``). The ``query`` tag contains the SQL query to execute, there is no other limitation than the SQL engine ones."
 msgstr ""
 
-#: ../usermanual/avancee.rst:144
-# 8ffb8d3151b84e8d9fc6d86d0a24562a
+#: ../usermanual/avancee.rst:156
+# 13b1144800da48b3a47d922f4510e397
 msgid "The ``headers`` part defines columns that will be exported, the ``separator`` tag the CSV separator and the ``quote`` tag the strings separator."
 msgstr ""
 
-#: ../usermanual/avancee.rst:149
-# 42798b36a4bf40f0bb1ed4b60cdff18a
+#: ../usermanual/avancee.rst:161
+# dc42621488b548eeb7e07095bd7b6751
 msgid "Administration tools"
 msgstr ""
 
-#: ../usermanual/avancee.rst:153
-# 92b23e4d591949d69400a7aa417ccd87
+#: ../usermanual/avancee.rst:165
+# 2a99707e02094b5398e801b4d43e7bc2
 msgid "All the admin tools operation are destructive, use it with cautions, and **make sure you did a database backup** before!"
 msgstr ""
 
-#: ../usermanual/avancee.rst:155
-# b8d9668253ec490cb463a011ba4bdb79
+#: ../usermanual/avancee.rst:167
+# 1c578f9418ed4d4b83b002c7d5c1ec12
 msgid "There are a few tools provided for Galette admin that permits to:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:157
-# 78e0cb9c2a2e4114aa9e1a65de4fd669
+#: ../usermanual/avancee.rst:169
+# 619acd95b45e475b9bd2b6e1b582f6da
 msgid "**reinitialize mailings contents** will reset all emails contents to default values,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:158
-# cecfa879e2d34ac9a64e1da437203960
+#: ../usermanual/avancee.rst:170
+# 3032f80400cb4c2591dc166a2fb1a4a2
 msgid "**reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:159
-# 8a818dbd988740e1b153ab2b4c80ba12
+#: ../usermanual/avancee.rst:171
+# feabe0c1c39c4fad927c3e0aa5fadaf3
 msgid "**reinitialize PDF models** will reset ll PDF models to default values,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:160
-# 31a41495860343dda9f87b1a425f25dd
+#: ../usermanual/avancee.rst:172
+# 88ed7f55ed2c4fab90a780919349b47d
 msgid "**generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database."
 msgstr ""
 

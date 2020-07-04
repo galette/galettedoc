@@ -3,7 +3,7 @@
 .. _libraries:
 
 **********************
-Technical informations
+Technical information
 **********************
 
 Third party libs
@@ -81,8 +81,8 @@ TCPDF
 
 .. _ui:
 
-Interface utilisateur
----------------------
+User interface
+--------------
 
 .. image:: ../_styles/static/images/libraries/jquery.png
    :width: 140px

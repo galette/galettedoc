@@ -16,7 +16,7 @@ Installation
    This plugin requires Galette 0.9.1 to work!
 
 First of all, download the plugin:
-https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.2.0.tar.bz2
+https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.3.0.tar.bz2
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
@@ -37,7 +37,7 @@ And this is finished; Events plugin is installed :)
 Plugin usage
 ============
 
-When the plugin is installed, an `Events` group is added to Galette menu when a user is logged in. There are various possibilities that change depending on user profile (simple member, group manager, administrator, ...)?
+When the plugin is installed, an `Events` group is added to Galette menu when a user is logged in. There are various possibilities that change depending on user profile (simple member, group manager, administrator, ...).
 
 Activities
 ----------

@@ -1,18 +1,21 @@
+# Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-20 21:12+0200\n"
-"PO-Revision-Date: 2020-02-15 08:24+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"POT-Creation-Date: 2020-06-14 10:39+0200\n"
+"PO-Revision-Date: 2020-06-20 04:19+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/"
+"usermanual-preferences/fr/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../usermanual/preferences.rst:5
 msgid "Galette preferences"
@@ -70,8 +73,7 @@ msgstr "**Pays**,"
 
 #: ../usermanual/preferences.rst:27
 msgid "**Postal address**: choose which postal address will be used:"
-msgstr ""
-"**Adresse postale** : choisissez l'adresse postale qui sera utilisée :"
+msgstr "**Adresse postale** : choisissez l'adresse postale qui sera utilisée :"
 
 #: ../usermanual/preferences.rst:29
 msgid "either **from the preferences** to use the one entered in the form,"
@@ -90,11 +92,11 @@ msgstr "**Site web** : URL du site web,"
 
 #: ../usermanual/preferences.rst:33
 msgid ""
-"**Telemetry date**: date on which `telemetry infomations "
-"<https://telemetry.galette.eu>`_ was sent,"
+"**Telemetry date**: date on which `telemetry infomations <https://telemetry."
+"galette.eu>`_ was sent,"
 msgstr ""
-"**Date de télémétrie**: date à laquelle `les informations de télémétrie "
-"<https://telemetry.galette.eu>`_ ont été envoyées,"
+"**Date de télémétrie** : date à laquelle `les informations de télémétrie "
+"<https ://telemetry.galette.eu>`_ ont été envoyées,"
 
 #: ../usermanual/preferences.rst:34
 msgid ""
@@ -102,7 +104,7 @@ msgid ""
 "<https://telemetry.galette.eu/reference>`_"
 msgstr ""
 "**Date d'enregistrement** : la `date d’enregistrement de votre instance de "
-"Galette  <https://telemetry.galette.eu/reference>`_"
+"Galette <https://telemetry.galette.eu/reference>`_"
 
 #: ../usermanual/preferences.rst:37
 msgid "Parameters"
@@ -128,11 +130,11 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:48
 msgid ""
-"**After member creation**: defines action to execute after a member has been"
-" added:"
+"**After member creation**: defines action to execute after a member has been "
+"added:"
 msgstr ""
 "**Après la création d'un adhérent** : détermine l'action à effectuer après "
-"qu'un adhérent ait été ajouté,"
+"qu'un adhérent ait été ajouté :"
 
 #: ../usermanual/preferences.rst:50
 msgid "create a new contribution,"
@@ -172,12 +174,12 @@ msgstr "Désactivé,"
 
 #: ../usermanual/preferences.rst:62
 msgid ""
-"**Default membership status**: the status to affect to all new created users"
-" (can be changed on creation form if current user have rights),"
+"**Default membership status**: the status to affect to all new created users "
+"(can be changed on creation form if current user have rights),"
 msgstr ""
-"**Statut d'adhésion par défaut** : le statut à affecter à tous les adhérents"
-" créés (peut être modifié depuis le formulair de création si l'utilisateur "
-"en a le droit),"
+"**Statut d'adhésion par défaut** : le statut à affecter à tous les adhérents "
+"créés (peut être modifié depuis le formulair de création si l'utilisateur en "
+"a le droit),"
 
 #: ../usermanual/preferences.rst:63
 msgid ""
@@ -189,7 +191,7 @@ msgstr ""
 #: ../usermanual/preferences.rst:64
 msgid "**Default membership extension**: membership extension in months,"
 msgstr ""
-"**Durée d'adhésion par défaut** :  extension de la souscription en mois,"
+"**Durée d'adhésion par défaut** : extension de la souscription en mois,"
 
 #: ../usermanual/preferences.rst:65
 msgid "**Beginning of membership**: beginning date of the financial period,"
@@ -197,8 +199,7 @@ msgstr "**Date de début d'exercice** : la date de début de l'exercice fiscal,"
 
 #: ../usermanual/preferences.rst:66
 msgid "**Public pages enabled**: enable or disable public pages,"
-msgstr ""
-"**Pages publiques actives** : active ou désactive les pages publiques,"
+msgstr "**Pages publiques actives** : active ou désactive les pages publiques,"
 
 #: ../usermanual/preferences.rst:67
 msgid "**Show public pages for**: defines who can see public pages:"
@@ -221,7 +222,7 @@ msgstr "**Administrateurs et membres du bureau**,"
 #: ../usermanual/preferences.rst:73
 msgid ""
 "**Self subscription enabled**: enable or disable self subscription feature,"
-msgstr "**Enregistrement actif** : active ou désactive l'auto-enregistrement"
+msgstr "**Enregistrement actif** : active ou désactive l'auto-enregistrement,"
 
 #: ../usermanual/preferences.rst:74
 msgid ""
@@ -241,34 +242,31 @@ msgid ""
 msgstr ""
 "**galette://** : appel d'un script fourni par Galette qui sera appelé avec "
 "une méthode HTTP POST. Le chemin doit être relatif à votre installation de "
-"Galette. Par exemple, l' URI pour le script d'exemple "
-"``galette/post_contribution_test.php`` serait "
-"`galette://post_contribution_test.php`."
+"Galette. Par exemple, l' URI pour le script d'exemple ``galette/"
+"post_contribution_test.php`` serait `galette://post_contribution_test.php`."
 
 #: ../usermanual/preferences.rst:77
 msgid ""
 "**get://** or **post://**: use HTTP GET or POST method to call a web "
 "address, prefix will be replaced with ``http://``,"
 msgstr ""
-"**get://** ou **post://** : utilise la méthode HTTP GET ou POST pour appeler"
-" une adresse web, le préfixe sera remplacé par ``http://``,"
+"**get://** ou **post://** : utilise la méthode HTTP GET ou POST pour appeler "
+"une adresse web, le préfixe sera remplacé par ``http://``,"
 
 #: ../usermanual/preferences.rst:78
 msgid ""
 "**file://**: call a file on the web server, full path must be provided. "
 "Destination script must be executable, and should define a shellbang if "
-"necessary. An email that contains contribution informations and script "
-"return (if any) will be sent to the administrator if an error occurs. The "
-"behavior is the same as cron : if the script outputs something, a mail is "
-"sent."
+"necessary. An email that contains contribution information and script return "
+"(if any) will be sent to the administrator if an error occurs. The behavior "
+"is the same as cron : if the script outputs something, a mail is sent."
 msgstr ""
 "**file://** : appel d'un fichier sur le serveur web, le chemin complet doit "
 "être fourni. Le script de destination doit être exécutable et devrait "
 "définir un shellbang si nécessaire. Un courriel qui contient les "
 "informations de distribution et le retour du script (s'il y en a un) sera "
 "envoyé à l’administrateur si une erreur survient. Le comportement est les "
-"même que pour  cron : si le script produit une sortie, un courriel est "
-"envoyé."
+"même que pour cron : si le script produit une sortie, un courriel est envoyé."
 
 #: ../usermanual/preferences.rst:82
 msgid ""
@@ -288,8 +286,7 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:85
 msgid ""
-"**Galette base URL**: Galette instance URL, if the one proposed is "
-"incorrect,"
+"**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
 msgstr ""
 "**URL de Galette** : URL de votre instance de Galette, si celle qui est "
 "proposée est incorrecte,"
@@ -303,7 +300,7 @@ msgstr ""
 "pourrait causer des instabilités."
 
 #: ../usermanual/preferences.rst:91
-msgid "A contextual help is provided, check it for more informations."
+msgid "A contextual help is provided, check it for more information."
 msgstr ""
 "Une aide contextuelle est fournie, veuillez vous-y référer pour davantage "
 "d'informations."
@@ -334,11 +331,10 @@ msgstr "**Courriel expéditeur** : adresse de courriel de l'expéditeur,"
 
 #: ../usermanual/preferences.rst:107
 msgid ""
-"**Reply-to email**: reply email address. If empty, sender email will be "
-"used,"
+"**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 "**Courriel de réponse** : l'adresse de courriel de réponse. Si elle est "
-"vide, l'adresse de l'expéditeur sera utilisée."
+"vide, l'adresse de l'expéditeur sera utilisée,"
 
 #: ../usermanual/preferences.rst:108
 msgid ""
@@ -346,9 +342,9 @@ msgid ""
 "notifications will be send, you can set several addresses separated with "
 "comas,"
 msgstr ""
-"**Courriel de l'administrateur**: l'adresse de courriel sur laquelle les "
+"**Courriel de l'administrateur** : l'adresse de courriel sur laquelle les "
 "notifications d'inscription seront envoyées, vous pouvez déclarer plusieurs "
-"adresses séparées par des virgules."
+"adresses séparées par des virgules,"
 
 #: ../usermanual/preferences.rst:109
 msgid ""
@@ -365,7 +361,7 @@ msgid ""
 msgstr ""
 "**Scinder les courriels texte** : scinde automatiquement les longues lignes "
 "dans les courriels. Si vous désactivez cette option, vous devrez le faire "
-"vous même."
+"vous même,"
 
 #: ../usermanual/preferences.rst:111
 msgid ""
@@ -392,8 +388,8 @@ msgid ""
 "**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
 "parameters (recommended when possible),"
 msgstr ""
-"**Fonction PHP mail** : utilise la fonction php ``mail()`` et les paramètres"
-" relatifs (recommandé si possible),"
+"**Fonction PHP mail** : utilise la fonction php ``mail()`` et les paramètres "
+"relatifs (recommandé si possible),"
 
 #: ../usermanual/preferences.rst:116
 msgid ""
@@ -479,7 +475,7 @@ msgid ""
 msgstr ""
 "**Utiliser l'authentification SMTP** : si votre serveur requiert une "
 "authentification. Dans ce cas, vous devrez également renseigner les nom "
-"d'utilisateur et mot de passe."
+"d'utilisateur et mot de passe,"
 
 #: ../usermanual/preferences.rst:137
 msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
@@ -493,7 +489,7 @@ msgid ""
 "signed for example)."
 msgstr ""
 "**Autoriser TLS non sécurisé** : dans certains cas, le certificat SSL peut-"
-"être invalide (auto signé  par exemple),"
+"être invalide (auto signé par exemple)."
 
 #: ../usermanual/preferences.rst:140
 msgid ""
@@ -501,7 +497,7 @@ msgid ""
 "currently stored as members administrator."
 msgstr ""
 "Le bouton `Test des paramètres courriels` enverra un message de test à "
-"l'adresse actuellement enregistrée de l'administrateur des adhérents,"
+"l'adresse actuellement enregistrée de l'administrateur des adhérents."
 
 #: ../usermanual/preferences.rst:143
 msgid "Labels"
@@ -512,10 +508,231 @@ msgid "Cards"
 msgstr "Cartes"
 
 #: ../usermanual/preferences.rst:159
+msgid "Security"
+msgstr "Sécurité"
+
+#: ../usermanual/preferences.rst:165
+msgid ""
+"Complex password rules are not user friendly; but security is mainly never :)"
+msgstr ""
+"Les règles de mots de passes complexes ne sont pas évidentes pour les "
+"utilisateurs, mais la sécurité ne l'est pour ainsi dire jamais :)"
+
+#: ../usermanual/preferences.rst:167
+msgid ""
+"Of course, all passwords should be as secure as possible, but this is "
+"especially true for all accounts that have privileges (staff, admin, super-"
+"admin); you may explain your users why this is important."
+msgstr ""
+"Bien sûr, tous les mots de passe devraient être aussi sécurisés que "
+"possible, mais c'est particulièrement vrai pour les comptes qui ont des "
+"privilèges (membres du bureau, admin, super-admin) ; vous devriez expliquer "
+"à vos utilisateurs pourquoi c'est important."
+
+#: ../usermanual/preferences.rst:169
+msgid "You can enforce some rules for members (and super-admin) passwords:"
+msgstr ""
+"Vous pouvez requérir certaines règles pour les mots de passe des "
+"utilisateurs (et su super-admin) :"
+
+#: ../usermanual/preferences.rst:171
+msgid "minimum length (6 characters or more),"
+msgstr "longueur minimale (6 caractères ou plus),"
+
+#: ../usermanual/preferences.rst:172
+msgid "minimum \"strength\","
+msgstr "\"complexité\" minimale,"
+
+#: ../usermanual/preferences.rst:173
+msgid "blacklist,"
+msgstr "liste noire,"
+
+#: ../usermanual/preferences.rst:174
+msgid "no personal information."
+msgstr "pas d'informations personnelles."
+
+#: ../usermanual/preferences.rst:181
+msgid ""
+"Length is still the only rule that is active per default, just configure the "
+"number of characters required. On passwords fields, failures will be "
+"displayed on the fly; as well as a \"strength meter\" displayed for "
+"information."
+msgstr ""
+"La longueur est toujours la seule règle active par défaut, configurez juste "
+"le nombre de caractères requis. Sur les champs mot de passe, les erreurs "
+"seront affichées à la volée ; ainsi qu'une \"barre de complexité\" affichée "
+"pour information."
+
+#: ../usermanual/preferences.rst:185
+msgid ""
+"If you enable password checks, it is not possible to know if some of "
+"existing ones does not respect them. Galette will display a warning at login "
+"if checks are not respected, but login will still be possible!"
+msgstr ""
+"Si vous activez la vérification des mots de passe, il n'est pas possible de "
+"savoir ceux qui existent et qui ne les respecteraient pas. Galette affichera "
+"un avertissement au login si les vérifications ne sont pas respectées, mais "
+"il sera toujours possible de se connecter !"
+
+#: ../usermanual/preferences.rst:187
+msgid ""
+"But wait... Password security is important, but Galette does not enforce "
+"nothing! Isn't that dumb? Well, not really. For tests or entirely private "
+"instances, security may be less important; and in some cases, being too "
+"restrictive may be an issue for your users; that's why this is up to you to "
+"secure as needed; just like using SSL or not :)"
+msgstr ""
+"Mais... La sécurité des mots de passe est importante, mais Galette ne force "
+"rien ! N'est-ce pas idiot ? Hé bien... Pas vraiment. Pour les instances de "
+"tests ou entièrement privées, la sécurité peut être de moindre importance ; "
+"et dans certains cas, être trop restrictif peut être un problème pour vos "
+"utilisateurs ; c'est pourquoi il vous revient de configurer la sécurité, "
+"tout comme utiliser ou pas SSL :)"
+
+#: ../usermanual/preferences.rst:190
+msgid "Password strength"
+msgstr "Complexité du mot de passe"
+
+#: ../usermanual/preferences.rst:192
+msgid "Password strength calculation is quite simple. It is based on 4 rules:"
+msgstr ""
+"Le calcul de la complexité du mot de passe est assez simple. Elle est basée "
+"sur 4 règles :"
+
+#: ../usermanual/preferences.rst:194
+msgid "contains lower case characters,"
+msgstr "contient des lettres minuscules,"
+
+#: ../usermanual/preferences.rst:195
+msgid "contains upper case characters,"
+msgstr "contient des lettres majuscules,"
+
+#: ../usermanual/preferences.rst:196
+msgid "contains number,"
+msgstr "contient des chiffres,"
+
+#: ../usermanual/preferences.rst:197
+msgid "contains special characters."
+msgstr "contient des caractères spéciaux."
+
+#: ../usermanual/preferences.rst:199
+msgid "You can choose between 5 values for strength configuration:"
+msgstr ""
+"Vous pouvez choisir parmi 5 valeurs dans la configuration de la complexité :"
+
+#: ../usermanual/preferences.rst:201
+msgid ""
+"**none**: (default): disables strength checks and check for personal "
+"information,"
+msgstr ""
+"**aucun** : (défaut) désactive la vérification de la complexité et des "
+"informations personnelles,"
+
+#: ../usermanual/preferences.rst:202
+msgid ""
+"**weaker**: enables check for personal information, only one of the rule is "
+"mandatory,"
+msgstr ""
+"**faible** : active la vérification des informations personnelles, seule une "
+"règle est obligatoire,"
+
+#: ../usermanual/preferences.rst:203
+msgid "**medium**: two rules are mandatory,"
+msgstr "**moyen** : deux règles sont obligatoires,"
+
+#: ../usermanual/preferences.rst:204
+msgid "**strong**: three rules are mandatory,"
+msgstr "**fort** : trois règles sont obligatoires,"
+
+#: ../usermanual/preferences.rst:205
+msgid "**very strong**: the four rules are mandatory."
+msgstr "**très fort** : toutes les règles sont obligatoires."
+
+#: ../usermanual/preferences.rst:208
+msgid "Blacklisted passwords"
+msgstr "Liste noire des mots de passe"
+
+#: ../usermanual/preferences.rst:210
+msgid ""
+"A default list of 500 common passwords is provided as a blacklist you can "
+"enable, \"galette\" is also blacklisted."
+msgstr ""
+"Une liste par défaut de 500 mots de passe communs est fournie en liste noire "
+"que vous pouvez activer, \"galette\" est égaleement interdit."
+
+#: ../usermanual/preferences.rst:214
+msgid ""
+"The ``galette/data/blacklist.txt`` file is used to list blacklisted terms "
+"(one per line). You can provide your own file, we advice you to complete the "
+"existing one."
+msgstr ""
+"Le fichier ``galette/data/blacklist.txt`` est utilisé pour lister les termes "
+"interdits (un par ligne). Vous pouvez utiliser votre propre fichier, nous "
+"vous conseillons de compléter celui qui existe."
+
+#: ../usermanual/preferences.rst:217
+msgid "Personal information as password"
+msgstr "Informations personnelles pour mot de passe"
+
+#: ../usermanual/preferences.rst:219
+msgid ""
+"This check rely on strength activation (all but **none** level). For the "
+"super-admin account, this will just ensure you are not using login as "
+"password. For standard accounts, there are several information involved:"
+msgstr ""
+"Cette vérification s'appuie sur l'activation des règles de complexité (pour "
+"tous les niveaux sauf **aucun**). Pour le compte super administrateur, elle "
+"se contentera de vérifier que le mot de passe et l'identifiant ne sont pas "
+"les mêmes. Pour les comptes standards, plusieurs informations sont prises en "
+"compte :"
+
+#: ../usermanual/preferences.rst:221
+msgid "name,"
+msgstr "nom,"
+
+#: ../usermanual/preferences.rst:222
+msgid "surname,"
+msgstr "prénom,"
+
+#: ../usermanual/preferences.rst:223
+msgid "nickname,"
+msgstr "pseudo,"
+
+#: ../usermanual/preferences.rst:224
+msgid "login,"
+msgstr "identifiant,"
+
+#: ../usermanual/preferences.rst:225
+msgid "email,"
+msgstr "adresse de courriel,"
+
+#: ../usermanual/preferences.rst:226
+msgid "birthdate,"
+msgstr "date de naissance,"
+
+#: ../usermanual/preferences.rst:227
+msgid "town"
+msgstr "ville"
+
+#: ../usermanual/preferences.rst:229
+msgid ""
+"Basically, user cannot use verbatim any of those information as password. "
+"Some possible combinations are also checked, like surname and name couple "
+"(or name and surname), first letter of surname with name, etc. Birthdate "
+"will be checked in different formats as well (localized, international, and "
+"some variants)."
+msgstr ""
+"Les utilisateurs ne pourront utiliser aucune de ces informations comme mot "
+"de passe telles quelles. Certaines combinaisons possibles sont également "
+"vérifiées, comme le couple prénom et nom (ou nom et prénom), la première "
+"lettre du prénom avec le nom, etc. La date de naissance sera vérifiée avec "
+"plusieurs formats également (localisé, international, et quelques variantes)."
+
+#: ../usermanual/preferences.rst:232
 msgid "Admin"
 msgstr "Administrateur"
 
-#: ../usermanual/preferences.rst:163
+#: ../usermanual/preferences.rst:236
 msgid ""
 "This tab wil be present only if you are logged in as super administrator."
 msgstr ""

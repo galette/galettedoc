@@ -38,7 +38,7 @@ Next screen ask you for installation type. You'll choose beetween "New installat
 Database
 ========
 
-First of all, make sure the database exists, and prepare all required informations:
+First of all, make sure the database exists, and prepare all required information:
 
 * host name
 * database user name
@@ -89,7 +89,7 @@ On that screen, select your database type, and enter hostname, database name, us
    :scale: 70%
    :align: center
 
-This step is the same for installation and update processes. If a configuration file already exists, Galette will grab the informations to pre fill the form (not for the password). When upgrading, double check the prefix fit the existing one.
+This step is the same for installation and update processes. If a configuration file already exists, Galette will grab the information to pre fill the form (not for the password). When upgrading, double check the prefix fit the existing one.
 
 Checks
 ------
@@ -109,14 +109,14 @@ Create tables
 
 If a connection can be established to the database, and all is correct; installer will now create the tables, and insert default values. You can show created tables from any graphical tool or in command line:
 
-* MariaDB :
+* MariaDB:
 
   .. code-block:: bash
 
      mysql> use mygalette;
      mysql> show tables;
 
-* PostgreSQL :
+* PostgreSQL:
 
   .. code-block:: bash
 
@@ -132,7 +132,7 @@ Admin parameters
 
 .. note:: This screen is displayed from installation only. When updating, super admin user is already existing.
 
-Next screen will ask you for informations to create the Galette super admin user. Using Galette, you can set some members as administrators, but the one created at installation time is not a member, cannot be removed, and has some extra rights.
+Next screen will ask you for information to create the Galette super admin user. Using Galette, you can set some members as administrators, but the one created at installation time is not a member, cannot be removed, and has some extra rights.
 
 .. image:: ../_styles/static/images/installation/6_admin.png
    :scale: 70%
@@ -166,7 +166,7 @@ Installation is now finished, congratulations!
    :scale: 70%
    :align: center
 
-You can now login to Galette, using super admin informations you used at installation time. You can now go to the :doc:`Galette user manual <../usermanual/index>`.
+You can now login to Galette, using super admin information you used at installation time. You can now go to the :doc:`Galette user manual <../usermanual/index>`.
 
 .. image:: ../_styles/static/images/installation/9_login.png
    :scale: 70%
