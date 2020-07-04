@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-20 08:55+0200\n"
+"POT-Creation-Date: 2020-07-04 14:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,36 +42,46 @@ msgid "Specific cases"
 msgstr ""
 
 #: ../installation/ftp.rst:22
+# daf2d5467f7a445e94d40a131ab1b5ef
+msgid "Ionos"
+msgstr ""
+
+#: ../installation/ftp.rst:24
+# e58a03f4586f4ade93c8cdf5aa3a66a4
+msgid "If you're hosted on Ionos; and want to use a specific subdomain for Galette, you must create your subdomain from their UI, and make it points to the ``webroot`` directory. You also have to edit the ``.htaccess`` file it contains, and uncomment the ``RewriteBase /`` directive."
+msgstr ""
+
+#: ../installation/ftp.rst:27
 # a880bd8ec8964c13a18e331e477e1ed1
 msgid "OVH"
 msgstr ""
 
-#: ../installation/ftp.rst:24
+#: ../installation/ftp.rst:29
 # 04fb9e1ff727400d8a0dc7ea42ff0b79
 msgid "This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
 msgstr ""
 
-#: ../installation/ftp.rst:26
+#: ../installation/ftp.rst:31
 # 5b289abe45bd4938aa4b4b356ab33fe4
 msgid "Additionnal information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 
-#: ../installation/ftp.rst:30
+#: ../installation/ftp.rst:35
 # 8c4c223edd5e40fa8f3da69d7b9ae2cd
 msgid "Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:"
 msgstr ""
 
-#: ../installation/ftp.rst:37
+#: ../installation/ftp.rst:42
 # d7d5ef05d90f46779d8756e41badcccf
 msgid "Nginx"
 msgstr ""
 
-#: ../installation/ftp.rst:39
+#: ../installation/ftp.rst:44
 # 8f899f6e136043b587b292e2cbb3c9b5
 msgid "`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
 msgstr ""
 
-#: ../installation/ftp.rst:41
+#: ../installation/ftp.rst:46
 # b0fecd17ab2f46d58260ce08b4b049f0
 msgid "So you have to convert restriction access files in Nginx configuration, as for example:"
 msgstr ""
