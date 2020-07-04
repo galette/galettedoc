@@ -5,11 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-04 14:48+0200\n"
+"POT-Creation-Date: 2020-07-04 15:26+0200\n"
 "PO-Revision-Date: 2020-07-04 13:23+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/galette/"
-"doc-install-prepare/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
+"install-prepare/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -157,11 +157,11 @@ msgstr ""
 msgid "Nginx would be:"
 msgstr "Pour Nginx, ce serait :"
 
-#: ../installation/unix.rst:4
+#: ../installation/preparation.rst:122
 msgid "Linux/Unix"
 msgstr "Linux/Unix"
 
-#: ../installation/unix.rst:6
+#: ../installation/preparation.rst:124
 msgid ""
 "Installing Galette on Linux implies you have an access to the terminal on "
 "the server and required ACLs on directories."
@@ -169,13 +169,13 @@ msgstr ""
 "Installer Galette sous Linux implique que vous ayez accès à une console sur "
 "le serveur, et les droits requis sur les répertoires."
 
-#: ../installation/unix.rst:8
+#: ../installation/preparation.rst:126
 msgid ""
 "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 "Par exemple, sur `Fedora <https ://fedora.org>`_, vous lancerez (en root) :"
 
-#: ../installation/unix.rst:15
+#: ../installation/preparation.rst:133
 msgid ""
 "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
 "``www-data:www-data``."
@@ -183,11 +183,11 @@ msgstr ""
 "Sous `Debian <https://debian.org/>`_, on remplacera ``apache:apache`` par "
 "``www-data:www-data``."
 
-#: ../installation/unix.rst:17
+#: ../installation/preparation.rst:135
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr "Sur les systèmes avec SELinux activé, on ajoutera :"
 
-#: ../installation/unix.rst:25
+#: ../installation/preparation.rst:143
 msgid ""
 "You will also have to authorize webserver to connect to the network, with a "
 "SELinux boolean:"
@@ -195,11 +195,11 @@ msgstr ""
 "Vous devrez aussi autoriser le serveur web à se connecter au réseau, avec un "
 "booléen SELinux :"
 
-#: ../installation/ftp.rst:4
+#: ../installation/preparation.rst:152
 msgid "FTP"
 msgstr "FTP"
 
-#: ../installation/ftp.rst:8
+#: ../installation/preparation.rst:156
 msgid ""
 "Some archive or FTP softwares may corrupt files... It is strongly adviced if "
 "you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
@@ -210,7 +210,7 @@ msgstr ""
 "`7zip <https://www.7-zip.fr>`_ pour décompresser les archives et `FileZilla "
 "<https://filezilla-project.org/>`_ pour les transferts FTP."
 
-#: ../installation/ftp.rst:10
+#: ../installation/preparation.rst:158
 msgid ""
 "Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar."
 "bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
@@ -219,7 +219,7 @@ msgstr ""
 "{galette.tar.bz2}` sous Linux/Unix/MacOS ou un outil de gestion graphique "
 "sous Windows."
 
-#: ../installation/ftp.rst:12
+#: ../installation/preparation.rst:160
 msgid ""
 "Just copy the uncompressed directory obtained, and all its sub directories "
 "and files, with your FTP client."
@@ -227,17 +227,17 @@ msgstr ""
 "Copiez simplement le dossier obtenu après décompression, ainsi que tous les "
 "fichiers et dossiers qu'ils contient, à l'aide de votre client FTP."
 
-#: ../installation/ftp.rst:19
+#: ../installation/preparation.rst:167
 msgid "Specific cases"
 msgstr "Cas particuliers"
 
 # a2fd9686759248da9ce7554211e4c5e4
-#: ../installation/ftp.rst:22
+#: ../installation/preparation.rst:170
 msgid "Ionos"
 msgstr "Ionos"
 
 # 314c1642d1934fcbb3f9c9acb97299e9
-#: ../installation/ftp.rst:24
+#: ../installation/preparation.rst:172
 msgid ""
 "If you're hosted on Ionos; and want to use a specific subdomain for Galette, "
 "you must create your subdomain from their UI, and make it points to the "
@@ -250,11 +250,11 @@ msgstr ""
 "également modifier le fichier ``.htaccess`` qu'il contient, et décommenter "
 "la directive ``RewriteBase /``."
 
-#: ../installation/ftp.rst:27
+#: ../installation/preparation.rst:175
 msgid "OVH"
 msgstr "OVH"
 
-#: ../installation/ftp.rst:29
+#: ../installation/preparation.rst:177
 msgid ""
 "This hosting compay offers to `change PHP version you use from your customer "
 "account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
@@ -264,7 +264,7 @@ msgstr ""
 "depuis l'interface client <https://docs.ovh.com/fr/hosting/configurer-le-php-"
 "sur-son-hebergement-web-mutu-2014/>`_."
 
-#: ../installation/ftp.rst:31
+#: ../installation/preparation.rst:179
 msgid ""
 "Additionnal information are available at: https://docs.ovh.com/fr/fr/web/"
 "hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
@@ -273,7 +273,7 @@ msgstr ""
 "ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-"
 "mutu-2014/"
 
-#: ../installation/ftp.rst:35
+#: ../installation/preparation.rst:183
 msgid ""
 "Many users have display images or emargement list issues on OVH hosts. The "
 "solution to this issue is to create a `.ovhconfig` file at your hosting root "
@@ -284,11 +284,11 @@ msgstr ""
 "un fichier `.ovhconfig` à la racine de votre hébergement avec le contenu "
 "suivant :"
 
-#: ../installation/ftp.rst:42
+#: ../installation/preparation.rst:190
 msgid "Nginx"
 msgstr "Nginx"
 
-#: ../installation/ftp.rst:44
+#: ../installation/preparation.rst:192
 msgid ""
 "`Nginx webserver <https://nginx.com>`_ configuration is different from "
 "Apache one (see `Nginx documentation for a more complete explanation "
@@ -300,7 +300,7 @@ msgstr ""
 "informations <https://www.nginx.com/resources/wiki/start/topics/examples/"
 "likeapache-htaccess/>`_)."
 
-#: ../installation/ftp.rst:46
+#: ../installation/preparation.rst:194
 msgid ""
 "So you have to convert restriction access files in Nginx configuration, as "
 "for example:"
@@ -308,11 +308,11 @@ msgstr ""
 "Donc vous devrez convertir les fichiers de restriction d'accès dans la "
 "configuration Nginx, comme par exemple :"
 
-#: ../installation/windows.rst:4
+#: ../installation/preparation.rst:205
 msgid "Windows"
 msgstr "Windows"
 
-#: ../installation/windows.rst:6
+#: ../installation/preparation.rst:207
 msgid ""
 "Installation described here rely on `XAMPP <https://www.apachefriends.org/"
 "xampp-windows.html>`_; other installation methods exist but are not listed "
@@ -322,7 +322,7 @@ msgstr ""
 "fr/xampp-windows.html>` ; d'autres méthodes existent mais ne sont pas "
 "listées ici."
 
-#: ../installation/windows.rst:8
+#: ../installation/preparation.rst:209
 msgid ""
 "First of all, download XAMPP on your computer. Let's install it under ``C:"
 "\\xampp``."
@@ -330,7 +330,7 @@ msgstr ""
 "Tout d'abord, téléchargez XAMPP sur votre ordinateur. installons le dans ``C:"
 "\\xampp``."
 
-#: ../installation/windows.rst:14
+#: ../installation/preparation.rst:215
 msgid ""
 "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
 "so you can start Apache and MySQL services."
@@ -338,7 +338,7 @@ msgstr ""
 "Lancez le programme ``xampp-control`` (vous le trouverez dans `C:\\xampp``), "
 "vous pourrez ainsi lancer les services Apache et MySQL."
 
-#: ../installation/windows.rst:20
+#: ../installation/preparation.rst:221
 msgid ""
 "Once those steps done, download galette and move it to ``C:\\wampp\\htdocs"
 "\\galette``, web application will be available from http://127.0.0.1/"
@@ -349,7 +349,7 @@ msgstr ""
 "http://127.0.0.1/galette/. Ouvrez simplement cette URL pour que le processus "
 "d'installation démarre."
 
-#: ../installation/windows.rst:24
+#: ../installation/preparation.rst:225
 msgid ""
 "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
 "the required extensions are already present, but commented (line begins with "
@@ -360,7 +360,7 @@ msgstr ""
 "(la ligne commence par un « ; »), dé-commentez les simplement et relancez "
 "XAMPP."
 
-#: ../installation/windows.rst:26
+#: ../installation/preparation.rst:227
 msgid ""
 "`openssl` extension is missing in the file, to activate it just add the "
 "following to your `php.ini`: ``extension=php_openssl.dll``"

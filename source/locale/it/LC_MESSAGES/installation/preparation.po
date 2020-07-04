@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-04 14:48+0200\n"
+"POT-Creation-Date: 2020-07-04 15:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -153,49 +153,49 @@ msgid "Nginx would be:"
 msgstr ""
 
 # 82bcf8d4b84f447d81a3e6938bdb6c8d
-#: ../installation/unix.rst:4
+#: ../installation/preparation.rst:122
 msgid "Linux/Unix"
 msgstr ""
 
 # d260edab8b0b4971a43ce611e346b0fc
-#: ../installation/unix.rst:6
+#: ../installation/preparation.rst:124
 msgid ""
 "Installing Galette on Linux implies you have an access to the terminal on "
 "the server and required ACLs on directories."
 msgstr ""
 
 # 280d13e2912147b89ab8f92006fbf02c
-#: ../installation/unix.rst:8
+#: ../installation/preparation.rst:126
 msgid ""
 "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 
 # a51d3208745f49f598a320be8e8c3253
-#: ../installation/unix.rst:15
+#: ../installation/preparation.rst:133
 msgid ""
 "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
 "``www-data:www-data``."
 msgstr ""
 
 # b54138ad663543e384177c69e4c3098d
-#: ../installation/unix.rst:17
+#: ../installation/preparation.rst:135
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr ""
 
 # 2751659b41c44363901fb4a1806e4873
-#: ../installation/unix.rst:25
+#: ../installation/preparation.rst:143
 msgid ""
 "You will also have to authorize webserver to connect to the network, with a "
 "SELinux boolean:"
 msgstr ""
 
 # 74fa778214ed44d685a984eb767b7bb9
-#: ../installation/ftp.rst:4
+#: ../installation/preparation.rst:152
 msgid "FTP"
 msgstr ""
 
 # 619efe30fb1049c4bcdcebd872d05e92
-#: ../installation/ftp.rst:8
+#: ../installation/preparation.rst:156
 msgid ""
 "Some archive or FTP softwares may corrupt files... It is strongly adviced if "
 "you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
@@ -203,31 +203,31 @@ msgid ""
 msgstr ""
 
 # d48a40394ccb4847bd997517a9d76d26
-#: ../installation/ftp.rst:10
+#: ../installation/preparation.rst:158
 msgid ""
 "Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar."
 "bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
 msgstr ""
 
 # be59c450b26d43f19c2acd3c35c0aef3
-#: ../installation/ftp.rst:12
+#: ../installation/preparation.rst:160
 msgid ""
 "Just copy the uncompressed directory obtained, and all its sub directories "
 "and files, with your FTP client."
 msgstr ""
 
 # 85bf856902544c138f8eefc6702fc834
-#: ../installation/ftp.rst:19
+#: ../installation/preparation.rst:167
 msgid "Specific cases"
 msgstr ""
 
 # a2fd9686759248da9ce7554211e4c5e4
-#: ../installation/ftp.rst:22
+#: ../installation/preparation.rst:170
 msgid "Ionos"
 msgstr ""
 
 # 314c1642d1934fcbb3f9c9acb97299e9
-#: ../installation/ftp.rst:24
+#: ../installation/preparation.rst:172
 msgid ""
 "If you're hosted on Ionos; and want to use a specific subdomain for Galette, "
 "you must create your subdomain from their UI, and make it points to the "
@@ -236,12 +236,12 @@ msgid ""
 msgstr ""
 
 # c316873000d24416a630e777bdbbf856
-#: ../installation/ftp.rst:27
+#: ../installation/preparation.rst:175
 msgid "OVH"
 msgstr ""
 
 # ee1343f0abf342fdb270628a782036ee
-#: ../installation/ftp.rst:29
+#: ../installation/preparation.rst:177
 msgid ""
 "This hosting compay offers to `change PHP version you use from your customer "
 "account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
@@ -249,14 +249,14 @@ msgid ""
 msgstr ""
 
 # 06f8ed7399954b21a21ef2746b778fa6
-#: ../installation/ftp.rst:31
+#: ../installation/preparation.rst:179
 msgid ""
 "Additionnal information are available at: https://docs.ovh.com/fr/fr/web/"
 "hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 
 # bde86be3f40f4c7d95a156237104a9ee
-#: ../installation/ftp.rst:35
+#: ../installation/preparation.rst:183
 msgid ""
 "Many users have display images or emargement list issues on OVH hosts. The "
 "solution to this issue is to create a `.ovhconfig` file at your hosting root "
@@ -264,12 +264,12 @@ msgid ""
 msgstr ""
 
 # 527fcbf01270441f8d9cc7a08ba5fa89
-#: ../installation/ftp.rst:42
+#: ../installation/preparation.rst:190
 msgid "Nginx"
 msgstr ""
 
 # bcb5e07ec7614f7abf3c0f26067820e5
-#: ../installation/ftp.rst:44
+#: ../installation/preparation.rst:192
 msgid ""
 "`Nginx webserver <https://nginx.com>`_ configuration is different from "
 "Apache one (see `Nginx documentation for a more complete explanation "
@@ -278,19 +278,19 @@ msgid ""
 msgstr ""
 
 # 79dad613c1954a4c93cf8f5aea93cda7
-#: ../installation/ftp.rst:46
+#: ../installation/preparation.rst:194
 msgid ""
 "So you have to convert restriction access files in Nginx configuration, as "
 "for example:"
 msgstr ""
 
 # a2fd9686759248da9ce7554211e4c5e4
-#: ../installation/windows.rst:4
+#: ../installation/preparation.rst:205
 msgid "Windows"
 msgstr ""
 
 # f85412eb27ee45f786f165e1f25926de
-#: ../installation/windows.rst:6
+#: ../installation/preparation.rst:207
 msgid ""
 "Installation described here rely on `XAMPP <https://www.apachefriends.org/"
 "xampp-windows.html>`_; other installation methods exist but are not listed "
@@ -298,21 +298,21 @@ msgid ""
 msgstr ""
 
 # ad9856f5a73349f3aa9953fee56f51a3
-#: ../installation/windows.rst:8
+#: ../installation/preparation.rst:209
 msgid ""
 "First of all, download XAMPP on your computer. Let's install it under ``C:"
 "\\xampp``."
 msgstr ""
 
 # 1c9a43244f9449baa83a24ac393a91eb
-#: ../installation/windows.rst:14
+#: ../installation/preparation.rst:215
 msgid ""
 "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
 "so you can start Apache and MySQL services."
 msgstr ""
 
 # 0249db612f1942f188c029618ddd79c2
-#: ../installation/windows.rst:20
+#: ../installation/preparation.rst:221
 msgid ""
 "Once those steps done, download galette and move it to ``C:\\wampp\\htdocs"
 "\\galette``, web application will be available from http://127.0.0.1/"
@@ -320,7 +320,7 @@ msgid ""
 msgstr ""
 
 # 0e8b3f363ca74a98a77f8fc2749fde88
-#: ../installation/windows.rst:24
+#: ../installation/preparation.rst:225
 msgid ""
 "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
 "the required extensions are already present, but commented (line begins with "
@@ -328,7 +328,7 @@ msgid ""
 msgstr ""
 
 # e92325a73ac9428fbaf7fd8e7e134702
-#: ../installation/windows.rst:26
+#: ../installation/preparation.rst:227
 msgid ""
 "`openssl` extension is missing in the file, to activate it just add the "
 "following to your `php.ini`: ``extension=php_openssl.dll``"
