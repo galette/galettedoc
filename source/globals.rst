@@ -8,6 +8,3 @@
                :alt:
 
 .. |stable_version| replace:: 0.9.4
-.. |download_url| raw:: html
-
-    <br/><a href="https://download.tuxfamily.org/galette/galette-0.9.4.tar.bz2">Galette 0.9.4 - https://download.tuxfamily.org/galette/galette-0.9.4.tar.bz2</a>

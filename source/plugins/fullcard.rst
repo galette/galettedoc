@@ -12,7 +12,10 @@ Installation
 ============
 
 First of all, download the plugin:
-https://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.7.3.tar.bz2
+
+.. image:: https://img.shields.io/badge/1.7.3-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.7.3.tar.bz2
+   :alt: Get latest Fullcard plugin!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):

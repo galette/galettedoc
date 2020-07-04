@@ -1,19 +1,21 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-14 10:39+0200\n"
-"PO-Revision-Date: 2020-02-15 09:26-0500\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: French\n"
-"Language: fr\n"
+"POT-Creation-Date: 2020-07-04 18:35+0200\n"
+"PO-Revision-Date: 2020-07-04 16:39+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/"
+"doc-plugins-auto/fr/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../plugins/auto.rst:3
 msgid "Auto"
@@ -80,15 +82,12 @@ msgstr ""
 msgid "Installation"
 msgstr "Installation"
 
+# 8a7ef4065fab4eda92a47ecc8a30b9c6
 #: ../plugins/auto.rst:22
-msgid ""
-"First of all, download the plugin: https://download.tuxfamily.org/galette/"
-"plugins/galette-plugin-auto-1.5.0.tar.bz2"
-msgstr ""
-"Tout d'abord, téléchargez le plugin : https://download.tuxfamily.org/galette/"
-"plugins/galette-plugin-auto-1.5.0.tar.bz2"
+msgid "First of all, download the plugin:"
+msgstr "Tout d'abord, téléchargez le plugin :"
 
-#: ../plugins/auto.rst:25
+#: ../plugins/auto.rst:28
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -97,11 +96,11 @@ msgstr ""
 "exemple, sous linux (en remplaçant `{url}` et `{version}` par les valeurs "
 "adéquates) :"
 
-#: ../plugins/auto.rst:35
+#: ../plugins/auto.rst:38
 msgid "Database initialisation"
 msgstr "Initialisation de la base de données"
 
-#: ../plugins/auto.rst:37
+#: ../plugins/auto.rst:40
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
@@ -110,11 +109,11 @@ msgstr ""
 "Référez-vous :ref:`à l'interface de gestion des plugins de Galette "
 "<plugins_managment>`."
 
-#: ../plugins/auto.rst:39
+#: ../plugins/auto.rst:42
 msgid "And this is finished; Auto plugin is installed :)"
 msgstr "Et c'est terminé, le plugin Auto est installé :)"
 
-#: ../plugins/auto.rst:41
+#: ../plugins/auto.rst:44
 msgid ""
 "There is no particular setup required, you can just enter data in the "
 "database."
@@ -122,11 +121,11 @@ msgstr ""
 "Il n'y a aucune configuration requise, vous pouvez juste entrer vos données "
 "en base."
 
-#: ../plugins/auto.rst:44
+#: ../plugins/auto.rst:47
 msgid "Configure required fields"
 msgstr "Configuration des champs requis"
 
-#: ../plugins/auto.rst:46
+#: ../plugins/auto.rst:49
 msgid ""
 "When adding a new vehicle in database, there are several fields that are "
 "required, but that may not fit your needs. In such case, you can define your "
@@ -143,11 +142,11 @@ msgstr ""
 "si vous souhaitez juste que les nom et modèle soient obligatoires, vous "
 "aurez :"
 
-#: ../plugins/auto.rst:57
+#: ../plugins/auto.rst:60
 msgid "How to get the sources?"
 msgstr "Comment récupérer les sources ?"
 
-#: ../plugins/auto.rst:59
+#: ../plugins/auto.rst:62
 msgid ""
 "Please refer to :doc:`Galette developer guide <../development/index>` to get "
 "informations about :doc:`souces retrieval <../development/git>`, and :ref:"
@@ -156,3 +155,10 @@ msgstr ""
 "Veuillez voir :doc:`le guide du développeur de Galette <../development/"
 "index>` pour obtenir des informations sur :doc:`la récupération des sources "
 "<../development/git>`, et le :ref:`modèle de développement <devmodel>`."
+
+#~ msgid ""
+#~ "First of all, download the plugin: https://download.tuxfamily.org/galette/"
+#~ "plugins/galette-plugin-auto-1.5.0.tar.bz2"
+#~ msgstr ""
+#~ "Tout d'abord, téléchargez le plugin : https://download.tuxfamily.org/"
+#~ "galette/plugins/galette-plugin-auto-1.5.0.tar.bz2"
