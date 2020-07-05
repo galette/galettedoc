@@ -35,7 +35,7 @@ If you cannot access system logs files (frequent on shared hostings), you can di
 
    Displaying errors on a web page may provide information that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool.
 
-   Please also note that with routing intgration, some of those displayed information may be "hidden" from a buggy redirection... Logs are safer on that point.
+   Please also note that with routing integration, some of those displayed information may be "hidden" from a buggy redirection... Logs are safer on that point.
 
 To temporary display errors on page, create a ``galette/config/behavior.inc.php`` file with the following contents:
 
@@ -46,7 +46,7 @@ To temporary display errors on page, create a ``galette/config/behavior.inc.php`
 
 The next time you reproduce the issue, errors will be displayed on the page.
 
-Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grabadditional information.
+Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grab additional information.
 
 *****************************************
 How to report a bug or ask for a feature?
