@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2020-10-11 08:27+0200\n"
-"PO-Revision-Date: 2020-06-30 21:03+0000\n"
+"PO-Revision-Date: 2020-10-11 06:49+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
 "documentation-changelog/fr/>\n"
@@ -16,17 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../changelog.rst:7
 msgid "Changelog"
 msgstr "Journal des changements"
 
 #: ../changelogs/galette_09.rst:7
-#, fuzzy
-#| msgid "0.9.3 -> 0.9.3.1"
 msgid "0.9.4 => 0.9.4.1"
-msgstr "0.9.3 -> 0.9.3.1"
+msgstr "0.9.4 => 0.9.4.1"
 
 #: ../changelogs/galette_09.rst:12 ../changelogs/galette_09.rst:58
 #: ../changelogs/galette_09.rst:122 ../changelogs/galette_09.rst:187
@@ -35,16 +33,13 @@ msgid "Added"
 msgstr "Ajouts"
 
 #: ../changelogs/galette_09.rst:14
-#, fuzzy
-#| msgid ""
-#| "Improve routes ACLs to support regular expressions (`#1426 <https://bugs."
-#| "galette.eu/issues/1426>`_)"
 msgid ""
 "Many improvements on string translations (add support for plurals, contexts "
 "and comments, `#1444 <https://bugs.galette.eu/issues/1444>`_"
 msgstr ""
-"Amélioration des droits des routes pour supporter les expressions régulières "
-"(`#1426 <https://bugs.galette.eu/issues/1426>`_)"
+"Nombreuses améliorations sur les traductions des chaînes (ajout du support "
+"pour les pluriels, contextes et commentaires, `#1444 <https://bugs.galette."
+"eu/issues/1444>`_"
 
 # 619fd3aa48f04916812399be016de8f5
 #: ../changelogs/galette_09.rst:15
@@ -52,11 +47,13 @@ msgid ""
 "Use events to send administrative emails (account creation, edition, "
 "contribution added)"
 msgstr ""
+"Utilisation des évènements pour l'envoi des courriels administratifs ("
+"création et modification de compte, contribution ajoutée)"
 
 # 10a098e9a326478385e262e81055b1e5
 #: ../changelogs/galette_09.rst:16
 msgid "Many locales updates thantks to Weblate translators!"
-msgstr ""
+msgstr "Beaucoup de mises à jour de langues grâce aux traducteurs Weblate !"
 
 #: ../changelogs/galette_09.rst:21 ../changelogs/galette_09.rst:77
 #: ../changelogs/galette_09.rst:135 ../changelogs/galette_09.rst:202
@@ -65,239 +62,168 @@ msgid "Fixed"
 msgstr "Corrections"
 
 #: ../changelogs/galette_09.rst:23
-#, fuzzy
-#| msgid ""
-#| "Add version number to sessions (`#315 <https://bugs.galette.eu/"
-#| "issues/315>`_)"
 msgid ""
 "Fix displayed version number (`#1446 <https://bugs.galette.eu/issues/1446>`_)"
 msgstr ""
-"Ajout du numéro de version aux sessions (`#315 <https://bugs.galette.eu/"
-"issues/315>`_)"
+"Correction de la version affichée (`#1446 <https://bugs.galette.eu/issues/"
+"1446>`_)"
 
 #: ../changelogs/galette_09.rst:24
-#, fuzzy
-#| msgid ""
-#| "Mass change on members (`#696 <https://bugs.galette.eu/issues/696>`_)"
 msgid ""
 "Missing \"Next\" button in members dynamic dropdown (`#1449 <https://bugs."
 "galette.eu/issues/1449>`_)"
 msgstr ""
-"Modification massive des adhérents (`#696 <https://bugs.galette.eu/"
-"issues/696>`_)"
+"Bouton \"Suivant\" manquant dans la liste déroulante dynamique des adhérents "
+"(`#1449 <https://bugs.galette.eu/issues/1449>`_)"
 
 #: ../changelogs/galette_09.rst:25
-#, fuzzy
-#| msgid ""
-#| "Fix rights on dynamic fields (`#1201 <https://bugs.galette.eu/"
-#| "issues/1201>`_)"
 msgid ""
 "Error creating dynamic field with empty name (`#1452 <https://bugs.galette."
 "eu/issues/1452>`_)"
 msgstr ""
-"Correction des droits sur les champs dynamiques (`#1201 <https://bugs."
-"galette.eu/issues/1201>`_)"
+"Erreur lors de la création d'un champ dynamique avec un nom vide (`#1452 "
+"<https://bugs.galette.eu/issues/1452>`_)"
 
 #: ../changelogs/galette_09.rst:26
-#, fuzzy
-#| msgid ""
-#| "Fix pagination on trombinoscope (`#1252 <https://bugs.galette.eu/"
-#| "issues/1252>`_)"
 msgid ""
 "Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/"
 "issues/1453>`_)"
 msgstr ""
-"Correction de la pagination sur le trombinoscope (`#1252 <https://bugs."
-"galette.eu/issues/1252>`_)"
+"La pagination était manquante sur les pages publiques (`#1453 <https://bugs."
+"galette.eu/issues/1453>`_)"
 
 #: ../changelogs/galette_09.rst:27
-#, fuzzy
-#| msgid ""
-#| "Fix groups members removal error (`#1251 <https://bugs.galette.eu/"
-#| "issues/1251>`_)"
 msgid ""
 "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
 msgstr ""
-"Correction de la suppression des groupes (`#1251 <https://bugs.galette.eu/"
-"issues/1251>`_)"
+"Correction du compte erroné des rappels (`#1454 <https://bugs.galette.eu/"
+"issues/1454>`_)"
 
 #: ../changelogs/galette_09.rst:28
-#, fuzzy
-#| msgid ""
-#| "Fix member card with PHP 7.4 (`#1423 <https://bugs.galette.eu/"
-#| "issues/1423>`_)"
 msgid ""
 "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
 "issues/1462>`_)"
 msgstr ""
-"Correction des cartes de membre en PHP 7.4 (`#1423 <https://bugs.galette.eu/"
-"issues/1423>`_)"
+"Les adhérents ne peuvent imprimer leur propre carte (`#1462 <https://bugs."
+"galette.eu/issues/1462>`_)"
 
 #: ../changelogs/galette_09.rst:29
-#, fuzzy
-#| msgid "Redirection issues (`#1226 <https://bugs.galette.eu/issues/1226>`_)"
 msgid ""
 "Fix direct links to download documents (`#1463 <https://bugs.galette.eu/"
 "issues/1463>`_)"
 msgstr ""
-"Problèmes de redirection (`#1226 <https://bugs.galette.eu/issues/1226>`_)"
+"Correction des liens de téléchargement direct (`#1463 <https://bugs.galette."
+"eu/issues/1463>`_)"
 
 #: ../changelogs/galette_09.rst:30
-#, fuzzy
-#| msgid ""
-#| "Fix pagination on trombinoscope (`#1252 <https://bugs.galette.eu/"
-#| "issues/1252>`_)"
 msgid ""
 "Fix compagnies/natural persons graph (`#1465 <https://bugs.galette.eu/"
 "issues/1465>`_)"
 msgstr ""
-"Correction de la pagination sur le trombinoscope (`#1252 <https://bugs."
-"galette.eu/issues/1252>`_)"
+"Correction du graphique personnes physiques/morales (`#1465 <https://bugs."
+"galette.eu/issues/1465>`_)"
 
 #: ../changelogs/galette_09.rst:31
-#, fuzzy
-#| msgid ""
-#| "Send member and contribution IDs to post script (`#1406 <https://bugs."
-#| "galette.eu/issues/1406>`_)"
 msgid ""
 "Do not notify member on contribution change (`#1467 <https://bugs.galette.eu/"
 "issues/1467>`_)"
 msgstr ""
-"Envoi des identifiants de l'adhérent et de la contribution au script post "
-"contribution (`#1406 <https://bugs.galette.eu/issues/1406>`_)"
+"Ne pas notifier l'adhérent à la modification de la contribution (`#1467 "
+"<https://bugs.galette.eu/issues/1467>`_)"
 
 #: ../changelogs/galette_09.rst:32
-#, fuzzy
-#| msgid ""
-#| "Fix call from wrong object in mailing (`#1280 <https://bugs.galette.eu/"
-#| "issues/1280>`_)"
 msgid ""
 "Cannot print labels or change members in mailings (`#1468 <https://bugs."
 "galette.eu/issues/1468>`_)"
 msgstr ""
-"Correction de l'appel depuis le mauvais objet dans les mailngs (`#1280 "
-"<https://bugs.galette.eu/issues/1280>`_)"
+"Impossible d'imprimer les étiquettes ou de changer les adhérents dans les "
+"envois (`#1468 <https://bugs.galette.eu/issues/1468>`_)"
 
 #: ../changelogs/galette_09.rst:33
-#, fuzzy
-#| msgid ""
-#| "Fix members search when adding a new contribution (`#1224 <https://bugs."
-#| "galette.eu/issues/1224>`_)"
 msgid ""
 "Fix search on dates in contributions list (`#1469 <https://bugs.galette.eu/"
 "issues/1469>`_)"
 msgstr ""
-"Correction de la recherche des adhérents lors de l'ajout d'une nouvelle "
-"contribution (`#1224 <https://bugs.galette.eu/issues/1224>`_)"
+"Correction de la recherche par date dans la liste des contributions (`#1469 "
+"<https://bugs.galette.eu/issues/1469>`_)"
 
 #: ../changelogs/galette_09.rst:34
-#, fuzzy
-#| msgid ""
-#| "Use new icons in titles management (`#1375 <https://bugs.galette.eu/"
-#| "issues/1375>`_)"
 msgid ""
 "Unable to unset booleans on mass change (`#1471 <https://bugs.galette.eu/"
 "issues/1471>`_)"
 msgstr ""
-"Utilisation des nouvelles icônes dans la gestion des titres (`#1375 <https://"
-"bugs.galette.eu/issues/1375>`_)"
+"Impossible de décocher un booléen en modification de masse (`#1471 "
+"<https://bugs.galette.eu/issues/1471>`_)"
 
 #: ../changelogs/galette_09.rst:35
-#, fuzzy
-#| msgid ""
-#| "Fix search on boolean dynamic fields (`#1186 <https://bugs.galette.eu/"
-#| "issues/1186>`_)"
 msgid ""
 "Unable to unset booleans on dynamic fields (`#1472 <https://bugs.galette.eu/"
 "issues/1472>`_)"
 msgstr ""
-"Correction de la recherche sur les champs dynamiques booléens (`#1186 "
-"<https://bugs.galette.eu/issues/1186>`_)"
+"Impossible de décocher les booléens des champs dynamiques (`#1472 "
+"<https://bugs.galette.eu/issues/1472>`_)"
 
 #: ../changelogs/galette_09.rst:36
-#, fuzzy
-#| msgid ""
-#| "Fix contributions storage (`#1228 <https://bugs.galette.eu/issues/1228>`_)"
 msgid ""
 "Captcha issue on self subscritpion page (`#1478 <https://bugs.galette.eu/"
 "issues/1478>`_)"
 msgstr ""
-"Correction de l'enregistrement des contributions (`#1228 <https://bugs."
-"galette.eu/issues/1228>`_)"
+"Erreur avec le captcha sur la page d'auto-enregistrement (`#1478 "
+"<https://bugs.galette.eu/issues/1478>`_)"
 
 #: ../changelogs/galette_09.rst:37
-#, fuzzy
-#| msgid ""
-#| "Fix call from wrong object in mailing (`#1280 <https://bugs.galette.eu/"
-#| "issues/1280>`_)"
 msgid ""
 "Wrong JS action in mailings (`#1482 <https://bugs.galette.eu/issues/1482>`_)"
 msgstr ""
-"Correction de l'appel depuis le mauvais objet dans les mailngs (`#1280 "
-"<https://bugs.galette.eu/issues/1280>`_)"
+"Mauvaise action JS dans les envois (`#1482 <https://bugs.galette.eu/issues/"
+"1482>`_)"
 
 #: ../changelogs/galette_09.rst:38
-#, fuzzy
-#| msgid ""
-#| "Fix user search by nickname in dropdowns (`#1383 <https://bugs.galette.eu/"
-#| "issues/1383>`_)"
 msgid ""
 "SQL error on invoices/receipt direct download (`#1483 <https://bugs.galette."
 "eu/issues/1483>`_)"
 msgstr ""
-"Correction de la recherche d'adhérent par leur pseudo dans les listes "
-"déroulantes (`#1383 <https://bugs.galette.eu/issues/1383>`_)"
+"Erreurs SQL au téléchargement direct de factures et reçus (`#1483 "
+"<https://bugs.galette.eu/issues/1483>`_)"
 
 #: ../changelogs/galette_09.rst:39
-#, fuzzy
-#| msgid ""
-#| "Fix rights on dynamic fields (`#1201 <https://bugs.galette.eu/"
-#| "issues/1201>`_)"
 msgid ""
 "Issues with images in dynamic files (`#1486 <https://bugs.galette.eu/"
 "issues/1486>`_)"
 msgstr ""
-"Correction des droits sur les champs dynamiques (`#1201 <https://bugs."
-"galette.eu/issues/1201>`_)"
+"Problèmes avec les images dans les champs dynamiques (`#1486 <https://bugs."
+"galette.eu/issues/1486>`_)"
 
 #: ../changelogs/galette_09.rst:40
-#, fuzzy
-#| msgid ""
-#| "Fix required fields on children cards (`#1230 <https://bugs.galette.eu/"
-#| "issues/1230>`_ and `#1229 <https://bugs.galette.eu/issues/1229>`_)"
 msgid ""
 "Fix several issues sending reminders (`#1487 <https://bugs.galette.eu/"
 "issues/1487>`_, `#1455 <https://bugs.galette.eu/issues/1455>`_)"
 msgstr ""
-"Correction des champs requis sur les fiches enfants (`#1230 <https://bugs."
-"galette.eu/issues/1230>`_ et `#1229 <https://bugs.galette.eu/issues/1229>`_)"
+"Correction de diverses erreurs à l'envoi des rappels (`#1487 <https://bugs."
+"galette.eu/issues/1487>`_, `#1455 <https://bugs.galette.eu/issues/1455>`_)"
 
 #: ../changelogs/galette_09.rst:41
-#, fuzzy
-#| msgid "Handle RTL on PDF (`#1430 <https://bugs.galette.eu/issues/1430>`_)"
 msgid "Change log in URL (`#1447 <https://bugs.galette.eu/issues/1447>`_)"
 msgstr ""
-"Support RTL dans les PDF (`#1430 <https://bugs.galette.eu/issues/1430>`_)"
+"Modification de l'URL de l'historique (`#1447 <https://bugs.galette.eu/"
+"issues/1447>`_)"
 
 #: ../changelogs/galette_09.rst:42
-#, fuzzy
-#| msgid "Duplicate members (`#633 <https://bugs.galette.eu/issues/633>`_)"
 msgid ""
 "Do not display inactive members as late (`#1451 <https://bugs.galette.eu/"
 "issues/1451>`_)"
-msgstr "Duplication d'adhérents (`#633 <https://bugs.galette.eu/issues/633>`_)"
+msgstr ""
+"Ne pas afficher les adhérents inactifs en retard (`#1451 <https://bugs."
+"galette.eu/issues/1451>`_)"
 
 #: ../changelogs/galette_09.rst:43
-#, fuzzy
-#| msgid ""
-#| "Members listed several times when searching on groups (`final fix for "
-#| "#687 <https://bugs.galette.eu/issues/687>`_)"
 msgid ""
 "Fix several issues in distribued archive (remove symlinks, fix tar "
 "format, ... - `#1448 <https://bugs.galette.eu/issues/1448>`_)"
 msgstr ""
-"Les adhérents étaient listés lors d'une recherche sur les groupes "
-"(`correction définitive pour #687 <https://bugs.galette.eu/issues/687>`_)"
+"Correction de divers problèmes dans l'archive distribuée (suppression du "
+"lien symbolique, correction du format tar, ... - `#1448 <https://bugs.galette"
+".eu/issues/1448>`_)"
 
 #: ../changelogs/galette_09.rst:49
 msgid "0.9.3.1 -> 0.9.4"
