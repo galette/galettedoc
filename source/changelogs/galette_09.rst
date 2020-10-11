@@ -15,7 +15,7 @@ Added
 * Use events to send administrative emails (account creation, edition, contribution added)
 * Many locales updates thantks to Weblate translators!
 
-.. _bogues_0941
+.. _bogues_0941:
 
 Fixed
 =====
@@ -39,7 +39,7 @@ Fixed
 * Issues with images in dynamic files (`#1486 <https://bugs.galette.eu/issues/1486>`_)
 * Fix several issues sending reminders (`#1487 <https://bugs.galette.eu/issues/1487>`_, `#1455 <https://bugs.galette.eu/issues/1455>`_)
 * Change log in URL (`#1447 <https://bugs.galette.eu/issues/1447>`_)
-* Do not display inactive members as late (`#1039 <https://bugs.galette.eu/issues/1451>`_)
+* Do not display inactive members as late (`#1451 <https://bugs.galette.eu/issues/1451>`_)
 * Fix several issues in distribued archive (remove symlinks, fix tar format, ... - `#1448 <https://bugs.galette.eu/issues/1448>`_)
 
 .. _v094:
