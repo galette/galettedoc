@@ -1,5 +1,47 @@
 :orphan:
 
+.. _v0941:
+
+****************
+0.9.4 => 0.9.4.1
+****************
+
+.. _ajouts_0941:
+
+Added
+=====
+
+* Many improvements on string translations (add support for plurals, contexts and comments, `#1444 <https://bugs.galette.eu/issues/1444>`_
+* Use events to send administrative emails (account creation, edition, contribution added)
+* Many locales updates thantks to Weblate translators!
+
+.. _bogues_0941:
+
+Fixed
+=====
+
+* Fix displayed version number (`#1446 <https://bugs.galette.eu/issues/1446>`_)
+* Missing "Next" button in members dynamic dropdown (`#1449 <https://bugs.galette.eu/issues/1449>`_)
+* Error creating dynamic field with empty name (`#1452 <https://bugs.galette.eu/issues/1452>`_)
+* Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/issues/1453>`_)
+* Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)
+* Members cannot print their own cards (`#1462 <https://bugs.galette.eu/issues/1462>`_)
+* Fix direct links to download documents (`#1463 <https://bugs.galette.eu/issues/1463>`_)
+* Fix compagnies/natural persons graph (`#1465 <https://bugs.galette.eu/issues/1465>`_)
+* Do not notify member on contribution change (`#1467 <https://bugs.galette.eu/issues/1467>`_)
+* Cannot print labels or change members in mailings (`#1468 <https://bugs.galette.eu/issues/1468>`_)
+* Fix search on dates in contributions list (`#1469 <https://bugs.galette.eu/issues/1469>`_)
+* Unable to unset booleans on mass change (`#1471 <https://bugs.galette.eu/issues/1471>`_)
+* Unable to unset booleans on dynamic fields (`#1472 <https://bugs.galette.eu/issues/1472>`_)
+* Captcha issue on self subscritpion page (`#1478 <https://bugs.galette.eu/issues/1478>`_)
+* Wrong JS action in mailings (`#1482 <https://bugs.galette.eu/issues/1482>`_)
+* SQL error on invoices/receipt direct download (`#1483 <https://bugs.galette.eu/issues/1483>`_)
+* Issues with images in dynamic files (`#1486 <https://bugs.galette.eu/issues/1486>`_)
+* Fix several issues sending reminders (`#1487 <https://bugs.galette.eu/issues/1487>`_, `#1455 <https://bugs.galette.eu/issues/1455>`_)
+* Change log in URL (`#1447 <https://bugs.galette.eu/issues/1447>`_)
+* Do not display inactive members as late (`#1451 <https://bugs.galette.eu/issues/1451>`_)
+* Fix several issues in distribued archive (remove symlinks, fix tar format, ... - `#1448 <https://bugs.galette.eu/issues/1448>`_)
+
 .. _v094:
 
 ****************
