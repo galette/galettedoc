@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-14 10:39+0200\n"
+"POT-Creation-Date: 2020-11-01 09:12+0100\n"
 "PO-Revision-Date: 2020-06-30 05:34+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
-"Language-Team: Occitan <https://hosted.weblate.org/projects/galette/"
-"doc-user-preferences/oc/>\n"
+"Language-Team: Occitan <https://hosted.weblate.org/projects/galette/doc-user-"
+"preferences/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,7 +51,9 @@ msgstr ""
 
 # acff61e1a35f4c368adbc1320600df39
 #: ../usermanual/preferences.rst:21
-msgid "**Footer text**: a text (HTML is allowed) to display in the footer of each page (to add a link to particular legal notices as example),"
+msgid ""
+"**Footer text**: a text (HTML is allowed) to display in the footer of each "
+"page (to add a link to particular legal notices as example),"
 msgstr ""
 
 # 181bc7665fca4d738e078e707023676d
@@ -101,12 +103,16 @@ msgstr ""
 
 # 247f6002685e418d9f2a7cb95bc863a6
 #: ../usermanual/preferences.rst:33
-msgid "**Telemetry date**: date on which `telemetry infomations <https://telemetry.galette.eu>`_ was sent,"
+msgid ""
+"**Telemetry date**: date on which `telemetry infomations <https://telemetry."
+"galette.eu>`_ was sent,"
 msgstr ""
 
 # a6a4e73cdad5404b8d17288da8ef1b82
 #: ../usermanual/preferences.rst:34
-msgid "**Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_"
+msgid ""
+"**Registration date**: date of `registration of your Galette instance "
+"<https://telemetry.galette.eu/reference>`_"
 msgstr ""
 
 # 98ab0b233bce49f9acf65ddb2e3c7359
@@ -121,7 +127,9 @@ msgstr ""
 
 # f0d9e7736db244c7a57070d75b655d83
 #: ../usermanual/preferences.rst:46
-msgid "**Default lang**: default instance lang (can be changed many ways by the user),"
+msgid ""
+"**Default lang**: default instance lang (can be changed many ways by the "
+"user),"
 msgstr ""
 
 # 6d024a11465e4da38e98b2c14ba03cef
@@ -131,7 +139,9 @@ msgstr ""
 
 # bd1b1fd725e941ba94687926542048b2
 #: ../usermanual/preferences.rst:48
-msgid "**After member creation**: defines action to execute after a member has been added:"
+msgid ""
+"**After member creation**: defines action to execute after a member has been "
+"added:"
 msgstr ""
 
 # b630837444ac4a73b4b8063228a30934
@@ -181,12 +191,15 @@ msgstr ""
 
 # 85dedcf147d34494bd62f18f6d7690ef
 #: ../usermanual/preferences.rst:62
-msgid "**Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),"
+msgid ""
+"**Default membership status**: the status to affect to all new created users "
+"(can be changed on creation form if current user have rights),"
 msgstr ""
 
 # b872c9c25df44e6caf8ca119aa93ce93
 #: ../usermanual/preferences.rst:63
-msgid "**Default account filter**: default account filter to apply on members list,"
+msgid ""
+"**Default account filter**: default account filter to apply on members list,"
 msgstr ""
 
 # 2c73a810fc1d4de8b233d367a89905a0
@@ -226,32 +239,49 @@ msgstr ""
 
 # 8bb200572da846a29bc1b1445c3ee1d9
 #: ../usermanual/preferences.rst:73
-msgid "**Self subscription enabled**: enable or disable self subscription feature,"
+msgid ""
+"**Self subscription enabled**: enable or disable self subscription feature,"
 msgstr ""
 
 # 28f3066007d64e75b9aced8a3ec05fbc
 #: ../usermanual/preferences.rst:74
-msgid "**Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:"
+msgid ""
+"**Post new contribution script URI**: URI of a script that will be called "
+"after a new contribution has been added. Several prefixes are handled:"
 msgstr ""
 
 # 952982be145241aba54f1870d447fa66
 #: ../usermanual/preferences.rst:76
-msgid "**galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`."
+msgid ""
+"**galette://**: call a script provided by Galette that will be called with "
+"the HTTP POST method. Path must be relative to your Galette installation. "
+"For example, the URI for the ``galette/post_contribution_test.php`` example "
+"script would be `galette://post_contribution_test.php`."
 msgstr ""
 
 # 3c44f2592b5945038f2449d1382236ed
 #: ../usermanual/preferences.rst:77
-msgid "**get://** or **post://**: use HTTP GET or POST method to call a web address, prefix will be replaced with ``http://``,"
+msgid ""
+"**get://** or **post://**: use HTTP GET or POST method to call a web "
+"address, prefix will be replaced with ``http://``,"
 msgstr ""
 
 # d9fb03fea48a416aad8df4c25f766e95
 #: ../usermanual/preferences.rst:78
-msgid "**file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution information and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent."
+msgid ""
+"**file://**: call a file on the web server, full path must be provided. "
+"Destination script must be executable, and should define a shellbang if "
+"necessary. An email that contains contribution information and script return "
+"(if any) will be sent to the administrator if an error occurs. The behavior "
+"is the same as cron : if the script outputs something, a mail is sent."
 msgstr ""
 
 # 822bb5c8e7014695ae03ddc6d4aab327
 #: ../usermanual/preferences.rst:82
-msgid "Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsability**."
+msgid ""
+"Using ``file://`` method can be dangerous, Galette just call the provided "
+"script, usage and security of the script is **under your own "
+"responsability**."
 msgstr ""
 
 # 1260f0814e364b078adbe90aa37e45b9
@@ -261,12 +291,15 @@ msgstr ""
 
 # 61a7287d89ee49a587fa97f4a93683ad
 #: ../usermanual/preferences.rst:85
-msgid "**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
+msgid ""
+"**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
 msgstr ""
 
 # 86c04ad415464212bec1cd1728044c0a
 #: ../usermanual/preferences.rst:89
-msgid "This URL should be changed only if there are issues, this may cause instability."
+msgid ""
+"This URL should be changed only if there are issues, this may cause "
+"instability."
 msgstr ""
 
 # 505e23217e2743ea81298aa55d07973a
@@ -276,7 +309,9 @@ msgstr ""
 
 # 2f7ebc46dd7745d18f8824e3a8405a59
 #: ../usermanual/preferences.rst:93
-msgid "**Show identifiers**: display database identifiers instead of simple counts on lists."
+msgid ""
+"**Show identifiers**: display database identifiers instead of simple counts "
+"on lists."
 msgstr ""
 
 # cbeeb62ca88c4220b7d99bddfa5a24b5
@@ -301,27 +336,37 @@ msgstr ""
 
 # 5eb9449b14634c14b6bfee84860638af
 #: ../usermanual/preferences.rst:107
-msgid "**Reply-to email**: reply email address. If empty, sender email will be used,"
+msgid ""
+"**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 
 # 8fe752668366459d9301b1df48b2dcc2
 #: ../usermanual/preferences.rst:108
-msgid "**Members administrator email**: email address on which inscription notifications will be send, you can set several addresses separated with comas,"
+msgid ""
+"**Members administrator email**: email address on which inscription "
+"notifications will be send, you can set several addresses separated with "
+"comas,"
 msgstr ""
 
 # 51ba2872f1ce434fa34983178111b4c9
 #: ../usermanual/preferences.rst:109
-msgid "**Send emails to administrators**: whether to send emails to administrators on subscription,"
+msgid ""
+"**Send emails to administrators**: whether to send emails to administrators "
+"on subscription,"
 msgstr ""
 
 # 268030fe3d90420aabb9ebcd27fe2637
 #: ../usermanual/preferences.rst:110
-msgid "**Wrap text emails**: automatically wraps long lines in emails. If you disable this options, make sure to wrap yourself,"
+msgid ""
+"**Wrap text emails**: automatically wraps long lines in emails. If you "
+"disable this options, make sure to wrap yourself,"
 msgstr ""
 
 # d9130ff3a77c4317af01e347aad946ce
 #: ../usermanual/preferences.rst:111
-msgid "**Activate HTML editor**: activate HTML format when sending emails (discouraged),"
+msgid ""
+"**Activate HTML editor**: activate HTML format when sending emails "
+"(discouraged),"
 msgstr ""
 
 # ed3fb7288469475282f27f779b6b24fe
@@ -336,17 +381,23 @@ msgstr ""
 
 # c6bee1a70b5544148783377d17911522
 #: ../usermanual/preferences.rst:115
-msgid "**PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),"
+msgid ""
+"**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
+"parameters (recommended when possible),"
 msgstr ""
 
 # 4f0c94e419e94460b9fe51b98a44fcbe
 #: ../usermanual/preferences.rst:116
-msgid "**Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),"
+msgid ""
+"**Using a SMTP server**: uses an external SMTP server to configure (will be "
+"slower than PHP ``mail()`` function),"
 msgstr ""
 
 # 9c825c119c984d0bbb98119bc5b6dce0
 #: ../usermanual/preferences.rst:117
-msgid "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),"
+msgid ""
+"**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also "
+"be slower than PHP ``mail()`` function),"
 msgstr ""
 
 # 40f5c89ffe1d45c1ba4e8bbec5c957ee
@@ -361,7 +412,9 @@ msgstr ""
 
 # 2d43c69e29a94892bfb0f23a4693784f
 #: ../usermanual/preferences.rst:121
-msgid "**Mail signature**: signature added to all sent emails. Available variables are:"
+msgid ""
+"**Mail signature**: signature added to all sent emails. Available variables "
+"are:"
 msgstr ""
 
 # 690f43fa85114244be93b38f50709865
@@ -396,7 +449,9 @@ msgstr ""
 
 # 00f6183b026e4c48968c8042e8d55636
 #: ../usermanual/preferences.rst:130
-msgid "When using GMail as SMTP, you will have to configure user name and password to use."
+msgid ""
+"When using GMail as SMTP, you will have to configure user name and password "
+"to use."
 msgstr ""
 
 # 7528af4a6771448f8d7d85061f2a4e10
@@ -416,7 +471,9 @@ msgstr ""
 
 # eeed155a037842b8b5649fe42277e2de
 #: ../usermanual/preferences.rst:136
-msgid "**Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,"
+msgid ""
+"**Use SMTP authentication**: if your server requires an authentication. In "
+"this case, you will also have to set username and password,"
 msgstr ""
 
 # a096fb582d5d4e0ca73aae2ef21e5945
@@ -426,12 +483,16 @@ msgstr ""
 
 # a9c16e09df744eb3ac3f0ddcacc0093b
 #: ../usermanual/preferences.rst:138
-msgid "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example)."
+msgid ""
+"**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
+"signed for example)."
 msgstr ""
 
 # 2b6f9f069dca400ba2381f2b17f65a0e
 #: ../usermanual/preferences.rst:140
-msgid "The `Test mail settings` button will send a test message to the email currently stored as members administrator."
+msgid ""
+"The `Test mail settings` button will send a test message to the email "
+"currently stored as members administrator."
 msgstr ""
 
 # 0bbb4824cd6347c5b0d2638efa8cb879
@@ -451,12 +512,16 @@ msgstr "Seguretat"
 
 # e7bfe69983544648b9d5d714327b8776
 #: ../usermanual/preferences.rst:165
-msgid "Complex password rules are not user friendly; but security is mainly never :)"
+msgid ""
+"Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 
 # 570e17799c1d497eb9af2e95ad2780aa
 #: ../usermanual/preferences.rst:167
-msgid "Of course, all passwords should be as secure as possible, but this is especially true for all accounts that have privileges (staff, admin, super-admin); you may explain your users why this is important."
+msgid ""
+"Of course, all passwords should be as secure as possible, but this is "
+"especially true for all accounts that have privileges (staff, admin, super-"
+"admin); you may explain your users why this is important."
 msgstr ""
 
 # fff95ddfffec46638e5339356186deef
@@ -486,17 +551,29 @@ msgstr ""
 
 # 053343e209714fffabbdaecff65a81e5
 #: ../usermanual/preferences.rst:181
-msgid "Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a \"strength meter\" displayed for information."
+msgid ""
+"Length is still the only rule that is active per default, just configure the "
+"number of characters required. On passwords fields, failures will be "
+"displayed on the fly; as well as a \"strength meter\" displayed for "
+"information."
 msgstr ""
 
 # 4209b4bc1cd448219d37156cda7e420a
 #: ../usermanual/preferences.rst:185
-msgid "If you enable password checks, it is not possible to know if some of existing ones does not respect them. Galette will display a warning at login if checks are not respected, but login will still be possible!"
+msgid ""
+"If you enable password checks, it is not possible to know if some of "
+"existing ones does not respect them. Galette will display a warning at login "
+"if checks are not respected, but login will still be possible!"
 msgstr ""
 
 # 78e1ec1f228146f2be3cf46d52ee679f
 #: ../usermanual/preferences.rst:187
-msgid "But wait... Password security is important, but Galette does not enforce nothing! Isn't that dumb? Well, not really. For tests or entirely private instances, security may be less important; and in some cases, being too restrictive may be an issue for your users; that's why this is up to you to secure as needed; just like using SSL or not :)"
+msgid ""
+"But wait... Password security is important, but Galette does not enforce "
+"nothing! Isn't that dumb? Well, not really. For tests or entirely private "
+"instances, security may be less important; and in some cases, being too "
+"restrictive may be an issue for your users; that's why this is up to you to "
+"secure as needed; just like using SSL or not :)"
 msgstr ""
 
 # c2ebfee2cf554c3db4d358329ac44fed
@@ -536,12 +613,16 @@ msgstr ""
 
 # 5280643fa53246d6bfa3264c699adc4d
 #: ../usermanual/preferences.rst:201
-msgid "**none**: (default): disables strength checks and check for personal information,"
+msgid ""
+"**none**: (default): disables strength checks and check for personal "
+"information,"
 msgstr ""
 
 # 394c5519cf9b464bba1968b6d28fcaa3
 #: ../usermanual/preferences.rst:202
-msgid "**weaker**: enables check for personal information, only one of the rule is mandatory,"
+msgid ""
+"**weaker**: enables check for personal information, only one of the rule is "
+"mandatory,"
 msgstr ""
 
 # 11f3d1b16316428cbb6849ea5a1391c7
@@ -566,12 +647,17 @@ msgstr ""
 
 # c932b59f38f740b4a9df457047124454
 #: ../usermanual/preferences.rst:210
-msgid "A default list of 500 common passwords is provided as a blacklist you can enable, \"galette\" is also blacklisted."
+msgid ""
+"A default list of 500 common passwords is provided as a blacklist you can "
+"enable, \"galette\" is also blacklisted."
 msgstr ""
 
 # ac46d13e12dc477586e4bfa8e5bf1970
 #: ../usermanual/preferences.rst:214
-msgid "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms (one per line). You can provide your own file, we advice you to complete the existing one."
+msgid ""
+"The ``galette/data/blacklist.txt`` file is used to list blacklisted terms "
+"(one per line). You can provide your own file, we advice you to complete the "
+"existing one."
 msgstr ""
 
 # 881799d56851496c80b3607662af7717
@@ -581,7 +667,10 @@ msgstr ""
 
 # 5c44c938be1c41829b70b48cbd1c9274
 #: ../usermanual/preferences.rst:219
-msgid "This check rely on strength activation (all but **none** level). For the super-admin account, this will just ensure you are not using login as password. For standard accounts, there are several information involved:"
+msgid ""
+"This check rely on strength activation (all but **none** level). For the "
+"super-admin account, this will just ensure you are not using login as "
+"password. For standard accounts, there are several information involved:"
 msgstr ""
 
 # 41e3dc76750c4e95a7ec5c0982076aef
@@ -621,7 +710,12 @@ msgstr ""
 
 # 810e9f55a31f48ea8ea2f1342c8331b1
 #: ../usermanual/preferences.rst:229
-msgid "Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants)."
+msgid ""
+"Basically, user cannot use verbatim any of those information as password. "
+"Some possible combinations are also checked, like surname and name couple "
+"(or name and surname), first letter of surname with name, etc. Birthdate "
+"will be checked in different formats as well (localized, international, and "
+"some variants)."
 msgstr ""
 
 # 5854a20127384f89ba0e1a2079be8519
@@ -631,5 +725,6 @@ msgstr "Admin"
 
 # 89e92773f71c43a9abc5cf8e3b2afe85
 #: ../usermanual/preferences.rst:236
-msgid "This tab wil be present only if you are logged in as super administrator."
+msgid ""
+"This tab wil be present only if you are logged in as super administrator."
 msgstr ""
