@@ -1,5 +1,18 @@
 :orphan:
 
+.. _v0942:
+
+******************
+0.9.4.1 => 0.9.4.2
+******************
+
+- Issues on mailing instantiation, in core and plugins (`#1495 <https://bugs.galette.eu/issues/1495>`_)
+- Fix issues on mailings attachmments  (`#1497 <https://bugs.galette.eu/issues/1497>`_)
+- Post contribution script was called too early (`#1496 <https://bugs.galette.eu/issues/1496>`_)
+- Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/issues/1508>`_)
+- First and last name were inverted in core PDF member card
+- Print logo was the one used, but not the one displayed in preferences
+
 .. _v0941:
 
 ****************
