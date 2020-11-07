@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 09:12+0100\n"
+"POT-Creation-Date: 2020-11-07 05:18+0100\n"
 "PO-Revision-Date: 2020-09-15 19:36+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-dev-"
@@ -197,18 +197,10 @@ msgstr ""
 "a pas mal."
 
 #: ../development/debug.rst:62
-msgid ""
-"`GALETTE_SYS_LOG`: `true` tells Galette to use system logs to log its own "
-"errors;"
-msgstr ""
-"`GALETTE_SYS_LOG` : `true` demande à Galette d'utiliser les logs système "
-"pour ses propres erreurs ;"
-
-#: ../development/debug.rst:63
 msgid "`GALETTE_LOG_LVL`: log level;"
 msgstr "`GALETTE_LOG_LVL` : niveau de log ;"
 
-#: ../development/debug.rst:64
+#: ../development/debug.rst:63
 msgid ""
 "`NON_UTF_DBCONNECT` : disable explicitely UTf-8 connection to the database "
 "(for users who see encoding issues);"
@@ -216,7 +208,7 @@ msgstr ""
 "`NON_UTF_DBCONNECT` : désactive la connexion explicite en UTF8 à la base de "
 "données (pour les utilisateurs qui rencontrent des problèmes d'encodage) ;"
 
-#: ../development/debug.rst:65
+#: ../development/debug.rst:64
 msgid ""
 "you'll find in related part of the documentation you can use behavior "
 "configuration for some other usages (such as PDF cards settings, session "
@@ -226,18 +218,7 @@ msgstr ""
 "d'utiliser la configuration du comportement pour d'autres usages (tels que "
 "les cartes PDF, la durée de vie de la session, ...)."
 
-#: ../development/debug.rst:69
-msgid ""
-"`GALETTE_SYS_LOG` makes sense only with ``mod_php``. If you use FPM, you "
-"will have to set ``catch_worker_output`` to ``yes`` in your configuration; "
-"this will cause entries to be logged in FPM main log (not pool one))."
-msgstr ""
-"`GALETTE_SYS_LOG` utile seulement avec ``mod_php``. Si vous utilisez FPM, "
-"vous devrez définir ``catch_worker_output`` à ``yes`` dans votre "
-"configuration ; ce qui enverra les entrées dans le log principal de FPM (pas "
-"celui du pool))."
-
-#: ../development/debug.rst:71
+#: ../development/debug.rst:66
 msgid ""
 "You can add those directives by declaring constants in the ``config/behavior."
 "inc.php``."
@@ -245,6 +226,24 @@ msgstr ""
 "Vous pouvez ajouter ces directives en déclarant des constantes via le "
 "fichier ``config/behavior.inc.php``."
 
-#: ../development/debug.rst:73
+#: ../development/debug.rst:68
 msgid "For example:"
 msgstr "Par exemple :"
+
+#~ msgid ""
+#~ "`GALETTE_SYS_LOG`: `true` tells Galette to use system logs to log its own "
+#~ "errors;"
+#~ msgstr ""
+#~ "`GALETTE_SYS_LOG` : `true` demande à Galette d'utiliser les logs système "
+#~ "pour ses propres erreurs ;"
+
+#~ msgid ""
+#~ "`GALETTE_SYS_LOG` makes sense only with ``mod_php``. If you use FPM, you "
+#~ "will have to set ``catch_worker_output`` to ``yes`` in your "
+#~ "configuration; this will cause entries to be logged in FPM main log (not "
+#~ "pool one))."
+#~ msgstr ""
+#~ "`GALETTE_SYS_LOG` utile seulement avec ``mod_php``. Si vous utilisez FPM, "
+#~ "vous devrez définir ``catch_worker_output`` à ``yes`` dans votre "
+#~ "configuration ; ce qui enverra les entrées dans le log principal de FPM "
+#~ "(pas celui du pool))."

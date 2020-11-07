@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 09:12+0100\n"
+"POT-Creation-Date: 2020-11-07 05:18+0100\n"
 "PO-Revision-Date: 2020-07-05 08:27+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/galette/"
@@ -198,49 +198,34 @@ msgid ""
 "a routing redirect... And there are plenty of them."
 msgstr ""
 
-# 5a176c5f130e4805a3663d7d8b9eea3f
-#: ../development/debug.rst:62
-msgid ""
-"`GALETTE_SYS_LOG`: `true` tells Galette to use system logs to log its own "
-"errors;"
-msgstr ""
-
 # 0d6459a7caab4594a3453a581c74086b
-#: ../development/debug.rst:63
+#: ../development/debug.rst:62
 msgid "`GALETTE_LOG_LVL`: log level;"
 msgstr ""
 
 # 8b4ee9e1f41c4b6ab184adca1bd9e508
-#: ../development/debug.rst:64
+#: ../development/debug.rst:63
 msgid ""
 "`NON_UTF_DBCONNECT` : disable explicitely UTf-8 connection to the database "
 "(for users who see encoding issues);"
 msgstr ""
 
 # ccda2e3db98444018f51323dbfb3ec9c
-#: ../development/debug.rst:65
+#: ../development/debug.rst:64
 msgid ""
 "you'll find in related part of the documentation you can use behavior "
 "configuration for some other usages (such as PDF cards settings, session "
 "lifetime, ...)."
 msgstr ""
 
-# 64636e4be656479db70f1b6fcdfe0a2f
-#: ../development/debug.rst:69
-msgid ""
-"`GALETTE_SYS_LOG` makes sense only with ``mod_php``. If you use FPM, you "
-"will have to set ``catch_worker_output`` to ``yes`` in your configuration; "
-"this will cause entries to be logged in FPM main log (not pool one))."
-msgstr ""
-
 # 258c456585754dafaba392ad191db5ba
-#: ../development/debug.rst:71
+#: ../development/debug.rst:66
 msgid ""
 "You can add those directives by declaring constants in the ``config/behavior."
 "inc.php``."
 msgstr ""
 
 # e5ad8574060d4e82987a4c19b3542da0
-#: ../development/debug.rst:73
+#: ../development/debug.rst:68
 msgid "For example:"
 msgstr ""
