@@ -2,17 +2,6 @@
 Galette sources
 ***************
 
-.. note::
-
-   If you are not familiar with GIT, there are plenty of documentations over the internet.
-
-   Some links of interest:
-
-   * http://www-cs-students.stanford.edu/~blynn/gitmagic/
-   * https://schacon.github.com/git/gittutorial.html
-   * https://git-scm.com/book
-   * https://ndpsoftware.com/git-cheatsheet.html explaining the relations beetween git commands and the existing levels in the structure of a repository
-
 All Galette sources are stored in their own `Git <https://en.wikipedia.org/wiki/Git>`_ repository hosted by `Tuxfamily <https://www.tuxfamily.org>`_ (big thanks to them!). A `Galette organization is also available on github <https://github.com/galette/>`_, in which all repositories are mirrored.
 
 All GIT repositories follow the :ref:`adopted development model <devmodel>`, therefore you will find two branches on each repository:
@@ -96,25 +85,3 @@ The first command will install all javascript dependencies into the `node_module
       ::
 
          $ npm run-script gulp watch
-
-.. _gitlinux:
-
-GNU/Linux
----------
-
-Standard GIT commands are provided by default in the package manager of most GNU/Linux distributions.
-
-Some graphical interfaces:
-
-* GIT comes with its own UI; just run ``git gui``,
-* ``gitg`` is a Gnome compliant alternative UI.
-
-.. _gitwindows:
-
-Windows
--------
-
-GIT is supported on windows using one of the following solutions:
-
-* `TortoiseGIT <https://tortoisegit.org/>`_,
-* `Git Extensions <https://gitextensions.github.io/>`_

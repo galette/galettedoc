@@ -1,19 +1,12 @@
-:orphan:
+.. include:: /globals.rst
 
-.. _about:
+.. _builddoc:
 
-*****************************
-About Galette's documentation
-*****************************
-
-`Galette <https://galette.eu/dc/>`_'s documentation, released under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ license, is written using `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and is built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_.
-
-Sphinx allows to build documentation in various formats from the same sources. Galette's documentation is therefore available as HTML, PDF and EPUB formats; thanks to `Read the docs <https://readthedocs.io>`_.
-
+*******************
 Build documentation
-===================
+*******************
 
-First, clone repository, please refer to the :doc:`Galette Documentation GIT documentation to get its source <development/git>`.
+First, clone repository, please refer to the :doc:`Galette Documentation GIT documentation to get its source <git>`.
 
 
 * `Sphinx <https://www.sphinx-doc.org/en/master/usage/installation.html>`_ to generate HTML and EPUB formats,
@@ -71,10 +64,3 @@ In order to test your modifications locally on your workstation, you will need t
 .. note::
 
    By default, the ``make`` command will build the documentation in English.
-
-How to contribute?
-==================
-
-`A bug tracker dedicated to the documentation <https://bugs.galette.eu/projects/documentation-galette>`_ allows you to inform us about all the issues you may find and submit us fixes or evolutions you would like to integrate in the project.
-
-All contributions to the documentation must follow the :doc:`same rules as contributions to the source code of Galette <development/contributor>`.
