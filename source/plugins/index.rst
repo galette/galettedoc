@@ -33,7 +33,6 @@ Official plugins are developed and maintained by the Galette team. Available off
    auto.rst
    events.rst
    objectslend.rst
-   admintools.rst
 
 *******************
 Third party plugins
