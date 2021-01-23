@@ -2,18 +2,22 @@
 # Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
+# Nicolás S. Gómez <nicogomfor@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-01-24 22:32+0000\n"
+"Last-Translator: Nicolás S. Gómez <nicogomfor@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
+"doc-faq-index/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 # 0c806a88c9844dd3afeb31e8055f1472
 #: ../faq/index.rst:5
@@ -22,8 +26,9 @@ msgstr ""
 
 # ce22b8a07f3a4ab29fee650c82ceb5eb
 #: ../faq/index.rst:9
+#, fuzzy
 msgid "What if Galette does not work?"
-msgstr ""
+msgstr "¿Qué pasa si Galette no funciona?"
 
 # c73c7bb5935247f7be20c3198415c3ce
 #: ../faq/index.rst:11
@@ -31,85 +36,117 @@ msgid ""
 "Sometimes, after an update, a change on hosting, or a simple bug - even "
 "minor ones - may cause a fail in Galette. You may observe:"
 msgstr ""
+"A veces, después de una actualización, un cambio en el alojamiento, o un "
+"simple error - incluso los menores - puede causar un fallo en Galette. Puede "
+"que observes:"
 
 # 9f043f2792a54caa89050cd06641e70d
 #: ../faq/index.rst:13
+#, fuzzy
 msgid "a simple error message id displayed,"
-msgstr ""
+msgstr "se muestra un simple mensaje de error de identificación,"
 
 # acb6c5e71e3f480ea579c2376ed46f4b
 #: ../faq/index.rst:14
 msgid "a blank page,"
-msgstr ""
+msgstr "una página en blanco,"
 
 # 3094948c435d48ff92303654eff9a730
 #: ../faq/index.rst:15
 msgid "a page with a backtace (usually, not in production mode),"
-msgstr ""
+msgstr "una página con un backtace (normalmente, no en modo de producción),"
 
 # 18f9ac3d31924c4db3f5e19cd7deb2da
 # b57c260170904f378aecbb0f6c7b06fd
 #: ../faq/index.rst:16 ../faq/index.rst:119
 msgid "..."
-msgstr ""
+msgstr "..."
 
 # 55dd61b7671f4f1282dafe44e173b622
 #: ../faq/index.rst:18
+#, fuzzy
 msgid ""
 "In all cases, you **must check the logs**. Most of errors are stored in "
 "those files, it is a very good start point to understand the problem and "
 "potentially solve it."
 msgstr ""
+"En todos los casos, **debes revisar los registros**. La mayoría de los "
+"errores se almacenan en esos archivos, es un muy buen punto de partida para "
+"entender el problema y potencialmente resolverlo."
 
 # 452f27a738854beb92c9ce37ef756334
 #: ../faq/index.rst:20
+#, fuzzy
 msgid ""
 "There are two types of log files: Galette ones, and system ones. Galette "
 "logs are stored in the ``galette/data/log`` per default."
 msgstr ""
+"Hay dos tipos de archivos de registro: Los de Galette y los del sistema. Los "
+"registros de Galette se almacenan en el ``galette/data/log`` por defecto."
 
 # fdd70386df6c4435a1f701c8041857ba
 #: ../faq/index.rst:23
+#, fuzzy
 msgid ""
 "Server logs are another subject. On shared webservers, they are often not "
 "accessible to you :( On a dedicated webserver, their location change with "
 "server configuration; it is related to the operating system used, PHP and/or "
 "web server configuration, ..."
 msgstr ""
+"Los registros del servidor son otro tema. En los servidores web compartidos, "
+"a menudo no son accesibles para ti :( En un servidor web dedicado, su "
+"ubicación cambia con la configuración del servidor; está relacionado con el "
+"sistema operativo utilizado, PHP y/o la configuración del servidor web, ..."
 
 # bccbe92ea5ac4f22a8dccd41ea88bb1c
 #: ../faq/index.rst:25
+#, fuzzy
 msgid ""
 "with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for "
 "GNU/Linux Red Hat like distributions),"
 msgstr ""
+"con ``php-fpm`` los archivos de registro están en ``var/log/php-fpm/www-error"
+".log`` (para las distribuciones de GNU/Linux de Red Hat y sus derivados),"
 
 # 656576194d70489da3fab5693141387b
 #: ../faq/index.rst:26
+#, fuzzy
 msgid ""
 "with (the deprecated) ``mod_php``, you'll find them in ``/var/log/httpd/"
 "error_log`` (on other GNU/Linux distributions, `httpd` may be named "
 "`apache`),"
 msgstr ""
+"con (el obsoleta) ``mod_php``, los encontrarás en ``/var/log/httpd/"
+"error_log`` (en otras distribuciones de GNU/Linux, `httpd` podría llamarse "
+"`apache`),"
 
 # 370938c4c57a4c9bb8fd1a416e214bf4
 #: ../faq/index.rst:27
+#, fuzzy
 msgid ""
 "on Windows/MacOS with XAMPP like solutions, there is at least one log "
 "directory in installation; you may find what you look for there."
 msgstr ""
+"en Windows/MacOS con soluciones similares a XAMPP, hay al menos un "
+"directorio de registro en la instalación; puedes encontrar lo que buscas "
+"allí."
 
 # 15ad96efada9415ab547c1db53728cf4
 #: ../faq/index.rst:30
+#, fuzzy
 msgid "Displaying errors"
-msgstr ""
+msgstr "Visualizar errores"
 
 # 1688864475f6442b9c7d64906447b9de
 #: ../faq/index.rst:32
+#, fuzzy
 msgid ""
 "If you cannot access system logs files (frequent on shared hostings), you "
 "can display errors directly on the page."
 msgstr ""
+"Si no puede acceder a los archivos de registro del sistema (frecuente en los "
+"alojamientos compartidos), puedes mostrar los errores directamente en la "
+"página."
 
 # e3c842226a4746a786fbd1c4a11c8063
 #: ../faq/index.rst:36
