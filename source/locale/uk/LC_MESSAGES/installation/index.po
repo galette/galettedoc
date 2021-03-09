@@ -2,28 +2,33 @@
 # Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
+# Tymofij Lytvynenko <till.svit@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-10 13:02+0000\n"
+"Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
+"doc-install-index/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 # 9521c290283845c0b24f77b685215ad4
 #: ../installation/index.rst:9
 msgid ":doc:`installation manual <index>`"
-msgstr ""
+msgstr ":doc:`installation manual <index>`"
 
 # 98c53c22c5bd4509ac151cc55baa9b32
 #: ../installation/index.rst:15
 msgid "Installation manual"
-msgstr ""
+msgstr "Посібник з установлення"
 
 # 9f5719dafc48455da46a2a7b76a59da0
 #: ../installation/index.rst:17
@@ -31,11 +36,13 @@ msgid ""
 "Galette installation is quite simple, really :) Just a few graphical steps "
 "to follow once the prerequisites are met."
 msgstr ""
+"Насправді встановлення Galette досить просте :). Лише кілька графічних "
+"кроків, які слід виконати, щойно будуть виконані попередні вказівки."
 
 # ee8daf9513b8466a9061fcbf20921104
 #: ../installation/index.rst:19
 msgid "First, download latest Galette release from official repository:"
-msgstr ""
+msgstr "Спочатку завантажте останню версію Galette з офіційного сховища:"
 
 # 2fffae07348247e78c442a2150de97cb
 #: ../installation/index.rst:25
@@ -45,6 +52,10 @@ msgid ""
 "`7zip <https://www.7-zip.org/>`_. If you are using Linux, run the following "
 "commands (adapt the version if needed):"
 msgstr ""
+"Потім розархівуйте архів. Якщо Ви працюєте під управлінням Windows, вам "
+"доведеться встановити архіватор, що підтримує формат архіву TAR, наприклад `"
+"7zip <https://www.7-zip.org/>`_. Якщо Ви використовуєте Linux, виконайте "
+"такі команди (за потреби впишіть іншу версію):"
 
 # c7dcfe659e5f485698eacdd2b6a92287
 #: ../installation/index.rst:34
@@ -55,3 +66,7 @@ msgid ""
 "`retrieve Galette development version  <../development/git>` as explained in "
 "the developer guide."
 msgstr ""
+"Поточна стабільна версія Galette це |stable_version|. `nightly archive "
+"<https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ складається "
+"щовечора з гілки розробки, і Ви також можете :doc:`отримати версію Galette "
+"для розробки  <../development/git>` як пояснено в посібнику для розробників."
