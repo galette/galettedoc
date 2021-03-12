@@ -2,28 +2,32 @@
 # Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
+# Alessandro Mandelli <mandelli.alessandro@ngi.it>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-13 13:02+0000\n"
+"Last-Translator: Alessandro Mandelli <mandelli.alessandro@ngi.it>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
+"doc-install-index/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 # 9521c290283845c0b24f77b685215ad4
 #: ../installation/index.rst:9
 msgid ":doc:`installation manual <index>`"
-msgstr ""
+msgstr ":doc:`manuale installazione <index>`"
 
 # 98c53c22c5bd4509ac151cc55baa9b32
 #: ../installation/index.rst:15
 msgid "Installation manual"
-msgstr ""
+msgstr "Manuale installazione"
 
 # 9f5719dafc48455da46a2a7b76a59da0
 #: ../installation/index.rst:17
@@ -31,11 +35,13 @@ msgid ""
 "Galette installation is quite simple, really :) Just a few graphical steps "
 "to follow once the prerequisites are met."
 msgstr ""
+"L'installazione di Galette è veramente molto semplice :) Seguite "
+"graficamente alcuni passi una volta che i prerequisiti siano soddisfatti."
 
 # ee8daf9513b8466a9061fcbf20921104
 #: ../installation/index.rst:19
 msgid "First, download latest Galette release from official repository:"
-msgstr ""
+msgstr "Primo, scaricate l'ultima release di Galette dal repository ufficiale:"
 
 # 2fffae07348247e78c442a2150de97cb
 #: ../installation/index.rst:25
@@ -45,6 +51,10 @@ msgid ""
 "`7zip <https://www.7-zip.org/>`_. If you are using Linux, run the following "
 "commands (adapt the version if needed):"
 msgstr ""
+"Poi, decomprimete l'archivio. Se state eseguendo Windows, dovrete anche "
+"installare un software di archiviazione che supporti il formato TAR, come "
+"per esempio `7zip <https://www.7-zip.org/>`_. Se state usando Linux, "
+"eseguite i seguenti comandi (adattandoli a seconda della versione):"
 
 # c7dcfe659e5f485698eacdd2b6a92287
 #: ../installation/index.rst:34
@@ -55,3 +65,8 @@ msgid ""
 "`retrieve Galette development version  <../development/git>` as explained in "
 "the developer guide."
 msgstr ""
+"L'attuale versione stabile è |stable_version|. Un `nightly archive "
+"<https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ viene "
+"compilato ogni notte dal ramo di sviluppo, e potete anche  :doc:`recuperare "
+"le versione in corso di sviluppo  <../development/git>` come spiegato nella "
+"guida per lo sviluppatore."
