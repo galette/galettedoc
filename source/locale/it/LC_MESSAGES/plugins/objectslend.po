@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-03-17 08:18+0000\n"
+"PO-Revision-Date: 2021-03-20 08:18+0000\n"
 "Last-Translator: Alessandro Mandelli <mandelli.alessandro@ngi.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-plugins-objectslend/it/>\n"
@@ -23,37 +23,37 @@ msgstr ""
 # a4d4d1b1fa0c4cfab04e50c507167d64
 #: ../plugins/objectslend.rst:3
 msgid "Objects lend"
-msgstr ""
+msgstr "Prestiti oggetti"
 
 # 69bf44891ba44a2b9aebb66d7799de09
 #: ../plugins/objectslend.rst:5
 msgid "This plugin provides:"
-msgstr ""
+msgstr "Questo componente aggiuntivo fornisce:"
 
 # e85c19100592422c997d2fe333cf69ee
 #: ../plugins/objectslend.rst:7
 msgid "objects management (description, size, lenght, price, ...)"
-msgstr ""
+msgstr "gestione oggetti (descrizione, dimensione, lunghezza, prezzo, ...)"
 
 # d862b49820df47ab8a7ed3dc3528f250
 #: ../plugins/objectslend.rst:8
 msgid "groups objects by categories,"
-msgstr ""
+msgstr "raggruppa oggetti per categorie,"
 
 # 84b6a9e86d5f4626867721b0c300b9af
 #: ../plugins/objectslend.rst:9
 msgid "manage object state, and their presence in stock or not,"
-msgstr ""
+msgstr "gestisce lo stato degli oggetti, e la loro disponibilità in magazzino,"
 
 # 1dda564c75994c6e9d322914c0c11bf9
 #: ../plugins/objectslend.rst:10
 msgid "manage lending and/or renting objects,"
-msgstr ""
+msgstr "gestisce i prestiti e/o il noleggio degli oggetti,"
 
 # adbe56175110460fa1559ce866b3cd50
 #: ../plugins/objectslend.rst:11
 msgid "contribution generation,"
-msgstr ""
+msgstr "generazione del contributo,"
 
 # 613e7a8284b443f0a5a22fd7bb3962f7
 #: ../plugins/objectslend.rst:12
@@ -83,7 +83,7 @@ msgstr ""
 # 72e9605c48bd4675837c3f72148215d2
 #: ../plugins/objectslend.rst:34
 msgid "Database initialisation"
-msgstr ""
+msgstr "Inizializzazione del database"
 
 # 9c3cb04814a94595b8f18d4cd99477c8
 #: ../plugins/objectslend.rst:36
@@ -91,16 +91,20 @@ msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
+"Per poter funzionare, questo componente aggiuntivo richiede diverse nuove "
+"tabelle nel database. Vedi :ref:`Interfaccia di gestione dei componenti "
+"aggiuntivi di Galette <plugins_managment>`."
 
 # d8fa623eb0654ce5a3ee16335c96b514
 #: ../plugins/objectslend.rst:38
 msgid "And this is finished; ObjectsLend plugin is installed :)"
 msgstr ""
+"Abbiamo finito; il componente aggiuntivo ObjectsLend è stato installato :)"
 
 # 13f78d3c8f374c85874323bc23bfa554
 #: ../plugins/objectslend.rst:41
 msgid "Plugin usage"
-msgstr ""
+msgstr "Utilizzo del componente aggiuntivo"
 
 # a64162e25f0b427b87a4e2cd5825e464
 #: ../plugins/objectslend.rst:43
@@ -108,6 +112,8 @@ msgid ""
 "Once plugin has been installed, a `Object lend` group is added to Galette "
 "menu."
 msgstr ""
+"Una volta che il componente aggiuntivo è stato installato, verrò aggiunto un "
+"gruppo `Prestiti oggetti` al menu di Galette."
 
 # 607bcb44cde845aeae7db18fd99dcc60
 #: ../plugins/objectslend.rst:45
@@ -115,6 +121,8 @@ msgid ""
 "Defaults status are provided at installation, but they can not fit your "
 "needs, you can of course define your own."
 msgstr ""
+"L'installazione prevede uno stato predefinito, che, se non ti soddisfa, può "
+"ovviamente essere modificato."
 
 # 84d4b302fe3247038d993417b8d0f6bb
 #: ../plugins/objectslend.rst:51
@@ -122,6 +130,8 @@ msgid ""
 "Define status, create categories and objects; users can lend objects with a "
 "reason, then give them back with location."
 msgstr ""
+"Definisci stato, crea categorie e oggetti; gli utenti possono concedere a "
+"prestito con una motivazione, e poi restituirli con un'ubicazione."
 
 # 93fcf4b0fdba4ded950b37b54119bfc6
 #: ../plugins/objectslend.rst:53
@@ -129,6 +139,8 @@ msgid ""
 "A lend history is provided for administrators and staff members from object "
 "page."
 msgstr ""
+"Agli amministratori e membri dello staff viene fornita una cronologia dei "
+"prestiti."
 
 # 78fa0c60bf964341aa1a5a8e098d966b
 #: ../plugins/objectslend.rst:56
@@ -139,6 +151,8 @@ msgstr "Preferenze"
 #: ../plugins/objectslend.rst:58
 msgid "Several preferences allows to change plugin behavior."
 msgstr ""
+"Il comportamento del componente aggiuntivo può essere ampiamente "
+"personalizzato."
 
 # 690635ef3c424ab9b0b67a50f01ac3c3
 #: ../plugins/objectslend.rst:64
@@ -147,11 +161,15 @@ msgid ""
 "should create a new contribution (and its type and description), if image "
 "should be displayed in objects list, and thumbnails size."
 msgstr ""
+"In questa pagina, puoi permettere ai membri di concedere a prestito gli "
+"oggetti, se ciò darà adito ad un nuovo contributo (con tipo e descrizione), "
+"se l'immagine dovrà essere mostrata nella lista degli oggetti e la "
+"dimensione delle anteprime."
 
 # 838a5757968f43ce9a37cbcb2a43257b
 #: ../plugins/objectslend.rst:68
 msgid "It is possible to activate the fullsize photo display."
-msgstr ""
+msgstr "E' possibile attivare la visualizzazione a dimensione intera."
 
 # e59d519f30b84115a8bf1b026fabfa24
 #: ../plugins/objectslend.rst:72
@@ -160,6 +178,9 @@ msgid ""
 "thumbnail was stored. If you want to get fullsize display, you will have to "
 "send photos again."
 msgstr ""
+"Le foto inviate con la versione precedente venivano sempre ridimensionate, e "
+"veniva salvata solo l'anteprima. Se ora volessi avere le foto a dimensione "
+"intera, devi caricarle nuovamente."
 
 # 830b1a3931f144fda7b5dbd5a8c96f21
 #: ../plugins/objectslend.rst:75
