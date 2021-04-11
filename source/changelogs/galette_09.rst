@@ -1,5 +1,33 @@
 :orphan:
 
+.. _v095:
+
+****************
+0.9.4.2 => 0.9.5
+****************
+
+This release contains security fixes; updating is highly recommended!
+
+The security issues that has been reported is an XSS injection, issued as CVE-2021-21319.
+
+- PHP8 compatibility (`#1492 <https://bugs.galette.eu/issues/1492>`_),
+- Cannot create new members  (`#1523 <https://bugs.galette.eu/issues/1523>`_)
+- Inactive accounts can renew their password (`#1529 <https://bugs.galette.eu/issues/1529>`_)
+- Error on removing contribution type (`#1531 <https://bugs.galette.eu/issues/1531>`_)
+- Cannot cascade remove groups (`#1533 <https://bugs.galette.eu/issues/1533>`_)
+- Ability to order on contributions and transactions ID (`#1502 <https://bugs.galette.eu/issues/1502>`_)
+- Variables available in emails and PDF are now the same, dynamic fields has been added, ... (`#1445 <https://bugs.galette.eu/issues/1445>`_, `#1393 <https://bugs.galette.eu/issues/1393>`_, `#1520 <https://bugs.galette.eu/issues/1520>`_)
+- Fix late reminders PDF labels (`#1506 <https://bugs.galette.eu/issues/1506>`_)
+- Third party dependencies has been updated and cleaned (`#1515 <https://bugs.galette.eu/issues/1515>`_, `#1299 <https://bugs.galette.eu/issues/1299>`_), some for security reasons
+- Add dynamic files on contributions and transactions, fixes (`#1552 <https://bugs.galette.eu/issues/1552>`_, `#1548 <https://bugs.galette.eu/issues/1548>`_, `#1546 <https://bugs.galette.eu/issues/1546>`_)
+- Improve self subscription captcha (`#1516 <https://bugs.galette.eu/issues/1516>`_)
+- Few fixes on members views (`#1512 <https://bugs.galette.eu/issues/1512>`_)
+- Fix auto generated logins that contains `@` (`#1542 <https://bugs.galette.eu/issues/1542>`_)
+- Change some database fields so they can store more characters (`#1499 <https://bugs.galette.eu/issues/1499>`_, `#1534 <https://bugs.galette.eu/issues/1534>`_)
+- Under the hood, the dependency management system has been changed (`#1372 <https://bugs.galette.eu/issues/1372>`_). This unfortunately affects all plugins, none of them will be compatible.
+
+Dependency management changes unfortunately makes all plugins incompatible with this release.
+
 .. _v0942:
 
 ******************
