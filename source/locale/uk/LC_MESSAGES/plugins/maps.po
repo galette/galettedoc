@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-04-12 14:26+0000\n"
+"PO-Revision-Date: 2021-04-14 10:26+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-plugins-maps/uk/>\n"
@@ -36,6 +36,7 @@ msgid ""
 "possibility to store geogaphical coordinates for members (latitude and "
 "longitude),"
 msgstr ""
+"можливість зберігати географічні координати для членів (широта та довгота),"
 
 # 9ee44748c93d439b9334078d8f591999
 #: ../plugins/maps.rst:8
@@ -43,6 +44,8 @@ msgid ""
 "a public map displaying up to date members that have choosen to be "
 "publically visible."
 msgstr ""
+"прилюдна мапа, на якій показані актуальні члени, яких обрали як прилюдно "
+"видимих."
 
 # cfd5ac1519764dd9bb293edf8ad1da94
 #: ../plugins/maps.rst:11
@@ -52,7 +55,7 @@ msgstr "Установлення"
 # 55beaf7e4cf042b99d7bb20c20f15d19
 #: ../plugins/maps.rst:13
 msgid "First of all, download the plugin:"
-msgstr "Перш за все, завантажте додаток:"
+msgstr "Перш за все, завантажте розширення:"
 
 # 12972b70c1e84038aa983bf162bb561d
 #: ../plugins/maps.rst:19
@@ -80,12 +83,12 @@ msgstr ""
 # bdcac6382fd046d4867b7dbd7a9144fd
 #: ../plugins/maps.rst:33
 msgid "And this is finished; Maps plugin is installed :)"
-msgstr ""
+msgstr "І це завершено; установлено розширення Maps :)"
 
 # 27830182254440878b13199d6b5e55c6
 #: ../plugins/maps.rst:36
 msgid "Plugin usage"
-msgstr ""
+msgstr "Використання розширення"
 
 # b9c3b08462f24dc891cc1438d26f41ad
 #: ../plugins/maps.rst:38
@@ -94,6 +97,9 @@ msgid ""
 "member is logged in, which contains `My location` entry. This page allow "
 "member to store its location."
 msgstr ""
+"Коли розширення встановлено, група `Maps` додається до меню Galette, коли "
+"член увійшов у систему, яка містить поле `Моє розташування`. Ця сторінка "
+"дозволяє членові зберігати своє місцеперебування."
 
 # db360f726f3a4304a579a341756413f3
 #: ../plugins/maps.rst:40
@@ -101,6 +107,8 @@ msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
 msgstr ""
+"Кнопка `Geolocalize` також додається при відображенні члена, що дозволяє "
+"адміністраторам встановлювати координати членів."
 
 # 1af3d5aae17b4bada49a1c0f0ca06b29
 #: ../plugins/maps.rst:42
@@ -110,6 +118,10 @@ msgid ""
 "will see all members, while simple members and visitors will only see up to "
 "date public ones."
 msgstr ""
+"Також до списку прилюдних сторінок додано запис `Мапа`, який відображає "
+"геолокалізованих актуальних членів. Адміністратори та співробітники "
+"бачитимуть усіх членів, тоді як прості члени та відвідувачі бачитимуть лише "
+"оновлених прилюдних."
 
 # 33b190b6ca084cefa8b9bd03c6981002
 #: ../plugins/maps.rst:44
@@ -117,6 +129,8 @@ msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
 msgstr ""
+"Перш за все, члени вводять координати свого місцеперебування. Надано кілька "
+"варіантів:"
 
 # 72dc0efe31654226bbbe60dd20f66c12
 #: ../plugins/maps.rst:46
@@ -125,6 +139,9 @@ msgid ""
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
 "org>`_),"
 msgstr ""
+"Якщо місто було вказано у даних члена, то буде запропонований список "
+"можливих місць (через `Онлайн-сервіс Nominatim <https://nominatim."
+"openstreetmap.org>`_),"
 
 # 1219157d2ba741938fb71d75fec71728
 #: ../plugins/maps.rst:47
@@ -132,11 +149,13 @@ msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
 msgstr ""
+"крім того, зона пошуку (надана з `OpenStreetMap <https://nominatim."
+"openstreetmap.org/>`_),"
 
 # f581f5c6ae7b4d0aabb4838bdabcb4d1
 #: ../plugins/maps.rst:48
 msgid "and also a geolocalize button using browser capacities."
-msgstr ""
+msgstr "а також кнопка геолокалізації за допомогою можливостей браузера."
 
 # 99d4a42cc87645d4bf15eef0c0de81bf
 #: ../plugins/maps.rst:50
@@ -144,6 +163,8 @@ msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
 msgstr ""
+"Зона пошуку може бути використана під час збереження місцеперебування членів "
+"та під час відображення мап."
 
 # da083618a9c54f1e9fe1a5ac4d49e503
 #: ../plugins/maps.rst:56
@@ -151,17 +172,22 @@ msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
 msgstr ""
+"Член може визначити своє місце розташування (з бажаною точністю) на мапі, "
+"вибравши одну з пропозицій:"
 
 # 5cc12078cb6345c8876df9a227d64be8
 #: ../plugins/maps.rst:62
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
+"За допомогою кнопки геолокалізації буде визначено його розташування з "
+"браузера:"
 
 # 822d4913304041ca8e197e0470a3ef78
 #: ../plugins/maps.rst:68
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
+"Потім місцеперебування члена відображається на мапі та може бути видалено:"
 
 # 66863b1337bf4c26b111618e07f807ad
 #: ../plugins/maps.rst:75
