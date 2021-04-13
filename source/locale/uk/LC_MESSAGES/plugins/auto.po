@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-04-12 14:26+0000\n"
+"PO-Revision-Date: 2021-04-14 10:26+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-plugins-auto/uk/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 # 9d9a5af2194e4d10bfa543f9119ba2dc
 #: ../plugins/auto.rst:3
 msgid "Auto"
-msgstr ""
+msgstr "Авто"
 
 # c4b1b2d4a1bb4fc3bd9d23b272f9b70e
 #: ../plugins/auto.rst:5
@@ -31,51 +31,53 @@ msgid ""
 "This plugin provides vehicles management for automobile clubs, you can "
 "manage:"
 msgstr ""
+"Це розширення забезпечує управління транспортними засобами для автомобільних "
+"клубів, ви можете керувати:"
 
 # 8e0867f3fa3047d5a575df7adddf3252
 #: ../plugins/auto.rst:7
 msgid "vehicles (owner, several informations, photo, etc),"
-msgstr ""
+msgstr "транспортні засоби (власник, кілька відомостей, світлина тощо),"
 
 # 1ced6f6a0cfd4ed595f8c31979ae7e0c
 #: ../plugins/auto.rst:8
 msgid "vehicle history modification (owner, color, ...),"
-msgstr ""
+msgstr "модифікація історії автомобіля (власник, колір, ...),"
 
 # 8b51a8e0076a4e97850616ce0acccc92
 #: ../plugins/auto.rst:9
 msgid "brands,"
-msgstr ""
+msgstr "бренди,"
 
 # d691681dbbd94a968eab23f877e0b430
 #: ../plugins/auto.rst:10
 msgid "models,"
-msgstr ""
+msgstr "моделі,"
 
 # b041d375471b40ab9e854b47eb10b77b
 #: ../plugins/auto.rst:11
 msgid "transmission types,"
-msgstr ""
+msgstr "види передачі,"
 
 # 9107154aefbd4f149d84f3ffe00f98c9
 #: ../plugins/auto.rst:12
 msgid "body types,"
-msgstr ""
+msgstr "види кузова,"
 
 # 928fe64865bc4c1bbf1381072069a353
 #: ../plugins/auto.rst:13
 msgid "colors,"
-msgstr ""
+msgstr "кольори,"
 
 # adf67773f58543fd9330b7b0e4b699fb
 #: ../plugins/auto.rst:14
 msgid "finitions,"
-msgstr ""
+msgstr "оздоблення,"
 
 # 02aebc2421554373958c552d1ba11ea4
 #: ../plugins/auto.rst:15
 msgid "states."
-msgstr ""
+msgstr "функції,"
 
 # f45921712638440893877f1cff286a5f
 #: ../plugins/auto.rst:17
@@ -85,6 +87,10 @@ msgid ""
 "<http://www.club500.fr/>`_. A big thanks to them for their precious help "
 "during plugin development :)"
 msgstr ""
+"Це розширення було спочатку розроблене у співпраці з Anatole з `Club 404 "
+"<https://www.leclub404.com/>`_, та François з `club Fiat 500 <http://www."
+"club500.fr/>`_. Красно дякуємо їм за дорогоцінну допомогу під час розвитку "
+"розширення :)"
 
 # 4e22ed6068cc4a9b9e4f8b0e08c31c8d
 #: ../plugins/auto.rst:20
@@ -94,7 +100,7 @@ msgstr "Установлення"
 # 8a7ef4065fab4eda92a47ecc8a30b9c6
 #: ../plugins/auto.rst:22
 msgid "First of all, download the plugin:"
-msgstr "Перш за все, завантажте додаток:"
+msgstr "Перш за все, завантажте розширення:"
 
 # 037b5fefb9224607ac170b0c3b5bcfa6
 #: ../plugins/auto.rst:28
@@ -122,7 +128,7 @@ msgstr ""
 # d6e4cb8fdbdd49cab1f9d3633b22e9a5
 #: ../plugins/auto.rst:42
 msgid "And this is finished; Auto plugin is installed :)"
-msgstr ""
+msgstr "І це завершено; Встановлено розширення Авто :)"
 
 # b618b67c4afe4f678895e0300c67e7d5
 #: ../plugins/auto.rst:44
@@ -130,11 +136,13 @@ msgid ""
 "There is no particular setup required, you can just enter data in the "
 "database."
 msgstr ""
+"Особливого налаштування не потрібно, ви можете просто ввести дані в базу "
+"даних."
 
 # e93aeb5836914487b171b8968e9dfc84
 #: ../plugins/auto.rst:47
 msgid "Configure required fields"
-msgstr ""
+msgstr "Налаштуйте обов’язкові поля"
 
 # 634ff5198891409ea744b953ce630a94
 #: ../plugins/auto.rst:49
@@ -146,6 +154,12 @@ msgid ""
 "want to require. As example, if you just want to require name and model for "
 "a car, you will need:"
 msgstr ""
+"При додаванні нового автомобіля в базу даних є кілька полів, які необхідні, "
+"але які можуть не відповідати вашим потребам. В цьому випадку ви можете "
+"визначити свої власні обов'язкові поля: просто створіть ``local_auto_required"
+".inc.php`` файл у вашій директорії Galette ``config``і оголосіть масив "
+"необхідних полів. Наприклад, якщо ви просто хочете вимагати назву і модель "
+"автомобіля, вам це знадобиться:"
 
 # b3cd519c29f049618e2c3577b345c9e4
 #: ../plugins/auto.rst:60
