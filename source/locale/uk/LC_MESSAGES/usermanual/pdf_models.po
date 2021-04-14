@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-04-14 10:26+0000\n"
+"PO-Revision-Date: 2021-04-15 14:26+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-user-pdf_models/uk/>\n"
@@ -43,7 +43,6 @@ msgstr "Успадкування моделей"
 
 # f2868b0991074dafb33a8eaca031ae3d
 #: ../usermanual/pdf_models.rst:17
-#, fuzzy
 msgid "The global model defines three distincts parts:"
 msgstr "Глобальна модель визначає три різні частини:"
 
@@ -55,12 +54,12 @@ msgstr "заголовок,"
 # f25efe84e91547f5ad3a0f613bac10aa
 #: ../usermanual/pdf_models.rst:20
 msgid "footer,"
-msgstr ""
+msgstr "нижній колонтитул,"
 
 # fb0633cd2723449982e52dada96f3801
 #: ../usermanual/pdf_models.rst:21
 msgid "CSS styles."
-msgstr ""
+msgstr "стилі CSS."
 
 # 2f91f1a54da04be99a9ebdeeb2c961e9
 #: ../usermanual/pdf_models.rst:23
@@ -69,6 +68,10 @@ msgid ""
 "header and footer except if the new model redefines them, in which case only "
 "specific values will be applied."
 msgstr ""
+"Кожна модель, яка успадковує від `Global` автоматично отримає однакові "
+"заголовок і нижній колонтитул, за винятком випадків, коли нова модель "
+"перевизначає їх, і в цьому випадку будуть застосовуватися тільки специфічні "
+"значення."
 
 # fb19833be15644cfbe98f65537d0b31b
 #: ../usermanual/pdf_models.rst:25
@@ -77,11 +80,14 @@ msgid ""
 "always be applied, and specific model properties will be appended (jsut like "
 "real CSS stylesheets)."
 msgstr ""
+"Для властивостей CSS це трохи інше: `Global` властивості моделі завжди "
+"будуть застосовуватися, а до них додаватимуться специфічні властивості "
+"моделі (jsut як справжні таблиці стилів CSS)."
 
 # 18028586cc404605b575cace3f08bc8f
 #: ../usermanual/pdf_models.rst:28
 msgid "Generalities"
-msgstr ""
+msgstr "Загальні відомості"
 
 # 514847b03f1645cca71ce658d425006b
 #: ../usermanual/pdf_models.rst:30
@@ -89,6 +95,8 @@ msgid ""
 "In addition of header, footer and CSS styles, a model defines a title, a sub "
 "title and a body."
 msgstr ""
+"На додаток до стилів заголовків, нижніх колонтитулів і CSS, модель визначає "
+"назву, підзаголовок і тіло."
 
 # 7799205d9ec94bde904af0eea99e655d
 #: ../usermanual/pdf_models.rst:32
@@ -98,6 +106,11 @@ msgid ""
 "internationnalized texts like `_T(\"My text\")` that relies on :ref:`Galette "
 "standard translation capacities <i18nsyntax>`."
 msgstr ""
+"Кожне з цих полів може приймати лише певні поля заміни, для отримання "
+"подробиць зверніться до вбудованої довідки з призначеного для користувача "
+"інтерфейсу.. Вони також можуть містити внутрішні тексти, як `_T(\"My text\")`"
+" що спирається на :ref:`Можливості перекладу за стандартом Galette "
+"<i18nsyntax>`."
 
 # 5c5cbe88aa964926a2ab04f76292fd39
 #: ../usermanual/pdf_models.rst:34
@@ -106,16 +119,19 @@ msgid ""
 "file, and not displaying a page in a recent brower; there are many "
 "limitations."
 msgstr ""
+"Моделі засновані на HTML і CSS стилях, але майте на увазі, що ми створюємо "
+"PDF файл, а не відображаємо сторінку в недавньому браузері; є багато "
+"обмежень."
 
 # 13da33a36db64a4c96c92bf4ba19b86e
 #: ../usermanual/pdf_models.rst:37
 msgid "Invoices and receipts"
-msgstr ""
+msgstr "Рахунки-фактури та квитанції"
 
 # 87197e2d52b743d9b0362facef8747e1
 #: ../usermanual/pdf_models.rst:39
 msgid "Invoice and receipt models are the same, excepting their titles."
-msgstr ""
+msgstr "Моделі рахунків-фактур і квитанцій однакові, за винятком їх назв."
 
 # 81316cb5e5a14037b0af6b42c62ffa1e
 #: ../usermanual/pdf_models.rst:46
@@ -123,11 +139,14 @@ msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
 msgstr ""
+"Як видно на наведеному вище зняткові, модель рахунки-фактури не визначає "
+"стилі заголовків, нижніх колонтитулів або CSS, використовуються ті, які "
+"утворюють модель `Global`."
 
 # 1195c0c6d5384d3eb41a5efa90800e4a
 #: ../usermanual/pdf_models.rst:49
 msgid "Membership form"
-msgstr ""
+msgstr "Форма членства"
 
 # cf1c6206876d4ada90aa90e05dff5b85
 #: ../usermanual/pdf_models.rst:51
@@ -136,6 +155,9 @@ msgid ""
 "(to print some of them for any event for example) or filled with one member "
 "informations."
 msgstr ""
+"Це модель, яка може бути використана для друку форми членства. Вона може "
+"бути порожньою (наприклад, видрукувати деякі з них для будь-якої події) або "
+"заповнена даними про одного члена."
 
 # 3cfab6378f114b25ad54a51127100c72
 #: ../usermanual/pdf_models.rst:53
@@ -145,3 +167,7 @@ msgid ""
 "change, but you can do many more with it. You can also create your own "
 "plugin based on FullCard."
 msgstr ""
+"Оскільки існує безліч обмежень, ви можете використовувати :doc:`розширення "
+"FullCard </plugins/fullcard>` яке замінить цю модель. Міняти її складніше, "
+"але з нею можна зробити набагато більше. Ви також можете створити своє "
+"власне розширення на основі FullCard."
