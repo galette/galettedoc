@@ -2,28 +2,33 @@
 # Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
+# Tymofij Lytvynenko <till.svit@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-15 14:26+0000\n"
+"Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
+"doc-plugins-index/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 # 9f286384bdcf4357a67512dadc464885
 #: ../plugins/index.rst:7
 msgid ":doc:`Plugins documentation <index>`"
-msgstr ""
+msgstr ":doc:`Документація розширень <index>`"
 
 # 77622bd4ee3c4eb7b42fec1153fe57da
 #: ../plugins/index.rst:13
 msgid "Plugins"
-msgstr ""
+msgstr "Розширення"
 
 # 20eaa90f7f0143dcb3a40529ec4581d1
 #: ../plugins/index.rst:15
@@ -33,6 +38,10 @@ msgid ""
 "be disabled, in which case you should consider upgrading to a more recent "
 "version."
 msgstr ""
+"Система розширень дозволяє розширити Galette специфічними функціями, які не "
+"були б корисні більшості користувачів. Несумісні розширення будуть "
+"автоматично вимкнені, в цьому випадку слід подумати про оновлення до "
+"свіжішої версії."
 
 # 87b1d92dfaf04f2e8c125aee56676a15
 #: ../plugins/index.rst:17
@@ -40,17 +49,21 @@ msgid ""
 "Each plugin is a simple directory in ``{galette}/plugins/``, then refer to "
 "the plugin documentation to install it."
 msgstr ""
+"Кожне розширення - це простий каталог ``{galette}/plugins/``, що звертається "
+"до документації розширень, щоб встановити їх."
 
 # 057d6d23fa97483b9cb5c48e20b3f8fd
 #: ../plugins/index.rst:19
 msgid ""
 "You can disable a plugin creating a ``_disabled`` file in its directory."
 msgstr ""
+"Ви можете вимкнути розширення створенням файлу ``_disabled`` в цій "
+"директорії."
 
 # 378be41e5958451190d604c0fef9bf95
 #: ../plugins/index.rst:23
 msgid "Official Plugins"
-msgstr ""
+msgstr "Офіційні розширення"
 
 # 389cfb939ad743fc82512bd709d2931f
 #: ../plugins/index.rst:25
@@ -58,11 +71,13 @@ msgid ""
 "Official plugins are developed and maintained by the Galette team. Available "
 "official plugins are:"
 msgstr ""
+"Офіційні розширення розробляються і підтримуються командою Galette. Доступні "
+"офіційні розширення:"
 
 # 4c9dbe22076d44539ce37403ed706f28
 #: ../plugins/index.rst:40
 msgid "Third party plugins"
-msgstr ""
+msgstr "Сторонні розширення"
 
 # 8f005e5b645142d4884d77ae4b499695
 #: ../plugins/index.rst:42
@@ -70,6 +85,9 @@ msgid ""
 "Third party plugins are developed and maintained by community members. Some "
 "of them may not be translated, or available on only one database engine."
 msgstr ""
+"Розширення сторонніх виробників розробляються й обслуговуються учасниками "
+"спільноти. Деякі з них можуть бути не перекладені або доступні тільки в "
+"одному рушії бази даних."
 
 # 93c8143a19ae49398850256e929f31a4
 #: ../plugins/index.rst:44
@@ -78,6 +96,8 @@ msgid ""
 "management of a flying club), developed by Mélissa (**no longer "
 "maintained**),"
 msgstr ""
+"`Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (основне "
+"управління аероклубом), розроблено Mélissa (**більше не підтримується**),"
 
 # dde62501fdd9413faa3dba108c8a4178
 #: ../plugins/index.rst:45
@@ -85,6 +105,8 @@ msgid ""
 "`QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes "
 "generation), developed by Frédéric,"
 msgstr ""
+"`QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (утворення "
+"QR-кодів), розроблено Frédéric,"
 
 # ff077e88788b40fd9c58ea96da46d00d
 #: ../plugins/index.rst:46
@@ -92,6 +114,8 @@ msgid ""
 "`Grades <https://galette-community.github.io/plugin-grades/>`_ (evaluations "
 "management), developed by Frédéric."
 msgstr ""
+"`Grades <https://galette-community.github.io/plugin-grades/>`_ (управління "
+"оцінками), розроблено Frédéric."
 
 # 768253b9ab484890b2d7ecfeae4ebfb3
 #: ../plugins/index.rst:48
@@ -100,11 +124,14 @@ msgid ""
 "created to :doc:`manage third party plugins <plugins-tiers>`, if you want to "
 "add your plugin."
 msgstr ""
+"`Спільноту Github <https://github.com/galette-community/>`_ було створено "
+"для :doc:`управління сторонніми розширеннями <plugins-tiers>`, якщо ви "
+"хочете додати розширення."
 
 # 699c14f189ea4781b54ab828faa579e7
 #: ../plugins/index.rst:59
 msgid "Plugins management interface"
-msgstr ""
+msgstr "Інтерфейс управління розширеннями"
 
 # f0d2b7511fad4536af2cd3f8b589e9f7
 #: ../plugins/index.rst:61
@@ -113,6 +140,9 @@ msgid ""
 "dashboard or in the configuration menu. After you have downloaded plugin(s) "
 "in Galette ``plugins`` directory, a list will be displayed:"
 msgstr ""
+"Надано інтерфейс управління розширеннями, його можна знайти на дошці даних "
+"або в меню конфігурації. Після того, як Ви завантажили розширення в "
+"директорії Galette ``plugins`` буде відображено список:"
 
 # 3701d8b0588649ff914801cc8acd029a
 #: ../plugins/index.rst:68
@@ -120,6 +150,8 @@ msgid ""
 "If web server has read access to your plugins directory, then you can enable "
 "or disable any plugin from the related icon."
 msgstr ""
+"Якщо вебсервер має доступ на читання вашої директорії розширень, ви можете "
+"увімкнути або вимкнути будь-яке розширення за допомогою відповідного значка."
 
 # 91de008c63ed4ced97e979796d17ed4c
 #: ../plugins/index.rst:70
@@ -128,6 +160,9 @@ msgid ""
 "scripts from the interface. As example, the Paypal plugin database "
 "installation:"
 msgstr ""
+"Якщо для роботи розширення потрібна база даних, ви можете відтворити "
+"сценарії встановлення та оновлення з інтерфейсу. Наприклад, розширення бази "
+"даних Paypal:"
 
 # 45b47f458532489ba9be241f040ee1e5
 #: ../plugins/index.rst:77
@@ -135,13 +170,15 @@ msgid ""
 "Database ACLs will then be checked. Unlike Galette, no information will be "
 "asked to you, since all is already available from your current instance:"
 msgstr ""
+"Потім будуть перевірені ACL бази даних. На відміну від Galette, відомості не "
+"будуть запитуватися, бо вони всі вже є з вашого поточного зразка:"
 
 # 5f8fb6d7de85412794fce521ba853cb0
 #: ../plugins/index.rst:84
 msgid "Scripts themselves will then be run:"
-msgstr ""
+msgstr "Після цього буде запущено самі скрипти:"
 
 # 17bffcc23f7e42239dd3fd8bb2ca5b6f
 #: ../plugins/index.rst:91
 msgid "And this is finished!"
-msgstr ""
+msgstr "І на цьому все завершено!"
