@@ -2,38 +2,44 @@
 # Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
+# Tymofij Lytvynenko <till.svit@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-23 21:31+0000\n"
+"Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
+"doc-install-postinstall/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 # 488a226702e54799884dd1ac10f3aec9
 #: ../installation/postinstall.rst:5
 msgid "Post installation"
-msgstr ""
+msgstr "Після встановлення"
 
 # b17c9984f26a47b69f23f52834d15f1d
 #: ../installation/postinstall.rst:8
 msgid "Various tasks"
-msgstr ""
+msgstr "Різні завдання"
 
 # 9691205beb56471ab60663500a555354
 #: ../installation/postinstall.rst:10
 msgid "One Galette properly installed, you still have a few things to do:"
 msgstr ""
+"Правильно встановлений один Galette, вам ще потрібно зробити кілька речей:"
 
 # bf60cb14174e492f98bfd9c075eedcae
 #: ../installation/postinstall.rst:12
 msgid "remove write access to the ``config`` directory,"
-msgstr ""
+msgstr "вилучити доступ на запис до директорії ``config``,"
 
 # 8bd9d44f758e415db71d28db881ba099
 #: ../installation/postinstall.rst:13
@@ -41,11 +47,13 @@ msgid ""
 "remove the whole ``install`` directory, or make it unavailable with a "
 "directive like (for Apache):"
 msgstr ""
+"вилучіть усю директорію ``install``, або зробіть його недоступним з "
+"директивою типу для Apache:"
 
 # 0a3871ca8a3d48b88d769c235800b20e
 #: ../installation/postinstall.rst:25
 msgid "Configure paths"
-msgstr ""
+msgstr "Налаштування шляхів"
 
 # 020264d5c184431bb389617ff7378444
 #: ../installation/postinstall.rst:27
@@ -53,6 +61,8 @@ msgid ""
 "Some galette paths may be changed from a configuration parameter, such as "
 "exports, photos, etc"
 msgstr ""
+"Деякі шляхи Galette можуть бути змінені з конфігураційного параметра, "
+"наприклад, експорт, світлини тощо"
 
 # 915b59a4be0c41ab979c82307b6ead4e
 #: ../installation/postinstall.rst:29
@@ -63,6 +73,11 @@ msgid ""
 "galette/data/photos/``, and so on. Default configuration is done in ``config/"
 "paths.inc.php`` file that should not be changed."
 msgstr ""
+"Усталено Galette надає всі ці директорії в директорії установлення. Таким "
+"чином, якщо установлення знаходиться в ``/var/www/galette``, то експорт буде "
+"здійснюватися в ``/var/www/galette/data/exports``, світлини в ``/var/ww/"
+"galette/data/photos/``, і так далі. Усталені налаштування виконуються в "
+"файлі ``config/paths.inc.php``, який не має бути змінений."
 
 # d404b74d31ab4a0989141c8c1da8b8ab
 #: ../installation/postinstall.rst:32
@@ -71,6 +86,9 @@ msgid ""
 "local_paths.inc.php``, with paths you want declared as PHP constants. For "
 "exemple, to define a different path for photos:"
 msgstr ""
+"Замість цього ви можете перевизначити деякі або всі значення в ``config/"
+"local_paths.inc.php``, зі шляхами, які ви хочете оголосити PHP-сталими. "
+"Наприклад, визначити інший шлях для світлин:"
 
 # eb3cd2eb4c0b439eabd40d7131261a4f
 #: ../installation/postinstall.rst:40
@@ -80,36 +98,43 @@ msgid ""
 "only, the web server should not have to write in them. Here is the complete "
 "list:"
 msgstr ""
+"Усі шляхи, які початково прокладені у директорії ``data`` повинні залишатися "
+"доступними для читання/запису для вебсервера. Всі інші директорії повинні "
+"бути встановлені як \"тільки для читання\", вебсервер не повинен записувати "
+"в них нічого. Ось повний список:"
 
 # 6432ba3da92c493db780460e0c4fae88
 #: ../installation/postinstall.rst:42
 msgid "`GALETTE_CONFIG_PATH` : path to Galette configuration files,"
-msgstr ""
+msgstr "`GALETTE_CONFIG_PATH` : шлях до файлів конфігурації Galette,"
 
 # 121fa2d66cfa46b785eb64f660e48da1
 #: ../installation/postinstall.rst:43
 msgid "`GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),"
 msgstr ""
+"`GALETTE_DATA_PATH` : шлях до директорії даних Galette (починаючи з 0.8),"
 
 # d59132cf243e44ffaaf5d9bd6779ad81
 #: ../installation/postinstall.rst:44
 msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr ""
+"`GALETTE_LOGS_PATH` : шлях журналів Galette, змініть його, як ви хочете,"
 
 # 361b7bfb095f48999793c256e7f0b57d
 #: ../installation/postinstall.rst:45
 msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
-msgstr ""
+msgstr "`GALETTE_COMPILE_DIR` : шлях до компіляції системи шаблонів Smarty,"
 
 # 827c402225814d058364e8d270935477
 #: ../installation/postinstall.rst:46
 msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
-msgstr ""
+msgstr "`GALETTE_CACHE_DIR` : директорія кешування для деяких випадків,"
 
 # 84e8f4be8acb4553bfd49a9b6311957d
 #: ../installation/postinstall.rst:47
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
+"`GALETTE_EXPORTS_PATH` : шлях до директорії для зберігання CSV-експортів,"
 
 # bd56b3e8293a476d8c3d4e44c020de50
 #: ../installation/postinstall.rst:48
@@ -117,11 +142,14 @@ msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
 msgstr ""
+"`GALETTE_IMPORTS_PATH` : шлях до директорії, яка містить файли CSV для "
+"імпорту,"
 
 # 5d47b80230af4986be976df98f1d7ad8
 #: ../installation/postinstall.rst:49
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
 msgstr ""
+"`GALETTE_ATTACHMENTS_PATH` : шлях до прикріплених документів у розсиланні,"
 
 # aa1fbe83707f43649d6b9baa66de4a29
 #: ../installation/postinstall.rst:50
@@ -129,16 +157,18 @@ msgid ""
 "`GALETTE_FILES_PATH` : path to the dynamic files directory storage (from "
 "dynamic fields),"
 msgstr ""
+"`GALETTE_FILES_PATH` : шлях до директорії сховища динамічних файлів (з "
+"динамічних полів),"
 
 # e144dd24d6c84345aa020da94f00f002
 #: ../installation/postinstall.rst:51
 msgid "`GALETTE_PHOTOS_PATH` : path to store members photos and logos."
-msgstr ""
+msgstr "`GALETTE_PHOTOS_PATH` : шлях зберігання світлин членів та логотипів."
 
 # 12af61e48d4d47cf80df6b2b019cf02e
 #: ../installation/postinstall.rst:54
 msgid "Data security"
-msgstr ""
+msgstr "Безпека даних"
 
 # c9320dcabd7b4e1a921106a729deced6
 #: ../installation/postinstall.rst:56
@@ -147,6 +177,9 @@ msgid ""
 "You must be aware that those information are transmitted as is to the "
 "server; and someone may intercept and read them sniffing your exchanges."
 msgstr ""
+"Ви та ваші члени ввійдете в Galette, використовуючи логін і пароль. Ви "
+"повинні знати, що ці дані передаються на сервер як є, і хтось може "
+"перехопити та прочитати їх, прослуховуючи Ваші пакети обміну."
 
 # 696788f9c1a34305be512665338d5b66
 #: ../installation/postinstall.rst:58
@@ -156,6 +189,10 @@ msgid ""
 "will tell you), when you enter any sensitive information such as login, "
 "passwords, credit card number, ..."
 msgstr ""
+"Ця проблема полягає в тому, що при введенні будь-яких конфіденційних даних, "
+"таких як логін, паролі, номери кредитної картки тощо, ви повинні перевірити, "
+"чи перебуваєте ви на захищеній сторінці HTTPS (ваш браузер повідомить вас "
+"про це) ..."
 
 # b74ceb4f088f4427baeb090fa018018b
 #: ../installation/postinstall.rst:60
@@ -164,3 +201,6 @@ msgid ""
 "problem. All data that will be transmitted to the server will be a bit more "
 "confident and secured :)"
 msgstr ""
+"І це те ж саме для Galette, ви можете використовувати його Walong з SSL без "
+"проблем. Всі дані, які будуть передаватися на сервер, будуть трохи більш "
+"конфіденційними та безпечними :)"
