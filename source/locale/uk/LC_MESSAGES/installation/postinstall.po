@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-04-23 21:31+0000\n"
+"PO-Revision-Date: 2021-05-01 13:31+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-install-postinstall/uk/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 # bf60cb14174e492f98bfd9c075eedcae
 #: ../installation/postinstall.rst:12
 msgid "remove write access to the ``config`` directory,"
-msgstr "вилучити доступ на запис до директорії ``config``,"
+msgstr "вилучити доступ на запис до каталогу ``config``,"
 
 # 8bd9d44f758e415db71d28db881ba099
 #: ../installation/postinstall.rst:13
@@ -47,8 +47,8 @@ msgid ""
 "remove the whole ``install`` directory, or make it unavailable with a "
 "directive like (for Apache):"
 msgstr ""
-"вилучіть усю директорію ``install``, або зробіть його недоступним з "
-"директивою типу для Apache:"
+"вилучіть весь каталог ``install``, або зробіть його недоступним з директивою "
+"типу для Apache:"
 
 # 0a3871ca8a3d48b88d769c235800b20e
 #: ../installation/postinstall.rst:25
@@ -73,11 +73,11 @@ msgid ""
 "galette/data/photos/``, and so on. Default configuration is done in ``config/"
 "paths.inc.php`` file that should not be changed."
 msgstr ""
-"Усталено Galette надає всі ці директорії в директорії установлення. Таким "
-"чином, якщо установлення знаходиться в ``/var/www/galette``, то експорт буде "
+"Типово Galette надає всі ці каталоги в каталозі встановлення. Таким чином, "
+"якщо встановлення знаходиться в ``/var/www/galette``, то експорт буде "
 "здійснюватися в ``/var/www/galette/data/exports``, світлини в ``/var/ww/"
-"galette/data/photos/``, і так далі. Усталені налаштування виконуються в "
-"файлі ``config/paths.inc.php``, який не має бути змінений."
+"galette/data/photos/``, і так далі. Типові налаштування виконуються в файлі "
+"``config/paths.inc.php``, який не має бути змінений."
 
 # d404b74d31ab4a0989141c8c1da8b8ab
 #: ../installation/postinstall.rst:32
@@ -98,10 +98,10 @@ msgid ""
 "only, the web server should not have to write in them. Here is the complete "
 "list:"
 msgstr ""
-"Усі шляхи, які початково прокладені у директорії ``data`` повинні залишатися "
-"доступними для читання/запису для вебсервера. Всі інші директорії повинні "
-"бути встановлені як \"тільки для читання\", вебсервер не повинен записувати "
-"в них нічого. Ось повний список:"
+"Усі шляхи, які початково прокладені у каталозі ``data`` повинні залишатися "
+"доступними для читання/запису для вебсервера. Всі інші каталоги повинні бути "
+"встановлені як \"тільки для читання\", вебсервер не повинен записувати в них "
+"нічого. Ось повний список:"
 
 # 6432ba3da92c493db780460e0c4fae88
 #: ../installation/postinstall.rst:42
@@ -111,8 +111,7 @@ msgstr "`GALETTE_CONFIG_PATH` : шлях до файлів конфігурац�
 # 121fa2d66cfa46b785eb64f660e48da1
 #: ../installation/postinstall.rst:43
 msgid "`GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),"
-msgstr ""
-"`GALETTE_DATA_PATH` : шлях до директорії даних Galette (починаючи з 0.8),"
+msgstr "`GALETTE_DATA_PATH` : шлях до каталогу даних Galette (починаючи з 0.8),"
 
 # d59132cf243e44ffaaf5d9bd6779ad81
 #: ../installation/postinstall.rst:44
@@ -128,13 +127,12 @@ msgstr "`GALETTE_COMPILE_DIR` : шлях до компіляції систем�
 # 827c402225814d058364e8d270935477
 #: ../installation/postinstall.rst:46
 msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
-msgstr "`GALETTE_CACHE_DIR` : директорія кешування для деяких випадків,"
+msgstr "`GALETTE_CACHE_DIR` : каталог кешування для деяких випадків,"
 
 # 84e8f4be8acb4553bfd49a9b6311957d
 #: ../installation/postinstall.rst:47
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
-msgstr ""
-"`GALETTE_EXPORTS_PATH` : шлях до директорії для зберігання CSV-експортів,"
+msgstr "`GALETTE_EXPORTS_PATH` : шлях до каталогу для зберігання CSV-експортів,"
 
 # bd56b3e8293a476d8c3d4e44c020de50
 #: ../installation/postinstall.rst:48
@@ -142,8 +140,7 @@ msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
 msgstr ""
-"`GALETTE_IMPORTS_PATH` : шлях до директорії, яка містить файли CSV для "
-"імпорту,"
+"`GALETTE_IMPORTS_PATH` : шлях до каталогу, що містить файли CSV для імпорту,"
 
 # 5d47b80230af4986be976df98f1d7ad8
 #: ../installation/postinstall.rst:49
@@ -157,7 +154,7 @@ msgid ""
 "`GALETTE_FILES_PATH` : path to the dynamic files directory storage (from "
 "dynamic fields),"
 msgstr ""
-"`GALETTE_FILES_PATH` : шлях до директорії сховища динамічних файлів (з "
+"`GALETTE_FILES_PATH` : шлях до каталогу сховища динамічних файлів (з "
 "динамічних полів),"
 
 # e144dd24d6c84345aa020da94f00f002
