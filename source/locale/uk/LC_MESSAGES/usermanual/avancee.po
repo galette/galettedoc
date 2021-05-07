@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-04-29 08:31+0000\n"
+"PO-Revision-Date: 2021-05-08 10:31+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-user-advanced/uk/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 # 146a7da35cab4d59bcc2bcf51c1acdd9
 #: ../usermanual/avancee.rst:5
 msgid "Experimented users"
-msgstr ""
+msgstr "Користувачі, що брали участь в експериментах"
 
 # 1f9bbed20cf5465d9384452334706982
 #: ../usermanual/avancee.rst:9
@@ -31,11 +31,13 @@ msgid ""
 "Use only following instructions if you know what you are doing... \"The "
 "management is not responsable for any case of [...]\" :D"
 msgstr ""
+"Користуйтеся тільки слідуючи вказівкам, якщо ви знаєте, що робите ... "
+"\"Керівництво не несе відповідальності за будь-який випадок [...]\": D"
 
 # 73aa7121c47b43ce986562d44a72d14f
 #: ../usermanual/avancee.rst:12
 msgid "Adapt to your graphical chart"
-msgstr ""
+msgstr "Пристосування до вашого графіку"
 
 # 3b8372bf5196483784a70dd21c9548bc
 #: ../usermanual/avancee.rst:14
@@ -46,6 +48,11 @@ msgid ""
 "Create a ``galette_local.css`` file in your ``webroot/themes/default`` "
 "directory with your styles, it will be automatically included."
 msgstr ""
+"Якщо ви вмієте працювати з таблицями стилів CSS, ви можете пристосувати "
+"Galette CSS під свої власні кольори. Для цього настійно не пораджено "
+"редагувати файли Galette CSS, а краще використовувати спеціальний механізм, "
+"призначений для цього. Створіть файл ``galette_local.css`` у вашому каталозі "
+"``webroot/themes/default`` зі своїми стилями, їх буде автоматично увімкнено."
 
 # 4c117cdc3e114fe59486d6e5fa1ff289
 #: ../usermanual/avancee.rst:16
@@ -55,6 +62,11 @@ msgid ""
 "Galette the CSS rule `#asso_name` that defines several parameters including "
 "the color. Then, in your stylesheet, you will just need the following:"
 msgstr ""
+"Постарайтеся зробити все якомога простіше. Наприклад, якщо ви хочете змінити "
+"колір назви товариства (відображається під заголовками сторінок), ви "
+"знайдете в Galette CSS-правило `#asso_name`, яке визначає кілька параметрів, "
+"включаючи колір. Потім, у вашій таблиці стилів, вам знадобиться тільки "
+"наступне:"
 
 # 1e96e02eb7b34e39bd65c5c63a67501b
 #: ../usermanual/avancee.rst:24
@@ -63,6 +75,10 @@ msgid ""
 "CSS file and all issues it may cause will not be took into account by the "
 "Galette team, no support will be provided."
 msgstr ""
+"Цього буде достатньо для показу назви вашого товариства червоним кольором. "
+"Зверніть увагу, що локальний CSS файл і всі проблеми, які він може "
+"викликати, не будуть прийняті до уваги командою Galette, підтримка не буде "
+"надана."
 
 # fb6684b53601415f9a1227f60a605450
 #: ../usermanual/avancee.rst:26
@@ -70,11 +86,13 @@ msgid ""
 "You also can override the print stylesheet, just create a "
 "``galette_local_print.css`` file."
 msgstr ""
+"Ви також можете перевизначити таблицю стилів друку, просто створіть файл "
+"``galette_local_print.css``."
 
 # 0b370ab020e041978a129a9e9bd88e6b
 #: ../usermanual/avancee.rst:29
 msgid "Add and change strings"
-msgstr ""
+msgstr "Додавання та змінення рядків"
 
 # 790842fad86747e3a276e1e17ed66b6a
 #: ../usermanual/avancee.rst:31
@@ -86,6 +104,12 @@ msgid ""
 "contains a simple PHP array with the original string (the one in Galette "
 "source code) as index."
 msgstr ""
+"За необхідності можна налаштувати перекладені рядки в Galette - без змінення "
+"будь-якого вихідного файлу Galette. Просто створіть файл ``galette_ {mylang} "
+"_local_lang.php`` (де `{mylang}` повинен бути замінений на мову, наприклад "
+"`fr_FR.utf8` або` en_US`) в каталозі `` lang``. Цей файл повинен містити "
+"простий PHP-масив з вихідним рядком (тим, що у вихідному коді Galette) в "
+"якості індексу."
 
 # d4b7b7d2e60e49d4903903a8941c6438
 #: ../usermanual/avancee.rst:33
@@ -96,6 +120,11 @@ msgid ""
 "`Mot de passe :` and we want to replace it with `Secret :`; so we will "
 "create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
 msgstr ""
+"Наприклад, ми хочемо змінити рядок \"Password\" на сторінці входу в систему "
+"українською мовою, перекладену як `Пароль:`. Оригінальний рядок - `Password:`"
+" (див. ``Galette / templates / default / index.tpl``), його український "
+"переклад - `Пароль:` і ми хочемо замінити його на `Гасло: ``; тому ми "
+"створимо `` galette_fr_FR.utf8_local_lang.php`` з наступним змістом:"
 
 # 860fe6d76a224c0bba74e0bc108f9c6b
 #: ../usermanual/avancee.rst:41
@@ -105,6 +134,11 @@ msgid ""
 "important to take the original string verbatim, punctuation included; and "
 "take care to escape single quotes (with a backslash) in all the strings."
 msgstr ""
+"Оскільки Galette використовує систему кешування для перекладів, зміни можуть "
+"бути видні не відразу; можливо, вам доведеться перезапустити PHP (або "
+"очистити кеш). Важливо сприймати вихідний рядок дослівно, включаючи "
+"пунктуацію, і стежити за тим, щоб у всіх рядках були одинарні лапки (зі "
+"зворотною скісною рискою)."
 
 # f928d85c3e2b44b7a87ecc7c848eb051
 #: ../usermanual/avancee.rst:43
@@ -114,6 +148,10 @@ msgid ""
 "php`` where `{plugin}` is the routing name you can find in the ``_define."
 "php`` file."
 msgstr ""
+"Ви також можете перевизначити мови для розширень, використовуючи метод sam, "
+"просто помістіть файл в каталог plugins lang і назвіть його "
+"``{plugin}_{mylang}_local_lang.php`` де `{plugin}` - назва маршруту, яку ви "
+"можете знайти в файлі ``_define.php``."
 
 # ae27f3e2e3fa4b67ad6fb55a30d83d00
 #: ../usermanual/avancee.rst:45
@@ -121,11 +159,13 @@ msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
 msgstr ""
+"Це буде працювати тільки за використання функцій перекладу Galette, але не "
+"за використання рідного gettext."
 
 # 175f39314197485ea541b80324e86e63
 #: ../usermanual/avancee.rst:48
 msgid "Change session lifetime"
-msgstr ""
+msgstr "Зміна тривалості сеансу"
 
 # be24dd1f3fa94b5dacee5b25f1adecf7
 #: ../usermanual/avancee.rst:50
@@ -135,11 +175,15 @@ msgid ""
 "constant named ``GALETTE_TIMEOUT`` to :ref:`change session lifetime using "
 "behavior configuration <behavior>`:"
 msgstr ""
+"Galette типово створюватиме сесію з типовою тривалістю життя (і, схоже, "
+"браузери поводяться інакше в цьому випадку). У будь-якому випадку, ви можете "
+"визначити сталу з назвою ``GALETTE_TIMEOUT`` для :ref:`зміни часу життя "
+"сеансу за допомогою зміни поведінки <behavior>`:"
 
 # 009f4a8642bc41fd8de77df9776d4481
 #: ../usermanual/avancee.rst:60
 msgid "Log IP addresses behind a proxy"
-msgstr ""
+msgstr "Запис IP-адрес за проксі-сервером"
 
 # 0dffc6fdd7c84dc1aafb69b6e91bcc94
 #: ../usermanual/avancee.rst:62
@@ -147,6 +191,8 @@ msgid ""
 "If your Galette instance is behind a proxy, IP address stored in history "
 "will be the proxy one, and not the user one :("
 msgstr ""
+"Якщо ваш зразок Galette знаходиться за проксі-сервером, IP-адреса, збережена "
+"в історії, буде проксі-адресою, а не призначеною для користувача :("
 
 # 58bf33403a6545b389d880de8c5aa65d
 #: ../usermanual/avancee.rst:64
@@ -154,6 +200,8 @@ msgid ""
 "To fix that, :ref:`use behavior configuration <behavior>` to create a "
 "constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
 msgstr ""
+"Щоб це виправити :ref:`використовуйте конфігурацію поведінки <behavior>` для "
+"створення сталої, названої ``GALETTE_X_FORWARDED_FOR_INDEX`` на зразок:"
 
 # 812bdb7b79fc42f28edbefc5cf583291
 #: ../usermanual/avancee.rst:71
@@ -161,17 +209,21 @@ msgid ""
 "Each proxy server will add its own address on the list, example above will "
 "work only if there is only one proxy server."
 msgstr ""
+"Кожен проксі-сервер додаватиме свою власну адресу в список, приклад вище "
+"працюватиме тільки якщо є тільки один проксі-сервер."
 
 # f47cf8b5248649f09a8b5c6627e4c267
 #: ../usermanual/avancee.rst:75
 msgid ""
 "For security reasons, do not use this if your instance is not behind a proxy!"
 msgstr ""
+"З метою безпеки не використовуйте це, якщо ваш зразок не знаходиться за "
+"проксі-сервером!"
 
 # b63fb714b73140d58f8bddce5af80d2d
 #: ../usermanual/avancee.rst:78
 msgid "External stats"
-msgstr ""
+msgstr "Зовнішня статистика"
 
 # 8bcd105d1b614a57ad7ebfc1bbc88516
 #: ../usermanual/avancee.rst:82
@@ -180,6 +232,9 @@ msgid ""
 "can create a ``tracking.js`` file under ``webroot/themes/default`` "
 "directory, it will be automatically included."
 msgstr ""
+"Багато статистичних платформ покладаються на додатковий блок JavaScript для "
+"роботи. Ви можете створити файл ``tracking.js`` у каталозі ``webroot/themes/"
+"default``, його буде автоматично включено."
 
 # 28fb00fb44184a929e34b7a788048b05
 #: ../usermanual/avancee.rst:87
@@ -187,11 +242,13 @@ msgid ""
 "Galette uses Javascript to work. If the code you add in the ``tracking.js`` "
 "file is incorrect, this may break Galette!"
 msgstr ""
+"Для роботи Galette використовує Javascript. Якщо код, який ви додасте в файл "
+"``tracking.js``, буде неправильним, це може привести до зламання Galette!"
 
 # 4a15068c329346ce8b84baf2bbc60907
 #: ../usermanual/avancee.rst:90
 msgid "Cards size and count"
-msgstr ""
+msgstr "Розмір і кількість карток"
 
 # 06aa60922ed74ebbb03bfc80d54aeb8c
 #: ../usermanual/avancee.rst:94
@@ -201,6 +258,10 @@ msgid ""
 "configuration to configure cards<behavior>`, following constants are "
 "provided:"
 msgstr ""
+"Налаштування Galette дозволяють задавати проміжки між картками, але не їх "
+"кількість, не кількість рядків і стовпців. Ви можете :ref:`використовувати "
+"конфігурацію поведінки для налаштування карток <behavior>`, для цього "
+"передбачені наступні сталі:"
 
 # 9cd03a0c1f424941a40b57b5b76f7e8e
 #: ../usermanual/avancee.rst:98
@@ -208,31 +269,33 @@ msgid ""
 "Changing those values may cause gaps; change them with caution, and do not "
 "forget to test the result ;)"
 msgstr ""
+"Зміна цих значень може викликати розриви; змінюйте їх з обережністю, і не "
+"забудьте перевірити результат ;)"
 
 # 4c88f7c895c3405b8378ace539eeb327
 #: ../usermanual/avancee.rst:100
 msgid "``GALETTE_CARD_WIDTH`` defines cards width,"
-msgstr ""
+msgstr "``GALETTE_CARD_WIDTH`` визначає ширину карток,"
 
 # 410fdb76ed9a4092a81792aab69d921d
 #: ../usermanual/avancee.rst:101
 msgid "``GALETTE_CARD_HEIGHT`` defines cards height,"
-msgstr ""
+msgstr "``GALETTE_CARD_HEIGHT`` визначає висоту карток,"
 
 # 60a4d4c995334af5ae66a5b92d24c688
 #: ../usermanual/avancee.rst:102
 msgid "``GALETTE_CARD_COLS`` defines the number of columns,"
-msgstr ""
+msgstr "``GALETTE_CARD_COLS`` визначає кількість стовпців,"
 
 # d9b73bebd1834a67ae720a53aa63d829
 #: ../usermanual/avancee.rst:103
 msgid "``GALETTE_CARD_ROWS`` defines the number of lines."
-msgstr ""
+msgstr "``GALETTE_CARD_ROWS`` визначає кількість рядків."
 
 # 9c1b46e7a978430b869f0c6e3262fce2
 #: ../usermanual/avancee.rst:106
 msgid "CSV exports"
-msgstr ""
+msgstr "Експорти CSV"
 
 # 2820fa30b5634d628a933ee340294131
 #: ../usermanual/avancee.rst:108
@@ -241,32 +304,37 @@ msgid ""
 "is provided, but you can add your own to the ``config/exports.xml`` file. "
 "Its configuration is done with several parts:"
 msgstr ""
+"Galette надає систему експорту CSV з параметрами. Надається тільки один "
+"параметричний експорт, але ви можете додати свій власний в файл ``config / "
+"exports.xml``. Його конфігурація складається з декількох частин:"
 
 # 1a915326f2fb479885c6c582c60fc130
 #: ../usermanual/avancee.rst:110
 msgid "the SQL query to use,"
-msgstr ""
+msgstr "запит SQL для використання,"
 
 # dbdee85f9a0f45a595c8a21171b4872d
 #: ../usermanual/avancee.rst:111
 msgid "the columns to export,"
-msgstr ""
+msgstr "стовпці для експорту,"
 
 # d6aba5be13df4a5795c067c3526efd39
 #: ../usermanual/avancee.rst:112
 msgid "the CSV separator,"
-msgstr ""
+msgstr "роздільник CSV,"
 
 # 2782882bc8ff40519015c4db7f6cf294
 #: ../usermanual/avancee.rst:113
 msgid "the strings separator character."
-msgstr ""
+msgstr "символ розділення рядків."
 
 # 523f8ead2b414c94ac1019904ba83fc8
 #: ../usermanual/avancee.rst:117
 msgid ""
 "Configuration of CSV exports is done in a XML file, that **must** be vaild!"
 msgstr ""
+"Конфігурація експорту CSV виконується у файлі XML, який **повинен** бути "
+"надійним!"
 
 # 36ca4462722c47579295200081340d93
 #: ../usermanual/avancee.rst:119
@@ -275,11 +343,14 @@ msgid ""
 "linux, you can use tools like ``xmlwf`` or ``xmllint`` to ensure your file "
 "is valid."
 msgstr ""
+"Якщо це не так, експорт не буде запропоновано з призначеного для користувача "
+"інтерфейсу. У linux для перевірки коректності файлу можна використовувати "
+"такі засоби, як ``xmlwf`` або ``xmllint``."
 
 # 4986fbad39154b4aab68c8c771a72453
 #: ../usermanual/avancee.rst:121
 msgid "Let's examine contributions parameted export:"
-msgstr ""
+msgstr "Розгляньмо внески параметрованого експорту:"
 
 # 682108649abf4f148cb4febd7e4030a2
 #: ../usermanual/avancee.rst:154
@@ -290,6 +361,11 @@ msgid ""
 "contains the SQL query to execute, there is no other limitation than the SQL "
 "engine ones."
 msgstr ""
+"Кожен параметрований експорт визначається всередині теґа ``export``, який "
+"містить неповторюваний ідентифікатор (`` id``), опис, що відображається в "
+"інтерфейсі ( `` name``) і назву вихідного файлу (``filename``). Теґ ``query``"
+" містить SQL-запит для виконання, немає ніяких інших обмежень, крім обмежень "
+"SQL-рушія."
 
 # 13b1144800da48b3a47d922f4510e397
 #: ../usermanual/avancee.rst:156
@@ -298,6 +374,8 @@ msgid ""
 "``separator`` tag the CSV separator and the ``quote`` tag the strings "
 "separator."
 msgstr ""
+"Частина ``headers`` визначає колонки, які будуть експортовані, теґ "
+"``separator`` - роздільник CSV, а теґ ``quote`` - роздільник рядків."
 
 # dc42621488b548eeb7e07095bd7b6751
 #: ../usermanual/avancee.rst:161
@@ -310,11 +388,14 @@ msgid ""
 "All the admin tools operation are destructive, use it with cautions, and "
 "**make sure you did a database backup** before!"
 msgstr ""
+"Всі засоби адміністратора є небезпечними, використовуйте їх з обережністю, і "
+"** переконайтеся, що ви зробили резервну копію бази даних** перед "
+"використанням!"
 
 # 1c578f9418ed4d4b83b002c7d5c1ec12
 #: ../usermanual/avancee.rst:167
 msgid "There are a few tools provided for Galette admin that permits to:"
-msgstr ""
+msgstr "Для адміністратора Galette передбачено кілька засобів, що дозволяють:"
 
 # 619acd95b45e475b9bd2b6e1b582f6da
 #: ../usermanual/avancee.rst:169
@@ -322,6 +403,8 @@ msgid ""
 "**reinitialize mailings contents** will reset all emails contents to default "
 "values,"
 msgstr ""
+"**повторна ініціалізація вмістів розсилань** поверне вміст всіх листів до "
+"типових значень,"
 
 # 3032f80400cb4c2591dc166a2fb1a4a2
 #: ../usermanual/avancee.rst:170
@@ -329,11 +412,14 @@ msgid ""
 "**reinitialize fields configuration** will reset all members core fields to "
 "their default value. This does not imply dynamic fields,"
 msgstr ""
+"**повторна ініціалізація конфігурацій полів** скине всі поля ядра членів в "
+"типові значення. Це не включаєі динамічні поля,"
 
 # feabe0c1c39c4fad927c3e0aa5fadaf3
 #: ../usermanual/avancee.rst:171
 msgid "**reinitialize PDF models** will reset ll PDF models to default values,"
 msgstr ""
+"**повторна ініціалізація моделей PDF** скине моделі PDF до типових значень,"
 
 # 88ed7f55ed2c4fab90a780919349b47d
 #: ../usermanual/avancee.rst:172
@@ -343,3 +429,7 @@ msgid ""
 "This feature will set random values as login and password fields that would "
 "be empty in database."
 msgstr ""
+"**утворити порожні логіни і паролі** ці дані необхідні для підвищення "
+"безпеки, але іноді відсутні (наприклад, при імпорті CSV). Ця функція "
+"встановить випадкові значення в поля логіна і пароля, які будуть порожніми в "
+"базі даних."
