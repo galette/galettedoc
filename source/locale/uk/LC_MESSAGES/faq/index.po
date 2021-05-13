@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-05-08 10:32+0000\n"
+"PO-Revision-Date: 2021-05-14 13:32+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-faq-index/uk/>\n"
@@ -28,7 +28,7 @@ msgstr "Часто запитуване"
 # ce22b8a07f3a4ab29fee650c82ceb5eb
 #: ../faq/index.rst:9
 msgid "What if Galette does not work?"
-msgstr ""
+msgstr "Що, якщо Galette не працюватиме?"
 
 # c73c7bb5935247f7be20c3198415c3ce
 #: ../faq/index.rst:11
@@ -36,21 +36,25 @@ msgid ""
 "Sometimes, after an update, a change on hosting, or a simple bug - even "
 "minor ones - may cause a fail in Galette. You may observe:"
 msgstr ""
+"Іноді, після оновлення, зміни на хостингові або просто помилки - навіть "
+"незначної - може відбутися збій в роботі Galette. Ви можете спостерігати:"
 
 # 9f043f2792a54caa89050cd06641e70d
 #: ../faq/index.rst:13
 msgid "a simple error message id displayed,"
-msgstr ""
+msgstr "показ простого повідомлення про помилку з її ID,"
 
 # acb6c5e71e3f480ea579c2376ed46f4b
 #: ../faq/index.rst:14
 msgid "a blank page,"
-msgstr ""
+msgstr "порожню сторінку,"
 
 # 3094948c435d48ff92303654eff9a730
 #: ../faq/index.rst:15
 msgid "a page with a backtace (usually, not in production mode),"
 msgstr ""
+"сторінку зі зворотним слідом (тобто backtrace) (як правило, не у виробничому "
+"режимі),"
 
 # 18f9ac3d31924c4db3f5e19cd7deb2da
 # b57c260170904f378aecbb0f6c7b06fd
@@ -65,6 +69,9 @@ msgid ""
 "those files, it is a very good start point to understand the problem and "
 "potentially solve it."
 msgstr ""
+"У всіх випадках ви **маєте перевірити журнали**. Більшість помилок "
+"зберігається в файлах журналу, це дуже хороша відправна точка для розуміння "
+"проблеми та її потенційного рішення."
 
 # 452f27a738854beb92c9ce37ef756334
 #: ../faq/index.rst:20
@@ -72,6 +79,8 @@ msgid ""
 "There are two types of log files: Galette ones, and system ones. Galette "
 "logs are stored in the ``galette/data/log`` per default."
 msgstr ""
+"Існує два типи файлів журналів: Galette і системні. Журнали Galette типово "
+"зберігаються в каталозі ``galette/data/log``."
 
 # fdd70386df6c4435a1f701c8041857ba
 #: ../faq/index.rst:23
@@ -81,6 +90,10 @@ msgid ""
 "server configuration; it is related to the operating system used, PHP and/or "
 "web server configuration, ..."
 msgstr ""
+"Журнали сервера - це інша тема. На загальних вебсерверах вони часто "
+"недоступні для вас :(. На виділеному вебсерверові їх розташування змінюється "
+"в залежності від конфігурації; це пов'язано з використовуваною операційною "
+"системою, конфігурацією PHP і/або вебсервера тощо."
 
 # bccbe92ea5ac4f22a8dccd41ea88bb1c
 #: ../faq/index.rst:25
@@ -88,6 +101,8 @@ msgid ""
 "with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for "
 "GNU/Linux Red Hat like distributions),"
 msgstr ""
+"зі службою ``php-fpm`` журнали знаходяться в ``/var/log/php-fpm/www-error."
+"log`` (для дистрибутивів GNU/Linux типу Red Hat),"
 
 # 656576194d70489da3fab5693141387b
 #: ../faq/index.rst:26
@@ -96,6 +111,9 @@ msgid ""
 "error_log`` (on other GNU/Linux distributions, `httpd` may be named "
 "`apache`),"
 msgstr ""
+"із застарілою службою ``mod_php``, ви знайдете їх у ``/var/log/httpd/"
+"error_log`` (в інших дистрибутивах GNU/Linux `httpd` може називатися "
+"`apache`),"
 
 # 370938c4c57a4c9bb8fd1a416e214bf4
 #: ../faq/index.rst:27
@@ -103,11 +121,13 @@ msgid ""
 "on Windows/MacOS with XAMPP like solutions, there is at least one log "
 "directory in installation; you may find what you look for there."
 msgstr ""
+"на Windows/MacOS з рішеннями типу XAMPP за шляхом установлення є принаймні "
+"один каталог журналу; ви можете знайти там те, що шукаєте."
 
 # 15ad96efada9415ab547c1db53728cf4
 #: ../faq/index.rst:30
 msgid "Displaying errors"
-msgstr ""
+msgstr "Відображення помилок"
 
 # 1688864475f6442b9c7d64906447b9de
 #: ../faq/index.rst:32
@@ -115,6 +135,8 @@ msgid ""
 "If you cannot access system logs files (frequent on shared hostings), you "
 "can display errors directly on the page."
 msgstr ""
+"Якщо ви не можете отримати доступ до файлів системних журналів (часто на "
+"спільних хостингах), ви можете відображати помилки безпосередньо на сторінці."
 
 # e3c842226a4746a786fbd1c4a11c8063
 #: ../faq/index.rst:36
@@ -123,6 +145,10 @@ msgid ""
 "public. In production mode, is it **strongly advised not to display them**. "
 "Above solution is only a temporary debug tool."
 msgstr ""
+"Відображення помилок на мережевій сторінці може надати відомості, які не "
+"мають бути загальнодоступними. У виробничому режимі **наполегливо радимо не "
+"відображати їх**. Наведене вище рішення є лише тимчасовим засобом "
+"зневадження."
 
 # b6e720681b424d2d978337025c1f528d
 #: ../faq/index.rst:38
@@ -131,6 +157,9 @@ msgid ""
 "information may be \"hidden\" from a buggy redirection... Logs are safer on "
 "that point."
 msgstr ""
+"Також зверніть увагу, що під час інтеграції маршрутизації частина "
+"відображуваних відомостей можуть бути \"приховані\" від помилкового "
+"перенаправлення ... Журнали безпечніші в цьому відношенні."
 
 # 2bf6d36dc31b4e4aa9eb295380461d09
 #: ../faq/index.rst:40
@@ -138,12 +167,16 @@ msgid ""
 "To temporary display errors on page, create a ``galette/config/behavior.inc."
 "php`` file with the following contents:"
 msgstr ""
+"Щоб тимчасово відображати помилки на сторінці, створіть файл ``galette/"
+"config/behavior.inc.php`` наступного змісту:"
 
 # 33c8f62dca87447481efc5ff5f85e63b
 #: ../faq/index.rst:47
 msgid ""
 "The next time you reproduce the issue, errors will be displayed on the page."
 msgstr ""
+"Під час наступного відтворення проблеми на сторінці відображатимуться "
+"помилки."
 
 # f7bd273a10a448cea7633c7a2509b85d
 #: ../faq/index.rst:49
@@ -151,11 +184,13 @@ msgid ""
 "Globally, you can use :ref:`Galette behavior configuration <behavior>` to "
 "help you grab additional information."
 msgstr ""
+"Загалом, ви можете використовувати :ref:`Конфігурацію поведінки "
+"Galette<behavior>` для отримання додаткових відомостей."
 
 # 290e1a0c33274c20aaa72596801e1a1c
 #: ../faq/index.rst:53
 msgid "How to report a bug or ask for a feature?"
-msgstr ""
+msgstr "Як повідомити про помилку або попросити про нову можливість?"
 
 # 9cfe3fa245b44ea0a5aa5d3ec8f546db
 #: ../faq/index.rst:55
@@ -164,6 +199,9 @@ msgid ""
 "`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
 "itself, all official plugins and also documentation."
 msgstr ""
+"Повідомлення про помилки, а також RFE (Request For Enhancement) повинні бути "
+"зроблені на `відстежувачі Galette <https://bugs.galette.eu/projects/galette>`"
+" _, для самої Galette, всіх офіційних розширень, а також документації."
 
 # bca646983cc6461d862f2341cd006621
 #: ../faq/index.rst:59
@@ -171,11 +209,15 @@ msgid ""
 "Unless you are sure you know, please de not attribute the ticket and do not "
 "set target version. It will be done when it will be took into account."
 msgstr ""
+"Якщо ви не впевнені, що знаєте, будь ласка, не створюйте пропозицію і не "
+"встановлюйте цільову версію. Це буде зроблено, коли це буде взято до уваги."
 
 # 622f52b8273d42a8888d19523a709aec
 #: ../faq/index.rst:61
 msgid "If you have doubts, feel free to ask your questions on mailing lists ;)"
 msgstr ""
+"Якщо у вас є сумніви, не соромтеся поставити свої питання в списках "
+"розсилання ;)"
 
 # 6115ef140ad7445386f06625c866c998
 #: ../faq/index.rst:64
@@ -185,32 +227,32 @@ msgstr "Повідомити про помилку"
 # 94f90884a43247baa5035e6682dbfc58
 #: ../faq/index.rst:66
 msgid "Please, do not forget to:"
-msgstr ""
+msgstr "Будь ласка, не забувайте:"
 
 # afcbe68d691e4774b96739a01b3f2c77
 #: ../faq/index.rst:68
 msgid "tell us the Galette version you are using,"
-msgstr ""
+msgstr "повідомляйте нам версію Galette, якою ви користуєтесь,"
 
 # 934dd6b28946473b89bda4450d21b7b7
 #: ../faq/index.rst:69
 msgid "be clear and consise,"
-msgstr ""
+msgstr "пишіть чітко та змістовно,"
 
 # c163b2484c9c4682a7a2df63907d3ad6
 #: ../faq/index.rst:70
 msgid "to provide all required information in order to reproduce the issue"
-msgstr ""
+msgstr "надавайте всі необхідні відомості для відтворення проблеми"
 
 # b5276beac43a4a01886f9a39088df114
 #: ../faq/index.rst:71
 msgid "to provide related logs entries."
-msgstr ""
+msgstr "надавайте відповідні записи журналів."
 
 # c12586a9d42c4e6790b428cc9ce33853
 #: ../faq/index.rst:74
 msgid "Request For Enhancement"
-msgstr ""
+msgstr "Запит на поліпшення"
 
 # 7035ca6e321e4a6d8d4c71683f175424
 #: ../faq/index.rst:76
@@ -220,6 +262,11 @@ msgid ""
 "you ;) Requested enhancements are tagged as \"Souhaits\" (whishes, in "
 "french), and moved by developers when work begins most of the time."
 msgstr ""
+"Переконайтеся, що в запиті на поліпшення ви також точні. Розробники можуть "
+"не здогадатися, що ви маєте на увазі, вам доведеться пояснити їм, навіть "
+"якщо це здається вам очевидним;) Запрошувані поліпшення позначаються як "
+"\"Souhaits\" (побажання, французькою мовою), і в більшості випадків "
+"переміщаються розробниками, коли починається робота."
 
 # 1be5e5c9db0e494ea97a1f7b8f7db2a9
 #: ../faq/index.rst:79
@@ -227,11 +274,14 @@ msgid ""
 "Once you made your whishes, you can `submit it to a vote <https://vote."
 "galette.eu/>`_, most wanted features may catch devs attention."
 msgstr ""
+"Після того, як ви висловили свої побажання, ви можете `подати їх на "
+"голосування <https://vote.galette.eu/>`_, найбільш бажані можливості можуть "
+"привернути увагу розробників."
 
 # e45597d3bff24c3082f50ccce5a8c858
 #: ../faq/index.rst:83
 msgid "How to search in lists archives?"
-msgstr ""
+msgstr "Як шукати в архівах списків?"
 
 # 1c28562419f7415189a689a8ca2d5536
 #: ../faq/index.rst:85
@@ -239,11 +289,13 @@ msgid ""
 "Mailing lists are the main communication channel for Galette, from its "
 "beginnings."
 msgstr ""
+"Списки розсилання є основним каналом комунікації для служби Galette з самого "
+"початку її існування."
 
 # 058aee2b2a2b42439e92565b7f8c0d64
 #: ../faq/index.rst:87
 msgid "As a reminder, since 2017, two lists are available:"
-msgstr ""
+msgstr "Нагадаємо, з 2017 року доступні два списки:"
 
 # da14ce81e8bb46cd95f0ef5e76ad35de
 #: ../faq/index.rst:89
@@ -251,6 +303,8 @@ msgid ""
 "`users discussion list <https://listengine.tuxfamily.org/lists.galette.eu/"
 "users/>`_ : general talks, help, ..."
 msgstr ""
+"`список обговорень користувачів <https://listengine.tuxfamily.org/lists."
+"galette.eu/users/>`_ : загальне обговорення, допомога тощо."
 
 # 6c56e801f7024ac9a086c641cbee2299
 #: ../faq/index.rst:90
@@ -258,11 +312,13 @@ msgid ""
 "`development discussion list <https://listengine.tuxfamily.org/lists.galette."
 "eu/devel/>`_ : technical discussions, tickets triaging, ..."
 msgstr ""
+"`список обговорень розробки <https://listengine.tuxfamily.org/lists.galette."
+"eu/devel/>`_ : технічні обговорення, пропозиції, упорядкування справ тощо."
 
 # 407715674340430789d68b5774ee302d
 #: ../faq/index.rst:92
 msgid "If you are looking for archives before 2017, see:"
-msgstr ""
+msgstr "Якщо ви шукаєте архіви до 2017 року, дивіться:"
 
 # a10bb5a624cd4c1f9c99c0873b4d10f9
 #: ../faq/index.rst:94
@@ -270,6 +326,8 @@ msgid ""
 "`old users discussion list <https://download.tuxfamily.org/galette/listes-"
 "galette/mail.gna.org/public/galette-discussion/index.html>`_"
 msgstr ""
+"`старий список обговорень користувачів <https://download.tuxfamily.org/"
+"galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_"
 
 # d8fa68d6750a421fba6d9c6e19be37a0
 #: ../faq/index.rst:95
@@ -277,6 +335,8 @@ msgid ""
 "`old development discussion list <https://download.tuxfamily.org/galette/"
 "listes-galette/mail.gna.org/public/galette-devel/index.html>`_"
 msgstr ""
+"`старий список обговорень розробки <https://download.tuxfamily.org/galette/"
+"listes-galette/mail.gna.org/public/galette-devel/index.html>`_"
 
 # fabe6d133c0c477696147babc545a4e8
 #: ../faq/index.rst:97
@@ -285,6 +345,9 @@ msgid ""
 "The alternative is to use the `site:` keyword from your favorite search "
 "engine (most of them supports that keyword):"
 msgstr ""
+"На жаль, в жоднім з архівів цих списків немає механізму пошуку. "
+"Альтернативою є використання ключового слова `site:` в вашій улюбленій "
+"пошуковій системі (більшість з них підтримує це ключове слово):"
 
 # d8d4f2681fc34ef5b54eaf69456744ad
 #: ../faq/index.rst:103
@@ -292,26 +355,30 @@ msgid ""
 "Above search will look for \"plugin\" in archives of users mailing list. "
 "Just adapt the URL to the list/period and keywords you want ;)"
 msgstr ""
+"Вищевказаний пошук шукатиме \"plugin\" в архівах списку розсилання "
+"користувачів. Просто адаптуйте URL до списку / проміжку і ключових слів, які "
+"вам потрібні ;)"
 
 # e64923aba5284e5eba4a90bd8cf5b85a
 #: ../faq/index.rst:105
 msgid "To improve the search, refer to your search engine documentation."
 msgstr ""
+"Щоб покращити пошук, зверніться до документації вашої пошукової системи."
 
 # 5d8f13cc504d473482774d388dde3dc2
 #: ../faq/index.rst:109
 msgid "How to use same email address for several members?"
-msgstr ""
+msgstr "Як використовувати одну е-пошту для кількох членів?"
 
 # 85e93704b1f74058b5124cc1d2552f97
 #: ../faq/index.rst:111
 msgid "This is a very frequent question; many would love to do that..."
-msgstr ""
+msgstr "Це дуже часте питання; багато хто хотів би це зробити..."
 
 # 31cde347e2a74038816ddb4cb6abebeb
 #: ../faq/index.rst:113
 msgid "**This is not possible.**"
-msgstr ""
+msgstr "**Це неможливо.**"
 
 # 571278e8fab04dd186689659e7119ce8
 #: ../faq/index.rst:115
@@ -319,16 +386,18 @@ msgid ""
 "Indeed, mail addresses must be unique in the database. It is a choice for "
 "the project on which several features are built:"
 msgstr ""
+"Дійсно, е-поштові адреси повинні бути неповторюваними в базі даних. Це вибір "
+"для проєкту, на якому побудовано кілька функцій:"
 
 # 046d410c1d5d4cf0a20d16cd1549e12f
 #: ../faq/index.rst:117
 msgid "lost password (since... always or almost),"
-msgstr ""
+msgstr "втрачений пароль (з тих пір як... завжди або майже),"
 
 # 2196ec41c637450abc1edb7eb30b34d8
 #: ../faq/index.rst:118
 msgid "login (since Galette 0.9),"
-msgstr ""
+msgstr "логін (починаючи з Galette 0.9),"
 
 # 3ccbab1250b84adcbfa563076fd67366
 #: ../faq/index.rst:121
@@ -336,6 +405,8 @@ msgid ""
 "Making them non uniques is not a solution we want to rely on. This would be "
 "complicated, and should be source of many bugs."
 msgstr ""
+"Зробити їх повторюваними - це не те рішення, на яке ми хочемо покладатися. "
+"Це буде складно і спричинить за собою безліч помилок."
 
 # 7b704fa90544499693bf3be9ed4af4c5
 #: ../faq/index.rst:123
@@ -344,6 +415,9 @@ msgid ""
 "<linkmembers>`. That way, some information such as email and postal "
 "addresses will be retrieved from the parent member if missing."
 msgstr ""
+"Однак в Galette можна :ref:`зв'язати кілька членів <linkmembers>`. Таким "
+"чином, деякі відомості, такі як адреси е-пошти та звичайні поштові адреси, "
+"будуть отримані з батьківського члена, якщо вони відсутні."
 
 # c10fb69b526f4fc7a805f9380f00955c
 #: ../faq/index.rst:125
@@ -351,3 +425,5 @@ msgid ""
 "This allows finally to use a unique email address for several members in "
 "database; but they are not duplicates in database."
 msgstr ""
+"Це дозволяє, нарешті, використовувати неповторювану адресу е-пошти для "
+"декількох членів в базі даних; але вони не є подвійниками в базі даних."
