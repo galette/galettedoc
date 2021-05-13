@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-05-08 10:31+0000\n"
+"PO-Revision-Date: 2021-05-14 13:32+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-install-galette/uk/>\n"
@@ -32,6 +32,9 @@ msgid ""
 "<preparation>` are done). Go to http://localhost/galette. :doc:`Update "
 "process <update>` is documented separately."
 msgstr ""
+"Установлення Galette - це вебпроцес (після виконання: doc:`підготовчих "
+"кроків <preparation>`). Перейдіть на http://localhost/galette. :doc:`"
+"Оновлення <update>` документоване окремо."
 
 # ba82dc7e7c484632a3e089e578540feb
 #: ../installation/galette.rst:7
@@ -40,6 +43,9 @@ msgid ""
 "know what you are doing, this is more complex for non developers!) grab it "
 "from :doc:`source code <../development/git>`"
 msgstr ""
+"Ви повинні покладатися на останній сталий випуск, але також можливо (якщо ви "
+"знаєте, що робите, це складніше для НЕ розробників!) взяти його з :doc:`"
+"джерельного коду <../development/git>`"
 
 # 2f47b84a5acb49838732ca501e289f65
 # 7f58b9e7ad5c458db72196fccb1fb63e
@@ -52,26 +58,28 @@ msgstr "Чеки"
 msgid ""
 "Please check the following if you want Galette to install without problems:"
 msgstr ""
+"Будь ласка, перевірте наступне, якщо ви хочете, щоб Galette встановлювався "
+"без ускладнень:"
 
 # 0e54fffada3d466ab74ff48c14e6d85d
 #: ../installation/galette.rst:14
 msgid "your PHP version is high enough,"
-msgstr ""
+msgstr "ваша версія PHP достатньо висока,"
 
 # 28229d48854b46ca949c7138d870fb0d
 #: ../installation/galette.rst:15
 msgid "PHP timezone is set (required since PHP 5.3),"
-msgstr ""
+msgstr "встановлено часовий пояс PHP (потрібно з PHP 5.3),"
 
 # 120a9a829d2740e59aef11f0dd438ad5
 #: ../installation/galette.rst:16
 msgid "all required PHP extensions are installed and loaded,"
-msgstr ""
+msgstr "всі необхідні розширення PHP встановлені та завантажені,"
 
 # 3b2c5f7d889b4b71926079fa3cef41d9
 #: ../installation/galette.rst:17
 msgid "some directories requires write access."
-msgstr ""
+msgstr "деякі каталоги вимагають доступу на запис."
 
 # 2f91cdf0a7764f4081e8d02b6b59a8f4
 #: ../installation/galette.rst:19
@@ -80,6 +88,9 @@ msgid ""
 "please ask you system administrator. Galette does not require any \"exotic\" "
 "extension."
 msgstr ""
+"Якщо одне з обов'язкових розширень відсутнє або не встановлено часовий пояс, "
+"зверніться до системного адміністратора. Galette не вимагає ніяких "
+"\"екзотичних\" розширень."
 
 # 1d97f4991d3440379c9b8b5a1108fb0c
 #: ../installation/galette.rst:21
@@ -87,6 +98,8 @@ msgid ""
 "The very first installation step will check those points, and will warn you "
 "if something gets wrong."
 msgstr ""
+"Найперший крок установлення перевірить ці пункти та попередить вас, якщо "
+"щось піде не так."
 
 # 02c9486b4d79437b9657f22cf56b544e
 #: ../installation/galette.rst:27
@@ -95,6 +108,10 @@ msgid ""
 "followed, directories ACLs should be correct, please refer to :ref:`files "
 "ACLs section <droitsfichiers>` and refresh page in your browser."
 msgstr ""
+"Якщо всі :ref: `кроки встановлення <preparation>` були виконані правильно, "
+"ACL (списки прав доступу) каталогів повинні бути правильними, будь ласка, "
+"зверніться до :ref:`розділу файлів ACL (списків контролю "
+"доступу)<droitsfichiers>` і оновіть сторінку в вашому мережевому оглядачі."
 
 # 3374b71307ad460997757c141e10c196
 #: ../installation/galette.rst:30
@@ -108,6 +125,9 @@ msgid ""
 "installation\" or \"Update\". Several of the steps that will follow will be "
 "specific to the type you will choose here."
 msgstr ""
+"На наступному екрані вам буде запропоновано вибрати тип установлення. Вам "
+"належить вибрати між \"Нове встановлення\" й \"Оновлення\". Деякі з "
+"наступних кроків залежатимуть від типу, який ви виберете тут."
 
 # fb785ae98ba74163867bb4d3336479ba
 #: ../installation/galette.rst:39
@@ -120,6 +140,8 @@ msgid ""
 "First of all, make sure the database exists, and prepare all required "
 "information:"
 msgstr ""
+"Перш за все, переконайтесь, що база даних існує, і підготуйте всі необхідні "
+"дані:"
 
 # 141faf7247874939af24a2c7e3366b78
 #: ../installation/galette.rst:43
@@ -129,12 +151,12 @@ msgstr "назва хоста"
 # ba260c11e0c2485893d633ca9b77da8a
 #: ../installation/galette.rst:44
 msgid "database user name"
-msgstr ""
+msgstr "ім'я користувача бази даних"
 
 # 612059823abc4fcc884565a0d0803149
 #: ../installation/galette.rst:45
 msgid "database user password"
-msgstr ""
+msgstr "пароль користувача бази даних"
 
 # eda1340c7f1d4605901ac878287b0323
 #: ../installation/galette.rst:46
@@ -144,7 +166,7 @@ msgstr "назва бази даних"
 # 71b6a52690704459a212e38ce65c53a4
 #: ../installation/galette.rst:47
 msgid "database type (MariaDB/MySQL or PostgreSQL)"
-msgstr ""
+msgstr "тип бази даних (MariaDB/MySQL або PostgreSQL)"
 
 # f3f5ac864c7a45469379bf8e83f2dd0d
 #: ../installation/galette.rst:50
@@ -154,7 +176,7 @@ msgstr "Створити базу даних"
 # 4e6e88d611974cafa3755a489b46fc8a
 #: ../installation/galette.rst:54
 msgid "**Never use database root user!**"
-msgstr ""
+msgstr "**Ніколи не використовуйте кореневого (root) користувача бази даних!**"
 
 # f1fe4ad0bccc428585094356cd8fb883
 #: ../installation/galette.rst:56
@@ -163,6 +185,9 @@ msgid ""
 "Galette database, and give him only requested access on the single Galette "
 "database."
 msgstr ""
+"Задля безпеки настійно пораджено покладатися на конкретного користувача для "
+"бази даних Galette і надавати йому тільки запитуваний доступ до єдиної бази "
+"даних Galette."
 
 # 18bee5d4631d4a4db5428ad95d8953c6
 #: ../installation/galette.rst:58
@@ -170,11 +195,13 @@ msgid ""
 "For the example, we will use a database named `mygalette` with a user "
 "`mygaletteuser` with `mypass` as password."
 msgstr ""
+"Для прикладу ми використовуватимемо базу даних `mygalette` з користувачем "
+"`mygaletteuser` і `mypass` в якості пароля."
 
 # ee5b2e1da4094689a9c1d2b0af16fd74
 #: ../installation/galette.rst:60
 msgid "MariaDB"
-msgstr ""
+msgstr "MariaDB"
 
 # 5cda37b051a0433696f0cfc02171604c
 #: ../installation/galette.rst:69
@@ -188,11 +215,14 @@ msgid ""
 "library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ "
 "documentations, or use a graphical tool:"
 msgstr ""
+"Ці команди можуть відрізнятися, будь ласка, зверніться до документації `"
+"MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ чи `PostgreSQL "
+"<https://docs.postgresqlfr.org>`_ або використовуйте графічний засіб:"
 
 # af950f3928a343d4a9b73757f13c78af
 #: ../installation/galette.rst:80
 msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;"
-msgstr ""
+msgstr "`phpMyAdmin <https://www.phpmyadmin.net>`_ для MariaDB ;"
 
 # d0dd38491a0b46e2b612fec3a41d89de
 #: ../installation/galette.rst:81
@@ -200,11 +230,13 @@ msgid ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://www."
 "pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
 msgstr ""
+"`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ чи `PgAdmin <https://www."
+"pgadmin.org/download/`_ для PostgreSQL."
 
 # f2e2b937fb2146768590002a54968b51
 #: ../installation/galette.rst:84
 msgid "Database parameters"
-msgstr ""
+msgstr "Параметри бази даних"
 
 # 1cfb2498ef0f4f34bf54628a4996d855
 #: ../installation/galette.rst:86
@@ -214,6 +246,10 @@ msgid ""
 "Galette dedicated database, default proposal should be ok but you can choose "
 "what you want :)"
 msgstr ""
+"На цьому екрані виберіть тип бази даних, введіть назву хоста, назву бази "
+"даних, ім'я користувача і пароль. Префікс таблиць корисний, якщо у вас немає "
+"виділеної бази даних Galette, типова пропозиція має бути в порядку, але ви "
+"можете вибрати те, що хочете :)"
 
 # eee5e02b9ba1498681e55b420cea9e1e
 #: ../installation/galette.rst:92
@@ -223,6 +259,10 @@ msgid ""
 "fill the form (not for the password). When upgrading, double check the "
 "prefix fit the existing one."
 msgstr ""
+"Цей крок однаковий для процесів установлення та оновлення. Якщо файл "
+"конфігурації вже існує, Galette візьме відомості для попереднього заповнення "
+"форми (не для пароля). Під час оновлення двічі перевірте відповідність "
+"наявного префікса."
 
 # 0592d88f3a8c46aca19a6d374122683b
 #: ../installation/galette.rst:97
@@ -231,6 +271,10 @@ msgid ""
 "than it will check database rights are correct (user can add/remove/alter "
 "tables, and can add/remove/edit rows, ...)."
 msgstr ""
+"На наступному екрані буде зроблено спробу під'єднання до бази даних з "
+"використанням наданих елементів, після чого будуть перевірені права на базу "
+"даних (користувач може додавати/ вилучати/змінювати таблиці, може "
+"додавати/вилучати/редагувати рядки тощо)."
 
 # fda6fd6b036e42ef8d7b366c06c5d748
 #: ../installation/galette.rst:103
@@ -239,6 +283,9 @@ msgid ""
 "try again. If you see rights issues, get them fixed on your server and use "
 "the \"Refresh\" button."
 msgstr ""
+"Якщо виникла помилка підключення, поверніться до попереднього кроку, "
+"виправте налаштування і спробуйте ще раз. Якщо ви бачите проблеми з правами, "
+"виправте їх на своєму сервері та скористайтеся кнопкою \"Оновити\"."
 
 # 33ec25d3790742259f5b293ae82bbeda
 #: ../installation/galette.rst:106
@@ -251,6 +298,8 @@ msgid ""
 "Those instructions are only for installation. When updating, a database "
 "already exists."
 msgstr ""
+"Ці вказівки відносяться тільки до встановлення. Під час оновлення база даних "
+"уже наявна."
 
 # b617064a46f14444817fab6d4c2952a8
 #: ../installation/galette.rst:110
@@ -259,11 +308,14 @@ msgid ""
 "installer will now create the tables, and insert default values. You can "
 "show created tables from any graphical tool or in command line:"
 msgstr ""
+"Якщо з'єднання з базою даних установлене і все в порядку, установник "
+"створить таблиці та вставить в них типові значення. Ви можете показати "
+"створені таблиці з будь-якого графічного засобу або з командного рядка:"
 
 # 6cdc0b276db24f3cad179efa3b138208
 #: ../installation/galette.rst:112
 msgid "MariaDB:"
-msgstr ""
+msgstr "MariaDB:"
 
 # a5c3fbfd99024112930e157ea630279c
 #: ../installation/galette.rst:119
@@ -281,6 +333,8 @@ msgid ""
 "This screen is displayed from installation only. When updating, super admin "
 "user is already existing."
 msgstr ""
+"Цей екран відображається лише з установлення. Під час оновлення користувач "
+"суперадміністратора вже наявний."
 
 # e65773fed8b54ae8ab3bb48f411b8c63
 #: ../installation/galette.rst:135
@@ -290,11 +344,16 @@ msgid ""
 "created at installation time is not a member, cannot be removed, and has "
 "some extra rights."
 msgstr ""
+"На наступному екрані вам буде запропоновано ввести відомості для створення "
+"користувача-суперадміністратора Galette. Використовуючи Galette, ви можете "
+"призначити деяких користувачів адміністраторами, але користувач, створений "
+"під час установлення, не є користувачем, не може бути вилучений і має деякі "
+"додаткові права."
 
 # 6f17708062464aa59ecb17d0fe78faf4
 #: ../installation/galette.rst:142
 msgid "Initialyse"
-msgstr ""
+msgstr "Ініціалізація"
 
 # 20bd677763c64af2bd7b2a776f88b5e1
 #: ../installation/galette.rst:144
@@ -302,36 +361,38 @@ msgid ""
 "The last step will write the configuration file if needed, and initialyse "
 "some values in your fresh database, as exemple:"
 msgstr ""
+"На останньому кроці буде записаний файл конфігурації, якщо це необхідно, і "
+"ініціалізовані деякі значення у вашій свіжій базі даних, як приклад:"
 
 # 06338ed4c31a4bf68b472a13b5d7ee16
 #: ../installation/galette.rst:146
 msgid "add Galette default preferences"
-msgstr ""
+msgstr "додавання типових налаштувань Galette"
 
 # d48ed529251f45b9bb8b6fe3f5882f09
 #: ../installation/galette.rst:147
 msgid "add default contributions and status types,"
-msgstr ""
+msgstr "додавання типових внесків і типів станів,"
 
 # 83b528c80f864ef0a58b4981a14ced4c
 #: ../installation/galette.rst:148
 msgid "fields configuration and permissions,"
-msgstr ""
+msgstr "конфігурація полів та дозволи,"
 
 # b046d392e16149efa5cef902f0ee5d63
 #: ../installation/galette.rst:149
 msgid "texts for administrative emails,"
-msgstr ""
+msgstr "тексти для системних листів на е-пошту,"
 
 # 82905e865cdb4290a315c1be895c6ba2
 #: ../installation/galette.rst:150
 msgid "members default titles,"
-msgstr ""
+msgstr "типові підписи членів,"
 
 # da2a9de79a8d4d8a828feb48de515e7f
 #: ../installation/galette.rst:151
 msgid "default PDF models"
-msgstr ""
+msgstr "типові моделі PDF"
 
 # 45f29540c44546729522139772582506
 #: ../installation/galette.rst:152
@@ -344,16 +405,18 @@ msgid ""
 "When updating, only the missing preferences and the new default data if any "
 "will be handled."
 msgstr ""
+"Під час оновлення оброблятимуться лише відсутні налаштування та нові типові "
+"дані, якщо такі є."
 
 # b4615aade17247beb26e209d0e601d7c
 #: ../installation/galette.rst:157
 msgid "Installation end"
-msgstr ""
+msgstr "Кінець установлення"
 
 # e1aff3c9deb24eeda3447fdfe7fb08f9
 #: ../installation/galette.rst:159
 msgid "Installation is now finished, congratulations!"
-msgstr ""
+msgstr "Установлення завершено, вітаємо!"
 
 # 01daebde6d0241438f38eb8b27b4a217
 #: ../installation/galette.rst:163
@@ -361,6 +424,8 @@ msgid ""
 "For security reasons, **we advise you to remove the install directory** if "
 "it is web exposed, or to drop access from your web configuration."
 msgstr ""
+"Задля безпеки **ми радимо вам видалити каталог установлення**, якщо він "
+"відкритий для мережі, або відмовитися від доступу до нього у вебконфігурації."
 
 # 13c1ea06b773428fa6b12f465ca0ccee
 #: ../installation/galette.rst:169
@@ -369,8 +434,11 @@ msgid ""
 "installation time. You can now go to the :doc:`Galette user manual <../"
 "usermanual/index>`."
 msgstr ""
+"Тепер ви можете увійти в Galette, використовуючи дані суперадміністратора, "
+"які ви використовували під час установлення. Тепер ви можете перейти до "
+":doc:`Посібника користувача Galette <../usermanual/index>`."
 
 # c7dd4ced05714c2195b411e95588fa9d
 #: ../installation/galette.rst:175
 msgid "Happy Galette!"
-msgstr ""
+msgstr "Щасливого Galette!"
