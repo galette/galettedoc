@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-05-14 13:32+0000\n"
+"PO-Revision-Date: 2021-05-15 08:51+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-user-configuration/uk/>\n"
@@ -38,11 +38,16 @@ msgid ""
 "order they will appear with a drag & drop interface. Related access rights "
 "can be set from core fields configuration (see below)."
 msgstr ""
+"Ви можете вибрати, які поля будуть відображатися в списку членів Galette і в "
+"якому порядку вони будуть відображатися за допомогою інтерфейсу "
+"перетягування. Відповідні права доступу можуть бути встановлені з "
+"конфігурації основних полів (див. нижче)."
 
 # f3474774034544638002d700d3da27f7
 #: ../usermanual/configuration.rst:16
 msgid "Two fields are mandatory and cannot be moved: member number and name."
 msgstr ""
+"Два поля є обов'язковими та не можуть бути переміщені: номер члена й ім'я."
 
 # 6e52a74784094262a3d14cd64dd34ce0
 #: ../usermanual/configuration.rst:18
@@ -50,11 +55,13 @@ msgid ""
 "It is not possible to set access rights on id column, and parent will be "
 "accessible for staff members only."
 msgstr ""
+"Неможливо встановити права доступу на ID стовпця, і батьківський стовпець "
+"буде доступний тільки для співробітників."
 
 # 7a0400ffa7684e5d93f497ac38d95aae
 #: ../usermanual/configuration.rst:26
 msgid "Mandatory fields and access rights"
-msgstr ""
+msgstr "Обов'язкові поля та права доступу"
 
 # 5f1a9f0b17624f16aba64bec24a41af7
 #: ../usermanual/configuration.rst:28
@@ -63,6 +70,9 @@ msgid ""
 "configuration may not suit your needs, but you can configure some elements "
 "easily ;)"
 msgstr ""
+"Коли ви створюєте або редагуєте члена, деякі поля є обов’язковими. Типова "
+"конфігурація може не відповідати вашим потребам, але ви можете легко "
+"налаштувати деякі елементи ;)"
 
 # d3b171057fd14c5eb49b0275debc53fb
 #: ../usermanual/configuration.rst:30
@@ -71,11 +81,14 @@ msgid ""
 "fields available for members, and choose for each one if it is mandatory or "
 "not, as well as associated access rights:"
 msgstr ""
+"В меню `Конфігурація`, `Основні поля`, ви отримаєте доступ до всіх полів, "
+"доступним для членів, і зможете вибрати для кожного з них, чи є воно "
+"обов'язковим чи ні, а також відповідні права доступу:"
 
 # e453d86c7e2c4f319c57ea5e13c84b1a
 #: ../usermanual/configuration.rst:32
 msgid "`inaccessible` will make the field inaccessible for everyone,"
-msgstr ""
+msgstr "`недоступність` (inaccessible) зробить поле недоступним для всіх,"
 
 # 59acaa933e7b4989bfd33f94e2cb911b
 #: ../usermanual/configuration.rst:33
@@ -83,6 +96,8 @@ msgid ""
 "`administrator` will make the field readable and writeable for "
 "administrators only,"
 msgstr ""
+"`адміністратор` (administrator) зробить поле доступним для читання і запису "
+"тільки для адміністраторів,"
 
 # 42c67b7f525042a78260b73bb03f7614
 #: ../usermanual/configuration.rst:34
@@ -90,6 +105,8 @@ msgid ""
 "`staff members` will make the field readable and writable for staff members "
 "and administrators,"
 msgstr ""
+"`співробітники` (staff members) зробить поле доступним для читання і запису "
+"для співробітників та адміністраторів,"
 
 # c07be6eda5b34e79924aef558f9b5302
 #: ../usermanual/configuration.rst:35
@@ -98,6 +115,9 @@ msgid ""
 "managers on the memebrs of groups they own, and for staff memebrs and "
 "administrators,"
 msgstr ""
+"`менеджери груп` (groups managers) зробить поле доступним для читання і "
+"запису менеджерам груп для членів груп, якими вони володіють, а також для "
+"співробітників та адміністраторів,"
 
 # b0fedf50b759408698e5c3a54a84e468
 #: ../usermanual/configuration.rst:36
@@ -105,6 +125,8 @@ msgid ""
 "`read/write` will make the field readable and writeable for member, groups "
 "managers, staff members and administrators,"
 msgstr ""
+"`читання/запис` (read/write) зробить поле доступним для читання і запису для "
+"членів, менеджерів груп, співробітників та адміністраторів,"
 
 # 85896d2a8d6d470d919d8a2c0f947b46
 #: ../usermanual/configuration.rst:37
@@ -112,6 +134,9 @@ msgid ""
 "`read only` will make the field read only for the members, but writable for "
 "groups managers, staff members and administrators."
 msgstr ""
+"`тільки читання` (read only) зробить поле доступним для читання тільки для "
+"членів групи, але доступним для запису для менеджерів груп, співробітників "
+"та адміністраторів."
 
 # 770dc3a97fff41479c0733ad1b11a34b
 #: ../usermanual/configuration.rst:45
@@ -125,6 +150,9 @@ msgid ""
 "transactions. Some of them will be useless, but you may need fields that "
 "does not exists..."
 msgstr ""
+"Типово Galette поставляється з великою кількістю полів для членів, внесків і "
+"переказів. Деякі з них будуть марні, але вам можуть знадобитися поля, яких "
+"не існує..."
 
 # 3aee766a4dc24064993cbd2f1f4dd08a
 #: ../usermanual/configuration.rst:49
@@ -133,61 +161,65 @@ msgid ""
 "label, define if it is mandatory or not, and that's all : Galette will "
 "handle them automatically, just show the result ;)"
 msgstr ""
+"В цьому випадку це досить просто: лишень додайте нове динамічне поле з "
+"міткою, визначте, чи є воно обов'язковим чи ні, і все: Galette буде "
+"обробляти їх автоматично, просто покажіть результат ;)"
 
 # eafe7796798d46ada0da8caef1a012d8
 #: ../usermanual/configuration.rst:51
 msgid "There are several types of dynamic fields:"
-msgstr ""
+msgstr "Існує кілька типів динамічних полів:"
 
 # 35d61b45d3d84e8996ae665df95ab415
 #: ../usermanual/configuration.rst:53
 msgid "`separator`: just a label, like a part title,"
-msgstr ""
+msgstr "`роздільник` (separator): просто мітка, як назва частини,"
 
 # 7a6128a9a45846f5a59f1b2f0c2e37f3
 #: ../usermanual/configuration.rst:54
 msgid "`free text`: multiline text area,"
-msgstr ""
+msgstr "`вільний текст` (free text): область багаторядкового тексту,"
 
 # 3cf316be659240c8869772634a0184a2
 #: ../usermanual/configuration.rst:55
 msgid "`single line`: one line text,"
-msgstr ""
+msgstr "`один рядок` (single line): один рядок тексту,"
 
 # 5c1947f009e84f90b48ccbc66f902153
 #: ../usermanual/configuration.rst:56
 msgid "`choice`: a dropdown list,"
-msgstr ""
+msgstr "`вибір` (choice): випадний список,"
 
 # 2b7e5872d9464c5e9b93e1553aaa5766
 #: ../usermanual/configuration.rst:57
 msgid "`date`: a date field with a selector,"
-msgstr ""
+msgstr "`дата` (date): поле дати з перемикачем,"
 
 # 8ed0bf94902942a2960fbbf2055d0e48
 #: ../usermanual/configuration.rst:58
 msgid "`boolean`: a checkbox,"
-msgstr ""
+msgstr "`булеан` (boolean): прапорець,"
 
 # 05fdfc838bf74bba8e962477f5d107f5
 #: ../usermanual/configuration.rst:59
 msgid "`file`: add files."
-msgstr ""
+msgstr "`файл` (file): дадає файли."
 
 # 28e22ecda0fa4956a5f2d5a0be009d24
 #: ../usermanual/configuration.rst:61
 msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
+"Під час створення нового поля (або редагування наявного) ви також можете:"
 
 # 24e96bec0a9948f4bf6d5463cfbdeba9
 #: ../usermanual/configuration.rst:63
 msgid "mark it as required,"
-msgstr ""
+msgstr "позначити його як обов'язкове,"
 
 # b4352a28672a42e4b657f411e7541582
 #: ../usermanual/configuration.rst:64
 msgid "define access rights, the same as for core fields."
-msgstr ""
+msgstr "визначити права доступу, такі ж, як для основних полів."
 
 # c2a8e9c503c34594b0b994269ed6a2ca
 #: ../usermanual/configuration.rst:71
@@ -195,56 +227,58 @@ msgid ""
 "Some field types like separators, dates and booleans, does not need any "
 "extra information; for others:"
 msgstr ""
+"Деякі типи полів, такі як роздільники, дати та логічні значення (булеани), "
+"не потребують додаткових даних; інші ж:"
 
 # ee1155f5a34c49519f491dd5d08c83c9
 #: ../usermanual/configuration.rst:73
 msgid "`free text`:"
-msgstr ""
+msgstr "`вільний текст` (free text):"
 
 # 2f7e975d89d9495497a3a9cbd0dae3f9
 #: ../usermanual/configuration.rst:75
 msgid "`width`: define number of columns,"
-msgstr ""
+msgstr "`ширина` (width): визначає кількість стовпців,"
 
 # f5cf36548c8a4aafb5c301dc4dbc0f70
 #: ../usermanual/configuration.rst:76
 msgid "`height`: define number of rows."
-msgstr ""
+msgstr "`висота` (height): визначає кількість рядків."
 
 # 1c54d15dfd6a4f8791e21deb728b3397
 #: ../usermanual/configuration.rst:78
 msgid "`single line`:"
-msgstr ""
+msgstr "`один рядок` (single line):"
 
 # 06cbb5a053354c0f900ba15f367330c1
 #: ../usermanual/configuration.rst:80
 msgid "`width`: field width,"
-msgstr ""
+msgstr "`ширина` (width): ширина поля,"
 
 # 8d2abbf694b945f9beb1fe8b5aa25067
 #: ../usermanual/configuration.rst:81
 msgid "`size`: number of characters,"
-msgstr ""
+msgstr "`розмір` (size): кількість символів,"
 
 # 69cf7521b12e4e8c8de485c112f96b44
 #: ../usermanual/configuration.rst:82
 msgid "`repeat`: number of possible ocurences."
-msgstr ""
+msgstr "`повтор` (repeat): кількість можливих подій."
 
 # d3b90562c1244a27987b4e6e13b6ddef
 #: ../usermanual/configuration.rst:84
 msgid "`choice`:"
-msgstr ""
+msgstr "`вибір` (choice):"
 
 # 7f8e29e61eda4f2ab9e0f527498fbd31
 #: ../usermanual/configuration.rst:86
 msgid "`values`: possible values for the dropdown."
-msgstr ""
+msgstr "`значення` (values): можливі значення для випадного списку."
 
 # b20f3ccac5b5414eb86d5a041068dc8e
 #: ../usermanual/configuration.rst:88
 msgid "`file`:"
-msgstr ""
+msgstr "`файл` (file):"
 
 # 2e8493c271c145689bded08db1544894
 #: ../usermanual/configuration.rst:90
@@ -252,11 +286,13 @@ msgid ""
 "`size`: maximum file size, in Kio (this size is limited to the one for the "
 "PHP configuration)."
 msgstr ""
+"`розмір` (size): максимальний розмір файлу в Kio (цей розмір обмежений "
+"розміром для конфігурації PHP)."
 
 # f51eeb223a8f4595a99822ce74de6a87
 #: ../usermanual/configuration.rst:93
 msgid "Labels translation"
-msgstr ""
+msgstr "Переклад міток"
 
 # 620b32d302854c5a96be42e6b06b7c98
 #: ../usermanual/configuration.rst:95
@@ -265,16 +301,20 @@ msgid ""
 "there is only one value possible. Galette proposes an interface to translate "
 "those labels in each available language."
 msgstr ""
+"Galette працює з кількома мовами, але коли ви додаєте нове динамічне поле, "
+"можливе тільки одне значення. Galette пропонує інтерфейс для перекладу цих "
+"міток на кожну доступну мову."
 
 # 4d650efaef58446fab30ecec68d6edd9
 #: ../usermanual/configuration.rst:97
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
+"Зверніть увагу, що кожна нова мітка буде додана до поточної мови Galette."
 
 # ec0d959f0d9a45338b595867f8aae014
 #: ../usermanual/configuration.rst:100
 msgid "Emails contents"
-msgstr ""
+msgstr "Вміст листів е-пошти"
 
 # a00ccb772d3d4676ba56bcba5e0cf028
 #: ../usermanual/configuration.rst:102
@@ -283,11 +323,15 @@ msgid ""
 "cans be sent to users and/or administrators, when you add a new member or a "
 "new contribution, or from the lost password feature for example."
 msgstr ""
+"Залежно від вашої конфігурації (див. Налаштування), адміністративні листи е-"
+"пошти можуть бути надіслані користувачам і/або адміністраторам, коли ви "
+"додаєте нового члена або новий внесок, або, наприклад, від функції втрати "
+"пароля."
 
 # 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
 #: ../usermanual/configuration.rst:104
 msgid "Defaults are provided, but you can change them."
-msgstr ""
+msgstr "Типово вони додаються, але ви можете їх змінити."
 
 # 1eaf6d3b865c494287de03399e0997d0
 #: ../usermanual/configuration.rst:106
@@ -296,16 +340,20 @@ msgid ""
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
 "carefull to not forget any of those, that could cause sending issues."
 msgstr ""
+"Важливо відзначити, що ці тексти містять змінні - у формі ``{VARIABLE}`` - "
+"які будуть автоматично замінені під час надсилання. Будьте уважні, щоб не "
+"забути жодну з них, це може викликати проблеми з надсиланням."
 
 # e141fe73bcf64b9fb2143f92c6a4e4b9
 #: ../usermanual/configuration.rst:113
 msgid "An email will be send to member when:"
-msgstr ""
+msgstr "Учаснику буде надіслано лист е-пошти, якщо:"
 
 # 6cbe0fd53f9a4290a57412e635a6792d
 #: ../usermanual/configuration.rst:115
 msgid "he self subscribes. This mail contains authentication informations,"
 msgstr ""
+"він самостійно підписується. Цей лист містить відомості про автентифікацію,"
 
 # 7801258e9e8248de9fbd6a88fb385ad6
 #: ../usermanual/configuration.rst:116
@@ -313,11 +361,13 @@ msgid ""
 "his card is added or edited by someone else (if the corresponding box is "
 "checked),"
 msgstr ""
+"його картка додана або відредагована кимось іншим (якщо встановлене "
+"відповідне поле),"
 
 # f402746f081b4cc192495855ad5e5793
 #: ../usermanual/configuration.rst:117
 msgid "he uses lost password feature,"
-msgstr ""
+msgstr "він використовує функцію \"забув пароль\","
 
 # ae45becfa53547a284ff4e1e1e677f45
 #: ../usermanual/configuration.rst:118
@@ -325,21 +375,23 @@ msgid ""
 "a new contribution is attache to his account (if the corresponding box is "
 "checked)."
 msgstr ""
+"новий внесок долучається до його облікового запису (якщо відповідний "
+"прапорець встановлений)."
 
 # 257887c09acd4057a73575c1e5ccd646
 #: ../usermanual/configuration.rst:120
 msgid "An email will be send to administrators when:"
-msgstr ""
+msgstr "Лист е-пошти буде надіслано адміністраторам, коли:"
 
 # d9470aa131bd46ad91fae1bde7def2a2
 #: ../usermanual/configuration.rst:122
 msgid "a new member is added or self subscribes,"
-msgstr ""
+msgstr "додається або самостійно підписується новий член,"
 
 # f06dbb209abf42e9a4b8250a25550317
 #: ../usermanual/configuration.rst:123
 msgid "a new contribution is attached to his account."
-msgstr ""
+msgstr "до його облікового запису додається новий внесок."
 
 # bdf33e0f5b0f4e2bb55dda5cb26056bb
 #: ../usermanual/configuration.rst:125
@@ -350,6 +402,11 @@ msgid ""
 "conditionned on a checkbox from the user interface, excepting for self "
 "subscription messages that will always be send."
 msgstr ""
+"Звичайно, електронні листи будуть надсилатися тільки в тому випадку, якщо "
+"конфігурація Galette дозволяє це (і налаштування правильне). надсилання "
+"повідомлень адміністраторам налаштовується глобально в налаштуваннях, в той "
+"час, як надсилання листів членам керується прапорцем в інтерфейсі, за "
+"винятком повідомлень самопідписання, які будуть надсилатися завжди."
 
 # 196630f591274913a30590a46917363c
 #: ../usermanual/configuration.rst:127
@@ -359,3 +416,7 @@ msgid ""
 "others will be only on some conditions. Refer to the inline help on Galette "
 "interface to know more."
 msgstr ""
+"Як для теми, так і для вмісту доступні кілька змінних - автоматично "
+"замінюваних під час надсилання. Деякі з них можуть використовуватися у всіх "
+"повідомленнях, але інші - тільки за деяких умов. Для отримання додаткових "
+"відомостей зверніться до вбудованої довідки з інтерфейсу Galette."
