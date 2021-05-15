@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-11 21:56+0100\n"
-"PO-Revision-Date: 2021-05-15 08:51+0000\n"
+"PO-Revision-Date: 2021-05-16 14:32+0000\n"
 "Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-user-members/uk/>\n"
@@ -354,6 +354,10 @@ msgid ""
 "their emails as text only. That is why Galette will **always** provide a "
 "text version of HTML emails."
 msgstr ""
+"Навіть якщо Galette може надсилати електронні листи в форматі HTML, робити "
+"це не пораджено. Довжина повідомлень буде набагато більшою (практично ні для "
+"чого), а деякі (наприклад, я!) Читають свої листи тільки як текст. Тому "
+"Galette **завжди** надаватиме текстову версію HTML листів."
 
 # 5e374f097326472abbb0bfea92411b08
 #: ../usermanual/adherents.rst:137
@@ -364,11 +368,18 @@ msgid ""
 "stored on disk, under a directory named with the mailing identifier "
 "(automatically defined from database)."
 msgstr ""
+"Також можна додавати долученняу, просто натисніть на кнопку `Переглянути` в "
+"розділі долучень. Якщо ваш браузер сумісний, ви можете додавати кілька "
+"файлів одночасно (використовуючи клавіші `Shift` і `Ctrl`). Усі долучення "
+"зберігаються на диску, в каталозі з назвою ідентифікатора розсилання ("
+"автоматично визначається з бази даних)."
 
 # b588f7c454ac4f23b6e558c821f1e581
 #: ../usermanual/adherents.rst:140
 msgid "`Preview` button let you preview your message before sending it."
 msgstr ""
+"Кнопка `Попередній перегляд` дозволяє попередньо переглянути повідомлення "
+"перед надсиланням."
 
 # d02d0fac4ecb4741b4fc8b6ee4a240e9
 #: ../usermanual/adherents.rst:147
@@ -377,6 +388,9 @@ msgid ""
 "future. An icon will be displayed in pages titles when a mailing is progress "
 "and will provide a link to go to it."
 msgstr ""
+"Усі розпочаті розсилки буде збережено у вашій сесії, щоб їх можна було "
+"отримати в майбутньому. У заголовках сторінок буде відображатися піктограма, "
+"коли йде процес розсилання, і посилання для переходу до нього."
 
 # 0bdf241274e2439f9055eb30c33f2f1e
 #: ../usermanual/adherents.rst:149
@@ -386,11 +400,15 @@ msgid ""
 "time, you can add the `Save` button. It will then be stored in the mailings "
 "list, and you will be able to grab it later."
 msgstr ""
+"Якщо ви хочете, ви можете скасувати це розсилання за допомогою кнопки `"
+"Скасувати розсилання`, вона буде видалена з вашої сесії. Якщо ви хочете "
+"зберегти її на більш тривалий час, ви можете додати кнопку `Зберегти`. Тоді "
+"вона буде збережена в списку розсилань, і ви зможете отримати її пізніше."
 
 # dcc74c1381e443ff8db505aaa51d3c8e
 #: ../usermanual/adherents.rst:152
 msgid "Mailings history"
-msgstr ""
+msgstr "Історія розсилань"
 
 # b564deab888641db99724c1d95bc1438
 #: ../usermanual/adherents.rst:154
@@ -400,6 +418,10 @@ msgid ""
 "mailing in the database, this ensure it will always be available in the "
 "future."
 msgstr ""
+"Коли ви починаєте розсилання, воно зберігається у вашій сесії. Сесія "
+"закінчується, коли користувачі виходять із системи або за певним тайм-аутом "
+"серверу. Історія розсилань зберігає розсилання в базі даних, що гарантує її "
+"постійну доступність у майбутньому."
 
 # 114b440766e04f8cbde2bca533e0ebba
 #: ../usermanual/adherents.rst:156
@@ -408,6 +430,10 @@ msgid ""
 "template to write a new one. In this case, a new mailing will be created "
 "using informations from the history, and the original one will be kept as is."
 msgstr ""
+"Кожне надіслане розсилання зберігається в базі даних і може бути використане "
+"в якості шаблону для написання нового. У цьому випадку новий лист буде "
+"створено з використанням відомостей з історії, а первину листа буде "
+"збережено як є."
 
 # 75ad268996ed4e0da907b51ea3fde96a
 #: ../usermanual/adherents.rst:158
@@ -416,6 +442,9 @@ msgid ""
 "continue it later. When you use history on a draft mailing, original entry "
 "will be replaced on sending."
 msgstr ""
+"Розсилання можна зберігати до їх надсилання. У цьому випадку їх можна "
+"продовжити пізніше. Під час використанні історія на чернетці розсилання "
+"вихідний запис буде замінена під час надсилання."
 
 # 4b0e22297d5c4fb1bd80059de2cc1870
 #: ../usermanual/adherents.rst:160
@@ -423,6 +452,8 @@ msgid ""
 "When you use an existing history entry, here are the informations that will "
 "be used:"
 msgstr ""
+"Коли ви використовуєте наявний запис історії, ось відомості, які будуть "
+"використовуватися:"
 
 # 3cb1f26280494c8986291bba1b241693
 #: ../usermanual/adherents.rst:162
@@ -432,7 +463,7 @@ msgstr "одержувачі,"
 # b635e2bce9294fcca3cd50c042776b31
 #: ../usermanual/adherents.rst:163
 msgid "attachements,"
-msgstr ""
+msgstr "долучення,"
 
 # 3d8ab50c64374df8bd2c025d88fdf03e
 #: ../usermanual/adherents.rst:164
@@ -447,7 +478,7 @@ msgstr "повідомлення,"
 # e36a2c5c3c5f4abc9602b892e7a91910
 #: ../usermanual/adherents.rst:166
 msgid "html/text flag."
-msgstr ""
+msgstr "прапорець html/тексту."
 
 # 2105c78ff8c7443caa6ae2bb54b47fa5
 #: ../usermanual/adherents.rst:169
@@ -461,6 +492,9 @@ msgid ""
 "model is provided, but you can configure it to suits your needs, using the "
 "`Imports` menu entry."
 msgstr ""
+"Можна імпортувати дані про членів з визначеною моделлю. Типова модель "
+"надається, але ви можете налаштувати її відповідно до своїх потреб, "
+"використовуючи пункт меню `Імпорт`."
 
 # bde381412e244dd893a4b5a8ccc0fdfd
 #: ../usermanual/adherents.rst:174
@@ -473,11 +507,16 @@ msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
 "current model will be used to check your CSV file intergity."
 msgstr ""
+"Модель імпорту визначає поля і їх порядок в CSV-файлі. Під час імпорту "
+"поточна модель буде використовуватися для перевірки сумісності вашого "
+"CSV-файлу."
 
 # 323648ae7da84ec3a4f0ecc7e4093c61
 #: ../usermanual/adherents.rst:178
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr ""
+"Щоб налаштувати модель, натисніть кнопку `Налаштувати` в інтерфейсі "
+"користувача."
 
 # 844f10481e32499a9d381c169249b5db
 #: ../usermanual/adherents.rst:185
@@ -485,12 +524,14 @@ msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
 "fields:"
 msgstr ""
+"Якщо запропонована модель вам не підходить, натисніть `Змінити модель` та "
+"оберіть поля:"
 
 # 745b042c0c54450f8b04397dfb178004
 #: ../usermanual/adherents.rst:192
 msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
-msgstr ""
+msgstr "Вибравши поля, натисніть кнопку `Зберегти нову модель`."
 
 # c72df9941cb444e79105459053e0ad14
 #: ../usermanual/adherents.rst:194
@@ -499,6 +540,9 @@ msgid ""
 "`Generate an empty CSV file` button. Of course, you can change model if you "
 "want, or remove it to get the default model back."
 msgstr ""
+"Перебуваючи на вкладці поточної моделі, ви можете завантажити порожню модель "
+"за допомогою кнопки `Утворити порожній файл CSV`. Звичайно, ви можете "
+"змінити модель, якщо хочете, або видалити її, щоб повернути типову модель."
 
 # d4b3193315fd4768821fae95b7883e7b
 #: ../usermanual/adherents.rst:197
@@ -513,6 +557,10 @@ msgid ""
 "extension is ``csv`` (or ``txt``) and it size does not exceed maximum upload "
 "file size (2Mio per default in PHP)."
 msgstr ""
+"Після того, як ви отримали та заповнили порожній файл, ви повинні надіслати "
+"його, використовуючи форму ``додати новий файл``. На цьому кроці Galette "
+"перевірить, що розширення вашого файлу ``csv`` (або ``txt``) і його розмір "
+"не перевищує щонайбільший розмір файлу (типово 2 Мб у PHP)."
 
 # 56153cccf8ca44d5aeecf2506d060ef2
 #: ../usermanual/adherents.rst:203
@@ -521,6 +569,9 @@ msgid ""
 "the ``galette/data/imports`` directory, or split it into several smaller "
 "files you can import one by one."
 msgstr ""
+"Якщо ви хочете імпортувати величезний файл, ви можете помістити його з "
+"вашого FTP-клієнта в каталог ``galette/data/imports`` або розбити його на "
+"кілька невеликих файлів, які можна імпортувати по одному."
 
 # dcabc844bade4b2481bfc37f9a91d55e
 #: ../usermanual/adherents.rst:205
@@ -528,6 +579,8 @@ msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
 msgstr ""
+"Надіслані файли перелічені в розділі `Наявні файли`. Ви можете відобразити, "
+"видалити або імпортувати їх:"
 
 # e88f3904d8654eabaf2aea335a22e2dc
 #: ../usermanual/adherents.rst:212
@@ -536,6 +589,9 @@ msgid ""
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
 "without storing anything in the database."
 msgstr ""
+"Прапорець `спробний прогін` (типово встановлений) призначений для перевірки "
+"правдивості даних вашого файлу (заповнені обов'язкові поля, форматування "
+"даних правильне тощо) без збереження чого-небудь в базі даних."
 
 # 8abd4ece23a14f4eaa31a824640112de
 #: ../usermanual/adherents.rst:214
@@ -544,6 +600,9 @@ msgid ""
 "stored in the database already; so it is advised to use the dry-run before "
 "to get error fixed."
 msgstr ""
+"Під час імпорту CSV-файлу, якщо один рядок недійсний, попередні можуть бути "
+"вже збережені в базі даних; тому пораджено використовувати спробний прогін, "
+"щоб виправити помилку."
 
 # 0f34549a281f49629338ea78f9575288
 #: ../usermanual/adherents.rst:216
@@ -551,6 +610,8 @@ msgid ""
 "You will have error messages than something went wrong (in dry-run mode or "
 "not):"
 msgstr ""
+"Ви отримаєте повідомлення про помилки, якщо щось пішло не так (в режимі "
+"спробного прогону чи не в ньому):"
 
 # 107346bc7fad4bbe92de8b41c7223bf5
 #: ../usermanual/adherents.rst:220
@@ -559,11 +620,14 @@ msgid ""
 "when all the fields you set as required in Galette configuration are not "
 "listed in your import model."
 msgstr ""
+"Ви можете побачити відсутні обов'язкові поля, навіть якщо імпорт пройшов "
+"нормально. Це може статися, якщо всі поля, які ви встановили як обов'язкові "
+"в конфігурації Galette, не перераховано у вашій моделі імпорту."
 
 # aac09ca89fbb40d49d8bac722afd755f
 #: ../usermanual/adherents.rst:225
 msgid "Links beetween members"
-msgstr ""
+msgstr "Посилання між членами"
 
 # d112e53ef88145ce91bc5216faa050d0
 #: ../usermanual/adherents.rst:229
@@ -572,6 +636,10 @@ msgid ""
 "families for exemple, or members of a same compagny. You can access children "
 "members from the parent, and parent from the children."
 msgstr ""
+"Ви можете зв'язати кілька членів з одним \"батьківським\". Це може "
+"використовуватися, наприклад, для зберігання сімей або членів однієї "
+"компанії. Ви можете отримати доступ до дочірніх членів від батьківського, а "
+"до батьківських - від дочірнього."
 
 # 4fe4c4d7a78844469832350645ca8b8b
 #: ../usermanual/adherents.rst:231
@@ -579,6 +647,8 @@ msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
 msgstr ""
+"Ви можете додати скільки завгодно дочірніх для члена, але дочірній не може "
+"стати батьком."
 
 # eafd9a8411d748bf94aaa776fff6450c
 #: ../usermanual/adherents.rst:233
@@ -589,6 +659,11 @@ msgid ""
 "whatever the configuration says. If any of those informations is missing, it "
 "will be retrieved from the parent."
 msgstr ""
+"Інший цікавий момент цієї системи полягає в тому, що ви можете отримати "
+"деякі дані від батьківського під час надсилання розсилань або міток. У "
+"дочірніх членах, адреси е-пошти та поштові адреси автоматично стають "
+"опціональними, незалежно від того, що зазначено в конфігурації. Якщо які-"
+"небудь відомості відсутні, вони будуть отримані від батька."
 
 # 1562502f406a40bc88bc9c819c671100
 #: ../usermanual/adherents.rst:235
@@ -596,11 +671,13 @@ msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the unicity email constraint in the database."
 msgstr ""
+"Члени без адреси е-пошти не можуть скористатися функцією \"відновити пароль\""
+". Це не впливає на обмеження єдності е-пошти в базі даних."
 
 # 223e5cf58e9a4d5ba43063bb9c04959a
 #: ../usermanual/adherents.rst:238
 msgid "Impersonnating"
-msgstr ""
+msgstr "Видавання себе за іншого"
 
 # bb0f420d1f604de1b8cd064e390f2a6d
 #: ../usermanual/adherents.rst:242
@@ -609,6 +686,9 @@ msgid ""
 "groups, ... In this case, it is unfortuntely frequent to see some "
 "credentials sent by insecure emails; which should really be avoid."
 msgstr ""
+"Деякі проблеми можуть бути пов'язані з конкретним обліковим записом, через "
+"її ACL, групи тощо. В цьому випадку, на жаль, часто можна побачити деякі "
+"облікові дані, надіслані по незахищеній е-пошті, чого слід уникати."
 
 # a8ed88e12f534928933fcd5ab047b5a1
 #: ../usermanual/adherents.rst:244
@@ -618,3 +698,8 @@ msgid ""
 "you've impersonnated the user, you can reproduce the issue and fix it or get "
 "all required informations to report the issue upstream."
 msgstr ""
+"Як користувач суперадміністратор, ви побачите додаткову піктограму в списку "
+"членів, що дозволяє увійти в систему як обраний користувач без його "
+"облікових даних. Після того як ви видасте себе за користувача, ви зможете "
+"відтворити проблему та усунути її або отримати всі необхідні відомості, щоб "
+"повідомити про проблему вище."
