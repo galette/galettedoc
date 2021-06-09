@@ -212,8 +212,8 @@ Displaying a page from a Smarty template would look like:
       ]
    );
 
-The use of the ``$this->getModuleRoute()`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded instead of the one from your plugin, and this won't work.
-Then, ``file.tpl`` is core file ``file.tpl``, and ``file:[myplugin]file.tpl`` the ``file.tpl`` file from plugin which identifier is ``myplugin``.
+The use of the ``$this->getModuleRoute()`` ensures the file you are trying to load is the one from your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded instead of the one from your plugin, and this won't work.
+Then, ``file:file.tpl`` is core template file, while ``file:[myplugin]file.tpl`` the template from plugin which identifier is ``myplugin``.
 
 .. note::
 

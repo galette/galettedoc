@@ -22,7 +22,7 @@ First, download latest Galette release from official repository:
    :target: https://download.tuxfamily.org/galette/galette-0.9.5.tar.bz2
    :alt: Get latest Galette!
 
-Then, uncrompress the archive. If you are running Windows, you will have to install a file archiver software supporting the TAR archive format, such as `7zip <https://www.7-zip.org/>`_.
+Then, uncompress the archive. If you are running Windows, you will have to install a file archiver software supporting the TAR archive format, such as `7zip <https://www.7-zip.org/>`_.
 If you are using Linux, run the following commands (adapt the version if needed):
 
 ::
