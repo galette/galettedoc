@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-11 21:56+0100\n"
+"POT-Creation-Date: 2021-09-20 09:41+0200\n"
 "PO-Revision-Date: 2020-06-20 06:08+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
@@ -17,11 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.1.1\n"
 
-#: ../usermanual/avancee.rst:5
+#: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
 msgid "Experimented users"
 msgstr "Utilisateurs expérimentés"
 
-#: ../usermanual/avancee.rst:9
+#: ../usermanual/avancee.rst:9 1f9bbed20cf5465d9384452334706982
 msgid ""
 "Use only following instructions if you know what you are doing... \"The "
 "management is not responsable for any case of [...]\" :D"
@@ -29,11 +29,11 @@ msgstr ""
 "N'utilisez les instructions suivantes que si vous savez ce que vous "
 "faites... « La direction décline toute responsabilité en cas de [...] » :D"
 
-#: ../usermanual/avancee.rst:12
+#: ../usermanual/avancee.rst:12 73aa7121c47b43ce986562d44a72d14f
 msgid "Adapt to your graphical chart"
 msgstr "Adaptation à votre charte graphique"
 
-#: ../usermanual/avancee.rst:14
+#: ../usermanual/avancee.rst:14 3b8372bf5196483784a70dd21c9548bc
 msgid ""
 "If you are comfortable with CSS stylesheets, you can adapt Galette CSS to "
 "fit your own colors. To achieve that, it is strongly discouraged to edit "
@@ -48,7 +48,7 @@ msgstr ""
 "css`` dans votre dossier ``webroot/themes/default`` avec vos propres styles, "
 "il sera inclus automatiquement."
 
-#: ../usermanual/avancee.rst:16
+#: ../usermanual/avancee.rst:16 4c117cdc3e114fe59486d6e5fa1ff289
 msgid ""
 "Try to keep things as simple as possible. For example, if you want to change "
 "association name color (displayed under pages titles), you will find in "
@@ -61,7 +61,7 @@ msgstr ""
 "plusieurs paramètres y compris les couleurs. Donc, dans votre feuille de "
 "style, vous aurez juste besoin de :"
 
-#: ../usermanual/avancee.rst:24
+#: ../usermanual/avancee.rst:24 1e96e02eb7b34e39bd65c5c63a67501b
 msgid ""
 "This will be enough to display your association name in red. Note that local "
 "CSS file and all issues it may cause will not be took into account by the "
@@ -71,7 +71,7 @@ msgstr ""
 "que les CSS locales et les problèmes qu'elles pourraient causer ne seront "
 "pas prises en compte par l'équipe de Galette, aucun support ne sera fourni."
 
-#: ../usermanual/avancee.rst:26
+#: ../usermanual/avancee.rst:26 fb6684b53601415f9a1227f60a605450
 msgid ""
 "You also can override the print stylesheet, just create a "
 "``galette_local_print.css`` file."
@@ -79,11 +79,11 @@ msgstr ""
 "Vous pouvez également fournir une feuille de style pour l'impression, créez "
 "juste un fichier ``galette_local_print.css``."
 
-#: ../usermanual/avancee.rst:29
+#: ../usermanual/avancee.rst:29 0b370ab020e041978a129a9e9bd88e6b
 msgid "Add and change strings"
 msgstr "Ajouter et modifier des chaînes"
 
-#: ../usermanual/avancee.rst:31
+#: ../usermanual/avancee.rst:31 790842fad86747e3a276e1e17ed66b6a
 msgid ""
 "It is possible if needed to customize translated strings in Galette - "
 "without editing any Galette source file. Just create a ``galette_{mylang}"
@@ -99,7 +99,7 @@ msgstr ""
 "doit contenir un simple tableau PHP avec la chaîne originale (celle dans le "
 "code source de Galette) en index."
 
-#: ../usermanual/avancee.rst:33
+#: ../usermanual/avancee.rst:33 d4b7b7d2e60e49d4903903a8941c6438
 msgid ""
 "As example,  we want to change the \"Password\" string on the login page in "
 "french, translated as `Mot de passe :`. The original string is `Password:` "
@@ -114,7 +114,7 @@ msgstr ""
 "`Secret :` ; donc nous allons créer le fichier ``galette_fr_FR."
 "utf8_local_lang.php`` avec le contenu suivant :"
 
-#: ../usermanual/avancee.rst:41
+#: ../usermanual/avancee.rst:41 860fe6d76a224c0bba74e0bc108f9c6b
 msgid ""
 "Since Galette uses a cache system for translations, changes may not be "
 "visible immediately; you may have to restart PHP (or to clear cache). It is "
@@ -127,7 +127,7 @@ msgstr ""
 "d'origine telle quelle, ponctuation incluse ; et de prendre garde d'échapper "
 "les guillemets simples (avec un anti-slash) dans toutes les chaînes."
 
-#: ../usermanual/avancee.rst:43
+#: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
 msgid ""
 "You also can override langs for plugins using the sam method, just place the "
 "file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang."
@@ -139,7 +139,7 @@ msgstr ""
 "``{plugin}_{mylang}_local_lang.php`` où `{plugin}` est le nom du routage que "
 "vous trouverez dans le fichier ``_define.php``."
 
-#: ../usermanual/avancee.rst:45
+#: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
 msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
@@ -147,11 +147,11 @@ msgstr ""
 "Cela ne fonctionnera que si vous utilisez les fonctionnalités de traduction "
 "de Galette, pas gettext natif."
 
-#: ../usermanual/avancee.rst:48
+#: ../usermanual/avancee.rst:48 175f39314197485ea541b80324e86e63
 msgid "Change session lifetime"
 msgstr "Changer la durée de session"
 
-#: ../usermanual/avancee.rst:50
+#: ../usermanual/avancee.rst:50 be24dd1f3fa94b5dacee5b25f1adecf7
 msgid ""
 "Per default, Galette will create session with default lifetime duration (and "
 "it seems browsers acts differently in this case). You can anyways define a "
@@ -164,11 +164,11 @@ msgstr ""
 "ref:`changer la durée de la session en utilisant la configuration du "
 "comportement <behavior>` :"
 
-#: ../usermanual/avancee.rst:60
+#: ../usermanual/avancee.rst:60 009f4a8642bc41fd8de77df9776d4481
 msgid "Log IP addresses behind a proxy"
 msgstr "Enregistrement des adresses IP derrière un proxy"
 
-#: ../usermanual/avancee.rst:62
+#: ../usermanual/avancee.rst:62 0dffc6fdd7c84dc1aafb69b6e91bcc94
 msgid ""
 "If your Galette instance is behind a proxy, IP address stored in history "
 "will be the proxy one, and not the user one :("
@@ -177,7 +177,7 @@ msgstr ""
 "enregistrée dans l'historique sera celle du proxy, pas celle de "
 "l'utilisateur :("
 
-#: ../usermanual/avancee.rst:64
+#: ../usermanual/avancee.rst:64 58bf33403a6545b389d880de8c5aa65d
 msgid ""
 "To fix that, :ref:`use behavior configuration <behavior>` to create a "
 "constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
@@ -186,7 +186,7 @@ msgstr ""
 "<behavior>` pour créer une constante nommée "
 "``GALETTE_X_FORWARDED_FOR_INDEX`` comme suit :"
 
-#: ../usermanual/avancee.rst:71
+#: ../usermanual/avancee.rst:71 812bdb7b79fc42f28edbefc5cf583291
 msgid ""
 "Each proxy server will add its own address on the list, example above will "
 "work only if there is only one proxy server."
@@ -194,18 +194,18 @@ msgstr ""
 "Chaque serveur proxy ajoutera sa propre adresse à la liste, l'exemple ci "
 "dessus ne fonctionnera que s'il n'y a qu'un seul serveur proxy."
 
-#: ../usermanual/avancee.rst:75
+#: ../usermanual/avancee.rst:75 f47cf8b5248649f09a8b5c6627e4c267
 msgid ""
 "For security reasons, do not use this if your instance is not behind a proxy!"
 msgstr ""
 "Pour des raisons de sécurité, n'utilisez pas cela si votre instance n'est "
 "pas derrière un proxy !"
 
-#: ../usermanual/avancee.rst:78
+#: ../usermanual/avancee.rst:78 b63fb714b73140d58f8bddce5af80d2d
 msgid "External stats"
 msgstr "Statistiques externes"
 
-#: ../usermanual/avancee.rst:82
+#: ../usermanual/avancee.rst:82 8bcd105d1b614a57ad7ebfc1bbc88516
 msgid ""
 "Many statistics plaftforms relies on an extra  Javascript block to work. You "
 "can create a ``tracking.js`` file under ``webroot/themes/default`` "
@@ -215,7 +215,7 @@ msgstr ""
 "fonctionne. Vous pouvez créer un fichier ``tracking.js`` dans le dossier "
 "``webroot/themes/default``, il sera inclus automatiquement."
 
-#: ../usermanual/avancee.rst:87
+#: ../usermanual/avancee.rst:87 28fb00fb44184a929e34b7a788048b05
 msgid ""
 "Galette uses Javascript to work. If the code you add in the ``tracking.js`` "
 "file is incorrect, this may break Galette!"
@@ -223,11 +223,11 @@ msgstr ""
 "Galette utilise Javascript pour fonctionner. Si le code ajouté dans votre "
 "fichier ``tracking.js`` est incorrect, cela peut casser Galette !"
 
-#: ../usermanual/avancee.rst:90
+#: ../usermanual/avancee.rst:90 4a15068c329346ce8b84baf2bbc60907
 msgid "Cards size and count"
 msgstr "Taille et nombre de cartes"
 
-#: ../usermanual/avancee.rst:94
+#: ../usermanual/avancee.rst:94 06aa60922ed74ebbb03bfc80d54aeb8c
 msgid ""
 "Galette preferences allows to specify spacing for cards, but not their with, "
 "nor the number of lines and columns. You can :ref:`use behavior "
@@ -239,7 +239,7 @@ msgstr ""
 "configuration du comportement pour les paramètres des cartes <behavior>`, le "
 "constantes suivantes sont fournies :"
 
-#: ../usermanual/avancee.rst:98
+#: ../usermanual/avancee.rst:98 9cd03a0c1f424941a40b57b5b76f7e8e
 msgid ""
 "Changing those values may cause gaps; change them with caution, and do not "
 "forget to test the result ;)"
@@ -247,27 +247,27 @@ msgstr ""
 "Modifier ces valeurs peut causer des incohérences ; modifiez les avec "
 "parcimonie, et n'oubliez pas de tester le résultat ;)"
 
-#: ../usermanual/avancee.rst:100
+#: ../usermanual/avancee.rst:100 4c88f7c895c3405b8378ace539eeb327
 msgid "``GALETTE_CARD_WIDTH`` defines cards width,"
 msgstr "``GALETTE_CARD_WIDTH`` détermine la largeur des cartes,"
 
-#: ../usermanual/avancee.rst:101
+#: ../usermanual/avancee.rst:101 410fdb76ed9a4092a81792aab69d921d
 msgid "``GALETTE_CARD_HEIGHT`` defines cards height,"
 msgstr "``GALETTE_CARD_HEIGHT`` détermine la hauteur des cartes,"
 
-#: ../usermanual/avancee.rst:102
+#: ../usermanual/avancee.rst:102 60a4d4c995334af5ae66a5b92d24c688
 msgid "``GALETTE_CARD_COLS`` defines the number of columns,"
 msgstr "``GALETTE_CARD_COLS`` détermine le nombre de colonnes,"
 
-#: ../usermanual/avancee.rst:103
+#: ../usermanual/avancee.rst:103 d9b73bebd1834a67ae720a53aa63d829
 msgid "``GALETTE_CARD_ROWS`` defines the number of lines."
 msgstr "``GALETTE_CARD_ROWS`` détermine le nombre de lignes."
 
-#: ../usermanual/avancee.rst:106
+#: ../usermanual/avancee.rst:106 9c1b46e7a978430b869f0c6e3262fce2
 msgid "CSV exports"
 msgstr "Exports CSV"
 
-#: ../usermanual/avancee.rst:108
+#: ../usermanual/avancee.rst:108 2820fa30b5634d628a933ee340294131
 msgid ""
 "Galette provides a parameted CSV exports system. Only one parameted export "
 "is provided, but you can add your own to the ``config/exports.xml`` file. "
@@ -277,30 +277,30 @@ msgstr ""
 "paramétré est fourni, mais vous pouvez ajouter les vôtres dans le fichier "
 "``config/exports.xml``. La configuration se fait en plusieurs parties :"
 
-#: ../usermanual/avancee.rst:110
+#: ../usermanual/avancee.rst:110 1a915326f2fb479885c6c582c60fc130
 msgid "the SQL query to use,"
 msgstr "la requête SQL à utiliser,"
 
-#: ../usermanual/avancee.rst:111
+#: ../usermanual/avancee.rst:111 dbdee85f9a0f45a595c8a21171b4872d
 msgid "the columns to export,"
 msgstr "les colonnes à exporter,"
 
-#: ../usermanual/avancee.rst:112
+#: ../usermanual/avancee.rst:112 d6aba5be13df4a5795c067c3526efd39
 msgid "the CSV separator,"
 msgstr "le séparateur CSV,"
 
-#: ../usermanual/avancee.rst:113
+#: ../usermanual/avancee.rst:113 2782882bc8ff40519015c4db7f6cf294
 msgid "the strings separator character."
 msgstr "le caractère de séparation des chaînes."
 
-#: ../usermanual/avancee.rst:117
+#: ../usermanual/avancee.rst:117 523f8ead2b414c94ac1019904ba83fc8
 msgid ""
 "Configuration of CSV exports is done in a XML file, that **must** be vaild!"
 msgstr ""
 "La configuration des exports CSV est faite dans un fichier XML quoi **doit** "
 "être valide !"
 
-#: ../usermanual/avancee.rst:119
+#: ../usermanual/avancee.rst:119 36ca4462722c47579295200081340d93
 msgid ""
 "If it is not, no export will be proposed from the user interface. Under "
 "linux, you can use tools like ``xmlwf`` or ``xmllint`` to ensure your file "
@@ -310,11 +310,11 @@ msgstr ""
 "utilisateur. Sous linux, vous pouvez utilisez des outils comme ``xmlwf`` ou "
 "``xmllint`` pour vous assurer de la validité du fichier."
 
-#: ../usermanual/avancee.rst:121
+#: ../usermanual/avancee.rst:121 4986fbad39154b4aab68c8c771a72453
 msgid "Let's examine contributions parameted export:"
 msgstr "Examinons l'export paramétré ces contributions :"
 
-#: ../usermanual/avancee.rst:154
+#: ../usermanual/avancee.rst:154 682108649abf4f148cb4febd7e4030a2
 msgid ""
 "Each parameted export is defined inside a tag named ``export``, which "
 "contains a unique identifier (``id``), a description displayed in the user "
@@ -328,7 +328,7 @@ msgstr ""
 "balise ``query`` contient la requête SQL à utiliser, il n'y a pas d'autres "
 "limitations que celles du moteur SQL."
 
-#: ../usermanual/avancee.rst:156
+#: ../usermanual/avancee.rst:156 13b1144800da48b3a47d922f4510e397
 msgid ""
 "The ``headers`` part defines columns that will be exported, the "
 "``separator`` tag the CSV separator and the ``quote`` tag the strings "
@@ -338,11 +338,11 @@ msgstr ""
 "``separator`` le séparateur CSV et la balise ``quote`` le séparateur de "
 "chaînes."
 
-#: ../usermanual/avancee.rst:161
+#: ../usermanual/avancee.rst:161 dc42621488b548eeb7e07095bd7b6751
 msgid "Administration tools"
 msgstr "Outils d'administration"
 
-#: ../usermanual/avancee.rst:165
+#: ../usermanual/avancee.rst:165 2a99707e02094b5398e801b4d43e7bc2
 msgid ""
 "All the admin tools operation are destructive, use it with cautions, and "
 "**make sure you did a database backup** before!"
@@ -351,13 +351,13 @@ msgstr ""
 "parcimonie et **assurez-vous de faire une sauvegarde de votre base de "
 "données** auparavant !"
 
-#: ../usermanual/avancee.rst:167
+#: ../usermanual/avancee.rst:167 1c578f9418ed4d4b83b002c7d5c1ec12
 msgid "There are a few tools provided for Galette admin that permits to:"
 msgstr ""
 "Quelques outils d'administration sont fournis par galette, qui permettent "
 "de :"
 
-#: ../usermanual/avancee.rst:169
+#: ../usermanual/avancee.rst:169 619acd95b45e475b9bd2b6e1b582f6da
 msgid ""
 "**reinitialize mailings contents** will reset all emails contents to default "
 "values,"
@@ -365,7 +365,7 @@ msgstr ""
 "**réinitialiser les contenus des courriels** réinitialisera tous les "
 "contenus des courriels administratifs à leurs valeurs par défaut,"
 
-#: ../usermanual/avancee.rst:170
+#: ../usermanual/avancee.rst:170 3032f80400cb4c2591dc166a2fb1a4a2
 msgid ""
 "**reinitialize fields configuration** will reset all members core fields to "
 "their default value. This does not imply dynamic fields,"
@@ -374,13 +374,13 @@ msgstr ""
 "du cœur à leurs valeurs par défaut ; Cela n'implique pas les champs "
 "dynamiques,"
 
-#: ../usermanual/avancee.rst:171
+#: ../usermanual/avancee.rst:171 feabe0c1c39c4fad927c3e0aa5fadaf3
 msgid "**reinitialize PDF models** will reset ll PDF models to default values,"
 msgstr ""
 "**réinitialiser les modèles PDF** réinitialisera les modèles PDF à leurs "
 "valeurs par défaut,"
 
-#: ../usermanual/avancee.rst:172
+#: ../usermanual/avancee.rst:172 88ed7f55ed2c4fab90a780919349b47d
 msgid ""
 "**generate empty logins and passwords** those informations are required to "
 "improve security, but sometimes missing (if you import a CSV for example). "
