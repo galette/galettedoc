@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2011-2020, Johan Cwiklinski
+# Copyright (C) 2011-2021, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-11 21:56+0100\n"
+"POT-Creation-Date: 2021-09-20 09:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,269 +17,268 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../faq/index.rst:5
-# 0c806a88c9844dd3afeb31e8055f1472
+#: 0c806a88c9844dd3afeb31e8055f1472
 msgid "Frequently Asked Question (FAQ)"
 msgstr ""
 
 #: ../faq/index.rst:9
-# ce22b8a07f3a4ab29fee650c82ceb5eb
+#: ce22b8a07f3a4ab29fee650c82ceb5eb
 msgid "What if Galette does not work?"
 msgstr ""
 
 #: ../faq/index.rst:11
-# c73c7bb5935247f7be20c3198415c3ce
+#: c73c7bb5935247f7be20c3198415c3ce
 msgid "Sometimes, after an update, a change on hosting, or a simple bug - even minor ones - may cause a fail in Galette. You may observe:"
 msgstr ""
 
 #: ../faq/index.rst:13
-# 9f043f2792a54caa89050cd06641e70d
+#: 9f043f2792a54caa89050cd06641e70d
 msgid "a simple error message id displayed,"
 msgstr ""
 
 #: ../faq/index.rst:14
-# acb6c5e71e3f480ea579c2376ed46f4b
+#: acb6c5e71e3f480ea579c2376ed46f4b
 msgid "a blank page,"
 msgstr ""
 
 #: ../faq/index.rst:15
-# 3094948c435d48ff92303654eff9a730
+#: 3094948c435d48ff92303654eff9a730
 msgid "a page with a backtace (usually, not in production mode),"
 msgstr ""
 
 #: ../faq/index.rst:16
 #: ../faq/index.rst:119
-# 18f9ac3d31924c4db3f5e19cd7deb2da
-# b57c260170904f378aecbb0f6c7b06fd
+#: 18f9ac3d31924c4db3f5e19cd7deb2da
+#: b57c260170904f378aecbb0f6c7b06fd
 msgid "..."
 msgstr ""
 
 #: ../faq/index.rst:18
-# 55dd61b7671f4f1282dafe44e173b622
+#: 55dd61b7671f4f1282dafe44e173b622
 msgid "In all cases, you **must check the logs**. Most of errors are stored in those files, it is a very good start point to understand the problem and potentially solve it."
 msgstr ""
 
 #: ../faq/index.rst:20
-# 452f27a738854beb92c9ce37ef756334
+#: 452f27a738854beb92c9ce37ef756334
 msgid "There are two types of log files: Galette ones, and system ones. Galette logs are stored in the ``galette/data/log`` per default."
 msgstr ""
 
 #: ../faq/index.rst:23
-# fdd70386df6c4435a1f701c8041857ba
+#: fdd70386df6c4435a1f701c8041857ba
 msgid "Server logs are another subject. On shared webservers, they are often not accessible to you :( On a dedicated webserver, their location change with server configuration; it is related to the operating system used, PHP and/or web server configuration, ..."
 msgstr ""
 
 #: ../faq/index.rst:25
-# bccbe92ea5ac4f22a8dccd41ea88bb1c
+#: bccbe92ea5ac4f22a8dccd41ea88bb1c
 msgid "with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for GNU/Linux Red Hat like distributions),"
 msgstr ""
 
 #: ../faq/index.rst:26
-# 656576194d70489da3fab5693141387b
+#: 656576194d70489da3fab5693141387b
 msgid "with (the deprecated) ``mod_php``, you'll find them in ``/var/log/httpd/error_log`` (on other GNU/Linux distributions, `httpd` may be named `apache`),"
 msgstr ""
 
 #: ../faq/index.rst:27
-# 370938c4c57a4c9bb8fd1a416e214bf4
+#: 370938c4c57a4c9bb8fd1a416e214bf4
 msgid "on Windows/MacOS with XAMPP like solutions, there is at least one log directory in installation; you may find what you look for there."
 msgstr ""
 
 #: ../faq/index.rst:30
-# 15ad96efada9415ab547c1db53728cf4
+#: 15ad96efada9415ab547c1db53728cf4
 msgid "Displaying errors"
 msgstr ""
 
 #: ../faq/index.rst:32
-# 1688864475f6442b9c7d64906447b9de
+#: 1688864475f6442b9c7d64906447b9de
 msgid "If you cannot access system logs files (frequent on shared hostings), you can display errors directly on the page."
 msgstr ""
 
 #: ../faq/index.rst:36
-# e3c842226a4746a786fbd1c4a11c8063
+#: e3c842226a4746a786fbd1c4a11c8063
 msgid "Displaying errors on a web page may provide information that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool."
 msgstr ""
 
 #: ../faq/index.rst:38
-# b6e720681b424d2d978337025c1f528d
+#: b6e720681b424d2d978337025c1f528d
 msgid "Please also note that with routing integration, some of those displayed information may be \"hidden\" from a buggy redirection... Logs are safer on that point."
 msgstr ""
 
 #: ../faq/index.rst:40
-# 2bf6d36dc31b4e4aa9eb295380461d09
+#: 2bf6d36dc31b4e4aa9eb295380461d09
 msgid "To temporary display errors on page, create a ``galette/config/behavior.inc.php`` file with the following contents:"
 msgstr ""
 
 #: ../faq/index.rst:47
-# 33c8f62dca87447481efc5ff5f85e63b
+#: 33c8f62dca87447481efc5ff5f85e63b
 msgid "The next time you reproduce the issue, errors will be displayed on the page."
 msgstr ""
 
 #: ../faq/index.rst:49
-# f7bd273a10a448cea7633c7a2509b85d
+#: f7bd273a10a448cea7633c7a2509b85d
 msgid "Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grab additional information."
 msgstr ""
 
 #: ../faq/index.rst:53
-# 290e1a0c33274c20aaa72596801e1a1c
+#: 290e1a0c33274c20aaa72596801e1a1c
 msgid "How to report a bug or ask for a feature?"
 msgstr ""
 
 #: ../faq/index.rst:55
-# 9cfe3fa245b44ea0a5aa5d3ec8f546db
+#: 9cfe3fa245b44ea0a5aa5d3ec8f546db
 msgid "Bugs reports as well as RFE (Request For Enhancement) must be done on the `Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette itself, all official plugins and also documentation."
 msgstr ""
 
 #: ../faq/index.rst:59
-# bca646983cc6461d862f2341cd006621
+#: bca646983cc6461d862f2341cd006621
 msgid "Unless you are sure you know, please de not attribute the ticket and do not set target version. It will be done when it will be took into account."
 msgstr ""
 
 #: ../faq/index.rst:61
-# 622f52b8273d42a8888d19523a709aec
+#: 622f52b8273d42a8888d19523a709aec
 msgid "If you have doubts, feel free to ask your questions on mailing lists ;)"
 msgstr ""
 
 #: ../faq/index.rst:64
-# 6115ef140ad7445386f06625c866c998
+#: 6115ef140ad7445386f06625c866c998
 msgid "Report a bug"
 msgstr ""
 
 #: ../faq/index.rst:66
-# 94f90884a43247baa5035e6682dbfc58
+#: 94f90884a43247baa5035e6682dbfc58
 msgid "Please, do not forget to:"
 msgstr ""
 
 #: ../faq/index.rst:68
-# afcbe68d691e4774b96739a01b3f2c77
+#: afcbe68d691e4774b96739a01b3f2c77
 msgid "tell us the Galette version you are using,"
 msgstr ""
 
 #: ../faq/index.rst:69
-# 934dd6b28946473b89bda4450d21b7b7
+#: 934dd6b28946473b89bda4450d21b7b7
 msgid "be clear and consise,"
 msgstr ""
 
 #: ../faq/index.rst:70
-# c163b2484c9c4682a7a2df63907d3ad6
+#: c163b2484c9c4682a7a2df63907d3ad6
 msgid "to provide all required information in order to reproduce the issue"
 msgstr ""
 
 #: ../faq/index.rst:71
-# b5276beac43a4a01886f9a39088df114
+#: b5276beac43a4a01886f9a39088df114
 msgid "to provide related logs entries."
 msgstr ""
 
 #: ../faq/index.rst:74
-# c12586a9d42c4e6790b428cc9ce33853
+#: c12586a9d42c4e6790b428cc9ce33853
 msgid "Request For Enhancement"
 msgstr ""
 
 #: ../faq/index.rst:76
-# 7035ca6e321e4a6d8d4c71683f175424
+#: 7035ca6e321e4a6d8d4c71683f175424
 msgid "Make sure to be precise as well on RFEs. Developers may not guess what you have in mind, you have to explain them, event if this seems obvious to you ;) Requested enhancements are tagged as \"Souhaits\" (whishes, in french), and moved by developers when work begins most of the time."
 msgstr ""
 
 #: ../faq/index.rst:79
-# 1be5e5c9db0e494ea97a1f7b8f7db2a9
+#: 1be5e5c9db0e494ea97a1f7b8f7db2a9
 msgid "Once you made your whishes, you can `submit it to a vote <https://vote.galette.eu/>`_, most wanted features may catch devs attention."
 msgstr ""
 
 #: ../faq/index.rst:83
-# e45597d3bff24c3082f50ccce5a8c858
+#: e45597d3bff24c3082f50ccce5a8c858
 msgid "How to search in lists archives?"
 msgstr ""
 
 #: ../faq/index.rst:85
-# 1c28562419f7415189a689a8ca2d5536
+#: 1c28562419f7415189a689a8ca2d5536
 msgid "Mailing lists are the main communication channel for Galette, from its beginnings."
 msgstr ""
 
 #: ../faq/index.rst:87
-# 058aee2b2a2b42439e92565b7f8c0d64
+#: 058aee2b2a2b42439e92565b7f8c0d64
 msgid "As a reminder, since 2017, two lists are available:"
 msgstr ""
 
 #: ../faq/index.rst:89
-# da14ce81e8bb46cd95f0ef5e76ad35de
+#: da14ce81e8bb46cd95f0ef5e76ad35de
 msgid "`users discussion list <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : general talks, help, ..."
 msgstr ""
 
 #: ../faq/index.rst:90
-# 6c56e801f7024ac9a086c641cbee2299
+#: 6c56e801f7024ac9a086c641cbee2299
 msgid "`development discussion list <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : technical discussions, tickets triaging, ..."
 msgstr ""
 
 #: ../faq/index.rst:92
-# 407715674340430789d68b5774ee302d
+#: 407715674340430789d68b5774ee302d
 msgid "If you are looking for archives before 2017, see:"
 msgstr ""
 
 #: ../faq/index.rst:94
-# a10bb5a624cd4c1f9c99c0873b4d10f9
+#: a10bb5a624cd4c1f9c99c0873b4d10f9
 msgid "`old users discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_"
 msgstr ""
 
 #: ../faq/index.rst:95
-# d8fa68d6750a421fba6d9c6e19be37a0
+#: d8fa68d6750a421fba6d9c6e19be37a0
 msgid "`old development discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_"
 msgstr ""
 
 #: ../faq/index.rst:97
-# fabe6d133c0c477696147babc545a4e8
+#: fabe6d133c0c477696147babc545a4e8
 msgid "Unfortunately, there is no search mechanism in any of those lists archives. The alternative is to use the `site:` keyword from your favorite search engine (most of them supports that keyword):"
 msgstr ""
 
 #: ../faq/index.rst:103
-# d8d4f2681fc34ef5b54eaf69456744ad
+#: d8d4f2681fc34ef5b54eaf69456744ad
 msgid "Above search will look for \"plugin\" in archives of users mailing list. Just adapt the URL to the list/period and keywords you want ;)"
 msgstr ""
 
 #: ../faq/index.rst:105
-# e64923aba5284e5eba4a90bd8cf5b85a
+#: e64923aba5284e5eba4a90bd8cf5b85a
 msgid "To improve the search, refer to your search engine documentation."
 msgstr ""
 
 #: ../faq/index.rst:109
-# 5d8f13cc504d473482774d388dde3dc2
+#: 5d8f13cc504d473482774d388dde3dc2
 msgid "How to use same email address for several members?"
 msgstr ""
 
 #: ../faq/index.rst:111
-# 85e93704b1f74058b5124cc1d2552f97
+#: 85e93704b1f74058b5124cc1d2552f97
 msgid "This is a very frequent question; many would love to do that..."
 msgstr ""
 
 #: ../faq/index.rst:113
-# 31cde347e2a74038816ddb4cb6abebeb
+#: 31cde347e2a74038816ddb4cb6abebeb
 msgid "**This is not possible.**"
 msgstr ""
 
 #: ../faq/index.rst:115
-# 571278e8fab04dd186689659e7119ce8
+#: 571278e8fab04dd186689659e7119ce8
 msgid "Indeed, mail addresses must be unique in the database. It is a choice for the project on which several features are built:"
 msgstr ""
 
 #: ../faq/index.rst:117
-# 046d410c1d5d4cf0a20d16cd1549e12f
+#: 046d410c1d5d4cf0a20d16cd1549e12f
 msgid "lost password (since... always or almost),"
 msgstr ""
 
 #: ../faq/index.rst:118
-# 2196ec41c637450abc1edb7eb30b34d8
+#: 2196ec41c637450abc1edb7eb30b34d8
 msgid "login (since Galette 0.9),"
 msgstr ""
 
 #: ../faq/index.rst:121
-# 3ccbab1250b84adcbfa563076fd67366
+#: 3ccbab1250b84adcbfa563076fd67366
 msgid "Making them non uniques is not a solution we want to rely on. This would be complicated, and should be source of many bugs."
 msgstr ""
 
 #: ../faq/index.rst:123
-# 7b704fa90544499693bf3be9ed4af4c5
+#: 7b704fa90544499693bf3be9ed4af4c5
 msgid "However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some information such as email and postal addresses will be retrieved from the parent member if missing."
 msgstr ""
 
 #: ../faq/index.rst:125
-# c10fb69b526f4fc7a805f9380f00955c
+#: c10fb69b526f4fc7a805f9380f00955c
 msgid "This allows finally to use a unique email address for several members in database; but they are not duplicates in database."
 msgstr ""
-
