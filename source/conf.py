@@ -199,7 +199,7 @@ htmlhelp_basename = 'Galettedoc'
 # epub_theme = 'epub'
 
 # The description of the document. The default value is 'unknown'.
-epub_description = 'Documentation de Galette'
+epub_description = 'Galette documentation'
 
 # An identifier for the document. This is put in the Dublin Core metadata.
 # For published documents this is the ISBN number, but you can also use an 

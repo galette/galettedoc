@@ -34,9 +34,13 @@ Galette's documentation
    development/index.rst
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
 
    changelog.rst
+
+.. toctree::
+   :hidden:
+
    development/plugins-0.8-0.9.rst
 
 *************
