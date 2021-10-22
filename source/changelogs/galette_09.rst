@@ -1,5 +1,43 @@
 :orphan:
 
+.. _v0951:
+
+****************
+0.9.5 => 0.9.5.1
+****************
+
+.. _ajouts_0951:
+
+Added
+=====
+
+
+* Add a preference to send emails to member by default (`#1536 <https://bugs.galette.eu/issues/1536>`_)
+* Add a preference to always send contributions emails (`#1481 <https://bugs.galette.eu/issues/1481>`_)
+* Mass change dynamic fields (`#1194 <https://bugs.galette.eu/issues/1194>`_)
+* Mass add contributions (`#1381 <https://bugs.galette.eu/issues/1381>`_)
+* Add a preference to choose default payment type (`#1578 <https://bugs.galette.eu/issues/1578>`_)
+* Members can manage their children and create new ones (if preference is on) (`#946 <https://bugs.galette.eu/issues/946>`_)
+* Prevent installation page access if Galette is already installed (`#1574 <https://bugs.galette.eu/issues/1574>`_)
+
+.. _bogues_0951:
+
+Fixed
+=====
+
+* Fix overlapping menu in mobile (`#1559 <https://bugs.galette.eu/issues/1559>`_)
+* Adjust members state of dues chart (`#1558 <https://bugs.galette.eu/issues/1558>`_)
+* Rely on more powerfull WYSIWYG html editor in emails (`#1568 <https://bugs.galette.eu/issues/1568>`_)
+* Replace jQuery Cookie with JS Cookie (`#1569 <https://bugs.galette.eu/issues/1569>`_)
+* Fix close expiries filter and impending reminders (`#1566 <https://bugs.galette.eu/issues/1566>`_)
+* Fix address with a quote (`#1567 <https://bugs.galette.eu/issues/1567>`_)
+* Fix undefined constant on Alpine (`#1572 <https://bugs.galette.eu/issues/1572>`_)
+* Fix transactions list (`#1576 <https://bugs.galette.eu/issues/1576>`_)
+* Fix advanced search with dynamic fields (`#1575 <https://bugs.galette.eu/issues/1575>`_)
+* Fix new user registration email (`#1577 <https://bugs.galette.eu/issues/1577>`_)
+* Fix contributions ordered on payment type (`#1579 <https://bugs.galette.eu/issues/1579>`_)
+* Fix public list ordering (`#1580 <https://bugs.galette.eu/issues/1580>`_)
+
 .. _v095:
 
 ****************
