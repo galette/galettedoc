@@ -40,9 +40,10 @@ Third party plugins
 
 Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
 
+* `Stripe <https://github.com/galette-community/plugin-stripe>`_ (handle `Stripe payments <https://stripe.com/>`_), developped by Mathieu,
 * `Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (base management of a flying club), developed by Mélissa (**no longer maintained**),
-* `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes generation), developed by Frédéric,
-* `Grades <https://galette-community.github.io/plugin-grades/>`_ (evaluations management), developed by Frédéric.
+* `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes generation), developed by Frédéric (**no longer maintained**),
+* `Grades <https://galette-community.github.io/plugin-grades/>`_ (evaluations management), developed by Frédéric (**no longer maintained**).
 
 A `Github community <https://github.com/galette-community/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin.
 
