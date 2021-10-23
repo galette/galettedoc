@@ -17,8 +17,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.4.0-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.4.0.tar.bz2
+.. image:: https://img.shields.io/badge/1.4.1-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.4.1.tar.bz2
    :alt: Get latest Events plugin!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
