@@ -44,16 +44,16 @@ master_doc = 'index'
 # General information about the project.
 project = 'Galette'
 author = 'Johan Cwiklinski'
-copyright = '2011-2020, Johan Cwiklinski'
+copyright = '2011-2021, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.9.4.2'
+version = '0.9.5.1'
 # The full version, including alpha/beta/rc tags.
-release = '0.9.4.2'
+release = '0.9.5.1'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -199,7 +199,7 @@ htmlhelp_basename = 'Galettedoc'
 # epub_theme = 'epub'
 
 # The description of the document. The default value is 'unknown'.
-epub_description = 'Documentation de Galette'
+epub_description = 'Galette documentation'
 
 # An identifier for the document. This is put in the Dublin Core metadata.
 # For published documents this is the ISBN number, but you can also use an 

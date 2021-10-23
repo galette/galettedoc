@@ -83,6 +83,8 @@ Routes
 
 .. versionadded:: 0.9
 
+.. versionchanged:: 0.9.5
+
 You will need some URLs for your plugin. Galette rely on Slim framework to expose routes. Each URL fit a route, with a name, possible arguments, HTTP method, ...
 
 In plugins, you must add a ``_routes.php`` file. In this file, you will declare all your plugin URLs. Galette provide URL similar to ``{galette}/plugins/myplugin`` on which your own routes wil be append.
@@ -91,6 +93,7 @@ A route is constitued of the following elements:
 
 * an URL,
 * maybe some URL parameters, some may be required,
+* a controller class and method to be called,
 * a name (unique),
 * access restriction,
 * a HTTP method (`GET` and/or `POST`).
@@ -102,10 +105,20 @@ A simple route example would look like:
    <?php
    $this->get(
        '/main',
-       function ($request, $response) {
-           echo 'Welcome to the main page';
-       }
+       [TheController::class, 'welcome']
    )->setName('myplugin_main');
+
+And the corresponding method in controller would look like:
+
+.. code-block:: php
+
+   <?php
+
+    public function welcome(Request $request, Response $response): Response
+    {
+        $response->getBody()->write('Welcome to the main page');
+        return $response;
+    }
 
 This will respond to the URL ``{galette}/plugins/myplugin/main``; and it will just display `Welcome to the main page`.
 
@@ -120,16 +133,63 @@ Routes can have parameters, mandatory or not. Following example add the `arg1` r
    <?php
    $this->get(
        '/test/{arg1}[/{arg2}]',
-       function ($request, $response, $args) {
-           //wit an URL like /test/value1/value2
-           echo $args['arg1']; //value1
-           if (isset($args['arg2'])) {
-               echo $args['args2']; /value2
-           }
-       }
+       [TheController::class, 'test']
    )->setName('monplugin_test');
 
+And the corresponding method in controller would look like:
+
+.. code-block:: php
+
+   <?php
+
+    public function test(Request $request, Response $response, int $arg1, string $arg2 = null): Response
+    {
+        //with an URL like /test/1/value2
+        $response->getBody()->write(
+            $arg1 . //1
+            ' ' .
+            $arg2 ?? '' //value2
+        ); //1 value2
+        return $response;
+    }
+
 It is also possible to restrict a parameter value using regular expressions. See `Slim routing documentation <https://www.slimframework.com/docs/objects/router.html>`_ to know more.
+
+Controller
+----------
+
+As we've just seen; you have to create at least one controller class which inerits from ``Galette\Controllers\AbstractPluginController`` and contains a ``$module_info`` class parameter used to inject plugins information.
+
+.. code-block:: php
+
+    <?php
+    namespace GaletteMaps\Controllers;
+
+    use Galette\Controllers\AbstractPluginController;
+    use Psr\Container\ContainerInterface;
+    use Slim\Http\Request;
+    use Slim\Http\Response;
+
+    /**
+     * MyPlugin controller
+     *
+     * @category  Controllers
+     * @name      TheController
+     * @package   Galette
+     * @author    Johan Cwiklinski <johan@x-tnd.be>
+     * @copyright 2021 The Galette Team
+     * @license   http://www.gnu.org/licenses/gpl-3.0.html GPL License 3.0 or (at your option) any later version
+     * @link      https://galette.eu
+     */
+
+    class TheController extends AbstractPluginController
+    {
+        /**
+         * @Inject("Plugin Galette My Plugin")
+         * @var integer
+         */
+        protected $module_info;
+    }
 
 Routes and templates
 --------------------
@@ -146,27 +206,18 @@ Displaying a page from a Smarty template would look like:
    // display page
    $this->view->render(
       $response,
-      'file:[' . $module['route'] . ']file.tpl', [
+      'file:[' . $this->getModuleRoute() . ']file.tpl', [
           'require_dialog' => true,
           'list_values'    => $myvalues
       ]
    );
 
-The use of the ``$module['root']`` ensures the file you are trying to load is the one of your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded frinstead of the one from your plugin, and this won't work.
-Then, ``file.tpl`` is core file ``file.tpl``, and ``file:[abcde]file.tpl`` the ``file.tpl`` file from plugin which identifier is ``abcde``.
+The use of the ``$this->getModuleRoute()`` ensures the file you are trying to load is the one from your plugin. Without that, if Galette or another plugin provides a `file.tpl` file, it may be loaded instead of the one from your plugin, and this won't work.
+Then, ``file:file.tpl`` is core template file, while ``file:[myplugin]file.tpl`` the template from plugin which identifier is ``myplugin``.
 
 .. note::
 
-   Galette is in charge to attribute identifiers to plugins. Do no try to guess it, and use ``$module['root']`` which is unique per plugin. Rely on the ``use`` keyword to pass it to your anonymous functions:
-
-   .. code-block:: php
-
-      $this->get(
-          'myplugin_routes',
-          function ($request, $response) use ($module) {
-              //$module is available here
-          }
-      );
+   Galette is in charge to attribute identifiers to plugins. Do no try to guess it, and use ``$this->getModuleRoute()`` which is unique per plugin.
 
 Redirections are simple to do:
 
@@ -199,9 +250,7 @@ To add a restriction access to a route, call the ``$authenticate`` middleware on
    <?php
    $this->get(
        'myplugin_routes',
-       function ($request, $response) {
-           echo 'Welcome to the main page';
-       }
+       [TheController::class, 'welcome']
    )->setName('myplugin_main')->add($authenticate);
 
 Along with that, you have to define the access to that route in your ``_define.php`` file. In the example from the begginning of the doc, ``myplugin_main`` route has been restricted to staff members only.
@@ -211,23 +260,22 @@ Pages which does not need any specific restriction will just not call the middle
 Public pages
 ------------
 
-Some of pages may be accessible without authentication, this is a Galette preference. For such pages, you will have to check if public pages are active for current logged in user:
+Some of pages may be accessible without authentication, this is a Galette preference. For such pages, you will have to check if public pages are active for current logged in user in controller method:
 
 .. code-block:: php
 
    <?php
-   $this->get(
-       '/main',
-       function ($request, $response) {
-           if (!$this->preferences->showPublicPages($login)) {
-               //public pages are not actives
-               return $response
-                   ->withStatus(301)
-                   ->withHeader('Location', $this->router->pathFor('slash'));
-           }
-           //content if accessible
-       }
-   )->setName('myplugin_public');
+    public function welcome(Request $request, Response $response): Response
+    {
+        if (!$this->preferences->showPublicPages($login)) {
+            //public pages are not actives
+            return $response
+               ->withStatus(301)
+               ->withHeader('Location', $this->router->pathFor('slash'));
+        }
+       //content if accessible
+        return $response;
+    }
 
 Usage
 -----
@@ -240,14 +288,14 @@ From PHP code, you will use ``pathFor`` method. If route is waiting for paramete
 
    <?php
    $this->router->pathFor('myplugin_main');
-   $this->router->pathFor('myplugin_test', ['arg1' => 'value1', 'arg2' => 'value2']);
+   $this->router->pathFor('myplugin_test', ['arg1' => 1, 'arg2' => 'value2']);
 
 From a Smarty template, use the ``path_for`` function:
 
 .. code-block:: smarty
 
    {path_for name="myplugin_main"}
-   {path_for name="myplugin_test" data=["args1" => "value1", "args2" => "value2"]}
+   {path_for name="myplugin_test" data=["arg1" => 1, "arg2" => "value2"]}
 
 .. note::
 
@@ -567,6 +615,10 @@ Finally, a plugin directory should look like:
     * |folder| `lib`
 
       * |folder| `GaletteMyPlugin`
+
+        * |folder| `Controllers`
+
+          * |phpfile| `TheController.php`
 
         * |phpfile| `...`
 

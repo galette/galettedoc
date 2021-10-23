@@ -28,16 +28,16 @@ Where we previousely use on `.php` file per page to display, all is now in a rou
 
 .. _zend_db:
 
-Zend DB
--------
+Laminas DB
+----------
 
 .. image:: ../_styles/static/images/libraries/zend.png
    :width: 140px
    :align: right
 
-*Required version:* `2.8.2` (see https://github.com/zendframework/zend-db/issues/322)
+*Required version:* `2.8.2` (see https://github.com/laminas/laminas-db/issues/47)
 
-`Zend Db library to manage databases <https://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_ is used to manage all databases queries.
+`Laminas Db library <https://framework.zend.com/manual/2.2/en/modules/zend.db.adapter.html>`_ is used to manage all databases queries.
 
 Even if the lib is compatible with several database systems; Galette is only compatible with:
 

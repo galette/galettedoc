@@ -1,5 +1,71 @@
 :orphan:
 
+.. _v0951:
+
+****************
+0.9.5 => 0.9.5.1
+****************
+
+.. _ajouts_0951:
+
+Added
+=====
+
+
+* Add a preference to send emails to member by default (`#1536 <https://bugs.galette.eu/issues/1536>`_)
+* Add a preference to always send contributions emails (`#1481 <https://bugs.galette.eu/issues/1481>`_)
+* Mass change dynamic fields (`#1194 <https://bugs.galette.eu/issues/1194>`_)
+* Mass add contributions (`#1381 <https://bugs.galette.eu/issues/1381>`_)
+* Add a preference to choose default payment type (`#1578 <https://bugs.galette.eu/issues/1578>`_)
+* Members can manage their children and create new ones (if preference is on) (`#946 <https://bugs.galette.eu/issues/946>`_)
+* Prevent installation page access if Galette is already installed (`#1574 <https://bugs.galette.eu/issues/1574>`_)
+
+.. _bogues_0951:
+
+Fixed
+=====
+
+* Fix overlapping menu in mobile (`#1559 <https://bugs.galette.eu/issues/1559>`_)
+* Adjust members state of dues chart (`#1558 <https://bugs.galette.eu/issues/1558>`_)
+* Rely on more powerfull WYSIWYG html editor in emails (`#1568 <https://bugs.galette.eu/issues/1568>`_)
+* Replace jQuery Cookie with JS Cookie (`#1569 <https://bugs.galette.eu/issues/1569>`_)
+* Fix close expiries filter and impending reminders (`#1566 <https://bugs.galette.eu/issues/1566>`_)
+* Fix address with a quote (`#1567 <https://bugs.galette.eu/issues/1567>`_)
+* Fix undefined constant on Alpine (`#1572 <https://bugs.galette.eu/issues/1572>`_)
+* Fix transactions list (`#1576 <https://bugs.galette.eu/issues/1576>`_)
+* Fix advanced search with dynamic fields (`#1575 <https://bugs.galette.eu/issues/1575>`_)
+* Fix new user registration email (`#1577 <https://bugs.galette.eu/issues/1577>`_)
+* Fix contributions ordered on payment type (`#1579 <https://bugs.galette.eu/issues/1579>`_)
+* Fix public list ordering (`#1580 <https://bugs.galette.eu/issues/1580>`_)
+
+.. _v095:
+
+****************
+0.9.4.2 => 0.9.5
+****************
+
+This release contains security fixes; updating is highly recommended!
+
+The security issues that has been reported is an XSS injection, issued as CVE-2021-21319.
+
+- PHP8 compatibility (`#1492 <https://bugs.galette.eu/issues/1492>`_),
+- Cannot create new members  (`#1523 <https://bugs.galette.eu/issues/1523>`_)
+- Inactive accounts can renew their password (`#1529 <https://bugs.galette.eu/issues/1529>`_)
+- Error on removing contribution type (`#1531 <https://bugs.galette.eu/issues/1531>`_)
+- Cannot cascade remove groups (`#1533 <https://bugs.galette.eu/issues/1533>`_)
+- Ability to order on contributions and transactions ID (`#1502 <https://bugs.galette.eu/issues/1502>`_)
+- Variables available in emails and PDF are now the same, dynamic fields has been added, ... (`#1445 <https://bugs.galette.eu/issues/1445>`_, `#1393 <https://bugs.galette.eu/issues/1393>`_, `#1520 <https://bugs.galette.eu/issues/1520>`_)
+- Fix late reminders PDF labels (`#1506 <https://bugs.galette.eu/issues/1506>`_)
+- Third party dependencies has been updated and cleaned (`#1515 <https://bugs.galette.eu/issues/1515>`_, `#1299 <https://bugs.galette.eu/issues/1299>`_), some for security reasons
+- Add dynamic files on contributions and transactions, fixes (`#1552 <https://bugs.galette.eu/issues/1552>`_, `#1548 <https://bugs.galette.eu/issues/1548>`_, `#1546 <https://bugs.galette.eu/issues/1546>`_)
+- Improve self subscription captcha (`#1516 <https://bugs.galette.eu/issues/1516>`_)
+- Few fixes on members views (`#1512 <https://bugs.galette.eu/issues/1512>`_)
+- Fix auto generated logins that contains `@` (`#1542 <https://bugs.galette.eu/issues/1542>`_)
+- Change some database fields so they can store more characters (`#1499 <https://bugs.galette.eu/issues/1499>`_, `#1534 <https://bugs.galette.eu/issues/1534>`_)
+- Under the hood, the dependency management system has been changed (`#1372 <https://bugs.galette.eu/issues/1372>`_). This unfortunately affects all plugins, none of them will be compatible.
+
+Dependency management changes unfortunately makes all plugins incompatible with this release.
+
 .. _v0942:
 
 ******************

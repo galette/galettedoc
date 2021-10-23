@@ -34,7 +34,12 @@ Some directories keep data and/or configurations and should be copied back to th
 * ``data/attachments`` contains mailing attached documents.
 * ``plugins`` your current plugins. It is a good idea to check if new plugins versions are available ;)
 
-Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database. If it asks you nothing you're just done already ;)
+Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database.
+
+If so, visit the install URL ``/installer.php`` (ex: https://your.domain.name/installer.php) and choose *Update* when your are asked for the type of installation.
+
+If it asks you nothing you're just done already ;)
+
 
 Updating database
 =================

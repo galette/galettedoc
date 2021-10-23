@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 09:12+0100\n"
-"PO-Revision-Date: 2020-07-11 04:49+0000\n"
+"POT-Creation-Date: 2021-10-22 10:35+0200\n"
+"PO-Revision-Date: 2020-12-12 10:34+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "configuration/fr/>\n"
@@ -15,17 +15,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
-#: ../usermanual/configuration.rst:5
+#: ../usermanual/configuration.rst:5 1335eb0386724f4c98a065e2f69816fd
 msgid "Fields Configuration"
 msgstr "Configuration des champs"
 
-#: ../usermanual/configuration.rst:8
+#: ../usermanual/configuration.rst:8 770dc3a97fff41479c0733ad1b11a34b
 msgid "List fields"
 msgstr "Liste des champs"
 
-#: ../usermanual/configuration.rst:12
+#: ../usermanual/configuration.rst:12 6b756b37b1094b8ebc092ecc1db8fc8b
 msgid ""
 "You can choose which fields will appears on Galette members list and the "
 "order they will appear with a drag & drop interface. Related access rights "
@@ -36,13 +36,13 @@ msgstr ""
 "Les droits d'accès liés sont gérés depuis la configuration des champs (voir "
 "ci-dessous)."
 
-#: ../usermanual/configuration.rst:16
+#: ../usermanual/configuration.rst:16 f3474774034544638002d700d3da27f7
 msgid "Two fields are mandatory and cannot be moved: member number and name."
 msgstr ""
 "Deux champs sont requis et ne peuvent être déplacés : le numéro de "
 "l'adhérent et le nom."
 
-#: ../usermanual/configuration.rst:18
+#: ../usermanual/configuration.rst:18 6e52a74784094262a3d14cd64dd34ce0
 msgid ""
 "It is not possible to set access rights on id column, and parent will be "
 "accessible for staff members only."
@@ -50,11 +50,11 @@ msgstr ""
 "Il n'est pas possible de définir de droits d'accès sur la colonne id,et la "
 "colonne parent sera accessible aux seuls membres du staff."
 
-#: ../usermanual/configuration.rst:26
+#: ../usermanual/configuration.rst:26 7a0400ffa7684e5d93f497ac38d95aae
 msgid "Mandatory fields and access rights"
 msgstr "Champs obligatoires et droits d'accès"
 
-#: ../usermanual/configuration.rst:28
+#: ../usermanual/configuration.rst:28 5f1a9f0b17624f16aba64bec24a41af7
 msgid ""
 "When you create or edit a member, some fields are mandatory. Default "
 "configuration may not suit your needs, but you can configure some elements "
@@ -64,7 +64,7 @@ msgstr ""
 "configuration par défaut peut ne pas vous convenir, mais vous pouvez "
 "configurer certains éléments facilement ;)"
 
-#: ../usermanual/configuration.rst:30
+#: ../usermanual/configuration.rst:30 d3b171057fd14c5eb49b0275debc53fb
 msgid ""
 "From the `Configuration`, `Core fields` menu, you will get access to all "
 "fields available for members, and choose for each one if it is mandatory or "
@@ -74,11 +74,11 @@ msgstr ""
 "les champs disponibles pour les adhérents, et choisir pour chacun d'entre "
 "eux s'il est requis ou non, ainsi que les droits qui y sont associés :"
 
-#: ../usermanual/configuration.rst:32
+#: ../usermanual/configuration.rst:32 e453d86c7e2c4f319c57ea5e13c84b1a
 msgid "`inaccessible` will make the field inaccessible for everyone,"
 msgstr "`inaccessible` rendra le champ inaccessible à tous,"
 
-#: ../usermanual/configuration.rst:33
+#: ../usermanual/configuration.rst:33 59acaa933e7b4989bfd33f94e2cb911b
 msgid ""
 "`administrator` will make the field readable and writeable for "
 "administrators only,"
@@ -86,7 +86,7 @@ msgstr ""
 "`administrateur` rendra le champ accessible en lecture et écriture aux seuls "
 "administrateurs,"
 
-#: ../usermanual/configuration.rst:34
+#: ../usermanual/configuration.rst:34 42c67b7f525042a78260b73bb03f7614
 msgid ""
 "`staff members` will make the field readable and writable for staff members "
 "and administrators,"
@@ -94,7 +94,7 @@ msgstr ""
 "`membres du bureau` rendra le champ accessible en lecture et écriture aux "
 "membres du bureau ainsi qu'aux administrateurs,"
 
-#: ../usermanual/configuration.rst:35
+#: ../usermanual/configuration.rst:35 c07be6eda5b34e79924aef558f9b5302
 msgid ""
 "`groups managers` will make the field readable and writable for groups "
 "managers on the memebrs of groups they own, and for staff memebrs and "
@@ -104,7 +104,7 @@ msgstr ""
 "aux responsables de groupes pour les adhérents des groupes qu'ils gèrent "
 "ainsi qu'aux membres du bureau et administrateurs,"
 
-#: ../usermanual/configuration.rst:36
+#: ../usermanual/configuration.rst:36 b0fedf50b759408698e5c3a54a84e468
 msgid ""
 "`read/write` will make the field readable and writeable for member, groups "
 "managers, staff members and administrators,"
@@ -113,7 +113,7 @@ msgstr ""
 "écriture aux adhérents, responsables de groupes, membres du bureau et "
 "administrateurs,"
 
-#: ../usermanual/configuration.rst:37
+#: ../usermanual/configuration.rst:37 85896d2a8d6d470d919d8a2c0f947b46
 msgid ""
 "`read only` will make the field read only for the members, but writable for "
 "groups managers, staff members and administrators."
@@ -122,11 +122,11 @@ msgstr ""
 "mais en écriture aux responsables de groupes, membres du bureau et "
 "administrateurs."
 
-#: ../usermanual/configuration.rst:45
+#: ../usermanual/configuration.rst:45 770dc3a97fff41479c0733ad1b11a34b
 msgid "Dynamic fields"
 msgstr "Champs dynamiques"
 
-#: ../usermanual/configuration.rst:47
+#: ../usermanual/configuration.rst:47 43cf9bb325fe4d8d90bafa631c077d7a
 msgid ""
 "Galette comes per default with many fields for members, contributions and "
 "transactions. Some of them will be useless, but you may need fields that "
@@ -136,7 +136,7 @@ msgstr ""
 "contributeurs et transactions. Certains d'entre eux seront inutiles, mais "
 "vous pourriez avoir besoin de champs qui n'existent pas..."
 
-#: ../usermanual/configuration.rst:49
+#: ../usermanual/configuration.rst:49 3aee766a4dc24064993cbd2f1f4dd08a
 msgid ""
 "In this case, that is quite simple : just add a new dynamic field with a "
 "label, define if it is mandatory or not, and that's all : Galette will "
@@ -146,54 +146,54 @@ msgstr ""
 "avec un nom, définissez s'il est requis ou non et c'est tout : Galette le "
 "gèrera automatiquement, admirez juste le résultat ;)"
 
-#: ../usermanual/configuration.rst:51
+#: ../usermanual/configuration.rst:51 eafe7796798d46ada0da8caef1a012d8
 msgid "There are several types of dynamic fields:"
-msgstr "Il existe différents types de champs dyamiques :"
+msgstr "Il existe différents types de champs dynamiques :"
 
-#: ../usermanual/configuration.rst:53
+#: ../usermanual/configuration.rst:53 35d61b45d3d84e8996ae665df95ab415
 msgid "`separator`: just a label, like a part title,"
 msgstr "`séparateur` : juste une étiquette, comme un titre de section,"
 
-#: ../usermanual/configuration.rst:54
+#: ../usermanual/configuration.rst:54 7a6128a9a45846f5a59f1b2f0c2e37f3
 msgid "`free text`: multiline text area,"
 msgstr "`texte libre` : zone de texte multi-ligne,"
 
-#: ../usermanual/configuration.rst:55
+#: ../usermanual/configuration.rst:55 3cf316be659240c8869772634a0184a2
 msgid "`single line`: one line text,"
 msgstr "`ligne simple` : une ligne de texte,"
 
-#: ../usermanual/configuration.rst:56
+#: ../usermanual/configuration.rst:56 5c1947f009e84f90b48ccbc66f902153
 msgid "`choice`: a dropdown list,"
 msgstr "`choix` : une liste déroulante,"
 
-#: ../usermanual/configuration.rst:57
+#: ../usermanual/configuration.rst:57 2b7e5872d9464c5e9b93e1553aaa5766
 msgid "`date`: a date field with a selector,"
 msgstr "`date` : un champ date avec un sélecteur,"
 
-#: ../usermanual/configuration.rst:58
+#: ../usermanual/configuration.rst:58 8ed0bf94902942a2960fbbf2055d0e48
 msgid "`boolean`: a checkbox,"
 msgstr "`booléen` : une case à cocher,"
 
-#: ../usermanual/configuration.rst:59
+#: ../usermanual/configuration.rst:59 05fdfc838bf74bba8e962477f5d107f5
 msgid "`file`: add files."
 msgstr "`fichier` : ajout de fichiers."
 
-#: ../usermanual/configuration.rst:61
+#: ../usermanual/configuration.rst:61 28e22ecda0fa4956a5f2d5a0be009d24
 msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
 "Lors de la création de nouveaux champs (ou la modification de champs "
 "existants) ; vous pourrez :"
 
-#: ../usermanual/configuration.rst:63
+#: ../usermanual/configuration.rst:63 24e96bec0a9948f4bf6d5463cfbdeba9
 msgid "mark it as required,"
 msgstr "les marquer comme requis,"
 
-#: ../usermanual/configuration.rst:64
+#: ../usermanual/configuration.rst:64 b4352a28672a42e4b657f411e7541582
 msgid "define access rights, the same as for core fields."
 msgstr ""
 "définir des droits d'accès, de la même manière que pour les champs du cœur."
 
-#: ../usermanual/configuration.rst:71
+#: ../usermanual/configuration.rst:71 c2a8e9c503c34594b0b994269ed6a2ca
 msgid ""
 "Some field types like separators, dates and booleans, does not need any "
 "extra information; for others:"
@@ -201,59 +201,59 @@ msgstr ""
 "Certains champs comme les séparateurs, les dates et les booléens ne "
 "requièrent aucune information complémentaire ; pour les autres :"
 
-#: ../usermanual/configuration.rst:73
+#: ../usermanual/configuration.rst:73 ee1155f5a34c49519f491dd5d08c83c9
 msgid "`free text`:"
 msgstr "`texte libre` :"
 
-#: ../usermanual/configuration.rst:75
+#: ../usermanual/configuration.rst:75 2f7e975d89d9495497a3a9cbd0dae3f9
 msgid "`width`: define number of columns,"
 msgstr "`largeur` : définit le nombre de colonnes,"
 
-#: ../usermanual/configuration.rst:76
+#: ../usermanual/configuration.rst:76 f5cf36548c8a4aafb5c301dc4dbc0f70
 msgid "`height`: define number of rows."
 msgstr "`hauteur` : définit le nombre de lignes."
 
-#: ../usermanual/configuration.rst:78
+#: ../usermanual/configuration.rst:78 1c54d15dfd6a4f8791e21deb728b3397
 msgid "`single line`:"
 msgstr "`ligne simple` :"
 
-#: ../usermanual/configuration.rst:80
+#: ../usermanual/configuration.rst:80 06cbb5a053354c0f900ba15f367330c1
 msgid "`width`: field width,"
 msgstr "`largeur` : largeur du champ,"
 
-#: ../usermanual/configuration.rst:81
+#: ../usermanual/configuration.rst:81 8d2abbf694b945f9beb1fe8b5aa25067
 msgid "`size`: number of characters,"
 msgstr "`taille` : nombre de caractères,"
 
-#: ../usermanual/configuration.rst:82
+#: ../usermanual/configuration.rst:82 69cf7521b12e4e8c8de485c112f96b44
 msgid "`repeat`: number of possible ocurences."
 msgstr "`répétition` : nombre d'occurrences possibles."
 
-#: ../usermanual/configuration.rst:84
+#: ../usermanual/configuration.rst:84 d3b90562c1244a27987b4e6e13b6ddef
 msgid "`choice`:"
 msgstr "`choix` :"
 
-#: ../usermanual/configuration.rst:86
+#: ../usermanual/configuration.rst:86 7f8e29e61eda4f2ab9e0f527498fbd31
 msgid "`values`: possible values for the dropdown."
 msgstr "`valeurs` : valeurs possibles pour la liste déroulante."
 
-#: ../usermanual/configuration.rst:88
+#: ../usermanual/configuration.rst:88 b20f3ccac5b5414eb86d5a041068dc8e
 msgid "`file`:"
 msgstr "`fichier` :"
 
-#: ../usermanual/configuration.rst:90
+#: ../usermanual/configuration.rst:90 2e8493c271c145689bded08db1544894
 msgid ""
 "`size`: maximum file size, in Kio (this size is limited to the one for the "
 "PHP configuration)."
 msgstr ""
-"`taille` : taille maximale du fichier en Kio (cette taille es limitée à "
+"`taille` : taille maximale du fichier en Kio (cette taille est limitée à "
 "celle de la configuration de PHP)."
 
-#: ../usermanual/configuration.rst:93
+#: ../usermanual/configuration.rst:93 f51eeb223a8f4595a99822ce74de6a87
 msgid "Labels translation"
 msgstr "Traduction des étiquettes"
 
-#: ../usermanual/configuration.rst:95
+#: ../usermanual/configuration.rst:95 620b32d302854c5a96be42e6b06b7c98
 msgid ""
 "Galette handle several languages, but when you add a new dynamic field, "
 "there is only one value possible. Galette proposes an interface to translate "
@@ -263,17 +263,17 @@ msgstr ""
 "dynamique, il n'y a qu'une seule valeur possible. Galette propose une "
 "interface pour traduire ces étiquettes dans toutes les langues disponibles."
 
-#: ../usermanual/configuration.rst:97
+#: ../usermanual/configuration.rst:97 4d650efaef58446fab30ecec68d6edd9
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
 "Notez que chaque nouvelle étiquette sera ajoutée dans Galette avec la langue "
 "courante."
 
-#: ../usermanual/configuration.rst:100
+#: ../usermanual/configuration.rst:100 ec0d959f0d9a45338b595867f8aae014
 msgid "Emails contents"
 msgstr "Contenus des courriels"
 
-#: ../usermanual/configuration.rst:102
+#: ../usermanual/configuration.rst:102 a00ccb772d3d4676ba56bcba5e0cf028
 msgid ""
 "Depending on your configuration (see preferences), administrative emails "
 "cans be sent to users and/or administrators, when you add a new member or a "
@@ -284,11 +284,11 @@ msgstr ""
 "lorsque vous ajoutez un nouvel adhérent ou une nouvelle contribution, ou "
 "encore pour la fonctionnalité mot de passe perdu, par exemple."
 
-#: ../usermanual/configuration.rst:104
+#: ../usermanual/configuration.rst:104 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
 msgid "Defaults are provided, but you can change them."
 msgstr "Des valeurs par défaut sont fournies, mais vous pouvez les changer."
 
-#: ../usermanual/configuration.rst:106
+#: ../usermanual/configuration.rst:106 1eaf6d3b865c494287de03399e0997d0
 msgid ""
 "It is important to note that those textes contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -299,16 +299,16 @@ msgstr ""
 "l'envoi. Prenez garde à n'en oublier aucune, cela pourrait causer des "
 "problèmes à l'envoi."
 
-#: ../usermanual/configuration.rst:113
+#: ../usermanual/configuration.rst:113 e141fe73bcf64b9fb2143f92c6a4e4b9
 msgid "An email will be send to member when:"
 msgstr "Un courriel sera envoyé à l'adhérent lorsque :"
 
-#: ../usermanual/configuration.rst:115
+#: ../usermanual/configuration.rst:115 6cbe0fd53f9a4290a57412e635a6792d
 msgid "he self subscribes. This mail contains authentication informations,"
 msgstr ""
 "il s'inscrit. Ce courriel contient ses informations d'authentification,"
 
-#: ../usermanual/configuration.rst:116
+#: ../usermanual/configuration.rst:116 7801258e9e8248de9fbd6a88fb385ad6
 msgid ""
 "his card is added or edited by someone else (if the corresponding box is "
 "checked),"
@@ -316,11 +316,11 @@ msgstr ""
 "sa fiche est modifiée par une tierce personne (si la case correspondante est "
 "cochée),"
 
-#: ../usermanual/configuration.rst:117
+#: ../usermanual/configuration.rst:117 f402746f081b4cc192495855ad5e5793
 msgid "he uses lost password feature,"
 msgstr "il utilise la fonctionnalité mot de passe perdu,"
 
-#: ../usermanual/configuration.rst:118
+#: ../usermanual/configuration.rst:118 ae45becfa53547a284ff4e1e1e677f45
 msgid ""
 "a new contribution is attache to his account (if the corresponding box is "
 "checked)."
@@ -328,19 +328,19 @@ msgstr ""
 "une nouvelle contribution est attachée à son compte (si la case "
 "correspondante est cochée)."
 
-#: ../usermanual/configuration.rst:120
+#: ../usermanual/configuration.rst:120 257887c09acd4057a73575c1e5ccd646
 msgid "An email will be send to administrators when:"
 msgstr "Un courriel sera envoyé aux administrateurs lorsque :"
 
-#: ../usermanual/configuration.rst:122
+#: ../usermanual/configuration.rst:122 d9470aa131bd46ad91fae1bde7def2a2
 msgid "a new member is added or self subscribes,"
 msgstr "un nouvel adhérent est ajouté ou s'inscrit,"
 
-#: ../usermanual/configuration.rst:123
+#: ../usermanual/configuration.rst:123 f06dbb209abf42e9a4b8250a25550317
 msgid "a new contribution is attached to his account."
 msgstr "une nouvelle contribution est attachée à son compte."
 
-#: ../usermanual/configuration.rst:125
+#: ../usermanual/configuration.rst:125 bdf33e0f5b0f4e2bb55dda5cb26056bb
 msgid ""
 "Of course, emails will be sent ony if Galette configuration allows it (and "
 "the setup is correct). Sending messages to administrators is configured "
@@ -355,7 +355,7 @@ msgstr ""
 "cocher dans l'interface utilisateur, sauf pour les messages de souscription "
 "par l'utilisateur qui seront toujours envoyés."
 
-#: ../usermanual/configuration.rst:127
+#: ../usermanual/configuration.rst:127 196630f591274913a30590a46917363c
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "
