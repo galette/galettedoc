@@ -1,5 +1,21 @@
 :orphan:
 
+.. _v0952:
+
+******************
+0.9.5.1 => 0.9.5.2
+******************
+
+* Update translations
+* Work on PHP 8.1 compatibility and tests improvements (`#1570 <https://bugs.galette.eu/issues/1570>`_)
+* Fix members list issue with titles column displayed (`#1584 <https://bugs.galette.eu/issues/1584>`_)
+* Fix members list ordering (`#1586 <https://bugs.galette.eu/issues/1586>`_)
+* Fix missing emails texts insertion (`#1587 <https://bugs.galette.eu/issues/1587>`_)
+* Drop duplicate check on saved searches
+* Fix some silent errors
+* Some data were missing checking passwords against personal data
+* Fix gateway timeout sending emails with SSL SMTP (`#1591 <https://bugs.galette.eu/issues/1591>`_)
+
 .. _v0951:
 
 ****************
