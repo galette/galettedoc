@@ -1,5 +1,26 @@
 :orphan:
 
+.. _v0960:
+
+****************
+0.9.5.2 => 0.9.6
+****************
+
+* Social networks/contact externalization (`#1585 <https://bugs.galette.eu/issues/1585>`_)
+* Add member number (`#190 <https://bugs.galette.eu/issues/190>`_)
+* Export contributions as CSV (`#1581 <https://bugs.galette.eu/issues/1581>`_)
+* Drop group name uniqueness at same level (`#366 <https://bugs.galette.eu/issues/366>`_)
+* Add information to display for dynamic fields (`#1190 <https://bugs.galette.eu/issues/1190>`_)
+* Add preferences for groups manager to edit, create members, edit groups, send mailing and perform exports (`#499 <https://bugs.galette.eu/issues/499>`_)
+* Fix various XSS issues
+* Fix possible SQL injection
+* Add CSRF protection
+* Fix address escaping at display (`#1592 <https://bugs.galette.eu/issues/1592>`_)
+* Prevent issue creating contribution with an empty amount (`#1593 <https://bugs.galette.eu/issues/1593>`_)
+* Fix undefined index when locale is missing on system
+* Fix issue reusing a saved search from advanced search
+* Update translations
+
 .. _v0952:
 
 ******************
