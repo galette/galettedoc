@@ -118,14 +118,7 @@ Sending email parameters:
   * **Using sendmail server**: uses local server sendmail,
   * **Using qmail server**: uses local server qmail,
 
-* **Mail signature**: signature added to all sent emails. Available variables are:
-
-  * ``{NAME]`` association name,
-  * ``{WEBSITE}`` association website,
-  * ``{FACEBOOK}`` Facebook URL set in preferences,
-  * ``{TWITTER}`` twitter URL set in preferences,
-  * ``{LINKEDIN}`` linkedin URL set in preferences,
-  * ``{VIADEO}`` viadeo URL set in preferences.
+* **Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application.
 
 When using GMail as SMTP, you will have to configure user name and password to use.
 

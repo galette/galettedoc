@@ -19,7 +19,7 @@ We can see several rights level in Galette, allowing access to different parts a
 
 Staff members, administrators as well as the super administrator can create, edit and remove members, contributions, transactions, send emailings, ...
 
-Administrators have also access to the application configuration, excepted super admin informations.
+Administrators have also access to the application configuration, excepted super admin information.
 
 The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required informations. He of course can change its own login informations from application preferences.
 

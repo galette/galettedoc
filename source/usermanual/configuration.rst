@@ -61,7 +61,8 @@ There are several types of dynamic fields:
 While creating a new field (or editing an existing one); you also can:
 
 * mark it as required,
-* define access rights, the same as for core fields.
+* define access rights, the same as for core fields,
+* add extra information to help users.
 
 .. image:: ../_styles/static/images/usermanual/champs_dynamiques_rendu.png
    :scale: 50%
