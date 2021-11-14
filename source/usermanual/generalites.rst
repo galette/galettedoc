@@ -27,9 +27,13 @@ Members can change their own informations, and can see their contributions and t
 
 Visitors can - if this is parameted in preferences - access to public pages (trombinoscope, public members list) but can also register :)
 
-.. todo::
+Group managers
+^^^^^^^^^^^^^^
 
-   Groups managers rights must be detailled with their current values... It is difficult to know who can do what.
+With the stricter configuration, groups managers can show and search on members of their groups, and see accessible data for members.
+On members and cards, you can :ref:`configure which fields are accessible <fields_acls>`.
+
+From the preferences, you can also :ref:`give groups managers extra rights <pref_rights>`, like editing or creating members.
 
 Management rules
 ================

@@ -22,6 +22,8 @@ You can choose which fields will appears on Galette members list and the order t
    :align: center
    :alt: List fields management
 
+.. _fields_acls:
+
 Mandatory fields and access rights
 ==================================
 
