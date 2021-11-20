@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2021-11-20 09:35+0100\n"
-"PO-Revision-Date: 2021-11-07 07:13+0000\n"
+"PO-Revision-Date: 2021-11-20 08:51+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
 "documentation-changelog/fr/>\n"
@@ -16,100 +16,73 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: ../changelog.rst:7 52f4192485954e2cbbea4ce7c2a93b29
 msgid "Changelog"
 msgstr "Journal des changements"
 
 #: ../changelogs/galette_09.rst:7 d87c1ace78064d59b230e1dcb358fe13
-#, fuzzy
-#| msgid "0.9.4.2 => 0.9.5"
 msgid "0.9.5.2 => 0.9.6"
-msgstr "0.9.4.2 => 0.9.5"
+msgstr "0.9.5.2 => 0.9.6"
 
 #: ../changelogs/galette_09.rst:9 f5b4a45e98274de29e0bb3913a283610
-#, fuzzy
-#| msgid ""
-#| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
-#| "issues/1508>`_)"
 msgid ""
 "Social networks/contact externalization (`#1585 <https://bugs.galette.eu/"
 "issues/1585>`_)"
 msgstr ""
-"Correction de la couleur des cartes à l'installation (`#1508 <https://bugs."
-"galette.eu/issues/1508>`_)"
+"Externalisation des réseaux sociaux/contacts (`#1585 <https://bugs.galette."
+"eu/issues/1585>`_)"
 
 #: ../changelogs/galette_09.rst:10 5a53a76b122943c5ae3e99218da21476
-#, fuzzy
-#| msgid ""
-#| "Add version number to sessions (`#315 <https://bugs.galette.eu/"
-#| "issues/315>`_)"
 msgid "Add member number (`#190 <https://bugs.galette.eu/issues/190>`_)"
 msgstr ""
-"Ajout du numéro de version aux sessions (`#315 <https://bugs.galette.eu/"
-"issues/315>`_)"
+"Ajout du numéro d'adhérent (`#190 <https://bugs.galette.eu/issues/190>`_)"
 
 #: ../changelogs/galette_09.rst:11 2cd14d08990e4e329001f07cd253d2cb
-#, fuzzy
-#| msgid ""
-#| "Mass add contributions (`#1381 <https://bugs.galette.eu/issues/1381>`_)"
 msgid ""
 "Export contributions as CSV (`#1581 <https://bugs.galette.eu/issues/1581>`_)"
 msgstr ""
-"Ajout en masse de contributions (`#1381 <https://bugs.galette.eu/"
-"issues/1381>`_)"
+"Export des contributions en CSV (`#1581 <https://bugs.galette.eu/issues/"
+"1581>`_)"
 
 #: ../changelogs/galette_09.rst:12 763e4f30c4564b55ad64d3c5a2c431e7
-#, fuzzy
-#| msgid ""
-#| "Document PDF models variables (`#1066 <https://bugs.galette.eu/"
-#| "issues/1066>`_)"
 msgid ""
 "Drop group name uniqueness at same level (`#366 <https://bugs.galette.eu/"
 "issues/366>`_)"
 msgstr ""
-"Documentation des variables dans les modèles PDF (`#1066 <https://bugs."
-"galette.eu/issues/1066>`_)"
+"Suppression de l'unicité des noms de groupes à un même niveau (`#366 "
+"<https://bugs.galette.eu/issues/366>`_)"
 
 #: ../changelogs/galette_09.rst:13 be8deafc23f543b9a8135f3ed0014ca5
-#, fuzzy
-#| msgid ""
-#| "Fix rights on dynamic fields (`#1201 <https://bugs.galette.eu/"
-#| "issues/1201>`_)"
 msgid ""
 "Add information to display for dynamic fields (`#1190 <https://bugs.galette."
 "eu/issues/1190>`_)"
 msgstr ""
-"Correction des droits sur les champs dynamiques (`#1201 <https://bugs."
-"galette.eu/issues/1201>`_)"
+"Ajout d'informations à afficher pour les champs dynamiques (`#1190 "
+"<https://bugs.galette.eu/issues/1190>`_)"
 
 #: ../changelogs/galette_09.rst:14 3c9b27ea966149b8a08eb52f7ec63c52
-#, fuzzy
-#| msgid ""
-#| "Add a preference to always send contributions emails (`#1481 <https://"
-#| "bugs.galette.eu/issues/1481>`_)"
 msgid ""
 "Add preferences for groups manager to edit, create members, edit groups, "
 "send mailing and perform exports (`#499 <https://bugs.galette.eu/"
 "issues/499>`_)"
 msgstr ""
-"Ajout d'une préférence pour toujours envoyer les courriels de contributions "
-"(`#1481 <https://bugs.galette.eu/issues/1481>`_)"
+"Ajout de préférences pour que les responsables de groupe puisse modifier et "
+"ajouter des adhérents, modifier leurs groupes, effectuer des envoi et des "
+"exports (`#499 <https://bugs.galette.eu/issues/499>`_)"
 
 #: ../changelogs/galette_09.rst:15 eeee79510aed41ac98a2dbd06877dfa6
-#, fuzzy
-#| msgid "Fix update issues"
 msgid "Fix various XSS issues"
-msgstr "Correction d'un problème de mise à jour"
+msgstr "Correction de plusieurs failles XSS"
 
 #: ../changelogs/galette_09.rst:16 b73bc519a02c4fca8137147c81dae1ad
 msgid "Fix possible SQL injection"
-msgstr ""
+msgstr "Correction d'une potentielle injection SQL"
 
 #: ../changelogs/galette_09.rst:17 6b86a770359b4aea824c04d6aaf373e9
 msgid "Add CSRF protection"
-msgstr ""
+msgstr "Ajout de la protection CSRF"
 
 #: ../changelogs/galette_09.rst:18 f00af03eecfb4cd4b8b81b61ddd71a03
 #, fuzzy
