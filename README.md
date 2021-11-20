@@ -1,7 +1,7 @@
 # Galette
 ## Gestionnaire d'Adhérents en Ligne Extrêmement Tarabiscoté mais Tellement Efficace
 
-[![Documentation Status](https://readthedocs.org/projects/galette/badge/)](https://doc.galette.eu/)
+[![Documentation Status](https://readthedocs.org/projects/galette/badge/?version=develop)](https://doc.galette.eu/)
 
 ### English
 
