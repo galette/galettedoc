@@ -92,6 +92,25 @@ Galette related parameters:
 
 * **Show identifiers**: display database identifiers instead of simple counts on lists.
 
+.. _pref_rights:
+
+Rights
+======
+
+Define few extra rights:
+
+* **Can members create child?** if you enable this settings, any logged in member can create another members that will be attached to him as children.
+* **Can group managers edit their groups?** groups manager can edit their owned groups information (name, parent, order).
+* **Can group managers create members?** groups managers can create members attached to their groups.
+* **Can group managers edit members?** groups managers can edit member of their groups information.
+* **Can group managers send mailings?** groups manager can send mailings.
+* **Can group managers do exports?** groups managers cen export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
+
+.. image:: ../_styles/static/images/usermanual/prefs_rights.png
+   :scale: 50%
+   :align: center
+   :alt: Galette settings, rights tab
+
 E-Mail
 ======
 
@@ -118,14 +137,7 @@ Sending email parameters:
   * **Using sendmail server**: uses local server sendmail,
   * **Using qmail server**: uses local server qmail,
 
-* **Mail signature**: signature added to all sent emails. Available variables are:
-
-  * ``{NAME]`` association name,
-  * ``{WEBSITE}`` association website,
-  * ``{FACEBOOK}`` Facebook URL set in preferences,
-  * ``{TWITTER}`` twitter URL set in preferences,
-  * ``{LINKEDIN}`` linkedin URL set in preferences,
-  * ``{VIADEO}`` viadeo URL set in preferences.
+* **Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application.
 
 When using GMail as SMTP, you will have to configure user name and password to use.
 

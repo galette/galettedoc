@@ -40,6 +40,7 @@ Third party plugins
 
 Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
 
+* `oAuth2 <https://github.com/galette-community/plugin-oauth2>`_ (Galette act as an oAuth2 provider), developped by Manuel,
 * `Stripe <https://github.com/galette-community/plugin-stripe>`_ (handle `Stripe payments <https://stripe.com/>`_), developped by Mathieu,
 * `Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (base management of a flying club), developed by Mélissa (**no longer maintained**),
 * `QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes generation), developed by Frédéric (**no longer maintained**),
