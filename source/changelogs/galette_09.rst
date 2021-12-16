@@ -1,5 +1,16 @@
 :orphan:
 
+.. _v0961:
+
+****************
+0.9.6 => 0.9.6.1
+****************
+
+* Fix language detection priority not respected (`#1603 <https://bugs.galette.eu/issues/1603>`_)
+* No composer platform check (`#1600 <https://bugs.galette.eu/issues/1600>`_)
+* Fix html2text for php 8 (`#1601 <https://bugs.galette.eu/issues/1601>`_)
+* Fix social networks replacements (`#1606 <https://bugs.galette.eu/issues/1606>`_)
+
 .. _v0960:
 
 ****************
