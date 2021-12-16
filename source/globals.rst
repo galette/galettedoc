@@ -7,4 +7,4 @@
 .. |phpfile| image:: /_styles/static/images/php_file.png
                :alt:
 
-.. |stable_version| replace:: 0.9.6
+.. |stable_version| replace:: 0.9.6.1
