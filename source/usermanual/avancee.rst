@@ -81,10 +81,7 @@ External stats
 
 Many statistics plaftforms relies on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
 
-
-.. warning::
-
-   Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
+Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
 Cards size and count
 ====================
@@ -105,55 +102,58 @@ Galette preferences allows to specify spacing for cards, but not their with, nor
 CSV exports
 ===========
 
-Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.xml`` file. Its configuration is done with several parts:
 
-* the SQL query to use,
-* the columns to export,
-* the CSV separator,
-* the strings separator character.
+.. versionchanged:: 1.0.0
 
-.. warning::
+   You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file instead of an XML one.
 
-   Configuration of CSV exports is done in a XML file, that **must** be vaild!
+Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.yaml`` file.
 
-   If it is not, no export will be proposed from the user interface. Under linux, you can use tools like ``xmlwf`` or ``xmllint`` to ensure your file is valid.
+.. note::
 
-Let's examine contributions parameted export:
+   Legacy XML configuration file is still supported; if a duplicate identifier is found, JSON file takes precedence.
 
-.. code-block:: xml
+Let's examine existing "cotisations" parameted export:
 
-   <export id="cotisations" name="Cotisations" description="Export de l'état des cotisations pour l'ensemble des adhérents" filename="galette_cotisations.csv">
-       <!-- The Query to execute - mandatory -->
-       <query>SELECT nom_adh, prenom_adh, ville_adh, montant_cotis, date_debut_cotis, date_fin_cotis FROM galette_cotisations INNER JOIN galette_adherents ON (galette_cotisations.id_adh=galette_adherents.id_adh)</query>
-       <!-- CSV Headers - optionnal.
-            If not set, fields name will be exported.
-            If set to none (eg. <headers><none/></headers>, no headers will be outpoutted.
-            You can alternatively use named columns in you query instead of header tags.
-               -->
-       <headers>
-           <!--<none/>-->
-           <header>Name</header>
-           <header>Surname</header>
-           <header>Town</header>
-           <header>Amount</header>
-           <header>Begin date</header>
-           <header>End date</header>
-       </headers>
-       <!-- CSV separator to use - optionnal.
-            If this tag is not present, it will defaults to ',' (see Csv::DEFAULT_SEPARATOR from classes/csv.class.php)
-            Accepted values are also defined in Csv class.
-       -->
-       <separator>;</separator>
-       <!-- How to quote values - optionnal.
-            If this tag is not present, it will defaults to '"' (see Csv::DEFAULT_QUOTE from classes/csv.class.php)
-            Accepted values are also defined in Csv class.
-       -->
-       <quote><![CDATA["]]></quote>
-   </export>
+.. code-block:: yaml
 
-Each parameted export is defined inside a tag named ``export``, which contains a unique identifier (``id``), a description displayed in the user interface (``name``) and output filename (``filename``). The ``query`` tag contains the SQL query to execute, there is no other limitation than the SQL engine ones.
+    - cotisations:
+        name: Cotisations
+        description: Export de l'état des cotisations pour l'ensemble des adhérents" filename="galette_cotisations.csv
+        filename: galette_cotisations.csv
+        query: |-
+           SELECT nom_adh, prenom_adh, ville_adh, montant_cotis, date_debut_cotis, date_fin_cotis
+           FROM galette_cotisations
+           INNER JOIN galette_adherents
+              ON (galette_cotisations.id_adh=galette_adherents.id_adh)
+        headers:
+          - Name
+          - Surname
+          - Town
+          - Amount
+          - Begin date
+          - End date
+        separator: ;
+        quote: "
 
-The ``headers`` part defines columns that will be exported, the ``separator`` tag the CSV separator and the ``quote`` tag the strings separator.
+* each array entry is a unique identifier, lowercase without spaces or special character
+* `name` and `description` are mandatory as used to display each parameted export in the user interface
+* `filename` sets the filename for output file
+* `query` is the query to execute, it's mandatory. There is no other limitation than the SQL engine ones, expect you cannot send them any parameters
+* `headers` manages columns titles:
+
+  * like in the above example, an array of columns titles of your own
+  * if not present, Galette fields names will be exported. You can use named columns in your SQL query (``SELECT nom_adh AS "Column title" FROM ...``)
+  * set to false (``headers: false``) to disable column headers output
+
+* `separator` is the CSV separator that will be used. Possible values are:
+
+  * semicolon (``;``) - default
+  * comma (``,``)
+  * tabulation character (``\t``)
+
+* `quote` either double quote - default - or simple quote character
+* to disable an export, you can add ``inactive: true``
 
 .. _admintools:
 
