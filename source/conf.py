@@ -44,16 +44,16 @@ master_doc = 'index'
 # General information about the project.
 project = 'Galette'
 author = 'Johan Cwiklinski'
-copyright = '2011-2021, Johan Cwiklinski'
+copyright = '2011-2022, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.9.6.1'
+version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = '0.9.6.1'
+release = '1.0.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -70,7 +70,7 @@ today_fmt = '%d/%m/%Y'
 # if put on the exclude_patters list, such labels are not visible. The commented out files in the 
 # exclude_patters list below, are such files. They generate a warning, but contain reference labels.
 exclude_patterns = [
-    'changelogs/galette_09.rst',
+    'changelogs/galette_10.rst',
     'installation/ftp.rst',
     'installation/unix.rst',
     'installation/windows.rst'
