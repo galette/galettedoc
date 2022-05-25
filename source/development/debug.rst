@@ -58,7 +58,6 @@ Behavior configuration
 It is possible to change some of Galette behaviors:
 
 * `GALETTE_MODE`: :ref:`see Galette modes <galettemodes>` ;
-* `GALETTE_DISPLAY_ERRORS`: `true` to display error details in page. Really discouraged for production environments! You will not see errors if there is a routing redirect... And there are plenty of them.
 * `GALETTE_LOG_LVL`: log level;
 * `NON_UTF_DBCONNECT` : disable explicitely UTf-8 connection to the database (for users who see encoding issues);
 * you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...).
@@ -71,5 +70,4 @@ For example:
 
    <?php
    define('GALETTE_MODE', 'DEV');
-   define('GALETTE_DISPLAY_ERRORS', true);
    define('GALETTE_LOG_LVL', 7);

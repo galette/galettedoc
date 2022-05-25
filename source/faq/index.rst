@@ -26,28 +26,6 @@ Server logs are another subject. On shared webservers, they are often not access
 * with (the deprecated) ``mod_php``, you'll find them in ``/var/log/httpd/error_log`` (on other GNU/Linux distributions, `httpd` may be named `apache`),
 * on Windows/MacOS with XAMPP like solutions, there is at least one log directory in installation; you may find what you look for there.
 
-Displaying errors
------------------
-
-If you cannot access system logs files (frequent on shared hostings), you can display errors directly on the page.
-
-.. warning::
-
-   Displaying errors on a web page may provide information that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool.
-
-   Please also note that with routing integration, some of those displayed information may be "hidden" from a buggy redirection... Logs are safer on that point.
-
-To temporary display errors on page, create a ``galette/config/behavior.inc.php`` file with the following contents:
-
-.. code-block:: php
-
-   <?php
-   define('GALETTE_DISPLAY_ERRORS', 1);
-
-The next time you reproduce the issue, errors will be displayed on the page.
-
-Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grab additional information.
-
 *****************************************
 How to report a bug or ask for a feature?
 *****************************************
