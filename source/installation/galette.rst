@@ -4,7 +4,7 @@ Installation
 
 Galette installation is a web based process (once :doc:`preparation steps <preparation>` are done). Go to http://localhost/galette. :doc:`Update process <update>` is documented separately.
 
-You should rely on latest stable release, but it is also possible (if your know what you are doing, this is more complex for non developers!) grab it from :doc:`source code <../development/git>`
+You should rely on latest stable release, but it is also possible (if your know what you are doing, this is more complex for non developers!) grab it from :doc:`source code <../source_code>`
 
 Checks
 ======

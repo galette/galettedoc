@@ -31,7 +31,7 @@ If you are using Linux, run the following commands (adapt the version if needed)
    $ wget https://download.tuxfamily.org/galette/galette-0.9.6.1.tar.bz2
    $ tar xjvf galette-0.9.6.1.tar.bz2
 
-The current stable version of Galette is |stable_version|. A `nightly archive <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../development/git>` as explained in the developer guide.
+The current stable version of Galette is |stable_version|. A `nightly archive <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../source_code>` as explained in the developer guide.
 
 Alternatively, Hiob has created a community repository to provide `Galette as a Docker image <https://github.com/galette-community/docker>`_.
 

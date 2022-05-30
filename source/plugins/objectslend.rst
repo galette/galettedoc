@@ -71,7 +71,3 @@ It is possible to activate the fullsize photo display.
 
    Photos sent with previous plugin version were always resized, only the thumbnail was stored. If you want to get fullsize display, you will have to send photos again.
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

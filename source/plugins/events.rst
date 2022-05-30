@@ -114,8 +114,3 @@ Activities list is retrieved from the event; mandatory ones must of course be ch
    :align: center
 
 You can filter bookings list per event, payment type or payment status. You can then send a mailing to booked members, using the standard Galette mailing mechanism.
-
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

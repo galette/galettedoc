@@ -29,7 +29,7 @@ Generalities
 
 In addition of header, footer and CSS styles, a model defines a title, a sub title and a body.
 
-Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationnalized texts like `_T("My text")` that relies on :ref:`Galette standard translation capacities <i18nsyntax>`.
+Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationnalized texts like `_T("My text")` that relies on Galette standard translation capacities.
 
 Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent brower; there are many limitations.
 

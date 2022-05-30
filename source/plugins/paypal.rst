@@ -62,7 +62,3 @@ Preferences screen also permit to edit amount related to contributions types, an
 
 After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membershop extension, its membership wil be recalculated when the payment will be confirmed.
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

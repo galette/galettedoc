@@ -55,8 +55,3 @@ When adding a new vehicle in database, there are several fields that are require
         'name'  => 1,
         'model' => 1
    );
-
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

@@ -26,7 +26,3 @@ For example, under linux (replacing `{url}` and `{version}` with correct values)
    $ wget {url}
    $ tar xjvf galette-plugin-fullcard-{version}.tar.bz2
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

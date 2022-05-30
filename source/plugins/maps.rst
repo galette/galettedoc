@@ -71,7 +71,3 @@ Then, member location is displayed on map, and can be removed:
    :scale: 70%
    :align: center
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.
