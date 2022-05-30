@@ -38,11 +38,6 @@ Galette's documentation
 
    changelog.rst
 
-.. toctree::
-   :hidden:
-
-   development/plugins-0.8-0.9.rst
-
 *************
 About Galette
 *************

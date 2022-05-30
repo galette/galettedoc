@@ -22,8 +22,8 @@ It is available in english only.
    git.rst
    contributor.rst
    codage.rst
-   plugins.rst
    i18n.rst
    controllers.rst
    debug.rst
+   events.rst
    documentation.rst
