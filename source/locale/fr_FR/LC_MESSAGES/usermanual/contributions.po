@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
+"POT-Creation-Date: 2022-07-10 23:06+0200\n"
 "PO-Revision-Date: 2021-01-23 06:58+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -136,6 +136,10 @@ msgstr ""
 "Le bouton rappel du tableau de bord ou l'entrée rappels du menu "
 "configuration vous donnent accès à l'interface de gestion des rappels."
 
+#: ../usermanual/contributions.rst:None 377a38171375457fb466200072e77825
+msgid "Reminders management interface"
+msgstr ""
+
 #: ../usermanual/contributions.rst:44 c792675a21e94502a57df0d11b86bf8d
 msgid "Two categories can be selected:"
 msgstr "Deux catégories peuvent être sélectionnées :"
@@ -236,6 +240,12 @@ msgstr "la date (date courante par défaut),"
 msgid "the amount."
 msgstr "le montant."
 
+#: ../usermanual/contributions.rst:None 689cf0f5127d40c2bd34dc9cebbd2759
+#, fuzzy
+#| msgid "Transactions"
+msgid "Transactions list"
+msgstr "Transactions"
+
 #: ../usermanual/contributions.rst:83 88eee3021b8d42669046da8e2bd2da7d
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
@@ -244,6 +254,12 @@ msgstr ""
 "Chaque transaction est ventilée entre différentes contributions, dans la "
 "limite du montant de la transaction. Une transaction n'a en elle même aucun "
 "effet sur les dates d'échéances des adhérents."
+
+#: ../usermanual/contributions.rst:None 98f234f4bc434f51b8fc11b48a090aef
+#, fuzzy
+#| msgid "Transactions"
+msgid "Add a transaction"
+msgstr "Transactions"
 
 #: ../usermanual/contributions.rst:90 22d76e97ce854360a9feef7b0fad15dc
 msgid ""
@@ -259,13 +275,33 @@ msgstr ""
 "autre. Par défaut, le montant d'une nouvelle contribution depuis une "
 "transaction sera le montant non encore ventilé de la transaction."
 
+#: ../usermanual/contributions.rst:None cfda7691d1464e009ae926d41bb0f3ba
+msgid "Add a contribution linked to a partially dispatched transaction"
+msgstr ""
+
 #: ../usermanual/contributions.rst:97 594f726da80443dda2a7b32897d88a98
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr "Bien sûr, il est également possible de modifier une transaction :"
 
+#: ../usermanual/contributions.rst:None e6eee0c98f9d44c0a2323b707e5a69c1
+#, fuzzy
+#| msgid "Transactions"
+msgid "Transaction edition"
+msgstr "Transactions"
+
 #: ../usermanual/contributions.rst:104 610abfb3c2fc4af18c8a4b5689561e49
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
+msgstr ""
+"Vous pouvez aussi attacher des contributions existantes au lieu d'en créer "
+"de nouvelles."
+
+#: ../usermanual/contributions.rst:None 1d3901bcfdce464d86cb0519b827efaa
+#, fuzzy
+#| msgid ""
+#| "You can also attach an existing contribution instead of creating a new "
+#| "one."
+msgid "Add an already existing contribution to a transaction"
 msgstr ""
 "Vous pouvez aussi attacher des contributions existantes au lieu d'en créer "
 "de nouvelles."
