@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2011-2021, Johan Cwiklinski
+# Copyright (C) 2011-2022, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Galette 0.9.5.2\n"
+"Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
+"POT-Creation-Date: 2022-07-10 23:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,6 +86,11 @@ msgstr ""
 msgid "First of all, download the plugin:"
 msgstr ""
 
+#: ../plugins/auto.rst:None
+#: 1ec66e972949484bbba10d56d8c01d4c
+msgid "Get latest Auto plugin!"
+msgstr ""
+
 #: ../plugins/auto.rst:28
 #: 037b5fefb9224607ac170b0c3b5bcfa6
 msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -119,14 +124,4 @@ msgstr ""
 #: ../plugins/auto.rst:49
 #: 634ff5198891409ea744b953ce630a94
 msgid "When adding a new vehicle in database, there are several fields that are required, but that may not fit your needs. In such case, you can define your own required fields: just create a ``local_auto_required.inc.php`` file in your Galette ``config`` directory and declare an array of the fields you want to require. As example, if you just want to require name and model for a car, you will need:"
-msgstr ""
-
-#: ../plugins/auto.rst:60
-#: b3cd519c29f049618e2c3577b345c9e4
-msgid "How to get the sources?"
-msgstr ""
-
-#: ../plugins/auto.rst:62
-#: 5a72c01e08c14f7a945659508c9721dc
-msgid "Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`."
 msgstr ""
