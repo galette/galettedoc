@@ -1,21 +1,21 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-10 23:06+0200\n"
-"PO-Revision-Date: 2020-06-20 06:08+0000\n"
+"PO-Revision-Date: 2022-07-11 06:34+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
-"usermanual-avancee/fr/>\n"
+"doc-user-advanced/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
 msgid "Experimented users"
@@ -152,12 +152,6 @@ msgid "Change session lifetime"
 msgstr "Changer la durée de session"
 
 #: ../usermanual/avancee.rst:50 be24dd1f3fa94b5dacee5b25f1adecf7
-#, fuzzy
-#| msgid ""
-#| "Per default, Galette will create session with default lifetime duration "
-#| "(and it seems browsers acts differently in this case). You can anyways "
-#| "define a constant named ``GALETTE_TIMEOUT`` to :ref:`change session "
-#| "lifetime using behavior configuration <behavior>`:"
 msgid ""
 "Per default, Galette will create session with default lifetime duration (and "
 "it seems browsers acts differently in this case). You can anyways define a "
@@ -166,9 +160,9 @@ msgid ""
 msgstr ""
 "Par défaut, Galette va créer une session avec la valeur par défaut pour sa "
 "durée (et il semble que les navigateurs agissent différemment dans ce cas). "
-"Vous pouvez toutefois définir une constante nommée ``GALETTE_TIMEOUT`` pour :"
-"ref:`changer la durée de la session en utilisant la configuration du "
-"comportement <behavior>` :"
+"Vous pouvez toutefois définir une constante nommée ``GALETTE_TIMEOUT`` pour "
+"changer la durée de la session en utilisant la configuration du comportement "
+":"
 
 #: ../usermanual/avancee.rst:60 009f4a8642bc41fd8de77df9776d4481
 msgid "Log IP addresses behind a proxy"
@@ -184,17 +178,12 @@ msgstr ""
 "l'utilisateur :("
 
 #: ../usermanual/avancee.rst:64 58bf33403a6545b389d880de8c5aa65d
-#, fuzzy
-#| msgid ""
-#| "To fix that, :ref:`use behavior configuration <behavior>` to create a "
-#| "constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
 msgid ""
 "To fix that, use behavior configuration to create a constant named "
 "``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
 msgstr ""
-"Pour corriger cela, :ref:`utilisez la configuration du comportement "
-"<behavior>` pour créer une constante nommée "
-"``GALETTE_X_FORWARDED_FOR_INDEX`` comme suit :"
+"Pour corriger cela, utilisez la configuration du comportement pour créer une "
+"constante nommée ``GALETTE_X_FORWARDED_FOR_INDEX`` comme suit :"
 
 #: ../usermanual/avancee.rst:71 812bdb7b79fc42f28edbefc5cf583291
 msgid ""
@@ -238,21 +227,15 @@ msgid "Cards size and count"
 msgstr "Taille et nombre de cartes"
 
 #: ../usermanual/avancee.rst:91 06aa60922ed74ebbb03bfc80d54aeb8c
-#, fuzzy
-#| msgid ""
-#| "Galette preferences allows to specify spacing for cards, but not their "
-#| "with, nor the number of lines and columns. You can :ref:`use behavior "
-#| "configuration to configure cards<behavior>`, following constants are "
-#| "provided:"
 msgid ""
 "Galette preferences allows to specify spacing for cards, but not their with, "
 "nor the number of lines and columns. You can use behavior configuration to "
 "configure cards`, following constants are provided:"
 msgstr ""
 "Les préférences de Galette permettent de spécifier l'espacement des cartes, "
-"mais pas le nombre de lignes ou de colonne. Vous pouvez :ref:`utiliser la "
-"configuration du comportement pour les paramètres des cartes <behavior>`, le "
-"constantes suivantes sont fournies :"
+"mais pas le nombre de lignes ou de colonne. Vous pouvez utiliser la "
+"configuration du comportement pour les paramètres des cartes, le constantes "
+"suivantes sont fournies :"
 
 #: ../usermanual/avancee.rst:95 9cd03a0c1f424941a40b57b5b76f7e8e
 msgid ""
@@ -287,48 +270,49 @@ msgid ""
 "You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file "
 "instead of an XML one."
 msgstr ""
+"Vous pouvez configurer des exports paramétrés avec un fichier `YAML "
+"<https://yaml.org/>`_ au lieu d'un fichier XML."
 
 #: ../usermanual/avancee.rst:110 2820fa30b5634d628a933ee340294131
-#, fuzzy
-#| msgid ""
-#| "Galette provides a parameted CSV exports system. Only one parameted "
-#| "export is provided, but you can add your own to the ``config/exports."
-#| "xml`` file. Its configuration is done with several parts:"
 msgid ""
 "Galette provides a parameted CSV exports system. Only one parameted export "
 "is provided, but you can add your own to the ``config/exports.yaml`` file."
 msgstr ""
 "Galette fournit un système d'exports CSV paramétrés. Un seul export "
-"paramétré est fourni, mais vous pouvez ajouter les vôtres dans le fichier "
-"``config/exports.xml``. La configuration se fait en plusieurs parties :"
+"paramétré est fourni, mais vous pouvez ajouter les vôtres dans le fichier ``"
+"config/exports.yaml``."
 
 #: ../usermanual/avancee.rst:114 638f77d6c9424d2dadc5dc2122b90398
 msgid ""
 "Legacy XML configuration file is still supported; if a duplicate identifier "
 "is found, JSON file takes precedence."
 msgstr ""
+"L'ancien fichier de configuration XML est toujours supporté ; si un doublon "
+"est trouvé, le fichier YAML prend le pas."
 
 #: ../usermanual/avancee.rst:116 4986fbad39154b4aab68c8c771a72453
-#, fuzzy
-#| msgid "Let's examine contributions parameted export:"
 msgid "Let's examine existing \"cotisations\" parameted export:"
-msgstr "Examinons l'export paramétré ces contributions :"
+msgstr "Examinons l'export paramétré \"cotisations\" :"
 
 #: ../usermanual/avancee.rst:139 76e592ed04ec4c1095ec565b9d31f587
 msgid ""
 "each array entry is a unique identifier, lowercase without spaces or special "
 "character"
 msgstr ""
+"chaque entrée de tableau est un identifiant unique, en minuscules sans "
+"espaces or caractère spécial"
 
 #: ../usermanual/avancee.rst:140 2d6b845ad14c4aceaa3e365456bb4566
 msgid ""
 "`name` and `description` are mandatory as used to display each parameted "
 "export in the user interface"
 msgstr ""
+"`name` et `description` sont requis puisque utilisés pour afficher chaque "
+"export paramétré dans l'interface utilisateur"
 
 #: ../usermanual/avancee.rst:141 c655c88551534b388034f10660c4f032
 msgid "`filename` sets the filename for output file"
-msgstr ""
+msgstr "`filename` détermine le nom de fichier de sortie"
 
 #: ../usermanual/avancee.rst:142 2b65d20e45d84285b1e8c6a6b0d1d39d
 msgid ""
@@ -336,49 +320,60 @@ msgid ""
 "limitation than the SQL engine ones, expect you cannot send them any "
 "parameters"
 msgstr ""
+"`query` est la requête à exécuter, c'est requis. Il n'y a pas d'autre limite "
+"que celles du moteur de base de données, à la différence que vous ne pouvez "
+"envoyer aucun paramètre"
 
 #: ../usermanual/avancee.rst:143 db6af6d37fd846d68983f7ce94f08e78
 msgid "`headers` manages columns titles:"
-msgstr ""
+msgstr "`headers` gère les titres des colonnes :"
 
 #: ../usermanual/avancee.rst:145 1b1da00e44084f5d851b162335747a37
 msgid "like in the above example, an array of columns titles of your own"
 msgstr ""
+"comme dans l'exemple ci-dessous, un tableau des titres que vous aurez défini"
 
 #: ../usermanual/avancee.rst:146 f4148065b88f4d8795b29bed86281c06
 msgid ""
 "if not present, Galette fields names will be exported. You can use named "
 "columns in your SQL query (``SELECT nom_adh AS \"Column title\" FROM ...``)"
 msgstr ""
+"si ce n'est pas présent, les noms des champs de Galette seront exportés. "
+"Vous pouvez utiliser des colonnes nommées dans votre requête SQL (``SELECT "
+"nom_adh AS \"Column title\" FROM ...``)"
 
 #: ../usermanual/avancee.rst:147 55d1a44d2ab04494896b755aac0fce46
 msgid "set to false (``headers: false``) to disable column headers output"
 msgstr ""
+"mettre à faux (``headers: false``) pour désactiver la sortie des en-têtes de "
+"colonnes"
 
 #: ../usermanual/avancee.rst:149 c084f79e4dbe4d39b2e0f3995d53a966
 msgid ""
 "`separator` is the CSV separator that will be used. Possible values are:"
 msgstr ""
+"`separator` est le séparateur CSV qui sera utilisé. Les valeurs possibles "
+"sont :"
 
 #: ../usermanual/avancee.rst:151 c6c260f76c434d5ca47377d23214939c
 msgid "semicolon (``;``) - default"
-msgstr ""
+msgstr "point-virgule (``;``) - défaut"
 
 #: ../usermanual/avancee.rst:152 d05d902a5c47491f8b83074efbf64a35
 msgid "comma (``,``)"
-msgstr ""
+msgstr "virgule (``,``)"
 
 #: ../usermanual/avancee.rst:153 e5f2b9d1fa62489387935e409eb24695
 msgid "tabulation character (``\\t``)"
-msgstr ""
+msgstr "caractère de tabulation (``\\t``)"
 
 #: ../usermanual/avancee.rst:155 e571bc8e9a774e1b9b2cd14d40d7b603
 msgid "`quote` either double quote - default - or simple quote character"
-msgstr ""
+msgstr "`quote` soit un guillemet double - défaut - soit un guillemet simple"
 
 #: ../usermanual/avancee.rst:156 88168b2860a84585b0892da957c03d16
 msgid "to disable an export, you can add ``inactive: true``"
-msgstr ""
+msgstr "pour désactiver un export, vous pouvez ajouter ``inactive: true``"
 
 #: ../usermanual/avancee.rst:161 dc42621488b548eeb7e07095bd7b6751
 msgid "Administration tools"
