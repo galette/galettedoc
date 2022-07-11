@@ -111,7 +111,7 @@ Galette provides a parameted CSV exports system. Only one parameted export is pr
 
 .. note::
 
-   Legacy XML configuration file is still supported; if a duplicate identifier is found, JSON file takes precedence.
+   Legacy XML configuration file is still supported; if a duplicate identifier is found, YAML file takes precedence.
 
 Let's examine existing "cotisations" parameted export:
 
