@@ -5,13 +5,14 @@
 # Nicolás S. Gómez <nicogomfor@gmail.com>, 2021.
 # Berto Te <Bertote@3fpj.com>, 2021.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2022.
+# gallegonovato <fran-carro@hotmail.es>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2022-07-10 23:06+0200\n"
-"PO-Revision-Date: 2022-07-14 06:40+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2022-10-06 13:19+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
 "doc-faq-index/es/>\n"
 "Language: es\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 # 0c806a88c9844dd3afeb31e8055f1472
 #: ../faq/index.rst:5 0c806a88c9844dd3afeb31e8055f1472
@@ -76,13 +77,12 @@ msgstr ""
 
 # 452f27a738854beb92c9ce37ef756334
 #: ../faq/index.rst:20 452f27a738854beb92c9ce37ef756334
-#, fuzzy
 msgid ""
 "There are two types of log files: Galette ones, and system ones. Galette "
 "logs are stored in the ``galette/data/log`` per default."
 msgstr ""
-"Hay dos tipos de archivos de registro: Los de Galette y los del sistema. Los "
-"registros de Galette se almacenan en el ``galette/data/log`` por defecto."
+"Hay dos tipos de archivos de registro: los de Galette y los del sistema. Los "
+"registros de Galette se almacenan en ``galette/data/log`` por defecto."
 
 # fdd70386df6c4435a1f701c8041857ba
 #: ../faq/index.rst:23 fdd70386df6c4435a1f701c8041857ba
@@ -99,14 +99,12 @@ msgstr ""
 
 # bccbe92ea5ac4f22a8dccd41ea88bb1c
 #: ../faq/index.rst:25 bccbe92ea5ac4f22a8dccd41ea88bb1c
-#, fuzzy
 msgid ""
 "with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for "
 "GNU/Linux Red Hat like distributions),"
 msgstr ""
-"con ``php-fpm`` los archivos de registro están en ``var/log/php-fpm/www-"
-"error.log`` (para las distribuciones de GNU/Linux de Red Hat y sus "
-"derivados),"
+"con ``php-fpm`` los registros del servicio están en ``/var/log/php-fpm/www-"
+"error.log`` (para distribuciones similares a GNU/Linux Red Hat),"
 
 # 656576194d70489da3fab5693141387b
 #: ../faq/index.rst:26 656576194d70489da3fab5693141387b
@@ -115,9 +113,8 @@ msgid ""
 "error_log`` (on other GNU/Linux distributions, `httpd` may be named "
 "`apache`),"
 msgstr ""
-"con (el obsoleta) ``mod_php``, los encontrarás en ``/var/log/httpd/"
-"error_log`` (en otras distribuciones de GNU/Linux, `httpd` podría llamarse "
-"`apache`),"
+"con (el obsoleto) ``mod_php``, los encontrará en ``/var/log/httpd/error_log``"
+" (en otras distribuciones de GNU/Linux, `httpd` puede llamarse `apache`),"
 
 # 370938c4c57a4c9bb8fd1a416e214bf4
 #: ../faq/index.rst:27 370938c4c57a4c9bb8fd1a416e214bf4
@@ -132,7 +129,7 @@ msgstr ""
 # 290e1a0c33274c20aaa72596801e1a1c
 #: ../faq/index.rst:31 290e1a0c33274c20aaa72596801e1a1c
 msgid "How to report a bug or ask for a feature?"
-msgstr ""
+msgstr "¿Cómo reportar un error o solicitar una función?"
 
 # 9cfe3fa245b44ea0a5aa5d3ec8f546db
 #: ../faq/index.rst:33 9cfe3fa245b44ea0a5aa5d3ec8f546db
@@ -141,6 +138,10 @@ msgid ""
 "`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
 "itself, all official plugins and also documentation."
 msgstr ""
+"Los informes de errores, así como la RFE (Solicitud de mejora) deben "
+"realizarse en el `Galette tracker <https://bugs.galette.eu/projects/galette>`"
+"_, para la propia Galette, todos los complementos oficiales y también la "
+"documentación."
 
 # bca646983cc6461d862f2341cd006621
 #: ../faq/index.rst:37 bca646983cc6461d862f2341cd006621
@@ -148,6 +149,8 @@ msgid ""
 "Unless you are sure you know, please de not attribute the ticket and do not "
 "set target version. It will be done when it will be took into account."
 msgstr ""
+"A menos que esté seguro de saberlo, no atribuya el ticket y no establezca la "
+"versión de destino. Se hará cuando se tenga en cuenta."
 
 # 622f52b8273d42a8888d19523a709aec
 #: ../faq/index.rst:39 622f52b8273d42a8888d19523a709aec
