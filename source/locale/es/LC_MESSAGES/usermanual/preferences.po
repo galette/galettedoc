@@ -8,21 +8,22 @@
 # Arnau Isern <arnauisern84@gmail.com>, 2022.
 # Cow <javier.fserrador@gmail.com>, 2022.
 # Javier <javier.fserrador@gmail.com>, 2022.
+# gallegonovato <fran-carro@hotmail.es>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-10 23:06+0200\n"
-"PO-Revision-Date: 2022-06-28 09:20+0000\n"
-"Last-Translator: Javier <javier.fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-user-"
-"preferences/es/>\n"
+"PO-Revision-Date: 2022-10-06 13:19+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
+"doc-user-preferences/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 # bb82d12690f041fe9ce17a4dafa77602
 #: ../usermanual/preferences.rst:5 bb82d12690f041fe9ce17a4dafa77602
@@ -46,7 +47,7 @@ msgstr "Esta etiqueta define algunos parámetros relacionados a su asociación:"
 
 #: ../usermanual/preferences.rst:None 3b24786cc38746c29b8f20829f9ade8e
 msgid "Galette settings, general tab"
-msgstr ""
+msgstr "Ajustes de galette, pestaña general"
 
 # 5180f33b82fd4ba58e56dc6e727273a0
 #: ../usermanual/preferences.rst:19 5180f33b82fd4ba58e56dc6e727273a0
@@ -147,10 +148,8 @@ msgstr "Parámetros relacionados de Galette:"
 
 # 2461e7a8e3c54b95a2f5b0558a05d7e4
 #: ../usermanual/preferences.rst:None 0dcfe04baa754a3e81feaf8bea859461
-#, fuzzy
-#| msgid "Galette related parameters:"
 msgid "Galette settings, parameters tab"
-msgstr "Parámetros relacionados de Galette:"
+msgstr "Configuraciones de Galette, pestaña de los parámetros"
 
 # f0d9e7736db244c7a57070d75b655d83
 #: ../usermanual/preferences.rst:46 f0d9e7736db244c7a57070d75b655d83
@@ -174,6 +173,8 @@ msgid ""
 "**After member creation**: defines action to execute after a member has been "
 "added:"
 msgstr ""
+"**Después de crear el miembro**: define la acción que se ejecutará después "
+"de agregar un nuevo miembro:"
 
 # b630837444ac4a73b4b8063228a30934
 #: ../usermanual/preferences.rst:50 b630837444ac4a73b4b8063228a30934
@@ -208,7 +209,7 @@ msgstr "ir a la página principal,"
 # 2743a64c32584ecc90c63bfcb595b2cf
 #: ../usermanual/preferences.rst:57 2743a64c32584ecc90c63bfcb595b2cf
 msgid "**Logging**: handles internal history:"
-msgstr ""
+msgstr "**Registro**: maneja el historial interno:"
 
 # 3a7bf623b16645dd85bd7a43bd5f87db
 #: ../usermanual/preferences.rst:59 3a7bf623b16645dd85bd7a43bd5f87db
@@ -226,6 +227,9 @@ msgid ""
 "**Default membership status**: the status to affect to all new created users "
 "(can be changed on creation form if current user have rights),"
 msgstr ""
+"**Estado de afiliación por defecto**: el estado que debe afectar a todos los "
+"nuevos usuarios creados (se puede cambiar en el formulario de creación si el "
+"usuario actual tiene derechos),"
 
 # b872c9c25df44e6caf8ca119aa93ce93
 #: ../usermanual/preferences.rst:63 b872c9c25df44e6caf8ca119aa93ce93
@@ -648,10 +652,10 @@ msgid ""
 "existing ones does not respect them. Galette will display a warning at login "
 "if checks are not respected, but login will still be possible!"
 msgstr ""
-"Si habilita comprobaciones de contraseñas, no es posible conocer si alguna "
-"de las existentes no las respetan. Galette representara un aviso en la "
-"entrada si las comprobaciones no son respetadas, pero el acceso aún será "
-"posible."
+"Si habilita la verificación de contraseñas, no es posible saber si alguna de "
+"las existentes no las respeta. Galette mostrará una advertencia al iniciar "
+"sesión si no se respetan los controles, ¡pero aún será posible iniciar "
+"sesión!"
 
 # 78e1ec1f228146f2be3cf46d52ee679f
 #: ../usermanual/preferences.rst:199 78e1ec1f228146f2be3cf46d52ee679f
@@ -662,8 +666,12 @@ msgid ""
 "restrictive may be an issue for your users; that's why this is up to you to "
 "secure as needed; just like using SSL or not :)"
 msgstr ""
-"Pero espere... ¡La seguridad de la contraseña es importante, pero Galette no "
-"refuerza nada!"
+"Pero espera... La seguridad de la contraseña es importante, ¡pero Galette no "
+"impone nada! ¿No es eso tonto? Bueno en realidad no. Para pruebas o "
+"instancias completamente privadas, la seguridad puede ser menos importante; "
+"y, en algunos casos, ser demasiado restrictivo puede ser un problema para "
+"sus usuarios; es por eso que depende de usted asegurarlo según sea necesario;"
+" como usar SSL o no :)"
 
 # c2ebfee2cf554c3db4d358329ac44fed
 #: ../usermanual/preferences.rst:202 c2ebfee2cf554c3db4d358329ac44fed
