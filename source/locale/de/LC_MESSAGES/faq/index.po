@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Manuel Zeschko <moebyus@pm.me>, 2021, 2023.
+# klausellus-wallace <muetze.polka0e@icloud.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2022-07-10 23:06+0200\n"
-"PO-Revision-Date: 2023-03-01 10:54+0000\n"
-"Last-Translator: Manuel Zeschko <moebyus@pm.me>\n"
+"PO-Revision-Date: 2023-03-02 11:40+0000\n"
+"Last-Translator: klausellus-wallace <muetze.polka0e@icloud.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/galette/"
 "doc-faq-index/de/>\n"
 "Language: de\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-rc\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 # 0c806a88c9844dd3afeb31e8055f1472
 #: ../faq/index.rst:5 0c806a88c9844dd3afeb31e8055f1472
@@ -35,9 +36,9 @@ msgid ""
 "Sometimes, after an update, a change on hosting, or a simple bug - even "
 "minor ones - may cause a fail in Galette. You may observe:"
 msgstr ""
-"Manchmal, nach einem Update ,eine Änderung des Hostings oder ein einfacher "
-"Fehler - auch kleinere - können zu einem Fehler in Galette führen. Sie "
-"können beobachten:"
+"Manchmal kann es nach einem Update, einer Änderung der Hostingkonfiguration "
+"oder einem einfachen Fehler - auch kleineren - zu einem Fehler in Galette "
+"kommen. Sie können dabei Folgendes beobachten:"
 
 # 9f043f2792a54caa89050cd06641e70d
 #: ../faq/index.rst:13 9f043f2792a54caa89050cd06641e70d
@@ -90,6 +91,10 @@ msgid ""
 "server configuration; it is related to the operating system used, PHP and/or "
 "web server configuration, ..."
 msgstr ""
+"Serverlogs sind ein Thema für sich. Auf gemeinsam genutzten Webservern sind "
+"sie unter Umständen nicht für Sie einsehbar :( Auf dedizierten Webservern "
+"hängt deren Position von der Serverkonfiguration, dem Betriebssystem oder "
+"aber der PHP-Konfiguration ab."
 
 # bccbe92ea5ac4f22a8dccd41ea88bb1c
 #: ../faq/index.rst:25 bccbe92ea5ac4f22a8dccd41ea88bb1c
@@ -97,6 +102,8 @@ msgid ""
 "with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for "
 "GNU/Linux Red Hat like distributions),"
 msgstr ""
+"unter ``php-fpm`` befinden sich die Servicelogs in ``/var/log/php-fpm/www-"
+"error.log`` (für GNU/Linux Red Hat Distributionen),"
 
 # 656576194d70489da3fab5693141387b
 #: ../faq/index.rst:26 656576194d70489da3fab5693141387b
@@ -105,6 +112,9 @@ msgid ""
 "error_log`` (on other GNU/Linux distributions, `httpd` may be named "
 "`apache`),"
 msgstr ""
+"unter (dem obsoleten) ``mod_php`` befinden sie sich in ``/var/log/httpd/"
+"error_log`` (unter anderen GNU/Linux Distributionen, heißt `httpd` unter "
+"Umständen `apache`),"
 
 # 370938c4c57a4c9bb8fd1a416e214bf4
 #: ../faq/index.rst:27 370938c4c57a4c9bb8fd1a416e214bf4
@@ -112,11 +122,13 @@ msgid ""
 "on Windows/MacOS with XAMPP like solutions, there is at least one log "
 "directory in installation; you may find what you look for there."
 msgstr ""
+"unter Windows/MacOS über XAMPP-artige Lösungen, finden Sie mindestens ein "
+"Log-Verzeichnis innerhalb der Installation; hier könnten Sie fündig werden."
 
 # 290e1a0c33274c20aaa72596801e1a1c
 #: ../faq/index.rst:31 290e1a0c33274c20aaa72596801e1a1c
 msgid "How to report a bug or ask for a feature?"
-msgstr ""
+msgstr "Wie melde ich einen Fehler oder frage nach einem Feature?"
 
 # 9cfe3fa245b44ea0a5aa5d3ec8f546db
 #: ../faq/index.rst:33 9cfe3fa245b44ea0a5aa5d3ec8f546db
@@ -125,6 +137,9 @@ msgid ""
 "`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
 "itself, all official plugins and also documentation."
 msgstr ""
+"Fehlermeldungen und RFE (Request For Enhancement) für Galette, alle "
+"offiziellen Plugins und die Dokumentation, müssen über `Galette tracker "
+"<https://bugs.galette.eu/projects/galette>`_ eingereicht werden."
 
 # bca646983cc6461d862f2341cd006621
 #: ../faq/index.rst:37 bca646983cc6461d862f2341cd006621
