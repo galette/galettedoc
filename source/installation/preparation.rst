@@ -39,15 +39,16 @@ Web server directory exposition
 
 .. versionadded:: 0.9
 
-Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way.
+Galette installation may consists in copying a complete directory to a location the web server can read. This method may work, but this exposes from the web files and directories that should not be available this way.
 
 It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!
 
-.. note::
+.. warning::
 
-   Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution.
+   Exposing only ``webroot`` directory is the recommended, and only secured way.
 
-   And that will certainly not be possible for many free hostings.
+Using a subdomain
+-----------------
 
 Here is a virtual host configuration example, including the hide of `index.php`:
 
@@ -115,6 +116,30 @@ Nginx would be:
            deny all;
        }
    }
+
+Using an alias
+--------------
+
+An alternative secured configuration, if you do not have a specific subdomain for Galette is to use an ``alias`` in your existing virtual host:
+
+.. code-block:: apache
+
+   <VirtualHost *:80>
+       ServerName mydomain.tld
+
+       DocumentRoot /var/www/mydomain.tld
+
+       Alias /mygalette/ /var/www/galette/galette/webroot/
+       <Directory /var/www/galette/galette/webroot/>
+           RewriteEngine On
+           #You need to set RewriteBase to Alias path
+           RewriteBase /mygalette/
+           RewriteCond %{REQUEST_FILENAME} !-f
+           RewriteRule ^(.*)$ index.php [QSA,L]
+       </Directory>
+   </VirtualHost>
+
+Do not forget with that solution you have to setup correctly your ``RewriteBase`` directive.
 
 .. _installationunix:
 
