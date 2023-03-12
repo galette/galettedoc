@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2011-2022, Johan Cwiklinski
+# Copyright (C) 2011-2023, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-10 23:06+0200\n"
+"POT-Creation-Date: 2023-03-12 09:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../installation/preparation.rst:42
 #: 42af32ff454341c6bec2616dd09d8078
-msgid "Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way."
+msgid "Galette installation may consists in copying a complete directory to a location the web server can read. This method may work, but this exposes from the web files and directories that should not be available this way."
 msgstr ""
 
 #: ../installation/preparation.rst:44
@@ -113,155 +113,170 @@ msgstr ""
 
 #: ../installation/preparation.rst:48
 #: 8a003602e25947f89c1c5d57df2b4c32
-msgid "Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution."
+msgid "Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr ""
 
-#: ../installation/preparation.rst:50
-#: 885e3c2c5a5240479f75da2d707646f7
-msgid "And that will certainly not be possible for many free hostings."
+#: ../installation/preparation.rst:51
+#: 98079c83df1a439ab1fc87a6864f6520
+msgid "Using a subdomain"
 msgstr ""
 
-#: ../installation/preparation.rst:52
+#: ../installation/preparation.rst:53
 #: 62f372e30d8f43ba8e0647cb013befab
 msgid "Here is a virtual host configuration example, including the hide of `index.php`:"
 msgstr ""
 
-#: ../installation/preparation.rst:79
+#: ../installation/preparation.rst:80
 #: d94eb207533e4fa996a801a0f48c6115
 msgid "Nginx would be:"
 msgstr ""
 
-#: ../installation/preparation.rst:122
+#: ../installation/preparation.rst:121
+#: 85fefb5103ed4db583122d78edfefe24
+msgid "Using an alias"
+msgstr ""
+
+#: ../installation/preparation.rst:123
+#: e226714279d54d3e80f3875fccf800a2
+msgid "An alternative secured configuration, if you do not have a specific subdomain for Galette is to use an ``alias`` in your existing virtual host:"
+msgstr ""
+
+#: ../installation/preparation.rst:142
+#: 3268ebabbd7847d9b07d0ae5e2d94be1
+msgid "Do not forget with that solution you have to setup correctly your ``RewriteBase`` directive."
+msgstr ""
+
+#: ../installation/preparation.rst:147
 #: 82bcf8d4b84f447d81a3e6938bdb6c8d
 msgid "Linux/Unix"
 msgstr ""
 
-#: ../installation/preparation.rst:124
+#: ../installation/preparation.rst:149
 #: d260edab8b0b4971a43ce611e346b0fc
 msgid "Installing Galette on Linux implies you have an access to the terminal on the server and required ACLs on directories."
 msgstr ""
 
-#: ../installation/preparation.rst:126
+#: ../installation/preparation.rst:151
 #: 280d13e2912147b89ab8f92006fbf02c
 msgid "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 
-#: ../installation/preparation.rst:133
+#: ../installation/preparation.rst:158
 #: a51d3208745f49f598a320be8e8c3253
 msgid "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with ``www-data:www-data``."
 msgstr ""
 
-#: ../installation/preparation.rst:135
+#: ../installation/preparation.rst:160
 #: b54138ad663543e384177c69e4c3098d
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr ""
 
-#: ../installation/preparation.rst:143
+#: ../installation/preparation.rst:168
 #: 2751659b41c44363901fb4a1806e4873
 msgid "You will also have to authorize webserver to connect to the network, with a SELinux boolean:"
 msgstr ""
 
-#: ../installation/preparation.rst:152
+#: ../installation/preparation.rst:177
 #: 74fa778214ed44d685a984eb767b7bb9
 msgid "FTP"
 msgstr ""
 
-#: ../installation/preparation.rst:156
+#: ../installation/preparation.rst:181
 #: 619efe30fb1049c4bcdcebd872d05e92
 msgid "Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts."
 msgstr ""
 
-#: ../installation/preparation.rst:158
+#: ../installation/preparation.rst:183
 #: d48a40394ccb4847bd997517a9d76d26
 msgid "Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
 msgstr ""
 
-#: ../installation/preparation.rst:160
+#: ../installation/preparation.rst:185
 #: be59c450b26d43f19c2acd3c35c0aef3
 msgid "Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client."
 msgstr ""
 
-#: ../installation/preparation.rst:167
+#: ../installation/preparation.rst:192
 #: 85bf856902544c138f8eefc6702fc834
 msgid "Specific cases"
 msgstr ""
 
-#: ../installation/preparation.rst:170
+#: ../installation/preparation.rst:195
 #: a2fd9686759248da9ce7554211e4c5e4
 msgid "Ionos"
 msgstr ""
 
-#: ../installation/preparation.rst:172
+#: ../installation/preparation.rst:197
 #: 314c1642d1934fcbb3f9c9acb97299e9
 msgid "If you're hosted on Ionos; and want to use a specific subdomain for Galette, you must create your subdomain from their UI, and make it points to the ``webroot`` directory. You also have to edit the ``.htaccess`` file it contains, and uncomment the ``RewriteBase /`` directive."
 msgstr ""
 
-#: ../installation/preparation.rst:175
+#: ../installation/preparation.rst:200
 #: c316873000d24416a630e777bdbbf856
 msgid "OVH"
 msgstr ""
 
-#: ../installation/preparation.rst:177
+#: ../installation/preparation.rst:202
 #: ee1343f0abf342fdb270628a782036ee
 msgid "This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
 msgstr ""
 
-#: ../installation/preparation.rst:179
+#: ../installation/preparation.rst:204
 #: 06f8ed7399954b21a21ef2746b778fa6
 msgid "Additionnal information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 
-#: ../installation/preparation.rst:183
+#: ../installation/preparation.rst:208
 #: bde86be3f40f4c7d95a156237104a9ee
-msgid "Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:"
+msgid "Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a ``.ovhconfig`` file at your hosting root with the following contents:"
 msgstr ""
 
-#: ../installation/preparation.rst:190
+#: ../installation/preparation.rst:215
 #: 527fcbf01270441f8d9cc7a08ba5fa89
 msgid "Nginx"
 msgstr ""
 
-#: ../installation/preparation.rst:192
+#: ../installation/preparation.rst:217
 #: bcb5e07ec7614f7abf3c0f26067820e5
 msgid "`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
 msgstr ""
 
-#: ../installation/preparation.rst:194
+#: ../installation/preparation.rst:219
 #: 79dad613c1954a4c93cf8f5aea93cda7
 msgid "So you have to convert restriction access files in Nginx configuration, as for example:"
 msgstr ""
 
-#: ../installation/preparation.rst:205
+#: ../installation/preparation.rst:230
 #: a2fd9686759248da9ce7554211e4c5e4
 msgid "Windows"
 msgstr ""
 
-#: ../installation/preparation.rst:207
+#: ../installation/preparation.rst:232
 #: f85412eb27ee45f786f165e1f25926de
 msgid "Installation described here rely on `XAMPP <https://www.apachefriends.org/xampp-windows.html>`_; other installation methods exist but are not listed here."
 msgstr ""
 
-#: ../installation/preparation.rst:209
+#: ../installation/preparation.rst:234
 #: ad9856f5a73349f3aa9953fee56f51a3
 msgid "First of all, download XAMPP on your computer. Let's install it under ``C:\\xampp``."
 msgstr ""
 
-#: ../installation/preparation.rst:215
+#: ../installation/preparation.rst:240
 #: 1c9a43244f9449baa83a24ac393a91eb
 msgid "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), so you can start Apache and MySQL services."
 msgstr ""
 
-#: ../installation/preparation.rst:221
+#: ../installation/preparation.rst:246
 #: 0249db612f1942f188c029618ddd79c2
 msgid "Once those steps done, download galette and move it to ``C:\\wampp\\htdocs\\galette``, web application will be available from http://127.0.0.1/galette/. Just visit this URL so the installation process begin."
 msgstr ""
 
-#: ../installation/preparation.rst:225
+#: ../installation/preparation.rst:250
 #: 0e8b3f363ca74a98a77f8fc2749fde88
 msgid "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a \";\"), just uncomment them and restart XAMPP."
 msgstr ""
 
-#: ../installation/preparation.rst:227
+#: ../installation/preparation.rst:252
 #: e92325a73ac9428fbaf7fd8e7e134702
 msgid "`openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``"
 msgstr ""
