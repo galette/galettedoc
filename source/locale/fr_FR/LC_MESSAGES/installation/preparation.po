@@ -1,21 +1,21 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-12 09:28+0100\n"
-"PO-Revision-Date: 2020-12-12 10:34+0000\n"
+"PO-Revision-Date: 2023-03-12 08:54+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
-"install-prepare/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/"
+"doc-install-prepare/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: ../installation/preparation.rst:7 b71e35ed535e4583a01a5d8686e744f2
 msgid "Preparation"
@@ -109,22 +109,15 @@ msgid "Web server directory exposition"
 msgstr "Exposition des dossiers sur le serveur web"
 
 #: ../installation/preparation.rst:42 42af32ff454341c6bec2616dd09d8078
-#, fuzzy
-#| msgid ""
-#| "Galette defaults installation (as well as for many other web "
-#| "applications) consists in copying a complete directory to a location the "
-#| "web server can read. This method works well, but this exposes from the "
-#| "web files and directories that should not be available this way."
 msgid ""
 "Galette installation may consists in copying a complete directory to a "
 "location the web server can read. This method may work, but this exposes "
 "from the web files and directories that should not be available this way."
 msgstr ""
-"L'installation par défaut de Galette (tout comme bon nombre d'autres "
-"applications web) consiste à copier un dossier complet à un endroit que le "
-"serveur web peut lire. Cette méthode fonctionne bien, mais elle expose des "
-"fichiers et dossiers sur les web alors qu'ils ne devraient pas forcément "
-"être accessibles de cette manière."
+"L'installation de Galette peut consister à copier un dossier complet à un "
+"endroit que le serveur web peut lire. Cette méthode peut fonctionner, mais "
+"elle expose des fichiers et dossiers sur les web alors qu'ils ne devraient "
+"pas forcément être accessibles de cette manière."
 
 #: ../installation/preparation.rst:44 53bc3cd84f9644209a7262154f9fa6d5
 msgid ""
@@ -137,19 +130,15 @@ msgstr ""
 "accessibles depuis le web !"
 
 #: ../installation/preparation.rst:48 8a003602e25947f89c1c5d57df2b4c32
-#, fuzzy
-#| msgid ""
-#| "Exposing only ``webroot`` directory is the recommended way if you can "
-#| "create virtual hosts on your hosting solution."
 msgid ""
 "Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr ""
-"L'exposition du seul dossier ``webroot`` est la manière recommandée si vous "
-"avez la possibilité de créer des hôtes virtuels sur votre hébergement."
+"L'exposition du seul dossier ``webroot`` est la manière recommandée, et la "
+"seule qui soit sécurisée."
 
 #: ../installation/preparation.rst:51 98079c83df1a439ab1fc87a6864f6520
 msgid "Using a subdomain"
-msgstr ""
+msgstr "Utiliser un sous-domaine"
 
 #: ../installation/preparation.rst:53 62f372e30d8f43ba8e0647cb013befab
 msgid ""
@@ -165,19 +154,24 @@ msgstr "Pour Nginx, ce serait :"
 
 #: ../installation/preparation.rst:121 85fefb5103ed4db583122d78edfefe24
 msgid "Using an alias"
-msgstr ""
+msgstr "Utiliser un alias"
 
 #: ../installation/preparation.rst:123 e226714279d54d3e80f3875fccf800a2
 msgid ""
 "An alternative secured configuration, if you do not have a specific "
 "subdomain for Galette is to use an ``alias`` in your existing virtual host:"
 msgstr ""
+"Une solution sécurisée alternative, si vous n'avez pas de sous-domaine "
+"spécifique pour Galette est d'utiliser un ``alias`` dans votre hôte virtuel "
+"existant :"
 
 #: ../installation/preparation.rst:142 3268ebabbd7847d9b07d0ae5e2d94be1
 msgid ""
 "Do not forget with that solution you have to setup correctly your "
 "``RewriteBase`` directive."
 msgstr ""
+"N'oubliez pas avec cette solution que vous devez définir correctement votre "
+"directive ``RewriteBase``."
 
 #: ../installation/preparation.rst:147 82bcf8d4b84f447d81a3e6938bdb6c8d
 msgid "Linux/Unix"
@@ -296,11 +290,6 @@ msgstr ""
 "mutu-2014/"
 
 #: ../installation/preparation.rst:208 bde86be3f40f4c7d95a156237104a9ee
-#, fuzzy
-#| msgid ""
-#| "Many users have display images or emargement list issues on OVH hosts. "
-#| "The solution to this issue is to create a `.ovhconfig` file at your "
-#| "hosting root with the following contents:"
 msgid ""
 "Many users have display images or emargement list issues on OVH hosts. The "
 "solution to this issue is to create a ``.ovhconfig`` file at your hosting "
@@ -308,7 +297,7 @@ msgid ""
 msgstr ""
 "Beaucoup d'utilisateurs ont rencontré des problèmes de chargement d'images, "
 "ou de la liste d'émargement chez OVH. La solution à ce problème est de créer "
-"un fichier `.ovhconfig` à la racine de votre hébergement avec le contenu "
+"un fichier ``.ovhconfig`` à la racine de votre hébergement avec le contenu "
 "suivant :"
 
 #: ../installation/preparation.rst:215 527fcbf01270441f8d9cc7a08ba5fa89
