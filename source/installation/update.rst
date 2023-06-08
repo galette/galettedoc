@@ -76,8 +76,4 @@ If you try to update but your database version seems already correct, you will b
    :scale: 70%
    :align: center
 
-Once update scripts have run, a summary will be displayed:
-
-.. image:: ../_styles/static/images/installation/5ter_update_success.png
-   :scale: 70%
-   :align: center
+Once update scripts have run, a summary will be displayed.
