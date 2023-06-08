@@ -7,17 +7,9 @@ Post installation
 Various tasks
 =============
 
-One Galette properly installed, you still have a few things to do:
+One Galette properly installed, you still have one thing to do:
 
-* remove write access to the ``config`` directory,
-* remove the whole ``install`` directory, or make it unavailable with a directive like (for Apache):
-
-.. code-block:: apacheconf
-
-   <Directory /var/www/html/galette/install>
-       Order Deny,Allow
-       Deny from all
-    </Directory>
+* remove write access to the ``config`` directory.
 
 .. _configpaths:
 

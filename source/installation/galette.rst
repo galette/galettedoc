@@ -158,10 +158,6 @@ Installation end
 
 Installation is now finished, congratulations!
 
-.. warning::
-
-   For security reasons, **we advise you to remove the install directory** if it is web exposed, or to drop access from your web configuration.
-
 .. image:: ../_styles/static/images/installation/8_the_end.png
    :scale: 70%
    :align: center
