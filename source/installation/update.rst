@@ -67,13 +67,13 @@ Previous version selection
 Next step is the choice of the previous Galette version. Installation process will try to "guess" what version it as, and will select this one per default (the one that will be displayed as bold text).
 
 .. image:: ../_styles/static/images/installation/5_update_version_select.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 If you try to update but your database version seems already correct, you will be warned. No entry will be displayed as bold text, please make sure to choose the right one:
 
 .. image:: ../_styles/static/images/installation/5bis_already_updated.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 Once update scripts have run, a summary will be displayed.

@@ -18,7 +18,7 @@ Following pages will guide you into Galette screens and features to manage your 
 Just after login screen, you will reach Galette dashboard:
 
 .. image:: ../_styles/static/images/usermanual/desktop.png
-   :scale: 75%
+   :scale: 40%
    :align: center
    :alt: Dashboard
 

@@ -56,18 +56,18 @@ The search zone can be used when saving members location, and when displaying th
 A member can define its location (with the precision he wants) on the map selecting one of the propositions:
 
 .. image:: ../_styles/static/images/plugin-maps/location_select.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 Using the geolocalization button will define its position from the browser:
 
 .. image:: ../_styles/static/images/plugin-maps/geoloc.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 Then, member location is displayed on map, and can be removed:
 
 .. image:: ../_styles/static/images/plugin-maps/location_selected.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 

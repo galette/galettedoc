@@ -7,7 +7,7 @@ PDF models
 PDF models are provided for several outputs : an invoice model, a receipt model and a membership from model are currently available. All of them inherits from a `Global` model.
 
 .. image:: ../_styles/static/images/usermanual/pdf_models.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: PDF models management
 
@@ -39,7 +39,7 @@ Invoices and receipts
 Invoice and receipt models are the same, excepting their titles.
 
 .. image:: ../_styles/static/images/usermanual/pdf_model_invoice.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Invoice PDF model
 

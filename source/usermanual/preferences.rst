@@ -33,6 +33,16 @@ This tab defines some parameters related to your association:
 * **Telemetry date**: date on which `telemetry infomations <https://telemetry.galette.eu>`_ was sent,
 * **Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_
 
+Social networks
+===============
+
+Manage social netowkrs of your assiciation. This may be used in PDF or emails as variables (see inline doc on related parts).
+
+.. image:: ../_styles/static/images/usermanual/prefs_social.png
+   :scale: 50%
+   :align: center
+   :alt: Galette settings, social networks tab
+
 Parameters
 ==========
 

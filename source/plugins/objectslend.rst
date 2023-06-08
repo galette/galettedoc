@@ -45,7 +45,7 @@ Once plugin has been installed, a `Object lend` group is added to Galette menu.
 Defaults status are provided at installation, but they can not fit your needs, you can of course define your own.
 
 .. image:: ../_styles/static/images/plugin-objectslend/status.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 Define status, create categories and objects; users can lend objects with a reason, then give them back with location.
@@ -57,8 +57,16 @@ Preferences
 
 Several preferences allows to change plugin behavior.
 
-.. image:: ../_styles/static/images/plugin-objectslend/preferences.png
-   :scale: 70%
+.. image:: ../_styles/static/images/plugin-objectslend/plugin_preferences.png
+   :scale: 50%
+   :align: center
+
+.. image:: ../_styles/static/images/plugin-objectslend/images_preferences.png
+   :scale: 50%
+   :align: center
+
+.. image:: ../_styles/static/images/plugin-objectslend/display_preferences.png
+   :scale: 50%
    :align: center
 
 From this screen, you can define if members can lend objects or not, if it should create a new contribution (and its type and description), if image should be displayed in objects list, and thumbnails size.

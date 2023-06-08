@@ -10,14 +10,19 @@ This plugin provides:
 * automatic transaction storage once validated.
 
 .. image:: ../_styles/static/images/plugin-paypal/preferences.png
-   :scale: 70%
+   :scale: 50%
    :align: center
    :alt: Paypal plugin preferences
 
 .. image:: ../_styles/static/images/plugin-paypal/form.png
-   :scale: 70%
+   :scale: 50%
    :align: center
    :alt: Paypal payment form
+
+.. image:: ../_styles/static/images/plugin-paypal/public_form.png
+   :scale: 50%
+   :align: center
+   :alt: Paypal payment form (public)
 
 .. warning::
 

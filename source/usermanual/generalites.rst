@@ -90,7 +90,7 @@ Sending telemetry data is a manual process, nothing will be send until you **exp
 Those informations are useful for the project development and promotion. When you send those informations, you can review data that would be sent.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_data.png
-   :scale: 30%
+   :scale: 50%
    :align: center
    :alt: Preview Telemetry data
 
@@ -111,6 +111,6 @@ You can update your registration informations from Galette preferences. The form
 A new panel has been added on Galette dashboard to send telemetry informations and/or register your instance. Once those steps has been completed, the panel will dissapear. You aslo can choose to just disable it.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_dashboard.png
-   :scale: 50%
+   :scale: 70%
    :align: center
    :alt: Telemetry on dashboard
