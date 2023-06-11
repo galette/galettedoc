@@ -36,7 +36,7 @@ This tab defines some parameters related to your association:
 Social networks
 ===============
 
-Manage social netowkrs of your assiciation. This may be used in PDF or emails as variables (see inline doc on related parts).
+Manage social netowkrs of your association. This may be used in PDF or emails as variables (see inline doc on related parts).
 
 .. image:: ../_styles/static/images/usermanual/prefs_social.png
    :scale: 50%
