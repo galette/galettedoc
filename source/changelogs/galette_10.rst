@@ -34,7 +34,7 @@ Fixed
 * Contributions mass removal (`#1661 <https://bugs.galette.eu/issues/1661>`_)
 * Disable inline images in mailings (`#1659 <https://bugs.galette.eu/issues/1659>`_)
 * Issue editing members with wrong values imported in dynamic choice fields (`#1650 <https://bugs.galette.eu/issues/1650>`_)
-* Parent groupe removed when a manager edit a group (`#1648 <https://bugs.galette.eu/issues/1648>`_)
+* Parent group removed when a manager edit a group (`#1648 <https://bugs.galette.eu/issues/1648>`_)
 * Fix logo size on member card (`#1626 <https://bugs.galette.eu/issues/1626>`_)
 
 .. _souscapot_100:
