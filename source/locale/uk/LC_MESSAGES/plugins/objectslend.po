@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-11 08:07+0200\n"
+"POT-Creation-Date: 2023-09-05 22:14+0200\n"
 "PO-Revision-Date: 2022-07-30 11:17+0000\n"
 "Last-Translator: Artem <artem@molotov.work>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/doc-"
@@ -75,8 +75,14 @@ msgstr "Перш за все, завантажте розширення:"
 msgid "Get latest ObjectsLend plugin!"
 msgstr "Отримайте останню версію розширення «ObjectsLend»!"
 
+#: ../plugins/objectslend.rst:-1 c22fc51f5f8c475caf2ebd863e1ecabd
+#, fuzzy
+#| msgid "Get latest ObjectsLend plugin!"
+msgid "Get ObjectsLend plugin nightly build!"
+msgstr "Отримайте останню версію розширення «ObjectsLend»!"
+
 # c0e97675457841e3b6ffd51e843d548a
-#: ../plugins/objectslend.rst:23 c0e97675457841e3b6ffd51e843d548a
+#: ../plugins/objectslend.rst:27 c0e97675457841e3b6ffd51e843d548a
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -85,12 +91,12 @@ msgstr ""
 "вказівки під Linux (замініть `{url}` та `{version}` правильними значеннями):"
 
 # 72e9605c48bd4675837c3f72148215d2
-#: ../plugins/objectslend.rst:34 72e9605c48bd4675837c3f72148215d2
+#: ../plugins/objectslend.rst:38 72e9605c48bd4675837c3f72148215d2
 msgid "Database initialisation"
 msgstr "Започаткування бази даних"
 
 # 9c3cb04814a94595b8f18d4cd99477c8
-#: ../plugins/objectslend.rst:36 9c3cb04814a94595b8f18d4cd99477c8
+#: ../plugins/objectslend.rst:40 9c3cb04814a94595b8f18d4cd99477c8
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
@@ -99,17 +105,17 @@ msgstr ""
 "`Інтерфейс управління розширеннями Galette <plugins_managment>`."
 
 # d8fa623eb0654ce5a3ee16335c96b514
-#: ../plugins/objectslend.rst:38 d8fa623eb0654ce5a3ee16335c96b514
+#: ../plugins/objectslend.rst:42 d8fa623eb0654ce5a3ee16335c96b514
 msgid "And this is finished; ObjectsLend plugin is installed :)"
 msgstr "Усе завершено. Розширення \"ObjectsLend\" установлено :)"
 
 # 13f78d3c8f374c85874323bc23bfa554
-#: ../plugins/objectslend.rst:41 13f78d3c8f374c85874323bc23bfa554
+#: ../plugins/objectslend.rst:45 13f78d3c8f374c85874323bc23bfa554
 msgid "Plugin usage"
 msgstr "Використання розширення"
 
 # a64162e25f0b427b87a4e2cd5825e464
-#: ../plugins/objectslend.rst:43 a64162e25f0b427b87a4e2cd5825e464
+#: ../plugins/objectslend.rst:47 a64162e25f0b427b87a4e2cd5825e464
 msgid ""
 "Once plugin has been installed, a `Object lend` group is added to Galette "
 "menu."
@@ -118,7 +124,7 @@ msgstr ""
 "lend`."
 
 # 607bcb44cde845aeae7db18fd99dcc60
-#: ../plugins/objectslend.rst:45 607bcb44cde845aeae7db18fd99dcc60
+#: ../plugins/objectslend.rst:49 607bcb44cde845aeae7db18fd99dcc60
 msgid ""
 "Defaults status are provided at installation, but they can not fit your "
 "needs, you can of course define your own."
@@ -127,7 +133,7 @@ msgstr ""
 "відповідати вашим потребам, ви, звичайно ж, можете визначити власні."
 
 # 84d4b302fe3247038d993417b8d0f6bb
-#: ../plugins/objectslend.rst:51 84d4b302fe3247038d993417b8d0f6bb
+#: ../plugins/objectslend.rst:55 84d4b302fe3247038d993417b8d0f6bb
 msgid ""
 "Define status, create categories and objects; users can lend objects with a "
 "reason, then give them back with location."
@@ -136,7 +142,7 @@ msgstr ""
 "позичати об’єкти з причиною, а потім повертати їх із місцем розташування."
 
 # 93fcf4b0fdba4ded950b37b54119bfc6
-#: ../plugins/objectslend.rst:53 93fcf4b0fdba4ded950b37b54119bfc6
+#: ../plugins/objectslend.rst:57 93fcf4b0fdba4ded950b37b54119bfc6
 msgid ""
 "A lend history is provided for administrators and staff members from object "
 "page."
@@ -145,17 +151,17 @@ msgstr ""
 "об'єкта."
 
 # 78fa0c60bf964341aa1a5a8e098d966b
-#: ../plugins/objectslend.rst:56 78fa0c60bf964341aa1a5a8e098d966b
+#: ../plugins/objectslend.rst:60 78fa0c60bf964341aa1a5a8e098d966b
 msgid "Preferences"
 msgstr "Налаштування"
 
 # f58623877d1f43299d8958d5ec484bfb
-#: ../plugins/objectslend.rst:58 f58623877d1f43299d8958d5ec484bfb
+#: ../plugins/objectslend.rst:62 f58623877d1f43299d8958d5ec484bfb
 msgid "Several preferences allows to change plugin behavior."
 msgstr "Декілька параметрів дозволяють змінювати поведінку розширень."
 
 # 690635ef3c424ab9b0b67a50f01ac3c3
-#: ../plugins/objectslend.rst:72 690635ef3c424ab9b0b67a50f01ac3c3
+#: ../plugins/objectslend.rst:76 690635ef3c424ab9b0b67a50f01ac3c3
 msgid ""
 "From this screen, you can define if members can lend objects or not, if it "
 "should create a new contribution (and its type and description), if image "
@@ -166,12 +172,12 @@ msgstr ""
 "зображення повинно відображатися у списку об'єктів, і розмір мініатюр."
 
 # 838a5757968f43ce9a37cbcb2a43257b
-#: ../plugins/objectslend.rst:76 838a5757968f43ce9a37cbcb2a43257b
+#: ../plugins/objectslend.rst:80 838a5757968f43ce9a37cbcb2a43257b
 msgid "It is possible to activate the fullsize photo display."
 msgstr "Є можливість задіяти повнорозмірний дисплей світлин."
 
 # e59d519f30b84115a8bf1b026fabfa24
-#: ../plugins/objectslend.rst:80 e59d519f30b84115a8bf1b026fabfa24
+#: ../plugins/objectslend.rst:84 e59d519f30b84115a8bf1b026fabfa24
 msgid ""
 "Photos sent with previous plugin version were always resized, only the "
 "thumbnail was stored. If you want to get fullsize display, you will have to "
