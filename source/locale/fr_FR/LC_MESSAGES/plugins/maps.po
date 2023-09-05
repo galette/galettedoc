@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-12 09:28+0100\n"
+"POT-Creation-Date: 2023-09-05 22:14+0200\n"
 "PO-Revision-Date: 2022-07-11 06:34+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
@@ -54,7 +54,13 @@ msgstr "Tout d'abord, téléchargez le plugin :"
 msgid "Get latest Maps plugin!"
 msgstr "Obtenir le dernier plugin Maps !"
 
-#: ../plugins/maps.rst:19 12972b70c1e84038aa983bf162bb561d
+#: ../plugins/maps.rst:-1 0784ff8161884624bcd4a62a89f806f8
+#, fuzzy
+#| msgid "Get latest Maps plugin!"
+msgid "Get Maps plugin nightly build!"
+msgstr "Obtenir le dernier plugin Maps !"
+
+#: ../plugins/maps.rst:23 12972b70c1e84038aa983bf162bb561d
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -63,11 +69,11 @@ msgstr ""
 "exemple, sous linux (en remplaçant `{url}` et `{version}` par les valeurs "
 "adéquates) :"
 
-#: ../plugins/maps.rst:29 df9d209ffc094964966364f420e03675
+#: ../plugins/maps.rst:33 df9d209ffc094964966364f420e03675
 msgid "Database initialisation"
 msgstr "Initialisation de la base de données"
 
-#: ../plugins/maps.rst:31 19bfd692fbaa4a89ab570a1dc61893f6
+#: ../plugins/maps.rst:35 19bfd692fbaa4a89ab570a1dc61893f6
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
@@ -76,15 +82,15 @@ msgstr ""
 "Référez-vous :ref:`à l'interface de gestion des plugins de Galette "
 "<plugins_managment>`."
 
-#: ../plugins/maps.rst:33 bdcac6382fd046d4867b7dbd7a9144fd
+#: ../plugins/maps.rst:37 bdcac6382fd046d4867b7dbd7a9144fd
 msgid "And this is finished; Maps plugin is installed :)"
 msgstr "Et c'est terminé, le plugin Maps est installé :)"
 
-#: ../plugins/maps.rst:36 27830182254440878b13199d6b5e55c6
+#: ../plugins/maps.rst:40 27830182254440878b13199d6b5e55c6
 msgid "Plugin usage"
 msgstr "Utilisation du plugin"
 
-#: ../plugins/maps.rst:38 b9c3b08462f24dc891cc1438d26f41ad
+#: ../plugins/maps.rst:42 b9c3b08462f24dc891cc1438d26f41ad
 msgid ""
 "When the plugin is installed, a group `Maps` is added to Galette menu when a "
 "member is logged in, which contains `My location` entry. This page allow "
@@ -94,7 +100,7 @@ msgstr ""
 "Galette lorsqu'un adhérent est connecté, qui contient l'entrée `Ma "
 "localisation`. Cette page permet à l'adhérent d'enregistrer sa localisation."
 
-#: ../plugins/maps.rst:40 db360f726f3a4304a579a341756413f3
+#: ../plugins/maps.rst:44 db360f726f3a4304a579a341756413f3
 msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
@@ -103,7 +109,7 @@ msgstr ""
 "adhérent, qui permet aux administrateurs de définir les coordonnées de "
 "l'adhérent."
 
-#: ../plugins/maps.rst:42 1af3d5aae17b4bada49a1c0f0ca06b29
+#: ../plugins/maps.rst:46 1af3d5aae17b4bada49a1c0f0ca06b29
 msgid ""
 "Also, a `Map` entry is added in public pages list, that displays "
 "geolocalized members that are up to date. Administrators and staff members "
@@ -115,7 +121,7 @@ msgstr ""
 "membres du bureau verront tous les adhérents, alors que les simples "
 "adhérents et les visiteurs verront uniquement ceux à jour et publics."
 
-#: ../plugins/maps.rst:44 33b190b6ca084cefa8b9bd03c6981002
+#: ../plugins/maps.rst:48 33b190b6ca084cefa8b9bd03c6981002
 msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
@@ -123,7 +129,7 @@ msgstr ""
 "Tout d'abord, les adhérents entreront leurs coordonnées géographiques. "
 "Plusieurs options sont fournies :"
 
-#: ../plugins/maps.rst:46 72dc0efe31654226bbbe60dd20f66c12
+#: ../plugins/maps.rst:50 72dc0efe31654226bbbe60dd20f66c12
 msgid ""
 "if town has been set in member informations, a list of possible places will "
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
@@ -133,7 +139,7 @@ msgstr ""
 "localisations possibles sera proposée (via `le service en ligne Nominatim "
 "<https://nominatim.openstreetmap.org>`_),"
 
-#: ../plugins/maps.rst:47 1219157d2ba741938fb71d75fec71728
+#: ../plugins/maps.rst:51 1219157d2ba741938fb71d75fec71728
 msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
@@ -141,13 +147,13 @@ msgstr ""
 "en complément, une zone de recherche (fournie depuis `OpenStreetMap <https://"
 "nominatim.openstreetmap.org/>`_),"
 
-#: ../plugins/maps.rst:48 f581f5c6ae7b4d0aabb4838bdabcb4d1
+#: ../plugins/maps.rst:52 f581f5c6ae7b4d0aabb4838bdabcb4d1
 msgid "and also a geolocalize button using browser capacities."
 msgstr ""
 "et également une bouton de géolocalisation qui utilise les possibilités du "
 "navigateur."
 
-#: ../plugins/maps.rst:50 99d4a42cc87645d4bf15eef0c0de81bf
+#: ../plugins/maps.rst:54 99d4a42cc87645d4bf15eef0c0de81bf
 msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
@@ -155,7 +161,7 @@ msgstr ""
 "La zone de recherche peut être utilisée lorsque vous renseignez la "
 "localisation d'un adhérent, et aussi à l'affichage des cartes."
 
-#: ../plugins/maps.rst:56 da083618a9c54f1e9fe1a5ac4d49e503
+#: ../plugins/maps.rst:60 da083618a9c54f1e9fe1a5ac4d49e503
 msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
@@ -163,14 +169,14 @@ msgstr ""
 "Un adhérent peut définir a propre localisation (avec la précision qu'il "
 "souhaite) sur la carte en sélectionnant une des propositions :"
 
-#: ../plugins/maps.rst:62 5cc12078cb6345c8876df9a227d64be8
+#: ../plugins/maps.rst:66 5cc12078cb6345c8876df9a227d64be8
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
 "Utiliser le bouton géolocalisation déterminera sa position depuis son "
 "navigateur :"
 
-#: ../plugins/maps.rst:68 822d4913304041ca8e197e0470a3ef78
+#: ../plugins/maps.rst:72 822d4913304041ca8e197e0470a3ef78
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
 "Alors, la localisation de l'adhérent est affichée sur la carte, et peut être "
