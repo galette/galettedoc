@@ -11,10 +11,6 @@ This plugin provides:
 Installation
 ============
 
-.. warning::
-
-   This plugin requires Galette 0.9.1 to work!
-
 First of all, download the plugin:
 
 .. image:: https://img.shields.io/badge/1.5.0-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
