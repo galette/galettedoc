@@ -18,7 +18,7 @@ To install Galette, you will need to meet the following requirements :
   * SSL support,
   * `gettext` PHP module (optional).
 
-* A database server, `MariaDB <https://mariadb.org>`_  (or MySQL) 5.5 minimum, or `PostgreSQL <https://postgresql.org>`_ 9.1 minimum.
+* A database server, `MariaDB <https://mariadb.org>`_  (or MySQL) 5.7 minimum, or `PostgreSQL <https://postgresql.org>`_ 11 minimum.
 
 Galette is tested continuously with recent versions of these components. If you encounter issues with a recent version, please let us know ;)
 
