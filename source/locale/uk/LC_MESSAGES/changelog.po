@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-08 08:55+0200\n"
+"POT-Creation-Date: 2023-10-19 22:16+0200\n"
 "PO-Revision-Date: 2023-07-08 06:55+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
@@ -19,8 +19,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0-dev\n"
 
 # 52f4192485954e2cbbea4ce7c2a93b29
@@ -103,6 +103,30 @@ msgstr ""
 "Члени не можуть друкувати власні картки (`#1462 <https://bugs.galette.eu/"
 "issues/1462>`_)"
 
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:20 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Check for minimal database version at install (`#1725 <https://bugs.galette."
+"eu/issues/1725>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:21 c60cf0b056c247968c4dfe1e8ed238d9
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Resize and crop member picture to a fixed ratio (`#1717 <https://bugs."
+"galette.eu/issues/1717>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
 # 9ce8f744c7c84e66987a28e1a4c26569
 # edbdcbb6b6a64d95b69b505b28ca605f
 # 15af399a691e47039d5ed63901d65085
@@ -116,12 +140,12 @@ msgstr ""
 # d15cde785ff44fe799f2cf4ad678e4ec
 # 6981fda5bf7241fc91e1c5792e843544
 # 67232b1c72244281b3bbfe51881bc130
-#: ../changelogs/galette_10.rst:24 9ce8f744c7c84e66987a28e1a4c26569
+#: ../changelogs/galette_10.rst:26 9ce8f744c7c84e66987a28e1a4c26569
 msgid "Fixed"
 msgstr "Виправлено"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:26 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:28 0d934e8059e64803ac5cc67207c1dfef
 msgid ""
 "Update issues (not defined constants) (`#1615 <https://bugs.galette.eu/"
 "issues/1615>`_)"
@@ -130,7 +154,7 @@ msgstr ""
 "eu/issues/1615>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:27 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:29 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Fatal error when cookie not set after login (`#1617 <https://bugs.galette.eu/"
 "issues/1617>`_)"
@@ -139,7 +163,7 @@ msgstr ""
 "bugs.galette.eu/issues/1617>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:28 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:30 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -150,7 +174,7 @@ msgstr ""
 "issues/1618>`_)"
 
 # 0d934e8059e64803ac5cc67207c1dfef
-#: ../changelogs/galette_10.rst:29 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:31 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Several PHP 8.1 compatibility fixes (`#1626 <https://bugs.galette.eu/"
@@ -163,7 +187,7 @@ msgstr ""
 "issues/1629>`_)"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:30 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:32 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -176,7 +200,7 @@ msgstr ""
 "galette.eu/issues/1635>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:31 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:33 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -189,7 +213,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:32 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:34 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -202,7 +226,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:33 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:35 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -215,7 +239,7 @@ msgstr ""
 "galette.eu/issues/1635>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:34 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:36 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -227,7 +251,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:35 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:37 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -239,7 +263,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:36 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:38 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -252,7 +276,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # 5c34437a218c468eb0223e625ad64929
-#: ../changelogs/galette_10.rst:37 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:39 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/"
@@ -265,7 +289,7 @@ msgstr ""
 "<https://bugs.galette.eu/issues/1453>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:38 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:40 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -276,6 +300,95 @@ msgstr ""
 "Виправлено відображуваний номер версії (`#1446 <https://bugs.galette.eu/"
 "issues/1446>`_)"
 
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:41 e40ebf19d4f14628a500813651fb01a4
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Fix timeout using logo on PDF member cards (`#1726 <https://bugs.galette.eu/"
+"issues/1726>`_)"
+msgstr ""
+"Виправлено відображуваний номер версії (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# f5b4a45e98274de29e0bb3913a283610
+#: ../changelogs/galette_10.rst:42 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
+#| "issues/1508>`_)"
+msgid ""
+"Fix dynamic files on contributions and transactions (`#1697 <https://bugs."
+"galette.eu/issues/1697>`_)"
+msgstr ""
+"Виправлення кольорів карток у нових установленнях (`#1508 <https://bugs."
+"galette.eu/issues/1508>`_)"
+
+# a137ee16b5d34c6bb4a4e90e024a6eb4
+#: ../changelogs/galette_10.rst:43 e40ebf19d4f14628a500813651fb01a4
+#, fuzzy
+#| msgid ""
+#| "New preference to show/hide borders around PDF member cards (`#184 "
+#| "<https://bugs.galette.eu/issues/184>`_)"
+msgid ""
+"Drop required fields on PDF member cards (`#781 <https://bugs.galette.eu/"
+"issues/781>`_)"
+msgstr ""
+"Новий параметр для показу/приховування рамок навколо карток учасників у "
+"форматі PDF (`#184 <https://bugs.galette.eu/issues/184>`_)"
+
+# 5c34437a218c468eb0223e625ad64929
+#: ../changelogs/galette_10.rst:44 c60cf0b056c247968c4dfe1e8ed238d9
+#, fuzzy
+#| msgid ""
+#| "Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/"
+#| "issues/1453>`_)"
+msgid ""
+"Parent group can be lost when a groupmanager edits a group (`#1708 <https://"
+"bugs.galette.eu/issues/1708>`_)"
+msgstr ""
+"На загальнодоступних сторінках відсутнє розбивання на сторінки (`#1453 "
+"<https://bugs.galette.eu/issues/1453>`_)"
+
+# 09c0a7212cdd4f6d949abeb3aa3febcb
+#: ../changelogs/galette_10.rst:45 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Error creating dynamic field with empty name (`#1452 <https://bugs."
+#| "galette.eu/issues/1452>`_)"
+msgid ""
+"Mass add contribution fail if data is missing (`#1694 <https://bugs.galette."
+"eu/issues/1694>`_)"
+msgstr ""
+"Помилка створення динамічного поля з порожнім ім'ям (`#1452 <https://bugs."
+"galette.eu/issues/1452>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:46 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Dynamic contribution fields not rendered on advanced search (`#1693 <https://"
+"bugs.galette.eu/issues/1693>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:47 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Dynamic contributions choice fields on advanced search fail using postgres "
+"(`#1692 <https://bugs.galette.eu/issues/1692>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
 # d217a4ec7c9b4dc7b6230b5e17b8c11e
 # 0dec2006cff143eda54fd8b2a312a814
 # 1bcd44e56075482ea69e49ed8647c353
@@ -285,12 +398,12 @@ msgstr ""
 # 77cd62f8ddae4136807346fd31c6eb14
 # 746f9e3ee5a04f09ae8224ec79ee312e
 # 9e8386df88a24a26a51a72f59d3fc6ff
-#: ../changelogs/galette_10.rst:43 d217a4ec7c9b4dc7b6230b5e17b8c11e
+#: ../changelogs/galette_10.rst:52 d217a4ec7c9b4dc7b6230b5e17b8c11e
 #, fuzzy
 msgid "Under the hood..."
 msgstr "Під капотом..."
 
-#: ../changelogs/galette_10.rst:45 14d9ff3f487a455389cd2993957059bd
+#: ../changelogs/galette_10.rst:54 14d9ff3f487a455389cd2993957059bd
 msgid ""
 "Template rendering is now assumed by `Twig <https://twig.symfony.com/>`_ "
 "instead of `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette.eu/"
@@ -300,7 +413,7 @@ msgstr ""
 "замість `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette.eu/"
 "issues/1619>`_)"
 
-#: ../changelogs/galette_10.rst:46 732dfb1472734b88a75c1f3d8f76e298
+#: ../changelogs/galette_10.rst:55 732dfb1472734b88a75c1f3d8f76e298
 msgid ""
 "Use of `Fomantic UI <https://fomantic-ui.com/>`_ framework for whole display "
 "(`#1324 <https://bugs.galette.eu/issues/1324>`_)"
@@ -310,12 +423,12 @@ msgstr ""
 
 # d52ea576a2ca4063896b19ca385b6ba1
 # d57bb274bb344178963fbce5c9b51b7d
-#: ../changelogs/galette_10.rst:47 d52ea576a2ca4063896b19ca385b6ba1
+#: ../changelogs/galette_10.rst:56 d52ea576a2ca4063896b19ca385b6ba1
 msgid "Update third party libraries"
 msgstr "Оновлення сторонніх бібліотек"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:48 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:57 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -328,7 +441,7 @@ msgstr ""
 "galette.eu/issues/1635>`_)"
 
 # 0d934e8059e64803ac5cc67207c1dfef
-#: ../changelogs/galette_10.rst:49 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:58 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Several PHP 8.1 compatibility fixes (`#1626 <https://bugs.galette.eu/"
@@ -510,18 +623,6 @@ msgstr "Застарілі версії"
 #~ "Не повідомляється член про зміну внеску (`#1465 <https://bugs.galette.eu/"
 #~ "issues/1465>`_)"
 
-# 09c0a7212cdd4f6d949abeb3aa3febcb
-#, fuzzy
-#~| msgid ""
-#~| "Error creating dynamic field with empty name (`#1452 <https://bugs."
-#~| "galette.eu/issues/1452>`_)"
-#~ msgid ""
-#~ "Mass change dynamic fields (`#1194 <https://bugs.galette.eu/"
-#~ "issues/1194>`_)"
-#~ msgstr ""
-#~ "Помилка створення динамічного поля з порожнім ім'ям (`#1452 <https://bugs."
-#~ "galette.eu/issues/1452>`_)"
-
 # f00af03eecfb4cd4b8b81b61ddd71a03
 #, fuzzy
 #~| msgid ""
@@ -616,30 +717,6 @@ msgstr "Застарілі версії"
 #~ "Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs."
 #~ "galette.eu/issues/1454>`_)"
 
-# f00af03eecfb4cd4b8b81b61ddd71a03
-#, fuzzy
-#~| msgid ""
-#~| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/"
-#~| "issues/1454>`_)"
-#~ msgid ""
-#~ "Fix new user registration email (`#1577 <https://bugs.galette.eu/"
-#~ "issues/1577>`_)"
-#~ msgstr ""
-#~ "Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs."
-#~ "galette.eu/issues/1454>`_)"
-
-# f00af03eecfb4cd4b8b81b61ddd71a03
-#, fuzzy
-#~| msgid ""
-#~| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/"
-#~| "issues/1454>`_)"
-#~ msgid ""
-#~ "Fix contributions ordered on payment type (`#1579 <https://bugs.galette."
-#~ "eu/issues/1579>`_)"
-#~ msgstr ""
-#~ "Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs."
-#~ "galette.eu/issues/1454>`_)"
-
 # f5b4a45e98274de29e0bb3913a283610
 #, fuzzy
 #~| msgid ""
@@ -692,18 +769,6 @@ msgstr "Застарілі версії"
 #~ msgstr ""
 #~ "Не повідомляється член про зміну внеску (`#1465 <https://bugs.galette.eu/"
 #~ "issues/1465>`_)"
-
-# f5b4a45e98274de29e0bb3913a283610
-#, fuzzy
-#~| msgid ""
-#~| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
-#~| "issues/1508>`_)"
-#~ msgid ""
-#~ "Ability to order on contributions and transactions ID (`#1502 <https://"
-#~ "bugs.galette.eu/issues/1502>`_)"
-#~ msgstr ""
-#~ "Виправлення кольорів карток у нових установленнях (`#1508 <https://bugs."
-#~ "galette.eu/issues/1508>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
 #, fuzzy
@@ -823,13 +888,6 @@ msgstr "Застарілі версії"
 #~ msgstr ""
 #~ "На загальнодоступних сторінках відсутнє розбивання на сторінки (`#1453 "
 #~ "<https://bugs.galette.eu/issues/1453>`_)"
-
-# f00af03eecfb4cd4b8b81b61ddd71a03
-#~ msgid ""
-#~ "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
-#~ msgstr ""
-#~ "Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs."
-#~ "galette.eu/issues/1454>`_)"
 
 # 85a5c9e656a24c6e91fa8a70f489356f
 #~ msgid ""
