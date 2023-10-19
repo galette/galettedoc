@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2023-10-19 22:16+0200\n"
-"PO-Revision-Date: 2023-10-19 20:19+0000\n"
+"PO-Revision-Date: 2023-10-19 20:27+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
 "documentation-changelog/fr/>\n"
@@ -76,16 +76,12 @@ msgstr ""
 "(`#1725 <https://bugs.galette.eu/issues/1725>`_)"
 
 #: ../changelogs/galette_10.rst:21 c60cf0b056c247968c4dfe1e8ed238d9
-#, fuzzy
-#| msgid ""
-#| "Fix groups members removal error (`#1251 <https://bugs.galette.eu/"
-#| "issues/1251>`_)"
 msgid ""
 "Resize and crop member picture to a fixed ratio (`#1717 <https://bugs."
 "galette.eu/issues/1717>`_)"
 msgstr ""
-"Correction de la suppression des groupes (`#1251 <https://bugs.galette.eu/"
-"issues/1251>`_)"
+"Retaillage et recadrage des images des adhérents selon un ratio fixe (`#1717 "
+"<https://bugs.galette.eu/issues/1717>`_)"
 
 #: ../changelogs/galette_10.rst:26 9ce8f744c7c84e66987a28e1a4c26569
 msgid "Fixed"
@@ -194,87 +190,60 @@ msgstr ""
 "bugs.galette.eu/issues/1626>`_)"
 
 #: ../changelogs/galette_10.rst:41 e40ebf19d4f14628a500813651fb01a4
-#, fuzzy
-#| msgid ""
-#| "Fix logo size on member card (`#1626 <https://bugs.galette.eu/"
-#| "issues/1626>`_)"
 msgid ""
 "Fix timeout using logo on PDF member cards (`#1726 <https://bugs.galette.eu/"
 "issues/1726>`_)"
 msgstr ""
-"Correction de la taille du logo sur les cartes de membre (`#1626 <https://"
-"bugs.galette.eu/issues/1626>`_)"
+"Correction d'un timeout à l'utilisation du logo dans les cartes de membre "
+"PDF (`#1726 <https://bugs.galette.eu/issues/1726>`_)"
 
 #: ../changelogs/galette_10.rst:42 ef79678c4973494d92ca68864b4c2a57
-#, fuzzy
-#| msgid ""
-#| "Fix dynamic fields on transactions and contributions (`#1146 <https://"
-#| "bugs.galette.eu/issues/1146>`_)"
 msgid ""
 "Fix dynamic files on contributions and transactions (`#1697 <https://bugs."
 "galette.eu/issues/1697>`_)"
 msgstr ""
-"Correction des champs dynamiques sur les transactions et contributions "
-"(`#1146 <https://bugs.galette.eu/issues/1146>`_)"
+"Correction des fichiers dynamiques sur les contributions et transactions (`#"
+"1697 <https://bugs.galette.eu/issues/1697>`_)"
 
 #: ../changelogs/galette_10.rst:43 e40ebf19d4f14628a500813651fb01a4
-#, fuzzy
-#| msgid ""
-#| "New preference to show/hide borders around PDF member cards (`#184 "
-#| "<https://bugs.galette.eu/issues/184>`_)"
 msgid ""
 "Drop required fields on PDF member cards (`#781 <https://bugs.galette.eu/"
 "issues/781>`_)"
 msgstr ""
-"Nouvelle préférence pour afficher/masquer les bordures autour des cartes de "
-"membres PDF (`#184 <https://bugs.galette.eu/issues/184>`_)"
+"Suppression de champs requis sur les cartes de membre PDF (`#781 "
+"<https://bugs.galette.eu/issues/781>`_)"
 
 #: ../changelogs/galette_10.rst:44 c60cf0b056c247968c4dfe1e8ed238d9
-#, fuzzy
-#| msgid ""
-#| "Parent group removed when a manager edit a group (`#1648 <https://bugs."
-#| "galette.eu/issues/1648>`_)"
 msgid ""
 "Parent group can be lost when a groupmanager edits a group (`#1708 <https://"
 "bugs.galette.eu/issues/1708>`_)"
 msgstr ""
-"Le groupe parent était perdu lorsqu'un responsable de groupe modifiait un "
-"groupe (`#1648 <https://bugs.galette.eu/issues/1648>`_)"
+"Le groupe parent pouvait être perdu lorsqu'un responsable de groupe "
+"modifiait un groupe (`#1708 <https://bugs.galette.eu/issues/1708>`_)"
 
 #: ../changelogs/galette_10.rst:45 ef79678c4973494d92ca68864b4c2a57
-#, fuzzy
-#| msgid ""
-#| "Mass add contributions (`#1381 <https://bugs.galette.eu/issues/1381>`_)"
 msgid ""
 "Mass add contribution fail if data is missing (`#1694 <https://bugs.galette."
 "eu/issues/1694>`_)"
 msgstr ""
-"Ajout en masse de contributions (`#1381 <https://bugs.galette.eu/"
-"issues/1381>`_)"
+"L'ajout en masse de contribution échouait s'il manquait une donnée (`#1694 "
+"<https://bugs.galette.eu/issues/1694>`_)"
 
 #: ../changelogs/galette_10.rst:46 ef79678c4973494d92ca68864b4c2a57
-#, fuzzy
-#| msgid ""
-#| "Fix contributions ordered on payment type (`#1579 <https://bugs.galette."
-#| "eu/issues/1579>`_)"
 msgid ""
 "Dynamic contribution fields not rendered on advanced search (`#1693 <https://"
 "bugs.galette.eu/issues/1693>`_)"
 msgstr ""
-"Correction des contributions triées par type de paiement (`#1579 <https://"
-"bugs.galette.eu/issues/1579>`_)"
+"Les champs dynamiques des contributions n'étaient pas affichés dans la "
+"recherche avancée (`#1693 <https://bugs.galette.eu/issues/1693>`_)"
 
 #: ../changelogs/galette_10.rst:47 ef79678c4973494d92ca68864b4c2a57
-#, fuzzy
-#| msgid ""
-#| "Dynamic fields order was not stored (`#1262 <https://bugs.galette.eu/"
-#| "issues/1262>`_)"
 msgid ""
 "Dynamic contributions choice fields on advanced search fail using postgres "
 "(`#1692 <https://bugs.galette.eu/issues/1692>`_)"
 msgstr ""
-"L'ordre des champs dynamiques n'était pas enregistré (`#1262 <https://bugs."
-"galette.eu/issues/1262>`_)"
+"Les champs dynamiques de type choix sur les contributions échouaient avec "
+"postgres (`#1692 <https://bugs.galette.eu/issues/1692>`_)"
 
 #: ../changelogs/galette_10.rst:52 d217a4ec7c9b4dc7b6230b5e17b8c11e
 msgid "Under the hood..."
