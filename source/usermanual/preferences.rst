@@ -137,6 +137,7 @@ Sending email parameters:
 * **Members administrator email**: email address on which inscription notifications will be send, you can set several addresses separated with comas,
 * **Send emails to administrators**: whether to send emails to administrators on subscription,
 * **Wrap text emails**: automatically wraps long lines in emails. If you disable this options, make sure to wrap yourself,
+* **Send emails to members**: whether to send emails to members when their information are updated or a contribution is created on their behalf,
 * **Activate HTML editor**: activate HTML format when sending emails (discouraged),
 * **Emailing method**: method used to send emails:
 
