@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 22:14+0200\n"
+"POT-Creation-Date: 2023-11-05 13:14+0100\n"
 "PO-Revision-Date: 2023-09-05 20:28+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/galette/"
-"doc-plugins-objectslend/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
+"plugins-objectslend/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,57 +16,57 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.0.1-dev\n"
 
-#: ../plugins/objectslend.rst:3 a4d4d1b1fa0c4cfab04e50c507167d64
+#: ../plugins/objectslend.rst:3 6fa9d5e45ec640d29bf1106dd922474d
 msgid "Objects lend"
 msgstr "Prêt d'objets"
 
-#: ../plugins/objectslend.rst:5 69bf44891ba44a2b9aebb66d7799de09
+#: ../plugins/objectslend.rst:5 caf3d14580d546588a27565b1b3e8281
 msgid "This plugin provides:"
 msgstr "Ce plugin fournit :"
 
-#: ../plugins/objectslend.rst:7 e85c19100592422c997d2fe333cf69ee
+#: ../plugins/objectslend.rst:7 0774d2882d4a4c0dba74106905aa5546
 msgid "objects management (description, size, lenght, price, ...)"
 msgstr "gestion d'objets (description, taille, poids, prix, ...)"
 
-#: ../plugins/objectslend.rst:8 d862b49820df47ab8a7ed3dc3528f250
+#: ../plugins/objectslend.rst:8 cafd9814dcb34f01839754a1405d2162
 msgid "groups objects by categories,"
 msgstr "regroupement d'objets par catégories,"
 
-#: ../plugins/objectslend.rst:9 84b6a9e86d5f4626867721b0c300b9af
+#: ../plugins/objectslend.rst:9 d1c1ab54b0784a26b5c4b467f59888d6
 msgid "manage object state, and their presence in stock or not,"
 msgstr ""
 "gestion des statuts des objets, ainsi que leur présence ou non en stock,"
 
-#: ../plugins/objectslend.rst:10 1dda564c75994c6e9d322914c0c11bf9
+#: ../plugins/objectslend.rst:10 910b4f70c04e4686a5a06775bfc026de
 msgid "manage lending and/or renting objects,"
 msgstr "gestion des prêts et/ou location d'objets,"
 
-#: ../plugins/objectslend.rst:11 adbe56175110460fa1559ce866b3cd50
+#: ../plugins/objectslend.rst:11 0cdcbb4e1c0c4d5fb314a938df4526c4
 msgid "contribution generation,"
 msgstr "génération de contributions,"
 
-#: ../plugins/objectslend.rst:12 613e7a8284b443f0a5a22fd7bb3962f7
+#: ../plugins/objectslend.rst:12 66ed11894c5e491f8d3c261febdeba88
 msgid "..."
 msgstr "..."
 
-#: ../plugins/objectslend.rst:15 a116fa2d232a4edbb17b8a322de3b7a6
+#: ../plugins/objectslend.rst:15 9f143d2fd1ac4020bc984f1ab6fd6156
 msgid "Installation"
 msgstr "Installation"
 
 # f9cea004b1734b2382018cb5443de9ad
-#: ../plugins/objectslend.rst:17 f9cea004b1734b2382018cb5443de9ad
+#: ../plugins/objectslend.rst:17 814ff335ab76496d9daeaa5f9e13507f
 msgid "First of all, download the plugin:"
 msgstr "Tout d'abord, téléchargez le plugin :"
 
-#: ../plugins/objectslend.rst:-1 1864a77e36b44b7f941d0920afef31ac
+#: ../plugins/objectslend.rst:-1 1d1a5548a83743b8af1d8a55b2ccb940
 msgid "Get latest ObjectsLend plugin!"
 msgstr "Obtenir le dernier plugin ObjectsLend !"
 
-#: ../plugins/objectslend.rst:-1 c22fc51f5f8c475caf2ebd863e1ecabd
+#: ../plugins/objectslend.rst:-1 19202080423c4366ba0507e15dc1a5fc
 msgid "Get ObjectsLend plugin nightly build!"
 msgstr "Obtenir la nightly du plugin ObjectsLend !"
 
-#: ../plugins/objectslend.rst:27 c0e97675457841e3b6ffd51e843d548a
+#: ../plugins/objectslend.rst:27 02b22a4ba7904696a5f5a2b614def239
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -75,11 +75,11 @@ msgstr ""
 "exemple, sous linux (en remplaçant `{url}` et `{version}` par les valeurs "
 "adéquates) :"
 
-#: ../plugins/objectslend.rst:38 72e9605c48bd4675837c3f72148215d2
+#: ../plugins/objectslend.rst:38 0778cff794b2486daf9a5a34d7b5c574
 msgid "Database initialisation"
 msgstr "Initialisation de la base de données"
 
-#: ../plugins/objectslend.rst:40 9c3cb04814a94595b8f18d4cd99477c8
+#: ../plugins/objectslend.rst:40 ea87bcda8f434c079e4d0703e6da02f9
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
@@ -88,15 +88,15 @@ msgstr ""
 "Référez-vous :ref:`à l'interface de gestion des plugins de Galette "
 "<plugins_managment>`."
 
-#: ../plugins/objectslend.rst:42 d8fa623eb0654ce5a3ee16335c96b514
+#: ../plugins/objectslend.rst:42 5275326486fe425c98d3684a81f1ffb5
 msgid "And this is finished; ObjectsLend plugin is installed :)"
 msgstr "Et c'est terminé, le plugin ObjectsLend est installé :)"
 
-#: ../plugins/objectslend.rst:45 13f78d3c8f374c85874323bc23bfa554
+#: ../plugins/objectslend.rst:45 400b87eb08e4400a87161633ac862c0c
 msgid "Plugin usage"
 msgstr "Utilisation du plugin"
 
-#: ../plugins/objectslend.rst:47 a64162e25f0b427b87a4e2cd5825e464
+#: ../plugins/objectslend.rst:47 29905492c5194254966ffff14aa432be
 msgid ""
 "Once plugin has been installed, a `Object lend` group is added to Galette "
 "menu."
@@ -104,7 +104,7 @@ msgstr ""
 "Une fois le plugin installé, un groupe `Prêt d'objets` est ajouté au menu de "
 "Galette."
 
-#: ../plugins/objectslend.rst:49 607bcb44cde845aeae7db18fd99dcc60
+#: ../plugins/objectslend.rst:49 fefb4e7ebe214a6aabdf6fe18fa29982
 msgid ""
 "Defaults status are provided at installation, but they can not fit your "
 "needs, you can of course define your own."
@@ -112,7 +112,7 @@ msgstr ""
 "Des statuts par défaut sont fournis à l'installation, mais ils pourraient ne "
 "pas convenir à vos besoins, vous pourrez bien sûr définir les vôtres."
 
-#: ../plugins/objectslend.rst:55 84d4b302fe3247038d993417b8d0f6bb
+#: ../plugins/objectslend.rst:55 e532119d8210451f9f3e7751124dccb5
 msgid ""
 "Define status, create categories and objects; users can lend objects with a "
 "reason, then give them back with location."
@@ -121,7 +121,7 @@ msgstr ""
 "utilisateurs pourront emprunter des objets avec une raison, puis pourront "
 "les rendre avec le bouton retour et une localisation."
 
-#: ../plugins/objectslend.rst:57 93fcf4b0fdba4ded950b37b54119bfc6
+#: ../plugins/objectslend.rst:57 1e3624df6e374cd68147fce0d1cd0d53
 msgid ""
 "A lend history is provided for administrators and staff members from object "
 "page."
@@ -129,16 +129,16 @@ msgstr ""
 "Un historique des prêts est fourni pour les administrateurs et membres du "
 "bureau depuis la page d'un objet."
 
-#: ../plugins/objectslend.rst:60 78fa0c60bf964341aa1a5a8e098d966b
+#: ../plugins/objectslend.rst:60 790e83fd50164ef7a9f1fd56e2e63a0e
 msgid "Preferences"
 msgstr "Préférences"
 
-#: ../plugins/objectslend.rst:62 f58623877d1f43299d8958d5ec484bfb
+#: ../plugins/objectslend.rst:62 0a000a857a56486ca345f050bf73298d
 msgid "Several preferences allows to change plugin behavior."
 msgstr ""
 "Plusieurs préférences vous permettent de modifier le comportement du plugin."
 
-#: ../plugins/objectslend.rst:76 690635ef3c424ab9b0b67a50f01ac3c3
+#: ../plugins/objectslend.rst:76 4c9064cb5c1548cdaf3b025c93c00bec
 msgid ""
 "From this screen, you can define if members can lend objects or not, if it "
 "should create a new contribution (and its type and description), if image "
@@ -149,11 +149,11 @@ msgstr ""
 "(ainsi que son type et une description), si l'image doit être affichée dans "
 "la liste des objets et la taille des miniatures."
 
-#: ../plugins/objectslend.rst:80 838a5757968f43ce9a37cbcb2a43257b
+#: ../plugins/objectslend.rst:80 ec9d30de8321463aa4938c0df9b11ffe
 msgid "It is possible to activate the fullsize photo display."
 msgstr "Il est possible d'activer l'affichage des photos en pleine taille."
 
-#: ../plugins/objectslend.rst:84 e59d519f30b84115a8bf1b026fabfa24
+#: ../plugins/objectslend.rst:84 d90d35b380554f6b92763b7fc32bfedd
 msgid ""
 "Photos sent with previous plugin version were always resized, only the "
 "thumbnail was stored. If you want to get fullsize display, you will have to "
