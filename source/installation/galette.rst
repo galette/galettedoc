@@ -138,6 +138,16 @@ Next screen will ask you for information to create the Galette super admin user.
    :scale: 50%
    :align: center
 
+Telemetry
+=========
+
+To know more about Galette installed instances, we try to collect anonymous telemetry data. You can also register as a Galette user :)
+
+.. image:: ../_styles/static/images/installation/7_telemetry.png
+   :scale: 50%
+   :align: center
+
+
 Initialize
 ==========
 
@@ -153,18 +163,22 @@ The last step will write the configuration file if needed, and initialyse some v
 
 When updating, only the missing preferences and the new default data if any will be handled.
 
+.. image:: ../_styles/static/images/installation/8_initialization.png
+   :scale: 50%
+   :align: center
+
 Installation end
 ================
 
 Installation is now finished, congratulations!
 
-.. image:: ../_styles/static/images/installation/8_the_end.png
+.. image:: ../_styles/static/images/installation/9_the_end.png
    :scale: 50%
    :align: center
 
 You can now login to Galette, using super admin information you used at installation time. You can now go to the :doc:`Galette user manual <../usermanual/index>`.
 
-.. image:: ../_styles/static/images/installation/9_login.png
+.. image:: ../_styles/static/images/installation/10_login.png
    :scale: 50%
    :align: center
 
