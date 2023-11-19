@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-05 13:14+0100\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,66 +16,66 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../usermanual/pdf_models.rst:5 1e35f06d03c84434916cc6e4b8bc1615
+#: ../usermanual/pdf_models.rst:5 d16a73f2eec64382be813390f87e062c
 msgid "PDF models"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:7 86750c6e6136442e85f0c7a313b1b687
+#: ../usermanual/pdf_models.rst:7 96cb9421538941e38a391868bb5a27ce
 msgid ""
 "PDF models are provided for several outputs : an invoice model, a receipt "
 "model and a membership from model are currently available. All of them "
 "inherits from a `Global` model."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:-1 4dd98d1c964740f88f4c04ba3b76c2fe
+#: ../usermanual/pdf_models.rst:-1 46c716eef77141f68a210ebf5a65248d
 msgid "PDF models management"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:15 1a871a8c9c6843409e137b3d453023b2
+#: ../usermanual/pdf_models.rst:15 3f47123045c44997b7b599dd611fc47a
 msgid "Models inheritance"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:17 4a1b3f1446d8409baae93147657458ef
+#: ../usermanual/pdf_models.rst:17 f2868b0991074dafb33a8eaca031ae3d
 msgid "The global model defines three distincts parts:"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:19 dcd53f7b5fd244a8bc4972e4ba24a964
+#: ../usermanual/pdf_models.rst:19 9677543b8f084a4cb0be4b7db5824d7d
 msgid "header,"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:20 b7e27cc05c474f36b77cc014cb8ebfd5
+#: ../usermanual/pdf_models.rst:20 f25efe84e91547f5ad3a0f613bac10aa
 msgid "footer,"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:21 7cd6f66e7c914a3cb22ed89a61d0f7e5
+#: ../usermanual/pdf_models.rst:21 fb0633cd2723449982e52dada96f3801
 msgid "CSS styles."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:23 27e9d8729a424f12bb08a9e765d626bd
+#: ../usermanual/pdf_models.rst:23 2f91f1a54da04be99a9ebdeeb2c961e9
 msgid ""
 "Each model which inherits from `Global` will automatically obtain same "
 "header and footer except if the new model redefines them, in which case only "
 "specific values will be applied."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:25 510fa3f47a794f58a894b8c747330e10
+#: ../usermanual/pdf_models.rst:25 fb19833be15644cfbe98f65537d0b31b
 msgid ""
 "For CSS properties it is a bit different: `Global` model properties will "
 "always be applied, and specific model properties will be appended (jsut like "
 "real CSS stylesheets)."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:28 574e9ed3f7d94d7b9fabae3a62499674
+#: ../usermanual/pdf_models.rst:28 18028586cc404605b575cace3f08bc8f
 msgid "Generalities"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:30 a3458798d73143fab354b003fb367577
+#: ../usermanual/pdf_models.rst:30 514847b03f1645cca71ce658d425006b
 msgid ""
 "In addition of header, footer and CSS styles, a model defines a title, a sub "
 "title and a body."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:32 896dad06c2ac4f65bbdb6a99343ee138
+#: ../usermanual/pdf_models.rst:32 7799205d9ec94bde904af0eea99e655d
 msgid ""
 "Each of those fields can take some replacement values, refer to the inline "
 "help from the user interface to get details. They also can contains "
@@ -83,43 +83,43 @@ msgid ""
 "standard translation capacities."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:34 76d6e57981cc4e819662046424124727
+#: ../usermanual/pdf_models.rst:34 5c5cbe88aa964926a2ab04f76292fd39
 msgid ""
 "Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
 "file, and not displaying a page in a recent brower; there are many "
 "limitations."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:37 b6c6d984341e44ae92637d4d73f44521
+#: ../usermanual/pdf_models.rst:37 13da33a36db64a4c96c92bf4ba19b86e
 msgid "Invoices and receipts"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:39 eb1c9ea008114586a1de973be6818d34
+#: ../usermanual/pdf_models.rst:39 87197e2d52b743d9b0362facef8747e1
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:-1 901b1ebd27e04e7685e71d960d3b32bf
+#: ../usermanual/pdf_models.rst:-1 9fa47760bbc0423880c05a1f2ce6902c
 msgid "Invoice PDF model"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:46 6aa865f233a340f4bb73b9a01dede5ec
+#: ../usermanual/pdf_models.rst:46 81316cb5e5a14037b0af6b42c62ffa1e
 msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:49 03cc514bdb6d4f06b7cf2ceb1da17180
+#: ../usermanual/pdf_models.rst:49 1195c0c6d5384d3eb41a5efa90800e4a
 msgid "Membership form"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:51 fd41b88781c746d3aa8e49730fe9bd52
+#: ../usermanual/pdf_models.rst:51 cf1c6206876d4ada90aa90e05dff5b85
 msgid ""
 "It is a model that can be used to print a membership form. It can be empty "
 "(to print some of them for any event for example) or filled with one member "
 "informations."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:53 4d38017b7c5a4653beee35078e70f4e1
+#: ../usermanual/pdf_models.rst:53 3cfab6378f114b25ad54a51127100c72
 msgid ""
 "Since there are many limitation, you may use the :doc:`FullCard plugin </"
 "plugins/fullcard>` that will replace this model. It is more complex to "
