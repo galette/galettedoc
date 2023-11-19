@@ -102,7 +102,6 @@ Galette preferences allows to specify spacing for cards, but not their with, nor
 CSV exports
 ===========
 
-
 .. versionchanged:: 1.0.0
 
    You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file instead of an XML one.
@@ -170,3 +169,44 @@ There are a few tools provided for Galette admin that permits to:
 * **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
 * **reinitialize PDF models** will reset ll PDF models to default values,
 * **generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
+
+.. _galettemodes:
+
+Galette modes
+=============
+
+Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration <behavior>`). This directive can take the following values:
+
+* ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch.
+* ``DEV``: development mode:
+
+  - unstable/not finished parts will be activated,
+  - some data will not be stored in session,
+  - default log level is set to ``DEBUG``,
+  - news won't be cached,
+  - database verion check will not be done.
+
+* ``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ...
+* ``TEST``: reserved for unit tests.
+* ``MAINT``: maintainance mode. Only super admin will be able to login.
+
+.. _behavior:
+
+**********************
+Behavior configuration
+**********************
+
+It is possible to change some of Galette behaviors:
+
+* `GALETTE_MODE`: :ref:`see Galette modes <galettemodes>`;
+* `NON_UTF_DBCONNECT`: disable explicitely UTf-8 connection to the database (for users who see encoding issues);
+* you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...).
+
+You can add those directives by declaring constants in the ``galette/config/behavior.inc.php``.
+
+For example:
+
+.. code-block:: php
+
+   <?php
+   define('GALETTE_MODE', 'DEV');

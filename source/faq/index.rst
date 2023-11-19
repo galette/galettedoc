@@ -10,21 +10,15 @@ What if Galette does not work?
 
 Sometimes, after an update, a change on hosting, or a simple bug - even minor ones - may cause a fail in Galette. You may observe:
 
-* a simple error message id displayed,
+* an error message is displayed,
 * a blank page,
-* a page with a backtace (usually, not in production mode),
 * ...
 
 In all cases, you **must check the logs**. Most of errors are stored in those files, it is a very good start point to understand the problem and potentially solve it.
 
-There are two types of log files: Galette ones, and system ones.
 Galette logs are stored in the ``galette/data/log`` per default.
 
-Server logs are another subject. On shared webservers, they are often not accessible to you :( On a dedicated webserver, their location change with server configuration; it is related to the operating system used, PHP and/or web server configuration, ...
-
-* with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for GNU/Linux Red Hat like distributions),
-* with (the deprecated) ``mod_php``, you'll find them in ``/var/log/httpd/error_log`` (on other GNU/Linux distributions, `httpd` may be named `apache`),
-* on Windows/MacOS with XAMPP like solutions, there is at least one log directory in installation; you may find what you look for there.
+:ref:`Enabling development mode <galettemodes>` will give you more information, and deactivate cache, that may help resolving your issue.
 
 *****************************************
 How to report a bug or ask for a feature?
