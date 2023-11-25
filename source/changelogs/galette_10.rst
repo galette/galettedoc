@@ -45,6 +45,9 @@ Fixed
 * Mass add contribution fail if data is missing (`#1694 <https://bugs.galette.eu/issues/1694>`_)
 * Dynamic contribution fields not rendered on advanced search (`#1693 <https://bugs.galette.eu/issues/1693>`_)
 * Dynamic contributions choice fields on advanced search fail using postgres (`#1692 <https://bugs.galette.eu/issues/1692>`_)
+* Several minor issues with RTL languages on PDF generation (`#1727 <https://bugs.galette.eu/issues/1727>`_)
+* Issues on transactions search with some date formats (`#1731 <https://bugs.galette.eu/issues/1731>`_)
+* Selected members were not reset creating a new mailing (`#1742 <https://bugs.galette.eu/issues/1742>`_)
 
 .. _souscapot_100:
 
