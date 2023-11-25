@@ -56,25 +56,9 @@ How to search in lists archives?
 
 Mailing lists are the main communication channel for Galette, from its beginnings.
 
-As a reminder, since 2017, two lists are available:
+See `contact page <https://galette.eu/site/contact#mailing-lists>`_ for more information.
 
-* `users discussion list <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : general talks, help, ...
-* `development discussion list <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : technical discussions, tickets triaging, ...
-
-If you are looking for archives before 2017, see:
-
-* `old users discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_
-* `old development discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_
-
-Unfortunately, there is no search mechanism in any of those lists archives. The alternative is to use the `site:` keyword from your favorite search engine (most of them supports that keyword):
-
-.. code-block:: php
-
-   site:https://listengine.tuxfamily.org/lists.galette.eu/users plugin
-
-Above search will look for "plugin" in archives of users mailing list. Just adapt the URL to the list/period and keywords you want ;)
-
-To improve the search, refer to your search engine documentation.
+The most simple and reliable way to `search on past Galette related discussion <https://www.mail-archive.com/search?l=all&q=galette&a=1>`_ is to make a query on mail archive services.
 
 **************************************************
 How to use same email address for several members?
