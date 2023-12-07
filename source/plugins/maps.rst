@@ -12,8 +12,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.7.0-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.7.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.0.0-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-2.0.0.tar.bz2
    :alt: Get latest Maps plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
