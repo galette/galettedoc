@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-01-23 06:58+0000\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-07-11 06:34+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "contributions/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: ../usermanual/contributions.rst:3 cb8f2c777c2d40d7964ee4dfbebc0173
 msgid "Contributions management"
@@ -136,6 +136,10 @@ msgstr ""
 "Le bouton rappel du tableau de bord ou l'entrée rappels du menu "
 "configuration vous donnent accès à l'interface de gestion des rappels."
 
+#: ../usermanual/contributions.rst:-1 377a38171375457fb466200072e77825
+msgid "Reminders management interface"
+msgstr "Interface de gestion des rappels"
+
 #: ../usermanual/contributions.rst:44 c792675a21e94502a57df0d11b86bf8d
 msgid "Two categories can be selected:"
 msgstr "Deux catégories peuvent être sélectionnées :"
@@ -236,6 +240,10 @@ msgstr "la date (date courante par défaut),"
 msgid "the amount."
 msgstr "le montant."
 
+#: ../usermanual/contributions.rst:-1 689cf0f5127d40c2bd34dc9cebbd2759
+msgid "Transactions list"
+msgstr "Liste des transactions"
+
 #: ../usermanual/contributions.rst:83 88eee3021b8d42669046da8e2bd2da7d
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
@@ -244,6 +252,10 @@ msgstr ""
 "Chaque transaction est ventilée entre différentes contributions, dans la "
 "limite du montant de la transaction. Une transaction n'a en elle même aucun "
 "effet sur les dates d'échéances des adhérents."
+
+#: ../usermanual/contributions.rst:-1 98f234f4bc434f51b8fc11b48a090aef
+msgid "Add a transaction"
+msgstr "Ajouter une transaction"
 
 #: ../usermanual/contributions.rst:90 22d76e97ce854360a9feef7b0fad15dc
 msgid ""
@@ -259,9 +271,18 @@ msgstr ""
 "autre. Par défaut, le montant d'une nouvelle contribution depuis une "
 "transaction sera le montant non encore ventilé de la transaction."
 
+#: ../usermanual/contributions.rst:-1 cfda7691d1464e009ae926d41bb0f3ba
+msgid "Add a contribution linked to a partially dispatched transaction"
+msgstr ""
+"Ajouter une contribution liée à une transaction partiellement dispatchée"
+
 #: ../usermanual/contributions.rst:97 594f726da80443dda2a7b32897d88a98
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr "Bien sûr, il est également possible de modifier une transaction :"
+
+#: ../usermanual/contributions.rst:-1 e6eee0c98f9d44c0a2323b707e5a69c1
+msgid "Transaction edition"
+msgstr "Édition d'une transaction"
 
 #: ../usermanual/contributions.rst:104 610abfb3c2fc4af18c8a4b5689561e49
 msgid ""
@@ -269,6 +290,10 @@ msgid ""
 msgstr ""
 "Vous pouvez aussi attacher des contributions existantes au lieu d'en créer "
 "de nouvelles."
+
+#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+msgid "Add an already existing contribution to a transaction"
+msgstr "Ajouter une contribution existante à une transaction"
 
 #: ../usermanual/contributions.rst:114 e32535dd4a574da2b536e8daa5eb7722
 msgid "Members selection"

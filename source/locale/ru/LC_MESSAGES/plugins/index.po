@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Evgeniy Khramov <thejenjagamertjg@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-12-09 16:49+0000\n"
+"Last-Translator: Evgeniy Khramov <thejenjagamertjg@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-"
+"plugins-index/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.15-dev\n"
+
+#: ../plugins/index.rst:7 9f286384bdcf4357a67512dadc464885
+msgid ":doc:`Plugins documentation <index>`"
+msgstr ""
+
+#: ../plugins/index.rst:13 77622bd4ee3c4eb7b42fec1153fe57da
+msgid "Plugins"
+msgstr "Плагины"
+
+#: ../plugins/index.rst:15 20eaa90f7f0143dcb3a40529ec4581d1
+msgid ""
+"Plugins system allows to extend Galette with specific features that would "
+"not be useful for most of the users. Incompatible plugins will automatically "
+"be disabled, in which case you should consider upgrading to a more recent "
+"version."
+msgstr ""
+
+#: ../plugins/index.rst:17 87b1d92dfaf04f2e8c125aee56676a15
+msgid ""
+"Each plugin is a simple directory in ``{galette}/plugins/``, then refer to "
+"the plugin documentation to install it."
+msgstr ""
+
+#: ../plugins/index.rst:19 057d6d23fa97483b9cb5c48e20b3f8fd
+msgid ""
+"You can disable a plugin creating a ``_disabled`` file in its directory."
+msgstr ""
+
+#: ../plugins/index.rst:23 378be41e5958451190d604c0fef9bf95
+msgid "Official Plugins"
+msgstr ""
+
+#: ../plugins/index.rst:25 389cfb939ad743fc82512bd709d2931f
+msgid ""
+"Official plugins are developed and maintained by the Galette team. Available "
+"official plugins are:"
+msgstr ""
+
+#: ../plugins/index.rst:39 4c9dbe22076d44539ce37403ed706f28
+msgid "Third party plugins"
+msgstr ""
+
+#: ../plugins/index.rst:41 8f005e5b645142d4884d77ae4b499695
+msgid ""
+"Third party plugins are developed and maintained by community members. Some "
+"of them may not be translated, or available on only one database engine."
+msgstr ""
+
+#: ../plugins/index.rst:43 768253b9ab484890b2d7ecfeae4ebfb3
+msgid ""
+"`oAuth2 <https://github.com/galette-community/plugin-oauth2>`_ (Galette act "
+"as an oAuth2 provider), developped by Manuel,"
+msgstr ""
+
+#: ../plugins/index.rst:44 768253b9ab484890b2d7ecfeae4ebfb3
+msgid ""
+"`Stripe <https://github.com/galette-community/plugin-stripe>`_ (handle "
+"`Stripe payments <https://stripe.com/>`_), developped by Mathieu,"
+msgstr ""
+
+#: ../plugins/index.rst:45 93c8143a19ae49398850256e929f31a4
+msgid ""
+"`Aéroclub <https://galette-community.github.io/plugin-aeroclub/>`_ (base "
+"management of a flying club), developed by Mélissa (**no longer "
+"maintained**),"
+msgstr ""
+
+#: ../plugins/index.rst:46 dde62501fdd9413faa3dba108c8a4178
+msgid ""
+"`QRCodes <https://galette-community.github.io/plugin-qrcodes/>`_ (QRCodes "
+"generation), developed by Frédéric (**no longer maintained**),"
+msgstr ""
+
+#: ../plugins/index.rst:47 ff077e88788b40fd9c58ea96da46d00d
+msgid ""
+"`Grades <https://galette-community.github.io/plugin-grades/>`_ (evaluations "
+"management), developed by Frédéric (**no longer maintained**)."
+msgstr ""
+
+#: ../plugins/index.rst:49 768253b9ab484890b2d7ecfeae4ebfb3
+msgid ""
+"A `Github community <https://github.com/galette-community/>`_ has been "
+"created to :doc:`manage third party plugins <plugins-tiers>`, if you want to "
+"add your plugin."
+msgstr ""
+
+#: ../plugins/index.rst:60 699c14f189ea4781b54ab828faa579e7
+msgid "Plugins management interface"
+msgstr ""
+
+#: ../plugins/index.rst:62 f0d2b7511fad4536af2cd3f8b589e9f7
+msgid ""
+"A plugins management interface is provided, you will find it from the "
+"dashboard or in the configuration menu. After you have downloaded plugin(s) "
+"in Galette ``plugins`` directory, a list will be displayed:"
+msgstr ""
+
+#: ../plugins/index.rst:-1 b962fd6fbc234ffbb40ed53c38e688ac
+msgid "Plugins management"
+msgstr ""
+
+#: ../plugins/index.rst:69 3701d8b0588649ff914801cc8acd029a
+msgid ""
+"If web server has read access to your plugins directory, then you can enable "
+"or disable any plugin from the related icon."
+msgstr ""
+
+#: ../plugins/index.rst:71 91de008c63ed4ced97e979796d17ed4c
+msgid ""
+"If plugin requires a database to work, you can play installation and update "
+"scripts from the interface."
+msgstr ""
+
+#: ../plugins/index.rst:73 45b47f458532489ba9be241f040ee1e5
+msgid ""
+"Database ACLs will then be checked. Unlike Galette, no information will be "
+"asked to you, since all is already available from your current instance."
+msgstr ""

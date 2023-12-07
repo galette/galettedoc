@@ -13,9 +13,13 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.8.2-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-1.8.2.tar.bz2
+.. image:: https://img.shields.io/badge/2.0.0-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-2.0.0.tar.bz2
    :alt: Get latest Fullcard plugin!
+
+.. image:: https://img.shields.io/badge/Nighly-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-fullcard-dev.tar.bz2
+   :alt: Get Fullcard plugin nightly build!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
@@ -26,7 +30,3 @@ For example, under linux (replacing `{url}` and `{version}` with correct values)
    $ wget {url}
    $ tar xjvf galette-plugin-fullcard-{version}.tar.bz2
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

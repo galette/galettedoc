@@ -62,36 +62,12 @@ Plugins management interface
 A plugins management interface is provided, you will find it from the dashboard or in the configuration menu. After you have downloaded plugin(s) in Galette ``plugins`` directory, a list will be displayed:
 
 .. image:: ../_styles/static/images/usermanual/plugins_managment.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Plugins management
 
 If web server has read access to your plugins directory, then you can enable or disable any plugin from the related icon.
 
-If plugin requires a database to work, you can play installation and update scripts from the interface. As example, the Paypal plugin database installation:
+If plugin requires a database to work, you can play installation and update scripts from the interface.
 
-.. image:: ../_styles/static/images/usermanual/plugins_install_step1.png
-   :scale: 50%
-   :align: center
-   :alt: Initialize plugin database step 1: select installation type
-
-Database ACLs will then be checked. Unlike Galette, no information will be asked to you, since all is already available from your current instance:
-
-.. image:: ../_styles/static/images/usermanual/plugins_install_step2.png
-   :scale: 50%
-   :align: center
-   :alt: Initialize plugin database step 2: database checks
-
-Scripts themselves will then be run:
-
-.. image:: ../_styles/static/images/usermanual/plugins_install_step3.png
-   :scale: 50%
-   :align: center
-   :alt: Initialize plugin database step 3: execute scripts
-
-And this is finished!
-
-.. image:: ../_styles/static/images/usermanual/plugins_install_step4.png
-   :scale: 50%
-   :align: center
-   :alt: Initialize plugin database step 4: end :)
+Database ACLs will then be checked. Unlike Galette, no information will be asked to you, since all is already available from your current instance.

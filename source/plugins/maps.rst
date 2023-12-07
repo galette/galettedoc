@@ -12,9 +12,13 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.7.0-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-1.7.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.0.0-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-2.0.0.tar.bz2
    :alt: Get latest Maps plugin!
+
+.. image:: https://img.shields.io/badge/Nighly-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-maps-dev.tar.bz2
+   :alt: Get Maps plugin nightly build!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
@@ -56,22 +60,18 @@ The search zone can be used when saving members location, and when displaying th
 A member can define its location (with the precision he wants) on the map selecting one of the propositions:
 
 .. image:: ../_styles/static/images/plugin-maps/location_select.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 Using the geolocalization button will define its position from the browser:
 
 .. image:: ../_styles/static/images/plugin-maps/geoloc.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
 Then, member location is displayed on map, and can be removed:
 
 .. image:: ../_styles/static/images/plugin-maps/location_selected.png
-   :scale: 70%
+   :scale: 50%
    :align: center
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

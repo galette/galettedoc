@@ -4,13 +4,14 @@
 # Weblate <noreply@weblate.org>, 2020.
 # Nicolás S. Gómez <nicogomfor@gmail.com>, 2021.
 # Berto Te <Bertote@3fpj.com>, 2021.
+# Cow <javier.fserrador@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-02-01 07:30+0000\n"
-"Last-Translator: Berto Te <Bertote@3fpj.com>\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-05-14 17:14+0000\n"
+"Last-Translator: Cow <javier.fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-paypal/es/>\n"
 "Language: es\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 # 642c4a0793084c7181f1b5d5d2b0a787
 #: ../plugins/paypal.rst:3 642c4a0793084c7181f1b5d5d2b0a787
@@ -28,7 +29,7 @@ msgstr "Paypal"
 # a1c0a7aaa653422cbf97f77f5626560a
 #: ../plugins/paypal.rst:5 a1c0a7aaa653422cbf97f77f5626560a
 msgid "This plugin provides:"
-msgstr ""
+msgstr "Este complemento proporciona:"
 
 # 1312e44d78014c9a8a6a4fab220e8fe2
 #: ../plugins/paypal.rst:7 1312e44d78014c9a8a6a4fab220e8fe2
@@ -50,75 +51,100 @@ msgstr ""
 msgid "automatic transaction storage once validated."
 msgstr ""
 
+#: ../plugins/paypal.rst:-1 c3b6e448e101485e8a890faa9e98bfd4
+msgid "Paypal plugin preferences"
+msgstr ""
+
+#: ../plugins/paypal.rst:-1 65cab564ff614f46919c02cf6a200eda
+msgid "Paypal payment form"
+msgstr ""
+
+#: ../plugins/paypal.rst:-1 65cab564ff614f46919c02cf6a200eda
+msgid "Paypal payment form (public)"
+msgstr ""
+
 # da9ca9062c324e1cb623a4ffdbbb768e
-#: ../plugins/paypal.rst:24 da9ca9062c324e1cb623a4ffdbbb768e
+#: ../plugins/paypal.rst:29 da9ca9062c324e1cb623a4ffdbbb768e
 msgid ""
 "Due to the way Paypal payments are handled, especially the payment "
 "confirmation, your instance must be publically accessible."
 msgstr ""
 
 # 8879eb34f1644dd1b6236fdc30c44e83
-#: ../plugins/paypal.rst:27 8879eb34f1644dd1b6236fdc30c44e83
+#: ../plugins/paypal.rst:32 8879eb34f1644dd1b6236fdc30c44e83
 msgid "Installation"
 msgstr "Instalación"
 
 # 212f7ad9c6a2492ca77195fca1aa11b7
-#: ../plugins/paypal.rst:29 212f7ad9c6a2492ca77195fca1aa11b7
+#: ../plugins/paypal.rst:34 212f7ad9c6a2492ca77195fca1aa11b7
 msgid "First of all, download the plugin:"
+msgstr "Antes que todo, descargue el complemento:"
+
+#: ../plugins/paypal.rst:-1 2a446237a8934ba8b0c88dd43a34e060
+msgid "Get latest Paypal plugin!"
+msgstr ""
+
+#: ../plugins/paypal.rst:-1 bc9d81d9e7ce4d5e98fe033edd0b50cf
+msgid "Get Paypal plugin nightly build!"
 msgstr ""
 
 # e1d08172e9d64421835a5aaad96ab6ca
-#: ../plugins/paypal.rst:35 e1d08172e9d64421835a5aaad96ab6ca
+#: ../plugins/paypal.rst:44 e1d08172e9d64421835a5aaad96ab6ca
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
+"Extraiga el paquete descargado en Galette en el directorio «plugin». Por "
+"ejemplo, bajo linux (sustituyendo {url} y {version} con los valores "
+"correctos):"
 
 # 2e941cbe525d44eebbe2fe6a599902dd
-#: ../plugins/paypal.rst:45 2e941cbe525d44eebbe2fe6a599902dd
+#: ../plugins/paypal.rst:54 2e941cbe525d44eebbe2fe6a599902dd
 msgid "Database initialisation"
-msgstr ""
+msgstr "Inicialización de base de datos"
 
 # fe7fbf78cb5e485fa299ab867c1153a0
-#: ../plugins/paypal.rst:47 fe7fbf78cb5e485fa299ab867c1153a0
+#: ../plugins/paypal.rst:56 fe7fbf78cb5e485fa299ab867c1153a0
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
+"Para que funcione, este complemento requiere varias tablas en la base de "
+"datos. Vea :ref: `Galette plugin management interface <plugins_management>`."
 
 # 7ae72772417a4102aa73b8d9a80fd5cc
-#: ../plugins/paypal.rst:49 7ae72772417a4102aa73b8d9a80fd5cc
+#: ../plugins/paypal.rst:58 7ae72772417a4102aa73b8d9a80fd5cc
 msgid "And this is finished; Paypal plugin is installed :)"
 msgstr ""
 
 # d1257db41c824394aad6b4a10383a67c
-#: ../plugins/paypal.rst:52 d1257db41c824394aad6b4a10383a67c
+#: ../plugins/paypal.rst:61 d1257db41c824394aad6b4a10383a67c
 msgid "Plugin configuration"
 msgstr ""
 
 # 750347079af34e888d4bcf1642af091b
-#: ../plugins/paypal.rst:54 750347079af34e888d4bcf1642af091b
+#: ../plugins/paypal.rst:63 750347079af34e888d4bcf1642af091b
 msgid ""
 "Once plugin has been installed, a `Paypal` group is added to the menu, with "
 "some new entries:"
 msgstr ""
 
 # 987fda6981494916b6a8223d6dc7af27
-#: ../plugins/paypal.rst:56 987fda6981494916b6a8223d6dc7af27
+#: ../plugins/paypal.rst:65 987fda6981494916b6a8223d6dc7af27
 msgid ""
 "`Payment form`: the payment form itself, which is accessible as a public "
 "page,"
 msgstr ""
 
 # 4907f7fe871b4aacaa03c55ec57cd5a9
-#: ../plugins/paypal.rst:57 4907f7fe871b4aacaa03c55ec57cd5a9
+#: ../plugins/paypal.rst:66 4907f7fe871b4aacaa03c55ec57cd5a9
 msgid ""
 "`Preferences`: plugin preferences, accessible for administrators and staff "
 "members."
 msgstr ""
 
 # d055cbbcdace4e4184e6df4bdfb6072e
-#: ../plugins/paypal.rst:59 d055cbbcdace4e4184e6df4bdfb6072e
+#: ../plugins/paypal.rst:68 d055cbbcdace4e4184e6df4bdfb6072e
 msgid ""
 "In order to work properly, you need to fill a very important value: your "
 "Paypal account code. You can either use the email address associated with "
@@ -129,14 +155,14 @@ msgid ""
 msgstr ""
 
 # 128c323d812b4c35b0ff2e10e04df59c
-#: ../plugins/paypal.rst:61 128c323d812b4c35b0ff2e10e04df59c
+#: ../plugins/paypal.rst:70 128c323d812b4c35b0ff2e10e04df59c
 msgid ""
 "Preferences screen also permit to edit amount related to contributions "
 "types, and to hide some types."
 msgstr ""
 
 # e926f41b62024a8f9d48d5fc78e2c9b8
-#: ../plugins/paypal.rst:63 e926f41b62024a8f9d48d5fc78e2c9b8
+#: ../plugins/paypal.rst:72 e926f41b62024a8f9d48d5fc78e2c9b8
 msgid ""
 "After that, any user can choose the contribution type, adjust the amount and "
 "pay from his Paypal account. If the user is a logged in member, and if the "
@@ -145,14 +171,15 @@ msgid ""
 msgstr ""
 
 # e75ff1df151147b1957257c098861d8f
-#: ../plugins/paypal.rst:66 e75ff1df151147b1957257c098861d8f
-msgid "How to get the sources?"
-msgstr ""
+#~ msgid "How to get the sources?"
+#~ msgstr "¿Cómo obtener el código fuente?"
 
 # 1558460db70c4b62a94d8bfeb0aebb31
-#: ../plugins/paypal.rst:68 1558460db70c4b62a94d8bfeb0aebb31
-msgid ""
-"Please refer to :doc:`Galette developer guide <../development/index>` to get "
-"informations about :doc:`souces retrieval <../development/git>`, and :ref:"
-"`development model <devmodel>`."
-msgstr ""
+#~ msgid ""
+#~ "Please refer to :doc:`Galette developer guide <../development/index>` to "
+#~ "get informations about :doc:`souces retrieval <../development/git>`, and :"
+#~ "ref:`development model <devmodel>`."
+#~ msgstr ""
+#~ "Refiérase a :doc: `Galette developer guide <../development/index>` para "
+#~ "obtener información acerca de :doc:`souces retrieval <../development/"
+#~ "git>`, y :ref:`development model <devmodel>`."

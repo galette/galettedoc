@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-01-23 06:58+0000\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2023-09-05 20:28+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-auto/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: ../plugins/auto.rst:3 9d9a5af2194e4d10bfa543f9119ba2dc
 msgid "Auto"
@@ -87,7 +87,15 @@ msgstr "Installation"
 msgid "First of all, download the plugin:"
 msgstr "Tout d'abord, téléchargez le plugin :"
 
-#: ../plugins/auto.rst:28 037b5fefb9224607ac170b0c3b5bcfa6
+#: ../plugins/auto.rst:-1 1ec66e972949484bbba10d56d8c01d4c
+msgid "Get latest Auto plugin!"
+msgstr "Obtenir le dernier plugin Auto !"
+
+#: ../plugins/auto.rst:-1 47e499bfb18f4fdcaa4e4c21f64be745
+msgid "Get Auto plugin nightly build!"
+msgstr "Obtenir la nightly du plugin Auto !"
+
+#: ../plugins/auto.rst:33 037b5fefb9224607ac170b0c3b5bcfa6
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
@@ -96,11 +104,11 @@ msgstr ""
 "exemple, sous linux (en remplaçant `{url}` et `{version}` par les valeurs "
 "adéquates) :"
 
-#: ../plugins/auto.rst:38 78e4bde975ce4943acb69b2b0bc25c9e
+#: ../plugins/auto.rst:43 78e4bde975ce4943acb69b2b0bc25c9e
 msgid "Database initialisation"
 msgstr "Initialisation de la base de données"
 
-#: ../plugins/auto.rst:40 b3d1f4cf653e49ff8ae1b720717afae0
+#: ../plugins/auto.rst:45 b3d1f4cf653e49ff8ae1b720717afae0
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
@@ -109,11 +117,11 @@ msgstr ""
 "Référez-vous :ref:`à l'interface de gestion des plugins de Galette "
 "<plugins_managment>`."
 
-#: ../plugins/auto.rst:42 d6e4cb8fdbdd49cab1f9d3633b22e9a5
+#: ../plugins/auto.rst:47 d6e4cb8fdbdd49cab1f9d3633b22e9a5
 msgid "And this is finished; Auto plugin is installed :)"
 msgstr "Et c'est terminé, le plugin Auto est installé :)"
 
-#: ../plugins/auto.rst:44 b618b67c4afe4f678895e0300c67e7d5
+#: ../plugins/auto.rst:49 b618b67c4afe4f678895e0300c67e7d5
 msgid ""
 "There is no particular setup required, you can just enter data in the "
 "database."
@@ -121,11 +129,11 @@ msgstr ""
 "Il n'y a aucune configuration requise, vous pouvez juste entrer vos données "
 "en base."
 
-#: ../plugins/auto.rst:47 e93aeb5836914487b171b8968e9dfc84
+#: ../plugins/auto.rst:52 e93aeb5836914487b171b8968e9dfc84
 msgid "Configure required fields"
 msgstr "Configuration des champs requis"
 
-#: ../plugins/auto.rst:49 634ff5198891409ea744b953ce630a94
+#: ../plugins/auto.rst:54 634ff5198891409ea744b953ce630a94
 msgid ""
 "When adding a new vehicle in database, there are several fields that are "
 "required, but that may not fit your needs. In such case, you can define your "
@@ -142,19 +150,18 @@ msgstr ""
 "si vous souhaitez juste que les nom et modèle soient obligatoires, vous "
 "aurez :"
 
-#: ../plugins/auto.rst:60 b3cd519c29f049618e2c3577b345c9e4
-msgid "How to get the sources?"
-msgstr "Comment récupérer les sources ?"
+#~ msgid "How to get the sources?"
+#~ msgstr "Comment récupérer les sources ?"
 
-#: ../plugins/auto.rst:62 5a72c01e08c14f7a945659508c9721dc
-msgid ""
-"Please refer to :doc:`Galette developer guide <../development/index>` to get "
-"informations about :doc:`souces retrieval <../development/git>`, and :ref:"
-"`development model <devmodel>`."
-msgstr ""
-"Veuillez voir :doc:`le guide du développeur de Galette <../development/"
-"index>` pour obtenir des informations sur :doc:`la récupération des sources "
-"<../development/git>`, et le :ref:`modèle de développement <devmodel>`."
+#~ msgid ""
+#~ "Please refer to :doc:`Galette developer guide <../development/index>` to "
+#~ "get informations about :doc:`souces retrieval <../development/git>`, and :"
+#~ "ref:`development model <devmodel>`."
+#~ msgstr ""
+#~ "Veuillez voir :doc:`le guide du développeur de Galette <../development/"
+#~ "index>` pour obtenir des informations sur :doc:`la récupération des "
+#~ "sources <../development/git>`, et le :ref:`modèle de développement "
+#~ "<devmodel>`."
 
 #~ msgid ""
 #~ "First of all, download the plugin: https://download.tuxfamily.org/galette/"

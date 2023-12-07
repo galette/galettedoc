@@ -39,15 +39,16 @@ Web server directory exposition
 
 .. versionadded:: 0.9
 
-Galette defaults installation (as well as for many other web applications) consists in copying a complete directory to a location the web server can read. This method works well, but this exposes from the web files and directories that should not be available this way.
+Galette installation may consists in copying a complete directory to a location the web server can read. This method may work, but this exposes from the web files and directories that should not be available this way.
 
 It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!
 
-.. note::
+.. warning::
 
-   Exposing only ``webroot`` directory is the recommended way if you can create virtual hosts on your hosting solution.
+   Exposing only ``webroot`` directory is the recommended, and only secured way.
 
-   And that will certainly not be possible for many free hostings.
+Using a subdomain
+-----------------
 
 Here is a virtual host configuration example, including the hide of `index.php`:
 
@@ -116,6 +117,30 @@ Nginx would be:
        }
    }
 
+Using an alias
+--------------
+
+An alternative secured configuration, if you do not have a specific subdomain for Galette is to use an ``alias`` in your existing virtual host:
+
+.. code-block:: apache
+
+   <VirtualHost *:80>
+       ServerName mydomain.tld
+
+       DocumentRoot /var/www/mydomain.tld
+
+       Alias /mygalette/ /var/www/galette/galette/webroot/
+       <Directory /var/www/galette/galette/webroot/>
+           RewriteEngine On
+           #You need to set RewriteBase to Alias path
+           RewriteBase /mygalette/
+           RewriteCond %{REQUEST_FILENAME} !-f
+           RewriteRule ^(.*)$ index.php [QSA,L]
+       </Directory>
+   </VirtualHost>
+
+Do not forget with that solution you have to setup correctly your ``RewriteBase`` directive.
+
 .. _installationunix:
 
 Linux/Unix
@@ -125,7 +150,7 @@ Installing Galette on Linux implies you have an access to the terminal on the se
 
 As an example, on `Fedora <https://fedora.org>`_, you will run (as root):
 
-.. code-block:: bash
+::
 
    # cd /var/www/galette/
    # chown -R apache:apache config data
@@ -134,7 +159,7 @@ Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with ``ww
 
 On SELinux enabled systems, we'll also add:
 
-.. code-block:: bash
+::
 
    # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/config(/.*)?'
    # semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/galette/data(/.*)?'
@@ -142,7 +167,7 @@ On SELinux enabled systems, we'll also add:
 
 You will also have to authorize webserver to connect to the network, with a SELinux boolean:
 
-.. code-block:: bash
+::
 
    # setsebool httpd_can_network_connect on
 
@@ -180,9 +205,9 @@ Additionnal information are available at: https://docs.ovh.com/fr/fr/web/hosting
 
 .. warning::
 
-   Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a `.ovhconfig` file at your hosting root with the following contents:
+   Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a ``.ovhconfig`` file at your hosting root with the following contents:
 
-   .. code-block:: shell
+   ::
 
       app.engine=phpcgi
 

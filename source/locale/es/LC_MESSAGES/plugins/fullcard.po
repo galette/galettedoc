@@ -3,13 +3,15 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Berto Te <Bertote@3fpj.com>, 2021.
+# Cow <javier.fserrador@gmail.com>, 2022.
+# gallegonovato <fran-carro@hotmail.es>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-02-01 07:30+0000\n"
-"Last-Translator: Berto Te <Bertote@3fpj.com>\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-10-24 15:38+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-fullcard/es/>\n"
 "Language: es\n"
@@ -17,12 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 # 685baa8728d64b96900039b93f70579b
 #: ../plugins/fullcard.rst:3 685baa8728d64b96900039b93f70579b
 msgid "Fullcard"
-msgstr ""
+msgstr "Tarjeta completa"
 
 # 47b06fcc33684f6fafb5b202010bd681
 #: ../plugins/fullcard.rst:5 47b06fcc33684f6fafb5b202010bd681
@@ -32,6 +34,11 @@ msgid ""
 "(to be used during events, etc) or filled with a member informations (that "
 "can be joined with a check for a membership as example)."
 msgstr ""
+"Este plugin fue desarrollado para `Borsalinux-fr (antes Fedora-Fr) <https://"
+"www.borsalinux-fr.org>`_. Genera una tarjeta de miembro en PDF que puede "
+"estar vacía (para ser usada durante eventos, etc.) o rellenada con la "
+"información de un miembro (que puede ser unido con un cheque para una "
+"membresía como ejemplo)."
 
 # 9af51b97616743f6bd6c44cfa17048d3
 #: ../plugins/fullcard.rst:9 9af51b97616743f6bd6c44cfa17048d3
@@ -39,6 +46,9 @@ msgid ""
 "Since Galette `0.8.3`, a PDF member card based on PDF models is provided. "
 "Installing Fullcard `1.6` or newer will replace this model."
 msgstr ""
+"Desde Galette `0.8.3`, se proporciona una tarjeta de socio PDF basada en "
+"modelos PDF. La instalación de Fullcard `1.6` o más reciente sustituirá este "
+"modelo."
 
 # 3f5dc91f0cbc4ecead4af3df6a91b374
 #: ../plugins/fullcard.rst:12 3f5dc91f0cbc4ecead4af3df6a91b374
@@ -48,24 +58,38 @@ msgstr "Instalación"
 # 1a16fc29af0b4d28b6468635d603bf7d
 #: ../plugins/fullcard.rst:14 1a16fc29af0b4d28b6468635d603bf7d
 msgid "First of all, download the plugin:"
-msgstr ""
+msgstr "Antes que todo, descargue el complemento:"
+
+#: ../plugins/fullcard.rst:-1 6c7f3cb4aeee4c7d90ea0fd7679e6bbd
+msgid "Get latest Fullcard plugin!"
+msgstr "¡Obtenga el último complemento de Fullcard!"
+
+#: ../plugins/fullcard.rst:-1 ffdcbf1fb39545ecb92d6a863d00f923
+#, fuzzy
+#| msgid "Get latest Fullcard plugin!"
+msgid "Get Fullcard plugin nightly build!"
+msgstr "¡Obtenga el último complemento de Fullcard!"
 
 # a8b75f0fc52b4123ae1d32953fa120c0
-#: ../plugins/fullcard.rst:20 a8b75f0fc52b4123ae1d32953fa120c0
+#: ../plugins/fullcard.rst:24 a8b75f0fc52b4123ae1d32953fa120c0
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
+"Extraiga el paquete descargado en Galette en el directorio «plugin». Por "
+"ejemplo, bajo linux (sustituyendo {url} y {version} con los valores "
+"correctos):"
 
 # 5de14f98c4ac489ab5d07b047a29241a
-#: ../plugins/fullcard.rst:30 5de14f98c4ac489ab5d07b047a29241a
-msgid "How to get the sources?"
-msgstr ""
+#~ msgid "How to get the sources?"
+#~ msgstr "¿Cómo obtener el código fuente?"
 
 # 00a54d486d4b4cbd8c9e1258e7663265
-#: ../plugins/fullcard.rst:32 00a54d486d4b4cbd8c9e1258e7663265
-msgid ""
-"Please refer to :doc:`Galette developer guide <../development/index>` to get "
-"informations about :doc:`souces retrieval <../development/git>`, and :ref:"
-"`development model <devmodel>`."
-msgstr ""
+#~ msgid ""
+#~ "Please refer to :doc:`Galette developer guide <../development/index>` to "
+#~ "get informations about :doc:`souces retrieval <../development/git>`, and :"
+#~ "ref:`development model <devmodel>`."
+#~ msgstr ""
+#~ "Refiérase a :doc: `Galette developer guide <../development/index>` para "
+#~ "obtener información acerca de :doc:`souces retrieval <../development/"
+#~ "git>`, y :ref:`development model <devmodel>`."

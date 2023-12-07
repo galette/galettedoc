@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Tymofij Lytvynenko <till.svit@gmail.com>, 2021.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-04-21 17:28+0000\n"
-"Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-07-11 06:34+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "documentation/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 # 5eafbb743f0a4441984de92f6c65df83
 #: ../index.rst:7 5eafbb743f0a4441984de92f6c65df83
@@ -51,18 +52,13 @@ msgstr ":doc:`посібник користувача <usermanual/index>`"
 msgid ":doc:`plugins documentation <plugins/index>`"
 msgstr ":doc:`документація розширень <plugins/index>`"
 
-# 39c55f7751a843f2bc3a1c5d250fa70d
-#: ../index.rst:25 39c55f7751a843f2bc3a1c5d250fa70d
-msgid ":doc:`developer guide <development/index>`"
-msgstr ":doc:`посібник розробника <development/index>`"
-
 # dec026c2f9ea47588b7304412bc1ecc6
-#: ../index.rst:48 dec026c2f9ea47588b7304412bc1ecc6
+#: ../index.rst:39 dec026c2f9ea47588b7304412bc1ecc6
 msgid "About Galette"
 msgstr "Про Galette"
 
 # 9f1bed5cb2bd43e185c25e461f4ae74e
-#: ../index.rst:50 9f1bed5cb2bd43e185c25e461f4ae74e
+#: ../index.rst:41 9f1bed5cb2bd43e185c25e461f4ae74e
 msgid ""
 "The Galette project is kindly hosted by `TuxFamily <https://www.tuxfamily."
 "org>`_:"
@@ -71,35 +67,33 @@ msgstr ""
 "org>`_:"
 
 # e3f69b96fced4401ac25c1768145db0c
-#: ../index.rst:52 e3f69b96fced4401ac25c1768145db0c
+#: ../index.rst:43 e3f69b96fced4401ac25c1768145db0c
 msgid "`Galette website <https://galette.eu/dc/?navlang=en>`_,"
 msgstr "`Вебсайт Galette <https://galette.eu/dc/?navlang=en>`_,"
 
 # 21a7d25dc54c4276bad95a152508f1b3
-#: ../index.rst:53 21a7d25dc54c4276bad95a152508f1b3
-msgid ""
-":doc:`a GIT repository to manage Galette source code <development/git>`,"
+#: ../index.rst:44 21a7d25dc54c4276bad95a152508f1b3
+msgid ":doc:`a GIT repository to manage Galette source code <source_code>`,"
 msgstr ""
-":doc:`GIT-репозиторій для управління вихідним кодом Galette <development/"
-"git>`,"
+":doc:`GIT-репозиторій для управління вихідним кодом Galette <source_code>`,"
 
 # 2f254595629b4ae6a8421cd4f3065c8a
-#: ../index.rst:54 2f254595629b4ae6a8421cd4f3065c8a
+#: ../index.rst:45 2f254595629b4ae6a8421cd4f3065c8a
 msgid "mailing lists,"
 msgstr "списки розсилання,"
 
 # c5f0460353cd434fb6eb44d4fc556f8f
-#: ../index.rst:55 c5f0460353cd434fb6eb44d4fc556f8f
+#: ../index.rst:46 c5f0460353cd434fb6eb44d4fc556f8f
 msgid "..."
 msgstr "..."
 
 # bf8cde64e8c84a6ab474e4c8b1f650a9
-#: ../index.rst:57 bf8cde64e8c84a6ab474e4c8b1f650a9
+#: ../index.rst:48 bf8cde64e8c84a6ab474e4c8b1f650a9
 msgid "There are also a few external services:"
 msgstr "Є також кілька зовнішніх служб:"
 
 # c045e32b9f0b4283960a0f5198644f36
-#: ../index.rst:59 c045e32b9f0b4283960a0f5198644f36
+#: ../index.rst:50 c045e32b9f0b4283960a0f5198644f36
 msgid ""
 "`a bug tracker <https://bugs.galette.eu/projects/galette/>`_, to declare "
 "issues or to ask for evolutions,"
@@ -108,7 +102,7 @@ msgstr ""
 "питання або запитати поліпшення,"
 
 # 88fd4022e47d463eb678cfab305f1357
-#: ../index.rst:60 88fd4022e47d463eb678cfab305f1357
+#: ../index.rst:51 88fd4022e47d463eb678cfab305f1357
 msgid ""
 "`a wonderfull :p documentation <https://doc.galette.eu>`_, you are currently "
 "reading,"
@@ -116,7 +110,7 @@ msgstr ""
 "`прекрасна :p документація <https://doc.galette.eu>`_, яку ви наразі читаєте,"
 
 # d7ffcb3066db409bb35db09d8a7f586f
-#: ../index.rst:61 d7ffcb3066db409bb35db09d8a7f586f
+#: ../index.rst:52 d7ffcb3066db409bb35db09d8a7f586f
 msgid ""
 "`a voting system <https://vote.galette.eu>`_, you can vote for features,"
 msgstr ""
@@ -124,7 +118,7 @@ msgstr ""
 "можливості,"
 
 # 055eb598ed464cfd98abb1b60034a066
-#: ../index.rst:62 055eb598ed464cfd98abb1b60034a066
+#: ../index.rst:53 055eb598ed464cfd98abb1b60034a066
 msgid ""
 "`a Github organization <https://github.com/galette>`_, used to run unit "
 "tests or documentation on readthedocs, among others,"
@@ -134,7 +128,7 @@ msgstr ""
 "документів,"
 
 # 2b091b2647004b5abb282eaa85efaeae
-#: ../index.rst:63 2b091b2647004b5abb282eaa85efaeae
+#: ../index.rst:54 2b091b2647004b5abb282eaa85efaeae
 msgid ""
 "`a continous integration system <https://github.com/galette/galette/"
 "actions>`_, that runs a bunch of tests each time a commit is done on the "
@@ -145,7 +139,7 @@ msgstr ""
 "дзеркалі Github."
 
 # acc2f03c1b1c436c8538ad9be705863c
-#: ../index.rst:64 acc2f03c1b1c436c8538ad9be705863c
+#: ../index.rst:55 acc2f03c1b1c436c8538ad9be705863c
 msgid ""
 "`a Telemetry application <https://telemetry.galette.eu>`_ which handles and "
 "displays Telemetry data received from volunteer Galette instances."
@@ -154,7 +148,7 @@ msgstr ""
 "відображає телеметричні дані, отримані від інстанцій добровольців Galette."
 
 # 0b2e0591f029429da7d58a639944db78
-#: ../index.rst:66 0b2e0591f029429da7d58a639944db78
+#: ../index.rst:57 0b2e0591f029429da7d58a639944db78
 msgid ""
 "Galette documentation is released under the terms of the `Attribution-"
 "ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ "
@@ -169,7 +163,7 @@ msgstr ""
 "допомогою `Sphinx documentation builder <https://www.sphinx-doc.org>`_."
 
 # ae7e540b4a024a1a8e1b81b4705e8ee1
-#: ../index.rst:68 ae7e540b4a024a1a8e1b81b4705e8ee1
+#: ../index.rst:59 ae7e540b4a024a1a8e1b81b4705e8ee1
 msgid ""
 "Sphinx allows to build documentation in various formats from the same "
 "sources. Galette's documentation is therefore available as HTML, PDF and "
@@ -178,3 +172,7 @@ msgstr ""
 "Sphinx дозволяє збирати документацію в різних форматах з одних і тих же "
 "джерел. Таким чином, документація Galette доступна в форматах HTML, PDF і "
 "EPUB; завдяки `Read the docs <https://readthedocs.io>`_."
+
+# 39c55f7751a843f2bc3a1c5d250fa70d
+#~ msgid ":doc:`developer guide <development/index>`"
+#~ msgstr ":doc:`посібник розробника <development/index>`"

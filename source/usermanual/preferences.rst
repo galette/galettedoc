@@ -33,6 +33,16 @@ This tab defines some parameters related to your association:
 * **Telemetry date**: date on which `telemetry infomations <https://telemetry.galette.eu>`_ was sent,
 * **Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_
 
+Social networks
+===============
+
+Manage social networks of your association. This may be used in PDF or emails as variables (see inline doc on related parts).
+
+.. image:: ../_styles/static/images/usermanual/prefs_social.png
+   :scale: 50%
+   :align: center
+   :alt: Galette settings, social networks tab
+
 Parameters
 ==========
 
@@ -127,6 +137,7 @@ Sending email parameters:
 * **Members administrator email**: email address on which inscription notifications will be send, you can set several addresses separated with comas,
 * **Send emails to administrators**: whether to send emails to administrators on subscription,
 * **Wrap text emails**: automatically wraps long lines in emails. If you disable this options, make sure to wrap yourself,
+* **Send emails to members**: whether to send emails to members when their information are updated or a contribution is created on their behalf,
 * **Activate HTML editor**: activate HTML format when sending emails (discouraged),
 * **Emailing method**: method used to send emails:
 

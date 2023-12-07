@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -92,44 +92,52 @@ msgstr ""
 msgid "First of all, download the plugin:"
 msgstr ""
 
+#: ../plugins/auto.rst:-1 1ec66e972949484bbba10d56d8c01d4c
+msgid "Get latest Auto plugin!"
+msgstr ""
+
+#: ../plugins/auto.rst:-1 47e499bfb18f4fdcaa4e4c21f64be745
+msgid "Get Auto plugin nightly build!"
+msgstr ""
+
 # 037b5fefb9224607ac170b0c3b5bcfa6
-#: ../plugins/auto.rst:28 037b5fefb9224607ac170b0c3b5bcfa6
+#: ../plugins/auto.rst:33 037b5fefb9224607ac170b0c3b5bcfa6
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 
 # 78e4bde975ce4943acb69b2b0bc25c9e
-#: ../plugins/auto.rst:38 78e4bde975ce4943acb69b2b0bc25c9e
+#: ../plugins/auto.rst:43 78e4bde975ce4943acb69b2b0bc25c9e
 msgid "Database initialisation"
 msgstr ""
 
 # b3d1f4cf653e49ff8ae1b720717afae0
-#: ../plugins/auto.rst:40 b3d1f4cf653e49ff8ae1b720717afae0
+#: ../plugins/auto.rst:45 b3d1f4cf653e49ff8ae1b720717afae0
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
 
 # d6e4cb8fdbdd49cab1f9d3633b22e9a5
-#: ../plugins/auto.rst:42 d6e4cb8fdbdd49cab1f9d3633b22e9a5
+#: ../plugins/auto.rst:47 d6e4cb8fdbdd49cab1f9d3633b22e9a5
 msgid "And this is finished; Auto plugin is installed :)"
 msgstr ""
 
 # b618b67c4afe4f678895e0300c67e7d5
-#: ../plugins/auto.rst:44 b618b67c4afe4f678895e0300c67e7d5
+#: ../plugins/auto.rst:49 b618b67c4afe4f678895e0300c67e7d5
 msgid ""
 "There is no particular setup required, you can just enter data in the "
 "database."
 msgstr ""
 
 # e93aeb5836914487b171b8968e9dfc84
-#: ../plugins/auto.rst:47 e93aeb5836914487b171b8968e9dfc84
+#: ../plugins/auto.rst:52 e93aeb5836914487b171b8968e9dfc84
 msgid "Configure required fields"
 msgstr ""
 
 # 634ff5198891409ea744b953ce630a94
-#: ../plugins/auto.rst:49 634ff5198891409ea744b953ce630a94
+#: ../plugins/auto.rst:54 634ff5198891409ea744b953ce630a94
 msgid ""
 "When adding a new vehicle in database, there are several fields that are "
 "required, but that may not fit your needs. In such case, you can define your "
@@ -137,17 +145,4 @@ msgid ""
 "your Galette ``config`` directory and declare an array of the fields you "
 "want to require. As example, if you just want to require name and model for "
 "a car, you will need:"
-msgstr ""
-
-# b3cd519c29f049618e2c3577b345c9e4
-#: ../plugins/auto.rst:60 b3cd519c29f049618e2c3577b345c9e4
-msgid "How to get the sources?"
-msgstr ""
-
-# 5a72c01e08c14f7a945659508c9721dc
-#: ../plugins/auto.rst:62 5a72c01e08c14f7a945659508c9721dc
-msgid ""
-"Please refer to :doc:`Galette developer guide <../development/index>` to get "
-"informations about :doc:`souces retrieval <../development/git>`, and :ref:"
-"`development model <devmodel>`."
 msgstr ""

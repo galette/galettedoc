@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-01-23 06:58+0000\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-07-11 06:34+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "members/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: ../usermanual/adherents.rst:5 1ac56ff74fb7417ab06103ceef70962a
 msgid "Members management"
@@ -54,9 +54,21 @@ msgstr ""
 "contact`, `Informations relatives à Galette` et éventuellement `Champs "
 "dynamiques`) peuvent être rétractées en cliquant sur leur titre respectif."
 
+#: ../usermanual/adherents.rst:-1 95f017b0e18d4c828683f465ab8b0c2c
+msgid "`Identity` screen part adding member"
+msgstr "Écran `identité` à l'ajout d'un adhérent"
+
+#: ../usermanual/adherents.rst:-1 e2dcd313bbaf4dfdab0d8cb444552f65
+msgid "`Identity` screen part editing member"
+msgstr "Écran `identité` à l'édition d'un adhérent"
+
 #: ../usermanual/adherents.rst:25 d62974a5024041949a69e2f762c59c23
 msgid "On date fields, you can access a calendar:"
 msgstr "Sur les champs de date, vous pourrez accéder à un calendrier :"
+
+#: ../usermanual/adherents.rst:-1 f6ad71603def43c587780fbf3451097b
+msgid "Date selection"
+msgstr "Sélection de la date"
 
 #: ../usermanual/adherents.rst:31 43b75a53cbe746519c7a4209e45bbd48
 msgid ""
@@ -144,6 +156,10 @@ msgstr ""
 "Les adhérents sélectionnés dans la liste peuvent être (partiellement) "
 "modifiés en une seule fois."
 
+#: ../usermanual/adherents.rst:-1 04dbebfbd3e5445188b6974101fd6a68
+msgid "Mass change selected members"
+msgstr "Modification en masse des adhérents sélectionnés"
+
 #: ../usermanual/adherents.rst:67 905446a9cac54ca38f3016c8308ae4fe
 msgid ""
 "Only fields with a checked checkbox at the beginning of the line will be "
@@ -151,6 +167,10 @@ msgid ""
 msgstr ""
 "Seuls les champs dont la case en début de ligne est cochée seront modifiés. "
 "Un résumé sera affiché."
+
+#: ../usermanual/adherents.rst:-1 8962fd2a90634690a89422d17a00f27b
+msgid "Summary of changes"
+msgstr "Résumé des changements"
 
 #: ../usermanual/adherents.rst:75 5b35de9cb35742fa9aea63acbbfa3c65
 msgid "Ordering"
@@ -251,6 +271,10 @@ msgstr ""
 "adhérents ne possèdent pas d'adresse de courriel, Galette vous proposera "
 "d'imprimer les étiquettes correspondantes."
 
+#: ../usermanual/adherents.rst:-1 5896d1a1052b41fe9dee62d9318564a7
+msgid "Selected members for mailing"
+msgstr "Adhérents sélectionnés pour le publipostage"
+
 #: ../usermanual/adherents.rst:116 d56d0ebb34c44e82be3386c79589514a
 msgid ""
 "Selecting members in the list must be done on one page only. Filtering "
@@ -286,6 +310,10 @@ msgid "**other**: you can set any name and email address you want."
 msgstr ""
 "**autre** : vous pouvez indiquer les nom et adresse de courriel que vous "
 "souhaitez."
+
+#: ../usermanual/adherents.rst:-1 64108243a0fe4d42a34b5ed1c4d5235b
+msgid "Sender selection"
+msgstr "Sélection de l'expéditeur"
 
 #: ../usermanual/adherents.rst:131 5725e99d780344e193a8a8f60be178df
 msgid ""
@@ -341,6 +369,10 @@ msgid "`Preview` button let you preview your message before sending it."
 msgstr ""
 "Le bouton `Prévisualiser` vous permet de vérifier le message avant de "
 "l'envoyer."
+
+#: ../usermanual/adherents.rst:-1 6b3b6683a6f742c5b056de1fed766ffb
+msgid "Preview message"
+msgstr "Prévisualiser le message"
 
 #: ../usermanual/adherents.rst:147 d02d0fac4ecb4741b4fc8b6ee4a240e9
 msgid ""
@@ -463,6 +495,10 @@ msgstr ""
 "Pour configurer le modèle, cliquez sur le bouton `Configurer` depuis "
 "l'interface."
 
+#: ../usermanual/adherents.rst:-1 7a3452b703654fd788ab1290ab9d9f9d
+msgid "Default import model"
+msgstr "Modèle d'import par défaut"
+
 #: ../usermanual/adherents.rst:185 844f10481e32499a9d381c169249b5db
 msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
@@ -470,6 +506,10 @@ msgid ""
 msgstr ""
 "Si le modèle proposé ne vous convient pas, cliquez sur `Modifier le modèle` "
 "et choisissez vos champs :"
+
+#: ../usermanual/adherents.rst:-1 2065c32b17b9433c82460219309e4595
+msgid "Import model configuration"
+msgstr "Configuration du modèle d'import"
 
 #: ../usermanual/adherents.rst:192 745b042c0c54450f8b04397dfb178004
 msgid ""
@@ -523,6 +563,10 @@ msgid ""
 msgstr ""
 "Les fichiers envoyés sont listés dans la section `Fichiers existants`. Vous "
 "pouvez les consulter, les supprimer ou les importer :"
+
+#: ../usermanual/adherents.rst:-1 876843089026455a88c98cedb61257b0
+msgid "Select and import file"
+msgstr "Sélectionner et importer un fichier"
 
 #: ../usermanual/adherents.rst:212 e88f3904d8654eabaf2aea335a22e2dc
 msgid ""

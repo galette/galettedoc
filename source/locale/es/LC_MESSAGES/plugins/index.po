@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020.
+# Nolan <nolanwelch@outlook.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-20 09:35+0100\n"
-"PO-Revision-Date: 2020-06-20 09:16+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-04-25 22:09+0000\n"
+"Last-Translator: Nolan <nolanwelch@outlook.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-index/es/>\n"
 "Language: es\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.12.1-dev\n"
 
 # 9f286384bdcf4357a67512dadc464885
 #: ../plugins/index.rst:7 9f286384bdcf4357a67512dadc464885
@@ -66,14 +67,18 @@ msgstr ""
 # 4c9dbe22076d44539ce37403ed706f28
 #: ../plugins/index.rst:39 4c9dbe22076d44539ce37403ed706f28
 msgid "Third party plugins"
-msgstr ""
+msgstr "Terceros plugins"
 
 # 8f005e5b645142d4884d77ae4b499695
 #: ../plugins/index.rst:41 8f005e5b645142d4884d77ae4b499695
+#, fuzzy
 msgid ""
 "Third party plugins are developed and maintained by community members. Some "
 "of them may not be translated, or available on only one database engine."
 msgstr ""
+"Terceros plugins están desarrolados y mantenidos por miembros de la "
+"comunidad. Es posible que algunos no hayan sido traducidos o que estén "
+"disponibles en solo un motor de base de datos."
 
 #: ../plugins/index.rst:43 768253b9ab484890b2d7ecfeae4ebfb3
 msgid ""
@@ -128,6 +133,10 @@ msgid ""
 "in Galette ``plugins`` directory, a list will be displayed:"
 msgstr ""
 
+#: ../plugins/index.rst:-1 b962fd6fbc234ffbb40ed53c38e688ac
+msgid "Plugins management"
+msgstr ""
+
 # 3701d8b0588649ff914801cc8acd029a
 #: ../plugins/index.rst:69 3701d8b0588649ff914801cc8acd029a
 msgid ""
@@ -135,27 +144,14 @@ msgid ""
 "or disable any plugin from the related icon."
 msgstr ""
 
-# 91de008c63ed4ced97e979796d17ed4c
 #: ../plugins/index.rst:71 91de008c63ed4ced97e979796d17ed4c
 msgid ""
 "If plugin requires a database to work, you can play installation and update "
-"scripts from the interface. As example, the Paypal plugin database "
-"installation:"
+"scripts from the interface."
 msgstr ""
 
-# 45b47f458532489ba9be241f040ee1e5
-#: ../plugins/index.rst:78 45b47f458532489ba9be241f040ee1e5
+#: ../plugins/index.rst:73 45b47f458532489ba9be241f040ee1e5
 msgid ""
 "Database ACLs will then be checked. Unlike Galette, no information will be "
-"asked to you, since all is already available from your current instance:"
-msgstr ""
-
-# 5f8fb6d7de85412794fce521ba853cb0
-#: ../plugins/index.rst:85 5f8fb6d7de85412794fce521ba853cb0
-msgid "Scripts themselves will then be run:"
-msgstr ""
-
-# 17bffcc23f7e42239dd3fd8bb2ca5b6f
-#: ../plugins/index.rst:92 17bffcc23f7e42239dd3fd8bb2ca5b6f
-msgid "And this is finished!"
+"asked to you, since all is already available from your current instance."
 msgstr ""

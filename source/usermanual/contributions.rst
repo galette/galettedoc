@@ -37,7 +37,7 @@ Emails models to remind due dates are available from the emails contents ("Impen
 The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface.
 
 .. image:: ../_styles/static/images/usermanual/reminders.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Reminders management interface
 
@@ -76,28 +76,28 @@ Only a few informations are required to add a new transaction:
 * the amount.
 
 .. image:: ../_styles/static/images/usermanual/transactions_list.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Transactions list
 
 Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates.
 
 .. image:: ../_styles/static/images/usermanual/transactions_add.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Add a transaction
 
 After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction.
 
 .. image:: ../_styles/static/images/usermanual/transactions_add_cotisation.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Add a contribution linked to a partially dispatched transaction
 
 Of course, it is also possible to edit a transaction:
 
 .. image:: ../_styles/static/images/usermanual/transactions_edit.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Transaction edition
 

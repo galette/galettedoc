@@ -7,7 +7,7 @@ PDF models
 PDF models are provided for several outputs : an invoice model, a receipt model and a membership from model are currently available. All of them inherits from a `Global` model.
 
 .. image:: ../_styles/static/images/usermanual/pdf_models.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: PDF models management
 
@@ -29,7 +29,7 @@ Generalities
 
 In addition of header, footer and CSS styles, a model defines a title, a sub title and a body.
 
-Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationnalized texts like `_T("My text")` that relies on :ref:`Galette standard translation capacities <i18nsyntax>`.
+Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationnalized texts like `_T("My text")` that relies on Galette standard translation capacities.
 
 Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent brower; there are many limitations.
 
@@ -39,7 +39,7 @@ Invoices and receipts
 Invoice and receipt models are the same, excepting their titles.
 
 .. image:: ../_styles/static/images/usermanual/pdf_model_invoice.png
-   :scale: 75%
+   :scale: 50%
    :align: center
    :alt: Invoice PDF model
 

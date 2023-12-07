@@ -25,7 +25,10 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo']
+extensions = [
+  'sphinx.ext.todo',
+  'sphinx.ext.imgconverter'
+]
 
 todo_include_todos = True
 
@@ -44,16 +47,16 @@ master_doc = 'index'
 # General information about the project.
 project = 'Galette'
 author = 'Johan Cwiklinski'
-copyright = '2011-2021, Johan Cwiklinski'
+copyright = '2011-2023, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.9.6.1'
+version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = '0.9.6.1'
+release = '1.0.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -67,10 +70,10 @@ today_fmt = '%d/%m/%Y'
 # Adding a pattern or a file on this list will still make file available in the documentation,
 # but will eliminate the warning message "document isn't included in any toctree"
 # However, some files that generate such warning contain labels being referred to from other files,
-# if put on the exclude_patters list, such labels are not visible. The commented out files in the 
+# if put on the exclude_patters list, such labels are not visible. The commented out files in the
 # exclude_patters list below, are such files. They generate a warning, but contain reference labels.
 exclude_patterns = [
-    'changelogs/galette_09.rst',
+    'changelogs/galette_10.rst',
     'installation/ftp.rst',
     'installation/unix.rst',
     'installation/windows.rst'
@@ -202,13 +205,13 @@ htmlhelp_basename = 'Galettedoc'
 epub_description = 'Galette documentation'
 
 # An identifier for the document. This is put in the Dublin Core metadata.
-# For published documents this is the ISBN number, but you can also use an 
-# alternative scheme, e.g. the project homepage. 
+# For published documents this is the ISBN number, but you can also use an
+# alternative scheme, e.g. the project homepage.
 # The default value is 'unknown'.
 epub_identifier = 'https://galette.eu'
 
-# The publication scheme for the epub_identifier. This is put in the Dublin 
-# Core metadata. For published books the scheme is 'ISBN'. If you use the 
+# The publication scheme for the epub_identifier. This is put in the Dublin
+# Core metadata. For published books the scheme is 'ISBN'. If you use the
 # project homepage, 'URL' seems reasonable. The default value is 'unknown'.
 epub_scheme = 'URL'
 
@@ -219,7 +222,7 @@ epub_scheme = 'URL'
 # is empty.
 epub_cover = ('_static/images/epub_cover.png', '')
 
-# Control whether to display URL addresses. This is very useful for readers 
+# Control whether to display URL addresses. This is very useful for readers
 # that have no other means to display the linked URL. The settings can have the
 # following values:
 #    'inline' – display URLs inline in parentheses (default)
@@ -229,7 +232,7 @@ epub_cover = ('_static/images/epub_cover.png', '')
 # class link-target.
 # epub_show_urls = 'no'
 
-# A list of files that are generated/copied in the build directory but should 
+# A list of files that are generated/copied in the build directory but should
 # not be included in the epub file. The default value is [].
 epub_exclude_files = [
   '_static/favicon.ico',
@@ -273,7 +276,7 @@ latex_documents = [
 latex_logo = 'pdf_cover.pdf'
 
 # A list of file names, relative to the configuration directory, to copy to the
-# build directory when building LaTeX output. This is useful to copy files that 
+# build directory when building LaTeX output. This is useful to copy files that
 # Sphinx doesn’t copy automatically, e.g. if they are referenced in custom
 # LaTeX added in latex_elements. Image files that are referenced in source
 # files (e.g. via .. image::) are copied automatically.
@@ -290,7 +293,7 @@ latex_additional_files = ['pdf_cover.pdf']
 latex_show_pagerefs = True
 
 # If true, show URL addresses after external links.
-latex_show_urls = 'footnote' 
+latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []

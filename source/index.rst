@@ -20,10 +20,6 @@ Galette's documentation
 
 :doc:`plugins documentation <plugins/index>`
 
-.. rst-class:: docs devel_doc
-
-:doc:`developer guide <development/index>`
-
 .. toctree::
    :maxdepth: 2
 
@@ -31,17 +27,12 @@ Galette's documentation
    usermanual/index.rst
    faq/index.rst
    plugins/index.rst
-   development/index.rst
 
 .. toctree::
    :maxdepth: 1
 
    changelog.rst
-
-.. toctree::
-   :hidden:
-
-   development/plugins-0.8-0.9.rst
+   source_code.rst
 
 *************
 About Galette
@@ -50,7 +41,7 @@ About Galette
 The Galette project is kindly hosted by `TuxFamily <https://www.tuxfamily.org>`_:
 
 * `Galette website <https://galette.eu/dc/?navlang=en>`_,
-* :doc:`a GIT repository to manage Galette source code <development/git>`,
+* :doc:`a GIT repository to manage Galette source code <source_code>`,
 * mailing lists,
 * ...
 

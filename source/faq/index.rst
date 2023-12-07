@@ -10,43 +10,15 @@ What if Galette does not work?
 
 Sometimes, after an update, a change on hosting, or a simple bug - even minor ones - may cause a fail in Galette. You may observe:
 
-* a simple error message id displayed,
+* an error message is displayed,
 * a blank page,
-* a page with a backtace (usually, not in production mode),
 * ...
 
 In all cases, you **must check the logs**. Most of errors are stored in those files, it is a very good start point to understand the problem and potentially solve it.
 
-There are two types of log files: Galette ones, and system ones.
 Galette logs are stored in the ``galette/data/log`` per default.
 
-Server logs are another subject. On shared webservers, they are often not accessible to you :( On a dedicated webserver, their location change with server configuration; it is related to the operating system used, PHP and/or web server configuration, ...
-
-* with ``php-fpm`` service logs are in ``/var/log/php-fpm/www-error.log`` (for GNU/Linux Red Hat like distributions),
-* with (the deprecated) ``mod_php``, you'll find them in ``/var/log/httpd/error_log`` (on other GNU/Linux distributions, `httpd` may be named `apache`),
-* on Windows/MacOS with XAMPP like solutions, there is at least one log directory in installation; you may find what you look for there.
-
-Displaying errors
------------------
-
-If you cannot access system logs files (frequent on shared hostings), you can display errors directly on the page.
-
-.. warning::
-
-   Displaying errors on a web page may provide information that should not be public. In production mode, is it **strongly advised not to display them**. Above solution is only a temporary debug tool.
-
-   Please also note that with routing integration, some of those displayed information may be "hidden" from a buggy redirection... Logs are safer on that point.
-
-To temporary display errors on page, create a ``galette/config/behavior.inc.php`` file with the following contents:
-
-.. code-block:: php
-
-   <?php
-   define('GALETTE_DISPLAY_ERRORS', 1);
-
-The next time you reproduce the issue, errors will be displayed on the page.
-
-Globally, you can use :ref:`Galette behavior configuration <behavior>` to help you grab additional information.
+:ref:`Enabling development mode <galettemodes>` will give you more information, and deactivate cache, that may help resolving your issue.
 
 *****************************************
 How to report a bug or ask for a feature?
@@ -84,25 +56,9 @@ How to search in lists archives?
 
 Mailing lists are the main communication channel for Galette, from its beginnings.
 
-As a reminder, since 2017, two lists are available:
+See `contact page <https://galette.eu/site/contact#mailing-lists>`_ for more information.
 
-* `users discussion list <https://listengine.tuxfamily.org/lists.galette.eu/users/>`_ : general talks, help, ...
-* `development discussion list <https://listengine.tuxfamily.org/lists.galette.eu/devel/>`_ : technical discussions, tickets triaging, ...
-
-If you are looking for archives before 2017, see:
-
-* `old users discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-discussion/index.html>`_
-* `old development discussion list <https://download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_
-
-Unfortunately, there is no search mechanism in any of those lists archives. The alternative is to use the `site:` keyword from your favorite search engine (most of them supports that keyword):
-
-.. code-block:: php
-
-   site:https://listengine.tuxfamily.org/lists.galette.eu/users plugin
-
-Above search will look for "plugin" in archives of users mailing list. Just adapt the URL to the list/period and keywords you want ;)
-
-To improve the search, refer to your search engine documentation.
+The most simple and reliable way to `search on past Galette related discussion <https://www.mail-archive.com/search?l=all&q=galette&a=1>`_ is to make a query on mail archive services.
 
 **************************************************
 How to use same email address for several members?

@@ -11,15 +11,15 @@ This plugin provides:
 Installation
 ============
 
-.. warning::
-
-   This plugin requires Galette 0.9.1 to work!
-
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.5.0-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-events-1.5.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.0.0-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-events-2.0.0.tar.bz2
    :alt: Get latest Events plugin!
+
+.. image:: https://img.shields.io/badge/Nighly-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-events-dev.tar.bz2
+   :alt: Get Evernts plugin nightly build!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
@@ -114,8 +114,3 @@ Activities list is retrieved from the event; mandatory ones must of course be ch
    :align: center
 
 You can filter bookings list per event, payment type or payment status. You can then send a mailing to booked members, using the standard Galette mailing mechanism.
-
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

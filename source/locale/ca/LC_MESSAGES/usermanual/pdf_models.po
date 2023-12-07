@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Carmella Andrews <26andrewsc@harriscountyschools.org>, 2021.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-12-11 01:51+0000\n"
-"Last-Translator: Carmella Andrews <26andrewsc@harriscountyschools.org>\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2023-11-26 09:05+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/galette/"
 "doc-user-pdf_models/ca/>\n"
 "Language: ca\n"
@@ -17,12 +18,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 # d16a73f2eec64382be813390f87e062c
 #: ../usermanual/pdf_models.rst:5 d16a73f2eec64382be813390f87e062c
 msgid "PDF models"
-msgstr ""
+msgstr "Models PDF"
 
 # 96cb9421538941e38a391868bb5a27ce
 #: ../usermanual/pdf_models.rst:7 96cb9421538941e38a391868bb5a27ce
@@ -30,6 +31,10 @@ msgid ""
 "PDF models are provided for several outputs : an invoice model, a receipt "
 "model and a membership from model are currently available. All of them "
 "inherits from a `Global` model."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:-1 46c716eef77141f68a210ebf5a65248d
+msgid "PDF models management"
 msgstr ""
 
 # 3f47123045c44997b7b599dd611fc47a
@@ -85,13 +90,12 @@ msgid ""
 "title and a body."
 msgstr ""
 
-# 7799205d9ec94bde904af0eea99e655d
 #: ../usermanual/pdf_models.rst:32 7799205d9ec94bde904af0eea99e655d
 msgid ""
 "Each of those fields can take some replacement values, refer to the inline "
 "help from the user interface to get details. They also can contains "
-"internationnalized texts like `_T(\"My text\")` that relies on :ref:`Galette "
-"standard translation capacities <i18nsyntax>`."
+"internationnalized texts like `_T(\"My text\")` that relies on Galette "
+"standard translation capacities."
 msgstr ""
 
 # 5c5cbe88aa964926a2ab04f76292fd39
@@ -110,6 +114,10 @@ msgstr ""
 # 87197e2d52b743d9b0362facef8747e1
 #: ../usermanual/pdf_models.rst:39 87197e2d52b743d9b0362facef8747e1
 msgid "Invoice and receipt models are the same, excepting their titles."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:-1 9fa47760bbc0423880c05a1f2ce6902c
+msgid "Invoice PDF model"
 msgstr ""
 
 # 81316cb5e5a14037b0af6b42c62ffa1e

@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Tymofij Lytvynenko <till.svit@gmail.com>, 2021.
+# Artem <artem@molotov.work>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
-"PO-Revision-Date: 2021-05-16 14:32+0000\n"
-"Last-Translator: Tymofij Lytvynenko <till.svit@gmail.com>\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"PO-Revision-Date: 2022-07-30 11:17+0000\n"
+"Last-Translator: Artem <artem@molotov.work>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/doc-"
 "user-members/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 # 1ac56ff74fb7417ab06103ceef70962a
 #: ../usermanual/adherents.rst:5 1ac56ff74fb7417ab06103ceef70962a
@@ -60,10 +61,22 @@ msgstr ""
 "можливо, `Динамічні поля`) можуть бути відсунуті, якщо натиснути на "
 "відповідний заголовок."
 
+#: ../usermanual/adherents.rst:-1 95f017b0e18d4c828683f465ab8b0c2c
+msgid "`Identity` screen part adding member"
+msgstr "Частина екрана `Особистість` додає учасника"
+
+#: ../usermanual/adherents.rst:-1 e2dcd313bbaf4dfdab0d8cb444552f65
+msgid "`Identity` screen part editing member"
+msgstr "Частина екрана `Особистість` редагує учасника"
+
 # d62974a5024041949a69e2f762c59c23
 #: ../usermanual/adherents.rst:25 d62974a5024041949a69e2f762c59c23
 msgid "On date fields, you can access a calendar:"
 msgstr "У полях дат ви можете отримати доступ до календаря:"
+
+#: ../usermanual/adherents.rst:-1 f6ad71603def43c587780fbf3451097b
+msgid "Date selection"
+msgstr "Вибір дати"
 
 # 43b75a53cbe746519c7a4209e45bbd48
 #: ../usermanual/adherents.rst:31 43b75a53cbe746519c7a4209e45bbd48
@@ -165,6 +178,11 @@ msgstr "Масові зміни"
 msgid "Members selected in list can be edited (partially) at once."
 msgstr "Членів, вибраних у списку, можна редагувати (частково) одночасно."
 
+# ad7adbb2f6a743aaa1a223c431193801
+#: ../usermanual/adherents.rst:-1 04dbebfbd3e5445188b6974101fd6a68
+msgid "Mass change selected members"
+msgstr "Купна зміна обраних членів"
+
 # 905446a9cac54ca38f3016c8308ae4fe
 #: ../usermanual/adherents.rst:67 905446a9cac54ca38f3016c8308ae4fe
 msgid ""
@@ -173,6 +191,11 @@ msgid ""
 msgstr ""
 "Будуть змінені тільки ті поля, на початку рядка яких встановлено прапорець. "
 "З'явиться зведення."
+
+# 4ccc016080304c3da252f19719cc2f96
+#: ../usermanual/adherents.rst:-1 8962fd2a90634690a89422d17a00f27b
+msgid "Summary of changes"
+msgstr "Підсумок змін"
 
 # 5b35de9cb35742fa9aea63acbbfa3c65
 #: ../usermanual/adherents.rst:75 5b35de9cb35742fa9aea63acbbfa3c65
@@ -216,10 +239,10 @@ msgid ""
 "will use status priority and ordering on `contribution status` will use "
 "creation date, contribution exemption and due date;"
 msgstr ""
-"У більшості випадків результат виходить прозорим. Просто зверніть увагу, що "
-"під час упорядкування за `станом` буде використовуватися пріоритет стану, а "
-"під час упорядкування за `станом внеску` буде використовуватися дата "
-"створення, звільнення від внеску і дата виконання;"
+"У більшості випадків результат виходить прозорим. Просто запримітьте, що під "
+"час упорядкування за `станом` буде використовуватися пріоритет стану, а під "
+"час упорядкування за `станом внеску` буде використовуватися дата створення, "
+"звільнення від внеску і дата виконання;"
 
 # e0b1accf22a842c89b425d142f455a43
 #: ../usermanual/adherents.rst:87 e0b1accf22a842c89b425d142f455a43
@@ -286,6 +309,10 @@ msgstr ""
 "когось з вибраних членів немає адреси е-пошти, Galette запропонує вам "
 "показати відповідні мітки."
 
+#: ../usermanual/adherents.rst:-1 5896d1a1052b41fe9dee62d9318564a7
+msgid "Selected members for mailing"
+msgstr "Вибрані учасники для розсилки"
+
 # d56d0ebb34c44e82be3386c79589514a
 #: ../usermanual/adherents.rst:116 d56d0ebb34c44e82be3386c79589514a
 msgid ""
@@ -323,6 +350,10 @@ msgstr ""
 #: ../usermanual/adherents.rst:124 15b160e5918f4e38ac39d87263ae7db9
 msgid "**other**: you can set any name and email address you want."
 msgstr "**інше**: ви можете встановити будь-яке ім’я та е-пошту, які хочете."
+
+#: ../usermanual/adherents.rst:-1 64108243a0fe4d42a34b5ed1c4d5235b
+msgid "Sender selection"
+msgstr "Вибір відправника"
 
 # 5725e99d780344e193a8a8f60be178df
 #: ../usermanual/adherents.rst:131 5725e99d780344e193a8a8f60be178df
@@ -381,6 +412,11 @@ msgid "`Preview` button let you preview your message before sending it."
 msgstr ""
 "Кнопка `Попередній перегляд` дозволяє попередньо переглянути повідомлення "
 "перед надсиланням."
+
+# c5de0398237446b7add2e64d38fa44f8
+#: ../usermanual/adherents.rst:-1 6b3b6683a6f742c5b056de1fed766ffb
+msgid "Preview message"
+msgstr "Доперегляд повідомлення"
 
 # d02d0fac4ecb4741b4fc8b6ee4a240e9
 #: ../usermanual/adherents.rst:147 d02d0fac4ecb4741b4fc8b6ee4a240e9
@@ -519,6 +555,10 @@ msgstr ""
 "Щоб налаштувати модель, натисніть кнопку `Налаштувати` в інтерфейсі "
 "користувача."
 
+#: ../usermanual/adherents.rst:-1 7a3452b703654fd788ab1290ab9d9f9d
+msgid "Default import model"
+msgstr "Звична модель імпорту"
+
 # 844f10481e32499a9d381c169249b5db
 #: ../usermanual/adherents.rst:185 844f10481e32499a9d381c169249b5db
 msgid ""
@@ -527,6 +567,10 @@ msgid ""
 msgstr ""
 "Якщо запропонована модель вам не підходить, натисніть `Змінити модель` та "
 "оберіть поля:"
+
+#: ../usermanual/adherents.rst:-1 2065c32b17b9433c82460219309e4595
+msgid "Import model configuration"
+msgstr "Налаштування моделі імпорту"
 
 # 745b042c0c54450f8b04397dfb178004
 #: ../usermanual/adherents.rst:192 745b042c0c54450f8b04397dfb178004
@@ -582,6 +626,10 @@ msgid ""
 msgstr ""
 "Надіслані файли перелічені в розділі `Наявні файли`. Ви можете відобразити, "
 "видалити або імпортувати їх:"
+
+#: ../usermanual/adherents.rst:-1 876843089026455a88c98cedb61257b0
+msgid "Select and import file"
+msgstr "Вибрати файл імпорту"
 
 # e88f3904d8654eabaf2aea335a22e2dc
 #: ../usermanual/adherents.rst:212 e88f3904d8654eabaf2aea335a22e2dc
@@ -672,8 +720,8 @@ msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the unicity email constraint in the database."
 msgstr ""
-"Члени без адреси е-пошти не можуть скористатися функцією \"відновити пароль"
-"\". Це не впливає на обмеження єдності е-пошти в базі даних."
+"Члени без адреси е-пошти не можуть скористатися функцією \"відновити "
+"пароль\". Це не впливає на обмеження єдності е-пошти в базі даних."
 
 # 223e5cf58e9a4d5ba43063bb9c04959a
 #: ../usermanual/adherents.rst:238 223e5cf58e9a4d5ba43063bb9c04959a

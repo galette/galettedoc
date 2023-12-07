@@ -10,14 +10,19 @@ This plugin provides:
 * automatic transaction storage once validated.
 
 .. image:: ../_styles/static/images/plugin-paypal/preferences.png
-   :scale: 70%
+   :scale: 50%
    :align: center
    :alt: Paypal plugin preferences
 
 .. image:: ../_styles/static/images/plugin-paypal/form.png
-   :scale: 70%
+   :scale: 50%
    :align: center
    :alt: Paypal payment form
+
+.. image:: ../_styles/static/images/plugin-paypal/public_form.png
+   :scale: 50%
+   :align: center
+   :alt: Paypal payment form (public)
 
 .. warning::
 
@@ -28,9 +33,13 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.10.0-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-1.10.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.0.0-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-2.0.0.tar.bz2
    :alt: Get latest Paypal plugin!
+
+.. image:: https://img.shields.io/badge/Nighly-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-paypal-dev.tar.bz2
+   :alt: Get Paypal plugin nightly build!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
@@ -62,7 +71,3 @@ Preferences screen also permit to edit amount related to contributions types, an
 
 After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membershop extension, its membership wil be recalculated when the payment will be confirmed.
 
-How to get the sources?
-=======================
-
-Please refer to :doc:`Galette developer guide <../development/index>` to get informations about :doc:`souces retrieval <../development/git>`, and :ref:`development model <devmodel>`.

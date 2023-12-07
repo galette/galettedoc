@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2011-2021, Johan Cwiklinski
+# Copyright (C) 2011-2023, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Galette 0.9.5.2\n"
+"Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:50
 #: be24dd1f3fa94b5dacee5b25f1adecf7
-msgid "Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). You can anyways define a constant named ``GALETTE_TIMEOUT`` to :ref:`change session lifetime using behavior configuration <behavior>`:"
+msgid "Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). You can anyways define a constant named ``GALETTE_TIMEOUT`` to change session lifetime using behavior configuration:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:60
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:64
 #: 58bf33403a6545b389d880de8c5aa65d
-msgid "To fix that, :ref:`use behavior configuration <behavior>` to create a constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
+msgid "To fix that, use behavior configuration to create a constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:71
@@ -126,132 +126,267 @@ msgstr ""
 msgid "Many statistics plaftforms relies on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included."
 msgstr ""
 
-#: ../usermanual/avancee.rst:87
+#: ../usermanual/avancee.rst:84
 #: 28fb00fb44184a929e34b7a788048b05
 msgid "Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!"
 msgstr ""
 
-#: ../usermanual/avancee.rst:90
+#: ../usermanual/avancee.rst:87
 #: 4a15068c329346ce8b84baf2bbc60907
 msgid "Cards size and count"
 msgstr ""
 
-#: ../usermanual/avancee.rst:94
+#: ../usermanual/avancee.rst:91
 #: 06aa60922ed74ebbb03bfc80d54aeb8c
-msgid "Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can :ref:`use behavior configuration to configure cards<behavior>`, following constants are provided:"
+msgid "Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can use behavior configuration to configure cards`, following constants are provided:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:98
+#: ../usermanual/avancee.rst:95
 #: 9cd03a0c1f424941a40b57b5b76f7e8e
 msgid "Changing those values may cause gaps; change them with caution, and do not forget to test the result ;)"
 msgstr ""
 
-#: ../usermanual/avancee.rst:100
+#: ../usermanual/avancee.rst:97
 #: 4c88f7c895c3405b8378ace539eeb327
 msgid "``GALETTE_CARD_WIDTH`` defines cards width,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:101
+#: ../usermanual/avancee.rst:98
 #: 410fdb76ed9a4092a81792aab69d921d
 msgid "``GALETTE_CARD_HEIGHT`` defines cards height,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:102
+#: ../usermanual/avancee.rst:99
 #: 60a4d4c995334af5ae66a5b92d24c688
 msgid "``GALETTE_CARD_COLS`` defines the number of columns,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:103
+#: ../usermanual/avancee.rst:100
 #: d9b73bebd1834a67ae720a53aa63d829
 msgid "``GALETTE_CARD_ROWS`` defines the number of lines."
 msgstr ""
 
-#: ../usermanual/avancee.rst:106
+#: ../usermanual/avancee.rst:103
 #: 9c1b46e7a978430b869f0c6e3262fce2
 msgid "CSV exports"
 msgstr ""
 
-#: ../usermanual/avancee.rst:108
+#: ../usermanual/avancee.rst:107
+#: 26b582832b4a4024a4aab9de0b8af0d1
+msgid "You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file instead of an XML one."
+msgstr ""
+
+#: ../usermanual/avancee.rst:109
 #: 2820fa30b5634d628a933ee340294131
-msgid "Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.xml`` file. Its configuration is done with several parts:"
-msgstr ""
-
-#: ../usermanual/avancee.rst:110
-#: 1a915326f2fb479885c6c582c60fc130
-msgid "the SQL query to use,"
-msgstr ""
-
-#: ../usermanual/avancee.rst:111
-#: dbdee85f9a0f45a595c8a21171b4872d
-msgid "the columns to export,"
-msgstr ""
-
-#: ../usermanual/avancee.rst:112
-#: d6aba5be13df4a5795c067c3526efd39
-msgid "the CSV separator,"
+msgid "Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.yaml`` file."
 msgstr ""
 
 #: ../usermanual/avancee.rst:113
-#: 2782882bc8ff40519015c4db7f6cf294
-msgid "the strings separator character."
+#: 638f77d6c9424d2dadc5dc2122b90398
+msgid "Legacy XML configuration file is still supported; if a duplicate identifier is found, YAML file takes precedence."
 msgstr ""
 
-#: ../usermanual/avancee.rst:117
-#: 523f8ead2b414c94ac1019904ba83fc8
-msgid "Configuration of CSV exports is done in a XML file, that **must** be vaild!"
-msgstr ""
-
-#: ../usermanual/avancee.rst:119
-#: 36ca4462722c47579295200081340d93
-msgid "If it is not, no export will be proposed from the user interface. Under linux, you can use tools like ``xmlwf`` or ``xmllint`` to ensure your file is valid."
-msgstr ""
-
-#: ../usermanual/avancee.rst:121
+#: ../usermanual/avancee.rst:115
 #: 4986fbad39154b4aab68c8c771a72453
-msgid "Let's examine contributions parameted export:"
+msgid "Let's examine existing \"cotisations\" parameted export:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:138
+#: 76e592ed04ec4c1095ec565b9d31f587
+msgid "each array entry is a unique identifier, lowercase without spaces or special character"
+msgstr ""
+
+#: ../usermanual/avancee.rst:139
+#: 2d6b845ad14c4aceaa3e365456bb4566
+msgid "`name` and `description` are mandatory as used to display each parameted export in the user interface"
+msgstr ""
+
+#: ../usermanual/avancee.rst:140
+#: c655c88551534b388034f10660c4f032
+msgid "`filename` sets the filename for output file"
+msgstr ""
+
+#: ../usermanual/avancee.rst:141
+#: 2b65d20e45d84285b1e8c6a6b0d1d39d
+msgid "`query` is the query to execute, it's mandatory. There is no other limitation than the SQL engine ones, expect you cannot send them any parameters"
+msgstr ""
+
+#: ../usermanual/avancee.rst:142
+#: db6af6d37fd846d68983f7ce94f08e78
+msgid "`headers` manages columns titles:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:144
+#: 1b1da00e44084f5d851b162335747a37
+msgid "like in the above example, an array of columns titles of your own"
+msgstr ""
+
+#: ../usermanual/avancee.rst:145
+#: f4148065b88f4d8795b29bed86281c06
+msgid "if not present, Galette fields names will be exported. You can use named columns in your SQL query (``SELECT nom_adh AS \"Column title\" FROM ...``)"
+msgstr ""
+
+#: ../usermanual/avancee.rst:146
+#: 55d1a44d2ab04494896b755aac0fce46
+msgid "set to false (``headers: false``) to disable column headers output"
+msgstr ""
+
+#: ../usermanual/avancee.rst:148
+#: c084f79e4dbe4d39b2e0f3995d53a966
+msgid "`separator` is the CSV separator that will be used. Possible values are:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:150
+#: c6c260f76c434d5ca47377d23214939c
+msgid "semicolon (``;``) - default"
+msgstr ""
+
+#: ../usermanual/avancee.rst:151
+#: d05d902a5c47491f8b83074efbf64a35
+msgid "comma (``,``)"
+msgstr ""
+
+#: ../usermanual/avancee.rst:152
+#: e5f2b9d1fa62489387935e409eb24695
+msgid "tabulation character (``\\t``)"
 msgstr ""
 
 #: ../usermanual/avancee.rst:154
-#: 682108649abf4f148cb4febd7e4030a2
-msgid "Each parameted export is defined inside a tag named ``export``, which contains a unique identifier (``id``), a description displayed in the user interface (``name``) and output filename (``filename``). The ``query`` tag contains the SQL query to execute, there is no other limitation than the SQL engine ones."
+#: e571bc8e9a774e1b9b2cd14d40d7b603
+msgid "`quote` either double quote - default - or simple quote character"
 msgstr ""
 
-#: ../usermanual/avancee.rst:156
-#: 13b1144800da48b3a47d922f4510e397
-msgid "The ``headers`` part defines columns that will be exported, the ``separator`` tag the CSV separator and the ``quote`` tag the strings separator."
+#: ../usermanual/avancee.rst:155
+#: 88168b2860a84585b0892da957c03d16
+msgid "to disable an export, you can add ``inactive: true``"
 msgstr ""
 
-#: ../usermanual/avancee.rst:161
+#: ../usermanual/avancee.rst:160
 #: dc42621488b548eeb7e07095bd7b6751
 msgid "Administration tools"
 msgstr ""
 
-#: ../usermanual/avancee.rst:165
+#: ../usermanual/avancee.rst:164
 #: 2a99707e02094b5398e801b4d43e7bc2
 msgid "All the admin tools operation are destructive, use it with cautions, and **make sure you did a database backup** before!"
 msgstr ""
 
-#: ../usermanual/avancee.rst:167
+#: ../usermanual/avancee.rst:166
 #: 1c578f9418ed4d4b83b002c7d5c1ec12
 msgid "There are a few tools provided for Galette admin that permits to:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:169
+#: ../usermanual/avancee.rst:168
 #: 619acd95b45e475b9bd2b6e1b582f6da
 msgid "**reinitialize mailings contents** will reset all emails contents to default values,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:170
+#: ../usermanual/avancee.rst:169
 #: 3032f80400cb4c2591dc166a2fb1a4a2
 msgid "**reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:171
+#: ../usermanual/avancee.rst:170
 #: feabe0c1c39c4fad927c3e0aa5fadaf3
 msgid "**reinitialize PDF models** will reset ll PDF models to default values,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:172
+#: ../usermanual/avancee.rst:171
 #: 88ed7f55ed2c4fab90a780919349b47d
 msgid "**generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database."
+msgstr ""
+
+#: ../usermanual/avancee.rst:176
+#: d8edd5f7d98e4b12b1078f5ea0ac024d
+msgid "Galette modes"
+msgstr ""
+
+#: ../usermanual/avancee.rst:178
+#: e2055e48ed054f34aa542de29b59583f
+msgid "Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration <behavior>`). This directive can take the following values:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:180
+#: ef4616e506c940c28f23c8482a5d80ef
+msgid "``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch."
+msgstr ""
+
+#: ../usermanual/avancee.rst:181
+#: ea2c0138e50943cab5cc98b3bfd319c7
+msgid "``DEV``: development mode:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:183
+#: 009a52199c584e54ae7156c1a22ac0f5
+msgid "unstable/not finished parts will be activated,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:184
+#: a73bd7b04767463897f20306f1e84873
+msgid "some data will not be stored in session,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:185
+#: a25b4b21b8c24e15952363a73165be58
+msgid "default log level is set to ``DEBUG``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:186
+#: 56cb2c250ab246c1838e90719c47bf10
+msgid "news won't be cached,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:187
+#: ccd4bd9fae2d4456b4e5496ea9372f16
+msgid "database verion check will not be done."
+msgstr ""
+
+#: ../usermanual/avancee.rst:189
+#: edd8fc6e54bd4573b29a3b4f3a42fcff
+msgid "``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ..."
+msgstr ""
+
+#: ../usermanual/avancee.rst:190
+#: 58edd5fb363441bb8b6c16e611bca56a
+msgid "``TEST``: reserved for unit tests."
+msgstr ""
+
+#: ../usermanual/avancee.rst:191
+#: 53fad056e86c433cb702eb054bfa3c32
+msgid "``MAINT``: maintainance mode. Only super admin will be able to login."
+msgstr ""
+
+#: ../usermanual/avancee.rst:197
+#: 49b49d1f899b4984ab40f99592260c37
+msgid "Behavior configuration"
+msgstr ""
+
+#: ../usermanual/avancee.rst:199
+#: 582fcfa42dcf4f25ba5d25e867335d2c
+msgid "It is possible to change some of Galette behaviors:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:201
+#: 3ccd872ee4714d2881791db050c3d950
+msgid "`GALETTE_MODE`: :ref:`see Galette modes <galettemodes>`;"
+msgstr ""
+
+#: ../usermanual/avancee.rst:202
+#: e1f55d9f8b8b4cdb88842740e0cc8bae
+msgid "`NON_UTF_DBCONNECT`: disable explicitely UTf-8 connection to the database (for users who see encoding issues);"
+msgstr ""
+
+#: ../usermanual/avancee.rst:203
+#: 5c491a6f323644ee8fa78f0c853c5cef
+msgid "you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...)."
+msgstr ""
+
+#: ../usermanual/avancee.rst:205
+#: 88cf7861b81a4bfbb6d39b8f270f310b
+msgid "You can add those directives by declaring constants in the ``galette/config/behavior.inc.php``."
+msgstr ""
+
+#: ../usermanual/avancee.rst:207
+#: 9641a12858be4e69b464edfd5943815b
+msgid "For example:"
 msgstr ""

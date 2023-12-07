@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:04+0100\n"
+"POT-Creation-Date: 2023-11-19 07:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,12 +29,11 @@ msgid ""
 "process <update>` is documented separately."
 msgstr ""
 
-# ba82dc7e7c484632a3e089e578540feb
 #: ../installation/galette.rst:7 ba82dc7e7c484632a3e089e578540feb
 msgid ""
 "You should rely on latest stable release, but it is also possible (if your "
 "know what you are doing, this is more complex for non developers!) grab it "
-"from :doc:`source code <../development/git>`"
+"from :doc:`source code <../source_code>`"
 msgstr ""
 
 # 2f47b84a5acb49838732ca501e289f65
@@ -288,79 +287,81 @@ msgid ""
 "some extra rights."
 msgstr ""
 
-# 6f17708062464aa59ecb17d0fe78faf4
-#: ../installation/galette.rst:142 6f17708062464aa59ecb17d0fe78faf4
-msgid "Initialyse"
+#: ../installation/galette.rst:142 2637d236593246d5b29d73db52516d61
+msgid "Telemetry"
+msgstr ""
+
+#: ../installation/galette.rst:144 6d35adf3b9154897b068f08b0d87bbf2
+msgid ""
+"To know more about Galette installed instances, we try to collect anonymous "
+"telemetry data. You can also register as a Galette user :)"
+msgstr ""
+
+#: ../installation/galette.rst:152 6f17708062464aa59ecb17d0fe78faf4
+msgid "Initialize"
 msgstr ""
 
 # 20bd677763c64af2bd7b2a776f88b5e1
-#: ../installation/galette.rst:144 20bd677763c64af2bd7b2a776f88b5e1
+#: ../installation/galette.rst:154 20bd677763c64af2bd7b2a776f88b5e1
 msgid ""
 "The last step will write the configuration file if needed, and initialyse "
 "some values in your fresh database, as exemple:"
 msgstr ""
 
 # 06338ed4c31a4bf68b472a13b5d7ee16
-#: ../installation/galette.rst:146 06338ed4c31a4bf68b472a13b5d7ee16
+#: ../installation/galette.rst:156 06338ed4c31a4bf68b472a13b5d7ee16
 msgid "add Galette default preferences"
 msgstr ""
 
 # d48ed529251f45b9bb8b6fe3f5882f09
-#: ../installation/galette.rst:147 d48ed529251f45b9bb8b6fe3f5882f09
+#: ../installation/galette.rst:157 d48ed529251f45b9bb8b6fe3f5882f09
 msgid "add default contributions and status types,"
 msgstr ""
 
 # 83b528c80f864ef0a58b4981a14ced4c
-#: ../installation/galette.rst:148 83b528c80f864ef0a58b4981a14ced4c
+#: ../installation/galette.rst:158 83b528c80f864ef0a58b4981a14ced4c
 msgid "fields configuration and permissions,"
 msgstr ""
 
 # b046d392e16149efa5cef902f0ee5d63
-#: ../installation/galette.rst:149 b046d392e16149efa5cef902f0ee5d63
+#: ../installation/galette.rst:159 b046d392e16149efa5cef902f0ee5d63
 msgid "texts for administrative emails,"
 msgstr ""
 
 # 82905e865cdb4290a315c1be895c6ba2
-#: ../installation/galette.rst:150 82905e865cdb4290a315c1be895c6ba2
+#: ../installation/galette.rst:160 82905e865cdb4290a315c1be895c6ba2
 msgid "members default titles,"
 msgstr ""
 
 # da2a9de79a8d4d8a828feb48de515e7f
-#: ../installation/galette.rst:151 da2a9de79a8d4d8a828feb48de515e7f
+#: ../installation/galette.rst:161 da2a9de79a8d4d8a828feb48de515e7f
 msgid "default PDF models"
 msgstr ""
 
 # 45f29540c44546729522139772582506
-#: ../installation/galette.rst:152 45f29540c44546729522139772582506
+#: ../installation/galette.rst:162 45f29540c44546729522139772582506
 msgid "..."
 msgstr ""
 
 # b50ed6bbc7db4c869fa03438b305d475
-#: ../installation/galette.rst:154 b50ed6bbc7db4c869fa03438b305d475
+#: ../installation/galette.rst:164 b50ed6bbc7db4c869fa03438b305d475
 msgid ""
 "When updating, only the missing preferences and the new default data if any "
 "will be handled."
 msgstr ""
 
 # b4615aade17247beb26e209d0e601d7c
-#: ../installation/galette.rst:157 b4615aade17247beb26e209d0e601d7c
+#: ../installation/galette.rst:171 b4615aade17247beb26e209d0e601d7c
 msgid "Installation end"
 msgstr ""
 
 # e1aff3c9deb24eeda3447fdfe7fb08f9
-#: ../installation/galette.rst:159 e1aff3c9deb24eeda3447fdfe7fb08f9
+#: ../installation/galette.rst:173 e1aff3c9deb24eeda3447fdfe7fb08f9
 msgid "Installation is now finished, congratulations!"
 msgstr ""
 
-# 01daebde6d0241438f38eb8b27b4a217
-#: ../installation/galette.rst:163 01daebde6d0241438f38eb8b27b4a217
-msgid ""
-"For security reasons, **we advise you to remove the install directory** if "
-"it is web exposed, or to drop access from your web configuration."
-msgstr ""
-
 # 13c1ea06b773428fa6b12f465ca0ccee
-#: ../installation/galette.rst:169 13c1ea06b773428fa6b12f465ca0ccee
+#: ../installation/galette.rst:179 13c1ea06b773428fa6b12f465ca0ccee
 msgid ""
 "You can now login to Galette, using super admin information you used at "
 "installation time. You can now go to the :doc:`Galette user manual <../"
@@ -368,6 +369,6 @@ msgid ""
 msgstr ""
 
 # c7dd4ced05714c2195b411e95588fa9d
-#: ../installation/galette.rst:175 c7dd4ced05714c2195b411e95588fa9d
+#: ../installation/galette.rst:185 c7dd4ced05714c2195b411e95588fa9d
 msgid "Happy Galette!"
 msgstr ""
