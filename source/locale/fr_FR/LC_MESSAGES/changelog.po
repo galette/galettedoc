@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2023-11-25 10:27+0100\n"
-"PO-Revision-Date: 2023-11-25 13:37+0000\n"
+"POT-Creation-Date: 2023-12-09 09:13+0100\n"
+"PO-Revision-Date: 2023-12-09 10:00+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
 "documentation-changelog/fr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.2.1-rc\n"
+"X-Generator: Weblate 5.3-dev\n"
 
 #: ../changelog.rst:5 52f4192485954e2cbbea4ce7c2a93b29
 msgid "Changelog"
@@ -26,15 +26,19 @@ msgstr "Journal des changements"
 msgid "0.9.6.1 -> 1.0.0"
 msgstr "0.9.6.1 -> 1.0.0"
 
-#: ../changelogs/galette_10.rst:12 5cb0b0b683374a5394dd9ce5bc91dcd2
+#: ../changelogs/galette_10.rst:11 29b5ceaafa4a401da1d94697d7095c92
+msgid "PHP 8.1 minimum is required"
+msgstr "PHP 8.1 minimum requis"
+
+#: ../changelogs/galette_10.rst:16 5cb0b0b683374a5394dd9ce5bc91dcd2
 msgid "Added"
 msgstr "Ajouts"
 
-#: ../changelogs/galette_10.rst:14 90e39ee8ae384216b9a1816d1211e496
+#: ../changelogs/galette_10.rst:18 90e39ee8ae384216b9a1816d1211e496
 msgid "Modern UI"
 msgstr "UI moderne"
 
-#: ../changelogs/galette_10.rst:15 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:19 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Major improvements on UI/UX and also responsiveness (`#1611 <https://bugs."
 "galette.eu/issues/1611>`_)"
@@ -42,11 +46,11 @@ msgstr ""
 "Améliorations majeures sur les UI/UX et responsive (`#1611 <https://bugs."
 "galette.eu/issues/1611>`_)"
 
-#: ../changelogs/galette_10.rst:16 81f5d2f872f24bbca672f432e3694b76
+#: ../changelogs/galette_10.rst:20 81f5d2f872f24bbca672f432e3694b76
 msgid "Use of YAML files instead of XML for exports configuration"
 msgstr "Utilisation de YAML au lieu de XML pour la configuration des exports"
 
-#: ../changelogs/galette_10.rst:17 8d5a9fbb6ac8424ab5cf014e02f24445
+#: ../changelogs/galette_10.rst:21 8d5a9fbb6ac8424ab5cf014e02f24445
 msgid ""
 "New preference to show/hide borders around PDF member cards (`#184 <https://"
 "bugs.galette.eu/issues/184>`_)"
@@ -54,12 +58,12 @@ msgstr ""
 "Nouvelle préférence pour afficher/masquer les bordures autour des cartes de "
 "membres PDF (`#184 <https://bugs.galette.eu/issues/184>`_)"
 
-#: ../changelogs/galette_10.rst:18 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:22 427d943461cf4b7987024b07d8293da9
 msgid "WebP image support (`#1681 <https://bugs.galette.eu/issues/1681>`_)"
 msgstr ""
 "Support des images WebP (`#1681 <https://bugs.galette.eu/issues/1681>`_)"
 
-#: ../changelogs/galette_10.rst:19 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:23 0d934e8059e64803ac5cc67207c1dfef
 msgid ""
 "Removed free search on advanced search (`#1684 <https://bugs.galette.eu/"
 "issues/1684>`_)"
@@ -67,7 +71,7 @@ msgstr ""
 "Suppression de la recherche libre dans la recherche avancée (`#1684 <https://"
 "bugs.galette.eu/issues/1684>`_)"
 
-#: ../changelogs/galette_10.rst:20 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:24 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Check for minimal database version at install (`#1725 <https://bugs.galette."
 "eu/issues/1725>`_)"
@@ -75,7 +79,7 @@ msgstr ""
 "Vérification de la version minimale de la base de données à l'installation "
 "(`#1725 <https://bugs.galette.eu/issues/1725>`_)"
 
-#: ../changelogs/galette_10.rst:21 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:25 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Resize and crop member picture to a fixed ratio (`#1717 <https://bugs."
 "galette.eu/issues/1717>`_)"
@@ -83,11 +87,11 @@ msgstr ""
 "Retaillage et recadrage des images des adhérents selon un ratio fixe (`#1717 "
 "<https://bugs.galette.eu/issues/1717>`_)"
 
-#: ../changelogs/galette_10.rst:26 9ce8f744c7c84e66987a28e1a4c26569
+#: ../changelogs/galette_10.rst:30 9ce8f744c7c84e66987a28e1a4c26569
 msgid "Fixed"
 msgstr "Corrections"
 
-#: ../changelogs/galette_10.rst:28 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:32 0d934e8059e64803ac5cc67207c1dfef
 msgid ""
 "Update issues (not defined constants) (`#1615 <https://bugs.galette.eu/"
 "issues/1615>`_)"
@@ -95,7 +99,7 @@ msgstr ""
 "Problèmes de mise à jour (constantes non définies) (`#1615 <https://bugs."
 "galette.eu/issues/1615>`_)"
 
-#: ../changelogs/galette_10.rst:29 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:33 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Fatal error when cookie not set after login (`#1617 <https://bugs.galette.eu/"
 "issues/1617>`_)"
@@ -103,14 +107,14 @@ msgstr ""
 "Erreur fatale lorsque le cookie n'est pas défini après connexion (`#1617 "
 "<https://bugs.galette.eu/issues/1617>`_)"
 
-#: ../changelogs/galette_10.rst:30 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:34 427d943461cf4b7987024b07d8293da9
 msgid ""
 "Sort members by status  (`#1618 <https://bugs.galette.eu/issues/1618>`_)"
 msgstr ""
 "Tri des adhérents par statut (`#16118 <https://bugs.galette.eu/"
 "issues/1618>`_)"
 
-#: ../changelogs/galette_10.rst:31 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:35 e40ebf19d4f14628a500813651fb01a4
 msgid ""
 "Several PHP 8.1 compatibility fixes (`#1629 <https://bugs.galette.eu/"
 "issues/1629>`_, `#1655 <https://bugs.galette.eu/issues/1655>`_)"
@@ -119,7 +123,7 @@ msgstr ""
 "bugs.galette.eu/issues/1629>`_, `#1655 <https://bugs.galette.eu/"
 "issues/1655>`_)"
 
-#: ../changelogs/galette_10.rst:32 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:36 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Groups manager cannot edit their own information (`#1635 <https://bugs."
 "galette.eu/issues/1635>`_)"
@@ -127,7 +131,7 @@ msgstr ""
 "Les responsables de groupes ne peuvent éditer leurs propres informations "
 "(`#1635 <https://bugs.galette.eu/issues/1635>`_)"
 
-#: ../changelogs/galette_10.rst:33 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:37 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Inconsistent count and display of reminders members (`#1491 <https://bugs."
 "galette.eu/issues/1491>`_)"
@@ -135,7 +139,7 @@ msgstr ""
 "Compte et affichage différent des adhérents des rappels (`#1491 <https://"
 "bugs.galette.eu/issues/1491>`_)"
 
-#: ../changelogs/galette_10.rst:34 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:38 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Minimum PHP version not displayed on compat page (`#1682 <https://bugs."
 "galette.eu/issues/1682>`_)"
@@ -143,7 +147,7 @@ msgstr ""
 "La version minimale de PHP n'était pas affichée sur la page de compatibilité "
 "(`#1682 <https://bugs.galette.eu/issues/1682>`_)"
 
-#: ../changelogs/galette_10.rst:35 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:39 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Simple members can't access their list of contributions (`#1675 <https://"
 "bugs.galette.eu/issues/1675>`_)"
@@ -151,14 +155,14 @@ msgstr ""
 "Les simples adhérents ne peuvent accéder à la liste de leurs contributions "
 "(`#1675 <https://bugs.galette.eu/issues/1675>`_)"
 
-#: ../changelogs/galette_10.rst:36 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:40 427d943461cf4b7987024b07d8293da9
 msgid ""
 "Contributions mass removal (`#1661 <https://bugs.galette.eu/issues/1661>`_)"
 msgstr ""
 "Suppression en masse de contributions (`#1661 <https://bugs.galette.eu/"
 "issues/1661>`_)"
 
-#: ../changelogs/galette_10.rst:37 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:41 0d934e8059e64803ac5cc67207c1dfef
 msgid ""
 "Disable inline images in mailings (`#1659 <https://bugs.galette.eu/"
 "issues/1659>`_)"
@@ -166,7 +170,7 @@ msgstr ""
 "Désactivation des images en ligne dans les courriels (`#1659 <https://bugs."
 "galette.eu/issues/1659>`_)"
 
-#: ../changelogs/galette_10.rst:38 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:42 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Issue editing members with wrong values imported in dynamic choice fields "
 "(`#1650 <https://bugs.galette.eu/issues/1650>`_)"
@@ -174,7 +178,7 @@ msgstr ""
 "Problème à l'édition d'adhérents avec des fausses valeurs en liste de choix "
 "dynamiques (`#1650 <https://bugs.galette.eu/issues/1650>`_)"
 
-#: ../changelogs/galette_10.rst:39 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:43 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Parent group removed when a manager edit a group (`#1648 <https://bugs."
 "galette.eu/issues/1648>`_)"
@@ -182,14 +186,14 @@ msgstr ""
 "Le groupe parent était perdu lorsqu'un responsable de groupe modifiait un "
 "groupe (`#1648 <https://bugs.galette.eu/issues/1648>`_)"
 
-#: ../changelogs/galette_10.rst:40 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:44 e40ebf19d4f14628a500813651fb01a4
 msgid ""
 "Fix logo size on member card (`#1626 <https://bugs.galette.eu/issues/1626>`_)"
 msgstr ""
 "Correction de la taille du logo sur les cartes de membre (`#1626 <https://"
 "bugs.galette.eu/issues/1626>`_)"
 
-#: ../changelogs/galette_10.rst:41 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:45 e40ebf19d4f14628a500813651fb01a4
 msgid ""
 "Fix timeout using logo on PDF member cards (`#1726 <https://bugs.galette.eu/"
 "issues/1726>`_)"
@@ -197,7 +201,7 @@ msgstr ""
 "Correction d'un timeout à l'utilisation du logo dans les cartes de membre "
 "PDF (`#1726 <https://bugs.galette.eu/issues/1726>`_)"
 
-#: ../changelogs/galette_10.rst:42 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:46 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Fix dynamic files on contributions and transactions (`#1697 <https://bugs."
 "galette.eu/issues/1697>`_)"
@@ -205,7 +209,7 @@ msgstr ""
 "Correction des fichiers dynamiques sur les contributions et transactions "
 "(`#1697 <https://bugs.galette.eu/issues/1697>`_)"
 
-#: ../changelogs/galette_10.rst:43 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:47 e40ebf19d4f14628a500813651fb01a4
 msgid ""
 "Drop required fields on PDF member cards (`#781 <https://bugs.galette.eu/"
 "issues/781>`_)"
@@ -213,7 +217,7 @@ msgstr ""
 "Suppression de champs requis sur les cartes de membre PDF (`#781 <https://"
 "bugs.galette.eu/issues/781>`_)"
 
-#: ../changelogs/galette_10.rst:44 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:48 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Parent group can be lost when a groupmanager edits a group (`#1708 <https://"
 "bugs.galette.eu/issues/1708>`_)"
@@ -221,7 +225,7 @@ msgstr ""
 "Le groupe parent pouvait être perdu lorsqu'un responsable de groupe "
 "modifiait un groupe (`#1708 <https://bugs.galette.eu/issues/1708>`_)"
 
-#: ../changelogs/galette_10.rst:45 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:49 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Mass add contribution fail if data is missing (`#1694 <https://bugs.galette."
 "eu/issues/1694>`_)"
@@ -229,7 +233,7 @@ msgstr ""
 "L'ajout en masse de contribution échouait s'il manquait une donnée (`#1694 "
 "<https://bugs.galette.eu/issues/1694>`_)"
 
-#: ../changelogs/galette_10.rst:46 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:50 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Dynamic contribution fields not rendered on advanced search (`#1693 <https://"
 "bugs.galette.eu/issues/1693>`_)"
@@ -237,7 +241,7 @@ msgstr ""
 "Les champs dynamiques des contributions n'étaient pas affichés dans la "
 "recherche avancée (`#1693 <https://bugs.galette.eu/issues/1693>`_)"
 
-#: ../changelogs/galette_10.rst:47 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:51 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Dynamic contributions choice fields on advanced search fail using postgres "
 "(`#1692 <https://bugs.galette.eu/issues/1692>`_)"
@@ -245,15 +249,15 @@ msgstr ""
 "Les champs dynamiques de type choix sur les contributions échouaient avec "
 "postgres (`#1692 <https://bugs.galette.eu/issues/1692>`_)"
 
-#: ../changelogs/galette_10.rst:48 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:52 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Several minor issues with RTL languages on PDF generation (`#1727 <https://"
 "bugs.galette.eu/issues/1727>`_)"
 msgstr ""
-"Plusieurs issues mineures avec les langues RTL à la génération de PDF (`#"
-"1727 <https://bugs.galette.eu/issues/1727>`_)"
+"Plusieurs issues mineures avec les langues RTL à la génération de PDF "
+"(`#1727 <https://bugs.galette.eu/issues/1727>`_)"
 
-#: ../changelogs/galette_10.rst:49 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:53 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Issues on transactions search with some date formats (`#1731 <https://bugs."
 "galette.eu/issues/1731>`_)"
@@ -261,7 +265,7 @@ msgstr ""
 "Problème dans les recherches des transactions avec certains formats de date "
 "(`#1731 <https://bugs.galette.eu/issues/1731>`_)"
 
-#: ../changelogs/galette_10.rst:50 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:54 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "Selected members were not reset creating a new mailing (`#1742 <https://bugs."
 "galette.eu/issues/1742>`_)"
@@ -269,11 +273,11 @@ msgstr ""
 "Les adhérents sélectionnés n'étaient pas remis à jour à la création d'un "
 "nouvel envoi (`#1742 <https://bugs.galette.eu/issues/1742>`_)"
 
-#: ../changelogs/galette_10.rst:55 d217a4ec7c9b4dc7b6230b5e17b8c11e
+#: ../changelogs/galette_10.rst:59 d217a4ec7c9b4dc7b6230b5e17b8c11e
 msgid "Under the hood..."
 msgstr "Sous le capot..."
 
-#: ../changelogs/galette_10.rst:57 14d9ff3f487a455389cd2993957059bd
+#: ../changelogs/galette_10.rst:61 14d9ff3f487a455389cd2993957059bd
 msgid ""
 "Template rendering is now assumed by `Twig <https://twig.symfony.com/>`_ "
 "instead of `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette.eu/"
@@ -283,7 +287,7 @@ msgstr ""
 ">`_ au lieu de `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette."
 "eu/issues/1619>`_)"
 
-#: ../changelogs/galette_10.rst:58 732dfb1472734b88a75c1f3d8f76e298
+#: ../changelogs/galette_10.rst:62 732dfb1472734b88a75c1f3d8f76e298
 msgid ""
 "Use of `Fomantic UI <https://fomantic-ui.com/>`_ framework for whole display "
 "(`#1324 <https://bugs.galette.eu/issues/1324>`_)"
@@ -291,11 +295,11 @@ msgstr ""
 "Utilisation du framework `Fomantic UI <https://fomantic-ui.com/>`_ pour "
 "l'ensemble de l'affichage (`#1324 <https://bugs.galette.eu/issues/1324>`_)"
 
-#: ../changelogs/galette_10.rst:59 d52ea576a2ca4063896b19ca385b6ba1
+#: ../changelogs/galette_10.rst:63 d52ea576a2ca4063896b19ca385b6ba1
 msgid "Update third party libraries"
 msgstr "Mise à jour des bibliothèques tierces"
 
-#: ../changelogs/galette_10.rst:60 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:64 ef79678c4973494d92ca68864b4c2a57
 msgid ""
 "No longer use atoum (dead project) for testing (`#1674 <https://bugs.galette."
 "eu/issues/1674>`_)"
@@ -303,7 +307,7 @@ msgstr ""
 "Atoum (projet mort) n'est plus utilisé pour les tests (`#1674 <https://bugs."
 "galette.eu/issues/1674>`_)"
 
-#: ../changelogs/galette_10.rst:61 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:65 e40ebf19d4f14628a500813651fb01a4
 msgid "LibreJS compatibility (`#1642 <https://bugs.galette.eu/issues/1642>`_)"
 msgstr "Compatibilité LibreJS (`#1642 <https://bugs.galette.eu/issues/1642>`_)"
 
@@ -1336,9 +1340,6 @@ msgstr "Anciennes versions"
 #~ "Recherche (nom, courriel, id, ...) d'adhérents à l'ajout de nouvelles "
 #~ "contributions et transactions (`#1218 <https://bugs.galette.eu/"
 #~ "issues/1218>`_)"
-
-#~ msgid "PHP 7.1 minimum,"
-#~ msgstr "PHP 7.1 minimum,"
 
 #~ msgid ""
 #~ "Manage payment types (`#1084 <https://bugs.galette.eu/issues/1084>`_)"

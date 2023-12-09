@@ -6,6 +6,10 @@
 0.9.6.1 -> 1.0.0
 ****************
 
+.. note::
+
+   PHP 8.1 minimum is required
+
 .. _ajouts_100:
 
 Added
