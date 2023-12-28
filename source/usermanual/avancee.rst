@@ -23,7 +23,7 @@ Try to keep things as simple as possible. For example, if you want to change ass
 
 This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be took into account by the Galette team, no support will be provided.
 
-You also can override the print stylesheet, just create a ``galette_local_print.css`` file.
+You also can override the print stylesheet, just create a ``galette_print_local.css`` file.
 
 Add and change strings
 ======================
