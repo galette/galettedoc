@@ -1,13 +1,13 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2023.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2023, 2024.
 # Fredericos Tezorc <fredericos.tezorc@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2024-01-15 21:30+0100\n"
-"PO-Revision-Date: 2023-12-09 10:00+0000\n"
+"PO-Revision-Date: 2024-01-15 20:45+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
 "documentation-changelog/fr/>\n"
@@ -16,123 +16,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.3-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: ../changelog.rst:5 b95a1a6724b846ab94837fc95425965b
 msgid "Changelog"
 msgstr "Journal des changements"
 
 #: ../changelogs/galette_10.rst:7 218365d895164348a2b382bc67d11f17
-#, fuzzy
-#| msgid "0.60 -> 0.61"
 msgid "1.0.0 -> 1.0.1"
-msgstr "0.60 -> 0.61"
+msgstr "1.0.0 -> 1.0.1"
 
 #: ../changelogs/galette_10.rst:9 c5f9eee9f16d4254982c541807675c53
-#, fuzzy
-#| msgid ""
-#| "Fix members list ordering (`#1586 <https://bugs.galette.eu/issues/1586>`_)"
 msgid ""
 "Title in members list causes an error (`#1756 <https://bugs.galette.eu/"
 "issues/1756>`_)"
 msgstr ""
-"Correction du tri de la liste des adhérents (`#1586 <https://bugs.galette.eu/"
-"issues/1586>`_)"
+"Le titre dans la liste des adhérents provoquait une erreur (`#1756 "
+"<https://bugs.galette.eu/issues/1756>`_)"
 
 #: ../changelogs/galette_10.rst:10 c5f9eee9f16d4254982c541807675c53
-#, fuzzy
-#| msgid ""
-#| "Cannot create new members  (`#1523 <https://bugs.galette.eu/"
-#| "issues/1523>`_)"
 msgid ""
 "Cannot enter a new social network name (`#1760 <https://bugs.galette.eu/"
 "issues/1760>`_)"
 msgstr ""
-"Impossible de créer de nouveaux adhérents (`#1523 <https://bugs.galette.eu/"
-"issues/1523>`_)"
+"Impossible de créer un nouveau nom de réseau social (`#1760 <https://bugs."
+"galette.eu/issues/1760>`_)"
 
 #: ../changelogs/galette_10.rst:11 c5f9eee9f16d4254982c541807675c53
-#, fuzzy
-#| msgid ""
-#| "Fix search on dates in contributions list (`#1469 <https://bugs.galette."
-#| "eu/issues/1469>`_)"
 msgid ""
 "Pagination and search on members list broken adding contribution (`#1761 "
 "<https://bugs.galette.eu/issues/1761>`_)"
 msgstr ""
-"Correction de la recherche par date dans la liste des contributions (`#1469 "
-"<https://bugs.galette.eu/issues/1469>`_)"
+"Pagination et recherche sur la liste des adhérents cassée à l'ajout d'une "
+"contribution (`#1761 <https://bugs.galette.eu/issues/1761>`_)"
 
 #: ../changelogs/galette_10.rst:12 cd2f343c41714d5dbd15f6aed7891661
-#, fuzzy
-#| msgid ""
-#| "Contributions mass removal (`#1661 <https://bugs.galette.eu/"
-#| "issues/1661>`_)"
 msgid ""
 "Contribution start date overload (`#1762 <https://bugs.galette.eu/"
 "issues/1762>`_)"
 msgstr ""
-"Suppression en masse de contributions (`#1661 <https://bugs.galette.eu/"
-"issues/1661>`_)"
+"Chevauchement de la date de début de contribution (`#1762 <https://bugs."
+"galette.eu/issues/1762>`_)"
 
 #: ../changelogs/galette_10.rst:13 334f9bc8a3404379babd5ea4e3d98633
-#, fuzzy
-#| msgid ""
-#| "Parent group removed when a manager edit a group (`#1648 <https://bugs."
-#| "galette.eu/issues/1648>`_)"
 msgid ""
 "Groups \"accordion tree\" not opened when a name contains a slash (`#1764 "
 "<https://bugs.galette.eu/issues/1764>`_)"
 msgstr ""
-"Le groupe parent était perdu lorsqu'un responsable de groupe modifiait un "
-"groupe (`#1648 <https://bugs.galette.eu/issues/1648>`_)"
+"\"L'accordéon\" des groupes n'était pas ouvert lorsque le nom contient un "
+"slash (`#1764 <https://bugs.galette.eu/issues/1764>`_)"
 
 #: ../changelogs/galette_10.rst:14 756638d15ae647dcaad3c126783b62a6
-#, fuzzy
-#| msgid ""
-#| "Use new icons in titles management (`#1375 <https://bugs.galette.eu/"
-#| "issues/1375>`_)"
 msgid ""
 "open_basedir prevents files in /etc to be read (`#1765 <https://bugs.galette."
 "eu/issues/1765>`_)"
 msgstr ""
-"Utilisation des nouvelles icônes dans la gestion des titres (`#1375 <https://"
-"bugs.galette.eu/issues/1375>`_)"
+"open_basedir empêche l'a lecture des fichiers dans /etc (`#1765 <https://bugs"
+".galette.eu/issues/1765>`_)"
 
 #: ../changelogs/galette_10.rst:15 b81f75cdc8364381a3d474c205105f2f
-#, fuzzy
-#| msgid ""
-#| "Fix dynamic files on contributions and transactions (`#1697 <https://bugs."
-#| "galette.eu/issues/1697>`_)"
 msgid ""
 "Some issues with contribution amount set to 0 (`#1767 <https://bugs.galette."
 "eu/issues/1767>`_)"
 msgstr ""
-"Correction des fichiers dynamiques sur les contributions et transactions "
-"(`#1697 <https://bugs.galette.eu/issues/1697>`_)"
+"Quelques problèmes sur les contributions avec un montant à 0 (`#1767 "
+"<https://bugs.galette.eu/issues/1767>`_)"
 
 #: ../changelogs/galette_10.rst:16 cd2f343c41714d5dbd15f6aed7891661
-#, fuzzy
-#| msgid ""
-#| "Fix member card with PHP 7.4 (`#1423 <https://bugs.galette.eu/"
-#| "issues/1423>`_)"
 msgid ""
 "Fatal error with PHP 7.4 (`#1768 <https://bugs.galette.eu/issues/1768>`_)"
 msgstr ""
-"Correction des cartes de membre en PHP 7.4 (`#1423 <https://bugs.galette.eu/"
-"issues/1423>`_)"
+"Erreur fatale avec PHP 7.4 (`#1768 <https://bugs.galette.eu/issues/1768>`_)"
 
 #: ../changelogs/galette_10.rst:17 8d3fe957dca74f9ab00225ac91bc403b
-#, fuzzy
-#| msgid ""
-#| "Fix search on boolean dynamic fields (`#1186 <https://bugs.galette.eu/"
-#| "issues/1186>`_)"
 msgid ""
 "Cron user does not have lang defined (`#1769 <https://bugs.galette.eu/"
 "issues/1769>`_)"
 msgstr ""
-"Correction de la recherche sur les champs dynamiques booléens (`#1186 "
-"<https://bugs.galette.eu/issues/1186>`_)"
+"L'utilisateur cron n'avait pas de langue définie (`#1769 <https://bugs."
+"galette.eu/issues/1769>`_)"
 
 #: ../changelogs/galette_10.rst:23 218365d895164348a2b382bc67d11f17
 msgid "0.9.6.1 -> 1.0.0"
