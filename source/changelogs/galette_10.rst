@@ -1,5 +1,21 @@
 :orphan:
 
+.. _v1010:
+
+**************
+1.0.0 -> 1.0.1
+**************
+
+* Title in members list causes an error (`#1756 <https://bugs.galette.eu/issues/1756>`_)
+* Cannot enter a new social network name (`#1760 <https://bugs.galette.eu/issues/1760>`_)
+* Pagination and search on members list broken adding contribution (`#1761 <https://bugs.galette.eu/issues/1761>`_)
+* Contribution start date overload (`#1762 <https://bugs.galette.eu/issues/1762>`_)
+* Groups "accordion tree" not opened when a name contains a slash (`#1764 <https://bugs.galette.eu/issues/1764>`_)
+* open_basedir prevents files in /etc to be read (`#1765 <https://bugs.galette.eu/issues/1765>`_)
+* Some issues with contribution amount set to 0 (`#1767 <https://bugs.galette.eu/issues/1767>`_)
+* Fatal error with PHP 7.4 (`#1768 <https://bugs.galette.eu/issues/1768>`_)
+* Cron user does not have lang defined (`#1769 <https://bugs.galette.eu/issues/1769>`_)
+
 .. _v1000:
 
 ****************
