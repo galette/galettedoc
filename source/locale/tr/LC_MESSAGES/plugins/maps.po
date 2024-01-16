@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-19 07:54+0100\n"
+"POT-Creation-Date: 2024-01-15 21:30+0100\n"
 "PO-Revision-Date: 2022-08-28 17:23+0000\n"
 "Last-Translator: Boran Roni <boranroniurtekin@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/galette/doc-"
@@ -19,78 +19,78 @@ msgstr ""
 "X-Generator: Weblate 4.14.1-dev\n"
 
 # 1456e63e95754e1fb28a53f850c4b9ad
-#: ../plugins/maps.rst:3 1456e63e95754e1fb28a53f850c4b9ad
+#: ../plugins/maps.rst:3 0a67c8abb0bb47008b157ac97dca6776
 msgid "Maps"
 msgstr "Haritalar"
 
 # 37dc6411a00f4298befed6288d6a5324
-#: ../plugins/maps.rst:5 37dc6411a00f4298befed6288d6a5324
+#: ../plugins/maps.rst:5 9dfc986415074962a4e6076721e9cc4d
 msgid "This plugin provides:"
 msgstr ""
 
 # 313d0936e88d44fd80fc46310286c8d5
-#: ../plugins/maps.rst:7 313d0936e88d44fd80fc46310286c8d5
+#: ../plugins/maps.rst:7 62d82491e0f94764bf2da57f69f1e8e4
 msgid ""
 "possibility to store geogaphical coordinates for members (latitude and "
 "longitude),"
 msgstr ""
 
 # 9ee44748c93d439b9334078d8f591999
-#: ../plugins/maps.rst:8 9ee44748c93d439b9334078d8f591999
+#: ../plugins/maps.rst:8 fc55f46af3e9463dbbf4050175d5f1a8
 msgid ""
 "a public map displaying up to date members that have choosen to be "
 "publically visible."
 msgstr ""
 
 # cfd5ac1519764dd9bb293edf8ad1da94
-#: ../plugins/maps.rst:11 cfd5ac1519764dd9bb293edf8ad1da94
+#: ../plugins/maps.rst:11 eedc4af5eaf343d29f9f6025782e35f2
 msgid "Installation"
 msgstr ""
 
 # 55beaf7e4cf042b99d7bb20c20f15d19
-#: ../plugins/maps.rst:13 55beaf7e4cf042b99d7bb20c20f15d19
+#: ../plugins/maps.rst:13 c0f0c1902c1441f2bb7f0e3201d609e4
 msgid "First of all, download the plugin:"
 msgstr ""
 
-#: ../plugins/maps.rst:-1 7b67110bc6e64e4db20b4169ad88159c
+#: ../plugins/maps.rst:-1 818266e4e38345db88b4383a0b7bf1f3
 msgid "Get latest Maps plugin!"
 msgstr ""
 
-#: ../plugins/maps.rst:-1 0784ff8161884624bcd4a62a89f806f8
+#: ../plugins/maps.rst:-1 3b6281dc2d6c45a486bbf848de99bf3a
 msgid "Get Maps plugin nightly build!"
 msgstr ""
 
 # 12972b70c1e84038aa983bf162bb561d
-#: ../plugins/maps.rst:23 12972b70c1e84038aa983bf162bb561d
+#: ../plugins/maps.rst:23 f1c7880998c349f589957da4e8a58ed4
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 
 # df9d209ffc094964966364f420e03675
-#: ../plugins/maps.rst:33 df9d209ffc094964966364f420e03675
+#: ../plugins/maps.rst:33 a953c57bfd7e4075b07d2e53964e4e31
 msgid "Database initialisation"
 msgstr ""
 
 # 19bfd692fbaa4a89ab570a1dc61893f6
-#: ../plugins/maps.rst:35 19bfd692fbaa4a89ab570a1dc61893f6
+#: ../plugins/maps.rst:35 eb7ae2a896124d11bb9c3f0dcd16e700
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
 
 # bdcac6382fd046d4867b7dbd7a9144fd
-#: ../plugins/maps.rst:37 bdcac6382fd046d4867b7dbd7a9144fd
+#: ../plugins/maps.rst:37 eefb6efe931d4790ac4b0c96f28501ed
 msgid "And this is finished; Maps plugin is installed :)"
 msgstr ""
 
 # 27830182254440878b13199d6b5e55c6
-#: ../plugins/maps.rst:40 27830182254440878b13199d6b5e55c6
+#: ../plugins/maps.rst:40 9dfc986415074962a4e6076721e9cc4d
 msgid "Plugin usage"
 msgstr ""
 
 # b9c3b08462f24dc891cc1438d26f41ad
-#: ../plugins/maps.rst:42 b9c3b08462f24dc891cc1438d26f41ad
+#: ../plugins/maps.rst:42 fdd58b30dd464a1b87701a3f143bf9c4
 msgid ""
 "When the plugin is installed, a group `Maps` is added to Galette menu when a "
 "member is logged in, which contains `My location` entry. This page allow "
@@ -98,14 +98,14 @@ msgid ""
 msgstr ""
 
 # db360f726f3a4304a579a341756413f3
-#: ../plugins/maps.rst:44 db360f726f3a4304a579a341756413f3
+#: ../plugins/maps.rst:44 806749c4c304449b8881919f8ce1f202
 msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
 msgstr ""
 
 # 1af3d5aae17b4bada49a1c0f0ca06b29
-#: ../plugins/maps.rst:46 1af3d5aae17b4bada49a1c0f0ca06b29
+#: ../plugins/maps.rst:46 19999bbc291b45d4a3c3b9a00fd79725
 msgid ""
 "Also, a `Map` entry is added in public pages list, that displays "
 "geolocalized members that are up to date. Administrators and staff members "
@@ -114,14 +114,14 @@ msgid ""
 msgstr ""
 
 # 33b190b6ca084cefa8b9bd03c6981002
-#: ../plugins/maps.rst:48 33b190b6ca084cefa8b9bd03c6981002
+#: ../plugins/maps.rst:48 27d2173ae7014d429c24637b1d11881c
 msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
 msgstr ""
 
 # 72dc0efe31654226bbbe60dd20f66c12
-#: ../plugins/maps.rst:50 72dc0efe31654226bbbe60dd20f66c12
+#: ../plugins/maps.rst:50 421a798d924c47ed8308e9e1a0d04e29
 msgid ""
 "if town has been set in member informations, a list of possible places will "
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
@@ -129,38 +129,38 @@ msgid ""
 msgstr ""
 
 # 1219157d2ba741938fb71d75fec71728
-#: ../plugins/maps.rst:51 1219157d2ba741938fb71d75fec71728
+#: ../plugins/maps.rst:51 fb0051f295114a639cd8747cb7e30c98
 msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
 msgstr ""
 
 # f581f5c6ae7b4d0aabb4838bdabcb4d1
-#: ../plugins/maps.rst:52 f581f5c6ae7b4d0aabb4838bdabcb4d1
+#: ../plugins/maps.rst:52 17dcf3599d8e4bb2ae5d355fb0e06ff6
 msgid "and also a geolocalize button using browser capacities."
 msgstr ""
 
 # 99d4a42cc87645d4bf15eef0c0de81bf
-#: ../plugins/maps.rst:54 99d4a42cc87645d4bf15eef0c0de81bf
+#: ../plugins/maps.rst:54 ff7a52c5286041178fcf0c86f3060c21
 msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
 msgstr ""
 
 # da083618a9c54f1e9fe1a5ac4d49e503
-#: ../plugins/maps.rst:60 da083618a9c54f1e9fe1a5ac4d49e503
+#: ../plugins/maps.rst:60 4949dcde73674903a756b3f9747c0f89
 msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
 msgstr ""
 
 # 5cc12078cb6345c8876df9a227d64be8
-#: ../plugins/maps.rst:66 5cc12078cb6345c8876df9a227d64be8
+#: ../plugins/maps.rst:66 049655b7cd1d4241b62a85b350370788
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
 
 # 822d4913304041ca8e197e0470a3ef78
-#: ../plugins/maps.rst:72 822d4913304041ca8e197e0470a3ef78
+#: ../plugins/maps.rst:72 737036d3678e44569289208461d7cf21
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
