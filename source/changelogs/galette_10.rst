@@ -1,5 +1,18 @@
 :orphan:
 
+.. _v1020:
+
+**************
+1.0.1 -> 1.0.2
+**************
+
+* Public pages access restriction (CVE-2024-24761 - `#1778 <https://bugs.galette.eu/issues/1778>`_)
+* Remove useless class from templates (`#1771 <https://bugs.galette.eu/issues/1771>`_) and fix social networks search dropdown (`#1760 <https://bugs.galette.eu/issues/1760>`_)
+* Ensure language is changed when login from cron; closes (`#1769 <https://bugs.galette.eu/issues/1769>`_)
+* Make replacements icon in PDF Model more visible (`#1770 <https://bugs.galette.eu/issues/1770>`_)
+* Fix possible issue on group creation (`#1773 <https://bugs.galette.eu/issues/1773>`_)
+* Fix URL redirection (`#1777 <https://bugs.galette.eu/issues/1777>`_)
+
 .. _v1010:
 
 **************
