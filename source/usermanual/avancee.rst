@@ -178,17 +178,24 @@ Galette modes
 Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration <behavior>`). This directive can take the following values:
 
 * ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch.
-* ``DEV``: development mode:
-
-  - unstable/not finished parts will be activated,
-  - some data will not be stored in session,
-  - default log level is set to ``DEBUG``,
-  - news won't be cached,
-  - database verion check will not be done.
-
 * ``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ...
 * ``TEST``: reserved for unit tests.
 * ``MAINT``: maintainance mode. Only super admin will be able to login.
+
+.. _debug:
+
+Galette Debug
+=============
+
+.. versionadded:: 1.1.0
+
+A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug mode. With this mode on:
+
+- unstable/not finished parts will be activated,
+- some data will not be stored in session,
+- default log level is set to ``DEBUG``,
+- news won't be cached,
+- database verion check will not be done.
 
 .. _behavior:
 
@@ -198,7 +205,7 @@ Behavior configuration
 
 It is possible to change some of Galette behaviors:
 
-* `GALETTE_MODE`: :ref:`see Galette modes <galettemodes>`;
+* `GALETTE_DEBUG`: :ref:`see Galette modes <debug>`;
 * `NON_UTF_DBCONNECT`: disable explicitely UTf-8 connection to the database (for users who see encoding issues);
 * you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...).
 
@@ -209,4 +216,4 @@ For example:
 .. code-block:: php
 
    <?php
-   define('GALETTE_MODE', 'DEV');
+   define('GALETTE_DEBUG', true);
