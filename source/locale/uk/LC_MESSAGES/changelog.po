@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
-"Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2024-02-03 09:43+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-01 08:12+0100\n"
 "PO-Revision-Date: 2024-02-03 08:51+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
@@ -24,17 +24,121 @@ msgstr ""
 "X-Generator: Weblate 5.4-dev\n"
 
 # 52f4192485954e2cbbea4ce7c2a93b29
-#: ../changelog.rst:5 b95a1a6724b846ab94837fc95425965b
+#: ../changelog.rst:5 52f4192485954e2cbbea4ce7c2a93b29
 msgid "Changelog"
 msgstr "Журнал змін"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:7 218365d895164348a2b382bc67d11f17
+#: ../changelogs/galette_10.rst:7 f7e339f5c27b411b9a3bdedaeac4801a
+#, fuzzy
+#| msgid "1.0.1 -> 1.0.2"
+msgid "1.0.2 -> 1.0.3"
+msgstr "1.0.1 -> 1.0.2"
+
+# f5b4a45e98274de29e0bb3913a283610
+#: ../changelogs/galette_10.rst:9 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
+#| "issues/1508>`_)"
+msgid ""
+"Logo in mail signature is not shown (`#1783 <https://bugs.galette.eu/"
+"issues/1783>`_)"
+msgstr ""
+"Виправлення кольорів карток у нових установленнях (`#1508 <https://bugs."
+"galette.eu/issues/1508>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:10 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Missing HTML editor for dynamic fields information field (`#1774 <https://"
+"bugs.galette.eu/issues/1774>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
+# f5b4a45e98274de29e0bb3913a283610
+#: ../changelogs/galette_10.rst:11 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
+#| "issues/1508>`_)"
+msgid ""
+"Update and maintainance pages are no longer working (`#1782 <https://bugs."
+"galette.eu/issues/1782>`_)"
+msgstr ""
+"Виправлення кольорів карток у нових установленнях (`#1508 <https://bugs."
+"galette.eu/issues/1508>`_)"
+
+# e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:12 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Do not notify member on contribution change (`#1467 <https://bugs.galette."
+#| "eu/issues/1467>`_)"
+msgid ""
+"Do not throw events on mass edition (`#1733 <https://bugs.galette.eu/"
+"issues/1733>`_)"
+msgstr ""
+"Не повідомляється член про зміну внеску (`#1465 <https://bugs.galette.eu/"
+"issues/1465>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:13 0d934e8059e64803ac5cc67207c1dfef
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Make cache version dependent (`#1787 <https://bugs.galette.eu/issues/1787>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:14 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid ""
+"Check preferences website is valid (`#1789 <https://bugs.galette.eu/"
+"issues/1789>`_)"
+msgstr ""
+"Виправлено неправильний підрахунок нагадувань (`#1454 <https://bugs.galette."
+"eu/issues/1454>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:15 e40ebf19d4f14628a500813651fb01a4
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Link to asso website from logo (`#1790 <https://bugs.galette.eu/"
+"issues/1790>`_)"
+msgstr ""
+"Виправлено відображуваний номер версії (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# f00af03eecfb4cd4b8b81b61ddd71a03
+#: ../changelogs/galette_10.rst:16 427d943461cf4b7987024b07d8293da9
+#, fuzzy
+#| msgid ""
+#| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
+msgid "Rework UI messages (`#1786 <https://bugs.galette.eu/issues/1786>`_)"
+msgstr ""
+"Сортування учасників за статусом (`#1618 <https://bugs.galette.eu/"
+"issues/1618>`_)"
+
+# bba070ebb57447adac0ed05d94a0e072
+#: ../changelogs/galette_10.rst:22 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.0.1 -> 1.0.2"
 msgstr "1.0.1 -> 1.0.2"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:9 b81f75cdc8364381a3d474c205105f2f
+#: ../changelogs/galette_10.rst:24 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -47,7 +151,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # 0d934e8059e64803ac5cc67207c1dfef
-#: ../changelogs/galette_10.rst:10 645104fc94b14187935310382d8180fc
+#: ../changelogs/galette_10.rst:25 14d9ff3f487a455389cd2993957059bd
 #, fuzzy
 #| msgid ""
 #| "Several PHP 8.1 compatibility fixes (`#1626 <https://bugs.galette.eu/"
@@ -61,7 +165,7 @@ msgstr ""
 "issues/1629>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:11 334f9bc8a3404379babd5ea4e3d98633
+#: ../changelogs/galette_10.rst:26 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fatal error when cookie not set after login (`#1617 <https://bugs.galette."
@@ -74,7 +178,7 @@ msgstr ""
 "bugs.galette.eu/issues/1617>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:12 9777b512c8d047bea4e9f2246ab092f8
+#: ../changelogs/galette_10.rst:27 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -86,7 +190,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:13 08fe646c4fcb4d1c89a1f8ac7df8d6ba
+#: ../changelogs/galette_10.rst:28 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -99,7 +203,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:14 cd2f343c41714d5dbd15f6aed7891661
+#: ../changelogs/galette_10.rst:29 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -110,12 +214,12 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:20 218365d895164348a2b382bc67d11f17
+#: ../changelogs/galette_10.rst:35 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.0.0 -> 1.0.1"
 msgstr "1.0.0 -> 1.0.1"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:22 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:37 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -128,7 +232,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # a137ee16b5d34c6bb4a4e90e024a6eb4
-#: ../changelogs/galette_10.rst:23 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:38 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Cannot print labels or change members in mailings (`#1468 <https://bugs."
@@ -141,7 +245,7 @@ msgstr ""
 "<https://bugs.galette.eu/issues/1468>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:24 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:39 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -153,7 +257,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:25 cd2f343c41714d5dbd15f6aed7891661
+#: ../changelogs/galette_10.rst:40 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -166,7 +270,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # 5c34437a218c468eb0223e625ad64929
-#: ../changelogs/galette_10.rst:26 334f9bc8a3404379babd5ea4e3d98633
+#: ../changelogs/galette_10.rst:41 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/"
@@ -179,7 +283,7 @@ msgstr ""
 "<https://bugs.galette.eu/issues/1453>`_)"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:27 756638d15ae647dcaad3c126783b62a6
+#: ../changelogs/galette_10.rst:42 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -192,7 +296,7 @@ msgstr ""
 "issues/1462>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:28 b81f75cdc8364381a3d474c205105f2f
+#: ../changelogs/galette_10.rst:43 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -205,7 +309,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:29 cd2f343c41714d5dbd15f6aed7891661
+#: ../changelogs/galette_10.rst:44 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -216,7 +320,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:30 8d3fe957dca74f9ab00225ac91bc403b
+#: ../changelogs/galette_10.rst:45 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fatal error when cookie not set after login (`#1617 <https://bugs.galette."
@@ -229,11 +333,11 @@ msgstr ""
 "bugs.galette.eu/issues/1617>`_)"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:36 218365d895164348a2b382bc67d11f17
+#: ../changelogs/galette_10.rst:51 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "0.9.6.1 -> 1.0.0"
 msgstr "0.9.6.1 -> 1.0.0"
 
-#: ../changelogs/galette_10.rst:40 1f3ffd37f84a4148850429ffcd624bc0
+#: ../changelogs/galette_10.rst:55 29b5ceaafa4a401da1d94697d7095c92
 msgid "PHP 8.1 minimum is required"
 msgstr ""
 
@@ -250,16 +354,16 @@ msgstr ""
 # 5b3c963e765c4ae897f179074cc70a18
 # ecc0f7ab222247c9ac03c31d97909caf
 # e4637005c3354c47ae8a4c254454e8ca
-#: ../changelogs/galette_10.rst:45 242e08aef2b146e784bc4bb407457053
+#: ../changelogs/galette_10.rst:60 5cb0b0b683374a5394dd9ce5bc91dcd2
 msgid "Added"
 msgstr "Додано"
 
-#: ../changelogs/galette_10.rst:47 c0a1a733d96240c5b7529ef7317f6db8
+#: ../changelogs/galette_10.rst:62 90e39ee8ae384216b9a1816d1211e496
 msgid "Modern UI"
 msgstr "Сучасний інтерфейс"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:48 9777b512c8d047bea4e9f2246ab092f8
+#: ../changelogs/galette_10.rst:63 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -270,12 +374,12 @@ msgstr ""
 "Сортування учасників за статусом (`#1618 <https://bugs.galette.eu/"
 "issues/1618>`_)"
 
-#: ../changelogs/galette_10.rst:49 376effb0cbf8492eba6c685586ad676f
+#: ../changelogs/galette_10.rst:64 81f5d2f872f24bbca672f432e3694b76
 msgid "Use of YAML files instead of XML for exports configuration"
 msgstr "Використання файлів YAML замість XML для налаштування експорту"
 
 # a137ee16b5d34c6bb4a4e90e024a6eb4
-#: ../changelogs/galette_10.rst:50 756638d15ae647dcaad3c126783b62a6
+#: ../changelogs/galette_10.rst:65 8d5a9fbb6ac8424ab5cf014e02f24445
 msgid ""
 "New preference to show/hide borders around PDF member cards (`#184 <https://"
 "bugs.galette.eu/issues/184>`_)"
@@ -284,7 +388,7 @@ msgstr ""
 "форматі PDF (`#184 <https://bugs.galette.eu/issues/184>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:51 4c398ff5146e4600b20c35a36f0c5eb3
+#: ../changelogs/galette_10.rst:66 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -295,7 +399,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:52 cec20ce447994be68e9f1940bff47d61
+#: ../changelogs/galette_10.rst:67 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -308,7 +412,7 @@ msgstr ""
 "issues/1462>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:53 11433d057ef2417ab8324335f0a7cdb6
+#: ../changelogs/galette_10.rst:68 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -320,7 +424,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:54 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:69 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -344,12 +448,12 @@ msgstr ""
 # d15cde785ff44fe799f2cf4ad678e4ec
 # 6981fda5bf7241fc91e1c5792e843544
 # 67232b1c72244281b3bbfe51881bc130
-#: ../changelogs/galette_10.rst:59 3c8f2366dde84af4ad007f72e0579204
+#: ../changelogs/galette_10.rst:74 9ce8f744c7c84e66987a28e1a4c26569
 msgid "Fixed"
 msgstr "Виправлено"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:61 3dd27ab4070344989e2c107f6941a139
+#: ../changelogs/galette_10.rst:76 0d934e8059e64803ac5cc67207c1dfef
 msgid ""
 "Update issues (not defined constants) (`#1615 <https://bugs.galette.eu/"
 "issues/1615>`_)"
@@ -358,7 +462,7 @@ msgstr ""
 "eu/issues/1615>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:62 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:77 c60cf0b056c247968c4dfe1e8ed238d9
 msgid ""
 "Fatal error when cookie not set after login (`#1617 <https://bugs.galette.eu/"
 "issues/1617>`_)"
@@ -367,7 +471,7 @@ msgstr ""
 "bugs.galette.eu/issues/1617>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:63 cec20ce447994be68e9f1940bff47d61
+#: ../changelogs/galette_10.rst:78 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -378,7 +482,7 @@ msgstr ""
 "issues/1618>`_)"
 
 # 0d934e8059e64803ac5cc67207c1dfef
-#: ../changelogs/galette_10.rst:64 ce88d5605552437d871d180e6bd7d043
+#: ../changelogs/galette_10.rst:79 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Several PHP 8.1 compatibility fixes (`#1626 <https://bugs.galette.eu/"
@@ -391,7 +495,7 @@ msgstr ""
 "issues/1629>`_)"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:65 15f6007fe2944842abc216312f103927
+#: ../changelogs/galette_10.rst:80 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -404,7 +508,7 @@ msgstr ""
 "galette.eu/issues/1635>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:66 b73666d0f0d4401e99968144645a6bdd
+#: ../changelogs/galette_10.rst:81 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -417,7 +521,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:67 19bf88317e7e4e27a045ea77133286ca
+#: ../changelogs/galette_10.rst:82 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -430,7 +534,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:68 054db387016243c48135219bc684b066
+#: ../changelogs/galette_10.rst:83 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -443,7 +547,7 @@ msgstr ""
 "galette.eu/issues/1635>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:69 cd2f343c41714d5dbd15f6aed7891661
+#: ../changelogs/galette_10.rst:84 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -455,7 +559,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:70 8d3fe957dca74f9ab00225ac91bc403b
+#: ../changelogs/galette_10.rst:85 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -467,7 +571,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:71 bf96348650da48278a718d7275cf0326
+#: ../changelogs/galette_10.rst:86 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -480,7 +584,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # 5c34437a218c468eb0223e625ad64929
-#: ../changelogs/galette_10.rst:72 334f9bc8a3404379babd5ea4e3d98633
+#: ../changelogs/galette_10.rst:87 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/"
@@ -493,7 +597,7 @@ msgstr ""
 "<https://bugs.galette.eu/issues/1453>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:73 08fe646c4fcb4d1c89a1f8ac7df8d6ba
+#: ../changelogs/galette_10.rst:88 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -505,7 +609,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:74 756638d15ae647dcaad3c126783b62a6
+#: ../changelogs/galette_10.rst:89 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -518,7 +622,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # f5b4a45e98274de29e0bb3913a283610
-#: ../changelogs/galette_10.rst:75 b81f75cdc8364381a3d474c205105f2f
+#: ../changelogs/galette_10.rst:90 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix cards colors on new installations (`#1508 <https://bugs.galette.eu/"
@@ -531,7 +635,7 @@ msgstr ""
 "galette.eu/issues/1508>`_)"
 
 # a137ee16b5d34c6bb4a4e90e024a6eb4
-#: ../changelogs/galette_10.rst:76 756638d15ae647dcaad3c126783b62a6
+#: ../changelogs/galette_10.rst:91 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "New preference to show/hide borders around PDF member cards (`#184 "
@@ -544,7 +648,7 @@ msgstr ""
 "форматі PDF (`#184 <https://bugs.galette.eu/issues/184>`_)"
 
 # 5c34437a218c468eb0223e625ad64929
-#: ../changelogs/galette_10.rst:77 334f9bc8a3404379babd5ea4e3d98633
+#: ../changelogs/galette_10.rst:92 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Pagination was missing on public pages (`#1453 <https://bugs.galette.eu/"
@@ -557,7 +661,7 @@ msgstr ""
 "<https://bugs.galette.eu/issues/1453>`_)"
 
 # 09c0a7212cdd4f6d949abeb3aa3febcb
-#: ../changelogs/galette_10.rst:78 ba6aaf8a37c544b8ae3ef6af44070e0f
+#: ../changelogs/galette_10.rst:93 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Error creating dynamic field with empty name (`#1452 <https://bugs."
@@ -570,7 +674,7 @@ msgstr ""
 "galette.eu/issues/1452>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:79 328ad5ac3e184897882b07e2f34bec30
+#: ../changelogs/galette_10.rst:94 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -582,7 +686,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:80 337d569ff39144aeb0fcade923228406
+#: ../changelogs/galette_10.rst:95 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -594,7 +698,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:81 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:96 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -607,7 +711,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:82 c5f9eee9f16d4254982c541807675c53
+#: ../changelogs/galette_10.rst:97 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix reminders wrong count (`#1454 <https://bugs.galette.eu/issues/1454>`_)"
@@ -619,7 +723,7 @@ msgstr ""
 "eu/issues/1454>`_)"
 
 # f00af03eecfb4cd4b8b81b61ddd71a03
-#: ../changelogs/galette_10.rst:83 054db387016243c48135219bc684b066
+#: ../changelogs/galette_10.rst:98 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fatal error when cookie not set after login (`#1617 <https://bugs.galette."
@@ -640,12 +744,12 @@ msgstr ""
 # 77cd62f8ddae4136807346fd31c6eb14
 # 746f9e3ee5a04f09ae8224ec79ee312e
 # 9e8386df88a24a26a51a72f59d3fc6ff
-#: ../changelogs/galette_10.rst:88 5c0a417606944880a591ab05fadf196e
+#: ../changelogs/galette_10.rst:103 d217a4ec7c9b4dc7b6230b5e17b8c11e
 #, fuzzy
 msgid "Under the hood..."
 msgstr "Під капотом..."
 
-#: ../changelogs/galette_10.rst:90 645104fc94b14187935310382d8180fc
+#: ../changelogs/galette_10.rst:105 14d9ff3f487a455389cd2993957059bd
 msgid ""
 "Template rendering is now assumed by `Twig <https://twig.symfony.com/>`_ "
 "instead of `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette.eu/"
@@ -655,7 +759,7 @@ msgstr ""
 "замість `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette.eu/"
 "issues/1619>`_)"
 
-#: ../changelogs/galette_10.rst:91 3dd27ab4070344989e2c107f6941a139
+#: ../changelogs/galette_10.rst:106 732dfb1472734b88a75c1f3d8f76e298
 msgid ""
 "Use of `Fomantic UI <https://fomantic-ui.com/>`_ framework for whole display "
 "(`#1324 <https://bugs.galette.eu/issues/1324>`_)"
@@ -665,12 +769,12 @@ msgstr ""
 
 # d52ea576a2ca4063896b19ca385b6ba1
 # d57bb274bb344178963fbce5c9b51b7d
-#: ../changelogs/galette_10.rst:92 7f82baf973374d72910f6c748309a5c9
+#: ../changelogs/galette_10.rst:107 d52ea576a2ca4063896b19ca385b6ba1
 msgid "Update third party libraries"
 msgstr "Оновлення сторонніх бібліотек"
 
 # ef79678c4973494d92ca68864b4c2a57
-#: ../changelogs/galette_10.rst:93 f6a5fe98218449a5ba14816b28d1566e
+#: ../changelogs/galette_10.rst:108 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Members cannot print their own cards (`#1462 <https://bugs.galette.eu/"
@@ -683,7 +787,7 @@ msgstr ""
 "galette.eu/issues/1635>`_)"
 
 # 0d934e8059e64803ac5cc67207c1dfef
-#: ../changelogs/galette_10.rst:94 7e9d4b5b1b194dc885785c50cff3d431
+#: ../changelogs/galette_10.rst:109 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Several PHP 8.1 compatibility fixes (`#1626 <https://bugs.galette.eu/"
@@ -694,7 +798,7 @@ msgstr ""
 "issues/1629>`_)"
 
 # 3ce3a6271f5740ca98f31c67eda6c1b2
-#: ../changelog.rst:12 fd4fa7dbaebd4b8d87a7dc91fa4eb5ad
+#: ../changelog.rst:12 3ce3a6271f5740ca98f31c67eda6c1b2
 msgid "Legacy versions"
 msgstr "Застарілі версії"
 
@@ -718,16 +822,6 @@ msgstr "Застарілі версії"
 #~ msgstr ""
 #~ "Виправлення кольорів карток у нових установленнях (`#1508 <https://bugs."
 #~ "galette.eu/issues/1508>`_)"
-
-# e9c74ad26ad843c2906a399dc793a9cc
-#, fuzzy
-#~| msgid ""
-#~| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
-#~| "issues/1446>`_)"
-#~ msgid "Add member number (`#190 <https://bugs.galette.eu/issues/190>`_)"
-#~ msgstr ""
-#~ "Виправлено відображуваний номер версії (`#1446 <https://bugs.galette.eu/"
-#~ "issues/1446>`_)"
 
 # a137ee16b5d34c6bb4a4e90e024a6eb4
 #, fuzzy
@@ -1065,14 +1159,6 @@ msgstr "Застарілі версії"
 #~ "issues/1465>`_)"
 #~ msgstr ""
 #~ "Виправлено графік компаній/фізичних осіб (`#1465 <https://bugs.galette.eu/"
-#~ "issues/1465>`_)"
-
-# e40ebf19d4f14628a500813651fb01a4
-#~ msgid ""
-#~ "Do not notify member on contribution change (`#1467 <https://bugs.galette."
-#~ "eu/issues/1467>`_)"
-#~ msgstr ""
-#~ "Не повідомляється член про зміну внеску (`#1465 <https://bugs.galette.eu/"
 #~ "issues/1465>`_)"
 
 # a137ee16b5d34c6bb4a4e90e024a6eb4
