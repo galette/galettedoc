@@ -5,21 +5,22 @@
 # Nicolás S. Gómez <nicogomfor@gmail.com>, 2021.
 # Berto Te <Bertote@3fpj.com>, 2021.
 # Cow <javier.fserrador@gmail.com>, 2022.
+# gallegonovato <fran-carro@hotmail.es>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-01 08:12+0100\n"
-"PO-Revision-Date: 2022-05-14 17:14+0000\n"
-"Last-Translator: Cow <javier.fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
-"plugins-paypal/es/>\n"
+"PO-Revision-Date: 2024-03-01 23:28+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
+"doc-plugins-paypal/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 # 642c4a0793084c7181f1b5d5d2b0a787
 #: ../plugins/paypal.rst:3 642c4a0793084c7181f1b5d5d2b0a787
@@ -34,34 +35,34 @@ msgstr "Este complemento proporciona:"
 # 1312e44d78014c9a8a6a4fab220e8fe2
 #: ../plugins/paypal.rst:7 1312e44d78014c9a8a6a4fab220e8fe2
 msgid "possibility to associate an amount to a contribution type,"
-msgstr ""
+msgstr "posibilidad de asociar un importe a un tipo de contribución,"
 
 # 18ebfac8cc274147af530a550db9ad28
 #: ../plugins/paypal.rst:8 18ebfac8cc274147af530a550db9ad28
 msgid "create a Paypal payment form,"
-msgstr ""
+msgstr "crear un formulario de pago en Paypal,"
 
 # 062e484d231346e58bb391f5f586525d
 #: ../plugins/paypal.rst:9 062e484d231346e58bb391f5f586525d
 msgid "an history,"
-msgstr ""
+msgstr "un historial,"
 
 # 0893421c0b25438fbefa647971d914ae
 #: ../plugins/paypal.rst:10 0893421c0b25438fbefa647971d914ae
 msgid "automatic transaction storage once validated."
-msgstr ""
+msgstr "almacenamiento automático de las transacciones una vez validadas."
 
 #: ../plugins/paypal.rst:-1 c3b6e448e101485e8a890faa9e98bfd4
 msgid "Paypal plugin preferences"
-msgstr ""
+msgstr "Preferencias del plugin de Paypal"
 
 #: ../plugins/paypal.rst:-1 65cab564ff614f46919c02cf6a200eda
 msgid "Paypal payment form"
-msgstr ""
+msgstr "Formulario de pago de Paypal"
 
 #: ../plugins/paypal.rst:-1 65cab564ff614f46919c02cf6a200eda
 msgid "Paypal payment form (public)"
-msgstr ""
+msgstr "Formulario de pago de Paypal (público)"
 
 # da9ca9062c324e1cb623a4ffdbbb768e
 #: ../plugins/paypal.rst:29 da9ca9062c324e1cb623a4ffdbbb768e
@@ -69,6 +70,8 @@ msgid ""
 "Due to the way Paypal payments are handled, especially the payment "
 "confirmation, your instance must be publically accessible."
 msgstr ""
+"Debido a la forma en que se gestionan los pagos de Paypal, especialmente la "
+"confirmación del pago, su instancia debe ser de acceso público."
 
 # 8879eb34f1644dd1b6236fdc30c44e83
 #: ../plugins/paypal.rst:32 8879eb34f1644dd1b6236fdc30c44e83
@@ -82,11 +85,11 @@ msgstr "Antes que todo, descargue el complemento:"
 
 #: ../plugins/paypal.rst:-1 2a446237a8934ba8b0c88dd43a34e060
 msgid "Get latest Paypal plugin!"
-msgstr ""
+msgstr "¡Obtener el último plugin de Paypal!"
 
 #: ../plugins/paypal.rst:-1 bc9d81d9e7ce4d5e98fe033edd0b50cf
 msgid "Get Paypal plugin nightly build!"
-msgstr ""
+msgstr "¡Obten el complemento de Paypal desarrollado en modo oscuro!"
 
 # e1d08172e9d64421835a5aaad96ab6ca
 #: ../plugins/paypal.rst:44 e1d08172e9d64421835a5aaad96ab6ca
@@ -115,12 +118,12 @@ msgstr ""
 # 7ae72772417a4102aa73b8d9a80fd5cc
 #: ../plugins/paypal.rst:58 7ae72772417a4102aa73b8d9a80fd5cc
 msgid "And this is finished; Paypal plugin is installed :)"
-msgstr ""
+msgstr "Terminado; el complemento Paypal está instalado :)"
 
 # d1257db41c824394aad6b4a10383a67c
 #: ../plugins/paypal.rst:61 d1257db41c824394aad6b4a10383a67c
 msgid "Plugin configuration"
-msgstr ""
+msgstr "Configuración del complemento"
 
 # 750347079af34e888d4bcf1642af091b
 #: ../plugins/paypal.rst:63 750347079af34e888d4bcf1642af091b
@@ -128,6 +131,8 @@ msgid ""
 "Once plugin has been installed, a `Paypal` group is added to the menu, with "
 "some new entries:"
 msgstr ""
+"Una vez instalado el plugin, se añade un grupo `Paypal` al menú, con algunas "
+"entradas nuevas:"
 
 # 987fda6981494916b6a8223d6dc7af27
 #: ../plugins/paypal.rst:65 987fda6981494916b6a8223d6dc7af27
@@ -135,6 +140,8 @@ msgid ""
 "`Payment form`: the payment form itself, which is accessible as a public "
 "page,"
 msgstr ""
+"`Formulario de pago`: el formulario de pago propiamente dicho, accesible "
+"como página pública,"
 
 # 4907f7fe871b4aacaa03c55ec57cd5a9
 #: ../plugins/paypal.rst:66 4907f7fe871b4aacaa03c55ec57cd5a9
@@ -142,6 +149,8 @@ msgid ""
 "`Preferences`: plugin preferences, accessible for administrators and staff "
 "members."
 msgstr ""
+"`Preferencias`: preferencias del plugin, accesibles para administradores y "
+"miembros del personal."
 
 # d055cbbcdace4e4184e6df4bdfb6072e
 #: ../plugins/paypal.rst:68 d055cbbcdace4e4184e6df4bdfb6072e
@@ -153,6 +162,13 @@ msgid ""
 "log in to Paypal and you will find it in your account preferences. Changing "
 "identifier is only allowed for administrators."
 msgstr ""
+"Para que funcione correctamente, necesitas rellenar un valor muy importante: "
+"el código de tu cuenta Paypal. Puede utilizar la dirección de correo "
+"electrónico asociada a su cuenta Paypal (pero tendrá que cambiarla en "
+"Galette si cambia en Paypal) o su identificador de comerciante. Para "
+"encontrar su identificador de comerciante, inicie sesión en Paypal y lo "
+"encontrará en las preferencias de su cuenta. Cambiar el identificador sólo "
+"está permitido para los administradores."
 
 # 128c323d812b4c35b0ff2e10e04df59c
 #: ../plugins/paypal.rst:70 128c323d812b4c35b0ff2e10e04df59c
@@ -160,6 +176,8 @@ msgid ""
 "Preferences screen also permit to edit amount related to contributions "
 "types, and to hide some types."
 msgstr ""
+"La pantalla de preferencias también permite editar el importe relacionado "
+"con los tipos de contribuciones y ocultar algunos tipos."
 
 # e926f41b62024a8f9d48d5fc78e2c9b8
 #: ../plugins/paypal.rst:72 e926f41b62024a8f9d48d5fc78e2c9b8
@@ -169,6 +187,10 @@ msgid ""
 "contribution type is a membershop extension, its membership wil be "
 "recalculated when the payment will be confirmed."
 msgstr ""
+"Después, cualquier usuario puede elegir el tipo de contribución, ajustar el "
+"importe y pagar desde su cuenta Paypal. Si el usuario es un miembro "
+"registrado, y si el tipo de contribución es una extensión de la tienda para "
+"miembros, su membresía será recalculada cuando el pago sea confirmado."
 
 # e75ff1df151147b1957257c098861d8f
 #~ msgid "How to get the sources?"
