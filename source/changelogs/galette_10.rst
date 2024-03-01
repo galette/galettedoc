@@ -1,5 +1,20 @@
 :orphan:
 
+.. _v1030:
+
+**************
+1.0.2 -> 1.0.3
+**************
+
+* Logo in mail signature is not shown (`#1783 <https://bugs.galette.eu/issues/1783>`_)
+* Missing HTML editor for dynamic fields information field (`#1774 <https://bugs.galette.eu/issues/1774>`_)
+* Update and maintainance pages are no longer working (`#1782 <https://bugs.galette.eu/issues/1782>`_)
+* Do not throw events on mass edition (`#1733 <https://bugs.galette.eu/issues/1733>`_)
+* Make cache version dependent (`#1787 <https://bugs.galette.eu/issues/1787>`_)
+* Check preferences website is valid (`#1789 <https://bugs.galette.eu/issues/1789>`_)
+* Link to asso website from logo (`#1790 <https://bugs.galette.eu/issues/1790>`_)
+* Rework UI messages (`#1786 <https://bugs.galette.eu/issues/1786>`_)
+
 .. _v1020:
 
 **************
