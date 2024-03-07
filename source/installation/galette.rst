@@ -38,7 +38,7 @@ Next screen ask you for installation type. You'll choose beetween "New installat
 Database
 ========
 
-First of all, make sure the database exists, and prepare all required information (please refer to :ref:`database creation section <installationcreatedb>`):
+First of all, make sure the database exists, and prepare all required information:
 
 * host name
 * database user name
