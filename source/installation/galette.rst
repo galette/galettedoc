@@ -46,40 +46,6 @@ First of all, make sure the database exists, and prepare all required informatio
 * database name
 * database type (MariaDB/MySQL or PostgreSQL)
 
-Create database
----------------
-
-.. note::
-
-   **Never use database root user!**
-
-   For security reasons, it is stongly advised to rely on a specific user for Galette database, and give him only requested access on the single Galette database.
-
-For the example, we will use a database named `mygalette` with a user `mygaletteuser` with `mypass` as password.
-
-* MariaDB
-
-  .. code-block:: bash
-
-     $ mysql -u root -p
-     mysql> CREATE DATABASE mygalette;
-     mysql> GRANT ALL ON magalette.* to
-         ->'mygaletteuser'@'localhost' IDENTIFIED BY 'mypass';
-
-* PostgreSQL
-
-  .. code-block:: bash
-
-     $ su -
-     # su - postgres
-     $ createuser -P mygaletteuser
-     $ createdb -O mygaletteuser mygalette
-
-Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ documentations, or use a graphical tool:
-
-* `phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;
-* `phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL.
-
 Database parameters
 -------------------
 
