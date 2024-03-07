@@ -1,5 +1,27 @@
 :orphan:
 
+.. _v1100:
+
+**************
+1.0.x -> 1.1.0
+**************
+
+* Add print logo variable in PDF models (`#1741 <https://bugs.galette.eu/issues/1741>`_)
+* No longer use unsafe serialization for datbaase storage (`#1744 <https://bugs.galette.eu/issues/1744>`_)
+* More explicit upgrade warning when already on latest release (`#1779 <https://bugs.galette.eu/issues/1779>`_)
+* Prevent instance indexation from search engines bots (`#1784 <https://bugs.galette.eu/issues/1784>`_)
+* Clear old cache at upgrade (`#1788 <https://bugs.galette.eu/issues/1788>`_)
+* Change MySQL and MariaDB encoding (`#1794 <https://bugs.galette.eu/issues/1794>`_)
+* Add min size on dynamic fields (`#1795 <https://bugs.galette.eu/issues/1794>`_)
+* Add amounts on contributions types (`#273 <https://bugs.galette.eu/issues/273>`_)
+* Add region field (`#583 <https://bugs.galette.eu/issues/583>`_)
+* Check if new Galette version is available (`#1785 <https://bugs.galette.eu/issues/1785>`_)
+* Improve member form display (`#1775 <https://bugs.galette.eu/issues/1775>`_)
+* Add new specific constant to enable debug mode
+* Option to disable sociel networks on member form/view (`#1802 <https://bugs.galette.eu/issues/1802>`_)
+* Factorize permissions on core and dynamic fields (`#1798 <https://bugs.galette.eu/issues/1798>`_)
+* Manage administrative documents (`#1216 <https://bugs.galette.eu/issues/1216>`_)
+
 .. _v1040:
 
 **************
