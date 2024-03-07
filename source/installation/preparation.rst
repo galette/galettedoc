@@ -32,8 +32,6 @@ Some Galette directories need specific rights. The application will need to writ
 
 .. [#configdirperms] write access on ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)
 
-.. _installationcreatedb:
-
 Create database
 ===============
 
