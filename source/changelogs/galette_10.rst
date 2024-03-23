@@ -15,6 +15,7 @@
 * Fix redirection when dynamic file does not exists
 * Menu horizontal scroll when name is too long (`#1805 <https://bugs.galette.eu/issues/1805>`_)
 * Should not select a member as its own parent (`#1806 <https://bugs.galette.eu/issues/1806>`_)
+* Add preferences footer in replacements (`#1808 <https://bugs.galette.eu/issues/1808>`_)
 
 .. _v1030:
 
