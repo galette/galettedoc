@@ -1,5 +1,22 @@
 :orphan:
 
+.. _v1040:
+
+**************
+1.0.3 -> 1.0.4
+**************
+
+* Cannot access tabs definition on some resolutions (`#1799 <https://bugs.galette.eu/issues/1799>`_)
+* HTML Email preview shows source (`#1800 <https://bugs.galette.eu/issues/1800>`_)
+* Fix scrolling in emailing preview's modal
+* Few fixes on dependency injection usage
+* Number of show member automatically set to "all" (`#1803 <https://bugs.galette.eu/issues/1803>`_)
+* Groups modification not visually added on member form (`#1801 <https://bugs.galette.eu/issues/1801>`_)
+* Fix redirection when dynamic file does not exists
+* Menu horizontal scroll when name is too long (`#1805 <https://bugs.galette.eu/issues/1805>`_)
+* Should not select a member as its own parent (`#1806 <https://bugs.galette.eu/issues/1806>`_)
+* Add preferences footer in replacements (`#1808 <https://bugs.galette.eu/issues/1808>`_)
+
 .. _v1030:
 
 **************
