@@ -19,7 +19,7 @@ Galette installation is quite simple, really :) Just a few graphical steps to fo
 First, download latest Galette release from official repository:
 
 .. image:: https://img.shields.io/badge/1.0.4-Galette-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/galette-1.0.4.tar.bz2
+   :target: https://galette.eu/download/galette-1.0.4.tar.bz2
    :alt: Get latest Galette!
 
 Then, uncompress the archive. If you are running Windows, you will have to install a file archiver software supporting the TAR archive format, such as `7zip <https://www.7-zip.org/>`_.
@@ -28,10 +28,10 @@ If you are using Linux, run the following commands (adapt the version if needed)
 ::
 
    $ cd /var/www/html/
-   $ wget https://download.tuxfamily.org/galette/galette-1.0.4.tar.bz2
+   $ wget https://galette.eu/download/galette-1.0.4.tar.bz2
    $ tar xjvf galette-1.0.4.tar.bz2
 
-The current stable version of Galette is |stable_version|. A `nightly archive <https://download.tuxfamily.org/galette/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../source_code>`.
+The current stable version of Galette is |stable_version|. A `nightly archive <https://galette.eu/download/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../source_code>`.
 
 Alternatively, Hiob has created a community repository to provide `Galette as a Docker image <https://github.com/galette-community/docker>`_.
 
