@@ -117,4 +117,8 @@ Members selection
 
 The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons.
 
-You can display more members using the "Load following memebrs..." link, and you can also try to search entering any text (this will search in first name, last name and identifiers).
+.. image:: ../_styles/static/images/usermanual/dropdown_members.png
+   :align: center
+   :alt: Dropdown members list
+
+You can display more members using arrow buttons or entering any text (this will search in first name, last name and identifiers).
