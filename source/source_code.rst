@@ -29,6 +29,9 @@ All Git repositories follow the same development model, therefore you will find 
 | Events plugin         | | `git.tuxfamily.org/gitroot/galette/plugin-events.git`        | https://github.com/galette/plugin-events      |
 |                       | | https://git.tuxfamily.org/galette/plugin-evnts               |                                               |
 +-----------------------+----------------------------------------------------------------+-----------------------------------------------+
+| Fullcard plugin       | | `git.tuxfamily.org/gitroot/galette/plugin-fullcard.git`      | https://github.com/galette/plugin-fullcard    |
+|                       | | https://git.tuxfamily.org/galette/plugin-fullcard            |                                               |
++-----------------------+----------------------------------------------------------------+-----------------------------------------------+
 | PayPal plugin         | | `git.tuxfamily.org/gitroot/galette/plugin-paypal.git`        | https://github.com/galette/plugin-paypal      |
 |                       | | https://git.tuxfamily.org/galette/plugin-paypal              |                                               |
 +-----------------------+----------------------------------------------------------------+-----------------------------------------------+
