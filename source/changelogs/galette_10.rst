@@ -7,7 +7,7 @@
 **************
 
 * Add print logo variable in PDF models (`#1741 <https://bugs.galette.eu/issues/1741>`_)
-* No longer use unsafe serialization for datbaase storage (`#1744 <https://bugs.galette.eu/issues/1744>`_)
+* No longer use unsafe serialization for database storage (`#1744 <https://bugs.galette.eu/issues/1744>`_)
 * More explicit upgrade warning when already on latest release (`#1779 <https://bugs.galette.eu/issues/1779>`_)
 * Prevent instance indexation from search engines bots (`#1784 <https://bugs.galette.eu/issues/1784>`_)
 * Clear old cache at upgrade (`#1788 <https://bugs.galette.eu/issues/1788>`_)
