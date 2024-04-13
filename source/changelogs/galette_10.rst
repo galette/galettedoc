@@ -18,10 +18,10 @@
 * Check if new Galette version is available (`#1785 <https://bugs.galette.eu/issues/1785>`_)
 * Improve member form display (`#1775 <https://bugs.galette.eu/issues/1775>`_)
 * Add new specific constant to enable debug mode
-* Option to disable sociel networks on member form/view (`#1802 <https://bugs.galette.eu/issues/1802>`_)
+* Option to disable social networks on member form/view (`#1802 <https://bugs.galette.eu/issues/1802>`_)
 * Factorize permissions on core and dynamic fields (`#1798 <https://bugs.galette.eu/issues/1798>`_)
 * Manage administrative documents (`#1216 <https://bugs.galette.eu/issues/1216>`_)
-* ALlow plugins to provide their own fonts
+* Allow plugins to provide their own fonts
 * Use decimal for all amounts, drop defaults
 * Rework PDF footer, fix pagination on attendance sheet (`#1816 <https://bugs.galette.eu/issues/1816>`_)
 * Fix color for staff members on member cards (`#1814 <https://bugs.galette.eu/issues/1814>`_)
