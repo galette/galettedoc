@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-23 18:59+0100\n"
+"POT-Creation-Date: 2024-04-13 09:28+0200\n"
 "PO-Revision-Date: 2024-03-17 18:19+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/galette/"
@@ -27,11 +27,273 @@ msgstr "Changelog"
 
 # bba070ebb57447adac0ed05d94a0e072
 #: ../changelogs/galette_10.rst:7 f7e339f5c27b411b9a3bdedaeac4801a
+#, fuzzy
+#| msgid "1.0.3 -> 1.0.4"
+msgid "1.0.x -> 1.1.0"
+msgstr "1.0.3 -> 1.0.4"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:9 e40ebf19d4f14628a500813651fb01a4
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Add print logo variable in PDF models (`#1741 <https://bugs.galette.eu/"
+"issues/1741>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:10 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"No longer use unsafe serialization for datbaase storage (`#1744 <https://"
+"bugs.galette.eu/issues/1744>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:11 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"More explicit upgrade warning when already on latest release (`#1779 "
+"<https://bugs.galette.eu/issues/1779>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:12 c60cf0b056c247968c4dfe1e8ed238d9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Prevent instance indexation from search engines bots (`#1784 <https://bugs."
+"galette.eu/issues/1784>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:13 0d934e8059e64803ac5cc67207c1dfef
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Clear old cache at upgrade (`#1788 <https://bugs.galette.eu/issues/1788>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:14 c60cf0b056c247968c4dfe1e8ed238d9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Change MySQL and MariaDB encoding (`#1794 <https://bugs.galette.eu/"
+"issues/1794>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:15 e40ebf19d4f14628a500813651fb01a4
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Add min size on dynamic fields (`#1795 <https://bugs.galette.eu/"
+"issues/1794>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:16 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Add amounts on contributions types (`#273 <https://bugs.galette.eu/"
+"issues/273>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:17 427d943461cf4b7987024b07d8293da9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid "Add region field (`#583 <https://bugs.galette.eu/issues/583>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:18 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Check if new Galette version is available (`#1785 <https://bugs.galette.eu/"
+"issues/1785>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:19 427d943461cf4b7987024b07d8293da9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Improve member form display (`#1775 <https://bugs.galette.eu/issues/1775>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+#: ../changelogs/galette_10.rst:20 9183e05ef6c747d0ad8e31c7fe6103ad
+msgid "Add new specific constant to enable debug mode"
+msgstr ""
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:21 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Option to disable sociel networks on member form/view (`#1802 <https://bugs."
+"galette.eu/issues/1802>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:22 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Factorize permissions on core and dynamic fields (`#1798 <https://bugs."
+"galette.eu/issues/1798>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:23 0d934e8059e64803ac5cc67207c1dfef
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Manage administrative documents (`#1216 <https://bugs.galette.eu/"
+"issues/1216>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+#: ../changelogs/galette_10.rst:24 64025ba87f3444ba9a3032b0743607a8
+msgid "ALlow plugins to provide their own fonts"
+msgstr ""
+
+#: ../changelogs/galette_10.rst:25 629e605be4074ff08e9a8f5bd97d3c48
+msgid "Use decimal for all amounts, drop defaults"
+msgstr ""
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:26 c60cf0b056c247968c4dfe1e8ed238d9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Rework PDF footer, fix pagination on attendance sheet (`#1816 <https://bugs."
+"galette.eu/issues/1816>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:27 e40ebf19d4f14628a500813651fb01a4
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Fix color for staff members on member cards (`#1814 <https://bugs.galette.eu/"
+"issues/1814>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:28 c60cf0b056c247968c4dfe1e8ed238d9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Display first staff members on public lists (`#1809 <https://bugs.galette.eu/"
+"issues/1809>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:29 427d943461cf4b7987024b07d8293da9
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Identify sponsors in members list (`#1792 <https://bugs.galette.eu/"
+"issues/1792>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# e9c74ad26ad843c2906a399dc793a9cc
+#: ../changelogs/galette_10.rst:30 ef79678c4973494d92ca68864b4c2a57
+#, fuzzy
+#| msgid ""
+#| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
+#| "issues/1446>`_)"
+msgid ""
+"Dispatch contribution into scheduled payments (`#1193 <https://bugs.galette."
+"eu/issues/1193>`_)"
+msgstr ""
+"Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
+"issues/1446>`_)"
+
+# bba070ebb57447adac0ed05d94a0e072
+#: ../changelogs/galette_10.rst:36 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.0.3 -> 1.0.4"
 msgstr "1.0.3 -> 1.0.4"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:9 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:38 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -44,7 +306,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:10 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:39 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -56,16 +318,16 @@ msgstr ""
 "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
 "issues/1446>`_)"
 
-#: ../changelogs/galette_10.rst:11 35945a95d895455db1d435bb87bf5f00
+#: ../changelogs/galette_10.rst:40 35945a95d895455db1d435bb87bf5f00
 msgid "Fix scrolling in emailing preview's modal"
 msgstr ""
 
-#: ../changelogs/galette_10.rst:12 714887308bd94aae84d3e792a970b82a
+#: ../changelogs/galette_10.rst:41 714887308bd94aae84d3e792a970b82a
 msgid "Few fixes on dependency injection usage"
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:13 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:42 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -78,7 +340,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:14 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:43 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -90,12 +352,12 @@ msgstr ""
 "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
 "issues/1446>`_)"
 
-#: ../changelogs/galette_10.rst:15 93ca83ef0b0b49fc827d6a773d2090fa
+#: ../changelogs/galette_10.rst:44 93ca83ef0b0b49fc827d6a773d2090fa
 msgid "Fix redirection when dynamic file does not exists"
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:16 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:45 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -108,7 +370,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:17 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:46 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -121,7 +383,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:18 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:47 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -134,12 +396,12 @@ msgstr ""
 "issues/1446>`_)"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:24 f7e339f5c27b411b9a3bdedaeac4801a
+#: ../changelogs/galette_10.rst:53 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.0.2 -> 1.0.3"
 msgstr "1.0.2 -> 1.0.3"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:26 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:55 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -152,7 +414,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:27 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:56 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -165,7 +427,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:28 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:57 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -178,7 +440,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:29 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:58 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -191,7 +453,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:30 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:59 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -203,7 +465,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:31 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:60 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -216,7 +478,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:32 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:61 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -229,7 +491,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:33 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:62 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -240,12 +502,12 @@ msgstr ""
 "issues/1446>`_)"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:39 f7e339f5c27b411b9a3bdedaeac4801a
+#: ../changelogs/galette_10.rst:68 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.0.1 -> 1.0.2"
 msgstr "1.0.1 -> 1.0.2"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:41 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:70 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -258,7 +520,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:42 14d9ff3f487a455389cd2993957059bd
+#: ../changelogs/galette_10.rst:71 14d9ff3f487a455389cd2993957059bd
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -272,7 +534,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:43 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:72 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -285,7 +547,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:44 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:73 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -298,7 +560,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:45 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:74 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -311,7 +573,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:46 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:75 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -322,12 +584,12 @@ msgstr ""
 "issues/1446>`_)"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:52 f7e339f5c27b411b9a3bdedaeac4801a
+#: ../changelogs/galette_10.rst:81 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.0.0 -> 1.0.1"
 msgstr "1.0.0 -> 1.0.1"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:54 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:83 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -340,7 +602,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:55 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:84 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -353,7 +615,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:56 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:85 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -366,7 +628,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:57 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:86 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -379,7 +641,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:58 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:87 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -392,7 +654,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:59 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:88 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -405,7 +667,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:60 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:89 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -418,7 +680,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:61 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:90 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -430,7 +692,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:62 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:91 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -443,11 +705,11 @@ msgstr ""
 "issues/1446>`_)"
 
 # bba070ebb57447adac0ed05d94a0e072
-#: ../changelogs/galette_10.rst:68 f7e339f5c27b411b9a3bdedaeac4801a
+#: ../changelogs/galette_10.rst:97 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "0.9.6.1 -> 1.0.0"
 msgstr "0.9.6.1 -> 1.0.0"
 
-#: ../changelogs/galette_10.rst:72 29b5ceaafa4a401da1d94697d7095c92
+#: ../changelogs/galette_10.rst:101 29b5ceaafa4a401da1d94697d7095c92
 msgid "PHP 8.1 minimum is required"
 msgstr ""
 
@@ -464,16 +726,16 @@ msgstr ""
 # 5b3c963e765c4ae897f179074cc70a18
 # ecc0f7ab222247c9ac03c31d97909caf
 # e4637005c3354c47ae8a4c254454e8ca
-#: ../changelogs/galette_10.rst:77 5cb0b0b683374a5394dd9ce5bc91dcd2
+#: ../changelogs/galette_10.rst:106 5cb0b0b683374a5394dd9ce5bc91dcd2
 msgid "Added"
 msgstr "Hinzugefügt"
 
-#: ../changelogs/galette_10.rst:79 90e39ee8ae384216b9a1816d1211e496
+#: ../changelogs/galette_10.rst:108 90e39ee8ae384216b9a1816d1211e496
 msgid "Modern UI"
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:80 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:109 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -485,12 +747,12 @@ msgstr ""
 "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
 "issues/1446>`_)"
 
-#: ../changelogs/galette_10.rst:81 81f5d2f872f24bbca672f432e3694b76
+#: ../changelogs/galette_10.rst:110 81f5d2f872f24bbca672f432e3694b76
 msgid "Use of YAML files instead of XML for exports configuration"
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:82 8d5a9fbb6ac8424ab5cf014e02f24445
+#: ../changelogs/galette_10.rst:111 8d5a9fbb6ac8424ab5cf014e02f24445
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -503,7 +765,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:83 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:112 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -514,7 +776,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:84 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:113 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -527,7 +789,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:85 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:114 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -540,7 +802,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:86 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:115 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -565,12 +827,12 @@ msgstr ""
 # d15cde785ff44fe799f2cf4ad678e4ec
 # 6981fda5bf7241fc91e1c5792e843544
 # 67232b1c72244281b3bbfe51881bc130
-#: ../changelogs/galette_10.rst:91 9ce8f744c7c84e66987a28e1a4c26569
+#: ../changelogs/galette_10.rst:120 9ce8f744c7c84e66987a28e1a4c26569
 msgid "Fixed"
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:93 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:122 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -583,7 +845,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:94 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:123 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -596,7 +858,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:95 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:124 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -608,7 +870,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:96 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:125 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -621,7 +883,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:97 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:126 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -634,7 +896,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:98 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:127 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -647,7 +909,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:99 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:128 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -660,7 +922,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:100 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:129 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -673,7 +935,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:101 427d943461cf4b7987024b07d8293da9
+#: ../changelogs/galette_10.rst:130 427d943461cf4b7987024b07d8293da9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -685,7 +947,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:102 0d934e8059e64803ac5cc67207c1dfef
+#: ../changelogs/galette_10.rst:131 0d934e8059e64803ac5cc67207c1dfef
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -698,7 +960,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:103 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:132 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -711,7 +973,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:104 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:133 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -724,7 +986,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:105 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:134 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -736,7 +998,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:106 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:135 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -749,7 +1011,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:107 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:136 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -762,7 +1024,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:108 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:137 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -775,7 +1037,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:109 c60cf0b056c247968c4dfe1e8ed238d9
+#: ../changelogs/galette_10.rst:138 c60cf0b056c247968c4dfe1e8ed238d9
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -788,7 +1050,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:110 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:139 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -801,7 +1063,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:111 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:140 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -814,7 +1076,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:112 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:141 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -827,7 +1089,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:113 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:142 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -840,7 +1102,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:114 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:143 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -853,7 +1115,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:115 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:144 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -874,11 +1136,11 @@ msgstr ""
 # 77cd62f8ddae4136807346fd31c6eb14
 # 746f9e3ee5a04f09ae8224ec79ee312e
 # 9e8386df88a24a26a51a72f59d3fc6ff
-#: ../changelogs/galette_10.rst:120 d217a4ec7c9b4dc7b6230b5e17b8c11e
+#: ../changelogs/galette_10.rst:149 d217a4ec7c9b4dc7b6230b5e17b8c11e
 msgid "Under the hood..."
 msgstr ""
 
-#: ../changelogs/galette_10.rst:122 14d9ff3f487a455389cd2993957059bd
+#: ../changelogs/galette_10.rst:151 14d9ff3f487a455389cd2993957059bd
 msgid ""
 "Template rendering is now assumed by `Twig <https://twig.symfony.com/>`_ "
 "instead of `Smarty <https://smarty.net/>`_ (`#1619 <https://bugs.galette.eu/"
@@ -886,7 +1148,7 @@ msgid ""
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:123 732dfb1472734b88a75c1f3d8f76e298
+#: ../changelogs/galette_10.rst:152 732dfb1472734b88a75c1f3d8f76e298
 msgid ""
 "Use of `Fomantic UI <https://fomantic-ui.com/>`_ framework for whole display "
 "(`#1324 <https://bugs.galette.eu/issues/1324>`_)"
@@ -894,12 +1156,12 @@ msgstr ""
 
 # d52ea576a2ca4063896b19ca385b6ba1
 # d57bb274bb344178963fbce5c9b51b7d
-#: ../changelogs/galette_10.rst:124 d52ea576a2ca4063896b19ca385b6ba1
+#: ../changelogs/galette_10.rst:153 d52ea576a2ca4063896b19ca385b6ba1
 msgid "Update third party libraries"
 msgstr ""
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:125 ef79678c4973494d92ca68864b4c2a57
+#: ../changelogs/galette_10.rst:154 ef79678c4973494d92ca68864b4c2a57
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -912,7 +1174,7 @@ msgstr ""
 "issues/1446>`_)"
 
 # e9c74ad26ad843c2906a399dc793a9cc
-#: ../changelogs/galette_10.rst:126 e40ebf19d4f14628a500813651fb01a4
+#: ../changelogs/galette_10.rst:155 e40ebf19d4f14628a500813651fb01a4
 #, fuzzy
 #| msgid ""
 #| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
@@ -941,18 +1203,6 @@ msgstr ""
 #~ msgid ""
 #~ "Drop group name uniqueness at same level (`#366 <https://bugs.galette.eu/"
 #~ "issues/366>`_)"
-#~ msgstr ""
-#~ "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
-#~ "issues/1446>`_)"
-
-# e9c74ad26ad843c2906a399dc793a9cc
-#, fuzzy
-#~| msgid ""
-#~| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
-#~| "issues/1446>`_)"
-#~ msgid ""
-#~ "Add information to display for dynamic fields (`#1190 <https://bugs."
-#~ "galette.eu/issues/1190>`_)"
 #~ msgstr ""
 #~ "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
 #~ "issues/1446>`_)"
@@ -1042,18 +1292,6 @@ msgstr ""
 #~| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
 #~| "issues/1446>`_)"
 #~ msgid ""
-#~ "Prevent installation page access if Galette is already installed (`#1574 "
-#~ "<https://bugs.galette.eu/issues/1574>`_)"
-#~ msgstr ""
-#~ "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
-#~ "issues/1446>`_)"
-
-# e9c74ad26ad843c2906a399dc793a9cc
-#, fuzzy
-#~| msgid ""
-#~| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
-#~| "issues/1446>`_)"
-#~ msgid ""
 #~ "Rely on more powerfull WYSIWYG html editor in emails (`#1568 <https://"
 #~ "bugs.galette.eu/issues/1568>`_)"
 #~ msgstr ""
@@ -1098,18 +1336,6 @@ msgstr ""
 #~ msgid ""
 #~ "Inactive accounts can renew their password (`#1529 <https://bugs.galette."
 #~ "eu/issues/1529>`_)"
-#~ msgstr ""
-#~ "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
-#~ "issues/1446>`_)"
-
-# e9c74ad26ad843c2906a399dc793a9cc
-#, fuzzy
-#~| msgid ""
-#~| "Fix displayed version number (`#1446 <https://bugs.galette.eu/"
-#~| "issues/1446>`_)"
-#~ msgid ""
-#~ "Error on removing contribution type (`#1531 <https://bugs.galette.eu/"
-#~ "issues/1531>`_)"
 #~ msgstr ""
 #~ "Repariert angezeigte Versions Nummern (`#1446 <https://bugs.galette.eu/"
 #~ "issues/1446>`_)"
