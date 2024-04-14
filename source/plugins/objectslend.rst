@@ -4,7 +4,7 @@ Objects lend
 
 This plugin provides:
 
-* objects management (description, size, lenght, price, ...)
+* objects management (description, size, length, price, ...)
 * groups objects by categories,
 * manage object state, and their presence in stock or not,
 * manage lending and/or renting objects,

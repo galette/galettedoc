@@ -68,7 +68,7 @@ Transactions
 
 As seen in the example from this chapter introduction, a transaction is a global payment for a member.
 
-Only a few informations are required to add a new transaction:
+Only a few information are required to add a new transaction:
 
 * a description,
 * the originator,

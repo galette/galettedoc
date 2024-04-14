@@ -58,8 +58,8 @@ The ``galette`` directory will then contain a working copy of Galette's source c
 
 .. _deps:
 
-Third-party librarires
-----------------------
+Third-party libraries
+---------------------
 
 Galette's third-party dependencies are not included in the repository.
 Instead, PHP dependencies are handled with `Composer dependency manager <https://getcomposer.org>`_ and JavaScript ones with `Node Package Manager (npm) <https://npmjs.com>`_ and `gulp <https://gulpjs.com/>`_.

@@ -51,7 +51,7 @@ You can define as much activities as you want, and associate them to an event. A
    :scale: 50%
    :align: center
 
-An activity is composed with a name, a status and an optionnal comment.
+An activity is composed with a name, a status and an optional comment.
 
 To add a new activity, just click on "New activity" link:
 
@@ -62,13 +62,13 @@ To add a new activity, just click on "New activity" link:
 Events
 ------
 
-Events are the main goal of the plugin. You can define several informations, like a name, begin and ending dates, location, ...
+Events are the main goal of the plugin. You can define several information, like a name, begin and ending dates, location, ...
 
 .. image:: ../_styles/static/images/plugin-events/new_event.png
    :scale: 50%
    :align: center
 
-Name, begin date and town are mandatory. All other informations are entirely optionnal.
+Name, begin date and town are mandatory. All other information are entirely optional.
 
 Events that are not linked to a group will be available for all members. If a group is set, only members and managers of this group will have access.
 
@@ -84,7 +84,7 @@ You can attach one or several activities to each event, and for each one set if 
 
 .. warning::
 
-   Adding or removing activity from an event will reload the page and ask you to fill mandatory informations. Nonetheless (and this is specified each time), the event **will not be stored** during this operation.
+   Adding or removing activity from an event will reload the page and ask you to fill mandatory information. Nonetheless (and this is specified each time), the event **will not be stored** during this operation.
 
    Ensure you save the event :)
 

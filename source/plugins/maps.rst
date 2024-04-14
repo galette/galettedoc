@@ -47,7 +47,7 @@ Also, a `Map` entry is added in public pages list, that displays geolocalized me
 
 First of all, members will enter their location coordinates. Several options are provided:
 
-* if town has been set in member informations, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),
+* if town has been set in member information, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),
 * additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim.openstreetmap.org/>`_),
 * and also a geolocalize button using browser capacities.
 

@@ -11,7 +11,7 @@ Experimented users
 Adapt to your graphical chart
 =============================
 
-If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mecanism desinged for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
+If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mecanism designed for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
 
 Try to keep things as simple as possible. For example, if you want to change association name color (displayed under pages titles), you will find in Galette the CSS rule `#asso_name` that defines several parameters including the color. Then, in your stylesheet, you will just need the following:
 
@@ -168,7 +168,7 @@ There are a few tools provided for Galette admin that permits to:
 * **reinitialize mailings contents** will reset all emails contents to default values,
 * **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
 * **reinitialize PDF models** will reset ll PDF models to default values,
-* **generate empty logins and passwords** those informations are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
+* **generate empty logins and passwords** those information are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
 
 .. _galettemodes:
 

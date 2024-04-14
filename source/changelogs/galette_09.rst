@@ -276,7 +276,7 @@ Fixed
 * Fix call from wrong object in mailing (`#1280 <https://bugs.galette.eu/issues/1280>`_)
 * Reply-to in preferences was not used (`#1349 <https://bugs.galette.eu/issues/1349>`_)
 * Fix issues with HTTP 2.0 servers (`#1342 <https://bugs.galette.eu/issues/1342>`_, `#1343 <https://bugs.galette.eu/issues/1343>`_, `#1348 <https://bugs.galette.eu/issues/1348>`_, `#1347 <https://bugs.galette.eu/issues/1347>`_)
-* Use PDF models header and footer on emargement lists (`#1346 <https://bugs.galette.eu/issues/1346>`_)
+* Use PDF models header and footer on attendance sheets (`#1346 <https://bugs.galette.eu/issues/1346>`_)
 
 .. _v0921:
 
@@ -405,7 +405,7 @@ Fixed
 * Take into account logs preferences (`#440 <https://bugs.galette.eu/issues/440>`_)
 * Update a dynamic field now updates member's modification date (`#1002 <https://bugs.galette.eu/issues/1002>`_)
 * GPG key field was too short (`#1032 <https://bugs.galette.eu/issues/1032>`_)
-* Fix differences beetween MySQL and PostgreSQL schemas (`#1072 <https://bugs.galette.eu/issues/1072>`_)
+* Fix differences between MySQL and PostgreSQL schemas (`#1072 <https://bugs.galette.eu/issues/1072>`_)
 * Clean data from 0.9RC (`#1093 <https://bugs.galette.eu/issues/1093>`_)
 * Change email field size to suits standards (`#1121 <https://bugs.galette.eu/issues/1121>`_)
 * Fix update issues

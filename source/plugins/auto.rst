@@ -4,7 +4,7 @@ Auto
 
 This plugin provides vehicles management for automobile clubs, you can manage:
 
-* vehicles (owner, several informations, photo, etc),
+* vehicles (owner, several information, photo, etc),
 * vehicle history modification (owner, color, ...),
 * brands,
 * models,

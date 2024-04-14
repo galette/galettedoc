@@ -69,5 +69,5 @@ In order to work properly, you need to fill a very important value: your Paypal 
 
 Preferences screen also permit to edit amount related to contributions types, and to hide some types.
 
-After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membershop extension, its membership wil be recalculated when the payment will be confirmed.
+After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membership extension, its membership wil be recalculated when the payment will be confirmed.
 

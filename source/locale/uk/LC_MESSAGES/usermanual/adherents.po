@@ -50,8 +50,8 @@ msgstr ""
 #: ../usermanual/adherents.rst:13 54328c7ca34b4dfd849ad8a425953a31
 msgid ""
 "Let's start by creating a new member. As everywhere in Galette, mandatory "
-"fields are displayed with a red border; all other are optionnal. Different "
-"parts of the page (`Identity`, `Contact informations`, `Galette related "
+"fields are displayed with a red border; all other are optional. Different "
+"parts of the page (`Identity`, `Contact information`, `Galette related "
 "data` and maybe `Dynamic fields`) can be retracted clicking on their "
 "respective title."
 msgstr ""
@@ -82,7 +82,7 @@ msgstr "Вибір дати"
 #: ../usermanual/adherents.rst:31 43b75a53cbe746519c7a4209e45bbd48
 msgid ""
 "When storing a member (or any other object in Galette), page will be "
-"reloaded with all informations you've entered (excepting passwords)."
+"reloaded with all information you've entered (excepting passwords)."
 msgstr ""
 "Під час збереження члена (або будь-якого іншого об'єкта в Galette), сторінка "
 "буде перезавантажена з усіма відомостями, які ви ввели (за винятком паролів)."
@@ -124,7 +124,7 @@ msgstr "утворювати мітки PDF,"
 
 # 852cf26546db4ddfa4ddaab1d6ac59c4
 #: ../usermanual/adherents.rst:43 852cf26546db4ddfa4ddaab1d6ac59c4
-msgid "generate PDF emargement lists,"
+msgid "generate PDF attendance sheets,"
 msgstr "утворювати списки розширення PDF,"
 
 # ce24195c64af492e92a3960f996abd52
@@ -331,7 +331,7 @@ msgstr "Ви можете вибрати відправника для кожн�
 # d0819adda07749daa1dd20dd38761450
 #: ../usermanual/adherents.rst:122 d0819adda07749daa1dd20dd38761450
 msgid ""
-"**from Galette preferences** (default value): this will use informations "
+"**from Galette preferences** (default value): this will use information "
 "stored in preferences,"
 msgstr ""
 "**з налаштувань Galette** (типове значення): тут будуть використані "
@@ -382,7 +382,7 @@ msgstr ""
 #: ../usermanual/adherents.rst:135 daaacbf33ca54093bd54afeef42d7da0
 msgid ""
 "Even if Galette is able to send HTML emails, this is discouraged. Messages "
-"lenght will be way larger (for almost nothing), and some (like me!) read "
+"length will be way larger (for almost nothing), and some (like me!) read "
 "their emails as text only. That is why Galette will **always** provide a "
 "text version of HTML emails."
 msgstr ""
@@ -465,7 +465,7 @@ msgstr ""
 msgid ""
 "Every sent mailing is stored into the database, and can be used as a "
 "template to write a new one. In this case, a new mailing will be created "
-"using informations from the history, and the original one will be kept as is."
+"using information from the history, and the original one will be kept as is."
 msgstr ""
 "Кожне надіслане розсилання зберігається в базі даних і може бути використане "
 "в якості шаблону для написання нового. У цьому випадку новий лист буде "
@@ -486,7 +486,7 @@ msgstr ""
 # 4b0e22297d5c4fb1bd80059de2cc1870
 #: ../usermanual/adherents.rst:160 4b0e22297d5c4fb1bd80059de2cc1870
 msgid ""
-"When you use an existing history entry, here are the informations that will "
+"When you use an existing history entry, here are the information that will "
 "be used:"
 msgstr ""
 "Коли ви використовуєте наявний запис історії, ось відомості, які будуть "
@@ -542,7 +542,7 @@ msgstr "Модель"
 #: ../usermanual/adherents.rst:176 239940f880234df49f9749065f8c9445
 msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
-"current model will be used to check your CSV file intergity."
+"current model will be used to check your CSV file integrity."
 msgstr ""
 "Модель імпорту визначає поля і їх порядок в CSV-файлі. Під час імпорту "
 "поточна модель буде використовуватися для перевірки сумісності вашого CSV-"
@@ -675,14 +675,14 @@ msgstr ""
 
 # aac09ca89fbb40d49d8bac722afd755f
 #: ../usermanual/adherents.rst:225 aac09ca89fbb40d49d8bac722afd755f
-msgid "Links beetween members"
+msgid "Links between members"
 msgstr "Посилання між членами"
 
 # d112e53ef88145ce91bc5216faa050d0
 #: ../usermanual/adherents.rst:229 d112e53ef88145ce91bc5216faa050d0
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
-"families for exemple, or members of a same compagny. You can access children "
+"families for exemple, or members of a same company. You can access children "
 "members from the parent, and parent from the children."
 msgstr ""
 "Ви можете зв'язати кілька членів з одним \"батьківським\". Це може "
@@ -703,9 +703,9 @@ msgstr ""
 #: ../usermanual/adherents.rst:233 eafd9a8411d748bf94aaa776fff6450c
 msgid ""
 "The other interesting point of this system is you can retrieve some "
-"informations from the parent when sending mailings or labels. In the "
-"children members, email and postal addresses automatically become optionnal, "
-"whatever the configuration says. If any of those informations is missing, it "
+"information from the parent when sending mailings or labels. In the "
+"children members, email and postal addresses automatically become optional, "
+"whatever the configuration says. If any of those information is missing, it "
 "will be retrieved from the parent."
 msgstr ""
 "Інший цікавий момент цієї системи полягає в тому, що ви можете отримати "
@@ -718,21 +718,21 @@ msgstr ""
 #: ../usermanual/adherents.rst:235 1562502f406a40bc88bc9c819c671100
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
-"This does not affect the unicity email constraint in the database."
+"This does not affect the uniqueness email constraint in the database."
 msgstr ""
 "Члени без адреси е-пошти не можуть скористатися функцією \"відновити "
 "пароль\". Це не впливає на обмеження єдності е-пошти в базі даних."
 
 # 223e5cf58e9a4d5ba43063bb9c04959a
 #: ../usermanual/adherents.rst:238 223e5cf58e9a4d5ba43063bb9c04959a
-msgid "Impersonnating"
+msgid "Impersonating"
 msgstr "Видавання себе за іншого"
 
 # bb0f420d1f604de1b8cd064e390f2a6d
 #: ../usermanual/adherents.rst:242 bb0f420d1f604de1b8cd064e390f2a6d
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
-"groups, ... In this case, it is unfortuntely frequent to see some "
+"groups, ... In this case, it is unfortunately frequent to see some "
 "credentials sent by insecure emails; which should really be avoid."
 msgstr ""
 "Деякі проблеми можуть бути пов'язані з конкретним обліковим записом, через "
@@ -742,10 +742,10 @@ msgstr ""
 # a8ed88e12f534928933fcd5ab047b5a1
 #: ../usermanual/adherents.rst:244 a8ed88e12f534928933fcd5ab047b5a1
 msgid ""
-"As super admininistrator user, you wil see an extra icon in the members "
+"As super administrator user, you wil see an extra icon in the members "
 "list, allowing you to log in as selected user without his credentials. Once "
-"you've impersonnated the user, you can reproduce the issue and fix it or get "
-"all required informations to report the issue upstream."
+"you've impersonated the user, you can reproduce the issue and fix it or get "
+"all required information to report the issue upstream."
 msgstr ""
 "Як користувач суперадміністратор, ви побачите додаткову піктограму в списку "
 "членів, що дозволяє увійти в систему як обраний користувач без його "
