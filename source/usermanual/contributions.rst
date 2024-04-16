@@ -63,6 +63,32 @@ In the contributions list, there is a PDF icon which is designed to generate inv
 
 You can customize the PDF using :ref:`PDF models <pdf_models>`.
 
+Scheduled payments
+^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.1.0
+
+It is possible to dispatch a contribution among one or several scheduled payments. All you have to do is to select "Scheduled payment" as payment type in your contribution; Galette will propose you to create an attached scheduled payment.contribution
+
+.. image:: ../_styles/static/images/usermanual/contributions_add_scheduled_payment.png
+   :scale: 50%
+   :align: center
+   :alt: Add scheduled payment to a contribution
+
+By default, the entire remaiing amount will be set into scheduled payment, but you can enter whatever you want. You can aslo select any payment type (except scheduled payment).
+
+When you edit a contribution that already has attached scheduled payments, you can see a summary, and you can aslo see list of entries.
+
+.. image:: ../_styles/static/images/usermanual/contributions_edit_scheduled_payment_summary.png
+   :scale: 50%
+   :align: center
+   :alt: Summary of scheduled payments
+
+.. image:: ../_styles/static/images/usermanual/contributions_edit_scheduled_payment_list.png
+   :scale: 50%
+   :align: center
+   :alt: List of attached scheduled payments
+
 Transactions
 ============
 
