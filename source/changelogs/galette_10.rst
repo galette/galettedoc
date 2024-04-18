@@ -28,6 +28,7 @@
 * Display first staff members on public lists (`#1809 <https://bugs.galette.eu/issues/1809>`_)
 * Identify sponsors in members list (`#1792 <https://bugs.galette.eu/issues/1792>`_)
 * Dispatch contribution into scheduled payments (`#1193 <https://bugs.galette.eu/issues/1193>`_)
+* Filter contributions list on type (`#1470 <https://bugs.galette.eu/issues/1470>`_)
 
 .. _v1040:
 
