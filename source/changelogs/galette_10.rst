@@ -31,7 +31,7 @@
 * Filter contributions list on type (`#1470 <https://bugs.galette.eu/issues/1470>`_)
 * Menu entry was not always correctly selected (`#1818 <https://bugs.galette.eu/issues/1818>`_)
 * Add payment type on transactions (`#574 <https://bugs.galette.eu/issues/574>`_)
-* Remove non user related files from cofiguration folder (`#1822 <https://bugs.galette.eu/issues/1822>`_)
+* Remove non user related files from configuration folder (`#1822 <https://bugs.galette.eu/issues/1822>`_)
 
 .. _v1040:
 

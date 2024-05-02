@@ -108,7 +108,7 @@ You can update your registration information from Galette preferences. The form 
    :align: center
    :alt: Telemetry from preferences
 
-A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will dissapear. You aslo can choose to just disable it.
+A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will dissapear. You also can choose to just disable it.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_dashboard.png
    :scale: 70%

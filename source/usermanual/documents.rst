@@ -31,7 +31,7 @@ Management
    :align: center
    :alt: Add a document
 
-When creating or editing a document, you will of course choose a file to upload, a document type and a premission.
+When creating or editing a document, you will of course choose a file to upload, a document type and a permission.
 
 Several possible documents types are available from the list, you add a new one by just entering your text in the field.
 
@@ -45,6 +45,6 @@ Documents public list is, as all public pages in Galette, related to "Show publi
 .. image:: ../_styles/static/images/usermanual/documents_public_list_4member.png
    :scale: 50%
    :align: center
-   :alt: Documents list from a simpel member
+   :alt: Documents list from a simple member
 
 On the above screenshot, a simple member is logged and can only see documents which are public and which are allowed for users. The internal document is restricted to staff members and therefore is not shown here.
