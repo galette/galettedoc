@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-13 11:04+0200\n"
+"POT-Creation-Date: 2024-05-02 10:27+0200\n"
 "PO-Revision-Date: 2024-04-29 04:34+0000\n"
 "Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/"
-"doc-user-contributions/pt/>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
+"user-contributions/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,232 +19,277 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.5.1\n"
 
-#: ../usermanual/contributions.rst:3
-#: cb8f2c777c2d40d7964ee4dfbebc0173
+#: ../usermanual/contributions.rst:3 cb8f2c777c2d40d7964ee4dfbebc0173
 msgid "Contributions management"
 msgstr ""
 
-#: ../usermanual/contributions.rst:5
-#: 2b4ba561d55241c483f785c3994160df
-msgid "Galette allows you to manage contributions sent from your members. There are several types of contributions, and transactions are also proposed."
+#: ../usermanual/contributions.rst:5 2b4ba561d55241c483f785c3994160df
+msgid ""
+"Galette allows you to manage contributions sent from your members. There are "
+"several types of contributions, and transactions are also proposed."
 msgstr ""
 
-#: ../usermanual/contributions.rst:7
-#: 18a05d962a40427b929631839fe6721b
-msgid "A transaction? What's that? Well, a simple example is better than a long text... We will use three members of a same association: Marc, Julie and Zac. Each one is member, independently of which group or else they are affected to, that does not matters."
+#: ../usermanual/contributions.rst:7 18a05d962a40427b929631839fe6721b
+msgid ""
+"A transaction? What's that? Well, a simple example is better than a long "
+"text... We will use three members of a same association: Marc, Julie and "
+"Zac. Each one is member, independently of which group or else they are "
+"affected to, that does not matters."
 msgstr ""
 
-#: ../usermanual/contributions.rst:9
-#: 4713609f4cc54095a9550df13a48feb1
-msgid "Zac send you a check to pay his own membership, Marc and Julie ones and also a donation to the association. In this case, Zac's check will be handled in a transaction attached to his account, and which will be distributed in four contributions, each one attached to corresponding member."
+#: ../usermanual/contributions.rst:9 4713609f4cc54095a9550df13a48feb1
+msgid ""
+"Zac send you a check to pay his own membership, Marc and Julie ones and also "
+"a donation to the association. In this case, Zac's check will be handled in "
+"a transaction attached to his account, and which will be distributed in four "
+"contributions, each one attached to corresponding member."
 msgstr ""
 
-#: ../usermanual/contributions.rst:11
-#: d5280d63a2c4482382bbbf8459928b8b
-msgid "Another example: Pierre pays his own contribution, his transaction will only contains his membership and will be distributed in only one contribution."
+#: ../usermanual/contributions.rst:11 d5280d63a2c4482382bbbf8459928b8b
+msgid ""
+"Another example: Pierre pays his own contribution, his transaction will only "
+"contains his membership and will be distributed in only one contribution."
 msgstr ""
 
-#: ../usermanual/contributions.rst:13
-#: 70a6ddb00ea24316aeea069aa7d173a0
-msgid "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder <reminders>` :p"
+#: ../usermanual/contributions.rst:13 70a6ddb00ea24316aeea069aa7d173a0
+msgid ""
+"If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder "
+"<reminders>` :p"
 msgstr ""
 
-#: ../usermanual/contributions.rst:16
-#: 36bd60fa037045d2be8057e4450ef379
+#: ../usermanual/contributions.rst:16 36bd60fa037045d2be8057e4450ef379
 msgid "Contributions"
 msgstr ""
 
-#: ../usermanual/contributions.rst:18
-#: 5aeb8dd4e8494efab85354dda961d842
-msgid "A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member."
+#: ../usermanual/contributions.rst:18 5aeb8dd4e8494efab85354dda961d842
+msgid ""
+"A contribution can be a membership, a donation, a gift, ... Galette allows "
+"you to store all of that for each member."
 msgstr ""
 
-#: ../usermanual/contributions.rst:21
-#: 11125f0fbe55414fabd0859c716d56ee
+#: ../usermanual/contributions.rst:21 11125f0fbe55414fabd0859c716d56ee
 msgid "Contributions types"
 msgstr "Tipos de contribuições"
 
-#: ../usermanual/contributions.rst:23
-#: 8f7a611904da4ed49dcebdbb29e4a82b
-msgid "Contributions are entirely configurable. There are two main types of contributions in Galette:"
+#: ../usermanual/contributions.rst:23 8f7a611904da4ed49dcebdbb29e4a82b
+msgid ""
+"Contributions are entirely configurable. There are two main types of "
+"contributions in Galette:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:25
-#: 819c2bd5c0e6424eb5e94d25b1e948c2
-msgid "the ones that extends a membership (a montly or yearly membership for example),"
+#: ../usermanual/contributions.rst:25 819c2bd5c0e6424eb5e94d25b1e948c2
+msgid ""
+"the ones that extends a membership (a montly or yearly membership for "
+"example),"
 msgstr ""
 
-#: ../usermanual/contributions.rst:26
-#: 38e850a49f594234aa91b2c4bfee36fa
+#: ../usermanual/contributions.rst:26 38e850a49f594234aa91b2c4bfee36fa
 msgid "the ones that do not extends membership, like donations."
 msgstr ""
 
-#: ../usermanual/contributions.rst:28
-#: f4aaa564d9f04608b7928d037b4cc4bc
-msgid "Contribution types management allows you to define a label, and if it extends the memebrship or not."
+#: ../usermanual/contributions.rst:28 f4aaa564d9f04608b7928d037b4cc4bc
+msgid ""
+"Contribution types management allows you to define a label, and if it "
+"extends the memebrship or not."
 msgstr ""
 
-#: ../usermanual/contributions.rst:33
-#: 27d817215ede438ab329e2489ec6d91a
+#: ../usermanual/contributions.rst:33 27d817215ede438ab329e2489ec6d91a
 msgid "Reminders"
 msgstr "Lembretes"
 
-#: ../usermanual/contributions.rst:35
-#: 720e1d4cd01e44ab82b59f70290b897a
-msgid "Emails models to remind due dates are available from the emails contents (\"Impending due date\" and \"Late due date\")."
+#: ../usermanual/contributions.rst:35 720e1d4cd01e44ab82b59f70290b897a
+msgid ""
+"Emails models to remind due dates are available from the emails contents "
+"(\"Impending due date\" and \"Late due date\")."
 msgstr ""
 
-#: ../usermanual/contributions.rst:37
-#: 2f4e01f0d7dd400a8a2c5facec048f81
-msgid "The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface."
+#: ../usermanual/contributions.rst:37 2f4e01f0d7dd400a8a2c5facec048f81
+msgid ""
+"The reminder button from the dashboard or the reminders entry of the menu "
+"will give you access to the reminders management interface."
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: 377a38171375457fb466200072e77825
+#: ../usermanual/contributions.rst:-1 377a38171375457fb466200072e77825
 msgid "Reminders management interface"
 msgstr ""
 
-#: ../usermanual/contributions.rst:44
-#: c792675a21e94502a57df0d11b86bf8d
+#: ../usermanual/contributions.rst:44 c792675a21e94502a57df0d11b86bf8d
 msgid "Two categories can be selected:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:46
-#: 1c680f774bc945b5a46687a824365522
+#: ../usermanual/contributions.rst:46 1c680f774bc945b5a46687a824365522
 msgid "members whose due date is close,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:47
-#: 2b4bbccd3ae74ea382b553a6694fbbf2
+#: ../usermanual/contributions.rst:47 2b4bbccd3ae74ea382b553a6694fbbf2
 msgid "members whose due date is in the past."
 msgstr ""
 
-#: ../usermanual/contributions.rst:49
-#: af71f52045fd40fda43b8a1e751adda4
-msgid "Per default (this is currently not configurable), reminders are sent one month, then seven days before the due date; and then one and two months after the due date expiration. Reminders are stored in the database, if you never sent any reminder, all matching members will be reminded."
+#: ../usermanual/contributions.rst:49 af71f52045fd40fda43b8a1e751adda4
+msgid ""
+"Per default (this is currently not configurable), reminders are sent one "
+"month, then seven days before the due date; and then one and two months "
+"after the due date expiration. Reminders are stored in the database, if you "
+"never sent any reminder, all matching members will be reminded."
 msgstr ""
 
-#: ../usermanual/contributions.rst:51
-#: 680dd2901dfc4382a8c1cb8a1b9d222b
-msgid "Galette will tell you if some members do not have an email address, you can print labels for those ones."
+#: ../usermanual/contributions.rst:51 680dd2901dfc4382a8c1cb8a1b9d222b
+msgid ""
+"Galette will tell you if some members do not have an email address, you can "
+"print labels for those ones."
 msgstr ""
 
-#: ../usermanual/contributions.rst:53
-#: 359f9f9cb04048b2be635343d62117d2
-msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
+#: ../usermanual/contributions.rst:53 359f9f9cb04048b2be635343d62117d2
+msgid ""
+"Finally, it is possible to automate reminders with a cron task which will "
+"call the ``galette/reminder.php`` file. If you want reminders to be sent "
+"every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on "
+"Fedora and similar, look at your system documentation to know how to add a "
+"crontab) with the following content:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:60
-#: 84b9adcad74b4b2e893c64bee3afd9b3
+#: ../usermanual/contributions.rst:60 84b9adcad74b4b2e893c64bee3afd9b3
 msgid "Invoices and receipts"
 msgstr ""
 
-#: ../usermanual/contributions.rst:62
-#: 6b3bf19d68c74d47be81faf4f499dd37
-msgid "In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution."
+#: ../usermanual/contributions.rst:62 6b3bf19d68c74d47be81faf4f499dd37
+msgid ""
+"In the contributions list, there is a PDF icon which is designed to generate "
+"invoice ou receipt for one contribution."
 msgstr ""
 
-#: ../usermanual/contributions.rst:64
-#: ceec7a0f90d144c9809df2985e412b13
+#: ../usermanual/contributions.rst:64 ceec7a0f90d144c9809df2985e412b13
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
 
-#: ../usermanual/contributions.rst:67
-#: f238d3991055468ca49a1181243183b0
+#: ../usermanual/contributions.rst:67 615c1844e741462f8acfa1fd42fdbc79
+msgid "Scheduled payments"
+msgstr ""
+
+#: ../usermanual/contributions.rst:71 a17cebe69b2648dbb4c095650cd5d215
+msgid ""
+"It is possible to dispatch a contribution among one or several scheduled "
+"payments. All you have to do is to select \"Scheduled payment\" as payment "
+"type in your contribution; Galette will propose you to create an attached "
+"scheduled payment.contribution"
+msgstr ""
+
+#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+msgid "Add scheduled payment to a contribution"
+msgstr ""
+
+#: ../usermanual/contributions.rst:78 0c980ae2137543d592db876eac55b8cd
+msgid ""
+"By default, the entire remaiing amount will be set into scheduled payment, "
+"but you can enter whatever you want. You can aslo select any payment type "
+"(except scheduled payment)."
+msgstr ""
+
+#: ../usermanual/contributions.rst:80 346496a0daff4761929d4a207b1a00f8
+msgid ""
+"When you edit a contribution that already has attached scheduled payments, "
+"you can see a summary, and you can aslo see list of entries."
+msgstr ""
+
+#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+msgid "Summary of scheduled payments"
+msgstr ""
+
+#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+msgid "List of attached scheduled payments"
+msgstr ""
+
+#: ../usermanual/contributions.rst:93 f238d3991055468ca49a1181243183b0
 msgid "Transactions"
 msgstr ""
 
-#: ../usermanual/contributions.rst:69
-#: 298370a00ae849bf80a4fb7c475062c1
-msgid "As seen in the example from this chapter introduction, a transaction is a global payment for a member."
+#: ../usermanual/contributions.rst:95 298370a00ae849bf80a4fb7c475062c1
+msgid ""
+"As seen in the example from this chapter introduction, a transaction is a "
+"global payment for a member."
 msgstr ""
 
-#: ../usermanual/contributions.rst:71
-#: 2d98112c0dcd42dd982a57bf123c8563
+#: ../usermanual/contributions.rst:97 2d98112c0dcd42dd982a57bf123c8563
 msgid "Only a few information are required to add a new transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:73
-#: 94dfcd796f1445078d43a595821819a9
+#: ../usermanual/contributions.rst:99 94dfcd796f1445078d43a595821819a9
 msgid "a description,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:74
-#: 9493c3f4a3394584a96f447b6c8d6050
+#: ../usermanual/contributions.rst:100 9493c3f4a3394584a96f447b6c8d6050
 msgid "the originator,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:75
-#: 619633b7ed2c4cf19e426436ec0be2cd
+#: ../usermanual/contributions.rst:101 619633b7ed2c4cf19e426436ec0be2cd
 msgid "the date (current date per default),"
 msgstr ""
 
-#: ../usermanual/contributions.rst:76
-#: a3502c3ca8c2439882c055f1d5cbb7c2
+#: ../usermanual/contributions.rst:102 a3502c3ca8c2439882c055f1d5cbb7c2
 msgid "the amount."
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: 689cf0f5127d40c2bd34dc9cebbd2759
+#: ../usermanual/contributions.rst:-1 689cf0f5127d40c2bd34dc9cebbd2759
 msgid "Transactions list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:83
-#: 88eee3021b8d42669046da8e2bd2da7d
-msgid "Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates."
+#: ../usermanual/contributions.rst:109 88eee3021b8d42669046da8e2bd2da7d
+msgid ""
+"Each transaction is dispatched among contributions, in the limit of the "
+"transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: 98f234f4bc434f51b8fc11b48a090aef
+#: ../usermanual/contributions.rst:-1 98f234f4bc434f51b8fc11b48a090aef
 msgid "Add a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:90
-#: 22d76e97ce854360a9feef7b0fad15dc
-msgid "After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction."
+#: ../usermanual/contributions.rst:116 22d76e97ce854360a9feef7b0fad15dc
+msgid ""
+"After adding a new transaction, you will be redirected to a new contribution "
+"creation. If this new contribution does not dispatch the remaning amount of "
+"the transaction, galette will propose you to create another one. Per "
+"default, the amount of a new contribution from a transaction will be the "
+"remaning amount of the transaction."
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: cfda7691d1464e009ae926d41bb0f3ba
+#: ../usermanual/contributions.rst:-1 cfda7691d1464e009ae926d41bb0f3ba
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:97
-#: 594f726da80443dda2a7b32897d88a98
+#: ../usermanual/contributions.rst:123 594f726da80443dda2a7b32897d88a98
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: e6eee0c98f9d44c0a2323b707e5a69c1
+#: ../usermanual/contributions.rst:-1 e6eee0c98f9d44c0a2323b707e5a69c1
 msgid "Transaction edition"
 msgstr ""
 
-#: ../usermanual/contributions.rst:104
-#: 610abfb3c2fc4af18c8a4b5689561e49
-msgid "You can also attach an existing contribution instead of creating a new one."
+#: ../usermanual/contributions.rst:130 610abfb3c2fc4af18c8a4b5689561e49
+msgid ""
+"You can also attach an existing contribution instead of creating a new one."
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: 1d3901bcfdce464d86cb0519b827efaa
+#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
 msgid "Add an already existing contribution to a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:114
-#: e32535dd4a574da2b536e8daa5eb7722
+#: ../usermanual/contributions.rst:140 e32535dd4a574da2b536e8daa5eb7722
 msgid "Members selection"
 msgstr ""
 
-#: ../usermanual/contributions.rst:118
-#: 0218d6b1ad2e4b5894e373d502837732
-msgid "The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons."
+#: ../usermanual/contributions.rst:144 0218d6b1ad2e4b5894e373d502837732
+msgid ""
+"The dropdown list to choose a member is available from contributions and "
+"transactions (as well as from several plugins) displays only a few members, "
+"for performances reasons."
 msgstr ""
 
-#: ../usermanual/contributions.rst:-1
-#: 8023d5e01fbd4bc1aa771639d454db70
+#: ../usermanual/contributions.rst:-1 8023d5e01fbd4bc1aa771639d454db70
 msgid "Dropdown members list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:124
-#: 4795106801304370b61b5c014e926937
-msgid "You can display more members using arrow buttons or entering any text (this will search in first name, last name and identifiers)."
+#: ../usermanual/contributions.rst:150 4795106801304370b61b5c014e926937
+msgid ""
+"You can display more members using arrow buttons or entering any text (this "
+"will search in first name, last name and identifiers)."
 msgstr ""
