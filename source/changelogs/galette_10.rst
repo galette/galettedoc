@@ -32,6 +32,8 @@
 * Menu entry was not always correctly selected (`#1818 <https://bugs.galette.eu/issues/1818>`_)
 * Add payment type on transactions (`#574 <https://bugs.galette.eu/issues/574>`_)
 * Remove non user related files from configuration folder (`#1822 <https://bugs.galette.eu/issues/1822>`_)
+* Add monthly contribution membership (`#1438 <https://bugs.galette.eu/issues/1438>`_)
+* PDF Member card adaptative size (`#1817 <https://bugs.galette.eu/issues/1817>`_)
 
 .. _v1040:
 
