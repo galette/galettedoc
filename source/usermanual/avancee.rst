@@ -83,22 +83,6 @@ Many statistics plaftforms relies on an extra  Javascript block to work. You can
 
 Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
-Cards size and count
-====================
-
-.. versionadded:: 0.9
-
-Galette preferences allows to specify spacing for cards, but not their with, nor the number of lines and columns. You can use behavior configuration to configure cards`, following constants are provided:
-
-.. note::
-
-   Changing those values may cause gaps; change them with caution, and do not forget to test the result ;)
-
-* ``GALETTE_CARD_WIDTH`` defines cards width,
-* ``GALETTE_CARD_HEIGHT`` defines cards height,
-* ``GALETTE_CARD_COLS`` defines the number of columns,
-* ``GALETTE_CARD_ROWS`` defines the number of lines.
-
 CSV exports
 ===========
 
