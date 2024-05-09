@@ -1,8 +1,8 @@
 .. _man_avancees:
 
-******************
-Experimented users
-******************
+*****************
+Experienced users
+*****************
 
 .. warning::
 
