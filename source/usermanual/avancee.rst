@@ -189,8 +189,7 @@ Behavior configuration
 
 It is possible to change some of Galette behaviors:
 
-* `GALETTE_DEBUG`: :ref:`see Galette modes <debug>`;
-* `NON_UTF_DBCONNECT`: disable explicitely UTf-8 connection to the database (for users who see encoding issues);
+* `GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;
 * you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...).
 
 You can add those directives by declaring constants in the ``galette/config/behavior.inc.php``.
