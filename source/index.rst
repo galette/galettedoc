@@ -40,7 +40,7 @@ About Galette
 
 The Galette project is kindly hosted by `TuxFamily <https://www.tuxfamily.org>`_:
 
-* `Galette website <https://galette.eu/dc/?navlang=en>`_,
+* `Galette website <https://galette.eu>`_,
 * :doc:`a GIT repository to manage Galette source code <source_code>`,
 * mailing lists,
 * ...

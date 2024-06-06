@@ -17,11 +17,11 @@ Installation
 First of all, download the plugin:
 
 .. image:: https://img.shields.io/badge/2.0.0-ObjectsLend-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-2.0.0.tar.bz2
+   :target: https://galette.eu/download/plugins/galette-plugin-objectslend-2.0.0.tar.bz2
    :alt: Get latest ObjectsLend plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-ObjectsLend-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://download.tuxfamily.org/galette/plugins/galette-plugin-objectslend-dev.tar.bz2
+   :target: https://galette.eu/download/plugins/galette-plugin-objectslend-dev.tar.bz2
    :alt: Get ObjectsLend plugin nightly build!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
