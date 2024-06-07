@@ -21,8 +21,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/2.0.0-Auto-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/plugins/galette-plugin-auto-2.0.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.1.0-Auto-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/plugins/galette-plugin-auto-2.1.0.tar.bz2
    :alt: Get latest Auto plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-Auto-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
