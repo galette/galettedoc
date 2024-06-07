@@ -49,4 +49,4 @@ You and your members will login to Galette, using a login and a password. You mu
 
 This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive information such as login, passwords, credit card number, ...
 
-And this is the same for Galette, you can use it walong with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)
+And this is the same for Galette, you can use it along with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)

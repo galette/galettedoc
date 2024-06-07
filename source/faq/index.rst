@@ -38,7 +38,7 @@ Report a bug
 Please, do not forget to:
 
 * tell us the Galette version you are using,
-* be clear and consise,
+* be clear and concise,
 * to provide all required information in order to reproduce the issue
 * to provide related logs entries.
 

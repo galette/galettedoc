@@ -10,11 +10,11 @@ If you are using an old Galette release, it's time to update.
 
    An update is often not something lite, your data may be modified. So, please make sure you made **a backup of your current database**, or you may lost all or a part of your data.
 
-   A backup of all Galette files is also recommended it would be helpfull if you find a bug that prevent you to migrate and have to restore an old version;
+   A backup of all Galette files is also recommended it would be helpful if you find a bug that prevent you to migrate and have to restore an old version;
 
 .. note::
 
-   Migrating a pre 0.7 release is theorically supported, but this is not tested (those releases are more than 10 years old!), and it is possible your attempt fail.
+   Migrating a pre 0.7 release is theoretically supported, but this is not tested (those releases are more than 10 years old!), and it is possible your attempt fail.
 
    Nothing is really made to make such a time travel ;) If this is your case, you should first `migrate to Galette 0.7.8 <https://galette.eu/download/archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest version.
 
@@ -50,7 +50,7 @@ Updating database
 
    Galette will tell you if an update is needed, no need to "force" an update.
 
-Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is motly transparent, information are provided on each step.
+Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is mostly transparent, information are provided on each step.
 
 Database information
 ---------------------

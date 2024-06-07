@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2011-2023, Johan Cwiklinski
+# Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Galette 1.0\n"
+"Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 08:12+0100\n"
+"POT-Creation-Date: 2024-05-08 20:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,36 +147,71 @@ msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
 
 #: ../usermanual/contributions.rst:67
+#: 615c1844e741462f8acfa1fd42fdbc79
+msgid "Scheduled payments"
+msgstr ""
+
+#: ../usermanual/contributions.rst:71
+#: a17cebe69b2648dbb4c095650cd5d215
+msgid "It is possible to dispatch a contribution among one or several scheduled payments. All you have to do is to select \"Scheduled payment\" as payment type in your contribution; Galette will propose you to create an attached scheduled payment."
+msgstr ""
+
+#: ../usermanual/contributions.rst:-1
+#: 1d3901bcfdce464d86cb0519b827efaa
+msgid "Add scheduled payment to a contribution"
+msgstr ""
+
+#: ../usermanual/contributions.rst:78
+#: 0c980ae2137543d592db876eac55b8cd
+msgid "By default, the entire remaining amount will be set into scheduled payment, but you can enter whatever you want. You can also select any payment type (except scheduled payment)."
+msgstr ""
+
+#: ../usermanual/contributions.rst:80
+#: 346496a0daff4761929d4a207b1a00f8
+msgid "When you edit a contribution that already has attached scheduled payments, you can see a summary, and you can also see list of entries."
+msgstr ""
+
+#: ../usermanual/contributions.rst:-1
+#: 1d3901bcfdce464d86cb0519b827efaa
+msgid "Summary of scheduled payments"
+msgstr ""
+
+#: ../usermanual/contributions.rst:-1
+#: 1d3901bcfdce464d86cb0519b827efaa
+msgid "List of attached scheduled payments"
+msgstr ""
+
+#: ../usermanual/contributions.rst:93
 #: f238d3991055468ca49a1181243183b0
 msgid "Transactions"
 msgstr ""
 
-#: ../usermanual/contributions.rst:69
+#: ../usermanual/contributions.rst:95
 #: 298370a00ae849bf80a4fb7c475062c1
 msgid "As seen in the example from this chapter introduction, a transaction is a global payment for a member."
 msgstr ""
 
-#: ../usermanual/contributions.rst:71
+#: ../usermanual/contributions.rst:97
 #: 2d98112c0dcd42dd982a57bf123c8563
-msgid "Only a few informations are required to add a new transaction:"
+msgid "Only a few information are required to add a new transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:73
+#: ../usermanual/contributions.rst:99
 #: 94dfcd796f1445078d43a595821819a9
 msgid "a description,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:74
+#: ../usermanual/contributions.rst:100
 #: 9493c3f4a3394584a96f447b6c8d6050
 msgid "the originator,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:75
+#: ../usermanual/contributions.rst:101
 #: 619633b7ed2c4cf19e426436ec0be2cd
 msgid "the date (current date per default),"
 msgstr ""
 
-#: ../usermanual/contributions.rst:76
+#: ../usermanual/contributions.rst:102
 #: a3502c3ca8c2439882c055f1d5cbb7c2
 msgid "the amount."
 msgstr ""
@@ -186,7 +221,7 @@ msgstr ""
 msgid "Transactions list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:83
+#: ../usermanual/contributions.rst:109
 #: 88eee3021b8d42669046da8e2bd2da7d
 msgid "Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
@@ -196,7 +231,7 @@ msgstr ""
 msgid "Add a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:90
+#: ../usermanual/contributions.rst:116
 #: 22d76e97ce854360a9feef7b0fad15dc
 msgid "After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction."
 msgstr ""
@@ -206,7 +241,7 @@ msgstr ""
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:97
+#: ../usermanual/contributions.rst:123
 #: 594f726da80443dda2a7b32897d88a98
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr ""
@@ -216,7 +251,7 @@ msgstr ""
 msgid "Transaction edition"
 msgstr ""
 
-#: ../usermanual/contributions.rst:104
+#: ../usermanual/contributions.rst:130
 #: 610abfb3c2fc4af18c8a4b5689561e49
 msgid "You can also attach an existing contribution instead of creating a new one."
 msgstr ""
@@ -226,17 +261,22 @@ msgstr ""
 msgid "Add an already existing contribution to a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:114
+#: ../usermanual/contributions.rst:140
 #: e32535dd4a574da2b536e8daa5eb7722
 msgid "Members selection"
 msgstr ""
 
-#: ../usermanual/contributions.rst:118
+#: ../usermanual/contributions.rst:144
 #: 0218d6b1ad2e4b5894e373d502837732
 msgid "The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons."
 msgstr ""
 
-#: ../usermanual/contributions.rst:120
+#: ../usermanual/contributions.rst:-1
+#: 8023d5e01fbd4bc1aa771639d454db70
+msgid "Dropdown members list"
+msgstr ""
+
+#: ../usermanual/contributions.rst:150
 #: 4795106801304370b61b5c014e926937
-msgid "You can display more members using the \"Load following memebrs...\" link, and you can also try to search entering any text (this will search in first name, last name and identifiers)."
+msgid "You can display more members using arrow buttons or entering any text (this will search in first name, last name and identifiers)."
 msgstr ""

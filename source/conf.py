@@ -47,16 +47,16 @@ master_doc = 'index'
 # General information about the project.
 project = 'Galette'
 author = 'Johan Cwiklinski'
-copyright = '2011-2023, Johan Cwiklinski'
+copyright = '2011-2024, Johan Cwiklinski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = '1.1'
 # The full version, including alpha/beta/rc tags.
-release = '1.0.4'
+release = '1.1.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:

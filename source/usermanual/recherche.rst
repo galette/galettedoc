@@ -9,7 +9,7 @@ Every executed search will be conserved during your session. You can change a pa
 Filtering members list
 ======================
 
-The form at the top of the members list allow you to make some search among members. The :ref:`advanced search <advsearch>` provides more cireria and possibilities.
+The form at the top of the members list allow you to make some search among members. The :ref:`advanced search <advsearch>` provides more criteria and possibilities.
 
 .. image:: ../_styles/static/images/usermanual/list_members-filter.png
    :scale: 50%
@@ -18,14 +18,14 @@ The form at the top of the members list allow you to make some search among memb
 
 You can filter on:
 
-* a full text search on one of the following informations:
+* a full text search on one of the following information:
 
   * name (first name, last name and nickname),
   * company name,
   * address (address, address continuation, zipcode, town and country),
   * email and instant messaging addresses (email address, website URL, and all direct messenging addresses),
   * job position,
-  * informations (public informations and - for administrators only - pivate informations).
+  * information (public information and - for administrators only - private information).
 
 * a member status:
 

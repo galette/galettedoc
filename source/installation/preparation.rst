@@ -39,7 +39,7 @@ Create database
 
    **Never use database root user!**
 
-   For security reasons, it is stongly advised to rely on a specific user for Galette database, and give him only requested access on the single Galette database.
+   For security reasons, it is strongly advised to rely on a specific user for Galette database, and give him only requested access on the single Galette database.
 
 For the example, we will use a database named `mygalette` with a user `mygaletteuser` with `mypass` as password.
 
@@ -212,9 +212,9 @@ FTP
 
 .. warning::
 
-   Some archive or FTP softwares may corrupt files... It is strongly adviced if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts.
+   Some archive or FTP softwares may corrupt files... It is strongly advised if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts.
 
-Once source code has been retrived locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows.
+Once source code has been retrieved locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows.
 
 Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client.
 
@@ -233,13 +233,13 @@ If you're hosted on Ionos; and want to use a specific subdomain for Galette, you
 OVH
 ---
 
-This hosting compay offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
+This hosting company offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
 
 Additionnal information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
 .. warning::
 
-   Many users have display images or emargement list issues on OVH hosts. The solution to this issue is to create a ``.ovhconfig`` file at your hosting root with the following contents:
+   Many users have display images or attendance sheet issues on OVH hosts. The solution to this issue is to create a ``.ovhconfig`` file at your hosting root with the following contents:
 
    ::
 

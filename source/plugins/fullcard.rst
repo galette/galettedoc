@@ -2,7 +2,7 @@
 Fullcard
 ========
 
-This plugin was developed for `Borsalinux-fr (previously Fedora-Fr) <https://www.borsalinux-fr.org>`_. It generates a PDF member card that can be empty (to be used during events, etc) or filled with a member informations (that can be joined with a check for a membership as example).
+This plugin was developed for `Borsalinux-fr (previously Fedora-Fr) <https://www.borsalinux-fr.org>`_. It generates a PDF member card that can be empty (to be used during events, etc) or filled with a member information (that can be joined with a check for a membership as example).
 
 .. note::
 
@@ -13,8 +13,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/2.0.0-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/plugins/galette-plugin-fullcard-2.0.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.1.0-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/plugins/galette-plugin-fullcard-2.1.0.tar.bz2
    :alt: Get latest Fullcard plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge

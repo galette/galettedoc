@@ -115,7 +115,7 @@ Defaults are provided, but you can change them.
 
 An email will be send to member when:
 
-* he self subscribes. This mail contains authentication informations,
+* he self subscribes. This mail contains authentication information,
 * his card is added or edited by someone else (if the corresponding box is checked),
 * he uses lost password feature,
 * a new contribution is attache to his account (if the corresponding box is checked).

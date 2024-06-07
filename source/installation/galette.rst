@@ -29,7 +29,7 @@ If all :ref:`the installation steps <preparation>` has been properly followed, d
 Installation type
 =================
 
-Next screen ask you for installation type. You'll choose beetween "New installation" or "Update". Several of the steps that will follow will be specific to the type you will choose here.
+Next screen ask you for installation type. You'll choose between "New installation" or "Update". Several of the steps that will follow will be specific to the type you will choose here.
 
 .. image:: ../_styles/static/images/installation/2_type_install.png
    :scale: 50%

@@ -21,9 +21,9 @@ Staff members, administrators as well as the super administrator can create, edi
 
 Administrators have also access to the application configuration, excepted super admin information.
 
-The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required informations. He of course can change its own login informations from application preferences.
+The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. He of course can change its own login information from application preferences.
 
-Members can change their own informations, and can see their contributions and transactions (as read only).
+Members can change their own information, and can see their contributions and transactions (as read only).
 
 Visitors can - if this is parameted in preferences - access to public pages (trombinoscope, public members list) but can also register :)
 
@@ -79,15 +79,15 @@ Telemetry
 
 .. versionadded:: 0.9
 
-Galette propose to send some telemetry informations:
+Galette propose to send some telemetry information:
 
 * **entirely anonymous**: no information about your association or your members is sent,
 * **deliberately blurred**: we retrieve an estimation of members count, never a real count,
 * sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu.
 
-Sending telemetry data is a manual process, nothing will be send until you **explicitely** ask it. With those informations, we can have a better knwownledge of different usages of Galette, their number of member or contributions, plugins used, ...
+Sending telemetry data is a manual process, nothing will be send until you **explicitely** ask it. With those information, we can have a better knwownledge of different usages of Galette, their number of member or contributions, plugins used, ...
 
-Those informations are useful for the project development and promotion. When you send those informations, you can review data that would be sent.
+Those information are useful for the project development and promotion. When you send those information, you can review data that would be sent.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_data.png
    :scale: 50%
@@ -102,13 +102,13 @@ After data has been sent once, Galette will propose to send an update from time 
 
 It is also possible to register your association on the website, of course, not anonymously, but it is not possible to link telemetry and registration. New references are moderated.
 
-You can update your registration informations from Galette preferences. The form will be blank (because it is not possible to retrieve data you've sent) but all data will be updated because your instance has a unique registration identifier designed for that.
+You can update your registration information from Galette preferences. The form will be blank (because it is not possible to retrieve data you've sent) but all data will be updated because your instance has a unique registration identifier designed for that.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_prefs.png
    :align: center
    :alt: Telemetry from preferences
 
-A new panel has been added on Galette dashboard to send telemetry informations and/or register your instance. Once those steps has been completed, the panel will dissapear. You aslo can choose to just disable it.
+A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will dissapear. You also can choose to just disable it.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_dashboard.png
    :scale: 70%

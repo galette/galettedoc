@@ -4,7 +4,7 @@
 Third party plugins community
 =============================
 
-A `Gitub organisation name galette-community <https://github.com/galette-community/>`_ has been created. Its goal is to centralize plugins that are not developed by Galette team, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team.
+A `Github organisation name galette-community <https://github.com/galette-community/>`_ has been created. Its goal is to centralize plugins that are not developed by Galette team, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team.
 
 Prerequisites
 =============
@@ -35,4 +35,4 @@ Website
 
 A website ala Github can be added to your project. Concretely, configuration and contents will be stored in a specific branch of the repository name ``gh-pages`` that will only be used for the website.
 
-The goal is to have a certain unicity on all third party plugins website. Galette team may help you for the initial setup of the website; contents and updates are in charge of the author.
+The goal is to have a certain consistency on all third party plugins website. Galette team may help you for the initial setup of the website; contents and updates are in charge of the author.

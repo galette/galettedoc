@@ -519,7 +519,7 @@ Added and changed
 * Intégration d'un tableau de bord (avec affichage des dernières news du projet),
 * Pages publiques (liste des membres et trombinoscope),
 * Système de plugins (voir :doc:`la liste des plugins disponibles </plugins/index>`),
-* Export au format CSV des tables de la base courante et/ou export de requêtes paramétrées (https://galette.eu/download/listes-galette/mail.gna.org/public/galette-devel/2009-02/msg00006.html),
+* Export au format CSV des tables de la base courante et/ou export de requêtes paramétrées,
 * Paramétrage des champs obligatoires pour l'enregistrement et la modification d'adhérents,
 * Gestion multilingue des sujets et messages des mails envoyés automatiquement par Galette (inscription, perte de mot de passe, ...),
 * Gestion des statuts utilisateur,

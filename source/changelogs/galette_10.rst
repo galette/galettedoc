@@ -1,5 +1,41 @@
 :orphan:
 
+.. _v1100:
+
+**************
+1.0.x -> 1.1.0
+**************
+
+* Add print logo variable in PDF models (`#1741 <https://bugs.galette.eu/issues/1741>`_)
+* No longer use unsafe serialization for database storage (`#1744 <https://bugs.galette.eu/issues/1744>`_)
+* More explicit upgrade warning when already on latest release (`#1779 <https://bugs.galette.eu/issues/1779>`_)
+* Prevent instance indexation from search engines bots (`#1784 <https://bugs.galette.eu/issues/1784>`_)
+* Clear old cache at upgrade (`#1788 <https://bugs.galette.eu/issues/1788>`_)
+* Change MySQL and MariaDB encoding (`#1794 <https://bugs.galette.eu/issues/1794>`_)
+* Add min size on dynamic fields (`#1795 <https://bugs.galette.eu/issues/1794>`_)
+* Add amounts on contributions types (`#273 <https://bugs.galette.eu/issues/273>`_)
+* Add region field (`#583 <https://bugs.galette.eu/issues/583>`_)
+* Check if new Galette version is available (`#1785 <https://bugs.galette.eu/issues/1785>`_)
+* Improve member form display (`#1775 <https://bugs.galette.eu/issues/1775>`_)
+* Add new specific constant to enable debug mode
+* Option to disable social networks on member form/view (`#1802 <https://bugs.galette.eu/issues/1802>`_)
+* Factorize permissions on core and dynamic fields (`#1798 <https://bugs.galette.eu/issues/1798>`_)
+* Manage administrative documents (`#1216 <https://bugs.galette.eu/issues/1216>`_)
+* Allow plugins to provide their own fonts
+* Use decimal for all amounts, drop defaults
+* Rework PDF footer, fix pagination on attendance sheet (`#1816 <https://bugs.galette.eu/issues/1816>`_)
+* Fix color for staff members on member cards (`#1814 <https://bugs.galette.eu/issues/1814>`_)
+* Display first staff members on public lists (`#1809 <https://bugs.galette.eu/issues/1809>`_)
+* Identify sponsors in members list (`#1792 <https://bugs.galette.eu/issues/1792>`_)
+* Dispatch contribution into scheduled payments (`#1193 <https://bugs.galette.eu/issues/1193>`_)
+* Filter contributions list on type (`#1470 <https://bugs.galette.eu/issues/1470>`_)
+* Menu entry was not always correctly selected (`#1818 <https://bugs.galette.eu/issues/1818>`_)
+* Add payment type on transactions (`#574 <https://bugs.galette.eu/issues/574>`_)
+* Remove non user related files from configuration folder (`#1822 <https://bugs.galette.eu/issues/1822>`_)
+* Add monthly contribution membership (`#1438 <https://bugs.galette.eu/issues/1438>`_)
+* PDF Member card adaptative size (`#1817 <https://bugs.galette.eu/issues/1817>`_)
+* Reminders were not sent (`#1614 <https://bugs.galette.eu/issues/1614>`_)
+
 .. _v1040:
 
 **************

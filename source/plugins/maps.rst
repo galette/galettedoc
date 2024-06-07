@@ -12,8 +12,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/2.0.0-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/plugins/galette-plugin-maps-2.0.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.1.0-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/plugins/galette-plugin-maps-2.1.0.tar.bz2
    :alt: Get latest Maps plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
@@ -47,7 +47,7 @@ Also, a `Map` entry is added in public pages list, that displays geolocalized me
 
 First of all, members will enter their location coordinates. Several options are provided:
 
-* if town has been set in member informations, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),
+* if town has been set in member information, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),
 * additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim.openstreetmap.org/>`_),
 * and also a geolocalize button using browser capacities.
 

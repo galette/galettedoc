@@ -63,12 +63,38 @@ In the contributions list, there is a PDF icon which is designed to generate inv
 
 You can customize the PDF using :ref:`PDF models <pdf_models>`.
 
+Scheduled payments
+^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.1.0
+
+It is possible to dispatch a contribution among one or several scheduled payments. All you have to do is to select "Scheduled payment" as payment type in your contribution; Galette will propose you to create an attached scheduled payment.
+
+.. image:: ../_styles/static/images/usermanual/contributions_add_scheduled_payment.png
+   :scale: 50%
+   :align: center
+   :alt: Add scheduled payment to a contribution
+
+By default, the entire remaining amount will be set into scheduled payment, but you can enter whatever you want. You can also select any payment type (except scheduled payment).
+
+When you edit a contribution that already has attached scheduled payments, you can see a summary, and you can also see list of entries.
+
+.. image:: ../_styles/static/images/usermanual/contributions_edit_scheduled_payment_summary.png
+   :scale: 50%
+   :align: center
+   :alt: Summary of scheduled payments
+
+.. image:: ../_styles/static/images/usermanual/contributions_edit_scheduled_payment_list.png
+   :scale: 50%
+   :align: center
+   :alt: List of attached scheduled payments
+
 Transactions
 ============
 
 As seen in the example from this chapter introduction, a transaction is a global payment for a member.
 
-Only a few informations are required to add a new transaction:
+Only a few information are required to add a new transaction:
 
 * a description,
 * the originator,
@@ -117,4 +143,8 @@ Members selection
 
 The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons.
 
-You can display more members using the "Load following memebrs..." link, and you can also try to search entering any text (this will search in first name, last name and identifiers).
+.. image:: ../_styles/static/images/usermanual/dropdown_members.png
+   :align: center
+   :alt: Dropdown members list
+
+You can display more members using arrow buttons or entering any text (this will search in first name, last name and identifiers).

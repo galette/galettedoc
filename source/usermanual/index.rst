@@ -32,6 +32,7 @@ Main dashboard part propose you a quick access to main Galette features :)
    recherche.rst
    contributions.rst
    configuration.rst
+   documents.rst
    pdf_models.rst
    preferences.rst
    avancee.rst

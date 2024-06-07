@@ -10,7 +10,7 @@ One of the first contact with Galette interface after the installation, login an
 
    You can use the "Generate fake data" from the "Configuration" menu to add demonstration data in your instance.
 
-Let's start by creating a new member. As everywhere in Galette, mandatory fields are displayed with a red border; all other are optionnal. Different parts of the page (`Identity`, `Contact informations`, `Galette related data` and maybe `Dynamic fields`) can be retracted clicking on their respective title.
+Let's start by creating a new member. As everywhere in Galette, mandatory fields are displayed with a red border; all other are optional. Different parts of the page (`Identity`, `Contact information`, `Galette related data` and maybe `Dynamic fields`) can be retracted clicking on their respective title.
 
 .. image:: ../_styles/static/images/usermanual/add_member.png
    :scale: 50%
@@ -28,7 +28,7 @@ On date fields, you can access a calendar:
    :align: center
    :alt: Date selection
 
-When storing a member (or any other object in Galette), page will be reloaded with all informations you've entered (excepting passwords).
+When storing a member (or any other object in Galette), page will be reloaded with all information you've entered (excepting passwords).
 
 Members list
 ============
@@ -40,7 +40,7 @@ Members list allows you to:
 * removals,
 * send mailings,
 * generate PDF labels,
-* generate PDF emargement lists,
+* generate PDF attendance sheets,
 * generate PDF members cards,
 * CSV exports,
 * mass changes.
@@ -119,7 +119,7 @@ To send a new mailing, select members from the list and then use the `Send an em
 
 You can choose a sender for each mailing:
 
-* **from Galette preferences** (default value): this will use informations stored in preferences,
+* **from Galette preferences** (default value): this will use information stored in preferences,
 * **current logged-in user**: will use the name and the email of the current logged-in user (not available for super admin),
 * **other**: you can set any name and email address you want.
 
@@ -132,7 +132,7 @@ Once the subject has been filled, you can work on the contents. You can send ema
 
 Once the HTML editor is enabled, the checkbox to handle HTML tags is automatically checked, remember to check the box if you do not use the editor but want to send HTML!
 
-.. warning:: Even if Galette is able to send HTML emails, this is discouraged. Messages lenght will be way larger (for almost nothing), and some (like me!) read their emails as text only. That is why Galette will **always** provide a text version of HTML emails.
+.. warning:: Even if Galette is able to send HTML emails, this is discouraged. Messages length will be way larger (for almost nothing), and some (like me!) read their emails as text only. That is why Galette will **always** provide a text version of HTML emails.
 
 It is also possible to add attachements, just click on the `Browse` button in that attachements section. If your browser is compatible, you can add several files at once (using `Shift` and `Ctrl` keys).
 All attachements are stored on disk, under a directory named with the mailing identifier (automatically defined from database).
@@ -153,11 +153,11 @@ Mailings history
 
 .. note:: When you start a mailing, it is stored into your session. Session ends when users log out, or on a server defined timeout. Mailing history stores the mailing in the database, this ensure it will always be available in the future.
 
-Every sent mailing is stored into the database, and can be used as a template to write a new one. In this case, a new mailing will be created using informations from the history, and the original one will be kept as is.
+Every sent mailing is stored into the database, and can be used as a template to write a new one. In this case, a new mailing will be created using information from the history, and the original one will be kept as is.
 
 Mailings can be stored before they are sent. In this case, it is possible to continue it later. When you use history on a draft mailing, original entry will be replaced on sending.
 
-When you use an existing history entry, here are the informations that will be used:
+When you use an existing history entry, here are the information that will be used:
 
 * recipients,
 * attachements,
@@ -173,7 +173,7 @@ It is possible to import member data from a predefined model. A default model is
 Model
 ^^^^^
 
-Import model defines fields and their order in a CSV file. When importing, current model will be used to check your CSV file intergity.
+Import model defines fields and their order in a CSV file. When importing, current model will be used to check your CSV file integrity.
 
 To configure the model, click on the `Configure` button from the UI.
 
@@ -221,24 +221,24 @@ You will have error messages than something went wrong (in dry-run mode or not):
 
 .. _linkmembers:
 
-Links beetween members
-======================
+Links between members
+=====================
 
 .. versionadded:: 0.8.2
 
-You can link several members to a "parent" one. This may be used to store families for exemple, or members of a same compagny. You can access children members from the parent, and parent from the children.
+You can link several members to a "parent" one. This may be used to store families for exemple, or members of a same company. You can access children members from the parent, and parent from the children.
 
 You can add as many child as you want for a member, but a child cannot become a parent.
 
-The other interesting point of this system is you can retrieve some informations from the parent when sending mailings or labels. In the children members, email and postal addresses automatically become optionnal, whatever the configuration says. If any of those informations is missing, it will be retrieved from the parent.
+The other interesting point of this system is you can retrieve some information from the parent when sending mailings or labels. In the children members, email and postal addresses automatically become optional, whatever the configuration says. If any of those information is missing, it will be retrieved from the parent.
 
-.. note:: Members without email adresses cannot use the "retrieve password" feature. This does not affect the unicity email constraint in the database.
+.. note:: Members without email adresses cannot use the "retrieve password" feature. This does not affect the uniqueness email constraint in the database.
 
-Impersonnating
-==============
+Impersonating
+=============
 
 .. versionadded:: 0.9
 
-Some issues may be related to a particular account, because of its ACLs, groups, ... In this case, it is unfortuntely frequent to see some credentials sent by insecure emails; which should really be avoid.
+Some issues may be related to a particular account, because of its ACLs, groups, ... In this case, it is unfortunately frequent to see some credentials sent by insecure emails; which should really be avoid.
 
-As super admininistrator user, you wil see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonnated the user, you can reproduce the issue and fix it or get all required informations to report the issue upstream.
+As super administrator user, you wil see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonated the user, you can reproduce the issue and fix it or get all required information to report the issue upstream.

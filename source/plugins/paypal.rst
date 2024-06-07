@@ -33,8 +33,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/2.0.0-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/plugins/galette-plugin-paypal-2.0.0.tar.bz2
+.. image:: https://img.shields.io/badge/2.1.0-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/plugins/galette-plugin-paypal-2.1.0.tar.bz2
    :alt: Get latest Paypal plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
@@ -69,5 +69,5 @@ In order to work properly, you need to fill a very important value: your Paypal 
 
 Preferences screen also permit to edit amount related to contributions types, and to hide some types.
 
-After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membershop extension, its membership wil be recalculated when the payment will be confirmed.
+After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membership extension, its membership wil be recalculated when the payment will be confirmed.
 
