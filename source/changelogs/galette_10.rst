@@ -1,5 +1,18 @@
 :orphan:
 
+.. _v1110:
+
+**************
+1.1.0 -> 1.1.1
+**************
+
+* Cannot sort transactions on payment type column (`#1837 <https://bugs.galette.eu/issues/1837>`_)
+* Self subscriptions cannot be stored (`#1838 <https://bugs.galette.eu/issues/1838>`_)
+* Error on sorting sent mailings (`#1839 <https://bugs.galette.eu/issues/1839>`_)
+* Error filtering members on status (`#1840 <https://bugs.galette.eu/issues/1840>`_)
+* Cannot replay a saved search (`#1841 <https://bugs.galette.eu/issues/1841>`_)
+* Cannot list saved search with "show identifiers" parameters set to false (`# <https://bugs.galette.eu/issues/1841>`_)
+
 .. _v1100:
 
 **************
