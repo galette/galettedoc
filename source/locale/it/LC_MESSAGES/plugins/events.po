@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2024-07-02 10:16+0000\n"
+"PO-Revision-Date: 2024-07-05 08:09+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-plugins-events/it/>\n"
@@ -35,17 +35,17 @@ msgstr "Questo componente aggiuntivo fornisce:"
 # 33e978d5d3a74a1ba0093c5a0ae54580
 #: ../plugins/events.rst:7 33e978d5d3a74a1ba0093c5a0ae54580
 msgid "events management,"
-msgstr ""
+msgstr "gestione eventi,"
 
 # c810d6911df54e07a7f33bd921d5e37b
 #: ../plugins/events.rst:8 c810d6911df54e07a7f33bd921d5e37b
 msgid "associate activities with events,"
-msgstr ""
+msgstr "attività associate agli eventi,"
 
 # 9fe40b0d1eba41478afe240c36ae5f57
 #: ../plugins/events.rst:9 9fe40b0d1eba41478afe240c36ae5f57
 msgid "booking management."
-msgstr ""
+msgstr "gestione prenotazioni."
 
 # b6a34c28f0e9413baef5885604e0b7cc
 #: ../plugins/events.rst:12 b6a34c28f0e9413baef5885604e0b7cc
@@ -55,15 +55,15 @@ msgstr "Installazione"
 # e289fd5d0a0a40fa837b8f5b226d4ae5
 #: ../plugins/events.rst:14 e289fd5d0a0a40fa837b8f5b226d4ae5
 msgid "First of all, download the plugin:"
-msgstr "Prima di tutto, scarica il componente:"
+msgstr "Prima di tutto, scaricare il plugin:"
 
 #: ../plugins/events.rst:-1 0fbccd16e80f46fbb4d91351e110a546
 msgid "Get latest Events plugin!"
-msgstr ""
+msgstr "Ottieni il plugin Events più recente!"
 
 #: ../plugins/events.rst:-1 aad19e466a1747bc8612df937b80de1a
 msgid "Get Evernts plugin nightly build!"
-msgstr ""
+msgstr "Ottieni il plugin Evernts nightly build!"
 
 # bdae4bfeab124e2281ec1d0f6317ff1b
 #: ../plugins/events.rst:24 bdae4bfeab124e2281ec1d0f6317ff1b
@@ -72,7 +72,7 @@ msgid ""
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 "Estrai l'archivio scaricato nella cartella ``plugins`` di Galette. Per "
-"esempio, in linux (sostituendo `{url}` e `{version}` con i rispettivi "
+"esempio, su Linux (sostituendo `{url}` e `{version}` con i rispettivi "
 "valori):"
 
 # 13d8ca9a52fd437b8c28ea836018c10d
@@ -93,7 +93,7 @@ msgstr ""
 # 83b00fef9c4b46f3b1c2aef9019f9c0b
 #: ../plugins/events.rst:38 83b00fef9c4b46f3b1c2aef9019f9c0b
 msgid "And this is finished; Events plugin is installed :)"
-msgstr ""
+msgstr "E questo è finito; il plugin Eventi è stato installato :)"
 
 # 9cb7d8adfce840c3ae1c7210e0a71e8e
 #: ../plugins/events.rst:41 9cb7d8adfce840c3ae1c7210e0a71e8e
@@ -107,6 +107,10 @@ msgid ""
 "when a user is logged in. There are various possibilities that change "
 "depending on user profile (simple member, group manager, administrator, ...)."
 msgstr ""
+"Quando il plugin è installato, un gruppo `Eventi` viene aggiunto al menu "
+"Galette quando un utente è connesso. Ci sono varie possibilità che cambiano "
+"a seconda del profilo utente (socio semplice, gestore del gruppo, "
+"amministratore, ...)."
 
 # 552d82ab40f94520a15ccb9ae0a4fcf9
 #: ../plugins/events.rst:46 552d82ab40f94520a15ccb9ae0a4fcf9
@@ -119,16 +123,20 @@ msgid ""
 "You can define as much activities as you want, and associate them to an "
 "event. An activity may be an organized trip, a meal, a housing, ..."
 msgstr ""
+"Si può definire tutte le attività che si vuole e associarle a un evento. "
+"Un'attività può essere un viaggio organizzato, un pasto, un alloggio, ..."
 
 # 8db9eb8ae79e4d6a82c5a781086c45f7
 #: ../plugins/events.rst:54 8db9eb8ae79e4d6a82c5a781086c45f7
 msgid "An activity is composed with a name, a status and an optional comment."
-msgstr ""
+msgstr "Un'attività è composta da un nome, uno stato e un commento facoltativo."
 
 # 015d3270ecc34532b43c7e985c5022e9
 #: ../plugins/events.rst:56 015d3270ecc34532b43c7e985c5022e9
 msgid "To add a new activity, just click on \"New activity\" link:"
 msgstr ""
+"Per aggiungere una nuova attività, basta fare clic sul collegamento \"Nuova "
+"attività\":"
 
 # 079d25d908f34f33a4f3c53fe60ff9e3
 #: ../plugins/events.rst:65 079d25d908f34f33a4f3c53fe60ff9e3
@@ -136,6 +144,9 @@ msgid ""
 "Events are the main goal of the plugin. You can define several information, "
 "like a name, begin and ending dates, location, ..."
 msgstr ""
+"Gli eventi sono l'obiettivo principale del plugin. È possibile definire "
+"diverse informazioni, come un nome, le date di inizio e di fine, la "
+"posizione, ..."
 
 # 0fb25038137a4081aa06349d02ba7e83
 #: ../plugins/events.rst:71 0fb25038137a4081aa06349d02ba7e83
@@ -143,6 +154,8 @@ msgid ""
 "Name, begin date and town are mandatory. All other information are entirely "
 "optional."
 msgstr ""
+"Nome, data di inizio e città sono obbligatori. Tutte le altre informazioni "
+"sono completamente facoltative."
 
 # 346a82452c0b4c2fbe5a947291612ce0
 #: ../plugins/events.rst:73 346a82452c0b4c2fbe5a947291612ce0
@@ -150,6 +163,9 @@ msgid ""
 "Events that are not linked to a group will be available for all members. If "
 "a group is set, only members and managers of this group will have access."
 msgstr ""
+"Gli eventi che non sono collegati a un gruppo saranno disponibili per tutti "
+"i membri. Se un gruppo è impostato, solo i membri e i gestori di questo "
+"gruppo avranno accesso."
 
 # e60c7a23aa374f12828d8b7651279061
 #: ../plugins/events.rst:77 e60c7a23aa374f12828d8b7651279061
@@ -157,6 +173,8 @@ msgid ""
 "When a group manager creates a new event, he must choose one of the groups "
 "he owns!"
 msgstr ""
+"Quando un gestore di gruppo crea un nuovo evento, deve scegliere uno dei "
+"gruppi che possiede!"
 
 # ed8a66702f954acda8816fc687f0f943
 #: ../plugins/events.rst:79 ed8a66702f954acda8816fc687f0f943
@@ -165,6 +183,9 @@ msgid ""
 "if it is available, not available or even mandatory. Choose the activity to "
 "add, and click the button."
 msgstr ""
+"È possibile allegare una o più attività a ogni evento, e per ognuna "
+"impostare se è disponibile, non disponibile o anche obbligatoria. Scegliere "
+"l'attività da aggiungere e fare clic sul pulsante."
 
 # 00cab5142d944ea7b4803fd1219abd36
 #: ../plugins/events.rst:87 00cab5142d944ea7b4803fd1219abd36
@@ -173,11 +194,15 @@ msgid ""
 "to fill mandatory information. Nonetheless (and this is specified each "
 "time), the event **will not be stored** during this operation."
 msgstr ""
+"L'aggiunta o la rimozione di attività da un evento ricaricherà la pagina e "
+"provocherà la richiesta di inserire le necessarie informazioni. Tuttavia (e "
+"questo viene di volta in volta specificato), l'evento **non verrà "
+"memorizzato** durante questa operazione."
 
 # e4ec67c0815b44f49eba89aa060320f8
 #: ../plugins/events.rst:89 e4ec67c0815b44f49eba89aa060320f8
 msgid "Ensure you save the event :)"
-msgstr ""
+msgstr "Assicurarsi di salvare l'evento :)"
 
 # a7bc9841d59e47d496ac61807e1feb3a
 #: ../plugins/events.rst:91 a7bc9841d59e47d496ac61807e1feb3a
@@ -185,6 +210,8 @@ msgid ""
 "From Events list, you can edit or remove entries, access to booking list ou "
 "export bookings as CSV."
 msgstr ""
+"Dall'elenco Eventi si può modificare o rimuovere voci, accedere all'elenco "
+"delle prenotazioni o esportare le prenotazioni come CSV."
 
 # 7338c8f980e145e0bb25d4baf8dd15bc
 #: ../plugins/events.rst:98 7338c8f980e145e0bb25d4baf8dd15bc
@@ -198,6 +225,9 @@ msgid ""
 "and groups managers will be limited to their groups events, ou to the events "
 "that are not restricted to a group."
 msgstr ""
+"Per ogni evento è possibile registrare le prenotazioni. Come detto prima, i "
+"membri semplici e i gestori dei gruppi saranno limitati agli eventi dei loro "
+"gruppi, oppure agli eventi che non sono limitati a un gruppo."
 
 # ef59e0694d7f4623a125b297022f0222
 #: ../plugins/events.rst:102 ef59e0694d7f4623a125b297022f0222
@@ -205,6 +235,8 @@ msgid ""
 "Adding a new booking can be achieved from the menu \"New booking\" or from "
 "the event bookings list."
 msgstr ""
+"L'aggiunta di una nuova prenotazione può essere effettuata dal menu \"Nuova "
+"prenotazione\" o dall'elenco delle prenotazioni degli eventi."
 
 # 2b107959973f47be9d77ab375b333674
 #: ../plugins/events.rst:108 2b107959973f47be9d77ab375b333674
@@ -212,6 +244,9 @@ msgid ""
 "Bookings are closed once the event is marked as close, or when the begin "
 "date is over. Administrators and staff members can always add new bookings."
 msgstr ""
+"Le prenotazioni vengono chiuse una volta che l'evento viene contrassegnato "
+"come chiuso o al termine della data di inizio. Gli amministratori e i membri "
+"del personale possono sempre aggiungere nuove prenotazioni."
 
 # 643dc924e6874191949ec1b60f01b54f
 #: ../plugins/events.rst:110 643dc924e6874191949ec1b60f01b54f
@@ -219,6 +254,8 @@ msgid ""
 "Activities list is retrieved from the event; mandatory ones must of course "
 "be checked during booking."
 msgstr ""
+"L'elenco attività viene recuperato dall'evento; quelle obbligatorie vanno "
+"ovviamente verificate in fase di prenotazione."
 
 # 934a2e23bb7d49489cc1d0dbecda2280
 #: ../plugins/events.rst:116 934a2e23bb7d49489cc1d0dbecda2280
@@ -227,6 +264,9 @@ msgid ""
 "can then send a mailing to booked members, using the standard Galette "
 "mailing mechanism."
 msgstr ""
+"Si può filtrare l'elenco delle prenotazioni per evento, tipo di pagamento o "
+"stato del pagamento. Poi si potrà inviare una mail ai membri prenotati, "
+"utilizzando il meccanismo dell'invio postale standard di Galette."
 
 # c0828c4f47a1463d969c762769d5fab7
 #~ msgid "How to get the sources?"
