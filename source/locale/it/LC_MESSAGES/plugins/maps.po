@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2024-07-05 08:09+0000\n"
+"PO-Revision-Date: 2024-07-05 14:44+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-plugins-maps/it/>\n"
@@ -37,6 +37,8 @@ msgid ""
 "possibility to store geogaphical coordinates for members (latitude and "
 "longitude),"
 msgstr ""
+"possibilità di memorizzare coordinate geografiche per i membri (latitudine e "
+"longitudine),"
 
 # 9ee44748c93d439b9334078d8f591999
 #: ../plugins/maps.rst:8 9ee44748c93d439b9334078d8f591999
@@ -44,6 +46,8 @@ msgid ""
 "a public map displaying up to date members that have choosen to be "
 "publically visible."
 msgstr ""
+"una mappa pubblica aggiornata che mostra i membri che hanno scelto di essere "
+"pubblicamente visibili."
 
 # cfd5ac1519764dd9bb293edf8ad1da94
 #: ../plugins/maps.rst:11 cfd5ac1519764dd9bb293edf8ad1da94
@@ -57,11 +61,11 @@ msgstr "Prima di tutto, scaricare il plugin:"
 
 #: ../plugins/maps.rst:-1 7b67110bc6e64e4db20b4169ad88159c
 msgid "Get latest Maps plugin!"
-msgstr ""
+msgstr "Ottieni l'ultima versione del plugin Maps!"
 
 #: ../plugins/maps.rst:-1 0784ff8161884624bcd4a62a89f806f8
 msgid "Get Maps plugin nightly build!"
-msgstr ""
+msgstr "Ottieni il plugin Maps versione nightly build!"
 
 # 12972b70c1e84038aa983bf162bb561d
 #: ../plugins/maps.rst:23 12972b70c1e84038aa983bf162bb561d
@@ -91,7 +95,7 @@ msgstr ""
 # bdcac6382fd046d4867b7dbd7a9144fd
 #: ../plugins/maps.rst:37 bdcac6382fd046d4867b7dbd7a9144fd
 msgid "And this is finished; Maps plugin is installed :)"
-msgstr ""
+msgstr "E questo è finito; il plugin Maps è stato installato :)"
 
 # 27830182254440878b13199d6b5e55c6
 #: ../plugins/maps.rst:40 27830182254440878b13199d6b5e55c6
@@ -105,6 +109,10 @@ msgid ""
 "member is logged in, which contains `My location` entry. This page allow "
 "member to store its location."
 msgstr ""
+"A plugin installato, si aggiunge il gruppo `Maps` al menu di Galette "
+"ogniqualvolta che un membro si connette, contenente la voce `La mia "
+"posizione`. Questa pagina consente all'utente di memorizzare la sua "
+"posizione."
 
 # db360f726f3a4304a579a341756413f3
 #: ../plugins/maps.rst:44 db360f726f3a4304a579a341756413f3
@@ -112,6 +120,9 @@ msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
 msgstr ""
+"Viene inoltre aggiunto un pulsante `Geolocalizza` durante la visualizzazione "
+"di un membro, che consente agli amministratori di impostare le coordinate "
+"dei membri."
 
 # 1af3d5aae17b4bada49a1c0f0ca06b29
 #: ../plugins/maps.rst:46 1af3d5aae17b4bada49a1c0f0ca06b29
@@ -121,6 +132,10 @@ msgid ""
 "will see all members, while simple members and visitors will only see up to "
 "date public ones."
 msgstr ""
+"Inoltre, nell'elenco delle pagine pubbliche viene aggiunta una voce \"Mappa\""
+" che mostra i membri geolocalizzati aggiornati. Gli amministratori e i "
+"membri dello staff vedranno tutti i membri, mentre i membri semplici e i "
+"visitatori vedranno solo quelli pubblici aggiornati."
 
 # 33b190b6ca084cefa8b9bd03c6981002
 #: ../plugins/maps.rst:48 33b190b6ca084cefa8b9bd03c6981002
@@ -128,6 +143,8 @@ msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
 msgstr ""
+"Prima di tutto, i membri entreranno nelle loro coordinate di posizione. Sono "
+"disponibili diverse opzioni:"
 
 # 72dc0efe31654226bbbe60dd20f66c12
 #: ../plugins/maps.rst:50 72dc0efe31654226bbbe60dd20f66c12
@@ -136,6 +153,9 @@ msgid ""
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
 "org>`_),"
 msgstr ""
+"se la città è stata inserita nelle informazioni dei membri, verrà proposto "
+"un elenco dei posti possibili (tramite il `servizio online Nominatim "
+"<https://nominatim.openstreetmap.org>`_),"
 
 # 1219157d2ba741938fb71d75fec71728
 #: ../plugins/maps.rst:51 1219157d2ba741938fb71d75fec71728
@@ -143,11 +163,13 @@ msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
 msgstr ""
+"inoltre, una zona di ricerca (fornita da `OpenStreetMap <https://nominatim."
+"openstreetmap.org/>`_),"
 
 # f581f5c6ae7b4d0aabb4838bdabcb4d1
 #: ../plugins/maps.rst:52 f581f5c6ae7b4d0aabb4838bdabcb4d1
 msgid "and also a geolocalize button using browser capacities."
-msgstr ""
+msgstr "e anche un pulsante geolocalizza utilizzando le capacità del browser."
 
 # 99d4a42cc87645d4bf15eef0c0de81bf
 #: ../plugins/maps.rst:54 99d4a42cc87645d4bf15eef0c0de81bf
@@ -155,6 +177,8 @@ msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
 msgstr ""
+"La zona di ricerca può essere utilizzata durante il salvataggio della "
+"posizione dei membri e durante la visualizzazione delle mappe."
 
 # da083618a9c54f1e9fe1a5ac4d49e503
 #: ../plugins/maps.rst:60 da083618a9c54f1e9fe1a5ac4d49e503
@@ -162,17 +186,23 @@ msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
 msgstr ""
+"Un membro può definire la sua posizione (con la precisione che vuole) sulla "
+"mappa selezionando una delle proposizioni:"
 
 # 5cc12078cb6345c8876df9a227d64be8
 #: ../plugins/maps.rst:66 5cc12078cb6345c8876df9a227d64be8
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
+"Utilizzando il pulsante di geolocalizzazione verrà definita la sua posizione "
+"dal browser:"
 
 # 822d4913304041ca8e197e0470a3ef78
 #: ../plugins/maps.rst:72 822d4913304041ca8e197e0470a3ef78
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
+"Poi, la posizione del membro viene visualizzata sulla mappa e può essere "
+"rimossa:"
 
 # 66863b1337bf4c26b111618e07f807ad
 #~ msgid "How to get the sources?"
