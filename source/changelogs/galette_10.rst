@@ -1,5 +1,21 @@
 :orphan:
 
+.. _v1120:
+
+**************
+1.1.1 -> 1.1.2
+**************
+
+* Now entirely translated into Italian language!
+* Do not display links to public documents page if public pages are not enabled (`#1848 <https://bugs.galette.eu/issues/1848>`_)
+* Fix info message display on new release (`#1849 <https://bugs.galette.eu/issues/1849>`_)
+* Fix typehint issues on dynamic fields (`#1850 <https://bugs.galette.eu/issues/1850>`_)
+* Check for possible null from DB converted to int
+* Fix member search on contribution type (`#1852 <https://bugs.galette.eu/issues/1852>`_)
+* Contributions types and payments types were no longer selected when displaying search parameters
+* Fix SQL issue searching on dynamic booleans fields with PostgreSQL
+* Fix return types on parameted exports (`#1853 <https://bugs.galette.eu/issues/1853>`_)
+
 .. _v1110:
 
 **************
