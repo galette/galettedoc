@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2024-07-05 18:09+0200\n"
-"PO-Revision-Date: 2024-06-14 20:49+0000\n"
+"PO-Revision-Date: 2024-07-05 16:17+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/"
 "documentation-changelog/fr/>\n"
@@ -16,95 +16,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: ../changelog.rst:5 52f4192485954e2cbbea4ce7c2a93b29
 msgid "Changelog"
 msgstr "Journal des changements"
 
 #: ../changelogs/galette_10.rst:7 f7e339f5c27b411b9a3bdedaeac4801a
-#, fuzzy
-#| msgid "1.1.0 -> 1.1.1"
 msgid "1.1.1 -> 1.1.2"
-msgstr "1.1.0 -> 1.1.1"
+msgstr "1.1.1 -> 1.1.2"
 
 #: ../changelogs/galette_10.rst:9 a7f3e41d16ea4917b7dc5f5e36a17ec2
 msgid "Now entirely translated into Italian language!"
-msgstr ""
+msgstr "Désormais traduite entièrement en Italien !"
 
 #: ../changelogs/galette_10.rst:10 8d5a9fbb6ac8424ab5cf014e02f24445
-#, fuzzy
-#| msgid ""
-#| "Display first staff members on public lists (`#1809 <https://bugs.galette."
-#| "eu/issues/1809>`_)"
 msgid ""
 "Do not display links to public documents page if public pages are not "
 "enabled (`#1848 <https://bugs.galette.eu/issues/1848>`_)"
 msgstr ""
-"Affichage en tête de liste des membres du bureau sur les pages publiques "
-"(`#1809 <https://bugs.galette.eu/issues/1809>`_)"
+"Ne pas afficher les liens vers la page publique des documents si les pages "
+"publiques ne sont pas activées (`#1848 <https://bugs.galette.eu/issues/"
+"1848>`_)"
 
 #: ../changelogs/galette_10.rst:11 e40ebf19d4f14628a500813651fb01a4
-#, fuzzy
-#| msgid ""
-#| "Fix issues on mailings attachmments  (`#1497 <https://bugs.galette.eu/"
-#| "issues/1497>`_)"
 msgid ""
 "Fix info message display on new release (`#1849 <https://bugs.galette.eu/"
 "issues/1849>`_)"
 msgstr ""
-"Correction de problèmes avec les pièces jointes des envois (`#1497 <https://"
-"bugs.galette.eu/issues/1497>`_)"
+"Correction de l'affichage du message d'information d'une nouvelle version (`#"
+"1849 <https://bugs.galette.eu/issues/1849>`_)"
 
 #: ../changelogs/galette_10.rst:12 e40ebf19d4f14628a500813651fb01a4
-#, fuzzy
-#| msgid ""
-#| "Add min size on dynamic fields (`#1795 <https://bugs.galette.eu/"
-#| "issues/1794>`_)"
 msgid ""
 "Fix typehint issues on dynamic fields (`#1850 <https://bugs.galette.eu/"
 "issues/1850>`_)"
 msgstr ""
-"Ajout d'une taille minimale sur les champs dynamiques (`#1795 <https://bugs."
-"galette.eu/issues/1794>`_)"
+"Correction de types sur les champs dynamiques (`#1850 <https://bugs.galette."
+"eu/issues/1850>`_)"
 
 #: ../changelogs/galette_10.rst:13 e4324a61988f4d1fa883dd7e4d6ff5c1
 msgid "Check for possible null from DB converted to int"
-msgstr ""
+msgstr "Vérification de possibles valeurs vides converties en entiers"
 
 #: ../changelogs/galette_10.rst:14 ef79678c4973494d92ca68864b4c2a57
-#, fuzzy
-#| msgid ""
-#| "Add amounts on contributions types (`#273 <https://bugs.galette.eu/"
-#| "issues/273>`_)"
 msgid ""
 "Fix member search on contribution type (`#1852 <https://bugs.galette.eu/"
 "issues/1852>`_)"
 msgstr ""
-"Ajout des montants sur les types de contributions (`#273 <https://bugs."
-"galette.eu/issues/273>`_)"
+"Correction de la recherche d'adhérents sur les types de contributions (`#"
+"1852 <https://bugs.galette.eu/issues/1852>`_)"
 
 #: ../changelogs/galette_10.rst:15 7ff5ac5d20a4493b971c18d3af367ce7
 msgid ""
 "Contributions types and payments types were no longer selected when "
 "displaying search parameters"
 msgstr ""
+"Les types de contributions et de paiements n'étaient plus sélectionnés à "
+"l'affichage des paramètres de recherche"
 
 #: ../changelogs/galette_10.rst:16 75a81842e2ab43de98002344407e99d2
 msgid "Fix SQL issue searching on dynamic booleans fields with PostgreSQL"
 msgstr ""
+"Correction d'une erreur SQL avec PostgreSQL sur la recherche de champs "
+"dynamiques de type booléen"
 
 #: ../changelogs/galette_10.rst:17 e40ebf19d4f14628a500813651fb01a4
-#, fuzzy
-#| msgid ""
-#| "Fix user search by nickname in dropdowns (`#1383 <https://bugs.galette.eu/"
-#| "issues/1383>`_)"
 msgid ""
 "Fix return types on parameted exports (`#1853 <https://bugs.galette.eu/"
 "issues/1853>`_)"
 msgstr ""
-"Correction de la recherche d'adhérent par leur pseudo dans les listes "
-"déroulantes (`#1383 <https://bugs.galette.eu/issues/1383>`_)"
+"Correction des types de retour sur les exports paramétrés (`#1853 "
+"<https://bugs.galette.eu/issues/1853>`_)"
 
 #: ../changelogs/galette_10.rst:23 f7e339f5c27b411b9a3bdedaeac4801a
 msgid "1.1.0 -> 1.1.1"
