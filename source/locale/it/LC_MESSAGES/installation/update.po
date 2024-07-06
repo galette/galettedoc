@@ -3,31 +3,33 @@
 # This file is distributed under the same license as the Galette package.
 # Weblate <noreply@weblate.org>, 2020.
 # Luca De Filippo <luca.defilippo@translationcommons.org>, 2020.
+# Marco Ciampa <ciampix@posteo.net>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2020-12-15 14:29+0000\n"
-"Last-Translator: Luca De Filippo <luca.defilippo@translationcommons.org>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-"
-"install-update/it/>\n"
+"PO-Revision-Date: 2024-07-05 08:09+0000\n"
+"Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
+"doc-install-update/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 # c4a0150d911747f9850844fb561daa56
 #: ../installation/update.rst:5 c4a0150d911747f9850844fb561daa56
 msgid "Updating"
-msgstr ""
+msgstr "In aggiornamento"
 
 # 85c8c8a096ee48a2bf0c808fa88789f9
 #: ../installation/update.rst:7 85c8c8a096ee48a2bf0c808fa88789f9
 msgid "If you are using an old Galette release, it's time to update."
 msgstr ""
+"Se si sta usando una vecchia versione di Galette, è tempo di aggiornare."
 
 # 8f2753c896f64b7bb6c50fdc0cfbd460
 #: ../installation/update.rst:11 8f2753c896f64b7bb6c50fdc0cfbd460
@@ -36,6 +38,10 @@ msgid ""
 "make sure you made **a backup of your current database**, or you may lost "
 "all or a part of your data."
 msgstr ""
+"Un aggiornamento non è qualcosa da prendere alla leggera, i dati possono "
+"venire modificati. Quindi, assicurarsi di fare un **salvataggio dei dati "
+"correnti del database** o si rischia di perdere, tutti o in parte, i propri "
+"dati."
 
 # 0ce3fcfa5743401f903cb46007cc96d3
 #: ../installation/update.rst:13 0ce3fcfa5743401f903cb46007cc96d3
@@ -43,6 +49,9 @@ msgid ""
 "A backup of all Galette files is also recommended it would be helpful if you "
 "find a bug that prevent you to migrate and have to restore an old version;"
 msgstr ""
+"Un backup di tutti i file Galette sarebbe utile anche nel caso in cui si "
+"trovi un difetto che impedisce di migrare ed è necessario ripristinare una "
+"vecchia versione;"
 
 # b770437d655d45a5873376dab5ea469a
 #: ../installation/update.rst:17 b770437d655d45a5873376dab5ea469a
@@ -51,6 +60,9 @@ msgid ""
 "tested (those releases are more than 10 years old!), and it is possible your "
 "attempt fail."
 msgstr ""
+"La migrazione da una versione pre 0.7 è teoricamente supportata, ma non "
+"testata (quelle versioni hanno più di 10 anni!), ed è possibile che il "
+"tentativo fallisca."
 
 #: ../installation/update.rst:19 c28f7153bc7c49cc80588d2cb53cbfcc
 msgid ""
@@ -59,11 +71,15 @@ msgid ""
 "archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest "
 "version."
 msgstr ""
+"Nulla è stato predisposto per un tale viaggio nel tempo ;) se questo è il "
+"proprio caso, sarebbe meglio prima `migrare a Galette 0.7.8 <https://galette."
+"eu/download/archives/galette-0.7.8.tar.bz2 >`_; e poi fare un'altra "
+"migrazione verso l'ultima versione."
 
 # ddeccd27b1d24d1fa7bc1e6121cd20f1
 #: ../installation/update.rst:22 ddeccd27b1d24d1fa7bc1e6121cd20f1
 msgid "Updating files"
-msgstr ""
+msgstr "Aggiornamento file"
 
 # b2893b3c6eaa42f5851407515c09fa7b
 #: ../installation/update.rst:24 b2893b3c6eaa42f5851407515c09fa7b
@@ -71,6 +87,8 @@ msgid ""
 "First, logout from your instance, and make sure to use a maintenance mode to "
 "prevent other users to reach the instance."
 msgstr ""
+"Innanzitutto, sconnettersi dalla propria istanza e usare la modalità "
+"manutenzione per impedire ad altri utenti di raggiungere l'istanza."
 
 # aceb420907fd4016ab8456495e0057dd
 #: ../installation/update.rst:26 aceb420907fd4016ab8456495e0057dd
@@ -79,6 +97,9 @@ msgid ""
 "information on files installation, refer to the :ref:`prepare installation "
 "<preparation>` section."
 msgstr ""
+"Poi, scaricare l'ultima versione di Galette e sostituire i file. Per "
+"ulteriori informazioni sull'installazione file, fare riferimento alla "
+"sezione :ref:`preparare l'installazione <preparation>`."
 
 # ce34ab9888eb41309710dc28ae856a61
 #: ../installation/update.rst:28 ce34ab9888eb41309710dc28ae856a61
@@ -86,6 +107,8 @@ msgid ""
 "Some directories keep data and/or configurations and should be copied back "
 "to the new instance:"
 msgstr ""
+"Alcune cartelle contengono dati e/o configurazioni e dovrebbero essere "
+"copiate nuovamente nella nuova istanza:"
 
 # 0613607a643341638af2ca989c052877
 #: ../installation/update.rst:30 0613607a643341638af2ca989c052877
@@ -95,26 +118,31 @@ msgid ""
 "it will be used to fill information excepted database password. It is the "
 "only file that can be edited during update process,"
 msgstr ""
+"``config/config.inc.php``. Se questo file manca, il processo di "
+"aggiornamento di Galette chiederà le informazioni e ne creerà uno nuovo. Se "
+"il file è presente, verrà utilizzato per riempire le informazioni tranne la "
+"password del database. È l'unico file che può essere modificato durante il "
+"processo di aggiornamento,"
 
 # 59761ec82cf74838a2db9a5cc53387dd
 #: ../installation/update.rst:31 59761ec82cf74838a2db9a5cc53387dd
 msgid "``data/photos`` your members photos and logos,"
-msgstr ""
+msgstr "``dati/foto`` le foto e i loghi dei soci,"
 
 # 0ca3359130544cfcacb40341ff080017
 #: ../installation/update.rst:32 0ca3359130544cfcacb40341ff080017
 msgid "``data/exports`` contains CSv exports,"
-msgstr ""
+msgstr "``data/exports`` contiene le esportazioni CSV,"
 
 # 97ca05c6a7a245f391d2ed8fdad9594b
 #: ../installation/update.rst:33 97ca05c6a7a245f391d2ed8fdad9594b
 msgid "``data/files`` contains files from dynamic fields of type file,"
-msgstr ""
+msgstr "``data/files`` contiene file da campi dinamici di tipo file,"
 
 # 17dae2c5a3f743629de6c20ace036605
 #: ../installation/update.rst:34 17dae2c5a3f743629de6c20ace036605
 msgid "``data/attachments`` contains mailing attached documents."
-msgstr ""
+msgstr "``data/attachments`` contiene i documenti allegati degli invii postali."
 
 # e80f2ec427564a80aad7a5fad00df093
 #: ../installation/update.rst:35 e80f2ec427564a80aad7a5fad00df093
@@ -122,12 +150,17 @@ msgid ""
 "``plugins`` your current plugins. It is a good idea to check if new plugins "
 "versions are available ;)"
 msgstr ""
+"``plugins`` i plugin correnti. È sempre una buona idea controllare "
+"periodicamente se sono disponibili nuove versioni dei plugin ;)"
 
 #: ../installation/update.rst:37 759c2d7bade247e5959b28f4bb1730ea
 msgid ""
 "Once files are updated, go to your Galette instance. It will ask you if "
 "needed to proceed to the update of your database."
 msgstr ""
+"Una volta che i file vengono aggiornati, andare alla propria istanza di "
+"Galette. Chiederà, se necessario, di procedere all'aggiornamento del "
+"database."
 
 #: ../installation/update.rst:39 b50f3746516d4b25b9016c563270c20d
 msgid ""
@@ -135,15 +168,18 @@ msgid ""
 "name/installer.php) and choose *Update* when your are asked for the type of "
 "installation."
 msgstr ""
+"Se è così, visitare l'URL di installazione ``/installer.php`` (es: "
+"https://nome.tuo.dominio/installer.php) e scegliere *Aggiornare* quando "
+"viene richiesto per il tipo di installazione."
 
 #: ../installation/update.rst:41 acbdab0cec644716ba93b2b5534113dd
 msgid "If it asks you nothing you're just done already ;)"
-msgstr ""
+msgstr "Se non chiede nulla, è già tutto fatto ;)"
 
 # 4b6889058e484a889fe18f9a3afa4a78
 #: ../installation/update.rst:45 4b6889058e484a889fe18f9a3afa4a78
 msgid "Updating database"
-msgstr ""
+msgstr "Aggiornamento del database"
 
 # 621d9cdcb39d49a99b7e21bb86741bba
 #: ../installation/update.rst:49 621d9cdcb39d49a99b7e21bb86741bba
@@ -152,12 +188,17 @@ msgid ""
 "will be required! Sometimes, only updating the files will be enough; even "
 "for a major release."
 msgstr ""
+"Installare una nuova versione Galette non significa automaticamente che sarà "
+"richiesto un aggiornamento del database! A volte, solo l'aggiornamento dei "
+"file sarà sufficiente; anche per un rilascio importante."
 
 # 37b53ace7af742b3986e4f751629065d
 #: ../installation/update.rst:51 37b53ace7af742b3986e4f751629065d
 msgid ""
 "Galette will tell you if an update is needed, no need to \"force\" an update."
 msgstr ""
+"Galette dirà se è necessario un aggiornamento, non c'è bisogno di \"forzare\""
+" un aggiornamento."
 
 # 8900502e7ad444ccb72966ba1fdb29a1
 #: ../installation/update.rst:53 8900502e7ad444ccb72966ba1fdb29a1
@@ -166,11 +207,14 @@ msgid ""
 "<galette>`, with some steps that change. All is mostly transparent, "
 "information are provided on each step."
 msgstr ""
+"Il processo di aggiornamento è molto simile al :doc:`Processo di "
+"installazione di Galette <galette>`, con alcuni passaggi diversi. Tutto è "
+"per lo più trasparente, le informazioni vengono fornite ad ogni passo."
 
 # e946375277c34dbfa2f2bb7f268a7351
 #: ../installation/update.rst:56 e946375277c34dbfa2f2bb7f268a7351
 msgid "Database information"
-msgstr ""
+msgstr "Informazioni sul database"
 
 # 51ca20b11982427eaee8756abe020978
 #: ../installation/update.rst:58 51ca20b11982427eaee8756abe020978
@@ -179,6 +223,10 @@ msgid ""
 "information page will be pre filled with existing information, excepting "
 "password. Other information should not be changed."
 msgstr ""
+"Al passo \"tipo di Installazione\", bisognerà selezionare \"update\". La "
+"pagina delle informazioni del database verrà pre compilata con le "
+"informazioni esistenti, a eccezione della password. Altre informazioni non "
+"devono essere modificate."
 
 # fab1bbf021c04dda8cce55d1aa50db63
 #: ../installation/update.rst:62 fab1bbf021c04dda8cce55d1aa50db63
@@ -186,6 +234,8 @@ msgid ""
 "Note it is important that database name and prefixed used in previous "
 "database correspond to configuration."
 msgstr ""
+"Si noti che è importante che il nome del database e il prefisso utilizzato "
+"nel database precedente corrispondano alla configurazione."
 
 # be706b5e535a48ea88ebb5ce1915865c
 #: ../installation/update.rst:65 be706b5e535a48ea88ebb5ce1915865c
@@ -199,6 +249,10 @@ msgid ""
 "process will try to \"guess\" what version it as, and will select this one "
 "per default (the one that will be displayed as bold text)."
 msgstr ""
+"Il passo successivo è la scelta della precedente versione Galette. Il "
+"processo di installazione cercherà di \"indovinare\" quale versione sia, e "
+"selezionerà il risultato di questa valutazione come valore predefinito (ciò "
+"che verrà visualizzato come testo in grassetto)."
 
 # 2b6e7e7304b34dafac2f805cf87a0fea
 #: ../installation/update.rst:73 2b6e7e7304b34dafac2f805cf87a0fea
@@ -207,7 +261,12 @@ msgid ""
 "will be warned. No entry will be displayed as bold text, please make sure to "
 "choose the right one:"
 msgstr ""
+"Se si tenta di aggiornare, ma la versione del database sembra già corretta, "
+"si sarà avvertititi. Nessuna voce verrà visualizzata come testo in "
+"grassetto, assicurarsi di fare la scelta giusta:"
 
 #: ../installation/update.rst:79 7062e651fd5f46b3a5ab89485cff2f2c
 msgid "Once update scripts have run, a summary will be displayed."
 msgstr ""
+"Una volta eseguiti gli script di aggiornamento, verrà visualizzato un "
+"resoconto delle operazioni."
