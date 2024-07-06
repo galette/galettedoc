@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-06 08:29+0200\n"
-"PO-Revision-Date: 2024-07-06 08:19+0000\n"
+"PO-Revision-Date: 2024-07-07 05:58+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-advanced/it/>\n"
@@ -121,6 +121,12 @@ msgid ""
 "`Mot de passe :` and we want to replace it with `Secret :`; so we will "
 "create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
 msgstr ""
+"Ad esempio, vogliamo cambiare la stringa \"Password\" nella pagina di "
+"accesso in francese, tradotta come `Mot de passe :`. La stringa originale è "
+"`Password:` (vedere ``galette/templates/default/index.tpl``), la sua "
+"traduzione francese è `Mot de passe :` e vogliamo sostituirla con `Secret :`;"
+" quindi creeremo il ``galette_fr_FR.utf8_local_lang.php`` con il seguente "
+"contenuto:"
 
 # 860fe6d76a224c0bba74e0bc108f9c6b
 #: ../usermanual/avancee.rst:41 860fe6d76a224c0bba74e0bc108f9c6b
@@ -130,6 +136,11 @@ msgid ""
 "important to take the original string verbatim, punctuation included; and "
 "take care to escape single quotes (with a backslash) in all the strings."
 msgstr ""
+"Poiché Galette utilizza un sistema di cache per le traduzioni, le modifiche "
+"potrebbero non essere immediatamente visibili; potrebbe essere necessario "
+"riavviare PHP (o svuotare la cache). È importante prendere la stringa "
+"originale alla lettera, punteggiatura inclusa; e fare attenzione a evitare "
+"le virgolette singole (con una barra rovesciata) in tutte le stringhe."
 
 # f928d85c3e2b44b7a87ecc7c848eb051
 #: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
@@ -139,6 +150,10 @@ msgid ""
 "php`` where `{plugin}` is the routing name you can find in the ``_define."
 "php`` file."
 msgstr ""
+"Si può anche imporrsi sui lang per i plugin usando il metodo sam, basta "
+"inserire il file nella cartella lang dei plugin e chiamarlo "
+"``{plugin}_{mylang}_local_lang.php`` dove `{plugin}` è il nome del routing "
+"che si trova nel file ``_define.php``."
 
 # ae27f3e2e3fa4b67ad6fb55a30d83d00
 #: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
@@ -146,11 +161,13 @@ msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
 msgstr ""
+"Funzionerà solo se usano le funzionalità di traduzione di Galette e non con "
+"gettext nativo."
 
 # 175f39314197485ea541b80324e86e63
 #: ../usermanual/avancee.rst:48 175f39314197485ea541b80324e86e63
 msgid "Change session lifetime"
-msgstr ""
+msgstr "Modifica la durata della sessione"
 
 #: ../usermanual/avancee.rst:50 be24dd1f3fa94b5dacee5b25f1adecf7
 msgid ""
