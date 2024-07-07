@@ -1,5 +1,9 @@
 :orphan:
 
+.. note::
+
+   Since 2024-07, Changelog will no longer be translated. All new entries will be available in english only.
+
 .. _v1120:
 
 **************
