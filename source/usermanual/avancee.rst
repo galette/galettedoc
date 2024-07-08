@@ -101,23 +101,24 @@ Let's examine existing "cotisations" parameted export:
 .. code-block:: yaml
 
     - cotisations:
-        name: Cotisations
-        description: Export de l'état des cotisations pour l'ensemble des adhérents" filename="galette_cotisations.csv
-        filename: galette_cotisations.csv
-        query: |-
-           SELECT nom_adh, prenom_adh, ville_adh, montant_cotis, date_debut_cotis, date_fin_cotis
-           FROM galette_cotisations
-           INNER JOIN galette_adherents
-              ON (galette_cotisations.id_adh=galette_adherents.id_adh)
-        headers:
-          - Name
-          - Surname
-          - Town
-          - Amount
-          - Begin date
-          - End date
-        separator: ;
-        quote: "
+      # Model: List all cotisations amounts, begin and end dates with adherent name and town
+      name: Cotisations
+      description: Export de l'état des cotisations pour l'ensemble des adhérents
+      filename: galette_cotisations.csv
+      query: |-
+        SELECT nom_adh, prenom_adh, ville_adh, montant_cotis, date_debut_cotis, date_fin_cotis
+          FROM galette_cotisations
+          INNER JOIN galette_adherents
+            ON (galette_cotisations.id_adh=galette_adherents.id_adh)
+      headers:
+        - Name
+        - Surname
+        - Town
+        - Amount
+        - Begin date
+        - End date
+      separator: ;
+      quote: \"
 
 * each array entry is a unique identifier, lowercase without spaces or special character
 * `name` and `description` are mandatory as used to display each parameted export in the user interface
