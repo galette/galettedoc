@@ -1,5 +1,17 @@
 :orphan:
 
+.. _v1130:
+
+**************
+1.1.2 -> 1.1.3
+**************
+
+* Impossible to update database  (`#1857 <https://bugs.galette.eu/issues/1857>`_)
+
+.. note::
+
+   Since 2024-07, Changelog will no longer be translated. All new entries will be available in english only.
+
 .. _v1120:
 
 **************
