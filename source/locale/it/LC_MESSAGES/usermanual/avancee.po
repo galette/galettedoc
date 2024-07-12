@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2024-06-06 08:29+0200\n"
 "PO-Revision-Date: 2024-07-09 13:25+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
-"doc-user-advanced/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
+"advanced/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -124,8 +124,8 @@ msgstr ""
 "Ad esempio, vogliamo cambiare la stringa \"Password\" nella pagina di "
 "accesso in francese, tradotta come `Mot de passe :`. La stringa originale è "
 "`Password:` (vedere ``galette/templates/default/index.tpl``), la sua "
-"traduzione francese è `Mot de passe :` e vogliamo sostituirla con `Secret :`;"
-" quindi creeremo il ``galette_fr_FR.utf8_local_lang.php`` con il seguente "
+"traduzione francese è `Mot de passe :` e vogliamo sostituirla con `Secret :"
+"`; quindi creeremo il ``galette_fr_FR.utf8_local_lang.php`` con il seguente "
 "contenuto:"
 
 # 860fe6d76a224c0bba74e0bc108f9c6b
@@ -151,9 +151,9 @@ msgid ""
 "php`` file."
 msgstr ""
 "Si può anche imporrsi sui lang per i plugin usando il metodo sam, basta "
-"inserire il file nella cartella lang dei plugin e chiamarlo "
-"``{plugin}_{mylang}_local_lang.php`` dove `{plugin}` è il nome del routing "
-"che si trova nel file ``_define.php``."
+"inserire il file nella cartella lang dei plugin e chiamarlo ``{plugin}"
+"_{mylang}_local_lang.php`` dove `{plugin}` è il nome del routing che si "
+"trova nel file ``_define.php``."
 
 # ae27f3e2e3fa4b67ad6fb55a30d83d00
 #: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
@@ -235,8 +235,8 @@ msgid ""
 "directory, it will be automatically included."
 msgstr ""
 "Molte piattaforme di statistica si basano su un blocco Javascript extra per "
-"funzionare. È possibile creare un file ``tracking.js`` nella cartella ``"
-"webroot/themes/default``, esso verrà incluso automaticamente."
+"funzionare. È possibile creare un file ``tracking.js`` nella cartella "
+"``webroot/themes/default``, esso verrà incluso automaticamente."
 
 # 28fb00fb44184a929e34b7a788048b05
 #: ../usermanual/avancee.rst:84 28fb00fb44184a929e34b7a788048b05
@@ -434,6 +434,9 @@ msgid ""
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
 "<behavior>`). This directive can take the following values:"
 msgstr ""
+"È possibile configurare Galette con varie modalità di cui è fornito con la "
+"costante``GALETTE_MODE`` (:ref:`vedere configurazione comportamento di "
+"Galette <behavior>`). Questa direttiva può assumere i seguenti valori:"
 
 #: ../usermanual/avancee.rst:164 ef4616e506c940c28f23c8482a5d80ef
 msgid ""
@@ -441,46 +444,56 @@ msgid ""
 "mode). This is the default mode for releases, but it may change in "
 "development branch."
 msgstr ""
+"``PROD``: modalità di produzione (l'istanza di non produzione dovrebbe "
+"essere su un'altra modalità). Questa è la modalità predefinita per i "
+"rilasci, ma può cambiare nel ramo di sviluppo."
 
 #: ../usermanual/avancee.rst:165 edd8fc6e54bd4573b29a3b4f3a42fcff
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
 msgstr ""
+"``DEMO``: modalità dimostrativa, uguale a ``PROD`` ma con alcune "
+"caratteristiche disabilitate come l'invio di e-mail, la modifica dei dati "
+"superadmin, ..."
 
 #: ../usermanual/avancee.rst:166 58edd5fb363441bb8b6c16e611bca56a
 msgid "``TEST``: reserved for unit tests."
-msgstr ""
+msgstr "``TEST``: riservata agli unit test."
 
 #: ../usermanual/avancee.rst:167 53fad056e86c433cb702eb054bfa3c32
 msgid "``MAINT``: maintainance mode. Only super admin will be able to login."
 msgstr ""
+"``MAINT``: modalità di manutenzione. Solo il super amministratore sarà in "
+"grado di effettuare il login."
 
 #: ../usermanual/avancee.rst:172 b61851b56ee84b698065555decc5b03d
 msgid "Galette Debug"
-msgstr ""
+msgstr "Debug di Galette"
 
 #: ../usermanual/avancee.rst:176 ce4fe39f0d024bd7b29ff27257538228
 msgid ""
 "A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug "
 "mode. With this mode on:"
 msgstr ""
+"Un nome costante dedicato ``GALETTE_DEBUG``` può essere utilizzato per "
+"abilitare la modalità debug. Con questa modalità abilitata:"
 
 #: ../usermanual/avancee.rst:178 009a52199c584e54ae7156c1a22ac0f5
 msgid "unstable/not finished parts will be activated,"
-msgstr ""
+msgstr "parti instabili/non finite verranno attivate,"
 
 #: ../usermanual/avancee.rst:179 a73bd7b04767463897f20306f1e84873
 msgid "some data will not be stored in session,"
-msgstr ""
+msgstr "alcuni dati non saranno memorizzati nella sessione,"
 
 #: ../usermanual/avancee.rst:180 a25b4b21b8c24e15952363a73165be58
 msgid "default log level is set to ``DEBUG``,"
-msgstr ""
+msgstr "il livello di log predefinito sarà impostato a `DEBUG`,"
 
 #: ../usermanual/avancee.rst:181 56cb2c250ab246c1838e90719c47bf10
 msgid "news won't be cached,"
-msgstr ""
+msgstr "le notizie non verranno memorizzate,"
 
 #: ../usermanual/avancee.rst:182 ccd4bd9fae2d4456b4e5496ea9372f16
 msgid "database version check will not be done."
@@ -488,15 +501,15 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:188 49b49d1f899b4984ab40f99592260c37
 msgid "Behavior configuration"
-msgstr ""
+msgstr "Configurazione del comportamento"
 
 #: ../usermanual/avancee.rst:190 582fcfa42dcf4f25ba5d25e867335d2c
 msgid "It is possible to change some of Galette behaviors:"
-msgstr ""
+msgstr "È possibile cambiare alcuni comportamenti di Galette:"
 
 #: ../usermanual/avancee.rst:192 3ccd872ee4714d2881791db050c3d950
 msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
-msgstr ""
+msgstr "`GALETTE_DEBUG`: ref: `vedere il Debug di Galette <debug>`;"
 
 #: ../usermanual/avancee.rst:193 5c491a6f323644ee8fa78f0c853c5cef
 msgid ""
@@ -504,13 +517,22 @@ msgid ""
 "configuration for some other usages (such as PDF cards settings, session "
 "lifetime, ...)."
 msgstr ""
+"troverete nella parte relativa della documentazione che è possibile "
+"utilizzare la configurazione del comportamento per altri usi (come le "
+"impostazioni delle schede PDF, la durata della sessione, ...)."
 
 #: ../usermanual/avancee.rst:195 88cf7861b81a4bfbb6d39b8f270f310b
 msgid ""
 "You can add those directives by declaring constants in the ``galette/config/"
 "behavior.inc.php``."
 msgstr ""
+"È possibile aggiungere queste direttive dichiarando costanti in ``galette/"
+"config/behavior.inc.php``."
 
 #: ../usermanual/avancee.rst:197 9641a12858be4e69b464edfd5943815b
 msgid "For example:"
-msgstr ""
+msgstr "Per esempio:"
+
+#: ../usermanual/avancee.rst:182 ccd4bd9fae2d4456b4e5496ea9372f16
+msgid "database verion check will not be done."
+msgstr "la verifica della versione del database non verrà effettuata."
