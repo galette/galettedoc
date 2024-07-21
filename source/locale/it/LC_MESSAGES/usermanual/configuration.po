@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2024-07-12 17:02+0000\n"
+"PO-Revision-Date: 2024-07-22 09:40+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-configuration/it/>\n"
@@ -37,11 +37,17 @@ msgid ""
 "order they will appear with a drag & drop interface. Related access rights "
 "can be set from core fields configuration (see below)."
 msgstr ""
+"Si può scegliere quali campi appariranno nell'elenco membri di Galette e "
+"l'ordine con il quale questi verranno visualizzati con un'interfaccia drag & "
+"drop. I diritti di accesso correlati possono essere impostati dalla "
+"configurazione dei campi del nucleo (vedere sotto)."
 
 # f3474774034544638002d700d3da27f7
 #: ../usermanual/configuration.rst:16 f3474774034544638002d700d3da27f7
 msgid "Two fields are mandatory and cannot be moved: member number and name."
 msgstr ""
+"Due campi sono obbligatori e non possono essere spostati: numero e nome del "
+"membro."
 
 # 6e52a74784094262a3d14cd64dd34ce0
 #: ../usermanual/configuration.rst:18 6e52a74784094262a3d14cd64dd34ce0
@@ -49,15 +55,17 @@ msgid ""
 "It is not possible to set access rights on id column, and parent will be "
 "accessible for staff members only."
 msgstr ""
+"Non è possibile impostare i diritti di accesso sulla colonna id, e il "
+"genitore sarà accessibile solo per i membri del personale."
 
 #: ../usermanual/configuration.rst:-1 5bff4ba31e1a470c8ce0931e43d2f789
 msgid "List fields management"
-msgstr ""
+msgstr "Gestione dei campi di lista"
 
 # 7a0400ffa7684e5d93f497ac38d95aae
 #: ../usermanual/configuration.rst:28 7a0400ffa7684e5d93f497ac38d95aae
 msgid "Mandatory fields and access rights"
-msgstr ""
+msgstr "Campi obbligatori e diritti di accesso"
 
 # 5f1a9f0b17624f16aba64bec24a41af7
 #: ../usermanual/configuration.rst:30 5f1a9f0b17624f16aba64bec24a41af7
@@ -66,6 +74,9 @@ msgid ""
 "configuration may not suit your needs, but you can configure some elements "
 "easily ;)"
 msgstr ""
+"Quando si crea o modifica un membro, alcuni campi sono obbligatori. La "
+"configurazione predefinita potrebbe non soddisfare le proprie esigenze, ma è "
+"facilmente possibile configurare alcuni elementi ;)"
 
 # d3b171057fd14c5eb49b0275debc53fb
 #: ../usermanual/configuration.rst:32 d3b171057fd14c5eb49b0275debc53fb
@@ -74,11 +85,15 @@ msgid ""
 "fields available for members, and choose for each one if it is mandatory or "
 "not, as well as associated access rights:"
 msgstr ""
+"Dal menu `Configurazione`, `Campi nucleo`, si otterrà l'accesso a tutti i "
+"campi disponibili per i membri, e si potrà scegliere per ciascuno se "
+"renderlo obbligatorio oppure no, così come per i diritti di accesso "
+"associati:"
 
 # e453d86c7e2c4f319c57ea5e13c84b1a
 #: ../usermanual/configuration.rst:34 e453d86c7e2c4f319c57ea5e13c84b1a
 msgid "`inaccessible` will make the field inaccessible for everyone,"
-msgstr ""
+msgstr "`inaccessibile` renderà il campo inaccessibile per tutti,"
 
 # 59acaa933e7b4989bfd33f94e2cb911b
 #: ../usermanual/configuration.rst:35 59acaa933e7b4989bfd33f94e2cb911b
@@ -86,6 +101,8 @@ msgid ""
 "`administrator` will make the field readable and writeable for "
 "administrators only,"
 msgstr ""
+"`amministratore` renderà il campo leggibile e scrivibile solo per gli "
+"amministratori,"
 
 # 42c67b7f525042a78260b73bb03f7614
 #: ../usermanual/configuration.rst:36 42c67b7f525042a78260b73bb03f7614
@@ -93,6 +110,8 @@ msgid ""
 "`staff members` will make the field readable and writable for staff members "
 "and administrators,"
 msgstr ""
+"`membri del personale` renderà il campo leggibile e scrivibile per i membri "
+"del personale e gli amministratori,"
 
 # c07be6eda5b34e79924aef558f9b5302
 #: ../usermanual/configuration.rst:37 c07be6eda5b34e79924aef558f9b5302
@@ -101,6 +120,9 @@ msgid ""
 "managers on the memebrs of groups they own, and for staff memebrs and "
 "administrators,"
 msgstr ""
+"`amministratori dei gruppi` renderà il campo leggibile e scrivibile per i "
+"gestori di gruppi per i membri dei gruppi che possiedono, e per i membri del "
+"personale e gli amministratori,"
 
 # b0fedf50b759408698e5c3a54a84e468
 #: ../usermanual/configuration.rst:38 b0fedf50b759408698e5c3a54a84e468
@@ -108,6 +130,8 @@ msgid ""
 "`read/write` will make the field readable and writeable for member, groups "
 "managers, staff members and administrators,"
 msgstr ""
+"`lettura/scrittura` renderà il campo leggibile e scrivibile per membri, "
+"amministratori dei gruppi, membri del personale e amministratori,"
 
 # 85896d2a8d6d470d919d8a2c0f947b46
 #: ../usermanual/configuration.rst:39 85896d2a8d6d470d919d8a2c0f947b46
@@ -115,10 +139,12 @@ msgid ""
 "`read only` will make the field read only for the members, but writable for "
 "groups managers, staff members and administrators."
 msgstr ""
+"`sola lettura` renderà il campo in sola lettura per i membri, ma scrivibile "
+"per i gestori di gruppi, membri del personale e amministratori."
 
 #: ../usermanual/configuration.rst:-1 7496d8efe703469fb5843b486763e81c
 msgid "Core fields management"
-msgstr ""
+msgstr "Gestione campi del nucleo"
 
 # 770dc3a97fff41479c0733ad1b11a34b
 #: ../usermanual/configuration.rst:47 770dc3a97fff41479c0733ad1b11a34b
