@@ -19,7 +19,7 @@ First of all, download the plugin:
 
 .. image:: https://img.shields.io/badge/Nighly-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
    :target: https://galette.eu/download/plugins/galette-plugin-events-dev.tar.bz2
-   :alt: Get Evernts plugin nightly build!
+   :alt: Get Events plugin nightly build!
 
 Extract the downloaded archive in Galette ``plugins`` directory.
 For example, under linux (replacing `{url}` and `{version}` with correct values):
