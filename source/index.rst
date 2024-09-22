@@ -31,8 +31,9 @@ Galette's documentation
 .. toctree::
    :maxdepth: 1
 
-   changelog.rst
+   command-line.rst
    source_code.rst
+   changelog.rst
 
 *************
 About Galette
