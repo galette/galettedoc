@@ -202,25 +202,25 @@ htmlhelp_basename = 'Galettedoc'
 # epub_theme = 'epub'
 
 # The description of the document. The default value is 'unknown'.
-epub_description = 'Galette documentation'
+#epub_description = 'Galette documentation'
 
 # An identifier for the document. This is put in the Dublin Core metadata.
 # For published documents this is the ISBN number, but you can also use an
 # alternative scheme, e.g. the project homepage.
 # The default value is 'unknown'.
-epub_identifier = 'https://galette.eu'
+#epub_identifier = 'https://galette.eu'
 
 # The publication scheme for the epub_identifier. This is put in the Dublin
 # Core metadata. For published books the scheme is 'ISBN'. If you use the
 # project homepage, 'URL' seems reasonable. The default value is 'unknown'.
-epub_scheme = 'URL'
+#epub_scheme = 'URL'
 
 # The cover page information. This is a tuple containing the filenames of the
 # cover image and the html template. The rendered html cover page is inserted
 # as the first item in the spine in content.opf. If the template filename is
 # empty, no html cover page is created. No cover at all is created if the tuple
 # is empty.
-epub_cover = ('_static/images/epub_cover.png', '')
+#epub_cover = ('_static/images/epub_cover.png', '')
 
 # Control whether to display URL addresses. This is very useful for readers
 # that have no other means to display the linked URL. The settings can have the
@@ -234,46 +234,46 @@ epub_cover = ('_static/images/epub_cover.png', '')
 
 # A list of files that are generated/copied in the build directory but should
 # not be included in the epub file. The default value is [].
-epub_exclude_files = [
-  '_static/favicon.ico',
-  'installation/unix.xhtml',
-  'installation/ftp.xhtml',
-  'installation/windows.xhtml',
-]
+#epub_exclude_files = [
+#  '_static/favicon.ico',
+#  'installation/unix.xhtml',
+#  'installation/ftp.xhtml',
+#  'installation/windows.xhtml',
+#]
 
 
 # -- Options for LaTeX output --------------------------------------------------
 
-latex_elements = {
+#latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-'papersize': 'a4paper',
+#'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
-'pointsize': '12pt',
+#'pointsize': '12pt',
 
 # Font package inclusion.
-'fontpkg': '\\usepackage{newcent}',
+#'fontpkg': '\\usepackage{newcent}',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
 
 # Maximum allowed nested levels in lists.
-'maxlistdepth': '8',
+#'maxlistdepth': '8',
 
 # LaTeX-type customization interface.
-'sphinxsetup': 'verbatimwithframe=false,VerbatimColor={rgb}{0.98,0.94,0.9},warningBorderColor={rgb}{0.84,0.23,0.24},warningBgColor={rgb}{0.87,0.68,0.69},noteBorderColor={rgb}{0.56,0.74,0.56},noteborder=3pt',
-}
+#'sphinxsetup': 'verbatimwithframe=false,VerbatimColor={rgb}{0.98,0.94,0.9},warningBorderColor={rgb}{0.84,0.23,0.24},warningBgColor={rgb}{0.87,0.68,0.69},noteBorderColor={rgb}{0.56,0.74,0.56},noteborder=3pt',
+#}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-  ('index', 'Galette.tex', 'Galette Documentation',
-   'Johan Cwiklinski', 'manual'),
-]
+#latex_documents = [
+#  ('index', 'Galette.tex', 'Galette Documentation',
+#   'Johan Cwiklinski', 'manual'),
+#]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = 'pdf_cover.pdf'
+#latex_logo = 'pdf_cover.pdf'
 
 # A list of file names, relative to the configuration directory, to copy to the
 # build directory when building LaTeX output. This is useful to copy files that
@@ -283,17 +283,17 @@ latex_logo = 'pdf_cover.pdf'
 #
 # You have to make sure yourself that the filenames don’t collide with those of
 # any automatically copied files.
-latex_additional_files = ['pdf_cover.pdf']
+#latex_additional_files = ['pdf_cover.pdf']
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
 #latex_use_parts = False
 
 # If true, show page references after internal links.
-latex_show_pagerefs = True
+#latex_show_pagerefs = True
 
 # If true, show URL addresses after external links.
-latex_show_urls = 'footnote'
+#latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
