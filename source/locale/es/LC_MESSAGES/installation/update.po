@@ -4,21 +4,22 @@
 # Weblate <noreply@weblate.org>, 2020.
 # Berto Te <Bertote@3fpj.com>, 2021.
 # Eunice Soria <eunice.soria.es@gmail.com>, 2021.
+# gallegonovato <fran-carro@hotmail.es>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2021-02-05 07:41+0000\n"
-"Last-Translator: Eunice Soria <eunice.soria.es@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
-"install-update/es/>\n"
+"PO-Revision-Date: 2024-10-15 12:16+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
+"doc-install-update/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 # c4a0150d911747f9850844fb561daa56
 #: ../installation/update.rst:5 c4a0150d911747f9850844fb561daa56
@@ -28,7 +29,7 @@ msgstr "Actualizar"
 # 85c8c8a096ee48a2bf0c808fa88789f9
 #: ../installation/update.rst:7 85c8c8a096ee48a2bf0c808fa88789f9
 msgid "If you are using an old Galette release, it's time to update."
-msgstr ""
+msgstr "Si está usando una versión antigua de Galette, es hora de actualizarla."
 
 # 8f2753c896f64b7bb6c50fdc0cfbd460
 #: ../installation/update.rst:11 8f2753c896f64b7bb6c50fdc0cfbd460
@@ -37,6 +38,9 @@ msgid ""
 "make sure you made **a backup of your current database**, or you may lost "
 "all or a part of your data."
 msgstr ""
+"Una actualización no es algo fácil, sus datos pueden ser modificados. Así "
+"que, por favor asegúrese de haber hecho **una copia de seguridad de su base "
+"de datos actual**, o puede perder todos o parte de sus datos."
 
 # 0ce3fcfa5743401f903cb46007cc96d3
 #: ../installation/update.rst:13 0ce3fcfa5743401f903cb46007cc96d3
@@ -44,6 +48,9 @@ msgid ""
 "A backup of all Galette files is also recommended it would be helpful if you "
 "find a bug that prevent you to migrate and have to restore an old version;"
 msgstr ""
+"También se recomienda una copia de seguridad de todos los archivos de "
+"Galette, sería útil si encuentras un error que te impida migrar y tienes que "
+"restaurar una versión antigua;"
 
 # b770437d655d45a5873376dab5ea469a
 #: ../installation/update.rst:17 b770437d655d45a5873376dab5ea469a
@@ -52,6 +59,9 @@ msgid ""
 "tested (those releases are more than 10 years old!), and it is possible your "
 "attempt fail."
 msgstr ""
+"La migración a una versión anterior a 0.7 está soportada teóricamente, pero "
+"esto no es probado (¡estas versiones tienen más de 10 años!), y es posible "
+"que su intento falle."
 
 #: ../installation/update.rst:19 c28f7153bc7c49cc80588d2cb53cbfcc
 msgid ""
@@ -60,6 +70,10 @@ msgid ""
 "archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest "
 "version."
 msgstr ""
+"En realidad, nada está diseñado para viajar en el tiempo de esa manera;) Si "
+"este es tu caso, primero debes migrar a `Galette 0.7.8 <https://galette.eu/"
+"download/archives/galette-0.7.8.tar. >`_ y luego realice otra migración a la "
+"última versión."
 
 # ddeccd27b1d24d1fa7bc1e6121cd20f1
 #: ../installation/update.rst:22 ddeccd27b1d24d1fa7bc1e6121cd20f1
@@ -72,6 +86,8 @@ msgid ""
 "First, logout from your instance, and make sure to use a maintenance mode to "
 "prevent other users to reach the instance."
 msgstr ""
+"Primero, cierre sesión en su instancia y asegúrese de habilitar el modo de "
+"mantenimiento para que otros usuarios no puedan acceder a ella."
 
 # aceb420907fd4016ab8456495e0057dd
 #: ../installation/update.rst:26 aceb420907fd4016ab8456495e0057dd
@@ -80,6 +96,9 @@ msgid ""
 "information on files installation, refer to the :ref:`prepare installation "
 "<preparation>` section."
 msgstr ""
+"A continuación, descargue la última versión de Galette y sustituya los "
+"archivos. Para obtener más información sobre la instalación de archivos, "
+"consulte la sección :ref:`preparar la instalación <preparation>`."
 
 # ce34ab9888eb41309710dc28ae856a61
 #: ../installation/update.rst:28 ce34ab9888eb41309710dc28ae856a61
@@ -87,6 +106,8 @@ msgid ""
 "Some directories keep data and/or configurations and should be copied back "
 "to the new instance:"
 msgstr ""
+"Algunos directorios guardan datos y/o configuraciones y deben copiarse en la "
+"nueva instancia:"
 
 # 0613607a643341638af2ca989c052877
 #: ../installation/update.rst:30 0613607a643341638af2ca989c052877
@@ -96,16 +117,21 @@ msgid ""
 "it will be used to fill information excepted database password. It is the "
 "only file that can be edited during update process,"
 msgstr ""
+"``config/config.inc.php``. Si falta este archivo, el proceso de "
+"actualización de Galette le pedirá la información y creará uno nuevo. Si el "
+"archivo está presente, se utilizará para rellenar la información excepto la "
+"contraseña de la base de datos. Es el único archivo que puede ser editado "
+"durante el proceso de actualización,"
 
 # 59761ec82cf74838a2db9a5cc53387dd
 #: ../installation/update.rst:31 59761ec82cf74838a2db9a5cc53387dd
 msgid "``data/photos`` your members photos and logos,"
-msgstr ""
+msgstr "``data/photos`` fotos y logotipos de sus miembros,"
 
 # 0ca3359130544cfcacb40341ff080017
 #: ../installation/update.rst:32 0ca3359130544cfcacb40341ff080017
 msgid "``data/exports`` contains CSv exports,"
-msgstr ""
+msgstr "`data/exports`contiene exportaciones CSv,"
 
 # 97ca05c6a7a245f391d2ed8fdad9594b
 #: ../installation/update.rst:33 97ca05c6a7a245f391d2ed8fdad9594b
