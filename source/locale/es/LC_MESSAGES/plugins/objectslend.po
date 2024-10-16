@@ -6,13 +6,14 @@
 # Berto Te <Bertote@3fpj.com>, 2021.
 # Cow <javier.fserrador@gmail.com>, 2022.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2024.
+# Kamborio <Kamborio15@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2024-07-07 06:42+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2024-10-17 10:51+0000\n"
+"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
 "doc-plugins-objectslend/es/>\n"
 "Language: es\n"
@@ -20,12 +21,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 # a4d4d1b1fa0c4cfab04e50c507167d64
 #: ../plugins/objectslend.rst:3 a4d4d1b1fa0c4cfab04e50c507167d64
 msgid "Objects lend"
-msgstr "Lente de objetos"
+msgstr "Préstamo de objetos"
 
 # 69bf44891ba44a2b9aebb66d7799de09
 #: ../plugins/objectslend.rst:5 69bf44891ba44a2b9aebb66d7799de09
@@ -35,27 +36,27 @@ msgstr "Este complemento proporciona:"
 # e85c19100592422c997d2fe333cf69ee
 #: ../plugins/objectslend.rst:7 e85c19100592422c997d2fe333cf69ee
 msgid "objects management (description, size, length, price, ...)"
-msgstr ""
+msgstr "gestión de objetos (descripción, tamaño, longitud, precio, ...)"
 
 # d862b49820df47ab8a7ed3dc3528f250
 #: ../plugins/objectslend.rst:8 d862b49820df47ab8a7ed3dc3528f250
 msgid "groups objects by categories,"
-msgstr ""
+msgstr "agrupa objetos por categorías,"
 
 # 84b6a9e86d5f4626867721b0c300b9af
 #: ../plugins/objectslend.rst:9 84b6a9e86d5f4626867721b0c300b9af
 msgid "manage object state, and their presence in stock or not,"
-msgstr ""
+msgstr "gestiona el estado del objeto, y su presencia en stock o no,"
 
 # 1dda564c75994c6e9d322914c0c11bf9
 #: ../plugins/objectslend.rst:10 1dda564c75994c6e9d322914c0c11bf9
 msgid "manage lending and/or renting objects,"
-msgstr ""
+msgstr "gestiona el préstamo y/o alquiler de objetos,"
 
 # adbe56175110460fa1559ce866b3cd50
 #: ../plugins/objectslend.rst:11 adbe56175110460fa1559ce866b3cd50
 msgid "contribution generation,"
-msgstr ""
+msgstr "generación de contribución,"
 
 # 613e7a8284b443f0a5a22fd7bb3962f7
 #: ../plugins/objectslend.rst:12 613e7a8284b443f0a5a22fd7bb3962f7
@@ -70,15 +71,15 @@ msgstr "Instalación"
 # f9cea004b1734b2382018cb5443de9ad
 #: ../plugins/objectslend.rst:17 f9cea004b1734b2382018cb5443de9ad
 msgid "First of all, download the plugin:"
-msgstr "Antes que todo, descargue el complemento:"
+msgstr "Lo primero de todo, descarga el complemento:"
 
 #: ../plugins/objectslend.rst:-1 1864a77e36b44b7f941d0920afef31ac
 msgid "Get latest ObjectsLend plugin!"
-msgstr ""
+msgstr "¡Obtén la última versión del complemento ObjectsLend!"
 
 #: ../plugins/objectslend.rst:-1 c22fc51f5f8c475caf2ebd863e1ecabd
 msgid "Get ObjectsLend plugin nightly build!"
-msgstr ""
+msgstr "¡Obtén la versión Nightly del complemento ObjectsLend!"
 
 # c0e97675457841e3b6ffd51e843d548a
 #: ../plugins/objectslend.rst:27 c0e97675457841e3b6ffd51e843d548a
@@ -86,8 +87,8 @@ msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
-"Extraiga el paquete descargado en Galette en el directorio «plugin». Por "
-"ejemplo, bajo linux (sustituyendo {url} y {version} con los valores "
+"Extrae el archivo descargado en la carpeta ``plugin`` de Galette . Por "
+"ejemplo, en linux (sustituyendo `{url}` y `{version}` con los valores "
 "correctos):"
 
 # 72e9605c48bd4675837c3f72148215d2
@@ -101,18 +102,19 @@ msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
-"Para que funcione, este complemento requiere varias tablas en la base de "
-"datos. Vea :ref:`Galette plugin management interface <plugins_managment>`."
+"Para que funcione, este complemento necesita varias tablas en la base de "
+"datos. Consulta :ref:`la interfaz de gestión de complementos de Galette "
+"<plugins_managment>`."
 
 # d8fa623eb0654ce5a3ee16335c96b514
 #: ../plugins/objectslend.rst:42 d8fa623eb0654ce5a3ee16335c96b514
 msgid "And this is finished; ObjectsLend plugin is installed :)"
-msgstr ""
+msgstr "Y esto está terminado; se ha instalado el complemento ObjectsLend :)"
 
 # 13f78d3c8f374c85874323bc23bfa554
 #: ../plugins/objectslend.rst:45 13f78d3c8f374c85874323bc23bfa554
 msgid "Plugin usage"
-msgstr "Modo de empleo del complemento"
+msgstr "Uso del complemento"
 
 # a64162e25f0b427b87a4e2cd5825e464
 #: ../plugins/objectslend.rst:47 a64162e25f0b427b87a4e2cd5825e464
@@ -120,6 +122,8 @@ msgid ""
 "Once plugin has been installed, a `Object lend` group is added to Galette "
 "menu."
 msgstr ""
+"Una vez que el complemento ha sido instalado, se añadirá un grupo `Préstamo "
+"de objeto` al menú de Galette."
 
 # 607bcb44cde845aeae7db18fd99dcc60
 #: ../plugins/objectslend.rst:49 607bcb44cde845aeae7db18fd99dcc60
@@ -127,6 +131,9 @@ msgid ""
 "Defaults status are provided at installation, but they can not fit your "
 "needs, you can of course define your own."
 msgstr ""
+"Con la instalación se proporcionan los estados por defecto, pero puede que "
+"no encajen con tus necesidades, así que por supuesto puedes definir los "
+"tuyos propios."
 
 # 84d4b302fe3247038d993417b8d0f6bb
 #: ../plugins/objectslend.rst:55 84d4b302fe3247038d993417b8d0f6bb
@@ -134,6 +141,8 @@ msgid ""
 "Define status, create categories and objects; users can lend objects with a "
 "reason, then give them back with location."
 msgstr ""
+"Define estados, crea categorías y objetos; los usuarios pueden prestar "
+"objetos con un motivo, y después recuperarlos con una ubicación."
 
 # 93fcf4b0fdba4ded950b37b54119bfc6
 #: ../plugins/objectslend.rst:57 93fcf4b0fdba4ded950b37b54119bfc6
@@ -141,16 +150,18 @@ msgid ""
 "A lend history is provided for administrators and staff members from object "
 "page."
 msgstr ""
+"Desde la página del objeto se muestra un historial de préstamos para los "
+"administradores y el personal interno."
 
 # 78fa0c60bf964341aa1a5a8e098d966b
 #: ../plugins/objectslend.rst:60 78fa0c60bf964341aa1a5a8e098d966b
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Ajustes"
 
 # f58623877d1f43299d8958d5ec484bfb
 #: ../plugins/objectslend.rst:62 f58623877d1f43299d8958d5ec484bfb
 msgid "Several preferences allows to change plugin behavior."
-msgstr ""
+msgstr "Varios ajustes permiten cambiar el funcionamiento del complemento."
 
 # 690635ef3c424ab9b0b67a50f01ac3c3
 #: ../plugins/objectslend.rst:76 690635ef3c424ab9b0b67a50f01ac3c3
@@ -159,11 +170,15 @@ msgid ""
 "should create a new contribution (and its type and description), if image "
 "should be displayed in objects list, and thumbnails size."
 msgstr ""
+"Desde esta pantalla, puedes definir si los miembros pueden prestar objetos o "
+"no, si se debe crear una nueva contribución (y su tipo y descripción), si se "
+"debe mostrar una imagen en el listado de objetos, y el tamaño de la "
+"miniatura."
 
 # 838a5757968f43ce9a37cbcb2a43257b
 #: ../plugins/objectslend.rst:80 838a5757968f43ce9a37cbcb2a43257b
 msgid "It is possible to activate the fullsize photo display."
-msgstr ""
+msgstr "Es posible activar la pantalla de la foto a tamaño completo."
 
 # e59d519f30b84115a8bf1b026fabfa24
 #: ../plugins/objectslend.rst:84 e59d519f30b84115a8bf1b026fabfa24
@@ -172,6 +187,9 @@ msgid ""
 "thumbnail was stored. If you want to get fullsize display, you will have to "
 "send photos again."
 msgstr ""
+"Las fotos enviadas con las versiones anteriores del complemento siempre eran "
+"redimensionadas, solo se guardaba la miniatura. Si quieres obtener la "
+"pantalla a tamaño completo, tendrás que enviar las fotos otra vez."
 
 # 830b1a3931f144fda7b5dbd5a8c96f21
 #~ msgid "How to get the sources?"
