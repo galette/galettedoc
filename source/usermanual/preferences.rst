@@ -115,6 +115,10 @@ Define few extra rights:
 * **Can group managers edit members?** groups managers can edit member of their groups information.
 * **Can group managers send mailings?** groups manager can send mailings.
 * **Can group managers do exports?** groups managers cen export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
+* **Can group managers see contributions?** groups managers can see contributions of members of their groups.
+* **Can group managers create contributions?** groups managers can create contributions on behalf of members of their groups.
+* **Can group managers see transactions?** groups managers can see transactions of members of their groups.
+* **Can group managers create transactions?** groups managers can create transactions on behalf of members of their groups.
 
 .. image:: ../_styles/static/images/usermanual/prefs_rights.png
    :scale: 50%

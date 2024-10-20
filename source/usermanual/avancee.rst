@@ -180,7 +180,7 @@ A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug mode. Wi
 - some data will not be stored in session,
 - default log level is set to ``DEBUG``,
 - news won't be cached,
-- database verion check will not be done.
+- database version check will not be done.
 
 .. _behavior:
 

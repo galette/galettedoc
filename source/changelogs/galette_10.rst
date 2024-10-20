@@ -1,5 +1,28 @@
 :orphan:
 
+.. _v1140:
+
+**************
+1.1.3 -> 1.1.4
+**************
+
+- Groups managers can add or list contributions and transactions (from a preference - `#1863 <https://bugs.galette.eu/issues/1863>`_)
+- Install from command line (`#1180 <https://bugs.galette.eu/issues/1180>`_)
+- Improve dashboard (`#1864 <https://bugs.galette.eu/issues/1864>`_)
+- Activate choice after member creation for groups managers (`#1873 <https://bugs.galette.eu/issues/1873>`_)
+- Revert PDF member card to previous version, new adaptative one is optional (`#1871 <https://bugs.galette.eu/issues/1871>`_)
+- Fix PDF footer overlaps (`#1858 <https://bugs.galette.eu/issues/1858>`_)
+- Notify members when groups managers edit their account (`#1860 <https://bugs.galette.eu/issues/1860>`_)
+- Preferences socials networks were removed on telemetry update (`#1862 <https://bugs.galette.eu/issues/1862>`_)
+- Special HTML character are encoded on members search, therefore no results are found (`#1865 <https://bugs.galette.eu/issues/1865>`_)
+- Begin membership date changes on keyboard browse (`#1869 <https://bugs.galette.eu/issues/1869>`_)
+- Improve Preferences checks for membership extension/date (`#1870 <https://bugs.galette.eu/issues/1870>`_)
+- Cannot remove emails from emails management (`#1872 <https://bugs.galette.eu/issues/1872>`_)
+- Force image crop in preferences does not work (`#1877 <https://bugs.galette.eu/issues/1877>`_)
+- Display PHP startup messages on error page
+- Display max_input_vars configuration on sys info page
+- Fix SQL issue with postgres searching on dynamic dates
+
 .. _v1130:
 
 **************

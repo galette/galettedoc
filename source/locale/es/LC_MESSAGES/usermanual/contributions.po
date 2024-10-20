@@ -4,22 +4,23 @@
 # Weblate <noreply@weblate.org>, 2020.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020.
 # Berto Te <Bertote@3fpj.com>, 2021.
-# gallegonovato <fran-carro@hotmail.es>, 2022.
+# gallegonovato <fran-carro@hotmail.es>, 2022, 2024.
+# Kamborio <Kamborio15@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2022-10-06 13:19+0000\n"
+"PO-Revision-Date: 2024-10-17 12:19+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-user-"
-"contributions/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/galette/"
+"doc-user-contributions/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 # cb8f2c777c2d40d7964ee4dfbebc0173
 #: ../usermanual/contributions.rst:3 cb8f2c777c2d40d7964ee4dfbebc0173
@@ -32,6 +33,8 @@ msgid ""
 "Galette allows you to manage contributions sent from your members. There are "
 "several types of contributions, and transactions are also proposed."
 msgstr ""
+"Galette te permite gestionar las contribuciones enviadas por tus miembros. "
+"Hay varios tipos de contribuciones, y también se proponen transacciones."
 
 # 18a05d962a40427b929631839fe6721b
 #: ../usermanual/contributions.rst:7 18a05d962a40427b929631839fe6721b
@@ -41,6 +44,10 @@ msgid ""
 "Zac. Each one is member, independently of which group or else they are "
 "affected to, that does not matters."
 msgstr ""
+"¿Una transacción? ¿Qué es eso? Bueno, un ejemplo sencillo es mejor que una "
+"parrafada... Utilizaremos tres miembros de la misma organización: Marc, "
+"Julie y Zac. Cada uno es miembro, independientemente de que grupo al que "
+"pertenezca, eso no importa."
 
 # 4713609f4cc54095a9550df13a48feb1
 #: ../usermanual/contributions.rst:9 4713609f4cc54095a9550df13a48feb1
@@ -50,6 +57,10 @@ msgid ""
 "a transaction attached to his account, and which will be distributed in four "
 "contributions, each one attached to corresponding member."
 msgstr ""
+"Zac te envía un cheque para pagar su propia afiliación, las de Marc y Julie, "
+"y también una donación a la organización. En este caso, el cheque de Zac se "
+"gestionará en una transacción vinculada a su cuenta, y que será distribuida "
+"en cuatro contribuciones, cada una asociada al miembro correspondiente."
 
 # d5280d63a2c4482382bbbf8459928b8b
 #: ../usermanual/contributions.rst:11 d5280d63a2c4482382bbbf8459928b8b
@@ -57,6 +68,8 @@ msgid ""
 "Another example: Pierre pays his own contribution, his transaction will only "
 "contains his membership and will be distributed in only one contribution."
 msgstr ""
+"Otro ejemplo: Pierre paga su propia contribución, su transacción solo "
+"contendrá su afiliación y se distribuirá en una sola contribución."
 
 # 70a6ddb00ea24316aeea069aa7d173a0
 #: ../usermanual/contributions.rst:13 70a6ddb00ea24316aeea069aa7d173a0
@@ -64,6 +77,8 @@ msgid ""
 "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder "
 "<reminders>` :p"
 msgstr ""
+"Si Pierre, Zac, Julie o Marc se retrasan, puedes enviarles un :ref:`"
+"recordatorio <reminders>` :p"
 
 # 36bd60fa037045d2be8057e4450ef379
 #: ../usermanual/contributions.rst:16 36bd60fa037045d2be8057e4450ef379
@@ -76,6 +91,8 @@ msgid ""
 "A contribution can be a membership, a donation, a gift, ... Galette allows "
 "you to store all of that for each member."
 msgstr ""
+"Una colaboración puede ser una afiliación, una donación, un regalo, ... "
+"Galette le permite almacenar todo eso para cada miembro."
 
 # 11125f0fbe55414fabd0859c716d56ee
 #: ../usermanual/contributions.rst:21 11125f0fbe55414fabd0859c716d56ee
@@ -88,18 +105,20 @@ msgid ""
 "Contributions are entirely configurable. There are two main types of "
 "contributions in Galette:"
 msgstr ""
+"Las contribuciones son totalmente configurables. Hay dos tipos de "
+"contribuciones en Galette:"
 
 # 819c2bd5c0e6424eb5e94d25b1e948c2
 #: ../usermanual/contributions.rst:25 819c2bd5c0e6424eb5e94d25b1e948c2
 msgid ""
 "the ones that extends a membership (a montly or yearly membership for "
 "example),"
-msgstr ""
+msgstr "los que amplían la afiliación (por ejemplo: mensual o anual),"
 
 # 38e850a49f594234aa91b2c4bfee36fa
 #: ../usermanual/contributions.rst:26 38e850a49f594234aa91b2c4bfee36fa
 msgid "the ones that do not extends membership, like donations."
-msgstr ""
+msgstr "las que no amplían la afiliación, como las donaciones."
 
 # f4aaa564d9f04608b7928d037b4cc4bc
 #: ../usermanual/contributions.rst:28 f4aaa564d9f04608b7928d037b4cc4bc
@@ -107,6 +126,8 @@ msgid ""
 "Contribution types management allows you to define a label, and if it "
 "extends the memebrship or not."
 msgstr ""
+"La gestión de los tipos de contribución te permite definir una etiqueta, y "
+"si extiende la afiliación o no."
 
 # 27d817215ede438ab329e2489ec6d91a
 #: ../usermanual/contributions.rst:33 27d817215ede438ab329e2489ec6d91a
@@ -119,6 +140,9 @@ msgid ""
 "Emails models to remind due dates are available from the emails contents "
 "(\"Impending due date\" and \"Late due date\")."
 msgstr ""
+"Los modelos de correo electrónico para recordar el vencimiento del plazo "
+"están disponibles desde los contenidos de los correos electrónicos (\"Fecha "
+"de vencimiento inminente\" y \"Fecha de vencimiento tardía\")."
 
 # 2f4e01f0d7dd400a8a2c5facec048f81
 #: ../usermanual/contributions.rst:37 2f4e01f0d7dd400a8a2c5facec048f81
@@ -126,25 +150,28 @@ msgid ""
 "The reminder button from the dashboard or the reminders entry of the menu "
 "will give you access to the reminders management interface."
 msgstr ""
+"El botón de recordatorio desde el panel de control o la entrada de "
+"recordatorios del menú te dará acceso a la interfaz de gestión de "
+"recordatorios."
 
 #: ../usermanual/contributions.rst:-1 377a38171375457fb466200072e77825
 msgid "Reminders management interface"
-msgstr ""
+msgstr "Interfaz de gestión de recordatorios"
 
 # c792675a21e94502a57df0d11b86bf8d
 #: ../usermanual/contributions.rst:44 c792675a21e94502a57df0d11b86bf8d
 msgid "Two categories can be selected:"
-msgstr ""
+msgstr "Se pueden seleccionar dos categorías:"
 
 # 1c680f774bc945b5a46687a824365522
 #: ../usermanual/contributions.rst:46 1c680f774bc945b5a46687a824365522
 msgid "members whose due date is close,"
-msgstr ""
+msgstr "miembros cuya fecha de vencimiento esté cercana,"
 
 # 2b4bbccd3ae74ea382b553a6694fbbf2
 #: ../usermanual/contributions.rst:47 2b4bbccd3ae74ea382b553a6694fbbf2
 msgid "members whose due date is in the past."
-msgstr ""
+msgstr "miembros cuya fecha de vencimiento haya pasado."
 
 # af71f52045fd40fda43b8a1e751adda4
 #: ../usermanual/contributions.rst:49 af71f52045fd40fda43b8a1e751adda4
@@ -154,6 +181,11 @@ msgid ""
 "after the due date expiration. Reminders are stored in the database, if you "
 "never sent any reminder, all matching members will be reminded."
 msgstr ""
+"Por defecto (de momento no puede configurarse), los recordatorios se envían "
+"un mes, después siete días antes de la fecha de vencimiento; y después uno y "
+"dos meses tras pasar la fecha de vencimiento. Los recordatorios se guardan "
+"en la base de datos, si nunca has enviado ningún recordatorio, se recordará "
+"a todos los miembros que coincidan."
 
 # 680dd2901dfc4382a8c1cb8a1b9d222b
 #: ../usermanual/contributions.rst:51 680dd2901dfc4382a8c1cb8a1b9d222b
@@ -161,6 +193,8 @@ msgid ""
 "Galette will tell you if some members do not have an email address, you can "
 "print labels for those ones."
 msgstr ""
+"Galette te avisará si algunos miembros no tienen dirección de correo "
+"electrónico, podrás imprimir etiquetas para ellos."
 
 # 359f9f9cb04048b2be635343d62117d2
 #: ../usermanual/contributions.rst:53 359f9f9cb04048b2be635343d62117d2
@@ -171,11 +205,17 @@ msgid ""
 "Fedora and similar, look at your system documentation to know how to add a "
 "crontab) with the following content:"
 msgstr ""
+"Finalmente, es posible automatizar los recordatorios con una tarea cron que "
+"llamará al archivo ``galette/reminder.php``. Si quieres que los "
+"recordatorios se envíen cada dia a las 8:30 AM, entonces puedes añadir un "
+"archivo ``/etc/cron.d/galette`` (en Fedora y similares, consulta la "
+"documentación de tu sistema para saber como añadir un crontab) con el "
+"siguiente contenido:"
 
 # 84b9adcad74b4b2e893c64bee3afd9b3
 #: ../usermanual/contributions.rst:60 84b9adcad74b4b2e893c64bee3afd9b3
 msgid "Invoices and receipts"
-msgstr ""
+msgstr "Facturas y recibos"
 
 # 6b3bf19d68c74d47be81faf4f499dd37
 #: ../usermanual/contributions.rst:62 6b3bf19d68c74d47be81faf4f499dd37
@@ -183,15 +223,18 @@ msgid ""
 "In the contributions list, there is a PDF icon which is designed to generate "
 "invoice ou receipt for one contribution."
 msgstr ""
+"En la lista de contribuciones, hay un icono PDF que está diseñado para "
+"generar facturas o recibos por cada contribución."
 
 # ceec7a0f90d144c9809df2985e412b13
 #: ../usermanual/contributions.rst:64 ceec7a0f90d144c9809df2985e412b13
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
+"Puedes personalizar el PDF utilizando los :ref:`modelos PDF <pdf_models>`."
 
 #: ../usermanual/contributions.rst:67 615c1844e741462f8acfa1fd42fdbc79
 msgid "Scheduled payments"
-msgstr ""
+msgstr "Pagos programados"
 
 #: ../usermanual/contributions.rst:71 a17cebe69b2648dbb4c095650cd5d215
 msgid ""
@@ -200,10 +243,14 @@ msgid ""
 "type in your contribution; Galette will propose you to create an attached "
 "scheduled payment."
 msgstr ""
+"Es posible enviar una contribución junto con uno o varios pagos programados. "
+"Todo lo que tienes que hacer es seleccionar \"Pago programado\" como tipo de "
+"pago en tu contribución; Galette te propondrá crear un pago programado "
+"adjunto."
 
 #: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
 msgid "Add scheduled payment to a contribution"
-msgstr ""
+msgstr "Añadir un pago programado a la contribución"
 
 #: ../usermanual/contributions.rst:78 0c980ae2137543d592db876eac55b8cd
 msgid ""
@@ -211,20 +258,25 @@ msgid ""
 "but you can enter whatever you want. You can also select any payment type "
 "(except scheduled payment)."
 msgstr ""
+"Por defecto, la totalidad del importe restante se establecerá en el pago "
+"programado, pero puedes introducir la que tú quieras. También puedes "
+"seleccionar cualquier tipo de pago (excepto pago programado)."
 
 #: ../usermanual/contributions.rst:80 346496a0daff4761929d4a207b1a00f8
 msgid ""
 "When you edit a contribution that already has attached scheduled payments, "
 "you can see a summary, and you can also see list of entries."
 msgstr ""
+"Cuando editas una contribución que ya tiene pagos programados adjuntos, "
+"puedes ver un resumen y ver una lista de entradas."
 
 #: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
 msgid "Summary of scheduled payments"
-msgstr ""
+msgstr "Resumen de pagos programados"
 
 #: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
 msgid "List of attached scheduled payments"
-msgstr ""
+msgstr "Lista de pagos programados adjuntos"
 
 # f238d3991055468ca49a1181243183b0
 #: ../usermanual/contributions.rst:93 f238d3991055468ca49a1181243183b0
@@ -237,11 +289,13 @@ msgid ""
 "As seen in the example from this chapter introduction, a transaction is a "
 "global payment for a member."
 msgstr ""
+"Como pudiste ver en el ejemplo de este capítulo de introducción, una "
+"transacción es un pago global para un miembro."
 
 # 2d98112c0dcd42dd982a57bf123c8563
 #: ../usermanual/contributions.rst:97 2d98112c0dcd42dd982a57bf123c8563
 msgid "Only a few information are required to add a new transaction:"
-msgstr ""
+msgstr "Para añadir una nueva transacción solo se necesitan unos pocos datos:"
 
 # 94dfcd796f1445078d43a595821819a9
 #: ../usermanual/contributions.rst:99 94dfcd796f1445078d43a595821819a9
@@ -251,24 +305,22 @@ msgstr "una descripción,"
 # 9493c3f4a3394584a96f447b6c8d6050
 #: ../usermanual/contributions.rst:100 9493c3f4a3394584a96f447b6c8d6050
 msgid "the originator,"
-msgstr ""
+msgstr "el autor,"
 
 # 619633b7ed2c4cf19e426436ec0be2cd
 #: ../usermanual/contributions.rst:101 619633b7ed2c4cf19e426436ec0be2cd
 msgid "the date (current date per default),"
-msgstr ""
+msgstr "la fecha (la fecha actual por defecto),"
 
 # a3502c3ca8c2439882c055f1d5cbb7c2
 #: ../usermanual/contributions.rst:102 a3502c3ca8c2439882c055f1d5cbb7c2
 msgid "the amount."
-msgstr ""
+msgstr "la cantidad."
 
 # f238d3991055468ca49a1181243183b0
 #: ../usermanual/contributions.rst:-1 689cf0f5127d40c2bd34dc9cebbd2759
-#, fuzzy
-#| msgid "Transactions"
 msgid "Transactions list"
-msgstr "Transacciones"
+msgstr "Lista de transacciones"
 
 # 88eee3021b8d42669046da8e2bd2da7d
 #: ../usermanual/contributions.rst:109 88eee3021b8d42669046da8e2bd2da7d
@@ -276,11 +328,14 @@ msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
 "transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
+"Cada transacción se envía junto con las contribuciones, en el límite del "
+"importe de la transacción. Una transacción por sí misma no afecta a las "
+"fechas de vencimiento de los miembros."
 
 # f238d3991055468ca49a1181243183b0
 #: ../usermanual/contributions.rst:-1 98f234f4bc434f51b8fc11b48a090aef
 msgid "Add a transaction"
-msgstr "Agregar una transacción"
+msgstr "Añadir una transacción"
 
 # 22d76e97ce854360a9feef7b0fad15dc
 #: ../usermanual/contributions.rst:116 22d76e97ce854360a9feef7b0fad15dc
@@ -291,32 +346,35 @@ msgid ""
 "default, the amount of a new contribution from a transaction will be the "
 "remaning amount of the transaction."
 msgstr ""
+"Tras añadir una nueva transacción, serás redirigido a la creación de una "
+"nueva contribución. Si esta no envía el importe restante de la transacción, "
+"galette te propondrá crear una nueva. Por defecto, el importe de una nueva "
+"contribución de una transacción será el importe restante de la transacción."
 
 #: ../usermanual/contributions.rst:-1 cfda7691d1464e009ae926d41bb0f3ba
 msgid "Add a contribution linked to a partially dispatched transaction"
-msgstr ""
+msgstr "Añadir una contribución enlazada a un transacción parcialmente enviada"
 
 # 594f726da80443dda2a7b32897d88a98
 #: ../usermanual/contributions.rst:123 594f726da80443dda2a7b32897d88a98
 msgid "Of course, it is also possible to edit a transaction:"
-msgstr ""
+msgstr "Por supuesto, también es posible editar una transacción:"
 
 # f238d3991055468ca49a1181243183b0
 #: ../usermanual/contributions.rst:-1 e6eee0c98f9d44c0a2323b707e5a69c1
-#, fuzzy
-#| msgid "Transactions"
 msgid "Transaction edition"
-msgstr "Transacciones"
+msgstr "Edición de transacciones"
 
 # 610abfb3c2fc4af18c8a4b5689561e49
 #: ../usermanual/contributions.rst:130 610abfb3c2fc4af18c8a4b5689561e49
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
 msgstr ""
+"También puedes adjuntar una contribución existente en vez de crear una nueva."
 
 #: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
 msgid "Add an already existing contribution to a transaction"
-msgstr ""
+msgstr "Añadir una contribución existente a una transacción"
 
 # e32535dd4a574da2b536e8daa5eb7722
 #: ../usermanual/contributions.rst:140 e32535dd4a574da2b536e8daa5eb7722
@@ -330,13 +388,18 @@ msgid ""
 "transactions (as well as from several plugins) displays only a few members, "
 "for performances reasons."
 msgstr ""
+"La lista desplegable para elegir un miembro está disponible para las "
+"pantallas de contribuciones y transacciones (así como para varios "
+"complementos) solo para unos pocos miembros, por motivos de rendimiento."
 
 #: ../usermanual/contributions.rst:-1 8023d5e01fbd4bc1aa771639d454db70
 msgid "Dropdown members list"
-msgstr ""
+msgstr "Lista desplegable de miembros"
 
 #: ../usermanual/contributions.rst:150 4795106801304370b61b5c014e926937
 msgid ""
 "You can display more members using arrow buttons or entering any text (this "
 "will search in first name, last name and identifiers)."
 msgstr ""
+"Puedes mostrar más miembros utilizando los botones o introduciendo cualquier "
+"texto (esto buscará por el nombre, apellido e identificadores)."
