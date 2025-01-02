@@ -39,8 +39,6 @@ Galette's documentation
 About Galette
 *************
 
-The Galette project is kindly hosted by `TuxFamily <https://www.tuxfamily.org>`_:
-
 * `Galette website <https://galette.eu>`_,
 * :doc:`a GIT repository to manage Galette source code <source_code>`,
 * mailing lists,
@@ -51,8 +49,6 @@ There are also a few external services:
 * `a bug tracker <https://bugs.galette.eu/projects/galette/>`_, to declare issues or to ask for evolutions,
 * `a wonderfull :p documentation <https://doc.galette.eu>`_, you are currently reading,
 * `a voting system <https://vote.galette.eu>`_, you can vote for features,
-* `a Github organization <https://github.com/galette>`_, used to run unit tests or documentation on readthedocs, among others,
-* `a continuous integration system <https://github.com/galette/galette/actions>`_, that runs a bunch of tests each time a commit is done on the github mirror.
 * `a Telemetry application <https://telemetry.galette.eu>`_ which handles and displays Telemetry data received from volunteer Galette instances.
 
 Galette documentation is released under the terms of the `Attribution-ShareAlike 3.0 Unported  <https://creativecommons.org/licenses/by-sa/3.0/>`_ license, written using `reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_ and built with `Sphinx documentation builder <https://www.sphinx-doc.org>`_.
