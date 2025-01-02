@@ -1,5 +1,19 @@
 :orphan:
 
+.. _v1150:
+
+**************
+1.1.4 -> 1.1.5
+**************
+
+- Fixes for PHP 8.4 compatibility
+- Members cannot access their invoices/receipts (`#1886 <https://bugs.galette.eu/issues/1886>`_)
+- Fatal error adding contribution when no type is present (`#1887 <https://bugs.galette.eu/issues/1887>`_)
+- Fix few typehint issues
+- Mass add/remove members from groups (`#1624 <https://bugs.galette.eu/issues/1624>`_)
+- Use previous begin of membership date for new contributions (`#1893 <https://bugs.galette.eu/issues/1893>`_)
+- Update translations in various languages, add new Tamil lang
+
 .. _v1140:
 
 **************
