@@ -5,13 +5,14 @@
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023, 2024.
 # Tymofij Lytvynenko <till.svit@gmail.com>, 2021.
 # Artem <artem@molotov.work>, 2022.
+# Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2024-07-07 06:27+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2024-11-20 12:00+0000\n"
+"Last-Translator: Максим Горпиніч <mgorpinic2005@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-install-prepare/uk/>\n"
 "Language: uk\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 # b71e35ed535e4583a01a5d8686e744f2
 #: ../installation/preparation.rst:7 b71e35ed535e4583a01a5d8686e744f2
@@ -186,21 +187,14 @@ msgstr "Експозиція каталогу вебсервера"
 
 # 42af32ff454341c6bec2616dd09d8078
 #: ../installation/preparation.rst:76 42af32ff454341c6bec2616dd09d8078
-#, fuzzy
-#| msgid ""
-#| "Galette defaults installation (as well as for many other web "
-#| "applications) consists in copying a complete directory to a location the "
-#| "web server can read. This method works well, but this exposes from the "
-#| "web files and directories that should not be available this way."
 msgid ""
 "Galette installation may consists in copying a complete directory to a "
 "location the web server can read. This method may work, but this exposes "
 "from the web files and directories that should not be available this way."
 msgstr ""
-"Типове встановлення Galette (як і для багатьох інших вебзастосунків) полягає "
-"в копіюванні повного каталогу в місце, яке може прочитати вебсервер. Цей "
-"спосіб працює добре, але при цьому відкриваються для вебсервера файли та "
-"каталоги, які не повинні бути доступні таким чином."
+"Встановлення Galette може складатися з копіювання повного каталогу до місця, "
+"яке веб-сервер може читати. Цей метод може працювати, але він відкриває веб-"
+"файли та каталоги, які не повинні бути доступні таким чином."
 
 # 53bc3cd84f9644209a7262154f9fa6d5
 #: ../installation/preparation.rst:78 53bc3cd84f9644209a7262154f9fa6d5
@@ -214,19 +208,15 @@ msgstr ""
 
 # 8a003602e25947f89c1c5d57df2b4c32
 #: ../installation/preparation.rst:82 8a003602e25947f89c1c5d57df2b4c32
-#, fuzzy
-#| msgid ""
-#| "Exposing only ``webroot`` directory is the recommended way if you can "
-#| "create virtual hosts on your hosting solution."
 msgid ""
 "Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr ""
-"Радимо використовувати тільки каталог ``webroot``', якщо ви можете "
-"створювати віртуальні хости на вашому хостингові."
+"Рекомендованим і єдиним захищеним способом є відкриття лише каталогу "
+"``webroot``."
 
 #: ../installation/preparation.rst:85 98079c83df1a439ab1fc87a6864f6520
 msgid "Using a subdomain"
-msgstr ""
+msgstr "Використання субдомену"
 
 # 62f372e30d8f43ba8e0647cb013befab
 #: ../installation/preparation.rst:87 62f372e30d8f43ba8e0647cb013befab
@@ -244,19 +234,24 @@ msgstr "Nginx буде:"
 
 #: ../installation/preparation.rst:155 85fefb5103ed4db583122d78edfefe24
 msgid "Using an alias"
-msgstr ""
+msgstr "Використання псевдоніма"
 
 #: ../installation/preparation.rst:157 e226714279d54d3e80f3875fccf800a2
 msgid ""
 "An alternative secured configuration, if you do not have a specific "
 "subdomain for Galette is to use an ``alias`` in your existing virtual host:"
 msgstr ""
+"Альтернативна захищена конфігурація, якщо у вас немає конкретного субдомену "
+"для Galette, полягає у використанні ``псевдоніма`` у вашому існуючому "
+"віртуальному хості:"
 
 #: ../installation/preparation.rst:176 3268ebabbd7847d9b07d0ae5e2d94be1
 msgid ""
 "Do not forget with that solution you have to setup correctly your "
 "``RewriteBase`` directive."
 msgstr ""
+"Не забувайте, що з цим рішенням ви повинні правильно налаштувати свою "
+"директиву ``RewriteBase``."
 
 # 82bcf8d4b84f447d81a3e6938bdb6c8d
 #: ../installation/preparation.rst:181 82bcf8d4b84f447d81a3e6938bdb6c8d
