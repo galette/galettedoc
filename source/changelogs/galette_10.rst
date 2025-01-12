@@ -1,5 +1,24 @@
 :orphan:
 
+.. _v1152:
+
+******************
+1.1.5.1 -> 1.1.5.2
+******************
+
+- Wrong year on new contributions when using begin of membership date
+- Several issues on mass groups adding
+- Update German translation
+
+.. _v1151:
+
+****************
+1.1.5 -> 1.1.5.1
+****************
+
+- Loop issue on new contributions when using begin of membership date
+- Update TCPDF to latest version
+
 .. _v1150:
 
 **************
