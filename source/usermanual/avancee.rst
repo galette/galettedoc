@@ -154,6 +154,7 @@ There are a few tools provided for Galette admin that permits to:
 * **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
 * **reinitialize PDF models** will reset ll PDF models to default values,
 * **generate empty logins and passwords** those information are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
+* **Fix dynamic fields dates format** will convert all dynamic fields dates to the new format (see :ref:`dynamic fields <dynamic_fields>`).
 
 .. _galettemodes:
 
