@@ -66,7 +66,7 @@ There are several types of dynamic fields:
 
    .. versionchanged:: 1.2.0
 
-   Dyanmic date fields used to be stored using logged-in user locale format; which causes issues trying to make searchs. Now, every date is stored using the `Y-m-d` format.
+   Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searchs. Now, every date is stored using the `Y-m-d` format.
 
    If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️).
 
