@@ -1,21 +1,21 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-12 10:39+0100\n"
-"PO-Revision-Date: 2022-07-11 06:34+0000\n"
+"PO-Revision-Date: 2025-02-12 10:00+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
-"configuration/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/galette/"
+"doc-user-configuration/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: ../usermanual/configuration.rst:5 1335eb0386724f4c98a065e2f69816fd
 msgid "Fields Configuration"
@@ -192,6 +192,10 @@ msgid ""
 "which causes issues trying to make searchs. Now, every date is stored using "
 "the `Y-m-d` format."
 msgstr ""
+"Les champs dynamiques de type date étaient stockés en utilisant le format de "
+"date localisé de l'utilisateur connecté ; ce qui causait des problèmes pour "
+"les recherches. Désormais, toute sles dates sont stockées en utilisant le "
+"format `Y-m-d`."
 
 #: ../usermanual/configuration.rst:71 b72baeb27dfb4e3e9e090f24fd64f93b
 msgid ""
@@ -199,6 +203,10 @@ msgid ""
 "data using the related admin tool <admintools>` (⚠️ make sure to backup your "
 "database before! ⚠️)."
 msgstr ""
+"Si vous utilisiez des champs dynamiques de type date vous devrez :ref:`"
+"mettre à jour vos données en utilisant l'outil d'administration relatif "
+"<admintools>` (⚠️ assurez-vous de sauvegarder votre base de données "
+"auparavant ! ⚠️)."
 
 #: ../usermanual/configuration.rst:73 28e22ecda0fa4956a5f2d5a0be009d24
 msgid "While creating a new field (or editing an existing one); you also can:"
