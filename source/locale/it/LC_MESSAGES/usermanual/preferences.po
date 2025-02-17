@@ -5,22 +5,22 @@
 # Giacomo Alessandroni <g.alessandroni@gmail.com>, 2021.
 # Paolo Mauri <paolo@paolomauri.it>, 2022.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2023, 2024.
-# Marco Ciampa <ciampix@posteo.net>, 2024.
+# Marco Ciampa <ciampix@posteo.net>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-15 10:00+0100\n"
-"PO-Revision-Date: 2024-07-07 06:11+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
-"preferences/it/>\n"
+"PO-Revision-Date: 2025-02-17 16:44+0000\n"
+"Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
+"doc-user-preferences/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 # bb82d12690f041fe9ce17a4dafa77602
 #: ../usermanual/preferences.rst:5 bb82d12690f041fe9ce17a4dafa77602
@@ -139,6 +139,9 @@ msgid ""
 "Manage social networks of your association. This may be used in PDF or "
 "emails as variables (see inline doc on related parts)."
 msgstr ""
+"Gestione dei social network della propria associazione. Si può usare nei PDF "
+"o nelle e-mail come variabili (vedere la documentazione in linea delle parti "
+"relative)."
 
 #: ../usermanual/preferences.rst:-1 bef37032d13d4b3a9d15629579f63de2
 #, fuzzy
@@ -264,32 +267,37 @@ msgstr "**Inizio dell'iscrizione**: data di inizio del periodo finanziario,"
 #: ../usermanual/preferences.rst:76 6e1b10865ff44371a21c7b0615fab330
 msgid "**Public pages enabled**: enable or disable public pages,"
 msgstr ""
+"**Pagine pubbliche abilitate**: abilita o disabilita le pagine pubbliche,"
 
 # 08dbddc202ff4655a970d44eeea1f763
 #: ../usermanual/preferences.rst:77 08dbddc202ff4655a970d44eeea1f763
 msgid "**Show public pages for**: defines who can see public pages:"
 msgstr ""
+"**Mostra pagine pubbliche per**: definisce chi può vedere le pagine "
+"pubbliche:"
 
 # 4e08c2866f8b487f894da396e0b484e5
 #: ../usermanual/preferences.rst:79 4e08c2866f8b487f894da396e0b484e5
 msgid "**Everyone**, including simple visitors,"
-msgstr ""
+msgstr "**Tutti**, compresi i semplici visitatori,"
 
 # d0d1585b42b747329eb316965ab925fc
 #: ../usermanual/preferences.rst:80 d0d1585b42b747329eb316965ab925fc
 msgid "**Up to date members**,"
-msgstr ""
+msgstr "**Membri aggiornati**,"
 
 # e6b7703ebb4446729228343c3c59d268
 #: ../usermanual/preferences.rst:81 e6b7703ebb4446729228343c3c59d268
 msgid "**Administrators and staff members**,"
-msgstr ""
+msgstr "**Amministratori e membri dello staff**,"
 
 # 8bb200572da846a29bc1b1445c3ee1d9
 #: ../usermanual/preferences.rst:83 8bb200572da846a29bc1b1445c3ee1d9
 msgid ""
 "**Self subscription enabled**: enable or disable self subscription feature,"
 msgstr ""
+"**Auto-iscrizione abilitata**: abilita o disabilita la funzione di auto-"
+"iscrizione,"
 
 # 28f3066007d64e75b9aced8a3ec05fbc
 #: ../usermanual/preferences.rst:84 28f3066007d64e75b9aced8a3ec05fbc
@@ -297,6 +305,8 @@ msgid ""
 "**Post new contribution script URI**: URI of a script that will be called "
 "after a new contribution has been added. Several prefixes are handled:"
 msgstr ""
+"**Invia nuovo URI script contributo**: URI di uno script che verrà chiamato "
+"dopo che è stato aggiunto un nuovo contributo. Sono gestiti diversi prefissi:"
 
 # 952982be145241aba54f1870d447fa66
 #: ../usermanual/preferences.rst:86 952982be145241aba54f1870d447fa66
@@ -306,6 +316,11 @@ msgid ""
 "For example, the URI for the ``galette/post_contribution_test.php`` example "
 "script would be `galette://post_contribution_test.php`."
 msgstr ""
+"**galette://**: chiama uno script fornito da Galette che verrà chiamato con "
+"il metodo HTTP POST. Il percorso deve essere relativo alla propria "
+"installazione di Galette. Ad esempio, l'URI per lo script di esempio ``"
+"galette/post_contribution_test.php`` diventerebbe "
+"`galette://post_contribution_test.php`."
 
 # 3c44f2592b5945038f2449d1382236ed
 #: ../usermanual/preferences.rst:87 3c44f2592b5945038f2449d1382236ed
@@ -313,6 +328,8 @@ msgid ""
 "**get://** or **post://**: use HTTP GET or POST method to call a web "
 "address, prefix will be replaced with ``http://``,"
 msgstr ""
+"**get://** o **post://**: usa il metodo HTTP GET o POST per chiamare un "
+"indirizzo web, il prefisso verrà sostituito con ``http://``,"
 
 # d9fb03fea48a416aad8df4c25f766e95
 #: ../usermanual/preferences.rst:88 d9fb03fea48a416aad8df4c25f766e95
