@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-12 10:39+0100\n"
-"PO-Revision-Date: 2025-02-18 12:51+0000\n"
+"PO-Revision-Date: 2025-02-18 13:46+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-configuration/it/>\n"
@@ -201,17 +201,17 @@ msgstr "`scelta`: un elenco a discesa,"
 # 2b7e5872d9464c5e9b93e1553aaa5766
 #: ../usermanual/configuration.rst:61 2b7e5872d9464c5e9b93e1553aaa5766
 msgid "`date`: a date field with a selector,"
-msgstr ""
+msgstr "`data`: un campo data con un selettore,"
 
 # 8ed0bf94902942a2960fbbf2055d0e48
 #: ../usermanual/configuration.rst:62 8ed0bf94902942a2960fbbf2055d0e48
 msgid "`boolean`: a checkbox,"
-msgstr ""
+msgstr "`booleano`: una casella di controllo,"
 
 # 05fdfc838bf74bba8e962477f5d107f5
 #: ../usermanual/configuration.rst:63 05fdfc838bf74bba8e962477f5d107f5
 msgid "`file`: add files."
-msgstr ""
+msgstr "`file`: aggiunge file."
 
 #: ../usermanual/configuration.rst:69 927a8a38deb4481da376b847f4ab791e
 msgid ""
@@ -219,6 +219,9 @@ msgid ""
 "which causes issues trying to make searchs. Now, every date is stored using "
 "the `Y-m-d` format."
 msgstr ""
+"I campi data dinamici venivano memorizzati utilizzando il formato della data "
+"dell'utente registrato; il che causava problemi nel tentativo di effettuare "
+"ricerche. Ora, ogni data viene memorizzata utilizzando il formato `Y-m-d`."
 
 #: ../usermanual/configuration.rst:71 b72baeb27dfb4e3e9e090f24fd64f93b
 msgid ""
@@ -226,31 +229,34 @@ msgid ""
 "data using the related admin tool <admintools>` (⚠️ make sure to backup your "
 "database before! ⚠️)."
 msgstr ""
+"Se si stava utilizzando campi data dinamici, si dovrà :ref:`aggiornare i "
+"propri dati usando lo strumento di amministrazione associato <admintools>` (⚠️"
+" assicurarsi di eseguire prima il salvataggio del database! ⚠️)."
 
 # 28e22ecda0fa4956a5f2d5a0be009d24
 #: ../usermanual/configuration.rst:73 28e22ecda0fa4956a5f2d5a0be009d24
 msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
+"Durante la creazione di un nuovo campo (o la modifica di uno esistente); si "
+"può anche:"
 
 # 24e96bec0a9948f4bf6d5463cfbdeba9
 #: ../usermanual/configuration.rst:75 24e96bec0a9948f4bf6d5463cfbdeba9
 msgid "mark it as required,"
-msgstr ""
+msgstr "contrassegnarlo come richiesto,"
 
 #: ../usermanual/configuration.rst:76 b4352a28672a42e4b657f411e7541582
 msgid "define access rights, the same as for core fields,"
-msgstr ""
+msgstr "definire i diritti di accesso, come per i campi principali,"
 
 #: ../usermanual/configuration.rst:77 daa661d861bb46fc800d971c8c6a0aba
 msgid "add extra information to help users."
-msgstr ""
+msgstr "aggiungere informazioni extra per aiutare gli utenti."
 
 # 770dc3a97fff41479c0733ad1b11a34b
 #: ../usermanual/configuration.rst:-1 9317a6067c80470080803dc81b34e90b
-#, fuzzy
-#| msgid "Dynamic fields"
 msgid "A dynamic field"
-msgstr "Campi dinamici"
+msgstr "Un campo dinamico"
 
 # c2a8e9c503c34594b0b994269ed6a2ca
 #: ../usermanual/configuration.rst:84 c2a8e9c503c34594b0b994269ed6a2ca
@@ -258,56 +264,58 @@ msgid ""
 "Some field types like separators, dates and booleans, does not need any "
 "extra information; for others:"
 msgstr ""
+"Alcuni tipi di campo, come separatori, date e valori booleani, non "
+"necessitano di informazioni aggiuntive; per altri:"
 
 # ee1155f5a34c49519f491dd5d08c83c9
 #: ../usermanual/configuration.rst:86 ee1155f5a34c49519f491dd5d08c83c9
 msgid "`free text`:"
-msgstr ""
+msgstr "`testo libero`:"
 
 # 2f7e975d89d9495497a3a9cbd0dae3f9
 #: ../usermanual/configuration.rst:88 2f7e975d89d9495497a3a9cbd0dae3f9
 msgid "`width`: define number of columns,"
-msgstr ""
+msgstr "`larghezza`: definisce il numero di colonne,"
 
 # f5cf36548c8a4aafb5c301dc4dbc0f70
 #: ../usermanual/configuration.rst:89 f5cf36548c8a4aafb5c301dc4dbc0f70
 msgid "`height`: define number of rows."
-msgstr ""
+msgstr "`altezza`: definisce il numero di righe."
 
 # 1c54d15dfd6a4f8791e21deb728b3397
 #: ../usermanual/configuration.rst:91 1c54d15dfd6a4f8791e21deb728b3397
 msgid "`single line`:"
-msgstr ""
+msgstr "`riga singola`:"
 
 # 06cbb5a053354c0f900ba15f367330c1
 #: ../usermanual/configuration.rst:93 06cbb5a053354c0f900ba15f367330c1
 msgid "`width`: field width,"
-msgstr ""
+msgstr "`larghezza`: campo larghezza,"
 
 # 8d2abbf694b945f9beb1fe8b5aa25067
 #: ../usermanual/configuration.rst:94 8d2abbf694b945f9beb1fe8b5aa25067
 msgid "`size`: number of characters,"
-msgstr ""
+msgstr "`dimensione`: numero di caratteri,"
 
 # 69cf7521b12e4e8c8de485c112f96b44
 #: ../usermanual/configuration.rst:95 69cf7521b12e4e8c8de485c112f96b44
 msgid "`repeat`: number of possible ocurences."
-msgstr ""
+msgstr "`ripeti`: numero di occorrenze possibili."
 
 # d3b90562c1244a27987b4e6e13b6ddef
 #: ../usermanual/configuration.rst:97 d3b90562c1244a27987b4e6e13b6ddef
 msgid "`choice`:"
-msgstr ""
+msgstr "`scelta`:"
 
 # 7f8e29e61eda4f2ab9e0f527498fbd31
 #: ../usermanual/configuration.rst:99 7f8e29e61eda4f2ab9e0f527498fbd31
 msgid "`values`: possible values for the dropdown."
-msgstr ""
+msgstr "`valori`: valori possibili per il menu a discesa."
 
 # b20f3ccac5b5414eb86d5a041068dc8e
 #: ../usermanual/configuration.rst:101 b20f3ccac5b5414eb86d5a041068dc8e
 msgid "`file`:"
-msgstr ""
+msgstr "`file`:"
 
 # 2e8493c271c145689bded08db1544894
 #: ../usermanual/configuration.rst:103 2e8493c271c145689bded08db1544894
@@ -315,11 +323,13 @@ msgid ""
 "`size`: maximum file size, in Kio (this size is limited to the one for the "
 "PHP configuration)."
 msgstr ""
+"`dimensione`: dimensione massima del file, in Kio (questa dimensione è "
+"limitata dalla configurazione PHP)."
 
 # f51eeb223a8f4595a99822ce74de6a87
 #: ../usermanual/configuration.rst:106 f51eeb223a8f4595a99822ce74de6a87
 msgid "Labels translation"
-msgstr ""
+msgstr "Traduzione etichette"
 
 # 620b32d302854c5a96be42e6b06b7c98
 #: ../usermanual/configuration.rst:108 620b32d302854c5a96be42e6b06b7c98
@@ -328,16 +338,21 @@ msgid ""
 "there is only one value possible. Galette proposes an interface to translate "
 "those labels in each available language."
 msgstr ""
+"Galette gestisce diverse lingue, ma quando si aggiunge un nuovo campo "
+"dinamico, c'è un solo valore possibile. Galette propone un'interfaccia per "
+"tradurre quelle etichette in ogni lingua disponibile."
 
 # 4d650efaef58446fab30ecec68d6edd9
 #: ../usermanual/configuration.rst:110 4d650efaef58446fab30ecec68d6edd9
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
+"Si noti che ogni nuova etichetta verrà aggiunta con la lingua Galette "
+"corrente."
 
 # ec0d959f0d9a45338b595867f8aae014
 #: ../usermanual/configuration.rst:113 ec0d959f0d9a45338b595867f8aae014
 msgid "Emails contents"
-msgstr ""
+msgstr "Contenuto email"
 
 # a00ccb772d3d4676ba56bcba5e0cf028
 #: ../usermanual/configuration.rst:115 a00ccb772d3d4676ba56bcba5e0cf028
@@ -346,11 +361,15 @@ msgid ""
 "cans be sent to users and/or administrators, when you add a new member or a "
 "new contribution, or from the lost password feature for example."
 msgstr ""
+"A seconda della configurazione (vedere preferenze), le e-mail amministrative "
+"possono essere inviate agli utenti e/o agli amministratori, ad esempio "
+"quando si aggiunge un nuovo membro o un nuovo contributo, oppure dalla "
+"funzionalità di password smarrita."
 
 # 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
 #: ../usermanual/configuration.rst:117 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
 msgid "Defaults are provided, but you can change them."
-msgstr ""
+msgstr "Sono forniti valori predefiniti, ma è possibile modificarli."
 
 # 1eaf6d3b865c494287de03399e0997d0
 #: ../usermanual/configuration.rst:119 1eaf6d3b865c494287de03399e0997d0
@@ -359,20 +378,26 @@ msgid ""
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
 "carefull to not forget any of those, that could cause sending issues."
 msgstr ""
+"È importante notare che quei testi contengono variabili - del tipo "
+"``{VARIABILE}`` - che saranno sostituite automaticamente all'invio. Fare "
+"attenzione a non dimenticarne nessuna, perché potrebbe causare problemi di "
+"invio."
 
 #: ../usermanual/configuration.rst:-1 16689d2ce01a492397a87af53e4af959
 msgid "Edit mail send to a new member in french"
-msgstr ""
+msgstr "Modifica la posta inviata a un nuovo membro in francese"
 
 # e141fe73bcf64b9fb2143f92c6a4e4b9
 #: ../usermanual/configuration.rst:126 e141fe73bcf64b9fb2143f92c6a4e4b9
 msgid "An email will be send to member when:"
-msgstr ""
+msgstr "Verrà inviata un'e-mail al membro quando:"
 
 # 6cbe0fd53f9a4290a57412e635a6792d
 #: ../usermanual/configuration.rst:128 6cbe0fd53f9a4290a57412e635a6792d
 msgid "he self subscribes. This mail contains authentication information,"
 msgstr ""
+"si iscrive autonomamente. Questa mail contiene informazioni di "
+"autenticazione,"
 
 # 7801258e9e8248de9fbd6a88fb385ad6
 #: ../usermanual/configuration.rst:129 7801258e9e8248de9fbd6a88fb385ad6
@@ -380,11 +405,13 @@ msgid ""
 "his card is added or edited by someone else (if the corresponding box is "
 "checked),"
 msgstr ""
+"la sua carta viene aggiunta o modificata da qualcun altro (se la casella "
+"corrispondente è selezionata),"
 
 # f402746f081b4cc192495855ad5e5793
 #: ../usermanual/configuration.rst:130 f402746f081b4cc192495855ad5e5793
 msgid "he uses lost password feature,"
-msgstr ""
+msgstr "usa la funzione password smarrita,"
 
 # ae45becfa53547a284ff4e1e1e677f45
 #: ../usermanual/configuration.rst:131 ae45becfa53547a284ff4e1e1e677f45
@@ -392,21 +419,23 @@ msgid ""
 "a new contribution is attache to his account (if the corresponding box is "
 "checked)."
 msgstr ""
+"un nuovo contributo viene allegato al suo account (se la casella "
+"corrispondente è selezionata)."
 
 # 257887c09acd4057a73575c1e5ccd646
 #: ../usermanual/configuration.rst:133 257887c09acd4057a73575c1e5ccd646
 msgid "An email will be send to administrators when:"
-msgstr ""
+msgstr "Verrà inviata un'e-mail agli amministratori quando:"
 
 # d9470aa131bd46ad91fae1bde7def2a2
 #: ../usermanual/configuration.rst:135 d9470aa131bd46ad91fae1bde7def2a2
 msgid "a new member is added or self subscribes,"
-msgstr ""
+msgstr "un nuovo membro viene aggiunto o si auto-iscrive,"
 
 # f06dbb209abf42e9a4b8250a25550317
 #: ../usermanual/configuration.rst:136 f06dbb209abf42e9a4b8250a25550317
 msgid "a new contribution is attached to his account."
-msgstr ""
+msgstr "un nuovo contributo è allegato al suo account."
 
 # bdf33e0f5b0f4e2bb55dda5cb26056bb
 #: ../usermanual/configuration.rst:138 bdf33e0f5b0f4e2bb55dda5cb26056bb
@@ -417,6 +446,12 @@ msgid ""
 "conditionned on a checkbox from the user interface, excepting for self "
 "subscription messages that will always be send."
 msgstr ""
+"Naturalmente, le email saranno inviate solo se la configurazione di Galette "
+"lo consente (e se l'impostazione è corretta). L'invio di messaggi agli "
+"amministratori è configurato globalmente dalle preferenze, mentre l'invio di "
+"email ai membri è condizionato da una casella di controllo dall'interfaccia "
+"utente, fatta eccezione per i messaggi di autoiscrizione che saranno sempre "
+"inviati."
 
 # 196630f591274913a30590a46917363c
 #: ../usermanual/configuration.rst:140 196630f591274913a30590a46917363c
@@ -426,3 +461,8 @@ msgid ""
 "others will be only on some conditions. Refer to the inline help on Galette "
 "interface to know more."
 msgstr ""
+"Diverse variabili, sostituite automaticamente all'invio, sono disponibili "
+"sia per l'oggetto che per il contenuto. Alcune di esse possono essere "
+"utilizzate in tutti i messaggi, ma altre lo saranno solo in determinate "
+"condizioni. Per saperne di più, fare riferimento alla guida in linea "
+"sull'interfaccia di Galette."
