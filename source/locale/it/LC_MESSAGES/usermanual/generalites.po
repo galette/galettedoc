@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2025-02-19 07:32+0000\n"
+"PO-Revision-Date: 2025-02-20 14:20+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-generalities/it/>\n"
@@ -276,11 +276,13 @@ msgid ""
 "working even if Javascript is disabled (as possible, but really you should "
 "enable Javascript to really take advantage of Galette),"
 msgstr ""
+"funzionante anche se Javascript è disabilitato (possibile, ma è meglio "
+"abilitare Javascript per poter sfruttare al meglio Galette),"
 
 # 7c1400bf5e5b434d9e2b6481a8ab595d
 #: ../usermanual/generalites.rst:67 7c1400bf5e5b434d9e2b6481a8ab595d
 msgid "accessible (without any WCAG, WAI or equivalent tests run)."
-msgstr ""
+msgstr "accessibile (senza eseguire alcun test WCAG, WAI o equivalenti)."
 
 # 2960232bd4724e93ad632e80178241b9
 #: ../usermanual/generalites.rst:69 2960232bd4724e93ad632e80178241b9
@@ -288,6 +290,8 @@ msgid ""
 "If you find places where one of those points is incorrect, do not hesitate "
 "to tell us on the tracker or on the mailing list!"
 msgstr ""
+"Se trovate punti in cui uno di questi punti non è corretto, non esitate a "
+"segnalarcelo sul bug tracker o sulla mailing list!"
 
 # 80c9dfca0b9343968b2719d086e9ebe8
 #: ../usermanual/generalites.rst:73 80c9dfca0b9343968b2719d086e9ebe8
@@ -296,6 +300,10 @@ msgid ""
 "that. Therefore, it may be difficult or worst to use; in this case we do our "
 "best, but all devices cannot be tested!"
 msgstr ""
+"Galette fornisce un'interfaccia utente "
+"\"compatibile con i dispositivi mobili\", ma non è stata progettato per "
+"questo. Pertanto, potrebbe essere difficile o più scomodo da usare; facciamo "
+"del nostro meglio, ma non possiamo garantire per tutti i tipi di dispositivi!"
 
 # 964d16f0b2194307a1c902b54179bf9f
 #: ../usermanual/generalites.rst:75 964d16f0b2194307a1c902b54179bf9f
@@ -304,6 +312,10 @@ msgid ""
 "Improvements can be done, this will just not be a priority. Note that we "
 "have in mind to rework the whole UI, with a better support."
 msgstr ""
+"La visualizzazione mobile è attualmente un plus e non una base "
+"dell'interfaccia utente. Si possono fare dei miglioramenti, ma questa non "
+"sarà una priorità. Si noti che abbiamo in mente di rielaborare l'intera "
+"interfaccia utente, per fornire un supporto migliore."
 
 # 1aabbce7b0cb4927859d20f860b43f21
 #: ../usermanual/generalites.rst:78 1aabbce7b0cb4927859d20f860b43f21
@@ -313,7 +325,7 @@ msgstr "Telemetria"
 # f8982c56edcc471d98c033a528d4380d
 #: ../usermanual/generalites.rst:82 f8982c56edcc471d98c033a528d4380d
 msgid "Galette propose to send some telemetry information:"
-msgstr ""
+msgstr "Galette propone di inviare alcune informazioni di telemetria:"
 
 # 4519b628e22942a88201b31cd43b64fc
 #: ../usermanual/generalites.rst:84 4519b628e22942a88201b31cd43b64fc
@@ -321,6 +333,8 @@ msgid ""
 "**entirely anonymous**: no information about your association or your "
 "members is sent,"
 msgstr ""
+"**in modo completamente anonimo**: non vengono inviate informazioni "
+"sull'associazione o sui suoi membri,"
 
 # 2c6bf23858da4b0e90c97d92919c91e3
 #: ../usermanual/generalites.rst:85 2c6bf23858da4b0e90c97d92919c91e3
@@ -328,11 +342,14 @@ msgid ""
 "**deliberately blurred**: we retrieve an estimation of members count, never "
 "a real count,"
 msgstr ""
+"**in modo volutamente offuscato**: recuperiamo una stima del numero dei "
+"membri, mai un conteggio reale,"
 
 # afb1e1c17cfe4a8994b616525e1c366b
 #: ../usermanual/generalites.rst:86 afb1e1c17cfe4a8994b616525e1c366b
 msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
 msgstr ""
+"inviando in modalità **protetta** (`HTTPS`) su https://telemetry.galette.eu."
 
 # 04caf4fc0f8f4a4ab7ce62daf38cae70
 #: ../usermanual/generalites.rst:88 04caf4fc0f8f4a4ab7ce62daf38cae70
@@ -342,6 +359,10 @@ msgid ""
 "knwownledge of different usages of Galette, their number of member or "
 "contributions, plugins used, ..."
 msgstr ""
+"L'invio di dati di telemetria è un processo manuale, non verrà inviato nulla "
+"finché non lo si richiederà **esplicitamente**. Con queste informazioni, "
+"possiamo avere una migliore conoscenza dei diversi utilizzi di Galette, del "
+"loro numero di membri o contributi, dei plugin utilizzati, ..."
 
 # 1f5a8ae07d244e35aabe0dfd5cabbf7e
 #: ../usermanual/generalites.rst:90 1f5a8ae07d244e35aabe0dfd5cabbf7e
@@ -349,10 +370,13 @@ msgid ""
 "Those information are useful for the project development and promotion. When "
 "you send those information, you can review data that would be sent."
 msgstr ""
+"Tali informazioni sono utili per lo sviluppo e la promozione del progetto. "
+"Quando si inviano tali informazioni, si può rivedere i dati che verrebbero "
+"inviati (prima di inviarli)."
 
 #: ../usermanual/generalites.rst:-1 ee5a415f2b7e46e0aed869a4fcdb46b1
 msgid "Preview Telemetry data"
-msgstr ""
+msgstr "Anteprima dati di telemetria"
 
 # 30105a34799740a78fc7762d9bbc7cdd
 #: ../usermanual/generalites.rst:97 30105a34799740a78fc7762d9bbc7cdd
@@ -360,10 +384,13 @@ msgid ""
 "After data has been sent once, Galette will propose to send an update from "
 "time to time. You can also send them from Galette preferences."
 msgstr ""
+"Dopo aver inviato i dati la prima volta, Galette proporrà di inviare un "
+"aggiornamento di tanto in tanto. Questo può essere inviato anche dalle "
+"preferenze di Galette."
 
 #: ../usermanual/generalites.rst:-1 66fb93f25b53476f9902dfff177aeeab
 msgid "Telemetry update reminder"
-msgstr ""
+msgstr "Promemoria aggiornamento telemetria"
 
 # 1c58525d6fd24363ae4bf07399858e13
 #: ../usermanual/generalites.rst:103 1c58525d6fd24363ae4bf07399858e13
@@ -372,6 +399,9 @@ msgid ""
 "not anonymously, but it is not possible to link telemetry and registration. "
 "New references are moderated."
 msgstr ""
+"È anche possibile registrare la propria associazione sul sito web, "
+"ovviamente non in forma anonima, ma non è possibile collegare telemetria e "
+"registrazione. I nuovi riferimenti sono moderati."
 
 # f049660c866e4657a9d7b4e6112d7cda
 #: ../usermanual/generalites.rst:105 f049660c866e4657a9d7b4e6112d7cda
@@ -381,10 +411,14 @@ msgid ""
 "but all data will be updated because your instance has a unique registration "
 "identifier designed for that."
 msgstr ""
+"Puoi aggiornare le informazioni di registrazione dalle preferenze di "
+"Galette. Il modulo sarà vuoto (perché non è possibile recuperare i dati "
+"inviati) ma tutti i dati saranno aggiornati perché la propria istanza ha un "
+"identificatore di registrazione univoco progettato per questo."
 
 #: ../usermanual/generalites.rst:-1 e2a91bd507aa4493bface5b20065bf23
 msgid "Telemetry from preferences"
-msgstr ""
+msgstr "Telemetria dalle preferenze"
 
 # a7af866a2baf4935b0c066c962e8c8e3
 #: ../usermanual/generalites.rst:111 a7af866a2baf4935b0c066c962e8c8e3
@@ -393,7 +427,11 @@ msgid ""
 "information and/or register your instance. Once those steps has been "
 "completed, the panel will dissapear. You also can choose to just disable it."
 msgstr ""
+"Un nuovo pannello è stato aggiunto al cruscotto di Galette per inviare "
+"informazioni di telemetria e/o registrare la propria istanza. Una volta "
+"completati questi passaggi, il pannello scomparirà. Si può anche scegliere "
+"di disattivarlo del tutto."
 
 #: ../usermanual/generalites.rst:-1 5ffec6b32f8348af8bdd04f122a3dc16
 msgid "Telemetry on dashboard"
-msgstr ""
+msgstr "Telemetria sul cruscotto"
