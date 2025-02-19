@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2025-02-19 07:32+0000\n"
+"PO-Revision-Date: 2025-02-20 14:20+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-pdf_models/it/>\n"
@@ -32,6 +32,9 @@ msgid ""
 "model and a membership from model are currently available. All of them "
 "inherits from a `Global` model."
 msgstr ""
+"I modelli PDF sono forniti per diversi scopi: un modello di fattura, un "
+"modello di ricevuta e un modello di iscrizione sono attualmente disponibili. "
+"Tutti ereditano da un modello `Globale`."
 
 # d16a73f2eec64382be813390f87e062c
 #: ../usermanual/pdf_models.rst:-1 46c716eef77141f68a210ebf5a65248d
@@ -43,27 +46,27 @@ msgstr "Modelli PDF"
 # 3f47123045c44997b7b599dd611fc47a
 #: ../usermanual/pdf_models.rst:15 3f47123045c44997b7b599dd611fc47a
 msgid "Models inheritance"
-msgstr ""
+msgstr "Ereditarietà dei modelli"
 
 # f2868b0991074dafb33a8eaca031ae3d
 #: ../usermanual/pdf_models.rst:17 f2868b0991074dafb33a8eaca031ae3d
 msgid "The global model defines three distincts parts:"
-msgstr ""
+msgstr "Il modello globale definisce tre parti distinte:"
 
 # 9677543b8f084a4cb0be4b7db5824d7d
 #: ../usermanual/pdf_models.rst:19 9677543b8f084a4cb0be4b7db5824d7d
 msgid "header,"
-msgstr ""
+msgstr "intestazione,"
 
 # f25efe84e91547f5ad3a0f613bac10aa
 #: ../usermanual/pdf_models.rst:20 f25efe84e91547f5ad3a0f613bac10aa
 msgid "footer,"
-msgstr ""
+msgstr "piè di pagina,"
 
 # fb0633cd2723449982e52dada96f3801
 #: ../usermanual/pdf_models.rst:21 fb0633cd2723449982e52dada96f3801
 msgid "CSS styles."
-msgstr ""
+msgstr "stili CSS."
 
 # 2f91f1a54da04be99a9ebdeeb2c961e9
 #: ../usermanual/pdf_models.rst:23 2f91f1a54da04be99a9ebdeeb2c961e9
@@ -72,6 +75,9 @@ msgid ""
 "header and footer except if the new model redefines them, in which case only "
 "specific values will be applied."
 msgstr ""
+"Ogni modello che eredita da `Globale` otterrà automaticamente la stessa "
+"intestazione e lo stesso piè di pagina, a meno che il nuovo modello non li "
+"ridefinisca, nel qual caso verranno applicati solo valori specifici."
 
 # fb19833be15644cfbe98f65537d0b31b
 #: ../usermanual/pdf_models.rst:25 fb19833be15644cfbe98f65537d0b31b
@@ -80,6 +86,9 @@ msgid ""
 "always be applied, and specific model properties will be appended (just like "
 "real CSS stylesheets)."
 msgstr ""
+"Per le proprietà CSS la situazione è leggermente diversa: verranno sempre "
+"applicate le proprietà del modello `Globale` e verranno aggiunte le "
+"proprietà specifiche del modello (proprio come nei veri fogli di stile CSS)."
 
 # 18028586cc404605b575cace3f08bc8f
 #: ../usermanual/pdf_models.rst:28 18028586cc404605b575cace3f08bc8f
@@ -92,6 +101,8 @@ msgid ""
 "In addition of header, footer and CSS styles, a model defines a title, a sub "
 "title and a body."
 msgstr ""
+"Oltre agli stili di intestazione, piè di pagina e CSS, un modello definisce "
+"un titolo, un sottotitolo e un corpo."
 
 #: ../usermanual/pdf_models.rst:32 7799205d9ec94bde904af0eea99e655d
 msgid ""
@@ -100,6 +111,10 @@ msgid ""
 "internationalized texts like `_T(\"My text\")` that relies on Galette "
 "standard translation capacities."
 msgstr ""
+"Ognuno di questi campi può assumere alcuni valori sostitutivi, fare "
+"riferimento alla guida in linea dall'interfaccia utente per ottenere i "
+"dettagli. Possono anche contenere testi internazionalizzati come `_T("
+"\"My text\")` che si basa sulle capacità di traduzione standard di Galette."
 
 # 5c5cbe88aa964926a2ab04f76292fd39
 #: ../usermanual/pdf_models.rst:34 5c5cbe88aa964926a2ab04f76292fd39
@@ -108,6 +123,9 @@ msgid ""
 "file, and not displaying a page in a recent browser; there are many "
 "limitations."
 msgstr ""
+"I modelli si basano sugli stili HTML e CSS, ma bisogna tenere presente che "
+"stiamo creando un file PDF e non stiamo visualizzando una pagina in un "
+"browser recente; le limitazioni sono numerose."
 
 # 13da33a36db64a4c96c92bf4ba19b86e
 #: ../usermanual/pdf_models.rst:37 13da33a36db64a4c96c92bf4ba19b86e
@@ -117,7 +135,7 @@ msgstr "Fatture e ricevute"
 # 87197e2d52b743d9b0362facef8747e1
 #: ../usermanual/pdf_models.rst:39 87197e2d52b743d9b0362facef8747e1
 msgid "Invoice and receipt models are the same, excepting their titles."
-msgstr ""
+msgstr "I modelli fattura e ricevuta sono uguali, eccetto i titoli."
 
 # d16a73f2eec64382be813390f87e062c
 #: ../usermanual/pdf_models.rst:-1 9fa47760bbc0423880c05a1f2ce6902c
@@ -132,11 +150,14 @@ msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
 msgstr ""
+"Come si può notare nella schermata qui sopra, il modello fattura non "
+"definisce alcun stile di intestazione, piè di pagina o CSS; vengono usati "
+"quelli del modello `Globale`."
 
 # 1195c0c6d5384d3eb41a5efa90800e4a
 #: ../usermanual/pdf_models.rst:49 1195c0c6d5384d3eb41a5efa90800e4a
 msgid "Membership form"
-msgstr ""
+msgstr "Modulo iscrizione"
 
 # cf1c6206876d4ada90aa90e05dff5b85
 #: ../usermanual/pdf_models.rst:51 cf1c6206876d4ada90aa90e05dff5b85
@@ -145,6 +166,9 @@ msgid ""
 "(to print some of them for any event for example) or filled with one member "
 "information."
 msgstr ""
+"È un modello che può essere usato per stampare un modulo di iscrizione. Può "
+"essere vuoto (per stamparne alcuni per un evento, ad esempio) o compilato "
+"con le informazioni di un membro."
 
 # 3cfab6378f114b25ad54a51127100c72
 #: ../usermanual/pdf_models.rst:53 3cfab6378f114b25ad54a51127100c72
@@ -154,3 +178,7 @@ msgid ""
 "change, but you can do many more with it. You can also create your own "
 "plugin based on FullCard."
 msgstr ""
+"Poiché ci sono molte limitazioni, si può usare il :doc:`plugin FullCard </"
+"plugins/fullcard>` che sostituirà questo modello. È più complesso da "
+"modificare, ma con esso si può fare molto di più. Si può anche creare un "
+"proprio plugin basato su FullCard."
