@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-15 10:00+0100\n"
-"PO-Revision-Date: 2025-02-17 16:44+0000\n"
+"PO-Revision-Date: 2025-02-20 14:20+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-preferences/it/>\n"
@@ -340,6 +340,12 @@ msgid ""
 "(if any) will be sent to the administrator if an error occurs. The behavior "
 "is the same as cron : if the script outputs something, a mail is sent."
 msgstr ""
+"**file://**: richiama un file sul server web, deve essere fornito il "
+"percorso completo. Lo script di destinazione deve essere eseguibile e, se "
+"necessario, dovrebbe definire uno shellbang. Un'e-mail contenente "
+"informazioni sul contributo e la restituzione dello script (se presente) "
+"verrà inviata all'amministratore se si verifica un errore. Il comportamento "
+"è lo stesso di cron: se lo script produce qualcosa, viene inviata un'e-mail."
 
 # 822bb5c8e7014695ae03ddc6d4aab327
 #: ../usermanual/preferences.rst:92 822bb5c8e7014695ae03ddc6d4aab327
@@ -348,59 +354,80 @@ msgid ""
 "script, usage and security of the script is **under your own "
 "responsability**."
 msgstr ""
+"L'utilizzo del metodo ``file://`` può essere pericoloso, Galette richiama "
+"semplicemente lo script fornito, l'utilizzo e la sicurezza dello script sono "
+"**sotto la propria responsabilità**."
 
 #: ../usermanual/preferences.rst:94 dd2075d4842c409795fe3ede2ef37127
 msgid ""
 "**Appearance** : these settings allow you to adapt the default appearance of "
 "Galette to your needs."
 msgstr ""
+"** Aspetto**: queste impostazioni consentono di adattare l'aspetto "
+"predefinito di Galette alle proprie esigenze."
 
 #: ../usermanual/preferences.rst:96 f579d9412cf5418cacceb79c987d9bc8
 msgid ""
 "**Hide default background image** : hide the image used as a background on "
 "private pages, on modal windows headers, and on public page headers."
 msgstr ""
+"**Nascondi immagine di sfondo predefinita**: nasconde l'immagine utilizzata "
+"come sfondo nelle pagine private, nelle intestazioni delle finestre modali e "
+"nelle intestazioni delle pagine pubbliche."
 
 #: ../usermanual/preferences.rst:97 2e368e3c21414db2ac55c70956c6c30a
 msgid ""
 "**Apply custom colors**: enable or disable usage of following color "
 "parameters:"
 msgstr ""
+"**Applica colori personalizzati**: abilita o disabilita l'utilizzo dei "
+"seguenti parametri colore:"
 
 #: ../usermanual/preferences.rst:99 fb36979741ca4572bfda7692fd0a44f5
 msgid ""
 "**Primary color**: applied to primary buttons, checkboxes, labels, headers, "
 "borders, and menus."
 msgstr ""
+"**Colore primario**: applicato ai pulsanti primari, alle caselle di "
+"controllo, alle etichette, alle intestazioni, ai bordi e ai menu."
 
 #: ../usermanual/preferences.rst:100 53b02699d85b42fbad4c231593c8f3fa
 msgid ""
 "**Text on primary color**: applied to text displayed over the *Primary "
 "color*."
 msgstr ""
+"**Testo su colore primario**: applicato al testo visualizzato sopra il *"
+"Colore primario*."
 
 #: ../usermanual/preferences.rst:101 e3131bb0f3124fa484d74061e9e08562
 msgid ""
 "**Secondary color**: applied to active items in menus, paginations, and "
 "accordions views."
 msgstr ""
+"**Colore secondario**: applicato agli elementi attivi nei menu, nelle pagine "
+"e nelle viste a fisarmonica."
 
 #: ../usermanual/preferences.rst:102 377449eac66e436088a6718168732dd3
 msgid ""
 "**Text on secondary color**: applied to text displayed over the *Secondary "
 "color*."
 msgstr ""
+"**Testo su colore secondario**: applicato al testo visualizzato sopra il *"
+"Colore secondario*."
 
 # 1260f0814e364b078adbe90aa37e45b9
 #: ../usermanual/preferences.rst:104 1260f0814e364b078adbe90aa37e45b9
 msgid "**RSS feed URL**: link to the RSS feed to display on dashboard,"
 msgstr ""
+"**URL del feed RSS**: collegamento al feed RSS da visualizzare sul cruscotto,"
 
 # 61a7287d89ee49a587fa97f4a93683ad
 #: ../usermanual/preferences.rst:105 61a7287d89ee49a587fa97f4a93683ad
 msgid ""
 "**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
 msgstr ""
+"**URL di base della galette**: URL dell'istanza della galette, se quello "
+"proposto non è corretto,"
 
 # 86c04ad415464212bec1cd1728044c0a
 #: ../usermanual/preferences.rst:109 86c04ad415464212bec1cd1728044c0a
@@ -408,11 +435,14 @@ msgid ""
 "This URL should be changed only if there are issues, this may cause "
 "instability."
 msgstr ""
+"Questo URL dovrebbe essere modificato solo in caso di problemi, poiché "
+"potrebbe causare instabilità."
 
 # 505e23217e2743ea81298aa55d07973a
 #: ../usermanual/preferences.rst:111 505e23217e2743ea81298aa55d07973a
 msgid "A contextual help is provided, check it for more information."
 msgstr ""
+"È disponibile una guida contestuale: consultarla per maggiori informazioni."
 
 # 2f7ebc46dd7745d18f8824e3a8405a59
 #: ../usermanual/preferences.rst:113 2f7ebc46dd7745d18f8824e3a8405a59
@@ -420,6 +450,8 @@ msgid ""
 "**Show identifiers**: display database identifiers instead of simple counts "
 "on lists."
 msgstr ""
+"**Mostra identificatori**: visualizza gli identificatori del database "
+"anziché semplici conteggi negli elenchi."
 
 #: ../usermanual/preferences.rst:118 637905f697e84c189f779a3ca1898fa9
 msgid "Rights"
@@ -427,35 +459,47 @@ msgstr "Diritti"
 
 #: ../usermanual/preferences.rst:120 0a730a68f53c49f78cb833ee531d1415
 msgid "Define few extra rights:"
-msgstr ""
+msgstr "Definisci alcuni diritti aggiuntivi:"
 
 #: ../usermanual/preferences.rst:122 975e87c4cb2e4f61b574f7de1787de45
 msgid ""
 "**Can members create child?** if you enable this settings, any logged in "
 "member can create another members that will be attached to him as children."
 msgstr ""
+"**I membri possono creare figli?** Se si abilita questa impostazione, "
+"qualsiasi membro registrato potrà creare altri membri che saranno associati "
+"a lui come figli."
 
 #: ../usermanual/preferences.rst:123 83b4020e0e7c4ce48f19f385086d3db1
 msgid ""
 "**Can group managers edit their groups?** groups manager can edit their "
 "owned groups information (name, parent, order)."
 msgstr ""
+"**I gestori dei gruppi possono modificare i propri gruppi?** se i gestori di "
+"gruppo possono modificare le informazioni dei propri gruppi (nome, genitore, "
+"ordine)."
 
 #: ../usermanual/preferences.rst:124 cc96509593984382bf8e7c8e5c2bf536
 msgid ""
 "**Can group managers create members?** groups managers can create members "
 "attached to their groups."
 msgstr ""
+"**I gestori dei gruppi possono creare membri?** se i gestori di gruppo "
+"possono creare membri associati ai propri gruppi."
 
 #: ../usermanual/preferences.rst:125 57d25c2410db49f19a23612217f6feac
 msgid ""
 "**Can group managers edit members?** groups managers can edit member of "
 "their groups information."
 msgstr ""
+"**I gestori dei gruppi possono modificare i membri?** se i gestori di gruppo "
+"possono modificare le informazioni sui membri dei propri gruppi."
 
 #: ../usermanual/preferences.rst:126 86bcf9dec73243c888609ead934c0a1f
 msgid "**Can group managers send mailings?** groups manager can send mailings."
 msgstr ""
+"**I gestori dei gruppi possono inviare mailing?** se il gestore di gruppo "
+"può inviare posta elettronica (ai propri gruppi)."
 
 #: ../usermanual/preferences.rst:127 57ceb8cc29af4c04bce1886f1ea5307c
 msgid ""
@@ -463,34 +507,45 @@ msgid ""
 "generate attendance sheets, cards, labels and CSV exports for members of "
 "their groups."
 msgstr ""
+"**I responsabili dei gruppi possono effettuare esportazioni?** se i gestori "
+"di gruppo possono esportare i gruppi in formato PDF, generare fogli di "
+"presenza, schede, etichette ed esportazioni CSV per i membri dei loro gruppi."
 
 #: ../usermanual/preferences.rst:128 5e2b468e76ca460b887b01b099fa415e
 msgid ""
 "**Can group managers see contributions?** groups managers can see "
 "contributions of members of their groups."
 msgstr ""
+"**I gestori dei gruppi possono vedere i contributi?** se i gestori di gruppo "
+"possono vedere i contributi dei membri dei loro gruppi."
 
 #: ../usermanual/preferences.rst:129 927365c104624933984d30366a1af981
 msgid ""
 "**Can group managers create contributions?** groups managers can create "
 "contributions on behalf of members of their groups."
 msgstr ""
+"**I gestori dei gruppi possono creare contributi?** se i gestori di gruppo "
+"possono creare contributi per conto dei membri dei loro gruppi."
 
 #: ../usermanual/preferences.rst:130 e00ef645d61147f8afb1df769e45bf54
 msgid ""
 "**Can group managers see transactions?** groups managers can see "
 "transactions of members of their groups."
 msgstr ""
+"**I gestori dei gruppi possono vedere le transazioni?** se i gestori di "
+"gruppo possono vedere le transazioni dei membri dei loro gruppi."
 
 #: ../usermanual/preferences.rst:131 f771e88f22c84c24abde8e360ab7eb5e
 msgid ""
 "**Can group managers create transactions?** groups managers can create "
 "transactions on behalf of members of their groups."
 msgstr ""
+"**I gestori dei gruppi possono creare transazioni?** se i gestori di gruppo "
+"possono creare transazioni per conto dei membri dei loro gruppi."
 
 #: ../usermanual/preferences.rst:-1 2e8f7ea5704f4bc38e0e7ea0331ebabe
 msgid "Galette settings, rights tab"
-msgstr ""
+msgstr "Impostazioni Galette, scheda diritti"
 
 # cbeeb62ca88c4220b7d99bddfa5a24b5
 #: ../usermanual/preferences.rst:139 cbeeb62ca88c4220b7d99bddfa5a24b5
@@ -500,27 +555,29 @@ msgstr "Email"
 # c155269802ff4893aa68f8604e2d0198
 #: ../usermanual/preferences.rst:141 c155269802ff4893aa68f8604e2d0198
 msgid "Sending email parameters:"
-msgstr ""
+msgstr "Parametri di invio e-mail:"
 
 #: ../usermanual/preferences.rst:-1 9dde3fccc8b24127a4efd8a475a341e8
 msgid "Galette settings, e-mail tab"
-msgstr ""
+msgstr "Impostazioni Galette, scheda e-mail"
 
 # 582bd799b4d44846ae9c379b8a0aeee4
 #: ../usermanual/preferences.rst:148 582bd799b4d44846ae9c379b8a0aeee4
 msgid "**Sender name**: name of the sender,"
-msgstr ""
+msgstr "**Nome mittente**: nome del mittente,"
 
 # 19b81dc2613c412cb048663a3367e378
 #: ../usermanual/preferences.rst:149 19b81dc2613c412cb048663a3367e378
 msgid "**Sender email**: email address of the sender,"
-msgstr ""
+msgstr "**Email del mittente**: indirizzo email del mittente,"
 
 # 5eb9449b14634c14b6bfee84860638af
 #: ../usermanual/preferences.rst:150 5eb9449b14634c14b6bfee84860638af
 msgid ""
 "**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
+"**Email di risposta**: indirizzo email di risposta. Se vuoto, verrà "
+"utilizzata l'email del mittente,"
 
 # 8fe752668366459d9301b1df48b2dcc2
 #: ../usermanual/preferences.rst:151 8fe752668366459d9301b1df48b2dcc2
@@ -529,6 +586,9 @@ msgid ""
 "notifications will be send, you can set several addresses separated with "
 "comas,"
 msgstr ""
+"**Email dell'amministratore dei membri**: indirizzo email a cui verranno "
+"inviate le notifiche di iscrizione, è possibile impostare più indirizzi "
+"separati da virgole,"
 
 # 51ba2872f1ce434fa34983178111b4c9
 #: ../usermanual/preferences.rst:152 51ba2872f1ce434fa34983178111b4c9
@@ -536,6 +596,8 @@ msgid ""
 "**Send emails to administrators**: whether to send emails to administrators "
 "on subscription,"
 msgstr ""
+"**Invia email agli amministratori**: se inviare email agli amministratori "
+"alla sottoscrizione,"
 
 # 268030fe3d90420aabb9ebcd27fe2637
 #: ../usermanual/preferences.rst:153 268030fe3d90420aabb9ebcd27fe2637
@@ -543,12 +605,16 @@ msgid ""
 "**Wrap text emails**: automatically wraps long lines in emails. If you "
 "disable this options, make sure to wrap yourself,"
 msgstr ""
+"**A capo testo email**: manda a capo automaticamente le righe lunghe nelle "
+"email. Se si disabilita questa opzione, bisogna andare a capo a mano,"
 
 #: ../usermanual/preferences.rst:154 5e2b468e76ca460b887b01b099fa415e
 msgid ""
 "**Send emails to members**: whether to send emails to members when their "
 "information are updated or a contribution is created on their behalf,"
 msgstr ""
+"**Invia email ai membri**: se inviare email ai membri quando le loro "
+"informazioni vengono aggiornate o viene creato un contributo per loro conto,"
 
 # d9130ff3a77c4317af01e347aad946ce
 #: ../usermanual/preferences.rst:155 d9130ff3a77c4317af01e347aad946ce
@@ -556,16 +622,18 @@ msgid ""
 "**Activate HTML editor**: activate HTML format when sending emails "
 "(discouraged),"
 msgstr ""
+"**Attiva editor HTML**: se attivare il formato HTML quando si inviano email "
+"(sconsigliato),"
 
 # ed3fb7288469475282f27f779b6b24fe
 #: ../usermanual/preferences.rst:156 ed3fb7288469475282f27f779b6b24fe
 msgid "**Emailing method**: method used to send emails:"
-msgstr ""
+msgstr "**Metodo di invio e-mail**: metodo utilizzato per inviare e-mail:"
 
 # c8f820a417814d6b9ced46f9064beedf
 #: ../usermanual/preferences.rst:158 c8f820a417814d6b9ced46f9064beedf
 msgid "**Emailing disabled**: no email will be send from Galette,"
-msgstr ""
+msgstr "**Invio e-mail disabilitato**: nessuna e-mail verrà inviata da Galette,"
 
 # c6bee1a70b5544148783377d17911522
 #: ../usermanual/preferences.rst:159 c6bee1a70b5544148783377d17911522
@@ -573,6 +641,8 @@ msgid ""
 "**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
 "parameters (recommended when possible),"
 msgstr ""
+"**Funzione di posta PHP**: utilizza le funzioni PHP ``mail()`` e i relativi "
+"parametri (consigliato se possibile),"
 
 # 4f0c94e419e94460b9fe51b98a44fcbe
 #: ../usermanual/preferences.rst:160 4f0c94e419e94460b9fe51b98a44fcbe
@@ -580,6 +650,8 @@ msgid ""
 "**Using a SMTP server**: uses an external SMTP server to configure (will be "
 "slower than PHP ``mail()`` function),"
 msgstr ""
+"**Uso di un server SMTP**: se usare un server SMTP esterno per la "
+"configurazione (sarà più lento della funzione PHP ``mail()``),"
 
 # 9c825c119c984d0bbb98119bc5b6dce0
 #: ../usermanual/preferences.rst:161 9c825c119c984d0bbb98119bc5b6dce0
@@ -587,22 +659,26 @@ msgid ""
 "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also "
 "be slower than PHP ``mail()`` function),"
 msgstr ""
+"**Uso di GMail come SMTP**: uguale all'opzione server SMTP, ma specifico per "
+"GMail (sarà anch'esso più lento della funzione PHP ``mail()``),"
 
 # 40f5c89ffe1d45c1ba4e8bbec5c957ee
 #: ../usermanual/preferences.rst:162 40f5c89ffe1d45c1ba4e8bbec5c957ee
 msgid "**Using sendmail server**: uses local server sendmail,"
-msgstr ""
+msgstr "**Uso del server sendmail**: usare il server locale sendmail,"
 
 # 25ec1215b6034295bbd7234b69f70d38
 #: ../usermanual/preferences.rst:163 25ec1215b6034295bbd7234b69f70d38
 msgid "**Using qmail server**: uses local server qmail,"
-msgstr ""
+msgstr "**Uso del server qmail**: usare il server locale qmail,"
 
 #: ../usermanual/preferences.rst:165 2d43c69e29a94892bfb0f23a4693784f
 msgid ""
 "**Mail signature**: signature added to all sent emails. Available variables "
 "are displayed in the inline help from the application."
 msgstr ""
+"**Firma posta**: firma aggiunta a tutte le email inviate. Le variabili "
+"disponibili sono visualizzate nella guida in linea dell'applicazione."
 
 # 00f6183b026e4c48968c8042e8d55636
 #: ../usermanual/preferences.rst:167 00f6183b026e4c48968c8042e8d55636
@@ -610,21 +686,23 @@ msgid ""
 "When using GMail as SMTP, you will have to configure user name and password "
 "to use."
 msgstr ""
+"Se si utilizza Gmail come SMTP, sarà necessario configurare il nome utente e "
+"la password."
 
 # 7528af4a6771448f8d7d85061f2a4e10
 #: ../usermanual/preferences.rst:169 7528af4a6771448f8d7d85061f2a4e10
 msgid "SMTP configuration is a bit more complexe :"
-msgstr ""
+msgstr "La configurazione SMTP è un po' più complessa:"
 
 # cf11341455ba4fde9cfc6059ce27e9eb
 #: ../usermanual/preferences.rst:171 cf11341455ba4fde9cfc6059ce27e9eb
 msgid "**SMTP server**: server address, required,"
-msgstr ""
+msgstr "**Server SMTP**: indirizzo del server, obbligatorio,"
 
 # b4763ef742a74f8581f99e34167136d3
 #: ../usermanual/preferences.rst:172 b4763ef742a74f8581f99e34167136d3
 msgid "**SMTP port**: server port, required,"
-msgstr ""
+msgstr "**Porta SMTP**: porta del server, obbligatoria,"
 
 # eeed155a037842b8b5649fe42277e2de
 #: ../usermanual/preferences.rst:173 eeed155a037842b8b5649fe42277e2de
@@ -632,11 +710,14 @@ msgid ""
 "**Use SMTP authentication**: if your server requires an authentication. In "
 "this case, you will also have to set username and password,"
 msgstr ""
+"**Usa autenticazione SMTP**: se il server richiede un'autenticazione. In "
+"questo caso, si dovrà anche impostare nome utente e password,"
 
 # a096fb582d5d4e0ca73aae2ef21e5945
 #: ../usermanual/preferences.rst:174 a096fb582d5d4e0ca73aae2ef21e5945
 msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
 msgstr ""
+"**Usa TLS per SMTP**: abilita il supporto SSL (sempre attivo per GMail),"
 
 # a9c16e09df744eb3ac3f0ddcacc0093b
 #: ../usermanual/preferences.rst:175 a9c16e09df744eb3ac3f0ddcacc0093b
@@ -644,6 +725,8 @@ msgid ""
 "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
 "signed for example)."
 msgstr ""
+"**Consenti TLS non sicuro**: in alcuni casi, il certificato SSL potrebbe non "
+"essere valido (ad esempio autofirmato)."
 
 # 2b6f9f069dca400ba2381f2b17f65a0e
 #: ../usermanual/preferences.rst:177 2b6f9f069dca400ba2381f2b17f65a0e
@@ -651,6 +734,8 @@ msgid ""
 "The `Test mail settings` button will send a test message to the email "
 "currently stored as members administrator."
 msgstr ""
+"Il pulsante `Prova impostazioni e-mail` invierà un messaggio di prova "
+"all'indirizzo e-mail attualmente memorizzato come amministratore dei membri."
 
 # 0bbb4824cd6347c5b0d2638efa8cb879
 #: ../usermanual/preferences.rst:180 0bbb4824cd6347c5b0d2638efa8cb879
@@ -659,7 +744,7 @@ msgstr "Etichetta"
 
 #: ../usermanual/preferences.rst:-1 fc90af26bb524d10b4e189c63ab013f8
 msgid "Galette settings, labels tab"
-msgstr ""
+msgstr "Impostazioni Galette, scheda etichette"
 
 # ee97b5ef64aa4487abe84564b37446a8
 #: ../usermanual/preferences.rst:188 ee97b5ef64aa4487abe84564b37446a8
@@ -668,7 +753,7 @@ msgstr "Tessere"
 
 #: ../usermanual/preferences.rst:-1 682676b77bdb471fae420a477929c25e
 msgid "Galette settings, cards tab"
-msgstr ""
+msgstr "Impostazioni Galette, scheda carte"
 
 # 59f3f24b2678418cbaf8264cb61c56f5
 #: ../usermanual/preferences.rst:196 59f3f24b2678418cbaf8264cb61c56f5
@@ -680,6 +765,8 @@ msgstr "Sicurezza"
 msgid ""
 "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
+"Le regole complesse per le password non sono semplici per l'utente; ma la "
+"sicurezza non è mai una cosa semplice :)"
 
 # 570e17799c1d497eb9af2e95ad2780aa
 #: ../usermanual/preferences.rst:204 570e17799c1d497eb9af2e95ad2780aa
@@ -688,21 +775,27 @@ msgid ""
 "especially true for all accounts that have privileges (staff, admin, super-"
 "admin); you may explain your users why this is important."
 msgstr ""
+"Naturalmente, tutte le password dovrebbero essere il più sicure possibile, "
+"ma questo è particolarmente vero per tutti gli account che dispongono di "
+"privilegi (personale, amministratore, super-amministratore); bisogna "
+"spiegare ai propri utenti perché tutto questo è importante."
 
 # fff95ddfffec46638e5339356186deef
 #: ../usermanual/preferences.rst:206 fff95ddfffec46638e5339356186deef
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
+"È possibile applicare alcune regole per le password dei membri (e dei super "
+"amministratori):"
 
 # ee8bcb4532c34c1ba889ddf0a74dd41c
 #: ../usermanual/preferences.rst:208 ee8bcb4532c34c1ba889ddf0a74dd41c
 msgid "minimum length (6 characters or more),"
-msgstr ""
+msgstr "lunghezza minima (6 caratteri o più),"
 
 # 79fe63911b564890802adcf767131707
 #: ../usermanual/preferences.rst:209 79fe63911b564890802adcf767131707
 msgid "minimum \"strength\","
-msgstr ""
+msgstr "\"forza\" minima,"
 
 # 2b3992cafb854047b5fdcbf88d40217e
 #: ../usermanual/preferences.rst:210 2b3992cafb854047b5fdcbf88d40217e
@@ -712,11 +805,11 @@ msgstr "blacklist,"
 # e85e35e110744770a03663beb062e501
 #: ../usermanual/preferences.rst:211 e85e35e110744770a03663beb062e501
 msgid "no personal information."
-msgstr ""
+msgstr "nessuna informazione personale."
 
 #: ../usermanual/preferences.rst:-1 bef37032d13d4b3a9d15629579f63de2
 msgid "Galette settings, security tab"
-msgstr ""
+msgstr "Impostazioni Galette, scheda sicurezza"
 
 # 053343e209714fffabbdaecff65a81e5
 #: ../usermanual/preferences.rst:218 053343e209714fffabbdaecff65a81e5
@@ -726,6 +819,10 @@ msgid ""
 "displayed on the fly; as well as a \"strength meter\" displayed for "
 "information."
 msgstr ""
+"La lunghezza è ancora l'unica regola attiva come impostazione predefinita, "
+"basta configurare il numero di caratteri richiesti. Nei campi password, gli "
+"errori saranno visualizzati al volo; così come un \"misuratore di forza\" "
+"visualizzato per informazione."
 
 # 4209b4bc1cd448219d37156cda7e420a
 #: ../usermanual/preferences.rst:222 4209b4bc1cd448219d37156cda7e420a
@@ -734,6 +831,10 @@ msgid ""
 "existing ones does not respect them. Galette will display a warning at login "
 "if checks are not respected, but login will still be possible!"
 msgstr ""
+"Se si abilita il controllo delle password, non sarà possibile sapere se "
+"alcuni di quelle esistenti non li rispettano. Galette visualizzerà un avviso "
+"al login se i controlli non vengono rispettati, ma il login sarà comunque "
+"possibile!"
 
 # 78e1ec1f228146f2be3cf46d52ee679f
 #: ../usermanual/preferences.rst:224 78e1ec1f228146f2be3cf46d52ee679f
@@ -744,6 +845,12 @@ msgid ""
 "restrictive may be an issue for your users; that's why this is up to you to "
 "secure as needed; just like using SSL or not :)"
 msgstr ""
+"Ma aspetta... la sicurezza delle password è importante, ma Galette non "
+"impone nulla! Non è stupido? Beh, non proprio. Per i test o le istanze "
+"completamente private, la sicurezza potrebbe essere meno importante; e in "
+"alcuni casi, essere troppo restrittivi potrebbe essere un problema per i "
+"propri utenti; ecco perché è responsabilità dell'amministratore proteggere "
+"il necessario; proprio come accade per l'uso o meno di SSL :)"
 
 # c2ebfee2cf554c3db4d358329ac44fed
 #: ../usermanual/preferences.rst:227 c2ebfee2cf554c3db4d358329ac44fed
@@ -754,31 +861,33 @@ msgstr "Password robusta"
 #: ../usermanual/preferences.rst:229 98eae32c24b94720be85c712e0d0976c
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr ""
+"Il calcolo della forza della password è piuttosto semplice. Si basa su 4 "
+"regole:"
 
 # e604d81f64d148bdaac9e4e2dba4edbf
 #: ../usermanual/preferences.rst:231 e604d81f64d148bdaac9e4e2dba4edbf
 msgid "contains lower case characters,"
-msgstr ""
+msgstr "contiene caratteri minuscoli,"
 
 # f2745eaadb224df2bdc88c3657d87438
 #: ../usermanual/preferences.rst:232 f2745eaadb224df2bdc88c3657d87438
 msgid "contains upper case characters,"
-msgstr ""
+msgstr "contiene caratteri maiuscoli,"
 
 # dcca5661bd7845e8b4cc6576ca0ab932
 #: ../usermanual/preferences.rst:233 dcca5661bd7845e8b4cc6576ca0ab932
 msgid "contains number,"
-msgstr ""
+msgstr "contiene numeri,"
 
 # 6134e0ab5cca42a58cf6d1c753008529
 #: ../usermanual/preferences.rst:234 6134e0ab5cca42a58cf6d1c753008529
 msgid "contains special characters."
-msgstr ""
+msgstr "contiene caratteri speciali."
 
 # 5ed15ee7aa7e4b24a0b20b61e2c3e0a6
 #: ../usermanual/preferences.rst:236 5ed15ee7aa7e4b24a0b20b61e2c3e0a6
 msgid "You can choose between 5 values for strength configuration:"
-msgstr ""
+msgstr "È possibile scegliere tra 5 valori per la configurazione della forza:"
 
 # 5280643fa53246d6bfa3264c699adc4d
 #: ../usermanual/preferences.rst:238 5280643fa53246d6bfa3264c699adc4d
@@ -786,6 +895,8 @@ msgid ""
 "**none**: (default): disables strength checks and check for personal "
 "information,"
 msgstr ""
+"**nessuno**: (predefinito): disabilita i controlli di forza e verifica le "
+"informazioni personali,"
 
 # 394c5519cf9b464bba1968b6d28fcaa3
 #: ../usermanual/preferences.rst:239 394c5519cf9b464bba1968b6d28fcaa3
@@ -793,26 +904,28 @@ msgid ""
 "**weaker**: enables check for personal information, only one of the rule is "
 "mandatory,"
 msgstr ""
+"**più debole**: abilita il controllo delle informazioni personali, solo una "
+"delle regole è obbligatoria,"
 
 # 11f3d1b16316428cbb6849ea5a1391c7
 #: ../usermanual/preferences.rst:240 11f3d1b16316428cbb6849ea5a1391c7
 msgid "**medium**: two rules are mandatory,"
-msgstr ""
+msgstr "**medio**: due regole sono obbligatorie,"
 
 # 0b54fe121ee34df78ed9a1e055c3e0fe
 #: ../usermanual/preferences.rst:241 0b54fe121ee34df78ed9a1e055c3e0fe
 msgid "**strong**: three rules are mandatory,"
-msgstr ""
+msgstr "**forte**: tre regole sono obbligatorie,"
 
 # 519a18052f774c3ebf7f29e782153010
 #: ../usermanual/preferences.rst:242 519a18052f774c3ebf7f29e782153010
 msgid "**very strong**: the four rules are mandatory."
-msgstr ""
+msgstr "**molto forte**: le quattro regole sono obbligatorie."
 
 # 7165d4847cfc48a9b5763006e04d8f26
 #: ../usermanual/preferences.rst:245 7165d4847cfc48a9b5763006e04d8f26
 msgid "Blacklisted passwords"
-msgstr ""
+msgstr "Password vietate"
 
 # c932b59f38f740b4a9df457047124454
 #: ../usermanual/preferences.rst:247 c932b59f38f740b4a9df457047124454
@@ -820,6 +933,8 @@ msgid ""
 "A default list of 500 common passwords is provided as a blacklist you can "
 "enable, \"galette\" is also blacklisted."
 msgstr ""
+"Viene fornito un elenco predefinito di 500 password comuni come blacklist "
+"che si può abilitare; anche \"galette\" è nella blacklist."
 
 # ac46d13e12dc477586e4bfa8e5bf1970
 #: ../usermanual/preferences.rst:251 ac46d13e12dc477586e4bfa8e5bf1970
@@ -828,11 +943,14 @@ msgid ""
 "(one per line). You can provide your own file, we advice you to complete the "
 "existing one."
 msgstr ""
+"Il file ``galette/data/blacklist.txt`` viene usato per elencare i termini "
+"nella blacklist (uno per riga). Si può usare un proprio file; consigliamo "
+"però di aggiungere definizioni a quello esistente."
 
 # 881799d56851496c80b3607662af7717
 #: ../usermanual/preferences.rst:254 881799d56851496c80b3607662af7717
 msgid "Personal information as password"
-msgstr ""
+msgstr "Informazioni personali come password"
 
 # 5c44c938be1c41829b70b48cbd1c9274
 #: ../usermanual/preferences.rst:256 5c44c938be1c41829b70b48cbd1c9274
@@ -841,6 +959,10 @@ msgid ""
 "super-admin account, this will just ensure you are not using login as "
 "password. For standard accounts, there are several information involved:"
 msgstr ""
+"Questo controllo si basa sull'attivazione della forza (tutti i livelli "
+"tranne **nessuno**). Per l'account super-admin, assicurerà solo che non si "
+"utilizzi login come password. Per gli account standard, sono coinvolte "
+"diverse informazioni:"
 
 # 41e3dc76750c4e95a7ec5c0982076aef
 #: ../usermanual/preferences.rst:258 41e3dc76750c4e95a7ec5c0982076aef
@@ -886,6 +1008,11 @@ msgid ""
 "will be checked in different formats as well (localized, international, and "
 "some variants)."
 msgstr ""
+"In pratica, l'utente non può usare letteralmente nessuna di queste "
+"informazioni come password. Vengono anche controllate alcune possibili "
+"combinazioni, come coppia cognome e nome (o nome e cognome), prima lettera "
+"del cognome con nome, ecc. Anche la data di nascita verrà controllata in "
+"diversi formati (localizzata, internazionale e alcune varianti)."
 
 # 5854a20127384f89ba0e1a2079be8519
 #: ../usermanual/preferences.rst:269 5854a20127384f89ba0e1a2079be8519
@@ -897,7 +1024,9 @@ msgstr "Admin"
 msgid ""
 "This tab wil be present only if you are logged in as super administrator."
 msgstr ""
+"Questa scheda sarà presente solo se si ha effettuato l'accesso come super "
+"amministratore."
 
 #: ../usermanual/preferences.rst:-1 6d2c124a55bd498384fcfced00607c1d
 msgid "Galette settings, admin tab"
-msgstr ""
+msgstr "Impostazioni Galette, scheda amministratore"
