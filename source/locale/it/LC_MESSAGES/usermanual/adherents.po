@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2025-02-23 21:33+0000\n"
+"PO-Revision-Date: 2025-02-24 17:10+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-members/it/>\n"
@@ -444,11 +444,16 @@ msgid ""
 "time, you can add the `Save` button. It will then be stored in the mailings "
 "list, and you will be able to grab it later."
 msgstr ""
+"Se lo si desidera, si può annullare questo invio postale usando il pulsante `"
+"Annulla invio postale`; questo verrà eliminato dalla sessione. Se invece si "
+"vuole conservarlo per un periodo più lungo, si può aggiungere il pulsante "
+"`Salva`. Verrà quindi conservato nell'elenco degli invii e da dove si potrà "
+"recuperare in seguito."
 
 # dcc74c1381e443ff8db505aaa51d3c8e
 #: ../usermanual/adherents.rst:152 dcc74c1381e443ff8db505aaa51d3c8e
 msgid "Mailings history"
-msgstr ""
+msgstr "Cronologia invii postali"
 
 # b564deab888641db99724c1d95bc1438
 #: ../usermanual/adherents.rst:154 b564deab888641db99724c1d95bc1438
@@ -458,6 +463,11 @@ msgid ""
 "mailing in the database, this ensure it will always be available in the "
 "future."
 msgstr ""
+"Quando si avvia un invio postale, questo viene memorizzato nella sessione. "
+"La sessione termina quando gli utenti si disconnettono o in base alla "
+"scadenza di un tempo definito dal server. La cronologia degli invii "
+"memorizza l'invio nel database, assicurandone per sempre la futura "
+"reperibilità."
 
 # 114b440766e04f8cbde2bca533e0ebba
 #: ../usermanual/adherents.rst:156 114b440766e04f8cbde2bca533e0ebba
@@ -466,6 +476,10 @@ msgid ""
 "template to write a new one. In this case, a new mailing will be created "
 "using information from the history, and the original one will be kept as is."
 msgstr ""
+"Ogni invio postale inoltrato viene memorizzato nel database e può essere "
+"utilizzato come modello per scriverne uno nuovo. In questo caso, verrà "
+"creato un nuovo invio utilizzando le informazioni della cronologia e "
+"l'originale verrà mantenuto così com'è."
 
 # 75ad268996ed4e0da907b51ea3fde96a
 #: ../usermanual/adherents.rst:158 75ad268996ed4e0da907b51ea3fde96a
@@ -474,6 +488,9 @@ msgid ""
 "continue it later. When you use history on a draft mailing, original entry "
 "will be replaced on sending."
 msgstr ""
+"Gli invii possono essere archiviati prima di essere inviati. In questo caso, "
+"è possibile continuare in seguito. Quando si utilizza la cronologia su una "
+"bozza di spedizione, la voce originale verrà sostituita all'invio."
 
 # 4b0e22297d5c4fb1bd80059de2cc1870
 #: ../usermanual/adherents.rst:160 4b0e22297d5c4fb1bd80059de2cc1870
@@ -481,26 +498,28 @@ msgid ""
 "When you use an existing history entry, here are the information that will "
 "be used:"
 msgstr ""
+"Quando si usa una voce della cronologia, ecco le informazioni che verranno "
+"utilizzate:"
 
 # 3cb1f26280494c8986291bba1b241693
 #: ../usermanual/adherents.rst:162 3cb1f26280494c8986291bba1b241693
 msgid "recipients,"
-msgstr ""
+msgstr "destinatari,"
 
 # b635e2bce9294fcca3cd50c042776b31
 #: ../usermanual/adherents.rst:163 b635e2bce9294fcca3cd50c042776b31
 msgid "attachements,"
-msgstr ""
+msgstr "allegati,"
 
 # 3d8ab50c64374df8bd2c025d88fdf03e
 #: ../usermanual/adherents.rst:164 3d8ab50c64374df8bd2c025d88fdf03e
 msgid "subject,"
-msgstr ""
+msgstr "oggetto,"
 
 # c5de0398237446b7add2e64d38fa44f8
 #: ../usermanual/adherents.rst:165 c5de0398237446b7add2e64d38fa44f8
 msgid "message,"
-msgstr ""
+msgstr "messaggio,"
 
 # e36a2c5c3c5f4abc9602b892e7a91910
 #: ../usermanual/adherents.rst:166 e36a2c5c3c5f4abc9602b892e7a91910
@@ -577,6 +596,9 @@ msgid ""
 "`Generate an empty CSV file` button. Of course, you can change model if you "
 "want, or remove it to get the default model back."
 msgstr ""
+"Nella scheda del modello corrente, si può scaricare un modello vuoto usando "
+"il pulsante `Genera un file CSV vuoto`. Ovviamente, si può cambiare modello "
+"se lo si desidera, o rimuoverlo per ottenere di nuovo il modello predefinito."
 
 # d4b3193315fd4768821fae95b7883e7b
 #: ../usermanual/adherents.rst:197 d4b3193315fd4768821fae95b7883e7b
