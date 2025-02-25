@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2025-02-24 18:48+0000\n"
+"PO-Revision-Date: 2025-02-25 07:37+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
 "doc-user-members/it/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.1-dev\n"
+"X-Generator: Weblate 5.10.2-dev\n"
 
 # 1ac56ff74fb7417ab06103ceef70962a
 #: ../usermanual/adherents.rst:5 1ac56ff74fb7417ab06103ceef70962a
@@ -636,10 +636,12 @@ msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
 msgstr ""
+"I file inviati sono elencati nella sezione `File esistenti`. Si può "
+"mostrarli, rimuoverli o importarli:"
 
 #: ../usermanual/adherents.rst:-1 876843089026455a88c98cedb61257b0
 msgid "Select and import file"
-msgstr ""
+msgstr "Seleziona e importa file"
 
 # e88f3904d8654eabaf2aea335a22e2dc
 #: ../usermanual/adherents.rst:212 e88f3904d8654eabaf2aea335a22e2dc
@@ -648,6 +650,10 @@ msgid ""
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
 "without storing anything in the database."
 msgstr ""
+"La casella di controllo `prova` (selezionata per impostazione predefinita) è "
+"progettata per verificare la validità dei dati del file (campi obbligatori "
+"compilati, formattazione corretta dei dati, ...) senza memorizzare nulla nel "
+"database."
 
 # 8abd4ece23a14f4eaa31a824640112de
 #: ../usermanual/adherents.rst:214 8abd4ece23a14f4eaa31a824640112de
@@ -656,6 +662,9 @@ msgid ""
 "stored in the database already; so it is advised to use the dry-run before "
 "to get error fixed."
 msgstr ""
+"Quando si importa un file CSV, se una riga è errata, le righe precedenti "
+"potrebbero essere già memorizzate nel database; si consiglia quindi di "
+"eseguire una prova preliminare per correggere l'errore."
 
 # 0f34549a281f49629338ea78f9575288
 #: ../usermanual/adherents.rst:216 0f34549a281f49629338ea78f9575288
@@ -663,6 +672,8 @@ msgid ""
 "You will have error messages than something went wrong (in dry-run mode or "
 "not):"
 msgstr ""
+"Si riceverà dei messaggi di errore indicanti il malfunzionamento di qualcosa "
+"(in modalità di prova o meno):"
 
 # 107346bc7fad4bbe92de8b41c7223bf5
 #: ../usermanual/adherents.rst:220 107346bc7fad4bbe92de8b41c7223bf5
@@ -671,11 +682,15 @@ msgid ""
 "when all the fields you set as required in Galette configuration are not "
 "listed in your import model."
 msgstr ""
+"Si potrebbero osservare campi obbligatori mancanti anche se l'importazione "
+"fosse andata a buon fine. Questo può accadere quando tutti i campi che si ha "
+"impostato come obbligatori nella configurazione di Galette non sono elencati "
+"nel proprio modello di importazione."
 
 # aac09ca89fbb40d49d8bac722afd755f
 #: ../usermanual/adherents.rst:225 aac09ca89fbb40d49d8bac722afd755f
 msgid "Links between members"
-msgstr ""
+msgstr "Collegamenti tra membri"
 
 # d112e53ef88145ce91bc5216faa050d0
 #: ../usermanual/adherents.rst:229 d112e53ef88145ce91bc5216faa050d0
@@ -684,6 +699,10 @@ msgid ""
 "families for exemple, or members of a same company. You can access children "
 "members from the parent, and parent from the children."
 msgstr ""
+"Si possono collegare diversi membri a un \"genitore\". Questa possibilità "
+"può essere usata per identificare famiglie o membri di una stessa azienda, "
+"per poter accedere ai membri figlio partendo dal genitore o al genitore dai "
+"figli."
 
 # 4fe4c4d7a78844469832350645ca8b8b
 #: ../usermanual/adherents.rst:231 4fe4c4d7a78844469832350645ca8b8b
@@ -691,6 +710,8 @@ msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
 msgstr ""
+"Si può aggiungere quanti figli si desidera a ogni membro, ma un figlio non "
+"può diventare genitore."
 
 # eafd9a8411d748bf94aaa776fff6450c
 #: ../usermanual/adherents.rst:233 eafd9a8411d748bf94aaa776fff6450c
@@ -701,6 +722,11 @@ msgid ""
 "the configuration says. If any of those information is missing, it will be "
 "retrieved from the parent."
 msgstr ""
+"L'altro punto interessante di questo sistema è che si può recuperare alcune "
+"informazioni dal genitore quando si invia posta o etichette. Nei membri "
+"figli, gli indirizzi email e postali diventano automaticamente facoltativi, "
+"qualunque cosa dica la configurazione. Se una di queste informazioni manca, "
+"verrà recuperata dal genitore."
 
 # 1562502f406a40bc88bc9c819c671100
 #: ../usermanual/adherents.rst:235 1562502f406a40bc88bc9c819c671100
@@ -708,11 +734,14 @@ msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
 msgstr ""
+"I membri senza indirizzo email non possono usare la funzione "
+"\"recupera password\". Ciò non influisce sul vincolo di unicità dell'email "
+"nel database."
 
 # 223e5cf58e9a4d5ba43063bb9c04959a
 #: ../usermanual/adherents.rst:238 223e5cf58e9a4d5ba43063bb9c04959a
 msgid "Impersonating"
-msgstr ""
+msgstr "Impersonare"
 
 # bb0f420d1f604de1b8cd064e390f2a6d
 #: ../usermanual/adherents.rst:242 bb0f420d1f604de1b8cd064e390f2a6d
@@ -721,6 +750,10 @@ msgid ""
 "groups, ... In this case, it is unfortunately frequent to see some "
 "credentials sent by insecure emails; which should really be avoid."
 msgstr ""
+"Alcuni problemi potrebbero essere correlati a un account specifico, a causa "
+"delle sue ACL, gruppi, ecc. In questo caso, purtroppo è frequente vedere "
+"credenziali inviate tramite email non sicure; cosa che andrebbe "
+"assolutamente evitata."
 
 # a8ed88e12f534928933fcd5ab047b5a1
 #: ../usermanual/adherents.rst:244 a8ed88e12f534928933fcd5ab047b5a1
@@ -730,3 +763,8 @@ msgid ""
 "impersonated the user, you can reproduce the issue and fix it or get all "
 "required information to report the issue upstream."
 msgstr ""
+"Come utente super amministratore, si osserverà un'icona extra nell'elenco "
+"membri, che consentirà di accedere come utente selezionato senza le sue "
+"credenziali. Una volta impersonato l'utente, puoi riprodurre il problema e "
+"risolverlo od ottenere tutte le informazioni necessarie per segnalare il "
+"problema a monte."
