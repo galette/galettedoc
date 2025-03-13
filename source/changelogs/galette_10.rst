@@ -1,5 +1,24 @@
 :orphan:
 
+.. _v1200:
+
+****************
+1.1.5.2 -> 1.2.0
+****************
+
+- Rework/harmonize SQL scripts - review some data types and defaults values
+- Dynamic dates are now stored using Y-m-d format only
+- Dates validation is a bit stricter
+- Remove photo drag'n drop
+- Remove log preferences (logs are always enabled)
+- Fix several typehint issues
+- Use transaction payment type as default on new contributions
+- Contributions amount no longer can be zero
+- Add links to relevant parts of the documentation
+- Add few parameters to customize appearance
+- Plugins can now add Javascript just before the closing body tag
+- Add staff public pages (list and gallery)
+
 .. _v1152:
 
 ******************
