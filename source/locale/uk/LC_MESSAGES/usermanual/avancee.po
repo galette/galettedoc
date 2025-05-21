@@ -7,13 +7,14 @@
 # Johan Cwiklinski <trasher@x-tnd.be>, 2022.
 # Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
 # Максим Горпиніч <maksimgorpinic2005a@gmail.com>, 2025.
+# Максим Горпиніч <maksimgorpinic4@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-12 10:39+0100\n"
-"PO-Revision-Date: 2025-02-13 11:01+0000\n"
-"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"PO-Revision-Date: 2025-05-22 16:01+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/"
 "doc-user-advanced/uk/>\n"
 "Language: uk\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 # 146a7da35cab4d59bcc2bcf51c1acdd9
 #: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
@@ -179,9 +180,9 @@ msgid ""
 "`behavior configuration <behavior>`:"
 msgstr ""
 "За замовчуванням Galette створить сеанс із тривалістю життя за замовчуванням "
-"(і, здається, у цьому випадку браузери діють інакше). Ви все одно можете "
-"визначити константу під назвою GALETTE_TIMEOUT, щоб змінити тривалість "
-"сеансу за допомогою :ref:конфігурації поведінки<behavior> :"
+"(і, схоже, браузери в цьому випадку діють інакше). Ви все одно можете "
+"визначити константу з назвою ``GALETTE_TIMEOUT`` змінити тривалість сеансу "
+"за допомогою :ref:`behavior configuration <behavior>`:"
 
 # 009f4a8642bc41fd8de77df9776d4481
 #: ../usermanual/avancee.rst:60 009f4a8642bc41fd8de77df9776d4481
@@ -203,8 +204,8 @@ msgid ""
 "To fix that, use :ref:`behavior configuration <behavior>` to create a "
 "constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
 msgstr ""
-"Щоб це виправити, використовуйте конфігурацію поведінки :ref:`<behavior> `, "
-"щоб створити константу з назвою ``GALETTE_X_FORWARDED_FOR_INDEX``, наприклад:"
+"Щоб виправити це, використовуйте :ref:`behavior configuration <behavior>` "
+"створити константу з назвою ``GALETTE_X_FORWARDED_FOR_INDEX``, наприклад:"
 
 # 812bdb7b79fc42f28edbefc5cf583291
 #: ../usermanual/avancee.rst:71 812bdb7b79fc42f28edbefc5cf583291
@@ -258,8 +259,8 @@ msgid ""
 "You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file "
 "instead of an XML one."
 msgstr ""
-"Ви можете налаштувати експорт параметрів за допомогою `YAML<https://yaml.org/"
-"> `_ замість файлу XML."
+"Ви можете налаштувати експорт параметрів за допомогою файлу `YAML <https://"
+"yaml.org/>`_ замість XML."
 
 # 2820fa30b5634d628a933ee340294131
 #: ../usermanual/avancee.rst:93 2820fa30b5634d628a933ee340294131
@@ -438,9 +439,9 @@ msgid ""
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
 "<behavior>`). This directive can take the following values:"
 msgstr ""
-"У Galette передбачено декілька режимів, які можна налаштувати за допомогою "
-"константи ``GALETTE_MODE`` (:ref:`див. Налаштування поведінки "
-"Galette<behavior> `). Ця директива може приймати такі значення:"
+"У Galette передбачено кілька режимів, які можна налаштувати за допомогою "
+"константи ``GALETTE_MODE`` (:ref:`see Galette behavior configuration "
+"<behavior>`). Ця директива може приймати такі значення:"
 
 #: ../usermanual/avancee.rst:166 ef4616e506c940c28f23c8482a5d80ef
 msgid ""
@@ -510,7 +511,7 @@ msgstr "Можна змінити деякі поведінки Galette:"
 
 #: ../usermanual/avancee.rst:194 3ccd872ee4714d2881791db050c3d950
 msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
-msgstr "`GALETTE_DEBUG`: :ref:`див. налагодження Galette<debug> `;"
+msgstr "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
 
 #: ../usermanual/avancee.rst:195 5c491a6f323644ee8fa78f0c853c5cef
 msgid ""
