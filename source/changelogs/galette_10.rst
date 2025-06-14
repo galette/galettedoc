@@ -6,6 +6,8 @@
 1.1.5.2 -> 1.2.0
 ****************
 
+See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
+
 - Rework/harmonize SQL scripts - review some data types and defaults values
 - Dynamic dates are now stored using Y-m-d format only
 - Dates validation is a bit stricter
@@ -18,6 +20,11 @@
 - Add few parameters to customize appearance
 - Plugins can now add Javascript just before the closing body tag
 - Add staff public pages (list and gallery)
+- Add paid flag on contributions
+- Prevent main social networks to be removed on update
+- Fix mass changes on boolean fields
+- Add phone number and contact email in settings
+- Fix few dynamic translations issues
 
 .. _v1152:
 
