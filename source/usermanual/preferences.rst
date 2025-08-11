@@ -110,8 +110,6 @@ Galette related parameters:
 
    A contextual help is provided, check it for more information.
 
-* **Show identifiers**: display database identifiers instead of simple counts on lists.
-
 .. _pref_rights:
 
 Rights
