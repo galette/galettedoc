@@ -63,16 +63,9 @@ We do our best for the Galette interface to be:
 * logical and consistent (you will always find icons at familiar places),
 * web standards compliant (HTML and CSS valid),
 * HTML semantic respectful,
-* working even if Javascript is disabled (as possible, but really you should enable Javascript to really take advantage of Galette),
 * accessible (without any WCAG, WAI or equivalent tests run).
 
 If you find places where one of those points is incorrect, do not hesitate to tell us on the tracker or on the mailing list!
-
-.. versionadded:: 0.9
-
-Galette provide a "mobile compatible" UI, but it has not been designed for that. Therefore, it may be difficult or worst to use; in this case we do our best, but all devices cannot be tested!
-
-Mobile display is currently a plus and not a fundation of the UI. Improvements can be done, this will just not be a priority. Note that we have in mind to rework the whole UI, with a better support.
 
 Telemetry
 =========

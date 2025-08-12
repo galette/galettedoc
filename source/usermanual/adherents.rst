@@ -6,10 +6,6 @@ Members management
 
 One of the first contact with Galette interface after the installation, login and dashboard will be members list, main part of the system. Of course, this list will be empty for now :)
 
-.. note::
-
-   You can use the "Generate fake data" from the "Configuration" menu to add demonstration data in your instance.
-
 Let's start by creating a new member. As everywhere in Galette, mandatory fields are displayed with a red border; all other are optional. Different parts of the page (`Identity`, `Contact information`, `Galette related data` and maybe `Dynamic fields`) can be retracted clicking on their respective title.
 
 .. image:: ../_styles/static/images/usermanual/add_member.png
