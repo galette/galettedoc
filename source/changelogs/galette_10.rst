@@ -1,5 +1,15 @@
 :orphan:
 
+.. _v1160:
+
+****************
+1.1.5.2 -> 1.1.6
+****************
+
+- Improve checks on members
+- Use fields configuration to restrcit to allowed fields only
+
+
 .. _v1152:
 
 ******************
