@@ -26,6 +26,14 @@ See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 - Add phone number and contact email in settings
 - Fix few dynamic translations issues
 
+.. _v1161:
+
+****************
+1.1.5.2 -> 1.1.6
+****************
+
+- Improve checks on members
+- Use fields configuration to restrcit to allowed fields only
 
 .. _v1160:
 
@@ -34,7 +42,7 @@ See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 ****************
 
 - Improve checks on members
-- Use fields configuration to restrcit to allowed fields only
+- Use fields configuration to restrict to allowed fields only
 
 .. _v1152:
 
