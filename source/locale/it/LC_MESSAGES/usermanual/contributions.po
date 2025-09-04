@@ -10,11 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:13+0200\n"
+"POT-Creation-Date: 2025-09-04 19:05+0200\n"
 "PO-Revision-Date: 2025-02-19 07:32+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
-"doc-user-contributions/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
+"contributions/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,8 +77,8 @@ msgid ""
 "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder "
 "<reminders>` :p"
 msgstr ""
-"Se Pierre, Zac, Julie o Marc sono in ritardo, si può inviare loro un :ref:`"
-"promemoria <reminders>` :p"
+"Se Pierre, Zac, Julie o Marc sono in ritardo, si può inviare loro un :ref:"
+"`promemoria <reminders>` :p"
 
 # 36bd60fa037045d2be8057e4450ef379
 #: ../usermanual/contributions.rst:16 36bd60fa037045d2be8057e4450ef379
@@ -143,8 +143,8 @@ msgid ""
 "(\"Impending due date\" and \"Late due date\")."
 msgstr ""
 "I modelli di email per ricordare le date di scadenza sono disponibili nel "
-"contenuto delle email (\"Data di scadenza imminente\" e \"Data già scaduta\""
-")."
+"contenuto delle email (\"Data di scadenza imminente\" e \"Data già "
+"scaduta\")."
 
 # 2f4e01f0d7dd400a8a2c5facec048f81
 #: ../usermanual/contributions.rst:37 2f4e01f0d7dd400a8a2c5facec048f81
@@ -155,7 +155,7 @@ msgstr ""
 "Il pulsante promemoria dal cruscotto o la voce promemoria del menu daranno "
 "accesso all'interfaccia di gestione dei promemoria."
 
-#: ../usermanual/contributions.rst:-1 377a38171375457fb466200072e77825
+#: ../usermanual/contributions.rst:39 377a38171375457fb466200072e77825
 msgid "Reminders management interface"
 msgstr "Interfaccia di gestione dei promemoria"
 
@@ -208,8 +208,8 @@ msgid ""
 msgstr ""
 "Infine, è possibile automatizzare i promemoria con un'attività cron che "
 "chiamerà il file ``galette/reminder.php``. Se si desidera che i promemoria "
-"vengano inviati ogni giorno alle 8:30, si può aggiungere un file ``/etc/"
-"cron.d/galette`` (su Fedora e distribuzioni linux simili; consultare la "
+"vengano inviati ogni giorno alle 8:30, si può aggiungere un file ``/etc/cron."
+"d/galette`` (su Fedora e distribuzioni linux simili; consultare la "
 "documentazione del proprio sistema per sapere come aggiungere una "
 "programmazione crontab) con il seguente contenuto:"
 
@@ -250,7 +250,7 @@ msgstr ""
 "di pagamento nel proprio contributo; Galette proporrà di creare un pagamento "
 "programmato allegato."
 
-#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+#: ../usermanual/contributions.rst:73 1d3901bcfdce464d86cb0519b827efaa
 msgid "Add scheduled payment to a contribution"
 msgstr "Aggiungere un pagamento programmato a un contributo"
 
@@ -273,11 +273,11 @@ msgstr ""
 "Quando si modifica un contributo a cui sono già allegati pagamenti "
 "programmati, si può visualizzare un riepilogo e anche un elenco delle voci."
 
-#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+#: ../usermanual/contributions.rst:82 1d3901bcfdce464d86cb0519b827efaa
 msgid "Summary of scheduled payments"
 msgstr "Riepilogo dei pagamenti programmati"
 
-#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+#: ../usermanual/contributions.rst:87 1d3901bcfdce464d86cb0519b827efaa
 msgid "List of attached scheduled payments"
 msgstr "Elenco dei pagamenti programmati allegati"
 
@@ -322,7 +322,7 @@ msgid "the amount."
 msgstr "l'importo."
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:-1 689cf0f5127d40c2bd34dc9cebbd2759
+#: ../usermanual/contributions.rst:104 689cf0f5127d40c2bd34dc9cebbd2759
 msgid "Transactions list"
 msgstr "Elenco transazioni"
 
@@ -337,7 +337,7 @@ msgstr ""
 "di scadenza dei membri."
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:-1 98f234f4bc434f51b8fc11b48a090aef
+#: ../usermanual/contributions.rst:111 98f234f4bc434f51b8fc11b48a090aef
 msgid "Add a transaction"
 msgstr "Aggiuni una transazione"
 
@@ -356,7 +356,7 @@ msgstr ""
 "crearne un altro. Per impostazione predefinita, l'importo di un nuovo "
 "contributo da una transazione sarà l'importo rimanente della transazione."
 
-#: ../usermanual/contributions.rst:-1 cfda7691d1464e009ae926d41bb0f3ba
+#: ../usermanual/contributions.rst:118 cfda7691d1464e009ae926d41bb0f3ba
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr ""
 "Aggiungere un contributo collegato a una transazione parzialmente distribuita"
@@ -367,7 +367,7 @@ msgid "Of course, it is also possible to edit a transaction:"
 msgstr "Naturalmente è anche possibile modificare una transazione:"
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:-1 e6eee0c98f9d44c0a2323b707e5a69c1
+#: ../usermanual/contributions.rst:125 e6eee0c98f9d44c0a2323b707e5a69c1
 msgid "Transaction edition"
 msgstr "Modifica transazioni"
 
@@ -378,7 +378,7 @@ msgid ""
 msgstr ""
 "Si può anche allegare un contributo esistente invece di crearne uno nuovo."
 
-#: ../usermanual/contributions.rst:-1 1d3901bcfdce464d86cb0519b827efaa
+#: ../usermanual/contributions.rst:132 1d3901bcfdce464d86cb0519b827efaa
 msgid "Add an already existing contribution to a transaction"
 msgstr "Aggiungere un contributo già esistente a una transazione"
 
@@ -398,7 +398,7 @@ msgstr ""
 "dalle transazioni (così come da diversi plugin) e visualizza solo alcuni "
 "membri, per motivi prestazionali."
 
-#: ../usermanual/contributions.rst:-1 8023d5e01fbd4bc1aa771639d454db70
+#: ../usermanual/contributions.rst:146 8023d5e01fbd4bc1aa771639d454db70
 msgid "Dropdown members list"
 msgstr "Elenco dei membri a discesa"
 
