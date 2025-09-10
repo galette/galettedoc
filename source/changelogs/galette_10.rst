@@ -20,11 +20,23 @@ See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 - Add few parameters to customize appearance
 - Plugins can now add Javascript just before the closing body tag
 - Add staff public pages (list and gallery)
-- Add paid flag on contributions
 - Prevent main social networks to be removed on update
 - Fix mass changes on boolean fields
 - Add phone number and contact email in settings
 - Fix few dynamic translations issues
+- Fix CSRF error when using filters on scheduled payments with ajax mode
+- Remove show ID preference
+- PHP 8.5 compatibility
+- Remove support for PHP 8.1
+- Fix stored XSS CVE-2025-48076 and reflected XSS CVE-2025-48884
+- Fix groups manager access bypass CVE-2025-53922  and CVE-2025-58052
+- Plugins no longer require write access to their root directory to be disabled/enabled
+- FIx mass adding members to group when one selected member is already in the group
+- Prevent group managers from creating contributions with scheduled payments
+- Simple users cannot filter their own list of scheduled payments
+- Wrong toast message displayed when saving a contribution
+- Display issues on contributions/scheduled payments/transactions lists
+- Fix member storage when some fields are not present in the form
 
 .. _v1161:
 
