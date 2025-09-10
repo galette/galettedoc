@@ -3,7 +3,7 @@
 .. _v1200:
 
 ****************
-1.1.5.2 -> 1.2.0
+1.1.6.1 -> 1.2.0
 ****************
 
 See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
@@ -41,11 +41,10 @@ See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 .. _v1161:
 
 ****************
-1.1.5.2 -> 1.1.6
+1.1.6 -> 1.1.6.1
 ****************
 
-- Improve checks on members
-- Use fields configuration to restrcit to allowed fields only
+- Fix some issues when Status objects was not loaded from DI
 
 .. _v1160:
 
