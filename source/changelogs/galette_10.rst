@@ -37,6 +37,9 @@ See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 - Wrong toast message displayed when saving a contribution
 - Display issues on contributions/scheduled payments/transactions lists
 - Fix member storage when some fields are not present in the form
+- Plugins can display news on dashboard
+- Admin field is shown even if it is configured to be hidden
+- New members are set inactive when activity field is hidden
 
 .. _v1161:
 
