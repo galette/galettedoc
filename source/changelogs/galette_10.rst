@@ -1,5 +1,16 @@
 :orphan:
 
+.. _v1162:
+
+******************
+1.1.6.1 -> 1.1.6.2
+******************
+
+- Fixed typed property must not be accessed
+- Make sure fields visible for anyone don't cause errors
+- Login must never be empty
+- Fix donation begin date
+
 .. _v1161:
 
 ****************
