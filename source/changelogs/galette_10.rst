@@ -41,6 +41,17 @@ See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 - Admin field is shown even if it is configured to be hidden
 - New members are set inactive when activity field is hidden
 
+.. _v1162:
+
+******************
+1.1.6.1 -> 1.1.6.2
+******************
+
+- Fixed typed property must not be accessed
+- Make sure fields visible for anyone don't cause errors
+- Login must never be empty
+- Fix donation begin date
+
 .. _v1161:
 
 ****************
