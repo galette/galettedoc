@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-22 09:54+0200\n"
+"POT-Creation-Date: 2025-09-04 19:05+0200\n"
 "PO-Revision-Date: 2021-10-24 09:33+0000\n"
 "Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -324,93 +324,99 @@ msgid ""
 "be empty in database."
 msgstr ""
 
-#: ../usermanual/avancee.rst:161 d8edd5f7d98e4b12b1078f5ea0ac024d
+#: ../usermanual/avancee.rst:157 43304efcd2b14338b8ada3638077f2ab
+msgid ""
+"**Fix dynamic fields dates format** will convert all dynamic fields dates to "
+"the new format (see :ref:`dynamic fields <dynamic_fields>`)."
+msgstr ""
+
+#: ../usermanual/avancee.rst:162 d8edd5f7d98e4b12b1078f5ea0ac024d
 msgid "Galette modes"
 msgstr ""
 
-#: ../usermanual/avancee.rst:163 e2055e48ed054f34aa542de29b59583f
+#: ../usermanual/avancee.rst:164 e2055e48ed054f34aa542de29b59583f
 msgid ""
 "Several modes are provided in Galette you can configure with "
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
 "<behavior>`). This directive can take the following values:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:165 ef4616e506c940c28f23c8482a5d80ef
+#: ../usermanual/avancee.rst:166 ef4616e506c940c28f23c8482a5d80ef
 msgid ""
 "``PROD``: production mode (non production instance should be on an other "
 "mode). This is the default mode for releases, but it may change in "
 "development branch."
 msgstr ""
 
-#: ../usermanual/avancee.rst:166 edd8fc6e54bd4573b29a3b4f3a42fcff
+#: ../usermanual/avancee.rst:167 edd8fc6e54bd4573b29a3b4f3a42fcff
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
 msgstr ""
 
-#: ../usermanual/avancee.rst:167 58edd5fb363441bb8b6c16e611bca56a
+#: ../usermanual/avancee.rst:168 58edd5fb363441bb8b6c16e611bca56a
 msgid "``TEST``: reserved for unit tests."
 msgstr ""
 
-#: ../usermanual/avancee.rst:168 53fad056e86c433cb702eb054bfa3c32
+#: ../usermanual/avancee.rst:169 53fad056e86c433cb702eb054bfa3c32
 msgid "``MAINT``: maintainance mode. Only super admin will be able to login."
 msgstr ""
 
-#: ../usermanual/avancee.rst:173 b61851b56ee84b698065555decc5b03d
+#: ../usermanual/avancee.rst:174 b61851b56ee84b698065555decc5b03d
 msgid "Galette Debug"
 msgstr ""
 
-#: ../usermanual/avancee.rst:177 ce4fe39f0d024bd7b29ff27257538228
+#: ../usermanual/avancee.rst:178 ce4fe39f0d024bd7b29ff27257538228
 msgid ""
 "A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug "
 "mode. With this mode on:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:179 009a52199c584e54ae7156c1a22ac0f5
+#: ../usermanual/avancee.rst:180 009a52199c584e54ae7156c1a22ac0f5
 msgid "unstable/not finished parts will be activated,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:180 a73bd7b04767463897f20306f1e84873
+#: ../usermanual/avancee.rst:181 a73bd7b04767463897f20306f1e84873
 msgid "some data will not be stored in session,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:181 a25b4b21b8c24e15952363a73165be58
+#: ../usermanual/avancee.rst:182 a25b4b21b8c24e15952363a73165be58
 msgid "default log level is set to ``DEBUG``,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:182 56cb2c250ab246c1838e90719c47bf10
+#: ../usermanual/avancee.rst:183 56cb2c250ab246c1838e90719c47bf10
 msgid "news won't be cached,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:183 ccd4bd9fae2d4456b4e5496ea9372f16
+#: ../usermanual/avancee.rst:184 ccd4bd9fae2d4456b4e5496ea9372f16
 msgid "database version check will not be done."
 msgstr ""
 
-#: ../usermanual/avancee.rst:189 49b49d1f899b4984ab40f99592260c37
+#: ../usermanual/avancee.rst:190 49b49d1f899b4984ab40f99592260c37
 msgid "Behavior configuration"
 msgstr ""
 
-#: ../usermanual/avancee.rst:191 582fcfa42dcf4f25ba5d25e867335d2c
+#: ../usermanual/avancee.rst:192 582fcfa42dcf4f25ba5d25e867335d2c
 msgid "It is possible to change some of Galette behaviors:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:193 3ccd872ee4714d2881791db050c3d950
+#: ../usermanual/avancee.rst:194 3ccd872ee4714d2881791db050c3d950
 msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
 msgstr ""
 
-#: ../usermanual/avancee.rst:194 5c491a6f323644ee8fa78f0c853c5cef
+#: ../usermanual/avancee.rst:195 5c491a6f323644ee8fa78f0c853c5cef
 msgid ""
 "you'll find in related part of the documentation you can use behavior "
 "configuration for some other usages (such as PDF cards settings, session "
 "lifetime, ...)."
 msgstr ""
 
-#: ../usermanual/avancee.rst:196 88cf7861b81a4bfbb6d39b8f270f310b
+#: ../usermanual/avancee.rst:197 88cf7861b81a4bfbb6d39b8f270f310b
 msgid ""
 "You can add those directives by declaring constants in the ``galette/config/"
 "behavior.inc.php``."
 msgstr ""
 
-#: ../usermanual/avancee.rst:198 9641a12858be4e69b464edfd5943815b
+#: ../usermanual/avancee.rst:199 9641a12858be4e69b464edfd5943815b
 msgid "For example:"
 msgstr ""

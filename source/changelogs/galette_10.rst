@@ -1,5 +1,46 @@
 :orphan:
 
+.. _v1200:
+
+****************
+1.1.6.1 -> 1.2.0
+****************
+
+See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
+
+- Rework/harmonize SQL scripts - review some data types and defaults values
+- Dynamic dates are now stored using Y-m-d format only
+- Dates validation is a bit stricter
+- Remove photo drag'n drop
+- Remove log preferences (logs are always enabled)
+- Fix several typehint issues
+- Use transaction payment type as default on new contributions
+- Contributions amount no longer can be zero
+- Add links to relevant parts of the documentation
+- Add few parameters to customize appearance
+- Plugins can now add Javascript just before the closing body tag
+- Add staff public pages (list and gallery)
+- Prevent main social networks to be removed on update
+- Fix mass changes on boolean fields
+- Add phone number and contact email in settings
+- Fix few dynamic translations issues
+- Fix CSRF error when using filters on scheduled payments with ajax mode
+- Remove show ID preference
+- PHP 8.5 compatibility
+- Remove support for PHP 8.1
+- Fix stored XSS CVE-2025-48076 and reflected XSS CVE-2025-48884
+- Fix groups manager access bypass CVE-2025-53922  and CVE-2025-58052
+- Plugins no longer require write access to their root directory to be disabled/enabled
+- FIx mass adding members to group when one selected member is already in the group
+- Prevent group managers from creating contributions with scheduled payments
+- Simple users cannot filter their own list of scheduled payments
+- Wrong toast message displayed when saving a contribution
+- Display issues on contributions/scheduled payments/transactions lists
+- Fix member storage when some fields are not present in the form
+- Plugins can display news on dashboard
+- Admin field is shown even if it is configured to be hidden
+- New members are set inactive when activity field is hidden
+
 .. _v1162:
 
 ******************
@@ -26,8 +67,7 @@
 ****************
 
 - Improve checks on members
-- Use fields configuration to restrcit to allowed fields only
-
+- Use fields configuration to restrict to allowed fields only
 
 .. _v1152:
 

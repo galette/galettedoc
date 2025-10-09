@@ -4,14 +4,14 @@
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
 # Manuela Silva <mmsrs@sky.com>, 2024.
 # Gustavo Lorenzato dos Santos <gustavolorenzatodossantos@gmail.com>, 2024.
+# Nelson JESUS <jesus.nels@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2024-09-20 15:40+0000\n"
-"Last-Translator: Gustavo Lorenzato dos Santos "
-"<gustavolorenzatodossantos@gmail.com>\n"
+"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"PO-Revision-Date: 2025-09-15 15:52+0000\n"
+"Last-Translator: Nelson JESUS <jesus.nels@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/"
 "doc-install-galette/pt/>\n"
 "Language: pt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: ../installation/galette.rst:3 ea95a6cfe48247fd8bc876a91a44cc18
 msgid "Installation"
@@ -31,6 +31,10 @@ msgid ""
 "<preparation>` are done). Go to http://localhost/galette. :doc:`Update "
 "process <update>` is documented separately."
 msgstr ""
+"A instalação do Galette é um processo baseado na web (uma vez que os :doc:`"
+"preparation steps <preparation>` estejam concluídos). Aceda a http://"
+"localhost/galette. :doc:`Update process <update>` está documentado "
+"separadamente."
 
 #: ../installation/galette.rst:7 ba82dc7e7c484632a3e089e578540feb
 msgid ""
@@ -38,6 +42,9 @@ msgid ""
 "know what you are doing, this is more complex for non developers!) grab it "
 "from :doc:`source code <../source_code>`"
 msgstr ""
+"Deve usar a versão estável mais recente, mas também é possível (se souber o "
+"que está a fazer, isto é mais complexo para quem não é programador !) obtê-"
+"la a partir do :doc:`source code <../source_code>`"
 
 #: ../installation/galette.rst:10 ../installation/galette.rst:61
 #: 2f47b84a5acb49838732ca501e289f65 7f58b9e7ad5c458db72196fccb1fb63e
@@ -48,22 +55,24 @@ msgstr "Verificações"
 msgid ""
 "Please check the following if you want Galette to install without problems:"
 msgstr ""
+"Por favor, verifique o seguinte se quiser que o Galette seja instalado sem "
+"problemas :"
 
 #: ../installation/galette.rst:14 0e54fffada3d466ab74ff48c14e6d85d
 msgid "your PHP version is high enough,"
-msgstr ""
+msgstr "a sua versão do PHP é suficientemente recente,"
 
 #: ../installation/galette.rst:15 28229d48854b46ca949c7138d870fb0d
 msgid "PHP timezone is set (required since PHP 5.3),"
-msgstr ""
+msgstr "o fuso horário do PHP está definido (obrigatório desde o PHP 5.3),"
 
 #: ../installation/galette.rst:16 120a9a829d2740e59aef11f0dd438ad5
 msgid "all required PHP extensions are installed and loaded,"
-msgstr ""
+msgstr "todas as extensões PHP necessárias estão instaladas e ativas,"
 
 #: ../installation/galette.rst:17 3b2c5f7d889b4b71926079fa3cef41d9
 msgid "some directories requires write access."
-msgstr ""
+msgstr "alguns diretórios necessitam de permissões de escrita."
 
 #: ../installation/galette.rst:19 2f91cdf0a7764f4081e8d02b6b59a8f4
 msgid ""
@@ -71,12 +80,17 @@ msgid ""
 "please ask you system administrator. Galette does not require any \"exotic\" "
 "extension."
 msgstr ""
+"Se faltar alguma das extensões obrigatórias ou se o fuso horário não estiver "
+"definido, por favor contacte o administrador do sistema. O Galette não "
+"requer nenhuma extensão \"exótica\"."
 
 #: ../installation/galette.rst:21 1d97f4991d3440379c9b8b5a1108fb0c
 msgid ""
 "The very first installation step will check those points, and will warn you "
 "if something gets wrong."
 msgstr ""
+"O primeiro passo da instalação irá verificar esses pontos e avisá-lo se algo "
+"estiver errado."
 
 #: ../installation/galette.rst:27 02c9486b4d79437b9657f22cf56b544e
 msgid ""
@@ -84,6 +98,10 @@ msgid ""
 "followed, directories ACLs should be correct, please refer to :ref:`files "
 "ACLs section <droitsfichiers>` and refresh page in your browser."
 msgstr ""
+"Se todos os :ref:`passos da instalação <preparation>` tiverem sido "
+"corretamente seguidos, as permissões (ACLs) dos diretórios deverão estar "
+"corretas. Por favor, consulte a secção :ref:`permissões de ficheiros ACLs "
+"<droitsfichiers>` e atualize a página no seu navegador."
 
 #: ../installation/galette.rst:30 3374b71307ad460997757c141e10c196
 msgid "Installation type"

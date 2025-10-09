@@ -91,6 +91,16 @@ Galette related parameters:
 
    Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsability**.
 
+* **Appearance** : these settings allow you to adapt the default appearance of Galette to your needs.
+
+  * **Hide default background image** : hide the image used as a background on private pages, on modal windows headers, and on public page headers.
+  * **Apply custom colors**: enable or disable usage of following color parameters:
+
+    * **Primary color**: applied to primary buttons, checkboxes, labels, headers, borders, and menus.
+    * **Text on primary color**: applied to text displayed over the *Primary color*.
+    * **Secondary color**: applied to active items in menus, paginations, and accordions views.
+    * **Text on secondary color**: applied to text displayed over the *Secondary color*.
+
 * **RSS feed URL**: link to the RSS feed to display on dashboard,
 * **Galette base URL**: Galette instance URL, if the one proposed is incorrect,
 
@@ -99,8 +109,6 @@ Galette related parameters:
    This URL should be changed only if there are issues, this may cause instability.
 
    A contextual help is provided, check it for more information.
-
-* **Show identifiers**: display database identifiers instead of simple counts on lists.
 
 .. _pref_rights:
 

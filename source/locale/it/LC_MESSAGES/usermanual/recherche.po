@@ -5,13 +5,14 @@
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020.
 # MIN UZ <varulv93@outlook.com>, 2020.
 # Luca De Filippo <luca.defilippo@translationcommons.org>, 2020.
+# Marco Ciampa <ciampix@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:13+0200\n"
-"PO-Revision-Date: 2020-12-15 14:29+0000\n"
-"Last-Translator: Luca De Filippo <luca.defilippo@translationcommons.org>\n"
+"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"PO-Revision-Date: 2025-02-23 21:33+0000\n"
+"Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
 "search/it/>\n"
 "Language: it\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 # 39d703c40a4f4130aa746c3c9f56ef23
 #: ../usermanual/recherche.rst:5 39d703c40a4f4130aa746c3c9f56ef23
@@ -33,11 +34,14 @@ msgid ""
 "a parameter or else, and come back to the list, you will find all your "
 "previous search parameters."
 msgstr ""
+"Ogni ricerca eseguita verrà conservata durante la sessione. Si può cambiare "
+"un parametro o altro, e tornare all'elenco, si troveranno tutti i propri "
+"parametri di ricerca precedenti."
 
 # a6210fd0235849c496491ed9b0498982
 #: ../usermanual/recherche.rst:10 a6210fd0235849c496491ed9b0498982
 msgid "Filtering members list"
-msgstr ""
+msgstr "Filtro dell'elenco dei membri"
 
 # c4a9a75dae8a442a9a3f1879bc28bd5b
 #: ../usermanual/recherche.rst:12 c4a9a75dae8a442a9a3f1879bc28bd5b
@@ -46,35 +50,40 @@ msgid ""
 "members. The :ref:`advanced search <advsearch>` provides more criteria and "
 "possibilities."
 msgstr ""
+"Il modulo in cima all'elenco dei membri consente di effettuare delle "
+"ricerche tra i membri. La :ref:`ricerca avanzata <advsearch>` fornisce più "
+"criteri e possibilità."
 
-#: ../usermanual/recherche.rst:-1 690320a9574d4f3a9c08d885462738e6
+#: ../usermanual/recherche.rst:14 690320a9574d4f3a9c08d885462738e6
 msgid "Filter members list"
-msgstr ""
+msgstr "Filtra elenco membri"
 
 # 2e51bb94cc6d4cfaad11bcf01834f970
 #: ../usermanual/recherche.rst:19 2e51bb94cc6d4cfaad11bcf01834f970
 msgid "You can filter on:"
-msgstr ""
+msgstr "Si può filtrare per:"
 
 # f3788f486b69494eb4c84440feae7551
 #: ../usermanual/recherche.rst:21 f3788f486b69494eb4c84440feae7551
 msgid "a full text search on one of the following information:"
-msgstr ""
+msgstr "una ricerca su tutto il testo su una delle seguenti informazioni:"
 
 # 5d44362e71d54b09978576dd4b1a37ec
 #: ../usermanual/recherche.rst:23 5d44362e71d54b09978576dd4b1a37ec
 msgid "name (first name, last name and nickname),"
-msgstr ""
+msgstr "nome (nome, cognome e soprannome),"
 
 # 968a2a0dfd9b42f6b3f814d78e12420b
 #: ../usermanual/recherche.rst:24 968a2a0dfd9b42f6b3f814d78e12420b
 msgid "company name,"
-msgstr ""
+msgstr "nome azienda,"
 
 # 4bd1056519614bca95cd9cc9632bbc3c
 #: ../usermanual/recherche.rst:25 4bd1056519614bca95cd9cc9632bbc3c
 msgid "address (address, address continuation, zipcode, town and country),"
 msgstr ""
+"indirizzo (indirizzo, continuazione dell'indirizzo, codice postale, città e "
+"paese),"
 
 # d1cfd99b3a6840e89898a579f4018c8b
 #: ../usermanual/recherche.rst:26 d1cfd99b3a6840e89898a579f4018c8b
@@ -82,11 +91,13 @@ msgid ""
 "email and instant messaging addresses (email address, website URL, and all "
 "direct messenging addresses),"
 msgstr ""
+"indirizzi e-mail e di messaggistica istantanea (indirizzo e-mail, URL del "
+"sito Web e tutti gli indirizzi di messaggistica diretta),"
 
 # 5a9eabe4684a47dfb5199e41a940ef36
 #: ../usermanual/recherche.rst:27 5a9eabe4684a47dfb5199e41a940ef36
 msgid "job position,"
-msgstr ""
+msgstr "posizione lavorativa,"
 
 # 1cf357d0eb3b4dbf861a370938a90587
 #: ../usermanual/recherche.rst:28 1cf357d0eb3b4dbf861a370938a90587
@@ -94,76 +105,78 @@ msgid ""
 "information (public information and - for administrators only - private "
 "information)."
 msgstr ""
+"informazioni (pubbliche e - solo per gli amministratori - informazioni "
+"private)."
 
 # 4e1a0802594a40f98190e23a50250b81
 #: ../usermanual/recherche.rst:30 4e1a0802594a40f98190e23a50250b81
 msgid "a member status:"
-msgstr ""
+msgstr "lo stato di un membro:"
 
 # ce87e2f3b106477f897cebc17a2737ff
 #: ../usermanual/recherche.rst:32 ce87e2f3b106477f897cebc17a2737ff
 msgid "all members,"
-msgstr ""
+msgstr "tutti i membri,"
 
 # 8a4cddd5df5c4d9aafae9f31871f89de
 #: ../usermanual/recherche.rst:33 8a4cddd5df5c4d9aafae9f31871f89de
 msgid "up to date members,"
-msgstr ""
+msgstr "membri aggiornati,"
 
 # b4c4c4495b504cb7a7a0b8e196952e9d
 #: ../usermanual/recherche.rst:34 b4c4c4495b504cb7a7a0b8e196952e9d
 msgid "closes expiries (members whose membership expires in 30 days)"
-msgstr ""
+msgstr "scadenze prossime (membri la cui iscrizione scade tra 30 giorni)"
 
 # ff0937df55ba4a38a08719173afa7440
 #: ../usermanual/recherche.rst:35 ff0937df55ba4a38a08719173afa7440
 msgid "latecomers,"
-msgstr ""
+msgstr "ritardatari,"
 
 # e81ce3a75504421f81368f9ce4516a6d
 #: ../usermanual/recherche.rst:36 e81ce3a75504421f81368f9ce4516a6d
 msgid "members whose never had a membership,"
-msgstr ""
+msgstr "membri che non hanno mai avuto un'iscrizione,"
 
 # 216a5d0b18e54a88a92a9ab09714cc7b
 #: ../usermanual/recherche.rst:37 216a5d0b18e54a88a92a9ab09714cc7b
 msgid "staff members,"
-msgstr ""
+msgstr "membri dello staff,"
 
 # ceb057621c764be69556a12a85a53b12
 #: ../usermanual/recherche.rst:38 ceb057621c764be69556a12a85a53b12
 msgid "administrators."
-msgstr ""
+msgstr "amministratori."
 
 # c8a03e7bb0164cdaaac5c82632ba3ebe
 #: ../usermanual/recherche.rst:40 c8a03e7bb0164cdaaac5c82632ba3ebe
 msgid "a status of the account:"
-msgstr ""
+msgstr "uno stato dell'account:"
 
 # 10172bf2a02e4854965e8e8b09981734
 #: ../usermanual/recherche.rst:42 10172bf2a02e4854965e8e8b09981734
 msgid "all accounts,"
-msgstr ""
+msgstr "tutti gli account,"
 
 # 310746d7b2c34307aaaf0202994f39d9
 #: ../usermanual/recherche.rst:43 310746d7b2c34307aaaf0202994f39d9
 msgid "active accounts,"
-msgstr ""
+msgstr "account attivi,"
 
 # 9112917ced89469e9ad86bc38fb145e6
 #: ../usermanual/recherche.rst:44 9112917ced89469e9ad86bc38fb145e6
 msgid "inactive accounts."
-msgstr ""
+msgstr "account inattivi."
 
 # 9f0d344400ac4654afb9ded80252ff6a
 #: ../usermanual/recherche.rst:46 9f0d344400ac4654afb9ded80252ff6a
 msgid "group affiliation,"
-msgstr ""
+msgstr "affiliazione gruppi,"
 
 # b9452fc5a29a424ea25008da0bf14320
 #: ../usermanual/recherche.rst:47 b9452fc5a29a424ea25008da0bf14320
 msgid "presence or absence of an email address."
-msgstr ""
+msgstr "presenza o assenza di un indirizzo email."
 
 # ad5183142daf4198b268143fe5404a7e
 #: ../usermanual/recherche.rst:49 ad5183142daf4198b268143fe5404a7e
@@ -171,9 +184,12 @@ msgid ""
 "All filters can be combined, giving you the ability to search among your "
 "active members whose have an email address and whose name contains a \"a\" ;)"
 msgstr ""
+"Tutti i filtri possono essere combinati, dando la possibilità di cercare tra "
+"i membri attivi che hanno un indirizzo email e il cui nome contiene la "
+"\"a\" ;)"
 
 # 0966a3cecf6a45099d02c50a2b22dd19
-#: ../usermanual/recherche.rst:-1 ../usermanual/recherche.rst:54
+#: ../usermanual/recherche.rst:54 ../usermanual/recherche.rst:63
 #: 0966a3cecf6a45099d02c50a2b22dd19 3bdba57c5b724fd48fb39ef65cc842c9
 msgid "Advanced search"
 msgstr "Ricerca Avanzata"
@@ -185,11 +201,16 @@ msgid ""
 "of fields types, related to members or their membership. The screen is "
 "separated into four parts (you can reduce individually):"
 msgstr ""
+"La ricerca avanzata si trova nel menu principale e propone una certa "
+"quantità di tipi di campi, relativi ai membri o alla loro appartenenza. La "
+"schermata è divisa in quattro parti (che è possibile ridurre):"
 
 # d7c4346b831f4bd49b5b3d9eae899a61
 #: ../usermanual/recherche.rst:58 d7c4346b831f4bd49b5b3d9eae899a61
 msgid "**simple search** which recall all filters present in the members list,"
 msgstr ""
+"**ricerca semplice** che richiama tutti i filtri presenti nell'elenco dei "
+"membri,"
 
 # 07f46030db1e4f7dbbf787eb904a11ba
 #: ../usermanual/recherche.rst:59 07f46030db1e4f7dbbf787eb904a11ba
@@ -197,11 +218,14 @@ msgid ""
 "**advanced search** which proposes extra fields on members that can be of "
 "use,"
 msgstr ""
+"**ricerca avanzata** che propone campi aggiuntivi che possono tornare utili "
+"sui membri,"
 
 # 74d45b80540d4118aef07359780e7b2b
 #: ../usermanual/recherche.rst:60 74d45b80540d4118aef07359780e7b2b
 msgid "**search in contributions** allowing search on members contributions,"
 msgstr ""
+"**ricerca nei contributi** che consente la ricerca nei contributi dei membri,"
 
 # 4f4eb05d95f94c8a98c6754fd6295343
 #: ../usermanual/recherche.rst:61 4f4eb05d95f94c8a98c6754fd6295343
@@ -210,6 +234,10 @@ msgid ""
 "dynamic fields, and which will automatically adapt to selected field. You "
 "can add and remove lines to refine search."
 msgstr ""
+"**ricerca libera** che consente di selezionare qualsiasi campo membro "
+"possibile, compresi i campi dinamici, e che si adatterà automaticamente al "
+"campo selezionato. È possibile aggiungere e rimuovere righe per affinare la "
+"ricerca."
 
 # 829f3de9eb794542b1779a1072a196f7
 #: ../usermanual/recherche.rst:69 829f3de9eb794542b1779a1072a196f7
@@ -222,6 +250,8 @@ msgid ""
 "Every search on members can be stored (with a name) in order to be executed "
 "again later. They are accessible only for their author."
 msgstr ""
+"Ogni ricerca sui membri può essere memorizzata (con un nome) per essere "
+"eseguita di nuovo in seguito. Sono accessibili solo al loro autore."
 
 # 0175973bd3da417ea66a7385baf024f1
 #: ../usermanual/recherche.rst:75 0175973bd3da417ea66a7385baf024f1
@@ -229,25 +259,23 @@ msgid ""
 "After you proceed a search (\"simple\" or \"advanced\"), just click on the "
 "\"Save\" button, and pick up a name."
 msgstr ""
+"Dopo aver effettuato una ricerca (\"semplice\" o \"avanzata\"), basta "
+"cliccare sul pulsante \"Salva\" e scegliere un nome."
 
 # 829f3de9eb794542b1779a1072a196f7
-#: ../usermanual/recherche.rst:-1 7dcf37b9d74a492fa123084d744c17ce
-#, fuzzy
-#| msgid "Saved searches"
+#: ../usermanual/recherche.rst:77 7dcf37b9d74a492fa123084d744c17ce
 msgid "Save a search"
-msgstr "Ricerche salvate"
+msgstr "Salva una ricerca"
 
 # bafe61c7b5124947ace7e83e06f2fabb
 #: ../usermanual/recherche.rst:82 bafe61c7b5124947ace7e83e06f2fabb
 msgid "You can find saved searches in the list:"
-msgstr ""
+msgstr "È possibile trovare le ricerche salvate nell'elenco:"
 
 # 39d703c40a4f4130aa746c3c9f56ef23
-#: ../usermanual/recherche.rst:-1 f4331be04615447ab2debfdcc82545bb
-#, fuzzy
-#| msgid "Search"
+#: ../usermanual/recherche.rst:84 f4331be04615447ab2debfdcc82545bb
 msgid "Searches list"
-msgstr "Cerca"
+msgstr "Elenco ricerche"
 
 # db648742db664c3d80b26ba585a00cec
 #: ../usermanual/recherche.rst:89 db648742db664c3d80b26ba585a00cec
@@ -255,3 +283,5 @@ msgid ""
 "From this list, you will be able to remove or execute again searches, and "
 "also see a detail of used criteria."
 msgstr ""
+"Da questo elenco sarà possibile rimuovere o rieseguire le ricerche e "
+"visualizzare inoltre il dettaglio dei criteri utilizzati."

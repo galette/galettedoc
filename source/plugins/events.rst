@@ -13,8 +13,8 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/2.1.3-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/plugins/galette-plugin-events-2.1.3.tar.bz2
+.. image:: https://img.shields.io/badge/2.2.0-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/plugins/galette-plugin-events-2.2.0.tar.bz2
    :alt: Get latest Events plugin!
 
 .. image:: https://img.shields.io/badge/Nighly-Events-ffb619.svg?logo=php&logoColor=white&style=for-the-badge

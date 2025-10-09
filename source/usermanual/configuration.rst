@@ -43,6 +43,8 @@ From the `Configuration`, `Core fields` menu, you will get access to all fields 
    :align: center
    :alt: Core fields management
 
+.. _dynamic_fields:
+
 Dynamic fields
 ==============
 
@@ -59,6 +61,14 @@ There are several types of dynamic fields:
 * `date`: a date field with a selector,
 * `boolean`: a checkbox,
 * `file`: add files.
+
+.. warning::
+
+   .. versionchanged:: 1.2.0
+
+   Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searchs. Now, every date is stored using the `Y-m-d` format.
+
+   If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️).
 
 While creating a new field (or editing an existing one); you also can:
 
