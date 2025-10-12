@@ -1,12 +1,24 @@
 :orphan:
 
+.. _v1201:
+
+****************
+1.2.0 -> 1.2.0.1
+****************
+
+See `full 1.2.0.1 changelog <https://bugs.galette.eu/versions/897>`_ for all details.
+
+- Fix logo size on maintenance, install an compatibility pages
+- Fix PostgreSQL wrong sequences after update
+- Rework installation proposed versions
+
 .. _v1200:
 
 ****************
 1.1.6.1 -> 1.2.0
 ****************
 
-See `full changelog <https://bugs.galette.eu/versions/87>`_ for all details.
+See `full 1.2.0 changelog <https://bugs.galette.eu/versions/87>`_ for all details.
 
 - Rework/harmonize SQL scripts - review some data types and defaults values
 - Dynamic dates are now stored using Y-m-d format only
