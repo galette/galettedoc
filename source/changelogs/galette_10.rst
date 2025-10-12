@@ -6,7 +6,7 @@
 1.2.0 -> 1.2.0.1
 ****************
 
-See `full 1.2.0.1 changelog <https://bugs.galette.eu/versions/897>`_ for all details.
+See `full 1.2.0.1 changelog <https://bugs.galette.eu/versions/97>`_ for all details.
 
 - Fix logo size on maintenance, install an compatibility pages
 - Fix PostgreSQL wrong sequences after update
