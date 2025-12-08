@@ -2,42 +2,46 @@
 # Copyright (C) 2011-2022, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Evgeniy Khramov <thejenjagamertjg@gmail.com>, 2022.
+# Sisitenr <sisiton2019@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2022-12-09 16:49+0000\n"
-"Last-Translator: Evgeniy Khramov <thejenjagamertjg@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-"
-"plugins-maps/ru/>\n"
+"PO-Revision-Date: 2025-11-30 12:01+0000\n"
+"Last-Translator: Sisitenr <sisiton2019@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/galette/"
+"doc-plugins-maps/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"Plural-Forms: nplurals=3; plural="
+"(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: ../plugins/maps.rst:3 1456e63e95754e1fb28a53f850c4b9ad
 msgid "Maps"
-msgstr ""
+msgstr "Карты"
 
 #: ../plugins/maps.rst:5 37dc6411a00f4298befed6288d6a5324
 msgid "This plugin provides:"
-msgstr ""
+msgstr "Этот плагин дает:"
 
 #: ../plugins/maps.rst:7 313d0936e88d44fd80fc46310286c8d5
 msgid ""
 "possibility to store geogaphical coordinates for members (latitude and "
 "longitude),"
-msgstr ""
+msgstr "возможность сохранять координаты для членов (широта и долгота)"
 
 #: ../plugins/maps.rst:8 9ee44748c93d439b9334078d8f591999
 msgid ""
 "a public map displaying up to date members that have choosen to be "
 "publically visible."
 msgstr ""
+"публичная карта показывает членов в реальном времени если они выбрали быть "
+"публично видимыми"
 
 #: ../plugins/maps.rst:11 cfd5ac1519764dd9bb293edf8ad1da94
 msgid "Installation"
@@ -49,37 +53,39 @@ msgstr "Прежде всего, загрузите плагин:"
 
 #: ../plugins/maps.rst:15 7b67110bc6e64e4db20b4169ad88159c
 msgid "Get latest Maps plugin!"
-msgstr ""
+msgstr "Получите последнюю версию плагина Карты!"
 
 #: ../plugins/maps.rst:19 0784ff8161884624bcd4a62a89f806f8
 msgid "Get Maps plugin nightly build!"
-msgstr ""
+msgstr "Получите ночную сборку плагина Карты!"
 
 #: ../plugins/maps.rst:23 12972b70c1e84038aa983bf162bb561d
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
-"Распакуйте скачанный архив в каталог Galette ``plugins``. Например, под "
-"linux (заменив `{url}` и `{version}` на правильные значения):"
+"Распакуйте скачанный архив в папку Galette ``plugins``. Например, под linux "
+"(заменив `{url}` и `{version}` на правильные значения):"
 
 #: ../plugins/maps.rst:33 df9d209ffc094964966364f420e03675
 msgid "Database initialisation"
-msgstr ""
+msgstr "Установка БД"
 
 #: ../plugins/maps.rst:35 19bfd692fbaa4a89ab570a1dc61893f6
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
+"Для работы плагин требует несколько таблиц в БД. Смотри :ref:`Galette "
+"plugins management interface <plugins_managment>`."
 
 #: ../plugins/maps.rst:37 bdcac6382fd046d4867b7dbd7a9144fd
 msgid "And this is finished; Maps plugin is installed :)"
-msgstr ""
+msgstr "Все готово; Плагин Карты установлен :)"
 
 #: ../plugins/maps.rst:40 27830182254440878b13199d6b5e55c6
 msgid "Plugin usage"
-msgstr ""
+msgstr "Использование плагина"
 
 #: ../plugins/maps.rst:42 b9c3b08462f24dc891cc1438d26f41ad
 msgid ""
@@ -87,12 +93,17 @@ msgid ""
 "member is logged in, which contains `My location` entry. This page allow "
 "member to store its location."
 msgstr ""
+"Когда плагин установлен, группа \"Maps\" добавляется в меню Galette когда "
+"член входит в систему, В ней присутствует поле \"Мое расположение\". Эта "
+"страница позволяет члену сохранять свою локацию."
 
 #: ../plugins/maps.rst:44 db360f726f3a4304a579a341756413f3
 msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
 msgstr ""
+"Кнопка \"Геолокализация\" также добавляется при отображении члена, что "
+"позволяет администрации устанавливать координаты членов."
 
 #: ../plugins/maps.rst:46 1af3d5aae17b4bada49a1c0f0ca06b29
 msgid ""
@@ -101,12 +112,15 @@ msgid ""
 "will see all members, while simple members and visitors will only see up to "
 "date public ones."
 msgstr ""
+"Также в список публичных страниц добавлена запись \"Карта\" которая "
+"показывает геолокализированых членов в реальном времени. Администрация и "
+"сотрудники будут видеть всех членов, а члены и посетители только публичных."
 
 #: ../plugins/maps.rst:48 33b190b6ca084cefa8b9bd03c6981002
 msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
-msgstr ""
+msgstr "Для начала все члены введут свои координаты. Дано несколько вариантов:"
 
 #: ../plugins/maps.rst:50 72dc0efe31654226bbbe60dd20f66c12
 msgid ""
@@ -114,34 +128,48 @@ msgid ""
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
 "org>`_),"
 msgstr ""
+"если город был указан в информации про члена, будет предоставлен список "
+"возможных локаций "
+"(через \"Nominatim online service<https://nominatim.openstreetmap.org>\"_),"
 
 #: ../plugins/maps.rst:51 1219157d2ba741938fb71d75fec71728
 msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
 msgstr ""
+"кроме этого зона поиска "
+"(предоставлена \"OpenStreetMap <https://nominatim.openstreetmap.org/>\"_),"
 
 #: ../plugins/maps.rst:52 f581f5c6ae7b4d0aabb4838bdabcb4d1
+#, fuzzy
 msgid "and also a geolocalize button using browser capacities."
-msgstr ""
+msgstr "а также кнопка геолокализации с помощью возможностей браузера."
 
 #: ../plugins/maps.rst:54 99d4a42cc87645d4bf15eef0c0de81bf
+#, fuzzy
 msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
 msgstr ""
+"Зона поиска может использоватся при сохранении локации члена, и демонстрации "
+"карт."
 
 #: ../plugins/maps.rst:60 da083618a9c54f1e9fe1a5ac4d49e503
+#, fuzzy
 msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
 msgstr ""
+"Член может определить свою локацию (с желаемой точностью) на карте выбрав "
+"один из вариантов:"
 
 #: ../plugins/maps.rst:66 5cc12078cb6345c8876df9a227d64be8
+#, fuzzy
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
-msgstr ""
+msgstr "Использование кнопки геолокизации определит позицию из браузера:"
 
 #: ../plugins/maps.rst:72 822d4913304041ca8e197e0470a3ef78
+#, fuzzy
 msgid "Then, member location is displayed on map, and can be removed:"
-msgstr ""
+msgstr "Потом локация члена показывается на карте и может быть удалена:"

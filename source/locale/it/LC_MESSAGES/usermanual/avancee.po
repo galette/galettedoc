@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2025-02-20 14:20+0000\n"
+"PO-Revision-Date: 2025-10-13 09:07+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
-"advanced/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
+"doc-user-advanced/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.1-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 # 146a7da35cab4d59bcc2bcf51c1acdd9
 #: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
@@ -250,7 +250,7 @@ msgstr ""
 # 9c1b46e7a978430b869f0c6e3262fce2
 #: ../usermanual/avancee.rst:87 9c1b46e7a978430b869f0c6e3262fce2
 msgid "CSV exports"
-msgstr "Esportazioni CSV"
+msgstr "Esportazione in CSV"
 
 #: ../usermanual/avancee.rst:91 26b582832b4a4024a4aab9de0b8af0d1
 msgid ""
@@ -327,8 +327,8 @@ msgid ""
 "columns in your SQL query (``SELECT nom_adh AS \"Column title\" FROM ...``)"
 msgstr ""
 "se non presente, i nomi dei campi Galette saranno esportati. È possibile "
-"utilizzare le colonne nominate nella query SQL (`SELECT nom_adh AS \"Titolo "
-"colonna\" FROM ...``)"
+"utilizzare le colonne nominate nella query SQL "
+"(``SELECT nom_adh AS \"Titolo colonna\" FROM ...``)"
 
 #: ../usermanual/avancee.rst:131 55d1a44d2ab04494896b755aac0fce46
 msgid "set to false (``headers: false``) to disable column headers output"
@@ -444,8 +444,9 @@ msgid ""
 "<behavior>`). This directive can take the following values:"
 msgstr ""
 "È possibile configurare Galette con varie modalità di cui è fornito con la "
-"costante``GALETTE_MODE`` (:ref:`vedere configurazione comportamento di "
-"Galette <behavior>`). Questa direttiva può assumere i seguenti valori:"
+"costante ``GALETTE_MODE`` "
+"(:ref:`vedere configurazione comportamento di Galette <behavior>`). Questa "
+"direttiva può assumere i seguenti valori:"
 
 #: ../usermanual/avancee.rst:166 ef4616e506c940c28f23c8482a5d80ef
 msgid ""
@@ -498,7 +499,7 @@ msgstr "alcuni dati non saranno memorizzati nella sessione,"
 
 #: ../usermanual/avancee.rst:182 a25b4b21b8c24e15952363a73165be58
 msgid "default log level is set to ``DEBUG``,"
-msgstr "il livello di log predefinito sarà impostato a `DEBUG`,"
+msgstr "il livello di log predefinito sarà impostato a ``DEBUG``,"
 
 #: ../usermanual/avancee.rst:183 56cb2c250ab246c1838e90719c47bf10
 msgid "news won't be cached,"
@@ -506,7 +507,7 @@ msgstr "le notizie non verranno memorizzate,"
 
 #: ../usermanual/avancee.rst:184 ccd4bd9fae2d4456b4e5496ea9372f16
 msgid "database version check will not be done."
-msgstr "il controllo della versione del database non sarà eseguito."
+msgstr "il controllo versione database non sarà eseguito."
 
 #: ../usermanual/avancee.rst:190 49b49d1f899b4984ab40f99592260c37
 msgid "Behavior configuration"
