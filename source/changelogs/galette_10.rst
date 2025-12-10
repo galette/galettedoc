@@ -9,9 +9,9 @@
 See `full 1.2.1 changelog <https://bugs.galette.eu/versions/94>`_ for all details.
 
 - Rework groups management user interface
-- Several fixes and improvements on logo (webp transperency, logo display in mails, ...)
-- Change default order on contributions and translations
-- Fix attaching existing contribution on transation
+- Several fixes and improvements on logo (webp transparency, logo display in mails, ...)
+- Change default order on contributions and transactions
+- Fix attaching existing contribution on transaction
 - Fixes on PDF member cards
 - Fix text emails signature
 - Fix debug mode using release archives
