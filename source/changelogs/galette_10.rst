@@ -6,7 +6,7 @@
 1.2.0.1 -> 1.2.1
 ****************
 
-See `full 1.2.1 changelog <https://bugs.galette.eu/versions/974>`_ for all details.
+See `full 1.2.1 changelog <https://bugs.galette.eu/versions/94>`_ for all details.
 
 - Rework groups management user interface
 - Several fixes and improvements on logo (webp transperency, logo display in mails, ...)
