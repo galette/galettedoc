@@ -42,7 +42,7 @@ Third party plugins
 Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
 
 * `oAuth2 <https://galette-community.github.io/plugin-oauth2/>`_ (Galette act as an oAuth2 provider),
-* `Stripe <https://github.com/galette-community/plugin-stripe>`_ (handle `Stripe payments <https://stripe.com/>`_),
+* `Stripe <https://galette-community.github.io/plugin-stripe/>`_ (handle `Stripe payments <https://stripe.com/>`_),
 * `HelloAsso <https://galette-community.github.io/plugin-helloasso/>`_ (handle `HelloAsso payments <https://www.helloasso.com/>`_),
 * `LegalNotices <https://galette-community.github.io/plugin-legalnotices/>`_ (manage legal notices pages),
 
