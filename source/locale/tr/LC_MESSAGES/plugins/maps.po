@@ -2,13 +2,14 @@
 # Copyright (C) 2011-2020, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Boran Roni <boranroniurtekin@gmail.com>, 2022.
+# Wrapty <wrapty@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2022-08-28 17:23+0000\n"
-"Last-Translator: Boran Roni <boranroniurtekin@gmail.com>\n"
+"PO-Revision-Date: 2026-01-02 22:01+0000\n"
+"Last-Translator: Wrapty <wrapty@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-maps/tr/>\n"
 "Language: tr\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 # 1456e63e95754e1fb28a53f850c4b9ad
 #: ../plugins/maps.rst:3 1456e63e95754e1fb28a53f850c4b9ad
@@ -26,14 +27,14 @@ msgstr "Haritalar"
 # 37dc6411a00f4298befed6288d6a5324
 #: ../plugins/maps.rst:5 37dc6411a00f4298befed6288d6a5324
 msgid "This plugin provides:"
-msgstr ""
+msgstr "Bu eklenti şunları sağlar:"
 
 # 313d0936e88d44fd80fc46310286c8d5
 #: ../plugins/maps.rst:7 313d0936e88d44fd80fc46310286c8d5
 msgid ""
 "possibility to store geogaphical coordinates for members (latitude and "
 "longitude),"
-msgstr ""
+msgstr "üyelerin coğrafi koordinatlarını (enlem ve boylam) saklama imkanı,"
 
 # 9ee44748c93d439b9334078d8f591999
 #: ../plugins/maps.rst:8 9ee44748c93d439b9334078d8f591999
@@ -41,24 +42,25 @@ msgid ""
 "a public map displaying up to date members that have choosen to be "
 "publically visible."
 msgstr ""
+"kamuya açık bir harita, kamuya açık olmayı seçmiş güncel üyeleri gösterir."
 
 # cfd5ac1519764dd9bb293edf8ad1da94
 #: ../plugins/maps.rst:11 cfd5ac1519764dd9bb293edf8ad1da94
 msgid "Installation"
-msgstr ""
+msgstr "Kurulum"
 
 # 55beaf7e4cf042b99d7bb20c20f15d19
 #: ../plugins/maps.rst:13 55beaf7e4cf042b99d7bb20c20f15d19
 msgid "First of all, download the plugin:"
-msgstr ""
+msgstr "Öncelikle, eklentiyi indirin:"
 
 #: ../plugins/maps.rst:15 7b67110bc6e64e4db20b4169ad88159c
 msgid "Get latest Maps plugin!"
-msgstr ""
+msgstr "En son Haritalar eklentisini edinin!"
 
 #: ../plugins/maps.rst:19 0784ff8161884624bcd4a62a89f806f8
 msgid "Get Maps plugin nightly build!"
-msgstr ""
+msgstr "Maps eklentisinin gece sürümünü edinin!"
 
 # 12972b70c1e84038aa983bf162bb561d
 #: ../plugins/maps.rst:23 12972b70c1e84038aa983bf162bb561d
@@ -66,11 +68,13 @@ msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
+"İndirilen arşivi Galette ``plugins`` dizinine çıkarın. Örneğin, Linux "
+"altında (`{url}` ve `{version}` değerlerini doğru değerlerle değiştirerek):"
 
 # df9d209ffc094964966364f420e03675
 #: ../plugins/maps.rst:33 df9d209ffc094964966364f420e03675
 msgid "Database initialisation"
-msgstr ""
+msgstr "Veritabanı başlatma"
 
 # 19bfd692fbaa4a89ab570a1dc61893f6
 #: ../plugins/maps.rst:35 19bfd692fbaa4a89ab570a1dc61893f6
@@ -78,16 +82,18 @@ msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
+"Çalışabilmesi için, bu eklenti veritabanında birkaç tablo gerektirir. Bkz. "
+":ref:`Galette eklenti yönetim arayüzü <plugins_managment>`."
 
 # bdcac6382fd046d4867b7dbd7a9144fd
 #: ../plugins/maps.rst:37 bdcac6382fd046d4867b7dbd7a9144fd
 msgid "And this is finished; Maps plugin is installed :)"
-msgstr ""
+msgstr "Ve bu işlem tamamlandı; Haritalar eklentisi yüklendi :)"
 
 # 27830182254440878b13199d6b5e55c6
 #: ../plugins/maps.rst:40 27830182254440878b13199d6b5e55c6
 msgid "Plugin usage"
-msgstr ""
+msgstr "Eklenti kullanımı"
 
 # b9c3b08462f24dc891cc1438d26f41ad
 #: ../plugins/maps.rst:42 b9c3b08462f24dc891cc1438d26f41ad
@@ -96,6 +102,9 @@ msgid ""
 "member is logged in, which contains `My location` entry. This page allow "
 "member to store its location."
 msgstr ""
+"Eklenti yüklendiğinde, üye oturum açtığında Galette menüsüne `Haritalar` "
+"grubu eklenir ve bu grup `Benim konumum` girişini içerir. Bu sayfa, üyenin "
+"konumunu kaydetmesine olanak tanır."
 
 # db360f726f3a4304a579a341756413f3
 #: ../plugins/maps.rst:44 db360f726f3a4304a579a341756413f3
@@ -103,6 +112,8 @@ msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
 msgstr ""
+"Bir üye görüntülenirken, yöneticilerin üye koordinatlarını ayarlamasına "
+"olanak tanıyan bir `Geolocalize` düğmesi de eklenmiştir."
 
 # 1af3d5aae17b4bada49a1c0f0ca06b29
 #: ../plugins/maps.rst:46 1af3d5aae17b4bada49a1c0f0ca06b29
@@ -112,6 +123,10 @@ msgid ""
 "will see all members, while simple members and visitors will only see up to "
 "date public ones."
 msgstr ""
+"Ayrıca, güncel coğrafi konum bilgisi olan üyeleri gösteren bir `Harita` "
+"girişi genel sayfalar listesine eklenmiştir. Yöneticiler ve personel tüm "
+"üyeleri görebilirken, basit üyeler ve ziyaretçiler yalnızca güncel genel "
+"üyeleri görebilir."
 
 # 33b190b6ca084cefa8b9bd03c6981002
 #: ../plugins/maps.rst:48 33b190b6ca084cefa8b9bd03c6981002
@@ -119,6 +134,8 @@ msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
 msgstr ""
+"Öncelikle, üyeler konum koordinatlarını gireceklerdir. Birkaç seçenek "
+"sunulmaktadır:"
 
 # 72dc0efe31654226bbbe60dd20f66c12
 #: ../plugins/maps.rst:50 72dc0efe31654226bbbe60dd20f66c12
@@ -127,6 +144,9 @@ msgid ""
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
 "org>`_),"
 msgstr ""
+"üye bilgilerinde kasaba ayarlanmışsa, olası yerlerin bir listesi "
+"önerilecektir (`Nominatim çevrimiçi hizmeti <https://"
+"nominatim.openstreetmap.org>`_ aracılığıyla),"
 
 # 1219157d2ba741938fb71d75fec71728
 #: ../plugins/maps.rst:51 1219157d2ba741938fb71d75fec71728
@@ -134,11 +154,15 @@ msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
 msgstr ""
+"ek olarak, bir arama bölgesi (`OpenStreetMap <https://"
+"nominatim.openstreetmap.org/>`_ tarafından sağlanmaktadır),"
 
 # f581f5c6ae7b4d0aabb4838bdabcb4d1
 #: ../plugins/maps.rst:52 f581f5c6ae7b4d0aabb4838bdabcb4d1
 msgid "and also a geolocalize button using browser capacities."
 msgstr ""
+"ve ayrıca tarayıcı özelliklerini kullanan bir coğrafi konum belirleme "
+"düğmesi."
 
 # 99d4a42cc87645d4bf15eef0c0de81bf
 #: ../plugins/maps.rst:54 99d4a42cc87645d4bf15eef0c0de81bf
@@ -146,6 +170,8 @@ msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
 msgstr ""
+"Arama bölgesi, üyelerin konumunu kaydederken ve haritaları görüntülerken "
+"kullanılabilir."
 
 # da083618a9c54f1e9fe1a5ac4d49e503
 #: ../plugins/maps.rst:60 da083618a9c54f1e9fe1a5ac4d49e503
@@ -153,14 +179,18 @@ msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
 msgstr ""
+"Bir üye, harita üzerinde konumunu (istediği hassasiyetle) aşağıdaki "
+"seçeneklerden birini seçerek tanımlayabilir:"
 
 # 5cc12078cb6345c8876df9a227d64be8
 #: ../plugins/maps.rst:66 5cc12078cb6345c8876df9a227d64be8
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
+"Coğrafi konum belirleme düğmesini kullanarak tarayıcıdan konumunu "
+"belirleyebilirsiniz:"
 
 # 822d4913304041ca8e197e0470a3ef78
 #: ../plugins/maps.rst:72 822d4913304041ca8e197e0470a3ef78
 msgid "Then, member location is displayed on map, and can be removed:"
-msgstr ""
+msgstr "Ardından, üye konumu haritada görüntülenir ve kaldırılabilir:"
