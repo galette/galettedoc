@@ -2,26 +2,30 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
+# தமிழ்நேரம் <tamilneram247@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-02 10:10+0000\n"
+"Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-user-"
+"configuration/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: ../usermanual/configuration.rst:5 1335eb0386724f4c98a065e2f69816fd
 msgid "Fields Configuration"
-msgstr ""
+msgstr "புலங்கள் கட்டமைப்பு"
 
 #: ../usermanual/configuration.rst:8 770dc3a97fff41479c0733ad1b11a34b
 msgid "List fields"
-msgstr ""
+msgstr "பட்டியல் புலங்கள்"
 
 #: ../usermanual/configuration.rst:12 6b756b37b1094b8ebc092ecc1db8fc8b
 msgid ""
@@ -29,24 +33,30 @@ msgid ""
 "order they will appear with a drag & drop interface. Related access rights "
 "can be set from core fields configuration (see below)."
 msgstr ""
+"கேலட் உறுப்பினர்கள் பட்டியலில் எந்த புலங்கள் தோன்றும் மற்றும் அவை இழுத்து விடுங்கள் "
+"இடைமுகத்துடன் தோன்றும் வரிசையை நீங்கள் தேர்வு செய்யலாம். தொடர்புடைய அணுகல் உரிமைகளை "
+"முக்கிய புலங்கள் உள்ளமைவிலிருந்து அமைக்கலாம் (கீழே காண்க)."
 
 #: ../usermanual/configuration.rst:16 f3474774034544638002d700d3da27f7
 msgid "Two fields are mandatory and cannot be moved: member number and name."
 msgstr ""
+"இரண்டு புலங்கள் கட்டாயம் மற்றும் நகர்த்த முடியாது: உறுப்பினர் எண் மற்றும் பெயர்."
 
 #: ../usermanual/configuration.rst:18 6e52a74784094262a3d14cd64dd34ce0
 msgid ""
 "It is not possible to set access rights on id column, and parent will be "
 "accessible for staff members only."
 msgstr ""
+"அடையாளம் நெடுவரிசையில் அணுகல் உரிமைகளை அமைக்க முடியாது, மேலும் பெற்றோரை பணியாளர்கள் "
+"மட்டுமே அணுக முடியும்."
 
 #: ../usermanual/configuration.rst:20 5bff4ba31e1a470c8ce0931e43d2f789
 msgid "List fields management"
-msgstr ""
+msgstr "பட்டியல் புலங்கள் மேலாண்மை"
 
 #: ../usermanual/configuration.rst:28 7a0400ffa7684e5d93f497ac38d95aae
 msgid "Mandatory fields and access rights"
-msgstr ""
+msgstr "கட்டாய புலங்கள் மற்றும் அணுகல் உரிமைகள்"
 
 #: ../usermanual/configuration.rst:30 5f1a9f0b17624f16aba64bec24a41af7
 msgid ""
@@ -54,6 +64,9 @@ msgid ""
 "configuration may not suit your needs, but you can configure some elements "
 "easily ;)"
 msgstr ""
+"நீங்கள் ஒரு உறுப்பினரை உருவாக்கும்போது அல்லது திருத்தும்போது, சில புலங்கள் கட்டாயமாக "
+"இருக்கும். இயல்புநிலை உள்ளமைவு உங்கள் தேவைகளுக்கு பொருந்தாது, ஆனால் நீங்கள் சில கூறுகளை "
+"எளிதாக உள்ளமைக்கலாம்;)"
 
 #: ../usermanual/configuration.rst:32 d3b171057fd14c5eb49b0275debc53fb
 msgid ""
@@ -61,22 +74,28 @@ msgid ""
 "fields available for members, and choose for each one if it is mandatory or "
 "not, as well as associated access rights:"
 msgstr ""
+"`Configuration`, `Core fields` மெனுவிலிருந்து, உறுப்பினர்களுக்குக் கிடைக்கும் "
+"அனைத்துப் புலங்களுக்கும் நீங்கள் அணுகலைப் பெறுவீர்கள், மேலும் ஒவ்வொரு துறையும் கட்டாயமா இல்லையா "
+"என்பதைத் தேர்வுசெய்யவும், அத்துடன் தொடர்புடைய அணுகல் உரிமைகளும்:"
 
 #: ../usermanual/configuration.rst:34 e453d86c7e2c4f319c57ea5e13c84b1a
 msgid "`inaccessible` will make the field inaccessible for everyone,"
-msgstr ""
+msgstr "'அணுக முடியாதது' என்பது புலத்தை அனைவருக்கும் அணுக முடியாததாக மாற்றும்,"
 
 #: ../usermanual/configuration.rst:35 59acaa933e7b4989bfd33f94e2cb911b
 msgid ""
 "`administrator` will make the field readable and writeable for "
 "administrators only,"
 msgstr ""
+"`நிர்வாகி` புலத்தை நிர்வாகிகளுக்கு மட்டுமே படிக்கக்கூடியதாகவும் எழுதக்கூடியதாகவும் மாற்றும்,"
 
 #: ../usermanual/configuration.rst:36 42c67b7f525042a78260b73bb03f7614
 msgid ""
 "`staff members` will make the field readable and writable for staff members "
 "and administrators,"
 msgstr ""
+"`ஊழியர்கள்` என்பது பணியாளர்கள் மற்றும் நிர்வாகிகளுக்கு புலத்தை படிக்கக்கூடியதாகவும் "
+"எழுதக்கூடியதாகவும் மாற்றும்,"
 
 #: ../usermanual/configuration.rst:37 c07be6eda5b34e79924aef558f9b5302
 msgid ""
@@ -84,26 +103,31 @@ msgid ""
 "managers on the memebrs of groups they own, and for staff memebrs and "
 "administrators,"
 msgstr ""
+"`குழு மேலாளர்கள்` புலத்தை படிக்கக்கூடியதாகவும் எழுதக்கூடியதாகவும் ஆக்குவார்கள்."
 
 #: ../usermanual/configuration.rst:38 b0fedf50b759408698e5c3a54a84e468
 msgid ""
 "`read/write` will make the field readable and writeable for member, groups "
 "managers, staff members and administrators,"
 msgstr ""
+"`படிக்க/எழுது` என்பது புலத்தை உறுப்பினர், குழு மேலாளர், பணியாளர்கள் மற்றும் நிர்வாகிகள் "
+"படிக்கக்கூடியதாகவும் எழுதக்கூடியதாகவும் மாற்றும்,"
 
 #: ../usermanual/configuration.rst:39 85896d2a8d6d470d919d8a2c0f947b46
 msgid ""
 "`read only` will make the field read only for the members, but writable for "
 "groups managers, staff members and administrators."
 msgstr ""
+"`படிக்க மட்டும்` என்பது புலத்தை உறுப்பினர்களுக்கு மட்டுமே படிக்க வைக்கும், ஆனால் குழு "
+"மேலாளர்கள், ஊழியர்கள் உறுப்பினர்கள் மற்றும் நிர்வாகிகளுக்கு எழுதக்கூடியதாக இருக்கும்."
 
 #: ../usermanual/configuration.rst:41 7496d8efe703469fb5843b486763e81c
 msgid "Core fields management"
-msgstr ""
+msgstr "முக்கிய துறைகள் மேலாண்மை"
 
 #: ../usermanual/configuration.rst:49 770dc3a97fff41479c0733ad1b11a34b
 msgid "Dynamic fields"
-msgstr ""
+msgstr "மாறும் புலங்கள்"
 
 #: ../usermanual/configuration.rst:51 43cf9bb325fe4d8d90bafa631c077d7a
 msgid ""
@@ -111,6 +135,9 @@ msgid ""
 "transactions. Some of them will be useless, but you may need fields that "
 "does not exists..."
 msgstr ""
+"உறுப்பினர்கள், பங்களிப்புகள் மற்றும் பரிவர்த்தனைகளுக்கான பல துறைகளுடன் இயல்புநிலைக்கு "
+"Galette வருகிறது. அவற்றில் சில பயனற்றதாக இருக்கும், ஆனால் உங்களுக்கு இல்லாத புலங்கள் "
+"தேவைப்படலாம்..."
 
 #: ../usermanual/configuration.rst:53 3aee766a4dc24064993cbd2f1f4dd08a
 msgid ""
@@ -118,38 +145,41 @@ msgid ""
 "label, define if it is mandatory or not, and that's all : Galette will "
 "handle them automatically, just show the result ;)"
 msgstr ""
+"இந்த விசயத்தில், இது மிகவும் எளிமையானது: லேபிளுடன் ஒரு புதிய மாறும் புலத்தைச் "
+"சேர்க்கவும், அது கட்டாயமா இல்லையா என்பதை வரையறுக்கவும், அவ்வளவுதான்: கேலட் தானாகவே அவற்றைக் "
+"கையாளும், முடிவைக் காட்டவும்;)"
 
 #: ../usermanual/configuration.rst:55 eafe7796798d46ada0da8caef1a012d8
 msgid "There are several types of dynamic fields:"
-msgstr ""
+msgstr "பல வகையான மாறும் புலங்கள் உள்ளன:"
 
 #: ../usermanual/configuration.rst:57 35d61b45d3d84e8996ae665df95ab415
 msgid "`separator`: just a label, like a part title,"
-msgstr ""
+msgstr "`பிரிப்பான்`: ஒரு சிட்டை, ஒரு பகுதி தலைப்பு போன்றது,"
 
 #: ../usermanual/configuration.rst:58 7a6128a9a45846f5a59f1b2f0c2e37f3
 msgid "`free text`: multiline text area,"
-msgstr ""
+msgstr "`இலவச உரை`: பல வரி உரை பகுதி,"
 
 #: ../usermanual/configuration.rst:59 3cf316be659240c8869772634a0184a2
 msgid "`single line`: one line text,"
-msgstr ""
+msgstr "`ஒற்றை வரி`: ஒரு வரி உரை,"
 
 #: ../usermanual/configuration.rst:60 5c1947f009e84f90b48ccbc66f902153
 msgid "`choice`: a dropdown list,"
-msgstr ""
+msgstr "`choice`: ஒரு கீழ்தோன்றும் பட்டியல்,"
 
 #: ../usermanual/configuration.rst:61 2b7e5872d9464c5e9b93e1553aaa5766
 msgid "`date`: a date field with a selector,"
-msgstr ""
+msgstr "`date`: தேர்வாளருடன் ஒரு தேதி புலம்,"
 
 #: ../usermanual/configuration.rst:62 8ed0bf94902942a2960fbbf2055d0e48
 msgid "`boolean`: a checkbox,"
-msgstr ""
+msgstr "`பூலியன்`: ஒரு தேர்வுப்பெட்டி,"
 
 #: ../usermanual/configuration.rst:63 05fdfc838bf74bba8e962477f5d107f5
 msgid "`file`: add files."
-msgstr ""
+msgstr "`file`: கோப்புகளைச் சேர்க்கவும்."
 
 #: ../usermanual/configuration.rst:69 927a8a38deb4481da376b847f4ab791e
 msgid ""
@@ -157,6 +187,9 @@ msgid ""
 "which causes issues trying to make searchs. Now, every date is stored using "
 "the `Y-m-d` format."
 msgstr ""
+"மாறும் தேதி புலங்கள் உள்நுழைந்த பயனர் மொழி வடிவத்தைப் பயன்படுத்தி சேமிக்கப்படும்; இது "
+"தேடல்களைச் செய்ய முயற்சிக்கும் சிக்கல்களை ஏற்படுத்துகிறது. இப்போது, ஒவ்வொரு தேதியும் `Y-m-"
+"d` வடிவமைப்பைப் பயன்படுத்தி சேமிக்கப்படுகிறது."
 
 #: ../usermanual/configuration.rst:71 b72baeb27dfb4e3e9e090f24fd64f93b
 msgid ""
@@ -164,82 +197,91 @@ msgid ""
 "data using the related admin tool <admintools>` (⚠️ make sure to backup your "
 "database before! ⚠️)."
 msgstr ""
+"நீங்கள் மாறும் தேதிப் புலங்களைப் பயன்படுத்தினால், தொடர்புடைய நிர்வாகக் கருவியான <admintools>` "
+"(⚠️ உங்கள் தரவுத்தளத்தை காப்புப் பிரதி எடுக்கவும்! ⚠️) தொடர்புடைய நிர்வாகக் கருவியைப் "
+"பயன்படுத்தி உங்கள் தரவை :ref:` புதுப்பிக்க வேண்டும்."
 
 #: ../usermanual/configuration.rst:73 28e22ecda0fa4956a5f2d5a0be009d24
 msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
+"புதிய புலத்தை உருவாக்கும் போது (அல்லது ஏற்கனவே உள்ள ஒன்றைத் திருத்தும்போது); உங்களால் "
+"முடியும்:"
 
 #: ../usermanual/configuration.rst:75 24e96bec0a9948f4bf6d5463cfbdeba9
 msgid "mark it as required,"
-msgstr ""
+msgstr "தேவைக்கேற்ப குறிக்கவும்,"
 
 #: ../usermanual/configuration.rst:76 b4352a28672a42e4b657f411e7541582
 msgid "define access rights, the same as for core fields,"
-msgstr ""
+msgstr "அணுகல் உரிமைகளை வரையறுக்கவும், முக்கிய புலங்களைப் போலவே,"
 
 #: ../usermanual/configuration.rst:77 daa661d861bb46fc800d971c8c6a0aba
 msgid "add extra information to help users."
-msgstr ""
+msgstr "பயனர்களுக்கு உதவ கூடுதல் தகவல்களைச் சேர்க்கவும்."
 
 #: ../usermanual/configuration.rst:79 9317a6067c80470080803dc81b34e90b
 msgid "A dynamic field"
-msgstr ""
+msgstr "ஒரு மாறும் புலம்"
 
 #: ../usermanual/configuration.rst:84 c2a8e9c503c34594b0b994269ed6a2ca
 msgid ""
 "Some field types like separators, dates and booleans, does not need any "
 "extra information; for others:"
 msgstr ""
+"பிரிப்பான்கள், தேதிகள் மற்றும் பூலியன்கள் போன்ற சில புல வகைகளுக்கு கூடுதல் செய்தி எதுவும் "
+"தேவையில்லை; மற்றவர்களுக்கு:"
 
 #: ../usermanual/configuration.rst:86 ee1155f5a34c49519f491dd5d08c83c9
 msgid "`free text`:"
-msgstr ""
+msgstr "`இலவச உரை`:"
 
 #: ../usermanual/configuration.rst:88 2f7e975d89d9495497a3a9cbd0dae3f9
 msgid "`width`: define number of columns,"
-msgstr ""
+msgstr "`அகலம்`: நெடுவரிசைகளின் எண்ணிக்கையை வரையறுக்கவும்,"
 
 #: ../usermanual/configuration.rst:89 f5cf36548c8a4aafb5c301dc4dbc0f70
 msgid "`height`: define number of rows."
-msgstr ""
+msgstr "`உயரம்`: வரிசைகளின் எண்ணிக்கையை வரையறுக்கவும்."
 
 #: ../usermanual/configuration.rst:91 1c54d15dfd6a4f8791e21deb728b3397
 msgid "`single line`:"
-msgstr ""
+msgstr "`ஒற்றை வரி`:"
 
 #: ../usermanual/configuration.rst:93 06cbb5a053354c0f900ba15f367330c1
 msgid "`width`: field width,"
-msgstr ""
+msgstr "`அகலம்`: புல அகலம்,"
 
 #: ../usermanual/configuration.rst:94 8d2abbf694b945f9beb1fe8b5aa25067
 msgid "`size`: number of characters,"
-msgstr ""
+msgstr "`அளவு`: எழுத்துகளின் எண்ணிக்கை,"
 
 #: ../usermanual/configuration.rst:95 69cf7521b12e4e8c8de485c112f96b44
 msgid "`repeat`: number of possible ocurences."
-msgstr ""
+msgstr "`மீண்டும்`: சாத்தியமான நிகழ்வுகளின் எண்ணிக்கை."
 
 #: ../usermanual/configuration.rst:97 d3b90562c1244a27987b4e6e13b6ddef
 msgid "`choice`:"
-msgstr ""
+msgstr "`தேர்வு`:"
 
 #: ../usermanual/configuration.rst:99 7f8e29e61eda4f2ab9e0f527498fbd31
 msgid "`values`: possible values for the dropdown."
-msgstr ""
+msgstr "`மதிப்புகள்`: கீழ்தோன்றும் சாத்தியமான மதிப்புகள்."
 
 #: ../usermanual/configuration.rst:101 b20f3ccac5b5414eb86d5a041068dc8e
 msgid "`file`:"
-msgstr ""
+msgstr "`கோப்பு`:"
 
 #: ../usermanual/configuration.rst:103 2e8493c271c145689bded08db1544894
 msgid ""
 "`size`: maximum file size, in Kio (this size is limited to the one for the "
 "PHP configuration)."
 msgstr ""
+"`size`: அதிகபட்ச கோப்பு அளவு, கியோவில் (இந்த அளவு பிஎச்பி உள்ளமைவுக்கு "
+"வரம்பிடப்பட்டுள்ளது)."
 
 #: ../usermanual/configuration.rst:106 f51eeb223a8f4595a99822ce74de6a87
 msgid "Labels translation"
-msgstr ""
+msgstr "லேபிள்கள் மொழிபெயர்ப்பு"
 
 #: ../usermanual/configuration.rst:108 620b32d302854c5a96be42e6b06b7c98
 msgid ""
@@ -247,14 +289,19 @@ msgid ""
 "there is only one value possible. Galette proposes an interface to translate "
 "those labels in each available language."
 msgstr ""
+"Galette பல மொழிகளைக் கையாளுகிறது, ஆனால் நீங்கள் ஒரு புதிய மாறும் புலத்தைச் சேர்க்கும்போது, "
+"ஒரே ஒரு மதிப்பு மட்டுமே சாத்தியமாகும். கிடைக்கக்கூடிய ஒவ்வொரு மொழியிலும் அந்த லேபிள்களை "
+"மொழிபெயர்க்க ஒரு இடைமுகத்தை கேலட் முன்மொழிகிறது."
 
 #: ../usermanual/configuration.rst:110 4d650efaef58446fab30ecec68d6edd9
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
+"ஒவ்வொரு புதிய லேபிளும் தற்போதைய Galette lang உடன் சேர்க்கப்படும் என்பதை நினைவில் "
+"கொள்ளவும்."
 
 #: ../usermanual/configuration.rst:113 ec0d959f0d9a45338b595867f8aae014
 msgid "Emails contents"
-msgstr ""
+msgstr "மின்னஞ்சல்கள் உள்ளடக்கம்"
 
 #: ../usermanual/configuration.rst:115 a00ccb772d3d4676ba56bcba5e0cf028
 msgid ""
@@ -262,10 +309,13 @@ msgid ""
 "cans be sent to users and/or administrators, when you add a new member or a "
 "new contribution, or from the lost password feature for example."
 msgstr ""
+"உங்கள் உள்ளமைவைப் பொறுத்து (விருப்பங்களைப் பார்க்கவும்), நீங்கள் ஒரு புதிய உறுப்பினர் அல்லது "
+"புதிய பங்களிப்பைச் சேர்க்கும்போது அல்லது இழந்த கடவுச்சொல் அம்சத்திலிருந்து பயனர்கள் மற்றும்/"
+"அல்லது நிர்வாகிகளுக்கு நிர்வாக மின்னஞ்சல்கள் அனுப்பப்படும்."
 
 #: ../usermanual/configuration.rst:117 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
 msgid "Defaults are provided, but you can change them."
-msgstr ""
+msgstr "இயல்புநிலைகள் வழங்கப்படுகின்றன, ஆனால் நீங்கள் அவற்றை மாற்றலாம்."
 
 #: ../usermanual/configuration.rst:119 1eaf6d3b865c494287de03399e0997d0
 msgid ""
@@ -273,46 +323,55 @@ msgid ""
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
 "carefull to not forget any of those, that could cause sending issues."
 msgstr ""
+"அனுப்பும் போது தானாகவே மாற்றப்படும் ``{VARIABLE}`` படிவத்தின் - அந்த உரைகளில் மாறிகள் உள்ளன "
+"என்பதைக் கவனத்தில் கொள்ள வேண்டும். அனுப்புவதில் சிக்கல்களை ஏற்படுத்தக்கூடிய அவற்றில் எதையும் "
+"மறந்துவிடாமல் கவனமாக இருங்கள்."
 
 #: ../usermanual/configuration.rst:121 16689d2ce01a492397a87af53e4af959
 msgid "Edit mail send to a new member in french"
 msgstr ""
+"பிரஞ்சு மொழியில் புதிய உறுப்பினருக்கு அனுப்பும் மின்னஞ்சலைத் திருத்தவும்"
 
 #: ../usermanual/configuration.rst:126 e141fe73bcf64b9fb2143f92c6a4e4b9
 msgid "An email will be send to member when:"
-msgstr ""
+msgstr "உறுப்பினருக்கு மின்னஞ்சல் அனுப்பப்படும் போது:"
 
 #: ../usermanual/configuration.rst:128 6cbe0fd53f9a4290a57412e635a6792d
 msgid "he self subscribes. This mail contains authentication information,"
 msgstr ""
+"அவர் சுயமாக சந்தா செலுத்துகிறார். இந்த மின்னஞ்சலில் அங்கீகாரத் செய்தி உள்ளது,"
 
 #: ../usermanual/configuration.rst:129 7801258e9e8248de9fbd6a88fb385ad6
 msgid ""
 "his card is added or edited by someone else (if the corresponding box is "
 "checked),"
 msgstr ""
+"அவருடைய அட்டை வேறொருவரால் சேர்க்கப்பட்டது அல்லது திருத்தப்பட்டது (தொடர்புடைய பெட்டி "
+"சரிபார்க்கப்பட்டால்),"
 
 #: ../usermanual/configuration.rst:130 f402746f081b4cc192495855ad5e5793
 msgid "he uses lost password feature,"
-msgstr ""
+msgstr "அவர் இழந்த கடவுச்சொல் அம்சத்தைப் பயன்படுத்துகிறார்,"
 
 #: ../usermanual/configuration.rst:131 ae45becfa53547a284ff4e1e1e677f45
 msgid ""
 "a new contribution is attache to his account (if the corresponding box is "
 "checked)."
 msgstr ""
+"அவரது கணக்கில் ஒரு புதிய பங்களிப்பு இணைக்கப்பட்டுள்ளது (தொடர்புடைய பெட்டி சரிபார்க்கப்பட்டால்)"
+"."
 
 #: ../usermanual/configuration.rst:133 257887c09acd4057a73575c1e5ccd646
 msgid "An email will be send to administrators when:"
-msgstr ""
+msgstr "நிர்வாகிகளுக்கு மின்னஞ்சல் அனுப்பப்படும் போது:"
 
 #: ../usermanual/configuration.rst:135 d9470aa131bd46ad91fae1bde7def2a2
 msgid "a new member is added or self subscribes,"
-msgstr ""
+msgstr "ஒரு புதிய உறுப்பினர் சேர்க்கப்படுகிறார் அல்லது தன்வய குழுசேர்கிறார்,"
 
 #: ../usermanual/configuration.rst:136 f06dbb209abf42e9a4b8250a25550317
 msgid "a new contribution is attached to his account."
-msgstr ""
+msgstr "அவரது கணக்கில் ஒரு புதிய பங்களிப்பு இணைக்கப்பட்டுள்ளது."
 
 #: ../usermanual/configuration.rst:138 bdf33e0f5b0f4e2bb55dda5cb26056bb
 msgid ""
@@ -322,6 +381,11 @@ msgid ""
 "conditionned on a checkbox from the user interface, excepting for self "
 "subscription messages that will always be send."
 msgstr ""
+"நிச்சயமாக, கேலட் உள்ளமைவு அனுமதித்தால் மின்னஞ்சல்கள் அனுப்பப்படும் (மற்றும் அமைப்பு சரியானது). "
+"நிர்வாகிகளுக்கு செய்திகளை அனுப்புவது உலகளவில் விருப்பத்தேர்வுகளிலிருந்து "
+"கட்டமைக்கப்படுகிறது, அதே சமயம் உறுப்பினர்களுக்கு மின்னஞ்சல்களை அனுப்புவது பயனர் "
+"இடைமுகத்திலிருந்து ஒரு தேர்வுப்பெட்டியில் நிபந்தனைக்குட்பட்டது, எப்போதும் அனுப்பப்படும் "
+"தன்வய சந்தா செய்திகளைத் தவிர."
 
 #: ../usermanual/configuration.rst:140 196630f591274913a30590a46917363c
 msgid ""
@@ -330,3 +394,7 @@ msgid ""
 "others will be only on some conditions. Refer to the inline help on Galette "
 "interface to know more."
 msgstr ""
+"பல மாறிகள் - அனுப்பும்போது தானாகவே மாற்றப்படும் - பொருள் மற்றும் உள்ளடக்கம் ஆகிய இரண்டிற்கும் "
+"கிடைக்கும். அவற்றில் சில எல்லா செய்திகளிலும் பயன்படுத்தப்படலாம், ஆனால் மற்றவை சில "
+"நிபந்தனைகளில் மட்டுமே இருக்கும். மேலும் அறிய கேலட் இடைமுகத்தில் உள்ள இன்லைன் உதவியைப் "
+"பார்க்கவும்."
