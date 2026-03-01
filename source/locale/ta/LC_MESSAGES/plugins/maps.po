@@ -11,8 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
 "PO-Revision-Date: 2026-03-02 10:10+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-maps/ta/>\n"
 "Language: ta\n"
@@ -35,12 +34,15 @@ msgid ""
 "possibility to store geogaphical coordinates for members (latitude and "
 "longitude),"
 msgstr ""
+"உறுப்பினர்களுக்கான புவியியல் ஆயங்களை சேமிப்பதற்கான நிகழக்கூடிய (அட்சரேகை மற்றும் தீர்க்கரேகை)"
+","
 
 #: ../plugins/maps.rst:8 9ee44748c93d439b9334078d8f591999
 msgid ""
 "a public map displaying up to date members that have choosen to be "
 "publically visible."
 msgstr ""
+"பொது வரைபடம், பொதுவில் பார்க்கத் தேர்ந்தெடுக்கப்பட்ட புதுப்பித்த உறுப்பினர்களைக் காண்பிக்கும்."
 
 #: ../plugins/maps.rst:11 cfd5ac1519764dd9bb293edf8ad1da94
 msgid "Installation"
@@ -52,20 +54,20 @@ msgstr "முதலில், சொருகி பதிவிறக்கவ
 
 #: ../plugins/maps.rst:15 7b67110bc6e64e4db20b4169ad88159c
 msgid "Get latest Maps plugin!"
-msgstr ""
+msgstr "அண்மைக் கால வரைபட செருகுநிரலைப் பெறுங்கள்!"
 
 #: ../plugins/maps.rst:19 0784ff8161884624bcd4a62a89f806f8
 msgid "Get Maps plugin nightly build!"
-msgstr ""
+msgstr "வரைபடச் செருகுநிரலைப் பெறுங்கள்!"
 
 #: ../plugins/maps.rst:23 12972b70c1e84038aa983bf162bb561d
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
-"பதிவிறக்கம் செய்யப்பட்ட காப்பகத்தை கேலட் `` செருகுநிரல்கள்`` கோப்பகத்தில் பிரித்தெடுக்கவும். "
-"எடுத்துக்காட்டாக, லினக்சின் கீழ் (`{url}` மற்றும் {{version} `ஆகியவற்றை சரியான "
-"மதிப்புகளுடன் மாற்றுகிறது):"
+"பதிவிறக்கம் செய்யப்பட்ட காப்பகத்தை Galette ``plugins`` கோப்பகத்தில் பிரித்தெடுக்கவும். "
+"எடுத்துக்காட்டாக, linux இன் கீழ் (`{url}` மற்றும் `{version}` ஐ சரியான மதிப்புகளுடன் "
+"மாற்றுகிறது):"
 
 #: ../plugins/maps.rst:33 df9d209ffc094964966364f420e03675
 msgid "Database initialisation"
@@ -76,16 +78,16 @@ msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
-"வேலை செய்ய, இந்த சொருகி தரவுத்தளத்தில் பல அட்டவணைகள் தேவை. காண்க :ref:`கேலட் செருகுநிரல்கள் மேலாண்மை இடைமுகம் "
-"<plugins_managment>`."
+"வேலை செய்ய, இந்த சொருகி தரவுத்தளத்தில் பல அட்டவணைகள் தேவை. காண்க :ref:`கேலட் "
+"செருகுநிரல்கள் மேலாண்மை இடைமுகம் <plugins_managment>`."
 
 #: ../plugins/maps.rst:37 bdcac6382fd046d4867b7dbd7a9144fd
 msgid "And this is finished; Maps plugin is installed :)"
-msgstr ""
+msgstr "மேலும் இது முடிந்தது; Maps செருகுநிரல் நிறுவப்பட்டது :)"
 
 #: ../plugins/maps.rst:40 27830182254440878b13199d6b5e55c6
 msgid "Plugin usage"
-msgstr ""
+msgstr "செருகுநிரல் பயன்பாடு"
 
 #: ../plugins/maps.rst:42 b9c3b08462f24dc891cc1438d26f41ad
 msgid ""
@@ -93,12 +95,17 @@ msgid ""
 "member is logged in, which contains `My location` entry. This page allow "
 "member to store its location."
 msgstr ""
+"செருகுநிரல் நிறுவப்பட்டவுடன், ஒரு உறுப்பினர் உள்நுழைந்திருக்கும் போது, கேலட் பட்டியலில் "
+"ஒரு குழு `வரைபடம்' சேர்க்கப்படும், அதில் `எனது இருப்பிடம்` உள்ளீடு இருக்கும். இந்த பக்கம் "
+"உறுப்பினர் அதன் இருப்பிடத்தை சேமிக்க அனுமதிக்கிறது."
 
 #: ../plugins/maps.rst:44 db360f726f3a4304a579a341756413f3
 msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
 msgstr ""
+"ஒரு உறுப்பினரைக் காண்பிக்கும் போது `சியோலோகலைச்` பொத்தானும் சேர்க்கப்படும், இது உறுப்பினர் "
+"ஒருங்கிணைப்புகளை அமைக்க நிர்வாகிகளை அனுமதிக்கிறது."
 
 #: ../plugins/maps.rst:46 1af3d5aae17b4bada49a1c0f0ca06b29
 msgid ""
@@ -107,12 +114,18 @@ msgid ""
 "will see all members, while simple members and visitors will only see up to "
 "date public ones."
 msgstr ""
+"மேலும், 'வரைபடம்' உள்ளீடு பொதுப் பக்கங்களின் பட்டியலில் சேர்க்கப்பட்டுள்ளது, இது புதுப்பித்த "
+"நிலையில் உள்ள புவியியல்மயமாக்கப்பட்ட உறுப்பினர்களைக் காட்டுகிறது. நிர்வாகிகள் மற்றும் "
+"பணியாளர்கள் அனைத்து உறுப்பினர்களையும் பார்ப்பார்கள், அதே நேரத்தில் எளிய உறுப்பினர்கள் மற்றும் "
+"பார்வையாளர்கள் புதுப்பித்த பொது நபர்களை மட்டுமே பார்ப்பார்கள்."
 
 #: ../plugins/maps.rst:48 33b190b6ca084cefa8b9bd03c6981002
 msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
 msgstr ""
+"முதலில், உறுப்பினர்கள் தங்கள் இருப்பிட ஆயங்களை உள்ளிடுவார்கள். பல விருப்பங்கள் "
+"வழங்கப்படுகின்றன:"
 
 #: ../plugins/maps.rst:50 72dc0efe31654226bbbe60dd20f66c12
 msgid ""
@@ -120,34 +133,44 @@ msgid ""
 "be proposed (via `Nominatim online service <https://nominatim.openstreetmap."
 "org>`_),"
 msgstr ""
+"உறுப்பினர் தகவலில் நகரம் அமைக்கப்பட்டிருந்தால், சாத்தியமான இடங்களின் பட்டியல் பரிந்துரைக்கப்படும் "
+"(`நாமினாடிம் நிகழ்நிலை பணி <https://nominatim.openstreetmap.org>`_)"
 
 #: ../plugins/maps.rst:51 1219157d2ba741938fb71d75fec71728
 msgid ""
 "additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim."
 "openstreetmap.org/>`_),"
 msgstr ""
+"கூடுதலாக, ஒரு தேடல் மண்டலம் (`OpenStreetMap <https://"
+"nominatim.openstreetmap.org/>`_ இலிருந்து வழங்கப்படுகிறது),"
 
 #: ../plugins/maps.rst:52 f581f5c6ae7b4d0aabb4838bdabcb4d1
 msgid "and also a geolocalize button using browser capacities."
-msgstr ""
+msgstr "மேலும் உலாவி திறன்களைப் பயன்படுத்தி புவியியல்மயமாக்கல் பொத்தான்."
 
 #: ../plugins/maps.rst:54 99d4a42cc87645d4bf15eef0c0de81bf
 msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
 msgstr ""
+"உறுப்பினர்களின் இருப்பிடத்தைச் சேமிக்கும் போதும், வரைபடங்களைக் காண்பிக்கும் போதும் தேடல் "
+"மண்டலத்தைப் பயன்படுத்தலாம்."
 
 #: ../plugins/maps.rst:60 da083618a9c54f1e9fe1a5ac4d49e503
 msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
 msgstr ""
+"ஒரு உறுப்பினர் அதன் இருப்பிடத்தை (அவர் விரும்பும் துல்லியத்துடன்) வரைபடத்தில் "
+"முன்மொழிவுகளில் ஒன்றைத் தேர்ந்தெடுக்கலாம்:"
 
 #: ../plugins/maps.rst:66 5cc12078cb6345c8876df9a227d64be8
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
+"புவிசார்மயமாக்கல் பொத்தானைப் பயன்படுத்துவது உலாவியில் இருந்து அதன் நிலையை வரையறுக்கும்:"
 
 #: ../plugins/maps.rst:72 822d4913304041ca8e197e0470a3ef78
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
+"பின்னர், உறுப்பினர் இருப்பிடம் வரைபடத்தில் காட்டப்படும், மேலும் அகற்றலாம்:"
