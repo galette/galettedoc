@@ -2,32 +2,38 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
+# தமிழ்நேரம் <tamilneram247@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-02 10:10+0000\n"
+"Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-user-"
+"advanced/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
 msgid "Experienced users"
-msgstr ""
+msgstr "பட்டறிவு வாய்ந்த பயனர்கள்"
 
 #: ../usermanual/avancee.rst:9 1f9bbed20cf5465d9384452334706982
 msgid ""
 "Use only following instructions if you know what you are doing... \"The "
 "management is not responsable for any case of [...]\" :D"
 msgstr ""
+"நீங்கள் என்ன செய்கிறீர்கள் என்று உங்களுக்குத் தெரிந்தால், பின்வரும் வழிமுறைகளை மட்டும் "
+"பயன்படுத்தவும்... \"எந்தவொரு வழக்குக்கும் நிர்வாகம் பொறுப்பல்ல [...]\" :D"
 
 #: ../usermanual/avancee.rst:12 73aa7121c47b43ce986562d44a72d14f
 msgid "Adapt to your graphical chart"
-msgstr ""
+msgstr "உங்கள் வரைகலை விளக்கப்படத்திற்கு மாற்றியமைக்கவும்"
 
 #: ../usermanual/avancee.rst:14 3b8372bf5196483784a70dd21c9548bc
 msgid ""
@@ -37,6 +43,11 @@ msgid ""
 "Create a ``galette_local.css`` file in your ``webroot/themes/default`` "
 "directory with your styles, it will be automatically included."
 msgstr ""
+"நீங்கள் சிஎச்எச் ச்டைல்சீட்களுடன் வசதியாக இருந்தால், உங்கள் சொந்த வண்ணங்களுக்கு ஏற்றவாறு Galette "
+"சிஎச்எச் ஐ மாற்றியமைக்கலாம். அதை அடைவதற்கு, Galette சிஎச்எச் கோப்புகளைத் திருத்துவது "
+"கடுமையாக ஊக்கப்படுத்தப்படுகிறது, மாறாக அதற்காக வடிவமைக்கப்பட்ட குறிப்பிட்ட இயக்கவியல். உங்கள் "
+"ச்டைல்களுடன் உங்கள் ``webroot/themes/default`` கோப்பகத்தில் ``galette_local.css`` "
+"கோப்பை உருவாக்கவும், அது தானாகவே சேர்க்கப்படும்."
 
 #: ../usermanual/avancee.rst:16 4c117cdc3e114fe59486d6e5fa1ff289
 msgid ""
@@ -45,6 +56,10 @@ msgid ""
 "Galette the CSS rule `#asso_name` that defines several parameters including "
 "the color. Then, in your stylesheet, you will just need the following:"
 msgstr ""
+"விசயங்களை முடிந்தவரை எளிமையாக வைக்க முயற்சிக்கவும். எடுத்துக்காட்டாக, நீங்கள் அசோசியேசன் "
+"பெயர் நிறத்தை மாற்ற விரும்பினால் (பக்க தலைப்புகளின் கீழ் காட்டப்படும்), வண்ணம் உட்பட பல "
+"அளவுருக்களை வரையறுக்கும் `#asso_name` என்ற சிஎச்எச் விதியை நீங்கள் கேலட்டில் காணலாம். "
+"பின்னர், உங்கள் ச்டைல்சீட்டில், பின்வருபவை உங்களுக்குத் தேவைப்படும்:"
 
 #: ../usermanual/avancee.rst:24 1e96e02eb7b34e39bd65c5c63a67501b
 msgid ""
@@ -52,16 +67,20 @@ msgid ""
 "CSS file and all issues it may cause will not be took into account by the "
 "Galette team, no support will be provided."
 msgstr ""
+"உங்கள் சங்கத்தின் பெயரை சிவப்பு நிறத்தில் காட்ட இது போதுமானது. உள்ளக சிஎச்எச் கோப்பு மற்றும் "
+"அது ஏற்படுத்தக்கூடிய அனைத்து சிக்கல்களும் Galette குழுவால் கணக்கில் எடுத்துக்கொள்ளப்படாது, "
+"எந்த ஆதரவும் வழங்கப்படாது என்பதை நினைவில் கொள்ளவும்."
 
 #: ../usermanual/avancee.rst:26 fb6684b53601415f9a1227f60a605450
 msgid ""
 "You also can override the print stylesheet, just create a "
 "``galette_print_local.css`` file."
 msgstr ""
+"நீங்கள் அச்சு நடைத்தாளை மேலெழுதலாம், ``galette_print_local.css`` கோப்பை உருவாக்கவும்."
 
 #: ../usermanual/avancee.rst:29 0b370ab020e041978a129a9e9bd88e6b
 msgid "Add and change strings"
-msgstr ""
+msgstr "சரங்களைச் சேர்க்கவும் மற்றும் மாற்றவும்"
 
 #: ../usermanual/avancee.rst:31 790842fad86747e3a276e1e17ed66b6a
 msgid ""
@@ -72,6 +91,11 @@ msgid ""
 "contains a simple PHP array with the original string (the one in Galette "
 "source code) as index."
 msgstr ""
+"கேலட்டில் மொழிபெயர்க்கப்பட்ட சரங்களைத் தனிப்பயனாக்க தேவைப்பட்டால் - எந்த கேலட் மூலக் கோப்பையும் "
+"திருத்தாமல் செய்யலாம். ``lang`` கோப்பகத்தில் ``galette_{mylang}_local_lang.php`` "
+"கோப்பை உருவாக்கவும் (`fr_FR.utf8` அல்லது `en_US` போன்ற மொழியால் `{mylang}` மாற்றப்பட "
+"வேண்டும்). இந்தக் கோப்பில் அசல் சரம் (கேலட் மூலக் குறியீட்டில் உள்ள ஒன்று) குறியீட்டுடன் கூடிய "
+"எளிய பிஎச்பி வரிசை இருக்க வேண்டும்."
 
 #: ../usermanual/avancee.rst:33 d4b7b7d2e60e49d4903903a8941c6438
 msgid ""
@@ -81,6 +105,11 @@ msgid ""
 "`Mot de passe :` and we want to replace it with `Secret :`; so we will "
 "create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
 msgstr ""
+"உதாரணமாக, உள்நுழைவு பக்கத்தில் உள்ள \"கடவுச்சொல்\" சரத்தை பிரெஞ்சு மொழியில் மாற்ற "
+"விரும்புகிறோம், இது `Mot de passe :` என மொழிபெயர்க்கப்பட்டுள்ளது. அசல் சரம் "
+"`Password:` (பார்க்க ``galette/templates/default/index.tpl``), அதன் பிரெஞ்சு "
+"மொழிபெயர்ப்பு `Mot de passe :` மற்றும் அதை `Secret :` என மாற்ற விரும்புகிறோம்; எனவே "
+"பின்வரும் உள்ளடக்கங்களுடன் ``galette_fr_FR.utf8_local_lang.php`` ஐ உருவாக்குவோம்:"
 
 #: ../usermanual/avancee.rst:41 860fe6d76a224c0bba74e0bc108f9c6b
 msgid ""
@@ -89,6 +118,10 @@ msgid ""
 "important to take the original string verbatim, punctuation included; and "
 "take care to escape single quotes (with a backslash) in all the strings."
 msgstr ""
+"Galette மொழிபெயர்ப்புகளுக்கு கேச் சிச்டத்தைப் பயன்படுத்துவதால், மாற்றங்கள் உடனடியாகத் தெரியாமல் "
+"போகலாம்; நீங்கள் பிஎச்பி ஐ மறுதொடக்கம் செய்ய வேண்டும் (அல்லது தற்காலிக சேமிப்பை அழிக்க). அசல் "
+"சரத்தை வினைச்சொல்லாக எடுத்துக்கொள்வது முதன்மை, நிறுத்தற்குறிகள் அடங்கும்; மற்றும் அனைத்து "
+"சரங்களிலும் ஒற்றை மேற்கோள்கள் (பின்சாய்வுடன்) தப்பிக்க கவனமாக இருக்கவும்."
 
 #: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
 msgid ""
@@ -97,16 +130,22 @@ msgid ""
 "php`` where `{plugin}` is the routing name you can find in the ``_define."
 "php`` file."
 msgstr ""
+"நீங்கள் sam முறையைப் பயன்படுத்தி செருகுநிரல்களுக்கான langs ஐ மேலெழுதலாம், செருகுநிரல்கள் "
+"lang கோப்பகத்தில் கோப்பை வைத்து அதற்கு ``{plugin}_{mylang}_local_lang.php`` என்று "
+"பெயரிடவும், இங்கு `{plugin}` என்பது ``_define.php`` கோப்பில் நீங்கள் காணக்கூடிய ரூட்டிங் "
+"பெயராகும்."
 
 #: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
 msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
 msgstr ""
+"நீங்கள் கேலட் மொழிபெயர்ப்பு அம்சங்களைப் பயன்படுத்தினால் மட்டுமே இது வேலை செய்யும், மற்றும் "
+"நேட்டிவ் கெட்டெக்ச்ட் மூலம் அல்ல."
 
 #: ../usermanual/avancee.rst:48 175f39314197485ea541b80324e86e63
 msgid "Change session lifetime"
-msgstr ""
+msgstr "அமர்வு ஆயுளை மாற்றவும்"
 
 #: ../usermanual/avancee.rst:50 be24dd1f3fa94b5dacee5b25f1adecf7
 msgid ""
@@ -115,37 +154,49 @@ msgid ""
 "constant named ``GALETTE_TIMEOUT`` to change session lifetime using :ref:"
 "`behavior configuration <behavior>`:"
 msgstr ""
+"இயல்புநிலைக்கு, கேலட் இயல்புநிலை வாழ்நாள் காலத்துடன் அமர்வை உருவாக்கும் (மேலும் இந்த விசயத்தில் "
+"உலாவிகள் வித்தியாசமாக செயல்படுவதாகத் தெரிகிறது). அமர்வு வாழ்நாளை மாற்றுவதற்கு "
+"``GALETTE_TIMEOUT`` என்ற மாறிலியை எப்படி வேண்டுமானாலும் வரையறுக்கலாம் :ref:`நடத்தை "
+"உள்ளமைவு <behavior>`:"
 
 #: ../usermanual/avancee.rst:60 009f4a8642bc41fd8de77df9776d4481
 msgid "Log IP addresses behind a proxy"
-msgstr ""
+msgstr "ப்ராக்சியின் பின்னால் ஐபி முகவரிகளை பதிவு செய்யவும்"
 
 #: ../usermanual/avancee.rst:62 0dffc6fdd7c84dc1aafb69b6e91bcc94
 msgid ""
 "If your Galette instance is behind a proxy, IP address stored in history "
 "will be the proxy one, and not the user one :("
 msgstr ""
+"உங்கள் கேலட் நிகழ்வு ப்ராக்சியின் பின்னால் இருந்தால், வரலாற்றில் சேமிக்கப்பட்ட ஐபி முகவரி "
+"ப்ராக்சியாக இருக்கும், மேலும் பயனரின் முகவரி அல்ல :("
 
 #: ../usermanual/avancee.rst:64 58bf33403a6545b389d880de8c5aa65d
 msgid ""
 "To fix that, use :ref:`behavior configuration <behavior>` to create a "
 "constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
 msgstr ""
+"அதைச் சரிசெய்ய, ``GALETTE_X_FORWARDED_FOR_INDEX`` என்ற பெயரிடப்பட்ட மாறிலியை "
+"உருவாக்க:ref:` நடத்தை உள்ளமைவு <behavior>` ஐப் பயன்படுத்தவும்:"
 
 #: ../usermanual/avancee.rst:71 812bdb7b79fc42f28edbefc5cf583291
 msgid ""
 "Each proxy server will add its own address on the list, example above will "
 "work only if there is only one proxy server."
 msgstr ""
+"ஒவ்வொரு பதிலாள் சேவையகமும் அதன் சொந்த முகவரியை பட்டியலில் சேர்க்கும், மேலே உள்ள சான்று ஒரே "
+"ஒரு பதிலாள் சேவையகம் இருந்தால் மட்டுமே வேலை செய்யும்."
 
 #: ../usermanual/avancee.rst:75 f47cf8b5248649f09a8b5c6627e4c267
 msgid ""
 "For security reasons, do not use this if your instance is not behind a proxy!"
 msgstr ""
+"பாதுகாப்பு காரணங்களுக்காக, உங்கள் நிகழ்வு ப்ராக்சிக்குப் பின்னால் இல்லை என்றால் இதைப் பயன்படுத்த "
+"வேண்டாம்!"
 
 #: ../usermanual/avancee.rst:78 b63fb714b73140d58f8bddce5af80d2d
 msgid "External stats"
-msgstr ""
+msgstr "வெளிப்புற புள்ளிவிவரங்கள்"
 
 #: ../usermanual/avancee.rst:82 8bcd105d1b614a57ad7ebfc1bbc88516
 msgid ""
@@ -153,54 +204,69 @@ msgid ""
 "can create a ``tracking.js`` file under ``webroot/themes/default`` "
 "directory, it will be automatically included."
 msgstr ""
+"பல புள்ளியியல் தளங்கள் வேலை செய்ய கூடுதல் சாவாச்கிரிப்ட் தொகுதியை நம்பியுள்ளன. நீங்கள் "
+"``webroot/themes/default`` கோப்பகத்தின் கீழ் ``tracking.js` கோப்பை உருவாக்கலாம், அது "
+"தானாகவே சேர்க்கப்படும்."
 
 #: ../usermanual/avancee.rst:84 28fb00fb44184a929e34b7a788048b05
 msgid ""
 "Galette uses Javascript to work. If the code you add in the ``tracking.js`` "
 "file is incorrect, this may break Galette!"
 msgstr ""
+"Galette வேலை செய்ய சாவாச்கிரிப்டைப் பயன்படுத்துகிறது. ``tracking.js` கோப்பில் நீங்கள் "
+"சேர்க்கும் குறியீடு தவறாக இருந்தால், இது கேலட்டை உடைக்கலாம்!"
 
 #: ../usermanual/avancee.rst:87 9c1b46e7a978430b869f0c6e3262fce2
 msgid "CSV exports"
-msgstr ""
+msgstr "காபிம ஏற்றுமதிகள்"
 
 #: ../usermanual/avancee.rst:91 26b582832b4a4024a4aab9de0b8af0d1
 msgid ""
 "You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file "
 "instead of an XML one."
 msgstr ""
+"எக்ச்எம்எல் ஒன்றிற்குப் பதிலாக `YAML <https://yaml.org/>`_ கோப்பைக் கொண்டு அளவுருக்கள் "
+"ஏற்றுமதியை அமைக்கலாம்."
 
 #: ../usermanual/avancee.rst:93 2820fa30b5634d628a933ee340294131
 msgid ""
 "Galette provides a parameted CSV exports system. Only one parameted export "
 "is provided, but you can add your own to the ``config/exports.yaml`` file."
 msgstr ""
+"கேலட் ஒரு அளவுரு காபிம ஏற்றுமதி அமைப்பை வழங்குகிறது. ஒரே ஒரு அளவுரு ஏற்றுமதி "
+"மட்டுமே வழங்கப்படுகிறது, ஆனால் ``config/exports.yaml`` கோப்பில் உங்களுடையதைச் சேர்க்கலாம்."
 
 #: ../usermanual/avancee.rst:97 638f77d6c9424d2dadc5dc2122b90398
 msgid ""
 "Legacy XML configuration file is still supported; if a duplicate identifier "
 "is found, YAML file takes precedence."
 msgstr ""
+"Legacy நீகுமொ உள்ளமைவு கோப்பு இன்னும் ஆதரிக்கப்படுகிறது; நகல் அடையாளங்காட்டி "
+"கண்டறியப்பட்டால், YAML கோப்பு முன்னுரிமை பெறுகிறது."
 
 #: ../usermanual/avancee.rst:99 4986fbad39154b4aab68c8c771a72453
 msgid "Let's examine existing \"cotisations\" parameted export:"
-msgstr ""
+msgstr "ஏற்கனவே உள்ள \"cotisations\" அளவுரு ஏற்றுமதியை ஆராய்வோம்:"
 
 #: ../usermanual/avancee.rst:123 76e592ed04ec4c1095ec565b9d31f587
 msgid ""
 "each array entry is a unique identifier, lowercase without spaces or special "
 "character"
 msgstr ""
+"ஒவ்வொரு வரிசை நுழைவும் ஒரு தனித்துவமான அடையாளங்காட்டி, இடைவெளிகள் அல்லது சிறப்பு "
+"எழுத்துகள் இல்லாமல் சிறிய எழுத்து"
 
 #: ../usermanual/avancee.rst:124 2d6b845ad14c4aceaa3e365456bb4566
 msgid ""
 "`name` and `description` are mandatory as used to display each parameted "
 "export in the user interface"
 msgstr ""
+"பயனர் இடைமுகத்தில் ஒவ்வொரு அளவுரு ஏற்றுமதியைக் காண்பிக்கப் பயன்படுத்தப்படும் `பெயர்` மற்றும் "
+"`விளக்கம்` கட்டாயமாகும்"
 
 #: ../usermanual/avancee.rst:125 c655c88551534b388034f10660c4f032
 msgid "`filename` sets the filename for output file"
-msgstr ""
+msgstr "`கோப்பு பெயர்` வெளியீட்டு கோப்பிற்கான கோப்பு பெயரை அமைக்கிறது"
 
 #: ../usermanual/avancee.rst:126 2b65d20e45d84285b1e8c6a6b0d1d39d
 msgid ""
@@ -208,79 +274,96 @@ msgid ""
 "limitation than the SQL engine ones, expect you cannot send them any "
 "parameters"
 msgstr ""
+"`query` என்பது செயல்படுத்த வேண்டிய வினவல், இது கட்டாயமாகும். கவிமொ இன்சின்களைத் தவிர "
+"வேறு எந்த வரம்பும் இல்லை, நீங்கள் அவர்களுக்கு எந்த அளவுருவையும் அனுப்ப முடியாது என்று "
+"எதிர்பார்க்கலாம்"
 
 #: ../usermanual/avancee.rst:127 db6af6d37fd846d68983f7ce94f08e78
 msgid "`headers` manages columns titles:"
-msgstr ""
+msgstr "நெடுவரிசைகளின் தலைப்புகளை `தலைப்புகள்' நிர்வகிக்கிறது:"
 
 #: ../usermanual/avancee.rst:129 1b1da00e44084f5d851b162335747a37
 msgid "like in the above example, an array of columns titles of your own"
 msgstr ""
+"மேலே உள்ள எடுத்துக்காட்டில் உள்ளதைப் போல, உங்கள் சொந்த நெடுவரிசை தலைப்புகளின் வரிசை"
 
 #: ../usermanual/avancee.rst:130 f4148065b88f4d8795b29bed86281c06
 msgid ""
 "if not present, Galette fields names will be exported. You can use named "
 "columns in your SQL query (``SELECT nom_adh AS \"Column title\" FROM ...``)"
 msgstr ""
+"இல்லை என்றால், கேலட் புலங்களின் பெயர்கள் ஏற்றுமதி செய்யப்படும். உங்கள் கவிமொ வினவலில் "
+"பெயரிடப்பட்ட நெடுவரிசைகளை நீங்கள் பயன்படுத்தலாம் (`` nom_adh அச் \"நெடுவரிசை தலைப்பு\" "
+"இலிருந்து ...``)"
 
 #: ../usermanual/avancee.rst:131 55d1a44d2ab04494896b755aac0fce46
 msgid "set to false (``headers: false``) to disable column headers output"
 msgstr ""
+"நெடுவரிசை தலைப்புகள் வெளியீட்டை முடக்குவதற்கு தவறான (``தலைப்புகள்: false``) அமைக்கவும்"
 
 #: ../usermanual/avancee.rst:133 c084f79e4dbe4d39b2e0f3995d53a966
 msgid ""
 "`separator` is the CSV separator that will be used. Possible values are:"
 msgstr ""
+"`separator` என்பது பயன்படுத்தப்படும் காபிம பிரிப்பான். சாத்தியமான மதிப்புகள்:"
 
 #: ../usermanual/avancee.rst:135 c6c260f76c434d5ca47377d23214939c
 msgid "semicolon (``;``) - default"
-msgstr ""
+msgstr "அரைப்புள்ளி (``;``) - இயல்புநிலை"
 
 #: ../usermanual/avancee.rst:136 d05d902a5c47491f8b83074efbf64a35
 msgid "comma (``,``)"
-msgstr ""
+msgstr "கமா (``,``)"
 
 #: ../usermanual/avancee.rst:137 e5f2b9d1fa62489387935e409eb24695
 msgid "tabulation character (``\\t``)"
-msgstr ""
+msgstr "அட்டவணை எழுத்து (``\\t``)"
 
 #: ../usermanual/avancee.rst:139 e571bc8e9a774e1b9b2cd14d40d7b603
 msgid "`quote` either double quote - default - or simple quote character"
-msgstr ""
+msgstr "`மேற்கோள்` இரட்டை மேற்கோள் - இயல்புநிலை - அல்லது எளிய மேற்கோள் எழுத்து"
 
 #: ../usermanual/avancee.rst:140 88168b2860a84585b0892da957c03d16
 msgid "to disable an export, you can add ``inactive: true``"
-msgstr ""
+msgstr "ஏற்றுமதியை முடக்க, ``செயலற்றது: உண்மை`` என்பதைச் சேர்க்கலாம்"
 
 #: ../usermanual/avancee.rst:145 dc42621488b548eeb7e07095bd7b6751
 msgid "Administration tools"
-msgstr ""
+msgstr "நிர்வாக கருவிகள்"
 
 #: ../usermanual/avancee.rst:149 2a99707e02094b5398e801b4d43e7bc2
 msgid ""
 "All the admin tools operation are destructive, use it with cautions, and "
 "**make sure you did a database backup** before!"
 msgstr ""
+"அனைத்து நிர்வாகக் கருவிகளின் செயல்பாடும் அழிவுகரமானது, எச்சரிக்கையுடன் அதைப் பயன்படுத்தவும், "
+"**நீங்கள் தரவுத்தள காப்புப்பிரதியை இதற்கு முன் செய்தீர்கள் என்பதை உறுதிப்படுத்தவும்!"
 
 #: ../usermanual/avancee.rst:151 1c578f9418ed4d4b83b002c7d5c1ec12
 msgid "There are a few tools provided for Galette admin that permits to:"
-msgstr ""
+msgstr "கேலட் நிர்வாகிக்கு சில கருவிகள் வழங்கப்பட்டுள்ளன, அவை அனுமதிக்கின்றன:"
 
 #: ../usermanual/avancee.rst:153 619acd95b45e475b9bd2b6e1b582f6da
 msgid ""
 "**reinitialize mailings contents** will reset all emails contents to default "
 "values,"
 msgstr ""
+"**அஞ்சல் உள்ளடக்கங்களை மீண்டும் தொடங்குதல்** எல்லா மின்னஞ்சல் உள்ளடக்கங்களையும் இயல்புநிலை "
+"மதிப்புகளுக்கு மீட்டமைக்கும்,"
 
 #: ../usermanual/avancee.rst:154 3032f80400cb4c2591dc166a2fb1a4a2
 msgid ""
 "**reinitialize fields configuration** will reset all members core fields to "
 "their default value. This does not imply dynamic fields,"
 msgstr ""
+"**புலங்களின் உள்ளமைவை மீண்டும் தொடங்குதல்** அனைத்து உறுப்பினர்களின் முக்கிய புலங்களையும் "
+"அவற்றின் இயல்புநிலை மதிப்பிற்கு மீட்டமைக்கும். இது மாறும் புலங்களைக் குறிக்கவில்லை,"
 
 #: ../usermanual/avancee.rst:155 feabe0c1c39c4fad927c3e0aa5fadaf3
 msgid "**reinitialize PDF models** will reset ll PDF models to default values,"
 msgstr ""
+"**PDF மாதிரிகளை மீண்டும் துவக்குதல்** ll PDF மாதிரிகளை இயல்புநிலை மதிப்புகளுக்கு "
+"மீட்டமைக்கும்,"
 
 #: ../usermanual/avancee.rst:156 88ed7f55ed2c4fab90a780919349b47d
 msgid ""
@@ -289,16 +372,22 @@ msgid ""
 "This feature will set random values as login and password fields that would "
 "be empty in database."
 msgstr ""
+"**வெற்று உள்நுழைவுகள் மற்றும் கடவுச்சொற்களை உருவாக்கவும்** பாதுகாப்பை மேம்படுத்த அந்தத் "
+"தகவல்கள் தேவைப்படுகின்றன, ஆனால் சில சமயங்களில் காணாமல் போகும் (உதாரணமாக நீங்கள் ஒரு காபிம ஐ "
+"இறக்குமதி செய்தால்). இந்த நற்பொருத்தம் தரவுத்தளத்தில் காலியாக இருக்கும் உள்நுழைவு மற்றும் "
+"கடவுச்சொல் புலங்களாக சீரற்ற மதிப்புகளை அமைக்கும்."
 
 #: ../usermanual/avancee.rst:157 43304efcd2b14338b8ada3638077f2ab
 msgid ""
 "**Fix dynamic fields dates format** will convert all dynamic fields dates to "
 "the new format (see :ref:`dynamic fields <dynamic_fields>`)."
 msgstr ""
+"**டைனமிக் புலங்களின் தேதி வடிவமைப்பை சரிசெய்தல்** அனைத்து மாறும் புலங்களின் தேதிகளையும் "
+"புதிய வடிவத்திற்கு மாற்றும் (பார்க்க :ref:`dynamic புலங்கள் <dynamic_fields>`)."
 
 #: ../usermanual/avancee.rst:162 d8edd5f7d98e4b12b1078f5ea0ac024d
 msgid "Galette modes"
-msgstr ""
+msgstr "கேலட் முறைகள்"
 
 #: ../usermanual/avancee.rst:164 e2055e48ed054f34aa542de29b59583f
 msgid ""
@@ -306,6 +395,9 @@ msgid ""
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
 "<behavior>`). This directive can take the following values:"
 msgstr ""
+"Galette இல் பல முறைகள் வழங்கப்பட்டுள்ளன, நீங்கள் ``GALETTE_MODE`` மாறிலியைக் கொண்டு "
+"கட்டமைக்க முடியும் (:ref:`Galette நடத்தை உள்ளமைவு <behavior>` பார்க்கவும்). இந்த கட்டளை "
+"பின்வரும் மதிப்புகளை எடுக்கலாம்:"
 
 #: ../usermanual/avancee.rst:166 ef4616e506c940c28f23c8482a5d80ef
 msgid ""
@@ -313,62 +405,68 @@ msgid ""
 "mode). This is the default mode for releases, but it may change in "
 "development branch."
 msgstr ""
+"``PROD``: விளைவாக்கம் முறை (உற்பத்தி அல்லாத நிகழ்வு வேறு பயன்முறையில் இருக்க வேண்டும்). "
+"இது வெளியீடுகளுக்கான இயல்புநிலை பயன்முறையாகும், ஆனால் இது வளர்ச்சிக் கிளையில் மாறலாம்."
 
 #: ../usermanual/avancee.rst:167 edd8fc6e54bd4573b29a3b4f3a42fcff
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
 msgstr ""
+"``டெமோ``: ஆர்ப்பாட்டப் பயன்முறை, ``PROD`` போன்றதே ஆனால் மின்னஞ்சல்களை அனுப்புதல், சூப்பர் "
+"அட்மின் தரவை மாற்றுதல், போன்ற சில நற்பொருத்தங்கள் முடக்கப்பட்டுள்ளன."
 
 #: ../usermanual/avancee.rst:168 58edd5fb363441bb8b6c16e611bca56a
 msgid "``TEST``: reserved for unit tests."
-msgstr ""
+msgstr "``TEST``: அலகு சோதனைகளுக்காக ஒதுக்கப்பட்டது."
 
 #: ../usermanual/avancee.rst:169 53fad056e86c433cb702eb054bfa3c32
 msgid "``MAINT``: maintainance mode. Only super admin will be able to login."
-msgstr ""
+msgstr "``MAINT``: பராமரிப்பு முறை. சூப்பர் அட்மின் மட்டுமே உள்நுழைய முடியும்."
 
 #: ../usermanual/avancee.rst:174 b61851b56ee84b698065555decc5b03d
 msgid "Galette Debug"
-msgstr ""
+msgstr "கேலட் பிழைத்திருத்தம்"
 
 #: ../usermanual/avancee.rst:178 ce4fe39f0d024bd7b29ff27257538228
 msgid ""
 "A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug "
 "mode. With this mode on:"
 msgstr ""
+"பிழைத்திருத்த பயன்முறையை இயக்க, பிரத்யேக நிலையான பெயர் ``GALETTE_DEBUG`` "
+"பயன்படுத்தப்படலாம். இந்த பயன்முறையில்:"
 
 #: ../usermanual/avancee.rst:180 009a52199c584e54ae7156c1a22ac0f5
 msgid "unstable/not finished parts will be activated,"
-msgstr ""
+msgstr "நிலையற்ற / முடிக்கப்படாத பாகங்கள் செயல்படுத்தப்படும்,"
 
 #: ../usermanual/avancee.rst:181 a73bd7b04767463897f20306f1e84873
 msgid "some data will not be stored in session,"
-msgstr ""
+msgstr "சில தரவு அமர்வில் சேமிக்கப்படாது,"
 
 #: ../usermanual/avancee.rst:182 a25b4b21b8c24e15952363a73165be58
 msgid "default log level is set to ``DEBUG``,"
-msgstr ""
+msgstr "இயல்புநிலை பதிவு நிலை ``DEBUG`` என அமைக்கப்பட்டது,"
 
 #: ../usermanual/avancee.rst:183 56cb2c250ab246c1838e90719c47bf10
 msgid "news won't be cached,"
-msgstr ""
+msgstr "செய்திகள் சேமிக்கப்படாது,"
 
 #: ../usermanual/avancee.rst:184 ccd4bd9fae2d4456b4e5496ea9372f16
 msgid "database version check will not be done."
-msgstr ""
+msgstr "தரவுத்தள பதிப்பு சரிபார்ப்பு செய்யப்படாது."
 
 #: ../usermanual/avancee.rst:190 49b49d1f899b4984ab40f99592260c37
 msgid "Behavior configuration"
-msgstr ""
+msgstr "நடத்தை கட்டமைப்பு"
 
 #: ../usermanual/avancee.rst:192 582fcfa42dcf4f25ba5d25e867335d2c
 msgid "It is possible to change some of Galette behaviors:"
-msgstr ""
+msgstr "சில கேலட் நடத்தைகளை மாற்றுவது சாத்தியம்:"
 
 #: ../usermanual/avancee.rst:194 3ccd872ee4714d2881791db050c3d950
 msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
-msgstr ""
+msgstr "`GALETTE DEBUG`: :red:`sea Galette பிழைத்திருத்தம் <debug>`;"
 
 #: ../usermanual/avancee.rst:195 5c491a6f323644ee8fa78f0c853c5cef
 msgid ""
@@ -376,13 +474,17 @@ msgid ""
 "configuration for some other usages (such as PDF cards settings, session "
 "lifetime, ...)."
 msgstr ""
+"ஆவணங்களின் தொடர்புடைய பகுதியில் நீங்கள் வேறு சில பயன்பாடுகளுக்கு (PDF அட்டைகள் அமைப்புகள், "
+"அமர்வு வாழ்நாள், ...) நடத்தை உள்ளமைவைப் பயன்படுத்தலாம்."
 
 #: ../usermanual/avancee.rst:197 88cf7861b81a4bfbb6d39b8f270f310b
 msgid ""
 "You can add those directives by declaring constants in the ``galette/config/"
 "behavior.inc.php``."
 msgstr ""
+"``galette/config/behavior.inc.php`` இல் மாறிலிகளை அறிவிப்பதன் மூலம் அந்த "
+"வழிமுறைகளைச் சேர்க்கலாம்."
 
 #: ../usermanual/avancee.rst:199 9641a12858be4e69b464edfd5943815b
 msgid "For example:"
-msgstr ""
+msgstr "உதாரணமாக:"
