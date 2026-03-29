@@ -4,21 +4,22 @@
 # This file is distributed under the same license as the Galette package.
 # Johan Cwiklinski <johan@x-tnd.be>, 2024.
 # Nelson JESUS <jesus.nels@gmail.com>, 2025.
+# Edson Wolf <edsonwolf@vivaldi.net>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2025-09-15 15:52+0000\n"
-"Last-Translator: Nelson JESUS <jesus.nels@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/"
-"doc-command-line/pt/>\n"
+"PO-Revision-Date: 2026-03-30 15:09+0000\n"
+"Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
+"command-line/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../command-line.rst:3 b43952b5611f4c6992dce147efd88527
 msgid "Command line"
@@ -40,12 +41,14 @@ msgstr "Pode obter ajuda para um comando específico usando o comando ``help``:"
 
 #: ../command-line.rst:41 63180e9f2c414f30b47ce9002942e4e2
 msgid "Check"
-msgstr ""
+msgstr "Verificar"
 
 #: ../command-line.rst:43 a236020f8e474f9e9f89d649653e72f5
 msgid ""
 "This only check for Galette prerequisites, and has no specific arguments."
 msgstr ""
+"Esta verificação apenas atende aos pré-requisitos da Galette e não possui "
+"argumentos específicos."
 
 #: ../command-line.rst:47 6c1ca3502569409c81cc677f7ffd2a26
 msgid ""
@@ -53,58 +56,71 @@ msgid ""
 "it's recommended to check for requirements from the web script "
 "``galette_compat.php``."
 msgstr ""
+"Em alguns sistemas, a configuração do PHP pode ser diferente entre a "
+"interface de linha de comando (CLI) e a interface web; portanto, recomenda-"
+"se verificar os requisitos no script web ``galette_compat.php``."
 
 #: ../command-line.rst:50 b94c5cd0a82c490795470f80856a6985
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: ../command-line.rst:52 27095551a1de4cca942de977a3eb99ab
 msgid "This command obviousely installs Galette :)"
-msgstr ""
+msgstr "Este comando obviamente instala o Galette :)"
 
 #: ../command-line.rst:81 6aa1ad95206f43789779539e8682e696
 msgid ""
 "By default, the script will check for an existing configuration file, you "
 "can ignore that using the ``--ignore-config`` option."
 msgstr ""
+"Por padrão, o script verificará se já existe um arquivo de configuração, "
+"você pode ignorar isso usando a opção ``--ignore-config``."
 
 #: ../command-line.rst:83 9485f6b976124229b3e6fcad973304bd
 msgid ""
 "Required options that have not been provided on script call will be asked "
 "interactively."
 msgstr ""
+"As opções obrigatórias que não forem fornecidas durante a chamada do script "
+"serão solicitadas interativamente."
 
 #: ../command-line.rst:131 162555d65a3c4c039b87f28a7ec86d5d
 msgid "Plugins commands"
-msgstr ""
+msgstr "Comandos de plugins"
 
 #: ../command-line.rst:133 be21bb2966bd49968ebdbd18e5cbe558
 msgid ""
 "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
+"Você pode listar os plugins existentes usando o comando "
+"``galette:plugins:list``:"
 
 #: ../command-line.rst:150 a7a2312459bc49e1b9be1ebd3614ab75
 msgid "Available commands are:"
-msgstr ""
+msgstr "Os comandos disponíveis são:"
 
 #: ../command-line.rst:152 e438eeb934094897b822503ffe61e298
 msgid "``galette:plugin:disable``: disable a plugin"
-msgstr ""
+msgstr "``galette:plugin:disable``: desativa um plugin"
 
 #: ../command-line.rst:153 47184cf8bffb41a686c504a7466a5e67
 msgid "``galette:plugin:enable``: enable a plugin"
-msgstr ""
+msgstr "``galette:plugin:enable``: habilita um plugin"
 
 #: ../command-line.rst:154 fc1c210708e64d8182b24897559145f1
 msgid "``galette:plugin:install-db``: install a plugin database"
-msgstr ""
+msgstr "``galette:plugin:install-db``: instala um banco de dados de plugins"
 
 #: ../command-line.rst:158 0c61b7cfc6f24e38813597c9ef2fcd4c
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
+"A instalação do banco de dados de plugins removerá todas as tabelas de "
+"plugins existentes!"
 
 #: ../command-line.rst:160 d0e3e2994f294a6a9e7172d64f295ccb
 msgid ""
 "For every plugin related command, you can precise which plugin(s) you want "
 "to act on, use the ``--all`` flag or either rely on interactive mode:"
 msgstr ""
+"Para cada comando relacionado a plugins, você pode especificar quais plugins "
+"deseja utilizar, usar a flag ``--all`` ou recorrer ao modo interativo:"
