@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the Galette package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
 # Nelson JESUS <jesus.nels@gmail.com>, 2025.
+# Edson Wolf <edsonwolf@vivaldi.net>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2025-09-15 15:52+0000\n"
-"Last-Translator: Nelson JESUS <jesus.nels@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/"
-"doc-plugins-3rdparty/pt/>\n"
+"PO-Revision-Date: 2026-03-30 15:10+0000\n"
+"Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
+"plugins-3rdparty/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../plugins/plugins-tiers.rst:5 46186faab94e446cb8cab8ac91f9c6d0
 msgid "Third party plugins community"
@@ -31,6 +32,11 @@ msgid ""
 "ticket management system, a website, ... And possibly get punctual help from "
 "Galette team."
 msgstr ""
+"Foi criada uma organização no GitHub chamada galette-community <https://"
+"github.com/galette-community/>. Seu objetivo é centralizar os plugins que "
+"não são desenvolvidos pela equipe do Galette, fornecendo a eles um "
+"repositório de código-fonte, um sistema de gerenciamento de tickets, um "
+"site, etc., e possivelmente obter suporte pontual da equipe do Galette."
 
 #: ../plugins/plugins-tiers.rst:10 48e5e42d79c147b0a35c05eceb4adea1
 msgid "Prerequisites"
@@ -42,27 +48,31 @@ msgstr "Para que um plugin seja aceite, deve cumprir alguns pré-requisitos :"
 
 #: ../plugins/plugins-tiers.rst:14 c470537dad854051ab3995ae3b1f406b
 msgid "be a Galette plugin,"
-msgstr ""
+msgstr "Ser um plugin Galette,"
 
 #: ../plugins/plugins-tiers.rst:15 a36c7262c9ea41fea72a1c02caf966c1
 msgid ""
 "be licensed under a license compatible with Galette (GPLv3 or compatible) "
 "and respect it,"
 msgstr ""
+"Estar licenciado sob uma licença compatível com a Galette (GPLv3 ou "
+"compatível) e respeitá-la,"
 
 #: ../plugins/plugins-tiers.rst:16 7f74fe073c2149e588f444efc96e4c81
 msgid "be compatible with a \"decent\" Galette version."
-msgstr ""
+msgstr "Ser compatível com uma versão \"adequada\" da Galette."
 
 #: ../plugins/plugins-tiers.rst:18 7be50eabc00a4e08b980f7a02978384a
 msgid ""
 "Plugins should (this is a strong recommandation, not an obligation) be "
 "localized and respect Galette coding conventions."
 msgstr ""
+"Os plugins devem (e esta é uma forte recomendação, não uma obrigação) ser "
+"localizados e respeitar as convenções de codificação do Galette."
 
 #: ../plugins/plugins-tiers.rst:21 3ce558a5c4654d8aa39ee9f4c1734fbe
 msgid "Join community"
-msgstr ""
+msgstr "Junte-se à comunidade"
 
 #: ../plugins/plugins-tiers.rst:23 69c686c2e6954f10834ecd9a4a4fe771
 msgid ""
@@ -70,16 +80,22 @@ msgid ""
 "have to contact Galette team from mailing lists, giving them your Github "
 "account name. An invitation will then be send to you."
 msgstr ""
+"O sistema de organização do Github não permite solicitar inclusão; você "
+"precisará entrar em contato com a equipe do Galette através das listas de "
+"discussão, informando o nome da sua conta do Github. Um convite será enviado "
+"para você em seguida."
 
 #: ../plugins/plugins-tiers.rst:27 b0d2e685331846b287735295cc71e61a
 msgid "Add a plugin"
-msgstr ""
+msgstr "Adicionar um plugin"
 
 #: ../plugins/plugins-tiers.rst:29 1b997cf0cbbe458783e8b0f2073d8f44
 msgid ""
 "Once the invitation has been accepted, you will get right to create a "
 "repository for your plugin."
 msgstr ""
+"Assim que o convite for aceito, você poderá criar um repositório para o seu "
+"plugin."
 
 #: ../plugins/plugins-tiers.rst:31 e7a84f6f447b47e281e1bdd9abe30c35
 msgid ""
@@ -87,10 +103,13 @@ msgid ""
 "github, you can transfer ownership to the organization from your existing "
 "repository settings."
 msgstr ""
+"Se o seu plugin ainda não existe, basta criá-lo. Se ele já existe no GitHub, "
+"você pode transferir a propriedade para a organização a partir das "
+"configurações do seu repositório."
 
 #: ../plugins/plugins-tiers.rst:34 0a137bf9cefa4a57a1ba53c096e9da03
 msgid "Website"
-msgstr ""
+msgstr "Site"
 
 #: ../plugins/plugins-tiers.rst:36 80ea19e3c21242ceb94eebf047c4583d
 msgid ""
@@ -98,6 +117,10 @@ msgid ""
 "and contents will be stored in a specific branch of the repository name ``gh-"
 "pages`` that will only be used for the website."
 msgstr ""
+"É possível adicionar um site semelhante ao Github ao seu projeto. "
+"Especificamente, a configuração e o conteúdo serão armazenados em uma "
+"ramificação específica do repositório chamada ``gh-pages``, que será usada "
+"exclusivamente para o site."
 
 #: ../plugins/plugins-tiers.rst:38 c7c41ddc3a29463995f2b80f71c519ff
 msgid ""
@@ -105,3 +128,6 @@ msgid ""
 "website. Galette team may help you for the initial setup of the website; "
 "contents and updates are in charge of the author."
 msgstr ""
+"O objetivo é manter uma certa consistência em todos os plugins de terceiros "
+"do site. A equipe da Galette pode ajudar na configuração inicial do site; o "
+"conteúdo e as atualizações são de responsabilidade do autor."
