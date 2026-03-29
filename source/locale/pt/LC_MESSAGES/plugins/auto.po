@@ -4,21 +4,22 @@
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
 # Manuela Silva <mmsrs@sky.com>, 2024.
 # Nelson JESUS <jesus.nels@gmail.com>, 2025.
+# Edson Wolf <edsonwolf@vivaldi.net>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2025-09-15 15:52+0000\n"
-"Last-Translator: Nelson JESUS <jesus.nels@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/"
-"doc-plugins-auto/pt/>\n"
+"PO-Revision-Date: 2026-03-30 15:09+0000\n"
+"Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
+"plugins-auto/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../plugins/auto.rst:3 9d9a5af2194e4d10bfa543f9119ba2dc
 msgid "Auto"
@@ -37,37 +38,36 @@ msgid "vehicles (owner, several information, photo, etc),"
 msgstr "veículos (proprietário, várias informações, foto, etc.),"
 
 #: ../plugins/auto.rst:8 1ced6f6a0cfd4ed595f8c31979ae7e0c
-#, fuzzy
 msgid "vehicle history modification (owner, color, ...),"
-msgstr "modificação do registo do veículo (proprietário, cor, ...),"
+msgstr "Modificação do histórico do veículo (proprietário, cor, etc),"
 
 #: ../plugins/auto.rst:9 8b51a8e0076a4e97850616ce0acccc92
 msgid "brands,"
-msgstr ""
+msgstr "marcas,"
 
 #: ../plugins/auto.rst:10 d691681dbbd94a968eab23f877e0b430
 msgid "models,"
-msgstr ""
+msgstr "modelos,"
 
 #: ../plugins/auto.rst:11 b041d375471b40ab9e854b47eb10b77b
 msgid "transmission types,"
-msgstr ""
+msgstr "tipos de transmissão,"
 
 #: ../plugins/auto.rst:12 9107154aefbd4f149d84f3ffe00f98c9
 msgid "body types,"
-msgstr ""
+msgstr "Tipos de carroceria"
 
 #: ../plugins/auto.rst:13 928fe64865bc4c1bbf1381072069a353
 msgid "colors,"
-msgstr ""
+msgstr "cores,"
 
 #: ../plugins/auto.rst:14 adf67773f58543fd9330b7b0e4b699fb
 msgid "finitions,"
-msgstr ""
+msgstr "terminações,"
 
 #: ../plugins/auto.rst:15 02aebc2421554373958c552d1ba11ea4
 msgid "states."
-msgstr ""
+msgstr "estados."
 
 #: ../plugins/auto.rst:17 f45921712638440893877f1cff286a5f
 msgid ""
@@ -76,6 +76,10 @@ msgid ""
 "<http://www.club500.fr/>`_. A big thanks to them for their precious help "
 "during plugin development :)"
 msgstr ""
+"Este plugin foi inicialmente desenvolvido em colaboração com Anatole do "
+"`Club 404 <https://www.leclub404.com/>`_ e François do `Club Fiat 500 "
+"<http://www.club500.fr/>`_. Um grande agradecimento a eles pela valiosa "
+"ajuda durante o desenvolvimento do plugin :)"
 
 #: ../plugins/auto.rst:20 4e22ed6068cc4a9b9e4f8b0e08c31c8d
 msgid "Installation"
@@ -83,48 +87,52 @@ msgstr "Instalação"
 
 #: ../plugins/auto.rst:22 8a7ef4065fab4eda92a47ecc8a30b9c6
 msgid "First of all, download the plugin:"
-msgstr "Primeiro, transfira o ''plug-in'':"
+msgstr "Primeiramente, baixe o plugin:"
 
 #: ../plugins/auto.rst:24 1ec66e972949484bbba10d56d8c01d4c
 msgid "Get latest Auto plugin!"
-msgstr ""
+msgstr "Obtenha o plugin Auto mais recente!"
 
 #: ../plugins/auto.rst:28 47e499bfb18f4fdcaa4e4c21f64be745
 msgid "Get Auto plugin nightly build!"
-msgstr ""
+msgstr "Obtenha a versão nightly do plugin Auto!"
 
 #: ../plugins/auto.rst:33 037b5fefb9224607ac170b0c3b5bcfa6
 msgid ""
 "Extract the downloaded archive in Galette ``plugins`` directory. For "
 "example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
-"Extraia o ficheiro transferido na diretoria ``plugins`` do Galette. Por "
-"exemplo, no Linux (substituindo `{url}` e `{version}` pelos valores "
-"corretos):"
+"Extraia o arquivo baixado no diretório ``plugins`` do Galette. Por exemplo, "
+"no Linux (substituindo `{url}` e `{version}` pelos valores corretos):"
 
 #: ../plugins/auto.rst:43 78e4bde975ce4943acb69b2b0bc25c9e
 msgid "Database initialisation"
-msgstr ""
+msgstr "Inicialização do banco de dados"
 
 #: ../plugins/auto.rst:45 b3d1f4cf653e49ff8ae1b720717afae0
 msgid ""
 "In order to work, this plugin requires several tables in the database. See :"
 "ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
+"Para funcionar, este plugin requer várias tabelas no banco de dados. "
+"Consulte :ref:`Interface de gerenciamento de plugins do Galette "
+"<plugins_managment>`."
 
 #: ../plugins/auto.rst:47 d6e4cb8fdbdd49cab1f9d3633b22e9a5
 msgid "And this is finished; Auto plugin is installed :)"
-msgstr ""
+msgstr "E está concluído; o plugin Auto está instalado :)"
 
 #: ../plugins/auto.rst:49 b618b67c4afe4f678895e0300c67e7d5
 msgid ""
 "There is no particular setup required, you can just enter data in the "
 "database."
 msgstr ""
+"Não é necessária nenhuma configuração específica, basta inserir os dados no "
+"banco de dados."
 
 #: ../plugins/auto.rst:52 e93aeb5836914487b171b8968e9dfc84
 msgid "Configure required fields"
-msgstr ""
+msgstr "Configure os campos obrigatórios"
 
 #: ../plugins/auto.rst:54 634ff5198891409ea744b953ce630a94
 msgid ""
@@ -135,3 +143,10 @@ msgid ""
 "want to require. As example, if you just want to require name and model for "
 "a car, you will need:"
 msgstr ""
+"Ao adicionar um novo veículo ao banco de dados, existem vários campos "
+"obrigatórios, mas que podem não atender às suas necessidades. Nesse caso, "
+"você pode definir seus próprios campos obrigatórios: basta criar um arquivo "
+"``local_auto_required.inc.php`` no diretório ``config`` do seu Galette e "
+"declarar um array com os campos que você deseja tornar obrigatórios. Por "
+"exemplo, se você quiser exigir apenas o nome e o modelo de um carro, você "
+"precisará de:"
