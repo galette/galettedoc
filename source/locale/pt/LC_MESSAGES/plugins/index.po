@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-13 11:00+0100\n"
-"PO-Revision-Date: 2026-03-30 15:10+0000\n"
+"PO-Revision-Date: 2026-04-01 04:09+0000\n"
 "Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-index/pt/>\n"
@@ -58,47 +58,60 @@ msgstr ""
 
 #: ../plugins/index.rst:23 378be41e5958451190d604c0fef9bf95
 msgid "Official Plugins"
-msgstr ""
+msgstr "Plugins oficiais"
 
 #: ../plugins/index.rst:25 389cfb939ad743fc82512bd709d2931f
 msgid ""
 "Official plugins are developed and maintained by the Galette team. Available "
 "official plugins are:"
 msgstr ""
+"Os plugins oficiais são desenvolvidos e mantidos pela equipe Galette. Os "
+"plugins oficiais disponíveis são:"
 
 #: ../plugins/index.rst:40 4c9dbe22076d44539ce37403ed706f28
 msgid "Third party plugins"
-msgstr ""
+msgstr "Plugins de terceiros"
 
 #: ../plugins/index.rst:42 8f005e5b645142d4884d77ae4b499695
 msgid ""
 "Third party plugins are developed and maintained by community members. Some "
 "of them may not be translated, or available on only one database engine."
 msgstr ""
+"Plugins de terceiros são desenvolvidos e mantidos por membros da comunidade. "
+"Alguns deles podem não estar traduzidos ou disponíveis apenas em um "
+"mecanismo de banco de dados."
 
 #: ../plugins/index.rst:44 768253b9ab484890b2d7ecfeae4ebfb3
 msgid ""
 "`oAuth2 <https://galette-community.github.io/plugin-oauth2/>`_ (Galette act "
 "as an oAuth2 provider),"
 msgstr ""
+"`oAuth2 <https://galette-community.github.io/plugin-oauth2/>`_ (Galette atua "
+"como um provedor oAuth2),"
 
 #: ../plugins/index.rst:45 768253b9ab484890b2d7ecfeae4ebfb3
 msgid ""
 "`Stripe <https://galette-community.github.io/plugin-stripe/>`_ (handle "
 "`Stripe payments <https://stripe.com/>`_),"
 msgstr ""
+"`Stripe <https://galette-community.github.io/plugin-stripe/>`_ (lidar com "
+"`Pagamentos Stripe <https://stripe.com/>`_),"
 
 #: ../plugins/index.rst:46 dde62501fdd9413faa3dba108c8a4178
 msgid ""
 "`HelloAsso <https://galette-community.github.io/plugin-helloasso/>`_ (handle "
 "`HelloAsso payments <https://www.helloasso.com/>`_),"
 msgstr ""
+"`HelloAsso <https://galette-community.github.io/plugin-helloasso/>`_ (Lidar "
+"com pagamentos do HelloAsso <https://www.helloasso.com/>`_),"
 
 #: ../plugins/index.rst:47 ff077e88788b40fd9c58ea96da46d00d
 msgid ""
 "`LegalNotices <https://galette-community.github.io/plugin-legalnotices/>`_ "
 "(manage legal notices pages),"
 msgstr ""
+"`LegalNotices <https://galette-community.github.io/plugin-legalnotices/>`_ "
+"(Gerenciar páginas de avisos legais),"
 
 #: ../plugins/index.rst:49 768253b9ab484890b2d7ecfeae4ebfb3
 msgid ""
@@ -106,10 +119,13 @@ msgid ""
 "created to :doc:`manage third party plugins <plugins-tiers>`, if you want to "
 "add your plugin."
 msgstr ""
+"Uma `comunidade Github <https://github.com/galette-community/>`_ foi criada "
+"para :doc:`gerenciar plugins de terceiros <plugins-tiers>`, caso você queira "
+"adicionar seu plugin."
 
 #: ../plugins/index.rst:60 699c14f189ea4781b54ab828faa579e7
 msgid "Plugins management interface"
-msgstr ""
+msgstr "Interface de gerenciamento de plugins"
 
 #: ../plugins/index.rst:62 f0d2b7511fad4536af2cd3f8b589e9f7
 msgid ""
@@ -117,25 +133,36 @@ msgid ""
 "dashboard or in the configuration menu. After you have downloaded plugin(s) "
 "in Galette ``plugins`` directory, a list will be displayed:"
 msgstr ""
+"É fornecida uma interface de gerenciamento de plugins, que pode ser acessada "
+"pelo painel de controle ou pelo menu de configurações. Após baixar os "
+"plugins para o diretório ``plugins`` do Galette, uma lista será exibida:"
 
 #: ../plugins/index.rst:64 b962fd6fbc234ffbb40ed53c38e688ac
 msgid "Plugins management"
-msgstr ""
+msgstr "Gerenciamento de plugins"
 
 #: ../plugins/index.rst:69 3701d8b0588649ff914801cc8acd029a
 msgid ""
 "If web server has read access to your plugins directory, then you can enable "
 "or disable any plugin from the related icon."
 msgstr ""
+"Se o servidor web tiver permissão de leitura para acessar o diretório de "
+"plugins, você poderá ativar ou desativar qualquer plugin através do ícone "
+"correspondente."
 
 #: ../plugins/index.rst:71 91de008c63ed4ced97e979796d17ed4c
 msgid ""
 "If plugin requires a database to work, you can play installation and update "
 "scripts from the interface."
 msgstr ""
+"Se o plugin exigir um banco de dados para funcionar, você pode executar os "
+"scripts de instalação e atualização a partir da interface."
 
 #: ../plugins/index.rst:73 45b47f458532489ba9be241f040ee1e5
 msgid ""
 "Database ACLs will then be checked. Unlike Galette, no information will be "
 "asked to you, since all is already available from your current instance."
 msgstr ""
+"Em seguida, as ACLs do banco de dados serão verificadas. Ao contrário do "
+"Galette, nenhuma informação será solicitada a você, pois tudo já está "
+"disponível em sua instância atual."
