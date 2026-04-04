@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-03-30 15:10+0000\n"
+"PO-Revision-Date: 2026-04-05 02:09+0000\n"
 "Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
 "install-galette/pt/>\n"
@@ -114,6 +114,9 @@ msgid ""
 "installation\" or \"Update\". Several of the steps that will follow will be "
 "specific to the type you will choose here."
 msgstr ""
+"Na tela seguinte, você deverá escolher o tipo de instalação. Você poderá "
+"selecionar entre \"Nova instalação\" ou \"Atualização\". Vários dos passos "
+"subsequentes serão específicos para o tipo escolhido."
 
 #: ../installation/galette.rst:39 fb785ae98ba74163867bb4d3336479ba
 msgid "Database"
@@ -124,6 +127,8 @@ msgid ""
 "First of all, make sure the database exists, and prepare all required "
 "information:"
 msgstr ""
+"Primeiramente, certifique-se de que o banco de dados existe e prepare todas "
+"as informações necessárias:"
 
 #: ../installation/galette.rst:43 141faf7247874939af24a2c7e3366b78
 msgid "host name"
@@ -156,6 +161,10 @@ msgid ""
 "Galette dedicated database, default proposal should be ok but you can choose "
 "what you want :)"
 msgstr ""
+"Nessa tela, selecione o tipo de banco de dados e insira o nome do host, o "
+"nome do banco de dados, o nome de usuário e a senha. O prefixo das tabelas é "
+"útil se você não tiver um banco de dados dedicado no Galette; a sugestão "
+"padrão deve funcionar bem, mas você pode escolher o que preferir :)"
 
 #: ../installation/galette.rst:58 eee5e02b9ba1498681e55b420cea9e1e
 msgid ""
@@ -164,6 +173,10 @@ msgid ""
 "fill the form (not for the password). When upgrading, double check the "
 "prefix fit the existing one."
 msgstr ""
+"Este passo é o mesmo para os processos de instalação e atualização. Se já "
+"existir um arquivo de configuração, o Galette irá utilizar as informações "
+"para preencher previamente o formulário (exceto para a senha). Ao atualizar, "
+"verifique se o prefixo corresponde ao existente."
 
 #: ../installation/galette.rst:63 0592d88f3a8c46aca19a6d374122683b
 msgid ""
@@ -171,6 +184,10 @@ msgid ""
 "than it will check database rights are correct (user can add/remove/alter "
 "tables, and can add/remove/edit rows, ...)."
 msgstr ""
+"A próxima tela tentará conectar-se ao banco de dados usando os elementos "
+"fornecidos e, em seguida, verificará se as permissões do banco de dados "
+"estão corretas (o usuário pode adicionar/remover/alterar tabelas e pode "
+"adicionar/remover/editar linhas, etc.)."
 
 #: ../installation/galette.rst:69 fda6fd6b036e42ef8d7b366c06c5d748
 msgid ""
@@ -178,6 +195,9 @@ msgid ""
 "try again. If you see rights issues, get them fixed on your server and use "
 "the \"Refresh\" button."
 msgstr ""
+"Se ocorrer um erro de conexão, volte à etapa anterior, corrija sua "
+"configuração e tente novamente. Se você encontrar problemas de permissões, "
+"resolva-os em seu servidor e use o botão \"Atualizar\"."
 
 #: ../installation/galette.rst:72 33ec25d3790742259f5b293ae82bbeda
 msgid "Create tables"
@@ -188,6 +208,8 @@ msgid ""
 "Those instructions are only for installation. When updating, a database "
 "already exists."
 msgstr ""
+"Essas instruções são apenas para instalação. Ao atualizar, um banco de dados "
+"já existe."
 
 #: ../installation/galette.rst:76 b617064a46f14444817fab6d4c2952a8
 msgid ""
@@ -195,6 +217,10 @@ msgid ""
 "installer will now create the tables, and insert default values. You can "
 "show created tables from any graphical tool or in command line:"
 msgstr ""
+"Se a conexão com o banco de dados for estabelecida e tudo estiver correto, o "
+"instalador criará as tabelas e inserirá os valores padrão. Você pode "
+"visualizar as tabelas criadas a partir de qualquer ferramenta gráfica ou na "
+"linha de comando:"
 
 #: ../installation/galette.rst:78 6cdc0b276db24f3cad179efa3b138208
 msgid "MariaDB:"
@@ -213,6 +239,8 @@ msgid ""
 "This screen is displayed from installation only. When updating, super admin "
 "user is already existing."
 msgstr ""
+"Esta tela é exibida somente durante a instalação. Ao atualizar, o usuário "
+"superadministrador já existe."
 
 #: ../installation/galette.rst:101 e65773fed8b54ae8ab3bb48f411b8c63
 msgid ""
@@ -221,6 +249,10 @@ msgid ""
 "created at installation time is not a member, cannot be removed, and has "
 "some extra rights."
 msgstr ""
+"A próxima tela solicitará informações para criar o usuário "
+"superadministrador do Galette. No Galette, você pode definir alguns membros "
+"como administradores, mas o usuário criado durante a instalação não é um "
+"membro, não pode ser removido e possui alguns privilégios extras."
 
 #: ../installation/galette.rst:108 2637d236593246d5b29d73db52516d61
 msgid "Telemetry"
@@ -231,6 +263,9 @@ msgid ""
 "To know more about Galette installed instances, we try to collect anonymous "
 "telemetry data. You can also register as a Galette user :)"
 msgstr ""
+"Para saber mais sobre as instâncias do Galette instaladas, tentamos coletar "
+"dados de telemetria anônimos. Você também pode se cadastrar como usuário do "
+"Galette :)"
 
 #: ../installation/galette.rst:118 6f17708062464aa59ecb17d0fe78faf4
 msgid "Initialize"
@@ -241,30 +276,32 @@ msgid ""
 "The last step will write the configuration file if needed, and initialyse "
 "some values in your fresh database, as exemple:"
 msgstr ""
+"A última etapa irá escrever o arquivo de configuração, se necessário, e "
+"inicializar alguns valores em seu novo banco de dados, como por exemplo:"
 
 #: ../installation/galette.rst:122 06338ed4c31a4bf68b472a13b5d7ee16
 msgid "add Galette default preferences"
-msgstr ""
+msgstr "Adicionar preferências padrão da Galette"
 
 #: ../installation/galette.rst:123 d48ed529251f45b9bb8b6fe3f5882f09
 msgid "add default contributions and status types,"
-msgstr ""
+msgstr "Adicionar contribuições padrão e tipos de status,"
 
 #: ../installation/galette.rst:124 83b528c80f864ef0a58b4981a14ced4c
 msgid "fields configuration and permissions,"
-msgstr ""
+msgstr "Configuração de campos e permissões,"
 
 #: ../installation/galette.rst:125 b046d392e16149efa5cef902f0ee5d63
 msgid "texts for administrative emails,"
-msgstr ""
+msgstr "Textos para e-mails administrativos,"
 
 #: ../installation/galette.rst:126 82905e865cdb4290a315c1be895c6ba2
 msgid "members default titles,"
-msgstr ""
+msgstr "Títulos padrão dos membros,"
 
 #: ../installation/galette.rst:127 da2a9de79a8d4d8a828feb48de515e7f
 msgid "default PDF models"
-msgstr ""
+msgstr "Modelos PDF padrão"
 
 #: ../installation/galette.rst:128 45f29540c44546729522139772582506
 msgid "..."
@@ -275,6 +312,8 @@ msgid ""
 "When updating, only the missing preferences and the new default data if any "
 "will be handled."
 msgstr ""
+"Ao atualizar, somente as preferências ausentes e os novos dados padrão, se "
+"houver, serão tratados."
 
 #: ../installation/galette.rst:137 b4615aade17247beb26e209d0e601d7c
 msgid "Installation end"
@@ -282,7 +321,7 @@ msgstr "Instalação concluída"
 
 #: ../installation/galette.rst:139 e1aff3c9deb24eeda3447fdfe7fb08f9
 msgid "Installation is now finished, congratulations!"
-msgstr ""
+msgstr "A instalação está concluída, parabéns!"
 
 #: ../installation/galette.rst:145 13c1ea06b773428fa6b12f465ca0ccee
 msgid ""
@@ -290,6 +329,9 @@ msgid ""
 "installation time. You can now go to the :doc:`Galette user manual <../"
 "usermanual/index>`."
 msgstr ""
+"Agora você pode acessar o Galette usando as informações de "
+"superadministrador que você utilizou durante a instalação. Você também pode "
+"acessar o :doc:`Manual do usuário do Galette <../usermanual/index>`."
 
 #: ../installation/galette.rst:151 c7dd4ced05714c2195b411e95588fa9d
 msgid "Happy Galette!"
