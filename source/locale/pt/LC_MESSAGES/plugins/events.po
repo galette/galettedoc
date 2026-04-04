@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-04-01 04:10+0000\n"
+"PO-Revision-Date: 2026-04-05 02:09+0000\n"
 "Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-events/pt/>\n"
@@ -150,6 +150,8 @@ msgid ""
 "When a group manager creates a new event, he must choose one of the groups "
 "he owns!"
 msgstr ""
+"Quando um administrador de grupo cria um novo evento, ele deve escolher um "
+"dos grupos que ele administra!"
 
 #: ../plugins/events.rst:79 ed8a66702f954acda8816fc687f0f943
 msgid ""
@@ -157,6 +159,9 @@ msgid ""
 "if it is available, not available or even mandatory. Choose the activity to "
 "add, and click the button."
 msgstr ""
+"Você pode associar uma ou várias atividades a cada evento e, para cada uma, "
+"definir se ela está disponível, indisponível ou obrigatória. Escolha a "
+"atividade que deseja adicionar e clique no botão."
 
 #: ../plugins/events.rst:87 00cab5142d944ea7b4803fd1219abd36
 msgid ""
@@ -164,20 +169,26 @@ msgid ""
 "to fill mandatory information. Nonetheless (and this is specified each "
 "time), the event **will not be stored** during this operation."
 msgstr ""
+"Adicionar ou remover uma atividade de um evento recarregará a página e "
+"solicitará que você preencha informações obrigatórias. No entanto (e isso é "
+"especificado em cada caso), o evento **não será armazenado** durante essa "
+"operação."
 
 #: ../plugins/events.rst:89 e4ec67c0815b44f49eba89aa060320f8
 msgid "Ensure you save the event :)"
-msgstr ""
+msgstr "Não se esqueça de salvar o evento :)"
 
 #: ../plugins/events.rst:91 a7bc9841d59e47d496ac61807e1feb3a
 msgid ""
 "From Events list, you can edit or remove entries, access to booking list ou "
 "export bookings as CSV."
 msgstr ""
+"Na lista de eventos, você pode editar ou remover entradas, acessar a lista "
+"de reservas ou exportar reservas como CSV."
 
 #: ../plugins/events.rst:98 7338c8f980e145e0bb25d4baf8dd15bc
 msgid "Bookings"
-msgstr ""
+msgstr "Reservas"
 
 #: ../plugins/events.rst:100 654798ff4ad34517849a441872bec3d8
 msgid ""
@@ -185,24 +196,34 @@ msgid ""
 "and groups managers will be limited to their groups events, ou to the events "
 "that are not restricted to a group."
 msgstr ""
+"É possível fazer reservas para cada evento. Como já mencionamos, membros "
+"simples e gestores de grupos terão acesso limitado aos eventos de seus "
+"respectivos grupos, ou seja, aos eventos que não são restritos a um grupo."
 
 #: ../plugins/events.rst:102 ef59e0694d7f4623a125b297022f0222
 msgid ""
 "Adding a new booking can be achieved from the menu \"New booking\" or from "
 "the event bookings list."
 msgstr ""
+"É possível adicionar uma nova reserva através do menu \"Nova reserva\" ou na "
+"lista de reservas de eventos."
 
 #: ../plugins/events.rst:108 2b107959973f47be9d77ab375b333674
 msgid ""
 "Bookings are closed once the event is marked as close, or when the begin "
 "date is over. Administrators and staff members can always add new bookings."
 msgstr ""
+"As reservas são encerradas assim que o evento é marcado como encerrado ou "
+"quando a data de início termina. Administradores e funcionários podem sempre "
+"adicionar novas reservas."
 
 #: ../plugins/events.rst:110 643dc924e6874191949ec1b60f01b54f
 msgid ""
 "Activities list is retrieved from the event; mandatory ones must of course "
 "be checked during booking."
 msgstr ""
+"A lista de atividades é obtida a partir do evento; as atividades "
+"obrigatórias devem ser selecionadas no momento da reserva."
 
 #: ../plugins/events.rst:116 934a2e23bb7d49489cc1d0dbecda2280
 msgid ""
@@ -210,3 +231,6 @@ msgid ""
 "can then send a mailing to booked members, using the standard Galette "
 "mailing mechanism."
 msgstr ""
+"Você pode filtrar a lista de reservas por evento, tipo de pagamento ou "
+"status do pagamento. Em seguida, você pode enviar um e-mail aos membros que "
+"fizeram reservas, usando o mecanismo de e-mail padrão do Galette."
