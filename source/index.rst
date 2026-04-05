@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Galette's documentation
-=======================
+.. rst-class:: slogan
+
+Free your association management!
+=================================
 
 `Galette <https://galette.eu>`_ is a `Free/Libre Open Source <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__ membership management web application dedicated towards non profit organizations.
 
