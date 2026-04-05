@@ -95,9 +95,10 @@ msgstr ""
 msgid ""
 "As example,  we want to change the \"Password\" string on the login page in "
 "french, translated as `Mot de passe :`. The original string is `Password:` "
-"(see ``galette/templates/default/pages/index.html.twig``), its french translation is "
-"`Mot de passe :` and we want to replace it with `Secret :`; so we will "
-"create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
+"(see ``galette/templates/default/pages/index.html.twig``), its french "
+"translation is `Mot de passe :` and we want to replace it with `Secret :`; "
+"so we will create the ``galette_fr_FR.utf8_local_lang.php`` with the "
+"following contents:"
 msgstr ""
 
 # 860fe6d76a224c0bba74e0bc108f9c6b
@@ -113,9 +114,9 @@ msgstr ""
 #: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
 msgid ""
 "You also can override langs for plugins using the sam method, just place the "
-"file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang."
-"php`` where `{plugin}` is the routing name you can find in the ``_define."
-"php`` file."
+"file in plugins lang directory and name it ``{plugin}_{mylang}"
+"_local_lang.php`` where `{plugin}` is the routing name you can find in the "
+"``_define.php`` file."
 msgstr ""
 
 # ae27f3e2e3fa4b67ad6fb55a30d83d00
@@ -134,8 +135,8 @@ msgstr ""
 msgid ""
 "Per default, Galette will create session with default lifetime duration (and "
 "it seems browsers acts differently in this case). You can anyways define a "
-"constant named ``GALETTE_TIMEOUT`` to change session lifetime using :ref:"
-"`behavior configuration <behavior>`:"
+"constant named ``GALETTE_TIMEOUT`` to change session lifetime "
+"using :ref:`behavior configuration <behavior>`:"
 msgstr ""
 
 # 009f4a8642bc41fd8de77df9776d4481
