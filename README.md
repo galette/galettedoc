@@ -1,5 +1,6 @@
 # Galette
-## Gestionnaire d'Adhérents en Ligne Extrêmement Tarabiscoté mais Tellement Efficace
+
+## Free your association management! / Libérez la gestion de votre association !
 
 [![Documentation Status](https://readthedocs.org/projects/galette/badge/?version=develop)](https://doc.galette.eu/)
 
