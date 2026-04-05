@@ -52,7 +52,7 @@ body {
     font: 400 14px/1.4em PtSans, Arial, sans-serif;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    color: #6b6b6b;
+    color: #606060;
     text-align: justify;
 }
 
@@ -101,7 +101,7 @@ div.related ul {
 #page div.related a:visited {
     border-bottom: none;
     padding: 0 0.4em 0 0;
-    color:#636b70!important;
+    color:#606060;
     text-decoration: none;
 }
 
@@ -149,11 +149,11 @@ div.sphinxsidebarwrapper {
 
 .sphinxsidebarwrapper h3 {
     margin:1em 0 .5em;
-    color:#6b6b6b;
+    color:#606060;
     border-width:0;
 }
 .sphinxsidebarwrapper h3 a{
-    color:#6b6b6b!important;
+    color:#606060!important;
 }
 
 .sphinxsidebarwrapper h4 {
@@ -170,7 +170,7 @@ div.sphinxsidebarwrapper {
 }
 
 .sphinxsidebarwrapper a {
-    color: #6B6B6B!important;
+    color: #606060!important;
     text-decoration:none!important;
     display: block;
     padding: .2em .3em;
@@ -178,7 +178,7 @@ div.sphinxsidebarwrapper {
 }
 
 .sphinxsidebarwrapper a:hover {
-    color: #0486b5 !important;
+    color: #007baa !important;
     background: rgba(0, 0, 0, 0.1);
 }
 
@@ -256,8 +256,9 @@ div.warning {
 }
 
 .literal {
-    background-color:rgba(99, 107, 112, 0.2);
-    padding:.1em;
+    font-size: 12.25px;
+    background-color:#e5e5e5;
+    padding:.1em .2em;
 }
 
 img.align-right,
@@ -293,13 +294,13 @@ h4,
 h5 {
     border: none;
     font-weight: bold;
-    color: #6b6b6b;
+    color: #606060;
     background-color: inherit;
     font-size: 100%;
     line-height: 115%;
     margin: 1.25em 0 .3em;
     clear: left;
-    border-bottom: 1px dotted #0486b5;
+    border-bottom: 1px dotted #007baa;
     display: inline-block;
 }
 
@@ -309,7 +310,7 @@ h3 a,
 h4 a,
 h5 a,
 a.nolink {
-    color: #6b6b6b !important;
+    color: #606060 !important;
     text-decoration: none !important;
 }
 
@@ -341,15 +342,15 @@ h4 {
 
 a:link,
 a:visited {
-    color: #279AC4;
+    color: #007baa;
     text-decoration: underline;
 }
 a:visited {
-    color: #279AC4;
+    color: #007baa;
 }
 a:hover,
 a:active {
-    color: #279AC4;
+    color: #005677;
 }
 
 /* external link */
@@ -382,10 +383,28 @@ a.wikilink2 {
     border-bottom: dashed 1px #fd6868 !important;
 }
 
+.highlight {
+    background-color: #fdffc3;
+}
+
+.highlight .c,
+.highlight .c1 {
+    color: #407380;
+}
+
+.highlight .nv {
+    color: #984aae;
+}
+
+.highlight .sx {
+    color: #b1540a;
+}
+
 pre {
-    padding: 0.5em;
-    border: 1px dashed #c4c4c4;
-    color: #666;
+    padding: 1em;
+    font: 1.05em courier new,courier,monospace;
+    border: 1px dashed #636b70;
+    color: #242424;
     overflow: auto;
     text-align: left;
 }
@@ -623,19 +642,22 @@ div#footer img {
 }
 
 #footer, #footer a{
-    color:rgba(255, 255, 255, 0.7);
+    color:#fff;
 }
 #footer a {
     text-decoration: none;
-    padding: .1em .3em;
 }
 #footer a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.7);
+    color:#fff;
+    text-decoration: underline;
 }
 #footer a svg {
     vertical-align: middle;
-    margin-right: .2rem;
+    margin: .2rem .5495rem .1rem .5495rem;
+    fill: #e5e5e5;
+}
+#footer a svg:hover {
+    fill: #fff;
 }
 
 .licbutton {
@@ -1061,7 +1083,7 @@ div.error{
 
 #page div.related:first-child ul {
     display: block;
-    background: #ddd;
+    background: #0000001a;
     border-radius: 6px;
     margin: 0 275px 0 0;
     padding: 5px 10px;
@@ -1091,14 +1113,16 @@ div.error{
 }
 
 #page div.related:last-child .right a {
-    padding: .75em 1em;
-    border: 1px solid #98dbcc;
     text-transform: capitalize;
-    background: #f6f5f4;
+    border: 1px solid #636b70;
+    padding: .5em 1em;
+    background: #fff;
+    color: #606060;
 }
 
 #page div.related:last-child .right a:hover {
-    background: #fff;
+    background: #e5e5e5;
+    color: #242424;
     text-decoration: none;
 }
 
