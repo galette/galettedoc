@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-05-04 14:09+0000\n"
+"PO-Revision-Date: 2026-05-06 11:42+0000\n"
 "Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "galette/doc-user-generalities/pt_BR/>\n"
@@ -32,244 +32,316 @@ msgstr "Direitos"
 #: 6708c81adba34f4a9793539f8c702659
 msgid "We can see several rights level in Galette, allowing access to different parts and features of the application. Levels are:"
 msgstr ""
+"Podemos observar diversos níveis de permissão no Galette, que permitem o "
+"acesso a diferentes partes e funcionalidades do aplicativo. Os níveis são:"
 
 #: ../usermanual/generalites.rst:12
 #: f45faab5ace5443b8ce85c2ff723ea64
 msgid "**super administrator** is a special user (the only one that is not a member) created at installation,"
 msgstr ""
+"**Superadministrador** é um usuário especial (o único que não é membro) "
+"criado durante a instalação,"
 
 #: ../usermanual/generalites.rst:13
 #: 8a28b1fcecf24f8caae2f15faa83eb3f
 msgid "**administrators** are members for who the \"administrator\" checkbox has been checked,"
 msgstr ""
+"**Administradores** são membros para os quais a caixa de seleção "
+"\"administrador\" foi marcada,"
 
 #: ../usermanual/generalites.rst:14
 #: 9379504d759848ef82d1a66c1380de93
 msgid "**staff members** have a specific status (President, Treasurer, Secretary, ...),"
 msgstr ""
+"**Os membros da equipe** possuem um status específico (Presidente, "
+"Tesoureiro, Secretário, ...),"
 
 #: ../usermanual/generalites.rst:15
 #: bb0426100a0b459ab61a251e5929881c
 msgid "**groups managers** have only rights on the groups they manage,"
 msgstr ""
+"**Os **gestores de grupos** têm direitos apenas sobre os grupos que "
+"gerenciam,"
 
 #: ../usermanual/generalites.rst:16
 #: 6debbf52d0d1432fa6278b6fe46c8831
 msgid "**up to date members** are members whose account are active, and whose subscription are up to date,"
 msgstr ""
+"**Membros em dia** são membros cujas contas estão ativas e cujas assinaturas "
+"estão em dia,"
 
 #: ../usermanual/generalites.rst:17
 #: 3197153fe4ed4de2a2ba7dad34e34e24
 msgid "**members** are members whose account is inactive or whose subscriptions are not up to date,"
 msgstr ""
+"**Membros** são membros cujas contas estão inativas ou cujas assinaturas não "
+"estão em dia,"
 
 #: ../usermanual/generalites.rst:18
 #: 4752ce2332eb48b3816974f1ea68e173
 msgid "simple **visitors**."
-msgstr ""
+msgstr "Visitantes **simples**."
 
 #: ../usermanual/generalites.rst:20
 #: 7b525eb37f7946e19f44b72b5a397693
 msgid "Staff members, administrators as well as the super administrator can create, edit and remove members, contributions, transactions, send emailings, ..."
 msgstr ""
+"Funcionários, administradores e o superadministrador podem criar, editar e "
+"remover membros, contribuições, transações, enviar e-mails, etc."
 
 #: ../usermanual/generalites.rst:22
 #: 5239d1e5fd354f5baae45e9bae2b1431
 msgid "Administrators have also access to the application configuration, excepted super admin information."
 msgstr ""
+"Os administradores também têm acesso à configuração do aplicativo, com "
+"exceção das informações do superadministrador."
 
 #: ../usermanual/generalites.rst:24
 #: 1fd726c4806f4fc993b9ff4d96aabf0b
 msgid "The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. He of course can change its own login information from application preferences."
 msgstr ""
+"O superadministrador tem acesso total ao aplicativo, mas não a todos os "
+"recursos. De fato, não se trata de uma conta de membro e, portanto, não "
+"possui algumas das informações necessárias. Ele pode, naturalmente, alterar "
+"suas próprias informações de login nas preferências do aplicativo."
 
 #: ../usermanual/generalites.rst:26
 #: dbf78a8061f948d1b9a53876a97d8668
 msgid "Members can change their own information, and can see their contributions and transactions (as read only)."
 msgstr ""
+"Os membros podem alterar suas próprias informações e visualizar suas "
+"contribuições e transações (somente para leitura)."
 
 #: ../usermanual/generalites.rst:28
 #: 2ec81764c7c74d6d910387191e22e424
 msgid "Visitors can - if this is parameted in preferences - access to public pages (trombinoscope, public members list) but can also register :)"
 msgstr ""
+"Os visitantes podem - se isso estiver configurado nas preferências - acessar "
+"páginas públicas (trombinoscópio, lista pública de membros), mas também "
+"podem se cadastrar :)"
 
 #: ../usermanual/generalites.rst:31
 #: 5e9b415b446849309aa7d5a3744202d5
 msgid "Group managers"
-msgstr ""
+msgstr "Gerentes de grupo"
 
 #: ../usermanual/generalites.rst:33
 #: c52593e32c54402cb6aaa881a87a0265
 msgid "With the stricter configuration, groups managers can show and search on members of their groups, and see accessible data for members. On members and cards, you can :ref:`configure which fields are accessible <fields_acls>`."
 msgstr ""
+"Com a configuração mais restritiva, os administradores de grupos podem "
+"exibir e pesquisar membros de seus grupos, além de visualizar os dados "
+"acessíveis a eles. Em membros e cartões, :ref:` você pode configurar quais "
+"campos são acessíveis <fields_acls>."
 
 #: ../usermanual/generalites.rst:36
 #: d53a9286fb544215a6b7bbf04f552cfe
 msgid "From the preferences, you can also :ref:`give groups managers extra rights <pref_rights>`, like editing or creating members."
 msgstr ""
+"Nas preferências, você também pode :ref:` conceder direitos extras aos "
+"gerentes de grupos <pref_rights>, como editar ou criar membros."
 
 #: ../usermanual/generalites.rst:39
 #: 31aaecc6f4e0419ea7a417377a069073
 msgid "Management rules"
-msgstr ""
+msgstr "Regras de gestão"
 
 #: ../usermanual/generalites.rst:41
 #: 51888802629d4065818d754674be9907
 msgid "Due dates are calculated by day. If a member pay into before the end of his membership, duration of this membership will be added to remaining days. Example:"
 msgstr ""
+"As datas de vencimento são calculadas por dia. Se um membro efetuar o "
+"pagamento antes do término de sua assinatura, a duração dessa assinatura "
+"será adicionada aos dias restantes. Exemplo:"
 
 #: ../usermanual/generalites.rst:0
 #: 214f6f82e91b4741a43d640ce5643e01
 #: 214f6f82e91b4741a43d640ce5643e01
 msgid "Roger subscribed on 2004-01-01 for one year,"
-msgstr ""
+msgstr "Roger assinou o contrato em 01/01/2004, com duração de um ano,"
 
 #: ../usermanual/generalites.rst:0
 #: 9e6117abdeee456d8852fd075294872a
 msgid "if he pays into for a year on 2004-12-13,"
-msgstr ""
+msgstr "Se ele pagar referente a um ano em 13/12/2004,"
 
 #: ../usermanual/generalites.rst:0
 #: ae5968aad1b54262bb5da72f655b8cdb
 msgid "his due date will become 2006-01-01."
-msgstr ""
+msgstr "A data prevista para o parto será 01/01/2006."
 
 #: ../usermanual/generalites.rst:0
 #: ff90ff7a1bf04281b3e0cd8488c5c5e7
 msgid "No day will be forget."
-msgstr ""
+msgstr "Nenhum dia será esquecido."
 
 #: ../usermanual/generalites.rst:48
 #: 538b498de81c48169c8266a4b8088d8f
 msgid "At the contrary, if a member renew his membership late, we evaluate again his membership duration:"
 msgstr ""
+"Pelo contrário, se um membro renovar sua filiação com atraso, reavaliamos a "
+"duração de sua filiação:"
 
 #: ../usermanual/generalites.rst:0
 #: 8494c52c01aa459f8c3bd8c6ecdb6b69
 msgid "if he pays into for a year on 2006-01-13,"
-msgstr ""
+msgstr "Se ele pagar referente a um ano em 13/01/2006,"
 
 #: ../usermanual/generalites.rst:0
 #: 507e4e3cdeed49e6aa50811c645dd6c8
 msgid "his due date will become 2006-01-13."
-msgstr ""
+msgstr "A data prevista para o parto será 13/01/2006."
 
 #: ../usermanual/generalites.rst:54
 #: f9f9774839f946bda567d24f7ea3c519
 msgid "He is not an up to date member from 2006-01-01 to 2006-01-13... On paper at least :)"
 msgstr ""
+"Ele não é um membro em dia entre 01/01/2006 e 13/01/2006... Pelo menos no "
+"papel :)"
 
 #: ../usermanual/generalites.rst:56
 #: a9f52a0386e5464094865003ca2a6885
 msgid "Those rules are flexible because you can freely change membership dates on contributions, if you have rights to add or update them. We can imagine an association who stores all contributions on the first day of the next month (offering its members a longer membership time)."
 msgstr ""
+"Essas regras são flexíveis porque você pode alterar livremente as datas de "
+"adesão às contribuições, caso tenha permissão para adicioná-las ou atualizá-"
+"las. Podemos imaginar uma associação que armazena todas as contribuições no "
+"primeiro dia do mês seguinte (oferecendo aos seus membros um período de "
+"adesão mais longo)."
 
 #: ../usermanual/generalites.rst:59
 #: ad993e18a4fc4a319eb9f88ffa3471de
 msgid "Interface"
-msgstr ""
+msgstr "Interface"
 
 #: ../usermanual/generalites.rst:61
 #: b1e93fcab7a14b56a840c17cd2b3bcb8
 msgid "We do our best for the Galette interface to be:"
-msgstr ""
+msgstr "Fazemos o possível para que a interface do Galette seja:"
 
 #: ../usermanual/generalites.rst:63
 #: c968d38cb1cb41e19016dd44941f5e5d
 msgid "logical and consistent (you will always find icons at familiar places),"
 msgstr ""
+"Lógico e consistente (você sempre encontrará ícones em locais familiares),"
 
 #: ../usermanual/generalites.rst:64
 #: fd066041c1a743398b519306e3a5d05c
 msgid "web standards compliant (HTML and CSS valid),"
-msgstr ""
+msgstr "Compatível com os padrões da web (HTML e CSS válidos),"
 
 #: ../usermanual/generalites.rst:65
 #: b075df05b0d143268e0633fa3b06ca7c
 msgid "HTML semantic respectful,"
-msgstr ""
+msgstr "Respeito semântico ao HTML,"
 
 #: ../usermanual/generalites.rst:66
 #: 7c1400bf5e5b434d9e2b6481a8ab595d
 msgid "accessible (without any WCAG, WAI or equivalent tests run)."
 msgstr ""
+"Acessível (sem a execução de quaisquer testes WCAG, WAI ou equivalentes)."
 
 #: ../usermanual/generalites.rst:68
 #: 2960232bd4724e93ad632e80178241b9
 msgid "If you find places where one of those points is incorrect, do not hesitate to tell us on the tracker or on the mailing list!"
 msgstr ""
+"Se você encontrar algum ponto incorreto, não hesite em nos avisar pelo "
+"rastreador ou pela lista de discussão!"
 
 #: ../usermanual/generalites.rst:71
 #: 1aabbce7b0cb4927859d20f860b43f21
 msgid "Telemetry"
-msgstr ""
+msgstr "Telemetria"
 
 #: ../usermanual/generalites.rst:75
 #: f8982c56edcc471d98c033a528d4380d
 msgid "Galette propose to send some telemetry information:"
-msgstr ""
+msgstr "Galette propõe enviar algumas informações de telemetria:"
 
 #: ../usermanual/generalites.rst:77
 #: 4519b628e22942a88201b31cd43b64fc
 msgid "**entirely anonymous**: no information about your association or your members is sent,"
 msgstr ""
+"**Totalmente anônimo**: nenhuma informação sobre sua associação ou seus "
+"membros será enviada,"
 
 #: ../usermanual/generalites.rst:78
 #: 2c6bf23858da4b0e90c97d92919c91e3
 msgid "**deliberately blurred**: we retrieve an estimation of members count, never a real count,"
 msgstr ""
+"**Deliberadamente desfocado**: obtemos uma estimativa do número de membros, "
+"nunca um número real,"
 
 #: ../usermanual/generalites.rst:79
 #: afb1e1c17cfe4a8994b616525e1c366b
 msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
-msgstr ""
+msgstr "Enviado de forma **segura** (`HTTPS`) em https://telemetry.galette.eu."
 
 #: ../usermanual/generalites.rst:81
 #: 04caf4fc0f8f4a4ab7ce62daf38cae70
 msgid "Sending telemetry data is a manual process, nothing will be send until you **explicitely** ask it. With those information, we can have a better knwownledge of different usages of Galette, their number of member or contributions, plugins used, ..."
 msgstr ""
+"O envio de dados de telemetria é um processo manual; nada será enviado até "
+"que você solicite **explicitamente**. Com essas informações, podemos ter um "
+"melhor conhecimento dos diferentes usos do Galette, seu número de membros ou "
+"contribuições, plugins utilizados, etc."
 
 #: ../usermanual/generalites.rst:83
 #: 1f5a8ae07d244e35aabe0dfd5cabbf7e
 msgid "Those information are useful for the project development and promotion. When you send those information, you can review data that would be sent."
 msgstr ""
+"Essas informações são úteis para o desenvolvimento e a promoção do projeto. "
+"Ao enviar essas informações, você poderá revisar os dados que serão enviados."
 
 #: ../usermanual/generalites.rst:85
 #: ee5a415f2b7e46e0aed869a4fcdb46b1
 msgid "Preview Telemetry data"
-msgstr ""
+msgstr "Pré-visualização dos dados de telemetria"
 
 #: ../usermanual/generalites.rst:90
 #: 30105a34799740a78fc7762d9bbc7cdd
 msgid "After data has been sent once, Galette will propose to send an update from time to time. You can also send them from Galette preferences."
 msgstr ""
+"Após o envio dos dados pela primeira vez, o Galette sugerirá o envio de "
+"atualizações periodicamente. Você também pode configurá-las nas preferências "
+"do Galette."
 
 #: ../usermanual/generalites.rst:92
 #: 66fb93f25b53476f9902dfff177aeeab
 msgid "Telemetry update reminder"
-msgstr ""
+msgstr "Lembrete de atualização de telemetria"
 
 #: ../usermanual/generalites.rst:96
 #: 1c58525d6fd24363ae4bf07399858e13
 msgid "It is also possible to register your association on the website, of course, not anonymously, but it is not possible to link telemetry and registration. New references are moderated."
 msgstr ""
+"Também é possível cadastrar sua associação no site, claro que não "
+"anonimamente, mas não é possível vincular telemetria ao cadastro. Novos "
+"cadastros são moderados."
 
 #: ../usermanual/generalites.rst:98
 #: f049660c866e4657a9d7b4e6112d7cda
 msgid "You can update your registration information from Galette preferences. The form will be blank (because it is not possible to retrieve data you've sent) but all data will be updated because your instance has a unique registration identifier designed for that."
 msgstr ""
+"Você pode atualizar suas informações de registro nas preferências do "
+"Galette. O formulário estará em branco (pois não é possível recuperar os "
+"dados que você enviou), mas todos os dados serão atualizados, já que sua "
+"instância possui um identificador de registro exclusivo."
 
 #: ../usermanual/generalites.rst:100
 #: e2a91bd507aa4493bface5b20065bf23
 msgid "Telemetry from preferences"
-msgstr ""
+msgstr "Telemetria a partir das preferências"
 
 #: ../usermanual/generalites.rst:104
 #: a7af866a2baf4935b0c066c962e8c8e3
 msgid "A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will dissapear. You also can choose to just disable it."
 msgstr ""
+"Um novo painel foi adicionado ao painel de controle do Galette para enviar "
+"informações de telemetria e/ou registrar sua instância. Após a conclusão "
+"dessas etapas, o painel desaparecerá. Você também pode optar por desativá-lo."
 
 #: ../usermanual/generalites.rst:106
 #: 5ffec6b32f8348af8bdd04f122a3dc16
 msgid "Telemetry on dashboard"
-msgstr ""
+msgstr "Telemetria no painel de controle"
