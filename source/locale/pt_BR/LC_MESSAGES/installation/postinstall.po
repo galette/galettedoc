@@ -7,126 +7,170 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-08 21:15+0000\n"
+"Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"galette/doc-install-postinstall/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
 #: ../installation/postinstall.rst:5
 #: 488a226702e54799884dd1ac10f3aec9
 msgid "Post installation"
-msgstr ""
+msgstr "Após a instalação"
 
 #: ../installation/postinstall.rst:8
 #: b17c9984f26a47b69f23f52834d15f1d
 msgid "Various tasks"
-msgstr ""
+msgstr "Diversas tarefas"
 
 #: ../installation/postinstall.rst:10
 #: 9691205beb56471ab60663500a555354
 msgid "One Galette properly installed, you still have one thing to do:"
 msgstr ""
+"Depois de instalar a Galette corretamente, você ainda tem uma coisa a fazer:"
 
 #: ../installation/postinstall.rst:12
 #: bf60cb14174e492f98bfd9c075eedcae
 msgid "remove write access to the ``config`` directory."
-msgstr ""
+msgstr "Remover o acesso de escrita ao diretório ``config``."
 
 #: ../installation/postinstall.rst:17
 #: 0a3871ca8a3d48b88d769c235800b20e
 msgid "Configure paths"
-msgstr ""
+msgstr "Configurar caminhos"
 
 #: ../installation/postinstall.rst:19
 #: 020264d5c184431bb389617ff7378444
 msgid "Some galette paths may be changed from a configuration parameter, such as exports, photos, etc"
 msgstr ""
+"Alguns caminhos da galette podem ser alterados por meio de um parâmetro de "
+"configuração, como exportações, fotos, etc"
 
 #: ../installation/postinstall.rst:21
 #: 915b59a4be0c41ab979c82307b6ead4e
 msgid "By default, Galette provides all those directories inside installation directory. That way, if installation is located at ``/var/www/galette``, exports will be in ``/var/www/galette/data/exports``, photos in ``/var/www/galette/data/photos/``, and so on. Default configuration is done in ``config/paths.inc.php`` file that should not be changed."
 msgstr ""
+"Por padrão, o Galette fornece todos esses diretórios dentro do diretório de "
+"instalação. Dessa forma, se a instalação estiver localizada em ``/var/www/"
+"galette``, as exportações estarão em ``/var/www/galette/data/exports``, as "
+"fotos em ``/var/www/galette/data/photos/``, e assim por diante. A "
+"configuração padrão é feita no arquivo ``config/paths.inc.php``, que não "
+"deve ser alterado."
 
 #: ../installation/postinstall.rst:24
 #: d404b74d31ab4a0989141c8c1da8b8ab
 msgid "Instead, you may override some or all of the values in a ``config/local_paths.inc.php``, with paths you want declared as PHP constants. For exemple, to define a different path for photos:"
 msgstr ""
+"Em vez disso, você pode sobrescrever alguns ou todos os valores em um "
+"arquivo ``config/local_paths.inc.php``, com os caminhos que você deseja "
+"declarar como constantes do PHP. Por exemplo, para definir um caminho "
+"diferente para fotos:"
 
 #: ../installation/postinstall.rst:32
 #: eb3cd2eb4c0b439eabd40d7131261a4f
 msgid "All paths that originally resides in ``data`` directory must stay accessible read/write for the web server. All other directories should be set as read only, the web server should not have to write in them. Here is the complete list:"
 msgstr ""
+"Todos os caminhos que originalmente residem no diretório ``data`` devem "
+"permanecer acessíveis para leitura e gravação pelo servidor web. Todos os "
+"outros diretórios devem ser configurados como somente leitura; o servidor "
+"web não deve precisar gravar neles. Aqui está a lista completa:"
 
 #: ../installation/postinstall.rst:34
 #: 6432ba3da92c493db780460e0c4fae88
 msgid "`GALETTE_CONFIG_PATH` : path to Galette configuration files,"
 msgstr ""
+"`GALETTE_CONFIG_PATH`: caminho para os arquivos de configuração do Galette,"
 
 #: ../installation/postinstall.rst:35
 #: 121fa2d66cfa46b785eb64f660e48da1
 msgid "`GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),"
 msgstr ""
+"`GALETTE_DATA_PATH`: caminho para o diretório de dados do Galette (a partir "
+"da versão 0.8),"
 
 #: ../installation/postinstall.rst:36
 #: d59132cf243e44ffaaf5d9bd6779ad81
 msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr ""
+"`GALETTE_LOGS_PATH`: Caminho dos logs do Galette, altere-o como desejar,"
 
 #: ../installation/postinstall.rst:37
 #: 361b7bfb095f48999793c256e7f0b57d
 msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
 msgstr ""
+"`GALETTE_COMPILE_DIR`: caminho para a compilação do sistema de templates "
+"Smarty,"
 
 #: ../installation/postinstall.rst:38
 #: 827c402225814d058364e8d270935477
 msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
-msgstr ""
+msgstr "`GALETTE_CACHE_DIR`: diretório de cache para alguns casos,"
 
 #: ../installation/postinstall.rst:39
 #: 84e8f4be8acb4553bfd49a9b6311957d
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
+"`GALETTE_EXPORTS_PATH`: caminho para o diretório onde serão armazenadas as "
+"exportações em CSV,"
 
 #: ../installation/postinstall.rst:40
 #: bd56b3e8293a476d8c3d4e44c020de50
 msgid "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to import,"
 msgstr ""
+"`GALETTE_IMPORTS_PATH`: caminho para o diretório que contém os arquivos CSV "
+"a serem importados,"
 
 #: ../installation/postinstall.rst:41
 #: 5d47b80230af4986be976df98f1d7ad8
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
 msgstr ""
+"`GALETTE_ATTACHMENTS_PATH`: caminho para os documentos anexados no e-mail,"
 
 #: ../installation/postinstall.rst:42
 #: aa1fbe83707f43649d6b9baa66de4a29
 msgid "`GALETTE_FILES_PATH` : path to the dynamic files directory storage (from dynamic fields),"
 msgstr ""
+"`GALETTE_FILES_PATH`: caminho para o diretório de armazenamento de arquivos "
+"dinâmicos (a partir de campos dinâmicos),"
 
 #: ../installation/postinstall.rst:43
 #: e144dd24d6c84345aa020da94f00f002
 msgid "`GALETTE_PHOTOS_PATH` : path to store members photos and logos."
 msgstr ""
+"`GALETTE_PHOTOS_PATH`: caminho para armazenar fotos e logotipos dos membros."
 
 #: ../installation/postinstall.rst:46
 #: 12af61e48d4d47cf80df6b2b019cf02e
 msgid "Data security"
-msgstr ""
+msgstr "Segurança de dados"
 
 #: ../installation/postinstall.rst:48
 #: c9320dcabd7b4e1a921106a729deced6
 msgid "You and your members will login to Galette, using a login and a password. You must be aware that those information are transmitted as is to the server; and someone may intercept and read them sniffing your exchanges."
 msgstr ""
+"Você e seus membros farão login no Galette usando um nome de usuário e uma "
+"senha. É importante que vocês saibam que essas informações são transmitidas "
+"ao servidor sem alterações; e que alguém pode interceptá-las e lê-las, "
+"monitorando suas trocas de mensagens."
 
 #: ../installation/postinstall.rst:50
 #: 696788f9c1a34305be512665338d5b66
 msgid "This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive information such as login, passwords, credit card number, ..."
 msgstr ""
+"Esse problema é recorrente quando você precisa enviar dados pela internet, e "
+"é por isso que você deve verificar se está em uma página segura HTTPS (seu "
+"navegador irá avisar) ao inserir qualquer informação sensível, como login, "
+"senhas, número de cartão de crédito, etc."
 
 #: ../installation/postinstall.rst:52
 #: b74ceb4f088f4427baeb090fa018018b
 msgid "And this is the same for Galette, you can use it along with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)"
 msgstr ""
+"E o mesmo vale para o Galette, você pode usá-lo com SSL sem problemas. Todos "
+"os dados transmitidos para o servidor ficarão um pouco mais seguros e "
+"protegidos :)"
