@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-07-09 08:51+0000\n"
+"PO-Revision-Date: 2026-07-16 06:23+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-configuration/sl/>\n"
@@ -17,52 +17,65 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: ../usermanual/configuration.rst:5
 #: 1335eb0386724f4c98a065e2f69816fd
 msgid "Fields Configuration"
-msgstr ""
+msgstr "Konfiguracija polj"
 
 #: ../usermanual/configuration.rst:8
 #: 770dc3a97fff41479c0733ad1b11a34b
 msgid "List fields"
-msgstr ""
+msgstr "Seznam polj"
 
 #: ../usermanual/configuration.rst:12
 #: 6b756b37b1094b8ebc092ecc1db8fc8b
 msgid "You can choose which fields will appears on Galette members list and the order they will appear with a drag & drop interface. Related access rights can be set from core fields configuration (see below)."
 msgstr ""
+"S funkcijo »povleci in spusti« lahko izberete, katera polja se bodo "
+"prikazala na seznamu članov Galette in v kakšnem vrstnem redu se bodo "
+"prikazala. Sorodne pravice dostopa lahko nastavite v konfiguraciji osnovnih "
+"polj (glejte spodaj)."
 
 #: ../usermanual/configuration.rst:16
 #: f3474774034544638002d700d3da27f7
 msgid "Two fields are mandatory and cannot be moved: member number and name."
 msgstr ""
+"Dve polji sta obvezni in ju ni mogoče premakniti: številka člana in ime."
 
 #: ../usermanual/configuration.rst:18
 #: 6e52a74784094262a3d14cd64dd34ce0
 msgid "It is not possible to set access rights on id column, and parent will be accessible for staff members only."
 msgstr ""
+"V stolpcu z ID-jem ni mogoče nastaviti pravic dostopa, zato bo do "
+"nadrejenega dostopa lahko dostopali samo člani osebja."
 
 #: ../usermanual/configuration.rst:20
 #: 5bff4ba31e1a470c8ce0931e43d2f789
 msgid "List fields management"
-msgstr ""
+msgstr "Upravljanje polj seznama"
 
 #: ../usermanual/configuration.rst:28
 #: 7a0400ffa7684e5d93f497ac38d95aae
 msgid "Mandatory fields and access rights"
-msgstr ""
+msgstr "Obvezna polja in pravice dostopa"
 
 #: ../usermanual/configuration.rst:30
 #: 5f1a9f0b17624f16aba64bec24a41af7
 msgid "When you create or edit a member, some fields are mandatory. Default configuration may not suit your needs, but you can configure some elements easily ;)"
 msgstr ""
+"Ko ustvarjate ali urejate člana, so nekatera polja obvezna. Privzeta "
+"konfiguracija morda ne ustreza vašim potrebam, vendar lahko nekatere "
+"elemente preprosto konfigurirate ;)"
 
 #: ../usermanual/configuration.rst:32
 #: d3b171057fd14c5eb49b0275debc53fb
 msgid "From the `Configuration`, `Core fields` menu, you will get access to all fields available for members, and choose for each one if it is mandatory or not, as well as associated access rights:"
 msgstr ""
+"V meniju »Konfiguracija«, »Osnovna polja« boste imeli dostop do vseh polj, "
+"ki so na voljo članom, in za vsako polje lahko izberete, ali je obvezno ali "
+"ne, ter z njim povezane pravice dostopa:"
 
 #: ../usermanual/configuration.rst:34
 #: e453d86c7e2c4f319c57ea5e13c84b1a
@@ -73,31 +86,41 @@ msgstr ""
 #: 59acaa933e7b4989bfd33f94e2cb911b
 msgid "`administrator` will make the field readable and writeable for administrators only,"
 msgstr ""
+"`administrator` bo polje omogočil branje in pisanje samo za administratorje,"
 
 #: ../usermanual/configuration.rst:36
 #: 42c67b7f525042a78260b73bb03f7614
 msgid "`staff members` will make the field readable and writable for staff members and administrators,"
 msgstr ""
+"»Člani osebja« bodo polje naredili berljivo in pisno za člane osebja in "
+"administratorje,"
 
 #: ../usermanual/configuration.rst:37
 #: c07be6eda5b34e79924aef558f9b5302
 msgid "`groups managers` will make the field readable and writable for groups managers on the memebrs of groups they own, and for staff memebrs and administrators,"
 msgstr ""
+"`upravljavci skupin` bodo polje omogočili branje in pisanje za upravitelje "
+"skupin članov skupin, ki so v njihovi lasti, ter za člane osebja in "
+"administratorje,"
 
 #: ../usermanual/configuration.rst:38
 #: b0fedf50b759408698e5c3a54a84e468
 msgid "`read/write` will make the field readable and writeable for member, groups managers, staff members and administrators,"
 msgstr ""
+"`read/write` bo polje omogočilo branje in pisanje za člane, vodje skupin, "
+"člane osebja in administratorje,"
 
 #: ../usermanual/configuration.rst:39
 #: 85896d2a8d6d470d919d8a2c0f947b46
 msgid "`read only` will make the field read only for the members, but writable for groups managers, staff members and administrators."
 msgstr ""
+"`samo za branje` bo polje samo za branje za člane, vendar bo dostopno za "
+"pisanje za vodje skupin, člane osebja in administratorje."
 
 #: ../usermanual/configuration.rst:41
 #: 7496d8efe703469fb5843b486763e81c
 msgid "Core fields management"
-msgstr ""
+msgstr "Upravljanje ključnih polj"
 
 #: ../usermanual/configuration.rst:49
 #: 770dc3a97fff41479c0733ad1b11a34b
@@ -108,146 +131,162 @@ msgstr "Dinamična polja"
 #: 43cf9bb325fe4d8d90bafa631c077d7a
 msgid "Galette comes per default with many fields for members, contributions and transactions. Some of them will be useless, but you may need fields that does not exists..."
 msgstr ""
+"Galette ima privzeto veliko polj za člane, prispevke in transakcije. "
+"Nekatera od njih bodo neuporabna, vendar boste morda potrebovali polja, ki "
+"jih ni ..."
 
 #: ../usermanual/configuration.rst:53
 #: 3aee766a4dc24064993cbd2f1f4dd08a
 msgid "In this case, that is quite simple : just add a new dynamic field with a label, define if it is mandatory or not, and that's all : Galette will handle them automatically, just show the result ;)"
 msgstr ""
+"V tem primeru je to precej preprosto: samo dodajte novo dinamično polje z "
+"oznako, določite, ali je obvezno ali ne, in to je vse: Galette jih bo "
+"samodejno obdelala, samo prikazala bo rezultat ;)"
 
 #: ../usermanual/configuration.rst:55
 #: eafe7796798d46ada0da8caef1a012d8
 msgid "There are several types of dynamic fields:"
-msgstr ""
+msgstr "Obstaja več vrst dinamičnih polj:"
 
 #: ../usermanual/configuration.rst:57
 #: 35d61b45d3d84e8996ae665df95ab415
 msgid "`separator`: just a label, like a part title,"
-msgstr ""
+msgstr "`separator`: samo oznaka, kot naslov dela,"
 
 #: ../usermanual/configuration.rst:58
 #: 7a6128a9a45846f5a59f1b2f0c2e37f3
 msgid "`free text`: multiline text area,"
-msgstr ""
+msgstr "`free text`: večvrstično besedilno območje,"
 
 #: ../usermanual/configuration.rst:59
 #: 3cf316be659240c8869772634a0184a2
 msgid "`single line`: one line text,"
-msgstr ""
+msgstr "`single line`: enovrstično besedilo,"
 
 #: ../usermanual/configuration.rst:60
 #: 5c1947f009e84f90b48ccbc66f902153
 msgid "`choice`: a dropdown list,"
-msgstr ""
+msgstr "`choice`: spustni seznam,"
 
 #: ../usermanual/configuration.rst:61
 #: 2b7e5872d9464c5e9b93e1553aaa5766
 msgid "`date`: a date field with a selector,"
-msgstr ""
+msgstr "`date`: polje za datum z izbirnikom,"
 
 #: ../usermanual/configuration.rst:62
 #: 8ed0bf94902942a2960fbbf2055d0e48
 msgid "`boolean`: a checkbox,"
-msgstr ""
+msgstr "`boolean`: potrditveno polje"
 
 #: ../usermanual/configuration.rst:63
 #: 05fdfc838bf74bba8e962477f5d107f5
 msgid "`file`: add files."
-msgstr ""
+msgstr "`file`: dodajanje datotek."
 
 #: ../usermanual/configuration.rst:69
 #: 927a8a38deb4481da376b847f4ab791e
 msgid "Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searchs. Now, every date is stored using the `Y-m-d` format."
 msgstr ""
+"Dinamična datumska polja so bila prej shranjena v obliki jezika za "
+"prijavljene uporabnike, kar je povzročalo težave pri iskanju. Zdaj je vsak "
+"datum shranjen v obliki `Y-m-d`."
 
 #: ../usermanual/configuration.rst:71
 #: b72baeb27dfb4e3e9e090f24fd64f93b
 msgid "If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️)."
 msgstr ""
+"Če ste uporabljali dinamična datumska polja, boste morali :ref:`posodobiti "
+"svoje podatke z uporabo ustreznega skrbniškega orodja <admintools>` (⚠️ pred "
+"tem poskrbite za varnostno kopiranje baze podatkov! ⚠️)."
 
 #: ../usermanual/configuration.rst:73
 #: 28e22ecda0fa4956a5f2d5a0be009d24
 msgid "While creating a new field (or editing an existing one); you also can:"
-msgstr ""
+msgstr "Med ustvarjanjem novega polja (ali urejanjem obstoječega) lahko tudi:"
 
 #: ../usermanual/configuration.rst:75
 #: 24e96bec0a9948f4bf6d5463cfbdeba9
 msgid "mark it as required,"
-msgstr ""
+msgstr "označi kot obvezno,"
 
 #: ../usermanual/configuration.rst:76
 #: b4352a28672a42e4b657f411e7541582
 msgid "define access rights, the same as for core fields,"
-msgstr ""
+msgstr "definirajte pravice dostopa, enako kot za osnovna polja,"
 
 #: ../usermanual/configuration.rst:77
 #: daa661d861bb46fc800d971c8c6a0aba
 msgid "add extra information to help users."
-msgstr ""
+msgstr "dodajte dodatne informacije za pomoč uporabnikom."
 
 #: ../usermanual/configuration.rst:79
 #: 9317a6067c80470080803dc81b34e90b
 msgid "A dynamic field"
-msgstr ""
+msgstr "Dinamično polje"
 
 #: ../usermanual/configuration.rst:84
 #: c2a8e9c503c34594b0b994269ed6a2ca
 msgid "Some field types like separators, dates and booleans, does not need any extra information; for others:"
 msgstr ""
+"Nekatere vrste polj, kot so ločila, datumi in logične vrednosti, ne "
+"potrebujejo dodatnih informacij; za druge:"
 
 #: ../usermanual/configuration.rst:86
 #: ee1155f5a34c49519f491dd5d08c83c9
 msgid "`free text`:"
-msgstr ""
+msgstr "`free text`:"
 
 #: ../usermanual/configuration.rst:88
 #: 2f7e975d89d9495497a3a9cbd0dae3f9
 msgid "`width`: define number of columns,"
-msgstr ""
+msgstr "`width`: določi število stolpcev,"
 
 #: ../usermanual/configuration.rst:89
 #: f5cf36548c8a4aafb5c301dc4dbc0f70
 msgid "`height`: define number of rows."
-msgstr ""
+msgstr "`height`: določi število vrstic."
 
 #: ../usermanual/configuration.rst:91
 #: 1c54d15dfd6a4f8791e21deb728b3397
 msgid "`single line`:"
-msgstr ""
+msgstr "`single line`:"
 
 #: ../usermanual/configuration.rst:93
 #: 06cbb5a053354c0f900ba15f367330c1
 msgid "`width`: field width,"
-msgstr ""
+msgstr "`width`: širina polja,"
 
 #: ../usermanual/configuration.rst:94
 #: 8d2abbf694b945f9beb1fe8b5aa25067
 msgid "`size`: number of characters,"
-msgstr ""
+msgstr "`size`: število znakov,"
 
 #: ../usermanual/configuration.rst:95
 #: 69cf7521b12e4e8c8de485c112f96b44
 msgid "`repeat`: number of possible ocurences."
-msgstr ""
+msgstr "`repeat`: število možnih ponovitev."
 
 #: ../usermanual/configuration.rst:97
 #: d3b90562c1244a27987b4e6e13b6ddef
 msgid "`choice`:"
-msgstr ""
+msgstr "`choice`:"
 
 #: ../usermanual/configuration.rst:99
 #: 7f8e29e61eda4f2ab9e0f527498fbd31
 msgid "`values`: possible values for the dropdown."
-msgstr ""
+msgstr "`values`: možne vrednosti za spustni meni."
 
 #: ../usermanual/configuration.rst:101
 #: b20f3ccac5b5414eb86d5a041068dc8e
 msgid "`file`:"
-msgstr ""
+msgstr "`file`:"
 
 #: ../usermanual/configuration.rst:103
 #: 2e8493c271c145689bded08db1544894
 msgid "`size`: maximum file size, in Kio (this size is limited to the one for the PHP configuration)."
 msgstr ""
+"`size`: največja velikost datoteke v Kio (ta velikost je omejena na velikost "
+"za konfiguracijo PHP)."
 
 #: ../usermanual/configuration.rst:106
 #: f51eeb223a8f4595a99822ce74de6a87
@@ -258,83 +297,107 @@ msgstr "Prevod oznak"
 #: 620b32d302854c5a96be42e6b06b7c98
 msgid "Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language."
 msgstr ""
+"Galette podpira več jezikov, toda ko dodate novo dinamično polje, je možna "
+"samo ena vrednost. Galette ponuja vmesnik za prevajanje teh oznak v vsak "
+"razpoložljivi jezik."
 
 #: ../usermanual/configuration.rst:110
 #: 4d650efaef58446fab30ecec68d6edd9
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
+"Galette podpira več jezikov, toda ko dodate novo dinamično polje, je možna "
+"samo ena vrednost. Galette ponuja vmesnik za prevajanje teh oznak v vsak "
+"razpoložljiv jezik."
 
 #: ../usermanual/configuration.rst:113
 #: ec0d959f0d9a45338b595867f8aae014
 msgid "Emails contents"
-msgstr ""
+msgstr "Vsebina e-poštnih sporočil"
 
 #: ../usermanual/configuration.rst:115
 #: a00ccb772d3d4676ba56bcba5e0cf028
 msgid "Depending on your configuration (see preferences), administrative emails cans be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example."
 msgstr ""
+"Glede na vašo konfiguracijo (glejte nastavitve) se lahko administratorska e-"
+"poštna sporočila pošljejo uporabnikom in/ali administratorjem, ko dodate "
+"novega člana ali nov prispevek ali na primer prek funkcije za izgubljeno "
+"geslo."
 
 #: ../usermanual/configuration.rst:117
 #: 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
 msgid "Defaults are provided, but you can change them."
-msgstr ""
+msgstr "Privzete nastavitve so na voljo, vendar jih lahko spremenite."
 
 #: ../usermanual/configuration.rst:119
 #: 1eaf6d3b865c494287de03399e0997d0
 msgid "It is important to note that those textes contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be carefull to not forget any of those, that could cause sending issues."
 msgstr ""
+"Pomembno je vedeti, da ta besedila vsebujejo spremenljivke – oblike ``"
+"{VARIABLE}`` – ki bodo ob pošiljanju samodejno zamenjane. Pazite, da ne "
+"pozabite katere od teh, saj bi to lahko povzročilo težave pri pošiljanju."
 
 #: ../usermanual/configuration.rst:121
 #: 16689d2ce01a492397a87af53e4af959
 msgid "Edit mail send to a new member in french"
-msgstr ""
+msgstr "Urejanje e-pošte, poslane novemu članu v francoščini"
 
 #: ../usermanual/configuration.rst:126
 #: e141fe73bcf64b9fb2143f92c6a4e4b9
 msgid "An email will be send to member when:"
-msgstr ""
+msgstr "Članu bo poslano e-poštno sporočilo, ko:"
 
 #: ../usermanual/configuration.rst:128
 #: 6cbe0fd53f9a4290a57412e635a6792d
 msgid "he self subscribes. This mail contains authentication information,"
-msgstr ""
+msgstr "Naroči se sam. To sporočilo vsebuje podatke za preverjanje pristnosti,"
 
 #: ../usermanual/configuration.rst:129
 #: 7801258e9e8248de9fbd6a88fb385ad6
 msgid "his card is added or edited by someone else (if the corresponding box is checked),"
 msgstr ""
+"njegovo kartico doda ali uredi nekdo drug (če je ustrezno polje označeno),"
 
 #: ../usermanual/configuration.rst:130
 #: f402746f081b4cc192495855ad5e5793
 msgid "he uses lost password feature,"
-msgstr ""
+msgstr "uporablja funkcijo izgubljenega gesla,"
 
 #: ../usermanual/configuration.rst:131
 #: ae45becfa53547a284ff4e1e1e677f45
 msgid "a new contribution is attache to his account (if the corresponding box is checked)."
 msgstr ""
+"na njegov račun se pripiše nov prispevek (če je ustrezno polje označeno)."
 
 #: ../usermanual/configuration.rst:133
 #: 257887c09acd4057a73575c1e5ccd646
 msgid "An email will be send to administrators when:"
-msgstr ""
+msgstr "E-poštno sporočilo bo poslano administratorjem, ko:"
 
 #: ../usermanual/configuration.rst:135
 #: d9470aa131bd46ad91fae1bde7def2a2
 msgid "a new member is added or self subscribes,"
-msgstr ""
+msgstr "doda se nov član ali se sam naroči,"
 
 #: ../usermanual/configuration.rst:136
 #: f06dbb209abf42e9a4b8250a25550317
 msgid "a new contribution is attached to his account."
-msgstr ""
+msgstr "na njegov račun je priložen nov prispevek."
 
 #: ../usermanual/configuration.rst:138
 #: bdf33e0f5b0f4e2bb55dda5cb26056bb
 msgid "Of course, emails will be sent ony if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditionned on a checkbox from the user interface, excepting for self subscription messages that will always be send."
 msgstr ""
+"Seveda bodo e-poštna sporočila poslana le, če konfiguracija Galette to "
+"dovoljuje (in je nastavitev pravilna). Pošiljanje sporočil administratorjem "
+"je konfigurirano globalno v nastavitvah, medtem ko je pošiljanje e-poštnih "
+"sporočil članom pogojeno s potrditvenim poljem v uporabniškem vmesniku, "
+"razen sporočil o samonaročnini, ki bodo vedno poslana."
 
 #: ../usermanual/configuration.rst:140
 #: 196630f591274913a30590a46917363c
 msgid "Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more."
 msgstr ""
+"Za zadevo in vsebino je na voljo več spremenljivk, ki se ob pošiljanju "
+"samodejno zamenjajo. Nekatere od njih se lahko uporabijo v vseh sporočilih, "
+"druge pa le pod določenimi pogoji. Za več informacij glejte vgrajeno pomoč v "
+"vmesniku Galette."
