@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-07-09 12:48+0000\n"
+"PO-Revision-Date: 2026-07-16 06:23+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-contributions/sl/>\n"
@@ -17,37 +17,50 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: ../usermanual/contributions.rst:3
 #: cb8f2c777c2d40d7964ee4dfbebc0173
 msgid "Contributions management"
-msgstr ""
+msgstr "Upravljanje prispevkov"
 
 #: ../usermanual/contributions.rst:5
 #: 2b4ba561d55241c483f785c3994160df
 msgid "Galette allows you to manage contributions sent from your members. There are several types of contributions, and transactions are also proposed."
 msgstr ""
+"Galette vam omogoča upravljanje prispevkov, ki jih pošljejo vaši člani. "
+"Obstaja več vrst prispevkov, predlagane pa so tudi transakcije."
 
 #: ../usermanual/contributions.rst:7
 #: 18a05d962a40427b929631839fe6721b
 msgid "A transaction? What's that? Well, a simple example is better than a long text... We will use three members of a same association: Marc, Julie and Zac. Each one is member, independently of which group or else they are affected to, that does not matters."
 msgstr ""
+"Transakcija? Kaj je to? No, preprost primer je boljši kot dolgo besedilo ... "
+"Uporabili bomo tri člane istega združenja: Marca, Julie in Zaca. Vsak od "
+"njih je član, ne glede na to, kateri skupini pripada, sicer pa ni pomembno."
 
 #: ../usermanual/contributions.rst:9
 #: 4713609f4cc54095a9550df13a48feb1
 msgid "Zac send you a check to pay his own membership, Marc and Julie ones and also a donation to the association. In this case, Zac's check will be handled in a transaction attached to his account, and which will be distributed in four contributions, each one attached to corresponding member."
 msgstr ""
+"Zac vam bo poslal ček za plačilo članarine, članarine Marca in Julie ter "
+"donacijo združenju. V tem primeru bo Zacov ček obdelan v transakciji, "
+"priloženi njegovemu računu, ki bo razdeljena v štiri prispevke, od katerih "
+"bo vsak priložen ustreznemu članu."
 
 #: ../usermanual/contributions.rst:11
 #: d5280d63a2c4482382bbbf8459928b8b
 msgid "Another example: Pierre pays his own contribution, his transaction will only contains his membership and will be distributed in only one contribution."
 msgstr ""
+"Drug primer: Pierre plača svoj prispevek, njegova transakcija bo vsebovala "
+"samo njegovo članstvo in bo razdeljena samo v enem prispevku."
 
 #: ../usermanual/contributions.rst:13
 #: 70a6ddb00ea24316aeea069aa7d173a0
 msgid "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder <reminders>` :p"
 msgstr ""
+"Če Pierre, Zac, Julie ali Marc zamujajo, jim lahko pošljete :ref:`opomnik "
+"<reminders>` :p"
 
 #: ../usermanual/contributions.rst:16
 #: 36bd60fa037045d2be8057e4450ef379
@@ -58,6 +71,8 @@ msgstr "Prispevki"
 #: 5aeb8dd4e8494efab85354dda961d842
 msgid "A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member."
 msgstr ""
+"Prispevek je lahko članarina, donacija, darilo, ... Galette vam omogoča "
+"shranjevanje vsega tega za vsakega člana."
 
 #: ../usermanual/contributions.rst:21
 #: 11125f0fbe55414fabd0859c716d56ee
@@ -68,21 +83,25 @@ msgstr "Vrste prispevkov"
 #: 8f7a611904da4ed49dcebdbb29e4a82b
 msgid "Contributions are entirely configurable. There are two main types of contributions in Galette:"
 msgstr ""
+"Prispevke je mogoče v celoti konfigurirati. V Galette obstajata dve glavni "
+"vrsti prispevkov:"
 
 #: ../usermanual/contributions.rst:25
 #: 819c2bd5c0e6424eb5e94d25b1e948c2
 msgid "the ones that extends a membership (a montly or yearly membership for example),"
-msgstr ""
+msgstr "tiste, ki podaljšujejo članstvo (na primer mesečno ali letno članstvo),"
 
 #: ../usermanual/contributions.rst:26
 #: 38e850a49f594234aa91b2c4bfee36fa
 msgid "the ones that do not extends membership, like donations."
-msgstr ""
+msgstr "tiste, ki ne podaljšujejo članstva, kot so donacije."
 
 #: ../usermanual/contributions.rst:28
 #: f4aaa564d9f04608b7928d037b4cc4bc
 msgid "Contribution types management allows you to define a label, and if it extends the memebrship or not."
 msgstr ""
+"Upravljanje vrst prispevkov vam omogoča, da določite oznako in ali ta "
+"podaljša članstvo ali ne."
 
 #: ../usermanual/contributions.rst:33
 #: 27d817215ede438ab329e2489ec6d91a
@@ -93,51 +112,66 @@ msgstr "Opomniki"
 #: 720e1d4cd01e44ab82b59f70290b897a
 msgid "Emails models to remind due dates are available from the emails contents (\"Impending due date\" and \"Late due date\")."
 msgstr ""
+"Modeli e-poštnih sporočil za opomnike na roke so na voljo v vsebini e-"
+"poštnih sporočil (»Bližajoči se rok« in »Zamujeni rok«)."
 
 #: ../usermanual/contributions.rst:37
 #: 2f4e01f0d7dd400a8a2c5facec048f81
 msgid "The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface."
 msgstr ""
+"Gumb za opomnike na nadzorni plošči ali vnos opomnikov v meniju vam bo "
+"omogočil dostop do vmesnika za upravljanje opomnikov."
 
 #: ../usermanual/contributions.rst:39
 #: 377a38171375457fb466200072e77825
 msgid "Reminders management interface"
-msgstr ""
+msgstr "Vmesnik za upravljanje opomnikov"
 
 #: ../usermanual/contributions.rst:44
 #: c792675a21e94502a57df0d11b86bf8d
 msgid "Two categories can be selected:"
-msgstr ""
+msgstr "Izbrati je mogoče dve kategoriji:"
 
 #: ../usermanual/contributions.rst:46
 #: 1c680f774bc945b5a46687a824365522
 msgid "members whose due date is close,"
-msgstr ""
+msgstr "člani, katerih rok se bliža,"
 
 #: ../usermanual/contributions.rst:47
 #: 2b4bbccd3ae74ea382b553a6694fbbf2
 msgid "members whose due date is in the past."
-msgstr ""
+msgstr "člani, katerih rok je v preteklosti."
 
 #: ../usermanual/contributions.rst:49
 #: af71f52045fd40fda43b8a1e751adda4
 msgid "Per default (this is currently not configurable), reminders are sent one month, then seven days before the due date; and then one and two months after the due date expiration. Reminders are stored in the database, if you never sent any reminder, all matching members will be reminded."
 msgstr ""
+"Privzeto (tega trenutno ni mogoče konfigurirati) se opomniki pošljejo en "
+"mesec, nato sedem dni pred rokom; in nato en in dva meseca po preteku roka. "
+"Opomniki so shranjeni v zbirki podatkov; če niste nikoli poslali nobenega "
+"opomnika, bodo opomnjeni vsi ustrezni člani."
 
 #: ../usermanual/contributions.rst:51
 #: 680dd2901dfc4382a8c1cb8a1b9d222b
 msgid "Galette will tell you if some members do not have an email address, you can print labels for those ones."
 msgstr ""
+"Galette vam bo povedala, da če nekateri člani nimajo e-poštnega naslova, "
+"lahko zanje natisnete nalepke."
 
 #: ../usermanual/contributions.rst:53
 #: 359f9f9cb04048b2be635343d62117d2
 msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
 msgstr ""
+"Končno je mogoče opomnike avtomatizirati z nalogo cron, ki bo poklicala "
+"datoteko ``galette/reminder.php``. Če želite, da se opomniki pošiljajo vsak "
+"dan ob 8:30, lahko dodate datoteko ``/etc/cron.d/galette`` (v Fedori in "
+"podobnih sistemih si oglejte sistemsko dokumentacijo, da veste, kako dodati "
+"crontab) z naslednjo vsebino:"
 
 #: ../usermanual/contributions.rst:60
 #: 84b9adcad74b4b2e893c64bee3afd9b3
 msgid "Invoices and receipts"
-msgstr ""
+msgstr "Računi in potrdila"
 
 #: ../usermanual/contributions.rst:62
 #: 6b3bf19d68c74d47be81faf4f499dd37
