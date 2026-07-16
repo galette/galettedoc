@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-07-16 06:23+0000\n"
+"PO-Revision-Date: 2026-07-16 08:26+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-pdf_models/sl/>\n"
@@ -28,66 +28,82 @@ msgstr "Modeli PDF"
 #: 96cb9421538941e38a391868bb5a27ce
 msgid "PDF models are provided for several outputs : an invoice model, a receipt model and a membership from model are currently available. All of them inherits from a `Global` model."
 msgstr ""
+"Za več izhodov so na voljo modeli PDF: trenutno so na voljo model računa, "
+"model potrdila in model članstva iz. Vsi podedujejo model »Global«."
 
 #: ../usermanual/pdf_models.rst:9
 #: 46c716eef77141f68a210ebf5a65248d
 msgid "PDF models management"
-msgstr ""
+msgstr "Upravljanje modelov PDF"
 
 #: ../usermanual/pdf_models.rst:15
 #: 3f47123045c44997b7b599dd611fc47a
 msgid "Models inheritance"
-msgstr ""
+msgstr "Dedovanje modelov"
 
 #: ../usermanual/pdf_models.rst:17
 #: f2868b0991074dafb33a8eaca031ae3d
 msgid "The global model defines three distincts parts:"
-msgstr ""
+msgstr "Globalni model opredeljuje tri različne dele:"
 
 #: ../usermanual/pdf_models.rst:19
 #: 9677543b8f084a4cb0be4b7db5824d7d
 msgid "header,"
-msgstr ""
+msgstr "glava,"
 
 #: ../usermanual/pdf_models.rst:20
 #: f25efe84e91547f5ad3a0f613bac10aa
 msgid "footer,"
-msgstr ""
+msgstr "podnožje,"
 
 #: ../usermanual/pdf_models.rst:21
 #: fb0633cd2723449982e52dada96f3801
 msgid "CSS styles."
-msgstr ""
+msgstr "Slogi CSS-ja."
 
 #: ../usermanual/pdf_models.rst:23
 #: 2f91f1a54da04be99a9ebdeeb2c961e9
 msgid "Each model which inherits from `Global` will automatically obtain same header and footer except if the new model redefines them, in which case only specific values will be applied."
 msgstr ""
+"Vsak model, ki podeduje `Globalno`, bo samodejno pridobil isto glavo in "
+"nogo, razen če ju novi model na novo definira, v tem primeru pa bodo "
+"uporabljene samo določene vrednosti."
 
 #: ../usermanual/pdf_models.rst:25
 #: fb19833be15644cfbe98f65537d0b31b
 msgid "For CSS properties it is a bit different: `Global` model properties will always be applied, and specific model properties will be appended (just like real CSS stylesheets)."
 msgstr ""
+"Za lastnosti CSS je nekoliko drugače: vedno bodo uporabljene `globalne` "
+"lastnosti modela, specifične lastnosti modela pa bodo dodane (tako kot pri "
+"pravih slogovnih predlogah CSS)."
 
 #: ../usermanual/pdf_models.rst:28
 #: 18028586cc404605b575cace3f08bc8f
 msgid "Generalities"
-msgstr ""
+msgstr "Splošnosti"
 
 #: ../usermanual/pdf_models.rst:30
 #: 514847b03f1645cca71ce658d425006b
 msgid "In addition of header, footer and CSS styles, a model defines a title, a sub title and a body."
 msgstr ""
+"Poleg glave, noge in CSS slogov model definira naslov, podnaslov in telo."
 
 #: ../usermanual/pdf_models.rst:32
 #: 7799205d9ec94bde904af0eea99e655d
 msgid "Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationalized texts like `_T(\"My text\")` that relies on Galette standard translation capacities."
 msgstr ""
+"Vsako od teh polj lahko sprejme nekaj nadomestnih vrednosti, za podrobnosti "
+"glejte pomoč v uporabniškem vmesniku. Vsebujejo lahko tudi "
+"internacionalizirana besedila, kot je `_T(\"Moje besedilo\")`, ki se "
+"zanašajo na standardne prevajalske zmogljivosti Galette."
 
 #: ../usermanual/pdf_models.rst:34
 #: 5c5cbe88aa964926a2ab04f76292fd39
 msgid "Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent browser; there are many limitations."
 msgstr ""
+"Modeli se zanašajo na sloge HTML in CSS, vendar ne pozabite, da gradimo "
+"datoteko PDF in ne prikazujemo strani v novejšem brskalniku; obstaja veliko "
+"omejitev."
 
 #: ../usermanual/pdf_models.rst:37
 #: 13da33a36db64a4c96c92bf4ba19b86e
@@ -97,29 +113,39 @@ msgstr "Računi in potrdila"
 #: ../usermanual/pdf_models.rst:39
 #: 87197e2d52b743d9b0362facef8747e1
 msgid "Invoice and receipt models are the same, excepting their titles."
-msgstr ""
+msgstr "Vzorca računov in potrdil sta enaka, razen naslovov."
 
 #: ../usermanual/pdf_models.rst:41
 #: 9fa47760bbc0423880c05a1f2ce6902c
 msgid "Invoice PDF model"
-msgstr ""
+msgstr "Model računa v PDF obliki"
 
 #: ../usermanual/pdf_models.rst:46
 #: 81316cb5e5a14037b0af6b42c62ffa1e
 msgid "As you can see in the above screenshot, invoice model does not define any header, footer or CSS styles, the ones form the `Global` model are used."
 msgstr ""
+"Kot lahko vidite na zgornjem posnetku zaslona, model računa ne definira "
+"nobenih slogov glave, noge ali CSS, temveč se uporabljajo tisti iz modela "
+"`Global`."
 
 #: ../usermanual/pdf_models.rst:49
 #: 1195c0c6d5384d3eb41a5efa90800e4a
 msgid "Membership form"
-msgstr ""
+msgstr "Obrazec za članstvo"
 
 #: ../usermanual/pdf_models.rst:51
 #: cf1c6206876d4ada90aa90e05dff5b85
 msgid "It is a model that can be used to print a membership form. It can be empty (to print some of them for any event for example) or filled with one member information."
 msgstr ""
+"To je model, ki ga je mogoče uporabiti za tiskanje obrazca za članstvo. "
+"Lahko je prazen (na primer za tiskanje nekaterih obrazcev za kateri koli "
+"dogodek) ali pa izpolnjen s podatki o enem članu."
 
 #: ../usermanual/pdf_models.rst:53
 #: 3cfab6378f114b25ad54a51127100c72
 msgid "Since there are many limitation, you may use the :doc:`FullCard plugin </plugins/fullcard>` that will replace this model. It is more complex to change, but you can do many more with it. You can also create your own plugin based on FullCard."
 msgstr ""
+"Ker obstaja veliko omejitev, lahko uporabite vtičnik :doc:`FullCard </"
+"plugins/fullcard>`, ki bo nadomestil ta model. Spreminjanje je bolj "
+"zapleteno, vendar lahko z njim naredite veliko več. Lahko pa ustvarite tudi "
+"svoj vtičnik, ki temelji na FullCardu."
