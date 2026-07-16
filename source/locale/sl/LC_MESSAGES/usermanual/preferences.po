@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2026-07-14 10:01+0000\n"
+"PO-Revision-Date: 2026-07-16 06:23+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-preferences/sl/>\n"
@@ -453,86 +453,107 @@ msgstr ""
 #: d9130ff3a77c4317af01e347aad946ce
 msgid "**Activate HTML editor**: activate HTML format when sending emails (discouraged),"
 msgstr ""
+"**Aktiviraj urejevalnik HTML**: aktiviraj obliko HTML pri pošiljanju e-pošte "
+"(odsvetovano),"
 
 #: ../usermanual/preferences.rst:154
 #: ed3fb7288469475282f27f779b6b24fe
 msgid "**Emailing method**: method used to send emails:"
-msgstr ""
+msgstr "**Način pošiljanja e-pošte**: način, uporabljen za pošiljanje e-pošte:"
 
 #: ../usermanual/preferences.rst:156
 #: c8f820a417814d6b9ced46f9064beedf
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr ""
+"**Pošiljanje e-pošte onemogočeno**: Galette ne bo pošiljala nobenih e-"
+"poštnih sporočil,"
 
 #: ../usermanual/preferences.rst:157
 #: c6bee1a70b5544148783377d17911522
 msgid "**PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),"
 msgstr ""
+"**PHP funkcija pošte**: uporablja PHP funkcijo ``mail()`` in povezane "
+"parametre (priporočeno, kadar je mogoče),"
 
 #: ../usermanual/preferences.rst:158
 #: 4f0c94e419e94460b9fe51b98a44fcbe
 msgid "**Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),"
 msgstr ""
+"**Uporaba strežnika SMTP**: za konfiguracijo uporablja zunanji strežnik SMTP "
+"(bo počasnejše od funkcije PHP ``mail()``),"
 
 #: ../usermanual/preferences.rst:159
 #: 9c825c119c984d0bbb98119bc5b6dce0
 msgid "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),"
 msgstr ""
+"**Uporaba Gmaila kot SMTP**: enako kot strežnik SMTP, vendar specifično za "
+"Gmail (bo tudi počasnejše od funkcije PHP ``mail()``),"
 
 #: ../usermanual/preferences.rst:160
 #: 40f5c89ffe1d45c1ba4e8bbec5c957ee
 msgid "**Using sendmail server**: uses local server sendmail,"
-msgstr ""
+msgstr "**Uporaba strežnika sendmail**: uporablja lokalni strežnik sendmail,"
 
 #: ../usermanual/preferences.rst:161
 #: 25ec1215b6034295bbd7234b69f70d38
 msgid "**Using qmail server**: uses local server qmail,"
-msgstr ""
+msgstr "**Uporaba strežnika qmail**: uporablja lokalni strežnik qmail,"
 
 #: ../usermanual/preferences.rst:163
 #: 2d43c69e29a94892bfb0f23a4693784f
 msgid "**Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application."
 msgstr ""
+"**Podpis pošte**: podpis je dodan vsem poslanim e-poštnim sporočilom. "
+"Razpoložljive spremenljivke so prikazane v pomoči v aplikaciji."
 
 #: ../usermanual/preferences.rst:165
 #: 00f6183b026e4c48968c8042e8d55636
 msgid "When using GMail as SMTP, you will have to configure user name and password to use."
 msgstr ""
+"Ko uporabljate Gmail kot SMTP, boste morali konfigurirati uporabniško ime in "
+"geslo."
 
 #: ../usermanual/preferences.rst:167
 #: 7528af4a6771448f8d7d85061f2a4e10
 msgid "SMTP configuration is a bit more complexe :"
-msgstr ""
+msgstr "Konfiguracija SMTP je nekoliko bolj zapletena:"
 
 #: ../usermanual/preferences.rst:169
 #: cf11341455ba4fde9cfc6059ce27e9eb
 msgid "**SMTP server**: server address, required,"
-msgstr ""
+msgstr "**SMTP strežnik**: naslov strežnika, obvezno,"
 
 #: ../usermanual/preferences.rst:170
 #: b4763ef742a74f8581f99e34167136d3
 msgid "**SMTP port**: server port, required,"
-msgstr ""
+msgstr "**Vrata SMTP**: vrata strežnika, obvezno,"
 
 #: ../usermanual/preferences.rst:171
 #: eeed155a037842b8b5649fe42277e2de
 msgid "**Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,"
 msgstr ""
+"**Uporabi overjanje SMTP**: če vaš strežnik zahteva overjanje. V tem primeru "
+"boste morali nastaviti tudi uporabniško ime in geslo,"
 
 #: ../usermanual/preferences.rst:172
 #: a096fb582d5d4e0ca73aae2ef21e5945
 msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
 msgstr ""
+"**Uporabi TLS za SMTP**: omogoči podporo za SSL (vedno vklopljeno za Gmail),"
 
 #: ../usermanual/preferences.rst:173
 #: a9c16e09df744eb3ac3f0ddcacc0093b
 msgid "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example)."
 msgstr ""
+"**Dovoli nezaščiten TLS**: v nekaterih primerih je lahko potrdilo SSL "
+"neveljavno (na primer samopodpisano)."
 
 #: ../usermanual/preferences.rst:175
 #: 2b6f9f069dca400ba2381f2b17f65a0e
 msgid "The `Test mail settings` button will send a test message to the email currently stored as members administrator."
 msgstr ""
+"Gumb »Preizkusne nastavitve e-pošte« bo poslal testno sporočilo na e-poštni "
+"naslov, ki je trenutno shranjen kot skrbnik članov."
 
 #: ../usermanual/preferences.rst:178
 #: 0bbb4824cd6347c5b0d2638efa8cb879
@@ -542,7 +563,7 @@ msgstr "Oznake"
 #: ../usermanual/preferences.rst:180
 #: fc90af26bb524d10b4e189c63ab013f8
 msgid "Galette settings, labels tab"
-msgstr ""
+msgstr "Nastavitve Galette, zavihek z oznakami"
 
 #: ../usermanual/preferences.rst:186
 #: ee97b5ef64aa4487abe84564b37446a8
@@ -552,137 +573,160 @@ msgstr "Karte"
 #: ../usermanual/preferences.rst:188
 #: 682676b77bdb471fae420a477929c25e
 msgid "Galette settings, cards tab"
-msgstr ""
+msgstr "Nastavitve Galette, zavihek s karticami"
 
 #: ../usermanual/preferences.rst:194
 #: 59f3f24b2678418cbaf8264cb61c56f5
 msgid "Security"
-msgstr ""
+msgstr "Varnost"
 
 #: ../usermanual/preferences.rst:200
 #: e7bfe69983544648b9d5d714327b8776
 msgid "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
+"Zapletena pravila za gesla niso uporabniku prijazna; varnost pa večinoma "
+"nikoli ni :)"
 
 #: ../usermanual/preferences.rst:202
 #: 570e17799c1d497eb9af2e95ad2780aa
 msgid "Of course, all passwords should be as secure as possible, but this is especially true for all accounts that have privileges (staff, admin, super-admin); you may explain your users why this is important."
 msgstr ""
+"Seveda morajo biti vsa gesla čim bolj varna, vendar to še posebej velja za "
+"vse račune s privilegiji (zaposleni, skrbnik, super skrbnik); uporabnikom "
+"lahko razložite, zakaj je to pomembno."
 
 #: ../usermanual/preferences.rst:204
 #: fff95ddfffec46638e5339356186deef
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
+"Za gesla članov (in super-administratorjev) lahko uveljavite nekaj pravil:"
 
 #: ../usermanual/preferences.rst:206
 #: ee8bcb4532c34c1ba889ddf0a74dd41c
 msgid "minimum length (6 characters or more),"
-msgstr ""
+msgstr "minimalna dolžina (6 znakov ali več),"
 
 #: ../usermanual/preferences.rst:207
 #: 79fe63911b564890802adcf767131707
 msgid "minimum \"strength\","
-msgstr ""
+msgstr "minimalna \"moč\","
 
 #: ../usermanual/preferences.rst:208
 #: 2b3992cafb854047b5fdcbf88d40217e
 msgid "blacklist,"
-msgstr ""
+msgstr "črni seznam,"
 
 #: ../usermanual/preferences.rst:209
 #: e85e35e110744770a03663beb062e501
 msgid "no personal information."
-msgstr ""
+msgstr "brez osebnih podatkov."
 
 #: ../usermanual/preferences.rst:211
 #: bef37032d13d4b3a9d15629579f63de2
 msgid "Galette settings, security tab"
-msgstr ""
+msgstr "Nastavitve Galette, zavihek varnost"
 
 #: ../usermanual/preferences.rst:216
 #: 053343e209714fffabbdaecff65a81e5
 msgid "Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a \"strength meter\" displayed for information."
 msgstr ""
+"Dolžina je še vedno edino pravilo, ki je privzeto aktivno, le konfigurirajte "
+"zahtevano število znakov. V poljih za gesla se bodo napake prikazovale "
+"sproti, prav tako pa se bo prikazal \"merilnik moči\" za informacije."
 
 #: ../usermanual/preferences.rst:220
 #: 4209b4bc1cd448219d37156cda7e420a
 msgid "If you enable password checks, it is not possible to know if some of existing ones does not respect them. Galette will display a warning at login if checks are not respected, but login will still be possible!"
 msgstr ""
+"Če omogočite preverjanje gesel, ni mogoče vedeti, ali jih katero od "
+"obstoječih gesel ne upošteva. Galette bo ob prijavi prikazal opozorilo, če "
+"preverjanja niso upoštevana, vendar bo prijava še vedno mogoča!"
 
 #: ../usermanual/preferences.rst:222
 #: 78e1ec1f228146f2be3cf46d52ee679f
 msgid "But wait... Password security is important, but Galette does not enforce nothing! Isn't that dumb? Well, not really. For tests or entirely private instances, security may be less important; and in some cases, being too restrictive may be an issue for your users; that's why this is up to you to secure as needed; just like using SSL or not :)"
 msgstr ""
+"Ampak počakajte ... Varnost gesla je pomembna, ampak Galette ne uveljavlja "
+"ničesar! Ali ni to neumno? No, pravzaprav ne. Za teste ali povsem zasebne "
+"primere je varnost morda manj pomembna; in v nekaterih primerih je lahko "
+"preveč omejevanja problem za vaše uporabnike; zato je odvisno od vas, da jo "
+"po potrebi zavarujete; tako kot uporabljate SSL ali ne :)"
 
 #: ../usermanual/preferences.rst:225
 #: c2ebfee2cf554c3db4d358329ac44fed
 msgid "Password strength"
-msgstr ""
+msgstr "Moč gesla"
 
 #: ../usermanual/preferences.rst:227
 #: 98eae32c24b94720be85c712e0d0976c
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
-msgstr ""
+msgstr "Izračun moči gesla je precej preprost. Temelji na 4 pravilih:"
 
 #: ../usermanual/preferences.rst:229
 #: e604d81f64d148bdaac9e4e2dba4edbf
 msgid "contains lower case characters,"
-msgstr ""
+msgstr "vsebuje male črke,"
 
 #: ../usermanual/preferences.rst:230
 #: f2745eaadb224df2bdc88c3657d87438
 msgid "contains upper case characters,"
-msgstr ""
+msgstr "vsebuje velike črke,"
 
 #: ../usermanual/preferences.rst:231
 #: dcca5661bd7845e8b4cc6576ca0ab932
 msgid "contains number,"
-msgstr ""
+msgstr "vsebuje številko,"
 
 #: ../usermanual/preferences.rst:232
 #: 6134e0ab5cca42a58cf6d1c753008529
 msgid "contains special characters."
-msgstr ""
+msgstr "vsebuje posebne znake."
 
 #: ../usermanual/preferences.rst:234
 #: 5ed15ee7aa7e4b24a0b20b61e2c3e0a6
 msgid "You can choose between 5 values for strength configuration:"
-msgstr ""
+msgstr "Za konfiguracijo moči lahko izbirate med 5 vrednostmi:"
 
 #: ../usermanual/preferences.rst:236
 #: 5280643fa53246d6bfa3264c699adc4d
 msgid "**none**: (default): disables strength checks and check for personal information,"
 msgstr ""
+"**brez**: (privzeto): onemogoči preverjanje moči in preverjanje osebnih "
+"podatkov,"
 
 #: ../usermanual/preferences.rst:237
 #: 394c5519cf9b464bba1968b6d28fcaa3
 msgid "**weaker**: enables check for personal information, only one of the rule is mandatory,"
 msgstr ""
+"**šibkejše**: omogoča preverjanje osebnih podatkov, obvezno je le eno od "
+"pravil,"
 
 #: ../usermanual/preferences.rst:238
 #: 11f3d1b16316428cbb6849ea5a1391c7
 msgid "**medium**: two rules are mandatory,"
-msgstr ""
+msgstr "**srednje**: dve pravili sta obvezni,"
 
 #: ../usermanual/preferences.rst:239
 #: 0b54fe121ee34df78ed9a1e055c3e0fe
 msgid "**strong**: three rules are mandatory,"
-msgstr ""
+msgstr "**močno**: tri pravila so obvezna,"
 
 #: ../usermanual/preferences.rst:240
 #: 519a18052f774c3ebf7f29e782153010
 msgid "**very strong**: the four rules are mandatory."
-msgstr ""
+msgstr "**zelo močno**: štiri pravila so obvezna."
 
 #: ../usermanual/preferences.rst:243
 #: 7165d4847cfc48a9b5763006e04d8f26
 msgid "Blacklisted passwords"
-msgstr ""
+msgstr "Gesla na črni listi"
 
 #: ../usermanual/preferences.rst:245
 #: c932b59f38f740b4a9df457047124454
 msgid "A default list of 500 common passwords is provided as a blacklist you can enable, \"galette\" is also blacklisted."
 msgstr ""
+"Privzeti seznam 500 pogostih gesel je na voljo kot črni seznam, ki ga lahko "
+"omogočite, »galette« pa je prav tako na črnem seznamu."
 
 #: ../usermanual/preferences.rst:249
 #: ac46d13e12dc477586e4bfa8e5bf1970
