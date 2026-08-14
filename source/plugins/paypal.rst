@@ -2,6 +2,12 @@
 Paypal
 ======
 
+.. warning::
+
+   PayPal is discontinuing its legacy Website Payments Standard (WPS) integration, with full transaction processing termination scheduled for January 2027.
+   This plugin is **not compatible** with any other integration.
+
+
 This plugin provides:
 
 * possibility to associate an amount to a contribution type,
