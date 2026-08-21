@@ -20,6 +20,52 @@ Galette logs are stored in the ``galette/data/log`` per default.
 
 :ref:`Enabling development mode <galettemodes>` will give you more information, and deactivate cache, that may help resolving your issue.
 
+.. _faq_2fa:
+
+************************************************
+My two-factor authentication codes are refused
+************************************************
+
+.. versionadded:: 1.3.0
+
+**Check the clocks first.** Codes are computed from the current time, and nothing else. If the clock of your server or the clock of your device is off by more than about a minute, every code is refused, and everything else looks perfectly normal. This is, by a wide margin, the first thing to look at.
+
+Galette accepts the code of the current thirty seconds period and of the one just before and just after, which leaves a bit less than a minute and a half of tolerance. Beyond that, set both clocks right -- on the server, by enabling NTP; on a phone, by turning automatic date and time on -- and try again. Most authenticator applications also offer to correct their own clock for you.
+
+Two other cases look like a refusal but are not one:
+
+* **the same code twice**: a code is accepted once only, so submitting the code you just used to enrol, or reloading the page after a successful login, is refused. Wait for the next one -- it comes at most thirty seconds later.
+* **too many attempts**: after a series of wrong codes, Galette stops answering for a while. Wait it out rather than trying harder.
+
+I lost the device computing my codes
+------------------------------------
+
+Use one of the ten recovery codes you were given when you enabled it: the field that asks for a code takes them too. Each one works once. Once logged in, disable the second factor and enable it again on your new device -- and keep the new recovery codes.
+
+If you have no recovery code left either, ask an administrator or a staff member of your association to :ref:`reset your second factor <member_2fa_reset>`.
+
+The super administrator cannot log in anymore
+---------------------------------------------
+
+That account is not a member, so nobody can reset it from the interface, and it has no recovery codes. Its second factor lives in the preferences, in database, which is where you clear it from:
+
+.. code-block:: sql
+
+   UPDATE galette_preferences SET val_pref = '' WHERE nom_pref = 'pref_2fa_superadmin_secret';
+   UPDATE galette_preferences SET val_pref = '0' WHERE nom_pref = 'pref_2fa_superadmin_enabled';
+
+Replace ``galette_`` with your own table prefix if you changed it (the ``PREFIX_DB`` setting of your configuration file). The next login asks for the password alone.
+
+If a policy makes the second factor mandatory, you will be asked to enrol again right away; to stop that as well, add:
+
+.. code-block:: sql
+
+   UPDATE galette_preferences SET val_pref = '0' WHERE nom_pref = 'pref_2fa_mode';
+
+.. warning::
+
+   Keep an access to your database at hand before you enable a second factor on the super administrator account. It is the only way back in for it.
+
 *****************************************
 How to report a bug or ask for a feature?
 *****************************************
