@@ -263,6 +263,34 @@ This check rely on strength activation (all but **none** level). For the super-a
 
 Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants).
 
+.. _pref_2fa:
+
+Two-factor authentication
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+A password is a single factor: whoever knows it is in. Two-factor authentication asks, right after the password, for a six digits code that changes every thirty seconds and comes from an application on the user own phone or computer. A stolen password is then not enough anymore.
+
+Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server.
+
+Four policies are available:
+
+* **disabled** (default): nothing changes, nobody is asked for a code,
+* **optional**: everybody may enable it from their own account, nobody has to,
+* **required for administrators and staff members**: those accounts have to enable it, others may,
+* **required for everyone**: every account has to enable it.
+
+When it is required, an account that has not enabled it yet is sent to the enrolment page at login and cannot reach anything else until it is done. Nobody is ever locked out by a policy change: they are asked to enrol, not refused.
+
+.. note::
+
+   Switching the policy back to **disabled** does not delete anything. Codes are no longer asked for, and the second factors already enabled start being asked for again as soon as you enable a policy back.
+
+The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`.
+
+Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it.
+
 Admin
 =====
 
