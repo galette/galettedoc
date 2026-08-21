@@ -41,12 +41,12 @@ Third party plugins
 
 Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
 
-* `oAuth2 <https://galette-community.github.io/plugin-oauth2/>`_ (Galette act as an oAuth2 provider),
-* `Stripe <https://github.com/galette-community/plugin-stripe>`_ (handle `Stripe payments <https://stripe.com/>`_),
-* `HelloAsso <https://galette-community.github.io/plugin-helloasso/>`_ (handle `HelloAsso payments <https://www.helloasso.com/>`_),
-* `LegalNotices <https://galette-community.github.io/plugin-legalnotices/>`_ (manage legal notices pages),
+* `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette act as an oAuth2 provider),
+* `Stripe <https://github.com/galette-plugins/plugin-stripe>`_ (handle `Stripe payments <https://stripe.com/>`_),
+* `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle `HelloAsso payments <https://www.helloasso.com/>`_),
+* `LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ (manage legal notices pages),
 
-A `Github community <https://github.com/galette-community/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin.
+A `Github community <https://github.com/galette-plugins/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin.
 
 .. toctree::
    :hidden:
