@@ -4,8 +4,8 @@ Maps
 
 This plugin provides:
 
-* possibility to store geogaphical coordinates for members (latitude and longitude),
-* a public map displaying up to date members that have choosen to be publically visible.
+* possibility to store geographical coordinates for members (latitude and longitude),
+* a public map displaying up to date members that have chosen to be publicly visible.
 
 Installation
 ============
@@ -48,7 +48,7 @@ Also, a `Map` entry is added in public pages list, that displays geolocalized me
 First of all, members will enter their location coordinates. Several options are provided:
 
 * if town has been set in member information, a list of possible places will be proposed (via `Nominatim online service <https://nominatim.openstreetmap.org>`_),
-* additionnaly, a search zone (provided from `OpenStreetMap <https://nominatim.openstreetmap.org/>`_),
+* additionally, a search zone (provided from `OpenStreetMap <https://nominatim.openstreetmap.org/>`_),
 * and also a geolocalize button using browser capacities.
 
 The search zone can be used when saving members location, and when displaying the maps.

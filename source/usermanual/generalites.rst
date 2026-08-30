@@ -78,7 +78,7 @@ Galette propose to send some telemetry information:
 * **deliberately blurred**: we retrieve an estimation of members count, never a real count,
 * sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu.
 
-Sending telemetry data is a manual process, nothing will be send until you **explicitely** ask it. With those information, we can have a better knwownledge of different usages of Galette, their number of member or contributions, plugins used, ...
+Sending telemetry data is a manual process, nothing will be sent until you **explicitly** ask it. With those information, we can have a better knowledge of different usages of Galette, their number of member or contributions, plugins used, ...
 
 Those information are useful for the project development and promotion. When you send those information, you can review data that would be sent.
 
@@ -101,7 +101,7 @@ You can update your registration information from Galette preferences. The form 
    :align: center
    :alt: Telemetry from preferences
 
-A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will dissapear. You also can choose to just disable it.
+A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will disappear. You also can choose to just disable it.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_dashboard.png
    :scale: 70%

@@ -34,7 +34,7 @@ From the `Configuration`, `Core fields` menu, you will get access to all fields 
 * `inaccessible` will make the field inaccessible for everyone,
 * `administrator` will make the field readable and writeable for administrators only,
 * `staff members` will make the field readable and writable for staff members and administrators,
-* `groups managers` will make the field readable and writable for groups managers on the memebrs of groups they own, and for staff memebrs and administrators,
+* `groups managers` will make the field readable and writable for groups managers on the members of groups they own, and for staff members and administrators,
 * `read/write` will make the field readable and writeable for member, groups managers, staff members and administrators,
 * `read only` will make the field read only for the members, but writable for groups managers, staff members and administrators.
 
@@ -66,7 +66,7 @@ There are several types of dynamic fields:
 
    .. versionchanged:: 1.2.0
 
-   Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searchs. Now, every date is stored using the `Y-m-d` format.
+   Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searches. Now, every date is stored using the `Y-m-d` format.
 
    If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️).
 
@@ -92,7 +92,7 @@ Some field types like separators, dates and booleans, does not need any extra in
 
   * `width`: field width,
   * `size`: number of characters,
-  * `repeat`: number of possible ocurences.
+  * `repeat`: number of possible occurrences.
 
 * `choice`:
 
@@ -100,7 +100,7 @@ Some field types like separators, dates and booleans, does not need any extra in
 
 * `file`:
 
-  * `size`: maximum file size, in Kio (this size is limited to the one for the PHP configuration).
+  * `size`: maximum file size, in KiB (this size is limited to the one for the PHP configuration).
 
 Labels translation
 ==================
@@ -116,7 +116,7 @@ Depending on your configuration (see preferences), administrative emails cans be
 
 Defaults are provided, but you can change them.
 
-.. note:: It is important to note that those textes contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be carefull to not forget any of those, that could cause sending issues.
+.. note:: It is important to note that those texts contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be careful not to forget any of those, that could cause sending issues.
 
 .. image:: ../_styles/static/images/usermanual/edit_mails.png
    :scale: 50%
@@ -135,6 +135,6 @@ An email will be send to administrators when:
 * a new member is added or self subscribes,
 * a new contribution is attached to his account.
 
-Of course, emails will be sent ony if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditionned on a checkbox from the user interface, excepting for self subscription messages that will always be send.
+Of course, emails will be sent only if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditioned on a checkbox from the user interface, excepting for self subscription messages that will always be send.
 
 Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more.

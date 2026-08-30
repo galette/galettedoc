@@ -32,7 +32,7 @@ This plugin provides:
 
 .. warning::
 
-   Due to the way Paypal payments are handled, especially the payment confirmation, your instance must be publically accessible.
+   Due to the way Paypal payments are handled, especially the payment confirmation, your instance must be publicly accessible.
 
 Installation
 ============
@@ -71,7 +71,7 @@ Once plugin has been installed, a `Paypal` group is added to the menu, with some
 * `Payment form`: the payment form itself, which is accessible as a public page,
 * `Preferences`: plugin preferences, accessible for administrators and staff members.
 
-In order to work properly, you need to fill a very important value: your Paypal account code. You can either use the email address associated with your Paypal account (but you will need to chang it in Galette if it changes on Paypal) or your merchant identifier. To find your merchant identifiant, log in to Paypal and you will find it in your account preferences. Changing identifier is only allowed for administrators.
+In order to work properly, you need to fill a very important value: your Paypal account code. You can either use the email address associated with your Paypal account (but you will need to change it in Galette if it changes on Paypal) or your merchant identifier. To find your merchant identifiant, log in to Paypal and you will find it in your account preferences. Changing identifier is only allowed for administrators.
 
 Preferences screen also permit to edit amount related to contributions types, and to hide some types.
 

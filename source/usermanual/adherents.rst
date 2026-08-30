@@ -82,7 +82,7 @@ Most of the times, the result is transparent. Just note ordering on `status` wil
 Configure CSV fields
 ^^^^^^^^^^^^^^^^^^^^
 
-Per default, CSV export for a members selection will provide same fields as the ones that are displayed on screen. It is possible to change this behavior specifiying yourself which fields must be exported in the ``galette/config/local_export_fields.inc.php`` file. If for example you only want identifier, first and last member names, the content of the file will be:
+Per default, CSV export for a members selection will provide same fields as the ones that are displayed on screen. It is possible to change this behavior by specifying yourself which fields must be exported in the ``galette/config/local_export_fields.inc.php`` file. If for example you only want identifier, first and last member names, the content of the file will be:
 
 .. code-block:: php
 
@@ -237,4 +237,4 @@ Impersonating
 
 Some issues may be related to a particular account, because of its ACLs, groups, ... In this case, it is unfortunately frequent to see some credentials sent by insecure emails; which should really be avoid.
 
-As super administrator user, you wil see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonated the user, you can reproduce the issue and fix it or get all required information to report the issue upstream.
+As super administrator user, you will see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonated the user, you can reproduce the issue and fix it or get all required information to report the issue upstream.

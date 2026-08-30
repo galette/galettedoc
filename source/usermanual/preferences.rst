@@ -30,7 +30,7 @@ This tab defines some parameters related to your association:
   * either **from a member** to use address from a staff member,
 
 * **Website**: website URL,
-* **Telemetry date**: date on which `telemetry infomations <https://telemetry.galette.eu>`_ was sent,
+* **Telemetry date**: date on which `telemetry information <https://telemetry.galette.eu>`_ was sent,
 * **Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_
 
 Social networks
@@ -89,7 +89,7 @@ Galette related parameters:
 
 .. warning::
 
-   Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsability**.
+   Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsibility**.
 
 * **Appearance** : these settings allow you to adapt the default appearance of Galette to your needs.
 
@@ -122,7 +122,7 @@ Define few extra rights:
 * **Can group managers create members?** groups managers can create members attached to their groups.
 * **Can group managers edit members?** groups managers can edit member of their groups information.
 * **Can group managers send mailings?** groups manager can send mailings.
-* **Can group managers do exports?** groups managers cen export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
+* **Can group managers do exports?** groups managers can export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
 * **Can group managers see contributions?** groups managers can see contributions of members of their groups.
 * **Can group managers create contributions?** groups managers can create contributions on behalf of members of their groups.
 * **Can group managers see transactions?** groups managers can see transactions of members of their groups.
@@ -164,7 +164,7 @@ Sending email parameters:
 
 When using GMail as SMTP, you will have to configure user name and password to use.
 
-SMTP configuration is a bit more complexe :
+SMTP configuration is a bit more complex :
 
 * **SMTP server**: server address, required,
 * **SMTP port**: server port, required,
@@ -268,7 +268,7 @@ Admin
 
 .. note::
 
-   This tab wil be present only if you are logged in as super administrator.
+   This tab will be present only if you are logged in as super administrator.
 
 .. image:: ../_styles/static/images/usermanual/prefs_admin.png
    :scale: 50%
