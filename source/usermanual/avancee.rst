@@ -47,32 +47,33 @@ You also can override langs for plugins using the sam method, just place the fil
 Change session lifetime
 =======================
 
-Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). You can anyways define a constant named ``GALETTE_TIMEOUT`` to change session lifetime using :ref:`behavior configuration <behavior>`:
+.. versionchanged:: 1.3.0
 
-.. code-block:: php
+   The session lifetime is a setting stored in database, ``pref_session_timeout``, reachable from the :ref:`advanced configuration <advanced_config>` page. The ``GALETTE_TIMEOUT`` constant still works and still wins over it.
 
-   <?php
-   //see https://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime
-   define('GALETTE_TIMEOUT', 0);
+Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). Set ``pref_session_timeout`` from the :ref:`advanced configuration <advanced_config>` page to change it; the value is a number of seconds, and ``0`` means until the browser is closed.
 
+If the ``GALETTE_TIMEOUT`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*. Remove it from that file to manage the lifetime from the page.
+
+
+.. _proxy_ip:
 
 Log IP addresses behind a proxy
 ===============================
 
 If your Galette instance is behind a proxy, IP address stored in history will be the proxy one, and not the user one :(
 
-To fix that, use :ref:`behavior configuration <behavior>` to create a constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:
+.. versionchanged:: 1.3.0
 
-.. code-block:: php
+   The proxy depth is a setting stored in database, ``pref_x_forwarded_for_index``, reachable from the :ref:`advanced configuration <advanced_config>` page. The ``GALETTE_X_FORWARDED_FOR_INDEX`` constant still works and still wins over it.
 
-   <?php
-   define('GALETTE_X_FORWARDED_FOR_INDEX', 1);
-
-Each proxy server will add its own address on the list, example above will work only if there is only one proxy server.
+To fix that, set ``pref_x_forwarded_for_index`` from the :ref:`advanced configuration <advanced_config>` page. Each proxy server appends its own address to the header, and the value is the position to read from the **end** of the list, starting at ``1``. So ``1`` is what you want behind a single reverse proxy, and ``0`` - the default - disables the lookup entirely.
 
 .. warning::
 
-   For security reasons, do not use this if your instance is not behind a proxy!
+   For security reasons, leave it to ``0`` if your instance is not behind a proxy! Anyone could otherwise send an ``X-Forwarded-For`` header of their own and have it logged in place of their address.
+
+If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
 External stats
 ==============
@@ -156,6 +157,65 @@ There are a few tools provided for Galette admin that permits to:
 * **generate empty logins and passwords** those information are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
 * **Fix dynamic fields dates format** will convert all dynamic fields dates to the new format (see :ref:`dynamic fields <dynamic_fields>`).
 
+.. _advanced_config:
+
+Advanced configuration
+======================
+
+.. versionadded:: 1.3.0
+
+The settings form only shows a curated set of settings. The **Configuration > Advanced configuration** entry lists them **all**, one row per setting, including those that have no place on the form and those that used to be reachable only by editing a PHP file.
+
+.. warning::
+
+   This page can break your installation, be very careful. Values are checked, but a setting that is perfectly valid can still be wrong for your instance, and nothing asks you to confirm before storing it.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config.png
+   :scale: 50%
+   :align: center
+   :alt: Galette advanced configuration
+
+Only the super administrator can reach the page, and the password is asked again before it opens. The confirmation is remembered for fifteen minutes; after that, or after a new login, it is asked again.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_confirm.png
+   :scale: 50%
+   :align: center
+   :alt: Password asked before the advanced configuration page opens
+
+Settings are saved **one at a time**: each row has its own **Save** button, and a **Reset to default** button appears as soon as the value differs from the one Galette ships with. Nothing is submitted for the whole page, so a mistake on one row cannot take the others with it.
+
+A value goes through the very same checks as the settings form, and is refused with the same messages: a number outside its bounds, a malformed email address, but also a change that would break a rule *between* settings, such as setting both a membership extension and a fixed beginning of membership.
+
+A search field above the table filters the rows on the setting name. It needs Javascript; without it the whole list is displayed.
+
+Each row carries a status, also recalled in the page legend:
+
+* **default**: never changed, the value Galette ships with,
+* **modified**: changed from the default, here or from the settings form. It can be reset,
+* **read-only**: Galette maintains this value itself, such as a generated identifier or a date it records. It is shown for information only,
+* **secret**: a password or a token. Its value is never displayed, only whether one is set, and it is changed from the settings form,
+* **locked**: a constant declared in :ref:`behavior.inc.php <behavior>` takes precedence over the stored value. Remove it from that file to manage the setting from here,
+* **unknown**: a row found in database that Galette does not describe. It may come from an older version or from a plugin. It is displayed, never edited.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_legend.png
+   :scale: 50%
+   :align: center
+   :alt: The statuses a setting can carry
+
+A setting only shows an input when it can be edited from there. In the example below, ``pref_x_forwarded_for_index`` is locked by a constant and only displays what applies, while ``pref_session_timeout``, right after it, is editable:
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_locked.png
+   :scale: 50%
+   :align: center
+   :alt: A locked setting, and an editable one
+
+A second table, below the settings, lists the constants ``behavior.inc.php`` understands, whether each one is currently declared, and what it is set to. It is there so you can see how the instance is configured without opening the file. A constant a setting now replaces only appears in that table while it is declared, along with a link to the setting it overrides.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_constants.png
+   :scale: 50%
+   :align: center
+   :alt: Constants behavior.inc.php understands
+
 .. _galettemodes:
 
 Galette modes
@@ -189,12 +249,7 @@ A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug mode. Wi
 Behavior configuration
 **********************
 
-It is possible to change some of Galette behaviors:
-
-* `GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;
-* you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...).
-
-You can add those directives by declaring constants in the ``galette/config/behavior.inc.php``.
+Some of Galette behaviors are set by declaring constants in the ``galette/config/behavior.inc.php`` file. A commented example of every one of them ships as ``behavior.inc.php.dist``, next to it.
 
 For example:
 
@@ -202,3 +257,32 @@ For example:
 
    <?php
    define('GALETTE_DEBUG', true);
+
+.. versionchanged:: 1.3.0
+
+   Only the settings Galette needs **before it can reach database** are still declared here. The others became regular settings, editable from the :ref:`advanced configuration <advanced_config>` page.
+
+The following are read too early to be stored in database, so this file is the only place they can be set:
+
+* ``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,
+* ``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,
+* ``GALETTE_LOG_LVL``: verbosity of the logs, as an `Analog <https://github.com/jbroadway/analog>`_ level. Defaults to ``WARNING``, or ``DEBUG`` in debug mode,
+* ``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``. Only the existence of the constant counts, so defining it to ``false`` still enables the dump,
+* ``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. They only apply in debug mode.
+
+Settings that moved
+===================
+
+.. versionadded:: 1.3.0
+
+Three settings that used to be declared here are now stored in database, and edited from the :ref:`advanced configuration <advanced_config>` page:
+
+* ``GALETTE_URI`` became ``pref_galette_url``,
+* ``GALETTE_X_FORWARDED_FOR_INDEX`` became ``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a proxy <proxy_ip>`,
+* ``GALETTE_TIMEOUT`` became ``pref_session_timeout``.
+
+Declaring one of them still works, and **still takes precedence over the stored value**: nothing breaks on upgrade. Galette then writes a warning in its logs, and the advanced configuration page shows the setting as *locked*, naming the constant responsible. Remove it from ``behavior.inc.php`` to manage the setting from the page.
+
+.. note::
+
+   The reminders cron script still requires ``GALETTE_URI`` to be declared: it runs without an incoming request, so it cannot guess the instance address. Keep the constant if you automate reminders, :ref:`see reminders <reminders>`.
