@@ -6,12 +6,12 @@ Experienced users
 
 .. warning::
 
-   Use only following instructions if you know what you are doing... "The management is not responsable for any case of [...]" :D
+   Use only following instructions if you know what you are doing... "The management is not responsible for any case of [...]" :D
 
 Adapt to your graphical chart
 =============================
 
-If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mecanism designed for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
+If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mechanism designed for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
 
 Try to keep things as simple as possible. For example, if you want to change association name color (displayed under pages titles), you will find in Galette the CSS rule `#asso_name` that defines several parameters including the color. Then, in your stylesheet, you will just need the following:
 
@@ -21,7 +21,7 @@ Try to keep things as simple as possible. For example, if you want to change ass
        color: red;
    }
 
-This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be took into account by the Galette team, no support will be provided.
+This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be taken into account by the Galette team, no support will be provided.
 
 You also can override the print stylesheet, just create a ``galette_print_local.css`` file.
 
@@ -40,7 +40,7 @@ As example,  we want to change the "Password" string on the login page in french
 
 Since Galette uses a cache system for translations, changes may not be visible immediately; you may have to restart PHP (or to clear cache). It is important to take the original string verbatim, punctuation included; and take care to escape single quotes (with a backslash) in all the strings.
 
-You also can override langs for plugins using the sam method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file.
+You also can override langs for plugins using the same method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file.
 
 .. note:: This will work only if you use Galette translation features, and not with native gettext.
 
@@ -51,7 +51,7 @@ Change session lifetime
 
    The session lifetime is a setting stored in database, ``pref_session_timeout``, reachable from the :ref:`advanced configuration <advanced_config>` page. The ``GALETTE_TIMEOUT`` constant still works and still wins over it.
 
-Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). Set ``pref_session_timeout`` from the :ref:`advanced configuration <advanced_config>` page to change it; the value is a number of seconds, and ``0`` means until the browser is closed.
+Per default, Galette will create session with default lifetime duration (and it seems browsers act differently in this case). Set ``pref_session_timeout`` from the :ref:`advanced configuration <advanced_config>` page to change it; the value is a number of seconds, and ``0`` means until the browser is closed.
 
 If the ``GALETTE_TIMEOUT`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*. Remove it from that file to manage the lifetime from the page.
 
@@ -80,7 +80,7 @@ External stats
 
 .. versionadded:: 0.9
 
-Many statistics plaftforms relies on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
+Many statistics platforms rely on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
 
 Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
@@ -89,7 +89,7 @@ CSV exports
 
 .. versionchanged:: 1.0.0
 
-   You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file instead of an XML one.
+   You can setup parameted exports with a `YAML <https://yaml.org/>`_ file instead of an XML one.
 
 Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.yaml`` file.
 
@@ -147,13 +147,13 @@ Administration tools
 
 .. warning::
 
-   All the admin tools operation are destructive, use it with cautions, and **make sure you did a database backup** before!
+   All the admin tools operations are destructive, use them with caution, and **make sure you did a database backup** before!
 
 There are a few tools provided for Galette admin that permits to:
 
 * **reinitialize mailings contents** will reset all emails contents to default values,
 * **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
-* **reinitialize PDF models** will reset ll PDF models to default values,
+* **reinitialize PDF models** will reset all PDF models to default values,
 * **generate empty logins and passwords** those information are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
 * **Fix dynamic fields dates format** will convert all dynamic fields dates to the new format (see :ref:`dynamic fields <dynamic_fields>`).
 
@@ -223,10 +223,10 @@ Galette modes
 
 Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration <behavior>`). This directive can take the following values:
 
-* ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch.
+* ``PROD``: production mode (non production instance should be on another mode). This is the default mode for releases, but it may change in development branch.
 * ``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ...
 * ``TEST``: reserved for unit tests.
-* ``MAINT``: maintainance mode. Only super admin will be able to login.
+* ``MAINT``: maintenance mode. Only super admin will be able to login.
 
 .. _debug:
 
