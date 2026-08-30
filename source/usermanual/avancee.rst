@@ -285,4 +285,4 @@ Declaring one of them still works, and **still takes precedence over the stored 
 
 .. note::
 
-   The reminders cron script still requires ``GALETTE_URI`` to be declared: it runs without an incoming request, so it cannot guess the instance address. Keep the constant if you automate reminders, :ref:`see reminders <reminders>`.
+   ``pref_galette_url`` is the one setting the :ref:`reminders cron script <reminders>` cannot do without: it runs with no incoming request, so it has no way of guessing the address of your instance. Set it - or keep the constant - if you automate reminders.
