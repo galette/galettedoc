@@ -104,7 +104,7 @@ Here is a virtual host configuration example, including the hide of `index.php`:
        <Directory /var/www/galette/galette/webroot/>
            RewriteEngine On
            #You may need to set RewriteBase if you setup
-           #rewritting in a .htaccess file for example.
+           #rewriting in a .htaccess file for example.
            #RewriteBase /
            RewriteCond %{REQUEST_FILENAME} !-f
            RewriteRule ^(.*)$ index.php [QSA,L]
@@ -212,7 +212,7 @@ FTP
 
 .. warning::
 
-   Some archive or FTP softwares may corrupt files... It is strongly advised if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for TFP transferts.
+   Some archive or FTP software may corrupt files... It is strongly advised if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for FTP transfers.
 
 Once source code has been retrieved locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows.
 
@@ -235,7 +235,7 @@ OVH
 
 This hosting company offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_.
 
-Additionnal information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
+Additional information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/
 
 .. warning::
 

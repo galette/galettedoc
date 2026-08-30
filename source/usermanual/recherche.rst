@@ -23,7 +23,7 @@ You can filter on:
   * name (first name, last name and nickname),
   * company name,
   * address (address, address continuation, zipcode, town and country),
-  * email and instant messaging addresses (email address, website URL, and all direct messenging addresses),
+  * email and instant messaging addresses (email address, website URL, and all direct messaging addresses),
   * job position,
   * information (public information and - for administrators only - private information).
 

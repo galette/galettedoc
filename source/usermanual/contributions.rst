@@ -22,10 +22,10 @@ Contributions types
 
 Contributions are entirely configurable. There are two main types of contributions in Galette:
 
-* the ones that extends a membership (a montly or yearly membership for example),
+* the ones that extends a membership (a monthly or yearly membership for example),
 * the ones that do not extends membership, like donations.
 
-Contribution types management allows you to define a label, and if it extends the memebrship or not.
+Contribution types management allows you to define a label, and if it extends the membership or not.
 
 .. _reminders:
 
@@ -113,7 +113,7 @@ Each transaction is dispatched among contributions, in the limit of the transact
    :align: center
    :alt: Add a transaction
 
-After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction.
+After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaining amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaining amount of the transaction.
 
 .. image:: ../_styles/static/images/usermanual/transactions_add_cotisation.png
    :scale: 50%

@@ -28,7 +28,7 @@ Bugs reports as well as RFE (Request For Enhancement) must be done on the `Galet
 
 .. note::
 
-   Unless you are sure you know, please de not attribute the ticket and do not set target version. It will be done when it will be took into account.
+   Unless you are sure you know, please do not attribute the ticket and do not set target version. It will be done when it is taken into account.
 
 If you have doubts, feel free to ask your questions on mailing lists ;)
 
@@ -46,9 +46,9 @@ Request For Enhancement
 -----------------------
 
 Make sure to be precise as well on RFEs. Developers may not guess what you have in mind, you have to explain them, event if this seems obvious to you ;)
-Requested enhancements are tagged as "Souhaits" (whishes, in french), and moved by developers when work begins most of the time.
+Requested enhancements are tagged as "Souhaits" (wishes, in french), and moved by developers when work begins most of the time.
 
-Once you made your whishes, you can `submit it to a vote <https://vote.galette.eu/>`_, most wanted features may catch devs attention.
+Once you made your wishes, you can `submit it to a vote <https://vote.galette.eu/>`_, most wanted features may catch devs attention.
 
 ********************************
 How to search in lists archives?
@@ -74,7 +74,7 @@ Indeed, mail addresses must be unique in the database. It is a choice for the pr
 * login (since Galette 0.9),
 * ...
 
-Making them non uniques is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
+Making them non unique is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
 
 However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some information such as email and postal addresses will be retrieved from the parent member if missing.
 

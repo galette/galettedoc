@@ -2,7 +2,7 @@
 Activities
 ==========
 
-This plugin was developped for `Association l'Aphyllanthe <https://www.aphyllanthe.fr/>`_. It provides:
+This plugin was developed for `Association l'Aphyllanthe <https://www.aphyllanthe.fr/>`_. It provides:
 
 * activities management,
 * subscriptions management.

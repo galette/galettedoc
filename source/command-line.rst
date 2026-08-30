@@ -49,7 +49,7 @@ This only check for Galette prerequisites, and has no specific arguments.
 Install
 =======
 
-This command obviousely installs Galette :)
+This command obviously installs Galette :)
 
 ::
 

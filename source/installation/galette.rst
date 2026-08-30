@@ -49,7 +49,7 @@ First of all, make sure the database exists, and prepare all required informatio
 Database parameters
 -------------------
 
-On that screen, select your database type, and enter hostname, database name, user name and password. Tables prefix is usefull if you do not have a Galette dedicated database, default proposal should be ok but you can choose what you want :)
+On that screen, select your database type, and enter hostname, database name, user name and password. Tables prefix is useful if you do not have a Galette dedicated database, default proposal should be ok but you can choose what you want :)
 
 .. image:: ../_styles/static/images/installation/3_bdd.png
    :scale: 50%
@@ -117,7 +117,7 @@ To know more about Galette installed instances, we try to collect anonymous tele
 Initialize
 ==========
 
-The last step will write the configuration file if needed, and initialyse some values in your fresh database, as exemple:
+The last step will write the configuration file if needed, and initialize some values in your fresh database, as exemple:
 
 * add Galette default preferences
 * add default contributions and status types,

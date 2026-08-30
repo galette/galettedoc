@@ -14,7 +14,7 @@ PDF models are provided for several outputs : an invoice model, a receipt model 
 Models inheritance
 ==================
 
-The global model defines three distincts parts:
+The global model defines three distinct parts:
 
 * header,
 * footer,

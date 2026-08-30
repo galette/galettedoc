@@ -15,7 +15,7 @@ For a plugin to be accepted, it must fit some prerequisites:
 * be licensed under a license compatible with Galette (GPLv3 or compatible) and respect it,
 * be compatible with a "decent" Galette version.
 
-Plugins should (this is a strong recommandation, not an obligation) be localized and respect Galette coding conventions.
+Plugins should (this is a strong recommendation, not an obligation) be localized and respect Galette coding conventions.
 
 Join community
 ==============
