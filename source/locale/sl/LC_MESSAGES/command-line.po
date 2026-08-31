@@ -5,120 +5,116 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
-"Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: 2026-07-16 06:22+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "command-line/sl/>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2026.8.dev0\n"
 
-#: ../command-line.rst:3
-#: b43952b5611f4c6992dce147efd88527
+#: ../command-line.rst:3 8f9ed3b26d614a50adb2a47f7f354429
 msgid "Command line"
 msgstr "Ukazna vrstica"
 
-#: ../command-line.rst:7
-#: 679a6d49389b4812bef0e9a311c11508
-msgid "Galette now proposes a command line interface to manage some tasks. This is accessible through the ``bin/console`` script in Galette root directory:"
+#: ../command-line.rst:7 a305477abe4b42b4a107af14a8dee2fd
+msgid ""
+"Galette now proposes a command line interface to manage some tasks. This is "
+"accessible through the ``bin/console`` script in Galette root directory:"
 msgstr ""
 "Galette zdaj ponuja vmesnik ukazne vrstice za upravljanje nekaterih nalog. "
 "Dostopen je prek skripte ``bin/console`` v korenskem imeniku Galette:"
 
-#: ../command-line.rst:38
-#: 0e3b619a3bfe4e00a3f748158ef66d8d
-msgid "You can obtain help for a specific command by using the ``help`` command:"
+#: ../command-line.rst:38 a5dfed8a283744b7a993ff80f8f17a2d
+msgid ""
+"You can obtain help for a specific command by using the ``help`` command:"
 msgstr "Pomoč za določen ukaz lahko dobite z uporabo ukaza ``help``:"
 
-#: ../command-line.rst:41
-#: 63180e9f2c414f30b47ce9002942e4e2
+#: ../command-line.rst:41 a6a97905330747e391f328ad817f32a8
 msgid "Check"
 msgstr "Preveri"
 
-#: ../command-line.rst:43
-#: a236020f8e474f9e9f89d649653e72f5
-msgid "This only check for Galette prerequisites, and has no specific arguments."
+#: ../command-line.rst:43 9724d7450869485e968fc5eaa756512a
+msgid ""
+"This only check for Galette prerequisites, and has no specific arguments."
 msgstr "To preverja samo predpogoje za Galette in nima posebnih argumentov."
 
-#: ../command-line.rst:47
-#: 6c1ca3502569409c81cc677f7ffd2a26
-msgid "On some systems, PHP configuration may differ between cli and web; therefore it's recommended to check for requirements from the web script ``galette_compat.php``."
+#: ../command-line.rst:47 f72cddbb5d2a42ad9927bb0b890c917f
+msgid ""
+"On some systems, PHP configuration may differ between cli and web; therefore "
+"it's recommended to check for requirements from the web script "
+"``galette_compat.php``."
 msgstr ""
 "V nekaterih sistemih se lahko konfiguracija PHP med vmesnikom CLI in "
 "spletnim vmesnikom razlikuje; zato je priporočljivo preveriti zahteve v "
 "spletnem skriptu ``galette_compat.php``."
 
-#: ../command-line.rst:50
-#: b94c5cd0a82c490795470f80856a6985
+#: ../command-line.rst:50 470facad68f645dab1b5f885a865fc30
 msgid "Install"
 msgstr "Namestitev"
 
-#: ../command-line.rst:52
-#: 27095551a1de4cca942de977a3eb99ab
+#: ../command-line.rst:52 1b992cceb8d74d42b3c7a8f64f4c5ec2
 msgid "This command obviously installs Galette :)"
 msgstr "Ta ukaz očitno namesti Galette :)"
 
-#: ../command-line.rst:81
-#: 6aa1ad95206f43789779539e8682e696
-msgid "By default, the script will check for an existing configuration file, you can ignore that using the ``--ignore-config`` option."
+#: ../command-line.rst:81 beb4a03a5b1c4b74a924fa278587ae6a
+msgid ""
+"By default, the script will check for an existing configuration file, you "
+"can ignore that using the ``--ignore-config`` option."
 msgstr ""
 "Skript bo privzeto preveril obstoječo konfiguracijsko datoteko, to lahko "
 "prezrete z možnostjo ``--ignore-config``."
 
-#: ../command-line.rst:83
-#: 9485f6b976124229b3e6fcad973304bd
-msgid "Required options that have not been provided on script call will be asked interactively."
+#: ../command-line.rst:83 00aa795fe15349eaa4caf121cd5a73a2
+msgid ""
+"Required options that have not been provided on script call will be asked "
+"interactively."
 msgstr ""
 "Zahtevane možnosti, ki niso bile podane ob klicu skripte, bodo zahtevane "
 "interaktivno."
 
-#: ../command-line.rst:131
-#: 162555d65a3c4c039b87f28a7ec86d5d
+#: ../command-line.rst:131 e5a534ee93f2455cbfe77e9b909d2e69
 msgid "Plugins commands"
 msgstr "Ukazi vtičnikov"
 
-#: ../command-line.rst:133
-#: be21bb2966bd49968ebdbd18e5cbe558
-msgid "You can list existing plugins using the ``galette:plugins:list`` command:"
+#: ../command-line.rst:133 d182d59314d34ef0816b3476ddec6a72
+msgid ""
+"You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr "Obstoječe vtičnike lahko naštejete z ukazom ``galette:plugins:list``:"
 
-#: ../command-line.rst:150
-#: a7a2312459bc49e1b9be1ebd3614ab75
+#: ../command-line.rst:150 0d4a5cc4c21d4508b14ee5a421465bee
 msgid "Available commands are:"
 msgstr "Razpoložljivi ukazi so:"
 
-#: ../command-line.rst:152
-#: e438eeb934094897b822503ffe61e298
+#: ../command-line.rst:152 b595b93437d44a4fb6422e84b83a3d9d
 msgid "``galette:plugin:disable``: disable a plugin"
 msgstr "``galette:plugin:disable``: onemogoči vtičnik"
 
-#: ../command-line.rst:153
-#: 47184cf8bffb41a686c504a7466a5e67
+#: ../command-line.rst:153 14709c8ffa8144448bb0358432865fd0
 msgid "``galette:plugin:enable``: enable a plugin"
 msgstr "``galette:plugin:enable``: omogoči vtičnik"
 
-#: ../command-line.rst:154
-#: fc1c210708e64d8182b24897559145f1
+#: ../command-line.rst:154 95a58ea06f37496c9b67c230f3fcdc9d
 msgid "``galette:plugin:install-db``: install a plugin database"
 msgstr "``galette:plugin:install-db``: namestitev baze podatkov vtičnikov"
 
-#: ../command-line.rst:158
-#: 0c61b7cfc6f24e38813597c9ef2fcd4c
+#: ../command-line.rst:158 b55fc84401f4420da76afe788847f8d0
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 "Namestitev baze podatkov vtičnikov bo odstranila vse obstoječe tabele "
 "vtičnikov!"
 
-#: ../command-line.rst:160
-#: d0e3e2994f294a6a9e7172d64f295ccb
-msgid "For every plugin related command, you can precise which plugin(s) you want to act on, use the ``--all`` flag or either rely on interactive mode:"
+#: ../command-line.rst:160 0baf640124624bec8e84439b3604cde5
+msgid ""
+"For every plugin related command, you can precise which plugin(s) you want "
+"to act on, use the ``--all`` flag or either rely on interactive mode:"
 msgstr ""
-"Za vsak ukaz, povezan z vtičnikom, lahko določite, na katerega(e) vtičnika"
-"(e) želite ukrepati, uporabite zastavico ``--all`` ali pa se zanašate na "
-"interaktivni način:"
+"Za vsak ukaz, povezan z vtičnikom, lahko določite, na katerega(e) "
+"vtičnika(e) želite ukrepati, uporabite zastavico ``--all`` ali pa se "
+"zanašate na interaktivni način:"
