@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: 2025-02-12 10:00+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -17,11 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.10-dev\n"
 
-#: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
+#: ../usermanual/avancee.rst:5 33b1513477aa458eb68105b2fc1be815
 msgid "Experienced users"
 msgstr "Utilisateurs expérimentés"
 
-#: ../usermanual/avancee.rst:9 1f9bbed20cf5465d9384452334706982
+#: ../usermanual/avancee.rst:9 fe7e4c64977c4ddca193e94a7185df20
 msgid ""
 "Use only following instructions if you know what you are doing... \"The "
 "management is not responsible for any case of [...]\" :D"
@@ -29,11 +29,11 @@ msgstr ""
 "N'utilisez les instructions suivantes que si vous savez ce que vous "
 "faites... « La direction décline toute responsabilité en cas de [...] » :D"
 
-#: ../usermanual/avancee.rst:12 73aa7121c47b43ce986562d44a72d14f
+#: ../usermanual/avancee.rst:12 c84fcf0f960a4bb892ad47bd7456f9bd
 msgid "Adapt to your graphical chart"
 msgstr "Adaptation à votre charte graphique"
 
-#: ../usermanual/avancee.rst:14 3b8372bf5196483784a70dd21c9548bc
+#: ../usermanual/avancee.rst:14 96e890d563924f0a91d382188745ac41
 msgid ""
 "If you are comfortable with CSS stylesheets, you can adapt Galette CSS to "
 "fit your own colors. To achieve that, it is strongly discouraged to edit "
@@ -48,7 +48,7 @@ msgstr ""
 "``galette_local.css`` dans votre dossier ``webroot/themes/default`` avec vos "
 "propres styles, il sera inclus automatiquement."
 
-#: ../usermanual/avancee.rst:16 4c117cdc3e114fe59486d6e5fa1ff289
+#: ../usermanual/avancee.rst:16 27bcbede20ce448fa141c2017b04f647
 msgid ""
 "Try to keep things as simple as possible. For example, if you want to change "
 "association name color (displayed under pages titles), you will find in "
@@ -61,7 +61,7 @@ msgstr ""
 "plusieurs paramètres y compris les couleurs. Donc, dans votre feuille de "
 "style, vous aurez juste besoin de :"
 
-#: ../usermanual/avancee.rst:24 1e96e02eb7b34e39bd65c5c63a67501b
+#: ../usermanual/avancee.rst:24 5642cfa5288c46e5ae120d23801eefed
 msgid ""
 "This will be enough to display your association name in red. Note that local "
 "CSS file and all issues it may cause will not be taken into account by the "
@@ -71,7 +71,7 @@ msgstr ""
 "que les CSS locales et les problèmes qu'elles pourraient causer ne seront "
 "pas prises en compte par l'équipe de Galette, aucun support ne sera fourni."
 
-#: ../usermanual/avancee.rst:26 fb6684b53601415f9a1227f60a605450
+#: ../usermanual/avancee.rst:26 476d5c5338924d15a2ed799074804ee5
 msgid ""
 "You also can override the print stylesheet, just create a "
 "``galette_print_local.css`` file."
@@ -79,11 +79,11 @@ msgstr ""
 "Vous pouvez également fournir une feuille de style pour l'impression, créez "
 "juste un fichier ``galette_print_local.css``."
 
-#: ../usermanual/avancee.rst:29 0b370ab020e041978a129a9e9bd88e6b
+#: ../usermanual/avancee.rst:29 efcefc0124fd491ea94ffd665c0b67c2
 msgid "Add and change strings"
 msgstr "Ajouter et modifier des chaînes"
 
-#: ../usermanual/avancee.rst:31 790842fad86747e3a276e1e17ed66b6a
+#: ../usermanual/avancee.rst:31 4c1a528ebb364ba9b81d6aacc225bd86
 msgid ""
 "It is possible if needed to customize translated strings in Galette - "
 "without editing any Galette source file. Just create a ``galette_{mylang}"
@@ -99,7 +99,7 @@ msgstr ""
 "doit contenir un simple tableau PHP avec la chaîne originale (celle dans le "
 "code source de Galette) en index."
 
-#: ../usermanual/avancee.rst:33 d4b7b7d2e60e49d4903903a8941c6438
+#: ../usermanual/avancee.rst:33 72ed60ccfbf14a79af4c32b5e216b34e
 msgid ""
 "As example,  we want to change the \"Password\" string on the login page in "
 "french, translated as `Mot de passe :`. The original string is `Password:` "
@@ -115,7 +115,7 @@ msgstr ""
 "par `Secret :` ; donc nous allons créer le fichier "
 "``galette_fr_FR.utf8_local_lang.php`` avec le contenu suivant :"
 
-#: ../usermanual/avancee.rst:41 860fe6d76a224c0bba74e0bc108f9c6b
+#: ../usermanual/avancee.rst:41 e0719ed60785410284e40805f944b5c4
 msgid ""
 "Since Galette uses a cache system for translations, changes may not be "
 "visible immediately; you may have to restart PHP (or to clear cache). It is "
@@ -128,19 +128,19 @@ msgstr ""
 "d'origine telle quelle, ponctuation incluse ; et de prendre garde d'échapper "
 "les guillemets simples (avec un anti-slash) dans toutes les chaînes."
 
-#: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
+#: ../usermanual/avancee.rst:43 477a9b75d5074ab0914cfc095421cc5c
 msgid ""
 "You also can override langs for plugins using the same method, just place "
-"the file in plugins lang directory and name it "
-"``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name "
-"you can find in the ``_define.php`` file."
+"the file in plugins lang directory and name it ``{plugin}_{mylang}"
+"_local_lang.php`` where `{plugin}` is the routing name you can find in the "
+"``_define.php`` file."
 msgstr ""
 "Vous pouvez également surcharger les langues des plugins en utilisant la "
 "même méthode, placez juste le fichier dans le dossier lang et nommez le "
 "``{plugin}_{mylang}_local_lang.php`` où `{plugin}` est le nom du routage que "
 "vous trouverez dans le fichier ``_define.php``."
 
-#: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
+#: ../usermanual/avancee.rst:45 7dfcd592088e45048142232510855cb9
 msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
@@ -148,7 +148,7 @@ msgstr ""
 "Cela ne fonctionnera que si vous utilisez les fonctionnalités de traduction "
 "de Galette, pas gettext natif."
 
-#: ../usermanual/avancee.rst:48 175f39314197485ea541b80324e86e63
+#: ../usermanual/avancee.rst:48 17e957143183465eb19ca6b084c729b7
 msgid "Change session lifetime"
 msgstr "Changer la durée de session"
 
@@ -375,7 +375,8 @@ msgstr ""
 "dynamiques,"
 
 #: ../usermanual/avancee.rst:155 feabe0c1c39c4fad927c3e0aa5fadaf3
-msgid "**reinitialize PDF models** will reset all PDF models to default values,"
+msgid ""
+"**reinitialize PDF models** will reset all PDF models to default values,"
 msgstr ""
 "**réinitialiser les modèles PDF** réinitialisera les modèles PDF à leurs "
 "valeurs par défaut,"

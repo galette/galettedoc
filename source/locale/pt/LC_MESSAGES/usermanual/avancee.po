@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: 2026-05-26 16:12+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
@@ -22,11 +22,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2026.6.dev0\n"
 
-#: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
+#: ../usermanual/avancee.rst:5 33b1513477aa458eb68105b2fc1be815
 msgid "Experienced users"
 msgstr "Utilizadores experientes"
 
-#: ../usermanual/avancee.rst:9 1f9bbed20cf5465d9384452334706982
+#: ../usermanual/avancee.rst:9 fe7e4c64977c4ddca193e94a7185df20
 msgid ""
 "Use only following instructions if you know what you are doing... \"The "
 "management is not responsible for any case of [...]\" :D"
@@ -34,11 +34,11 @@ msgstr ""
 "Siga as instruções apenas se souber o que está fazendo... \"A gerência não "
 "se responsabiliza por quaisquer casos de [...]\" :D"
 
-#: ../usermanual/avancee.rst:12 73aa7121c47b43ce986562d44a72d14f
+#: ../usermanual/avancee.rst:12 c84fcf0f960a4bb892ad47bd7456f9bd
 msgid "Adapt to your graphical chart"
 msgstr "Adapte ao seu gráfico"
 
-#: ../usermanual/avancee.rst:14 3b8372bf5196483784a70dd21c9548bc
+#: ../usermanual/avancee.rst:14 96e890d563924f0a91d382188745ac41
 msgid ""
 "If you are comfortable with CSS stylesheets, you can adapt Galette CSS to "
 "fit your own colors. To achieve that, it is strongly discouraged to edit "
@@ -53,7 +53,7 @@ msgstr ""
 "``galette_local.css`` no diretório ``webroot/themes/default`` com seus "
 "estilos; ele será incluído automaticamente."
 
-#: ../usermanual/avancee.rst:16 4c117cdc3e114fe59486d6e5fa1ff289
+#: ../usermanual/avancee.rst:16 27bcbede20ce448fa141c2017b04f647
 msgid ""
 "Try to keep things as simple as possible. For example, if you want to change "
 "association name color (displayed under pages titles), you will find in "
@@ -61,12 +61,12 @@ msgid ""
 "the color. Then, in your stylesheet, you will just need the following:"
 msgstr ""
 "Tente manter as coisas o mais simples possível. Por exemplo, se você quiser "
-"alterar a cor do nome da associação (exibida abaixo dos títulos das páginas)"
-", encontrará no Galette a regra CSS `#asso_name` que define vários "
+"alterar a cor do nome da associação (exibida abaixo dos títulos das "
+"páginas), encontrará no Galette a regra CSS `#asso_name` que define vários "
 "parâmetros, incluindo a cor. Depois, na sua folha de estilo, você precisará "
 "apenas do seguinte:"
 
-#: ../usermanual/avancee.rst:24 1e96e02eb7b34e39bd65c5c63a67501b
+#: ../usermanual/avancee.rst:24 5642cfa5288c46e5ae120d23801eefed
 msgid ""
 "This will be enough to display your association name in red. Note that local "
 "CSS file and all issues it may cause will not be taken into account by the "
@@ -76,7 +76,7 @@ msgstr ""
 "Observe que o ficheiro CSS local e todos os problemas que ele possa causar "
 "não serão considerados pela equipa do Galette e nenhum apoio será fornecido."
 
-#: ../usermanual/avancee.rst:26 fb6684b53601415f9a1227f60a605450
+#: ../usermanual/avancee.rst:26 476d5c5338924d15a2ed799074804ee5
 msgid ""
 "You also can override the print stylesheet, just create a "
 "``galette_print_local.css`` file."
@@ -84,11 +84,11 @@ msgstr ""
 "Também pode sobrescrever a folha de estilo de impressão, basta criar um "
 "ficheiro ``galette_print_local.css``."
 
-#: ../usermanual/avancee.rst:29 0b370ab020e041978a129a9e9bd88e6b
+#: ../usermanual/avancee.rst:29 efcefc0124fd491ea94ffd665c0b67c2
 msgid "Add and change strings"
 msgstr "Adicionar e alterar cadeias"
 
-#: ../usermanual/avancee.rst:31 790842fad86747e3a276e1e17ed66b6a
+#: ../usermanual/avancee.rst:31 4c1a528ebb364ba9b81d6aacc225bd86
 msgid ""
 "It is possible if needed to customize translated strings in Galette - "
 "without editing any Galette source file. Just create a ``galette_{mylang}"
@@ -98,13 +98,13 @@ msgid ""
 "source code) as index."
 msgstr ""
 "É possível, se necessário, personalizar as cadeias traduzidas no Galette sem "
-"editar nenhum ficheiro fonte do Galette. Basta criar um ficheiro ``galette_"
-"{mylang}_local_lang.php`` (onde `{mylang}` deve ser substituído pelo idioma, "
-"como `fr_FR.utf8` ou `en_US`) no diretório ``lang``. Este ficheiro deve "
-"conter um array PHP simples com a cadeia original (aquela no código-fonte do "
-"Galette) como índice."
+"editar nenhum ficheiro fonte do Galette. Basta criar um ficheiro "
+"``galette_{mylang}_local_lang.php`` (onde `{mylang}` deve ser substituído "
+"pelo idioma, como `fr_FR.utf8` ou `en_US`) no diretório ``lang``. Este "
+"ficheiro deve conter um array PHP simples com a cadeia original (aquela no "
+"código-fonte do Galette) como índice."
 
-#: ../usermanual/avancee.rst:33 d4b7b7d2e60e49d4903903a8941c6438
+#: ../usermanual/avancee.rst:33 72ed60ccfbf14a79af4c32b5e216b34e
 msgid ""
 "As example,  we want to change the \"Password\" string on the login page in "
 "french, translated as `Mot de passe :`. The original string is `Password:` "
@@ -120,7 +120,7 @@ msgstr ""
 "então, criaremos o ficheiro ``galette_fr_FR.utf8_local_lang.php`` com o "
 "conteúdo seguinte:"
 
-#: ../usermanual/avancee.rst:41 860fe6d76a224c0bba74e0bc108f9c6b
+#: ../usermanual/avancee.rst:41 e0719ed60785410284e40805f944b5c4
 msgid ""
 "Since Galette uses a cache system for translations, changes may not be "
 "visible immediately; you may have to restart PHP (or to clear cache). It is "
@@ -133,19 +133,19 @@ msgstr ""
 "incluindo a pontuação e certificar-se de escapar as aspas simples (com uma "
 "barra invertida) em todas as cadeias."
 
-#: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
+#: ../usermanual/avancee.rst:43 477a9b75d5074ab0914cfc095421cc5c
 msgid ""
 "You also can override langs for plugins using the same method, just place "
-"the file in plugins lang directory and name it "
-"``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name "
-"you can find in the ``_define.php`` file."
+"the file in plugins lang directory and name it ``{plugin}_{mylang}"
+"_local_lang.php`` where `{plugin}` is the routing name you can find in the "
+"``_define.php`` file."
 msgstr ""
 "Também pode sobrescrever os idiomas dos plugins usando o mesmo método. Basta "
-"posicionar o ficheiro no diretório de idiomas dos plugins e nomeá-lo como ``"
-"{plugin}_{mylang}_local_lang.php``, onde `{plugin}` é o nome da rota que "
+"posicionar o ficheiro no diretório de idiomas dos plugins e nomeá-lo como "
+"``{plugin}_{mylang}_local_lang.php``, onde `{plugin}` é o nome da rota que "
 "encontra no ficheiro ``_define.php``."
 
-#: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
+#: ../usermanual/avancee.rst:45 7dfcd592088e45048142232510855cb9
 msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
@@ -153,7 +153,7 @@ msgstr ""
 "Isto só funcionará se usar os recursos de tradução do Galette e não com o "
 "gettext nativo."
 
-#: ../usermanual/avancee.rst:48 175f39314197485ea541b80324e86e63
+#: ../usermanual/avancee.rst:48 17e957143183465eb19ca6b084c729b7
 msgid "Change session lifetime"
 msgstr "Alterar a duração da sessão"
 
@@ -319,7 +319,8 @@ msgstr ""
 #: ../usermanual/avancee.rst:133 c084f79e4dbe4d39b2e0f3995d53a966
 msgid ""
 "`separator` is the CSV separator that will be used. Possible values are:"
-msgstr "`separator` é o separador CSV que será usado. Os valores possíveis são:"
+msgstr ""
+"`separator` é o separador CSV que será usado. Os valores possíveis são:"
 
 #: ../usermanual/avancee.rst:135 c6c260f76c434d5ca47377d23214939c
 msgid "semicolon (``;``) - default"
@@ -377,7 +378,8 @@ msgstr ""
 "campos dinâmicos,"
 
 #: ../usermanual/avancee.rst:155 feabe0c1c39c4fad927c3e0aa5fadaf3
-msgid "**reinitialize PDF models** will reset all PDF models to default values,"
+msgid ""
+"**reinitialize PDF models** will reset all PDF models to default values,"
 msgstr ""
 "**Reinicializar modelos PDF** irá redefinir todos os modelos PDF para os "
 "valores padrão,"
