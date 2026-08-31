@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,126 +17,131 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../plugins/paypal.rst:3
-#: 642c4a0793084c7181f1b5d5d2b0a787
+#: a7483439db49443a8112e470b75d31d9
 msgid "Paypal"
 msgstr ""
 
-#: ../plugins/paypal.rst:5
-#: a1c0a7aaa653422cbf97f77f5626560a
+#: ../plugins/paypal.rst:7
+#: 6ad3b0d1339a4c3f952610f1375b35a5
+msgid "PayPal is discontinuing its legacy Website Payments Standard (WPS) integration, with full transaction processing termination scheduled for January 2027. This plugin is **not compatible** with any other integration."
+msgstr ""
+
+#: ../plugins/paypal.rst:11
+#: c87234fc7c604772baefd7d4c02358ba
 msgid "This plugin provides:"
 msgstr ""
 
-#: ../plugins/paypal.rst:7
-#: 1312e44d78014c9a8a6a4fab220e8fe2
+#: ../plugins/paypal.rst:13
+#: 50dbc6a698d4411087ae12ab54ff81ad
 msgid "possibility to associate an amount to a contribution type,"
 msgstr ""
 
-#: ../plugins/paypal.rst:8
-#: 18ebfac8cc274147af530a550db9ad28
+#: ../plugins/paypal.rst:14
+#: b36e478f57774428ab12145f7507e035
 msgid "create a Paypal payment form,"
 msgstr ""
 
-#: ../plugins/paypal.rst:9
-#: 062e484d231346e58bb391f5f586525d
+#: ../plugins/paypal.rst:15
+#: decaac6d306a4575bc0b79c1fbe7a4d3
 msgid "an history,"
 msgstr ""
 
-#: ../plugins/paypal.rst:10
-#: 0893421c0b25438fbefa647971d914ae
+#: ../plugins/paypal.rst:16
+#: ef4f543490ce47b0bcf7b45c7edaa0e6
 msgid "automatic transaction storage once validated."
 msgstr ""
 
-#: ../plugins/paypal.rst:12
-#: c3b6e448e101485e8a890faa9e98bfd4
+#: ../plugins/paypal.rst:18
+#: ea80c5719fc442509d01318cd6b42e17
 msgid "Paypal plugin preferences"
 msgstr ""
 
-#: ../plugins/paypal.rst:17
-#: 65cab564ff614f46919c02cf6a200eda
+#: ../plugins/paypal.rst:23
+#: 0632edcc7111430cb0204055c6091ccf
 msgid "Paypal payment form"
 msgstr ""
 
-#: ../plugins/paypal.rst:22
-#: 65cab564ff614f46919c02cf6a200eda
+#: ../plugins/paypal.rst:28
+#: 88f4d870910d4d39bfb91eb38465814a
 msgid "Paypal payment form (public)"
 msgstr ""
 
-#: ../plugins/paypal.rst:29
-#: da9ca9062c324e1cb623a4ffdbbb768e
+#: ../plugins/paypal.rst:35
+#: 23816eb2b425443980a46971ec31ba0f
 msgid "Due to the way Paypal payments are handled, especially the payment confirmation, your instance must be publicly accessible."
 msgstr ""
 
-#: ../plugins/paypal.rst:32
-#: 8879eb34f1644dd1b6236fdc30c44e83
+#: ../plugins/paypal.rst:38
+#: 6688e1eb11824f628ea2ab88ad028b2d
 msgid "Installation"
 msgstr ""
 
-#: ../plugins/paypal.rst:34
-#: 212f7ad9c6a2492ca77195fca1aa11b7
+#: ../plugins/paypal.rst:40
+#: cdec018cd45b45e7acb2880e6988f4ba
 msgid "First of all, download the plugin:"
 msgstr ""
 
-#: ../plugins/paypal.rst:36
-#: 2a446237a8934ba8b0c88dd43a34e060
+#: ../plugins/paypal.rst:42
+#: ab6e1951ab294b74aca2a3af36b6791b
 msgid "Get latest Paypal plugin!"
 msgstr ""
 
-#: ../plugins/paypal.rst:40
-#: bc9d81d9e7ce4d5e98fe033edd0b50cf
+#: ../plugins/paypal.rst:46
+#: 6e232bf791de4dbfa082ceaf1869f4bd
 msgid "Get Paypal plugin nightly build!"
 msgstr ""
 
-#: ../plugins/paypal.rst:44
-#: e1d08172e9d64421835a5aaad96ab6ca
+#: ../plugins/paypal.rst:50
+#: f451ef6104fa4787875ff3bd55729258
 msgid "Extract the downloaded archive in Galette ``plugins`` directory. For example, under linux (replacing `{url}` and `{version}` with correct values):"
 msgstr ""
 
-#: ../plugins/paypal.rst:54
-#: 2e941cbe525d44eebbe2fe6a599902dd
+#: ../plugins/paypal.rst:60
+#: ec243f40392548b59dc2e62752e52432
 msgid "Database initialisation"
 msgstr ""
 
-#: ../plugins/paypal.rst:56
-#: fe7fbf78cb5e485fa299ab867c1153a0
+#: ../plugins/paypal.rst:62
+#: 6801ec6c20ec4fa5a1f32c86bd9f7978
 msgid "In order to work, this plugin requires several tables in the database. See :ref:`Galette plugins management interface <plugins_managment>`."
 msgstr ""
 
-#: ../plugins/paypal.rst:58
-#: 7ae72772417a4102aa73b8d9a80fd5cc
+#: ../plugins/paypal.rst:64
+#: 3618bb7d0a4a43ea8b6931f45c3061ab
 msgid "And this is finished; Paypal plugin is installed :)"
 msgstr ""
 
-#: ../plugins/paypal.rst:61
-#: d1257db41c824394aad6b4a10383a67c
+#: ../plugins/paypal.rst:67
+#: bb8375ce8561433b9fbee098589688e4
 msgid "Plugin configuration"
 msgstr ""
 
-#: ../plugins/paypal.rst:63
-#: 750347079af34e888d4bcf1642af091b
+#: ../plugins/paypal.rst:69
+#: e3a048983ca542c9a11704020e4fee9e
 msgid "Once plugin has been installed, a `Paypal` group is added to the menu, with some new entries:"
 msgstr ""
 
-#: ../plugins/paypal.rst:65
-#: 987fda6981494916b6a8223d6dc7af27
+#: ../plugins/paypal.rst:71
+#: 7d416d48ef394280bf223ef41b562210
 msgid "`Payment form`: the payment form itself, which is accessible as a public page,"
 msgstr ""
 
-#: ../plugins/paypal.rst:66
-#: 4907f7fe871b4aacaa03c55ec57cd5a9
+#: ../plugins/paypal.rst:72
+#: a1c6537200504d5a87871129e75e72b8
 msgid "`Preferences`: plugin preferences, accessible for administrators and staff members."
 msgstr ""
 
-#: ../plugins/paypal.rst:68
-#: d055cbbcdace4e4184e6df4bdfb6072e
+#: ../plugins/paypal.rst:74
+#: f7abde4e7b3b49ae94795d03775dcb47
 msgid "In order to work properly, you need to fill a very important value: your Paypal account code. You can either use the email address associated with your Paypal account (but you will need to change it in Galette if it changes on Paypal) or your merchant identifier. To find your merchant identifiant, log in to Paypal and you will find it in your account preferences. Changing identifier is only allowed for administrators."
 msgstr ""
 
-#: ../plugins/paypal.rst:70
-#: 128c323d812b4c35b0ff2e10e04df59c
+#: ../plugins/paypal.rst:76
+#: ec655a7180c24c37905cd38c045766de
 msgid "Preferences screen also permit to edit amount related to contributions types, and to hide some types."
 msgstr ""
 
-#: ../plugins/paypal.rst:72
-#: e926f41b62024a8f9d48d5fc78e2c9b8
-msgid "After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membership extension, its membership will be recalculated when the payment will be confirmed."
+#: ../plugins/paypal.rst:78
+#: 5f5a8005b7954d8aa8298f376ebac859
+msgid "After that, any user can choose the contribution type, adjust the amount and pay from his Paypal account. If the user is a logged in member, and if the contribution type is a membership extension, its membership wil be recalculated when the payment will be confirmed."
 msgstr ""

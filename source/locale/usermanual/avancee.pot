@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,72 +17,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../usermanual/avancee.rst:5
-#: 146a7da35cab4d59bcc2bcf51c1acdd9
+#: 33b1513477aa458eb68105b2fc1be815
 msgid "Experienced users"
 msgstr ""
 
 #: ../usermanual/avancee.rst:9
-#: 1f9bbed20cf5465d9384452334706982
+#: fe7e4c64977c4ddca193e94a7185df20
 msgid "Use only following instructions if you know what you are doing... \"The management is not responsible for any case of [...]\" :D"
 msgstr ""
 
 #: ../usermanual/avancee.rst:12
-#: 73aa7121c47b43ce986562d44a72d14f
+#: c84fcf0f960a4bb892ad47bd7456f9bd
 msgid "Adapt to your graphical chart"
 msgstr ""
 
 #: ../usermanual/avancee.rst:14
-#: 3b8372bf5196483784a70dd21c9548bc
+#: 96e890d563924f0a91d382188745ac41
 msgid "If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mechanism designed for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included."
 msgstr ""
 
 #: ../usermanual/avancee.rst:16
-#: 4c117cdc3e114fe59486d6e5fa1ff289
+#: 27bcbede20ce448fa141c2017b04f647
 msgid "Try to keep things as simple as possible. For example, if you want to change association name color (displayed under pages titles), you will find in Galette the CSS rule `#asso_name` that defines several parameters including the color. Then, in your stylesheet, you will just need the following:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:24
-#: 1e96e02eb7b34e39bd65c5c63a67501b
+#: 5642cfa5288c46e5ae120d23801eefed
 msgid "This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be taken into account by the Galette team, no support will be provided."
 msgstr ""
 
 #: ../usermanual/avancee.rst:26
-#: fb6684b53601415f9a1227f60a605450
+#: 476d5c5338924d15a2ed799074804ee5
 msgid "You also can override the print stylesheet, just create a ``galette_print_local.css`` file."
 msgstr ""
 
 #: ../usermanual/avancee.rst:29
-#: 0b370ab020e041978a129a9e9bd88e6b
+#: efcefc0124fd491ea94ffd665c0b67c2
 msgid "Add and change strings"
 msgstr ""
 
 #: ../usermanual/avancee.rst:31
-#: 790842fad86747e3a276e1e17ed66b6a
+#: 4c1a528ebb364ba9b81d6aacc225bd86
 msgid "It is possible if needed to customize translated strings in Galette - without editing any Galette source file. Just create a ``galette_{mylang}_local_lang.php`` file (where `{mylang}` must be replaced with the language, like `fr_FR.utf8` or `en_US`) in the ``lang`` directory. This file must contains a simple PHP array with the original string (the one in Galette source code) as index."
 msgstr ""
 
 #: ../usermanual/avancee.rst:33
-#: d4b7b7d2e60e49d4903903a8941c6438
+#: 72ed60ccfbf14a79af4c32b5e216b34e
 msgid "As example,  we want to change the \"Password\" string on the login page in french, translated as `Mot de passe :`. The original string is `Password:` (see ``galette/templates/default/pages/index.html.twig``), its french translation is `Mot de passe :` and we want to replace it with `Secret :`; so we will create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
 msgstr ""
 
 #: ../usermanual/avancee.rst:41
-#: 860fe6d76a224c0bba74e0bc108f9c6b
+#: e0719ed60785410284e40805f944b5c4
 msgid "Since Galette uses a cache system for translations, changes may not be visible immediately; you may have to restart PHP (or to clear cache). It is important to take the original string verbatim, punctuation included; and take care to escape single quotes (with a backslash) in all the strings."
 msgstr ""
 
 #: ../usermanual/avancee.rst:43
-#: f928d85c3e2b44b7a87ecc7c848eb051
+#: 477a9b75d5074ab0914cfc095421cc5c
 msgid "You also can override langs for plugins using the same method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file."
 msgstr ""
 
 #: ../usermanual/avancee.rst:45
-#: ae27f3e2e3fa4b67ad6fb55a30d83d00
+#: 7dfcd592088e45048142232510855cb9
 msgid "This will work only if you use Galette translation features, and not with native gettext."
 msgstr ""
 
 #: ../usermanual/avancee.rst:48
-#: 175f39314197485ea541b80324e86e63
+#: 17e957143183465eb19ca6b084c729b7
 msgid "Change session lifetime"
 msgstr ""
 
