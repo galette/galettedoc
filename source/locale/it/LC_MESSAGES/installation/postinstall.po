@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: 2025-10-13 09:07+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
-"doc-install-postinstall/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-"
+"install-postinstall/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,31 +21,31 @@ msgstr ""
 "X-Generator: Weblate 5.14-dev\n"
 
 # 488a226702e54799884dd1ac10f3aec9
-#: ../installation/postinstall.rst:5 488a226702e54799884dd1ac10f3aec9
+#: ../installation/postinstall.rst:5 39f07e8e73204f50bb4addc62a782c1f
 msgid "Post installation"
 msgstr "Post installazione"
 
 # b17c9984f26a47b69f23f52834d15f1d
-#: ../installation/postinstall.rst:8 b17c9984f26a47b69f23f52834d15f1d
+#: ../installation/postinstall.rst:8 eaa00547ea4643328f040b48bc6113a8
 msgid "Various tasks"
 msgstr "Vari compiti"
 
-#: ../installation/postinstall.rst:10 9691205beb56471ab60663500a555354
+#: ../installation/postinstall.rst:10 6dd63078290149f5aeb6e803d5e4bdc3
 msgid "One Galette properly installed, you still have one thing to do:"
 msgstr ""
 "Una volta installato correttamente Galette, c'è ancora una cosa da fare:"
 
-#: ../installation/postinstall.rst:12 bf60cb14174e492f98bfd9c075eedcae
+#: ../installation/postinstall.rst:12 543f0eec81e7480ea9c80bdf7314c31e
 msgid "remove write access to the ``config`` directory."
 msgstr "rimuovere l'accesso in scrittura alla cartella ``config```."
 
 # 0a3871ca8a3d48b88d769c235800b20e
-#: ../installation/postinstall.rst:17 0a3871ca8a3d48b88d769c235800b20e
+#: ../installation/postinstall.rst:17 baa633630a594adeb73f34ff424091c8
 msgid "Configure paths"
 msgstr "Configura percorsi"
 
 # 020264d5c184431bb389617ff7378444
-#: ../installation/postinstall.rst:19 020264d5c184431bb389617ff7378444
+#: ../installation/postinstall.rst:19 e4830bbab36a4a018b4120148ce31e21
 msgid ""
 "Some galette paths may be changed from a configuration parameter, such as "
 "exports, photos, etc"
@@ -54,7 +54,7 @@ msgstr ""
 "configurazione, come esportazioni, foto, ecc"
 
 # 915b59a4be0c41ab979c82307b6ead4e
-#: ../installation/postinstall.rst:21 915b59a4be0c41ab979c82307b6ead4e
+#: ../installation/postinstall.rst:21 e35917f85f9d4f988425125d8b27dd31
 msgid ""
 "By default, Galette provides all those directories inside installation "
 "directory. That way, if installation is located at ``/var/www/galette``, "
@@ -70,7 +70,7 @@ msgstr ""
 "paths.inc.php`` che non deve essere modificato."
 
 # d404b74d31ab4a0989141c8c1da8b8ab
-#: ../installation/postinstall.rst:24 d404b74d31ab4a0989141c8c1da8b8ab
+#: ../installation/postinstall.rst:24 a7e318f0ce804a1e975702f62be4a7bd
 msgid ""
 "Instead, you may override some or all of the values in a ``config/"
 "local_paths.inc.php``, with paths you want declared as PHP constants. For "
@@ -81,7 +81,7 @@ msgstr ""
 "PHP. Ad esempio, per definire un percorso diverso per le foto:"
 
 # eb3cd2eb4c0b439eabd40d7131261a4f
-#: ../installation/postinstall.rst:32 eb3cd2eb4c0b439eabd40d7131261a4f
+#: ../installation/postinstall.rst:32 9c6797f6a3b647d09fe29576642ac057
 msgid ""
 "All paths that originally resides in ``data`` directory must stay accessible "
 "read/write for the web server. All other directories should be set as read "
@@ -94,45 +94,45 @@ msgstr ""
 "web non dovrebbe scrivere in esse. Ecco l'elenco completo:"
 
 # 6432ba3da92c493db780460e0c4fae88
-#: ../installation/postinstall.rst:34 6432ba3da92c493db780460e0c4fae88
+#: ../installation/postinstall.rst:34 d741c82ec83f49dbaaff015cbee5eaae
 msgid "`GALETTE_CONFIG_PATH` : path to Galette configuration files,"
 msgstr "`GALETTE_CONFIG_PATH`: percorso dei file di configurazione Galette,"
 
 # 121fa2d66cfa46b785eb64f660e48da1
-#: ../installation/postinstall.rst:35 121fa2d66cfa46b785eb64f660e48da1
+#: ../installation/postinstall.rst:35 a92d44c7aaff45dc8453125f5d6837a7
 msgid "`GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),"
 msgstr ""
 "`GALETTE_DATA_PATH`: percorso della cartella dei dati Galette (dalla "
 "versione 0.8),"
 
 # d59132cf243e44ffaaf5d9bd6779ad81
-#: ../installation/postinstall.rst:36 d59132cf243e44ffaaf5d9bd6779ad81
+#: ../installation/postinstall.rst:36 07ed35a8bee14c9fa79dc539896c914b
 msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr ""
 "`GALETTE_LOGS_PATH`: percorso dei log di Galette, modificarlo come si vuole,"
 
 # 361b7bfb095f48999793c256e7f0b57d
-#: ../installation/postinstall.rst:37 361b7bfb095f48999793c256e7f0b57d
+#: ../installation/postinstall.rst:37 9fa51bd39e4b40818ff02342ba2ef4d5
 msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
 msgstr ""
 "`GALETTE_COMPILE_DIR`: percorso per la compilazione del sistema di template "
 "Smarty,"
 
 # 827c402225814d058364e8d270935477
-#: ../installation/postinstall.rst:38 827c402225814d058364e8d270935477
+#: ../installation/postinstall.rst:38 d8ea1c6b3967482996b2b1f36819b67e
 msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
 msgstr ""
 "`GALETTE_CACHE_DIR`: directory di memorizzazione nella cache per alcuni casi,"
 
 # 84e8f4be8acb4553bfd49a9b6311957d
-#: ../installation/postinstall.rst:39 84e8f4be8acb4553bfd49a9b6311957d
+#: ../installation/postinstall.rst:39 bce3bf0017014efe9ce7bcdf8987af98
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
 "`GALETTE_EXPORTS_PATH`: percorso della cartella in cui archiviare le "
 "esportazioni CSV,"
 
 # bd56b3e8293a476d8c3d4e44c020de50
-#: ../installation/postinstall.rst:40 bd56b3e8293a476d8c3d4e44c020de50
+#: ../installation/postinstall.rst:40 4fc673a2501c41cf912bc094b59c44b1
 msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
@@ -141,14 +141,14 @@ msgstr ""
 "importare,"
 
 # 5d47b80230af4986be976df98f1d7ad8
-#: ../installation/postinstall.rst:41 5d47b80230af4986be976df98f1d7ad8
+#: ../installation/postinstall.rst:41 5530a38f425b4f44b63234cb10a1bc76
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
 msgstr ""
 "`GALETTE_ATTACHMENT_PATH`: percorso dei documenti allegati nell'invio "
 "postale,"
 
 # aa1fbe83707f43649d6b9baa66de4a29
-#: ../installation/postinstall.rst:42 aa1fbe83707f43649d6b9baa66de4a29
+#: ../installation/postinstall.rst:42 558270f916d64f83a6f13a9a3773f299
 msgid ""
 "`GALETTE_FILES_PATH` : path to the dynamic files directory storage (from "
 "dynamic fields),"
@@ -157,18 +157,18 @@ msgstr ""
 "dinamici (per i campi dinamici),"
 
 # e144dd24d6c84345aa020da94f00f002
-#: ../installation/postinstall.rst:43 e144dd24d6c84345aa020da94f00f002
+#: ../installation/postinstall.rst:43 ef8800fb80d14ad0b18ce85b41754a5f
 msgid "`GALETTE_PHOTOS_PATH` : path to store members photos and logos."
 msgstr ""
 "`GALETTE_PHOTOS_PATH`: percorso per archiviare foto e loghi dei membri."
 
 # 12af61e48d4d47cf80df6b2b019cf02e
-#: ../installation/postinstall.rst:46 12af61e48d4d47cf80df6b2b019cf02e
+#: ../installation/postinstall.rst:46 25f83f11b6674747a6f176d4681a8af4
 msgid "Data security"
 msgstr "Sicurezza dei dati"
 
 # c9320dcabd7b4e1a921106a729deced6
-#: ../installation/postinstall.rst:48 c9320dcabd7b4e1a921106a729deced6
+#: ../installation/postinstall.rst:48 d9cc930056734de2ba76f98ba8368116
 msgid ""
 "You and your members will login to Galette, using a login and a password. "
 "You must be aware that those information are transmitted as is to the "
@@ -180,7 +180,7 @@ msgstr ""
 "scambi."
 
 # 696788f9c1a34305be512665338d5b66
-#: ../installation/postinstall.rst:50 696788f9c1a34305be512665338d5b66
+#: ../installation/postinstall.rst:50 1d442e44b1824ababe4502cc9f8acd24
 msgid ""
 "This problem is recurrent hen you have to send data over the internet, and "
 "this is why you must check if you are on a HTTPS secured page (your browser "
@@ -193,7 +193,7 @@ msgstr ""
 "sensibili come login, password, numero della carta di credito, ..."
 
 # b74ceb4f088f4427baeb090fa018018b
-#: ../installation/postinstall.rst:52 b74ceb4f088f4427baeb090fa018018b
+#: ../installation/postinstall.rst:52 f1792fdb984644e08668f5cceb67b381
 msgid ""
 "And this is the same for Galette, you can use it along with SSL, no problem. "
 "All data that will be transmitted to the server will be a bit more confident "
