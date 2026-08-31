@@ -28,12 +28,15 @@ Official plugins are developed and maintained by the Galette team. Available off
    :maxdepth: 2
 
    paypal.rst
-   fullcard.rst
    maps.rst
    auto.rst
    events.rst
    objectslend.rst
    activities.rst
+
+Some official plugins are hosted in the `galette-plugins organization <https://github.com/galette-plugins/>`_ and come with their own website, where their documentation lives:
+
+* `Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_ (member card as PDF).
 
 *******************
 Third party plugins
@@ -46,7 +49,7 @@ Third party plugins are developed and maintained by community members. Some of t
 * `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle `HelloAsso payments <https://www.helloasso.com/>`_),
 * `LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ (manage legal notices pages),
 
-A `Github community <https://github.com/galette-plugins/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin.
+The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts both community plugins and some official ones; each plugin website states who maintains it. See :doc:`how to add your plugin <plugins-tiers>` if you want yours to join.
 
 .. toctree::
    :hidden:

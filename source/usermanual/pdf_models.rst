@@ -50,4 +50,4 @@ Membership form
 
 It is a model that can be used to print a membership form. It can be empty (to print some of them for any event for example) or filled with one member information.
 
-Since there are many limitation, you may use the :doc:`FullCard plugin </plugins/fullcard>` that will replace this model. It is more complex to change, but you can do many more with it. You can also create your own plugin based on FullCard.
+Since there are many limitation, you may use the `FullCard plugin <https://galette-plugins.github.io/plugin-fullcard/>`_ that will replace this model. It is more complex to change, but you can do many more with it. You can also create your own plugin based on FullCard.
