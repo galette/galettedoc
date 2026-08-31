@@ -6,215 +6,233 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"POT-Creation-Date: 2026-08-31 21:42+0200\n"
 "PO-Revision-Date: 2026-07-16 06:23+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "install-update/sl/>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2026.8.dev0\n"
 
-#: ../installation/update.rst:5
-#: c4a0150d911747f9850844fb561daa56
+#: ../installation/update.rst:5 d3ad0ff8e45e4fbc84844f094894735c
 msgid "Updating"
 msgstr "Posodabljanje"
 
-#: ../installation/update.rst:7
-#: 85c8c8a096ee48a2bf0c808fa88789f9
+#: ../installation/update.rst:7 194670cf293944269e63ea40a41f14ac
 msgid "If you are using an old Galette release, it's time to update."
 msgstr "Če uporabljate staro izdajo Galette, je čas za posodobitev."
 
-#: ../installation/update.rst:11
-#: 8f2753c896f64b7bb6c50fdc0cfbd460
-msgid "An update is often not something lite, your data may be modified. So, please make sure you made **a backup of your current database**, or you may lost all or a part of your data."
+#: ../installation/update.rst:11 a2418817edde4673b3352c9f0a7ca543
+msgid ""
+"An update is often not something lite, your data may be modified. So, please "
+"make sure you made **a backup of your current database**, or you may lost "
+"all or a part of your data."
 msgstr ""
 "Posodobitev pogosto ni nekaj lahkega, vaši podatki se lahko spremenijo. Zato "
 "poskrbite, da ste naredili **varnostno kopijo trenutne baze podatkov**, "
 "sicer lahko izgubite vse ali del svojih podatkov."
 
-#: ../installation/update.rst:13
-#: 0ce3fcfa5743401f903cb46007cc96d3
-msgid "A backup of all Galette files is also recommended it would be helpful if you find a bug that prevent you to migrate and have to restore an old version;"
+#: ../installation/update.rst:13 e7f77ecda425486ca1513565bbb8806b
+msgid ""
+"A backup of all Galette files is also recommended it would be helpful if you "
+"find a bug that prevent you to migrate and have to restore an old version;"
 msgstr ""
 "Priporočljiva je tudi varnostna kopija vseh datotek Galette, kar bi bilo "
 "koristno, če bi odkrili napako, ki vam preprečuje selitev in morate obnoviti "
 "staro različico;"
 
-#: ../installation/update.rst:17
-#: b770437d655d45a5873376dab5ea469a
-msgid "Migrating a pre 0.7 release is theoretically supported, but this is not tested (those releases are more than 10 years old!), and it is possible your attempt fail."
+#: ../installation/update.rst:17 26707a986f754172a9e080a18754d2aa
+msgid ""
+"Migrating a pre 0.7 release is theoretically supported, but this is not "
+"tested (those releases are more than 10 years old!), and it is possible your "
+"attempt fail."
 msgstr ""
 "Selitev izdaje pred različico 0.7 je teoretično podprta, vendar to ni "
 "preizkušeno (te izdaje so starejše od 10 let!) in je možno, da vaš poskus ne "
 "bo uspel."
 
-#: ../installation/update.rst:19
-#: c28f7153bc7c49cc80588d2cb53cbfcc
-msgid "Nothing is really made to make such a time travel ;) If this is your case, you should first `migrate to Galette 0.7.8 <https://galette.eu/download/archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest version."
+#: ../installation/update.rst:19 f587df8ae36140bcb164db17f65506ff
+msgid ""
+"Nothing is really made to make such a time travel ;) If this is your case, "
+"you should first `migrate to Galette 0.7.8 <https://galette.eu/download/"
+"archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest "
+"version."
 msgstr ""
 "Nič ni res narejeno za takšno potovanje skozi čas ;) Če je to vaš primer, "
 "morate najprej `preseliti na Galette 0.7.8 <https://galette.eu/download/"
 "archives/galette-0.7.8.tar.bz2>`_; in nato še enkrat na najnovejšo različico."
 
-#: ../installation/update.rst:22
-#: ddeccd27b1d24d1fa7bc1e6121cd20f1
+#: ../installation/update.rst:22 521d8c63aa354b6c85d8ceb3149c4b4c
 msgid "Updating files"
 msgstr "Posodabljanje datotek"
 
-#: ../installation/update.rst:24
-#: b2893b3c6eaa42f5851407515c09fa7b
-msgid "First, logout from your instance, and make sure to use a maintenance mode to prevent other users to reach the instance."
+#: ../installation/update.rst:24 a4198db9ee3f476a9ad2250687457cd1
+msgid ""
+"First, logout from your instance, and make sure to use a maintenance mode to "
+"prevent other users to reach the instance."
 msgstr ""
 "Najprej se odjavite iz svojega primerka in se prepričajte, da uporabljate "
 "vzdrževalni način, da preprečite drugim uporabnikom dostop do primerka."
 
-#: ../installation/update.rst:26
-#: aceb420907fd4016ab8456495e0057dd
-msgid "Then, download latest Galette version and replace the files. For more information on files installation, refer to the :ref:`prepare installation <preparation>` section."
+#: ../installation/update.rst:26 5044c69a8bdb42c4bcc37f989cdd7b61
+msgid ""
+"Then, download latest Galette version and replace the files. For more "
+"information on files installation, refer to the :ref:`prepare installation "
+"<preparation>` section."
 msgstr ""
 "Nato prenesite najnovejšo različico Galette in zamenjajte datoteke. Za več "
 "informacij o namestitvi datotek glejte razdelek :ref:`prepare installation "
 "<preparation>`."
 
-#: ../installation/update.rst:28
-#: ce34ab9888eb41309710dc28ae856a61
-msgid "Some directories keep data and/or configurations and should be copied back to the new instance:"
+#: ../installation/update.rst:28 446524608c2946e5ac6ef038773be679
+msgid ""
+"Some directories keep data and/or configurations and should be copied back "
+"to the new instance:"
 msgstr ""
 "Nekateri imeniki hranijo podatke in/ali konfiguracije in jih je treba "
 "kopirati nazaj v novo instanco:"
 
-#: ../installation/update.rst:30
-#: 0613607a643341638af2ca989c052877
-msgid "``config/config.inc.php``. If this file is missing, Galette update process will ask you the information and create a new one. If the file is present, it will be used to fill information excepted database password. It is the only file that can be edited during update process,"
+#: ../installation/update.rst:30 fca17f8bddf045df85da044b5db0b9c7
+msgid ""
+"``config/config.inc.php``. If this file is missing, Galette update process "
+"will ask you the information and create a new one. If the file is present, "
+"it will be used to fill information excepted database password. It is the "
+"only file that can be edited during update process,"
 msgstr ""
 "``config/config.inc.php``. Če te datoteke ni, vas bo postopek posodabljanja "
 "Galette vprašal za podatke in ustvaril novo. Če je datoteka prisotna, bo "
 "uporabljena za vnos podatkov, razen gesla baze podatkov. To je edina "
 "datoteka, ki jo je mogoče urejati med postopkom posodabljanja,"
 
-#: ../installation/update.rst:31
-#: 59761ec82cf74838a2db9a5cc53387dd
+#: ../installation/update.rst:31 c53e78889f964675b4b66571b543e2de
 msgid "``data/photos`` your members photos and logos,"
 msgstr "``data/photos`` fotografije in logotipi vaših članov,"
 
-#: ../installation/update.rst:32
-#: 0ca3359130544cfcacb40341ff080017
+#: ../installation/update.rst:32 01c9f6e5bd6341a8b835192f82a6b48c
 msgid "``data/exports`` contains CSv exports,"
 msgstr "``data/exports`` vsebuje izvoze CSV,"
 
-#: ../installation/update.rst:33
-#: 97ca05c6a7a245f391d2ed8fdad9594b
+#: ../installation/update.rst:33 27d134a7e6f04b8abc724d017a82ea78
 msgid "``data/files`` contains files from dynamic fields of type file,"
 msgstr "``data/files`` vsebuje datoteke iz dinamičnih polj tipa file,"
 
-#: ../installation/update.rst:34
-#: 17dae2c5a3f743629de6c20ace036605
+#: ../installation/update.rst:34 aedcb0c8296f4c0cb22e418dc7b4b305
 msgid "``data/attachments`` contains mailing attached documents."
 msgstr ""
 "``data/attachments`` vsebuje priložene dokumente za pošiljanje po pošti."
 
-#: ../installation/update.rst:35
-#: e80f2ec427564a80aad7a5fad00df093
-msgid "``plugins`` your current plugins. It is a good idea to check if new plugins versions are available ;)"
+#: ../installation/update.rst:35 24d9d389505e4ef5b12f375b3c23f75b
+msgid ""
+"``plugins`` your current plugins. It is a good idea to check if new plugins "
+"versions are available ;)"
 msgstr ""
 "``plugins`` vaši trenutni vtičniki. Priporočljivo je preveriti, ali so na "
 "voljo nove različice vtičnikov ;)"
 
-#: ../installation/update.rst:37
-#: 759c2d7bade247e5959b28f4bb1730ea
-msgid "Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database."
+#: ../installation/update.rst:37 a9c2ee3e4e1b4dd3bc2463eca614ed71
+msgid ""
+"Once files are updated, go to your Galette instance. It will ask you if "
+"needed to proceed to the update of your database."
 msgstr ""
 "Ko so datoteke posodobljene, pojdite v svojo instanco Galette. Vprašal vas "
 "bo, ali je treba nadaljevati s posodobitvijo baze podatkov."
 
-#: ../installation/update.rst:39
-#: b50f3746516d4b25b9016c563270c20d
-msgid "If so, visit the install URL ``/installer.php`` (ex: https://your.domain.name/installer.php) and choose *Update* when your are asked for the type of installation."
+#: ../installation/update.rst:39 7614276c2dc44b03a84df4d6664f0b3f
+msgid ""
+"If so, visit the install URL ``/installer.php`` (ex: https://"
+"your.domain.name/installer.php) and choose *Update* when your are asked for "
+"the type of installation."
 msgstr ""
 "Če je tako, obiščite namestitveni URL ``/installer.php`` (npr.: https://"
 "vaša.domena/installer.php) in izberite *Posodobi*, ko vas sistem vpraša po "
 "vrsti namestitve."
 
-#: ../installation/update.rst:41
-#: acbdab0cec644716ba93b2b5534113dd
+#: ../installation/update.rst:41 1b03bc57003a440b8a6dd0b5b7be9b95
 msgid "If it asks you nothing you're just done already ;)"
 msgstr "Če te nič ne vpraša, si že končal ;)"
 
-#: ../installation/update.rst:45
-#: 4b6889058e484a889fe18f9a3afa4a78
+#: ../installation/update.rst:45 efe173f7aea94d6b820e1d3349e4ea5f
 msgid "Updating database"
 msgstr "Posodabljanje baze podatkov"
 
-#: ../installation/update.rst:49
-#: 621d9cdcb39d49a99b7e21bb86741bba
-msgid "Installing a new Galette release does not strictly means a database update will be required! Sometimes, only updating the files will be enough; even for a major release."
+#: ../installation/update.rst:49 b2f68d2f4ee34b4ea7f33158838696ea
+msgid ""
+"Installing a new Galette release does not strictly means a database update "
+"will be required! Sometimes, only updating the files will be enough; even "
+"for a major release."
 msgstr ""
 "Namestitev nove izdaje Galette ne pomeni nujno, da bo potrebna posodobitev "
 "baze podatkov! Včasih je dovolj le posodobitev datotek; tudi pri večji "
 "izdaji."
 
-#: ../installation/update.rst:51
-#: 37b53ace7af742b3986e4f751629065d
-msgid "Galette will tell you if an update is needed, no need to \"force\" an update."
+#: ../installation/update.rst:51 4b3be04ab2854cf78a7f7311190d9583
+msgid ""
+"Galette will tell you if an update is needed, no need to \"force\" an update."
 msgstr ""
 "Galette vam bo povedal, če je potrebna posodobitev, ni vam treba \"force\" "
 "posodobitve."
 
-#: ../installation/update.rst:53
-#: 8900502e7ad444ccb72966ba1fdb29a1
-msgid "Update process is very similar to :doc:`Galette installation process <galette>`, with some steps that change. All is mostly transparent, information are provided on each step."
+#: ../installation/update.rst:53 1883aae4fbcc472799f283f7456f4f69
+msgid ""
+"Update process is very similar to :doc:`Galette installation process "
+"<galette>`, with some steps that change. All is mostly transparent, "
+"information are provided on each step."
 msgstr ""
 "Postopek posodabljanja je zelo podoben :doc:`postopku namestitve Galette "
 "<galette>`, z nekaj spremembami v korakih. Vse je večinoma pregledno, "
 "informacije so podane za vsak korak."
 
-#: ../installation/update.rst:56
-#: e946375277c34dbfa2f2bb7f268a7351
+#: ../installation/update.rst:56 4e4d3e870fde44b8a57d0bbba5fd159e
 msgid "Database information"
 msgstr "Informacije o zbirki podatkov"
 
-#: ../installation/update.rst:58
-#: 51ca20b11982427eaee8756abe020978
-msgid "At \"Installation type\" step, you'll have to choose \"update\". Database information page will be pre filled with existing information, excepting password. Other information should not be changed."
+#: ../installation/update.rst:58 ae32e953a51a4d62a6939c9218ad5ed4
+msgid ""
+"At \"Installation type\" step, you'll have to choose \"update\". Database "
+"information page will be pre filled with existing information, excepting "
+"password. Other information should not be changed."
 msgstr ""
 "V koraku »Vrsta namestitve« boste morali izbrati »posodobi«. Stran s podatki "
 "o bazi podatkov bo vnaprej izpolnjena z obstoječimi podatki, razen gesla. "
 "Drugih podatkov ne smete spreminjati."
 
-#: ../installation/update.rst:62
-#: fab1bbf021c04dda8cce55d1aa50db63
-msgid "Note it is important that database name and prefixed used in previous database correspond to configuration."
+#: ../installation/update.rst:62 85859dd8b85840ce8793abbc19fc9e9b
+msgid ""
+"Note it is important that database name and prefixed used in previous "
+"database correspond to configuration."
 msgstr ""
 "Upoštevajte, da je pomembno, da ime baze podatkov in predpona, uporabljena v "
 "prejšnji bazi podatkov, ustrezata konfiguraciji."
 
-#: ../installation/update.rst:65
-#: be706b5e535a48ea88ebb5ce1915865c
+#: ../installation/update.rst:65 d26df1746e3245af8c93d132e46585e8
 msgid "Previous version selection"
 msgstr "Izbira prejšnje različice"
 
-#: ../installation/update.rst:67
-#: 6849b68439e84e7d990fb7fd124c50a2
-msgid "Next step is the choice of the previous Galette version. Installation process will try to \"guess\" what version it as, and will select this one per default (the one that will be displayed as bold text)."
+#: ../installation/update.rst:67 6562ac7f198f48439cd7f86cf58933b7
+msgid ""
+"Next step is the choice of the previous Galette version. Installation "
+"process will try to \"guess\" what version it as, and will select this one "
+"per default (the one that will be displayed as bold text)."
 msgstr ""
 "Naslednji korak je izbira prejšnje različice Galette. Namestitveni proces bo "
 "poskušal \"uganiti\", za katero različico gre, in jo bo privzeto izbral "
 "(tisto, ki bo prikazana kot krepko besedilo)."
 
-#: ../installation/update.rst:73
-#: 2b6e7e7304b34dafac2f805cf87a0fea
-msgid "If you try to update but your database version seems already correct, you will be warned. No entry will be displayed as bold text, please make sure to choose the right one:"
+#: ../installation/update.rst:73 20622ca1a1144ab5b116c31ff26e9612
+msgid ""
+"If you try to update but your database version seems already correct, you "
+"will be warned. No entry will be displayed as bold text, please make sure to "
+"choose the right one:"
 msgstr ""
 "Če poskušate posodobiti, vendar se zdi, da je vaša različica baze podatkov "
 "že pravilna, boste opozorjeni. Noben vnos ne bo prikazan s krepko pisavo, "
 "zato se prepričajte, da izberete pravilno različico:"
 
-#: ../installation/update.rst:79
-#: 7062e651fd5f46b3a5ab89485cff2f2c
+#: ../installation/update.rst:79 35944a775ff74bc2b7a58b61dc99edce
 msgid "Once update scripts have run, a summary will be displayed."
 msgstr "Ko se posodobitveni skripti zaženejo, se prikaže povzetek."
