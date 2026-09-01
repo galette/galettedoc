@@ -16,40 +16,23 @@ Plugins system allows to extend Galette with specific features that would not be
 
 Each plugin is a simple directory in ``{galette}/plugins/``, then refer to the plugin documentation to install it.
 
-You can disable a plugin creating a ``_disabled`` file in its directory.
-
 ****************
-Official Plugins
+Existing plugins
 ****************
 
-Official plugins are developed and maintained by the Galette team. Available official plugins are:
+The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts all plugins. See :doc:`how to add your plugin <plugins-tiers>` if you want yours to join.
 
-.. toctree::
-   :maxdepth: 2
-
-   paypal.rst
-   maps.rst
-   auto.rst
-   events.rst
-   objectslend.rst
-   activities.rst
-
-Some official plugins are hosted in the `galette-plugins organization <https://github.com/galette-plugins/>`_ and come with their own website, where their documentation lives:
-
-* `Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_ (member card as PDF).
-
-*******************
-Third party plugins
-*******************
-
-Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
-
-* `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette act as an oAuth2 provider),
-* `Stripe <https://galette-plugins.github.io/plugin-stripe/>`_ (handle `Stripe payments <https://stripe.com/>`_),
-* `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle `HelloAsso payments <https://www.helloasso.com/>`_),
-* `LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ (manage legal notices pages),
-
-The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts both community plugins and some official ones; each plugin website states who maintains it. See :doc:`how to add your plugin <plugins-tiers>` if you want yours to join.
+* :doc:`Paypal<paypal>`
+* `Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_
+* :doc:`Maps<maps>`
+* :doc:`Auto<auto>`
+* :doc:`Events<events>`
+* :doc:`OjectsLend<objectslend>`
+* :doc:`Activities<activities>`
+* `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_
+* `Stripe <https://galette-plugins.github.io/plugin-stripe/>`_
+* `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_
+* `LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_
 
 .. toctree::
    :hidden:

@@ -4,7 +4,7 @@
 Third party plugins community
 =============================
 
-A `Github organisation named galette-plugins <https://github.com/galette-plugins/>`_ has been created. Its goal is to centralize Galette plugins, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team. It hosts community plugins as well as some plugins maintained by the Galette team; each plugin website states who maintains it.
+A `Github organisation named galette-plugins <https://github.com/galette-plugins/>`_ has been created. Its goal is to centralize Galette plugins, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team.
 
 Prerequisites
 =============
