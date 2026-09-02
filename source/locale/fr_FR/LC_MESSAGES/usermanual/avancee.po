@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2022, 2023, 2024, 2025.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2022, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-02 13:16+0200\n"
-"PO-Revision-Date: 2025-02-12 10:00+0000\n"
+"PO-Revision-Date: 2026-09-02 13:43+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "advanced/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../usermanual/avancee.rst:5 33b1513477aa458eb68105b2fc1be815
 msgid "Experienced users"
@@ -159,14 +159,12 @@ msgid ""
 "<advanced_config>` page. The ``GALETTE_TIMEOUT`` constant still works and "
 "still wins over it."
 msgstr ""
+"La durée de vie de la session est un paramètre stocké dans la base de "
+"données, ``pref_session_timeout``, accessible depuis la page "
+":ref:`configuration avancée <advanced_config>`. La constante "
+"``GALETTE_TIMEOUT`` fonctionne toujours et gagne sur le paramètre en base."
 
 #: ../usermanual/avancee.rst:54 d8d5089029d042b29de646b208e7e917
-#, fuzzy
-#| msgid ""
-#| "Per default, Galette will create session with default lifetime duration "
-#| "(and it seems browsers acts differently in this case). You can anyways "
-#| "define a constant named ``GALETTE_TIMEOUT`` to change session lifetime "
-#| "using :ref:`behavior configuration <behavior>`:"
 msgid ""
 "Per default, Galette will create session with default lifetime duration (and "
 "it seems browsers act differently in this case). Set "
@@ -176,9 +174,9 @@ msgid ""
 msgstr ""
 "Par défaut, Galette va créer une session avec la valeur par défaut pour sa "
 "durée (et il semble que les navigateurs agissent différemment dans ce cas). "
-"Vous pouvez toutefois définir une constante nommée ``GALETTE_TIMEOUT`` pour "
-"changer la durée de la session en utilisant :ref:`la configuration du "
-"comportement <behavior>` :"
+"Définissez ``pref_session_timeout`` depuis la page :ref:`configuration "
+"avancée <advanced_config>` pour la modifier ; la valeur est un nombre de "
+"secondes, et ``0`` signifie jusqu'à la fermeture du navigateur."
 
 #: ../usermanual/avancee.rst:56 5bd66f95a3db4abb8e5eca7efb4b2a3c
 msgid ""
@@ -186,6 +184,10 @@ msgid ""
 "configuration <behavior>`, it takes precedence and the setting shows as "
 "*locked*. Remove it from that file to manage the lifetime from the page."
 msgstr ""
+"Si la constante ``GALETTE_TIMEOUT`` est toujours déclarée dans :ref:`la "
+"configuration du comportement <behavior>`, elle a priorité et le paramètre "
+"apparaît comme *verouillé*. Retirez-le de ce fichier pour la gérer depuis la "
+"page."
 
 #: ../usermanual/avancee.rst:62 9cd1386364494ea4a4cb7bb78db37d60
 msgid "Log IP addresses behind a proxy"
@@ -207,6 +209,11 @@ msgid ""
 "configuration <advanced_config>` page. The ``GALETTE_X_FORWARDED_FOR_INDEX`` "
 "constant still works and still wins over it."
 msgstr ""
+"La profondeur proxy est un paramètre stocké dans la base de données, "
+"``pref_x_forwarded_for_index``, accessible depuis la page "
+":ref:`configuration avancée <advanced_config>`. La constante "
+"``GALETTE_X_FORWARDED_FOR_INDEX`` fonctionne toujours et gagne sur le "
+"paramètre en base."
 
 #: ../usermanual/avancee.rst:70 2e6b990a609a4b5e86f9203be6b1314b
 msgid ""
@@ -216,6 +223,12 @@ msgid ""
 "**end** of the list, starting at ``1``. So ``1`` is what you want behind a "
 "single reverse proxy, and ``0`` - the default - disables the lookup entirely."
 msgstr ""
+"Pour corriger cela, définissez ``pref_x_forwarded_for_index`` sur la page "
+":ref:`configuration avancée <advanced_config>`. Chaque serveur proxy ajoute "
+"sa propre adresse à l'en-tête, et la valeur est la position à lire à partir "
+"de la **fin** de la liste, à partir de ``1``. Donc ``1`` est ce que vous "
+"voulez derrière un seul proxy inversé, et ``0`` - par défaut - désactive la "
+"recherche entièrement."
 
 #: ../usermanual/avancee.rst:74 792b54ca3c5940469106de305d1128ca
 msgid ""
@@ -223,6 +236,9 @@ msgid ""
 "proxy! Anyone could otherwise send an ``X-Forwarded-For`` header of their "
 "own and have it logged in place of their address."
 msgstr ""
+"Pour des raisons de sécurité, laissez-le à ``0`` si votre instance n`est pas "
+"derrière un proxy ! N'importe qui pourrait autrement envoyer un en-tête ``X-"
+"Forwarded-For`` de leur cru pour se connecter à leur adresse."
 
 #: ../usermanual/avancee.rst:76 03fd40ddb31b448eb5c9ea5b04b511c1
 msgid ""
@@ -230,6 +246,9 @@ msgid ""
 "in :ref:`behavior configuration <behavior>`, it takes precedence and the "
 "setting shows as *locked*."
 msgstr ""
+"Si la constante ``GALETTE_X_FORWARDED_FOR_INDEX`` est toujours déclarée dans "
+"la :ref:`configuration de comportement <behavior>`, elle a priorité et le "
+"paramètre apparaît comme *verouillé*."
 
 #: ../usermanual/avancee.rst:79 8a14d77d7ac94b29b345a32a9e67b3ac
 msgid "External stats"
@@ -431,10 +450,8 @@ msgstr ""
 "<dynamic_fields>`)."
 
 #: ../usermanual/avancee.rst:163 78835295568d49c186bf2f59f55237be
-#, fuzzy
-#| msgid "Behavior configuration"
 msgid "Advanced configuration"
-msgstr "Configuration du comportement"
+msgstr "Configuration avancée"
 
 #: ../usermanual/avancee.rst:167 d9e75e5ed1d8462f8e7dc0cdf1a2e87e
 msgid ""
@@ -443,6 +460,10 @@ msgid ""
 "including those that have no place on the form and those that used to be "
 "reachable only by editing a PHP file."
 msgstr ""
+"Le formulaire des préférences ne montre qu'un ensemble de réglages. Le menu "
+"**Configuration > Configuration avancée** les liste **toutes**,une ligne par "
+"paramètre, y-compris ceux qui ne sont pas présent sur le formulaire et ceux "
+"qui ne peuvent être édités que par la modification d'un fichier PHP."
 
 #: ../usermanual/avancee.rst:171 55e3811cf2ad4e3a8394dc3cca1a668f
 msgid ""
@@ -450,12 +471,14 @@ msgid ""
 "but a setting that is perfectly valid can still be wrong for your instance, "
 "and nothing asks you to confirm before storing it."
 msgstr ""
+"Cette page peut casser votre installation, soyez très prudent. Les valeurs "
+"sont vérifiées, mais un réglage parfaitement valide peut toujours être "
+"incorrect pour votre instance, et rien ne vous demande de confirmer avant de "
+"le stocker."
 
 #: ../usermanual/avancee.rst:173 ca6b52df34044ba9a5d115e5671ea30d
-#, fuzzy
-#| msgid "Behavior configuration"
 msgid "Galette advanced configuration"
-msgstr "Configuration du comportement"
+msgstr "Configuration avancée de Galette"
 
 #: ../usermanual/avancee.rst:178 93109b9907104945ae8cfa1c84c59489
 msgid ""
@@ -463,10 +486,15 @@ msgid ""
 "again before it opens. The confirmation is remembered for fifteen minutes; "
 "after that, or after a new login, it is asked again."
 msgstr ""
+"Seul le super administrateur peut afficher la page, et son mot de passe est "
+"demandé à nouveau avant qu'elle ne s'affiche. La confirmation est conservée "
+"pendant quinze minutes ; après cela, ou après un nouveau login, il est "
+"demandé de nouveau."
 
 #: ../usermanual/avancee.rst:180 62ef24c51a0c4e8386c22cb13de7c2c9
 msgid "Password asked before the advanced configuration page opens"
 msgstr ""
+"Mot de passe demandé avant l'ouverture de la page de configuration avancée"
 
 #: ../usermanual/avancee.rst:185 3d583a097a7345329a3f32cfa05e7c83
 msgid ""
@@ -475,6 +503,11 @@ msgid ""
 "the one Galette ships with. Nothing is submitted for the whole page, so a "
 "mistake on one row cannot take the others with it."
 msgstr ""
+"Les paramètres sont sauvegardés **un à la fois** : chaque ligne a son propre "
+"bouton **Enregistrer**, et un bouton **Remise à zéro** apparaît dès que la "
+"valeur diffère de celle avec laquelle Galette est livrée. Rien n'est soumis "
+"pour toute la page, donc une erreur sur une ligne n'en affectera pas "
+"d'autres."
 
 #: ../usermanual/avancee.rst:187 5f79495ed9484f8a94c4da532567ce46
 msgid ""
@@ -494,28 +527,38 @@ msgstr ""
 #: ../usermanual/avancee.rst:191 10ffaacf7bc04e528806126ca3844c9f
 msgid "Each row carries a status, also recalled in the page legend:"
 msgstr ""
+"Chaque ligne comporte un statut, également rappelé dans la légende de la page"
+" :"
 
 #: ../usermanual/avancee.rst:193 3d1e86296adc4b2ca212bfc0daa5c05f
 msgid "**default**: never changed, the value Galette ships with,"
-msgstr ""
+msgstr "**par défaut** : jamais changé, la valeur que Galette embarque,"
 
 #: ../usermanual/avancee.rst:194 edc39da806ce4eb6a7392cd02adcfae2
 msgid ""
 "**modified**: changed from the default, here or from the settings form. It "
 "can be reset,"
 msgstr ""
+"**modifié** : modifié par rapport au défaut, ici ou à partir du formulaire "
+"de paramètres. Il peut être réinitialisé,"
 
 #: ../usermanual/avancee.rst:195 e3fdfeaf9c3c49efa806d2610479e858
 msgid ""
 "**read-only**: Galette maintains this value itself, such as a generated "
 "identifier or a date it records. It is shown for information only,"
 msgstr ""
+"**lecture seule** : Galette maintient cette valeur elle-même, comme un "
+"identifiant généré ou une date qu'elle enregistre. Indiqué pour information "
+"seulement,"
 
 #: ../usermanual/avancee.rst:196 4dbbd32683f04d4b87026248c2ac1b79
 msgid ""
 "**secret**: a password or a token. Its value is never displayed, only "
 "whether one is set, and it is changed from the settings form,"
 msgstr ""
+"**secret** : mot de passe ou jeton. Sa valeur n'est jamais affichée, juste "
+"le fait qu'elle soit définie, et est modifiée à partir du formulaire des "
+"préférences,"
 
 #: ../usermanual/avancee.rst:197 e1d5d30db025477eaf839baad2d26e5b
 msgid ""
@@ -523,16 +566,22 @@ msgid ""
 "precedence over the stored value. Remove it from that file to manage the "
 "setting from here,"
 msgstr ""
+"**verrouillé** : une constante déclarée dans :ref:`behavior.inc.php "
+"<behavior>` a préséance sur la valeur stockée. Retirez-le de ce fichier pour "
+"gérer le réglage d'ici,"
 
 #: ../usermanual/avancee.rst:198 09187216683c48909e0741c942b8d6e1
 msgid ""
 "**unknown**: a row found in database that Galette does not describe. It may "
 "come from an older version or from a plugin. It is displayed, never edited."
 msgstr ""
+"**inconnu** : une ligne trouvée dans la base de données que Galette ne "
+"décrit pas. Il peut venir d'une version plus ancienne ou d'un plugin. Il est "
+"affiché, jamais édité."
 
 #: ../usermanual/avancee.rst:200 987b47dbfbfa445cb105566bdcb149e3
 msgid "The statuses a setting can carry"
-msgstr ""
+msgstr "Les statuts qu'un paramètre peut porter"
 
 #: ../usermanual/avancee.rst:205 0952d8766ee44245a3ef22d713c7f8da
 msgid ""
@@ -544,7 +593,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:207 4a38871ae2434f76927467c5d148b622
 msgid "A locked setting, and an editable one"
-msgstr ""
+msgstr "Un réglage verrouillé, et un modifiable"
 
 #: ../usermanual/avancee.rst:212 96d45064baf64439aedc5194b9eb3223
 msgid ""
@@ -557,7 +606,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:214 3a84743a4cce427abc52afb5e43190da
 msgid "Constants behavior.inc.php understands"
-msgstr ""
+msgstr "Constantes que behavior.inc.php comprend"
 
 #: ../usermanual/avancee.rst:222 5d707ac2b856453ea04a7355e0caeede
 msgid "Galette modes"
@@ -662,17 +711,16 @@ msgid ""
 msgstr ""
 
 #: ../usermanual/avancee.rst:267 86a868f0acb5437aadd3498d2d43f50d
-#, fuzzy
-#| msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
 msgid "``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,"
-msgstr "`GALETTE_DEBUG` : :ref:`voir Galette debug <debug>` ;"
+msgstr ""
+"``GALETTE_DEBUG``: activer le mode debug, :ref:`voir Galette debug <debug>`,"
 
 #: ../usermanual/avancee.rst:268 7c99bfe9eed94e9099e47bfe85bc99ae
-#, fuzzy
-#| msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
 msgid ""
 "``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,"
-msgstr "`GALETTE_DEBUG` : :ref:`voir Galette debug <debug>` ;"
+msgstr ""
+"``GALETTE_MODE`` mode de l'instance, : :ref:`voir les modes de Galette "
+"<galettemodes>`  ;"
 
 #: ../usermanual/avancee.rst:269 cbe72252730247e6a4bc221d6bb99db6
 msgid ""
@@ -687,16 +735,21 @@ msgid ""
 "galette_sql.log``. Only the existence of the constant counts, so defining it "
 "to ``false`` still enables the dump,"
 msgstr ""
+"``GALETTE_SQL_DEBUG`` : écris chaque requête SQL dans ``data/logs/"
+"galette_sql.log``. La seule existence de la constante compte, la définir à "
+"``false`` active le dump,"
 
 #: ../usermanual/avancee.rst:271 8de2079b1bc84481a90f6e6182c69f97
 msgid ""
 "``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. "
 "They only apply in debug mode."
 msgstr ""
+"``GALETTE_FEATURE_FLAGS`` : fonctionnalités de développement à activer, en "
+"tableau. Applicable en mode debug uniquement."
 
 #: ../usermanual/avancee.rst:274 a6ccf24919ba463dab7071b80733c74d
 msgid "Settings that moved"
-msgstr ""
+msgstr "Paramètres qui ont été déplacés"
 
 #: ../usermanual/avancee.rst:278 1403f21636854b6595357df321e04f38
 msgid ""
@@ -706,7 +759,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:280 abaa303be12d48f5bc312759ef1be4e3
 msgid "``GALETTE_URI`` became ``pref_galette_url``,"
-msgstr ""
+msgstr "``GALETTE_URI`` est devenu ``pref_galette_url``,"
 
 #: ../usermanual/avancee.rst:281 a4cadc8f960a4420b20908781305c5fa
 msgid ""
@@ -714,10 +767,12 @@ msgid ""
 "``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a "
 "proxy <proxy_ip>`,"
 msgstr ""
+"``GALETTE_X_FORWARDED_FOR_INDEX`` est devenu ``pref_x_forwarded_for_index``, "
+":ref:`voir log des adresses IP derrière un proxy <proxy_ip>`,"
 
 #: ../usermanual/avancee.rst:282 c5274abed46d4812b6294fe699c7a58b
 msgid "``GALETTE_TIMEOUT`` became ``pref_session_timeout``."
-msgstr ""
+msgstr "``GALETTE_TIMEOUT`` est devenu ``pref_session_timeout``."
 
 #: ../usermanual/avancee.rst:284 e0c17a2712014de182a79bb63ac242df
 msgid ""
