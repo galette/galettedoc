@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-02 14:12+0200\n"
-"PO-Revision-Date: 2026-09-02 12:12+0000\n"
+"PO-Revision-Date: 2026-09-02 13:43+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-maps/fr/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../plugins/maps.rst:51 d6680dce7c894a39b69627b90dcca50c
 msgid "Several providers are proposed:"
-msgstr ""
+msgstr "Plusieurs fournisseurs sont proposés :"
 
 #: ../plugins/maps.rst:53 ef655d8d757a49a2b277f1ac9318fe77
 msgid ""
@@ -105,32 +105,44 @@ msgid ""
 "that lets member markers stand out. No account, no API key, and the service "
 "can be `self-hosted <https://openfreemap.org>`_."
 msgstr ""
+"**OpenFreeMap, gris clair** — par défaut. Les tuiles vectorisées, dans un "
+"gris discret qui permet aux marqueurs membres de se démarquer. Aucun compte, "
+"aucune clé API, et le service peut être `auto-hébergé <https://"
+"openfreemap.org>`_."
 
 #: ../plugins/maps.rst:56 579d576f278f4233ad519b25b5dfd8cf
 msgid "**OpenFreeMap, colours** — the same service, rendered in full colour."
-msgstr ""
+msgstr "**OpenFreeMap, couleurs** — le même service, rendu en couleur."
 
 #: ../plugins/maps.rst:57 e315764389f1416db919ad2b8f0569ee
 msgid ""
 "**OpenStreetMap** — the standard rendering, from the OpenStreetMap "
 "Foundation servers."
 msgstr ""
+"**OpenStreetMap** — le rendu standard, depuis serveurs de la fondation "
+"OpenStreetMap."
 
 #: ../plugins/maps.rst:59 7d6f6030050f4c94b78d867472a5c10d
 msgid ""
 "**OpenStreetMap France** and **Humanitarian OSM Team** — hosted by the OSM-"
 "FR association; the second one gives more weight to roads and facilities."
 msgstr ""
+"**OpenStreetMap France** et **Équipe Humanitaire OSM** - hébergés par "
+"l'association OSM-FR ; le second donne plus de poids aux routes et aux "
+"installations."
 
 #: ../plugins/maps.rst:61 1c81216774014767ac4732471a46f10b
 msgid "**OpenStreetMap Germany** — German rendering, favouring local names."
 msgstr ""
+"**OpenStreetMap Allemagne** — Le rendu allemand, en faveur des noms locaux."
 
 #: ../plugins/maps.rst:62 e26c9b03ef824a9fb5a48a8d41cbf143
 msgid ""
 "**Esri, light grey** — a very light grey rendering, close to what the plugin "
 "displayed before version 2.3.0."
 msgstr ""
+"**Esri, gris clair** — un rendu gris très clair, proche de ce que le plugin "
+"affichait avant la version 2.3.0."
 
 #: ../plugins/maps.rst:66 397d90126e9f4a2992f84d06ee20b347
 msgid "Own values"
@@ -142,6 +154,9 @@ msgid ""
 "associations or by volunteers, and they set conditions on the traffic they "
 "accept."
 msgstr ""
+"Consultez la politique d'utilisation du fournisseur que vous choisissez. La "
+"plupart d'entre eux sont gérés par des associations ou des bénévoles, et ils "
+"établissent des conditions sur le trafic qu'ils acceptent."
 
 #: ../plugins/maps.rst:74 a21c390d1e7d4fd3aa84662f3d9c6cfe
 msgid ""
@@ -149,18 +164,26 @@ msgid ""
 "with an address of your own — a provider that is not listed, or your own "
 "tile server."
 msgstr ""
+"La dernière entrée de la liste, « Valeurs propres », remplace les "
+"fournisseurs proposés par votre propre adresse — un fournisseur qui n'est "
+"pas répertorié, ou votre propre serveur de tuiles."
 
 #: ../plugins/maps.rst:81 ca1f0287ad194d8c9084115685d32be0
 msgid ""
 "**Vector tiles** tells the plugin what it is being given: a MapLibre style "
 "when ticked, classic raster tiles when not."
 msgstr ""
+"**Tuiles vectorisées** configure le plugin pour ce qu'il va recevoir : un "
+"style MapLibre si coché, des tuiles classiques sinon."
 
 #: ../plugins/maps.rst:83 18311bf1ae614a079dfb005a7ab046f3
 msgid ""
 "**Address** is the style address for vector tiles, and the tiles address for "
 "raster ones, such as ``https://tile.openstreetmap.org/{z}/{x}/{y}.png``."
 msgstr ""
+"**Adresse** est l'adresse de style pour les tuiles vectorisées, et l'adresse "
+"des tuiles classiques, comme ``https://tile.openstreetmap.org/{z}/{x}/{y}"
+".png``."
 
 #: ../plugins/maps.rst:85 bc0d80c29fc242dfb5f6639afe778b47
 msgid ""
@@ -168,18 +191,26 @@ msgid ""
 "not a formality: data licences make it mandatory. A vector style usually "
 "carries its own credit, and the field can then be left empty."
 msgstr ""
+"**Attribution** est le crédit demandé par le fournisseur. Le HTML est "
+"autorisé. Ce n'est pas une formalité : les licences le rendent obligatoire. "
+"Un style vectoriel porte généralement son propre crédit, et le champ peut "
+"alors être laissé vide."
 
 #: ../plugins/maps.rst:88 dbe54582517546028d592776c524e0cd
 msgid ""
 "**Maximum zoom** is the deepest zoom level the provider serves. Going past "
 "it displays empty tiles."
 msgstr ""
+"**Zoom maximal** est le niveau de zoom le plus profond que le fournisseur "
+"serve. Après ça il affiche des tuiles vides."
 
 #: ../plugins/maps.rst:90 a460cd522bd7446186a3dac731cd91dc
 msgid ""
 "**Subdomains** lists the letters the ``{s}`` token of the address is "
 "replaced with, for instance ``abc``. Raster tiles only."
 msgstr ""
+"**Les sous-domaines** Lettres par lesquelles le jeton ``{s}`` dans l'adresse "
+"est remplacé, telles que abc. Tuiles classiques uniquement."
 
 #: ../plugins/maps.rst:94 753c3bcf36c141cc9c30d49db449cc5c
 msgid "Plugin usage"
