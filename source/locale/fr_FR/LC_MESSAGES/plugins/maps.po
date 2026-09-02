@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-02 14:12+0200\n"
+"POT-Creation-Date: 2026-09-02 16:55+0200\n"
 "PO-Revision-Date: 2026-09-02 13:43+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
@@ -90,16 +90,14 @@ msgstr "Fond de carte"
 
 #: ../plugins/maps.rst:44 fab12b4243d34cc99bc8d8cce7efeea8
 msgid ""
-"The provider is a an administrator changes it from `Maps settings`, in the "
-"`Configuration` menu, and the change applies immediately, with no upgrade to "
-"wait for."
+"The provider is a setting from `Maps settings`, in the `Configuration` menu."
 msgstr ""
 
-#: ../plugins/maps.rst:51 d6680dce7c894a39b69627b90dcca50c
+#: ../plugins/maps.rst:50 d6680dce7c894a39b69627b90dcca50c
 msgid "Several providers are proposed:"
 msgstr "Plusieurs fournisseurs sont proposés :"
 
-#: ../plugins/maps.rst:53 ef655d8d757a49a2b277f1ac9318fe77
+#: ../plugins/maps.rst:52 ef655d8d757a49a2b277f1ac9318fe77
 msgid ""
 "**OpenFreeMap, light grey** — the default. Vector tiles, in a discreet grey "
 "that lets member markers stand out. No account, no API key, and the service "
@@ -110,11 +108,11 @@ msgstr ""
 "aucune clé API, et le service peut être `auto-hébergé <https://"
 "openfreemap.org>`_."
 
-#: ../plugins/maps.rst:56 579d576f278f4233ad519b25b5dfd8cf
+#: ../plugins/maps.rst:55 579d576f278f4233ad519b25b5dfd8cf
 msgid "**OpenFreeMap, colours** — the same service, rendered in full colour."
 msgstr "**OpenFreeMap, couleurs** — le même service, rendu en couleur."
 
-#: ../plugins/maps.rst:57 e315764389f1416db919ad2b8f0569ee
+#: ../plugins/maps.rst:56 e315764389f1416db919ad2b8f0569ee
 msgid ""
 "**OpenStreetMap** — the standard rendering, from the OpenStreetMap "
 "Foundation servers."
@@ -122,7 +120,7 @@ msgstr ""
 "**OpenStreetMap** — le rendu standard, depuis serveurs de la fondation "
 "OpenStreetMap."
 
-#: ../plugins/maps.rst:59 7d6f6030050f4c94b78d867472a5c10d
+#: ../plugins/maps.rst:58 7d6f6030050f4c94b78d867472a5c10d
 msgid ""
 "**OpenStreetMap France** and **Humanitarian OSM Team** — hosted by the OSM-"
 "FR association; the second one gives more weight to roads and facilities."
@@ -131,24 +129,30 @@ msgstr ""
 "l'association OSM-FR ; le second donne plus de poids aux routes et aux "
 "installations."
 
-#: ../plugins/maps.rst:61 1c81216774014767ac4732471a46f10b
+#: ../plugins/maps.rst:60 1c81216774014767ac4732471a46f10b
 msgid "**OpenStreetMap Germany** — German rendering, favouring local names."
 msgstr ""
 "**OpenStreetMap Allemagne** — Le rendu allemand, en faveur des noms locaux."
 
-#: ../plugins/maps.rst:62 e26c9b03ef824a9fb5a48a8d41cbf143
+#: ../plugins/maps.rst:61 e26c9b03ef824a9fb5a48a8d41cbf143
+#, fuzzy
+#| msgid ""
+#| "**Esri, light grey** — a very light grey rendering, close to what the "
+#| "plugin displayed before version 2.3.0."
 msgid ""
 "**Esri, light grey** — a very light grey rendering, close to what the plugin "
-"displayed before version 2.3.0."
+"displayed before."
 msgstr ""
 "**Esri, gris clair** — un rendu gris très clair, proche de ce que le plugin "
 "affichait avant la version 2.3.0."
 
-#: ../plugins/maps.rst:66 397d90126e9f4a2992f84d06ee20b347
-msgid "Own values"
+#: ../plugins/maps.rst:65 397d90126e9f4a2992f84d06ee20b347
+#, fuzzy
+#| msgid "Own values"
+msgid "Your own values"
 msgstr "Valeurs propres"
 
-#: ../plugins/maps.rst:70 d958d48ba8cb407da1d3d70911d4f6de
+#: ../plugins/maps.rst:69 d958d48ba8cb407da1d3d70911d4f6de
 msgid ""
 "Check the usage policy of the provider you choose. Most of them are run by "
 "associations or by volunteers, and they set conditions on the traffic they "
@@ -158,17 +162,22 @@ msgstr ""
 "plupart d'entre eux sont gérés par des associations ou des bénévoles, et ils "
 "établissent des conditions sur le trafic qu'ils acceptent."
 
-#: ../plugins/maps.rst:74 a21c390d1e7d4fd3aa84662f3d9c6cfe
+#: ../plugins/maps.rst:73 a21c390d1e7d4fd3aa84662f3d9c6cfe
+#, fuzzy
+#| msgid ""
+#| "The last entry of the list, `Own values`, replaces the proposed providers "
+#| "with an address of your own — a provider that is not listed, or your own "
+#| "tile server."
 msgid ""
-"The last entry of the list, `Own values`, replaces the proposed providers "
-"with an address of your own — a provider that is not listed, or your own "
-"tile server."
+"The last entry of the list, `Your own values`, replaces the proposed "
+"providers with an address of your own — a provider that is not listed, or "
+"your own tile server."
 msgstr ""
 "La dernière entrée de la liste, « Valeurs propres », remplace les "
 "fournisseurs proposés par votre propre adresse — un fournisseur qui n'est "
 "pas répertorié, ou votre propre serveur de tuiles."
 
-#: ../plugins/maps.rst:81 ca1f0287ad194d8c9084115685d32be0
+#: ../plugins/maps.rst:80 ca1f0287ad194d8c9084115685d32be0
 msgid ""
 "**Vector tiles** tells the plugin what it is being given: a MapLibre style "
 "when ticked, classic raster tiles when not."
@@ -176,27 +185,31 @@ msgstr ""
 "**Tuiles vectorisées** configure le plugin pour ce qu'il va recevoir : un "
 "style MapLibre si coché, des tuiles classiques sinon."
 
-#: ../plugins/maps.rst:83 18311bf1ae614a079dfb005a7ab046f3
+#: ../plugins/maps.rst:82 18311bf1ae614a079dfb005a7ab046f3
 msgid ""
 "**Address** is the style address for vector tiles, and the tiles address for "
 "raster ones, such as ``https://tile.openstreetmap.org/{z}/{x}/{y}.png``."
 msgstr ""
 "**Adresse** est l'adresse de style pour les tuiles vectorisées, et l'adresse "
-"des tuiles classiques, comme ``https://tile.openstreetmap.org/{z}/{x}/{y}"
-".png``."
+"des tuiles classiques, comme ``https://tile.openstreetmap.org/{z}/{x}/"
+"{y}.png``."
 
-#: ../plugins/maps.rst:85 bc0d80c29fc242dfb5f6639afe778b47
+#: ../plugins/maps.rst:84 bc0d80c29fc242dfb5f6639afe778b47
+#, fuzzy
+#| msgid ""
+#| "**Attribution** is the credit the provider requires. HTML is allowed. It "
+#| "is not a formality: data licences make it mandatory. A vector style "
+#| "usually carries its own credit, and the field can then be left empty."
 msgid ""
 "**Attribution** is the credit the provider requires. HTML is allowed. It is "
-"not a formality: data licences make it mandatory. A vector style usually "
-"carries its own credit, and the field can then be left empty."
+"not a formality: data licences make it mandatory."
 msgstr ""
 "**Attribution** est le crédit demandé par le fournisseur. Le HTML est "
 "autorisé. Ce n'est pas une formalité : les licences le rendent obligatoire. "
 "Un style vectoriel porte généralement son propre crédit, et le champ peut "
 "alors être laissé vide."
 
-#: ../plugins/maps.rst:88 dbe54582517546028d592776c524e0cd
+#: ../plugins/maps.rst:86 dbe54582517546028d592776c524e0cd
 msgid ""
 "**Maximum zoom** is the deepest zoom level the provider serves. Going past "
 "it displays empty tiles."
@@ -204,7 +217,7 @@ msgstr ""
 "**Zoom maximal** est le niveau de zoom le plus profond que le fournisseur "
 "serve. Après ça il affiche des tuiles vides."
 
-#: ../plugins/maps.rst:90 a460cd522bd7446186a3dac731cd91dc
+#: ../plugins/maps.rst:88 a460cd522bd7446186a3dac731cd91dc
 msgid ""
 "**Subdomains** lists the letters the ``{s}`` token of the address is "
 "replaced with, for instance ``abc``. Raster tiles only."
@@ -212,11 +225,11 @@ msgstr ""
 "**Les sous-domaines** Lettres par lesquelles le jeton ``{s}`` dans l'adresse "
 "est remplacé, telles que abc. Tuiles classiques uniquement."
 
-#: ../plugins/maps.rst:94 753c3bcf36c141cc9c30d49db449cc5c
+#: ../plugins/maps.rst:92 753c3bcf36c141cc9c30d49db449cc5c
 msgid "Plugin usage"
 msgstr "Utilisation du plugin"
 
-#: ../plugins/maps.rst:96 dbb7a57fa9544d7fbd64ef9f24c42b2f
+#: ../plugins/maps.rst:94 dbb7a57fa9544d7fbd64ef9f24c42b2f
 msgid ""
 "When the plugin is installed, a group `Maps` is added to Galette menu when a "
 "member is logged in, which contains `My location` entry. This page allow "
@@ -226,7 +239,7 @@ msgstr ""
 "Galette lorsqu'un adhérent est connecté, qui contient l'entrée `Ma "
 "localisation`. Cette page permet à l'adhérent d'enregistrer sa localisation."
 
-#: ../plugins/maps.rst:98 f83b03ccea9d4820ae440bfd9574fe6f
+#: ../plugins/maps.rst:96 f83b03ccea9d4820ae440bfd9574fe6f
 msgid ""
 "A `Geolocalize` button is also added when displaying a member, that allows "
 "administrators to set member coordinates."
@@ -235,7 +248,7 @@ msgstr ""
 "adhérent, qui permet aux administrateurs de définir les coordonnées de "
 "l'adhérent."
 
-#: ../plugins/maps.rst:100 1a4fe2a8986c446489421d6a7b0e5af9
+#: ../plugins/maps.rst:98 1a4fe2a8986c446489421d6a7b0e5af9
 msgid ""
 "Also, a `Map` entry is added in public pages list, that displays "
 "geolocalized members that are up to date. Administrators and staff members "
@@ -247,7 +260,7 @@ msgstr ""
 "membres du bureau verront tous les adhérents, alors que les simples "
 "adhérents et les visiteurs verront uniquement ceux à jour et publics."
 
-#: ../plugins/maps.rst:102 b80f0567d12b4e9a8692d5f50cc9d3d1
+#: ../plugins/maps.rst:100 b80f0567d12b4e9a8692d5f50cc9d3d1
 msgid ""
 "First of all, members will enter their location coordinates. Several options "
 "are provided:"
@@ -255,7 +268,7 @@ msgstr ""
 "Tout d'abord, les adhérents entreront leurs coordonnées géographiques. "
 "Plusieurs options sont fournies :"
 
-#: ../plugins/maps.rst:104 8dd95afb56774e0c9424d7279abfc641
+#: ../plugins/maps.rst:102 8dd95afb56774e0c9424d7279abfc641
 msgid ""
 "if town has been set in member information, a list of possible places will "
 "be proposed (via `Nominatim online service <https://"
@@ -265,7 +278,7 @@ msgstr ""
 "localisations possibles sera proposée (via `le service en ligne Nominatim "
 "<https://nominatim.openstreetmap.org>`_),"
 
-#: ../plugins/maps.rst:105 2f0ef69f61714a87be9ae858f3dd661c
+#: ../plugins/maps.rst:103 2f0ef69f61714a87be9ae858f3dd661c
 msgid ""
 "additionally, a search zone (provided from `OpenStreetMap <https://"
 "nominatim.openstreetmap.org/>`_),"
@@ -273,13 +286,13 @@ msgstr ""
 "en complément, une zone de recherche (fournie depuis `OpenStreetMap <https://"
 "nominatim.openstreetmap.org/>`_),"
 
-#: ../plugins/maps.rst:106 d631c33ad3a444008e642727a649d8c8
+#: ../plugins/maps.rst:104 d631c33ad3a444008e642727a649d8c8
 msgid "and also a geolocalize button using browser capacities."
 msgstr ""
 "et également une bouton de géolocalisation qui utilise les possibilités du "
 "navigateur."
 
-#: ../plugins/maps.rst:108 26c3751faa9e481a92364e3fa4c9c836
+#: ../plugins/maps.rst:106 26c3751faa9e481a92364e3fa4c9c836
 msgid ""
 "The search zone can be used when saving members location, and when "
 "displaying the maps."
@@ -287,7 +300,7 @@ msgstr ""
 "La zone de recherche peut être utilisée lorsque vous renseignez la "
 "localisation d'un adhérent, et aussi à l'affichage des cartes."
 
-#: ../plugins/maps.rst:114 438b358e476b4feb8c1faffe2241c5a3
+#: ../plugins/maps.rst:112 438b358e476b4feb8c1faffe2241c5a3
 msgid ""
 "A member can define its location (with the precision he wants) on the map "
 "selecting one of the propositions:"
@@ -295,14 +308,14 @@ msgstr ""
 "Un adhérent peut définir a propre localisation (avec la précision qu'il "
 "souhaite) sur la carte en sélectionnant une des propositions :"
 
-#: ../plugins/maps.rst:120 c992a4fa34474737b609a73b224dcc01
+#: ../plugins/maps.rst:118 c992a4fa34474737b609a73b224dcc01
 msgid ""
 "Using the geolocalization button will define its position from the browser:"
 msgstr ""
 "Utiliser le bouton géolocalisation déterminera sa position depuis son "
 "navigateur :"
 
-#: ../plugins/maps.rst:126 d796b6e909064bd0add6717ca0dadbff
+#: ../plugins/maps.rst:124 d796b6e909064bd0add6717ca0dadbff
 msgid "Then, member location is displayed on map, and can be removed:"
 msgstr ""
 "Alors, la localisation de l'adhérent est affichée sur la carte, et peut être "
