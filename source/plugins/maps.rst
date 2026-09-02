@@ -41,12 +41,7 @@ Background map
 
 .. versionadded:: 2.3.0
 
-Map tiles are served by an outside provider, and a provider can change its terms
-overnight. That is what happened to the tiles used up to version 2.2.1: they are
-still delivered, but now carry an `API KEY REQUIRED` watermark across the map.
-
-The provider is therefore a setting rather than something written in the code. An
-administrator changes it from `Maps settings`, in the `Configuration` menu, and
+The provider is a an administrator changes it from `Maps settings`, in the `Configuration` menu, and
 the change applies immediately, with no upgrade to wait for.
 
 .. image:: ../_styles/static/images/plugin-maps/tiles_settings.png
@@ -67,14 +62,14 @@ Several providers are proposed:
 * **Esri, light grey** — a very light grey rendering, close to what the plugin
   displayed before version 2.3.0.
 
-.. note::
-
-   Vector tiles need a browser supporting WebGL 2. Where it is missing, the map
-   falls back to OpenStreetMap raster tiles on its own, so it is never left
-   blank.
-
 Own values
 ----------
+
+.. warning::
+
+   Check the usage policy of the provider you choose. Most of them are run by
+   associations or by volunteers, and they set conditions on the traffic they
+   accept.
 
 The last entry of the list, `Own values`, replaces the proposed providers with
 an address of your own — a provider that is not listed, or your own tile server.
@@ -94,12 +89,6 @@ an address of your own — a provider that is not listed, or your own tile serve
   displays empty tiles.
 * **Subdomains** lists the letters the ``{s}`` token of the address is replaced
   with, for instance ``abc``. Raster tiles only.
-
-.. warning::
-
-   Check the usage policy of the provider you choose. Most of them are run by
-   associations or by volunteers, and they set conditions on the traffic they
-   accept.
 
 Plugin usage
 ============
