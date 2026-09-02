@@ -41,8 +41,7 @@ Background map
 
 .. versionadded:: 2.3.0
 
-The provider is a an administrator changes it from `Maps settings`, in the `Configuration` menu, and
-the change applies immediately, with no upgrade to wait for.
+The provider is a setting from `Maps settings`, in the `Configuration` menu.
 
 .. image:: ../_styles/static/images/plugin-maps/tiles_settings.png
    :scale: 50%
@@ -60,10 +59,10 @@ Several providers are proposed:
   association; the second one gives more weight to roads and facilities.
 * **OpenStreetMap Germany** — German rendering, favouring local names.
 * **Esri, light grey** — a very light grey rendering, close to what the plugin
-  displayed before version 2.3.0.
+  displayed before.
 
-Own values
-----------
+Your own values
+---------------
 
 .. warning::
 
@@ -71,7 +70,7 @@ Own values
    associations or by volunteers, and they set conditions on the traffic they
    accept.
 
-The last entry of the list, `Own values`, replaces the proposed providers with
+The last entry of the list, `Your own values`, replaces the proposed providers with
 an address of your own — a provider that is not listed, or your own tile server.
 
 .. image:: ../_styles/static/images/plugin-maps/tiles_custom.png
@@ -83,8 +82,7 @@ an address of your own — a provider that is not listed, or your own tile serve
 * **Address** is the style address for vector tiles, and the tiles address for
   raster ones, such as ``https://tile.openstreetmap.org/{z}/{x}/{y}.png``.
 * **Attribution** is the credit the provider requires. HTML is allowed. It is not
-  a formality: data licences make it mandatory. A vector style usually carries
-  its own credit, and the field can then be left empty.
+  a formality: data licences make it mandatory.
 * **Maximum zoom** is the deepest zoom level the provider serves. Going past it
   displays empty tiles.
 * **Subdomains** lists the letters the ``{s}`` token of the address is replaced
