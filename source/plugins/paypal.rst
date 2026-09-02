@@ -43,7 +43,7 @@ First of all, download the plugin:
    :target: https://galette.eu/download/plugins/galette-plugin-paypal-2.2.1.tar.bz2
    :alt: Get latest Paypal plugin!
 
-.. image:: https://img.shields.io/badge/Nighly-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+.. image:: https://img.shields.io/badge/Nightly-Paypal-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
    :target: https://galette.eu/download/plugins/galette-plugin-paypal-dev.tar.bz2
    :alt: Get Paypal plugin nightly build!
 
@@ -54,7 +54,7 @@ For example, under linux (replacing `{url}` and `{version}` with correct values)
 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
-   $ tar xjvf galette-plugin-Paypal-{version}.tar.bz2
+   $ tar xjvf galette-plugin-paypal-{version}.tar.bz2
 
 Database initialisation
 =======================

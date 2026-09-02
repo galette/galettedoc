@@ -17,7 +17,7 @@ First of all, download the plugin:
    :target: https://galette.eu/download/plugins/galette-plugin-fullcard-2.2.1.tar.bz2
    :alt: Get latest Fullcard plugin!
 
-.. image:: https://img.shields.io/badge/Nighly-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+.. image:: https://img.shields.io/badge/Nightly-Fullcard-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
    :target: https://galette.eu/download/plugins/galette-plugin-fullcard-dev.tar.bz2
    :alt: Get Fullcard plugin nightly build!
 

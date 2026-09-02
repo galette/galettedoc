@@ -12,11 +12,11 @@ Installation
 
 First of all, download the plugin:
 
-.. image:: https://img.shields.io/badge/1.1.0-Activities-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/plugins/galette-plugin-activities-1.1.0.tar.bz2
+.. image:: https://img.shields.io/badge/1.1.1-Activities-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/plugins/galette-plugin-activities-1.1.1.tar.bz2
    :alt: Get latest Activities plugin!
 
-.. image:: https://img.shields.io/badge/Nighly-Activities-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+.. image:: https://img.shields.io/badge/Nightly-Activities-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
    :target: https://galette.eu/download/plugins/galette-plugin-activities-dev.tar.bz2
    :alt: Get Activities plugin nightly build!
 
@@ -27,7 +27,7 @@ For example, under linux (replacing `{url}` and `{version}` with correct values)
 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
-   $ tar xjvf galette-plugin-activities-{version}.tar.gz
+   $ tar xjvf galette-plugin-activities-{version}.tar.bz2
 
 Database initialisation
 =======================

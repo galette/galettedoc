@@ -16,7 +16,7 @@ First of all, download the plugin:
    :target: https://galette.eu/download/plugins/galette-plugin-maps-2.2.1.tar.bz2
    :alt: Get latest Maps plugin!
 
-.. image:: https://img.shields.io/badge/Nighly-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+.. image:: https://img.shields.io/badge/Nightly-Maps-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
    :target: https://galette.eu/download/plugins/galette-plugin-maps-dev.tar.bz2
    :alt: Get Maps plugin nightly build!
 
@@ -27,7 +27,7 @@ For example, under linux (replacing `{url}` and `{version}` with correct values)
 
    $ cd /var/www/html/galette/plugins
    $ wget {url}
-   $ tar xjvf galette-plugin-maps-{version}.tar.gz
+   $ tar xjvf galette-plugin-maps-{version}.tar.bz2
 
 Database initialisation
 =======================

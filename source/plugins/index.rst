@@ -27,7 +27,7 @@ The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts 
 * :doc:`Maps<maps>`
 * :doc:`Auto<auto>`
 * :doc:`Events<events>`
-* :doc:`OjectsLend<objectslend>`
+* :doc:`ObjectsLend<objectslend>`
 * :doc:`Activities<activities>`
 * `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_
 * `Stripe <https://galette-plugins.github.io/plugin-stripe/>`_
