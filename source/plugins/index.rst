@@ -24,8 +24,8 @@ The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts 
 
 * :doc:`Paypal<paypal>`
 * `Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_
-* :doc:`Maps<maps>`
-* :doc:`Auto<auto>`
+* `Maps <https://galette-plugins.github.io/plugin-maps/>`_
+* `Auto <https://galette-plugins.github.io/plugin-auto/>`_
 * :doc:`Events<events>`
 * :doc:`ObjectsLend<objectslend>`
 * :doc:`Activities<activities>`
