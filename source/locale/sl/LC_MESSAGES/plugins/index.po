@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-02 13:16+0200\n"
 "PO-Revision-Date: 2026-07-16 06:23+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -46,85 +46,105 @@ msgstr ""
 "Vsak vtičnik je preprost imenik v ``{galette}/plugins/``, nato pa glejte "
 "dokumentacijo vtičnika, da ga namestite."
 
-#: ../plugins/index.rst:19 17c41c6c21694038bedfc8e9e178686b
-msgid ""
-"You can disable a plugin creating a ``_disabled`` file in its directory."
+#: ../plugins/index.rst:21 5483ccea566944c599ae758d421fd0e5
+msgid "Existing plugins"
 msgstr ""
-"Vtičnik lahko onemogočite tako, da v njegovem imeniku ustvarite datoteko "
-"``_disabled``."
 
-#: ../plugins/index.rst:23 5483ccea566944c599ae758d421fd0e5
-msgid "Official Plugins"
-msgstr "Uradni vtičniki"
-
-#: ../plugins/index.rst:25 0a6953be807c4400b0d328d583f7ab12
+#: ../plugins/index.rst:23 856bedd84f9a48a9bdacb389cdf4a971
+#, fuzzy
+#| msgid ""
+#| "A `Github community <https://github.com/galette-plugins/>`_ has been "
+#| "created to :doc:`manage third party plugins <plugins-tiers>`, if you want "
+#| "to add your plugin."
 msgid ""
-"Official plugins are developed and maintained by the Galette team. Available "
-"official plugins are:"
-msgstr ""
-"Uradne vtičnike razvija in vzdržuje ekipa Galette. Razpoložljivi uradni "
-"vtičniki so:"
-
-#: ../plugins/index.rst:40 85134478955f490288afd16d48644d3c
-msgid "Third party plugins"
-msgstr "Vtičniki tretjih oseb"
-
-#: ../plugins/index.rst:42 a060f2bb3c9d4b18a63674b599c0eddd
-msgid ""
-"Third party plugins are developed and maintained by community members. Some "
-"of them may not be translated, or available on only one database engine."
-msgstr ""
-"Vtičnike tretjih oseb razvijajo in vzdržujejo člani skupnosti. Nekateri od "
-"njih morda niso prevedeni ali pa so na voljo samo v enem mehanizmu zbirke "
-"podatkov."
-
-#: ../plugins/index.rst:44 5bdc8b57cd174cdc811666a9b7b92c80
-msgid ""
-"`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette act as "
-"an oAuth2 provider),"
-msgstr ""
-"`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette deluje "
-"kot ponudnik oAuth2),"
-
-#: ../plugins/index.rst:45 89dc52c1d8c84ee58016b91d8cca586b
-msgid ""
-"`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_ (handle `Stripe "
-"payments <https://stripe.com/>`_),"
-msgstr ""
-"`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_ (obravnava "
-"`plačila Stripe <https://stripe.com/>`_),"
-
-#: ../plugins/index.rst:46 8f85d9672de34066b16be4eb4c070c9a
-msgid ""
-"`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle "
-"`HelloAsso payments <https://www.helloasso.com/>`_),"
-msgstr ""
-"`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle "
-"`HelloAsso payments <https://www.helloasso.com/>`_),"
-
-#: ../plugins/index.rst:47 b93794fdca1d492f93b4dfe653526f87
-msgid ""
-"`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ "
-"(manage legal notices pages),"
-msgstr ""
-"`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ "
-"(manage legal notices pages),"
-
-#: ../plugins/index.rst:49 856bedd84f9a48a9bdacb389cdf4a971
-msgid ""
-"A `Github community <https://github.com/galette-plugins/>`_ has been created "
-"to :doc:`manage third party plugins <plugins-tiers>`, if you want to add "
-"your plugin."
+"The `galette-plugins organization <https://github.com/galette-plugins/>`_ "
+"hosts all plugins. See :doc:`how to add your plugin <plugins-tiers>` if you "
+"want yours to join."
 msgstr ""
 "Ustvarjena je bila `skupnost Github <https://github.com/galette-plugins/>`_ "
 "za :doc:`upravljanje vtičnikov tretjih oseb <plugins-tiers>`, če želite "
 "dodati svoj vtičnik."
 
-#: ../plugins/index.rst:60 926b8c8451f04371addb0dd5252e96d0
+#: ../plugins/index.rst:25 93e9be78a9cf46889f6400effdf43aca
+msgid ":doc:`Paypal<paypal>`"
+msgstr ""
+
+#: ../plugins/index.rst:26 5bdc8b57cd174cdc811666a9b7b92c80
+#, fuzzy
+#| msgid ""
+#| "`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ "
+#| "(manage legal notices pages),"
+msgid "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
+msgstr ""
+"`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ "
+"(manage legal notices pages),"
+
+#: ../plugins/index.rst:27 8feb4044af544963ae11375fae765a2f
+msgid ":doc:`Maps<maps>`"
+msgstr ""
+
+#: ../plugins/index.rst:28 d0d8454fa4744acd962a5e87e41a160b
+msgid ":doc:`Auto<auto>`"
+msgstr ""
+
+#: ../plugins/index.rst:29 74fdfbce31fe41beba56a861d4baaade
+msgid ":doc:`Events<events>`"
+msgstr ""
+
+#: ../plugins/index.rst:30 3a89b69d40f74c1ab25c8cd17ebbb36c
+msgid ":doc:`ObjectsLend<objectslend>`"
+msgstr ""
+
+#: ../plugins/index.rst:31 736dda4b0d6f439e9106192d81f005c9
+msgid ":doc:`Activities<activities>`"
+msgstr ""
+
+#: ../plugins/index.rst:32 5bdc8b57cd174cdc811666a9b7b92c80
+#, fuzzy
+#| msgid ""
+#| "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette act "
+#| "as an oAuth2 provider),"
+msgid "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_"
+msgstr ""
+"`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette deluje "
+"kot ponudnik oAuth2),"
+
+#: ../plugins/index.rst:33 89dc52c1d8c84ee58016b91d8cca586b
+#, fuzzy
+#| msgid ""
+#| "`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_ (handle "
+#| "`Stripe payments <https://stripe.com/>`_),"
+msgid "`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_"
+msgstr ""
+"`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_ (obravnava "
+"`plačila Stripe <https://stripe.com/>`_),"
+
+#: ../plugins/index.rst:34 b93794fdca1d492f93b4dfe653526f87
+#, fuzzy
+#| msgid ""
+#| "`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ "
+#| "(handle `HelloAsso payments <https://www.helloasso.com/>`_),"
+msgid "`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_"
+msgstr ""
+"`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle "
+"`HelloAsso payments <https://www.helloasso.com/>`_),"
+
+#: ../plugins/index.rst:35 b93794fdca1d492f93b4dfe653526f87
+#, fuzzy
+#| msgid ""
+#| "`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ "
+#| "(manage legal notices pages),"
+msgid ""
+"`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_"
+msgstr ""
+"`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ "
+"(manage legal notices pages),"
+
+#: ../plugins/index.rst:46 926b8c8451f04371addb0dd5252e96d0
 msgid "Plugins management interface"
 msgstr "Vmesnik za upravljanje vtičnikov"
 
-#: ../plugins/index.rst:62 627c7b6977974e358d31c738e5f4e2b3
+#: ../plugins/index.rst:48 627c7b6977974e358d31c738e5f4e2b3
 msgid ""
 "A plugins management interface is provided, you will find it from the "
 "dashboard or in the configuration menu. After you have downloaded plugin(s) "
@@ -134,11 +154,11 @@ msgstr ""
 "plošči ali v meniju za konfiguracijo. Ko prenesete vtičnike v imenik "
 "``plugins`` Galette, se bo prikazal seznam:"
 
-#: ../plugins/index.rst:64 527feb1bfa7a4e5f9e528a918991f792
+#: ../plugins/index.rst:50 527feb1bfa7a4e5f9e528a918991f792
 msgid "Plugins management"
 msgstr "Upravljanje vtičnikov"
 
-#: ../plugins/index.rst:69 b18d51ad67bd442c93df555226de9cf1
+#: ../plugins/index.rst:55 b18d51ad67bd442c93df555226de9cf1
 msgid ""
 "If web server has read access to your plugins directory, then you can enable "
 "or disable any plugin from the related icon."
@@ -146,7 +166,7 @@ msgstr ""
 "Če ima spletni strežnik dostop za branje do vašega imenika z vtičniki, lahko "
 "kateri koli vtičnik omogočite ali onemogočite s pomočjo ustrezne ikone."
 
-#: ../plugins/index.rst:71 5ea555623bbd44f6abdd245b0a7da95a
+#: ../plugins/index.rst:57 5ea555623bbd44f6abdd245b0a7da95a
 msgid ""
 "If plugin requires a database to work, you can play installation and update "
 "scripts from the interface."
@@ -154,7 +174,7 @@ msgstr ""
 "Če vtičnik za delovanje potrebuje bazo podatkov, lahko namestitvene in "
 "posodobitvene skripte predvajate iz vmesnika."
 
-#: ../plugins/index.rst:73 52bac3cd151342829fc5295b310f78bc
+#: ../plugins/index.rst:59 52bac3cd151342829fc5295b310f78bc
 msgid ""
 "Database ACLs will then be checked. Unlike Galette, no information will be "
 "asked to you, since all is already available from your current instance."
@@ -162,3 +182,31 @@ msgstr ""
 "Nato bodo preverjeni ACL-ji baze podatkov. Za razliko od Galette vam ne bodo "
 "zahtevani nobeni podatki, saj so vsi podatki že na voljo iz vaše trenutne "
 "instance."
+
+#~ msgid ""
+#~ "You can disable a plugin creating a ``_disabled`` file in its directory."
+#~ msgstr ""
+#~ "Vtičnik lahko onemogočite tako, da v njegovem imeniku ustvarite datoteko "
+#~ "``_disabled``."
+
+#~ msgid "Official Plugins"
+#~ msgstr "Uradni vtičniki"
+
+#~ msgid ""
+#~ "Official plugins are developed and maintained by the Galette team. "
+#~ "Available official plugins are:"
+#~ msgstr ""
+#~ "Uradne vtičnike razvija in vzdržuje ekipa Galette. Razpoložljivi uradni "
+#~ "vtičniki so:"
+
+#~ msgid "Third party plugins"
+#~ msgstr "Vtičniki tretjih oseb"
+
+#~ msgid ""
+#~ "Third party plugins are developed and maintained by community members. "
+#~ "Some of them may not be translated, or available on only one database "
+#~ "engine."
+#~ msgstr ""
+#~ "Vtičnike tretjih oseb razvijajo in vzdržujejo člani skupnosti. Nekateri "
+#~ "od njih morda niso prevedeni ali pa so na voljo samo v enem mehanizmu "
+#~ "zbirke podatkov."
