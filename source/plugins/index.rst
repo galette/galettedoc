@@ -26,7 +26,7 @@ The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts 
 * `Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_
 * `Maps <https://galette-plugins.github.io/plugin-maps/>`_
 * `Auto <https://galette-plugins.github.io/plugin-auto/>`_
-* :doc:`Events<events>`
+* `Events <https://galette-plugins.github.io/plugin-events/>`_
 * `ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_
 * :doc:`Activities<activities>`
 * `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_
