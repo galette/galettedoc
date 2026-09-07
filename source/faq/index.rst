@@ -37,6 +37,23 @@ Two other cases look like a refusal but are not one:
 * **the same code twice**: a code is accepted once only, so submitting the code you just used to enrol, or reloading the page after a successful login, is refused. Wait for the next one -- it comes at most thirty seconds later.
 * **too many attempts**: after a series of wrong codes, Galette stops answering for a while. Wait it out rather than trying harder.
 
+The server clock went backwards
+-------------------------------
+
+Galette remembers the last period it accepted a code for, so that a code cannot be used twice. If the clock of the **server** moves backwards -- a virtual machine restored from a snapshot, a large NTP correction, a host without NTP at all -- every code then falls in a period that has already been used, and is refused as such until the clock catches up with what was recorded.
+
+Set the server clock right first. Then, for the account concerned:
+
+.. code-block:: sql
+
+   UPDATE galette_twofactor SET last_timeslice = NULL WHERE id_adh = <member id>;
+
+and, for the super administrator:
+
+.. code-block:: sql
+
+   UPDATE galette_preferences SET val_pref = '0' WHERE nom_pref = 'pref_2fa_superadmin_timeslice';
+
 I lost the device computing my codes
 ------------------------------------
 
@@ -56,11 +73,13 @@ That account is not a member, so nobody can reset it from the interface, and it 
 
 Replace ``galette_`` with your own table prefix if you changed it (the ``PREFIX_DB`` setting of your configuration file). The next login asks for the password alone.
 
-If a policy makes the second factor mandatory, you will be asked to enrol again right away; to stop that as well, add:
+To turn the second factor off for the whole instance at the same time -- the way out when something goes wrong for everybody at once -- add:
 
 .. code-block:: sql
 
    UPDATE galette_preferences SET val_pref = '0' WHERE nom_pref = 'pref_2fa_mode';
+
+Members who had enabled one keep it; they are simply no longer asked for a code until a policy is set again.
 
 .. warning::
 
