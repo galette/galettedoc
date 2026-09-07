@@ -62,7 +62,11 @@ Two-factor authentication
 
 .. versionadded:: 1.3.0
 
+   Marked **experimental**: it is complete and tested, but it is new, and the interface may still change.
+
 Once :ref:`a policy has been set in the preferences <pref_2fa>`, every account can protect itself with a second factor: after the password, Galette asks for a six digits code that changes every thirty seconds.
+
+If you are an administrator or a staff member and have not set one up, Galette invites you to when you log in. Nothing forces you to; **Later** keeps quiet for six months, **Do not ask again** for a year.
 
 You need an application to compute those codes. Any of them will do, they all follow the same standard; among the free ones:
 
