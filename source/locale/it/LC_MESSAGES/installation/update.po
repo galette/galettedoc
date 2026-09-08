@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-08 22:51+0200\n"
 "PO-Revision-Date: 2025-10-13 09:07+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-"
@@ -111,19 +111,13 @@ msgstr ""
 "Alcune cartelle contengono dati e/o configurazioni e dovrebbero essere "
 "copiate nuovamente nella nuova istanza:"
 
-# 0613607a643341638af2ca989c052877
 #: ../installation/update.rst:30 fca17f8bddf045df85da044b5db0b9c7
 msgid ""
-"``config/config.inc.php``. If this file is missing, Galette update process "
-"will ask you the information and create a new one. If the file is present, "
-"it will be used to fill information excepted database password. It is the "
-"only file that can be edited during update process,"
+"``config/config.inc.php``. If the file is present, the update reads "
+"everything from it - database password included - and never asks you for a "
+"credential again. If it is missing, Galette cannot know it is an update: it "
+"would offer a brand new installation instead,"
 msgstr ""
-"``config/config.inc.php``. Se questo file manca, il processo di "
-"aggiornamento di Galette chiederà le informazioni e ne creerà uno nuovo. Se "
-"il file è presente, verrà utilizzato per riempire le informazioni tranne la "
-"password del database. È l'unico file che può essere modificato durante il "
-"processo di aggiornamento,"
 
 # 59761ec82cf74838a2db9a5cc53387dd
 #: ../installation/update.rst:31 c53e78889f964675b4b66571b543e2de
@@ -164,15 +158,13 @@ msgstr ""
 "Galette. Chiederà, se necessario, di procedere all'aggiornamento del "
 "database."
 
-#: ../installation/update.rst:39 7614276c2dc44b03a84df4d6664f0b3f
+#: ../installation/update.rst:39 52dc97aec3e946efaeb3b36d6061cd09
 msgid ""
-"If so, visit the install URL ``/installer.php`` (ex: https://"
-"your.domain.name/installer.php) and choose *Update* when your are asked for "
-"the type of installation."
+"If so, :ref:`enable the installer <enableinstaller>` by creating the ``data/"
+"ENABLE_INSTALL`` file, then visit the install URL ``/installer.php`` (ex: "
+"https://your.domain.name/installer.php). Galette sees your configuration "
+"file and runs an update, you have nothing to choose."
 msgstr ""
-"Se è così, visitare l'URL di installazione ``/installer.php`` (es: https://"
-"nome.tuo.dominio/installer.php) e scegliere *Aggiornare* quando viene "
-"richiesto per il tipo di installazione."
 
 #: ../installation/update.rst:41 1b03bc57003a440b8a6dd0b5b7be9b95
 msgid "If it asks you nothing you're just done already ;)"
@@ -218,57 +210,114 @@ msgstr ""
 msgid "Database information"
 msgstr "Informazioni sul database"
 
-# 51ca20b11982427eaee8756abe020978
-#: ../installation/update.rst:58 ae32e953a51a4d62a6939c9218ad5ed4
+#: ../installation/update.rst:60 9a6e1145d1e54036a166a1fb4d9373c3
 msgid ""
-"At \"Installation type\" step, you'll have to choose \"update\". Database "
-"information page will be pre filled with existing information, excepting "
-"password. Other information should not be changed."
+"Database information are not asked anymore, and neither is the installation "
+"type."
 msgstr ""
-"Al passo \"tipo di Installazione\", bisognerà selezionare \"update\". La "
-"pagina delle informazioni del database verrà pre compilata con le "
-"informazioni esistenti, a eccezione della password. Altre informazioni non "
-"devono essere modificate."
 
-# fab1bbf021c04dda8cce55d1aa50db63
-#: ../installation/update.rst:62 85859dd8b85840ce8793abbc19fc9e9b
+#: ../installation/update.rst:62 fc6dd895b9244ed4aac6f12ac0187445
 msgid ""
-"Note it is important that database name and prefixed used in previous "
-"database correspond to configuration."
+"The update reads the database type, host, port, name, user, password and "
+"table prefix from your configuration file, and goes straight to the access "
+"and permissions check. The form only comes back if that file cannot be read "
+"or is incomplete - fill it in with the very same information as before, the "
+"table prefix included."
 msgstr ""
-"Si noti che è importante che il nome del database e il prefisso utilizzato "
-"nel database precedente corrispondano alla configurazione."
 
 # be706b5e535a48ea88ebb5ce1915865c
 #: ../installation/update.rst:65 d26df1746e3245af8c93d132e46585e8
 msgid "Previous version selection"
 msgstr "Seleziona versione precedente"
 
-# 6849b68439e84e7d990fb7fd124c50a2
-#: ../installation/update.rst:67 6562ac7f198f48439cd7f86cf58933b7
-msgid ""
-"Next step is the choice of the previous Galette version. Installation "
-"process will try to \"guess\" what version it as, and will select this one "
-"per default (the one that will be displayed as bold text)."
+#: ../installation/update.rst:69 7a8229ac502e4de48ff76c9034355d9d
+msgid "When the version can be read from the database, this step is skipped."
 msgstr ""
-"Il passo successivo è la scelta della precedente versione Galette. Il "
-"processo di installazione cercherà di \"indovinare\" quale versione sia, e "
-"selezionerà il risultato di questa valutazione come valore predefinito (ciò "
-"che verrà visualizzato come testo in grassetto)."
 
-# 2b6e7e7304b34dafac2f805cf87a0fea
-#: ../installation/update.rst:73 20622ca1a1144ab5b116c31ff26e9612
+#: ../installation/update.rst:71 0b37891b0dab42f48fe3448624a98852
 msgid ""
-"If you try to update but your database version seems already correct, you "
-"will be warned. No entry will be displayed as bold text, please make sure to "
-"choose the right one:"
+"Galette reads the version its database holds and updates from there. The "
+"step below is only displayed when that reading is not conclusive - which is "
+"the case for a pre 0.7 database, since the table holding the version did not "
+"exist yet. Select the version you are coming from, the one Galette guessed "
+"is displayed as bold text:"
 msgstr ""
-"Se si tenta di aggiornare, ma la versione del database sembra già corretta, "
-"si sarà avvertititi. Nessuna voce verrà visualizzata come testo in "
-"grassetto, assicurarsi di fare la scelta giusta:"
 
-#: ../installation/update.rst:79 35944a775ff74bc2b7a58b61dc99edce
+#: ../installation/update.rst:77 c3deb332b9cb4cd0b6f6bcb2e9736cad
+msgid ""
+"The step is also displayed when your database is already up to date, so you "
+"get a chance to stop before running the scripts again:"
+msgstr ""
+
+#: ../installation/update.rst:83 35944a775ff74bc2b7a58b61dc99edce
 msgid "Once update scripts have run, a summary will be displayed."
 msgstr ""
 "Una volta eseguiti gli script di aggiornamento, verrà visualizzato un "
 "resoconto delle operazioni."
+
+#: ../installation/update.rst:87 57d66713277d49f3bd31cdb0792d679a
+msgid ""
+"The ``data/ENABLE_INSTALL`` file is removed once the update has completed."
+msgstr ""
+
+# 0613607a643341638af2ca989c052877
+#~ msgid ""
+#~ "``config/config.inc.php``. If this file is missing, Galette update "
+#~ "process will ask you the information and create a new one. If the file is "
+#~ "present, it will be used to fill information excepted database password. "
+#~ "It is the only file that can be edited during update process,"
+#~ msgstr ""
+#~ "``config/config.inc.php``. Se questo file manca, il processo di "
+#~ "aggiornamento di Galette chiederà le informazioni e ne creerà uno nuovo. "
+#~ "Se il file è presente, verrà utilizzato per riempire le informazioni "
+#~ "tranne la password del database. È l'unico file che può essere modificato "
+#~ "durante il processo di aggiornamento,"
+
+#~ msgid ""
+#~ "If so, visit the install URL ``/installer.php`` (ex: https://"
+#~ "your.domain.name/installer.php) and choose *Update* when your are asked "
+#~ "for the type of installation."
+#~ msgstr ""
+#~ "Se è così, visitare l'URL di installazione ``/installer.php`` (es: "
+#~ "https://nome.tuo.dominio/installer.php) e scegliere *Aggiornare* quando "
+#~ "viene richiesto per il tipo di installazione."
+
+# 51ca20b11982427eaee8756abe020978
+#~ msgid ""
+#~ "At \"Installation type\" step, you'll have to choose \"update\". Database "
+#~ "information page will be pre filled with existing information, excepting "
+#~ "password. Other information should not be changed."
+#~ msgstr ""
+#~ "Al passo \"tipo di Installazione\", bisognerà selezionare \"update\". La "
+#~ "pagina delle informazioni del database verrà pre compilata con le "
+#~ "informazioni esistenti, a eccezione della password. Altre informazioni "
+#~ "non devono essere modificate."
+
+# fab1bbf021c04dda8cce55d1aa50db63
+#~ msgid ""
+#~ "Note it is important that database name and prefixed used in previous "
+#~ "database correspond to configuration."
+#~ msgstr ""
+#~ "Si noti che è importante che il nome del database e il prefisso "
+#~ "utilizzato nel database precedente corrispondano alla configurazione."
+
+# 6849b68439e84e7d990fb7fd124c50a2
+#~ msgid ""
+#~ "Next step is the choice of the previous Galette version. Installation "
+#~ "process will try to \"guess\" what version it as, and will select this "
+#~ "one per default (the one that will be displayed as bold text)."
+#~ msgstr ""
+#~ "Il passo successivo è la scelta della precedente versione Galette. Il "
+#~ "processo di installazione cercherà di \"indovinare\" quale versione sia, "
+#~ "e selezionerà il risultato di questa valutazione come valore predefinito "
+#~ "(ciò che verrà visualizzato come testo in grassetto)."
+
+# 2b6e7e7304b34dafac2f805cf87a0fea
+#~ msgid ""
+#~ "If you try to update but your database version seems already correct, you "
+#~ "will be warned. No entry will be displayed as bold text, please make sure "
+#~ "to choose the right one:"
+#~ msgstr ""
+#~ "Se si tenta di aggiornare, ma la versione del database sembra già "
+#~ "corretta, si sarà avvertititi. Nessuna voce verrà visualizzata come testo "
+#~ "in grassetto, assicurarsi di fare la scelta giusta:"
