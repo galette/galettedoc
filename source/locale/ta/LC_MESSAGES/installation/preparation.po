@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-08 22:51+0200\n"
 "PO-Revision-Date: 2026-05-15 17:14+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-"
@@ -140,7 +140,7 @@ msgstr "மரியாட்ப்"
 msgid "PostgreSQL"
 msgstr "Postgresql"
 
-#: ../installation/preparation.rst:64 471836a366e149fca9402da26a1d2498
+#: ../installation/preparation.rst:63 471836a366e149fca9402da26a1d2498
 msgid ""
 "Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/"
 "library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ "
@@ -150,11 +150,11 @@ msgstr ""
 "documentation/>` _ அல்லது `postgresql <https://docs.postgresqlfr.org>` _ "
 "ஆவணங்கள், அல்லது பயன்பாட்டைப் பார்க்கவும் ஒரு வரைகலை கருவி:"
 
-#: ../installation/preparation.rst:66 016c5a5d6c154041b6d9c8a67fa527c0
+#: ../installation/preparation.rst:65 016c5a5d6c154041b6d9c8a67fa527c0
 msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;"
 msgstr "`phpmyadmin <https://www.phpmyadmin.net>` _ மரியாட்பிற்கு;"
 
-#: ../installation/preparation.rst:67 377d2294f1564611b893565aa0db7645
+#: ../installation/preparation.rst:66 377d2294f1564611b893565aa0db7645
 msgid ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://"
 "www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
@@ -162,11 +162,11 @@ msgstr ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://"
 "www.pgadmin.org/download/?lang=fr_FR>`_ க்கு PostgreSQL."
 
-#: ../installation/preparation.rst:72 18b9bb15bf7d4dd7ba45a1c5b79e1d8d
+#: ../installation/preparation.rst:71 18b9bb15bf7d4dd7ba45a1c5b79e1d8d
 msgid "Web server directory exposition"
 msgstr "வலை சேவையக அடைவு வெளிப்பாடு"
 
-#: ../installation/preparation.rst:76 37e62accde3b415cadbf85367a936766
+#: ../installation/preparation.rst:75 37e62accde3b415cadbf85367a936766
 msgid ""
 "Galette installation may consists in copying a complete directory to a "
 "location the web server can read. This method may work, but this exposes "
@@ -176,7 +176,7 @@ msgstr ""
 "நிறுவல் இருக்கலாம். இந்த முறை செயல்படக்கூடும், ஆனால் இது வலை கோப்புகள் மற்றும் "
 "கோப்பகங்களிலிருந்து இந்த வழியில் கிடைக்கக்கூடாது."
 
-#: ../installation/preparation.rst:78 45c35ffe649746cba70af6c7eea6c637
+#: ../installation/preparation.rst:77 45c35ffe649746cba70af6c7eea6c637
 msgid ""
 "It is possible to limit that by exposing only the ``webroot`` directory. All "
 "other directories are more safe: it is not possible to reach them from the "
@@ -186,33 +186,33 @@ msgstr ""
 "அனைத்து கோப்பகங்களும் மிகவும் பாதுகாப்பானவை: வலை சேவையகத்திலிருந்து அவற்றை அடைய "
 "முடியாது!"
 
-#: ../installation/preparation.rst:82 a978ad7b5d5642d2a26463fc5f1379b5
+#: ../installation/preparation.rst:81 a978ad7b5d5642d2a26463fc5f1379b5
 msgid ""
 "Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr ""
 "`` வெப்ரூட்`` கோப்பகத்தை மட்டுமே அம்பலப்படுத்துவது பரிந்துரைக்கப்படுகிறது, மேலும் "
 "பாதுகாப்பான வழி."
 
-#: ../installation/preparation.rst:85 54bb017b6aaf4b1eb394c2d09d7533c8
+#: ../installation/preparation.rst:84 54bb017b6aaf4b1eb394c2d09d7533c8
 msgid "Using a subdomain"
 msgstr "ஒரு துணை டொமைனைப் பயன்படுத்துதல்"
 
-#: ../installation/preparation.rst:87 f23214d559a444688fd7432b7cbbaf7c
+#: ../installation/preparation.rst:86 f23214d559a444688fd7432b7cbbaf7c
 msgid ""
 "Here is a virtual host configuration example, including the hide of "
 "`index.php`:"
 msgstr ""
 "`Index.php` இன் மறைவை உள்ளடக்கிய மெய்நிகர் புரவலன் உள்ளமைவு எடுத்துக்காட்டு இங்கே:"
 
-#: ../installation/preparation.rst:114 b8edbd4f9b7042fcba445c713af742c0
+#: ../installation/preparation.rst:113 b8edbd4f9b7042fcba445c713af742c0
 msgid "Nginx would be:"
 msgstr "Nginx இருக்கும்:"
 
-#: ../installation/preparation.rst:155 602cc27c13d0462ab3ddae057161baf3
+#: ../installation/preparation.rst:154 602cc27c13d0462ab3ddae057161baf3
 msgid "Using an alias"
 msgstr "ஒரு மாற்றுப்பெயரைப் பயன்படுத்துதல்"
 
-#: ../installation/preparation.rst:157 b5f8be49ca9b409ebd4666ff106cf4a3
+#: ../installation/preparation.rst:156 b5f8be49ca9b409ebd4666ff106cf4a3
 msgid ""
 "An alternative secured configuration, if you do not have a specific "
 "subdomain for Galette is to use an ``alias`` in your existing virtual host:"
@@ -220,7 +220,7 @@ msgstr ""
 "ஒரு மாற்று பாதுகாப்பான உள்ளமைவு, உங்களிடம் ஒரு குறிப்பிட்ட துணை டொமைன் இல்லையென்றால், "
 "உங்கள் இருக்கும் மெய்நிகர் ஓச்டில் `` மாற்றுப்பெயர்`` பயன்படுத்த வேண்டும்:"
 
-#: ../installation/preparation.rst:176 5a07bc26ebbd491aad9196ce54d23bec
+#: ../installation/preparation.rst:175 5a07bc26ebbd491aad9196ce54d23bec
 msgid ""
 "Do not forget with that solution you have to setup correctly your "
 "``RewriteBase`` directive."
@@ -228,11 +228,11 @@ msgstr ""
 "அந்த தீர்வை மறந்துவிடாதீர்கள், உங்கள் `` மீண்டும் எழுதப்பட்ட பேச்`` உத்தரவை நீங்கள் சரியாக "
 "அமைக்க வேண்டும்."
 
-#: ../installation/preparation.rst:181 38034f385000466c9bbea8a5b5b6e542
+#: ../installation/preparation.rst:180 38034f385000466c9bbea8a5b5b6e542
 msgid "Linux/Unix"
 msgstr "லினக்ச்/யுனிக்ச்"
 
-#: ../installation/preparation.rst:183 370f999d6b3f48b3a3d887f3eff2df06
+#: ../installation/preparation.rst:182 370f999d6b3f48b3a3d887f3eff2df06
 msgid ""
 "Installing Galette on Linux implies you have an access to the terminal on "
 "the server and required ACLs on directories."
@@ -240,12 +240,12 @@ msgstr ""
 "லினக்சில் கேலட் நிறுவுவது சேவையகத்தில் முனையத்திற்கு அணுகல் இருப்பதையும் கோப்பகங்களில் "
 "ACL கள் தேவை என்பதையும் குறிக்கிறது."
 
-#: ../installation/preparation.rst:185 e9375ca06c5444ebb3a6a8e3689a3637
+#: ../installation/preparation.rst:184 e9375ca06c5444ebb3a6a8e3689a3637
 msgid ""
 "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr "உதாரணமாக, `ஃபெடோரா <https://fedora.org> _ _ இல், நீங்கள் (ரூட் என) ஓடுவீர்கள்:"
 
-#: ../installation/preparation.rst:192 837dde2933324f599e52cbb510fa171b
+#: ../installation/preparation.rst:191 837dde2933324f599e52cbb510fa171b
 msgid ""
 "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
 "``www-data:www-data``."
@@ -253,21 +253,21 @@ msgstr ""
 "`டெபியன் <https://debian.org/>` _ இன் கீழ், `` அப்பாச்சி`` `` www-data: www-data`` "
 "உடன் மாற்றுவோம்."
 
-#: ../installation/preparation.rst:194 7e65e82114f74f558565bad8a7762176
+#: ../installation/preparation.rst:193 7e65e82114f74f558565bad8a7762176
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr "செலினக்ச் இயக்கப்பட்ட அமைப்புகளில், நாங்கள் சேர்ப்போம்:"
 
-#: ../installation/preparation.rst:202 4cc4efa142a94071be7ec0d1ea6d2db8
+#: ../installation/preparation.rst:201 4cc4efa142a94071be7ec0d1ea6d2db8
 msgid ""
 "You will also have to authorize webserver to connect to the network, with a "
 "SELinux boolean:"
 msgstr "செலினக்ச் பூலியன் மூலம் நெட்வொர்க்குடன் இணைக்க வெப்சர்வரை அங்கீகரிக்க வேண்டும்:"
 
-#: ../installation/preparation.rst:211 d5eec4271a3c4eda9e2f02dde3919819
+#: ../installation/preparation.rst:210 d5eec4271a3c4eda9e2f02dde3919819
 msgid "FTP"
 msgstr "Ftp"
 
-#: ../installation/preparation.rst:215 b57906d401ec41a688606efa2a7e110f
+#: ../installation/preparation.rst:214 b57906d401ec41a688606efa2a7e110f
 msgid ""
 "Some archive or FTP software may corrupt files... It is strongly advised if "
 "you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
@@ -277,7 +277,7 @@ msgstr ""
 "<https://www.7-zip.fr> _ _ _ அவிழ்க்க மற்றும்` ஃபைல்சில்லா <https: // filezில்லா "
 "-project.org/>`_ TFP பரிமாற்றங்களுக்கு."
 
-#: ../installation/preparation.rst:217 ad2c7a97f8eb4e0cb9639d394ff92758
+#: ../installation/preparation.rst:216 ad2c7a97f8eb4e0cb9639d394ff92758
 msgid ""
 "Once source code has been retrieved locally, use :samp:`tar xjvf "
 "{galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under "
@@ -287,7 +287,7 @@ msgstr ""
 "{galette.tar.bz2}` லினக்ச்/யுனிக்ச்/மேகோச் அல்லது விண்டோசின் கீழ் ஒரு வரைகலை கருவி கீழ் "
 "கட்டளை."
 
-#: ../installation/preparation.rst:219 a9fc115c646949a6889146fab12d3bb6
+#: ../installation/preparation.rst:218 a9fc115c646949a6889146fab12d3bb6
 msgid ""
 "Just copy the uncompressed directory obtained, and all its sub directories "
 "and files, with your FTP client."
@@ -295,15 +295,15 @@ msgstr ""
 "பெறப்பட்ட சுருக்கப்படாத கோப்பகத்தையும், அதன் அனைத்து துணை கோப்பகங்களையும் கோப்புகளையும் "
 "உங்கள் FTP கிளையண்டுடன் நகலெடுக்கவும்."
 
-#: ../installation/preparation.rst:226 d923d1f3678b452d996b6209b42d961e
+#: ../installation/preparation.rst:225 d923d1f3678b452d996b6209b42d961e
 msgid "Specific cases"
 msgstr "குறிப்பிட்ட வழக்குகள்"
 
-#: ../installation/preparation.rst:229 2aa5519f36ac408fb72b250aeb58bf7c
+#: ../installation/preparation.rst:228 2aa5519f36ac408fb72b250aeb58bf7c
 msgid "Ionos"
 msgstr "அயன்"
 
-#: ../installation/preparation.rst:231 4e067138825e4a1683c3134e72a4f90f
+#: ../installation/preparation.rst:230 4e067138825e4a1683c3134e72a4f90f
 msgid ""
 "If you're hosted on Ionos; and want to use a specific subdomain for Galette, "
 "you must create your subdomain from their UI, and make it points to the "
@@ -316,11 +316,11 @@ msgstr ""
 "`` .htaccess`` கோப்பையும் நீங்கள் திருத்த வேண்டும், மேலும் `` மீண்டும் எழுதப்பட்ட பேச் /`` "
 "கட்டளை."
 
-#: ../installation/preparation.rst:234 3157f0c662a1403683926300cc1f6509
+#: ../installation/preparation.rst:233 3157f0c662a1403683926300cc1f6509
 msgid "OVH"
 msgstr "OVH"
 
-#: ../installation/preparation.rst:236 7105479146614aaaafec0ae8963d44d5
+#: ../installation/preparation.rst:235 7105479146614aaaafec0ae8963d44d5
 msgid ""
 "This hosting company offers to `change PHP version you use from your "
 "customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
@@ -330,7 +330,7 @@ msgstr ""
 "பதிப்பை மாற்றுகிறது <https://docs.ovh.com/fr/hosting/configurer-l-php-sur-son-"
 "hebergent-web-mutu-2014/> ` _."
 
-#: ../installation/preparation.rst:238 64cfb89d9cdc475faa053bca41677e4d
+#: ../installation/preparation.rst:237 64cfb89d9cdc475faa053bca41677e4d
 msgid ""
 "Additional information are available at: https://docs.ovh.com/fr/fr/web/"
 "hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
@@ -338,7 +338,7 @@ msgstr ""
 "கூடுதல் தகவல்கள் இங்கு கிடைக்கின்றன: https://docs.ovh.com/fr/fr/web/hosting/"
 "configurer-le-php-sur-son-hebergent-web-mutu-2014/"
 
-#: ../installation/preparation.rst:242 4bf152be97c34a9ba2b6af88dfcb8195
+#: ../installation/preparation.rst:241 4bf152be97c34a9ba2b6af88dfcb8195
 msgid ""
 "Many users have display images or attendance sheet issues on OVH hosts. The "
 "solution to this issue is to create a ``.ovhconfig`` file at your hosting "
@@ -348,11 +348,11 @@ msgstr ""
 "சிக்கலுக்கான தீர்வு பின்வரும் உள்ளடக்கங்களுடன் உங்கள் ஓச்டிங் ரூட்டில் `` .ovhconfig`` கோப்பை "
 "உருவாக்குவதாகும்:"
 
-#: ../installation/preparation.rst:249 633150f3fc1d411287bd62fc2093f7e8
+#: ../installation/preparation.rst:248 633150f3fc1d411287bd62fc2093f7e8
 msgid "Nginx"
 msgstr "Nginx"
 
-#: ../installation/preparation.rst:251 bcbd7c34573c4be8ae4758fa43adf31c
+#: ../installation/preparation.rst:250 bcbd7c34573c4be8ae4758fa43adf31c
 msgid ""
 "`Nginx webserver <https://nginx.com>`_ configuration is different from "
 "Apache one (see `Nginx documentation for a more complete explanation "
@@ -360,7 +360,7 @@ msgid ""
 "htaccess/>`_)."
 msgstr ". /lieapeachache-htaccess/> `_)."
 
-#: ../installation/preparation.rst:253 63ed36be97604fd3b2447e74e137d017
+#: ../installation/preparation.rst:252 63ed36be97604fd3b2447e74e137d017
 msgid ""
 "So you have to convert restriction access files in Nginx configuration, as "
 "for example:"
@@ -368,11 +368,11 @@ msgstr ""
 "எனவே நீங்கள் கட்டுப்பாட்டு அணுகல் கோப்புகளை nginx உள்ளமைவில் மாற்ற வேண்டும், "
 "எடுத்துக்காட்டாக:"
 
-#: ../installation/preparation.rst:264 bd9b71d5e7e14eeba16d180a2464c34b
+#: ../installation/preparation.rst:263 bd9b71d5e7e14eeba16d180a2464c34b
 msgid "Windows"
 msgstr "சாளரங்கள்"
 
-#: ../installation/preparation.rst:266 105ead040bdb4d35a0d7f81328638736
+#: ../installation/preparation.rst:265 105ead040bdb4d35a0d7f81328638736
 msgid ""
 "Installation described here rely on `XAMPP <https://www.apachefriends.org/"
 "xampp-windows.html>`_; other installation methods exist but are not listed "
@@ -381,7 +381,7 @@ msgstr ""
 "இங்கே விவரிக்கப்பட்டுள்ள நிறுவல் `xampp <https://www.apachefriends.org/xampp-"
 "windows.html>` _; பிற நிறுவல் முறைகள் உள்ளன, ஆனால் அவை இங்கே பட்டியலிடப்படவில்லை."
 
-#: ../installation/preparation.rst:268 fc2bbae60a2d4e748437443c67859539
+#: ../installation/preparation.rst:267 fc2bbae60a2d4e748437443c67859539
 msgid ""
 "First of all, download XAMPP on your computer. Let's install it under ``C:"
 "\\xampp``."
@@ -389,7 +389,7 @@ msgstr ""
 "முதலில், உங்கள் கணினியில் XAMPP ஐ பதிவிறக்கவும். அதை `` சி: \\ xampp`` இன் கீழ் "
 "நிறுவுவோம்."
 
-#: ../installation/preparation.rst:274 f92f30cc8f474862a9f13f9e78463688
+#: ../installation/preparation.rst:273 f92f30cc8f474862a9f13f9e78463688
 msgid ""
 "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
 "so you can start Apache and MySQL services."
@@ -397,7 +397,7 @@ msgstr ""
 "`` Xampp-control`` இயங்கக்கூடியதைத் தொடங்கவும் (நீங்கள் அதை `` c: \\ xampp`` இல் "
 "காணலாம்), எனவே நீங்கள் அப்பாச்சி மற்றும் MySQL சேவைகளைத் தொடங்கலாம்."
 
-#: ../installation/preparation.rst:280 6f85ca76f72c478fa3ebbdd16eb830c5
+#: ../installation/preparation.rst:279 6f85ca76f72c478fa3ebbdd16eb830c5
 msgid ""
 "Once those steps done, download galette and move it to ``C:"
 "\\wampp\\htdocs\\galette``, web application will be available from http://"
@@ -407,7 +407,7 @@ msgstr ""
 "கேலட்`` க்கு நகர்த்தவும், வலை பயன்பாடு http://127.0.0.1/galette/ இலிருந்து "
 "கிடைக்கும். இந்த முகவரி ஐப் பார்வையிடவும், எனவே நிறுவல் செயல்முறை தொடங்குகிறது."
 
-#: ../installation/preparation.rst:284 245167ff5940457a9436bd183dd49938
+#: ../installation/preparation.rst:283 245167ff5940457a9436bd183dd49938
 msgid ""
 "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
 "the required extensions are already present, but commented (line begins with "
@@ -418,7 +418,7 @@ msgstr ""
 "தெரிவிக்கின்றன (வரி ஒரு \";\" உடன் தொடங்குகிறது), அவற்றை அவிழ்த்து XAMPP ஐ "
 "மறுதொடக்கம் செய்யுங்கள்."
 
-#: ../installation/preparation.rst:286 3649e5d120b3490aa12153a6ebe8e626
+#: ../installation/preparation.rst:285 3649e5d120b3490aa12153a6ebe8e626
 msgid ""
 "`openssl` extension is missing in the file, to activate it just add the "
 "following to your `php.ini`: ``extension=php_openssl.dll``"
