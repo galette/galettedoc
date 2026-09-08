@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-08 22:51+0200\n"
 "PO-Revision-Date: 2026-05-15 17:14+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-"
@@ -102,15 +102,11 @@ msgstr ""
 
 #: ../installation/update.rst:30 fca17f8bddf045df85da044b5db0b9c7
 msgid ""
-"``config/config.inc.php``. If this file is missing, Galette update process "
-"will ask you the information and create a new one. If the file is present, "
-"it will be used to fill information excepted database password. It is the "
-"only file that can be edited during update process,"
+"``config/config.inc.php``. If the file is present, the update reads "
+"everything from it - database password included - and never asks you for a "
+"credential again. If it is missing, Galette cannot know it is an update: it "
+"would offer a brand new installation instead,"
 msgstr ""
-"``config/config.inc.php``. இந்தக் கோப்பு காணவில்லை என்றால், கேலட் புதுப்பிப்பு "
-"செயல்முறை உங்களிடம் தகவலைக் கேட்டுப் புதிய ஒன்றை உருவாக்கும். கோப்பு இருந்தால், தகவல்களைத் "
-"தவிர தரவுத்தள கடவுச்சொல்லை நிரப்ப இது பயன்படுத்தப்படும். புதுப்பிப்பு செயல்முறையின்போது "
-"திருத்தக்கூடிய ஒரே கோப்பு இது,"
 
 #: ../installation/update.rst:31 c53e78889f964675b4b66571b543e2de
 msgid "``data/photos`` your members photos and logos,"
@@ -144,15 +140,13 @@ msgstr ""
 "கோப்புகள் புதுப்பிக்கப்பட்டதும், உங்கள் கேலட் நிகழ்வுக்குச் செல்லவும். உங்கள் தரவுத்தளத்தின் "
 "புதுப்பிப்புக்குச் செல்ல தேவைப்பட்டால் அது உங்களிடம் கேட்கும்."
 
-#: ../installation/update.rst:39 7614276c2dc44b03a84df4d6664f0b3f
+#: ../installation/update.rst:39 52dc97aec3e946efaeb3b36d6061cd09
 msgid ""
-"If so, visit the install URL ``/installer.php`` (ex: https://"
-"your.domain.name/installer.php) and choose *Update* when your are asked for "
-"the type of installation."
+"If so, :ref:`enable the installer <enableinstaller>` by creating the ``data/"
+"ENABLE_INSTALL`` file, then visit the install URL ``/installer.php`` (ex: "
+"https://your.domain.name/installer.php). Galette sees your configuration "
+"file and runs an update, you have nothing to choose."
 msgstr ""
-"அப்படியானால், நிறுவல் வகை ``/installer.php`` (எ.கா: https://your.domain.name/"
-"installer.php) ஐப் பார்வையிடவும், நிறுவல் வகையைக் கேட்கும்போது * புதுப்பிப்பு * ஐத் "
-"தேர்ந்தெடுக்கவும்."
 
 #: ../installation/update.rst:41 1b03bc57003a440b8a6dd0b5b7be9b95
 msgid "If it asks you nothing you're just done already ;)"
@@ -193,48 +187,103 @@ msgstr ""
 msgid "Database information"
 msgstr "தரவுத்தள செய்தி"
 
-#: ../installation/update.rst:58 ae32e953a51a4d62a6939c9218ad5ed4
+#: ../installation/update.rst:60 9a6e1145d1e54036a166a1fb4d9373c3
 msgid ""
-"At \"Installation type\" step, you'll have to choose \"update\". Database "
-"information page will be pre filled with existing information, excepting "
-"password. Other information should not be changed."
+"Database information are not asked anymore, and neither is the installation "
+"type."
 msgstr ""
-"\"நிறுவல் வகை\" படி, நீங்கள் \"புதுப்பிப்பு\" என்பதை தேர்வு செய்ய வேண்டும். கடவுச்சொல்லைத் "
-"தவிர, தரவுத்தள செய்தி பக்கம் ஏற்கனவே உள்ள தகவல்களால் நிரப்பப்படும். பிற தகவல்களை "
-"மாற்றக்கூடாது."
 
-#: ../installation/update.rst:62 85859dd8b85840ce8793abbc19fc9e9b
+#: ../installation/update.rst:62 fc6dd895b9244ed4aac6f12ac0187445
 msgid ""
-"Note it is important that database name and prefixed used in previous "
-"database correspond to configuration."
+"The update reads the database type, host, port, name, user, password and "
+"table prefix from your configuration file, and goes straight to the access "
+"and permissions check. The form only comes back if that file cannot be read "
+"or is incomplete - fill it in with the very same information as before, the "
+"table prefix included."
 msgstr ""
-"முந்தைய தரவுத்தளத்தில் பயன்படுத்தப்படும் தரவுத்தள பெயர் மற்றும் முன்னொட்டு உள்ளமைவுக்கு "
-"ஒத்திருப்பது முதன்மை என்பதை நினைவில் கொள்க."
 
 #: ../installation/update.rst:65 d26df1746e3245af8c93d132e46585e8
 msgid "Previous version selection"
 msgstr "முந்தைய பதிப்பு தேர்வு"
 
-#: ../installation/update.rst:67 6562ac7f198f48439cd7f86cf58933b7
-msgid ""
-"Next step is the choice of the previous Galette version. Installation "
-"process will try to \"guess\" what version it as, and will select this one "
-"per default (the one that will be displayed as bold text)."
+#: ../installation/update.rst:69 7a8229ac502e4de48ff76c9034355d9d
+msgid "When the version can be read from the database, this step is skipped."
 msgstr ""
-"அடுத்த கட்டம் முந்தைய கேலட் பதிப்பின் தேர்வு. நிறுவல் செயல்முறை எந்த பதிப்பை \"யூகிக்க\" "
-"முயற்சிக்கும், மேலும் இதை இயல்புநிலையாகத் தேர்ந்தெடுக்கும் (தைரியமான உரையாக "
-"காண்பிக்கப்படும்)."
 
-#: ../installation/update.rst:73 20622ca1a1144ab5b116c31ff26e9612
+#: ../installation/update.rst:71 0b37891b0dab42f48fe3448624a98852
 msgid ""
-"If you try to update but your database version seems already correct, you "
-"will be warned. No entry will be displayed as bold text, please make sure to "
-"choose the right one:"
+"Galette reads the version its database holds and updates from there. The "
+"step below is only displayed when that reading is not conclusive - which is "
+"the case for a pre 0.7 database, since the table holding the version did not "
+"exist yet. Select the version you are coming from, the one Galette guessed "
+"is displayed as bold text:"
 msgstr ""
-"நீங்கள் புதுப்பிக்க முயற்சிக்கிறீர்கள், ஆனால் உங்கள் தரவுத்தள பதிப்பு ஏற்கனவே சரியானதாகத் "
-"தோன்றினால், உங்களுக்கு எச்சரிக்கை செய்யப்படும். தைரியமான உரையாக எந்த நுழைவும் "
-"காட்டப்படாது, தயவுசெய்து சரியானதைத் தேர்வுசெய்யவும்:"
 
-#: ../installation/update.rst:79 35944a775ff74bc2b7a58b61dc99edce
+#: ../installation/update.rst:77 c3deb332b9cb4cd0b6f6bcb2e9736cad
+msgid ""
+"The step is also displayed when your database is already up to date, so you "
+"get a chance to stop before running the scripts again:"
+msgstr ""
+
+#: ../installation/update.rst:83 35944a775ff74bc2b7a58b61dc99edce
 msgid "Once update scripts have run, a summary will be displayed."
 msgstr "புதுப்பிப்பு ச்கிரிப்ட்கள் இயங்கியதும், ஒரு சுருக்கம் காண்பிக்கப்படும்."
+
+#: ../installation/update.rst:87 57d66713277d49f3bd31cdb0792d679a
+msgid ""
+"The ``data/ENABLE_INSTALL`` file is removed once the update has completed."
+msgstr ""
+
+#~ msgid ""
+#~ "``config/config.inc.php``. If this file is missing, Galette update "
+#~ "process will ask you the information and create a new one. If the file is "
+#~ "present, it will be used to fill information excepted database password. "
+#~ "It is the only file that can be edited during update process,"
+#~ msgstr ""
+#~ "``config/config.inc.php``. இந்தக் கோப்பு காணவில்லை என்றால், கேலட் புதுப்பிப்பு "
+#~ "செயல்முறை உங்களிடம் தகவலைக் கேட்டுப் புதிய ஒன்றை உருவாக்கும். கோப்பு இருந்தால், "
+#~ "தகவல்களைத் தவிர தரவுத்தள கடவுச்சொல்லை நிரப்ப இது பயன்படுத்தப்படும். புதுப்பிப்பு "
+#~ "செயல்முறையின்போது திருத்தக்கூடிய ஒரே கோப்பு இது,"
+
+#~ msgid ""
+#~ "If so, visit the install URL ``/installer.php`` (ex: https://"
+#~ "your.domain.name/installer.php) and choose *Update* when your are asked "
+#~ "for the type of installation."
+#~ msgstr ""
+#~ "அப்படியானால், நிறுவல் வகை ``/installer.php`` (எ.கா: https://your.domain.name/"
+#~ "installer.php) ஐப் பார்வையிடவும், நிறுவல் வகையைக் கேட்கும்போது * புதுப்பிப்பு * ஐத் "
+#~ "தேர்ந்தெடுக்கவும்."
+
+#~ msgid ""
+#~ "At \"Installation type\" step, you'll have to choose \"update\". Database "
+#~ "information page will be pre filled with existing information, excepting "
+#~ "password. Other information should not be changed."
+#~ msgstr ""
+#~ "\"நிறுவல் வகை\" படி, நீங்கள் \"புதுப்பிப்பு\" என்பதை தேர்வு செய்ய வேண்டும். "
+#~ "கடவுச்சொல்லைத் தவிர, தரவுத்தள செய்தி பக்கம் ஏற்கனவே உள்ள தகவல்களால் நிரப்பப்படும். பிற "
+#~ "தகவல்களை மாற்றக்கூடாது."
+
+#~ msgid ""
+#~ "Note it is important that database name and prefixed used in previous "
+#~ "database correspond to configuration."
+#~ msgstr ""
+#~ "முந்தைய தரவுத்தளத்தில் பயன்படுத்தப்படும் தரவுத்தள பெயர் மற்றும் முன்னொட்டு உள்ளமைவுக்கு "
+#~ "ஒத்திருப்பது முதன்மை என்பதை நினைவில் கொள்க."
+
+#~ msgid ""
+#~ "Next step is the choice of the previous Galette version. Installation "
+#~ "process will try to \"guess\" what version it as, and will select this "
+#~ "one per default (the one that will be displayed as bold text)."
+#~ msgstr ""
+#~ "அடுத்த கட்டம் முந்தைய கேலட் பதிப்பின் தேர்வு. நிறுவல் செயல்முறை எந்த பதிப்பை "
+#~ "\"யூகிக்க\" முயற்சிக்கும், மேலும் இதை இயல்புநிலையாகத் தேர்ந்தெடுக்கும் (தைரியமான "
+#~ "உரையாக காண்பிக்கப்படும்)."
+
+#~ msgid ""
+#~ "If you try to update but your database version seems already correct, you "
+#~ "will be warned. No entry will be displayed as bold text, please make sure "
+#~ "to choose the right one:"
+#~ msgstr ""
+#~ "நீங்கள் புதுப்பிக்க முயற்சிக்கிறீர்கள், ஆனால் உங்கள் தரவுத்தள பதிப்பு ஏற்கனவே சரியானதாகத் "
+#~ "தோன்றினால், உங்களுக்கு எச்சரிக்கை செய்யப்படும். தைரியமான உரையாக எந்த நுழைவும் "
+#~ "காட்டப்படாது, தயவுசெய்து சரியானதைத் தேர்வுசெய்யவும்:"
