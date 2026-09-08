@@ -23,7 +23,7 @@ For security reasons, the installer does nothing until you tell it to. It stays 
 
 Create that empty file on the server, then reload the page:
 
-.. code-block:: bash
+::
 
    $ touch /path/to/galette/data/ENABLE_INSTALL
 
@@ -112,14 +112,14 @@ If a connection can be established to the database, and all is correct; installe
 
 * MariaDB:
 
-  .. code-block:: bash
+  ::
 
      mysql> use mygalette;
      mysql> show tables;
 
 * PostgreSQL:
 
-  .. code-block:: bash
+  ::
 
      postgres=# \c mygalette
      postgres=# \dt

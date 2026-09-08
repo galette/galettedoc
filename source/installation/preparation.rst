@@ -45,7 +45,7 @@ For the example, we will use a database named `mygalette` with a user `mygalette
 
 * MariaDB
 
-  .. code-block:: bash
+  ::
 
      $ mysql -u root -p
      mysql> CREATE DATABASE mygalette;
@@ -54,10 +54,9 @@ For the example, we will use a database named `mygalette` with a user `mygalette
 
 * PostgreSQL
 
-  .. code-block:: bash
+  ::
 
-     $ su -
-     # su - postgres
+     $ sudo su - postgres
      $ createuser -P mygaletteuser
      $ createdb -O mygaletteuser mygalette
 

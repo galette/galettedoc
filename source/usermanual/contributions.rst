@@ -52,7 +52,7 @@ Galette will tell you if some members do not have an email address, you can prin
 
 Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
 
-.. code-block:: bash
+::
 
    30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/reminder.php
 
