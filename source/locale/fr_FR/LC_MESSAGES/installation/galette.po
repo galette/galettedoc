@@ -1,11 +1,11 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2023.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2023, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-08 22:51+0200\n"
-"PO-Revision-Date: 2023-11-05 12:25+0000\n"
+"PO-Revision-Date: 2026-09-08 21:25+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "install-galette/fr/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: ../installation/galette.rst:3 69781de4d7ea47b48e4048bb25d83f50
 msgid "Installation"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../installation/galette.rst:14 17a27916c1ae4c378497b4f57a54df55
 msgid "Enabling the installer"
-msgstr ""
+msgstr "Activer l'installeur"
 
 #: ../installation/galette.rst:18 a19edd89186346cfa9414b650873f200
 msgid ""
@@ -52,16 +52,21 @@ msgid ""
 "stays closed as long as a file named ``ENABLE_INSTALL`` is missing from "
 "Galette |folder| ``data`` directory:"
 msgstr ""
+"Pour des raisons de sécurité, l'installateur ne fait rien sans que vous ne "
+"lui demandiez. Il reste fermé tant qu'un fichier nommé ``ENABLE_INSTALL`` "
+"est absent du dossier |folder| ``data`` de Galette :"
 
 #: ../installation/galette.rst:24 bea752b528e241b4901150896bc2a514
 msgid "Create that empty file on the server, then reload the page:"
-msgstr ""
+msgstr "Créer ce fichier vide sur le serveur, puis recharger la page :"
 
 #: ../installation/galette.rst:30 1867f4aea1544d19b1656da5fbfc1626
 msgid ""
 "Creating it proves you have an access to the server, which a visitor passing "
 "by has not."
 msgstr ""
+"Le créer prouve que vous avez accès au serveur, ce qu'un visiteur de passage "
+"n'a pas."
 
 #: ../installation/galette.rst:32 2cbf2935a62440c7b72337443e94a1d7
 msgid ""
@@ -73,23 +78,30 @@ msgid ""
 "displays a warning instead: remove the file by hand, the installation is "
 "complete all the same."
 msgstr ""
+"Galette supprime le fichier par lui-même une fois l'installation - ou la "
+":doc:`mise à jour <update>` - terminée, l'installateur se ferme à nouveau "
+"derrière vous. Cela nécessite un accès en écriture sur le répertoire "
+"|folder| ``data``, qui ne fait pas partie des :ref:`répertoires dans "
+"lesquels Galette a besoin d'écrire <droitsfichiers>`. S'il est lu seulement "
+"pour le serveur web, la dernière étape affiche un avertissement à la place: "
+"supprimez le fichier à la main, l'installation est quand même complète."
 
 #: ../installation/galette.rst:36 b07ef6345c7942f38386c8c88e9a13e3
 msgid ""
 "It is the **absence** of the file that closes the installer, and that is on "
 "purpose: losing it can only close the installer, it can never open it."
 msgstr ""
+"C'est **l'absence** du fichier qui ferme l'installateur, et c'est volontaire "
+": le perdre ne peut que fermer l'installateur, il ne peut jamais l'ouvrir."
 
 #: ../installation/galette.rst:39 b1bebd6e8fce415b8f5d798494c152f4
-#, fuzzy
-#| msgid "Installation type"
 msgid "Installation or update?"
-msgstr "Type d'installation"
+msgstr "Installation ou mise à jour ?"
 
 #: ../installation/galette.rst:43 2a955a4cedd04eb686261e5557973982
 msgid ""
 "Galette does not ask anymore, and the corresponding step has been removed."
-msgstr ""
+msgstr "Galette ne le demande plus, et l'étape correspondante a été supprimée."
 
 #: ../installation/galette.rst:45 65b8f2236c4041f1879009a8c0445b52
 msgid ""
@@ -97,6 +109,9 @@ msgid ""
 "configuration file means a new installation, an existing one means "
 "an :doc:`update <update>`."
 msgstr ""
+"Le mode est déduit du fichier |phpfile| ``config/config.inc.php`` : pas de "
+"fichier de configuration signifie une nouvelle installation, un existant "
+"signifie un :doc:`mise à jour <update>`."
 
 #: ../installation/galette.rst:49 4db9b08c40b040db8a195aa8798fccf5
 msgid ""
@@ -104,6 +119,9 @@ msgid ""
 "remove the configuration file first. As long as it is there, Galette will "
 "only offer to update."
 msgstr ""
+"Pour installer une nouvelle instance sur une instance existante - tout en "
+"effaçant ses données - supprimez le fichier de configuration d'abord. Tant "
+"qu'il est là, Galette ne proposera que de mettre à jour."
 
 #: ../installation/galette.rst:52 ../installation/galette.rst:96
 #: 25852036d270497bbfd7c528477d1e66
@@ -215,6 +233,10 @@ msgid ""
 "file, and the step is skipped. It only comes back if that file cannot be "
 "read, or if it is incomplete."
 msgstr ""
+"Cette étape est n'est affichée que pour une nouvelle installation. Lors de "
+"la mise à jour, tout - mot de passe inclus - est lu dans le fichier de "
+"configuration existant, et l'étape est sautée. Elle ne revient que si ce "
+"fichier ne peut être lu, ou s'il est incomplet."
 
 #: ../installation/galette.rst:98 75358f1eded040fba22d5589e8d9e7d8
 msgid ""
@@ -311,17 +333,14 @@ msgid "Initialize"
 msgstr "Initialiser"
 
 #: ../installation/galette.rst:155 9c70e3b65d7942d2bc73ab3898f7d748
-#, fuzzy
-#| msgid ""
-#| "The last step will write the configuration file if needed, and initialize "
-#| "some values in your fresh database, as exemple:"
 msgid ""
 "The last step will write the configuration file if needed, remove the "
 "``ENABLE_INSTALL`` file, and initialize some values in your fresh database, "
 "as exemple:"
 msgstr ""
-"La dernière étape écrit le fichier de configuration au besoin, et initialise "
-"des valeurs par défaut dans votre base, par exemple :"
+"La dernière étape écrit le fichier de configuration au besoin, supprime le "
+"fichier ``ENABLE_INSTALL``, et initialise des valeurs par défaut dans votre "
+"base, par exemple :"
 
 #: ../installation/galette.rst:157 d9ea9a5904ed44f2ba4bbcf98e5bfc81
 msgid "add Galette default preferences"
