@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-08 22:51+0200\n"
 "PO-Revision-Date: 2025-10-13 09:07+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-"
@@ -158,7 +158,7 @@ msgstr "MariaDB"
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#: ../installation/preparation.rst:64 471836a366e149fca9402da26a1d2498
+#: ../installation/preparation.rst:63 471836a366e149fca9402da26a1d2498
 msgid ""
 "Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/"
 "library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ "
@@ -169,11 +169,11 @@ msgstr ""
 ">`_ o di `PostgreSQL <https://docs.postgresqlfr.org>`_ o di utilizzare uno "
 "strumento grafico:"
 
-#: ../installation/preparation.rst:66 016c5a5d6c154041b6d9c8a67fa527c0
+#: ../installation/preparation.rst:65 016c5a5d6c154041b6d9c8a67fa527c0
 msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;"
 msgstr "`phpMyAdmin <https://www.phpmyadmin.net>`_ per MariaDB;"
 
-#: ../installation/preparation.rst:67 377d2294f1564611b893565aa0db7645
+#: ../installation/preparation.rst:66 377d2294f1564611b893565aa0db7645
 msgid ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://"
 "www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
@@ -182,11 +182,11 @@ msgstr ""
 "www.pgadmin.org/download/?lang=it_IT>`_ per PostgreSQL."
 
 # 9a9c55f3b3874ad684f384df06fef0b5
-#: ../installation/preparation.rst:72 18b9bb15bf7d4dd7ba45a1c5b79e1d8d
+#: ../installation/preparation.rst:71 18b9bb15bf7d4dd7ba45a1c5b79e1d8d
 msgid "Web server directory exposition"
 msgstr "Esposizione della cartella del server Web"
 
-#: ../installation/preparation.rst:76 37e62accde3b415cadbf85367a936766
+#: ../installation/preparation.rst:75 37e62accde3b415cadbf85367a936766
 msgid ""
 "Galette installation may consists in copying a complete directory to a "
 "location the web server can read. This method may work, but this exposes "
@@ -198,7 +198,7 @@ msgstr ""
 "essere disponibili in questo modo."
 
 # 53bc3cd84f9644209a7262154f9fa6d5
-#: ../installation/preparation.rst:78 45c35ffe649746cba70af6c7eea6c637
+#: ../installation/preparation.rst:77 45c35ffe649746cba70af6c7eea6c637
 msgid ""
 "It is possible to limit that by exposing only the ``webroot`` directory. All "
 "other directories are more safe: it is not possible to reach them from the "
@@ -208,19 +208,19 @@ msgstr ""
 "altre cartelle saranno più sicure se non sarà possibile raggiungerle dal "
 "server web!"
 
-#: ../installation/preparation.rst:82 a978ad7b5d5642d2a26463fc5f1379b5
+#: ../installation/preparation.rst:81 a978ad7b5d5642d2a26463fc5f1379b5
 msgid ""
 "Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr ""
 "L'esposizione solo della cartella ``webroot`` è il metodo raccomandato, e il "
 "solo sicuro."
 
-#: ../installation/preparation.rst:85 54bb017b6aaf4b1eb394c2d09d7533c8
+#: ../installation/preparation.rst:84 54bb017b6aaf4b1eb394c2d09d7533c8
 msgid "Using a subdomain"
 msgstr "Uso di un sottodominio"
 
 # 62f372e30d8f43ba8e0647cb013befab
-#: ../installation/preparation.rst:87 f23214d559a444688fd7432b7cbbaf7c
+#: ../installation/preparation.rst:86 f23214d559a444688fd7432b7cbbaf7c
 msgid ""
 "Here is a virtual host configuration example, including the hide of "
 "`index.php`:"
@@ -229,15 +229,15 @@ msgstr ""
 "`index.php`:"
 
 # d94eb207533e4fa996a801a0f48c6115
-#: ../installation/preparation.rst:114 b8edbd4f9b7042fcba445c713af742c0
+#: ../installation/preparation.rst:113 b8edbd4f9b7042fcba445c713af742c0
 msgid "Nginx would be:"
 msgstr "Con Nginx sarebbe:"
 
-#: ../installation/preparation.rst:155 602cc27c13d0462ab3ddae057161baf3
+#: ../installation/preparation.rst:154 602cc27c13d0462ab3ddae057161baf3
 msgid "Using an alias"
 msgstr "Uso di alias"
 
-#: ../installation/preparation.rst:157 b5f8be49ca9b409ebd4666ff106cf4a3
+#: ../installation/preparation.rst:156 b5f8be49ca9b409ebd4666ff106cf4a3
 msgid ""
 "An alternative secured configuration, if you do not have a specific "
 "subdomain for Galette is to use an ``alias`` in your existing virtual host:"
@@ -246,7 +246,7 @@ msgstr ""
 "sottodominio specifico per Galette è quella di utilizzare un ``alias``` nel "
 "proprio host virtuale esistente:"
 
-#: ../installation/preparation.rst:176 5a07bc26ebbd491aad9196ce54d23bec
+#: ../installation/preparation.rst:175 5a07bc26ebbd491aad9196ce54d23bec
 msgid ""
 "Do not forget with that solution you have to setup correctly your "
 "``RewriteBase`` directive."
@@ -255,12 +255,12 @@ msgstr ""
 "correttamente la direttiva ``RewriteBase``."
 
 # 82bcf8d4b84f447d81a3e6938bdb6c8d
-#: ../installation/preparation.rst:181 38034f385000466c9bbea8a5b5b6e542
+#: ../installation/preparation.rst:180 38034f385000466c9bbea8a5b5b6e542
 msgid "Linux/Unix"
 msgstr "Linux/Unix"
 
 # d260edab8b0b4971a43ce611e346b0fc
-#: ../installation/preparation.rst:183 370f999d6b3f48b3a3d887f3eff2df06
+#: ../installation/preparation.rst:182 370f999d6b3f48b3a3d887f3eff2df06
 msgid ""
 "Installing Galette on Linux implies you have an access to the terminal on "
 "the server and required ACLs on directories."
@@ -269,14 +269,14 @@ msgstr ""
 "server e le ACL necessarie sulle cartelle."
 
 # 280d13e2912147b89ab8f92006fbf02c
-#: ../installation/preparation.rst:185 e9375ca06c5444ebb3a6a8e3689a3637
+#: ../installation/preparation.rst:184 e9375ca06c5444ebb3a6a8e3689a3637
 msgid ""
 "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 "Per esempio, su `Fedora <https://fedora.org>`_, si eseguirà (come root):"
 
 # a51d3208745f49f598a320be8e8c3253
-#: ../installation/preparation.rst:192 837dde2933324f599e52cbb510fa171b
+#: ../installation/preparation.rst:191 837dde2933324f599e52cbb510fa171b
 msgid ""
 "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
 "``www-data:www-data``."
@@ -285,12 +285,12 @@ msgstr ""
 "``www-data:www-data``."
 
 # b54138ad663543e384177c69e4c3098d
-#: ../installation/preparation.rst:194 7e65e82114f74f558565bad8a7762176
+#: ../installation/preparation.rst:193 7e65e82114f74f558565bad8a7762176
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr "Su sistemi abilitati SELinux, aggiungeremo anche:"
 
 # 2751659b41c44363901fb4a1806e4873
-#: ../installation/preparation.rst:202 4cc4efa142a94071be7ec0d1ea6d2db8
+#: ../installation/preparation.rst:201 4cc4efa142a94071be7ec0d1ea6d2db8
 msgid ""
 "You will also have to authorize webserver to connect to the network, with a "
 "SELinux boolean:"
@@ -299,12 +299,12 @@ msgstr ""
 "booleano SELinux:"
 
 # 74fa778214ed44d685a984eb767b7bb9
-#: ../installation/preparation.rst:211 d5eec4271a3c4eda9e2f02dde3919819
+#: ../installation/preparation.rst:210 d5eec4271a3c4eda9e2f02dde3919819
 msgid "FTP"
 msgstr "FTP"
 
 # 619efe30fb1049c4bcdcebd872d05e92
-#: ../installation/preparation.rst:215 b57906d401ec41a688606efa2a7e110f
+#: ../installation/preparation.rst:214 b57906d401ec41a688606efa2a7e110f
 msgid ""
 "Some archive or FTP software may corrupt files... It is strongly advised if "
 "you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
@@ -316,7 +316,7 @@ msgstr ""
 "trasferimenti TFP."
 
 # d48a40394ccb4847bd997517a9d76d26
-#: ../installation/preparation.rst:217 ad2c7a97f8eb4e0cb9639d394ff92758
+#: ../installation/preparation.rst:216 ad2c7a97f8eb4e0cb9639d394ff92758
 msgid ""
 "Once source code has been retrieved locally, use :samp:`tar xjvf "
 "{galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under "
@@ -327,7 +327,7 @@ msgstr ""
 "strumento grafico in Windows."
 
 # be59c450b26d43f19c2acd3c35c0aef3
-#: ../installation/preparation.rst:219 a9fc115c646949a6889146fab12d3bb6
+#: ../installation/preparation.rst:218 a9fc115c646949a6889146fab12d3bb6
 msgid ""
 "Just copy the uncompressed directory obtained, and all its sub directories "
 "and files, with your FTP client."
@@ -336,17 +336,17 @@ msgstr ""
 "sottocartelle e i suoi file, tramite un client FTP."
 
 # 85bf856902544c138f8eefc6702fc834
-#: ../installation/preparation.rst:226 d923d1f3678b452d996b6209b42d961e
+#: ../installation/preparation.rst:225 d923d1f3678b452d996b6209b42d961e
 msgid "Specific cases"
 msgstr "Casi specifici"
 
 # a2fd9686759248da9ce7554211e4c5e4
-#: ../installation/preparation.rst:229 2aa5519f36ac408fb72b250aeb58bf7c
+#: ../installation/preparation.rst:228 2aa5519f36ac408fb72b250aeb58bf7c
 msgid "Ionos"
 msgstr "Ionos"
 
 # 314c1642d1934fcbb3f9c9acb97299e9
-#: ../installation/preparation.rst:231 4e067138825e4a1683c3134e72a4f90f
+#: ../installation/preparation.rst:230 4e067138825e4a1683c3134e72a4f90f
 msgid ""
 "If you're hosted on Ionos; and want to use a specific subdomain for Galette, "
 "you must create your subdomain from their UI, and make it points to the "
@@ -360,12 +360,12 @@ msgstr ""
 "``RewriteBase /``."
 
 # c316873000d24416a630e777bdbbf856
-#: ../installation/preparation.rst:234 3157f0c662a1403683926300cc1f6509
+#: ../installation/preparation.rst:233 3157f0c662a1403683926300cc1f6509
 msgid "OVH"
 msgstr "OVH"
 
 # ee1343f0abf342fdb270628a782036ee
-#: ../installation/preparation.rst:236 7105479146614aaaafec0ae8963d44d5
+#: ../installation/preparation.rst:235 7105479146614aaaafec0ae8963d44d5
 msgid ""
 "This hosting company offers to `change PHP version you use from your "
 "customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
@@ -376,7 +376,7 @@ msgstr ""
 "configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
 
 # 06f8ed7399954b21a21ef2746b778fa6
-#: ../installation/preparation.rst:238 64cfb89d9cdc475faa053bca41677e4d
+#: ../installation/preparation.rst:237 64cfb89d9cdc475faa053bca41677e4d
 msgid ""
 "Additional information are available at: https://docs.ovh.com/fr/fr/web/"
 "hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
@@ -384,7 +384,7 @@ msgstr ""
 "Ulteriori informazioni sono disponibili su: https://help.ovhcloud.com/csm/it-"
 "web-hosting-change-php-version?id=kb_article_view&sysparm_article=KB0053021"
 
-#: ../installation/preparation.rst:242 4bf152be97c34a9ba2b6af88dfcb8195
+#: ../installation/preparation.rst:241 4bf152be97c34a9ba2b6af88dfcb8195
 msgid ""
 "Many users have display images or attendance sheet issues on OVH hosts. The "
 "solution to this issue is to create a ``.ovhconfig`` file at your hosting "
@@ -395,12 +395,12 @@ msgstr ""
 "``.ovhconfig`` alla radice dell'hosting con i seguenti contenuti:"
 
 # 527fcbf01270441f8d9cc7a08ba5fa89
-#: ../installation/preparation.rst:249 633150f3fc1d411287bd62fc2093f7e8
+#: ../installation/preparation.rst:248 633150f3fc1d411287bd62fc2093f7e8
 msgid "Nginx"
 msgstr "Nginx"
 
 # bcb5e07ec7614f7abf3c0f26067820e5
-#: ../installation/preparation.rst:251 bcbd7c34573c4be8ae4758fa43adf31c
+#: ../installation/preparation.rst:250 bcbd7c34573c4be8ae4758fa43adf31c
 msgid ""
 "`Nginx webserver <https://nginx.com>`_ configuration is different from "
 "Apache one (see `Nginx documentation for a more complete explanation "
@@ -413,7 +413,7 @@ msgstr ""
 "example /Likeapache-htaccess/>`_)."
 
 # 79dad613c1954a4c93cf8f5aea93cda7
-#: ../installation/preparation.rst:253 63ed36be97604fd3b2447e74e137d017
+#: ../installation/preparation.rst:252 63ed36be97604fd3b2447e74e137d017
 msgid ""
 "So you have to convert restriction access files in Nginx configuration, as "
 "for example:"
@@ -422,12 +422,12 @@ msgstr ""
 "configurazione Nginx, come per esempio:"
 
 # a2fd9686759248da9ce7554211e4c5e4
-#: ../installation/preparation.rst:264 bd9b71d5e7e14eeba16d180a2464c34b
+#: ../installation/preparation.rst:263 bd9b71d5e7e14eeba16d180a2464c34b
 msgid "Windows"
 msgstr "Windows"
 
 # f85412eb27ee45f786f165e1f25926de
-#: ../installation/preparation.rst:266 105ead040bdb4d35a0d7f81328638736
+#: ../installation/preparation.rst:265 105ead040bdb4d35a0d7f81328638736
 msgid ""
 "Installation described here rely on `XAMPP <https://www.apachefriends.org/"
 "xampp-windows.html>`_; other installation methods exist but are not listed "
@@ -438,7 +438,7 @@ msgstr ""
 "installazione ma non sono elencati qui."
 
 # ad9856f5a73349f3aa9953fee56f51a3
-#: ../installation/preparation.rst:268 fc2bbae60a2d4e748437443c67859539
+#: ../installation/preparation.rst:267 fc2bbae60a2d4e748437443c67859539
 msgid ""
 "First of all, download XAMPP on your computer. Let's install it under ``C:"
 "\\xampp``."
@@ -447,7 +447,7 @@ msgstr ""
 "``c:\\xampp``."
 
 # 1c9a43244f9449baa83a24ac393a91eb
-#: ../installation/preparation.rst:274 f92f30cc8f474862a9f13f9e78463688
+#: ../installation/preparation.rst:273 f92f30cc8f474862a9f13f9e78463688
 msgid ""
 "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
 "so you can start Apache and MySQL services."
@@ -456,7 +456,7 @@ msgstr ""
 "da poter avviare i servizi Apache e MySQL."
 
 # 0249db612f1942f188c029618ddd79c2
-#: ../installation/preparation.rst:280 6f85ca76f72c478fa3ebbdd16eb830c5
+#: ../installation/preparation.rst:279 6f85ca76f72c478fa3ebbdd16eb830c5
 msgid ""
 "Once those steps done, download galette and move it to ``C:"
 "\\wampp\\htdocs\\galette``, web application will be available from http://"
@@ -468,7 +468,7 @@ msgstr ""
 "installazione."
 
 # 0e8b3f363ca74a98a77f8fc2749fde88
-#: ../installation/preparation.rst:284 245167ff5940457a9436bd183dd49938
+#: ../installation/preparation.rst:283 245167ff5940457a9436bd183dd49938
 msgid ""
 "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
 "the required extensions are already present, but commented (line begins with "
@@ -480,7 +480,7 @@ msgstr ""
 "XAMPP."
 
 # e92325a73ac9428fbaf7fd8e7e134702
-#: ../installation/preparation.rst:286 3649e5d120b3490aa12153a6ebe8e626
+#: ../installation/preparation.rst:285 3649e5d120b3490aa12153a6ebe8e626
 msgid ""
 "`openssl` extension is missing in the file, to activate it just add the "
 "following to your `php.ini`: ``extension=php_openssl.dll``"
