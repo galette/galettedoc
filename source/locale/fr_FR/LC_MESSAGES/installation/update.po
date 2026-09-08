@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2023, 2024, 2025.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-08 22:51+0200\n"
-"PO-Revision-Date: 2025-11-14 07:16+0000\n"
+"PO-Revision-Date: 2026-09-08 21:37+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "install-update/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: ../installation/update.rst:5 d3ad0ff8e45e4fbc84844f094894735c
 msgid "Updating"
@@ -106,6 +106,11 @@ msgid ""
 "credential again. If it is missing, Galette cannot know it is an update: it "
 "would offer a brand new installation instead,"
 msgstr ""
+"``config/config.inc.php``. Si le fichier est présent, la mise à jour le lit "
+"entièrement - mot de passe de base de données inclus - et ne vous demande "
+"jamais de nouvelles informations. S'il manque, Galette ne peut pas savoir "
+"qu'il s'agit d'une mise à jour : elle offrirait une nouvelle installation à "
+"la place,"
 
 #: ../installation/update.rst:31 c53e78889f964675b4b66571b543e2de
 msgid "``data/photos`` your members photos and logos,"
@@ -147,6 +152,11 @@ msgid ""
 "https://your.domain.name/installer.php). Galette sees your configuration "
 "file and runs an update, you have nothing to choose."
 msgstr ""
+"Si oui, :ref:`activez l'installateur <enableinstaller>` en créant le fichier "
+"``data/ENABLE_INSTALL``, puis visitez l'URL d'installation ``/"
+"installer.php`` (ex: https://your.domain.name/installer.php). Galette voit "
+"votre fichier de configuration et exécute une mise à jour, vous n'avez rien "
+"à choisir."
 
 #: ../installation/update.rst:41 1b03bc57003a440b8a6dd0b5b7be9b95
 msgid "If it asks you nothing you're just done already ;)"
@@ -192,6 +202,8 @@ msgid ""
 "Database information are not asked anymore, and neither is the installation "
 "type."
 msgstr ""
+"Les informations de base de données ne sont plus demandées nulle part, ni le "
+"type d'installation."
 
 #: ../installation/update.rst:62 fc6dd895b9244ed4aac6f12ac0187445
 msgid ""
@@ -201,6 +213,11 @@ msgid ""
 "or is incomplete - fill it in with the very same information as before, the "
 "table prefix included."
 msgstr ""
+"La mise à jour lit le type de base de données, l'hôte, le port, le nom de la "
+"base, l'utilisateur, le mot de passe et le préfixe de table depuis votre "
+"fichier de configuration. Le formulaire ne revient que si ce fichier ne peut "
+"pas être lu ou est incomplet - pour le remplir avec les mêmes informations "
+"qu'avant, le préfixe de table inclus."
 
 #: ../installation/update.rst:65 d26df1746e3245af8c93d132e46585e8
 msgid "Previous version selection"
@@ -209,6 +226,8 @@ msgstr "Sélection de la version précédente"
 #: ../installation/update.rst:69 7a8229ac502e4de48ff76c9034355d9d
 msgid "When the version can be read from the database, this step is skipped."
 msgstr ""
+"Lorsque la version peut être lue de la base de données, cette étape est "
+"ignorée."
 
 #: ../installation/update.rst:71 0b37891b0dab42f48fe3448624a98852
 msgid ""
@@ -218,12 +237,20 @@ msgid ""
 "exist yet. Select the version you are coming from, the one Galette guessed "
 "is displayed as bold text:"
 msgstr ""
+"Galette lit la version de sa base de données et met à jour depuis. L'étape "
+"ci-dessous n'est affichée que lorsque cette lecture n'est pas concluante - "
+"ce qui est le cas pour une base de données pré 0.7, puisque le tableau "
+"tenant la version n'existait pas encore. Sélectionnez la version depuis "
+"laquelle vous venez, celle que Galette a devinée est affichée en texte gras :"
 
 #: ../installation/update.rst:77 c3deb332b9cb4cd0b6f6bcb2e9736cad
 msgid ""
 "The step is also displayed when your database is already up to date, so you "
 "get a chance to stop before running the scripts again:"
 msgstr ""
+"L'étape est également affichée lorsque votre base de données est déjà à "
+"jour, vous obtenez donc une chance de s'arrêter avant de lancer les scripts "
+"à nouveau :"
 
 #: ../installation/update.rst:83 35944a775ff74bc2b7a58b61dc99edce
 msgid "Once update scripts have run, a summary will be displayed."
@@ -235,6 +262,8 @@ msgstr ""
 msgid ""
 "The ``data/ENABLE_INSTALL`` file is removed once the update has completed."
 msgstr ""
+"Le fichier ``data/ENABLE_INSTALL`` est supprimé une fois la mise à jour "
+"terminée."
 
 #~ msgid ""
 #~ "``config/config.inc.php``. If this file is missing, Galette update "
