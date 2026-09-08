@@ -127,6 +127,64 @@ Required options that have not been provided on script call will be asked intera
      Do you want to continue? (yes/no) [no]:
      >
 
+Super administrator password
+============================
+
+.. versionadded:: 1.3.0
+
+The super administrator password is normally changed from the :ref:`preferences <man_preferences>`, or from the :ref:`advanced configuration <advanced_config>` page. Both require to be logged in, which is of little help the day the password is lost: the super administrator is not a member, so it cannot use the *forgotten password* form either.
+
+This command is the way back in. It runs on the machine hosting Galette, and that access stands as the authentication.
+
+::
+
+    $ php bin/console help galette:superadmin:password
+    Description:
+      Change the super administrator password
+
+    Usage:
+      galette:superadmin:password
+
+    Options:
+      -h, --help            Display help for the given command. When no command is given display help for the list command
+          --silent          Do not output any message
+      -q, --quiet           Only errors are displayed. All other output is suppressed
+      -V, --version         Display this application version
+          --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
+      -n, --no-interaction  Do not ask any interactive question
+      -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+There is no option to pass the password with: it is only ever read from a hidden prompt, so that it does not end up in your shell history nor in the process list of the machine. It is asked twice, and the two answers must match.
+
+::
+
+    $ php bin/console galette:superadmin:password
+
+    Change the super administrator password
+    =======================================
+
+     Super administrator login: admin
+
+     New password:
+     >
+
+     Confirm new password:
+     >
+
+     [OK] Super administrator password has been changed.
+
+The login is displayed so you know which account you just changed, but the command does not touch it. Change it from the preferences, as usual.
+
+The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page: too short a password, or one that does not reach the required strength, is refused and nothing is stored.
+
+.. note::
+
+    A terminal is needed. Called with ``--no-interaction``, or with its input piped from a file or another command, the command refuses to run rather than silently doing nothing.
+
+.. warning::
+
+    The command is disabled when Galette runs in ``DEMO`` :ref:`mode <galettemodes>`.
+
 Plugins commands
 ================
 

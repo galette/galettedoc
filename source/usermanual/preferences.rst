@@ -190,6 +190,8 @@ Cards
    :align: center
    :alt: Galette settings, cards tab
 
+.. _password_rules:
+
 Security
 ========
 
