@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-08 22:51+0200\n"
-"PO-Revision-Date: 2023-06-11 06:18+0000\n"
+"PO-Revision-Date: 2026-09-08 21:37+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "install-postinstall/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: ../installation/postinstall.rst:5 39f07e8e73204f50bb4addc62a782c1f
 msgid "Post installation"
@@ -26,17 +26,15 @@ msgid "Various tasks"
 msgstr "Tâches diverses"
 
 #: ../installation/postinstall.rst:10 6dd63078290149f5aeb6e803d5e4bdc3
-#, fuzzy
-#| msgid "One Galette properly installed, you still have one thing to do:"
 msgid ""
 "One Galette properly installed, you still have a couple of things to do:"
-msgstr "Une fois que Galette est installé, il reste une petite chose à faire :"
+msgstr ""
+"Une fois que Galette est installée, il reste quelques petites choses à faire "
+":"
 
 #: ../installation/postinstall.rst:12 543f0eec81e7480ea9c80bdf7314c31e
-#, fuzzy
-#| msgid "remove write access to the ``config`` directory."
 msgid "remove write access to the ``config`` directory,"
-msgstr "supprimer l'accès en écriture au répertoire ``config``."
+msgstr "supprimer l'accès en écriture au répertoire ``config``,"
 
 #: ../installation/postinstall.rst:13 104819099eaa4227b5ba700d92e45c15
 msgid ""
@@ -45,6 +43,10 @@ msgid ""
 "silently when it cannot - see :ref:`enabling the installer "
 "<enableinstaller>`."
 msgstr ""
+"vérifier que le fichier ``data/ENABLE_INSTALL`` n'existe plus. Galette "
+"l'enlève tout seul à la fin de l'installation, mais il vous avertit au lieu "
+"d'échouer silencieusement quand il ne peut pas - voir :ref:` activer "
+"l'installateur <enableinstaller>`."
 
 #: ../installation/postinstall.rst:18 baa633630a594adeb73f34ff424091c8
 msgid "Configure paths"
