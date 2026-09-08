@@ -7,9 +7,10 @@ Post installation
 Various tasks
 =============
 
-One Galette properly installed, you still have one thing to do:
+One Galette properly installed, you still have a couple of things to do:
 
-* remove write access to the ``config`` directory.
+* remove write access to the ``config`` directory,
+* check the ``data/ENABLE_INSTALL`` file is gone. Galette removes it on its own at the end of the installation, but it warns you instead of failing silently when it cannot - see :ref:`enabling the installer <enableinstaller>`.
 
 .. _configpaths:
 

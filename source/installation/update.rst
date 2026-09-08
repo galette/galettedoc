@@ -27,7 +27,7 @@ Then, download latest Galette version and replace the files. For more informatio
 
 Some directories keep data and/or configurations and should be copied back to the new instance:
 
-* ``config/config.inc.php``. If this file is missing, Galette update process will ask you the information and create a new one. If the file is present, it will be used to fill information excepted database password. It is the only file that can be edited during update process,
+* ``config/config.inc.php``. If the file is present, the update reads everything from it - database password included - and never asks you for a credential again. If it is missing, Galette cannot know it is an update: it would offer a brand new installation instead,
 * ``data/photos`` your members photos and logos,
 * ``data/exports`` contains CSv exports,
 * ``data/files`` contains files from dynamic fields of type file,
@@ -36,7 +36,7 @@ Some directories keep data and/or configurations and should be copied back to th
 
 Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database.
 
-If so, visit the install URL ``/installer.php`` (ex: https://your.domain.name/installer.php) and choose *Update* when your are asked for the type of installation.
+If so, :ref:`enable the installer <enableinstaller>` by creating the ``data/ENABLE_INSTALL`` file, then visit the install URL ``/installer.php`` (ex: https://your.domain.name/installer.php). Galette sees your configuration file and runs an update, you have nothing to choose.
 
 If it asks you nothing you're just done already ;)
 
@@ -55,25 +55,33 @@ Update process is very similar to :doc:`Galette installation process <galette>`,
 Database information
 ---------------------
 
-At "Installation type" step, you'll have to choose "update". Database information page will be pre filled with existing information, excepting password. Other information should not be changed.
+.. versionchanged:: 1.3.0
 
-.. note::
+   Database information are not asked anymore, and neither is the installation type.
 
-   Note it is important that database name and prefixed used in previous database correspond to configuration.
+The update reads the database type, host, port, name, user, password and table prefix from your configuration file, and goes straight to the access and permissions check. The form only comes back if that file cannot be read or is incomplete - fill it in with the very same information as before, the table prefix included.
 
 Previous version selection
 --------------------------
 
-Next step is the choice of the previous Galette version. Installation process will try to "guess" what version it as, and will select this one per default (the one that will be displayed as bold text).
+.. versionchanged:: 1.3.0
+
+   When the version can be read from the database, this step is skipped.
+
+Galette reads the version its database holds and updates from there. The step below is only displayed when that reading is not conclusive - which is the case for a pre 0.7 database, since the table holding the version did not exist yet. Select the version you are coming from, the one Galette guessed is displayed as bold text:
 
 .. image:: ../_styles/static/images/installation/5_update_version_select.png
    :scale: 50%
    :align: center
 
-If you try to update but your database version seems already correct, you will be warned. No entry will be displayed as bold text, please make sure to choose the right one:
+The step is also displayed when your database is already up to date, so you get a chance to stop before running the scripts again:
 
 .. image:: ../_styles/static/images/installation/5bis_already_updated.png
    :scale: 50%
    :align: center
 
 Once update scripts have run, a summary will be displayed.
+
+.. note::
+
+   The ``data/ENABLE_INSTALL`` file is removed once the update has completed.
