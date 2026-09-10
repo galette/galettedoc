@@ -262,7 +262,7 @@ For example:
 
    Only the settings Galette needs **before it can reach database** are still declared here. The others became regular settings, editable from the :ref:`advanced configuration <advanced_config>` page.
 
-The following are read too early to be stored in database, so this file is the only place they can be set:
+The following settings can be set:
 
 * ``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,
 * ``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,
@@ -275,7 +275,7 @@ Settings that moved
 
 .. versionadded:: 1.3.0
 
-Three settings that used to be declared here are now stored in database, and edited from the :ref:`advanced configuration <advanced_config>` page:
+   Three settings that used to be declared here are now stored in database, and edited from the :ref:`advanced configuration <advanced_config>` page:
 
 * ``GALETTE_URI`` became ``pref_galette_url``,
 * ``GALETTE_X_FORWARDED_FOR_INDEX`` became ``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a proxy <proxy_ip>`,
