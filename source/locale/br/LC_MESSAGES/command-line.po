@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-10 07:38+0200\n"
 "PO-Revision-Date: 2024-09-22 09:59+0200\n"
 "Last-Translator: Johan Cwiklinski <johan@x-tnd.be>\n"
 "Language-Team: French\n"
@@ -69,36 +69,90 @@ msgid ""
 "interactively."
 msgstr ""
 
-#: ../command-line.rst:131 e5a534ee93f2455cbfe77e9b909d2e69
+#: ../command-line.rst:131 d81d6e22c1aa4bf08a96a867fcd06d7f
+msgid "Super administrator password"
+msgstr ""
+
+#: ../command-line.rst:135 e8ba82180024400f8c8acf2499eaa577
+msgid ""
+"The super administrator password is normally changed from "
+"the :ref:`preferences <man_preferences>`, or from the :ref:`advanced "
+"configuration <advanced_config>` page. Both require to be logged in, which "
+"is of little help the day the password is lost: the super administrator is "
+"not a member, so it cannot use the *forgotten password* form either."
+msgstr ""
+
+#: ../command-line.rst:137 4bbd06f1b7954ff48ff796efb0d8b31f
+msgid ""
+"This command is the way back in. It runs on the machine hosting Galette, and "
+"that access stands as the authentication."
+msgstr ""
+
+#: ../command-line.rst:157 a760cf598fed48b5b374a6b74b84d760
+msgid ""
+"There is no option to pass the password with: it is only ever read from a "
+"hidden prompt, so that it does not end up in your shell history nor in the "
+"process list of the machine. It is asked twice, and the two answers must "
+"match."
+msgstr ""
+
+#: ../command-line.rst:176 46d0d0aa9b0f46bcbdc79fa91979def9
+msgid ""
+"The login is displayed so you know which account you just changed, but the "
+"command does not touch it. Change it from the preferences, as usual."
+msgstr ""
+
+#: ../command-line.rst:178 f1126021f9dd4edaad61144127cf3822
+msgid ""
+"The new password must satisfy the :ref:`password rules <password_rules>` of "
+"your instance, exactly as it would from the preferences page: too short a "
+"password, or one that does not reach the required strength, is refused and "
+"nothing is stored."
+msgstr ""
+
+#: ../command-line.rst:182 54c2e4cbbc9e405e95662ca06eb30510
+msgid ""
+"A terminal is needed. Called with ``--no-interaction``, or with its input "
+"piped from a file or another command, the command refuses to run rather than "
+"silently doing nothing."
+msgstr ""
+
+#: ../command-line.rst:186 9efd3ff9b3164b139b51ca3dbbaa7dae
+msgid ""
+"The command is disabled when Galette runs in ``DEMO`` :ref:`mode "
+"<galettemodes>`."
+msgstr ""
+
+#: ../command-line.rst:189 e5a534ee93f2455cbfe77e9b909d2e69
 msgid "Plugins commands"
 msgstr ""
 
-#: ../command-line.rst:133 d182d59314d34ef0816b3476ddec6a72
+#: ../command-line.rst:191 d182d59314d34ef0816b3476ddec6a72
 msgid ""
 "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
 
-#: ../command-line.rst:150 0d4a5cc4c21d4508b14ee5a421465bee
+#: ../command-line.rst:208 0d4a5cc4c21d4508b14ee5a421465bee
 msgid "Available commands are:"
 msgstr ""
 
-#: ../command-line.rst:152 b595b93437d44a4fb6422e84b83a3d9d
+#: ../command-line.rst:210 b595b93437d44a4fb6422e84b83a3d9d
 msgid "``galette:plugin:disable``: disable a plugin"
 msgstr ""
 
-#: ../command-line.rst:153 14709c8ffa8144448bb0358432865fd0
+#: ../command-line.rst:211 14709c8ffa8144448bb0358432865fd0
 msgid "``galette:plugin:enable``: enable a plugin"
 msgstr ""
 
-#: ../command-line.rst:154 95a58ea06f37496c9b67c230f3fcdc9d
+#: ../command-line.rst:212 95a58ea06f37496c9b67c230f3fcdc9d
 msgid "``galette:plugin:install-db``: install a plugin database"
 msgstr ""
 
-#: ../command-line.rst:158 b55fc84401f4420da76afe788847f8d0
+#: ../command-line.rst:216 b55fc84401f4420da76afe788847f8d0
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 
-#: ../command-line.rst:160 0baf640124624bec8e84439b3604cde5
+#: ../command-line.rst:218 0baf640124624bec8e84439b3604cde5
 msgid ""
 "For every plugin related command, you can precise which plugin(s) you want "
 "to act on, use the ``--all`` flag or either rely on interactive mode:"
