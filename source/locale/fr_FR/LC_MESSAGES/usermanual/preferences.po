@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 21:42+0200\n"
+"POT-Creation-Date: 2026-09-10 07:38+0200\n"
 "PO-Revision-Date: 2025-11-14 07:16+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -680,18 +680,18 @@ msgstr "Cartes"
 msgid "Galette settings, cards tab"
 msgstr "Préférences de Galette, onglet cartes"
 
-#: ../usermanual/preferences.rst:194 b0ecbe8eeffb43c9b20c945078f00945
+#: ../usermanual/preferences.rst:196 b0ecbe8eeffb43c9b20c945078f00945
 msgid "Security"
 msgstr "Sécurité"
 
-#: ../usermanual/preferences.rst:200 7214f6e08ebf449397778d1e430cff4e
+#: ../usermanual/preferences.rst:202 7214f6e08ebf449397778d1e430cff4e
 msgid ""
 "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 "Les règles de mots de passes complexes ne sont pas évidentes pour les "
 "utilisateurs, mais la sécurité ne l'est pour ainsi dire jamais :)"
 
-#: ../usermanual/preferences.rst:202 cec793037d974d61a6a2989277b72dbf
+#: ../usermanual/preferences.rst:204 cec793037d974d61a6a2989277b72dbf
 msgid ""
 "Of course, all passwords should be as secure as possible, but this is "
 "especially true for all accounts that have privileges (staff, admin, super-"
@@ -702,33 +702,33 @@ msgstr ""
 "privilèges (membres du bureau, admin, super-admin) ; vous devriez expliquer "
 "à vos utilisateurs pourquoi c'est important."
 
-#: ../usermanual/preferences.rst:204 88a131cb0d3046d1b4a13dde60dc55ac
+#: ../usermanual/preferences.rst:206 88a131cb0d3046d1b4a13dde60dc55ac
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
 "Vous pouvez requérir certaines règles pour les mots de passe des "
 "utilisateurs (et su super-admin) :"
 
-#: ../usermanual/preferences.rst:206 a843859cefb24d63a75a9d753e286025
+#: ../usermanual/preferences.rst:208 a843859cefb24d63a75a9d753e286025
 msgid "minimum length (6 characters or more),"
 msgstr "longueur minimale (6 caractères ou plus),"
 
-#: ../usermanual/preferences.rst:207 d994186560ba42cda33067bfa77d3d51
+#: ../usermanual/preferences.rst:209 d994186560ba42cda33067bfa77d3d51
 msgid "minimum \"strength\","
 msgstr "\"complexité\" minimale,"
 
-#: ../usermanual/preferences.rst:208 a93aed026827429385f776fc4716d350
+#: ../usermanual/preferences.rst:210 a93aed026827429385f776fc4716d350
 msgid "blacklist,"
 msgstr "liste noire,"
 
-#: ../usermanual/preferences.rst:209 0e13745e26594307ad9e85994d7994c3
+#: ../usermanual/preferences.rst:211 0e13745e26594307ad9e85994d7994c3
 msgid "no personal information."
 msgstr "pas d'informations personnelles."
 
-#: ../usermanual/preferences.rst:211 58d89cd4b2194ad291b98b107b9f5fe0
+#: ../usermanual/preferences.rst:213 58d89cd4b2194ad291b98b107b9f5fe0
 msgid "Galette settings, security tab"
 msgstr "Préférences de Galette, onglet sécurité"
 
-#: ../usermanual/preferences.rst:216 0a6f608bf6b949b1a70edc99aa178aff
+#: ../usermanual/preferences.rst:218 0a6f608bf6b949b1a70edc99aa178aff
 msgid ""
 "Length is still the only rule that is active per default, just configure the "
 "number of characters required. On passwords fields, failures will be "
@@ -740,7 +740,7 @@ msgstr ""
 "seront affichées à la volée ; ainsi qu'une \"barre de complexité\" affichée "
 "pour information."
 
-#: ../usermanual/preferences.rst:220 5e445605b2ea4eff90c8e271493a7609
+#: ../usermanual/preferences.rst:222 5e445605b2ea4eff90c8e271493a7609
 msgid ""
 "If you enable password checks, it is not possible to know if some of "
 "existing ones does not respect them. Galette will display a warning at login "
@@ -751,7 +751,7 @@ msgstr ""
 "un avertissement au login si les vérifications ne sont pas respectées, mais "
 "il sera toujours possible de se connecter !"
 
-#: ../usermanual/preferences.rst:222 2db450c3793846c09362ea2498a4c0e7
+#: ../usermanual/preferences.rst:224 2db450c3793846c09362ea2498a4c0e7
 msgid ""
 "But wait... Password security is important, but Galette does not enforce "
 "nothing! Isn't that dumb? Well, not really. For tests or entirely private "
@@ -766,38 +766,38 @@ msgstr ""
 "utilisateurs ; c'est pourquoi il vous revient de configurer la sécurité, "
 "tout comme utiliser ou pas SSL :)"
 
-#: ../usermanual/preferences.rst:225 4413270833804d25ae738aedfb478ea3
+#: ../usermanual/preferences.rst:227 4413270833804d25ae738aedfb478ea3
 msgid "Password strength"
 msgstr "Complexité du mot de passe"
 
-#: ../usermanual/preferences.rst:227 8e1f5b9921aa4253a3f24379fd745aa1
+#: ../usermanual/preferences.rst:229 8e1f5b9921aa4253a3f24379fd745aa1
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr ""
 "Le calcul de la complexité du mot de passe est assez simple. Elle est basée "
 "sur 4 règles :"
 
-#: ../usermanual/preferences.rst:229 e9a511606d684ae691d92f84ce417c6a
+#: ../usermanual/preferences.rst:231 e9a511606d684ae691d92f84ce417c6a
 msgid "contains lower case characters,"
 msgstr "contient des lettres minuscules,"
 
-#: ../usermanual/preferences.rst:230 3db8a6cf04f34582b4a8c38a0750fd2e
+#: ../usermanual/preferences.rst:232 3db8a6cf04f34582b4a8c38a0750fd2e
 msgid "contains upper case characters,"
 msgstr "contient des lettres majuscules,"
 
-#: ../usermanual/preferences.rst:231 50e044072a984041b48ae2e250f35a25
+#: ../usermanual/preferences.rst:233 50e044072a984041b48ae2e250f35a25
 msgid "contains number,"
 msgstr "contient des chiffres,"
 
-#: ../usermanual/preferences.rst:232 f06cfc1f97a94586b24b0bf858d9540e
+#: ../usermanual/preferences.rst:234 f06cfc1f97a94586b24b0bf858d9540e
 msgid "contains special characters."
 msgstr "contient des caractères spéciaux."
 
-#: ../usermanual/preferences.rst:234 4015ac16232340a0bacafcf7a1bc7667
+#: ../usermanual/preferences.rst:236 4015ac16232340a0bacafcf7a1bc7667
 msgid "You can choose between 5 values for strength configuration:"
 msgstr ""
 "Vous pouvez choisir parmi 5 valeurs dans la configuration de la complexité :"
 
-#: ../usermanual/preferences.rst:236 eec6427f4ea8432eb60433670256c616
+#: ../usermanual/preferences.rst:238 eec6427f4ea8432eb60433670256c616
 msgid ""
 "**none**: (default): disables strength checks and check for personal "
 "information,"
@@ -805,7 +805,7 @@ msgstr ""
 "**aucun** : (défaut) désactive la vérification de la complexité et des "
 "informations personnelles,"
 
-#: ../usermanual/preferences.rst:237 3bcc056167cb416389074e7f51942046
+#: ../usermanual/preferences.rst:239 3bcc056167cb416389074e7f51942046
 msgid ""
 "**weaker**: enables check for personal information, only one of the rule is "
 "mandatory,"
@@ -813,23 +813,23 @@ msgstr ""
 "**faible** : active la vérification des informations personnelles, seule une "
 "règle est obligatoire,"
 
-#: ../usermanual/preferences.rst:238 abb7a6b648554b23bf8befa50c52d802
+#: ../usermanual/preferences.rst:240 abb7a6b648554b23bf8befa50c52d802
 msgid "**medium**: two rules are mandatory,"
 msgstr "**moyen** : deux règles sont obligatoires,"
 
-#: ../usermanual/preferences.rst:239 d63d9355ce3b480a8e10f08960f4702d
+#: ../usermanual/preferences.rst:241 d63d9355ce3b480a8e10f08960f4702d
 msgid "**strong**: three rules are mandatory,"
 msgstr "**fort** : trois règles sont obligatoires,"
 
-#: ../usermanual/preferences.rst:240 094f54577eaa487c989eef10fc7faedf
+#: ../usermanual/preferences.rst:242 094f54577eaa487c989eef10fc7faedf
 msgid "**very strong**: the four rules are mandatory."
 msgstr "**très fort** : toutes les règles sont obligatoires."
 
-#: ../usermanual/preferences.rst:243 26cc82861bea408187e331d2e9774158
+#: ../usermanual/preferences.rst:245 26cc82861bea408187e331d2e9774158
 msgid "Blacklisted passwords"
 msgstr "Liste noire des mots de passe"
 
-#: ../usermanual/preferences.rst:245 77a596d519f743d18d7284b866e101cc
+#: ../usermanual/preferences.rst:247 77a596d519f743d18d7284b866e101cc
 msgid ""
 "A default list of 500 common passwords is provided as a blacklist you can "
 "enable, \"galette\" is also blacklisted."
@@ -837,7 +837,7 @@ msgstr ""
 "Une liste par défaut de 500 mots de passe communs est fournie en liste noire "
 "que vous pouvez activer, \"galette\" est également interdit."
 
-#: ../usermanual/preferences.rst:249 5dde6af0486f4fb7947d073110775986
+#: ../usermanual/preferences.rst:251 5dde6af0486f4fb7947d073110775986
 msgid ""
 "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms "
 "(one per line). You can provide your own file, we advice you to complete the "
@@ -847,11 +847,11 @@ msgstr ""
 "interdits (un par ligne). Vous pouvez utiliser votre propre fichier, nous "
 "vous conseillons de compléter celui qui existe."
 
-#: ../usermanual/preferences.rst:252 973762aab6c1458a9b804d5bc09182c7
+#: ../usermanual/preferences.rst:254 973762aab6c1458a9b804d5bc09182c7
 msgid "Personal information as password"
 msgstr "Informations personnelles pour mot de passe"
 
-#: ../usermanual/preferences.rst:254 e9acb6a45b70469eb1f0ed551182247e
+#: ../usermanual/preferences.rst:256 e9acb6a45b70469eb1f0ed551182247e
 msgid ""
 "This check rely on strength activation (all but **none** level). For the "
 "super-admin account, this will just ensure you are not using login as "
@@ -863,35 +863,35 @@ msgstr ""
 "les mêmes. Pour les comptes standards, plusieurs informations sont prises en "
 "compte :"
 
-#: ../usermanual/preferences.rst:256 1feaca8764af48449d14deb2c5bd5201
+#: ../usermanual/preferences.rst:258 1feaca8764af48449d14deb2c5bd5201
 msgid "name,"
 msgstr "nom,"
 
-#: ../usermanual/preferences.rst:257 2f926e20ba4f4b639a4c59882a6076ab
+#: ../usermanual/preferences.rst:259 2f926e20ba4f4b639a4c59882a6076ab
 msgid "surname,"
 msgstr "prénom,"
 
-#: ../usermanual/preferences.rst:258 df7cfd15c6df461f9720ff21720e11be
+#: ../usermanual/preferences.rst:260 df7cfd15c6df461f9720ff21720e11be
 msgid "nickname,"
 msgstr "pseudo,"
 
-#: ../usermanual/preferences.rst:259 6ce969262fe94c1491b4479c72c623a6
+#: ../usermanual/preferences.rst:261 6ce969262fe94c1491b4479c72c623a6
 msgid "login,"
 msgstr "identifiant,"
 
-#: ../usermanual/preferences.rst:260 ece9a0e397384da48b47bc861dd7f2e7
+#: ../usermanual/preferences.rst:262 ece9a0e397384da48b47bc861dd7f2e7
 msgid "email,"
 msgstr "adresse de courriel,"
 
-#: ../usermanual/preferences.rst:261 cf6ff75298bd40a5a50659b08de9a9f6
+#: ../usermanual/preferences.rst:263 cf6ff75298bd40a5a50659b08de9a9f6
 msgid "birthdate,"
 msgstr "date de naissance,"
 
-#: ../usermanual/preferences.rst:262 3c52521d33d247a984be73137a14f17d
+#: ../usermanual/preferences.rst:264 3c52521d33d247a984be73137a14f17d
 msgid "town"
 msgstr "ville"
 
-#: ../usermanual/preferences.rst:264 a82d53a9612b4d7290230c84f6380455
+#: ../usermanual/preferences.rst:266 a82d53a9612b4d7290230c84f6380455
 msgid ""
 "Basically, user cannot use verbatim any of those information as password. "
 "Some possible combinations are also checked, like surname and name couple "
@@ -905,18 +905,18 @@ msgstr ""
 "lettre du prénom avec le nom, etc. La date de naissance sera vérifiée avec "
 "plusieurs formats également (localisé, international, et quelques variantes)."
 
-#: ../usermanual/preferences.rst:267 2d20078e8d0d4a66998d02699db68f9d
+#: ../usermanual/preferences.rst:269 2d20078e8d0d4a66998d02699db68f9d
 msgid "Admin"
 msgstr "Administrateur"
 
-#: ../usermanual/preferences.rst:271 3f5c7e5479e94af5aa981b788d168045
+#: ../usermanual/preferences.rst:273 3f5c7e5479e94af5aa981b788d168045
 msgid ""
 "This tab will be present only if you are logged in as super administrator."
 msgstr ""
 "Cet onglet ne sera présent que si vous êtes connecté en tant que super "
 "administrateur."
 
-#: ../usermanual/preferences.rst:273 cf6a55e93ccf4b93beebcefe9dfe3f0c
+#: ../usermanual/preferences.rst:275 cf6a55e93ccf4b93beebcefe9dfe3f0c
 msgid "Galette settings, admin tab"
 msgstr "Préférences de Galette, onglet admin"
 
