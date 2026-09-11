@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 07:38+0200\n"
+"POT-Creation-Date: 2026-09-11 18:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,55 +93,45 @@ msgstr ""
 
 #: ../command-line.rst:178
 #: f1126021f9dd4edaad61144127cf3822
-msgid "The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page: too short a password, or one that does not reach the required strength, is refused and nothing is stored."
+msgid "The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page."
 msgstr ""
 
-#: ../command-line.rst:182
-#: 54c2e4cbbc9e405e95662ca06eb30510
-msgid "A terminal is needed. Called with ``--no-interaction``, or with its input piped from a file or another command, the command refuses to run rather than silently doing nothing."
-msgstr ""
-
-#: ../command-line.rst:186
-#: 9efd3ff9b3164b139b51ca3dbbaa7dae
-msgid "The command is disabled when Galette runs in ``DEMO`` :ref:`mode <galettemodes>`."
-msgstr ""
-
-#: ../command-line.rst:189
+#: ../command-line.rst:181
 #: e5a534ee93f2455cbfe77e9b909d2e69
 msgid "Plugins commands"
 msgstr ""
 
-#: ../command-line.rst:191
+#: ../command-line.rst:183
 #: d182d59314d34ef0816b3476ddec6a72
 msgid "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
 
-#: ../command-line.rst:208
+#: ../command-line.rst:200
 #: 0d4a5cc4c21d4508b14ee5a421465bee
 msgid "Available commands are:"
 msgstr ""
 
-#: ../command-line.rst:210
+#: ../command-line.rst:202
 #: b595b93437d44a4fb6422e84b83a3d9d
 msgid "``galette:plugin:disable``: disable a plugin"
 msgstr ""
 
-#: ../command-line.rst:211
+#: ../command-line.rst:203
 #: 14709c8ffa8144448bb0358432865fd0
 msgid "``galette:plugin:enable``: enable a plugin"
 msgstr ""
 
-#: ../command-line.rst:212
+#: ../command-line.rst:204
 #: 95a58ea06f37496c9b67c230f3fcdc9d
 msgid "``galette:plugin:install-db``: install a plugin database"
 msgstr ""
 
-#: ../command-line.rst:216
+#: ../command-line.rst:208
 #: b55fc84401f4420da76afe788847f8d0
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 
-#: ../command-line.rst:218
+#: ../command-line.rst:210
 #: 0baf640124624bec8e84439b3604cde5
 msgid "For every plugin related command, you can precise which plugin(s) you want to act on, use the ``--all`` flag or either rely on interactive mode:"
 msgstr ""

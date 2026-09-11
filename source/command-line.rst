@@ -175,15 +175,7 @@ There is no option to pass the password with: it is only ever read from a hidden
 
 The login is displayed so you know which account you just changed, but the command does not touch it. Change it from the preferences, as usual.
 
-The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page: too short a password, or one that does not reach the required strength, is refused and nothing is stored.
-
-.. note::
-
-    A terminal is needed. Called with ``--no-interaction``, or with its input piped from a file or another command, the command refuses to run rather than silently doing nothing.
-
-.. warning::
-
-    The command is disabled when Galette runs in ``DEMO`` :ref:`mode <galettemodes>`.
+The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page.
 
 Plugins commands
 ================
