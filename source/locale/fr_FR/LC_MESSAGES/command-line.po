@@ -3,13 +3,13 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Johan Cwiklinski <johan@x-tnd.be>, 2024.
-# Johan Cwiklinski <trasher@x-tnd.be>, 2024, 2025.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-10 07:38+0200\n"
-"PO-Revision-Date: 2025-11-14 07:16+0000\n"
+"PO-Revision-Date: 2026-09-11 16:51+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "command-line/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../command-line.rst:3 8f9ed3b26d614a50adb2a47f7f354429
 msgid "Command line"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../command-line.rst:131 d81d6e22c1aa4bf08a96a867fcd06d7f
 msgid "Super administrator password"
-msgstr ""
+msgstr "Mot de passe Super administrateur"
 
 #: ../command-line.rst:135 e8ba82180024400f8c8acf2499eaa577
 msgid ""
@@ -97,12 +97,20 @@ msgid ""
 "is of little help the day the password is lost: the super administrator is "
 "not a member, so it cannot use the *forgotten password* form either."
 msgstr ""
+"Le mot de passe super administrateur est normalement modifié à partir de la "
+"page :ref:`préférences <man_preferences>` ou de la page :ref:`configuration "
+"avancée <advanced_config>`. Les deux nécessitent d'être connectés, ce n'aide "
+"pas le jour où le mot de passe est perdu : le super administrateur n'est pas "
+"un membre, donc il ne peut pas utiliser le formulaire *mot de passe oublié* "
+"non plus."
 
 #: ../command-line.rst:137 4bbd06f1b7954ff48ff796efb0d8b31f
 msgid ""
 "This command is the way back in. It runs on the machine hosting Galette, and "
 "that access stands as the authentication."
 msgstr ""
+"Cette commande est le moyen d'entrer à nouveau. Elle fonctionne sur la "
+"machine hébergeant Galette, et cet accès vaut authentification."
 
 #: ../command-line.rst:157 a760cf598fed48b5b374a6b74b84d760
 msgid ""
@@ -111,12 +119,19 @@ msgid ""
 "process list of the machine. It is asked twice, and the two answers must "
 "match."
 msgstr ""
+"Il n'y a pas d'option pour passer le mot de passe : il uniquement lu à "
+"partir d'un rappel caché, de sorte qu'il ne termine pas dans votre "
+"historique ni dans la liste de processus de la machine. Il est demandé deux "
+"fois, et les deux réponses doivent correspondre."
 
 #: ../command-line.rst:176 46d0d0aa9b0f46bcbdc79fa91979def9
 msgid ""
 "The login is displayed so you know which account you just changed, but the "
 "command does not touch it. Change it from the preferences, as usual."
 msgstr ""
+"Le login est affiché de sorte que vous sachiez quel compte vous venez de "
+"changer, mais la commande ne le touche pas. Changez-le comme d'habitude "
+"depuis les préférences."
 
 #: ../command-line.rst:178 f1126021f9dd4edaad61144127cf3822
 msgid ""
@@ -125,6 +140,10 @@ msgid ""
 "password, or one that does not reach the required strength, is refused and "
 "nothing is stored."
 msgstr ""
+"Le nouveau mot de passe doit satisfaire aux :ref:`règles de mot de passe "
+"<password_rules>` de votre instance, exactement comme il le serait de la "
+"page des préférences : un mot de passe trop court, ou un qui n'atteint pas "
+"la complexité requise, est refusé et rien n'est stocké."
 
 #: ../command-line.rst:182 54c2e4cbbc9e405e95662ca06eb30510
 msgid ""
