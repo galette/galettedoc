@@ -50,11 +50,19 @@ Per default (this is currently not configurable), reminders are sent one month, 
 
 Galette will tell you if some members do not have an email address, you can print labels for those ones.
 
-Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
+.. versionchanged:: 1.3.0
+
+   Reminders are no longer sent while the page loads. They are queued, and a progress page sends them one after the other, showing how far it is. Each reminder stays an individual message, written in the language of its recipient, as before.
+
+   The queue is stored in database, so closing the page loses nothing: reopen the reminders and the ones left go out. The :ref:`sending limits <mail_throttling>` apply, and the hourly and daily quotas are the very same as the ones :ref:`mass mailings <mailing_queue>` consume. When a quota is reached, the page says so and stops; the rest is sent later.
+
+Finally, it is possible to automate reminders with a cron task which will call the ``galette/cron/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
 
 ::
 
-   30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/reminder.php
+   30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/cron/reminder.php
+
+The script queues the reminders that are due, then drains the queue itself, respecting the same limits. It stays silent unless something failed, so cron only writes to you when there is a reason to.
 
 Invoices and receipts
 ^^^^^^^^^^^^^^^^^^^^^

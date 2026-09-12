@@ -158,9 +158,12 @@ Sending email parameters:
   * **Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),
   * **Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),
   * **Using sendmail server**: uses local server sendmail,
-  * **Using qmail server**: uses local server qmail,
 
 * **Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application.
+
+.. versionchanged:: 1.3.0
+
+   The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated.
 
 When using GMail as SMTP, you will have to configure user name and password to use.
 
@@ -173,6 +176,31 @@ SMTP configuration is a bit more complex :
 * **Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example).
 
 The `Test mail settings` button will send a test message to the email currently stored as members administrator.
+
+.. _mail_throttling:
+
+Sending limits
+^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+Mail servers are rarely willing to accept anything you throw at them. They restrict the number of recipients a single message may carry, the number of messages a connection may carry, or the number of messages you may send per hour or per day. Galette can respect those restrictions, from five settings of the :ref:`advanced configuration <advanced_config>` page:
+
+* ``pref_mail_batch_size``: maximum number of recipients per message. ``0``, the default, keeps the historical behavior: one single message carrying every recipient in blind copy,
+* ``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by default, no pause,
+* ``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, the default, means no limit,
+* ``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the default, means no limit,
+* ``pref_mail_smtp_keepalive``: keep the SMTP connection open across the messages of a mailing instead of reconnecting for each one. Enabled by default. It only applies to the **SMTP** and **GMail** methods; the local ones run a binary per message, there is no connection to keep.
+
+Apart from the keepalive, they all ship disabled: an instance that is updated sends exactly as it did before, and only starts splitting its mailings once you ask for it.
+
+The values to use are usually documented by your mail provider, along with the SMTP settings.
+
+.. note::
+
+   The hourly and daily limits count **recipients**, not messages, and the same quota is shared by mass mailings and :ref:`reminders <reminders>`.
+
+   They are also what turns sending into a :ref:`queue <mailing_queue>`: as soon as one of them is set, a mailing can no longer be sent in a single page load.
 
 Labels
 ======

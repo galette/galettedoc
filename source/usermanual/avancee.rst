@@ -157,6 +157,39 @@ There are a few tools provided for Galette admin that permits to:
 * **generate empty logins and passwords** those information are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
 * **Fix dynamic fields dates format** will convert all dynamic fields dates to the new format (see :ref:`dynamic fields <dynamic_fields>`).
 
+.. _mailing_queue_cron:
+
+Draining the mail queue
+=======================
+
+.. versionadded:: 1.3.0
+
+As soon as an hourly or daily :ref:`sending limit <mail_throttling>` is set, Galette stops sending mass mailings and reminders in a single page load. It queues one entry per recipient in database, and drains that queue progressively.
+
+The progress page does it from your browser, which is enough most of the time, but it requires that page to stay open. Two other drainers are provided, and neither needs anybody to be logged in.
+
+A cron script, next to the reminders one:
+
+::
+
+   */15  *  *  *  *  apache /usr/bin/php -f /var/www/galette/cron/mailing_queue.php
+
+And a console command, :doc:`from the command line </command-line>`:
+
+::
+
+   $ php bin/console galette:mailing:process-queue
+
+Both send batch after batch, waiting the configured delay between two messages, until the queue is empty or the quota is reached. They stop rather than wait for the quota window to open again, so what is left goes out on the next run: calling them regularly is the whole point.
+
+.. warning::
+
+   Use **one** drainer at a time. Nothing prevents two of them from picking the same pending recipients at the same moment, which would send the message twice. Pick the cron script or the command, not both, and space the runs enough for one to have finished before the next starts.
+
+.. note::
+
+   Like the reminders script, ``cron/mailing_queue.php`` needs the address of your instance, since it runs with no incoming request to guess it from. Set ``pref_galette_url`` from the :ref:`advanced configuration <advanced_config>`, or keep the ``GALETTE_URI`` constant.
+
 .. _advanced_config:
 
 Advanced configuration

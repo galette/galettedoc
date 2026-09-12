@@ -144,6 +144,26 @@ Any started emailings will be stored in your session to be retrieved in the futu
 
 If you want, you can cancel this mailing using the `Cancel mailing` button, it will be deleted from your session. If you want to store it for a longer time, you can add the `Save` button. It will then be stored in the mailings list, and you will be able to grab it later.
 
+.. _mailing_queue:
+
+Sending a large mailing
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+By default, a mailing is a single message, sent right away, carrying every recipient in blind copy. That is fine for a small association, much less so for a large one: mail servers restrict what one message may carry, and how fast you may send.
+
+The :ref:`sending limits <mail_throttling>` change what happens once you confirm the sending:
+
+* with a **batch size** set, Galette splits the recipients into several messages of at most that size, and waits the configured delay between two of them. Sending stays synchronous: the confirmation comes once everything has left,
+* with an **hourly or daily limit** set, sending cannot be done in one go any more. Galette stores the mailing, queues one entry per recipient, and takes you to a progress page.
+
+The progress page sends the mailing batch after batch and shows how far it is: recipients sent, remaining and failed, and what the quota has consumed so far. Leave it open until it announces the mailing has been sent.
+
+Nothing is lost if you close it, or if the quota runs out before the end: the queue is stored in database. The page then tells you sending will resume later, and the remaining recipients go out either when you open the mailing again, or from a :ref:`drainer running outside the browser <mailing_queue_cron>`.
+
+A queued mailing is stored in the history right away, and only counts as **sent** once its last recipient has left the queue.
+
 Mailings history
 ^^^^^^^^^^^^^^^^
 
