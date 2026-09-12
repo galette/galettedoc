@@ -190,10 +190,22 @@ When :ref:`sending limits <mail_throttling>` are configured, mass mailings and r
 
     $ php bin/console galette:mailing:process-queue
 
-    [OK] Mailing queue processed: 120 sent, 0 failed.
+     [WARNING] Spreading a sending over time is an alpha feature: it works, but it
+               has seen little use. Watch what actually reaches your members, and
+               report anything odd.
 
-For more complete documentation, see :ref:`draining the mail queue <mailing_queue>`.
-See also the :ref:`progress page <mailing_queue>`
+     Process the pending queue now? (yes/no) [no]:
+     > yes
+
+     [OK] Mailing queue processed: 120 sent, 0 failed.
+
+Nothing is sent until that question is answered. Pass ``--force`` to skip it, which is what an unattended run needs: without it, a non-interactive call has no way to confirm and stops with an error rather than send.
+
+::
+
+    $ php bin/console galette:mailing:process-queue --force
+
+For more complete documentation, see :ref:`draining the mail queue <mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it drains alongside.
 
 .. warning::
 

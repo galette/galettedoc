@@ -180,6 +180,8 @@ And a console command, :doc:`from the command line </command-line>`:
 
    $ php bin/console galette:mailing:process-queue
 
+The command asks for confirmation before sending anything, since the feature is still in alpha. Add ``--force`` to skip the question, which is what a cron entry calling the command would need.
+
 Both send batch after batch, waiting the configured delay between two messages, until the queue is empty or the quota is reached. They stop rather than wait for the quota window to open again, so what is left goes out on the next run: calling them regularly is the whole point.
 
 .. warning::
@@ -229,6 +231,8 @@ Each row carries a status, also recalled in the page legend:
 * **secret**: a password or a token. Its value is never displayed, only whether one is set, and it is changed from the settings form,
 * **locked**: a constant declared in :ref:`behavior.inc.php <behavior>` takes precedence over the stored value. Remove it from that file to manage the setting from here,
 * **unknown**: a row found in database that Galette does not describe. It may come from an older version or from a plugin. It is displayed, never edited.
+
+A setting can also carry an **alpha** label, on top of its status. It drives a feature that has not been through a release yet: it works, but it has seen little use. Try it on a test instance before your production one, and `report what you find <https://bugs.galette.eu>`_.
 
 .. image:: ../_styles/static/images/usermanual/advanced_config_legend.png
    :scale: 50%
