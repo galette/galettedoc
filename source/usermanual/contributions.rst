@@ -50,11 +50,13 @@ Per default (this is currently not configurable), reminders are sent one month, 
 
 Galette will tell you if some members do not have an email address, you can print labels for those ones.
 
-.. versionchanged:: 1.3.0
+.. versionadded:: 1.3.0
 
-   Reminders are no longer sent while the page loads. They are queued, and a progress page sends them one after the other, showing how far it is. Each reminder stays an individual message, written in the language of its recipient, as before.
+   Reminders obey the :ref:`sending limits <mail_throttling>`, following the very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly or daily quota is set, they are sent while the page loads, exactly as they always were.
 
-   The queue is stored in database, so closing the page loses nothing: reopen the reminders and the ones left go out. The :ref:`sending limits <mail_throttling>` apply, and the hourly and daily quotas are the very same as the ones :ref:`mass mailings <mailing_queue>` consume. When a quota is reached, the page says so and stops; the rest is sent later.
+   Set a quota and they can no longer all go out at once. Galette then queues them and takes you to a progress page that sends them one after the other. The queue is stored in database, so closing the page loses nothing: come back to the reminders and the ones left go out. When the quota is reached, the page says so and stops; the rest is sent later.
+
+   Each reminder stays an individual message, written in the language of its recipient, either way. The quota counters are shared with mass mailings.
 
 Finally, it is possible to automate reminders with a cron task which will call the ``galette/cron/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
 

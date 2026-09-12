@@ -162,6 +162,10 @@ The progress page sends the mailing batch after batch and shows how far it is: r
 
 Nothing is lost if you close it, or if the quota runs out before the end: the queue is stored in database. The page then tells you sending will resume later, and the remaining recipients go out either when you open the mailing again, or from a :ref:`drainer running outside the browser <mailing_queue_cron>`.
 
+.. note::
+
+   The progress page is the only thing a queued mailing needs. Galette does not wait for a cron job to send it, and setting one up is not a prerequisite for any of this. It only becomes worth it when nobody is going to keep a browser open long enough - typically when the quota spreads the sending over several hours.
+
 A queued mailing is stored in the history right away, and only counts as **sent** once its last recipient has left the queue.
 
 Mailings history
