@@ -186,7 +186,7 @@ Sending limits
 
 .. warning::
 
-   This is an **alpha** feature. It works, and it is covered by tests, but it has not been through a release yet and has therefore seen very little real-world use. The five settings below carry an *alpha* label on the advanced configuration page, and the sending page says so too.
+   This is an **experimental** feature.
 
    Try it on a test instance before your production one, watch what actually reaches your members, and `report what you find <https://bugs.galette.eu>`_. Leaving the settings at their default keeps Galette sending exactly as it always did.
 
