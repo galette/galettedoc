@@ -177,6 +177,40 @@ The login is displayed so you know which account you just changed, but the comma
 
 The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page.
 
+.. _cli_mailing_queue:
+
+Mailing queue
+=============
+
+.. versionadded:: 1.3.0
+
+When :ref:`sending limits <mail_throttling>` are configured, mass mailings and reminders are queued rather than sent in one go. This command drains what is pending:
+
+::
+
+    $ php bin/console galette:mailing:process-queue
+
+     [WARNING] Spreading a sending over time is an alpha feature: it works, but it
+               has seen little use. Watch what actually reaches your members, and
+               report anything odd.
+
+     Process the pending queue now? (yes/no) [no]:
+     > yes
+
+     [OK] Mailing queue processed: 120 sent, 0 failed.
+
+Nothing is sent until that question is answered. Pass ``--force`` to skip it, which is what an unattended run needs: without it, a non-interactive call has no way to confirm and stops with an error rather than send.
+
+::
+
+    $ php bin/console galette:mailing:process-queue --force
+
+For more complete documentation, see :ref:`draining the mail queue <mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it drains alongside.
+
+.. warning::
+
+   Use **one** drainer at a time. Nothing prevents two of them from picking the same pending recipients at the same moment, which would send the message twice.
+
 Plugins commands
 ================
 
