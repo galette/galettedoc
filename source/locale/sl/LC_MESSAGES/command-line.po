@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-11 18:50+0200\n"
-"PO-Revision-Date: 2026-07-16 06:22+0000\n"
+"PO-Revision-Date: 2026-09-14 07:39+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "command-line/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../command-line.rst:3 8f9ed3b26d614a50adb2a47f7f354429
 msgid "Command line"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../command-line.rst:131 d81d6e22c1aa4bf08a96a867fcd06d7f
 msgid "Super administrator password"
-msgstr ""
+msgstr "Geslo superskrbnika"
 
 #: ../command-line.rst:135 e8ba82180024400f8c8acf2499eaa577
 msgid ""
@@ -91,12 +91,19 @@ msgid ""
 "is of little help the day the password is lost: the super administrator is "
 "not a member, so it cannot use the *forgotten password* form either."
 msgstr ""
+"Geslo super skrbnika se običajno spremeni na strani :ref:`preferences "
+"<man_preferences>` ali na strani :ref:`napredne konfiguracije "
+"<advanced_config>`. Oba zahtevata prijavo, kar ni v veliko pomoč na dan "
+"izgube gesla: super skrbnik ni član, zato tudi ne more uporabiti obrazca "
+"*pozabljeno geslo*."
 
 #: ../command-line.rst:137 4bbd06f1b7954ff48ff796efb0d8b31f
 msgid ""
 "This command is the way back in. It runs on the machine hosting Galette, and "
 "that access stands as the authentication."
 msgstr ""
+"Ta ukaz je pot nazaj. Zažene se na računalniku, ki gosti Galette, in ta "
+"dostop predstavlja avtentikacijo."
 
 #: ../command-line.rst:157 a760cf598fed48b5b374a6b74b84d760
 msgid ""
@@ -105,18 +112,25 @@ msgid ""
 "process list of the machine. It is asked twice, and the two answers must "
 "match."
 msgstr ""
+"Gesla ni mogoče posredovati: vedno se prebere samo iz skritega poziva, tako "
+"da ne konča v vaši zgodovini ukazne lupine ali na seznamu procesov stroja. "
+"Vpraša se dvakrat in odgovora se morata ujemati."
 
 #: ../command-line.rst:176 46d0d0aa9b0f46bcbdc79fa91979def9
 msgid ""
 "The login is displayed so you know which account you just changed, but the "
 "command does not touch it. Change it from the preferences, as usual."
 msgstr ""
+"Prijava je prikazana, tako da veste, kateri račun ste pravkar spremenili, "
+"vendar se je ukaz ne dotakne. Spremenite ga v nastavitvah, kot običajno."
 
 #: ../command-line.rst:178 f1126021f9dd4edaad61144127cf3822
 msgid ""
 "The new password must satisfy the :ref:`password rules <password_rules>` of "
 "your instance, exactly as it would from the preferences page."
 msgstr ""
+"Novo geslo mora izpolnjevati :ref:`pravila gesla <password_rules>` vašega "
+"primerka, natanko tako kot na strani z nastavitvami."
 
 #: ../command-line.rst:181 e5a534ee93f2455cbfe77e9b909d2e69
 msgid "Plugins commands"
