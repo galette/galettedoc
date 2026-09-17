@@ -308,6 +308,36 @@ This check rely on strength activation (all but **none** level). For the super-a
 
 Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants).
 
+.. _pref_2fa:
+
+Two-factor authentication
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+   Marked **experimental**: it is complete and tested, but it is new, and the interface may still change. It is disabled by default; nothing happens until you choose otherwise.
+
+A password is a single factor: whoever knows it is in. Two-factor authentication asks, right after the password, for a six digits code that changes every thirty seconds and comes from an application on the user own phone or computer. A stolen password is then not enough anymore.
+
+Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server.
+
+Two policies are available:
+
+* **disabled** (default): nothing changes, nobody is asked for a code,
+* **optional**: everybody may enable it from their own account, nobody has to.
+
+Making the second factor **compulsory** — for administrators and staff members, or for everyone — is written and tested, but it is not offered yet: under a compulsory policy, a server clock that drifts or an enrolment that goes wrong puts a whole association outside its own instance, and the only way back is a command in the database. It is planned for a later version, once the optional policy has been used in the field.
+
+Since nobody is forced to enrol, administrators and staff members — the accounts that can read the civil status, the addresses and the financial data of every member — are invited to set a second factor up when they log in, with a **Later** and a **Do not ask again** button. Declining is remembered in a cookie of the browser, so the invitation comes back on a new browser, or after a year.
+
+.. note::
+
+   Switching the policy back to **disabled** does not delete anything. Codes are no longer asked for, and the second factors already enabled start being asked for again as soon as you enable a policy back. While the policy is disabled, the pages to enable a second factor answer nothing: a factor enrolled then would never be asked for.
+
+The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`.
+
+Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it.
+
 Admin
 =====
 

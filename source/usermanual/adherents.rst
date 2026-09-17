@@ -265,6 +265,21 @@ The other interesting point of this system is you can retrieve some information 
 
 .. note:: Members without email adresses cannot use the "retrieve password" feature. This does not affect the uniqueness email constraint in the database.
 
+.. _member_2fa_reset:
+
+Resetting a second factor
+=========================
+
+.. versionadded:: 1.3.0
+
+A member who lost the device computing their codes, and has no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From the member page, administrators and staff members can reset their second factor: the secret and the remaining recovery codes are dropped, and the member logs in with their password alone until they enrol again.
+
+A reset only ever goes downwards. Your own second factor is not reset from here -- use your own page, which asks for a code first, so that a session somebody else found open cannot remove it. A staff member cannot reset an administrator's, and an administrator cannot reset another administrator's: only the super administrator can.
+
+.. warning::
+
+   Do check who is asking. Resetting a second factor removes a protection, and a phone call claiming to be a member is exactly how somebody would go about getting one removed. The reset is recorded in the history, with who did it and for whom.
+
 Impersonating
 =============
 
