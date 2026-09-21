@@ -55,6 +55,29 @@ Per default, Galette will create session with default lifetime duration (and it 
 
 If the ``GALETTE_TIMEOUT`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*. Remove it from that file to manage the lifetime from the page.
 
+.. _upload_sizes:
+
+Change maximum upload size
+==========================
+
+.. versionadded:: 1.3.0
+
+   Each kind of upload has a maximum size of its own, stored in database. It used to be a single value, the same for every one of them, that could only be changed by editing a Galette source file.
+
+Every file Galette accepts has a maximum size, and each kind of upload carries its own setting, reachable from the :ref:`advanced configuration <advanced_config>` page. Values are a number of kilobytes:
+
+* ``pref_upload_size_images``: member pictures, association logo and card logo - and the pictures of the plugins that rely on the same mechanism. Defaults to ``2048``,
+* ``pref_upload_size_attachments``: files attached to an :ref:`e-mailing <emailing>`. Defaults to ``2048``,
+* ``pref_upload_size_documents``: the documents of the association. Defaults to ``2048``,
+* ``pref_upload_size_imports``: the CSV files handed to the members import. Defaults to ``2048``,
+* ``pref_upload_size_dynamic_files``: the files stored in a :ref:`dynamic field <dynamic_fields>` that declares no size of its own. A field that declares one uses it instead. Defaults to ``1024``.
+
+.. warning::
+
+   PHP has the last word. A file bigger than ``upload_max_filesize``, or a form bigger than ``post_max_size``, never reaches Galette whatever these settings say, and both are counted in a couple of megabytes in most PHP installations. Raise them in your ``php.ini`` first, otherwise the only thing you get is an error Galette never sees.
+
+Attachments deserve a thought of their own before you raise them: a heavy file is sent to **every** recipient of the mailing, it weighs on your own mail server as much as on theirs, and it makes the message more likely to be taken for spam. A link to the file is often a better idea than the file itself.
+
 
 .. _proxy_ip:
 

@@ -133,6 +133,8 @@ Once the HTML editor is enabled, the checkbox to handle HTML tags is automatical
 It is also possible to add attachements, just click on the `Browse` button in that attachements section. If your browser is compatible, you can add several files at once (using `Shift` and `Ctrl` keys).
 All attachements are stored on disk, under a directory named with the mailing identifier (automatically defined from database).
 
+Each attachment has a maximum size of its own, which you can :ref:`change from the advanced configuration <upload_sizes>` page.
+
 `Preview` button let you preview your message before sending it.
 
 .. image:: ../_styles/static/images/usermanual/mailing_preview.png
