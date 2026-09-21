@@ -22,7 +22,7 @@
 
 .. note::
 
-    Merci à l'association `Club 404 <https://www.leclub404.com/>`_ qui a subventionné cette version ainsi que la première version officielle du :doc:`plugin Auto </plugins/auto>` :-)
+    Merci à l'association `Club 404 <https://www.leclub404.com/>`_ qui a subventionné cette version ainsi que la première version officielle du `plugin Auto <https://galette-plugins.github.io/plugin-auto/>`_ :-)
 
 * Ajouts de pièces jointes aux mailings (`#187 <https://bugs.galette.eu/issues/187>`_)
 * Amélioration du système de génération de mots de passe et login aléatoires, pour éviter les doublons (`#731 <https://bugs.galette.eu/issues/731>`_)
