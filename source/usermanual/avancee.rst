@@ -306,7 +306,7 @@ The following settings can be set:
 * ``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,
 * ``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,
 * ``GALETTE_LOG_LVL``: verbosity of the logs, as an `Analog <https://github.com/jbroadway/analog>`_ level. Defaults to ``WARNING``, or ``DEBUG`` in debug mode,
-* ``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``. Only the existence of the constant counts, so defining it to ``false`` still enables the dump,
+* ``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``,
 * ``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. They only apply in debug mode.
 
 Settings that moved
