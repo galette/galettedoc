@@ -73,6 +73,7 @@ Improvements
 - Page titles have been improved throughout the application
 - A missing asset now renders a proper error page instead of a blank one
 - Error messages name the setting that holds an invalid address
+- A file size is shown in the unit that fits - octets, Ko, Mo or Go - wherever it appears: the upload limits, the error a file too big raises, and the list of import files
 - Reuse SMTP connection on several calls
 - Load news with ajax call to prevent dashboard hangs
 

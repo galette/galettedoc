@@ -72,6 +72,8 @@ Every file Galette accepts has a maximum size, and each kind of upload carries i
 * ``pref_upload_size_imports``: the CSV files handed to the members import. Defaults to ``2048``,
 * ``pref_upload_size_dynamic_files``: the files stored in a :ref:`dynamic field <dynamic_fields>` that declares no size of its own. A field that declares one uses it instead. Defaults to ``1024``.
 
+Kilobytes are how a limit is *typed*, and nothing more. Wherever Galette shows a size — the tip next to a file field, the error a file too big raises, the list of import files — it is written in the unit that fits, so the ``2048`` above reads as *2 Mo*.
+
 .. warning::
 
    PHP has the last word. A file bigger than ``upload_max_filesize``, or a form bigger than ``post_max_size``, never reaches Galette whatever these settings say, and both are counted in a couple of megabytes in most PHP installations. Raise them in your ``php.ini`` first, otherwise the only thing you get is an error Galette never sees.
