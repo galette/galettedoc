@@ -56,6 +56,7 @@ New features
 - Maintenance mode tells the super administrator it is enabled when they are logged in
 - The reminders cron script takes the instance URL from the settings
 - New feature flags mechanism, to ship features that are not production ready yet; flags are declared in behavior.inc.php, only apply in debug mode, and a ``galette:feature:status`` console command tells what is enabled
+- Improvements on dynamic fields: choice, date and file can now be repeated and you can now import up to 10 dynamic fields from CSV import.
 
 .. _ameliorations_130:
 
@@ -72,6 +73,7 @@ Improvements
 - A missing asset now renders a proper error page instead of a blank one
 - Error messages name the setting that holds an invalid address
 - Reuse SMTP connection on several calls
+- Load news with ajax call to prevent dashboard hangs
 
 .. _bogues_130:
 
@@ -99,6 +101,8 @@ Fixes
 - A public page whose visibility cannot be read is now closed, rather than open to everyone
 - Documents tab could be hidden by ad blockers
 - Several fixes on the web installer, including Javascript errors
+- GALETTE_SQL_DEBUG was tested for existence only, so declaring it to false still dumped every query
+- Fix mass change when only a group removal is selected
 
 .. _l10n_130:
 
