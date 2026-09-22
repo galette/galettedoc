@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-10 07:38+0200\n"
-"PO-Revision-Date: 2026-09-18 15:44+0000\n"
+"PO-Revision-Date: 2026-09-22 17:09+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "install-update/sl/>\n"
@@ -199,6 +199,7 @@ msgid ""
 "Database information are not asked anymore, and neither is the installation "
 "type."
 msgstr ""
+"Podatki o bazi podatkov niso več zahtevani, prav tako ne vrsta namestitve."
 
 #: ../installation/update.rst:62 fc6dd895b9244ed4aac6f12ac0187445
 msgid ""
@@ -208,6 +209,11 @@ msgid ""
 "or is incomplete - fill it in with the very same information as before, the "
 "table prefix included."
 msgstr ""
+"Posodobitev prebere vrsto baze podatkov, gostitelja, vrata, ime, uporabnika, "
+"geslo in predpono tabele iz vaše konfiguracijske datoteke ter gre neposredno "
+"na preverjanje dostopa in dovoljenj. Obrazec se vrne le, če te datoteke ni "
+"mogoče prebrati ali je nepopolna - izpolnite jo z enakimi informacijami kot "
+"prej, vključno s predpono tabele."
 
 #: ../installation/update.rst:65 d26df1746e3245af8c93d132e46585e8
 msgid "Previous version selection"
@@ -215,7 +221,7 @@ msgstr "Izbira prejšnje različice"
 
 #: ../installation/update.rst:69 7a8229ac502e4de48ff76c9034355d9d
 msgid "When the version can be read from the database, this step is skipped."
-msgstr ""
+msgstr "Ko je različico mogoče prebrati iz baze podatkov, se ta korak preskoči."
 
 #: ../installation/update.rst:71 0b37891b0dab42f48fe3448624a98852
 msgid ""
@@ -225,12 +231,19 @@ msgid ""
 "exist yet. Select the version you are coming from, the one Galette guessed "
 "is displayed as bold text:"
 msgstr ""
+"Galette prebere različico, ki jo ima njena baza podatkov, in jo posodablja "
+"od tam. Spodnji korak je prikazan le, če to branje ni dokončno - kar velja "
+"za zbirko podatkov pred 0.7, ker tabela z različico še ni obstajala. "
+"Izberite različico, iz katere prihajate, tista, ki jo je Galette uganila, je "
+"prikazana kot krepko besedilo:"
 
 #: ../installation/update.rst:77 c3deb332b9cb4cd0b6f6bcb2e9736cad
 msgid ""
 "The step is also displayed when your database is already up to date, so you "
 "get a chance to stop before running the scripts again:"
 msgstr ""
+"Korak je prikazan tudi, ko je vaša baza podatkov že posodobljena, tako da "
+"imate možnost, da se ustavite, preden znova zaženete skripte:"
 
 #: ../installation/update.rst:83 35944a775ff74bc2b7a58b61dc99edce
 msgid "Once update scripts have run, a summary will be displayed."
@@ -240,6 +253,7 @@ msgstr "Ko se posodobitveni skripti zaženejo, se prikaže povzetek."
 msgid ""
 "The ``data/ENABLE_INSTALL`` file is removed once the update has completed."
 msgstr ""
+"Datoteka ``data/ENABLE_INSTALL`` se odstrani, ko je posodobitev končana."
 
 #~ msgid ""
 #~ "``config/config.inc.php``. If this file is missing, Galette update "
