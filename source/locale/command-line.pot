@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 18:50+0200\n"
+"POT-Creation-Date: 2026-09-22 07:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,42 +96,62 @@ msgstr ""
 msgid "The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page."
 msgstr ""
 
-#: ../command-line.rst:181
+#: ../command-line.rst:183
+#: ab94d97edfee41688c2081d11c2c95a1
+msgid "Mailing queue"
+msgstr ""
+
+#: ../command-line.rst:187
+#: 9542569303444218b44e2efd6d94ef6a
+msgid "When :ref:`sending limits <mail_throttling>` are configured, mass mailings and reminders are queued rather than sent in one go. This command drains what is pending:"
+msgstr ""
+
+#: ../command-line.rst:202
+#: 313e68dd721743b0a35531286badb1f3
+msgid "Nothing is sent until that question is answered. Pass ``--force`` to skip it, which is what an unattended run needs: without it, a non-interactive call has no way to confirm and stops with an error rather than send."
+msgstr ""
+
+#: ../command-line.rst:208
+#: a7d31803df5c4a318fb57fdd3cb125da
+msgid "For more complete documentation, see :ref:`draining the mail queue <mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it drains alongside."
+msgstr ""
+
+#: ../command-line.rst:211
 #: e5a534ee93f2455cbfe77e9b909d2e69
 msgid "Plugins commands"
 msgstr ""
 
-#: ../command-line.rst:183
+#: ../command-line.rst:213
 #: d182d59314d34ef0816b3476ddec6a72
 msgid "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
 
-#: ../command-line.rst:200
+#: ../command-line.rst:230
 #: 0d4a5cc4c21d4508b14ee5a421465bee
 msgid "Available commands are:"
 msgstr ""
 
-#: ../command-line.rst:202
+#: ../command-line.rst:232
 #: b595b93437d44a4fb6422e84b83a3d9d
 msgid "``galette:plugin:disable``: disable a plugin"
 msgstr ""
 
-#: ../command-line.rst:203
+#: ../command-line.rst:233
 #: 14709c8ffa8144448bb0358432865fd0
 msgid "``galette:plugin:enable``: enable a plugin"
 msgstr ""
 
-#: ../command-line.rst:204
+#: ../command-line.rst:234
 #: 95a58ea06f37496c9b67c230f3fcdc9d
 msgid "``galette:plugin:install-db``: install a plugin database"
 msgstr ""
 
-#: ../command-line.rst:208
+#: ../command-line.rst:238
 #: b55fc84401f4420da76afe788847f8d0
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 
-#: ../command-line.rst:210
+#: ../command-line.rst:240
 #: 0baf640124624bec8e84439b3604cde5
 msgid "For every plugin related command, you can precise which plugin(s) you want to act on, use the ``--all`` flag or either rely on interactive mode:"
 msgstr ""

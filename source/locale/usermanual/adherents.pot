@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 07:38+0200\n"
+"POT-Creation-Date: 2026-09-22 07:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -282,206 +282,271 @@ msgid "It is also possible to add attachements, just click on the `Browse` butto
 msgstr ""
 
 #: ../usermanual/adherents.rst:136
+#: bef40cb596ed4f168410e2415b0bc346
+msgid "Each attachment has a maximum size of its own, which you can :ref:`change from the advanced configuration <upload_sizes>` page."
+msgstr ""
+
+#: ../usermanual/adherents.rst:138
 #: 85d0670ba88843cfb69f7cd69f5e88f3
 msgid "`Preview` button let you preview your message before sending it."
 msgstr ""
 
-#: ../usermanual/adherents.rst:138
+#: ../usermanual/adherents.rst:140
 #: 7f9ed32ac4bf42fca90e0f52d52d14f8
 msgid "Preview message"
 msgstr ""
 
-#: ../usermanual/adherents.rst:143
+#: ../usermanual/adherents.rst:145
 #: d84bea617bed4b7bad6ac0308bc93d23
 msgid "Any started emailings will be stored in your session to be retrieved in the future. An icon will be displayed in pages titles when a mailing is progress and will provide a link to go to it."
 msgstr ""
 
-#: ../usermanual/adherents.rst:145
+#: ../usermanual/adherents.rst:147
 #: 56a0e8b3fed546dab7a89e9aa7bf1c9a
 msgid "If you want, you can cancel this mailing using the `Cancel mailing` button, it will be deleted from your session. If you want to store it for a longer time, you can add the `Save` button. It will then be stored in the mailings list, and you will be able to grab it later."
 msgstr ""
 
-#: ../usermanual/adherents.rst:148
+#: ../usermanual/adherents.rst:152
+#: 1abaeeaace254dbaa236c3965cc096cf
+msgid "Sending large mailings"
+msgstr ""
+
+#: ../usermanual/adherents.rst:156
+#: 875b9353883746bebb10ee2029fd8fff
+msgid "By default, a mailing is a single message, sent right away, carrying every recipient in blind copy - but mail servers restrict what one message may carry, and how fast you may send."
+msgstr ""
+
+#: ../usermanual/adherents.rst:160
+#: 3207c357ebd448589aee06f0fcef20c2
+msgid "Using your \"personal\" SMTP provider is often not a good idea; dedicated services are better suited for large mailings."
+msgstr ""
+
+#: ../usermanual/adherents.rst:162
+#: 4b3b137e93bf4bc8814cc9d22141d8a4
+msgid "And you even may have limits on a dedicated service."
+msgstr ""
+
+#: ../usermanual/adherents.rst:164
+#: 4bfb4a60f41b4f03beb9bedd74d677ae
+msgid "Galette :ref:`sending limits <mail_throttling>` changes what happens once you confirm the sending:"
+msgstr ""
+
+#: ../usermanual/adherents.rst:166
+#: 85737f27d8c547ccb550d9f0a2afa06d
+msgid "with a **batch size** set, Galette splits the recipients into several messages of at most that size, and waits the configured delay between two of them. Sending stays synchronous: the confirmation comes once everything has left,"
+msgstr ""
+
+#: ../usermanual/adherents.rst:167
+#: f46ddb5027024d82a435ce109ccfaa2d
+msgid "with an **hourly or daily limit** set, sending cannot be done in one go any more. Galette stores the mailing, queues one entry per recipient, and takes you to a progress page."
+msgstr ""
+
+#: ../usermanual/adherents.rst:169
+#: a03986094007451e9efd39d66ea86deb
+msgid "The progress page sends the mailing batch after batch and shows how far it is: recipients sent, remaining and failed, and what the quota has consumed so far. Leave it open until it announces the mailing has been sent."
+msgstr ""
+
+#: ../usermanual/adherents.rst:171
+#: 7f9ed32ac4bf42fca90e0f52d52d14f8
+msgid "A mailing being sent, halfway through its queue"
+msgstr ""
+
+#: ../usermanual/adherents.rst:176
+#: db0440b1522e475b91a32fbc77b24d49
+msgid "Nothing is lost if you close it, or if the quota runs out before the end: the queue is stored in database. The page then tells you sending will resume later, and the remaining recipients go out either when you open the mailing again, or from a :ref:`drainer running outside the browser <mailing_queue_cron>`."
+msgstr ""
+
+#: ../usermanual/adherents.rst:180
+#: 8116c9d2c2fa4cc7ac76ac8b1a8ef373
+msgid "The progress page is the only thing a queued mailing *needs*. Galette proposes alternative methods to :ref:`drain the mail queue <mailing_queue_cron>` we really recommends ;-)"
+msgstr ""
+
+#: ../usermanual/adherents.rst:182
+#: a1bc29e739f94e8cbbfa25d4a69f8d94
+msgid "A queued mailing is stored in the history right away, and only counts as **sent** once its last recipient has left the queue."
+msgstr ""
+
+#: ../usermanual/adherents.rst:185
 #: 9027c8f7745f4e379c3ff9cf26819cb6
 msgid "Mailings history"
 msgstr ""
 
-#: ../usermanual/adherents.rst:150
+#: ../usermanual/adherents.rst:187
 #: 0925bc92c4984afcb34ac9c2174712e6
 msgid "When you start a mailing, it is stored into your session. Session ends when users log out, or on a server defined timeout. Mailing history stores the mailing in the database, this ensure it will always be available in the future."
 msgstr ""
 
-#: ../usermanual/adherents.rst:152
+#: ../usermanual/adherents.rst:189
 #: 67d96e213ab24f949aadaaed23107b1b
 msgid "Every sent mailing is stored into the database, and can be used as a template to write a new one. In this case, a new mailing will be created using information from the history, and the original one will be kept as is."
 msgstr ""
 
-#: ../usermanual/adherents.rst:154
+#: ../usermanual/adherents.rst:191
 #: 927d38f491d641f197a96b8ff00b3eda
 msgid "Mailings can be stored before they are sent. In this case, it is possible to continue it later. When you use history on a draft mailing, original entry will be replaced on sending."
 msgstr ""
 
-#: ../usermanual/adherents.rst:156
+#: ../usermanual/adherents.rst:193
 #: bb6cf3adaa8a4a2285caba5dc9dbdd40
 msgid "When you use an existing history entry, here are the information that will be used:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:158
+#: ../usermanual/adherents.rst:195
 #: bd6db00975be42929b986ccff81f82f2
 msgid "recipients,"
 msgstr ""
 
-#: ../usermanual/adherents.rst:159
+#: ../usermanual/adherents.rst:196
 #: a95c3f6e3f264a69bb3f4373747943c1
 msgid "attachements,"
 msgstr ""
 
-#: ../usermanual/adherents.rst:160
+#: ../usermanual/adherents.rst:197
 #: 225ac38201d44524a7672186a1f9b6ca
 msgid "subject,"
 msgstr ""
 
-#: ../usermanual/adherents.rst:161
+#: ../usermanual/adherents.rst:198
 #: 2dfa24ffd4b04e3c941375147a457f03
 msgid "message,"
 msgstr ""
 
-#: ../usermanual/adherents.rst:162
+#: ../usermanual/adherents.rst:199
 #: 81d9780084784b0890c09e977bd3339f
 msgid "html/text flag."
 msgstr ""
 
-#: ../usermanual/adherents.rst:165
+#: ../usermanual/adherents.rst:202
 #: 78618e38e6d14652a01dd0befd44a86b
 msgid "CSV imports"
 msgstr ""
 
-#: ../usermanual/adherents.rst:167
+#: ../usermanual/adherents.rst:204
 #: c91a4cbcdd6f4bc3953d07f8ce49eed5
 msgid "It is possible to import member data from a predefined model. A default model is provided, but you can configure it to suits your needs, using the `Imports` menu entry."
 msgstr ""
 
-#: ../usermanual/adherents.rst:170
+#: ../usermanual/adherents.rst:207
 #: b1805812d0a24e3c8a41bb6ba13bcf48
 msgid "Model"
 msgstr ""
 
-#: ../usermanual/adherents.rst:172
+#: ../usermanual/adherents.rst:209
 #: bcb58046c4d74808a5cfa3c9204112ba
 msgid "Import model defines fields and their order in a CSV file. When importing, current model will be used to check your CSV file integrity."
 msgstr ""
 
-#: ../usermanual/adherents.rst:174
+#: ../usermanual/adherents.rst:211
 #: b2daf6c975544478a4b36c04dd34ce66
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr ""
 
-#: ../usermanual/adherents.rst:176
+#: ../usermanual/adherents.rst:213
 #: ebcddec5f1fd4a18b8a77fb558d0673a
 msgid "Default import model"
 msgstr ""
 
-#: ../usermanual/adherents.rst:181
+#: ../usermanual/adherents.rst:218
 #: 91e1971e93714fa390f1bc612d194d26
 msgid "If proposed model is not ok for you, click on `Edit model` and choose your fields:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:183
+#: ../usermanual/adherents.rst:220
 #: 9e3c6769d82640d5b5babb9e85489645
 msgid "Import model configuration"
 msgstr ""
 
-#: ../usermanual/adherents.rst:188
+#: ../usermanual/adherents.rst:225
 #: fc06e124b7184c1ea9eda06d934496e2
 msgid "Once you have selected your fields, click on the `Store new model` button."
 msgstr ""
 
-#: ../usermanual/adherents.rst:190
+#: ../usermanual/adherents.rst:227
 #: d8e022e96dd84f1dad2a052dd85a4067
 msgid "When in the current model tab, you can download an empty model from the `Generate an empty CSV file` button. Of course, you can change model if you want, or remove it to get the default model back."
 msgstr ""
 
-#: ../usermanual/adherents.rst:193
+#: ../usermanual/adherents.rst:230
 #: c132ed4abca149919b2341531aedc821
 msgid "Import"
 msgstr ""
 
-#: ../usermanual/adherents.rst:195
+#: ../usermanual/adherents.rst:232
 #: 845df45fdbad4599927cf17e374135ae
 msgid "Once you have retrieved and fill the empty file, you have to send it using the form `Send a new file`. At this step, Galette will check your file extension is ``csv`` (or ``txt``) and it size does not exceed maximum upload file size (2Mio per default in PHP)."
 msgstr ""
 
-#: ../usermanual/adherents.rst:199
+#: ../usermanual/adherents.rst:236
 #: 5b942105750f4e148d34eea5d6f4dac2
 msgid "If you want to import a huge file, you can put it from your FTP client in the ``galette/data/imports`` directory, or split it into several smaller files you can import one by one."
 msgstr ""
 
-#: ../usermanual/adherents.rst:201
+#: ../usermanual/adherents.rst:238
 #: 64ade97984164a5fbea679617bf8bbd9
 msgid "Sent files are listed in the `Existing files` section. You can show, remove or import it:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:203
+#: ../usermanual/adherents.rst:240
 #: 8c9b58b46d024061a3bf5e6cc83f9c71
 msgid "Select and import file"
 msgstr ""
 
-#: ../usermanual/adherents.rst:208
+#: ../usermanual/adherents.rst:245
 #: afcd22333ab74d5fb2f7b7637fedd7a9
 msgid "The `dry run` checkbox (checked per default) is designed to test your file data are valid (mandatory fields filled, data formatting is correct, ...) without storing anything in the database."
 msgstr ""
 
-#: ../usermanual/adherents.rst:210
+#: ../usermanual/adherents.rst:247
 #: 1a7bc8368ead48ba853c80b6cf7f6e4a
 msgid "When you import a CSV file, if one line is incorrect, previous ones may be stored in the database already; so it is advised to use the dry-run before to get error fixed."
 msgstr ""
 
-#: ../usermanual/adherents.rst:212
+#: ../usermanual/adherents.rst:249
 #: 213b677db97e41e7966e4b86d418b5e1
 msgid "You will have error messages than something went wrong (in dry-run mode or not):"
 msgstr ""
 
-#: ../usermanual/adherents.rst:216
+#: ../usermanual/adherents.rst:253
 #: 6cf07217c7534d6d945d691ce4702431
 msgid "You may see mandatory missing fields even if import is ok. This may happen when all the fields you set as required in Galette configuration are not listed in your import model."
 msgstr ""
 
-#: ../usermanual/adherents.rst:221
+#: ../usermanual/adherents.rst:258
 #: 41eb75320abb49f29e974cc5b7ccb321
 msgid "Links between members"
 msgstr ""
 
-#: ../usermanual/adherents.rst:225
+#: ../usermanual/adherents.rst:262
 #: e86e1b25d3694084bade44334297edb5
 msgid "You can link several members to a \"parent\" one. This may be used to store families for exemple, or members of a same company. You can access children members from the parent, and parent from the children."
 msgstr ""
 
-#: ../usermanual/adherents.rst:227
+#: ../usermanual/adherents.rst:264
 #: d5f19fff6063421c8ff5172f84561e8c
 msgid "You can add as many child as you want for a member, but a child cannot become a parent."
 msgstr ""
 
-#: ../usermanual/adherents.rst:229
+#: ../usermanual/adherents.rst:266
 #: 8376c8ed6c494d42bdf69c440e41189b
 msgid "The other interesting point of this system is you can retrieve some information from the parent when sending mailings or labels. In the children members, email and postal addresses automatically become optional, whatever the configuration says. If any of those information is missing, it will be retrieved from the parent."
 msgstr ""
 
-#: ../usermanual/adherents.rst:231
+#: ../usermanual/adherents.rst:268
 #: 0e0869de19c343d798cc1f5848eb39ed
 msgid "Members without email adresses cannot use the \"retrieve password\" feature. This does not affect the uniqueness email constraint in the database."
 msgstr ""
 
-#: ../usermanual/adherents.rst:234
+#: ../usermanual/adherents.rst:271
 #: f2aa2b9a79264c49aaf2c7f9b78750e1
 msgid "Impersonating"
 msgstr ""
 
-#: ../usermanual/adherents.rst:238
+#: ../usermanual/adherents.rst:275
 #: 99f6e023234b49639bec5f17e2081cdd
 msgid "Some issues may be related to a particular account, because of its ACLs, groups, ... In this case, it is unfortunately frequent to see some credentials sent by insecure emails; which should really be avoid."
 msgstr ""
 
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:277
 #: a4c3e243001244eb9615c891f002f6b4
 msgid "As super administrator user, you will see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonated the user, you can reproduce the issue and fix it or get all required information to report the issue upstream."
 msgstr ""

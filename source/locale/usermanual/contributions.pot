@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 07:38+0200\n"
+"POT-Creation-Date: 2026-09-22 07:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,157 +126,177 @@ msgstr ""
 msgid "Galette will tell you if some members do not have an email address, you can print labels for those ones."
 msgstr ""
 
-#: ../usermanual/contributions.rst:53
-#: aa440ab0c86b41328d9b9d7212114efa
-msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
+#: ../usermanual/contributions.rst:55
+#: 5d5ebca3bed44612b55f5a5a8f3d6a19
+msgid "Reminders obey the :ref:`sending limits <mail_throttling>`, following the very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly or daily quota is set, they are sent while the page loads, exactly as they always were."
 msgstr ""
 
-#: ../usermanual/contributions.rst:60
+#: ../usermanual/contributions.rst:57
+#: 65a0c6e2b3d345779d8351d9cd7b795f
+msgid "Set a quota and they can no longer all go out at once. Galette then queues them and takes you to a progress page that sends them one after the other. The queue is stored in database, so closing the page loses nothing: come back to the reminders and the ones left go out. When the quota is reached, the page says so and stops; the rest is sent later."
+msgstr ""
+
+#: ../usermanual/contributions.rst:59
+#: e176753e11cb4c238a95ccc77135e5ef
+msgid "Each reminder stays an individual message, written in the language of its recipient, either way. The quota counters are shared with mass mailings."
+msgstr ""
+
+#: ../usermanual/contributions.rst:61
+#: aa440ab0c86b41328d9b9d7212114efa
+msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/cron/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
+msgstr ""
+
+#: ../usermanual/contributions.rst:67
+#: 67c4cc57151e4c0b83b1e6dbe29a1a5d
+msgid "The script queues the reminders that are due, then drains the queue itself, respecting the same limits. It stays silent unless something failed, so cron only writes to you when there is a reason to."
+msgstr ""
+
+#: ../usermanual/contributions.rst:70
 #: 97e3e1d82ac14e7ba354b9ecd2792e66
 msgid "Invoices and receipts"
 msgstr ""
 
-#: ../usermanual/contributions.rst:62
+#: ../usermanual/contributions.rst:72
 #: caa7976ea40d4efea63e01d5e4672e4d
 msgid "In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution."
 msgstr ""
 
-#: ../usermanual/contributions.rst:64
+#: ../usermanual/contributions.rst:74
 #: f75c8f29cd864c79aa50fede8a6c93b5
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
 
-#: ../usermanual/contributions.rst:67
+#: ../usermanual/contributions.rst:77
 #: 8e8a46762e7741b79df2a47cb90bfcd6
 msgid "Scheduled payments"
 msgstr ""
 
-#: ../usermanual/contributions.rst:71
+#: ../usermanual/contributions.rst:81
 #: 53f37b085ed943219514e7f416a20fde
 msgid "It is possible to dispatch a contribution among one or several scheduled payments. All you have to do is to select \"Scheduled payment\" as payment type in your contribution; Galette will propose you to create an attached scheduled payment."
 msgstr ""
 
-#: ../usermanual/contributions.rst:73
+#: ../usermanual/contributions.rst:83
 #: 54e1bf63aad944398a85bc1466910098
 msgid "Add scheduled payment to a contribution"
 msgstr ""
 
-#: ../usermanual/contributions.rst:78
+#: ../usermanual/contributions.rst:88
 #: 95dd805d89104fc89f445a5e3e291c83
 msgid "By default, the entire remaining amount will be set into scheduled payment, but you can enter whatever you want. You can also select any payment type (except scheduled payment)."
 msgstr ""
 
-#: ../usermanual/contributions.rst:80
+#: ../usermanual/contributions.rst:90
 #: 84baf4708d464f9fac5f7086195c5edd
 msgid "When you edit a contribution that already has attached scheduled payments, you can see a summary, and you can also see list of entries."
 msgstr ""
 
-#: ../usermanual/contributions.rst:82
+#: ../usermanual/contributions.rst:92
 #: cec1a6a12d5149bda8bde1641cc9bb01
 msgid "Summary of scheduled payments"
 msgstr ""
 
-#: ../usermanual/contributions.rst:87
+#: ../usermanual/contributions.rst:97
 #: 66cade86cb3c4e4c9efdbd2db15ef656
 msgid "List of attached scheduled payments"
 msgstr ""
 
-#: ../usermanual/contributions.rst:93
+#: ../usermanual/contributions.rst:103
 #: bf689c670e024246b07e312450830269
 msgid "Transactions"
 msgstr ""
 
-#: ../usermanual/contributions.rst:95
+#: ../usermanual/contributions.rst:105
 #: 076f70d281074ce3ab62b6bb6e8ef139
 msgid "As seen in the example from this chapter introduction, a transaction is a global payment for a member."
 msgstr ""
 
-#: ../usermanual/contributions.rst:97
+#: ../usermanual/contributions.rst:107
 #: af3a3df8adf74fa0a4e412eb31021865
 msgid "Only a few information are required to add a new transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:99
+#: ../usermanual/contributions.rst:109
 #: cc36db27dde7440a9050fbab34cf09f9
 msgid "a description,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:100
+#: ../usermanual/contributions.rst:110
 #: 628ea4e21d6e4562ac50c50a3af1811e
 msgid "the originator,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:101
+#: ../usermanual/contributions.rst:111
 #: 4d87903ef25e4f2f8574f8d7821fd82c
 msgid "the date (current date per default),"
 msgstr ""
 
-#: ../usermanual/contributions.rst:102
+#: ../usermanual/contributions.rst:112
 #: aa7315738b5f40d39f6fa1678b7578b2
 msgid "the amount."
 msgstr ""
 
-#: ../usermanual/contributions.rst:104
+#: ../usermanual/contributions.rst:114
 #: 276e42580ada4656b46e619fe82c652a
 msgid "Transactions list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:109
+#: ../usermanual/contributions.rst:119
 #: f93498c947134bf2a7fe632450c24845
 msgid "Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
 
-#: ../usermanual/contributions.rst:111
+#: ../usermanual/contributions.rst:121
 #: 97da873eb0f64ba2aeff481614ada69c
 msgid "Add a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:116
+#: ../usermanual/contributions.rst:126
 #: e137a5b5dc7a435bb6427f2006a0f9a5
 msgid "After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaining amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaining amount of the transaction."
 msgstr ""
 
-#: ../usermanual/contributions.rst:118
+#: ../usermanual/contributions.rst:128
 #: c2c9fa2580bd419cb24568499cc0b18a
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:123
+#: ../usermanual/contributions.rst:133
 #: 09c13cd6d4eb4d9184789be333c50c16
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:125
+#: ../usermanual/contributions.rst:135
 #: 7840c8fd92e3420bad6e9718a07a5015
 msgid "Transaction edition"
 msgstr ""
 
-#: ../usermanual/contributions.rst:130
+#: ../usermanual/contributions.rst:140
 #: e36def5a2bd54b07a67200691efa69e0
 msgid "You can also attach an existing contribution instead of creating a new one."
 msgstr ""
 
-#: ../usermanual/contributions.rst:132
+#: ../usermanual/contributions.rst:142
 #: 2c400a31fa2b4afea4bf8e217db95a1f
 msgid "Add an already existing contribution to a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:140
+#: ../usermanual/contributions.rst:150
 #: 3fb3637afc6445f3b69bcc670988dde4
 msgid "Members selection"
 msgstr ""
 
-#: ../usermanual/contributions.rst:144
+#: ../usermanual/contributions.rst:154
 #: f77264235ad8425793b20fb8e79dfb5c
 msgid "The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons."
 msgstr ""
 
-#: ../usermanual/contributions.rst:146
+#: ../usermanual/contributions.rst:156
 #: c9ff918d6c5c4ccca2c3075116886c11
 msgid "Dropdown members list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:150
+#: ../usermanual/contributions.rst:160
 #: 6ea832c480434fc498d291a0382f9ca8
 msgid "You can display more members using arrow buttons or entering any text (this will search in first name, last name and identifiers)."
 msgstr ""

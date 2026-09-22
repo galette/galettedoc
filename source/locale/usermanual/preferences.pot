@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 07:38+0200\n"
+"POT-Creation-Date: 2026-09-22 07:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -481,272 +481,347 @@ msgstr ""
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:161
-#: 92269f53587348999737fb550ffe06dc
-msgid "**Using qmail server**: uses local server qmail,"
-msgstr ""
-
-#: ../usermanual/preferences.rst:163
+#: ../usermanual/preferences.rst:162
 #: 1cde89141ed04d80a11f49bf7053ee9b
 msgid "**Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application."
 msgstr ""
 
-#: ../usermanual/preferences.rst:165
+#: ../usermanual/preferences.rst:166
+#: caa2f3c7e2d74041acd1e010c5f28834
+msgid "The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated."
+msgstr ""
+
+#: ../usermanual/preferences.rst:168
 #: f03de8fca6b148cc89bfaf148cfa1c5d
 msgid "When using GMail as SMTP, you will have to configure user name and password to use."
 msgstr ""
 
-#: ../usermanual/preferences.rst:167
+#: ../usermanual/preferences.rst:170
 #: dae76c0df67a4d8086d5ee37c97fc670
 msgid "SMTP configuration is a bit more complex :"
 msgstr ""
 
-#: ../usermanual/preferences.rst:169
+#: ../usermanual/preferences.rst:172
 #: 7e82e20eb73d4b5db00f1453db4fbbb7
 msgid "**SMTP server**: server address, required,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:170
+#: ../usermanual/preferences.rst:173
 #: aad278d892484d0983beb1f4930360a3
 msgid "**SMTP port**: server port, required,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:171
+#: ../usermanual/preferences.rst:174
 #: d3c1dccc2cda479690609586736f437d
 msgid "**Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:172
+#: ../usermanual/preferences.rst:175
 #: b6b53f425aad4d1aa6a5bda24a769777
 msgid "**Use TLS for SMTP**: enable SSL support (always on for GMail),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:173
+#: ../usermanual/preferences.rst:176
 #: 0cd9b9608cf64d7dadd013b9d1057fd2
 msgid "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:175
-#: 7b5fd9a9c4634f69bb6118f3c588becf
-msgid "The `Test mail settings` button will send a test message to the email currently stored as members administrator."
+#: ../usermanual/preferences.rst:181
+#: 1131e1d3539644729635b02f01463248
+msgid "Sending limits"
 msgstr ""
 
-#: ../usermanual/preferences.rst:178
+#: ../usermanual/preferences.rst:187
+#: 5d2463fb0a064873ae7e6c6a51bcc662
+msgid "This is an **experimental** feature."
+msgstr ""
+
+#: ../usermanual/preferences.rst:189
+#: ae52d39db06b482099f09207dd09a398
+msgid "Try it on a test instance before your production one, watch carefully, and `report what you find <https://bugs.galette.eu>`_. Leaving the settings at their default keeps Galette sending exactly as it always did."
+msgstr ""
+
+#: ../usermanual/preferences.rst:191
+#: 20de23cef8804fbfbe3c873e6ce650fc
+msgid "Mail servers are rarely willing to accept anything you throw at them. They restrict the number of recipients a single message may carry, the number of messages a connection may carry, or the number of messages you may send per hour or per day. Galette can respect those restrictions, from five settings of the :ref:`advanced configuration <advanced_config>` page:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:193
+#: cb4eb594a6da4398a713c88e9678fe68
+msgid "``pref_mail_batch_size``: maximum number of recipients per message. ``0``, the default, keeps the historical behavior: one single message carrying every recipient in blind copy,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:194
+#: c928a9d911a14b469c6fe6eddd5f4d92
+msgid "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by default, no pause,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:195
+#: febf0e5b13d84eb6a6e18773ab10131f
+msgid "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, the default, means no limit,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:196
+#: 31a4b7ef67fc46e3952178071fe07d2a
+msgid "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the default, means no limit,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:197
+#: 22cf9784ee9b4ab082fabda9a4abc8ff
+msgid "``pref_mail_smtp_keepalive``: keep the SMTP connection open across the messages of a mailing instead of reconnecting for each one. Enabled by default."
+msgstr ""
+
+#: ../usermanual/preferences.rst:199
+#: 2e3084cd4ba943f4afa4bbf3ee74fc3c
+msgid "Apart from the keepalive, they all ship disabled: an instance that is updated behaves exactly as it did before."
+msgstr ""
+
+#: ../usermanual/preferences.rst:201
+#: e0ad2acb6a144ebcb295b9f0e18547b8
+msgid "Filter the advanced configuration on ``pref_mail_`` to get them all, next to the SMTP settings. The four that drive the queue carry the **alpha** marker:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:203
+#: 58d89cd4b2194ad291b98b107b9f5fe0
+msgid "The sending limits, in the advanced configuration"
+msgstr ""
+
+#: ../usermanual/preferences.rst:208
+#: 9c492cb47b27465d996991a51d31ee65
+msgid "Refer to your mail provider's documentation for the values to use, along with the SMTP settings."
+msgstr ""
+
+#: ../usermanual/preferences.rst:212
+#: 2b872ade48e74dc7bfea2f8ca0dde972
+msgid "The hourly and daily limits are what turns sending into a :ref:`queue <mailing_queue>`: as soon as one of them is set, a mailing can no longer be sent in a single page load."
+msgstr ""
+
+#: ../usermanual/preferences.rst:216
+#: 5982f55a53c04fd5aa847fcee9205497
+msgid "Limits count **recipients**, not messages, and for all messages Galette send."
+msgstr ""
+
+#: ../usermanual/preferences.rst:218
+#: cf5bfafac3b8404785c1b727a61be001
+msgid "The real limit of course depends on all usages of configured server."
+msgstr ""
+
+#: ../usermanual/preferences.rst:221
 #: c07f8130b6ab4e09929b0318e2dc8c65
 msgid "Labels"
 msgstr ""
 
-#: ../usermanual/preferences.rst:180
+#: ../usermanual/preferences.rst:223
 #: 69121e55f2de4410862b1eb38a5d0c73
 msgid "Galette settings, labels tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:186
+#: ../usermanual/preferences.rst:229
 #: 566c7d1c1deb417ea685ba5323dd7c61
 msgid "Cards"
 msgstr ""
 
-#: ../usermanual/preferences.rst:188
+#: ../usermanual/preferences.rst:231
 #: a9ed12a0e1bb4fb6a9946a38f022a45a
 msgid "Galette settings, cards tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:196
+#: ../usermanual/preferences.rst:239
 #: b0ecbe8eeffb43c9b20c945078f00945
 msgid "Security"
 msgstr ""
 
-#: ../usermanual/preferences.rst:202
+#: ../usermanual/preferences.rst:245
 #: 7214f6e08ebf449397778d1e430cff4e
 msgid "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 
-#: ../usermanual/preferences.rst:204
+#: ../usermanual/preferences.rst:247
 #: cec793037d974d61a6a2989277b72dbf
 msgid "Of course, all passwords should be as secure as possible, but this is especially true for all accounts that have privileges (staff, admin, super-admin); you may explain your users why this is important."
 msgstr ""
 
-#: ../usermanual/preferences.rst:206
+#: ../usermanual/preferences.rst:249
 #: 88a131cb0d3046d1b4a13dde60dc55ac
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:208
+#: ../usermanual/preferences.rst:251
 #: a843859cefb24d63a75a9d753e286025
 msgid "minimum length (6 characters or more),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:209
+#: ../usermanual/preferences.rst:252
 #: d994186560ba42cda33067bfa77d3d51
 msgid "minimum \"strength\","
 msgstr ""
 
-#: ../usermanual/preferences.rst:210
+#: ../usermanual/preferences.rst:253
 #: a93aed026827429385f776fc4716d350
 msgid "blacklist,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:211
+#: ../usermanual/preferences.rst:254
 #: 0e13745e26594307ad9e85994d7994c3
 msgid "no personal information."
 msgstr ""
 
-#: ../usermanual/preferences.rst:213
+#: ../usermanual/preferences.rst:256
 #: 58d89cd4b2194ad291b98b107b9f5fe0
 msgid "Galette settings, security tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:218
+#: ../usermanual/preferences.rst:261
 #: 0a6f608bf6b949b1a70edc99aa178aff
 msgid "Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a \"strength meter\" displayed for information."
 msgstr ""
 
-#: ../usermanual/preferences.rst:222
+#: ../usermanual/preferences.rst:265
 #: 5e445605b2ea4eff90c8e271493a7609
 msgid "If you enable password checks, it is not possible to know if some of existing ones does not respect them. Galette will display a warning at login if checks are not respected, but login will still be possible!"
 msgstr ""
 
-#: ../usermanual/preferences.rst:224
+#: ../usermanual/preferences.rst:267
 #: 2db450c3793846c09362ea2498a4c0e7
 msgid "But wait... Password security is important, but Galette does not enforce nothing! Isn't that dumb? Well, not really. For tests or entirely private instances, security may be less important; and in some cases, being too restrictive may be an issue for your users; that's why this is up to you to secure as needed; just like using SSL or not :)"
 msgstr ""
 
-#: ../usermanual/preferences.rst:227
+#: ../usermanual/preferences.rst:270
 #: 4413270833804d25ae738aedfb478ea3
 msgid "Password strength"
 msgstr ""
 
-#: ../usermanual/preferences.rst:229
+#: ../usermanual/preferences.rst:272
 #: 8e1f5b9921aa4253a3f24379fd745aa1
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:231
+#: ../usermanual/preferences.rst:274
 #: e9a511606d684ae691d92f84ce417c6a
 msgid "contains lower case characters,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:232
+#: ../usermanual/preferences.rst:275
 #: 3db8a6cf04f34582b4a8c38a0750fd2e
 msgid "contains upper case characters,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:233
+#: ../usermanual/preferences.rst:276
 #: 50e044072a984041b48ae2e250f35a25
 msgid "contains number,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:234
+#: ../usermanual/preferences.rst:277
 #: f06cfc1f97a94586b24b0bf858d9540e
 msgid "contains special characters."
 msgstr ""
 
-#: ../usermanual/preferences.rst:236
+#: ../usermanual/preferences.rst:279
 #: 4015ac16232340a0bacafcf7a1bc7667
 msgid "You can choose between 5 values for strength configuration:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:238
+#: ../usermanual/preferences.rst:281
 #: eec6427f4ea8432eb60433670256c616
 msgid "**none**: (default): disables strength checks and check for personal information,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:239
+#: ../usermanual/preferences.rst:282
 #: 3bcc056167cb416389074e7f51942046
 msgid "**weaker**: enables check for personal information, only one of the rule is mandatory,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:240
+#: ../usermanual/preferences.rst:283
 #: abb7a6b648554b23bf8befa50c52d802
 msgid "**medium**: two rules are mandatory,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:241
+#: ../usermanual/preferences.rst:284
 #: d63d9355ce3b480a8e10f08960f4702d
 msgid "**strong**: three rules are mandatory,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:242
+#: ../usermanual/preferences.rst:285
 #: 094f54577eaa487c989eef10fc7faedf
 msgid "**very strong**: the four rules are mandatory."
 msgstr ""
 
-#: ../usermanual/preferences.rst:245
+#: ../usermanual/preferences.rst:288
 #: 26cc82861bea408187e331d2e9774158
 msgid "Blacklisted passwords"
 msgstr ""
 
-#: ../usermanual/preferences.rst:247
+#: ../usermanual/preferences.rst:290
 #: 77a596d519f743d18d7284b866e101cc
 msgid "A default list of 500 common passwords is provided as a blacklist you can enable, \"galette\" is also blacklisted."
 msgstr ""
 
-#: ../usermanual/preferences.rst:251
+#: ../usermanual/preferences.rst:294
 #: 5dde6af0486f4fb7947d073110775986
 msgid "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms (one per line). You can provide your own file, we advice you to complete the existing one."
 msgstr ""
 
-#: ../usermanual/preferences.rst:254
+#: ../usermanual/preferences.rst:297
 #: 973762aab6c1458a9b804d5bc09182c7
 msgid "Personal information as password"
 msgstr ""
 
-#: ../usermanual/preferences.rst:256
+#: ../usermanual/preferences.rst:299
 #: e9acb6a45b70469eb1f0ed551182247e
 msgid "This check rely on strength activation (all but **none** level). For the super-admin account, this will just ensure you are not using login as password. For standard accounts, there are several information involved:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:258
+#: ../usermanual/preferences.rst:301
 #: 1feaca8764af48449d14deb2c5bd5201
 msgid "name,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:259
+#: ../usermanual/preferences.rst:302
 #: 2f926e20ba4f4b639a4c59882a6076ab
 msgid "surname,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:260
+#: ../usermanual/preferences.rst:303
 #: df7cfd15c6df461f9720ff21720e11be
 msgid "nickname,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:261
+#: ../usermanual/preferences.rst:304
 #: 6ce969262fe94c1491b4479c72c623a6
 msgid "login,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:262
+#: ../usermanual/preferences.rst:305
 #: ece9a0e397384da48b47bc861dd7f2e7
 msgid "email,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:263
+#: ../usermanual/preferences.rst:306
 #: cf6ff75298bd40a5a50659b08de9a9f6
 msgid "birthdate,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:264
+#: ../usermanual/preferences.rst:307
 #: 3c52521d33d247a984be73137a14f17d
 msgid "town"
 msgstr ""
 
-#: ../usermanual/preferences.rst:266
+#: ../usermanual/preferences.rst:309
 #: a82d53a9612b4d7290230c84f6380455
 msgid "Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:269
+#: ../usermanual/preferences.rst:312
 #: 2d20078e8d0d4a66998d02699db68f9d
 msgid "Admin"
 msgstr ""
 
-#: ../usermanual/preferences.rst:273
+#: ../usermanual/preferences.rst:316
 #: 3f5c7e5479e94af5aa981b788d168045
 msgid "This tab will be present only if you are logged in as super administrator."
 msgstr ""
 
-#: ../usermanual/preferences.rst:275
+#: ../usermanual/preferences.rst:318
 #: cf6a55e93ccf4b93beebcefe9dfe3f0c
 msgid "Galette settings, admin tab"
 msgstr ""
