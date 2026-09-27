@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 07:13+0200\n"
+"POT-Creation-Date: 2026-09-27 21:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -811,17 +811,77 @@ msgstr ""
 msgid "Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:312
+#: ../usermanual/preferences.rst:314
+#: a5e56dc8b96c4e69b9a4c3f6dd5f1489
+msgid "Two-factor authentication"
+msgstr ""
+
+#: ../usermanual/preferences.rst:318
+#: c8e5aa704c5b49a6af9d2cecc8039569
+msgid "Marked **experimental**: it is complete and tested, but it is new, and the interface may still change. It is disabled by default; nothing happens until you choose otherwise."
+msgstr ""
+
+#: ../usermanual/preferences.rst:320
+#: 9a363352c0c04d55ba76358bcd914681
+msgid "A password is a single factor: whoever knows it is in. Two-factor authentication asks, right after the password, for a six digits code that changes every thirty seconds and comes from an application on the user own phone or computer. A stolen password is then not enough anymore."
+msgstr ""
+
+#: ../usermanual/preferences.rst:322
+#: 499c2c079feb4a5688601d3354a936c3
+msgid "Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server."
+msgstr ""
+
+#: ../usermanual/preferences.rst:324
+#: 9abbf59cbd364f6d90210f59990ad3ee
+msgid "Two policies are available:"
+msgstr ""
+
+#: ../usermanual/preferences.rst:326
+#: a317dde356434e3cb87ad8d2fbe359f9
+msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
+msgstr ""
+
+#: ../usermanual/preferences.rst:327
+#: 57ec3416033743c190c39577c26c9dd5
+msgid "**optional**: everybody may enable it from their own account, nobody has to."
+msgstr ""
+
+#: ../usermanual/preferences.rst:329
+#: 6120991b6aec4be1bc1415847a13171d
+msgid "Making the second factor **compulsory** — for administrators and staff members, or for everyone — is written and tested, but it is not offered yet: under a compulsory policy, a server clock that drifts or an enrolment that goes wrong puts a whole association outside its own instance, and the only way back is a command in the database. It is planned for a later version, once the optional policy has been used in the field."
+msgstr ""
+
+#: ../usermanual/preferences.rst:331
+#: e6be0d947b804b709833ff04a21c0dc1
+msgid "Since nobody is forced to enrol, administrators and staff members — the accounts that can read the civil status, the addresses and the financial data of every member — are invited to set a second factor up when they log in, with a **Later** and a **Do not ask again** button. Declining is remembered in a cookie of the browser, so the invitation comes back on a new browser, or after a year."
+msgstr ""
+
+#: ../usermanual/preferences.rst:335
+#: db5ef4dff04d48f598fec37a9f115a4e
+msgid "Switching the policy back to **disabled** does not delete anything. Codes are no longer asked for, and the second factors already enabled start being asked for again as soon as you enable a policy back. While the policy is disabled, the pages to enable a second factor answer nothing: a factor enrolled then would never be asked for."
+msgstr ""
+
+#: ../usermanual/preferences.rst:337
+#: 834915b06c3b40699f6ee8b3080f039e
+msgid "The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`."
+msgstr ""
+
+#: ../usermanual/preferences.rst:339
+#: fd692bf694dd475792c00a0b5b03d138
+msgid "Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it."
+msgstr ""
+
+#: ../usermanual/preferences.rst:342
 #: 2d20078e8d0d4a66998d02699db68f9d
 msgid "Admin"
 msgstr ""
 
-#: ../usermanual/preferences.rst:316
+#: ../usermanual/preferences.rst:346
 #: 3f5c7e5479e94af5aa981b788d168045
 msgid "This tab will be present only if you are logged in as super administrator."
 msgstr ""
 
-#: ../usermanual/preferences.rst:318
+#: ../usermanual/preferences.rst:348
 #: cf6a55e93ccf4b93beebcefe9dfe3f0c
 msgid "Galette settings, admin tab"
 msgstr ""
