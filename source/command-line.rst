@@ -37,8 +37,8 @@ Galette now proposes a command line interface to manage some tasks. This is acce
 
 You can obtain help for a specific command by using the ``help`` command:
 
-Check
-=====
+Requirements check
+==================
 
 This only check for Galette prerequisites, and has no specific arguments.
 
