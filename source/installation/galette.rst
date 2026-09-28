@@ -48,8 +48,12 @@ The mode is deduced from the |phpfile| ``config/config.inc.php`` file: no config
 
    To install a brand new instance over an existing one - erasing its data - remove the configuration file first. As long as it is there, Galette will only offer to update.
 
-Checks
-======
+Requirements check
+==================
+
+.. note::
+
+   You can also open the `http://galette/compat_test.php` URL in your browser, or use the ``bin/console galette:checks`` command.
 
 Please check the following if you want Galette to install without problems:
 
