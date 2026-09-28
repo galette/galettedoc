@@ -96,8 +96,8 @@ On that screen, select your database type, and enter hostname, database name, us
 
    This step is displayed for a new installation only. When updating, everything - password included - is read from the existing configuration file, and the step is skipped. It only comes back if that file cannot be read, or if it is incomplete.
 
-Checks
-------
+Database checks
+---------------
 
 Next screen will try to connect to the database using provided elements, than it will check database rights are correct (user can add/remove/alter tables, and can add/remove/edit rows, ...).
 
