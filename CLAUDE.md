@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the documentation source for [Galette](https://galette.eu), a membership management web application. Documentation is written in reStructuredText (.rst) and built with [Sphinx](https://www.sphinx-doc.org). It is published to [doc.galette.eu](https://doc.galette.eu) via ReadTheDocs.
 
-Current Galette version documented: **1.2.1** (defined in `source/conf.py` and `source/globals.rst`).
+Current Galette version documented: **1.3.0** (defined in `source/conf.py` and `source/globals.rst`).
 
 For reference, source code is available locally at `~/Workdir/php-eclipse_workspace/Galette` and plugins source are at `~/Workdir/php-eclipse_workspace/Galette/galette/plugins/`.
 
