@@ -156,23 +156,23 @@ Sending email parameters:
   * **Emailing disabled**: no email will be send from Galette,
   * **PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),
   * **Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),
-  * **Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),
   * **Using sendmail server**: uses local server sendmail,
 
 * **Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application.
 
 .. versionchanged:: 1.3.0
 
-   The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated.
+   * The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated.
+   * The **GMail** method has been removed. Instances still configured with it are switched to ``SMTP`` when the database is updated.
 
-When using GMail as SMTP, you will have to configure user name and password to use.
+When using SMTP, you will have to configure user name and password to use.
 
 SMTP configuration is a bit more complex :
 
 * **SMTP server**: server address, required,
 * **SMTP port**: server port, required,
 * **Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,
-* **Use TLS for SMTP**: enable SSL support (always on for GMail),
+* **Use TLS for SMTP**: enable SSL support,
 * **Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example).
 
 .. _mail_throttling:
