@@ -33,6 +33,12 @@ Security
 - The uniqueness check on the super administrator login could be skipped
 - Missing authentication checks on few routes
 - Demonstration mode freezes sender addresses, super administrator credentials and mail method, including from the advanced configuration page
+- Add optional two-factor authentication (**experimental**, disabled by default), using time based codes (TOTP) from any authenticator application:
+
+  - Two-factor authentication can be made mandatory for administrators and staff members, or for everyone, behind the ``two-factor-required`` feature flag: under a mandatory policy, a wrong clock or a botched enrolment locks an association out of its own instance, and the way back is a SQL statement
+  - Members enrolling get ten single use recovery codes; administrators and staff can reset a member second factor
+  - Administrators and staff members without a second factor are invited to set one up when they log in, until they decline
+  - The super administrator can use a second factor as well; it is cleared from the preferences in database
 
 .. _ajouts_130:
 
@@ -44,6 +50,7 @@ New features
 - Some settings moved from behavior.inc.php to the database: instance URL (GALETTE_URI), reverse proxy address index (GALETTE_X_FORWARDED_FOR_INDEX) and session duration (GALETTE_TIMEOUT). The constants still work and still take precedence; they are then reported as locked
 - The maximum size of an upload is now a setting, one per kind of upload: pictures, mailing attachments, documents, CSV imports and dynamic fields files. They are in the advanced configuration, and default to the single value that was hard coded until now
 - Plugins now have their own database version, and are updated on their own; the plugins page has been reworked, and lists disabled, not installed and outdated plugins
+- Plugins can declare public pages, each with a visibility of its own, set from the preferences page like the core ones
 - Dynamic fields can be added on preferences
 - Filters and pagination on the documents list
 - Contribution types can carry a description
@@ -76,6 +83,7 @@ Improvements
 - A file size is shown in the unit that fits - octets, Ko, Mo or Go - wherever it appears: the upload limits, the error a file too big raises, and the list of import files
 - Reuse SMTP connection on several calls
 - Load news with ajax call to prevent dashboard hangs
+- Superadmin login and password settings moved from the Preferences to the "My information" page in the "My account" menu
 
 .. _bogues_130:
 
@@ -107,6 +115,8 @@ Fixes
 - Several fixes on the web installer, including Javascript errors
 - GALETTE_SQL_DEBUG was tested for existence only, so declaring it to false still dumped every query
 - Fix mass change when only a group removal is selected
+- Customized PDF models and email texts were reset to their default values on every update
+- Occurrences of a dynamic field holding the same value collapsed into one in PDF and mail replacements, and a dynamic file link could point to another occurrence
 
 .. _l10n_130:
 
@@ -125,11 +135,13 @@ L10n
 Removals and requirements
 =========================
 
+- Javascript is now required; a message says so when it is disabled, and the per feature warnings and the markup that was kept hidden for browsers without it have been dropped
 - PHP 8.3 is now the minimum required version
 - The fileinfo PHP module is now required; compatibility tests now also check ctype, dom, filter and iconv, and gettext is no longer reported as optional
 - Mime type detection now always relies on fileinfo; the extension based fallback and the FileTrait::$mime_types map it used have been removed
 - Database version is now 1.300; new tables have been added for plugins, authentication attempts and the mailing queue
 - The QMAIL mail method has been removed; installations using it are switched to sendmail
+- The GMAIL mail method has been removed; installations using it are switched to SMTP
 - GALETTE_DISPLAY_VERSION, GALETTE_HIDE_VERSION and GALETTE_ADAPTATIVE_CARDS constants have been removed
 - Updating from 0.6x releases is deprecated
 - Third party libraries have been updated
@@ -141,6 +153,7 @@ Plugins and development
 
 - Plugins declare an install class implementing InstallableInterface; the former way still works, but is deprecated, and a plugin class is now mandatory
 - Plugins can declare their own preferences; they are stored along the others, and their values are kept while the plugin is disabled
+- Plugins can refuse the removal of a group, and give the reason
 - Routes can be declared from controllers using the #[Route] attribute; this does not replace routes files yet, it is a first step
 - New AbstractEntity class and #[Column] attribute; Pdf is now abstract, and History members are protected
 - Preferences have been split behind a declarative schema, and a new Html utility class handles cleaning and stripping markup
