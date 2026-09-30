@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 07:38+0200\n"
+"POT-Creation-Date: 2026-09-27 21:47+0200\n"
 "PO-Revision-Date: 2026-02-06 16:01+0000\n"
 "Last-Translator: Kehribar <103407696+dpentx@users.noreply.github.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/galette/doc-"
@@ -166,4 +166,31 @@ msgid ""
 "And this is the same for Galette, you can use it along with SSL, no problem. "
 "All data that will be transmitted to the server will be a bit more confident "
 "and secured :)"
+msgstr ""
+
+#: ../installation/postinstall.rst:55 29494e5f03f242fbbe9862d6338a4ff1
+msgid ""
+"Since Galette 1.3.0, you can also ask for :ref:`a second factor at login "
+"<pref_2fa>`, so that a password that leaked is not enough on its own."
+msgstr ""
+
+#: ../installation/postinstall.rst:59 6b6cda2f511341af8cf3b63843ed45a1
+msgid ""
+"Codes are computed from the current time: make sure your server clock is "
+"right, and kept right (NTP). A server drifting away refuses every code, "
+"without saying why."
+msgstr ""
+
+#: ../installation/postinstall.rst:61 3f2304d30a5b4b8eb9b3c6b7590126a6
+msgid ""
+"Before enabling a second factor on the super administrator account, check "
+"you can reach your database. That account has no recovery codes, "
+"and :ref:`clearing its second factor <faq_2fa>` is done there."
+msgstr ""
+
+#: ../installation/postinstall.rst:63 a0d2a974e46a41e495e8407e4d69f74f
+msgid ""
+"Which also means: a second factor protects the login form, not the server. "
+"Whoever can write in your database or in your configuration file can turn it "
+"off. Keep both out of reach."
 msgstr ""
