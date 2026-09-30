@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-27 16:17+0000\n"
+"PO-Revision-Date: 2026-09-30 06:25+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "command-line/fr/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../command-line.rst:41
 msgid "Requirements check"
-msgstr ""
+msgstr "Vérification des pré-requis"
 
 #: ../command-line.rst:43
 msgid ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../command-line.rst:183
 msgid "Mailing queue"
-msgstr ""
+msgstr "File d'envoi"
 
 #: ../command-line.rst:187
 msgid ""
@@ -152,6 +152,9 @@ msgid ""
 "and reminders are queued rather than sent in one go. This command drains "
 "what is pending:"
 msgstr ""
+"Lorsque :ref:`les limites d'envoi <mail_throttling>` sont configurées, les "
+"envois de masse et les rappels sont mis en queue plutôt que envoyés en une "
+"seule fois. Cette commande draine ce qui est en attente :"
 
 #: ../command-line.rst:202
 msgid ""
@@ -166,6 +169,9 @@ msgid ""
 "<mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it "
 "drains alongside."
 msgstr ""
+"Pour une documentation plus complète, voir :ref:`drainer la file d'envois "
+"<mailing_queue_cron>`, et la page :ref:`page de progression <mailing_queue>` "
+"qui draine également."
 
 #: ../command-line.rst:211
 msgid "Plugins commands"
