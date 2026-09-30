@@ -2,13 +2,14 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2023, 2024, 2025, 2026.
 # Guillaume AGNIERAY <dev@agnieray.net>, 2025.
+# alainP77 <alain.paris77@free.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-30 06:25+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2026-09-30 10:15+0000\n"
+"Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "preferences/fr/>\n"
 "Language: fr_FR\n"
@@ -606,12 +607,17 @@ msgid ""
 "The **qmail** method has been removed. Instances still configured with it "
 "are switched to ``sendmail`` when the database is updated."
 msgstr ""
+"``sendmail``La méthode **qmail** a été supprimée. Les instances encore "
+"configurées avec cette méthode passent en ``sendmail`` lorsque la base de "
+"données est mise à jour."
 
 #: ../usermanual/preferences.rst:166
 msgid ""
 "The **GMail** method has been removed. Instances still configured with it "
 "are switched to ``SMTP`` when the database is updated."
 msgstr ""
+"La méthode **GMail** a été supprimée. Les instances encore configurées avec "
+"cette méthode passent en ``SMTP`` lorsque la base de données est mise à jour."
 
 #: ../usermanual/preferences.rst:168
 msgid ""
@@ -659,7 +665,7 @@ msgstr "Limites d'envoi"
 
 #: ../usermanual/preferences.rst:187
 msgid "This is an **experimental** feature."
-msgstr ""
+msgstr "Ceci est une fonctionnalité **expérimentale**."
 
 #: ../usermanual/preferences.rst:189
 msgid ""
@@ -667,6 +673,10 @@ msgid ""
 "`report what you find <https://bugs.galette.eu>`_. Leaving the settings at "
 "their default keeps Galette sending exactly as it always did."
 msgstr ""
+"Essayez-le sur une instance de test avant votre instance de production, "
+"vérifiez attentivement et signalez les anomalies trouvées <https://"
+"bugs.galette.eu>`. Laisser les paramètres par défaut permet à Galette "
+"d’envoyer exactement comme avant."
 
 #: ../usermanual/preferences.rst:191
 msgid ""
@@ -676,6 +686,12 @@ msgid ""
 "hour or per day. Galette can respect those restrictions, from five settings "
 "of the :ref:`advanced configuration <advanced_config>` page:"
 msgstr ""
+"Les serveurs de messagerie sont rarement prêts à accepter tout ce que vous "
+"leur envoyez. Ils limitent le nombre de destinataires qu’un seul message "
+"peut transporter, le nombre de messages qu’une connexion peut transporter ou "
+"le nombre de messages que vous pouvez envoyer par heure ou par jour. Galette "
+"peut respecter ces restrictions, à partir de cinq paramètres de la "
+":ref:`page configuration avancée <advanced_config>` :"
 
 #: ../usermanual/preferences.rst:193
 msgid ""
@@ -683,24 +699,33 @@ msgid ""
 "the default, keeps the historical behavior: one single message carrying "
 "every recipient in blind copy,"
 msgstr ""
+"``pref_mail_batch_size``: nombre maximal de destinataires par message. "
+"``0``, le comportement par défaut reste identique à celui historique : un "
+"seul message avec chaque destinataire en copie cachée,"
 
 #: ../usermanual/preferences.rst:194
 msgid ""
 "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by "
 "default, no pause,"
 msgstr ""
+"``pref_mail_batch_delay``: faire une pause, en secondes, entre deux "
+"messages. ``0`` par défaut, pas de pause,"
 
 #: ../usermanual/preferences.rst:195
 msgid ""
 "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, "
 "the default, means no limit,"
 msgstr ""
+"``pref_mail_hourly_limit``: nombre maximal de destinataires par heure . "
+"``0`, par défaut, signifie aucune limite,"
 
 #: ../usermanual/preferences.rst:196
 msgid ""
 "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the "
 "default, means no limit,"
 msgstr ""
+"``pref_mail_daily_limit``: nombre maximal de destinataires par jour . ``0`, "
+"par défaut, signifie aucune limite,"
 
 #: ../usermanual/preferences.rst:197
 msgid ""
@@ -708,6 +733,9 @@ msgid ""
 "messages of a mailing instead of reconnecting for each one. Enabled by "
 "default."
 msgstr ""
+"``pref_mail_smtp_keepalive``: garde la connexion SMTP ouverte entre les "
+"messages d’un envoi , au lieu de se reconnecter pour chacun . Activé par "
+"défaut ."
 
 #: ../usermanual/preferences.rst:199
 msgid ""
@@ -720,16 +748,21 @@ msgid ""
 "Filter the advanced configuration on ``pref_mail_`` to get them all, next to "
 "the SMTP settings. The four that drive the queue carry the **alpha** marker:"
 msgstr ""
+"Filtrez la configuration avancée sur ``pref_mail_`` pour les obtenir toutes, "
+"en regard des paramètres SMTP. Les quatre qui dirigent la file d’attente "
+"portent le marqueur **alpha** :"
 
 #: ../usermanual/preferences.rst:203
 msgid "The sending limits, in the advanced configuration"
-msgstr ""
+msgstr "Les limites d’envoi, dans la configuration avancée"
 
 #: ../usermanual/preferences.rst:208
 msgid ""
 "Refer to your mail provider's documentation for the values to use, along "
 "with the SMTP settings."
 msgstr ""
+"Reportez-vous à la documentation de votre fournisseur de messagerie pour "
+"connaître les valeurs à utiliser, ainsi que les paramètres SMTP."
 
 #: ../usermanual/preferences.rst:212
 msgid ""
@@ -737,11 +770,16 @@ msgid ""
 "<mailing_queue>`: as soon as one of them is set, a mailing can no longer be "
 "sent in a single page load."
 msgstr ""
+"Les limites horaires et quotidiennes sont ce qui transforme l’envoi en une "
+":ref:`liste d'attente <mailing_queue>`: dès que l’une d’elles est définie, "
+"un publipostage ne peut plus être envoyé en un seul chargement de page."
 
 #: ../usermanual/preferences.rst:216
 msgid ""
 "Limits count **recipients**, not messages, and for all messages Galette send."
 msgstr ""
+"Les **destinataires** sont les seuls à être pris en compte dans les limites, "
+"pas les messages, et pour chacun des messages que Galette envoie."
 
 #: ../usermanual/preferences.rst:218
 msgid "The real limit of course depends on all usages of configured server."
@@ -998,6 +1036,9 @@ msgid ""
 "interface may still change. It is disabled by default; nothing happens until "
 "you choose otherwise."
 msgstr ""
+"Marqué **expérimental**: il est complet et testé, mais il est nouveau et "
+"l'interface peut encore être modifiée. Il est désactivé par défaut ; rien ne "
+"se passe jusqu’à ce que vous choisissiez de l'activer."
 
 #: ../usermanual/preferences.rst:320
 msgid ""
@@ -1013,6 +1054,9 @@ msgid ""
 "authenticator application speaks; no third party service is involved, and "
 "nothing leaves your server."
 msgstr ""
+"Galette met en œuvre la norme TOTP (:rfc:`6238`), celle que toutes les "
+"applications d’authentification utilisent ; aucun service tiers n’est "
+"impliqué et rien ne quitte votre serveur."
 
 #: ../usermanual/preferences.rst:324
 msgid "Two policies are available:"
