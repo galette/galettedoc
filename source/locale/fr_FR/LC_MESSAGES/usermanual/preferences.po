@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-30 10:21+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2026-10-01 05:42+0000\n"
+"Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "preferences/fr/>\n"
 "Language: fr_FR\n"
@@ -1036,9 +1036,9 @@ msgid ""
 "interface may still change. It is disabled by default; nothing happens until "
 "you choose otherwise."
 msgstr ""
-"Marqué **expérimental**: il est complet et testé, mais il est nouveau et "
-"l'interface peut encore être modifiée. Il est désactivé par défaut ; rien ne "
-"se passe jusqu’à ce que vous choisissiez de l'activer."
+"Marqué **expérimental**: c'est complet et testé, mais c'est une nouveauté et "
+"l'interface peut encore être modifiée. Elle est désactivée par défaut; rien "
+"ne se passe jusqu’à ce que vous choisissiez de l'activer."
 
 #: ../usermanual/preferences.rst:320
 msgid ""
@@ -1047,6 +1047,11 @@ msgid ""
 "changes every thirty seconds and comes from an application on the user own "
 "phone or computer. A stolen password is then not enough anymore."
 msgstr ""
+"Un mot de passe est un facteur unique : celui qui le connaît. "
+"L’authentification à deux facteurs demande, juste après le mot de passe, un "
+"code à six chiffres qui change toutes les trente secondes et provient d’une "
+"application sur le téléphone ou l’ordinateur de l’utilisateur. Un mot de "
+"passe volé ne suffit plus."
 
 #: ../usermanual/preferences.rst:322
 msgid ""
@@ -1060,16 +1065,20 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:324
 msgid "Two policies are available:"
-msgstr ""
+msgstr "Deux politiques sont disponibles:"
 
 #: ../usermanual/preferences.rst:326
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
+"**désactivé** (par défaut): rien ne change, personne n’est invité à entrer "
+"un code,"
 
 #: ../usermanual/preferences.rst:327
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
+"**optionnel**: tout le monde peut l’activer depuis son propre compte, "
+"personne n'est obligé."
 
 #: ../usermanual/preferences.rst:329
 msgid ""
@@ -1090,6 +1099,13 @@ msgid ""
 "remembered in a cookie of the browser, so the invitation comes back on a new "
 "browser, or after a year."
 msgstr ""
+"Comme personne n’est obligé de s’inscrire, les administrateurs et les "
+"membres du personnel - les comptes qui peuvent lire l’état civil, les "
+"adresses et les données financières de chaque membre - sont invités à "
+"définir un second facteur lors de la connexion, avec un **Plus tard** et un "
+"bouton **Ne plus demander**. Le refus est mémorisé dans un cookie du "
+"navigateur, de sorte que l’invitation revient sur un nouveau navigateur, ou "
+"après un an."
 
 #: ../usermanual/preferences.rst:335
 msgid ""
@@ -1106,6 +1122,9 @@ msgid ""
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
 "it <faq_2fa>`."
 msgstr ""
+"Le super administrateur est également couvert, comme tout autre compte. "
+"Comme il ne s’agit pas d’un membre, il n’a aucun code de récupération ; voir "
+":ref:`que faire si vous le perdez <faq_2fa>`."
 
 #: ../usermanual/preferences.rst:339
 msgid ""
@@ -1114,6 +1133,11 @@ msgid ""
 "Administrators and staff members can :ref:`reset the second factor of a "
 "member <member_2fa_reset>` who lost it."
 msgstr ""
+"Les adhérents activent et gèrent leur propre deuxième facteur à partir de "
+"leur compte ; cela est décrit dans :ref:`la partie membres de ce manuel "
+"<man_2fa>`. Les administrateurs et les membres du bureau peuvent "
+":ref:`réinitialiser le deuxième facteur d’un adhérent <member_2fa_reset>` "
+"qui l’a perdu."
 
 #: ../usermanual/preferences.rst:342
 msgid "Admin"
