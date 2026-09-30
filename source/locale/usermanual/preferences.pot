@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-27 21:47+0200\n"
+"POT-Creation-Date: 2026-09-30 06:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -472,23 +472,23 @@ msgid "**Using a SMTP server**: uses an external SMTP server to configure (will 
 msgstr ""
 
 #: ../usermanual/preferences.rst:159
-#: 87bb0e7681604686a1d0c8596800e00a
-msgid "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),"
-msgstr ""
-
-#: ../usermanual/preferences.rst:160
 #: a48ee2e234c344f58502a96761162819
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:162
+#: ../usermanual/preferences.rst:161
 #: 1cde89141ed04d80a11f49bf7053ee9b
 msgid "**Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application."
 msgstr ""
 
-#: ../usermanual/preferences.rst:166
+#: ../usermanual/preferences.rst:165
 #: caa2f3c7e2d74041acd1e010c5f28834
 msgid "The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated."
+msgstr ""
+
+#: ../usermanual/preferences.rst:166
+#: caa2f3c7e2d74041acd1e010c5f28834
+msgid "The **GMail** method has been removed. Instances still configured with it are switched to ``SMTP`` when the database is updated."
 msgstr ""
 
 #: ../usermanual/preferences.rst:168
