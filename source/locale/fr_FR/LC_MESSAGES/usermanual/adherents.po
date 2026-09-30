@@ -1,13 +1,14 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2026.
+# alainP77 <alain.paris77@free.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-30 06:25+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2026-10-01 05:42+0000\n"
+"Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "members/fr/>\n"
 "Language: fr_FR\n"
@@ -362,6 +363,8 @@ msgid ""
 "Each attachment has a maximum size of its own, which you can :ref:`change "
 "from the advanced configuration <upload_sizes>` page."
 msgstr ""
+"Chaque pièce jointe a sa propre taille maximale, que vous pouvez "
+":ref:`modifier depuis la page de configuration avancée <upload_sizes>`."
 
 #: ../usermanual/adherents.rst:138
 msgid "`Preview` button let you preview your message before sending it."
@@ -405,22 +408,30 @@ msgid ""
 "recipient in blind copy - but mail servers restrict what one message may "
 "carry, and how fast you may send."
 msgstr ""
+"Par défaut, un envoi est un message unique, envoyé immédiatement, contenant "
+"chaque destinataire en copie cachée - mais les serveurs de messagerie "
+"restreignent ce qu’un seul message peut contenir et à quelle vitesse vous "
+"pouvez l’envoyer."
 
 #: ../usermanual/adherents.rst:160
 msgid ""
 "Using your \"personal\" SMTP provider is often not a good idea; dedicated "
 "services are better suited for large mailings."
 msgstr ""
+"L’utilisation de votre fournisseur SMTP «personnel» n’est souvent pas une "
+"bonne idée ; les services dédiés sont mieux adaptés aux envois volumineux."
 
 #: ../usermanual/adherents.rst:162
 msgid "And you even may have limits on a dedicated service."
-msgstr ""
+msgstr "Et vous pouvez même avoir des limites sur un service dédié."
 
 #: ../usermanual/adherents.rst:164
 msgid ""
 "Galette :ref:`sending limits <mail_throttling>` changes what happens once "
 "you confirm the sending:"
 msgstr ""
+"Galette :ref:`limites d'envoi <mail_throttling>` change ce qui se passe une "
+"fois que vous confirmez l’envoi :"
 
 #: ../usermanual/adherents.rst:166
 msgid ""
@@ -436,6 +447,10 @@ msgid ""
 "more. Galette stores the mailing, queues one entry per recipient, and takes "
 "you to a progress page."
 msgstr ""
+"avec une limite **horaire ou quotidienne** définie, l’envoi ne peut plus "
+"être effectué en une seule fois. Galette stocke le mailing, met en file "
+"d’attente une entrée par destinataire et vous amène à une page de "
+"progression."
 
 #: ../usermanual/adherents.rst:169
 msgid ""
@@ -443,6 +458,10 @@ msgid ""
 "is: recipients sent, remaining and failed, and what the quota has consumed "
 "so far. Leave it open until it announces the mailing has been sent."
 msgstr ""
+"La page de progression envoie les e-mails lot après lot et en montre "
+"l'avancement : destinataires envoyés, restants et échoués, et ce que le "
+"quota a consommé jusqu'à présent. Laissez-le ouvert jusqu'à ce qu'il annonce "
+"que l'envoi complet a été effectué."
 
 #: ../usermanual/adherents.rst:171
 msgid "A mailing being sent, halfway through its queue"
@@ -469,6 +488,9 @@ msgid ""
 "A queued mailing is stored in the history right away, and only counts as "
 "**sent** once its last recipient has left the queue."
 msgstr ""
+"Un envoi en file d’attente est immédiatement enregistré dans l’historique et "
+"ne compte comme **envoyé** qu’une fois que son dernier destinataire a quitté "
+"la file."
 
 #: ../usermanual/adherents.rst:185
 msgid "Mailings history"
@@ -728,7 +750,7 @@ msgstr ""
 
 #: ../usermanual/adherents.rst:273
 msgid "Resetting a second factor"
-msgstr ""
+msgstr "Réinitialisation d’un deuxième facteur"
 
 #: ../usermanual/adherents.rst:277
 msgid ""
@@ -738,6 +760,12 @@ msgid ""
 "factor: the secret and the remaining recovery codes are dropped, and the "
 "member logs in with their password alone until they enrol again."
 msgstr ""
+"Un membre qui a perdu l’appareil calculant ses codes et qui n’a plus "
+":ref:`code de récupération <man_2fa>`, ne peut plus se connecter. À partir "
+"de la page du membre, les administrateurs et les membres du bureau peuvent "
+"réinitialiser leur deuxième facteur: le secret et les codes de récupération "
+"restants sont supprimés, et le membre se connecte uniquement avec son mot de "
+"passe jusqu’à ce qu’il s’inscrive à nouveau."
 
 #: ../usermanual/adherents.rst:279
 msgid ""
@@ -755,6 +783,11 @@ msgid ""
 "getting one removed. The reset is recorded in the history, with who did it "
 "and for whom."
 msgstr ""
+"Vérifier qui demande. La réinitialisation d’un deuxième facteur supprime une "
+"protection, et un appel téléphonique prétendant être membre est exactement "
+"la façon dont quelqu’un s’y prendrait pour en obtenir une. La "
+"réinitialisation est enregistrée dans l’historique, avec qui l’a faite et "
+"pour qui."
 
 #: ../usermanual/adherents.rst:286
 msgid "Impersonating"
