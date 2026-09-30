@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-10 07:38+0200\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-09-30 07:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,106 +17,85 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../usermanual/pdf_models.rst:5
-#: 3bd99e1b96954f248963463f736ebd3a
 msgid "PDF models"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:7
-#: 80557a6638494053ae138a559c323abf
 msgid "PDF models are provided for several outputs : an invoice model, a receipt model and a membership from model are currently available. All of them inherits from a `Global` model."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:9
-#: 8bbac7f6c5754fbca1fe42e8a7f1d1d8
 msgid "PDF models management"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:15
-#: 708c62fd4db148f6ae9417380137640d
 msgid "Models inheritance"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:17
-#: 4d886389616b467c92e264f71b965443
 msgid "The global model defines three distinct parts:"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:19
-#: 8d888226608a49fab0b12f29762c4709
 msgid "header,"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:20
-#: f036ff29089346b1b3aadddabcadcd21
 msgid "footer,"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:21
-#: a17a547f60a44e2fac91bbc283a613af
 msgid "CSS styles."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:23
-#: f9d889d707f64960bc55d099fc55792f
 msgid "Each model which inherits from `Global` will automatically obtain same header and footer except if the new model redefines them, in which case only specific values will be applied."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:25
-#: f3348b63f83845fe91c1f99ddd61a613
 msgid "For CSS properties it is a bit different: `Global` model properties will always be applied, and specific model properties will be appended (just like real CSS stylesheets)."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:28
-#: 79a25a9d3c93400581fa626b46ea2c90
 msgid "Generalities"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:30
-#: d6db63ed5efe435a963c6e7371897f07
 msgid "In addition of header, footer and CSS styles, a model defines a title, a sub title and a body."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:32
-#: d80953d42e66446890cfcd13c5c14c5f
 msgid "Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationalized texts like `_T(\"My text\")` that relies on Galette standard translation capacities."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:34
-#: 90955421c4514eabb227bfe1c3960911
 msgid "Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent browser; there are many limitations."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:37
-#: dc85762c977e443c9cc16458b12b6189
 msgid "Invoices and receipts"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:39
-#: 09118dc865f94670ae6a055b992c9000
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:41
-#: 52b7dfed3156456b8ac4b34e928f4205
 msgid "Invoice PDF model"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:46
-#: 1c31d9c28ccf4dce819770f3eff77908
 msgid "As you can see in the above screenshot, invoice model does not define any header, footer or CSS styles, the ones form the `Global` model are used."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:49
-#: 5adc90a8288c4c1797fb85979257e4cf
 msgid "Membership form"
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:51
-#: 0382f4164d6f4b59986f75ef8ea81ae1
 msgid "It is a model that can be used to print a membership form. It can be empty (to print some of them for any event for example) or filled with one member information."
 msgstr ""
 
 #: ../usermanual/pdf_models.rst:53
-#: 25510e8f0f914ceabcd085ca80a55775
 msgid "Since there are many limitation, you may use the `FullCard plugin <https://galette-plugins.github.io/plugin-fullcard/>`_ that will replace this model. It is more complex to change, but you can do many more with it. You can also create your own plugin based on FullCard."
 msgstr ""

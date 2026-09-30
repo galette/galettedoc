@@ -106,7 +106,7 @@ locale_dirs = ["locale"]
 
 # If true, Sphinx generates uuid information for version tracking in message
 # catalogs.
-gettext_uuid = True
+gettext_uuid = False
 
 # If true, a document’s text domain is its docname if it is a top-level project
 # file and its very base directory otherwise.
