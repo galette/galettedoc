@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2024.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2022, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2024-05-02 08:55+0000\n"
+"PO-Revision-Date: 2026-09-30 06:25+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "contributions/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5.3-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../usermanual/contributions.rst:3
 msgid "Contributions management"
@@ -197,13 +197,6 @@ msgid ""
 msgstr ""
 
 #: ../usermanual/contributions.rst:61
-#, fuzzy
-#| msgid ""
-#| "Finally, it is possible to automate reminders with a cron task which will "
-#| "call the ``galette/reminder.php`` file. If you want reminders to be sent "
-#| "every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on "
-#| "Fedora and similar, look at your system documentation to know how to add "
-#| "a crontab) with the following content:"
 msgid ""
 "Finally, it is possible to automate reminders with a cron task which will "
 "call the ``galette/cron/reminder.php`` file. If you want reminders to be "
@@ -212,11 +205,11 @@ msgid ""
 "a crontab) with the following content:"
 msgstr ""
 "Enfin, il est possible d'automatiser l'envoi des rappels avec une tâche cron "
-"qui appellera le fichier ``galette/reminder.php``. Si vous voulez que les "
-"rappels soient envoyés chaque jour à 8h30, alors ajoutez une fichier ``/etc/"
-"cron.d/galette`` (sur Fedora et assimilés, référez-vous à la documentation "
-"de votre système sur la manière de mettre en place une tâche cron) avec le "
-"contenu suivant :"
+"qui appellera le fichier ``galette/cron/reminder.php``. Si vous voulez que "
+"les rappels soient envoyés chaque jour à 8h30, alors ajoutez une fichier ``/"
+"etc/cron.d/galette`` (sur Fedora et assimilés, référez-vous à la "
+"documentation de votre système sur la manière de mettre en place une tâche "
+"cron) avec le contenu suivant :"
 
 #: ../usermanual/contributions.rst:67
 msgid ""
