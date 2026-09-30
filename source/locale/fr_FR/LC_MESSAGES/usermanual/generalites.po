@@ -1,13 +1,14 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
 # Johan Cwiklinski <trasher@x-tnd.be>, 2021, 2022, 2024, 2026.
+# alainP77 <alain.paris77@free.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-30 06:25+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2026-10-01 05:42+0000\n"
+"Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "generalities/fr/>\n"
 "Language: fr_FR\n"
@@ -232,6 +233,8 @@ msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change."
 msgstr ""
+"Marqué **expérimental**: c'est complet et testé, mais c'est nouveau et "
+"l'interface peut encore être modifiée ."
 
 #: ../usermanual/generalites.rst:67
 msgid ""
@@ -239,6 +242,10 @@ msgid ""
 "account can protect itself with a second factor: after the password, Galette "
 "asks for a six digits code that changes every thirty seconds."
 msgstr ""
+"Une fois :ref:`qu’une politique a été définie dans les préférences <pref_2fa>"
+"`, chaque compte peut se protéger avec un deuxième facteur: après le mot de "
+"passe, Galette demande un code à six chiffres qui change toutes les trente "
+"secondes."
 
 #: ../usermanual/generalites.rst:69
 msgid ""
@@ -246,32 +253,43 @@ msgid ""
 "Galette invites you to when you log in. Nothing forces you to; **Later** "
 "keeps quiet for six months, **Do not ask again** for a year."
 msgstr ""
+"Si vous êtes un administrateur ou un membre du bureau et que vous n’en avez "
+"pas configuré, Galette vous invite à le faire lorsque vous vous connectez. "
+"Rien ne vous y oblige ; **Plus tard** se tait pendant six mois, **Ne plus "
+"demander** pendant un an."
 
 #: ../usermanual/generalites.rst:71
 msgid ""
 "You need an application to compute those codes. Any of them will do, they "
 "all follow the same standard; among the free ones:"
 msgstr ""
+"Vous avez besoin d'une application pour faire le calcul de ces codes. "
+"N'importe laquelle d'entre elles fera l'affaire, elles respectent toutes la "
+"même norme ; quelques gratuites :"
 
 #: ../usermanual/generalites.rst:73
 msgid ""
 "`Aegis <https://getaegis.app>`_ or `FreeOTP <https://freeotp.github.io>`_ on "
 "Android,"
 msgstr ""
+"`Aegis <https://getaegis.app>`_ ou `FreeOTP <https://freeotp.github.io>`_ "
+"pour Android,"
 
 #: ../usermanual/generalites.rst:74
 msgid ""
 "`KeePassXC <https://keepassxc.org>`_ on a computer, in the *TOTP* field of "
 "an entry,"
 msgstr ""
+"`KeePassXC <https://keepassxc.org>`_ sur un ordinateur, dans le champ *TOTP* "
+"d’une entrée,"
 
 #: ../usermanual/generalites.rst:75
 msgid "Google Authenticator, Microsoft Authenticator, ... on Android and iOS."
-msgstr ""
+msgstr "Google Authenticator, Microsoft Authenticator, ... sur Android et iOS."
 
 #: ../usermanual/generalites.rst:78
 msgid "Enabling it"
-msgstr ""
+msgstr "L'activer"
 
 #: ../usermanual/generalites.rst:80
 msgid ""
@@ -280,6 +298,10 @@ msgid ""
 "your application; if you cannot scan it, the key displayed right under it "
 "can be typed in by hand instead."
 msgstr ""
+"Allez dans **Mon compte**, puis **Authentification à deux facteurs**, et "
+"cliquez sur *Activer l’authentification à deux facteurs*. Galette affiche un "
+"QR code à scanner avec votre application ; si vous ne pouvez pas le scanner, "
+"la clé affichée juste en dessous peut être saisie manuellement."
 
 #: ../usermanual/generalites.rst:82
 msgid ""
@@ -287,11 +309,17 @@ msgid ""
 "confirm, and it is on. That first code is asked for on purpose: it makes "
 "sure your application really is set up before Galette starts requiring it."
 msgstr ""
+"Votre application commence alors à afficher les codes. Saisissez le code "
+"actuel pour confirmer, et il est activé. Ce premier code est demandé dans un "
+"but précis : il permet de s’assurer que votre application est bien "
+"configurée avant que Galette ne commence à l’exiger."
 
 #: ../usermanual/generalites.rst:84
 msgid ""
 "Galette then displays **ten recovery codes**, and displays them only once."
 msgstr ""
+"Galette affiche alors **dix codes de récupération**, et ne les affiche "
+"qu’une seule fois."
 
 #: ../usermanual/generalites.rst:88
 msgid ""
@@ -300,16 +328,22 @@ msgid ""
 "one works once, and Galette never shows them again -- it does not keep them "
 "in a readable form."
 msgstr ""
+"Imprimez ces codes de récupération, ou enregistrez-les dans un endroit autre "
+"que l’appareil qui calcule vos codes. Ils sont le moyen de revenir en "
+"arrière si vous perdez votre téléphone. Chacun fonctionne une fois, et "
+"Galette ne les montrera plus -- il ne les garde pas sous une forme lisible."
 
 #: ../usermanual/generalites.rst:90
 msgid ""
 "You can get ten new ones at any time from the same page; the previous ones "
 "are then void."
 msgstr ""
+"Il est possible d'en obtenir dix nouveaux à tout moment sur la même page ; "
+"les précédents seront alors annulés."
 
 #: ../usermanual/generalites.rst:93
 msgid "Logging in"
-msgstr ""
+msgstr "Se connecter"
 
 #: ../usermanual/generalites.rst:95
 msgid ""
@@ -317,16 +351,21 @@ msgid ""
 "for a code. Nothing else is reachable until it is given: an account waiting "
 "for its code is not logged in."
 msgstr ""
+"Rien ne change pour le mot de passe. Une fois accepté, Galette demande un "
+"code. Rien d’autre n’est accessible tant qu’il n’a pas été donné: un compte "
+"en attente de son code n’est pas connecté."
 
 #: ../usermanual/generalites.rst:97
 msgid ""
 "If you no longer have your device, use one of your recovery codes instead of "
 "a code: the same field takes both."
 msgstr ""
+"Si vous n’avez plus votre appareil, utilisez un de vos codes de récupération "
+"au lieu du code de l'application: le même champ prend les deux ."
 
 #: ../usermanual/generalites.rst:100
 msgid "Disabling it"
-msgstr ""
+msgstr "Le désactiver"
 
 #: ../usermanual/generalites.rst:102
 msgid ""
@@ -334,12 +373,18 @@ msgid ""
 "required to turn it off. That is deliberate: somebody who found your session "
 "open should not be able to remove your second factor with a click."
 msgstr ""
+"Depuis **Mon compte**, puis **Authentification à deux facteurs**, un code "
+"actuel est requis pour le désactiver. C’est délibéré: quelqu’un qui a trouvé "
+"votre session ouverte ne devrait pas pouvoir retirer votre deuxième facteur "
+"d’un clic ."
 
 #: ../usermanual/generalites.rst:104
 msgid ""
 "If a policy makes it mandatory, you will be asked to enable it again at your "
 "next login."
 msgstr ""
+"Si une politique le rend obligatoire, il vous sera demandé de l’activer à "
+"nouveau lors de votre prochaine connexion."
 
 #: ../usermanual/generalites.rst:108
 msgid ""
@@ -347,6 +392,10 @@ msgid ""
 "have to agree on it. This is by far the most common reason for codes being "
 "refused; see :ref:`the FAQ <faq_2fa>`."
 msgstr ""
+"Les codes sont calculés à partir de l'heure actuelle, donc celle-ci doit "
+"être identique sur votre appareil et le serveur. C'est de loin la raison la "
+"plus courante pour laquelle des codes sont refusés ; voir :ref:`la FAQ "
+"<faq_2fa>`."
 
 #: ../usermanual/generalites.rst:111
 msgid "Interface"
