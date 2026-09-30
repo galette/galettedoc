@@ -1,12 +1,12 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023, 2024, 2025.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2025-03-15 09:46+0000\n"
+"PO-Revision-Date: 2026-09-30 06:25+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-faq-"
 "index/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../faq/index.rst:5
 msgid "Frequently Asked Question (FAQ)"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../faq/index.rst:27
 msgid "My two-factor authentication codes are refused"
-msgstr ""
+msgstr "Mes codes d'authentification à deux facteurs sont refusés"
 
 #: ../faq/index.rst:31
 msgid ""
@@ -83,6 +83,11 @@ msgid ""
 "looks perfectly normal. This is, by a wide margin, the first thing to look "
 "at."
 msgstr ""
+"**Vérifiez les horloges en premier.** Les codes sont calculés à partir de "
+"l'heure actuelle, et rien d'autre. Si l'horloge de votre serveur ou "
+"l'horloge de votre appareil est décalée de plus d'une minute, chaque code "
+"est refusé, et tout le reste semble parfaitement normal. C'est, de loin, la "
+"première chose à regarder."
 
 #: ../faq/index.rst:33
 msgid ""
@@ -96,7 +101,7 @@ msgstr ""
 
 #: ../faq/index.rst:35
 msgid "Two other cases look like a refusal but are not one:"
-msgstr ""
+msgstr "Deux autres cas ressemblent à un refus mais n'en sont pas :"
 
 #: ../faq/index.rst:37
 msgid ""
@@ -104,16 +109,22 @@ msgid ""
 "code you just used to enrol, or reloading the page after a successful login, "
 "is refused. Wait for the next one -- it comes at most thirty seconds later."
 msgstr ""
+"**le même code deux fois** : un code est accepté une fois seulement, donc la "
+"soumission du code que vous venez d'utiliser, ou recharger la page après un "
+"login réussi est refusée. Attendez le prochain -- il arrive au pire trente "
+"secondes plus tard."
 
 #: ../faq/index.rst:38
 msgid ""
 "**too many attempts**: after a series of wrong codes, Galette stops "
 "answering for a while. Wait it out rather than trying harder."
 msgstr ""
+"**trop de tentatives** : après une série de mauvais codes, Galette cesse de "
+"répondre pendant un certain temps. Attendez plutôt que d'insister."
 
 #: ../faq/index.rst:41
 msgid "The server clock went backwards"
-msgstr ""
+msgstr "L'horloge du serveur est en retard"
 
 #: ../faq/index.rst:43
 msgid ""
@@ -128,14 +139,15 @@ msgstr ""
 #: ../faq/index.rst:45
 msgid "Set the server clock right first. Then, for the account concerned:"
 msgstr ""
+"Réglez l'horloge du serveur en premier lieu. Puis, pour le compte concerné :"
 
 #: ../faq/index.rst:51
 msgid "and, for the super administrator:"
-msgstr ""
+msgstr "et, pour le super administrateur :"
 
 #: ../faq/index.rst:58
 msgid "I lost the device computing my codes"
-msgstr ""
+msgstr "J'ai perdu l'appareil générant mes codes"
 
 #: ../faq/index.rst:60
 msgid ""
@@ -144,6 +156,11 @@ msgid ""
 "in, disable the second factor and enable it again on your new device -- and "
 "keep the new recovery codes."
 msgstr ""
+"Utilisez l'un des dix codes de récupération qui vous ont été donnés lorsque "
+"vous l'avez activé : le champ qui demande un code les prend aussi. Chacun "
+"fonctionne une fois. Une fois connecté, désactivez le scond facteur et "
+"activez-le à nouveau sur votre nouvel appareil -- et conservez les nouveaux "
+"codes de récupération."
 
 #: ../faq/index.rst:62
 msgid ""
@@ -151,10 +168,13 @@ msgid ""
 "member of your association to :ref:`reset your second factor "
 "<member_2fa_reset>`."
 msgstr ""
+"Si vous n'avez plus de code de récupération, demandez à un administrateur ou "
+"à un membre du bureau de votre association de :ref:`réinitialiser votre "
+"deuxième facteur <member_2fa_reset>`."
 
 #: ../faq/index.rst:65
 msgid "The super administrator cannot log in anymore"
-msgstr ""
+msgstr "Le super administrateur ne peut plus se connecter"
 
 #: ../faq/index.rst:67
 msgid ""
@@ -162,6 +182,10 @@ msgid ""
 "it has no recovery codes. Its second factor lives in the preferences, in "
 "database, which is where you clear it from:"
 msgstr ""
+"Ce compte n'est pas un adhérent, donc personne ne peut le réinitialiser "
+"depuis l'interface, et il n'a aucun code de récupération. Son second facteur "
+"est dans les préférences, dans la base de données, c'est là que vous devez "
+"le supprimer :"
 
 #: ../faq/index.rst:74
 msgid ""
@@ -169,12 +193,17 @@ msgid ""
 "``PREFIX_DB`` setting of your configuration file). The next login asks for "
 "the password alone."
 msgstr ""
+"Remplacez ``galette_`` avec votre propre préfixe de table si vous l'avez "
+"changé (le paramètre ``PREFIX_DB`` de votre fichier de configuration). Le "
+"prochain login demande le mot de passe seul."
 
 #: ../faq/index.rst:76
 msgid ""
 "To turn the second factor off for the whole instance at the same time -- the "
 "way out when something goes wrong for everybody at once -- add:"
 msgstr ""
+"Pour désactiver le second facteur pour l'ensemble de l'instance - une "
+"échappatoire lorsque quelque chose ne fonctionne pas - ajoutez :"
 
 #: ../faq/index.rst:82
 msgid ""
