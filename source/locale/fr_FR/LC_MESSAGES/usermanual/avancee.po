@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-22 09:35+0000\n"
+"PO-Revision-Date: 2026-09-30 06:25+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "advanced/fr/>\n"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:61
 msgid "Change maximum upload size"
-msgstr ""
+msgstr "Modifier la taille maximale de téléversement"
 
 #: ../usermanual/avancee.rst:65
 msgid ""
@@ -199,6 +199,9 @@ msgid ""
 "used to be a single value, the same for every one of them, that could only "
 "be changed by editing a Galette source file."
 msgstr ""
+"Chaque type de téléchargement a une taille maximale propre, stockée dans la "
+"base de données. C'était une valeur unique, la même pour tout le monde, qui "
+"ne pouvait être changée qu'en éditant un fichier source Galette."
 
 #: ../usermanual/avancee.rst:67
 msgid ""
@@ -901,17 +904,11 @@ msgstr ""
 "débogage,"
 
 #: ../usermanual/avancee.rst:334
-#, fuzzy
-#| msgid ""
-#| "``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/"
-#| "galette_sql.log``. Only the existence of the constant counts, so defining "
-#| "it to ``false`` still enables the dump,"
 msgid ""
 "``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``,"
 msgstr ""
 "``GALETTE_SQL_DEBUG`` : écris chaque requête SQL dans ``data/logs/"
-"galette_sql.log``. La seule existence de la constante compte, la définir à "
-"``false`` active le dump,"
+"galette_sql.log``,"
 
 #: ../usermanual/avancee.rst:335
 msgid ""
