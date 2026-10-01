@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 18:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,42 +21,42 @@ msgid "Installation"
 msgstr ""
 
 # 31f6120eac3f427bbe117395632dff2e
-#: ../installation/galette.rst:7
+#: ../installation/galette.rst:8
 msgid ""
 "Galette installation is a web based process (once :doc:`preparation steps "
 "<preparation>` are done). Go to http://localhost/galette. :doc:`Update "
 "process <update>` is documented separately."
 msgstr ""
 
-#: ../installation/galette.rst:9
+#: ../installation/galette.rst:10
 msgid ""
 "You should rely on latest stable release, but it is also possible (if your "
 "know what you are doing, this is more complex for non developers!) grab it "
 "from :doc:`source code <../source_code>`"
 msgstr ""
 
-#: ../installation/galette.rst:14
+#: ../installation/galette.rst:15
 msgid "Enabling the installer"
 msgstr ""
 
-#: ../installation/galette.rst:18
+#: ../installation/galette.rst:19
 msgid ""
 "For security reasons, the installer does nothing until you tell it to. It "
 "stays closed as long as a file named ``ENABLE_INSTALL`` is missing from "
 "Galette |folder| ``data`` directory:"
 msgstr ""
 
-#: ../installation/galette.rst:24
+#: ../installation/galette.rst:25
 msgid "Create that empty file on the server, then reload the page:"
 msgstr ""
 
-#: ../installation/galette.rst:30
+#: ../installation/galette.rst:31
 msgid ""
 "Creating it proves you have an access to the server, which a visitor passing "
 "by has not."
 msgstr ""
 
-#: ../installation/galette.rst:32
+#: ../installation/galette.rst:33
 msgid ""
 "Galette removes the file by itself once the installation - or "
 "the :doc:`update <update>` - has completed, so the installer closes again "
@@ -67,73 +67,73 @@ msgid ""
 "complete all the same."
 msgstr ""
 
-#: ../installation/galette.rst:36
+#: ../installation/galette.rst:37
 msgid ""
 "It is the **absence** of the file that closes the installer, and that is on "
 "purpose: losing it can only close the installer, it can never open it."
 msgstr ""
 
-#: ../installation/galette.rst:39
+#: ../installation/galette.rst:40
 msgid "Installation or update?"
 msgstr ""
 
-#: ../installation/galette.rst:43
+#: ../installation/galette.rst:44
 msgid ""
 "Galette does not ask anymore, and the corresponding step has been removed."
 msgstr ""
 
-#: ../installation/galette.rst:45
+#: ../installation/galette.rst:46
 msgid ""
 "The mode is deduced from the |phpfile| ``config/config.inc.php`` file: no "
 "configuration file means a new installation, an existing one means "
 "an :doc:`update <update>`."
 msgstr ""
 
-#: ../installation/galette.rst:49
+#: ../installation/galette.rst:50
 msgid ""
 "To install a brand new instance over an existing one - erasing its data - "
 "remove the configuration file first. As long as it is there, Galette will "
 "only offer to update."
 msgstr ""
 
-#: ../installation/galette.rst:52
+#: ../installation/galette.rst:53
 msgid "Requirements check"
 msgstr ""
 
-#: ../installation/galette.rst:56
+#: ../installation/galette.rst:57
 msgid ""
 "You can also open the `http://galette/compat_test.php` URL in your browser, "
 "or use the ``bin/console galette:checks`` command."
 msgstr ""
 
 # a1c64b899144429bb1320a3598d9dc39
-#: ../installation/galette.rst:58
+#: ../installation/galette.rst:59
 msgid ""
 "Please check the following if you want Galette to install without problems:"
 msgstr ""
 
 # 0e54fffada3d466ab74ff48c14e6d85d
-#: ../installation/galette.rst:60
+#: ../installation/galette.rst:61
 msgid "your PHP version is high enough,"
 msgstr ""
 
 # 28229d48854b46ca949c7138d870fb0d
-#: ../installation/galette.rst:61
+#: ../installation/galette.rst:62
 msgid "PHP timezone is set (required since PHP 5.3),"
 msgstr ""
 
 # 120a9a829d2740e59aef11f0dd438ad5
-#: ../installation/galette.rst:62
+#: ../installation/galette.rst:63
 msgid "all required PHP extensions are installed and loaded,"
 msgstr ""
 
 # 3b2c5f7d889b4b71926079fa3cef41d9
-#: ../installation/galette.rst:63
+#: ../installation/galette.rst:64
 msgid "some directories requires write access."
 msgstr ""
 
 # 2f91cdf0a7764f4081e8d02b6b59a8f4
-#: ../installation/galette.rst:65
+#: ../installation/galette.rst:66
 msgid ""
 "If one of the mandatory extensions is missing or if the timezone is not set, "
 "please ask you system administrator. Galette does not require any \"exotic\" "
@@ -141,14 +141,14 @@ msgid ""
 msgstr ""
 
 # 1d97f4991d3440379c9b8b5a1108fb0c
-#: ../installation/galette.rst:67
+#: ../installation/galette.rst:68
 msgid ""
 "The very first installation step will check those points, and will warn you "
 "if something gets wrong."
 msgstr ""
 
 # 02c9486b4d79437b9657f22cf56b544e
-#: ../installation/galette.rst:73
+#: ../installation/galette.rst:74
 msgid ""
 "If all :ref:`the installation steps <preparation>` has been properly "
 "followed, directories ACLs should be correct, please refer to :ref:`files "
@@ -156,49 +156,49 @@ msgid ""
 msgstr ""
 
 # fb785ae98ba74163867bb4d3336479ba
-#: ../installation/galette.rst:76
+#: ../installation/galette.rst:77
 msgid "Database"
 msgstr ""
 
 # 222a43dd8bf04752b294ffb3cd7cb1e3
-#: ../installation/galette.rst:78
+#: ../installation/galette.rst:79
 msgid ""
 "First of all, make sure the database exists, and prepare all required "
 "information:"
 msgstr ""
 
 # 141faf7247874939af24a2c7e3366b78
-#: ../installation/galette.rst:80
+#: ../installation/galette.rst:81
 msgid "host name"
 msgstr ""
 
 # ba260c11e0c2485893d633ca9b77da8a
-#: ../installation/galette.rst:81
+#: ../installation/galette.rst:82
 msgid "database user name"
 msgstr ""
 
 # 612059823abc4fcc884565a0d0803149
-#: ../installation/galette.rst:82
+#: ../installation/galette.rst:83
 msgid "database user password"
 msgstr ""
 
 # eda1340c7f1d4605901ac878287b0323
-#: ../installation/galette.rst:83
+#: ../installation/galette.rst:84
 msgid "database name"
 msgstr ""
 
 # 71b6a52690704459a212e38ce65c53a4
-#: ../installation/galette.rst:84
+#: ../installation/galette.rst:85
 msgid "database type (MariaDB/MySQL or PostgreSQL)"
 msgstr ""
 
 # f2e2b937fb2146768590002a54968b51
-#: ../installation/galette.rst:87
+#: ../installation/galette.rst:88
 msgid "Database parameters"
 msgstr ""
 
 # 1cfb2498ef0f4f34bf54628a4996d855
-#: ../installation/galette.rst:89
+#: ../installation/galette.rst:90
 msgid ""
 "On that screen, select your database type, and enter hostname, database "
 "name, user name and password. Tables prefix is useful if you do not have a "
@@ -206,7 +206,7 @@ msgid ""
 "what you want :)"
 msgstr ""
 
-#: ../installation/galette.rst:97
+#: ../installation/galette.rst:98
 msgid ""
 "This step is displayed for a new installation only. When updating, "
 "everything - password included - is read from the existing configuration "
@@ -214,12 +214,12 @@ msgid ""
 "read, or if it is incomplete."
 msgstr ""
 
-#: ../installation/galette.rst:100
+#: ../installation/galette.rst:101
 msgid "Database checks"
 msgstr ""
 
 # 0592d88f3a8c46aca19a6d374122683b
-#: ../installation/galette.rst:102
+#: ../installation/galette.rst:103
 msgid ""
 "Next screen will try to connect to the database using provided elements, "
 "than it will check database rights are correct (user can add/remove/alter "
@@ -227,7 +227,7 @@ msgid ""
 msgstr ""
 
 # fda6fd6b036e42ef8d7b366c06c5d748
-#: ../installation/galette.rst:108
+#: ../installation/galette.rst:109
 msgid ""
 "If there is a connexion error, go back to previous step, fix your setup and "
 "try again. If you see rights issues, get them fixed on your server and use "
@@ -235,19 +235,19 @@ msgid ""
 msgstr ""
 
 # 33ec25d3790742259f5b293ae82bbeda
-#: ../installation/galette.rst:111
+#: ../installation/galette.rst:112
 msgid "Create tables"
 msgstr ""
 
 # 17677530dc9b4cb9a35401cae57df24b
-#: ../installation/galette.rst:113
+#: ../installation/galette.rst:114
 msgid ""
 "Those instructions are only for installation. When updating, a database "
 "already exists."
 msgstr ""
 
 # b617064a46f14444817fab6d4c2952a8
-#: ../installation/galette.rst:115
+#: ../installation/galette.rst:116
 msgid ""
 "If a connection can be established to the database, and all is correct; "
 "installer will now create the tables, and insert default values. You can "
@@ -255,29 +255,29 @@ msgid ""
 msgstr ""
 
 # 6cdc0b276db24f3cad179efa3b138208
-#: ../installation/galette.rst:117
+#: ../installation/galette.rst:118
 msgid "MariaDB:"
 msgstr ""
 
 # a5c3fbfd99024112930e157ea630279c
-#: ../installation/galette.rst:124
+#: ../installation/galette.rst:125
 msgid "PostgreSQL:"
 msgstr ""
 
 # 10ce1834bef54a02865e18af91f16f06
-#: ../installation/galette.rst:136
+#: ../installation/galette.rst:137
 msgid "Admin parameters"
 msgstr ""
 
 # ae1a009e0559402fa5ad7542249cef62
-#: ../installation/galette.rst:138
+#: ../installation/galette.rst:139
 msgid ""
 "This screen is displayed from installation only. When updating, super admin "
 "user is already existing."
 msgstr ""
 
 # e65773fed8b54ae8ab3bb48f411b8c63
-#: ../installation/galette.rst:140
+#: ../installation/galette.rst:141
 msgid ""
 "Next screen will ask you for information to create the Galette super admin "
 "user. Using Galette, you can set some members as administrators, but the one "
@@ -285,21 +285,21 @@ msgid ""
 "some extra rights."
 msgstr ""
 
-#: ../installation/galette.rst:147
+#: ../installation/galette.rst:148
 msgid "Telemetry"
 msgstr ""
 
-#: ../installation/galette.rst:149
+#: ../installation/galette.rst:150
 msgid ""
 "To know more about Galette installed instances, we try to collect anonymous "
 "telemetry data. You can also register as a Galette user :)"
 msgstr ""
 
-#: ../installation/galette.rst:157
+#: ../installation/galette.rst:158
 msgid "Initialize"
 msgstr ""
 
-#: ../installation/galette.rst:159
+#: ../installation/galette.rst:160
 msgid ""
 "The last step will write the configuration file if needed, remove the "
 "``ENABLE_INSTALL`` file, and initialize some values in your fresh database, "
@@ -307,59 +307,59 @@ msgid ""
 msgstr ""
 
 # 06338ed4c31a4bf68b472a13b5d7ee16
-#: ../installation/galette.rst:161
+#: ../installation/galette.rst:162
 msgid "add Galette default preferences"
 msgstr ""
 
 # d48ed529251f45b9bb8b6fe3f5882f09
-#: ../installation/galette.rst:162
+#: ../installation/galette.rst:163
 msgid "add default contributions and status types,"
 msgstr ""
 
 # 83b528c80f864ef0a58b4981a14ced4c
-#: ../installation/galette.rst:163
+#: ../installation/galette.rst:164
 msgid "fields configuration and permissions,"
 msgstr ""
 
 # b046d392e16149efa5cef902f0ee5d63
-#: ../installation/galette.rst:164
+#: ../installation/galette.rst:165
 msgid "texts for administrative emails,"
 msgstr ""
 
 # 82905e865cdb4290a315c1be895c6ba2
-#: ../installation/galette.rst:165
+#: ../installation/galette.rst:166
 msgid "members default titles,"
 msgstr ""
 
 # da2a9de79a8d4d8a828feb48de515e7f
-#: ../installation/galette.rst:166
+#: ../installation/galette.rst:167
 msgid "default PDF models"
 msgstr ""
 
 # 45f29540c44546729522139772582506
-#: ../installation/galette.rst:167
+#: ../installation/galette.rst:168
 msgid "..."
 msgstr ""
 
 # b50ed6bbc7db4c869fa03438b305d475
-#: ../installation/galette.rst:169
+#: ../installation/galette.rst:170
 msgid ""
 "When updating, only the missing preferences and the new default data if any "
 "will be handled."
 msgstr ""
 
 # b4615aade17247beb26e209d0e601d7c
-#: ../installation/galette.rst:176
+#: ../installation/galette.rst:177
 msgid "Installation end"
 msgstr ""
 
 # e1aff3c9deb24eeda3447fdfe7fb08f9
-#: ../installation/galette.rst:178
+#: ../installation/galette.rst:179
 msgid "Installation is now finished, congratulations!"
 msgstr ""
 
 # 13c1ea06b773428fa6b12f465ca0ccee
-#: ../installation/galette.rst:184
+#: ../installation/galette.rst:185
 msgid ""
 "You can now login to Galette, using super admin information you used at "
 "installation time. You can now go to the :doc:`Galette user manual <../"
@@ -367,6 +367,6 @@ msgid ""
 msgstr ""
 
 # c7dd4ced05714c2195b411e95588fa9d
-#: ../installation/galette.rst:190
+#: ../installation/galette.rst:191
 msgid "Happy Galette!"
 msgstr ""

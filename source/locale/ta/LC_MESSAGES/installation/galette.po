@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 18:57+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Installation"
 msgstr "நிறுவல்"
 
-#: ../installation/galette.rst:7
+#: ../installation/galette.rst:8
 msgid ""
 "Galette installation is a web based process (once :doc:`preparation steps "
 "<preparation>` are done). Go to http://localhost/galette. :doc:`Update "
@@ -35,7 +35,7 @@ msgstr ""
 "படிகள் <preparation>` முடிந்ததும்). http://localhost/galette க்குச் "
 "செல்லவும். :doc:`புதுப்பிப்பு செயல்முறை <update>` தனித்தனியாக ஆவணப்படுத்தப்பட்டுள்ளது."
 
-#: ../installation/galette.rst:9
+#: ../installation/galette.rst:10
 msgid ""
 "You should rely on latest stable release, but it is also possible (if your "
 "know what you are doing, this is more complex for non developers!) grab it "
@@ -46,28 +46,28 @@ msgstr ""
 "இது மிகவும் சிக்கலானது!) :doc:`மூலக் குறியீடு <../source_code>` இலிருந்து அதைப் "
 "பெறு"
 
-#: ../installation/galette.rst:14
+#: ../installation/galette.rst:15
 msgid "Enabling the installer"
 msgstr ""
 
-#: ../installation/galette.rst:18
+#: ../installation/galette.rst:19
 msgid ""
 "For security reasons, the installer does nothing until you tell it to. It "
 "stays closed as long as a file named ``ENABLE_INSTALL`` is missing from "
 "Galette |folder| ``data`` directory:"
 msgstr ""
 
-#: ../installation/galette.rst:24
+#: ../installation/galette.rst:25
 msgid "Create that empty file on the server, then reload the page:"
 msgstr ""
 
-#: ../installation/galette.rst:30
+#: ../installation/galette.rst:31
 msgid ""
 "Creating it proves you have an access to the server, which a visitor passing "
 "by has not."
 msgstr ""
 
-#: ../installation/galette.rst:32
+#: ../installation/galette.rst:33
 msgid ""
 "Galette removes the file by itself once the installation - or "
 "the :doc:`update <update>` - has completed, so the installer closes again "
@@ -78,70 +78,70 @@ msgid ""
 "complete all the same."
 msgstr ""
 
-#: ../installation/galette.rst:36
+#: ../installation/galette.rst:37
 msgid ""
 "It is the **absence** of the file that closes the installer, and that is on "
 "purpose: losing it can only close the installer, it can never open it."
 msgstr ""
 
-#: ../installation/galette.rst:39
+#: ../installation/galette.rst:40
 #, fuzzy
 #| msgid "Installation type"
 msgid "Installation or update?"
 msgstr "நிறுவல் வகை"
 
-#: ../installation/galette.rst:43
+#: ../installation/galette.rst:44
 msgid ""
 "Galette does not ask anymore, and the corresponding step has been removed."
 msgstr ""
 
-#: ../installation/galette.rst:45
+#: ../installation/galette.rst:46
 msgid ""
 "The mode is deduced from the |phpfile| ``config/config.inc.php`` file: no "
 "configuration file means a new installation, an existing one means "
 "an :doc:`update <update>`."
 msgstr ""
 
-#: ../installation/galette.rst:49
+#: ../installation/galette.rst:50
 msgid ""
 "To install a brand new instance over an existing one - erasing its data - "
 "remove the configuration file first. As long as it is there, Galette will "
 "only offer to update."
 msgstr ""
 
-#: ../installation/galette.rst:52
+#: ../installation/galette.rst:53
 msgid "Requirements check"
 msgstr ""
 
-#: ../installation/galette.rst:56
+#: ../installation/galette.rst:57
 msgid ""
 "You can also open the `http://galette/compat_test.php` URL in your browser, "
 "or use the ``bin/console galette:checks`` command."
 msgstr ""
 
-#: ../installation/galette.rst:58
+#: ../installation/galette.rst:59
 msgid ""
 "Please check the following if you want Galette to install without problems:"
 msgstr ""
 "கேலட்டை எந்த பிரச்சனையும் இல்லாமல் நிறுவ விரும்பினால், பின்வருவனவற்றைச் சரிபார்க்கவும்:"
 
-#: ../installation/galette.rst:60
+#: ../installation/galette.rst:61
 msgid "your PHP version is high enough,"
 msgstr "உங்கள் பிஎச்பி பதிப்பு போதுமான அளவு அதிகமாக உள்ளது,"
 
-#: ../installation/galette.rst:61
+#: ../installation/galette.rst:62
 msgid "PHP timezone is set (required since PHP 5.3),"
 msgstr "பிஎச்பி நேரமண்டலம் அமைக்கப்பட்டுள்ளது (PHP 5.3 முதல் தேவை),"
 
-#: ../installation/galette.rst:62
+#: ../installation/galette.rst:63
 msgid "all required PHP extensions are installed and loaded,"
 msgstr "தேவையான அனைத்து பிஎச்பி நீட்டிப்புகளும் நிறுவப்பட்டு ஏற்றப்படுகின்றன,"
 
-#: ../installation/galette.rst:63
+#: ../installation/galette.rst:64
 msgid "some directories requires write access."
 msgstr "சில கோப்பகங்களுக்கு எழுதும் அணுகல் தேவை."
 
-#: ../installation/galette.rst:65
+#: ../installation/galette.rst:66
 msgid ""
 "If one of the mandatory extensions is missing or if the timezone is not set, "
 "please ask you system administrator. Galette does not require any \"exotic\" "
@@ -150,7 +150,7 @@ msgstr ""
 "கட்டாய நீட்டிப்புகளில் ஒன்று விடுபட்டிருந்தாலோ அல்லது நேர மண்டலம் அமைக்கப்படவில்லை என்றாலோ, "
 "கணினி நிர்வாகியிடம் கேட்கவும். Galette க்கு \"கவர்ச்சியான\" நீட்டிப்பு தேவையில்லை."
 
-#: ../installation/galette.rst:67
+#: ../installation/galette.rst:68
 msgid ""
 "The very first installation step will check those points, and will warn you "
 "if something gets wrong."
@@ -158,7 +158,7 @@ msgstr ""
 "முதல் நிறுவல் படி அந்த புள்ளிகளைச் சரிபார்க்கும், மேலும் ஏதேனும் தவறு நடந்தால் உங்களை "
 "எச்சரிக்கும்."
 
-#: ../installation/galette.rst:73
+#: ../installation/galette.rst:74
 msgid ""
 "If all :ref:`the installation steps <preparation>` has been properly "
 "followed, directories ACLs should be correct, please refer to :ref:`files "
@@ -168,42 +168,42 @@ msgstr ""
 "கோப்பகங்கள் ACLகள் சரியாக இருக்க வேண்டும், தயவுசெய்து :ref:`files ACLs பிரிவை "
 "<droitsfichiers>` பார் மற்றும் உங்கள் உலாவியில் பக்கத்தைப் புதுப்பி."
 
-#: ../installation/galette.rst:76
+#: ../installation/galette.rst:77
 msgid "Database"
 msgstr "தரவுத்தளம்"
 
-#: ../installation/galette.rst:78
+#: ../installation/galette.rst:79
 msgid ""
 "First of all, make sure the database exists, and prepare all required "
 "information:"
 msgstr ""
 "முதலில், தரவுத்தளம் இருப்பதை உறுதிசெய்து, தேவையான அனைத்து தகவல்களையும் ஆயத்தம் செய்யவும்:"
 
-#: ../installation/galette.rst:80
+#: ../installation/galette.rst:81
 msgid "host name"
 msgstr "புரவலன் பெயர்"
 
-#: ../installation/galette.rst:81
+#: ../installation/galette.rst:82
 msgid "database user name"
 msgstr "தரவுத்தள பயனர் பெயர்"
 
-#: ../installation/galette.rst:82
+#: ../installation/galette.rst:83
 msgid "database user password"
 msgstr "தரவுத்தள பயனர் கடவுச்சொல்"
 
-#: ../installation/galette.rst:83
+#: ../installation/galette.rst:84
 msgid "database name"
 msgstr "தரவுத்தள பெயர்"
 
-#: ../installation/galette.rst:84
+#: ../installation/galette.rst:85
 msgid "database type (MariaDB/MySQL or PostgreSQL)"
 msgstr "தரவுத்தள வகை (MariaDB/MySQL அல்லது PostgreSQL)"
 
-#: ../installation/galette.rst:87
+#: ../installation/galette.rst:88
 msgid "Database parameters"
 msgstr "தரவுத்தள அளவுருக்கள்"
 
-#: ../installation/galette.rst:89
+#: ../installation/galette.rst:90
 msgid ""
 "On that screen, select your database type, and enter hostname, database "
 "name, user name and password. Tables prefix is useful if you do not have a "
@@ -215,7 +215,7 @@ msgstr ""
 "அட்டவணைகள் முன்னொட்டு பயனுள்ளதாக இருக்கும், இயல்புநிலை முன்மொழிவு சரியாக இருக்க வேண்டும் "
 "ஆனால் நீங்கள் விரும்புவதை நீங்கள் தேர்வு செய்யலாம் :)"
 
-#: ../installation/galette.rst:97
+#: ../installation/galette.rst:98
 msgid ""
 "This step is displayed for a new installation only. When updating, "
 "everything - password included - is read from the existing configuration "
@@ -223,13 +223,13 @@ msgid ""
 "read, or if it is incomplete."
 msgstr ""
 
-#: ../installation/galette.rst:100
+#: ../installation/galette.rst:101
 #, fuzzy
 #| msgid "Database"
 msgid "Database checks"
 msgstr "தரவுத்தளம்"
 
-#: ../installation/galette.rst:102
+#: ../installation/galette.rst:103
 msgid ""
 "Next screen will try to connect to the database using provided elements, "
 "than it will check database rights are correct (user can add/remove/alter "
@@ -239,7 +239,7 @@ msgstr ""
 "உறுப்புகளைப் பயன்படுத்தி தரவுத்தளத்துடன் இணைக்க முயற்சிக்கும் (பயனர் அட்டவணைகளைச் சேர்க்கலாம்/"
 "அகற்றலாம்/மாற்றலாம், மேலும் வரிசைகளைச் சேர்க்கலாம்/அகற்றலாம்/திருத்தலாம், ...)."
 
-#: ../installation/galette.rst:108
+#: ../installation/galette.rst:109
 msgid ""
 "If there is a connexion error, go back to previous step, fix your setup and "
 "try again. If you see rights issues, get them fixed on your server and use "
@@ -249,18 +249,18 @@ msgstr ""
 "முயற்சிக்கவும். உரிமைச் சிக்கல்களைக் கண்டால், அவற்றை உங்கள் சர்வரில் சரிசெய்து, "
 "\"புதுப்பித்தல்\" பொத்தானைப் பயன்படுத்தவும்."
 
-#: ../installation/galette.rst:111
+#: ../installation/galette.rst:112
 msgid "Create tables"
 msgstr "அட்டவணைகளை உருவாக்கவும்"
 
-#: ../installation/galette.rst:113
+#: ../installation/galette.rst:114
 msgid ""
 "Those instructions are only for installation. When updating, a database "
 "already exists."
 msgstr ""
 "இந்த வழிமுறைகள் நிறுவலுக்கு மட்டுமே. புதுப்பிக்கும் போது, ஒரு தரவுத்தளம் ஏற்கனவே உள்ளது."
 
-#: ../installation/galette.rst:115
+#: ../installation/galette.rst:116
 msgid ""
 "If a connection can be established to the database, and all is correct; "
 "installer will now create the tables, and insert default values. You can "
@@ -270,19 +270,19 @@ msgstr ""
 "அட்டவணைகளை உருவாக்கி, இயல்புநிலை மதிப்புகளைச் செருகும். எந்த வரைகலை கருவியிலிருந்தும் "
 "அல்லது கட்டளை வரியிலிருந்தும் உருவாக்கப்பட்ட அட்டவணைகளை நீங்கள் காட்டலாம்:"
 
-#: ../installation/galette.rst:117
+#: ../installation/galette.rst:118
 msgid "MariaDB:"
 msgstr "மரியாதரவுதளம்:"
 
-#: ../installation/galette.rst:124
+#: ../installation/galette.rst:125
 msgid "PostgreSQL:"
 msgstr "பின்சிஆர்இகவிமொ:"
 
-#: ../installation/galette.rst:136
+#: ../installation/galette.rst:137
 msgid "Admin parameters"
 msgstr "நிர்வாக அளவுருக்கள்"
 
-#: ../installation/galette.rst:138
+#: ../installation/galette.rst:139
 msgid ""
 "This screen is displayed from installation only. When updating, super admin "
 "user is already existing."
@@ -290,7 +290,7 @@ msgstr ""
 "இந்த திரை நிறுவலில் இருந்து மட்டுமே காட்டப்படும். புதுப்பிக்கும்போது, சூப்பர் அட்மின் பயனர் "
 "ஏற்கனவே இருக்கிறார்."
 
-#: ../installation/galette.rst:140
+#: ../installation/galette.rst:141
 msgid ""
 "Next screen will ask you for information to create the Galette super admin "
 "user. Using Galette, you can set some members as administrators, but the one "
@@ -302,11 +302,11 @@ msgstr ""
 "உருவாக்கப்பட்ட உறுப்பினர் உறுப்பினர் அல்ல, அகற்ற முடியாது, மேலும் சில கூடுதல் உரிமைகளும் "
 "உள்ளன."
 
-#: ../installation/galette.rst:147
+#: ../installation/galette.rst:148
 msgid "Telemetry"
 msgstr "டெலிமெட்ரி"
 
-#: ../installation/galette.rst:149
+#: ../installation/galette.rst:150
 msgid ""
 "To know more about Galette installed instances, we try to collect anonymous "
 "telemetry data. You can also register as a Galette user :)"
@@ -314,11 +314,11 @@ msgstr ""
 "கேலட் நிறுவப்பட்ட நிகழ்வுகளைப் பற்றி மேலும் அறிய, அநாமதேய டெலிமெட்ரி தரவைச் சேகரிக்க "
 "முயற்சிக்கிறோம். நீங்கள் கேலட் பயனராகவும் பதிவு செய்யலாம் :)"
 
-#: ../installation/galette.rst:157
+#: ../installation/galette.rst:158
 msgid "Initialize"
 msgstr "துவக்கவும்"
 
-#: ../installation/galette.rst:159
+#: ../installation/galette.rst:160
 #, fuzzy
 #| msgid ""
 #| "The last step will write the configuration file if needed, and initialize "
@@ -331,35 +331,35 @@ msgstr ""
 "கடைசி படி, தேவைப்பட்டால், உள்ளமைவு கோப்பை எழுதும், மேலும் சில மதிப்புகளை உங்கள் புதிய "
 "தரவுத்தளத்தில் துவக்கும், உதாரணமாக:"
 
-#: ../installation/galette.rst:161
+#: ../installation/galette.rst:162
 msgid "add Galette default preferences"
 msgstr "கேலட் இயல்புநிலை விருப்பங்களைச் சேர்க்கவும்"
 
-#: ../installation/galette.rst:162
+#: ../installation/galette.rst:163
 msgid "add default contributions and status types,"
 msgstr "இயல்புநிலை பங்களிப்புகள் மற்றும் நிலை வகைகளைச் சேர்க்கவும்,"
 
-#: ../installation/galette.rst:163
+#: ../installation/galette.rst:164
 msgid "fields configuration and permissions,"
 msgstr "புலங்கள் கட்டமைப்பு மற்றும் அனுமதிகள்,"
 
-#: ../installation/galette.rst:164
+#: ../installation/galette.rst:165
 msgid "texts for administrative emails,"
 msgstr "நிர்வாக மின்னஞ்சல்களுக்கான உரைகள்,"
 
-#: ../installation/galette.rst:165
+#: ../installation/galette.rst:166
 msgid "members default titles,"
 msgstr "உறுப்பினர்களின் இயல்புநிலை தலைப்புகள்,"
 
-#: ../installation/galette.rst:166
+#: ../installation/galette.rst:167
 msgid "default PDF models"
 msgstr "இயல்புநிலை PDF மாதிரிகள்"
 
-#: ../installation/galette.rst:167
+#: ../installation/galette.rst:168
 msgid "..."
 msgstr "..."
 
-#: ../installation/galette.rst:169
+#: ../installation/galette.rst:170
 msgid ""
 "When updating, only the missing preferences and the new default data if any "
 "will be handled."
@@ -367,15 +367,15 @@ msgstr ""
 "புதுப்பிக்கும் போது, விடுபட்ட விருப்பத்தேர்வுகள் மற்றும் புதிய இயல்புநிலை தரவு ஏதேனும் "
 "இருந்தால் மட்டுமே கையாளப்படும்."
 
-#: ../installation/galette.rst:176
+#: ../installation/galette.rst:177
 msgid "Installation end"
 msgstr "நிறுவல் முடிவு"
 
-#: ../installation/galette.rst:178
+#: ../installation/galette.rst:179
 msgid "Installation is now finished, congratulations!"
 msgstr "இப்போது நிறுவல் முடிந்தது, வாழ்த்துக்கள்!"
 
-#: ../installation/galette.rst:184
+#: ../installation/galette.rst:185
 msgid ""
 "You can now login to Galette, using super admin information you used at "
 "installation time. You can now go to the :doc:`Galette user manual <../"
@@ -385,7 +385,7 @@ msgstr ""
 "உள்நுழையலாம். நீங்கள் இப்போது :doc:`Galette பயனர் கையேடு <../usermanual/index>` "
 "க்குச் செல்லலாம்."
 
-#: ../installation/galette.rst:190
+#: ../installation/galette.rst:191
 msgid "Happy Galette!"
 msgstr "இனிய கேலட்!"
 

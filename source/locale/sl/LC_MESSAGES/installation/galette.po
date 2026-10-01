@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 18:57+0200\n"
 "PO-Revision-Date: 2026-09-23 14:09+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Installation"
 msgstr "Namestitev"
 
-#: ../installation/galette.rst:7
+#: ../installation/galette.rst:8
 msgid ""
 "Galette installation is a web based process (once :doc:`preparation steps "
 "<preparation>` are done). Go to http://localhost/galette. :doc:`Update "
@@ -33,7 +33,7 @@ msgstr ""
 "<preparation>` končani). Pojdite na http://localhost/galette. :doc:`Postopek "
 "posodobitve <update>` je dokumentiran ločeno."
 
-#: ../installation/galette.rst:9
+#: ../installation/galette.rst:10
 msgid ""
 "You should rely on latest stable release, but it is also possible (if your "
 "know what you are doing, this is more complex for non developers!) grab it "
@@ -43,11 +43,11 @@ msgstr ""
 "počnete, saj je to za nerazvijalce bolj zapleteno!) jo dobiti "
 "iz :doc:`source code <../source_code>`"
 
-#: ../installation/galette.rst:14
+#: ../installation/galette.rst:15
 msgid "Enabling the installer"
 msgstr "Omogočanje namestitvenega programa"
 
-#: ../installation/galette.rst:18
+#: ../installation/galette.rst:19
 msgid ""
 "For security reasons, the installer does nothing until you tell it to. It "
 "stays closed as long as a file named ``ENABLE_INSTALL`` is missing from "
@@ -57,11 +57,11 @@ msgstr ""
 "tega ne naročite. Zaprta ostane, dokler v Galette |folder| manjka datoteka z "
 "imenom ``ENABLE_INSTALL`` ``data`` directory:"
 
-#: ../installation/galette.rst:24
+#: ../installation/galette.rst:25
 msgid "Create that empty file on the server, then reload the page:"
 msgstr "Ustvarite to prazno datoteko na strežniku, nato znova naložite stran:"
 
-#: ../installation/galette.rst:30
+#: ../installation/galette.rst:31
 msgid ""
 "Creating it proves you have an access to the server, which a visitor passing "
 "by has not."
@@ -69,7 +69,7 @@ msgstr ""
 "Če ga ustvarite, dokažete, da imate dostop do strežnika, ki ga mimoidoči "
 "obiskovalec nima."
 
-#: ../installation/galette.rst:32
+#: ../installation/galette.rst:33
 msgid ""
 "Galette removes the file by itself once the installation - or "
 "the :doc:`update <update>` - has completed, so the installer closes again "
@@ -86,7 +86,7 @@ msgstr ""
 "samo za branje za spletni strežnik, zadnji korak namesto tega prikaže "
 "opozorilo: odstranite datoteko ročno, namestitev je vseeno končana."
 
-#: ../installation/galette.rst:36
+#: ../installation/galette.rst:37
 msgid ""
 "It is the **absence** of the file that closes the installer, and that is on "
 "purpose: losing it can only close the installer, it can never open it."
@@ -94,16 +94,16 @@ msgstr ""
 "**absence** datoteke zapre namestitveni program, in to namerno: izguba lahko "
 "samo zapre namestitveni program, nikoli pa ga ne more odpreti."
 
-#: ../installation/galette.rst:39
+#: ../installation/galette.rst:40
 msgid "Installation or update?"
 msgstr "Namestitev ali posodobitev?"
 
-#: ../installation/galette.rst:43
+#: ../installation/galette.rst:44
 msgid ""
 "Galette does not ask anymore, and the corresponding step has been removed."
 msgstr "Galette ne sprašuje več in ustrezen korak je bil odstranjen."
 
-#: ../installation/galette.rst:45
+#: ../installation/galette.rst:46
 msgid ""
 "The mode is deduced from the |phpfile| ``config/config.inc.php`` file: no "
 "configuration file means a new installation, an existing one means "
@@ -113,7 +113,7 @@ msgstr ""
 "konfiguracijske datoteke pomeni novo namestitev, obstoječa "
 "pomeni :doc:`posodobitev <update>`."
 
-#: ../installation/galette.rst:49
+#: ../installation/galette.rst:50
 msgid ""
 "To install a brand new instance over an existing one - erasing its data - "
 "remove the configuration file first. As long as it is there, Galette will "
@@ -123,38 +123,38 @@ msgstr ""
 "njegovih podatkov – najprej odstranite konfiguracijsko datoteko. Dokler je "
 "tam, bo Galette ponujal samo posodobitev."
 
-#: ../installation/galette.rst:52
+#: ../installation/galette.rst:53
 msgid "Requirements check"
 msgstr ""
 
-#: ../installation/galette.rst:56
+#: ../installation/galette.rst:57
 msgid ""
 "You can also open the `http://galette/compat_test.php` URL in your browser, "
 "or use the ``bin/console galette:checks`` command."
 msgstr ""
 
-#: ../installation/galette.rst:58
+#: ../installation/galette.rst:59
 msgid ""
 "Please check the following if you want Galette to install without problems:"
 msgstr "Če želite, da se Galette namesti brez težav, preverite naslednje:"
 
-#: ../installation/galette.rst:60
+#: ../installation/galette.rst:61
 msgid "your PHP version is high enough,"
 msgstr "vaša različica PHP je dovolj visoka,"
 
-#: ../installation/galette.rst:61
+#: ../installation/galette.rst:62
 msgid "PHP timezone is set (required since PHP 5.3),"
 msgstr "Časovni pas PHP je nastavljen (obvezno od PHP 5.3 naprej),"
 
-#: ../installation/galette.rst:62
+#: ../installation/galette.rst:63
 msgid "all required PHP extensions are installed and loaded,"
 msgstr "vse potrebne razširitve PHP so nameščene in naložene,"
 
-#: ../installation/galette.rst:63
+#: ../installation/galette.rst:64
 msgid "some directories requires write access."
 msgstr "nekateri imeniki zahtevajo dostop za pisanje."
 
-#: ../installation/galette.rst:65
+#: ../installation/galette.rst:66
 msgid ""
 "If one of the mandatory extensions is missing or if the timezone is not set, "
 "please ask you system administrator. Galette does not require any \"exotic\" "
@@ -164,7 +164,7 @@ msgstr ""
 "obrnite na skrbnika sistema. Galette ne potrebuje nobene \"eksotične\" "
 "končnice."
 
-#: ../installation/galette.rst:67
+#: ../installation/galette.rst:68
 msgid ""
 "The very first installation step will check those points, and will warn you "
 "if something gets wrong."
@@ -172,7 +172,7 @@ msgstr ""
 "Že prvi korak namestitve bo preveril te točke in vas opozoril, če gre kaj "
 "narobe."
 
-#: ../installation/galette.rst:73
+#: ../installation/galette.rst:74
 msgid ""
 "If all :ref:`the installation steps <preparation>` has been properly "
 "followed, directories ACLs should be correct, please refer to :ref:`files "
@@ -182,11 +182,11 @@ msgstr ""
 "morali biti ACL-ji imenikov pravilni. Prosimo, glejte razdelek :ref:`ACL-ji "
 "datotek <droitsfichiers>` in osvežite stran v brskalniku."
 
-#: ../installation/galette.rst:76
+#: ../installation/galette.rst:77
 msgid "Database"
 msgstr "Zbirka podatkov"
 
-#: ../installation/galette.rst:78
+#: ../installation/galette.rst:79
 msgid ""
 "First of all, make sure the database exists, and prepare all required "
 "information:"
@@ -194,31 +194,31 @@ msgstr ""
 "Najprej se prepričajte, da baza podatkov obstaja, in pripravite vse potrebne "
 "informacije:"
 
-#: ../installation/galette.rst:80
+#: ../installation/galette.rst:81
 msgid "host name"
 msgstr "ime gostitelja"
 
-#: ../installation/galette.rst:81
+#: ../installation/galette.rst:82
 msgid "database user name"
 msgstr "uporabniško ime baze podatkov"
 
-#: ../installation/galette.rst:82
+#: ../installation/galette.rst:83
 msgid "database user password"
 msgstr "geslo uporabnika baze podatkov"
 
-#: ../installation/galette.rst:83
+#: ../installation/galette.rst:84
 msgid "database name"
 msgstr "ime baze podatkov"
 
-#: ../installation/galette.rst:84
+#: ../installation/galette.rst:85
 msgid "database type (MariaDB/MySQL or PostgreSQL)"
 msgstr "vrsta baze podatkov (MariaDB/MySQL ali PostgreSQL)"
 
-#: ../installation/galette.rst:87
+#: ../installation/galette.rst:88
 msgid "Database parameters"
 msgstr "Parametri baze podatkov"
 
-#: ../installation/galette.rst:89
+#: ../installation/galette.rst:90
 msgid ""
 "On that screen, select your database type, and enter hostname, database "
 "name, user name and password. Tables prefix is useful if you do not have a "
@@ -230,7 +230,7 @@ msgstr ""
 "nimate namenske baze podatkov Galette, privzeti predlog bi moral biti v "
 "redu, vendar lahko izberete, kaj želite :)"
 
-#: ../installation/galette.rst:97
+#: ../installation/galette.rst:98
 msgid ""
 "This step is displayed for a new installation only. When updating, "
 "everything - password included - is read from the existing configuration "
@@ -242,13 +242,13 @@ msgstr ""
 "se preskoči. Vrne se le, če te datoteke ni mogoče prebrati ali če je "
 "nepopolna."
 
-#: ../installation/galette.rst:100
+#: ../installation/galette.rst:101
 #, fuzzy
 #| msgid "Database"
 msgid "Database checks"
 msgstr "Zbirka podatkov"
 
-#: ../installation/galette.rst:102
+#: ../installation/galette.rst:103
 msgid ""
 "Next screen will try to connect to the database using provided elements, "
 "than it will check database rights are correct (user can add/remove/alter "
@@ -259,7 +259,7 @@ msgstr ""
 "pravilne (uporabnik lahko dodaja/odstranjuje/spreminja tabele in dodaja/"
 "odstranjuje/ureja vrstice itd.)."
 
-#: ../installation/galette.rst:108
+#: ../installation/galette.rst:109
 msgid ""
 "If there is a connexion error, go back to previous step, fix your setup and "
 "try again. If you see rights issues, get them fixed on your server and use "
@@ -269,11 +269,11 @@ msgstr ""
 "nastavitve in poskusite znova. Če opazite težave s pravicami, jih odpravite "
 "na strežniku in uporabite gumb »Osveži«."
 
-#: ../installation/galette.rst:111
+#: ../installation/galette.rst:112
 msgid "Create tables"
 msgstr "Ustvarjanje tabel"
 
-#: ../installation/galette.rst:113
+#: ../installation/galette.rst:114
 msgid ""
 "Those instructions are only for installation. When updating, a database "
 "already exists."
@@ -281,7 +281,7 @@ msgstr ""
 "Ta navodila so samo za namestitev. Pri posodabljanju baza podatkov že "
 "obstaja."
 
-#: ../installation/galette.rst:115
+#: ../installation/galette.rst:116
 msgid ""
 "If a connection can be established to the database, and all is correct; "
 "installer will now create the tables, and insert default values. You can "
@@ -292,19 +292,19 @@ msgstr ""
 "Ustvarjene tabele si lahko ogledate s katerim koli grafičnim orodjem ali v "
 "ukazni vrstici:"
 
-#: ../installation/galette.rst:117
+#: ../installation/galette.rst:118
 msgid "MariaDB:"
 msgstr "Maria DB:"
 
-#: ../installation/galette.rst:124
+#: ../installation/galette.rst:125
 msgid "PostgreSQL:"
 msgstr "PostgreSQL:"
 
-#: ../installation/galette.rst:136
+#: ../installation/galette.rst:137
 msgid "Admin parameters"
 msgstr "Skrbniški parametri"
 
-#: ../installation/galette.rst:138
+#: ../installation/galette.rst:139
 msgid ""
 "This screen is displayed from installation only. When updating, super admin "
 "user is already existing."
@@ -312,7 +312,7 @@ msgstr ""
 "Ta zaslon se prikaže samo med namestitvijo. Pri posodabljanju je uporabnik "
 "super administrator že prisoten."
 
-#: ../installation/galette.rst:140
+#: ../installation/galette.rst:141
 msgid ""
 "Next screen will ask you for information to create the Galette super admin "
 "user. Using Galette, you can set some members as administrators, but the one "
@@ -324,11 +324,11 @@ msgstr ""
 "člane nastavite kot administratorje, vendar tisti, ki je bil ustvarjen ob "
 "namestitvi, ni član, ga ni mogoče odstraniti in ima nekaj dodatnih pravic."
 
-#: ../installation/galette.rst:147
+#: ../installation/galette.rst:148
 msgid "Telemetry"
 msgstr "Telemetrija"
 
-#: ../installation/galette.rst:149
+#: ../installation/galette.rst:150
 msgid ""
 "To know more about Galette installed instances, we try to collect anonymous "
 "telemetry data. You can also register as a Galette user :)"
@@ -337,11 +337,11 @@ msgstr ""
 "anonimne telemetrične podatke. Lahko se tudi registrirate kot uporabnik "
 "Galette :)"
 
-#: ../installation/galette.rst:157
+#: ../installation/galette.rst:158
 msgid "Initialize"
 msgstr "Inicializiraj"
 
-#: ../installation/galette.rst:159
+#: ../installation/galette.rst:160
 msgid ""
 "The last step will write the configuration file if needed, remove the "
 "``ENABLE_INSTALL`` file, and initialize some values in your fresh database, "
@@ -351,35 +351,35 @@ msgstr ""
 "datoteko ``ENABLE_INSTALL`` in inicializiral nekatere vrednosti v novi bazi "
 "podatkov, kot primer:"
 
-#: ../installation/galette.rst:161
+#: ../installation/galette.rst:162
 msgid "add Galette default preferences"
 msgstr "dodajte privzete nastavitve Galette"
 
-#: ../installation/galette.rst:162
+#: ../installation/galette.rst:163
 msgid "add default contributions and status types,"
 msgstr "dodajte privzete prispevke in vrste statusov,"
 
-#: ../installation/galette.rst:163
+#: ../installation/galette.rst:164
 msgid "fields configuration and permissions,"
 msgstr "konfiguracija polj in dovoljenja,"
 
-#: ../installation/galette.rst:164
+#: ../installation/galette.rst:165
 msgid "texts for administrative emails,"
 msgstr "besedila za administrativna e-poštna sporočila,"
 
-#: ../installation/galette.rst:165
+#: ../installation/galette.rst:166
 msgid "members default titles,"
 msgstr "privzeti nazivi članov,"
 
-#: ../installation/galette.rst:166
+#: ../installation/galette.rst:167
 msgid "default PDF models"
 msgstr "privzeti modeli PDF"
 
-#: ../installation/galette.rst:167
+#: ../installation/galette.rst:168
 msgid "..."
 msgstr "..."
 
-#: ../installation/galette.rst:169
+#: ../installation/galette.rst:170
 msgid ""
 "When updating, only the missing preferences and the new default data if any "
 "will be handled."
@@ -387,15 +387,15 @@ msgstr ""
 "Pri posodabljanju bodo obravnavane samo manjkajoče nastavitve in morebitni "
 "novi privzeti podatki."
 
-#: ../installation/galette.rst:176
+#: ../installation/galette.rst:177
 msgid "Installation end"
 msgstr "Konec namestitve"
 
-#: ../installation/galette.rst:178
+#: ../installation/galette.rst:179
 msgid "Installation is now finished, congratulations!"
 msgstr "Namestitev je zdaj končana, čestitamo!"
 
-#: ../installation/galette.rst:184
+#: ../installation/galette.rst:185
 msgid ""
 "You can now login to Galette, using super admin information you used at "
 "installation time. You can now go to the :doc:`Galette user manual <../"
@@ -405,7 +405,7 @@ msgstr ""
 "ki ste jih uporabili ob namestitvi. Zdaj lahko odprete :doc:`Galette "
 "uporabniški priročnik <../usermanual/index>`."
 
-#: ../installation/galette.rst:190
+#: ../installation/galette.rst:191
 msgid "Happy Galette!"
 msgstr "Srečno Galette!"
 
