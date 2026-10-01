@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -180,18 +180,6 @@ msgid "go to main page,"
 msgstr "முதன்மையான பக்கத்திற்குச் செல்,"
 
 #: ../usermanual/preferences.rst:67
-msgid "**Logging**: handles internal history:"
-msgstr "**பதிவு**: அக வரலாற்றைக் கையாளுகிறது:"
-
-#: ../usermanual/preferences.rst:69
-msgid "Enabled,"
-msgstr "இயக்கப்பட்டது,"
-
-#: ../usermanual/preferences.rst:70
-msgid "Disabled,"
-msgstr "முடக்கப்பட்டது,"
-
-#: ../usermanual/preferences.rst:72
 msgid ""
 "**Default membership status**: the status to affect to all new created users "
 "(can be changed on creation form if current user have rights),"
@@ -199,49 +187,53 @@ msgstr ""
 "**இயல்புநிலை உறுப்பினர் நிலை**: புதிதாக உருவாக்கப்பட்ட அனைத்து பயனர்களையும் பாதிக்கும் "
 "நிலை (தற்போதைய பயனருக்கு உரிமைகள் இருந்தால் உருவாக்கும் படிவத்தில் மாற்றலாம்),"
 
-#: ../usermanual/preferences.rst:73
+#: ../usermanual/preferences.rst:68
 msgid ""
 "**Default account filter**: default account filter to apply on members list,"
 msgstr ""
 "**இயல்புநிலை கணக்கு வடிகட்டி**: உறுப்பினர்கள் பட்டியலில் விண்ணப்பிக்க இயல்புநிலை கணக்கு "
 "வடிகட்டி,"
 
-#: ../usermanual/preferences.rst:74
+#: ../usermanual/preferences.rst:69
 msgid "**Default membership extension**: membership extension in months,"
 msgstr "**இயல்புநிலை உறுப்பினர் நீட்டிப்பு**: மாதங்களில் உறுப்பினர் நீட்டிப்பு,"
 
-#: ../usermanual/preferences.rst:75
+#: ../usermanual/preferences.rst:70
 msgid "**Beginning of membership**: beginning date of the financial period,"
 msgstr "**உறுப்பினரின் ஆரம்பம்**: நிதிக் காலத்தின் தொடக்க தேதி,"
 
-#: ../usermanual/preferences.rst:76
+#: ../usermanual/preferences.rst:71
 msgid "**Public pages enabled**: enable or disable public pages,"
 msgstr "**பொது பக்கங்கள் இயக்கப்பட்டன**: பொது பக்கங்களை இயக்கு அல்லது முடக்கு,"
 
-#: ../usermanual/preferences.rst:77
+#: ../usermanual/preferences.rst:72
 msgid "**Show public pages for**: defines who can see public pages:"
 msgstr ""
 "**இதற்கான பொதுப் பக்கங்களைக் காட்டு**: பொதுப் பக்கங்களை யார் பார்க்கலாம் என்பதை "
 "வரையறுக்கிறது:"
 
-#: ../usermanual/preferences.rst:79
+#: ../usermanual/preferences.rst:74
 msgid "**Everyone**, including simple visitors,"
 msgstr "எளிய பார்வையாளர்கள் உட்பட **அனைவரும்**,"
 
-#: ../usermanual/preferences.rst:80
+#: ../usermanual/preferences.rst:75
 msgid "**Up to date members**,"
 msgstr "**புதுப்பித்த உறுப்பினர்கள்**,"
 
-#: ../usermanual/preferences.rst:81
+#: ../usermanual/preferences.rst:76
 msgid "**Administrators and staff members**,"
 msgstr "**நிர்வாகிகள் மற்றும் பணியாளர்கள்**,"
 
-#: ../usermanual/preferences.rst:83
+#: ../usermanual/preferences.rst:78
+#, fuzzy
+#| msgid ""
+#| "**Self subscription enabled**: enable or disable self subscription "
+#| "feature,"
 msgid ""
-"**Self subscription enabled**: enable or disable self subscription feature,"
+"**Self registration enabled**: enable or disable self registration feature,"
 msgstr "**சுய சந்தா இயக்கப்பட்டது**: தன்வய சந்தா அம்சத்தை இயக்கவும் அல்லது முடக்கவும்,"
 
-#: ../usermanual/preferences.rst:84
+#: ../usermanual/preferences.rst:79
 msgid ""
 "**Post new contribution script URI**: URI of a script that will be called "
 "after a new contribution has been added. Several prefixes are handled:"
@@ -249,7 +241,7 @@ msgstr ""
 "**புதிய பங்களிப்பு ச்கிரிப்ட் யூரி ஐ இடுகையிடவும்**: புதிய பங்களிப்பு சேர்க்கப்பட்ட "
 "பிறகு அழைக்கப்படும் ச்கிரிப்ட்டின் URI. பல முன்னொட்டுகள் கையாளப்படுகின்றன:"
 
-#: ../usermanual/preferences.rst:86
+#: ../usermanual/preferences.rst:81
 msgid ""
 "**galette://**: call a script provided by Galette that will be called with "
 "the HTTP POST method. Path must be relative to your Galette installation. "
@@ -261,7 +253,7 @@ msgstr ""
 "``galette/post_contribution_test.php`` எடுத்துக்காட்டு ச்கிரிப்ட்டின் யூரி ஆனது "
 "`galette://post_contribution_test.php` ஆக இருக்கும்."
 
-#: ../usermanual/preferences.rst:87
+#: ../usermanual/preferences.rst:82
 msgid ""
 "**get://** or **post://**: use HTTP GET or POST method to call a web "
 "address, prefix will be replaced with ``http://``,"
@@ -269,7 +261,7 @@ msgstr ""
 "**get://** அல்லது **post://**: இணைய முகவரியை அழைக்க HTTP GET அல்லது POST "
 "முறையைப் பயன்படுத்தவும், முன்னொட்டு ``http://`` என மாற்றப்படும்,"
 
-#: ../usermanual/preferences.rst:88
+#: ../usermanual/preferences.rst:83
 msgid ""
 "**file://**: call a file on the web server, full path must be provided. "
 "Destination script must be executable, and should define a shellbang if "
@@ -283,7 +275,7 @@ msgstr ""
 "இருந்தால்) அடங்கிய மின்னஞ்சல் நிர்வாகிக்கு அனுப்பப்படும். நடத்தை கிரானைப் போலவே உள்ளது : "
 "ச்கிரிப்ட் எதையாவது வெளியிட்டால், ஒரு அஞ்சல் அனுப்பப்படும்."
 
-#: ../usermanual/preferences.rst:92
+#: ../usermanual/preferences.rst:87
 msgid ""
 "Using ``file://`` method can be dangerous, Galette just call the provided "
 "script, usage and security of the script is **under your own "
@@ -292,7 +284,7 @@ msgstr ""
 "``file://`` முறையைப் பயன்படுத்துவது ஆபத்தானது, வழங்கப்பட்ட ச்கிரிப்டை கேலட் அழைக்கவும், "
 "ச்கிரிப்ட்டின் பயன்பாடு மற்றும் பாதுகாப்பு **உங்கள் சொந்தப் பொறுப்பின் கீழ்**."
 
-#: ../usermanual/preferences.rst:94
+#: ../usermanual/preferences.rst:89
 msgid ""
 "**Appearance** : these settings allow you to adapt the default appearance of "
 "Galette to your needs."
@@ -300,7 +292,7 @@ msgstr ""
 "**தோற்றம்** : இந்த அமைப்புகள் Galette இன் இயல்புநிலை தோற்றத்தை உங்கள் தேவைகளுக்கு ஏற்ப "
 "மாற்றிக்கொள்ள உங்களை அனுமதிக்கின்றன."
 
-#: ../usermanual/preferences.rst:96
+#: ../usermanual/preferences.rst:91
 msgid ""
 "**Hide default background image** : hide the image used as a background on "
 "private pages, on modal windows headers, and on public page headers."
@@ -308,7 +300,7 @@ msgstr ""
 "**இயல்புநிலை பின்னணி படத்தை மறை** : தனிப்பட்ட பக்கங்கள், மாதிரி சாளரங்கள் தலைப்புகள் "
 "மற்றும் பொதுப் பக்க தலைப்புகளில் பின்னணியாகப் பயன்படுத்தப்படும் படத்தை மறைக்கவும்."
 
-#: ../usermanual/preferences.rst:97
+#: ../usermanual/preferences.rst:92
 msgid ""
 "**Apply custom colors**: enable or disable usage of following color "
 "parameters:"
@@ -316,7 +308,7 @@ msgstr ""
 "**தனிப்பயன் வண்ணங்களைப் பயன்படுத்து**: பின்வரும் வண்ண அளவுருக்களின் பயன்பாட்டை இயக்கவும் "
 "அல்லது முடக்கவும்:"
 
-#: ../usermanual/preferences.rst:99
+#: ../usermanual/preferences.rst:94
 msgid ""
 "**Primary color**: applied to primary buttons, checkboxes, labels, headers, "
 "borders, and menus."
@@ -324,14 +316,14 @@ msgstr ""
 "**முதன்மை நிறம்**: முதன்மை பொத்தான்கள், தேர்வுப்பெட்டிகள், லேபிள்கள், தலைப்புகள், பார்டர்கள் "
 "மற்றும் மெனுக்களுக்குப் பயன்படுத்தப்படும்."
 
-#: ../usermanual/preferences.rst:100
+#: ../usermanual/preferences.rst:95
 msgid ""
 "**Text on primary color**: applied to text displayed over the *Primary "
 "color*."
 msgstr ""
 "**முதன்மை வண்ணத்தில் உரை**: *முதன்மை நிறம்* மீது காட்டப்படும் உரைக்கு பயன்படுத்தப்படும்."
 
-#: ../usermanual/preferences.rst:101
+#: ../usermanual/preferences.rst:96
 msgid ""
 "**Secondary color**: applied to active items in menus, paginations, and "
 "accordions views."
@@ -339,24 +331,24 @@ msgstr ""
 "**இரண்டாம் வண்ணம்**: மெனுக்கள், பேசினேசன் மற்றும் துருத்திக் காட்சிகளில் செயலில் உள்ள "
 "உருப்படிகளுக்குப் பயன்படுத்தப்படும்."
 
-#: ../usermanual/preferences.rst:102
+#: ../usermanual/preferences.rst:97
 msgid ""
 "**Text on secondary color**: applied to text displayed over the *Secondary "
 "color*."
 msgstr ""
 "**இரண்டாம் வண்ணத்தில் உரை**: *இரண்டாம் வண்ணம்* மீது காட்டப்படும் உரைக்கு பயன்படுத்தப்படும்."
 
-#: ../usermanual/preferences.rst:104
+#: ../usermanual/preferences.rst:99
 msgid "**RSS feed URL**: link to the RSS feed to display on dashboard,"
 msgstr "**RSS ஊட்ட URL**: டாச்போர்டில் காண்பிக்க RSS ஊட்டத்திற்கான இணைப்பு,"
 
-#: ../usermanual/preferences.rst:105
+#: ../usermanual/preferences.rst:100
 msgid ""
 "**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
 msgstr ""
 "**கேலட் அடிப்படை URL**: கேலட் நிகழ்வு URL, முன்மொழியப்பட்ட ஒன்று தவறாக இருந்தால்,"
 
-#: ../usermanual/preferences.rst:109
+#: ../usermanual/preferences.rst:104
 msgid ""
 "This URL should be changed only if there are issues, this may cause "
 "instability."
@@ -364,19 +356,19 @@ msgstr ""
 "சிக்கல்கள் இருந்தால் மட்டுமே இந்த முகவரி மாற்றப்பட வேண்டும், இது நிலையற்ற தன்மையை "
 "ஏற்படுத்தலாம்."
 
-#: ../usermanual/preferences.rst:111
+#: ../usermanual/preferences.rst:106
 msgid "A contextual help is provided, check it for more information."
 msgstr "ஒரு சூழ்நிலை உதவி வழங்கப்படுகிறது, மேலும் தகவலுக்கு அதைச் சரிபார்க்கவும்."
 
-#: ../usermanual/preferences.rst:116
+#: ../usermanual/preferences.rst:111
 msgid "Rights"
 msgstr "உரிமைகள்"
 
-#: ../usermanual/preferences.rst:118
+#: ../usermanual/preferences.rst:113
 msgid "Define few extra rights:"
 msgstr "சில கூடுதல் உரிமைகளை வரையறுக்கவும்:"
 
-#: ../usermanual/preferences.rst:120
+#: ../usermanual/preferences.rst:115
 msgid ""
 "**Can members create child?** if you enable this settings, any logged in "
 "member can create another members that will be attached to him as children."
@@ -385,7 +377,7 @@ msgstr ""
 "உள்நுழைந்துள்ள எந்தவொரு உறுப்பினரும் குழந்தைகளாக அவருடன் இணைக்கப்படும் மற்றொரு "
 "உறுப்பினர்களை உருவாக்க முடியும்."
 
-#: ../usermanual/preferences.rst:121
+#: ../usermanual/preferences.rst:116
 msgid ""
 "**Can group managers edit their groups?** groups manager can edit their "
 "owned groups information (name, parent, order)."
@@ -393,7 +385,7 @@ msgstr ""
 "**குழு மேலாளர்கள் தங்கள் குழுக்களைத் திருத்த முடியுமா?** குழுக்களின் மேலாளர் "
 "அவர்களுக்குச் சொந்தமான குழுக்களின் தகவலை (பெயர், பெற்றோர், ஒழுங்கு) திருத்தலாம்."
 
-#: ../usermanual/preferences.rst:122
+#: ../usermanual/preferences.rst:117
 msgid ""
 "**Can group managers create members?** groups managers can create members "
 "attached to their groups."
@@ -401,7 +393,7 @@ msgstr ""
 "**குழு மேலாளர்கள் உறுப்பினர்களை உருவாக்க முடியுமா?** குழு மேலாளர்கள் தங்கள் "
 "குழுக்களுடன் இணைக்கப்பட்ட உறுப்பினர்களை உருவாக்கலாம்."
 
-#: ../usermanual/preferences.rst:123
+#: ../usermanual/preferences.rst:118
 msgid ""
 "**Can group managers edit members?** groups managers can edit member of "
 "their groups information."
@@ -409,12 +401,12 @@ msgstr ""
 "**குழு மேலாளர்கள் உறுப்பினர்களைத் திருத்த முடியுமா?** குழு மேலாளர்கள் தங்கள் குழுவின் "
 "உறுப்பினர் தகவலைத் திருத்தலாம்."
 
-#: ../usermanual/preferences.rst:124
+#: ../usermanual/preferences.rst:119
 msgid "**Can group managers send mailings?** groups manager can send mailings."
 msgstr ""
 "**குழு மேலாளர்கள் அஞ்சல்களை அனுப்ப முடியுமா?** குழு மேலாளர் அஞ்சல்களை அனுப்பலாம்."
 
-#: ../usermanual/preferences.rst:125
+#: ../usermanual/preferences.rst:120
 msgid ""
 "**Can group managers do exports?** groups managers can export groups as PDF, "
 "generate attendance sheets, cards, labels and CSV exports for members of "
@@ -424,7 +416,7 @@ msgstr ""
 "செய்கிறார்கள், வருகை தாள்கள், அட்டைகள், லேபிள்கள் மற்றும் காபிம ஏற்றுமதிகளை தங்கள் "
 "குழுக்களின் உறுப்பினர்களுக்கு உருவாக்குகிறார்கள்."
 
-#: ../usermanual/preferences.rst:126
+#: ../usermanual/preferences.rst:121
 msgid ""
 "**Can group managers see contributions?** groups managers can see "
 "contributions of members of their groups."
@@ -432,7 +424,7 @@ msgstr ""
 "**குழு மேலாளர்கள் பங்களிப்புகளைப் பார்க்க முடியுமா?** குழு மேலாளர்கள் தங்கள் குழுக்களின் "
 "உறுப்பினர்களின் பங்களிப்புகளைப் பார்க்க முடியும்."
 
-#: ../usermanual/preferences.rst:127
+#: ../usermanual/preferences.rst:122
 msgid ""
 "**Can group managers create contributions?** groups managers can create "
 "contributions on behalf of members of their groups."
@@ -440,7 +432,7 @@ msgstr ""
 "**குழு மேலாளர்கள் பங்களிப்புகளை உருவாக்க முடியுமா?** குழு மேலாளர்கள் தங்கள் குழுக்களின் "
 "உறுப்பினர்கள் சார்பாக பங்களிப்புகளை உருவாக்கலாம்."
 
-#: ../usermanual/preferences.rst:128
+#: ../usermanual/preferences.rst:123
 msgid ""
 "**Can group managers see transactions?** groups managers can see "
 "transactions of members of their groups."
@@ -448,7 +440,7 @@ msgstr ""
 "**குழு மேலாளர்கள் பரிவர்த்தனைகளைப் பார்க்க முடியுமா?** குழு மேலாளர்கள் தங்கள் குழுக்களின் "
 "உறுப்பினர்களின் பரிவர்த்தனைகளைப் பார்க்க முடியும்."
 
-#: ../usermanual/preferences.rst:129
+#: ../usermanual/preferences.rst:124
 msgid ""
 "**Can group managers create transactions?** groups managers can create "
 "transactions on behalf of members of their groups."
@@ -456,38 +448,38 @@ msgstr ""
 "**குழு மேலாளர்கள் பரிவர்த்தனைகளை உருவாக்க முடியுமா?** குழு மேலாளர்கள் தங்கள் "
 "குழுக்களின் உறுப்பினர்கள் சார்பாக பரிவர்த்தனைகளை உருவாக்கலாம்."
 
-#: ../usermanual/preferences.rst:131
+#: ../usermanual/preferences.rst:126
 msgid "Galette settings, rights tab"
 msgstr "கேலட் அமைப்புகள், உரிமைகள் தாவல்"
 
-#: ../usermanual/preferences.rst:137
+#: ../usermanual/preferences.rst:132
 msgid "E-Mail"
 msgstr "மின்னஞ்சல்"
 
-#: ../usermanual/preferences.rst:139
+#: ../usermanual/preferences.rst:134
 msgid "Sending email parameters:"
 msgstr "மின்னஞ்சல் அளவுருக்களை அனுப்புகிறது:"
 
-#: ../usermanual/preferences.rst:141
+#: ../usermanual/preferences.rst:136
 msgid "Galette settings, e-mail tab"
 msgstr "கேலட் அமைப்புகள், மின்னஞ்சல் தாவல்"
 
-#: ../usermanual/preferences.rst:146
+#: ../usermanual/preferences.rst:141
 msgid "**Sender name**: name of the sender,"
 msgstr "**அனுப்புபவர் பெயர்**: அனுப்புநரின் பெயர்,"
 
-#: ../usermanual/preferences.rst:147
+#: ../usermanual/preferences.rst:142
 msgid "**Sender email**: email address of the sender,"
 msgstr "**அனுப்புபவர் மின்னஞ்சல்**: அனுப்புநரின் மின்னஞ்சல் முகவரி,"
 
-#: ../usermanual/preferences.rst:148
+#: ../usermanual/preferences.rst:143
 msgid ""
 "**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 "**மின்னஞ்சலுக்கு பதில்**: பதில் மின்னஞ்சல் முகவரி. காலியாக இருந்தால், அனுப்புநரின் "
 "மின்னஞ்சல் பயன்படுத்தப்படும்,"
 
-#: ../usermanual/preferences.rst:149
+#: ../usermanual/preferences.rst:144
 msgid ""
 "**Members administrator email**: email address on which inscription "
 "notifications will be send, you can set several addresses separated with "
@@ -496,7 +488,7 @@ msgstr ""
 "**உறுப்பினர்கள் நிர்வாகி மின்னஞ்சல்**: கல்வெட்டு அறிவிப்புகள் அனுப்பப்படும் மின்னஞ்சல் "
 "முகவரி, நீங்கள் கோமாவுடன் பிரிக்கப்பட்ட பல முகவரிகளை அமைக்கலாம்,"
 
-#: ../usermanual/preferences.rst:150
+#: ../usermanual/preferences.rst:145
 msgid ""
 "**Send emails to administrators**: whether to send emails to administrators "
 "on subscription,"
@@ -504,7 +496,7 @@ msgstr ""
 "**நிர்வாகிகளுக்கு மின்னஞ்சல்களை அனுப்பு**: சந்தா மீது நிர்வாகிகளுக்கு மின்னஞ்சல்களை அனுப்ப "
 "வேண்டுமா,"
 
-#: ../usermanual/preferences.rst:151
+#: ../usermanual/preferences.rst:146
 msgid ""
 "**Wrap text emails**: automatically wraps long lines in emails. If you "
 "disable this options, make sure to wrap yourself,"
@@ -512,7 +504,7 @@ msgstr ""
 "**உரை மின்னஞ்சல்களை மடக்கு**: மின்னஞ்சல்களில் தானாக நீண்ட வரிகளை மறைக்கும். இந்த "
 "விருப்பங்களை நீங்கள் முடக்கினால், நீங்களே போர்த்திக்கொள்ளுங்கள்,"
 
-#: ../usermanual/preferences.rst:152
+#: ../usermanual/preferences.rst:147
 msgid ""
 "**Send emails to members**: whether to send emails to members when their "
 "information are updated or a contribution is created on their behalf,"
@@ -521,7 +513,7 @@ msgstr ""
 "அல்லது அவர்கள் சார்பாக ஒரு பங்களிப்பு உருவாக்கப்படும்போது அவர்களுக்கு மின்னஞ்சல்களை அனுப்ப "
 "வேண்டுமா,"
 
-#: ../usermanual/preferences.rst:153
+#: ../usermanual/preferences.rst:148
 msgid ""
 "**Activate HTML editor**: activate HTML format when sending emails "
 "(discouraged),"
@@ -529,15 +521,15 @@ msgstr ""
 "**HTML எடிட்டரைச் செயல்படுத்து**: மின்னஞ்சல்களை அனுப்பும் போது உஉகுமொ வடிவமைப்பைச் "
 "செயல்படுத்தவும் (ஊக்கமில்லாமல்),"
 
-#: ../usermanual/preferences.rst:154
+#: ../usermanual/preferences.rst:149
 msgid "**Emailing method**: method used to send emails:"
 msgstr "**மின்னஞ்சல் முறை**: மின்னஞ்சல்களை அனுப்ப பயன்படும் முறை:"
 
-#: ../usermanual/preferences.rst:156
+#: ../usermanual/preferences.rst:151
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr "**மின்னஞ்சல் முடக்கப்பட்டுள்ளது**: கேலட்டில் இருந்து எந்த மின்னஞ்சலும் அனுப்பப்படாது,"
 
-#: ../usermanual/preferences.rst:157
+#: ../usermanual/preferences.rst:152
 msgid ""
 "**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
 "parameters (recommended when possible),"
@@ -545,7 +537,7 @@ msgstr ""
 "**PHP அஞ்சல் செயல்பாடு**: பிஎச்பி ``mail()`` எழுத்துமுறைகள் மற்றும் தொடர்புடைய "
 "அளவுருக்களைப் பயன்படுத்துகிறது (முடிந்தால் பரிந்துரைக்கப்படுகிறது),"
 
-#: ../usermanual/preferences.rst:158
+#: ../usermanual/preferences.rst:153
 msgid ""
 "**Using a SMTP server**: uses an external SMTP server to configure (will be "
 "slower than PHP ``mail()`` function),"
@@ -553,13 +545,13 @@ msgstr ""
 "**SMTP சேவையகத்தைப் பயன்படுத்துதல்**: உள்ளமைக்க வெளிப்புற SMTP சேவையகத்தைப் "
 "பயன்படுத்துகிறது (PHP ``mail()`` செயல்பாட்டை விட மெதுவாக இருக்கும்),"
 
-#: ../usermanual/preferences.rst:159
+#: ../usermanual/preferences.rst:154
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr ""
 "**சென்ட்மெயில் சேவையகத்தைப் பயன்படுத்துதல்**: உள்ளக சர்வர் அனுப்பும் அஞ்சலைப் "
 "பயன்படுத்துகிறது,"
 
-#: ../usermanual/preferences.rst:161
+#: ../usermanual/preferences.rst:156
 msgid ""
 "**Mail signature**: signature added to all sent emails. Available variables "
 "are displayed in the inline help from the application."
@@ -567,37 +559,37 @@ msgstr ""
 "**அஞ்சல் கையொப்பம்**: அனுப்பப்பட்ட அனைத்து மின்னஞ்சல்களிலும் கையொப்பம் சேர்க்கப்பட்டது. "
 "பயன்பாட்டில் உள்ள இன்லைன் உதவியில் கிடைக்கும் மாறிகள் காட்டப்படும்."
 
-#: ../usermanual/preferences.rst:165
+#: ../usermanual/preferences.rst:160
 msgid ""
 "The **qmail** method has been removed. Instances still configured with it "
 "are switched to ``sendmail`` when the database is updated."
 msgstr ""
 
-#: ../usermanual/preferences.rst:166
+#: ../usermanual/preferences.rst:161
 msgid ""
 "The **GMail** method has been removed. Instances still configured with it "
 "are switched to ``SMTP`` when the database is updated."
 msgstr ""
 
-#: ../usermanual/preferences.rst:168
+#: ../usermanual/preferences.rst:163
 msgid ""
 "When using SMTP, you will have to configure user name and password to use."
 msgstr ""
 "SMTP ஐப் பயன்படுத்தும் போது, பயன்படுத்த பயனர் பெயர் மற்றும் கடவுச்சொல்லை உள்ளமைக்க வேண்டும்."
 
-#: ../usermanual/preferences.rst:170
+#: ../usermanual/preferences.rst:165
 msgid "SMTP configuration is a bit more complex :"
 msgstr "SMTP உள்ளமைவு சற்று சிக்கலானது:"
 
-#: ../usermanual/preferences.rst:172
+#: ../usermanual/preferences.rst:167
 msgid "**SMTP server**: server address, required,"
 msgstr "**SMTP சேவையகம்**: சேவையக முகவரி, தேவை,"
 
-#: ../usermanual/preferences.rst:173
+#: ../usermanual/preferences.rst:168
 msgid "**SMTP port**: server port, required,"
 msgstr "**SMTP போர்ட்**: சர்வர் துறைமுகம், தேவை,"
 
-#: ../usermanual/preferences.rst:174
+#: ../usermanual/preferences.rst:169
 msgid ""
 "**Use SMTP authentication**: if your server requires an authentication. In "
 "this case, you will also have to set username and password,"
@@ -605,34 +597,34 @@ msgstr ""
 "**SMTP அங்கீகாரத்தைப் பயன்படுத்தவும்**: உங்கள் சேவையகத்திற்கு ஏற்பு தேவைப்பட்டால். இந்த "
 "வழக்கில், நீங்கள் பயனர்பெயர் மற்றும் கடவுச்சொல்லை அமைக்க வேண்டும்."
 
-#: ../usermanual/preferences.rst:175
+#: ../usermanual/preferences.rst:170
 msgid "**Use TLS for SMTP**: enable SSL support,"
 msgstr "**SMTPக்கு TLS ஐப் பயன்படுத்தவும்**: SSL ஆதரவை இயக்கவும்,"
 
-#: ../usermanual/preferences.rst:176
+#: ../usermanual/preferences.rst:171
 msgid ""
 "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
 "signed for example)."
 msgstr "**பாதுகாப்பற்ற TLSஐ இசைவு"
 
-#: ../usermanual/preferences.rst:181
+#: ../usermanual/preferences.rst:176
 #, fuzzy
 #| msgid "Sending email parameters:"
 msgid "Sending limits"
 msgstr "மின்னஞ்சல் அளவுருக்களை அனுப்புகிறது:"
 
-#: ../usermanual/preferences.rst:187
+#: ../usermanual/preferences.rst:182
 msgid "This is an **experimental** feature."
 msgstr ""
 
-#: ../usermanual/preferences.rst:189
+#: ../usermanual/preferences.rst:184
 msgid ""
 "Try it on a test instance before your production one, watch carefully, and "
 "`report what you find <https://bugs.galette.eu>`_. Leaving the settings at "
 "their default keeps Galette sending exactly as it always did."
 msgstr ""
 
-#: ../usermanual/preferences.rst:191
+#: ../usermanual/preferences.rst:186
 msgid ""
 "Mail servers are rarely willing to accept anything you throw at them. They "
 "restrict the number of recipients a single message may carry, the number of "
@@ -641,103 +633,103 @@ msgid ""
 "of the :ref:`advanced configuration <advanced_config>` page:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:193
+#: ../usermanual/preferences.rst:188
 msgid ""
 "``pref_mail_batch_size``: maximum number of recipients per message. ``0``, "
 "the default, keeps the historical behavior: one single message carrying "
 "every recipient in blind copy,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:194
+#: ../usermanual/preferences.rst:189
 msgid ""
 "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by "
 "default, no pause,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:195
+#: ../usermanual/preferences.rst:190
 msgid ""
 "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, "
 "the default, means no limit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:196
+#: ../usermanual/preferences.rst:191
 msgid ""
 "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the "
 "default, means no limit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:197
+#: ../usermanual/preferences.rst:192
 msgid ""
 "``pref_mail_smtp_keepalive``: keep the SMTP connection open across the "
 "messages of a mailing instead of reconnecting for each one. Enabled by "
 "default."
 msgstr ""
 
-#: ../usermanual/preferences.rst:199
+#: ../usermanual/preferences.rst:194
 msgid ""
 "Apart from the keepalive, they all ship disabled: an instance that is "
 "updated behaves exactly as it did before."
 msgstr ""
 
-#: ../usermanual/preferences.rst:201
+#: ../usermanual/preferences.rst:196
 msgid ""
 "Filter the advanced configuration on ``pref_mail_`` to get them all, next to "
 "the SMTP settings. The four that drive the queue carry the **alpha** marker:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:203
+#: ../usermanual/preferences.rst:198
 msgid "The sending limits, in the advanced configuration"
 msgstr ""
 
-#: ../usermanual/preferences.rst:208
+#: ../usermanual/preferences.rst:203
 msgid ""
 "Refer to your mail provider's documentation for the values to use, along "
 "with the SMTP settings."
 msgstr ""
 
-#: ../usermanual/preferences.rst:212
+#: ../usermanual/preferences.rst:207
 msgid ""
 "The hourly and daily limits are what turns sending into a :ref:`queue "
 "<mailing_queue>`: as soon as one of them is set, a mailing can no longer be "
 "sent in a single page load."
 msgstr ""
 
-#: ../usermanual/preferences.rst:216
+#: ../usermanual/preferences.rst:211
 msgid ""
 "Limits count **recipients**, not messages, and for all messages Galette send."
 msgstr ""
 
-#: ../usermanual/preferences.rst:218
+#: ../usermanual/preferences.rst:213
 msgid "The real limit of course depends on all usages of configured server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:221
+#: ../usermanual/preferences.rst:216
 msgid "Labels"
 msgstr "சிட்டைகள்"
 
-#: ../usermanual/preferences.rst:223
+#: ../usermanual/preferences.rst:218
 msgid "Galette settings, labels tab"
 msgstr "கேலட் அமைப்புகள், லேபிள்கள் தாவல்"
 
-#: ../usermanual/preferences.rst:229
+#: ../usermanual/preferences.rst:224
 msgid "Cards"
 msgstr "அட்டைகள்"
 
-#: ../usermanual/preferences.rst:231
+#: ../usermanual/preferences.rst:226
 msgid "Galette settings, cards tab"
 msgstr "கேலட் அமைப்புகள், அட்டைகள் தாவல்"
 
-#: ../usermanual/preferences.rst:239
+#: ../usermanual/preferences.rst:234
 msgid "Security"
 msgstr "பாதுகாப்பு"
 
-#: ../usermanual/preferences.rst:245
+#: ../usermanual/preferences.rst:240
 msgid ""
 "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 "சிக்கலான கடவுச்சொல் விதிகள் பயனர் நட்பு அல்ல; ஆனால் பாதுகாப்பு முக்கியமாக இல்லை :)"
 
-#: ../usermanual/preferences.rst:247
+#: ../usermanual/preferences.rst:242
 msgid ""
 "Of course, all passwords should be as secure as possible, but this is "
 "especially true for all accounts that have privileges (staff, admin, super-"
@@ -747,33 +739,33 @@ msgstr ""
 "சிறப்புரிமைகள் (பணியாளர்கள், நிர்வாகி, சூப்பர்-நிர்வாகம்) உள்ள அனைத்து கணக்குகளுக்கும் "
 "குறிப்பாக உண்மையாக இருக்கும்; இது ஏன் முக்கியமானது என்பதை உங்கள் பயனர்களுக்கு விளக்கலாம்."
 
-#: ../usermanual/preferences.rst:249
+#: ../usermanual/preferences.rst:244
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
 "உறுப்பினர்களுக்கான (மற்றும் சூப்பர்-நிர்வாகி) கடவுச்சொற்களுக்கு நீங்கள் சில விதிகளைச் "
 "செயல்படுத்தலாம்:"
 
-#: ../usermanual/preferences.rst:251
+#: ../usermanual/preferences.rst:246
 msgid "minimum length (6 characters or more),"
 msgstr "குறைந்தபட்ச நீளம் (6 எழுத்துகள் அல்லது அதற்கு மேல்),"
 
-#: ../usermanual/preferences.rst:252
+#: ../usermanual/preferences.rst:247
 msgid "minimum \"strength\","
 msgstr "குறைந்தபட்ச \"வலிமை\","
 
-#: ../usermanual/preferences.rst:253
+#: ../usermanual/preferences.rst:248
 msgid "blacklist,"
 msgstr "கருப்பு பட்டியல்,"
 
-#: ../usermanual/preferences.rst:254
+#: ../usermanual/preferences.rst:249
 msgid "no personal information."
 msgstr "தனிப்பட்ட செய்தி இல்லை."
 
-#: ../usermanual/preferences.rst:256
+#: ../usermanual/preferences.rst:251
 msgid "Galette settings, security tab"
 msgstr "கேலட் அமைப்புகள், பாதுகாப்பு தாவல்"
 
-#: ../usermanual/preferences.rst:261
+#: ../usermanual/preferences.rst:256
 msgid ""
 "Length is still the only rule that is active per default, just configure the "
 "number of characters required. On passwords fields, failures will be "
@@ -784,7 +776,7 @@ msgstr ""
 "எண்ணிக்கையை உள்ளமைக்கவும். கடவுச்சொற்கள் புலங்களில், தோல்விகள் பறக்கும்போது காட்டப்படும்; "
 "அத்துடன் தகவலுக்காக காட்டப்படும் \"வலிமை மீட்டர்\"."
 
-#: ../usermanual/preferences.rst:265
+#: ../usermanual/preferences.rst:260
 msgid ""
 "If you enable password checks, it is not possible to know if some of "
 "existing ones does not respect them. Galette will display a warning at login "
@@ -794,7 +786,7 @@ msgstr ""
 "அறிய முடியாது. காசோலைகள் மதிக்கப்படாவிட்டால், உள்நுழைவில் கேலட் ஒரு எச்சரிக்கையைக் "
 "காண்பிக்கும், ஆனால் உள்நுழைவு இன்னும் சாத்தியமாகும்!"
 
-#: ../usermanual/preferences.rst:267
+#: ../usermanual/preferences.rst:262
 msgid ""
 "But wait... Password security is important, but Galette does not enforce "
 "nothing! Isn't that dumb? Well, not really. For tests or entirely private "
@@ -808,36 +800,36 @@ msgstr ""
 "சந்தர்ப்பங்களில், மிகவும் கட்டுப்படுத்துவது உங்கள் பயனர்களுக்கு ஒரு சிக்கலாக இருக்கலாம்; "
 "அதனால்தான் தேவைக்கேற்ப பாதுகாப்பது உங்களுடையது; SSL ஐப் பயன்படுத்துகிறதோ இல்லையோ :)"
 
-#: ../usermanual/preferences.rst:270
+#: ../usermanual/preferences.rst:265
 msgid "Password strength"
 msgstr "கடவுச்சொல் வலிமை"
 
-#: ../usermanual/preferences.rst:272
+#: ../usermanual/preferences.rst:267
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr ""
 "கடவுச்சொல் வலிமையைக் கணக்கிடுவது மிகவும் எளிது. இது 4 விதிகளை அடிப்படையாகக் கொண்டது:"
 
-#: ../usermanual/preferences.rst:274
+#: ../usermanual/preferences.rst:269
 msgid "contains lower case characters,"
 msgstr "சிறிய எழுத்துக்களைக் கொண்டுள்ளது,"
 
-#: ../usermanual/preferences.rst:275
+#: ../usermanual/preferences.rst:270
 msgid "contains upper case characters,"
 msgstr "பெரிய எழுத்துகளைக் கொண்டுள்ளது,"
 
-#: ../usermanual/preferences.rst:276
+#: ../usermanual/preferences.rst:271
 msgid "contains number,"
 msgstr "எண் கொண்டது,"
 
-#: ../usermanual/preferences.rst:277
+#: ../usermanual/preferences.rst:272
 msgid "contains special characters."
 msgstr "சிறப்பு எழுத்துக்களைக் கொண்டுள்ளது."
 
-#: ../usermanual/preferences.rst:279
+#: ../usermanual/preferences.rst:274
 msgid "You can choose between 5 values for strength configuration:"
 msgstr "வலிமை உள்ளமைவுக்கு 5 மதிப்புகளுக்கு இடையே நீங்கள் தேர்வு செய்யலாம்:"
 
-#: ../usermanual/preferences.rst:281
+#: ../usermanual/preferences.rst:276
 msgid ""
 "**none**: (default): disables strength checks and check for personal "
 "information,"
@@ -845,7 +837,7 @@ msgstr ""
 "**இல்லை**: (இயல்புநிலை): வலிமை சோதனைகளை முடக்குகிறது மற்றும் தனிப்பட்ட தகவலை "
 "சரிபார்க்கிறது,"
 
-#: ../usermanual/preferences.rst:282
+#: ../usermanual/preferences.rst:277
 msgid ""
 "**weaker**: enables check for personal information, only one of the rule is "
 "mandatory,"
@@ -853,23 +845,23 @@ msgstr ""
 "**பலவீனமானது**: தனிப்பட்ட தகவலைச் சரிபார்க்க உதவுகிறது, விதிகளில் ஒன்று மட்டுமே "
 "கட்டாயமாகும்,"
 
-#: ../usermanual/preferences.rst:283
+#: ../usermanual/preferences.rst:278
 msgid "**medium**: two rules are mandatory,"
 msgstr "**நடுத்தர**: இரண்டு விதிகள் கட்டாயம்,"
 
-#: ../usermanual/preferences.rst:284
+#: ../usermanual/preferences.rst:279
 msgid "**strong**: three rules are mandatory,"
 msgstr "**வலுவான**: மூன்று விதிகள் கட்டாயம்,"
 
-#: ../usermanual/preferences.rst:285
+#: ../usermanual/preferences.rst:280
 msgid "**very strong**: the four rules are mandatory."
 msgstr "**மிகவும் வலுவான**: நான்கு விதிகள் கட்டாயம்."
 
-#: ../usermanual/preferences.rst:288
+#: ../usermanual/preferences.rst:283
 msgid "Blacklisted passwords"
 msgstr "தடைப்பட்ட கடவுச்சொற்கள்"
 
-#: ../usermanual/preferences.rst:290
+#: ../usermanual/preferences.rst:285
 msgid ""
 "A default list of 500 common passwords is provided as a blacklist you can "
 "enable, \"galette\" is also blacklisted."
@@ -877,7 +869,7 @@ msgstr ""
 "500 பொதுவான கடவுச்சொற்களின் இயல்புநிலை பட்டியல் நீங்கள் செயல்படுத்தக்கூடிய "
 "தடுப்புப்பட்டியலாக வழங்கப்படுகிறது, \"கேலட்\" கூட தடுப்புப்பட்டியலில் சேர்க்கப்பட்டுள்ளது."
 
-#: ../usermanual/preferences.rst:294
+#: ../usermanual/preferences.rst:289
 msgid ""
 "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms "
 "(one per line). You can provide your own file, we advice you to complete the "
@@ -887,11 +879,11 @@ msgstr ""
 "ஒன்று) பட்டியலிடப் பயன்படுகிறது. உங்கள் சொந்த கோப்பை நீங்கள் வழங்கலாம், ஏற்கனவே உள்ளதை "
 "முடிக்க நாங்கள் உங்களுக்கு அறிவுறுத்துகிறோம்."
 
-#: ../usermanual/preferences.rst:297
+#: ../usermanual/preferences.rst:292
 msgid "Personal information as password"
 msgstr "கடவுச்சொல்லாக தனிப்பட்ட தகவல்கள்"
 
-#: ../usermanual/preferences.rst:299
+#: ../usermanual/preferences.rst:294
 msgid ""
 "This check rely on strength activation (all but **none** level). For the "
 "super-admin account, this will just ensure you are not using login as "
@@ -901,35 +893,35 @@ msgstr ""
 "சூப்பர்-நிர்வாகக் கணக்கிற்கு, நீங்கள் உள்நுழைவை கடவுச்சொல்லாகப் பயன்படுத்தவில்லை என்பதை இது "
 "உறுதி செய்யும். நிலையான கணக்குகளுக்கு, இதில் பல தகவல்கள் உள்ளன:"
 
-#: ../usermanual/preferences.rst:301
+#: ../usermanual/preferences.rst:296
 msgid "name,"
 msgstr "பெயர்,"
 
-#: ../usermanual/preferences.rst:302
+#: ../usermanual/preferences.rst:297
 msgid "surname,"
 msgstr "குடும்பப்பெயர்,"
 
-#: ../usermanual/preferences.rst:303
+#: ../usermanual/preferences.rst:298
 msgid "nickname,"
 msgstr "புனைப்பெயர்,"
 
-#: ../usermanual/preferences.rst:304
+#: ../usermanual/preferences.rst:299
 msgid "login,"
 msgstr "உள்நுழைய,"
 
-#: ../usermanual/preferences.rst:305
+#: ../usermanual/preferences.rst:300
 msgid "email,"
 msgstr "மின்னஞ்சல்,"
 
-#: ../usermanual/preferences.rst:306
+#: ../usermanual/preferences.rst:301
 msgid "birthdate,"
 msgstr "பிறந்த தேதி,"
 
-#: ../usermanual/preferences.rst:307
+#: ../usermanual/preferences.rst:302
 msgid "town"
 msgstr "நகரம்"
 
-#: ../usermanual/preferences.rst:309
+#: ../usermanual/preferences.rst:304
 msgid ""
 "Basically, user cannot use verbatim any of those information as password. "
 "Some possible combinations are also checked, like surname and name couple "
@@ -943,18 +935,18 @@ msgstr ""
 "பிறந்த தேதி வெவ்வேறு வடிவங்களிலும் (உள்ளூர், பன்னாட்டு மற்றும் சில மாறுபாடுகள்) "
 "சரிபார்க்கப்படும்."
 
-#: ../usermanual/preferences.rst:314
+#: ../usermanual/preferences.rst:309
 msgid "Two-factor authentication"
 msgstr ""
 
-#: ../usermanual/preferences.rst:318
+#: ../usermanual/preferences.rst:313
 msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change. It is disabled by default; nothing happens until "
 "you choose otherwise."
 msgstr ""
 
-#: ../usermanual/preferences.rst:320
+#: ../usermanual/preferences.rst:315
 msgid ""
 "A password is a single factor: whoever knows it is in. Two-factor "
 "authentication asks, right after the password, for a six digits code that "
@@ -962,27 +954,27 @@ msgid ""
 "phone or computer. A stolen password is then not enough anymore."
 msgstr ""
 
-#: ../usermanual/preferences.rst:322
+#: ../usermanual/preferences.rst:317
 msgid ""
 "Galette implements the TOTP standard (:rfc:`6238`), the one every "
 "authenticator application speaks; no third party service is involved, and "
 "nothing leaves your server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:324
+#: ../usermanual/preferences.rst:319
 msgid "Two policies are available:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:326
+#: ../usermanual/preferences.rst:321
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:327
+#: ../usermanual/preferences.rst:322
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 
-#: ../usermanual/preferences.rst:329
+#: ../usermanual/preferences.rst:324
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -992,7 +984,7 @@ msgid ""
 "once the optional policy has been used in the field."
 msgstr ""
 
-#: ../usermanual/preferences.rst:331
+#: ../usermanual/preferences.rst:326
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1002,7 +994,7 @@ msgid ""
 "browser, or after a year."
 msgstr ""
 
-#: ../usermanual/preferences.rst:335
+#: ../usermanual/preferences.rst:330
 msgid ""
 "Switching the policy back to **disabled** does not delete anything. Codes "
 "are no longer asked for, and the second factors already enabled start being "
@@ -1011,14 +1003,14 @@ msgid ""
 "enrolled then would never be asked for."
 msgstr ""
 
-#: ../usermanual/preferences.rst:337
+#: ../usermanual/preferences.rst:332
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
 "it <faq_2fa>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:339
+#: ../usermanual/preferences.rst:334
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1026,18 +1018,41 @@ msgid ""
 "member <member_2fa_reset>` who lost it."
 msgstr ""
 
-#: ../usermanual/preferences.rst:342
-msgid "Admin"
-msgstr "நிர்வாகி"
+#: ../usermanual/preferences.rst:337
+msgid "Super administrator credentials"
+msgstr ""
 
-#: ../usermanual/preferences.rst:346
+#: ../usermanual/preferences.rst:341
 msgid ""
-"This tab will be present only if you are logged in as super administrator."
-msgstr "நீங்கள் சூப்பர் அட்மினிச்ட்ரேட்டராக உள்நுழைந்திருந்தால் மட்டுமே இந்த டேப் இருக்கும்."
+"The super administrator login and password are no longer in the preferences. "
+"Once logged in as super administrator, go to **My account**, then **My "
+"information**. Galette asks for the current password before saving a new one."
+msgstr ""
 
-#: ../usermanual/preferences.rst:348
-msgid "Galette settings, admin tab"
-msgstr "கேலட் அமைப்புகள், நிர்வாக தாவல்"
+#: ../usermanual/preferences.rst:343
+msgid ""
+"Should that password be lost, it can be changed :ref:`from the command line "
+"<cli_superadmin_password>`."
+msgstr ""
+
+#~ msgid "**Logging**: handles internal history:"
+#~ msgstr "**பதிவு**: அக வரலாற்றைக் கையாளுகிறது:"
+
+#~ msgid "Enabled,"
+#~ msgstr "இயக்கப்பட்டது,"
+
+#~ msgid "Disabled,"
+#~ msgstr "முடக்கப்பட்டது,"
+
+#~ msgid "Admin"
+#~ msgstr "நிர்வாகி"
+
+#~ msgid ""
+#~ "This tab will be present only if you are logged in as super administrator."
+#~ msgstr "நீங்கள் சூப்பர் அட்மினிச்ட்ரேட்டராக உள்நுழைந்திருந்தால் மட்டுமே இந்த டேப் இருக்கும்."
+
+#~ msgid "Galette settings, admin tab"
+#~ msgstr "கேலட் அமைப்புகள், நிர்வாக தாவல்"
 
 #~ msgid ""
 #~ "**Using GMail as SMTP**: same as SMTP server, but GMail specific (will "
