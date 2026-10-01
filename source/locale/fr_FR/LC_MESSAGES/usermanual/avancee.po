@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 14:06+0200\n"
-"PO-Revision-Date: 2026-10-01 12:06+0000\n"
-"Last-Translator: alainP77 <alain.paris77@free.fr>\n"
+"PO-Revision-Date: 2026-10-01 12:20+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "advanced/fr/>\n"
 "Language: fr_FR\n"
@@ -263,6 +263,8 @@ msgid ""
 "Limits are in kilobytes; and displayed in the unit that fits, so the "
 "``2048`` above reads as *2 Mo*."
 msgstr ""
+"Les limites sont en kilooctets ; et affichées dans l'unité qui convient, de "
+"sorte que le ``2048`` ci-dessus se lise *2 Mo*."
 
 #: ../usermanual/avancee.rst:79
 msgid ""
@@ -559,7 +561,7 @@ msgstr "Vider la file d’attente des messages"
 
 #: ../usermanual/avancee.rst:194
 msgid "Use **one** drainer at a time!"
-msgstr ""
+msgstr "Utilisez **un** draineur à la fois !"
 
 #: ../usermanual/avancee.rst:196
 msgid ""
@@ -567,6 +569,9 @@ msgid ""
 "same moment, message would be sent twice - and that could cause other errors "
 "anyway."
 msgstr ""
+"Rien n'empêche deux d'entre eux de choisir les mêmes destinataires en "
+"attente au même moment, le message serait envoyé deux fois - et cela "
+"pourrait causer d'autres erreurs de toute façons."
 
 #: ../usermanual/avancee.rst:198
 msgid ""
@@ -586,6 +591,9 @@ msgid ""
 "time, but it requires that page to stay open. Two other drainers are "
 "provided, and neither needs anybody to be logged in."
 msgstr ""
+"La page de progression le fait depuis votre navigateur, ce qui est suffisant "
+"la plupart du temps, mais cela exige que cette page reste ouverte. Deux "
+"autres draineurs sont fournis, et aucun ne requiert un utilisateur connecté."
 
 #: ../usermanual/avancee.rst:202
 msgid "A cron script, next to the reminders one:"
@@ -603,6 +611,9 @@ msgid ""
 "is still in alpha. Add ``--force`` to skip the question, which is what a "
 "cron entry calling the command would need."
 msgstr ""
+"La commande demande la confirmation avant d'envoyer quoi que ce soit, "
+"puisque la fonction est toujours en alpha. Ajouter ``--force`` pour passer "
+"la question, ce qu'une entrée apellant un cron devrait avoir besoin."
 
 #: ../usermanual/avancee.rst:216
 msgid ""
@@ -611,6 +622,11 @@ msgid ""
 "than wait for the quota window to open again, so what is left goes out on "
 "the next run: calling them regularly is the whole point."
 msgstr ""
+"Les deux envoient lot après lot, en patientant le délai configuré entre deux "
+"messages, jusqu'à ce que la queue soit vide ou que le quota soit atteint. "
+"Ils s'arrêtent plutôt que d'attendre que la fenêtre de quotas s'ouvre à "
+"nouveau, donc ce qui reste sort à la prochaine exécution : les appeler "
+"régulièrement est le point clé."
 
 #: ../usermanual/avancee.rst:220
 msgid ""
@@ -619,6 +635,10 @@ msgid ""
 "``pref_galette_url`` from the :ref:`advanced configuration "
 "<advanced_config>`, or keep the ``GALETTE_URI`` constant."
 msgstr ""
+"Comme le script de rappel, ``cron/mailing_queue.php`` a besoin de l'adresse "
+"de votre instance, car il fonctionne sans requête entrante depuis laquelle "
+"le deviner. Défiissez ``pref_galette_url`` dans la :ref:`configuration "
+"avancée <advanced_config>`, ou conservez la constante ``GALETTE_URI``."
 
 #: ../usermanual/avancee.rst:225
 msgid "Advanced configuration"
