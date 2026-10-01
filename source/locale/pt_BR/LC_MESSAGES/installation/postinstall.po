@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2026-05-08 21:15+0000\n"
 "Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -113,22 +113,18 @@ msgstr ""
 "`GALETTE_LOGS_PATH`: Caminho dos logs do Galette, altere-o como desejar,"
 
 #: ../installation/postinstall.rst:38
-msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
-msgstr ""
-"`GALETTE_COMPILE_DIR`: caminho para a compilação do sistema de templates "
-"Smarty,"
-
-#: ../installation/postinstall.rst:39
-msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+#, fuzzy
+#| msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+msgid "`GALETTE_CACHE_DIR` : caching directory, including compiled templates,"
 msgstr "`GALETTE_CACHE_DIR`: diretório de cache para alguns casos,"
 
-#: ../installation/postinstall.rst:40
+#: ../installation/postinstall.rst:39
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
 "`GALETTE_EXPORTS_PATH`: caminho para o diretório onde serão armazenadas as "
 "exportações em CSV,"
 
-#: ../installation/postinstall.rst:41
+#: ../installation/postinstall.rst:40
 msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
@@ -136,8 +132,17 @@ msgstr ""
 "`GALETTE_IMPORTS_PATH`: caminho para o diretório que contém os arquivos CSV "
 "a serem importados,"
 
-#: ../installation/postinstall.rst:42
+#: ../installation/postinstall.rst:41
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgstr ""
+"`GALETTE_ATTACHMENTS_PATH`: caminho para os documentos anexados no e-mail,"
+
+#: ../installation/postinstall.rst:42
+#, fuzzy
+#| msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgid ""
+"`GALETTE_DOCUMENTS_PATH` : path to the :ref:`documents <documents>` of the "
+"association,"
 msgstr ""
 "`GALETTE_ATTACHMENTS_PATH`: caminho para os documentos anexados no e-mail,"
 
@@ -217,3 +222,9 @@ msgid ""
 "Whoever can write in your database or in your configuration file can turn it "
 "off. Keep both out of reach."
 msgstr ""
+
+#~ msgid ""
+#~ "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
+#~ msgstr ""
+#~ "`GALETTE_COMPILE_DIR`: caminho para a compilação do sistema de templates "
+#~ "Smarty,"

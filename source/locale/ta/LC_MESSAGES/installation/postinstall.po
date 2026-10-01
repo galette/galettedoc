@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-"
@@ -108,26 +108,32 @@ msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr "`கேலட் பதிவுகள் பாதை`: கேலட் பதிவுகள் பாதை, நீங்கள் விரும்பியபடி மாற்றவும்,"
 
 #: ../installation/postinstall.rst:38
-msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
-msgstr "`Galett_compile_dir`: ச்மார்டி வார்ப்புரு அமைப்பு தொகுப்புக்கான பாதை,"
-
-#: ../installation/postinstall.rst:39
-msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+#, fuzzy
+#| msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+msgid "`GALETTE_CACHE_DIR` : caching directory, including compiled templates,"
 msgstr "`Galett_cache_dir`: சில நிகழ்வுகளுக்கான தற்காலிக சேமிப்பு,"
 
-#: ../installation/postinstall.rst:40
+#: ../installation/postinstall.rst:39
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr "`கேலட் ஏற்றுமதி பாதை`: சி.எச்.வி ஏற்றுமதியை சேமிக்க கோப்பகத்திற்கான பாதை,"
 
-#: ../installation/postinstall.rst:41
+#: ../installation/postinstall.rst:40
 msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
 msgstr ""
 "`கேலட்_இம்போர்ட்ச்_பாத்`: இறக்குமதி செய்ய சி.எச்.வி கோப்புகளைக் கொண்ட கோப்பகத்திற்கான பாதை,"
 
-#: ../installation/postinstall.rst:42
+#: ../installation/postinstall.rst:41
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgstr "`Galett_attachments_path`: அஞ்சலில் இணைக்கப்பட்ட ஆவணங்களுக்கான பாதை,"
+
+#: ../installation/postinstall.rst:42
+#, fuzzy
+#| msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgid ""
+"`GALETTE_DOCUMENTS_PATH` : path to the :ref:`documents <documents>` of the "
+"association,"
 msgstr "`Galett_attachments_path`: அஞ்சலில் இணைக்கப்பட்ட ஆவணங்களுக்கான பாதை,"
 
 #: ../installation/postinstall.rst:43
@@ -206,3 +212,7 @@ msgid ""
 "Whoever can write in your database or in your configuration file can turn it "
 "off. Keep both out of reach."
 msgstr ""
+
+#~ msgid ""
+#~ "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
+#~ msgstr "`Galett_compile_dir`: ச்மார்டி வார்ப்புரு அமைப்பு தொகுப்புக்கான பாதை,"
