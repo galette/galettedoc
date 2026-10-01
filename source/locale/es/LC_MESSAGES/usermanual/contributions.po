@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 14:19+0200\n"
 "PO-Revision-Date: 2026-03-20 10:09+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -207,21 +207,12 @@ msgstr ""
 
 #: ../usermanual/contributions.rst:57
 msgid ""
-"Set a quota and they can no longer all go out at once. Galette then queues "
-"them and takes you to a progress page that sends them one after the other. "
-"The queue is stored in database, so closing the page loses nothing: come "
-"back to the reminders and the ones left go out. When the quota is reached, "
-"the page says so and stops; the rest is sent later."
-msgstr ""
-
-#: ../usermanual/contributions.rst:59
-msgid ""
 "Each reminder stays an individual message, written in the language of its "
 "recipient, either way. The quota counters are shared with mass mailings."
 msgstr ""
 
 # 359f9f9cb04048b2be635343d62117d2
-#: ../usermanual/contributions.rst:61
+#: ../usermanual/contributions.rst:59
 #, fuzzy
 #| msgid ""
 #| "Finally, it is possible to automate reminders with a cron task which will "
@@ -243,7 +234,7 @@ msgstr ""
 "documentación de tu sistema para saber como añadir un crontab) con el "
 "siguiente contenido:"
 
-#: ../usermanual/contributions.rst:67
+#: ../usermanual/contributions.rst:65
 msgid ""
 "The script queues the reminders that are due, then drains the queue itself, "
 "respecting the same limits. It stays silent unless something failed, so cron "
@@ -251,12 +242,12 @@ msgid ""
 msgstr ""
 
 # 84b9adcad74b4b2e893c64bee3afd9b3
-#: ../usermanual/contributions.rst:70
+#: ../usermanual/contributions.rst:68
 msgid "Invoices and receipts"
 msgstr "Facturas y recibos"
 
 # 6b3bf19d68c74d47be81faf4f499dd37
-#: ../usermanual/contributions.rst:72
+#: ../usermanual/contributions.rst:70
 msgid ""
 "In the contributions list, there is a PDF icon which is designed to generate "
 "invoice ou receipt for one contribution."
@@ -265,16 +256,16 @@ msgstr ""
 "generar facturas o recibos por cada contribución."
 
 # ceec7a0f90d144c9809df2985e412b13
-#: ../usermanual/contributions.rst:74
+#: ../usermanual/contributions.rst:72
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
 "Puedes personalizar el PDF utilizando los :ref:`modelos PDF <pdf_models>`."
 
-#: ../usermanual/contributions.rst:77
+#: ../usermanual/contributions.rst:75
 msgid "Scheduled payments"
 msgstr "Pagos planificados"
 
-#: ../usermanual/contributions.rst:81
+#: ../usermanual/contributions.rst:79
 msgid ""
 "It is possible to dispatch a contribution among one or several scheduled "
 "payments. All you have to do is to select \"Scheduled payment\" as payment "
@@ -286,11 +277,11 @@ msgstr ""
 "pago en tu contribución; Galette te propondrá crear un pago programado "
 "adjunto."
 
-#: ../usermanual/contributions.rst:83
+#: ../usermanual/contributions.rst:81
 msgid "Add scheduled payment to a contribution"
 msgstr "Añadir un pago programado a la contribución"
 
-#: ../usermanual/contributions.rst:88
+#: ../usermanual/contributions.rst:86
 msgid ""
 "By default, the entire remaining amount will be set into scheduled payment, "
 "but you can enter whatever you want. You can also select any payment type "
@@ -300,7 +291,7 @@ msgstr ""
 "programado, pero puedes introducir la que tú quieras. También puedes "
 "seleccionar cualquier tipo de pago (excepto pago programado)."
 
-#: ../usermanual/contributions.rst:90
+#: ../usermanual/contributions.rst:88
 msgid ""
 "When you edit a contribution that already has attached scheduled payments, "
 "you can see a summary, and you can also see list of entries."
@@ -308,21 +299,21 @@ msgstr ""
 "Cuando editas una contribución que ya tiene pagos programados adjuntos, "
 "puedes ver un resumen y ver una lista de entradas."
 
-#: ../usermanual/contributions.rst:92
+#: ../usermanual/contributions.rst:90
 msgid "Summary of scheduled payments"
 msgstr "Resumen de pagos programados"
 
-#: ../usermanual/contributions.rst:97
+#: ../usermanual/contributions.rst:95
 msgid "List of attached scheduled payments"
 msgstr "Lista de pagos programados adjuntos"
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:103
+#: ../usermanual/contributions.rst:101
 msgid "Transactions"
 msgstr "Transacciones"
 
 # 298370a00ae849bf80a4fb7c475062c1
-#: ../usermanual/contributions.rst:105
+#: ../usermanual/contributions.rst:103
 msgid ""
 "As seen in the example from this chapter introduction, a transaction is a "
 "global payment for a member."
@@ -331,37 +322,37 @@ msgstr ""
 "transacción es un pago global para un miembro."
 
 # 2d98112c0dcd42dd982a57bf123c8563
-#: ../usermanual/contributions.rst:107
+#: ../usermanual/contributions.rst:105
 msgid "Only a few information are required to add a new transaction:"
 msgstr "Para añadir una nueva transacción solo se necesitan unos pocos datos:"
 
 # 94dfcd796f1445078d43a595821819a9
-#: ../usermanual/contributions.rst:109
+#: ../usermanual/contributions.rst:107
 msgid "a description,"
 msgstr "una descripción,"
 
 # 9493c3f4a3394584a96f447b6c8d6050
-#: ../usermanual/contributions.rst:110
+#: ../usermanual/contributions.rst:108
 msgid "the originator,"
 msgstr "el autor,"
 
 # 619633b7ed2c4cf19e426436ec0be2cd
-#: ../usermanual/contributions.rst:111
+#: ../usermanual/contributions.rst:109
 msgid "the date (current date per default),"
 msgstr "la fecha (la fecha actual por defecto),"
 
 # a3502c3ca8c2439882c055f1d5cbb7c2
-#: ../usermanual/contributions.rst:112
+#: ../usermanual/contributions.rst:110
 msgid "the amount."
 msgstr "la cantidad."
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:114
+#: ../usermanual/contributions.rst:112
 msgid "Transactions list"
 msgstr "Lista de transacciones"
 
 # 88eee3021b8d42669046da8e2bd2da7d
-#: ../usermanual/contributions.rst:119
+#: ../usermanual/contributions.rst:117
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
 "transaction amount. A transaction has itself no effect on members due dates."
@@ -371,12 +362,12 @@ msgstr ""
 "fechas de vencimiento de los miembros."
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:121
+#: ../usermanual/contributions.rst:119
 msgid "Add a transaction"
 msgstr "Añadir una transacción"
 
 # 22d76e97ce854360a9feef7b0fad15dc
-#: ../usermanual/contributions.rst:126
+#: ../usermanual/contributions.rst:124
 msgid ""
 "After adding a new transaction, you will be redirected to a new contribution "
 "creation. If this new contribution does not dispatch the remaining amount of "
@@ -389,38 +380,38 @@ msgstr ""
 "galette te propondrá crear una nueva. Por defecto, el importe de una nueva "
 "contribución de una transacción será el importe restante de la transacción."
 
-#: ../usermanual/contributions.rst:128
+#: ../usermanual/contributions.rst:126
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr "Añadir una contribución enlazada a un transacción parcialmente enviada"
 
 # 594f726da80443dda2a7b32897d88a98
-#: ../usermanual/contributions.rst:133
+#: ../usermanual/contributions.rst:131
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr "Por supuesto, también es posible editar una transacción:"
 
 # f238d3991055468ca49a1181243183b0
-#: ../usermanual/contributions.rst:135
+#: ../usermanual/contributions.rst:133
 msgid "Transaction edition"
 msgstr "Edición de transacciones"
 
 # 610abfb3c2fc4af18c8a4b5689561e49
-#: ../usermanual/contributions.rst:140
+#: ../usermanual/contributions.rst:138
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
 msgstr ""
 "También puedes adjuntar una contribución existente en vez de crear una nueva."
 
-#: ../usermanual/contributions.rst:142
+#: ../usermanual/contributions.rst:140
 msgid "Add an already existing contribution to a transaction"
 msgstr "Añadir una contribución existente a una transacción"
 
 # e32535dd4a574da2b536e8daa5eb7722
-#: ../usermanual/contributions.rst:150
+#: ../usermanual/contributions.rst:148
 msgid "Members selection"
 msgstr "Selección de miembros"
 
 # 0218d6b1ad2e4b5894e373d502837732
-#: ../usermanual/contributions.rst:154
+#: ../usermanual/contributions.rst:152
 msgid ""
 "The dropdown list to choose a member is available from contributions and "
 "transactions (as well as from several plugins) displays only a few members, "
@@ -430,11 +421,11 @@ msgstr ""
 "pantallas de contribuciones y transacciones (así como para varios "
 "complementos) solo para unos pocos miembros, por motivos de rendimiento."
 
-#: ../usermanual/contributions.rst:156
+#: ../usermanual/contributions.rst:154
 msgid "Dropdown members list"
 msgstr "Lista desplegable de miembros"
 
-#: ../usermanual/contributions.rst:160
+#: ../usermanual/contributions.rst:158
 msgid ""
 "You can display more members using arrow buttons or entering any text (this "
 "will search in first name, last name and identifiers)."
