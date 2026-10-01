@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -155,15 +155,20 @@ msgstr ""
 "அனைத்து வடிப்பான்களையும் ஒருங்கிணைத்து, உங்கள் செயலில் உள்ள உறுப்பினர்களின் மின்னஞ்சல் "
 "முகவரி மற்றும் \"a\" உள்ள பெயரைக் கொண்டவர்களைத் தேடும் திறனை உங்களுக்கு வழங்குகிறது."
 
-#: ../usermanual/recherche.rst:54 ../usermanual/recherche.rst:63
+#: ../usermanual/recherche.rst:54 ../usermanual/recherche.rst:64
 msgid "Advanced search"
 msgstr "மேம்பட்ட தேடல்"
 
 #: ../usermanual/recherche.rst:56
+#, fuzzy
+#| msgid ""
+#| "Advanced search can be found in the main menu and propose an certain "
+#| "amount of fields types, related to members or their membership. The "
+#| "screen is separated into four parts (you can reduce individually):"
 msgid ""
 "Advanced search can be found in the main menu and propose an certain amount "
 "of fields types, related to members or their membership. The screen is "
-"separated into four parts (you can reduce individually):"
+"separated into five parts (you can reduce individually):"
 msgstr ""
 "மேம்பட்ட தேடலை முதன்மை பட்டியலில் காணலாம் மற்றும் உறுப்பினர்கள் அல்லது அவர்களின் உறுப்பினர் "
 "தொடர்பான குறிப்பிட்ட அளவு புல வகைகளை முன்மொழியலாம். திரை நான்கு பகுதிகளாக "
@@ -182,24 +187,38 @@ msgstr ""
 "**மேம்பட்ட தேடல்** உறுப்பினர்களுக்குப் பயன்படக்கூடிய கூடுதல் புலங்களை முன்மொழிகிறது,"
 
 #: ../usermanual/recherche.rst:60
-msgid "**search in contributions** allowing search on members contributions,"
-msgstr "** பங்களிப்புகளில் தேடுங்கள்** உறுப்பினர் பங்களிப்புகளை தேட அனுமதிக்கிறது,"
+msgid ""
+"**advanced groups search** (experimental) which allow to search members "
+"belonging to all, or to any, of several selected groups,"
+msgstr ""
 
 #: ../usermanual/recherche.rst:61
+#, fuzzy
+#| msgid ""
+#| "**search in contributions** allowing search on members contributions,"
+msgid "**within contributions** allowing search on members contributions,"
+msgstr "** பங்களிப்புகளில் தேடுங்கள்** உறுப்பினர் பங்களிப்புகளை தேட அனுமதிக்கிறது,"
+
+#: ../usermanual/recherche.rst:62
+#, fuzzy
+#| msgid ""
+#| "**free search** which allow to select any member field possible, "
+#| "including dynamic fields, and which will automatically adapt to selected "
+#| "field. You can add and remove lines to refine search."
 msgid ""
-"**free search** which allow to select any member field possible, including "
-"dynamic fields, and which will automatically adapt to selected field. You "
-"can add and remove lines to refine search."
+"**free search** (experimental) which allow to select any member field "
+"possible, including dynamic fields, and which will automatically adapt to "
+"selected field. You can add and remove lines to refine search."
 msgstr ""
 "**இலவச தேடல்** இது மாறும் புலங்கள் உட்பட சாத்தியமான எந்த உறுப்பினர் புலத்தையும் "
 "தேர்ந்தெடுக்க அனுமதிக்கிறது, மேலும் இது தேர்ந்தெடுக்கப்பட்ட புலத்திற்கு தானாகவே "
 "மாற்றியமைக்கும். தேடலைச் செம்மைப்படுத்த வரிகளைச் சேர்க்கலாம் மற்றும் அகற்றலாம்."
 
-#: ../usermanual/recherche.rst:69
+#: ../usermanual/recherche.rst:70
 msgid "Saved searches"
 msgstr "சேமித்த தேடல்கள்"
 
-#: ../usermanual/recherche.rst:73
+#: ../usermanual/recherche.rst:74
 msgid ""
 "Every search on members can be stored (with a name) in order to be executed "
 "again later. They are accessible only for their author."
@@ -207,7 +226,7 @@ msgstr ""
 "உறுப்பினர்கள் மீதான ஒவ்வொரு தேடலும் பின்னர் மீண்டும் செயல்படுத்தப்படுவதற்காக (பெயருடன்) "
 "சேமிக்கப்படும். அவை அவற்றின் ஆசிரியருக்கு மட்டுமே அணுகக்கூடியவை."
 
-#: ../usermanual/recherche.rst:75
+#: ../usermanual/recherche.rst:76
 msgid ""
 "After you proceed a search (\"simple\" or \"advanced\"), just click on the "
 "\"Save\" button, and pick up a name."
@@ -215,19 +234,19 @@ msgstr ""
 "நீங்கள் தேடலைத் தொடர்ந்த பிறகு (\"எளிய\" அல்லது \"மேம்பட்ட\"), \"சேமி\" பொத்தானைக் "
 "சொடுக்கு செய்து, ஒரு பெயரைத் தேர்ந்தெடுக்கவும்."
 
-#: ../usermanual/recherche.rst:77
+#: ../usermanual/recherche.rst:78
 msgid "Save a search"
 msgstr "தேடலைச் சேமிக்கவும்"
 
-#: ../usermanual/recherche.rst:82
+#: ../usermanual/recherche.rst:83
 msgid "You can find saved searches in the list:"
 msgstr "பட்டியலில் சேமித்த தேடல்களை நீங்கள் காணலாம்:"
 
-#: ../usermanual/recherche.rst:84
+#: ../usermanual/recherche.rst:85
 msgid "Searches list"
 msgstr "தேடல் பட்டியல்"
 
-#: ../usermanual/recherche.rst:89
+#: ../usermanual/recherche.rst:90
 msgid ""
 "From this list, you will be able to remove or execute again searches, and "
 "also see a detail of used criteria."
