@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 18:57+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2026-07-16 06:23+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -36,30 +36,23 @@ msgid "PHP 8.3 or more recent,"
 msgstr "PHP 8.3 ali novejši,"
 
 #: ../installation/prerequis.rst:15
-msgid "`gd` PHP module,"
-msgstr "PHP modul `gd`,"
+msgid ""
+"`ctype`, `dom`, `fileinfo`, `filter`, `gd`, `gettext`, `iconv`, `intl`, "
+"`mbstring` and `session`,"
+msgstr ""
 
 #: ../installation/prerequis.rst:16
-msgid "`PDO` module and `mysql` ou `postgresql` for PDO,"
-msgstr "Modul `PDO` in `mysql` ali `postgresql` za PDO,"
+msgid "`PDO`, with `pdo_mysql` or `pdo_pgsql` depending on your database,"
+msgstr ""
 
 #: ../installation/prerequis.rst:17
-msgid "`curl` PHP module,"
-msgstr "PHP modul `curl`,"
-
-#: ../installation/prerequis.rst:18
-msgid "`intl` PHP module,"
-msgstr "PHP modul `intl`,"
+msgid ""
+"`curl` and `openssl` are recommended, but not required (`curl` is for "
+"example used to call a :ref:`post contribution script <man_preferences>` "
+"over HTTP)."
+msgstr ""
 
 #: ../installation/prerequis.rst:19
-msgid "SSL support,"
-msgstr "Podpora za SSL,"
-
-#: ../installation/prerequis.rst:20
-msgid "`gettext` PHP module (optional)."
-msgstr "PHP modul `gettext` (neobvezno)."
-
-#: ../installation/prerequis.rst:22
 msgid ""
 "A database server, `MariaDB <https://mariadb.org>`_ 10.5 minimum (or MySQL "
 "8.0 minimum), or `PostgreSQL <https://postgresql.org>`_ 13 minimum."
@@ -67,7 +60,12 @@ msgstr ""
 "Strežnik podatkovnih baz, `MariaDB <https://mariadb.org>`_ najmanj 10.5 (ali "
 "MySQL najmanj 8.0) ali `PostgreSQL <https://postgresql.org>`_ najmanj 13."
 
-#: ../installation/prerequis.rst:24
+#: ../installation/prerequis.rst:21
+msgid ""
+"A recent web browser with Javascript enabled is also required to use Galette."
+msgstr ""
+
+#: ../installation/prerequis.rst:23
 msgid ""
 "Galette is tested continuously with recent versions of these components. If "
 "you encounter issues with a recent version, please let us know ;)"
@@ -75,14 +73,32 @@ msgstr ""
 "Galette se nenehno testira z novejšimi različicami teh komponent. Če "
 "naletite na težave z novejšo različico, nam to sporočite ;)"
 
-#: ../installation/prerequis.rst:26
+#: ../installation/prerequis.rst:25
 msgid "Galette does not work on the following hostings:"
 msgstr "Galette ne deluje na naslednjih gostovanjih:"
 
-#: ../installation/prerequis.rst:28
+#: ../installation/prerequis.rst:27
 msgid "Free,"
 msgstr "Brezplačno,"
 
-#: ../installation/prerequis.rst:29
+#: ../installation/prerequis.rst:28
 msgid "Olympe Networks."
 msgstr "Olympe Networks."
+
+#~ msgid "`gd` PHP module,"
+#~ msgstr "PHP modul `gd`,"
+
+#~ msgid "`PDO` module and `mysql` ou `postgresql` for PDO,"
+#~ msgstr "Modul `PDO` in `mysql` ali `postgresql` za PDO,"
+
+#~ msgid "`curl` PHP module,"
+#~ msgstr "PHP modul `curl`,"
+
+#~ msgid "`intl` PHP module,"
+#~ msgstr "PHP modul `intl`,"
+
+#~ msgid "SSL support,"
+#~ msgstr "Podpora za SSL,"
+
+#~ msgid "`gettext` PHP module (optional)."
+#~ msgstr "PHP modul `gettext` (neobvezno)."
