@@ -1,4 +1,5 @@
 .. include:: /globals.rst
+   :start-after: :orphan:
 
 .. _preparation:
 

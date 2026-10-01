@@ -3,6 +3,7 @@ Installation
 ************
 
 .. include:: /globals.rst
+   :start-after: :orphan:
 
 Galette installation is a web based process (once :doc:`preparation steps <preparation>` are done). Go to http://localhost/galette. :doc:`Update process <update>` is documented separately.
 
