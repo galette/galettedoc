@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2026-05-06 11:42+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
@@ -34,25 +34,32 @@ msgstr ""
 "algunas tareas. Se puede acceder a ella a través del script ``bin/console`` "
 "en el directorio raíz de Galette:"
 
-#: ../command-line.rst:38
+#: ../command-line.rst:48
+msgid ""
+"Some of those commands are meant for developers only (``galette:check-"
+"routes``, ``galette:headers:check``, ``galette:seed-fixtures``, "
+"``galette:twig-pot-references``), and are not described here."
+msgstr ""
+
+#: ../command-line.rst:50
 msgid ""
 "You can obtain help for a specific command by using the ``help`` command:"
 msgstr ""
 "Puedes obtener ayuda para un comando específico utilizando el comando "
 "``help``:"
 
-#: ../command-line.rst:41
+#: ../command-line.rst:57
 msgid "Requirements check"
 msgstr ""
 
-#: ../command-line.rst:43
+#: ../command-line.rst:59
 msgid ""
 "This only check for Galette prerequisites, and has no specific arguments."
 msgstr ""
 "Solo comprueba los requisitos previos de Galette y no tiene argumentos "
 "específicos."
 
-#: ../command-line.rst:47
+#: ../command-line.rst:63
 msgid ""
 "On some systems, PHP configuration may differ between cli and web; therefore "
 "it's recommended to check for requirements from the web script "
@@ -62,15 +69,15 @@ msgstr ""
 "web; por lo tanto, se recomienda verificar los requisitos en el script web "
 "``compat_test.php``."
 
-#: ../command-line.rst:50
+#: ../command-line.rst:66
 msgid "Install"
 msgstr "Install"
 
-#: ../command-line.rst:52
+#: ../command-line.rst:68
 msgid "This command obviously installs Galette :)"
 msgstr "Este comando obviamente instala Galette :)"
 
-#: ../command-line.rst:81
+#: ../command-line.rst:97
 msgid ""
 "By default, the script will check for an existing configuration file, you "
 "can ignore that using the ``--ignore-config`` option."
@@ -78,7 +85,7 @@ msgstr ""
 "De forma predeterminada, el script buscará un archivo de configuración "
 "existente; puede ignorarlo utilizando la opción ``--ignore-config``."
 
-#: ../command-line.rst:83
+#: ../command-line.rst:99
 msgid ""
 "Required options that have not been provided on script call will be asked "
 "interactively."
@@ -86,26 +93,26 @@ msgstr ""
 "Las opciones requeridas que no se hayan proporcionado en la llamada de "
 "script se preguntarán de forma interactiva."
 
-#: ../command-line.rst:131
+#: ../command-line.rst:149
 msgid "Super administrator password"
 msgstr ""
 
-#: ../command-line.rst:135
+#: ../command-line.rst:153
 msgid ""
-"The super administrator password is normally changed from "
-"the :ref:`preferences <man_preferences>`, or from the :ref:`advanced "
-"configuration <advanced_config>` page. Both require to be logged in, which "
-"is of little help the day the password is lost: the super administrator is "
-"not a member, so it cannot use the *forgotten password* form either."
+"The super administrator password is normally changed from **My account**, "
+"then **My information**, or from the :ref:`advanced configuration "
+"<advanced_config>` page. Both require to be logged in, which is of little "
+"help the day the password is lost: the super administrator is not a member, "
+"so it cannot use the *forgotten password* form either."
 msgstr ""
 
-#: ../command-line.rst:137
+#: ../command-line.rst:155
 msgid ""
 "This command is the way back in. It runs on the machine hosting Galette, and "
 "that access stands as the authentication."
 msgstr ""
 
-#: ../command-line.rst:157
+#: ../command-line.rst:175
 msgid ""
 "There is no option to pass the password with: it is only ever read from a "
 "hidden prompt, so that it does not end up in your shell history nor in the "
@@ -113,77 +120,84 @@ msgid ""
 "match."
 msgstr ""
 
-#: ../command-line.rst:176
+#: ../command-line.rst:194
 msgid ""
 "The login is displayed so you know which account you just changed, but the "
-"command does not touch it. Change it from the preferences, as usual."
+"command does not touch it. Change it from **My account**, then **My "
+"information**, as usual."
 msgstr ""
 
-#: ../command-line.rst:178
+#: ../command-line.rst:196
 msgid ""
 "The new password must satisfy the :ref:`password rules <password_rules>` of "
-"your instance, exactly as it would from the preferences page."
+"your instance, exactly as it would from the web interface."
 msgstr ""
 
-#: ../command-line.rst:183
+#: ../command-line.rst:201
 msgid "Mailing queue"
 msgstr ""
 
-#: ../command-line.rst:187
+#: ../command-line.rst:205
 msgid ""
 "When :ref:`sending limits <mail_throttling>` are configured, mass mailings "
 "and reminders are queued rather than sent in one go. This command drains "
 "what is pending:"
 msgstr ""
 
-#: ../command-line.rst:202
+#: ../command-line.rst:220
 msgid ""
 "Nothing is sent until that question is answered. Pass ``--force`` to skip "
 "it, which is what an unattended run needs: without it, a non-interactive "
 "call has no way to confirm and stops with an error rather than send."
 msgstr ""
 
-#: ../command-line.rst:208
+#: ../command-line.rst:226
 msgid ""
 "For more complete documentation, see :ref:`draining the mail queue "
 "<mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it "
 "drains alongside."
 msgstr ""
 
-#: ../command-line.rst:211
+#: ../command-line.rst:229
 msgid "Plugins commands"
 msgstr "Comandos de los plugins"
 
-#: ../command-line.rst:213
+#: ../command-line.rst:231
 msgid ""
 "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
 "Puede enumerar los plugins existentes utilizando el comando "
 "``galette:plugins:list``:"
 
-#: ../command-line.rst:230
+#: ../command-line.rst:248
 msgid "Available commands are:"
 msgstr "Los comandos disponibles son:"
 
-#: ../command-line.rst:232
-msgid "``galette:plugin:disable``: disable a plugin"
+#: ../command-line.rst:250
+#, fuzzy
+#| msgid "``galette:plugin:disable``: disable a plugin"
+msgid "``galette:plugins:disable``: disable a plugin"
 msgstr "``galette:plugin:disable``: desactivar un plugin"
 
-#: ../command-line.rst:233
-msgid "``galette:plugin:enable``: enable a plugin"
+#: ../command-line.rst:251
+#, fuzzy
+#| msgid "``galette:plugin:enable``: enable a plugin"
+msgid "``galette:plugins:enable``: enable a plugin"
 msgstr "``galette:plugin:enable``: activar un plugin"
 
-#: ../command-line.rst:234
-msgid "``galette:plugin:install-db``: install a plugin database"
+#: ../command-line.rst:252
+#, fuzzy
+#| msgid "``galette:plugin:install-db``: install a plugin database"
+msgid "``galette:plugins:install-db``: install a plugin database"
 msgstr "``galette:plugin:install-db``: instala la base de datos de un plugin"
 
-#: ../command-line.rst:238
+#: ../command-line.rst:256
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 "¡La instalación de la base de datos del plugin borrará todas las tablas "
 "existentes para este plugin!"
 
-#: ../command-line.rst:240
+#: ../command-line.rst:258
 msgid ""
 "For every plugin related command, you can precise which plugin(s) you want "
 "to act on, use the ``--all`` flag or either rely on interactive mode:"
