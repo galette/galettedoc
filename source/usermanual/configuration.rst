@@ -125,16 +125,16 @@ Defaults are provided, but you can change them.
 
 An email will be send to member when:
 
-* he self subscribes. This mail contains authentication information,
-* his card is added or edited by someone else (if the corresponding box is checked),
-* he uses lost password feature,
-* a new contribution is attache to his account (if the corresponding box is checked).
+* they register on their own. This mail contains authentication information,
+* their card is added or edited by someone else (if the corresponding box is checked),
+* they use the lost password feature,
+* a new contribution is attached to their account (if the corresponding box is checked).
 
 An email will be send to administrators when:
 
-* a new member is added or self subscribes,
-* a new contribution is attached to his account.
+* a new member is added or registers on their own,
+* a new contribution is attached to a member account.
 
-Of course, emails will be sent only if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditioned on a checkbox from the user interface, excepting for self subscription messages that will always be send.
+Of course, emails will be sent only if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditioned on a checkbox from the user interface, excepting for self registration messages that will always be send.
 
 Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more.

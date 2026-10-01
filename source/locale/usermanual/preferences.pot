@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,561 +153,549 @@ msgid "go to main page,"
 msgstr ""
 
 #: ../usermanual/preferences.rst:67
-msgid "**Logging**: handles internal history:"
-msgstr ""
-
-#: ../usermanual/preferences.rst:69
-msgid "Enabled,"
-msgstr ""
-
-#: ../usermanual/preferences.rst:70
-msgid "Disabled,"
-msgstr ""
-
-#: ../usermanual/preferences.rst:72
 msgid "**Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:73
+#: ../usermanual/preferences.rst:68
 msgid "**Default account filter**: default account filter to apply on members list,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:74
+#: ../usermanual/preferences.rst:69
 msgid "**Default membership extension**: membership extension in months,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:75
+#: ../usermanual/preferences.rst:70
 msgid "**Beginning of membership**: beginning date of the financial period,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:76
+#: ../usermanual/preferences.rst:71
 msgid "**Public pages enabled**: enable or disable public pages,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:77
+#: ../usermanual/preferences.rst:72
 msgid "**Show public pages for**: defines who can see public pages:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:79
+#: ../usermanual/preferences.rst:74
 msgid "**Everyone**, including simple visitors,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:80
+#: ../usermanual/preferences.rst:75
 msgid "**Up to date members**,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:81
+#: ../usermanual/preferences.rst:76
 msgid "**Administrators and staff members**,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:83
-msgid "**Self subscription enabled**: enable or disable self subscription feature,"
+#: ../usermanual/preferences.rst:78
+msgid "**Self registration enabled**: enable or disable self registration feature,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:84
+#: ../usermanual/preferences.rst:79
 msgid "**Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:86
+#: ../usermanual/preferences.rst:81
 msgid "**galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:87
+#: ../usermanual/preferences.rst:82
 msgid "**get://** or **post://**: use HTTP GET or POST method to call a web address, prefix will be replaced with ``http://``,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:88
+#: ../usermanual/preferences.rst:83
 msgid "**file://**: call a file on the web server, full path must be provided. Destination script must be executable, and should define a shellbang if necessary. An email that contains contribution information and script return (if any) will be sent to the administrator if an error occurs. The behavior is the same as cron : if the script outputs something, a mail is sent."
 msgstr ""
 
-#: ../usermanual/preferences.rst:92
+#: ../usermanual/preferences.rst:87
 msgid "Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsibility**."
 msgstr ""
 
-#: ../usermanual/preferences.rst:94
+#: ../usermanual/preferences.rst:89
 msgid "**Appearance** : these settings allow you to adapt the default appearance of Galette to your needs."
 msgstr ""
 
-#: ../usermanual/preferences.rst:96
+#: ../usermanual/preferences.rst:91
 msgid "**Hide default background image** : hide the image used as a background on private pages, on modal windows headers, and on public page headers."
 msgstr ""
 
-#: ../usermanual/preferences.rst:97
+#: ../usermanual/preferences.rst:92
 msgid "**Apply custom colors**: enable or disable usage of following color parameters:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:99
+#: ../usermanual/preferences.rst:94
 msgid "**Primary color**: applied to primary buttons, checkboxes, labels, headers, borders, and menus."
 msgstr ""
 
-#: ../usermanual/preferences.rst:100
+#: ../usermanual/preferences.rst:95
 msgid "**Text on primary color**: applied to text displayed over the *Primary color*."
 msgstr ""
 
-#: ../usermanual/preferences.rst:101
+#: ../usermanual/preferences.rst:96
 msgid "**Secondary color**: applied to active items in menus, paginations, and accordions views."
 msgstr ""
 
-#: ../usermanual/preferences.rst:102
+#: ../usermanual/preferences.rst:97
 msgid "**Text on secondary color**: applied to text displayed over the *Secondary color*."
 msgstr ""
 
-#: ../usermanual/preferences.rst:104
+#: ../usermanual/preferences.rst:99
 msgid "**RSS feed URL**: link to the RSS feed to display on dashboard,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:105
+#: ../usermanual/preferences.rst:100
 msgid "**Galette base URL**: Galette instance URL, if the one proposed is incorrect,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:109
+#: ../usermanual/preferences.rst:104
 msgid "This URL should be changed only if there are issues, this may cause instability."
 msgstr ""
 
-#: ../usermanual/preferences.rst:111
+#: ../usermanual/preferences.rst:106
 msgid "A contextual help is provided, check it for more information."
 msgstr ""
 
-#: ../usermanual/preferences.rst:116
+#: ../usermanual/preferences.rst:111
 msgid "Rights"
 msgstr ""
 
-#: ../usermanual/preferences.rst:118
+#: ../usermanual/preferences.rst:113
 msgid "Define few extra rights:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:120
+#: ../usermanual/preferences.rst:115
 msgid "**Can members create child?** if you enable this settings, any logged in member can create another members that will be attached to him as children."
 msgstr ""
 
-#: ../usermanual/preferences.rst:121
+#: ../usermanual/preferences.rst:116
 msgid "**Can group managers edit their groups?** groups manager can edit their owned groups information (name, parent, order)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:122
+#: ../usermanual/preferences.rst:117
 msgid "**Can group managers create members?** groups managers can create members attached to their groups."
 msgstr ""
 
-#: ../usermanual/preferences.rst:123
+#: ../usermanual/preferences.rst:118
 msgid "**Can group managers edit members?** groups managers can edit member of their groups information."
 msgstr ""
 
-#: ../usermanual/preferences.rst:124
+#: ../usermanual/preferences.rst:119
 msgid "**Can group managers send mailings?** groups manager can send mailings."
 msgstr ""
 
-#: ../usermanual/preferences.rst:125
+#: ../usermanual/preferences.rst:120
 msgid "**Can group managers do exports?** groups managers can export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups."
 msgstr ""
 
-#: ../usermanual/preferences.rst:126
+#: ../usermanual/preferences.rst:121
 msgid "**Can group managers see contributions?** groups managers can see contributions of members of their groups."
 msgstr ""
 
-#: ../usermanual/preferences.rst:127
+#: ../usermanual/preferences.rst:122
 msgid "**Can group managers create contributions?** groups managers can create contributions on behalf of members of their groups."
 msgstr ""
 
-#: ../usermanual/preferences.rst:128
+#: ../usermanual/preferences.rst:123
 msgid "**Can group managers see transactions?** groups managers can see transactions of members of their groups."
 msgstr ""
 
-#: ../usermanual/preferences.rst:129
+#: ../usermanual/preferences.rst:124
 msgid "**Can group managers create transactions?** groups managers can create transactions on behalf of members of their groups."
 msgstr ""
 
-#: ../usermanual/preferences.rst:131
+#: ../usermanual/preferences.rst:126
 msgid "Galette settings, rights tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:137
+#: ../usermanual/preferences.rst:132
 msgid "E-Mail"
 msgstr ""
 
-#: ../usermanual/preferences.rst:139
+#: ../usermanual/preferences.rst:134
 msgid "Sending email parameters:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:141
+#: ../usermanual/preferences.rst:136
 msgid "Galette settings, e-mail tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:146
+#: ../usermanual/preferences.rst:141
 msgid "**Sender name**: name of the sender,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:147
+#: ../usermanual/preferences.rst:142
 msgid "**Sender email**: email address of the sender,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:148
+#: ../usermanual/preferences.rst:143
 msgid "**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:149
+#: ../usermanual/preferences.rst:144
 msgid "**Members administrator email**: email address on which inscription notifications will be send, you can set several addresses separated with comas,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:150
+#: ../usermanual/preferences.rst:145
 msgid "**Send emails to administrators**: whether to send emails to administrators on subscription,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:151
+#: ../usermanual/preferences.rst:146
 msgid "**Wrap text emails**: automatically wraps long lines in emails. If you disable this options, make sure to wrap yourself,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:152
+#: ../usermanual/preferences.rst:147
 msgid "**Send emails to members**: whether to send emails to members when their information are updated or a contribution is created on their behalf,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:153
+#: ../usermanual/preferences.rst:148
 msgid "**Activate HTML editor**: activate HTML format when sending emails (discouraged),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:154
+#: ../usermanual/preferences.rst:149
 msgid "**Emailing method**: method used to send emails:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:156
+#: ../usermanual/preferences.rst:151
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:157
+#: ../usermanual/preferences.rst:152
 msgid "**PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:158
+#: ../usermanual/preferences.rst:153
 msgid "**Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:159
+#: ../usermanual/preferences.rst:154
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:161
+#: ../usermanual/preferences.rst:156
 msgid "**Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application."
 msgstr ""
 
-#: ../usermanual/preferences.rst:165
+#: ../usermanual/preferences.rst:160
 msgid "The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated."
 msgstr ""
 
-#: ../usermanual/preferences.rst:166
+#: ../usermanual/preferences.rst:161
 msgid "The **GMail** method has been removed. Instances still configured with it are switched to ``SMTP`` when the database is updated."
 msgstr ""
 
-#: ../usermanual/preferences.rst:168
+#: ../usermanual/preferences.rst:163
 msgid "When using SMTP, you will have to configure user name and password to use."
 msgstr ""
 
-#: ../usermanual/preferences.rst:170
+#: ../usermanual/preferences.rst:165
 msgid "SMTP configuration is a bit more complex :"
 msgstr ""
 
-#: ../usermanual/preferences.rst:172
+#: ../usermanual/preferences.rst:167
 msgid "**SMTP server**: server address, required,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:173
+#: ../usermanual/preferences.rst:168
 msgid "**SMTP port**: server port, required,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:174
+#: ../usermanual/preferences.rst:169
 msgid "**Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:175
+#: ../usermanual/preferences.rst:170
 msgid "**Use TLS for SMTP**: enable SSL support,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:176
+#: ../usermanual/preferences.rst:171
 msgid "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:181
+#: ../usermanual/preferences.rst:176
 msgid "Sending limits"
 msgstr ""
 
-#: ../usermanual/preferences.rst:187
+#: ../usermanual/preferences.rst:182
 msgid "This is an **experimental** feature."
 msgstr ""
 
-#: ../usermanual/preferences.rst:189
+#: ../usermanual/preferences.rst:184
 msgid "Try it on a test instance before your production one, watch carefully, and `report what you find <https://bugs.galette.eu>`_. Leaving the settings at their default keeps Galette sending exactly as it always did."
 msgstr ""
 
-#: ../usermanual/preferences.rst:191
+#: ../usermanual/preferences.rst:186
 msgid "Mail servers are rarely willing to accept anything you throw at them. They restrict the number of recipients a single message may carry, the number of messages a connection may carry, or the number of messages you may send per hour or per day. Galette can respect those restrictions, from five settings of the :ref:`advanced configuration <advanced_config>` page:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:193
+#: ../usermanual/preferences.rst:188
 msgid "``pref_mail_batch_size``: maximum number of recipients per message. ``0``, the default, keeps the historical behavior: one single message carrying every recipient in blind copy,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:194
+#: ../usermanual/preferences.rst:189
 msgid "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by default, no pause,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:195
+#: ../usermanual/preferences.rst:190
 msgid "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, the default, means no limit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:196
+#: ../usermanual/preferences.rst:191
 msgid "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the default, means no limit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:197
+#: ../usermanual/preferences.rst:192
 msgid "``pref_mail_smtp_keepalive``: keep the SMTP connection open across the messages of a mailing instead of reconnecting for each one. Enabled by default."
 msgstr ""
 
-#: ../usermanual/preferences.rst:199
+#: ../usermanual/preferences.rst:194
 msgid "Apart from the keepalive, they all ship disabled: an instance that is updated behaves exactly as it did before."
 msgstr ""
 
-#: ../usermanual/preferences.rst:201
+#: ../usermanual/preferences.rst:196
 msgid "Filter the advanced configuration on ``pref_mail_`` to get them all, next to the SMTP settings. The four that drive the queue carry the **alpha** marker:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:203
+#: ../usermanual/preferences.rst:198
 msgid "The sending limits, in the advanced configuration"
 msgstr ""
 
-#: ../usermanual/preferences.rst:208
+#: ../usermanual/preferences.rst:203
 msgid "Refer to your mail provider's documentation for the values to use, along with the SMTP settings."
 msgstr ""
 
-#: ../usermanual/preferences.rst:212
+#: ../usermanual/preferences.rst:207
 msgid "The hourly and daily limits are what turns sending into a :ref:`queue <mailing_queue>`: as soon as one of them is set, a mailing can no longer be sent in a single page load."
 msgstr ""
 
-#: ../usermanual/preferences.rst:216
+#: ../usermanual/preferences.rst:211
 msgid "Limits count **recipients**, not messages, and for all messages Galette send."
 msgstr ""
 
-#: ../usermanual/preferences.rst:218
+#: ../usermanual/preferences.rst:213
 msgid "The real limit of course depends on all usages of configured server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:221
+#: ../usermanual/preferences.rst:216
 msgid "Labels"
 msgstr ""
 
-#: ../usermanual/preferences.rst:223
+#: ../usermanual/preferences.rst:218
 msgid "Galette settings, labels tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:229
+#: ../usermanual/preferences.rst:224
 msgid "Cards"
 msgstr ""
 
-#: ../usermanual/preferences.rst:231
+#: ../usermanual/preferences.rst:226
 msgid "Galette settings, cards tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:239
+#: ../usermanual/preferences.rst:234
 msgid "Security"
 msgstr ""
 
-#: ../usermanual/preferences.rst:245
+#: ../usermanual/preferences.rst:240
 msgid "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 
-#: ../usermanual/preferences.rst:247
+#: ../usermanual/preferences.rst:242
 msgid "Of course, all passwords should be as secure as possible, but this is especially true for all accounts that have privileges (staff, admin, super-admin); you may explain your users why this is important."
 msgstr ""
 
-#: ../usermanual/preferences.rst:249
+#: ../usermanual/preferences.rst:244
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:251
+#: ../usermanual/preferences.rst:246
 msgid "minimum length (6 characters or more),"
 msgstr ""
 
-#: ../usermanual/preferences.rst:252
+#: ../usermanual/preferences.rst:247
 msgid "minimum \"strength\","
 msgstr ""
 
-#: ../usermanual/preferences.rst:253
+#: ../usermanual/preferences.rst:248
 msgid "blacklist,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:254
+#: ../usermanual/preferences.rst:249
 msgid "no personal information."
 msgstr ""
 
-#: ../usermanual/preferences.rst:256
+#: ../usermanual/preferences.rst:251
 msgid "Galette settings, security tab"
 msgstr ""
 
-#: ../usermanual/preferences.rst:261
+#: ../usermanual/preferences.rst:256
 msgid "Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a \"strength meter\" displayed for information."
 msgstr ""
 
-#: ../usermanual/preferences.rst:265
+#: ../usermanual/preferences.rst:260
 msgid "If you enable password checks, it is not possible to know if some of existing ones does not respect them. Galette will display a warning at login if checks are not respected, but login will still be possible!"
 msgstr ""
 
-#: ../usermanual/preferences.rst:267
+#: ../usermanual/preferences.rst:262
 msgid "But wait... Password security is important, but Galette does not enforce nothing! Isn't that dumb? Well, not really. For tests or entirely private instances, security may be less important; and in some cases, being too restrictive may be an issue for your users; that's why this is up to you to secure as needed; just like using SSL or not :)"
 msgstr ""
 
-#: ../usermanual/preferences.rst:270
+#: ../usermanual/preferences.rst:265
 msgid "Password strength"
 msgstr ""
 
-#: ../usermanual/preferences.rst:272
+#: ../usermanual/preferences.rst:267
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:274
+#: ../usermanual/preferences.rst:269
 msgid "contains lower case characters,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:275
+#: ../usermanual/preferences.rst:270
 msgid "contains upper case characters,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:276
+#: ../usermanual/preferences.rst:271
 msgid "contains number,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:277
+#: ../usermanual/preferences.rst:272
 msgid "contains special characters."
 msgstr ""
 
-#: ../usermanual/preferences.rst:279
+#: ../usermanual/preferences.rst:274
 msgid "You can choose between 5 values for strength configuration:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:281
+#: ../usermanual/preferences.rst:276
 msgid "**none**: (default): disables strength checks and check for personal information,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:282
+#: ../usermanual/preferences.rst:277
 msgid "**weaker**: enables check for personal information, only one of the rule is mandatory,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:283
+#: ../usermanual/preferences.rst:278
 msgid "**medium**: two rules are mandatory,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:284
+#: ../usermanual/preferences.rst:279
 msgid "**strong**: three rules are mandatory,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:285
+#: ../usermanual/preferences.rst:280
 msgid "**very strong**: the four rules are mandatory."
 msgstr ""
 
-#: ../usermanual/preferences.rst:288
+#: ../usermanual/preferences.rst:283
 msgid "Blacklisted passwords"
 msgstr ""
 
-#: ../usermanual/preferences.rst:290
+#: ../usermanual/preferences.rst:285
 msgid "A default list of 500 common passwords is provided as a blacklist you can enable, \"galette\" is also blacklisted."
 msgstr ""
 
-#: ../usermanual/preferences.rst:294
+#: ../usermanual/preferences.rst:289
 msgid "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms (one per line). You can provide your own file, we advice you to complete the existing one."
 msgstr ""
 
-#: ../usermanual/preferences.rst:297
+#: ../usermanual/preferences.rst:292
 msgid "Personal information as password"
 msgstr ""
 
-#: ../usermanual/preferences.rst:299
+#: ../usermanual/preferences.rst:294
 msgid "This check rely on strength activation (all but **none** level). For the super-admin account, this will just ensure you are not using login as password. For standard accounts, there are several information involved:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:301
+#: ../usermanual/preferences.rst:296
 msgid "name,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:302
+#: ../usermanual/preferences.rst:297
 msgid "surname,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:303
+#: ../usermanual/preferences.rst:298
 msgid "nickname,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:304
+#: ../usermanual/preferences.rst:299
 msgid "login,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:305
+#: ../usermanual/preferences.rst:300
 msgid "email,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:306
+#: ../usermanual/preferences.rst:301
 msgid "birthdate,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:307
+#: ../usermanual/preferences.rst:302
 msgid "town"
 msgstr ""
 
-#: ../usermanual/preferences.rst:309
+#: ../usermanual/preferences.rst:304
 msgid "Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants)."
 msgstr ""
 
-#: ../usermanual/preferences.rst:314
+#: ../usermanual/preferences.rst:309
 msgid "Two-factor authentication"
 msgstr ""
 
-#: ../usermanual/preferences.rst:318
+#: ../usermanual/preferences.rst:313
 msgid "Marked **experimental**: it is complete and tested, but it is new, and the interface may still change. It is disabled by default; nothing happens until you choose otherwise."
 msgstr ""
 
-#: ../usermanual/preferences.rst:320
+#: ../usermanual/preferences.rst:315
 msgid "A password is a single factor: whoever knows it is in. Two-factor authentication asks, right after the password, for a six digits code that changes every thirty seconds and comes from an application on the user own phone or computer. A stolen password is then not enough anymore."
 msgstr ""
 
-#: ../usermanual/preferences.rst:322
+#: ../usermanual/preferences.rst:317
 msgid "Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:324
+#: ../usermanual/preferences.rst:319
 msgid "Two policies are available:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:326
+#: ../usermanual/preferences.rst:321
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:327
+#: ../usermanual/preferences.rst:322
 msgid "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 
-#: ../usermanual/preferences.rst:329
+#: ../usermanual/preferences.rst:324
 msgid "Making the second factor **compulsory** — for administrators and staff members, or for everyone — is written and tested, but it is not offered yet: under a compulsory policy, a server clock that drifts or an enrolment that goes wrong puts a whole association outside its own instance, and the only way back is a command in the database. It is planned for a later version, once the optional policy has been used in the field."
 msgstr ""
 
-#: ../usermanual/preferences.rst:331
+#: ../usermanual/preferences.rst:326
 msgid "Since nobody is forced to enrol, administrators and staff members — the accounts that can read the civil status, the addresses and the financial data of every member — are invited to set a second factor up when they log in, with a **Later** and a **Do not ask again** button. Declining is remembered in a cookie of the browser, so the invitation comes back on a new browser, or after a year."
 msgstr ""
 
-#: ../usermanual/preferences.rst:335
+#: ../usermanual/preferences.rst:330
 msgid "Switching the policy back to **disabled** does not delete anything. Codes are no longer asked for, and the second factors already enabled start being asked for again as soon as you enable a policy back. While the policy is disabled, the pages to enable a second factor answer nothing: a factor enrolled then would never be asked for."
 msgstr ""
 
-#: ../usermanual/preferences.rst:337
+#: ../usermanual/preferences.rst:332
 msgid "The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:339
+#: ../usermanual/preferences.rst:334
 msgid "Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it."
 msgstr ""
 
-#: ../usermanual/preferences.rst:342
-msgid "Admin"
+#: ../usermanual/preferences.rst:337
+msgid "Super administrator credentials"
 msgstr ""
 
-#: ../usermanual/preferences.rst:346
-msgid "This tab will be present only if you are logged in as super administrator."
+#: ../usermanual/preferences.rst:341
+msgid "The super administrator login and password are no longer in the preferences. Once logged in as super administrator, go to **My account**, then **My information**. Galette asks for the current password before saving a new one."
 msgstr ""
 
-#: ../usermanual/preferences.rst:348
-msgid "Galette settings, admin tab"
+#: ../usermanual/preferences.rst:343
+msgid "Should that password be lost, it can be changed :ref:`from the command line <cli_superadmin_password>`."
 msgstr ""

@@ -64,11 +64,6 @@ Galette related parameters:
   * go to members list,
   * go to main page,
 
-* **Logging**: handles internal history:
-
-  * Enabled,
-  * Disabled,
-
 * **Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),
 * **Default account filter**: default account filter to apply on members list,
 * **Default membership extension**: membership extension in months,
@@ -80,7 +75,7 @@ Galette related parameters:
   * **Up to date members**,
   * **Administrators and staff members**,
 
-* **Self subscription enabled**: enable or disable self subscription feature,
+* **Self registration enabled**: enable or disable self registration feature,
 * **Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:
 
   * **galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`.
@@ -215,7 +210,7 @@ Refer to your mail provider's documentation for the values to use, along with th
 
    Limits count **recipients**, not messages, and for all messages Galette send.
 
-    The real limit of course depends on all usages of configured server.
+   The real limit of course depends on all usages of configured server.
 
 Labels
 ======
@@ -338,14 +333,11 @@ The super administrator is covered as well, as any other account. As it is not a
 
 Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it.
 
-Admin
-=====
+Super administrator credentials
+===============================
 
-.. note::
+.. versionchanged:: 1.3.0
 
-   This tab will be present only if you are logged in as super administrator.
+The super administrator login and password are no longer in the preferences. Once logged in as super administrator, go to **My account**, then **My information**. Galette asks for the current password before saving a new one.
 
-.. image:: ../_styles/static/images/usermanual/prefs_admin.png
-   :scale: 50%
-   :align: center
-   :alt: Galette settings, admin tab
+Should that password be lost, it can be changed :ref:`from the command line <cli_superadmin_password>`.

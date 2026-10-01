@@ -147,7 +147,7 @@ You can also attach an existing contribution instead of creating a new one.
 Members selection
 =================
 
-.. versionadded: 0.9.2
+.. versionadded:: 0.9.2
 
 The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons.
 

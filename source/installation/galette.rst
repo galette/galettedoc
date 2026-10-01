@@ -59,7 +59,7 @@ Requirements check
 Please check the following if you want Galette to install without problems:
 
 * your PHP version is high enough,
-* PHP timezone is set (required since PHP 5.3),
+* PHP timezone is set,
 * all required PHP extensions are installed and loaded,
 * some directories requires write access.
 

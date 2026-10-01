@@ -14,9 +14,9 @@ If you are using an old Galette release, it's time to update.
 
 .. note::
 
-   Migrating a pre 0.7 release is theoretically supported, but this is not tested (those releases are more than 10 years old!), and it is possible your attempt fail.
+   Updating from a 0.6x release is deprecated since Galette 1.3. It is not tested anymore (those releases are more than 15 years old!), and your attempt may fail.
 
-   Nothing is really made to make such a time travel ;) If this is your case, you should first `migrate to Galette 0.7.8 <https://galette.eu/download/archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest version.
+   If this is your case, you should first `migrate to Galette 0.7.8 <https://galette.eu/download/archives/galette-0.7.8.tar.bz2>`_; and do another migration to the latest version.
 
 Updating files
 ==============

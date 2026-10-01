@@ -33,13 +33,13 @@ Instead, you may override some or all of the values in a ``config/local_paths.in
 All paths that originally resides in ``data`` directory must stay accessible read/write for the web server. All other directories should be set as read only, the web server should not have to write in them. Here is the complete list:
 
 * `GALETTE_CONFIG_PATH` : path to Galette configuration files,
-* `GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),
+* `GALETTE_DATA_PATH` : path to Galette data directory,
 * `GALETTE_LOGS_PATH` : Galette logs path, change it as you want,
-* `GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,
-* `GALETTE_CACHE_DIR` : caching directory for a few cases,
+* `GALETTE_CACHE_DIR` : caching directory, including compiled templates,
 * `GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,
 * `GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to import,
 * `GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,
+* `GALETTE_DOCUMENTS_PATH` : path to the :ref:`documents <documents>` of the association,
 * `GALETTE_FILES_PATH` : path to the dynamic files directory storage (from dynamic fields),
 * `GALETTE_PHOTOS_PATH` : path to store members photos and logos.
 

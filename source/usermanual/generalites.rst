@@ -21,7 +21,7 @@ Staff members, administrators as well as the super administrator can create, edi
 
 Administrators have also access to the application configuration, excepted super admin information.
 
-The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. He of course can change its own login information from application preferences.
+The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. It can change its own login and password from **My account**, then **My information**.
 
 Members can change their own information, and can see their contributions and transactions (as read only).
 

@@ -50,7 +50,7 @@ For the example, we will use a database named `mygalette` with a user `mygalette
 
      $ mysql -u root -p
      mysql> CREATE DATABASE mygalette;
-     mysql> GRANT ALL ON magalette.* to
+     mysql> GRANT ALL ON mygalette.* to
          ->'mygaletteuser'@'localhost' IDENTIFIED BY 'mypass';
 
 * PostgreSQL
@@ -143,7 +143,7 @@ Nginx would be:
        location ~ \.php$ {
            include snippets/fastcgi-php.conf;
            # You may have to adapt this path, depending on your distribution.
-           fastcgi_pass unix:/var/run/php7.0-fpm.sock;
+           fastcgi_pass unix:/run/php/php8.3-fpm.sock;
        }
 
        location ~ /(data|config|lib)/ {

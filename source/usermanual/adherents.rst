@@ -229,7 +229,7 @@ When in the current model tab, you can download an empty model from the `Generat
 Import
 ^^^^^^
 
-Once you have retrieved and fill the empty file, you have to send it using the form `Send a new file`. At this step, Galette will check your file extension is ``csv`` (or ``txt``) and it size does not exceed maximum upload file size (2Mio per default in PHP).
+Once you have retrieved and fill the empty file, you have to send it using the form `Send a new file`. At this step, Galette will check your file extension is ``csv`` (or ``txt``) and its size does not exceed the :ref:`maximum size allowed for imports <upload_sizes>` (2 Mo by default).
 
 .. note::
 
@@ -246,7 +246,7 @@ The `dry run` checkbox (checked per default) is designed to test your file data 
 
 When you import a CSV file, if one line is incorrect, previous ones may be stored in the database already; so it is advised to use the dry-run before to get error fixed.
 
-You will have error messages than something went wrong (in dry-run mode or not):
+Galette displays error messages if something went wrong, in dry-run mode or not.
 
 .. note::
 

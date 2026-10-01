@@ -10,32 +10,48 @@ Galette now proposes a command line interface to manage some tasks. This is acce
 
     $ cd /var/www/html/galette
     $ php bin/console
-    Galette v1.1.3
+    Galette v1.3.0
 
     Usage:
       command [options] [arguments]
 
     Options:
       -h, --help            Display help for the given command. When no command is given display help for the list command
-      -q, --quiet           Do not output any message
+          --silent          Do not output any message
+      -q, --quiet           Only errors are displayed. All other output is suppressed
       -V, --version         Display this application version
           --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
       -n, --no-interaction  Do not ask any interactive question
       -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
     Available commands:
-      completion                  Dump the shell completion script
-      help                        Display help for a command
-      list                        List commands
+      completion                     Dump the shell completion script
+      help                           Display help for a command
+      list                           List commands
      galette
-      galette:checks              Check Galette requirements
-      galette:install             Install Galette
-      galette:plugins:disable     Disable Galette plugins
-      galette:plugins:enable      Enable Galette plugins
-      galette:plugins:install-db  Install Galette plugins database
-      galette:plugins:list        List existing Galette plugins
+      galette:check-routes           Check Galette routes naming conventions
+      galette:checks                 Check Galette requirements
+      galette:compile-locales        Compile translation files (PO) into MO files, for the core and plugins
+      galette:feature:status         List all feature flags and their status
+      galette:headers:check          Check Galette files headers
+      galette:install                Install Galette
+      galette:mailing:process-queue  Process the pending mass mailing queue, respecting configured limits
+      galette:plugins:disable        Disable Galette plugins
+      galette:plugins:enable         Enable Galette plugins
+      galette:plugins:install-db     Install Galette plugins database
+      galette:plugins:list           List existing Galette plugins
+      galette:seed-fixtures          Seed database with E2E test fixtures (fictional members, contributions, groups, etc.)
+      galette:superadmin:password    Change the super administrator password
+      galette:twig-cache             Compile Twig templates in cache
+      galette:twig-pot-references    Point POT file references to Twig templates instead of compiled ones
+
+Some of those commands are meant for developers only (``galette:check-routes``, ``galette:headers:check``, ``galette:seed-fixtures``, ``galette:twig-pot-references``), and are not described here.
 
 You can obtain help for a specific command by using the ``help`` command:
+
+::
+
+    $ php bin/console help galette:checks
 
 Requirements check
 ==================
@@ -44,7 +60,7 @@ This only check for Galette prerequisites, and has no specific arguments.
 
 .. note::
 
-    On some systems, PHP configuration may differ between cli and web; therefore it's recommended to check for requirements from the web script ``galette_compat.php``.
+    On some systems, PHP configuration may differ between cli and web; therefore it's recommended to check for requirements from the web script ``compat_test.php``.
 
 Install
 =======
@@ -127,12 +143,14 @@ Required options that have not been provided on script call will be asked intera
      Do you want to continue? (yes/no) [no]:
      >
 
+.. _cli_superadmin_password:
+
 Super administrator password
 ============================
 
 .. versionadded:: 1.3.0
 
-The super administrator password is normally changed from the :ref:`preferences <man_preferences>`, or from the :ref:`advanced configuration <advanced_config>` page. Both require to be logged in, which is of little help the day the password is lost: the super administrator is not a member, so it cannot use the *forgotten password* form either.
+The super administrator password is normally changed from **My account**, then **My information**, or from the :ref:`advanced configuration <advanced_config>` page. Both require to be logged in, which is of little help the day the password is lost: the super administrator is not a member, so it cannot use the *forgotten password* form either.
 
 This command is the way back in. It runs on the machine hosting Galette, and that access stands as the authentication.
 
@@ -173,9 +191,9 @@ There is no option to pass the password with: it is only ever read from a hidden
 
      [OK] Super administrator password has been changed.
 
-The login is displayed so you know which account you just changed, but the command does not touch it. Change it from the preferences, as usual.
+The login is displayed so you know which account you just changed, but the command does not touch it. Change it from **My account**, then **My information**, as usual.
 
-The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the preferences page.
+The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the web interface.
 
 .. _cli_mailing_queue:
 
@@ -229,9 +247,9 @@ You can list existing plugins using the ``galette:plugins:list`` command:
 
 Available commands are:
 
-* ``galette:plugin:disable``: disable a plugin
-* ``galette:plugin:enable``: enable a plugin
-* ``galette:plugin:install-db``: install a plugin database
+* ``galette:plugins:disable``: disable a plugin
+* ``galette:plugins:enable``: enable a plugin
+* ``galette:plugins:install-db``: install a plugin database
 
 .. warning::
 
