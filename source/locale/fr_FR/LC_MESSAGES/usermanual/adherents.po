@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-10-01 12:20+0000\n"
+"PO-Revision-Date: 2026-10-01 12:37+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "members/fr/>\n"
@@ -440,6 +440,10 @@ msgid ""
 "them. Sending stays synchronous: the confirmation comes once everything has "
 "left,"
 msgstr ""
+"avec une **taille de lots**, Galette divise les destinataires en plusieurs "
+"messages de cette taille au plus, et attend le délai configuré entre deux "
+"d'entre eux. L'envoi reste synchrone : la confirmation arrive une fois que "
+"tout est parti,"
 
 #: ../usermanual/adherents.rst:167
 msgid ""
@@ -465,7 +469,7 @@ msgstr ""
 
 #: ../usermanual/adherents.rst:171
 msgid "A mailing being sent, halfway through its queue"
-msgstr ""
+msgstr "Un envoi en cours, à mi-chemin de sa file d'attente"
 
 #: ../usermanual/adherents.rst:176
 msgid ""
@@ -783,6 +787,12 @@ msgid ""
 "administrator's, and an administrator cannot reset another administrator's: "
 "only the super administrator can."
 msgstr ""
+"Une réinitialisation n'est jamais descendante. Votre second facteur n'est "
+"pas réinitialisé d'ici -- utilisez votre propre page, qui demande un code "
+"d'abord, de sorte que si quelqu'un qui trouverait une session ouverte ne "
+"pourrait le supprimer. Un membre du bureau ne peut pas réinitialiser un "
+"administrateur, et un administrateur ne peut pas réinitialiser celui d'un "
+"autre administrateur : seul le super administrateur le peut."
 
 #: ../usermanual/adherents.rst:283
 msgid ""
