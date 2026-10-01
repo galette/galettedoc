@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2025-06-02 23:48+0000\n"
 "Last-Translator: Maksim_220 Кабанов <law820314@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-"
@@ -113,28 +113,34 @@ msgstr ""
 "усмотрению,"
 
 #: ../installation/postinstall.rst:38
-msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
-msgstr "`GALETTE_COMPILE_DIR` : путь для компиляции системы шаблонов Smarty,"
-
-#: ../installation/postinstall.rst:39
-msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+#, fuzzy
+#| msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+msgid "`GALETTE_CACHE_DIR` : caching directory, including compiled templates,"
 msgstr "`GALETTE_CACHE_DIR` : каталог кэширования для нескольких случаев,"
 
-#: ../installation/postinstall.rst:40
+#: ../installation/postinstall.rst:39
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
 "`GALETTE_EXPORTS_PATH` : путь к директории для хранения экспортированных "
 "файлов CSV,"
 
-#: ../installation/postinstall.rst:41
+#: ../installation/postinstall.rst:40
 msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
 msgstr ""
 "`GALETTE_IMPORTS_PATH` : путь к директории, содержащей CSV-файлы для импорта,"
 
-#: ../installation/postinstall.rst:42
+#: ../installation/postinstall.rst:41
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgstr "`GALETTE_ATTACHMENTS_PATH` : путь к вложенным документам в рассылке,"
+
+#: ../installation/postinstall.rst:42
+#, fuzzy
+#| msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgid ""
+"`GALETTE_DOCUMENTS_PATH` : path to the :ref:`documents <documents>` of the "
+"association,"
 msgstr "`GALETTE_ATTACHMENTS_PATH` : путь к вложенным документам в рассылке,"
 
 #: ../installation/postinstall.rst:43
@@ -213,3 +219,8 @@ msgid ""
 "Whoever can write in your database or in your configuration file can turn it "
 "off. Keep both out of reach."
 msgstr ""
+
+#~ msgid ""
+#~ "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
+#~ msgstr ""
+#~ "`GALETTE_COMPILE_DIR` : путь для компиляции системы шаблонов Smarty,"
