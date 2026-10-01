@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-01 14:19+0200\n"
 "PO-Revision-Date: 2026-07-16 08:26+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -179,20 +179,11 @@ msgstr ""
 
 #: ../usermanual/contributions.rst:57
 msgid ""
-"Set a quota and they can no longer all go out at once. Galette then queues "
-"them and takes you to a progress page that sends them one after the other. "
-"The queue is stored in database, so closing the page loses nothing: come "
-"back to the reminders and the ones left go out. When the quota is reached, "
-"the page says so and stops; the rest is sent later."
-msgstr ""
-
-#: ../usermanual/contributions.rst:59
-msgid ""
 "Each reminder stays an individual message, written in the language of its "
 "recipient, either way. The quota counters are shared with mass mailings."
 msgstr ""
 
-#: ../usermanual/contributions.rst:61
+#: ../usermanual/contributions.rst:59
 #, fuzzy
 #| msgid ""
 #| "Finally, it is possible to automate reminders with a cron task which will "
@@ -213,18 +204,18 @@ msgstr ""
 "podobnih sistemih si oglejte sistemsko dokumentacijo, da veste, kako dodati "
 "crontab) z naslednjo vsebino:"
 
-#: ../usermanual/contributions.rst:67
+#: ../usermanual/contributions.rst:65
 msgid ""
 "The script queues the reminders that are due, then drains the queue itself, "
 "respecting the same limits. It stays silent unless something failed, so cron "
 "only writes to you when there is a reason to."
 msgstr ""
 
-#: ../usermanual/contributions.rst:70
+#: ../usermanual/contributions.rst:68
 msgid "Invoices and receipts"
 msgstr "Računi in potrdila"
 
-#: ../usermanual/contributions.rst:72
+#: ../usermanual/contributions.rst:70
 msgid ""
 "In the contributions list, there is a PDF icon which is designed to generate "
 "invoice ou receipt for one contribution."
@@ -232,15 +223,15 @@ msgstr ""
 "Na seznamu prispevkov je ikona PDF, ki je namenjena ustvarjanju računa ali "
 "potrdila za en prispevek."
 
-#: ../usermanual/contributions.rst:74
+#: ../usermanual/contributions.rst:72
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr "PDF lahko prilagodite z uporabo :ref:`PDF models <pdf_models>`."
 
-#: ../usermanual/contributions.rst:77
+#: ../usermanual/contributions.rst:75
 msgid "Scheduled payments"
 msgstr "Načrtovana plačila"
 
-#: ../usermanual/contributions.rst:81
+#: ../usermanual/contributions.rst:79
 msgid ""
 "It is possible to dispatch a contribution among one or several scheduled "
 "payments. All you have to do is to select \"Scheduled payment\" as payment "
@@ -252,11 +243,11 @@ msgstr ""
 "»Načrtovano plačilo«; Galette vam bo predlagala, da ustvarite priloženo "
 "načrtovano plačilo."
 
-#: ../usermanual/contributions.rst:83
+#: ../usermanual/contributions.rst:81
 msgid "Add scheduled payment to a contribution"
 msgstr "Dodaj načrtovano plačilo prispevku"
 
-#: ../usermanual/contributions.rst:88
+#: ../usermanual/contributions.rst:86
 msgid ""
 "By default, the entire remaining amount will be set into scheduled payment, "
 "but you can enter whatever you want. You can also select any payment type "
@@ -266,7 +257,7 @@ msgstr ""
 "vendar lahko vnesete karkoli želite. Izberete lahko tudi katero koli vrsto "
 "plačila (razen načrtovanega plačila)."
 
-#: ../usermanual/contributions.rst:90
+#: ../usermanual/contributions.rst:88
 msgid ""
 "When you edit a contribution that already has attached scheduled payments, "
 "you can see a summary, and you can also see list of entries."
@@ -274,19 +265,19 @@ msgstr ""
 "Ko urejate prispevek, ki že ima priložena načrtovana plačila, si lahko "
 "ogledate povzetek in seznam vnosov."
 
-#: ../usermanual/contributions.rst:92
+#: ../usermanual/contributions.rst:90
 msgid "Summary of scheduled payments"
 msgstr "Povzetek načrtovanih plačil"
 
-#: ../usermanual/contributions.rst:97
+#: ../usermanual/contributions.rst:95
 msgid "List of attached scheduled payments"
 msgstr "Seznam priloženih načrtovanih plačil"
 
-#: ../usermanual/contributions.rst:103
+#: ../usermanual/contributions.rst:101
 msgid "Transactions"
 msgstr "Transakcije"
 
-#: ../usermanual/contributions.rst:105
+#: ../usermanual/contributions.rst:103
 msgid ""
 "As seen in the example from this chapter introduction, a transaction is a "
 "global payment for a member."
@@ -294,31 +285,31 @@ msgstr ""
 "Kot je razvidno iz primera iz uvoda tega poglavja, je transakcija globalno "
 "plačilo za člana."
 
-#: ../usermanual/contributions.rst:107
+#: ../usermanual/contributions.rst:105
 msgid "Only a few information are required to add a new transaction:"
 msgstr "Za dodajanje nove transakcije je potrebnih le nekaj podatkov:"
 
-#: ../usermanual/contributions.rst:109
+#: ../usermanual/contributions.rst:107
 msgid "a description,"
 msgstr "opis,"
 
-#: ../usermanual/contributions.rst:110
+#: ../usermanual/contributions.rst:108
 msgid "the originator,"
 msgstr "izvornik,"
 
-#: ../usermanual/contributions.rst:111
+#: ../usermanual/contributions.rst:109
 msgid "the date (current date per default),"
 msgstr "datum (trenutni datum je privzeto),"
 
-#: ../usermanual/contributions.rst:112
+#: ../usermanual/contributions.rst:110
 msgid "the amount."
 msgstr "znesek."
 
-#: ../usermanual/contributions.rst:114
+#: ../usermanual/contributions.rst:112
 msgid "Transactions list"
 msgstr "Seznam transakcij"
 
-#: ../usermanual/contributions.rst:119
+#: ../usermanual/contributions.rst:117
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
 "transaction amount. A transaction has itself no effect on members due dates."
@@ -326,11 +317,11 @@ msgstr ""
 "Vsaka transakcija se razporedi med prispevke, v okviru zneska transakcije. "
 "Transakcija sama po sebi nima vpliva na roke plačila članov."
 
-#: ../usermanual/contributions.rst:121
+#: ../usermanual/contributions.rst:119
 msgid "Add a transaction"
 msgstr "Dodaj transakcijo"
 
-#: ../usermanual/contributions.rst:126
+#: ../usermanual/contributions.rst:124
 msgid ""
 "After adding a new transaction, you will be redirected to a new contribution "
 "creation. If this new contribution does not dispatch the remaining amount of "
@@ -343,32 +334,32 @@ msgstr ""
 "vam bo galette predlagal, da ustvarite novega. Privzeto bo znesek novega "
 "prispevka iz transakcije enak preostalemu znesku transakcije."
 
-#: ../usermanual/contributions.rst:128
+#: ../usermanual/contributions.rst:126
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr "Dodaj prispevek, povezan z delno odposlano transakcijo"
 
-#: ../usermanual/contributions.rst:133
+#: ../usermanual/contributions.rst:131
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr "Seveda je transakcijo mogoče tudi urediti:"
 
-#: ../usermanual/contributions.rst:135
+#: ../usermanual/contributions.rst:133
 msgid "Transaction edition"
 msgstr "Transakcijska izdaja"
 
-#: ../usermanual/contributions.rst:140
+#: ../usermanual/contributions.rst:138
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
 msgstr "Namesto ustvarjanja novega prispevka lahko priložite tudi obstoječega."
 
-#: ../usermanual/contributions.rst:142
+#: ../usermanual/contributions.rst:140
 msgid "Add an already existing contribution to a transaction"
 msgstr "Dodajanje obstoječega prispevka transakciji"
 
-#: ../usermanual/contributions.rst:150
+#: ../usermanual/contributions.rst:148
 msgid "Members selection"
 msgstr "Izbira članov"
 
-#: ../usermanual/contributions.rst:154
+#: ../usermanual/contributions.rst:152
 msgid ""
 "The dropdown list to choose a member is available from contributions and "
 "transactions (as well as from several plugins) displays only a few members, "
@@ -378,11 +369,11 @@ msgstr ""
 "(kot tudi iz več vtičnikov), zaradi učinkovitosti pa prikazuje le nekaj "
 "članov."
 
-#: ../usermanual/contributions.rst:156
+#: ../usermanual/contributions.rst:154
 msgid "Dropdown members list"
 msgstr "Spustni seznam članov"
 
-#: ../usermanual/contributions.rst:160
+#: ../usermanual/contributions.rst:158
 msgid ""
 "You can display more members using arrow buttons or entering any text (this "
 "will search in first name, last name and identifiers)."
