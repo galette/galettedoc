@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-01 12:37+0000\n"
+"PO-Revision-Date: 2026-10-01 20:02+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
 "preferences/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../usermanual/preferences.rst:5
 msgid "Galette preferences"
@@ -235,13 +235,10 @@ msgid "**Administrators and staff members**,"
 msgstr "**Administrateurs et membres du bureau**,"
 
 #: ../usermanual/preferences.rst:78
-#, fuzzy
-#| msgid ""
-#| "**Self subscription enabled**: enable or disable self subscription "
-#| "feature,"
 msgid ""
 "**Self registration enabled**: enable or disable self registration feature,"
-msgstr "**Enregistrement actif** : active ou désactive l'auto-enregistrement,"
+msgstr ""
+"**Auto-Enregistrement actif** : active ou désactive l'auto-enregistrement,"
 
 #: ../usermanual/preferences.rst:79
 msgid ""
@@ -1149,7 +1146,7 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:337
 msgid "Super administrator credentials"
-msgstr ""
+msgstr "Identifiants super administrateur"
 
 #: ../usermanual/preferences.rst:341
 msgid ""
@@ -1157,12 +1154,18 @@ msgid ""
 "Once logged in as super administrator, go to **My account**, then **My "
 "information**. Galette asks for the current password before saving a new one."
 msgstr ""
+"Les login et mot de passe super administrateur ne sont plus dans les "
+"préférences. Une fois connecté en tant super administrateur, allez sur **Mon "
+"compte**, puis **Mes informations**. Galette demande le mot de passe actuel "
+"avant d'en enregistrer un nouveau."
 
 #: ../usermanual/preferences.rst:343
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
 msgstr ""
+"Si ce mot de passe est perdu, il peut être modifié :ref:`depuis la ligne de "
+"commande <cli_superadmin_password>`."
 
 #~ msgid "**Logging**: handles internal history:"
 #~ msgstr "**Historique** : gère l'historique interne :"
