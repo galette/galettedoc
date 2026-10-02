@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-09-25 22:09+0000\n"
+"PO-Revision-Date: 2026-10-02 20:44+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-members/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../usermanual/adherents.rst:5
 msgid "Members management"
@@ -384,10 +384,8 @@ msgstr ""
 "ga boste lahko prevzeli pozneje."
 
 #: ../usermanual/adherents.rst:152
-#, fuzzy
-#| msgid "send mailings,"
 msgid "Sending large mailings"
-msgstr "pošiljanje poštnih pošiljk,"
+msgstr "Pošiljanje obsežnih pošiljk"
 
 #: ../usermanual/adherents.rst:156
 msgid ""
@@ -592,12 +590,6 @@ msgid "Import"
 msgstr "Uvoz"
 
 #: ../usermanual/adherents.rst:232
-#, fuzzy
-#| msgid ""
-#| "Once you have retrieved and fill the empty file, you have to send it "
-#| "using the form `Send a new file`. At this step, Galette will check your "
-#| "file extension is ``csv`` (or ``txt``) and it size does not exceed "
-#| "maximum upload file size (2Mio per default in PHP)."
 msgid ""
 "Once you have retrieved and fill the empty file, you have to send it using "
 "the form `Send a new file`. At this step, Galette will check your file "
@@ -605,9 +597,9 @@ msgid ""
 "the :ref:`maximum size allowed for imports <upload_sizes>` (2 Mo by default)."
 msgstr ""
 "Ko pridobite in izpolnite prazno datoteko, jo morate poslati z uporabo "
-"obrazca `Pošlji novo datoteko`. V tem koraku bo Galette preveril, ali je "
-"končnica vaše datoteke ``csv`` (ali ``txt``) in ali njena velikost ne "
-"presega največje velikosti datoteke za nalaganje (privzeto 2 milijona v PHP)."
+"obrazca »Pošlji novo datoteko«. V tem koraku bo Galette preveril, ali ima "
+"datoteka končnico ``csv`` (ali ``txt``) in ali njena velikost ne presega "
+":ref:`največje dovoljene velikosti za uvoz <upload_sizes>` (privzeto 2 Mb)."
 
 #: ../usermanual/adherents.rst:236
 msgid ""
@@ -653,16 +645,12 @@ msgstr ""
 "poskusni zagon, da odpravite napako."
 
 #: ../usermanual/adherents.rst:249
-#, fuzzy
-#| msgid ""
-#| "You will have error messages than something went wrong (in dry-run mode "
-#| "or not):"
 msgid ""
 "Galette displays error messages if something went wrong, in dry-run mode or "
 "not."
 msgstr ""
-"Prikazala se bodo sporočila o napakah, ki kažejo, da je šlo kaj narobe (v "
-"poskusnem načinu ali ne):"
+"Galette prikaže sporočila o napakah, če gre kaj narobe, ne glede na to, ali "
+"je vklopljen način poskusnega zagona ali ne."
 
 #: ../usermanual/adherents.rst:253
 msgid ""
