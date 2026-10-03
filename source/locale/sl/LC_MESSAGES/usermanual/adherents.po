@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-02 20:44+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-members/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../usermanual/adherents.rst:5
 msgid "Members management"
@@ -352,6 +352,8 @@ msgid ""
 "Each attachment has a maximum size of its own, which you can :ref:`change "
 "from the advanced configuration <upload_sizes>` page."
 msgstr ""
+"Vsaka priloga ima lastno največjo velikost, ki jo lahko :ref:`spremenite na "
+"strani za napredno konfiguracijo <upload_sizes>`."
 
 #: ../usermanual/adherents.rst:138
 msgid "`Preview` button let you preview your message before sending it."
@@ -393,22 +395,29 @@ msgid ""
 "recipient in blind copy - but mail servers restrict what one message may "
 "carry, and how fast you may send."
 msgstr ""
+"Pošiljanje je privzeto eno samo sporočilo, poslano takoj, ki nosi vsakega "
+"prejemnika v slepi kopiji - vendar poštni strežniki omejujejo, kaj lahko eno "
+"sporočilo nosi in kako hitro lahko pošljete."
 
 #: ../usermanual/adherents.rst:160
 msgid ""
 "Using your \"personal\" SMTP provider is often not a good idea; dedicated "
 "services are better suited for large mailings."
 msgstr ""
+"Uporaba \"osebnega\" ponudnika SMTP pogosto ni dobra ideja; namenske "
+"storitve so bolj primerne za velike pošiljke."
 
 #: ../usermanual/adherents.rst:162
 msgid "And you even may have limits on a dedicated service."
-msgstr ""
+msgstr "Morda imate celo omejitve glede namenske storitve."
 
 #: ../usermanual/adherents.rst:164
 msgid ""
 "Galette :ref:`sending limits <mail_throttling>` changes what happens once "
 "you confirm the sending:"
 msgstr ""
+"Galette :ref:`omejitve pošiljanja <mail_throttling>` spremeni, kaj se zgodi, "
+"ko potrdite pošiljanje:"
 
 #: ../usermanual/adherents.rst:166
 msgid ""
@@ -417,6 +426,9 @@ msgid ""
 "them. Sending stays synchronous: the confirmation comes once everything has "
 "left,"
 msgstr ""
+"z nastavljeno **velikostjo paketa** Galette razdeli prejemnike na več "
+"sporočil največ te velikosti in počaka na konfigurirano zakasnitev med dvema "
+"od njih. Pošiljanje ostane sinhrono: potrditev pride, ko vse odide,"
 
 #: ../usermanual/adherents.rst:167
 msgid ""
@@ -424,6 +436,9 @@ msgid ""
 "more. Galette stores the mailing, queues one entry per recipient, and takes "
 "you to a progress page."
 msgstr ""
+"z nastavljeno **urno ali dnevno omejitvijo** pošiljanje ni več možno "
+"naenkrat. Galette shrani pošto, postavi v čakalno vrsto en vnos na "
+"prejemnika in vas popelje na stran napredka."
 
 #: ../usermanual/adherents.rst:169
 msgid ""
@@ -431,10 +446,13 @@ msgid ""
 "is: recipients sent, remaining and failed, and what the quota has consumed "
 "so far. Leave it open until it announces the mailing has been sent."
 msgstr ""
+"Stran z napredkom pošilja poštni paket za paketom in prikazuje, kako daleč "
+"je: poslani prejemniki, preostali in neuspešni ter koliko je kvota doslej "
+"porabila. Pustite ga odprtega, dokler ne sporoči, da je bila pošta poslana."
 
 #: ../usermanual/adherents.rst:171
 msgid "A mailing being sent, halfway through its queue"
-msgstr ""
+msgstr "Pošiljanje je poslano na polovici čakalne vrste"
 
 #: ../usermanual/adherents.rst:176
 msgid ""
@@ -444,6 +462,11 @@ msgid ""
 "again, or from a :ref:`drainer running outside the browser "
 "<mailing_queue_cron>`."
 msgstr ""
+"Nič se ne izgubi, če ga zaprete ali če kvota zmanjka pred koncem: čakalna "
+"vrsta je shranjena v bazi podatkov. Stran vam nato sporoči, da se bo "
+"pošiljanje nadaljevalo pozneje, preostali prejemniki pa izginejo bodisi, ko "
+"znova odprete pošto, bodisi iz :ref:`drainerja, ki teče zunaj brskalnika "
+"<mailing_queue_cron>`."
 
 #: ../usermanual/adherents.rst:180
 msgid ""
@@ -451,12 +474,17 @@ msgid ""
 "proposes alternative methods to :ref:`drain the mail queue "
 "<mailing_queue_cron>` we really recommends ;-)"
 msgstr ""
+"Stran z napredkom je edina stvar, ki jo *potrebuje* pošiljanje v čakalni "
+"vrsti. Galette predlaga alternativne metode za :ref:`izčrpavanje poštne "
+"čakalne vrste <mailing_queue_cron>`, ki jih resnično priporočamo ;-)"
 
 #: ../usermanual/adherents.rst:182
 msgid ""
 "A queued mailing is stored in the history right away, and only counts as "
 "**sent** once its last recipient has left the queue."
 msgstr ""
+"Pošiljka v čakalni vrsti se takoj shrani v zgodovino in se šteje kot "
+"**poslana** šele, ko zadnji prejemnik zapusti čakalno vrsto."
 
 #: ../usermanual/adherents.rst:185
 msgid "Mailings history"
@@ -710,7 +738,7 @@ msgstr ""
 
 #: ../usermanual/adherents.rst:273
 msgid "Resetting a second factor"
-msgstr ""
+msgstr "Ponastavitev drugega faktorja"
 
 #: ../usermanual/adherents.rst:277
 msgid ""
@@ -720,6 +748,11 @@ msgid ""
 "factor: the secret and the remaining recovery codes are dropped, and the "
 "member logs in with their password alone until they enrol again."
 msgstr ""
+"Član, ki je izgubil napravo, ki izračunava svoje kode, in nima več nobene "
+":ref:`obnovitvene kode <man_2fa>`, se ne more več prijaviti. S članske "
+"strani lahko skrbniki in člani osebja ponastavijo svoj drugi faktor: "
+"skrivnost in preostale obnovitvene kode se izbrišejo, član pa se prijavi "
+"samo s svojim geslom, dokler se znova ne vpiše."
 
 #: ../usermanual/adherents.rst:279
 msgid ""
@@ -729,6 +762,11 @@ msgid ""
 "administrator's, and an administrator cannot reset another administrator's: "
 "only the super administrator can."
 msgstr ""
+"Ponastavitev gre vedno samo navzdol. Vaš lastni drugi faktor se od tukaj ne "
+"ponastavi -- uporabite svojo lastno stran, ki najprej zahteva kodo, tako da "
+"je seja, ki jo nekdo drug najde odprto, ne more odstraniti. Član osebja ne "
+"more ponastaviti administratorjevih, skrbnik pa ne more ponastaviti drugih "
+"skrbnikov: samo superskrbnik lahko."
 
 #: ../usermanual/adherents.rst:283
 msgid ""
@@ -737,6 +775,10 @@ msgid ""
 "getting one removed. The reset is recorded in the history, with who did it "
 "and for whom."
 msgstr ""
+"Preverite, kdo sprašuje. Ponastavitev drugega dejavnika odstrani zaščito in "
+"telefonski klic, v katerem trdi, da je član, je točno to, kako bi se nekdo "
+"lotil odstranitve enega. Reset je zapisan v zgodovini, kdo je to naredil in "
+"za koga."
 
 #: ../usermanual/adherents.rst:286
 msgid "Impersonating"
