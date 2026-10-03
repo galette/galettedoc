@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-02 20:44+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-generalities/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../usermanual/generalites.rst:5
 msgid "Generalities"
@@ -222,6 +222,8 @@ msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change."
 msgstr ""
+"Označeno kot **eksperimentalno**: je popolno in preizkušeno, vendar je novo "
+"in vmesnik se lahko še spremeni."
 
 #: ../usermanual/generalites.rst:67
 msgid ""
@@ -229,6 +231,9 @@ msgid ""
 "account can protect itself with a second factor: after the password, Galette "
 "asks for a six digits code that changes every thirty seconds."
 msgstr ""
+"Ko je :ref:`a politika nastavljena v nastavitvah <pref_2fa>`, se lahko vsak "
+"račun zaščiti z drugim dejavnikom: za geslom Galette zahteva šestmestno "
+"kodo, ki se spremeni vsakih trideset sekund."
 
 #: ../usermanual/generalites.rst:69
 msgid ""
@@ -236,32 +241,41 @@ msgid ""
 "Galette invites you to when you log in. Nothing forces you to; **Later** "
 "keeps quiet for six months, **Do not ask again** for a year."
 msgstr ""
+"Če ste skrbnik ali uslužbenec in ga še niste nastavili, vas Galette povabi k "
+"prijavi, ko se prijavite. Nič vas k temu ne sili; **Pozneje** molči šest "
+"mesecev, **Ne sprašuj več** leto dni."
 
 #: ../usermanual/generalites.rst:71
 msgid ""
 "You need an application to compute those codes. Any of them will do, they "
 "all follow the same standard; among the free ones:"
 msgstr ""
+"Za izračun teh kod potrebujete aplikacijo. Vsak od njih bo ustrezal, vsi "
+"sledijo istemu standardu; med brezplačnimi:"
 
 #: ../usermanual/generalites.rst:73
 msgid ""
 "`Aegis <https://getaegis.app>`_ or `FreeOTP <https://freeotp.github.io>`_ on "
 "Android,"
 msgstr ""
+"`Aegis <https://getaegis.app>`_ ali `FreeOTP <https://freeotp.github.io>`_ v "
+"sistemu Android,"
 
 #: ../usermanual/generalites.rst:74
 msgid ""
 "`KeePassXC <https://keepassxc.org>`_ on a computer, in the *TOTP* field of "
 "an entry,"
 msgstr ""
+"`KeePassXC <https://keepassxc.org>`_ v računalniku, v polju *TOTP* vnosa,"
 
 #: ../usermanual/generalites.rst:75
 msgid "Google Authenticator, Microsoft Authenticator, ... on Android and iOS."
 msgstr ""
+"Google Authenticator, Microsoft Authenticator, ... v sistemu Android in iOS."
 
 #: ../usermanual/generalites.rst:78
 msgid "Enabling it"
-msgstr ""
+msgstr "Omogočanje"
 
 #: ../usermanual/generalites.rst:80
 msgid ""
@@ -270,6 +284,10 @@ msgid ""
 "your application; if you cannot scan it, the key displayed right under it "
 "can be typed in by hand instead."
 msgstr ""
+"Pojdite na **Moj račun**, nato na **Dvostopenjsko preverjanje pristnosti** "
+"in kliknite na *Omogoči dvostopenjsko preverjanje pristnosti*. Galette "
+"prikaže kodo QR za skeniranje z vašo aplikacijo; če ga ne morete optično "
+"prebrati, lahko ključ, prikazan tik pod njim, namesto tega vnesete ročno."
 
 #: ../usermanual/generalites.rst:82
 msgid ""
@@ -277,11 +295,15 @@ msgid ""
 "confirm, and it is on. That first code is asked for on purpose: it makes "
 "sure your application really is set up before Galette starts requiring it."
 msgstr ""
+"Vaša aplikacija nato začne prikazovati kode. Vnesite trenutnega za potrditev "
+"in vklopljen je. Ta prva koda je zahtevana namenoma: poskrbi, da je vaša "
+"aplikacija res nastavljena, preden jo Galette začne zahtevati."
 
 #: ../usermanual/generalites.rst:84
 msgid ""
 "Galette then displays **ten recovery codes**, and displays them only once."
 msgstr ""
+"Galette nato prikaže **deset obnovitvenih kod** in jih prikaže samo enkrat."
 
 #: ../usermanual/generalites.rst:88
 msgid ""
@@ -290,16 +312,20 @@ msgid ""
 "one works once, and Galette never shows them again -- it does not keep them "
 "in a readable form."
 msgstr ""
+"Natisnite te obnovitvene kode ali jih shranite nekam, kjer ni naprava, ki "
+"izračunava vaše kode. So pot nazaj, če izgubite telefon. Vsak deluje enkrat "
+"in Galette jih nikoli več ne pokaže -- ne hrani jih v berljivi obliki."
 
 #: ../usermanual/generalites.rst:90
 msgid ""
 "You can get ten new ones at any time from the same page; the previous ones "
 "are then void."
 msgstr ""
+"Na isti strani lahko kadar koli dobite deset novih; prejšnji so potem nični."
 
 #: ../usermanual/generalites.rst:93
 msgid "Logging in"
-msgstr ""
+msgstr "Prijava"
 
 #: ../usermanual/generalites.rst:95
 msgid ""
@@ -307,16 +333,20 @@ msgid ""
 "for a code. Nothing else is reachable until it is given: an account waiting "
 "for its code is not logged in."
 msgstr ""
+"Za geslo se nič ne spremeni. Ko je bila sprejeta, Galette zahteva kodo. Nič "
+"drugega ni dosegljivo, dokler ni dano: račun, ki čaka na kodo, ni prijavljen."
 
 #: ../usermanual/generalites.rst:97
 msgid ""
 "If you no longer have your device, use one of your recovery codes instead of "
 "a code: the same field takes both."
 msgstr ""
+"Če nimate več svoje naprave, uporabite eno od svojih obnovitvenih kod "
+"namesto kode: isto polje vsebuje obe."
 
 #: ../usermanual/generalites.rst:100
 msgid "Disabling it"
-msgstr ""
+msgstr "Onemogočanje"
 
 #: ../usermanual/generalites.rst:102
 msgid ""
@@ -324,12 +354,17 @@ msgid ""
 "required to turn it off. That is deliberate: somebody who found your session "
 "open should not be able to remove your second factor with a click."
 msgstr ""
+"Iz **Moj račun**, nato **Dvofaktorska avtentikacija**, za izklop je potrebna "
+"trenutna koda. To je namerno: nekdo, ki je našel vašo sejo odprto, ne bi "
+"smel odstraniti vašega drugega faktorja s klikom."
 
 #: ../usermanual/generalites.rst:104
 msgid ""
 "If a policy makes it mandatory, you will be asked to enable it again at your "
 "next login."
 msgstr ""
+"Če je zaradi pravilnika to obvezno, boste pozvani, da ga znova omogočite ob "
+"naslednji prijavi."
 
 #: ../usermanual/generalites.rst:108
 msgid ""
@@ -337,6 +372,9 @@ msgid ""
 "have to agree on it. This is by far the most common reason for codes being "
 "refused; see :ref:`the FAQ <faq_2fa>`."
 msgstr ""
+"Kode so izračunane iz trenutnega časa, zato se morata o tem strinjati vaša "
+"naprava in strežnik. To je daleč najpogostejši razlog za zavrnitev kod; "
+"glejte :ref:`pogosta vprašanja <faq_2fa>`."
 
 #: ../usermanual/generalites.rst:111
 msgid "Interface"
