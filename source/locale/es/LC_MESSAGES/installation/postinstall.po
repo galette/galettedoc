@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
 "PO-Revision-Date: 2024-01-16 06:20+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-"
@@ -22,32 +22,45 @@ msgstr ""
 "X-Generator: Weblate 5.4-dev\n"
 
 # 488a226702e54799884dd1ac10f3aec9
-#: ../installation/postinstall.rst:5 488a226702e54799884dd1ac10f3aec9
+#: ../installation/postinstall.rst:5
 msgid "Post installation"
 msgstr "Posterior a la instalación"
 
 # b17c9984f26a47b69f23f52834d15f1d
-#: ../installation/postinstall.rst:8 b17c9984f26a47b69f23f52834d15f1d
+#: ../installation/postinstall.rst:8
 msgid "Various tasks"
 msgstr "Diversas tareas"
 
 # 9691205beb56471ab60663500a555354
-#: ../installation/postinstall.rst:10 9691205beb56471ab60663500a555354
-msgid "One Galette properly installed, you still have one thing to do:"
+#: ../installation/postinstall.rst:10
+#, fuzzy
+#| msgid "One Galette properly installed, you still have one thing to do:"
+msgid ""
+"One Galette properly installed, you still have a couple of things to do:"
 msgstr "Galette correctamente instalado, aún te queda una cosa por hacer:"
 
 # bf60cb14174e492f98bfd9c075eedcae
-#: ../installation/postinstall.rst:12 bf60cb14174e492f98bfd9c075eedcae
-msgid "remove write access to the ``config`` directory."
+#: ../installation/postinstall.rst:12
+#, fuzzy
+#| msgid "remove write access to the ``config`` directory."
+msgid "remove write access to the ``config`` directory,"
 msgstr "eliminar el acceso de escritura al directorio ``config``."
 
+#: ../installation/postinstall.rst:13
+msgid ""
+"check the ``data/ENABLE_INSTALL`` file is gone. Galette removes it on its "
+"own at the end of the installation, but it warns you instead of failing "
+"silently when it cannot - see :ref:`enabling the installer "
+"<enableinstaller>`."
+msgstr ""
+
 # 0a3871ca8a3d48b88d769c235800b20e
-#: ../installation/postinstall.rst:17 0a3871ca8a3d48b88d769c235800b20e
+#: ../installation/postinstall.rst:18
 msgid "Configure paths"
 msgstr "Configurar rutas"
 
 # 020264d5c184431bb389617ff7378444
-#: ../installation/postinstall.rst:19 020264d5c184431bb389617ff7378444
+#: ../installation/postinstall.rst:20
 msgid ""
 "Some galette paths may be changed from a configuration parameter, such as "
 "exports, photos, etc"
@@ -56,7 +69,7 @@ msgstr ""
 "configuración, como exportaciones, fotos, etc"
 
 # 915b59a4be0c41ab979c82307b6ead4e
-#: ../installation/postinstall.rst:21 915b59a4be0c41ab979c82307b6ead4e
+#: ../installation/postinstall.rst:22
 msgid ""
 "By default, Galette provides all those directories inside installation "
 "directory. That way, if installation is located at ``/var/www/galette``, "
@@ -72,7 +85,7 @@ msgstr ""
 "que no debe ser modificado."
 
 # d404b74d31ab4a0989141c8c1da8b8ab
-#: ../installation/postinstall.rst:24 d404b74d31ab4a0989141c8c1da8b8ab
+#: ../installation/postinstall.rst:25
 msgid ""
 "Instead, you may override some or all of the values in a ``config/"
 "local_paths.inc.php``, with paths you want declared as PHP constants. For "
@@ -83,7 +96,7 @@ msgstr ""
 "PHP. Por ejemplo, para definir una ruta diferente para las fotos:"
 
 # eb3cd2eb4c0b439eabd40d7131261a4f
-#: ../installation/postinstall.rst:32 eb3cd2eb4c0b439eabd40d7131261a4f
+#: ../installation/postinstall.rst:33
 msgid ""
 "All paths that originally resides in ``data`` directory must stay accessible "
 "read/write for the web server. All other directories should be set as read "
@@ -96,45 +109,40 @@ msgstr ""
 "no debería tener que escribir en ellos. Aquí está la lista completa:"
 
 # 6432ba3da92c493db780460e0c4fae88
-#: ../installation/postinstall.rst:34 6432ba3da92c493db780460e0c4fae88
+#: ../installation/postinstall.rst:35
 msgid "`GALETTE_CONFIG_PATH` : path to Galette configuration files,"
 msgstr ""
 "`GALETTE_CONFIG_PATH`: ruta a los archivos de configuración de Galette,"
 
 # 121fa2d66cfa46b785eb64f660e48da1
-#: ../installation/postinstall.rst:35 121fa2d66cfa46b785eb64f660e48da1
-msgid "`GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),"
+#: ../installation/postinstall.rst:36
+msgid "`GALETTE_DATA_PATH` : path to Galette data directory,"
 msgstr ""
-"`GALETTE_DATA_PATH`: ruta al directorio de datos de Galette (desde 0.8),"
-"`GALETTE_DATA_PATH`: ruta al directorio de datos de Galette (desde 0.8),"
+"`GALETTE_DATA_PATH`: ruta al directorio de datos de `GALETTE_DATA_PATH`: "
+"ruta al directorio de datos de Galette,"
 
 # d59132cf243e44ffaaf5d9bd6779ad81
-#: ../installation/postinstall.rst:36 d59132cf243e44ffaaf5d9bd6779ad81
+#: ../installation/postinstall.rst:37
 msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr "`GALETTE_LOGS_PATH`: ruta de registro de Galette, cámbiela como desee,"
 
-# 361b7bfb095f48999793c256e7f0b57d
-#: ../installation/postinstall.rst:37 361b7bfb095f48999793c256e7f0b57d
-msgid "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
-msgstr ""
-"`GALETTE_COMPILE_DIR`: ruta para la compilación del sistema de plantillas "
-"Smarty,"
-
 # 827c402225814d058364e8d270935477
-#: ../installation/postinstall.rst:38 827c402225814d058364e8d270935477
-msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+#: ../installation/postinstall.rst:38
+#, fuzzy
+#| msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
+msgid "`GALETTE_CACHE_DIR` : caching directory, including compiled templates,"
 msgstr ""
 "`GALETTE_CACHE_DIR`: directorio de almacenamiento en caché para algunos "
 "casos,"
 
 # 84e8f4be8acb4553bfd49a9b6311957d
-#: ../installation/postinstall.rst:39 84e8f4be8acb4553bfd49a9b6311957d
+#: ../installation/postinstall.rst:39
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
 msgstr ""
 "`GALETTE_EXPORTS_PATH`: ruta al directorio para almacenar exportaciones CSV,"
 
 # bd56b3e8293a476d8c3d4e44c020de50
-#: ../installation/postinstall.rst:40 bd56b3e8293a476d8c3d4e44c020de50
+#: ../installation/postinstall.rst:40
 msgid ""
 "`GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to "
 "import,"
@@ -143,13 +151,23 @@ msgstr ""
 "para importar,"
 
 # 5d47b80230af4986be976df98f1d7ad8
-#: ../installation/postinstall.rst:41 5d47b80230af4986be976df98f1d7ad8
+#: ../installation/postinstall.rst:41
 msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
 msgstr ""
 "`GALETTE_ATTACHMENTS_PATH`: ruta a los documentos adjuntos en el correo,"
 
+# 5d47b80230af4986be976df98f1d7ad8
+#: ../installation/postinstall.rst:42
+#, fuzzy
+#| msgid "`GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,"
+msgid ""
+"`GALETTE_DOCUMENTS_PATH` : path to the :ref:`documents <documents>` of the "
+"association,"
+msgstr ""
+"`GALETTE_ATTACHMENTS_PATH`: ruta a los documentos adjuntos en el correo,"
+
 # aa1fbe83707f43649d6b9baa66de4a29
-#: ../installation/postinstall.rst:42 aa1fbe83707f43649d6b9baa66de4a29
+#: ../installation/postinstall.rst:43
 msgid ""
 "`GALETTE_FILES_PATH` : path to the dynamic files directory storage (from "
 "dynamic fields),"
@@ -158,18 +176,18 @@ msgstr ""
 "dinámicos (desde campos dinámicos),"
 
 # e144dd24d6c84345aa020da94f00f002
-#: ../installation/postinstall.rst:43 e144dd24d6c84345aa020da94f00f002
+#: ../installation/postinstall.rst:44
 msgid "`GALETTE_PHOTOS_PATH` : path to store members photos and logos."
 msgstr ""
 "`GALETTE_PHOTOS_PATH`: ruta para almacenar fotos y logotipos de los miembros."
 
 # 12af61e48d4d47cf80df6b2b019cf02e
-#: ../installation/postinstall.rst:46 12af61e48d4d47cf80df6b2b019cf02e
+#: ../installation/postinstall.rst:47
 msgid "Data security"
 msgstr "Seguridad de los datos"
 
 # c9320dcabd7b4e1a921106a729deced6
-#: ../installation/postinstall.rst:48 c9320dcabd7b4e1a921106a729deced6
+#: ../installation/postinstall.rst:49
 msgid ""
 "You and your members will login to Galette, using a login and a password. "
 "You must be aware that those information are transmitted as is to the "
@@ -181,7 +199,7 @@ msgstr ""
 "olfateando sus intercambios."
 
 # 696788f9c1a34305be512665338d5b66
-#: ../installation/postinstall.rst:50 696788f9c1a34305be512665338d5b66
+#: ../installation/postinstall.rst:51
 msgid ""
 "This problem is recurrent hen you have to send data over the internet, and "
 "this is why you must check if you are on a HTTPS secured page (your browser "
@@ -195,7 +213,7 @@ msgstr ""
 "tarjeta, ..."
 
 # b74ceb4f088f4427baeb090fa018018b
-#: ../installation/postinstall.rst:52 b74ceb4f088f4427baeb090fa018018b
+#: ../installation/postinstall.rst:53
 msgid ""
 "And this is the same for Galette, you can use it along with SSL, no problem. "
 "All data that will be transmitted to the server will be a bit more confident "
@@ -204,6 +222,40 @@ msgstr ""
 "Y esto es lo mismo para Galette, puedes usarlo junto con SSL, no hay "
 "problema. Todos los datos que se transmitirán al servidor serán un poco más "
 "seguros y seguros :)"
+
+#: ../installation/postinstall.rst:55
+msgid ""
+"Since Galette 1.3.0, you can also ask for :ref:`a second factor at login "
+"<pref_2fa>`, so that a password that leaked is not enough on its own."
+msgstr ""
+
+#: ../installation/postinstall.rst:59
+msgid ""
+"Codes are computed from the current time: make sure your server clock is "
+"right, and kept right (NTP). A server drifting away refuses every code, "
+"without saying why."
+msgstr ""
+
+#: ../installation/postinstall.rst:61
+msgid ""
+"Before enabling a second factor on the super administrator account, check "
+"you can reach your database. That account has no recovery codes, "
+"and :ref:`clearing its second factor <faq_2fa>` is done there."
+msgstr ""
+
+#: ../installation/postinstall.rst:63
+msgid ""
+"Which also means: a second factor protects the login form, not the server. "
+"Whoever can write in your database or in your configuration file can turn it "
+"off. Keep both out of reach."
+msgstr ""
+
+# 361b7bfb095f48999793c256e7f0b57d
+#~ msgid ""
+#~ "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"
+#~ msgstr ""
+#~ "`GALETTE_COMPILE_DIR`: ruta para la compilación del sistema de plantillas "
+#~ "Smarty,"
 
 # 8bd9d44f758e415db71d28db881ba099
 #~ msgid ""

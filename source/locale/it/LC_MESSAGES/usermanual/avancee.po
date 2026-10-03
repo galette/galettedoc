@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-10-01 14:06+0200\n"
 "PO-Revision-Date: 2025-10-13 09:07+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/galette/"
-"doc-user-advanced/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
+"advanced/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,30 +21,30 @@ msgstr ""
 "X-Generator: Weblate 5.14-dev\n"
 
 # 146a7da35cab4d59bcc2bcf51c1acdd9
-#: ../usermanual/avancee.rst:5 146a7da35cab4d59bcc2bcf51c1acdd9
+#: ../usermanual/avancee.rst:5
 msgid "Experienced users"
 msgstr "Utenti esperti"
 
 # 1f9bbed20cf5465d9384452334706982
-#: ../usermanual/avancee.rst:9 1f9bbed20cf5465d9384452334706982
+#: ../usermanual/avancee.rst:9
 msgid ""
 "Use only following instructions if you know what you are doing... \"The "
-"management is not responsable for any case of [...]\" :D"
+"management is not responsible for any case of [...]\" :D"
 msgstr ""
 "Usare solo seguendo le istruzioni se si sa cosa si sta facendo... \"La "
 "gestione non è responsabile per ogni caso di [...]\" :D"
 
 # 73aa7121c47b43ce986562d44a72d14f
-#: ../usermanual/avancee.rst:12 73aa7121c47b43ce986562d44a72d14f
+#: ../usermanual/avancee.rst:12
 msgid "Adapt to your graphical chart"
 msgstr "Adatta al grafico"
 
 # 3b8372bf5196483784a70dd21c9548bc
-#: ../usermanual/avancee.rst:14 3b8372bf5196483784a70dd21c9548bc
+#: ../usermanual/avancee.rst:14
 msgid ""
 "If you are comfortable with CSS stylesheets, you can adapt Galette CSS to "
 "fit your own colors. To achieve that, it is strongly discouraged to edit "
-"Galette CSS files, but rather the specific mecanism designed for that. "
+"Galette CSS files, but rather the specific mechanism designed for that. "
 "Create a ``galette_local.css`` file in your ``webroot/themes/default`` "
 "directory with your styles, it will be automatically included."
 msgstr ""
@@ -56,7 +56,7 @@ msgstr ""
 "propri stili, verranno automaticamente inclusi."
 
 # 4c117cdc3e114fe59486d6e5fa1ff289
-#: ../usermanual/avancee.rst:16 4c117cdc3e114fe59486d6e5fa1ff289
+#: ../usermanual/avancee.rst:16
 msgid ""
 "Try to keep things as simple as possible. For example, if you want to change "
 "association name color (displayed under pages titles), you will find in "
@@ -70,10 +70,10 @@ msgstr ""
 "stile, si avrà bisogno solo di quanto segue:"
 
 # 1e96e02eb7b34e39bd65c5c63a67501b
-#: ../usermanual/avancee.rst:24 1e96e02eb7b34e39bd65c5c63a67501b
+#: ../usermanual/avancee.rst:24
 msgid ""
 "This will be enough to display your association name in red. Note that local "
-"CSS file and all issues it may cause will not be took into account by the "
+"CSS file and all issues it may cause will not be taken into account by the "
 "Galette team, no support will be provided."
 msgstr ""
 "Questo sarà sufficiente per visualizzare il nome della propria associazione "
@@ -82,7 +82,7 @@ msgstr ""
 "alcun supporto."
 
 # fb6684b53601415f9a1227f60a605450
-#: ../usermanual/avancee.rst:26 fb6684b53601415f9a1227f60a605450
+#: ../usermanual/avancee.rst:26
 msgid ""
 "You also can override the print stylesheet, just create a "
 "``galette_print_local.css`` file."
@@ -91,12 +91,12 @@ msgstr ""
 "``galette_print_local.css``."
 
 # 0b370ab020e041978a129a9e9bd88e6b
-#: ../usermanual/avancee.rst:29 0b370ab020e041978a129a9e9bd88e6b
+#: ../usermanual/avancee.rst:29
 msgid "Add and change strings"
 msgstr "Aggiungere e modificare le stringhe"
 
 # 790842fad86747e3a276e1e17ed66b6a
-#: ../usermanual/avancee.rst:31 790842fad86747e3a276e1e17ed66b6a
+#: ../usermanual/avancee.rst:31
 msgid ""
 "It is possible if needed to customize translated strings in Galette - "
 "without editing any Galette source file. Just create a ``galette_{mylang}"
@@ -113,23 +113,24 @@ msgstr ""
 "nel codice sorgente Galette) come indice."
 
 # d4b7b7d2e60e49d4903903a8941c6438
-#: ../usermanual/avancee.rst:33 d4b7b7d2e60e49d4903903a8941c6438
+#: ../usermanual/avancee.rst:33
 msgid ""
 "As example,  we want to change the \"Password\" string on the login page in "
 "french, translated as `Mot de passe :`. The original string is `Password:` "
-"(see ``galette/templates/default/pages/index.html.twig``), its french translation is "
-"`Mot de passe :` and we want to replace it with `Secret :`; so we will "
-"create the ``galette_fr_FR.utf8_local_lang.php`` with the following contents:"
+"(see ``galette/templates/default/pages/index.html.twig``), its french "
+"translation is `Mot de passe :` and we want to replace it with `Secret :`; "
+"so we will create the ``galette_fr_FR.utf8_local_lang.php`` with the "
+"following contents:"
 msgstr ""
 "Ad esempio, vogliamo cambiare la stringa \"Password\" nella pagina di "
 "accesso in francese, tradotta come `Mot de passe :`. La stringa originale è "
-"`Password:` (vedere ``galette/templates/default/pages/index.html.twig``), la sua "
-"traduzione francese è `Mot de passe :` e vogliamo sostituirla con `Secret :"
-"`; quindi creeremo il ``galette_fr_FR.utf8_local_lang.php`` con il seguente "
-"contenuto:"
+"`Password:` (vedere ``galette/templates/default/pages/index.html.twig``), la "
+"sua traduzione francese è `Mot de passe :` e vogliamo sostituirla con "
+"`Secret :`; quindi creeremo il ``galette_fr_FR.utf8_local_lang.php`` con il "
+"seguente contenuto:"
 
 # 860fe6d76a224c0bba74e0bc108f9c6b
-#: ../usermanual/avancee.rst:41 860fe6d76a224c0bba74e0bc108f9c6b
+#: ../usermanual/avancee.rst:41
 msgid ""
 "Since Galette uses a cache system for translations, changes may not be "
 "visible immediately; you may have to restart PHP (or to clear cache). It is "
@@ -143,12 +144,12 @@ msgstr ""
 "le virgolette singole (con una barra rovesciata) in tutte le stringhe."
 
 # f928d85c3e2b44b7a87ecc7c848eb051
-#: ../usermanual/avancee.rst:43 f928d85c3e2b44b7a87ecc7c848eb051
+#: ../usermanual/avancee.rst:43
 msgid ""
-"You also can override langs for plugins using the sam method, just place the "
-"file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang."
-"php`` where `{plugin}` is the routing name you can find in the ``_define."
-"php`` file."
+"You also can override langs for plugins using the same method, just place "
+"the file in plugins lang directory and name it ``{plugin}_{mylang}"
+"_local_lang.php`` where `{plugin}` is the routing name you can find in the "
+"``_define.php`` file."
 msgstr ""
 "Si può anche imporrsi sui lang per i plugin usando il metodo sam, basta "
 "inserire il file nella cartella lang dei plugin e chiamarlo ``{plugin}"
@@ -156,7 +157,7 @@ msgstr ""
 "trova nel file ``_define.php``."
 
 # ae27f3e2e3fa4b67ad6fb55a30d83d00
-#: ../usermanual/avancee.rst:45 ae27f3e2e3fa4b67ad6fb55a30d83d00
+#: ../usermanual/avancee.rst:45
 msgid ""
 "This will work only if you use Galette translation features, and not with "
 "native gettext."
@@ -165,16 +166,31 @@ msgstr ""
 "gettext nativo."
 
 # 175f39314197485ea541b80324e86e63
-#: ../usermanual/avancee.rst:48 175f39314197485ea541b80324e86e63
+#: ../usermanual/avancee.rst:48
 msgid "Change session lifetime"
 msgstr "Modifica la durata della sessione"
 
-#: ../usermanual/avancee.rst:50 be24dd1f3fa94b5dacee5b25f1adecf7
+#: ../usermanual/avancee.rst:52
+msgid ""
+"The session lifetime is a setting stored in database, "
+"``pref_session_timeout``, reachable from the :ref:`advanced configuration "
+"<advanced_config>` page. The ``GALETTE_TIMEOUT`` constant still works and "
+"still wins over it."
+msgstr ""
+
+#: ../usermanual/avancee.rst:54
+#, fuzzy
+#| msgid ""
+#| "Per default, Galette will create session with default lifetime duration "
+#| "(and it seems browsers acts differently in this case). You can anyways "
+#| "define a constant named ``GALETTE_TIMEOUT`` to change session lifetime "
+#| "using :ref:`behavior configuration <behavior>`:"
 msgid ""
 "Per default, Galette will create session with default lifetime duration (and "
-"it seems browsers acts differently in this case). You can anyways define a "
-"constant named ``GALETTE_TIMEOUT`` to change session lifetime using :ref:"
-"`behavior configuration <behavior>`:"
+"it seems browsers act differently in this case). Set "
+"``pref_session_timeout`` from the :ref:`advanced configuration "
+"<advanced_config>` page to change it; the value is a number of seconds, and "
+"``0`` means until the browser is closed."
 msgstr ""
 "Per impostazione predefinita, Galette creerà sessioni con durata di vita "
 "predefinita (e sembra che i browser funzionino in modo diverso in questo "
@@ -182,13 +198,94 @@ msgstr ""
 "``GALETTE_TIMEOUT`` per cambiare la durata della sessione usando :ref:`la "
 "configurazione del comportamento <behavior>`:"
 
+#: ../usermanual/avancee.rst:56
+msgid ""
+"If the ``GALETTE_TIMEOUT`` constant is still declared in :ref:`behavior "
+"configuration <behavior>`, it takes precedence and the setting shows as "
+"*locked*. Remove it from that file to manage the lifetime from the page."
+msgstr ""
+
+#: ../usermanual/avancee.rst:61
+msgid "Change maximum upload size"
+msgstr ""
+
+#: ../usermanual/avancee.rst:65
+msgid ""
+"Each kind of upload has a maximum size of its own, stored in database. It "
+"used to be a single value, the same for every one of them, that could only "
+"be changed by editing a Galette source file."
+msgstr ""
+
+#: ../usermanual/avancee.rst:67
+msgid ""
+"Every file Galette accepts has a maximum size, and each kind of upload "
+"carries its own setting, reachable from the :ref:`advanced configuration "
+"<advanced_config>` page. Values are a number of kilobytes:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:69
+msgid ""
+"``pref_upload_size_images``: member pictures, association logo and card logo "
+"- and the pictures of the plugins that rely on the same mechanism. Defaults "
+"to ``2048``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:70
+msgid ""
+"``pref_upload_size_attachments``: files attached to an :ref:`e-mailing "
+"<emailing>`. Defaults to ``2048``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:71
+msgid ""
+"``pref_upload_size_documents``: the documents of the association. Defaults "
+"to ``2048``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:72
+msgid ""
+"``pref_upload_size_imports``: the CSV files handed to the members import. "
+"Defaults to ``2048``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:73
+msgid ""
+"``pref_upload_size_dynamic_files``: the files stored in a :ref:`dynamic "
+"field <dynamic_fields>` that declares no size of its own. A field that "
+"declares one uses it instead. Defaults to ``1024``."
+msgstr ""
+
+#: ../usermanual/avancee.rst:75
+msgid ""
+"Limits are in kilobytes; and displayed in the unit that fits, so the "
+"``2048`` above reads as *2 Mo*."
+msgstr ""
+
+#: ../usermanual/avancee.rst:79
+msgid ""
+"PHP has the last word. A file bigger than ``upload_max_filesize``, or a form "
+"bigger than ``post_max_size``, never reaches Galette whatever these settings "
+"say, and both are counted in a couple of megabytes in most PHP "
+"installations. Raise them in your ``php.ini`` first, otherwise the only "
+"thing you get is an error Galette never sees."
+msgstr ""
+
+#: ../usermanual/avancee.rst:81
+msgid ""
+"Attachments deserve a thought of their own before you raise them: a heavy "
+"file is sent to **every** recipient of the mailing, it weighs on your own "
+"mail server as much as on theirs, and it makes the message more likely to be "
+"taken for spam. A link to the file is often a better idea than the file "
+"itself."
+msgstr ""
+
 # 009f4a8642bc41fd8de77df9776d4481
-#: ../usermanual/avancee.rst:60 009f4a8642bc41fd8de77df9776d4481
+#: ../usermanual/avancee.rst:87
 msgid "Log IP addresses behind a proxy"
 msgstr "Registra gli indirizzi IP dietro un proxy"
 
 # 0dffc6fdd7c84dc1aafb69b6e91bcc94
-#: ../usermanual/avancee.rst:62 0dffc6fdd7c84dc1aafb69b6e91bcc94
+#: ../usermanual/avancee.rst:89
 msgid ""
 "If your Galette instance is behind a proxy, IP address stored in history "
 "will be the proxy one, and not the user one :("
@@ -196,41 +293,46 @@ msgstr ""
 "Se l'istanza Galette è dietro un proxy, l'indirizzo IP memorizzato nella "
 "storia sarà quello del proxy e non quello dell'utente :("
 
-#: ../usermanual/avancee.rst:64 58bf33403a6545b389d880de8c5aa65d
+#: ../usermanual/avancee.rst:93
 msgid ""
-"To fix that, use :ref:`behavior configuration <behavior>` to create a "
-"constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
+"The proxy depth is a setting stored in database, "
+"``pref_x_forwarded_for_index``, reachable from the :ref:`advanced "
+"configuration <advanced_config>` page. The ``GALETTE_X_FORWARDED_FOR_INDEX`` "
+"constant still works and still wins over it."
 msgstr ""
-"Per risolvere questo problema, utilizzare :ref:`la configurazione del "
-"comportamento <behavior>` per creare una costante denominata "
-"``GALETTE_X_FORWARDED_FOR_INDEX`` come:"
 
-# 812bdb7b79fc42f28edbefc5cf583291
-#: ../usermanual/avancee.rst:71 812bdb7b79fc42f28edbefc5cf583291
+#: ../usermanual/avancee.rst:95
 msgid ""
-"Each proxy server will add its own address on the list, example above will "
-"work only if there is only one proxy server."
+"To fix that, set ``pref_x_forwarded_for_index`` from the :ref:`advanced "
+"configuration <advanced_config>` page. Each proxy server appends its own "
+"address to the header, and the value is the position to read from the "
+"**end** of the list, starting at ``1``. So ``1`` is what you want behind a "
+"single reverse proxy, and ``0`` - the default - disables the lookup entirely."
 msgstr ""
-"Ogni server proxy aggiungerà il proprio indirizzo nell'elenco, l'esempio "
-"sopra funzionerà solo se c'è solo un server proxy."
 
-# f47cf8b5248649f09a8b5c6627e4c267
-#: ../usermanual/avancee.rst:75 f47cf8b5248649f09a8b5c6627e4c267
+#: ../usermanual/avancee.rst:99
 msgid ""
-"For security reasons, do not use this if your instance is not behind a proxy!"
+"For security reasons, leave it to ``0`` if your instance is not behind a "
+"proxy! Anyone could otherwise send an ``X-Forwarded-For`` header of their "
+"own and have it logged in place of their address."
 msgstr ""
-"Per motivi di sicurezza, da non utilizzare se l'istanza non è dietro un "
-"proxy!"
+
+#: ../usermanual/avancee.rst:101
+msgid ""
+"If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared "
+"in :ref:`behavior configuration <behavior>`, it takes precedence and the "
+"setting shows as *locked*."
+msgstr ""
 
 # b63fb714b73140d58f8bddce5af80d2d
-#: ../usermanual/avancee.rst:78 b63fb714b73140d58f8bddce5af80d2d
+#: ../usermanual/avancee.rst:104
 msgid "External stats"
 msgstr "Statistiche esterne"
 
 # 8bcd105d1b614a57ad7ebfc1bbc88516
-#: ../usermanual/avancee.rst:82 8bcd105d1b614a57ad7ebfc1bbc88516
+#: ../usermanual/avancee.rst:108
 msgid ""
-"Many statistics plaftforms relies on an extra  Javascript block to work. You "
+"Many statistics platforms rely on an extra  Javascript block to work. You "
 "can create a ``tracking.js`` file under ``webroot/themes/default`` "
 "directory, it will be automatically included."
 msgstr ""
@@ -239,7 +341,7 @@ msgstr ""
 "``webroot/themes/default``, esso verrà incluso automaticamente."
 
 # 28fb00fb44184a929e34b7a788048b05
-#: ../usermanual/avancee.rst:84 28fb00fb44184a929e34b7a788048b05
+#: ../usermanual/avancee.rst:110
 msgid ""
 "Galette uses Javascript to work. If the code you add in the ``tracking.js`` "
 "file is incorrect, this may break Galette!"
@@ -248,19 +350,19 @@ msgstr ""
 "``tracking.js`` è errato, si può bloccare Galette!"
 
 # 9c1b46e7a978430b869f0c6e3262fce2
-#: ../usermanual/avancee.rst:87 9c1b46e7a978430b869f0c6e3262fce2
+#: ../usermanual/avancee.rst:113
 msgid "CSV exports"
 msgstr "Esportazione in CSV"
 
-#: ../usermanual/avancee.rst:91 26b582832b4a4024a4aab9de0b8af0d1
+#: ../usermanual/avancee.rst:117
 msgid ""
-"You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file "
+"You can setup parameted exports with a `YAML <https://yaml.org/>`_ file "
 "instead of an XML one."
 msgstr ""
 "È possibile impostare le esportazioni dei parametri con un file `YAML "
 "<https://yaml.org/>`_ anziché con uno XML."
 
-#: ../usermanual/avancee.rst:93 2820fa30b5634d628a933ee340294131
+#: ../usermanual/avancee.rst:119
 msgid ""
 "Galette provides a parameted CSV exports system. Only one parameted export "
 "is provided, but you can add your own to the ``config/exports.yaml`` file."
@@ -269,7 +371,7 @@ msgstr ""
 "fornita solo un'esportazione con parametri, ma è possibile aggiungerne una "
 "propria al file ``config/exports.yaml``."
 
-#: ../usermanual/avancee.rst:97 638f77d6c9424d2dadc5dc2122b90398
+#: ../usermanual/avancee.rst:123
 msgid ""
 "Legacy XML configuration file is still supported; if a duplicate identifier "
 "is found, YAML file takes precedence."
@@ -277,12 +379,12 @@ msgstr ""
 "Il file di configurazione XML tradizionale è ancora supportato; ma se si "
 "trova un identificatore duplicato, il file YAML ha la precedenza."
 
-#: ../usermanual/avancee.rst:99 4986fbad39154b4aab68c8c771a72453
+#: ../usermanual/avancee.rst:125
 msgid "Let's examine existing \"cotisations\" parameted export:"
 msgstr ""
 "Esaminiamo i parametri di esportazione delle \"cotizzazioni\" esistenti:"
 
-#: ../usermanual/avancee.rst:123 76e592ed04ec4c1095ec565b9d31f587
+#: ../usermanual/avancee.rst:149
 msgid ""
 "each array entry is a unique identifier, lowercase without spaces or special "
 "character"
@@ -290,7 +392,7 @@ msgstr ""
 "ogni voce dell'array è un identificatore univoco, minuscolo senza spazi o "
 "caratteri speciali"
 
-#: ../usermanual/avancee.rst:124 2d6b845ad14c4aceaa3e365456bb4566
+#: ../usermanual/avancee.rst:150
 msgid ""
 "`name` and `description` are mandatory as used to display each parameted "
 "export in the user interface"
@@ -298,11 +400,11 @@ msgstr ""
 "`name` e `description` sono obbligatori poiché vengono utilizzati per "
 "visualizzare ciascuna esportazione con parametri nell'interfaccia utente"
 
-#: ../usermanual/avancee.rst:125 c655c88551534b388034f10660c4f032
+#: ../usermanual/avancee.rst:151
 msgid "`filename` sets the filename for output file"
 msgstr "`filename` imposta il nome del file per il file di uscita"
 
-#: ../usermanual/avancee.rst:126 2b65d20e45d84285b1e8c6a6b0d1d39d
+#: ../usermanual/avancee.rst:152
 msgid ""
 "`query` is the query to execute, it's mandatory. There is no other "
 "limitation than the SQL engine ones, expect you cannot send them any "
@@ -312,66 +414,66 @@ msgstr ""
 "oltre a quelle del motore SQL, ci si aspetta che non si possano inviare loro "
 "dei parametri"
 
-#: ../usermanual/avancee.rst:127 db6af6d37fd846d68983f7ce94f08e78
+#: ../usermanual/avancee.rst:153
 msgid "`headers` manages columns titles:"
 msgstr "`headers` gestisce i titoli delle colonne:"
 
-#: ../usermanual/avancee.rst:129 1b1da00e44084f5d851b162335747a37
+#: ../usermanual/avancee.rst:155
 msgid "like in the above example, an array of columns titles of your own"
 msgstr ""
 "come nell'esempio sopra, una serie di titoli di colonne di propria scelta"
 
-#: ../usermanual/avancee.rst:130 f4148065b88f4d8795b29bed86281c06
+#: ../usermanual/avancee.rst:156
 msgid ""
 "if not present, Galette fields names will be exported. You can use named "
 "columns in your SQL query (``SELECT nom_adh AS \"Column title\" FROM ...``)"
 msgstr ""
 "se non presente, i nomi dei campi Galette saranno esportati. È possibile "
-"utilizzare le colonne nominate nella query SQL "
-"(``SELECT nom_adh AS \"Titolo colonna\" FROM ...``)"
+"utilizzare le colonne nominate nella query SQL (``SELECT nom_adh AS \"Titolo "
+"colonna\" FROM ...``)"
 
-#: ../usermanual/avancee.rst:131 55d1a44d2ab04494896b755aac0fce46
+#: ../usermanual/avancee.rst:157
 msgid "set to false (``headers: false``) to disable column headers output"
 msgstr ""
 "impostare a falso (``headers: false``) per disabilitare le intestazioni "
 "delle colonne nell'uscita"
 
-#: ../usermanual/avancee.rst:133 c084f79e4dbe4d39b2e0f3995d53a966
+#: ../usermanual/avancee.rst:159
 msgid ""
 "`separator` is the CSV separator that will be used. Possible values are:"
 msgstr ""
 "`separator` è il separatore CSV che verrà utilizzato. Valori possibili sono:"
 
-#: ../usermanual/avancee.rst:135 c6c260f76c434d5ca47377d23214939c
+#: ../usermanual/avancee.rst:161
 msgid "semicolon (``;``) - default"
 msgstr "punto e virgola (``;``) - predefinito"
 
-#: ../usermanual/avancee.rst:136 d05d902a5c47491f8b83074efbf64a35
+#: ../usermanual/avancee.rst:162
 msgid "comma (``,``)"
 msgstr "virgola (``,``)"
 
-#: ../usermanual/avancee.rst:137 e5f2b9d1fa62489387935e409eb24695
+#: ../usermanual/avancee.rst:163
 msgid "tabulation character (``\\t``)"
 msgstr "carattere di tabulazione (``\\t``)"
 
-#: ../usermanual/avancee.rst:139 e571bc8e9a774e1b9b2cd14d40d7b603
+#: ../usermanual/avancee.rst:165
 msgid "`quote` either double quote - default - or simple quote character"
 msgstr "`quote` virgolette doppie - predefinito - oppure singolo apice"
 
-#: ../usermanual/avancee.rst:140 88168b2860a84585b0892da957c03d16
+#: ../usermanual/avancee.rst:166
 msgid "to disable an export, you can add ``inactive: true``"
 msgstr ""
 "per disabilitare un'esportazione, è possibile aggiungere ``inactive: true``"
 
 # dc42621488b548eeb7e07095bd7b6751
-#: ../usermanual/avancee.rst:145 dc42621488b548eeb7e07095bd7b6751
+#: ../usermanual/avancee.rst:171
 msgid "Administration tools"
 msgstr "Impostazioni amministratore"
 
 # 2a99707e02094b5398e801b4d43e7bc2
-#: ../usermanual/avancee.rst:149 2a99707e02094b5398e801b4d43e7bc2
+#: ../usermanual/avancee.rst:175
 msgid ""
-"All the admin tools operation are destructive, use it with cautions, and "
+"All the admin tools operations are destructive, use them with caution, and "
 "**make sure you did a database backup** before!"
 msgstr ""
 "Tutte le operazioni degli strumenti di amministrazione sono distruttive, "
@@ -379,14 +481,14 @@ msgstr ""
 "database**!"
 
 # 1c578f9418ed4d4b83b002c7d5c1ec12
-#: ../usermanual/avancee.rst:151 1c578f9418ed4d4b83b002c7d5c1ec12
+#: ../usermanual/avancee.rst:177
 msgid "There are a few tools provided for Galette admin that permits to:"
 msgstr ""
 "Ci sono alcuni strumenti forniti per l'amministratore di Galette che "
 "permettono di:"
 
 # 619acd95b45e475b9bd2b6e1b582f6da
-#: ../usermanual/avancee.rst:153 619acd95b45e475b9bd2b6e1b582f6da
+#: ../usermanual/avancee.rst:179
 msgid ""
 "**reinitialize mailings contents** will reset all emails contents to default "
 "values,"
@@ -395,7 +497,7 @@ msgstr ""
 "contenuti delle email ai valori predefiniti,"
 
 # 3032f80400cb4c2591dc166a2fb1a4a2
-#: ../usermanual/avancee.rst:154 3032f80400cb4c2591dc166a2fb1a4a2
+#: ../usermanual/avancee.rst:180
 msgid ""
 "**reinitialize fields configuration** will reset all members core fields to "
 "their default value. This does not imply dynamic fields,"
@@ -405,14 +507,15 @@ msgstr ""
 "dinamici,"
 
 # feabe0c1c39c4fad927c3e0aa5fadaf3
-#: ../usermanual/avancee.rst:155 feabe0c1c39c4fad927c3e0aa5fadaf3
-msgid "**reinitialize PDF models** will reset ll PDF models to default values,"
+#: ../usermanual/avancee.rst:181
+msgid ""
+"**reinitialize PDF models** will reset all PDF models to default values,"
 msgstr ""
 "**reinizializza modelli PDF** ripristinerà tutti i modelli PDF ai valori "
 "predefiniti,"
 
 # 88ed7f55ed2c4fab90a780919349b47d
-#: ../usermanual/avancee.rst:156 88ed7f55ed2c4fab90a780919349b47d
+#: ../usermanual/avancee.rst:182
 msgid ""
 "**generate empty logins and passwords** those information are required to "
 "improve security, but sometimes missing (if you import a CSV for example). "
@@ -424,7 +527,7 @@ msgstr ""
 "esempio). Questa funzione imposterà valori casuali come campi di login e "
 "password che rimarrebbero vuoti nel database."
 
-#: ../usermanual/avancee.rst:157 43304efcd2b14338b8ada3638077f2ab
+#: ../usermanual/avancee.rst:183
 msgid ""
 "**Fix dynamic fields dates format** will convert all dynamic fields dates to "
 "the new format (see :ref:`dynamic fields <dynamic_fields>`)."
@@ -433,24 +536,221 @@ msgstr ""
 "date dei campi dinamici nel nuovo formato (vedi :ref:`campi dinamici "
 "<dynamic_fields>`)."
 
-#: ../usermanual/avancee.rst:162 d8edd5f7d98e4b12b1078f5ea0ac024d
+#: ../usermanual/avancee.rst:188
+msgid "Draining the mail queue"
+msgstr ""
+
+#: ../usermanual/avancee.rst:194
+msgid "Use **one** drainer at a time!"
+msgstr ""
+
+#: ../usermanual/avancee.rst:196
+msgid ""
+"Nothing prevents two of them from picking the same pending recipients at the "
+"same moment, message would be sent twice - and that could cause other errors "
+"anyway."
+msgstr ""
+
+#: ../usermanual/avancee.rst:198
+msgid ""
+"As soon as an hourly or daily :ref:`sending limit <mail_throttling>` is set, "
+"Galette stops sending mass mailings and reminders in a single page load. It "
+"queues one entry per recipient in database, and drains that queue "
+"progressively."
+msgstr ""
+
+#: ../usermanual/avancee.rst:200
+msgid ""
+"The progress page does it from your browser, which is enough most of the "
+"time, but it requires that page to stay open. Two other drainers are "
+"provided, and neither needs anybody to be logged in."
+msgstr ""
+
+#: ../usermanual/avancee.rst:202
+msgid "A cron script, next to the reminders one:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:208
+msgid "And a console command, :doc:`from the command line </command-line>`:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:214
+msgid ""
+"The command asks for confirmation before sending anything, since the feature "
+"is still in alpha. Add ``--force`` to skip the question, which is what a "
+"cron entry calling the command would need."
+msgstr ""
+
+#: ../usermanual/avancee.rst:216
+msgid ""
+"Both send batch after batch, waiting the configured delay between two "
+"messages, until the queue is empty or the quota is reached. They stop rather "
+"than wait for the quota window to open again, so what is left goes out on "
+"the next run: calling them regularly is the whole point."
+msgstr ""
+
+#: ../usermanual/avancee.rst:220
+msgid ""
+"Like the reminders script, ``cron/mailing_queue.php`` needs the address of "
+"your instance, since it runs with no incoming request to guess it from. Set "
+"``pref_galette_url`` from the :ref:`advanced configuration "
+"<advanced_config>`, or keep the ``GALETTE_URI`` constant."
+msgstr ""
+
+#: ../usermanual/avancee.rst:225
+#, fuzzy
+#| msgid "Behavior configuration"
+msgid "Advanced configuration"
+msgstr "Configurazione del comportamento"
+
+#: ../usermanual/avancee.rst:229
+msgid ""
+"The settings form only shows a curated set of settings. The **Configuration "
+"> Advanced configuration** entry lists them **all**, one row per setting, "
+"including those that have no place on the form and those that used to be "
+"reachable only by editing a PHP file."
+msgstr ""
+
+#: ../usermanual/avancee.rst:233
+msgid ""
+"This page can break your installation, be very careful. Values are checked, "
+"but a setting that is perfectly valid can still be wrong for your instance, "
+"and nothing asks you to confirm before storing it."
+msgstr ""
+
+#: ../usermanual/avancee.rst:235
+#, fuzzy
+#| msgid "Behavior configuration"
+msgid "Galette advanced configuration"
+msgstr "Configurazione del comportamento"
+
+#: ../usermanual/avancee.rst:240
+msgid ""
+"Only the super administrator can reach the page, and the password is asked "
+"again before it opens. The confirmation is remembered for fifteen minutes; "
+"after that, or after a new login, it is asked again."
+msgstr ""
+
+#: ../usermanual/avancee.rst:242
+msgid "Password asked before the advanced configuration page opens"
+msgstr ""
+
+#: ../usermanual/avancee.rst:247
+msgid ""
+"Settings are saved **one at a time**: each row has its own **Save** button, "
+"and a **Reset to default** button appears as soon as the value differs from "
+"the one Galette ships with. Nothing is submitted for the whole page, so a "
+"mistake on one row cannot take the others with it."
+msgstr ""
+
+#: ../usermanual/avancee.rst:249
+msgid ""
+"A value goes through the very same checks as the settings form, and is "
+"refused with the same messages: a number outside its bounds, a malformed "
+"email address, but also a change that would break a rule *between* settings, "
+"such as setting both a membership extension and a fixed beginning of "
+"membership."
+msgstr ""
+
+#: ../usermanual/avancee.rst:251
+msgid ""
+"A search field above the table filters the rows on the setting name. It "
+"needs Javascript; without it the whole list is displayed."
+msgstr ""
+
+#: ../usermanual/avancee.rst:253
+msgid "Each row carries a status, also recalled in the page legend:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:255
+msgid "**default**: never changed, the value Galette ships with,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:256
+msgid ""
+"**modified**: changed from the default, here or from the settings form. It "
+"can be reset,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:257
+msgid ""
+"**read-only**: Galette maintains this value itself, such as a generated "
+"identifier or a date it records. It is shown for information only,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:258
+msgid ""
+"**secret**: a password or a token. Its value is never displayed, only "
+"whether one is set, and it is changed from the settings form,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:259
+msgid ""
+"**locked**: a constant declared in :ref:`behavior.inc.php <behavior>` takes "
+"precedence over the stored value. Remove it from that file to manage the "
+"setting from here,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:260
+msgid ""
+"**unknown**: a row found in database that Galette does not describe. It may "
+"come from an older version or from a plugin. It is displayed, never edited."
+msgstr ""
+
+#: ../usermanual/avancee.rst:262
+msgid ""
+"A setting can also carry an **alpha** label, on top of its status. It drives "
+"a feature that has not been through a release yet: it works, but it has seen "
+"little use. Try it on a test instance before your production one, and "
+"`report what you find <https://bugs.galette.eu>`_."
+msgstr ""
+
+#: ../usermanual/avancee.rst:264
+msgid "The statuses a setting can carry"
+msgstr ""
+
+#: ../usermanual/avancee.rst:269
+msgid ""
+"A setting only shows an input when it can be edited from there. In the "
+"example below, ``pref_x_forwarded_for_index`` is locked by a constant and "
+"only displays what applies, while ``pref_session_timeout``, right after it, "
+"is editable:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:271
+msgid "A locked setting, and an editable one"
+msgstr ""
+
+#: ../usermanual/avancee.rst:276
+msgid ""
+"A second table, below the settings, lists the constants ``behavior.inc.php`` "
+"understands, whether each one is currently declared, and what it is set to. "
+"It is there so you can see how the instance is configured without opening "
+"the file. A constant a setting now replaces only appears in that table while "
+"it is declared, along with a link to the setting it overrides."
+msgstr ""
+
+#: ../usermanual/avancee.rst:278
+msgid "Constants behavior.inc.php understands"
+msgstr ""
+
+#: ../usermanual/avancee.rst:286
 msgid "Galette modes"
 msgstr "Modalità di Galette"
 
-#: ../usermanual/avancee.rst:164 e2055e48ed054f34aa542de29b59583f
+#: ../usermanual/avancee.rst:288
 msgid ""
 "Several modes are provided in Galette you can configure with "
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
 "<behavior>`). This directive can take the following values:"
 msgstr ""
 "È possibile configurare Galette con varie modalità di cui è fornito con la "
-"costante ``GALETTE_MODE`` "
-"(:ref:`vedere configurazione comportamento di Galette <behavior>`). Questa "
-"direttiva può assumere i seguenti valori:"
+"costante ``GALETTE_MODE`` (:ref:`vedere configurazione comportamento di "
+"Galette <behavior>`). Questa direttiva può assumere i seguenti valori:"
 
-#: ../usermanual/avancee.rst:166 ef4616e506c940c28f23c8482a5d80ef
+#: ../usermanual/avancee.rst:290
 msgid ""
-"``PROD``: production mode (non production instance should be on an other "
+"``PROD``: production mode (non production instance should be on another "
 "mode). This is the default mode for releases, but it may change in "
 "development branch."
 msgstr ""
@@ -458,7 +758,7 @@ msgstr ""
 "essere su un'altra modalità). Questa è la modalità predefinita per i "
 "rilasci, ma può cambiare nel ramo di sviluppo."
 
-#: ../usermanual/avancee.rst:167 edd8fc6e54bd4573b29a3b4f3a42fcff
+#: ../usermanual/avancee.rst:291
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
@@ -467,21 +767,21 @@ msgstr ""
 "caratteristiche disabilitate come l'invio di e-mail, la modifica dei dati "
 "superadmin, ..."
 
-#: ../usermanual/avancee.rst:168 58edd5fb363441bb8b6c16e611bca56a
+#: ../usermanual/avancee.rst:292
 msgid "``TEST``: reserved for unit tests."
 msgstr "``TEST``: riservata agli unit test."
 
-#: ../usermanual/avancee.rst:169 53fad056e86c433cb702eb054bfa3c32
-msgid "``MAINT``: maintainance mode. Only super admin will be able to login."
+#: ../usermanual/avancee.rst:293
+msgid "``MAINT``: maintenance mode. Only super admin will be able to login."
 msgstr ""
 "``MAINT``: modalità di manutenzione. Solo il super amministratore sarà in "
 "grado di effettuare il login."
 
-#: ../usermanual/avancee.rst:174 b61851b56ee84b698065555decc5b03d
+#: ../usermanual/avancee.rst:298
 msgid "Galette Debug"
 msgstr "Debug di Galette"
 
-#: ../usermanual/avancee.rst:178 ce4fe39f0d024bd7b29ff27257538228
+#: ../usermanual/avancee.rst:302
 msgid ""
 "A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug "
 "mode. With this mode on:"
@@ -489,59 +789,167 @@ msgstr ""
 "Un nome costante dedicato ``GALETTE_DEBUG``` può essere utilizzato per "
 "abilitare la modalità debug. Con questa modalità abilitata:"
 
-#: ../usermanual/avancee.rst:180 009a52199c584e54ae7156c1a22ac0f5
+#: ../usermanual/avancee.rst:304
 msgid "unstable/not finished parts will be activated,"
 msgstr "parti instabili/non finite verranno attivate,"
 
-#: ../usermanual/avancee.rst:181 a73bd7b04767463897f20306f1e84873
+#: ../usermanual/avancee.rst:305
 msgid "some data will not be stored in session,"
 msgstr "alcuni dati non saranno memorizzati nella sessione,"
 
-#: ../usermanual/avancee.rst:182 a25b4b21b8c24e15952363a73165be58
+#: ../usermanual/avancee.rst:306
 msgid "default log level is set to ``DEBUG``,"
 msgstr "il livello di log predefinito sarà impostato a ``DEBUG``,"
 
-#: ../usermanual/avancee.rst:183 56cb2c250ab246c1838e90719c47bf10
+#: ../usermanual/avancee.rst:307
 msgid "news won't be cached,"
 msgstr "le notizie non verranno memorizzate,"
 
-#: ../usermanual/avancee.rst:184 ccd4bd9fae2d4456b4e5496ea9372f16
+#: ../usermanual/avancee.rst:308
 msgid "database version check will not be done."
 msgstr "il controllo versione database non sarà eseguito."
 
-#: ../usermanual/avancee.rst:190 49b49d1f899b4984ab40f99592260c37
+#: ../usermanual/avancee.rst:314
 msgid "Behavior configuration"
 msgstr "Configurazione del comportamento"
 
-#: ../usermanual/avancee.rst:192 582fcfa42dcf4f25ba5d25e867335d2c
-msgid "It is possible to change some of Galette behaviors:"
-msgstr "È possibile cambiare alcuni comportamenti di Galette:"
-
-#: ../usermanual/avancee.rst:194 3ccd872ee4714d2881791db050c3d950
-msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
-msgstr "`GALETTE_DEBUG`: :ref:`vedere Debug di Galette <debug>`;"
-
-#: ../usermanual/avancee.rst:195 5c491a6f323644ee8fa78f0c853c5cef
+#: ../usermanual/avancee.rst:316
 msgid ""
-"you'll find in related part of the documentation you can use behavior "
-"configuration for some other usages (such as PDF cards settings, session "
-"lifetime, ...)."
+"Some of Galette behaviors are set by declaring constants in the ``galette/"
+"config/behavior.inc.php`` file. A commented example of every one of them "
+"ships as ``behavior.inc.php.dist``, next to it."
 msgstr ""
-"troverete nella parte relativa della documentazione che è possibile "
-"utilizzare la configurazione del comportamento per altri usi (come le "
-"impostazioni delle schede PDF, la durata della sessione, ...)."
 
-#: ../usermanual/avancee.rst:197 88cf7861b81a4bfbb6d39b8f270f310b
-msgid ""
-"You can add those directives by declaring constants in the ``galette/config/"
-"behavior.inc.php``."
-msgstr ""
-"È possibile aggiungere queste direttive dichiarando costanti in ``galette/"
-"config/behavior.inc.php``."
-
-#: ../usermanual/avancee.rst:199 9641a12858be4e69b464edfd5943815b
+#: ../usermanual/avancee.rst:318
 msgid "For example:"
 msgstr "Per esempio:"
+
+#: ../usermanual/avancee.rst:327
+msgid ""
+"Only the settings Galette needs **before it can reach database** are still "
+"declared here. The others became regular settings, editable from "
+"the :ref:`advanced configuration <advanced_config>` page."
+msgstr ""
+
+#: ../usermanual/avancee.rst:329
+msgid "The following settings can be set:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:331
+#, fuzzy
+#| msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
+msgid "``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,"
+msgstr "`GALETTE_DEBUG`: :ref:`vedere Debug di Galette <debug>`;"
+
+#: ../usermanual/avancee.rst:332
+#, fuzzy
+#| msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
+msgid ""
+"``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,"
+msgstr "`GALETTE_DEBUG`: :ref:`vedere Debug di Galette <debug>`;"
+
+#: ../usermanual/avancee.rst:333
+msgid ""
+"``GALETTE_LOG_LVL``: verbosity of the logs, as an `Analog <https://"
+"github.com/jbroadway/analog>`_ level. Defaults to ``WARNING``, or ``DEBUG`` "
+"in debug mode,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:334
+msgid ""
+"``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:335
+msgid ""
+"``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. "
+"They only apply in debug mode."
+msgstr ""
+
+#: ../usermanual/avancee.rst:338
+msgid "Settings that moved"
+msgstr ""
+
+#: ../usermanual/avancee.rst:342
+msgid ""
+"Three settings that used to be declared here are now stored in database, and "
+"edited from the :ref:`advanced configuration <advanced_config>` page:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:344
+msgid "``GALETTE_URI`` became ``pref_galette_url``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:345
+msgid ""
+"``GALETTE_X_FORWARDED_FOR_INDEX`` became "
+"``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a "
+"proxy <proxy_ip>`,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:346
+msgid "``GALETTE_TIMEOUT`` became ``pref_session_timeout``."
+msgstr ""
+
+#: ../usermanual/avancee.rst:348
+msgid ""
+"Declaring one of them still works, and **still takes precedence over the "
+"stored value**: nothing breaks on upgrade. Galette then writes a warning in "
+"its logs, and the advanced configuration page shows the setting as *locked*, "
+"naming the constant responsible. Remove it from ``behavior.inc.php`` to "
+"manage the setting from the page."
+msgstr ""
+
+#: ../usermanual/avancee.rst:352
+msgid ""
+"``pref_galette_url`` is the one setting the :ref:`reminders cron script "
+"<reminders>` cannot do without: it runs with no incoming request, so it has "
+"no way of guessing the address of your instance. Set it - or keep the "
+"constant - if you automate reminders."
+msgstr ""
+
+#~ msgid ""
+#~ "To fix that, use :ref:`behavior configuration <behavior>` to create a "
+#~ "constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:"
+#~ msgstr ""
+#~ "Per risolvere questo problema, utilizzare :ref:`la configurazione del "
+#~ "comportamento <behavior>` per creare una costante denominata "
+#~ "``GALETTE_X_FORWARDED_FOR_INDEX`` come:"
+
+# 812bdb7b79fc42f28edbefc5cf583291
+#~ msgid ""
+#~ "Each proxy server will add its own address on the list, example above "
+#~ "will work only if there is only one proxy server."
+#~ msgstr ""
+#~ "Ogni server proxy aggiungerà il proprio indirizzo nell'elenco, l'esempio "
+#~ "sopra funzionerà solo se c'è solo un server proxy."
+
+# f47cf8b5248649f09a8b5c6627e4c267
+#~ msgid ""
+#~ "For security reasons, do not use this if your instance is not behind a "
+#~ "proxy!"
+#~ msgstr ""
+#~ "Per motivi di sicurezza, da non utilizzare se l'istanza non è dietro un "
+#~ "proxy!"
+
+#~ msgid "It is possible to change some of Galette behaviors:"
+#~ msgstr "È possibile cambiare alcuni comportamenti di Galette:"
+
+#~ msgid ""
+#~ "you'll find in related part of the documentation you can use behavior "
+#~ "configuration for some other usages (such as PDF cards settings, session "
+#~ "lifetime, ...)."
+#~ msgstr ""
+#~ "troverete nella parte relativa della documentazione che è possibile "
+#~ "utilizzare la configurazione del comportamento per altri usi (come le "
+#~ "impostazioni delle schede PDF, la durata della sessione, ...)."
+
+#~ msgid ""
+#~ "You can add those directives by declaring constants in the ``galette/"
+#~ "config/behavior.inc.php``."
+#~ msgstr ""
+#~ "È possibile aggiungere queste direttive dichiarando costanti in ``galette/"
+#~ "config/behavior.inc.php``."
 
 #~ msgid "database verion check will not be done."
 #~ msgstr "la verifica della versione del database non verrà effettuata."

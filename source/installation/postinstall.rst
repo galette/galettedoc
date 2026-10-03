@@ -7,9 +7,10 @@ Post installation
 Various tasks
 =============
 
-One Galette properly installed, you still have one thing to do:
+One Galette properly installed, you still have a couple of things to do:
 
-* remove write access to the ``config`` directory.
+* remove write access to the ``config`` directory,
+* check the ``data/ENABLE_INSTALL`` file is gone. Galette removes it on its own at the end of the installation, but it warns you instead of failing silently when it cannot - see :ref:`enabling the installer <enableinstaller>`.
 
 .. _configpaths:
 
@@ -32,13 +33,13 @@ Instead, you may override some or all of the values in a ``config/local_paths.in
 All paths that originally resides in ``data`` directory must stay accessible read/write for the web server. All other directories should be set as read only, the web server should not have to write in them. Here is the complete list:
 
 * `GALETTE_CONFIG_PATH` : path to Galette configuration files,
-* `GALETTE_DATA_PATH` : path to Galette data directory (since 0.8),
+* `GALETTE_DATA_PATH` : path to Galette data directory,
 * `GALETTE_LOGS_PATH` : Galette logs path, change it as you want,
-* `GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,
-* `GALETTE_CACHE_DIR` : caching directory for a few cases,
+* `GALETTE_CACHE_DIR` : caching directory, including compiled templates,
 * `GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,
 * `GALETTE_IMPORTS_PATH` : path to the directory that contains CSV files to import,
 * `GALETTE_ATTACHMENTS_PATH` : path to attached documents in mailing,
+* `GALETTE_DOCUMENTS_PATH` : path to the :ref:`documents <documents>` of the association,
 * `GALETTE_FILES_PATH` : path to the dynamic files directory storage (from dynamic fields),
 * `GALETTE_PHOTOS_PATH` : path to store members photos and logos.
 
@@ -50,3 +51,13 @@ You and your members will login to Galette, using a login and a password. You mu
 This problem is recurrent hen you have to send data over the internet, and this is why you must check if you are on a HTTPS secured page (your browser will tell you), when you enter any sensitive information such as login, passwords, credit card number, ...
 
 And this is the same for Galette, you can use it along with SSL, no problem. All data that will be transmitted to the server will be a bit more confident and secured :)
+
+Since Galette 1.3.0, you can also ask for :ref:`a second factor at login <pref_2fa>`, so that a password that leaked is not enough on its own.
+
+.. note::
+
+   Codes are computed from the current time: make sure your server clock is right, and kept right (NTP). A server drifting away refuses every code, without saying why.
+
+   Before enabling a second factor on the super administrator account, check you can reach your database. That account has no recovery codes, and :ref:`clearing its second factor <faq_2fa>` is done there.
+
+   Which also means: a second factor protects the login form, not the server. Whoever can write in your database or in your configuration file can turn it off. Keep both out of reach.

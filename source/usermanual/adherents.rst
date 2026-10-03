@@ -82,7 +82,7 @@ Most of the times, the result is transparent. Just note ordering on `status` wil
 Configure CSV fields
 ^^^^^^^^^^^^^^^^^^^^
 
-Per default, CSV export for a members selection will provide same fields as the ones that are displayed on screen. It is possible to change this behavior specifiying yourself which fields must be exported in the ``galette/config/local_export_fields.inc.php`` file. If for example you only want identifier, first and last member names, the content of the file will be:
+Per default, CSV export for a members selection will provide same fields as the ones that are displayed on screen. It is possible to change this behavior by specifying yourself which fields must be exported in the ``galette/config/local_export_fields.inc.php`` file. If for example you only want identifier, first and last member names, the content of the file will be:
 
 .. code-block:: php
 
@@ -133,6 +133,8 @@ Once the HTML editor is enabled, the checkbox to handle HTML tags is automatical
 It is also possible to add attachements, just click on the `Browse` button in that attachements section. If your browser is compatible, you can add several files at once (using `Shift` and `Ctrl` keys).
 All attachements are stored on disk, under a directory named with the mailing identifier (automatically defined from database).
 
+Each attachment has a maximum size of its own, which you can :ref:`change from the advanced configuration <upload_sizes>` page.
+
 `Preview` button let you preview your message before sending it.
 
 .. image:: ../_styles/static/images/usermanual/mailing_preview.png
@@ -143,6 +145,41 @@ All attachements are stored on disk, under a directory named with the mailing id
 Any started emailings will be stored in your session to be retrieved in the future. An icon will be displayed in pages titles when a mailing is progress and will provide a link to go to it.
 
 If you want, you can cancel this mailing using the `Cancel mailing` button, it will be deleted from your session. If you want to store it for a longer time, you can add the `Save` button. It will then be stored in the mailings list, and you will be able to grab it later.
+
+.. _mailing_queue:
+
+Sending large mailings
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+By default, a mailing is a single message, sent right away, carrying every recipient in blind copy - but mail servers restrict what one message may carry, and how fast you may send.
+
+.. warning::
+
+   Using your "personal" SMTP provider is often not a good idea; dedicated services are better suited for large mailings.
+
+   And you even may have limits on a dedicated service.
+
+Galette :ref:`sending limits <mail_throttling>` changes what happens once you confirm the sending:
+
+* with a **batch size** set, Galette splits the recipients into several messages of at most that size, and waits the configured delay between two of them. Sending stays synchronous: the confirmation comes once everything has left,
+* with an **hourly or daily limit** set, sending cannot be done in one go any more. Galette stores the mailing, queues one entry per recipient, and takes you to a progress page.
+
+The progress page sends the mailing batch after batch and shows how far it is: recipients sent, remaining and failed, and what the quota has consumed so far. Leave it open until it announces the mailing has been sent.
+
+.. image:: ../_styles/static/images/usermanual/mailing_queue.png
+   :scale: 50%
+   :align: center
+   :alt: A mailing being sent, halfway through its queue
+
+Nothing is lost if you close it, or if the quota runs out before the end: the queue is stored in database. The page then tells you sending will resume later, and the remaining recipients go out either when you open the mailing again, or from a :ref:`drainer running outside the browser <mailing_queue_cron>`.
+
+.. note::
+
+   The progress page is the only thing a queued mailing *needs*. Galette proposes alternative methods to :ref:`drain the mail queue <mailing_queue_cron>` we really recommends ;-)
+
+A queued mailing is stored in the history right away, and only counts as **sent** once its last recipient has left the queue.
 
 Mailings history
 ^^^^^^^^^^^^^^^^
@@ -192,7 +229,7 @@ When in the current model tab, you can download an empty model from the `Generat
 Import
 ^^^^^^
 
-Once you have retrieved and fill the empty file, you have to send it using the form `Send a new file`. At this step, Galette will check your file extension is ``csv`` (or ``txt``) and it size does not exceed maximum upload file size (2Mio per default in PHP).
+Once you have retrieved and fill the empty file, you have to send it using the form `Send a new file`. At this step, Galette will check your file extension is ``csv`` (or ``txt``) and its size does not exceed the :ref:`maximum size allowed for imports <upload_sizes>` (2 Mo by default).
 
 .. note::
 
@@ -209,7 +246,7 @@ The `dry run` checkbox (checked per default) is designed to test your file data 
 
 When you import a CSV file, if one line is incorrect, previous ones may be stored in the database already; so it is advised to use the dry-run before to get error fixed.
 
-You will have error messages than something went wrong (in dry-run mode or not):
+Galette displays error messages if something went wrong, in dry-run mode or not.
 
 .. note::
 
@@ -230,6 +267,21 @@ The other interesting point of this system is you can retrieve some information 
 
 .. note:: Members without email adresses cannot use the "retrieve password" feature. This does not affect the uniqueness email constraint in the database.
 
+.. _member_2fa_reset:
+
+Resetting a second factor
+=========================
+
+.. versionadded:: 1.3.0
+
+A member who lost the device computing their codes, and has no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From the member page, administrators and staff members can reset their second factor: the secret and the remaining recovery codes are dropped, and the member logs in with their password alone until they enrol again.
+
+A reset only ever goes downwards. Your own second factor is not reset from here -- use your own page, which asks for a code first, so that a session somebody else found open cannot remove it. A staff member cannot reset an administrator's, and an administrator cannot reset another administrator's: only the super administrator can.
+
+.. warning::
+
+   Do check who is asking. Resetting a second factor removes a protection, and a phone call claiming to be a member is exactly how somebody would go about getting one removed. The reset is recorded in the history, with who did it and for whom.
+
 Impersonating
 =============
 
@@ -237,4 +289,4 @@ Impersonating
 
 Some issues may be related to a particular account, because of its ACLs, groups, ... In this case, it is unfortunately frequent to see some credentials sent by insecure emails; which should really be avoid.
 
-As super administrator user, you wil see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonated the user, you can reproduce the issue and fix it or get all required information to report the issue upstream.
+As super administrator user, you will see an extra icon in the members list, allowing you to log in as selected user without his credentials. Once you've impersonated the user, you can reproduce the issue and fix it or get all required information to report the issue upstream.

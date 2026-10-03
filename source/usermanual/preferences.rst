@@ -30,7 +30,7 @@ This tab defines some parameters related to your association:
   * either **from a member** to use address from a staff member,
 
 * **Website**: website URL,
-* **Telemetry date**: date on which `telemetry infomations <https://telemetry.galette.eu>`_ was sent,
+* **Telemetry date**: date on which `telemetry information <https://telemetry.galette.eu>`_ was sent,
 * **Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_
 
 Social networks
@@ -64,11 +64,6 @@ Galette related parameters:
   * go to members list,
   * go to main page,
 
-* **Logging**: handles internal history:
-
-  * Enabled,
-  * Disabled,
-
 * **Default membership status**: the status to affect to all new created users (can be changed on creation form if current user have rights),
 * **Default account filter**: default account filter to apply on members list,
 * **Default membership extension**: membership extension in months,
@@ -80,7 +75,7 @@ Galette related parameters:
   * **Up to date members**,
   * **Administrators and staff members**,
 
-* **Self subscription enabled**: enable or disable self subscription feature,
+* **Self registration enabled**: enable or disable self registration feature,
 * **Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:
 
   * **galette://**: call a script provided by Galette that will be called with the HTTP POST method. Path must be relative to your Galette installation. For example, the URI for the ``galette/post_contribution_test.php`` example script would be `galette://post_contribution_test.php`.
@@ -89,7 +84,7 @@ Galette related parameters:
 
 .. warning::
 
-   Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsability**.
+   Using ``file://`` method can be dangerous, Galette just call the provided script, usage and security of the script is **under your own responsibility**.
 
 * **Appearance** : these settings allow you to adapt the default appearance of Galette to your needs.
 
@@ -122,7 +117,7 @@ Define few extra rights:
 * **Can group managers create members?** groups managers can create members attached to their groups.
 * **Can group managers edit members?** groups managers can edit member of their groups information.
 * **Can group managers send mailings?** groups manager can send mailings.
-* **Can group managers do exports?** groups managers cen export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
+* **Can group managers do exports?** groups managers can export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
 * **Can group managers see contributions?** groups managers can see contributions of members of their groups.
 * **Can group managers create contributions?** groups managers can create contributions on behalf of members of their groups.
 * **Can group managers see transactions?** groups managers can see transactions of members of their groups.
@@ -156,23 +151,66 @@ Sending email parameters:
   * **Emailing disabled**: no email will be send from Galette,
   * **PHP mail function**: uses the PHP ``mail()`` fonctions and related parameters (recommended when possible),
   * **Using a SMTP server**: uses an external SMTP server to configure (will be slower than PHP ``mail()`` function),
-  * **Using GMail as SMTP**: same as SMTP server, but GMail specific (will also be slower than PHP ``mail()`` function),
   * **Using sendmail server**: uses local server sendmail,
-  * **Using qmail server**: uses local server qmail,
 
 * **Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application.
 
-When using GMail as SMTP, you will have to configure user name and password to use.
+.. versionchanged:: 1.3.0
 
-SMTP configuration is a bit more complexe :
+   * The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated.
+   * The **GMail** method has been removed. Instances still configured with it are switched to ``SMTP`` when the database is updated.
+
+When using SMTP, you will have to configure user name and password to use.
+
+SMTP configuration is a bit more complex :
 
 * **SMTP server**: server address, required,
 * **SMTP port**: server port, required,
 * **Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,
-* **Use TLS for SMTP**: enable SSL support (always on for GMail),
+* **Use TLS for SMTP**: enable SSL support,
 * **Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example).
 
-The `Test mail settings` button will send a test message to the email currently stored as members administrator.
+.. _mail_throttling:
+
+Sending limits
+^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+.. warning::
+
+   This is an **experimental** feature.
+
+   Try it on a test instance before your production one, watch carefully, and `report what you find <https://bugs.galette.eu>`_. Leaving the settings at their default keeps Galette sending exactly as it always did.
+
+Mail servers are rarely willing to accept anything you throw at them. They restrict the number of recipients a single message may carry, the number of messages a connection may carry, or the number of messages you may send per hour or per day. Galette can respect those restrictions, from five settings of the :ref:`advanced configuration <advanced_config>` page:
+
+* ``pref_mail_batch_size``: maximum number of recipients per message. ``0``, the default, keeps the historical behavior: one single message carrying every recipient in blind copy,
+* ``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by default, no pause,
+* ``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, the default, means no limit,
+* ``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the default, means no limit,
+* ``pref_mail_smtp_keepalive``: keep the SMTP connection open across the messages of a mailing instead of reconnecting for each one. Enabled by default.
+
+Apart from the keepalive, they all ship disabled: an instance that is updated behaves exactly as it did before.
+
+Filter the advanced configuration on ``pref_mail_`` to get them all, next to the SMTP settings. The four that drive the queue carry the **alpha** marker:
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_mail_limits.png
+   :scale: 50%
+   :align: center
+   :alt: The sending limits, in the advanced configuration
+
+Refer to your mail provider's documentation for the values to use, along with the SMTP settings.
+
+.. note::
+
+   The hourly and daily limits are what turns sending into a :ref:`queue <mailing_queue>`: as soon as one of them is set, a mailing can no longer be sent in a single page load.
+
+.. note::
+
+   Limits count **recipients**, not messages, and for all messages Galette send.
+
+   The real limit of course depends on all usages of configured server.
 
 Labels
 ======
@@ -189,6 +227,8 @@ Cards
    :scale: 50%
    :align: center
    :alt: Galette settings, cards tab
+
+.. _password_rules:
 
 Security
 ========
@@ -263,14 +303,41 @@ This check rely on strength activation (all but **none** level). For the super-a
 
 Basically, user cannot use verbatim any of those information as password. Some possible combinations are also checked, like surname and name couple (or name and surname), first letter of surname with name, etc. Birthdate will be checked in different formats as well (localized, international, and some variants).
 
-Admin
-=====
+.. _pref_2fa:
+
+Two-factor authentication
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+   Marked **experimental**: it is complete and tested, but it is new, and the interface may still change. It is disabled by default; nothing happens until you choose otherwise.
+
+A password is a single factor: whoever knows it is in. Two-factor authentication asks, right after the password, for a six digits code that changes every thirty seconds and comes from an application on the user own phone or computer. A stolen password is then not enough anymore.
+
+Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server.
+
+Two policies are available:
+
+* **disabled** (default): nothing changes, nobody is asked for a code,
+* **optional**: everybody may enable it from their own account, nobody has to.
+
+Making the second factor **compulsory** — for administrators and staff members, or for everyone — is written and tested, but it is not offered yet: under a compulsory policy, a server clock that drifts or an enrolment that goes wrong puts a whole association outside its own instance, and the only way back is a command in the database. It is planned for a later version, once the optional policy has been used in the field.
+
+Since nobody is forced to enrol, administrators and staff members — the accounts that can read the civil status, the addresses and the financial data of every member — are invited to set a second factor up when they log in, with a **Later** and a **Do not ask again** button. Declining is remembered in a cookie of the browser, so the invitation comes back on a new browser, or after a year.
 
 .. note::
 
-   This tab wil be present only if you are logged in as super administrator.
+   Switching the policy back to **disabled** does not delete anything. Codes are no longer asked for, and the second factors already enabled start being asked for again as soon as you enable a policy back. While the policy is disabled, the pages to enable a second factor answer nothing: a factor enrolled then would never be asked for.
 
-.. image:: ../_styles/static/images/usermanual/prefs_admin.png
-   :scale: 50%
-   :align: center
-   :alt: Galette settings, admin tab
+The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`.
+
+Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it.
+
+Super administrator credentials
+===============================
+
+.. versionchanged:: 1.3.0
+
+The super administrator login and password are no longer in the preferences. Once logged in as super administrator, go to **My account**, then **My information**. Galette asks for the current password before saving a new one.
+
+Should that password be lost, it can be changed :ref:`from the command line <cli_superadmin_password>`.

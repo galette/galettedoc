@@ -16,37 +16,23 @@ Plugins system allows to extend Galette with specific features that would not be
 
 Each plugin is a simple directory in ``{galette}/plugins/``, then refer to the plugin documentation to install it.
 
-You can disable a plugin creating a ``_disabled`` file in its directory.
-
 ****************
-Official Plugins
+Existing plugins
 ****************
 
-Official plugins are developed and maintained by the Galette team. Available official plugins are:
+The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts all plugins. See :doc:`how to add your plugin <plugins-tiers>` if you want yours to join.
 
-.. toctree::
-   :maxdepth: 2
-
-   paypal.rst
-   fullcard.rst
-   maps.rst
-   auto.rst
-   events.rst
-   objectslend.rst
-   activities.rst
-
-*******************
-Third party plugins
-*******************
-
-Third party plugins are developed and maintained by community members. Some of them may not be translated, or available on only one database engine.
-
-* `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_ (Galette act as an oAuth2 provider),
-* `Stripe <https://github.com/galette-plugins/plugin-stripe>`_ (handle `Stripe payments <https://stripe.com/>`_),
-* `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ (handle `HelloAsso payments <https://www.helloasso.com/>`_),
-* `LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_ (manage legal notices pages),
-
-A `Github community <https://github.com/galette-plugins/>`_ has been created to :doc:`manage third party plugins <plugins-tiers>`, if you want to add your plugin.
+* `Paypal <https://galette-plugins.github.io/plugin-paypal/>`_
+* `Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_
+* `Maps <https://galette-plugins.github.io/plugin-maps/>`_
+* `Auto <https://galette-plugins.github.io/plugin-auto/>`_
+* `Events <https://galette-plugins.github.io/plugin-events/>`_
+* `ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_
+* `Activities <https://galette-plugins.github.io/plugin-activities/>`_
+* `oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_
+* `Stripe <https://galette-plugins.github.io/plugin-stripe/>`_
+* `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_
+* `LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_
 
 .. toctree::
    :hidden:

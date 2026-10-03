@@ -54,9 +54,9 @@ copyright = '2011-2024, Johan Cwiklinski'
 # built documents.
 #
 # The short X.Y version.
-version = '1.2'
+version = '1.3'
 # The full version, including alpha/beta/rc tags.
-release = '1.2.1'
+release = '1.3.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -106,7 +106,7 @@ locale_dirs = ["locale"]
 
 # If true, Sphinx generates uuid information for version tracking in message
 # catalogs.
-gettext_uuid = True
+gettext_uuid = False
 
 # If true, a document’s text domain is its docname if it is a top-level project
 # file and its very base directory otherwise.

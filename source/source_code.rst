@@ -20,7 +20,7 @@ All repositories follow the same development model, therefore you will find two 
    Documentation       https://github.com/galette/galettedoc
    Auto plugin         https://github.com/galette/plugin-auto
    Events plugin       https://github.com/galette/plugin-events
-   Fullcard plugin     https://github.com/galette/plugin-fullcard
+   Fullcard plugin     https://github.com/galette-plugins/plugin-fullcard
    PayPal plugin       https://github.com/galette/plugin-paypal
    Objects lend plugin https://github.com/galette/plugin-objectslend
    Activities plugin   https://github.com/galette/plugin-activities

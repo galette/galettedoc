@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Jože Felicijan <joze@felicijan.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.2\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"PO-Revision-Date: 2026-09-18 15:44+0000\n"
+"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
+"faq-index/sl/>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2026.10.dev0\n"
+
+#: ../faq/index.rst:5
+msgid "Frequently Asked Question (FAQ)"
+msgstr "Pogosto zastavljena vprašanja (FAQ)"
+
+#: ../faq/index.rst:9
+msgid "What if Galette does not work?"
+msgstr "Kaj pa, če Galette ne deluje?"
+
+#: ../faq/index.rst:11
+msgid ""
+"Sometimes, after an update, a change on hosting, or a simple bug - even "
+"minor ones - may cause a fail in Galette. You may observe:"
+msgstr ""
+"Včasih lahko po posodobitvi sprememba gostovanja ali preprosta napaka – tudi "
+"manjša – povzroči napako v Galette. Opazili boste lahko:"
+
+#: ../faq/index.rst:13
+msgid "an error message is displayed,"
+msgstr "prikaže se sporočilo o napaki,"
+
+#: ../faq/index.rst:14
+msgid "a blank page,"
+msgstr "prazna stran,"
+
+#: ../faq/index.rst:15 ../faq/index.rst:140
+msgid "..."
+msgstr "..."
+
+#: ../faq/index.rst:17
+msgid ""
+"In all cases, you **must check the logs**. Most of errors are stored in "
+"those files, it is a very good start point to understand the problem and "
+"potentially solve it."
+msgstr ""
+"V vseh primerih morate **preveriti dnevnike**. Večina napak je shranjenih v "
+"teh datotekah, kar je zelo dobro izhodišče za razumevanje težave in njeno "
+"morebitno rešitev."
+
+#: ../faq/index.rst:19
+msgid "Galette logs are stored in the ``galette/data/log`` per default."
+msgstr "Dnevniki Galette so privzeto shranjeni v mapi ``galette/data/log``."
+
+#: ../faq/index.rst:21
+msgid ""
+":ref:`Enabling development mode <galettemodes>` will give you more "
+"information, and deactivate cache, that may help resolving your issue."
+msgstr ""
+":ref:`Omogočanje razvojnega načina <galettemodes>` vam bo dalo več "
+"informacij in deaktiviralo predpomnilnik, kar vam lahko pomaga rešiti težavo."
+
+#: ../faq/index.rst:27
+msgid "My two-factor authentication codes are refused"
+msgstr ""
+
+#: ../faq/index.rst:31
+msgid ""
+"**Check the clocks first.** Codes are computed from the current time, and "
+"nothing else. If the clock of your server or the clock of your device is off "
+"by more than about a minute, every code is refused, and everything else "
+"looks perfectly normal. This is, by a wide margin, the first thing to look "
+"at."
+msgstr ""
+
+#: ../faq/index.rst:33
+msgid ""
+"Galette accepts the code of the current thirty seconds period and of the one "
+"just before and just after, which leaves a bit less than a minute and a half "
+"of tolerance. Beyond that, set both clocks right -- on the server, by "
+"enabling NTP; on a phone, by turning automatic date and time on -- and try "
+"again. Most authenticator applications also offer to correct their own clock "
+"for you."
+msgstr ""
+
+#: ../faq/index.rst:35
+msgid "Two other cases look like a refusal but are not one:"
+msgstr ""
+
+#: ../faq/index.rst:37
+msgid ""
+"**the same code twice**: a code is accepted once only, so submitting the "
+"code you just used to enrol, or reloading the page after a successful login, "
+"is refused. Wait for the next one -- it comes at most thirty seconds later."
+msgstr ""
+
+#: ../faq/index.rst:38
+msgid ""
+"**too many attempts**: after a series of wrong codes, Galette stops "
+"answering for a while. Wait it out rather than trying harder."
+msgstr ""
+
+#: ../faq/index.rst:41
+msgid "The server clock went backwards"
+msgstr ""
+
+#: ../faq/index.rst:43
+msgid ""
+"Galette remembers the last period it accepted a code for, so that a code "
+"cannot be used twice. If the clock of the **server** moves backwards -- a "
+"virtual machine restored from a snapshot, a large NTP correction, a host "
+"without NTP at all -- every code then falls in a period that has already "
+"been used, and is refused as such until the clock catches up with what was "
+"recorded."
+msgstr ""
+
+#: ../faq/index.rst:45
+msgid "Set the server clock right first. Then, for the account concerned:"
+msgstr ""
+
+#: ../faq/index.rst:51
+msgid "and, for the super administrator:"
+msgstr ""
+
+#: ../faq/index.rst:58
+msgid "I lost the device computing my codes"
+msgstr ""
+
+#: ../faq/index.rst:60
+msgid ""
+"Use one of the ten recovery codes you were given when you enabled it: the "
+"field that asks for a code takes them too. Each one works once. Once logged "
+"in, disable the second factor and enable it again on your new device -- and "
+"keep the new recovery codes."
+msgstr ""
+
+#: ../faq/index.rst:62
+msgid ""
+"If you have no recovery code left either, ask an administrator or a staff "
+"member of your association to :ref:`reset your second factor "
+"<member_2fa_reset>`."
+msgstr ""
+
+#: ../faq/index.rst:65
+msgid "The super administrator cannot log in anymore"
+msgstr ""
+
+#: ../faq/index.rst:67
+msgid ""
+"That account is not a member, so nobody can reset it from the interface, and "
+"it has no recovery codes. Its second factor lives in the preferences, in "
+"database, which is where you clear it from:"
+msgstr ""
+
+#: ../faq/index.rst:74
+msgid ""
+"Replace ``galette_`` with your own table prefix if you changed it (the "
+"``PREFIX_DB`` setting of your configuration file). The next login asks for "
+"the password alone."
+msgstr ""
+
+#: ../faq/index.rst:76
+msgid ""
+"To turn the second factor off for the whole instance at the same time -- the "
+"way out when something goes wrong for everybody at once -- add:"
+msgstr ""
+
+#: ../faq/index.rst:82
+msgid ""
+"Members who had enabled one keep it; they are simply no longer asked for a "
+"code until a policy is set again."
+msgstr ""
+
+#: ../faq/index.rst:86
+msgid ""
+"Keep an access to your database at hand before you enable a second factor on "
+"the super administrator account. It is the only way back in for it."
+msgstr ""
+
+#: ../faq/index.rst:90
+msgid "How to report a bug or ask for a feature?"
+msgstr "Kako prijaviti napako ali zahtevati funkcijo?"
+
+#: ../faq/index.rst:92
+msgid ""
+"Bugs reports as well as RFE (Request For Enhancement) must be done on the "
+"`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
+"itself, all official plugins and also documentation."
+msgstr ""
+"Poročila o napakah in RFE (Zahteva za izboljšavo) je treba narediti na "
+"`Sledilniku Galette <https://bugs.galette.eu/projects/galette>`_, za samo "
+"Galette, vse uradne vtičnike in tudi dokumentacijo."
+
+#: ../faq/index.rst:96
+msgid ""
+"Unless you are sure you know, please do not attribute the ticket and do not "
+"set target version. It will be done when it is taken into account."
+msgstr ""
+"Če niste prepričani, da veste, prosimo, da ne navajate avtorja zahteve in ne "
+"nastavljate ciljne različice. To bo storjeno, ko bo upoštevana."
+
+#: ../faq/index.rst:98
+msgid "If you have doubts, feel free to ask your questions on mailing lists ;)"
+msgstr "Če imate dvome, jih lahko postavite na poštnih seznamih ;)"
+
+#: ../faq/index.rst:101
+msgid "Report a bug"
+msgstr "Prijavi hrošča"
+
+#: ../faq/index.rst:103
+msgid "Please, do not forget to:"
+msgstr "Prosim, ne pozabite:"
+
+#: ../faq/index.rst:105
+msgid "tell us the Galette version you are using,"
+msgstr "povejte nam, katero različico Galette uporabljate,"
+
+#: ../faq/index.rst:106
+msgid "be clear and concise,"
+msgstr "bodi jasen in jedrnat,"
+
+#: ../faq/index.rst:107
+msgid "to provide all required information in order to reproduce the issue"
+msgstr "zagotoviti vse potrebne informacije za reprodukcijo težave"
+
+#: ../faq/index.rst:108
+msgid "to provide related logs entries."
+msgstr "zagotoviti vse potrebne informacije za težave pri reprodukciji."
+
+#: ../faq/index.rst:111
+msgid "Request For Enhancement"
+msgstr "Zahteva za izboljšavo"
+
+#: ../faq/index.rst:113
+msgid ""
+"Make sure to be precise as well on RFEs. Developers may not guess what you "
+"have in mind, you have to explain them, event if this seems obvious to "
+"you ;) Requested enhancements are tagged as \"Souhaits\" (wishes, in "
+"french), and moved by developers when work begins most of the time."
+msgstr ""
+"Pri zahtevanih izboljšavah bodite natančni. Razvijalci morda ne bodo "
+"uganili, kaj imate v mislih, zato jim morate razložiti, tudi če se vam to "
+"zdi očitno ;) Zahtevane izboljšave so označene kot \"Souhaits\" (želje, v "
+"francoščini) in jih razvijalci večinoma premaknejo, ko se delo začne."
+
+#: ../faq/index.rst:116
+msgid ""
+"Once you made your wishes, you can `submit it to a vote <https://"
+"vote.galette.eu/>`_, most wanted features may catch devs attention."
+msgstr ""
+"Ko enkrat izraziš svoje želje, jih lahko `oddaš na glasovanje <https://"
+"vote.galette.eu/>`_, najbolj zaželene funkcije lahko pritegnejo pozornost "
+"razvijalcev."
+
+#: ../faq/index.rst:120
+msgid "How to search in lists archives?"
+msgstr "Kako iskati po arhivih seznamov?"
+
+#: ../faq/index.rst:122
+msgid ""
+"Mailing lists are the main communication channel for Galette, from its "
+"beginnings."
+msgstr ""
+"Poštni seznami so glavni komunikacijski kanal za Galette, že od samega "
+"začetka."
+
+#: ../faq/index.rst:124
+msgid ""
+"See `contact page <https://galette.eu/site/contact#mailing-lists>`_ for more "
+"information."
+msgstr ""
+"Oglejte si `kontaktno stran <https://galette.eu/site/contact#mailing-"
+"lists>`_ za več informacij."
+
+#: ../faq/index.rst:126
+msgid ""
+"The most simple and reliable way to `search on past Galette related "
+"discussion <https://www.mail-archive.com/search?l=all&q=galette&a=1>`_ is to "
+"make a query on mail archive services."
+msgstr ""
+"Najpreprostejši in najzanesljivejši način za `iskanje preteklih razprav, "
+"povezanih z Galette <https://www.mail-archive.com/search?"
+"l=all&q=galette&a=1>`_ je poizvedba v storitvah arhiviranja pošte."
+
+#: ../faq/index.rst:130
+msgid "How to use same email address for several members?"
+msgstr "Kako uporabiti isti e-poštni naslov za več članov?"
+
+#: ../faq/index.rst:132
+msgid "This is a very frequent question; many would love to do that..."
+msgstr "To je zelo pogosto vprašanje; mnogi bi to radi storili ..."
+
+#: ../faq/index.rst:134
+msgid "**This is not possible.**"
+msgstr "**To ni mogoče.**"
+
+#: ../faq/index.rst:136
+msgid ""
+"Indeed, mail addresses must be unique in the database. It is a choice for "
+"the project on which several features are built:"
+msgstr ""
+"Dejansko morajo biti poštni naslovi v bazi podatkov edinstveni. To je izbira "
+"za projekt, na katerem je zgrajenih več funkcij:"
+
+#: ../faq/index.rst:138
+msgid "lost password (since... always or almost),"
+msgstr "izgubljeno geslo (od ... vedno ali skoraj),"
+
+#: ../faq/index.rst:139
+msgid "login (since Galette 0.9),"
+msgstr "prijava (od Galette 0.9),"
+
+#: ../faq/index.rst:142
+msgid ""
+"Making them non unique is not a solution we want to rely on. This would be "
+"complicated, and should be source of many bugs."
+msgstr ""
+"To, da jih naredimo ne-edinstvene, ni rešitev, na katero se želimo zanašati. "
+"To bi bilo zapleteno in bi moralo biti vir številnih hroščev."
+
+#: ../faq/index.rst:144
+msgid ""
+"However, it is possible in Galette to :ref:`link several members "
+"<linkmembers>`. That way, some information such as email and postal "
+"addresses will be retrieved from the parent member if missing."
+msgstr ""
+"Vendar pa je v Galette mogoče :ref:`povezati več članov <linkmembers>`. Na "
+"ta način bodo nekatere informacije, kot so e-poštni in poštni naslovi, "
+"pridobljene od nadrejenega člana, če manjkajo."
+
+#: ../faq/index.rst:146
+msgid ""
+"This allows finally to use a unique email address for several members in "
+"database; but they are not duplicates in database."
+msgstr ""
+"To končno omogoča uporabo edinstvenega e-poštnega naslova za več članov v "
+"bazi podatkov; vendar ti niso podvojeni v bazi podatkov."

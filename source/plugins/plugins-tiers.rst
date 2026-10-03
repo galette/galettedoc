@@ -4,7 +4,7 @@
 Third party plugins community
 =============================
 
-A `Github organisation name galette-plugins <https://github.com/galette-plugins/>`_ has been created. Its goal is to centralize plugins that are not developed by Galette team, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team.
+A `Github organisation named galette-plugins <https://github.com/galette-plugins/>`_ has been created. Its goal is to centralize Galette plugins, to provide them a source code repository, a ticket management system, a website, ... And possibly get punctual help from Galette team.
 
 Prerequisites
 =============
@@ -15,7 +15,7 @@ For a plugin to be accepted, it must fit some prerequisites:
 * be licensed under a license compatible with Galette (GPLv3 or compatible) and respect it,
 * be compatible with a "decent" Galette version.
 
-Plugins should (this is a strong recommandation, not an obligation) be localized and respect Galette coding conventions.
+Plugins should (this is a strong recommendation, not an obligation) be localized and respect Galette coding conventions.
 
 Join community
 ==============

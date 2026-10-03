@@ -23,7 +23,7 @@ You can filter on:
   * name (first name, last name and nickname),
   * company name,
   * address (address, address continuation, zipcode, town and country),
-  * email and instant messaging addresses (email address, website URL, and all direct messenging addresses),
+  * email and instant messaging addresses (email address, website URL, and all direct messaging addresses),
   * job position,
   * information (public information and - for administrators only - private information).
 
@@ -53,12 +53,13 @@ All filters can be combined, giving you the ability to search among your active 
 Advanced search
 ===============
 
-Advanced search can be found in the main menu and propose an certain amount of fields types, related to members or their membership. The screen is separated into four parts (you can reduce individually):
+Advanced search can be found in the main menu and propose an certain amount of fields types, related to members or their membership. The screen is separated into five parts (you can reduce individually):
 
 * **simple search** which recall all filters present in the members list,
 * **advanced search** which proposes extra fields on members that can be of use,
-* **search in contributions** allowing search on members contributions,
-* **free search** which allow to select any member field possible, including dynamic fields, and which will automatically adapt to selected field. You can add and remove lines to refine search.
+* **advanced groups search** (experimental) which allow to search members belonging to all, or to any, of several selected groups,
+* **within contributions** allowing search on members contributions,
+* **free search** (experimental) which allow to select any member field possible, including dynamic fields, and which will automatically adapt to selected field. You can add and remove lines to refine search.
 
 .. image:: ../_styles/static/images/usermanual/advanced_search.png
    :scale: 50%

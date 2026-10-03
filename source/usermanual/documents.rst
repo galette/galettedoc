@@ -1,10 +1,10 @@
-.. documents:
+.. _documents:
 
 *********
 Documents
 *********
 
-.. versionadded: 1.1.0
+.. versionadded:: 1.1.0
 
 You can store and share administrative documents from Galette, like statuses, meeting minutes, and so on.
 

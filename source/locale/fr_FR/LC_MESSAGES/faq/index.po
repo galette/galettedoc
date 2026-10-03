@@ -1,13 +1,14 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
-# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023, 2024, 2025.
+# Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2023, 2024, 2025, 2026.
+# alainP77 <alain.paris77@free.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 19:05+0200\n"
-"PO-Revision-Date: 2025-03-15 09:46+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"PO-Revision-Date: 2026-10-01 16:59+0000\n"
+"Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-faq-"
 "index/fr/>\n"
 "Language: fr_FR\n"
@@ -15,17 +16,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 2026.10\n"
 
-#: ../faq/index.rst:5 0c806a88c9844dd3afeb31e8055f1472
+#: ../faq/index.rst:5
 msgid "Frequently Asked Question (FAQ)"
 msgstr "Questions fréquentes (FAQ)"
 
-#: ../faq/index.rst:9 ce22b8a07f3a4ab29fee650c82ceb5eb
+#: ../faq/index.rst:9
 msgid "What if Galette does not work?"
 msgstr "Que faire si Galette ne fonctionne pas ?"
 
-#: ../faq/index.rst:11 c73c7bb5935247f7be20c3198415c3ce
+#: ../faq/index.rst:11
 msgid ""
 "Sometimes, after an update, a change on hosting, or a simple bug - even "
 "minor ones - may cause a fail in Galette. You may observe:"
@@ -34,19 +35,19 @@ msgstr ""
 "bogue - même mineurs - peuvent causer une erreur dans Galette. Vous pourriez "
 "observer :"
 
-#: ../faq/index.rst:13 9f043f2792a54caa89050cd06641e70d
+#: ../faq/index.rst:13
 msgid "an error message is displayed,"
 msgstr "un message d'erreur est affiché,"
 
-#: ../faq/index.rst:14 acb6c5e71e3f480ea579c2376ed46f4b
+#: ../faq/index.rst:14
 msgid "a blank page,"
 msgstr "une page blanche,"
 
-#: ../faq/index.rst:15 ../faq/index.rst:75 18f9ac3d31924c4db3f5e19cd7deb2da
+#: ../faq/index.rst:15 ../faq/index.rst:140
 msgid "..."
 msgstr "..."
 
-#: ../faq/index.rst:17 55dd61b7671f4f1282dafe44e173b622
+#: ../faq/index.rst:17
 msgid ""
 "In all cases, you **must check the logs**. Most of errors are stored in "
 "those files, it is a very good start point to understand the problem and "
@@ -56,13 +57,13 @@ msgstr ""
 "sont stockées dans ces fichiers, c'est un très bon point de départ pour "
 "comprendre le problème, et éventuellement le résoudre."
 
-#: ../faq/index.rst:19 452f27a738854beb92c9ce37ef756334
+#: ../faq/index.rst:19
 msgid "Galette logs are stored in the ``galette/data/log`` per default."
 msgstr ""
 "Les logs de Galette sont stockés dans le dossier ``galette/data/log`` par "
 "défaut."
 
-#: ../faq/index.rst:21 baa5a72c619f4d1a9924009c7730b07a
+#: ../faq/index.rst:21
 msgid ""
 ":ref:`Enabling development mode <galettemodes>` will give you more "
 "information, and deactivate cache, that may help resolving your issue."
@@ -71,11 +72,174 @@ msgstr ""
 "d'informations et désactivera le cache, ce qui pourrait vous aider à "
 "résoudre votre problème."
 
-#: ../faq/index.rst:25 290e1a0c33274c20aaa72596801e1a1c
+#: ../faq/index.rst:27
+msgid "My two-factor authentication codes are refused"
+msgstr "Mes codes d'authentification à deux facteurs sont refusés"
+
+#: ../faq/index.rst:31
+msgid ""
+"**Check the clocks first.** Codes are computed from the current time, and "
+"nothing else. If the clock of your server or the clock of your device is off "
+"by more than about a minute, every code is refused, and everything else "
+"looks perfectly normal. This is, by a wide margin, the first thing to look "
+"at."
+msgstr ""
+"**Vérifiez les horloges en premier.** Les codes sont calculés à partir de "
+"l'heure actuelle, et rien d'autre. Si l'horloge de votre serveur ou "
+"l'horloge de votre appareil est décalée de plus d'une minute, chaque code "
+"est refusé, et tout le reste semble parfaitement normal. C'est, de loin, la "
+"première chose à regarder."
+
+#: ../faq/index.rst:33
+msgid ""
+"Galette accepts the code of the current thirty seconds period and of the one "
+"just before and just after, which leaves a bit less than a minute and a half "
+"of tolerance. Beyond that, set both clocks right -- on the server, by "
+"enabling NTP; on a phone, by turning automatic date and time on -- and try "
+"again. Most authenticator applications also offer to correct their own clock "
+"for you."
+msgstr ""
+"Galette accepte le code de la période actuelle de trente secondes et celui "
+"juste avant et juste après, ce qui laisse un peu moins d’une minute et demie "
+"de tolérance. Au-delà, réglez les deux horloges correctement -- sur le "
+"serveur, en activant NTP ; sur un téléphone, en activant la date et l’heure "
+"automatiques -- et réessayez. La plupart des applications d’authentification "
+"proposent également de corriger leur propre horloge pour vous."
+
+#: ../faq/index.rst:35
+msgid "Two other cases look like a refusal but are not one:"
+msgstr "Deux autres cas ressemblent à un refus mais n'en sont pas :"
+
+#: ../faq/index.rst:37
+msgid ""
+"**the same code twice**: a code is accepted once only, so submitting the "
+"code you just used to enrol, or reloading the page after a successful login, "
+"is refused. Wait for the next one -- it comes at most thirty seconds later."
+msgstr ""
+"**le même code deux fois** : un code est accepté une fois seulement, donc la "
+"soumission du code que vous venez d'utiliser, ou recharger la page après un "
+"login réussi est refusée. Attendez le prochain -- il arrive au pire trente "
+"secondes plus tard."
+
+#: ../faq/index.rst:38
+msgid ""
+"**too many attempts**: after a series of wrong codes, Galette stops "
+"answering for a while. Wait it out rather than trying harder."
+msgstr ""
+"**trop de tentatives** : après une série de mauvais codes, Galette cesse de "
+"répondre pendant un certain temps. Attendez plutôt que d'insister."
+
+#: ../faq/index.rst:41
+msgid "The server clock went backwards"
+msgstr "L'horloge du serveur est en retard"
+
+#: ../faq/index.rst:43
+msgid ""
+"Galette remembers the last period it accepted a code for, so that a code "
+"cannot be used twice. If the clock of the **server** moves backwards -- a "
+"virtual machine restored from a snapshot, a large NTP correction, a host "
+"without NTP at all -- every code then falls in a period that has already "
+"been used, and is refused as such until the clock catches up with what was "
+"recorded."
+msgstr ""
+"Galette se souvient de la dernière période pour laquelle il a accepté un "
+"code, de sorte qu’un code ne peut pas être utilisé deux fois. Si l’horloge "
+"du **serveur** recule -- une machine virtuelle restaurée à partir d’un "
+"instantané, une correction NTP importante, un hôte sans NTP du tout -- "
+"chaque code tombe alors dans une période déjà utilisée, et est refusé comme "
+"tel jusqu’à ce que l’horloge rattrape ce qui a été enregistré."
+
+#: ../faq/index.rst:45
+msgid "Set the server clock right first. Then, for the account concerned:"
+msgstr ""
+"Réglez l'horloge du serveur en premier lieu. Puis, pour le compte concerné :"
+
+#: ../faq/index.rst:51
+msgid "and, for the super administrator:"
+msgstr "et, pour le super administrateur :"
+
+#: ../faq/index.rst:58
+msgid "I lost the device computing my codes"
+msgstr "J'ai perdu l'appareil générant mes codes"
+
+#: ../faq/index.rst:60
+msgid ""
+"Use one of the ten recovery codes you were given when you enabled it: the "
+"field that asks for a code takes them too. Each one works once. Once logged "
+"in, disable the second factor and enable it again on your new device -- and "
+"keep the new recovery codes."
+msgstr ""
+"Utilisez l'un des dix codes de récupération qui vous ont été donnés lorsque "
+"vous l'avez activé : le champ qui demande un code les prend aussi. Chacun "
+"fonctionne une fois. Une fois connecté, désactivez le second facteur et "
+"activez-le à nouveau sur votre nouvel appareil -- et conservez les nouveaux "
+"codes de récupération."
+
+#: ../faq/index.rst:62
+msgid ""
+"If you have no recovery code left either, ask an administrator or a staff "
+"member of your association to :ref:`reset your second factor "
+"<member_2fa_reset>`."
+msgstr ""
+"Si vous n'avez plus de code de récupération, demandez à un administrateur ou "
+"à un membre du bureau de votre association de :ref:`réinitialiser votre "
+"deuxième facteur <member_2fa_reset>`."
+
+#: ../faq/index.rst:65
+msgid "The super administrator cannot log in anymore"
+msgstr "Le super administrateur ne peut plus se connecter"
+
+#: ../faq/index.rst:67
+msgid ""
+"That account is not a member, so nobody can reset it from the interface, and "
+"it has no recovery codes. Its second factor lives in the preferences, in "
+"database, which is where you clear it from:"
+msgstr ""
+"Ce compte n'est pas un adhérent, donc personne ne peut le réinitialiser "
+"depuis l'interface, et il n'a aucun code de récupération. Son second facteur "
+"est dans les préférences, dans la base de données, c'est là que vous devez "
+"le supprimer :"
+
+#: ../faq/index.rst:74
+msgid ""
+"Replace ``galette_`` with your own table prefix if you changed it (the "
+"``PREFIX_DB`` setting of your configuration file). The next login asks for "
+"the password alone."
+msgstr ""
+"Remplacez ``galette_`` avec votre propre préfixe de table si vous l'avez "
+"changé (le paramètre ``PREFIX_DB`` de votre fichier de configuration). Le "
+"prochain login demande le mot de passe seul."
+
+#: ../faq/index.rst:76
+msgid ""
+"To turn the second factor off for the whole instance at the same time -- the "
+"way out when something goes wrong for everybody at once -- add:"
+msgstr ""
+"Pour désactiver le second facteur pour l'ensemble de l'instance - une "
+"échappatoire lorsque quelque chose ne fonctionne pas - ajoutez :"
+
+#: ../faq/index.rst:82
+msgid ""
+"Members who had enabled one keep it; they are simply no longer asked for a "
+"code until a policy is set again."
+msgstr ""
+"Les membres qui en avaient activé un le gardent ; on ne leur demande "
+"simplement plus de code tant qu’une politique n’est pas à nouveau définie."
+
+#: ../faq/index.rst:86
+msgid ""
+"Keep an access to your database at hand before you enable a second factor on "
+"the super administrator account. It is the only way back in for it."
+msgstr ""
+"Gardez un accès à votre base de données sous la main avant d’activer un "
+"second facteur sur le compte du super-administrateur. C’est le seul moyen de "
+"revenir en arrière."
+
+#: ../faq/index.rst:90
 msgid "How to report a bug or ask for a feature?"
 msgstr "Comment rapporter un bogue ou demander une fonctionnalité ?"
 
-#: ../faq/index.rst:27 9cfe3fa245b44ea0a5aa5d3ec8f546db
+#: ../faq/index.rst:92
 msgid ""
 "Bugs reports as well as RFE (Request For Enhancement) must be done on the "
 "`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
@@ -86,54 +250,54 @@ msgstr ""
 "galette>`_, pour Galette elle même, tous les plugins officiels et aussi pour "
 "la documentation."
 
-#: ../faq/index.rst:31 bca646983cc6461d862f2341cd006621
+#: ../faq/index.rst:96
 msgid ""
-"Unless you are sure you know, please de not attribute the ticket and do not "
-"set target version. It will be done when it will be took into account."
+"Unless you are sure you know, please do not attribute the ticket and do not "
+"set target version. It will be done when it is taken into account."
 msgstr ""
 "À moins d'être certain de ce que vous faites, merci de ne pas attribuer le "
 "ticket et de ne pas définir la version cible. Cela sera fait lorsque le "
 "ticket sera pris en compte."
 
-#: ../faq/index.rst:33 622f52b8273d42a8888d19523a709aec
+#: ../faq/index.rst:98
 msgid "If you have doubts, feel free to ask your questions on mailing lists ;)"
 msgstr ""
 "Si vous avez des doutes, n'hésitez pas à poser vos questions sur les listes "
 "de diffusion ;)"
 
-#: ../faq/index.rst:36 6115ef140ad7445386f06625c866c998
+#: ../faq/index.rst:101
 msgid "Report a bug"
 msgstr "Rapporter un bogue"
 
-#: ../faq/index.rst:38 94f90884a43247baa5035e6682dbfc58
+#: ../faq/index.rst:103
 msgid "Please, do not forget to:"
 msgstr "S'il vous plaît, n'oubliez pas de :"
 
-#: ../faq/index.rst:40 afcbe68d691e4774b96739a01b3f2c77
+#: ../faq/index.rst:105
 msgid "tell us the Galette version you are using,"
 msgstr "nous dire quelle version de Galette vous utilisez,"
 
-#: ../faq/index.rst:41 934dd6b28946473b89bda4450d21b7b7
+#: ../faq/index.rst:106
 msgid "be clear and concise,"
 msgstr "être clair et concis,"
 
-#: ../faq/index.rst:42 c163b2484c9c4682a7a2df63907d3ad6
+#: ../faq/index.rst:107
 msgid "to provide all required information in order to reproduce the issue"
 msgstr "fournir toutes les informations pour reproduire le problème"
 
-#: ../faq/index.rst:43 b5276beac43a4a01886f9a39088df114
+#: ../faq/index.rst:108
 msgid "to provide related logs entries."
 msgstr "de fournir les entrées de logs adéquates."
 
-#: ../faq/index.rst:46 c12586a9d42c4e6790b428cc9ce33853
+#: ../faq/index.rst:111
 msgid "Request For Enhancement"
 msgstr "Demande de fonctionnalités"
 
-#: ../faq/index.rst:48 7035ca6e321e4a6d8d4c71683f175424
+#: ../faq/index.rst:113
 msgid ""
 "Make sure to be precise as well on RFEs. Developers may not guess what you "
 "have in mind, you have to explain them, event if this seems obvious to "
-"you ;) Requested enhancements are tagged as \"Souhaits\" (whishes, in "
+"you ;) Requested enhancements are tagged as \"Souhaits\" (wishes, in "
 "french), and moved by developers when work begins most of the time."
 msgstr ""
 "Assurez vous d'être précis pour les demandes d'évolution également. Les "
@@ -142,20 +306,20 @@ msgstr ""
 "sont marquées comme « Souhaits », et déplacées par les développeurs lorsque "
 "le travail commence."
 
-#: ../faq/index.rst:51 1be5e5c9db0e494ea97a1f7b8f7db2a9
+#: ../faq/index.rst:116
 msgid ""
-"Once you made your whishes, you can `submit it to a vote <https://vote."
-"galette.eu/>`_, most wanted features may catch devs attention."
+"Once you made your wishes, you can `submit it to a vote <https://"
+"vote.galette.eu/>`_, most wanted features may catch devs attention."
 msgstr ""
 "Une fois votre souhait exprimé, vous pouvez `le soumettre au vote <https://"
 "vote.galette.eu/>`_, les demandes les plus plébiscitées pourraient retenir "
 "l'attention des développeurs."
 
-#: ../faq/index.rst:55 e45597d3bff24c3082f50ccce5a8c858
+#: ../faq/index.rst:120
 msgid "How to search in lists archives?"
 msgstr "Comment chercher dans les archives des listes ?"
 
-#: ../faq/index.rst:57 1c28562419f7415189a689a8ca2d5536
+#: ../faq/index.rst:122
 msgid ""
 "Mailing lists are the main communication channel for Galette, from its "
 "beginnings."
@@ -163,7 +327,7 @@ msgstr ""
 "Les listes de diffusion sont le canal principal de communication pour "
 "Galette, depuis ses débuts."
 
-#: ../faq/index.rst:59 bc4085c827ec4a339c89822621bc5302
+#: ../faq/index.rst:124
 msgid ""
 "See `contact page <https://galette.eu/site/contact#mailing-lists>`_ for more "
 "information."
@@ -171,7 +335,7 @@ msgstr ""
 "Consultez `la page de contact <https://galette.eu/site/contact#mailing-"
 "lists>`_ pour plus d'informations ."
 
-#: ../faq/index.rst:61 940227c5e0a7443885f7d7764cb1bdc4
+#: ../faq/index.rst:126
 msgid ""
 "The most simple and reliable way to `search on past Galette related "
 "discussion <https://www.mail-archive.com/search?l=all&q=galette&a=1>`_ is to "
@@ -182,22 +346,22 @@ msgstr ""
 "l=all&q=galette&a=1>`_ est d'effectuer une requêtes via les services de mail "
 "archive."
 
-#: ../faq/index.rst:65 5d8f13cc504d473482774d388dde3dc2
+#: ../faq/index.rst:130
 msgid "How to use same email address for several members?"
 msgstr ""
 "Comment utiliser une même adresse de courriel pour plusieurs adhérents ?"
 
-#: ../faq/index.rst:67 85e93704b1f74058b5124cc1d2552f97
+#: ../faq/index.rst:132
 msgid "This is a very frequent question; many would love to do that..."
 msgstr ""
 "C'est une question très fréquente, beaucoup souhaiteraient pouvoir faire "
 "ça..."
 
-#: ../faq/index.rst:69 31cde347e2a74038816ddb4cb6abebeb
+#: ../faq/index.rst:134
 msgid "**This is not possible.**"
 msgstr "**Ce n'est pas possible.**"
 
-#: ../faq/index.rst:71 571278e8fab04dd186689659e7119ce8
+#: ../faq/index.rst:136
 msgid ""
 "Indeed, mail addresses must be unique in the database. It is a choice for "
 "the project on which several features are built:"
@@ -206,23 +370,23 @@ msgstr ""
 "données. C'est un choix du projet sur lequel plusieurs fonctionnalités "
 "reposent :"
 
-#: ../faq/index.rst:73 046d410c1d5d4cf0a20d16cd1549e12f
+#: ../faq/index.rst:138
 msgid "lost password (since... always or almost),"
 msgstr "récupération du mot de passe (depuis... toujours ou presque),"
 
-#: ../faq/index.rst:74 2196ec41c637450abc1edb7eb30b34d8
+#: ../faq/index.rst:139
 msgid "login (since Galette 0.9),"
 msgstr "la connexion (depuis Galette 0.9),"
 
-#: ../faq/index.rst:77 3ccbab1250b84adcbfa563076fd67366
+#: ../faq/index.rst:142
 msgid ""
-"Making them non uniques is not a solution we want to rely on. This would be "
+"Making them non unique is not a solution we want to rely on. This would be "
 "complicated, and should be source of many bugs."
 msgstr ""
 "Les rendre non uniques n'est pas une solution que nous souhaitons mettre en "
 "œuvre. Ce serait compliqué, et source de nombreux bogues."
 
-#: ../faq/index.rst:79 7b704fa90544499693bf3be9ed4af4c5
+#: ../faq/index.rst:144
 msgid ""
 "However, it is possible in Galette to :ref:`link several members "
 "<linkmembers>`. That way, some information such as email and postal "
@@ -233,7 +397,7 @@ msgstr ""
 "courriel ou postale seront récupérées depuis la fiche parent si elles "
 "manquent."
 
-#: ../faq/index.rst:81 c10fb69b526f4fc7a805f9380f00955c
+#: ../faq/index.rst:146
 msgid ""
 "This allows finally to use a unique email address for several members in "
 "database; but they are not duplicates in database."
@@ -252,8 +416,8 @@ msgstr ""
 #~ "lists.galette.eu/users/>`_ : discussions générales, support, ..."
 
 #~ msgid ""
-#~ "`development discussion list <https://listengine.tuxfamily.org/lists."
-#~ "galette.eu/devel/>`_ : technical discussions, tickets triaging, ..."
+#~ "`development discussion list <https://listengine.tuxfamily.org/"
+#~ "lists.galette.eu/devel/>`_ : technical discussions, tickets triaging, ..."
 #~ msgstr ""
 #~ "`liste de diffusion des développeurs <https://listengine.tuxfamily.org/"
 #~ "lists.galette.eu/devel/>`_ : discussions techniques, tri des tickets, ..."
@@ -265,16 +429,17 @@ msgstr ""
 #~ "`old users discussion list <https://galette.eu/download/listes-galette/"
 #~ "mail.gna.org/public/galette-discussion/index.html>`_"
 #~ msgstr ""
-#~ "`ancienne liste de diffusion des utilisateurs <https://download.tuxfamily."
-#~ "org/galette/listes-galette/mail.gna.org/public/galette-discussion/index."
-#~ "html>`_"
+#~ "`ancienne liste de diffusion des utilisateurs <https://"
+#~ "download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-"
+#~ "discussion/index.html>`_"
 
 #~ msgid ""
 #~ "`old development discussion list <https://galette.eu/download/listes-"
 #~ "galette/mail.gna.org/public/galette-devel/index.html>`_"
 #~ msgstr ""
-#~ "`ancienne lise de diffusion des développement <https://download.tuxfamily."
-#~ "org/galette/listes-galette/mail.gna.org/public/galette-devel/index.html>`_"
+#~ "`ancienne lise de diffusion des développement <https://"
+#~ "download.tuxfamily.org/galette/listes-galette/mail.gna.org/public/galette-"
+#~ "devel/index.html>`_"
 
 #~ msgid ""
 #~ "Unfortunately, there is no search mechanism in any of those lists "
@@ -368,8 +533,8 @@ msgstr ""
 #~ "sont bien plus fiables sur ce point."
 
 #~ msgid ""
-#~ "To temporary display errors on page, create a ``galette/config/behavior."
-#~ "inc.php`` file with the following contents:"
+#~ "To temporary display errors on page, create a ``galette/config/"
+#~ "behavior.inc.php`` file with the following contents:"
 #~ msgstr ""
 #~ "Pour afficher temporairement les erreurs sur la page, créez un fichier "
 #~ "``galette/config/behavior.inc.php`` avec le contenu suivant :"

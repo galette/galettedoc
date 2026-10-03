@@ -22,10 +22,10 @@ Contributions types
 
 Contributions are entirely configurable. There are two main types of contributions in Galette:
 
-* the ones that extends a membership (a montly or yearly membership for example),
+* the ones that extends a membership (a monthly or yearly membership for example),
 * the ones that do not extends membership, like donations.
 
-Contribution types management allows you to define a label, and if it extends the memebrship or not.
+Contribution types management allows you to define a label, and if it extends the membership or not.
 
 .. _reminders:
 
@@ -50,11 +50,19 @@ Per default (this is currently not configurable), reminders are sent one month, 
 
 Galette will tell you if some members do not have an email address, you can print labels for those ones.
 
-Finally, it is possible to automate reminders with a cron task which will call the ``galette/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
+.. versionadded:: 1.3.0
 
-.. code-block:: bash
+   Reminders obey the :ref:`sending limits <mail_throttling>`, following the very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly or daily quota is set, they are sent while the page loads, exactly as they always were.
 
-   30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/reminder.php
+   Each reminder stays an individual message, written in the language of its recipient, either way. The quota counters are shared with mass mailings.
+
+Finally, it is possible to automate reminders with a cron task which will call the ``galette/cron/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:
+
+::
+
+   30  8  *  *  *  apache /usr/bin/php -f /var/www/galette/cron/reminder.php
+
+The script queues the reminders that are due, then drains the queue itself, respecting the same limits. It stays silent unless something failed, so cron only writes to you when there is a reason to.
 
 Invoices and receipts
 ^^^^^^^^^^^^^^^^^^^^^
@@ -113,7 +121,7 @@ Each transaction is dispatched among contributions, in the limit of the transact
    :align: center
    :alt: Add a transaction
 
-After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaning amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaning amount of the transaction.
+After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaining amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaining amount of the transaction.
 
 .. image:: ../_styles/static/images/usermanual/transactions_add_cotisation.png
    :scale: 50%
@@ -139,7 +147,7 @@ You can also attach an existing contribution instead of creating a new one.
 Members selection
 =================
 
-.. versionadded: 0.9.2
+.. versionadded:: 0.9.2
 
 The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons.
 

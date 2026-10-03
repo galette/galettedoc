@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Jože Felicijan <joze@felicijan.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.2\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"PO-Revision-Date: 2026-09-18 15:44+0000\n"
+"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
+"user-pdf_models/sl/>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2026.10.dev0\n"
+
+#: ../usermanual/pdf_models.rst:5
+msgid "PDF models"
+msgstr "Modeli PDF"
+
+#: ../usermanual/pdf_models.rst:7
+msgid ""
+"PDF models are provided for several outputs : an invoice model, a receipt "
+"model and a membership from model are currently available. All of them "
+"inherits from a `Global` model."
+msgstr ""
+"Za več izhodov so na voljo modeli PDF: trenutno so na voljo model računa, "
+"model potrdila in model članstva iz. Vsi podedujejo model »Global«."
+
+#: ../usermanual/pdf_models.rst:9
+msgid "PDF models management"
+msgstr "Upravljanje modelov PDF"
+
+#: ../usermanual/pdf_models.rst:15
+msgid "Models inheritance"
+msgstr "Dedovanje modelov"
+
+#: ../usermanual/pdf_models.rst:17
+msgid "The global model defines three distinct parts:"
+msgstr "Globalni model opredeljuje tri različne dele:"
+
+#: ../usermanual/pdf_models.rst:19
+msgid "header,"
+msgstr "glava,"
+
+#: ../usermanual/pdf_models.rst:20
+msgid "footer,"
+msgstr "podnožje,"
+
+#: ../usermanual/pdf_models.rst:21
+msgid "CSS styles."
+msgstr "Slogi CSS-ja."
+
+#: ../usermanual/pdf_models.rst:23
+msgid ""
+"Each model which inherits from `Global` will automatically obtain same "
+"header and footer except if the new model redefines them, in which case only "
+"specific values will be applied."
+msgstr ""
+"Vsak model, ki podeduje `Globalno`, bo samodejno pridobil isto glavo in "
+"nogo, razen če ju novi model na novo definira, v tem primeru pa bodo "
+"uporabljene samo določene vrednosti."
+
+#: ../usermanual/pdf_models.rst:25
+msgid ""
+"For CSS properties it is a bit different: `Global` model properties will "
+"always be applied, and specific model properties will be appended (just like "
+"real CSS stylesheets)."
+msgstr ""
+"Za lastnosti CSS je nekoliko drugače: vedno bodo uporabljene `globalne` "
+"lastnosti modela, specifične lastnosti modela pa bodo dodane (tako kot pri "
+"pravih slogovnih predlogah CSS)."
+
+#: ../usermanual/pdf_models.rst:28
+msgid "Generalities"
+msgstr "Splošnosti"
+
+#: ../usermanual/pdf_models.rst:30
+msgid ""
+"In addition of header, footer and CSS styles, a model defines a title, a sub "
+"title and a body."
+msgstr ""
+"Poleg glave, noge in CSS slogov model definira naslov, podnaslov in telo."
+
+#: ../usermanual/pdf_models.rst:32
+msgid ""
+"Each of those fields can take some replacement values, refer to the inline "
+"help from the user interface to get details. They also can contains "
+"internationalized texts like `_T(\"My text\")` that relies on Galette "
+"standard translation capacities."
+msgstr ""
+"Vsako od teh polj lahko sprejme nekaj nadomestnih vrednosti, za podrobnosti "
+"glejte pomoč v uporabniškem vmesniku. Vsebujejo lahko tudi "
+"internacionalizirana besedila, kot je `_T(\"Moje besedilo\")`, ki se "
+"zanašajo na standardne prevajalske zmogljivosti Galette."
+
+#: ../usermanual/pdf_models.rst:34
+msgid ""
+"Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
+"file, and not displaying a page in a recent browser; there are many "
+"limitations."
+msgstr ""
+"Modeli se zanašajo na sloge HTML in CSS, vendar ne pozabite, da gradimo "
+"datoteko PDF in ne prikazujemo strani v novejšem brskalniku; obstaja veliko "
+"omejitev."
+
+#: ../usermanual/pdf_models.rst:37
+msgid "Invoices and receipts"
+msgstr "Računi in potrdila"
+
+#: ../usermanual/pdf_models.rst:39
+msgid "Invoice and receipt models are the same, excepting their titles."
+msgstr "Vzorca računov in potrdil sta enaka, razen naslovov."
+
+#: ../usermanual/pdf_models.rst:41
+msgid "Invoice PDF model"
+msgstr "Model računa v PDF obliki"
+
+#: ../usermanual/pdf_models.rst:46
+msgid ""
+"As you can see in the above screenshot, invoice model does not define any "
+"header, footer or CSS styles, the ones form the `Global` model are used."
+msgstr ""
+"Kot lahko vidite na zgornjem posnetku zaslona, model računa ne definira "
+"nobenih slogov glave, noge ali CSS, temveč se uporabljajo tisti iz modela "
+"`Global`."
+
+#: ../usermanual/pdf_models.rst:49
+msgid "Membership form"
+msgstr "Obrazec za članstvo"
+
+#: ../usermanual/pdf_models.rst:51
+msgid ""
+"It is a model that can be used to print a membership form. It can be empty "
+"(to print some of them for any event for example) or filled with one member "
+"information."
+msgstr ""
+"To je model, ki ga je mogoče uporabiti za tiskanje obrazca za članstvo. "
+"Lahko je prazen (na primer za tiskanje nekaterih obrazcev za kateri koli "
+"dogodek) ali pa izpolnjen s podatki o enem članu."
+
+#: ../usermanual/pdf_models.rst:53
+msgid ""
+"Since there are many limitation, you may use the `FullCard plugin <https://"
+"galette-plugins.github.io/plugin-fullcard/>`_ that will replace this model. "
+"It is more complex to change, but you can do many more with it. You can also "
+"create your own plugin based on FullCard."
+msgstr ""
+"Ker obstaja veliko omejitev, lahko uporabite vtičnik `FullCard <https://"
+"galette-plugins.github.io/plugin-fullcard/>`_, ki bo nadomestil ta model. "
+"Spreminjanje je bolj zapleteno, vendar lahko z njim naredite veliko več. "
+"Ustvarite lahko tudi svoj vtičnik, ki temelji na FullCard."

@@ -21,7 +21,7 @@ Staff members, administrators as well as the super administrator can create, edi
 
 Administrators have also access to the application configuration, excepted super admin information.
 
-The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. He of course can change its own login information from application preferences.
+The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. It can change its own login and password from **My account**, then **My information**.
 
 Members can change their own information, and can see their contributions and transactions (as read only).
 
@@ -55,6 +55,58 @@ He is not an up to date member from 2006-01-01 to 2006-01-13... On paper at leas
 
 Those rules are flexible because you can freely change membership dates on contributions, if you have rights to add or update them. We can imagine an association who stores all contributions on the first day of the next month (offering its members a longer membership time).
 
+.. _man_2fa:
+
+Two-factor authentication
+=========================
+
+.. versionadded:: 1.3.0
+
+   Marked **experimental**: it is complete and tested, but it is new, and the interface may still change.
+
+Once :ref:`a policy has been set in the preferences <pref_2fa>`, every account can protect itself with a second factor: after the password, Galette asks for a six digits code that changes every thirty seconds.
+
+If you are an administrator or a staff member and have not set one up, Galette invites you to when you log in. Nothing forces you to; **Later** keeps quiet for six months, **Do not ask again** for a year.
+
+You need an application to compute those codes. Any of them will do, they all follow the same standard; among the free ones:
+
+* `Aegis <https://getaegis.app>`_ or `FreeOTP <https://freeotp.github.io>`_ on Android,
+* `KeePassXC <https://keepassxc.org>`_ on a computer, in the *TOTP* field of an entry,
+* Google Authenticator, Microsoft Authenticator, ... on Android and iOS.
+
+Enabling it
+^^^^^^^^^^^
+
+Go to **My account**, then **Two-factor authentication**, and click on *Enable two-factor authentication*. Galette shows a QR code to scan with your application; if you cannot scan it, the key displayed right under it can be typed in by hand instead.
+
+Your application then starts displaying codes. Type the current one in to confirm, and it is on. That first code is asked for on purpose: it makes sure your application really is set up before Galette starts requiring it.
+
+Galette then displays **ten recovery codes**, and displays them only once.
+
+.. warning::
+
+   Print those recovery codes, or save them somewhere that is not the device computing your codes. They are the way back in if you lose your phone. Each one works once, and Galette never shows them again -- it does not keep them in a readable form.
+
+You can get ten new ones at any time from the same page; the previous ones are then void.
+
+Logging in
+^^^^^^^^^^
+
+Nothing changes for the password. Once it has been accepted, Galette asks for a code. Nothing else is reachable until it is given: an account waiting for its code is not logged in.
+
+If you no longer have your device, use one of your recovery codes instead of a code: the same field takes both.
+
+Disabling it
+^^^^^^^^^^^^
+
+From **My account**, then **Two-factor authentication**, a current code is required to turn it off. That is deliberate: somebody who found your session open should not be able to remove your second factor with a click.
+
+If a policy makes it mandatory, you will be asked to enable it again at your next login.
+
+.. note::
+
+   Codes are computed from the current time, so both your device and the server have to agree on it. This is by far the most common reason for codes being refused; see :ref:`the FAQ <faq_2fa>`.
+
 Interface
 =========
 
@@ -78,7 +130,7 @@ Galette propose to send some telemetry information:
 * **deliberately blurred**: we retrieve an estimation of members count, never a real count,
 * sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu.
 
-Sending telemetry data is a manual process, nothing will be send until you **explicitely** ask it. With those information, we can have a better knwownledge of different usages of Galette, their number of member or contributions, plugins used, ...
+Sending telemetry data is a manual process, nothing will be sent until you **explicitly** ask it. With those information, we can have a better knowledge of different usages of Galette, their number of member or contributions, plugins used, ...
 
 Those information are useful for the project development and promotion. When you send those information, you can review data that would be sent.
 
@@ -101,7 +153,7 @@ You can update your registration information from Galette preferences. The form 
    :align: center
    :alt: Telemetry from preferences
 
-A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will dissapear. You also can choose to just disable it.
+A new panel has been added on Galette dashboard to send telemetry information and/or register your instance. Once those steps has been completed, the panel will disappear. You also can choose to just disable it.
 
 .. image:: ../_styles/static/images/usermanual/telemetry_dashboard.png
    :scale: 70%

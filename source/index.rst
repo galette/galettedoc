@@ -49,7 +49,7 @@ About Galette
 There are also a few external services:
 
 * `a bug tracker <https://bugs.galette.eu/projects/galette/>`_, to declare issues or to ask for evolutions,
-* `a wonderfull :p documentation <https://doc.galette.eu>`_, you are currently reading,
+* `a wonderful :p documentation <https://doc.galette.eu>`_, you are currently reading,
 * `a voting system <https://vote.galette.eu>`_, you can vote for features,
 * `a Telemetry application <https://telemetry.galette.eu>`_ which handles and displays Telemetry data received from volunteer Galette instances.
 

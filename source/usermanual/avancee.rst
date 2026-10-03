@@ -6,12 +6,12 @@ Experienced users
 
 .. warning::
 
-   Use only following instructions if you know what you are doing... "The management is not responsable for any case of [...]" :D
+   Use only following instructions if you know what you are doing... "The management is not responsible for any case of [...]" :D
 
 Adapt to your graphical chart
 =============================
 
-If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mecanism designed for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
+If you are comfortable with CSS stylesheets, you can adapt Galette CSS to fit your own colors. To achieve that, it is strongly discouraged to edit Galette CSS files, but rather the specific mechanism designed for that. Create a ``galette_local.css`` file in your ``webroot/themes/default`` directory with your styles, it will be automatically included.
 
 Try to keep things as simple as possible. For example, if you want to change association name color (displayed under pages titles), you will find in Galette the CSS rule `#asso_name` that defines several parameters including the color. Then, in your stylesheet, you will just need the following:
 
@@ -21,7 +21,7 @@ Try to keep things as simple as possible. For example, if you want to change ass
        color: red;
    }
 
-This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be took into account by the Galette team, no support will be provided.
+This will be enough to display your association name in red. Note that local CSS file and all issues it may cause will not be taken into account by the Galette team, no support will be provided.
 
 You also can override the print stylesheet, just create a ``galette_print_local.css`` file.
 
@@ -40,46 +40,72 @@ As example,  we want to change the "Password" string on the login page in french
 
 Since Galette uses a cache system for translations, changes may not be visible immediately; you may have to restart PHP (or to clear cache). It is important to take the original string verbatim, punctuation included; and take care to escape single quotes (with a backslash) in all the strings.
 
-You also can override langs for plugins using the sam method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file.
+You also can override langs for plugins using the same method, just place the file in plugins lang directory and name it ``{plugin}_{mylang}_local_lang.php`` where `{plugin}` is the routing name you can find in the ``_define.php`` file.
 
 .. note:: This will work only if you use Galette translation features, and not with native gettext.
 
 Change session lifetime
 =======================
 
-Per default, Galette will create session with default lifetime duration (and it seems browsers acts differently in this case). You can anyways define a constant named ``GALETTE_TIMEOUT`` to change session lifetime using :ref:`behavior configuration <behavior>`:
+.. versionchanged:: 1.3.0
 
-.. code-block:: php
+   The session lifetime is a setting stored in database, ``pref_session_timeout``, reachable from the :ref:`advanced configuration <advanced_config>` page. The ``GALETTE_TIMEOUT`` constant still works and still wins over it.
 
-   <?php
-   //see https://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime
-   define('GALETTE_TIMEOUT', 0);
+Per default, Galette will create session with default lifetime duration (and it seems browsers act differently in this case). Set ``pref_session_timeout`` from the :ref:`advanced configuration <advanced_config>` page to change it; the value is a number of seconds, and ``0`` means until the browser is closed.
 
+If the ``GALETTE_TIMEOUT`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*. Remove it from that file to manage the lifetime from the page.
+
+.. _upload_sizes:
+
+Change maximum upload size
+==========================
+
+.. versionadded:: 1.3.0
+
+   Each kind of upload has a maximum size of its own, stored in database. It used to be a single value, the same for every one of them, that could only be changed by editing a Galette source file.
+
+Every file Galette accepts has a maximum size, and each kind of upload carries its own setting, reachable from the :ref:`advanced configuration <advanced_config>` page. Values are a number of kilobytes:
+
+* ``pref_upload_size_images``: member pictures, association logo and card logo - and the pictures of the plugins that rely on the same mechanism. Defaults to ``2048``,
+* ``pref_upload_size_attachments``: files attached to an :ref:`e-mailing <emailing>`. Defaults to ``2048``,
+* ``pref_upload_size_documents``: the documents of the association. Defaults to ``2048``,
+* ``pref_upload_size_imports``: the CSV files handed to the members import. Defaults to ``2048``,
+* ``pref_upload_size_dynamic_files``: the files stored in a :ref:`dynamic field <dynamic_fields>` that declares no size of its own. A field that declares one uses it instead. Defaults to ``1024``.
+
+Limits are in kilobytes; and displayed in the unit that fits, so the ``2048`` above reads as *2 Mo*.
+
+.. warning::
+
+   PHP has the last word. A file bigger than ``upload_max_filesize``, or a form bigger than ``post_max_size``, never reaches Galette whatever these settings say, and both are counted in a couple of megabytes in most PHP installations. Raise them in your ``php.ini`` first, otherwise the only thing you get is an error Galette never sees.
+
+Attachments deserve a thought of their own before you raise them: a heavy file is sent to **every** recipient of the mailing, it weighs on your own mail server as much as on theirs, and it makes the message more likely to be taken for spam. A link to the file is often a better idea than the file itself.
+
+
+.. _proxy_ip:
 
 Log IP addresses behind a proxy
 ===============================
 
 If your Galette instance is behind a proxy, IP address stored in history will be the proxy one, and not the user one :(
 
-To fix that, use :ref:`behavior configuration <behavior>` to create a constant named ``GALETTE_X_FORWARDED_FOR_INDEX`` like:
+.. versionchanged:: 1.3.0
 
-.. code-block:: php
+   The proxy depth is a setting stored in database, ``pref_x_forwarded_for_index``, reachable from the :ref:`advanced configuration <advanced_config>` page. The ``GALETTE_X_FORWARDED_FOR_INDEX`` constant still works and still wins over it.
 
-   <?php
-   define('GALETTE_X_FORWARDED_FOR_INDEX', 1);
-
-Each proxy server will add its own address on the list, example above will work only if there is only one proxy server.
+To fix that, set ``pref_x_forwarded_for_index`` from the :ref:`advanced configuration <advanced_config>` page. Each proxy server appends its own address to the header, and the value is the position to read from the **end** of the list, starting at ``1``. So ``1`` is what you want behind a single reverse proxy, and ``0`` - the default - disables the lookup entirely.
 
 .. warning::
 
-   For security reasons, do not use this if your instance is not behind a proxy!
+   For security reasons, leave it to ``0`` if your instance is not behind a proxy! Anyone could otherwise send an ``X-Forwarded-For`` header of their own and have it logged in place of their address.
+
+If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
 External stats
 ==============
 
 .. versionadded:: 0.9
 
-Many statistics plaftforms relies on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
+Many statistics platforms rely on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
 
 Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
@@ -88,7 +114,7 @@ CSV exports
 
 .. versionchanged:: 1.0.0
 
-   You can setup paremeters exports with a `YAML <https://yaml.org/>`_ file instead of an XML one.
+   You can setup parameted exports with a `YAML <https://yaml.org/>`_ file instead of an XML one.
 
 Galette provides a parameted CSV exports system. Only one parameted export is provided, but you can add your own to the ``config/exports.yaml`` file.
 
@@ -146,15 +172,113 @@ Administration tools
 
 .. warning::
 
-   All the admin tools operation are destructive, use it with cautions, and **make sure you did a database backup** before!
+   All the admin tools operations are destructive, use them with caution, and **make sure you did a database backup** before!
 
 There are a few tools provided for Galette admin that permits to:
 
 * **reinitialize mailings contents** will reset all emails contents to default values,
 * **reinitialize fields configuration** will reset all members core fields to their default value. This does not imply dynamic fields,
-* **reinitialize PDF models** will reset ll PDF models to default values,
+* **reinitialize PDF models** will reset all PDF models to default values,
 * **generate empty logins and passwords** those information are required to improve security, but sometimes missing (if you import a CSV for example). This feature will set random values as login and password fields that would be empty in database.
 * **Fix dynamic fields dates format** will convert all dynamic fields dates to the new format (see :ref:`dynamic fields <dynamic_fields>`).
+
+.. _mailing_queue_cron:
+
+Draining the mail queue
+=======================
+
+.. versionadded:: 1.3.0
+
+.. warning::
+
+   Use **one** drainer at a time!
+
+   Nothing prevents two of them from picking the same pending recipients at the same moment, message would be sent twice - and that could cause other errors anyway.
+
+As soon as an hourly or daily :ref:`sending limit <mail_throttling>` is set, Galette stops sending mass mailings and reminders in a single page load. It queues one entry per recipient in database, and drains that queue progressively.
+
+The progress page does it from your browser, which is enough most of the time, but it requires that page to stay open. Two other drainers are provided, and neither needs anybody to be logged in.
+
+A cron script, next to the reminders one:
+
+::
+
+   */15  *  *  *  *  apache /usr/bin/php -f /var/www/galette/cron/mailing_queue.php
+
+And a console command, :doc:`from the command line </command-line>`:
+
+::
+
+   $ php bin/console galette:mailing:process-queue
+
+The command asks for confirmation before sending anything, since the feature is still in alpha. Add ``--force`` to skip the question, which is what a cron entry calling the command would need.
+
+Both send batch after batch, waiting the configured delay between two messages, until the queue is empty or the quota is reached. They stop rather than wait for the quota window to open again, so what is left goes out on the next run: calling them regularly is the whole point.
+
+.. note::
+
+   Like the reminders script, ``cron/mailing_queue.php`` needs the address of your instance, since it runs with no incoming request to guess it from. Set ``pref_galette_url`` from the :ref:`advanced configuration <advanced_config>`, or keep the ``GALETTE_URI`` constant.
+
+.. _advanced_config:
+
+Advanced configuration
+======================
+
+.. versionadded:: 1.3.0
+
+The settings form only shows a curated set of settings. The **Configuration > Advanced configuration** entry lists them **all**, one row per setting, including those that have no place on the form and those that used to be reachable only by editing a PHP file.
+
+.. warning::
+
+   This page can break your installation, be very careful. Values are checked, but a setting that is perfectly valid can still be wrong for your instance, and nothing asks you to confirm before storing it.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config.png
+   :scale: 50%
+   :align: center
+   :alt: Galette advanced configuration
+
+Only the super administrator can reach the page, and the password is asked again before it opens. The confirmation is remembered for fifteen minutes; after that, or after a new login, it is asked again.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_confirm.png
+   :scale: 50%
+   :align: center
+   :alt: Password asked before the advanced configuration page opens
+
+Settings are saved **one at a time**: each row has its own **Save** button, and a **Reset to default** button appears as soon as the value differs from the one Galette ships with. Nothing is submitted for the whole page, so a mistake on one row cannot take the others with it.
+
+A value goes through the very same checks as the settings form, and is refused with the same messages: a number outside its bounds, a malformed email address, but also a change that would break a rule *between* settings, such as setting both a membership extension and a fixed beginning of membership.
+
+A search field above the table filters the rows on the setting name. It needs Javascript; without it the whole list is displayed.
+
+Each row carries a status, also recalled in the page legend:
+
+* **default**: never changed, the value Galette ships with,
+* **modified**: changed from the default, here or from the settings form. It can be reset,
+* **read-only**: Galette maintains this value itself, such as a generated identifier or a date it records. It is shown for information only,
+* **secret**: a password or a token. Its value is never displayed, only whether one is set, and it is changed from the settings form,
+* **locked**: a constant declared in :ref:`behavior.inc.php <behavior>` takes precedence over the stored value. Remove it from that file to manage the setting from here,
+* **unknown**: a row found in database that Galette does not describe. It may come from an older version or from a plugin. It is displayed, never edited.
+
+A setting can also carry an **alpha** label, on top of its status. It drives a feature that has not been through a release yet: it works, but it has seen little use. Try it on a test instance before your production one, and `report what you find <https://bugs.galette.eu>`_.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_legend.png
+   :scale: 50%
+   :align: center
+   :alt: The statuses a setting can carry
+
+A setting only shows an input when it can be edited from there. In the example below, ``pref_x_forwarded_for_index`` is locked by a constant and only displays what applies, while ``pref_session_timeout``, right after it, is editable:
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_locked.png
+   :scale: 50%
+   :align: center
+   :alt: A locked setting, and an editable one
+
+A second table, below the settings, lists the constants ``behavior.inc.php`` understands, whether each one is currently declared, and what it is set to. It is there so you can see how the instance is configured without opening the file. A constant a setting now replaces only appears in that table while it is declared, along with a link to the setting it overrides.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_constants.png
+   :scale: 50%
+   :align: center
+   :alt: Constants behavior.inc.php understands
 
 .. _galettemodes:
 
@@ -163,10 +287,10 @@ Galette modes
 
 Several modes are provided in Galette you can configure with ``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration <behavior>`). This directive can take the following values:
 
-* ``PROD``: production mode (non production instance should be on an other mode). This is the default mode for releases, but it may change in development branch.
+* ``PROD``: production mode (non production instance should be on another mode). This is the default mode for releases, but it may change in development branch.
 * ``DEMO``: demonstration mode, the same as ``PROD`` but with some features disabled like sending emails, modifying superadmin data, ...
 * ``TEST``: reserved for unit tests.
-* ``MAINT``: maintainance mode. Only super admin will be able to login.
+* ``MAINT``: maintenance mode. Only super admin will be able to login.
 
 .. _debug:
 
@@ -189,12 +313,7 @@ A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug mode. Wi
 Behavior configuration
 **********************
 
-It is possible to change some of Galette behaviors:
-
-* `GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;
-* you'll find in related part of the documentation you can use behavior configuration for some other usages (such as PDF cards settings, session lifetime, ...).
-
-You can add those directives by declaring constants in the ``galette/config/behavior.inc.php``.
+Some of Galette behaviors are set by declaring constants in the ``galette/config/behavior.inc.php`` file. A commented example of every one of them ships as ``behavior.inc.php.dist``, next to it.
 
 For example:
 
@@ -202,3 +321,32 @@ For example:
 
    <?php
    define('GALETTE_DEBUG', true);
+
+.. versionchanged:: 1.3.0
+
+   Only the settings Galette needs **before it can reach database** are still declared here. The others became regular settings, editable from the :ref:`advanced configuration <advanced_config>` page.
+
+The following settings can be set:
+
+* ``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,
+* ``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,
+* ``GALETTE_LOG_LVL``: verbosity of the logs, as an `Analog <https://github.com/jbroadway/analog>`_ level. Defaults to ``WARNING``, or ``DEBUG`` in debug mode,
+* ``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``,
+* ``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. They only apply in debug mode.
+
+Settings that moved
+===================
+
+.. versionadded:: 1.3.0
+
+   Three settings that used to be declared here are now stored in database, and edited from the :ref:`advanced configuration <advanced_config>` page:
+
+* ``GALETTE_URI`` became ``pref_galette_url``,
+* ``GALETTE_X_FORWARDED_FOR_INDEX`` became ``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a proxy <proxy_ip>`,
+* ``GALETTE_TIMEOUT`` became ``pref_session_timeout``.
+
+Declaring one of them still works, and **still takes precedence over the stored value**: nothing breaks on upgrade. Galette then writes a warning in its logs, and the advanced configuration page shows the setting as *locked*, naming the constant responsible. Remove it from ``behavior.inc.php`` to manage the setting from the page.
+
+.. note::
+
+   ``pref_galette_url`` is the one setting the :ref:`reminders cron script <reminders>` cannot do without: it runs with no incoming request, so it has no way of guessing the address of your instance. Set it - or keep the constant - if you automate reminders.
