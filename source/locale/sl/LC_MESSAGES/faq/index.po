@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-18 15:44+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "faq-index/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../faq/index.rst:5
 msgid "Frequently Asked Question (FAQ)"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../faq/index.rst:27
 msgid "My two-factor authentication codes are refused"
-msgstr ""
+msgstr "Moje dvostopenjske kode za preverjanje pristnosti so zavrnjene"
 
 #: ../faq/index.rst:31
 msgid ""
@@ -81,6 +81,10 @@ msgid ""
 "looks perfectly normal. This is, by a wide margin, the first thing to look "
 "at."
 msgstr ""
+"**Najprej preverite ure.** Kode so izračunane iz trenutnega časa in nič "
+"drugega. Če je ura vašega strežnika ali ura vaše naprave pomaknjena za več "
+"kot približno minuto, je vsaka koda zavrnjena, vse ostalo pa je videti "
+"popolnoma normalno. To je v veliki meri prva stvar, ki jo je treba pogledati."
 
 #: ../faq/index.rst:33
 msgid ""
@@ -91,10 +95,16 @@ msgid ""
 "again. Most authenticator applications also offer to correct their own clock "
 "for you."
 msgstr ""
+"Galette sprejme kodo trenutnega tridesetsekundnega obdobja ter tistega tik "
+"pred in tik za tem, kar pušča nekaj manj kot minuto in pol tolerance. Poleg "
+"tega pravilno nastavite obe uri -- na strežniku, tako da omogočite NTP; na "
+"telefonu, tako da vklopite samodejni datum in čas -- in poskusite znova. "
+"Večina aplikacij za preverjanje pristnosti ponuja tudi popravljanje svoje "
+"ure namesto vas."
 
 #: ../faq/index.rst:35
 msgid "Two other cases look like a refusal but are not one:"
-msgstr ""
+msgstr "Dva druga primera izgledata kot zavrnitev, vendar nista eno:"
 
 #: ../faq/index.rst:37
 msgid ""
@@ -102,16 +112,22 @@ msgid ""
 "code you just used to enrol, or reloading the page after a successful login, "
 "is refused. Wait for the next one -- it comes at most thirty seconds later."
 msgstr ""
+"**dvakrat ista koda**: koda je sprejeta samo enkrat, zato je pošiljanje "
+"kode, ki ste jo pravkar uporabili za vpis, ali ponovno nalaganje strani po "
+"uspešni prijavi zavrnjeno. Počakajte na naslednjega -- pride največ trideset "
+"sekund kasneje."
 
 #: ../faq/index.rst:38
 msgid ""
 "**too many attempts**: after a series of wrong codes, Galette stops "
 "answering for a while. Wait it out rather than trying harder."
 msgstr ""
+"**preveč poskusov**: po seriji napačnih kod se Galette za nekaj časa neha "
+"javljati. Raje počakajte, kot da se bolj trudite."
 
 #: ../faq/index.rst:41
 msgid "The server clock went backwards"
-msgstr ""
+msgstr "Ura strežnika je šla nazaj"
 
 #: ../faq/index.rst:43
 msgid ""
@@ -122,18 +138,23 @@ msgid ""
 "been used, and is refused as such until the clock catches up with what was "
 "recorded."
 msgstr ""
+"Galette si zapomni zadnje obdobje, za katerega je sprejela kodo, tako da "
+"kode ni mogoče uporabiti dvakrat. Če se ura **strežnika** premakne nazaj -- "
+"virtualni stroj, obnovljen iz posnetka, velik popravek NTP, gostitelj sploh "
+"brez NTP -- potem vsaka koda pade v obdobje, ki je že bilo uporabljeno, in "
+"je kot taka zavrnjena, dokler ura ne dohiti zapisanega."
 
 #: ../faq/index.rst:45
 msgid "Set the server clock right first. Then, for the account concerned:"
-msgstr ""
+msgstr "Najprej pravilno nastavite uro strežnika. Nato za zadevni račun:"
 
 #: ../faq/index.rst:51
 msgid "and, for the super administrator:"
-msgstr ""
+msgstr "in za superskrbnika:"
 
 #: ../faq/index.rst:58
 msgid "I lost the device computing my codes"
-msgstr ""
+msgstr "Izgubil sem napravo, ki izračunava moje kode"
 
 #: ../faq/index.rst:60
 msgid ""
@@ -142,6 +163,10 @@ msgid ""
 "in, disable the second factor and enable it again on your new device -- and "
 "keep the new recovery codes."
 msgstr ""
+"Uporabite eno od desetih obnovitvenih kod, ki ste jih dobili, ko ste jo "
+"omogočili: polje, ki zahteva kodo, jih tudi sprejme. Vsak deluje enkrat. Ko "
+"se prijavite, onemogočite drugi faktor in ga znova omogočite v svoji novi "
+"napravi - ter obdržite nove obnovitvene kode."
 
 #: ../faq/index.rst:62
 msgid ""
@@ -149,10 +174,12 @@ msgid ""
 "member of your association to :ref:`reset your second factor "
 "<member_2fa_reset>`."
 msgstr ""
+"Če nimate več nobene obnovitvene kode, prosite skrbnika ali člana osebja "
+"vašega združenja, da :ref:`ponastavi vaš drugi faktor <member_2fa_reset>`."
 
 #: ../faq/index.rst:65
 msgid "The super administrator cannot log in anymore"
-msgstr ""
+msgstr "Superskrbnik se ne more več prijaviti"
 
 #: ../faq/index.rst:67
 msgid ""
@@ -160,6 +187,9 @@ msgid ""
 "it has no recovery codes. Its second factor lives in the preferences, in "
 "database, which is where you clear it from:"
 msgstr ""
+"Ta račun ni član, zato ga nihče ne more ponastaviti iz vmesnika in nima "
+"obnovitvenih kod. Njegov drugi dejavnik je v nastavitvah, v bazi podatkov, "
+"od koder ga počistite:"
 
 #: ../faq/index.rst:74
 msgid ""
@@ -167,24 +197,33 @@ msgid ""
 "``PREFIX_DB`` setting of your configuration file). The next login asks for "
 "the password alone."
 msgstr ""
+"Zamenjajte ``galette_`` s svojo lastno predpono tabele, če ste jo spremenili "
+"(nastavitev ``PREFIX_DB`` vaše konfiguracijske datoteke). Naslednja prijava "
+"zahteva samo geslo."
 
 #: ../faq/index.rst:76
 msgid ""
 "To turn the second factor off for the whole instance at the same time -- the "
 "way out when something goes wrong for everybody at once -- add:"
 msgstr ""
+"Če želite izklopiti drugi dejavnik za celoten primer hkrati - izhod, ko gre "
+"nekaj narobe za vse hkrati - dodajte:"
 
 #: ../faq/index.rst:82
 msgid ""
 "Members who had enabled one keep it; they are simply no longer asked for a "
 "code until a policy is set again."
 msgstr ""
+"Člani, ki so ga omogočili, ga obdržijo; od njih se preprosto ne zahteva več "
+"kode, dokler pravilnik ni ponovno nastavljen."
 
 #: ../faq/index.rst:86
 msgid ""
 "Keep an access to your database at hand before you enable a second factor on "
 "the super administrator account. It is the only way back in for it."
 msgstr ""
+"Imejte pri roki dostop do svoje zbirke podatkov, preden omogočite drugi "
+"faktor v računu super skrbnika. To je edina pot nazaj."
 
 #: ../faq/index.rst:90
 msgid "How to report a bug or ask for a feature?"
