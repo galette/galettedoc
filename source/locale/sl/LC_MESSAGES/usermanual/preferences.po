@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-02 20:44+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-preferences/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../usermanual/preferences.rst:5
 msgid "Galette preferences"
@@ -568,12 +568,16 @@ msgid ""
 "The **qmail** method has been removed. Instances still configured with it "
 "are switched to ``sendmail`` when the database is updated."
 msgstr ""
+"Metoda **qmail** je bila odstranjena. Primerki, ki so še vedno konfigurirani "
+"z njim, se preklopijo na ``sendmail``, ko je baza podatkov posodobljena."
 
 #: ../usermanual/preferences.rst:161
 msgid ""
 "The **GMail** method has been removed. Instances still configured with it "
 "are switched to ``SMTP`` when the database is updated."
 msgstr ""
+"Metoda **GMail** je bila odstranjena. Primerki, ki so še vedno konfigurirani "
+"z njim, se preklopijo na ``SMTP``, ko je baza podatkov posodobljena."
 
 #: ../usermanual/preferences.rst:163
 msgid ""
@@ -619,7 +623,7 @@ msgstr "Omejitve pošiljanja"
 
 #: ../usermanual/preferences.rst:182
 msgid "This is an **experimental** feature."
-msgstr ""
+msgstr "To je **eksperimentalna** funkcija."
 
 #: ../usermanual/preferences.rst:184
 msgid ""
@@ -627,6 +631,9 @@ msgid ""
 "`report what you find <https://bugs.galette.eu>`_. Leaving the settings at "
 "their default keeps Galette sending exactly as it always did."
 msgstr ""
+"Preizkusite ga na testnem primerku pred produkcijskim, pozorno opazujte in "
+"`poročajte, kaj boste našli <https://bugs.galette.eu>`_. Če pustite privzete "
+"nastavitve, Galette pošilja točno tako, kot je vedno."
 
 #: ../usermanual/preferences.rst:186
 msgid ""
@@ -636,6 +643,11 @@ msgid ""
 "hour or per day. Galette can respect those restrictions, from five settings "
 "of the :ref:`advanced configuration <advanced_config>` page:"
 msgstr ""
+"Poštni strežniki so redko pripravljeni sprejeti vse, kar jim vržete. "
+"Omejujejo število prejemnikov, ki jih lahko nosi posamezno sporočilo, "
+"število sporočil, ki jih lahko nosi povezava, ali število sporočil, ki jih "
+"lahko pošljete na uro ali na dan. Galette lahko upošteva te omejitve s "
+"petimi nastavitvami strani :ref:`napredna konfiguracija <advanced_config>`:"
 
 #: ../usermanual/preferences.rst:188
 msgid ""
@@ -643,24 +655,33 @@ msgid ""
 "the default, keeps the historical behavior: one single message carrying "
 "every recipient in blind copy,"
 msgstr ""
+"``pref_mail_batch_size``: največje število prejemnikov na sporočilo. ``0``, "
+"privzeto, ohranja zgodovinsko vedenje: eno samo sporočilo, ki nosi vsakega "
+"prejemnika v slepi kopiji,"
 
 #: ../usermanual/preferences.rst:189
 msgid ""
 "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by "
 "default, no pause,"
 msgstr ""
+"``pref_mail_batch_delay``: premor v sekundah med dvema sporočiloma. privzeto "
+"``0``, brez premora,"
 
 #: ../usermanual/preferences.rst:190
 msgid ""
 "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, "
 "the default, means no limit,"
 msgstr ""
+"``pref_mail_hourly_limit``: največje število prejemnikov na uro. ``0``, "
+"privzeto, pomeni brez omejitve,"
 
 #: ../usermanual/preferences.rst:191
 msgid ""
 "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the "
 "default, means no limit,"
 msgstr ""
+"``pref_mail_daily_limit``: največje število prejemnikov na dan. ``0``, "
+"privzeto, pomeni brez omejitve,"
 
 #: ../usermanual/preferences.rst:192
 msgid ""
@@ -668,28 +689,38 @@ msgid ""
 "messages of a mailing instead of reconnecting for each one. Enabled by "
 "default."
 msgstr ""
+"``pref_mail_smtp_keepalive``: naj bo povezava SMTP odprta med vsemi "
+"sporočili v poštnem sporočilu, namesto da se ponovno poveže za vsako "
+"posebej. Privzeto omogočeno."
 
 #: ../usermanual/preferences.rst:194
 msgid ""
 "Apart from the keepalive, they all ship disabled: an instance that is "
 "updated behaves exactly as it did before."
 msgstr ""
+"Razen ohranjanja delovanja so vsi onemogočeni: primerek, ki je posodobljen, "
+"se obnaša natanko tako, kot se je prej."
 
 #: ../usermanual/preferences.rst:196
 msgid ""
 "Filter the advanced configuration on ``pref_mail_`` to get them all, next to "
 "the SMTP settings. The four that drive the queue carry the **alpha** marker:"
 msgstr ""
+"Filtrirajte napredno konfiguracijo na ``pref_mail_``, da jih dobite vse, "
+"poleg nastavitev SMTP. Štirje, ki poganjajo čakalno vrsto, nosijo oznako "
+"**alfa**:"
 
 #: ../usermanual/preferences.rst:198
 msgid "The sending limits, in the advanced configuration"
-msgstr ""
+msgstr "Omejitve pošiljanja v napredni konfiguraciji"
 
 #: ../usermanual/preferences.rst:203
 msgid ""
 "Refer to your mail provider's documentation for the values to use, along "
 "with the SMTP settings."
 msgstr ""
+"Za vrednosti, ki jih želite uporabiti, skupaj z nastavitvami SMTP, si "
+"oglejte dokumentacijo ponudnika e-pošte."
 
 #: ../usermanual/preferences.rst:207
 msgid ""
@@ -697,15 +728,21 @@ msgid ""
 "<mailing_queue>`: as soon as one of them is set, a mailing can no longer be "
 "sent in a single page load."
 msgstr ""
+"Urna in dnevna omejitev sta tisto, kar spremeni pošiljanje v :ref:`čakalno "
+"vrsto <mailing_queue>`: takoj ko je ena od njiju nastavljena, sporočila ni "
+"več mogoče poslati v nalaganju ene strani."
 
 #: ../usermanual/preferences.rst:211
 msgid ""
 "Limits count **recipients**, not messages, and for all messages Galette send."
 msgstr ""
+"Omejitve štejejo **prejemnike**, ne sporočil, in za vsa sporočila, ki jih "
+"pošlje Galette."
 
 #: ../usermanual/preferences.rst:213
 msgid "The real limit of course depends on all usages of configured server."
 msgstr ""
+"Realna omejitev je seveda odvisna od vseh uporab konfiguriranega strežnika."
 
 #: ../usermanual/preferences.rst:216
 msgid "Labels"
@@ -949,6 +986,9 @@ msgid ""
 "interface may still change. It is disabled by default; nothing happens until "
 "you choose otherwise."
 msgstr ""
+"Označeno kot **eksperimentalno**: je popolno in preizkušeno, vendar je novo "
+"in vmesnik se lahko še spremeni. Privzeto je onemogočen; nič se ne zgodi, "
+"dokler ne izberete drugače."
 
 #: ../usermanual/preferences.rst:315
 msgid ""
@@ -957,6 +997,10 @@ msgid ""
 "changes every thirty seconds and comes from an application on the user own "
 "phone or computer. A stolen password is then not enough anymore."
 msgstr ""
+"Geslo je en sam dejavnik: kdor koli ga pozna, je notri. Dvofaktorska "
+"avtentikacija takoj za geslom zahteva šestmestno kodo, ki se spremeni vsakih "
+"trideset sekund in prihaja iz aplikacije v uporabnikovem telefonu ali "
+"računalniku. Ukradeno geslo potem ni več dovolj."
 
 #: ../usermanual/preferences.rst:317
 msgid ""
@@ -964,19 +1008,23 @@ msgid ""
 "authenticator application speaks; no third party service is involved, and "
 "nothing leaves your server."
 msgstr ""
+"Galette izvaja standard TOTP (:rfc:`6238`), ki ga govori vsaka aplikacija za "
+"preverjanje pristnosti; ni vključena nobena storitev tretje osebe in nič ne "
+"zapusti vašega strežnika."
 
 #: ../usermanual/preferences.rst:319
 msgid "Two policies are available:"
-msgstr ""
+msgstr "Na voljo sta dve politiki:"
 
 #: ../usermanual/preferences.rst:321
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
+"**onemogočeno** (privzeto): nič se ne spremeni, nikogar se ne zahteva koda,"
 
 #: ../usermanual/preferences.rst:322
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
-msgstr ""
+msgstr "**izbirno**: vsak ga lahko omogoči iz svojega računa, nikomur ni treba."
 
 #: ../usermanual/preferences.rst:324
 msgid ""
@@ -987,6 +1035,12 @@ msgid ""
 "way back is a command in the database. It is planned for a later version, "
 "once the optional policy has been used in the field."
 msgstr ""
+"Nastavitev **obveznega** drugega dejavnika — za skrbnike in uslužbence ali "
+"za vse — je napisana in preizkušena, vendar še ni ponujena: v skladu z "
+"obveznim pravilnikom ura strežnika, ki zaniha, ali vpis, ki gre narobe, "
+"postavi celotno zvezo zunaj lastne instance in edina pot nazaj je ukaz v "
+"bazi podatkov. Načrtovano je za poznejšo različico, ko bo izbirni pravilnik "
+"uporabljen na terenu."
 
 #: ../usermanual/preferences.rst:326
 msgid ""
@@ -997,6 +1051,11 @@ msgid ""
 "remembered in a cookie of the browser, so the invitation comes back on a new "
 "browser, or after a year."
 msgstr ""
+"Ker nihče ni prisiljen k včlanitvi, so skrbniki in člani osebja – računi, ki "
+"lahko preberejo osebni status, naslove in finančne podatke vsakega člana – "
+"povabljeni, da ob prijavi nastavijo drugi dejavnik z gumboma **Pozneje** in "
+"**Ne sprašuj več**. Zavrnitev si zapomni piškotek brskalnika, zato se vabilo "
+"vrne v novem brskalniku ali po enem letu."
 
 #: ../usermanual/preferences.rst:330
 msgid ""
@@ -1006,6 +1065,11 @@ msgid ""
 "disabled, the pages to enable a second factor answer nothing: a factor "
 "enrolled then would never be asked for."
 msgstr ""
+"Preklop pravilnika nazaj na **onemogočeno** ne izbriše ničesar. Kode niso "
+"več zahtevane, drugi dejavniki, ki so že omogočeni, pa se znova začnejo "
+"zahtevati takoj, ko znova omogočite pravilnik. Medtem ko je pravilnik "
+"onemogočen, strani za omogočanje drugega faktorja ne odgovorijo na nič: "
+"takrat vpisan faktor ne bi bil nikoli zahtevan."
 
 #: ../usermanual/preferences.rst:332
 msgid ""
@@ -1013,6 +1077,8 @@ msgid ""
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
 "it <faq_2fa>`."
 msgstr ""
+"Pokrit je tudi superskrbnik, kot kateri koli drug račun. Ker ni član, nima "
+"obnovitvenih kod; glejte :ref:`kaj storiti, če ga izgubite <faq_2fa>`."
 
 #: ../usermanual/preferences.rst:334
 msgid ""
@@ -1021,10 +1087,14 @@ msgid ""
 "Administrators and staff members can :ref:`reset the second factor of a "
 "member <member_2fa_reset>` who lost it."
 msgstr ""
+"Člani omogočijo in upravljajo lasten drugi faktor iz svojega računa; to je "
+"opisano v :ref:`članskem delu tega priročnika <man_2fa>`. Administratorji in "
+"uslužbenci lahko :ref:`ponastavijo drugi faktor člana <member_2fa_reset>`, "
+"ki ga je izgubil."
 
 #: ../usermanual/preferences.rst:337
 msgid "Super administrator credentials"
-msgstr ""
+msgstr "Poverilnice superskrbnika"
 
 #: ../usermanual/preferences.rst:341
 msgid ""
@@ -1032,12 +1102,17 @@ msgid ""
 "Once logged in as super administrator, go to **My account**, then **My "
 "information**. Galette asks for the current password before saving a new one."
 msgstr ""
+"Prijavnina in geslo superskrbnika nista več v nastavitvah. Ko ste "
+"prijavljeni kot super skrbnik, pojdite na **Moj račun** in nato na **Moje "
+"informacije**. Galette zahteva trenutno geslo, preden shrani novo."
 
 #: ../usermanual/preferences.rst:343
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
 msgstr ""
+"Če se to geslo izgubi, ga lahko spremenite :ref:`v ukazni vrstici "
+"<cli_superadmin_password>`."
 
 #~ msgid "**Logging**: handles internal history:"
 #~ msgstr "**Beleženje**: obravnava notranjo zgodovino:"
