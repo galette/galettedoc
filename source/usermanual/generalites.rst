@@ -35,6 +35,8 @@ On members and cards, you can :ref:`configure which fields are accessible <field
 
 From the preferences, you can also :ref:`give groups managers extra rights <pref_rights>`, like editing or creating members.
 
+.. _management_rules:
+
 Management rules
 ================
 
