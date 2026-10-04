@@ -198,6 +198,8 @@ When you use an existing history entry, here are the information that will be us
 * message,
 * html/text flag.
 
+.. _csv_imports:
+
 CSV imports
 ===========
 
