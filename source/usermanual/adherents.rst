@@ -228,6 +228,8 @@ If proposed model is not ok for you, click on `Edit model` and choose your field
 
 Once you have selected your fields, click on the `Store new model` button.
 
+Dynamic fields of the members can be imported as well, except file fields. A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; a field with no limit gets 10 columns.
+
 When in the current model tab, you can download an empty model from the `Generate an empty CSV file` button. Of course, you can change model if you want, or remove it to get the default model back.
 
 Import
