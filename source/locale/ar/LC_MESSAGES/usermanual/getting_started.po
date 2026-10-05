@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.3\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-10-05 22:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: ../usermanual/getting_started.rst:5
+msgid "Getting started"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:7
+msgid "Galette has just been installed for your association, and you wonder where to start? This page walks you through the first steps, in order. Each step links to the part of this manual that describes it in detail."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:9
+msgid "Dashboard of the super administrator, just after installation"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:15
+msgid "1. Secure the super administrator account"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:17
+msgid "During the installation, a **super administrator** account has been created. This account is not a member: it is the \"master key\" of your Galette, it can do everything, but it should not be used every day."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:19
+msgid "Log in with it, then go to **My Account**, then **My information**, and set a strong password,"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:20
+msgid "keep that password somewhere safe."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:22
+msgid "For daily work, it is better to use the member accounts of the people who run the association:"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:24
+msgid "a member whose status is a board status (president, treasurer, secretary by default) is a **staff member**,"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:25
+msgid "checking **Galette Admin** on a member card makes this member an **administrator**."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:27
+msgid "See :ref:`rights <man_generalites>` to know what each one can do."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:30
+msgid "2. Fill in your association information"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:32
+msgid "Go to **Configuration**, then **Settings**. The **General** tab holds the information about your association:"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:34
+msgid "its name and a short description, displayed on every page,"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:35
+msgid "its logo,"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:36
+msgid "its address, phone number, email address and website."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:38
+msgid "They are used on the screens, but also on the documents Galette produces: invoices, receipts, member cards... Then click on **Save**."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:40
+msgid "Two settings of the **Parameters** tab decide how memberships are counted, and deserve a look right away:"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:42
+msgid "**Default membership extension**: how many months a membership fee lasts, usually 12,"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:43
+msgid "**Beginning of membership**: set it if all memberships of your association start on the same day of the year (on January 1st, or at the beginning of your season, for example). Leave it empty if each membership lasts from the day it is paid."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:45
+msgid "All the settings are described in :ref:`Galette preferences <man_preferences>`, and the way due dates are calculated in :ref:`management rules <management_rules>`."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:48
+msgid "3. Check that emails can be sent"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:50
+msgid "Galette sends emails: login information to new members, password recovery, reminders, mailings... In the **E-Mail** tab of the settings, choose how emails are sent and set the sender address. Use **Test connection**, then **Send a test email**, to make sure a message really arrives before going further."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:52
+msgid "Ask your web host which settings to use. Without them, members cannot recover a lost password by themselves."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:55
+msgid "4. Adapt the lists to your association"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:57
+msgid "Galette comes with ready to use lists, which you can rename, complete or remove from the **Configuration** menu:"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:59
+msgid "**User statuses**: the roles of the members in your association (president, treasurer, active member...),"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:60
+msgid "**Contributions types**: the kinds of membership fees and donations you receive,"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:61
+msgid "**Payment types**: the ways your members pay (cash, check, credit card...),"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:62
+msgid "**Titles**: Mr., Mrs...."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:64
+msgid "Take a few minutes to adapt them now: they will appear in every form afterwards."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:66
+msgid "If you need to record information Galette does not know about, such as a licence number, you can add your own fields from **Configuration**, then **Dynamic fields**; see :ref:`dynamic fields <dynamic_fields>`."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:69
+msgid "5. Add your members"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:71
+msgid "To add a member, go to **Members**, then **Add a member**. Only a few fields are required; the others can be filled in later, by you or by the member themselves. See :ref:`members management <man_adherents>`."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:73
+msgid "If you already have a list of members in a spreadsheet, you can import it rather than typing everything again; see :ref:`CSV imports <csv_imports>`."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:76
+msgid "6. Record the membership fees"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:78
+msgid "When a member pays, go to **Contributions**, then **Add a membership fee**, select the member, the contribution type, the amount and the payment type. Galette calculates the end of the membership on its own."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:80
+msgid "Donations are recorded the same way, from **Add a donation**. See :doc:`contributions management <contributions>`."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:83
+msgid "7. Write to your members"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:85
+msgid "Go to **Members**, then **List of members**, select the members you want to write to with the checkboxes, and choose **Mail** in the actions displayed under the list. See :ref:`e-mailing <emailing>`."
+msgstr ""
+
+#: ../usermanual/getting_started.rst:88
+msgid "8. Let your members log in"
+msgstr ""
+
+#: ../usermanual/getting_started.rst:90
+msgid "Each member with a username and a password can log in to Galette, see their membership, download their member card or their receipts, and update their own information. The :ref:`my account <man_my_account>` page is written for them: you can send them its link."
+msgstr ""
