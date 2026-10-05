@@ -109,6 +109,31 @@ If a policy makes it mandatory, you will be asked to enable it again at your nex
 
    Codes are computed from the current time, so both your device and the server have to agree on it. This is by far the most common reason for codes being refused; see :ref:`the FAQ <faq_2fa>`.
 
+.. _dashboard:
+
+Dashboard
+=========
+
+The dashboard is the page displayed after logging in. Its tiles give a quick access to the main features; each user only sees the tiles of the features they are allowed to use. Members see their own information, contributions and transactions; group managers also get shortcuts to the contributions and transactions of the members they manage, when the association allows it.
+
+Next to the tiles:
+
+* administrators and staff members see the latest news of the Galette project,
+* everyone sees the news of your association, when an **RSS feed URL** is set in the :ref:`preferences <man_preferences>`,
+* administrators are invited to send :ref:`telemetry <telemetry>` data, until it is sent or the panel is hidden.
+
+Administrators and staff members can uncheck **Show dashboard on login** to go straight to the members list after logging in; this choice is kept by the browser. The dashboard remains available from the **Dashboard** menu entry.
+
+At the top of every page, the language list changes the language of the interface.
+
+A few banners may also be displayed at the top of the pages:
+
+* **Maintenance**: the instance is in :ref:`maintenance mode <galettemodes>`; only the super administrator can log in, and is reminded of it,
+* **Demonstration**: the instance runs in demonstration mode, some features are disabled,
+* **Superadmin**: you are logged in as super administrator, who is not a member.
+
+When a new Galette release is available, an icon is displayed next to the version number at the bottom of the pages, for administrators and staff members.
+
 Interface
 =========
 
@@ -120,6 +145,28 @@ We do our best for the Galette interface to be:
 * accessible (without any WCAG, WAI or equivalent tests run).
 
 If you find places where one of those points is incorrect, do not hesitate to tell us on the tracker or on the mailing list!
+
+.. _history:
+
+History
+=======
+
+Galette keeps a history of what happens: logins, failed logins, members added or changed, contributions, mailings sent... Administrators and staff members can read it from **Management**, then **Logs**.
+
+.. image:: ../_styles/static/images/usermanual/history.png
+   :scale: 50%
+   :align: center
+   :alt: Logs
+
+Each line gives the date, the address the action came from, the user who did it, the action and a short description. The list can be filtered on a period, a member and an action.
+
+**Flush the logs** empties the history, after a confirmation. This cannot be undone.
+
+.. note::
+
+   Actions are stored in the language of the user who did them: a history can therefore mix several languages.
+
+.. _telemetry:
 
 Telemetry
 =========
