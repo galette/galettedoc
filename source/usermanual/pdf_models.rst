@@ -31,6 +31,8 @@ In addition of header, footer and CSS styles, a model defines a title, a sub tit
 
 Each of those fields can take some replacement values, refer to the inline help from the user interface to get details. They also can contains internationalized texts like `_T("My text")` that relies on Galette standard translation capacities.
 
+``{ASSO_LOGO}`` inserts the logo of the association, and ``{ASSO_PRINT_LOGO}`` the logo for printing set in the **Cards** tab of the preferences, which is often better suited to paper.
+
 Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent browser; there are many limitations.
 
 Invoices and receipts

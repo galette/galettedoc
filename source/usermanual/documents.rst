@@ -31,6 +31,13 @@ Management
    :align: center
    :alt: Add a document
 
+The list can be filtered on the creation date, the filename, the type and the visibility of the documents. Click on **Filter** to apply the filters, and on **Clear filter** to come back to the whole list. When there are many documents, the list is displayed on several pages.
+
+.. image:: ../_styles/static/images/usermanual/documents_list_filters.png
+   :scale: 50%
+   :align: center
+   :alt: Filtering the documents list
+
 When creating or editing a document, you will of course choose a file to upload, a document type and a permission.
 
 Several possible documents types are available from the list, you add a new one by just entering your text in the field.
