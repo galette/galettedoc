@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-05 22:48+0200\n"
 "PO-Revision-Date: 2026-05-06 11:42+0000\n"
 "Last-Translator: Edson Wolf <edsonwolf@vivaldi.net>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -533,11 +533,11 @@ msgstr "Mensagem,"
 msgid "html/text flag."
 msgstr "Sinalizador html/texto."
 
-#: ../usermanual/adherents.rst:202
+#: ../usermanual/adherents.rst:204
 msgid "CSV imports"
 msgstr "Importações CSV"
 
-#: ../usermanual/adherents.rst:204
+#: ../usermanual/adherents.rst:206
 msgid ""
 "It is possible to import member data from a predefined model. A default "
 "model is provided, but you can configure it to suits your needs, using the "
@@ -547,11 +547,11 @@ msgstr ""
 "modelo padrão é fornecido, mas você pode configurá-lo de acordo com suas "
 "necessidades, usando a opção de menu \"Importações\"."
 
-#: ../usermanual/adherents.rst:207
+#: ../usermanual/adherents.rst:209
 msgid "Model"
 msgstr "Modelo"
 
-#: ../usermanual/adherents.rst:209
+#: ../usermanual/adherents.rst:211
 msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
 "current model will be used to check your CSV file integrity."
@@ -560,17 +560,17 @@ msgstr ""
 "importar, o modelo atual será usado para verificar a integridade do seu "
 "arquivo CSV."
 
-#: ../usermanual/adherents.rst:211
+#: ../usermanual/adherents.rst:213
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr ""
 "Para configurar o modelo, clique no botão \"Configurar\" na interface do "
 "usuário."
 
-#: ../usermanual/adherents.rst:213
+#: ../usermanual/adherents.rst:215
 msgid "Default import model"
 msgstr "Modelo de importação padrão"
 
-#: ../usermanual/adherents.rst:218
+#: ../usermanual/adherents.rst:220
 msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
 "fields:"
@@ -578,16 +578,16 @@ msgstr ""
 "Se o modelo proposto não for adequado para você, clique em \"Editar modelo\" "
 "e escolha os campos desejados:"
 
-#: ../usermanual/adherents.rst:220
+#: ../usermanual/adherents.rst:222
 msgid "Import model configuration"
 msgstr "Importar configuração do modelo"
 
-#: ../usermanual/adherents.rst:225
+#: ../usermanual/adherents.rst:227
 msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
 msgstr "Após selecionar os campos, clique no botão \"Salvar novo modelo\"."
 
-#: ../usermanual/adherents.rst:227
+#: ../usermanual/adherents.rst:229
 msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
@@ -597,11 +597,11 @@ msgstr ""
 "\"Gerar um arquivo CSV vazio\". Claro, você pode alterar o modelo se quiser "
 "ou removê-lo para retornar ao modelo padrão."
 
-#: ../usermanual/adherents.rst:230
+#: ../usermanual/adherents.rst:232
 msgid "Import"
 msgstr "Importar"
 
-#: ../usermanual/adherents.rst:232
+#: ../usermanual/adherents.rst:234
 #, fuzzy
 #| msgid ""
 #| "Once you have retrieved and fill the empty file, you have to send it "
@@ -619,7 +619,7 @@ msgstr ""
 "a extensão do seu arquivo é \"csv\" (ou \"txt\") e se o tamanho não excede o "
 "tamanho máximo de upload (2 MB por padrão no PHP)."
 
-#: ../usermanual/adherents.rst:236
+#: ../usermanual/adherents.rst:238
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -629,7 +629,7 @@ msgstr ""
 "no diretório ``galette/data/imports``, ou dividi-lo em vários arquivos "
 "menores que podem ser importados um por um."
 
-#: ../usermanual/adherents.rst:238
+#: ../usermanual/adherents.rst:240
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -637,11 +637,11 @@ msgstr ""
 "Os arquivos enviados são listados na seção \"Arquivos existentes\". Você "
 "pode exibi-los, removê-los ou importá-los:"
 
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:242
 msgid "Select and import file"
 msgstr "Selecione e importe o arquivo"
 
-#: ../usermanual/adherents.rst:245
+#: ../usermanual/adherents.rst:247
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -652,7 +652,7 @@ msgstr ""
 "preenchidos, formatação de dados correta, etc.) sem armazenar nada no banco "
 "de dados."
 
-#: ../usermanual/adherents.rst:247
+#: ../usermanual/adherents.rst:249
 msgid ""
 "When you import a CSV file, if one line is incorrect, previous ones may be "
 "stored in the database already; so it is advised to use the dry-run before "
@@ -662,7 +662,7 @@ msgstr ""
 "anteriores podem já estar armazenadas no banco de dados; portanto, é "
 "recomendável fazer um teste prévio para corrigir o erro."
 
-#: ../usermanual/adherents.rst:249
+#: ../usermanual/adherents.rst:251
 #, fuzzy
 #| msgid ""
 #| "You will have error messages than something went wrong (in dry-run mode "
@@ -674,7 +674,7 @@ msgstr ""
 "Você receberá mensagens de erro indicando que algo deu errado (tanto no modo "
 "de teste quanto em modo normal):"
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:255
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -685,11 +685,11 @@ msgstr ""
 "obrigatórios na configuração do Galette não estiverem listados no seu modelo "
 "de importação."
 
-#: ../usermanual/adherents.rst:258
+#: ../usermanual/adherents.rst:260
 msgid "Links between members"
 msgstr "Ligações entre membros"
 
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:264
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -699,7 +699,7 @@ msgstr ""
 "para armazenar famílias, por exemplo, ou membros de uma mesma empresa. Você "
 "pode acessar os membros filhos a partir do membro pai e vice-versa."
 
-#: ../usermanual/adherents.rst:264
+#: ../usermanual/adherents.rst:266
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -707,7 +707,7 @@ msgstr ""
 "Você pode adicionar quantos filhos quiser para um membro, mas um filho não "
 "pode se tornar um pai."
 
-#: ../usermanual/adherents.rst:266
+#: ../usermanual/adherents.rst:268
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -721,7 +721,7 @@ msgstr ""
 "automaticamente opcionais, independentemente da configuração. Caso alguma "
 "dessas informações esteja ausente, ela será obtida do remetente principal."
 
-#: ../usermanual/adherents.rst:268
+#: ../usermanual/adherents.rst:270
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -729,11 +729,11 @@ msgstr ""
 "Membros sem endereço de e-mail não podem usar o recurso \"recuperar senha\". "
 "Isso não afeta a restrição de unicidade do e-mail no banco de dados."
 
-#: ../usermanual/adherents.rst:273
+#: ../usermanual/adherents.rst:275
 msgid "Resetting a second factor"
 msgstr ""
 
-#: ../usermanual/adherents.rst:277
+#: ../usermanual/adherents.rst:279
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -742,7 +742,7 @@ msgid ""
 "member logs in with their password alone until they enrol again."
 msgstr ""
 
-#: ../usermanual/adherents.rst:279
+#: ../usermanual/adherents.rst:281
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -751,7 +751,7 @@ msgid ""
 "only the super administrator can."
 msgstr ""
 
-#: ../usermanual/adherents.rst:283
+#: ../usermanual/adherents.rst:285
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -759,11 +759,11 @@ msgid ""
 "and for whom."
 msgstr ""
 
-#: ../usermanual/adherents.rst:286
+#: ../usermanual/adherents.rst:288
 msgid "Impersonating"
 msgstr "Impersonação"
 
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:292
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -773,7 +773,7 @@ msgstr ""
 "suas ACLs, grupos, etc. Nesse caso, infelizmente é frequente vermos "
 "credenciais enviadas por e-mails inseguros, o que deve ser evitado."
 
-#: ../usermanual/adherents.rst:292
+#: ../usermanual/adherents.rst:294
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
