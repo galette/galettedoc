@@ -33,6 +33,8 @@ Main dashboard part propose you a quick access to main Galette features :)
    adherents.rst
    recherche.rst
    contributions.rst
+   groups.rst
+   reference_lists.rst
    configuration.rst
    documents.rst
    pdf_models.rst

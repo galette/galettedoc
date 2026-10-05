@@ -48,6 +48,8 @@ Filter and select members
 
 Filtering members list is documented in :ref:`search section <search_galette>`. All possibilities can be used with actions on selection.
 
+.. _mass_changes:
+
 Mass changes
 ^^^^^^^^^^^^
 

@@ -27,6 +27,8 @@ Contributions are entirely configurable. There are two main types of contributio
 
 Contribution types management allows you to define a label, and if it extends the membership or not.
 
+See :ref:`contributions types <contributions_types_list>` to manage them.
+
 .. _reminders:
 
 Reminders
@@ -70,6 +72,8 @@ Invoices and receipts
 In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution.
 
 You can customize the PDF using :ref:`PDF models <pdf_models>`.
+
+.. _scheduled_payments:
 
 Scheduled payments
 ^^^^^^^^^^^^^^^^^^
