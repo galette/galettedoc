@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-05 22:48+0200\n"
 "PO-Revision-Date: 2025-12-11 13:00+0000\n"
 "Last-Translator: Sisitenr <sisiton2019@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -444,62 +444,62 @@ msgstr ""
 msgid "html/text flag."
 msgstr ""
 
-#: ../usermanual/adherents.rst:202
+#: ../usermanual/adherents.rst:204
 msgid "CSV imports"
 msgstr ""
 
-#: ../usermanual/adherents.rst:204
+#: ../usermanual/adherents.rst:206
 msgid ""
 "It is possible to import member data from a predefined model. A default "
 "model is provided, but you can configure it to suits your needs, using the "
 "`Imports` menu entry."
 msgstr ""
 
-#: ../usermanual/adherents.rst:207
+#: ../usermanual/adherents.rst:209
 msgid "Model"
 msgstr ""
 
-#: ../usermanual/adherents.rst:209
+#: ../usermanual/adherents.rst:211
 msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
 "current model will be used to check your CSV file integrity."
 msgstr ""
 
-#: ../usermanual/adherents.rst:211
+#: ../usermanual/adherents.rst:213
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr ""
 
-#: ../usermanual/adherents.rst:213
+#: ../usermanual/adherents.rst:215
 msgid "Default import model"
 msgstr ""
 
-#: ../usermanual/adherents.rst:218
+#: ../usermanual/adherents.rst:220
 msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
 "fields:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:220
+#: ../usermanual/adherents.rst:222
 msgid "Import model configuration"
 msgstr ""
 
-#: ../usermanual/adherents.rst:225
+#: ../usermanual/adherents.rst:227
 msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
 msgstr ""
 
-#: ../usermanual/adherents.rst:227
+#: ../usermanual/adherents.rst:229
 msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
 "want, or remove it to get the default model back."
 msgstr ""
 
-#: ../usermanual/adherents.rst:230
+#: ../usermanual/adherents.rst:232
 msgid "Import"
 msgstr ""
 
-#: ../usermanual/adherents.rst:232
+#: ../usermanual/adherents.rst:234
 msgid ""
 "Once you have retrieved and fill the empty file, you have to send it using "
 "the form `Send a new file`. At this step, Galette will check your file "
@@ -507,68 +507,68 @@ msgid ""
 "the :ref:`maximum size allowed for imports <upload_sizes>` (2 Mo by default)."
 msgstr ""
 
-#: ../usermanual/adherents.rst:236
+#: ../usermanual/adherents.rst:238
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
 "files you can import one by one."
 msgstr ""
 
-#: ../usermanual/adherents.rst:238
+#: ../usermanual/adherents.rst:240
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:242
 msgid "Select and import file"
 msgstr ""
 
-#: ../usermanual/adherents.rst:245
+#: ../usermanual/adherents.rst:247
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
 "without storing anything in the database."
 msgstr ""
 
-#: ../usermanual/adherents.rst:247
+#: ../usermanual/adherents.rst:249
 msgid ""
 "When you import a CSV file, if one line is incorrect, previous ones may be "
 "stored in the database already; so it is advised to use the dry-run before "
 "to get error fixed."
 msgstr ""
 
-#: ../usermanual/adherents.rst:249
+#: ../usermanual/adherents.rst:251
 msgid ""
 "Galette displays error messages if something went wrong, in dry-run mode or "
 "not."
 msgstr ""
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:255
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
 "listed in your import model."
 msgstr ""
 
-#: ../usermanual/adherents.rst:258
+#: ../usermanual/adherents.rst:260
 msgid "Links between members"
 msgstr ""
 
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:264
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
 "members from the parent, and parent from the children."
 msgstr ""
 
-#: ../usermanual/adherents.rst:264
+#: ../usermanual/adherents.rst:266
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
 msgstr ""
 
-#: ../usermanual/adherents.rst:266
+#: ../usermanual/adherents.rst:268
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -577,17 +577,17 @@ msgid ""
 "retrieved from the parent."
 msgstr ""
 
-#: ../usermanual/adherents.rst:268
+#: ../usermanual/adherents.rst:270
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
 msgstr ""
 
-#: ../usermanual/adherents.rst:273
+#: ../usermanual/adherents.rst:275
 msgid "Resetting a second factor"
 msgstr ""
 
-#: ../usermanual/adherents.rst:277
+#: ../usermanual/adherents.rst:279
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -596,7 +596,7 @@ msgid ""
 "member logs in with their password alone until they enrol again."
 msgstr ""
 
-#: ../usermanual/adherents.rst:279
+#: ../usermanual/adherents.rst:281
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -605,7 +605,7 @@ msgid ""
 "only the super administrator can."
 msgstr ""
 
-#: ../usermanual/adherents.rst:283
+#: ../usermanual/adherents.rst:285
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -613,18 +613,18 @@ msgid ""
 "and for whom."
 msgstr ""
 
-#: ../usermanual/adherents.rst:286
+#: ../usermanual/adherents.rst:288
 msgid "Impersonating"
 msgstr ""
 
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:292
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
 "credentials sent by insecure emails; which should really be avoid."
 msgstr ""
 
-#: ../usermanual/adherents.rst:292
+#: ../usermanual/adherents.rst:294
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
