@@ -109,6 +109,8 @@ Galette handle several languages, but when you add a new dynamic field, there is
 
 Note that each new label will be added with current Galette lang.
 
+.. _emails_contents:
+
 Emails contents
 ===============
 

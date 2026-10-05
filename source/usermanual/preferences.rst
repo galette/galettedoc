@@ -23,15 +23,21 @@ This tab defines some parameters related to your association:
 * **Address**,
 * **Zipcode**,
 * **Town**,
+* **Region**,
 * **Country**,
 * **Postal address**: choose which postal address will be used:
 
   * either **from the preferences** to use the one entered in the form,
   * either **from a member** to use address from a staff member,
 
+* **Phone**: the phone number of the association; as for the address, it can be the one entered in the form, or the phone or mobile phone of a staff member,
+* **E-Mail**: the contact email address of the association,
 * **Website**: website URL,
+* **Prevent search engines indexation**: asks search engines not to list the pages of your Galette,
 * **Telemetry date**: date on which `telemetry information <https://telemetry.galette.eu>`_ was sent,
 * **Registration date**: date of `registration of your Galette instance <https://telemetry.galette.eu/reference>`_
+
+The name, the address, the phone number, the email address and the website of the association can be used as variables in :ref:`emails contents <emails_contents>` and in :ref:`PDF models <pdf_models>`.
 
 Social networks
 ===============
@@ -55,6 +61,8 @@ Galette related parameters:
 
 * **Default lang**: default instance lang (can be changed many ways by the user),
 * **Lines / page**: number of lines to display on lists for pagination,
+* **Default payment type**: the payment type selected by default when a contribution is added,
+* **Number of columns on the member form**: display the member form on one, two or three columns,
 * **After member creation**: defines action to execute after a member has been added:
 
   * create a new contribution,
@@ -68,12 +76,12 @@ Galette related parameters:
 * **Default account filter**: default account filter to apply on members list,
 * **Default membership extension**: membership extension in months,
 * **Beginning of membership**: beginning date of the financial period,
+* **Number of months offered**: when a beginning of membership is set, the contributions recorded during the last months of the period are valid for the whole next period as well. With 2 months offered and a period ending on December 31st, a member who pays in November is up to date until the end of the next year,
+* **Force member picture ratio**: resize and crop the pictures of the members to the selected ratio (square, portrait or landscape),
+* **Display the link to download the empty adhesion form**: display a link to the empty adhesion form on the public pages and on the registration form, for people who would rather fill it in on paper,
 * **Public pages enabled**: enable or disable public pages,
-* **Show public pages for**: defines who can see public pages:
-
-  * **Everyone**, including simple visitors,
-  * **Up to date members**,
-  * **Administrators and staff members**,
+* **Public pages visibility**: who can see each public page, or the **Default** visibility for the pages that are not listed, including the ones of plugins. Each page can be shown to **Everyone**, to **Up to date members**, to **Admin and staff only**, be **Hidden**, or **Inherit** the default,
+* **Include groups managers with staff?**: list the group managers on the public staff pages,
 
 * **Self registration enabled**: enable or disable self registration feature,
 * **Post new contribution script URI**: URI of a script that will be called after a new contribution has been added. Several prefixes are handled:
@@ -167,8 +175,28 @@ SMTP configuration is a bit more complex :
 * **SMTP server**: server address, required,
 * **SMTP port**: server port, required,
 * **Use SMTP authentication**: if your server requires an authentication. In this case, you will also have to set username and password,
+* **SMTP user** and **SMTP password**: the credentials given by your mail provider. Leave the password empty to keep the current one,
 * **Use TLS for SMTP**: enable SSL support,
 * **Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self signed for example).
+
+.. _mail_tests:
+
+Testing the settings
+^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+Two buttons, under the emailing method, check your settings before you rely on them:
+
+.. image:: ../_styles/static/images/usermanual/prefs_mail_tests.png
+   :scale: 50%
+   :align: center
+   :alt: Testing the email settings
+
+* **Test connection** connects to the mail server and checks that it accepts your settings, without sending anything,
+* **Send a test email** sends a message, to make sure it really arrives.
+
+Tests run on the settings displayed in the form, even those that are not saved yet: you can try several values, and save once it works. Nothing can be tested when **Emailing disabled** is selected.
 
 .. _mail_throttling:
 
@@ -220,6 +248,17 @@ Labels
    :align: center
    :alt: Galette settings, labels tab
 
+This tab describes the sheets of self-adhesive labels you print the addresses of your members on. All sizes are in millimeters:
+
+* **Vertical margins** and **Horizontal margins**: the blank space around the labels, on the edges of the sheet,
+* **Vertical spacing** and **Horizontal spacing**: the blank space between two labels,
+* **Label width** and **Label height**: the size of one label,
+* **Number of label columns** and **Number of label lines**: how many labels a sheet holds,
+* **Font size**: the size of the text printed on the labels,
+* **Print border**: print a grey border around each label, handy for a first try on plain paper.
+
+The values usually are written on the box of the labels.
+
 Cards
 =====
 
@@ -227,6 +266,32 @@ Cards
    :scale: 50%
    :align: center
    :alt: Galette settings, cards tab
+
+This tab sets the content and the look of the member cards:
+
+* **Short Text (Card Center)**: a short text printed in the middle of the card, 10 characters at most; the acronym of your association for example,
+* **Long Text (Bottom Line)**: a text printed at the bottom of the card, 65 characters at most,
+* **Strip Text Color**: the color of the text written on the bottom strip,
+* **Active Member Color**, **Board Members Color** and **Honor Members Color**: the color of the main texts and of the bottom strip, depending on the status of the member; the honor color is used for benefactor and founder members,
+* **Logo**: a logo for printing, if the one of the association does not suit,
+* **Allow members to print card ?**: members can download their own card, as long as their membership is up to date,
+* **Show title ?**: print the title (Mr., Mrs....) in front of the name,
+* **Address type**: what is printed under the name: email, zip code and town, nickname, profession or member number,
+* **Year**: the year printed on the card. It can be a year, two years separated with a slash (*2026/2027*), or ``DEADLINE`` to print the end of membership of each member,
+* margins, spacing, width and height of the cards on the page, in millimeters.
+
+Colors are written in hexadecimal notation, ``#RRGGBB``.
+
+.. _pref_dynamic_fields:
+
+Dynamic fields
+==============
+
+.. versionadded:: 1.3.0
+
+You can add your own fields to the preferences, for information about your association that Galette does not know about: a registration number, a bank account number, the name of the president...
+
+Create them from **Configuration**, then **Dynamic fields**, choosing the **Settings** form; see :ref:`dynamic fields <dynamic_fields>`. They are then displayed in this tab, and can be used as variables in :ref:`emails contents <emails_contents>` and in :ref:`PDF models <pdf_models>`.
 
 .. _password_rules:
 
@@ -252,6 +317,8 @@ You can enforce some rules for members (and super-admin) passwords:
    :scale: 50%
    :align: center
    :alt: Galette settings, security tab
+
+The **Test a password:** field, at the bottom of the tab, checks any password against the values currently selected; do not forget to save your preferences once you are happy with the result.
 
 Length is still the only rule that is active per default, just configure the number of characters required. On passwords fields, failures will be displayed on the fly; as well as a "strength meter" displayed for information.
 
@@ -332,6 +399,33 @@ Since nobody is forced to enrol, administrators and staff members — the accoun
 The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`.
 
 Members enable and manage their own second factor from their account; this is described in :ref:`the members part of this manual <man_2fa>`. Administrators and staff members can :ref:`reset the second factor of a member <member_2fa_reset>` who lost it.
+
+.. _auth_attempts:
+
+Authentication attempts
+=======================
+
+.. versionadded:: 1.3.0
+
+To protect accounts against people trying passwords one after the other, Galette counts the failed logins. After too many failures, further attempts are refused for a while, even with the right password. The same applies to password recovery requests and to self registrations.
+
+By default:
+
+* 5 failed logins on one account, from one address, within 15 minutes,
+* 30 failed logins from one address, on any account, within 15 minutes,
+* 100 failed logins on one account, from anywhere, within a day,
+* 3 password recovery requests within an hour,
+
+get further attempts refused for 15 minutes. Those thresholds and durations can be changed from the :ref:`advanced configuration <advanced_config>`.
+
+**Configuration**, then **Authentication attempts** lists what is refused right now: what is counted, the account, the address, the number of failures and until when attempts are refused.
+
+.. image:: ../_styles/static/images/usermanual/auth_attempts.png
+   :scale: 50%
+   :align: center
+   :alt: Authentication attempts currently refused
+
+When a member tells you they cannot log in anymore, look here: **Lift** lets them try again at once, and **Lift them all** clears the whole list.
 
 Super administrator credentials
 ===============================
