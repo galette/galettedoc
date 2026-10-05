@@ -37,6 +37,8 @@ Main dashboard part propose you a quick access to main Galette features :)
    reference_lists.rst
    configuration.rst
    documents.rst
+   public_pages.rst
+   printing.rst
    pdf_models.rst
    preferences.rst
    avancee.rst

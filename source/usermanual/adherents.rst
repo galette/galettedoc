@@ -81,6 +81,8 @@ It is possible to order members list on following fields:
 
 Most of the times, the result is transparent. Just note ordering on `status` will use status priority and ordering on `contribution status` will use creation date, contribution exemption and due date;
 
+.. _csv_export_fields:
+
 Configure CSV fields
 ^^^^^^^^^^^^^^^^^^^^
 
