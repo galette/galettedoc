@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-05 22:48+0200\n"
 "PO-Revision-Date: 2026-05-26 16:11+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
@@ -163,11 +163,11 @@ msgstr ""
 "Nas preferências, também pode :ref:` conceder direitos adicionais aos "
 "gerentes de grupos <pref_rights>, como editar ou criar membros."
 
-#: ../usermanual/generalites.rst:39
+#: ../usermanual/generalites.rst:41
 msgid "Management rules"
 msgstr "Regras de gestão"
 
-#: ../usermanual/generalites.rst:41
+#: ../usermanual/generalites.rst:43
 msgid ""
 "Due dates are calculated by day. If a member pay into before the end of his "
 "membership, duration of this membership will be added to remaining days. "
@@ -177,23 +177,23 @@ msgstr ""
 "pagamento antes do término da sua assinatura, a duração dessa assinatura "
 "será adicionada aos dias restantes. Exemplo:"
 
-#: ../usermanual/generalites.rst:43 ../usermanual/generalites.rst:50
+#: ../usermanual/generalites.rst:45 ../usermanual/generalites.rst:52
 msgid "Roger subscribed on 2004-01-01 for one year,"
 msgstr "Roger assinou o contrato em 01/01/2004, com duração de um ano,"
 
-#: ../usermanual/generalites.rst:44
+#: ../usermanual/generalites.rst:46
 msgid "if he pays into for a year on 2004-12-13,"
 msgstr "Se ele pagar referente a um ano em 13/12/2004,"
 
-#: ../usermanual/generalites.rst:45
+#: ../usermanual/generalites.rst:47
 msgid "his due date will become 2006-01-01."
 msgstr "A data prevista para o parto será 01/01/2006."
 
-#: ../usermanual/generalites.rst:46
+#: ../usermanual/generalites.rst:48
 msgid "No day will be forget."
 msgstr "Nenhum dia será esquecido."
 
-#: ../usermanual/generalites.rst:48
+#: ../usermanual/generalites.rst:50
 msgid ""
 "At the contrary, if a member renew his membership late, we evaluate again "
 "his membership duration:"
@@ -201,15 +201,15 @@ msgstr ""
 "Pelo contrário, se um membro renovar a sua filiação com atraso, reavaliamos "
 "a duração da sua filiação:"
 
-#: ../usermanual/generalites.rst:51
+#: ../usermanual/generalites.rst:53
 msgid "if he pays into for a year on 2006-01-13,"
 msgstr "Se ele pagar referente a um ano em 13/01/2006,"
 
-#: ../usermanual/generalites.rst:52
+#: ../usermanual/generalites.rst:54
 msgid "his due date will become 2006-01-13."
 msgstr "A data prevista para o parto será 13/01/2006."
 
-#: ../usermanual/generalites.rst:54
+#: ../usermanual/generalites.rst:56
 msgid ""
 "He is not an up to date member from 2006-01-01 to 2006-01-13... On paper at "
 "least :)"
@@ -217,7 +217,7 @@ msgstr ""
 "Ele não é um membro em dia entre 01/01/2006 e 13/01/2006... Pelo menos no "
 "papel :)"
 
-#: ../usermanual/generalites.rst:56
+#: ../usermanual/generalites.rst:58
 msgid ""
 "Those rules are flexible because you can freely change membership dates on "
 "contributions, if you have rights to add or update them. We can imagine an "
@@ -230,57 +230,57 @@ msgstr ""
 "primeiro dia do mês seguinte (oferecendo aos seus membros um período de "
 "adesão mais longo)."
 
-#: ../usermanual/generalites.rst:61
+#: ../usermanual/generalites.rst:63
 msgid "Two-factor authentication"
 msgstr ""
 
-#: ../usermanual/generalites.rst:65
+#: ../usermanual/generalites.rst:67
 msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change."
 msgstr ""
 
-#: ../usermanual/generalites.rst:67
+#: ../usermanual/generalites.rst:69
 msgid ""
 "Once :ref:`a policy has been set in the preferences <pref_2fa>`, every "
 "account can protect itself with a second factor: after the password, Galette "
 "asks for a six digits code that changes every thirty seconds."
 msgstr ""
 
-#: ../usermanual/generalites.rst:69
+#: ../usermanual/generalites.rst:71
 msgid ""
 "If you are an administrator or a staff member and have not set one up, "
 "Galette invites you to when you log in. Nothing forces you to; **Later** "
 "keeps quiet for six months, **Do not ask again** for a year."
 msgstr ""
 
-#: ../usermanual/generalites.rst:71
+#: ../usermanual/generalites.rst:73
 msgid ""
 "You need an application to compute those codes. Any of them will do, they "
 "all follow the same standard; among the free ones:"
 msgstr ""
 
-#: ../usermanual/generalites.rst:73
+#: ../usermanual/generalites.rst:75
 msgid ""
 "`Aegis <https://getaegis.app>`_ or `FreeOTP <https://freeotp.github.io>`_ on "
 "Android,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:74
+#: ../usermanual/generalites.rst:76
 msgid ""
 "`KeePassXC <https://keepassxc.org>`_ on a computer, in the *TOTP* field of "
 "an entry,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:75
+#: ../usermanual/generalites.rst:77
 msgid "Google Authenticator, Microsoft Authenticator, ... on Android and iOS."
 msgstr ""
 
-#: ../usermanual/generalites.rst:78
+#: ../usermanual/generalites.rst:80
 msgid "Enabling it"
 msgstr ""
 
-#: ../usermanual/generalites.rst:80
+#: ../usermanual/generalites.rst:82
 msgid ""
 "Go to **My account**, then **Two-factor authentication**, and click on "
 "*Enable two-factor authentication*. Galette shows a QR code to scan with "
@@ -288,19 +288,19 @@ msgid ""
 "can be typed in by hand instead."
 msgstr ""
 
-#: ../usermanual/generalites.rst:82
+#: ../usermanual/generalites.rst:84
 msgid ""
 "Your application then starts displaying codes. Type the current one in to "
 "confirm, and it is on. That first code is asked for on purpose: it makes "
 "sure your application really is set up before Galette starts requiring it."
 msgstr ""
 
-#: ../usermanual/generalites.rst:84
+#: ../usermanual/generalites.rst:86
 msgid ""
 "Galette then displays **ten recovery codes**, and displays them only once."
 msgstr ""
 
-#: ../usermanual/generalites.rst:88
+#: ../usermanual/generalites.rst:90
 msgid ""
 "Print those recovery codes, or save them somewhere that is not the device "
 "computing your codes. They are the way back in if you lose your phone. Each "
@@ -308,79 +308,79 @@ msgid ""
 "in a readable form."
 msgstr ""
 
-#: ../usermanual/generalites.rst:90
+#: ../usermanual/generalites.rst:92
 msgid ""
 "You can get ten new ones at any time from the same page; the previous ones "
 "are then void."
 msgstr ""
 
-#: ../usermanual/generalites.rst:93
+#: ../usermanual/generalites.rst:95
 msgid "Logging in"
 msgstr ""
 
-#: ../usermanual/generalites.rst:95
+#: ../usermanual/generalites.rst:97
 msgid ""
 "Nothing changes for the password. Once it has been accepted, Galette asks "
 "for a code. Nothing else is reachable until it is given: an account waiting "
 "for its code is not logged in."
 msgstr ""
 
-#: ../usermanual/generalites.rst:97
+#: ../usermanual/generalites.rst:99
 msgid ""
 "If you no longer have your device, use one of your recovery codes instead of "
 "a code: the same field takes both."
 msgstr ""
 
-#: ../usermanual/generalites.rst:100
+#: ../usermanual/generalites.rst:102
 msgid "Disabling it"
 msgstr ""
 
-#: ../usermanual/generalites.rst:102
+#: ../usermanual/generalites.rst:104
 msgid ""
 "From **My account**, then **Two-factor authentication**, a current code is "
 "required to turn it off. That is deliberate: somebody who found your session "
 "open should not be able to remove your second factor with a click."
 msgstr ""
 
-#: ../usermanual/generalites.rst:104
+#: ../usermanual/generalites.rst:106
 msgid ""
 "If a policy makes it mandatory, you will be asked to enable it again at your "
 "next login."
 msgstr ""
 
-#: ../usermanual/generalites.rst:108
+#: ../usermanual/generalites.rst:110
 msgid ""
 "Codes are computed from the current time, so both your device and the server "
 "have to agree on it. This is by far the most common reason for codes being "
 "refused; see :ref:`the FAQ <faq_2fa>`."
 msgstr ""
 
-#: ../usermanual/generalites.rst:111
+#: ../usermanual/generalites.rst:113
 msgid "Interface"
 msgstr "Interface"
 
-#: ../usermanual/generalites.rst:113
+#: ../usermanual/generalites.rst:115
 msgid "We do our best for the Galette interface to be:"
 msgstr "Fazemos o possível para que a interface do Galette seja:"
 
-#: ../usermanual/generalites.rst:115
+#: ../usermanual/generalites.rst:117
 msgid "logical and consistent (you will always find icons at familiar places),"
 msgstr "Lógico e consistente (sempre encontrará ícones em locais familiares),"
 
-#: ../usermanual/generalites.rst:116
+#: ../usermanual/generalites.rst:118
 msgid "web standards compliant (HTML and CSS valid),"
 msgstr "Compatível com os padrões da web (HTML e CSS válidos),"
 
-#: ../usermanual/generalites.rst:117
+#: ../usermanual/generalites.rst:119
 msgid "HTML semantic respectful,"
 msgstr "Respeito semântico ao HTML,"
 
-#: ../usermanual/generalites.rst:118
+#: ../usermanual/generalites.rst:120
 msgid "accessible (without any WCAG, WAI or equivalent tests run)."
 msgstr ""
 "Acessível (sem a execução de quaisquer testes WCAG, WAI ou equivalentes)."
 
-#: ../usermanual/generalites.rst:120
+#: ../usermanual/generalites.rst:122
 msgid ""
 "If you find places where one of those points is incorrect, do not hesitate "
 "to tell us on the tracker or on the mailing list!"
@@ -388,15 +388,15 @@ msgstr ""
 "Se encontrar algum ponto incorreto, não hesite de nos avisar pelo rastreador "
 "ou pela lista de discussão!"
 
-#: ../usermanual/generalites.rst:123
+#: ../usermanual/generalites.rst:125
 msgid "Telemetry"
 msgstr "Telemetria"
 
-#: ../usermanual/generalites.rst:127
+#: ../usermanual/generalites.rst:129
 msgid "Galette propose to send some telemetry information:"
 msgstr "Galette propõe enviar algumas informações de telemetria:"
 
-#: ../usermanual/generalites.rst:129
+#: ../usermanual/generalites.rst:131
 msgid ""
 "**entirely anonymous**: no information about your association or your "
 "members is sent,"
@@ -404,7 +404,7 @@ msgstr ""
 "**Totalmente anônimo**: nenhuma informação sobre a sua associação ou os seus "
 "membros será enviada,"
 
-#: ../usermanual/generalites.rst:130
+#: ../usermanual/generalites.rst:132
 msgid ""
 "**deliberately blurred**: we retrieve an estimation of members count, never "
 "a real count,"
@@ -412,11 +412,11 @@ msgstr ""
 "**Deliberadamente desfocado**: obtemos uma estimativa da quantidade de "
 "membros, nunca a quantidade real,"
 
-#: ../usermanual/generalites.rst:131
+#: ../usermanual/generalites.rst:133
 msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
 msgstr "Enviado de forma **segura** (`HTTPS`) em https://telemetry.galette.eu."
 
-#: ../usermanual/generalites.rst:133
+#: ../usermanual/generalites.rst:135
 msgid ""
 "Sending telemetry data is a manual process, nothing will be sent until you "
 "**explicitly** ask it. With those information, we can have a better "
@@ -428,7 +428,7 @@ msgstr ""
 "melhor conhecimento dos diferentes usos do Galette, o seu número de membros "
 "ou contribuições, plugins utilizados, etc."
 
-#: ../usermanual/generalites.rst:135
+#: ../usermanual/generalites.rst:137
 msgid ""
 "Those information are useful for the project development and promotion. When "
 "you send those information, you can review data that would be sent."
@@ -436,11 +436,11 @@ msgstr ""
 "Essas informações são úteis para o desenvolvimento e a promoção do projeto. "
 "Ao enviar essas informações, poderá revisar os dados que serão enviados."
 
-#: ../usermanual/generalites.rst:137
+#: ../usermanual/generalites.rst:139
 msgid "Preview Telemetry data"
 msgstr "Pré-visualização dos dados de telemetria"
 
-#: ../usermanual/generalites.rst:142
+#: ../usermanual/generalites.rst:144
 msgid ""
 "After data has been sent once, Galette will propose to send an update from "
 "time to time. You can also send them from Galette preferences."
@@ -449,11 +449,11 @@ msgstr ""
 "atualizações periodicamente. Também pode configurá-las nas preferências do "
 "Galette."
 
-#: ../usermanual/generalites.rst:144
+#: ../usermanual/generalites.rst:146
 msgid "Telemetry update reminder"
 msgstr "Lembrete de atualização de telemetria"
 
-#: ../usermanual/generalites.rst:148
+#: ../usermanual/generalites.rst:150
 msgid ""
 "It is also possible to register your association on the website, of course, "
 "not anonymously, but it is not possible to link telemetry and registration. "
@@ -463,7 +463,7 @@ msgstr ""
 "anonimamente, mas não é possível vincular telemetria ao cadastro. Novos "
 "cadastros são moderados."
 
-#: ../usermanual/generalites.rst:150
+#: ../usermanual/generalites.rst:152
 msgid ""
 "You can update your registration information from Galette preferences. The "
 "form will be blank (because it is not possible to retrieve data you've sent) "
@@ -475,11 +475,11 @@ msgstr ""
 "enviou), mas todos os dados serão atualizados, já que a sua instância possui "
 "um identificador de registo exclusivo."
 
-#: ../usermanual/generalites.rst:152
+#: ../usermanual/generalites.rst:154
 msgid "Telemetry from preferences"
 msgstr "Telemetria a partir das preferências"
 
-#: ../usermanual/generalites.rst:156
+#: ../usermanual/generalites.rst:158
 msgid ""
 "A new panel has been added on Galette dashboard to send telemetry "
 "information and/or register your instance. Once those steps has been "
@@ -489,6 +489,6 @@ msgstr ""
 "informações de telemetria e/ou registar a sua instância. Após a conclusão "
 "dessas etapas, o painel desaparecerá. Também pode optar por desativá-lo."
 
-#: ../usermanual/generalites.rst:158
+#: ../usermanual/generalites.rst:160
 msgid "Telemetry on dashboard"
 msgstr "Telemetria no painel de controlo"

@@ -26,6 +26,22 @@ On date fields, you can access a calendar:
 
 When storing a member (or any other object in Galette), page will be reloaded with all information you've entered (excepting passwords).
 
+Picture
+^^^^^^^
+
+A picture can be added to each member card, in JPEG, PNG, GIF or WebP format. When **Force member picture ratio** is checked in the :ref:`preferences <man_preferences>`, pictures are resized and cropped to the chosen ratio; the **Cropping focus** option of the form tells which part of the picture to keep.
+
+Duplicate, remove
+^^^^^^^^^^^^^^^^^
+
+From a member card, **Duplicate** opens the form of a new member, filled in with the information of the current one; useful for members of a same family or a same company.
+
+Members can be removed one by one from the actions of the list, or several at once from the **For the selection:** menu.
+
+.. warning::
+
+   Removing a member also removes their picture, contributions, transactions, reminders and dynamic fields values, and removes them from their groups. This cannot be undone. To keep the history of your association, you may rather set the account as inactive.
+
 Members list
 ============
 
@@ -41,12 +57,14 @@ Members list allows you to:
 * CSV exports,
 * mass changes.
 
-Each possible action per member is grouped at the end of the line, actions designed to be applied on a selection are at the bottom of the list. Plugins may add entries in both cases.
+Each possible action per member is grouped at the end of the line, actions designed to be applied on a selection are in the **For the selection:** menu above the list. Plugins may add entries in both cases.
 
 Filter and select members
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Filtering members list is documented in :ref:`search section <search_galette>`. All possibilities can be used with actions on selection.
+
+.. _mass_changes:
 
 Mass changes
 ^^^^^^^^^^^^
@@ -77,7 +95,11 @@ It is possible to order members list on following fields:
 * contribution status,
 * modification date.
 
+In the list, a green icon identifies **sponsors**: the members who made a donation during the current period. The **Show legend** link explains all the icons of the list.
+
 Most of the times, the result is transparent. Just note ordering on `status` will use status priority and ordering on `contribution status` will use creation date, contribution exemption and due date;
+
+.. _csv_export_fields:
 
 Configure CSV fields
 ^^^^^^^^^^^^^^^^^^^^
@@ -102,7 +124,7 @@ E-Mailing
 
 From Galette, you can send mailings to a selection of members. Each sent mailing is stored in order to be reused, so you can select a stored mailing to be used as a template, retrieving selected members list, mailing subject and contents.
 
-To send a new mailing, select members from the list and then use the `Send an email` button at the bottom of the list. If some of selected members does not have an email address, Galette will propose you to print corresponding labels.
+To send a new mailing, select members from the list and then choose **Mail** in the **For the selection:** menu above the list. If some of selected members does not have an email address, Galette will propose you to print corresponding labels.
 
 .. image:: ../_styles/static/images/usermanual/mailing_selected_members.png
    :scale: 50%
@@ -198,6 +220,8 @@ When you use an existing history entry, here are the information that will be us
 * message,
 * html/text flag.
 
+.. _csv_imports:
+
 CSV imports
 ===========
 
@@ -223,6 +247,8 @@ If proposed model is not ok for you, click on `Edit model` and choose your field
    :alt: Import model configuration
 
 Once you have selected your fields, click on the `Store new model` button.
+
+Dynamic fields of the members can be imported as well, except file fields. A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; a field with no limit gets 10 columns.
 
 When in the current model tab, you can download an empty model from the `Generate an empty CSV file` button. Of course, you can change model if you want, or remove it to get the default model back.
 

@@ -109,6 +109,8 @@ Many statistics platforms rely on an extra  Javascript block to work. You can cr
 
 Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
+.. _csv_exports:
+
 CSV exports
 ===========
 

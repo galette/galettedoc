@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-02 20:44+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "install-postinstall/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../installation/postinstall.rst:5
 msgid "Post installation"
@@ -107,10 +107,10 @@ msgid "`GALETTE_LOGS_PATH` : Galette logs path, change it as you want,"
 msgstr "`GALETTE_LOGS_PATH`: Pot do dnevnikov Galette, spremenite jo po želji,"
 
 #: ../installation/postinstall.rst:38
-#, fuzzy
-#| msgid "`GALETTE_CACHE_DIR` : caching directory for a few cases,"
 msgid "`GALETTE_CACHE_DIR` : caching directory, including compiled templates,"
-msgstr "`GALETTE_CACHE_DIR`: imenik za predpomnjenje v nekaj primerih,"
+msgstr ""
+"`GALETTE_CACHE_DIR` : imenik za predpomnjenje, vključno s prevedenimi "
+"predlogami,"
 
 #: ../installation/postinstall.rst:39
 msgid "`GALETTE_EXPORTS_PATH` : path to the directory to store CSV exports,"
@@ -189,6 +189,8 @@ msgid ""
 "Since Galette 1.3.0, you can also ask for :ref:`a second factor at login "
 "<pref_2fa>`, so that a password that leaked is not enough on its own."
 msgstr ""
+"Od Galette 1.3.0 naprej lahko zahtevate tudi :ref:`drugi dejavnik pri "
+"prijavi <pref_2fa>`, tako da geslo, ki je ušlo, samo po sebi ni dovolj."
 
 #: ../installation/postinstall.rst:59
 msgid ""
@@ -196,6 +198,9 @@ msgid ""
 "right, and kept right (NTP). A server drifting away refuses every code, "
 "without saying why."
 msgstr ""
+"Kode so izračunane iz trenutnega časa: poskrbite, da je ura vašega strežnika "
+"pravilna in da je pravilna (NTP). Oddaljeni strežnik zavrne vsako kodo, ne "
+"da bi povedal, zakaj."
 
 #: ../installation/postinstall.rst:61
 msgid ""
@@ -203,6 +208,9 @@ msgid ""
 "you can reach your database. That account has no recovery codes, "
 "and :ref:`clearing its second factor <faq_2fa>` is done there."
 msgstr ""
+"Preden omogočite drugi dejavnik v računu superskrbnika, preverite, ali lahko "
+"dosežete svojo bazo podatkov. Ta račun nima obnovitvenih kod in :ref:`izbris "
+"drugega faktorja <faq_2fa>` se opravi tam."
 
 #: ../installation/postinstall.rst:63
 msgid ""
@@ -210,6 +218,9 @@ msgid ""
 "Whoever can write in your database or in your configuration file can turn it "
 "off. Keep both out of reach."
 msgstr ""
+"Kar tudi pomeni: drugi dejavnik ščiti obrazec za prijavo, ne strežnika. Kdor "
+"lahko piše v vašo bazo podatkov ali v vašo konfiguracijsko datoteko, jo "
+"lahko izklopi. Oboje hranite izven dosega."
 
 #~ msgid ""
 #~ "`GALETTE_COMPILE_DIR` : path for Smarty templating system compilation,"

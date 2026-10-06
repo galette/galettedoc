@@ -144,3 +144,53 @@ Making them non unique is not a solution we want to rely on. This would be compl
 However, it is possible in Galette to :ref:`link several members <linkmembers>`. That way, some information such as email and postal addresses will be retrieved from the parent member if missing.
 
 This allows finally to use a unique email address for several members in database; but they are not duplicates in database.
+
+.. _faq_lost_password:
+
+********************************
+I forgot my password, what now?
+********************************
+
+On the login page, click on **Lost your password?**, type your username or your email address, and follow the link of the email you receive. The link works once, and for 24 hours.
+
+No email? Check your spam folder. If your member card has no email address, ask a staff member of your association to fix it, or to change your password for you.
+
+The **super administrator** is not a member and cannot use this form. Its password can be changed :ref:`from the command line <cli_superadmin_password>`, by the person who manages the server.
+
+.. _faq_cannot_login:
+
+********************************
+A member cannot log in anymore
+********************************
+
+Check, in this order:
+
+#. **Is the account active?** An inactive account cannot log in. Open the member card, and check the **Account** field in the **Galette-related data** part.
+#. **Has the member been blocked after too many failures?** After several wrong passwords in a row, Galette refuses further attempts for 15 minutes, even with the right password. Go to **Configuration**, then **Authentication attempts**: the account is listed there if it is blocked, and **Lift** unblocks it at once.
+#. **Is the password right?** If in doubt, the member can ask for a new one with **Lost your password?** on the login page.
+#. **Does the member use two-factor authentication?** See :ref:`my two-factor authentication codes are refused <faq_2fa>`.
+
+.. _faq_emails:
+
+***********************************
+Emails sent by Galette never arrive
+***********************************
+
+Go to **Configuration**, then **Settings**, **E-Mail** tab:
+
+* check that an **Emailing method** is selected, and that the **Sender Email** is an address of your association,
+* click on **Test connection**, then on **Send a test email**, to your own address.
+
+If the test email does not arrive either, check your spam folder, then ask your web host or your mail provider which settings to use: many of them require sending through their SMTP server, with a username and a password.
+
+If the test email arrives but mailings do not, your mail provider may limit how many messages you can send per hour or per day; see :ref:`sending limits <mail_throttling>`.
+
+.. _faq_renew:
+
+******************************
+How do I renew a membership?
+******************************
+
+Simply record the new membership fee: go to **Contributions**, then **Add a membership fee**, select the member, the contribution type and the amount. Galette calculates the new end of membership on its own, from the end of the previous one; no day is lost if the member renews early. See :ref:`management rules <man_generalites>`.
+
+To remind late members to renew, see :ref:`reminders <reminders>`.

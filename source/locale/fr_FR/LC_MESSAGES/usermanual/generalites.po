@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-05 22:48+0200\n"
 "PO-Revision-Date: 2026-10-01 20:02+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -157,11 +157,11 @@ msgstr ""
 "droits aux responsables de groupe <pref_rights>`, comme la modification ou "
 "la création d'adhérents."
 
-#: ../usermanual/generalites.rst:39
+#: ../usermanual/generalites.rst:41
 msgid "Management rules"
 msgstr "Règles de gestion"
 
-#: ../usermanual/generalites.rst:41
+#: ../usermanual/generalites.rst:43
 msgid ""
 "Due dates are calculated by day. If a member pay into before the end of his "
 "membership, duration of this membership will be added to remaining days. "
@@ -171,23 +171,23 @@ msgstr ""
 "sa souscription avant son échéance, la durée de son adhésion sera ajoutée au "
 "jours restants. Par exemple :"
 
-#: ../usermanual/generalites.rst:43 ../usermanual/generalites.rst:50
+#: ../usermanual/generalites.rst:45 ../usermanual/generalites.rst:52
 msgid "Roger subscribed on 2004-01-01 for one year,"
 msgstr "Roger a souscrit le 01/01/2004 pour un an,"
 
-#: ../usermanual/generalites.rst:44
+#: ../usermanual/generalites.rst:46
 msgid "if he pays into for a year on 2004-12-13,"
 msgstr "s'il renouvelle sa souscription pour un an le 13/12/2004,"
 
-#: ../usermanual/generalites.rst:45
+#: ../usermanual/generalites.rst:47
 msgid "his due date will become 2006-01-01."
 msgstr "sa date d'échéance deviendra le 01/01/2006."
 
-#: ../usermanual/generalites.rst:46
+#: ../usermanual/generalites.rst:48
 msgid "No day will be forget."
 msgstr "Aucun jour ne sera oublié."
 
-#: ../usermanual/generalites.rst:48
+#: ../usermanual/generalites.rst:50
 msgid ""
 "At the contrary, if a member renew his membership late, we evaluate again "
 "his membership duration:"
@@ -195,15 +195,15 @@ msgstr ""
 "Au contraire, si un adhérent renouvelle sa souscription en retard, la durée "
 "de son adhésion sera recalculée :"
 
-#: ../usermanual/generalites.rst:51
+#: ../usermanual/generalites.rst:53
 msgid "if he pays into for a year on 2006-01-13,"
 msgstr "s'il renouvelle sa souscription pour un an le 13/01/2006,"
 
-#: ../usermanual/generalites.rst:52
+#: ../usermanual/generalites.rst:54
 msgid "his due date will become 2006-01-13."
 msgstr "sa date d'échéance deviendra le 13/01/2006."
 
-#: ../usermanual/generalites.rst:54
+#: ../usermanual/generalites.rst:56
 msgid ""
 "He is not an up to date member from 2006-01-01 to 2006-01-13... On paper at "
 "least :)"
@@ -211,7 +211,7 @@ msgstr ""
 "Il ne sera plus membre à jour du 01/01/2006 au 13/01/2006... Sur le papier "
 "tout au moins :)"
 
-#: ../usermanual/generalites.rst:56
+#: ../usermanual/generalites.rst:58
 msgid ""
 "Those rules are flexible because you can freely change membership dates on "
 "contributions, if you have rights to add or update them. We can imagine an "
@@ -224,11 +224,11 @@ msgstr ""
 "le premier jour du mois suivant (et qui offrirait une durée d'adhésion un "
 "peu plus longue à ses adhérents)."
 
-#: ../usermanual/generalites.rst:61
+#: ../usermanual/generalites.rst:63
 msgid "Two-factor authentication"
 msgstr "Authentification à deux facteurs"
 
-#: ../usermanual/generalites.rst:65
+#: ../usermanual/generalites.rst:67
 msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change."
@@ -236,7 +236,7 @@ msgstr ""
 "Marqué **expérimental** : c'est complet et testé, mais c'est une nouveauté "
 "et l'interface peut encore être modifiée ."
 
-#: ../usermanual/generalites.rst:67
+#: ../usermanual/generalites.rst:69
 msgid ""
 "Once :ref:`a policy has been set in the preferences <pref_2fa>`, every "
 "account can protect itself with a second factor: after the password, Galette "
@@ -247,7 +247,7 @@ msgstr ""
 "le mot de passe, Galette demande un code à six chiffres qui change toutes "
 "les trente secondes."
 
-#: ../usermanual/generalites.rst:69
+#: ../usermanual/generalites.rst:71
 msgid ""
 "If you are an administrator or a staff member and have not set one up, "
 "Galette invites you to when you log in. Nothing forces you to; **Later** "
@@ -258,7 +258,7 @@ msgstr ""
 "Rien ne vous y oblige ; **Plus tard** se tait pendant six mois, **Non** "
 "pendant un an."
 
-#: ../usermanual/generalites.rst:71
+#: ../usermanual/generalites.rst:73
 msgid ""
 "You need an application to compute those codes. Any of them will do, they "
 "all follow the same standard; among the free ones:"
@@ -267,7 +267,7 @@ msgstr ""
 "N'importe laquelle d'entre elles fera l'affaire, elles respectent toutes la "
 "même norme ; quelques gratuites :"
 
-#: ../usermanual/generalites.rst:73
+#: ../usermanual/generalites.rst:75
 msgid ""
 "`Aegis <https://getaegis.app>`_ or `FreeOTP <https://freeotp.github.io>`_ on "
 "Android,"
@@ -275,7 +275,7 @@ msgstr ""
 "`Aegis <https://getaegis.app>`_ ou `FreeOTP <https://freeotp.github.io>`_ "
 "pour Android,"
 
-#: ../usermanual/generalites.rst:74
+#: ../usermanual/generalites.rst:76
 msgid ""
 "`KeePassXC <https://keepassxc.org>`_ on a computer, in the *TOTP* field of "
 "an entry,"
@@ -283,15 +283,15 @@ msgstr ""
 "`KeePassXC <https://keepassxc.org>`_ sur un ordinateur, dans le champ *TOTP* "
 "d’une entrée,"
 
-#: ../usermanual/generalites.rst:75
+#: ../usermanual/generalites.rst:77
 msgid "Google Authenticator, Microsoft Authenticator, ... on Android and iOS."
 msgstr "Google Authenticator, Microsoft Authenticator, ... sur Android et iOS."
 
-#: ../usermanual/generalites.rst:78
+#: ../usermanual/generalites.rst:80
 msgid "Enabling it"
 msgstr "L' activer"
 
-#: ../usermanual/generalites.rst:80
+#: ../usermanual/generalites.rst:82
 msgid ""
 "Go to **My account**, then **Two-factor authentication**, and click on "
 "*Enable two-factor authentication*. Galette shows a QR code to scan with "
@@ -303,7 +303,7 @@ msgstr ""
 "QR code à scanner avec votre application ; si vous ne pouvez pas le scanner, "
 "la clé affichée juste en dessous peut être saisie manuellement."
 
-#: ../usermanual/generalites.rst:82
+#: ../usermanual/generalites.rst:84
 msgid ""
 "Your application then starts displaying codes. Type the current one in to "
 "confirm, and it is on. That first code is asked for on purpose: it makes "
@@ -314,14 +314,14 @@ msgstr ""
 "un but précis : il permet de s’assurer que votre application est bien "
 "configurée avant que Galette ne commence à l’exiger."
 
-#: ../usermanual/generalites.rst:84
+#: ../usermanual/generalites.rst:86
 msgid ""
 "Galette then displays **ten recovery codes**, and displays them only once."
 msgstr ""
 "Galette affiche alors **dix codes de récupération**, et ne les affiche "
 "qu’une seule fois."
 
-#: ../usermanual/generalites.rst:88
+#: ../usermanual/generalites.rst:90
 msgid ""
 "Print those recovery codes, or save them somewhere that is not the device "
 "computing your codes. They are the way back in if you lose your phone. Each "
@@ -333,7 +333,7 @@ msgstr ""
 "arrière si vous perdez votre téléphone. Chacun fonctionne une fois, et "
 "Galette ne les montrera plus -- il ne les garde pas sous une forme lisible."
 
-#: ../usermanual/generalites.rst:90
+#: ../usermanual/generalites.rst:92
 msgid ""
 "You can get ten new ones at any time from the same page; the previous ones "
 "are then void."
@@ -341,11 +341,11 @@ msgstr ""
 "Il est possible d'en obtenir dix nouveaux à tout moment sur la même page ; "
 "les précédents seront alors annulés."
 
-#: ../usermanual/generalites.rst:93
+#: ../usermanual/generalites.rst:95
 msgid "Logging in"
 msgstr "Se connecter"
 
-#: ../usermanual/generalites.rst:95
+#: ../usermanual/generalites.rst:97
 msgid ""
 "Nothing changes for the password. Once it has been accepted, Galette asks "
 "for a code. Nothing else is reachable until it is given: an account waiting "
@@ -355,7 +355,7 @@ msgstr ""
 "code. Rien d’autre n’est accessible tant qu’il n’a pas été donné : un compte "
 "en attente de son code n’est pas connecté."
 
-#: ../usermanual/generalites.rst:97
+#: ../usermanual/generalites.rst:99
 msgid ""
 "If you no longer have your device, use one of your recovery codes instead of "
 "a code: the same field takes both."
@@ -363,11 +363,11 @@ msgstr ""
 "Si vous n’avez plus votre appareil, utilisez un de vos codes de récupération "
 "au lieu du code de l'application : le même champ prend les deux ."
 
-#: ../usermanual/generalites.rst:100
+#: ../usermanual/generalites.rst:102
 msgid "Disabling it"
 msgstr "La désactiver"
 
-#: ../usermanual/generalites.rst:102
+#: ../usermanual/generalites.rst:104
 msgid ""
 "From **My account**, then **Two-factor authentication**, a current code is "
 "required to turn it off. That is deliberate: somebody who found your session "
@@ -378,7 +378,7 @@ msgstr ""
 "trouvé votre session ouverte ne devrait pas pouvoir retirer votre deuxième "
 "facteur d’un clic ."
 
-#: ../usermanual/generalites.rst:104
+#: ../usermanual/generalites.rst:106
 msgid ""
 "If a policy makes it mandatory, you will be asked to enable it again at your "
 "next login."
@@ -386,7 +386,7 @@ msgstr ""
 "Dans le cas où une politique la rend obligatoire, vous devrez l'activer à "
 "nouveau lors de votre prochaine connexion."
 
-#: ../usermanual/generalites.rst:108
+#: ../usermanual/generalites.rst:110
 msgid ""
 "Codes are computed from the current time, so both your device and the server "
 "have to agree on it. This is by far the most common reason for codes being "
@@ -397,33 +397,33 @@ msgstr ""
 "plus courante pour laquelle des codes sont refusés ; voir :ref:`la FAQ "
 "<faq_2fa>`."
 
-#: ../usermanual/generalites.rst:111
+#: ../usermanual/generalites.rst:113
 msgid "Interface"
 msgstr "Interface"
 
-#: ../usermanual/generalites.rst:113
+#: ../usermanual/generalites.rst:115
 msgid "We do our best for the Galette interface to be:"
 msgstr "Nous faisons notre possible pour que l'interface de Galette soit :"
 
-#: ../usermanual/generalites.rst:115
+#: ../usermanual/generalites.rst:117
 msgid "logical and consistent (you will always find icons at familiar places),"
 msgstr ""
 "logique et cohérente (vous trouverez toujours les icônes à des emplacement "
 "familiers),"
 
-#: ../usermanual/generalites.rst:116
+#: ../usermanual/generalites.rst:118
 msgid "web standards compliant (HTML and CSS valid),"
 msgstr "respectueuse des standards du web (valide HTMl et CSS),"
 
-#: ../usermanual/generalites.rst:117
+#: ../usermanual/generalites.rst:119
 msgid "HTML semantic respectful,"
 msgstr "respectueuse de la sémantique HTML,"
 
-#: ../usermanual/generalites.rst:118
+#: ../usermanual/generalites.rst:120
 msgid "accessible (without any WCAG, WAI or equivalent tests run)."
 msgstr "accessible (sans qu'aucun test WCAG, WAI ou équivalent ne soit lancé)."
 
-#: ../usermanual/generalites.rst:120
+#: ../usermanual/generalites.rst:122
 msgid ""
 "If you find places where one of those points is incorrect, do not hesitate "
 "to tell us on the tracker or on the mailing list!"
@@ -432,15 +432,15 @@ msgstr ""
 "n'hésitez pas à nous en faire part sur le tracker ou les listes de "
 "diffusion !"
 
-#: ../usermanual/generalites.rst:123
+#: ../usermanual/generalites.rst:125
 msgid "Telemetry"
 msgstr "Télémétrie"
 
-#: ../usermanual/generalites.rst:127
+#: ../usermanual/generalites.rst:129
 msgid "Galette propose to send some telemetry information:"
 msgstr "Galette propose d'envoyer quelques informations de télémétrie :"
 
-#: ../usermanual/generalites.rst:129
+#: ../usermanual/generalites.rst:131
 msgid ""
 "**entirely anonymous**: no information about your association or your "
 "members is sent,"
@@ -448,7 +448,7 @@ msgstr ""
 "**entièrement anonymes** : aucune information sur votre association ou vos "
 "adhérents n'est envoyée,"
 
-#: ../usermanual/generalites.rst:130
+#: ../usermanual/generalites.rst:132
 msgid ""
 "**deliberately blurred**: we retrieve an estimation of members count, never "
 "a real count,"
@@ -456,12 +456,12 @@ msgstr ""
 "**volontairement floues** : nous récupérons une estimation du nombre "
 "d'adhérents, jamais un compte réel,"
 
-#: ../usermanual/generalites.rst:131
+#: ../usermanual/generalites.rst:133
 msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
 msgstr ""
 "envoyée de manière **sécurisée** (`HTTPS`) sur https://telemetry.galette.eu."
 
-#: ../usermanual/generalites.rst:133
+#: ../usermanual/generalites.rst:135
 msgid ""
 "Sending telemetry data is a manual process, nothing will be sent until you "
 "**explicitly** ask it. With those information, we can have a better "
@@ -473,7 +473,7 @@ msgstr ""
 "une meilleure connaissance des différentes usages de Galette, le nombre "
 "d'adhérents et de contributions gérées, les plugins utilisés, ..."
 
-#: ../usermanual/generalites.rst:135
+#: ../usermanual/generalites.rst:137
 msgid ""
 "Those information are useful for the project development and promotion. When "
 "you send those information, you can review data that would be sent."
@@ -482,11 +482,11 @@ msgstr ""
 "projet. Lorsque vous envoyez ces informations, vous pouvez vérifier ce qui "
 "serait envoyé."
 
-#: ../usermanual/generalites.rst:137
+#: ../usermanual/generalites.rst:139
 msgid "Preview Telemetry data"
 msgstr "Prévisualisation des données de télémétrie"
 
-#: ../usermanual/generalites.rst:142
+#: ../usermanual/generalites.rst:144
 msgid ""
 "After data has been sent once, Galette will propose to send an update from "
 "time to time. You can also send them from Galette preferences."
@@ -495,11 +495,11 @@ msgstr ""
 "les mettre à jour de temps à autre. Vous pouvez aussi les envoyer depuis les "
 "préférences de Galette."
 
-#: ../usermanual/generalites.rst:144
+#: ../usermanual/generalites.rst:146
 msgid "Telemetry update reminder"
 msgstr "Rappel de mise à jour de la télémétrie"
 
-#: ../usermanual/generalites.rst:148
+#: ../usermanual/generalites.rst:150
 msgid ""
 "It is also possible to register your association on the website, of course, "
 "not anonymously, but it is not possible to link telemetry and registration. "
@@ -510,7 +510,7 @@ msgstr ""
 "les informations de télémétrie et d'enregistrement. Les nouvelles références "
 "sont modérées."
 
-#: ../usermanual/generalites.rst:150
+#: ../usermanual/generalites.rst:152
 msgid ""
 "You can update your registration information from Galette preferences. The "
 "form will be blank (because it is not possible to retrieve data you've sent) "
@@ -522,11 +522,11 @@ msgstr ""
 "que vous avez préalablement envoyées) mais toutes les données seront mises à "
 "jour puisque votre instance possède un identifiant unique d'enregistrement."
 
-#: ../usermanual/generalites.rst:152
+#: ../usermanual/generalites.rst:154
 msgid "Telemetry from preferences"
 msgstr "Télémétrie depuis les préférences"
 
-#: ../usermanual/generalites.rst:156
+#: ../usermanual/generalites.rst:158
 msgid ""
 "A new panel has been added on Galette dashboard to send telemetry "
 "information and/or register your instance. Once those steps has been "
@@ -537,9 +537,157 @@ msgstr ""
 "étapes complétées, le panneau disparaîtra. Vous pouvez également choisir de "
 "le désactiver."
 
-#: ../usermanual/generalites.rst:158
+#: ../usermanual/generalites.rst:160
 msgid "Telemetry on dashboard"
 msgstr "Télémétrie sur le tableau de bord"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:113
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:115
+msgid ""
+"The dashboard is the page displayed after logging in. Its tiles give a quick "
+"access to the main features; each user only sees the tiles of the features "
+"they are allowed to use. Members see their own information, contributions "
+"and transactions; group managers also get shortcuts to the contributions and "
+"transactions of the members they manage, when the association allows it."
+msgstr ""
+"Le tableau de bord est la page affichée après la connexion. Ses tuiles "
+"donnent un accès rapide aux principales fonctionnalités ; chacun ne voit que "
+"les tuiles des fonctionnalités qu'il a le droit d'utiliser. Les adhérents "
+"voient leurs propres informations, contributions et transactions ; les "
+"responsables de groupe ont aussi des raccourcis vers les contributions et "
+"les transactions des adhérents qu'ils gèrent, si l'association le permet."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:117
+msgid "Next to the tiles:"
+msgstr "À côté des tuiles :"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:119
+msgid ""
+"administrators and staff members see the latest news of the Galette project,"
+msgstr ""
+"les administrateurs et les membres du bureau voient les dernières actualités "
+"du projet Galette,"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:120
+msgid ""
+"everyone sees the news of your association, when an **RSS feed URL** is set "
+"in the :ref:`preferences <man_preferences>`,"
+msgstr ""
+"tout le monde voit les actualités de votre association, si une **URL du flux "
+"RSS** est réglée dans les :ref:`préférences <man_preferences>`,"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:121
+msgid ""
+"administrators are invited to send :ref:`telemetry <telemetry>` data, until "
+"it is sent or the panel is hidden."
+msgstr ""
+"les administrateurs sont invités à envoyer les données de :ref:`télémétrie "
+"<telemetry>`, jusqu'à ce qu'elles soient envoyées ou que le panneau soit "
+"masqué."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:123
+msgid ""
+"Administrators and staff members can uncheck **Show dashboard on login** to "
+"go straight to the members list after logging in; this choice is kept by the "
+"browser. The dashboard remains available from the **Dashboard** menu entry."
+msgstr ""
+"Les administrateurs et les membres du bureau peuvent décocher **Afficher le "
+"tableau de bord à la connexion** pour arriver directement sur la liste des "
+"adhérents après la connexion ; ce choix est conservé par le navigateur. Le "
+"tableau de bord reste accessible depuis l'entrée **Tableau de bord** du menu."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:125
+msgid ""
+"At the top of every page, the language list changes the language of the "
+"interface."
+msgstr ""
+"En haut de chaque page, la liste des langues change la langue de l'interface."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:127
+msgid "A few banners may also be displayed at the top of the pages:"
+msgstr "Quelques bandeaux peuvent aussi s'afficher en haut des pages :"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:129
+msgid ""
+"**Maintenance**: the instance is in :ref:`maintenance mode <galettemodes>`; "
+"only the super administrator can log in, and is reminded of it,"
+msgstr ""
+"**Maintenance** : l'instance est en :ref:`mode maintenance <galettemodes>` ; "
+"seul le super administrateur peut se connecter, et cela lui est rappelé,"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:130
+msgid ""
+"**Demonstration**: the instance runs in demonstration mode, some features "
+"are disabled,"
+msgstr ""
+"**Démonstration** : l'instance fonctionne en mode démonstration, certaines "
+"fonctionnalités sont désactivées,"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:131
+msgid ""
+"**Superadmin**: you are logged in as super administrator, who is not a "
+"member."
+msgstr ""
+"**Superadmin** : vous êtes connecté en super administrateur, qui n'est pas "
+"un adhérent."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:133
+msgid ""
+"When a new Galette release is available, an icon is displayed next to the "
+"version number at the bottom of the pages, for administrators and staff "
+"members."
+msgstr ""
+"Quand une nouvelle version de Galette est disponible, une icône s'affiche à "
+"côté du numéro de version en bas des pages, pour les administrateurs et les "
+"membres du bureau."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:150
+msgid "History"
+msgstr "Historique"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:152
+msgid ""
+"Galette keeps a history of what happens: logins, failed logins, members "
+"added or changed, contributions, mailings sent... Administrators and staff "
+"members can read it from **Management**, then **Logs**."
+msgstr ""
+"Galette garde un historique de ce qui se passe : connexions, échecs de "
+"connexion, adhérents ajoutés ou modifiés, contributions, mailings envoyés... "
+"Les administrateurs et les membres du bureau le consultent depuis "
+"**Gestion**, puis **Journaux**."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:154
+msgid "Logs"
+msgstr "Journaux"
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:159
+msgid ""
+"Each line gives the date, the address the action came from, the user who did "
+"it, the action and a short description. The list can be filtered on a "
+"period, a member and an action."
+msgstr ""
+"Chaque ligne indique la date, l'adresse d'où vient l'action, l'utilisateur "
+"qui l'a faite, l'action et une courte description. La liste peut être "
+"filtrée sur une période, un adhérent et une action."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:161
+msgid ""
+"**Flush the logs** empties the history, after a confirmation. This cannot be "
+"undone."
+msgstr ""
+"**Effacer l'historique** vide l'historique, après confirmation. C'est "
+"irréversible."
+
+#: ../../../../../../var/www/projects/galette/doc/feature/usermanual-dashboard-history/source/usermanual/generalites.rst:165
+msgid ""
+"Actions are stored in the language of the user who did them: a history can "
+"therefore mix several languages."
+msgstr ""
+"Les actions sont enregistrées dans la langue de l'utilisateur qui les a "
+"faites : un historique peut donc mélanger plusieurs langues."
 
 #~ msgid ""
 #~ "working even if Javascript is disabled (as possible, but really you "

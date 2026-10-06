@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 14:06+0200\n"
-"PO-Revision-Date: 2026-10-01 16:59+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-advanced/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../usermanual/avancee.rst:5
 msgid "Experienced users"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:61
 msgid "Change maximum upload size"
-msgstr ""
+msgstr "Spremenite največjo velikost nalaganja"
 
 #: ../usermanual/avancee.rst:65
 msgid ""
@@ -199,6 +199,9 @@ msgid ""
 "used to be a single value, the same for every one of them, that could only "
 "be changed by editing a Galette source file."
 msgstr ""
+"Vsaka vrsta nalaganja ima lastno največjo velikost, ki je shranjena v bazi "
+"podatkov. Včasih je bila ena sama vrednost, enaka za vsakega od njih, ki jo "
+"je bilo mogoče spremeniti samo z urejanjem izvorne datoteke Galette."
 
 #: ../usermanual/avancee.rst:67
 msgid ""
@@ -206,6 +209,9 @@ msgid ""
 "carries its own setting, reachable from the :ref:`advanced configuration "
 "<advanced_config>` page. Values are a number of kilobytes:"
 msgstr ""
+"Vsaka datoteka, ki jo sprejme Galette, ima največjo velikost in vsaka vrsta "
+"nalaganja ima lastno nastavitev, ki je dosegljiva na strani :ref:`napredna "
+"konfiguracija <advanced_config>`. Vrednosti so število kilobajtov:"
 
 #: ../usermanual/avancee.rst:69
 msgid ""
@@ -213,24 +219,32 @@ msgid ""
 "- and the pictures of the plugins that rely on the same mechanism. Defaults "
 "to ``2048``,"
 msgstr ""
+"``pref_upload_size_images``: slike članov, logotip združenja in logotip "
+"kartice - in slike vtičnikov, ki temeljijo na istem mehanizmu. Privzeto je "
+"``2048``,"
 
 #: ../usermanual/avancee.rst:70
 msgid ""
 "``pref_upload_size_attachments``: files attached to an :ref:`e-mailing "
 "<emailing>`. Defaults to ``2048``,"
 msgstr ""
+"``pref_upload_size_attachments``: datoteke, priložene :ref:`e-pošti "
+"<emailing>`. Privzeto je ``2048``,"
 
 #: ../usermanual/avancee.rst:71
 msgid ""
 "``pref_upload_size_documents``: the documents of the association. Defaults "
 "to ``2048``,"
 msgstr ""
+"``pref_upload_size_documents``: dokumenti združenja. Privzeto je ``2048``,"
 
 #: ../usermanual/avancee.rst:72
 msgid ""
 "``pref_upload_size_imports``: the CSV files handed to the members import. "
 "Defaults to ``2048``,"
 msgstr ""
+"``pref_upload_size_imports``: uvoz datotek CSV, predanih članom. Privzeto je "
+"``2048``,"
 
 #: ../usermanual/avancee.rst:73
 msgid ""
@@ -238,12 +252,17 @@ msgid ""
 "field <dynamic_fields>` that declares no size of its own. A field that "
 "declares one uses it instead. Defaults to ``1024``."
 msgstr ""
+"``pref_upload_size_dynamic_files``: datoteke, shranjene v :ref:`dinamičnem "
+"polju <dynamic_fields>`, ki nima lastne velikosti. Polje, ki deklarira "
+"enega, ga uporablja namesto tega. Privzeto je ``1024``."
 
 #: ../usermanual/avancee.rst:75
 msgid ""
 "Limits are in kilobytes; and displayed in the unit that fits, so the "
 "``2048`` above reads as *2 Mo*."
 msgstr ""
+"Omejitve so v kilobajtih; in prikazano v ustrezni enoti, tako da se ``2048`` "
+"zgoraj bere kot *2 Mo*."
 
 #: ../usermanual/avancee.rst:79
 msgid ""
@@ -253,6 +272,11 @@ msgid ""
 "installations. Raise them in your ``php.ini`` first, otherwise the only "
 "thing you get is an error Galette never sees."
 msgstr ""
+"PHP ima zadnjo besedo. Datoteka, večja od ``upload_max_filesize``, ali "
+"obrazec, večji od ``post_max_size``, nikoli ne doseže Galette, ne glede na "
+"to, kar pravijo te nastavitve, in oboje se šteje v nekaj megabajtih v večini "
+"namestitev PHP. Najprej jih dvignite v svoj ``php.ini``, sicer je edina "
+"stvar, ki jo dobite, napaka, ki je Galette nikoli ne vidi."
 
 #: ../usermanual/avancee.rst:81
 msgid ""
@@ -262,6 +286,11 @@ msgid ""
 "taken for spam. A link to the file is often a better idea than the file "
 "itself."
 msgstr ""
+"Priloge si zaslužijo premislek, preden jih opozorite: težka datoteka je "
+"poslana **vsakemu** prejemniku poštnega sporočila, obteži vaš lastni poštni "
+"strežnik enako kot njihov in poveča verjetnost, da bo sporočilo obravnavano "
+"kot vsiljena pošta. Povezava do datoteke je pogosto boljša ideja kot "
+"datoteka sama."
 
 #: ../usermanual/avancee.rst:87
 msgid "Log IP addresses behind a proxy"
@@ -515,11 +544,11 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:188
 msgid "Draining the mail queue"
-msgstr ""
+msgstr "Izčrpavanje poštne čakalne vrste"
 
 #: ../usermanual/avancee.rst:194
 msgid "Use **one** drainer at a time!"
-msgstr ""
+msgstr "Uporabite **en** odcejalnik naenkrat!"
 
 #: ../usermanual/avancee.rst:196
 msgid ""
@@ -527,6 +556,9 @@ msgid ""
 "same moment, message would be sent twice - and that could cause other errors "
 "anyway."
 msgstr ""
+"Nič ne preprečuje, da bi dva izmed njih izbrala iste čakajoče prejemnike v "
+"istem trenutku, sporočilo bi bilo poslano dvakrat - in to bi vseeno lahko "
+"povzročilo druge napake."
 
 #: ../usermanual/avancee.rst:198
 msgid ""
@@ -535,6 +567,10 @@ msgid ""
 "queues one entry per recipient in database, and drains that queue "
 "progressively."
 msgstr ""
+"Takoj, ko je nastavljena urna ali dnevna :ref:`omejitev pošiljanja "
+"<mail_throttling>`, Galette preneha pošiljati množično pošto in opomnike pri "
+"nalaganju ene strani. V čakalno vrsto postavi en vnos na prejemnika v bazi "
+"podatkov in to čakalno vrsto postopoma izprazni."
 
 #: ../usermanual/avancee.rst:200
 msgid ""
@@ -542,14 +578,17 @@ msgid ""
 "time, but it requires that page to stay open. Two other drainers are "
 "provided, and neither needs anybody to be logged in."
 msgstr ""
+"Stran napredka to naredi iz vašega brskalnika, kar je večino časa dovolj, "
+"vendar zahteva, da stran ostane odprta. Na voljo sta še dva odtočna sistema "
+"in pri nobenem ni treba nikogar prijaviti."
 
 #: ../usermanual/avancee.rst:202
 msgid "A cron script, next to the reminders one:"
-msgstr ""
+msgstr "Cron skript, poleg opomnikov:"
 
 #: ../usermanual/avancee.rst:208
 msgid "And a console command, :doc:`from the command line </command-line>`:"
-msgstr ""
+msgstr "In konzolni ukaz, :doc:`iz ukazne vrstice </command-line>`:"
 
 #: ../usermanual/avancee.rst:214
 msgid ""
@@ -557,6 +596,9 @@ msgid ""
 "is still in alpha. Add ``--force`` to skip the question, which is what a "
 "cron entry calling the command would need."
 msgstr ""
+"Ukaz pred pošiljanjem zahteva potrditev, saj je funkcija še vedno v "
+"različici alfa. Dodajte ``--force``, da preskočite vprašanje, kar bi "
+"potreboval vnos cron, ki kliče ukaz."
 
 #: ../usermanual/avancee.rst:216
 msgid ""
@@ -565,6 +607,11 @@ msgid ""
 "than wait for the quota window to open again, so what is left goes out on "
 "the next run: calling them regularly is the whole point."
 msgstr ""
+"Oba pošiljata paket za paketom in čakata na konfigurirano zakasnitev med "
+"dvema sporočiloma, dokler čakalna vrsta ni prazna ali je dosežena kvota. "
+"Namesto da bi čakali, da se okno s kvoto spet odpre, se ustavijo, tako da "
+"tisto, kar ostane, gre ven pri naslednjem zagonu: bistvo je, da jih redno "
+"kličete."
 
 #: ../usermanual/avancee.rst:220
 msgid ""
@@ -573,6 +620,10 @@ msgid ""
 "``pref_galette_url`` from the :ref:`advanced configuration "
 "<advanced_config>`, or keep the ``GALETTE_URI`` constant."
 msgstr ""
+"Tako kot skript opomnikov, ``cron/mailing_queue.php`` potrebuje naslov "
+"vašega primerka, saj se izvaja brez dohodne zahteve, po kateri bi ga lahko "
+"uganil. Nastavite ``pref_galette_url`` iz :ref:`napredne konfiguracije "
+"<advanced_config>` ali ohranite ``GALETTE_URI`` konstanten."
 
 #: ../usermanual/avancee.rst:225
 msgid "Advanced configuration"
@@ -709,6 +760,10 @@ msgid ""
 "little use. Try it on a test instance before your production one, and "
 "`report what you find <https://bugs.galette.eu>`_."
 msgstr ""
+"Nastavitev lahko poleg statusa nosi tudi oznako **alpha**. Poganja funkcijo, "
+"ki še ni bila izdana: deluje, vendar je bila malo uporabna. Preizkusite ga "
+"na testnem primerku pred produkcijskim in `poročajte, kaj najdete <https://"
+"bugs.galette.eu>`_."
 
 #: ../usermanual/avancee.rst:264
 msgid "The statuses a setting can carry"

@@ -17,6 +17,13 @@ Contributions
 
 A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member.
 
+**Contributions**, then **List of contributions** displays all contributions. The filters at the top of the list help to find some: by begin date, end date or date of record, on a period, and by payment type or contribution type. Click on **Filter** to apply them, and on **Clear filter** to come back to the whole list. The total amount of the contributions found is displayed under the list.
+
+.. image:: ../_styles/static/images/usermanual/contributions_list_filters.png
+   :scale: 50%
+   :align: center
+   :alt: Contributions list and its filters
+
 Contributions types
 ^^^^^^^^^^^^^^^^^^^
 
@@ -26,6 +33,8 @@ Contributions are entirely configurable. There are two main types of contributio
 * the ones that do not extends membership, like donations.
 
 Contribution types management allows you to define a label, and if it extends the membership or not.
+
+See :ref:`contributions types <contributions_types_list>` to manage them.
 
 .. _reminders:
 
@@ -71,6 +80,8 @@ In the contributions list, there is a PDF icon which is designed to generate inv
 
 You can customize the PDF using :ref:`PDF models <pdf_models>`.
 
+.. _scheduled_payments:
+
 Scheduled payments
 ^^^^^^^^^^^^^^^^^^
 
@@ -108,6 +119,8 @@ Only a few information are required to add a new transaction:
 * the originator,
 * the date (current date per default),
 * the amount.
+
+A payment type can also be set on the transaction; the cash, check or transfer that paid it, for example.
 
 .. image:: ../_styles/static/images/usermanual/transactions_list.png
    :scale: 50%

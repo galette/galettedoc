@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2025-10-13 09:07+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -115,8 +115,15 @@ msgstr ""
 "dettagli. Possono anche contenere testi internazionalizzati come `_T(\"My "
 "text\")` che si basa sulle capacità di traduzione standard di Galette."
 
-# 5c5cbe88aa964926a2ab04f76292fd39
 #: ../usermanual/pdf_models.rst:34
+msgid ""
+"``{ASSO_LOGO}`` inserts the logo of the association, and ``{ASSO_PRINT_LOGO}"
+"`` the logo for printing set in the **Cards** tab of the preferences, which "
+"is often better suited to paper."
+msgstr ""
+
+# 5c5cbe88aa964926a2ab04f76292fd39
+#: ../usermanual/pdf_models.rst:36
 msgid ""
 "Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
 "file, and not displaying a page in a recent browser; there are many "
@@ -127,22 +134,22 @@ msgstr ""
 "browser recente; le limitazioni sono numerose."
 
 # 13da33a36db64a4c96c92bf4ba19b86e
-#: ../usermanual/pdf_models.rst:37
+#: ../usermanual/pdf_models.rst:39
 msgid "Invoices and receipts"
 msgstr "Fatture e ricevute"
 
 # 87197e2d52b743d9b0362facef8747e1
-#: ../usermanual/pdf_models.rst:39
+#: ../usermanual/pdf_models.rst:41
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr "I modelli fattura e ricevuta sono uguali, eccetto i titoli."
 
 # d16a73f2eec64382be813390f87e062c
-#: ../usermanual/pdf_models.rst:41
+#: ../usermanual/pdf_models.rst:43
 msgid "Invoice PDF model"
 msgstr "Modelli fattura PDF"
 
 # 81316cb5e5a14037b0af6b42c62ffa1e
-#: ../usermanual/pdf_models.rst:46
+#: ../usermanual/pdf_models.rst:48
 msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
@@ -152,12 +159,12 @@ msgstr ""
 "quelli del modello `Globale`."
 
 # 1195c0c6d5384d3eb41a5efa90800e4a
-#: ../usermanual/pdf_models.rst:49
+#: ../usermanual/pdf_models.rst:51
 msgid "Membership form"
 msgstr "Modulo iscrizione"
 
 # cf1c6206876d4ada90aa90e05dff5b85
-#: ../usermanual/pdf_models.rst:51
+#: ../usermanual/pdf_models.rst:53
 msgid ""
 "It is a model that can be used to print a membership form. It can be empty "
 "(to print some of them for any event for example) or filled with one member "
@@ -168,7 +175,7 @@ msgstr ""
 "con le informazioni di un membro."
 
 # 3cfab6378f114b25ad54a51127100c72
-#: ../usermanual/pdf_models.rst:53
+#: ../usermanual/pdf_models.rst:55
 #, fuzzy
 #| msgid ""
 #| "Since there are many limitation, you may use the :doc:`FullCard plugin </"

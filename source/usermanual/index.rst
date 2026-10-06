@@ -27,12 +27,18 @@ Main dashboard part propose you a quick access to main Galette features :)
 .. toctree::
    :maxdepth: 2
 
+   getting_started.rst
    generalites.rst
+   my_account.rst
    adherents.rst
    recherche.rst
    contributions.rst
+   groups.rst
+   reference_lists.rst
    configuration.rst
    documents.rst
+   public_pages.rst
+   printing.rst
    pdf_models.rst
    preferences.rst
    avancee.rst

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-02 20:44+0000\n"
+"PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "command-line/sl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../command-line.rst:3
 msgid "Command line"
@@ -38,6 +38,9 @@ msgid ""
 "routes``, ``galette:headers:check``, ``galette:seed-fixtures``, "
 "``galette:twig-pot-references``), and are not described here."
 msgstr ""
+"Nekateri od teh ukazov so namenjeni samo razvijalcem (``galette:check-"
+"routes``, ``galette:headers:check``, ``galette:seed-fixtures``, "
+"``galette:twig-pot-references``) in tukaj niso opisani."
 
 #: ../command-line.rst:50
 msgid ""
@@ -46,7 +49,7 @@ msgstr "Pomoč za določen ukaz lahko dobite z uporabo ukaza ``help``:"
 
 #: ../command-line.rst:57
 msgid "Requirements check"
-msgstr ""
+msgstr "Preverjanje zahtev"
 
 #: ../command-line.rst:59
 msgid ""
@@ -65,7 +68,7 @@ msgstr ""
 
 #: ../command-line.rst:66
 msgid "Install"
-msgstr "Namestitev"
+msgstr "Namestiteve"
 
 #: ../command-line.rst:68
 msgid "This command obviously installs Galette :)"
@@ -144,7 +147,7 @@ msgstr ""
 
 #: ../command-line.rst:201
 msgid "Mailing queue"
-msgstr ""
+msgstr "Čakalna vrsta za pošiljanje"
 
 #: ../command-line.rst:205
 msgid ""
@@ -152,6 +155,9 @@ msgid ""
 "and reminders are queued rather than sent in one go. This command drains "
 "what is pending:"
 msgstr ""
+"Ko so :ref:`omejitve pošiljanja <mail_throttling>` konfigurirane, so "
+"množična pošiljanja in opomniki v čakalni vrsti, namesto da bi bili poslani "
+"naenkrat. Ta ukaz črpa tisto, kar je na čakanju:"
 
 #: ../command-line.rst:220
 msgid ""
@@ -159,6 +165,10 @@ msgid ""
 "it, which is what an unattended run needs: without it, a non-interactive "
 "call has no way to confirm and stops with an error rather than send."
 msgstr ""
+"Nič se ne pošlje, dokler ni odgovora na to vprašanje. Podajte ``--force``, "
+"da ga preskočite, kar potrebuje nenadzorovano izvajanje: brez tega "
+"neinteraktivnega klica ni mogoče potrditi in se namesto pošiljanja ustavi z "
+"napako."
 
 #: ../command-line.rst:226
 msgid ""
@@ -166,6 +176,9 @@ msgid ""
 "<mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it "
 "drains alongside."
 msgstr ""
+"Za popolnejšo dokumentacijo si oglejte :ref:`izčrpavanje poštne čakalne "
+"vrste <mailing_queue_cron>` in :ref:`stran napredka <mailing_queue>`, ki jo "
+"izprazni."
 
 #: ../command-line.rst:229
 msgid "Plugins commands"

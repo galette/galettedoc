@@ -62,6 +62,8 @@ There are several types of dynamic fields:
 * `boolean`: a checkbox,
 * `file`: add files.
 
+Dynamic fields can be added to the members, contributions and transactions forms, and to the :ref:`preferences <man_preferences>`. Go to **Configuration**, then **Dynamic fields**, pick the form, and click on **Add**.
+
 .. warning::
 
    .. versionchanged:: 1.2.0
@@ -102,12 +104,49 @@ Some field types like separators, dates and booleans, does not need any extra in
 
   * `size`: maximum file size, in KiB (this size is limited to the one for the PHP configuration).
 
+Fields that hold a value also accept:
+
+* **Min Size**: for single line fields, the minimum number of characters,
+* **Information**: a help text displayed along with the field; check **Display information above input** to display it above the field rather than under it,
+* **Width in forms**: whether the field takes the full width of the form, or half of it.
+
+.. note::
+
+   The **Permissions** of a new field are set to **Inaccessible**: choose who can see or fill in the field, members, group managers, staff members or administrators.
+
+.. _dynamic_fields_repeat:
+
+Repeatable fields
+^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.0
+
+   Choice, date and file fields can be repeated too, not only single line fields.
+
+Single line, choice, date and file fields can hold several values; several phone numbers, for example. Set the **Repeat** option to the maximum number of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for a field that holds a single value.
+
+.. image:: ../_styles/static/images/usermanual/dynamic_field_repeat.png
+   :scale: 50%
+   :align: center
+   :alt: A repeatable dynamic field
+
+On the form, the field is displayed once, with an **Add** button and the number of values that can still be added. Each click adds one more value.
+
+.. image:: ../_styles/static/images/usermanual/dynamic_field_repeat_form.png
+   :scale: 50%
+   :align: center
+   :alt: A repeatable dynamic field on the member form
+
 Labels translation
 ==================
 
 Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language.
 
 Note that each new label will be added with current Galette lang.
+
+Go to **Configuration**, then **Labels translation**, select the label, and type its translation in each language. The labels are the names of the dynamic fields, but also the other texts you typed yourself and that can be translated: statuses, contribution types, payment types... The **Translate labels** icon of those lists, and the **Translate** links of the preferences, lead to the same page.
+
+.. _emails_contents:
 
 Emails contents
 ===============
