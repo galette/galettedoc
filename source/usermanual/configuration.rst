@@ -148,8 +148,6 @@ Go to **Configuration**, then **Labels translation**, select the label, and type
 
 .. _emails_contents:
 
-.. _emails_contents:
-
 Emails contents
 ===============
 
