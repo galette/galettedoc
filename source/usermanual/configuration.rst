@@ -151,7 +151,7 @@ Go to **Configuration**, then **Labels translation**, select the label, and type
 Emails contents
 ===============
 
-Depending on your configuration (see preferences), administrative emails cans be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example.
+Depending on your configuration (see preferences), administrative emails can be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example.
 
 Defaults are provided, but you can change them.
 
