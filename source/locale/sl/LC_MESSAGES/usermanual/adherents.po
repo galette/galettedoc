@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 06:50+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -605,6 +605,13 @@ msgstr "Ko izberete polja, kliknite gumb »Shrani nov model«."
 
 #: ../usermanual/adherents.rst:231
 msgid ""
+"Dynamic fields of the members can be imported as well, except file fields. "
+"A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
+"a field with no limit gets 10 columns."
+msgstr ""
+
+#: ../usermanual/adherents.rst:233
+msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
 "want, or remove it to get the default model back."
@@ -613,11 +620,11 @@ msgstr ""
 "datoteko CSV« prenesete prazen model. Seveda lahko model po želji spremenite "
 "ali pa ga odstranite, da dobite nazaj privzeti model."
 
-#: ../usermanual/adherents.rst:234
+#: ../usermanual/adherents.rst:236
 msgid "Import"
 msgstr "Uvoz"
 
-#: ../usermanual/adherents.rst:236
+#: ../usermanual/adherents.rst:238
 msgid ""
 "Once you have retrieved and fill the empty file, you have to send it using "
 "the form `Send a new file`. At this step, Galette will check your file "
@@ -630,7 +637,7 @@ msgstr ""
 "presega :ref:`največje dovoljene velikosti za uvoz <upload_sizes>` (privzeto "
 "2 Mb)."
 
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:242
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -640,7 +647,7 @@ msgstr ""
 "imenik ``galette/data/imports`` ali pa jo razdelite na več manjših datotek, "
 "ki jih lahko uvozite eno za drugo."
 
-#: ../usermanual/adherents.rst:242
+#: ../usermanual/adherents.rst:244
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -648,11 +655,11 @@ msgstr ""
 "Poslane datoteke so navedene v razdelku »Obstoječe datoteke«. Lahko jih "
 "prikažete, odstranite ali uvozite:"
 
-#: ../usermanual/adherents.rst:244
+#: ../usermanual/adherents.rst:246
 msgid "Select and import file"
 msgstr "Izberite in uvozite datoteko"
 
-#: ../usermanual/adherents.rst:249
+#: ../usermanual/adherents.rst:251
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -663,7 +670,7 @@ msgstr ""
 "pravilno oblikovanje podatkov itd.), ne da bi se pri tem karkoli shranilo v "
 "bazo podatkov."
 
-#: ../usermanual/adherents.rst:251
+#: ../usermanual/adherents.rst:253
 msgid ""
 "When you import a CSV file, if one line is incorrect, previous ones may be "
 "stored in the database already; so it is advised to use the dry-run before "
@@ -673,7 +680,7 @@ msgstr ""
 "shranjene v zbirki podatkov; zato je priporočljivo, da pred tem uporabite "
 "poskusni zagon, da odpravite napako."
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:255
 msgid ""
 "Galette displays error messages if something went wrong, in dry-run mode or "
 "not."
@@ -681,7 +688,7 @@ msgstr ""
 "Galette prikaže sporočila o napakah, če gre kaj narobe, ne glede na to, ali "
 "je vklopljen način poskusnega zagona ali ne."
 
-#: ../usermanual/adherents.rst:257
+#: ../usermanual/adherents.rst:259
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -691,11 +698,11 @@ msgstr ""
 "pride, če vsa polja, ki ste jih v konfiguraciji Galette nastavili kot "
 "obvezna, niso navedena v vašem modelu uvoza."
 
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:264
 msgid "Links between members"
 msgstr "Povezave med člani"
 
-#: ../usermanual/adherents.rst:266
+#: ../usermanual/adherents.rst:268
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -706,7 +713,7 @@ msgstr ""
 "članov lahko dostopate iz nadrejenega člana, do nadrejenih pa iz podrejenih "
 "članov."
 
-#: ../usermanual/adherents.rst:268
+#: ../usermanual/adherents.rst:270
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -714,7 +721,7 @@ msgstr ""
 "Članu lahko dodate poljubno število otrok, vendar otrok ne more postati "
 "starš."
 
-#: ../usermanual/adherents.rst:270
+#: ../usermanual/adherents.rst:272
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -728,7 +735,7 @@ msgstr ""
 "določa konfiguracija. Če kateri od teh podatkov manjka, bo pridobljen od "
 "nadrejenega elementa."
 
-#: ../usermanual/adherents.rst:272
+#: ../usermanual/adherents.rst:274
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -737,11 +744,11 @@ msgstr ""
 "geslo«. To ne vpliva na omejitev edinstvenosti e-poštnih naslovov v zbirki "
 "podatkov."
 
-#: ../usermanual/adherents.rst:277
+#: ../usermanual/adherents.rst:279
 msgid "Resetting a second factor"
 msgstr "Ponastavitev drugega faktorja"
 
-#: ../usermanual/adherents.rst:281
+#: ../usermanual/adherents.rst:283
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -755,7 +762,7 @@ msgstr ""
 "skrivnost in preostale obnovitvene kode se izbrišejo, član pa se prijavi "
 "samo s svojim geslom, dokler se znova ne vpiše."
 
-#: ../usermanual/adherents.rst:283
+#: ../usermanual/adherents.rst:285
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -769,7 +776,7 @@ msgstr ""
 "more ponastaviti administratorjevih, skrbnik pa ne more ponastaviti drugih "
 "skrbnikov: samo superskrbnik lahko."
 
-#: ../usermanual/adherents.rst:287
+#: ../usermanual/adherents.rst:289
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -781,11 +788,11 @@ msgstr ""
 "lotil odstranitve enega. Reset je zapisan v zgodovini, kdo je to naredil in "
 "za koga."
 
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:292
 msgid "Impersonating"
 msgstr "Lažno predstavljanje"
 
-#: ../usermanual/adherents.rst:294
+#: ../usermanual/adherents.rst:296
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -796,7 +803,7 @@ msgstr ""
 "poverilnice poslane prek nezaščitenih e-poštnih sporočil; čemur se je res "
 "treba izogniti."
 
-#: ../usermanual/adherents.rst:296
+#: ../usermanual/adherents.rst:298
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "

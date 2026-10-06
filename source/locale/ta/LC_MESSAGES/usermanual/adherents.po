@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 06:50+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -583,6 +583,13 @@ msgstr "உங்கள் புலங்களைத் தேர்ந்த�
 
 #: ../usermanual/adherents.rst:231
 msgid ""
+"Dynamic fields of the members can be imported as well, except file fields. "
+"A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
+"a field with no limit gets 10 columns."
+msgstr ""
+
+#: ../usermanual/adherents.rst:233
+msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
 "want, or remove it to get the default model back."
@@ -591,11 +598,11 @@ msgstr ""
 "ஆகியவற்றிலிருந்து வெற்று மாதிரியை பதிவிறக்கம் செய்யலாம். நிச்சயமாக, நீங்கள் விரும்பினால் "
 "மாதிரியை மாற்றலாம் அல்லது இயல்புநிலை மாதிரியை திரும்பப் பெற அதை அகற்றலாம்."
 
-#: ../usermanual/adherents.rst:234
+#: ../usermanual/adherents.rst:236
 msgid "Import"
 msgstr "இறக்குமதி"
 
-#: ../usermanual/adherents.rst:236
+#: ../usermanual/adherents.rst:238
 #, fuzzy
 #| msgid ""
 #| "Once you have retrieved and fill the empty file, you have to send it "
@@ -613,7 +620,7 @@ msgstr ""
 "`` txt``) என்பதை கலெட் சரிபார்க்கும், மேலும் அதன் அளவு அதிகபட்ச பதிவேற்ற கோப்பு அளவை "
 "விட அதிகமாக இருக்காது (PHP இல் இயல்புநிலைக்கு 2mio)."
 
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:242
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -623,7 +630,7 @@ msgstr ""
 "`` கேலட்/தரவு/இறக்குமதி`` கோப்பகத்தில் வைக்கலாம் அல்லது நீங்கள் ஒவ்வொன்றாக இறக்குமதி "
 "செய்யக்கூடிய பல சிறிய கோப்புகளாக பிரிக்கலாம்."
 
-#: ../usermanual/adherents.rst:242
+#: ../usermanual/adherents.rst:244
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -631,11 +638,11 @@ msgstr ""
 "அனுப்பப்பட்ட கோப்புகள் `இருக்கும் கோப்புகள்` பிரிவில் பட்டியலிடப்பட்டுள்ளன. நீங்கள் அதைக் "
 "காட்டலாம், அகற்றலாம் அல்லது இறக்குமதி செய்யலாம்:"
 
-#: ../usermanual/adherents.rst:244
+#: ../usermanual/adherents.rst:246
 msgid "Select and import file"
 msgstr "கோப்பைத் தேர்ந்தெடுத்து இறக்குமதி செய்யுங்கள்"
 
-#: ../usermanual/adherents.rst:249
+#: ../usermanual/adherents.rst:251
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -645,7 +652,7 @@ msgstr ""
 "சரிபார்க்கப்பட்டது) உங்கள் கோப்பு தரவு செல்லுபடியாகும் (கட்டாய புலங்கள் நிரப்பப்பட்டவை, "
 "தரவு வடிவமைப்பு சரியானது, ...) வடிவமைக்கப்பட்டுள்ளது."
 
-#: ../usermanual/adherents.rst:251
+#: ../usermanual/adherents.rst:253
 msgid ""
 "When you import a CSV file, if one line is incorrect, previous ones may be "
 "stored in the database already; so it is advised to use the dry-run before "
@@ -655,7 +662,7 @@ msgstr ""
 "ஏற்கனவே தரவுத்தளத்தில் சேமிக்கப்படலாம்; எனவே பிழையை சரிசெய்ய முன் உலர்ந்த ரனைப் பயன்படுத்த "
 "அறிவுறுத்தப்படுகிறது."
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:255
 #, fuzzy
 #| msgid ""
 #| "You will have error messages than something went wrong (in dry-run mode "
@@ -667,7 +674,7 @@ msgstr ""
 "ஏதேனும் தவறு நடந்ததை விட உங்களிடம் பிழை செய்திகள் இருக்கும் (உலர்-ரன் பயன்முறையில் அல்லது "
 "இல்லை):"
 
-#: ../usermanual/adherents.rst:257
+#: ../usermanual/adherents.rst:259
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -677,11 +684,11 @@ msgstr ""
 "இறக்குமதி மாதிரியில் கேலட் உள்ளமைவில் தேவைக்கேற்ப அமைக்கும் அனைத்து புலங்களும் "
 "பட்டியலிடப்படாதபோது இது நிகழலாம்."
 
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:264
 msgid "Links between members"
 msgstr "உறுப்பினர்களிடையே இணைப்புகள்"
 
-#: ../usermanual/adherents.rst:266
+#: ../usermanual/adherents.rst:268
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -691,7 +698,7 @@ msgstr ""
 "உறுப்பினர்களுக்காக குடும்பங்களை சேமிக்க இது பயன்படுத்தப்படலாம். நீங்கள் பெற்றோரிடமிருந்து "
 "குழந்தைகள் உறுப்பினர்களையும், குழந்தைகளின் பெற்றோரையும் அணுகலாம்."
 
-#: ../usermanual/adherents.rst:268
+#: ../usermanual/adherents.rst:270
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -699,7 +706,7 @@ msgstr ""
 "நீங்கள் ஒரு உறுப்பினரை விரும்பும் அளவுக்கு குழந்தைகளைச் சேர்க்கலாம், ஆனால் ஒரு குழந்தை "
 "பெற்றோராக மாற முடியாது."
 
-#: ../usermanual/adherents.rst:270
+#: ../usermanual/adherents.rst:272
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -712,7 +719,7 @@ msgstr ""
 "சொன்னாலும் மின்னஞ்சல் மற்றும் அஞ்சல் முகவரிகள் தானாகவே விருப்பமாக மாறும். அந்த தகவல்கள் "
 "ஏதேனும் காணவில்லை என்றால், அது பெற்றோரிடமிருந்து மீட்டெடுக்கப்படும்."
 
-#: ../usermanual/adherents.rst:272
+#: ../usermanual/adherents.rst:274
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -720,11 +727,11 @@ msgstr ""
 "மின்னஞ்சல் அல்லாத உறுப்பினர்கள் \"கடவுச்சொல்லை மீட்டெடு\" அம்சத்தைப் பயன்படுத்த முடியாது. "
 "இது தரவுத்தளத்தில் உள்ள தனித்துவமான மின்னஞ்சல் கட்டுப்பாட்டை பாதிக்காது."
 
-#: ../usermanual/adherents.rst:277
+#: ../usermanual/adherents.rst:279
 msgid "Resetting a second factor"
 msgstr ""
 
-#: ../usermanual/adherents.rst:281
+#: ../usermanual/adherents.rst:283
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -733,7 +740,7 @@ msgid ""
 "member logs in with their password alone until they enrol again."
 msgstr ""
 
-#: ../usermanual/adherents.rst:283
+#: ../usermanual/adherents.rst:285
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -742,7 +749,7 @@ msgid ""
 "only the super administrator can."
 msgstr ""
 
-#: ../usermanual/adherents.rst:287
+#: ../usermanual/adherents.rst:289
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -750,11 +757,11 @@ msgid ""
 "and for whom."
 msgstr ""
 
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:292
 msgid "Impersonating"
 msgstr "ஆள்மாறாட்டம்"
 
-#: ../usermanual/adherents.rst:294
+#: ../usermanual/adherents.rst:296
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -764,7 +771,7 @@ msgstr ""
 "குழுக்கள், ... இந்த விசயத்தில், துரதிர்ச்டவசமாக பாதுகாப்பற்ற மின்னஞ்சல்களால் அனுப்பப்பட்ட "
 "சில நற்சான்றிதழ்களைப் பார்ப்பது அடிக்கடி நிகழ்கிறது; இது உண்மையில் தவிர்க்கப்பட வேண்டும்."
 
-#: ../usermanual/adherents.rst:296
+#: ../usermanual/adherents.rst:298
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
