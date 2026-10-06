@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:20+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,150 +124,202 @@ msgstr ""
 msgid "`file`: add files."
 msgstr ""
 
-#: ../usermanual/configuration.rst:69
-msgid "Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searches. Now, every date is stored using the `Y-m-d` format."
+#: ../usermanual/configuration.rst:65
+msgid "Dynamic fields can be added to the members, contributions and transactions forms, and to the :ref:`preferences <man_preferences>`. Go to **Configuration**, then **Dynamic fields**, pick the form, and click on **Add**."
 msgstr ""
 
 #: ../usermanual/configuration.rst:71
-msgid "If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️)."
+msgid "Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searches. Now, every date is stored using the `Y-m-d` format."
 msgstr ""
 
 #: ../usermanual/configuration.rst:73
-msgid "While creating a new field (or editing an existing one); you also can:"
+msgid "If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️)."
 msgstr ""
 
 #: ../usermanual/configuration.rst:75
-msgid "mark it as required,"
-msgstr ""
-
-#: ../usermanual/configuration.rst:76
-msgid "define access rights, the same as for core fields,"
+msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
 
 #: ../usermanual/configuration.rst:77
-msgid "add extra information to help users."
+msgid "mark it as required,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:78
+msgid "define access rights, the same as for core fields,"
 msgstr ""
 
 #: ../usermanual/configuration.rst:79
+msgid "add extra information to help users."
+msgstr ""
+
+#: ../usermanual/configuration.rst:81
 msgid "A dynamic field"
 msgstr ""
 
-#: ../usermanual/configuration.rst:84
+#: ../usermanual/configuration.rst:86
 msgid "Some field types like separators, dates and booleans, does not need any extra information; for others:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:86
+#: ../usermanual/configuration.rst:88
 msgid "`free text`:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:88
+#: ../usermanual/configuration.rst:90
 msgid "`width`: define number of columns,"
 msgstr ""
 
-#: ../usermanual/configuration.rst:89
+#: ../usermanual/configuration.rst:91
 msgid "`height`: define number of rows."
 msgstr ""
 
-#: ../usermanual/configuration.rst:91
+#: ../usermanual/configuration.rst:93
 msgid "`single line`:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:93
+#: ../usermanual/configuration.rst:95
 msgid "`width`: field width,"
 msgstr ""
 
-#: ../usermanual/configuration.rst:94
+#: ../usermanual/configuration.rst:96
 msgid "`size`: number of characters,"
 msgstr ""
 
-#: ../usermanual/configuration.rst:95
+#: ../usermanual/configuration.rst:97
 msgid "`repeat`: number of possible occurrences."
 msgstr ""
 
-#: ../usermanual/configuration.rst:97
+#: ../usermanual/configuration.rst:99
 msgid "`choice`:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:99
+#: ../usermanual/configuration.rst:101
 msgid "`values`: possible values for the dropdown."
 msgstr ""
 
-#: ../usermanual/configuration.rst:101
+#: ../usermanual/configuration.rst:103
 msgid "`file`:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:103
+#: ../usermanual/configuration.rst:105
 msgid "`size`: maximum file size, in KiB (this size is limited to the one for the PHP configuration)."
 msgstr ""
 
-#: ../usermanual/configuration.rst:106
-msgid "Labels translation"
+#: ../usermanual/configuration.rst:107
+msgid "Fields that hold a value also accept:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:108
-msgid "Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language."
+#: ../usermanual/configuration.rst:109
+msgid "**Min Size**: for single line fields, the minimum number of characters,"
 msgstr ""
 
 #: ../usermanual/configuration.rst:110
-msgid "Note that each new label will be added with current Galette lang."
+msgid "**Information**: a help text displayed along with the field; check **Display information above input** to display it above the field rather than under it,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:111
+msgid "**Width in forms**: whether the field takes the full width of the form, or half of it."
 msgstr ""
 
 #: ../usermanual/configuration.rst:115
-msgid "Emails contents"
+msgid "The **Permissions** of a new field are set to **Inaccessible**: choose who can see or fill in the field, members, group managers, staff members or administrators."
 msgstr ""
 
-#: ../usermanual/configuration.rst:117
-msgid "Depending on your configuration (see preferences), administrative emails cans be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example."
+#: ../usermanual/configuration.rst:120
+msgid "Repeatable fields"
 msgstr ""
 
-#: ../usermanual/configuration.rst:119
-msgid "Defaults are provided, but you can change them."
+#: ../usermanual/configuration.rst:124
+msgid "Choice, date and file fields can be repeated too, not only single line fields."
 msgstr ""
 
-#: ../usermanual/configuration.rst:121
-msgid "It is important to note that those texts contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be careful not to forget any of those, that could cause sending issues."
-msgstr ""
-
-#: ../usermanual/configuration.rst:123
-msgid "Edit mail send to a new member in french"
+#: ../usermanual/configuration.rst:126
+msgid "Single line, choice, date and file fields can hold several values; several phone numbers, for example. Set the **Repeat** option to the maximum number of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for a field that holds a single value."
 msgstr ""
 
 #: ../usermanual/configuration.rst:128
-msgid "An email will be send to member when:"
-msgstr ""
-
-#: ../usermanual/configuration.rst:130
-msgid "they register on their own. This mail contains authentication information,"
-msgstr ""
-
-#: ../usermanual/configuration.rst:131
-msgid "their card is added or edited by someone else (if the corresponding box is checked),"
-msgstr ""
-
-#: ../usermanual/configuration.rst:132
-msgid "they use the lost password feature,"
+msgid "A repeatable dynamic field"
 msgstr ""
 
 #: ../usermanual/configuration.rst:133
-msgid "a new contribution is attached to their account (if the corresponding box is checked)."
+msgid "On the form, the field is displayed once, with an **Add** button and the number of values that can still be added. Each click adds one more value."
 msgstr ""
 
 #: ../usermanual/configuration.rst:135
+msgid "A repeatable dynamic field on the member form"
+msgstr ""
+
+#: ../usermanual/configuration.rst:141
+msgid "Labels translation"
+msgstr ""
+
+#: ../usermanual/configuration.rst:143
+msgid "Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language."
+msgstr ""
+
+#: ../usermanual/configuration.rst:145
+msgid "Note that each new label will be added with current Galette lang."
+msgstr ""
+
+#: ../usermanual/configuration.rst:147
+msgid "Go to **Configuration**, then **Labels translation**, select the label, and type its translation in each language. The labels are the names of the dynamic fields, but also the other texts you typed yourself and that can be translated: statuses, contribution types, payment types... The **Translate labels** icon of those lists, and the **Translate** links of the preferences, lead to the same page."
+msgstr ""
+
+#: ../usermanual/configuration.rst:152
+msgid "Emails contents"
+msgstr ""
+
+#: ../usermanual/configuration.rst:154
+msgid "Depending on your configuration (see preferences), administrative emails cans be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example."
+msgstr ""
+
+#: ../usermanual/configuration.rst:156
+msgid "Defaults are provided, but you can change them."
+msgstr ""
+
+#: ../usermanual/configuration.rst:158
+msgid "It is important to note that those texts contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be careful not to forget any of those, that could cause sending issues."
+msgstr ""
+
+#: ../usermanual/configuration.rst:160
+msgid "Edit mail send to a new member in french"
+msgstr ""
+
+#: ../usermanual/configuration.rst:165
+msgid "An email will be send to member when:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:167
+msgid "they register on their own. This mail contains authentication information,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:168
+msgid "their card is added or edited by someone else (if the corresponding box is checked),"
+msgstr ""
+
+#: ../usermanual/configuration.rst:169
+msgid "they use the lost password feature,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:170
+msgid "a new contribution is attached to their account (if the corresponding box is checked)."
+msgstr ""
+
+#: ../usermanual/configuration.rst:172
 msgid "An email will be send to administrators when:"
 msgstr ""
 
-#: ../usermanual/configuration.rst:137
+#: ../usermanual/configuration.rst:174
 msgid "a new member is added or registers on their own,"
 msgstr ""
 
-#: ../usermanual/configuration.rst:138
+#: ../usermanual/configuration.rst:175
 msgid "a new contribution is attached to a member account."
 msgstr ""
 
-#: ../usermanual/configuration.rst:140
+#: ../usermanual/configuration.rst:177
 msgid "Of course, emails will be sent only if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditioned on a checkbox from the user interface, excepting for self registration messages that will always be send."
 msgstr ""
 
-#: ../usermanual/configuration.rst:142
+#: ../usermanual/configuration.rst:179
 msgid "Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more."
 msgstr ""
