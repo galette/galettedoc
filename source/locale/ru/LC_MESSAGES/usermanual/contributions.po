@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 14:19+0200\n"
+"POT-Creation-Date: 2026-10-06 06:50+0200\n"
 "PO-Revision-Date: 2026-05-10 15:56+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -97,39 +97,44 @@ msgid ""
 "extends the membership or not."
 msgstr ""
 
-#: ../usermanual/contributions.rst:33
+#: ../usermanual/contributions.rst:30
+msgid ""
+"See :ref:`contributions types <contributions_types_list>` to manage them."
+msgstr ""
+
+#: ../usermanual/contributions.rst:35
 msgid "Reminders"
 msgstr "Напоминания"
 
-#: ../usermanual/contributions.rst:35
+#: ../usermanual/contributions.rst:37
 msgid ""
 "Emails models to remind due dates are available from the emails contents "
 "(\"Impending due date\" and \"Late due date\")."
 msgstr ""
 
-#: ../usermanual/contributions.rst:37
+#: ../usermanual/contributions.rst:39
 msgid ""
 "The reminder button from the dashboard or the reminders entry of the menu "
 "will give you access to the reminders management interface."
 msgstr ""
 
-#: ../usermanual/contributions.rst:39
+#: ../usermanual/contributions.rst:41
 msgid "Reminders management interface"
 msgstr ""
 
-#: ../usermanual/contributions.rst:44
+#: ../usermanual/contributions.rst:46
 msgid "Two categories can be selected:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:46
+#: ../usermanual/contributions.rst:48
 msgid "members whose due date is close,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:47
+#: ../usermanual/contributions.rst:49
 msgid "members whose due date is in the past."
 msgstr ""
 
-#: ../usermanual/contributions.rst:49
+#: ../usermanual/contributions.rst:51
 msgid ""
 "Per default (this is currently not configurable), reminders are sent one "
 "month, then seven days before the due date; and then one and two months "
@@ -137,13 +142,13 @@ msgid ""
 "never sent any reminder, all matching members will be reminded."
 msgstr ""
 
-#: ../usermanual/contributions.rst:51
+#: ../usermanual/contributions.rst:53
 msgid ""
 "Galette will tell you if some members do not have an email address, you can "
 "print labels for those ones."
 msgstr ""
 
-#: ../usermanual/contributions.rst:55
+#: ../usermanual/contributions.rst:57
 msgid ""
 "Reminders obey the :ref:`sending limits <mail_throttling>`, following the "
 "very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly "
@@ -151,13 +156,13 @@ msgid ""
 "always were."
 msgstr ""
 
-#: ../usermanual/contributions.rst:57
+#: ../usermanual/contributions.rst:59
 msgid ""
 "Each reminder stays an individual message, written in the language of its "
 "recipient, either way. The quota counters are shared with mass mailings."
 msgstr ""
 
-#: ../usermanual/contributions.rst:59
+#: ../usermanual/contributions.rst:61
 msgid ""
 "Finally, it is possible to automate reminders with a cron task which will "
 "call the ``galette/cron/reminder.php`` file. If you want reminders to be "
@@ -166,32 +171,32 @@ msgid ""
 "a crontab) with the following content:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:65
+#: ../usermanual/contributions.rst:67
 msgid ""
 "The script queues the reminders that are due, then drains the queue itself, "
 "respecting the same limits. It stays silent unless something failed, so cron "
 "only writes to you when there is a reason to."
 msgstr ""
 
-#: ../usermanual/contributions.rst:68
+#: ../usermanual/contributions.rst:70
 msgid "Invoices and receipts"
 msgstr ""
 
-#: ../usermanual/contributions.rst:70
+#: ../usermanual/contributions.rst:72
 msgid ""
 "In the contributions list, there is a PDF icon which is designed to generate "
 "invoice ou receipt for one contribution."
 msgstr ""
 
-#: ../usermanual/contributions.rst:72
+#: ../usermanual/contributions.rst:74
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr ""
 
-#: ../usermanual/contributions.rst:75
+#: ../usermanual/contributions.rst:79
 msgid "Scheduled payments"
 msgstr "Запланированные платежи"
 
-#: ../usermanual/contributions.rst:79
+#: ../usermanual/contributions.rst:83
 msgid ""
 "It is possible to dispatch a contribution among one or several scheduled "
 "payments. All you have to do is to select \"Scheduled payment\" as payment "
@@ -199,76 +204,76 @@ msgid ""
 "scheduled payment."
 msgstr ""
 
-#: ../usermanual/contributions.rst:81
+#: ../usermanual/contributions.rst:85
 msgid "Add scheduled payment to a contribution"
 msgstr ""
 
-#: ../usermanual/contributions.rst:86
+#: ../usermanual/contributions.rst:90
 msgid ""
 "By default, the entire remaining amount will be set into scheduled payment, "
 "but you can enter whatever you want. You can also select any payment type "
 "(except scheduled payment)."
 msgstr ""
 
-#: ../usermanual/contributions.rst:88
+#: ../usermanual/contributions.rst:92
 msgid ""
 "When you edit a contribution that already has attached scheduled payments, "
 "you can see a summary, and you can also see list of entries."
 msgstr ""
 
-#: ../usermanual/contributions.rst:90
+#: ../usermanual/contributions.rst:94
 msgid "Summary of scheduled payments"
 msgstr ""
 
-#: ../usermanual/contributions.rst:95
+#: ../usermanual/contributions.rst:99
 msgid "List of attached scheduled payments"
 msgstr ""
 
-#: ../usermanual/contributions.rst:101
+#: ../usermanual/contributions.rst:105
 msgid "Transactions"
 msgstr "Транзакции"
 
-#: ../usermanual/contributions.rst:103
+#: ../usermanual/contributions.rst:107
 msgid ""
 "As seen in the example from this chapter introduction, a transaction is a "
 "global payment for a member."
 msgstr ""
 
-#: ../usermanual/contributions.rst:105
+#: ../usermanual/contributions.rst:109
 msgid "Only a few information are required to add a new transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:107
+#: ../usermanual/contributions.rst:111
 msgid "a description,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:108
+#: ../usermanual/contributions.rst:112
 msgid "the originator,"
 msgstr ""
 
-#: ../usermanual/contributions.rst:109
+#: ../usermanual/contributions.rst:113
 msgid "the date (current date per default),"
 msgstr ""
 
-#: ../usermanual/contributions.rst:110
+#: ../usermanual/contributions.rst:114
 msgid "the amount."
 msgstr ""
 
-#: ../usermanual/contributions.rst:112
+#: ../usermanual/contributions.rst:116
 msgid "Transactions list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:117
+#: ../usermanual/contributions.rst:121
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
 "transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
 
-#: ../usermanual/contributions.rst:119
+#: ../usermanual/contributions.rst:123
 msgid "Add a transaction"
 msgstr "Добавить транзакцию"
 
-#: ../usermanual/contributions.rst:124
+#: ../usermanual/contributions.rst:128
 msgid ""
 "After adding a new transaction, you will be redirected to a new contribution "
 "creation. If this new contribution does not dispatch the remaining amount of "
@@ -277,43 +282,43 @@ msgid ""
 "remaining amount of the transaction."
 msgstr ""
 
-#: ../usermanual/contributions.rst:126
+#: ../usermanual/contributions.rst:130
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:131
+#: ../usermanual/contributions.rst:135
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr ""
 
-#: ../usermanual/contributions.rst:133
+#: ../usermanual/contributions.rst:137
 msgid "Transaction edition"
 msgstr ""
 
-#: ../usermanual/contributions.rst:138
+#: ../usermanual/contributions.rst:142
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
 msgstr ""
 
-#: ../usermanual/contributions.rst:140
+#: ../usermanual/contributions.rst:144
 msgid "Add an already existing contribution to a transaction"
 msgstr ""
 
-#: ../usermanual/contributions.rst:148
+#: ../usermanual/contributions.rst:152
 msgid "Members selection"
 msgstr "Выбор участников"
 
-#: ../usermanual/contributions.rst:152
+#: ../usermanual/contributions.rst:156
 msgid ""
 "The dropdown list to choose a member is available from contributions and "
 "transactions (as well as from several plugins) displays only a few members, "
 "for performances reasons."
 msgstr ""
 
-#: ../usermanual/contributions.rst:154
+#: ../usermanual/contributions.rst:158
 msgid "Dropdown members list"
 msgstr ""
 
-#: ../usermanual/contributions.rst:158
+#: ../usermanual/contributions.rst:162
 msgid ""
 "You can display more members using arrow buttons or entering any text (this "
 "will search in first name, last name and identifiers)."
