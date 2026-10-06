@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2026-03-02 10:10+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -106,6 +106,13 @@ msgstr ""
 
 #: ../usermanual/pdf_models.rst:34
 msgid ""
+"``{ASSO_LOGO}`` inserts the logo of the association, and ``{ASSO_PRINT_LOGO}"
+"`` the logo for printing set in the **Cards** tab of the preferences, which "
+"is often better suited to paper."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:36
+msgid ""
 "Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
 "file, and not displaying a page in a recent browser; there are many "
 "limitations."
@@ -114,19 +121,19 @@ msgstr ""
 "உருவாக்குகிறோம் என்பதை நினைவில் கொள்ளுங்கள், அண்மைக் கால உலாவியில் ஒரு பக்கத்தைக் "
 "காட்டவில்லை; பல வரம்புகள் உள்ளன."
 
-#: ../usermanual/pdf_models.rst:37
+#: ../usermanual/pdf_models.rst:39
 msgid "Invoices and receipts"
 msgstr "விலைப்பட்டியல் மற்றும் ரசீதுகள்"
 
-#: ../usermanual/pdf_models.rst:39
+#: ../usermanual/pdf_models.rst:41
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr "விலைப்பட்டியல் மற்றும் ரசீது மாதிரிகள் அவற்றின் தலைப்புகளைத் தவிர்த்து ஒன்றே."
 
-#: ../usermanual/pdf_models.rst:41
+#: ../usermanual/pdf_models.rst:43
 msgid "Invoice PDF model"
 msgstr "விலைப்பட்டியல் PDF மாதிரி"
 
-#: ../usermanual/pdf_models.rst:46
+#: ../usermanual/pdf_models.rst:48
 msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
@@ -135,11 +142,11 @@ msgstr ""
 "அடிக்குறிப்பு அல்லது சிஎச்எச் பாணிகளை வரையறுக்காது, அவை `உலகளாவிய` மாதிரியை "
 "உருவாக்குகின்றன."
 
-#: ../usermanual/pdf_models.rst:49
+#: ../usermanual/pdf_models.rst:51
 msgid "Membership form"
 msgstr "உறுப்பினர் படிவம்"
 
-#: ../usermanual/pdf_models.rst:51
+#: ../usermanual/pdf_models.rst:53
 msgid ""
 "It is a model that can be used to print a membership form. It can be empty "
 "(to print some of them for any event for example) or filled with one member "
@@ -149,7 +156,7 @@ msgstr ""
 "(அவற்றில் சிலவற்றை எந்தவொரு நிகழ்விற்கும் அச்சிட) அல்லது ஒரு உறுப்பினர் தகவல்களால் "
 "நிரப்பப்படலாம்."
 
-#: ../usermanual/pdf_models.rst:53
+#: ../usermanual/pdf_models.rst:55
 #, fuzzy
 #| msgid ""
 #| "Since there are many limitation, you may use the :doc:`FullCard plugin </"
