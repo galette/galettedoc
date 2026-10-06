@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 06:50+0200\n"
+"POT-Creation-Date: 2026-10-06 10:35+0200\n"
 "PO-Revision-Date: 2026-05-02 12:09+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -87,11 +87,27 @@ msgstr ""
 "ஒரு பங்களிப்பு ஒரு உறுப்பினர், நன்கொடை, பரிசு, ... ஒவ்வொரு உறுப்பினருக்கும் அதையெல்லாம் "
 "சேமிக்க கேலட் உங்களை அனுமதிக்கிறது."
 
-#: ../usermanual/contributions.rst:21
+#: ../usermanual/contributions.rst:20
+msgid ""
+"**Contributions**, then **List of contributions** displays all "
+"contributions. The filters at the top of the list help to find some: by "
+"begin date, end date or date of record, on a period, and by payment type or "
+"contribution type. Click on **Filter** to apply them, and on **Clear "
+"filter** to come back to the whole list. The total amount of the "
+"contributions found is displayed under the list."
+msgstr ""
+
+#: ../usermanual/contributions.rst:22
+#, fuzzy
+#| msgid "Contributions types"
+msgid "Contributions list and its filters"
+msgstr "பங்களிப்பு வகைகள்"
+
+#: ../usermanual/contributions.rst:28
 msgid "Contributions types"
 msgstr "பங்களிப்பு வகைகள்"
 
-#: ../usermanual/contributions.rst:23
+#: ../usermanual/contributions.rst:30
 msgid ""
 "Contributions are entirely configurable. There are two main types of "
 "contributions in Galette:"
@@ -99,17 +115,17 @@ msgstr ""
 "பங்களிப்புகள் முற்றிலும் கட்டமைக்கக்கூடியவை. கேலட்டில் இரண்டு முக்கிய வகை பங்களிப்புகள் "
 "உள்ளன:"
 
-#: ../usermanual/contributions.rst:25
+#: ../usermanual/contributions.rst:32
 msgid ""
 "the ones that extends a membership (a monthly or yearly membership for "
 "example),"
 msgstr "எடுத்துக்காட்டாக மாதாந்திர அல்லது வருடாந்திர உறுப்பினர் உறுப்பினரை நீட்டிக்கும்),,"
 
-#: ../usermanual/contributions.rst:26
+#: ../usermanual/contributions.rst:33
 msgid "the ones that do not extends membership, like donations."
 msgstr "நன்கொடைகள் போன்ற உறுப்பினர் எண்ணிக்கை இல்லை."
 
-#: ../usermanual/contributions.rst:28
+#: ../usermanual/contributions.rst:35
 msgid ""
 "Contribution types management allows you to define a label, and if it "
 "extends the membership or not."
@@ -117,16 +133,16 @@ msgstr ""
 "பங்களிப்பு வகைகள் மேலாண்மை ஒரு லேபிளை வரையறுக்க உங்களை அனுமதிக்கிறது, மேலும் அது "
 "உறுப்பினர் நீட்டித்தாலும் இல்லாவிட்டாலும்."
 
-#: ../usermanual/contributions.rst:30
+#: ../usermanual/contributions.rst:37
 msgid ""
 "See :ref:`contributions types <contributions_types_list>` to manage them."
 msgstr ""
 
-#: ../usermanual/contributions.rst:35
+#: ../usermanual/contributions.rst:42
 msgid "Reminders"
 msgstr "நினைவூட்டல்கள்"
 
-#: ../usermanual/contributions.rst:37
+#: ../usermanual/contributions.rst:44
 msgid ""
 "Emails models to remind due dates are available from the emails contents "
 "(\"Impending due date\" and \"Late due date\")."
@@ -134,7 +150,7 @@ msgstr ""
 "உரிய தேதிகளை நினைவூட்டுவதற்கான மின்னஞ்சல்கள் மாதிரிகள் மின்னஞ்சல்களின் "
 "உள்ளடக்கங்களிலிருந்து (\"வரவிருக்கும் தேதி\" மற்றும் \"தாமதமான தேதி\") கிடைக்கின்றன."
 
-#: ../usermanual/contributions.rst:39
+#: ../usermanual/contributions.rst:46
 msgid ""
 "The reminder button from the dashboard or the reminders entry of the menu "
 "will give you access to the reminders management interface."
@@ -142,23 +158,23 @@ msgstr ""
 "டாச்போர்டில் இருந்து நினைவூட்டல் பொத்தானை அல்லது மெனுவின் நினைவூட்டல் நுழைவு நினைவூட்டல் "
 "மேலாண்மை இடைமுகத்திற்கான அணுகலை உங்களுக்கு வழங்கும்."
 
-#: ../usermanual/contributions.rst:41
+#: ../usermanual/contributions.rst:48
 msgid "Reminders management interface"
 msgstr "நினைவூட்டல்கள் மேலாண்மை இடைமுகம்"
 
-#: ../usermanual/contributions.rst:46
+#: ../usermanual/contributions.rst:53
 msgid "Two categories can be selected:"
 msgstr "இரண்டு வகைகளைத் தேர்ந்தெடுக்கலாம்:"
 
-#: ../usermanual/contributions.rst:48
+#: ../usermanual/contributions.rst:55
 msgid "members whose due date is close,"
 msgstr "உரிய தேதி நெருக்கமாக இருக்கும் உறுப்பினர்கள்,"
 
-#: ../usermanual/contributions.rst:49
+#: ../usermanual/contributions.rst:56
 msgid "members whose due date is in the past."
 msgstr "கடந்த காலங்களில் உரிய தேதி இருந்த உறுப்பினர்கள்."
 
-#: ../usermanual/contributions.rst:51
+#: ../usermanual/contributions.rst:58
 msgid ""
 "Per default (this is currently not configurable), reminders are sent one "
 "month, then seven days before the due date; and then one and two months "
@@ -171,14 +187,14 @@ msgstr ""
 "நீங்கள் ஒருபோதும் எந்த நினைவூட்டலையும் அனுப்பவில்லை என்றால், பொருந்தக்கூடிய அனைத்து "
 "உறுப்பினர்களும் நினைவூட்டப்படுவார்கள்."
 
-#: ../usermanual/contributions.rst:53
+#: ../usermanual/contributions.rst:60
 msgid ""
 "Galette will tell you if some members do not have an email address, you can "
 "print labels for those ones."
 msgstr ""
 "சில உறுப்பினர்களுக்கு மின்னஞ்சல் முகவரி இல்லையென்றால், அவற்றுக்கான லேபிள்களை அச்சிடலாம்."
 
-#: ../usermanual/contributions.rst:57
+#: ../usermanual/contributions.rst:64
 msgid ""
 "Reminders obey the :ref:`sending limits <mail_throttling>`, following the "
 "very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly "
@@ -186,13 +202,13 @@ msgid ""
 "always were."
 msgstr ""
 
-#: ../usermanual/contributions.rst:59
+#: ../usermanual/contributions.rst:66
 msgid ""
 "Each reminder stays an individual message, written in the language of its "
 "recipient, either way. The quota counters are shared with mass mailings."
 msgstr ""
 
-#: ../usermanual/contributions.rst:61
+#: ../usermanual/contributions.rst:68
 #, fuzzy
 #| msgid ""
 #| "Finally, it is possible to automate reminders with a cron task which will "
@@ -213,18 +229,18 @@ msgstr ""
 "(ஃபெடோரா மற்றும் அதற்கு ஒத்ததாக, உங்கள் கணினி ஆவணங்களைப் பாருங்கள் a எவ்வாறு சேர்ப்பது "
 "என்பதை அறிய CRONTAB) பின்வரும் உள்ளடக்கத்துடன்:"
 
-#: ../usermanual/contributions.rst:67
+#: ../usermanual/contributions.rst:74
 msgid ""
 "The script queues the reminders that are due, then drains the queue itself, "
 "respecting the same limits. It stays silent unless something failed, so cron "
 "only writes to you when there is a reason to."
 msgstr ""
 
-#: ../usermanual/contributions.rst:70
+#: ../usermanual/contributions.rst:77
 msgid "Invoices and receipts"
 msgstr "விலைப்பட்டியல் மற்றும் ரசீதுகள்"
 
-#: ../usermanual/contributions.rst:72
+#: ../usermanual/contributions.rst:79
 msgid ""
 "In the contributions list, there is a PDF icon which is designed to generate "
 "invoice ou receipt for one contribution."
@@ -232,15 +248,15 @@ msgstr ""
 "பங்களிப்பு பட்டியலில், ஒரு PDF படவுரு உள்ளது, இது ஒரு பங்களிப்புக்காக விலைப்பட்டியல் OU "
 "ரசீதை உருவாக்க வடிவமைக்கப்பட்டுள்ளது."
 
-#: ../usermanual/contributions.rst:74
+#: ../usermanual/contributions.rst:81
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr "நீங்கள் PDF ஐப் பயன்படுத்தி தனிப்பயனாக்கலாம்: ref: `PDF மாதிரிகள் <pdf_models>`."
 
-#: ../usermanual/contributions.rst:79
+#: ../usermanual/contributions.rst:86
 msgid "Scheduled payments"
 msgstr "திட்டமிடப்பட்ட கொடுப்பனவுகள்"
 
-#: ../usermanual/contributions.rst:83
+#: ../usermanual/contributions.rst:90
 msgid ""
 "It is possible to dispatch a contribution among one or several scheduled "
 "payments. All you have to do is to select \"Scheduled payment\" as payment "
@@ -251,11 +267,11 @@ msgstr ""
 "வேண்டியதெல்லாம், உங்கள் பங்களிப்பில் கட்டண வகையாக \"திட்டமிடப்பட்ட கட்டணம்\" என்பதைத் "
 "தேர்ந்தெடுப்பதுதான்; இணைக்கப்பட்ட திட்டமிடப்பட்ட கட்டணத்தை உருவாக்க கேலட் உங்களை முன்மொழியும்."
 
-#: ../usermanual/contributions.rst:85
+#: ../usermanual/contributions.rst:92
 msgid "Add scheduled payment to a contribution"
 msgstr "பங்களிப்புக்கு திட்டமிடப்பட்ட கட்டணத்தைச் சேர்க்கவும்"
 
-#: ../usermanual/contributions.rst:90
+#: ../usermanual/contributions.rst:97
 msgid ""
 "By default, the entire remaining amount will be set into scheduled payment, "
 "but you can enter whatever you want. You can also select any payment type "
@@ -265,7 +281,7 @@ msgstr ""
 "விரும்பியதை உள்ளிடலாம். நீங்கள் எந்த கட்டண வகையையும் தேர்ந்தெடுக்கலாம் (திட்டமிடப்பட்ட கட்டணம் "
 "தவிர)."
 
-#: ../usermanual/contributions.rst:92
+#: ../usermanual/contributions.rst:99
 msgid ""
 "When you edit a contribution that already has attached scheduled payments, "
 "you can see a summary, and you can also see list of entries."
@@ -273,19 +289,19 @@ msgstr ""
 "ஏற்கனவே திட்டமிடப்பட்ட கொடுப்பனவுகளை இணைத்துள்ள பங்களிப்பை நீங்கள் திருத்தும்போது, நீங்கள் "
 "ஒரு சுருக்கத்தைக் காணலாம், மேலும் உள்ளீடுகளின் பட்டியலையும் நீங்கள் காணலாம்."
 
-#: ../usermanual/contributions.rst:94
+#: ../usermanual/contributions.rst:101
 msgid "Summary of scheduled payments"
 msgstr "திட்டமிடப்பட்ட கொடுப்பனவுகளின் சுருக்கம்"
 
-#: ../usermanual/contributions.rst:99
+#: ../usermanual/contributions.rst:106
 msgid "List of attached scheduled payments"
 msgstr "இணைக்கப்பட்ட திட்டமிடப்பட்ட கொடுப்பனவுகளின் பட்டியல்"
 
-#: ../usermanual/contributions.rst:105
+#: ../usermanual/contributions.rst:112
 msgid "Transactions"
 msgstr "பரிவர்த்தனைகள்"
 
-#: ../usermanual/contributions.rst:107
+#: ../usermanual/contributions.rst:114
 msgid ""
 "As seen in the example from this chapter introduction, a transaction is a "
 "global payment for a member."
@@ -293,31 +309,37 @@ msgstr ""
 "இந்த அத்தியாய அறிமுகத்திலிருந்து எடுத்துக்காட்டில் காணப்படுவது போல, ஒரு பரிவர்த்தனை "
 "என்பது ஒரு உறுப்பினருக்கான உலகளாவிய கட்டணமாகும்."
 
-#: ../usermanual/contributions.rst:109
+#: ../usermanual/contributions.rst:116
 msgid "Only a few information are required to add a new transaction:"
 msgstr "புதிய பரிவர்த்தனையைச் சேர்க்க சில தகவல்கள் மட்டுமே தேவை:"
 
-#: ../usermanual/contributions.rst:111
+#: ../usermanual/contributions.rst:118
 msgid "a description,"
 msgstr "ஒரு விளக்கம்,"
 
-#: ../usermanual/contributions.rst:112
+#: ../usermanual/contributions.rst:119
 msgid "the originator,"
 msgstr "தோற்றுவிப்பவர்,"
 
-#: ../usermanual/contributions.rst:113
+#: ../usermanual/contributions.rst:120
 msgid "the date (current date per default),"
 msgstr "தேதி (இயல்புநிலைக்கு தற்போதைய தேதி),"
 
-#: ../usermanual/contributions.rst:114
+#: ../usermanual/contributions.rst:121
 msgid "the amount."
 msgstr "தொகை."
 
-#: ../usermanual/contributions.rst:116
+#: ../usermanual/contributions.rst:123
+msgid ""
+"A payment type can also be set on the transaction; the cash, check or "
+"transfer that paid it, for example."
+msgstr ""
+
+#: ../usermanual/contributions.rst:125
 msgid "Transactions list"
 msgstr "பரிவர்த்தனை பட்டியல்"
 
-#: ../usermanual/contributions.rst:121
+#: ../usermanual/contributions.rst:130
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
 "transaction amount. A transaction has itself no effect on members due dates."
@@ -326,11 +348,11 @@ msgstr ""
 "அனுப்பப்படுகிறது. ஒரு பரிவர்த்தனை உறுப்பினர்களின் உரிய தேதிகளில் எந்த விளைவையும் "
 "ஏற்படுத்தாது."
 
-#: ../usermanual/contributions.rst:123
+#: ../usermanual/contributions.rst:132
 msgid "Add a transaction"
 msgstr "ஒரு பரிவர்த்தனை சேர்க்கவும்"
 
-#: ../usermanual/contributions.rst:128
+#: ../usermanual/contributions.rst:137
 msgid ""
 "After adding a new transaction, you will be redirected to a new contribution "
 "creation. If this new contribution does not dispatch the remaining amount of "
@@ -343,32 +365,32 @@ msgstr ""
 "அனுப்பவில்லை என்றால், இன்னொன்றை உருவாக்க கேலட் உங்களை முன்மொழியும். இயல்புநிலைக்கு, ஒரு "
 "பரிவர்த்தனையிலிருந்து புதிய பங்களிப்பின் அளவு பரிவர்த்தனையின் மீளக்கூடிய அளவாகும்."
 
-#: ../usermanual/contributions.rst:130
+#: ../usermanual/contributions.rst:139
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr "ஓரளவு அனுப்பப்பட்ட பரிவர்த்தனையுடன் இணைக்கப்பட்ட பங்களிப்பைச் சேர்க்கவும்"
 
-#: ../usermanual/contributions.rst:135
+#: ../usermanual/contributions.rst:144
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr "நிச்சயமாக, ஒரு பரிவர்த்தனையைத் திருத்தவும் முடியும்:"
 
-#: ../usermanual/contributions.rst:137
+#: ../usermanual/contributions.rst:146
 msgid "Transaction edition"
 msgstr "பரிவர்த்தனை பதிப்பு"
 
-#: ../usermanual/contributions.rst:142
+#: ../usermanual/contributions.rst:151
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
 msgstr "புதிய ஒன்றை உருவாக்குவதற்கு பதிலாக ஏற்கனவே இருக்கும் பங்களிப்பையும் இணைக்கலாம்."
 
-#: ../usermanual/contributions.rst:144
+#: ../usermanual/contributions.rst:153
 msgid "Add an already existing contribution to a transaction"
 msgstr "ஒரு பரிவர்த்தனைக்கு ஏற்கனவே இருக்கும் பங்களிப்பைச் சேர்க்கவும்"
 
-#: ../usermanual/contributions.rst:152
+#: ../usermanual/contributions.rst:161
 msgid "Members selection"
 msgstr "உறுப்பினர்கள் தேர்வு"
 
-#: ../usermanual/contributions.rst:156
+#: ../usermanual/contributions.rst:165
 msgid ""
 "The dropdown list to choose a member is available from contributions and "
 "transactions (as well as from several plugins) displays only a few members, "
@@ -378,11 +400,11 @@ msgstr ""
 "பரிவர்த்தனைகளிலிருந்து கிடைக்கிறது (அதே போல் பல செருகுநிரல்களிலிருந்தும்) செயல்திறன் "
 "காரணங்களுக்காக ஒரு சில உறுப்பினர்களை மட்டுமே காண்பிக்கும்."
 
-#: ../usermanual/contributions.rst:158
+#: ../usermanual/contributions.rst:167
 msgid "Dropdown members list"
 msgstr "கீழ்தோன்றும் உறுப்பினர்கள் பட்டியல்"
 
-#: ../usermanual/contributions.rst:162
+#: ../usermanual/contributions.rst:171
 msgid ""
 "You can display more members using arrow buttons or entering any text (this "
 "will search in first name, last name and identifiers)."
