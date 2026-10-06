@@ -32,7 +32,7 @@ Member cards
 
 The content and the look of the cards are set in the **Cards** tab of **Configuration**, then **Settings**: the texts printed on the card, the year or the end of membership, the colors used depending on the status of the member, the logo, the size of the cards...
 
-Members can also print their own card, from **My Account**, then **My information**, when **Allow members to print card ?** is checked in the same tab. They can only do it while their membership is up to date.
+Members can also print their own card, from **My Account**, then :ref:`My information <my_account_information>`, when **Allow members to print card ?** is checked in the same tab. They can only do it while their membership is up to date.
 
 Labels
 ======

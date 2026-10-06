@@ -80,7 +80,7 @@ Galette related parameters:
 * **Force member picture ratio**: resize and crop the pictures of the members to the selected ratio (square, portrait or landscape),
 * **Display the link to download the empty adhesion form**: display a link to the empty adhesion form on the public pages and on the registration form, for people who would rather fill it in on paper,
 * **Public pages enabled**: enable or disable public pages,
-* **Public pages visibility**: who can see each public page, or the **Default** visibility for the pages that are not listed, including the ones of plugins. Each page can be shown to **Everyone**, to **Up to date members**, to **Admin and staff only**, be **Hidden**, or **Inherit** the default,
+* **Public pages visibility**: who can see each public page, or the **Default** visibility for the pages that are not listed, including the ones of plugins. Each page can be shown to **Everyone**, to **Up to date members**, to **Admin and staff only**, be **Hidden**, or **Inherit** the default; see :ref:`public pages <man_public_pages>`,
 * **Include groups managers with staff?**: list the group managers on the public staff pages,
 
 * **Self registration enabled**: enable or disable self registration feature,
@@ -135,6 +135,8 @@ Define few extra rights:
    :scale: 50%
    :align: center
    :alt: Galette settings, rights tab
+
+.. _pref_email:
 
 E-Mail
 ======

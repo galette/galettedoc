@@ -135,9 +135,8 @@ This is a very frequent question; many would love to do that...
 
 Indeed, mail addresses must be unique in the database. It is a choice for the project on which several features are built:
 
-* lost password (since... always or almost),
-* login (since Galette 0.9),
-* ...
+* lost password,
+* login (since Galette 0.9).
 
 Making them non unique is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
 
@@ -151,7 +150,7 @@ This allows finally to use a unique email address for several members in databas
 I forgot my password, what now?
 ********************************
 
-On the login page, click on **Lost your password?**, type your username or your email address, and follow the link of the email you receive. The link works once, and for 24 hours.
+On the login page, click on **Lost your password?**, type your username or your email address, and follow the link of the email you receive. The link works once, and for 24 hours. See :ref:`forgotten or new password <my_account_password>`.
 
 No email? Check your spam folder. If your member card has no email address, ask a staff member of your association to fix it, or to change your password for you.
 
@@ -166,7 +165,7 @@ A member cannot log in anymore
 Check, in this order:
 
 #. **Is the account active?** An inactive account cannot log in. Open the member card, and check the **Account** field in the **Galette-related data** part.
-#. **Has the member been blocked after too many failures?** After several wrong passwords in a row, Galette refuses further attempts for 15 minutes, even with the right password. Go to **Configuration**, then **Authentication attempts**: the account is listed there if it is blocked, and **Lift** unblocks it at once.
+#. **Has the member been blocked after too many failures?** After several wrong passwords in a row, Galette refuses further attempts for 15 minutes, even with the right password. Go to **Configuration**, then **Authentication attempts**: the account is listed there if it is blocked, and **Lift** unblocks it at once. See :ref:`authentication attempts <auth_attempts>`.
 #. **Is the password right?** If in doubt, the member can ask for a new one with **Lost your password?** on the login page.
 #. **Does the member use two-factor authentication?** See :ref:`my two-factor authentication codes are refused <faq_2fa>`.
 
@@ -179,7 +178,7 @@ Emails sent by Galette never arrive
 Go to **Configuration**, then **Settings**, **E-Mail** tab:
 
 * check that an **Emailing method** is selected, and that the **Sender Email** is an address of your association,
-* click on **Test connection**, then on **Send a test email**, to your own address.
+* click on **Test connection**, then on **Send a test email**, to your own address; see :ref:`testing the settings <mail_tests>`.
 
 If the test email does not arrive either, check your spam folder, then ask your web host or your mail provider which settings to use: many of them require sending through their SMTP server, with a username and a password.
 
