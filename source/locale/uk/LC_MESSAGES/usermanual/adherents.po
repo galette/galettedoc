@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 06:50+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2025-10-21 08:39+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/doc-"
@@ -655,8 +655,15 @@ msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
 msgstr "Вибравши поля, натисніть кнопку `Зберегти нову модель`."
 
-# c72df9941cb444e79105459053e0ad14
 #: ../usermanual/adherents.rst:231
+msgid ""
+"Dynamic fields of the members can be imported as well, except file fields. "
+"A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
+"a field with no limit gets 10 columns."
+msgstr ""
+
+# c72df9941cb444e79105459053e0ad14
+#: ../usermanual/adherents.rst:233
 msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
@@ -667,12 +674,12 @@ msgstr ""
 "змінити модель, якщо хочете, або видалити її, щоб повернути типову модель."
 
 # d4b3193315fd4768821fae95b7883e7b
-#: ../usermanual/adherents.rst:234
+#: ../usermanual/adherents.rst:236
 msgid "Import"
 msgstr "Імпорт"
 
 # 7f2c81a7a84242b29ff995171f20d185
-#: ../usermanual/adherents.rst:236
+#: ../usermanual/adherents.rst:238
 #, fuzzy
 #| msgid ""
 #| "Once you have retrieved and fill the empty file, you have to send it "
@@ -691,7 +698,7 @@ msgstr ""
 "не перевищує щонайбільший розмір файлу (типово 2 Мб у PHP)."
 
 # 56153cccf8ca44d5aeecf2506d060ef2
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:242
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -702,7 +709,7 @@ msgstr ""
 "кілька невеликих файлів, які можна імпортувати по одному."
 
 # dcabc844bade4b2481bfc37f9a91d55e
-#: ../usermanual/adherents.rst:242
+#: ../usermanual/adherents.rst:244
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -710,12 +717,12 @@ msgstr ""
 "Надіслані файли перелічені в розділі `Наявні файли`. Ви можете відобразити, "
 "видалити або імпортувати їх:"
 
-#: ../usermanual/adherents.rst:244
+#: ../usermanual/adherents.rst:246
 msgid "Select and import file"
 msgstr "Вибрати файл імпорту"
 
 # e88f3904d8654eabaf2aea335a22e2dc
-#: ../usermanual/adherents.rst:249
+#: ../usermanual/adherents.rst:251
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -726,7 +733,7 @@ msgstr ""
 "даних правильне тощо) без збереження чого-небудь в базі даних."
 
 # 8abd4ece23a14f4eaa31a824640112de
-#: ../usermanual/adherents.rst:251
+#: ../usermanual/adherents.rst:253
 msgid ""
 "When you import a CSV file, if one line is incorrect, previous ones may be "
 "stored in the database already; so it is advised to use the dry-run before "
@@ -737,7 +744,7 @@ msgstr ""
 "щоб виправити помилку."
 
 # 0f34549a281f49629338ea78f9575288
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:255
 #, fuzzy
 #| msgid ""
 #| "You will have error messages than something went wrong (in dry-run mode "
@@ -750,7 +757,7 @@ msgstr ""
 "спробного прогону чи не в ньому):"
 
 # 107346bc7fad4bbe92de8b41c7223bf5
-#: ../usermanual/adherents.rst:257
+#: ../usermanual/adherents.rst:259
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -761,12 +768,12 @@ msgstr ""
 "в конфігурації Galette, не перераховано у вашій моделі імпорту."
 
 # aac09ca89fbb40d49d8bac722afd755f
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:264
 msgid "Links between members"
 msgstr "Посилання між членами"
 
 # d112e53ef88145ce91bc5216faa050d0
-#: ../usermanual/adherents.rst:266
+#: ../usermanual/adherents.rst:268
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -778,7 +785,7 @@ msgstr ""
 "до батьківських - від дочірнього."
 
 # 4fe4c4d7a78844469832350645ca8b8b
-#: ../usermanual/adherents.rst:268
+#: ../usermanual/adherents.rst:270
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -787,7 +794,7 @@ msgstr ""
 "стати батьком."
 
 # eafd9a8411d748bf94aaa776fff6450c
-#: ../usermanual/adherents.rst:270
+#: ../usermanual/adherents.rst:272
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -802,7 +809,7 @@ msgstr ""
 "небудь відомості відсутні, вони будуть отримані від батька."
 
 # 1562502f406a40bc88bc9c819c671100
-#: ../usermanual/adherents.rst:272
+#: ../usermanual/adherents.rst:274
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -810,11 +817,11 @@ msgstr ""
 "Члени без адреси е-пошти не можуть скористатися функцією \"відновити "
 "пароль\". Це не впливає на обмеження єдності е-пошти в базі даних."
 
-#: ../usermanual/adherents.rst:277
+#: ../usermanual/adherents.rst:279
 msgid "Resetting a second factor"
 msgstr ""
 
-#: ../usermanual/adherents.rst:281
+#: ../usermanual/adherents.rst:283
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -823,7 +830,7 @@ msgid ""
 "member logs in with their password alone until they enrol again."
 msgstr ""
 
-#: ../usermanual/adherents.rst:283
+#: ../usermanual/adherents.rst:285
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -832,7 +839,7 @@ msgid ""
 "only the super administrator can."
 msgstr ""
 
-#: ../usermanual/adherents.rst:287
+#: ../usermanual/adherents.rst:289
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -841,12 +848,12 @@ msgid ""
 msgstr ""
 
 # 223e5cf58e9a4d5ba43063bb9c04959a
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:292
 msgid "Impersonating"
 msgstr "Видавання себе за іншого"
 
 # bb0f420d1f604de1b8cd064e390f2a6d
-#: ../usermanual/adherents.rst:294
+#: ../usermanual/adherents.rst:296
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -857,7 +864,7 @@ msgstr ""
 "облікові дані, надіслані по незахищеній е-пошті, чого слід уникати."
 
 # a8ed88e12f534928933fcd5ab047b5a1
-#: ../usermanual/adherents.rst:296
+#: ../usermanual/adherents.rst:298
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
