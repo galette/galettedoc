@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -184,7 +184,15 @@ msgstr "`பூலியன்`: ஒரு தேர்வுப்பெட்�
 msgid "`file`: add files."
 msgstr "`file`: கோப்புகளைச் சேர்க்கவும்."
 
-#: ../usermanual/configuration.rst:69
+#: ../usermanual/configuration.rst:65
+msgid ""
+"Dynamic fields can be added to the members, contributions and transactions "
+"forms, and to the :ref:`preferences <man_preferences>`. Go to "
+"**Configuration**, then **Dynamic fields**, pick the form, and click on "
+"**Add**."
+msgstr ""
+
+#: ../usermanual/configuration.rst:71
 msgid ""
 "Dynamic date fields used to be stored using logged-in user locale format; "
 "which causes issues trying to make searches. Now, every date is stored using "
@@ -194,7 +202,7 @@ msgstr ""
 "தேடல்களைச் செய்ய முயற்சிக்கும் சிக்கல்களை ஏற்படுத்துகிறது. இப்போது, ஒவ்வொரு தேதியும் `Y-m-"
 "d` வடிவமைப்பைப் பயன்படுத்தி சேமிக்கப்படுகிறது."
 
-#: ../usermanual/configuration.rst:71
+#: ../usermanual/configuration.rst:73
 msgid ""
 "If you were using dynamic date fields, you will have to :ref:`update your "
 "data using the related admin tool <admintools>` (⚠️ make sure to backup your "
@@ -204,29 +212,29 @@ msgstr ""
 "<admintools>` (⚠️ உங்கள் தரவுத்தளத்தை காப்புப் பிரதி எடுக்கவும்! ⚠️) தொடர்புடைய நிர்வாகக் "
 "கருவியைப் பயன்படுத்தி உங்கள் தரவை :ref:` புதுப்பிக்க வேண்டும்."
 
-#: ../usermanual/configuration.rst:73
+#: ../usermanual/configuration.rst:75
 msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
 "புதிய புலத்தை உருவாக்கும் போது (அல்லது ஏற்கனவே உள்ள ஒன்றைத் திருத்தும்போது); உங்களால் "
 "முடியும்:"
 
-#: ../usermanual/configuration.rst:75
+#: ../usermanual/configuration.rst:77
 msgid "mark it as required,"
 msgstr "தேவைக்கேற்ப குறிக்கவும்,"
 
-#: ../usermanual/configuration.rst:76
+#: ../usermanual/configuration.rst:78
 msgid "define access rights, the same as for core fields,"
 msgstr "அணுகல் உரிமைகளை வரையறுக்கவும், முக்கிய புலங்களைப் போலவே,"
 
-#: ../usermanual/configuration.rst:77
+#: ../usermanual/configuration.rst:79
 msgid "add extra information to help users."
 msgstr "பயனர்களுக்கு உதவ கூடுதல் தகவல்களைச் சேர்க்கவும்."
 
-#: ../usermanual/configuration.rst:79
+#: ../usermanual/configuration.rst:81
 msgid "A dynamic field"
 msgstr "ஒரு மாறும் புலம்"
 
-#: ../usermanual/configuration.rst:84
+#: ../usermanual/configuration.rst:86
 msgid ""
 "Some field types like separators, dates and booleans, does not need any "
 "extra information; for others:"
@@ -234,47 +242,47 @@ msgstr ""
 "பிரிப்பான்கள், தேதிகள் மற்றும் பூலியன்கள் போன்ற சில புல வகைகளுக்கு கூடுதல் செய்தி எதுவும் "
 "தேவையில்லை; மற்றவர்களுக்கு:"
 
-#: ../usermanual/configuration.rst:86
+#: ../usermanual/configuration.rst:88
 msgid "`free text`:"
 msgstr "`இலவச உரை`:"
 
-#: ../usermanual/configuration.rst:88
+#: ../usermanual/configuration.rst:90
 msgid "`width`: define number of columns,"
 msgstr "`அகலம்`: நெடுவரிசைகளின் எண்ணிக்கையை வரையறுக்கவும்,"
 
-#: ../usermanual/configuration.rst:89
+#: ../usermanual/configuration.rst:91
 msgid "`height`: define number of rows."
 msgstr "`உயரம்`: வரிசைகளின் எண்ணிக்கையை வரையறுக்கவும்."
 
-#: ../usermanual/configuration.rst:91
+#: ../usermanual/configuration.rst:93
 msgid "`single line`:"
 msgstr "`ஒற்றை வரி`:"
 
-#: ../usermanual/configuration.rst:93
+#: ../usermanual/configuration.rst:95
 msgid "`width`: field width,"
 msgstr "`அகலம்`: புல அகலம்,"
 
-#: ../usermanual/configuration.rst:94
+#: ../usermanual/configuration.rst:96
 msgid "`size`: number of characters,"
 msgstr "`அளவு`: எழுத்துகளின் எண்ணிக்கை,"
 
-#: ../usermanual/configuration.rst:95
+#: ../usermanual/configuration.rst:97
 msgid "`repeat`: number of possible occurrences."
 msgstr "`மீண்டும்`: சாத்தியமான நிகழ்வுகளின் எண்ணிக்கை."
 
-#: ../usermanual/configuration.rst:97
+#: ../usermanual/configuration.rst:99
 msgid "`choice`:"
 msgstr "`தேர்வு`:"
 
-#: ../usermanual/configuration.rst:99
+#: ../usermanual/configuration.rst:101
 msgid "`values`: possible values for the dropdown."
 msgstr "`மதிப்புகள்`: கீழ்தோன்றும் சாத்தியமான மதிப்புகள்."
 
-#: ../usermanual/configuration.rst:101
+#: ../usermanual/configuration.rst:103
 msgid "`file`:"
 msgstr "`கோப்பு`:"
 
-#: ../usermanual/configuration.rst:103
+#: ../usermanual/configuration.rst:105
 msgid ""
 "`size`: maximum file size, in KiB (this size is limited to the one for the "
 "PHP configuration)."
@@ -282,11 +290,78 @@ msgstr ""
 "`size`: அதிகபட்ச கோப்பு அளவு, கியோவில் (இந்த அளவு பிஎச்பி உள்ளமைவுக்கு "
 "வரம்பிடப்பட்டுள்ளது)."
 
-#: ../usermanual/configuration.rst:106
+#: ../usermanual/configuration.rst:107
+msgid "Fields that hold a value also accept:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:109
+msgid "**Min Size**: for single line fields, the minimum number of characters,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:110
+msgid ""
+"**Information**: a help text displayed along with the field; check **Display "
+"information above input** to display it above the field rather than under it,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:111
+msgid ""
+"**Width in forms**: whether the field takes the full width of the form, or "
+"half of it."
+msgstr ""
+
+#: ../usermanual/configuration.rst:115
+#, fuzzy
+#| msgid ""
+#| "`read/write` will make the field readable and writeable for member, "
+#| "groups managers, staff members and administrators,"
+msgid ""
+"The **Permissions** of a new field are set to **Inaccessible**: choose who "
+"can see or fill in the field, members, group managers, staff members or "
+"administrators."
+msgstr ""
+"`படிக்க/எழுது` என்பது புலத்தை உறுப்பினர், குழு மேலாளர், பணியாளர்கள் மற்றும் நிர்வாகிகள் "
+"படிக்கக்கூடியதாகவும் எழுதக்கூடியதாகவும் மாற்றும்,"
+
+#: ../usermanual/configuration.rst:120
+msgid "Repeatable fields"
+msgstr ""
+
+#: ../usermanual/configuration.rst:124
+msgid ""
+"Choice, date and file fields can be repeated too, not only single line "
+"fields."
+msgstr ""
+
+#: ../usermanual/configuration.rst:126
+msgid ""
+"Single line, choice, date and file fields can hold several values; several "
+"phone numbers, for example. Set the **Repeat** option to the maximum number "
+"of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for "
+"a field that holds a single value."
+msgstr ""
+
+#: ../usermanual/configuration.rst:128
+#, fuzzy
+#| msgid "A dynamic field"
+msgid "A repeatable dynamic field"
+msgstr "ஒரு மாறும் புலம்"
+
+#: ../usermanual/configuration.rst:133
+msgid ""
+"On the form, the field is displayed once, with an **Add** button and the "
+"number of values that can still be added. Each click adds one more value."
+msgstr ""
+
+#: ../usermanual/configuration.rst:135
+msgid "A repeatable dynamic field on the member form"
+msgstr ""
+
+#: ../usermanual/configuration.rst:141
 msgid "Labels translation"
 msgstr "லேபிள்கள் மொழிபெயர்ப்பு"
 
-#: ../usermanual/configuration.rst:108
+#: ../usermanual/configuration.rst:143
 msgid ""
 "Galette handle several languages, but when you add a new dynamic field, "
 "there is only one value possible. Galette proposes an interface to translate "
@@ -296,17 +371,27 @@ msgstr ""
 "சேர்க்கும்போது, ஒரே ஒரு மதிப்பு மட்டுமே சாத்தியமாகும். கிடைக்கக்கூடிய ஒவ்வொரு "
 "மொழியிலும் அந்த லேபிள்களை மொழிபெயர்க்க ஒரு இடைமுகத்தை கேலட் முன்மொழிகிறது."
 
-#: ../usermanual/configuration.rst:110
+#: ../usermanual/configuration.rst:145
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
 "ஒவ்வொரு புதிய லேபிளும் தற்போதைய Galette lang உடன் சேர்க்கப்படும் என்பதை நினைவில் "
 "கொள்ளவும்."
 
-#: ../usermanual/configuration.rst:113
+#: ../usermanual/configuration.rst:147
+msgid ""
+"Go to **Configuration**, then **Labels translation**, select the label, and "
+"type its translation in each language. The labels are the names of the "
+"dynamic fields, but also the other texts you typed yourself and that can be "
+"translated: statuses, contribution types, payment types... The **Translate "
+"labels** icon of those lists, and the **Translate** links of the "
+"preferences, lead to the same page."
+msgstr ""
+
+#: ../usermanual/configuration.rst:152
 msgid "Emails contents"
 msgstr "மின்னஞ்சல்கள் உள்ளடக்கம்"
 
-#: ../usermanual/configuration.rst:115
+#: ../usermanual/configuration.rst:154
 msgid ""
 "Depending on your configuration (see preferences), administrative emails "
 "cans be sent to users and/or administrators, when you add a new member or a "
@@ -316,11 +401,11 @@ msgstr ""
 "புதிய பங்களிப்பைச் சேர்க்கும்போது அல்லது இழந்த கடவுச்சொல் அம்சத்திலிருந்து பயனர்கள் மற்றும்/"
 "அல்லது நிர்வாகிகளுக்கு நிர்வாக மின்னஞ்சல்கள் அனுப்பப்படும்."
 
-#: ../usermanual/configuration.rst:117
+#: ../usermanual/configuration.rst:156
 msgid "Defaults are provided, but you can change them."
 msgstr "இயல்புநிலைகள் வழங்கப்படுகின்றன, ஆனால் நீங்கள் அவற்றை மாற்றலாம்."
 
-#: ../usermanual/configuration.rst:119
+#: ../usermanual/configuration.rst:158
 msgid ""
 "It is important to note that those texts contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -330,22 +415,22 @@ msgstr ""
 "உள்ளன என்பதைக் கவனத்தில் கொள்ள வேண்டும். அனுப்புவதில் சிக்கல்களை ஏற்படுத்தக்கூடிய அவற்றில் "
 "எதையும் மறந்துவிடாமல் கவனமாக இருங்கள்."
 
-#: ../usermanual/configuration.rst:121
+#: ../usermanual/configuration.rst:160
 msgid "Edit mail send to a new member in french"
 msgstr "பிரஞ்சு மொழியில் புதிய உறுப்பினருக்கு அனுப்பும் மின்னஞ்சலைத் திருத்தவும்"
 
-#: ../usermanual/configuration.rst:126
+#: ../usermanual/configuration.rst:165
 msgid "An email will be send to member when:"
 msgstr "உறுப்பினருக்கு மின்னஞ்சல் அனுப்பப்படும் போது:"
 
-#: ../usermanual/configuration.rst:128
+#: ../usermanual/configuration.rst:167
 #, fuzzy
 #| msgid "he self subscribes. This mail contains authentication information,"
 msgid ""
 "they register on their own. This mail contains authentication information,"
 msgstr "அவர் சுயமாக சந்தா செலுத்துகிறார். இந்த மின்னஞ்சலில் அங்கீகாரத் செய்தி உள்ளது,"
 
-#: ../usermanual/configuration.rst:129
+#: ../usermanual/configuration.rst:168
 #, fuzzy
 #| msgid ""
 #| "his card is added or edited by someone else (if the corresponding box is "
@@ -357,13 +442,13 @@ msgstr ""
 "அவருடைய அட்டை வேறொருவரால் சேர்க்கப்பட்டது அல்லது திருத்தப்பட்டது (தொடர்புடைய பெட்டி "
 "சரிபார்க்கப்பட்டால்),"
 
-#: ../usermanual/configuration.rst:130
+#: ../usermanual/configuration.rst:169
 #, fuzzy
 #| msgid "he uses lost password feature,"
 msgid "they use the lost password feature,"
 msgstr "அவர் இழந்த கடவுச்சொல் அம்சத்தைப் பயன்படுத்துகிறார்,"
 
-#: ../usermanual/configuration.rst:131
+#: ../usermanual/configuration.rst:170
 #, fuzzy
 #| msgid ""
 #| "a new contribution is attache to his account (if the corresponding box is "
@@ -375,23 +460,23 @@ msgstr ""
 "அவரது கணக்கில் ஒரு புதிய பங்களிப்பு இணைக்கப்பட்டுள்ளது (தொடர்புடைய பெட்டி "
 "சரிபார்க்கப்பட்டால்)."
 
-#: ../usermanual/configuration.rst:133
+#: ../usermanual/configuration.rst:172
 msgid "An email will be send to administrators when:"
 msgstr "நிர்வாகிகளுக்கு மின்னஞ்சல் அனுப்பப்படும் போது:"
 
-#: ../usermanual/configuration.rst:135
+#: ../usermanual/configuration.rst:174
 #, fuzzy
 #| msgid "a new member is added or self subscribes,"
 msgid "a new member is added or registers on their own,"
 msgstr "ஒரு புதிய உறுப்பினர் சேர்க்கப்படுகிறார் அல்லது தன்வய குழுசேர்கிறார்,"
 
-#: ../usermanual/configuration.rst:136
+#: ../usermanual/configuration.rst:175
 #, fuzzy
 #| msgid "a new contribution is attached to his account."
 msgid "a new contribution is attached to a member account."
 msgstr "அவரது கணக்கில் ஒரு புதிய பங்களிப்பு இணைக்கப்பட்டுள்ளது."
 
-#: ../usermanual/configuration.rst:138
+#: ../usermanual/configuration.rst:177
 #, fuzzy
 #| msgid ""
 #| "Of course, emails will be sent only if Galette configuration allows it "
@@ -412,7 +497,7 @@ msgstr ""
 "இடைமுகத்திலிருந்து ஒரு தேர்வுப்பெட்டியில் நிபந்தனைக்குட்பட்டது, எப்போதும் அனுப்பப்படும் "
 "தன்வய சந்தா செய்திகளைத் தவிர."
 
-#: ../usermanual/configuration.rst:140
+#: ../usermanual/configuration.rst:179
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "
