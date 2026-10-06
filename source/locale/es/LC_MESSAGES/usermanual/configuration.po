@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2026-03-20 10:09+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -215,7 +215,15 @@ msgstr "`boolean`: una casilla,"
 msgid "`file`: add files."
 msgstr "`file`: añadir archivos."
 
-#: ../usermanual/configuration.rst:69
+#: ../usermanual/configuration.rst:65
+msgid ""
+"Dynamic fields can be added to the members, contributions and transactions "
+"forms, and to the :ref:`preferences <man_preferences>`. Go to "
+"**Configuration**, then **Dynamic fields**, pick the form, and click on "
+"**Add**."
+msgstr ""
+
+#: ../usermanual/configuration.rst:71
 msgid ""
 "Dynamic date fields used to be stored using logged-in user locale format; "
 "which causes issues trying to make searches. Now, every date is stored using "
@@ -225,7 +233,7 @@ msgstr ""
 "en formato local de usuario; el cual causa conflictos intentando realizar "
 "búsquedas. Ahoa, cada fecha es almacenada utilizando el formato `Y-m-d`."
 
-#: ../usermanual/configuration.rst:71
+#: ../usermanual/configuration.rst:73
 msgid ""
 "If you were using dynamic date fields, you will have to :ref:`update your "
 "data using the related admin tool <admintools>` (⚠️ make sure to backup your "
@@ -236,32 +244,32 @@ msgstr ""
 "base de datos antes! ⚠️)."
 
 # 28e22ecda0fa4956a5f2d5a0be009d24
-#: ../usermanual/configuration.rst:73
+#: ../usermanual/configuration.rst:75
 msgid "While creating a new field (or editing an existing one); you also can:"
 msgstr ""
 "Al crear un nuevo campo (o al editar uno ya existente); también puedes:"
 
 # 24e96bec0a9948f4bf6d5463cfbdeba9
-#: ../usermanual/configuration.rst:75
+#: ../usermanual/configuration.rst:77
 msgid "mark it as required,"
 msgstr "marcarlo como obligatorio,"
 
-#: ../usermanual/configuration.rst:76
+#: ../usermanual/configuration.rst:78
 msgid "define access rights, the same as for core fields,"
 msgstr ""
 "definir los permisos de acceso, lo mismo que para los campos principales,"
 
-#: ../usermanual/configuration.rst:77
+#: ../usermanual/configuration.rst:79
 msgid "add extra information to help users."
 msgstr "añadir información adicional para ayudar a los usuarios."
 
 # 770dc3a97fff41479c0733ad1b11a34b
-#: ../usermanual/configuration.rst:79
+#: ../usermanual/configuration.rst:81
 msgid "A dynamic field"
 msgstr "Campo dinámico"
 
 # c2a8e9c503c34594b0b994269ed6a2ca
-#: ../usermanual/configuration.rst:84
+#: ../usermanual/configuration.rst:86
 msgid ""
 "Some field types like separators, dates and booleans, does not need any "
 "extra information; for others:"
@@ -270,57 +278,57 @@ msgstr ""
 "necesitan información adicional; en cambio otros:"
 
 # ee1155f5a34c49519f491dd5d08c83c9
-#: ../usermanual/configuration.rst:86
+#: ../usermanual/configuration.rst:88
 msgid "`free text`:"
 msgstr "`free text`:"
 
 # 2f7e975d89d9495497a3a9cbd0dae3f9
-#: ../usermanual/configuration.rst:88
+#: ../usermanual/configuration.rst:90
 msgid "`width`: define number of columns,"
 msgstr "`width`: define el número de columnas,"
 
 # f5cf36548c8a4aafb5c301dc4dbc0f70
-#: ../usermanual/configuration.rst:89
+#: ../usermanual/configuration.rst:91
 msgid "`height`: define number of rows."
 msgstr "`height`: define el número de filas."
 
 # 1c54d15dfd6a4f8791e21deb728b3397
-#: ../usermanual/configuration.rst:91
+#: ../usermanual/configuration.rst:93
 msgid "`single line`:"
 msgstr "`single line`:"
 
 # 06cbb5a053354c0f900ba15f367330c1
-#: ../usermanual/configuration.rst:93
+#: ../usermanual/configuration.rst:95
 msgid "`width`: field width,"
 msgstr "`width`: ancho del campo,"
 
 # 8d2abbf694b945f9beb1fe8b5aa25067
-#: ../usermanual/configuration.rst:94
+#: ../usermanual/configuration.rst:96
 msgid "`size`: number of characters,"
 msgstr "`size`: número de caracteres,"
 
 # 69cf7521b12e4e8c8de485c112f96b44
-#: ../usermanual/configuration.rst:95
+#: ../usermanual/configuration.rst:97
 msgid "`repeat`: number of possible occurrences."
 msgstr "`repeat`: número de posibles ocurrencias."
 
 # d3b90562c1244a27987b4e6e13b6ddef
-#: ../usermanual/configuration.rst:97
+#: ../usermanual/configuration.rst:99
 msgid "`choice`:"
 msgstr "`choice`:"
 
 # 7f8e29e61eda4f2ab9e0f527498fbd31
-#: ../usermanual/configuration.rst:99
+#: ../usermanual/configuration.rst:101
 msgid "`values`: possible values for the dropdown."
 msgstr "`values`: posibles valores para la lista desplegable."
 
 # b20f3ccac5b5414eb86d5a041068dc8e
-#: ../usermanual/configuration.rst:101
+#: ../usermanual/configuration.rst:103
 msgid "`file`:"
 msgstr "`file`:"
 
 # 2e8493c271c145689bded08db1544894
-#: ../usermanual/configuration.rst:103
+#: ../usermanual/configuration.rst:105
 msgid ""
 "`size`: maximum file size, in KiB (this size is limited to the one for the "
 "PHP configuration)."
@@ -328,13 +336,82 @@ msgstr ""
 "`size`: tamaño máximo del archivo, en Kio (este tamaño está limitado por una "
 "de las configuraciones de PHP)."
 
+#: ../usermanual/configuration.rst:107
+msgid "Fields that hold a value also accept:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:109
+msgid "**Min Size**: for single line fields, the minimum number of characters,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:110
+msgid ""
+"**Information**: a help text displayed along with the field; check **Display "
+"information above input** to display it above the field rather than under it,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:111
+msgid ""
+"**Width in forms**: whether the field takes the full width of the form, or "
+"half of it."
+msgstr ""
+
+# b0fedf50b759408698e5c3a54a84e468
+#: ../usermanual/configuration.rst:115
+#, fuzzy
+#| msgid ""
+#| "`read/write` will make the field readable and writeable for member, "
+#| "groups managers, staff members and administrators,"
+msgid ""
+"The **Permissions** of a new field are set to **Inaccessible**: choose who "
+"can see or fill in the field, members, group managers, staff members or "
+"administrators."
+msgstr ""
+"`read/write` hará que el campo se pueda leer y escribir por los miembros, "
+"administradores de grupos, personal interno y administradores,"
+
+#: ../usermanual/configuration.rst:120
+msgid "Repeatable fields"
+msgstr ""
+
+#: ../usermanual/configuration.rst:124
+msgid ""
+"Choice, date and file fields can be repeated too, not only single line "
+"fields."
+msgstr ""
+
+#: ../usermanual/configuration.rst:126
+msgid ""
+"Single line, choice, date and file fields can hold several values; several "
+"phone numbers, for example. Set the **Repeat** option to the maximum number "
+"of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for "
+"a field that holds a single value."
+msgstr ""
+
+# 770dc3a97fff41479c0733ad1b11a34b
+#: ../usermanual/configuration.rst:128
+#, fuzzy
+#| msgid "A dynamic field"
+msgid "A repeatable dynamic field"
+msgstr "Campo dinámico"
+
+#: ../usermanual/configuration.rst:133
+msgid ""
+"On the form, the field is displayed once, with an **Add** button and the "
+"number of values that can still be added. Each click adds one more value."
+msgstr ""
+
+#: ../usermanual/configuration.rst:135
+msgid "A repeatable dynamic field on the member form"
+msgstr ""
+
 # f51eeb223a8f4595a99822ce74de6a87
-#: ../usermanual/configuration.rst:106
+#: ../usermanual/configuration.rst:141
 msgid "Labels translation"
 msgstr "Traducción de etiquetas"
 
 # 620b32d302854c5a96be42e6b06b7c98
-#: ../usermanual/configuration.rst:108
+#: ../usermanual/configuration.rst:143
 msgid ""
 "Galette handle several languages, but when you add a new dynamic field, "
 "there is only one value possible. Galette proposes an interface to translate "
@@ -345,19 +422,29 @@ msgstr ""
 "etiquetas en cada idioma disponible."
 
 # 4d650efaef58446fab30ecec68d6edd9
-#: ../usermanual/configuration.rst:110
+#: ../usermanual/configuration.rst:145
 msgid "Note that each new label will be added with current Galette lang."
 msgstr ""
 "Ten en cuenta que cada nueva etiqueta se añadirá con el idioma actual de "
 "Galette."
 
+#: ../usermanual/configuration.rst:147
+msgid ""
+"Go to **Configuration**, then **Labels translation**, select the label, and "
+"type its translation in each language. The labels are the names of the "
+"dynamic fields, but also the other texts you typed yourself and that can be "
+"translated: statuses, contribution types, payment types... The **Translate "
+"labels** icon of those lists, and the **Translate** links of the "
+"preferences, lead to the same page."
+msgstr ""
+
 # ec0d959f0d9a45338b595867f8aae014
-#: ../usermanual/configuration.rst:113
+#: ../usermanual/configuration.rst:152
 msgid "Emails contents"
 msgstr "Contenidos de los correos electrónicos"
 
 # a00ccb772d3d4676ba56bcba5e0cf028
-#: ../usermanual/configuration.rst:115
+#: ../usermanual/configuration.rst:154
 msgid ""
 "Depending on your configuration (see preferences), administrative emails "
 "cans be sent to users and/or administrators, when you add a new member or a "
@@ -369,12 +456,12 @@ msgstr ""
 "contraseña por ejemplo."
 
 # 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
-#: ../usermanual/configuration.rst:117
+#: ../usermanual/configuration.rst:156
 msgid "Defaults are provided, but you can change them."
 msgstr "Se suministran por defecto, pero los puedes cambiar."
 
 # 1eaf6d3b865c494287de03399e0997d0
-#: ../usermanual/configuration.rst:119
+#: ../usermanual/configuration.rst:158
 msgid ""
 "It is important to note that those texts contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -384,18 +471,18 @@ msgstr ""
 "tipo ``{VARIABLE}`` - que serán reemplazadas automáticamente al enviarse. "
 "Ten cuidado de no olvidarte ninguna de ellas, ya que podría causar problemas."
 
-#: ../usermanual/configuration.rst:121
+#: ../usermanual/configuration.rst:160
 msgid "Edit mail send to a new member in french"
 msgstr ""
 "Editar el correo electrónico que se envía a un nuevo miembro en francés"
 
 # e141fe73bcf64b9fb2143f92c6a4e4b9
-#: ../usermanual/configuration.rst:126
+#: ../usermanual/configuration.rst:165
 msgid "An email will be send to member when:"
 msgstr "Se enviará un correo electrónico al miembro cuando:"
 
 # 6cbe0fd53f9a4290a57412e635a6792d
-#: ../usermanual/configuration.rst:128
+#: ../usermanual/configuration.rst:167
 #, fuzzy
 #| msgid "he self subscribes. This mail contains authentication information,"
 msgid ""
@@ -405,7 +492,7 @@ msgstr ""
 "autenticación,"
 
 # 7801258e9e8248de9fbd6a88fb385ad6
-#: ../usermanual/configuration.rst:129
+#: ../usermanual/configuration.rst:168
 #, fuzzy
 #| msgid ""
 #| "his card is added or edited by someone else (if the corresponding box is "
@@ -418,14 +505,14 @@ msgstr ""
 "está marcada),"
 
 # f402746f081b4cc192495855ad5e5793
-#: ../usermanual/configuration.rst:130
+#: ../usermanual/configuration.rst:169
 #, fuzzy
 #| msgid "he uses lost password feature,"
 msgid "they use the lost password feature,"
 msgstr "utilice la función para recuperar la contraseña,"
 
 # ae45becfa53547a284ff4e1e1e677f45
-#: ../usermanual/configuration.rst:131
+#: ../usermanual/configuration.rst:170
 #, fuzzy
 #| msgid ""
 #| "a new contribution is attache to his account (if the corresponding box is "
@@ -438,26 +525,26 @@ msgstr ""
 "está marcada)."
 
 # 257887c09acd4057a73575c1e5ccd646
-#: ../usermanual/configuration.rst:133
+#: ../usermanual/configuration.rst:172
 msgid "An email will be send to administrators when:"
 msgstr "Se enviará un correo electrónico a los administradores cuando:"
 
 # d9470aa131bd46ad91fae1bde7def2a2
-#: ../usermanual/configuration.rst:135
+#: ../usermanual/configuration.rst:174
 #, fuzzy
 #| msgid "a new member is added or self subscribes,"
 msgid "a new member is added or registers on their own,"
 msgstr "se añada un miembro o se suscriba por sí mismo,"
 
 # f06dbb209abf42e9a4b8250a25550317
-#: ../usermanual/configuration.rst:136
+#: ../usermanual/configuration.rst:175
 #, fuzzy
 #| msgid "a new contribution is attached to his account."
 msgid "a new contribution is attached to a member account."
 msgstr "se adjunte una nueva contribución a su cuenta."
 
 # bdf33e0f5b0f4e2bb55dda5cb26056bb
-#: ../usermanual/configuration.rst:138
+#: ../usermanual/configuration.rst:177
 #, fuzzy
 #| msgid ""
 #| "Of course, emails will be sent only if Galette configuration allows it "
@@ -480,7 +567,7 @@ msgstr ""
 "mensajes de suscripción propia, que siempre se envían."
 
 # 196630f591274913a30590a46917363c
-#: ../usermanual/configuration.rst:140
+#: ../usermanual/configuration.rst:179
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "
