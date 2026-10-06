@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2026-09-18 15:44+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -101,6 +101,13 @@ msgstr ""
 
 #: ../usermanual/pdf_models.rst:34
 msgid ""
+"``{ASSO_LOGO}`` inserts the logo of the association, and ``{ASSO_PRINT_LOGO}"
+"`` the logo for printing set in the **Cards** tab of the preferences, which "
+"is often better suited to paper."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:36
+msgid ""
 "Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
 "file, and not displaying a page in a recent browser; there are many "
 "limitations."
@@ -109,19 +116,19 @@ msgstr ""
 "datoteko PDF in ne prikazujemo strani v novejšem brskalniku; obstaja veliko "
 "omejitev."
 
-#: ../usermanual/pdf_models.rst:37
+#: ../usermanual/pdf_models.rst:39
 msgid "Invoices and receipts"
 msgstr "Računi in potrdila"
 
-#: ../usermanual/pdf_models.rst:39
+#: ../usermanual/pdf_models.rst:41
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr "Vzorca računov in potrdil sta enaka, razen naslovov."
 
-#: ../usermanual/pdf_models.rst:41
+#: ../usermanual/pdf_models.rst:43
 msgid "Invoice PDF model"
 msgstr "Model računa v PDF obliki"
 
-#: ../usermanual/pdf_models.rst:46
+#: ../usermanual/pdf_models.rst:48
 msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
@@ -130,11 +137,11 @@ msgstr ""
 "nobenih slogov glave, noge ali CSS, temveč se uporabljajo tisti iz modela "
 "`Global`."
 
-#: ../usermanual/pdf_models.rst:49
+#: ../usermanual/pdf_models.rst:51
 msgid "Membership form"
 msgstr "Obrazec za članstvo"
 
-#: ../usermanual/pdf_models.rst:51
+#: ../usermanual/pdf_models.rst:53
 msgid ""
 "It is a model that can be used to print a membership form. It can be empty "
 "(to print some of them for any event for example) or filled with one member "
@@ -144,7 +151,7 @@ msgstr ""
 "Lahko je prazen (na primer za tiskanje nekaterih obrazcev za kateri koli "
 "dogodek) ali pa izpolnjen s podatki o enem članu."
 
-#: ../usermanual/pdf_models.rst:53
+#: ../usermanual/pdf_models.rst:55
 msgid ""
 "Since there are many limitation, you may use the `FullCard plugin <https://"
 "galette-plugins.github.io/plugin-fullcard/>`_ that will replace this model. "

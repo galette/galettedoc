@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
+"POT-Creation-Date: 2026-10-06 07:30+0200\n"
 "PO-Revision-Date: 2025-12-11 13:00+0000\n"
 "Last-Translator: Sisitenr <sisiton2019@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -88,41 +88,48 @@ msgstr ""
 
 #: ../usermanual/pdf_models.rst:34
 msgid ""
+"``{ASSO_LOGO}`` inserts the logo of the association, and ``{ASSO_PRINT_LOGO}"
+"`` the logo for printing set in the **Cards** tab of the preferences, which "
+"is often better suited to paper."
+msgstr ""
+
+#: ../usermanual/pdf_models.rst:36
+msgid ""
 "Models rely on HTML and CSS styles, but keep in mind we are building a PDF "
 "file, and not displaying a page in a recent browser; there are many "
 "limitations."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:37
+#: ../usermanual/pdf_models.rst:39
 msgid "Invoices and receipts"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:39
+#: ../usermanual/pdf_models.rst:41
 msgid "Invoice and receipt models are the same, excepting their titles."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:41
+#: ../usermanual/pdf_models.rst:43
 msgid "Invoice PDF model"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:46
+#: ../usermanual/pdf_models.rst:48
 msgid ""
 "As you can see in the above screenshot, invoice model does not define any "
 "header, footer or CSS styles, the ones form the `Global` model are used."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:49
+#: ../usermanual/pdf_models.rst:51
 msgid "Membership form"
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:51
+#: ../usermanual/pdf_models.rst:53
 msgid ""
 "It is a model that can be used to print a membership form. It can be empty "
 "(to print some of them for any event for example) or filled with one member "
 "information."
 msgstr ""
 
-#: ../usermanual/pdf_models.rst:53
+#: ../usermanual/pdf_models.rst:55
 msgid ""
 "Since there are many limitation, you may use the `FullCard plugin <https://"
 "galette-plugins.github.io/plugin-fullcard/>`_ that will replace this model. "
