@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:30+0200\n"
+"POT-Creation-Date: 2026-10-06 10:35+0200\n"
 "PO-Revision-Date: 2026-05-02 12:10+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -74,64 +74,107 @@ msgstr ""
 "அனைத்து தகவல்களுடனும் (கடவுச்சொற்களைத் தவிர) பக்கம் மீண்டும் ஏற்றப்படும்."
 
 #: ../usermanual/adherents.rst:30
+msgid "Picture"
+msgstr ""
+
+#: ../usermanual/adherents.rst:32
+msgid ""
+"A picture can be added to each member card, in JPEG, PNG, GIF or WebP "
+"format. When **Force member picture ratio** is checked in "
+"the :ref:`preferences <man_preferences>`, pictures are resized and cropped "
+"to the chosen ratio; the **Cropping focus** option of the form tells which "
+"part of the picture to keep."
+msgstr ""
+
+#: ../usermanual/adherents.rst:35
+msgid "Duplicate, remove"
+msgstr ""
+
+#: ../usermanual/adherents.rst:37
+msgid ""
+"From a member card, **Duplicate** opens the form of a new member, filled in "
+"with the information of the current one; useful for members of a same family "
+"or a same company."
+msgstr ""
+
+#: ../usermanual/adherents.rst:39
+msgid ""
+"Members can be removed one by one from the actions of the list, or several "
+"at once from the **For the selection:** menu."
+msgstr ""
+
+#: ../usermanual/adherents.rst:43
+msgid ""
+"Removing a member also removes their picture, contributions, transactions, "
+"reminders and dynamic fields values, and removes them from their groups. "
+"This cannot be undone. To keep the history of your association, you may "
+"rather set the account as inactive."
+msgstr ""
+
+#: ../usermanual/adherents.rst:46
 msgid "Members list"
 msgstr "உறுப்பினர்கள் பட்டியல்"
 
-#: ../usermanual/adherents.rst:32
+#: ../usermanual/adherents.rst:48
 msgid "Members list allows you to:"
 msgstr "உறுப்பினர்கள் பட்டியல் உங்களை அனுமதிக்கிறது:"
 
-#: ../usermanual/adherents.rst:34
+#: ../usermanual/adherents.rst:50
 msgid "filter and order members,"
 msgstr "உறுப்பினர்களை வடிகட்டி ஆர்டர் செய்யுங்கள்,"
 
-#: ../usermanual/adherents.rst:35
+#: ../usermanual/adherents.rst:51
 msgid "display members card,"
 msgstr "காட்சி உறுப்பினர்களின் அட்டை,"
 
-#: ../usermanual/adherents.rst:36
+#: ../usermanual/adherents.rst:52
 msgid "removals,"
 msgstr "நீக்குதல்,"
 
-#: ../usermanual/adherents.rst:37
+#: ../usermanual/adherents.rst:53
 msgid "send mailings,"
 msgstr "அஞ்சல்களை அனுப்பவும்,"
 
-#: ../usermanual/adherents.rst:38
+#: ../usermanual/adherents.rst:54
 msgid "generate PDF labels,"
 msgstr "PDF லேபிள்களை உருவாக்குங்கள்,"
 
-#: ../usermanual/adherents.rst:39
+#: ../usermanual/adherents.rst:55
 msgid "generate PDF attendance sheets,"
 msgstr "PDF வருகை தாள்களை உருவாக்குங்கள்,"
 
-#: ../usermanual/adherents.rst:40
+#: ../usermanual/adherents.rst:56
 msgid "generate PDF members cards,"
 msgstr "PDF உறுப்பினர்களின் அட்டைகளை உருவாக்குங்கள்,"
 
-#: ../usermanual/adherents.rst:41
+#: ../usermanual/adherents.rst:57
 msgid "CSV exports,"
 msgstr "சி.எச்.வி ஏற்றுமதி,"
 
-#: ../usermanual/adherents.rst:42
+#: ../usermanual/adherents.rst:58
 msgid "mass changes."
 msgstr "வெகுசன மாற்றங்கள்."
 
-#: ../usermanual/adherents.rst:44
+#: ../usermanual/adherents.rst:60
+#, fuzzy
+#| msgid ""
+#| "Each possible action per member is grouped at the end of the line, "
+#| "actions designed to be applied on a selection are at the bottom of the "
+#| "list. Plugins may add entries in both cases."
 msgid ""
 "Each possible action per member is grouped at the end of the line, actions "
-"designed to be applied on a selection are at the bottom of the list. Plugins "
-"may add entries in both cases."
+"designed to be applied on a selection are in the **For the selection:** menu "
+"above the list. Plugins may add entries in both cases."
 msgstr ""
 "ஒரு உறுப்பினருக்கு சாத்தியமான ஒவ்வொரு செயலும் வரியின் முடிவில் தொகுக்கப்பட்டுள்ளது, ஒரு "
 "தேர்வில் பயன்படுத்த வடிவமைக்கப்பட்ட நடவடிக்கைகள் பட்டியலின் கீழே உள்ளன. செருகுநிரல்கள் "
 "இரண்டு நிகழ்வுகளிலும் உள்ளீடுகளைச் சேர்க்கலாம்."
 
-#: ../usermanual/adherents.rst:47
+#: ../usermanual/adherents.rst:63
 msgid "Filter and select members"
 msgstr "உறுப்பினர்களை வடிகட்டி தேர்ந்தெடுக்கவும்"
 
-#: ../usermanual/adherents.rst:49
+#: ../usermanual/adherents.rst:65
 msgid ""
 "Filtering members list is documented in :ref:`search section "
 "<search_galette>`. All possibilities can be used with actions on selection."
@@ -139,19 +182,19 @@ msgstr ""
 "வடிகட்டுதல் உறுப்பினர்கள் பட்டியல் ஆவணப்படுத்தப்பட்டுள்ளது: குறிப்பு: `தேடல் பிரிவு "
 "<தேடல்_கலெட்>`. அனைத்து சாத்தியக்கூறுகளும் தேர்வுக்கான செயல்களுடன் பயன்படுத்தப்படலாம்."
 
-#: ../usermanual/adherents.rst:54
+#: ../usermanual/adherents.rst:70
 msgid "Mass changes"
 msgstr "வெகுசன மாற்றங்கள்"
 
-#: ../usermanual/adherents.rst:58
+#: ../usermanual/adherents.rst:74
 msgid "Members selected in list can be edited (partially) at once."
 msgstr "பட்டியலில் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களை ஒரே நேரத்தில் (ஓரளவு) திருத்தலாம்."
 
-#: ../usermanual/adherents.rst:60
+#: ../usermanual/adherents.rst:76
 msgid "Mass change selected members"
 msgstr "வெகுசன மாற்றம் தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்கள்"
 
-#: ../usermanual/adherents.rst:65
+#: ../usermanual/adherents.rst:81
 msgid ""
 "Only fields with a checked checkbox at the beginning of the line will be "
 "changed. A summary will be displayed."
@@ -159,39 +202,46 @@ msgstr ""
 "வரியின் தொடக்கத்தில் சரிபார்க்கப்பட்ட தேர்வுப்பெட்டியைக் கொண்ட புலங்கள் மட்டுமே மாற்றப்படும். "
 "ஒரு சுருக்கம் காண்பிக்கப்படும்."
 
-#: ../usermanual/adherents.rst:67
+#: ../usermanual/adherents.rst:83
 msgid "Summary of changes"
 msgstr "மாற்றங்களின் சுருக்கம்"
 
-#: ../usermanual/adherents.rst:73
+#: ../usermanual/adherents.rst:89
 msgid "Ordering"
 msgstr "வரிசைப்படுத்துதல்"
 
-#: ../usermanual/adherents.rst:74
+#: ../usermanual/adherents.rst:90
 msgid "It is possible to order members list on following fields:"
 msgstr "பின்வரும் துறைகளில் உறுப்பினர்கள் பட்டியலை ஆர்டர் செய்ய முடியும்:"
 
-#: ../usermanual/adherents.rst:76
+#: ../usermanual/adherents.rst:92
 msgid "name,"
 msgstr "பெயர்,"
 
-#: ../usermanual/adherents.rst:77
+#: ../usermanual/adherents.rst:93
 msgid "nickname,"
 msgstr "புனைப்பெயர்,"
 
-#: ../usermanual/adherents.rst:78
+#: ../usermanual/adherents.rst:94
 msgid "status,"
 msgstr "நிலை,"
 
-#: ../usermanual/adherents.rst:79
+#: ../usermanual/adherents.rst:95
 msgid "contribution status,"
 msgstr "பங்களிப்பு நிலை,"
 
-#: ../usermanual/adherents.rst:80
+#: ../usermanual/adherents.rst:96
 msgid "modification date."
 msgstr "மாற்றும் தேதி."
 
-#: ../usermanual/adherents.rst:82
+#: ../usermanual/adherents.rst:98
+msgid ""
+"In the list, a green icon identifies **sponsors**: the members who made a "
+"donation during the current period. The **Show legend** link explains all "
+"the icons of the list."
+msgstr ""
+
+#: ../usermanual/adherents.rst:100
 msgid ""
 "Most of the times, the result is transparent. Just note ordering on `status` "
 "will use status priority and ordering on `contribution status` will use "
@@ -202,11 +252,11 @@ msgstr ""
 "வரிசைப்படுத்துவது உருவாக்கும் தேதி, பங்களிப்பு விலக்கு மற்றும் உரிய தேதியைப் "
 "பயன்படுத்தும்;"
 
-#: ../usermanual/adherents.rst:85
+#: ../usermanual/adherents.rst:105
 msgid "Configure CSV fields"
 msgstr "காபிம புலங்களை உள்ளமைக்கவும்"
 
-#: ../usermanual/adherents.rst:87
+#: ../usermanual/adherents.rst:107
 msgid ""
 "Per default, CSV export for a members selection will provide same fields as "
 "the ones that are displayed on screen. It is possible to change this "
@@ -222,17 +272,17 @@ msgstr ""
 "நீங்கள் அடையாளங்காட்டி, முதல் மற்றும் கடைசி உறுப்பினர் பெயர்களை மட்டுமே விரும்பினால், "
 "கோப்பின் உள்ளடக்கம்:"
 
-#: ../usermanual/adherents.rst:99
+#: ../usermanual/adherents.rst:119
 msgid "E-Mailing"
 msgstr "மின்னஞ்சல்"
 
-#: ../usermanual/adherents.rst:101
+#: ../usermanual/adherents.rst:121
 msgid "**Mailings in Galette are designed to work from the members list.**"
 msgstr ""
 "** கேலட்டில் உள்ள அஞ்சல்கள் உறுப்பினர்கள் பட்டியலிலிருந்து வேலை செய்ய வடிவமைக்கப்பட்டுள்ளன. "
 "**"
 
-#: ../usermanual/adherents.rst:103
+#: ../usermanual/adherents.rst:123
 msgid ""
 "Direct mailing creation will work without problems, but members selection is "
 "harder."
@@ -240,7 +290,7 @@ msgstr ""
 "நேரடி அஞ்சல் உருவாக்கம் சிக்கல்கள் இல்லாமல் செயல்படும், ஆனால் உறுப்பினர்களின் தேர்வு "
 "கடினமானது."
 
-#: ../usermanual/adherents.rst:105
+#: ../usermanual/adherents.rst:125
 msgid ""
 "From Galette, you can send mailings to a selection of members. Each sent "
 "mailing is stored in order to be reused, so you can select a stored mailing "
@@ -252,23 +302,29 @@ msgstr ""
 "பயன்படுத்த சேமிக்கப்பட்ட அஞ்சலைத் தேர்ந்தெடுக்கலாம், தேர்ந்தெடுக்கப்பட்ட உறுப்பினர்களின் "
 "பட்டியல், அஞ்சல் பொருள் மற்றும் உள்ளடக்கங்களை மீட்டெடுக்கிறது."
 
-#: ../usermanual/adherents.rst:107
+#: ../usermanual/adherents.rst:127
+#, fuzzy
+#| msgid ""
+#| "To send a new mailing, select members from the list and then use the "
+#| "`Send an email` button at the bottom of the list. If some of selected "
+#| "members does not have an email address, Galette will propose you to print "
+#| "corresponding labels."
 msgid ""
-"To send a new mailing, select members from the list and then use the `Send "
-"an email` button at the bottom of the list. If some of selected members does "
-"not have an email address, Galette will propose you to print corresponding "
-"labels."
+"To send a new mailing, select members from the list and then choose **Mail** "
+"in the **For the selection:** menu above the list. If some of selected "
+"members does not have an email address, Galette will propose you to print "
+"corresponding labels."
 msgstr ""
 "ஒரு புதிய அஞ்சலை அனுப்ப, பட்டியலிலிருந்து உறுப்பினர்களைத் தேர்ந்தெடுத்து, பட்டியலின் கீழே "
 "`ஒரு மின்னஞ்சல் அனுப்பவும்` பொத்தானைப் பயன்படுத்தவும். தேர்ந்தெடுக்கப்பட்ட சில "
 "உறுப்பினர்களுக்கு மின்னஞ்சல் முகவரி இல்லையென்றால், தொடர்புடைய லேபிள்களை அச்சிட கேலட் "
 "உங்களை முன்மொழியும்."
 
-#: ../usermanual/adherents.rst:109
+#: ../usermanual/adherents.rst:129
 msgid "Selected members for mailing"
 msgstr "அஞ்சல் அனுப்பப்பட்ட உறுப்பினர்கள்"
 
-#: ../usermanual/adherents.rst:114
+#: ../usermanual/adherents.rst:134
 msgid ""
 "Selecting members in the list must be done on one page only. Filtering "
 "features, as well as the possibility to display all members will be useful ;)"
@@ -277,11 +333,11 @@ msgstr ""
 "அம்சங்களை வடிகட்டுதல், அத்துடன் அனைத்து உறுப்பினர்களையும் காண்பிப்பதற்கான சாத்தியமும் "
 "பயனுள்ளதாக இருக்கும்;)"
 
-#: ../usermanual/adherents.rst:118
+#: ../usermanual/adherents.rst:138
 msgid "You can choose a sender for each mailing:"
 msgstr "ஒவ்வொரு அஞ்சலுக்கும் அனுப்புநரை நீங்கள் தேர்வு செய்யலாம்:"
 
-#: ../usermanual/adherents.rst:120
+#: ../usermanual/adherents.rst:140
 msgid ""
 "**from Galette preferences** (default value): this will use information "
 "stored in preferences,"
@@ -289,7 +345,7 @@ msgstr ""
 "** கேலட் விருப்பங்களிலிருந்து ** (இயல்புநிலை மதிப்பு): இது விருப்பங்களில் சேமிக்கப்பட்ட "
 "தகவல்களைப் பயன்படுத்தும்,"
 
-#: ../usermanual/adherents.rst:121
+#: ../usermanual/adherents.rst:141
 msgid ""
 "**current logged-in user**: will use the name and the email of the current "
 "logged-in user (not available for super admin),"
@@ -297,15 +353,15 @@ msgstr ""
 "** தற்போதைய உள்நுழைந்த பயனர் **: தற்போதைய உள்நுழைந்த பயனரின் பெயர் மற்றும் மின்னஞ்சலைப் "
 "பயன்படுத்தும் (சூப்பர் நிர்வாகிக்கு கிடைக்கவில்லை),"
 
-#: ../usermanual/adherents.rst:122
+#: ../usermanual/adherents.rst:142
 msgid "**other**: you can set any name and email address you want."
 msgstr "** பிற **: நீங்கள் விரும்பும் எந்த பெயரையும் மின்னஞ்சல் முகவரியையும் அமைக்கலாம்."
 
-#: ../usermanual/adherents.rst:124
+#: ../usermanual/adherents.rst:144
 msgid "Sender selection"
 msgstr "அனுப்புநர் தேர்வு"
 
-#: ../usermanual/adherents.rst:129
+#: ../usermanual/adherents.rst:149
 msgid ""
 "Once the subject has been filled, you can work on the contents. You can send "
 "email in text only, or in HTML (keep in mind sending HTML messages by mail "
@@ -316,7 +372,7 @@ msgstr ""
 "கொள்ளுங்கள் பெரும்பாலும் செல்ல வழி அல்ல). ஒரு எளிய உஉகுமொ WYSIWYG எடிட்டர் "
 "வழங்கப்படுகிறது."
 
-#: ../usermanual/adherents.rst:131
+#: ../usermanual/adherents.rst:151
 msgid ""
 "Once the HTML editor is enabled, the checkbox to handle HTML tags is "
 "automatically checked, remember to check the box if you do not use the "
@@ -326,7 +382,7 @@ msgstr ""
 "தானாகவே சரிபார்க்கப்படும், நீங்கள் எடிட்டரைப் பயன்படுத்தாவிட்டால், ஆனால் உஉகுமொ ஐ அனுப்ப "
 "விரும்பினால் பெட்டியை சரிபார்க்க நினைவில் கொள்ளுங்கள்!"
 
-#: ../usermanual/adherents.rst:133
+#: ../usermanual/adherents.rst:153
 msgid ""
 "Even if Galette is able to send HTML emails, this is discouraged. Messages "
 "length will be way larger (for almost nothing), and some (like me!) read "
@@ -338,7 +394,7 @@ msgstr ""
 "மின்னஞ்சல்களை உரையாக மட்டுமே படிக்கின்றன. அதனால்தான் கேலட் ** எப்போதும் ** உஉகுமொ "
 "மின்னஞ்சல்களின் உரை பதிப்பை வழங்கும்."
 
-#: ../usermanual/adherents.rst:135
+#: ../usermanual/adherents.rst:155
 msgid ""
 "It is also possible to add attachements, just click on the `Browse` button "
 "in that attachements section. If your browser is compatible, you can add "
@@ -352,22 +408,22 @@ msgstr ""
 "அடையாளங்காட்டியுடன் பெயரிடப்பட்ட ஒரு கோப்பகத்தின் கீழ் வட்டில் சேமிக்கப்படுகின்றன "
 "(தரவுத்தளத்திலிருந்து தானாக வரையறுக்கப்படுகிறது)."
 
-#: ../usermanual/adherents.rst:138
+#: ../usermanual/adherents.rst:158
 msgid ""
 "Each attachment has a maximum size of its own, which you can :ref:`change "
 "from the advanced configuration <upload_sizes>` page."
 msgstr ""
 
-#: ../usermanual/adherents.rst:140
+#: ../usermanual/adherents.rst:160
 msgid "`Preview` button let you preview your message before sending it."
 msgstr ""
 "`முன்னோட்டம்` பொத்தான் உங்கள் செய்தியை அனுப்புவதற்கு முன் அதை முன்னோட்டமிட அனுமதிக்கிறது."
 
-#: ../usermanual/adherents.rst:142
+#: ../usermanual/adherents.rst:162
 msgid "Preview message"
 msgstr "முன்னோட்ட செய்தி"
 
-#: ../usermanual/adherents.rst:147
+#: ../usermanual/adherents.rst:167
 msgid ""
 "Any started emailings will be stored in your session to be retrieved in the "
 "future. An icon will be displayed in pages titles when a mailing is progress "
@@ -377,7 +433,7 @@ msgstr ""
 "அஞ்சல் முன்னேறும்போது பக்கங்களின் தலைப்புகளில் ஒரு படவுரு காண்பிக்கப்படும், மேலும் அதற்குச் "
 "செல்ல ஒரு இணைப்பை வழங்கும்."
 
-#: ../usermanual/adherents.rst:149
+#: ../usermanual/adherents.rst:169
 msgid ""
 "If you want, you can cancel this mailing using the `Cancel mailing` button, "
 "it will be deleted from your session. If you want to store it for a longer "
@@ -389,36 +445,36 @@ msgstr ""
 "`சேமி` பொத்தானைச் சேர்க்கலாம். பின்னர் அது அஞ்சல் பட்டியலில் சேமிக்கப்படும், பின்னர் நீங்கள் "
 "அதைப் பிடிக்க முடியும்."
 
-#: ../usermanual/adherents.rst:154
+#: ../usermanual/adherents.rst:174
 #, fuzzy
 #| msgid "send mailings,"
 msgid "Sending large mailings"
 msgstr "அஞ்சல்களை அனுப்பவும்,"
 
-#: ../usermanual/adherents.rst:158
+#: ../usermanual/adherents.rst:178
 msgid ""
 "By default, a mailing is a single message, sent right away, carrying every "
 "recipient in blind copy - but mail servers restrict what one message may "
 "carry, and how fast you may send."
 msgstr ""
 
-#: ../usermanual/adherents.rst:162
+#: ../usermanual/adherents.rst:182
 msgid ""
 "Using your \"personal\" SMTP provider is often not a good idea; dedicated "
 "services are better suited for large mailings."
 msgstr ""
 
-#: ../usermanual/adherents.rst:164
+#: ../usermanual/adherents.rst:184
 msgid "And you even may have limits on a dedicated service."
 msgstr ""
 
-#: ../usermanual/adherents.rst:166
+#: ../usermanual/adherents.rst:186
 msgid ""
 "Galette :ref:`sending limits <mail_throttling>` changes what happens once "
 "you confirm the sending:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:168
+#: ../usermanual/adherents.rst:188
 msgid ""
 "with a **batch size** set, Galette splits the recipients into several "
 "messages of at most that size, and waits the configured delay between two of "
@@ -426,25 +482,25 @@ msgid ""
 "left,"
 msgstr ""
 
-#: ../usermanual/adherents.rst:169
+#: ../usermanual/adherents.rst:189
 msgid ""
 "with an **hourly or daily limit** set, sending cannot be done in one go any "
 "more. Galette stores the mailing, queues one entry per recipient, and takes "
 "you to a progress page."
 msgstr ""
 
-#: ../usermanual/adherents.rst:171
+#: ../usermanual/adherents.rst:191
 msgid ""
 "The progress page sends the mailing batch after batch and shows how far it "
 "is: recipients sent, remaining and failed, and what the quota has consumed "
 "so far. Leave it open until it announces the mailing has been sent."
 msgstr ""
 
-#: ../usermanual/adherents.rst:173
+#: ../usermanual/adherents.rst:193
 msgid "A mailing being sent, halfway through its queue"
 msgstr ""
 
-#: ../usermanual/adherents.rst:178
+#: ../usermanual/adherents.rst:198
 msgid ""
 "Nothing is lost if you close it, or if the quota runs out before the end: "
 "the queue is stored in database. The page then tells you sending will resume "
@@ -453,24 +509,24 @@ msgid ""
 "<mailing_queue_cron>`."
 msgstr ""
 
-#: ../usermanual/adherents.rst:182
+#: ../usermanual/adherents.rst:202
 msgid ""
 "The progress page is the only thing a queued mailing *needs*. Galette "
 "proposes alternative methods to :ref:`drain the mail queue "
 "<mailing_queue_cron>` we really recommends ;-)"
 msgstr ""
 
-#: ../usermanual/adherents.rst:184
+#: ../usermanual/adherents.rst:204
 msgid ""
 "A queued mailing is stored in the history right away, and only counts as "
 "**sent** once its last recipient has left the queue."
 msgstr ""
 
-#: ../usermanual/adherents.rst:187
+#: ../usermanual/adherents.rst:207
 msgid "Mailings history"
 msgstr "அஞ்சல் வரலாறு"
 
-#: ../usermanual/adherents.rst:189
+#: ../usermanual/adherents.rst:209
 msgid ""
 "When you start a mailing, it is stored into your session. Session ends when "
 "users log out, or on a server defined timeout. Mailing history stores the "
@@ -482,7 +538,7 @@ msgstr ""
 "வரலாறு தரவுத்தளத்தில் அஞ்சலை சேமிக்கிறது, இது எதிர்காலத்தில் எப்போதும் கிடைக்கும் என்பதை "
 "இது உறுதி செய்கிறது."
 
-#: ../usermanual/adherents.rst:191
+#: ../usermanual/adherents.rst:211
 msgid ""
 "Every sent mailing is stored into the database, and can be used as a "
 "template to write a new one. In this case, a new mailing will be created "
@@ -492,7 +548,7 @@ msgstr ""
 "ஒரு வார்ப்புருவாக பயன்படுத்தலாம். இந்த விசயத்தில், வரலாற்றிலிருந்து தகவல்களைப் பயன்படுத்தி "
 "ஒரு புதிய அஞ்சல் உருவாக்கப்படும், மேலும் அசல் ஒன்று வைக்கப்படும்."
 
-#: ../usermanual/adherents.rst:193
+#: ../usermanual/adherents.rst:213
 msgid ""
 "Mailings can be stored before they are sent. In this case, it is possible to "
 "continue it later. When you use history on a draft mailing, original entry "
@@ -502,38 +558,38 @@ msgstr ""
 "முடியும். வரைவு அஞ்சலில் நீங்கள் வரலாற்றைப் பயன்படுத்தும்போது, அனுப்பும் போது அசல் நுழைவு "
 "மாற்றப்படும்."
 
-#: ../usermanual/adherents.rst:195
+#: ../usermanual/adherents.rst:215
 msgid ""
 "When you use an existing history entry, here are the information that will "
 "be used:"
 msgstr ""
 "நீங்கள் ஏற்கனவே உள்ள வரலாற்று உள்ளீட்டைப் பயன்படுத்தும்போது, பயன்படுத்தப்படும் தகவல்கள் இங்கே:"
 
-#: ../usermanual/adherents.rst:197
+#: ../usermanual/adherents.rst:217
 msgid "recipients,"
 msgstr "பெறுநர்கள்,"
 
-#: ../usermanual/adherents.rst:198
+#: ../usermanual/adherents.rst:218
 msgid "attachements,"
 msgstr "இணைப்புகள்,"
 
-#: ../usermanual/adherents.rst:199
+#: ../usermanual/adherents.rst:219
 msgid "subject,"
 msgstr "பொருள்,"
 
-#: ../usermanual/adherents.rst:200
+#: ../usermanual/adherents.rst:220
 msgid "message,"
 msgstr "செய்தி,"
 
-#: ../usermanual/adherents.rst:201
+#: ../usermanual/adherents.rst:221
 msgid "html/text flag."
 msgstr "HTML/உரை கொடி."
 
-#: ../usermanual/adherents.rst:206
+#: ../usermanual/adherents.rst:226
 msgid "CSV imports"
 msgstr "சி.எச்.வி இறக்குமதி"
 
-#: ../usermanual/adherents.rst:208
+#: ../usermanual/adherents.rst:228
 msgid ""
 "It is possible to import member data from a predefined model. A default "
 "model is provided, but you can configure it to suits your needs, using the "
@@ -543,11 +599,11 @@ msgstr ""
 "இயல்புநிலை மாதிரி வழங்கப்படுகிறது, ஆனால் `இறக்குமதி` பட்டியல் உள்ளீட்டைப் பயன்படுத்தி "
 "உங்கள் தேவைகளுக்கு ஏற்றவாறு அதை உள்ளமைக்கலாம்."
 
-#: ../usermanual/adherents.rst:211
+#: ../usermanual/adherents.rst:231
 msgid "Model"
 msgstr "மாதிரியுரு"
 
-#: ../usermanual/adherents.rst:213
+#: ../usermanual/adherents.rst:233
 msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
 "current model will be used to check your CSV file integrity."
@@ -556,15 +612,15 @@ msgstr ""
 "இறக்குமதி செய்யும் போது, உங்கள் காபிம கோப்பு ஒருமைப்பாட்டை சரிபார்க்க தற்போதைய மாதிரி "
 "பயன்படுத்தப்படும்."
 
-#: ../usermanual/adherents.rst:215
+#: ../usermanual/adherents.rst:235
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr "மாதிரியை உள்ளமைக்க, இடைமுகம் இலிருந்து `உள்ளமைவு` பொத்தானைக் சொடுக்கு செய்க."
 
-#: ../usermanual/adherents.rst:217
+#: ../usermanual/adherents.rst:237
 msgid "Default import model"
 msgstr "இயல்புநிலை இறக்குமதி மாதிரி"
 
-#: ../usermanual/adherents.rst:222
+#: ../usermanual/adherents.rst:242
 msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
 "fields:"
@@ -572,23 +628,23 @@ msgstr ""
 "முன்மொழியப்பட்ட மாதிரி உங்களுக்கு சரியில்லை என்றால், `திருத்து மாடலை` என்பதைக் சொடுக்கு "
 "செய்து உங்கள் புலங்களைத் தேர்வுசெய்க:"
 
-#: ../usermanual/adherents.rst:224
+#: ../usermanual/adherents.rst:244
 msgid "Import model configuration"
 msgstr "மாதிரி உள்ளமைவை இறக்குமதி செய்யுங்கள்"
 
-#: ../usermanual/adherents.rst:229
+#: ../usermanual/adherents.rst:249
 msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
 msgstr "உங்கள் புலங்களைத் தேர்ந்தெடுத்ததும், `புதிய மாடல்` பொத்தானைக் சொடுக்கு செய்க."
 
-#: ../usermanual/adherents.rst:231
+#: ../usermanual/adherents.rst:251
 msgid ""
 "Dynamic fields of the members can be imported as well, except file fields. "
 "A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
 "a field with no limit gets 10 columns."
 msgstr ""
 
-#: ../usermanual/adherents.rst:233
+#: ../usermanual/adherents.rst:253
 msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
@@ -598,11 +654,11 @@ msgstr ""
 "ஆகியவற்றிலிருந்து வெற்று மாதிரியை பதிவிறக்கம் செய்யலாம். நிச்சயமாக, நீங்கள் விரும்பினால் "
 "மாதிரியை மாற்றலாம் அல்லது இயல்புநிலை மாதிரியை திரும்பப் பெற அதை அகற்றலாம்."
 
-#: ../usermanual/adherents.rst:236
+#: ../usermanual/adherents.rst:256
 msgid "Import"
 msgstr "இறக்குமதி"
 
-#: ../usermanual/adherents.rst:238
+#: ../usermanual/adherents.rst:258
 #, fuzzy
 #| msgid ""
 #| "Once you have retrieved and fill the empty file, you have to send it "
@@ -620,7 +676,7 @@ msgstr ""
 "`` txt``) என்பதை கலெட் சரிபார்க்கும், மேலும் அதன் அளவு அதிகபட்ச பதிவேற்ற கோப்பு அளவை "
 "விட அதிகமாக இருக்காது (PHP இல் இயல்புநிலைக்கு 2mio)."
 
-#: ../usermanual/adherents.rst:242
+#: ../usermanual/adherents.rst:262
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -630,7 +686,7 @@ msgstr ""
 "`` கேலட்/தரவு/இறக்குமதி`` கோப்பகத்தில் வைக்கலாம் அல்லது நீங்கள் ஒவ்வொன்றாக இறக்குமதி "
 "செய்யக்கூடிய பல சிறிய கோப்புகளாக பிரிக்கலாம்."
 
-#: ../usermanual/adherents.rst:244
+#: ../usermanual/adherents.rst:264
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -638,11 +694,11 @@ msgstr ""
 "அனுப்பப்பட்ட கோப்புகள் `இருக்கும் கோப்புகள்` பிரிவில் பட்டியலிடப்பட்டுள்ளன. நீங்கள் அதைக் "
 "காட்டலாம், அகற்றலாம் அல்லது இறக்குமதி செய்யலாம்:"
 
-#: ../usermanual/adherents.rst:246
+#: ../usermanual/adherents.rst:266
 msgid "Select and import file"
 msgstr "கோப்பைத் தேர்ந்தெடுத்து இறக்குமதி செய்யுங்கள்"
 
-#: ../usermanual/adherents.rst:251
+#: ../usermanual/adherents.rst:271
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -652,7 +708,7 @@ msgstr ""
 "சரிபார்க்கப்பட்டது) உங்கள் கோப்பு தரவு செல்லுபடியாகும் (கட்டாய புலங்கள் நிரப்பப்பட்டவை, "
 "தரவு வடிவமைப்பு சரியானது, ...) வடிவமைக்கப்பட்டுள்ளது."
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:273
 msgid ""
 "When you import a CSV file, if one line is incorrect, previous ones may be "
 "stored in the database already; so it is advised to use the dry-run before "
@@ -662,7 +718,7 @@ msgstr ""
 "ஏற்கனவே தரவுத்தளத்தில் சேமிக்கப்படலாம்; எனவே பிழையை சரிசெய்ய முன் உலர்ந்த ரனைப் பயன்படுத்த "
 "அறிவுறுத்தப்படுகிறது."
 
-#: ../usermanual/adherents.rst:255
+#: ../usermanual/adherents.rst:275
 #, fuzzy
 #| msgid ""
 #| "You will have error messages than something went wrong (in dry-run mode "
@@ -674,7 +730,7 @@ msgstr ""
 "ஏதேனும் தவறு நடந்ததை விட உங்களிடம் பிழை செய்திகள் இருக்கும் (உலர்-ரன் பயன்முறையில் அல்லது "
 "இல்லை):"
 
-#: ../usermanual/adherents.rst:259
+#: ../usermanual/adherents.rst:279
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -684,11 +740,11 @@ msgstr ""
 "இறக்குமதி மாதிரியில் கேலட் உள்ளமைவில் தேவைக்கேற்ப அமைக்கும் அனைத்து புலங்களும் "
 "பட்டியலிடப்படாதபோது இது நிகழலாம்."
 
-#: ../usermanual/adherents.rst:264
+#: ../usermanual/adherents.rst:284
 msgid "Links between members"
 msgstr "உறுப்பினர்களிடையே இணைப்புகள்"
 
-#: ../usermanual/adherents.rst:268
+#: ../usermanual/adherents.rst:288
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -698,7 +754,7 @@ msgstr ""
 "உறுப்பினர்களுக்காக குடும்பங்களை சேமிக்க இது பயன்படுத்தப்படலாம். நீங்கள் பெற்றோரிடமிருந்து "
 "குழந்தைகள் உறுப்பினர்களையும், குழந்தைகளின் பெற்றோரையும் அணுகலாம்."
 
-#: ../usermanual/adherents.rst:270
+#: ../usermanual/adherents.rst:290
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -706,7 +762,7 @@ msgstr ""
 "நீங்கள் ஒரு உறுப்பினரை விரும்பும் அளவுக்கு குழந்தைகளைச் சேர்க்கலாம், ஆனால் ஒரு குழந்தை "
 "பெற்றோராக மாற முடியாது."
 
-#: ../usermanual/adherents.rst:272
+#: ../usermanual/adherents.rst:292
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -719,7 +775,7 @@ msgstr ""
 "சொன்னாலும் மின்னஞ்சல் மற்றும் அஞ்சல் முகவரிகள் தானாகவே விருப்பமாக மாறும். அந்த தகவல்கள் "
 "ஏதேனும் காணவில்லை என்றால், அது பெற்றோரிடமிருந்து மீட்டெடுக்கப்படும்."
 
-#: ../usermanual/adherents.rst:274
+#: ../usermanual/adherents.rst:294
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -727,11 +783,11 @@ msgstr ""
 "மின்னஞ்சல் அல்லாத உறுப்பினர்கள் \"கடவுச்சொல்லை மீட்டெடு\" அம்சத்தைப் பயன்படுத்த முடியாது. "
 "இது தரவுத்தளத்தில் உள்ள தனித்துவமான மின்னஞ்சல் கட்டுப்பாட்டை பாதிக்காது."
 
-#: ../usermanual/adherents.rst:279
+#: ../usermanual/adherents.rst:299
 msgid "Resetting a second factor"
 msgstr ""
 
-#: ../usermanual/adherents.rst:283
+#: ../usermanual/adherents.rst:303
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -740,7 +796,7 @@ msgid ""
 "member logs in with their password alone until they enrol again."
 msgstr ""
 
-#: ../usermanual/adherents.rst:285
+#: ../usermanual/adherents.rst:305
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -749,7 +805,7 @@ msgid ""
 "only the super administrator can."
 msgstr ""
 
-#: ../usermanual/adherents.rst:289
+#: ../usermanual/adherents.rst:309
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -757,11 +813,11 @@ msgid ""
 "and for whom."
 msgstr ""
 
-#: ../usermanual/adherents.rst:292
+#: ../usermanual/adherents.rst:312
 msgid "Impersonating"
 msgstr "ஆள்மாறாட்டம்"
 
-#: ../usermanual/adherents.rst:296
+#: ../usermanual/adherents.rst:316
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -771,7 +827,7 @@ msgstr ""
 "குழுக்கள், ... இந்த விசயத்தில், துரதிர்ச்டவசமாக பாதுகாப்பற்ற மின்னஞ்சல்களால் அனுப்பப்பட்ட "
 "சில நற்சான்றிதழ்களைப் பார்ப்பது அடிக்கடி நிகழ்கிறது; இது உண்மையில் தவிர்க்கப்பட வேண்டும்."
 
-#: ../usermanual/adherents.rst:298
+#: ../usermanual/adherents.rst:318
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
