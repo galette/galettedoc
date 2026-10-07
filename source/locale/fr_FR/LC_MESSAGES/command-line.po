@@ -33,7 +33,7 @@ msgstr ""
 "certaines tâches. Elle est accessible via le script ``bin/console`` du "
 "dossier racine de Galette :"
 
-#: ../command-line.rst:48
+#: ../command-line.rst:49
 msgid ""
 "Some of those commands are meant for developers only (``galette:check-"
 "routes``, ``galette:headers:check``, ``galette:seed-fixtures``, "
@@ -43,25 +43,25 @@ msgstr ""
 "``galette:check-routes`` , ``galette:headers:check``, ``galette:seed-"
 "fixtures``, ``galette:twig-pot-references``), et ne sont pas décrites ici."
 
-#: ../command-line.rst:50
+#: ../command-line.rst:51
 msgid ""
 "You can obtain help for a specific command by using the ``help`` command:"
 msgstr ""
 "Vous pouvez obtenir de l'aide pour une commande spécifique avec la commande "
 "``help`` :"
 
-#: ../command-line.rst:57
+#: ../command-line.rst:58
 msgid "Requirements check"
 msgstr "Vérification des pré-requis"
 
-#: ../command-line.rst:59
+#: ../command-line.rst:60
 msgid ""
 "This only check for Galette prerequisites, and has no specific arguments."
 msgstr ""
 "Cela vérifie uniquement les pré-requis de Galette, il n'y a aucun argument "
 "spécifique."
 
-#: ../command-line.rst:63
+#: ../command-line.rst:64
 msgid ""
 "On some systems, PHP configuration may differ between cli and web; therefore "
 "it's recommended to check for requirements from the web script "
@@ -71,15 +71,15 @@ msgstr ""
 "console et le web ; il est donc recommandé de vérifier les pré-requis depuis "
 "le script web ``compat_test.php``."
 
-#: ../command-line.rst:66
+#: ../command-line.rst:67
 msgid "Install"
 msgstr "Installation"
 
-#: ../command-line.rst:68
+#: ../command-line.rst:69
 msgid "This command obviously installs Galette :)"
 msgstr "Cette commande installe Galette bien entendu :)"
 
-#: ../command-line.rst:97
+#: ../command-line.rst:98
 msgid ""
 "By default, the script will check for an existing configuration file, you "
 "can ignore that using the ``--ignore-config`` option."
@@ -87,7 +87,7 @@ msgstr ""
 "Par défaut, le script va vérifier la présence d'un fichier de configuration, "
 "vous pouvez l'ignorer avec l'option ``--ignore-config``."
 
-#: ../command-line.rst:99
+#: ../command-line.rst:100
 msgid ""
 "Required options that have not been provided on script call will be asked "
 "interactively."
@@ -95,11 +95,11 @@ msgstr ""
 "Les options requises qui n'ont pas été fournies à l'appel du script seront "
 "demandées interactivement."
 
-#: ../command-line.rst:149
+#: ../command-line.rst:150
 msgid "Super administrator password"
 msgstr "Mot de passe Super administrateur"
 
-#: ../command-line.rst:153
+#: ../command-line.rst:154
 msgid ""
 "The super administrator password is normally changed from **My account**, "
 "then **My information**, or from the :ref:`advanced configuration "
@@ -114,7 +114,7 @@ msgstr ""
 "un membre, donc il ne peut pas utiliser le formulaire *mot de passe oublié* "
 "non plus."
 
-#: ../command-line.rst:155
+#: ../command-line.rst:156
 msgid ""
 "This command is the way back in. It runs on the machine hosting Galette, and "
 "that access stands as the authentication."
@@ -122,7 +122,7 @@ msgstr ""
 "Cette commande est le moyen d'entrer à nouveau. Elle fonctionne sur la "
 "machine hébergeant Galette, et cet accès vaut authentification."
 
-#: ../command-line.rst:175
+#: ../command-line.rst:176
 msgid ""
 "There is no option to pass the password with: it is only ever read from a "
 "hidden prompt, so that it does not end up in your shell history nor in the "
@@ -134,7 +134,7 @@ msgstr ""
 "historique ni dans la liste de processus de la machine. Il est demandé deux "
 "fois, et les deux réponses doivent correspondre."
 
-#: ../command-line.rst:194
+#: ../command-line.rst:195
 msgid ""
 "The login is displayed so you know which account you just changed, but the "
 "command does not touch it. Change it from **My account**, then **My "
@@ -144,7 +144,7 @@ msgstr ""
 "changer, mais la commande ne le touche pas. Changez-le comme d'habitude "
 "depuis **Mon compte**, puis **Mes informations**."
 
-#: ../command-line.rst:196
+#: ../command-line.rst:197
 msgid ""
 "The new password must satisfy the :ref:`password rules <password_rules>` of "
 "your instance, exactly as it would from the web interface."
@@ -153,11 +153,89 @@ msgstr ""
 "<password_rules>` de votre instance, exactement comme il le serait depuis "
 "l'interface web."
 
-#: ../command-line.rst:201
+#: ../command-line.rst:202
+msgid "Two-factor authentication reset"
+msgstr "Réinitialisation de l'authentification à deux facteurs"
+
+#: ../command-line.rst:206
+msgid ""
+"The super administrator has no recovery codes, and nobody above it to reset "
+"its :ref:`second factor <pref_2fa>` from the interface. This command is the "
+"way back in when its device is lost; like ``galette:superadmin:password``, "
+"it runs on the machine hosting Galette, and that access stands as the "
+"authentication."
+msgstr ""
+"Le super administrateur n'a pas de codes de récupération, ni personne au-"
+"dessus de lui pour réinitialiser son :ref:`second facteur <pref_2fa>` depuis "
+"l'interface. Cette commande est le moyen d'entrer à nouveau lorsque son "
+"appareil est perdu ; comme ``galette:superadmin:password``, elle s'exécute "
+"sur la machine hébergeant Galette, et cet accès vaut authentification."
+
+#: ../command-line.rst:224
+msgid ""
+"Without option, the command removes the second factor of the super "
+"administrator, which then logs in with its password alone:"
+msgstr ""
+"Sans option, la commande supprime le second facteur du super administrateur, "
+"qui se connecte alors avec son seul mot de passe :"
+
+#: ../command-line.rst:240
+msgid ""
+"``--login`` targets a member instead, by its login (not its email address); "
+"its recovery codes are dropped as well. Administrators and staff members can "
+"already do the same :ref:`from the member page <member_2fa_reset>`, the "
+"command is there for when nobody can log in to do so."
+msgstr ""
+"``--login`` vise plutôt un adhérent, par son identifiant (pas son adresse "
+"courriel) ; ses codes de récupération sont supprimés eux aussi. Les "
+"administrateurs et les membres du bureau peuvent déjà le faire :ref:`depuis "
+"la fiche de l'adhérent <member_2fa_reset>` ; la commande sert lorsque "
+"personne ne peut se connecter pour le faire."
+
+#: ../command-line.rst:241
+msgid ""
+"``--clock`` keeps the second factor, and only forgets the last code accepted "
+"for the account. This is what is needed after :ref:`the server clock went "
+"backwards <faq_2fa>`."
+msgstr ""
+"``--clock`` conserve le second facteur, et oublie seulement le dernier code "
+"accepté pour le compte. C'est ce qu'il faut après un :ref:`retour en arrière "
+"de l'horloge du serveur <faq_2fa>`."
+
+#: ../command-line.rst:242
+msgid ""
+"``--policy-off`` disables two-factor authentication for the whole instance, "
+"the way out when something goes wrong for everybody at once. Second factors "
+"are kept, and asked again once a policy is set. It cannot be combined with "
+"the other options."
+msgstr ""
+"``--policy-off`` désactive l'authentification à deux facteurs pour "
+"l'ensemble de l'instance, l'issue de secours lorsque quelque chose ne "
+"fonctionne plus pour tout le monde à la fois. Les seconds facteurs sont "
+"conservés, et de nouveau demandés dès qu'une politique est définie. Cette "
+"option ne peut pas être combinée avec les autres."
+
+#: ../command-line.rst:244
+msgid ""
+"Whatever the case, a lock on the account after too many wrong codes is "
+"lifted too, and the reset is recorded in the history."
+msgstr ""
+"Dans tous les cas, un blocage du compte après trop de mauvais codes est "
+"également levé, et la réinitialisation est enregistrée dans l'historique."
+
+#: ../command-line.rst:246
+msgid ""
+"The command asks for confirmation; pass ``--force`` to run it without a "
+"terminal."
+msgstr ""
+"La commande demande une confirmation ; passez ``--force`` pour l'exécuter "
+"sans terminal."
+
+#: ../command-line.rst:251
 msgid "Mailing queue"
 msgstr "File d'envoi"
 
-#: ../command-line.rst:205
+#: ../command-line.rst:255
 msgid ""
 "When :ref:`sending limits <mail_throttling>` are configured, mass mailings "
 "and reminders are queued rather than sent in one go. This command drains "
@@ -167,7 +245,7 @@ msgstr ""
 "envois de masse et les rappels sont mis en queue plutôt que envoyés en une "
 "seule fois. Cette commande draine ce qui est en attente :"
 
-#: ../command-line.rst:220
+#: ../command-line.rst:270
 msgid ""
 "Nothing is sent until that question is answered. Pass ``--force`` to skip "
 "it, which is what an unattended run needs: without it, a non-interactive "
@@ -178,7 +256,7 @@ msgstr ""
 "surveillance : sans cela, un script non interactif n'aurait aucun moyen de "
 "confirmer et stopper sur une erreur plutôt que d'envoyer."
 
-#: ../command-line.rst:226
+#: ../command-line.rst:276
 msgid ""
 "For more complete documentation, see :ref:`draining the mail queue "
 "<mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it "
@@ -188,41 +266,41 @@ msgstr ""
 "<mailing_queue_cron>`, et la page :ref:`page de progression <mailing_queue>` "
 "qui draine également."
 
-#: ../command-line.rst:229
+#: ../command-line.rst:279
 msgid "Plugins commands"
 msgstr "Commandes des plugins"
 
-#: ../command-line.rst:231
+#: ../command-line.rst:281
 msgid ""
 "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
 "Vous pouvez lister les plugins existants à l'aide de la commande "
 "``galette:plugins:list`` :"
 
-#: ../command-line.rst:248
+#: ../command-line.rst:298
 msgid "Available commands are:"
 msgstr "Les commandes disponibles sont :"
 
-#: ../command-line.rst:250
+#: ../command-line.rst:300
 msgid "``galette:plugins:disable``: disable a plugin"
 msgstr "``galette:plugins:disable`` : désactive un plugin"
 
-#: ../command-line.rst:251
+#: ../command-line.rst:301
 msgid "``galette:plugins:enable``: enable a plugin"
 msgstr "``galette:plugins:enable`` : active un plugin"
 
-#: ../command-line.rst:252
+#: ../command-line.rst:302
 msgid "``galette:plugins:install-db``: install a plugin database"
 msgstr ""
 "``galette:plugins:install-db`` : installe la base de données d'un plugin"
 
-#: ../command-line.rst:256
+#: ../command-line.rst:306
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 "L'installation de la base de données des plugins supprimera toutes les "
 "tables existantes de ce plugin !"
 
-#: ../command-line.rst:258
+#: ../command-line.rst:308
 msgid ""
 "For every plugin related command, you can precise which plugin(s) you want "
 "to act on, use the ``--all`` flag or either rely on interactive mode:"

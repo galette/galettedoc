@@ -42,7 +42,19 @@ The server clock went backwards
 
 Galette remembers the last period it accepted a code for, so that a code cannot be used twice. If the clock of the **server** moves backwards -- a virtual machine restored from a snapshot, a large NTP correction, a host without NTP at all -- every code then falls in a period that has already been used, and is refused as such until the clock catches up with what was recorded.
 
-Set the server clock right first. Then, for the account concerned:
+Set the server clock right first. Then, for the account concerned, from the machine hosting Galette (:ref:`see the command line <cli_twofactor_reset>`):
+
+::
+
+   $ php bin/console galette:twofactor:reset --clock --login=<member login>
+
+and, for the super administrator:
+
+::
+
+   $ php bin/console galette:twofactor:reset --clock
+
+Without access to the command line, the same can be done in database:
 
 .. code-block:: sql
 
@@ -64,7 +76,13 @@ If you have no recovery code left either, ask an administrator or a staff member
 The super administrator cannot log in anymore
 ---------------------------------------------
 
-That account is not a member, so nobody can reset it from the interface, and it has no recovery codes. Its second factor lives in the preferences, in database, which is where you clear it from:
+That account is not a member, so nobody can reset it from the interface, and it has no recovery codes. Clear its second factor from the machine hosting Galette:
+
+::
+
+   $ php bin/console galette:twofactor:reset
+
+Its second factor lives in the preferences, so without access to the command line, it can be cleared in database:
 
 .. code-block:: sql
 
@@ -73,7 +91,13 @@ That account is not a member, so nobody can reset it from the interface, and it 
 
 Replace ``galette_`` with your own table prefix if you changed it (the ``PREFIX_DB`` setting of your configuration file). The next login asks for the password alone.
 
-To turn the second factor off for the whole instance at the same time -- the way out when something goes wrong for everybody at once -- add:
+To turn the second factor off for the whole instance -- the way out when something goes wrong for everybody at once -- run:
+
+::
+
+   $ php bin/console galette:twofactor:reset --policy-off
+
+or, in database:
 
 .. code-block:: sql
 
@@ -83,7 +107,7 @@ Members who had enabled one keep it; they are simply no longer asked for a code 
 
 .. warning::
 
-   Keep an access to your database at hand before you enable a second factor on the super administrator account. It is the only way back in for it.
+   Keep an access to the server hosting Galette -- its command line, or its database -- at hand before you enable a second factor on the super administrator account. It is the only way back in for it.
 
 *****************************************
 How to report a bug or ask for a feature?
