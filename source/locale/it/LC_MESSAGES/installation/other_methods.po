@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.3\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../installation/other_methods.rst:5
+msgid "Other installation methods"
+msgstr ""
+
+#: ../installation/other_methods.rst:7
+msgid "Instead of installing Galette from the archive, you can use one of the packages listed below. They are maintained by the community, outside of the Galette release process: a package may be published some time after a new Galette release, and its installation and update procedures are those of the package. Refer to its own documentation, and report packaging issues to its repository."
+msgstr ""
+
+#: ../installation/other_methods.rst:9
+msgid "Whatever the method, keep regular backups of your database and of Galette data directories."
+msgstr ""
+
+#: ../installation/other_methods.rst:12
+msgid "Docker"
+msgstr ""
+
+#: ../installation/other_methods.rst:14
+msgid "The `Galette Docker image <https://hub.docker.com/r/galette/galette>`_ is built from the `galette/docker repository <https://github.com/galette/docker>`_. It embeds Galette with a selection of official plugins."
+msgstr ""
+
+#: ../installation/other_methods.rst:16
+msgid "The image does not include a database server: you have to run MariaDB, MySQL or PostgreSQL separately, for example in another container. Configuration and data files are stored on volumes, so they are kept when you upgrade to a newer image."
+msgstr ""
+
+#: ../installation/other_methods.rst:19
+msgid "YunoHost"
+msgstr ""
+
+#: ../installation/other_methods.rst:21
+msgid "`YunoHost <https://yunohost.org>`_ is a server operating system designed to make self-hosting easy. Galette is available in its `application catalog <https://apps.yunohost.org/app/galette>`_; the package sources are in the `galette_ynh repository <https://github.com/YunoHost-Apps/galette_ynh>`_."
+msgstr ""
+
+#: ../installation/other_methods.rst:23
+msgid "YunoHost takes care of the web server, the database and the updates. Check the packaged Galette version in the catalog before installing: it may not be the latest release yet."
+msgstr ""
+
+#: ../installation/other_methods.rst:26
+msgid "Hosted instances"
+msgstr ""
+
+#: ../installation/other_methods.rst:28
+msgid "If you do not want to install Galette yourself, some hosting providers offer Galette instances to non-profit organizations. The `CHATONS <https://www.chatons.org>`_ collective (mostly French-speaking alternative hosting providers committed to free software, transparency and data protection) lists its members offering Galette in its `service directory <https://www.chatons.org/search/by-service?field_software_target_id=311>`_."
+msgstr ""
+
+#: ../installation/other_methods.rst:30
+msgid "These providers run their own instances: the Galette version, the available plugins and the support are under their responsibility. Before choosing one, ask how you can retrieve your data if you leave."
+msgstr ""
