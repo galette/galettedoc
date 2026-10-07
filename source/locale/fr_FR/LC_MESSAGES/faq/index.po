@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:52+0200\n"
+"POT-Creation-Date: 2026-10-07 14:25+0200\n"
 "PO-Revision-Date: 2026-10-01 16:59+0000\n"
 "Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-faq-"
@@ -43,7 +43,7 @@ msgstr "un message d'erreur est affiché,"
 msgid "a blank page,"
 msgstr "une page blanche,"
 
-#: ../faq/index.rst:15 ../faq/index.rst:140
+#: ../faq/index.rst:15
 msgid "..."
 msgstr "..."
 
@@ -378,7 +378,7 @@ msgstr "la récupération du mot de passe,"
 msgid "login (since Galette 0.9)."
 msgstr "la connexion (depuis Galette 0.9)."
 
-#: ../faq/index.rst:142
+#: ../faq/index.rst:141
 msgid ""
 "Making them non unique is not a solution we want to rely on. This would be "
 "complicated, and should be source of many bugs."
@@ -386,7 +386,7 @@ msgstr ""
 "Les rendre non uniques n'est pas une solution que nous souhaitons mettre en "
 "œuvre. Ce serait compliqué, et source de nombreux bogues."
 
-#: ../faq/index.rst:144
+#: ../faq/index.rst:143
 msgid ""
 "However, it is possible in Galette to :ref:`link several members "
 "<linkmembers>`. That way, some information such as email and postal "
@@ -397,7 +397,7 @@ msgstr ""
 "courriel ou postale seront récupérées depuis la fiche parent si elles "
 "manquent."
 
-#: ../faq/index.rst:146
+#: ../faq/index.rst:145
 msgid ""
 "This allows finally to use a unique email address for several members in "
 "database; but they are not duplicates in database."
@@ -405,11 +405,11 @@ msgstr ""
 "Cela permet au final d'utiliser une même adresse de courriel pour plusieurs "
 "adhérents en base ; mais sans que ce soit dupliqué dans la base de données."
 
-#: ../faq/index.rst:152
+#: ../faq/index.rst:151
 msgid "I forgot my password, what now?"
 msgstr "J'ai oublié mon mot de passe, que faire ?"
 
-#: ../faq/index.rst:154
+#: ../faq/index.rst:153
 msgid ""
 "On the login page, click on **Lost your password?**, type your username or "
 "your email address, and follow the link of the email you receive. The link "
@@ -421,7 +421,7 @@ msgstr ""
 "reçu. Le lien ne sert qu'une fois, et pendant 24 heures. Voir :ref:`mot de "
 "passe oublié ou nouveau <my_account_password>`."
 
-#: ../faq/index.rst:156
+#: ../faq/index.rst:155
 msgid ""
 "No email? Check your spam folder. If your member card has no email address, "
 "ask a staff member of your association to fix it, or to change your password "
@@ -431,7 +431,7 @@ msgstr ""
 "d'adresse courriel, demandez à un membre du bureau de votre association de "
 "la compléter, ou de changer votre mot de passe pour vous."
 
-#: ../faq/index.rst:158
+#: ../faq/index.rst:157
 msgid ""
 "The **super administrator** is not a member and cannot use this form. Its "
 "password can be changed :ref:`from the command line "
@@ -441,15 +441,15 @@ msgstr ""
 "formulaire. Son mot de passe peut être changé :ref:`en ligne de commande "
 "<cli_superadmin_password>`, par la personne qui gère le serveur."
 
-#: ../faq/index.rst:164
+#: ../faq/index.rst:163
 msgid "A member cannot log in anymore"
 msgstr "Un adhérent ne peut plus se connecter"
 
-#: ../faq/index.rst:166
+#: ../faq/index.rst:165
 msgid "Check, in this order:"
 msgstr "Vérifiez, dans cet ordre :"
 
-#: ../faq/index.rst:168
+#: ../faq/index.rst:167
 msgid ""
 "**Is the account active?** An inactive account cannot log in. Open the "
 "member card, and check the **Account** field in the **Galette-related data** "
@@ -459,7 +459,7 @@ msgstr ""
 "Ouvrez la fiche de l'adhérent, et vérifiez le champ **Compte** dans la "
 "partie **Informations relatives à Galette**."
 
-#: ../faq/index.rst:169
+#: ../faq/index.rst:168
 msgid ""
 "**Has the member been blocked after too many failures?** After several wrong "
 "passwords in a row, Galette refuses further attempts for 15 minutes, even "
@@ -474,7 +474,7 @@ msgstr ""
 "et **Lever** le débloque tout de suite. Voir :ref:`tentatives "
 "d'authentification <auth_attempts>`."
 
-#: ../faq/index.rst:170
+#: ../faq/index.rst:169
 msgid ""
 "**Is the password right?** If in doubt, the member can ask for a new one "
 "with **Lost your password?** on the login page."
@@ -482,7 +482,7 @@ msgstr ""
 "**Le mot de passe est-il le bon ?** En cas de doute, l'adhérent peut en "
 "demander un nouveau avec **Mot de passe perdu ?** sur la page de connexion."
 
-#: ../faq/index.rst:171
+#: ../faq/index.rst:170
 msgid ""
 "**Does the member use two-factor authentication?** See :ref:`my two-factor "
 "authentication codes are refused <faq_2fa>`."
@@ -491,16 +491,16 @@ msgstr ""
 "Voir :ref:`mes codes d'authentification à deux facteurs sont refusés "
 "<faq_2fa>`."
 
-#: ../faq/index.rst:177
+#: ../faq/index.rst:176
 msgid "Emails sent by Galette never arrive"
 msgstr "Les courriels envoyés par Galette n'arrivent jamais"
 
-#: ../faq/index.rst:179
+#: ../faq/index.rst:178
 msgid "Go to **Configuration**, then **Settings**, **E-Mail** tab:"
 msgstr ""
 "Allez dans **Configuration**, puis **Préférences**, onglet **Courriel** :"
 
-#: ../faq/index.rst:181
+#: ../faq/index.rst:180
 msgid ""
 "check that an **Emailing method** is selected, and that the **Sender Email** "
 "is an address of your association,"
@@ -508,7 +508,7 @@ msgstr ""
 "vérifiez qu'une **Méthode d'envoi des courriels** est choisie, et que le "
 "**Courriel expéditeur** est une adresse de votre association,"
 
-#: ../faq/index.rst:182
+#: ../faq/index.rst:181
 msgid ""
 "click on **Test connection**, then on **Send a test email**, to your own "
 "address; see :ref:`testing the settings <mail_tests>`."
@@ -517,7 +517,7 @@ msgstr ""
 "test**, vers votre propre adresse ; voir :ref:`tester les réglages "
 "<mail_tests>`."
 
-#: ../faq/index.rst:184
+#: ../faq/index.rst:183
 msgid ""
 "If the test email does not arrive either, check your spam folder, then ask "
 "your web host or your mail provider which settings to use: many of them "
@@ -528,7 +528,7 @@ msgstr ""
 "messagerie quels réglages utiliser : beaucoup imposent de passer par leur "
 "serveur SMTP, avec un identifiant et un mot de passe."
 
-#: ../faq/index.rst:186
+#: ../faq/index.rst:185
 msgid ""
 "If the test email arrives but mailings do not, your mail provider may limit "
 "how many messages you can send per hour or per day; see :ref:`sending limits "
@@ -538,11 +538,11 @@ msgstr ""
 "messagerie limite peut-être le nombre de messages par heure ou par jour ; "
 "voir les :ref:`limites d'envoi <mail_throttling>`."
 
-#: ../faq/index.rst:192
+#: ../faq/index.rst:191
 msgid "How do I renew a membership?"
 msgstr "Comment renouveler une adhésion ?"
 
-#: ../faq/index.rst:194
+#: ../faq/index.rst:193
 msgid ""
 "Simply record the new membership fee: go to **Contributions**, then **Add a "
 "membership fee**, select the member, the contribution type and the amount. "
@@ -557,7 +557,7 @@ msgstr ""
 "l'adhérent renouvelle en avance. Voir les :ref:`règles de gestion "
 "<man_generalites>`."
 
-#: ../faq/index.rst:196
+#: ../faq/index.rst:195
 msgid "To remind late members to renew, see :ref:`reminders <reminders>`."
 msgstr ""
 "Pour relancer les adhérents en retard, voir les :ref:`relances <reminders>`."
