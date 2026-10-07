@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:52+0200\n"
+"POT-Creation-Date: 2026-10-07 14:25+0200\n"
 "PO-Revision-Date: 2023-11-19 07:23+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/galette/doc-faq-"
@@ -53,7 +53,7 @@ msgstr "Eine leere Seite,"
 
 # 18f9ac3d31924c4db3f5e19cd7deb2da
 # b57c260170904f378aecbb0f6c7b06fd
-#: ../faq/index.rst:15 ../faq/index.rst:140
+#: ../faq/index.rst:15
 msgid "..."
 msgstr "..."
 
@@ -323,25 +323,23 @@ msgid ""
 "the project on which several features are built:"
 msgstr ""
 
-# 046d410c1d5d4cf0a20d16cd1549e12f
 #: ../faq/index.rst:138
-msgid "lost password (since... always or almost),"
+msgid "lost password,"
 msgstr ""
 
-# 2196ec41c637450abc1edb7eb30b34d8
 #: ../faq/index.rst:139
-msgid "login (since Galette 0.9),"
+msgid "login (since Galette 0.9)."
 msgstr ""
 
 # 3ccbab1250b84adcbfa563076fd67366
-#: ../faq/index.rst:142
+#: ../faq/index.rst:141
 msgid ""
 "Making them non unique is not a solution we want to rely on. This would be "
 "complicated, and should be source of many bugs."
 msgstr ""
 
 # 7b704fa90544499693bf3be9ed4af4c5
-#: ../faq/index.rst:144
+#: ../faq/index.rst:143
 msgid ""
 "However, it is possible in Galette to :ref:`link several members "
 "<linkmembers>`. That way, some information such as email and postal "
@@ -349,112 +347,113 @@ msgid ""
 msgstr ""
 
 # c10fb69b526f4fc7a805f9380f00955c
-#: ../faq/index.rst:146
+#: ../faq/index.rst:145
 msgid ""
 "This allows finally to use a unique email address for several members in "
 "database; but they are not duplicates in database."
 msgstr ""
 
-#: ../faq/index.rst:152
+#: ../faq/index.rst:151
 msgid "I forgot my password, what now?"
 msgstr ""
 
-#: ../faq/index.rst:154
+#: ../faq/index.rst:153
 msgid ""
 "On the login page, click on **Lost your password?**, type your username or "
 "your email address, and follow the link of the email you receive. The link "
-"works once, and for 24 hours."
+"works once, and for 24 hours. See :ref:`forgotten or new password "
+"<my_account_password>`."
 msgstr ""
 
-#: ../faq/index.rst:156
+#: ../faq/index.rst:155
 msgid ""
 "No email? Check your spam folder. If your member card has no email address, "
 "ask a staff member of your association to fix it, or to change your password "
 "for you."
 msgstr ""
 
-#: ../faq/index.rst:158
+#: ../faq/index.rst:157
 msgid ""
 "The **super administrator** is not a member and cannot use this form. Its "
 "password can be changed :ref:`from the command line "
 "<cli_superadmin_password>`, by the person who manages the server."
 msgstr ""
 
-#: ../faq/index.rst:164
+#: ../faq/index.rst:163
 msgid "A member cannot log in anymore"
 msgstr ""
 
-#: ../faq/index.rst:166
+#: ../faq/index.rst:165
 msgid "Check, in this order:"
 msgstr ""
 
-#: ../faq/index.rst:168
+#: ../faq/index.rst:167
 msgid ""
 "**Is the account active?** An inactive account cannot log in. Open the "
 "member card, and check the **Account** field in the **Galette-related data** "
 "part."
 msgstr ""
 
-#: ../faq/index.rst:169
+#: ../faq/index.rst:168
 msgid ""
 "**Has the member been blocked after too many failures?** After several wrong "
 "passwords in a row, Galette refuses further attempts for 15 minutes, even "
 "with the right password. Go to **Configuration**, then **Authentication "
 "attempts**: the account is listed there if it is blocked, and **Lift** "
-"unblocks it at once."
+"unblocks it at once. See :ref:`authentication attempts <auth_attempts>`."
 msgstr ""
 
-#: ../faq/index.rst:170
+#: ../faq/index.rst:169
 msgid ""
 "**Is the password right?** If in doubt, the member can ask for a new one "
 "with **Lost your password?** on the login page."
 msgstr ""
 
-#: ../faq/index.rst:171
+#: ../faq/index.rst:170
 msgid ""
 "**Does the member use two-factor authentication?** See :ref:`my two-factor "
 "authentication codes are refused <faq_2fa>`."
 msgstr ""
 
-#: ../faq/index.rst:177
+#: ../faq/index.rst:176
 msgid "Emails sent by Galette never arrive"
 msgstr ""
 
-#: ../faq/index.rst:179
+#: ../faq/index.rst:178
 msgid "Go to **Configuration**, then **Settings**, **E-Mail** tab:"
 msgstr ""
 
-#: ../faq/index.rst:181
+#: ../faq/index.rst:180
 msgid ""
 "check that an **Emailing method** is selected, and that the **Sender Email** "
 "is an address of your association,"
 msgstr ""
 
-#: ../faq/index.rst:182
+#: ../faq/index.rst:181
 msgid ""
 "click on **Test connection**, then on **Send a test email**, to your own "
-"address."
+"address; see :ref:`testing the settings <mail_tests>`."
 msgstr ""
 
-#: ../faq/index.rst:184
+#: ../faq/index.rst:183
 msgid ""
 "If the test email does not arrive either, check your spam folder, then ask "
 "your web host or your mail provider which settings to use: many of them "
 "require sending through their SMTP server, with a username and a password."
 msgstr ""
 
-#: ../faq/index.rst:186
+#: ../faq/index.rst:185
 msgid ""
 "If the test email arrives but mailings do not, your mail provider may limit "
 "how many messages you can send per hour or per day; see :ref:`sending limits "
 "<mail_throttling>`."
 msgstr ""
 
-#: ../faq/index.rst:192
+#: ../faq/index.rst:191
 msgid "How do I renew a membership?"
 msgstr ""
 
-#: ../faq/index.rst:194
+#: ../faq/index.rst:193
 msgid ""
 "Simply record the new membership fee: go to **Contributions**, then **Add a "
 "membership fee**, select the member, the contribution type and the amount. "
@@ -463,7 +462,7 @@ msgid ""
 "See :ref:`management rules <man_generalites>`."
 msgstr ""
 
-#: ../faq/index.rst:196
+#: ../faq/index.rst:195
 msgid "To remind late members to renew, see :ref:`reminders <reminders>`."
 msgstr ""
 
