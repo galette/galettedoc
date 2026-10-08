@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-06 10:52+0200\n"
-"PO-Revision-Date: 2026-09-23 14:09+0000\n"
+"PO-Revision-Date: 2026-10-08 20:45+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "plugins-index/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../plugins/index.rst:7
 msgid ":doc:`Plugins documentation <index>`"
@@ -156,11 +156,14 @@ msgid ""
 "page lists the active plugins first, then the inactive ones, with the reason "
 "why they are inactive."
 msgstr ""
+"Vsak vtičnik ima zdaj svojo različico zbirke podatkov in se posodablja sam. "
+"Na strani so najprej navedeni aktivni vtičniki, nato neaktivni, z razlogom, "
+"zakaj so neaktivni."
 
 #: ../plugins/index.rst:65
 msgid ""
 "An icon next to the name of an inactive plugin tells why it is not active:"
-msgstr ""
+msgstr "Ikona poleg imena neaktivnega vtičnika pove, zakaj ni aktiven:"
 
 #: ../plugins/index.rst:67
 msgid ""
@@ -168,12 +171,17 @@ msgid ""
 "created yet. Click on the database icon of the **Actions** column to install "
 "them,"
 msgstr ""
+"**Ni nameščen**: vtičnik potrebuje tabele baze podatkov, ki še niso bile "
+"ustvarjene. Kliknite ikono zbirke podatkov v stolpcu **Dejanja**, da jih "
+"namestite,"
 
 #: ../plugins/index.rst:68
 msgid ""
 "**Need update**: the plugin files are more recent than its database. Click "
 "on the database icon to run the update,"
 msgstr ""
+"**Potrebna posodobitev**: datoteke vtičnika so novejše od baze podatkov. "
+"Kliknite ikono baze podatkov, da zaženete posodobitev,"
 
 #: ../plugins/index.rst:69
 msgid ""
@@ -181,36 +189,49 @@ msgid ""
 "from the :doc:`command line </command-line>`. Click on the activation icon "
 "to enable it again,"
 msgstr ""
+"**Izrecno onemogočeno**: vtičnik je bil onemogočen na tej strani ali v "
+":doc:`ukazni vrstici </command-line>`. Kliknite ikono za aktiviranje, da ga "
+"znova omogočite,"
 
 #: ../plugins/index.rst:70
 msgid ""
 "**Incompatible with current version**: the plugin is made for another "
 "version of Galette; look for a more recent version of the plugin,"
 msgstr ""
+"**Nezdružljivo s trenutno različico**: vtičnik je narejen za drugo različico "
+"Galette; poiščite novejšo različico vtičnika,"
 
 #: ../plugins/index.rst:71
 msgid ""
 "**A required file is missing**: the plugin files are incomplete; download "
 "the plugin again,"
 msgstr ""
+"**Manjka zahtevana datoteka**: datoteke vtičnika so nepopolne; znova "
+"prenesite vtičnik,"
 
 #: ../plugins/index.rst:72
 msgid ""
 "**Database version missing**: Galette cannot tell which version of the "
 "plugin database is installed."
 msgstr ""
+"**Manjka različica baze podatkov**: Galette ne more ugotoviti, katera "
+"različica baze podatkov vtičnika je nameščena."
 
 #: ../plugins/index.rst:74
 msgid ""
 "The name of an active plugin opens a window with information about it: "
 "version, author, routes and access rights."
 msgstr ""
+"Ime aktivnega vtičnika odpre okno z informacijami o njem: različica, avtor, "
+"poti in pravice dostopa."
 
 #: ../plugins/index.rst:78
 msgid ""
 "Back up your database before installing or updating a plugin database, as "
 "you would before updating Galette itself."
 msgstr ""
+"Varnostno kopirajte svojo zbirko podatkov, preden namestite ali posodobite "
+"zbirko podatkov vtičnikov, kot bi to storili pred posodobitvijo same Galette."
 
 #~ msgid ""
 #~ "You can disable a plugin creating a ``_disabled`` file in its directory."
