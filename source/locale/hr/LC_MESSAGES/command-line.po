@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Marko Puljic <markopuljic.uo@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.3\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../command-line.rst:3
+msgid "Command line"
+msgstr ""
+
+#: ../command-line.rst:7
+msgid "Galette now proposes a command line interface to manage some tasks. This is accessible through the ``bin/console`` script in Galette root directory:"
+msgstr ""
+
+#: ../command-line.rst:48
+msgid "Some of those commands are meant for developers only (``galette:check-routes``, ``galette:headers:check``, ``galette:seed-fixtures``, ``galette:twig-pot-references``), and are not described here."
+msgstr ""
+
+#: ../command-line.rst:50
+msgid "You can obtain help for a specific command by using the ``help`` command:"
+msgstr ""
+
+#: ../command-line.rst:57
+msgid "Requirements check"
+msgstr ""
+
+#: ../command-line.rst:59
+msgid "This only check for Galette prerequisites, and has no specific arguments."
+msgstr ""
+
+#: ../command-line.rst:63
+msgid "On some systems, PHP configuration may differ between cli and web; therefore it's recommended to check for requirements from the web script ``compat_test.php``."
+msgstr ""
+
+#: ../command-line.rst:66
+msgid "Install"
+msgstr ""
+
+#: ../command-line.rst:68
+msgid "This command obviously installs Galette :)"
+msgstr ""
+
+#: ../command-line.rst:97
+msgid "By default, the script will check for an existing configuration file, you can ignore that using the ``--ignore-config`` option."
+msgstr ""
+
+#: ../command-line.rst:99
+msgid "Required options that have not been provided on script call will be asked interactively."
+msgstr ""
+
+#: ../command-line.rst:149
+msgid "Super administrator password"
+msgstr ""
+
+#: ../command-line.rst:153
+msgid "The super administrator password is normally changed from **My account**, then **My information**, or from the :ref:`advanced configuration <advanced_config>` page. Both require to be logged in, which is of little help the day the password is lost: the super administrator is not a member, so it cannot use the *forgotten password* form either."
+msgstr ""
+
+#: ../command-line.rst:155
+msgid "This command is the way back in. It runs on the machine hosting Galette, and that access stands as the authentication."
+msgstr ""
+
+#: ../command-line.rst:175
+msgid "There is no option to pass the password with: it is only ever read from a hidden prompt, so that it does not end up in your shell history nor in the process list of the machine. It is asked twice, and the two answers must match."
+msgstr ""
+
+#: ../command-line.rst:194
+msgid "The login is displayed so you know which account you just changed, but the command does not touch it. Change it from **My account**, then **My information**, as usual."
+msgstr ""
+
+#: ../command-line.rst:196
+msgid "The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the web interface."
+msgstr ""
+
+#: ../command-line.rst:201
+msgid "Mailing queue"
+msgstr ""
+
+#: ../command-line.rst:205
+msgid "When :ref:`sending limits <mail_throttling>` are configured, mass mailings and reminders are queued rather than sent in one go. This command drains what is pending:"
+msgstr ""
+
+#: ../command-line.rst:220
+msgid "Nothing is sent until that question is answered. Pass ``--force`` to skip it, which is what an unattended run needs: without it, a non-interactive call has no way to confirm and stops with an error rather than send."
+msgstr ""
+
+#: ../command-line.rst:226
+msgid "For more complete documentation, see :ref:`draining the mail queue <mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it drains alongside."
+msgstr ""
+
+#: ../command-line.rst:229
+msgid "Plugins commands"
+msgstr ""
+
+#: ../command-line.rst:231
+msgid "You can list existing plugins using the ``galette:plugins:list`` command:"
+msgstr ""
+
+#: ../command-line.rst:248
+msgid "Available commands are:"
+msgstr ""
+
+#: ../command-line.rst:250
+msgid "``galette:plugins:disable``: disable a plugin"
+msgstr ""
+
+#: ../command-line.rst:251
+msgid "``galette:plugins:enable``: enable a plugin"
+msgstr ""
+
+#: ../command-line.rst:252
+msgid "``galette:plugins:install-db``: install a plugin database"
+msgstr ""
+
+#: ../command-line.rst:256
+msgid "Plugin database installation will remove any existing plugin tables!"
+msgstr ""
+
+#: ../command-line.rst:258
+msgid "For every plugin related command, you can precise which plugin(s) you want to act on, use the ``--all`` flag or either rely on interactive mode:"
+msgstr ""
