@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-07 14:25+0200\n"
-"PO-Revision-Date: 2026-10-08 10:24+0000\n"
+"PO-Revision-Date: 2026-10-08 20:45+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-configuration/sl/>\n"
@@ -191,6 +191,9 @@ msgid ""
 "**Configuration**, then **Dynamic fields**, pick the form, and click on "
 "**Add**."
 msgstr ""
+"Dinamična polja lahko dodate obrazcem za člane, prispevke in transakcije ter "
+"v :ref:`nastavitve <pref_dynamic_fields>`. Pojdite na **Konfiguracija**, "
+"nato na **Dinamična polja**, izberite obrazec in kliknite **Dodaj**."
 
 #: ../usermanual/configuration.rst:71
 msgid ""
@@ -290,23 +293,28 @@ msgstr ""
 
 #: ../usermanual/configuration.rst:107
 msgid "Fields that hold a value also accept:"
-msgstr ""
+msgstr "Polja, ki vsebujejo vrednost, sprejemajo tudi:"
 
 #: ../usermanual/configuration.rst:109
 msgid "**Min Size**: for single line fields, the minimum number of characters,"
-msgstr ""
+msgstr "**Najmanjša velikost**: za enovrstična polja najmanjše število znakov,"
 
 #: ../usermanual/configuration.rst:110
 msgid ""
 "**Information**: a help text displayed along with the field; check **Display "
 "information above input** to display it above the field rather than under it,"
 msgstr ""
+"**Informacije**: besedilo pomoči, prikazano skupaj s poljem; označite "
+"**Prikaži informacije nad vnosom**, da jih prikažete nad poljem in ne pod "
+"njim,"
 
 #: ../usermanual/configuration.rst:111
 msgid ""
 "**Width in forms**: whether the field takes the full width of the form, or "
 "half of it."
 msgstr ""
+"**Širina v obrazcih**: ali polje zavzame celotno širino obrazca ali njeno "
+"polovico."
 
 #: ../usermanual/configuration.rst:115
 msgid ""
@@ -320,13 +328,15 @@ msgstr ""
 
 #: ../usermanual/configuration.rst:120
 msgid "Repeatable fields"
-msgstr ""
+msgstr "Ponovljiva polja"
 
 #: ../usermanual/configuration.rst:124
 msgid ""
 "Choice, date and file fields can be repeated too, not only single line "
 "fields."
 msgstr ""
+"Ponavljajo se lahko tudi polja izbire, datuma in datoteke, ne le enovrstična "
+"polja."
 
 #: ../usermanual/configuration.rst:126
 msgid ""
@@ -335,22 +345,26 @@ msgid ""
 "of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for "
 "a field that holds a single value."
 msgstr ""
+"Polja za eno vrstico, izbiro, datum in datoteko lahko vsebujejo več "
+"vrednosti; več telefonskih številk, npr. Nastavite možnost **Ponovi** na "
+"največje število vrednosti ali na ``0``, če ni omejitve. Pustite prazno ali "
+"ga nastavite na ``1`` za polje, ki vsebuje eno samo vrednost."
 
 #: ../usermanual/configuration.rst:128
-#, fuzzy
-#| msgid "A dynamic field"
 msgid "A repeatable dynamic field"
-msgstr "Dinamično polje"
+msgstr "Ponovljivo dinamično polje"
 
 #: ../usermanual/configuration.rst:133
 msgid ""
 "On the form, the field is displayed once, with an **Add** button and the "
 "number of values that can still be added. Each click adds one more value."
 msgstr ""
+"Na obrazcu se polje enkrat prikaže z gumbom **Dodaj** in številom vrednosti, "
+"ki jih je še mogoče dodati. Vsak klik doda še eno vrednost."
 
 #: ../usermanual/configuration.rst:135
 msgid "A repeatable dynamic field on the member form"
-msgstr ""
+msgstr "Ponovljivo dinamično polje na obrazcu člana"
 
 #: ../usermanual/configuration.rst:141
 msgid "Labels translation"
@@ -382,6 +396,11 @@ msgid ""
 "labels** icon of those lists, and the **Translate** links of the "
 "preferences, lead to the same page."
 msgstr ""
+"Pojdite na **Konfiguracija**, nato na **Prevod oznak**, izberite oznako in "
+"vnesite njen prevod v vsak jezik. Oznake so imena dinamičnih polj, pa tudi "
+"drugih besedil, ki ste jih vnesli sami in jih je mogoče prevesti: stanja, "
+"vrste prispevkov, vrste plačil ... Ikona **Prevedi oznake** teh seznamov in "
+"povezave **Prevedi** v nastavitvah vodijo na isto stran."
 
 #: ../usermanual/configuration.rst:152
 msgid "Emails contents"
