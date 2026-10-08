@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Marko Puljic <markopuljic.uo@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.3\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-10-06 10:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../plugins/index.rst:7
+msgid ":doc:`Plugins documentation <index>`"
+msgstr ""
+
+#: ../plugins/index.rst:13
+msgid "Plugins"
+msgstr ""
+
+#: ../plugins/index.rst:15
+msgid "Plugins system allows to extend Galette with specific features that would not be useful for most of the users. Incompatible plugins will automatically be disabled, in which case you should consider upgrading to a more recent version."
+msgstr ""
+
+#: ../plugins/index.rst:17
+msgid "Each plugin is a simple directory in ``{galette}/plugins/``, then refer to the plugin documentation to install it."
+msgstr ""
+
+#: ../plugins/index.rst:21
+msgid "Existing plugins"
+msgstr ""
+
+#: ../plugins/index.rst:23
+msgid "The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts all plugins. See :doc:`how to add your plugin <plugins-tiers>` if you want yours to join."
+msgstr ""
+
+#: ../plugins/index.rst:25
+msgid "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:26
+msgid "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:27
+msgid "`Maps <https://galette-plugins.github.io/plugin-maps/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:28
+msgid "`Auto <https://galette-plugins.github.io/plugin-auto/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:29
+msgid "`Events <https://galette-plugins.github.io/plugin-events/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:30
+msgid "`ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:31
+msgid "`Activities <https://galette-plugins.github.io/plugin-activities/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:32
+msgid "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:33
+msgid "`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:34
+msgid "`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:35
+msgid "`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_"
+msgstr ""
+
+#: ../plugins/index.rst:46
+msgid "Plugins management interface"
+msgstr ""
+
+#: ../plugins/index.rst:48
+msgid "A plugins management interface is provided, you will find it from the dashboard or in the configuration menu. After you have downloaded plugin(s) in Galette ``plugins`` directory, a list will be displayed:"
+msgstr ""
+
+#: ../plugins/index.rst:50
+msgid "Plugins management"
+msgstr ""
+
+#: ../plugins/index.rst:55
+msgid "If web server has read access to your plugins directory, then you can enable or disable any plugin from the related icon."
+msgstr ""
+
+#: ../plugins/index.rst:57
+msgid "If plugin requires a database to work, you can play installation and update scripts from the interface."
+msgstr ""
+
+#: ../plugins/index.rst:59
+msgid "Database ACLs will then be checked. Unlike Galette, no information will be asked to you, since all is already available from your current instance."
+msgstr ""
+
+#: ../plugins/index.rst:63
+msgid "Each plugin now has its own database version, and is updated on its own. The page lists the active plugins first, then the inactive ones, with the reason why they are inactive."
+msgstr ""
+
+#: ../plugins/index.rst:65
+msgid "An icon next to the name of an inactive plugin tells why it is not active:"
+msgstr ""
+
+#: ../plugins/index.rst:67
+msgid "**Not installed**: the plugin needs database tables that have not been created yet. Click on the database icon of the **Actions** column to install them,"
+msgstr ""
+
+#: ../plugins/index.rst:68
+msgid "**Need update**: the plugin files are more recent than its database. Click on the database icon to run the update,"
+msgstr ""
+
+#: ../plugins/index.rst:69
+msgid "**Explicitly disabled**: the plugin has been disabled from this page, or from the :doc:`command line </command-line>`. Click on the activation icon to enable it again,"
+msgstr ""
+
+#: ../plugins/index.rst:70
+msgid "**Incompatible with current version**: the plugin is made for another version of Galette; look for a more recent version of the plugin,"
+msgstr ""
+
+#: ../plugins/index.rst:71
+msgid "**A required file is missing**: the plugin files are incomplete; download the plugin again,"
+msgstr ""
+
+#: ../plugins/index.rst:72
+msgid "**Database version missing**: Galette cannot tell which version of the plugin database is installed."
+msgstr ""
+
+#: ../plugins/index.rst:74
+msgid "The name of an active plugin opens a window with information about it: version, author, routes and access rights."
+msgstr ""
+
+#: ../plugins/index.rst:78
+msgid "Back up your database before installing or updating a plugin database, as you would before updating Galette itself."
+msgstr ""
