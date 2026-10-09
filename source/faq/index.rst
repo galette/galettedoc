@@ -42,7 +42,19 @@ The server clock went backwards
 
 Galette remembers the last period it accepted a code for, so that a code cannot be used twice. If the clock of the **server** moves backwards -- a virtual machine restored from a snapshot, a large NTP correction, a host without NTP at all -- every code then falls in a period that has already been used, and is refused as such until the clock catches up with what was recorded.
 
-Set the server clock right first. Then, for the account concerned:
+Set the server clock right first. Then, for the account concerned, from the machine hosting Galette (:ref:`see the command line <cli_twofactor_reset>`):
+
+::
+
+   $ php bin/console galette:twofactor:reset --clock --login=<member login>
+
+and, for the super administrator:
+
+::
+
+   $ php bin/console galette:twofactor:reset --clock
+
+Without access to the command line, the same can be done in database:
 
 .. code-block:: sql
 
@@ -64,7 +76,13 @@ If you have no recovery code left either, ask an administrator or a staff member
 The super administrator cannot log in anymore
 ---------------------------------------------
 
-That account is not a member, so nobody can reset it from the interface, and it has no recovery codes. Its second factor lives in the preferences, in database, which is where you clear it from:
+That account is not a member, so nobody can reset it from the interface, and it has no recovery codes. Clear its second factor from the machine hosting Galette:
+
+::
+
+   $ php bin/console galette:twofactor:reset
+
+Its second factor lives in the preferences, so without access to the command line, it can be cleared in database:
 
 .. code-block:: sql
 
@@ -73,7 +91,13 @@ That account is not a member, so nobody can reset it from the interface, and it 
 
 Replace ``galette_`` with your own table prefix if you changed it (the ``PREFIX_DB`` setting of your configuration file). The next login asks for the password alone.
 
-To turn the second factor off for the whole instance at the same time -- the way out when something goes wrong for everybody at once -- add:
+To turn the second factor off for the whole instance -- the way out when something goes wrong for everybody at once -- run:
+
+::
+
+   $ php bin/console galette:twofactor:reset --policy-off
+
+or, in database:
 
 .. code-block:: sql
 
@@ -83,7 +107,7 @@ Members who had enabled one keep it; they are simply no longer asked for a code 
 
 .. warning::
 
-   Keep an access to your database at hand before you enable a second factor on the super administrator account. It is the only way back in for it.
+   Keep an access to the server hosting Galette -- its command line, or its database -- at hand before you enable a second factor on the super administrator account. It is the only way back in for it.
 
 *****************************************
 How to report a bug or ask for a feature?
@@ -135,9 +159,8 @@ This is a very frequent question; many would love to do that...
 
 Indeed, mail addresses must be unique in the database. It is a choice for the project on which several features are built:
 
-* lost password (since... always or almost),
-* login (since Galette 0.9),
-* ...
+* lost password,
+* login (since Galette 0.9).
 
 Making them non unique is not a solution we want to rely on. This would be complicated, and should be source of many bugs.
 
@@ -151,7 +174,7 @@ This allows finally to use a unique email address for several members in databas
 I forgot my password, what now?
 ********************************
 
-On the login page, click on **Lost your password?**, type your username or your email address, and follow the link of the email you receive. The link works once, and for 24 hours.
+On the login page, click on **Lost your password?**, type your username or your email address, and follow the link of the email you receive. The link works once, and for 24 hours. See :ref:`forgotten or new password <my_account_password>`.
 
 No email? Check your spam folder. If your member card has no email address, ask a staff member of your association to fix it, or to change your password for you.
 
@@ -166,7 +189,7 @@ A member cannot log in anymore
 Check, in this order:
 
 #. **Is the account active?** An inactive account cannot log in. Open the member card, and check the **Account** field in the **Galette-related data** part.
-#. **Has the member been blocked after too many failures?** After several wrong passwords in a row, Galette refuses further attempts for 15 minutes, even with the right password. Go to **Configuration**, then **Authentication attempts**: the account is listed there if it is blocked, and **Lift** unblocks it at once.
+#. **Has the member been blocked after too many failures?** After several wrong passwords in a row, Galette refuses further attempts for 15 minutes, even with the right password. Go to **Configuration**, then **Authentication attempts**: the account is listed there if it is blocked, and **Lift** unblocks it at once. See :ref:`authentication attempts <auth_attempts>`.
 #. **Is the password right?** If in doubt, the member can ask for a new one with **Lost your password?** on the login page.
 #. **Does the member use two-factor authentication?** See :ref:`my two-factor authentication codes are refused <faq_2fa>`.
 
@@ -179,7 +202,7 @@ Emails sent by Galette never arrive
 Go to **Configuration**, then **Settings**, **E-Mail** tab:
 
 * check that an **Emailing method** is selected, and that the **Sender Email** is an address of your association,
-* click on **Test connection**, then on **Send a test email**, to your own address.
+* click on **Test connection**, then on **Send a test email**, to your own address; see :ref:`testing the settings <mail_tests>`.
 
 If the test email does not arrive either, check your spam folder, then ask your web host or your mail provider which settings to use: many of them require sending through their SMTP server, with a username and a password.
 

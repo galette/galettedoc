@@ -24,6 +24,8 @@ If your association allows it, a **Register** button at the top of the page lets
 
 The language of the interface can be changed at any time from the list at the top right of the page.
 
+.. _my_account_password:
+
 Forgotten or new password
 =========================
 
@@ -60,6 +62,8 @@ The same pages are listed in the **My Account** menu, on the left:
 * **My information**.
 
 **Two-factor authentication** and **Add a child member** may also be listed there, when your association has enabled them.
+
+.. _my_account_information:
 
 My information
 ==============

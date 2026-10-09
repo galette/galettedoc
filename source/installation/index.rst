@@ -34,7 +34,7 @@ If you are using Linux, run the following commands (adapt the version if needed)
 
 The current stable version of Galette is |stable_version|. A `nightly archive <https://galette.eu/download/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../source_code>`.
 
-Alternatively, there is a community repository that provide `Galette as a Docker image <https://github.com/galette/docker>`_.
+Galette is also available as a Docker image and as a YunoHost application, see :doc:`other installation methods <other_methods>`.
 
 .. toctree::
    :maxdepth: 3
@@ -42,6 +42,7 @@ Alternatively, there is a community repository that provide `Galette as a Docker
    prerequis.rst
    preparation.rst
    galette.rst
+   other_methods.rst
    postinstall.rst
    update.rst
 

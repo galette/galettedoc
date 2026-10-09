@@ -62,7 +62,7 @@ There are several types of dynamic fields:
 * `boolean`: a checkbox,
 * `file`: add files.
 
-Dynamic fields can be added to the members, contributions and transactions forms, and to the :ref:`preferences <man_preferences>`. Go to **Configuration**, then **Dynamic fields**, pick the form, and click on **Add**.
+Dynamic fields can be added to the members, contributions and transactions forms, and to the :ref:`preferences <pref_dynamic_fields>`. Go to **Configuration**, then **Dynamic fields**, pick the form, and click on **Add**.
 
 .. warning::
 
@@ -151,7 +151,7 @@ Go to **Configuration**, then **Labels translation**, select the label, and type
 Emails contents
 ===============
 
-Depending on your configuration (see preferences), administrative emails cans be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example.
+Depending on your configuration (see :ref:`preferences <pref_email>`), administrative emails can be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example.
 
 Defaults are provided, but you can change them.
 

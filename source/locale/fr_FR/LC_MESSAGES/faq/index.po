@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:52+0200\n"
+"POT-Creation-Date: 2026-10-07 14:25+0200\n"
 "PO-Revision-Date: 2026-10-01 16:59+0000\n"
 "Last-Translator: alainP77 <alain.paris77@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-faq-"
@@ -43,7 +43,7 @@ msgstr "un message d'erreur est affiché,"
 msgid "a blank page,"
 msgstr "une page blanche,"
 
-#: ../faq/index.rst:15 ../faq/index.rst:140
+#: ../faq/index.rst:15
 msgid "..."
 msgstr "..."
 
@@ -150,19 +150,29 @@ msgstr ""
 "tel jusqu’à ce que l’horloge rattrape ce qui a été enregistré."
 
 #: ../faq/index.rst:45
-msgid "Set the server clock right first. Then, for the account concerned:"
+msgid ""
+"Set the server clock right first. Then, for the account concerned, from the "
+"machine hosting Galette (:ref:`see the command line <cli_twofactor_reset>`):"
 msgstr ""
-"Réglez l'horloge du serveur en premier lieu. Puis, pour le compte concerné :"
+"Réglez l'horloge du serveur en premier lieu. Puis, pour le compte concerné, "
+"depuis la machine hébergeant Galette (:ref:`voir la ligne de commande "
+"<cli_twofactor_reset>`) :"
 
-#: ../faq/index.rst:51
+#: ../faq/index.rst:51 ../faq/index.rst:63
 msgid "and, for the super administrator:"
 msgstr "et, pour le super administrateur :"
 
-#: ../faq/index.rst:58
+#: ../faq/index.rst:57
+msgid "Without access to the command line, the same can be done in database:"
+msgstr ""
+"Sans accès à la ligne de commande, la même opération peut se faire dans la "
+"base de données :"
+
+#: ../faq/index.rst:70
 msgid "I lost the device computing my codes"
 msgstr "J'ai perdu l'appareil générant mes codes"
 
-#: ../faq/index.rst:60
+#: ../faq/index.rst:72
 msgid ""
 "Use one of the ten recovery codes you were given when you enabled it: the "
 "field that asks for a code takes them too. Each one works once. Once logged "
@@ -175,7 +185,7 @@ msgstr ""
 "activez-le à nouveau sur votre nouvel appareil -- et conservez les nouveaux "
 "codes de récupération."
 
-#: ../faq/index.rst:62
+#: ../faq/index.rst:74
 msgid ""
 "If you have no recovery code left either, ask an administrator or a staff "
 "member of your association to :ref:`reset your second factor "
@@ -185,22 +195,29 @@ msgstr ""
 "à un membre du bureau de votre association de :ref:`réinitialiser votre "
 "deuxième facteur <member_2fa_reset>`."
 
-#: ../faq/index.rst:65
+#: ../faq/index.rst:77
 msgid "The super administrator cannot log in anymore"
 msgstr "Le super administrateur ne peut plus se connecter"
 
-#: ../faq/index.rst:67
+#: ../faq/index.rst:79
 msgid ""
 "That account is not a member, so nobody can reset it from the interface, and "
-"it has no recovery codes. Its second factor lives in the preferences, in "
-"database, which is where you clear it from:"
+"it has no recovery codes. Clear its second factor from the machine hosting "
+"Galette:"
 msgstr ""
 "Ce compte n'est pas un adhérent, donc personne ne peut le réinitialiser "
-"depuis l'interface, et il n'a aucun code de récupération. Son second facteur "
-"est dans les préférences, dans la base de données, c'est là que vous devez "
-"le supprimer :"
+"depuis l'interface, et il n'a aucun code de récupération. Supprimez son "
+"second facteur depuis la machine hébergeant Galette :"
 
-#: ../faq/index.rst:74
+#: ../faq/index.rst:85
+msgid ""
+"Its second factor lives in the preferences, so without access to the command "
+"line, it can be cleared in database:"
+msgstr ""
+"Son second facteur est dans les préférences : sans accès à la ligne de "
+"commande, il peut donc être supprimé dans la base de données :"
+
+#: ../faq/index.rst:92
 msgid ""
 "Replace ``galette_`` with your own table prefix if you changed it (the "
 "``PREFIX_DB`` setting of your configuration file). The next login asks for "
@@ -210,15 +227,20 @@ msgstr ""
 "changé (le paramètre ``PREFIX_DB`` de votre fichier de configuration). Le "
 "prochain login demande le mot de passe seul."
 
-#: ../faq/index.rst:76
+#: ../faq/index.rst:94
 msgid ""
-"To turn the second factor off for the whole instance at the same time -- the "
-"way out when something goes wrong for everybody at once -- add:"
+"To turn the second factor off for the whole instance -- the way out when "
+"something goes wrong for everybody at once -- run:"
 msgstr ""
-"Pour désactiver le second facteur pour l'ensemble de l'instance - une "
-"échappatoire lorsque quelque chose ne fonctionne pas - ajoutez :"
+"Pour désactiver le second facteur pour l'ensemble de l'instance - l'issue de "
+"secours lorsque quelque chose ne fonctionne plus pour tout le monde à la "
+"fois - lancez :"
 
-#: ../faq/index.rst:82
+#: ../faq/index.rst:100
+msgid "or, in database:"
+msgstr "ou, dans la base de données :"
+
+#: ../faq/index.rst:106
 msgid ""
 "Members who had enabled one keep it; they are simply no longer asked for a "
 "code until a policy is set again."
@@ -226,20 +248,21 @@ msgstr ""
 "Les membres qui en avaient activé un le gardent ; on ne leur demande "
 "simplement plus de code tant qu’une politique n’est pas à nouveau définie."
 
-#: ../faq/index.rst:86
+#: ../faq/index.rst:110
 msgid ""
-"Keep an access to your database at hand before you enable a second factor on "
-"the super administrator account. It is the only way back in for it."
+"Keep an access to the server hosting Galette -- its command line, or its "
+"database -- at hand before you enable a second factor on the super "
+"administrator account. It is the only way back in for it."
 msgstr ""
-"Gardez un accès à votre base de données sous la main avant d’activer un "
-"second facteur sur le compte du super-administrateur. C’est le seul moyen de "
-"revenir en arrière."
+"Gardez un accès au serveur hébergeant Galette - sa ligne de commande, ou sa "
+"base de données - sous la main avant d’activer un second facteur sur le "
+"compte du super-administrateur. C’est le seul moyen de revenir en arrière."
 
-#: ../faq/index.rst:90
+#: ../faq/index.rst:114
 msgid "How to report a bug or ask for a feature?"
 msgstr "Comment rapporter un bogue ou demander une fonctionnalité ?"
 
-#: ../faq/index.rst:92
+#: ../faq/index.rst:116
 msgid ""
 "Bugs reports as well as RFE (Request For Enhancement) must be done on the "
 "`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
@@ -250,7 +273,7 @@ msgstr ""
 "galette>`_, pour Galette elle même, tous les plugins officiels et aussi pour "
 "la documentation."
 
-#: ../faq/index.rst:96
+#: ../faq/index.rst:120
 msgid ""
 "Unless you are sure you know, please do not attribute the ticket and do not "
 "set target version. It will be done when it is taken into account."
@@ -259,41 +282,41 @@ msgstr ""
 "ticket et de ne pas définir la version cible. Cela sera fait lorsque le "
 "ticket sera pris en compte."
 
-#: ../faq/index.rst:98
+#: ../faq/index.rst:122
 msgid "If you have doubts, feel free to ask your questions on mailing lists ;)"
 msgstr ""
 "Si vous avez des doutes, n'hésitez pas à poser vos questions sur les listes "
 "de diffusion ;)"
 
-#: ../faq/index.rst:101
+#: ../faq/index.rst:125
 msgid "Report a bug"
 msgstr "Rapporter un bogue"
 
-#: ../faq/index.rst:103
+#: ../faq/index.rst:127
 msgid "Please, do not forget to:"
 msgstr "S'il vous plaît, n'oubliez pas de :"
 
-#: ../faq/index.rst:105
+#: ../faq/index.rst:129
 msgid "tell us the Galette version you are using,"
 msgstr "nous dire quelle version de Galette vous utilisez,"
 
-#: ../faq/index.rst:106
+#: ../faq/index.rst:130
 msgid "be clear and concise,"
 msgstr "être clair et concis,"
 
-#: ../faq/index.rst:107
+#: ../faq/index.rst:131
 msgid "to provide all required information in order to reproduce the issue"
 msgstr "fournir toutes les informations pour reproduire le problème"
 
-#: ../faq/index.rst:108
+#: ../faq/index.rst:132
 msgid "to provide related logs entries."
 msgstr "de fournir les entrées de logs adéquates."
 
-#: ../faq/index.rst:111
+#: ../faq/index.rst:135
 msgid "Request For Enhancement"
 msgstr "Demande de fonctionnalités"
 
-#: ../faq/index.rst:113
+#: ../faq/index.rst:137
 msgid ""
 "Make sure to be precise as well on RFEs. Developers may not guess what you "
 "have in mind, you have to explain them, event if this seems obvious to "
@@ -306,7 +329,7 @@ msgstr ""
 "sont marquées comme « Souhaits », et déplacées par les développeurs lorsque "
 "le travail commence."
 
-#: ../faq/index.rst:116
+#: ../faq/index.rst:140
 msgid ""
 "Once you made your wishes, you can `submit it to a vote <https://"
 "vote.galette.eu/>`_, most wanted features may catch devs attention."
@@ -315,11 +338,11 @@ msgstr ""
 "vote.galette.eu/>`_, les demandes les plus plébiscitées pourraient retenir "
 "l'attention des développeurs."
 
-#: ../faq/index.rst:120
+#: ../faq/index.rst:144
 msgid "How to search in lists archives?"
 msgstr "Comment chercher dans les archives des listes ?"
 
-#: ../faq/index.rst:122
+#: ../faq/index.rst:146
 msgid ""
 "Mailing lists are the main communication channel for Galette, from its "
 "beginnings."
@@ -327,7 +350,7 @@ msgstr ""
 "Les listes de diffusion sont le canal principal de communication pour "
 "Galette, depuis ses débuts."
 
-#: ../faq/index.rst:124
+#: ../faq/index.rst:148
 msgid ""
 "See `contact page <https://galette.eu/site/contact#mailing-lists>`_ for more "
 "information."
@@ -335,7 +358,7 @@ msgstr ""
 "Consultez `la page de contact <https://galette.eu/site/contact#mailing-"
 "lists>`_ pour plus d'informations ."
 
-#: ../faq/index.rst:126
+#: ../faq/index.rst:150
 msgid ""
 "The most simple and reliable way to `search on past Galette related "
 "discussion <https://www.mail-archive.com/search?l=all&q=galette&a=1>`_ is to "
@@ -346,22 +369,22 @@ msgstr ""
 "l=all&q=galette&a=1>`_ est d'effectuer une requêtes via les services de mail "
 "archive."
 
-#: ../faq/index.rst:130
+#: ../faq/index.rst:154
 msgid "How to use same email address for several members?"
 msgstr ""
 "Comment utiliser une même adresse de courriel pour plusieurs adhérents ?"
 
-#: ../faq/index.rst:132
+#: ../faq/index.rst:156
 msgid "This is a very frequent question; many would love to do that..."
 msgstr ""
 "C'est une question très fréquente, beaucoup souhaiteraient pouvoir faire "
 "ça..."
 
-#: ../faq/index.rst:134
+#: ../faq/index.rst:158
 msgid "**This is not possible.**"
 msgstr "**Ce n'est pas possible.**"
 
-#: ../faq/index.rst:136
+#: ../faq/index.rst:160
 msgid ""
 "Indeed, mail addresses must be unique in the database. It is a choice for "
 "the project on which several features are built:"
@@ -370,15 +393,15 @@ msgstr ""
 "données. C'est un choix du projet sur lequel plusieurs fonctionnalités "
 "reposent :"
 
-#: ../faq/index.rst:138
-msgid "lost password (since... always or almost),"
-msgstr "récupération du mot de passe (depuis... toujours ou presque),"
+#: ../faq/index.rst:162
+msgid "lost password,"
+msgstr "la récupération du mot de passe,"
 
-#: ../faq/index.rst:139
-msgid "login (since Galette 0.9),"
-msgstr "la connexion (depuis Galette 0.9),"
+#: ../faq/index.rst:163
+msgid "login (since Galette 0.9)."
+msgstr "la connexion (depuis Galette 0.9)."
 
-#: ../faq/index.rst:142
+#: ../faq/index.rst:165
 msgid ""
 "Making them non unique is not a solution we want to rely on. This would be "
 "complicated, and should be source of many bugs."
@@ -386,7 +409,7 @@ msgstr ""
 "Les rendre non uniques n'est pas une solution que nous souhaitons mettre en "
 "œuvre. Ce serait compliqué, et source de nombreux bogues."
 
-#: ../faq/index.rst:144
+#: ../faq/index.rst:167
 msgid ""
 "However, it is possible in Galette to :ref:`link several members "
 "<linkmembers>`. That way, some information such as email and postal "
@@ -397,7 +420,7 @@ msgstr ""
 "courriel ou postale seront récupérées depuis la fiche parent si elles "
 "manquent."
 
-#: ../faq/index.rst:146
+#: ../faq/index.rst:169
 msgid ""
 "This allows finally to use a unique email address for several members in "
 "database; but they are not duplicates in database."
@@ -405,21 +428,23 @@ msgstr ""
 "Cela permet au final d'utiliser une même adresse de courriel pour plusieurs "
 "adhérents en base ; mais sans que ce soit dupliqué dans la base de données."
 
-#: ../faq/index.rst:152
+#: ../faq/index.rst:175
 msgid "I forgot my password, what now?"
 msgstr "J'ai oublié mon mot de passe, que faire ?"
 
-#: ../faq/index.rst:154
+#: ../faq/index.rst:177
 msgid ""
 "On the login page, click on **Lost your password?**, type your username or "
 "your email address, and follow the link of the email you receive. The link "
-"works once, and for 24 hours."
+"works once, and for 24 hours. See :ref:`forgotten or new password "
+"<my_account_password>`."
 msgstr ""
 "Sur la page de connexion, cliquez sur **Mot de passe perdu ?**, saisissez "
 "votre identifiant ou votre adresse courriel, et suivez le lien du courriel "
-"reçu. Le lien ne sert qu'une fois, et pendant 24 heures."
+"reçu. Le lien ne sert qu'une fois, et pendant 24 heures. Voir :ref:`mot de "
+"passe oublié ou nouveau <my_account_password>`."
 
-#: ../faq/index.rst:156
+#: ../faq/index.rst:179
 msgid ""
 "No email? Check your spam folder. If your member card has no email address, "
 "ask a staff member of your association to fix it, or to change your password "
@@ -429,7 +454,7 @@ msgstr ""
 "d'adresse courriel, demandez à un membre du bureau de votre association de "
 "la compléter, ou de changer votre mot de passe pour vous."
 
-#: ../faq/index.rst:158
+#: ../faq/index.rst:181
 msgid ""
 "The **super administrator** is not a member and cannot use this form. Its "
 "password can be changed :ref:`from the command line "
@@ -439,15 +464,15 @@ msgstr ""
 "formulaire. Son mot de passe peut être changé :ref:`en ligne de commande "
 "<cli_superadmin_password>`, par la personne qui gère le serveur."
 
-#: ../faq/index.rst:164
+#: ../faq/index.rst:187
 msgid "A member cannot log in anymore"
 msgstr "Un adhérent ne peut plus se connecter"
 
-#: ../faq/index.rst:166
+#: ../faq/index.rst:189
 msgid "Check, in this order:"
 msgstr "Vérifiez, dans cet ordre :"
 
-#: ../faq/index.rst:168
+#: ../faq/index.rst:191
 msgid ""
 "**Is the account active?** An inactive account cannot log in. Open the "
 "member card, and check the **Account** field in the **Galette-related data** "
@@ -457,21 +482,22 @@ msgstr ""
 "Ouvrez la fiche de l'adhérent, et vérifiez le champ **Compte** dans la "
 "partie **Informations relatives à Galette**."
 
-#: ../faq/index.rst:169
+#: ../faq/index.rst:192
 msgid ""
 "**Has the member been blocked after too many failures?** After several wrong "
 "passwords in a row, Galette refuses further attempts for 15 minutes, even "
 "with the right password. Go to **Configuration**, then **Authentication "
 "attempts**: the account is listed there if it is blocked, and **Lift** "
-"unblocks it at once."
+"unblocks it at once. See :ref:`authentication attempts <auth_attempts>`."
 msgstr ""
 "**L'adhérent a-t-il été bloqué après trop d'échecs ?** Après plusieurs mots "
 "de passe erronés à la suite, Galette refuse les tentatives suivantes pendant "
 "15 minutes, même avec le bon mot de passe. Allez dans **Configuration**, "
 "puis **Tentatives d'authentification** : le compte y figure s'il est bloqué, "
-"et **Lever** le débloque tout de suite."
+"et **Lever** le débloque tout de suite. Voir :ref:`tentatives "
+"d'authentification <auth_attempts>`."
 
-#: ../faq/index.rst:170
+#: ../faq/index.rst:193
 msgid ""
 "**Is the password right?** If in doubt, the member can ask for a new one "
 "with **Lost your password?** on the login page."
@@ -479,7 +505,7 @@ msgstr ""
 "**Le mot de passe est-il le bon ?** En cas de doute, l'adhérent peut en "
 "demander un nouveau avec **Mot de passe perdu ?** sur la page de connexion."
 
-#: ../faq/index.rst:171
+#: ../faq/index.rst:194
 msgid ""
 "**Does the member use two-factor authentication?** See :ref:`my two-factor "
 "authentication codes are refused <faq_2fa>`."
@@ -488,16 +514,16 @@ msgstr ""
 "Voir :ref:`mes codes d'authentification à deux facteurs sont refusés "
 "<faq_2fa>`."
 
-#: ../faq/index.rst:177
+#: ../faq/index.rst:200
 msgid "Emails sent by Galette never arrive"
 msgstr "Les courriels envoyés par Galette n'arrivent jamais"
 
-#: ../faq/index.rst:179
+#: ../faq/index.rst:202
 msgid "Go to **Configuration**, then **Settings**, **E-Mail** tab:"
 msgstr ""
 "Allez dans **Configuration**, puis **Préférences**, onglet **Courriel** :"
 
-#: ../faq/index.rst:181
+#: ../faq/index.rst:204
 msgid ""
 "check that an **Emailing method** is selected, and that the **Sender Email** "
 "is an address of your association,"
@@ -505,15 +531,16 @@ msgstr ""
 "vérifiez qu'une **Méthode d'envoi des courriels** est choisie, et que le "
 "**Courriel expéditeur** est une adresse de votre association,"
 
-#: ../faq/index.rst:182
+#: ../faq/index.rst:205
 msgid ""
 "click on **Test connection**, then on **Send a test email**, to your own "
-"address."
+"address; see :ref:`testing the settings <mail_tests>`."
 msgstr ""
 "cliquez sur **Tester la connexion**, puis sur **Envoyer un courriel de "
-"test**, vers votre propre adresse."
+"test**, vers votre propre adresse ; voir :ref:`tester les réglages "
+"<mail_tests>`."
 
-#: ../faq/index.rst:184
+#: ../faq/index.rst:207
 msgid ""
 "If the test email does not arrive either, check your spam folder, then ask "
 "your web host or your mail provider which settings to use: many of them "
@@ -524,7 +551,7 @@ msgstr ""
 "messagerie quels réglages utiliser : beaucoup imposent de passer par leur "
 "serveur SMTP, avec un identifiant et un mot de passe."
 
-#: ../faq/index.rst:186
+#: ../faq/index.rst:209
 msgid ""
 "If the test email arrives but mailings do not, your mail provider may limit "
 "how many messages you can send per hour or per day; see :ref:`sending limits "
@@ -534,11 +561,11 @@ msgstr ""
 "messagerie limite peut-être le nombre de messages par heure ou par jour ; "
 "voir les :ref:`limites d'envoi <mail_throttling>`."
 
-#: ../faq/index.rst:192
+#: ../faq/index.rst:215
 msgid "How do I renew a membership?"
 msgstr "Comment renouveler une adhésion ?"
 
-#: ../faq/index.rst:194
+#: ../faq/index.rst:217
 msgid ""
 "Simply record the new membership fee: go to **Contributions**, then **Add a "
 "membership fee**, select the member, the contribution type and the amount. "
@@ -553,7 +580,7 @@ msgstr ""
 "l'adhérent renouvelle en avance. Voir les :ref:`règles de gestion "
 "<man_generalites>`."
 
-#: ../faq/index.rst:196
+#: ../faq/index.rst:219
 msgid "To remind late members to renew, see :ref:`reminders <reminders>`."
 msgstr ""
 "Pour relancer les adhérents en retard, voir les :ref:`relances <reminders>`."

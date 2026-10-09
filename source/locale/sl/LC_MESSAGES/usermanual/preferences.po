@@ -2,12 +2,13 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:20+0200\n"
-"PO-Revision-Date: 2026-10-03 12:35+0000\n"
+"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"PO-Revision-Date: 2026-10-08 20:45+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-preferences/sl/>\n"
@@ -72,10 +73,8 @@ msgid "**Town**,"
 msgstr "**Mesto**,"
 
 #: ../usermanual/preferences.rst:26
-#, fuzzy
-#| msgid "**Town**,"
 msgid "**Region**,"
-msgstr "**Mesto**,"
+msgstr "**Regija**,"
 
 #: ../usermanual/preferences.rst:27
 msgid "**Country**,"
@@ -102,10 +101,8 @@ msgid ""
 msgstr ""
 
 #: ../usermanual/preferences.rst:34
-#, fuzzy
-#| msgid "**Name**: name of the association,"
 msgid "**E-Mail**: the contact email address of the association,"
-msgstr "**Ime**: ime združenja,"
+msgstr "**E-mail**: kontaktni elektronski naslov društva,"
 
 #: ../usermanual/preferences.rst:35
 msgid "**Website**: website URL,"
@@ -282,7 +279,7 @@ msgid ""
 "**Default** visibility for the pages that are not listed, including the ones "
 "of plugins. Each page can be shown to **Everyone**, to **Up to date "
 "members**, to **Admin and staff only**, be **Hidden**, or **Inherit** the "
-"default,"
+"default; see :ref:`public pages <man_public_pages>`,"
 msgstr ""
 
 #: ../usermanual/preferences.rst:84
@@ -520,34 +517,34 @@ msgstr ""
 msgid "Galette settings, rights tab"
 msgstr "Nastavitve Galette, zavihek s pravicami"
 
-#: ../usermanual/preferences.rst:140
+#: ../usermanual/preferences.rst:142
 msgid "E-Mail"
 msgstr "E-pošta"
 
-#: ../usermanual/preferences.rst:142
+#: ../usermanual/preferences.rst:144
 msgid "Sending email parameters:"
 msgstr "Parametri pošiljanja e-pošte:"
 
-#: ../usermanual/preferences.rst:144
+#: ../usermanual/preferences.rst:146
 msgid "Galette settings, e-mail tab"
 msgstr "Nastavitve Galette, zavihek e-pošte"
 
-#: ../usermanual/preferences.rst:149
+#: ../usermanual/preferences.rst:151
 msgid "**Sender name**: name of the sender,"
 msgstr "**Ime pošiljatelja**: ime pošiljatelja,"
 
-#: ../usermanual/preferences.rst:150
+#: ../usermanual/preferences.rst:152
 msgid "**Sender email**: email address of the sender,"
 msgstr "**E-poštni naslov pošiljatelja**: e-poštni naslov pošiljatelja,"
 
-#: ../usermanual/preferences.rst:151
+#: ../usermanual/preferences.rst:153
 msgid ""
 "**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 "**E-poštni naslov za odgovor**: e-poštni naslov za odgovor. Če je polje "
 "prazno, bo uporabljen e-poštni naslov pošiljatelja,"
 
-#: ../usermanual/preferences.rst:152
+#: ../usermanual/preferences.rst:154
 msgid ""
 "**Members administrator email**: email address on which inscription "
 "notifications will be send, you can set several addresses separated with "
@@ -557,7 +554,7 @@ msgstr ""
 "bodo poslana obvestila o vpisu, lahko nastavite več naslovov, ločenih z "
 "vejicami,"
 
-#: ../usermanual/preferences.rst:153
+#: ../usermanual/preferences.rst:155
 msgid ""
 "**Send emails to administrators**: whether to send emails to administrators "
 "on subscription,"
@@ -565,7 +562,7 @@ msgstr ""
 "**Pošlji e-pošto skrbnikom**: ali naj se skrbnikom, ki so naročniki, pošilja "
 "e-pošto,"
 
-#: ../usermanual/preferences.rst:154
+#: ../usermanual/preferences.rst:156
 msgid ""
 "**Wrap text emails**: automatically wraps long lines in emails. If you "
 "disable this options, make sure to wrap yourself,"
@@ -574,7 +571,7 @@ msgstr ""
 "poštnih sporočilih. Če to možnost onemogočite, se prepričajte, da se prelomi "
 "tudi sami,"
 
-#: ../usermanual/preferences.rst:155
+#: ../usermanual/preferences.rst:157
 msgid ""
 "**Send emails to members**: whether to send emails to members when their "
 "information are updated or a contribution is created on their behalf,"
@@ -582,7 +579,7 @@ msgstr ""
 "**Pošlji e-pošto članom**: ali naj se članom pošlje e-pošta, ko so njihovi "
 "podatki posodobljeni ali ko je v njihovem imenu ustvarjen prispevek,"
 
-#: ../usermanual/preferences.rst:156
+#: ../usermanual/preferences.rst:158
 msgid ""
 "**Activate HTML editor**: activate HTML format when sending emails "
 "(discouraged),"
@@ -590,17 +587,17 @@ msgstr ""
 "**Aktiviraj urejevalnik HTML**: aktiviraj obliko HTML pri pošiljanju e-pošte "
 "(odsvetovano),"
 
-#: ../usermanual/preferences.rst:157
+#: ../usermanual/preferences.rst:159
 msgid "**Emailing method**: method used to send emails:"
 msgstr "**Način pošiljanja e-pošte**: način, uporabljen za pošiljanje e-pošte:"
 
-#: ../usermanual/preferences.rst:159
+#: ../usermanual/preferences.rst:161
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr ""
 "**Pošiljanje e-pošte onemogočeno**: Galette ne bo pošiljala nobenih e-"
 "poštnih sporočil,"
 
-#: ../usermanual/preferences.rst:160
+#: ../usermanual/preferences.rst:162
 msgid ""
 "**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
 "parameters (recommended when possible),"
@@ -608,7 +605,7 @@ msgstr ""
 "**PHP funkcija pošte**: uporablja PHP funkcijo ``mail()`` in povezane "
 "parametre (priporočeno, kadar je mogoče),"
 
-#: ../usermanual/preferences.rst:161
+#: ../usermanual/preferences.rst:163
 msgid ""
 "**Using a SMTP server**: uses an external SMTP server to configure (will be "
 "slower than PHP ``mail()`` function),"
@@ -616,11 +613,11 @@ msgstr ""
 "**Uporaba strežnika SMTP**: za konfiguracijo uporablja zunanji strežnik SMTP "
 "(bo počasnejše od funkcije PHP ``mail()``),"
 
-#: ../usermanual/preferences.rst:162
+#: ../usermanual/preferences.rst:164
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr "**Uporaba strežnika sendmail**: uporablja lokalni strežnik sendmail,"
 
-#: ../usermanual/preferences.rst:164
+#: ../usermanual/preferences.rst:166
 msgid ""
 "**Mail signature**: signature added to all sent emails. Available variables "
 "are displayed in the inline help from the application."
@@ -628,7 +625,7 @@ msgstr ""
 "**Podpis pošte**: podpis je dodan vsem poslanim e-poštnim sporočilom. "
 "Razpoložljive spremenljivke so prikazane v pomoči v aplikaciji."
 
-#: ../usermanual/preferences.rst:168
+#: ../usermanual/preferences.rst:170
 msgid ""
 "The **qmail** method has been removed. Instances still configured with it "
 "are switched to ``sendmail`` when the database is updated."
@@ -636,7 +633,7 @@ msgstr ""
 "Metoda **qmail** je bila odstranjena. Primerki, ki so še vedno konfigurirani "
 "z njim, se preklopijo na ``sendmail``, ko je baza podatkov posodobljena."
 
-#: ../usermanual/preferences.rst:169
+#: ../usermanual/preferences.rst:171
 msgid ""
 "The **GMail** method has been removed. Instances still configured with it "
 "are switched to ``SMTP`` when the database is updated."
@@ -644,25 +641,25 @@ msgstr ""
 "Metoda **GMail** je bila odstranjena. Primerki, ki so še vedno konfigurirani "
 "z njim, se preklopijo na ``SMTP``, ko je baza podatkov posodobljena."
 
-#: ../usermanual/preferences.rst:171
+#: ../usermanual/preferences.rst:173
 msgid ""
 "When using SMTP, you will have to configure user name and password to use."
 msgstr ""
 "Ko uporabljate SMTP, boste morali konfigurirati uporabniško ime in geslo."
 
-#: ../usermanual/preferences.rst:173
+#: ../usermanual/preferences.rst:175
 msgid "SMTP configuration is a bit more complex :"
 msgstr "Konfiguracija SMTP je nekoliko bolj zapletena:"
 
-#: ../usermanual/preferences.rst:175
+#: ../usermanual/preferences.rst:177
 msgid "**SMTP server**: server address, required,"
 msgstr "**SMTP strežnik**: naslov strežnika, obvezno,"
 
-#: ../usermanual/preferences.rst:176
+#: ../usermanual/preferences.rst:178
 msgid "**SMTP port**: server port, required,"
 msgstr "**Vrata SMTP**: vrata strežnika, obvezno,"
 
-#: ../usermanual/preferences.rst:177
+#: ../usermanual/preferences.rst:179
 msgid ""
 "**Use SMTP authentication**: if your server requires an authentication. In "
 "this case, you will also have to set username and password,"
@@ -670,17 +667,17 @@ msgstr ""
 "**Uporabi overjanje SMTP**: če vaš strežnik zahteva overjanje. V tem primeru "
 "boste morali nastaviti tudi uporabniško ime in geslo,"
 
-#: ../usermanual/preferences.rst:178
+#: ../usermanual/preferences.rst:180
 msgid ""
 "**SMTP user** and **SMTP password**: the credentials given by your mail "
 "provider. Leave the password empty to keep the current one,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:179
+#: ../usermanual/preferences.rst:181
 msgid "**Use TLS for SMTP**: enable SSL support,"
 msgstr "**Uporabi TLS za SMTP**: omogoči podporo za SSL,"
 
-#: ../usermanual/preferences.rst:180
+#: ../usermanual/preferences.rst:182
 msgid ""
 "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
 "signed for example)."
@@ -688,46 +685,46 @@ msgstr ""
 "**Dovoli nezaščiten TLS**: v nekaterih primerih je lahko potrdilo SSL "
 "neveljavno (na primer samopodpisano)."
 
-#: ../usermanual/preferences.rst:185
+#: ../usermanual/preferences.rst:187
 msgid "Testing the settings"
 msgstr ""
 
-#: ../usermanual/preferences.rst:189
+#: ../usermanual/preferences.rst:191
 msgid ""
 "Two buttons, under the emailing method, check your settings before you rely "
 "on them:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:191
+#: ../usermanual/preferences.rst:193
 msgid "Testing the email settings"
-msgstr ""
+msgstr "Preizkusne nastavitve e-pošte"
 
-#: ../usermanual/preferences.rst:196
+#: ../usermanual/preferences.rst:198
 msgid ""
 "**Test connection** connects to the mail server and checks that it accepts "
 "your settings, without sending anything,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:197
+#: ../usermanual/preferences.rst:199
 msgid "**Send a test email** sends a message, to make sure it really arrives."
 msgstr ""
 
-#: ../usermanual/preferences.rst:199
+#: ../usermanual/preferences.rst:201
 msgid ""
 "Tests run on the settings displayed in the form, even those that are not "
 "saved yet: you can try several values, and save once it works. Nothing can "
 "be tested when **Emailing disabled** is selected."
 msgstr ""
 
-#: ../usermanual/preferences.rst:204
+#: ../usermanual/preferences.rst:206
 msgid "Sending limits"
 msgstr "Omejitve pošiljanja"
 
-#: ../usermanual/preferences.rst:210
+#: ../usermanual/preferences.rst:212
 msgid "This is an **experimental** feature."
 msgstr "To je **eksperimentalna** funkcija."
 
-#: ../usermanual/preferences.rst:212
+#: ../usermanual/preferences.rst:214
 msgid ""
 "Try it on a test instance before your production one, watch carefully, and "
 "`report what you find <https://bugs.galette.eu>`_. Leaving the settings at "
@@ -737,7 +734,7 @@ msgstr ""
 "`poročajte, kaj boste našli <https://bugs.galette.eu>`_. Če pustite privzete "
 "nastavitve, Galette pošilja točno tako, kot je vedno."
 
-#: ../usermanual/preferences.rst:214
+#: ../usermanual/preferences.rst:216
 msgid ""
 "Mail servers are rarely willing to accept anything you throw at them. They "
 "restrict the number of recipients a single message may carry, the number of "
@@ -751,7 +748,7 @@ msgstr ""
 "lahko pošljete na uro ali na dan. Galette lahko upošteva te omejitve s "
 "petimi nastavitvami strani :ref:`napredna konfiguracija <advanced_config>`:"
 
-#: ../usermanual/preferences.rst:216
+#: ../usermanual/preferences.rst:218
 msgid ""
 "``pref_mail_batch_size``: maximum number of recipients per message. ``0``, "
 "the default, keeps the historical behavior: one single message carrying "
@@ -761,7 +758,7 @@ msgstr ""
 "privzeto, ohranja zgodovinsko vedenje: eno samo sporočilo, ki nosi vsakega "
 "prejemnika v slepi kopiji,"
 
-#: ../usermanual/preferences.rst:217
+#: ../usermanual/preferences.rst:219
 msgid ""
 "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by "
 "default, no pause,"
@@ -769,7 +766,7 @@ msgstr ""
 "``pref_mail_batch_delay``: premor v sekundah med dvema sporočiloma. privzeto "
 "``0``, brez premora,"
 
-#: ../usermanual/preferences.rst:218
+#: ../usermanual/preferences.rst:220
 msgid ""
 "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, "
 "the default, means no limit,"
@@ -777,7 +774,7 @@ msgstr ""
 "``pref_mail_hourly_limit``: največje število prejemnikov na uro. ``0``, "
 "privzeto, pomeni brez omejitve,"
 
-#: ../usermanual/preferences.rst:219
+#: ../usermanual/preferences.rst:221
 msgid ""
 "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the "
 "default, means no limit,"
@@ -785,7 +782,7 @@ msgstr ""
 "``pref_mail_daily_limit``: največje število prejemnikov na dan. ``0``, "
 "privzeto, pomeni brez omejitve,"
 
-#: ../usermanual/preferences.rst:220
+#: ../usermanual/preferences.rst:222
 msgid ""
 "``pref_mail_smtp_keepalive``: keep the SMTP connection open across the "
 "messages of a mailing instead of reconnecting for each one. Enabled by "
@@ -795,7 +792,7 @@ msgstr ""
 "sporočili v poštnem sporočilu, namesto da se ponovno poveže za vsako "
 "posebej. Privzeto omogočeno."
 
-#: ../usermanual/preferences.rst:222
+#: ../usermanual/preferences.rst:224
 msgid ""
 "Apart from the keepalive, they all ship disabled: an instance that is "
 "updated behaves exactly as it did before."
@@ -803,7 +800,7 @@ msgstr ""
 "Razen ohranjanja delovanja so vsi onemogočeni: primerek, ki je posodobljen, "
 "se obnaša natanko tako, kot se je prej."
 
-#: ../usermanual/preferences.rst:224
+#: ../usermanual/preferences.rst:226
 msgid ""
 "Filter the advanced configuration on ``pref_mail_`` to get them all, next to "
 "the SMTP settings. The four that drive the queue carry the **alpha** marker:"
@@ -812,11 +809,11 @@ msgstr ""
 "poleg nastavitev SMTP. Štirje, ki poganjajo čakalno vrsto, nosijo oznako "
 "**alfa**:"
 
-#: ../usermanual/preferences.rst:226
+#: ../usermanual/preferences.rst:228
 msgid "The sending limits, in the advanced configuration"
 msgstr "Omejitve pošiljanja v napredni konfiguraciji"
 
-#: ../usermanual/preferences.rst:231
+#: ../usermanual/preferences.rst:233
 msgid ""
 "Refer to your mail provider's documentation for the values to use, along "
 "with the SMTP settings."
@@ -824,7 +821,7 @@ msgstr ""
 "Za vrednosti, ki jih želite uporabiti, skupaj z nastavitvami SMTP, si "
 "oglejte dokumentacijo ponudnika e-pošte."
 
-#: ../usermanual/preferences.rst:235
+#: ../usermanual/preferences.rst:237
 msgid ""
 "The hourly and daily limits are what turns sending into a :ref:`queue "
 "<mailing_queue>`: as soon as one of them is set, a mailing can no longer be "
@@ -834,98 +831,98 @@ msgstr ""
 "vrsto <mailing_queue>`: takoj ko je ena od njiju nastavljena, sporočila ni "
 "več mogoče poslati v nalaganju ene strani."
 
-#: ../usermanual/preferences.rst:239
+#: ../usermanual/preferences.rst:241
 msgid ""
 "Limits count **recipients**, not messages, and for all messages Galette send."
 msgstr ""
 "Omejitve štejejo **prejemnike**, ne sporočil, in za vsa sporočila, ki jih "
 "pošlje Galette."
 
-#: ../usermanual/preferences.rst:241
+#: ../usermanual/preferences.rst:243
 msgid "The real limit of course depends on all usages of configured server."
 msgstr ""
 "Realna omejitev je seveda odvisna od vseh uporab konfiguriranega strežnika."
 
-#: ../usermanual/preferences.rst:244
+#: ../usermanual/preferences.rst:246
 msgid "Labels"
 msgstr "Oznake"
 
-#: ../usermanual/preferences.rst:246
+#: ../usermanual/preferences.rst:248
 msgid "Galette settings, labels tab"
 msgstr "Nastavitve Galette, zavihek z oznakami"
 
-#: ../usermanual/preferences.rst:251
+#: ../usermanual/preferences.rst:253
 msgid ""
 "This tab describes the sheets of self-adhesive labels you print the "
 "addresses of your members on. All sizes are in millimeters:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:253
+#: ../usermanual/preferences.rst:255
 msgid ""
 "**Vertical margins** and **Horizontal margins**: the blank space around the "
 "labels, on the edges of the sheet,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:254
+#: ../usermanual/preferences.rst:256
 msgid ""
 "**Vertical spacing** and **Horizontal spacing**: the blank space between two "
 "labels,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:255
+#: ../usermanual/preferences.rst:257
 msgid "**Label width** and **Label height**: the size of one label,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:256
+#: ../usermanual/preferences.rst:258
 msgid ""
 "**Number of label columns** and **Number of label lines**: how many labels a "
 "sheet holds,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:257
+#: ../usermanual/preferences.rst:259
 msgid "**Font size**: the size of the text printed on the labels,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:258
+#: ../usermanual/preferences.rst:260
 msgid ""
 "**Print border**: print a grey border around each label, handy for a first "
 "try on plain paper."
 msgstr ""
 
-#: ../usermanual/preferences.rst:260
+#: ../usermanual/preferences.rst:262
 msgid "The values usually are written on the box of the labels."
 msgstr ""
 
-#: ../usermanual/preferences.rst:263
+#: ../usermanual/preferences.rst:265
 msgid "Cards"
 msgstr "Izkaznice"
 
-#: ../usermanual/preferences.rst:265
+#: ../usermanual/preferences.rst:267
 msgid "Galette settings, cards tab"
 msgstr "Nastavitve Galette, zavihek s karticami"
 
-#: ../usermanual/preferences.rst:270
+#: ../usermanual/preferences.rst:272
 msgid "This tab sets the content and the look of the member cards:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:272
+#: ../usermanual/preferences.rst:274
 msgid ""
 "**Short Text (Card Center)**: a short text printed in the middle of the "
 "card, 10 characters at most; the acronym of your association for example,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:273
+#: ../usermanual/preferences.rst:275
 msgid ""
 "**Long Text (Bottom Line)**: a text printed at the bottom of the card, 65 "
 "characters at most,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:274
+#: ../usermanual/preferences.rst:276
 msgid ""
 "**Strip Text Color**: the color of the text written on the bottom strip,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:275
+#: ../usermanual/preferences.rst:277
 msgid ""
 "**Active Member Color**, **Board Members Color** and **Honor Members "
 "Color**: the color of the main texts and of the bottom strip, depending on "
@@ -933,55 +930,57 @@ msgid ""
 "members,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:276
+#: ../usermanual/preferences.rst:278
 msgid ""
 "**Logo**: a logo for printing, if the one of the association does not suit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:277
+#: ../usermanual/preferences.rst:279
 msgid ""
 "**Allow members to print card ?**: members can download their own card, as "
 "long as their membership is up to date,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:278
+#: ../usermanual/preferences.rst:280
 msgid "**Show title ?**: print the title (Mr., Mrs....) in front of the name,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:279
+#: ../usermanual/preferences.rst:281
 msgid ""
 "**Address type**: what is printed under the name: email, zip code and town, "
 "nickname, profession or member number,"
 msgstr ""
+"**Vrsta naslova**: kaj je natisnjeno pod imenom: e-pošta, poštna številka in "
+"kraj, vzdevek, poklic ali članska številka,"
 
-#: ../usermanual/preferences.rst:280
+#: ../usermanual/preferences.rst:282
 msgid ""
 "**Year**: the year printed on the card. It can be a year, two years "
 "separated with a slash (*2026/2027*), or ``DEADLINE`` to print the end of "
 "membership of each member,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:281
+#: ../usermanual/preferences.rst:283
 msgid ""
 "margins, spacing, width and height of the cards on the page, in millimeters."
 msgstr ""
 
-#: ../usermanual/preferences.rst:283
+#: ../usermanual/preferences.rst:285
 msgid "Colors are written in hexadecimal notation, ``#RRGGBB``."
 msgstr ""
 
-#: ../usermanual/preferences.rst:288
+#: ../usermanual/preferences.rst:290
 msgid "Dynamic fields"
-msgstr ""
+msgstr "Dinamična polja"
 
-#: ../usermanual/preferences.rst:292
+#: ../usermanual/preferences.rst:294
 msgid ""
 "You can add your own fields to the preferences, for information about your "
 "association that Galette does not know about: a registration number, a bank "
 "account number, the name of the president..."
 msgstr ""
 
-#: ../usermanual/preferences.rst:294
+#: ../usermanual/preferences.rst:296
 msgid ""
 "Create them from **Configuration**, then **Dynamic fields**, choosing the "
 "**Settings** form; see :ref:`dynamic fields <dynamic_fields>`. They are then "
@@ -989,18 +988,18 @@ msgid ""
 "<emails_contents>` and in :ref:`PDF models <pdf_models>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:299
+#: ../usermanual/preferences.rst:301
 msgid "Security"
 msgstr "Varnost"
 
-#: ../usermanual/preferences.rst:305
+#: ../usermanual/preferences.rst:307
 msgid ""
 "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 "Zapletena pravila za gesla niso uporabniku prijazna; varnost pa večinoma "
 "nikoli ni :)"
 
-#: ../usermanual/preferences.rst:307
+#: ../usermanual/preferences.rst:309
 msgid ""
 "Of course, all passwords should be as secure as possible, but this is "
 "especially true for all accounts that have privileges (staff, admin, super-"
@@ -1010,39 +1009,39 @@ msgstr ""
 "vse račune s privilegiji (zaposleni, skrbnik, super skrbnik); uporabnikom "
 "lahko razložite, zakaj je to pomembno."
 
-#: ../usermanual/preferences.rst:309
+#: ../usermanual/preferences.rst:311
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
 "Za gesla članov (in super-administratorjev) lahko uveljavite nekaj pravil:"
 
-#: ../usermanual/preferences.rst:311
+#: ../usermanual/preferences.rst:313
 msgid "minimum length (6 characters or more),"
 msgstr "minimalna dolžina (6 znakov ali več),"
 
-#: ../usermanual/preferences.rst:312
+#: ../usermanual/preferences.rst:314
 msgid "minimum \"strength\","
 msgstr "minimalna \"moč\","
 
-#: ../usermanual/preferences.rst:313
+#: ../usermanual/preferences.rst:315
 msgid "blacklist,"
 msgstr "črni seznam,"
 
-#: ../usermanual/preferences.rst:314
+#: ../usermanual/preferences.rst:316
 msgid "no personal information."
 msgstr "brez osebnih podatkov."
 
-#: ../usermanual/preferences.rst:316
+#: ../usermanual/preferences.rst:318
 msgid "Galette settings, security tab"
 msgstr "Nastavitve Galette, zavihek varnost"
 
-#: ../usermanual/preferences.rst:321
+#: ../usermanual/preferences.rst:323
 msgid ""
 "The **Test a password:** field, at the bottom of the tab, checks any "
 "password against the values currently selected; do not forget to save your "
 "preferences once you are happy with the result."
 msgstr ""
 
-#: ../usermanual/preferences.rst:323
+#: ../usermanual/preferences.rst:325
 msgid ""
 "Length is still the only rule that is active per default, just configure the "
 "number of characters required. On passwords fields, failures will be "
@@ -1053,7 +1052,7 @@ msgstr ""
 "zahtevano število znakov. V poljih za gesla se bodo napake prikazovale "
 "sproti, prav tako pa se bo prikazal \"merilnik moči\" za informacije."
 
-#: ../usermanual/preferences.rst:327
+#: ../usermanual/preferences.rst:329
 msgid ""
 "If you enable password checks, it is not possible to know if some of "
 "existing ones does not respect them. Galette will display a warning at login "
@@ -1063,7 +1062,7 @@ msgstr ""
 "obstoječih gesel ne upošteva. Galette bo ob prijavi prikazal opozorilo, če "
 "preverjanja niso upoštevana, vendar bo prijava še vedno mogoča!"
 
-#: ../usermanual/preferences.rst:329
+#: ../usermanual/preferences.rst:331
 msgid ""
 "But wait... Password security is important, but Galette does not enforce "
 "nothing! Isn't that dumb? Well, not really. For tests or entirely private "
@@ -1077,35 +1076,35 @@ msgstr ""
 "preveč omejevanja problem za vaše uporabnike; zato je odvisno od vas, da jo "
 "po potrebi zavarujete; tako kot uporabljate SSL ali ne :)"
 
-#: ../usermanual/preferences.rst:332
+#: ../usermanual/preferences.rst:334
 msgid "Password strength"
 msgstr "Moč gesla"
 
-#: ../usermanual/preferences.rst:334
+#: ../usermanual/preferences.rst:336
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr "Izračun moči gesla je precej preprost. Temelji na 4 pravilih:"
 
-#: ../usermanual/preferences.rst:336
+#: ../usermanual/preferences.rst:338
 msgid "contains lower case characters,"
 msgstr "vsebuje male črke,"
 
-#: ../usermanual/preferences.rst:337
+#: ../usermanual/preferences.rst:339
 msgid "contains upper case characters,"
 msgstr "vsebuje velike črke,"
 
-#: ../usermanual/preferences.rst:338
+#: ../usermanual/preferences.rst:340
 msgid "contains number,"
 msgstr "vsebuje številko,"
 
-#: ../usermanual/preferences.rst:339
+#: ../usermanual/preferences.rst:341
 msgid "contains special characters."
 msgstr "vsebuje posebne znake."
 
-#: ../usermanual/preferences.rst:341
+#: ../usermanual/preferences.rst:343
 msgid "You can choose between 5 values for strength configuration:"
 msgstr "Za konfiguracijo moči lahko izbirate med 5 vrednostmi:"
 
-#: ../usermanual/preferences.rst:343
+#: ../usermanual/preferences.rst:345
 msgid ""
 "**none**: (default): disables strength checks and check for personal "
 "information,"
@@ -1113,7 +1112,7 @@ msgstr ""
 "**brez**: (privzeto): onemogoči preverjanje moči in preverjanje osebnih "
 "podatkov,"
 
-#: ../usermanual/preferences.rst:344
+#: ../usermanual/preferences.rst:346
 msgid ""
 "**weaker**: enables check for personal information, only one of the rule is "
 "mandatory,"
@@ -1121,23 +1120,23 @@ msgstr ""
 "**šibkejše**: omogoča preverjanje osebnih podatkov, obvezno je le eno od "
 "pravil,"
 
-#: ../usermanual/preferences.rst:345
+#: ../usermanual/preferences.rst:347
 msgid "**medium**: two rules are mandatory,"
 msgstr "**srednje**: dve pravili sta obvezni,"
 
-#: ../usermanual/preferences.rst:346
+#: ../usermanual/preferences.rst:348
 msgid "**strong**: three rules are mandatory,"
 msgstr "**močno**: tri pravila so obvezna,"
 
-#: ../usermanual/preferences.rst:347
+#: ../usermanual/preferences.rst:349
 msgid "**very strong**: the four rules are mandatory."
 msgstr "**zelo močno**: štiri pravila so obvezna."
 
-#: ../usermanual/preferences.rst:350
+#: ../usermanual/preferences.rst:352
 msgid "Blacklisted passwords"
 msgstr "Gesla na črni listi"
 
-#: ../usermanual/preferences.rst:352
+#: ../usermanual/preferences.rst:354
 msgid ""
 "A default list of 500 common passwords is provided as a blacklist you can "
 "enable, \"galette\" is also blacklisted."
@@ -1145,7 +1144,7 @@ msgstr ""
 "Privzeti seznam 500 pogostih gesel je na voljo kot črni seznam, ki ga lahko "
 "omogočite, »galette« pa je prav tako na črnem seznamu."
 
-#: ../usermanual/preferences.rst:356
+#: ../usermanual/preferences.rst:358
 msgid ""
 "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms "
 "(one per line). You can provide your own file, we advice you to complete the "
@@ -1155,11 +1154,11 @@ msgstr ""
 "črnem seznamu (enega na vrstico). Lahko posredujete svojo datoteko, "
 "priporočamo pa, da izpolnite obstoječo."
 
-#: ../usermanual/preferences.rst:359
+#: ../usermanual/preferences.rst:361
 msgid "Personal information as password"
 msgstr "Osebni podatki kot geslo"
 
-#: ../usermanual/preferences.rst:361
+#: ../usermanual/preferences.rst:363
 msgid ""
 "This check rely on strength activation (all but **none** level). For the "
 "super-admin account, this will just ensure you are not using login as "
@@ -1170,35 +1169,35 @@ msgstr ""
 "prijavnega imena kot gesla. Za standardne račune je vključenih več "
 "informacij:"
 
-#: ../usermanual/preferences.rst:363
+#: ../usermanual/preferences.rst:365
 msgid "name,"
 msgstr "ime,"
 
-#: ../usermanual/preferences.rst:364
+#: ../usermanual/preferences.rst:366
 msgid "surname,"
 msgstr "priimek,"
 
-#: ../usermanual/preferences.rst:365
+#: ../usermanual/preferences.rst:367
 msgid "nickname,"
 msgstr "vzdevek,"
 
-#: ../usermanual/preferences.rst:366
+#: ../usermanual/preferences.rst:368
 msgid "login,"
 msgstr "prijava,"
 
-#: ../usermanual/preferences.rst:367
+#: ../usermanual/preferences.rst:369
 msgid "email,"
 msgstr "e-pošta,"
 
-#: ../usermanual/preferences.rst:368
+#: ../usermanual/preferences.rst:370
 msgid "birthdate,"
 msgstr "datum rojstva,"
 
-#: ../usermanual/preferences.rst:369
+#: ../usermanual/preferences.rst:371
 msgid "town"
 msgstr "mesto"
 
-#: ../usermanual/preferences.rst:371
+#: ../usermanual/preferences.rst:373
 msgid ""
 "Basically, user cannot use verbatim any of those information as password. "
 "Some possible combinations are also checked, like surname and name couple "
@@ -1212,11 +1211,11 @@ msgstr ""
 "preverjen tudi v različnih oblikah (lokalizirana, mednarodna in nekatere "
 "različice)."
 
-#: ../usermanual/preferences.rst:376
+#: ../usermanual/preferences.rst:378
 msgid "Two-factor authentication"
 msgstr "Dvostopenjska avtentikacija"
 
-#: ../usermanual/preferences.rst:380
+#: ../usermanual/preferences.rst:382
 msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change. It is disabled by default; nothing happens until "
@@ -1226,7 +1225,7 @@ msgstr ""
 "in vmesnik se lahko še spremeni. Privzeto je onemogočen; nič se ne zgodi, "
 "dokler ne izberete drugače."
 
-#: ../usermanual/preferences.rst:382
+#: ../usermanual/preferences.rst:384
 msgid ""
 "A password is a single factor: whoever knows it is in. Two-factor "
 "authentication asks, right after the password, for a six digits code that "
@@ -1238,7 +1237,7 @@ msgstr ""
 "trideset sekund in prihaja iz aplikacije v uporabnikovem telefonu ali "
 "računalniku. Ukradeno geslo potem ni več dovolj."
 
-#: ../usermanual/preferences.rst:384
+#: ../usermanual/preferences.rst:386
 msgid ""
 "Galette implements the TOTP standard (:rfc:`6238`), the one every "
 "authenticator application speaks; no third party service is involved, and "
@@ -1248,22 +1247,22 @@ msgstr ""
 "preverjanje pristnosti; ni vključena nobena storitev tretje osebe in nič ne "
 "zapusti vašega strežnika."
 
-#: ../usermanual/preferences.rst:386
+#: ../usermanual/preferences.rst:388
 msgid "Two policies are available:"
 msgstr "Na voljo sta dve politiki:"
 
-#: ../usermanual/preferences.rst:388
+#: ../usermanual/preferences.rst:390
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 "**onemogočeno** (privzeto): nič se ne spremeni, nikogar se ne zahteva koda,"
 
-#: ../usermanual/preferences.rst:389
+#: ../usermanual/preferences.rst:391
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 "**izbirno**: vsak ga lahko omogoči iz svojega računa, nikomur ni treba."
 
-#: ../usermanual/preferences.rst:391
+#: ../usermanual/preferences.rst:393
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -1279,7 +1278,7 @@ msgstr ""
 "bazi podatkov. Načrtovano je za poznejšo različico, ko bo izbirni pravilnik "
 "uporabljen na terenu."
 
-#: ../usermanual/preferences.rst:393
+#: ../usermanual/preferences.rst:395
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1294,7 +1293,7 @@ msgstr ""
 "**Ne sprašuj več**. Zavrnitev si zapomni piškotek brskalnika, zato se vabilo "
 "vrne v novem brskalniku ali po enem letu."
 
-#: ../usermanual/preferences.rst:397
+#: ../usermanual/preferences.rst:399
 msgid ""
 "Switching the policy back to **disabled** does not delete anything. Codes "
 "are no longer asked for, and the second factors already enabled start being "
@@ -1308,7 +1307,7 @@ msgstr ""
 "onemogočen, strani za omogočanje drugega faktorja ne odgovorijo na nič: "
 "takrat vpisan faktor ne bi bil nikoli zahtevan."
 
-#: ../usermanual/preferences.rst:399
+#: ../usermanual/preferences.rst:401
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
@@ -1317,7 +1316,7 @@ msgstr ""
 "Pokrit je tudi superskrbnik, kot kateri koli drug račun. Ker ni član, nima "
 "obnovitvenih kod; glejte :ref:`kaj storiti, če ga izgubite <faq_2fa>`."
 
-#: ../usermanual/preferences.rst:401
+#: ../usermanual/preferences.rst:403
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1329,11 +1328,11 @@ msgstr ""
 "uslužbenci lahko :ref:`ponastavijo drugi faktor člana <member_2fa_reset>`, "
 "ki ga je izgubil."
 
-#: ../usermanual/preferences.rst:406
+#: ../usermanual/preferences.rst:408
 msgid "Authentication attempts"
-msgstr ""
+msgstr "Poskusi avtentikacije"
 
-#: ../usermanual/preferences.rst:410
+#: ../usermanual/preferences.rst:412
 msgid ""
 "To protect accounts against people trying passwords one after the other, "
 "Galette counts the failed logins. After too many failures, further attempts "
@@ -1341,54 +1340,54 @@ msgid ""
 "password recovery requests and to self registrations."
 msgstr ""
 
-#: ../usermanual/preferences.rst:412
+#: ../usermanual/preferences.rst:414
 msgid "By default:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:414
+#: ../usermanual/preferences.rst:416
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:415
+#: ../usermanual/preferences.rst:417
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:416
+#: ../usermanual/preferences.rst:418
 msgid "100 failed logins on one account, from anywhere, within a day,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:417
+#: ../usermanual/preferences.rst:419
 msgid "3 password recovery requests within an hour,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:419
+#: ../usermanual/preferences.rst:421
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:421
+#: ../usermanual/preferences.rst:423
 msgid ""
 "**Configuration**, then **Authentication attempts** lists what is refused "
 "right now: what is counted, the account, the address, the number of failures "
 "and until when attempts are refused."
 msgstr ""
 
-#: ../usermanual/preferences.rst:423
+#: ../usermanual/preferences.rst:425
 msgid "Authentication attempts currently refused"
-msgstr ""
+msgstr "Poskusi avtentikacije trenutno zavrnjeni"
 
-#: ../usermanual/preferences.rst:428
+#: ../usermanual/preferences.rst:430
 msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
 msgstr ""
 
-#: ../usermanual/preferences.rst:431
+#: ../usermanual/preferences.rst:433
 msgid "Super administrator credentials"
 msgstr "Poverilnice superskrbnika"
 
-#: ../usermanual/preferences.rst:435
+#: ../usermanual/preferences.rst:437
 msgid ""
 "The super administrator login and password are no longer in the preferences. "
 "Once logged in as super administrator, go to **My account**, then **My "
@@ -1398,7 +1397,7 @@ msgstr ""
 "prijavljeni kot super skrbnik, pojdite na **Moj račun** in nato na **Moje "
 "informacije**. Galette zahteva trenutno geslo, preden shrani novo."
 
-#: ../usermanual/preferences.rst:437
+#: ../usermanual/preferences.rst:439
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."

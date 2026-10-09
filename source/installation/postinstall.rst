@@ -58,6 +58,6 @@ Since Galette 1.3.0, you can also ask for :ref:`a second factor at login <pref_2
 
    Codes are computed from the current time: make sure your server clock is right, and kept right (NTP). A server drifting away refuses every code, without saying why.
 
-   Before enabling a second factor on the super administrator account, check you can reach your database. That account has no recovery codes, and :ref:`clearing its second factor <faq_2fa>` is done there.
+   Before enabling a second factor on the super administrator account, check you can reach the :ref:`command line <cli_twofactor_reset>` or the database of your server. That account has no recovery codes, and :ref:`clearing its second factor <faq_2fa>` is done there.
 
    Which also means: a second factor protects the login form, not the server. Whoever can write in your database or in your configuration file can turn it off. Keep both out of reach.

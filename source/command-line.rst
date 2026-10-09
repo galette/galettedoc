@@ -42,6 +42,7 @@ Galette now proposes a command line interface to manage some tasks. This is acce
       galette:plugins:list           List existing Galette plugins
       galette:seed-fixtures          Seed database with E2E test fixtures (fictional members, contributions, groups, etc.)
       galette:superadmin:password    Change the super administrator password
+      galette:twofactor:reset        Reset two-factor authentication of the super administrator or of a member
       galette:twig-cache             Compile Twig templates in cache
       galette:twig-pot-references    Point POT file references to Twig templates instead of compiled ones
 
@@ -194,6 +195,55 @@ There is no option to pass the password with: it is only ever read from a hidden
 The login is displayed so you know which account you just changed, but the command does not touch it. Change it from **My account**, then **My information**, as usual.
 
 The new password must satisfy the :ref:`password rules <password_rules>` of your instance, exactly as it would from the web interface.
+
+.. _cli_twofactor_reset:
+
+Two-factor authentication reset
+===============================
+
+.. versionadded:: 1.3.1
+
+The super administrator has no recovery codes, and nobody above it to reset its :ref:`second factor <pref_2fa>` from the interface. This command is the way back in when its device is lost; like ``galette:superadmin:password``, it runs on the machine hosting Galette, and that access stands as the authentication.
+
+::
+
+    $ php bin/console help galette:twofactor:reset
+    Description:
+      Reset two-factor authentication of the super administrator or of a member
+
+    Usage:
+      galette:twofactor:reset [options]
+
+    Options:
+          --login=LOGIN     Login of the member to reset; the super administrator when omitted
+          --clock           Keep the second factor, only forget the last used code (after the server clock went backwards)
+          --policy-off      Disable two-factor authentication for the whole instance; second factors are kept
+          --force           Do not ask for confirmation (required to run unattended)
+      [...]
+
+Without option, the command removes the second factor of the super administrator, which then logs in with its password alone:
+
+::
+
+    $ php bin/console galette:twofactor:reset
+
+    Reset two-factor authentication
+    ===============================
+
+     Account: admin
+
+     Remove the second factor of this account? It will log in with its password alone. (yes/no) [no]:
+     > yes
+
+     [OK] Two-factor authentication has been reset.
+
+* ``--login`` targets a member instead, by its login (not its email address); its recovery codes are dropped as well. Administrators and staff members can already do the same :ref:`from the member page <member_2fa_reset>`, the command is there for when nobody can log in to do so.
+* ``--clock`` keeps the second factor, and only forgets the last code accepted for the account. This is what is needed after :ref:`the server clock went backwards <faq_2fa>`.
+* ``--policy-off`` disables two-factor authentication for the whole instance, the way out when something goes wrong for everybody at once. Second factors are kept, and asked again once a policy is set. It cannot be combined with the other options.
+
+Whatever the case, a lock on the account after too many wrong codes is lifted too, and the reset is recorded in the history.
+
+The command asks for confirmation; pass ``--force`` to run it without a terminal.
 
 .. _cli_mailing_queue:
 

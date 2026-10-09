@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-06 10:35+0200\n"
-"PO-Revision-Date: 2026-10-03 12:35+0000\n"
+"PO-Revision-Date: 2026-10-08 20:45+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-members/sl/>\n"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../usermanual/adherents.rst:30
 msgid "Picture"
-msgstr ""
+msgstr "Slika"
 
 #: ../usermanual/adherents.rst:32
 msgid ""
@@ -82,10 +82,15 @@ msgid ""
 "to the chosen ratio; the **Cropping focus** option of the form tells which "
 "part of the picture to keep."
 msgstr ""
+"Vsaki članski kartici je mogoče dodati sliko v formatu JPEG, PNG, GIF ali "
+"WebP. Ko je v :ref:`preferences <man_preferences>` označeno **Force member "
+"picture ratio**, se slike spremenijo v velikost in obrežejo na izbrano "
+"razmerje; možnost **Fokus obrezovanja** v obrazcu pove, kateri del slike je "
+"treba obdržati."
 
 #: ../usermanual/adherents.rst:35
 msgid "Duplicate, remove"
-msgstr ""
+msgstr "Podvoji, odstrani"
 
 #: ../usermanual/adherents.rst:37
 msgid ""
@@ -93,12 +98,16 @@ msgid ""
 "with the information of the current one; useful for members of a same family "
 "or a same company."
 msgstr ""
+"Iz članske izkaznice **Dvojnik** odpre obrazec novega člana, izpolnjenega s "
+"podatki trenutnega; uporaben za člane iste družine ali istega podjetja."
 
 #: ../usermanual/adherents.rst:39
 msgid ""
 "Members can be removed one by one from the actions of the list, or several "
 "at once from the **For the selection:** menu."
 msgstr ""
+"Člane lahko enega za drugim odstranite iz dejanj na seznamu ali več hkrati "
+"iz menija **Za izbor:**."
 
 #: ../usermanual/adherents.rst:43
 msgid ""
@@ -107,6 +116,10 @@ msgid ""
 "This cannot be undone. To keep the history of your association, you may "
 "rather set the account as inactive."
 msgstr ""
+"Z odstranitvijo člana odstranite tudi njegovo sliko, prispevke, transakcije, "
+"opomnike in vrednosti dinamičnih polj ter ga odstranite iz njegovih skupin. "
+"Tega ni mogoče razveljaviti. Če želite ohraniti zgodovino vaše povezave, "
+"raje nastavite račun kot neaktiven."
 
 #: ../usermanual/adherents.rst:46
 msgid "Members list"
@@ -153,19 +166,14 @@ msgid "mass changes."
 msgstr "množične spremembe."
 
 #: ../usermanual/adherents.rst:60
-#, fuzzy
-#| msgid ""
-#| "Each possible action per member is grouped at the end of the line, "
-#| "actions designed to be applied on a selection are at the bottom of the "
-#| "list. Plugins may add entries in both cases."
 msgid ""
 "Each possible action per member is grouped at the end of the line, actions "
 "designed to be applied on a selection are in the **For the selection:** menu "
 "above the list. Plugins may add entries in both cases."
 msgstr ""
 "Vsako možno dejanje na člana je združeno na koncu vrstice, dejanja, "
-"namenjena uporabi na izboru, pa so na dnu seznama. Vtičniki lahko v obeh "
-"primerih dodajo vnose."
+"namenjena uporabi pri izboru, so v meniju **Za izbor:** nad seznamom. "
+"Vtičniki lahko v obeh primerih dodajo vnose."
 
 #: ../usermanual/adherents.rst:63
 msgid "Filter and select members"
@@ -237,6 +245,8 @@ msgid ""
 "donation during the current period. The **Show legend** link explains all "
 "the icons of the list."
 msgstr ""
+"Na seznamu zelena ikona označuje **sponzorje**: člane, ki so prispevali v "
+"tekočem obdobju. Povezava **Pokaži legendo** pojasnjuje vse ikone na seznamu."
 
 #: ../usermanual/adherents.rst:100
 msgid ""
@@ -299,21 +309,16 @@ msgstr ""
 "zadevo in vsebino pošte."
 
 #: ../usermanual/adherents.rst:127
-#, fuzzy
-#| msgid ""
-#| "To send a new mailing, select members from the list and then use the "
-#| "`Send an email` button at the bottom of the list. If some of selected "
-#| "members does not have an email address, Galette will propose you to print "
-#| "corresponding labels."
 msgid ""
 "To send a new mailing, select members from the list and then choose **Mail** "
 "in the **For the selection:** menu above the list. If some of selected "
 "members does not have an email address, Galette will propose you to print "
 "corresponding labels."
 msgstr ""
-"Za pošiljanje novega sporočila izberite člane s seznama in nato uporabite "
-"gumb »Pošlji e-pošto« na dnu seznama. Če kateri od izbranih članov nima e-"
-"poštnega naslova, vam bo Galette predlagal tiskanje ustreznih nalepk."
+"Če želite poslati novo pošto, izberite člane s seznama in nato izberite "
+"**Pošta** v meniju **Za izbiro:** nad seznamom. Če kateri izmed izbranih "
+"članov nima e-poštnega naslova, vam bo Galette predlagala tiskanje ustreznih "
+"nalepk."
 
 #: ../usermanual/adherents.rst:129
 msgid "Selected members for mailing"
@@ -665,6 +670,9 @@ msgid ""
 "A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
 "a field with no limit gets 10 columns."
 msgstr ""
+"Uvažati je mogoče tudi dinamična polja članov, razen polj datoteke. "
+":ref:`ponovljivo polje <dynamic_fields_repeat>` dobi en stolpec na vrednost; "
+"polje brez omejitve dobi 10 stolpcev."
 
 #: ../usermanual/adherents.rst:253
 msgid ""
@@ -687,11 +695,11 @@ msgid ""
 "extension is ``csv`` (or ``txt``) and its size does not exceed "
 "the :ref:`maximum size allowed for imports <upload_sizes>` (2 Mo by default)."
 msgstr ""
-"Ko pridobite in izpolnite prazno datoteko, jo morate poslati z uporabo "
-"obrazca »Pošlji novo datoteko«. V tem koraku bo Galette preveril, ali ima "
-"datoteka končnico ``csv`` (ali ``txt``) in ali njena velikost ne "
-"presega :ref:`največje dovoljene velikosti za uvoz <upload_sizes>` (privzeto "
-"2 Mb)."
+"Ko pridobite in izpolnite prazno datoteko, jo morate poslati z obrazcem "
+"`Pošlji novo datoteko`. V tem koraku bo Galette preveril, ali je končnica "
+"vaše datoteke ``csv`` (ali ``txt``) in njena velikost ne presega "
+":ref:`največje dovoljene velikosti za uvoz <upload_sizes>` (privzeto 2 "
+"meseca)."
 
 #: ../usermanual/adherents.rst:262
 msgid ""
