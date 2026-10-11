@@ -9,9 +9,8 @@ msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-07 14:25+0200\n"
-"PO-Revision-Date: 2026-10-08 10:24+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-10-09 13:50+0000\n"
+"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-printing/sl/>\n"
 "Language: sl\n"
@@ -24,7 +23,7 @@ msgstr ""
 
 #: ../usermanual/printing.rst:5
 msgid "Printing and exports"
-msgstr ""
+msgstr "Tiskanje in izvoz"
 
 #: ../usermanual/printing.rst:7
 msgid ""
@@ -32,6 +31,9 @@ msgid ""
 "labels, attendance sheets, spreadsheets... All of them start the same way, "
 "from a selection of members."
 msgstr ""
+"Galette lahko izdela dokumente iz vašega seznama članov: članske izkaznice, "
+"nalepke z naslovi, liste prisotnosti, preglednice ... Vsi se začnejo na enak "
+"način, od izbora članov."
 
 #: ../usermanual/printing.rst:10
 msgid "Selecting members"
@@ -43,16 +45,21 @@ msgid ""
 "example to keep only the up to date members, or the members of a group; "
 "see :ref:`search <search_galette>`."
 msgstr ""
+"Pojdite na **Člani** in nato na **Seznam članov**. Po potrebi uporabite "
+"filtre, na primer, da obdržite samo posodobljene člane ali člane skupine; "
+"glej :ref:`išči <search_galette>`."
 
 #: ../usermanual/printing.rst:14
 msgid ""
 "Then check the members you want, or use **(Un)Check all** to select the "
 "whole list, and open **For the selection:** above the list."
 msgstr ""
+"Nato označite želene člane ali uporabite **(Od)označi vse**, da izberete "
+"celoten seznam, in odprite **Za izbor:** nad seznamom."
 
 #: ../usermanual/printing.rst:16
 msgid "Actions for the selected members"
-msgstr ""
+msgstr "Dejanja za izbrane člane"
 
 #: ../usermanual/printing.rst:21
 msgid ""
@@ -60,6 +67,9 @@ msgid ""
 "<mass_changes>`, **Mass add contributions**, **Delete**, :ref:`Mail "
 "<emailing>`, and the documents described below."
 msgstr ""
+"V meniju je navedeno, kaj je mogoče storiti z izbranimi člani: "
+":ref:`Množična sprememba <mass_changes>`, **Množično dodajanje prispevkov**, "
+"**Izbriši**, :ref:`Pošiljanje<emailing>` in spodaj opisani dokumenti."
 
 #: ../usermanual/printing.rst:24
 msgid "Member cards"
@@ -70,10 +80,12 @@ msgid ""
 "**Generate Member Cards** produces a PDF file with one card per selected "
 "member, ready to be printed and cut."
 msgstr ""
+"**Generate Member Cards** ustvari datoteko PDF z eno izkaznico na izbranega "
+"člana, ki je pripravljena za tiskanje in rezanje."
 
 #: ../usermanual/printing.rst:28
 msgid "A member card"
-msgstr ""
+msgstr "Članska izkaznica"
 
 #: ../usermanual/printing.rst:33
 msgid ""
@@ -82,6 +94,10 @@ msgid ""
 "year or the end of membership, the colors used depending on the status of "
 "the member, the logo, the size of the cards..."
 msgstr ""
+"Vsebino in izgled izkaznic nastavite v zavihku **Konfiguracije** "
+"**Kartice**, nato **Nastavitve**: natisnjena besedila na izkaznici, letnica "
+"ali zaključek članstva, uporabljene barve glede na status člana, logotip, "
+"velikost izkaznic..."
 
 #: ../usermanual/printing.rst:35
 msgid ""
@@ -90,6 +106,10 @@ msgid ""
 "** is checked in the same tab. They can only do it while their membership is "
 "up to date."
 msgstr ""
+"Člani lahko tudi natisnejo svojo kartico iz **Moj račun**, nato :ref:`Moji "
+"podatki <my_account_information>`, ko je na istem zavihku označeno **Dovoli "
+"članom tiskanje kartice?**. To lahko storijo le, dokler je njihovo članstvo "
+"posodobljeno."
 
 #: ../usermanual/printing.rst:38
 msgid "Labels"
@@ -100,6 +120,8 @@ msgid ""
 "**Generate labels** produces a PDF file with the postal address of each "
 "selected member, for sheets of self-adhesive labels."
 msgstr ""
+"**Ustvari etikete** ustvari PDF datoteko s poštnim naslovom vsakega "
+"izbranega člana, za liste samolepilnih etiket."
 
 #: ../usermanual/printing.rst:42
 msgid ""
@@ -108,6 +130,10 @@ msgid ""
 "Measure your sheets of labels, set the values, and make a first try on plain "
 "paper before printing on the labels themselves."
 msgstr ""
+"Velikost oznak, število stolpcev in vrstic na strani, robove in razmike "
+"nastavite v zavihku **Oznake** v nastavitvah. Izmerite svoje liste nalepk, "
+"nastavite vrednosti in najprej poskusite na navadnem papirju, preden tiskate "
+"na same nalepke."
 
 #: ../usermanual/printing.rst:45
 msgid "Attendance sheet"
@@ -118,6 +144,8 @@ msgid ""
 "**Attendance sheet** produces a PDF file listing the selected members, with "
 "room for their signature; for a general meeting, for example."
 msgstr ""
+"**List prisotnosti** ustvari datoteko PDF s seznamom izbranih članov s "
+"prostorom za njihov podpis; za občni zbor npr."
 
 #: ../usermanual/printing.rst:49
 msgid "Attendance sheet configuration"
@@ -129,6 +157,9 @@ msgid ""
 "sheet, a title, a subtitle and a date, and whether the pictures of the "
 "members must be included. Click on **Continue** to get the file."
 msgstr ""
+"Pred generiranjem datoteke Galette zahteva nekaj podrobnosti: vrsto lista, "
+"naslov, podnaslov in datum ter ali morajo biti vključene slike članov. "
+"Kliknite **Nadaljuj**, da dobite datoteko."
 
 #: ../usermanual/printing.rst:57
 msgid "Adhesion form"
@@ -139,16 +170,20 @@ msgid ""
 "The adhesion form is a paper form that new members can fill in by hand and "
 "send back with their membership fee."
 msgstr ""
+"Pristopnica je papirni obrazec, ki ga lahko novi člani ročno izpolnijo in "
+"pošljejo nazaj skupaj s svojo članarino."
 
 #: ../usermanual/printing.rst:61
 msgid "**Members**, then **Empty adhesion form** produces a blank form,"
-msgstr ""
+msgstr "**Člani**, potem **Prazni obrazec za adhezijo** ustvari prazen obrazec,"
 
 #: ../usermanual/printing.rst:62
 msgid ""
 "the **Adhesion form** action of a member card produces the same form, filled "
 "in with the information of the member."
 msgstr ""
+"akcija **Pristopni obrazec** članske kartice ustvari enak obrazec, izpolnjen "
+"s podatki o članu."
 
 #: ../usermanual/printing.rst:64
 msgid "Empty adhesion form"
@@ -159,10 +194,12 @@ msgid ""
 "The content of the form can be changed from **Configuration**, then **PDF "
 "models**; see :ref:`PDF models <pdf_models>`."
 msgstr ""
+"Vsebino obrazca lahko spremenite iz **Konfiguracija**, nato **PDF modeli**; "
+"glej :ref:`Modeli PDF <pdf_models>`."
 
 #: ../usermanual/printing.rst:72
 msgid "Export to a spreadsheet"
-msgstr ""
+msgstr "Izvozi v preglednico"
 
 #: ../usermanual/printing.rst:74
 msgid ""
@@ -171,12 +208,18 @@ msgid ""
 "displayed in the list; this can be changed, see :ref:`CSV fields "
 "<csv_export_fields>`."
 msgstr ""
+"**Izvozi kot CSV** ustvari datoteko CSV izbranih članov, ki jo lahko odpre "
+"katera koli programska oprema za preglednice. Privzeto datoteka vsebuje "
+"stolpce, prikazane na seznamu; to je mogoče spremeniti, glejte :ref:`CSV "
+"polja <csv_export_fields>`."
 
 #: ../usermanual/printing.rst:76
 msgid ""
 "Other exports, of the contributions for example, are available from "
 "**Management**, then **Exports**; see :ref:`CSV exports <csv_exports>`."
 msgstr ""
+"Drugi izvozi, na primer prispevkov, so na voljo v **Upravljanju**, nato v "
+"**Izvozih**; glejte :ref:`CSV izvozi <csv_exports>`."
 
 #: ../usermanual/printing.rst:79 ../usermanual/printing.rst:83
 msgid "Charts"
@@ -189,3 +232,6 @@ msgid ""
 "the contribution types, individuals and companies, and the contributions "
 "over time."
 msgstr ""
+"**Upravljanje**, nato **Grafikoni** prikaže nekaj grafikonov o vašem "
+"združenju: člane po statusu, člane po statusu članov, porazdelitev vrst "
+"prispevkov, posameznike in podjetja ter prispevke skozi čas."

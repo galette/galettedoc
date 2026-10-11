@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-07 14:25+0200\n"
-"PO-Revision-Date: 2026-10-08 20:45+0000\n"
+"PO-Revision-Date: 2026-10-09 13:50+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-preferences/sl/>\n"
@@ -99,6 +99,8 @@ msgid ""
 "be the one entered in the form, or the phone or mobile phone of a staff "
 "member,"
 msgstr ""
+"**Telefon**: telefonska številka društva; kar zadeva naslov, je lahko tisti, "
+"ki je vpisan v obrazec, ali telefon ali mobilni telefon uslužbenca,"
 
 #: ../usermanual/preferences.rst:34
 msgid "**E-Mail**: the contact email address of the association,"
@@ -113,6 +115,8 @@ msgid ""
 "**Prevent search engines indexation**: asks search engines not to list the "
 "pages of your Galette,"
 msgstr ""
+"**Prepreči indeksiranje iskalnikov**: prosi iskalnike, naj ne navedejo "
+"strani vaše Galette,"
 
 #: ../usermanual/preferences.rst:37
 msgid ""
@@ -136,6 +140,9 @@ msgid ""
 "of the association can be used as variables in :ref:`emails contents "
 "<emails_contents>` and in :ref:`PDF models <pdf_models>`."
 msgstr ""
+"Ime, naslov, telefonska številka, elektronski naslov in spletna stran "
+"društva se lahko uporabljajo kot spremenljivke v :ref:`emails contents "
+"<emails_contents>` in v :ref:`PDF models <pdf_models>`."
 
 #: ../usermanual/preferences.rst:43
 msgid "Social networks"
@@ -185,12 +192,16 @@ msgid ""
 "**Default payment type**: the payment type selected by default when a "
 "contribution is added,"
 msgstr ""
+"**Privzeta vrsta plačila**: privzeto izbrana vrsta plačila, ko je dodan "
+"prispevek,"
 
 #: ../usermanual/preferences.rst:65
 msgid ""
 "**Number of columns on the member form**: display the member form on one, "
 "two or three columns,"
 msgstr ""
+"**Število stolpcev na obrazcu za člana**: prikaz obrazca za člana v enem, "
+"dveh ali treh stolpcih,"
 
 #: ../usermanual/preferences.rst:66
 msgid ""
@@ -255,12 +266,18 @@ msgid ""
 "December 31st, a member who pays in November is up to date until the end of "
 "the next year,"
 msgstr ""
+"**Ponujeno število mesecev**: ko je določen začetek članstva, prispevki, "
+"evidentirani v zadnjih mesecih obdobja, veljajo tudi za celotno naslednje "
+"obdobje. Z dvema ponujenima mesecema in obdobjem, ki se konča 31. decembra, "
+"je član, ki plača novembra, na tekočem do konca naslednjega leta,"
 
 #: ../usermanual/preferences.rst:80
 msgid ""
 "**Force member picture ratio**: resize and crop the pictures of the members "
 "to the selected ratio (square, portrait or landscape),"
 msgstr ""
+"**Vsilno razmerje slike članov**: spremenite velikost in obrežite slike "
+"članov na izbrano razmerje (kvadratno, pokončno ali ležeče),"
 
 #: ../usermanual/preferences.rst:81
 msgid ""
@@ -268,6 +285,9 @@ msgid ""
 "the empty adhesion form on the public pages and on the registration form, "
 "for people who would rather fill it in on paper,"
 msgstr ""
+"**Prikaži povezavo za prenos prazne pristopne vloge**: prikaži povezavo do "
+"prazne pristopne vloge na javnih straneh in na vpisnici, za osebe, ki bi jo "
+"raje izpolnile na papirju,"
 
 #: ../usermanual/preferences.rst:82
 msgid "**Public pages enabled**: enable or disable public pages,"
@@ -281,12 +301,19 @@ msgid ""
 "members**, to **Admin and staff only**, be **Hidden**, or **Inherit** the "
 "default; see :ref:`public pages <man_public_pages>`,"
 msgstr ""
+"**Vidnost javnih strani**: kdo lahko vidi vsako javno stran ali **Privzeta** "
+"vidnost za strani, ki niso navedene, vključno s tistimi vtičnikov. Vsaka "
+"stran je lahko prikazana **Vsakemu**, **Aktualnim članom**, **Samo skrbnikom "
+"in osebjem**, je **Skrita** ali privzeto **Podeduj**; glejte :ref:`javne "
+"strani <man_public_pages>`,"
 
 #: ../usermanual/preferences.rst:84
 msgid ""
 "**Include groups managers with staff?**: list the group managers on the "
 "public staff pages,"
 msgstr ""
+"**Vključite vodje skupin z osebjem?**: navedite vodje skupin na straneh "
+"javnega osebja,"
 
 #: ../usermanual/preferences.rst:86
 msgid ""
@@ -672,6 +699,8 @@ msgid ""
 "**SMTP user** and **SMTP password**: the credentials given by your mail "
 "provider. Leave the password empty to keep the current one,"
 msgstr ""
+"**Uporabnik SMTP** in **Geslo SMTP**: poverilnice, ki jih je dal vaš "
+"ponudnik e-pošte. Pustite geslo prazno, da obdržite trenutno,"
 
 #: ../usermanual/preferences.rst:181
 msgid "**Use TLS for SMTP**: enable SSL support,"
@@ -687,13 +716,15 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:187
 msgid "Testing the settings"
-msgstr ""
+msgstr "Testiranje nastavitev"
 
 #: ../usermanual/preferences.rst:191
 msgid ""
 "Two buttons, under the emailing method, check your settings before you rely "
 "on them:"
 msgstr ""
+"Dva gumba pod metodo pošiljanja po e-pošti preverita vaše nastavitve, preden "
+"se zanesete nanje:"
 
 #: ../usermanual/preferences.rst:193
 msgid "Testing the email settings"
@@ -704,10 +735,13 @@ msgid ""
 "**Test connection** connects to the mail server and checks that it accepts "
 "your settings, without sending anything,"
 msgstr ""
+"**Testna povezava** se poveže s poštnim strežnikom in preveri, ali sprejema "
+"vaše nastavitve, ne da bi kar koli poslal,"
 
 #: ../usermanual/preferences.rst:199
 msgid "**Send a test email** sends a message, to make sure it really arrives."
 msgstr ""
+"**Pošlji testno e-pošto** pošlje sporočilo, da se prepriča, da res prispe."
 
 #: ../usermanual/preferences.rst:201
 msgid ""
@@ -715,6 +749,9 @@ msgid ""
 "saved yet: you can try several values, and save once it works. Nothing can "
 "be tested when **Emailing disabled** is selected."
 msgstr ""
+"Preizkusi potekajo na nastavitvah, prikazanih v obrazcu, tudi tistih, ki še "
+"niso shranjene: poskusite lahko več vrednosti in shranite, ko deluje. Ko je "
+"izbrana možnost **E-pošta onemogočena**, ni mogoče preizkusiti ničesar."
 
 #: ../usermanual/preferences.rst:206
 msgid "Sending limits"
@@ -856,42 +893,52 @@ msgid ""
 "This tab describes the sheets of self-adhesive labels you print the "
 "addresses of your members on. All sizes are in millimeters:"
 msgstr ""
+"Ta zavihek opisuje liste samolepilnih etiket, na katere natisnete naslove "
+"svojih članov. Vse velikosti so v milimetrih:"
 
 #: ../usermanual/preferences.rst:255
 msgid ""
 "**Vertical margins** and **Horizontal margins**: the blank space around the "
 "labels, on the edges of the sheet,"
 msgstr ""
+"**Navpični robovi** in **Vodoravni robovi**: prazen prostor okoli nalepk, na "
+"robovih lista,"
 
 #: ../usermanual/preferences.rst:256
 msgid ""
 "**Vertical spacing** and **Horizontal spacing**: the blank space between two "
 "labels,"
 msgstr ""
+"**Navpični razmik** in **Vodoravni razmik**: prazen prostor med dvema "
+"oznakama,"
 
 #: ../usermanual/preferences.rst:257
 msgid "**Label width** and **Label height**: the size of one label,"
-msgstr ""
+msgstr "**Širina etikete** in **Višina etikete**: velikost ene etikete,"
 
 #: ../usermanual/preferences.rst:258
 msgid ""
 "**Number of label columns** and **Number of label lines**: how many labels a "
 "sheet holds,"
 msgstr ""
+"**Število stolpcev z nalepkami** in **Število vrstic z nalepkami**: koliko "
+"nalepk vsebuje list,"
 
 #: ../usermanual/preferences.rst:259
 msgid "**Font size**: the size of the text printed on the labels,"
-msgstr ""
+msgstr "**Velikost pisave**: velikost besedila, natisnjenega na nalepkah,"
 
 #: ../usermanual/preferences.rst:260
 msgid ""
 "**Print border**: print a grey border around each label, handy for a first "
 "try on plain paper."
 msgstr ""
+"**Natisni rob**: natisnite siv rob okoli vsake nalepke, kar je priročno za "
+"prvi poskus na navadnem papirju."
 
 #: ../usermanual/preferences.rst:262
 msgid "The values usually are written on the box of the labels."
-msgstr ""
+msgstr "Vrednosti so običajno zapisane na škatli nalepk."
 
 #: ../usermanual/preferences.rst:265
 msgid "Cards"
@@ -903,24 +950,28 @@ msgstr "Nastavitve Galette, zavihek s karticami"
 
 #: ../usermanual/preferences.rst:272
 msgid "This tab sets the content and the look of the member cards:"
-msgstr ""
+msgstr "Ta zavihek določa vsebino in videz članskih izkaznic:"
 
 #: ../usermanual/preferences.rst:274
 msgid ""
 "**Short Text (Card Center)**: a short text printed in the middle of the "
 "card, 10 characters at most; the acronym of your association for example,"
 msgstr ""
+"**Kratko besedilo (Card Center)**: kratko besedilo, natisnjeno na sredini "
+"kartice, največ 10 znakov; na primer akronim vašega združenja,"
 
 #: ../usermanual/preferences.rst:275
 msgid ""
 "**Long Text (Bottom Line)**: a text printed at the bottom of the card, 65 "
 "characters at most,"
 msgstr ""
+"**Dolgo besedilo (spodnja vrstica)**: besedilo, natisnjeno na dnu kartice, "
+"največ 65 znakov,"
 
 #: ../usermanual/preferences.rst:276
 msgid ""
 "**Strip Text Color**: the color of the text written on the bottom strip,"
-msgstr ""
+msgstr "**Barva besedila traku**: barva besedila, napisanega na spodnjem traku,"
 
 #: ../usermanual/preferences.rst:277
 msgid ""
@@ -929,21 +980,26 @@ msgid ""
 "the status of the member; the honor color is used for benefactor and founder "
 "members,"
 msgstr ""
+"**Barva aktivnega člana**, **Barva člana odbora** in **Barva častnega "
+"člana**: barva glavnih besedil in spodnjega traku, odvisno od statusa člana; "
+"častna barva se uporablja za dobrotnike in ustanovne člane,"
 
 #: ../usermanual/preferences.rst:278
 msgid ""
 "**Logo**: a logo for printing, if the one of the association does not suit,"
-msgstr ""
+msgstr "**Logo**: logotip za tisk, če društvu ne ustreza,"
 
 #: ../usermanual/preferences.rst:279
 msgid ""
 "**Allow members to print card ?**: members can download their own card, as "
 "long as their membership is up to date,"
 msgstr ""
+"**Želite članom dovoliti tiskanje kartice?**: člani lahko prenesejo svojo "
+"kartico, če je njihovo članstvo posodobljeno,"
 
 #: ../usermanual/preferences.rst:280
 msgid "**Show title ?**: print the title (Mr., Mrs....) in front of the name,"
-msgstr ""
+msgstr "**Pokaži naziv?**: pred imenom izpiši naslov (g., ga....),"
 
 #: ../usermanual/preferences.rst:281
 msgid ""
@@ -959,15 +1015,17 @@ msgid ""
 "separated with a slash (*2026/2027*), or ``DEADLINE`` to print the end of "
 "membership of each member,"
 msgstr ""
+"**Leto**: leto, natisnjeno na kartici. Lahko je leto, dve leti, ločeni s "
+"poševnico (*2026/2027*), ali ``ROK`` za izpis konca članstva vsakega člana,"
 
 #: ../usermanual/preferences.rst:283
 msgid ""
 "margins, spacing, width and height of the cards on the page, in millimeters."
-msgstr ""
+msgstr "robovi, razmiki, širina in višina kartic na strani v milimetrih."
 
 #: ../usermanual/preferences.rst:285
 msgid "Colors are written in hexadecimal notation, ``#RRGGBB``."
-msgstr ""
+msgstr "Barve so zapisane v šestnajstiškem zapisu, ``#RRGGBB``."
 
 #: ../usermanual/preferences.rst:290
 msgid "Dynamic fields"
@@ -979,6 +1037,9 @@ msgid ""
 "association that Galette does not know about: a registration number, a bank "
 "account number, the name of the president..."
 msgstr ""
+"Preferencam lahko dodate svoja polja, za podatke o vašem društvu, ki jih "
+"Galette ne pozna: matična številka, številka bančnega računa, ime "
+"predsednika ..."
 
 #: ../usermanual/preferences.rst:296
 msgid ""
@@ -987,6 +1048,10 @@ msgid ""
 "displayed in this tab, and can be used as variables in :ref:`emails contents "
 "<emails_contents>` and in :ref:`PDF models <pdf_models>`."
 msgstr ""
+"Ustvarite jih iz **Konfiguracija**, nato **Dinamična polja** in izberite "
+"obrazec **Nastavitve**; glejte :ref:`dinamična polja <dynamic_fields>`. Nato "
+"so prikazani na tem zavihku in se lahko uporabljajo kot spremenljivke v "
+":ref:`emails contents <emails_contents>` in v :ref:`PDF models <pdf_models>`."
 
 #: ../usermanual/preferences.rst:301
 msgid "Security"
@@ -1040,6 +1105,9 @@ msgid ""
 "password against the values currently selected; do not forget to save your "
 "preferences once you are happy with the result."
 msgstr ""
+"Polje **Preizkusi geslo:** na dnu zavihka preveri vsako geslo glede na "
+"trenutno izbrane vrednosti; ne pozabite shraniti svojih nastavitev, ko ste "
+"zadovoljni z rezultatom."
 
 #: ../usermanual/preferences.rst:325
 msgid ""
@@ -1339,32 +1407,39 @@ msgid ""
 "are refused for a while, even with the right password. The same applies to "
 "password recovery requests and to self registrations."
 msgstr ""
+"Za zaščito računov pred ljudmi, ki drug za drugim poskušajo vnesti gesla, "
+"Galette šteje neuspešne prijave. Po preveč neuspehih so nadaljnji poskusi "
+"nekaj časa zavrnjeni, tudi s pravim geslom. Enako velja za zahteve za "
+"obnovitev gesla in samoregistracije."
 
 #: ../usermanual/preferences.rst:414
 msgid "By default:"
-msgstr ""
+msgstr "Privzeto:"
 
 #: ../usermanual/preferences.rst:416
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
-msgstr ""
+msgstr "5 neuspešnih prijav na en račun, z enega naslova, v 15 minutah,"
 
 #: ../usermanual/preferences.rst:417
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
+"30 neuspešnih prijav z enega naslova, na kateri koli račun, v 15 minutah,"
 
 #: ../usermanual/preferences.rst:418
 msgid "100 failed logins on one account, from anywhere, within a day,"
-msgstr ""
+msgstr "100 neuspešnih prijav v en račun, od koder koli, v enem dnevu,"
 
 #: ../usermanual/preferences.rst:419
 msgid "3 password recovery requests within an hour,"
-msgstr ""
+msgstr "3 zahteve za obnovitev gesla v eni uri,"
 
 #: ../usermanual/preferences.rst:421
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
 msgstr ""
+"zavrnitev nadaljnjih poskusov za 15 minut. Te pragove in trajanja je mogoče "
+"spremeniti v :ref:`napredni konfiguraciji <advanced_config>`."
 
 #: ../usermanual/preferences.rst:423
 msgid ""
@@ -1372,6 +1447,9 @@ msgid ""
 "right now: what is counted, the account, the address, the number of failures "
 "and until when attempts are refused."
 msgstr ""
+"**Konfiguracija**, nato **Poskusi preverjanja pristnosti** navaja, kaj je "
+"trenutno zavrnjeno: kaj se šteje, račun, naslov, število neuspešnih poskusov "
+"in do kdaj so poskusi zavrnjeni."
 
 #: ../usermanual/preferences.rst:425
 msgid "Authentication attempts currently refused"
@@ -1382,6 +1460,9 @@ msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
 msgstr ""
+"Ko vam član pove, da se ne more več prijaviti, poglejte tukaj: **Dvigni** mu "
+"omogoči, da takoj poskusi znova, **Dvigni jih vse** pa počisti celoten "
+"seznam."
 
 #: ../usermanual/preferences.rst:433
 msgid "Super administrator credentials"

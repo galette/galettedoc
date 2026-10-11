@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the Galette package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Jože Felicijan <joze@felicijan.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-06 06:50+0200\n"
-"PO-Revision-Date: 2026-10-08 10:24+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-10-09 13:50+0000\n"
+"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-reference_lists/sl/>\n"
 "MIME-Version: 1.0\n"
@@ -23,31 +23,38 @@ msgstr ""
 
 #: ../usermanual/reference_lists.rst:5
 msgid "Reference lists"
-msgstr ""
+msgstr "Referenčni seznami"
 
 #: ../usermanual/reference_lists.rst:7
 msgid "Several lists are used all over Galette: the statuses of the members, the kinds of contributions, the payment types, the titles. Galette comes with ready to use values, that you can adapt to your association from the **Configuration** menu."
 msgstr ""
+"V Galette se uporablja več seznamov: statusi članov, vrste prispevkov, vrste "
+"plačil, nazivi. Galette ima že pripravljene vrednosti, ki jih lahko "
+"prilagodite svoji povezavi v meniju **Konfiguracija**."
 
 #: ../usermanual/reference_lists.rst:9
 msgid "All those lists work the same way:"
-msgstr ""
+msgstr "Vsi ti seznami delujejo na enak način:"
 
 #: ../usermanual/reference_lists.rst:11
 msgid "the last line of the list, or the **Add** button, adds a new entry,"
-msgstr ""
+msgstr "zadnja vrstica seznama ali gumb **Dodaj** doda nov vnos,"
 
 #: ../usermanual/reference_lists.rst:12
 msgid "the edit icon of the **Actions** column changes an entry,"
-msgstr ""
+msgstr "ikona za urejanje v stolpcu **Dejanja** spremeni vnos,"
 
 #: ../usermanual/reference_lists.rst:13
 msgid "for statuses, contribution types and payment types, the translation icon opens **Translate labels**, to give the entry a name in every language your members use,"
 msgstr ""
+"za statuse, vrste prispevkov in vrste plačil ikona za prevod odpre **Prevedi "
+"oznake**, da vnosu date ime v vseh jezikih, ki jih uporabljajo vaši člani,"
 
 #: ../usermanual/reference_lists.rst:14
 msgid "the delete icon removes an entry. An entry that is still in use, for example a status still given to some members, cannot be deleted."
 msgstr ""
+"ikona za brisanje odstrani vnos. Vnosa, ki je še vedno v uporabi, na primer "
+"status, ki je še vedno dodeljen nekaterim članom, ni mogoče izbrisati."
 
 #: ../usermanual/reference_lists.rst:19
 #: ../usermanual/reference_lists.rst:25
@@ -56,27 +63,39 @@ msgstr "Stanja uporabnikov"
 
 #: ../usermanual/reference_lists.rst:21
 msgid "**Configuration**, then **User statuses**."
-msgstr ""
+msgstr "**Konfiguracija**, nato **Statusi uporabnikov**."
 
 #: ../usermanual/reference_lists.rst:23
 msgid "The status tells the role of a member in your association: president, treasurer, active member, benefactor member... Each member has one status."
 msgstr ""
+"Status pove kakšno vlogo ima član v vašem društvu: predsednik, blagajnik, "
+"aktivni član, dobrotnik ... Vsak član ima en status."
 
 #: ../usermanual/reference_lists.rst:30
 msgid "Each status has a **name** and a **priority**. The priority orders the statuses in the lists, and it decides who belongs to the staff:"
 msgstr ""
+"Vsak status ima **ime** in **prioriteto**. Prioriteta ureja statuse na "
+"seznamih in odloča o tem, kdo pripada osebju:"
 
 #: ../usermanual/reference_lists.rst:34
 msgid "Members with a status priority lower than 30 are **staff members**: they can manage members, contributions and mailings. With the default statuses, this is the case for the president, the vice-president, the treasurer and the secretary."
 msgstr ""
+"Člani s prioriteto statusa, nižjo od 30, so **člani osebja**: upravljajo "
+"lahko člane, prispevke in poštna sporočila. Pri privzetih statusih to velja "
+"za predsednika, podpredsednika, blagajnika in tajnika."
 
 #: ../usermanual/reference_lists.rst:36
 msgid "See :ref:`rights <man_generalites>` for what staff members can do."
 msgstr ""
+"Oglejte si :ref:`rights <man_generalites>` za informacije o tem, kaj lahko "
+"delajo člani osebja."
 
 #: ../usermanual/reference_lists.rst:38
 msgid "The **Non-member** status is given to new members unless another **Default membership status** is set in the :ref:`preferences <man_preferences>`; it cannot be deleted."
 msgstr ""
+"Status **Nečlan** dobijo novi člani, razen če je v :ref:`preferences "
+"<man_preferences>` nastavljen drug **Privzeti status članstva**; ni ga "
+"mogoče izbrisati."
 
 #: ../usermanual/reference_lists.rst:43
 #: ../usermanual/reference_lists.rst:49
@@ -85,59 +104,75 @@ msgstr "Vrste prispevkov"
 
 #: ../usermanual/reference_lists.rst:45
 msgid "**Configuration**, then **Contributions types**."
-msgstr ""
+msgstr "**Konfiguracija**, nato **Vrste prispevkov**."
 
 #: ../usermanual/reference_lists.rst:47
 msgid "Contribution types describe what your members pay: annual fee, reduced fee, donation..."
 msgstr ""
+"Vrste prispevkov opisujejo, kaj plačajo vaši člani: letna pristojbina, "
+"znižana pristojbina, donacija ..."
 
 #: ../usermanual/reference_lists.rst:54
 msgid "Each type has:"
-msgstr ""
+msgstr "Vsak tip ima:"
 
 #: ../usermanual/reference_lists.rst:56
 msgid "a **name**,"
-msgstr ""
+msgstr "**ime**,"
 
 #: ../usermanual/reference_lists.rst:57
 msgid "a **description**, to explain for example who the type is meant for,"
-msgstr ""
+msgstr "**opis**, ki na primer pojasni, komu je tip namenjen,"
 
 #: ../usermanual/reference_lists.rst:58
 msgid "an **amount**: when a contribution of that type is added, this amount is proposed, and can still be changed. Leave it empty if the amount varies,"
 msgstr ""
+"**znesek**: ko je dodan prispevek te vrste, je ta znesek predlagan in ga je "
+"še vedno mogoče spremeniti. Pustite prazno, če se znesek spreminja,"
 
 #: ../usermanual/reference_lists.rst:59
 msgid "a **membership extension**: whether a contribution of that type extends the membership of the member."
 msgstr ""
+"**podaljšanje članstva**: ali prispevek te vrste podaljšuje članstvo člana."
 
 #: ../usermanual/reference_lists.rst:61
 msgid "Editing a contribution type"
-msgstr ""
+msgstr "Urejanje vrste prispevka"
 
 #: ../usermanual/reference_lists.rst:66
 msgid "The choices of **Membership extension** depend on the **Default membership extension** set in the :ref:`preferences <man_preferences>`:"
 msgstr ""
+"Izbire **Razširitve članstva** so odvisne od **Privzete razširitve "
+"članstva**, nastavljene v :ref:`preferences <man_preferences>`:"
 
 #: ../usermanual/reference_lists.rst:68
 msgid "**Default**: the membership is extended by the default duration, 12 months for example,"
 msgstr ""
+"**Privzeto**: članstvo se podaljša za privzeto trajanje, na primer 12 "
+"mesecev,"
 
 #: ../usermanual/reference_lists.rst:69
 msgid "a number of months: the membership is extended by that duration instead; use it for a monthly or quarterly membership,"
 msgstr ""
+"število mesecev: namesto tega se članstvo podaljša za to obdobje; uporabite "
+"za mesečno ali četrtletno članstvo,"
 
 #: ../usermanual/reference_lists.rst:70
 msgid "**No**: the contribution does not extend the membership. This is what donations use."
 msgstr ""
+"**Ne**: prispevek ne podaljšuje članstva. To je tisto, kar uporabljajo "
+"donacije."
 
 #: ../usermanual/reference_lists.rst:72
 msgid "When no default membership extension is set (because all memberships start on the same day of the year), the choices are only **Yes** and **No**."
 msgstr ""
+"Če privzeto podaljšanje članstva ni nastavljeno (ker se vsa članstva začnejo "
+"na isti dan v letu), sta na voljo samo **Da** in **Ne**."
 
 #: ../usermanual/reference_lists.rst:74
 msgid "See :doc:`contributions management <contributions>` to record contributions."
 msgstr ""
+"Za beleženje prispevkov glejte :doc:`upravljanje prispevkov <contributions>`."
 
 #: ../usermanual/reference_lists.rst:79
 #: ../usermanual/reference_lists.rst:85
@@ -146,15 +181,22 @@ msgstr "Vrste plačil"
 
 #: ../usermanual/reference_lists.rst:81
 msgid "**Configuration**, then **Payment types**."
-msgstr ""
+msgstr "**Konfiguracija**, nato **Vrste plačila**."
 
 #: ../usermanual/reference_lists.rst:83
 msgid "Payment types are the ways your members pay: cash, check, credit card, transfer..."
 msgstr ""
+"Vrste plačil so načini plačila vaših članov: gotovina, ček, kreditna "
+"kartica, nakazilo ..."
 
 #: ../usermanual/reference_lists.rst:90
 msgid "You can add your own, for example a local currency or holiday vouchers. The payment types provided with Galette can be renamed or translated, but not deleted: some of them are used by Galette itself, like **Payment schedule** for :ref:`scheduled payments <scheduled_payments>`, or by plugins."
 msgstr ""
+"Dodate lahko svoje, na primer lokalno valuto ali počitniške bone. Vrste "
+"plačil, ki jih ponuja Galette, je mogoče preimenovati ali prevesti, ne pa "
+"tudi izbrisati: nekatere od njih uporablja Galette sama, na primer "
+"**Razpored plačil** za :ref:`načrtovana plačila <scheduled_payments>` ali "
+"vtičniki."
 
 #: ../usermanual/reference_lists.rst:95
 #: ../usermanual/reference_lists.rst:101
@@ -163,12 +205,15 @@ msgstr "Naslovi"
 
 #: ../usermanual/reference_lists.rst:97
 msgid "**Configuration**, then **Titles**."
-msgstr ""
+msgstr "**Konfiguracija**, nato **Naslovi**."
 
 #: ../usermanual/reference_lists.rst:99
 msgid "Titles are displayed before the name of the members: Mr., Mrs...."
-msgstr ""
+msgstr "Nazivi so prikazani pred imeni članov: g., ga...."
 
 #: ../usermanual/reference_lists.rst:106
 msgid "Each title has a **short form** (*Mr.*), displayed before the name of the members, and an optional **long form** (*Mister*). **Mr.** and **Mrs.** cannot be deleted."
 msgstr ""
+"Vsak naziv ima **kratko obliko** (*gospod*), prikazano pred imenom članov, "
+"in neobvezno **dolgo obliko** (*gospod*). **G.** in **Gospa.** ni mogoče "
+"izbrisati."
