@@ -7,7 +7,11 @@ Generalities
 Rights
 ======
 
-We can see several rights level in Galette, allowing access to different parts and features of the application. Levels are:
+.. versionchanged:: 1.4.0
+
+What each level is allowed to do is set with :ref:`roles <roles>`; therefore your instance may differ from the default configuration described here.
+
+We can see several rights levels in Galette, allowing access to different parts and features of the application. Levels are:
 
 * **super administrator** is a special user (the only one that is not a member) created at installation,
 * **administrators** are members for who the "administrator" checkbox has been checked,
@@ -21,19 +25,13 @@ Staff members, administrators as well as the super administrator can create, edi
 
 Administrators have also access to the application configuration, excepted super admin information.
 
+Staff members can also reach the **Configuration** menu, to manage references lists (statuses, titles, contributions and payment types) and emails contents and PDF models.
+
 The super administrator has a full access to the application, but not to all features. Indeed, this is not a member account, and it cannot have some of required information. It can change its own login and password from **My account**, then **My information**.
 
 Members can change their own information, and can see their contributions and transactions (as read only).
 
 Visitors can - if this is parameted in preferences - access to public pages (trombinoscope, public members list) but can also register :)
-
-Group managers
-^^^^^^^^^^^^^^
-
-With the stricter configuration, groups managers can show and search on members of their groups, and see accessible data for members.
-On members and cards, you can :ref:`configure which fields are accessible <fields_acls>`.
-
-From the preferences, you can also :ref:`give groups managers extra rights <pref_rights>`, like editing or creating members.
 
 .. _management_rules:
 

@@ -34,12 +34,11 @@ msgstr ""
 msgid ""
 "Each group can also have **managers**. A manager is a member who looks after "
 "the members of the group; what a manager is allowed to do is decided by the "
-"association, see :ref:`group managers <pref_rights>`."
+"association, see :ref:`roles <roles>`."
 msgstr ""
 "Chaque groupe peut aussi avoir des **responsables**. Un responsable est un "
 "adhérent qui s'occupe des membres du groupe ; ce qu'il a le droit de faire "
-"est décidé par l'association, voir les :ref:`responsables de groupe "
-"<pref_rights>`."
+"est décidé par l'association, voir les :ref:`rôles <roles>`."
 
 #: ../usermanual/groups.rst:11
 msgid "Groups are managed from **Management**, then **Groups**."
@@ -169,6 +168,20 @@ msgstr ""
 
 #: ../usermanual/groups.rst:52
 msgid ""
+"Since Galette 1.4, this depends on :ref:`roles <roles>`: changing the "
+"members requires *Edit groups* on the group and *Display members* for all "
+"groups; changing the managers also requires *Manage members administrative "
+"information* on the group. By default, only administrators and staff members "
+"have them."
+msgstr ""
+"Depuis Galette 1.4, cela dépend des :ref:`rôles <roles>` : changer les "
+"adhérents demande *Modifier les groupes* sur le groupe et *Afficher les "
+"adhérents* pour tous les groupes ; changer les responsables demande en plus "
+"*Gérer les informations administratives des adhérents* sur le groupe. Par "
+"défaut, seuls les administrateurs et les membres du bureau les ont."
+
+#: ../usermanual/groups.rst:54
+msgid ""
 "Members and managers are listed in a single table, instead of being selected "
 "in a separate window. Groups of a member card work the same way."
 msgstr ""
@@ -176,7 +189,7 @@ msgstr ""
 "d'être sélectionnés dans une fenêtre séparée. Les groupes d'une fiche "
 "adhérent fonctionnent de la même façon."
 
-#: ../usermanual/groups.rst:55
+#: ../usermanual/groups.rst:57
 msgid ""
 "Groups can also be changed from a member card: the **Groups** part of the "
 "member form lists the groups the member belongs to and the groups they "
@@ -189,22 +202,22 @@ msgstr ""
 "groupe dans **Ajouter au groupe** et cliquez sur **Ajouter** pour rattacher "
 "l'adhérent à un autre groupe."
 
-#: ../usermanual/groups.rst:57
+#: ../usermanual/groups.rst:59
 msgid "Groups of a member"
 msgstr "Groupes d'un adhérent"
 
-#: ../usermanual/groups.rst:63
+#: ../usermanual/groups.rst:65
 msgid "Several members at once"
 msgstr "Plusieurs adhérents à la fois"
 
-#: ../usermanual/groups.rst:65
+#: ../usermanual/groups.rst:67
 msgid ""
 "To add several members to a group, or to remove them from it, in one go:"
 msgstr ""
 "Pour ajouter plusieurs adhérents à un groupe, ou les en retirer, en une "
 "seule fois :"
 
-#: ../usermanual/groups.rst:67
+#: ../usermanual/groups.rst:69
 msgid ""
 "go to **Members**, then **List of members**, and select the members with the "
 "checkboxes,"
@@ -212,13 +225,13 @@ msgstr ""
 "allez dans **Adhérents**, puis **Liste des adhérents**, et cochez les "
 "adhérents concernés,"
 
-#: ../usermanual/groups.rst:68
+#: ../usermanual/groups.rst:70
 msgid "choose **Mass change** in the actions displayed under the list,"
 msgstr ""
 "choisissez **Modification en masse** dans les actions affichées sous la "
 "liste,"
 
-#: ../usermanual/groups.rst:69
+#: ../usermanual/groups.rst:71
 msgid ""
 "in the **Groups:** part, pick a group in **Add to group** or in **Remove "
 "from group**,"
@@ -226,11 +239,11 @@ msgstr ""
 "dans la partie **Groupes :**, choisissez un groupe dans **Ajouter au "
 "groupe** ou dans **Supprimer du groupe**,"
 
-#: ../usermanual/groups.rst:70
+#: ../usermanual/groups.rst:72
 msgid "check the summary, and confirm."
 msgstr "vérifiez le récapitulatif, et confirmez."
 
-#: ../usermanual/groups.rst:72
+#: ../usermanual/groups.rst:74
 msgid ""
 "See :ref:`mass changes <mass_changes>` for the other information that can be "
 "changed this way."
@@ -238,11 +251,11 @@ msgstr ""
 "Voir les :ref:`modifications en masse <mass_changes>` pour les autres "
 "informations modifiables de cette façon."
 
-#: ../usermanual/groups.rst:75
+#: ../usermanual/groups.rst:77
 msgid "Deleting a group"
 msgstr "Supprimer un groupe"
 
-#: ../usermanual/groups.rst:77
+#: ../usermanual/groups.rst:79
 msgid ""
 "Click on the delete icon of the group, and confirm. A group that still has "
 "members or subgroups cannot be deleted as is: check **Cascade delete** in "
@@ -255,11 +268,11 @@ msgstr ""
 "supprimer le groupe et ses sous-groupes. Les adhérents ne sont jamais "
 "supprimés ; ils sont seulement retirés du groupe."
 
-#: ../usermanual/groups.rst:80
+#: ../usermanual/groups.rst:82
 msgid "Groups and searches"
 msgstr "Groupes et recherches"
 
-#: ../usermanual/groups.rst:82
+#: ../usermanual/groups.rst:84
 msgid ""
 "The members list can be filtered on a group, and the :ref:`advanced search "
 "<advsearch>` can find members belonging to several groups at once."

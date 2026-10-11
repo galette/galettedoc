@@ -6,7 +6,7 @@ Groups
 
 Groups gather members who share something: the board, a team, a section of your association, the people taking part in a project... A member can belong to as many groups as needed, and groups can be nested: a "Juniors" group can be placed under a "Football" group, for example.
 
-Each group can also have **managers**. A manager is a member who looks after the members of the group; what a manager is allowed to do is decided by the association, see :ref:`group managers <pref_rights>`.
+Each group can also have **managers**. A manager is a member who looks after the members of the group; what a manager is allowed to do is decided by the association, see :ref:`roles <roles>`.
 
 Groups are managed from **Management**, then **Groups**.
 
@@ -48,6 +48,8 @@ To change who belongs to the group:
 Changed lines are labelled (*added*, *changed*, *will be removed*), and a message reminds you that nothing is stored yet: click on **Save** to keep your changes.
 
 Only administrators and staff members can change the members and managers from this page. Group managers see the list, but change the members of their groups from the member cards.
+
+Since Galette 1.4, this depends on :ref:`roles <roles>`: changing the members requires *Edit groups* on the group and *Display members* for all groups; changing the managers also requires *Manage members administrative information* on the group. By default, only administrators and staff members have them.
 
 .. versionchanged:: 1.3.1
    Members and managers are listed in a single table, instead of being selected in a separate window. Groups of a member card work the same way.
