@@ -7,7 +7,7 @@ Generalities
 Rights
 ======
 
-We can see several rights level in Galette, allowing access to different parts and features of the application. Levels are:
+We can see several rights level in Galette, allowing access to different parts and features of the application. Since Galette 1.4, what each level is allowed to do is set with :ref:`roles <roles>`; by default, levels are:
 
 * **super administrator** is a special user (the only one that is not a member) created at installation,
 * **administrators** are members for who the "administrator" checkbox has been checked,
@@ -33,7 +33,7 @@ Group managers
 With the stricter configuration, groups managers can show and search on members of their groups, and see accessible data for members.
 On members and cards, you can :ref:`configure which fields are accessible <fields_acls>`.
 
-From the preferences, you can also :ref:`give groups managers extra rights <pref_rights>`, like editing or creating members.
+From the **Group manager** role, you can also :ref:`give groups managers extra rights <roles>`, like editing or creating members.
 
 .. _management_rules:
 

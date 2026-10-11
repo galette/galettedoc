@@ -118,23 +118,9 @@ Galette related parameters:
 Rights
 ======
 
-Define few extra rights:
+.. versionchanged:: 1.4.0
 
-* **Can members create child?** if you enable this settings, any logged in member can create another members that will be attached to him as children.
-* **Can group managers edit their groups?** groups manager can edit their owned groups information (name, parent, order).
-* **Can group managers create members?** groups managers can create members attached to their groups.
-* **Can group managers edit members?** groups managers can edit member of their groups information.
-* **Can group managers send mailings?** groups manager can send mailings.
-* **Can group managers do exports?** groups managers can export groups as PDF, generate attendance sheets, cards, labels and CSV exports for members of their groups.
-* **Can group managers see contributions?** groups managers can see contributions of members of their groups.
-* **Can group managers create contributions?** groups managers can create contributions on behalf of members of their groups.
-* **Can group managers see transactions?** groups managers can see transactions of members of their groups.
-* **Can group managers create transactions?** groups managers can create transactions on behalf of members of their groups.
-
-.. image:: ../_styles/static/images/usermanual/prefs_rights.png
-   :scale: 50%
-   :align: center
-   :alt: Galette settings, rights tab
+Rights are managed with :ref:`roles <roles>`; this tab only links to them. The settings it held before have been turned into permissions of the system roles when upgrading, see :ref:`roles_upgrade`.
 
 .. _pref_email:
 
