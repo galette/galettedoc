@@ -84,7 +84,7 @@ Plugins may add their own permissions, in a domain of their own. Permissions of 
 Giving a role
 =============
 
-Roles you have created are given from their edition page, under **Members**: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back.
+Roles you have created are given from their edition page, under **Members**: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back. Roles can also be given from the member card, see below.
 
 .. image:: ../_styles/static/images/usermanual/role_members.png
    :scale: 50%
@@ -93,7 +93,7 @@ Roles you have created are given from their edition page, under **Members**: cho
 
 Changes apply at once: there is no need for the member to log in again.
 
-Administrators see the roles of a member on their card: those computed from member information, with a cog icon, and those you have given, in blue. Each one links to the role page.
+Administrators see the roles of a member on their card: those computed from member information, with a cog icon, and those you have given, in blue. Each one links to the role page. Below, choose one of the roles you have created, a group or **All groups**, and use **Give role**; the cross next to a given role takes it back.
 
 .. image:: ../_styles/static/images/usermanual/member_roles.png
    :scale: 50%
