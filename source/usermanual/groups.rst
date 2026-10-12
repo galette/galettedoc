@@ -6,7 +6,7 @@ Groups
 
 Groups gather members who share something: the board, a team, a section of your association, the people taking part in a project... A member can belong to as many groups as needed, and groups can be nested: a "Juniors" group can be placed under a "Football" group, for example.
 
-Each group can also have **managers**. A manager is a member who looks after the members of the group; what a manager is allowed to do is decided by the association, see :ref:`group managers <pref_rights>`.
+Each group can also have **managers**. A manager is a member who looks after the members of the group; what a manager is allowed to do is decided by the association, see :ref:`roles <roles>`.
 
 Groups are managed from **Management**, then **Groups**.
 
