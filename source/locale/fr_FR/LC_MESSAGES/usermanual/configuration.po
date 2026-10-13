@@ -422,11 +422,15 @@ msgstr ""
 "**Traduire** des préférences, ouvrent le même formulaire pour un seul "
 "libellé."
 
-#: ../usermanual/configuration.rst:152
+#: ../usermanual/configuration.rst:149
+msgid "Translating a label typed in French"
+msgstr "Traduire un libellé saisi en français"
+
+#: ../usermanual/configuration.rst:157
 msgid "Labels provided by Galette"
 msgstr "Libellés fournis par Galette"
 
-#: ../usermanual/configuration.rst:156
+#: ../usermanual/configuration.rst:161
 msgid ""
 "Translations of the labels provided by Galette are displayed, instead of an "
 "empty form whose values were not used."
@@ -434,7 +438,7 @@ msgstr ""
 "Les traductions des libellés fournis par Galette sont affichées, au lieu "
 "d'un formulaire vide dont les valeurs n'étaient pas utilisées."
 
-#: ../usermanual/configuration.rst:158
+#: ../usermanual/configuration.rst:163
 msgid ""
 "Default statuses, contribution types and payment types are provided by "
 "Galette, and are translated along with the software. Their translation form "
@@ -448,7 +452,11 @@ msgstr ""
 "contribuez à la `traduction de Galette sur Weblate <https://"
 "hosted.weblate.org/projects/galette/>`_."
 
-#: ../usermanual/configuration.rst:160
+#: ../usermanual/configuration.rst:165
+msgid "Read-only translations of a label provided by Galette"
+msgstr "Traductions en lecture seule d'un libellé fourni par Galette"
+
+#: ../usermanual/configuration.rst:170
 msgid ""
 "Their edit form reminds that changing such a label replaces its automatic "
 "translations: the new label is then a text of your own, to be translated "
@@ -458,18 +466,22 @@ msgstr ""
 "ses traductions automatiques : le nouveau libellé devient alors un texte qui "
 "vous est propre, à traduire comme n'importe quel autre."
 
-#: ../usermanual/configuration.rst:165
+#: ../usermanual/configuration.rst:172
+msgid "Editing a contribution type"
+msgstr "Modifier un type de contribution"
+
+#: ../usermanual/configuration.rst:180
 msgid "Changing a label"
 msgstr "Modifier un libellé"
 
-#: ../usermanual/configuration.rst:169
+#: ../usermanual/configuration.rst:184
 msgid ""
 "Translations can be kept when a label is changed. They used to be reset."
 msgstr ""
 "Les traductions peuvent être conservées lorsqu'un libellé est modifié. Elles "
 "étaient auparavant réinitialisées."
 
-#: ../usermanual/configuration.rst:171
+#: ../usermanual/configuration.rst:186
 msgid ""
 "When you change one of your own labels, its edit form proposes to **keep its "
 "translations in other languages**, checked by default:"
@@ -478,7 +490,7 @@ msgstr ""
 "propose de **conserver ses traductions dans les autres langues**, coché par "
 "défaut :"
 
-#: ../usermanual/configuration.rst:173
+#: ../usermanual/configuration.rst:188
 msgid ""
 "**Checked**: translations in other languages are copied to the new label. "
 "Keep it checked to fix a typo, or for a change that does not alter the "
@@ -488,7 +500,7 @@ msgstr ""
 "nouveau libellé. Laissez-le coché pour corriger une coquille, ou pour une "
 "modification qui ne change pas le sens,"
 
-#: ../usermanual/configuration.rst:174
+#: ../usermanual/configuration.rst:189
 msgid ""
 "**Unchecked**: translations are reset, as for a new label. Uncheck it when "
 "the meaning changes, since existing translations would no longer be right."
@@ -497,14 +509,19 @@ msgstr ""
 "libellé. Décochez-le quand le sens change, les traductions existantes ne "
 "seraient plus justes."
 
-#: ../usermanual/configuration.rst:176
+#: ../usermanual/configuration.rst:191
 msgid ""
 "In both cases, the translation in the current language becomes the new label."
 msgstr ""
 "Dans les deux cas, la traduction dans la langue courante devient le nouveau "
 "libellé."
 
-#: ../usermanual/configuration.rst:178
+#: ../usermanual/configuration.rst:193
+msgid "Keeping translations when changing a dynamic field name"
+msgstr ""
+"Conserver les traductions lors du changement de nom d'un champ dynamique"
+
+#: ../usermanual/configuration.rst:198
 msgid ""
 "The same label can be used by several objects, a status and a contribution "
 "type for example: they share the same translations, which are kept as long "
@@ -514,11 +531,11 @@ msgstr ""
 "de contribution par exemple : ils partagent les mêmes traductions, "
 "conservées tant que l'un d'eux utilise encore le libellé."
 
-#: ../usermanual/configuration.rst:183
+#: ../usermanual/configuration.rst:203
 msgid "Emails contents"
 msgstr "Contenus des courriels"
 
-#: ../usermanual/configuration.rst:185
+#: ../usermanual/configuration.rst:205
 msgid ""
 "Depending on your configuration (see :ref:`preferences <pref_email>`), "
 "administrative emails can be sent to users and/or administrators, when you "
@@ -531,11 +548,11 @@ msgstr ""
 "ou une nouvelle contribution, ou encore pour la fonctionnalité mot de passe "
 "perdu, par exemple."
 
-#: ../usermanual/configuration.rst:187
+#: ../usermanual/configuration.rst:207
 msgid "Defaults are provided, but you can change them."
 msgstr "Des valeurs par défaut sont fournies, mais vous pouvez les changer."
 
-#: ../usermanual/configuration.rst:189
+#: ../usermanual/configuration.rst:209
 msgid ""
 "It is important to note that those texts contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -546,22 +563,22 @@ msgstr ""
 "l'envoi. Prenez garde à n'en oublier aucune, cela pourrait causer des "
 "problèmes à l'envoi."
 
-#: ../usermanual/configuration.rst:191
+#: ../usermanual/configuration.rst:211
 msgid "Edit mail send to a new member in french"
 msgstr "Édition du courriel envoyé à un nouvel adhérent en français"
 
-#: ../usermanual/configuration.rst:196
+#: ../usermanual/configuration.rst:216
 msgid "An email will be send to member when:"
 msgstr "Un courriel sera envoyé à l'adhérent lorsque :"
 
-#: ../usermanual/configuration.rst:198
+#: ../usermanual/configuration.rst:218
 msgid ""
 "they register on their own. This mail contains authentication information,"
 msgstr ""
 "il s'inscrivent eux-mêmes. Ce courriel contient des informations "
 "d'authentification,"
 
-#: ../usermanual/configuration.rst:199
+#: ../usermanual/configuration.rst:219
 msgid ""
 "their card is added or edited by someone else (if the corresponding box is "
 "checked),"
@@ -569,11 +586,11 @@ msgstr ""
 "leur fiche est modifiée par une tierce personne (si la case correspondante "
 "est cochée),"
 
-#: ../usermanual/configuration.rst:200
+#: ../usermanual/configuration.rst:220
 msgid "they use the lost password feature,"
 msgstr "ils utilisent la fonctionnalité mot de passe perdu,"
 
-#: ../usermanual/configuration.rst:201
+#: ../usermanual/configuration.rst:221
 msgid ""
 "a new contribution is attached to their account (if the corresponding box is "
 "checked)."
@@ -581,19 +598,19 @@ msgstr ""
 "une nouvelle contribution est attachée à leur compte (si la case "
 "correspondante est cochée)."
 
-#: ../usermanual/configuration.rst:203
+#: ../usermanual/configuration.rst:223
 msgid "An email will be send to administrators when:"
 msgstr "Un courriel sera envoyé aux administrateurs lorsque :"
 
-#: ../usermanual/configuration.rst:205
+#: ../usermanual/configuration.rst:225
 msgid "a new member is added or registers on their own,"
 msgstr "un nouvel adhérent est ajouté ou s'est inscrit lui même,"
 
-#: ../usermanual/configuration.rst:206
+#: ../usermanual/configuration.rst:226
 msgid "a new contribution is attached to a member account."
 msgstr "une nouvelle contribution à un compte adhérent."
 
-#: ../usermanual/configuration.rst:208
+#: ../usermanual/configuration.rst:228
 msgid ""
 "Of course, emails will be sent only if Galette configuration allows it (and "
 "the setup is correct). Sending messages to administrators is configured "
@@ -608,7 +625,7 @@ msgstr ""
 "cocher dans l'interface utilisateur, sauf pour les messages de souscription "
 "par l'utilisateur qui seront toujours envoyés."
 
-#: ../usermanual/configuration.rst:210
+#: ../usermanual/configuration.rst:230
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "
