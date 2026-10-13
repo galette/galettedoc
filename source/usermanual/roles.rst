@@ -84,7 +84,7 @@ Plugins may add their own permissions, in a domain of their own. Permissions of 
 Giving a role
 =============
 
-Roles you have created are given from their edition page, under **Members**: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back. Roles can also be given from the member card, see below.
+Roles you have created are given from their edition page, under **Members**: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back. Roles can also be given when editing a member, see below.
 
 .. image:: ../_styles/static/images/usermanual/role_members.png
    :scale: 50%
@@ -93,12 +93,19 @@ Roles you have created are given from their edition page, under **Members**: cho
 
 Changes apply at once: there is no need for the member to log in again.
 
-Administrators see the roles of a member on their card: those computed from member information, with a cog icon, and those you have given, in blue. Each one links to the role page. Below, choose one of the roles you have created, a group or **All groups**, and use **Give role**; the cross next to a given role takes it back.
+Administrators see the roles of a member on their card: those computed from member information, with a cog icon, and those you have given, in blue. Each one links to the role page.
 
 .. image:: ../_styles/static/images/usermanual/member_roles.png
    :scale: 50%
    :align: center
    :alt: Roles on a member card
+
+When editing a member, the **Roles** block lists the same roles. Computed ones cannot be changed there. Choose one of the roles you have created, a group or **All groups**, and use **Add**; the cross takes a given role back, and **Cancel** keeps it. Changes are stored when the member is saved.
+
+.. image:: ../_styles/static/images/usermanual/member_roles_edit.png
+   :scale: 50%
+   :align: center
+   :alt: Roles when editing a member
 
 Roles for one group
 -------------------
