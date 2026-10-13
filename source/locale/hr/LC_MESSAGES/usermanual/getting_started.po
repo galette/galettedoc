@@ -2,185 +2,248 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Marko Puljic <markopuljic.uo@gmail.com>, 2026.
+# Marko Puljic <markopuljic.uo@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-05 22:48+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-13 08:40+0000\n"
+"Last-Translator: Marko Puljic "
+"<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
+"user-getting_started/hr/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hr\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../usermanual/getting_started.rst:5
 msgid "Getting started"
-msgstr ""
+msgstr "Prvi koraci"
 
 #: ../usermanual/getting_started.rst:7
 msgid "Galette has just been installed for your association, and you wonder where to start? This page walks you through the first steps, in order. Each step links to the part of this manual that describes it in detail."
 msgstr ""
+"Galette je upravo instaliran za vašu udrugu, a ne znate odakle početi? Ova "
+"vas stranica redom vodi kroz prve korake. Svaki korak povezuje na dio "
+"priručnika s detaljnim opisom."
 
 #: ../usermanual/getting_started.rst:9
 msgid "Dashboard of the super administrator, just after installation"
-msgstr ""
+msgstr "Nadzorna ploča glavnog administratora nakon instalacije"
 
 #: ../usermanual/getting_started.rst:15
 msgid "1. Secure the super administrator account"
-msgstr ""
+msgstr "1. Zaštitite račun glavnog administratora"
 
 #: ../usermanual/getting_started.rst:17
 msgid "During the installation, a **super administrator** account has been created. This account is not a member: it is the \"master key\" of your Galette, it can do everything, but it should not be used every day."
 msgstr ""
+"Tijekom instalacije stvoren je račun **glavnog administratora**. Taj račun "
+"nije član: on je „glavni ključ” vašeg Galettea i ima sve ovlasti, ali nije "
+"namijenjen svakodnevnom radu."
 
 #: ../usermanual/getting_started.rst:19
 msgid "Log in with it, then go to **My Account**, then **My information**, and set a strong password,"
 msgstr ""
+"Prijavite se njime, otvorite **Moj račun**, zatim **Moji podaci**, i "
+"postavite jaku lozinku,"
 
 #: ../usermanual/getting_started.rst:20
 msgid "keep that password somewhere safe."
-msgstr ""
+msgstr "čuvajte tu lozinku na sigurnom mjestu."
 
 #: ../usermanual/getting_started.rst:22
 msgid "For daily work, it is better to use the member accounts of the people who run the association:"
-msgstr ""
+msgstr "Za svakodnevni rad koristite članske račune osoba koje vode udrugu:"
 
 #: ../usermanual/getting_started.rst:24
 msgid "a member whose status is a board status (president, treasurer, secretary by default) is a **staff member**,"
 msgstr ""
+"član sa statusom uprave (zadano predsjednik, blagajnik ili tajnik) jest "
+"**član uprave**,"
 
 #: ../usermanual/getting_started.rst:25
 msgid "checking **Galette Admin** on a member card makes this member an **administrator**."
 msgstr ""
+"označavanjem **Administrator Galettea** u članskom kartonu član postaje "
+"**administrator**."
 
 #: ../usermanual/getting_started.rst:27
 msgid "See :ref:`rights <man_generalites>` to know what each one can do."
-msgstr ""
+msgstr "Za ovlasti pojedinih uloga pogledajte :ref:`ovlasti <man_generalites>`."
 
 #: ../usermanual/getting_started.rst:30
 msgid "2. Fill in your association information"
-msgstr ""
+msgstr "2. Unesite podatke o udruzi"
 
 #: ../usermanual/getting_started.rst:32
 msgid "Go to **Configuration**, then **Settings**. The **General** tab holds the information about your association:"
 msgstr ""
+"Otvorite **Konfiguracija**, zatim **Konfiguracija**. Kartica **Općenito** "
+"sadrži podatke o udruzi:"
 
 #: ../usermanual/getting_started.rst:34
 msgid "its name and a short description, displayed on every page,"
-msgstr ""
+msgstr "naziv i kratki opis koji se prikazuju na svakoj stranici,"
 
 #: ../usermanual/getting_started.rst:35
 msgid "its logo,"
-msgstr ""
+msgstr "logotip,"
 
 #: ../usermanual/getting_started.rst:36
 msgid "its address, phone number, email address and website."
-msgstr ""
+msgstr "adresu, telefonski broj, adresu e-pošte i mrežno mjesto."
 
 #: ../usermanual/getting_started.rst:38
 msgid "They are used on the screens, but also on the documents Galette produces: invoices, receipts, member cards... Then click on **Save**."
 msgstr ""
+"Ti se podaci koriste u sučelju i u dokumentima koje Galette izrađuje: "
+"računima, potvrdama o uplati, članskim iskaznicama i slično. Zatim kliknite "
+"**Spremi**."
 
 #: ../usermanual/getting_started.rst:40
 msgid "Two settings of the **Parameters** tab decide how memberships are counted, and deserve a look right away:"
 msgstr ""
+"Dvije postavke na kartici **Parametri** određuju obračun članstva i treba ih "
+"odmah provjeriti:"
 
 #: ../usermanual/getting_started.rst:42
 msgid "**Default membership extension**: how many months a membership fee lasts, usually 12,"
 msgstr ""
+"**Zadano produljenje članstva**: koliko mjeseci članarina pokriva, obično 12,"
 
 #: ../usermanual/getting_started.rst:43
 msgid "**Beginning of membership**: set it if all memberships of your association start on the same day of the year (on January 1st, or at the beginning of your season, for example). Leave it empty if each membership lasts from the day it is paid."
 msgstr ""
+"**Početak članstva**: postavite ga ako sva članstva počinju istog dana u "
+"godini, primjerice 1. siječnja ili početkom sezone. Ostavite prazno ako "
+"članstvo svakog člana počinje na dan uplate."
 
 #: ../usermanual/getting_started.rst:45
 msgid "All the settings are described in :ref:`Galette preferences <man_preferences>`, and the way due dates are calculated in :ref:`management rules <management_rules>`."
 msgstr ""
+"Sve su postavke opisane u odjeljku :ref:`postavke Galettea <man_preferences>"
+"`, a izračun datuma isteka u :ref:`pravilima upravljanja <management_rules>`."
 
 #: ../usermanual/getting_started.rst:48
 msgid "3. Check that emails can be sent"
-msgstr ""
+msgstr "3. Provjerite slanje e-pošte"
 
 #: ../usermanual/getting_started.rst:50
 msgid "Galette sends emails: login information to new members, password recovery, reminders, mailings... In the **E-Mail** tab of the settings, choose how emails are sent and set the sender address. Use **Test connection**, then **Send a test email**, to make sure a message really arrives before going further."
 msgstr ""
+"Galette šalje pristupne podatke novim članovima, poruke za oporavak lozinke, "
+"podsjetnike, skupne poruke i slično. Na kartici **E-pošta** odaberite način "
+"slanja i adresu pošiljatelja. Kliknite **Provjeri vezu**, zatim **Pošalji "
+"probnu poruku**, i provjerite stiže li poruka prije nastavka."
 
 #: ../usermanual/getting_started.rst:52
 msgid "Ask your web host which settings to use. Without them, members cannot recover a lost password by themselves."
 msgstr ""
+"Pitajte pružatelja smještaja koje postavke treba koristiti. Bez njih članovi "
+"ne mogu sami oporaviti zaboravljenu lozinku."
 
 #: ../usermanual/getting_started.rst:55
 msgid "4. Adapt the lists to your association"
-msgstr ""
+msgstr "4. Prilagodite popise svojoj udruzi"
 
 #: ../usermanual/getting_started.rst:57
 msgid "Galette comes with ready to use lists, which you can rename, complete or remove from the **Configuration** menu:"
 msgstr ""
+"Galette sadrži pripremljene popise koje možete preimenovati, dopuniti ili "
+"ukloniti iz izbornika **Konfiguracija**:"
 
 #: ../usermanual/getting_started.rst:59
 msgid "**User statuses**: the roles of the members in your association (president, treasurer, active member...),"
 msgstr ""
+"**Statusi korisnika**: uloge članova u udruzi (predsjednik, blagajnik, "
+"aktivni član i slično),"
 
 #: ../usermanual/getting_started.rst:60
 msgid "**Contributions types**: the kinds of membership fees and donations you receive,"
-msgstr ""
+msgstr "**Vrste uplata**: vrste članarina i donacija koje primate,"
 
 #: ../usermanual/getting_started.rst:61
 msgid "**Payment types**: the ways your members pay (cash, check, credit card...),"
 msgstr ""
+"**Načini plaćanja**: kako članovi plaćaju (gotovina, ček, platna kartica i "
+"slično),"
 
 #: ../usermanual/getting_started.rst:62
 msgid "**Titles**: Mr., Mrs...."
-msgstr ""
+msgstr "**Oslovljavanja**: g., gđa i slično."
 
 #: ../usermanual/getting_started.rst:64
 msgid "Take a few minutes to adapt them now: they will appear in every form afterwards."
 msgstr ""
+"Odvojite nekoliko minuta za prilagodbu jer će se ti popisi poslije "
+"pojavljivati u svim obrascima."
 
 #: ../usermanual/getting_started.rst:66
 msgid "If you need to record information Galette does not know about, such as a licence number, you can add your own fields from **Configuration**, then **Dynamic fields**; see :ref:`dynamic fields <dynamic_fields>`."
 msgstr ""
+"Za podatke koje Galette ne predviđa, primjerice broj licence, dodajte "
+"vlastita polja putem **Konfiguracija**, zatim **Dinamička polja**. "
+"Pogledajte :ref:`dinamička polja <dynamic_fields>`."
 
 #: ../usermanual/getting_started.rst:69
 msgid "5. Add your members"
-msgstr ""
+msgstr "5. Dodajte članove"
 
 #: ../usermanual/getting_started.rst:71
 msgid "To add a member, go to **Members**, then **Add a member**. Only a few fields are required; the others can be filled in later, by you or by the member themselves. See :ref:`members management <man_adherents>`."
 msgstr ""
+"Za dodavanje člana otvorite **Članovi**, zatim **Dodaj člana**. Obvezno je "
+"samo nekoliko polja, a ostala vi ili član možete dopuniti kasnije. "
+"Pogledajte :ref:`upravljanje članovima <man_adherents>`."
 
 #: ../usermanual/getting_started.rst:73
 msgid "If you already have a list of members in a spreadsheet, you can import it rather than typing everything again; see :ref:`CSV imports <csv_imports>`."
 msgstr ""
+"Ako već imate popis članova u proračunskoj tablici, možete ga uvesti bez "
+"ponovnog prepisivanja. Pogledajte :ref:`CSV uvozi <csv_imports>`."
 
 #: ../usermanual/getting_started.rst:76
 msgid "6. Record the membership fees"
-msgstr ""
+msgstr "6. Evidentirajte članarine"
 
 #: ../usermanual/getting_started.rst:78
 msgid "When a member pays, go to **Contributions**, then **Add a membership fee**, select the member, the contribution type, the amount and the payment type. Galette calculates the end of the membership on its own."
 msgstr ""
+"Kada član plati, otvorite **Uplate**, zatim **Dodaj članarinu**, odaberite "
+"člana, vrstu uplate, iznos i način plaćanja. Galette sam izračunava datum "
+"isteka članstva."
 
 #: ../usermanual/getting_started.rst:80
 msgid "Donations are recorded the same way, from **Add a donation**. See :doc:`contributions management <contributions>`."
 msgstr ""
+"Donacije se evidentiraju na isti način putem **Dodaj donaciju**. Pogledajte "
+":doc:`upravljanje uplatama <contributions>`."
 
 #: ../usermanual/getting_started.rst:83
 msgid "7. Write to your members"
-msgstr ""
+msgstr "7. Pišite svojim članovima"
 
 #: ../usermanual/getting_started.rst:85
 msgid "Go to **Members**, then **List of members**, select the members you want to write to with the checkboxes, and choose **Mail** in the actions displayed under the list. See :ref:`e-mailing <emailing>`."
 msgstr ""
+"Otvorite **Članovi**, zatim **Popis članova**, potvrdnim okvirima odaberite "
+"primatelje i kliknite **E-pošta** među radnjama ispod popisa. Pogledajte "
+":ref:`slanje e-pošte <emailing>`."
 
 #: ../usermanual/getting_started.rst:88
 msgid "8. Let your members log in"
-msgstr ""
+msgstr "8. Omogućite članovima prijavu"
 
 #: ../usermanual/getting_started.rst:90
 msgid "Each member with a username and a password can log in to Galette, see their membership, download their member card or their receipts, and update their own information. The :ref:`my account <man_my_account>` page is written for them: you can send them its link."
 msgstr ""
+"Svaki član s korisničkim imenom i lozinkom može se prijaviti u Galette, "
+"pregledati članstvo, preuzeti iskaznicu ili potvrde o uplati te ažurirati "
+"svoje podatke. Stranica :ref:`moj račun <man_my_account>` namijenjena je "
+"njima; možete im poslati njezinu poveznicu."
