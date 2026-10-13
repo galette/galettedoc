@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Marko Puljic <markopuljic.uo@gmail.com>, 2026.
+# Marko Puljic <markopuljic.uo@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-06 10:35+0200\n"
-"PO-Revision-Date: 2026-10-09 13:50+0000\n"
-"Last-Translator: Marko Puljic <markopuljic.uo@gmail.com>\n"
+"PO-Revision-Date: 2026-10-13 08:40+0000\n"
+"Last-Translator: Marko Puljic "
+"<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
 "user-contributions/hr/>\n"
 "MIME-Version: 1.0\n"
@@ -17,31 +19,43 @@ msgstr ""
 "Language: hr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../usermanual/contributions.rst:3
 msgid "Contributions management"
-msgstr ""
+msgstr "Upravljanje uplatama"
 
 #: ../usermanual/contributions.rst:5
 msgid "Galette allows you to manage contributions sent from your members. There are several types of contributions, and transactions are also proposed."
 msgstr ""
+"Galette omogućuje evidenciju uplata članova. Postoji više vrsta uplata, a "
+"podržane su i transakcije."
 
 #: ../usermanual/contributions.rst:7
 msgid "A transaction? What's that? Well, a simple example is better than a long text... We will use three members of a same association: Marc, Julie and Zac. Each one is member, independently of which group or else they are affected to, that does not matters."
 msgstr ""
+"Što je transakcija? Jednostavan primjer bolji je od dugog objašnjenja. "
+"Uzmimo tri člana iste udruge: Marca, Julie i Zaca. Svi su članovi, neovisno "
+"o grupama kojima pripadaju."
 
 #: ../usermanual/contributions.rst:9
 msgid "Zac send you a check to pay his own membership, Marc and Julie ones and also a donation to the association. In this case, Zac's check will be handled in a transaction attached to his account, and which will be distributed in four contributions, each one attached to corresponding member."
 msgstr ""
+"Zac šalje ček za svoju članarinu, članarine Marca i Julie te donaciju "
+"udruzi. Taj se ček evidentira kao transakcija na Zacovu računu i raspoređuje "
+"na četiri uplate, od kojih je svaka vezana uz odgovarajućeg člana."
 
 #: ../usermanual/contributions.rst:11
 msgid "Another example: Pierre pays his own contribution, his transaction will only contains his membership and will be distributed in only one contribution."
 msgstr ""
+"Drugi primjer: Pierre plaća samo svoju članarinu. Njegova transakcija "
+"obuhvaća samo tu članarinu i raspoređuje se na jednu uplatu."
 
 #: ../usermanual/contributions.rst:13
 msgid "If Pierre, Zac, Julie or Marc are late, you can send them a :ref:`reminder <reminders>` :p"
 msgstr ""
+"Ako Pierre, Zac, Julie ili Marc zakasne s članarinom, možete im poslati "
+":ref:`podsjetnik <reminders>` :p"
 
 #: ../usermanual/contributions.rst:16
 msgid "Contributions"
@@ -50,14 +64,21 @@ msgstr "Uplate"
 #: ../usermanual/contributions.rst:18
 msgid "A contribution can be a membership, a donation, a gift, ... Galette allows you to store all of that for each member."
 msgstr ""
+"Uplata može biti članarina, donacija, dar i slično. Galette omogućuje "
+"evidenciju svega toga za svakog člana."
 
 #: ../usermanual/contributions.rst:20
 msgid "**Contributions**, then **List of contributions** displays all contributions. The filters at the top of the list help to find some: by begin date, end date or date of record, on a period, and by payment type or contribution type. Click on **Filter** to apply them, and on **Clear filter** to come back to the whole list. The total amount of the contributions found is displayed under the list."
 msgstr ""
+"Putem **Uplate**, zatim **Popis uplata**, prikazuju se sve uplate. Filtri na "
+"vrhu omogućuju pretraživanje prema datumu početka, završetka ili unosa, "
+"razdoblju, načinu plaćanja i vrsti uplate. Kliknite **Filtriraj** za "
+"primjenu, a **Ukloni filtar** za povratak na cijeli popis. Ukupan iznos "
+"pronađenih uplata prikazuje se ispod popisa."
 
 #: ../usermanual/contributions.rst:22
 msgid "Contributions list and its filters"
-msgstr ""
+msgstr "Popis uplata i filtri"
 
 #: ../usermanual/contributions.rst:28
 msgid "Contributions types"
@@ -66,22 +87,28 @@ msgstr "Vrste uplata"
 #: ../usermanual/contributions.rst:30
 msgid "Contributions are entirely configurable. There are two main types of contributions in Galette:"
 msgstr ""
+"Vrste uplata potpuno su prilagodljive. U Galetteu postoje dvije osnovne "
+"skupine:"
 
 #: ../usermanual/contributions.rst:32
 msgid "the ones that extends a membership (a monthly or yearly membership for example),"
 msgstr ""
+"uplate koje produljuju članstvo, primjerice mjesečna ili godišnja članarina,"
 
 #: ../usermanual/contributions.rst:33
 msgid "the ones that do not extends membership, like donations."
-msgstr ""
+msgstr "uplate koje ne produljuju članstvo, primjerice donacije."
 
 #: ../usermanual/contributions.rst:35
 msgid "Contribution types management allows you to define a label, and if it extends the membership or not."
 msgstr ""
+"U upravljanju vrstama uplata određujete oznaku i produljuje li uplata "
+"članstvo."
 
 #: ../usermanual/contributions.rst:37
 msgid "See :ref:`contributions types <contributions_types_list>` to manage them."
 msgstr ""
+"Za upravljanje pogledajte :ref:`vrste uplata <contributions_types_list>`."
 
 #: ../usermanual/contributions.rst:42
 msgid "Reminders"
@@ -90,62 +117,84 @@ msgstr "Podsjetnici"
 #: ../usermanual/contributions.rst:44
 msgid "Emails models to remind due dates are available from the emails contents (\"Impending due date\" and \"Late due date\")."
 msgstr ""
+"Predlošci poruka za podsjećanje na istek članstva dostupni su u sadržaju e-"
+"pošte („Članstvo uskoro istječe” i „Članstvo je isteklo”)."
 
 #: ../usermanual/contributions.rst:46
 msgid "The reminder button from the dashboard or the reminders entry of the menu will give you access to the reminders management interface."
 msgstr ""
+"Gumb za podsjetnike na nadzornoj ploči ili stavka izbornika otvara sučelje "
+"za upravljanje podsjetnicima."
 
 #: ../usermanual/contributions.rst:48
 msgid "Reminders management interface"
-msgstr ""
+msgstr "Sučelje za upravljanje podsjetnicima"
 
 #: ../usermanual/contributions.rst:53
 msgid "Two categories can be selected:"
-msgstr ""
+msgstr "Možete odabrati dvije kategorije:"
 
 #: ../usermanual/contributions.rst:55
 msgid "members whose due date is close,"
-msgstr ""
+msgstr "članove kojima članstvo uskoro istječe,"
 
 #: ../usermanual/contributions.rst:56
 msgid "members whose due date is in the past."
-msgstr ""
+msgstr "članove kojima je članstvo isteklo."
 
 #: ../usermanual/contributions.rst:58
 msgid "Per default (this is currently not configurable), reminders are sent one month, then seven days before the due date; and then one and two months after the due date expiration. Reminders are stored in the database, if you never sent any reminder, all matching members will be reminded."
 msgstr ""
+"Zadano se podsjetnici šalju mjesec dana i sedam dana prije isteka te mjesec "
+"i dva mjeseca nakon isteka. To trenutno nije podesivo. Podsjetnici se "
+"bilježe u bazi; ako ih još niste slali, obavijest će dobiti svi odgovarajući "
+"članovi."
 
 #: ../usermanual/contributions.rst:60
 msgid "Galette will tell you if some members do not have an email address, you can print labels for those ones."
 msgstr ""
+"Galette će javiti koji članovi nemaju adresu e-pošte. Za njih možete "
+"ispisati adresne naljepnice."
 
 #: ../usermanual/contributions.rst:64
 msgid "Reminders obey the :ref:`sending limits <mail_throttling>`, following the very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly or daily quota is set, they are sent while the page loads, exactly as they always were."
 msgstr ""
+"Podsjetnici poštuju :ref:`ograničenja slanja <mail_throttling>` prema istom "
+"pravilu kao :ref:`skupne poruke <mailing_queue>`: bez satnog ili dnevnog "
+"ograničenja šalju se tijekom učitavanja stranice, kao i dosad."
 
 #: ../usermanual/contributions.rst:66
 msgid "Each reminder stays an individual message, written in the language of its recipient, either way. The quota counters are shared with mass mailings."
 msgstr ""
+"U oba slučaja svaki podsjetnik ostaje zasebna poruka na jeziku primatelja. "
+"Brojači ograničenja zajednički su sa skupnim porukama."
 
 #: ../usermanual/contributions.rst:68
 msgid "Finally, it is possible to automate reminders with a cron task which will call the ``galette/cron/reminder.php`` file. If you want reminders to be sent every day at 8:30 AM, then you can add a ``/etc/cron.d/galette`` file (on Fedora and similar, look at your system documentation to know how to add a crontab) with the following content:"
 msgstr ""
+"Podsjetnike možete automatizirati cron zadatkom koji poziva ``galette/cron/"
+"reminder.php``. Za slanje svakog dana u 8:30 dodajte datoteku ``/etc/cron.d/"
+"galette`` sa sljedećim sadržajem (na Fedori i sličnim sustavima; način "
+"dodavanja crontaba provjerite u dokumentaciji sustava):"
 
 #: ../usermanual/contributions.rst:74
 msgid "The script queues the reminders that are due, then drains the queue itself, respecting the same limits. It stays silent unless something failed, so cron only writes to you when there is a reason to."
 msgstr ""
+"Skripta dodaje dospjele podsjetnike u red i sama ga obrađuje uz ista "
+"ograničenja. Ne ispisuje ništa osim u slučaju pogreške pa vas cron "
+"obavještava samo kada postoji razlog."
 
 #: ../usermanual/contributions.rst:77
 msgid "Invoices and receipts"
-msgstr ""
+msgstr "Računi i potvrde o uplati"
 
 #: ../usermanual/contributions.rst:79
 msgid "In the contributions list, there is a PDF icon which is designed to generate invoice ou receipt for one contribution."
-msgstr ""
+msgstr "PDF ikona na popisu uplata izrađuje račun ili potvrdu za jednu uplatu."
 
 #: ../usermanual/contributions.rst:81
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
-msgstr ""
+msgstr "PDF možete prilagoditi pomoću :ref:`PDF predložaka <pdf_models>`."
 
 #: ../usermanual/contributions.rst:86
 msgid "Scheduled payments"
@@ -154,26 +203,34 @@ msgstr "Zakazana plaćanja"
 #: ../usermanual/contributions.rst:90
 msgid "It is possible to dispatch a contribution among one or several scheduled payments. All you have to do is to select \"Scheduled payment\" as payment type in your contribution; Galette will propose you to create an attached scheduled payment."
 msgstr ""
+"Uplatu možete rasporediti na jedno ili više zakazanih plaćanja. Odaberite „"
+"Zakazano plaćanje” kao način plaćanja uplate; Galette će ponuditi stvaranje "
+"povezanog zakazanog plaćanja."
 
 #: ../usermanual/contributions.rst:92
 msgid "Add scheduled payment to a contribution"
-msgstr ""
+msgstr "Dodavanje zakazanog plaćanja uplati"
 
 #: ../usermanual/contributions.rst:97
 msgid "By default, the entire remaining amount will be set into scheduled payment, but you can enter whatever you want. You can also select any payment type (except scheduled payment)."
 msgstr ""
+"Zadano se u zakazano plaćanje unosi cijeli preostali iznos, ali možete ga "
+"promijeniti. Možete odabrati i bilo koji način plaćanja osim zakazanog "
+"plaćanja."
 
 #: ../usermanual/contributions.rst:99
 msgid "When you edit a contribution that already has attached scheduled payments, you can see a summary, and you can also see list of entries."
 msgstr ""
+"Pri uređivanju uplate koja već ima zakazana plaćanja prikazuju se sažetak i "
+"popis zapisa."
 
 #: ../usermanual/contributions.rst:101
 msgid "Summary of scheduled payments"
-msgstr ""
+msgstr "Sažetak zakazanih plaćanja"
 
 #: ../usermanual/contributions.rst:106
 msgid "List of attached scheduled payments"
-msgstr ""
+msgstr "Popis povezanih zakazanih plaćanja"
 
 #: ../usermanual/contributions.rst:112
 msgid "Transactions"
@@ -182,66 +239,76 @@ msgstr "Transakcije"
 #: ../usermanual/contributions.rst:114
 msgid "As seen in the example from this chapter introduction, a transaction is a global payment for a member."
 msgstr ""
+"Kao u uvodnom primjeru, transakcija predstavlja ukupno plaćanje vezano uz "
+"jednog člana."
 
 #: ../usermanual/contributions.rst:116
 msgid "Only a few information are required to add a new transaction:"
-msgstr ""
+msgstr "Za novu transakciju potrebno je samo nekoliko podataka:"
 
 #: ../usermanual/contributions.rst:118
 msgid "a description,"
-msgstr ""
+msgstr "opis,"
 
 #: ../usermanual/contributions.rst:119
 msgid "the originator,"
-msgstr ""
+msgstr "uplatitelj,"
 
 #: ../usermanual/contributions.rst:120
 msgid "the date (current date per default),"
-msgstr ""
+msgstr "datum (zadano današnji),"
 
 #: ../usermanual/contributions.rst:121
 msgid "the amount."
-msgstr ""
+msgstr "iznos."
 
 #: ../usermanual/contributions.rst:123
 msgid "A payment type can also be set on the transaction; the cash, check or transfer that paid it, for example."
 msgstr ""
+"Za transakciju možete postaviti i način plaćanja, primjerice gotovinu, ček "
+"ili bankovni prijenos."
 
 #: ../usermanual/contributions.rst:125
 msgid "Transactions list"
-msgstr ""
+msgstr "Popis transakcija"
 
 #: ../usermanual/contributions.rst:130
 msgid "Each transaction is dispatched among contributions, in the limit of the transaction amount. A transaction has itself no effect on members due dates."
 msgstr ""
+"Svaka transakcija raspoređuje se na uplate do najviše svojeg ukupnog iznosa. "
+"Sama transakcija ne mijenja datum isteka članstva."
 
 #: ../usermanual/contributions.rst:132
 msgid "Add a transaction"
-msgstr "Dodaj transakciju"
+msgstr "Dodavanje transakcije"
 
 #: ../usermanual/contributions.rst:137
 msgid "After adding a new transaction, you will be redirected to a new contribution creation. If this new contribution does not dispatch the remaining amount of the transaction, galette will propose you to create another one. Per default, the amount of a new contribution from a transaction will be the remaining amount of the transaction."
 msgstr ""
+"Nakon dodavanja transakcije otvara se obrazac nove uplate. Ako ona ne "
+"pokrije preostali iznos transakcije, Galette nudi stvaranje još jedne "
+"uplate. Zadani iznos nove uplate iz transakcije jednak je preostalom iznosu "
+"transakcije."
 
 #: ../usermanual/contributions.rst:139
 msgid "Add a contribution linked to a partially dispatched transaction"
-msgstr ""
+msgstr "Dodavanje uplate povezane s djelomično raspoređenom transakcijom"
 
 #: ../usermanual/contributions.rst:144
 msgid "Of course, it is also possible to edit a transaction:"
-msgstr ""
+msgstr "Transakciju možete i uređivati:"
 
 #: ../usermanual/contributions.rst:146
 msgid "Transaction edition"
-msgstr ""
+msgstr "Uređivanje transakcije"
 
 #: ../usermanual/contributions.rst:151
 msgid "You can also attach an existing contribution instead of creating a new one."
-msgstr ""
+msgstr "Umjesto stvaranja nove uplate možete povezati postojeću."
 
 #: ../usermanual/contributions.rst:153
 msgid "Add an already existing contribution to a transaction"
-msgstr ""
+msgstr "Povezivanje postojeće uplate s transakcijom"
 
 #: ../usermanual/contributions.rst:161
 msgid "Members selection"
@@ -250,11 +317,15 @@ msgstr "Odabir članova"
 #: ../usermanual/contributions.rst:165
 msgid "The dropdown list to choose a member is available from contributions and transactions (as well as from several plugins) displays only a few members, for performances reasons."
 msgstr ""
+"Padajući popis za odabir člana u uplatama, transakcijama i nekim dodacima "
+"prikazuje samo nekoliko članova radi boljih performansi."
 
 #: ../usermanual/contributions.rst:167
 msgid "Dropdown members list"
-msgstr ""
+msgstr "Padajući popis članova"
 
 #: ../usermanual/contributions.rst:171
 msgid "You can display more members using arrow buttons or entering any text (this will search in first name, last name and identifiers)."
 msgstr ""
+"Više članova možete prikazati strelicama ili unosom teksta, koji se "
+"pretražuje u imenima, prezimenima i identifikatorima."
