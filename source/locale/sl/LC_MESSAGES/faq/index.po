@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
 "PO-Revision-Date: 2026-10-09 13:50+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -145,18 +145,26 @@ msgstr ""
 "je kot taka zavrnjena, dokler ura ne dohiti zapisanega."
 
 #: ../faq/index.rst:45
-msgid "Set the server clock right first. Then, for the account concerned:"
+#, fuzzy
+#| msgid "Set the server clock right first. Then, for the account concerned:"
+msgid ""
+"Set the server clock right first. Then, for the account concerned, from the "
+"machine hosting Galette (:ref:`see the command line <cli_twofactor_reset>`):"
 msgstr "Najprej pravilno nastavite uro strežnika. Nato za zadevni račun:"
 
-#: ../faq/index.rst:51
+#: ../faq/index.rst:51 ../faq/index.rst:63
 msgid "and, for the super administrator:"
 msgstr "in za superskrbnika:"
 
-#: ../faq/index.rst:58
+#: ../faq/index.rst:57
+msgid "Without access to the command line, the same can be done in database:"
+msgstr ""
+
+#: ../faq/index.rst:70
 msgid "I lost the device computing my codes"
 msgstr "Izgubil sem napravo, ki izračunava moje kode"
 
-#: ../faq/index.rst:60
+#: ../faq/index.rst:72
 msgid ""
 "Use one of the ten recovery codes you were given when you enabled it: the "
 "field that asks for a code takes them too. Each one works once. Once logged "
@@ -168,7 +176,7 @@ msgstr ""
 "se prijavite, onemogočite drugi faktor in ga znova omogočite v svoji novi "
 "napravi - ter obdržite nove obnovitvene kode."
 
-#: ../faq/index.rst:62
+#: ../faq/index.rst:74
 msgid ""
 "If you have no recovery code left either, ask an administrator or a staff "
 "member of your association to :ref:`reset your second factor "
@@ -177,21 +185,32 @@ msgstr ""
 "Če nimate več nobene obnovitvene kode, prosite skrbnika ali člana osebja "
 "vašega združenja, da :ref:`ponastavi vaš drugi faktor <member_2fa_reset>`."
 
-#: ../faq/index.rst:65
+#: ../faq/index.rst:77
 msgid "The super administrator cannot log in anymore"
 msgstr "Superskrbnik se ne more več prijaviti"
 
-#: ../faq/index.rst:67
+#: ../faq/index.rst:79
+#, fuzzy
+#| msgid ""
+#| "That account is not a member, so nobody can reset it from the interface, "
+#| "and it has no recovery codes. Its second factor lives in the preferences, "
+#| "in database, which is where you clear it from:"
 msgid ""
 "That account is not a member, so nobody can reset it from the interface, and "
-"it has no recovery codes. Its second factor lives in the preferences, in "
-"database, which is where you clear it from:"
+"it has no recovery codes. Clear its second factor from the machine hosting "
+"Galette:"
 msgstr ""
 "Ta račun ni član, zato ga nihče ne more ponastaviti iz vmesnika in nima "
 "obnovitvenih kod. Njegov drugi dejavnik je v nastavitvah, v bazi podatkov, "
 "od koder ga počistite:"
 
-#: ../faq/index.rst:74
+#: ../faq/index.rst:85
+msgid ""
+"Its second factor lives in the preferences, so without access to the command "
+"line, it can be cleared in database:"
+msgstr ""
+
+#: ../faq/index.rst:92
 msgid ""
 "Replace ``galette_`` with your own table prefix if you changed it (the "
 "``PREFIX_DB`` setting of your configuration file). The next login asks for "
@@ -201,15 +220,23 @@ msgstr ""
 "(nastavitev ``PREFIX_DB`` vaše konfiguracijske datoteke). Naslednja prijava "
 "zahteva samo geslo."
 
-#: ../faq/index.rst:76
+#: ../faq/index.rst:94
+#, fuzzy
+#| msgid ""
+#| "To turn the second factor off for the whole instance at the same time -- "
+#| "the way out when something goes wrong for everybody at once -- add:"
 msgid ""
-"To turn the second factor off for the whole instance at the same time -- the "
-"way out when something goes wrong for everybody at once -- add:"
+"To turn the second factor off for the whole instance -- the way out when "
+"something goes wrong for everybody at once -- run:"
 msgstr ""
 "Če želite izklopiti drugi dejavnik za celoten primer hkrati - izhod, ko gre "
 "nekaj narobe za vse hkrati - dodajte:"
 
-#: ../faq/index.rst:82
+#: ../faq/index.rst:100
+msgid "or, in database:"
+msgstr ""
+
+#: ../faq/index.rst:106
 msgid ""
 "Members who had enabled one keep it; they are simply no longer asked for a "
 "code until a policy is set again."
@@ -217,19 +244,24 @@ msgstr ""
 "Člani, ki so ga omogočili, ga obdržijo; od njih se preprosto ne zahteva več "
 "kode, dokler pravilnik ni ponovno nastavljen."
 
-#: ../faq/index.rst:86
+#: ../faq/index.rst:110
+#, fuzzy
+#| msgid ""
+#| "Keep an access to your database at hand before you enable a second factor "
+#| "on the super administrator account. It is the only way back in for it."
 msgid ""
-"Keep an access to your database at hand before you enable a second factor on "
-"the super administrator account. It is the only way back in for it."
+"Keep an access to the server hosting Galette -- its command line, or its "
+"database -- at hand before you enable a second factor on the super "
+"administrator account. It is the only way back in for it."
 msgstr ""
 "Imejte pri roki dostop do svoje zbirke podatkov, preden omogočite drugi "
 "faktor v računu super skrbnika. To je edina pot nazaj."
 
-#: ../faq/index.rst:90
+#: ../faq/index.rst:114
 msgid "How to report a bug or ask for a feature?"
 msgstr "Kako prijaviti napako ali zahtevati funkcijo?"
 
-#: ../faq/index.rst:92
+#: ../faq/index.rst:116
 msgid ""
 "Bugs reports as well as RFE (Request For Enhancement) must be done on the "
 "`Galette tracker <https://bugs.galette.eu/projects/galette>`_, for Galette "
@@ -239,7 +271,7 @@ msgstr ""
 "`Sledilniku Galette <https://bugs.galette.eu/projects/galette>`_, za samo "
 "Galette, vse uradne vtičnike in tudi dokumentacijo."
 
-#: ../faq/index.rst:96
+#: ../faq/index.rst:120
 msgid ""
 "Unless you are sure you know, please do not attribute the ticket and do not "
 "set target version. It will be done when it is taken into account."
@@ -247,39 +279,39 @@ msgstr ""
 "Če niste prepričani, da veste, prosimo, da ne navajate avtorja zahteve in ne "
 "nastavljate ciljne različice. To bo storjeno, ko bo upoštevana."
 
-#: ../faq/index.rst:98
+#: ../faq/index.rst:122
 msgid "If you have doubts, feel free to ask your questions on mailing lists ;)"
 msgstr "Če imate dvome, jih lahko postavite na poštnih seznamih ;)"
 
-#: ../faq/index.rst:101
+#: ../faq/index.rst:125
 msgid "Report a bug"
 msgstr "Prijavi hrošča"
 
-#: ../faq/index.rst:103
+#: ../faq/index.rst:127
 msgid "Please, do not forget to:"
 msgstr "Prosim, ne pozabite:"
 
-#: ../faq/index.rst:105
+#: ../faq/index.rst:129
 msgid "tell us the Galette version you are using,"
 msgstr "povejte nam, katero različico Galette uporabljate,"
 
-#: ../faq/index.rst:106
+#: ../faq/index.rst:130
 msgid "be clear and concise,"
 msgstr "bodi jasen in jedrnat,"
 
-#: ../faq/index.rst:107
+#: ../faq/index.rst:131
 msgid "to provide all required information in order to reproduce the issue"
 msgstr "zagotoviti vse potrebne informacije za reprodukcijo težave"
 
-#: ../faq/index.rst:108
+#: ../faq/index.rst:132
 msgid "to provide related logs entries."
 msgstr "zagotoviti vse potrebne informacije za težave pri reprodukciji."
 
-#: ../faq/index.rst:111
+#: ../faq/index.rst:135
 msgid "Request For Enhancement"
 msgstr "Zahteva za izboljšavo"
 
-#: ../faq/index.rst:113
+#: ../faq/index.rst:137
 msgid ""
 "Make sure to be precise as well on RFEs. Developers may not guess what you "
 "have in mind, you have to explain them, event if this seems obvious to "
@@ -291,7 +323,7 @@ msgstr ""
 "zdi očitno ;) Zahtevane izboljšave so označene kot \"Souhaits\" (želje, v "
 "francoščini) in jih razvijalci večinoma premaknejo, ko se delo začne."
 
-#: ../faq/index.rst:116
+#: ../faq/index.rst:140
 msgid ""
 "Once you made your wishes, you can `submit it to a vote <https://"
 "vote.galette.eu/>`_, most wanted features may catch devs attention."
@@ -300,11 +332,11 @@ msgstr ""
 "vote.galette.eu/>`_, najbolj zaželene funkcije lahko pritegnejo pozornost "
 "razvijalcev."
 
-#: ../faq/index.rst:120
+#: ../faq/index.rst:144
 msgid "How to search in lists archives?"
 msgstr "Kako iskati po arhivih seznamov?"
 
-#: ../faq/index.rst:122
+#: ../faq/index.rst:146
 msgid ""
 "Mailing lists are the main communication channel for Galette, from its "
 "beginnings."
@@ -312,7 +344,7 @@ msgstr ""
 "Poštni seznami so glavni komunikacijski kanal za Galette, že od samega "
 "začetka."
 
-#: ../faq/index.rst:124
+#: ../faq/index.rst:148
 msgid ""
 "See `contact page <https://galette.eu/site/contact#mailing-lists>`_ for more "
 "information."
@@ -320,7 +352,7 @@ msgstr ""
 "Oglejte si `kontaktno stran <https://galette.eu/site/contact#mailing-"
 "lists>`_ za več informacij."
 
-#: ../faq/index.rst:126
+#: ../faq/index.rst:150
 msgid ""
 "The most simple and reliable way to `search on past Galette related "
 "discussion <https://www.mail-archive.com/search?l=all&q=galette&a=1>`_ is to "
@@ -330,19 +362,19 @@ msgstr ""
 "povezanih z Galette <https://www.mail-archive.com/search?"
 "l=all&q=galette&a=1>`_ je poizvedba v storitvah arhiviranja pošte."
 
-#: ../faq/index.rst:130
+#: ../faq/index.rst:154
 msgid "How to use same email address for several members?"
 msgstr "Kako uporabiti isti e-poštni naslov za več članov?"
 
-#: ../faq/index.rst:132
+#: ../faq/index.rst:156
 msgid "This is a very frequent question; many would love to do that..."
 msgstr "To je zelo pogosto vprašanje; mnogi bi to radi storili ..."
 
-#: ../faq/index.rst:134
+#: ../faq/index.rst:158
 msgid "**This is not possible.**"
 msgstr "**To ni mogoče.**"
 
-#: ../faq/index.rst:136
+#: ../faq/index.rst:160
 msgid ""
 "Indeed, mail addresses must be unique in the database. It is a choice for "
 "the project on which several features are built:"
@@ -350,15 +382,15 @@ msgstr ""
 "Dejansko morajo biti poštni naslovi v bazi podatkov edinstveni. To je izbira "
 "za projekt, na katerem je zgrajenih več funkcij:"
 
-#: ../faq/index.rst:138
+#: ../faq/index.rst:162
 msgid "lost password,"
 msgstr "izgubljeno geslo,"
 
-#: ../faq/index.rst:139
+#: ../faq/index.rst:163
 msgid "login (since Galette 0.9)."
 msgstr "prijava (od Galette 0.9)."
 
-#: ../faq/index.rst:141
+#: ../faq/index.rst:165
 msgid ""
 "Making them non unique is not a solution we want to rely on. This would be "
 "complicated, and should be source of many bugs."
@@ -366,7 +398,7 @@ msgstr ""
 "To, da jih naredimo ne-edinstvene, ni rešitev, na katero se želimo zanašati. "
 "To bi bilo zapleteno in bi moralo biti vir številnih hroščev."
 
-#: ../faq/index.rst:143
+#: ../faq/index.rst:167
 msgid ""
 "However, it is possible in Galette to :ref:`link several members "
 "<linkmembers>`. That way, some information such as email and postal "
@@ -376,7 +408,7 @@ msgstr ""
 "ta način bodo nekatere informacije, kot so e-poštni in poštni naslovi, "
 "pridobljene od nadrejenega člana, če manjkajo."
 
-#: ../faq/index.rst:145
+#: ../faq/index.rst:169
 msgid ""
 "This allows finally to use a unique email address for several members in "
 "database; but they are not duplicates in database."
@@ -384,11 +416,11 @@ msgstr ""
 "To končno omogoča uporabo edinstvenega e-poštnega naslova za več članov v "
 "bazi podatkov; vendar ti niso podvojeni v bazi podatkov."
 
-#: ../faq/index.rst:151
+#: ../faq/index.rst:175
 msgid "I forgot my password, what now?"
 msgstr "Pozabil sem geslo, kaj zdaj?"
 
-#: ../faq/index.rst:153
+#: ../faq/index.rst:177
 msgid ""
 "On the login page, click on **Lost your password?**, type your username or "
 "your email address, and follow the link of the email you receive. The link "
@@ -400,7 +432,7 @@ msgstr ""
 "sporočilu. Povezava deluje enkrat in 24 ur. Glejte :ref:`pozabljeno ali novo "
 "geslo <my_account_password>`."
 
-#: ../faq/index.rst:155
+#: ../faq/index.rst:179
 msgid ""
 "No email? Check your spam folder. If your member card has no email address, "
 "ask a staff member of your association to fix it, or to change your password "
@@ -410,7 +442,7 @@ msgstr ""
 "e-poštnega naslova, prosite člana osebja vašega združenja, da to popravi ali "
 "spremeni vaše geslo namesto vas."
 
-#: ../faq/index.rst:157
+#: ../faq/index.rst:181
 msgid ""
 "The **super administrator** is not a member and cannot use this form. Its "
 "password can be changed :ref:`from the command line "
@@ -420,15 +452,15 @@ msgstr ""
 "lahko spremeni :ref:`v ukazni vrstici <cli_superadmin_password>` oseba, ki "
 "upravlja strežnik."
 
-#: ../faq/index.rst:163
+#: ../faq/index.rst:187
 msgid "A member cannot log in anymore"
 msgstr "Član se ne more več prijaviti"
 
-#: ../faq/index.rst:165
+#: ../faq/index.rst:189
 msgid "Check, in this order:"
 msgstr "Preverite v tem vrstnem redu:"
 
-#: ../faq/index.rst:167
+#: ../faq/index.rst:191
 msgid ""
 "**Is the account active?** An inactive account cannot log in. Open the "
 "member card, and check the **Account** field in the **Galette-related data** "
@@ -438,7 +470,7 @@ msgstr ""
 "člansko izkaznico in preverite polje **Račun** v delu **Podatki, povezani z "
 "Galette**."
 
-#: ../faq/index.rst:168
+#: ../faq/index.rst:192
 msgid ""
 "**Has the member been blocked after too many failures?** After several wrong "
 "passwords in a row, Galette refuses further attempts for 15 minutes, even "
@@ -449,10 +481,10 @@ msgstr ""
 "**Ali je bil član blokiran po preveč napakah?** Po več napačnih geslih "
 "zaporedoma Galette 15 minut zavrača nadaljnje poskuse, tudi s pravim geslom. "
 "Pojdite na **Konfiguracija**, nato na **Poskusi preverjanja pristnosti**: "
-"račun je tam naveden, če je blokiran, in **Dvig** ga takoj odblokira. Glejte "
-":ref:`poskusi avtentikacije <auth_attempts>`."
+"račun je tam naveden, če je blokiran, in **Dvig** ga takoj odblokira. "
+"Glejte :ref:`poskusi avtentikacije <auth_attempts>`."
 
-#: ../faq/index.rst:169
+#: ../faq/index.rst:193
 msgid ""
 "**Is the password right?** If in doubt, the member can ask for a new one "
 "with **Lost your password?** on the login page."
@@ -460,7 +492,7 @@ msgstr ""
 "**Je geslo pravilno?** Če ste v dvomih, lahko član zaprosi za novo z **Ste "
 "izgubili geslo?** na strani za prijavo."
 
-#: ../faq/index.rst:170
+#: ../faq/index.rst:194
 msgid ""
 "**Does the member use two-factor authentication?** See :ref:`my two-factor "
 "authentication codes are refused <faq_2fa>`."
@@ -468,16 +500,16 @@ msgstr ""
 "**Ali član uporablja dvostopenjsko avtentikacijo?** Glejte :ref:`moje kode "
 "za dvofaktorsko avtentikacijo so zavrnjene <faq_2fa>`."
 
-#: ../faq/index.rst:176
+#: ../faq/index.rst:200
 msgid "Emails sent by Galette never arrive"
 msgstr "E-poštna sporočila, ki jih pošlje Galette, nikoli ne prispejo"
 
-#: ../faq/index.rst:178
+#: ../faq/index.rst:202
 msgid "Go to **Configuration**, then **Settings**, **E-Mail** tab:"
 msgstr ""
 "Pojdite na **Konfiguracija**, nato na **Nastavitve**, zavihek **E-pošta**:"
 
-#: ../faq/index.rst:180
+#: ../faq/index.rst:204
 msgid ""
 "check that an **Emailing method** is selected, and that the **Sender Email** "
 "is an address of your association,"
@@ -485,7 +517,7 @@ msgstr ""
 "preverite, ali je izbrana **E-poštna metoda** in ali je **E-pošta "
 "pošiljatelja** naslov vašega združenja,"
 
-#: ../faq/index.rst:181
+#: ../faq/index.rst:205
 msgid ""
 "click on **Test connection**, then on **Send a test email**, to your own "
 "address; see :ref:`testing the settings <mail_tests>`."
@@ -493,7 +525,7 @@ msgstr ""
 "kliknite na **Preizkus povezave**, nato na **Pošlji testno e-pošto**, na "
 "svoj naslov; glejte :ref:`testiranje nastavitev <mail_tests>`."
 
-#: ../faq/index.rst:183
+#: ../faq/index.rst:207
 msgid ""
 "If the test email does not arrive either, check your spam folder, then ask "
 "your web host or your mail provider which settings to use: many of them "
@@ -504,7 +536,7 @@ msgstr ""
 "nastavitve naj uporabite: mnoge od njih zahtevajo pošiljanje prek svojega "
 "strežnika SMTP z uporabniškim imenom in geslom."
 
-#: ../faq/index.rst:185
+#: ../faq/index.rst:209
 msgid ""
 "If the test email arrives but mailings do not, your mail provider may limit "
 "how many messages you can send per hour or per day; see :ref:`sending limits "
@@ -514,11 +546,11 @@ msgstr ""
 "koliko sporočil lahko pošljete na uro ali dan; glejte :ref:`omejitve "
 "pošiljanja <mail_throttling>`."
 
-#: ../faq/index.rst:191
+#: ../faq/index.rst:215
 msgid "How do I renew a membership?"
 msgstr "Kako obnovim članstvo?"
 
-#: ../faq/index.rst:193
+#: ../faq/index.rst:217
 msgid ""
 "Simply record the new membership fee: go to **Contributions**, then **Add a "
 "membership fee**, select the member, the contribution type and the amount. "
@@ -531,7 +563,7 @@ msgstr ""
 "nov konec članstva, od konca prejšnjega; noben dan ni izgubljen, če član "
 "podaljša predčasno. Glejte :ref:`pravila upravljanja <man_generalites>`."
 
-#: ../faq/index.rst:195
+#: ../faq/index.rst:219
 msgid "To remind late members to renew, see :ref:`reminders <reminders>`."
 msgstr ""
 "Če želite opomniti zamudne člane na podaljšanje, glejte :ref:`reminders "
