@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
 "PO-Revision-Date: 2026-10-10 17:51+0000\n"
 "Last-Translator: Marko Puljic <markopuljic.uo@gmail.com>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
 "user-configuration/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.10.1.dev0\n"
@@ -28,7 +28,10 @@ msgid "List fields"
 msgstr "Polja popisa"
 
 #: ../usermanual/configuration.rst:12
-msgid "You can choose which fields will appears on Galette members list and the order they will appear with a drag & drop interface. Related access rights can be set from core fields configuration (see below)."
+msgid ""
+"You can choose which fields will appears on Galette members list and the "
+"order they will appear with a drag & drop interface. Related access rights "
+"can be set from core fields configuration (see below)."
 msgstr ""
 "Možete odabrati polja prikazana u popisu članova Galettea i njihov "
 "redoslijed povlačenjem i ispuštanjem. Ovlasti za njih određuju se u "
@@ -40,7 +43,9 @@ msgstr ""
 "Dva su polja obvezna i ne mogu se premještati: broj člana te ime i prezime."
 
 #: ../usermanual/configuration.rst:18
-msgid "It is not possible to set access rights on id column, and parent will be accessible for staff members only."
+msgid ""
+"It is not possible to set access rights on id column, and parent will be "
+"accessible for staff members only."
 msgstr ""
 "Ovlasti za stupac identifikatora ne mogu se podešavati, a nadređeni član "
 "dostupan je samo upravi."
@@ -54,14 +59,20 @@ msgid "Mandatory fields and access rights"
 msgstr "Obvezna polja i ovlasti"
 
 #: ../usermanual/configuration.rst:30
-msgid "When you create or edit a member, some fields are mandatory. Default configuration may not suit your needs, but you can configure some elements easily ;)"
+msgid ""
+"When you create or edit a member, some fields are mandatory. Default "
+"configuration may not suit your needs, but you can configure some elements "
+"easily ;)"
 msgstr ""
 "Pri dodavanju ili uređivanju člana neka su polja obvezna. Zadane postavke "
 "možda ne odgovaraju vašim potrebama, ali određene stavke možete lako "
 "prilagoditi ;)"
 
 #: ../usermanual/configuration.rst:32
-msgid "From the `Configuration`, `Core fields` menu, you will get access to all fields available for members, and choose for each one if it is mandatory or not, as well as associated access rights:"
+msgid ""
+"From the `Configuration`, `Core fields` menu, you will get access to all "
+"fields available for members, and choose for each one if it is mandatory or "
+"not, as well as associated access rights:"
 msgstr ""
 "U izborniku `Konfiguracija`, `Osnovna polja` dostupna su sva polja članova. "
 "Za svako možete odrediti je li obvezno i tko mu smije pristupiti:"
@@ -71,28 +82,39 @@ msgid "`inaccessible` will make the field inaccessible for everyone,"
 msgstr "`Nedostupno`: polje nije dostupno nikome,"
 
 #: ../usermanual/configuration.rst:35
-msgid "`administrator` will make the field readable and writeable for administrators only,"
+msgid ""
+"`administrator` will make the field readable and writeable for "
+"administrators only,"
 msgstr "`Administrator`: samo administratori mogu čitati i mijenjati polje,"
 
 #: ../usermanual/configuration.rst:36
-msgid "`staff members` will make the field readable and writable for staff members and administrators,"
+msgid ""
+"`staff members` will make the field readable and writable for staff members "
+"and administrators,"
 msgstr ""
 "`Uprava`: članovi uprave i administratori mogu čitati i mijenjati polje,"
 
 #: ../usermanual/configuration.rst:37
-msgid "`groups managers` will make the field readable and writable for groups managers on the members of groups they own, and for staff members and administrators,"
+msgid ""
+"`groups managers` will make the field readable and writable for groups "
+"managers on the members of groups they own, and for staff members and "
+"administrators,"
 msgstr ""
 "`Voditelji grupa`: voditelji mogu čitati i mijenjati polje za članove svojih "
 "grupa, a pristup imaju i uprava i administratori,"
 
 #: ../usermanual/configuration.rst:38
-msgid "`read/write` will make the field readable and writeable for member, groups managers, staff members and administrators,"
+msgid ""
+"`read/write` will make the field readable and writeable for member, groups "
+"managers, staff members and administrators,"
 msgstr ""
 "`Čitanje i pisanje`: polje mogu čitati i mijenjati član, voditelji grupa, "
 "uprava i administratori,"
 
 #: ../usermanual/configuration.rst:39
-msgid "`read only` will make the field read only for the members, but writable for groups managers, staff members and administrators."
+msgid ""
+"`read only` will make the field read only for the members, but writable for "
+"groups managers, staff members and administrators."
 msgstr ""
 "`Samo čitanje`: član može samo čitati polje, a voditelji grupa, uprava i "
 "administratori mogu ga mijenjati."
@@ -106,13 +128,19 @@ msgid "Dynamic fields"
 msgstr "Dinamička polja"
 
 #: ../usermanual/configuration.rst:51
-msgid "Galette comes per default with many fields for members, contributions and transactions. Some of them will be useless, but you may need fields that does not exists..."
+msgid ""
+"Galette comes per default with many fields for members, contributions and "
+"transactions. Some of them will be useless, but you may need fields that "
+"does not exists..."
 msgstr ""
 "Galette zadano sadrži mnogo polja za članove, uplate i transakcije. Neka vam "
 "možda ne trebaju, a možda su vam potrebna polja kojih nema…"
 
 #: ../usermanual/configuration.rst:53
-msgid "In this case, that is quite simple : just add a new dynamic field with a label, define if it is mandatory or not, and that's all : Galette will handle them automatically, just show the result ;)"
+msgid ""
+"In this case, that is quite simple : just add a new dynamic field with a "
+"label, define if it is mandatory or not, and that's all : Galette will "
+"handle them automatically, just show the result ;)"
 msgstr ""
 "U tom slučaju jednostavno dodajte dinamičko polje, zadajte mu naziv i "
 "odredite je li obvezno. Galette će se za ostalo pobrinuti automatski ;)"
@@ -150,21 +178,31 @@ msgid "`file`: add files."
 msgstr "`Datoteka`: dodavanje datoteka."
 
 #: ../usermanual/configuration.rst:65
-msgid "Dynamic fields can be added to the members, contributions and transactions forms, and to the :ref:`preferences <pref_dynamic_fields>`. Go to **Configuration**, then **Dynamic fields**, pick the form, and click on **Add**."
+msgid ""
+"Dynamic fields can be added to the members, contributions and transactions "
+"forms, and to the :ref:`preferences <pref_dynamic_fields>`. Go to "
+"**Configuration**, then **Dynamic fields**, pick the form, and click on "
+"**Add**."
 msgstr ""
-"Dinamička polja možete dodati obrascima članova, uplata i transakcija te "
-":ref:`postavkama <pref_dynamic_fields>`. Otvorite **Konfiguracija**, zatim "
-"**Dinamička polja**, odaberite obrazac i kliknite **Dodaj**."
+"Dinamička polja možete dodati obrascima članova, uplata i transakcija "
+"te :ref:`postavkama <pref_dynamic_fields>`. Otvorite **Konfiguracija**, "
+"zatim **Dinamička polja**, odaberite obrazac i kliknite **Dodaj**."
 
 #: ../usermanual/configuration.rst:71
-msgid "Dynamic date fields used to be stored using logged-in user locale format; which causes issues trying to make searches. Now, every date is stored using the `Y-m-d` format."
+msgid ""
+"Dynamic date fields used to be stored using logged-in user locale format; "
+"which causes issues trying to make searches. Now, every date is stored using "
+"the `Y-m-d` format."
 msgstr ""
 "Datumi u dinamičkim poljima ranije su se pohranjivali u lokalnom formatu "
 "prijavljenog korisnika, što je otežavalo pretraživanje. Sada se svi datumi "
 "pohranjuju u formatu `Y-m-d`."
 
 #: ../usermanual/configuration.rst:73
-msgid "If you were using dynamic date fields, you will have to :ref:`update your data using the related admin tool <admintools>` (⚠️ make sure to backup your database before! ⚠️)."
+msgid ""
+"If you were using dynamic date fields, you will have to :ref:`update your "
+"data using the related admin tool <admintools>` (⚠️ make sure to backup your "
+"database before! ⚠️)."
 msgstr ""
 "Ako ste koristili dinamička polja za datume, morate :ref:`ažurirati podatke "
 "odgovarajućim administratorskim alatom <admintools>` (⚠️ prije toga obvezno "
@@ -191,7 +229,9 @@ msgid "A dynamic field"
 msgstr "Dinamičko polje"
 
 #: ../usermanual/configuration.rst:86
-msgid "Some field types like separators, dates and booleans, does not need any extra information; for others:"
+msgid ""
+"Some field types like separators, dates and booleans, does not need any "
+"extra information; for others:"
 msgstr ""
 "Neke vrste polja, poput razdjelnika, datuma i polja da/ne, ne zahtijevaju "
 "dodatne podatke. Za ostala možete zadati:"
@@ -237,7 +277,9 @@ msgid "`file`:"
 msgstr "`Datoteka`:"
 
 #: ../usermanual/configuration.rst:105
-msgid "`size`: maximum file size, in KiB (this size is limited to the one for the PHP configuration)."
+msgid ""
+"`size`: maximum file size, in KiB (this size is limited to the one for the "
+"PHP configuration)."
 msgstr ""
 "`Veličina`: najveća veličina datoteke u KiB, ograničena i postavkama PHP-a."
 
@@ -250,18 +292,25 @@ msgid "**Min Size**: for single line fields, the minimum number of characters,"
 msgstr "**Najmanja duljina**: najmanji broj znakova za jednoredna polja,"
 
 #: ../usermanual/configuration.rst:110
-msgid "**Information**: a help text displayed along with the field; check **Display information above input** to display it above the field rather than under it,"
+msgid ""
+"**Information**: a help text displayed along with the field; check **Display "
+"information above input** to display it above the field rather than under it,"
 msgstr ""
 "**Informacije**: tekst pomoći uz polje; uključite **Prikaži informacije "
 "iznad polja** kako bi se prikazivao iznad umjesto ispod polja,"
 
 #: ../usermanual/configuration.rst:111
-msgid "**Width in forms**: whether the field takes the full width of the form, or half of it."
+msgid ""
+"**Width in forms**: whether the field takes the full width of the form, or "
+"half of it."
 msgstr ""
 "**Širina u obrascima**: zauzima li polje cijelu širinu obrasca ili polovicu."
 
 #: ../usermanual/configuration.rst:115
-msgid "The **Permissions** of a new field are set to **Inaccessible**: choose who can see or fill in the field, members, group managers, staff members or administrators."
+msgid ""
+"The **Permissions** of a new field are set to **Inaccessible**: choose who "
+"can see or fill in the field, members, group managers, staff members or "
+"administrators."
 msgstr ""
 "**Ovlasti** novog polja zadano su **Nedostupno**. Odaberite tko smije "
 "vidjeti ili ispuniti polje: članovi, voditelji grupa, uprava ili "
@@ -272,13 +321,19 @@ msgid "Repeatable fields"
 msgstr "Ponovljiva polja"
 
 #: ../usermanual/configuration.rst:124
-msgid "Choice, date and file fields can be repeated too, not only single line fields."
+msgid ""
+"Choice, date and file fields can be repeated too, not only single line "
+"fields."
 msgstr ""
 "Osim jednorednih polja mogu se ponavljati i polja za odabir, datume i "
 "datoteke."
 
 #: ../usermanual/configuration.rst:126
-msgid "Single line, choice, date and file fields can hold several values; several phone numbers, for example. Set the **Repeat** option to the maximum number of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for a field that holds a single value."
+msgid ""
+"Single line, choice, date and file fields can hold several values; several "
+"phone numbers, for example. Set the **Repeat** option to the maximum number "
+"of values, or to ``0`` for no limit. Leave it empty, or set it to ``1``, for "
+"a field that holds a single value."
 msgstr ""
 "Jednoredna polja te polja za odabir, datume i datoteke mogu sadržavati više "
 "vrijednosti, primjerice više telefonskih brojeva. U opciji **Ponavljanje** "
@@ -290,7 +345,9 @@ msgid "A repeatable dynamic field"
 msgstr "Ponovljivo dinamičko polje"
 
 #: ../usermanual/configuration.rst:133
-msgid "On the form, the field is displayed once, with an **Add** button and the number of values that can still be added. Each click adds one more value."
+msgid ""
+"On the form, the field is displayed once, with an **Add** button and the "
+"number of values that can still be added. Each click adds one more value."
 msgstr ""
 "U obrascu se polje prikazuje jednom, uz gumb **Dodaj** i broj vrijednosti "
 "koje se još mogu dodati. Svaki klik dodaje novu vrijednost."
@@ -304,18 +361,44 @@ msgid "Labels translation"
 msgstr "Prijevod naziva"
 
 #: ../usermanual/configuration.rst:143
-msgid "Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language."
+#, fuzzy
+#| msgid ""
+#| "Galette handle several languages, but when you add a new dynamic field, "
+#| "there is only one value possible. Galette proposes an interface to "
+#| "translate those labels in each available language."
+msgid ""
+"Galette handles several languages, but some texts are typed by yourself, in "
+"one language only: names of dynamic fields, statuses, contribution types, "
+"payment types, social networks and documents types, and some preferences "
+"such as the slogan or the member card texts. Galette proposes an interface "
+"to translate those labels in each available language."
 msgstr ""
 "Galette podržava više jezika, ali pri dodavanju dinamičkog polja unosite "
 "naziv samo na jednom jeziku. Sučelje za prijevod omogućuje unos naziva na "
 "svakom dostupnom jeziku."
 
 #: ../usermanual/configuration.rst:145
-msgid "Note that each new label will be added with current Galette lang."
-msgstr "Novi naziv dodaje se na trenutačnom jeziku Galettea."
+msgid ""
+"A new label is considered as written in the current language of Galette: its "
+"translation for this language is filled in, the others are empty. When a "
+"translation is empty, the original text is displayed."
+msgstr ""
 
 #: ../usermanual/configuration.rst:147
-msgid "Go to **Configuration**, then **Labels translation**, select the label, and type its translation in each language. The labels are the names of the dynamic fields, but also the other texts you typed yourself and that can be translated: statuses, contribution types, payment types... The **Translate labels** icon of those lists, and the **Translate** links of the preferences, lead to the same page."
+#, fuzzy
+#| msgid ""
+#| "Go to **Configuration**, then **Labels translation**, select the label, "
+#| "and type its translation in each language. The labels are the names of "
+#| "the dynamic fields, but also the other texts you typed yourself and that "
+#| "can be translated: statuses, contribution types, payment types... The "
+#| "**Translate labels** icon of those lists, and the **Translate** links of "
+#| "the preferences, lead to the same page."
+msgid ""
+"Go to **Configuration**, then **Labels translation**, select the label, and "
+"type its translation in each language. The **Translate** icon of the "
+"statuses, contribution types, payment types and dynamic fields lists, and "
+"the **Translate** links of the preferences, open the same form for one label "
+"only."
 msgstr ""
 "Otvorite **Konfiguracija**, zatim **Prijevod naziva**, odaberite naziv i "
 "unesite prijevod na svakom jeziku. Ovdje su nazivi dinamičkih polja i drugi "
@@ -323,76 +406,182 @@ msgstr ""
 "plaćanja i slično. Ikona **Prevedi nazive** u tim popisima i poveznice "
 "**Prevedi** u postavkama vode na istu stranicu."
 
-#: ../usermanual/configuration.rst:152
+#: ../usermanual/configuration.rst:149
+msgid "Translating a label typed in French"
+msgstr ""
+
+#: ../usermanual/configuration.rst:157
+msgid "Labels provided by Galette"
+msgstr ""
+
+#: ../usermanual/configuration.rst:161
+msgid ""
+"Translations of the labels provided by Galette are displayed, instead of an "
+"empty form whose values were not used."
+msgstr ""
+
+#: ../usermanual/configuration.rst:163
+msgid ""
+"Default statuses, contribution types and payment types are provided by "
+"Galette, and are translated along with the software. Their translation form "
+"displays those translations, read-only: to improve one of them, contribute "
+"to the `Galette translation on Weblate <https://hosted.weblate.org/projects/"
+"galette/>`_."
+msgstr ""
+
+#: ../usermanual/configuration.rst:165
+msgid "Read-only translations of a label provided by Galette"
+msgstr ""
+
+#: ../usermanual/configuration.rst:170
+msgid ""
+"Their edit form reminds that changing such a label replaces its automatic "
+"translations: the new label is then a text of your own, to be translated "
+"like any other."
+msgstr ""
+
+#: ../usermanual/configuration.rst:172
+msgid "Editing a contribution type"
+msgstr ""
+
+#: ../usermanual/configuration.rst:180
+msgid "Changing a label"
+msgstr ""
+
+#: ../usermanual/configuration.rst:184
+msgid ""
+"Translations can be kept when a label is changed. They used to be reset."
+msgstr ""
+
+#: ../usermanual/configuration.rst:186
+msgid ""
+"When you change one of your own labels, its edit form proposes to **keep its "
+"translations in other languages**, checked by default:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:188
+msgid ""
+"**Checked**: translations in other languages are copied to the new label. "
+"Keep it checked to fix a typo, or for a change that does not alter the "
+"meaning,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:189
+msgid ""
+"**Unchecked**: translations are reset, as for a new label. Uncheck it when "
+"the meaning changes, since existing translations would no longer be right."
+msgstr ""
+
+#: ../usermanual/configuration.rst:191
+msgid ""
+"In both cases, the translation in the current language becomes the new label."
+msgstr ""
+
+#: ../usermanual/configuration.rst:193
+msgid "Keeping translations when changing a dynamic field name"
+msgstr ""
+
+#: ../usermanual/configuration.rst:198
+msgid ""
+"The same label can be used by several objects, a status and a contribution "
+"type for example: they share the same translations, which are kept as long "
+"as one of them still uses the label."
+msgstr ""
+
+#: ../usermanual/configuration.rst:203
 msgid "Emails contents"
 msgstr "Sadržaj poruka e-pošte"
 
-#: ../usermanual/configuration.rst:154
-msgid "Depending on your configuration (see :ref:`preferences <pref_email>`), administrative emails can be sent to users and/or administrators, when you add a new member or a new contribution, or from the lost password feature for example."
+#: ../usermanual/configuration.rst:205
+msgid ""
+"Depending on your configuration (see :ref:`preferences <pref_email>`), "
+"administrative emails can be sent to users and/or administrators, when you "
+"add a new member or a new contribution, or from the lost password feature "
+"for example."
 msgstr ""
 "Ovisno o :ref:`postavkama <pref_email>`, sustav može slati obavijesti "
 "korisnicima i/ili administratorima, primjerice pri dodavanju člana ili "
 "uplate te pri oporavku lozinke."
 
-#: ../usermanual/configuration.rst:156
+#: ../usermanual/configuration.rst:207
 msgid "Defaults are provided, but you can change them."
 msgstr "Dostupni su zadani tekstovi, ali možete ih promijeniti."
 
-#: ../usermanual/configuration.rst:158
-msgid "It is important to note that those texts contain variables - of the ``{VARIABLE}`` form - that will be replaced automatically on sending. Be careful not to forget any of those, that could cause sending issues."
+#: ../usermanual/configuration.rst:209
+msgid ""
+"It is important to note that those texts contain variables - of the "
+"``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
+"careful not to forget any of those, that could cause sending issues."
 msgstr ""
 "Tekstovi sadrže varijable oblika ``{VARIABLE}`` koje se automatski "
 "zamjenjuju pri slanju. Pazite da ih ne izostavite jer to može uzrokovati "
 "probleme sa slanjem."
 
-#: ../usermanual/configuration.rst:160
+#: ../usermanual/configuration.rst:211
 msgid "Edit mail send to a new member in french"
 msgstr "Uređivanje francuske poruke za novog člana"
 
-#: ../usermanual/configuration.rst:165
+#: ../usermanual/configuration.rst:216
 msgid "An email will be send to member when:"
 msgstr "Članu se šalje e-pošta kada:"
 
-#: ../usermanual/configuration.rst:167
-msgid "they register on their own. This mail contains authentication information,"
+#: ../usermanual/configuration.rst:218
+msgid ""
+"they register on their own. This mail contains authentication information,"
 msgstr "se sam registrira; poruka sadrži podatke za prijavu,"
 
-#: ../usermanual/configuration.rst:168
-msgid "their card is added or edited by someone else (if the corresponding box is checked),"
+#: ../usermanual/configuration.rst:219
+msgid ""
+"their card is added or edited by someone else (if the corresponding box is "
+"checked),"
 msgstr ""
 "netko drugi doda ili uredi njegov karton, ako je označen odgovarajući okvir,"
 
-#: ../usermanual/configuration.rst:169
+#: ../usermanual/configuration.rst:220
 msgid "they use the lost password feature,"
 msgstr "koristi oporavak lozinke,"
 
-#: ../usermanual/configuration.rst:170
-msgid "a new contribution is attached to their account (if the corresponding box is checked)."
+#: ../usermanual/configuration.rst:221
+msgid ""
+"a new contribution is attached to their account (if the corresponding box is "
+"checked)."
 msgstr "se njegovu računu doda uplata, ako je označen odgovarajući okvir."
 
-#: ../usermanual/configuration.rst:172
+#: ../usermanual/configuration.rst:223
 msgid "An email will be send to administrators when:"
 msgstr "Administratorima se šalje e-pošta kada:"
 
-#: ../usermanual/configuration.rst:174
+#: ../usermanual/configuration.rst:225
 msgid "a new member is added or registers on their own,"
 msgstr "se doda novi član ili se član sam registrira,"
 
-#: ../usermanual/configuration.rst:175
+#: ../usermanual/configuration.rst:226
 msgid "a new contribution is attached to a member account."
 msgstr "se članu doda uplata."
 
-#: ../usermanual/configuration.rst:177
-msgid "Of course, emails will be sent only if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditioned on a checkbox from the user interface, excepting for self registration messages that will always be send."
+#: ../usermanual/configuration.rst:228
+msgid ""
+"Of course, emails will be sent only if Galette configuration allows it (and "
+"the setup is correct). Sending messages to administrators is configured "
+"globally from the preferences, while sending emails to members is "
+"conditioned on a checkbox from the user interface, excepting for self "
+"registration messages that will always be send."
 msgstr ""
 "Poruke se šalju samo ako to Galetteove postavke dopuštaju i slanje je "
 "ispravno podešeno. Slanje administratorima podešava se globalno u "
 "postavkama, a slanje članovima potvrdnim okvirom u sučelju. Iznimka su "
 "poruke pri samostalnoj registraciji, koje se uvijek šalju."
 
-#: ../usermanual/configuration.rst:179
-msgid "Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more."
+#: ../usermanual/configuration.rst:230
+msgid ""
+"Several variables - automatically replaced on sending - are available for "
+"both subject and contents. Some of them may be used in all messages, but "
+"others will be only on some conditions. Refer to the inline help on Galette "
+"interface to know more."
 msgstr ""
 "U predmetu i sadržaju dostupne su varijable koje se zamjenjuju pri slanju. "
 "Neke se mogu koristiti u svim porukama, a druge samo pod određenim uvjetima. "
 "Više informacija potražite u pomoći unutar Galetteova sučelja."
+
+#~ msgid "Note that each new label will be added with current Galette lang."
+#~ msgstr "Novi naziv dodaje se na trenutačnom jeziku Galettea."
