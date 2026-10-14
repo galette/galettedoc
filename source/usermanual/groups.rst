@@ -37,12 +37,27 @@ Click on the edit icon of a group to see and change it.
    :alt: Editing a group
 
 * **Information**: the name of the group, and its **Parent group** if it is a subgroup,
-* **Managers**: the members who manage the group. Click on **Manage managers** to add or remove some,
-* **Members**: the members of the group. Click on **Manage members** to add or remove some.
+* **Members - Managers**: one line per person attached to the group, with two switches: **Member of group** and **Group manager**. A person can be both.
 
-In both cases, a window opens with the list of members: click on a row to select a member, or to unselect them, then close the window. Do not forget to save the group afterwards.
+To change who belongs to the group:
 
-Groups can also be changed from a member card: the **Groups:** part of the member form lists the groups the member belongs to and the groups they manage.
+* to add someone, search for them in **Add a member**, then click on **Add**: they are added as a member of the group; switch on **Group manager** to make them a manager too,
+* to change the role of someone already listed, use the switches of their line,
+* to remove someone from the group, click on the cross at the end of their line. Click on **Cancel** to keep them after all.
+
+Changed lines are labelled (*added*, *changed*, *will be removed*), and a message reminds you that nothing is stored yet: click on **Save** to keep your changes.
+
+Only administrators and staff members can change the members and managers from this page. Group managers see the list, but change the members of their groups from the member cards.
+
+.. versionchanged:: 1.3.1
+   Members and managers are listed in a single table, instead of being selected in a separate window. Groups of a member card work the same way.
+
+Groups can also be changed from a member card: the **Groups** part of the member form lists the groups the member belongs to and the groups they manage, with the same switches. Pick a group in **Add to group** and click on **Add** to attach the member to another group.
+
+.. image:: ../_styles/static/images/usermanual/member_groups.png
+   :scale: 50%
+   :align: center
+   :alt: Groups of a member
 
 Several members at once
 =======================
