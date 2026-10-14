@@ -49,6 +49,8 @@ Manage social networks of your association. This may be used in PDF or emails as
    :align: center
    :alt: Galette settings, social networks tab
 
+.. _pref_parameters:
+
 Parameters
 ==========
 
