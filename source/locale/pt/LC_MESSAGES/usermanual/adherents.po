@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:35+0200\n"
+"POT-Creation-Date: 2026-10-14 23:51+0200\n"
 "PO-Revision-Date: 2026-05-26 16:12+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
@@ -275,17 +275,27 @@ msgstr ""
 "local_export_fields.inc.php``. Se, por exemplo, quiser apenas o "
 "identificador, o nome e o apelido do membro, o conteúdo do ficheiro será:"
 
-#: ../usermanual/adherents.rst:119
+#: ../usermanual/adherents.rst:118
+msgid ""
+"The export ends with two columns listing the groups of each member: `Groups` "
+"and `Managed groups`. Groups are written with their full name (``Parent / "
+"Child``) and separated with a pipe (``|``), the format the :ref:`import "
+"<csv_imports_groups>` expects. A group manager only sees the groups they "
+"manage. Use the ``groups`` and ``groups_managed`` keys to keep those columns "
+"in the ``local_export_fields.inc.php`` file."
+msgstr ""
+
+#: ../usermanual/adherents.rst:123
 msgid "E-Mailing"
 msgstr "E-mail"
 
-#: ../usermanual/adherents.rst:121
+#: ../usermanual/adherents.rst:125
 msgid "**Mailings in Galette are designed to work from the members list.**"
 msgstr ""
 "**Os e-mails enviados pelo Galette são projetados para funcionar a partir da "
 "lista de membros.**"
 
-#: ../usermanual/adherents.rst:123
+#: ../usermanual/adherents.rst:127
 msgid ""
 "Direct mailing creation will work without problems, but members selection is "
 "harder."
@@ -293,7 +303,7 @@ msgstr ""
 "A criação de mala direta funcionará sem problemas, mas a seleção de membros "
 "é mais difícil."
 
-#: ../usermanual/adherents.rst:125
+#: ../usermanual/adherents.rst:129
 msgid ""
 "From Galette, you can send mailings to a selection of members. Each sent "
 "mailing is stored in order to be reused, so you can select a stored mailing "
@@ -305,7 +315,7 @@ msgstr ""
 "e-mail armazenado como modelo, recuperando a lista de membros selecionados, "
 "o assunto e o conteúdo do e-mail."
 
-#: ../usermanual/adherents.rst:127
+#: ../usermanual/adherents.rst:131
 #, fuzzy
 #| msgid ""
 #| "To send a new mailing, select members from the list and then use the "
@@ -323,11 +333,11 @@ msgstr ""
 "membros selecionados não tiver um endereço de e-mail, o Galette sugerirá a "
 "impressão de etiquetas correspondentes."
 
-#: ../usermanual/adherents.rst:129
+#: ../usermanual/adherents.rst:133
 msgid "Selected members for mailing"
 msgstr "Membros selecionados para envio de correspondência"
 
-#: ../usermanual/adherents.rst:134
+#: ../usermanual/adherents.rst:138
 msgid ""
 "Selecting members in the list must be done on one page only. Filtering "
 "features, as well as the possibility to display all members will be useful ;)"
@@ -336,11 +346,11 @@ msgstr ""
 "de filtragem, bem como a possibilidade de exibir todos os membros, seriam "
 "úteis ;)"
 
-#: ../usermanual/adherents.rst:138
+#: ../usermanual/adherents.rst:142
 msgid "You can choose a sender for each mailing:"
 msgstr "Pode escolher um remetente para cada e-mail:"
 
-#: ../usermanual/adherents.rst:140
+#: ../usermanual/adherents.rst:144
 msgid ""
 "**from Galette preferences** (default value): this will use information "
 "stored in preferences,"
@@ -348,7 +358,7 @@ msgstr ""
 "**Das preferências do Galette** (valor padrão): isto usará as informações "
 "armazenadas nas preferências,"
 
-#: ../usermanual/adherents.rst:141
+#: ../usermanual/adherents.rst:145
 msgid ""
 "**current logged-in user**: will use the name and the email of the current "
 "logged-in user (not available for super admin),"
@@ -356,16 +366,16 @@ msgstr ""
 "**Utilizador conectado atualmente**: usará o nome e o e-mail do utilizador "
 "conectado atualmente (não disponível para superadministrador),"
 
-#: ../usermanual/adherents.rst:142
+#: ../usermanual/adherents.rst:146
 msgid "**other**: you can set any name and email address you want."
 msgstr ""
 "**Outros**: pode definir qualquer nome e endereço de e-mail que desejar."
 
-#: ../usermanual/adherents.rst:144
+#: ../usermanual/adherents.rst:148
 msgid "Sender selection"
 msgstr "Seleção do remetente"
 
-#: ../usermanual/adherents.rst:149
+#: ../usermanual/adherents.rst:153
 msgid ""
 "Once the subject has been filled, you can work on the contents. You can send "
 "email in text only, or in HTML (keep in mind sending HTML messages by mail "
@@ -376,7 +386,7 @@ msgstr ""
 "por e-mail geralmente não é a melhor opção). Um editor WYSIWYG de HTML "
 "simples está disponível."
 
-#: ../usermanual/adherents.rst:151
+#: ../usermanual/adherents.rst:155
 msgid ""
 "Once the HTML editor is enabled, the checkbox to handle HTML tags is "
 "automatically checked, remember to check the box if you do not use the "
@@ -386,7 +396,7 @@ msgstr ""
 "tags HTML será marcada automaticamente. Lembre-se de marcar a caixa se não "
 "usar o editor, mas quiser enviar HTML!"
 
-#: ../usermanual/adherents.rst:153
+#: ../usermanual/adherents.rst:157
 msgid ""
 "Even if Galette is able to send HTML emails, this is discouraged. Messages "
 "length will be way larger (for almost nothing), and some (like me!) read "
@@ -398,7 +408,7 @@ msgstr ""
 "eu!) leem os seus e-mails apenas no formato de texto. É por isto que a "
 "Galette **sempre** fornecerá uma versão em texto dos e-mails em HTML."
 
-#: ../usermanual/adherents.rst:155
+#: ../usermanual/adherents.rst:159
 msgid ""
 "It is also possible to add attachements, just click on the `Browse` button "
 "in that attachements section. If your browser is compatible, you can add "
@@ -412,23 +422,23 @@ msgstr ""
 "anexos são armazenados no disco, num diretório com o nome do identificador "
 "da mensagem (definido automaticamente a partir da base de dados)."
 
-#: ../usermanual/adherents.rst:158
+#: ../usermanual/adherents.rst:162
 msgid ""
 "Each attachment has a maximum size of its own, which you can :ref:`change "
 "from the advanced configuration <upload_sizes>` page."
 msgstr ""
 
-#: ../usermanual/adherents.rst:160
+#: ../usermanual/adherents.rst:164
 msgid "`Preview` button let you preview your message before sending it."
 msgstr ""
 "O botão \"Visualizar\" permite que veja uma prévia da sua mensagem antes de "
 "enviá-la."
 
-#: ../usermanual/adherents.rst:162
+#: ../usermanual/adherents.rst:166
 msgid "Preview message"
 msgstr "Mensagem de pré-visualização"
 
-#: ../usermanual/adherents.rst:167
+#: ../usermanual/adherents.rst:171
 msgid ""
 "Any started emailings will be stored in your session to be retrieved in the "
 "future. An icon will be displayed in pages titles when a mailing is progress "
@@ -439,7 +449,7 @@ msgstr ""
 "um envio de e-mail estiver em andamento e fornecerá uma ligação para acedé-"
 "lo."
 
-#: ../usermanual/adherents.rst:169
+#: ../usermanual/adherents.rst:173
 msgid ""
 "If you want, you can cancel this mailing using the `Cancel mailing` button, "
 "it will be deleted from your session. If you want to store it for a longer "
@@ -451,36 +461,36 @@ msgstr ""
 "clicar no botão \"Gravar\". Ele será depois armazenado na lista de e-mails e "
 "poderá ser acedido posteriormente."
 
-#: ../usermanual/adherents.rst:174
+#: ../usermanual/adherents.rst:178
 #, fuzzy
 #| msgid "send mailings,"
 msgid "Sending large mailings"
 msgstr "enviar correspondências,"
 
-#: ../usermanual/adherents.rst:178
+#: ../usermanual/adherents.rst:182
 msgid ""
 "By default, a mailing is a single message, sent right away, carrying every "
 "recipient in blind copy - but mail servers restrict what one message may "
 "carry, and how fast you may send."
 msgstr ""
 
-#: ../usermanual/adherents.rst:182
+#: ../usermanual/adherents.rst:186
 msgid ""
 "Using your \"personal\" SMTP provider is often not a good idea; dedicated "
 "services are better suited for large mailings."
 msgstr ""
 
-#: ../usermanual/adherents.rst:184
+#: ../usermanual/adherents.rst:188
 msgid "And you even may have limits on a dedicated service."
 msgstr ""
 
-#: ../usermanual/adherents.rst:186
+#: ../usermanual/adherents.rst:190
 msgid ""
 "Galette :ref:`sending limits <mail_throttling>` changes what happens once "
 "you confirm the sending:"
 msgstr ""
 
-#: ../usermanual/adherents.rst:188
+#: ../usermanual/adherents.rst:192
 msgid ""
 "with a **batch size** set, Galette splits the recipients into several "
 "messages of at most that size, and waits the configured delay between two of "
@@ -488,25 +498,25 @@ msgid ""
 "left,"
 msgstr ""
 
-#: ../usermanual/adherents.rst:189
+#: ../usermanual/adherents.rst:193
 msgid ""
 "with an **hourly or daily limit** set, sending cannot be done in one go any "
 "more. Galette stores the mailing, queues one entry per recipient, and takes "
 "you to a progress page."
 msgstr ""
 
-#: ../usermanual/adherents.rst:191
+#: ../usermanual/adherents.rst:195
 msgid ""
 "The progress page sends the mailing batch after batch and shows how far it "
 "is: recipients sent, remaining and failed, and what the quota has consumed "
 "so far. Leave it open until it announces the mailing has been sent."
 msgstr ""
 
-#: ../usermanual/adherents.rst:193
+#: ../usermanual/adherents.rst:197
 msgid "A mailing being sent, halfway through its queue"
 msgstr ""
 
-#: ../usermanual/adherents.rst:198
+#: ../usermanual/adherents.rst:202
 msgid ""
 "Nothing is lost if you close it, or if the quota runs out before the end: "
 "the queue is stored in database. The page then tells you sending will resume "
@@ -515,24 +525,24 @@ msgid ""
 "<mailing_queue_cron>`."
 msgstr ""
 
-#: ../usermanual/adherents.rst:202
+#: ../usermanual/adherents.rst:206
 msgid ""
 "The progress page is the only thing a queued mailing *needs*. Galette "
 "proposes alternative methods to :ref:`drain the mail queue "
 "<mailing_queue_cron>` we really recommends ;-)"
 msgstr ""
 
-#: ../usermanual/adherents.rst:204
+#: ../usermanual/adherents.rst:208
 msgid ""
 "A queued mailing is stored in the history right away, and only counts as "
 "**sent** once its last recipient has left the queue."
 msgstr ""
 
-#: ../usermanual/adherents.rst:207
+#: ../usermanual/adherents.rst:211
 msgid "Mailings history"
 msgstr "Histórico de correspondências"
 
-#: ../usermanual/adherents.rst:209
+#: ../usermanual/adherents.rst:213
 msgid ""
 "When you start a mailing, it is stored into your session. Session ends when "
 "users log out, or on a server defined timeout. Mailing history stores the "
@@ -544,7 +554,7 @@ msgstr ""
 "servidor. O histórico de e-mails armazena as mensagens na base de dados, "
 "garantindo que elas estejam sempre disponíveis no futuro."
 
-#: ../usermanual/adherents.rst:211
+#: ../usermanual/adherents.rst:215
 msgid ""
 "Every sent mailing is stored into the database, and can be used as a "
 "template to write a new one. In this case, a new mailing will be created "
@@ -554,7 +564,7 @@ msgstr ""
 "modelo para escrever um novo. Nesse caso, um novo e-mail será criado usando "
 "informações do histórico e o original será mantido intacto."
 
-#: ../usermanual/adherents.rst:213
+#: ../usermanual/adherents.rst:217
 msgid ""
 "Mailings can be stored before they are sent. In this case, it is possible to "
 "continue it later. When you use history on a draft mailing, original entry "
@@ -564,7 +574,7 @@ msgstr ""
 "las posteriormente. Ao usar o histórico numa mensagem rascunho, a entrada "
 "original será substituída no momento do envio."
 
-#: ../usermanual/adherents.rst:215
+#: ../usermanual/adherents.rst:219
 msgid ""
 "When you use an existing history entry, here are the information that will "
 "be used:"
@@ -572,31 +582,31 @@ msgstr ""
 "Ao utilizar um registo de histórico existente, estas são as informações que "
 "serão usadas:"
 
-#: ../usermanual/adherents.rst:217
+#: ../usermanual/adherents.rst:221
 msgid "recipients,"
 msgstr "destinatários,"
 
-#: ../usermanual/adherents.rst:218
+#: ../usermanual/adherents.rst:222
 msgid "attachements,"
 msgstr "anexos,"
 
-#: ../usermanual/adherents.rst:219
+#: ../usermanual/adherents.rst:223
 msgid "subject,"
 msgstr "assunto,"
 
-#: ../usermanual/adherents.rst:220
+#: ../usermanual/adherents.rst:224
 msgid "message,"
 msgstr "mensagem,"
 
-#: ../usermanual/adherents.rst:221
+#: ../usermanual/adherents.rst:225
 msgid "html/text flag."
 msgstr "sinalizador html/texto."
 
-#: ../usermanual/adherents.rst:226
+#: ../usermanual/adherents.rst:230
 msgid "CSV imports"
 msgstr "Importações CSV"
 
-#: ../usermanual/adherents.rst:228
+#: ../usermanual/adherents.rst:232
 msgid ""
 "It is possible to import member data from a predefined model. A default "
 "model is provided, but you can configure it to suits your needs, using the "
@@ -606,11 +616,11 @@ msgstr ""
 "modelo padrão é fornecido, mas pode configurá-lo de acordo com as suas "
 "necessidades, usando a opção de menu \"Importações\"."
 
-#: ../usermanual/adherents.rst:231
+#: ../usermanual/adherents.rst:235
 msgid "Model"
 msgstr "Modelo"
 
-#: ../usermanual/adherents.rst:233
+#: ../usermanual/adherents.rst:237
 msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
 "current model will be used to check your CSV file integrity."
@@ -619,17 +629,17 @@ msgstr ""
 "importar, o modelo atual será usado para verificar a integridade do seu "
 "ficheiro CSV."
 
-#: ../usermanual/adherents.rst:235
+#: ../usermanual/adherents.rst:239
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr ""
 "Para configurar o modelo, clique no botão \"Configurar\" na interface do "
 "utilizador."
 
-#: ../usermanual/adherents.rst:237
+#: ../usermanual/adherents.rst:241
 msgid "Default import model"
 msgstr "Modelo de importação padrão"
 
-#: ../usermanual/adherents.rst:242
+#: ../usermanual/adherents.rst:246
 msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
 "fields:"
@@ -637,23 +647,23 @@ msgstr ""
 "Se o modelo proposto não for adequado para si, clique em \"Editar modelo\" e "
 "escolha os campos desejados:"
 
-#: ../usermanual/adherents.rst:244
+#: ../usermanual/adherents.rst:248
 msgid "Import model configuration"
 msgstr "Importar configuração do modelo"
 
-#: ../usermanual/adherents.rst:249
+#: ../usermanual/adherents.rst:253
 msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
 msgstr "Após selecionar os campos, clique no botão \"Gravar novo modelo\"."
 
-#: ../usermanual/adherents.rst:251
+#: ../usermanual/adherents.rst:255
 msgid ""
 "Dynamic fields of the members can be imported as well, except file fields. "
 "A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
 "a field with no limit gets 10 columns."
 msgstr ""
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:257
 msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
@@ -663,11 +673,58 @@ msgstr ""
 "\"Gerar um ficheiro CSV vazio\". Claro, pode alterar o modelo se quiser ou "
 "removê-lo para retornar ao modelo padrão."
 
-#: ../usermanual/adherents.rst:256
+#: ../usermanual/adherents.rst:262
+msgid "Groups"
+msgstr ""
+
+#: ../usermanual/adherents.rst:266
+msgid ""
+"Once at least one group exists, two more fields can be added to the model:"
+msgstr ""
+
+#: ../usermanual/adherents.rst:268
+msgid "**Groups**: the groups the member belongs to,"
+msgstr ""
+
+#: ../usermanual/adherents.rst:269
+msgid "**Managed groups**: the groups the member manages."
+msgstr ""
+
+#: ../usermanual/adherents.rst:271
+msgid ""
+"Several groups are separated with a pipe (``|``) in the same cell, for "
+"example ``Section 33|Section 47``. A group can be named:"
+msgstr ""
+
+#: ../usermanual/adherents.rst:273
+msgid "**by its name**, when no other group has the same name,"
+msgstr ""
+
+#: ../usermanual/adherents.rst:274
+msgid ""
+"**by its full name** otherwise, with its parents, each followed by a slash "
+"surrounded by spaces, for example ``Federation / Section 33``."
+msgstr ""
+
+#: ../usermanual/adherents.rst:276
+msgid ""
+"An unknown group, or a name several groups share, stops the import; the "
+"error message gives the line and, for a shared name, the full names to "
+"choose from. An empty cell attaches the member to no group."
+msgstr ""
+
+#: ../usermanual/adherents.rst:280
+msgid ""
+"The header of a CSV export is translated, while the import only relies on "
+"columns order in the model: an exported file has to be adapted before it can "
+"be imported again."
+msgstr ""
+
+#: ../usermanual/adherents.rst:283
 msgid "Import"
 msgstr "Importar"
 
-#: ../usermanual/adherents.rst:258
+#: ../usermanual/adherents.rst:285
 #, fuzzy
 #| msgid ""
 #| "Once you have retrieved and fill the empty file, you have to send it "
@@ -685,7 +742,7 @@ msgstr ""
 "do seu ficheiro é \"csv\" (ou \"txt\") e se o tamanho não excede o tamanho "
 "máximo de upload (2 MB por padrão no PHP)."
 
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:289
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -695,7 +752,7 @@ msgstr ""
 "diretório ``galette/data/imports``, ou dividi-lo em vários ficheiros menores "
 "que podem ser importados um por um."
 
-#: ../usermanual/adherents.rst:264
+#: ../usermanual/adherents.rst:291
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -703,11 +760,11 @@ msgstr ""
 "Os ficheiros enviados são listados na secção \"Ficheiros existentes\". Pode "
 "exibi-los, removê-los ou importá-los:"
 
-#: ../usermanual/adherents.rst:266
+#: ../usermanual/adherents.rst:293
 msgid "Select and import file"
 msgstr "Selecione e importe o ficheiro"
 
-#: ../usermanual/adherents.rst:271
+#: ../usermanual/adherents.rst:298
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -718,29 +775,25 @@ msgstr ""
 "preenchidos, formatação de dados correta, etc.) sem armazenar nada na base "
 "de dados."
 
-#: ../usermanual/adherents.rst:273
+#: ../usermanual/adherents.rst:302
 msgid ""
-"When you import a CSV file, if one line is incorrect, previous ones may be "
-"stored in the database already; so it is advised to use the dry-run before "
-"to get error fixed."
+"When one line is incorrect, nothing from the file is stored in the database. "
+"Using the dry run first is still advised, to fix all errors before importing."
 msgstr ""
-"Ao importar um ficheiro CSV, se uma linha estiver incorreta, as linhas "
-"anteriores podem já estar armazenadas na base de dados; portanto, é "
-"recomendável fazer um teste prévio para corrigir o erro."
 
-#: ../usermanual/adherents.rst:275
+#: ../usermanual/adherents.rst:304
 #, fuzzy
 #| msgid ""
 #| "You will have error messages than something went wrong (in dry-run mode "
 #| "or not):"
 msgid ""
 "Galette displays error messages if something went wrong, in dry-run mode or "
-"not."
+"not. A successful dry run says nothing has been stored."
 msgstr ""
 "Receberá mensagens de erro indicando que algo deu errado (tanto no modo de "
 "teste quanto em modo normal):"
 
-#: ../usermanual/adherents.rst:279
+#: ../usermanual/adherents.rst:308
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -751,11 +804,11 @@ msgstr ""
 "obrigatórios na configuração do Galette não estiverem listados no seu modelo "
 "de importação."
 
-#: ../usermanual/adherents.rst:284
+#: ../usermanual/adherents.rst:313
 msgid "Links between members"
 msgstr "Ligações entre membros"
 
-#: ../usermanual/adherents.rst:288
+#: ../usermanual/adherents.rst:317
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -765,7 +818,7 @@ msgstr ""
 "armazenar famílias, por exemplo, ou membros de uma mesma empresa. Pode "
 "aceder os membros filhos a partir do membro pai e vice-versa."
 
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:319
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -773,7 +826,7 @@ msgstr ""
 "Pode adicionar quantos filhos quiser para um membro, mas um filho não pode "
 "se faz um pai."
 
-#: ../usermanual/adherents.rst:292
+#: ../usermanual/adherents.rst:321
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -787,7 +840,7 @@ msgstr ""
 "automaticamente opcionais, independentemente da configuração. Caso alguma "
 "dessas informações esteja ausente, ela será obtida do remetente principal."
 
-#: ../usermanual/adherents.rst:294
+#: ../usermanual/adherents.rst:323
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -795,11 +848,11 @@ msgstr ""
 "Membros sem endereço de e-mail não podem usar o recurso \"recuperar palavra-"
 "passe\". Isto não afeta a restrição de unicidade do e-mail no banco de dados."
 
-#: ../usermanual/adherents.rst:299
+#: ../usermanual/adherents.rst:328
 msgid "Resetting a second factor"
 msgstr ""
 
-#: ../usermanual/adherents.rst:303
+#: ../usermanual/adherents.rst:332
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -808,7 +861,7 @@ msgid ""
 "member logs in with their password alone until they enrol again."
 msgstr ""
 
-#: ../usermanual/adherents.rst:305
+#: ../usermanual/adherents.rst:334
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -817,7 +870,7 @@ msgid ""
 "only the super administrator can."
 msgstr ""
 
-#: ../usermanual/adherents.rst:309
+#: ../usermanual/adherents.rst:338
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -825,11 +878,11 @@ msgid ""
 "and for whom."
 msgstr ""
 
-#: ../usermanual/adherents.rst:312
+#: ../usermanual/adherents.rst:341
 msgid "Impersonating"
 msgstr "Assumir identidade de usuário"
 
-#: ../usermanual/adherents.rst:316
+#: ../usermanual/adherents.rst:345
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -839,7 +892,7 @@ msgstr ""
 "suas ACLs, grupos, etc. Nesse caso, infelizmente é frequente vermos "
 "credenciais enviadas por e-mails inseguros, o que deve ser evitado."
 
-#: ../usermanual/adherents.rst:318
+#: ../usermanual/adherents.rst:347
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
@@ -851,3 +904,12 @@ msgstr ""
 "dele. Depois de se passar para utilizador, poderá reproduzir o problema e "
 "corrigi-lo ou obter todas as informações necessárias para relatá-lo à equipa "
 "responsável."
+
+#~ msgid ""
+#~ "When you import a CSV file, if one line is incorrect, previous ones may "
+#~ "be stored in the database already; so it is advised to use the dry-run "
+#~ "before to get error fixed."
+#~ msgstr ""
+#~ "Ao importar um ficheiro CSV, se uma linha estiver incorreta, as linhas "
+#~ "anteriores podem já estar armazenadas na base de dados; portanto, é "
+#~ "recomendável fazer um teste prévio para corrigir o erro."
