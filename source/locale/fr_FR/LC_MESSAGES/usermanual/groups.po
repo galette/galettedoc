@@ -1,9 +1,10 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 00:07+0200\n"
-"PO-Revision-Date: 2026-10-06 10:00+0200\n"
+"POT-Creation-Date: 2026-10-15 00:43+0200\n"
+"PO-Revision-Date: 2026-10-15 01:00+0200\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -109,52 +110,101 @@ msgstr ""
 
 #: ../usermanual/groups.rst:40
 msgid ""
-"**Managers**: the members who manage the group. Click on **Manage managers** "
-"to add or remove some,"
+"**Members - Managers**: one line per person attached to the group, with two "
+"switches: **Member of group** and **Group manager**. A person can be both."
 msgstr ""
-"**Responsables** : les adhérents qui gèrent le groupe. Cliquez sur **Gestion "
-"des responsables** pour en ajouter ou en retirer,"
+"**Adhérents - Responsables** : une ligne par personne rattachée au groupe, "
+"avec deux interrupteurs : **Membre du groupe** et **Responsable de groupe**. "
+"Une personne peut être les deux."
 
-#: ../usermanual/groups.rst:41
-msgid ""
-"**Members**: the members of the group. Click on **Manage members** to add or "
-"remove some."
-msgstr ""
-"**Adhérents** : les membres du groupe. Cliquez sur **Gestion des membres** "
-"pour en ajouter ou en retirer."
+#: ../usermanual/groups.rst:42
+msgid "To change who belongs to the group:"
+msgstr "Pour modifier les personnes du groupe :"
 
-#: ../usermanual/groups.rst:43
+#: ../usermanual/groups.rst:44
 msgid ""
-"In both cases, a window opens with the list of members: click on a row to "
-"select a member, or to unselect them, then close the window. Do not forget "
-"to save the group afterwards."
+"to add someone, search for them in **Add a member**, then click on **Add**: "
+"they are added as a member of the group; switch on **Group manager** to make "
+"them a manager too,"
 msgstr ""
-"Dans les deux cas, une fenêtre s'ouvre avec la liste des adhérents : cliquez "
-"sur une ligne pour sélectionner un adhérent, ou pour le désélectionner, puis "
-"fermez la fenêtre. N'oubliez pas d'enregistrer le groupe ensuite."
+"pour ajouter quelqu'un, recherchez-le dans **Ajouter un adhérent**, puis "
+"cliquez sur **Ajouter** : il est ajouté comme membre du groupe ; activez "
+"**Responsable de groupe** pour en faire aussi un responsable,"
 
 #: ../usermanual/groups.rst:45
 msgid ""
-"Groups can also be changed from a member card: the **Groups:** part of the "
-"member form lists the groups the member belongs to and the groups they "
-"manage."
+"to change the role of someone already listed, use the switches of their line,"
 msgstr ""
-"Les groupes peuvent aussi être modifiés depuis une fiche d'adhérent : la "
-"partie **Groupes :** du formulaire liste les groupes dont l'adhérent fait "
-"partie et ceux qu'il gère."
+"pour changer le rôle d'une personne déjà listée, utilisez les interrupteurs "
+"de sa ligne,"
+
+#: ../usermanual/groups.rst:46
+msgid ""
+"to remove someone from the group, click on the cross at the end of their "
+"line. Click on **Cancel** to keep them after all."
+msgstr ""
+"pour retirer quelqu'un du groupe, cliquez sur la croix en bout de ligne. "
+"Cliquez sur **Annuler** pour finalement le conserver."
 
 #: ../usermanual/groups.rst:48
+msgid ""
+"Changed lines are labelled (*added*, *changed*, *will be removed*), and a "
+"message reminds you that nothing is stored yet: click on **Save** to keep "
+"your changes."
+msgstr ""
+"Les lignes modifiées sont signalées (*ajouté*, *modifié*, *sera retiré*), et "
+"un message rappelle que rien n'est encore enregistré : cliquez sur "
+"**Enregistrer** pour conserver vos modifications."
+
+#: ../usermanual/groups.rst:50
+msgid ""
+"Only administrators and staff members can change the members and managers "
+"from this page. Group managers see the list, but change the members of their "
+"groups from the member cards."
+msgstr ""
+"Seuls les administrateurs et les membres du bureau peuvent modifier les "
+"adhérents et les responsables depuis cette page. Les responsables de groupe "
+"voient la liste, mais modifient les membres de leurs groupes depuis les "
+"fiches des adhérents."
+
+#: ../usermanual/groups.rst:52
+msgid ""
+"Members and managers are listed in a single table, instead of being selected "
+"in a separate window. Groups of a member card work the same way."
+msgstr ""
+"Les adhérents et les responsables sont listés dans un seul tableau, au lieu "
+"d'être sélectionnés dans une fenêtre séparée. Les groupes d'une fiche "
+"adhérent fonctionnent de la même façon."
+
+#: ../usermanual/groups.rst:55
+msgid ""
+"Groups can also be changed from a member card: the **Groups** part of the "
+"member form lists the groups the member belongs to and the groups they "
+"manage, with the same switches. Pick a group in **Add to group** and click "
+"on **Add** to attach the member to another group."
+msgstr ""
+"Les groupes peuvent aussi être modifiés depuis une fiche d'adhérent : la "
+"partie **Groupes** du formulaire liste les groupes dont l'adhérent fait "
+"partie et ceux qu'il gère, avec les mêmes interrupteurs. Choisissez un "
+"groupe dans **Ajouter au groupe** et cliquez sur **Ajouter** pour rattacher "
+"l'adhérent à un autre groupe."
+
+#: ../usermanual/groups.rst:57
+msgid "Groups of a member"
+msgstr "Groupes d'un adhérent"
+
+#: ../usermanual/groups.rst:63
 msgid "Several members at once"
 msgstr "Plusieurs adhérents à la fois"
 
-#: ../usermanual/groups.rst:50
+#: ../usermanual/groups.rst:65
 msgid ""
 "To add several members to a group, or to remove them from it, in one go:"
 msgstr ""
 "Pour ajouter plusieurs adhérents à un groupe, ou les en retirer, en une "
 "seule fois :"
 
-#: ../usermanual/groups.rst:52
+#: ../usermanual/groups.rst:67
 msgid ""
 "go to **Members**, then **List of members**, and select the members with the "
 "checkboxes,"
@@ -162,13 +212,13 @@ msgstr ""
 "allez dans **Adhérents**, puis **Liste des adhérents**, et cochez les "
 "adhérents concernés,"
 
-#: ../usermanual/groups.rst:53
+#: ../usermanual/groups.rst:68
 msgid "choose **Mass change** in the actions displayed under the list,"
 msgstr ""
 "choisissez **Modification en masse** dans les actions affichées sous la "
 "liste,"
 
-#: ../usermanual/groups.rst:54
+#: ../usermanual/groups.rst:69
 msgid ""
 "in the **Groups:** part, pick a group in **Add to group** or in **Remove "
 "from group**,"
@@ -176,11 +226,11 @@ msgstr ""
 "dans la partie **Groupes :**, choisissez un groupe dans **Ajouter au "
 "groupe** ou dans **Supprimer du groupe**,"
 
-#: ../usermanual/groups.rst:55
+#: ../usermanual/groups.rst:70
 msgid "check the summary, and confirm."
 msgstr "vérifiez le récapitulatif, et confirmez."
 
-#: ../usermanual/groups.rst:57
+#: ../usermanual/groups.rst:72
 msgid ""
 "See :ref:`mass changes <mass_changes>` for the other information that can be "
 "changed this way."
@@ -188,11 +238,11 @@ msgstr ""
 "Voir les :ref:`modifications en masse <mass_changes>` pour les autres "
 "informations modifiables de cette façon."
 
-#: ../usermanual/groups.rst:60
+#: ../usermanual/groups.rst:75
 msgid "Deleting a group"
 msgstr "Supprimer un groupe"
 
-#: ../usermanual/groups.rst:62
+#: ../usermanual/groups.rst:77
 msgid ""
 "Click on the delete icon of the group, and confirm. A group that still has "
 "members or subgroups cannot be deleted as is: check **Cascade delete** in "
@@ -205,11 +255,11 @@ msgstr ""
 "supprimer le groupe et ses sous-groupes. Les adhérents ne sont jamais "
 "supprimés ; ils sont seulement retirés du groupe."
 
-#: ../usermanual/groups.rst:65
+#: ../usermanual/groups.rst:80
 msgid "Groups and searches"
 msgstr "Groupes et recherches"
 
-#: ../usermanual/groups.rst:67
+#: ../usermanual/groups.rst:82
 msgid ""
 "The members list can be filtered on a group, and the :ref:`advanced search "
 "<advsearch>` can find members belonging to several groups at once."
@@ -217,3 +267,36 @@ msgstr ""
 "La liste des adhérents peut être filtrée sur un groupe, et "
 "la :ref:`recherche avancée <advsearch>` sait trouver les adhérents qui "
 "appartiennent à plusieurs groupes à la fois."
+
+#~ msgid ""
+#~ "**Managers**: the members who manage the group. Click on **Manage "
+#~ "managers** to add or remove some,"
+#~ msgstr ""
+#~ "**Responsables** : les adhérents qui gèrent le groupe. Cliquez sur "
+#~ "**Gestion des responsables** pour en ajouter ou en retirer,"
+
+#~ msgid ""
+#~ "**Members**: the members of the group. Click on **Manage members** to add "
+#~ "or remove some."
+#~ msgstr ""
+#~ "**Adhérents** : les membres du groupe. Cliquez sur **Gestion des "
+#~ "membres** pour en ajouter ou en retirer."
+
+#~ msgid ""
+#~ "In both cases, a window opens with the list of members: click on a row to "
+#~ "select a member, or to unselect them, then close the window. Do not "
+#~ "forget to save the group afterwards."
+#~ msgstr ""
+#~ "Dans les deux cas, une fenêtre s'ouvre avec la liste des adhérents : "
+#~ "cliquez sur une ligne pour sélectionner un adhérent, ou pour le "
+#~ "désélectionner, puis fermez la fenêtre. N'oubliez pas d'enregistrer le "
+#~ "groupe ensuite."
+
+#~ msgid ""
+#~ "Groups can also be changed from a member card: the **Groups:** part of "
+#~ "the member form lists the groups the member belongs to and the groups "
+#~ "they manage."
+#~ msgstr ""
+#~ "Les groupes peuvent aussi être modifiés depuis une fiche d'adhérent : la "
+#~ "partie **Groupes :** du formulaire liste les groupes dont l'adhérent fait "
+#~ "partie et ceux qu'il gère."
