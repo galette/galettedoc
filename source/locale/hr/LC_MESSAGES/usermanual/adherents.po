@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-14 23:51+0200\n"
-"PO-Revision-Date: 2026-10-13 08:40+0000\n"
+"PO-Revision-Date: 2026-10-17 06:11+0000\n"
 "Last-Translator: Marko Puljic "
 "<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
@@ -290,6 +290,12 @@ msgid ""
 "manage. Use the ``groups`` and ``groups_managed`` keys to keep those columns "
 "in the ``local_export_fields.inc.php`` file."
 msgstr ""
+"Izvoz završava s dva stupca koji prikazuju grupe svakog člana: `Groups` i "
+"`Managed groups`. Grupe se navode punim nazivom (``Nadređena / Podređena``) "
+"i odvajaju okomitom crtom (``|``), u formatu koji očekuje :ref:`uvoz "
+"<csv_imports_groups>`. Voditelj grupe vidi samo grupe kojima upravlja. "
+"Koristite ključeve ``groups`` i ``groups_managed`` kako biste zadržali te "
+"stupce u datoteci ``local_export_fields.inc.php``."
 
 #: ../usermanual/adherents.rst:123
 msgid "E-Mailing"
@@ -682,36 +688,43 @@ msgstr ""
 
 #: ../usermanual/adherents.rst:262
 msgid "Groups"
-msgstr ""
+msgstr "Grupe"
 
 #: ../usermanual/adherents.rst:266
 msgid ""
 "Once at least one group exists, two more fields can be added to the model:"
 msgstr ""
+"Jednom kada postoji najmanje jedna grupa, dva dodatna polja mogu biti dodana "
+"modelu:"
 
 #: ../usermanual/adherents.rst:268
 msgid "**Groups**: the groups the member belongs to,"
-msgstr ""
+msgstr "**Grupe**: grupe kojima član pripada"
 
 #: ../usermanual/adherents.rst:269
 msgid "**Managed groups**: the groups the member manages."
-msgstr ""
+msgstr "**Upravljane grupe**: grupe kojima član upravlja."
 
 #: ../usermanual/adherents.rst:271
 msgid ""
 "Several groups are separated with a pipe (``|``) in the same cell, for "
 "example ``Section 33|Section 47``. A group can be named:"
 msgstr ""
+"Nekoliko grupa je odjeljeno sa pipe (``|``) u istoj ćeliji, na primjer "
+"``Section 33|Section 47``. Grupa može navesti:"
 
 #: ../usermanual/adherents.rst:273
 msgid "**by its name**, when no other group has the same name,"
-msgstr ""
+msgstr "**prema nazivu**, kada nijedna druga grupa nema isti naziv,"
 
 #: ../usermanual/adherents.rst:274
 msgid ""
 "**by its full name** otherwise, with its parents, each followed by a slash "
 "surrounded by spaces, for example ``Federation / Section 33``."
 msgstr ""
+"**prema punom nazivu** u suprotnom, uključujući nazive nadređenih grupa, pri "
+"čemu su nazivi odvojeni kosom crtom s razmacima s obje strane, na primjer "
+"``Savez / Sekcija 33``."
 
 #: ../usermanual/adherents.rst:276
 msgid ""
@@ -719,6 +732,10 @@ msgid ""
 "error message gives the line and, for a shared name, the full names to "
 "choose from. An empty cell attaches the member to no group."
 msgstr ""
+"Nepoznata grupa ili naziv koji koristi više grupa zaustavlja uvoz; poruka o "
+"pogrešci navodi redak u kojem je došlo do pogreške, a u slučaju istog naziva "
+"više grupa prikazuje njihove pune nazive kako biste mogli odabrati "
+"odgovarajuću. Prazna ćelija znači da član neće biti dodan ni u jednu grupu."
 
 #: ../usermanual/adherents.rst:280
 msgid ""
@@ -726,6 +743,9 @@ msgid ""
 "columns order in the model: an exported file has to be adapted before it can "
 "be imported again."
 msgstr ""
+"Zaglavlje izvezene CSV datoteke je prevedeno, dok se uvoz oslanja isključivo "
+"na redoslijed stupaca definiran u predlošku: izvezenu datoteku potrebno je "
+"prilagoditi prije ponovnog uvoza."
 
 #: ../usermanual/adherents.rst:283
 msgid "Import"
@@ -778,18 +798,18 @@ msgid ""
 "When one line is incorrect, nothing from the file is stored in the database. "
 "Using the dry run first is still advised, to fix all errors before importing."
 msgstr ""
+"Ako je ijedan redak neispravan, nijedan podatak iz datoteke neće biti "
+"spremljen u bazu podataka. I dalje se preporučuje najprije pokrenuti probni "
+"uvoz kako biste ispravili sve pogreške prije stvarnog uvoza."
 
 #: ../usermanual/adherents.rst:304
-#, fuzzy
-#| msgid ""
-#| "Galette displays error messages if something went wrong, in dry-run mode "
-#| "or not."
 msgid ""
 "Galette displays error messages if something went wrong, in dry-run mode or "
 "not. A successful dry run says nothing has been stored."
 msgstr ""
 "Galette prikazuje poruke o pogreškama neovisno o tome radi li se o probnom "
-"ili stvarnom uvozu."
+"ili stvarnom uvozu. Uspješan probni uvoz prikaže poruku, ništa nije "
+"spremljeno."
 
 #: ../usermanual/adherents.rst:308
 msgid ""
