@@ -3,13 +3,15 @@
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-14 10:26+0200\n"
-"PO-Revision-Date: 2026-10-03 12:35+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"PO-Revision-Date: 2026-10-17 06:11+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "command-line/sl/>\n"
 "Language: sl\n"
@@ -18,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../command-line.rst:3
 msgid "Command line"
@@ -147,7 +149,7 @@ msgstr ""
 
 #: ../command-line.rst:202
 msgid "Two-factor authentication reset"
-msgstr ""
+msgstr "Ponastavitev dvofaktorske avtentikacije"
 
 #: ../command-line.rst:206
 msgid ""
@@ -157,12 +159,19 @@ msgid ""
 "it runs on the machine hosting Galette, and that access stands as the "
 "authentication."
 msgstr ""
+"Superadministrator nima obnovitvenih kod, prav tako pa nad njim ni nikogar, "
+"ki bi lahko prek vmesnika ponastavil njegov :ref:`drugi faktor <pref_2fa>`. "
+"Ta ukaz omogoča ponoven dostop v primeru izgube naprave; podobno kot "
+"``galette:superadmin:password`` se izvaja na strežniku, na katerem je "
+"nameščen Galette, pri čemer sam dostop do tega strežnika služi kot overitev."
 
 #: ../command-line.rst:224
 msgid ""
 "Without option, the command removes the second factor of the super "
 "administrator, which then logs in with its password alone:"
 msgstr ""
+"Brez dodatne možnosti ukaz odstrani drugi dejavnik za superadministratorja, "
+"ki se nato prijavi zgolj s svojim geslom:"
 
 #: ../command-line.rst:240
 msgid ""
@@ -171,6 +180,11 @@ msgid ""
 "already do the same :ref:`from the member page <member_2fa_reset>`, the "
 "command is there for when nobody can log in to do so."
 msgstr ""
+"``--login`` namesto tega cilja na člana na podlagi njegovega prijavnega "
+"imena (in ne e-poštnega naslova); pri tem se izbrišejo tudi njegove "
+"obnovitvene kode. Skrbniki in osebje lahko enako storijo že :ref:`prek "
+"strani člana <member_2fa_reset>`; ta ukaz je na voljo za primere, ko se "
+"nihče ne more prijaviti, da bi to izvedel."
 
 #: ../command-line.rst:241
 msgid ""
@@ -178,6 +192,9 @@ msgid ""
 "for the account. This is what is needed after :ref:`the server clock went "
 "backwards <faq_2fa>`."
 msgstr ""
+"``--clock`` ohrani drugi faktor, pozabi pa le zadnjo kodo, ki je bila "
+"sprejeta za ta račun. To je potrebno v primeru, ko :ref:`ura na strežniku "
+"teče nazaj <faq_2fa>`."
 
 #: ../command-line.rst:242
 msgid ""
@@ -186,18 +203,26 @@ msgid ""
 "are kept, and asked again once a policy is set. It cannot be combined with "
 "the other options."
 msgstr ""
+"``--policy-off`` onemogoči dvostopenjsko preverjanje pristnosti za celotno "
+"instanco; to je rešitev za primere, ko gre nekaj narobe za vse uporabnike "
+"hkrati. Podatki o drugih dejavnikih preverjanja se ohranijo in sistem jih "
+"ponovno zahteva, ko je znova določena ustrezna politika. Te možnosti ni "
+"mogoče kombinirati z drugimi možnostmi."
 
 #: ../command-line.rst:244
 msgid ""
 "Whatever the case, a lock on the account after too many wrong codes is "
 "lifted too, and the reset is recorded in the history."
 msgstr ""
+"Kakorkoli že, odpravi se tudi blokada računa, do katere je prišlo zaradi "
+"prevelikega števila napačnih kod, ponastavitev pa se zabeleži v zgodovini."
 
 #: ../command-line.rst:246
 msgid ""
 "The command asks for confirmation; pass ``--force`` to run it without a "
 "terminal."
 msgstr ""
+"Ukaz zahteva potrditev; za izvedbo brez terminala uporabite ``--force``."
 
 #: ../command-line.rst:251
 msgid "Mailing queue"
