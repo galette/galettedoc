@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-14 10:26+0200\n"
-"PO-Revision-Date: 2026-10-09 13:50+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"PO-Revision-Date: 2026-10-17 06:11+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "faq-index/sl/>\n"
 "Language: sl\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../faq/index.rst:5
 msgid "Frequently Asked Question (FAQ)"
@@ -145,12 +147,13 @@ msgstr ""
 "je kot taka zavrnjena, dokler ura ne dohiti zapisanega."
 
 #: ../faq/index.rst:45
-#, fuzzy
-#| msgid "Set the server clock right first. Then, for the account concerned:"
 msgid ""
 "Set the server clock right first. Then, for the account concerned, from the "
 "machine hosting Galette (:ref:`see the command line <cli_twofactor_reset>`):"
-msgstr "Najprej pravilno nastavite uro strežnika. Nato za zadevni račun:"
+msgstr ""
+"Najprej pravilno nastavite uro strežnika. Nato za zadevni račun iz "
+"računalnika, ki gosti Galette (:ref:`glejte ukazno vrstico "
+"<cli_twofactor_reset>`):"
 
 #: ../faq/index.rst:51 ../faq/index.rst:63
 msgid "and, for the super administrator:"
@@ -158,7 +161,7 @@ msgstr "in za superskrbnika:"
 
 #: ../faq/index.rst:57
 msgid "Without access to the command line, the same can be done in database:"
-msgstr ""
+msgstr "Brez dostopa do ukazne vrstice lahko isto storite v podatkovni bazi:"
 
 #: ../faq/index.rst:70
 msgid "I lost the device computing my codes"
@@ -190,25 +193,22 @@ msgid "The super administrator cannot log in anymore"
 msgstr "Superskrbnik se ne more več prijaviti"
 
 #: ../faq/index.rst:79
-#, fuzzy
-#| msgid ""
-#| "That account is not a member, so nobody can reset it from the interface, "
-#| "and it has no recovery codes. Its second factor lives in the preferences, "
-#| "in database, which is where you clear it from:"
 msgid ""
 "That account is not a member, so nobody can reset it from the interface, and "
 "it has no recovery codes. Clear its second factor from the machine hosting "
 "Galette:"
 msgstr ""
-"Ta račun ni član, zato ga nihče ne more ponastaviti iz vmesnika in nima "
-"obnovitvenih kod. Njegov drugi dejavnik je v nastavitvah, v bazi podatkov, "
-"od koder ga počistite:"
+"Ta račun ni član, zato ga nihče ne more ponastaviti prek vmesnika, prav tako "
+"pa nima kod za obnovitev. Odstranite njegov drugi faktor na stroju, na "
+"katerem gostuje Galette:"
 
 #: ../faq/index.rst:85
 msgid ""
 "Its second factor lives in the preferences, so without access to the command "
 "line, it can be cleared in database:"
 msgstr ""
+"Njegov drugi dejavnik je shranjen v nastavitvah, zato ga je – če nimate "
+"dostopa do ukazne vrstice – mogoče izbrisati v podatkovni zbirki:"
 
 #: ../faq/index.rst:92
 msgid ""
@@ -221,20 +221,16 @@ msgstr ""
 "zahteva samo geslo."
 
 #: ../faq/index.rst:94
-#, fuzzy
-#| msgid ""
-#| "To turn the second factor off for the whole instance at the same time -- "
-#| "the way out when something goes wrong for everybody at once -- add:"
 msgid ""
 "To turn the second factor off for the whole instance -- the way out when "
 "something goes wrong for everybody at once -- run:"
 msgstr ""
-"Če želite izklopiti drugi dejavnik za celoten primer hkrati - izhod, ko gre "
-"nekaj narobe za vse hkrati - dodajte:"
+"Če želite izklopiti drugi faktor za celotno instanco – kar pride prav, ko "
+"gre nekaj narobe za vse hkrati – zaženite:"
 
 #: ../faq/index.rst:100
 msgid "or, in database:"
-msgstr ""
+msgstr "ali v podatkovni zbirki:"
 
 #: ../faq/index.rst:106
 msgid ""
@@ -245,17 +241,15 @@ msgstr ""
 "kode, dokler pravilnik ni ponovno nastavljen."
 
 #: ../faq/index.rst:110
-#, fuzzy
-#| msgid ""
-#| "Keep an access to your database at hand before you enable a second factor "
-#| "on the super administrator account. It is the only way back in for it."
 msgid ""
 "Keep an access to the server hosting Galette -- its command line, or its "
 "database -- at hand before you enable a second factor on the super "
 "administrator account. It is the only way back in for it."
 msgstr ""
-"Imejte pri roki dostop do svoje zbirke podatkov, preden omogočite drugi "
-"faktor v računu super skrbnika. To je edina pot nazaj."
+"Preden na računu superadministratorja omogočite drugi dejavnik preverjanja, "
+"poskrbite, da imate na voljo dostop do strežnika, na katerem gostuje Galette "
+"– bodisi do ukazne vrstice bodisi do podatkovne zadeve. To je namreč edini "
+"način, da si v primeru težav znova zagotovite dostop."
 
 #: ../faq/index.rst:114
 msgid "How to report a bug or ask for a feature?"
