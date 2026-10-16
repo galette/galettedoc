@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-14 10:26+0200\n"
-"PO-Revision-Date: 2026-10-13 08:40+0000\n"
+"PO-Revision-Date: 2026-10-17 06:11+0000\n"
 "Last-Translator: Marko Puljic "
 "<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../command-line.rst:202
 msgid "Two-factor authentication reset"
-msgstr ""
+msgstr "Poništavanje dvofaktorske autentifikacije"
 
 #: ../command-line.rst:206
 msgid ""
@@ -158,12 +158,21 @@ msgid ""
 "it runs on the machine hosting Galette, and that access stands as the "
 "authentication."
 msgstr ""
+"Glavni administrator nema kodove za oporavak niti postoji korisnik s višim "
+"ovlastima koji bi mogao poništiti njegov :ref:`drugi faktor autentifikacije "
+"<pref_2fa>` putem korisničkog sučelja. Ova naredba omogućuje ponovni pristup "
+"računu u slučaju gubitka uređaja za autentifikaciju. Poput naredbe "
+"``galette:superadmin:password``, izvršava se na poslužitelju na kojem je "
+"instaliran Galette, a sam pristup poslužitelju služi kao potvrda identiteta."
 
 #: ../command-line.rst:224
 msgid ""
 "Without option, the command removes the second factor of the super "
 "administrator, which then logs in with its password alone:"
 msgstr ""
+"Bez navođenja dodatnih opcija naredba uklanja drugi faktor autentifikacije "
+"glavnog administratora, koji se nakon toga može prijaviti samo pomoću svoje "
+"lozinke:"
 
 #: ../command-line.rst:240
 msgid ""
@@ -172,6 +181,11 @@ msgid ""
 "already do the same :ref:`from the member page <member_2fa_reset>`, the "
 "command is there for when nobody can log in to do so."
 msgstr ""
+"Opcija ``--login`` omogućuje odabir određenog člana prema njegovu "
+"korisničkom imenu (ne adresi e-pošte), pri čemu se uklanjaju i njegovi "
+"kodovi za oporavak. Administratori i članovi osoblja već mogu učiniti isto "
+":ref:`putem stranice člana <member_2fa_reset>`, a ova naredba služi za "
+"slučajeve kada se nitko ne može prijaviti kako bi to učinio."
 
 #: ../command-line.rst:241
 msgid ""
@@ -179,6 +193,9 @@ msgid ""
 "for the account. This is what is needed after :ref:`the server clock went "
 "backwards <faq_2fa>`."
 msgstr ""
+"Opcija ``--clock`` zadržava drugi faktor autentifikacije i samo briše zapis "
+"o posljednjem prihvaćenom kodu za taj račun. To je potrebno nakon što se "
+":ref:`vrijeme na poslužitelju pomaknulo unatrag <faq_2fa>`."
 
 #: ../command-line.rst:242
 msgid ""
