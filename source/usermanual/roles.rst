@@ -120,7 +120,7 @@ Examples
 ========
 
 A treasurer
-   Create a *Treasurer* role with all the permissions of the **Contributions** and **Transactions** domains, and *Display members* so the members can be chosen in forms. Give it for all groups to the member in charge of the accounts. They will not be able to edit members.
+   Create a *Treasurer* role with all the permissions of the **Contributions** and **Transactions** domains, and *Display members* so the members can be chosen in forms. Give this to the member in charge, onto all groups. They will not be able to edit members.
 
 A secretary for a section
    Create a *Section secretary* role with *Display members*, *Edit members*, *Display groups* and *Send mailings*. Give it for the section group: the member can update the information of the section members and write to them, and nobody else.
