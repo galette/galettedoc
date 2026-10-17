@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-14 10:26+0200\n"
-"PO-Revision-Date: 2026-10-17 06:11+0000\n"
+"PO-Revision-Date: 2026-10-18 05:29+0000\n"
 "Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
 "\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -217,6 +217,10 @@ msgid ""
 "of the **free search**, including dynamic fields, and to the date dynamic "
 "fields of contributions."
 msgstr ""
+"Vsak datum naprednega iskanja je lahko datum glede na dan izvajanja iskanja "
+"namesto fiksnega datuma. To velja za datume delov **naprednega iskanja** in "
+"**znotraj prispevkov**, za datumska polja **prostega iskanja**, vključno z "
+"dinamičnimi polji, in za datumska dinamična polja prispevkov."
 
 #: ../usermanual/recherche.rst:78
 msgid ""
@@ -225,27 +229,31 @@ msgid ""
 "reference date, optionally shifted by a number of days, weeks, months or "
 "years, forward (``+``) or backward (``-``). Reference dates are:"
 msgstr ""
+"Kliknite na gumb poleg datumskega polja, da preklopite na relativni datum, "
+"in znova kliknite nanj, da se vrnete na fiksni datum. Relativni datum je "
+"referenčni datum, po želji premaknjen za število dni, tednov, mesecev ali "
+"let, naprej (``+``) ali nazaj (``-``). Referenčni datumi so:"
 
 #: ../usermanual/recherche.rst:80
 msgid "**today**,"
-msgstr ""
+msgstr "**danes**,"
 
 #: ../usermanual/recherche.rst:81
 msgid "**start of the month** and **end of the month**,"
-msgstr ""
+msgstr "**začetek meseca** in **konec meseca**,"
 
 #: ../usermanual/recherche.rst:82
 msgid "**start of the year** and **end of the year**,"
-msgstr ""
+msgstr "**začetek leta** in **konec leta**,"
 
 #: ../usermanual/recherche.rst:83
 msgid ""
 "**start of the membership period** and **end of the membership period**."
-msgstr ""
+msgstr "**začetek članskega obdobja** in **konec članskega obdobja**."
 
 #: ../usermanual/recherche.rst:85
 msgid "Relative dates in advanced search"
-msgstr ""
+msgstr "Relativni datumi v naprednem iskanju"
 
 #: ../usermanual/recherche.rst:90
 msgid ""
@@ -255,26 +263,34 @@ msgid ""
 "from the contribution instead, there is no common period, and those two "
 "reference dates are not offered."
 msgstr ""
+"Obdobje članstva je znano le, če imata članstva isti začetni datum "
+"(**Začetek članstva** v :ref:`preferences <pref_parameters>`). Ko se "
+"članstva namesto tega podaljšajo za nekaj mesecev od prispevka, ni skupnega "
+"obdobja in ta dva referenčna datuma nista ponujena."
 
 #: ../usermanual/recherche.rst:92
 msgid "Some examples:"
-msgstr ""
+msgstr "Nekaj primerov:"
 
 #: ../usermanual/recherche.rst:94
 msgid ""
 "**Insurance certificates expiring within a month**: on a date dynamic field, "
 "a due date between *today* and *today + 1 month*,"
 msgstr ""
+"**Potrdila o zavarovanju, ki potečejo v enem mesecu**: na datumsko dinamično "
+"polje, datum zapadlosti med *danes* in *danes + 1 mesec*,"
 
 #: ../usermanual/recherche.rst:95
 msgid "**Adult members**: birth date before *today - 18 years*,"
-msgstr ""
+msgstr "**Odrasli člani**: datum rojstva pred *danes - 18 let*,"
 
 #: ../usermanual/recherche.rst:96
 msgid ""
 "**Contributions of the current period**: contribution begin date after "
 "*start of the membership period*."
 msgstr ""
+"**Prispevki tekočega obdobja**: datum začetka prispevka po *začetku obdobja "
+"članstva*."
 
 #: ../usermanual/recherche.rst:98
 msgid ""
@@ -283,6 +299,11 @@ msgid ""
 "within 30 days, whatever the day it is executed. Months and years are added "
 "calendar-wise: one month after January 31st is the last day of February."
 msgstr ""
+"Relativni datum se znova izračuna vsakič, ko se zažene iskanje: "
+":ref:`shranjeno iskanje <saved_searches>` z uporabo *danes + 30 dni* vedno "
+"navede, kaj zapade v roku 30 dni, ne glede na dan, ko je izvedeno. Meseci in "
+"leta se seštevajo koledarsko: en mesec po 31. januarju je zadnji dan "
+"februarja."
 
 #: ../usermanual/recherche.rst:103
 msgid "Saved searches"
@@ -333,6 +354,9 @@ msgid ""
 "its criteria with the advanced search you are currently using on the members "
 "list."
 msgstr ""
+"Shranjeno iskanje lahko urejate s seznama: lahko ga preimenujete in "
+"zamenjate njegove kriterije z naprednim iskanjem, ki ga trenutno uporabljate "
+"na seznamu članov."
 
 #: ../usermanual/recherche.rst:129
 msgid ""
@@ -342,9 +366,16 @@ msgid ""
 "search before using it, for example to send a mailing: without those "
 "criteria, it may select more members than expected."
 msgstr ""
+"Ko se izvede shranjeno iskanje, so kriteriji, ki se nanašajo na nekaj, kar "
+"ne obstaja več, na primer odstranjena skupina, status, vrsta prispevka, "
+"vrsta plačila ali dinamično polje, prezrti, sporočilo pa jih navede. "
+"Preverite iskanje, preden ga uporabite, na primer za pošiljanje pošte: brez "
+"teh meril lahko izbere več članov, kot je pričakovano."
 
 #: ../usermanual/recherche.rst:131
 msgid ""
 "Dates of saved searches are stored independently of the language, a search "
 "saved in one language can be executed in another one."
 msgstr ""
+"Datumi shranjenih iskanj so shranjeni neodvisno od jezika, iskanje, "
+"shranjeno v enem jeziku, se lahko izvede v drugem."
