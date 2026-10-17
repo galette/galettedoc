@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-14 23:51+0200\n"
-"PO-Revision-Date: 2026-10-17 06:11+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-10-18 05:29+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-members/sl/>\n"
 "Language: sl\n"
@@ -290,6 +290,12 @@ msgid ""
 "manage. Use the ``groups`` and ``groups_managed`` keys to keep those columns "
 "in the ``local_export_fields.inc.php`` file."
 msgstr ""
+"Izvoz se konča z dvema stolpcema, v katerih so navedene skupine vsakega "
+"člana: »Skupine« in »Upravljane skupine«. Skupine so zapisane s polnim "
+"imenom (``Parent / Child``) in ločene s črto (``|``), format, ki ga "
+"pričakuje :ref:`import <csv_imports_groups>`. Upravitelj skupine vidi samo "
+"skupine, ki jih upravlja. Uporabite ključa ``groups`` in ``groups_managed``, "
+"da obdržite te stolpce v datoteki ``local_export_fields.inc.php``."
 
 #: ../usermanual/adherents.rst:123
 msgid "E-Mailing"
@@ -704,31 +710,35 @@ msgstr "Skupine"
 #: ../usermanual/adherents.rst:266
 msgid ""
 "Once at least one group exists, two more fields can be added to the model:"
-msgstr ""
+msgstr "Ko obstaja vsaj ena skupina, lahko modelu dodate še dve polji:"
 
 #: ../usermanual/adherents.rst:268
 msgid "**Groups**: the groups the member belongs to,"
-msgstr ""
+msgstr "**Skupine**: skupine, ki jim član pripada,"
 
 #: ../usermanual/adherents.rst:269
 msgid "**Managed groups**: the groups the member manages."
-msgstr ""
+msgstr "**Upravljane skupine**: skupine, ki jih upravlja član."
 
 #: ../usermanual/adherents.rst:271
 msgid ""
 "Several groups are separated with a pipe (``|``) in the same cell, for "
 "example ``Section 33|Section 47``. A group can be named:"
 msgstr ""
+"Več skupin je ločenih s črto (``|``) v isti celici, na primer ``Section "
+"33|Section 47``. Skupina se lahko imenuje:"
 
 #: ../usermanual/adherents.rst:273
 msgid "**by its name**, when no other group has the same name,"
-msgstr ""
+msgstr "**po imenu**, kadar nobena druga skupina nima enakega imena,"
 
 #: ../usermanual/adherents.rst:274
 msgid ""
 "**by its full name** otherwise, with its parents, each followed by a slash "
 "surrounded by spaces, for example ``Federation / Section 33``."
 msgstr ""
+"**s polnim imenom** sicer s svojimi starši, vsakemu sledi poševnica, obdana "
+"s presledki, na primer ``Federation / Section 33``."
 
 #: ../usermanual/adherents.rst:276
 msgid ""
@@ -736,6 +746,9 @@ msgid ""
 "error message gives the line and, for a shared name, the full names to "
 "choose from. An empty cell attaches the member to no group."
 msgstr ""
+"Neznana skupina ali ime, ki si ga deli več skupin, ustavi uvoz; sporočilo o "
+"napaki podaja vrstico in, za ime v skupni rabi, polna imena, med katerimi "
+"lahko izbirate. Prazna celica ne dodaja člana nobeni skupini."
 
 #: ../usermanual/adherents.rst:280
 msgid ""
@@ -743,6 +756,9 @@ msgid ""
 "columns order in the model: an exported file has to be adapted before it can "
 "be imported again."
 msgstr ""
+"Glava izvoza CSV je prevedena, medtem ko se uvoz zanaša samo na vrstni red "
+"stolpcev v modelu: izvoženo datoteko je treba prilagoditi, preden jo je "
+"mogoče znova uvoziti."
 
 #: ../usermanual/adherents.rst:283
 msgid "Import"
@@ -799,6 +815,9 @@ msgid ""
 "When one line is incorrect, nothing from the file is stored in the database. "
 "Using the dry run first is still advised, to fix all errors before importing."
 msgstr ""
+"Ko je ena vrstica napačna, se v bazi podatkov ne shrani nič iz datoteke. Še "
+"vedno priporočamo, da najprej uporabite suhi zagon, da odpravite vse napake "
+"pred uvozom."
 
 #: ../usermanual/adherents.rst:304
 msgid ""
