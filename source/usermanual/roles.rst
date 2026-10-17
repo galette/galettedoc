@@ -176,7 +176,7 @@ Before 1.4, a few settings in the :ref:`rights tab of preferences <pref_rights>`
      - Group manager
      - Create transactions
 
-Nothing changes for users: everyone keeps what they were allowed to do. After the upgrade, open **Configuration**, then **Roles**, and check the **Group manager** and **Member** roles match what you expect.
+Nothing changes for users: everyone keeps what they were allowed to do. After the upgrade, open **Configuration**, then **Roles**, and check that **Group manager** and **Member** roles match what you expect.
 
 A few differences with previous versions:
 
