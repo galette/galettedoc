@@ -40,7 +40,7 @@ Five roles are given from members information; they cannot be renamed, removed n
      - members for who the *administrator* checkbox has been checked
      - Staff member
 
-A role **inherits** the permissions of its parent: an administrator gets every permission of staff members, and those of members.
+A role **inherits** the permissions of its parent: an administrator gets every permission of staff members, and those of members. The page of a system role tells where it comes from, and lists the administrators, staff members or group managers who have it.
 
 On a new installation, system roles get what access levels allowed before:
 
@@ -100,7 +100,7 @@ Administrators see the roles of a member on their card: those computed from memb
    :align: center
    :alt: Roles on a member card
 
-When editing a member, the **Roles** block lists the same roles. Computed ones cannot be changed there. Choose one of the roles you have created, a group or **All groups**, and use **Add**; the cross takes a given role back, and **Cancel** keeps it. Changes are stored when the member is saved.
+When editing a member, the **Roles** block lists the same roles, and where computed ones come from. Those cannot be changed there, except **Administrator**: its switch is the same as the administrator field of the form. Choose one of the roles you have created, a group or **All groups**, and use **Add**; the cross takes a given role back, and **Cancel** keeps it. Changes are stored when the member is saved.
 
 .. image:: ../_styles/static/images/usermanual/member_roles_edit.png
    :scale: 50%
