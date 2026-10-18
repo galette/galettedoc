@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:52+0200\n"
+"POT-Creation-Date: 2026-10-18 12:06+0200\n"
 "PO-Revision-Date: 2026-10-08 20:45+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -61,57 +61,49 @@ msgstr ""
 "želite, da se vaš pridruži."
 
 #: ../plugins/index.rst:25
-msgid "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
-msgstr "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
-
-#: ../plugins/index.rst:26
-msgid "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
-msgstr "`Članska <https://galette-plugins.github.io/plugin-fullcard/>`_"
-
-#: ../plugins/index.rst:27
 msgid "`Maps <https://galette-plugins.github.io/plugin-maps/>`_"
 msgstr "`Zemljevidi <https://galette-plugins.github.io/plugin-maps/>`_"
 
-#: ../plugins/index.rst:28
+#: ../plugins/index.rst:26
 msgid "`Auto <https://galette-plugins.github.io/plugin-auto/>`_"
 msgstr "`Samodejno <https://galette-plugins.github.io/plugin-auto/>`_"
 
-#: ../plugins/index.rst:29
+#: ../plugins/index.rst:27
 msgid "`Events <https://galette-plugins.github.io/plugin-events/>`_"
 msgstr "`Dogodki <https://galette-plugins.github.io/plugin-events/>`_"
 
-#: ../plugins/index.rst:30
+#: ../plugins/index.rst:28
 msgid "`ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_"
 msgstr ""
 "`Objects Lend <https://galette-plugins.github.io/plugin-objectslend/>`_"
 
-#: ../plugins/index.rst:31
+#: ../plugins/index.rst:29
 msgid "`Activities <https://galette-plugins.github.io/plugin-activities/>`_"
 msgstr "`Dejavnosti <https://galette-plugins.github.io/plugin-activities/>`_"
 
-#: ../plugins/index.rst:32
+#: ../plugins/index.rst:30
 msgid "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_"
 msgstr "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_"
 
-#: ../plugins/index.rst:33
+#: ../plugins/index.rst:31
 msgid "`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_"
 msgstr "`Stripe. <https://galette-plugins.github.io/plugin-stripe/>`_"
 
-#: ../plugins/index.rst:34
+#: ../plugins/index.rst:32
 msgid "`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_"
 msgstr "`HelloAsso. <https://galette-plugins.github.io/plugin-helloasso/>`_"
 
-#: ../plugins/index.rst:35
+#: ../plugins/index.rst:33
 msgid ""
 "`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_"
 msgstr ""
 "`Pravna obvestila <https://galette-plugins.github.io/plugin-legalnotices/>`_"
 
-#: ../plugins/index.rst:46
+#: ../plugins/index.rst:44
 msgid "Plugins management interface"
 msgstr "Vmesnik za upravljanje vtičnikov"
 
-#: ../plugins/index.rst:48
+#: ../plugins/index.rst:46
 msgid ""
 "A plugins management interface is provided, you will find it from the "
 "dashboard or in the configuration menu. After you have downloaded plugin(s) "
@@ -121,11 +113,11 @@ msgstr ""
 "plošči ali v meniju za konfiguracijo. Ko prenesete vtičnike v imenik "
 "``plugins`` Galette, se bo prikazal seznam:"
 
-#: ../plugins/index.rst:50
+#: ../plugins/index.rst:48
 msgid "Plugins management"
 msgstr "Upravljanje vtičnikov"
 
-#: ../plugins/index.rst:55
+#: ../plugins/index.rst:53
 msgid ""
 "If web server has read access to your plugins directory, then you can enable "
 "or disable any plugin from the related icon."
@@ -133,7 +125,7 @@ msgstr ""
 "Če ima spletni strežnik dostop za branje do vašega imenika z vtičniki, lahko "
 "kateri koli vtičnik omogočite ali onemogočite s pomočjo ustrezne ikone."
 
-#: ../plugins/index.rst:57
+#: ../plugins/index.rst:55
 msgid ""
 "If plugin requires a database to work, you can play installation and update "
 "scripts from the interface."
@@ -141,7 +133,7 @@ msgstr ""
 "Če vtičnik za delovanje potrebuje bazo podatkov, lahko namestitvene in "
 "posodobitvene skripte predvajate iz vmesnika."
 
-#: ../plugins/index.rst:59
+#: ../plugins/index.rst:57
 msgid ""
 "Database ACLs will then be checked. Unlike Galette, no information will be "
 "asked to you, since all is already available from your current instance."
@@ -150,7 +142,7 @@ msgstr ""
 "zahtevani nobeni podatki, saj so vsi podatki že na voljo iz vaše trenutne "
 "instance."
 
-#: ../plugins/index.rst:63
+#: ../plugins/index.rst:61
 msgid ""
 "Each plugin now has its own database version, and is updated on its own. The "
 "page lists the active plugins first, then the inactive ones, with the reason "
@@ -160,12 +152,12 @@ msgstr ""
 "Na strani so najprej navedeni aktivni vtičniki, nato neaktivni, z razlogom, "
 "zakaj so neaktivni."
 
-#: ../plugins/index.rst:65
+#: ../plugins/index.rst:63
 msgid ""
 "An icon next to the name of an inactive plugin tells why it is not active:"
 msgstr "Ikona poleg imena neaktivnega vtičnika pove, zakaj ni aktiven:"
 
-#: ../plugins/index.rst:67
+#: ../plugins/index.rst:65
 msgid ""
 "**Not installed**: the plugin needs database tables that have not been "
 "created yet. Click on the database icon of the **Actions** column to install "
@@ -175,7 +167,7 @@ msgstr ""
 "ustvarjene. Kliknite ikono zbirke podatkov v stolpcu **Dejanja**, da jih "
 "namestite,"
 
-#: ../plugins/index.rst:68
+#: ../plugins/index.rst:66
 msgid ""
 "**Need update**: the plugin files are more recent than its database. Click "
 "on the database icon to run the update,"
@@ -183,17 +175,17 @@ msgstr ""
 "**Potrebna posodobitev**: datoteke vtičnika so novejše od baze podatkov. "
 "Kliknite ikono baze podatkov, da zaženete posodobitev,"
 
-#: ../plugins/index.rst:69
+#: ../plugins/index.rst:67
 msgid ""
 "**Explicitly disabled**: the plugin has been disabled from this page, or "
 "from the :doc:`command line </command-line>`. Click on the activation icon "
 "to enable it again,"
 msgstr ""
-"**Izrecno onemogočeno**: vtičnik je bil onemogočen na tej strani ali v "
-":doc:`ukazni vrstici </command-line>`. Kliknite ikono za aktiviranje, da ga "
-"znova omogočite,"
+"**Izrecno onemogočeno**: vtičnik je bil onemogočen na tej strani ali "
+"v :doc:`ukazni vrstici </command-line>`. Kliknite ikono za aktiviranje, da "
+"ga znova omogočite,"
 
-#: ../plugins/index.rst:70
+#: ../plugins/index.rst:68
 msgid ""
 "**Incompatible with current version**: the plugin is made for another "
 "version of Galette; look for a more recent version of the plugin,"
@@ -201,7 +193,7 @@ msgstr ""
 "**Nezdružljivo s trenutno različico**: vtičnik je narejen za drugo različico "
 "Galette; poiščite novejšo različico vtičnika,"
 
-#: ../plugins/index.rst:71
+#: ../plugins/index.rst:69
 msgid ""
 "**A required file is missing**: the plugin files are incomplete; download "
 "the plugin again,"
@@ -209,7 +201,7 @@ msgstr ""
 "**Manjka zahtevana datoteka**: datoteke vtičnika so nepopolne; znova "
 "prenesite vtičnik,"
 
-#: ../plugins/index.rst:72
+#: ../plugins/index.rst:70
 msgid ""
 "**Database version missing**: Galette cannot tell which version of the "
 "plugin database is installed."
@@ -217,7 +209,7 @@ msgstr ""
 "**Manjka različica baze podatkov**: Galette ne more ugotoviti, katera "
 "različica baze podatkov vtičnika je nameščena."
 
-#: ../plugins/index.rst:74
+#: ../plugins/index.rst:72
 msgid ""
 "The name of an active plugin opens a window with information about it: "
 "version, author, routes and access rights."
@@ -225,13 +217,19 @@ msgstr ""
 "Ime aktivnega vtičnika odpre okno z informacijami o njem: različica, avtor, "
 "poti in pravice dostopa."
 
-#: ../plugins/index.rst:78
+#: ../plugins/index.rst:76
 msgid ""
 "Back up your database before installing or updating a plugin database, as "
 "you would before updating Galette itself."
 msgstr ""
 "Varnostno kopirajte svojo zbirko podatkov, preden namestite ali posodobite "
 "zbirko podatkov vtičnikov, kot bi to storili pred posodobitvijo same Galette."
+
+#~ msgid "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
+#~ msgstr "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
+
+#~ msgid "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
+#~ msgstr "`Članska <https://galette-plugins.github.io/plugin-fullcard/>`_"
 
 #~ msgid ""
 #~ "You can disable a plugin creating a ``_disabled`` file in its directory."
