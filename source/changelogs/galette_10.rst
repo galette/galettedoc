@@ -58,7 +58,7 @@ Fixes
 - galette:superadmin:password failed when the super administrator had enabled two-factor authentication
 - Session on command line failed with redis
 - bin/console can be run from another directory, or with options before the command
-- galette:install no longer reuses database user and password from an existing configuration
+- galette:install did not reuse database user and password from an existing configuration
 - Plugins console commands ignored --all, and skipped checks in non-interactive mode
 
 .. _v1300:
