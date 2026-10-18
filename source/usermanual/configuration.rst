@@ -140,11 +140,62 @@ On the form, the field is displayed once, with an **Add** button and the number 
 Labels translation
 ==================
 
-Galette handle several languages, but when you add a new dynamic field, there is only one value possible. Galette proposes an interface to translate those labels in each available language.
+Galette handles several languages, but some texts are typed by yourself, in one language only: names of dynamic fields, statuses, contribution types, payment types, social networks and documents types, and some preferences such as the slogan or the member card texts. Galette proposes an interface to translate those labels in each available language.
 
-Note that each new label will be added with current Galette lang.
+A new label is considered as written in the current language of Galette: its translation for this language is filled in, the others are empty. When a translation is empty, the original text is displayed.
 
-Go to **Configuration**, then **Labels translation**, select the label, and type its translation in each language. The labels are the names of the dynamic fields, but also the other texts you typed yourself and that can be translated: statuses, contribution types, payment types... The **Translate labels** icon of those lists, and the **Translate** links of the preferences, lead to the same page.
+Go to **Configuration**, then **Labels translation**, select the label, and type its translation in each language. The **Translate** icon of the statuses, contribution types, payment types and dynamic fields lists, and the **Translate** links of the preferences, open the same form for one label only.
+
+.. image:: ../_styles/static/images/usermanual/labels_translation_own.png
+   :scale: 50%
+   :align: center
+   :alt: Translating a label typed in French
+
+.. _labels_translation_core:
+
+Labels provided by Galette
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionchanged:: 1.3.1
+
+   Translations of the labels provided by Galette are displayed, instead of an empty form whose values were not used.
+
+Default statuses, contribution types and payment types are provided by Galette, and are translated along with the software. Their translation form displays those translations, read-only: to improve one of them, contribute to the `Galette translation on Weblate <https://hosted.weblate.org/projects/galette/>`_.
+
+.. image:: ../_styles/static/images/usermanual/labels_translation_core.png
+   :scale: 50%
+   :align: center
+   :alt: Read-only translations of a label provided by Galette
+
+Their edit form reminds that changing such a label replaces its automatic translations: the new label is then a text of your own, to be translated like any other.
+
+.. image:: ../_styles/static/images/usermanual/lists_contribution_type_form.png
+   :scale: 50%
+   :align: center
+   :alt: Editing a contribution type
+
+.. _labels_translation_change:
+
+Changing a label
+^^^^^^^^^^^^^^^^
+
+.. versionadded:: 1.3.1
+
+   Translations can be kept when a label is changed. They used to be reset.
+
+When you change one of your own labels, its edit form proposes to **keep its translations in other languages**, checked by default:
+
+* **Checked**: translations in other languages are copied to the new label. Keep it checked to fix a typo, or for a change that does not alter the meaning,
+* **Unchecked**: translations are reset, as for a new label. Uncheck it when the meaning changes, since existing translations would no longer be right.
+
+In both cases, the translation in the current language becomes the new label.
+
+.. image:: ../_styles/static/images/usermanual/labels_translation_keep.png
+   :scale: 50%
+   :align: center
+   :alt: Keeping translations when changing a dynamic field name
+
+The same label can be used by several objects, a status and a contribution type for example: they share the same translations, which are kept as long as one of them still uses the label.
 
 .. _emails_contents:
 

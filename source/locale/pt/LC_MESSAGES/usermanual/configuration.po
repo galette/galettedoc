@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
 "PO-Revision-Date: 2026-05-26 16:11+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
@@ -367,35 +367,125 @@ msgid "Labels translation"
 msgstr "Tradução de rótulos"
 
 #: ../usermanual/configuration.rst:143
+#, fuzzy
+#| msgid ""
+#| "Galette handle several languages, but when you add a new dynamic field, "
+#| "there is only one value possible. Galette proposes an interface to "
+#| "translate those labels in each available language."
 msgid ""
-"Galette handle several languages, but when you add a new dynamic field, "
-"there is only one value possible. Galette proposes an interface to translate "
-"those labels in each available language."
+"Galette handles several languages, but some texts are typed by yourself, in "
+"one language only: names of dynamic fields, statuses, contribution types, "
+"payment types, social networks and documents types, and some preferences "
+"such as the slogan or the member card texts. Galette proposes an interface "
+"to translate those labels in each available language."
 msgstr ""
 "O Galette suporta vários idiomas, mas quando adiciona um novo campo "
 "dinâmico, só existe um valor possível. O Galette propõe uma interface para "
 "traduzir esses rótulos em cada idioma disponível."
 
 #: ../usermanual/configuration.rst:145
-msgid "Note that each new label will be added with current Galette lang."
+msgid ""
+"A new label is considered as written in the current language of Galette: its "
+"translation for this language is filled in, the others are empty. When a "
+"translation is empty, the original text is displayed."
 msgstr ""
-"Observe que cada novo rótulo será adicionado com o idioma atual da Galette."
 
 #: ../usermanual/configuration.rst:147
 msgid ""
 "Go to **Configuration**, then **Labels translation**, select the label, and "
-"type its translation in each language. The labels are the names of the "
-"dynamic fields, but also the other texts you typed yourself and that can be "
-"translated: statuses, contribution types, payment types... The **Translate "
-"labels** icon of those lists, and the **Translate** links of the "
-"preferences, lead to the same page."
+"type its translation in each language. The **Translate** icon of the "
+"statuses, contribution types, payment types and dynamic fields lists, and "
+"the **Translate** links of the preferences, open the same form for one label "
+"only."
 msgstr ""
 
-#: ../usermanual/configuration.rst:152
+#: ../usermanual/configuration.rst:149
+msgid "Translating a label typed in French"
+msgstr ""
+
+#: ../usermanual/configuration.rst:157
+msgid "Labels provided by Galette"
+msgstr ""
+
+#: ../usermanual/configuration.rst:161
+msgid ""
+"Translations of the labels provided by Galette are displayed, instead of an "
+"empty form whose values were not used."
+msgstr ""
+
+#: ../usermanual/configuration.rst:163
+msgid ""
+"Default statuses, contribution types and payment types are provided by "
+"Galette, and are translated along with the software. Their translation form "
+"displays those translations, read-only: to improve one of them, contribute "
+"to the `Galette translation on Weblate <https://hosted.weblate.org/projects/"
+"galette/>`_."
+msgstr ""
+
+#: ../usermanual/configuration.rst:165
+msgid "Read-only translations of a label provided by Galette"
+msgstr ""
+
+#: ../usermanual/configuration.rst:170
+msgid ""
+"Their edit form reminds that changing such a label replaces its automatic "
+"translations: the new label is then a text of your own, to be translated "
+"like any other."
+msgstr ""
+
+#: ../usermanual/configuration.rst:172
+msgid "Editing a contribution type"
+msgstr ""
+
+#: ../usermanual/configuration.rst:180
+msgid "Changing a label"
+msgstr ""
+
+#: ../usermanual/configuration.rst:184
+msgid ""
+"Translations can be kept when a label is changed. They used to be reset."
+msgstr ""
+
+#: ../usermanual/configuration.rst:186
+msgid ""
+"When you change one of your own labels, its edit form proposes to **keep its "
+"translations in other languages**, checked by default:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:188
+msgid ""
+"**Checked**: translations in other languages are copied to the new label. "
+"Keep it checked to fix a typo, or for a change that does not alter the "
+"meaning,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:189
+msgid ""
+"**Unchecked**: translations are reset, as for a new label. Uncheck it when "
+"the meaning changes, since existing translations would no longer be right."
+msgstr ""
+
+#: ../usermanual/configuration.rst:191
+msgid ""
+"In both cases, the translation in the current language becomes the new label."
+msgstr ""
+
+#: ../usermanual/configuration.rst:193
+msgid "Keeping translations when changing a dynamic field name"
+msgstr ""
+
+#: ../usermanual/configuration.rst:198
+msgid ""
+"The same label can be used by several objects, a status and a contribution "
+"type for example: they share the same translations, which are kept as long "
+"as one of them still uses the label."
+msgstr ""
+
+#: ../usermanual/configuration.rst:203
 msgid "Emails contents"
 msgstr "Conteúdo dos e-mails"
 
-#: ../usermanual/configuration.rst:154
+#: ../usermanual/configuration.rst:205
 #, fuzzy
 #| msgid ""
 #| "Depending on your configuration (see preferences), administrative emails "
@@ -412,11 +502,11 @@ msgstr ""
 "quando adiciona um novo membro ou uma nova contribuição, ou a partir do "
 "recurso de palavra-passe perdida, por exemplo."
 
-#: ../usermanual/configuration.rst:156
+#: ../usermanual/configuration.rst:207
 msgid "Defaults are provided, but you can change them."
 msgstr "As configurações padrão são fornecidas, mas pode alterá-las."
 
-#: ../usermanual/configuration.rst:158
+#: ../usermanual/configuration.rst:209
 msgid ""
 "It is important to note that those texts contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -427,15 +517,15 @@ msgstr ""
 "cuidado para não esquecer nenhuma delas, pois isso pode causar problemas no "
 "envio."
 
-#: ../usermanual/configuration.rst:160
+#: ../usermanual/configuration.rst:211
 msgid "Edit mail send to a new member in french"
 msgstr "Editar e-mail enviado a um novo membro em francês"
 
-#: ../usermanual/configuration.rst:165
+#: ../usermanual/configuration.rst:216
 msgid "An email will be send to member when:"
 msgstr "Um e-mail será enviado ao membro quando:"
 
-#: ../usermanual/configuration.rst:167
+#: ../usermanual/configuration.rst:218
 #, fuzzy
 #| msgid "he self subscribes. This mail contains authentication information,"
 msgid ""
@@ -444,7 +534,7 @@ msgstr ""
 "Ele inscreveu-se por conta própria. Este e-mail contém informações de "
 "autenticação,"
 
-#: ../usermanual/configuration.rst:168
+#: ../usermanual/configuration.rst:219
 #, fuzzy
 #| msgid ""
 #| "his card is added or edited by someone else (if the corresponding box is "
@@ -456,13 +546,13 @@ msgstr ""
 "O cartão dele foi adicionado ou editado por outra pessoa (se a caixa "
 "correspondente estiver marcada),"
 
-#: ../usermanual/configuration.rst:169
+#: ../usermanual/configuration.rst:220
 #, fuzzy
 #| msgid "he uses lost password feature,"
 msgid "they use the lost password feature,"
 msgstr "Ele usa a função de palavra-passe esquecida,"
 
-#: ../usermanual/configuration.rst:170
+#: ../usermanual/configuration.rst:221
 #, fuzzy
 #| msgid ""
 #| "a new contribution is attache to his account (if the corresponding box is "
@@ -474,23 +564,23 @@ msgstr ""
 "Uma nova contribuição é adicionada à sua conta (se a caixa correspondente "
 "estiver marcada)."
 
-#: ../usermanual/configuration.rst:172
+#: ../usermanual/configuration.rst:223
 msgid "An email will be send to administrators when:"
 msgstr "Um e-mail será enviado aos administradores quando:"
 
-#: ../usermanual/configuration.rst:174
+#: ../usermanual/configuration.rst:225
 #, fuzzy
 #| msgid "a new member is added or self subscribes,"
 msgid "a new member is added or registers on their own,"
 msgstr "Um novo membro é adicionado ou inscreve-se por conta própria,"
 
-#: ../usermanual/configuration.rst:175
+#: ../usermanual/configuration.rst:226
 #, fuzzy
 #| msgid "a new contribution is attached to his account."
 msgid "a new contribution is attached to a member account."
 msgstr "Uma nova contribuição foi adicionada à sua conta."
 
-#: ../usermanual/configuration.rst:177
+#: ../usermanual/configuration.rst:228
 #, fuzzy
 #| msgid ""
 #| "Of course, emails will be sent only if Galette configuration allows it "
@@ -512,7 +602,7 @@ msgstr ""
 "utilizador, com exceção das mensagens de auto-inscrição, que serão sempre "
 "enviadas."
 
-#: ../usermanual/configuration.rst:179
+#: ../usermanual/configuration.rst:230
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "
@@ -524,3 +614,8 @@ msgstr ""
 "usadas em todas as mensagens, enquanto outras serão utilizadas apenas em "
 "determinadas condições. Consulte a ajuda integrada na interface do Galette "
 "para obter mais informações."
+
+#~ msgid "Note that each new label will be added with current Galette lang."
+#~ msgstr ""
+#~ "Observe que cada novo rótulo será adicionado com o idioma atual da "
+#~ "Galette."

@@ -1,5 +1,66 @@
 :orphan:
 
+.. _v1310:
+
+**************
+1.3.0 -> 1.3.1
+**************
+
+.. _ajouts_131:
+
+New features
+============
+
+- Saved searches can use dates relative to the search day - and can now be renamed or updated
+- Members can be attached to groups on CSV imports
+- New galette:twofactor:reset console command, to reset the second factor of the super administrator or of a member, forget its last used code, or disable two-factor authentication for the whole instance
+- Copy to clipboard buttons for the two-factor secret, the recovery codes and the system information
+- Member CSV export now carries dynamic fields
+- Preview features can be turned on from advanced configuration, or with the new galette:feature:enable and galette:feature:disable console commands; debug mode is no longer required
+
+.. _ameliorations_131:
+
+Improvements
+============
+
+- Member's groups are managed from a dedicated table instead of modals
+- Group's members and managers are managed from a single table instead of modals
+- Configure member picture like other fields: configurable visibility and can be mandatory
+- Member actions menu is the same on display and edit pages
+- Password strength indicator lists rules and which ones are met, and is displayed on member form as well
+- Web installer gives advice for super administrator password, and refuses it under 6 characters
+- A warning is displayed when saved search criteria refer to something that no longer exists
+- Self subscription form always shows email, login and captcha, whatever their visibility
+- It is no longer possible to change sender name and address when sending a mailing
+- A loader is displayed while the dark mode stylesheet is generated
+- Groups now send group.add, group.edit and group.remove events
+- Removing a member now sends contribution.remove and transaction.remove events for its contributions and transactions, and removes their dynamic fields values
+- Dynamic translations have been improved a bit
+- Some improvements have been done on logging; some information were often missing
+- Check if config file can be written at installation
+
+.. _bogues_131:
+
+Fixes
+=====
+
+- With membership extension, a contribution added on the last day of membership now starts the day after
+- Group PDF export now displays all subgroups, not only first level
+- Fix required textareas display
+- Required fields are enforced on titles and dropdowns in the browser, and on dynamic files fields on the server
+- Read-only required fields were reported as missing
+- Dynamic fields visible to nobody were still displayed, and could be used in advanced search
+- HTML tags were not removed from titles
+- Messages were lost when a background request ran before the page they were meant for
+- Saved searches dates are stored in ISO format, so they can be loaded in any language
+- Groups criteria were lost when a saved search was loaded
+- Contribution end date upper bound was not reset with advanced search filters
+- galette:superadmin:password failed when the super administrator had enabled two-factor authentication
+- Session on command line failed with redis
+- bin/console can be run from another directory, or with options before the command
+- galette:install no longer reuses database user and password from an existing configuration
+- Plugins console commands ignored --all, and skipped checks in non-interactive mode
+
 .. _v1300:
 
 **************

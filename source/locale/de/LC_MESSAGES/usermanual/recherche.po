@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
 "PO-Revision-Date: 2022-07-11 06:34+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -218,47 +218,148 @@ msgid ""
 "selected field. You can add and remove lines to refine search."
 msgstr ""
 
+#: ../usermanual/recherche.rst:72
+msgid "Relative dates"
+msgstr ""
+
+#: ../usermanual/recherche.rst:76
+msgid ""
+"Every date of the advanced search can be a date relative to the day the "
+"search is run, instead of a fixed date. This applies to the dates of the "
+"**advanced search** and **within contributions** parts, to the date fields "
+"of the **free search**, including dynamic fields, and to the date dynamic "
+"fields of contributions."
+msgstr ""
+
+#: ../usermanual/recherche.rst:78
+msgid ""
+"Click on the button next to a date field to switch to a relative date, and "
+"click on it again to come back to a fixed date. A relative date is a "
+"reference date, optionally shifted by a number of days, weeks, months or "
+"years, forward (``+``) or backward (``-``). Reference dates are:"
+msgstr ""
+
+#: ../usermanual/recherche.rst:80
+msgid "**today**,"
+msgstr ""
+
+#: ../usermanual/recherche.rst:81
+msgid "**start of the month** and **end of the month**,"
+msgstr ""
+
+#: ../usermanual/recherche.rst:82
+msgid "**start of the year** and **end of the year**,"
+msgstr ""
+
+#: ../usermanual/recherche.rst:83
+msgid ""
+"**start of the membership period** and **end of the membership period**."
+msgstr ""
+
+#: ../usermanual/recherche.rst:85
+msgid "Relative dates in advanced search"
+msgstr ""
+
+#: ../usermanual/recherche.rst:90
+msgid ""
+"The membership period is only known when memberships share the same "
+"beginning date (**Beginning of membership** in :ref:`preferences "
+"<pref_parameters>`). When memberships are extended for a number of months "
+"from the contribution instead, there is no common period, and those two "
+"reference dates are not offered."
+msgstr ""
+
+#: ../usermanual/recherche.rst:92
+msgid "Some examples:"
+msgstr ""
+
+#: ../usermanual/recherche.rst:94
+msgid ""
+"**Insurance certificates expiring within a month**: on a date dynamic field, "
+"a due date between *today* and *today + 1 month*,"
+msgstr ""
+
+#: ../usermanual/recherche.rst:95
+msgid "**Adult members**: birth date before *today - 18 years*,"
+msgstr ""
+
+#: ../usermanual/recherche.rst:96
+msgid ""
+"**Contributions of the current period**: contribution begin date after "
+"*start of the membership period*."
+msgstr ""
+
+#: ../usermanual/recherche.rst:98
+msgid ""
+"A relative date is computed again each time the search is run: a :ref:`saved "
+"search <saved_searches>` using *today + 30 days* always lists what is due "
+"within 30 days, whatever the day it is executed. Months and years are added "
+"calendar-wise: one month after January 31st is the last day of February."
+msgstr ""
+
 # 829f3de9eb794542b1779a1072a196f7
-#: ../usermanual/recherche.rst:70
+#: ../usermanual/recherche.rst:103
 msgid "Saved searches"
 msgstr "Gespeicherte Suchen"
 
 # c5f77abbb40f4d2485d35a69a3aa3d45
-#: ../usermanual/recherche.rst:74
+#: ../usermanual/recherche.rst:107
 msgid ""
 "Every search on members can be stored (with a name) in order to be executed "
 "again later. They are accessible only for their author."
 msgstr ""
 
 # 0175973bd3da417ea66a7385baf024f1
-#: ../usermanual/recherche.rst:76
+#: ../usermanual/recherche.rst:109
 msgid ""
 "After you proceed a search (\"simple\" or \"advanced\"), just click on the "
 "\"Save\" button, and pick up a name."
 msgstr ""
 
 # 829f3de9eb794542b1779a1072a196f7
-#: ../usermanual/recherche.rst:78
+#: ../usermanual/recherche.rst:111
 #, fuzzy
 #| msgid "Saved searches"
 msgid "Save a search"
 msgstr "Gespeicherte Suchen"
 
 # bafe61c7b5124947ace7e83e06f2fabb
-#: ../usermanual/recherche.rst:83
+#: ../usermanual/recherche.rst:116
 msgid "You can find saved searches in the list:"
 msgstr ""
 
 # 39d703c40a4f4130aa746c3c9f56ef23
-#: ../usermanual/recherche.rst:85
+#: ../usermanual/recherche.rst:118
 #, fuzzy
 #| msgid "Search"
 msgid "Searches list"
 msgstr "Suchen"
 
-# db648742db664c3d80b26ba585a00cec
-#: ../usermanual/recherche.rst:90
+#: ../usermanual/recherche.rst:123
 msgid ""
 "From this list, you will be able to remove or execute again searches, and "
-"also see a detail of used criteria."
+"also see a detail of used criteria. :ref:`Relative dates <relative_dates>` "
+"are shown in plain words, followed by the date they currently stand for."
+msgstr ""
+
+#: ../usermanual/recherche.rst:127
+msgid ""
+"A saved search can be edited from the list: you can rename it, and replace "
+"its criteria with the advanced search you are currently using on the members "
+"list."
+msgstr ""
+
+#: ../usermanual/recherche.rst:129
+msgid ""
+"When a saved search is executed, criteria referring to something that no "
+"longer exists, such as a removed group, status, contribution type, payment "
+"type or dynamic field, are ignored, and a message lists them. Check the "
+"search before using it, for example to send a mailing: without those "
+"criteria, it may select more members than expected."
+msgstr ""
+
+#: ../usermanual/recherche.rst:131
+msgid ""
+"Dates of saved searches are stored independently of the language, a search "
+"saved in one language can be executed in another one."
 msgstr ""

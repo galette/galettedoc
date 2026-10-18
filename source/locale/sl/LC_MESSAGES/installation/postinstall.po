@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
-"PO-Revision-Date: 2026-10-03 12:35+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
+"PO-Revision-Date: 2026-10-17 06:11+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "install-postinstall/sl/>\n"
 "Language: sl\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../installation/postinstall.rst:5
 msgid "Post installation"
@@ -205,12 +207,14 @@ msgstr ""
 #: ../installation/postinstall.rst:61
 msgid ""
 "Before enabling a second factor on the super administrator account, check "
-"you can reach your database. That account has no recovery codes, "
-"and :ref:`clearing its second factor <faq_2fa>` is done there."
+"you can reach the :ref:`command line <cli_twofactor_reset>` or the database "
+"of your server. That account has no recovery codes, and :ref:`clearing its "
+"second factor <faq_2fa>` is done there."
 msgstr ""
-"Preden omogočite drugi dejavnik v računu superskrbnika, preverite, ali lahko "
-"dosežete svojo bazo podatkov. Ta račun nima obnovitvenih kod in :ref:`izbris "
-"drugega faktorja <faq_2fa>` se opravi tam."
+"Preden omogočite drugi faktor v računu super skrbnika, preverite, ali lahko "
+"dosežete :ref:`ukazno vrstico <cli_twofactor_reset>` ali bazo podatkov "
+"vašega strežnika. Ta račun nima obnovitvenih kod in :ref:`izbris drugega "
+"faktorja <faq_2fa>` se opravi tam."
 
 #: ../installation/postinstall.rst:63
 msgid ""

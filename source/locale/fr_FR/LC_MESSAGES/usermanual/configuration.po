@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
 "PO-Revision-Date: 2026-10-01 20:02+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -380,45 +380,162 @@ msgstr "Un champ dynamique répétable sur le formulaire d'adhérent"
 
 #: ../usermanual/configuration.rst:141
 msgid "Labels translation"
-msgstr "Traduction des étiquettes"
+msgstr "Traduction des libellés"
 
 #: ../usermanual/configuration.rst:143
 msgid ""
-"Galette handle several languages, but when you add a new dynamic field, "
-"there is only one value possible. Galette proposes an interface to translate "
-"those labels in each available language."
+"Galette handles several languages, but some texts are typed by yourself, in "
+"one language only: names of dynamic fields, statuses, contribution types, "
+"payment types, social networks and documents types, and some preferences "
+"such as the slogan or the member card texts. Galette proposes an interface "
+"to translate those labels in each available language."
 msgstr ""
-"Galette gère plusieurs langues, mais lorsque vous ajoutez un nouveau champ "
-"dynamique, il n'y a qu'une seule valeur possible. Galette propose une "
-"interface pour traduire ces étiquettes dans toutes les langues disponibles."
+"Galette gère plusieurs langues, mais certains textes sont saisis par vous-"
+"même, dans une seule langue : noms des champs dynamiques, statuts, types de "
+"contributions, moyens de paiement, types de réseaux sociaux et de documents, "
+"ainsi que certaines préférences comme le slogan ou les textes de la carte de "
+"membre. Galette propose une interface pour traduire ces libellés dans "
+"chacune des langues disponibles."
 
 #: ../usermanual/configuration.rst:145
-msgid "Note that each new label will be added with current Galette lang."
+msgid ""
+"A new label is considered as written in the current language of Galette: its "
+"translation for this language is filled in, the others are empty. When a "
+"translation is empty, the original text is displayed."
 msgstr ""
-"Notez que chaque nouvelle étiquette sera ajoutée dans Galette avec la langue "
-"courante."
+"Un nouveau libellé est considéré comme écrit dans la langue courante de "
+"Galette : sa traduction pour cette langue est remplie, les autres sont "
+"vides. Lorsqu'une traduction est vide, le texte original est affiché."
 
 #: ../usermanual/configuration.rst:147
 msgid ""
 "Go to **Configuration**, then **Labels translation**, select the label, and "
-"type its translation in each language. The labels are the names of the "
-"dynamic fields, but also the other texts you typed yourself and that can be "
-"translated: statuses, contribution types, payment types... The **Translate "
-"labels** icon of those lists, and the **Translate** links of the "
-"preferences, lead to the same page."
+"type its translation in each language. The **Translate** icon of the "
+"statuses, contribution types, payment types and dynamic fields lists, and "
+"the **Translate** links of the preferences, open the same form for one label "
+"only."
 msgstr ""
-"Allez dans **Configuration**, puis **Traduction des étiquettes**, choisissez "
-"l'étiquette, et saisissez sa traduction dans chaque langue. Les étiquettes "
-"sont les noms des champs dynamiques, mais aussi les autres textes que vous "
-"avez saisis vous-même et qui peuvent être traduits : statuts, types de "
-"contribution, types de paiement... L'icône **Traduction de libellés** de ces "
-"listes, et les liens **Traduire** des préférences, mènent à la même page."
+"Rendez-vous dans **Configuration**, puis **Traduction des libellés**, "
+"sélectionnez le libellé et saisissez sa traduction dans chaque langue. "
+"L'icône **Traduire** des listes des statuts, des types de contributions, des "
+"moyens de paiement et des champs dynamiques, ainsi que les liens "
+"**Traduire** des préférences, ouvrent le même formulaire pour un seul "
+"libellé."
 
-#: ../usermanual/configuration.rst:152
+#: ../usermanual/configuration.rst:149
+msgid "Translating a label typed in French"
+msgstr "Traduire un libellé saisi en français"
+
+#: ../usermanual/configuration.rst:157
+msgid "Labels provided by Galette"
+msgstr "Libellés fournis par Galette"
+
+#: ../usermanual/configuration.rst:161
+msgid ""
+"Translations of the labels provided by Galette are displayed, instead of an "
+"empty form whose values were not used."
+msgstr ""
+"Les traductions des libellés fournis par Galette sont affichées, au lieu "
+"d'un formulaire vide dont les valeurs n'étaient pas utilisées."
+
+#: ../usermanual/configuration.rst:163
+msgid ""
+"Default statuses, contribution types and payment types are provided by "
+"Galette, and are translated along with the software. Their translation form "
+"displays those translations, read-only: to improve one of them, contribute "
+"to the `Galette translation on Weblate <https://hosted.weblate.org/projects/"
+"galette/>`_."
+msgstr ""
+"Les statuts, types de contributions et moyens de paiement par défaut sont "
+"fournis par Galette, et traduits avec le logiciel. Leur formulaire de "
+"traduction affiche ces traductions en lecture seule : pour en améliorer une, "
+"contribuez à la `traduction de Galette sur Weblate <https://"
+"hosted.weblate.org/projects/galette/>`_."
+
+#: ../usermanual/configuration.rst:165
+msgid "Read-only translations of a label provided by Galette"
+msgstr "Traductions en lecture seule d'un libellé fourni par Galette"
+
+#: ../usermanual/configuration.rst:170
+msgid ""
+"Their edit form reminds that changing such a label replaces its automatic "
+"translations: the new label is then a text of your own, to be translated "
+"like any other."
+msgstr ""
+"Leur formulaire de modification rappelle que changer un tel libellé remplace "
+"ses traductions automatiques : le nouveau libellé devient alors un texte qui "
+"vous est propre, à traduire comme n'importe quel autre."
+
+#: ../usermanual/configuration.rst:172
+msgid "Editing a contribution type"
+msgstr "Modifier un type de contribution"
+
+#: ../usermanual/configuration.rst:180
+msgid "Changing a label"
+msgstr "Modifier un libellé"
+
+#: ../usermanual/configuration.rst:184
+msgid ""
+"Translations can be kept when a label is changed. They used to be reset."
+msgstr ""
+"Les traductions peuvent être conservées lorsqu'un libellé est modifié. Elles "
+"étaient auparavant réinitialisées."
+
+#: ../usermanual/configuration.rst:186
+msgid ""
+"When you change one of your own labels, its edit form proposes to **keep its "
+"translations in other languages**, checked by default:"
+msgstr ""
+"Lorsque vous modifiez l'un de vos libellés, son formulaire de modification "
+"propose de **conserver ses traductions dans les autres langues**, coché par "
+"défaut :"
+
+#: ../usermanual/configuration.rst:188
+msgid ""
+"**Checked**: translations in other languages are copied to the new label. "
+"Keep it checked to fix a typo, or for a change that does not alter the "
+"meaning,"
+msgstr ""
+"**Coché** : les traductions dans les autres langues sont recopiées sur le "
+"nouveau libellé. Laissez-le coché pour corriger une coquille, ou pour une "
+"modification qui ne change pas le sens,"
+
+#: ../usermanual/configuration.rst:189
+msgid ""
+"**Unchecked**: translations are reset, as for a new label. Uncheck it when "
+"the meaning changes, since existing translations would no longer be right."
+msgstr ""
+"**Décoché** : les traductions sont réinitialisées, comme pour un nouveau "
+"libellé. Décochez-le quand le sens change, les traductions existantes ne "
+"seraient plus justes."
+
+#: ../usermanual/configuration.rst:191
+msgid ""
+"In both cases, the translation in the current language becomes the new label."
+msgstr ""
+"Dans les deux cas, la traduction dans la langue courante devient le nouveau "
+"libellé."
+
+#: ../usermanual/configuration.rst:193
+msgid "Keeping translations when changing a dynamic field name"
+msgstr ""
+"Conserver les traductions lors du changement de nom d'un champ dynamique"
+
+#: ../usermanual/configuration.rst:198
+msgid ""
+"The same label can be used by several objects, a status and a contribution "
+"type for example: they share the same translations, which are kept as long "
+"as one of them still uses the label."
+msgstr ""
+"Un même libellé peut être utilisé par plusieurs objets, un statut et un type "
+"de contribution par exemple : ils partagent les mêmes traductions, "
+"conservées tant que l'un d'eux utilise encore le libellé."
+
+#: ../usermanual/configuration.rst:203
 msgid "Emails contents"
 msgstr "Contenus des courriels"
 
-#: ../usermanual/configuration.rst:154
+#: ../usermanual/configuration.rst:205
 msgid ""
 "Depending on your configuration (see :ref:`preferences <pref_email>`), "
 "administrative emails can be sent to users and/or administrators, when you "
@@ -431,11 +548,11 @@ msgstr ""
 "ou une nouvelle contribution, ou encore pour la fonctionnalité mot de passe "
 "perdu, par exemple."
 
-#: ../usermanual/configuration.rst:156
+#: ../usermanual/configuration.rst:207
 msgid "Defaults are provided, but you can change them."
 msgstr "Des valeurs par défaut sont fournies, mais vous pouvez les changer."
 
-#: ../usermanual/configuration.rst:158
+#: ../usermanual/configuration.rst:209
 msgid ""
 "It is important to note that those texts contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -446,22 +563,22 @@ msgstr ""
 "l'envoi. Prenez garde à n'en oublier aucune, cela pourrait causer des "
 "problèmes à l'envoi."
 
-#: ../usermanual/configuration.rst:160
+#: ../usermanual/configuration.rst:211
 msgid "Edit mail send to a new member in french"
 msgstr "Édition du courriel envoyé à un nouvel adhérent en français"
 
-#: ../usermanual/configuration.rst:165
+#: ../usermanual/configuration.rst:216
 msgid "An email will be send to member when:"
 msgstr "Un courriel sera envoyé à l'adhérent lorsque :"
 
-#: ../usermanual/configuration.rst:167
+#: ../usermanual/configuration.rst:218
 msgid ""
 "they register on their own. This mail contains authentication information,"
 msgstr ""
 "il s'inscrivent eux-mêmes. Ce courriel contient des informations "
 "d'authentification,"
 
-#: ../usermanual/configuration.rst:168
+#: ../usermanual/configuration.rst:219
 msgid ""
 "their card is added or edited by someone else (if the corresponding box is "
 "checked),"
@@ -469,11 +586,11 @@ msgstr ""
 "leur fiche est modifiée par une tierce personne (si la case correspondante "
 "est cochée),"
 
-#: ../usermanual/configuration.rst:169
+#: ../usermanual/configuration.rst:220
 msgid "they use the lost password feature,"
 msgstr "ils utilisent la fonctionnalité mot de passe perdu,"
 
-#: ../usermanual/configuration.rst:170
+#: ../usermanual/configuration.rst:221
 msgid ""
 "a new contribution is attached to their account (if the corresponding box is "
 "checked)."
@@ -481,19 +598,19 @@ msgstr ""
 "une nouvelle contribution est attachée à leur compte (si la case "
 "correspondante est cochée)."
 
-#: ../usermanual/configuration.rst:172
+#: ../usermanual/configuration.rst:223
 msgid "An email will be send to administrators when:"
 msgstr "Un courriel sera envoyé aux administrateurs lorsque :"
 
-#: ../usermanual/configuration.rst:174
+#: ../usermanual/configuration.rst:225
 msgid "a new member is added or registers on their own,"
 msgstr "un nouvel adhérent est ajouté ou s'est inscrit lui même,"
 
-#: ../usermanual/configuration.rst:175
+#: ../usermanual/configuration.rst:226
 msgid "a new contribution is attached to a member account."
 msgstr "une nouvelle contribution à un compte adhérent."
 
-#: ../usermanual/configuration.rst:177
+#: ../usermanual/configuration.rst:228
 msgid ""
 "Of course, emails will be sent only if Galette configuration allows it (and "
 "the setup is correct). Sending messages to administrators is configured "
@@ -508,7 +625,7 @@ msgstr ""
 "cocher dans l'interface utilisateur, sauf pour les messages de souscription "
 "par l'utilisateur qui seront toujours envoyés."
 
-#: ../usermanual/configuration.rst:179
+#: ../usermanual/configuration.rst:230
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "

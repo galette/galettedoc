@@ -113,6 +113,10 @@ Per default, CSV export for a members selection will provide same fields as the 
        'id_adh', 'nom_adh', 'prenom_adh'
    );
 
+.. versionadded:: 1.3.1
+
+The export ends with two columns listing the groups of each member: `Groups` and `Managed groups`. Groups are written with their full name (``Parent / Child``) and separated with a pipe (``|``), the format the :ref:`import <csv_imports_groups>` expects. A group manager only sees the groups they manage. Use the ``groups`` and ``groups_managed`` keys to keep those columns in the ``local_export_fields.inc.php`` file.
+
 .. _emailing:
 
 E-Mailing
@@ -252,6 +256,29 @@ Dynamic fields of the members can be imported as well, except file fields. A :re
 
 When in the current model tab, you can download an empty model from the `Generate an empty CSV file` button. Of course, you can change model if you want, or remove it to get the default model back.
 
+.. _csv_imports_groups:
+
+Groups
+^^^^^^
+
+.. versionadded:: 1.3.1
+
+Once at least one group exists, two more fields can be added to the model:
+
+* **Groups**: the groups the member belongs to,
+* **Managed groups**: the groups the member manages.
+
+Several groups are separated with a pipe (``|``) in the same cell, for example ``Section 33|Section 47``. A group can be named:
+
+* **by its name**, when no other group has the same name,
+* **by its full name** otherwise, with its parents, each followed by a slash surrounded by spaces, for example ``Federation / Section 33``.
+
+An unknown group, or a name several groups share, stops the import; the error message gives the line and, for a shared name, the full names to choose from. An empty cell attaches the member to no group.
+
+.. note::
+
+   The header of a CSV export is translated, while the import only relies on columns order in the model: an exported file has to be adapted before it can be imported again.
+
 Import
 ^^^^^^
 
@@ -270,9 +297,11 @@ Sent files are listed in the `Existing files` section. You can show, remove or i
 
 The `dry run` checkbox (checked per default) is designed to test your file data are valid (mandatory fields filled, data formatting is correct, ...) without storing anything in the database.
 
-When you import a CSV file, if one line is incorrect, previous ones may be stored in the database already; so it is advised to use the dry-run before to get error fixed.
+.. versionchanged:: 1.3.1
 
-Galette displays error messages if something went wrong, in dry-run mode or not.
+When one line is incorrect, nothing from the file is stored in the database. Using the dry run first is still advised, to fix all errors before importing.
+
+Galette displays error messages if something went wrong, in dry-run mode or not. A successful dry run says nothing has been stored.
 
 .. note::
 

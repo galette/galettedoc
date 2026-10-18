@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-07 14:25+0200\n"
+"POT-Creation-Date: 2026-10-14 10:26+0200\n"
 "PO-Revision-Date: 2025-04-19 17:58+0000\n"
 "Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/galette/doc-"
@@ -413,38 +413,127 @@ msgstr "Переклад етикеток"
 
 # 620b32d302854c5a96be42e6b06b7c98
 #: ../usermanual/configuration.rst:143
+#, fuzzy
+#| msgid ""
+#| "Galette handle several languages, but when you add a new dynamic field, "
+#| "there is only one value possible. Galette proposes an interface to "
+#| "translate those labels in each available language."
 msgid ""
-"Galette handle several languages, but when you add a new dynamic field, "
-"there is only one value possible. Galette proposes an interface to translate "
-"those labels in each available language."
+"Galette handles several languages, but some texts are typed by yourself, in "
+"one language only: names of dynamic fields, statuses, contribution types, "
+"payment types, social networks and documents types, and some preferences "
+"such as the slogan or the member card texts. Galette proposes an interface "
+"to translate those labels in each available language."
 msgstr ""
 "Galette працює з кількома мовами, але коли ви додаєте нове динамічне поле, "
 "можливе тільки одне значення. Galette пропонує інтерфейс для перекладу цих "
 "міток на кожну доступну мову."
 
-# 4d650efaef58446fab30ecec68d6edd9
 #: ../usermanual/configuration.rst:145
-msgid "Note that each new label will be added with current Galette lang."
+msgid ""
+"A new label is considered as written in the current language of Galette: its "
+"translation for this language is filled in, the others are empty. When a "
+"translation is empty, the original text is displayed."
 msgstr ""
-"Зверніть увагу, що кожна нова мітка буде додана до поточної мови Galette."
 
 #: ../usermanual/configuration.rst:147
 msgid ""
 "Go to **Configuration**, then **Labels translation**, select the label, and "
-"type its translation in each language. The labels are the names of the "
-"dynamic fields, but also the other texts you typed yourself and that can be "
-"translated: statuses, contribution types, payment types... The **Translate "
-"labels** icon of those lists, and the **Translate** links of the "
-"preferences, lead to the same page."
+"type its translation in each language. The **Translate** icon of the "
+"statuses, contribution types, payment types and dynamic fields lists, and "
+"the **Translate** links of the preferences, open the same form for one label "
+"only."
+msgstr ""
+
+#: ../usermanual/configuration.rst:149
+msgid "Translating a label typed in French"
+msgstr ""
+
+#: ../usermanual/configuration.rst:157
+msgid "Labels provided by Galette"
+msgstr ""
+
+#: ../usermanual/configuration.rst:161
+msgid ""
+"Translations of the labels provided by Galette are displayed, instead of an "
+"empty form whose values were not used."
+msgstr ""
+
+#: ../usermanual/configuration.rst:163
+msgid ""
+"Default statuses, contribution types and payment types are provided by "
+"Galette, and are translated along with the software. Their translation form "
+"displays those translations, read-only: to improve one of them, contribute "
+"to the `Galette translation on Weblate <https://hosted.weblate.org/projects/"
+"galette/>`_."
+msgstr ""
+
+#: ../usermanual/configuration.rst:165
+msgid "Read-only translations of a label provided by Galette"
+msgstr ""
+
+#: ../usermanual/configuration.rst:170
+msgid ""
+"Their edit form reminds that changing such a label replaces its automatic "
+"translations: the new label is then a text of your own, to be translated "
+"like any other."
+msgstr ""
+
+#: ../usermanual/configuration.rst:172
+msgid "Editing a contribution type"
+msgstr ""
+
+#: ../usermanual/configuration.rst:180
+msgid "Changing a label"
+msgstr ""
+
+#: ../usermanual/configuration.rst:184
+msgid ""
+"Translations can be kept when a label is changed. They used to be reset."
+msgstr ""
+
+#: ../usermanual/configuration.rst:186
+msgid ""
+"When you change one of your own labels, its edit form proposes to **keep its "
+"translations in other languages**, checked by default:"
+msgstr ""
+
+#: ../usermanual/configuration.rst:188
+msgid ""
+"**Checked**: translations in other languages are copied to the new label. "
+"Keep it checked to fix a typo, or for a change that does not alter the "
+"meaning,"
+msgstr ""
+
+#: ../usermanual/configuration.rst:189
+msgid ""
+"**Unchecked**: translations are reset, as for a new label. Uncheck it when "
+"the meaning changes, since existing translations would no longer be right."
+msgstr ""
+
+#: ../usermanual/configuration.rst:191
+msgid ""
+"In both cases, the translation in the current language becomes the new label."
+msgstr ""
+
+#: ../usermanual/configuration.rst:193
+msgid "Keeping translations when changing a dynamic field name"
+msgstr ""
+
+#: ../usermanual/configuration.rst:198
+msgid ""
+"The same label can be used by several objects, a status and a contribution "
+"type for example: they share the same translations, which are kept as long "
+"as one of them still uses the label."
 msgstr ""
 
 # ec0d959f0d9a45338b595867f8aae014
-#: ../usermanual/configuration.rst:152
+#: ../usermanual/configuration.rst:203
 msgid "Emails contents"
 msgstr "Вміст листів е-пошти"
 
 # a00ccb772d3d4676ba56bcba5e0cf028
-#: ../usermanual/configuration.rst:154
+#: ../usermanual/configuration.rst:205
 #, fuzzy
 #| msgid ""
 #| "Depending on your configuration (see preferences), administrative emails "
@@ -462,12 +551,12 @@ msgstr ""
 "пароля."
 
 # 1b6f8fdd3b8f407b8ae4f07fb24cc4cb
-#: ../usermanual/configuration.rst:156
+#: ../usermanual/configuration.rst:207
 msgid "Defaults are provided, but you can change them."
 msgstr "Типово вони додаються, але ви можете їх змінити."
 
 # 1eaf6d3b865c494287de03399e0997d0
-#: ../usermanual/configuration.rst:158
+#: ../usermanual/configuration.rst:209
 msgid ""
 "It is important to note that those texts contain variables - of the "
 "``{VARIABLE}`` form - that will be replaced automatically on sending. Be "
@@ -477,17 +566,17 @@ msgstr ""
 "які будуть автоматично замінені під час надсилання. Будьте уважні, щоб не "
 "забути жодну з них, це може викликати проблеми з надсиланням."
 
-#: ../usermanual/configuration.rst:160
+#: ../usermanual/configuration.rst:211
 msgid "Edit mail send to a new member in french"
 msgstr "Змінити лист, надісланий новому учаснику французькою мовою"
 
 # e141fe73bcf64b9fb2143f92c6a4e4b9
-#: ../usermanual/configuration.rst:165
+#: ../usermanual/configuration.rst:216
 msgid "An email will be send to member when:"
 msgstr "Учаснику буде надіслано лист е-пошти, якщо:"
 
 # 6cbe0fd53f9a4290a57412e635a6792d
-#: ../usermanual/configuration.rst:167
+#: ../usermanual/configuration.rst:218
 #, fuzzy
 #| msgid "he self subscribes. This mail contains authentication information,"
 msgid ""
@@ -496,7 +585,7 @@ msgstr ""
 "він самостійно підписується. Цей лист містить відомості про автентифікацію,"
 
 # 7801258e9e8248de9fbd6a88fb385ad6
-#: ../usermanual/configuration.rst:168
+#: ../usermanual/configuration.rst:219
 #, fuzzy
 #| msgid ""
 #| "his card is added or edited by someone else (if the corresponding box is "
@@ -509,14 +598,14 @@ msgstr ""
 "відповідне поле),"
 
 # f402746f081b4cc192495855ad5e5793
-#: ../usermanual/configuration.rst:169
+#: ../usermanual/configuration.rst:220
 #, fuzzy
 #| msgid "he uses lost password feature,"
 msgid "they use the lost password feature,"
 msgstr "він використовує функцію \"забув пароль\","
 
 # ae45becfa53547a284ff4e1e1e677f45
-#: ../usermanual/configuration.rst:170
+#: ../usermanual/configuration.rst:221
 #, fuzzy
 #| msgid ""
 #| "a new contribution is attache to his account (if the corresponding box is "
@@ -529,26 +618,26 @@ msgstr ""
 "прапорець встановлений)."
 
 # 257887c09acd4057a73575c1e5ccd646
-#: ../usermanual/configuration.rst:172
+#: ../usermanual/configuration.rst:223
 msgid "An email will be send to administrators when:"
 msgstr "Лист е-пошти буде надіслано адміністраторам, коли:"
 
 # d9470aa131bd46ad91fae1bde7def2a2
-#: ../usermanual/configuration.rst:174
+#: ../usermanual/configuration.rst:225
 #, fuzzy
 #| msgid "a new member is added or self subscribes,"
 msgid "a new member is added or registers on their own,"
 msgstr "додається або самостійно підписується новий член,"
 
 # f06dbb209abf42e9a4b8250a25550317
-#: ../usermanual/configuration.rst:175
+#: ../usermanual/configuration.rst:226
 #, fuzzy
 #| msgid "a new contribution is attached to his account."
 msgid "a new contribution is attached to a member account."
 msgstr "до його облікового запису додається новий внесок."
 
 # bdf33e0f5b0f4e2bb55dda5cb26056bb
-#: ../usermanual/configuration.rst:177
+#: ../usermanual/configuration.rst:228
 #, fuzzy
 #| msgid ""
 #| "Of course, emails will be sent only if Galette configuration allows it "
@@ -570,7 +659,7 @@ msgstr ""
 "винятком повідомлень самопідписання, які будуть надсилатися завжди."
 
 # 196630f591274913a30590a46917363c
-#: ../usermanual/configuration.rst:179
+#: ../usermanual/configuration.rst:230
 msgid ""
 "Several variables - automatically replaced on sending - are available for "
 "both subject and contents. Some of them may be used in all messages, but "
@@ -581,3 +670,8 @@ msgstr ""
 "замінюваних під час надсилання. Деякі з них можуть використовуватися у всіх "
 "повідомленнях, але інші - тільки за деяких умов. Для отримання додаткових "
 "відомостей зверніться до вбудованої довідки з інтерфейсу Galette."
+
+# 4d650efaef58446fab30ecec68d6edd9
+#~ msgid "Note that each new label will be added with current Galette lang."
+#~ msgstr ""
+#~ "Зверніть увагу, що кожна нова мітка буде додана до поточної мови Galette."
