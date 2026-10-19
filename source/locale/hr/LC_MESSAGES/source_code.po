@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the Galette package.
 # Marko Puljic <markopuljic.uo@gmail.com>, 2026.
 # Marko Puljic <markopuljic.uo@users.noreply.hosted.weblate.org>, 2026.
+# Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-10-13 08:40+0000\n"
-"Last-Translator: Marko Puljic "
-"<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
+"POT-Creation-Date: 2026-10-18 12:06+0200\n"
+"PO-Revision-Date: 2026-10-18 10:19+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
 "source_code/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.11.dev0\n"
@@ -26,14 +27,18 @@ msgid "Galette source code"
 msgstr "Izvorni kod Galettea"
 
 #: ../source_code.rst:5
-msgid "Galette sources are stored in `Git repositories <https://en.wikipedia.org/wiki/Git>`_ on `Galette GitHub organization <https://github.com/galette/>`_."
+msgid ""
+"Galette sources are stored in `Git repositories <https://en.wikipedia.org/"
+"wiki/Git>`_ on `Galette GitHub organization <https://github.com/galette/>`_."
 msgstr ""
 "Izvorni kod Galettea nalazi se u `Git repozitorijima <https://"
 "en.wikipedia.org/wiki/Git>`_ unutar `GitHub organizacije Galette <https://"
 "github.com/galette/>`_."
 
 #: ../source_code.rst:7
-msgid "All repositories follow the same development model, therefore you will find two branches in each:"
+msgid ""
+"All repositories follow the same development model, therefore you will find "
+"two branches in each:"
 msgstr ""
 "Svi repozitoriji slijede isti model razvoja pa u svakom postoje dvije grane:"
 
@@ -62,75 +67,79 @@ msgid "https://github.com/galette/galette"
 msgstr "https://github.com/galette/galette"
 
 #: ../source_code.rst:20
+#, fuzzy
+#| msgid "Galette core"
+msgid "Galette docker"
+msgstr "Jezgra Galettea"
+
+#: ../source_code.rst:20
+msgid "https://github.com/galette/docker"
+msgstr "https://github.com/galette/docker"
+
+#: ../source_code.rst:21
 msgid "Documentation"
 msgstr "Dokumentacija"
 
-#: ../source_code.rst:20
+#: ../source_code.rst:21
 msgid "https://github.com/galette/galettedoc"
 msgstr "https://github.com/galette/galettedoc"
 
-#: ../source_code.rst:21
-msgid "Auto plugin"
-msgstr "Dodatak Auto"
-
-#: ../source_code.rst:21
-msgid "https://github.com/galette/plugin-auto"
-msgstr "https://github.com/galette/plugin-auto"
-
-#: ../source_code.rst:22
-msgid "Events plugin"
-msgstr "Dodatak Events"
-
-#: ../source_code.rst:22
-msgid "https://github.com/galette/plugin-events"
-msgstr "https://github.com/galette/plugin-events"
-
-#: ../source_code.rst:23
-msgid "Fullcard plugin"
-msgstr "Dodatak Fullcard"
-
-#: ../source_code.rst:23
-msgid "https://github.com/galette-plugins/plugin-fullcard"
-msgstr "https://github.com/galette-plugins/plugin-fullcard"
-
-#: ../source_code.rst:24
-msgid "PayPal plugin"
-msgstr "Dodatak PayPal"
-
-#: ../source_code.rst:24
-msgid "https://github.com/galette/plugin-paypal"
-msgstr "https://github.com/galette/plugin-paypal"
-
-#: ../source_code.rst:25
-msgid "Objects lend plugin"
-msgstr "Dodatak ObjectsLend"
-
-#: ../source_code.rst:25
-msgid "https://github.com/galette/plugin-objectslend"
-msgstr "https://github.com/galette/plugin-objectslend"
-
-#: ../source_code.rst:26
-msgid "Activities plugin"
-msgstr "Dodatak Activities"
-
-#: ../source_code.rst:26
-msgid "https://github.com/galette/plugin-activities"
-msgstr "https://github.com/galette/plugin-activities"
-
-#: ../source_code.rst:32
+#: ../source_code.rst:27
 msgid "Third-party libraries"
 msgstr "Biblioteke trećih strana"
 
-#: ../source_code.rst:34
-msgid "Galette's third-party dependencies are not included in the repository. Instead, PHP dependencies are handled with `Composer dependency manager <https://getcomposer.org>`_ and JavaScript ones with `Node Package Manager (npm) <https://npmjs.com>`_ and `gulp <https://gulpjs.com/>`_."
+#: ../source_code.rst:29
+msgid ""
+"Galette's third-party dependencies are not included in the repository. "
+"Instead, PHP dependencies are handled with `Composer dependency manager "
+"<https://getcomposer.org>`_ and JavaScript ones with `Node Package Manager "
+"(npm) <https://npmjs.com>`_ and `gulp <https://gulpjs.com/>`_."
 msgstr ""
 "Galetteove ovisnosti trećih strana nisu uključene u repozitorij. PHP "
 "ovisnostima upravlja `Composer <https://getcomposer.org>`_, a JavaScript "
 "ovisnostima `Node Package Manager (npm) <https://npmjs.com>`_ i `gulp "
 "<https://gulpjs.com/>`_."
 
-#: ../source_code.rst:37
-msgid "In order to install all third party dependencies, just go to the Galette source directory and run:"
+#: ../source_code.rst:32
+msgid ""
+"In order to install all third party dependencies, just go to the Galette "
+"source directory and run:"
 msgstr ""
 "Za instalaciju svih ovisnosti trećih strana otvorite mapu izvornog koda "
 "Galettea i pokrenite:"
+
+#~ msgid "Auto plugin"
+#~ msgstr "Dodatak Auto"
+
+#~ msgid "https://github.com/galette/plugin-auto"
+#~ msgstr "https://github.com/galette/plugin-auto"
+
+#~ msgid "Events plugin"
+#~ msgstr "Dodatak Events"
+
+#~ msgid "https://github.com/galette/plugin-events"
+#~ msgstr "https://github.com/galette/plugin-events"
+
+#~ msgid "Fullcard plugin"
+#~ msgstr "Dodatak Fullcard"
+
+#~ msgid "https://github.com/galette-plugins/plugin-fullcard"
+#~ msgstr "https://github.com/galette-plugins/plugin-fullcard"
+
+#~ msgid "PayPal plugin"
+#~ msgstr "Dodatak PayPal"
+
+#~ msgid "https://github.com/galette/plugin-paypal"
+#~ msgstr "https://github.com/galette/plugin-paypal"
+
+#~ msgid "Objects lend plugin"
+#~ msgstr "Dodatak ObjectsLend"
+
+#~ msgid "https://github.com/galette/plugin-objectslend"
+#~ msgstr "https://github.com/galette/plugin-objectslend"
+
+#~ msgid "Activities plugin"
+#~ msgstr "Dodatak Activities"
+
+#~ msgid "https://github.com/galette/plugin-activities"
+#~ msgstr "https://github.com/galette/plugin-activities"

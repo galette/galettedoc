@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:52+0200\n"
+"POT-Creation-Date: 2026-10-18 12:06+0200\n"
 "PO-Revision-Date: 2026-09-02 12:12+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
@@ -61,56 +61,48 @@ msgstr ""
 "vous souhaitez nous rejoindre."
 
 #: ../plugins/index.rst:25
-msgid "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
-msgstr "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
-
-#: ../plugins/index.rst:26
-msgid "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
-msgstr "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
-
-#: ../plugins/index.rst:27
 msgid "`Maps <https://galette-plugins.github.io/plugin-maps/>`_"
 msgstr "`Maps <https://galette-plugins.github.io/plugin-maps/>`_"
 
-#: ../plugins/index.rst:28
+#: ../plugins/index.rst:26
 msgid "`Auto <https://galette-plugins.github.io/plugin-auto/>`_"
 msgstr "`Auto <https://galette-plugins.github.io/plugin-auto/>`_"
 
-#: ../plugins/index.rst:29
+#: ../plugins/index.rst:27
 msgid "`Events <https://galette-plugins.github.io/plugin-events/>`_"
 msgstr "`Events <https://galette-plugins.github.io/plugin-events/>`_"
 
-#: ../plugins/index.rst:30
+#: ../plugins/index.rst:28
 msgid "`ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_"
 msgstr "`ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_"
 
-#: ../plugins/index.rst:31
+#: ../plugins/index.rst:29
 msgid "`Activities <https://galette-plugins.github.io/plugin-activities/>`_"
 msgstr "`Activities <https://galette-plugins.github.io/plugin-activities/>`_"
 
-#: ../plugins/index.rst:32
+#: ../plugins/index.rst:30
 msgid "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_"
 msgstr "`oAuth2 <https://galette-plugins.github.io/plugin-oauth2/>`_"
 
-#: ../plugins/index.rst:33
+#: ../plugins/index.rst:31
 msgid "`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_"
 msgstr "`Stripe <https://galette-plugins.github.io/plugin-stripe/>`_"
 
-#: ../plugins/index.rst:34
+#: ../plugins/index.rst:32
 msgid "`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_"
 msgstr "`HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_"
 
-#: ../plugins/index.rst:35
+#: ../plugins/index.rst:33
 msgid ""
 "`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_"
 msgstr ""
 "`LegalNotices <https://galette-plugins.github.io/plugin-legalnotices/>`_"
 
-#: ../plugins/index.rst:46
+#: ../plugins/index.rst:44
 msgid "Plugins management interface"
 msgstr "Interface de gestion des plugins"
 
-#: ../plugins/index.rst:48
+#: ../plugins/index.rst:46
 msgid ""
 "A plugins management interface is provided, you will find it from the "
 "dashboard or in the configuration menu. After you have downloaded plugin(s) "
@@ -120,11 +112,11 @@ msgstr ""
 "tableau de bord ou le menu configuration. Après avoir téléchargé le(s) "
 "plugin(s) dans le dossier ``plugin`` de Galette, une liste sera affichée :"
 
-#: ../plugins/index.rst:50
+#: ../plugins/index.rst:48
 msgid "Plugins management"
 msgstr "Gestion des plugins"
 
-#: ../plugins/index.rst:55
+#: ../plugins/index.rst:53
 msgid ""
 "If web server has read access to your plugins directory, then you can enable "
 "or disable any plugin from the related icon."
@@ -132,7 +124,7 @@ msgstr ""
 "Si le serveur web possède le droit en écriture dans le dossier du plugin, "
 "vous pourrez activer ou désactiver chaque plugin depuis l'icône en question."
 
-#: ../plugins/index.rst:57
+#: ../plugins/index.rst:55
 msgid ""
 "If plugin requires a database to work, you can play installation and update "
 "scripts from the interface."
@@ -140,7 +132,7 @@ msgstr ""
 "Si un plugin requiert une base de données, vous pourrez lancer les scripts "
 "d'installation et de mise à jour depuis l'interface."
 
-#: ../plugins/index.rst:59
+#: ../plugins/index.rst:57
 msgid ""
 "Database ACLs will then be checked. Unlike Galette, no information will be "
 "asked to you, since all is already available from your current instance."
@@ -149,7 +141,7 @@ msgstr ""
 "Galette, aucune information ne vous sera demandée, puisqu'elles sont déjà "
 "présentes depuis l'instance courante."
 
-#: ../plugins/index.rst:63
+#: ../plugins/index.rst:61
 msgid ""
 "Each plugin now has its own database version, and is updated on its own. The "
 "page lists the active plugins first, then the inactive ones, with the reason "
@@ -159,14 +151,14 @@ msgstr ""
 "jour indépendamment. La page liste d'abord les plugins actifs, puis les "
 "inactifs, avec la raison de leur inactivité."
 
-#: ../plugins/index.rst:65
+#: ../plugins/index.rst:63
 msgid ""
 "An icon next to the name of an inactive plugin tells why it is not active:"
 msgstr ""
 "Une icône à côté du nom d'un plugin inactif indique pourquoi il n'est pas "
 "actif :"
 
-#: ../plugins/index.rst:67
+#: ../plugins/index.rst:65
 msgid ""
 "**Not installed**: the plugin needs database tables that have not been "
 "created yet. Click on the database icon of the **Actions** column to install "
@@ -176,7 +168,7 @@ msgstr ""
 "pas encore été créées. Cliquez sur l'icône de base de données de la colonne "
 "**Actions** pour les installer,"
 
-#: ../plugins/index.rst:68
+#: ../plugins/index.rst:66
 msgid ""
 "**Need update**: the plugin files are more recent than its database. Click "
 "on the database icon to run the update,"
@@ -185,7 +177,7 @@ msgstr ""
 "base de données. Cliquez sur l'icône de base de données pour lancer la mise "
 "à jour,"
 
-#: ../plugins/index.rst:69
+#: ../plugins/index.rst:67
 msgid ""
 "**Explicitly disabled**: the plugin has been disabled from this page, or "
 "from the :doc:`command line </command-line>`. Click on the activation icon "
@@ -195,7 +187,7 @@ msgstr ""
 "ou depuis la :doc:`ligne de commande </command-line>`. Cliquez sur l'icône "
 "d'activation pour le réactiver,"
 
-#: ../plugins/index.rst:70
+#: ../plugins/index.rst:68
 msgid ""
 "**Incompatible with current version**: the plugin is made for another "
 "version of Galette; look for a more recent version of the plugin,"
@@ -203,7 +195,7 @@ msgstr ""
 "**Incompatible avec la version courante** : le plugin est prévu pour une "
 "autre version de Galette ; cherchez une version plus récente du plugin,"
 
-#: ../plugins/index.rst:71
+#: ../plugins/index.rst:69
 msgid ""
 "**A required file is missing**: the plugin files are incomplete; download "
 "the plugin again,"
@@ -211,7 +203,7 @@ msgstr ""
 "**Un fichier requis est manquant** : les fichiers du plugin sont "
 "incomplets ; téléchargez à nouveau le plugin,"
 
-#: ../plugins/index.rst:72
+#: ../plugins/index.rst:70
 msgid ""
 "**Database version missing**: Galette cannot tell which version of the "
 "plugin database is installed."
@@ -219,7 +211,7 @@ msgstr ""
 "**Version de base de données manquante** : Galette ne sait pas quelle "
 "version de la base de données du plugin est installée."
 
-#: ../plugins/index.rst:74
+#: ../plugins/index.rst:72
 msgid ""
 "The name of an active plugin opens a window with information about it: "
 "version, author, routes and access rights."
@@ -227,13 +219,19 @@ msgstr ""
 "Le nom d'un plugin actif ouvre une fenêtre d'informations : version, auteur, "
 "routes et droits d'accès."
 
-#: ../plugins/index.rst:78
+#: ../plugins/index.rst:76
 msgid ""
 "Back up your database before installing or updating a plugin database, as "
 "you would before updating Galette itself."
 msgstr ""
 "Sauvegardez votre base de données avant d'installer ou de mettre à jour la "
 "base de données d'un plugin, comme avant une mise à jour de Galette lui-même."
+
+#~ msgid "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
+#~ msgstr "`Paypal <https://galette-plugins.github.io/plugin-paypal/>`_"
+
+#~ msgid "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
+#~ msgstr "`Fullcard <https://galette-plugins.github.io/plugin-fullcard/>`_"
 
 #~ msgid ""
 #~ "You can disable a plugin creating a ``_disabled`` file in its directory."

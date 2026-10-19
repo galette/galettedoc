@@ -6,13 +6,15 @@
 # Johan Cwiklinski <trasher@x-tnd.be>, 2025, 2026.
 # தமிழ்நேரம் <tamilneram247@gmail.com>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.1\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-03 09:34+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"POT-Creation-Date: 2026-10-18 12:06+0200\n"
+"PO-Revision-Date: 2026-10-18 10:19+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/galette/doc-"
 "source_code/ta/>\n"
 "Language: ta\n"
@@ -20,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../source_code.rst:3
 msgid "Galette source code"
@@ -67,66 +69,28 @@ msgid "https://github.com/galette/galette"
 msgstr "https://github.com/galette/galette"
 
 #: ../source_code.rst:20
+#, fuzzy
+#| msgid "Galette core"
+msgid "Galette docker"
+msgstr "கேலட் கோர்"
+
+#: ../source_code.rst:20
+msgid "https://github.com/galette/docker"
+msgstr "https://github.com/galette/docker"
+
+#: ../source_code.rst:21
 msgid "Documentation"
 msgstr "ஆவணமாக்கல்"
 
-#: ../source_code.rst:20
+#: ../source_code.rst:21
 msgid "https://github.com/galette/galettedoc"
 msgstr "https://github.com/galette/galettedoc"
 
-#: ../source_code.rst:21
-msgid "Auto plugin"
-msgstr "ஆட்டோ சொருகி"
-
-#: ../source_code.rst:21
-msgid "https://github.com/galette/plugin-auto"
-msgstr "https://github.com/galette/plugin-auto"
-
-#: ../source_code.rst:22
-msgid "Events plugin"
-msgstr "நிகழ்வுகள் சொருகி"
-
-#: ../source_code.rst:22
-msgid "https://github.com/galette/plugin-events"
-msgstr "https://github.com/galette/plugin-events"
-
-#: ../source_code.rst:23
-msgid "Fullcard plugin"
-msgstr "ஃபுல் அட்டை சொருகி"
-
-#: ../source_code.rst:23
-msgid "https://github.com/galette-plugins/plugin-fullcard"
-msgstr "https://github.com/galette-plugins/plugin-fullcard"
-
-#: ../source_code.rst:24
-msgid "PayPal plugin"
-msgstr "பேபால் சொருகி"
-
-#: ../source_code.rst:24
-msgid "https://github.com/galette/plugin-paypal"
-msgstr "https://github.com/galette/plugin-paypal"
-
-#: ../source_code.rst:25
-msgid "Objects lend plugin"
-msgstr "பொருள்கள் சொருகி கடன் வழங்குகின்றன"
-
-#: ../source_code.rst:25
-msgid "https://github.com/galette/plugin-objectslend"
-msgstr "https://github.com/galette/plugin-objectslend"
-
-#: ../source_code.rst:26
-msgid "Activities plugin"
-msgstr "செயல்பாடுகள் செருகுநிரல்"
-
-#: ../source_code.rst:26
-msgid "https://github.com/galette/plugin-activities"
-msgstr "https://github.com/galette/plugin-activities"
-
-#: ../source_code.rst:32
+#: ../source_code.rst:27
 msgid "Third-party libraries"
 msgstr "மூன்றாம் தரப்பு நூலகங்கள்"
 
-#: ../source_code.rst:34
+#: ../source_code.rst:29
 msgid ""
 "Galette's third-party dependencies are not included in the repository. "
 "Instead, PHP dependencies are handled with `Composer dependency manager "
@@ -138,12 +102,48 @@ msgstr ""
 "மற்றும் `முனை தொகுப்பு மேலாளர் (NPM) <https://npmjs.com>`_ மற்றும் `கல்பி <https: //"
 "gulpjs.com/>`_."
 
-#: ../source_code.rst:37
+#: ../source_code.rst:32
 msgid ""
 "In order to install all third party dependencies, just go to the Galette "
 "source directory and run:"
 msgstr ""
 "அனைத்து மூன்றாம் தரப்பு சார்புகளையும் நிறுவ, கேலட் மூல கோப்பகத்திற்குச் சென்று இயக்கவும்:"
+
+#~ msgid "Auto plugin"
+#~ msgstr "ஆட்டோ சொருகி"
+
+#~ msgid "https://github.com/galette/plugin-auto"
+#~ msgstr "https://github.com/galette/plugin-auto"
+
+#~ msgid "Events plugin"
+#~ msgstr "நிகழ்வுகள் சொருகி"
+
+#~ msgid "https://github.com/galette/plugin-events"
+#~ msgstr "https://github.com/galette/plugin-events"
+
+#~ msgid "Fullcard plugin"
+#~ msgstr "ஃபுல் அட்டை சொருகி"
+
+#~ msgid "https://github.com/galette-plugins/plugin-fullcard"
+#~ msgstr "https://github.com/galette-plugins/plugin-fullcard"
+
+#~ msgid "PayPal plugin"
+#~ msgstr "பேபால் சொருகி"
+
+#~ msgid "https://github.com/galette/plugin-paypal"
+#~ msgstr "https://github.com/galette/plugin-paypal"
+
+#~ msgid "Objects lend plugin"
+#~ msgstr "பொருள்கள் சொருகி கடன் வழங்குகின்றன"
+
+#~ msgid "https://github.com/galette/plugin-objectslend"
+#~ msgstr "https://github.com/galette/plugin-objectslend"
+
+#~ msgid "Activities plugin"
+#~ msgstr "செயல்பாடுகள் செருகுநிரல்"
+
+#~ msgid "https://github.com/galette/plugin-activities"
+#~ msgstr "https://github.com/galette/plugin-activities"
 
 #~ msgid ""
 #~ "All Galette sources are stored in their own `Git <https://"

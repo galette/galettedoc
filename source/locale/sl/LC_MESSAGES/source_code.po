@@ -4,14 +4,15 @@
 # Jože Felicijan <joze@felicijan.com>, 2026.
 # Johan Cwiklinski <trasher@x-tnd.be>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-09-30 07:30+0200\n"
-"PO-Revision-Date: 2026-09-22 17:09+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"POT-Creation-Date: 2026-10-18 12:06+0200\n"
+"PO-Revision-Date: 2026-10-18 10:19+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "source_code/sl/>\n"
 "Language: sl\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../source_code.rst:3
 msgid "Galette source code"
@@ -68,66 +69,28 @@ msgid "https://github.com/galette/galette"
 msgstr "https://github.com/galette/galette"
 
 #: ../source_code.rst:20
+#, fuzzy
+#| msgid "Galette core"
+msgid "Galette docker"
+msgstr "Galetteovo jedro"
+
+#: ../source_code.rst:20
+msgid "https://github.com/galette/docker"
+msgstr "https://github.com/galette/docker"
+
+#: ../source_code.rst:21
 msgid "Documentation"
 msgstr "Dokumentacija"
 
-#: ../source_code.rst:20
+#: ../source_code.rst:21
 msgid "https://github.com/galette/galettedoc"
 msgstr "https://github.com/galette/galettedoc"
 
-#: ../source_code.rst:21
-msgid "Auto plugin"
-msgstr "Samodejni vtičnik"
-
-#: ../source_code.rst:21
-msgid "https://github.com/galette/plugin-auto"
-msgstr "https://github.com/galette/plugin-auto"
-
-#: ../source_code.rst:22
-msgid "Events plugin"
-msgstr "Vtičnik za dogodke"
-
-#: ../source_code.rst:22
-msgid "https://github.com/galette/plugin-events"
-msgstr "https://github.com/galette/plugin-events"
-
-#: ../source_code.rst:23
-msgid "Fullcard plugin"
-msgstr "Vtičnik Fullcard"
-
-#: ../source_code.rst:23
-msgid "https://github.com/galette-plugins/plugin-fullcard"
-msgstr "https://github.com/galette-plugins/plugin-fullcard"
-
-#: ../source_code.rst:24
-msgid "PayPal plugin"
-msgstr "Vtičnik PayPal"
-
-#: ../source_code.rst:24
-msgid "https://github.com/galette/plugin-paypal"
-msgstr "https://github.com/galette/plugin-paypal"
-
-#: ../source_code.rst:25
-msgid "Objects lend plugin"
-msgstr "Vtičnik Objects Lend"
-
-#: ../source_code.rst:25
-msgid "https://github.com/galette/plugin-objectslend"
-msgstr "https://github.com/galette/plugin-objectslend"
-
-#: ../source_code.rst:26
-msgid "Activities plugin"
-msgstr "Aktivni vtičniki"
-
-#: ../source_code.rst:26
-msgid "https://github.com/galette/plugin-activities"
-msgstr "https://github.com/galette/plugin-activities"
-
-#: ../source_code.rst:32
+#: ../source_code.rst:27
 msgid "Third-party libraries"
 msgstr "Knjižnice tretjih oseb"
 
-#: ../source_code.rst:34
+#: ../source_code.rst:29
 msgid ""
 "Galette's third-party dependencies are not included in the repository. "
 "Instead, PHP dependencies are handled with `Composer dependency manager "
@@ -139,10 +102,46 @@ msgstr ""
 "getcomposer.org>`_, odvisnosti JavaScript pa z `Node Package Manager (npm) "
 "<https://npmjs.com>`_ in `gulp <https://gulpjs.com/>`_."
 
-#: ../source_code.rst:37
+#: ../source_code.rst:32
 msgid ""
 "In order to install all third party dependencies, just go to the Galette "
 "source directory and run:"
 msgstr ""
 "Če želite namestiti vse odvisnosti tretjih oseb, pojdite v izvorni imenik "
 "Galette in zaženite:"
+
+#~ msgid "Auto plugin"
+#~ msgstr "Samodejni vtičnik"
+
+#~ msgid "https://github.com/galette/plugin-auto"
+#~ msgstr "https://github.com/galette/plugin-auto"
+
+#~ msgid "Events plugin"
+#~ msgstr "Vtičnik za dogodke"
+
+#~ msgid "https://github.com/galette/plugin-events"
+#~ msgstr "https://github.com/galette/plugin-events"
+
+#~ msgid "Fullcard plugin"
+#~ msgstr "Vtičnik Fullcard"
+
+#~ msgid "https://github.com/galette-plugins/plugin-fullcard"
+#~ msgstr "https://github.com/galette-plugins/plugin-fullcard"
+
+#~ msgid "PayPal plugin"
+#~ msgstr "Vtičnik PayPal"
+
+#~ msgid "https://github.com/galette/plugin-paypal"
+#~ msgstr "https://github.com/galette/plugin-paypal"
+
+#~ msgid "Objects lend plugin"
+#~ msgstr "Vtičnik Objects Lend"
+
+#~ msgid "https://github.com/galette/plugin-objectslend"
+#~ msgstr "https://github.com/galette/plugin-objectslend"
+
+#~ msgid "Activities plugin"
+#~ msgstr "Aktivni vtičniki"
+
+#~ msgid "https://github.com/galette/plugin-activities"
+#~ msgstr "https://github.com/galette/plugin-activities"
