@@ -23,7 +23,9 @@ Updating files
 
 First, logout from your instance, and make sure to use a maintenance mode to prevent other users to reach the instance.
 
-Then, download latest Galette version and replace the files. For more information on files installation, refer to the :ref:`prepare installation <preparation>` section.
+Then, download latest Galette version and uncompress it in a new :ref:`installation directory <installationdir>`. For more information on files installation, refer to the :ref:`prepare installation <preparation>` section.
+
+Put the new installation directory next to the current one - for example ``/var/www/galette-1.3.1`` beside ``/var/www/galette-1.3.0``. Do not copy new files over the old ones: files removed from Galette would stay on your server. Do not forget to set :ref:`file permissions <droitsfichiers>` on the new directory.
 
 Some directories keep data and/or configurations and should be copied back to the new instance:
 
@@ -33,6 +35,8 @@ Some directories keep data and/or configurations and should be copied back to th
 * ``data/files`` contains files from dynamic fields of type file,
 * ``data/attachments`` contains mailing attached documents.
 * ``plugins`` your current plugins. It is a good idea to check if new plugins versions are available ;)
+
+Finally, change your web server configuration so it points to the ``galette/webroot`` directory of the new installation directory (see :ref:`web server directory exposition <installationsubdir>`), and reload it. Keep the previous installation directory until the update is over: along with your database backup, it is your way back.
 
 Once files are updated, go to your Galette instance. It will ask you if needed to proceed to the update of your database.
 
