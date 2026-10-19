@@ -8,7 +8,7 @@ Galette now proposes a command line interface to manage some tasks. This is acce
 
 ::
 
-    $ cd /var/www/html/galette
+    $ cd /var/www/galette
     $ php bin/console
     Galette v1.3.0
 

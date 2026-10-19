@@ -28,9 +28,10 @@ If you are using Linux, run the following commands (adapt the version if needed)
 
 ::
 
-   $ cd /var/www/html/
+   $ cd /var/www/
    $ wget https://galette.eu/download/galette-1.3.1.tar.bz2
    $ tar xjvf galette-1.3.1.tar.bz2
+   $ mv galette-1.3.1 galette
 
 The current stable version of Galette is |stable_version|. A `nightly archive <https://galette.eu/download/galette-dev.tar.bz2>`_ is build each night from the development branch, and you can also :doc:`retrieve Galette development version  <../source_code>`.
 
