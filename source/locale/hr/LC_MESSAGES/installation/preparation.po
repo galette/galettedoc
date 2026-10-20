@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 18:57+0200\n"
+"POT-Creation-Date: 2026-10-20 10:24+0200\n"
 "PO-Revision-Date: 2026-10-13 08:40+0000\n"
 "Last-Translator: Marko Puljic "
 "<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
 "install-prepare/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.11.dev0\n"
@@ -26,318 +26,510 @@ msgid "Preparation"
 msgstr "Priprema"
 
 #: ../installation/preparation.rst:10
-msgid "You have to follow some preparation steps for Galette installation. The way to go differs on what you want to achieve."
+msgid ""
+"You have to follow some preparation steps for Galette installation. The way "
+"to go differs on what you want to achieve."
 msgstr ""
 "Prije instalacije Galettea trebate izvršiti pripremne korake. Postupak ovisi "
 "o tome što želite postići."
 
 #: ../installation/preparation.rst:15
+msgid "Archive contents"
+msgstr ""
+
+#: ../installation/preparation.rst:17
+msgid ""
+"The archive contains a single ``galette-1.3.1`` directory, laid out as "
+"follows:"
+msgstr ""
+
+#: ../installation/preparation.rst:35
+msgid "What you have to copy on your server:"
+msgstr ""
+
+#: ../installation/preparation.rst:37
+msgid ""
+"the |folder| ``galette`` directory, **mandatory**: it holds the whole "
+"application;"
+msgstr ""
+
+#: ../installation/preparation.rst:38
+msgid ""
+"the |folder| ``bin`` directory, **recommended**: it provides "
+"the :doc:`command line interface <../command-line>`. It looks for the "
+"application in a ``galette`` directory next to it, so both directories must "
+"stay side by side, as they are in the archive;"
+msgstr ""
+
+#: ../installation/preparation.rst:39
+msgid ""
+"the remaining files at the root of the archive are informational only; "
+"Galette does not need them."
+msgstr ""
+
+#: ../installation/preparation.rst:44
+msgid "Installation directory"
+msgstr ""
+
+#: ../installation/preparation.rst:46
+msgid ""
+"The :ref:`installation example <installation>` extracts the archive in ``/"
+"var/www/galette-1.3.1``. This directory, which holds ``bin`` and "
+"``galette``, is called the **installation directory** in this documentation. "
+"Unless stated otherwise, paths such as ``config`` or ``data`` are relative "
+"to its |folder| ``galette`` subdirectory: ``data`` stands for ``/var/www/"
+"galette-1.3.1/galette/data``."
+msgstr ""
+
+#: ../installation/preparation.rst:48
+msgid ""
+"Keeping the version in the directory name is not mandatory, but it makes "
+"updates easier: each release gets its own directory, next to the previous "
+"one. Updating consists in copying your configuration and data into the new "
+"directory, then pointing the web server to it - the previous version stays "
+"untouched until you remove it. See :doc:`update <update>`."
+msgstr ""
+
+#: ../installation/preparation.rst:50
+msgid ""
+"The installation directory is created **outside** of the web server document "
+"root (often ``/var/www/html``), on purpose: only the |folder| ``galette/"
+"webroot`` directory should be reachable from the web."
+msgstr ""
+
+#: ../installation/preparation.rst:52
+msgid ""
+"If your host lets you choose the directory a domain or subdomain points to, "
+"point it to ``galette/webroot``, as explained in :ref:`web server directory "
+"exposition <installationsubdir>`."
+msgstr ""
+
+#: ../installation/preparation.rst:54
+msgid ""
+"Otherwise (some shared hostings), copy ``galette`` in the published "
+"directory. Galette is then available at an URL like ``https://mydomain.tld/"
+"galette/``, which redirects to ``https://mydomain.tld/galette/webroot/``. "
+"The ``.htaccess`` files shipped in ``data`` directories prevent their "
+"contents from being downloaded, but only with Apache: this is less secure "
+"than exposing ``webroot`` alone."
+msgstr ""
+
+#: ../installation/preparation.rst:59
 msgid "File permissions"
 msgstr "Ovlasti za datoteke"
 
-#: ../installation/preparation.rst:19
-msgid "A commonly used hack is to give all rights to everyone recursively on the directory (``chmod 777``). This is a very very bad idea from a security point of view. Please do not use that hack, you've been warned ;)"
+#: ../installation/preparation.rst:63
+msgid ""
+"A commonly used hack is to give all rights to everyone recursively on the "
+"directory (``chmod 777``). This is a very very bad idea from a security "
+"point of view. Please do not use that hack, you've been warned ;)"
 msgstr ""
 "Čest je prečac rekurzivno dodijeliti sva prava svima nad mapom (``chmod "
 "777``). To je vrlo loša zamisao sa sigurnosnog stajališta. Nemojte je "
 "koristiti; upozoreni ste ;)"
 
-#: ../installation/preparation.rst:21
-msgid "Some Galette directories need specific rights. The application will need to write in some of them, you have to ensure it will be possible. Here are directories that need a write access:"
+#: ../installation/preparation.rst:65
+msgid ""
+"Some Galette directories need specific rights. The application will need to "
+"write in some of them, you have to ensure it will be possible. Here are "
+"directories that need a write access:"
 msgstr ""
 "Neke Galetteove mape zahtijevaju posebne ovlasti. Aplikacija u neke od njih "
 "mora zapisivati pa to trebate omogućiti. Mape koje zahtijevaju zapisivanje:"
 
-#: ../installation/preparation.rst:23
+#: ../installation/preparation.rst:67
 msgid "|folder| `config` [#configdirperms]_,"
 msgstr "|folder| `config` [#configdirperms]_,"
 
-#: ../installation/preparation.rst:24
+#: ../installation/preparation.rst:68
 msgid "|folder| `data/attachments`,"
 msgstr "|folder| `data/attachments`,"
 
-#: ../installation/preparation.rst:25
+#: ../installation/preparation.rst:69
 msgid "|folder| `data/cache`,"
 msgstr "|folder| `data/cache`,"
 
-#: ../installation/preparation.rst:26
+#: ../installation/preparation.rst:70
 msgid "|folder| `data/exports`,"
 msgstr "|folder| `data/exports`,"
 
-#: ../installation/preparation.rst:27
+#: ../installation/preparation.rst:71
 msgid "|folder| `data/files`,"
 msgstr "|folder| `data/files`,"
 
-#: ../installation/preparation.rst:28
+#: ../installation/preparation.rst:72
 msgid "|folder| `data/imports`,"
 msgstr "|folder| `data/imports`,"
 
-#: ../installation/preparation.rst:29
+#: ../installation/preparation.rst:73
 msgid "|folder| `data/logs`,"
 msgstr "|folder| `data/logs`,"
 
-#: ../installation/preparation.rst:30
+#: ../installation/preparation.rst:74
 msgid "|folder| `data/photos`,"
 msgstr "|folder| `data/photos`,"
 
-#: ../installation/preparation.rst:31
+#: ../installation/preparation.rst:75
 msgid "|folder| `data/tempimages`,"
 msgstr "|folder| `data/tempimages`,"
 
-#: ../installation/preparation.rst:32
+#: ../installation/preparation.rst:76
 msgid "|folder| `data/templates_c`"
 msgstr "|folder| `data/templates_c`"
 
-#: ../installation/preparation.rst:34
-msgid "write access on ``config`` directory is only needed for Galette installation, we advice you to remove the write access once Galette has been installed :)"
+#: ../installation/preparation.rst:78
+msgid ""
+"write access on ``config`` directory is only needed for Galette "
+"installation, we advice you to remove the write access once Galette has been "
+"installed :)"
 msgstr ""
 "Zapisivanje u mapu ``config`` potrebno je samo tijekom instalacije Galettea. "
 "Preporučujemo uklanjanje tih ovlasti nakon instalacije :)"
 
-#: ../installation/preparation.rst:37
+#: ../installation/preparation.rst:81
 msgid "Create database"
 msgstr "Stvaranje baze podataka"
 
-#: ../installation/preparation.rst:41
+#: ../installation/preparation.rst:85
 msgid "**Never use database root user!**"
 msgstr "**Nikad ne koristite korisnika root za bazu podataka!**"
 
-#: ../installation/preparation.rst:43
-msgid "For security reasons, it is strongly advised to rely on a specific user for Galette database, and give him only requested access on the single Galette database."
+#: ../installation/preparation.rst:87
+msgid ""
+"For security reasons, it is strongly advised to rely on a specific user for "
+"Galette database, and give him only requested access on the single Galette "
+"database."
 msgstr ""
 "Zbog sigurnosti preporučuje se poseban korisnik za bazu Galettea, s "
 "isključivo potrebnim ovlastima nad tom jednom bazom."
 
-#: ../installation/preparation.rst:45
-msgid "For the example, we will use a database named `mygalette` with a user `mygaletteuser` with `mypass` as password."
+#: ../installation/preparation.rst:89
+msgid ""
+"For the example, we will use a database named `mygalette` with a user "
+"`mygaletteuser` with `mypass` as password."
 msgstr ""
 "U primjeru koristimo bazu `mygalette`, korisnika `mygaletteuser` i lozinku "
 "`mypass`."
 
-#: ../installation/preparation.rst:47
+#: ../installation/preparation.rst:91
 msgid "MariaDB"
 msgstr "MariaDB"
 
-#: ../installation/preparation.rst:56
+#: ../installation/preparation.rst:100
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#: ../installation/preparation.rst:64
-msgid "Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ documentations, or use a graphical tool:"
+#: ../installation/preparation.rst:108
+msgid ""
+"Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/"
+"library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ "
+"documentations, or use a graphical tool:"
 msgstr ""
 "Naredbe se mogu razlikovati. Pogledajte dokumentaciju za `MariaDB <https://"
 "mariadb.com/kb/en/library/documentation/>`_ ili `PostgreSQL <https://"
 "docs.postgresqlfr.org>`_, ili koristite grafički alat:"
 
-#: ../installation/preparation.rst:66
+#: ../installation/preparation.rst:110
 msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;"
 msgstr "`phpMyAdmin <https://www.phpmyadmin.net>`_ za MariaDB;"
 
-#: ../installation/preparation.rst:67
-msgid "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
+#: ../installation/preparation.rst:111
+msgid ""
+"`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://"
+"www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
 msgstr ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ili `PgAdmin <https://"
 "www.pgadmin.org/download/?lang=fr_FR>`_ za PostgreSQL."
 
-#: ../installation/preparation.rst:72
+#: ../installation/preparation.rst:116
 msgid "Web server directory exposition"
 msgstr "Dostupnost mapa putem mrežnog poslužitelja"
 
-#: ../installation/preparation.rst:76
-msgid "Galette installation may consists in copying a complete directory to a location the web server can read. This method may work, but this exposes from the web files and directories that should not be available this way."
+#: ../installation/preparation.rst:120
+msgid ""
+"Galette installation may consists in copying a complete directory to a "
+"location the web server can read. This method may work, but this exposes "
+"from the web files and directories that should not be available this way."
 msgstr ""
 "Galette možete instalirati kopiranjem cijele mape na mjesto koje mrežni "
 "poslužitelj može čitati. To može raditi, ali time putem interneta izlažete i "
 "datoteke i mape koje ne bi smjele biti dostupne."
 
-#: ../installation/preparation.rst:78
-msgid "It is possible to limit that by exposing only the ``webroot`` directory. All other directories are more safe: it is not possible to reach them from the web server!"
+#: ../installation/preparation.rst:122
+msgid ""
+"It is possible to limit that by exposing only the ``webroot`` directory. All "
+"other directories are more safe: it is not possible to reach them from the "
+"web server!"
 msgstr ""
 "To možete ograničiti tako da izložite samo mapu ``webroot``. Ostale su mape "
 "tada sigurnije jer im se ne može pristupiti putem mrežnog poslužitelja!"
 
-#: ../installation/preparation.rst:82
-msgid "Exposing only ``webroot`` directory is the recommended, and only secured way."
+#: ../installation/preparation.rst:124
+msgid ""
+"The examples below use ``/var/www/galette-1.3.1`` as :ref:`installation "
+"directory <installationdir>`."
+msgstr ""
+
+#: ../installation/preparation.rst:128
+msgid ""
+"Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr "Izlaganje samo mape ``webroot`` preporučen je i jedini siguran način."
 
-#: ../installation/preparation.rst:85
+#: ../installation/preparation.rst:131
 msgid "Using a subdomain"
 msgstr "Korištenje poddomene"
 
-#: ../installation/preparation.rst:87
-msgid "Here is a virtual host configuration example, including the hide of `index.php`:"
+#: ../installation/preparation.rst:133
+msgid ""
+"Here is a virtual host configuration example, including the hide of "
+"`index.php`:"
 msgstr ""
 "Primjer konfiguracije virtualnog poslužitelja, uključujući skrivanje "
 "`index.php`:"
 
-#: ../installation/preparation.rst:114
+#: ../installation/preparation.rst:160
 msgid "Nginx would be:"
 msgstr "Za Nginx:"
 
-#: ../installation/preparation.rst:155
+#: ../installation/preparation.rst:201
 msgid "Using an alias"
 msgstr "Korištenje aliasa"
 
-#: ../installation/preparation.rst:157
-msgid "An alternative secured configuration, if you do not have a specific subdomain for Galette is to use an ``alias`` in your existing virtual host:"
+#: ../installation/preparation.rst:203
+msgid ""
+"An alternative secured configuration, if you do not have a specific "
+"subdomain for Galette is to use an ``alias`` in your existing virtual host:"
 msgstr ""
 "Ako nemate zasebnu poddomenu za Galette, sigurna je alternativa koristiti "
 "``alias`` u postojećem virtualnom poslužitelju:"
 
-#: ../installation/preparation.rst:176
-msgid "Do not forget with that solution you have to setup correctly your ``RewriteBase`` directive."
+#: ../installation/preparation.rst:222
+msgid ""
+"Do not forget with that solution you have to setup correctly your "
+"``RewriteBase`` directive."
 msgstr "Uz to rješenje pravilno postavite direktivu ``RewriteBase``."
 
-#: ../installation/preparation.rst:181
+#: ../installation/preparation.rst:227
 msgid "Linux/Unix"
 msgstr "Linux/Unix"
 
-#: ../installation/preparation.rst:183
-msgid "Installing Galette on Linux implies you have an access to the terminal on the server and required ACLs on directories."
+#: ../installation/preparation.rst:229
+msgid ""
+"Installing Galette on Linux implies you have an access to the terminal on "
+"the server and required ACLs on directories."
 msgstr ""
 "Instalacija Galettea u Linuxu podrazumijeva pristup terminalu poslužitelja i "
 "potrebne ovlasti nad mapama."
 
-#: ../installation/preparation.rst:185
-msgid "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
+#: ../installation/preparation.rst:231
+msgid ""
+"As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr ""
 "Primjerice, u sustavu `Fedora <https://fedora.org>`_ pokrenite kao root:"
 
-#: ../installation/preparation.rst:192
-msgid "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with ``www-data:www-data``."
+#: ../installation/preparation.rst:238
+msgid ""
+"Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
+"``www-data:www-data``."
 msgstr ""
 "U sustavu `Debian <https://debian.org/>`_ zamijenite ``apache:apache`` s "
 "``www-data:www-data``."
 
-#: ../installation/preparation.rst:194
+#: ../installation/preparation.rst:240
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr "Na sustavima s uključenim SELinuxom dodajte:"
 
-#: ../installation/preparation.rst:202
-msgid "You will also have to authorize webserver to connect to the network, with a SELinux boolean:"
+#: ../installation/preparation.rst:248
+msgid ""
+"You will also have to authorize webserver to connect to the network, with a "
+"SELinux boolean:"
 msgstr ""
 "SELinuxovom logičkom postavkom trebate dopustiti i povezivanje mrežnog "
 "poslužitelja s mrežom:"
 
-#: ../installation/preparation.rst:211
+#: ../installation/preparation.rst:257
 msgid "FTP"
 msgstr "FTP"
 
-#: ../installation/preparation.rst:215
-msgid "Some archive or FTP software may corrupt files... It is strongly advised if you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress and `FileZilla <https://filezilla-project.org/>`_ for FTP transfers."
+#: ../installation/preparation.rst:261
+msgid ""
+"Some archive or FTP software may corrupt files... It is strongly advised if "
+"you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
+"and `FileZilla <https://filezilla-project.org/>`_ for FTP transfers."
 msgstr ""
 "Neki programi za arhive ili FTP mogu oštetiti datoteke. U sustavu Windows "
 "preporučujemo `7zip <https://www.7-zip.fr>`_ za raspakiravanje i `FileZilla "
 "<https://filezilla-project.org/>`_ za FTP prijenose."
 
-#: ../installation/preparation.rst:217
-msgid "Once source code has been retrieved locally, use :samp:`tar xjvf {galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under Windows."
+#: ../installation/preparation.rst:263
+msgid ""
+"Once source code has been retrieved locally, use :samp:`tar xjvf "
+"{galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under "
+"Windows."
 msgstr ""
 "Nakon lokalnog preuzimanja izvornog koda u Linuxu/Unixu/macOS-u upotrijebite "
 "naredbu :samp:`tar xjvf {galette.tar.bz2}`, a u sustavu Windows grafički "
 "alat."
 
-#: ../installation/preparation.rst:219
-msgid "Just copy the uncompressed directory obtained, and all its sub directories and files, with your FTP client."
+#: ../installation/preparation.rst:265
+#, fuzzy
+#| msgid ""
+#| "Just copy the uncompressed directory obtained, and all its sub "
+#| "directories and files, with your FTP client."
+msgid ""
+"Just copy the |folder| ``galette`` directory of the uncompressed directory "
+"obtained, and all its sub directories and files, with your FTP client."
 msgstr ""
 "FTP klijentom kopirajte dobivenu raspakiranu mapu i sve njezine podmape i "
 "datoteke."
 
-#: ../installation/preparation.rst:226
+#: ../installation/preparation.rst:267
+msgid ""
+"The |folder| ``bin`` directory is only useful if you have a shell access on "
+"your host; if so, copy it next to ``galette``. Other files are not needed, "
+"see :ref:`archive contents <archivecontents>`."
+msgstr ""
+
+#: ../installation/preparation.rst:273
+msgid ""
+"Where to copy it on your host is explained in the :ref:`installation "
+"directory <installationdir>` section."
+msgstr ""
+
+#: ../installation/preparation.rst:276
 msgid "Specific cases"
 msgstr "Posebni slučajevi"
 
-#: ../installation/preparation.rst:229
+#: ../installation/preparation.rst:279
 msgid "Ionos"
 msgstr "Ionos"
 
-#: ../installation/preparation.rst:231
-msgid "If you're hosted on Ionos; and want to use a specific subdomain for Galette, you must create your subdomain from their UI, and make it points to the ``webroot`` directory. You also have to edit the ``.htaccess`` file it contains, and uncomment the ``RewriteBase /`` directive."
+#: ../installation/preparation.rst:281
+msgid ""
+"If you're hosted on Ionos; and want to use a specific subdomain for Galette, "
+"you must create your subdomain from their UI, and make it points to the "
+"``webroot`` directory. You also have to edit the ``.htaccess`` file it "
+"contains, and uncomment the ``RewriteBase /`` directive."
 msgstr ""
 "Ako koristite Ionos i želite zasebnu poddomenu za Galette, stvorite je u "
 "njihovu sučelju i usmjerite na mapu ``webroot``. Uredite i datoteku "
 "``.htaccess`` u toj mapi te uklonite oznaku komentara s direktive "
 "``RewriteBase /``."
 
-#: ../installation/preparation.rst:234
+#: ../installation/preparation.rst:284
 msgid "OVH"
 msgstr "OVH"
 
-#: ../installation/preparation.rst:236
-msgid "This hosting company offers to `change PHP version you use from your customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/>`_."
+#: ../installation/preparation.rst:286
+msgid ""
+"This hosting company offers to `change PHP version you use from your "
+"customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
+"hebergement-web-mutu-2014/>`_."
 msgstr ""
 "Ovaj pružatelj smještaja omogućuje `promjenu verzije PHP-a putem korisničkog "
 "računa <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
 "hebergement-web-mutu-2014/>`_."
 
-#: ../installation/preparation.rst:238
-msgid "Additional information are available at: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
+#: ../installation/preparation.rst:288
+msgid ""
+"Additional information are available at: https://docs.ovh.com/fr/fr/web/"
+"hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 msgstr ""
 "Dodatne informacije: https://docs.ovh.com/fr/fr/web/hosting/configurer-le-"
 "php-sur-son-hebergement-web-mutu-2014/"
 
-#: ../installation/preparation.rst:242
-msgid "Many users have display images or attendance sheet issues on OVH hosts. The solution to this issue is to create a ``.ovhconfig`` file at your hosting root with the following contents:"
+#: ../installation/preparation.rst:292
+msgid ""
+"Many users have display images or attendance sheet issues on OVH hosts. The "
+"solution to this issue is to create a ``.ovhconfig`` file at your hosting "
+"root with the following contents:"
 msgstr ""
 "Mnogi korisnici na OVH-u imaju problema s prikazom slika ili evidencija "
 "prisutnosti. Rješenje je stvaranje datoteke ``.ovhconfig`` u korijenu "
 "smještaja sa sljedećim sadržajem:"
 
-#: ../installation/preparation.rst:249
+#: ../installation/preparation.rst:299
 msgid "Nginx"
 msgstr "Nginx"
 
-#: ../installation/preparation.rst:251
-msgid "`Nginx webserver <https://nginx.com>`_ configuration is different from Apache one (see `Nginx documentation for a more complete explanation <https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
+#: ../installation/preparation.rst:301
+msgid ""
+"`Nginx webserver <https://nginx.com>`_ configuration is different from "
+"Apache one (see `Nginx documentation for a more complete explanation "
+"<https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-"
+"htaccess/>`_)."
 msgstr ""
 "Konfiguracija `mrežnog poslužitelja Nginx <https://nginx.com>`_ razlikuje se "
 "od Apacheove (potpunije objašnjenje u `dokumentaciji Nginxa <https://"
 "www.nginx.com/resources/wiki/start/topics/examples/likeapache-htaccess/>`_)."
 
-#: ../installation/preparation.rst:253
-msgid "So you have to convert restriction access files in Nginx configuration, as for example:"
+#: ../installation/preparation.rst:303
+msgid ""
+"So you have to convert restriction access files in Nginx configuration, as "
+"for example:"
 msgstr ""
 "Zato datoteke s ograničenjima pristupa treba pretvoriti u konfiguraciju "
 "Nginxa, primjerice:"
 
-#: ../installation/preparation.rst:264
+#: ../installation/preparation.rst:314
 msgid "Windows"
 msgstr "Windows"
 
-#: ../installation/preparation.rst:266
-msgid "Installation described here rely on `XAMPP <https://www.apachefriends.org/xampp-windows.html>`_; other installation methods exist but are not listed here."
+#: ../installation/preparation.rst:316
+msgid ""
+"Installation described here rely on `XAMPP <https://www.apachefriends.org/"
+"xampp-windows.html>`_; other installation methods exist but are not listed "
+"here."
 msgstr ""
 "Ovdje opisana instalacija koristi `XAMPP <https://www.apachefriends.org/"
 "xampp-windows.html>`_. Postoje i drugi načini, ali ovdje nisu navedeni."
 
-#: ../installation/preparation.rst:268
-msgid "First of all, download XAMPP on your computer. Let's install it under ``C:\\xampp``."
+#: ../installation/preparation.rst:318
+msgid ""
+"First of all, download XAMPP on your computer. Let's install it under ``C:"
+"\\xampp``."
 msgstr ""
-"Najprije preuzmite XAMPP na računalo. U ovom primjeru instaliramo ga u "
-"``C:\\xampp``."
+"Najprije preuzmite XAMPP na računalo. U ovom primjeru instaliramo ga u ``C:"
+"\\xampp``."
 
-#: ../installation/preparation.rst:274
-msgid "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), so you can start Apache and MySQL services."
+#: ../installation/preparation.rst:324
+msgid ""
+"Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
+"so you can start Apache and MySQL services."
 msgstr ""
 "Pokrenite izvršnu datoteku ``xampp-control`` u ``C:\\xampp`` kako biste "
 "pokrenuli servise Apache i MySQL."
 
-#: ../installation/preparation.rst:280
-msgid "Once those steps done, download galette and move it to ``C:\\wampp\\htdocs\\galette``, web application will be available from http://127.0.0.1/galette/. Just visit this URL so the installation process begin."
+#: ../installation/preparation.rst:330
+#, fuzzy
+#| msgid ""
+#| "Once those steps done, download galette and move it to ``C:"
+#| "\\wampp\\htdocs\\galette``, web application will be available from http://"
+#| "127.0.0.1/galette/. Just visit this URL so the installation process begin."
+msgid ""
+"Once those steps done, download Galette, uncompress it and move the |folder| "
+"``galette`` directory it contains to ``C:\\xampp\\htdocs\\galette``; web "
+"application will be available from http://127.0.0.1/galette/. Just visit "
+"this URL so the installation process begin."
 msgstr ""
 "Zatim preuzmite Galette i premjestite ga u ``C:\\wampp\\htdocs\\galette``. "
 "Aplikacija će biti dostupna na http://127.0.0.1/galette/. Otvorite taj URL "
 "za početak instalacije."
 
-#: ../installation/preparation.rst:284
-msgid "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of the required extensions are already present, but commented (line begins with a \";\"), just uncomment them and restart XAMPP."
+#: ../installation/preparation.rst:334
+msgid ""
+"Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
+"the required extensions are already present, but commented (line begins with "
+"a \";\"), just uncomment them and restart XAMPP."
 msgstr ""
 "PHP moduli u XAMPP-u uključuju se u ``xampp/php/php.ini``. Većina potrebnih "
 "proširenja već je navedena, ali zakomentirana (redak počinje znakom „;”). "
 "Uklonite oznaku komentara i ponovno pokrenite XAMPP."
 
-#: ../installation/preparation.rst:286
-msgid "`openssl` extension is missing in the file, to activate it just add the following to your `php.ini`: ``extension=php_openssl.dll``"
+#: ../installation/preparation.rst:336
+msgid ""
+"`openssl` extension is missing in the file, to activate it just add the "
+"following to your `php.ini`: ``extension=php_openssl.dll``"
 msgstr ""
 "Proširenje `openssl` nedostaje u datoteci. Za uključivanje dodajte u "
 "`php.ini`: ``extension=php_openssl.dll``"
