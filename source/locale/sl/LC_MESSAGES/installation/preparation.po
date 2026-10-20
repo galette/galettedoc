@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 18:57+0200\n"
+"POT-Creation-Date: 2026-10-20 10:24+0200\n"
 "PO-Revision-Date: 2026-09-23 14:09+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -32,10 +32,91 @@ msgstr ""
 "se razlikuje glede na to, kaj želite doseči."
 
 #: ../installation/preparation.rst:15
+msgid "Archive contents"
+msgstr ""
+
+#: ../installation/preparation.rst:17
+msgid ""
+"The archive contains a single ``galette-1.3.1`` directory, laid out as "
+"follows:"
+msgstr ""
+
+#: ../installation/preparation.rst:35
+msgid "What you have to copy on your server:"
+msgstr ""
+
+#: ../installation/preparation.rst:37
+msgid ""
+"the |folder| ``galette`` directory, **mandatory**: it holds the whole "
+"application;"
+msgstr ""
+
+#: ../installation/preparation.rst:38
+msgid ""
+"the |folder| ``bin`` directory, **recommended**: it provides "
+"the :doc:`command line interface <../command-line>`. It looks for the "
+"application in a ``galette`` directory next to it, so both directories must "
+"stay side by side, as they are in the archive;"
+msgstr ""
+
+#: ../installation/preparation.rst:39
+msgid ""
+"the remaining files at the root of the archive are informational only; "
+"Galette does not need them."
+msgstr ""
+
+#: ../installation/preparation.rst:44
+msgid "Installation directory"
+msgstr ""
+
+#: ../installation/preparation.rst:46
+msgid ""
+"The :ref:`installation example <installation>` extracts the archive in ``/"
+"var/www/galette-1.3.1``. This directory, which holds ``bin`` and "
+"``galette``, is called the **installation directory** in this documentation. "
+"Unless stated otherwise, paths such as ``config`` or ``data`` are relative "
+"to its |folder| ``galette`` subdirectory: ``data`` stands for ``/var/www/"
+"galette-1.3.1/galette/data``."
+msgstr ""
+
+#: ../installation/preparation.rst:48
+msgid ""
+"Keeping the version in the directory name is not mandatory, but it makes "
+"updates easier: each release gets its own directory, next to the previous "
+"one. Updating consists in copying your configuration and data into the new "
+"directory, then pointing the web server to it - the previous version stays "
+"untouched until you remove it. See :doc:`update <update>`."
+msgstr ""
+
+#: ../installation/preparation.rst:50
+msgid ""
+"The installation directory is created **outside** of the web server document "
+"root (often ``/var/www/html``), on purpose: only the |folder| ``galette/"
+"webroot`` directory should be reachable from the web."
+msgstr ""
+
+#: ../installation/preparation.rst:52
+msgid ""
+"If your host lets you choose the directory a domain or subdomain points to, "
+"point it to ``galette/webroot``, as explained in :ref:`web server directory "
+"exposition <installationsubdir>`."
+msgstr ""
+
+#: ../installation/preparation.rst:54
+msgid ""
+"Otherwise (some shared hostings), copy ``galette`` in the published "
+"directory. Galette is then available at an URL like ``https://mydomain.tld/"
+"galette/``, which redirects to ``https://mydomain.tld/galette/webroot/``. "
+"The ``.htaccess`` files shipped in ``data`` directories prevent their "
+"contents from being downloaded, but only with Apache: this is less secure "
+"than exposing ``webroot`` alone."
+msgstr ""
+
+#: ../installation/preparation.rst:59
 msgid "File permissions"
 msgstr "Dovoljenja za datoteke"
 
-#: ../installation/preparation.rst:19
+#: ../installation/preparation.rst:63
 msgid ""
 "A commonly used hack is to give all rights to everyone recursively on the "
 "directory (``chmod 777``). This is a very very bad idea from a security "
@@ -45,7 +126,7 @@ msgstr ""
 "(``chmod 777``). Z varnostnega vidika je to zelo, zelo slaba ideja. Prosim, "
 "ne uporabljajte tega trika, bili ste opozorjeni ;)"
 
-#: ../installation/preparation.rst:21
+#: ../installation/preparation.rst:65
 msgid ""
 "Some Galette directories need specific rights. The application will need to "
 "write in some of them, you have to ensure it will be possible. Here are "
@@ -55,47 +136,47 @@ msgstr ""
 "pisati v nekatere od njih, zato morate zagotoviti, da bo to mogoče. Tukaj so "
 "imeniki, ki potrebujejo dostop za pisanje:"
 
-#: ../installation/preparation.rst:23
+#: ../installation/preparation.rst:67
 msgid "|folder| `config` [#configdirperms]_,"
 msgstr "|folder| `config` [#configdirperms]_,"
 
-#: ../installation/preparation.rst:24
+#: ../installation/preparation.rst:68
 msgid "|folder| `data/attachments`,"
 msgstr "|folder| `data/attachments`,"
 
-#: ../installation/preparation.rst:25
+#: ../installation/preparation.rst:69
 msgid "|folder| `data/cache`,"
 msgstr "|folder| `data/cache`,"
 
-#: ../installation/preparation.rst:26
+#: ../installation/preparation.rst:70
 msgid "|folder| `data/exports`,"
 msgstr "|folder| `data/exports`,"
 
-#: ../installation/preparation.rst:27
+#: ../installation/preparation.rst:71
 msgid "|folder| `data/files`,"
 msgstr "|folder| `data/files`,"
 
-#: ../installation/preparation.rst:28
+#: ../installation/preparation.rst:72
 msgid "|folder| `data/imports`,"
 msgstr "|folder| `data/imports`,"
 
-#: ../installation/preparation.rst:29
+#: ../installation/preparation.rst:73
 msgid "|folder| `data/logs`,"
 msgstr "|folder| `data/logs`,"
 
-#: ../installation/preparation.rst:30
+#: ../installation/preparation.rst:74
 msgid "|folder| `data/photos`,"
 msgstr "|folder| `data/photos`,"
 
-#: ../installation/preparation.rst:31
+#: ../installation/preparation.rst:75
 msgid "|folder| `data/tempimages`,"
 msgstr "|folder| `data/tempimages`,"
 
-#: ../installation/preparation.rst:32
+#: ../installation/preparation.rst:76
 msgid "|folder| `data/templates_c`"
 msgstr "|folder| `data/templates_c`"
 
-#: ../installation/preparation.rst:34
+#: ../installation/preparation.rst:78
 msgid ""
 "write access on ``config`` directory is only needed for Galette "
 "installation, we advice you to remove the write access once Galette has been "
@@ -105,15 +186,15 @@ msgstr ""
 "Galette, svetujemo vam, da po namestitvi Galette dostop za pisanje "
 "odstranite :)"
 
-#: ../installation/preparation.rst:37
+#: ../installation/preparation.rst:81
 msgid "Create database"
 msgstr "Ustvari bazo podatkov"
 
-#: ../installation/preparation.rst:41
+#: ../installation/preparation.rst:85
 msgid "**Never use database root user!**"
 msgstr "**Nikoli ne uporabljajte uporabnika root baze podatkov!**"
 
-#: ../installation/preparation.rst:43
+#: ../installation/preparation.rst:87
 msgid ""
 "For security reasons, it is strongly advised to rely on a specific user for "
 "Galette database, and give him only requested access on the single Galette "
@@ -123,7 +204,7 @@ msgstr ""
 "Galette zanesete na določenega uporabnika in mu omogočite dostop le do ene "
 "same podatkovne zbirke Galette."
 
-#: ../installation/preparation.rst:45
+#: ../installation/preparation.rst:89
 msgid ""
 "For the example, we will use a database named `mygalette` with a user "
 "`mygaletteuser` with `mypass` as password."
@@ -131,15 +212,15 @@ msgstr ""
 "Za primer bomo uporabili bazo podatkov z imenom `mygalette` z uporabnikom "
 "`mygaletteuser` in geslom `mypass`."
 
-#: ../installation/preparation.rst:47
+#: ../installation/preparation.rst:91
 msgid "MariaDB"
 msgstr "MariaDB"
 
-#: ../installation/preparation.rst:56
+#: ../installation/preparation.rst:100
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#: ../installation/preparation.rst:64
+#: ../installation/preparation.rst:108
 msgid ""
 "Those commands may vary, please refer to `MariaDB <https://mariadb.com/kb/en/"
 "library/documentation/>`_ or `PostgreSQL <https://docs.postgresqlfr.org>`_ "
@@ -149,11 +230,11 @@ msgstr ""
 "<https://mariadb.com/kb/en/library/documentation/>`_ ali `PostgreSQL "
 "<https://docs.postgresqlfr.org>`_ ali uporabite grafično orodje:"
 
-#: ../installation/preparation.rst:66
+#: ../installation/preparation.rst:110
 msgid "`phpMyAdmin <https://www.phpmyadmin.net>`_ for MariaDB ;"
 msgstr "`phpMyAdmin <https://www.phpmyadmin.net>`_ za MariaDB;"
 
-#: ../installation/preparation.rst:67
+#: ../installation/preparation.rst:111
 msgid ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ or `PgAdmin <https://"
 "www.pgadmin.org/download/?lang=fr_FR>`_ for PostgreSQL."
@@ -161,11 +242,11 @@ msgstr ""
 "`phpPgAdmin <http://phppgadmin.sourceforge.net>`_ ali `PgAdmin <https://"
 "www.pgadmin.org/download/?lang=fr_FR>`_ za PostgreSQL."
 
-#: ../installation/preparation.rst:72
+#: ../installation/preparation.rst:116
 msgid "Web server directory exposition"
 msgstr "Izložba imenika spletnega strežnika"
 
-#: ../installation/preparation.rst:76
+#: ../installation/preparation.rst:120
 msgid ""
 "Galette installation may consists in copying a complete directory to a "
 "location the web server can read. This method may work, but this exposes "
@@ -176,7 +257,7 @@ msgstr ""
 "razkrije spletne datoteke in imenike, ki na ta način ne bi smeli biti na "
 "voljo."
 
-#: ../installation/preparation.rst:78
+#: ../installation/preparation.rst:122
 msgid ""
 "It is possible to limit that by exposing only the ``webroot`` directory. All "
 "other directories are more safe: it is not possible to reach them from the "
@@ -185,17 +266,23 @@ msgstr ""
 "To je mogoče omejiti tako, da se izpostavi samo imenik ``webroot``. Vsi "
 "drugi imeniki so varnejši: do njih ni mogoče dostopati s spletnega strežnika!"
 
-#: ../installation/preparation.rst:82
+#: ../installation/preparation.rst:124
+msgid ""
+"The examples below use ``/var/www/galette-1.3.1`` as :ref:`installation "
+"directory <installationdir>`."
+msgstr ""
+
+#: ../installation/preparation.rst:128
 msgid ""
 "Exposing only ``webroot`` directory is the recommended, and only secured way."
 msgstr ""
 "Priporočen in edini varen način je, da se prikaže samo imenik ``webroot``."
 
-#: ../installation/preparation.rst:85
+#: ../installation/preparation.rst:131
 msgid "Using a subdomain"
 msgstr "Uporaba poddomene"
 
-#: ../installation/preparation.rst:87
+#: ../installation/preparation.rst:133
 msgid ""
 "Here is a virtual host configuration example, including the hide of "
 "`index.php`:"
@@ -203,15 +290,15 @@ msgstr ""
 "Tukaj je primer konfiguracije virtualnega gostitelja, vključno s skritim "
 "delom datoteke `index.php`:"
 
-#: ../installation/preparation.rst:114
+#: ../installation/preparation.rst:160
 msgid "Nginx would be:"
 msgstr "Nginx bi bil:"
 
-#: ../installation/preparation.rst:155
+#: ../installation/preparation.rst:201
 msgid "Using an alias"
 msgstr "Uporaba vzdevka"
 
-#: ../installation/preparation.rst:157
+#: ../installation/preparation.rst:203
 msgid ""
 "An alternative secured configuration, if you do not have a specific "
 "subdomain for Galette is to use an ``alias`` in your existing virtual host:"
@@ -219,7 +306,7 @@ msgstr ""
 "Alternativna varna konfiguracija – če za Galette nimate posebne poddomene – "
 "je uporaba vzdevka ``alias`` v obstoječem navideznem gostitelju:"
 
-#: ../installation/preparation.rst:176
+#: ../installation/preparation.rst:222
 msgid ""
 "Do not forget with that solution you have to setup correctly your "
 "``RewriteBase`` directive."
@@ -227,11 +314,11 @@ msgstr ""
 "Ne pozabite, da morate pri tej rešitvi pravilno nastaviti direktivo "
 "``RewriteBase``."
 
-#: ../installation/preparation.rst:181
+#: ../installation/preparation.rst:227
 msgid "Linux/Unix"
 msgstr "Linux/Unix"
 
-#: ../installation/preparation.rst:183
+#: ../installation/preparation.rst:229
 msgid ""
 "Installing Galette on Linux implies you have an access to the terminal on "
 "the server and required ACLs on directories."
@@ -239,12 +326,12 @@ msgstr ""
 "Namestitev Galette v Linux pomeni, da imate dostop do terminala na strežniku "
 "in zahtevane ACL-je v imenikih."
 
-#: ../installation/preparation.rst:185
+#: ../installation/preparation.rst:231
 msgid ""
 "As an example, on `Fedora <https://fedora.org>`_, you will run (as root):"
 msgstr "Na primer, v `Fedori <https://fedora.org>`_ boste zagnali (kot root):"
 
-#: ../installation/preparation.rst:192
+#: ../installation/preparation.rst:238
 msgid ""
 "Under `Debian <https://debian.org/>`_, we'll replace ``apache:apache`` with "
 "``www-data:www-data``."
@@ -252,11 +339,11 @@ msgstr ""
 "V imeniku `Debian <https://debian.org/>`_ bomo ``apache:apache`` zamenjali z "
 "``www-data:www-data``."
 
-#: ../installation/preparation.rst:194
+#: ../installation/preparation.rst:240
 msgid "On SELinux enabled systems, we'll also add:"
 msgstr "V sistemih, ki podpirajo SELinux, bomo dodali tudi:"
 
-#: ../installation/preparation.rst:202
+#: ../installation/preparation.rst:248
 msgid ""
 "You will also have to authorize webserver to connect to the network, with a "
 "SELinux boolean:"
@@ -264,11 +351,11 @@ msgstr ""
 "Prav tako boste morali pooblastiti spletni strežnik za povezavo z omrežjem z "
 "logično vrednostjo SELinux:"
 
-#: ../installation/preparation.rst:211
+#: ../installation/preparation.rst:257
 msgid "FTP"
 msgstr "FTP"
 
-#: ../installation/preparation.rst:215
+#: ../installation/preparation.rst:261
 msgid ""
 "Some archive or FTP software may corrupt files... It is strongly advised if "
 "you use windows that you use `7zip <https://www.7-zip.fr>`_ to uncompress "
@@ -279,7 +366,7 @@ msgstr ""
 "`7zip <https://www.7-zip.fr>`_ in `FileZilla <https://filezilla-project.org/"
 ">`_ za prenose TFP."
 
-#: ../installation/preparation.rst:217
+#: ../installation/preparation.rst:263
 msgid ""
 "Once source code has been retrieved locally, use :samp:`tar xjvf "
 "{galette.tar.bz2}` command under Linux/Unix/MacOS or a graphical tool under "
@@ -289,23 +376,40 @@ msgstr ""
 "{galette.tar.bz2}` v sistemih Linux/Unix/MacOS ali grafično orodje v sistemu "
 "Windows."
 
-#: ../installation/preparation.rst:219
+#: ../installation/preparation.rst:265
+#, fuzzy
+#| msgid ""
+#| "Just copy the uncompressed directory obtained, and all its sub "
+#| "directories and files, with your FTP client."
 msgid ""
-"Just copy the uncompressed directory obtained, and all its sub directories "
-"and files, with your FTP client."
+"Just copy the |folder| ``galette`` directory of the uncompressed directory "
+"obtained, and all its sub directories and files, with your FTP client."
 msgstr ""
 "Preprosto kopirajte pridobljeni nestisnjen imenik in vse njegove podimenike "
 "in datoteke s svojim FTP odjemalcem."
 
-#: ../installation/preparation.rst:226
+#: ../installation/preparation.rst:267
+msgid ""
+"The |folder| ``bin`` directory is only useful if you have a shell access on "
+"your host; if so, copy it next to ``galette``. Other files are not needed, "
+"see :ref:`archive contents <archivecontents>`."
+msgstr ""
+
+#: ../installation/preparation.rst:273
+msgid ""
+"Where to copy it on your host is explained in the :ref:`installation "
+"directory <installationdir>` section."
+msgstr ""
+
+#: ../installation/preparation.rst:276
 msgid "Specific cases"
 msgstr "Posebni primeri"
 
-#: ../installation/preparation.rst:229
+#: ../installation/preparation.rst:279
 msgid "Ionos"
 msgstr "Ionos"
 
-#: ../installation/preparation.rst:231
+#: ../installation/preparation.rst:281
 msgid ""
 "If you're hosted on Ionos; and want to use a specific subdomain for Galette, "
 "you must create your subdomain from their UI, and make it points to the "
@@ -317,11 +421,11 @@ msgstr ""
 "usmeriti na imenik ``webroot``. Urediti morate tudi datoteko ``.htaccess``, "
 "ki jo vsebuje, in odstraniti komentarje iz direktive ``RewriteBase /``."
 
-#: ../installation/preparation.rst:234
+#: ../installation/preparation.rst:284
 msgid "OVH"
 msgstr "OVH"
 
-#: ../installation/preparation.rst:236
+#: ../installation/preparation.rst:286
 msgid ""
 "This hosting company offers to `change PHP version you use from your "
 "customer account <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-"
@@ -331,7 +435,7 @@ msgstr ""
 "svojem računu stranke <https://docs.ovh.com/fr/hosting/configurer-le-php-sur-"
 "son-hebergement-web-mutu-2014/>`_."
 
-#: ../installation/preparation.rst:238
+#: ../installation/preparation.rst:288
 msgid ""
 "Additional information are available at: https://docs.ovh.com/fr/fr/web/"
 "hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/"
@@ -339,7 +443,7 @@ msgstr ""
 "Dodatne informacije so na voljo na: https://docs.ovh.com/fr/fr/web/hosting/"
 "configurer-le-php-sur-son-hebergement-web-mutu-2014/"
 
-#: ../installation/preparation.rst:242
+#: ../installation/preparation.rst:292
 msgid ""
 "Many users have display images or attendance sheet issues on OVH hosts. The "
 "solution to this issue is to create a ``.ovhconfig`` file at your hosting "
@@ -349,11 +453,11 @@ msgstr ""
 "gostiteljih OVH. Rešitev te težave je ustvariti datoteko ``.ovhconfig`` v "
 "korenskem imeniku vašega gostovanja z naslednjo vsebino:"
 
-#: ../installation/preparation.rst:249
+#: ../installation/preparation.rst:299
 msgid "Nginx"
 msgstr "Nginx"
 
-#: ../installation/preparation.rst:251
+#: ../installation/preparation.rst:301
 msgid ""
 "`Nginx webserver <https://nginx.com>`_ configuration is different from "
 "Apache one (see `Nginx documentation for a more complete explanation "
@@ -365,7 +469,7 @@ msgstr ""
 "<https://www.nginx.com/resources/wiki/start/topics/examples/likeapache-"
 "htaccess/>`_)."
 
-#: ../installation/preparation.rst:253
+#: ../installation/preparation.rst:303
 msgid ""
 "So you have to convert restriction access files in Nginx configuration, as "
 "for example:"
@@ -373,11 +477,11 @@ msgstr ""
 "Torej morate pretvoriti datoteke z omejitvami dostopa v konfiguraciji Nginx, "
 "na primer:"
 
-#: ../installation/preparation.rst:264
+#: ../installation/preparation.rst:314
 msgid "Windows"
 msgstr "Windows"
 
-#: ../installation/preparation.rst:266
+#: ../installation/preparation.rst:316
 msgid ""
 "Installation described here rely on `XAMPP <https://www.apachefriends.org/"
 "xampp-windows.html>`_; other installation methods exist but are not listed "
@@ -387,7 +491,7 @@ msgstr ""
 "xampp-windows.html>`_; obstajajo tudi drugi načini namestitve, vendar tukaj "
 "niso navedeni."
 
-#: ../installation/preparation.rst:268
+#: ../installation/preparation.rst:318
 msgid ""
 "First of all, download XAMPP on your computer. Let's install it under ``C:"
 "\\xampp``."
@@ -395,7 +499,7 @@ msgstr ""
 "Najprej prenesite XAMPP na svoj računalnik. Namestimo ga v mapo ``C:"
 "\\xampp``."
 
-#: ../installation/preparation.rst:274
+#: ../installation/preparation.rst:324
 msgid ""
 "Launch the ``xampp-control`` executable (you can find it in ``C:\\xampp``), "
 "so you can start Apache and MySQL services."
@@ -403,17 +507,23 @@ msgstr ""
 "Zaženite izvedljivo datoteko ``xampp-control`` (najdete jo v mapi ``C:"
 "\\xampp``), da lahko zaženete storitve Apache in MySQL."
 
-#: ../installation/preparation.rst:280
+#: ../installation/preparation.rst:330
+#, fuzzy
+#| msgid ""
+#| "Once those steps done, download galette and move it to ``C:"
+#| "\\wampp\\htdocs\\galette``, web application will be available from http://"
+#| "127.0.0.1/galette/. Just visit this URL so the installation process begin."
 msgid ""
-"Once those steps done, download galette and move it to ``C:"
-"\\wampp\\htdocs\\galette``, web application will be available from http://"
-"127.0.0.1/galette/. Just visit this URL so the installation process begin."
+"Once those steps done, download Galette, uncompress it and move the |folder| "
+"``galette`` directory it contains to ``C:\\xampp\\htdocs\\galette``; web "
+"application will be available from http://127.0.0.1/galette/. Just visit "
+"this URL so the installation process begin."
 msgstr ""
 "Ko so ti koraki opravljeni, prenesite galette in ga premaknite v mapo ``C:"
 "\\wampp\\htdocs\\galette``. Spletna aplikacija bo na voljo na naslovu http://"
 "127.0.0.1/galette/. Obiščite ta URL, da se postopek namestitve začne."
 
-#: ../installation/preparation.rst:284
+#: ../installation/preparation.rst:334
 msgid ""
 "Enabling PHP modules under XAMPP is done in ``xampp/php/php.ini``. Most of "
 "the required extensions are already present, but commented (line begins with "
@@ -423,7 +533,7 @@ msgstr ""
 "Večina potrebnih razširitev je že prisotnih, vendar komentiranih (vrstica se "
 "začne z \";\"), zato jih preprosto odkomentirajte in znova zaženite XAMPP."
 
-#: ../installation/preparation.rst:286
+#: ../installation/preparation.rst:336
 msgid ""
 "`openssl` extension is missing in the file, to activate it just add the "
 "following to your `php.ini`: ``extension=php_openssl.dll``"
