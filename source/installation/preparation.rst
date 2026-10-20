@@ -35,7 +35,7 @@ The archive contains a single ``galette-1.3.1`` directory, laid out as follows:
 What you have to copy on your server:
 
 * the |folder| ``galette`` directory, **mandatory**: it holds the whole application;
-* the |folder| ``bin`` directory, **recommended**: it provides the :doc:`command line interface <../command-line>`. It looks for the application in a ``galette`` directory next to it, so both directories must stay side by side, as they are in the archive;
+* the |folder| ``bin`` directory, **recommended**: it provides the :doc:`command line interface <../command-line>`;
 * the remaining files at the root of the archive are informational only; Galette does not need them.
 
 .. _installationdir:
