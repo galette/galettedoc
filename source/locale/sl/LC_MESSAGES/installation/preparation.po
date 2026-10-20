@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-20 10:32+0200\n"
-"PO-Revision-Date: 2026-09-23 14:09+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"PO-Revision-Date: 2026-10-21 05:04+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "install-prepare/sl/>\n"
 "Language: sl\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../installation/preparation.rst:8
 msgid "Preparation"
@@ -33,39 +35,45 @@ msgstr ""
 
 #: ../installation/preparation.rst:15
 msgid "Archive contents"
-msgstr ""
+msgstr "Arhivska vsebina"
 
 #: ../installation/preparation.rst:17
 msgid ""
 "The archive contains a single ``galette-1.3.1`` directory, laid out as "
 "follows:"
 msgstr ""
+"Arhiv vsebuje en sam imenik ``galette-1.3.1``, ki je postavljen na naslednji "
+"način:"
 
 #: ../installation/preparation.rst:35
 msgid "What you have to copy on your server:"
-msgstr ""
+msgstr "Kaj morate kopirati na strežnik:"
 
 #: ../installation/preparation.rst:37
 msgid ""
 "the |folder| ``galette`` directory, **mandatory**: it holds the whole "
 "application;"
-msgstr ""
+msgstr "|folder| Imenik ``galette``, **obvezno**: vsebuje celotno aplikacijo;"
 
 #: ../installation/preparation.rst:38
 msgid ""
 "the |folder| ``bin`` directory, **recommended**: it provides "
 "the :doc:`command line interface <../command-line>`;"
 msgstr ""
+"|folder| Imenik ``bin``, **priporočeno**: nudi :doc:`vmesnik ukazne vrstice "
+"<../command-line>`;"
 
 #: ../installation/preparation.rst:39
 msgid ""
 "the remaining files at the root of the archive are informational only; "
 "Galette does not need them."
 msgstr ""
+"preostale datoteke v korenu arhiva so samo informativne; Galette jih ne "
+"potrebuje."
 
 #: ../installation/preparation.rst:44
 msgid "Installation directory"
-msgstr ""
+msgstr "Namestitveni imenik"
 
 #: ../installation/preparation.rst:46
 msgid ""
@@ -76,6 +84,12 @@ msgid ""
 "to its |folder| ``galette`` subdirectory: ``data`` stands for ``/var/www/"
 "galette-1.3.1/galette/data``."
 msgstr ""
+"The :ref:`primer namestitve <installation>`ekstrahira arhiv v ``/var/www/"
+"galette-1.3.1``. Ta imenik, ki vsebuje ``bin`` in ``galette``, se v tej "
+"dokumentaciji imenuje **namestitveni imenik**. Če ni navedeno drugače, so "
+"poti, kot sta ``config`` ali ``data``, relativne glede na njegovo |folder| "
+"Podimenik ``galette``: ``data`` pomeni ``/var/www/galette-1.3.1/galette/"
+"data``."
 
 #: ../installation/preparation.rst:48
 msgid ""
@@ -85,6 +99,11 @@ msgid ""
 "directory, then pointing the web server to it - the previous version stays "
 "untouched until you remove it. See :doc:`update <update>`."
 msgstr ""
+"Ohranjanje različice v imenu imenika ni obvezno, vendar olajša posodobitve: "
+"vsaka izdaja dobi svoj imenik poleg prejšnjega. Posodobitev je sestavljena "
+"iz kopiranja vaše konfiguracije in podatkov v nov imenik, nato pa nanj "
+"usmerite spletni strežnik - prejšnja različica ostane nedotaknjena, dokler "
+"je ne odstranite. Glejte :doc:`posodobitev <update>`."
 
 #: ../installation/preparation.rst:50
 msgid ""
@@ -92,6 +111,9 @@ msgid ""
 "root (often ``/var/www/html``), on purpose: only the |folder| ``galette/"
 "webroot`` directory should be reachable from the web."
 msgstr ""
+"Namestitveni imenik je namenoma ustvarjen **zunaj** korena dokumenta "
+"spletnega strežnika (pogosto ``/var/www/html``): samo|folder| Imenik "
+"``galette/webroot`` mora biti dosegljiv iz spleta."
 
 #: ../installation/preparation.rst:52
 msgid ""
@@ -99,6 +121,9 @@ msgid ""
 "point it to ``galette/webroot``, as explained in :ref:`web server directory "
 "exposition <installationsubdir>`."
 msgstr ""
+"Če vam vaš gostitelj dovoli, da izberete imenik, na katerega kaže domena ali "
+"poddomena, ga usmerite na ``galette/webroot``, kot je razloženo v "
+":ref:`predstavitvi imenika spletnega strežnika <installationsubdir>`."
 
 #: ../installation/preparation.rst:54
 msgid ""
@@ -109,6 +134,12 @@ msgid ""
 "contents from being downloaded, but only with Apache: this is less secure "
 "than exposing ``webroot`` alone."
 msgstr ""
+"V nasprotnem primeru (nekatera deljena gostovanja) kopirajte ``galette`` v "
+"objavljeni imenik. Galette je nato na voljo na URL-ju, kot je ``https://"
+"mydomain.tld/galette/``, ki preusmeri na ``https://mydomain.tld/galette/"
+"webroot/``. Datoteke ``.htaccess``, poslane v imenike ``data``, preprečujejo "
+"prenos njihove vsebine, vendar samo z Apache: to je manj varno kot razkritje "
+"``webroot`` samo."
 
 #: ../installation/preparation.rst:59
 msgid "File permissions"
@@ -269,6 +300,8 @@ msgid ""
 "The examples below use ``/var/www/galette-1.3.1`` as :ref:`installation "
 "directory <installationdir>`."
 msgstr ""
+"Spodnji primeri uporabljajo ``/var/www/galette-1.3.1`` kot "
+":ref:`namestitveni imenik <installationdir>``."
 
 #: ../installation/preparation.rst:128
 msgid ""
@@ -375,16 +408,12 @@ msgstr ""
 "Windows."
 
 #: ../installation/preparation.rst:265
-#, fuzzy
-#| msgid ""
-#| "Just copy the uncompressed directory obtained, and all its sub "
-#| "directories and files, with your FTP client."
 msgid ""
 "Just copy the |folder| ``galette`` directory of the uncompressed directory "
 "obtained, and all its sub directories and files, with your FTP client."
 msgstr ""
-"Preprosto kopirajte pridobljeni nestisnjen imenik in vse njegove podimenike "
-"in datoteke s svojim FTP odjemalcem."
+"Samo kopirajte |folder| Imenik ``galette`` pridobljenega nestisnjenega "
+"imenika in vseh njegovih podimenikov in datotek z vašim odjemalcem FTP."
 
 #: ../installation/preparation.rst:267
 msgid ""
@@ -392,12 +421,17 @@ msgid ""
 "your host; if so, copy it next to ``galette``. Other files are not needed, "
 "see :ref:`archive contents <archivecontents>`."
 msgstr ""
+"|folder| Imenik ``bin`` je uporaben le, če imate dostop lupine na vašem "
+"gostitelju; če je tako, ga kopirajte poleg ``galette``. Druge datoteke niso "
+"potrebne, glejte :ref:`archive contents <archivecontents>`."
 
 #: ../installation/preparation.rst:273
 msgid ""
 "Where to copy it on your host is explained in the :ref:`installation "
 "directory <installationdir>` section."
 msgstr ""
+"Kam ga kopirati na vašem gostitelju, je razloženo v razdelku "
+":ref:`namestitveni imenik <installationdir>`."
 
 #: ../installation/preparation.rst:276
 msgid "Specific cases"
@@ -506,20 +540,16 @@ msgstr ""
 "\\xampp``), da lahko zaženete storitve Apache in MySQL."
 
 #: ../installation/preparation.rst:330
-#, fuzzy
-#| msgid ""
-#| "Once those steps done, download galette and move it to ``C:"
-#| "\\wampp\\htdocs\\galette``, web application will be available from http://"
-#| "127.0.0.1/galette/. Just visit this URL so the installation process begin."
 msgid ""
 "Once those steps done, download Galette, uncompress it and move the |folder| "
 "``galette`` directory it contains to ``C:\\xampp\\htdocs\\galette``; web "
 "application will be available from http://127.0.0.1/galette/. Just visit "
 "this URL so the installation process begin."
 msgstr ""
-"Ko so ti koraki opravljeni, prenesite galette in ga premaknite v mapo ``C:"
-"\\wampp\\htdocs\\galette``. Spletna aplikacija bo na voljo na naslovu http://"
-"127.0.0.1/galette/. Obiščite ta URL, da se postopek namestitve začne."
+"Ko naredite te korake, prenesite Galette, ga razpakirajte in "
+"premaknite|folder| Imenik ``galette``, ki ga vsebuje v ``C:\\xampp\\htdocs\\g"
+"alette``; spletna aplikacija bo na voljo na http://127.0.0.1/galette/. "
+"Preprosto obiščite ta URL, da se začne postopek namestitve."
 
 #: ../installation/preparation.rst:334
 msgid ""
