@@ -1,13 +1,15 @@
 # Johan Cwiklinski <johan@x-tnd.be>, 2019. #zanata
 # Johan Cwiklinski <johan@x-tnd.be>, 2020. #zanata
 # Johan Cwiklinski <trasher@x-tnd.be>, 2020, 2021, 2023, 2024, 2025, 2026.
+# Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-20 10:24+0200\n"
-"PO-Revision-Date: 2026-10-01 20:02+0000\n"
-"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"PO-Revision-Date: 2026-10-20 08:54+0000\n"
+"Last-Translator: Johan Cwiklinski <trasher@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-"
 "install-update/fr/>\n"
 "Language: fr_FR\n"
@@ -15,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.10\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../installation/update.rst:5
 msgid "Updating"
@@ -80,20 +82,16 @@ msgstr ""
 "mode maintenance pour que d'autres utilisateurs ne puissent y accéder."
 
 #: ../installation/update.rst:26
-#, fuzzy
-#| msgid ""
-#| "Then, download latest Galette version and replace the files. For more "
-#| "information on files installation, refer to the :ref:`prepare "
-#| "installation <preparation>` section."
 msgid ""
 "Then, download latest Galette version and uncompress it in a "
 "new :ref:`installation directory <installationdir>`. For more information on "
 "files installation, refer to the :ref:`prepare installation <preparation>` "
 "section."
 msgstr ""
-"Ensuite, téléchargez la dernière version de Galette et remplacez les "
-"fichiers. Pour plus d'informations sur l'installation des fichiers, référez-"
-"vous à la section :ref:`préparation de l'installation <preparation>`."
+"Ensuite, téléchargez la dernière version de Galette et décompressez-la dans "
+"une nouveau :ref:`dossier d'installation <installationdir>`. Pour plus "
+"d'informations sur l'installation des fichiers, référez-vous à la section "
+":ref:`préparation de l'installation <preparation>`."
 
 #: ../installation/update.rst:28
 msgid ""
@@ -103,6 +101,11 @@ msgid ""
 "server. Do not forget to set :ref:`file permissions <droitsfichiers>` on the "
 "new directory."
 msgstr ""
+"Placez le nouveau dossier d'installation à côté de l'actuel - par exemple ``/"
+"var/www/galette-1.3.1`` à côté de ``/var/www/galette-1.3.0``. Ne copiez pas "
+"les nouveaux fichiers par dessus les anciens : les fichiers supprimés de "
+"Galette resteraient sur votre serveur. N'oubliez pas de définir les "
+":ref:`permissions des fichiers <droitsfichiers>` sur le nouveau répertoire."
 
 #: ../installation/update.rst:30
 msgid ""
@@ -158,6 +161,12 @@ msgid ""
 "previous installation directory until the update is over: along with your "
 "database backup, it is your way back."
 msgstr ""
+"Finalement, modifiez la configuration de votre serveur web pour qu'il pointe "
+"sur le répertoire ``galette/webroot`` du nouveau dossier d'installation "
+"(voir :ref:`exposition du serveur web <installationsubdir>`), et rechargez-"
+"le. Gardez le répertoire d'installation précédent jusqu'à ce que la mise à "
+"jour soit terminée : avec votre sauvegarde de base de données, c'est votre "
+"ticket de retour."
 
 #: ../installation/update.rst:41
 msgid ""
