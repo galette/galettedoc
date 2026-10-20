@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-20 10:24+0200\n"
 "PO-Revision-Date: 2026-10-03 12:35+0000\n"
 "Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -78,10 +78,16 @@ msgstr ""
 "vzdrževalni način, da preprečite drugim uporabnikom dostop do primerka."
 
 #: ../installation/update.rst:26
+#, fuzzy
+#| msgid ""
+#| "Then, download latest Galette version and replace the files. For more "
+#| "information on files installation, refer to the :ref:`prepare "
+#| "installation <preparation>` section."
 msgid ""
-"Then, download latest Galette version and replace the files. For more "
-"information on files installation, refer to the :ref:`prepare installation "
-"<preparation>` section."
+"Then, download latest Galette version and uncompress it in a "
+"new :ref:`installation directory <installationdir>`. For more information on "
+"files installation, refer to the :ref:`prepare installation <preparation>` "
+"section."
 msgstr ""
 "Nato prenesite najnovejšo različico Galette in zamenjajte datoteke. Za več "
 "informacij o namestitvi datotek glejte razdelek :ref:`prepare installation "
@@ -89,13 +95,22 @@ msgstr ""
 
 #: ../installation/update.rst:28
 msgid ""
+"Put the new installation directory next to the current one - for example ``/"
+"var/www/galette-1.3.1`` beside ``/var/www/galette-1.3.0``. Do not copy new "
+"files over the old ones: files removed from Galette would stay on your "
+"server. Do not forget to set :ref:`file permissions <droitsfichiers>` on the "
+"new directory."
+msgstr ""
+
+#: ../installation/update.rst:30
+msgid ""
 "Some directories keep data and/or configurations and should be copied back "
 "to the new instance:"
 msgstr ""
 "Nekateri imeniki hranijo podatke in/ali konfiguracije in jih je treba "
 "kopirati nazaj v novo instanco:"
 
-#: ../installation/update.rst:30
+#: ../installation/update.rst:32
 msgid ""
 "``config/config.inc.php``. If the file is present, the update reads "
 "everything from it - database password included - and never asks you for a "
@@ -107,24 +122,24 @@ msgstr ""
 "poverilnico. Če manjka, Galette ne more vedeti, da gre za posodobitev: "
 "namesto tega bi ponudila povsem novo namestitev,"
 
-#: ../installation/update.rst:31
+#: ../installation/update.rst:33
 msgid "``data/photos`` your members photos and logos,"
 msgstr "``data/photos`` fotografije in logotipi vaših članov,"
 
-#: ../installation/update.rst:32
+#: ../installation/update.rst:34
 msgid "``data/exports`` contains CSv exports,"
 msgstr "``data/exports`` vsebuje izvoze CSV,"
 
-#: ../installation/update.rst:33
+#: ../installation/update.rst:35
 msgid "``data/files`` contains files from dynamic fields of type file,"
 msgstr "``data/files`` vsebuje datoteke iz dinamičnih polj tipa file,"
 
-#: ../installation/update.rst:34
+#: ../installation/update.rst:36
 msgid "``data/attachments`` contains mailing attached documents."
 msgstr ""
 "``data/attachments`` vsebuje priložene dokumente za pošiljanje po pošti."
 
-#: ../installation/update.rst:35
+#: ../installation/update.rst:37
 msgid ""
 "``plugins`` your current plugins. It is a good idea to check if new plugins "
 "versions are available ;)"
@@ -132,7 +147,16 @@ msgstr ""
 "``plugins`` vaši trenutni vtičniki. Priporočljivo je preveriti, ali so na "
 "voljo nove različice vtičnikov ;)"
 
-#: ../installation/update.rst:37
+#: ../installation/update.rst:39
+msgid ""
+"Finally, change your web server configuration so it points to the ``galette/"
+"webroot`` directory of the new installation directory (see :ref:`web server "
+"directory exposition <installationsubdir>`), and reload it. Keep the "
+"previous installation directory until the update is over: along with your "
+"database backup, it is your way back."
+msgstr ""
+
+#: ../installation/update.rst:41
 msgid ""
 "Once files are updated, go to your Galette instance. It will ask you if "
 "needed to proceed to the update of your database."
@@ -140,7 +164,7 @@ msgstr ""
 "Ko so datoteke posodobljene, pojdite v svojo instanco Galette. Vprašal vas "
 "bo, ali je treba nadaljevati s posodobitvijo baze podatkov."
 
-#: ../installation/update.rst:39
+#: ../installation/update.rst:43
 msgid ""
 "If so, :ref:`enable the installer <enableinstaller>` by creating the ``data/"
 "ENABLE_INSTALL`` file, then visit the install URL ``/installer.php`` (ex: "
@@ -153,15 +177,15 @@ msgstr ""
 "vidi vašo konfiguracijsko datoteko in zažene posodobitev, nimate česa "
 "izbrati."
 
-#: ../installation/update.rst:41
+#: ../installation/update.rst:45
 msgid "If it asks you nothing you're just done already ;)"
 msgstr "Če te nič ne vpraša, si že končal ;)"
 
-#: ../installation/update.rst:45
+#: ../installation/update.rst:49
 msgid "Updating database"
 msgstr "Posodabljanje baze podatkov"
 
-#: ../installation/update.rst:49
+#: ../installation/update.rst:53
 msgid ""
 "Installing a new Galette release does not strictly means a database update "
 "will be required! Sometimes, only updating the files will be enough; even "
@@ -171,14 +195,14 @@ msgstr ""
 "baze podatkov! Včasih je dovolj le posodobitev datotek; tudi pri večji "
 "izdaji."
 
-#: ../installation/update.rst:51
+#: ../installation/update.rst:55
 msgid ""
 "Galette will tell you if an update is needed, no need to \"force\" an update."
 msgstr ""
 "Galette vam bo povedal, če je potrebna posodobitev, ni vam treba \"force\" "
 "posodobitve."
 
-#: ../installation/update.rst:53
+#: ../installation/update.rst:57
 msgid ""
 "Update process is very similar to :doc:`Galette installation process "
 "<galette>`, with some steps that change. All is mostly transparent, "
@@ -188,18 +212,18 @@ msgstr ""
 "<galette>`, z nekaj spremembami v korakih. Vse je večinoma pregledno, "
 "informacije so podane za vsak korak."
 
-#: ../installation/update.rst:56
+#: ../installation/update.rst:60
 msgid "Database information"
 msgstr "Informacije o zbirki podatkov"
 
-#: ../installation/update.rst:60
+#: ../installation/update.rst:64
 msgid ""
 "Database information are not asked anymore, and neither is the installation "
 "type."
 msgstr ""
 "Podatki o bazi podatkov niso več zahtevani, prav tako ne vrsta namestitve."
 
-#: ../installation/update.rst:62
+#: ../installation/update.rst:66
 msgid ""
 "The update reads the database type, host, port, name, user, password and "
 "table prefix from your configuration file, and goes straight to the access "
@@ -213,16 +237,16 @@ msgstr ""
 "mogoče prebrati ali je nepopolna - izpolnite jo z enakimi informacijami kot "
 "prej, vključno s predpono tabele."
 
-#: ../installation/update.rst:65
+#: ../installation/update.rst:69
 msgid "Previous version selection"
 msgstr "Izbira prejšnje različice"
 
-#: ../installation/update.rst:69
+#: ../installation/update.rst:73
 msgid "When the version can be read from the database, this step is skipped."
 msgstr ""
 "Ko je različico mogoče prebrati iz baze podatkov, se ta korak preskoči."
 
-#: ../installation/update.rst:71
+#: ../installation/update.rst:75
 msgid ""
 "Galette reads the version its database holds and updates from there. The "
 "step below is only displayed when that reading is not conclusive - which is "
@@ -236,7 +260,7 @@ msgstr ""
 "Izberite različico, iz katere prihajate, tista, ki jo je Galette uganila, je "
 "prikazana kot krepko besedilo:"
 
-#: ../installation/update.rst:77
+#: ../installation/update.rst:81
 msgid ""
 "The step is also displayed when your database is already up to date, so you "
 "get a chance to stop before running the scripts again:"
@@ -244,11 +268,11 @@ msgstr ""
 "Korak je prikazan tudi, ko je vaša baza podatkov že posodobljena, tako da "
 "imate možnost, da se ustavite, preden znova zaženete skripte:"
 
-#: ../installation/update.rst:83
+#: ../installation/update.rst:87
 msgid "Once update scripts have run, a summary will be displayed."
 msgstr "Ko se posodobitveni skripti zaženejo, se prikaže povzetek."
 
-#: ../installation/update.rst:87
+#: ../installation/update.rst:91
 msgid ""
 "The ``data/ENABLE_INSTALL`` file is removed once the update has completed."
 msgstr ""
