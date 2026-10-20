@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-10-20 10:24+0200\n"
-"PO-Revision-Date: 2026-10-03 12:35+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"PO-Revision-Date: 2026-10-21 05:04+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "install-update/sl/>\n"
 "Language: sl\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../installation/update.rst:5
 msgid "Updating"
@@ -78,20 +80,15 @@ msgstr ""
 "vzdrževalni način, da preprečite drugim uporabnikom dostop do primerka."
 
 #: ../installation/update.rst:26
-#, fuzzy
-#| msgid ""
-#| "Then, download latest Galette version and replace the files. For more "
-#| "information on files installation, refer to the :ref:`prepare "
-#| "installation <preparation>` section."
 msgid ""
 "Then, download latest Galette version and uncompress it in a "
 "new :ref:`installation directory <installationdir>`. For more information on "
 "files installation, refer to the :ref:`prepare installation <preparation>` "
 "section."
 msgstr ""
-"Nato prenesite najnovejšo različico Galette in zamenjajte datoteke. Za več "
-"informacij o namestitvi datotek glejte razdelek :ref:`prepare installation "
-"<preparation>`."
+"Nato prenesite najnovejšo različico Galette in jo razpakirajte v nov "
+":ref:`namestitveni imenik <installationdir>`. Za več informacij o namestitvi "
+"datotek glejte razdelek :ref:`prepare installation <preparation>`."
 
 #: ../installation/update.rst:28
 msgid ""
@@ -101,6 +98,11 @@ msgid ""
 "server. Do not forget to set :ref:`file permissions <droitsfichiers>` on the "
 "new directory."
 msgstr ""
+"Nov namestitveni imenik postavite poleg trenutnega - na primer ``/var/www/"
+"galette-1.3.1`` poleg ``/var/www/galette-1.3.0``. Ne kopirajte novih datotek "
+"čez stare: datoteke, odstranjene iz Galette, bodo ostale na vašem strežniku. "
+"Ne pozabite nastaviti :ref:`dovoljenj za datoteke <droitsfichiers>` v novem "
+"imeniku."
 
 #: ../installation/update.rst:30
 msgid ""
@@ -155,6 +157,11 @@ msgid ""
 "previous installation directory until the update is over: along with your "
 "database backup, it is your way back."
 msgstr ""
+"Končno spremenite konfiguracijo vašega spletnega strežnika, tako da kaže na "
+"imenik ``galette/webroot`` novega namestitvenega imenika (glejte "
+":ref:`predstavitev imenika spletnega strežnika <installationsubdir>`), in ga "
+"znova naložite. Ohranite prejšnji namestitveni imenik, dokler se posodobitev "
+"ne konča: skupaj z varnostno kopijo baze podatkov je to vaša pot nazaj."
 
 #: ../installation/update.rst:41
 msgid ""
