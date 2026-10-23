@@ -93,11 +93,16 @@ It is possible to order members list on following fields:
 * nickname,
 * status,
 * contribution status,
-* modification date.
+* modification date,
+* dynamic fields displayed in the list, except repeatable and free text ones.
 
 In the list, a green icon identifies **sponsors**: the members who made a donation during the current period. The **Show legend** link explains all the icons of the list.
 
 Most of the times, the result is transparent. Just note ordering on `status` will use status priority and ordering on `contribution status` will use creation date, contribution exemption and due date;
+
+.. versionadded:: 1.3.2
+
+Members whose dynamic field is empty always come last, whatever the order direction. A choice field is ordered as its choices are defined, not alphabetically.
 
 .. _csv_export_fields:
 

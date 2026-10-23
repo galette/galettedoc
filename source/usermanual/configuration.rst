@@ -22,6 +22,19 @@ You can choose which fields will appears on Galette members list and the order t
    :align: center
    :alt: List fields management
 
+.. versionadded:: 1.3.2
+
+Members :ref:`dynamic fields <dynamic_fields>` can be added to the list too; they are flagged with a `Dynamic field` label in the available fields and in the list. Separator and file fields cannot be displayed.
+
+In the members list:
+
+* a dynamic field column is displayed only to users who can see the field, according to its access rights,
+* values longer than 20 characters are shortened; hover the value to read it entirely,
+* values of a repeatable field are separated with commas,
+* a choice displays its label, and a boolean displays `Yes` or `No`.
+
+Removing a dynamic field also removes its column from the list.
+
 .. _fields_acls:
 
 Mandatory fields and access rights
