@@ -4,11 +4,11 @@ Command line
 
 .. versionadded:: 1.1.4
 
-Galette now proposes a command line interface to manage some tasks. This is accessible through the ``bin/console`` script in Galette root directory:
+Galette now proposes a command line interface to manage some tasks. This is accessible through the ``bin/console`` script, from the :ref:`installation directory <installationdir>`:
 
 ::
 
-    $ cd /var/www/html/galette
+    $ cd /var/www/galette-1.3.1
     $ php bin/console
     Galette v1.3.0
 

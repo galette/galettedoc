@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-01 21:02+0200\n"
+"POT-Creation-Date: 2026-10-20 10:24+0200\n"
 "PO-Revision-Date: 2026-01-28 11:22+0000\n"
 "Last-Translator: Laura Quintana Marín <2001lauraquintana@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/galette/doc-"
@@ -71,22 +71,31 @@ msgid ""
 "prevent other users to reach the instance."
 msgstr ""
 
-# aceb420907fd4016ab8456495e0057dd
 #: ../installation/update.rst:26
 msgid ""
-"Then, download latest Galette version and replace the files. For more "
-"information on files installation, refer to the :ref:`prepare installation "
-"<preparation>` section."
+"Then, download latest Galette version and uncompress it in a "
+"new :ref:`installation directory <installationdir>`. For more information on "
+"files installation, refer to the :ref:`prepare installation <preparation>` "
+"section."
+msgstr ""
+
+#: ../installation/update.rst:28
+msgid ""
+"Put the new installation directory next to the current one - for example ``/"
+"var/www/galette-1.3.1`` beside ``/var/www/galette-1.3.0``. Do not copy new "
+"files over the old ones: files removed from Galette would stay on your "
+"server. Do not forget to set :ref:`file permissions <droitsfichiers>` on the "
+"new directory."
 msgstr ""
 
 # ce34ab9888eb41309710dc28ae856a61
-#: ../installation/update.rst:28
+#: ../installation/update.rst:30
 msgid ""
 "Some directories keep data and/or configurations and should be copied back "
 "to the new instance:"
 msgstr ""
 
-#: ../installation/update.rst:30
+#: ../installation/update.rst:32
 msgid ""
 "``config/config.inc.php``. If the file is present, the update reads "
 "everything from it - database password included - and never asks you for a "
@@ -95,39 +104,48 @@ msgid ""
 msgstr ""
 
 # 59761ec82cf74838a2db9a5cc53387dd
-#: ../installation/update.rst:31
+#: ../installation/update.rst:33
 msgid "``data/photos`` your members photos and logos,"
 msgstr ""
 
 # 0ca3359130544cfcacb40341ff080017
-#: ../installation/update.rst:32
+#: ../installation/update.rst:34
 msgid "``data/exports`` contains CSv exports,"
 msgstr ""
 
 # 97ca05c6a7a245f391d2ed8fdad9594b
-#: ../installation/update.rst:33
+#: ../installation/update.rst:35
 msgid "``data/files`` contains files from dynamic fields of type file,"
 msgstr ""
 
 # 17dae2c5a3f743629de6c20ace036605
-#: ../installation/update.rst:34
+#: ../installation/update.rst:36
 msgid "``data/attachments`` contains mailing attached documents."
 msgstr ""
 
 # e80f2ec427564a80aad7a5fad00df093
-#: ../installation/update.rst:35
+#: ../installation/update.rst:37
 msgid ""
 "``plugins`` your current plugins. It is a good idea to check if new plugins "
 "versions are available ;)"
 msgstr ""
 
-#: ../installation/update.rst:37
+#: ../installation/update.rst:39
+msgid ""
+"Finally, change your web server configuration so it points to the ``galette/"
+"webroot`` directory of the new installation directory (see :ref:`web server "
+"directory exposition <installationsubdir>`), and reload it. Keep the "
+"previous installation directory until the update is over: along with your "
+"database backup, it is your way back."
+msgstr ""
+
+#: ../installation/update.rst:41
 msgid ""
 "Once files are updated, go to your Galette instance. It will ask you if "
 "needed to proceed to the update of your database."
 msgstr ""
 
-#: ../installation/update.rst:39
+#: ../installation/update.rst:43
 msgid ""
 "If so, :ref:`enable the installer <enableinstaller>` by creating the ``data/"
 "ENABLE_INSTALL`` file, then visit the install URL ``/installer.php`` (ex: "
@@ -135,17 +153,17 @@ msgid ""
 "file and runs an update, you have nothing to choose."
 msgstr ""
 
-#: ../installation/update.rst:41
+#: ../installation/update.rst:45
 msgid "If it asks you nothing you're just done already ;)"
 msgstr ""
 
 # 4b6889058e484a889fe18f9a3afa4a78
-#: ../installation/update.rst:45
+#: ../installation/update.rst:49
 msgid "Updating database"
 msgstr ""
 
 # 621d9cdcb39d49a99b7e21bb86741bba
-#: ../installation/update.rst:49
+#: ../installation/update.rst:53
 msgid ""
 "Installing a new Galette release does not strictly means a database update "
 "will be required! Sometimes, only updating the files will be enough; even "
@@ -153,13 +171,13 @@ msgid ""
 msgstr ""
 
 # 37b53ace7af742b3986e4f751629065d
-#: ../installation/update.rst:51
+#: ../installation/update.rst:55
 msgid ""
 "Galette will tell you if an update is needed, no need to \"force\" an update."
 msgstr ""
 
 # 8900502e7ad444ccb72966ba1fdb29a1
-#: ../installation/update.rst:53
+#: ../installation/update.rst:57
 msgid ""
 "Update process is very similar to :doc:`Galette installation process "
 "<galette>`, with some steps that change. All is mostly transparent, "
@@ -167,17 +185,17 @@ msgid ""
 msgstr ""
 
 # e946375277c34dbfa2f2bb7f268a7351
-#: ../installation/update.rst:56
+#: ../installation/update.rst:60
 msgid "Database information"
 msgstr ""
 
-#: ../installation/update.rst:60
+#: ../installation/update.rst:64
 msgid ""
 "Database information are not asked anymore, and neither is the installation "
 "type."
 msgstr ""
 
-#: ../installation/update.rst:62
+#: ../installation/update.rst:66
 msgid ""
 "The update reads the database type, host, port, name, user, password and "
 "table prefix from your configuration file, and goes straight to the access "
@@ -187,15 +205,15 @@ msgid ""
 msgstr ""
 
 # be706b5e535a48ea88ebb5ce1915865c
-#: ../installation/update.rst:65
+#: ../installation/update.rst:69
 msgid "Previous version selection"
 msgstr "Selecció de versió anterior"
 
-#: ../installation/update.rst:69
+#: ../installation/update.rst:73
 msgid "When the version can be read from the database, this step is skipped."
 msgstr ""
 
-#: ../installation/update.rst:71
+#: ../installation/update.rst:75
 msgid ""
 "Galette reads the version its database holds and updates from there. The "
 "step below is only displayed when that reading is not conclusive - which is "
@@ -204,17 +222,17 @@ msgid ""
 "is displayed as bold text:"
 msgstr ""
 
-#: ../installation/update.rst:77
+#: ../installation/update.rst:81
 msgid ""
 "The step is also displayed when your database is already up to date, so you "
 "get a chance to stop before running the scripts again:"
 msgstr ""
 
-#: ../installation/update.rst:83
+#: ../installation/update.rst:87
 msgid "Once update scripts have run, a summary will be displayed."
 msgstr ""
 
-#: ../installation/update.rst:87
+#: ../installation/update.rst:91
 msgid ""
 "The ``data/ENABLE_INSTALL`` file is removed once the update has completed."
 msgstr ""

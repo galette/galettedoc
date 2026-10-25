@@ -47,7 +47,7 @@ Invoice and receipt models are the same, excepting their titles.
 
 As you can see in the above screenshot, invoice model does not define any header, footer or CSS styles, the ones form the `Global` model are used.
 
-Membership form
-===============
+Adhesion form
+=============
 
 It is a model that can be used to print a membership form. It can be empty (to print some of them for any event for example) or filled with one member information.
