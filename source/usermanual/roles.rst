@@ -40,7 +40,7 @@ Five roles are given from members information; they cannot be renamed, removed n
      - members for who the *administrator* checkbox has been checked
      - Staff member
 
-A role **inherits** the permissions of its parent: an administrator gets every permission of staff members, and those of members. The page of a system role tells where it comes from, and lists the administrators, staff members or group managers who have it.
+A role **inherits** the permissions of its parent: an administrator gets every permission of staff members, and those of members. The page of a system role tells where it comes from, and lists the administrators, staff members or group managers who have it, each group manager once with all the groups they manage. **Member** and **Up to date member** are given to nearly every member: their page only tells how many have them.
 
 On a new installation, system roles get what access levels allowed before:
 
@@ -58,12 +58,12 @@ The **super administrator** is not a member, and has no role: it is always grant
 What members own
 ----------------
 
-Some permissions are always granted on what a member owns: their own information, contributions and transactions, and those of their children. They are flagged **Always on own** in the permissions lists. This cannot be changed: a member can always see their own card, even if the **Member** role has no permission at all.
+Some permissions are always granted on what a member owns: their own information, contributions and transactions, and those of their children. They are flagged **Always on own** in the permissions lists. This cannot be changed: a member can always see their own card, even if the **Member** role has no permission at all. Printing their own membership card still depends on the **Allow members to print card ?** preference.
 
 Roles list and edition
 ======================
 
-The roles list displays each role, the role it inherits from, the number of permissions it grants (inherited ones are not counted) and how many members it has been given to. System roles are flagged as such.
+The roles list displays each role, the role it inherits from, the number of permissions it grants (inherited ones are not counted) and how many members have it. System roles are flagged as such.
 
 .. image:: ../_styles/static/images/usermanual/roles_list.png
    :scale: 50%
@@ -72,7 +72,7 @@ The roles list displays each role, the role it inherits from, the number of perm
 
 Type a name at the bottom of the list and use **Add** to create a role; you can choose the role it inherits from. A role can inherit from a system role or from another role you have created; a parent that would make the role inherit from itself is refused.
 
-Editing a role displays its name and the role it inherits from, then its permissions, gathered by domain (members, contributions, transactions, groups, mailings, configuration...). Check the permissions the role grants, and **Save**. Permissions the role inherits from its parent are checked and cannot be unchecked here: change the parent role instead.
+Editing a role displays its name, how many permissions it grants, how many it inherits from its parent role, and how many members have it; the pencil icons rename the role and change its parent. Permissions are gathered by domain (members, contributions, transactions, groups, mailings, configuration...), each in a section telling how many of its permissions are granted; sections with granted permissions are open. Switch on the permissions the role grants, and **Save**. Permissions the role inherits from its parent are switched on and cannot be switched off here: change the parent role instead. For a system role, only its permissions can be changed.
 
 .. image:: ../_styles/static/images/usermanual/role_edit.png
    :scale: 50%
@@ -84,7 +84,7 @@ Plugins may add their own permissions, in a domain of their own. Permissions of 
 Giving a role
 =============
 
-Roles you have created are given from their edition page, under **Members**: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back. Roles can also be given when editing a member, see below.
+Roles you have created are given from their edition page, in the **Members** block beside the permissions: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back. Roles can also be given when editing a member, see below.
 
 .. image:: ../_styles/static/images/usermanual/role_members.png
    :scale: 50%
@@ -100,7 +100,7 @@ Administrators see the roles of a member on their card: those computed from memb
    :align: center
    :alt: Roles on a member card
 
-When editing a member, the **Roles** block lists the same roles, and where computed ones come from. Those cannot be changed there, except **Administrator**: its switch is the same as the administrator field of the form. Choose one of the roles you have created, a group or **All groups**, and use **Add**; the cross takes a given role back, and **Cancel** keeps it. Changes are stored when the member is saved.
+When editing a member, the **Roles** block lists the same roles, and where computed ones come from. Those cannot be changed there: **Administrator** follows the *Galette Admin* field of the form. Choose one of the roles you have created, a group or **All groups**, and use **Add**; the cross takes a given role back, and **Cancel** keeps it. Changes are stored when the member is saved.
 
 .. image:: ../_styles/static/images/usermanual/member_roles_edit.png
    :scale: 50%
@@ -112,9 +112,9 @@ Roles for one group
 
 A role given for one group grants its permissions on the members of that group only, as for group managers: on their information, their contributions and their transactions. The lists of members, contributions and transactions only display those members. Groups are not inherited: a role for a group does not cover its subgroups.
 
-.. warning::
+.. note::
 
-   Some permissions do not apply to members: configuration, references lists, logs, plugins, roles... They have no group to be limited to; a role given for one group grants them **entirely**. Only give such permissions in roles you give for all groups.
+   Some permissions do not apply to members: configuration, references lists, logs, plugins, roles... They have no meaning on a group, and are **not granted** by a role given for one group; the role page flags them **Not on a group**. Give such permissions in roles you give for all groups.
 
 Examples
 ========
