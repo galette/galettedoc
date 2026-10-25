@@ -609,6 +609,95 @@ div#footer img {
     margin:0 auto;
 }
 
+/** Language picker, see langpicker.js; out of #header to stack above the breadcrumb */
+.langselector {
+    position: absolute;
+    z-index: 250;
+    top: 36px;
+    right: max(1rem, calc((100% - 1024px) / 2));
+}
+
+.langpicker {
+    position: relative;
+    font-size: 12.25px;
+}
+
+.langpicker summary {
+    display: inline-flex;
+    align-items: center;
+    gap: .35em;
+    padding: .25em .5em;
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 4px;
+    color: #ededed;
+    cursor: pointer;
+    list-style: none;
+}
+
+.langpicker summary::-webkit-details-marker {
+    display: none;
+}
+
+.langpicker summary:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.langpicker summary:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.langpicker-globe {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.langpicker-chevron {
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    transition: transform .12s ease;
+}
+
+.langpicker[open] .langpicker-chevron {
+    transform: rotate(180deg);
+}
+
+.langpicker ul {
+    position: absolute;
+    right: 0;
+    margin: .25em 0 0;
+    padding: .25em 0;
+    list-style: none;
+    min-width: 100%;
+    max-height: 60vh;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+}
+
+.langpicker li {
+    margin: 0;
+}
+
+.langpicker a {
+    display: block;
+    white-space: nowrap;
+    padding: .3em .8em;
+    color: #606060;
+    text-decoration: none;
+}
+
+.langpicker a:hover,
+.langpicker a:focus {
+    color: #fff;
+    background: #007baa;
+}
+
 #page {
     position: relative;
     padding: 0;
@@ -1153,6 +1242,11 @@ div.error{
 
     #wrapper {
         overflow: hidden;
+    }
+
+    /* Above the logo, which takes the middle of the header */
+    .langselector {
+        top: 2px;
     }
 
     /** Responsive menu */
