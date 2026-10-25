@@ -11,7 +11,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys, os, json
+from urllib.request import urlopen
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -126,6 +127,41 @@ html_theme = 'galette'
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['_styles/templates']
+
+# Search engines: each version is its own canonical, pages are declared as
+# alternates in each language. Only the stable (master) version is indexed,
+# development one documents features not yet released.
+doc_url = 'https://doc.galette.eu'
+
+
+def rtd_languages(project):
+    """Languages published on Read the Docs: the main project and its translations"""
+    api = 'https://readthedocs.org/api/v3/projects/%s/'
+    try:
+        with urlopen(api % project, timeout=10) as response:
+            main = json.load(response)
+        if main.get('translation_of'):
+            with urlopen(api % main['translation_of']['slug'], timeout=10) as response:
+                main = json.load(response)
+        with urlopen(api % main['slug'] + 'translations/?limit=100', timeout=10) as response:
+            translations = json.load(response)['results']
+    except (OSError, ValueError, KeyError) as e:
+        # Missing alternates must not prevent the documentation to be built
+        print('Unable to get Read the Docs translations: %s' % e)
+        return []
+    return sorted([main['language']['code']] + [t['language']['code'] for t in translations])
+
+
+doc_languages = []
+doc_version = os.environ.get('READTHEDOCS_VERSION', 'master')
+if os.environ.get('READTHEDOCS') == 'True':
+    html_baseurl = '%s/%s/%s/' % (doc_url, os.environ.get('READTHEDOCS_LANGUAGE', 'en'), doc_version)
+    doc_languages = rtd_languages(os.environ.get('READTHEDOCS_PROJECT', 'galette'))
+html_context = {
+    'doc_url': doc_url,
+    'doc_languages': doc_languages,
+    'doc_version': doc_version,
+}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
