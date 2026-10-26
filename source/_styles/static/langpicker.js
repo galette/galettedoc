@@ -41,8 +41,11 @@
         var translations = data.projects.translations;
         if (!picker || !translations.length) return;
 
-        /* Every translation is built from the same sources: the page exists there too */
-        var filename = data.readthedocs.resolver.filename.replace(/^\//, '');
+        /* Every translation is built from the same sources: the page exists there too.
+           The API only resolves the page when queried by URL; the addons client queries
+           by project and version slugs, so read the meta Read the Docs adds to each page */
+        var meta = document.querySelector('meta[name="readthedocs-resolver-filename"]');
+        var filename = (data.readthedocs.resolver.filename || (meta && meta.content) || '').replace(/^\//, '');
         var list = picker.querySelector('ul');
         list.textContent = '';
         translations.slice().sort(function (a, b) {
