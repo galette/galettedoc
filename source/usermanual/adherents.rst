@@ -127,9 +127,6 @@ The export ends with two columns listing the groups of each member: `Groups` and
 E-Mailing
 =========
 
-.. warning:: **Mailings in Galette are designed to work from the members list.**
-
-   Direct mailing creation will work without problems, but members selection is harder.
 
 From Galette, you can send mailings to a selection of members. Each sent mailing is stored in order to be reused, so you can select a stored mailing to be used as a template, retrieving selected members list, mailing subject and contents.
 
@@ -140,20 +137,18 @@ To send a new mailing, select members from the list and then choose **Mail** in 
    :align: center
    :alt: Selected members for mailing
 
-.. note:: Selecting members in the list must be done on one page only. Filtering features, as well as the possibility to display all members will be useful ;)
+.. versionchanged:: 1.3.2
 
-.. versionadded:: 0.9.1
+The **Manage selected members** button lets you change the recipients from the mailing form: search a member by name or ID to add them, or remove one from the list. Changes are applied once validated.
 
-You can choose a sender for each mailing:
-
-* **from Galette preferences** (default value): this will use information stored in preferences,
-* **current logged-in user**: will use the name and the email of the current logged-in user (not available for super admin),
-* **other**: you can set any name and email address you want.
-
-.. image:: ../_styles/static/images/usermanual/mailing_sender.png
+.. image:: ../_styles/static/images/usermanual/mailing_recipients.png
    :scale: 50%
    :align: center
-   :alt: Sender selection
+   :alt: Manage mailing recipients
+
+.. versionchanged:: 1.3.1
+
+Mailings are always sent with the sender name and address set in the :ref:`email preferences <pref_email>`; they can no longer be changed when sending a mailing.
 
 Once the subject has been filled, you can work on the contents. You can send email in text only, or in HTML (keep in mind sending HTML messages by mail is often not the way to go). A simple HTML WYSIWYG editor is provided.
 

@@ -43,7 +43,7 @@ You can filter on:
   * active accounts,
   * inactive accounts.
 
-* group affiliation,
+* group affiliation, or members that do not belong to any group,
 * presence or absence of an email address.
 
 All filters can be combined, giving you the ability to search among your active members whose have an email address and whose name contains a "a" ;)
@@ -59,7 +59,7 @@ Advanced search can be found in the main menu and propose an certain amount of f
 * **advanced search** which proposes extra fields on members that can be of use,
 * **advanced groups search** (experimental) which allow to search members belonging to all, or to any, of several selected groups,
 * **within contributions** allowing search on members contributions,
-* **free search** (experimental) which allow to select any member field possible, including dynamic fields, and which will automatically adapt to selected field. You can add and remove lines to refine search.
+* **free search** (experimental) which allow to select any member field possible, including dynamic fields, and which will automatically adapt to selected field; a field can also be searched as empty, or not empty. You can add and remove lines to refine search.
 
 .. image:: ../_styles/static/images/usermanual/advanced_search.png
    :scale: 50%
