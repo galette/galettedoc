@@ -1,5 +1,50 @@
 :orphan:
 
+.. _v1320:
+
+**************
+1.3.1 -> 1.3.2
+**************
+
+.. note::
+
+   Fullcard and PayPal plugins are no longer maintained, and their repositories have been archived. For online payments, use `Stripe <https://galette-plugins.github.io/plugin-stripe/>`_ or `HelloAsso <https://galette-plugins.github.io/plugin-helloasso/>`_ plugins instead.
+
+.. _ajouts_132:
+
+New features
+============
+
+- Mailing recipients are managed from a members search dropdown instead of a members table
+- Links to documents can be added to mails and PDF models, one by one, by system type, or to the public documents page
+- Contributions can be changed in mass from the list: payment type, date, comment and dynamic fields
+- Members dynamic fields can be added to the members list from the core lists configuration
+- Members that do not belong to any group can be filtered from members list and advanced search
+- Advanced search can look for empty or not empty fields
+- New plugins releases are reported on plugins page, plugins menu entry and at administrator login; Galette and plugins releases are now checked from GitHub
+
+.. _ameliorations_132:
+
+Improvements
+============
+
+- Core fields and core lists configuration flag changed, moved, added and removed fields, and warn they are not saved yet; a removed field stays in the list until saved, and can be kept back
+- Company name is printed on members labels, between name and address
+- Mass change checkboxes now have a label for screen readers
+
+.. _bogues_132:
+
+Fixes
+=====
+
+- Galette failed to start when directory has been renamed
+- Logging out did not forget the groups a member managed, nor their first name
+- Values inserted in mails and PDF models lost their HTML entities, or what looked like a tag
+- Members mass change emptied boolean dynamic fields that had not been selected
+- Changing a dropdown or a date in the mass change window did not select the field
+- Dashboard failed with an error when the browser did not send its display cookie
+- Installer did not tell which directories could not be written; it now shows their paths, and whether they are missing or not writable
+
 .. _v1310:
 
 **************
