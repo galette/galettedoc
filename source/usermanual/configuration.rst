@@ -241,3 +241,5 @@ An email will be send to administrators when:
 Of course, emails will be sent only if Galette configuration allows it (and the setup is correct). Sending messages to administrators is configured globally from the preferences, while sending emails to members is conditioned on a checkbox from the user interface, excepting for self registration messages that will always be send.
 
 Several variables - automatically replaced on sending - are available for both subject and contents. Some of them may be used in all messages, but others will be only on some conditions. Refer to the inline help on Galette interface to know more.
+
+Links to download :ref:`documents <documents>` can be inserted as well; see :ref:`links in emails and PDF <documents_replacements>`.

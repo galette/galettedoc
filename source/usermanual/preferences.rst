@@ -167,6 +167,8 @@ Sending email parameters:
 
 * **Mail signature**: signature added to all sent emails. Available variables are displayed in the inline help from the application.
 
+  Links to download :ref:`documents <documents>` can be inserted as well; see :ref:`links in emails and PDF <documents_replacements>`.
+
 .. versionchanged:: 1.3.0
 
    * The **qmail** method has been removed. Instances still configured with it are switched to ``sendmail`` when the database is updated.
