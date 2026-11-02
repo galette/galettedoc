@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-23 09:21+0200\n"
+"POT-Creation-Date: 2026-11-02 20:40+0100\n"
 "PO-Revision-Date: 2026-10-17 06:11+0000\n"
 "Last-Translator: Marko Puljic "
 "<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
@@ -313,19 +313,7 @@ msgstr ""
 msgid "E-Mailing"
 msgstr "Slanje e-pošte"
 
-#: ../usermanual/adherents.rst:130
-msgid "**Mailings in Galette are designed to work from the members list.**"
-msgstr "**Skupne poruke u Galetteu namijenjene su slanju iz popisa članova.**"
-
-#: ../usermanual/adherents.rst:132
-msgid ""
-"Direct mailing creation will work without problems, but members selection is "
-"harder."
-msgstr ""
-"Skupnu poruku možete izraditi i izravno, ali tada je odabir članova "
-"složeniji."
-
-#: ../usermanual/adherents.rst:134
+#: ../usermanual/adherents.rst:131
 msgid ""
 "From Galette, you can send mailings to a selection of members. Each sent "
 "mailing is stored in order to be reused, so you can select a stored mailing "
@@ -336,7 +324,7 @@ msgstr ""
 "poruka pohranjuje se za ponovnu uporabu. Pohranjenu poruku možete odabrati "
 "kao predložak i preuzeti njezin popis primatelja, predmet i sadržaj."
 
-#: ../usermanual/adherents.rst:136
+#: ../usermanual/adherents.rst:133
 msgid ""
 "To send a new mailing, select members from the list and then choose **Mail** "
 "in the **For the selection:** menu above the list. If some of selected "
@@ -347,46 +335,29 @@ msgstr ""
 "izborniku **Za odabrane:** iznad popisa. Ako neki od njih nemaju adresu e-"
 "pošte, Galette će ponuditi ispis adresnih naljepnica za njih."
 
-#: ../usermanual/adherents.rst:138
+#: ../usermanual/adherents.rst:135
 msgid "Selected members for mailing"
 msgstr "Članovi odabrani za slanje skupne poruke"
 
-#: ../usermanual/adherents.rst:143
+#: ../usermanual/adherents.rst:142
 msgid ""
-"Selecting members in the list must be done on one page only. Filtering "
-"features, as well as the possibility to display all members will be useful ;)"
+"The **Manage selected members** button lets you change the recipients from "
+"the mailing form: search a member by name or ID to add them, or remove one "
+"from the list. Changes are applied once validated."
 msgstr ""
-"Članove morate odabrati na jednoj stranici popisa. Pri tome pomažu "
-"filtriranje i mogućnost prikaza svih članova ;)"
 
-#: ../usermanual/adherents.rst:147
-msgid "You can choose a sender for each mailing:"
-msgstr "Za svaku skupnu poruku možete odabrati pošiljatelja:"
-
-#: ../usermanual/adherents.rst:149
-msgid ""
-"**from Galette preferences** (default value): this will use information "
-"stored in preferences,"
+#: ../usermanual/adherents.rst:144
+msgid "Manage mailing recipients"
 msgstr ""
-"**iz postavki Galettea** (zadano): koriste se podaci pohranjeni u postavkama,"
-
-#: ../usermanual/adherents.rst:150
-msgid ""
-"**current logged-in user**: will use the name and the email of the current "
-"logged-in user (not available for super admin),"
-msgstr ""
-"**trenutačno prijavljeni korisnik**: koriste se ime i adresa e-pošte "
-"prijavljenog korisnika (nije dostupno glavnom administratoru),"
 
 #: ../usermanual/adherents.rst:151
-msgid "**other**: you can set any name and email address you want."
-msgstr "**drugo**: možete unijeti željeno ime i adresu e-pošte."
+msgid ""
+"Mailings are always sent with the sender name and address set in "
+"the :ref:`email preferences <pref_email>`; they can no longer be changed "
+"when sending a mailing."
+msgstr ""
 
 #: ../usermanual/adherents.rst:153
-msgid "Sender selection"
-msgstr "Odabir pošiljatelja"
-
-#: ../usermanual/adherents.rst:158
 msgid ""
 "Once the subject has been filled, you can work on the contents. You can send "
 "email in text only, or in HTML (keep in mind sending HTML messages by mail "
@@ -396,7 +367,7 @@ msgstr ""
 "običan tekst ili HTML. Imajte na umu da HTML često nije najbolji izbor za e-"
 "poštu. Dostupan je jednostavan vizualni uređivač HTML-a."
 
-#: ../usermanual/adherents.rst:160
+#: ../usermanual/adherents.rst:155
 msgid ""
 "Once the HTML editor is enabled, the checkbox to handle HTML tags is "
 "automatically checked, remember to check the box if you do not use the "
@@ -405,7 +376,7 @@ msgstr ""
 "Kad uključite HTML uređivač, automatski se označava okvir za obradu HTML "
 "oznaka. Ako šaljete HTML bez tog uređivača, označite okvir ručno!"
 
-#: ../usermanual/adherents.rst:162
+#: ../usermanual/adherents.rst:157
 msgid ""
 "Even if Galette is able to send HTML emails, this is discouraged. Messages "
 "length will be way larger (for almost nothing), and some (like me!) read "
@@ -417,7 +388,7 @@ msgstr ""
 "običan tekst. Zato Galette **uvijek** uključuje i tekstnu verziju HTML "
 "poruke."
 
-#: ../usermanual/adherents.rst:164
+#: ../usermanual/adherents.rst:159
 msgid ""
 "It is also possible to add attachements, just click on the `Browse` button "
 "in that attachements section. If your browser is compatible, you can add "
@@ -430,7 +401,7 @@ msgstr ""
 "`Shift` i `Ctrl`. Privici se pohranjuju na disk u mapu nazvanu prema "
 "identifikatoru skupne poruke, koji se automatski određuje iz baze podataka."
 
-#: ../usermanual/adherents.rst:167
+#: ../usermanual/adherents.rst:162
 msgid ""
 "Each attachment has a maximum size of its own, which you can :ref:`change "
 "from the advanced configuration <upload_sizes>` page."
@@ -438,15 +409,15 @@ msgstr ""
 "Svaki privitak ima vlastito ograničenje veličine koje "
 "možete :ref:`promijeniti u naprednim postavkama <upload_sizes>`."
 
-#: ../usermanual/adherents.rst:169
+#: ../usermanual/adherents.rst:164
 msgid "`Preview` button let you preview your message before sending it."
 msgstr "Gumb `Pregled` omogućuje pregled poruke prije slanja."
 
-#: ../usermanual/adherents.rst:171
+#: ../usermanual/adherents.rst:166
 msgid "Preview message"
 msgstr "Pregled poruke"
 
-#: ../usermanual/adherents.rst:176
+#: ../usermanual/adherents.rst:171
 msgid ""
 "Any started emailings will be stored in your session to be retrieved in the "
 "future. An icon will be displayed in pages titles when a mailing is progress "
@@ -456,7 +427,7 @@ msgstr ""
 "vratiti. Dok je poruka u pripremi, u naslovima stranica pojavljuje se ikona "
 "s poveznicom na nju."
 
-#: ../usermanual/adherents.rst:178
+#: ../usermanual/adherents.rst:173
 msgid ""
 "If you want, you can cancel this mailing using the `Cancel mailing` button, "
 "it will be deleted from your session. If you want to store it for a longer "
@@ -467,11 +438,11 @@ msgstr ""
 "sesije. Za dulje čuvanje upotrijebite gumb `Spremi`. Poruka će se tada "
 "pohraniti u popis skupnih poruka i moći ćete joj pristupiti poslije."
 
-#: ../usermanual/adherents.rst:183
+#: ../usermanual/adherents.rst:178
 msgid "Sending large mailings"
 msgstr "Slanje velikih skupnih poruka"
 
-#: ../usermanual/adherents.rst:187
+#: ../usermanual/adherents.rst:182
 msgid ""
 "By default, a mailing is a single message, sent right away, carrying every "
 "recipient in blind copy - but mail servers restrict what one message may "
@@ -481,7 +452,7 @@ msgstr ""
 "skrivenoj kopiji. Poslužitelji e-pošte, međutim, ograničavaju broj "
 "primatelja u poruci i brzinu slanja."
 
-#: ../usermanual/adherents.rst:191
+#: ../usermanual/adherents.rst:186
 msgid ""
 "Using your \"personal\" SMTP provider is often not a good idea; dedicated "
 "services are better suited for large mailings."
@@ -489,11 +460,11 @@ msgstr ""
 "Uporaba osobnog SMTP računa često nije dobar izbor; namjenske usluge "
 "prikladnije su za slanje velikih skupnih poruka."
 
-#: ../usermanual/adherents.rst:193
+#: ../usermanual/adherents.rst:188
 msgid "And you even may have limits on a dedicated service."
 msgstr "Ograničenja mogu postojati i na namjenskoj usluzi."
 
-#: ../usermanual/adherents.rst:195
+#: ../usermanual/adherents.rst:190
 msgid ""
 "Galette :ref:`sending limits <mail_throttling>` changes what happens once "
 "you confirm the sending:"
@@ -501,7 +472,7 @@ msgstr ""
 "Galetteova :ref:`ograničenja slanja <mail_throttling>` mijenjaju postupak "
 "nakon što potvrdite slanje:"
 
-#: ../usermanual/adherents.rst:197
+#: ../usermanual/adherents.rst:192
 msgid ""
 "with a **batch size** set, Galette splits the recipients into several "
 "messages of at most that size, and waits the configured delay between two of "
@@ -512,7 +483,7 @@ msgstr ""
 "najviše toliko primatelja i čeka zadani interval između poruka. Slanje je i "
 "dalje sinkrono: potvrda se prikazuje tek kad su sve poruke poslane,"
 
-#: ../usermanual/adherents.rst:198
+#: ../usermanual/adherents.rst:193
 msgid ""
 "with an **hourly or daily limit** set, sending cannot be done in one go any "
 "more. Galette stores the mailing, queues one entry per recipient, and takes "
@@ -522,7 +493,7 @@ msgstr ""
 "izvršiti odjednom. Galette pohranjuje skupnu poruku, dodaje zasebnu stavku "
 "za svakog primatelja u red za slanje i otvara stranicu napretka."
 
-#: ../usermanual/adherents.rst:200
+#: ../usermanual/adherents.rst:195
 msgid ""
 "The progress page sends the mailing batch after batch and shows how far it "
 "is: recipients sent, remaining and failed, and what the quota has consumed "
@@ -532,11 +503,11 @@ msgstr ""
 "preostalih i neuspjelih primatelja te iskorištenost kvote. Ostavite je "
 "otvorenu dok ne potvrdi da je skupna poruka poslana."
 
-#: ../usermanual/adherents.rst:202
+#: ../usermanual/adherents.rst:197
 msgid "A mailing being sent, halfway through its queue"
 msgstr "Slanje skupne poruke na polovici reda za slanje"
 
-#: ../usermanual/adherents.rst:207
+#: ../usermanual/adherents.rst:202
 msgid ""
 "Nothing is lost if you close it, or if the quota runs out before the end: "
 "the queue is stored in database. The page then tells you sending will resume "
@@ -549,7 +520,7 @@ msgstr ""
 "nastaviti poslije. Preostale poruke šalju se kad ponovno otvorite skupnu "
 "poruku ili putem :ref:`obrade reda izvan preglednika <mailing_queue_cron>`."
 
-#: ../usermanual/adherents.rst:211
+#: ../usermanual/adherents.rst:206
 msgid ""
 "The progress page is the only thing a queued mailing *needs*. Galette "
 "proposes alternative methods to :ref:`drain the mail queue "
@@ -559,7 +530,7 @@ msgstr ""
 "Galette nudi i druge načine :ref:`obrade reda za slanje "
 "<mailing_queue_cron>`, koje svakako preporučujemo ;-)"
 
-#: ../usermanual/adherents.rst:213
+#: ../usermanual/adherents.rst:208
 msgid ""
 "A queued mailing is stored in the history right away, and only counts as "
 "**sent** once its last recipient has left the queue."
@@ -567,11 +538,11 @@ msgstr ""
 "Skupna poruka u redu za slanje odmah se pohranjuje u povijest, a status "
 "**poslano** dobiva tek kad posljednji primatelj napusti red."
 
-#: ../usermanual/adherents.rst:216
+#: ../usermanual/adherents.rst:211
 msgid "Mailings history"
 msgstr "Povijest skupnih poruka"
 
-#: ../usermanual/adherents.rst:218
+#: ../usermanual/adherents.rst:213
 msgid ""
 "When you start a mailing, it is stored into your session. Session ends when "
 "users log out, or on a server defined timeout. Mailing history stores the "
@@ -582,7 +553,7 @@ msgstr ""
 "ili nakon isteka vremena zadanog na poslužitelju. Povijest skupnih poruka "
 "čuva poruke u bazi podataka, pa ostaju dostupne i poslije."
 
-#: ../usermanual/adherents.rst:220
+#: ../usermanual/adherents.rst:215
 msgid ""
 "Every sent mailing is stored into the database, and can be used as a "
 "template to write a new one. In this case, a new mailing will be created "
@@ -592,7 +563,7 @@ msgstr ""
 "predložak za novu. Tada se iz podataka u povijesti izrađuje nova poruka, a "
 "izvorna ostaje nepromijenjena."
 
-#: ../usermanual/adherents.rst:222
+#: ../usermanual/adherents.rst:217
 msgid ""
 "Mailings can be stored before they are sent. In this case, it is possible to "
 "continue it later. When you use history on a draft mailing, original entry "
@@ -601,37 +572,37 @@ msgstr ""
 "Skupne poruke možete spremiti i prije slanja te nastaviti rad poslije. Ako "
 "nastavite nacrt iz povijesti, izvorni se zapis zamjenjuje pri slanju."
 
-#: ../usermanual/adherents.rst:224
+#: ../usermanual/adherents.rst:219
 msgid ""
 "When you use an existing history entry, here are the information that will "
 "be used:"
 msgstr "Pri ponovnoj uporabi zapisa iz povijesti preuzimaju se:"
 
-#: ../usermanual/adherents.rst:226
+#: ../usermanual/adherents.rst:221
 msgid "recipients,"
 msgstr "primatelji,"
 
-#: ../usermanual/adherents.rst:227
+#: ../usermanual/adherents.rst:222
 msgid "attachements,"
 msgstr "privici,"
 
-#: ../usermanual/adherents.rst:228
+#: ../usermanual/adherents.rst:223
 msgid "subject,"
 msgstr "predmet,"
 
-#: ../usermanual/adherents.rst:229
+#: ../usermanual/adherents.rst:224
 msgid "message,"
 msgstr "poruka,"
 
-#: ../usermanual/adherents.rst:230
+#: ../usermanual/adherents.rst:225
 msgid "html/text flag."
 msgstr "oznaka HTML-a ili običnog teksta."
 
-#: ../usermanual/adherents.rst:235
+#: ../usermanual/adherents.rst:230
 msgid "CSV imports"
 msgstr "Uvoz CSV-a"
 
-#: ../usermanual/adherents.rst:237
+#: ../usermanual/adherents.rst:232
 msgid ""
 "It is possible to import member data from a predefined model. A default "
 "model is provided, but you can configure it to suits your needs, using the "
@@ -641,11 +612,11 @@ msgstr ""
 "Dostupan je zadani predložak, a možete ga prilagoditi putem stavke izbornika "
 "`Uvoz`."
 
-#: ../usermanual/adherents.rst:240
+#: ../usermanual/adherents.rst:235
 msgid "Model"
 msgstr "Model"
 
-#: ../usermanual/adherents.rst:242
+#: ../usermanual/adherents.rst:237
 msgid ""
 "Import model defines fields and their order in a CSV file. When importing, "
 "current model will be used to check your CSV file integrity."
@@ -653,15 +624,15 @@ msgstr ""
 "Predložak uvoza određuje polja i njihov redoslijed u CSV datoteci. Pri uvozu "
 "trenutačni se predložak koristi za provjeru ispravnosti datoteke."
 
-#: ../usermanual/adherents.rst:244
+#: ../usermanual/adherents.rst:239
 msgid "To configure the model, click on the `Configure` button from the UI."
 msgstr "Za podešavanje predloška kliknite gumb `Podesi` u sučelju."
 
-#: ../usermanual/adherents.rst:246
+#: ../usermanual/adherents.rst:241
 msgid "Default import model"
 msgstr "Zadani predložak uvoza"
 
-#: ../usermanual/adherents.rst:251
+#: ../usermanual/adherents.rst:246
 msgid ""
 "If proposed model is not ok for you, click on `Edit model` and choose your "
 "fields:"
@@ -669,16 +640,16 @@ msgstr ""
 "Ako vam ponuđeni predložak ne odgovara, kliknite `Uredi predložak` i "
 "odaberite polja:"
 
-#: ../usermanual/adherents.rst:253
+#: ../usermanual/adherents.rst:248
 msgid "Import model configuration"
 msgstr "Podešavanje predloška uvoza"
 
-#: ../usermanual/adherents.rst:258
+#: ../usermanual/adherents.rst:253
 msgid ""
 "Once you have selected your fields, click on the `Store new model` button."
 msgstr "Nakon odabira polja kliknite `Spremi novi predložak`."
 
-#: ../usermanual/adherents.rst:260
+#: ../usermanual/adherents.rst:255
 msgid ""
 "Dynamic fields of the members can be imported as well, except file fields. "
 "A :ref:`repeatable field <dynamic_fields_repeat>` gets one column per value; "
@@ -688,7 +659,7 @@ msgstr ""
 "datoteke. :ref:`Ponovljivo polje <dynamic_fields_repeat>` dobiva jedan "
 "stupac po vrijednosti; polje bez ograničenja dobiva 10 stupaca."
 
-#: ../usermanual/adherents.rst:262
+#: ../usermanual/adherents.rst:257
 msgid ""
 "When in the current model tab, you can download an empty model from the "
 "`Generate an empty CSV file` button. Of course, you can change model if you "
@@ -698,26 +669,26 @@ msgstr ""
 "`Izradi praznu CSV datoteku`. Predložak možete promijeniti ili ukloniti kako "
 "biste vratili zadani."
 
-#: ../usermanual/adherents.rst:267
+#: ../usermanual/adherents.rst:262
 msgid "Groups"
 msgstr "Grupe"
 
-#: ../usermanual/adherents.rst:271
+#: ../usermanual/adherents.rst:266
 msgid ""
 "Once at least one group exists, two more fields can be added to the model:"
 msgstr ""
 "Jednom kada postoji najmanje jedna grupa, dva dodatna polja mogu biti dodana "
 "modelu:"
 
-#: ../usermanual/adherents.rst:273
+#: ../usermanual/adherents.rst:268
 msgid "**Groups**: the groups the member belongs to,"
 msgstr "**Grupe**: grupe kojima član pripada"
 
-#: ../usermanual/adherents.rst:274
+#: ../usermanual/adherents.rst:269
 msgid "**Managed groups**: the groups the member manages."
 msgstr "**Upravljane grupe**: grupe kojima član upravlja."
 
-#: ../usermanual/adherents.rst:276
+#: ../usermanual/adherents.rst:271
 msgid ""
 "Several groups are separated with a pipe (``|``) in the same cell, for "
 "example ``Section 33|Section 47``. A group can be named:"
@@ -725,11 +696,11 @@ msgstr ""
 "Nekoliko grupa je odjeljeno sa pipe (``|``) u istoj ćeliji, na primjer "
 "``Section 33|Section 47``. Grupa može navesti:"
 
-#: ../usermanual/adherents.rst:278
+#: ../usermanual/adherents.rst:273
 msgid "**by its name**, when no other group has the same name,"
 msgstr "**prema nazivu**, kada nijedna druga grupa nema isti naziv,"
 
-#: ../usermanual/adherents.rst:279
+#: ../usermanual/adherents.rst:274
 msgid ""
 "**by its full name** otherwise, with its parents, each followed by a slash "
 "surrounded by spaces, for example ``Federation / Section 33``."
@@ -738,7 +709,7 @@ msgstr ""
 "čemu su nazivi odvojeni kosom crtom s razmacima s obje strane, na primjer "
 "``Savez / Sekcija 33``."
 
-#: ../usermanual/adherents.rst:281
+#: ../usermanual/adherents.rst:276
 msgid ""
 "An unknown group, or a name several groups share, stops the import; the "
 "error message gives the line and, for a shared name, the full names to "
@@ -749,7 +720,7 @@ msgstr ""
 "više grupa prikazuje njihove pune nazive kako biste mogli odabrati "
 "odgovarajuću. Prazna ćelija znači da član neće biti dodan ni u jednu grupu."
 
-#: ../usermanual/adherents.rst:285
+#: ../usermanual/adherents.rst:280
 msgid ""
 "The header of a CSV export is translated, while the import only relies on "
 "columns order in the model: an exported file has to be adapted before it can "
@@ -759,11 +730,11 @@ msgstr ""
 "na redoslijed stupaca definiran u predlošku: izvezenu datoteku potrebno je "
 "prilagoditi prije ponovnog uvoza."
 
-#: ../usermanual/adherents.rst:288
+#: ../usermanual/adherents.rst:283
 msgid "Import"
 msgstr "Uvoz"
 
-#: ../usermanual/adherents.rst:290
+#: ../usermanual/adherents.rst:285
 msgid ""
 "Once you have retrieved and fill the empty file, you have to send it using "
 "the form `Send a new file`. At this step, Galette will check your file "
@@ -775,7 +746,7 @@ msgstr ""
 "prelazi li :ref:`najveću dopuštenu veličinu za uvoz <upload_sizes>` (zadano "
 "2 MB)."
 
-#: ../usermanual/adherents.rst:294
+#: ../usermanual/adherents.rst:289
 msgid ""
 "If you want to import a huge file, you can put it from your FTP client in "
 "the ``galette/data/imports`` directory, or split it into several smaller "
@@ -784,7 +755,7 @@ msgstr ""
 "Veliku datoteku možete FTP klijentom staviti u mapu ``galette/data/imports`` "
 "ili je podijeliti u manje datoteke koje uvozite pojedinačno."
 
-#: ../usermanual/adherents.rst:296
+#: ../usermanual/adherents.rst:291
 msgid ""
 "Sent files are listed in the `Existing files` section. You can show, remove "
 "or import it:"
@@ -792,11 +763,11 @@ msgstr ""
 "Poslane datoteke prikazuju se u odjeljku `Postojeće datoteke`. Možete ih "
 "pregledati, ukloniti ili uvesti:"
 
-#: ../usermanual/adherents.rst:298
+#: ../usermanual/adherents.rst:293
 msgid "Select and import file"
 msgstr "Odabir i uvoz datoteke"
 
-#: ../usermanual/adherents.rst:303
+#: ../usermanual/adherents.rst:298
 msgid ""
 "The `dry run` checkbox (checked per default) is designed to test your file "
 "data are valid (mandatory fields filled, data formatting is correct, ...) "
@@ -805,7 +776,7 @@ msgstr ""
 "Potvrdni okvir `Probni uvoz`, koji je zadano označen, omogućuje provjeru "
 "ispravnosti podataka (obveznih polja, formata i slično) bez spremanja u bazu."
 
-#: ../usermanual/adherents.rst:307
+#: ../usermanual/adherents.rst:302
 msgid ""
 "When one line is incorrect, nothing from the file is stored in the database. "
 "Using the dry run first is still advised, to fix all errors before importing."
@@ -814,7 +785,7 @@ msgstr ""
 "spremljen u bazu podataka. I dalje se preporučuje najprije pokrenuti probni "
 "uvoz kako biste ispravili sve pogreške prije stvarnog uvoza."
 
-#: ../usermanual/adherents.rst:309
+#: ../usermanual/adherents.rst:304
 msgid ""
 "Galette displays error messages if something went wrong, in dry-run mode or "
 "not. A successful dry run says nothing has been stored."
@@ -823,7 +794,7 @@ msgstr ""
 "ili stvarnom uvozu. Uspješan probni uvoz prikaže poruku, ništa nije "
 "spremljeno."
 
-#: ../usermanual/adherents.rst:313
+#: ../usermanual/adherents.rst:308
 msgid ""
 "You may see mandatory missing fields even if import is ok. This may happen "
 "when all the fields you set as required in Galette configuration are not "
@@ -833,11 +804,11 @@ msgstr ""
 "uvoza ako predložak ne sadrži sva polja koja ste u Galetteu označili kao "
 "obvezna."
 
-#: ../usermanual/adherents.rst:318
+#: ../usermanual/adherents.rst:313
 msgid "Links between members"
 msgstr "Povezivanje članova"
 
-#: ../usermanual/adherents.rst:322
+#: ../usermanual/adherents.rst:317
 msgid ""
 "You can link several members to a \"parent\" one. This may be used to store "
 "families for exemple, or members of a same company. You can access children "
@@ -847,7 +818,7 @@ msgstr ""
 "primjerice, za obitelji ili članove iste tvrtke. Iz kartona nadređenog "
 "možete otvoriti podređene članove, i obratno."
 
-#: ../usermanual/adherents.rst:324
+#: ../usermanual/adherents.rst:319
 msgid ""
 "You can add as many child as you want for a member, but a child cannot "
 "become a parent."
@@ -855,7 +826,7 @@ msgstr ""
 "Član može imati neograničen broj podređenih članova, ali podređeni član ne "
 "može postati nadređeni."
 
-#: ../usermanual/adherents.rst:326
+#: ../usermanual/adherents.rst:321
 msgid ""
 "The other interesting point of this system is you can retrieve some "
 "information from the parent when sending mailings or labels. In the children "
@@ -868,7 +839,7 @@ msgstr ""
 "adresa automatski postaju neobvezne bez obzira na postavke. Ako nedostaju, "
 "preuzimaju se od nadređenog člana."
 
-#: ../usermanual/adherents.rst:328
+#: ../usermanual/adherents.rst:323
 msgid ""
 "Members without email adresses cannot use the \"retrieve password\" feature. "
 "This does not affect the uniqueness email constraint in the database."
@@ -876,11 +847,11 @@ msgstr ""
 "Članovi bez adrese e-pošte ne mogu koristiti oporavak lozinke. To ne utječe "
 "na ograničenje jedinstvenosti adresa e-pošte u bazi."
 
-#: ../usermanual/adherents.rst:333
+#: ../usermanual/adherents.rst:328
 msgid "Resetting a second factor"
 msgstr "Poništavanje drugog faktora"
 
-#: ../usermanual/adherents.rst:337
+#: ../usermanual/adherents.rst:332
 msgid ""
 "A member who lost the device computing their codes, and has "
 "no :ref:`recovery code <man_2fa>` left either, cannot log in anymore. From "
@@ -894,7 +865,7 @@ msgstr ""
 "ključ i preostali kodovi za oporavak. Član se tada prijavljuje samo lozinkom "
 "dok ponovno ne postavi drugi faktor."
 
-#: ../usermanual/adherents.rst:339
+#: ../usermanual/adherents.rst:334
 msgid ""
 "A reset only ever goes downwards. Your own second factor is not reset from "
 "here -- use your own page, which asks for a code first, so that a session "
@@ -908,7 +879,7 @@ msgstr ""
 "Član uprave ne može poništiti faktor administratora, a administrator ne može "
 "poništiti faktor drugog administratora; to može samo glavni administrator."
 
-#: ../usermanual/adherents.rst:343
+#: ../usermanual/adherents.rst:338
 msgid ""
 "Do check who is asking. Resetting a second factor removes a protection, and "
 "a phone call claiming to be a member is exactly how somebody would go about "
@@ -920,11 +891,11 @@ msgstr ""
 "koji bi je netko pokušao ukloniti. Poništavanje se bilježi u povijesti, "
 "zajedno s podacima tko ga je izvršio i za koga."
 
-#: ../usermanual/adherents.rst:346
+#: ../usermanual/adherents.rst:341
 msgid "Impersonating"
 msgstr "Prijava kao drugi korisnik"
 
-#: ../usermanual/adherents.rst:350
+#: ../usermanual/adherents.rst:345
 msgid ""
 "Some issues may be related to a particular account, because of its ACLs, "
 "groups, ... In this case, it is unfortunately frequent to see some "
@@ -934,7 +905,7 @@ msgstr ""
 "slično. U takvim se slučajevima, nažalost, često šalju pristupni podaci "
 "nezaštićenom e-poštom, što treba izbjegavati."
 
-#: ../usermanual/adherents.rst:352
+#: ../usermanual/adherents.rst:347
 msgid ""
 "As super administrator user, you will see an extra icon in the members list, "
 "allowing you to log in as selected user without his credentials. Once you've "
@@ -945,6 +916,48 @@ msgstr ""
 "odabrani korisnik bez njegovih pristupnih podataka. Nakon prijave može "
 "reproducirati problem i riješiti ga ili prikupiti podatke potrebne za "
 "prijavu razvojnom timu."
+
+#~ msgid "**Mailings in Galette are designed to work from the members list.**"
+#~ msgstr ""
+#~ "**Skupne poruke u Galetteu namijenjene su slanju iz popisa članova.**"
+
+#~ msgid ""
+#~ "Direct mailing creation will work without problems, but members selection "
+#~ "is harder."
+#~ msgstr ""
+#~ "Skupnu poruku možete izraditi i izravno, ali tada je odabir članova "
+#~ "složeniji."
+
+#~ msgid ""
+#~ "Selecting members in the list must be done on one page only. Filtering "
+#~ "features, as well as the possibility to display all members will be "
+#~ "useful ;)"
+#~ msgstr ""
+#~ "Članove morate odabrati na jednoj stranici popisa. Pri tome pomažu "
+#~ "filtriranje i mogućnost prikaza svih članova ;)"
+
+#~ msgid "You can choose a sender for each mailing:"
+#~ msgstr "Za svaku skupnu poruku možete odabrati pošiljatelja:"
+
+#~ msgid ""
+#~ "**from Galette preferences** (default value): this will use information "
+#~ "stored in preferences,"
+#~ msgstr ""
+#~ "**iz postavki Galettea** (zadano): koriste se podaci pohranjeni u "
+#~ "postavkama,"
+
+#~ msgid ""
+#~ "**current logged-in user**: will use the name and the email of the "
+#~ "current logged-in user (not available for super admin),"
+#~ msgstr ""
+#~ "**trenutačno prijavljeni korisnik**: koriste se ime i adresa e-pošte "
+#~ "prijavljenog korisnika (nije dostupno glavnom administratoru),"
+
+#~ msgid "**other**: you can set any name and email address you want."
+#~ msgstr "**drugo**: možete unijeti željeno ime i adresu e-pošte."
+
+#~ msgid "Sender selection"
+#~ msgstr "Odabir pošiljatelja"
 
 #~ msgid ""
 #~ "When you import a CSV file, if one line is incorrect, previous ones may "
