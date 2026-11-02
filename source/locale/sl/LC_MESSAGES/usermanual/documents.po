@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-11-01 22:29+0100\n"
-"PO-Revision-Date: 2026-10-08 20:45+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"PO-Revision-Date: 2026-11-02 12:08+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-documents/sl/>\n"
 "Language: sl\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../usermanual/documents.rst:5
 msgid "Documents"
@@ -137,7 +139,7 @@ msgstr ""
 
 #: ../usermanual/documents.rst:62
 msgid "Links in emails and PDF"
-msgstr ""
+msgstr "Povezave v e-poštnih sporočilih in PDF-jih"
 
 #: ../usermanual/documents.rst:66
 msgid ""
@@ -148,15 +150,23 @@ msgid ""
 "form, for example. There is no need to copy and paste an address, that would "
 "break when a new version of the document is uploaded."
 msgstr ""
+"Povezave za prenos dokumentov lahko dodate v :ref:`vsebino e-poštnih "
+"sporočil <emails_contents>`, v :ref:`e-poštni podpis <pref_email>` in v "
+":ref:`predloge PDF <pdf_models>`: na primer povezavo do statuta društva v e-"
+"poštnem sporočilu, poslanem novemu članu, ali povezavo do poslovnika v "
+"pristopni izjavi. Ni vam treba kopirati in prilepiti naslova, saj bi ta "
+"postal neveljaven, ko bi naložili novo različico dokumenta."
 
 #: ../usermanual/documents.rst:68
 msgid "Three kinds of variables are available:"
-msgstr ""
+msgstr "Na voljo so tri vrste spremenljivk:"
 
 #: ../usermanual/documents.rst:70
 msgid ""
 "``{DOCUMENT_x}``: a link to one document, where ``x`` is the document number;"
 msgstr ""
+"``{DOCUMENT_x}``: povezava do enega dokumenta, pri čemer je ``x`` številka "
+"dokumenta;"
 
 #: ../usermanual/documents.rst:71
 msgid ""
@@ -166,10 +176,15 @@ msgid ""
 "adhesion form, meeting minutes and votes results. The variable is replaced "
 "by nothing if there is no document of this type;"
 msgstr ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, ``"
+"{DOCUMENTS_MINUTES}`` in ``{DOCUMENTS_VOTES}``: povezave do vseh dokumentov "
+"posamezne vrste, in sicer: status združenja, pravila delovanja, pristopna "
+"izjava, zapisniki sej in rezultati glasovanj. Če dokumenta določene vrste "
+"ni, se spremenljivka nadomesti z ničemer;"
 
 #: ../usermanual/documents.rst:72
 msgid "``{DOCUMENTS_URI}``: the address of the documents public list."
-msgstr ""
+msgstr "``{DOCUMENTS_URI}``: naslov javnega seznama dokumentov."
 
 #: ../usermanual/documents.rst:74
 msgid ""
