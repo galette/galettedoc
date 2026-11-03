@@ -37,7 +37,7 @@ Members can also print their own card, from **My Account**, then :ref:`My inform
 Labels
 ======
 
-**Generate labels** produces a PDF file with the postal address of each selected member, for sheets of self-adhesive labels.
+**Generate labels** produces a PDF file with the name, the company name if any, and the postal address of each selected member, for sheets of self-adhesive labels.
 
 The size of the labels, the number of columns and lines on a page, the margins and the spacing are set in the **Labels** tab of the settings. Measure your sheets of labels, set the values, and make a first try on plain paper before printing on the labels themselves.
 

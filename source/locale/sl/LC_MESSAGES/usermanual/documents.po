@@ -2,13 +2,15 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:30+0200\n"
-"PO-Revision-Date: 2026-10-08 20:45+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"POT-Creation-Date: 2026-11-01 22:29+0100\n"
+"PO-Revision-Date: 2026-11-02 19:45+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-documents/sl/>\n"
 "Language: sl\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.1.dev0\n"
 
 #: ../usermanual/documents.rst:5
 msgid "Documents"
@@ -134,3 +136,89 @@ msgstr ""
 "Na zgornjem posnetku zaslona je prijavljen preprost član, ki si lahko ogleda "
 "le javne dokumente, ki so dovoljeni uporabnikom. Interni dokument je omejen "
 "na člane osebja in zato tukaj ni prikazan."
+
+#: ../usermanual/documents.rst:62
+msgid "Links in emails and PDF"
+msgstr "Povezave v e-poštnih sporočilih in PDF-jih"
+
+#: ../usermanual/documents.rst:66
+msgid ""
+"Links to download documents can be added to :ref:`emails contents "
+"<emails_contents>`, to the :ref:`email signature <pref_email>` and "
+"to :ref:`PDF models <pdf_models>`: a link to the association status in the "
+"email sent to a new member, or to the rules of procedure in the membership "
+"form, for example. There is no need to copy and paste an address, that would "
+"break when a new version of the document is uploaded."
+msgstr ""
+"Povezave za prenos dokumentov lahko dodate v :ref:`vsebino e-poštnih "
+"sporočil <emails_contents>`, v :ref:`e-poštni podpis <pref_email>` in v "
+":ref:`predloge PDF <pdf_models>`: na primer povezavo do statuta društva v e-"
+"poštnem sporočilu, poslanem novemu članu, ali povezavo do poslovnika v "
+"pristopni izjavi. Ni vam treba kopirati in prilepiti naslova, saj bi ta "
+"postal neveljaven, ko bi naložili novo različico dokumenta."
+
+#: ../usermanual/documents.rst:68
+msgid "Three kinds of variables are available:"
+msgstr "Na voljo so tri vrste spremenljivk:"
+
+#: ../usermanual/documents.rst:70
+msgid ""
+"``{DOCUMENT_x}``: a link to one document, where ``x`` is the document number;"
+msgstr ""
+"``{DOCUMENT_x}``: povezava do enega dokumenta, pri čemer je ``x`` številka "
+"dokumenta;"
+
+#: ../usermanual/documents.rst:71
+msgid ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, "
+"``{DOCUMENTS_MINUTES}`` and ``{DOCUMENTS_VOTES}``: links to all the "
+"documents of a type, respectively association status, rules of procedure, "
+"adhesion form, meeting minutes and votes results. The variable is replaced "
+"by nothing if there is no document of this type;"
+msgstr ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, ``"
+"{DOCUMENTS_MINUTES}`` in ``{DOCUMENTS_VOTES}``: povezave do vseh dokumentov "
+"posamezne vrste, in sicer: status združenja, pravila delovanja, pristopna "
+"izjava, zapisniki sej in rezultati glasovanj. Če dokumenta določene vrste "
+"ni, se spremenljivka nadomesti z ničemer;"
+
+#: ../usermanual/documents.rst:72
+msgid "``{DOCUMENTS_URI}``: the address of the documents public list."
+msgstr "``{DOCUMENTS_URI}``: naslov javnega seznama dokumentov."
+
+#: ../usermanual/documents.rst:74
+msgid ""
+"You do not have to look for documents numbers: all those variables are "
+"listed in the **Documents** section of the inline help, next to the text you "
+"are editing, with the file name and the visibility of each document. "
+"Documents of a type you added yourself only get a ``{DOCUMENT_x}`` variable."
+msgstr ""
+"Številk dokumentov vam ni treba iskati: vse te spremenljivke so navedene v "
+"razdelku **Dokumenti** v sprotni pomoči, poleg besedila, ki ga urejate; tam "
+"sta navedena tudi ime datoteke in vidnost posameznega dokumenta. Dokumenti "
+"vrste, ki ste jo dodali sami, prejmejo le spremenljivko ``{DOCUMENT_x}``."
+
+#: ../usermanual/documents.rst:76
+msgid "Documents variables in the inline help"
+msgstr "Dokumentira spremenljivke v vgrajeni pomoči"
+
+#: ../usermanual/documents.rst:81
+msgid ""
+"In PDF files, the link shows the file name and can be clicked. In emails, "
+"the file name is followed by the address of the document."
+msgstr ""
+"V datotekah PDF povezava prikazuje ime datoteke in je klikljiva. V e-poštnih "
+"sporočilih sledi imenu datoteke naslov dokumenta."
+
+#: ../usermanual/documents.rst:85
+msgid ""
+"Documents with the **Inaccessible** visibility are never proposed. Any other "
+"document is, whatever its visibility: check it before you send a link to "
+"people who could not open it. A visitor who does not have access to the "
+"document is sent back to the home page with an error message."
+msgstr ""
+"Dokumenti z vidnostjo **Nedostopno** niso nikoli predlagani. Vsi drugi "
+"dokumenti so, ne glede na svojo vidnost; zato preverite nastavitve, preden "
+"pošljete povezavo osebam, ki je morda ne bodo mogle odpreti. Obiskovalca, ki "
+"nima dostopa do dokumenta, sistem preusmeri na domačo stran in prikaže "
+"sporočilo o napaki."

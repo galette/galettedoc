@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:30+0200\n"
+"POT-Creation-Date: 2026-11-01 22:29+0100\n"
 "PO-Revision-Date: 2024-05-02 08:55+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -137,3 +137,93 @@ msgstr ""
 "ne peut voir que les documents qui sont publics et qui sont autorisés pour "
 "les utilisateurs. Le document interne est limité aux membres du bureau et ne "
 "figure donc pas ici."
+
+#: ../usermanual/documents.rst:62
+msgid "Links in emails and PDF"
+msgstr "Liens dans les courriels et les PDF"
+
+#: ../usermanual/documents.rst:66
+msgid ""
+"Links to download documents can be added to :ref:`emails contents "
+"<emails_contents>`, to the :ref:`email signature <pref_email>` and "
+"to :ref:`PDF models <pdf_models>`: a link to the association status in the "
+"email sent to a new member, or to the rules of procedure in the membership "
+"form, for example. There is no need to copy and paste an address, that would "
+"break when a new version of the document is uploaded."
+msgstr ""
+"Des liens de téléchargement des documents peuvent être ajoutés "
+"aux :ref:`contenus des courriels <emails_contents>`, à la :ref:`signature "
+"des courriels <pref_email>` et aux :ref:`modèles PDF <pdf_models>` : un lien "
+"vers les statuts de l'association dans le courriel envoyé à un nouvel "
+"adhérent, ou vers le règlement intérieur dans le formulaire d'adhésion, par "
+"exemple. Inutile de copier-coller une adresse, qui ne fonctionnerait plus "
+"dès qu'une nouvelle version du document serait déposée."
+
+#: ../usermanual/documents.rst:68
+msgid "Three kinds of variables are available:"
+msgstr "Trois sortes de variables sont disponibles :"
+
+#: ../usermanual/documents.rst:70
+msgid ""
+"``{DOCUMENT_x}``: a link to one document, where ``x`` is the document number;"
+msgstr ""
+"``{DOCUMENT_x}`` : un lien vers un document, où ``x`` est le numéro du "
+"document ;"
+
+#: ../usermanual/documents.rst:71
+msgid ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, "
+"``{DOCUMENTS_MINUTES}`` and ``{DOCUMENTS_VOTES}``: links to all the "
+"documents of a type, respectively association status, rules of procedure, "
+"adhesion form, meeting minutes and votes results. The variable is replaced "
+"by nothing if there is no document of this type;"
+msgstr ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, "
+"``{DOCUMENTS_MINUTES}`` et ``{DOCUMENTS_VOTES}`` : des liens vers tous les "
+"documents d'un type, respectivement statuts de l'association, règlement "
+"intérieur, formulaire d'adhésion, comptes rendus de réunion et résultats des "
+"votes. La variable n'est remplacée par rien s'il n'existe aucun document de "
+"ce type ;"
+
+#: ../usermanual/documents.rst:72
+msgid "``{DOCUMENTS_URI}``: the address of the documents public list."
+msgstr "``{DOCUMENTS_URI}`` : l'adresse de la liste publique des documents."
+
+#: ../usermanual/documents.rst:74
+msgid ""
+"You do not have to look for documents numbers: all those variables are "
+"listed in the **Documents** section of the inline help, next to the text you "
+"are editing, with the file name and the visibility of each document. "
+"Documents of a type you added yourself only get a ``{DOCUMENT_x}`` variable."
+msgstr ""
+"Inutile de chercher les numéros des documents : toutes ces variables sont "
+"listées dans la section **Documents** de l'aide en ligne, à côté du texte "
+"que vous modifiez, avec le nom de fichier et la visibilité de chaque "
+"document. Les documents d'un type que vous avez ajouté vous-même n'ont "
+"qu'une variable ``{DOCUMENT_x}``."
+
+#: ../usermanual/documents.rst:76
+msgid "Documents variables in the inline help"
+msgstr "Variables des documents dans l'aide en ligne"
+
+#: ../usermanual/documents.rst:81
+msgid ""
+"In PDF files, the link shows the file name and can be clicked. In emails, "
+"the file name is followed by the address of the document."
+msgstr ""
+"Dans les fichiers PDF, le lien affiche le nom du fichier et peut être "
+"cliqué. Dans les courriels, le nom du fichier est suivi de l'adresse du "
+"document."
+
+#: ../usermanual/documents.rst:85
+msgid ""
+"Documents with the **Inaccessible** visibility are never proposed. Any other "
+"document is, whatever its visibility: check it before you send a link to "
+"people who could not open it. A visitor who does not have access to the "
+"document is sent back to the home page with an error message."
+msgstr ""
+"Les documents dont la visibilité est **Inaccessible** ne sont jamais "
+"proposés. Tous les autres le sont, quelle que soit leur visibilité : "
+"vérifiez-la avant d'envoyer un lien à des personnes qui ne pourraient pas "
+"l'ouvrir. Un visiteur qui n'a pas accès au document est renvoyé vers la page "
+"d'accueil avec un message d'erreur."

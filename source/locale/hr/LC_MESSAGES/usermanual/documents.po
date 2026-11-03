@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:30+0200\n"
+"POT-Creation-Date: 2026-11-01 22:29+0100\n"
 "PO-Revision-Date: 2026-10-13 08:40+0000\n"
 "Last-Translator: Marko Puljic "
 "<markopuljic.uo@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
 "user-documents/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.11.dev0\n"
@@ -26,7 +26,9 @@ msgid "Documents"
 msgstr "Dokumenti"
 
 #: ../usermanual/documents.rst:9
-msgid "You can store and share administrative documents from Galette, like statuses, meeting minutes, and so on."
+msgid ""
+"You can store and share administrative documents from Galette, like "
+"statuses, meeting minutes, and so on."
 msgstr ""
 "U Galetteu možete spremati i dijeliti administrativne dokumente, primjerice "
 "statut i zapisnike sastanaka."
@@ -40,13 +42,17 @@ msgid "This is dispatched in two parts:"
 msgstr "Podijeljeno je na dva dijela:"
 
 #: ../usermanual/documents.rst:18
-msgid "**Documents management**: where you can add, edit, and delete documents - available from Management, Documents menu;"
+msgid ""
+"**Documents management**: where you can add, edit, and delete documents - "
+"available from Management, Documents menu;"
 msgstr ""
 "**Upravljanje dokumentima**: dodavanje, uređivanje i brisanje dokumenata, "
 "dostupno putem Upravljanje, Dokumenti;"
 
 #: ../usermanual/documents.rst:19
-msgid "**Public list**: where documents can be seen - available from Public pages, Documents menu."
+msgid ""
+"**Public list**: where documents can be seen - available from Public pages, "
+"Documents menu."
 msgstr ""
 "**Javni popis**: pregled dokumenata, dostupno putem Javne stranice, "
 "Dokumenti."
@@ -64,7 +70,11 @@ msgid "Add a document"
 msgstr "Dodavanje dokumenta"
 
 #: ../usermanual/documents.rst:34
-msgid "The list can be filtered on the creation date, the filename, the type and the visibility of the documents. Click on **Filter** to apply the filters, and on **Clear filter** to come back to the whole list. When there are many documents, the list is displayed on several pages."
+msgid ""
+"The list can be filtered on the creation date, the filename, the type and "
+"the visibility of the documents. Click on **Filter** to apply the filters, "
+"and on **Clear filter** to come back to the whole list. When there are many "
+"documents, the list is displayed on several pages."
 msgstr ""
 "Popis se može filtrirati prema datumu stvaranja, nazivu datoteke, vrsti i "
 "vidljivosti dokumenata. Kliknite **Filtriraj** za primjenu, a **Ukloni "
@@ -76,19 +86,25 @@ msgid "Filtering the documents list"
 msgstr "Filtriranje popisa dokumenata"
 
 #: ../usermanual/documents.rst:41
-msgid "When creating or editing a document, you will of course choose a file to upload, a document type and a permission."
+msgid ""
+"When creating or editing a document, you will of course choose a file to "
+"upload, a document type and a permission."
 msgstr ""
 "Pri stvaranju ili uređivanju dokumenta odaberite datoteku za prijenos, vrstu "
 "dokumenta i ovlasti."
 
 #: ../usermanual/documents.rst:43
-msgid "Several possible documents types are available from the list, you add a new one by just entering your text in the field."
+msgid ""
+"Several possible documents types are available from the list, you add a new "
+"one by just entering your text in the field."
 msgstr ""
 "Na popisu je dostupno više vrsta dokumenata. Novu možete dodati jednostavnim "
 "unosom teksta u polje."
 
 #: ../usermanual/documents.rst:45
-msgid "Permissions will determine which documents will be displayed on public page; according to the user's rights."
+msgid ""
+"Permissions will determine which documents will be displayed on public page; "
+"according to the user's rights."
 msgstr ""
 "Ovlasti određuju koji se dokumenti prikazuju na javnoj stranici, ovisno o "
 "korisnikovim pravima."
@@ -98,17 +114,86 @@ msgid "Public list"
 msgstr "Javni popis"
 
 #: ../usermanual/documents.rst:50
-msgid "Documents public list is, as all public pages in Galette, related to \"Show public pages\" parameter from settings; but it's also related to specific access rights which has been set on each one."
+msgid ""
+"Documents public list is, as all public pages in Galette, related to \"Show "
+"public pages\" parameter from settings; but it's also related to specific "
+"access rights which has been set on each one."
 msgstr ""
-"Kao i sve javne stranice Galettea, javni popis dokumenata ovisi o postavci „"
-"Prikaži javne stranice”, ali i o ovlastima dodijeljenima pojedinom dokumentu."
+"Kao i sve javne stranice Galettea, javni popis dokumenata ovisi o postavci "
+"„Prikaži javne stranice”, ali i o ovlastima dodijeljenima pojedinom "
+"dokumentu."
 
 #: ../usermanual/documents.rst:52
 msgid "Documents list from a simple member"
 msgstr "Popis dokumenata za običnog člana"
 
 #: ../usermanual/documents.rst:57
-msgid "On the above screenshot, a simple member is logged and can only see documents which are public and which are allowed for users. The internal document is restricted to staff members and therefore is not shown here."
+msgid ""
+"On the above screenshot, a simple member is logged and can only see "
+"documents which are public and which are allowed for users. The internal "
+"document is restricted to staff members and therefore is not shown here."
 msgstr ""
 "Na gornjoj slici prijavljen je obični član. Vidi samo javne dokumente i one "
 "dostupne korisnicima. Interni dokument namijenjen je upravi pa nije prikazan."
+
+#: ../usermanual/documents.rst:62
+msgid "Links in emails and PDF"
+msgstr ""
+
+#: ../usermanual/documents.rst:66
+msgid ""
+"Links to download documents can be added to :ref:`emails contents "
+"<emails_contents>`, to the :ref:`email signature <pref_email>` and "
+"to :ref:`PDF models <pdf_models>`: a link to the association status in the "
+"email sent to a new member, or to the rules of procedure in the membership "
+"form, for example. There is no need to copy and paste an address, that would "
+"break when a new version of the document is uploaded."
+msgstr ""
+
+#: ../usermanual/documents.rst:68
+msgid "Three kinds of variables are available:"
+msgstr ""
+
+#: ../usermanual/documents.rst:70
+msgid ""
+"``{DOCUMENT_x}``: a link to one document, where ``x`` is the document number;"
+msgstr ""
+
+#: ../usermanual/documents.rst:71
+msgid ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, "
+"``{DOCUMENTS_MINUTES}`` and ``{DOCUMENTS_VOTES}``: links to all the "
+"documents of a type, respectively association status, rules of procedure, "
+"adhesion form, meeting minutes and votes results. The variable is replaced "
+"by nothing if there is no document of this type;"
+msgstr ""
+
+#: ../usermanual/documents.rst:72
+msgid "``{DOCUMENTS_URI}``: the address of the documents public list."
+msgstr ""
+
+#: ../usermanual/documents.rst:74
+msgid ""
+"You do not have to look for documents numbers: all those variables are "
+"listed in the **Documents** section of the inline help, next to the text you "
+"are editing, with the file name and the visibility of each document. "
+"Documents of a type you added yourself only get a ``{DOCUMENT_x}`` variable."
+msgstr ""
+
+#: ../usermanual/documents.rst:76
+msgid "Documents variables in the inline help"
+msgstr ""
+
+#: ../usermanual/documents.rst:81
+msgid ""
+"In PDF files, the link shows the file name and can be clicked. In emails, "
+"the file name is followed by the address of the document."
+msgstr ""
+
+#: ../usermanual/documents.rst:85
+msgid ""
+"Documents with the **Inaccessible** visibility are never proposed. Any other "
+"document is, whatever its visibility: check it before you send a link to "
+"people who could not open it. A visitor who does not have access to the "
+"document is sent back to the home page with an error message."
+msgstr ""

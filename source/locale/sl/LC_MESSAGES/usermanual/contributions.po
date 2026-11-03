@@ -2,13 +2,16 @@
 # Copyright (C) 2011-2024, Johan Cwiklinski
 # This file is distributed under the same license as the Galette package.
 # Jože Felicijan <joze@felicijan.com>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:35+0200\n"
-"PO-Revision-Date: 2026-10-08 20:45+0000\n"
-"Last-Translator: Jože Felicijan <joze@felicijan.com>\n"
+"POT-Creation-Date: 2026-11-01 22:29+0100\n"
+"PO-Revision-Date: 2026-11-02 12:08+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-contributions/sl/>\n"
 "Language: sl\n"
@@ -17,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.10.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../usermanual/contributions.rst:3
 msgid "Contributions management"
@@ -101,11 +104,97 @@ msgstr ""
 msgid "Contributions list and its filters"
 msgstr "Seznam prispevkov in njegovi filtri"
 
-#: ../usermanual/contributions.rst:28
+#: ../usermanual/contributions.rst:30
+msgid "Mass changes"
+msgstr "Masovne spremembe"
+
+#: ../usermanual/contributions.rst:34
+msgid ""
+"Several contributions can be changed at once, to fix a payment type entered "
+"wrongly on a whole batch, for example. Select the contributions in the list, "
+"then choose **Mass change** in the **For the selection:** menu above the "
+"list."
+msgstr ""
+"Več prispevkov je mogoče spremeniti hkrati – na primer, če želite popraviti "
+"napačno vneseno vrsto plačila za celoten sklop. Na seznamu izberite ustrezne "
+"prispevke, nato pa v meniju **Za izbrane:**, ki se nahaja nad seznamom, "
+"izberite možnost **Množična sprememba**."
+
+#: ../usermanual/contributions.rst:36
+msgid "Mass change selected contributions"
+msgstr "Skupinska sprememba %1$s prispevkov"
+
+#: ../usermanual/contributions.rst:41
+msgid "Only a few fields can be changed this way:"
+msgstr "Na ta način je mogoče spremeniti le nekaj polj:"
+
+#: ../usermanual/contributions.rst:43
+msgid "**Payment type**,"
+msgstr "Vrsta plačila"
+
+#: ../usermanual/contributions.rst:44
+msgid "**Record date**,"
+msgstr "**Record date**,"
+
+#: ../usermanual/contributions.rst:45
+msgid "**Comments**,"
+msgstr "**Comments**,"
+
+#: ../usermanual/contributions.rst:46
+msgid ""
+"contributions :ref:`dynamic fields <dynamic_fields>`, except file and "
+"repeatable ones."
+msgstr ""
+"prispevki :ref:`dinamična polja <dynamic_fields>`, razen polj za datoteke in "
+"ponovljivih polj."
+
+#: ../usermanual/contributions.rst:48
+msgid ""
+"Only fields with a checked checkbox at the beginning of the line will be "
+"changed; all other values of the contributions are kept as they are. A "
+"summary of the changes is displayed, and nothing is stored until you confirm "
+"it."
+msgstr ""
+"Spremenjena bodo le polja, pri katerih je na začetku vrstice označeno "
+"potrditveno polje; vse druge vrednosti prispevkov ostanejo nespremenjene. "
+"Prikazan bo povzetek sprememb, vendar se nič ne shrani, dokler sprememb ne "
+"potrdite."
+
+#: ../usermanual/contributions.rst:50
+msgid ""
+"The member, the amount, the contribution type, the period and the "
+"transaction cannot be changed in mass: they have an effect on the member due "
+"date or on the transaction, and must be changed from each contribution."
+msgstr ""
+"Člana, zneska, vrste prispevka, obdobja in transakcije ni mogoče spremeniti "
+"množično: vplivajo namreč na rok plačila za člana ali na transakcijo, zato "
+"jih je treba spremeniti pri vsakem prispevku posebej."
+
+#: ../usermanual/contributions.rst:54
+msgid ""
+"The payment type of a contribution that has :ref:`scheduled payments "
+"<scheduled_payments>` cannot be changed. Such contributions are left "
+"untouched, and an error message gives their number; other selected "
+"contributions are changed anyway."
+msgstr ""
+"Vrste plačila pri prispevku, ki vključuje :ref:`načrtovana plačila "
+"<scheduled_payments>`, ni mogoče spremeniti. Takšni prispevki ostanejo "
+"nespremenjeni, o čemer vas obvesti sporočilo o napaki, ki navaja njihovo "
+"število; preostali izbrani prispevki pa se kljub temu spremenijo."
+
+#: ../usermanual/contributions.rst:56
+msgid ""
+"Members can be changed in mass from the members list as well; "
+"see :ref:`members mass changes <mass_changes>`."
+msgstr ""
+"Člane je mogoče množično spreminjati tudi s seznama članov; glejte "
+":ref:`množično spreminjanje članov <mass_changes>`."
+
+#: ../usermanual/contributions.rst:59
 msgid "Contributions types"
 msgstr "Vrste prispevkov"
 
-#: ../usermanual/contributions.rst:30
+#: ../usermanual/contributions.rst:61
 msgid ""
 "Contributions are entirely configurable. There are two main types of "
 "contributions in Galette:"
@@ -113,18 +202,18 @@ msgstr ""
 "Prispevke je mogoče v celoti konfigurirati. V Galette obstajata dve glavni "
 "vrsti prispevkov:"
 
-#: ../usermanual/contributions.rst:32
+#: ../usermanual/contributions.rst:63
 msgid ""
 "the ones that extends a membership (a monthly or yearly membership for "
 "example),"
 msgstr ""
 "tiste, ki podaljšujejo članstvo (na primer mesečno ali letno članstvo),"
 
-#: ../usermanual/contributions.rst:33
+#: ../usermanual/contributions.rst:64
 msgid "the ones that do not extends membership, like donations."
 msgstr "tiste, ki ne podaljšujejo članstva, kot so donacije."
 
-#: ../usermanual/contributions.rst:35
+#: ../usermanual/contributions.rst:66
 msgid ""
 "Contribution types management allows you to define a label, and if it "
 "extends the membership or not."
@@ -132,17 +221,17 @@ msgstr ""
 "Upravljanje vrst prispevkov vam omogoča, da določite oznako in ali ta "
 "podaljša članstvo ali ne."
 
-#: ../usermanual/contributions.rst:37
+#: ../usermanual/contributions.rst:68
 msgid ""
 "See :ref:`contributions types <contributions_types_list>` to manage them."
 msgstr ""
 "Glejte :ref:`vrste prispevkov <contributions_types_list>`, da jih upravljate."
 
-#: ../usermanual/contributions.rst:42
+#: ../usermanual/contributions.rst:73
 msgid "Reminders"
 msgstr "Opomniki"
 
-#: ../usermanual/contributions.rst:44
+#: ../usermanual/contributions.rst:75
 msgid ""
 "Emails models to remind due dates are available from the emails contents "
 "(\"Impending due date\" and \"Late due date\")."
@@ -150,7 +239,7 @@ msgstr ""
 "Modeli e-poštnih sporočil za opomnike na roke so na voljo v vsebini e-"
 "poštnih sporočil (»Bližajoči se rok« in »Zamujeni rok«)."
 
-#: ../usermanual/contributions.rst:46
+#: ../usermanual/contributions.rst:77
 msgid ""
 "The reminder button from the dashboard or the reminders entry of the menu "
 "will give you access to the reminders management interface."
@@ -158,23 +247,23 @@ msgstr ""
 "Gumb za opomnike na nadzorni plošči ali vnos opomnikov v meniju vam bo "
 "omogočil dostop do vmesnika za upravljanje opomnikov."
 
-#: ../usermanual/contributions.rst:48
+#: ../usermanual/contributions.rst:79
 msgid "Reminders management interface"
 msgstr "Vmesnik za upravljanje opomnikov"
 
-#: ../usermanual/contributions.rst:53
+#: ../usermanual/contributions.rst:84
 msgid "Two categories can be selected:"
 msgstr "Izbrati je mogoče dve kategoriji:"
 
-#: ../usermanual/contributions.rst:55
+#: ../usermanual/contributions.rst:86
 msgid "members whose due date is close,"
 msgstr "člani, katerih rok se bliža,"
 
-#: ../usermanual/contributions.rst:56
+#: ../usermanual/contributions.rst:87
 msgid "members whose due date is in the past."
 msgstr "člani, katerih rok je v preteklosti."
 
-#: ../usermanual/contributions.rst:58
+#: ../usermanual/contributions.rst:89
 msgid ""
 "Per default (this is currently not configurable), reminders are sent one "
 "month, then seven days before the due date; and then one and two months "
@@ -186,7 +275,7 @@ msgstr ""
 "Opomniki so shranjeni v zbirki podatkov; če niste nikoli poslali nobenega "
 "opomnika, bodo opomnjeni vsi ustrezni člani."
 
-#: ../usermanual/contributions.rst:60
+#: ../usermanual/contributions.rst:91
 msgid ""
 "Galette will tell you if some members do not have an email address, you can "
 "print labels for those ones."
@@ -194,7 +283,7 @@ msgstr ""
 "Galette vam bo povedala, da če nekateri člani nimajo e-poštnega naslova, "
 "lahko zanje natisnete nalepke."
 
-#: ../usermanual/contributions.rst:64
+#: ../usermanual/contributions.rst:95
 msgid ""
 "Reminders obey the :ref:`sending limits <mail_throttling>`, following the "
 "very same rule as :ref:`mass mailings <mailing_queue>`: as long as no hourly "
@@ -206,7 +295,7 @@ msgstr ""
 "dokler ni nastavljena urna ali dnevna kvota, se pošiljajo med nalaganjem "
 "strani, natanko tako kot vedno."
 
-#: ../usermanual/contributions.rst:66
+#: ../usermanual/contributions.rst:97
 msgid ""
 "Each reminder stays an individual message, written in the language of its "
 "recipient, either way. The quota counters are shared with mass mailings."
@@ -214,7 +303,7 @@ msgstr ""
 "Vsak opomnik ostane posamezno sporočilo, tako ali tako napisano v jeziku "
 "prejemnika. Števci kvot so v skupni rabi z množičnimi pošiljkami."
 
-#: ../usermanual/contributions.rst:68
+#: ../usermanual/contributions.rst:99
 msgid ""
 "Finally, it is possible to automate reminders with a cron task which will "
 "call the ``galette/cron/reminder.php`` file. If you want reminders to be "
@@ -228,7 +317,7 @@ msgstr ""
 "Fedora in podobnih preverite sistemsko dokumentacijo za navodila o dodajanju "
 "opravil v crontab) z naslednjo vsebino:"
 
-#: ../usermanual/contributions.rst:74
+#: ../usermanual/contributions.rst:105
 msgid ""
 "The script queues the reminders that are due, then drains the queue itself, "
 "respecting the same limits. It stays silent unless something failed, so cron "
@@ -238,11 +327,11 @@ msgstr ""
 "čakalno vrsto ob upoštevanju istih omejitev. Ostane tiho, razen če kaj ne "
 "uspe, zato vam cron piše le, če za to obstaja razlog."
 
-#: ../usermanual/contributions.rst:77
+#: ../usermanual/contributions.rst:108
 msgid "Invoices and receipts"
 msgstr "Računi in potrdila"
 
-#: ../usermanual/contributions.rst:79
+#: ../usermanual/contributions.rst:110
 msgid ""
 "In the contributions list, there is a PDF icon which is designed to generate "
 "invoice ou receipt for one contribution."
@@ -250,15 +339,15 @@ msgstr ""
 "Na seznamu prispevkov je ikona PDF, ki je namenjena ustvarjanju računa ali "
 "potrdila za en prispevek."
 
-#: ../usermanual/contributions.rst:81
+#: ../usermanual/contributions.rst:112
 msgid "You can customize the PDF using :ref:`PDF models <pdf_models>`."
 msgstr "PDF lahko prilagodite z uporabo :ref:`PDF models <pdf_models>`."
 
-#: ../usermanual/contributions.rst:86
+#: ../usermanual/contributions.rst:117
 msgid "Scheduled payments"
 msgstr "Načrtovana plačila"
 
-#: ../usermanual/contributions.rst:90
+#: ../usermanual/contributions.rst:121
 msgid ""
 "It is possible to dispatch a contribution among one or several scheduled "
 "payments. All you have to do is to select \"Scheduled payment\" as payment "
@@ -270,11 +359,11 @@ msgstr ""
 "»Načrtovano plačilo«; Galette vam bo predlagala, da ustvarite priloženo "
 "načrtovano plačilo."
 
-#: ../usermanual/contributions.rst:92
+#: ../usermanual/contributions.rst:123
 msgid "Add scheduled payment to a contribution"
 msgstr "Dodaj načrtovano plačilo prispevku"
 
-#: ../usermanual/contributions.rst:97
+#: ../usermanual/contributions.rst:128
 msgid ""
 "By default, the entire remaining amount will be set into scheduled payment, "
 "but you can enter whatever you want. You can also select any payment type "
@@ -284,7 +373,7 @@ msgstr ""
 "vendar lahko vnesete karkoli želite. Izberete lahko tudi katero koli vrsto "
 "plačila (razen načrtovanega plačila)."
 
-#: ../usermanual/contributions.rst:99
+#: ../usermanual/contributions.rst:130
 msgid ""
 "When you edit a contribution that already has attached scheduled payments, "
 "you can see a summary, and you can also see list of entries."
@@ -292,19 +381,19 @@ msgstr ""
 "Ko urejate prispevek, ki že ima priložena načrtovana plačila, si lahko "
 "ogledate povzetek in seznam vnosov."
 
-#: ../usermanual/contributions.rst:101
+#: ../usermanual/contributions.rst:132
 msgid "Summary of scheduled payments"
 msgstr "Povzetek načrtovanih plačil"
 
-#: ../usermanual/contributions.rst:106
+#: ../usermanual/contributions.rst:137
 msgid "List of attached scheduled payments"
 msgstr "Seznam priloženih načrtovanih plačil"
 
-#: ../usermanual/contributions.rst:112
+#: ../usermanual/contributions.rst:143
 msgid "Transactions"
 msgstr "Transakcije"
 
-#: ../usermanual/contributions.rst:114
+#: ../usermanual/contributions.rst:145
 msgid ""
 "As seen in the example from this chapter introduction, a transaction is a "
 "global payment for a member."
@@ -312,27 +401,27 @@ msgstr ""
 "Kot je razvidno iz primera iz uvoda tega poglavja, je transakcija globalno "
 "plačilo za člana."
 
-#: ../usermanual/contributions.rst:116
+#: ../usermanual/contributions.rst:147
 msgid "Only a few information are required to add a new transaction:"
 msgstr "Za dodajanje nove transakcije je potrebnih le nekaj podatkov:"
 
-#: ../usermanual/contributions.rst:118
+#: ../usermanual/contributions.rst:149
 msgid "a description,"
 msgstr "opis,"
 
-#: ../usermanual/contributions.rst:119
+#: ../usermanual/contributions.rst:150
 msgid "the originator,"
 msgstr "izvornik,"
 
-#: ../usermanual/contributions.rst:120
+#: ../usermanual/contributions.rst:151
 msgid "the date (current date per default),"
 msgstr "datum (trenutni datum je privzeto),"
 
-#: ../usermanual/contributions.rst:121
+#: ../usermanual/contributions.rst:152
 msgid "the amount."
 msgstr "znesek."
 
-#: ../usermanual/contributions.rst:123
+#: ../usermanual/contributions.rst:154
 msgid ""
 "A payment type can also be set on the transaction; the cash, check or "
 "transfer that paid it, for example."
@@ -340,11 +429,11 @@ msgstr ""
 "Na transakciji lahko nastavite tudi vrsto plačila; na primer gotovino, ček "
 "ali nakazilo, ki je plačalo."
 
-#: ../usermanual/contributions.rst:125
+#: ../usermanual/contributions.rst:156
 msgid "Transactions list"
 msgstr "Seznam transakcij"
 
-#: ../usermanual/contributions.rst:130
+#: ../usermanual/contributions.rst:161
 msgid ""
 "Each transaction is dispatched among contributions, in the limit of the "
 "transaction amount. A transaction has itself no effect on members due dates."
@@ -352,11 +441,11 @@ msgstr ""
 "Vsaka transakcija se razporedi med prispevke, v okviru zneska transakcije. "
 "Transakcija sama po sebi nima vpliva na roke plačila članov."
 
-#: ../usermanual/contributions.rst:132
+#: ../usermanual/contributions.rst:163
 msgid "Add a transaction"
 msgstr "Dodaj transakcijo"
 
-#: ../usermanual/contributions.rst:137
+#: ../usermanual/contributions.rst:168
 msgid ""
 "After adding a new transaction, you will be redirected to a new contribution "
 "creation. If this new contribution does not dispatch the remaining amount of "
@@ -369,32 +458,32 @@ msgstr ""
 "vam bo galette predlagal, da ustvarite novega. Privzeto bo znesek novega "
 "prispevka iz transakcije enak preostalemu znesku transakcije."
 
-#: ../usermanual/contributions.rst:139
+#: ../usermanual/contributions.rst:170
 msgid "Add a contribution linked to a partially dispatched transaction"
 msgstr "Dodaj prispevek, povezan z delno odposlano transakcijo"
 
-#: ../usermanual/contributions.rst:144
+#: ../usermanual/contributions.rst:175
 msgid "Of course, it is also possible to edit a transaction:"
 msgstr "Seveda je transakcijo mogoče tudi urediti:"
 
-#: ../usermanual/contributions.rst:146
+#: ../usermanual/contributions.rst:177
 msgid "Transaction edition"
 msgstr "Transakcijska izdaja"
 
-#: ../usermanual/contributions.rst:151
+#: ../usermanual/contributions.rst:182
 msgid ""
 "You can also attach an existing contribution instead of creating a new one."
 msgstr "Namesto ustvarjanja novega prispevka lahko priložite tudi obstoječega."
 
-#: ../usermanual/contributions.rst:153
+#: ../usermanual/contributions.rst:184
 msgid "Add an already existing contribution to a transaction"
 msgstr "Dodajanje obstoječega prispevka transakciji"
 
-#: ../usermanual/contributions.rst:161
+#: ../usermanual/contributions.rst:192
 msgid "Members selection"
 msgstr "Izbira članov"
 
-#: ../usermanual/contributions.rst:165
+#: ../usermanual/contributions.rst:196
 msgid ""
 "The dropdown list to choose a member is available from contributions and "
 "transactions (as well as from several plugins) displays only a few members, "
@@ -404,11 +493,11 @@ msgstr ""
 "(kot tudi iz več vtičnikov), zaradi učinkovitosti pa prikazuje le nekaj "
 "članov."
 
-#: ../usermanual/contributions.rst:167
+#: ../usermanual/contributions.rst:198
 msgid "Dropdown members list"
 msgstr "Spustni seznam članov"
 
-#: ../usermanual/contributions.rst:171
+#: ../usermanual/contributions.rst:202
 msgid ""
 "You can display more members using arrow buttons or entering any text (this "
 "will search in first name, last name and identifiers)."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 07:30+0200\n"
+"POT-Creation-Date: 2026-11-01 22:29+0100\n"
 "PO-Revision-Date: 2024-10-15 19:28+0000\n"
 "Last-Translator: Pèire Bréchet <oxytanistzero@tutanota.com>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -112,4 +112,66 @@ msgid ""
 "On the above screenshot, a simple member is logged and can only see "
 "documents which are public and which are allowed for users. The internal "
 "document is restricted to staff members and therefore is not shown here."
+msgstr ""
+
+#: ../usermanual/documents.rst:62
+msgid "Links in emails and PDF"
+msgstr ""
+
+#: ../usermanual/documents.rst:66
+msgid ""
+"Links to download documents can be added to :ref:`emails contents "
+"<emails_contents>`, to the :ref:`email signature <pref_email>` and "
+"to :ref:`PDF models <pdf_models>`: a link to the association status in the "
+"email sent to a new member, or to the rules of procedure in the membership "
+"form, for example. There is no need to copy and paste an address, that would "
+"break when a new version of the document is uploaded."
+msgstr ""
+
+#: ../usermanual/documents.rst:68
+msgid "Three kinds of variables are available:"
+msgstr ""
+
+#: ../usermanual/documents.rst:70
+msgid ""
+"``{DOCUMENT_x}``: a link to one document, where ``x`` is the document number;"
+msgstr ""
+
+#: ../usermanual/documents.rst:71
+msgid ""
+"``{DOCUMENTS_STATUS}``, ``{DOCUMENTS_RULES}``, ``{DOCUMENTS_ADHESION}``, "
+"``{DOCUMENTS_MINUTES}`` and ``{DOCUMENTS_VOTES}``: links to all the "
+"documents of a type, respectively association status, rules of procedure, "
+"adhesion form, meeting minutes and votes results. The variable is replaced "
+"by nothing if there is no document of this type;"
+msgstr ""
+
+#: ../usermanual/documents.rst:72
+msgid "``{DOCUMENTS_URI}``: the address of the documents public list."
+msgstr ""
+
+#: ../usermanual/documents.rst:74
+msgid ""
+"You do not have to look for documents numbers: all those variables are "
+"listed in the **Documents** section of the inline help, next to the text you "
+"are editing, with the file name and the visibility of each document. "
+"Documents of a type you added yourself only get a ``{DOCUMENT_x}`` variable."
+msgstr ""
+
+#: ../usermanual/documents.rst:76
+msgid "Documents variables in the inline help"
+msgstr ""
+
+#: ../usermanual/documents.rst:81
+msgid ""
+"In PDF files, the link shows the file name and can be clicked. In emails, "
+"the file name is followed by the address of the document."
+msgstr ""
+
+#: ../usermanual/documents.rst:85
+msgid ""
+"Documents with the **Inaccessible** visibility are never proposed. Any other "
+"document is, whatever its visibility: check it before you send a link to "
+"people who could not open it. A visitor who does not have access to the "
+"document is sent back to the home page with an error message."
 msgstr ""

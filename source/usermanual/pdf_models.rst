@@ -33,6 +33,8 @@ Each of those fields can take some replacement values, refer to the inline help 
 
 ``{ASSO_LOGO}`` inserts the logo of the association, and ``{ASSO_PRINT_LOGO}`` the logo for printing set in the **Cards** tab of the preferences, which is often better suited to paper.
 
+Links to download :ref:`documents <documents>` can be inserted as well; see :ref:`links in emails and PDF <documents_replacements>`.
+
 Models rely on HTML and CSS styles, but keep in mind we are building a PDF file, and not displaying a page in a recent browser; there are many limitations.
 
 Invoices and receipts

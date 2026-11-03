@@ -24,6 +24,37 @@ A contribution can be a membership, a donation, a gift, ... Galette allows you t
    :align: center
    :alt: Contributions list and its filters
 
+.. _contributions_mass_changes:
+
+Mass changes
+^^^^^^^^^^^^
+
+.. versionadded:: 1.3.2
+
+Several contributions can be changed at once, to fix a payment type entered wrongly on a whole batch, for example. Select the contributions in the list, then choose **Mass change** in the **For the selection:** menu above the list.
+
+.. image:: ../_styles/static/images/usermanual/contributions_mass_change.png
+   :scale: 50%
+   :align: center
+   :alt: Mass change selected contributions
+
+Only a few fields can be changed this way:
+
+* **Payment type**,
+* **Record date**,
+* **Comments**,
+* contributions :ref:`dynamic fields <dynamic_fields>`, except file and repeatable ones.
+
+Only fields with a checked checkbox at the beginning of the line will be changed; all other values of the contributions are kept as they are. A summary of the changes is displayed, and nothing is stored until you confirm it.
+
+The member, the amount, the contribution type, the period and the transaction cannot be changed in mass: they have an effect on the member due date or on the transaction, and must be changed from each contribution.
+
+.. note::
+
+   The payment type of a contribution that has :ref:`scheduled payments <scheduled_payments>` cannot be changed. Such contributions are left untouched, and an error message gives their number; other selected contributions are changed anyway.
+
+Members can be changed in mass from the members list as well; see :ref:`members mass changes <mass_changes>`.
+
 Contributions types
 ^^^^^^^^^^^^^^^^^^^
 
