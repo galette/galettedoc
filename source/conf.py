@@ -28,7 +28,8 @@ from urllib.request import urlopen
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
   'sphinx.ext.todo',
-  'sphinx.ext.imgconverter'
+  'sphinx.ext.imgconverter',
+  'sphinxext.opengraph'
 ]
 
 todo_include_todos = True
@@ -162,6 +163,13 @@ html_context = {
     'doc_languages': doc_languages,
     'doc_version': doc_version,
 }
+
+# Meta description and Open Graph tags, from the beginning of each page;
+# the site URL comes from html_baseurl on Read the Docs
+ogp_description_length = 160
+ogp_site_name = 'Galette'
+ogp_image = 'https://galette.eu/site/assets/images/og_image.jpg'
+ogp_social_cards = {'enable': False}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

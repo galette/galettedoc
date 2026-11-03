@@ -1,3 +1,6 @@
+.. meta::
+   :description: Galette changelog: new features, bug fixes and security fixes of each release of the membership management software.
+
 .. _changelog:
 
 =========

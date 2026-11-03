@@ -1,3 +1,6 @@
+.. meta::
+   :description: Extend Galette with plugins: how to install and manage them, official plugins documentation and third party plugins.
+
 .. _plugins:
 
 .. only:: builder_html or readthedocs

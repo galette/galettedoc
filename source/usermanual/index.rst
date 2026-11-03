@@ -1,3 +1,6 @@
+.. meta::
+   :description: Galette user manual: members, contributions, groups, mailings, documents, public pages, printing, PDF models and preferences.
+
 .. _usermanual:
 
 .. only:: builder_html or readthedocs
