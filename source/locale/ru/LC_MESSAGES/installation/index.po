@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-20 10:24+0200\n"
+"POT-Creation-Date: 2026-11-03 23:54+0100\n"
 "PO-Revision-Date: 2024-07-07 06:51+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/galette/doc-"
@@ -20,15 +20,21 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.7-dev\n"
 
-#: ../installation/index.rst:10
+#: ../installation/index.rst:-1
+msgid ""
+"Install Galette: prerequisites and hosting, preparation, installation, other "
+"methods like Docker, post installation steps and updates."
+msgstr ""
+
+#: ../installation/index.rst:13
 msgid ":doc:`installation manual <index>`"
 msgstr ":doc:`инструкция по установке <index>`"
 
-#: ../installation/index.rst:16
+#: ../installation/index.rst:19
 msgid "Installation manual"
 msgstr "Руководство по установке"
 
-#: ../installation/index.rst:18
+#: ../installation/index.rst:21
 msgid ""
 "Galette installation is quite simple, really :) Just a few graphical steps "
 "to follow once the prerequisites are met."
@@ -37,16 +43,16 @@ msgstr ""
 "графических шагов, которые нужно выполнить после того, как все необходимые "
 "условия будут соблюдены."
 
-#: ../installation/index.rst:20
+#: ../installation/index.rst:23
 msgid "First, download latest Galette release from official repository:"
 msgstr ""
 "Во-первых, загрузите последнюю версию Galette из официального репозитория:"
 
-#: ../installation/index.rst:22
+#: ../installation/index.rst:25
 msgid "Get latest Galette!"
 msgstr "Получите последние Galette!"
 
-#: ../installation/index.rst:26
+#: ../installation/index.rst:29
 msgid ""
 "Then, uncompress the archive. If you are running Windows, you will have to "
 "install a file archiver software supporting the TAR archive format, such as "
@@ -58,14 +64,14 @@ msgstr ""
 "TAR, например `7zip <https://www.7-zip.org/>`_. Если вы используете Linux, "
 "выполните следующие команды (при необходимости измените версию):"
 
-#: ../installation/index.rst:35
+#: ../installation/index.rst:38
 msgid ""
 "What the archive contains and where to put it on your server is explained in "
 "the :ref:`archive contents <archivecontents>` and :ref:`installation "
 "directory <installationdir>` sections."
 msgstr ""
 
-#: ../installation/index.rst:37
+#: ../installation/index.rst:40
 msgid ""
 "The current stable version of Galette is |stable_version|. A `nightly "
 "archive <https://galette.eu/download/galette-dev.tar.bz2>`_ is build each "
@@ -77,7 +83,7 @@ msgstr ""
 "из ветки разработки, и вы также можете :doc:`получить версию разработки "
 "Galette <../source_code>`."
 
-#: ../installation/index.rst:39
+#: ../installation/index.rst:42
 msgid ""
 "Galette is also available as a Docker image and as a YunoHost application, "
 "see :doc:`other installation methods <other_methods>`."
