@@ -1,6 +1,9 @@
 .. include:: /globals.rst
    :start-after: :orphan:
 
+.. meta::
+   :description: Install Galette: prerequisites and hosting, preparation, installation, other methods like Docker, post installation steps and updates.
+
 .. _installation:
 
 .. only:: builder_html or readthedocs

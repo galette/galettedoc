@@ -3,6 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. meta::
+   :description: Galette documentation: install, use and extend the free and open source membership management software for associations.
+
 .. rst-class:: slogan
 
 Free your association management!
