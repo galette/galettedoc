@@ -29,7 +29,8 @@ from urllib.request import urlopen
 extensions = [
   'sphinx.ext.todo',
   'sphinx.ext.imgconverter',
-  'sphinxext.opengraph'
+  'sphinxext.opengraph',
+  'sphinx_sitemap'
 ]
 
 todo_include_todos = True
@@ -170,6 +171,12 @@ ogp_description_length = 160
 ogp_site_name = 'Galette'
 ogp_image = 'https://galette.eu/site/assets/images/og_image.jpg'
 ogp_social_cards = {'enable': False}
+
+# One sitemap per language and version, listing every page; html_baseurl
+# already contains both, alternates are declared in the pages themselves
+sitemap_url_scheme = '{link}'
+sitemap_locales = [None]
+sitemap_excludes = ['search.html', 'genindex.html', 'globals.html']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
