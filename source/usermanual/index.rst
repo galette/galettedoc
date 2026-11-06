@@ -44,5 +44,6 @@ Main dashboard part propose you a quick access to main Galette features :)
    printing.rst
    pdf_models.rst
    preferences.rst
+   roles.rst
    avancee.rst
 
