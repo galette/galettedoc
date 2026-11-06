@@ -116,6 +116,14 @@ A role given for one group grants its permissions on the members of that group o
 
    Some permissions do not apply to members: configuration, references lists, logs, plugins, roles... They have no meaning on a group, and are **not granted** by a role given for one group; the role page flags them **Not on a group**. Give such permissions in roles you give for all groups.
 
+   Some others would reach beyond the group, and are not granted for one group either: granting administrator rights, sending reminders to late members, importing members and exporting data.
+
+The lists also display the user and their children, as their own information is always reachable.
+
+With *Manage members administrative information* for a group, the status of its members can be changed, but staff statuses (President, Treasurer, Secretary...) can only be given or taken back by a role given for all groups. When editing a member, the groups they manage can only be changed for the groups the role is given for.
+
+A contribution of a group member may be part of a transaction of someone outside the group. Such a transaction is not displayed: the contribution stays attached to it when saved, and its amount cannot be changed.
+
 Examples
 ========
 

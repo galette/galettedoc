@@ -64,7 +64,7 @@ msgstr ""
 "Cinq rôles sont donnés d'après les informations des adhérents ; ils ne "
 "peuvent être ni renommés, ni supprimés, ni donnés à la main :"
 
-#: ../usermanual/roles.rst:24 ../usermanual/roles.rst:146
+#: ../usermanual/roles.rst:24 ../usermanual/roles.rst:154
 msgid "Role"
 msgstr "Rôle"
 
@@ -94,7 +94,7 @@ msgstr ""
 "les adhérents dont le compte est actif et qui sont à jour de cotisation"
 
 #: ../usermanual/roles.rst:32 ../usermanual/roles.rst:35
-#: ../usermanual/roles.rst:38 ../usermanual/roles.rst:149
+#: ../usermanual/roles.rst:38 ../usermanual/roles.rst:157
 msgid "Member"
 msgstr "Adhérent"
 
@@ -395,15 +395,59 @@ msgstr ""
 "du rôle les signale par **Pas sur un groupe**. Mettez de telles permissions "
 "dans des rôles donnés pour tous les groupes."
 
-#: ../usermanual/roles.rst:120
+#: ../usermanual/roles.rst:119
+msgid ""
+"Some others would reach beyond the group, and are not granted for one group "
+"either: granting administrator rights, sending reminders to late members, "
+"importing members and exporting data."
+msgstr ""
+"D'autres iraient au-delà du groupe, et ne sont pas non plus accordées pour "
+"un groupe : donner les droits d'administration, envoyer des relances aux "
+"adhérents en retard, importer des adhérents et exporter des données."
+
+#: ../usermanual/roles.rst:121
+msgid ""
+"The lists also display the user and their children, as their own information "
+"is always reachable."
+msgstr ""
+"Les listes affichent aussi l'utilisateur et ses enfants, puisque ses propres "
+"informations lui sont toujours accessibles."
+
+#: ../usermanual/roles.rst:123
+msgid ""
+"With *Manage members administrative information* for a group, the status of "
+"its members can be changed, but staff statuses (President, Treasurer, "
+"Secretary...) can only be given or taken back by a role given for all "
+"groups. When editing a member, the groups they manage can only be changed "
+"for the groups the role is given for."
+msgstr ""
+"Avec *Gérer les informations administratives des adhérents* pour un groupe, "
+"le statut de ses adhérents peut être changé, mais les statuts du bureau "
+"(Président, Trésorier, Secrétaire…) ne peuvent être donnés ou retirés que "
+"par un rôle donné pour tous les groupes. En modifiant un adhérent, les "
+"groupes qu'il gère ne peuvent être changés que pour les groupes pour "
+"lesquels le rôle est donné."
+
+#: ../usermanual/roles.rst:125
+msgid ""
+"A contribution of a group member may be part of a transaction of someone "
+"outside the group. Such a transaction is not displayed: the contribution "
+"stays attached to it when saved, and its amount cannot be changed."
+msgstr ""
+"Une contribution d'un adhérent du groupe peut faire partie d'une transaction "
+"d'une personne hors du groupe. Une telle transaction n'est pas affichée : la "
+"contribution y reste rattachée à l'enregistrement, et son montant ne peut "
+"pas être modifié."
+
+#: ../usermanual/roles.rst:128
 msgid "Examples"
 msgstr "Exemples"
 
-#: ../usermanual/roles.rst:122
+#: ../usermanual/roles.rst:130
 msgid "A treasurer"
 msgstr "Un trésorier"
 
-#: ../usermanual/roles.rst:123
+#: ../usermanual/roles.rst:131
 msgid ""
 "Create a *Treasurer* role with all the permissions of the **Contributions** "
 "and **Transactions** domains, and *Display members* so the members can be "
@@ -415,11 +459,11 @@ msgstr ""
 "pouvoir choisir les adhérents dans les formulaires. Donnez-le à l'adhérent "
 "responsable, pour tous les groupes. Il ne pourra pas modifier les adhérents."
 
-#: ../usermanual/roles.rst:125
+#: ../usermanual/roles.rst:133
 msgid "A secretary for a section"
 msgstr "Un secrétaire de section"
 
-#: ../usermanual/roles.rst:126
+#: ../usermanual/roles.rst:134
 msgid ""
 "Create a *Section secretary* role with *Display members*, *Edit members*, "
 "*Display groups* and *Send mailings*. Give it for the section group: the "
@@ -431,11 +475,11 @@ msgstr ""
 "Donnez-le pour le groupe de la section : l'adhérent peut mettre à jour les "
 "informations des adhérents de la section et leur écrire, à eux seuls."
 
-#: ../usermanual/roles.rst:128
+#: ../usermanual/roles.rst:136
 msgid "Members who register their children"
 msgstr "Des adhérents qui inscrivent leurs enfants"
 
-#: ../usermanual/roles.rst:129
+#: ../usermanual/roles.rst:137
 msgid ""
 "Check *Create child members* in the **Member** role: every logged in member "
 "gets an **Add a child member** entry; created members are attached to them "
@@ -445,11 +489,11 @@ msgstr ""
 "adhérent connecté a une entrée **Ajouter un enfant** ; les adhérents créés "
 "lui sont rattachés comme enfants."
 
-#: ../usermanual/roles.rst:131
+#: ../usermanual/roles.rst:139
 msgid "Group managers who update their members"
 msgstr "Des responsables de groupe qui mettent à jour leurs adhérents"
 
-#: ../usermanual/roles.rst:132
+#: ../usermanual/roles.rst:140
 msgid ""
 "Check *Edit members* in the **Group manager** role: every group manager can "
 "then edit the members of the groups they manage."
@@ -458,11 +502,11 @@ msgstr ""
 "chaque responsable de groupe peut alors modifier les adhérents des groupes "
 "qu'il gère."
 
-#: ../usermanual/roles.rst:137
+#: ../usermanual/roles.rst:145
 msgid "Upgrading from 1.3"
 msgstr "Mise à jour depuis la 1.3"
 
-#: ../usermanual/roles.rst:139
+#: ../usermanual/roles.rst:147
 msgid ""
 "Before 1.4, a few settings in the :ref:`rights tab of preferences "
 "<pref_rights>` gave group managers and members extra rights. When upgrading, "
@@ -475,67 +519,67 @@ msgstr ""
 "converti en permissions du rôle système correspondant, puis le réglage est "
 "supprimé :"
 
-#: ../usermanual/roles.rst:145
+#: ../usermanual/roles.rst:153
 msgid "Former setting"
 msgstr "Ancien réglage"
 
-#: ../usermanual/roles.rst:147
+#: ../usermanual/roles.rst:155
 msgid "Permissions"
 msgstr "Permissions"
 
-#: ../usermanual/roles.rst:148
+#: ../usermanual/roles.rst:156
 msgid "Can members create child?"
 msgstr "Les adhérents peuvent créer des enfants ?"
 
-#: ../usermanual/roles.rst:150
+#: ../usermanual/roles.rst:158
 msgid "Create child members"
 msgstr "Créer des adhérents enfants"
 
-#: ../usermanual/roles.rst:151
+#: ../usermanual/roles.rst:159
 msgid "Can group managers edit their groups?"
 msgstr "Les responsables de groupes peuvent éditer leurs groupes ?"
 
-#: ../usermanual/roles.rst:152 ../usermanual/roles.rst:155
-#: ../usermanual/roles.rst:158 ../usermanual/roles.rst:161
-#: ../usermanual/roles.rst:164 ../usermanual/roles.rst:167
-#: ../usermanual/roles.rst:170 ../usermanual/roles.rst:173
-#: ../usermanual/roles.rst:176
+#: ../usermanual/roles.rst:160 ../usermanual/roles.rst:163
+#: ../usermanual/roles.rst:166 ../usermanual/roles.rst:169
+#: ../usermanual/roles.rst:172 ../usermanual/roles.rst:175
+#: ../usermanual/roles.rst:178 ../usermanual/roles.rst:181
+#: ../usermanual/roles.rst:184
 msgid "Group manager"
 msgstr "Responsable de groupe"
 
-#: ../usermanual/roles.rst:153
+#: ../usermanual/roles.rst:161
 msgid "Edit groups"
 msgstr "Modifier les groupes"
 
-#: ../usermanual/roles.rst:154
+#: ../usermanual/roles.rst:162
 msgid "Can group managers create members?"
 msgstr "Les responsables de groupes peuvent créer des adhérents ?"
 
-#: ../usermanual/roles.rst:156
+#: ../usermanual/roles.rst:164
 msgid "Create members"
 msgstr "Créer des adhérents"
 
-#: ../usermanual/roles.rst:157
+#: ../usermanual/roles.rst:165
 msgid "Can group managers edit members?"
 msgstr "Les responsables de groupe peuvent éditer les adhérents ?"
 
-#: ../usermanual/roles.rst:159
+#: ../usermanual/roles.rst:167
 msgid "Edit members"
 msgstr "Modifier les adhérents"
 
-#: ../usermanual/roles.rst:160
+#: ../usermanual/roles.rst:168
 msgid "Can group managers send mailings?"
 msgstr "Les responsables de groupe peuvent effectuer des envois ?"
 
-#: ../usermanual/roles.rst:162
+#: ../usermanual/roles.rst:170
 msgid "Send mailings"
 msgstr "Envoyer des mailings"
 
-#: ../usermanual/roles.rst:163
+#: ../usermanual/roles.rst:171
 msgid "Can group managers do exports?"
 msgstr "Les responsables de groupe peuvent effectuer des exports ?"
 
-#: ../usermanual/roles.rst:165
+#: ../usermanual/roles.rst:173
 msgid ""
 "Export members as CSV; print members cards, labels and attendance sheets; "
 "export groups as PDF"
@@ -543,40 +587,40 @@ msgstr ""
 "Exporter les adhérents en CSV ; imprimer les cartes, étiquettes et feuilles "
 "d'émargement ; exporter les groupes en PDF"
 
-#: ../usermanual/roles.rst:166
+#: ../usermanual/roles.rst:174
 msgid "Can group managers see contributions?"
 msgstr "Les responsables de groupe peuvent voir les contributions ?"
 
-#: ../usermanual/roles.rst:168
+#: ../usermanual/roles.rst:176
 msgid "Display contributions; attach contributions to transactions"
 msgstr ""
 "Afficher les contributions ; rattacher des contributions aux transactions"
 
-#: ../usermanual/roles.rst:169
+#: ../usermanual/roles.rst:177
 msgid "Can group managers create contributions?"
 msgstr "Les responsables de groupes peuvent créer des contributions ?"
 
-#: ../usermanual/roles.rst:171
+#: ../usermanual/roles.rst:179
 msgid "Create contributions; attach contributions to transactions"
 msgstr "Créer des contributions ; rattacher des contributions aux transactions"
 
-#: ../usermanual/roles.rst:172
+#: ../usermanual/roles.rst:180
 msgid "Can group managers see transactions?"
 msgstr "Les responsables de groupe peuvent voir les transactions ?"
 
-#: ../usermanual/roles.rst:174
+#: ../usermanual/roles.rst:182
 msgid "Display transactions"
 msgstr "Afficher les transactions"
 
-#: ../usermanual/roles.rst:175
+#: ../usermanual/roles.rst:183
 msgid "Can group managers create transactions?"
 msgstr "Les responsables de groupes peuvent créer des transactions ?"
 
-#: ../usermanual/roles.rst:177
+#: ../usermanual/roles.rst:185
 msgid "Create transactions"
 msgstr "Créer des transactions"
 
-#: ../usermanual/roles.rst:179
+#: ../usermanual/roles.rst:187
 msgid ""
 "Nothing changes for users: everyone keeps what they were allowed to do. "
 "After the upgrade, open **Configuration**, then **Roles**, and check that "
@@ -587,11 +631,11 @@ msgstr ""
 "que les rôles **Responsable de groupe** et **Adhérent** correspondent à ce "
 "que vous attendez."
 
-#: ../usermanual/roles.rst:181
+#: ../usermanual/roles.rst:189
 msgid "A few differences with previous versions:"
 msgstr "Quelques différences avec les versions précédentes :"
 
-#: ../usermanual/roles.rst:183
+#: ../usermanual/roles.rst:191
 msgid ""
 "staff members now see the **Configuration** menu, with the references lists "
 "and the emails and PDF models they could already reach,"
@@ -600,7 +644,7 @@ msgstr ""
 "listes de référence et les modèles de courriels et de PDF qu'ils pouvaient "
 "déjà atteindre,"
 
-#: ../usermanual/roles.rst:184
+#: ../usermanual/roles.rst:192
 msgid ""
 "*Create members* and *Create child members* are two permissions: a member "
 "allowed to register their children no longer sees **Add a member**."
@@ -609,11 +653,11 @@ msgstr ""
 "distinctes : un adhérent autorisé à inscrire ses enfants ne voit plus "
 "**Ajouter un adhérent**."
 
-#: ../usermanual/roles.rst:187
+#: ../usermanual/roles.rst:195
 msgid "What roles do not cover"
 msgstr "Ce que les rôles ne couvrent pas"
 
-#: ../usermanual/roles.rst:189
+#: ../usermanual/roles.rst:197
 msgid ""
 "which fields of member cards each level can see or change, still set "
 "in :ref:`fields configuration <fields_acls>`,"
@@ -621,22 +665,22 @@ msgstr ""
 "les champs des fiches que chaque niveau peut voir ou modifier, toujours "
 "réglés dans la :ref:`configuration des champs <fields_acls>`,"
 
-#: ../usermanual/roles.rst:190
+#: ../usermanual/roles.rst:198
 msgid "documents visibility, set on each document,"
 msgstr "la visibilité des documents, réglée sur chaque document,"
 
-#: ../usermanual/roles.rst:191
+#: ../usermanual/roles.rst:199
 msgid "public pages, set in preferences,"
 msgstr "les pages publiques, réglées dans les préférences,"
 
-#: ../usermanual/roles.rst:192
+#: ../usermanual/roles.rst:200
 msgid ""
 "pages reserved to the super administrator, such as the advanced "
 "configuration,"
 msgstr ""
 "les pages réservées au super administrateur, comme la configuration avancée,"
 
-#: ../usermanual/roles.rst:193
+#: ../usermanual/roles.rst:201
 msgid ""
 "plugins that have not been updated yet: they keep working with access levels."
 msgstr ""
