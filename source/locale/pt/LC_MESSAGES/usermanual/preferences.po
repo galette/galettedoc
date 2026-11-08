@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.0\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-01 22:29+0100\n"
+"POT-Creation-Date: 2026-11-08 08:06+0100\n"
 "PO-Revision-Date: 2026-11-06 13:51+0000\n"
 "Last-Translator: Nelson JESUS <nels-j@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/galette/doc-"
@@ -445,125 +445,41 @@ msgstr ""
 msgid "Rights"
 msgstr "Direitos"
 
-#: ../usermanual/preferences.rst:123
-msgid "Define few extra rights:"
-msgstr "Defina alguns direitos adicionais:"
-
 #: ../usermanual/preferences.rst:125
 msgid ""
-"**Can members create child?** if you enable this settings, any logged in "
-"member can create another members that will be attached to him as children."
+"Rights are managed with :ref:`roles <roles>`; this tab only links to them. "
+"The settings it held before have been turned into permissions of the system "
+"roles when upgrading, see :ref:`roles_upgrade`."
 msgstr ""
-"**Membros podem criar filhos?** Se ativar esta configuração, qualquer membro "
-"conectado poderá criar outros membros que serão lhe vinculados como filhos."
-
-#: ../usermanual/preferences.rst:126
-msgid ""
-"**Can group managers edit their groups?** groups manager can edit their "
-"owned groups information (name, parent, order)."
-msgstr ""
-"**Os administradores de grupos podem editar os seus grupos?** Os "
-"administradores de grupos podem editar as informações dos grupos que "
-"administram (nome, grupo principal, ordem)."
-
-#: ../usermanual/preferences.rst:127
-msgid ""
-"**Can group managers create members?** groups managers can create members "
-"attached to their groups."
-msgstr ""
-"**Os administradores de grupo podem criar membros?** Os administradores de "
-"grupo podem criar membros vinculados aos seus grupos."
-
-#: ../usermanual/preferences.rst:128
-msgid ""
-"**Can group managers edit members?** groups managers can edit member of "
-"their groups information."
-msgstr ""
-"**Os administradores de grupo podem editar os membros?** Os administradores "
-"de grupo podem editar as informações dos membros dos seus grupos."
-
-#: ../usermanual/preferences.rst:129
-msgid "**Can group managers send mailings?** groups manager can send mailings."
-msgstr ""
-"**Os administradores de grupo podem enviar e-mails?** Os administradores de "
-"grupo podem enviar e-mails."
 
 #: ../usermanual/preferences.rst:130
-msgid ""
-"**Can group managers do exports?** groups managers can export groups as PDF, "
-"generate attendance sheets, cards, labels and CSV exports for members of "
-"their groups."
-msgstr ""
-"**Os gestores de grupo podem exportar dados?** Os gestores de grupo podem "
-"exportar grupos como PDF, gerar folhas de presença, cartões, etiquetas e "
-"exportações de CSV para os membros dos seus grupos."
-
-#: ../usermanual/preferences.rst:131
-msgid ""
-"**Can group managers see contributions?** groups managers can see "
-"contributions of members of their groups."
-msgstr ""
-"**Os administradores de grupo podem ver as contribuições?** Os "
-"administradores de grupo podem ver as contribuições dos membros dos seus "
-"grupos."
-
-#: ../usermanual/preferences.rst:132
-msgid ""
-"**Can group managers create contributions?** groups managers can create "
-"contributions on behalf of members of their groups."
-msgstr ""
-"**Os administradores de grupo podem criar contribuições?** Os "
-"administradores de grupo podem criar contribuições em nome dos membros dos "
-"seus grupos."
-
-#: ../usermanual/preferences.rst:133
-msgid ""
-"**Can group managers see transactions?** groups managers can see "
-"transactions of members of their groups."
-msgstr ""
-"**Os administradores de grupo podem ver as transações?** Os administradores "
-"de grupo podem ver as transações dos membros dos seus grupos."
-
-#: ../usermanual/preferences.rst:134
-msgid ""
-"**Can group managers create transactions?** groups managers can create "
-"transactions on behalf of members of their groups."
-msgstr ""
-"**Os administradores de grupo podem criar transações?** Os administradores "
-"de grupo podem criar transações em nome dos membros dos seus grupos."
-
-#: ../usermanual/preferences.rst:136
-msgid "Galette settings, rights tab"
-msgstr "Definições do Galette, separador de direitos"
-
-#: ../usermanual/preferences.rst:144
 msgid "E-Mail"
 msgstr "E-mail"
 
-#: ../usermanual/preferences.rst:146
+#: ../usermanual/preferences.rst:132
 msgid "Sending email parameters:"
 msgstr "Parâmetros de envio de e-mail:"
 
-#: ../usermanual/preferences.rst:148
+#: ../usermanual/preferences.rst:134
 msgid "Galette settings, e-mail tab"
 msgstr "Configurações da Galette, guia de e-mail"
 
-#: ../usermanual/preferences.rst:153
+#: ../usermanual/preferences.rst:139
 msgid "**Sender name**: name of the sender,"
 msgstr "**Nome do remetente**: nome do remetente,"
 
-#: ../usermanual/preferences.rst:154
+#: ../usermanual/preferences.rst:140
 msgid "**Sender email**: email address of the sender,"
 msgstr "**E-mail do remetente**: endereço de e-mail do remetente,"
 
-#: ../usermanual/preferences.rst:155
+#: ../usermanual/preferences.rst:141
 msgid ""
 "**Reply-to email**: reply email address. If empty, sender email will be used,"
 msgstr ""
 "**E-mail de resposta**: endereço de e-mail para resposta. Se estiver vazio, "
 "o e-mail do remetente será usado,"
 
-#: ../usermanual/preferences.rst:156
+#: ../usermanual/preferences.rst:142
 msgid ""
 "**Members administrator email**: email address on which inscription "
 "notifications will be send, you can set several addresses separated with "
@@ -573,7 +489,7 @@ msgstr ""
 "notificações de inscrição serão enviadas. Pode inserir vários endereços "
 "separados por vírgulas,"
 
-#: ../usermanual/preferences.rst:157
+#: ../usermanual/preferences.rst:143
 msgid ""
 "**Send emails to administrators**: whether to send emails to administrators "
 "on subscription,"
@@ -581,7 +497,7 @@ msgstr ""
 "**Enviar emails aos administradores**: opção para enviar emails aos "
 "administradores mediante assinatura,"
 
-#: ../usermanual/preferences.rst:158
+#: ../usermanual/preferences.rst:144
 msgid ""
 "**Wrap text emails**: automatically wraps long lines in emails. If you "
 "disable this options, make sure to wrap yourself,"
@@ -590,7 +506,7 @@ msgstr ""
 "longas em e-mails. Se desativar esta opção, certifique-se de quebrar o texto "
 "manualmente,"
 
-#: ../usermanual/preferences.rst:159
+#: ../usermanual/preferences.rst:145
 msgid ""
 "**Send emails to members**: whether to send emails to members when their "
 "information are updated or a contribution is created on their behalf,"
@@ -599,7 +515,7 @@ msgstr ""
 "as suas informações forem atualizadas ou quando uma contribuição for criada "
 "em seu nome,"
 
-#: ../usermanual/preferences.rst:160
+#: ../usermanual/preferences.rst:146
 msgid ""
 "**Activate HTML editor**: activate HTML format when sending emails "
 "(discouraged),"
@@ -607,16 +523,16 @@ msgstr ""
 "**Ativar editor HTML**: Ativar o formato HTML ao enviar e-mails "
 "(Desaconselhado),"
 
-#: ../usermanual/preferences.rst:161
+#: ../usermanual/preferences.rst:147
 msgid "**Emailing method**: method used to send emails:"
 msgstr "**Método de envio de e-mail**: Método utilizado para enviar e-mails:"
 
-#: ../usermanual/preferences.rst:163
+#: ../usermanual/preferences.rst:149
 msgid "**Emailing disabled**: no email will be send from Galette,"
 msgstr ""
 "**Envio de e-mails desativado**: Nenhum e-mail será enviado por Galette,"
 
-#: ../usermanual/preferences.rst:164
+#: ../usermanual/preferences.rst:150
 msgid ""
 "**PHP mail function**: uses the PHP ``mail()`` fonctions and related "
 "parameters (recommended when possible),"
@@ -624,7 +540,7 @@ msgstr ""
 "**Função de e-mail PHP**: utiliza as funções ``mail()`` do PHP e os "
 "parâmetros relacionados (Recomendado sempre que possível),"
 
-#: ../usermanual/preferences.rst:165
+#: ../usermanual/preferences.rst:151
 msgid ""
 "**Using a SMTP server**: uses an external SMTP server to configure (will be "
 "slower than PHP ``mail()`` function),"
@@ -632,11 +548,11 @@ msgstr ""
 "**Usar um servidor SMTP**: Utiliza um servidor SMTP externo para configurar "
 "(Será mais lento que a função ``mail()`` do PHP),"
 
-#: ../usermanual/preferences.rst:166
+#: ../usermanual/preferences.rst:152
 msgid "**Using sendmail server**: uses local server sendmail,"
 msgstr "**Usar o servidor sendmail**: Utiliza o servidor sendmail local,"
 
-#: ../usermanual/preferences.rst:168
+#: ../usermanual/preferences.rst:154
 msgid ""
 "**Mail signature**: signature added to all sent emails. Available variables "
 "are displayed in the inline help from the application."
@@ -644,43 +560,43 @@ msgstr ""
 "**Assinatura de e-mail**: Assinatura adicionada a todos os e-mails enviados. "
 "As variáveis disponíveis são exibidas na ajuda integrada da aplicação."
 
-#: ../usermanual/preferences.rst:170
+#: ../usermanual/preferences.rst:156
 msgid ""
 "Links to download :ref:`documents <documents>` can be inserted as well; "
 "see :ref:`links in emails and PDF <documents_replacements>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:174
+#: ../usermanual/preferences.rst:160
 msgid ""
 "The **qmail** method has been removed. Instances still configured with it "
 "are switched to ``sendmail`` when the database is updated."
 msgstr ""
 
-#: ../usermanual/preferences.rst:175
+#: ../usermanual/preferences.rst:161
 msgid ""
 "The **GMail** method has been removed. Instances still configured with it "
 "are switched to ``SMTP`` when the database is updated."
 msgstr ""
 
-#: ../usermanual/preferences.rst:177
+#: ../usermanual/preferences.rst:163
 msgid ""
 "When using SMTP, you will have to configure user name and password to use."
 msgstr ""
 "Ao usar SMTP, precisará configurar o nome de utilizador e a palavra-passe."
 
-#: ../usermanual/preferences.rst:179
+#: ../usermanual/preferences.rst:165
 msgid "SMTP configuration is a bit more complex :"
 msgstr "A configuração SMTP é um pouco mais complexa:"
 
-#: ../usermanual/preferences.rst:181
+#: ../usermanual/preferences.rst:167
 msgid "**SMTP server**: server address, required,"
 msgstr "**Servidor SMTP**: Endereço do servidor, obrigatório,"
 
-#: ../usermanual/preferences.rst:182
+#: ../usermanual/preferences.rst:168
 msgid "**SMTP port**: server port, required,"
 msgstr "**Porta SMTP**: Porta do servidor, obrigatória,"
 
-#: ../usermanual/preferences.rst:183
+#: ../usermanual/preferences.rst:169
 msgid ""
 "**Use SMTP authentication**: if your server requires an authentication. In "
 "this case, you will also have to set username and password,"
@@ -688,17 +604,17 @@ msgstr ""
 "**Use autenticação SMTP**: Se o seu servidor exigir autenticação. Nesse "
 "caso, também precisará definir um nome de utilizador e uma palavra-passe,"
 
-#: ../usermanual/preferences.rst:184
+#: ../usermanual/preferences.rst:170
 msgid ""
 "**SMTP user** and **SMTP password**: the credentials given by your mail "
 "provider. Leave the password empty to keep the current one,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:185
+#: ../usermanual/preferences.rst:171
 msgid "**Use TLS for SMTP**: enable SSL support,"
 msgstr "**Use TLS para SMTP**: Ative o apoio a SSL,"
 
-#: ../usermanual/preferences.rst:186
+#: ../usermanual/preferences.rst:172
 msgid ""
 "**Allow unsecure TLS**: on some cases, SSL certificate may be invalid (self "
 "signed for example)."
@@ -706,55 +622,55 @@ msgstr ""
 "**Permitir TLS não seguro**: Em alguns casos, o certificado SSL pode ser "
 "inválido (Autoassinado, por exemplo)."
 
-#: ../usermanual/preferences.rst:191
+#: ../usermanual/preferences.rst:177
 msgid "Testing the settings"
 msgstr ""
 
-#: ../usermanual/preferences.rst:195
+#: ../usermanual/preferences.rst:181
 msgid ""
 "Two buttons, under the emailing method, check your settings before you rely "
 "on them:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:197
+#: ../usermanual/preferences.rst:183
 msgid "Testing the email settings"
 msgstr ""
 
-#: ../usermanual/preferences.rst:202
+#: ../usermanual/preferences.rst:188
 msgid ""
 "**Test connection** connects to the mail server and checks that it accepts "
 "your settings, without sending anything,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:203
+#: ../usermanual/preferences.rst:189
 msgid "**Send a test email** sends a message, to make sure it really arrives."
 msgstr ""
 
-#: ../usermanual/preferences.rst:205
+#: ../usermanual/preferences.rst:191
 msgid ""
 "Tests run on the settings displayed in the form, even those that are not "
 "saved yet: you can try several values, and save once it works. Nothing can "
 "be tested when **Emailing disabled** is selected."
 msgstr ""
 
-#: ../usermanual/preferences.rst:210
+#: ../usermanual/preferences.rst:196
 #, fuzzy
 #| msgid "Sending email parameters:"
 msgid "Sending limits"
 msgstr "Parâmetros de envio de e-mail:"
 
-#: ../usermanual/preferences.rst:216
+#: ../usermanual/preferences.rst:202
 msgid "This is an **experimental** feature."
 msgstr ""
 
-#: ../usermanual/preferences.rst:218
+#: ../usermanual/preferences.rst:204
 msgid ""
 "Try it on a test instance before your production one, watch carefully, and "
 "`report what you find <https://bugs.galette.eu>`_. Leaving the settings at "
 "their default keeps Galette sending exactly as it always did."
 msgstr ""
 
-#: ../usermanual/preferences.rst:220
+#: ../usermanual/preferences.rst:206
 msgid ""
 "Mail servers are rarely willing to accept anything you throw at them. They "
 "restrict the number of recipients a single message may carry, the number of "
@@ -763,156 +679,156 @@ msgid ""
 "of the :ref:`advanced configuration <advanced_config>` page:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:222
+#: ../usermanual/preferences.rst:208
 msgid ""
 "``pref_mail_batch_size``: maximum number of recipients per message. ``0``, "
 "the default, keeps the historical behavior: one single message carrying "
 "every recipient in blind copy,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:223
+#: ../usermanual/preferences.rst:209
 msgid ""
 "``pref_mail_batch_delay``: pause, in seconds, between two messages. ``0`` by "
 "default, no pause,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:224
+#: ../usermanual/preferences.rst:210
 msgid ""
 "``pref_mail_hourly_limit``: maximum number of recipients per hour. ``0``, "
 "the default, means no limit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:225
+#: ../usermanual/preferences.rst:211
 msgid ""
 "``pref_mail_daily_limit``: maximum number of recipients per day. ``0``, the "
 "default, means no limit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:226
+#: ../usermanual/preferences.rst:212
 msgid ""
 "``pref_mail_smtp_keepalive``: keep the SMTP connection open across the "
 "messages of a mailing instead of reconnecting for each one. Enabled by "
 "default."
 msgstr ""
 
-#: ../usermanual/preferences.rst:228
+#: ../usermanual/preferences.rst:214
 msgid ""
 "Apart from the keepalive, they all ship disabled: an instance that is "
 "updated behaves exactly as it did before."
 msgstr ""
 
-#: ../usermanual/preferences.rst:230
+#: ../usermanual/preferences.rst:216
 msgid ""
 "Filter the advanced configuration on ``pref_mail_`` to get them all, next to "
 "the SMTP settings. The four that drive the queue carry the **alpha** marker:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:232
+#: ../usermanual/preferences.rst:218
 msgid "The sending limits, in the advanced configuration"
 msgstr ""
 
-#: ../usermanual/preferences.rst:237
+#: ../usermanual/preferences.rst:223
 msgid ""
 "Refer to your mail provider's documentation for the values to use, along "
 "with the SMTP settings."
 msgstr ""
 
-#: ../usermanual/preferences.rst:241
+#: ../usermanual/preferences.rst:227
 msgid ""
 "The hourly and daily limits are what turns sending into a :ref:`queue "
 "<mailing_queue>`: as soon as one of them is set, a mailing can no longer be "
 "sent in a single page load."
 msgstr ""
 
-#: ../usermanual/preferences.rst:245
+#: ../usermanual/preferences.rst:231
 msgid ""
 "Limits count **recipients**, not messages, and for all messages Galette send."
 msgstr ""
 
-#: ../usermanual/preferences.rst:247
+#: ../usermanual/preferences.rst:233
 msgid "The real limit of course depends on all usages of configured server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:250
+#: ../usermanual/preferences.rst:236
 msgid "Labels"
 msgstr "Etiquetas"
 
-#: ../usermanual/preferences.rst:252
+#: ../usermanual/preferences.rst:238
 msgid "Galette settings, labels tab"
 msgstr "Definições do Galette, separador de etiquetas"
 
-#: ../usermanual/preferences.rst:257
+#: ../usermanual/preferences.rst:243
 msgid ""
 "This tab describes the sheets of self-adhesive labels you print the "
 "addresses of your members on. All sizes are in millimeters:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:259
+#: ../usermanual/preferences.rst:245
 msgid ""
 "**Vertical margins** and **Horizontal margins**: the blank space around the "
 "labels, on the edges of the sheet,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:260
+#: ../usermanual/preferences.rst:246
 msgid ""
 "**Vertical spacing** and **Horizontal spacing**: the blank space between two "
 "labels,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:261
+#: ../usermanual/preferences.rst:247
 msgid "**Label width** and **Label height**: the size of one label,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:262
+#: ../usermanual/preferences.rst:248
 msgid ""
 "**Number of label columns** and **Number of label lines**: how many labels a "
 "sheet holds,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:263
+#: ../usermanual/preferences.rst:249
 msgid "**Font size**: the size of the text printed on the labels,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:264
+#: ../usermanual/preferences.rst:250
 msgid ""
 "**Print border**: print a grey border around each label, handy for a first "
 "try on plain paper."
 msgstr ""
 
-#: ../usermanual/preferences.rst:266
+#: ../usermanual/preferences.rst:252
 msgid "The values usually are written on the box of the labels."
 msgstr ""
 
-#: ../usermanual/preferences.rst:269
+#: ../usermanual/preferences.rst:255
 msgid "Cards"
 msgstr "Cartões"
 
-#: ../usermanual/preferences.rst:271
+#: ../usermanual/preferences.rst:257
 msgid "Galette settings, cards tab"
 msgstr "Definições do Galette, separador de cartões"
 
-#: ../usermanual/preferences.rst:276
+#: ../usermanual/preferences.rst:262
 msgid "This tab sets the content and the look of the member cards:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:278
+#: ../usermanual/preferences.rst:264
 msgid ""
 "**Short Text (Card Center)**: a short text printed in the middle of the "
 "card, 10 characters at most; the acronym of your association for example,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:279
+#: ../usermanual/preferences.rst:265
 msgid ""
 "**Long Text (Bottom Line)**: a text printed at the bottom of the card, 65 "
 "characters at most,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:280
+#: ../usermanual/preferences.rst:266
 msgid ""
 "**Strip Text Color**: the color of the text written on the bottom strip,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:281
+#: ../usermanual/preferences.rst:267
 msgid ""
 "**Active Member Color**, **Board Members Color** and **Honor Members "
 "Color**: the color of the main texts and of the bottom strip, depending on "
@@ -920,55 +836,55 @@ msgid ""
 "members,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:282
+#: ../usermanual/preferences.rst:268
 msgid ""
 "**Logo**: a logo for printing, if the one of the association does not suit,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:283
+#: ../usermanual/preferences.rst:269
 msgid ""
 "**Allow members to print card ?**: members can download their own card, as "
 "long as their membership is up to date,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:284
+#: ../usermanual/preferences.rst:270
 msgid "**Show title ?**: print the title (Mr., Mrs....) in front of the name,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:285
+#: ../usermanual/preferences.rst:271
 msgid ""
 "**Address type**: what is printed under the name: email, zip code and town, "
 "nickname, profession or member number,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:286
+#: ../usermanual/preferences.rst:272
 msgid ""
 "**Year**: the year printed on the card. It can be a year, two years "
 "separated with a slash (*2026/2027*), or ``DEADLINE`` to print the end of "
 "membership of each member,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:287
+#: ../usermanual/preferences.rst:273
 msgid ""
 "margins, spacing, width and height of the cards on the page, in millimeters."
 msgstr ""
 
-#: ../usermanual/preferences.rst:289
+#: ../usermanual/preferences.rst:275
 msgid "Colors are written in hexadecimal notation, ``#RRGGBB``."
 msgstr ""
 
-#: ../usermanual/preferences.rst:294
+#: ../usermanual/preferences.rst:280
 msgid "Dynamic fields"
 msgstr ""
 
-#: ../usermanual/preferences.rst:298
+#: ../usermanual/preferences.rst:284
 msgid ""
 "You can add your own fields to the preferences, for information about your "
 "association that Galette does not know about: a registration number, a bank "
 "account number, the name of the president..."
 msgstr ""
 
-#: ../usermanual/preferences.rst:300
+#: ../usermanual/preferences.rst:286
 msgid ""
 "Create them from **Configuration**, then **Dynamic fields**, choosing the "
 "**Settings** form; see :ref:`dynamic fields <dynamic_fields>`. They are then "
@@ -976,18 +892,18 @@ msgid ""
 "<emails_contents>` and in :ref:`PDF models <pdf_models>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:305
+#: ../usermanual/preferences.rst:291
 msgid "Security"
 msgstr "Segurança"
 
-#: ../usermanual/preferences.rst:311
+#: ../usermanual/preferences.rst:297
 msgid ""
 "Complex password rules are not user friendly; but security is mainly never :)"
 msgstr ""
 "Regras de palavra-passe complexas não são amigáveis ao utilizador; mas "
 "segurança nunca é demais :)"
 
-#: ../usermanual/preferences.rst:313
+#: ../usermanual/preferences.rst:299
 msgid ""
 "Of course, all passwords should be as secure as possible, but this is "
 "especially true for all accounts that have privileges (staff, admin, super-"
@@ -998,40 +914,40 @@ msgstr ""
 "(funcionários, administradores, superadministradores); pode explicar aos "
 "seus utilizadores por que isto é importante."
 
-#: ../usermanual/preferences.rst:315
+#: ../usermanual/preferences.rst:301
 msgid "You can enforce some rules for members (and super-admin) passwords:"
 msgstr ""
 "Pode impor algumas regras para as palavras-passe dos membros (E do "
 "superadministrador):"
 
-#: ../usermanual/preferences.rst:317
+#: ../usermanual/preferences.rst:303
 msgid "minimum length (6 characters or more),"
 msgstr "Comprimento mínimo (6 caracteres ou mais),"
 
-#: ../usermanual/preferences.rst:318
+#: ../usermanual/preferences.rst:304
 msgid "minimum \"strength\","
 msgstr "Força mínima,"
 
-#: ../usermanual/preferences.rst:319
+#: ../usermanual/preferences.rst:305
 msgid "blacklist,"
 msgstr "lista negra,"
 
-#: ../usermanual/preferences.rst:320
+#: ../usermanual/preferences.rst:306
 msgid "no personal information."
 msgstr "nenhuma informação pessoal."
 
-#: ../usermanual/preferences.rst:322
+#: ../usermanual/preferences.rst:308
 msgid "Galette settings, security tab"
 msgstr "Definições do Galette, separador de segurança"
 
-#: ../usermanual/preferences.rst:327
+#: ../usermanual/preferences.rst:313
 msgid ""
 "The **Test a password:** field, at the bottom of the tab, checks any "
 "password against the values currently selected; do not forget to save your "
 "preferences once you are happy with the result."
 msgstr ""
 
-#: ../usermanual/preferences.rst:329
+#: ../usermanual/preferences.rst:315
 msgid ""
 "Length is still the only rule that is active per default, just configure the "
 "number of characters required. On passwords fields, failures will be "
@@ -1043,7 +959,7 @@ msgstr ""
 "passe, as falhas serão exibidas instantaneamente, assim como um \"medidor de "
 "força\" para fins informativos."
 
-#: ../usermanual/preferences.rst:333
+#: ../usermanual/preferences.rst:319
 msgid ""
 "If you enable password checks, it is not possible to know if some of "
 "existing ones does not respect them. Galette will display a warning at login "
@@ -1054,7 +970,7 @@ msgstr ""
 "fazer login caso as verificações não sejam respeitadas, mas o login ainda "
 "será possível!"
 
-#: ../usermanual/preferences.rst:335
+#: ../usermanual/preferences.rst:321
 msgid ""
 "But wait... Password security is important, but Galette does not enforce "
 "nothing! Isn't that dumb? Well, not really. For tests or entirely private "
@@ -1069,37 +985,37 @@ msgstr ""
 "utilizadores; por isto, cabe a si garantir a segurança conforme necessário; "
 "assim como usar SSL ou não :)"
 
-#: ../usermanual/preferences.rst:338
+#: ../usermanual/preferences.rst:324
 msgid "Password strength"
 msgstr "Força da palavra-passe"
 
-#: ../usermanual/preferences.rst:340
+#: ../usermanual/preferences.rst:326
 msgid "Password strength calculation is quite simple. It is based on 4 rules:"
 msgstr ""
 "O cálculo da força de uma palavra-passe é bastante simples. Baseia-se em 4 "
 "regras:"
 
-#: ../usermanual/preferences.rst:342
+#: ../usermanual/preferences.rst:328
 msgid "contains lower case characters,"
 msgstr "Contém caracteres minúsculos,"
 
-#: ../usermanual/preferences.rst:343
+#: ../usermanual/preferences.rst:329
 msgid "contains upper case characters,"
 msgstr "Contém caracteres maiúsculos,"
 
-#: ../usermanual/preferences.rst:344
+#: ../usermanual/preferences.rst:330
 msgid "contains number,"
 msgstr "Contém número,"
 
-#: ../usermanual/preferences.rst:345
+#: ../usermanual/preferences.rst:331
 msgid "contains special characters."
 msgstr "Contém caracteres especiais."
 
-#: ../usermanual/preferences.rst:347
+#: ../usermanual/preferences.rst:333
 msgid "You can choose between 5 values for strength configuration:"
 msgstr "Pode escolher entre 5 valores para a configuração de intensidade:"
 
-#: ../usermanual/preferences.rst:349
+#: ../usermanual/preferences.rst:335
 msgid ""
 "**none**: (default): disables strength checks and check for personal "
 "information,"
@@ -1107,7 +1023,7 @@ msgstr ""
 "**nenhum**: (predefinição): desativa as verificações de força e a "
 "verificação de informações pessoais,"
 
-#: ../usermanual/preferences.rst:350
+#: ../usermanual/preferences.rst:336
 msgid ""
 "**weaker**: enables check for personal information, only one of the rule is "
 "mandatory,"
@@ -1115,23 +1031,23 @@ msgstr ""
 "**Mais fraco**: Permite a verificação de informações pessoais, apenas uma "
 "das regras é obrigatória,"
 
-#: ../usermanual/preferences.rst:351
+#: ../usermanual/preferences.rst:337
 msgid "**medium**: two rules are mandatory,"
 msgstr "**Médio**: Duas regras são obrigatórias,"
 
-#: ../usermanual/preferences.rst:352
+#: ../usermanual/preferences.rst:338
 msgid "**strong**: three rules are mandatory,"
 msgstr "**Forte**: Três regras são obrigatórias,"
 
-#: ../usermanual/preferences.rst:353
+#: ../usermanual/preferences.rst:339
 msgid "**very strong**: the four rules are mandatory."
 msgstr "**Muito rigoroso**: As quatro regras são obrigatórias."
 
-#: ../usermanual/preferences.rst:356
+#: ../usermanual/preferences.rst:342
 msgid "Blacklisted passwords"
 msgstr "Palavras-passe na lista negra"
 
-#: ../usermanual/preferences.rst:358
+#: ../usermanual/preferences.rst:344
 msgid ""
 "A default list of 500 common passwords is provided as a blacklist you can "
 "enable, \"galette\" is also blacklisted."
@@ -1139,7 +1055,7 @@ msgstr ""
 "Uma lista padrão de 500 palavras-passe comuns é fornecida como uma lista "
 "negra que pode ativar; \"galette\" também está na lista negra."
 
-#: ../usermanual/preferences.rst:362
+#: ../usermanual/preferences.rst:348
 msgid ""
 "The ``galette/data/blacklist.txt`` file is used to list blacklisted terms "
 "(one per line). You can provide your own file, we advice you to complete the "
@@ -1149,11 +1065,11 @@ msgstr ""
 "bloqueados (um por linha). Pode fornecer o seu próprio ficheiro, mas "
 "recomendamos que complete o existente."
 
-#: ../usermanual/preferences.rst:365
+#: ../usermanual/preferences.rst:351
 msgid "Personal information as password"
 msgstr "Informação pessoal como palavra-passe"
 
-#: ../usermanual/preferences.rst:367
+#: ../usermanual/preferences.rst:353
 msgid ""
 "This check rely on strength activation (all but **none** level). For the "
 "super-admin account, this will just ensure you are not using login as "
@@ -1164,35 +1080,35 @@ msgstr ""
 "esteja a usar o login como palavra-passe. Para contas padrão, várias "
 "informações estão envolvidas:"
 
-#: ../usermanual/preferences.rst:369
+#: ../usermanual/preferences.rst:355
 msgid "name,"
 msgstr "nome,"
 
-#: ../usermanual/preferences.rst:370
+#: ../usermanual/preferences.rst:356
 msgid "surname,"
 msgstr "sobrenome,"
 
-#: ../usermanual/preferences.rst:371
+#: ../usermanual/preferences.rst:357
 msgid "nickname,"
 msgstr "apelido,"
 
-#: ../usermanual/preferences.rst:372
+#: ../usermanual/preferences.rst:358
 msgid "login,"
 msgstr "credencial,"
 
-#: ../usermanual/preferences.rst:373
+#: ../usermanual/preferences.rst:359
 msgid "email,"
 msgstr "e-mail,"
 
-#: ../usermanual/preferences.rst:374
+#: ../usermanual/preferences.rst:360
 msgid "birthdate,"
 msgstr "data de nascimento,"
 
-#: ../usermanual/preferences.rst:375
+#: ../usermanual/preferences.rst:361
 msgid "town"
 msgstr "cidade"
 
-#: ../usermanual/preferences.rst:377
+#: ../usermanual/preferences.rst:363
 msgid ""
 "Basically, user cannot use verbatim any of those information as password. "
 "Some possible combinations are also checked, like surname and name couple "
@@ -1206,18 +1122,18 @@ msgstr ""
 "letra do apelido com o nome, etc. A data de nascimento também será "
 "verificada em diferentes formatos (local, internacional e algumas variantes)."
 
-#: ../usermanual/preferences.rst:382
+#: ../usermanual/preferences.rst:368
 msgid "Two-factor authentication"
 msgstr ""
 
-#: ../usermanual/preferences.rst:386
+#: ../usermanual/preferences.rst:372
 msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change. It is disabled by default; nothing happens until "
 "you choose otherwise."
 msgstr ""
 
-#: ../usermanual/preferences.rst:388
+#: ../usermanual/preferences.rst:374
 msgid ""
 "A password is a single factor: whoever knows it is in. Two-factor "
 "authentication asks, right after the password, for a six digits code that "
@@ -1225,27 +1141,27 @@ msgid ""
 "phone or computer. A stolen password is then not enough anymore."
 msgstr ""
 
-#: ../usermanual/preferences.rst:390
+#: ../usermanual/preferences.rst:376
 msgid ""
 "Galette implements the TOTP standard (:rfc:`6238`), the one every "
 "authenticator application speaks; no third party service is involved, and "
 "nothing leaves your server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:392
+#: ../usermanual/preferences.rst:378
 msgid "Two policies are available:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:394
+#: ../usermanual/preferences.rst:380
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:395
+#: ../usermanual/preferences.rst:381
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 
-#: ../usermanual/preferences.rst:397
+#: ../usermanual/preferences.rst:383
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -1255,7 +1171,7 @@ msgid ""
 "once the optional policy has been used in the field."
 msgstr ""
 
-#: ../usermanual/preferences.rst:399
+#: ../usermanual/preferences.rst:385
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1265,7 +1181,7 @@ msgid ""
 "browser, or after a year."
 msgstr ""
 
-#: ../usermanual/preferences.rst:403
+#: ../usermanual/preferences.rst:389
 msgid ""
 "Switching the policy back to **disabled** does not delete anything. Codes "
 "are no longer asked for, and the second factors already enabled start being "
@@ -1274,14 +1190,14 @@ msgid ""
 "enrolled then would never be asked for."
 msgstr ""
 
-#: ../usermanual/preferences.rst:405
+#: ../usermanual/preferences.rst:391
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
 "it <faq_2fa>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:407
+#: ../usermanual/preferences.rst:393
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1289,11 +1205,11 @@ msgid ""
 "member <member_2fa_reset>` who lost it."
 msgstr ""
 
-#: ../usermanual/preferences.rst:412
+#: ../usermanual/preferences.rst:398
 msgid "Authentication attempts"
 msgstr "Tentativas de autenticação"
 
-#: ../usermanual/preferences.rst:416
+#: ../usermanual/preferences.rst:402
 msgid ""
 "To protect accounts against people trying passwords one after the other, "
 "Galette counts the failed logins. After too many failures, further attempts "
@@ -1301,65 +1217,150 @@ msgid ""
 "password recovery requests and to self registrations."
 msgstr ""
 
-#: ../usermanual/preferences.rst:418
+#: ../usermanual/preferences.rst:404
 msgid "By default:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:420
+#: ../usermanual/preferences.rst:406
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:421
+#: ../usermanual/preferences.rst:407
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:422
+#: ../usermanual/preferences.rst:408
 msgid "100 failed logins on one account, from anywhere, within a day,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:423
+#: ../usermanual/preferences.rst:409
 msgid "3 password recovery requests within an hour,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:425
+#: ../usermanual/preferences.rst:411
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:427
+#: ../usermanual/preferences.rst:413
 msgid ""
 "**Configuration**, then **Authentication attempts** lists what is refused "
 "right now: what is counted, the account, the address, the number of failures "
 "and until when attempts are refused."
 msgstr ""
 
-#: ../usermanual/preferences.rst:429
+#: ../usermanual/preferences.rst:415
 msgid "Authentication attempts currently refused"
 msgstr "As tentativas de autenticação foram recusadas neste momento"
 
-#: ../usermanual/preferences.rst:434
+#: ../usermanual/preferences.rst:420
 msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
 msgstr ""
 
-#: ../usermanual/preferences.rst:437
+#: ../usermanual/preferences.rst:423
 msgid "Super administrator credentials"
 msgstr ""
 
-#: ../usermanual/preferences.rst:441
+#: ../usermanual/preferences.rst:427
 msgid ""
 "The super administrator login and password are no longer in the preferences. "
 "Once logged in as super administrator, go to **My account**, then **My "
 "information**. Galette asks for the current password before saving a new one."
 msgstr ""
 
-#: ../usermanual/preferences.rst:443
+#: ../usermanual/preferences.rst:429
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
 msgstr ""
+
+#~ msgid "Define few extra rights:"
+#~ msgstr "Defina alguns direitos adicionais:"
+
+#~ msgid ""
+#~ "**Can members create child?** if you enable this settings, any logged in "
+#~ "member can create another members that will be attached to him as "
+#~ "children."
+#~ msgstr ""
+#~ "**Membros podem criar filhos?** Se ativar esta configuração, qualquer "
+#~ "membro conectado poderá criar outros membros que serão lhe vinculados "
+#~ "como filhos."
+
+#~ msgid ""
+#~ "**Can group managers edit their groups?** groups manager can edit their "
+#~ "owned groups information (name, parent, order)."
+#~ msgstr ""
+#~ "**Os administradores de grupos podem editar os seus grupos?** Os "
+#~ "administradores de grupos podem editar as informações dos grupos que "
+#~ "administram (nome, grupo principal, ordem)."
+
+#~ msgid ""
+#~ "**Can group managers create members?** groups managers can create members "
+#~ "attached to their groups."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem criar membros?** Os administradores "
+#~ "de grupo podem criar membros vinculados aos seus grupos."
+
+#~ msgid ""
+#~ "**Can group managers edit members?** groups managers can edit member of "
+#~ "their groups information."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem editar os membros?** Os "
+#~ "administradores de grupo podem editar as informações dos membros dos seus "
+#~ "grupos."
+
+#~ msgid ""
+#~ "**Can group managers send mailings?** groups manager can send mailings."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem enviar e-mails?** Os administradores "
+#~ "de grupo podem enviar e-mails."
+
+#~ msgid ""
+#~ "**Can group managers do exports?** groups managers can export groups as "
+#~ "PDF, generate attendance sheets, cards, labels and CSV exports for "
+#~ "members of their groups."
+#~ msgstr ""
+#~ "**Os gestores de grupo podem exportar dados?** Os gestores de grupo podem "
+#~ "exportar grupos como PDF, gerar folhas de presença, cartões, etiquetas e "
+#~ "exportações de CSV para os membros dos seus grupos."
+
+#~ msgid ""
+#~ "**Can group managers see contributions?** groups managers can see "
+#~ "contributions of members of their groups."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem ver as contribuições?** Os "
+#~ "administradores de grupo podem ver as contribuições dos membros dos seus "
+#~ "grupos."
+
+#~ msgid ""
+#~ "**Can group managers create contributions?** groups managers can create "
+#~ "contributions on behalf of members of their groups."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem criar contribuições?** Os "
+#~ "administradores de grupo podem criar contribuições em nome dos membros "
+#~ "dos seus grupos."
+
+#~ msgid ""
+#~ "**Can group managers see transactions?** groups managers can see "
+#~ "transactions of members of their groups."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem ver as transações?** Os "
+#~ "administradores de grupo podem ver as transações dos membros dos seus "
+#~ "grupos."
+
+#~ msgid ""
+#~ "**Can group managers create transactions?** groups managers can create "
+#~ "transactions on behalf of members of their groups."
+#~ msgstr ""
+#~ "**Os administradores de grupo podem criar transações?** Os "
+#~ "administradores de grupo podem criar transações em nome dos membros dos "
+#~ "seus grupos."
+
+#~ msgid "Galette settings, rights tab"
+#~ msgstr "Definições do Galette, separador de direitos"
 
 #~ msgid "**Show public pages for**: defines who can see public pages:"
 #~ msgstr ""
