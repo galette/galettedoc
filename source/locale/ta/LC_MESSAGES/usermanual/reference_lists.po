@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 06:50+0200\n"
+"POT-Creation-Date: 2026-11-08 08:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ta\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../usermanual/reference_lists.rst:5
@@ -21,7 +21,11 @@ msgid "Reference lists"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:7
-msgid "Several lists are used all over Galette: the statuses of the members, the kinds of contributions, the payment types, the titles. Galette comes with ready to use values, that you can adapt to your association from the **Configuration** menu."
+msgid ""
+"Several lists are used all over Galette: the statuses of the members, the "
+"kinds of contributions, the payment types, the titles. Galette comes with "
+"ready to use values, that you can adapt to your association from the "
+"**Configuration** menu."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:9
@@ -37,15 +41,19 @@ msgid "the edit icon of the **Actions** column changes an entry,"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:13
-msgid "for statuses, contribution types and payment types, the translation icon opens **Translate labels**, to give the entry a name in every language your members use,"
+msgid ""
+"for statuses, contribution types and payment types, the translation icon "
+"opens **Translate labels**, to give the entry a name in every language your "
+"members use,"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:14
-msgid "the delete icon removes an entry. An entry that is still in use, for example a status still given to some members, cannot be deleted."
+msgid ""
+"the delete icon removes an entry. An entry that is still in use, for example "
+"a status still given to some members, cannot be deleted."
 msgstr ""
 
-#: ../usermanual/reference_lists.rst:19
-#: ../usermanual/reference_lists.rst:25
+#: ../usermanual/reference_lists.rst:19 ../usermanual/reference_lists.rst:25
 msgid "User statuses"
 msgstr ""
 
@@ -54,15 +62,23 @@ msgid "**Configuration**, then **User statuses**."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:23
-msgid "The status tells the role of a member in your association: president, treasurer, active member, benefactor member... Each member has one status."
+msgid ""
+"The status tells the role of a member in your association: president, "
+"treasurer, active member, benefactor member... Each member has one status."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:30
-msgid "Each status has a **name** and a **priority**. The priority orders the statuses in the lists, and it decides who belongs to the staff:"
+msgid ""
+"Each status has a **name** and a **priority**. The priority orders the "
+"statuses in the lists, and it decides who belongs to the staff:"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:34
-msgid "Members with a status priority lower than 30 are **staff members**: they can manage members, contributions and mailings. With the default statuses, this is the case for the president, the vice-president, the treasurer and the secretary."
+msgid ""
+"Members with a status priority lower than 30 are **staff members**: they can "
+"manage members, contributions and mailings. With the default statuses, this "
+"is the case for the president, the vice-president, the treasurer and the "
+"secretary."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:36
@@ -70,11 +86,13 @@ msgid "See :ref:`rights <man_generalites>` for what staff members can do."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:38
-msgid "The **Non-member** status is given to new members unless another **Default membership status** is set in the :ref:`preferences <man_preferences>`; it cannot be deleted."
+msgid ""
+"The **Non-member** status is given to new members unless another **Default "
+"membership status** is set in the :ref:`preferences <man_preferences>`; it "
+"cannot be deleted."
 msgstr ""
 
-#: ../usermanual/reference_lists.rst:43
-#: ../usermanual/reference_lists.rst:49
+#: ../usermanual/reference_lists.rst:43 ../usermanual/reference_lists.rst:49
 msgid "Contributions types"
 msgstr ""
 
@@ -83,7 +101,9 @@ msgid "**Configuration**, then **Contributions types**."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:47
-msgid "Contribution types describe what your members pay: annual fee, reduced fee, donation..."
+msgid ""
+"Contribution types describe what your members pay: annual fee, reduced fee, "
+"donation..."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:54
@@ -99,11 +119,15 @@ msgid "a **description**, to explain for example who the type is meant for,"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:58
-msgid "an **amount**: when a contribution of that type is added, this amount is proposed, and can still be changed. Leave it empty if the amount varies,"
+msgid ""
+"an **amount**: when a contribution of that type is added, this amount is "
+"proposed, and can still be changed. Leave it empty if the amount varies,"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:59
-msgid "a **membership extension**: whether a contribution of that type extends the membership of the member."
+msgid ""
+"a **membership extension**: whether a contribution of that type extends the "
+"membership of the member."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:61
@@ -111,31 +135,41 @@ msgid "Editing a contribution type"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:66
-msgid "The choices of **Membership extension** depend on the **Default membership extension** set in the :ref:`preferences <man_preferences>`:"
+msgid ""
+"The choices of **Membership extension** depend on the **Default membership "
+"extension** set in the :ref:`preferences <man_preferences>`:"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:68
-msgid "**Default**: the membership is extended by the default duration, 12 months for example,"
+msgid ""
+"**Default**: the membership is extended by the default duration, 12 months "
+"for example,"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:69
-msgid "a number of months: the membership is extended by that duration instead; use it for a monthly or quarterly membership,"
+msgid ""
+"a number of months: the membership is extended by that duration instead; use "
+"it for a monthly or quarterly membership,"
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:70
-msgid "**No**: the contribution does not extend the membership. This is what donations use."
+msgid ""
+"**No**: the contribution does not extend the membership. This is what "
+"donations use."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:72
-msgid "When no default membership extension is set (because all memberships start on the same day of the year), the choices are only **Yes** and **No**."
+msgid ""
+"When no default membership extension is set (because all memberships start "
+"on the same day of the year), the choices are only **Yes** and **No**."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:74
-msgid "See :doc:`contributions management <contributions>` to record contributions."
+msgid ""
+"See :doc:`contributions management <contributions>` to record contributions."
 msgstr ""
 
-#: ../usermanual/reference_lists.rst:79
-#: ../usermanual/reference_lists.rst:85
+#: ../usermanual/reference_lists.rst:79 ../usermanual/reference_lists.rst:85
 msgid "Payment types"
 msgstr ""
 
@@ -144,15 +178,20 @@ msgid "**Configuration**, then **Payment types**."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:83
-msgid "Payment types are the ways your members pay: cash, check, credit card, transfer..."
+msgid ""
+"Payment types are the ways your members pay: cash, check, credit card, "
+"transfer..."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:90
-msgid "You can add your own, for example a local currency or holiday vouchers. The payment types provided with Galette can be renamed or translated, but not deleted: some of them are used by Galette itself, like **Payment schedule** for :ref:`scheduled payments <scheduled_payments>`, or by plugins."
+msgid ""
+"You can add your own, for example a local currency or holiday vouchers. The "
+"payment types provided with Galette can be renamed or translated, but not "
+"deleted: some of them are used by Galette itself, like **Payment schedule** "
+"for :ref:`scheduled payments <scheduled_payments>`, or by plugins."
 msgstr ""
 
-#: ../usermanual/reference_lists.rst:95
-#: ../usermanual/reference_lists.rst:101
+#: ../usermanual/reference_lists.rst:95 ../usermanual/reference_lists.rst:101
 msgid "Titles"
 msgstr ""
 
@@ -165,5 +204,8 @@ msgid "Titles are displayed before the name of the members: Mr., Mrs...."
 msgstr ""
 
 #: ../usermanual/reference_lists.rst:106
-msgid "Each title has a **short form** (*Mr.*), displayed before the name of the members, and an optional **long form** (*Mister*). **Mr.** and **Mrs.** cannot be deleted."
+msgid ""
+"Each title has a **short form** (*Mr.*), displayed before the name of the "
+"members, and an optional **long form** (*Mister*). **Mr.** and **Mrs.** "
+"cannot be deleted."
 msgstr ""
