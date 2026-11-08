@@ -1,0 +1,421 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.4\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-11-08 08:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: si\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../usermanual/roles.rst:5
+msgid "Roles"
+msgstr ""
+
+#: ../usermanual/roles.rst:9
+msgid "What a user is allowed to do in Galette is described by **permissions**, such as *Display members*, *Create contributions* or *Send mailings*. Permissions are not given one by one to users: they are gathered in **roles**, and roles are given to members."
+msgstr ""
+
+#: ../usermanual/roles.rst:11
+msgid "Some roles are given automatically, from members information: they reproduce the access levels of previous versions (members, group managers, staff members, administrators). You can change their permissions, and create your own roles, for a treasurer or a secretary for instance, to give to whom you choose, for all the groups or for one group only."
+msgstr ""
+
+#: ../usermanual/roles.rst:13
+msgid "Roles are managed from **Configuration**, then **Roles**. This page requires the *Manage roles and their permissions* permission, which only administrators have by default."
+msgstr ""
+
+#: ../usermanual/roles.rst:16
+msgid "System roles"
+msgstr ""
+
+#: ../usermanual/roles.rst:18
+msgid "Five roles are given from members information; they cannot be renamed, removed nor given by hand:"
+msgstr ""
+
+#: ../usermanual/roles.rst:24
+#: ../usermanual/roles.rst:156
+msgid "Role"
+msgstr ""
+
+#: ../usermanual/roles.rst:25
+msgid "Given to"
+msgstr ""
+
+#: ../usermanual/roles.rst:26
+msgid "Inherits from"
+msgstr ""
+
+#: ../usermanual/roles.rst:27
+msgid "**Member**"
+msgstr ""
+
+#: ../usermanual/roles.rst:28
+msgid "any logged in member"
+msgstr ""
+
+#: ../usermanual/roles.rst:30
+msgid "**Up to date member**"
+msgstr ""
+
+#: ../usermanual/roles.rst:31
+msgid "members whose account is active and whose membership is up to date"
+msgstr ""
+
+#: ../usermanual/roles.rst:32
+#: ../usermanual/roles.rst:35
+#: ../usermanual/roles.rst:38
+#: ../usermanual/roles.rst:159
+msgid "Member"
+msgstr ""
+
+#: ../usermanual/roles.rst:33
+msgid "**Group manager**"
+msgstr ""
+
+#: ../usermanual/roles.rst:34
+msgid "managers of a group, on the groups they manage only"
+msgstr ""
+
+#: ../usermanual/roles.rst:36
+msgid "**Staff member**"
+msgstr ""
+
+#: ../usermanual/roles.rst:37
+msgid "members with a staff status (President, Treasurer, Secretary...)"
+msgstr ""
+
+#: ../usermanual/roles.rst:39
+msgid "**Administrator**"
+msgstr ""
+
+#: ../usermanual/roles.rst:40
+msgid "members for who the *administrator* checkbox has been checked"
+msgstr ""
+
+#: ../usermanual/roles.rst:41
+msgid "Staff member"
+msgstr ""
+
+#: ../usermanual/roles.rst:43
+msgid "A role **inherits** the permissions of its parent: an administrator gets every permission of staff members, and those of members. The page of a system role tells where it comes from, and lists the administrators, staff members or group managers who have it, each group manager once with all the groups they manage. **Member** and **Up to date member** are given to nearly every member: their page only tells how many have them."
+msgstr ""
+
+#: ../usermanual/roles.rst:45
+msgid "On a new installation, system roles get what access levels allowed before:"
+msgstr ""
+
+#: ../usermanual/roles.rst:47
+msgid "**Member** and **Up to date member**: no permission. Members still see and edit their own information, and see their own contributions and transactions, see :ref:`below <roles_own>`,"
+msgstr ""
+
+#: ../usermanual/roles.rst:48
+msgid "**Group manager**: display the members and the groups they manage, export those members as CSV, print their cards, labels and attendance sheets, export their groups as PDF,"
+msgstr ""
+
+#: ../usermanual/roles.rst:49
+msgid "**Staff member**: everything about members but *Create child members*, which no role has by default, contributions, transactions, groups, mailings and documents, references lists (statuses, titles, contributions and payment types), emails contents and PDF models, data exports, logs and system information,"
+msgstr ""
+
+#: ../usermanual/roles.rst:50
+msgid "**Administrator**: in addition, grant administrator rights to members, settings, fields configuration, authentication restrictions, plugins and roles."
+msgstr ""
+
+#: ../usermanual/roles.rst:52
+msgid "When upgrading, they get what your former settings allowed, see :ref:`roles_upgrade`."
+msgstr ""
+
+#: ../usermanual/roles.rst:54
+msgid "The **super administrator** is not a member, and has no role: it is always granted everything."
+msgstr ""
+
+#: ../usermanual/roles.rst:59
+msgid "What members own"
+msgstr ""
+
+#: ../usermanual/roles.rst:61
+msgid "Some permissions are always granted on what a member owns: their own information, contributions and transactions, and those of their children. They are flagged **Always on own** in the permissions lists. This cannot be changed: a member can always see their own card, even if the **Member** role has no permission at all. Printing their own membership card still depends on the **Allow members to print card ?** preference."
+msgstr ""
+
+#: ../usermanual/roles.rst:64
+msgid "Roles list and edition"
+msgstr ""
+
+#: ../usermanual/roles.rst:66
+msgid "The roles list displays each role, the role it inherits from, the number of permissions it grants (inherited ones are not counted) and how many members have it. System roles are flagged as such."
+msgstr ""
+
+#: ../usermanual/roles.rst:68
+msgid "Roles list"
+msgstr ""
+
+#: ../usermanual/roles.rst:73
+msgid "Type a name at the bottom of the list and use **Add** to create a role; you can choose the role it inherits from. A role can inherit from a system role or from another role you have created; a parent that would make the role inherit from itself is refused."
+msgstr ""
+
+#: ../usermanual/roles.rst:75
+msgid "Editing a role displays its name, how many permissions it grants (inherited ones included), how many it inherits from its parent role, and how many members have it; the pencil icons rename the role and change its parent. Permissions are gathered by domain (members, contributions, transactions, groups, mailings, configuration...), each in a section telling how many of its permissions are granted; sections with granted permissions are open. Switch on the permissions the role grants, and **Save**. Permissions the role inherits from its parent are switched on and cannot be switched off here: change the parent role instead. For a system role, only its permissions can be changed."
+msgstr ""
+
+#: ../usermanual/roles.rst:77
+msgid "Role edition, permissions by domain"
+msgstr ""
+
+#: ../usermanual/roles.rst:82
+msgid "Plugins may add their own permissions, in a domain of their own. Permissions of a plugin you disable are kept, and come back when the plugin is enabled again."
+msgstr ""
+
+#: ../usermanual/roles.rst:84
+msgid "When a new permission appears, from a plugin enabled later or from a newer version of Galette, system roles get it once, as their default permissions would. If you remove it from a role afterwards, it is not given back."
+msgstr ""
+
+#: ../usermanual/roles.rst:87
+msgid "Giving a role"
+msgstr ""
+
+#: ../usermanual/roles.rst:89
+msgid "Roles you have created are given from their edition page, in the **Members** block beside the permissions: choose a member, a group or **All groups**, and use **Give role**. The same role can be given to a member for several groups. The trash icon takes a role back. Roles can also be given when editing a member, see below."
+msgstr ""
+
+#: ../usermanual/roles.rst:91
+msgid "Members a role has been given to"
+msgstr ""
+
+#: ../usermanual/roles.rst:96
+msgid "Changes apply at once: there is no need for the member to log in again."
+msgstr ""
+
+#: ../usermanual/roles.rst:98
+msgid "Users who can manage roles see the roles of a member on their card: those computed from member information, with a cog icon, and those you have given, in blue. Each one links to the role page."
+msgstr ""
+
+#: ../usermanual/roles.rst:100
+msgid "Roles on a member card"
+msgstr ""
+
+#: ../usermanual/roles.rst:105
+msgid "When editing an existing member, the **Roles** block lists the same roles, and where computed ones come from. Those cannot be changed there: **Administrator** follows the *Galette Admin* field of the form. Choose one of the roles you have created, a group or **All groups**, and use **Add**; the cross takes a given role back, and **Cancel** keeps it. Changes are stored when the member is saved. The block is not displayed when creating a member: give roles once the member has been saved."
+msgstr ""
+
+#: ../usermanual/roles.rst:107
+msgid "Roles when editing a member"
+msgstr ""
+
+#: ../usermanual/roles.rst:113
+msgid "Roles for one group"
+msgstr ""
+
+#: ../usermanual/roles.rst:115
+msgid "A role given for one group grants its permissions on the members of that group only, as for group managers: on their information, their contributions and their transactions. The lists of members, contributions and transactions only display those members. Groups are not inherited: a role for a group does not cover its subgroups."
+msgstr ""
+
+#: ../usermanual/roles.rst:119
+msgid "Some permissions do not apply to members: creating groups, browsing sent mailings, managing documents, settings, fields configuration, references lists, emails contents and PDF models, logs, system information, authentication restrictions, plugins and roles. They have no meaning on a group, and are **not granted** by a role given for one group; the role page flags them **Not on a group**. Give such permissions in roles you give for all groups."
+msgstr ""
+
+#: ../usermanual/roles.rst:121
+msgid "Some others would reach beyond the group, and are not granted for one group either: granting administrator rights, sending reminders to late members, importing members and exporting data. The role page flags them the same way."
+msgstr ""
+
+#: ../usermanual/roles.rst:123
+msgid "The lists also display the user and their children, as their own information is always reachable."
+msgstr ""
+
+#: ../usermanual/roles.rst:125
+msgid "With *Manage members administrative information* for a group, the status of its members can be changed, but staff statuses (President, Treasurer, Secretary...) can only be given or taken back by a role given for all groups. When editing a member, the groups they manage can only be changed for the groups the role is given for."
+msgstr ""
+
+#: ../usermanual/roles.rst:127
+msgid "A contribution of a group member may be part of a transaction of someone outside the group. Such a transaction is not displayed: the contribution stays attached to it when saved, and its amount cannot be changed."
+msgstr ""
+
+#: ../usermanual/roles.rst:130
+msgid "Examples"
+msgstr ""
+
+#: ../usermanual/roles.rst:132
+msgid "A treasurer"
+msgstr ""
+
+#: ../usermanual/roles.rst:133
+msgid "Create a *Treasurer* role with all the permissions of the **Contributions** and **Transactions** domains, and *Display members* so the members can be chosen in forms. Give this to the member in charge, onto all groups. They will not be able to edit members."
+msgstr ""
+
+#: ../usermanual/roles.rst:135
+msgid "A secretary for a section"
+msgstr ""
+
+#: ../usermanual/roles.rst:136
+msgid "Create a *Section secretary* role with *Display members*, *Edit members*, *Display groups* and *Send mailings*. Give it for the section group: the member can update the information of the section members and write to them, and nobody else."
+msgstr ""
+
+#: ../usermanual/roles.rst:138
+msgid "Members who register their children"
+msgstr ""
+
+#: ../usermanual/roles.rst:139
+msgid "Check *Create child members* in the **Member** role: every logged in member gets an **Add a child member** entry; created members are attached to them as children."
+msgstr ""
+
+#: ../usermanual/roles.rst:141
+msgid "Group managers who update their members"
+msgstr ""
+
+#: ../usermanual/roles.rst:142
+msgid "Check *Edit members* in the **Group manager** role: every group manager can then edit the members of the groups they manage."
+msgstr ""
+
+#: ../usermanual/roles.rst:147
+msgid "Upgrading from 1.3"
+msgstr ""
+
+#: ../usermanual/roles.rst:149
+msgid "Before 1.4, a few settings in the :ref:`rights tab of preferences <pref_rights>` gave group managers and members extra rights. When upgrading, each setting that was enabled is turned into permissions of the matching system role, then the setting is removed:"
+msgstr ""
+
+#: ../usermanual/roles.rst:155
+msgid "Former setting"
+msgstr ""
+
+#: ../usermanual/roles.rst:157
+msgid "Permissions"
+msgstr ""
+
+#: ../usermanual/roles.rst:158
+msgid "Can members create child members?"
+msgstr ""
+
+#: ../usermanual/roles.rst:160
+msgid "Create child members"
+msgstr ""
+
+#: ../usermanual/roles.rst:161
+msgid "Can group managers edit their groups?"
+msgstr ""
+
+#: ../usermanual/roles.rst:162
+#: ../usermanual/roles.rst:165
+#: ../usermanual/roles.rst:168
+#: ../usermanual/roles.rst:171
+#: ../usermanual/roles.rst:174
+#: ../usermanual/roles.rst:177
+#: ../usermanual/roles.rst:180
+#: ../usermanual/roles.rst:183
+#: ../usermanual/roles.rst:186
+msgid "Group manager"
+msgstr ""
+
+#: ../usermanual/roles.rst:163
+msgid "Edit groups"
+msgstr ""
+
+#: ../usermanual/roles.rst:164
+msgid "Can group managers create members?"
+msgstr ""
+
+#: ../usermanual/roles.rst:166
+msgid "Create members"
+msgstr ""
+
+#: ../usermanual/roles.rst:167
+msgid "Can group managers edit members?"
+msgstr ""
+
+#: ../usermanual/roles.rst:169
+msgid "Edit members"
+msgstr ""
+
+#: ../usermanual/roles.rst:170
+msgid "Can group managers send mailings?"
+msgstr ""
+
+#: ../usermanual/roles.rst:172
+msgid "Send mailings"
+msgstr ""
+
+#: ../usermanual/roles.rst:173
+msgid "Can group managers do exports?"
+msgstr ""
+
+#: ../usermanual/roles.rst:175
+msgid "Export members as CSV; print members cards, labels and attendance sheets; export groups as PDF"
+msgstr ""
+
+#: ../usermanual/roles.rst:176
+msgid "Can group managers see contributions?"
+msgstr ""
+
+#: ../usermanual/roles.rst:178
+msgid "Display contributions; attach contributions to transactions"
+msgstr ""
+
+#: ../usermanual/roles.rst:179
+msgid "Can group managers create contributions?"
+msgstr ""
+
+#: ../usermanual/roles.rst:181
+msgid "Create contributions; attach contributions to transactions"
+msgstr ""
+
+#: ../usermanual/roles.rst:182
+msgid "Can group managers see transactions?"
+msgstr ""
+
+#: ../usermanual/roles.rst:184
+msgid "Display transactions"
+msgstr ""
+
+#: ../usermanual/roles.rst:185
+msgid "Can group managers create transactions?"
+msgstr ""
+
+#: ../usermanual/roles.rst:187
+msgid "Create transactions"
+msgstr ""
+
+#: ../usermanual/roles.rst:189
+msgid "Nothing changes for users: everyone keeps what they were allowed to do. After the upgrade, open **Configuration**, then **Roles**, and check that **Group manager** and **Member** roles match what you expect."
+msgstr ""
+
+#: ../usermanual/roles.rst:191
+msgid "A few differences with previous versions:"
+msgstr ""
+
+#: ../usermanual/roles.rst:193
+msgid "staff members now see the **Configuration** menu, with the references lists and the emails and PDF models they could already reach,"
+msgstr ""
+
+#: ../usermanual/roles.rst:194
+msgid "*Create members* and *Create child members* are two permissions: a member allowed to register their children no longer sees **Add a member**."
+msgstr ""
+
+#: ../usermanual/roles.rst:197
+msgid "What roles do not cover"
+msgstr ""
+
+#: ../usermanual/roles.rst:199
+msgid "which fields of member cards each level can see or change, still set in :ref:`fields configuration <fields_acls>`,"
+msgstr ""
+
+#: ../usermanual/roles.rst:200
+msgid "documents visibility, set on each document,"
+msgstr ""
+
+#: ../usermanual/roles.rst:201
+msgid "public pages, set in preferences,"
+msgstr ""
+
+#: ../usermanual/roles.rst:202
+msgid "pages reserved to the super administrator, such as the advanced configuration,"
+msgstr ""
+
+#: ../usermanual/roles.rst:203
+msgid "plugins that have not been updated yet: they keep working with access levels."
+msgstr ""
