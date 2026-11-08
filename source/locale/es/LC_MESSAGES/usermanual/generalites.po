@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-10-06 10:35+0200\n"
+"POT-Creation-Date: 2026-11-08 08:06+0100\n"
 "PO-Revision-Date: 2025-11-27 05:02+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -33,8 +33,14 @@ msgstr "Generalidades"
 msgid "Rights"
 msgstr "Derechas"
 
+#: ../usermanual/generalites.rst:12
+msgid ""
+"What each level is allowed to do is set with :ref:`roles <roles>`; therefore "
+"your instance may differ from the default configuration described here."
+msgstr ""
+
 # 6708c81adba34f4a9793539f8c702659
-#: ../usermanual/generalites.rst:10
+#: ../usermanual/generalites.rst:14
 msgid ""
 "We can see several rights levels in Galette, allowing access to different "
 "parts and features of the application. Levels are:"
@@ -43,7 +49,7 @@ msgstr ""
 "diferentes partes o funciones de la aplicación. Los niveles son:"
 
 # f45faab5ace5443b8ce85c2ff723ea64
-#: ../usermanual/generalites.rst:12
+#: ../usermanual/generalites.rst:16
 msgid ""
 "**super administrator** is a special user (the only one that is not a "
 "member) created at installation,"
@@ -52,7 +58,7 @@ msgstr ""
 "miembro) creado en la instalación,"
 
 # 8a28b1fcecf24f8caae2f15faa83eb3f
-#: ../usermanual/generalites.rst:13
+#: ../usermanual/generalites.rst:17
 msgid ""
 "**administrators** are members for who the \"administrator\" checkbox has "
 "been checked,"
@@ -61,7 +67,7 @@ msgstr ""
 "\"administrador\","
 
 # 9379504d759848ef82d1a66c1380de93
-#: ../usermanual/generalites.rst:14
+#: ../usermanual/generalites.rst:18
 msgid ""
 "**staff members** have a specific status (President, Treasurer, "
 "Secretary, ...),"
@@ -70,14 +76,14 @@ msgstr ""
 "secretaria, ...),"
 
 # bb0426100a0b459ab61a251e5929881c
-#: ../usermanual/generalites.rst:15
+#: ../usermanual/generalites.rst:19
 msgid "**groups managers** have only rights on the groups they manage,"
 msgstr ""
 "**administradores de grupos** solo tienen permisos en los grupos que ellos "
 "gestionan,"
 
 # 6debbf52d0d1432fa6278b6fe46c8831
-#: ../usermanual/generalites.rst:16
+#: ../usermanual/generalites.rst:20
 msgid ""
 "**up to date members** are members whose account are active, and whose "
 "subscription are up to date,"
@@ -86,7 +92,7 @@ msgstr ""
 "suscripciones están al corriente,"
 
 # 3197153fe4ed4de2a2ba7dad34e34e24
-#: ../usermanual/generalites.rst:17
+#: ../usermanual/generalites.rst:21
 msgid ""
 "**members** are members whose account is inactive or whose subscriptions are "
 "not up to date,"
@@ -95,12 +101,12 @@ msgstr ""
 "suscripciones no están al corriente,"
 
 # 4752ce2332eb48b3816974f1ea68e173
-#: ../usermanual/generalites.rst:18
+#: ../usermanual/generalites.rst:22
 msgid "simple **visitors**."
 msgstr "simples **visitantes**."
 
 # 7b525eb37f7946e19f44b72b5a397693
-#: ../usermanual/generalites.rst:20
+#: ../usermanual/generalites.rst:24
 msgid ""
 "Staff members, administrators as well as the super administrator can create, "
 "edit and remove members, contributions, transactions, send emailings, ..."
@@ -109,7 +115,7 @@ msgstr ""
 "puede crear, editar o eliminar miembros, contribuciones, transacciones, "
 "enviar correos electrónicos, ..."
 
-#: ../usermanual/generalites.rst:22
+#: ../usermanual/generalites.rst:26
 msgid ""
 "Administrators have also access to the application configuration, excepted "
 "super admin information."
@@ -117,8 +123,15 @@ msgstr ""
 "Los administradores también tienen acceso a la configuración de la "
 "aplicación, excepto la información del superadministrador."
 
+#: ../usermanual/generalites.rst:28
+msgid ""
+"Staff members can also reach the **Configuration** menu, to manage "
+"references lists (statuses, titles, contributions and payment types) and "
+"emails contents and PDF models."
+msgstr ""
+
 # 1fd726c4806f4fc993b9ff4d96aabf0b
-#: ../usermanual/generalites.rst:24
+#: ../usermanual/generalites.rst:30
 #, fuzzy
 #| msgid ""
 #| "The super administrator has a full access to the application, but not to "
@@ -137,7 +150,7 @@ msgstr ""
 "información de inicio de sesión desde los ajustes de la aplicación."
 
 # dbf78a8061f948d1b9a53876a97d8668
-#: ../usermanual/generalites.rst:26
+#: ../usermanual/generalites.rst:32
 msgid ""
 "Members can change their own information, and can see their contributions "
 "and transactions (as read only)."
@@ -146,7 +159,7 @@ msgstr ""
 "contribuciones y transacciones (solo lectura)."
 
 # 2ec81764c7c74d6d910387191e22e424
-#: ../usermanual/generalites.rst:28
+#: ../usermanual/generalites.rst:34
 msgid ""
 "Visitors can - if this is parameted in preferences - access to public pages "
 "(trombinoscope, public members list) but can also register :)"
@@ -155,36 +168,13 @@ msgstr ""
 "páginas públicas (anuario, lista de miembros públicos) pero también se "
 "pueden registrar :)"
 
-#: ../usermanual/generalites.rst:31
-msgid "Group managers"
-msgstr "Administradores de grupo"
-
-#: ../usermanual/generalites.rst:33
-msgid ""
-"With the stricter configuration, groups managers can show and search on "
-"members of their groups, and see accessible data for members. On members and "
-"cards, you can :ref:`configure which fields are accessible <fields_acls>`."
-msgstr ""
-"Con la configuración más estricta, los administradores de grupos pueden "
-"mostrar y buscar miembros de sus grupos, y ver los datos accesible para "
-"miembros. En los miembros y tarjetas, puedes :ref:`configurar que campos son "
-"accesibles <fields_acls>`."
-
-#: ../usermanual/generalites.rst:36
-msgid ""
-"From the preferences, you can also :ref:`give groups managers extra rights "
-"<pref_rights>`, like editing or creating members."
-msgstr ""
-"Desde los ajustes, también puedes :ref:`dar permisos adicionales para los "
-"administradores de grupos <pref_rights>`, como editar o crear miembros."
-
 # 31aaecc6f4e0419ea7a417377a069073
-#: ../usermanual/generalites.rst:41
+#: ../usermanual/generalites.rst:39
 msgid "Management rules"
 msgstr "Reglas de gestión"
 
 # 51888802629d4065818d754674be9907
-#: ../usermanual/generalites.rst:43
+#: ../usermanual/generalites.rst:41
 msgid ""
 "Due dates are calculated by day. If a member pay into before the end of his "
 "membership, duration of this membership will be added to remaining days. "
@@ -196,27 +186,27 @@ msgstr ""
 
 # 214f6f82e91b4741a43d640ce5643e01
 # a5f333f1d1924e208f808f1c169bc732
-#: ../usermanual/generalites.rst:45 ../usermanual/generalites.rst:52
+#: ../usermanual/generalites.rst:43 ../usermanual/generalites.rst:50
 msgid "Roger subscribed on 2004-01-01 for one year,"
 msgstr "Roger se ha suscrito el 01-01-2004 por un año,"
 
 # 9e6117abdeee456d8852fd075294872a
-#: ../usermanual/generalites.rst:46
+#: ../usermanual/generalites.rst:44
 msgid "if he pays into for a year on 2004-12-13,"
 msgstr "si paga un año el 13-12-2004,"
 
 # ae5968aad1b54262bb5da72f655b8cdb
-#: ../usermanual/generalites.rst:47
+#: ../usermanual/generalites.rst:45
 msgid "his due date will become 2006-01-01."
 msgstr "su fecha de vencimiento será el 01-01-2006."
 
 # ff90ff7a1bf04281b3e0cd8488c5c5e7
-#: ../usermanual/generalites.rst:48
+#: ../usermanual/generalites.rst:46
 msgid "No day will be forget."
 msgstr "No se olvidará ningún día."
 
 # 538b498de81c48169c8266a4b8088d8f
-#: ../usermanual/generalites.rst:50
+#: ../usermanual/generalites.rst:48
 msgid ""
 "At the contrary, if a member renew his membership late, we evaluate again "
 "his membership duration:"
@@ -225,17 +215,17 @@ msgstr ""
 "evaluamos de nuevo la duración de su afiliación:"
 
 # 8494c52c01aa459f8c3bd8c6ecdb6b69
-#: ../usermanual/generalites.rst:53
+#: ../usermanual/generalites.rst:51
 msgid "if he pays into for a year on 2006-01-13,"
 msgstr "si paga un año el 13-´01-2006,"
 
 # 507e4e3cdeed49e6aa50811c645dd6c8
-#: ../usermanual/generalites.rst:54
+#: ../usermanual/generalites.rst:52
 msgid "his due date will become 2006-01-13."
 msgstr "su fecha de vencimiento será el 13-01-2006."
 
 # f9f9774839f946bda567d24f7ea3c519
-#: ../usermanual/generalites.rst:56
+#: ../usermanual/generalites.rst:54
 msgid ""
 "He is not an up to date member from 2006-01-01 to 2006-01-13... On paper at "
 "least :)"
@@ -244,7 +234,7 @@ msgstr ""
 "menos sobre el papel :)"
 
 # a9f52a0386e5464094865003ca2a6885
-#: ../usermanual/generalites.rst:58
+#: ../usermanual/generalites.rst:56
 msgid ""
 "Those rules are flexible because you can freely change membership dates on "
 "contributions, if you have rights to add or update them. We can imagine an "
@@ -257,57 +247,57 @@ msgstr ""
 "cotizaciones el primer día del mes siguiente (ofreciendo a sus miembros un "
 "plazo de afiliación más largo)."
 
-#: ../usermanual/generalites.rst:63
+#: ../usermanual/generalites.rst:61
 msgid "Two-factor authentication"
 msgstr ""
 
-#: ../usermanual/generalites.rst:67
+#: ../usermanual/generalites.rst:65
 msgid ""
 "Marked **experimental**: it is complete and tested, but it is new, and the "
 "interface may still change."
 msgstr ""
 
-#: ../usermanual/generalites.rst:69
+#: ../usermanual/generalites.rst:67
 msgid ""
 "Once :ref:`a policy has been set in the preferences <pref_2fa>`, every "
 "account can protect itself with a second factor: after the password, Galette "
 "asks for a six digits code that changes every thirty seconds."
 msgstr ""
 
-#: ../usermanual/generalites.rst:71
+#: ../usermanual/generalites.rst:69
 msgid ""
 "If you are an administrator or a staff member and have not set one up, "
 "Galette invites you to when you log in. Nothing forces you to; **Later** "
 "keeps quiet for six months, **Do not ask again** for a year."
 msgstr ""
 
-#: ../usermanual/generalites.rst:73
+#: ../usermanual/generalites.rst:71
 msgid ""
 "You need an application to compute those codes. Any of them will do, they "
 "all follow the same standard; among the free ones:"
 msgstr ""
 
-#: ../usermanual/generalites.rst:75
+#: ../usermanual/generalites.rst:73
 msgid ""
 "`Aegis <https://getaegis.app>`_ or `FreeOTP <https://freeotp.github.io>`_ on "
 "Android,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:76
+#: ../usermanual/generalites.rst:74
 msgid ""
 "`KeePassXC <https://keepassxc.org>`_ on a computer, in the *TOTP* field of "
 "an entry,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:77
+#: ../usermanual/generalites.rst:75
 msgid "Google Authenticator, Microsoft Authenticator, ... on Android and iOS."
 msgstr ""
 
-#: ../usermanual/generalites.rst:80
+#: ../usermanual/generalites.rst:78
 msgid "Enabling it"
 msgstr ""
 
-#: ../usermanual/generalites.rst:82
+#: ../usermanual/generalites.rst:80
 msgid ""
 "Go to **My account**, then **Two-factor authentication**, and click on "
 "*Enable two-factor authentication*. Galette shows a QR code to scan with "
@@ -315,19 +305,19 @@ msgid ""
 "can be typed in by hand instead."
 msgstr ""
 
-#: ../usermanual/generalites.rst:84
+#: ../usermanual/generalites.rst:82
 msgid ""
 "Your application then starts displaying codes. Type the current one in to "
 "confirm, and it is on. That first code is asked for on purpose: it makes "
 "sure your application really is set up before Galette starts requiring it."
 msgstr ""
 
-#: ../usermanual/generalites.rst:86
+#: ../usermanual/generalites.rst:84
 msgid ""
 "Galette then displays **ten recovery codes**, and displays them only once."
 msgstr ""
 
-#: ../usermanual/generalites.rst:90
+#: ../usermanual/generalites.rst:88
 msgid ""
 "Print those recovery codes, or save them somewhere that is not the device "
 "computing your codes. They are the way back in if you lose your phone. Each "
@@ -335,58 +325,58 @@ msgid ""
 "in a readable form."
 msgstr ""
 
-#: ../usermanual/generalites.rst:92
+#: ../usermanual/generalites.rst:90
 msgid ""
 "You can get ten new ones at any time from the same page; the previous ones "
 "are then void."
 msgstr ""
 
-#: ../usermanual/generalites.rst:95
+#: ../usermanual/generalites.rst:93
 msgid "Logging in"
 msgstr ""
 
-#: ../usermanual/generalites.rst:97
+#: ../usermanual/generalites.rst:95
 msgid ""
 "Nothing changes for the password. Once it has been accepted, Galette asks "
 "for a code. Nothing else is reachable until it is given: an account waiting "
 "for its code is not logged in."
 msgstr ""
 
-#: ../usermanual/generalites.rst:99
+#: ../usermanual/generalites.rst:97
 msgid ""
 "If you no longer have your device, use one of your recovery codes instead of "
 "a code: the same field takes both."
 msgstr ""
 
-#: ../usermanual/generalites.rst:102
+#: ../usermanual/generalites.rst:100
 msgid "Disabling it"
 msgstr ""
 
-#: ../usermanual/generalites.rst:104
+#: ../usermanual/generalites.rst:102
 msgid ""
 "From **My account**, then **Two-factor authentication**, a current code is "
 "required to turn it off. That is deliberate: somebody who found your session "
 "open should not be able to remove your second factor with a click."
 msgstr ""
 
-#: ../usermanual/generalites.rst:106
+#: ../usermanual/generalites.rst:104
 msgid ""
 "If a policy makes it mandatory, you will be asked to enable it again at your "
 "next login."
 msgstr ""
 
-#: ../usermanual/generalites.rst:110
+#: ../usermanual/generalites.rst:108
 msgid ""
 "Codes are computed from the current time, so both your device and the server "
 "have to agree on it. This is by far the most common reason for codes being "
 "refused; see :ref:`the FAQ <faq_2fa>`."
 msgstr ""
 
-#: ../usermanual/generalites.rst:115
+#: ../usermanual/generalites.rst:113
 msgid "Dashboard"
 msgstr ""
 
-#: ../usermanual/generalites.rst:117
+#: ../usermanual/generalites.rst:115
 msgid ""
 "The dashboard is the page displayed after logging in. Its tiles give a quick "
 "access to the main features; each user only sees the tiles of the features "
@@ -395,63 +385,63 @@ msgid ""
 "transactions of the members they manage, when the association allows it."
 msgstr ""
 
-#: ../usermanual/generalites.rst:119
+#: ../usermanual/generalites.rst:117
 msgid "Next to the tiles:"
 msgstr ""
 
-#: ../usermanual/generalites.rst:121
+#: ../usermanual/generalites.rst:119
 msgid ""
 "administrators and staff members see the latest news of the Galette project,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:122
+#: ../usermanual/generalites.rst:120
 msgid ""
 "everyone sees the news of your association, when an **RSS feed URL** is set "
 "in the :ref:`preferences <man_preferences>`,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:123
+#: ../usermanual/generalites.rst:121
 msgid ""
 "administrators are invited to send :ref:`telemetry <telemetry>` data, until "
 "it is sent or the panel is hidden."
 msgstr ""
 
-#: ../usermanual/generalites.rst:125
+#: ../usermanual/generalites.rst:123
 msgid ""
 "Administrators and staff members can uncheck **Show dashboard on login** to "
 "go straight to the members list after logging in; this choice is kept by the "
 "browser. The dashboard remains available from the **Dashboard** menu entry."
 msgstr ""
 
-#: ../usermanual/generalites.rst:127
+#: ../usermanual/generalites.rst:125
 msgid ""
 "At the top of every page, the language list changes the language of the "
 "interface."
 msgstr ""
 
-#: ../usermanual/generalites.rst:129
+#: ../usermanual/generalites.rst:127
 msgid "A few banners may also be displayed at the top of the pages:"
 msgstr ""
 
-#: ../usermanual/generalites.rst:131
+#: ../usermanual/generalites.rst:129
 msgid ""
 "**Maintenance**: the instance is in :ref:`maintenance mode <galettemodes>`; "
 "only the super administrator can log in, and is reminded of it,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:132
+#: ../usermanual/generalites.rst:130
 msgid ""
 "**Demonstration**: the instance runs in demonstration mode, some features "
 "are disabled,"
 msgstr ""
 
-#: ../usermanual/generalites.rst:133
+#: ../usermanual/generalites.rst:131
 msgid ""
 "**Superadmin**: you are logged in as super administrator, who is not a "
 "member."
 msgstr ""
 
-#: ../usermanual/generalites.rst:135
+#: ../usermanual/generalites.rst:133
 msgid ""
 "When a new Galette release is available, an icon is displayed next to the "
 "version number at the bottom of the pages, for administrators and staff "
@@ -459,38 +449,38 @@ msgid ""
 msgstr ""
 
 # ad993e18a4fc4a319eb9f88ffa3471de
-#: ../usermanual/generalites.rst:138
+#: ../usermanual/generalites.rst:136
 msgid "Interface"
 msgstr "Interfaz"
 
 # b1e93fcab7a14b56a840c17cd2b3bcb8
-#: ../usermanual/generalites.rst:140
+#: ../usermanual/generalites.rst:138
 msgid "We do our best for the Galette interface to be:"
 msgstr "Hacemos lo mejor que sabemos para que la interfaz de Galette sea:"
 
 # c968d38cb1cb41e19016dd44941f5e5d
-#: ../usermanual/generalites.rst:142
+#: ../usermanual/generalites.rst:140
 msgid "logical and consistent (you will always find icons at familiar places),"
 msgstr ""
 "lógica y consistente (siempre encontrarás iconos en lugares conocidos),"
 
 # fd066041c1a743398b519306e3a5d05c
-#: ../usermanual/generalites.rst:143
+#: ../usermanual/generalites.rst:141
 msgid "web standards compliant (HTML and CSS valid),"
 msgstr "compatible con los estándares web (HTML y CSS válidos),"
 
 # b075df05b0d143268e0633fa3b06ca7c
-#: ../usermanual/generalites.rst:144
+#: ../usermanual/generalites.rst:142
 msgid "HTML semantic respectful,"
 msgstr "respetuosos con la semántica HTML,"
 
 # 7c1400bf5e5b434d9e2b6481a8ab595d
-#: ../usermanual/generalites.rst:145
+#: ../usermanual/generalites.rst:143
 msgid "accessible (without any WCAG, WAI or equivalent tests run)."
 msgstr "accesible (sin ningún WCAG, WAI o pruebas equivalentes realizadas)."
 
 # 2960232bd4724e93ad632e80178241b9
-#: ../usermanual/generalites.rst:147
+#: ../usermanual/generalites.rst:145
 msgid ""
 "If you find places where one of those points is incorrect, do not hesitate "
 "to tell us on the tracker or on the mailing list!"
@@ -498,52 +488,52 @@ msgstr ""
 "Si encuentras algún lugar donde uno de esos puntos no sea correcto, ¡no "
 "dudes en contárnoslo en el rastreador de incidencias o en la lista de correo!"
 
-#: ../usermanual/generalites.rst:152
+#: ../usermanual/generalites.rst:150
 msgid "History"
 msgstr ""
 
-#: ../usermanual/generalites.rst:154
+#: ../usermanual/generalites.rst:152
 msgid ""
 "Galette keeps a history of what happens: logins, failed logins, members "
 "added or changed, contributions, mailings sent... Administrators and staff "
 "members can read it from **Management**, then **Logs**."
 msgstr ""
 
-#: ../usermanual/generalites.rst:156
+#: ../usermanual/generalites.rst:154
 msgid "Logs"
 msgstr ""
 
-#: ../usermanual/generalites.rst:161
+#: ../usermanual/generalites.rst:159
 msgid ""
 "Each line gives the date, the address the action came from, the user who did "
 "it, the action and a short description. The list can be filtered on a "
 "period, a member and an action."
 msgstr ""
 
-#: ../usermanual/generalites.rst:163
+#: ../usermanual/generalites.rst:161
 msgid ""
 "**Flush the logs** empties the history, after a confirmation. This cannot be "
 "undone."
 msgstr ""
 
-#: ../usermanual/generalites.rst:167
+#: ../usermanual/generalites.rst:165
 msgid ""
 "Actions are stored in the language of the user who did them: a history can "
 "therefore mix several languages."
 msgstr ""
 
 # 1aabbce7b0cb4927859d20f860b43f21
-#: ../usermanual/generalites.rst:172
+#: ../usermanual/generalites.rst:170
 msgid "Telemetry"
 msgstr "Telemetría"
 
 # f8982c56edcc471d98c033a528d4380d
-#: ../usermanual/generalites.rst:176
+#: ../usermanual/generalites.rst:174
 msgid "Galette propose to send some telemetry information:"
 msgstr "Galette propone enviar cierta información de telemetría:"
 
 # 4519b628e22942a88201b31cd43b64fc
-#: ../usermanual/generalites.rst:178
+#: ../usermanual/generalites.rst:176
 msgid ""
 "**entirely anonymous**: no information about your association or your "
 "members is sent,"
@@ -552,7 +542,7 @@ msgstr ""
 "organización o tus miembros,"
 
 # 2c6bf23858da4b0e90c97d92919c91e3
-#: ../usermanual/generalites.rst:179
+#: ../usermanual/generalites.rst:177
 msgid ""
 "**deliberately blurred**: we retrieve an estimation of members count, never "
 "a real count,"
@@ -561,13 +551,13 @@ msgstr ""
 "miembros, nunca un recuento real,"
 
 # afb1e1c17cfe4a8994b616525e1c366b
-#: ../usermanual/generalites.rst:180
+#: ../usermanual/generalites.rst:178
 msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
 msgstr ""
 "enviado de manera **segura** (`HTTPS`) en https://telemetry.galette.eu."
 
 # 04caf4fc0f8f4a4ab7ce62daf38cae70
-#: ../usermanual/generalites.rst:182
+#: ../usermanual/generalites.rst:180
 msgid ""
 "Sending telemetry data is a manual process, nothing will be sent until you "
 "**explicitly** ask it. With those information, we can have a better "
@@ -580,7 +570,7 @@ msgstr ""
 "contribuciones, que complementos se usan, ..."
 
 # 1f5a8ae07d244e35aabe0dfd5cabbf7e
-#: ../usermanual/generalites.rst:184
+#: ../usermanual/generalites.rst:182
 msgid ""
 "Those information are useful for the project development and promotion. When "
 "you send those information, you can review data that would be sent."
@@ -588,12 +578,12 @@ msgstr ""
 "Esa información es útil para el desarrollo y promoción del proyecto. Cuando "
 "envías esa información, puedes revisar los datos que mandarías."
 
-#: ../usermanual/generalites.rst:186
+#: ../usermanual/generalites.rst:184
 msgid "Preview Telemetry data"
 msgstr "Vista previa de datos de telemetría"
 
 # 30105a34799740a78fc7762d9bbc7cdd
-#: ../usermanual/generalites.rst:191
+#: ../usermanual/generalites.rst:189
 msgid ""
 "After data has been sent once, Galette will propose to send an update from "
 "time to time. You can also send them from Galette preferences."
@@ -602,12 +592,12 @@ msgstr ""
 "actualización de vez en cuando. También lo puedes enviar desde los ajustes "
 "de Galette."
 
-#: ../usermanual/generalites.rst:193
+#: ../usermanual/generalites.rst:191
 msgid "Telemetry update reminder"
 msgstr "Recordatorio de actualización de telemetría"
 
 # 1c58525d6fd24363ae4bf07399858e13
-#: ../usermanual/generalites.rst:197
+#: ../usermanual/generalites.rst:195
 msgid ""
 "It is also possible to register your association on the website, of course, "
 "not anonymously, but it is not possible to link telemetry and registration. "
@@ -618,7 +608,7 @@ msgstr ""
 "Las nuevas referencias son moderadas."
 
 # f049660c866e4657a9d7b4e6112d7cda
-#: ../usermanual/generalites.rst:199
+#: ../usermanual/generalites.rst:197
 msgid ""
 "You can update your registration information from Galette preferences. The "
 "form will be blank (because it is not possible to retrieve data you've sent) "
@@ -630,12 +620,12 @@ msgstr ""
 "datos que has enviado) pero todos los datos se actualizarán porque tu "
 "instancia tiene un identificador de registro único diseñado para ello."
 
-#: ../usermanual/generalites.rst:201
+#: ../usermanual/generalites.rst:199
 msgid "Telemetry from preferences"
 msgstr "Ajustes de la telemetría"
 
 # a7af866a2baf4935b0c066c962e8c8e3
-#: ../usermanual/generalites.rst:205
+#: ../usermanual/generalites.rst:203
 msgid ""
 "A new panel has been added on Galette dashboard to send telemetry "
 "information and/or register your instance. Once those steps has been "
@@ -645,9 +635,30 @@ msgstr ""
 "información de telemetría y/o registrar su instancia. Una vez completados "
 "estos pasos, el panel desaparecerá. También puede optar por desactivarlo."
 
-#: ../usermanual/generalites.rst:207
+#: ../usermanual/generalites.rst:205
 msgid "Telemetry on dashboard"
 msgstr "Telemetría en el panel de control"
+
+#~ msgid "Group managers"
+#~ msgstr "Administradores de grupo"
+
+#~ msgid ""
+#~ "With the stricter configuration, groups managers can show and search on "
+#~ "members of their groups, and see accessible data for members. On members "
+#~ "and cards, you can :ref:`configure which fields are accessible "
+#~ "<fields_acls>`."
+#~ msgstr ""
+#~ "Con la configuración más estricta, los administradores de grupos pueden "
+#~ "mostrar y buscar miembros de sus grupos, y ver los datos accesible para "
+#~ "miembros. En los miembros y tarjetas, puedes :ref:`configurar que campos "
+#~ "son accesibles <fields_acls>`."
+
+#~ msgid ""
+#~ "From the preferences, you can also :ref:`give groups managers extra "
+#~ "rights <pref_rights>`, like editing or creating members."
+#~ msgstr ""
+#~ "Desde los ajustes, también puedes :ref:`dar permisos adicionales para los "
+#~ "administradores de grupos <pref_rights>`, como editar o crear miembros."
 
 # f53987e521644d36b7609feec32c0cb0
 #~ msgid ""
