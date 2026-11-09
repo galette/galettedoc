@@ -100,6 +100,30 @@ To fix that, set ``pref_x_forwarded_for_index`` from the :ref:`advanced configur
 
 If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
+.. _frame_ancestors:
+
+Display Galette in another site
+===============================
+
+.. versionadded:: 1.4.0
+
+By default, browsers refuse to display Galette inside a frame (an ``<iframe>``) of another website. This protects your users from *clickjacking*, where a hostile page hides Galette under its own buttons to make them click without knowing it.
+
+To embed Galette pages in the website of your association - the public members list, or the subscription form - set ``pref_csp_frame_ancestors`` from the :ref:`advanced configuration <advanced_config>` page. The value lists the sites allowed to display Galette, separated by spaces:
+
+* ``'self'``: Galette itself. This is the default, keep it in the list,
+* ``https://www.example.org``: a website, with its scheme. A port can be added: ``https://www.example.org:8443``,
+* ``https://*.example.org``: every sub-domain of a website,
+* ``'none'``: no website at all, not even Galette. It must be used alone.
+
+For instance, ``'self' https://www.my-association.org`` lets the website of your association embed Galette. The quotes around ``'self'`` and ``'none'`` are required.
+
+.. warning::
+
+   Only list websites you trust: a website allowed here can display Galette pages to your logged in users.
+
+If the ``GALETTE_CSP_FRAME_ANCESTORS`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
+
 External stats
 ==============
 
