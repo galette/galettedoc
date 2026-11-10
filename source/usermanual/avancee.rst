@@ -133,6 +133,14 @@ Many statistics platforms rely on an extra  Javascript block to work. You can cr
 
 Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
 
+.. versionadded:: 1.4.0
+
+Galette restricts the sites its pages can load scripts from or send data to, so that a malicious script injected in a page can neither run nor send data elsewhere. The statistics platform your ``tracking.js`` file talks to must therefore be declared: set ``pref_csp_external_sources`` from the :ref:`advanced configuration <advanced_config>` page, with the address of the platform, such as ``https://stats.my-association.org``. Several addresses can be set, separated by spaces; ``https://*.example.org`` stands for every sub-domain of a website.
+
+Only list services you trust: the code they serve runs in Galette pages, with the rights of the logged in user.
+
+If the ``GALETTE_CSP_EXTERNAL_SOURCES`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
+
 .. _csv_exports:
 
 CSV exports
