@@ -1,5 +1,21 @@
 :orphan:
 
+.. _v1330:
+
+**************
+1.3.2 -> 1.3.3
+**************
+
+- Security related fixes
+- Mass change checkboxes stayed checked when a field was set back to its initial value
+- Dynamic fields could be created without a name; new fields are now single lines by default instead of separators
+- Self subscription warned the new member that email was disabled in the preferences, instead of just not sending them an email
+- Members allowed to create child members were refused access when storing them
+- Members not allowed to create child members were sent back to the dashboard without any message
+- On PostgreSQL, searching members, contributions dynamic fields or mailings subjects with uppercase accented letters found nothing
+- Saving the settings set the number of records per page from 30, the default one, to 10, which was not among the choices; the default is now 20, and a number missing from the choices is listed too
+- Locks counted by plugins on IPv6 addresses were listed with the address in the account column
+
 .. _v1320:
 
 **************

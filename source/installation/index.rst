@@ -22,8 +22,8 @@ Galette installation is quite simple, really :) Just a few graphical steps to fo
 
 First, download latest Galette release from official repository:
 
-.. image:: https://img.shields.io/badge/1.3.2-Galette-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
-   :target: https://galette.eu/download/galette-1.3.2.tar.bz2
+.. image:: https://img.shields.io/badge/1.3.3-Galette-ffb619.svg?logo=php&logoColor=white&style=for-the-badge
+   :target: https://galette.eu/download/galette-1.3.3.tar.bz2
    :alt: Get latest Galette!
 
 Then, uncompress the archive. If you are running Windows, you will have to install a file archiver software supporting the TAR archive format, such as `7zip <https://www.7-zip.org/>`_.
@@ -32,8 +32,8 @@ If you are using Linux, run the following commands (adapt the version if needed)
 ::
 
    $ cd /var/www/
-   $ wget https://galette.eu/download/galette-1.3.2.tar.bz2
-   $ tar xjvf galette-1.3.2.tar.bz2
+   $ wget https://galette.eu/download/galette-1.3.3.tar.bz2
+   $ tar xjvf galette-1.3.3.tar.bz2
 
 What the archive contains and where to put it on your server is explained in the :ref:`archive contents <archivecontents>` and :ref:`installation directory <installationdir>` sections.
 
