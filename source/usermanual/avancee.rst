@@ -124,6 +124,35 @@ For instance, ``'self' https://www.my-association.org`` lets the website of your
 
 If the ``GALETTE_CSP_FRAME_ANCESTORS`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
+.. _csp_enforce:
+
+Script protection
+=================
+
+.. versionadded:: 1.4.0
+
+Galette tells browsers which scripts its pages are allowed to run, and which sites they may load contents from or send data to: this is its *Content Security Policy*. A script injected in a page by an attacker is not part of that list; the browser refuses to run it, and it cannot send your members data elsewhere.
+
+The ``pref_csp_enforce`` setting, on the :ref:`advanced configuration <advanced_config>` page, sets how strict browsers are:
+
+* on: scripts and sites that are not allowed are blocked,
+* off: they are not blocked, browsers only report them. Protection against framing by other websites, described above, still applies.
+
+Whatever the mode, each problem met by a browser is written to Galette logs, as a warning starting with ``CSP violation`` - or ``CSP violation (report only)`` when the setting is off.
+
+If a page stops working once the setting is on, look for these warnings in the logs:
+
+* a site used by your ``tracking.js`` file must be :ref:`declared <external_stats>`,
+* a plugin may not be ready yet: update it, or tell its authors which page fails and the warning you got.
+
+.. warning::
+
+   Turning the setting off removes a protection for all your users. Only do it to keep Galette working while you fix the cause, and turn it back on as soon as possible.
+
+If the ``GALETTE_CSP_ENFORCE`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
+
+.. _external_stats:
+
 External stats
 ==============
 
