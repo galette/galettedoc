@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.4\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-11-13 19:57+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../usermanual/maps.rst:5
+msgid "Maps"
+msgstr ""
+
+#: ../usermanual/maps.rst:9
+msgid "Maps were provided by the Maps plugin before, see :ref:`maps_plugin`."
+msgstr ""
+
+#: ../usermanual/maps.rst:11
+msgid ""
+"Galette can store where members live, as a geographical position (latitude "
+"and longitude). Positions are displayed on members cards, and on a public "
+"map of the members."
+msgstr ""
+
+#: ../usermanual/maps.rst:13
+msgid ""
+"Maps are disabled on a new installation. Once they are enabled, members can "
+"set their own position, and so can those who are allowed to edit members."
+msgstr ""
+
+#: ../usermanual/maps.rst:18
+msgid "Settings"
+msgstr ""
+
+#: ../usermanual/maps.rst:20
+msgid ""
+"Maps are set from **Configuration**, then **Maps settings**. This page "
+"requires the *Change settings* permission, which only administrators have by "
+"default."
+msgstr ""
+
+#: ../usermanual/maps.rst:22
+msgid ""
+"Check **Display members positions on maps** to enable maps: menus entries, "
+"positions on members cards and the public map are only displayed once maps "
+"are enabled."
+msgstr ""
+
+#: ../usermanual/maps.rst:24
+msgid "Maps settings, with their preview"
+msgstr ""
+
+#: ../usermanual/maps.rst:29
+msgid ""
+"A **Preview** of the public map is displayed next to the settings. It "
+"follows the form as it is filled, before anything is saved: the background "
+"map, the maps center, and how far from their stored position members appear. "
+"Sample positions are displayed: a grey dot where a position is stored, a "
+"marker where visitors see it, and the square of the grid the position is "
+"snapped to."
+msgstr ""
+
+#: ../usermanual/maps.rst:34
+msgid "Positions precision"
+msgstr ""
+
+#: ../usermanual/maps.rst:36
+msgid ""
+"A member's stored position is often their home address. The map does not "
+"show it as is: positions are snapped to a grid, so a marker lands near the "
+"member, not on their door."
+msgstr ""
+
+#: ../usermanual/maps.rst:38
+msgid "The precision is set with **Members positions precision**:"
+msgstr ""
+
+#: ../usermanual/maps.rst:40
+msgid ""
+"**About 100 km**, **About 50 km**, **About 5 km**: for a region, a "
+"département or a town,"
+msgstr ""
+
+#: ../usermanual/maps.rst:41
+msgid "**About 500 m**: the default, a neighbourhood,"
+msgstr ""
+
+#: ../usermanual/maps.rst:42
+msgid "**About 50 m**: a street,"
+msgstr ""
+
+#: ../usermanual/maps.rst:43
+msgid "**Exact position**: no snapping."
+msgstr ""
+
+#: ../usermanual/maps.rst:45
+msgid ""
+"The value is how far, at most, a marker may be from the stored position."
+msgstr ""
+
+#: ../usermanual/maps.rst:47
+msgid ""
+"Snapping applies on the public map, to visitors and to members who are not "
+"allowed to display the members concerned. Those allowed to display a member, "
+"with the *Display members* permission, see their exact position, and every "
+"member sees their own position, and those of their children, as they are "
+"stored."
+msgstr ""
+
+#: ../usermanual/maps.rst:49
+msgid ""
+"When the map shows snapped positions, zooming stops at a level matching the "
+"precision, so that a marker does not seem to point at a precise address."
+msgstr ""
+
+#: ../usermanual/maps.rst:54
+msgid "Background map"
+msgstr ""
+
+#: ../usermanual/maps.rst:56
+msgid ""
+"The background map comes from a provider, chosen with **Background map "
+"provider**:"
+msgstr ""
+
+#: ../usermanual/maps.rst:58
+msgid ""
+"**OpenFreeMap, light grey**: the default. Vector tiles, in a discreet grey "
+"that lets member markers stand out. No account, no API key, and the service "
+"can be `self-hosted <https://openfreemap.org>`_,"
+msgstr ""
+
+#: ../usermanual/maps.rst:59
+msgid "**OpenFreeMap, colours**: the same service, rendered in full colour,"
+msgstr ""
+
+#: ../usermanual/maps.rst:60
+msgid ""
+"**VersaTiles, colours** and **VersaTiles, grey**: vector tiles as well, from "
+"the `VersaTiles <https://versatiles.org>`_ project,"
+msgstr ""
+
+#: ../usermanual/maps.rst:61
+msgid ""
+"**Plan IGN, France only**: the vector map of the French national geographic "
+"institute. It only covers France and its overseas territories: outside, the "
+"map remains empty,"
+msgstr ""
+
+#: ../usermanual/maps.rst:62
+msgid ""
+"**OpenStreetMap**: the standard rendering, from the OpenStreetMap Foundation "
+"servers,"
+msgstr ""
+
+#: ../usermanual/maps.rst:63
+msgid ""
+"**OpenStreetMap France** and **Humanitarian OSM Team**: hosted by the OSM-FR "
+"association; the second one gives more weight to roads and facilities,"
+msgstr ""
+
+#: ../usermanual/maps.rst:64
+msgid "**OpenStreetMap Germany**: German rendering, favouring local names,"
+msgstr ""
+
+#: ../usermanual/maps.rst:65
+msgid ""
+"**CyclOSM, for cycling**: cycleways, bicycle parkings and repair shops stand "
+"out,"
+msgstr ""
+
+#: ../usermanual/maps.rst:66
+msgid ""
+"**OpenTopoMap, topographic**: contour lines and relief, for hiking or "
+"mountain clubs; it does not go down to the street level,"
+msgstr ""
+
+#: ../usermanual/maps.rst:67
+msgid "**Esri, light grey**: a very light grey rendering."
+msgstr ""
+
+#: ../usermanual/maps.rst:69
+msgid ""
+"Vector tiles need a browser able to render them (WebGL 2). Other browsers "
+"get the OpenStreetMap background instead. So do the maps next to members "
+"cards, which do not need more than a glance."
+msgstr ""
+
+#: ../usermanual/maps.rst:71
+msgid "Maps never zoom further than their background map allows."
+msgstr ""
+
+#: ../usermanual/maps.rst:75
+msgid ""
+"Check the usage policy of the provider you choose. Most of them are run by "
+"associations or by volunteers, and they set conditions on the traffic they "
+"accept."
+msgstr ""
+
+#: ../usermanual/maps.rst:77
+msgid ""
+"The last entry of the list, **Your own values**, replaces the proposed "
+"providers with an address of your own: a provider that is not listed, or "
+"your own tile server."
+msgstr ""
+
+#: ../usermanual/maps.rst:79
+msgid ""
+"**Vector tiles** tells Galette what it is being given: a MapLibre style when "
+"checked, classic raster tiles when not,"
+msgstr ""
+
+#: ../usermanual/maps.rst:80
+msgid ""
+"**Address** is the style address for vector tiles, and the tiles address for "
+"raster ones, such as ``https://tile.openstreetmap.org/{z}/{x}/{y}.png``,"
+msgstr ""
+
+#: ../usermanual/maps.rst:81
+msgid ""
+"**Attribution** is the credit the provider requires. HTML is allowed. It is "
+"not a formality: data licences make it mandatory,"
+msgstr ""
+
+#: ../usermanual/maps.rst:82
+msgid ""
+"**Maximum zoom** is the deepest zoom level the provider serves. Going past "
+"it displays empty tiles,"
+msgstr ""
+
+#: ../usermanual/maps.rst:83
+msgid ""
+"**Subdomains** lists the letters the ``{s}`` token of the address is "
+"replaced with, for instance ``abc``. Raster tiles only."
+msgstr ""
+
+#: ../usermanual/maps.rst:88
+msgid "Maps center"
+msgstr ""
+
+#: ../usermanual/maps.rst:90
+msgid ""
+"Maps open on the whole of France when they have nothing else to show: the "
+"public map before it frames members positions, or the map of a member who "
+"has no position yet. Set **Maps center** to have them open on your "
+"association town instead."
+msgstr ""
+
+#: ../usermanual/maps.rst:92
+msgid ""
+"The **Town** and **Country** fields are filled with those of your "
+"association. Change them if needed, and use **Search coordinates**: the "
+"towns found are listed, choose one to fill **Latitude** and **Longitude**. "
+"Coordinates can also be typed in directly. Both are required, or none; leave "
+"them empty to show the whole of France again."
+msgstr ""
+
+#: ../usermanual/maps.rst:94
+msgid "Maps center, searched from the association town"
+msgstr ""
+
+#: ../usermanual/maps.rst:99
+msgid ""
+"Towns are searched with the `Nominatim <https://"
+"nominatim.openstreetmap.org>`_ online service. Its answers are kept a week, "
+"so that a same town is not searched again."
+msgstr ""
+
+#: ../usermanual/maps.rst:104
+msgid "Members positions"
+msgstr ""
+
+#: ../usermanual/maps.rst:106
+msgid ""
+"Members set their own position from **My localization**, in the **My "
+"account** menu, or from the dashboard. The super administrator is not a "
+"member, and has no position."
+msgstr ""
+
+#: ../usermanual/maps.rst:108
+msgid ""
+"The position of a member is displayed beside their card, both when "
+"displaying and when editing them; it opens the member map. When a member has "
+"no position yet, users allowed to edit them are offered to **Geolocalize** "
+"them."
+msgstr ""
+
+#: ../usermanual/maps.rst:110
+msgid "Member position, beside the member card"
+msgstr ""
+
+#: ../usermanual/maps.rst:115
+msgid ""
+"The member map also opens from the **Geolocalize** action of the members "
+"list and of the member card. It is displayed in a window, over the page: a "
+"member form being filled is kept as it is."
+msgstr ""
+
+#: ../usermanual/maps.rst:117
+msgid "Setting a member position"
+msgstr ""
+
+#: ../usermanual/maps.rst:122
+msgid "There are several ways to find where a member lives:"
+msgstr ""
+
+#: ../usermanual/maps.rst:124
+msgid ""
+"if a town has been set in the member information, the towns it matches are "
+"proposed, from the `Nominatim <https://nominatim.openstreetmap.org>`_ online "
+"service,"
+msgstr ""
+
+#: ../usermanual/maps.rst:125
+msgid "the search field of the map looks for a place,"
+msgstr ""
+
+#: ../usermanual/maps.rst:126
+msgid "the **Show me where I am** button uses the location the browser gives,"
+msgstr ""
+
+#: ../usermanual/maps.rst:127
+msgid "and a click anywhere on the map."
+msgstr ""
+
+#: ../usermanual/maps.rst:129
+msgid ""
+"Then, use **I live here!**, or **Member lives here!**, to store the "
+"position. Clicking on a stored position allows to remove it."
+msgstr ""
+
+#: ../usermanual/maps.rst:131
+msgid ""
+"Members can always set their own position, and those of their children. "
+"Users with the *Edit members* permission set the position of the members "
+"they can edit. Those who can only display a member see their position, if "
+"there is one, with **Show on map**."
+msgstr ""
+
+#: ../usermanual/maps.rst:136
+msgid "Public map"
+msgstr ""
+
+#: ../usermanual/maps.rst:138
+msgid ""
+"When maps are enabled, a **Maps** entry is added to the :ref:`public pages "
+"<man_public_pages>`, with a visibility of its own in the public pages "
+"settings. It displays up to date members who chose to be visible on public "
+"pages, and the members the logged-in user is allowed to display. Members of "
+"a company are displayed with a marker of their own; a click on a marker "
+"displays the member name."
+msgstr ""
+
+#: ../usermanual/maps.rst:140
+msgid "Public map of the members"
+msgstr ""
+
+#: ../usermanual/maps.rst:148
+msgid "Coming from the Maps plugin"
+msgstr ""
+
+#: ../usermanual/maps.rst:150
+msgid ""
+"Maps replace the Maps plugin: it cannot be enabled any more, and is "
+"displayed as *Part of Galette now, can be removed* in the plugins list. "
+"Remove its directory from the ``plugins`` directory."
+msgstr ""
+
+#: ../usermanual/maps.rst:152
+msgid ""
+"Positions stored with the plugin are taken over when Galette is updated, and "
+"maps are then enabled. The background map and the precision chosen with the "
+"plugin are kept."
+msgstr ""

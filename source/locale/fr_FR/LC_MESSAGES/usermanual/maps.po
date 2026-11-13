@@ -1,0 +1,518 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2024, Johan Cwiklinski
+# This file is distributed under the same license as the Galette package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Galette 1.4\n"
+"Report-Msgid-Bugs-To: translations@galette.eu\n"
+"POT-Creation-Date: 2026-11-13 19:57+0100\n"
+"PO-Revision-Date: 2026-11-13 20:00+0100\n"
+"Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../usermanual/maps.rst:5
+msgid "Maps"
+msgstr "Cartes"
+
+#: ../usermanual/maps.rst:9
+msgid "Maps were provided by the Maps plugin before, see :ref:`maps_plugin`."
+msgstr ""
+"Les cartes étaient auparavant fournies par le plugin Maps, "
+"voir :ref:`maps_plugin`."
+
+#: ../usermanual/maps.rst:11
+msgid ""
+"Galette can store where members live, as a geographical position (latitude "
+"and longitude). Positions are displayed on members cards, and on a public "
+"map of the members."
+msgstr ""
+"Galette peut enregistrer où habitent les adhérents, sous forme de position "
+"géographique (latitude et longitude). Les positions sont affichées sur les "
+"fiches des adhérents, et sur une carte publique des adhérents."
+
+#: ../usermanual/maps.rst:13
+msgid ""
+"Maps are disabled on a new installation. Once they are enabled, members can "
+"set their own position, and so can those who are allowed to edit members."
+msgstr ""
+"Les cartes sont désactivées sur une nouvelle installation. Une fois "
+"activées, les adhérents peuvent définir leur propre position, de même que "
+"ceux qui ont le droit de modifier les adhérents."
+
+#: ../usermanual/maps.rst:18
+msgid "Settings"
+msgstr "Préférences"
+
+#: ../usermanual/maps.rst:20
+msgid ""
+"Maps are set from **Configuration**, then **Maps settings**. This page "
+"requires the *Change settings* permission, which only administrators have by "
+"default."
+msgstr ""
+"Les cartes se règlent depuis **Configuration**, puis **Préférences des "
+"cartes**. Cette page demande la permission *Modifier les préférences*, que "
+"seuls les administrateurs ont par défaut."
+
+#: ../usermanual/maps.rst:22
+msgid ""
+"Check **Display members positions on maps** to enable maps: menus entries, "
+"positions on members cards and the public map are only displayed once maps "
+"are enabled."
+msgstr ""
+"Cochez **Afficher les positions des adhérents sur des cartes** pour activer "
+"les cartes : les entrées de menus, les positions sur les fiches des "
+"adhérents et la carte publique ne sont affichées qu'une fois les cartes "
+"activées."
+
+#: ../usermanual/maps.rst:24
+msgid "Maps settings, with their preview"
+msgstr "Préférences des cartes, avec leur prévisualisation"
+
+#: ../usermanual/maps.rst:29
+msgid ""
+"A **Preview** of the public map is displayed next to the settings. It "
+"follows the form as it is filled, before anything is saved: the background "
+"map, the maps center, and how far from their stored position members appear. "
+"Sample positions are displayed: a grey dot where a position is stored, a "
+"marker where visitors see it, and the square of the grid the position is "
+"snapped to."
+msgstr ""
+"Une **Prévisualisation** de la carte publique est affichée à côté des "
+"préférences. Elle suit le formulaire au fil de la saisie, avant tout "
+"enregistrement : le fond de carte, le centre des cartes, et la distance à "
+"laquelle les adhérents apparaissent de leur position enregistrée. Des "
+"positions d'exemple sont affichées : un point gris là où une position est "
+"enregistrée, un marqueur là où les visiteurs la voient, et le carré de la "
+"grille sur laquelle la position est calée."
+
+#: ../usermanual/maps.rst:34
+msgid "Positions precision"
+msgstr "Précision des positions"
+
+#: ../usermanual/maps.rst:36
+msgid ""
+"A member's stored position is often their home address. The map does not "
+"show it as is: positions are snapped to a grid, so a marker lands near the "
+"member, not on their door."
+msgstr ""
+"La position enregistrée d'un adhérent est souvent son adresse personnelle. "
+"La carte ne la montre pas telle quelle : les positions sont calées sur une "
+"grille, de sorte qu'un marqueur tombe près de l'adhérent, pas devant sa "
+"porte."
+
+#: ../usermanual/maps.rst:38
+msgid "The precision is set with **Members positions precision**:"
+msgstr ""
+"La précision se règle avec **Précision de la position des adhérents** :"
+
+#: ../usermanual/maps.rst:40
+msgid ""
+"**About 100 km**, **About 50 km**, **About 5 km**: for a region, a "
+"département or a town,"
+msgstr ""
+"**Environ 100 km**, **Environ 50 km**, **Environ 5 km** : pour une région, "
+"un département ou une ville,"
+
+#: ../usermanual/maps.rst:41
+msgid "**About 500 m**: the default, a neighbourhood,"
+msgstr "**Environ 500 m** : la valeur par défaut, un quartier,"
+
+#: ../usermanual/maps.rst:42
+msgid "**About 50 m**: a street,"
+msgstr "**Environ 50 m** : une rue,"
+
+#: ../usermanual/maps.rst:43
+msgid "**Exact position**: no snapping."
+msgstr "**Position exacte** : aucun calage."
+
+#: ../usermanual/maps.rst:45
+msgid ""
+"The value is how far, at most, a marker may be from the stored position."
+msgstr ""
+"La valeur est la distance maximale entre un marqueur et la position "
+"enregistrée."
+
+#: ../usermanual/maps.rst:47
+msgid ""
+"Snapping applies on the public map, to visitors and to members who are not "
+"allowed to display the members concerned. Those allowed to display a member, "
+"with the *Display members* permission, see their exact position, and every "
+"member sees their own position, and those of their children, as they are "
+"stored."
+msgstr ""
+"Le calage s'applique sur la carte publique, aux visiteurs et aux adhérents "
+"qui n'ont pas le droit d'afficher les adhérents concernés. Ceux qui ont le "
+"droit d'afficher un adhérent, avec la permission *Afficher les adhérents*, "
+"voient sa position exacte, et chaque adhérent voit sa propre position, et "
+"celles de ses enfants, telles qu'elles sont enregistrées."
+
+#: ../usermanual/maps.rst:49
+msgid ""
+"When the map shows snapped positions, zooming stops at a level matching the "
+"precision, so that a marker does not seem to point at a precise address."
+msgstr ""
+"Quand la carte montre des positions calées, le zoom s'arrête à un niveau "
+"correspondant à la précision, pour qu'un marqueur ne semble pas désigner une "
+"adresse précise."
+
+#: ../usermanual/maps.rst:54
+msgid "Background map"
+msgstr "Fond de carte"
+
+#: ../usermanual/maps.rst:56
+msgid ""
+"The background map comes from a provider, chosen with **Background map "
+"provider**:"
+msgstr ""
+"Le fond de carte vient d'un fournisseur, choisi avec **Fournisseur de fonds "
+"de carte** :"
+
+#: ../usermanual/maps.rst:58
+msgid ""
+"**OpenFreeMap, light grey**: the default. Vector tiles, in a discreet grey "
+"that lets member markers stand out. No account, no API key, and the service "
+"can be `self-hosted <https://openfreemap.org>`_,"
+msgstr ""
+"**OpenFreeMap, gris clair** : la valeur par défaut. Des tuiles vectorielles, "
+"dans un gris discret qui fait ressortir les marqueurs des adhérents. Ni "
+"compte, ni clé d'API, et le service peut être `auto-hébergé <https://"
+"openfreemap.org>`_,"
+
+#: ../usermanual/maps.rst:59
+msgid "**OpenFreeMap, colours**: the same service, rendered in full colour,"
+msgstr "**OpenFreeMap, couleurs** : le même service, rendu en couleurs,"
+
+#: ../usermanual/maps.rst:60
+msgid ""
+"**VersaTiles, colours** and **VersaTiles, grey**: vector tiles as well, from "
+"the `VersaTiles <https://versatiles.org>`_ project,"
+msgstr ""
+"**VersaTiles, couleurs** et **VersaTiles, gris** : des tuiles vectorielles "
+"également, fournies par le projet `VersaTiles <https://versatiles.org>`_,"
+
+#: ../usermanual/maps.rst:61
+msgid ""
+"**Plan IGN, France only**: the vector map of the French national geographic "
+"institute. It only covers France and its overseas territories: outside, the "
+"map remains empty,"
+msgstr ""
+"**Plan IGN, France uniquement** : la carte vectorielle de l'Institut "
+"national de l'information géographique et forestière. Elle ne couvre que la "
+"France et ses territoires d'outre-mer : en dehors, la carte reste vide,"
+
+#: ../usermanual/maps.rst:62
+msgid ""
+"**OpenStreetMap**: the standard rendering, from the OpenStreetMap Foundation "
+"servers,"
+msgstr ""
+"**OpenStreetMap** : le rendu standard, depuis les serveurs de la fondation "
+"OpenStreetMap,"
+
+#: ../usermanual/maps.rst:63
+msgid ""
+"**OpenStreetMap France** and **Humanitarian OSM Team**: hosted by the OSM-FR "
+"association; the second one gives more weight to roads and facilities,"
+msgstr ""
+"**OpenStreetMap France** et **Équipe humanitaire OSM** : hébergés par "
+"l'association OSM-FR ; le second donne plus de place aux routes et aux "
+"équipements,"
+
+#: ../usermanual/maps.rst:64
+msgid "**OpenStreetMap Germany**: German rendering, favouring local names,"
+msgstr ""
+"**OpenStreetMap Allemagne** : le rendu allemand, qui privilégie les noms "
+"locaux,"
+
+#: ../usermanual/maps.rst:65
+msgid ""
+"**CyclOSM, for cycling**: cycleways, bicycle parkings and repair shops stand "
+"out,"
+msgstr ""
+"**CyclOSM, pour le vélo** : les pistes cyclables, les parkings à vélos et "
+"les ateliers de réparation sont mis en avant,"
+
+#: ../usermanual/maps.rst:66
+msgid ""
+"**OpenTopoMap, topographic**: contour lines and relief, for hiking or "
+"mountain clubs; it does not go down to the street level,"
+msgstr ""
+"**OpenTopoMap, topographique** : courbes de niveau et relief, pour les clubs "
+"de randonnée ou de montagne ; il ne descend pas jusqu'au niveau de la rue,"
+
+#: ../usermanual/maps.rst:67
+msgid "**Esri, light grey**: a very light grey rendering."
+msgstr "**Esri, gris clair** : un rendu gris très clair."
+
+#: ../usermanual/maps.rst:69
+msgid ""
+"Vector tiles need a browser able to render them (WebGL 2). Other browsers "
+"get the OpenStreetMap background instead. So do the maps next to members "
+"cards, which do not need more than a glance."
+msgstr ""
+"Les tuiles vectorielles demandent un navigateur capable de les afficher "
+"(WebGL 2). Les autres navigateurs reçoivent à la place le fond "
+"OpenStreetMap. C'est aussi le cas des cartes affichées à côté des fiches des "
+"adhérents, qui ne demandent qu'un coup d'œil."
+
+#: ../usermanual/maps.rst:71
+msgid "Maps never zoom further than their background map allows."
+msgstr ""
+"Les cartes ne zooment jamais au-delà de ce que leur fond de carte permet."
+
+#: ../usermanual/maps.rst:75
+msgid ""
+"Check the usage policy of the provider you choose. Most of them are run by "
+"associations or by volunteers, and they set conditions on the traffic they "
+"accept."
+msgstr ""
+"Vérifiez la politique d'utilisation du fournisseur que vous choisissez. La "
+"plupart sont gérés par des associations ou des bénévoles, et ils posent des "
+"conditions sur le trafic qu'ils acceptent."
+
+#: ../usermanual/maps.rst:77
+msgid ""
+"The last entry of the list, **Your own values**, replaces the proposed "
+"providers with an address of your own: a provider that is not listed, or "
+"your own tile server."
+msgstr ""
+"La dernière entrée de la liste, **Vos propres valeurs**, remplace les "
+"fournisseurs proposés par une adresse de votre choix : un fournisseur qui "
+"n'est pas dans la liste, ou votre propre serveur de tuiles."
+
+#: ../usermanual/maps.rst:79
+msgid ""
+"**Vector tiles** tells Galette what it is being given: a MapLibre style when "
+"checked, classic raster tiles when not,"
+msgstr ""
+"**Tuiles vectorielles** indique à Galette ce qu'il reçoit : un style "
+"MapLibre si la case est cochée, des tuiles classiques sinon,"
+
+#: ../usermanual/maps.rst:80
+msgid ""
+"**Address** is the style address for vector tiles, and the tiles address for "
+"raster ones, such as ``https://tile.openstreetmap.org/{z}/{x}/{y}.png``,"
+msgstr ""
+"**Adresse** est l'adresse du style pour les tuiles vectorielles, et "
+"l'adresse des tuiles pour les tuiles classiques, par exemple ``https://"
+"tile.openstreetmap.org/{z}/{x}/{y}.png``,"
+
+#: ../usermanual/maps.rst:81
+msgid ""
+"**Attribution** is the credit the provider requires. HTML is allowed. It is "
+"not a formality: data licences make it mandatory,"
+msgstr ""
+"**Attribution** est le crédit que demande le fournisseur. Le HTML est "
+"autorisé. Ce n'est pas une formalité : les licences des données le rendent "
+"obligatoire,"
+
+#: ../usermanual/maps.rst:82
+msgid ""
+"**Maximum zoom** is the deepest zoom level the provider serves. Going past "
+"it displays empty tiles,"
+msgstr ""
+"**Zoom maximal** est le niveau de zoom le plus fin que sert le fournisseur. "
+"Au-delà, les tuiles affichées sont vides,"
+
+#: ../usermanual/maps.rst:83
+msgid ""
+"**Subdomains** lists the letters the ``{s}`` token of the address is "
+"replaced with, for instance ``abc``. Raster tiles only."
+msgstr ""
+"**Sous-domaines** liste les lettres qui remplacent le jeton ``{s}`` de "
+"l'adresse, par exemple ``abc``. Tuiles classiques uniquement."
+
+#: ../usermanual/maps.rst:88
+msgid "Maps center"
+msgstr "Centre des cartes"
+
+#: ../usermanual/maps.rst:90
+msgid ""
+"Maps open on the whole of France when they have nothing else to show: the "
+"public map before it frames members positions, or the map of a member who "
+"has no position yet. Set **Maps center** to have them open on your "
+"association town instead."
+msgstr ""
+"Les cartes s'ouvrent sur la France entière quand elles n'ont rien d'autre à "
+"montrer : la carte publique avant de se cadrer sur les positions des "
+"adhérents, ou la carte d'un adhérent qui n'a pas encore de position. Réglez "
+"le **Centre des cartes** pour qu'elles s'ouvrent plutôt sur la ville de "
+"votre association."
+
+#: ../usermanual/maps.rst:92
+msgid ""
+"The **Town** and **Country** fields are filled with those of your "
+"association. Change them if needed, and use **Search coordinates**: the "
+"towns found are listed, choose one to fill **Latitude** and **Longitude**. "
+"Coordinates can also be typed in directly. Both are required, or none; leave "
+"them empty to show the whole of France again."
+msgstr ""
+"Les champs **Ville** et **Pays** sont remplis avec ceux de votre "
+"association. Modifiez-les si besoin, puis utilisez **Rechercher les "
+"coordonnées** : les villes trouvées sont listées, choisissez-en une pour "
+"remplir **Latitude** et **Longitude**. Les coordonnées peuvent aussi être "
+"saisies directement. Les deux sont nécessaires, ou aucune ; laissez-les "
+"vides pour revenir à la France entière."
+
+#: ../usermanual/maps.rst:94
+msgid "Maps center, searched from the association town"
+msgstr "Centre des cartes, recherché depuis la ville de l'association"
+
+#: ../usermanual/maps.rst:99
+msgid ""
+"Towns are searched with the `Nominatim <https://"
+"nominatim.openstreetmap.org>`_ online service. Its answers are kept a week, "
+"so that a same town is not searched again."
+msgstr ""
+"Les villes sont recherchées avec le service en ligne `Nominatim <https://"
+"nominatim.openstreetmap.org>`_. Ses réponses sont conservées une semaine, "
+"pour qu'une même ville ne soit pas recherchée à nouveau."
+
+#: ../usermanual/maps.rst:104
+msgid "Members positions"
+msgstr "Positions des adhérents"
+
+#: ../usermanual/maps.rst:106
+msgid ""
+"Members set their own position from **My localization**, in the **My "
+"account** menu, or from the dashboard. The super administrator is not a "
+"member, and has no position."
+msgstr ""
+"Les adhérents définissent leur propre position depuis **Ma localisation**, "
+"dans le menu **Mon compte**, ou depuis le tableau de bord. Le super "
+"administrateur n'est pas un adhérent, et n'a pas de position."
+
+#: ../usermanual/maps.rst:108
+msgid ""
+"The position of a member is displayed beside their card, both when "
+"displaying and when editing them; it opens the member map. When a member has "
+"no position yet, users allowed to edit them are offered to **Geolocalize** "
+"them."
+msgstr ""
+"La position d'un adhérent est affichée à côté de sa fiche, à l'affichage "
+"comme à la modification ; elle ouvre la carte de l'adhérent. Quand un "
+"adhérent n'a pas encore de position, ceux qui ont le droit de le modifier se "
+"voient proposer de le **Géolocaliser**."
+
+#: ../usermanual/maps.rst:110
+msgid "Member position, beside the member card"
+msgstr "Position de l'adhérent, à côté de sa fiche"
+
+#: ../usermanual/maps.rst:115
+msgid ""
+"The member map also opens from the **Geolocalize** action of the members "
+"list and of the member card. It is displayed in a window, over the page: a "
+"member form being filled is kept as it is."
+msgstr ""
+"La carte de l'adhérent s'ouvre aussi depuis l'action **Géolocaliser** de la "
+"liste des adhérents et de la fiche de l'adhérent. Elle s'affiche dans une "
+"fenêtre, par-dessus la page : un formulaire d'adhérent en cours de saisie "
+"reste tel quel."
+
+#: ../usermanual/maps.rst:117
+msgid "Setting a member position"
+msgstr "Définir la position d'un adhérent"
+
+#: ../usermanual/maps.rst:122
+msgid "There are several ways to find where a member lives:"
+msgstr "Il y a plusieurs façons de trouver où habite un adhérent :"
+
+#: ../usermanual/maps.rst:124
+msgid ""
+"if a town has been set in the member information, the towns it matches are "
+"proposed, from the `Nominatim <https://nominatim.openstreetmap.org>`_ online "
+"service,"
+msgstr ""
+"si une ville a été renseignée dans les informations de l'adhérent, les "
+"villes qui y correspondent sont proposées, depuis le service en ligne "
+"`Nominatim <https://nominatim.openstreetmap.org>`_,"
+
+#: ../usermanual/maps.rst:125
+msgid "the search field of the map looks for a place,"
+msgstr "le champ de recherche de la carte cherche un lieu,"
+
+#: ../usermanual/maps.rst:126
+msgid "the **Show me where I am** button uses the location the browser gives,"
+msgstr ""
+"le bouton **Me montrer où je suis** utilise la localisation que donne le "
+"navigateur,"
+
+#: ../usermanual/maps.rst:127
+msgid "and a click anywhere on the map."
+msgstr "et un clic n'importe où sur la carte."
+
+#: ../usermanual/maps.rst:129
+msgid ""
+"Then, use **I live here!**, or **Member lives here!**, to store the "
+"position. Clicking on a stored position allows to remove it."
+msgstr ""
+"Ensuite, utilisez **J'y habite !**, ou **L'adhérent y habite !**, pour "
+"enregistrer la position. Un clic sur une position enregistrée permet de la "
+"supprimer."
+
+#: ../usermanual/maps.rst:131
+msgid ""
+"Members can always set their own position, and those of their children. "
+"Users with the *Edit members* permission set the position of the members "
+"they can edit. Those who can only display a member see their position, if "
+"there is one, with **Show on map**."
+msgstr ""
+"Les adhérents peuvent toujours définir leur propre position, et celles de "
+"leurs enfants. Les utilisateurs qui ont la permission *Modifier les "
+"adhérents* définissent la position des adhérents qu'ils peuvent modifier. "
+"Ceux qui peuvent seulement afficher un adhérent voient sa position, s'il en "
+"a une, avec **Voir sur la carte**."
+
+#: ../usermanual/maps.rst:136
+msgid "Public map"
+msgstr "Carte publique"
+
+#: ../usermanual/maps.rst:138
+msgid ""
+"When maps are enabled, a **Maps** entry is added to the :ref:`public pages "
+"<man_public_pages>`, with a visibility of its own in the public pages "
+"settings. It displays up to date members who chose to be visible on public "
+"pages, and the members the logged-in user is allowed to display. Members of "
+"a company are displayed with a marker of their own; a click on a marker "
+"displays the member name."
+msgstr ""
+"Quand les cartes sont activées, une entrée **Cartes** est ajoutée "
+"aux :ref:`pages publiques <man_public_pages>`, avec sa propre visibilité "
+"dans les préférences des pages publiques. Elle affiche les adhérents à jour "
+"qui ont choisi d'être visibles sur les pages publiques, et les adhérents que "
+"l'utilisateur connecté a le droit d'afficher. Les adhérents personnes "
+"morales sont affichés avec un marqueur qui leur est propre ; un clic sur un "
+"marqueur affiche le nom de l'adhérent."
+
+#: ../usermanual/maps.rst:140
+msgid "Public map of the members"
+msgstr "Carte publique des adhérents"
+
+#: ../usermanual/maps.rst:148
+msgid "Coming from the Maps plugin"
+msgstr "Depuis le plugin Maps"
+
+#: ../usermanual/maps.rst:150
+msgid ""
+"Maps replace the Maps plugin: it cannot be enabled any more, and is "
+"displayed as *Part of Galette now, can be removed* in the plugins list. "
+"Remove its directory from the ``plugins`` directory."
+msgstr ""
+"Les cartes remplacent le plugin Maps : il ne peut plus être activé, et "
+"apparaît comme *Fait désormais partie de Galette, peut être supprimé* dans "
+"la liste des plugins. Supprimez son dossier du répertoire ``plugins``."
+
+#: ../usermanual/maps.rst:152
+msgid ""
+"Positions stored with the plugin are taken over when Galette is updated, and "
+"maps are then enabled. The background map and the precision chosen with the "
+"plugin are kept."
+msgstr ""
+"Les positions enregistrées avec le plugin sont reprises à la mise à jour de "
+"Galette, et les cartes sont alors activées. Le fond de carte et la précision "
+"choisis avec le plugin sont conservés."

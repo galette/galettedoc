@@ -25,7 +25,6 @@ Existing plugins
 
 The `galette-plugins organization <https://github.com/galette-plugins/>`_ hosts all plugins. See :doc:`how to add your plugin <plugins-tiers>` if you want yours to join.
 
-* `Maps <https://galette-plugins.github.io/plugin-maps/>`_
 * `Auto <https://galette-plugins.github.io/plugin-auto/>`_
 * `Events <https://galette-plugins.github.io/plugin-events/>`_
 * `ObjectsLend <https://galette-plugins.github.io/plugin-objectslend/>`_

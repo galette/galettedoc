@@ -41,6 +41,7 @@ Main dashboard part propose you a quick access to main Galette features :)
    configuration.rst
    documents.rst
    public_pages.rst
+   maps.rst
    printing.rst
    pdf_models.rst
    preferences.rst
