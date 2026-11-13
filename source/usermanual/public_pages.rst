@@ -20,6 +20,7 @@ The public pages are listed in the **Public pages** menu, or at the top of the l
 
 * **Members** and **Gallery**: the members of your association, as a list or with their pictures,
 * **Staff** and **Staff gallery**: the members of the board only,
+* **Maps**: where members live, when :ref:`maps <maps>` are enabled,
 * **Documents**: the :ref:`documents <documents>` your association chose to share.
 
 .. image:: ../_styles/static/images/usermanual/public_members_gallery.png
