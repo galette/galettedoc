@@ -135,12 +135,12 @@ Galette tells browsers which scripts its pages are allowed to run, and which sit
 
 The ``pref_csp_enforce`` setting, on the :ref:`advanced configuration <advanced_config>` page, sets how strict browsers are:
 
-* on: scripts and sites that are not allowed are blocked,
+* on, the default: scripts and sites that are not allowed are blocked,
 * off: they are not blocked, browsers only report them. Protection against framing by other websites, described above, still applies.
 
 Whatever the mode, each problem met by a browser is written to Galette logs, as a warning starting with ``CSP violation`` - or ``CSP violation (report only)`` when the setting is off.
 
-If a page stops working once the setting is on, look for these warnings in the logs:
+If a page stops working, for instance after an upgrade to 1.4.0, look for these warnings in the logs:
 
 * a site used by your ``tracking.js`` file must be :ref:`declared <external_stats>`,
 * a plugin may not be ready yet: update it, or tell its authors which page fails and the warning you got.
@@ -148,6 +148,8 @@ If a page stops working once the setting is on, look for these warnings in the l
 .. warning::
 
    Turning the setting off removes a protection for all your users. Only do it to keep Galette working while you fix the cause, and turn it back on as soon as possible.
+
+While the setting is off, the super administrator is reminded of it on the dashboard.
 
 If the ``GALETTE_CSP_ENFORCE`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
