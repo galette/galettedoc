@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-13 19:57+0100\n"
+"POT-Creation-Date: 2026-11-16 07:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -269,11 +269,19 @@ msgstr ""
 "**Poddomene** navodi slova kojima se zamjenjuje oznaka ``{s}`` u adresi, "
 "primjerice ``abc``. Vrijedi samo za rasterske pločice."
 
-#: ../usermanual/maps.rst:88
-msgid "Maps center"
+#: ../usermanual/maps.rst:85
+msgid ""
+"Galette allows browsers to fetch the files of a vector style from the server "
+"of its address. A style that loads its tiles, fonts or icons from other "
+"servers shows an empty map: add those servers to the :ref:`external sites "
+"<external_stats>` of the advanced configuration."
 msgstr ""
 
 #: ../usermanual/maps.rst:90
+msgid "Maps center"
+msgstr ""
+
+#: ../usermanual/maps.rst:92
 msgid ""
 "Maps open on the whole of France when they have nothing else to show: the "
 "public map before it frames members positions, or the map of a member who "
@@ -281,7 +289,7 @@ msgid ""
 "association town instead."
 msgstr ""
 
-#: ../usermanual/maps.rst:92
+#: ../usermanual/maps.rst:94
 msgid ""
 "The **Town** and **Country** fields are filled with those of your "
 "association. Change them if needed, and use **Search coordinates**: the "
@@ -290,29 +298,29 @@ msgid ""
 "them empty to show the whole of France again."
 msgstr ""
 
-#: ../usermanual/maps.rst:94
+#: ../usermanual/maps.rst:96
 msgid "Maps center, searched from the association town"
 msgstr ""
 
-#: ../usermanual/maps.rst:99
+#: ../usermanual/maps.rst:101
 msgid ""
 "Towns are searched with the `Nominatim <https://"
 "nominatim.openstreetmap.org>`_ online service. Its answers are kept a week, "
 "so that a same town is not searched again."
 msgstr ""
 
-#: ../usermanual/maps.rst:104
+#: ../usermanual/maps.rst:106
 msgid "Members positions"
 msgstr ""
 
-#: ../usermanual/maps.rst:106
+#: ../usermanual/maps.rst:108
 msgid ""
 "Members set their own position from **My localization**, in the **My "
 "account** menu, or from the dashboard. The super administrator is not a "
 "member, and has no position."
 msgstr ""
 
-#: ../usermanual/maps.rst:108
+#: ../usermanual/maps.rst:110
 msgid ""
 "The position of a member is displayed beside their card, both when "
 "displaying and when editing them; it opens the member map. When a member has "
@@ -320,51 +328,51 @@ msgid ""
 "them."
 msgstr ""
 
-#: ../usermanual/maps.rst:110
+#: ../usermanual/maps.rst:112
 msgid "Member position, beside the member card"
 msgstr ""
 
-#: ../usermanual/maps.rst:115
+#: ../usermanual/maps.rst:117
 msgid ""
 "The member map also opens from the **Geolocalize** action of the members "
 "list and of the member card. It is displayed in a window, over the page: a "
 "member form being filled is kept as it is."
 msgstr ""
 
-#: ../usermanual/maps.rst:117
+#: ../usermanual/maps.rst:119
 msgid "Setting a member position"
 msgstr ""
 
-#: ../usermanual/maps.rst:122
+#: ../usermanual/maps.rst:124
 msgid "There are several ways to find where a member lives:"
 msgstr ""
 
-#: ../usermanual/maps.rst:124
+#: ../usermanual/maps.rst:126
 msgid ""
 "if a town has been set in the member information, the towns it matches are "
 "proposed, from the `Nominatim <https://nominatim.openstreetmap.org>`_ online "
 "service,"
 msgstr ""
 
-#: ../usermanual/maps.rst:125
+#: ../usermanual/maps.rst:127
 msgid "the search field of the map looks for a place,"
 msgstr ""
 
-#: ../usermanual/maps.rst:126
+#: ../usermanual/maps.rst:128
 msgid "the **Show me where I am** button uses the location the browser gives,"
 msgstr ""
 
-#: ../usermanual/maps.rst:127
+#: ../usermanual/maps.rst:129
 msgid "and a click anywhere on the map."
 msgstr ""
 
-#: ../usermanual/maps.rst:129
+#: ../usermanual/maps.rst:131
 msgid ""
 "Then, use **I live here!**, or **Member lives here!**, to store the "
 "position. Clicking on a stored position allows to remove it."
 msgstr ""
 
-#: ../usermanual/maps.rst:131
+#: ../usermanual/maps.rst:133
 msgid ""
 "Members can always set their own position, and those of their children. "
 "Users with the *Edit members* permission set the position of the members "
@@ -372,11 +380,11 @@ msgid ""
 "there is one, with **Show on map**."
 msgstr ""
 
-#: ../usermanual/maps.rst:136
+#: ../usermanual/maps.rst:138
 msgid "Public map"
 msgstr ""
 
-#: ../usermanual/maps.rst:138
+#: ../usermanual/maps.rst:140
 msgid ""
 "When maps are enabled, a **Maps** entry is added to the :ref:`public pages "
 "<man_public_pages>`, with a visibility of its own in the public pages "
@@ -386,22 +394,22 @@ msgid ""
 "displays the member name."
 msgstr ""
 
-#: ../usermanual/maps.rst:140
+#: ../usermanual/maps.rst:142
 msgid "Public map of the members"
 msgstr ""
 
-#: ../usermanual/maps.rst:148
+#: ../usermanual/maps.rst:150
 msgid "Coming from the Maps plugin"
 msgstr ""
 
-#: ../usermanual/maps.rst:150
+#: ../usermanual/maps.rst:152
 msgid ""
 "Maps replace the Maps plugin: it cannot be enabled any more, and is "
 "displayed as *Part of Galette now, can be removed* in the plugins list. "
 "Remove its directory from the ``plugins`` directory."
 msgstr ""
 
-#: ../usermanual/maps.rst:152
+#: ../usermanual/maps.rst:154
 msgid ""
 "Positions stored with the plugin are taken over when Galette is updated, and "
 "maps are then enabled. The background map and the precision chosen with the "
