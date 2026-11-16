@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the Galette package.
 #
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-11-13 19:57+0100\n"
 "PO-Revision-Date: 2026-11-16 11:20+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-maps/sl/>\n"
 "Language: sl\n"
@@ -27,7 +28,7 @@ msgstr "Zemljevidi"
 
 #: ../usermanual/maps.rst:9
 msgid "Maps were provided by the Maps plugin before, see :ref:`maps_plugin`."
-msgstr ""
+msgstr "Zemljevide je prej zagotavljal vtičnik Maps; glejte :ref:`maps_plugin`."
 
 #: ../usermanual/maps.rst:11
 msgid ""
@@ -35,12 +36,18 @@ msgid ""
 "and longitude). Positions are displayed on members cards, and on a public "
 "map of the members."
 msgstr ""
+"Galette lahko shrani podatke o tem, kje člani živijo, in sicer v obliki "
+"geografske lege (zemljepisna širina in dolžina). Ti podatki so prikazani na "
+"članskih karticah ter na javnem zemljevidu članov."
 
 #: ../usermanual/maps.rst:13
 msgid ""
 "Maps are disabled on a new installation. Once they are enabled, members can "
 "set their own position, and so can those who are allowed to edit members."
 msgstr ""
+"Pri novi namestitvi so zemljevidi onemogočeni. Ko so omogočeni, lahko člani "
+"določijo svoj položaj; to lahko storijo tudi tisti, ki imajo dovoljenje za "
+"urejanje članov."
 
 #: ../usermanual/maps.rst:18
 msgid "Settings"
@@ -52,9 +59,9 @@ msgid ""
 "requires the *Change settings* permission, which only administrators have by "
 "default."
 msgstr ""
-"Vloge se upravljajo v razdelku **Konfiguracija** in nato **Vloge**. Za "
-"dostop do te strani je potrebno dovoljenje *Upravljanje vlog in njihovih "
-"pravic*, ki ga imajo privzeto le administratorji."
+"Zemljevide se nastavi v razdelku **Konfiguracija**, nato pa v **Nastavitvah "
+"zemljevidov**. Za dostop do te strani je potrebno dovoljenje *Spreminjanje "
+"nastavitev*, ki ga imajo privzeto le administratorji."
 
 #: ../usermanual/maps.rst:22
 msgid ""
@@ -62,10 +69,13 @@ msgid ""
 "positions on members cards and the public map are only displayed once maps "
 "are enabled."
 msgstr ""
+"Označite **Prikaži lokacije članov na zemljevidih**, da omogočite "
+"zemljevide: vnosi v menijih, lokacije na karticah članov in javni zemljevid "
+"so prikazani šele, ko so zemljevidi omogočeni."
 
 #: ../usermanual/maps.rst:24
 msgid "Maps settings, with their preview"
-msgstr ""
+msgstr "Nastavitve zemljevidov s predogledom"
 
 #: ../usermanual/maps.rst:29
 msgid ""
@@ -156,9 +166,10 @@ msgid ""
 "that lets member markers stand out. No account, no API key, and the service "
 "can be `self-hosted <https://openfreemap.org>`_,"
 msgstr ""
-"**OpenFreeMap, svetlo siva** — privzeto. Vektorske ploščice v diskretni sivi "
-"barvi, ki omogoča, da oznake članov izstopajo. Brez računa, brez ključa API "
-"in storitev lahko [samostuje]{1}."
+"**OpenFreeMap, svetlo siva**: privzeta možnost. Vektorske ploščice v "
+"nevsiljivi sivi barvi, zaradi česar oznake elementov bolj izstopajo. Brez "
+"računa, brez ključa API, storitev pa lahko gostite tudi sami (`self-hosted "
+"<https://openfreemap.org>`_),"
 
 #: ../usermanual/maps.rst:59
 msgid "**OpenFreeMap, colours**: the same service, rendered in full colour,"
@@ -250,7 +261,7 @@ msgid ""
 "checked, classic raster tiles when not,"
 msgstr ""
 "**Vektorske ploščice** povedo vtičniku, kaj je dobil: slog MapLibre, če je "
-"označen, klasične rastrske ploščice, če ni."
+"označen, klasične rastrske ploščice, če ni,"
 
 #: ../usermanual/maps.rst:80
 msgid ""
@@ -422,3 +433,6 @@ msgid ""
 "maps are then enabled. The background map and the precision chosen with the "
 "plugin are kept."
 msgstr ""
+"Položaji, shranjeni s vtičnikom, se ob posodobitvi sistema Galette "
+"prenesejo, zemljevidi pa se nato omogočijo. Osnovni zemljevid in natančnost, "
+"izbrana z vtičnikom, ostaneta nespremenjena."
