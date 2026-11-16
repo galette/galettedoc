@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-08 08:06+0100\n"
+"POT-Creation-Date: 2026-11-16 07:56+0100\n"
 "PO-Revision-Date: 2026-10-10 17:51+0000\n"
 "Last-Translator: Marko Puljic <markopuljic.uo@gmail.com>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/galette/doc-"
@@ -332,11 +332,163 @@ msgstr ""
 "Ako je ``GALETTE_X_FORWARDED_FOR_INDEX`` još definirana u :ref:`postavkama "
 "ponašanja <behavior>`, ima prednost, a postavka je označena kao *zaključana*."
 
-#: ../usermanual/avancee.rst:104
+#: ../usermanual/avancee.rst:106
+msgid "Display Galette in another site"
+msgstr ""
+
+#: ../usermanual/avancee.rst:110
+msgid ""
+"By default, browsers refuse to display Galette inside a frame (an "
+"``<iframe>``) of another website. This protects your users from "
+"*clickjacking*, where a hostile page hides Galette under its own buttons to "
+"make them click without knowing it."
+msgstr ""
+
+#: ../usermanual/avancee.rst:112
+msgid ""
+"To embed Galette pages in the website of your association - the public "
+"members list, or the subscription form - set ``pref_csp_frame_ancestors`` "
+"from the :ref:`advanced configuration <advanced_config>` page. The value "
+"lists the sites allowed to display Galette, separated by spaces:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:114
+msgid "``'self'``: Galette itself. This is the default, keep it in the list,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:115
+msgid ""
+"``https://www.example.org``: a website, with its scheme. A port can be "
+"added: ``https://www.example.org:8443``,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:116
+msgid "``https://*.example.org``: every sub-domain of a website,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:117
+msgid "``'none'``: no website at all, not even Galette. It must be used alone."
+msgstr ""
+
+#: ../usermanual/avancee.rst:119
+msgid ""
+"For instance, ``'self' https://www.my-association.org`` lets the website of "
+"your association embed Galette. The quotes around ``'self'`` and ``'none'`` "
+"are required."
+msgstr ""
+
+#: ../usermanual/avancee.rst:123
+msgid ""
+"Only list websites you trust: a website allowed here can display Galette "
+"pages to your logged in users."
+msgstr ""
+
+#: ../usermanual/avancee.rst:125
+#, fuzzy
+#| msgid ""
+#| "If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared "
+#| "in :ref:`behavior configuration <behavior>`, it takes precedence and the "
+#| "setting shows as *locked*."
+msgid ""
+"If the ``GALETTE_CSP_FRAME_ANCESTORS`` constant is declared "
+"in :ref:`behavior configuration <behavior>`, it takes precedence and the "
+"setting shows as *locked*."
+msgstr ""
+"Ako je ``GALETTE_X_FORWARDED_FOR_INDEX`` još definirana u :ref:`postavkama "
+"ponašanja <behavior>`, ima prednost, a postavka je označena kao *zaključana*."
+
+#: ../usermanual/avancee.rst:130
+msgid "Script protection"
+msgstr ""
+
+#: ../usermanual/avancee.rst:134
+msgid ""
+"Galette tells browsers which scripts its pages are allowed to run, and which "
+"sites they may load contents from or send data to: this is its *Content "
+"Security Policy*. A script injected in a page by an attacker is not part of "
+"that list; the browser refuses to run it, and it cannot send your members "
+"data elsewhere."
+msgstr ""
+
+#: ../usermanual/avancee.rst:136
+msgid ""
+"The ``pref_csp_enforce`` setting, on the :ref:`advanced configuration "
+"<advanced_config>` page, sets how strict browsers are:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:138
+msgid "on, the default: scripts and sites that are not allowed are blocked,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:139
+msgid ""
+"off: they are not blocked, browsers only report them. Protection against "
+"framing by other websites, described above, still applies."
+msgstr ""
+
+#: ../usermanual/avancee.rst:141
+msgid ""
+"Whatever the mode, each problem met by a browser is written to Galette logs, "
+"as a warning starting with ``CSP violation`` - or ``CSP violation (report "
+"only)`` when the setting is off."
+msgstr ""
+
+#: ../usermanual/avancee.rst:143
+msgid ""
+"If a page stops working, for instance after an upgrade to 1.4.0, look for "
+"these warnings in the logs:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:145
+msgid ""
+"a site used by your ``tracking.js`` file must be :ref:`declared "
+"<external_stats>`,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:146
+msgid ""
+"a plugin may not be ready yet: update it, or tell its authors which page "
+"fails and the warning you got."
+msgstr ""
+
+#: ../usermanual/avancee.rst:150
+msgid ""
+"Turning the setting off removes a protection for all your users. Only do it "
+"to keep Galette working while you fix the cause, and turn it back on as soon "
+"as possible."
+msgstr ""
+
+#: ../usermanual/avancee.rst:152
+msgid ""
+"While the setting is off, the super administrator is reminded of it on the "
+"dashboard."
+msgstr ""
+
+#: ../usermanual/avancee.rst:154
+msgid ""
+"Administrators are reminded of it as well, even though only the super "
+"administrator can turn the setting back on."
+msgstr ""
+
+#: ../usermanual/avancee.rst:156
+#, fuzzy
+#| msgid ""
+#| "If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared "
+#| "in :ref:`behavior configuration <behavior>`, it takes precedence and the "
+#| "setting shows as *locked*."
+msgid ""
+"If the ``GALETTE_CSP_ENFORCE`` constant is declared in :ref:`behavior "
+"configuration <behavior>`, it takes precedence and the setting shows as "
+"*locked*."
+msgstr ""
+"Ako je ``GALETTE_X_FORWARDED_FOR_INDEX`` još definirana u :ref:`postavkama "
+"ponašanja <behavior>`, ima prednost, a postavka je označena kao *zaključana*."
+
+#: ../usermanual/avancee.rst:161
 msgid "External stats"
 msgstr "Vanjska statistika"
 
-#: ../usermanual/avancee.rst:108
+#: ../usermanual/avancee.rst:165
 msgid ""
 "Many statistics platforms rely on an extra  Javascript block to work. You "
 "can create a ``tracking.js`` file under ``webroot/themes/default`` "
@@ -346,7 +498,7 @@ msgstr ""
 "datoteku ``tracking.js`` u mapi ``webroot/themes/default`` i ona će se "
 "automatski uključiti."
 
-#: ../usermanual/avancee.rst:110
+#: ../usermanual/avancee.rst:167
 msgid ""
 "Galette uses Javascript to work. If the code you add in the ``tracking.js`` "
 "file is incorrect, this may break Galette!"
@@ -354,11 +506,43 @@ msgstr ""
 "Galette koristi JavaScript. Neispravan kod u datoteci ``tracking.js`` može "
 "onemogućiti njegov rad!"
 
-#: ../usermanual/avancee.rst:115
+#: ../usermanual/avancee.rst:171
+msgid ""
+"Galette restricts the sites its pages can load scripts from or send data to, "
+"so that a malicious script injected in a page can neither run nor send data "
+"elsewhere. The statistics platform your ``tracking.js`` file talks to must "
+"therefore be declared: set ``pref_csp_external_sources`` from "
+"the :ref:`advanced configuration <advanced_config>` page, with the address "
+"of the platform, such as ``https://stats.my-association.org``. Several "
+"addresses can be set, separated by spaces; ``https://*.example.org`` stands "
+"for every sub-domain of a website."
+msgstr ""
+
+#: ../usermanual/avancee.rst:173
+msgid ""
+"Only list services you trust: the code they serve runs in Galette pages, "
+"with the rights of the logged in user."
+msgstr ""
+
+#: ../usermanual/avancee.rst:175
+#, fuzzy
+#| msgid ""
+#| "If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared "
+#| "in :ref:`behavior configuration <behavior>`, it takes precedence and the "
+#| "setting shows as *locked*."
+msgid ""
+"If the ``GALETTE_CSP_EXTERNAL_SOURCES`` constant is declared "
+"in :ref:`behavior configuration <behavior>`, it takes precedence and the "
+"setting shows as *locked*."
+msgstr ""
+"Ako je ``GALETTE_X_FORWARDED_FOR_INDEX`` još definirana u :ref:`postavkama "
+"ponašanja <behavior>`, ima prednost, a postavka je označena kao *zaključana*."
+
+#: ../usermanual/avancee.rst:180
 msgid "CSV exports"
 msgstr "Izvoz CSV-a"
 
-#: ../usermanual/avancee.rst:119
+#: ../usermanual/avancee.rst:184
 msgid ""
 "You can setup parameted exports with a `YAML <https://yaml.org/>`_ file "
 "instead of an XML one."
@@ -366,7 +550,7 @@ msgstr ""
 "Izvoze s parametrima možete podesiti datotekom `YAML <https://yaml.org/>`_ "
 "umjesto XML datotekom."
 
-#: ../usermanual/avancee.rst:121
+#: ../usermanual/avancee.rst:186
 msgid ""
 "Galette provides a parameted CSV exports system. Only one parameted export "
 "is provided, but you can add your own to the ``config/exports.yaml`` file."
@@ -374,7 +558,7 @@ msgstr ""
 "Galette nudi sustav CSV izvoza s parametrima. Dostupan je jedan gotov izvoz, "
 "a vlastite možete dodati u datoteku ``config/exports.yaml``."
 
-#: ../usermanual/avancee.rst:125
+#: ../usermanual/avancee.rst:190
 msgid ""
 "Legacy XML configuration file is still supported; if a duplicate identifier "
 "is found, YAML file takes precedence."
@@ -382,11 +566,11 @@ msgstr ""
 "Stara konfiguracijska XML datoteka i dalje je podržana. Ako se identifikator "
 "ponavlja, prednost ima YAML datoteka."
 
-#: ../usermanual/avancee.rst:127
+#: ../usermanual/avancee.rst:192
 msgid "Let's examine existing \"cotisations\" parameted export:"
 msgstr "Pogledajmo postojeći izvoz s parametrima „cotisations”:"
 
-#: ../usermanual/avancee.rst:151
+#: ../usermanual/avancee.rst:216
 msgid ""
 "each array entry is a unique identifier, lowercase without spaces or special "
 "character"
@@ -394,18 +578,18 @@ msgstr ""
 "svaka stavka niza ima jedinstveni identifikator malim slovima, bez razmaka i "
 "posebnih znakova"
 
-#: ../usermanual/avancee.rst:152
+#: ../usermanual/avancee.rst:217
 msgid ""
 "`name` and `description` are mandatory as used to display each parameted "
 "export in the user interface"
 msgstr ""
 "`name` i `description` obvezni su jer se koriste za prikaz izvoza u sučelju"
 
-#: ../usermanual/avancee.rst:153
+#: ../usermanual/avancee.rst:218
 msgid "`filename` sets the filename for output file"
 msgstr "`filename` određuje naziv izlazne datoteke"
 
-#: ../usermanual/avancee.rst:154
+#: ../usermanual/avancee.rst:219
 msgid ""
 "`query` is the query to execute, it's mandatory. There is no other "
 "limitation than the SQL engine ones, expect you cannot send them any "
@@ -414,15 +598,15 @@ msgstr ""
 "`query` je obvezan upit koji se izvršava. Vrijede samo ograničenja SQL "
 "sustava, ali upitu ne možete prosljeđivati parametre"
 
-#: ../usermanual/avancee.rst:155
+#: ../usermanual/avancee.rst:220
 msgid "`headers` manages columns titles:"
 msgstr "`headers` određuje naslove stupaca:"
 
-#: ../usermanual/avancee.rst:157
+#: ../usermanual/avancee.rst:222
 msgid "like in the above example, an array of columns titles of your own"
 msgstr "niz vlastitih naslova stupaca, kao u prethodnom primjeru"
 
-#: ../usermanual/avancee.rst:158
+#: ../usermanual/avancee.rst:223
 msgid ""
 "if not present, Galette fields names will be exported. You can use named "
 "columns in your SQL query (``SELECT nom_adh AS \"Column title\" FROM ...``)"
@@ -430,42 +614,42 @@ msgstr ""
 "ako nije navedeno, izvoze se nazivi Galetteovih polja. U SQL upitu možete "
 "imenovati stupce (``SELECT nom_adh AS \"Column title\" FROM ...``)"
 
-#: ../usermanual/avancee.rst:159
+#: ../usermanual/avancee.rst:224
 msgid "set to false (``headers: false``) to disable column headers output"
 msgstr ""
 "postavite na false (``headers: false``) kako biste isključili zaglavlja "
 "stupaca"
 
-#: ../usermanual/avancee.rst:161
+#: ../usermanual/avancee.rst:226
 msgid ""
 "`separator` is the CSV separator that will be used. Possible values are:"
 msgstr "`separator` određuje CSV razdjelnik. Moguće su vrijednosti:"
 
-#: ../usermanual/avancee.rst:163
+#: ../usermanual/avancee.rst:228
 msgid "semicolon (``;``) - default"
 msgstr "točka sa zarezom (``;``), zadano"
 
-#: ../usermanual/avancee.rst:164
+#: ../usermanual/avancee.rst:229
 msgid "comma (``,``)"
 msgstr "zarez (``,``)"
 
-#: ../usermanual/avancee.rst:165
+#: ../usermanual/avancee.rst:230
 msgid "tabulation character (``\\t``)"
 msgstr "znak tabulatora (``\\t``)"
 
-#: ../usermanual/avancee.rst:167
+#: ../usermanual/avancee.rst:232
 msgid "`quote` either double quote - default - or simple quote character"
 msgstr "`quote` određuje znak navodnika: dvostruki (zadano) ili jednostruki"
 
-#: ../usermanual/avancee.rst:168
+#: ../usermanual/avancee.rst:233
 msgid "to disable an export, you can add ``inactive: true``"
 msgstr "za isključivanje izvoza dodajte ``inactive: true``"
 
-#: ../usermanual/avancee.rst:173
+#: ../usermanual/avancee.rst:238
 msgid "Administration tools"
 msgstr "Administratorski alati"
 
-#: ../usermanual/avancee.rst:177
+#: ../usermanual/avancee.rst:242
 msgid ""
 "All the admin tools operations are destructive, use them with caution, and "
 "**make sure you did a database backup** before!"
@@ -473,18 +657,18 @@ msgstr ""
 "Administratorski alati mijenjaju ili brišu postojeće podatke. Koristite ih "
 "oprezno i **prije uporabe izradite sigurnosnu kopiju baze**!"
 
-#: ../usermanual/avancee.rst:179
+#: ../usermanual/avancee.rst:244
 msgid "There are a few tools provided for Galette admin that permits to:"
 msgstr "Administratori Galettea imaju nekoliko alata za:"
 
-#: ../usermanual/avancee.rst:181
+#: ../usermanual/avancee.rst:246
 msgid ""
 "**reinitialize mailings contents** will reset all emails contents to default "
 "values,"
 msgstr ""
 "**Vraćanje sadržaja poruka**: vraća zadane sadržaje svih poruka e-pošte,"
 
-#: ../usermanual/avancee.rst:182
+#: ../usermanual/avancee.rst:247
 msgid ""
 "**reinitialize fields configuration** will reset all members core fields to "
 "their default value. This does not imply dynamic fields,"
@@ -492,12 +676,12 @@ msgstr ""
 "**Vraćanje postavki polja**: vraća zadane postavke osnovnih polja članova, "
 "ali ne dinamičkih polja,"
 
-#: ../usermanual/avancee.rst:183
+#: ../usermanual/avancee.rst:248
 msgid ""
 "**reinitialize PDF models** will reset all PDF models to default values,"
 msgstr "**Vraćanje PDF predložaka**: vraća zadane PDF predloške,"
 
-#: ../usermanual/avancee.rst:184
+#: ../usermanual/avancee.rst:249
 msgid ""
 "**generate empty logins and passwords** those information are required to "
 "improve security, but sometimes missing (if you import a CSV for example). "
@@ -508,7 +692,7 @@ msgstr ""
 "potrebni za sigurnost, ali katkad nedostaju, primjerice nakon uvoza CSV-a. "
 "Alat popunjava prazna polja u bazi nasumičnim vrijednostima."
 
-#: ../usermanual/avancee.rst:185
+#: ../usermanual/avancee.rst:250
 msgid ""
 "**Fix dynamic fields dates format** will convert all dynamic fields dates to "
 "the new format (see :ref:`dynamic fields <dynamic_fields>`)."
@@ -516,15 +700,15 @@ msgstr ""
 "**Ispravak formata datuma dinamičkih polja**: pretvara datume u novi format "
 "(pogledajte :ref:`dinamička polja <dynamic_fields>`)."
 
-#: ../usermanual/avancee.rst:190
+#: ../usermanual/avancee.rst:255
 msgid "Draining the mail queue"
 msgstr "Obrada reda za slanje e-pošte"
 
-#: ../usermanual/avancee.rst:196
+#: ../usermanual/avancee.rst:261
 msgid "Use **one** drainer at a time!"
 msgstr "Istodobno koristite samo **jedan** način obrade reda!"
 
-#: ../usermanual/avancee.rst:198
+#: ../usermanual/avancee.rst:263
 msgid ""
 "Nothing prevents two of them from picking the same pending recipients at the "
 "same moment, message would be sent twice - and that could cause other errors "
@@ -533,7 +717,7 @@ msgstr ""
 "Ništa ne sprječava dva procesa da istodobno preuzmu iste primatelje, pa bi "
 "se poruke mogle poslati dvaput i izazvati druge pogreške."
 
-#: ../usermanual/avancee.rst:200
+#: ../usermanual/avancee.rst:265
 msgid ""
 "As soon as an hourly or daily :ref:`sending limit <mail_throttling>` is set, "
 "Galette stops sending mass mailings and reminders in a single page load. It "
@@ -544,7 +728,7 @@ msgstr ""
 "Galette više ne šalje skupne poruke i podsjetnike tijekom jednog učitavanja "
 "stranice. U bazu dodaje zasebnu stavku po primatelju i postupno obrađuje red."
 
-#: ../usermanual/avancee.rst:202
+#: ../usermanual/avancee.rst:267
 msgid ""
 "The progress page does it from your browser, which is enough most of the "
 "time, but it requires that page to stay open. Two other drainers are "
@@ -554,15 +738,15 @@ msgstr ""
 "mora ostati otvorena. Dostupna su i dva druga načina obrade za koja nitko ne "
 "mora biti prijavljen."
 
-#: ../usermanual/avancee.rst:204
+#: ../usermanual/avancee.rst:269
 msgid "A cron script, next to the reminders one:"
 msgstr "Cron skripta, uz skriptu za podsjetnike:"
 
-#: ../usermanual/avancee.rst:210
+#: ../usermanual/avancee.rst:275
 msgid "And a console command, :doc:`from the command line </command-line>`:"
 msgstr "I naredba konzole, :doc:`iz naredbenog retka </command-line>`:"
 
-#: ../usermanual/avancee.rst:216
+#: ../usermanual/avancee.rst:281
 msgid ""
 "The command asks for confirmation before sending anything, since the feature "
 "is still in alpha. Add ``--force`` to skip the question, which is what a "
@@ -572,7 +756,7 @@ msgstr ""
 "Dodajte ``--force`` za preskakanje potvrde, što je potrebno ako naredbu "
 "pozivate putem crona."
 
-#: ../usermanual/avancee.rst:218
+#: ../usermanual/avancee.rst:283
 msgid ""
 "Both send batch after batch, waiting the configured delay between two "
 "messages, until the queue is empty or the quota is reached. They stop rather "
@@ -584,7 +768,7 @@ msgstr ""
 "kvotnog razdoblja, nego završavaju. Preostale poruke šalju se pri sljedećem "
 "pokretanju, pa ih treba pokretati redovito."
 
-#: ../usermanual/avancee.rst:222
+#: ../usermanual/avancee.rst:287
 msgid ""
 "Like the reminders script, ``cron/mailing_queue.php`` needs the address of "
 "your instance, since it runs with no incoming request to guess it from. Set "
@@ -596,11 +780,11 @@ msgstr ""
 "``pref_galette_url`` u :ref:`naprednim postavkama <advanced_config>` ili "
 "zadržite konstantu ``GALETTE_URI``."
 
-#: ../usermanual/avancee.rst:227
+#: ../usermanual/avancee.rst:292
 msgid "Advanced configuration"
 msgstr "Napredne postavke"
 
-#: ../usermanual/avancee.rst:231
+#: ../usermanual/avancee.rst:296
 msgid ""
 "The settings form only shows a curated set of settings. The **Configuration "
 "> Advanced configuration** entry lists them **all**, one row per setting, "
@@ -612,7 +796,7 @@ msgstr ""
 "uključujući one koje nisu u obrascu i one za koje je prije trebalo uređivati "
 "PHP datoteku."
 
-#: ../usermanual/avancee.rst:235
+#: ../usermanual/avancee.rst:300
 msgid ""
 "This page can break your installation, be very careful. Values are checked, "
 "but a setting that is perfectly valid can still be wrong for your instance, "
@@ -622,11 +806,11 @@ msgstr ""
 "Vrijednosti se provjeravaju, ali i valjana postavka može biti pogrešna za "
 "vašu instalaciju. Prije spremanja nema dodatne potvrde."
 
-#: ../usermanual/avancee.rst:237
+#: ../usermanual/avancee.rst:302
 msgid "Galette advanced configuration"
 msgstr "Napredne postavke Galettea"
 
-#: ../usermanual/avancee.rst:242
+#: ../usermanual/avancee.rst:307
 msgid ""
 "Only the super administrator can reach the page, and the password is asked "
 "again before it opens. The confirmation is remembered for fifteen minutes; "
@@ -636,11 +820,11 @@ msgstr ""
 "ponovno unijeti lozinku. Potvrda vrijedi petnaest minuta; nakon toga ili "
 "nakon nove prijave lozinka se ponovno traži."
 
-#: ../usermanual/avancee.rst:244
+#: ../usermanual/avancee.rst:309
 msgid "Password asked before the advanced configuration page opens"
 msgstr "Unos lozinke prije otvaranja naprednih postavki"
 
-#: ../usermanual/avancee.rst:249
+#: ../usermanual/avancee.rst:314
 msgid ""
 "Settings are saved **one at a time**: each row has its own **Save** button, "
 "and a **Reset to default** button appears as soon as the value differs from "
@@ -652,7 +836,7 @@ msgstr ""
 "zadane. Cijela se stranica ne šalje odjednom pa pogreška u jednom retku ne "
 "utječe na ostale."
 
-#: ../usermanual/avancee.rst:251
+#: ../usermanual/avancee.rst:316
 msgid ""
 "A value goes through the very same checks as the settings form, and is "
 "refused with the same messages: a number outside its bounds, a malformed "
@@ -665,7 +849,7 @@ msgstr ""
 "pošte ili promjena koja krši pravilo *među* postavkama, poput istodobnog "
 "produljenja članstva i fiksnog početka članstva."
 
-#: ../usermanual/avancee.rst:253
+#: ../usermanual/avancee.rst:318
 msgid ""
 "A search field above the table filters the rows on the setting name. It "
 "needs Javascript; without it the whole list is displayed."
@@ -673,15 +857,15 @@ msgstr ""
 "Polje za pretraživanje iznad tablice filtrira retke prema nazivu postavke. "
 "Zahtijeva JavaScript; bez njega se prikazuje cijeli popis."
 
-#: ../usermanual/avancee.rst:255
+#: ../usermanual/avancee.rst:320
 msgid "Each row carries a status, also recalled in the page legend:"
 msgstr "Svaki redak ima status, objašnjen i u legendi:"
 
-#: ../usermanual/avancee.rst:257
+#: ../usermanual/avancee.rst:322
 msgid "**default**: never changed, the value Galette ships with,"
 msgstr "**zadano**: vrijednost nije mijenjana i odgovara zadanoj u Galetteu,"
 
-#: ../usermanual/avancee.rst:258
+#: ../usermanual/avancee.rst:323
 msgid ""
 "**modified**: changed from the default, here or from the settings form. It "
 "can be reset,"
@@ -689,7 +873,7 @@ msgstr ""
 "**izmijenjeno**: zadana vrijednost promijenjena je ovdje ili u obrascu "
 "postavki. Može se vratiti,"
 
-#: ../usermanual/avancee.rst:259
+#: ../usermanual/avancee.rst:324
 msgid ""
 "**read-only**: Galette maintains this value itself, such as a generated "
 "identifier or a date it records. It is shown for information only,"
@@ -697,7 +881,7 @@ msgstr ""
 "**samo čitanje**: Galette sam održava vrijednost, poput generiranog "
 "identifikatora ili zabilježenog datuma. Prikazuje se samo kao informacija,"
 
-#: ../usermanual/avancee.rst:260
+#: ../usermanual/avancee.rst:325
 msgid ""
 "**secret**: a password or a token. Its value is never displayed, only "
 "whether one is set, and it is changed from the settings form,"
@@ -705,7 +889,7 @@ msgstr ""
 "**tajno**: lozinka ili token. Vrijednost se ne prikazuje, nego samo je li "
 "postavljena. Mijenja se u obrascu postavki,"
 
-#: ../usermanual/avancee.rst:261
+#: ../usermanual/avancee.rst:326
 msgid ""
 "**locked**: a constant declared in :ref:`behavior.inc.php <behavior>` takes "
 "precedence over the stored value. Remove it from that file to manage the "
@@ -715,7 +899,7 @@ msgstr ""
 "ima prednost pred pohranjenom vrijednošću. Uklonite je iz datoteke kako "
 "biste postavkom upravljali ovdje,"
 
-#: ../usermanual/avancee.rst:262
+#: ../usermanual/avancee.rst:327
 msgid ""
 "**unknown**: a row found in database that Galette does not describe. It may "
 "come from an older version or from a plugin. It is displayed, never edited."
@@ -723,7 +907,7 @@ msgstr ""
 "**nepoznato**: zapis u bazi za koji Galette nema opis. Može potjecati iz "
 "stare verzije ili dodatka. Prikazuje se, ali ne može uređivati."
 
-#: ../usermanual/avancee.rst:264
+#: ../usermanual/avancee.rst:329
 msgid ""
 "A setting can also carry an **alpha** label, on top of its status. It drives "
 "a feature that has not been through a release yet: it works, but it has seen "
@@ -735,11 +919,11 @@ msgstr ""
 "isprobajte na testnoj instalaciji i `prijavite što ste uočili <https://"
 "bugs.galette.eu>`_."
 
-#: ../usermanual/avancee.rst:266
+#: ../usermanual/avancee.rst:331
 msgid "The statuses a setting can carry"
 msgstr "Mogući statusi postavke"
 
-#: ../usermanual/avancee.rst:271
+#: ../usermanual/avancee.rst:336
 msgid ""
 "A setting only shows an input when it can be edited from there. In the "
 "example below, ``pref_x_forwarded_for_index`` is locked by a constant and "
@@ -751,11 +935,11 @@ msgstr ""
 "prikazuje samo važeća vrijednost, dok se sljedeća, ``pref_session_timeout``, "
 "može urediti:"
 
-#: ../usermanual/avancee.rst:273
+#: ../usermanual/avancee.rst:338
 msgid "A locked setting, and an editable one"
 msgstr "Zaključana postavka i postavka koja se može urediti"
 
-#: ../usermanual/avancee.rst:278
+#: ../usermanual/avancee.rst:343
 msgid ""
 "A second table, below the settings, lists the constants ``behavior.inc.php`` "
 "understands, whether each one is currently declared, and what it is set to. "
@@ -769,15 +953,15 @@ msgstr ""
 "postavka prikazuje se samo dok je definirana, uz poveznicu na postavku koju "
 "nadjačava."
 
-#: ../usermanual/avancee.rst:280
+#: ../usermanual/avancee.rst:345
 msgid "Constants behavior.inc.php understands"
 msgstr "Konstante koje prepoznaje behavior.inc.php"
 
-#: ../usermanual/avancee.rst:288
+#: ../usermanual/avancee.rst:353
 msgid "Galette modes"
 msgstr "Načini rada Galettea"
 
-#: ../usermanual/avancee.rst:290
+#: ../usermanual/avancee.rst:355
 msgid ""
 "Several modes are provided in Galette you can configure with "
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
@@ -786,7 +970,7 @@ msgstr ""
 "Način rada određuje konstanta ``GALETTE_MODE`` (:ref:`pogledajte postavke "
 "ponašanja Galettea <behavior>`). Može imati sljedeće vrijednosti:"
 
-#: ../usermanual/avancee.rst:292
+#: ../usermanual/avancee.rst:357
 msgid ""
 "``PROD``: production mode (non production instance should be on another "
 "mode). This is the default mode for releases, but it may change in "
@@ -796,7 +980,7 @@ msgstr ""
 "način. To je zadano za izdane verzije, ali može biti drukčije u razvojnoj "
 "grani."
 
-#: ../usermanual/avancee.rst:293
+#: ../usermanual/avancee.rst:358
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
@@ -804,20 +988,20 @@ msgstr ""
 "``DEMO``: demonstracijski način, poput ``PROD``, uz isključene funkcije kao "
 "što su slanje e-pošte i mijenjanje podataka glavnog administratora."
 
-#: ../usermanual/avancee.rst:294
+#: ../usermanual/avancee.rst:359
 msgid "``TEST``: reserved for unit tests."
 msgstr "``TEST``: rezervirano za jedinične testove."
 
-#: ../usermanual/avancee.rst:295
+#: ../usermanual/avancee.rst:360
 msgid "``MAINT``: maintenance mode. Only super admin will be able to login."
 msgstr ""
 "``MAINT``: način održavanja. Prijaviti se može samo glavni administrator."
 
-#: ../usermanual/avancee.rst:300
+#: ../usermanual/avancee.rst:365
 msgid "Galette Debug"
 msgstr "Otklanjanje pogrešaka u Galetteu"
 
-#: ../usermanual/avancee.rst:304
+#: ../usermanual/avancee.rst:369
 msgid ""
 "A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug "
 "mode. With this mode on:"
@@ -825,31 +1009,31 @@ msgstr ""
 "Konstanta ``GALETTE_DEBUG`` uključuje način otklanjanja pogrešaka. U tom "
 "načinu:"
 
-#: ../usermanual/avancee.rst:306
+#: ../usermanual/avancee.rst:371
 msgid "unstable/not finished parts will be activated,"
 msgstr "uključuju se nestabilne ili nedovršene funkcije,"
 
-#: ../usermanual/avancee.rst:307
+#: ../usermanual/avancee.rst:372
 msgid "some data will not be stored in session,"
 msgstr "neki se podaci ne spremaju u sesiju,"
 
-#: ../usermanual/avancee.rst:308
+#: ../usermanual/avancee.rst:373
 msgid "default log level is set to ``DEBUG``,"
 msgstr "zadana razina zapisa postavlja se na ``DEBUG``,"
 
-#: ../usermanual/avancee.rst:309
+#: ../usermanual/avancee.rst:374
 msgid "news won't be cached,"
 msgstr "novosti se ne pohranjuju u predmemoriju,"
 
-#: ../usermanual/avancee.rst:310
+#: ../usermanual/avancee.rst:375
 msgid "database version check will not be done."
 msgstr "ne provjerava se verzija baze podataka."
 
-#: ../usermanual/avancee.rst:316
+#: ../usermanual/avancee.rst:381
 msgid "Behavior configuration"
 msgstr "Postavke ponašanja"
 
-#: ../usermanual/avancee.rst:318
+#: ../usermanual/avancee.rst:383
 msgid ""
 "Some of Galette behaviors are set by declaring constants in the ``galette/"
 "config/behavior.inc.php`` file. A commented example of every one of them "
@@ -859,11 +1043,11 @@ msgstr ""
 "behavior.inc.php``. Primjeri svih konstanti s komentarima nalaze se u "
 "datoteci ``behavior.inc.php.dist`` u istoj mapi."
 
-#: ../usermanual/avancee.rst:320
+#: ../usermanual/avancee.rst:385
 msgid "For example:"
 msgstr "Primjer:"
 
-#: ../usermanual/avancee.rst:329
+#: ../usermanual/avancee.rst:394
 msgid ""
 "Only the settings Galette needs **before it can reach database** are still "
 "declared here. The others became regular settings, editable from "
@@ -873,24 +1057,24 @@ msgstr ""
 "bazi**. Ostale su sada obične postavke koje se uređuju na "
 "stranici :ref:`naprednih postavki <advanced_config>`."
 
-#: ../usermanual/avancee.rst:331
+#: ../usermanual/avancee.rst:396
 msgid "The following settings can be set:"
 msgstr "Mogu se zadati sljedeće postavke:"
 
-#: ../usermanual/avancee.rst:333
+#: ../usermanual/avancee.rst:398
 msgid "``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,"
 msgstr ""
 "``GALETTE_DEBUG``: uključuje otklanjanje pogrešaka, :ref:`pogledajte "
 "otklanjanje pogrešaka u Galetteu <debug>`,"
 
-#: ../usermanual/avancee.rst:334
+#: ../usermanual/avancee.rst:399
 msgid ""
 "``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,"
 msgstr ""
 "``GALETTE_MODE``: način rada instalacije, :ref:`pogledajte načine rada "
 "Galettea <galettemodes>`,"
 
-#: ../usermanual/avancee.rst:335
+#: ../usermanual/avancee.rst:400
 msgid ""
 "``GALETTE_LOG_LVL``: verbosity of the logs, as an `Analog <https://"
 "github.com/jbroadway/analog>`_ level. Defaults to ``WARNING``, or ``DEBUG`` "
@@ -900,14 +1084,14 @@ msgstr ""
 "<https://github.com/jbroadway/analog>`_. Zadano ``WARNING``, odnosno "
 "``DEBUG`` u načinu otklanjanja pogrešaka,"
 
-#: ../usermanual/avancee.rst:336
+#: ../usermanual/avancee.rst:401
 msgid ""
 "``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``,"
 msgstr ""
 "``GALETTE_SQL_DEBUG``: zapisuje svaki SQL upit u ``data/logs/"
 "galette_sql.log``,"
 
-#: ../usermanual/avancee.rst:337
+#: ../usermanual/avancee.rst:402
 msgid ""
 "``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. "
 "They only apply in debug mode."
@@ -915,11 +1099,11 @@ msgstr ""
 "``GALETTE_FEATURE_FLAGS``: niz razvojnih funkcija koje treba uključiti. "
 "Primjenjuje se samo u načinu otklanjanja pogrešaka."
 
-#: ../usermanual/avancee.rst:340
+#: ../usermanual/avancee.rst:405
 msgid "Settings that moved"
 msgstr "Premještene postavke"
 
-#: ../usermanual/avancee.rst:344
+#: ../usermanual/avancee.rst:409
 msgid ""
 "Three settings that used to be declared here are now stored in database, and "
 "edited from the :ref:`advanced configuration <advanced_config>` page:"
@@ -927,11 +1111,11 @@ msgstr ""
 "Tri postavke koje su se prije definirale ovdje sada se pohranjuju u bazu i "
 "uređuju na stranici :ref:`naprednih postavki <advanced_config>`:"
 
-#: ../usermanual/avancee.rst:346
+#: ../usermanual/avancee.rst:411
 msgid "``GALETTE_URI`` became ``pref_galette_url``,"
 msgstr "``GALETTE_URI`` zamijenjena je s ``pref_galette_url``,"
 
-#: ../usermanual/avancee.rst:347
+#: ../usermanual/avancee.rst:412
 msgid ""
 "``GALETTE_X_FORWARDED_FOR_INDEX`` became "
 "``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a "
@@ -941,11 +1125,11 @@ msgstr ""
 "``pref_x_forwarded_for_index``, :ref:`pogledajte bilježenje IP adresa iza "
 "proxyja <proxy_ip>`,"
 
-#: ../usermanual/avancee.rst:348
+#: ../usermanual/avancee.rst:413
 msgid "``GALETTE_TIMEOUT`` became ``pref_session_timeout``."
 msgstr "``GALETTE_TIMEOUT`` zamijenjena je s ``pref_session_timeout``."
 
-#: ../usermanual/avancee.rst:350
+#: ../usermanual/avancee.rst:415
 msgid ""
 "Declaring one of them still works, and **still takes precedence over the "
 "stored value**: nothing breaks on upgrade. Galette then writes a warning in "
@@ -959,7 +1143,7 @@ msgstr ""
 "odgovornu konstantu. Uklonite je iz ``behavior.inc.php`` kako biste "
 "postavkom upravljali putem stranice."
 
-#: ../usermanual/avancee.rst:354
+#: ../usermanual/avancee.rst:419
 msgid ""
 "``pref_galette_url`` is the one setting the :ref:`reminders cron script "
 "<reminders>` cannot do without: it runs with no incoming request, so it has "
