@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-13 19:57+0100\n"
+"POT-Creation-Date: 2026-11-15 22:36+0100\n"
 "PO-Revision-Date: 2026-11-13 20:00+0100\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French\n"
@@ -327,11 +327,24 @@ msgstr ""
 "**Sous-domaines** liste les lettres qui remplacent le jeton ``{s}`` de "
 "l'adresse, par exemple ``abc``. Tuiles classiques uniquement."
 
-#: ../usermanual/maps.rst:88
+#: ../usermanual/maps.rst:85
+msgid ""
+"Galette allows browsers to fetch the files of a vector style from the server "
+"of its address. A style that loads its tiles, fonts or icons from other "
+"servers shows an empty map: add those servers to the :ref:`external sites "
+"<external_stats>` of the advanced configuration."
+msgstr ""
+"Galette autorise les navigateurs à récupérer les fichiers d'un style "
+"vectoriel depuis le serveur de son adresse. Un style qui charge ses tuiles, "
+"polices ou icônes depuis d'autres serveurs affiche une carte vide : ajoutez "
+"ces serveurs aux :ref:`sites externes <external_stats>` de la configuration "
+"avancée."
+
+#: ../usermanual/maps.rst:90
 msgid "Maps center"
 msgstr "Centre des cartes"
 
-#: ../usermanual/maps.rst:90
+#: ../usermanual/maps.rst:92
 msgid ""
 "Maps open on the whole of France when they have nothing else to show: the "
 "public map before it frames members positions, or the map of a member who "
@@ -344,7 +357,7 @@ msgstr ""
 "le **Centre des cartes** pour qu'elles s'ouvrent plutôt sur la ville de "
 "votre association."
 
-#: ../usermanual/maps.rst:92
+#: ../usermanual/maps.rst:94
 msgid ""
 "The **Town** and **Country** fields are filled with those of your "
 "association. Change them if needed, and use **Search coordinates**: the "
@@ -359,11 +372,11 @@ msgstr ""
 "saisies directement. Les deux sont nécessaires, ou aucune ; laissez-les "
 "vides pour revenir à la France entière."
 
-#: ../usermanual/maps.rst:94
+#: ../usermanual/maps.rst:96
 msgid "Maps center, searched from the association town"
 msgstr "Centre des cartes, recherché depuis la ville de l'association"
 
-#: ../usermanual/maps.rst:99
+#: ../usermanual/maps.rst:101
 msgid ""
 "Towns are searched with the `Nominatim <https://"
 "nominatim.openstreetmap.org>`_ online service. Its answers are kept a week, "
@@ -373,11 +386,11 @@ msgstr ""
 "nominatim.openstreetmap.org>`_. Ses réponses sont conservées une semaine, "
 "pour qu'une même ville ne soit pas recherchée à nouveau."
 
-#: ../usermanual/maps.rst:104
+#: ../usermanual/maps.rst:106
 msgid "Members positions"
 msgstr "Positions des adhérents"
 
-#: ../usermanual/maps.rst:106
+#: ../usermanual/maps.rst:108
 msgid ""
 "Members set their own position from **My localization**, in the **My "
 "account** menu, or from the dashboard. The super administrator is not a "
@@ -387,7 +400,7 @@ msgstr ""
 "dans le menu **Mon compte**, ou depuis le tableau de bord. Le super "
 "administrateur n'est pas un adhérent, et n'a pas de position."
 
-#: ../usermanual/maps.rst:108
+#: ../usermanual/maps.rst:110
 msgid ""
 "The position of a member is displayed beside their card, both when "
 "displaying and when editing them; it opens the member map. When a member has "
@@ -399,11 +412,11 @@ msgstr ""
 "adhérent n'a pas encore de position, ceux qui ont le droit de le modifier se "
 "voient proposer de le **Géolocaliser**."
 
-#: ../usermanual/maps.rst:110
+#: ../usermanual/maps.rst:112
 msgid "Member position, beside the member card"
 msgstr "Position de l'adhérent, à côté de sa fiche"
 
-#: ../usermanual/maps.rst:115
+#: ../usermanual/maps.rst:117
 msgid ""
 "The member map also opens from the **Geolocalize** action of the members "
 "list and of the member card. It is displayed in a window, over the page: a "
@@ -414,15 +427,15 @@ msgstr ""
 "fenêtre, par-dessus la page : un formulaire d'adhérent en cours de saisie "
 "reste tel quel."
 
-#: ../usermanual/maps.rst:117
+#: ../usermanual/maps.rst:119
 msgid "Setting a member position"
 msgstr "Définir la position d'un adhérent"
 
-#: ../usermanual/maps.rst:122
+#: ../usermanual/maps.rst:124
 msgid "There are several ways to find where a member lives:"
 msgstr "Il y a plusieurs façons de trouver où habite un adhérent :"
 
-#: ../usermanual/maps.rst:124
+#: ../usermanual/maps.rst:126
 msgid ""
 "if a town has been set in the member information, the towns it matches are "
 "proposed, from the `Nominatim <https://nominatim.openstreetmap.org>`_ online "
@@ -432,21 +445,21 @@ msgstr ""
 "villes qui y correspondent sont proposées, depuis le service en ligne "
 "`Nominatim <https://nominatim.openstreetmap.org>`_,"
 
-#: ../usermanual/maps.rst:125
+#: ../usermanual/maps.rst:127
 msgid "the search field of the map looks for a place,"
 msgstr "le champ de recherche de la carte cherche un lieu,"
 
-#: ../usermanual/maps.rst:126
+#: ../usermanual/maps.rst:128
 msgid "the **Show me where I am** button uses the location the browser gives,"
 msgstr ""
 "le bouton **Me montrer où je suis** utilise la localisation que donne le "
 "navigateur,"
 
-#: ../usermanual/maps.rst:127
+#: ../usermanual/maps.rst:129
 msgid "and a click anywhere on the map."
 msgstr "et un clic n'importe où sur la carte."
 
-#: ../usermanual/maps.rst:129
+#: ../usermanual/maps.rst:131
 msgid ""
 "Then, use **I live here!**, or **Member lives here!**, to store the "
 "position. Clicking on a stored position allows to remove it."
@@ -455,7 +468,7 @@ msgstr ""
 "enregistrer la position. Un clic sur une position enregistrée permet de la "
 "supprimer."
 
-#: ../usermanual/maps.rst:131
+#: ../usermanual/maps.rst:133
 msgid ""
 "Members can always set their own position, and those of their children. "
 "Users with the *Edit members* permission set the position of the members "
@@ -468,11 +481,11 @@ msgstr ""
 "Ceux qui peuvent seulement afficher un adhérent voient sa position, s'il en "
 "a une, avec **Voir sur la carte**."
 
-#: ../usermanual/maps.rst:136
+#: ../usermanual/maps.rst:138
 msgid "Public map"
 msgstr "Carte publique"
 
-#: ../usermanual/maps.rst:138
+#: ../usermanual/maps.rst:140
 msgid ""
 "When maps are enabled, a **Maps** entry is added to the :ref:`public pages "
 "<man_public_pages>`, with a visibility of its own in the public pages "
@@ -489,15 +502,15 @@ msgstr ""
 "morales sont affichés avec un marqueur qui leur est propre ; un clic sur un "
 "marqueur affiche le nom de l'adhérent."
 
-#: ../usermanual/maps.rst:140
+#: ../usermanual/maps.rst:142
 msgid "Public map of the members"
 msgstr "Carte publique des adhérents"
 
-#: ../usermanual/maps.rst:148
+#: ../usermanual/maps.rst:150
 msgid "Coming from the Maps plugin"
 msgstr "Depuis le plugin Maps"
 
-#: ../usermanual/maps.rst:150
+#: ../usermanual/maps.rst:152
 msgid ""
 "Maps replace the Maps plugin: it cannot be enabled any more, and is "
 "displayed as *Part of Galette now, can be removed* in the plugins list. "
@@ -507,7 +520,7 @@ msgstr ""
 "apparaît comme *Fait désormais partie de Galette, peut être supprimé* dans "
 "la liste des plugins. Supprimez son dossier du répertoire ``plugins``."
 
-#: ../usermanual/maps.rst:152
+#: ../usermanual/maps.rst:154
 msgid ""
 "Positions stored with the plugin are taken over when Galette is updated, and "
 "maps are then enabled. The background map and the precision chosen with the "

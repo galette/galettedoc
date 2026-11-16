@@ -100,6 +100,61 @@ To fix that, set ``pref_x_forwarded_for_index`` from the :ref:`advanced configur
 
 If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
+.. _frame_ancestors:
+
+Display Galette in another site
+===============================
+
+.. versionadded:: 1.4.0
+
+By default, browsers refuse to display Galette inside a frame (an ``<iframe>``) of another website. This protects your users from *clickjacking*, where a hostile page hides Galette under its own buttons to make them click without knowing it.
+
+To embed Galette pages in the website of your association - the public members list, or the subscription form - set ``pref_csp_frame_ancestors`` from the :ref:`advanced configuration <advanced_config>` page. The value lists the sites allowed to display Galette, separated by spaces:
+
+* ``'self'``: Galette itself. This is the default, keep it in the list,
+* ``https://www.example.org``: a website, with its scheme. A port can be added: ``https://www.example.org:8443``,
+* ``https://*.example.org``: every sub-domain of a website,
+* ``'none'``: no website at all, not even Galette. It must be used alone.
+
+For instance, ``'self' https://www.my-association.org`` lets the website of your association embed Galette. The quotes around ``'self'`` and ``'none'`` are required.
+
+.. warning::
+
+   Only list websites you trust: a website allowed here can display Galette pages to your logged in users.
+
+If the ``GALETTE_CSP_FRAME_ANCESTORS`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
+
+.. _csp_enforce:
+
+Script protection
+=================
+
+.. versionadded:: 1.4.0
+
+Galette tells browsers which scripts its pages are allowed to run, and which sites they may load contents from or send data to: this is its *Content Security Policy*. A script injected in a page by an attacker is not part of that list; the browser refuses to run it, and it cannot send your members data elsewhere.
+
+The ``pref_csp_enforce`` setting, on the :ref:`advanced configuration <advanced_config>` page, sets how strict browsers are:
+
+* on, the default: scripts and sites that are not allowed are blocked,
+* off: they are not blocked, browsers only report them. Protection against framing by other websites, described above, still applies.
+
+Whatever the mode, each problem met by a browser is written to Galette logs, as a warning starting with ``CSP violation`` - or ``CSP violation (report only)`` when the setting is off.
+
+If a page stops working, for instance after an upgrade to 1.4.0, look for these warnings in the logs:
+
+* a site used by your ``tracking.js`` file must be :ref:`declared <external_stats>`,
+* a plugin may not be ready yet: update it, or tell its authors which page fails and the warning you got.
+
+.. warning::
+
+   Turning the setting off removes a protection for all your users. Only do it to keep Galette working while you fix the cause, and turn it back on as soon as possible.
+
+While the setting is off, the super administrator is reminded of it on the dashboard.
+
+If the ``GALETTE_CSP_ENFORCE`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
+
+.. _external_stats:
+
 External stats
 ==============
 
@@ -108,6 +163,14 @@ External stats
 Many statistics platforms rely on an extra  Javascript block to work. You can create a ``tracking.js`` file under ``webroot/themes/default`` directory, it will be automatically included.
 
 Galette uses Javascript to work. If the code you add in the ``tracking.js`` file is incorrect, this may break Galette!
+
+.. versionadded:: 1.4.0
+
+Galette restricts the sites its pages can load scripts from or send data to, so that a malicious script injected in a page can neither run nor send data elsewhere. The statistics platform your ``tracking.js`` file talks to must therefore be declared: set ``pref_csp_external_sources`` from the :ref:`advanced configuration <advanced_config>` page, with the address of the platform, such as ``https://stats.my-association.org``. Several addresses can be set, separated by spaces; ``https://*.example.org`` stands for every sub-domain of a website.
+
+Only list services you trust: the code they serve runs in Galette pages, with the rights of the logged in user.
+
+If the ``GALETTE_CSP_EXTERNAL_SOURCES`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
 .. _csv_exports:
 

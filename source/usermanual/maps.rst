@@ -82,6 +82,8 @@ The last entry of the list, **Your own values**, replaces the proposed providers
 * **Maximum zoom** is the deepest zoom level the provider serves. Going past it displays empty tiles,
 * **Subdomains** lists the letters the ``{s}`` token of the address is replaced with, for instance ``abc``. Raster tiles only.
 
+Galette allows browsers to fetch the files of a vector style from the server of its address. A style that loads its tiles, fonts or icons from other servers shows an empty map: add those servers to the :ref:`external sites <external_stats>` of the advanced configuration.
+
 .. _maps_center:
 
 Maps center
