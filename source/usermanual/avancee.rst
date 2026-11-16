@@ -151,6 +151,8 @@ If a page stops working, for instance after an upgrade to 1.4.0, look for these 
 
 While the setting is off, the super administrator is reminded of it on the dashboard.
 
+Administrators are reminded of it as well, even though only the super administrator can turn the setting back on.
+
 If the ``GALETTE_CSP_ENFORCE`` constant is declared in :ref:`behavior configuration <behavior>`, it takes precedence and the setting shows as *locked*.
 
 .. _external_stats:
