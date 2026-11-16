@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: Galette 1.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-11-16 07:12+0100\n"
-"PO-Revision-Date: 2026-11-16 11:20+0000\n"
-"Last-Translator: Jože Felicijan "
-"<felicijan@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-11-17 14:51+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-maps/sl/>\n"
 "Language: sl\n"
@@ -181,6 +181,8 @@ msgid ""
 "**VersaTiles, colours** and **VersaTiles, grey**: vector tiles as well, from "
 "the `VersaTiles <https://versatiles.org>`_ project,"
 msgstr ""
+"**VersaTiles, barve** in **VersaTiles, siva**: tudi vektorske ploščice iz "
+"projekta `VersaTiles <https://versatiles.org>`_,"
 
 #: ../usermanual/maps.rst:61
 msgid ""
@@ -188,6 +190,9 @@ msgid ""
 "institute. It only covers France and its overseas territories: outside, the "
 "map remains empty,"
 msgstr ""
+"**Načrt IGN, samo Francija**: vektorski zemljevid francoskega nacionalnega "
+"geografskega inštituta. Zajema samo Francijo in njena čezmorska ozemlja: "
+"zunaj zemljevida ostane prazen,"
 
 #: ../usermanual/maps.rst:62
 msgid ""
@@ -215,16 +220,20 @@ msgid ""
 "**CyclOSM, for cycling**: cycleways, bicycle parkings and repair shops stand "
 "out,"
 msgstr ""
+"**CyclOSM, za kolesarjenje**: izstopajo kolesarske poti, parkirišča za "
+"kolesa in servisne delavnice,"
 
 #: ../usermanual/maps.rst:66
 msgid ""
 "**OpenTopoMap, topographic**: contour lines and relief, for hiking or "
 "mountain clubs; it does not go down to the street level,"
 msgstr ""
+"**OpenTopoMap, topografski**: izohipse in relief, za pohodništvo ali "
+"planinska društva; ne prikazuje podrobnosti na ravni ulic,"
 
 #: ../usermanual/maps.rst:67
 msgid "**Esri, light grey**: a very light grey rendering."
-msgstr ""
+msgstr "**Esri, svetlo siva**: upodobitev v zelo svetlo sivi barvi."
 
 #: ../usermanual/maps.rst:69
 msgid ""
@@ -232,10 +241,15 @@ msgid ""
 "get the OpenStreetMap background instead. So do the maps next to members "
 "cards, which do not need more than a glance."
 msgstr ""
+"Vektorske ploščice zahtevajo brskalnik, ki jih zna izrisati (WebGL 2). Drugi "
+"brskalniki namesto tega prikažejo ozadje OpenStreetMap. Enako velja za "
+"zemljevide ob članskih izkaznicah, pri katerih zadostuje že bežen pogled."
 
 #: ../usermanual/maps.rst:71
 msgid "Maps never zoom further than their background map allows."
 msgstr ""
+"Zemljevidi se nikoli ne povečajo bolj, kot to dopušča njihov podlagovni "
+"zemljevid."
 
 #: ../usermanual/maps.rst:75
 msgid ""
@@ -303,10 +317,14 @@ msgid ""
 "servers shows an empty map: add those servers to the :ref:`external sites "
 "<external_stats>` of the advanced configuration."
 msgstr ""
+"Galette omogoča brskalnikom, da s strežnika pridobijo datoteke vektorskega "
+"sloga. Če slog svoje ploščice, pisave ali ikone nalaga z drugih strežnikov, "
+"bo zemljevid prikazan prazen; te strežnike dodajte med :ref:`zunanje strani "
+"<external_stats>` v naprednih nastavitvah."
 
 #: ../usermanual/maps.rst:90
 msgid "Maps center"
-msgstr ""
+msgstr "Središče zemljevidov"
 
 #: ../usermanual/maps.rst:92
 msgid ""
@@ -315,6 +333,11 @@ msgid ""
 "has no position yet. Set **Maps center** to have them open on your "
 "association town instead."
 msgstr ""
+"Kadar zemljevidi nimajo česa drugega za prikazati, se odprejo s pogledom na "
+"celotno Francijo – to velja za splošni zemljevid, preden ta prikaže lokacije "
+"članov, ali pa za zemljevid člana, ki še nima določene lokacije. Nastavite "
+"možnost **Središče zemljevidov** (Maps center), da se bodo zemljevidi "
+"namesto tega odprli s pogledom na kraj, kjer deluje vaše društvo."
 
 #: ../usermanual/maps.rst:94
 msgid ""
@@ -324,10 +347,15 @@ msgid ""
 "Coordinates can also be typed in directly. Both are required, or none; leave "
 "them empty to show the whole of France again."
 msgstr ""
+"Polji **Mesto** in **Država** so izpolnjeni s podatki vašega združenja. Po "
+"potrebi jih spremenite in uporabite **Iskanje koordinat**: najdena mesta so "
+"navedena, izberite eno, da izpolnite **Širino** in **Dolžino**. Koordinate "
+"lahko vnesete tudi neposredno. Oba sta obvezna ali nič; pustite jih prazne, "
+"da ponovno pokažete celotno Francijo."
 
 #: ../usermanual/maps.rst:96
 msgid "Maps center, searched from the association town"
-msgstr ""
+msgstr "Središče na zemljevidu, iskano iz mesta, kjer je sedež združenja"
 
 #: ../usermanual/maps.rst:101
 msgid ""
@@ -335,6 +363,9 @@ msgid ""
 "nominatim.openstreetmap.org>`_ online service. Its answers are kept a week, "
 "so that a same town is not searched again."
 msgstr ""
+"Mesta se iščejo s spletno storitvijo `Nominatim <https://"
+"nominatim.openstreetmap.org>`_. Njeni odgovori se hranijo en teden, da se "
+"isto mesto ne išče znova."
 
 #: ../usermanual/maps.rst:106
 msgid "Members positions"
