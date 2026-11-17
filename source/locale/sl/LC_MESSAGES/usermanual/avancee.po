@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-11-16 07:56+0100\n"
-"PO-Revision-Date: 2026-11-04 16:18+0000\n"
-"Last-Translator: Jože Felicijan "
-"<felicijan@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-11-18 10:06+0000\n"
+"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-advanced/sl/>\n"
 "Language: sl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2026.11.1.dev0\n"
+"X-Generator: Weblate 2026.12.dev0\n"
 
 #: ../usermanual/avancee.rst:5
 msgid "Experienced users"
@@ -354,7 +354,7 @@ msgstr ""
 
 #: ../usermanual/avancee.rst:106
 msgid "Display Galette in another site"
-msgstr ""
+msgstr "Prikaži Galette na drugem mestu"
 
 #: ../usermanual/avancee.rst:110
 msgid ""
@@ -363,6 +363,11 @@ msgid ""
 "*clickjacking*, where a hostile page hides Galette under its own buttons to "
 "make them click without knowing it."
 msgstr ""
+"Brskalniki privzeto zavračajo prikazovanje sistema Galette znotraj okvirja "
+"(oznaka ``<iframe>``) na drugem spletnem mestu. To vaše uporabnike ščiti "
+"pred t. i. *clickjackingom* (ugrabitvijo klikov), pri katerem zlonamerna "
+"stran skrije sistem Galette pod lastne gumbe, s čimer uporabnike navede na "
+"klik, ne da bi se tega zavedali."
 
 #: ../usermanual/avancee.rst:112
 msgid ""
@@ -371,24 +376,33 @@ msgid ""
 "from the :ref:`advanced configuration <advanced_config>` page. The value "
 "lists the sites allowed to display Galette, separated by spaces:"
 msgstr ""
+"Če želite strani sistema Galette vključiti na spletno mesto svojega društva "
+"– na primer javni seznam članov ali obrazec za vpis – nastavite parameter "
+"``pref_csp_frame_ancestors`` na strani z :ref:`naprednimi nastavitvami "
+"<advanced_config>`. Vrednost določa spletna mesta, ki smejo prikazovati "
+"vsebino sistema Galette; posamezna mesta ločite s presledki:"
 
 #: ../usermanual/avancee.rst:114
 msgid "``'self'``: Galette itself. This is the default, keep it in the list,"
-msgstr ""
+msgstr "``'self'``: Galette sama. To je privzeta nastavitev, naj bo na seznamu,"
 
 #: ../usermanual/avancee.rst:115
 msgid ""
 "``https://www.example.org``: a website, with its scheme. A port can be "
 "added: ``https://www.example.org:8443``,"
 msgstr ""
+"``https://www.example.org``: spletno mesto s svojo shemo. Dodate lahko "
+"vrata: ``https://www.example.org:8443``,"
 
 #: ../usermanual/avancee.rst:116
 msgid "``https://*.example.org``: every sub-domain of a website,"
-msgstr ""
+msgstr "``https://*.example.org``: vsaka poddomena spletnega mesta,"
 
 #: ../usermanual/avancee.rst:117
 msgid "``'none'``: no website at all, not even Galette. It must be used alone."
 msgstr ""
+"``'none'``: sploh nobena spletna stran, niti Galette. Uporabiti ga je treba "
+"samostojno."
 
 #: ../usermanual/avancee.rst:119
 msgid ""
@@ -396,31 +410,32 @@ msgid ""
 "your association embed Galette. The quotes around ``'self'`` and ``'none'`` "
 "are required."
 msgstr ""
+"Na primer, ``'self' https://www.my-association.org`` omogoča, da spletno "
+"mesto vašega društva vključi sistem Galette. Narekovaji okoli ``'self'`` in "
+"``'none'`` so obvezni."
 
 #: ../usermanual/avancee.rst:123
 msgid ""
 "Only list websites you trust: a website allowed here can display Galette "
 "pages to your logged in users."
 msgstr ""
+"Navedite le spletna mesta, ki jim zaupate: spletno mesto, ki je tukaj "
+"dovoljeno, lahko vašim prijavljenim uporabnikom prikaže strani sistema "
+"Galette."
 
 #: ../usermanual/avancee.rst:125
-#, fuzzy
-#| msgid ""
-#| "If the ``GALETTE_X_FORWARDED_FOR_INDEX`` constant is still declared "
-#| "in :ref:`behavior configuration <behavior>`, it takes precedence and the "
-#| "setting shows as *locked*."
 msgid ""
 "If the ``GALETTE_CSP_FRAME_ANCESTORS`` constant is declared "
 "in :ref:`behavior configuration <behavior>`, it takes precedence and the "
 "setting shows as *locked*."
 msgstr ""
-"Če je konstanta ``GALETTE_X_FORWARDED_FOR_INDEX`` še vedno deklarirana "
-"v :ref:`konfiguraciji vedenja <behavior>`, ima prednost in nastavitev je "
+"Če je konstanta ``GALETTE_CSP_FRAME_ANCESTORS`` deklarirana v "
+":ref:`konfiguraciji vedenja <behavior>`, ima prednost, nastavitev pa je "
 "prikazana kot *zaklenjena*."
 
 #: ../usermanual/avancee.rst:130
 msgid "Script protection"
-msgstr ""
+msgstr "Zaščita skript"
 
 #: ../usermanual/avancee.rst:134
 msgid ""
@@ -430,22 +445,34 @@ msgid ""
 "that list; the browser refuses to run it, and it cannot send your members "
 "data elsewhere."
 msgstr ""
+"Galette brskalnikom sporoča, katere skripte lahko njene strani izvajajo ter "
+"s katerih spletnih mest lahko nalagajo vsebino ali na katera lahko pošiljajo "
+"podatke – temu pravimo *politika varnosti vsebine*. Skripta, ki jo na stran "
+"vrine napadalec, ni na tem seznamu; brskalnik je zato ne bo izvedel, prav "
+"tako pa ta skripta ne bo mogla poslati podatkov o vaših članih kam drugam."
 
 #: ../usermanual/avancee.rst:136
 msgid ""
 "The ``pref_csp_enforce`` setting, on the :ref:`advanced configuration "
 "<advanced_config>` page, sets how strict browsers are:"
 msgstr ""
+"Nastavitev ``pref_csp_enforce`` na strani :ref:`napredne konfiguracije "
+"<advanced_config>` določa, kako strogi so brskalniki:"
 
 #: ../usermanual/avancee.rst:138
 msgid "on, the default: scripts and sites that are not allowed are blocked,"
 msgstr ""
+"vklopljeno, privzeto: skripte in spletna mesta, ki niso dovoljena, so "
+"blokirana,"
 
 #: ../usermanual/avancee.rst:139
 msgid ""
 "off: they are not blocked, browsers only report them. Protection against "
 "framing by other websites, described above, still applies."
 msgstr ""
+"off: niso blokirani, brskalniki jih le prijavijo. Zaščita pred vključevanjem "
+"v okvirje (framing) na drugih spletnih mestih, opisana zgoraj, še vedno "
+"velja."
 
 #: ../usermanual/avancee.rst:141
 msgid ""
@@ -453,18 +480,25 @@ msgid ""
 "as a warning starting with ``CSP violation`` - or ``CSP violation (report "
 "only)`` when the setting is off."
 msgstr ""
+"Ne glede na način se vsaka težava, na katero naleti brskalnik, zapiše v "
+"dnevnike sistema Galette kot opozorilo, ki se začne z ``CSP violation`` - "
+"ali ``CSP violation (report only)`` kadar je nastavitev izklopljena."
 
 #: ../usermanual/avancee.rst:143
 msgid ""
 "If a page stops working, for instance after an upgrade to 1.4.0, look for "
 "these warnings in the logs:"
 msgstr ""
+"Če stran preneha delovati, na primer po nadgradnji na različico 1.4.0, v "
+"dnevnikih poiščite ta opozorila:"
 
 #: ../usermanual/avancee.rst:145
 msgid ""
 "a site used by your ``tracking.js`` file must be :ref:`declared "
 "<external_stats>`,"
 msgstr ""
+"spletno mesto, ki ga uporablja vaša datoteka ``tracking.js``, mora biti "
+":ref:`navedeno <external_stats>`,"
 
 #: ../usermanual/avancee.rst:146
 msgid ""
