@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Galette 1.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
 "POT-Creation-Date: 2026-11-16 07:12+0100\n"
-"PO-Revision-Date: 2026-11-17 14:51+0000\n"
+"PO-Revision-Date: 2026-11-20 14:51+0000\n"
 "Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
 "\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
@@ -87,6 +87,12 @@ msgid ""
 "marker where visitors see it, and the square of the grid the position is "
 "snapped to."
 msgstr ""
+"Poleg nastavitev je prikazan **predogled** javnega zemljevida. Ta sledi "
+"vnosom v obrazec, še preden se karkoli shrani: prikazuje osnovni zemljevid, "
+"središče zemljevida ter to, kako daleč od shranjene lokacije so prikazani "
+"člani. Prikazani so primeri lokacij: siva pika na mestu shranjene lokacije, "
+"oznaka na mestu, kjer jo vidijo obiskovalci, ter kvadrat mreže, na katerega "
+"je lokacija pripeta."
 
 #: ../usermanual/maps.rst:34
 msgid "Positions precision"
@@ -104,7 +110,7 @@ msgstr ""
 
 #: ../usermanual/maps.rst:38
 msgid "The precision is set with **Members positions precision**:"
-msgstr ""
+msgstr "Natančnost se določi z nastavitvijo **Natančnost položajev elementov**:"
 
 #: ../usermanual/maps.rst:40
 msgid ""
@@ -124,7 +130,7 @@ msgstr "**Približno 50 m**: ulica,"
 
 #: ../usermanual/maps.rst:43
 msgid "**Exact position**: no snapping."
-msgstr ""
+msgstr "**Natančen položaj**: brez pripenjanja."
 
 #: ../usermanual/maps.rst:45
 msgid ""
@@ -141,6 +147,11 @@ msgid ""
 "member sees their own position, and those of their children, as they are "
 "stored."
 msgstr ""
+"Na javnem zemljevidu se uporablja funkcija »pripenjanja« (snapping); to "
+"velja za obiskovalce in za tiste člane, ki nimajo dovoljenja za prikaz "
+"zadevnih članov. Tisti, ki imajo dovoljenje za prikaz članov (prek pravice "
+"*Prikaz članov*), vidijo njihov točen položaj, vsak član pa vidi svoj "
+"položaj ter položaj svojih otrok, natanko tako, kot so shranjeni v sistemu."
 
 #: ../usermanual/maps.rst:49
 msgid ""
@@ -160,6 +171,8 @@ msgid ""
 "The background map comes from a provider, chosen with **Background map "
 "provider**:"
 msgstr ""
+"Podlaga zemljevida prihaja od ponudnika, izbranega z možnostjo **Ponudnik "
+"podlage zemljevida**:"
 
 #: ../usermanual/maps.rst:58
 msgid ""
@@ -369,7 +382,7 @@ msgstr ""
 
 #: ../usermanual/maps.rst:106
 msgid "Members positions"
-msgstr ""
+msgstr "Položaji članov"
 
 #: ../usermanual/maps.rst:108
 msgid ""
@@ -377,6 +390,9 @@ msgid ""
 "account** menu, or from the dashboard. The super administrator is not a "
 "member, and has no position."
 msgstr ""
+"Člani določijo svoj položaj v razdelku **Moja lokacija** v meniju **Moj "
+"račun** ali na nadzorni plošči. Glavni administrator ni član in nima "
+"določenega položaja."
 
 #: ../usermanual/maps.rst:110
 msgid ""
@@ -385,10 +401,14 @@ msgid ""
 "no position yet, users allowed to edit them are offered to **Geolocalize** "
 "them."
 msgstr ""
+"Lokacija člana je prikazana ob njegovi kartici, tako pri ogledu kot pri "
+"urejanju; s klikom nanjo se odpre zemljevid članov. Če član še nima določene "
+"lokacije, se uporabnikom, ki imajo pravico do urejanja, ponudi možnost "
+"**geolokalizacije**."
 
 #: ../usermanual/maps.rst:112
 msgid "Member position, beside the member card"
-msgstr ""
+msgstr "Položaj člana, poleg članske izkaznice"
 
 #: ../usermanual/maps.rst:117
 msgid ""
@@ -396,14 +416,17 @@ msgid ""
 "list and of the member card. It is displayed in a window, over the page: a "
 "member form being filled is kept as it is."
 msgstr ""
+"Zemljevid članov je mogoče odpreti tudi prek dejanja **Geolokaliziraj** na "
+"seznamu članov ali na kartici člana. Prikaže se v oknu, ki prekriva stran, "
+"pri čemer obrazec člana, ki ga pravkar izpolnjujete, ostane nespremenjen."
 
 #: ../usermanual/maps.rst:119
 msgid "Setting a member position"
-msgstr ""
+msgstr "Določanje položaja člana"
 
 #: ../usermanual/maps.rst:124
 msgid "There are several ways to find where a member lives:"
-msgstr ""
+msgstr "Obstaja več načinov, kako ugotoviti, kje član živi:"
 
 #: ../usermanual/maps.rst:126
 msgid ""
@@ -411,24 +434,30 @@ msgid ""
 "proposed, from the `Nominatim <https://nominatim.openstreetmap.org>`_ online "
 "service,"
 msgstr ""
+"Če je v podatkih o članu določeno mesto, se na podlagi spletne storitve "
+"`Nominatim <https://nominatim.openstreetmap.org>`_ predlagajo mesta, ki se "
+"ujemajo s tem vnosom,"
 
 #: ../usermanual/maps.rst:127
 msgid "the search field of the map looks for a place,"
-msgstr ""
+msgstr "iskalno polje na zemljevidu išče kraj,"
 
 #: ../usermanual/maps.rst:128
 msgid "the **Show me where I am** button uses the location the browser gives,"
 msgstr ""
+"Gumb **Pokaži mi, kje sem** uporablja lokacijo, ki jo posreduje brskalnik,"
 
 #: ../usermanual/maps.rst:129
 msgid "and a click anywhere on the map."
-msgstr ""
+msgstr "in klik kjer koli na zemljevidu."
 
 #: ../usermanual/maps.rst:131
 msgid ""
 "Then, use **I live here!**, or **Member lives here!**, to store the "
 "position. Clicking on a stored position allows to remove it."
 msgstr ""
+"Nato uporabite **Tukaj živim!** ali **Član živi tukaj!**, da shranite "
+"lokacijo. S klikom na shranjeno lokacijo jo lahko odstranite."
 
 #: ../usermanual/maps.rst:133
 msgid ""
@@ -437,10 +466,14 @@ msgid ""
 "they can edit. Those who can only display a member see their position, if "
 "there is one, with **Show on map**."
 msgstr ""
+"Člani lahko vedno določijo svojo lokacijo ter lokacijo svojih otrok. "
+"Uporabniki s pravico *Urejanje članov* določajo lokacijo članov, ki jih "
+"lahko urejajo. Tisti, ki lahko člana le ogledajo, vidijo njegovo lokacijo – "
+"če je ta določena – s pomočjo možnosti **Prikaži na zemljevidu**."
 
 #: ../usermanual/maps.rst:138
 msgid "Public map"
-msgstr ""
+msgstr "Javni zemljevid"
 
 #: ../usermanual/maps.rst:140
 msgid ""
@@ -451,14 +484,20 @@ msgid ""
 "a company are displayed with a marker of their own; a click on a marker "
 "displays the member name."
 msgstr ""
+"Ko so zemljevidi omogočeni, se v razdelku :ref:`javne strani "
+"<man_public_pages>` doda vnos **Zemljevidi**, ki ima v nastavitvah javnih "
+"strani lastno nastavitev vidnosti. Prikazuje aktivne člane, ki so izbrali, "
+"da želijo biti vidni na javnih straneh, ter tiste člane, ki jih prijavljeni "
+"uporabnik sme videti. Člani podjetja so prikazani z lastno oznako; s klikom "
+"na oznako se prikaže ime člana."
 
 #: ../usermanual/maps.rst:142
 msgid "Public map of the members"
-msgstr ""
+msgstr "Javni zemljevid članov"
 
 #: ../usermanual/maps.rst:150
 msgid "Coming from the Maps plugin"
-msgstr ""
+msgstr "Prihaja iz vtičnika Maps"
 
 #: ../usermanual/maps.rst:152
 msgid ""
@@ -466,6 +505,10 @@ msgid ""
 "displayed as *Part of Galette now, can be removed* in the plugins list. "
 "Remove its directory from the ``plugins`` directory."
 msgstr ""
+"Funkcionalnost »Zemljevidi« (Maps) nadomešča vtičnik Maps: slednjega ni več "
+"mogoče omogočiti, na seznamu vtičnikov pa je označen z opombo *Zdaj del "
+"sistema Galette; lahko ga odstranite*. Iz mape ``plugins`` odstranite mapo "
+"tega vtičnika."
 
 #: ../usermanual/maps.rst:154
 msgid ""
