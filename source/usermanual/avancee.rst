@@ -81,6 +81,30 @@ Limits are in kilobytes; and displayed in the unit that fits, so the ``2048`` ab
 Attachments deserve a thought of their own before you raise them: a heavy file is sent to **every** recipient of the mailing, it weighs on your own mail server as much as on theirs, and it makes the message more likely to be taken for spam. A link to the file is often a better idea than the file itself.
 
 
+.. _upload_extensions:
+
+Change allowed file extensions
+==============================
+
+.. versionadded:: 1.4.0
+
+Documents, files attached to an :ref:`e-mailing <emailing>` and files stored in a :ref:`dynamic field <dynamic_fields>` are only accepted when their extension is in the list set by ``pref_upload_extensions``, reachable from the :ref:`advanced configuration <advanced_config>` page.
+
+Extensions are separated by spaces, without their dot. The default list holds office documents, pictures, text and zip archives:
+
+.. code-block:: text
+
+   pdf odt ods odp odg doc docx xls xlsx ppt pptx rtf txt csv jpg jpeg png gif webp zip
+
+Add the extensions your association needs, or remove those it does not want to receive. An empty list lets any extension in.
+
+Member pictures, logos and CSV imports are not concerned: they keep the fixed list of formats they can work with.
+
+.. warning::
+
+   Files a web server could run, such as ``.php`` ones, are always refused, whatever the list says. Adding such an extension to the list is refused as well.
+
+
 .. _proxy_ip:
 
 Log IP addresses behind a proxy
