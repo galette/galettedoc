@@ -369,8 +369,6 @@ Two-factor authentication
 
 .. versionadded:: 1.3.0
 
-   Marked **experimental**: it is complete and tested, but it is new, and the interface may still change. It is disabled by default; nothing happens until you choose otherwise.
-
 A password is a single factor: whoever knows it is in. Two-factor authentication asks, right after the password, for a six digits code that changes every thirty seconds and comes from an application on the user own phone or computer. A stolen password is then not enough anymore.
 
 Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server.
