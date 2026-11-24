@@ -29,6 +29,7 @@ Galette now proposes a command line interface to manage some tasks. This is acce
       help                           Display help for a command
       list                           List commands
      galette
+      galette:cache:clear            Clear Galette cache, or some of its parts only
       galette:check-routes           Check Galette routes naming conventions
       galette:checks                 Check Galette requirements
       galette:compile-locales        Compile translation files (PO) into MO files, for the core and plugins
@@ -274,6 +275,58 @@ Nothing is sent until that question is answered. Pass ``--force`` to skip it, wh
     $ php bin/console galette:mailing:process-queue --force
 
 For more complete documentation, see :ref:`draining the mail queue <mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it drains alongside.
+
+.. _cli_cache_clear:
+
+Cache
+=====
+
+.. versionadded:: 1.4.0
+
+The cache can be cleared from the :ref:`advanced configuration <advanced_config_cache>` page. This command does the same from the machine hosting Galette, and can also clear one cache at a time.
+
+Files are removed as the user running the command. Run it as the user of the web server, ``apache`` or ``www-data`` depending on your system, or the web server may then be unable to remove or rewrite them:
+
+::
+
+    $ sudo -u apache php bin/console galette:cache:clear
+
+     [OK] Cache has been cleared.
+
+     ! [NOTE] Some caches are only cleared when named, see --list: nominatim,
+     !        telemetry, pdf_contribs, debugbar, old_versions.
+
+Without argument, the command clears what the advanced configuration page clears. ``--list`` shows every cache, what it holds, and whether it is cleared by default:
+
+::
+
+    $ sudo -u apache php bin/console galette:cache:clear --list
+     -------------- -------------------- ------- ----------- ---------------------
+      Cache          Cleared by default   Files   Size        Last change
+     -------------- -------------------- ------- ----------- ---------------------
+      templates      yes                  412     6.12 Mo     2026-11-24 18:02:11
+      htmlpurifier   yes                  3       1.08 Mo     2026-11-20 09:14:52
+      nominatim      no                   57      214.2 Ko    2026-11-23 21:40:05
+      releases       yes                  1       2.11 Ko     2026-11-24 08:00:13
+      news           yes                  1       18.4 Ko     2026-11-24 08:00:14
+      telemetry      no                   1       10 octets   2026-11-01 10:12:48
+      darkcss        yes                  1       96.3 Ko     2026-11-22 16:31:27
+      printlogo      yes                  0       0 octets
+      pdf_contribs   no                   0       0 octets
+      debugbar       no                   0       0 octets
+      other          yes                  0       0 octets
+      old_versions   no                   1284    42.1 Mo     2026-09-30 11:05:42
+     -------------- -------------------- ------- ----------- ---------------------
+
+Name one or several caches to clear only them, including those that are not cleared by default:
+
+::
+
+    $ sudo -u apache php bin/console galette:cache:clear nominatim old_versions
+
+     [OK] Cache cleared: nominatim, old_versions.
+
+OPcache cannot be reset from here: the command line has an OPcache of its own, the one of the web server is only reset from the advanced configuration page.
 
 Plugins commands
 ================

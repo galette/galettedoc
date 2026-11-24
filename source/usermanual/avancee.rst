@@ -371,6 +371,36 @@ A second table, below the settings, lists the constants ``behavior.inc.php`` und
    :align: center
    :alt: Constants behavior.inc.php understands
 
+.. _advanced_config_cache:
+
+Cache
+-----
+
+.. versionadded:: 1.4.0
+
+Galette keeps in its cache files it can build again whenever it needs them: compiled pages, the news feed, the list of available releases, and a few others. Clearing it is the first thing to try when a change does not show, after an update for example.
+
+The **Cache** tab of the advanced configuration page sums the cache up in cards, each with its own button:
+
+* **Galette cache**: what the running version keeps. **Clear cache** removes it. No data is lost, the next pages are only slower to display,
+* **Previous versions**: caches left behind by updates, no longer used. **Delete previous versions** removes them,
+* **OPcache used**: the memory PHP uses to keep its scripts compiled. **Reset OPcache** empties it.
+
+.. image:: ../_styles/static/images/usermanual/advanced_config_cache.png
+   :scale: 50%
+   :align: center
+   :alt: The cache tab of the advanced configuration
+
+Files are removed by the web server itself, so none of them is left behind with the wrong owner, as happens when they are removed by hand from another account.
+
+The **Previous versions** card only shows when the cache sits in its default directory, ``galette/data/cache``. The **OPcache used** card only shows when OPcache is enabled, and when its functions are not restricted to other scripts by ``opcache.restrict_api``.
+
+.. warning::
+
+   OPcache memory is shared by every application of the same PHP pool: resetting it applies to all of them, not only to Galette.
+
+Some caches are not cleared along with the others, since clearing them is not free: the towns located for the :ref:`maps <maps>`, the date telemetry data were last sent, the files handed to the post-contribution script, and the requests recorded by the debug bar. They can only be cleared one by one, with the :ref:`galette:cache:clear command <cli_cache_clear>`, which also lists what each cache holds.
+
 .. _galettemodes:
 
 Galette modes
