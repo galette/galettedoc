@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.3\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-08 08:06+0100\n"
+"POT-Creation-Date: 2026-11-25 12:37+0100\n"
 "PO-Revision-Date: 2026-10-01 20:02+0000\n"
 "Last-Translator: Johan Cwiklinski <trasher@x-tnd.be>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -1267,16 +1267,6 @@ msgstr "Authentification à deux facteurs"
 
 #: ../usermanual/preferences.rst:372
 msgid ""
-"Marked **experimental**: it is complete and tested, but it is new, and the "
-"interface may still change. It is disabled by default; nothing happens until "
-"you choose otherwise."
-msgstr ""
-"Marqué **expérimental** : c'est complet et testé, mais c'est une nouveauté "
-"et l'interface peut encore être modifiée. Elle est désactivée par défaut ; "
-"rien ne se passe jusqu’à ce que vous choisissiez de l'activer."
-
-#: ../usermanual/preferences.rst:374
-msgid ""
 "A password is a single factor: whoever knows it is in. Two-factor "
 "authentication asks, right after the password, for a six digits code that "
 "changes every thirty seconds and comes from an application on the user own "
@@ -1288,7 +1278,7 @@ msgstr ""
 "application sur le téléphone ou l’ordinateur de l’utilisateur. Un mot de "
 "passe volé ne suffit plus."
 
-#: ../usermanual/preferences.rst:376
+#: ../usermanual/preferences.rst:374
 msgid ""
 "Galette implements the TOTP standard (:rfc:`6238`), the one every "
 "authenticator application speaks; no third party service is involved, and "
@@ -1298,24 +1288,24 @@ msgstr ""
 "applications d’authentification utilisent ; aucun service tiers n’est "
 "impliqué et rien ne quitte votre serveur."
 
-#: ../usermanual/preferences.rst:378
+#: ../usermanual/preferences.rst:376
 msgid "Two policies are available:"
 msgstr "Deux politiques sont disponibles :"
 
-#: ../usermanual/preferences.rst:380
+#: ../usermanual/preferences.rst:378
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 "**désactivée** (par défaut) : rien ne change, personne n’est invité à entrer "
 "un code,"
 
-#: ../usermanual/preferences.rst:381
+#: ../usermanual/preferences.rst:379
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 "**optionnelle** : tout le monde peut l’activer depuis son propre compte, "
 "personne n'est obligé."
 
-#: ../usermanual/preferences.rst:383
+#: ../usermanual/preferences.rst:381
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -1332,7 +1322,7 @@ msgstr ""
 "dans la base de données. C'est prévu pour une version ultérieure, une fois "
 "que la politique facultative a été utilisée pour de vrai."
 
-#: ../usermanual/preferences.rst:385
+#: ../usermanual/preferences.rst:383
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1348,7 +1338,7 @@ msgstr ""
 "bouton **Non**. Le refus est mémorisé dans un cookie du navigateur, de sorte "
 "que l’invitation revient sur un nouveau navigateur, ou après un an."
 
-#: ../usermanual/preferences.rst:389
+#: ../usermanual/preferences.rst:387
 msgid ""
 "Switching the policy back to **disabled** does not delete anything. Codes "
 "are no longer asked for, and the second factors already enabled start being "
@@ -1362,7 +1352,7 @@ msgstr ""
 "est de désactiver, les pages permettant un second facteur ne répondent pas : "
 "un facteur inscrit ne serait jamais demandé."
 
-#: ../usermanual/preferences.rst:391
+#: ../usermanual/preferences.rst:389
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
@@ -1372,7 +1362,7 @@ msgstr ""
 "Comme il ne s’agit pas d’un membre, il n’a aucun code de récupération ; "
 "voir :ref:`que faire si vous le perdez <faq_2fa>`."
 
-#: ../usermanual/preferences.rst:393
+#: ../usermanual/preferences.rst:391
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1385,11 +1375,11 @@ msgstr ""
 "peuvent :ref:`réinitialiser le deuxième facteur d’un adhérent "
 "<member_2fa_reset>` qui l’a perdu."
 
-#: ../usermanual/preferences.rst:398
+#: ../usermanual/preferences.rst:396
 msgid "Authentication attempts"
 msgstr "Tentatives d'authentification"
 
-#: ../usermanual/preferences.rst:402
+#: ../usermanual/preferences.rst:400
 msgid ""
 "To protect accounts against people trying passwords one after the other, "
 "Galette counts the failed logins. After too many failures, further attempts "
@@ -1402,31 +1392,31 @@ msgstr ""
 "moment, même avec le bon mot de passe. Il en va de même pour les demandes de "
 "récupération de mot de passe et pour les auto-inscriptions."
 
-#: ../usermanual/preferences.rst:404
+#: ../usermanual/preferences.rst:402
 msgid "By default:"
 msgstr "Par défaut :"
 
-#: ../usermanual/preferences.rst:406
+#: ../usermanual/preferences.rst:404
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
 msgstr ""
 "5 échecs de connexion sur un compte, depuis une adresse, en 15 minutes,"
 
-#: ../usermanual/preferences.rst:407
+#: ../usermanual/preferences.rst:405
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
 "30 échecs de connexion depuis une adresse, sur n'importe quel compte, en 15 "
 "minutes,"
 
-#: ../usermanual/preferences.rst:408
+#: ../usermanual/preferences.rst:406
 msgid "100 failed logins on one account, from anywhere, within a day,"
 msgstr ""
 "100 échecs de connexion sur un compte, depuis n'importe où, en une journée,"
 
-#: ../usermanual/preferences.rst:409
+#: ../usermanual/preferences.rst:407
 msgid "3 password recovery requests within an hour,"
 msgstr "3 demandes de récupération de mot de passe en une heure,"
 
-#: ../usermanual/preferences.rst:411
+#: ../usermanual/preferences.rst:409
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
@@ -1435,7 +1425,7 @@ msgstr ""
 "et ces durées se modifient depuis la :ref:`configuration avancée "
 "<advanced_config>`."
 
-#: ../usermanual/preferences.rst:413
+#: ../usermanual/preferences.rst:411
 msgid ""
 "**Configuration**, then **Authentication attempts** lists what is refused "
 "right now: what is counted, the account, the address, the number of failures "
@@ -1445,11 +1435,11 @@ msgstr ""
 "refusé en ce moment : ce qui est compté, le compte, l'adresse, le nombre "
 "d'échecs et jusqu'à quand les tentatives sont refusées."
 
-#: ../usermanual/preferences.rst:415
+#: ../usermanual/preferences.rst:413
 msgid "Authentication attempts currently refused"
 msgstr "Tentatives d'authentification actuellement refusées"
 
-#: ../usermanual/preferences.rst:420
+#: ../usermanual/preferences.rst:418
 msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
@@ -1458,11 +1448,11 @@ msgstr ""
 "**Lever** lui permet de réessayer tout de suite, et **Les lever toutes** "
 "vide toute la liste."
 
-#: ../usermanual/preferences.rst:423
+#: ../usermanual/preferences.rst:421
 msgid "Super administrator credentials"
 msgstr "Identifiants super administrateur"
 
-#: ../usermanual/preferences.rst:427
+#: ../usermanual/preferences.rst:425
 msgid ""
 "The super administrator login and password are no longer in the preferences. "
 "Once logged in as super administrator, go to **My account**, then **My "
@@ -1473,13 +1463,23 @@ msgstr ""
 "compte**, puis **Mes informations**. Galette demande le mot de passe actuel "
 "avant d'en enregistrer un nouveau."
 
-#: ../usermanual/preferences.rst:429
+#: ../usermanual/preferences.rst:427
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
 msgstr ""
 "Si ce mot de passe est perdu, il peut être modifié :ref:`depuis la ligne de "
 "commande <cli_superadmin_password>`."
+
+#~ msgid ""
+#~ "Marked **experimental**: it is complete and tested, but it is new, and "
+#~ "the interface may still change. It is disabled by default; nothing "
+#~ "happens until you choose otherwise."
+#~ msgstr ""
+#~ "Marqué **expérimental** : c'est complet et testé, mais c'est une "
+#~ "nouveauté et l'interface peut encore être modifiée. Elle est désactivée "
+#~ "par défaut ; rien ne se passe jusqu’à ce que vous choisissiez de "
+#~ "l'activer."
 
 #~ msgid "**Show public pages for**: defines who can see public pages:"
 #~ msgstr ""

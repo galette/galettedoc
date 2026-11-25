@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-08 08:06+0100\n"
+"POT-Creation-Date: 2026-11-25 12:37+0100\n"
 "PO-Revision-Date: 2026-11-10 07:28+0000\n"
-"Last-Translator: Jože Felicijan <felicijan@users.noreply.hosted.weblate.org>"
-"\n"
+"Last-Translator: Jože Felicijan "
+"<felicijan@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/galette/doc-"
 "user-preferences/sl/>\n"
 "Language: sl\n"
@@ -465,8 +465,8 @@ msgid ""
 msgstr ""
 "Pravice se upravljajo z :ref:`vlogami <roles>`; ta zavihek vsebuje le "
 "povezave do njih. Nastavitve, ki so bile tu na voljo prej, so bile ob "
-"nadgradnji pretvorjene v dovoljenja sistemskih vlog; glejte "
-":ref:`roles_upgrade`."
+"nadgradnji pretvorjene v dovoljenja sistemskih vlog; "
+"glejte :ref:`roles_upgrade`."
 
 #: ../usermanual/preferences.rst:130
 msgid "E-Mail"
@@ -1220,16 +1220,6 @@ msgstr "Dvostopenjska avtentikacija"
 
 #: ../usermanual/preferences.rst:372
 msgid ""
-"Marked **experimental**: it is complete and tested, but it is new, and the "
-"interface may still change. It is disabled by default; nothing happens until "
-"you choose otherwise."
-msgstr ""
-"Označeno kot **eksperimentalno**: je popolno in preizkušeno, vendar je novo "
-"in vmesnik se lahko še spremeni. Privzeto je onemogočen; nič se ne zgodi, "
-"dokler ne izberete drugače."
-
-#: ../usermanual/preferences.rst:374
-msgid ""
 "A password is a single factor: whoever knows it is in. Two-factor "
 "authentication asks, right after the password, for a six digits code that "
 "changes every thirty seconds and comes from an application on the user own "
@@ -1240,7 +1230,7 @@ msgstr ""
 "trideset sekund in prihaja iz aplikacije v uporabnikovem telefonu ali "
 "računalniku. Ukradeno geslo potem ni več dovolj."
 
-#: ../usermanual/preferences.rst:376
+#: ../usermanual/preferences.rst:374
 msgid ""
 "Galette implements the TOTP standard (:rfc:`6238`), the one every "
 "authenticator application speaks; no third party service is involved, and "
@@ -1250,22 +1240,22 @@ msgstr ""
 "preverjanje pristnosti; ni vključena nobena storitev tretje osebe in nič ne "
 "zapusti vašega strežnika."
 
-#: ../usermanual/preferences.rst:378
+#: ../usermanual/preferences.rst:376
 msgid "Two policies are available:"
 msgstr "Na voljo sta dve politiki:"
 
-#: ../usermanual/preferences.rst:380
+#: ../usermanual/preferences.rst:378
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 "**onemogočeno** (privzeto): nič se ne spremeni, nikogar se ne zahteva koda,"
 
-#: ../usermanual/preferences.rst:381
+#: ../usermanual/preferences.rst:379
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 "**izbirno**: vsak ga lahko omogoči iz svojega računa, nikomur ni treba."
 
-#: ../usermanual/preferences.rst:383
+#: ../usermanual/preferences.rst:381
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -1281,7 +1271,7 @@ msgstr ""
 "bazi podatkov. Načrtovano je za poznejšo različico, ko bo izbirni pravilnik "
 "uporabljen na terenu."
 
-#: ../usermanual/preferences.rst:385
+#: ../usermanual/preferences.rst:383
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1296,7 +1286,7 @@ msgstr ""
 "**Ne sprašuj več**. Zavrnitev si zapomni piškotek brskalnika, zato se vabilo "
 "vrne v novem brskalniku ali po enem letu."
 
-#: ../usermanual/preferences.rst:389
+#: ../usermanual/preferences.rst:387
 msgid ""
 "Switching the policy back to **disabled** does not delete anything. Codes "
 "are no longer asked for, and the second factors already enabled start being "
@@ -1310,7 +1300,7 @@ msgstr ""
 "onemogočen, strani za omogočanje drugega faktorja ne odgovorijo na nič: "
 "takrat vpisan faktor ne bi bil nikoli zahtevan."
 
-#: ../usermanual/preferences.rst:391
+#: ../usermanual/preferences.rst:389
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
@@ -1319,7 +1309,7 @@ msgstr ""
 "Pokrit je tudi superskrbnik, kot kateri koli drug račun. Ker ni član, nima "
 "obnovitvenih kod; glejte :ref:`kaj storiti, če ga izgubite <faq_2fa>`."
 
-#: ../usermanual/preferences.rst:393
+#: ../usermanual/preferences.rst:391
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1331,11 +1321,11 @@ msgstr ""
 "uslužbenci lahko :ref:`ponastavijo drugi faktor člana <member_2fa_reset>`, "
 "ki ga je izgubil."
 
-#: ../usermanual/preferences.rst:398
+#: ../usermanual/preferences.rst:396
 msgid "Authentication attempts"
 msgstr "Poskusi avtentikacije"
 
-#: ../usermanual/preferences.rst:402
+#: ../usermanual/preferences.rst:400
 msgid ""
 "To protect accounts against people trying passwords one after the other, "
 "Galette counts the failed logins. After too many failures, further attempts "
@@ -1347,28 +1337,28 @@ msgstr ""
 "nekaj časa zavrnjeni, tudi s pravim geslom. Enako velja za zahteve za "
 "obnovitev gesla in samoregistracije."
 
-#: ../usermanual/preferences.rst:404
+#: ../usermanual/preferences.rst:402
 msgid "By default:"
 msgstr "Privzeto:"
 
-#: ../usermanual/preferences.rst:406
+#: ../usermanual/preferences.rst:404
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
 msgstr "5 neuspešnih prijav na en račun, z enega naslova, v 15 minutah,"
 
-#: ../usermanual/preferences.rst:407
+#: ../usermanual/preferences.rst:405
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
 "30 neuspešnih prijav z enega naslova, na kateri koli račun, v 15 minutah,"
 
-#: ../usermanual/preferences.rst:408
+#: ../usermanual/preferences.rst:406
 msgid "100 failed logins on one account, from anywhere, within a day,"
 msgstr "100 neuspešnih prijav v en račun, od koder koli, v enem dnevu,"
 
-#: ../usermanual/preferences.rst:409
+#: ../usermanual/preferences.rst:407
 msgid "3 password recovery requests within an hour,"
 msgstr "3 zahteve za obnovitev gesla v eni uri,"
 
-#: ../usermanual/preferences.rst:411
+#: ../usermanual/preferences.rst:409
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
@@ -1376,7 +1366,7 @@ msgstr ""
 "zavrnitev nadaljnjih poskusov za 15 minut. Te pragove in trajanja je mogoče "
 "spremeniti v :ref:`napredni konfiguraciji <advanced_config>`."
 
-#: ../usermanual/preferences.rst:413
+#: ../usermanual/preferences.rst:411
 msgid ""
 "**Configuration**, then **Authentication attempts** lists what is refused "
 "right now: what is counted, the account, the address, the number of failures "
@@ -1386,11 +1376,11 @@ msgstr ""
 "trenutno zavrnjeno: kaj se šteje, račun, naslov, število neuspešnih poskusov "
 "in do kdaj so poskusi zavrnjeni."
 
-#: ../usermanual/preferences.rst:415
+#: ../usermanual/preferences.rst:413
 msgid "Authentication attempts currently refused"
 msgstr "Poskusi avtentikacije trenutno zavrnjeni"
 
-#: ../usermanual/preferences.rst:420
+#: ../usermanual/preferences.rst:418
 msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
@@ -1399,11 +1389,11 @@ msgstr ""
 "omogoči, da takoj poskusi znova, **Dvigni jih vse** pa počisti celoten "
 "seznam."
 
-#: ../usermanual/preferences.rst:423
+#: ../usermanual/preferences.rst:421
 msgid "Super administrator credentials"
 msgstr "Poverilnice superskrbnika"
 
-#: ../usermanual/preferences.rst:427
+#: ../usermanual/preferences.rst:425
 msgid ""
 "The super administrator login and password are no longer in the preferences. "
 "Once logged in as super administrator, go to **My account**, then **My "
@@ -1413,13 +1403,22 @@ msgstr ""
 "prijavljeni kot super skrbnik, pojdite na **Moj račun** in nato na **Moje "
 "informacije**. Galette zahteva trenutno geslo, preden shrani novo."
 
-#: ../usermanual/preferences.rst:429
+#: ../usermanual/preferences.rst:427
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
 msgstr ""
 "Če se to geslo izgubi, ga lahko spremenite :ref:`v ukazni vrstici "
 "<cli_superadmin_password>`."
+
+#~ msgid ""
+#~ "Marked **experimental**: it is complete and tested, but it is new, and "
+#~ "the interface may still change. It is disabled by default; nothing "
+#~ "happens until you choose otherwise."
+#~ msgstr ""
+#~ "Označeno kot **eksperimentalno**: je popolno in preizkušeno, vendar je "
+#~ "novo in vmesnik se lahko še spremeni. Privzeto je onemogočen; nič se ne "
+#~ "zgodi, dokler ne izberete drugače."
 
 #~ msgid "Define few extra rights:"
 #~ msgstr "Definirajte nekaj dodatnih pravic:"
