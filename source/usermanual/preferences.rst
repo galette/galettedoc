@@ -373,18 +373,17 @@ A password is a single factor: whoever knows it is in. Two-factor authentication
 
 Galette implements the TOTP standard (:rfc:`6238`), the one every authenticator application speaks; no third party service is involved, and nothing leaves your server.
 
-Two policies are available:
+Two-factor authentication is always available: everybody may enable it from their own account, nobody has to. This is the **optional** policy, the default one.
 
-* **disabled** (default): nothing changes, nobody is asked for a code,
-* **optional**: everybody may enable it from their own account, nobody has to.
+.. versionchanged:: 1.4.0
+
+   The **disabled** policy has been removed. Instances where it was selected switch to **optional** on update; second factors enabled before are asked for again.
 
 Making the second factor **compulsory** — for administrators and staff members, or for everyone — is written and tested, but it is not offered yet: under a compulsory policy, a server clock that drifts or an enrolment that goes wrong puts a whole association outside its own instance, and the only way back is a command in the database. It is planned for a later version, once the optional policy has been used in the field.
 
 Since nobody is forced to enrol, administrators and staff members — the accounts that can read the civil status, the addresses and the financial data of every member — are invited to set a second factor up when they log in, with a **Later** and a **Do not ask again** button. Declining is remembered in a cookie of the browser, so the invitation comes back on a new browser, or after a year.
 
-.. note::
-
-   Switching the policy back to **disabled** does not delete anything. Codes are no longer asked for, and the second factors already enabled start being asked for again as soon as you enable a policy back. While the policy is disabled, the pages to enable a second factor answer nothing: a factor enrolled then would never be asked for.
+When nobody can give a code the server accepts -- its clock drifted, for instance -- the second factor can be :ref:`suspended for a few hours <cli_twofactor_suspend>` from the command line, for the whole instance. Second factors are kept, and asked for again once the suspension ends.
 
 The super administrator is covered as well, as any other account. As it is not a member, it has no recovery codes; see :ref:`what to do should you lose it <faq_2fa>`.
 

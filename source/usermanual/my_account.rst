@@ -61,7 +61,7 @@ The same pages are listed in the **My Account** menu, on the left:
 * **My transactions**,
 * **My information**.
 
-**Two-factor authentication** and **Add a child member** may also be listed there, when your association has enabled them.
+**Two-factor authentication** is listed there as well. **Add a child member** may also be, when your association has enabled it.
 
 .. _my_account_information:
 
@@ -139,4 +139,4 @@ If your association allows it, **Add a child member** in the **My Account** menu
 Two-factor authentication
 =========================
 
-When your association has enabled it, you can protect your account with a code that changes every thirty seconds, in addition to your password. This is described in :ref:`two-factor authentication <man_2fa>`.
+You can protect your account with a code that changes every thirty seconds, in addition to your password. This is described in :ref:`two-factor authentication <man_2fa>`.

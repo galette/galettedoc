@@ -62,7 +62,7 @@ Two-factor authentication
 
 .. versionadded:: 1.3.0
 
-Once :ref:`a policy has been set in the preferences <pref_2fa>`, every account can protect itself with a second factor: after the password, Galette asks for a six digits code that changes every thirty seconds.
+Every account can protect itself with a second factor: after the password, Galette asks for a six digits code that changes every thirty seconds. The :ref:`preferences <pref_2fa>` describe the policies an association can choose.
 
 If you are an administrator or a staff member and have not set one up, Galette invites you to when you log in. Nothing forces you to; **Later** keeps quiet for six months, **Do not ask again** for a year.
 
@@ -126,6 +126,7 @@ A few banners may also be displayed at the top of the pages:
 
 * **Maintenance**: the instance is in :ref:`maintenance mode <galettemodes>`; only the super administrator can log in, and is reminded of it,
 * **Demonstration**: the instance runs in demonstration mode, some features are disabled,
+* **Two-factor suspended**: the second factor has been :ref:`suspended <cli_twofactor_suspend>` for the whole instance, and nobody is asked for a code until the date its tooltip gives; displayed to administrators and staff members,
 * **Superadmin**: you are logged in as super administrator, who is not a member.
 
 When a new Galette release is available, an icon is displayed next to the version number at the bottom of the pages, for administrators and staff members.

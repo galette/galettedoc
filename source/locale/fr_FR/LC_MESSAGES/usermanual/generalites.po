@@ -223,14 +223,15 @@ msgstr "Authentification à deux facteurs"
 
 #: ../usermanual/generalites.rst:65
 msgid ""
-"Once :ref:`a policy has been set in the preferences <pref_2fa>`, every "
-"account can protect itself with a second factor: after the password, Galette "
-"asks for a six digits code that changes every thirty seconds."
+"Every account can protect itself with a second factor: after the password, "
+"Galette asks for a six digits code that changes every thirty seconds. "
+"The :ref:`preferences <pref_2fa>` describe the policies an association can "
+"choose."
 msgstr ""
-"Une fois :ref:`qu’une politique a été définie dans les préférences "
-"<pref_2fa>`, chaque compte peut se protéger avec un deuxième facteur : après "
-"le mot de passe, Galette demande un code à six chiffres qui change toutes "
-"les trente secondes."
+"Chaque compte peut se protéger avec un deuxième facteur : après le mot de "
+"passe, Galette demande un code à six chiffres qui change toutes les trente "
+"secondes. Les :ref:`préférences <pref_2fa>` décrivent les politiques qu'une "
+"association peut choisir."
 
 #: ../usermanual/generalites.rst:67
 msgid ""
@@ -469,13 +470,25 @@ msgstr ""
 
 #: ../usermanual/generalites.rst:129
 msgid ""
+"**Two-factor suspended**: the second factor has been :ref:`suspended "
+"<cli_twofactor_suspend>` for the whole instance, and nobody is asked for a "
+"code until the date its tooltip gives; displayed to administrators and staff "
+"members,"
+msgstr ""
+"**Two-factor suspended** : le second facteur a été :ref:`suspendu "
+"<cli_twofactor_suspend>` pour toute l'instance, et aucun code n'est demandé "
+"jusqu'à la date indiquée dans son infobulle ; affiché aux administrateurs et "
+"aux membres du bureau,"
+
+#: ../usermanual/generalites.rst:130
+msgid ""
 "**Superadmin**: you are logged in as super administrator, who is not a "
 "member."
 msgstr ""
 "**Superadmin** : vous êtes connecté en super administrateur, qui n'est pas "
 "un adhérent."
 
-#: ../usermanual/generalites.rst:131
+#: ../usermanual/generalites.rst:132
 msgid ""
 "When a new Galette release is available, an icon is displayed next to the "
 "version number at the bottom of the pages, for administrators and staff "
@@ -485,33 +498,33 @@ msgstr ""
 "côté du numéro de version en bas des pages, pour les administrateurs et les "
 "membres du bureau."
 
-#: ../usermanual/generalites.rst:134
+#: ../usermanual/generalites.rst:135
 msgid "Interface"
 msgstr "Interface"
 
-#: ../usermanual/generalites.rst:136
+#: ../usermanual/generalites.rst:137
 msgid "We do our best for the Galette interface to be:"
 msgstr "Nous faisons notre possible pour que l'interface de Galette soit :"
 
-#: ../usermanual/generalites.rst:138
+#: ../usermanual/generalites.rst:139
 msgid "logical and consistent (you will always find icons at familiar places),"
 msgstr ""
 "logique et cohérente (vous trouverez toujours les icônes à des emplacement "
 "familiers),"
 
-#: ../usermanual/generalites.rst:139
+#: ../usermanual/generalites.rst:140
 msgid "web standards compliant (HTML and CSS valid),"
 msgstr "respectueuse des standards du web (valide HTMl et CSS),"
 
-#: ../usermanual/generalites.rst:140
+#: ../usermanual/generalites.rst:141
 msgid "HTML semantic respectful,"
 msgstr "respectueuse de la sémantique HTML,"
 
-#: ../usermanual/generalites.rst:141
+#: ../usermanual/generalites.rst:142
 msgid "accessible (without any WCAG, WAI or equivalent tests run)."
 msgstr "accessible (sans qu'aucun test WCAG, WAI ou équivalent ne soit lancé)."
 
-#: ../usermanual/generalites.rst:143
+#: ../usermanual/generalites.rst:144
 msgid ""
 "If you find places where one of those points is incorrect, do not hesitate "
 "to tell us on the tracker or on the mailing list!"
@@ -520,11 +533,11 @@ msgstr ""
 "n'hésitez pas à nous en faire part sur le tracker ou les listes de "
 "diffusion !"
 
-#: ../usermanual/generalites.rst:148
+#: ../usermanual/generalites.rst:149
 msgid "History"
 msgstr "Historique"
 
-#: ../usermanual/generalites.rst:150
+#: ../usermanual/generalites.rst:151
 msgid ""
 "Galette keeps a history of what happens: logins, failed logins, members "
 "added or changed, contributions, mailings sent... Administrators and staff "
@@ -535,11 +548,11 @@ msgstr ""
 "Les administrateurs et les membres du bureau le consultent depuis "
 "**Gestion**, puis **Journaux**."
 
-#: ../usermanual/generalites.rst:152
+#: ../usermanual/generalites.rst:153
 msgid "Logs"
 msgstr "Journaux"
 
-#: ../usermanual/generalites.rst:157
+#: ../usermanual/generalites.rst:158
 msgid ""
 "Each line gives the date, the address the action came from, the user who did "
 "it, the action and a short description. The list can be filtered on a "
@@ -549,7 +562,7 @@ msgstr ""
 "qui l'a faite, l'action et une courte description. La liste peut être "
 "filtrée sur une période, un adhérent et une action."
 
-#: ../usermanual/generalites.rst:159
+#: ../usermanual/generalites.rst:160
 msgid ""
 "**Flush the logs** empties the history, after a confirmation. This cannot be "
 "undone."
@@ -557,7 +570,7 @@ msgstr ""
 "**Effacer l'historique** vide l'historique, après confirmation. C'est "
 "irréversible."
 
-#: ../usermanual/generalites.rst:163
+#: ../usermanual/generalites.rst:164
 msgid ""
 "Actions are stored in the language of the user who did them: a history can "
 "therefore mix several languages."
@@ -565,15 +578,15 @@ msgstr ""
 "Les actions sont enregistrées dans la langue de l'utilisateur qui les a "
 "faites : un historique peut donc mélanger plusieurs langues."
 
-#: ../usermanual/generalites.rst:168
+#: ../usermanual/generalites.rst:169
 msgid "Telemetry"
 msgstr "Télémétrie"
 
-#: ../usermanual/generalites.rst:172
+#: ../usermanual/generalites.rst:173
 msgid "Galette propose to send some telemetry information:"
 msgstr "Galette propose d'envoyer quelques informations de télémétrie :"
 
-#: ../usermanual/generalites.rst:174
+#: ../usermanual/generalites.rst:175
 msgid ""
 "**entirely anonymous**: no information about your association or your "
 "members is sent,"
@@ -581,7 +594,7 @@ msgstr ""
 "**entièrement anonymes** : aucune information sur votre association ou vos "
 "adhérents n'est envoyée,"
 
-#: ../usermanual/generalites.rst:175
+#: ../usermanual/generalites.rst:176
 msgid ""
 "**deliberately blurred**: we retrieve an estimation of members count, never "
 "a real count,"
@@ -589,12 +602,12 @@ msgstr ""
 "**volontairement floues** : nous récupérons une estimation du nombre "
 "d'adhérents, jamais un compte réel,"
 
-#: ../usermanual/generalites.rst:176
+#: ../usermanual/generalites.rst:177
 msgid "sent by a **secured** way (`HTTPS`) on https://telemetry.galette.eu."
 msgstr ""
 "envoyée de manière **sécurisée** (`HTTPS`) sur https://telemetry.galette.eu."
 
-#: ../usermanual/generalites.rst:178
+#: ../usermanual/generalites.rst:179
 msgid ""
 "Sending telemetry data is a manual process, nothing will be sent until you "
 "**explicitly** ask it. With those information, we can have a better "
@@ -606,7 +619,7 @@ msgstr ""
 "une meilleure connaissance des différentes usages de Galette, le nombre "
 "d'adhérents et de contributions gérées, les plugins utilisés, ..."
 
-#: ../usermanual/generalites.rst:180
+#: ../usermanual/generalites.rst:181
 msgid ""
 "Those information are useful for the project development and promotion. When "
 "you send those information, you can review data that would be sent."
@@ -615,11 +628,11 @@ msgstr ""
 "projet. Lorsque vous envoyez ces informations, vous pouvez vérifier ce qui "
 "serait envoyé."
 
-#: ../usermanual/generalites.rst:182
+#: ../usermanual/generalites.rst:183
 msgid "Preview Telemetry data"
 msgstr "Prévisualisation des données de télémétrie"
 
-#: ../usermanual/generalites.rst:187
+#: ../usermanual/generalites.rst:188
 msgid ""
 "After data has been sent once, Galette will propose to send an update from "
 "time to time. You can also send them from Galette preferences."
@@ -628,11 +641,11 @@ msgstr ""
 "les mettre à jour de temps à autre. Vous pouvez aussi les envoyer depuis les "
 "préférences de Galette."
 
-#: ../usermanual/generalites.rst:189
+#: ../usermanual/generalites.rst:190
 msgid "Telemetry update reminder"
 msgstr "Rappel de mise à jour de la télémétrie"
 
-#: ../usermanual/generalites.rst:193
+#: ../usermanual/generalites.rst:194
 msgid ""
 "It is also possible to register your association on the website, of course, "
 "not anonymously, but it is not possible to link telemetry and registration. "
@@ -643,7 +656,7 @@ msgstr ""
 "les informations de télémétrie et d'enregistrement. Les nouvelles références "
 "sont modérées."
 
-#: ../usermanual/generalites.rst:195
+#: ../usermanual/generalites.rst:196
 msgid ""
 "You can update your registration information from Galette preferences. The "
 "form will be blank (because it is not possible to retrieve data you've sent) "
@@ -655,11 +668,11 @@ msgstr ""
 "que vous avez préalablement envoyées) mais toutes les données seront mises à "
 "jour puisque votre instance possède un identifiant unique d'enregistrement."
 
-#: ../usermanual/generalites.rst:197
+#: ../usermanual/generalites.rst:198
 msgid "Telemetry from preferences"
 msgstr "Télémétrie depuis les préférences"
 
-#: ../usermanual/generalites.rst:201
+#: ../usermanual/generalites.rst:202
 msgid ""
 "A new panel has been added on Galette dashboard to send telemetry "
 "information and/or register your instance. Once those steps has been "
@@ -670,7 +683,7 @@ msgstr ""
 "étapes complétées, le panneau disparaîtra. Vous pouvez également choisir de "
 "le désactiver."
 
-#: ../usermanual/generalites.rst:203
+#: ../usermanual/generalites.rst:204
 msgid "Telemetry on dashboard"
 msgstr "Télémétrie sur le tableau de bord"
 
@@ -697,9 +710,6 @@ msgstr "Télémétrie sur le tableau de bord"
 #~ "sont accessibles <fields_acls>`."
 
 #, fuzzy
-#~| msgid ""
-#~| "From the **Group manager** role, you can also :ref:`give groups managers "
-#~| "extra rights <roles>`, like editing or creating members."
 #~ msgid ""
 #~ "From the preferences, you can also :ref:`give groups managers extra "
 #~ "rights <pref_rights>`, like editing or creating members."
