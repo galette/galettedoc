@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 1.2\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-08 08:06+0100\n"
+"POT-Creation-Date: 2026-11-25 12:37+0100\n"
 "PO-Revision-Date: 2026-08-07 07:55+0000\n"
 "Last-Translator: Kauan Pacheco <KauanPacheco@proton.me>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -1122,40 +1122,33 @@ msgstr ""
 
 #: ../usermanual/preferences.rst:372
 msgid ""
-"Marked **experimental**: it is complete and tested, but it is new, and the "
-"interface may still change. It is disabled by default; nothing happens until "
-"you choose otherwise."
-msgstr ""
-
-#: ../usermanual/preferences.rst:374
-msgid ""
 "A password is a single factor: whoever knows it is in. Two-factor "
 "authentication asks, right after the password, for a six digits code that "
 "changes every thirty seconds and comes from an application on the user own "
 "phone or computer. A stolen password is then not enough anymore."
 msgstr ""
 
-#: ../usermanual/preferences.rst:376
+#: ../usermanual/preferences.rst:374
 msgid ""
 "Galette implements the TOTP standard (:rfc:`6238`), the one every "
 "authenticator application speaks; no third party service is involved, and "
 "nothing leaves your server."
 msgstr ""
 
-#: ../usermanual/preferences.rst:378
+#: ../usermanual/preferences.rst:376
 msgid "Two policies are available:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:380
+#: ../usermanual/preferences.rst:378
 msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:381
+#: ../usermanual/preferences.rst:379
 msgid ""
 "**optional**: everybody may enable it from their own account, nobody has to."
 msgstr ""
 
-#: ../usermanual/preferences.rst:383
+#: ../usermanual/preferences.rst:381
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -1165,7 +1158,7 @@ msgid ""
 "once the optional policy has been used in the field."
 msgstr ""
 
-#: ../usermanual/preferences.rst:385
+#: ../usermanual/preferences.rst:383
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1175,7 +1168,7 @@ msgid ""
 "browser, or after a year."
 msgstr ""
 
-#: ../usermanual/preferences.rst:389
+#: ../usermanual/preferences.rst:387
 msgid ""
 "Switching the policy back to **disabled** does not delete anything. Codes "
 "are no longer asked for, and the second factors already enabled start being "
@@ -1184,14 +1177,14 @@ msgid ""
 "enrolled then would never be asked for."
 msgstr ""
 
-#: ../usermanual/preferences.rst:391
+#: ../usermanual/preferences.rst:389
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
 "it <faq_2fa>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:393
+#: ../usermanual/preferences.rst:391
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1199,11 +1192,11 @@ msgid ""
 "member <member_2fa_reset>` who lost it."
 msgstr ""
 
-#: ../usermanual/preferences.rst:398
+#: ../usermanual/preferences.rst:396
 msgid "Authentication attempts"
 msgstr ""
 
-#: ../usermanual/preferences.rst:402
+#: ../usermanual/preferences.rst:400
 msgid ""
 "To protect accounts against people trying passwords one after the other, "
 "Galette counts the failed logins. After too many failures, further attempts "
@@ -1211,61 +1204,61 @@ msgid ""
 "password recovery requests and to self registrations."
 msgstr ""
 
-#: ../usermanual/preferences.rst:404
+#: ../usermanual/preferences.rst:402
 msgid "By default:"
 msgstr ""
 
-#: ../usermanual/preferences.rst:406
+#: ../usermanual/preferences.rst:404
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:407
+#: ../usermanual/preferences.rst:405
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:408
+#: ../usermanual/preferences.rst:406
 msgid "100 failed logins on one account, from anywhere, within a day,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:409
+#: ../usermanual/preferences.rst:407
 msgid "3 password recovery requests within an hour,"
 msgstr ""
 
-#: ../usermanual/preferences.rst:411
+#: ../usermanual/preferences.rst:409
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
 msgstr ""
 
-#: ../usermanual/preferences.rst:413
+#: ../usermanual/preferences.rst:411
 msgid ""
 "**Configuration**, then **Authentication attempts** lists what is refused "
 "right now: what is counted, the account, the address, the number of failures "
 "and until when attempts are refused."
 msgstr ""
 
-#: ../usermanual/preferences.rst:415
+#: ../usermanual/preferences.rst:413
 msgid "Authentication attempts currently refused"
 msgstr ""
 
-#: ../usermanual/preferences.rst:420
+#: ../usermanual/preferences.rst:418
 msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
 msgstr ""
 
-#: ../usermanual/preferences.rst:423
+#: ../usermanual/preferences.rst:421
 msgid "Super administrator credentials"
 msgstr ""
 
-#: ../usermanual/preferences.rst:427
+#: ../usermanual/preferences.rst:425
 msgid ""
 "The super administrator login and password are no longer in the preferences. "
 "Once logged in as super administrator, go to **My account**, then **My "
 "information**. Galette asks for the current password before saving a new one."
 msgstr ""
 
-#: ../usermanual/preferences.rst:429
+#: ../usermanual/preferences.rst:427
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
