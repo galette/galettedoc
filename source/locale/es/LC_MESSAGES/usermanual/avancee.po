@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Galette 0.9.4\n"
 "Report-Msgid-Bugs-To: translations@galette.eu\n"
-"POT-Creation-Date: 2026-11-23 15:17+0100\n"
+"POT-Creation-Date: 2026-11-25 00:10+0100\n"
 "PO-Revision-Date: 2026-03-20 10:09+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/galette/doc-user-"
@@ -936,10 +936,83 @@ msgid "Constants behavior.inc.php understands"
 msgstr ""
 
 #: ../usermanual/avancee.rst:377
+msgid "Cache"
+msgstr ""
+
+#: ../usermanual/avancee.rst:381
+msgid ""
+"Galette keeps in its cache files it can build again whenever it needs them: "
+"compiled pages, the news feed, the list of available releases, and a few "
+"others. Clearing it is the first thing to try when a change does not show, "
+"after an update for example."
+msgstr ""
+
+#: ../usermanual/avancee.rst:383
+msgid ""
+"The **Cache** tab of the advanced configuration page sums the cache up in "
+"cards, each with its own button:"
+msgstr ""
+
+#: ../usermanual/avancee.rst:385
+msgid ""
+"**Galette cache**: what the running version keeps. **Clear cache** removes "
+"it. No data is lost, the next pages are only slower to display,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:386
+msgid ""
+"**Previous versions**: caches left behind by updates, no longer used. "
+"**Delete previous versions** removes them,"
+msgstr ""
+
+#: ../usermanual/avancee.rst:387
+msgid ""
+"**OPcache used**: the memory PHP uses to keep its scripts compiled. **Reset "
+"OPcache** empties it."
+msgstr ""
+
+#: ../usermanual/avancee.rst:389
+#, fuzzy
+#| msgid "Behavior configuration"
+msgid "The cache tab of the advanced configuration"
+msgstr "Configuración de comportamiento"
+
+#: ../usermanual/avancee.rst:394
+msgid ""
+"Files are removed by the web server itself, so none of them is left behind "
+"with the wrong owner, as happens when they are removed by hand from another "
+"account."
+msgstr ""
+
+#: ../usermanual/avancee.rst:396
+msgid ""
+"The **Previous versions** card only shows when the cache sits in its default "
+"directory, ``galette/data/cache``. The **OPcache used** card only shows when "
+"OPcache is enabled, and when its functions are not restricted to other "
+"scripts by ``opcache.restrict_api``."
+msgstr ""
+
+#: ../usermanual/avancee.rst:400
+msgid ""
+"OPcache memory is shared by every application of the same PHP pool: "
+"resetting it applies to all of them, not only to Galette."
+msgstr ""
+
+#: ../usermanual/avancee.rst:402
+msgid ""
+"Some caches are not cleared along with the others, since clearing them is "
+"not free: the towns located for the :ref:`maps <maps>`, the date telemetry "
+"data were last sent, the files handed to the post-contribution script, and "
+"the requests recorded by the debug bar. They can only be cleared one by one, "
+"with the :ref:`galette:cache:clear command <cli_cache_clear>`, which also "
+"lists what each cache holds."
+msgstr ""
+
+#: ../usermanual/avancee.rst:407
 msgid "Galette modes"
 msgstr "Modos de Galette"
 
-#: ../usermanual/avancee.rst:379
+#: ../usermanual/avancee.rst:409
 msgid ""
 "Several modes are provided in Galette you can configure with "
 "``GALETTE_MODE`` constant (:ref:`see Galette behavior configuration "
@@ -949,7 +1022,7 @@ msgstr ""
 "constante ``GALETTE_MODE`` (:ref:`ver la configuración de comportamiento de "
 "Galette <behavior>`). Esta directiva puede tomar los siguientes valores:"
 
-#: ../usermanual/avancee.rst:381
+#: ../usermanual/avancee.rst:411
 msgid ""
 "``PROD``: production mode (non production instance should be on another "
 "mode). This is the default mode for releases, but it may change in "
@@ -959,7 +1032,7 @@ msgstr ""
 "modo). Este es el modo predeterminado para los lanzamientos, pero puede "
 "cambiar en la rama de desarrollo."
 
-#: ../usermanual/avancee.rst:382
+#: ../usermanual/avancee.rst:412
 msgid ""
 "``DEMO``: demonstration mode, the same as ``PROD`` but with some features "
 "disabled like sending emails, modifying superadmin data, ..."
@@ -968,21 +1041,21 @@ msgstr ""
 "desactivadas como el envío de correos electrónicos, modificar los datos del "
 "superadministrador, ..."
 
-#: ../usermanual/avancee.rst:383
+#: ../usermanual/avancee.rst:413
 msgid "``TEST``: reserved for unit tests."
 msgstr "``TEST``: reservado para los test unitarios."
 
-#: ../usermanual/avancee.rst:384
+#: ../usermanual/avancee.rst:414
 msgid "``MAINT``: maintenance mode. Only super admin will be able to login."
 msgstr ""
 "``MAINT``: modo mantenimiento. Solo el superadministrador podrá iniciar "
 "sesión."
 
-#: ../usermanual/avancee.rst:389
+#: ../usermanual/avancee.rst:419
 msgid "Galette Debug"
 msgstr "Depuración de Galette"
 
-#: ../usermanual/avancee.rst:393
+#: ../usermanual/avancee.rst:423
 msgid ""
 "A dedicated constant name ``GALETTE_DEBUG`` can be used to enable debug "
 "mode. With this mode on:"
@@ -990,109 +1063,109 @@ msgstr ""
 "Para activar el modo depuración se puede utilizar una constante específica "
 "llamada ``GALETTE_DEBUG``. Con este modo activado:"
 
-#: ../usermanual/avancee.rst:395
+#: ../usermanual/avancee.rst:425
 msgid "unstable/not finished parts will be activated,"
 msgstr "se activarán las partes inestables/no acabadas,"
 
-#: ../usermanual/avancee.rst:396
+#: ../usermanual/avancee.rst:426
 msgid "some data will not be stored in session,"
 msgstr "algunos datos no se guardan en la sesión,"
 
-#: ../usermanual/avancee.rst:397
+#: ../usermanual/avancee.rst:427
 msgid "default log level is set to ``DEBUG``,"
 msgstr "El nivel de registro por defecto está establecido en ``‘DEBUG``,"
 
-#: ../usermanual/avancee.rst:398
+#: ../usermanual/avancee.rst:428
 msgid "news won't be cached,"
 msgstr "las noticias no se almacenarán en caché,"
 
-#: ../usermanual/avancee.rst:399
+#: ../usermanual/avancee.rst:429
 msgid "database version check will not be done."
 msgstr "no se comprobará la versión de la base de datos."
 
-#: ../usermanual/avancee.rst:405
+#: ../usermanual/avancee.rst:435
 msgid "Behavior configuration"
 msgstr "Configuración de comportamiento"
 
-#: ../usermanual/avancee.rst:407
+#: ../usermanual/avancee.rst:437
 msgid ""
 "Some of Galette behaviors are set by declaring constants in the ``galette/"
 "config/behavior.inc.php`` file. A commented example of every one of them "
 "ships as ``behavior.inc.php.dist``, next to it."
 msgstr ""
 
-#: ../usermanual/avancee.rst:409
+#: ../usermanual/avancee.rst:439
 msgid "For example:"
 msgstr "Por ejemplo:"
 
-#: ../usermanual/avancee.rst:418
+#: ../usermanual/avancee.rst:448
 msgid ""
 "Only the settings Galette needs **before it can reach database** are still "
 "declared here. The others became regular settings, editable from "
 "the :ref:`advanced configuration <advanced_config>` page."
 msgstr ""
 
-#: ../usermanual/avancee.rst:420
+#: ../usermanual/avancee.rst:450
 msgid "The following settings can be set:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:422
+#: ../usermanual/avancee.rst:452
 #, fuzzy
 #| msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
 msgid "``GALETTE_DEBUG``: enable debug mode, :ref:`see Galette debug <debug>`,"
 msgstr "`GALETTE_DEBUG`: :ref:`ver depuración de Galette <debug>`;"
 
-#: ../usermanual/avancee.rst:423
+#: ../usermanual/avancee.rst:453
 #, fuzzy
 #| msgid "`GALETTE_DEBUG`: :ref:`see Galette debug <debug>`;"
 msgid ""
 "``GALETTE_MODE``: instance mode, :ref:`see Galette modes <galettemodes>`,"
 msgstr "`GALETTE_DEBUG`: :ref:`ver depuración de Galette <debug>`;"
 
-#: ../usermanual/avancee.rst:424
+#: ../usermanual/avancee.rst:454
 msgid ""
 "``GALETTE_LOG_LVL``: verbosity of the logs, as an `Analog <https://"
 "github.com/jbroadway/analog>`_ level. Defaults to ``WARNING``, or ``DEBUG`` "
 "in debug mode,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:425
+#: ../usermanual/avancee.rst:455
 msgid ""
 "``GALETTE_SQL_DEBUG``: dump every SQL query to ``data/logs/galette_sql.log``,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:426
+#: ../usermanual/avancee.rst:456
 msgid ""
 "``GALETTE_FEATURE_FLAGS``: development features to activate, as an array. "
 "They only apply in debug mode."
 msgstr ""
 
-#: ../usermanual/avancee.rst:429
+#: ../usermanual/avancee.rst:459
 msgid "Settings that moved"
 msgstr ""
 
-#: ../usermanual/avancee.rst:433
+#: ../usermanual/avancee.rst:463
 msgid ""
 "Three settings that used to be declared here are now stored in database, and "
 "edited from the :ref:`advanced configuration <advanced_config>` page:"
 msgstr ""
 
-#: ../usermanual/avancee.rst:435
+#: ../usermanual/avancee.rst:465
 msgid "``GALETTE_URI`` became ``pref_galette_url``,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:436
+#: ../usermanual/avancee.rst:466
 msgid ""
 "``GALETTE_X_FORWARDED_FOR_INDEX`` became "
 "``pref_x_forwarded_for_index``, :ref:`see logging IP addresses behind a "
 "proxy <proxy_ip>`,"
 msgstr ""
 
-#: ../usermanual/avancee.rst:437
+#: ../usermanual/avancee.rst:467
 msgid "``GALETTE_TIMEOUT`` became ``pref_session_timeout``."
 msgstr ""
 
-#: ../usermanual/avancee.rst:439
+#: ../usermanual/avancee.rst:469
 msgid ""
 "Declaring one of them still works, and **still takes precedence over the "
 "stored value**: nothing breaks on upgrade. Galette then writes a warning in "
@@ -1101,7 +1174,7 @@ msgid ""
 "manage the setting from the page."
 msgstr ""
 
-#: ../usermanual/avancee.rst:443
+#: ../usermanual/avancee.rst:473
 msgid ""
 "``pref_galette_url`` is the one setting the :ref:`reminders cron script "
 "<reminders>` cannot do without: it runs with no incoming request, so it has "
