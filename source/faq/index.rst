@@ -32,6 +32,8 @@ My two-factor authentication codes are refused
 
 Galette accepts the code of the current thirty seconds period and of the one just before and just after, which leaves a bit less than a minute and a half of tolerance. Beyond that, set both clocks right -- on the server, by enabling NTP; on a phone, by turning automatic date and time on -- and try again. Most authenticator applications also offer to correct their own clock for you.
 
+When the server clock is wrong for everybody and cannot be set right at once, members can still log in with their recovery codes; the second factor can also be :ref:`suspended for the whole instance <cli_twofactor_suspend>` meanwhile.
+
 Two other cases look like a refusal but are not one:
 
 * **the same code twice**: a code is accepted once only, so submitting the code you just used to enrol, or reloading the page after a successful login, is refused. Wait for the next one -- it comes at most thirty seconds later.
@@ -91,19 +93,20 @@ Its second factor lives in the preferences, so without access to the command lin
 
 Replace ``galette_`` with your own table prefix if you changed it (the ``PREFIX_DB`` setting of your configuration file). The next login asks for the password alone.
 
-To turn the second factor off for the whole instance -- the way out when something goes wrong for everybody at once -- run:
+To stop asking for codes on the whole instance -- the way out when something goes wrong for everybody at once -- :ref:`suspend the second factor <cli_twofactor_suspend>`:
 
 ::
 
-   $ php bin/console galette:twofactor:reset --policy-off
+   $ php bin/console galette:twofactor:suspend
 
-or, in database:
+or, in database, for 24 hours (the first line for MariaDB and MySQL, the second for PostgreSQL):
 
 .. code-block:: sql
 
-   UPDATE galette_preferences SET val_pref = '0' WHERE nom_pref = 'pref_2fa_mode';
+   UPDATE galette_preferences SET val_pref = UNIX_TIMESTAMP() + 86400 WHERE nom_pref = 'pref_2fa_suspended_until';
+   UPDATE galette_preferences SET val_pref = (EXTRACT(EPOCH FROM now())::bigint + 86400)::text WHERE nom_pref = 'pref_2fa_suspended_until';
 
-Members who had enabled one keep it; they are simply no longer asked for a code until a policy is set again.
+Members who had enabled one keep it; they are simply no longer asked for a code until the suspension ends.
 
 .. warning::
 

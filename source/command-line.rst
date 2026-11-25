@@ -44,6 +44,7 @@ Galette now proposes a command line interface to manage some tasks. This is acce
       galette:seed-fixtures          Seed database with E2E test fixtures (fictional members, contributions, groups, etc.)
       galette:superadmin:password    Change the super administrator password
       galette:twofactor:reset        Reset two-factor authentication of the super administrator or of a member
+      galette:twofactor:suspend      Stop asking for a second factor for a few hours, on the whole instance
       galette:twig-cache             Compile Twig templates in cache
       galette:twig-pot-references    Point POT file references to Twig templates instead of compiled ones
 
@@ -218,7 +219,6 @@ The super administrator has no recovery codes, and nobody above it to reset its 
     Options:
           --login=LOGIN     Login of the member to reset; the super administrator when omitted
           --clock           Keep the second factor, only forget the last used code (after the server clock went backwards)
-          --policy-off      Disable two-factor authentication for the whole instance; second factors are kept
           --force           Do not ask for confirmation (required to run unattended)
       [...]
 
@@ -240,11 +240,52 @@ Without option, the command removes the second factor of the super administrator
 
 * ``--login`` targets a member instead, by its login (not its email address); its recovery codes are dropped as well. Administrators and staff members can already do the same :ref:`from the member page <member_2fa_reset>`, the command is there for when nobody can log in to do so.
 * ``--clock`` keeps the second factor, and only forgets the last code accepted for the account. This is what is needed after :ref:`the server clock went backwards <faq_2fa>`.
-* ``--policy-off`` disables two-factor authentication for the whole instance, the way out when something goes wrong for everybody at once. Second factors are kept, and asked again once a policy is set. It cannot be combined with the other options.
 
 Whatever the case, a lock on the account after too many wrong codes is lifted too, and the reset is recorded in the history.
 
 The command asks for confirmation; pass ``--force`` to run it without a terminal.
+
+.. versionchanged:: 1.4.0
+
+   ``--policy-off`` has been removed, along with the policy it selected; :ref:`suspending the second factor <cli_twofactor_suspend>` replaces it.
+
+.. _cli_twofactor_suspend:
+
+Two-factor authentication suspension
+====================================
+
+.. versionadded:: 1.4.0
+
+When nobody can give a code the server accepts -- its clock drifted, an update went wrong -- resetting every account one after the other is the wrong tool: each member would have to enable a second factor again. This command stops asking for codes on the whole instance for a while instead, and keeps every second factor in place.
+
+::
+
+    $ php bin/console help galette:twofactor:suspend
+    Description:
+      Stop asking for a second factor for a few hours, on the whole instance
+
+    Usage:
+      galette:twofactor:suspend [options]
+
+    Options:
+          --hours=HOURS     How long the suspension lasts, from 1 to 72 hours [default: 24]
+          --resume          End the running suspension now
+      [...]
+
+::
+
+    $ php bin/console galette:twofactor:suspend --hours=4
+
+    Suspend two-factor authentication
+    =================================
+
+     [OK] Two-factor authentication is suspended until 2026-11-28 13:00:00: members log in with their password alone.
+
+     Run this command again with --resume to end it sooner.
+
+While it runs, everybody logs in with their password alone, the super administrator included, and nobody is sent to enable a second factor, whatever the :ref:`policy <pref_2fa>`. Administrators and staff members are reminded of it by a **Two-factor suspended** banner.
+
+The suspension ends on its own: codes are asked for again without anybody having to do anything, so it cannot be forgotten. ``--resume`` ends it sooner, once the cause is fixed. It never changes the policy of the instance, and both the suspension and its end are recorded in the history.
 
 .. _cli_mailing_queue:
 

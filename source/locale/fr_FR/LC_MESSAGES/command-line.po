@@ -36,7 +36,7 @@ msgstr ""
 "certaines tâches. Elle est accessible via le script ``bin/console``, "
 "depuis :ref:`le dossier d'installation <installationdir>` :"
 
-#: ../command-line.rst:50
+#: ../command-line.rst:51
 msgid ""
 "Some of those commands are meant for developers only (``galette:check-"
 "routes``, ``galette:headers:check``, ``galette:seed-fixtures``, "
@@ -46,25 +46,25 @@ msgstr ""
 "( ``galette:check-routes`` , ``galette:headers:check``, ``galette:seed-"
 "fixtures``, ``galette:twig-pot-references``), et ne sont pas décrites ici."
 
-#: ../command-line.rst:52
+#: ../command-line.rst:53
 msgid ""
 "You can obtain help for a specific command by using the ``help`` command:"
 msgstr ""
 "Vous pouvez obtenir de l'aide pour une commande spécifique avec la commande "
 "``help`` :"
 
-#: ../command-line.rst:59
+#: ../command-line.rst:60
 msgid "Requirements check"
 msgstr "Vérification des pré-requis"
 
-#: ../command-line.rst:61
+#: ../command-line.rst:62
 msgid ""
 "This only check for Galette prerequisites, and has no specific arguments."
 msgstr ""
 "Cela vérifie uniquement les pré-requis de Galette, il n'y a aucun argument "
 "spécifique."
 
-#: ../command-line.rst:65
+#: ../command-line.rst:66
 msgid ""
 "On some systems, PHP configuration may differ between cli and web; therefore "
 "it's recommended to check for requirements from the web script "
@@ -74,15 +74,15 @@ msgstr ""
 "console et le web ; il est donc recommandé de vérifier les pré-requis depuis "
 "le script web ``compat_test.php``."
 
-#: ../command-line.rst:68
+#: ../command-line.rst:69
 msgid "Install"
 msgstr "Installation"
 
-#: ../command-line.rst:70
+#: ../command-line.rst:71
 msgid "This command obviously installs Galette :)"
 msgstr "Cette commande installe Galette bien entendu :)"
 
-#: ../command-line.rst:99
+#: ../command-line.rst:100
 msgid ""
 "By default, the script will check for an existing configuration file, you "
 "can ignore that using the ``--ignore-config`` option."
@@ -90,7 +90,7 @@ msgstr ""
 "Par défaut, le script va vérifier la présence d'un fichier de configuration, "
 "vous pouvez l'ignorer avec l'option ``--ignore-config``."
 
-#: ../command-line.rst:101
+#: ../command-line.rst:102
 msgid ""
 "Required options that have not been provided on script call will be asked "
 "interactively."
@@ -98,11 +98,11 @@ msgstr ""
 "Les options requises qui n'ont pas été fournies à l'appel du script seront "
 "demandées interactivement."
 
-#: ../command-line.rst:151
+#: ../command-line.rst:152
 msgid "Super administrator password"
 msgstr "Mot de passe Super administrateur"
 
-#: ../command-line.rst:155
+#: ../command-line.rst:156
 msgid ""
 "The super administrator password is normally changed from **My account**, "
 "then **My information**, or from the :ref:`advanced configuration "
@@ -117,7 +117,7 @@ msgstr ""
 "un membre, donc il ne peut pas utiliser le formulaire *mot de passe oublié* "
 "non plus."
 
-#: ../command-line.rst:157
+#: ../command-line.rst:158
 msgid ""
 "This command is the way back in. It runs on the machine hosting Galette, and "
 "that access stands as the authentication."
@@ -125,7 +125,7 @@ msgstr ""
 "Cette commande est le moyen d'entrer à nouveau. Elle fonctionne sur la "
 "machine hébergeant Galette, et cet accès vaut authentification."
 
-#: ../command-line.rst:177
+#: ../command-line.rst:178
 msgid ""
 "There is no option to pass the password with: it is only ever read from a "
 "hidden prompt, so that it does not end up in your shell history nor in the "
@@ -137,7 +137,7 @@ msgstr ""
 "historique ni dans la liste de processus de la machine. Il est demandé deux "
 "fois, et les deux réponses doivent correspondre."
 
-#: ../command-line.rst:196
+#: ../command-line.rst:197
 msgid ""
 "The login is displayed so you know which account you just changed, but the "
 "command does not touch it. Change it from **My account**, then **My "
@@ -147,7 +147,7 @@ msgstr ""
 "changer, mais la commande ne le touche pas. Changez-le comme d'habitude "
 "depuis **Mon compte**, puis **Mes informations**."
 
-#: ../command-line.rst:198
+#: ../command-line.rst:199
 msgid ""
 "The new password must satisfy the :ref:`password rules <password_rules>` of "
 "your instance, exactly as it would from the web interface."
@@ -156,11 +156,11 @@ msgstr ""
 "<password_rules>` de votre instance, exactement comme il le serait depuis "
 "l'interface web."
 
-#: ../command-line.rst:203
+#: ../command-line.rst:204
 msgid "Two-factor authentication reset"
 msgstr "Réinitialisation de l'authentification à deux facteurs"
 
-#: ../command-line.rst:207
+#: ../command-line.rst:208
 msgid ""
 "The super administrator has no recovery codes, and nobody above it to reset "
 "its :ref:`second factor <pref_2fa>` from the interface. This command is the "
@@ -205,20 +205,7 @@ msgstr ""
 "accepté pour le compte. C'est ce qu'il faut après un :ref:`retour en arrière "
 "de l'horloge du serveur <faq_2fa>`."
 
-#: ../command-line.rst:243
-msgid ""
-"``--policy-off`` disables two-factor authentication for the whole instance, "
-"the way out when something goes wrong for everybody at once. Second factors "
-"are kept, and asked again once a policy is set. It cannot be combined with "
-"the other options."
-msgstr ""
-"``--policy-off`` désactive l'authentification à deux facteurs pour "
-"l'ensemble de l'instance, l'issue de secours lorsque quelque chose ne "
-"fonctionne plus pour tout le monde à la fois. Les seconds facteurs sont "
-"conservés, et de nouveau demandés dès qu'une politique est définie. Cette "
-"option ne peut pas être combinée avec les autres."
-
-#: ../command-line.rst:245
+#: ../command-line.rst:244
 msgid ""
 "Whatever the case, a lock on the account after too many wrong codes is "
 "lifted too, and the reset is recorded in the history."
@@ -226,7 +213,7 @@ msgstr ""
 "Dans tous les cas, un blocage du compte après trop de mauvais codes est "
 "également levé, et la réinitialisation est enregistrée dans l'historique."
 
-#: ../command-line.rst:247
+#: ../command-line.rst:246
 msgid ""
 "The command asks for confirmation; pass ``--force`` to run it without a "
 "terminal."
@@ -234,11 +221,65 @@ msgstr ""
 "La commande demande une confirmation ; passez ``--force`` pour l'exécuter "
 "sans terminal."
 
-#: ../command-line.rst:252
+#: ../command-line.rst:250
+msgid ""
+"``--policy-off`` has been removed, along with the policy it "
+"selected; :ref:`suspending the second factor <cli_twofactor_suspend>` "
+"replaces it."
+msgstr ""
+"``--policy-off`` a été supprimée, avec la politique qu'elle sélectionnait ; "
+"la :ref:`suspension du second facteur <cli_twofactor_suspend>` la remplace."
+
+#: ../command-line.rst:255
+msgid "Two-factor authentication suspension"
+msgstr "Suspension de l'authentification à deux facteurs"
+
+#: ../command-line.rst:259
+msgid ""
+"When nobody can give a code the server accepts -- its clock drifted, an "
+"update went wrong -- resetting every account one after the other is the "
+"wrong tool: each member would have to enable a second factor again. This "
+"command stops asking for codes on the whole instance for a while instead, "
+"and keeps every second factor in place."
+msgstr ""
+"Quand plus personne ne peut donner un code que le serveur accepte -- son "
+"horloge a dérivé, une mise à jour s'est mal passée -- réinitialiser les "
+"comptes l'un après l'autre n'est pas le bon outil : chaque membre devrait "
+"activer de nouveau un second facteur. Cette commande cesse plutôt de "
+"demander des codes sur toute l'instance pour un temps, et conserve tous les "
+"seconds facteurs."
+
+#: ../command-line.rst:286
+msgid ""
+"While it runs, everybody logs in with their password alone, the super "
+"administrator included, and nobody is sent to enable a second factor, "
+"whatever the :ref:`policy <pref_2fa>`. Administrators and staff members are "
+"reminded of it by a **Two-factor suspended** banner."
+msgstr ""
+"Pendant ce temps, tout le monde se connecte avec son seul mot de passe, "
+"super administrateur compris, et personne n'est envoyé vers l'activation "
+"d'un second facteur, quelle que soit la :ref:`politique <pref_2fa>`. Les "
+"administrateurs et les membres du bureau en sont avertis par un bandeau "
+"**Two-factor suspended**."
+
+#: ../command-line.rst:288
+msgid ""
+"The suspension ends on its own: codes are asked for again without anybody "
+"having to do anything, so it cannot be forgotten. ``--resume`` ends it "
+"sooner, once the cause is fixed. It never changes the policy of the "
+"instance, and both the suspension and its end are recorded in the history."
+msgstr ""
+"La suspension prend fin d'elle-même : les codes sont de nouveau demandés "
+"sans que personne n'ait rien à faire, elle ne peut donc pas être oubliée. "
+"``--resume`` la termine plus tôt, une fois la cause corrigée. Elle ne "
+"modifie jamais la politique de l'instance, et la suspension comme sa fin "
+"sont enregistrées dans l'historique."
+
+#: ../command-line.rst:293
 msgid "Mailing queue"
 msgstr "File d'envoi"
 
-#: ../command-line.rst:256
+#: ../command-line.rst:297
 msgid ""
 "When :ref:`sending limits <mail_throttling>` are configured, mass mailings "
 "and reminders are queued rather than sent in one go. This command drains "
@@ -248,7 +289,7 @@ msgstr ""
 "envois de masse et les rappels sont mis en queue plutôt que envoyés en une "
 "seule fois. Cette commande draine ce qui est en attente :"
 
-#: ../command-line.rst:271
+#: ../command-line.rst:312
 msgid ""
 "Nothing is sent until that question is answered. Pass ``--force`` to skip "
 "it, which is what an unattended run needs: without it, a non-interactive "
@@ -259,7 +300,7 @@ msgstr ""
 "surveillance : sans cela, un script non interactif n'aurait aucun moyen de "
 "confirmer et stopper sur une erreur plutôt que d'envoyer."
 
-#: ../command-line.rst:277
+#: ../command-line.rst:318
 msgid ""
 "For more complete documentation, see :ref:`draining the mail queue "
 "<mailing_queue_cron>`, and the :ref:`progress page <mailing_queue>` it "
@@ -269,11 +310,11 @@ msgstr ""
 "<mailing_queue_cron>`, et la page :ref:`page de progression <mailing_queue>` "
 "qui draine également."
 
-#: ../command-line.rst:282
+#: ../command-line.rst:323
 msgid "Cache"
 msgstr "Cache"
 
-#: ../command-line.rst:286
+#: ../command-line.rst:327
 msgid ""
 "The cache can be cleared from the :ref:`advanced configuration "
 "<advanced_config_cache>` page. This command does the same from the machine "
@@ -283,7 +324,7 @@ msgstr ""
 "<advanced_config_cache>`. Cette commande fait de même depuis la machine qui "
 "héberge Galette, et peut aussi vider un seul cache à la fois."
 
-#: ../command-line.rst:288
+#: ../command-line.rst:329
 msgid ""
 "Files are removed as the user running the command. Run it as the user of the "
 "web server, ``apache`` or ``www-data`` depending on your system, or the web "
@@ -294,7 +335,7 @@ msgstr ""
 "système, sans quoi le serveur web risque de ne plus pouvoir les supprimer ni "
 "les réécrire :"
 
-#: ../command-line.rst:299
+#: ../command-line.rst:340
 msgid ""
 "Without argument, the command clears what the advanced configuration page "
 "clears. ``--list`` shows every cache, what it holds, and whether it is "
@@ -304,7 +345,7 @@ msgstr ""
 "avancée. ``--list`` affiche chaque cache, ce qu'il contient, et s'il est "
 "vidé par défaut :"
 
-#: ../command-line.rst:321
+#: ../command-line.rst:362
 msgid ""
 "Name one or several caches to clear only them, including those that are not "
 "cleared by default:"
@@ -312,7 +353,7 @@ msgstr ""
 "Nommez un ou plusieurs caches pour ne vider qu'eux, y compris ceux qui ne "
 "sont pas vidés par défaut :"
 
-#: ../command-line.rst:329
+#: ../command-line.rst:370
 msgid ""
 "OPcache cannot be reset from here: the command line has an OPcache of its "
 "own, the one of the web server is only reset from the advanced configuration "
@@ -322,41 +363,41 @@ msgstr ""
 "propre OPcache, celui du serveur web ne se réinitialise que depuis la page "
 "de configuration avancée."
 
-#: ../command-line.rst:332
+#: ../command-line.rst:373
 msgid "Plugins commands"
 msgstr "Commandes des plugins"
 
-#: ../command-line.rst:334
+#: ../command-line.rst:375
 msgid ""
 "You can list existing plugins using the ``galette:plugins:list`` command:"
 msgstr ""
 "Vous pouvez lister les plugins existants à l'aide de la commande "
 "``galette:plugins:list`` :"
 
-#: ../command-line.rst:351
+#: ../command-line.rst:392
 msgid "Available commands are:"
 msgstr "Les commandes disponibles sont :"
 
-#: ../command-line.rst:353
+#: ../command-line.rst:394
 msgid "``galette:plugins:disable``: disable a plugin"
 msgstr "``galette:plugins:disable`` : désactive un plugin"
 
-#: ../command-line.rst:354
+#: ../command-line.rst:395
 msgid "``galette:plugins:enable``: enable a plugin"
 msgstr "``galette:plugins:enable`` : active un plugin"
 
-#: ../command-line.rst:355
+#: ../command-line.rst:396
 msgid "``galette:plugins:install-db``: install a plugin database"
 msgstr ""
 "``galette:plugins:install-db`` : installe la base de données d'un plugin"
 
-#: ../command-line.rst:359
+#: ../command-line.rst:400
 msgid "Plugin database installation will remove any existing plugin tables!"
 msgstr ""
 "L'installation de la base de données des plugins supprimera toutes les "
 "tables existantes de ce plugin !"
 
-#: ../command-line.rst:361
+#: ../command-line.rst:402
 msgid ""
 "For every plugin related command, you can precise which plugin(s) you want "
 "to act on, use the ``--all`` flag or either rely on interactive mode:"

@@ -1289,23 +1289,26 @@ msgstr ""
 "impliqué et rien ne quitte votre serveur."
 
 #: ../usermanual/preferences.rst:376
-msgid "Two policies are available:"
-msgstr "Deux politiques sont disponibles :"
-
-#: ../usermanual/preferences.rst:378
-msgid "**disabled** (default): nothing changes, nobody is asked for a code,"
-msgstr ""
-"**désactivée** (par défaut) : rien ne change, personne n’est invité à entrer "
-"un code,"
-
-#: ../usermanual/preferences.rst:379
 msgid ""
-"**optional**: everybody may enable it from their own account, nobody has to."
+"Two-factor authentication is always available: everybody may enable it from "
+"their own account, nobody has to. This is the **optional** policy, the "
+"default one."
 msgstr ""
-"**optionnelle** : tout le monde peut l’activer depuis son propre compte, "
-"personne n'est obligé."
+"L'authentification à deux facteurs est toujours disponible : tout le monde "
+"peut l'activer depuis son propre compte, personne n'est obligé. C'est la "
+"politique **optionnelle**, celle par défaut."
 
-#: ../usermanual/preferences.rst:381
+#: ../usermanual/preferences.rst:380
+msgid ""
+"The **disabled** policy has been removed. Instances where it was selected "
+"switch to **optional** on update; second factors enabled before are asked "
+"for again."
+msgstr ""
+"La politique **désactivé** a été supprimée. Les instances où elle était "
+"choisie passent à **optionnelle** lors de la mise à jour ; les seconds "
+"facteurs activés auparavant sont de nouveau demandés."
+
+#: ../usermanual/preferences.rst:382
 msgid ""
 "Making the second factor **compulsory** — for administrators and staff "
 "members, or for everyone — is written and tested, but it is not offered yet: "
@@ -1322,7 +1325,7 @@ msgstr ""
 "dans la base de données. C'est prévu pour une version ultérieure, une fois "
 "que la politique facultative a été utilisée pour de vrai."
 
-#: ../usermanual/preferences.rst:383
+#: ../usermanual/preferences.rst:384
 msgid ""
 "Since nobody is forced to enrol, administrators and staff members — the "
 "accounts that can read the civil status, the addresses and the financial "
@@ -1338,21 +1341,20 @@ msgstr ""
 "bouton **Non**. Le refus est mémorisé dans un cookie du navigateur, de sorte "
 "que l’invitation revient sur un nouveau navigateur, ou après un an."
 
-#: ../usermanual/preferences.rst:387
+#: ../usermanual/preferences.rst:386
 msgid ""
-"Switching the policy back to **disabled** does not delete anything. Codes "
-"are no longer asked for, and the second factors already enabled start being "
-"asked for again as soon as you enable a policy back. While the policy is "
-"disabled, the pages to enable a second factor answer nothing: a factor "
-"enrolled then would never be asked for."
+"When nobody can give a code the server accepts -- its clock drifted, for "
+"instance -- the second factor can be :ref:`suspended for a few hours "
+"<cli_twofactor_suspend>` from the command line, for the whole instance. "
+"Second factors are kept, and asked for again once the suspension ends."
 msgstr ""
-"Changer la politique à **désactivé** ne supprime rien. Les codes ne sont "
-"plus demandés, et les second facteurs déjà autorisés commenceront à être "
-"demandés de nouveau dès que vous activez une politique. Lorsque la politique "
-"est de désactiver, les pages permettant un second facteur ne répondent pas : "
-"un facteur inscrit ne serait jamais demandé."
+"Quand plus personne ne peut donner un code que le serveur accepte -- son "
+"horloge a dérivé, par exemple -- le second facteur peut être :ref:`suspendu "
+"quelques heures <cli_twofactor_suspend>` depuis la ligne de commande, pour "
+"toute l'instance. Les seconds facteurs sont conservés, et de nouveau "
+"demandés à la fin de la suspension."
 
-#: ../usermanual/preferences.rst:389
+#: ../usermanual/preferences.rst:388
 msgid ""
 "The super administrator is covered as well, as any other account. As it is "
 "not a member, it has no recovery codes; see :ref:`what to do should you lose "
@@ -1362,7 +1364,7 @@ msgstr ""
 "Comme il ne s’agit pas d’un membre, il n’a aucun code de récupération ; "
 "voir :ref:`que faire si vous le perdez <faq_2fa>`."
 
-#: ../usermanual/preferences.rst:391
+#: ../usermanual/preferences.rst:390
 msgid ""
 "Members enable and manage their own second factor from their account; this "
 "is described in :ref:`the members part of this manual <man_2fa>`. "
@@ -1375,11 +1377,11 @@ msgstr ""
 "peuvent :ref:`réinitialiser le deuxième facteur d’un adhérent "
 "<member_2fa_reset>` qui l’a perdu."
 
-#: ../usermanual/preferences.rst:396
+#: ../usermanual/preferences.rst:395
 msgid "Authentication attempts"
 msgstr "Tentatives d'authentification"
 
-#: ../usermanual/preferences.rst:400
+#: ../usermanual/preferences.rst:399
 msgid ""
 "To protect accounts against people trying passwords one after the other, "
 "Galette counts the failed logins. After too many failures, further attempts "
@@ -1392,31 +1394,31 @@ msgstr ""
 "moment, même avec le bon mot de passe. Il en va de même pour les demandes de "
 "récupération de mot de passe et pour les auto-inscriptions."
 
-#: ../usermanual/preferences.rst:402
+#: ../usermanual/preferences.rst:401
 msgid "By default:"
 msgstr "Par défaut :"
 
-#: ../usermanual/preferences.rst:404
+#: ../usermanual/preferences.rst:403
 msgid "5 failed logins on one account, from one address, within 15 minutes,"
 msgstr ""
 "5 échecs de connexion sur un compte, depuis une adresse, en 15 minutes,"
 
-#: ../usermanual/preferences.rst:405
+#: ../usermanual/preferences.rst:404
 msgid "30 failed logins from one address, on any account, within 15 minutes,"
 msgstr ""
 "30 échecs de connexion depuis une adresse, sur n'importe quel compte, en 15 "
 "minutes,"
 
-#: ../usermanual/preferences.rst:406
+#: ../usermanual/preferences.rst:405
 msgid "100 failed logins on one account, from anywhere, within a day,"
 msgstr ""
 "100 échecs de connexion sur un compte, depuis n'importe où, en une journée,"
 
-#: ../usermanual/preferences.rst:407
+#: ../usermanual/preferences.rst:406
 msgid "3 password recovery requests within an hour,"
 msgstr "3 demandes de récupération de mot de passe en une heure,"
 
-#: ../usermanual/preferences.rst:409
+#: ../usermanual/preferences.rst:408
 msgid ""
 "get further attempts refused for 15 minutes. Those thresholds and durations "
 "can be changed from the :ref:`advanced configuration <advanced_config>`."
@@ -1425,7 +1427,7 @@ msgstr ""
 "et ces durées se modifient depuis la :ref:`configuration avancée "
 "<advanced_config>`."
 
-#: ../usermanual/preferences.rst:411
+#: ../usermanual/preferences.rst:410
 msgid ""
 "**Configuration**, then **Authentication attempts** lists what is refused "
 "right now: what is counted, the account, the address, the number of failures "
@@ -1435,11 +1437,11 @@ msgstr ""
 "refusé en ce moment : ce qui est compté, le compte, l'adresse, le nombre "
 "d'échecs et jusqu'à quand les tentatives sont refusées."
 
-#: ../usermanual/preferences.rst:413
+#: ../usermanual/preferences.rst:412
 msgid "Authentication attempts currently refused"
 msgstr "Tentatives d'authentification actuellement refusées"
 
-#: ../usermanual/preferences.rst:418
+#: ../usermanual/preferences.rst:417
 msgid ""
 "When a member tells you they cannot log in anymore, look here: **Lift** lets "
 "them try again at once, and **Lift them all** clears the whole list."
@@ -1448,11 +1450,11 @@ msgstr ""
 "**Lever** lui permet de réessayer tout de suite, et **Les lever toutes** "
 "vide toute la liste."
 
-#: ../usermanual/preferences.rst:421
+#: ../usermanual/preferences.rst:420
 msgid "Super administrator credentials"
 msgstr "Identifiants super administrateur"
 
-#: ../usermanual/preferences.rst:425
+#: ../usermanual/preferences.rst:424
 msgid ""
 "The super administrator login and password are no longer in the preferences. "
 "Once logged in as super administrator, go to **My account**, then **My "
@@ -1463,7 +1465,7 @@ msgstr ""
 "compte**, puis **Mes informations**. Galette demande le mot de passe actuel "
 "avant d'en enregistrer un nouveau."
 
-#: ../usermanual/preferences.rst:427
+#: ../usermanual/preferences.rst:426
 msgid ""
 "Should that password be lost, it can be changed :ref:`from the command line "
 "<cli_superadmin_password>`."
